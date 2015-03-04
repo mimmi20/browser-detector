@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\AndroidWebView as AndroidWebViewBas
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AndroidWebView extends AndroidWebViewBase
+class AndroidWebView
+    extends AndroidWebViewBase
 {
     // nothing to do here
 }

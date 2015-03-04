@@ -52,39 +52,36 @@ class BlackBerry9810
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry9810_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry9810_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 9810',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Torch 4G',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'BlackBerry 9810',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Torch 4G',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50,
-        'physical_screen_height'  => 70,
-        'columns'                 => 22,
-        'rows'                    => 22,
-        'max_image_width'         => 480,
-        'max_image_height'        => 500,
-        'resolution_width'        => 480,
-        'resolution_height'       => 640,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216, // wurflkey: blackberry9810_ver1
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 70,
+        'columns'                => 22,
+        'rows'                   => 22,
+        'max_image_width'        => 480,
+        'max_image_height'       => 500,
+        'resolution_width'       => 480,
+        'resolution_height'      => 640,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216, // wurflkey: blackberry9810_ver1
 
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

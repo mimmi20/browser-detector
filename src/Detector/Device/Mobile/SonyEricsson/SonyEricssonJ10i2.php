@@ -52,39 +52,36 @@ class SonyEricssonJ10i2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_j10i2_ver1', // not in wurfl
+        'wurflKey'               => 'sonyericsson_j10i2_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'J10i2',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Elm', // wurflkey: sonyericsson_j10i2_ver1
-        'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_j10i2_ver1
-        'pointing_method'         => '', // wurflkey: sonyericsson_j10i2_ver1
+        'model_name'             => 'J10i2',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Elm', // wurflkey: sonyericsson_j10i2_ver1
+        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_j10i2_ver1
+        'pointing_method'        => '', // wurflkey: sonyericsson_j10i2_ver1
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/J10i2R101.xml',
-        'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/J10i1R101.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/J10i2R101.xml',
+        'uaprof2'                => 'http://wap.sonyericsson.com/UAprof/J10i1R101.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 11,
-        'rows'                    => 6,
-        'max_image_width'         => 228,
-        'max_image_height'        => 280,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => false,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 11,
+        'rows'                   => 6,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

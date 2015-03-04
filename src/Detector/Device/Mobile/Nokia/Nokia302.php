@@ -52,39 +52,35 @@ class Nokia302
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_302_ver1', // not in wurfl
+        'wurflKey'               => 'nokia_302_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Asha 302',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Asha 302',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'joystick',
-
+        'model_name'             => 'Asha 302',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Asha 302',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'joystick',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 320,
-        'resolution_height'       => 240,
-        'dual_orientation'        => false,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
+        'dual_orientation'       => false,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

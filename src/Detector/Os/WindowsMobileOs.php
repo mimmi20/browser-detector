@@ -74,8 +74,8 @@ class WindowsMobileOs
         $windowsHelper = new WindowsHelper();
         $windowsHelper->setUserAgent($this->_useragent);
 
-        if (!$windowsHelper->isMobileWindows()
-            && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobileBrowser())
+        if (!$windowsHelper->isMobileWindows() && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobileBrowser(
+                ))
         ) {
             return false;
         }

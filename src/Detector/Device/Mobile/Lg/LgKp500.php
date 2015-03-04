@@ -52,39 +52,35 @@ class LgKp500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'lg_kp500_ver1', // not in wurfl
+        'wurflKey'               => 'lg_kp500_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'KP500',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'KP500',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'stylus',
-
+        'model_name'             => 'KP500',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'KP500',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'stylus',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://gsm.lge.com/html/gsm/LG-KP500.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://gsm.lge.com/html/gsm/LG-KP500.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 39,
-        'physical_screen_height'  => 65,
-        'columns'                 => 25,
-        'rows'                    => 15,
-        'max_image_width'         => 240,
-        'max_image_height'        => 400,
-        'resolution_width'        => 240,
-        'resolution_height'       => 400,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 39,
+        'physical_screen_height' => 65,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 240,
+        'max_image_height'       => 400,
+        'resolution_width'       => 240,
+        'resolution_height'      => 400,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

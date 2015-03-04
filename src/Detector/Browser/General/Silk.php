@@ -62,15 +62,12 @@ class Silk
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -152,7 +149,7 @@ class Silk
      */
     public function detectEngine()
     {
-        $version = (float) $this->detectVersion()->getVersion(Version::MAJORMINOR);
+        $version = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
 
         if ($version >= 3.21) {
             $engine = new Blink();
@@ -161,6 +158,7 @@ class Silk
         }
 
         $engine->setUseragent($this->useragent);
+
         return $engine;
     }
 
@@ -175,7 +173,9 @@ class Silk
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 

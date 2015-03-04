@@ -90,7 +90,6 @@ abstract class EngineHandler
         'chtml_make_phone_call_string'                      => null,
         'chtml_display_accesskey'                           => null,
         'emoji'                                             => null,
-
         // xhtml
         'xhtml_select_as_radiobutton'                       => null,
         'xhtml_avoid_accesskeys'                            => null,
@@ -126,7 +125,6 @@ abstract class EngineHandler
         'opwv_xhtml_extensions_support'                     => null,
         'xhtml_marquee_as_css_property'                     => null,
         'xhtml_nowrap_mode'                                 => null,
-
         // image format
         'jpg'                                               => null,
         'gif'                                               => null,
@@ -141,11 +139,9 @@ abstract class EngineHandler
         'svgt_1_1'                                          => null,
         'transparent_png_alpha'                             => null,
         'tiff'                                              => null,
-
         // security
         'https_support'                                     => null,
         'phone_id_provided'                                 => false,
-
         // storage
         'max_deck_size'                                     => null,
         'max_length_of_username'                            => null,
@@ -157,7 +153,6 @@ abstract class EngineHandler
         'max_url_length_in_requests'                        => null,
         'max_object_size'                                   => null,
         'max_url_length_homepage'                           => null,
-
         // ajax
         'ajax_support_getelementbyid'                       => null,
         'ajax_xhr_type'                                     => null,
@@ -168,7 +163,6 @@ abstract class EngineHandler
         'ajax_manipulate_css'                               => null,
         'ajax_support_events'                               => null,
         'ajax_preferred_geoloc_api'                         => null,
-
         // wml
         'wml_make_phone_call_string'                        => null,
         'card_title_support'                                => null,
@@ -192,7 +186,6 @@ abstract class EngineHandler
         'access_key_support'                                => null,
         'wml_displays_image_in_center'                      => null,
         'times_square_mode_support'                         => null,
-
         // sms
         'sms_enabled'                                       => null,
         'ems'                                               => null,
@@ -223,14 +216,12 @@ abstract class EngineHandler
         'sckl_ringtone'                                     => null,
         'picturemessage'                                    => null,
         'sckl_vcalendar'                                    => null,
-
         // bearer
         'has_cellular_radio'                                => null,
         'sdio'                                              => null,
         'wifi'                                              => null,
         'max_data_rate'                                     => null,
         'vpn'                                               => null,
-
         // flash_lite
         'full_flash_support'                                => null,
         'flash_lite_version'                                => null,
@@ -239,11 +230,9 @@ abstract class EngineHandler
         'fl_screensaver'                                    => null,
         'fl_standalone'                                     => null,
         'fl_sub_lcd'                                        => null,
-
         // third_party
         'jqm_grade'                                         => null,
         'is_sencha_touch_ok'                                => null,
-
         // html
         'image_inlining'                                    => null,
         'canvas_support'                                    => null,
@@ -256,28 +245,23 @@ abstract class EngineHandler
         'viewport_maximum_scale'                            => null,
         'viewport_userscalable'                             => null,
         'handheldfriendly'                                  => null,
-
         // css
         'css_spriting'                                      => null,
         'css_gradient'                                      => null,
         'css_border_image'                                  => null,
         'css_rounded_corners'                               => null,
         'css_supports_width_as_percentage'                  => null,
-
         // cache
         'time_to_live_support'                              => null,
         'total_cache_disable_support'                       => null,
-
         // bugs
         'emptyok'                                           => null,
-
         // wta
         'nokia_voice_call'                                  => null,
         'wta_pdc'                                           => null,
         'wta_voice_call'                                    => null,
         'wta_misc'                                          => null,
         'wta_phonebook'                                     => null,
-
         // object download
         'video'                                             => null,
         'picture_bmp'                                       => null,
@@ -358,12 +342,10 @@ abstract class EngineHandler
         'downloadfun_support'                               => null,
         'screensaver_colors'                                => null,
         'screensaver_gif'                                   => null,
-
         // drm
         'oma_v_1_0_combined_delivery'                       => null,
         'oma_v_1_0_separate_delivery'                       => null,
         'oma_v_1_0_forwardlock'                             => null,
-
         // streaming
         'streaming_vcodec_mpeg4_asp'                        => null,
         'streaming_video_size_limit'                        => null,
@@ -383,7 +365,6 @@ abstract class EngineHandler
         'streaming_video'                                   => null,
         'streaming_preferred_http_protocol'                 => null,
         'streaming_mp4'                                     => null,
-
         // wap push
         'expiration_date'                                   => null,
         'utf8_support'                                      => null,
@@ -399,7 +380,6 @@ abstract class EngineHandler
         'connectionoriented_unconfirmed_cache_operation'    => null,
         'connectionoriented_unconfirmed_service_load'       => null,
         'connectionoriented_unconfirmed_service_indication' => null,
-
         // j2me
         'doja_1_5'                                          => null,
         'j2me_datefield_broken'                             => null,
@@ -478,7 +458,6 @@ abstract class EngineHandler
         'j2me_https'                                        => null,
         'j2me_mpeg4'                                        => null,
         'j2me_storage_size'                                 => null,
-
         // mms
         'mms_3gpp'                                          => null,
         'mms_wbxml'                                         => null,
@@ -524,7 +503,6 @@ abstract class EngineHandler
         'mms_jpeg_baseline'                                 => null,
         'mms_midi_polyphonic_voices'                        => null,
         'mms_gif_animated'                                  => null,
-
         // sound format
         'rmf'                                               => null,
         'qcelp'                                             => null,
@@ -547,7 +525,6 @@ abstract class EngineHandler
         'midi_monophonic'                                   => null,
         'au'                                                => null,
         'midi_polyphonic'                                   => null,
-
         // transcoding
         'transcoder_ua_header'                              => null,
     );
@@ -652,24 +629,6 @@ abstract class EngineHandler
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @param null   $capabilityValue
-     * @return EngineHandler
-     */
-    public function setCapability($capabilityName, $capabilityValue = null)
-    {
-        $this->checkCapability($capabilityName);
-
-        $this->properties[$capabilityName] = $capabilityValue;
-
-        return $this;
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
      * @throws \InvalidArgumentException
      */
     protected function checkCapability($capabilityName)
@@ -685,6 +644,27 @@ abstract class EngineHandler
                 'no capability named [' . $capabilityName . '] is present.'
             );
         }
+    }
+
+    /**
+     * Returns the value of a given capability name
+     * for the current device
+     *
+     * @param string $capabilityName must be a valid capability name
+     *
+     * @param null   $capabilityValue
+     *
+     * @return EngineHandler
+     */
+    public function setCapability(
+        $capabilityName,
+        $capabilityValue = null
+    ) {
+        $this->checkCapability($capabilityName);
+
+        $this->properties[$capabilityName] = $capabilityValue;
+
+        return $this;
     }
 
     /**
@@ -704,10 +684,13 @@ abstract class EngineHandler
      * @param \BrowserDetector\Detector\OsHandler      $os
      * @param \BrowserDetector\Detector\DeviceHandler  $device
      * @param \BrowserDetector\Detector\BrowserHandler $browser
+     *
      * @return \BrowserDetector\Detector\EngineHandler
      */
     public function detectDependProperties(
-        OsHandler $os, DeviceHandler $device, BrowserHandler $browser
+        OsHandler $os,
+        DeviceHandler $device,
+        BrowserHandler $browser
     ) {
         return $this;
     }

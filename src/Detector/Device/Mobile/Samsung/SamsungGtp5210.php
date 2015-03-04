@@ -205,6 +205,9 @@ class SamsungGtp5210
                 $engine->setCapability('is_sencha_touch_ok', false);
 
                 switch ((float)$osVersion) {
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'samsung_gt_p5200_ver1_suban44p5210');
+                        break;
                     case 2.1:
                     case 2.2:
                     case 2.3:

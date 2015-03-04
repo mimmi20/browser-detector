@@ -52,39 +52,35 @@ class BlackBerry9800
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry9800_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry9800_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 9800',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Torch',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'BlackBerry 9800',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Torch',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9800_edge/6.0.0.rdf',
-        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9800_umts/6.0.0.rdf',
-        'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9800_80211g/6.0.0.rdf',
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9800_edge/6.0.0.rdf',
+        'uaprof2'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9800_umts/6.0.0.rdf',
+        'uaprof3'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9800_80211g/6.0.0.rdf',
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50,
-        'physical_screen_height'  => 70,
-        'columns'                 => 36,
-        'rows'                    => 32,
-        'max_image_width'         => 360,
-        'max_image_height'        => 400,
-        'resolution_width'        => 360,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 70,
+        'columns'                => 36,
+        'rows'                   => 32,
+        'max_image_width'        => 360,
+        'max_image_height'       => 400,
+        'resolution_width'       => 360,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

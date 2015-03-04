@@ -60,15 +60,12 @@ class OperaMini
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -128,7 +125,9 @@ class OperaMini
         $detector->setUserAgent($this->useragent);
 
         $doMatch = preg_match(
-            '/Opera Mini\/([\d\.]+)\//', $this->useragent, $matches
+            '/Opera Mini\/([\d\.]+)\//',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -136,7 +135,9 @@ class OperaMini
         }
 
         $doMatch = preg_match(
-            '/Opera Mini\/([\d\.]+)\./', $this->useragent, $matches
+            '/Opera Mini\/([\d\.]+)\./',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -144,7 +145,9 @@ class OperaMini
         }
 
         $doMatch = preg_match(
-            '/Opera Mini\/(\d+)\./', $this->useragent, $matches
+            '/Opera Mini\/(\d+)\./',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -152,7 +155,9 @@ class OperaMini
         }
 
         $doMatch = preg_match(
-            '/Opera Mini\/att\/([\d\.]+)\./', $this->useragent, $matches
+            '/Opera Mini\/att\/([\d\.]+)\./',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -160,7 +165,9 @@ class OperaMini
         }
 
         $doMatch = preg_match(
-            '/Opera Mini\/att\/(\d+)\./', $this->useragent, $matches
+            '/Opera Mini\/att\/(\d+)\./',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {

@@ -176,8 +176,7 @@ class SonyD5503XperiaZ1Compact
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
-        )
-        ;
+        );
 
         if (2.3 == $osVersion) {
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');

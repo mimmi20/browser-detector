@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\PerfectBrowser as PerfectBrowserBas
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PerfectBrowser extends PerfectBrowserBase
+class PerfectBrowser
+    extends PerfectBrowserBase
 {
     // nothing to do here
 }

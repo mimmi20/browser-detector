@@ -67,15 +67,12 @@ class Blackberry
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => false,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -139,7 +136,9 @@ class Blackberry
         $detector->setUserAgent($this->useragent);
 
         $searches = array(
-            'BlackBerry[0-9a-z]+', 'BlackBerrySimulator', 'Version'
+            'BlackBerry[0-9a-z]+',
+            'BlackBerrySimulator',
+            'Version'
         );
 
         return $detector->detectVersion($searches);
@@ -174,7 +173,9 @@ class Blackberry
         $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
-    }/**
+    }
+
+    /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
@@ -185,7 +186,9 @@ class Blackberry
      * @return \BrowserDetector\Detector\Browser\Mobile\Blackberry
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 

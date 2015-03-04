@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\DarwinBrowser as DarwinBrowserBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DarwinBrowser extends DarwinBrowserBase
+class DarwinBrowser
+    extends DarwinBrowserBase
 {
     // nothing to do here
 }

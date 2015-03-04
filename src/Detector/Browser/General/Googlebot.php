@@ -62,15 +62,12 @@ class Googlebot
         // product info
         'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -82,8 +79,10 @@ class Googlebot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('googlebot', true)
-            && !$this->utils->checkIfContains('www.google.com/bot.html', true)
+        if (!$this->utils->checkIfContains('googlebot', true) && !$this->utils->checkIfContains(
+                'www.google.com/bot.html',
+                true
+            )
         ) {
             return false;
         }
@@ -136,7 +135,10 @@ class Googlebot
         $detector->setUserAgent($this->useragent);
 
         $searches = array(
-            'Googlebot', 'Googlebot v', 'Googlebot\-Image', 'Googlebot\-News',
+            'Googlebot',
+            'Googlebot v',
+            'Googlebot\-Image',
+            'Googlebot\-News',
             'Google'
         );
 
@@ -164,17 +166,23 @@ class Googlebot
      * @return \BrowserDetector\Detector\Browser\General\Googlebot
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
         if ($this->utils->checkIfContains('compatible; Googlebot')) {
             $agent = str_ireplace(
                 array(
-                    'googlebot-image', 'googlebot-news', 'googlebot-mobile',
-                    'googlebot', 'www.google.com/bot.html'
+                    'googlebot-image',
+                    'googlebot-news',
+                    'googlebot-mobile',
+                    'googlebot',
+                    'www.google.com/bot.html'
                 ),
-                '', $this->useragent
+                '',
+                $this->useragent
             );
 
             $detector = new UserAgent();

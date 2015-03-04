@@ -55,39 +55,35 @@ class MotorolaA953
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'mot_a953_ver1_subs2u6_suban23', // not in wurfl
+        'wurflKey'               => 'mot_a953_ver1_subs2u6_suban23', // not in wurfl
 
         // device
-        'model_name'              => 'A953',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'MILESTONE 2',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'A953',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'MILESTONE 2',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 310,
-        'max_image_height'        => 480,
-        'resolution_width'        => 480,
-        'resolution_height'       => 854,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 310,
+        'max_image_height'       => 480,
+        'resolution_width'       => 480,
+        'resolution_height'      => 854,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,12 +164,15 @@ class MotorolaA953
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
         // wurflkey: mot_a953_ver1_subs2u6_suban23
         $engine->setCapability('bmp', true);
+
         // $engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;

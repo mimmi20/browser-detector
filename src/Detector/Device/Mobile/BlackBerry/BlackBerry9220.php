@@ -52,39 +52,35 @@ class BlackBerry9220
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry9220_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry9220_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 9220',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'BlackBerry 9220',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'BlackBerry 9220',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'BlackBerry 9220',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9220_edge/7.1',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9220_edge/7.1',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50,
-        'physical_screen_height'  => 38,
-        'columns'                 => 32,
-        'rows'                    => 16,
-        'max_image_width'         => 300,
-        'max_image_height'        => 280,
-        'resolution_width'        => 320,
-        'resolution_height'       => 240,
-        'dual_orientation'        => false,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 38,
+        'columns'                => 32,
+        'rows'                   => 16,
+        'max_image_width'        => 300,
+        'max_image_height'       => 280,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
+        'dual_orientation'       => false,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

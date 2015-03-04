@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\OnePassword as OnePasswordBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OnePassword extends OnePasswordBase
+class OnePassword
+    extends OnePasswordBase
 {
     // nothing to do here
 }

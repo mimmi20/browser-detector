@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\OpenVas as DefaultOpenVas;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OpenVas extends DefaultOpenVas
+class OpenVas
+    extends DefaultOpenVas
 {
     // nothing to do here
 }

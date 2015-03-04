@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Phantom as PhantomBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Phantom extends PhantomBase
+class Phantom
+    extends PhantomBase
 {
     // nothing to do here
 }

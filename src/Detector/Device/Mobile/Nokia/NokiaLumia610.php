@@ -55,39 +55,35 @@ class NokiaLumia610
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_lumia_610_ver1', // not in wurfl
+        'wurflKey'               => 'nokia_lumia_610_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Lumia 610',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Lumia 610',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Lumia 610',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Lumia 610',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 41,
-        'physical_screen_height'  => 89,
-        'columns'                 => 12,
-        'rows'                    => 20,
-        'max_image_width'         => 320,
-        'max_image_height'        => 480,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 41,
+        'physical_screen_height' => 89,
+        'columns'                => 12,
+        'rows'                   => 20,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +164,9 @@ class NokiaLumia610
      * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia610
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

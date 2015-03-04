@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\SmartTvWebBrowser as SmartTvWebBrow
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SmartTvWebBrowser extends SmartTvWebBrowserBase
+class SmartTvWebBrowser
+    extends SmartTvWebBrowserBase
 {
     // nothing to do here
 }

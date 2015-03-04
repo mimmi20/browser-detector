@@ -80,8 +80,16 @@ class Ios
     public function canHandle()
     {
         $ios = array(
-            'IphoneOSX', 'iPhone OS', 'like Mac OS X', 'iPad', 'IPad', 'iPhone',
-            'iPod', 'CPU OS', 'CPU iOS', 'IUC(U;iOS'
+            'IphoneOSX',
+            'iPhone OS',
+            'like Mac OS X',
+            'iPad',
+            'IPad',
+            'iPhone',
+            'iPod',
+            'CPU OS',
+            'CPU iOS',
+            'IUC(U;iOS'
         );
 
         if (!$this->utils->checkIfContains($ios)) {
@@ -116,8 +124,14 @@ class Ios
         $detector->setUserAgent($this->_useragent);
 
         $searches = array(
-            'IphoneOSX', 'CPU OS\_', 'CPU OS', 'CPU iOS', 'CPU iPad OS',
-            'iPhone OS', 'iPhone_OS', 'IUC\(U\;iOS'
+            'IphoneOSX',
+            'CPU OS\_',
+            'CPU OS',
+            'CPU iOS',
+            'CPU iPad OS',
+            'iPhone OS',
+            'iPhone_OS',
+            'IUC\(U\;iOS'
         );
 
         $detector->detectVersion($searches);

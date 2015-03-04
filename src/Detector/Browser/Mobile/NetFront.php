@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\NetFront as NetFrontBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetFront extends NetFrontBase
+class NetFront
+    extends NetFrontBase
 {
     // nothing to do here
 }

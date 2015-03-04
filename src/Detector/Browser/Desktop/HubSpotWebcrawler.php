@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\HubSpotWebcrawler as HubSpotWebcraw
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HubSpotWebcrawler extends HubSpotWebcrawlerBase
+class HubSpotWebcrawler
+    extends HubSpotWebcrawlerBase
 {
     // nothing to do here
 }

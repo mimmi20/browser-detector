@@ -55,39 +55,36 @@ class NokiaN800
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_n8_00_ver1', // not in wurfl
+        'wurflKey'               => 'nokia_n8_00_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'N8-00',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'N8', // wurflkey: nokia_n8_00_ver1
-        'has_qwerty_keyboard'     => false, // wurflkey: nokia_n8_00_ver1
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'N8-00',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'N8', // wurflkey: nokia_n8_00_ver1
+        'has_qwerty_keyboard'    => false, // wurflkey: nokia_n8_00_ver1
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-3G.xml',
-        'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-VF3G.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-3G.xml',
+        'uaprof2'                => 'http://nds1.nds.nokia.com/uaprof/NN8-00r100-VF3G.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 44,
-        'physical_screen_height'  => 78,
-        'columns'                 => 17,
-        'rows'                    => 13,
-        'max_image_width'         => 360,
-        'max_image_height'        => 600,
-        'resolution_width'        => 360,
-        'resolution_height'       => 640,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216, // wurflkey: nokia_n8_00_ver1_subs53
+        'physical_screen_width'  => 44,
+        'physical_screen_height' => 78,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 360,
+        'max_image_height'       => 600,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216, // wurflkey: nokia_n8_00_ver1_subs53
 
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +165,9 @@ class NokiaN800
      * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN800
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

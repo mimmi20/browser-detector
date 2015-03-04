@@ -52,39 +52,36 @@ class BlackBerry9000
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry9000_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry9000_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 9000',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Bold', // wurflkey: blackberry9000_ver1_sub460162_123
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'clickwheel', // wurflkey: blackberry9000_ver1_sub460162_123
+        'model_name'             => 'BlackBerry 9000',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Bold', // wurflkey: blackberry9000_ver1_sub460162_123
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'clickwheel', // wurflkey: blackberry9000_ver1_sub460162_123
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_edge/5.0.0.rdf',
-        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_umts/5.0.0.rdf',
-        'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_edge/5.0.0.rdf',
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_edge/5.0.0.rdf',
+        'uaprof2'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_umts/5.0.0.rdf',
+        'uaprof3'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9000_edge/5.0.0.rdf',
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27, // wurflkey: blackberry9000_ver1_sub460162
-        'physical_screen_height'  => 27, // wurflkey: blackberry9000_ver1_sub460162
-        'columns'                 => 48, // wurflkey: blackberry9000_ver1_sub460162
-        'rows'                    => 21, // wurflkey: blackberry9000_ver1_sub460162
-        'max_image_width'         => 460, // wurflkey: blackberry9000_ver1_sub460162
-        'max_image_height'        => 280, // wurflkey: blackberry9000_ver1_sub460162
-        'resolution_width'        => 480, // wurflkey: blackberry9000_ver1_sub460162
-        'resolution_height'       => 320, // wurflkey: blackberry9000_ver1_sub460162
-        'dual_orientation'        => false, // wurflkey: blackberry9000_ver1_sub460162
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 27, // wurflkey: blackberry9000_ver1_sub460162
+        'physical_screen_height' => 27, // wurflkey: blackberry9000_ver1_sub460162
+        'columns'                => 48, // wurflkey: blackberry9000_ver1_sub460162
+        'rows'                   => 21, // wurflkey: blackberry9000_ver1_sub460162
+        'max_image_width'        => 460, // wurflkey: blackberry9000_ver1_sub460162
+        'max_image_height'       => 280, // wurflkey: blackberry9000_ver1_sub460162
+        'resolution_width'       => 480, // wurflkey: blackberry9000_ver1_sub460162
+        'resolution_height'      => 320, // wurflkey: blackberry9000_ver1_sub460162
+        'dual_orientation'       => false, // wurflkey: blackberry9000_ver1_sub460162
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

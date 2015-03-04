@@ -111,8 +111,9 @@ class AndroidOs
         $safariHelper = new SafariHelper();
         $safariHelper->setUserAgent($this->_useragent);
 
-        if ($this->utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;'))
-            || $safariHelper->isMobileAsSafari()
+        if ($this->utils->checkIfContains(
+                array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;')
+            ) || $safariHelper->isMobileAsSafari()
         ) {
             return true;
         }
@@ -150,8 +151,11 @@ class AndroidOs
         }
 
         $searches = array(
-            'Android android', 'Android AndroidHouse Team',
-            'Android WildPuzzleROM v8 froyo', 'Android', 'JUC\(Linux;U;',
+            'Android android',
+            'Android AndroidHouse Team',
+            'Android WildPuzzleROM v8 froyo',
+            'Android',
+            'JUC\(Linux;U;',
             'Android OS'
         );
 
@@ -240,7 +244,9 @@ class AndroidOs
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($browser, $engine, $device);
 
@@ -268,8 +274,9 @@ class AndroidOs
             $engine->setCapability('is_sencha_touch_ok', false);
         }
 
-        if ($this->utils->checkIfContains(array('(Linux; U;', 'Linux x86_64;', 'Mac OS X'))
-            && !$this->utils->checkIfContains('Android')
+        if ($this->utils->checkIfContains(
+                array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
+            ) && !$this->utils->checkIfContains('Android')
         ) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }

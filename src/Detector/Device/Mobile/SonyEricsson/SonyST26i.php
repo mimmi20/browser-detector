@@ -55,39 +55,35 @@ class SonyST26i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sony_st26i_ver1', // not in wurfl
+        'wurflKey'               => 'sony_st26i_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'ST26i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia J',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'ST26i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia J',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/ST26iR601.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/ST26iR601.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 44,
-        'physical_screen_height'  => 78,
-        'columns'                 => 44,
-        'rows'                    => 32,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 854,
-        'dual_orientation'        => true,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 44,
+        'physical_screen_height' => 78,
+        'columns'                => 44,
+        'rows'                   => 32,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 854,
+        'dual_orientation'       => true,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -172,7 +168,9 @@ class SonyST26i
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

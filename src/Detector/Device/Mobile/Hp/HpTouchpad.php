@@ -58,39 +58,36 @@ class HpTouchpad
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'hp_touchpad_ver1', // not in wurfl
+        'wurflKey'               => 'hp_touchpad_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Touchpad',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Touchpad',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Touchpad',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Touchpad',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://downloads.palm.com/profiles/HSTNH-I29C_R1.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://downloads.palm.com/profiles/HSTNH-I29C_R1.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 100,
-        'physical_screen_height'  => 200,
-        'columns'                 => 100,
-        'rows'                    => 50,
-        'max_image_width'         => 768,
-        'max_image_height'        => 1000,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 768,
-        'dual_orientation'        => true,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 100,
+        'physical_screen_height' => 200,
+        'columns'                => 100,
+        'rows'                   => 50,
+        'max_image_width'        => 768,
+        'max_image_height'       => 1000,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true, // wurflkey: hp_touchpad_ver1
+        'sms_enabled'            => true, // wurflkey: hp_touchpad_ver1
 
         // chips
-        'nfc_support'             => true, // wurflkey: hp_touchpad_ver1
+        'nfc_support'            => true, // wurflkey: hp_touchpad_ver1
     );
 
     /**
@@ -178,7 +175,9 @@ class HpTouchpad
      * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpTouchpad
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -189,9 +188,7 @@ class HpTouchpad
         $engine->setCapability('bmp', true); // wurflkey: hp_touchpad_ver1
         $engine->setCapability('ajax_support_javascript', true);
 
-        if (('Android Webkit' == $browser->getName()
-                || 'Chrome' == $browser->getName())
-            && 'Android' == $os->getName()
+        if (('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName()) && 'Android' == $os->getName()
         ) {
             $this->setCapability('wurflKey', 'hp_touchpad_android_ver1');
             $this->setCapability('model_extra_info', 'Android port');

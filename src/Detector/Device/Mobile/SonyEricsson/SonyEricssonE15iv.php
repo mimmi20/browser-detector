@@ -52,39 +52,35 @@ class SonyEricssonE15iv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_e15i_ver1_subvoda_an21', // not in wurfl
+        'wurflKey'               => 'sonyericsson_e15i_ver1_subvoda_an21', // not in wurfl
 
         // device
-        'model_name'              => 'E15iv',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia X8',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'E15iv',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia X8',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/E15iR202.xml',
-        'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/E15iR201.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/E15iR202.xml',
+        'uaprof2'                => 'http://wap.sonyericsson.com/UAprof/E15iR201.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 43,
-        'physical_screen_height'  => 64,
-        'columns'                 => 15,
-        'rows'                    => 12,
-        'max_image_width'         => 320,
-        'max_image_height'        => 480,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 43,
+        'physical_screen_height' => 64,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

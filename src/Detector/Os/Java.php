@@ -76,8 +76,17 @@ class Java
     {
         if (!$this->utils->checkIfContains(
             array(
-                'Java', 'J2ME/MIDP', 'Profile/MIDP', 'JUC', 'UCWEB', 'NetFront', 'Nokia', 'Jasmine/1.0', 'JavaPlatform',
-                'WAP/OBIGO', 'Obigo/WAP'
+                'Java',
+                'J2ME/MIDP',
+                'Profile/MIDP',
+                'JUC',
+                'UCWEB',
+                'NetFront',
+                'Nokia',
+                'Jasmine/1.0',
+                'JavaPlatform',
+                'WAP/OBIGO',
+                'Obigo/WAP'
             )
         )
         ) {

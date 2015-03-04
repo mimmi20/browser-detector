@@ -52,39 +52,35 @@ class NokiaE500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_e5_ver1', // not in wurfl
+        'wurflKey'               => 'nokia_e5_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'E5-00',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Mystic',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'E5-00',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Mystic',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NE5-00r100.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://nds1.nds.nokia.com/uaprof/NE5-00r100.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 48,
-        'physical_screen_height'  => 36,
-        'columns'                 => 22,
-        'rows'                    => 10,
-        'max_image_width'         => 300,
-        'max_image_height'        => 200,
-        'resolution_width'        => 320,
-        'resolution_height'       => 240,
-        'dual_orientation'        => false,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 48,
+        'physical_screen_height' => 36,
+        'columns'                => 22,
+        'rows'                   => 10,
+        'max_image_width'        => 300,
+        'max_image_height'       => 200,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
+        'dual_orientation'       => false,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

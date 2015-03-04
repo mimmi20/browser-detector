@@ -55,39 +55,35 @@ class SonyEricssonE10i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_e10i_ver1_suban21_03', // not in wurfl
+        'wurflKey'               => 'sonyericsson_e10i_ver1_suban21_03', // not in wurfl
 
         // device
-        'model_name'              => 'E10i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia X10 Mini',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'E10i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia X10 Mini',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/E10iR201.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/E10iR201.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 44,
-        'rows'                    => 24,
-        'max_image_width'         => 238,
-        'max_image_height'        => 318,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 44,
+        'rows'                   => 24,
+        'max_image_width'        => 238,
+        'max_image_height'       => 318,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,12 +164,15 @@ class SonyEricssonE10i
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
         // wurflkey: sonyericsson_e10i_ver1_suban21_03
         $engine->setCapability('bmp', true);
+
         // $engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;

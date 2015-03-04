@@ -55,39 +55,35 @@ class SonyEricssonE15i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_e15i_ver1_sub21_01', // not in wurfl
+        'wurflKey'               => 'sonyericsson_e15i_ver1_sub21_01', // not in wurfl
 
         // device
-        'model_name'              => 'E15i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia X8',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'E15i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia X8',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 43, // wurflkey: sonyericsson_e15i_ver1_sub21_01
-        'physical_screen_height'  => 64,
-        'columns'                 => 15,
-        'rows'                    => 12,
-        'max_image_width'         => 320,
-        'max_image_height'        => 480,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 43, // wurflkey: sonyericsson_e15i_ver1_sub21_01
+        'physical_screen_height' => 64,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +164,9 @@ class SonyEricssonE15i
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonE15i
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

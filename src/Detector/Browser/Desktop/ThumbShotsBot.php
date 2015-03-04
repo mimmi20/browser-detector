@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\ThumbShotsBot as ThumbShotsBotBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ThumbShotsBot extends ThumbShotsBotBase
+class ThumbShotsBot
+    extends ThumbShotsBotBase
 {
     // nothing to do here
 }

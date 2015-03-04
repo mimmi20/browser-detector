@@ -82,7 +82,6 @@ class Blink
         'html_wi_w3_xhtmlbasic'                           => true,
         'html_wi_imode_compact_generic'                   => false,
         'voicexml'                                        => false,
-
         // chtml
         'chtml_table_support'                             => true,
         'imode_region'                                    => 'none',
@@ -91,7 +90,6 @@ class Blink
         'chtml_make_phone_call_string'                    => 'tel:',
         'chtml_display_accesskey'                         => false,
         'emoji'                                           => false,
-
         // xhtml
         'xhtml_select_as_radiobutton'                     => true,
         'xhtml_avoid_accesskeys'                          => true,
@@ -127,7 +125,6 @@ class Blink
         'opwv_xhtml_extensions_support'                   => false,
         'xhtml_marquee_as_css_property'                   => false,
         'xhtml_nowrap_mode'                               => false,
-
         // image format
         'jpg'                                             => true,
         'gif'                                             => true,
@@ -142,16 +139,13 @@ class Blink
         'svgt_1_1'                                        => false,
         'transparent_png_alpha'                           => false,
         'tiff'                                            => false,
-
         // security
         'https_support'                                   => true,
-
         // storage
         'max_url_length_bookmark'                         => 0,
         'max_url_length_cached_page'                      => 0,
         'max_url_length_in_requests'                      => 128,
         'max_url_length_homepage'                         => 0,
-
         // ajax
         'ajax_support_getelementbyid'                     => true,
         'ajax_xhr_type'                                   => 'standard',
@@ -162,7 +156,6 @@ class Blink
         'ajax_manipulate_css'                             => true,
         'ajax_support_events'                             => true,
         'ajax_preferred_geoloc_api'                       => 'none',
-
         // wml
         'wml_make_phone_call_string'                      => 'none', // ver >= 534.46, Chrome+Safari => none
         'card_title_support'                              => false,
@@ -186,11 +179,9 @@ class Blink
         'access_key_support'                              => false,
         'wml_displays_image_in_center'                    => false,
         'times_square_mode_support'                       => false,
-
         // third_party
         'jqm_grade'                                       => 'A',
         'is_sencha_touch_ok'                              => true,
-
         // html
         'image_inlining'                                  => true,
         'canvas_support'                                  => 'none',
@@ -203,7 +194,6 @@ class Blink
         'viewport_maximum_scale'                          => null,
         'viewport_userscalable'                           => null,
         'handheldfriendly'                                => false,
-
         // css
         'css_spriting'                                    => true,
         'css_gradient'                                    => 'none',
@@ -262,7 +252,10 @@ class Blink
         $detector->setUserAgent($this->_useragent);
 
         $searches = array(
-            'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\/AppleWebKit'
+            'AppleWebKit',
+            'WebKit',
+            'CFNetwork',
+            'Browser\/AppleWebKit'
         );
 
         return $detector->detectVersion($searches);
@@ -289,7 +282,9 @@ class Blink
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        OsHandler $os, DeviceHandler $device, BrowserHandler $browser
+        OsHandler $os,
+        DeviceHandler $device,
+        BrowserHandler $browser
     ) {
         if ($device->getDeviceType()->isMobile()) {
             $this->setCapability('html_wi_oma_xhtmlmp_1_0', true);

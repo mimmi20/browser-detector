@@ -55,39 +55,35 @@ class SonyEricssonSK17i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_sk17i_ver1_suban40i', // not in wurfl
+        'wurflKey'               => 'sonyericsson_sk17i_ver1_suban40i', // not in wurfl
 
         // device
-        'model_name'              => 'SK17i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia Mini Pro',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'SK17i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia Mini Pro',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/SK17iR402.xml',
-        'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/SK17iR411.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/SK17iR402.xml',
+        'uaprof2'                => 'http://wap.sonyericsson.com/UAprof/SK17iR411.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320, // wurflkey: sonyericsson_sk17i_ver1
-        'resolution_height'       => 480, // wurflkey: sonyericsson_sk17i_ver1
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320, // wurflkey: sonyericsson_sk17i_ver1
+        'resolution_height'      => 480, // wurflkey: sonyericsson_sk17i_ver1
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -172,7 +168,9 @@ class SonyEricssonSK17i
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonSK17i
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

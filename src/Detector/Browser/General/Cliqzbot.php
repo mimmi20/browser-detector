@@ -58,15 +58,12 @@ class Cliqzbot
         // product info
         'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );

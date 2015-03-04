@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Seamonkey as SeamonkeyBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Seamonkey extends SeamonkeyBase
+class Seamonkey
+    extends SeamonkeyBase
 {
     // nothing to do here
 }

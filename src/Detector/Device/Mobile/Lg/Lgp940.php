@@ -55,39 +55,35 @@ class Lgp940
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'lg_p940_ver1', // not in wurfl
+        'wurflKey'               => 'lg_p940_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'P940',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Prada 3.0',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'P940',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Prada 3.0',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://gsm.lge.com/html/gsm/P940-M6-D2.xml',
-        'uaprof2'                 => 'http://gsm.lge.com/html/gsm/P940-M10-D1.xml',
-        'uaprof3'                 => 'http://gsm.lge.com/html/gsm/P940-M3-D2.xml',
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://gsm.lge.com/html/gsm/P940-M6-D2.xml',
+        'uaprof2'                => 'http://gsm.lge.com/html/gsm/P940-M10-D1.xml',
+        'uaprof3'                => 'http://gsm.lge.com/html/gsm/P940-M3-D2.xml',
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 15,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,12 +164,15 @@ class Lgp940
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
         // wurflkey: lg_p940_ver1
         $engine->setCapability('bmp', true);
+
         // $engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;

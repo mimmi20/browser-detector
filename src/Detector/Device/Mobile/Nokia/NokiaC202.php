@@ -52,39 +52,36 @@ class NokiaC202
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_c2_02_ver1_subovibrsr', // not in wurfl
+        'wurflKey'               => 'nokia_c2_02_ver1_subovibrsr', // not in wurfl
 
         // device
-        'model_name'              => 'C2-02',
-        'model_extra_info'        => null,
-        'marketing_name'          => null,
-        'has_qwerty_keyboard'     => false, // wurflkey: nokia_c2_02_ver1_subovibrsr
-        'pointing_method'         => 'touchscreen', // wurflkey: nokia_c2_02_ver1_subovibrsr
+        'model_name'             => 'C2-02',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => false, // wurflkey: nokia_c2_02_ver1_subovibrsr
+        'pointing_method'        => 'touchscreen', // wurflkey: nokia_c2_02_ver1_subovibrsr
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

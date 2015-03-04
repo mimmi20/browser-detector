@@ -80,12 +80,15 @@ interface MatcherInterface
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @param mixed   $capabilityValue
+     * @param mixed  $capabilityValue
      *
      * @return DeviceHandler
      * @throws \InvalidArgumentException
      */
-    public function setCapability($capabilityName, $capabilityValue = null);
+    public function setCapability(
+        $capabilityName,
+        $capabilityValue = null
+    );
 
     /**
      * Returns the values of all capabilities for the current device

@@ -52,39 +52,35 @@ class PlayStationVita
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sony_playstation_vita_ver1', // not in wurfl
+        'wurflKey'               => 'sony_playstation_vita_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'PlayStation Vita',
-        'model_extra_info'        => null,
-        'marketing_name'          => null,
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'PlayStation Vita',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 111,
-        'physical_screen_height'  => 63,
-        'columns'                 => 11,
-        'rows'                    => 6,
-        'max_image_width'         => 940,
-        'max_image_height'        => 520,
-        'resolution_width'        => 960,
-        'resolution_height'       => 544,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 111,
+        'physical_screen_height' => 63,
+        'columns'                => 11,
+        'rows'                   => 6,
+        'max_image_width'        => 940,
+        'max_image_height'       => 520,
+        'resolution_width'       => 960,
+        'resolution_height'      => 544,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

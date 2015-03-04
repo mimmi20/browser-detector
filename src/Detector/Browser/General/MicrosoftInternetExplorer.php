@@ -83,15 +83,12 @@ class MicrosoftInternetExplorer
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -146,14 +143,14 @@ class MicrosoftInternetExplorer
             '360spider',
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnIE, true)
-            && !$this->utils->checkIfContains(array('Bitte Mozilla Firefox verwenden', 'chromeframe'))
+        if ($this->utils->checkIfContains($isNotReallyAnIE, true) && !$this->utils->checkIfContains(
+                array('Bitte Mozilla Firefox verwenden', 'chromeframe')
+            )
         ) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Gecko')
-            && !$this->utils->checkIfContainsAll(array('like Gecko', 'rv:11.0'))
+        if ($this->utils->checkIfContains('Gecko') && !$this->utils->checkIfContainsAll(array('like Gecko', 'rv:11.0'))
         ) {
             return false;
         }
@@ -282,13 +279,15 @@ class MicrosoftInternetExplorer
      * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         $engineVersion = (int)$engine->detectVersion()->getVersion(
             Version::MAJORONLY
         );
 
-        $browserVersion  = $this->detectVersion();
+        $browserVersion = $this->detectVersion();
 
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
 
@@ -300,8 +299,7 @@ class MicrosoftInternetExplorer
 
         switch ($engineVersion) {
             case 4:
-                if ($this->utils->checkIfContains('Trident/4.0')
-                    && 8 > $detectedVersion
+                if ($this->utils->checkIfContains('Trident/4.0') && 8 > $detectedVersion
                 ) {
                     $this->setCapability(
                         'mobile_browser_modus',
@@ -390,7 +388,7 @@ class MicrosoftInternetExplorer
                 // nothing to do here
                 break;
         }
-        
+
         $this->setCapability('wurflKey', 'msie_' . $browserVersion);
 
         return $this;

@@ -55,7 +55,9 @@ interface OsInterface
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        DeviceHandler $device
     );
 
     /**

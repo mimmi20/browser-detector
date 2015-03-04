@@ -38,7 +38,8 @@ namespace BrowserDetector\Detector;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Version implements \Serializable
+class Version
+    implements \Serializable
 {
     /**
      * @var integer
@@ -146,6 +147,24 @@ class Version implements \Serializable
     private $_mode = self::COMPLETE;
 
     /**
+     * magic function needed to reconstruct the class from a var_export
+     *
+     * @param array $array
+     *
+     * @return Version
+     */
+    static function __set_state(array $array)
+    {
+        $obj = new self;
+
+        foreach ($array as $k => $v) {
+            $obj->$k = $v;
+        }
+
+        return $obj;
+    }
+
+    /**
      * serializes the object
      *
      * @return string
@@ -180,24 +199,6 @@ class Version implements \Serializable
     }
 
     /**
-     * magic function needed to reconstruct the class from a var_export
-     *
-     * @param array $array
-     *
-     * @return Version
-     */
-    static function __set_state(array $array)
-    {
-        $obj = new self;
-
-        foreach ($array as $k => $v) {
-            $obj->$k = $v;
-        }
-
-        return $obj;
-    }
-
-    /**
      * sets the user agent to be handled
      *
      * @param string $userAgent
@@ -223,6 +224,36 @@ class Version implements \Serializable
         $this->_mode = $mode;
 
         return $this;
+    }
+
+    /**
+     * sets the default version, which is used, if no version could be detected
+     *
+     * @param string $version
+     *
+     * @return Version
+     * @throws \UnexpectedValueException
+     */
+    public function setDefaulVersion($version)
+    {
+        if (!is_string($version)) {
+            throw new \UnexpectedValueException(
+                'the default version needs to be a string'
+            );
+        }
+
+        $this->_default = $version;
+    }
+
+    public function __toString()
+    {
+        try {
+            return $this->getVersion(
+                Version::COMPLETE
+            );
+        } catch (\Exception $e) {
+            return '';
+        }
     }
 
     /**
@@ -265,17 +296,14 @@ class Version implements \Serializable
         }
 
         $microIsEmpty = false;
-        if (empty($versions[2])
-            || '0' === $versions[2]
-            || '' === $versions[2]
+        if (empty($versions[2]) || '0' === $versions[2] || '' === $versions[2]
         ) {
             $microIsEmpty = true;
         }
 
         if (self::IGNORE_MICRO & $mode) {
             unset($versions[2]);
-        } elseif (self::IGNORE_MICRO_IF_EMPTY & $mode
-            && $microIsEmpty
+        } elseif (self::IGNORE_MICRO_IF_EMPTY & $mode && $microIsEmpty
         ) {
             unset($versions[2]);
         }
@@ -287,11 +315,7 @@ class Version implements \Serializable
             unset($versions[2]);
             $minorIsEmpty = true;
         } elseif (self::IGNORE_MINOR_IF_EMPTY & $mode) {
-            if ((empty($versions[1])
-                    || '0' === $versions[1]
-                    || '00' === $versions[1]
-                    || '' === $versions[1])
-                && $microIsEmpty
+            if ((empty($versions[1]) || '0' === $versions[1] || '00' === $versions[1] || '' === $versions[1]) && $microIsEmpty
             ) {
                 $minorIsEmpty = true;
             }
@@ -305,10 +329,7 @@ class Version implements \Serializable
         $macroIsEmpty = false;
 
         if (self::IGNORE_MACRO_IF_EMPTY & $mode) {
-            if ((empty($versions[0])
-                    || '0' === $versions[0]
-                    || '' === $versions[0])
-                && $minorIsEmpty
+            if ((empty($versions[0]) || '0' === $versions[0] || '' === $versions[0]) && $minorIsEmpty
             ) {
                 $macroIsEmpty = true;
             }
@@ -331,6 +352,28 @@ class Version implements \Serializable
         }
 
         return $version;
+    }
+
+    /**
+     * sets the detected version
+     *
+     * @param string $version
+     *
+     * @return Version
+     * @throws \UnexpectedValueException
+     */
+    public function setVersion($version)
+    {
+        $version  = trim(trim(str_replace('_', '.', $version)), '.');
+        $splitted = explode('.', $version, 3);
+
+        $this->_major = (!empty($splitted[0]) ? $splitted[0] : '0');
+        $this->_minor = (!empty($splitted[1]) ? $splitted[1] : '0');
+        $this->_micro = (!empty($splitted[2]) ? $splitted[2] : '0');
+
+        $this->_version = $version;
+
+        return $this;
     }
 
     /**
@@ -384,7 +427,9 @@ class Version implements \Serializable
                 $compareString = '/' . $search . $modifier[0] . '(\d+[\d\.\_ab]*)' . $modifier[1] . '/';
 
                 $doMatch = preg_match(
-                    $compareString, $useragent, $matches
+                    $compareString,
+                    $useragent,
+                    $matches
                 );
 
                 if ($doMatch) {
@@ -400,58 +445,6 @@ class Version implements \Serializable
         }
 
         return $this->setVersion($version);
-    }
-
-    /**
-     * sets the detected version
-     *
-     * @param string $version
-     *
-     * @return Version
-     * @throws \UnexpectedValueException
-     */
-    public function setVersion($version)
-    {
-        $version  = trim(trim(str_replace('_', '.', $version)), '.');
-        $splitted = explode('.', $version, 3);
-
-        $this->_major = (!empty($splitted[0]) ? $splitted[0] : '0');
-        $this->_minor = (!empty($splitted[1]) ? $splitted[1] : '0');
-        $this->_micro = (!empty($splitted[2]) ? $splitted[2] : '0');
-
-        $this->_version = $version;
-
-        return $this;
-    }
-
-    /**
-     * sets the default version, which is used, if no version could be detected
-     *
-     * @param string $version
-     *
-     * @return Version
-     * @throws \UnexpectedValueException
-     */
-    public function setDefaulVersion($version)
-    {
-        if (!is_string($version)) {
-            throw new \UnexpectedValueException(
-                'the default version needs to be a string'
-            );
-        }
-
-        $this->_default = $version;
-    }
-
-    public function __toString()
-    {
-        try {
-            return $this->getVersion(
-                Version::COMPLETE
-            );
-        } catch (\Exception $e) {
-            return '';
-        }
     }
 
     /**

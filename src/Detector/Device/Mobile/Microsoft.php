@@ -54,39 +54,35 @@ class Microsoft
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'windows_8_rt_ver1', // not in wurfl
+        'wurflKey'               => 'windows_8_rt_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'general Microsoft Device',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'general Microsoft Device',
-        'has_qwerty_keyboard'     => false, // windows_8_rt_ver1
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'general Microsoft Device',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'general Microsoft Device',
+        'has_qwerty_keyboard'    => false, // windows_8_rt_ver1
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 80,
-        'rows'                    => 20,
-        'max_image_width'         => 1280,
-        'max_image_height'        => 800,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 80,
+        'rows'                   => 20,
+        'max_image_width'        => 1280,
+        'max_image_height'       => 800,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

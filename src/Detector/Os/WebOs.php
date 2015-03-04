@@ -131,10 +131,7 @@ class WebOs
         );
 
         $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..'
-            . DIRECTORY_SEPARATOR . 'Browser'
-            . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile'
-            . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
         );
         $browserNs   = 'BrowserDetector\\Browser\\Handlers\\Mobile';
 
@@ -143,6 +140,7 @@ class WebOs
         $chain->setUseragent($this->_useragent);
 
         $device = $chain->detect();
+
         return $device->detect();
     }
 

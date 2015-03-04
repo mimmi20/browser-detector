@@ -70,38 +70,34 @@ class EeePc
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'eee pc',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'eee pc',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'mouse',
-
+        'model_name'             => 'eee pc',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'eee pc',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'mouse',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 600,
-        'dual_orientation'        => false,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => false,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -200,10 +196,7 @@ class EeePc
     public function detectBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..'
-            . DIRECTORY_SEPARATOR . 'Browser'
-            . DIRECTORY_SEPARATOR . 'Desktop'
-            . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
         );
 
         $chain = new Chain();

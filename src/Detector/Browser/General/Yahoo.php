@@ -57,15 +57,12 @@ class Yahoo
         // product info
         'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -81,12 +78,11 @@ class Yahoo
             return false;
         }
 
-        if ($this->utils->checkIfContains('Mozilla/5.0 (YahooYSMcm')
-            || $this->utils->checkIfContains('Scooter')
-            || $this->utils->checkIfContains('Y!OASIS')
-            || $this->utils->checkIfContains('YahooYSMcm')
-            || $this->utils->checkIfContains('YRL_ODP_CRAWLER')
-            || $this->utils->checkIfContains('www.yahoo.com')
+        if ($this->utils->checkIfContains('Mozilla/5.0 (YahooYSMcm') || $this->utils->checkIfContains(
+                'Scooter'
+            ) || $this->utils->checkIfContains('Y!OASIS') || $this->utils->checkIfContains(
+                'YahooYSMcm'
+            ) || $this->utils->checkIfContains('YRL_ODP_CRAWLER') || $this->utils->checkIfContains('www.yahoo.com')
         ) {
             return true;
         }

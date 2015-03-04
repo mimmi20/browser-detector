@@ -61,15 +61,12 @@ class TelecaObigo
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -83,8 +80,13 @@ class TelecaObigo
     {
         return $this->utils->checkIfContains(
             array(
-                'Teleca', 'AU-MIC', 'MIC/', 'Obigo', 'ObigoInternetBrowser',
-                'obigo-browser', 'WAP/OBIGO'
+                'Teleca',
+                'AU-MIC',
+                'MIC/',
+                'Obigo',
+                'ObigoInternetBrowser',
+                'obigo-browser',
+                'WAP/OBIGO'
             )
         );
     }
@@ -130,7 +132,9 @@ class TelecaObigo
         $detector->setUserAgent($this->useragent);
 
         $doMatch = preg_match(
-            '/ObigoInternetBrowser\/Q(\d+)/', $this->useragent, $matches
+            '/ObigoInternetBrowser\/Q(\d+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -138,7 +142,9 @@ class TelecaObigo
         }
 
         $doMatch = preg_match(
-            '/obigo\-browser\/Q(\d+)/', $this->useragent, $matches
+            '/obigo\-browser\/Q(\d+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -146,9 +152,17 @@ class TelecaObigo
         }
 
         $searches = array(
-            'MIC', 'ObigoInternetBrowser', 'Obigo Browser', 'Obigo\-Browser',
-            'Teleca\-Obigo', 'Obigo\-Q05A', 'TelecaBrowser', 'Teleca\-Q',
-            'Obigo\-Q', 'Obigo\/Q', 'Teleca\/Q'
+            'MIC',
+            'ObigoInternetBrowser',
+            'Obigo Browser',
+            'Obigo\-Browser',
+            'Teleca\-Obigo',
+            'Obigo\-Q05A',
+            'TelecaBrowser',
+            'Teleca\-Q',
+            'Obigo\-Q',
+            'Obigo\/Q',
+            'Teleca\/Q'
         );
 
         return $detector->detectVersion($searches);

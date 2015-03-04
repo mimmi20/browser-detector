@@ -56,39 +56,35 @@ class LgP880
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'lg_p880_ver1', // not in wurfl
+        'wurflKey'               => 'lg_p880_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'P880',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Optimus 4X HD',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'P880',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Optimus 4X HD',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://gsm.lge.com/html/gsm/P880-M3-D1.xml',
-        'uaprof2'                 => 'http://gsm.lge.com/html/gsm/P880-M6-D2.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://gsm.lge.com/html/gsm/P880-M3-D1.xml',
+        'uaprof2'                => 'http://gsm.lge.com/html/gsm/P880-M6-D2.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 59, // wurflkey: lg_p880_ver1
-        'physical_screen_height'  => 105,
-        'columns'                 => 25,
-        'rows'                    => 15,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 59, // wurflkey: lg_p880_ver1
+        'physical_screen_height' => 105,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class LgP880
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -181,43 +179,43 @@ class LgP880
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'lg_p880_ver1_subuachrome');
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'lg_p880_ver1_subuachrome');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

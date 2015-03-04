@@ -56,39 +56,36 @@ class BlackBerry9900
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry9900_ver1_subua71', // not in wurfl
+        'wurflKey'               => 'blackberry9900_ver1_subua71', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry Bold Touch 9900',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Dakota',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'BlackBerry Bold Touch 9900',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Dakota',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_gprs/7.1.0.rdf',
-        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_edge/7.1.0.rdf',
-        'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_umts/7.1.0.rdf',
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_gprs/7.1.0.rdf',
+        'uaprof2'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_edge/7.1.0.rdf',
+        'uaprof3'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9900_umts/7.1.0.rdf',
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 57,
-        'physical_screen_height'  => 43,
-        'columns'                 => 28,
-        'rows'                    => 16,
-        'max_image_width'         => 640,
-        'max_image_height'        => 480,
-        'resolution_width'        => 640,
-        'resolution_height'       => 480,
-        'dual_orientation'        => false,
-        'colors'                  => 256, // wurflkey: blackberry9900_ver1_subua71
+        'physical_screen_width'  => 57,
+        'physical_screen_height' => 43,
+        'columns'                => 28,
+        'rows'                   => 16,
+        'max_image_width'        => 640,
+        'max_image_height'       => 480,
+        'resolution_width'       => 640,
+        'resolution_height'      => 480,
+        'dual_orientation'       => false,
+        'colors'                 => 256, // wurflkey: blackberry9900_ver1_subua71
 
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +166,9 @@ class BlackBerry9900
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

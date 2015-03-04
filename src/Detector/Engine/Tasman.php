@@ -78,7 +78,6 @@ class Tasman
         'html_wi_w3_xhtmlbasic'                           => null,
         'html_wi_imode_compact_generic'                   => null,
         'voicexml'                                        => null,
-
         // chtml
         'chtml_table_support'                             => null,
         'imode_region'                                    => null,
@@ -87,7 +86,6 @@ class Tasman
         'chtml_make_phone_call_string'                    => null,
         'chtml_display_accesskey'                         => null,
         'emoji'                                           => null,
-
         // xhtml
         'xhtml_select_as_radiobutton'                     => null,
         'xhtml_avoid_accesskeys'                          => null,
@@ -123,7 +121,6 @@ class Tasman
         'opwv_xhtml_extensions_support'                   => null,
         'xhtml_marquee_as_css_property'                   => null,
         'xhtml_nowrap_mode'                               => null,
-
         // image format
         'jpg'                                             => null,
         'gif'                                             => null,
@@ -138,16 +135,13 @@ class Tasman
         'svgt_1_1'                                        => null,
         'transparent_png_alpha'                           => null,
         'tiff'                                            => null,
-
         // security
         'https_support'                                   => null,
-
         // storage
         'max_url_length_bookmark'                         => null,
         'max_url_length_cached_page'                      => null,
         'max_url_length_in_requests'                      => null,
         'max_url_length_homepage'                         => null,
-
         // ajax
         'ajax_support_getelementbyid'                     => null,
         'ajax_xhr_type'                                   => null,
@@ -158,7 +152,6 @@ class Tasman
         'ajax_manipulate_css'                             => null,
         'ajax_support_events'                             => null,
         'ajax_preferred_geoloc_api'                       => null,
-
         // wml
         'wml_make_phone_call_string'                      => null,
         'card_title_support'                              => null,
@@ -182,11 +175,9 @@ class Tasman
         'access_key_support'                              => null,
         'wml_displays_image_in_center'                    => null,
         'times_square_mode_support'                       => null,
-
         // third_party
         'jqm_grade'                                       => null,
         'is_sencha_touch_ok'                              => null,
-
         // html
         'image_inlining'                                  => null,
         'canvas_support'                                  => null,
@@ -199,7 +190,6 @@ class Tasman
         'viewport_maximum_scale'                          => null,
         'viewport_userscalable'                           => null,
         'handheldfriendly'                                => null,
-
         // css
         'css_spriting'                                    => null,
         'css_gradient'                                    => null,
@@ -217,16 +207,24 @@ class Tasman
     public function canHandle()
     {
         $noTridentEngines = array(
-            'KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics',
-            'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Trident'
+            'KHTML',
+            'AppleWebKit',
+            'WebKit',
+            'Gecko',
+            'Presto',
+            'RGAnalytics',
+            'libwww',
+            'iPhone',
+            'Firefox',
+            'Mozilla/5.0 (en)',
+            'Trident'
         );
 
         if ($this->utils->checkIfContains($noTridentEngines)) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Mozilla/')
-            && $this->utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
+        if ($this->utils->checkIfContains('Mozilla/') && $this->utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
         ) {
             return true;
         }

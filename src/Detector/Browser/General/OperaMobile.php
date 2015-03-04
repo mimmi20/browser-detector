@@ -60,15 +60,12 @@ class OperaMobile
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -83,8 +80,9 @@ class OperaMobile
         $mobileDeviceHelper = new MobileDevice();
         $mobileDeviceHelper->setUserAgent($this->useragent);
 
-        if (!$this->utils->checkIfContains(array('Opera Mobi', 'Opera Tablet', 'OPR'))
-            && !($mobileDeviceHelper->isMobileBrowser() && $this->utils->checkIfContains(array('Opera', 'OPR')))
+        if (!$this->utils->checkIfContains(
+                array('Opera Mobi', 'Opera Tablet', 'OPR')
+            ) && !($mobileDeviceHelper->isMobileBrowser() && $this->utils->checkIfContains(array('Opera', 'OPR')))
         ) {
             return false;
         }
@@ -169,6 +167,7 @@ class OperaMobile
         }
 
         $engine->setUseragent($this->useragent);
+
         return $engine;
     }
 }

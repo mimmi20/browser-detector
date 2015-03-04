@@ -52,39 +52,35 @@ class NokiaX600
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_x6_ver1', // not in wurfl
+        'wurflKey'               => 'nokia_x6_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'X6-00',
-        'model_extra_info'        => null,
-        'marketing_name'          => null,
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'X6-00',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00r100-3G.xml',
-        'uaprof2'                 => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00r100-2G.xml',
-        'uaprof3'                 => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00.1r100-3G.xml',
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00r100-3G.xml',
+        'uaprof2'                => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00r100-2G.xml',
+        'uaprof3'                => 'http://nds1.nds.nokia.com/uaprof/NokiaX6-00.1r100-3G.xml',
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 71,
-        'columns'                 => 17,
-        'rows'                    => 13,
-        'max_image_width'         => 360,
-        'max_image_height'        => 500,
-        'resolution_width'        => 360,
-        'resolution_height'       => 640,
-        'dual_orientation'        => false,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 71,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 360,
+        'max_image_height'       => 500,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
+        'dual_orientation'       => false,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

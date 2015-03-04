@@ -52,39 +52,35 @@ class BlackBerry9320
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry9320_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry9320_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 9320',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'BlackBerry Curve 9320',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'BlackBerry 9320',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'BlackBerry Curve 9320',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9320_umts/7.1.0.rdf',
-        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9320_gprs/7.1.0.rdf',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9320_umts/7.1.0.rdf',
+        'uaprof2'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9320_gprs/7.1.0.rdf',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 83,
-        'physical_screen_height'  => 62,
-        'columns'                 => 32,
-        'rows'                    => 16,
-        'max_image_width'         => 300,
-        'max_image_height'        => 280,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 262144,
-
+        'physical_screen_width'  => 83,
+        'physical_screen_height' => 62,
+        'columns'                => 32,
+        'rows'                   => 16,
+        'max_image_width'        => 300,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

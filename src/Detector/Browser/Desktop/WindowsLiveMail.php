@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\WindowsLiveMail as WindowsLiveMailB
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsLiveMail extends WindowsLiveMailBase
+class WindowsLiveMail
+    extends WindowsLiveMailBase
 {
     // nothing to do here
 }

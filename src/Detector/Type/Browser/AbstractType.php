@@ -36,7 +36,8 @@ namespace BrowserDetector\Detector\Type\Browser;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractType implements TypeInterface
+abstract class AbstractType
+    implements TypeInterface
 {
     /**
      * the name of the browser
@@ -80,7 +81,7 @@ abstract class AbstractType implements TypeInterface
      */
     public function __toString()
     {
-        return (string) $this->getName();
+        return (string)$this->getName();
     }
 
     /**

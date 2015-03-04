@@ -58,15 +58,12 @@ class WindowsMediaPlayer
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -78,8 +75,7 @@ class WindowsMediaPlayer
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Windows-Media-Player')
-            && !$this->utils->checkIfContains('NSPlayer')
+        if (!$this->utils->checkIfContains('Windows-Media-Player') && !$this->utils->checkIfContains('NSPlayer')
         ) {
             return false;
         }

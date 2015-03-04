@@ -59,39 +59,35 @@ class SonyEricssonU20i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_u20i_ver1_suban21', // not in wurfl
+        'wurflKey'               => 'sonyericsson_u20i_ver1_suban21', // not in wurfl
 
         // device
-        'model_name'              => 'U20i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia X10 Mini pro',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'U20i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia X10 Mini pro',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/U20iR201.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/U20iR201.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 238,
-        'max_image_height'        => 318,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 238,
+        'max_image_height'       => 318,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -201,7 +197,9 @@ class SonyEricssonU20i
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonU20i
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -212,45 +210,45 @@ class SonyEricssonU20i
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.1:
-                $this->setCapability('wurflKey', 'sonyericsson_u20i_ver1_suban21');
-                $engine->setCapability('xhtml_file_upload', 'not_supported');
-                $engine->setCapability('jqm_grade', 'C');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.1:
+                        $this->setCapability('wurflKey', 'sonyericsson_u20i_ver1_suban21');
+                        $engine->setCapability('xhtml_file_upload', 'not_supported');
+                        $engine->setCapability('jqm_grade', 'C');
+                        break;
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

@@ -52,39 +52,36 @@ class BlackBerry8110
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry8110_ver1_sub45055', // not in wurfl
+        'wurflKey'               => 'blackberry8110_ver1_sub45055', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 8110',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Pearl', // wurflkey: blackberry8110_ver1_sub45055
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'clickwheel', // wurflkey: blackberry8110_ver1_sub45055
+        'model_name'             => 'BlackBerry 8110',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Pearl', // wurflkey: blackberry8110_ver1_sub45055
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'clickwheel', // wurflkey: blackberry8110_ver1_sub45055
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

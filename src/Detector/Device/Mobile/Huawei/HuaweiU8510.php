@@ -55,39 +55,35 @@ class HuaweiU8510
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'huawei_s41hw_ver1_subu8510', // not in wurfl
+        'wurflKey'               => 'huawei_s41hw_ver1_subu8510', // not in wurfl
 
         // device
-        'model_name'              => 'S41HW',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Pocket WiFi S II for emobile', // wurflkey: huawei_s41hw_ver1_subu8510
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'S41HW',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Pocket WiFi S II for emobile', // wurflkey: huawei_s41hw_ver1_subu8510
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiU8510-1WCDMA-VDF_PT.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap1.huawei.com/uaprof/HuaweiU8510-1WCDMA-VDF_PT.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +164,9 @@ class HuaweiU8510
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

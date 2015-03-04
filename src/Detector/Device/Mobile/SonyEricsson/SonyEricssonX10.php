@@ -52,39 +52,35 @@ class SonyEricssonX10
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_x10i_ver1_suban23', // not in wurfl
+        'wurflKey'               => 'sonyericsson_x10i_ver1_suban23', // not in wurfl
 
         // device
-        'model_name'              => 'X10',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'X10',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/X10iR101.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/X10iR101.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40, // wurflkey: sonyericsson_x10i_ver1_suban23
-        'physical_screen_height'  => 60,
-        'columns'                 => 44,
-        'rows'                    => 32,
-        'max_image_width'         => 320,
-        'max_image_height'        => 480,
-        'resolution_width'        => 480,
-        'resolution_height'       => 854,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 40, // wurflkey: sonyericsson_x10i_ver1_suban23
+        'physical_screen_height' => 60,
+        'columns'                => 44,
+        'rows'                   => 32,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 480,
+        'resolution_height'      => 854,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

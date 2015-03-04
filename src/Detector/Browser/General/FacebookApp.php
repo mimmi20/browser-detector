@@ -57,15 +57,12 @@ class FacebookApp
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -77,8 +74,10 @@ class FacebookApp
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Facebook')
-            && !$this->utils->checkIfContains(array('fban', 'fbforiphone', 'fbav', 'facebookexternalhit'), true)
+        if (!$this->utils->checkIfContains('Facebook') && !$this->utils->checkIfContains(
+                array('fban', 'fbforiphone', 'fbav', 'facebookexternalhit'),
+                true
+            )
         ) {
             return false;
         }

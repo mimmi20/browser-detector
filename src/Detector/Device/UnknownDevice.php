@@ -43,7 +43,6 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-
 class UnknownDevice
     extends DeviceHandler
     implements DeviceInterface
@@ -54,39 +53,35 @@ class UnknownDevice
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'unknown Device',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'unknown Device',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => null,
-
+        'model_name'             => 'unknown Device',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'unknown Device',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => null,
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -147,10 +142,7 @@ class UnknownDevice
     public function detectBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..'
-            . DIRECTORY_SEPARATOR . 'Browser'
-            . DIRECTORY_SEPARATOR . 'General'
-            . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'General' . DIRECTORY_SEPARATOR
         );
 
         $chain = new Chain();

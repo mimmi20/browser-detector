@@ -53,39 +53,35 @@ class PlayStationPortable
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sony_psp_ver1', // not in wurfl
+        'wurflKey'               => 'sony_psp_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'PlayStation Portable',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'PSP',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'PlayStation Portable',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'PSP',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 11,
-        'rows'                    => 6,
-        'max_image_width'         => 480,
-        'max_image_height'        => 272,
-        'resolution_width'        => 480,
-        'resolution_height'       => 272,
-        'dual_orientation'        => false,
-        'colors'                  => 256,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 11,
+        'rows'                   => 6,
+        'max_image_width'        => 480,
+        'max_image_height'       => 272,
+        'resolution_width'       => 480,
+        'resolution_height'      => 272,
+        'dual_orientation'       => false,
+        'colors'                 => 256,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**

@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Midori as DefaultMidori;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Midori extends DefaultMidori
+class Midori
+    extends DefaultMidori
 {
     // nothing to do here
 }

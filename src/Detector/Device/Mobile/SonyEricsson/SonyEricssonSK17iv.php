@@ -55,39 +55,35 @@ class SonyEricssonSK17iv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_sk17i_ver1_subv', // not in wurfl
+        'wurflKey'               => 'sonyericsson_sk17i_ver1_subv', // not in wurfl
 
         // device
-        'model_name'              => 'SK17iv',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia Mini Pro',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'SK17iv',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia Mini Pro',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/SK17iR402.xml',
-        'uaprof2'                 => 'http://wap.sonyericsson.com/UAprof/SK17iR411.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/SK17iR402.xml',
+        'uaprof2'                => 'http://wap.sonyericsson.com/UAprof/SK17iR411.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,12 +164,15 @@ class SonyEricssonSK17iv
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonSK17iv
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
         // wurflkey: sonyericsson_sk17i_ver1_subv
         $engine->setCapability('bmp', true);
+
         // $engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;

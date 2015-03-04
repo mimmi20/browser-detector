@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Hitpad as DefaultHitpad;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Hitpad extends DefaultHitpad
+class Hitpad
+    extends DefaultHitpad
 {
     // nothing to do here
 }

@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Lunascape as LunascapeBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lunascape extends LunascapeBase
+class Lunascape
+    extends LunascapeBase
 {
     // nothing to do here
 }

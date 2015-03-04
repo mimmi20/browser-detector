@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Arora as AroraBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Arora extends AroraBase
+class Arora
+    extends AroraBase
 {
     // nothing to do here
 }

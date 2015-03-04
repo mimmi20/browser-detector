@@ -154,7 +154,9 @@ class Chain
                 $filename = $fileinfo->getBasename('.php');
 
                 $className = $utils->getClassNameFromFile(
-                    $filename, $this->_namespace, true
+                    $filename,
+                    $this->_namespace,
+                    true
                 );
 
                 try {
@@ -182,14 +184,15 @@ class Chain
             }
         }
 
-        if (null !== $this->_defaultHandler
-            && is_object($this->_defaultHandler)
+        if (null !== $this->_defaultHandler && is_object($this->_defaultHandler)
         ) {
             $handler = $this->_defaultHandler;
         } else {
             $utils     = new Classname();
             $className = $utils->getClassNameFromFile(
-                'Unknown', $this->_namespace, true
+                'Unknown',
+                $this->_namespace,
+                true
             );
             $handler   = new $className();
         }

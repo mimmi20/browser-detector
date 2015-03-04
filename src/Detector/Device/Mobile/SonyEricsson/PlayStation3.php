@@ -53,39 +53,35 @@ class PlayStation3
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'Playstation 3',
-        'model_extra_info'        => null,
-        'marketing_name'          => null,
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'mouse',
-
+        'model_name'             => 'Playstation 3',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'mouse',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 400,
-        'physical_screen_height'  => 400,
-        'columns'                 => 120,
-        'rows'                    => 200,
-        'max_image_width'         => 650,
-        'max_image_height'        => 600,
-        'resolution_width'        => 685,
-        'resolution_height'       => 600,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 400,
+        'physical_screen_height' => 400,
+        'columns'                => 120,
+        'rows'                   => 200,
+        'max_image_width'        => 650,
+        'max_image_height'       => 600,
+        'resolution_width'       => 685,
+        'resolution_height'      => 600,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

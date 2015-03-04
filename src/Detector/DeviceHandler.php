@@ -69,36 +69,33 @@ abstract class DeviceHandler
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                  => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'                => 'unknown',
-        'model_extra_info'          => null,
-        'marketing_name'            => null,
-        'has_qwerty_keyboard'       => null,
-        'pointing_method'           => null,
-
+        'model_name'             => 'unknown',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => null,
+        'pointing_method'        => null,
         // product info
-        'ununiqueness_handler'      => null,
-        'uaprof'                    => null,
-        'uaprof2'                   => null,
-        'uaprof3'                   => null,
-        'unique'                    => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'     => 27,
-        'physical_screen_height'    => 27,
-        'columns'                   => 11,
-        'rows'                      => 6,
-        'max_image_width'           => 90,
-        'max_image_height'          => 35,
-        'resolution_width'          => 90,
-        'resolution_height'         => 40,
-        'dual_orientation'          => false,
-        'colors'                    => 65536,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 11,
+        'rows'                   => 6,
+        'max_image_width'        => 90,
+        'max_image_height'       => 35,
+        'resolution_width'       => 90,
+        'resolution_height'      => 40,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // chips
-        'nfc_support'               => null,
+        'nfc_support'            => null,
     );
 
     /**
@@ -172,7 +169,9 @@ abstract class DeviceHandler
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         $browser->detectDependProperties($engine, $os, $this);
         $os->detectDependProperties($browser, $engine, $this);
@@ -246,8 +245,10 @@ abstract class DeviceHandler
      *
      * @return DeviceHandler
      */
-    public function setCapability($capabilityName, $capabilityValue = null)
-    {
+    public function setCapability(
+        $capabilityName,
+        $capabilityValue = null
+    ) {
         $this->checkCapability($capabilityName);
 
         $this->properties[$capabilityName] = $capabilityValue;
@@ -291,22 +292,22 @@ abstract class DeviceHandler
     {
         if (isset($name)) {
             switch ($name) {
-            case 'id':
-                return $this->getCapability('wurflKey');
-                break;
-            case 'userAgent':
-                return $this->getCapability('useragent');
-                break;
-            case 'deviceClass':
-                return $this->getCapability('deviceClass');
-                break;
-            case 'fallBack':
-            case 'actualDeviceRoot':
-                return null;
-                break;
-            default:
-                // nothing to do here
-                break;
+                case 'id':
+                    return $this->getCapability('wurflKey');
+                    break;
+                case 'userAgent':
+                    return $this->getCapability('useragent');
+                    break;
+                case 'deviceClass':
+                    return $this->getCapability('deviceClass');
+                    break;
+                case 'fallBack':
+                case 'actualDeviceRoot':
+                    return null;
+                    break;
+                default:
+                    // nothing to do here
+                    break;
             }
         }
 

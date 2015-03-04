@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Avant as AvantBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Avant extends AvantBase
+class Avant
+    extends AvantBase
 {
     // nothing to do here
 }

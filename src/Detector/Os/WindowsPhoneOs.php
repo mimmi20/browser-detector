@@ -72,13 +72,16 @@ class WindowsPhoneOs
         $windowsHelper = new WindowsHelper();
         $windowsHelper->setUserAgent($this->_useragent);
 
-        if (!$windowsHelper->isMobileWindows()
-            && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobileBrowser())
+        if (!$windowsHelper->isMobileWindows() && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobileBrowser(
+                ))
         ) {
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone', 'WPDesktop'))) {
+        if (!$this->utils->checkIfContains(
+            array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone', 'WPDesktop')
+        )
+        ) {
             return false;
         }
 
@@ -181,7 +184,9 @@ class WindowsPhoneOs
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($browser, $engine, $device);
 

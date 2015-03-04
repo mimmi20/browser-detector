@@ -52,7 +52,7 @@ class SamsungGti9301i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'samsung_gt_i9301i_ver1', // not in wurfl
 
         // device
         'model_name'             => 'GT-I9301I',

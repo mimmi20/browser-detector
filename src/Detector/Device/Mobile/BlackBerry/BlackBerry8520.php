@@ -52,39 +52,35 @@ class BlackBerry8520
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry8520_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry8520_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 8520',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Curve', // blackberry8520_ver1_sub500822
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'clickwheel',
-
+        'model_name'             => 'BlackBerry 8520',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Curve', // blackberry8520_ver1_sub500822
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'clickwheel',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_edge/5.0.0.rdf',
-        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_gprs/5.0.0.rdf',
-        'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_gprs/4.6.1.rdf',
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_edge/5.0.0.rdf',
+        'uaprof2'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_gprs/5.0.0.rdf',
+        'uaprof3'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_gprs/4.6.1.rdf',
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27, // blackberry8520_ver1_sub500822
-        'physical_screen_height'  => 27,
-        'columns'                 => 32,
-        'rows'                    => 16,
-        'max_image_width'         => 300,
-        'max_image_height'        => 160,
-        'resolution_width'        => 320,
-        'resolution_height'       => 240,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 27, // blackberry8520_ver1_sub500822
+        'physical_screen_height' => 27,
+        'columns'                => 32,
+        'rows'                   => 16,
+        'max_image_width'        => 300,
+        'max_image_height'       => 160,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

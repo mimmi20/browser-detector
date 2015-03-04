@@ -58,15 +58,12 @@ class GoogleFontAnalysis
         // product info
         'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -78,8 +75,10 @@ class GoogleFontAnalysis
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains('Google-FontAnalysis', true)
-            || $this->utils->checkIfContains('www.google.com/webfonts', true)
+        if ($this->utils->checkIfContains('Google-FontAnalysis', true) || $this->utils->checkIfContains(
+                'www.google.com/webfonts',
+                true
+            )
         ) {
             return true;
         }

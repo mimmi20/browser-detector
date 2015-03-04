@@ -79,7 +79,6 @@ class Khtml
         'html_wi_w3_xhtmlbasic'                           => true,
         'html_wi_imode_compact_generic'                   => null,
         'voicexml'                                        => null,
-
         // chtml
         'chtml_table_support'                             => true,
         'imode_region'                                    => 'none',
@@ -88,7 +87,6 @@ class Khtml
         'chtml_make_phone_call_string'                    => 'tel:',
         'chtml_display_accesskey'                         => null,
         'emoji'                                           => null,
-
         // xhtml
         'xhtml_select_as_radiobutton'                     => true,
         'xhtml_avoid_accesskeys'                          => true,
@@ -124,7 +122,6 @@ class Khtml
         'opwv_xhtml_extensions_support'                   => null,
         'xhtml_marquee_as_css_property'                   => null,
         'xhtml_nowrap_mode'                               => null,
-
         // image format
         'jpg'                                             => true,
         'gif'                                             => true,
@@ -139,16 +136,13 @@ class Khtml
         'svgt_1_1'                                        => false,
         'transparent_png_alpha'                           => false,
         'tiff'                                            => false,
-
         // security
         'https_support'                                   => true,
-
         // storage
         'max_url_length_bookmark'                         => null,
         'max_url_length_cached_page'                      => null,
         'max_url_length_in_requests'                      => 128,
         'max_url_length_homepage'                         => null,
-
         // ajax
         'ajax_support_getelementbyid'                     => true,
         'ajax_xhr_type'                                   => 'standard',
@@ -159,7 +153,6 @@ class Khtml
         'ajax_manipulate_css'                             => true,
         'ajax_support_events'                             => true,
         'ajax_preferred_geoloc_api'                       => 'none',
-
         // wml
         'wml_make_phone_call_string'                      => null,
         'card_title_support'                              => null,
@@ -183,11 +176,9 @@ class Khtml
         'access_key_support'                              => null,
         'wml_displays_image_in_center'                    => null,
         'times_square_mode_support'                       => null,
-
         // third_party
         'jqm_grade'                                       => 'A',
         'is_sencha_touch_ok'                              => true,
-
         // html
         'image_inlining'                                  => null,
         'canvas_support'                                  => 'none',
@@ -200,7 +191,6 @@ class Khtml
         'viewport_maximum_scale'                          => null,
         'viewport_userscalable'                           => null,
         'handheldfriendly'                                => false,
-
         // css
         'css_spriting'                                    => false,
         'css_gradient'                                    => 'none',

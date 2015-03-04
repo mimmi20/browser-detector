@@ -56,39 +56,35 @@ class MotorolaMb525
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'mot_mb525_ver1', // not in wurfl
+        'wurflKey'               => 'mot_mb525_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'MB525',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'DEFY', // wurflkey: mot_mb525_ver1_sub_android221
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'MB525',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'DEFY', // wurflkey: mot_mb525_ver1_sub_android221
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://uaprof.motorola.com/phoneconfig/MotoMB525/profile/MotoMB525.rdf',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://uaprof.motorola.com/phoneconfig/MotoMB525/profile/MotoMB525.rdf',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 310,
-        'max_image_height'        => 480,
-        'resolution_width'        => 480,
-        'resolution_height'       => 854,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 310,
+        'max_image_height'       => 480,
+        'resolution_width'       => 480,
+        'resolution_height'      => 854,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class MotorolaMb525
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -181,49 +179,49 @@ class MotorolaMb525
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.1:
-                $this->setCapability('wurflKey', 'mot_mb525_ver1_sub_android221');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.1:
+                        $this->setCapability('wurflKey', 'mot_mb525_ver1_sub_android221');
 
-                if ($this->utils->checkIfContains('_U3_2.5')) {
-                    $this->setCapability('wurflKey', 'mot_mb525_ver1_subu32590');
+                        if ($this->utils->checkIfContains('_U3_2.5')) {
+                            $this->setCapability('wurflKey', 'mot_mb525_ver1_subu32590');
+                        }
+                        break;
+                    case 2.2:
+                        $this->setCapability('wurflKey', 'mot_mb525_ver1_sub_funnyua');
+                        break;
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
                 }
                 break;
-            case 2.2:
-                $this->setCapability('wurflKey', 'mot_mb525_ver1_sub_funnyua');
-                break;
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

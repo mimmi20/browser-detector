@@ -52,39 +52,35 @@ class BlackBerry8900
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry8900_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry8900_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 8900',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Curve',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'clickwheel',
-
+        'model_name'             => 'BlackBerry 8900',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Curve',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'clickwheel',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_gprs/5.0.0.rdf',
-        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_edge/5.0.0.rdf',
-        'uaprof3'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_edge/4.6.1.rdf',
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_gprs/5.0.0.rdf',
+        'uaprof2'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_edge/5.0.0.rdf',
+        'uaprof3'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8900_edge/4.6.1.rdf',
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 49,
-        'physical_screen_height'  => 37,
-        'columns'                 => 48,
-        'rows'                    => 24,
-        'max_image_width'         => 440,
-        'max_image_height'        => 300,
-        'resolution_width'        => 480,
-        'resolution_height'       => 360,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 37,
+        'columns'                => 48,
+        'rows'                   => 24,
+        'max_image_width'        => 440,
+        'max_image_height'       => 300,
+        'resolution_width'       => 480,
+        'resolution_height'      => 360,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

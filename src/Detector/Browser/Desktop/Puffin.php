@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Puffin as DefaultPuffin;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Puffin extends DefaultPuffin
+class Puffin
+    extends DefaultPuffin
 {
     // nothing to do here
 }

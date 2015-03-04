@@ -55,39 +55,35 @@ class HuaweiU9200
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'huawei_u9200_ver1', // not in wurfl
+        'wurflKey'               => 'huawei_u9200_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'U9200',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Ascend P1',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'U9200',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Ascend P1',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.huawei.com/uaprof/HUAWEI_U9200_UAProfile.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.huawei.com/uaprof/HUAWEI_U9200_UAProfile.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 54, // wurflkey: huawei_u9200_ver1
-        'physical_screen_height'  => 96,
-        'columns'                 => 20,
-        'rows'                    => 10,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 540,
-        'resolution_height'       => 960,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 54, // wurflkey: huawei_u9200_ver1
+        'physical_screen_height' => 96,
+        'columns'                => 20,
+        'rows'                   => 10,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +164,9 @@ class HuaweiU9200
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

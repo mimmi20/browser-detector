@@ -63,39 +63,36 @@ class PalmPre
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'palm_pre_ver1', // not in wurfl
+        'wurflKey'               => 'palm_pre_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Pre',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Pre',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Pre',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Pre',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 44,
-        'physical_screen_height'  => 66,
-        'columns'                 => 18,
-        'rows'                    => 10,
-        'max_image_width'         => 320,
-        'max_image_height'        => 480,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => false,
-        'colors'                  => 256, // wurflkey: palm_pre_ver1_subwebos141
+        'physical_screen_width'  => 44,
+        'physical_screen_height' => 66,
+        'columns'                => 18,
+        'rows'                   => 10,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => false,
+        'colors'                 => 256, // wurflkey: palm_pre_ver1_subwebos141
 
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

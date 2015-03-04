@@ -52,39 +52,36 @@ class NokiaE51
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_e51_ver1_sub13003456', // not in wurfl
+        'wurflKey'               => 'nokia_e51_ver1_sub13003456', // not in wurfl
 
         // device
-        'model_name'              => 'E51',
-        'model_extra_info'        => null,
-        'marketing_name'          => null,
-        'has_qwerty_keyboard'     => false, // wurflkey: nokia_e51_ver1_sub13003456
-        'pointing_method'         => '', // wurflkey: nokia_e51_ver1_sub13003456
+        'model_name'             => 'E51',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => false, // wurflkey: nokia_e51_ver1_sub13003456
+        'pointing_method'        => '', // wurflkey: nokia_e51_ver1_sub13003456
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

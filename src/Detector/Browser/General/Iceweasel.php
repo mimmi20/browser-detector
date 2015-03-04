@@ -61,15 +61,12 @@ class Iceweasel
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -81,8 +78,7 @@ class Iceweasel
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/4.0')
-            && !$this->utils->checkIfContains('Mozilla/5.0')
+        if (!$this->utils->checkIfContains('Mozilla/4.0') && !$this->utils->checkIfContains('Mozilla/5.0')
         ) {
             return false;
         }
@@ -209,36 +205,38 @@ class Iceweasel
      * @return \BrowserDetector\Detector\Browser\General\Firefox
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
-        
+
         $engine->setCapability('xhtml_table_support', false);
-        
+
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-        
+
         if ($version >= 14) {
             $engine->setCapability('css_gradient', 'mozilla');
         }
-        
+
         if ($version >= 16) {
             $engine->setCapability('css_gradient', 'css3');
         }
-        
+
         if ($version >= 32) {
             $engine->setCapability('css_gradient_linear', 'css3');
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');
         }
-        
-        $browserVersion = (float) $this->detectVersion()->getVersion(Version::MAJORMINOR);
-        
+
+        $browserVersion = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
+
         switch ($browserVersion) {
             case 3.5:
                 $this->setCapability('wurflKey', 'firefox_3_5');
                 break;
             default:
-                $this->setCapability('wurflKey', 'firefox_' . (int) $browserVersion . '_0');
+                $this->setCapability('wurflKey', 'firefox_' . (int)$browserVersion . '_0');
                 break;
         }
 

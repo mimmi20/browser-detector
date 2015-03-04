@@ -288,7 +288,7 @@ class Trident
         if ($doMatch) {
             $version = '';
 
-            switch ((float) $matches[1]) {
+            switch ((float)$matches[1]) {
                 case 11.0:
                     $version = '7.0';
                     break;
@@ -338,8 +338,7 @@ class Trident
     ) {
         parent::detectDependProperties($os, $device, $browser);
 
-        if ($device->getDeviceType()
-            ->isMobile()
+        if ($device->getDeviceType()->isMobile()
         ) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');
         } else {

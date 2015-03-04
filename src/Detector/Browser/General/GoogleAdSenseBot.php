@@ -62,15 +62,12 @@ class GoogleAdSenseBot
         // product info
         'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -155,14 +152,17 @@ class GoogleAdSenseBot
      * @return \BrowserDetector\Detector\Browser\General\GoogleAdSenseBot
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
         if ($this->utils->checkIfContains('Mediapartners-Google')) {
             $agent = str_ireplace(
                 array('mediapartners-google', 'www.google.com/bot.html'),
-                '', $this->useragent
+                '',
+                $this->useragent
             );
 
             $detector = new UserAgent();

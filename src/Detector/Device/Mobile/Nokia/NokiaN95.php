@@ -52,39 +52,35 @@ class NokiaN95
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_n95_ver1', // not in wurfl
+        'wurflKey'               => 'nokia_n95_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'N95',
-        'model_extra_info'        => null,
-        'marketing_name'          => null,
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'joystick',
-
+        'model_name'             => 'N95',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'joystick',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NN95-1r100.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://nds1.nds.nokia.com/uaprof/NN95-1r100.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 43,
-        'physical_screen_height'  => 57,
-        'columns'                 => 25,
-        'rows'                    => 15,
-        'max_image_width'         => 234,
-        'max_image_height'        => 273,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 43,
+        'physical_screen_height' => 57,
+        'columns'                => 25,
+        'rows'                   => 15,
+        'max_image_width'        => 234,
+        'max_image_height'       => 273,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

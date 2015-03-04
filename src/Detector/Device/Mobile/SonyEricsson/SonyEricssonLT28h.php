@@ -55,39 +55,35 @@ class SonyEricssonLT28h
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_lt28i_ver1_subuah', // not in wurfl
+        'wurflKey'               => 'sonyericsson_lt28i_ver1_subuah', // not in wurfl
 
         // device
-        'model_name'              => 'LT28h',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia Ion',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'LT28h',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia Ion',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 57,
-        'physical_screen_height'  => 101,
-        'columns'                 => 66,
-        'rows'                    => 48,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 57,
+        'physical_screen_height' => 101,
+        'columns'                => 66,
+        'rows'                   => 48,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -172,12 +168,15 @@ class SonyEricssonLT28h
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonLT28h
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
         // wurflkey: sonyericsson_lt28i_ver1_subuah
         $engine->setCapability('bmp', true);
+
         // $engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;

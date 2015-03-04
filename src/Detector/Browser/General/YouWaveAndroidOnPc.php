@@ -62,15 +62,12 @@ class YouWaveAndroidOnPc
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -175,12 +172,16 @@ class YouWaveAndroidOnPc
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
         $agent = str_ireplace(
-            array('i9988_custom', 'i9999_custom'), '', $this->useragent
+            array('i9988_custom', 'i9999_custom'),
+            '',
+            $this->useragent
         );
 
         $detector = new UserAgent();

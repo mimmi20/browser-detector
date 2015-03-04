@@ -55,39 +55,35 @@ class SonyEricssonLT15iv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_lt15i_ver1_subua232', // not in wurfl
+        'wurflKey'               => 'sonyericsson_lt15i_ver1_subua232', // not in wurfl
 
         // device
-        'model_name'              => 'LT15iv',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia Arc SO-01C for DoCoMo',
-        'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_lt15i_ver1_subua232
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'LT15iv',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia Arc SO-01C for DoCoMo',
+        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_lt15i_ver1_subua232
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/LT15iR402.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/LT15iR402.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34, // wurflkey: sonyericsson_lt15i_ver1_subua232
-        'physical_screen_height'  => 50,
-        'columns'                 => 44,
-        'rows'                    => 32,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 854,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 34, // wurflkey: sonyericsson_lt15i_ver1_subua232
+        'physical_screen_height' => 50,
+        'columns'                => 44,
+        'rows'                   => 32,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 854,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +164,9 @@ class SonyEricssonLT15iv
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonLT15iv
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\FacebookApp as DefaultFacebook;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class FacebookApp extends DefaultFacebook
+class FacebookApp
+    extends DefaultFacebook
 {
     // nothing to do here
 }

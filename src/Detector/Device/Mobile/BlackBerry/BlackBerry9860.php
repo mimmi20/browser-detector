@@ -52,39 +52,35 @@ class BlackBerry9860
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry9860_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry9860_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry Torch 9860',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Monza',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'BlackBerry Torch 9860',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Monza',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9860/7.0.0.rdf',
-        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9860_umts/7.0.0.rdf',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9860/7.0.0.rdf',
+        'uaprof2'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9860_umts/7.0.0.rdf',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 49,
-        'physical_screen_height'  => 81,
-        'columns'                 => 28,
-        'rows'                    => 16,
-        'max_image_width'         => 228,
-        'max_image_height'        => 280,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => false,
-        'colors'                  => 256,
-
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 81,
+        'columns'                => 28,
+        'rows'                   => 16,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => false,
+        'colors'                 => 256,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

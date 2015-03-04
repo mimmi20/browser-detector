@@ -40,7 +40,8 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftPowerPoint extends MicrosoftOffice
+class MicrosoftPowerPoint
+    extends MicrosoftOffice
 {
     /**
      * the detected browser properties
@@ -55,15 +56,12 @@ class MicrosoftPowerPoint extends MicrosoftOffice
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -148,7 +146,9 @@ class MicrosoftPowerPoint extends MicrosoftOffice
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
         $doMatch = preg_match(
-            '/PowerPoint\/([\d\.]+)/', $this->useragent, $matches
+            '/PowerPoint\/([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {

@@ -200,6 +200,9 @@ class AsusGalaxyNexus7
                 $engine->setCapability('is_sencha_touch_ok', false);
 
                 switch ((float)$osVersion) {
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'google_nexus7_ver1_suban44');
+                        break;
                     case 5.0:
                         $this->setCapability('wurflKey', 'google_nexus7_ver1_suban50');
                         break;

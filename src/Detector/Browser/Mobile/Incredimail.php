@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Incredimail as DefaultIncredimail;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Incredimail extends DefaultIncredimail
+class Incredimail
+    extends DefaultIncredimail
 {
     // nothing to do here
 }

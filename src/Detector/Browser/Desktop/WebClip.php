@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\WebClip as DefaultWebClip;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WebClip extends DefaultWebClip
+class WebClip
+    extends DefaultWebClip
 {
     // nothing to do here
 }

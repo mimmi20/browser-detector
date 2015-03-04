@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\QupZilla as QupZillaBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class QupZilla extends QupZillaBase
+class QupZilla
+    extends QupZillaBase
 {
     // nothing to do here
 }

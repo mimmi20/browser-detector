@@ -52,39 +52,35 @@ class BlackBerry9550
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry9550_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry9550_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 9550',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Storm2',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'BlackBerry 9550',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Storm2',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9550_unknown/',
-        'uaprof2'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9550_umts/5.0',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9550_unknown/',
+        'uaprof2'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/9550_umts/5.0',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 36,
-        'rows'                    => 32,
-        'max_image_width'         => 350,
-        'max_image_height'        => 460,
-        'resolution_width'        => 360,
-        'resolution_height'       => 480,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 36,
+        'rows'                   => 32,
+        'max_image_width'        => 350,
+        'max_image_height'       => 460,
+        'resolution_width'       => 360,
+        'resolution_height'      => 480,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

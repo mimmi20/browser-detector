@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\WaterFox as WaterFoxBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WaterFox extends WaterFoxBase
+class WaterFox
+    extends WaterFoxBase
 {
     // nothing to do here
 }

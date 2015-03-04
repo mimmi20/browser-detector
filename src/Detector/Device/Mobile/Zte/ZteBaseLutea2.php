@@ -55,39 +55,35 @@ class ZteBaseLutea2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'zte_skate_ver1_subuabase', // not in wurfl
+        'wurflKey'               => 'zte_skate_ver1_subuabase', // not in wurfl
 
         // device
-        'model_name'              => 'Lutea 2',
-        'model_extra_info'        => 'for BASE ', // wurflkey: zte_skate_ver1_subuabase
-        'marketing_name'          => 'Lutea 2',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Lutea 2',
+        'model_extra_info'       => 'for BASE ', // wurflkey: zte_skate_ver1_subuabase
+        'marketing_name'         => 'Lutea 2',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.zte.com.cn/mobile/uaprof/Skate_Aqua.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.zte.com.cn/mobile/uaprof/Skate_Aqua.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 57,
-        'physical_screen_height'  => 95,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 57,
+        'physical_screen_height' => 95,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,7 +164,9 @@ class ZteBaseLutea2
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

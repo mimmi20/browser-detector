@@ -56,39 +56,35 @@ class MotorolaMz604
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'mot_mz601_ver1_suban40mz604_subuachrome', // not in wurfl
+        'wurflKey'               => 'mot_mz601_ver1_suban40mz604_subuachrome', // not in wurfl
 
         // device
-        'model_name'              => 'MZ604', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xoom', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'MZ604', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xoom', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 218, // wurflkey: mot_mz601_ver1_suban40mz604
-        'physical_screen_height'  => 137,
-        'columns'                 => 80,
-        'rows'                    => 25,
-        'max_image_width'         => 1200,
-        'max_image_height'        => 760,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 218, // wurflkey: mot_mz601_ver1_suban40mz604
+        'physical_screen_height' => 137,
+        'columns'                => 80,
+        'rows'                   => 25,
+        'max_image_width'        => 1200,
+        'max_image_height'       => 760,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -169,7 +165,9 @@ class MotorolaMz604
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

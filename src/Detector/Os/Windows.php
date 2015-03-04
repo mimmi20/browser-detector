@@ -115,37 +115,37 @@ class Windows
 
         if ($doMatch) {
             switch ($matches[1]) {
-            case '6.4':
-                $version = '10';
-                break;
-            case '6.3':
-                $version = '8.1';
-                break;
-            case '6.2':
-                $version = '8';
-                break;
-            case '6.1':
-                $version = '7';
-                break;
-            case '6.0':
-                $version = 'Vista';
-                break;
-            case '5.3':
-            case '5.2':
-            case '5.1':
-                $version = 'XP';
-                break;
-            case '5.0':
-            case '5.01':
-                $version = '2000';
-                break;
-            case '4.1':
-            case '4.0':
-                $version = 'NT';
-                break;
-            default:
-                $version = '';
-                break;
+                case '6.4':
+                    $version = '10';
+                    break;
+                case '6.3':
+                    $version = '8.1';
+                    break;
+                case '6.2':
+                    $version = '8';
+                    break;
+                case '6.1':
+                    $version = '7';
+                    break;
+                case '6.0':
+                    $version = 'Vista';
+                    break;
+                case '5.3':
+                case '5.2':
+                case '5.1':
+                    $version = 'XP';
+                    break;
+                case '5.0':
+                case '5.01':
+                    $version = '2000';
+                    break;
+                case '4.1':
+                case '4.0':
+                    $version = 'NT';
+                    break;
+                default:
+                    $version = '';
+                    break;
             }
 
             return $detector->setVersion($version);
@@ -155,56 +155,56 @@ class Windows
 
         if ($doMatch) {
             switch ($matches[1]) {
-            case '6.4':
-                $version = '10';
-                break;
-            case '6.3':
-                $version = '8.1';
-                break;
-            case '6.2':
-                $version = '8';
-                break;
-            case '6.1':
-            case '7':
-                $version = '7';
-                break;
-            case '6.0':
-                $version = 'Vista';
-                break;
-            case '2003':
-                $version = 'Server 2003';
-                break;
-            case '5.3':
-            case '5.2':
-            case '5.1':
-            case 'XP':
-                $version = 'XP';
-                break;
-            case 'ME':
-                $version = 'ME';
-                break;
-            case '2000':
-            case '5.0':
-            case '5.01':
-                $version = '2000';
-                break;
-            case '3.1':
-                $version = '3.1';
-                break;
-            case '95':
-                $version = '95';
-                break;
-            case '98':
-                $version = '98';
-                break;
-            case '4.1':
-            case '4.0':
-            case 'NT':
-                $version = 'NT';
-                break;
-            default:
-                $version = '';
-                break;
+                case '6.4':
+                    $version = '10';
+                    break;
+                case '6.3':
+                    $version = '8.1';
+                    break;
+                case '6.2':
+                    $version = '8';
+                    break;
+                case '6.1':
+                case '7':
+                    $version = '7';
+                    break;
+                case '6.0':
+                    $version = 'Vista';
+                    break;
+                case '2003':
+                    $version = 'Server 2003';
+                    break;
+                case '5.3':
+                case '5.2':
+                case '5.1':
+                case 'XP':
+                    $version = 'XP';
+                    break;
+                case 'ME':
+                    $version = 'ME';
+                    break;
+                case '2000':
+                case '5.0':
+                case '5.01':
+                    $version = '2000';
+                    break;
+                case '3.1':
+                    $version = '3.1';
+                    break;
+                case '95':
+                    $version = '95';
+                    break;
+                case '98':
+                    $version = '98';
+                    break;
+                case '4.1':
+                case '4.0':
+                case 'NT':
+                    $version = 'NT';
+                    break;
+                default:
+                    $version = '';
+                    break;
             }
 
             return $detector->setVersion($version);

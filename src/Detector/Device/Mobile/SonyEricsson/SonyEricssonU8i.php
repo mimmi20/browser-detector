@@ -52,39 +52,36 @@ class SonyEricssonU8i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_u8i_ver1', // not in wurfl
+        'wurflKey'               => 'sonyericsson_u8i_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'U8i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'kanna', // wurflkey: sonyericsson_u8i_ver1
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen', // wurflkey: sonyericsson_u8i_ver1
+        'model_name'             => 'U8i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'kanna', // wurflkey: sonyericsson_u8i_ver1
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen', // wurflkey: sonyericsson_u8i_ver1
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.sonyericsson.com/downloads/U8iR000.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.sonyericsson.com/downloads/U8iR000.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 50,
-        'rows'                    => 15,
-        'max_image_width'         => 340,
-        'max_image_height'        => 600,
-        'resolution_width'        => 360,
-        'resolution_height'       => 640,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 50,
+        'rows'                   => 15,
+        'max_image_width'        => 340,
+        'max_image_height'       => 600,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

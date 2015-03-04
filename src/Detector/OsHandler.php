@@ -108,7 +108,9 @@ abstract class OsHandler
      * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, DeviceHandler $device
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        DeviceHandler $device
     ) {
         return $this;
     }

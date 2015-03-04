@@ -55,39 +55,35 @@ class RimPlayBook
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'rim_playbook_ver1', // not in wurfl
+        'wurflKey'               => 'rim_playbook_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'PlayBook',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'PlayBook',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'PlayBook',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'PlayBook',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 154,
-        'physical_screen_height'  => 90,
-        'columns'                 => 60,
-        'rows'                    => 40,
-        'max_image_width'         => 1024,
-        'max_image_height'        => 600,
-        'resolution_width'        => 1024,
-        'resolution_height'       => 600,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 154,
+        'physical_screen_height' => 90,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 1024,
+        'max_image_height'       => 600,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

@@ -52,39 +52,35 @@ class NokiaC503
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_c5_03_ver1', // not in wurfl
+        'wurflKey'               => 'nokia_c5_03_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'C5-03',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'C5',
-        'has_qwerty_keyboard'     => false,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'C5-03',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'C5',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/NokiaC5-03r100-3G.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://nds1.nds.nokia.com/uaprof/NokiaC5-03r100-3G.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 71,
-        'columns'                 => 17,
-        'rows'                    => 13,
-        'max_image_width'         => 168,
-        'max_image_height'        => 144,
-        'resolution_width'        => 360,
-        'resolution_height'       => 640,
-        'dual_orientation'        => false,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 71,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 168,
+        'max_image_height'       => 144,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
+        'dual_orientation'       => false,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

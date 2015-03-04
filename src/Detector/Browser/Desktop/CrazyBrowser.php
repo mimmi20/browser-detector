@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\CrazyBrowser as CrazyBrowserBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CrazyBrowser extends CrazyBrowserBase
+class CrazyBrowser
+    extends CrazyBrowserBase
 {
     // nothing to do here
 }

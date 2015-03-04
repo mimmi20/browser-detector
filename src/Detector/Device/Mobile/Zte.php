@@ -54,39 +54,35 @@ class Zte
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'general ZTE Device',
-        'model_extra_info'        => null,
-        'marketing_name'          => null,
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'general ZTE Device',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => null,
-        'colors'                  => null,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -97,8 +93,20 @@ class Zte
     public function canHandle()
     {
         $ztePhones = array(
-            'zte', 'base tab', 'base lutea', 'BASE_Lutea_3', 'racerii', ' x920 ', ' n600 ',
-            ' w713 ', ' v880 ', ' v9 ', 'smarttab7', 'smarttab10', 'blade', 'kis plus'
+            'zte',
+            'base tab',
+            'base lutea',
+            'BASE_Lutea_3',
+            'racerii',
+            ' x920 ',
+            ' n600 ',
+            ' w713 ',
+            ' v880 ',
+            ' v9 ',
+            'smarttab7',
+            'smarttab10',
+            'blade',
+            'kis plus'
         );
 
         if (!$this->utils->checkIfContains($ztePhones, true)) {

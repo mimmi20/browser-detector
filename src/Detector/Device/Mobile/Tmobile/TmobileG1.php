@@ -52,39 +52,35 @@ class TmobileG1
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'tmobile_g1_ver1_6_subuk', // not in wurfl
+        'wurflKey'               => 'tmobile_g1_ver1_6_subuk', // not in wurfl
 
         // device
-        'model_name'              => 'G1',
-        'model_extra_info'        => null,
-        'marketing_name'          => null,
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'G1',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 45,
-        'physical_screen_height'  => 68,
-        'columns'                 => 15,
-        'rows'                    => 12,
-        'max_image_width'         => 315,
-        'max_image_height'        => 440,
-        'resolution_width'        => 320,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 256,
-
+        'physical_screen_width'  => 45,
+        'physical_screen_height' => 68,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 315,
+        'max_image_height'       => 440,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 256,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

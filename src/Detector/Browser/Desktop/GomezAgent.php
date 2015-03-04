@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\GomezAgent as GomezAgentBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GomezAgent extends GomezAgentBase
+class GomezAgent
+    extends GomezAgentBase
 {
     // nothing to do here
 }

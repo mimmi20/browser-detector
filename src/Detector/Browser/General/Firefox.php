@@ -62,15 +62,12 @@ class Firefox
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -85,15 +82,19 @@ class Firefox
         $spamHelper = new SpamCrawlerFake();
         $spamHelper->setUserAgent($this->useragent);
 
-        if (!$this->utils->checkIfContains('Mozilla/')
-            && !$spamHelper->isAnonymized()
+        if (!$this->utils->checkIfContains('Mozilla/') && !$spamHelper->isAnonymized()
         ) {
             return false;
         }
 
         $firefoxCodes = array(
-            'Firefox', 'Minefield', 'Nightly', 'Shiretoko', 'BonEcho',
-            'Namoroka', 'Fennec'
+            'Firefox',
+            'Minefield',
+            'Nightly',
+            'Shiretoko',
+            'BonEcho',
+            'Namoroka',
+            'Fennec'
         );
 
         if (!$this->utils->checkIfContains($firefoxCodes)) {
@@ -195,7 +196,12 @@ class Firefox
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
         $searches = array(
-            'Firefox', 'Minefield', 'Shiretoko', 'BonEcho', 'Namoroka', 'Fennec'
+            'Firefox',
+            'Minefield',
+            'Shiretoko',
+            'BonEcho',
+            'Namoroka',
+            'Fennec'
         );
 
         return $detector->detectVersion($searches);
@@ -236,14 +242,15 @@ class Firefox
      * @return \BrowserDetector\Detector\Browser\General\Firefox
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
         $engine->setCapability('xhtml_table_support', false);
 
-        if ($device->getDeviceType()->isMobile()
-            && 'Android' == $os->getName()
+        if ($device->getDeviceType()->isMobile() && 'Android' == $os->getName()
         ) {
             $device->setCapability('has_qwerty_keyboard', true);
             $device->setCapability('pointing_method', 'touchscreen');
@@ -288,14 +295,14 @@ class Firefox
             $engine->setCapability('css_rounded_corners', 'css3');
         }
 
-        $browserVersion = (float) $this->detectVersion()->getVersion(Version::MAJORMINOR);
+        $browserVersion = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
 
         switch ($browserVersion) {
             case 3.5:
                 $this->setCapability('wurflKey', 'firefox_3_5');
                 break;
             default:
-                $this->setCapability('wurflKey', 'firefox_' . (int) $browserVersion . '_0');
+                $this->setCapability('wurflKey', 'firefox_' . (int)$browserVersion . '_0');
                 break;
         }
 

@@ -62,15 +62,12 @@ class Safari
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => true,
     );
@@ -146,7 +143,9 @@ class Safari
         }
 
         $doMatch = preg_match(
-            '/Safari\/([\d\.]+)/', $this->useragent, $matches
+            '/Safari\/([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -160,7 +159,9 @@ class Safari
         }
 
         $doMatch = preg_match(
-            '/MobileSafari\/([\d\.]+)/', $this->useragent, $matches
+            '/MobileSafari\/([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -205,7 +206,9 @@ class Safari
      * @return \BrowserDetector\Detector\Browser\General\Safari
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         if ($device->getDeviceType()->isMobile()) {
             $engine->setCapability('xhtml_format_as_css_property', true);
@@ -224,8 +227,7 @@ class Safari
             Version::MAJORMINOR
         );
 
-        if (!$device->getDeviceType()->isTablet()
-            && $osVersion >= 6.0
+        if (!$device->getDeviceType()->isTablet() && $osVersion >= 6.0
         ) {
             $engine->setCapability('xhtml_file_upload', 'supported'); //iPhone with iOS 6.0 and Safari 6.0
         }
@@ -289,7 +291,7 @@ class Safari
             $engine->setCapability('css_rounded_corners', 'none');
             $engine->setCapability('chtml_table_support', true);
 
-            $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_mac');
+            $this->setCapability('wurflKey', 'safari_' . (int)$browserVersion . '_0_mac');
         }
 
         if ('Windows' === $osname) {
@@ -302,7 +304,7 @@ class Safari
             $engine->setCapability('css_rounded_corners', 'none');
             $engine->setCapability('chtml_table_support', true);
 
-            $this->setCapability('wurflKey', 'safari_' . (int) $browserVersion . '_0_windows');
+            $this->setCapability('wurflKey', 'safari_' . (int)$browserVersion . '_0_windows');
         }
 
         return $this;

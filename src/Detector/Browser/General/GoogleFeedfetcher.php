@@ -58,15 +58,12 @@ class GoogleFeedfetcher
         // product info
         'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -126,7 +123,8 @@ class GoogleFeedfetcher
         $detector->setUserAgent($this->useragent);
 
         $searches = array(
-            'Feedfetcher\-Google', 'Feedfetcher\-Google\-iGoogleGadgets'
+            'Feedfetcher\-Google',
+            'Feedfetcher\-Google\-iGoogleGadgets'
         );
 
         return $detector->detectVersion($searches);

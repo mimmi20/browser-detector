@@ -52,39 +52,35 @@ class MotorolaDroidX2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'mot_droidx2_ver1_suban23', // not in wurfl
+        'wurflKey'               => 'mot_droidx2_ver1_suban23', // not in wurfl
 
         // device
-        'model_name'              => 'Droid X2',
-        'model_extra_info'        => 'Verizon',
-        'marketing_name'          => 'Droid X2',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Droid X2',
+        'model_extra_info'       => 'Verizon',
+        'marketing_name'         => 'Droid X2',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 53,
-        'physical_screen_height'  => 95,
-        'columns'                 => 15,
-        'rows'                    => 12,
-        'max_image_width'         => 500,
-        'max_image_height'        => 920,
-        'resolution_width'        => 540,
-        'resolution_height'       => 960,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 53,
+        'physical_screen_height' => 95,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 500,
+        'max_image_height'       => 920,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

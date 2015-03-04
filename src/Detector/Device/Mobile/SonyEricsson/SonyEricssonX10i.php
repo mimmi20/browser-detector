@@ -63,14 +63,12 @@ class SonyEricssonX10i
         'marketing_name'                => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
         'has_qwerty_keyboard'           => true,
         'pointing_method'               => 'touchscreen',
-
         // product info
         'ununiqueness_handler'          => null,
         'uaprof'                        => 'http://wap.sonyericsson.com/UAprof/X10iR101.xml',
         'uaprof2'                       => null,
         'uaprof3'                       => null,
         'unique'                        => true,
-
         // display
         'physical_screen_width'         => 40, // wurflkey: sonyericsson_x10i_ver1_suban23
         'physical_screen_height'        => 60,
@@ -82,10 +80,8 @@ class SonyEricssonX10i
         'resolution_height'             => 854,
         'dual_orientation'              => true,
         'colors'                        => 65536,
-
         // security
         'phone_id_provided'             => false,
-
         // storage
         'max_deck_size'                 => 1000000,
         'max_length_of_username'        => 0,
@@ -93,10 +89,8 @@ class SonyEricssonX10i
         'max_length_of_password'        => 0,
         'max_no_of_connection_settings' => 0,
         'max_object_size'               => 0,
-
         // sms
         'sms_enabled'                   => true,
-
         // chips
         'nfc_support'                   => true,
     );
@@ -183,7 +177,9 @@ class SonyEricssonX10i
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

@@ -78,7 +78,6 @@ class BlackBerry
         'html_wi_w3_xhtmlbasic'                           => true,
         'html_wi_imode_compact_generic'                   => true,
         'voicexml'                                        => false,
-
         // chtml
         'chtml_table_support'                             => false,
         'imode_region'                                    => 'none',
@@ -87,7 +86,6 @@ class BlackBerry
         'chtml_make_phone_call_string'                    => 'tel:',
         'chtml_display_accesskey'                         => false,
         'emoji'                                           => false,
-
         // xhtml
         'xhtml_select_as_radiobutton'                     => false,
         'xhtml_avoid_accesskeys'                          => true,
@@ -123,7 +121,6 @@ class BlackBerry
         'opwv_xhtml_extensions_support'                   => false,
         'xhtml_marquee_as_css_property'                   => false,
         'xhtml_nowrap_mode'                               => false,
-
         // image format
         'jpg'                                             => true,
         'gif'                                             => true,
@@ -138,16 +135,13 @@ class BlackBerry
         'svgt_1_1'                                        => null,
         'transparent_png_alpha'                           => false,
         'tiff'                                            => null,
-
         // security
         'https_support'                                   => true,
-
         // storage
         'max_url_length_bookmark'                         => null,
         'max_url_length_cached_page'                      => null,
         'max_url_length_in_requests'                      => 128,
         'max_url_length_homepage'                         => null,
-
         // ajax
         'ajax_support_getelementbyid'                     => true,
         'ajax_xhr_type'                                   => 'standard',
@@ -158,7 +152,6 @@ class BlackBerry
         'ajax_manipulate_css'                             => true,
         'ajax_support_events'                             => true,
         'ajax_preferred_geoloc_api'                       => 'none',
-
         // wml
         'wml_make_phone_call_string'                      => null,
         'card_title_support'                              => null,
@@ -182,11 +175,9 @@ class BlackBerry
         'access_key_support'                              => null,
         'wml_displays_image_in_center'                    => null,
         'times_square_mode_support'                       => null,
-
         // third_party
         'jqm_grade'                                       => 'C',
         'is_sencha_touch_ok'                              => false,
-
         // html
         'image_inlining'                                  => true,
         'canvas_support'                                  => 'none',
@@ -199,7 +190,6 @@ class BlackBerry
         'viewport_maximum_scale'                          => null,
         'viewport_userscalable'                           => 'no',
         'handheldfriendly'                                => true,
-
         // css
         'css_spriting'                                    => true,
         'css_gradient'                                    => 'none',
@@ -221,8 +211,17 @@ class BlackBerry
         }
 
         $noBlackBerryEngines = array(
-            'KHTML', 'AppleWebKit', 'WebKit', 'Gecko', 'Presto', 'RGAnalytics',
-            'libwww', 'iPhone', 'Firefox', 'Mozilla/5.0 (en)', 'Trident'
+            'KHTML',
+            'AppleWebKit',
+            'WebKit',
+            'Gecko',
+            'Presto',
+            'RGAnalytics',
+            'libwww',
+            'iPhone',
+            'Firefox',
+            'Mozilla/5.0 (en)',
+            'Trident'
         );
 
         if ($this->utils->checkIfContains($noBlackBerryEngines)) {

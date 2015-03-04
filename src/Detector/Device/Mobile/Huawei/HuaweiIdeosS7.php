@@ -52,39 +52,35 @@ class HuaweiIdeosS7
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'huawei_ideos_s7_ver1_subenus', // not in wurfl
+        'wurflKey'               => 'huawei_ideos_s7_ver1_subenus', // not in wurfl
 
         // device
-        'model_name'              => 'IDEOS S7',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'IDEOS S7',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'IDEOS S7',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'IDEOS S7',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.huawei.com/uaprof/Huawei-S7.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.huawei.com/uaprof/Huawei-S7.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 153,
-        'physical_screen_height'  => 92,
-        'columns'                 => 11,
-        'rows'                    => 13,
-        'max_image_width'         => 320,
-        'max_image_height'        => 600,
-        'resolution_width'        => 800,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 153,
+        'physical_screen_height' => 92,
+        'columns'                => 11,
+        'rows'                   => 13,
+        'max_image_width'        => 320,
+        'max_image_height'       => 600,
+        'resolution_width'       => 800,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

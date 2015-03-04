@@ -56,39 +56,35 @@ class SonyEricssonLT26i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_lt26i_ver1', // not in wurfl
+        'wurflKey'               => 'sonyericsson_lt26i_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'LT26i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia Arc HD',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'LT26i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia Arc HD',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap.sonyericsson.com/UAprof/LT26iR601.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/LT26iR601.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 66,
-        'rows'                    => 48,
-        'max_image_width'         => 360,
-        'max_image_height'        => 640,
-        'resolution_width'        => 720,
-        'resolution_height'       => 1280,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 66,
+        'rows'                   => 48,
+        'max_image_width'        => 360,
+        'max_image_height'       => 640,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -173,7 +169,9 @@ class SonyEricssonLT26i
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonLT26i
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -188,42 +186,42 @@ class SonyEricssonLT26i
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'sonyericsson_lt26i_ver1_suban40');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'sonyericsson_lt26i_ver1_suban40');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
+            case 'Chrome':
+            case 'Android WebView':
+                switch ((float)$osVersion) {
+                    case 4.1:
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        case 'Chrome':
-        case 'Android WebView':
-            switch ((float)$osVersion) {
-            case 4.1:
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

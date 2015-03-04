@@ -57,39 +57,35 @@ class Macintosh
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'Macintosh',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Macintosh',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'mouse',
-
+        'model_name'             => 'Macintosh',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Macintosh',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'mouse',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 400,
-        'physical_screen_height'  => 400,
-        'columns'                 => 120,
-        'rows'                    => 200,
-        'max_image_width'         => 600,
-        'max_image_height'        => 600,
-        'resolution_width'        => 800,
-        'resolution_height'       => 600,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 400,
+        'physical_screen_height' => 400,
+        'columns'                => 120,
+        'rows'                   => 200,
+        'max_image_width'        => 600,
+        'max_image_height'       => 600,
+        'resolution_width'       => 800,
+        'resolution_height'      => 600,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -100,8 +96,14 @@ class Macintosh
     public function canHandle()
     {
         $mac = array(
-            'Macintosh', 'Darwin', 'Mac_PowerPC', 'MacBook', 'for Mac',
-            'PPC Mac', 'Mac OS X', '(MacOS)'
+            'Macintosh',
+            'Darwin',
+            'Mac_PowerPC',
+            'MacBook',
+            'for Mac',
+            'PPC Mac',
+            'Mac OS X',
+            '(MacOS)'
         );
 
         if (!$this->utils->checkIfContains($mac)) {
@@ -187,10 +189,7 @@ class Macintosh
     public function detectBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..'
-            . DIRECTORY_SEPARATOR . 'Browser'
-            . DIRECTORY_SEPARATOR . 'Desktop'
-            . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
         );
 
         $chain = new Chain();

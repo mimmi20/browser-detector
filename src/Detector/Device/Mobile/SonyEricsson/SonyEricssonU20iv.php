@@ -55,39 +55,35 @@ class SonyEricssonU20iv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_u20i_ver1_subu211', // not in wurfl
+        'wurflKey'               => 'sonyericsson_u20i_ver1_subu211', // not in wurfl
 
         // device
-        'model_name'              => 'U20iv',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Xperia X10 Mini pro',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'U20iv',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Xperia X10 Mini pro',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 25,
-        'rows'                    => 21,
-        'max_image_width'         => 238,
-        'max_image_height'        => 318,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 238,
+        'max_image_height'       => 318,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

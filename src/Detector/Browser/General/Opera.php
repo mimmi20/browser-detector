@@ -63,15 +63,12 @@ class Opera
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -186,6 +183,7 @@ class Opera
         }
 
         $engine->setUseragent($this->useragent);
+
         return $engine;
     }
 
@@ -200,13 +198,15 @@ class Opera
      * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
-        
+
         $browserVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
-        $this->setCapability('wurflKey', 'opera_' . (int) $browserVersion);
+        $this->setCapability('wurflKey', 'opera_' . (int)$browserVersion);
         $engine->setCapability('xhtml_table_support', false);
 
         return $this;

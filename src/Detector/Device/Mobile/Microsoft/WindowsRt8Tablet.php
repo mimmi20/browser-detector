@@ -62,39 +62,35 @@ class WindowsRt8Tablet
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'windows_8_rt_ver1', // not in wurfl
+        'wurflKey'               => 'windows_8_rt_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Windows RT Tablet',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Windows RT Tablet',
-        'has_qwerty_keyboard'     => false, // windows_8_rt_ver1
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Windows RT Tablet',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Windows RT Tablet',
+        'has_qwerty_keyboard'    => false, // windows_8_rt_ver1
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 80,
-        'rows'                    => 20,
-        'max_image_width'         => 1280,
-        'max_image_height'        => 800,
-        'resolution_width'        => 1280,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 80,
+        'rows'                   => 20,
+        'max_image_width'        => 1280,
+        'max_image_height'       => 800,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -206,7 +202,9 @@ class WindowsRt8Tablet
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -218,44 +216,44 @@ class WindowsRt8Tablet
         );
 
         switch ($osVersion) {
-        case '8.1':
-        case 'RT 8.1':
-            $this->setCapability('wurflKey', 'windows_8_rt_ver1_subos81');
-            $this->setCapability('has_qwerty_keyboard', true);
-            $this->setCapability('physical_screen_width', 22);
-            $this->setCapability('physical_screen_height', 12);
-            $this->setCapability('max_image_width', 1366);
-            $this->setCapability('max_image_height', 768);
-            $this->setCapability('resolution_width', 1366);
-            $this->setCapability('resolution_height', 768);
-            $this->setCapability('colors', 65535);
-            $this->setCapability('nfc_support', false);
-            $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
-            $engine->setCapability('chtml_table_support', false);
-            $engine->setCapability('xhtml_select_as_radiobutton', false);
-            $engine->setCapability('xhtml_avoid_accesskeys', false);
-            $engine->setCapability('xhtml_select_as_dropdown', false);
-            $engine->setCapability('xhtml_supports_iframe', 'none');
-            $engine->setCapability('xhtml_supports_forms_in_table', false);
-            $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/vnd.wap.xhtml+xml');
-            $engine->setCapability('xhtml_select_as_popup', false);
-            $engine->setCapability('xhtml_honors_bgcolor', false);
-            $engine->setCapability('xhtml_table_support', true);
-            $engine->setCapability('xhtml_can_embed_video', 'none');
-            $engine->setCapability('bmp', false);
-            $engine->setCapability('svgt_1_1', false);
-            $engine->setCapability('max_url_length_in_requests', 512);
-            $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-            $browser->setCapability('pdf_support', false);
-            $engine->setCapability('jqm_grade', 'none');
-            $engine->setCapability('is_sencha_touch_ok', false);
-            $engine->setCapability('image_inlining', false);
-            $engine->setCapability('html_preferred_dtd', 'xhtml_mp1');
-            $engine->setCapability('css_rounded_corners', 'css3');
-            break;
-        default:
-            // nothing to do here
-            break;
+            case '8.1':
+            case 'RT 8.1':
+                $this->setCapability('wurflKey', 'windows_8_rt_ver1_subos81');
+                $this->setCapability('has_qwerty_keyboard', true);
+                $this->setCapability('physical_screen_width', 22);
+                $this->setCapability('physical_screen_height', 12);
+                $this->setCapability('max_image_width', 1366);
+                $this->setCapability('max_image_height', 768);
+                $this->setCapability('resolution_width', 1366);
+                $this->setCapability('resolution_height', 768);
+                $this->setCapability('colors', 65535);
+                $this->setCapability('nfc_support', false);
+                $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                $engine->setCapability('chtml_table_support', false);
+                $engine->setCapability('xhtml_select_as_radiobutton', false);
+                $engine->setCapability('xhtml_avoid_accesskeys', false);
+                $engine->setCapability('xhtml_select_as_dropdown', false);
+                $engine->setCapability('xhtml_supports_iframe', 'none');
+                $engine->setCapability('xhtml_supports_forms_in_table', false);
+                $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/vnd.wap.xhtml+xml');
+                $engine->setCapability('xhtml_select_as_popup', false);
+                $engine->setCapability('xhtml_honors_bgcolor', false);
+                $engine->setCapability('xhtml_table_support', true);
+                $engine->setCapability('xhtml_can_embed_video', 'none');
+                $engine->setCapability('bmp', false);
+                $engine->setCapability('svgt_1_1', false);
+                $engine->setCapability('max_url_length_in_requests', 512);
+                $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+                $browser->setCapability('pdf_support', false);
+                $engine->setCapability('jqm_grade', 'none');
+                $engine->setCapability('is_sencha_touch_ok', false);
+                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('html_preferred_dtd', 'xhtml_mp1');
+                $engine->setCapability('css_rounded_corners', 'css3');
+                break;
+            default:
+                // nothing to do here
+                break;
         }
 
         return $this;

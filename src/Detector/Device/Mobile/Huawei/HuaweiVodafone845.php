@@ -52,39 +52,35 @@ class HuaweiVodafone845
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'huawei_v845_ver1', // not in wurfl
+        'wurflKey'               => 'huawei_v845_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Vodafone 845',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Vodafone 845',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Vodafone 845',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Vodafone 845',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap1.huawei.com/uaprof/Vodafone845v100GPRS.xml',
-        'uaprof2'                 => 'http://wap1.huawei.com/uaprof/Vodafone845v100WCDMA.xml',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap1.huawei.com/uaprof/Vodafone845v100GPRS.xml',
+        'uaprof2'                => 'http://wap1.huawei.com/uaprof/Vodafone845v100WCDMA.xml',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 40,
-        'physical_screen_height'  => 60,
-        'columns'                 => 10,
-        'rows'                    => 12,
-        'max_image_width'         => 228,
-        'max_image_height'        => 280,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 10,
+        'rows'                   => 12,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

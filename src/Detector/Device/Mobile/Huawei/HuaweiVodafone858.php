@@ -55,39 +55,35 @@ class HuaweiVodafone858
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'huawei_v858_ver1', // not in wurfl
+        'wurflKey'               => 'huawei_v858_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Vodafone 858',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Vodafone 858',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Vodafone 858',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Vodafone 858',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiV858WCDMA-Vod',
-        'uaprof2'                 => 'http://wap1.huawei.com/uaprof/HuaweiV858GPRS-Vod',
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap1.huawei.com/uaprof/HuaweiV858WCDMA-Vod',
+        'uaprof2'                => 'http://wap1.huawei.com/uaprof/HuaweiV858GPRS-Vod',
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 34,
-        'physical_screen_height'  => 50,
-        'columns'                 => 10,
-        'rows'                    => 12,
-        'max_image_width'         => 228,
-        'max_image_height'        => 280,
-        'resolution_width'        => 240,
-        'resolution_height'       => 320,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 10,
+        'rows'                   => 12,
+        'max_image_width'        => 228,
+        'max_image_height'       => 280,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -168,12 +164,15 @@ class HuaweiVodafone858
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
         // wurflkey: huawei_v858_ver1
         $engine->setCapability('bmp', true);
+
         // $engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;

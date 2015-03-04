@@ -52,7 +52,7 @@ class SamsungGti9506
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'samsung_gt_i9506_ver1', // not in wurfl
 
         // device
         'model_name'             => 'GT-I9506',

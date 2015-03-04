@@ -56,39 +56,35 @@ class HuaweiU8860
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'huawei_u8860_ver1', // not in wurfl
+        'wurflKey'               => 'huawei_u8860_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'U8860',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Honor', // wurflkey: huawei_u8860_ver1_suban40noh
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'U8860',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Honor', // wurflkey: huawei_u8860_ver1_suban40noh
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://wap1.huawei.com/uaprof/HuaweiU8860WCDMA-NORMAL.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://wap1.huawei.com/uaprof/HuaweiU8860WCDMA-NORMAL.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50, // wurflkey: huawei_u8860_ver1_suban40noh
-        'physical_screen_height'  => 89,
-        'columns'                 => 10,
-        'rows'                    => 12,
-        'max_image_width'         => 320,
-        'max_image_height'        => 400,
-        'resolution_width'        => 480,
-        'resolution_height'       => 854,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 50, // wurflkey: huawei_u8860_ver1_suban40noh
+        'physical_screen_height' => 89,
+        'columns'                => 10,
+        'rows'                   => 12,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 854,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +165,9 @@ class HuaweiU8860
      * @return DeviceHandler
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
@@ -181,45 +179,45 @@ class HuaweiU8860
         );
 
         switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.3:
-                $engine->setCapability('xhtml_can_embed_video', 'none');
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.3:
+                        $engine->setCapability('xhtml_can_embed_video', 'none');
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'huawei_u8860_ver1_suban40noh');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
                 break;
-            case 4.0:
-                $this->setCapability('wurflKey', 'huawei_u8860_ver1_suban40noh');
-                break;
-            case 2.1:
-            case 2.2:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
 
-            switch ((float)$osVersion) {
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
             default:
                 // nothing to do here
                 break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
         }
 
         return $this;

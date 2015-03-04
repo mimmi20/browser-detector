@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Python as DefaultPython;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Python extends DefaultPython
+class Python
+    extends DefaultPython
 {
     // nothing to do here
 }

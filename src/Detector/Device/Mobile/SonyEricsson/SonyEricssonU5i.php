@@ -55,40 +55,37 @@ class SonyEricssonU5i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'sonyericsson_u5i_ver1', // not in wurfl
+        'wurflKey'               => 'sonyericsson_u5i_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'U5i',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Vivaz',
-        'has_qwerty_keyboard'     => false, // wurflkey: sonyericsson_u5i_ver1
-        'pointing_method'         => null, // wurflkey: sonyericsson_u5i_ver1
+        'model_name'             => 'U5i',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Vivaz',
+        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_u5i_ver1
+        'pointing_method'        => null, // wurflkey: sonyericsson_u5i_ver1
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://www.sonyericsson.com/downloads/U5iR000.xml',
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://www.sonyericsson.com/downloads/U5iR000.xml',
         // wurflkey: sonyericsson_u5i_ver1
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 17,
-        'rows'                    => 13,
-        'max_image_width'         => 355,
-        'max_image_height'        => 600,
-        'resolution_width'        => 360,
-        'resolution_height'       => 640,
-        'dual_orientation'        => false,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 17,
+        'rows'                   => 13,
+        'max_image_width'        => 355,
+        'max_image_height'       => 600,
+        'resolution_width'       => 360,
+        'resolution_height'      => 640,
+        'dual_orientation'       => false,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
@@ -169,7 +166,9 @@ class SonyEricssonU5i
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonU5i
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

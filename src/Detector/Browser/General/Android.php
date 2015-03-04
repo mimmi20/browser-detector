@@ -62,15 +62,12 @@ class Android
         // product info
         'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => true,
-
         // pdf
         'pdf_support'                  => true,
-
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
         'post_method_support'          => true,
-
         // rss
         'rss_support'                  => false,
     );
@@ -85,8 +82,7 @@ class Android
         $safariHelper = new SafariHelper();
         $safariHelper->setUserAgent($this->useragent);
 
-        if (!$this->utils->checkIfContains(array('Android', 'JUC (Linux; U;'))
-            && !$safariHelper->isMobileAsSafari()
+        if (!$this->utils->checkIfContains(array('Android', 'JUC (Linux; U;')) && !$safariHelper->isMobileAsSafari()
         ) {
             return false;
         }
@@ -178,7 +174,9 @@ class Android
         $safariHelper->setUserAgent($this->useragent);
 
         $doMatch = preg_match(
-            '/Version\/([\d\.]+)/', $this->useragent, $matches
+            '/Version\/([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -194,7 +192,9 @@ class Android
         }
 
         $doMatch = preg_match(
-            '/Safari\/([\d\.]+)/', $this->useragent, $matches
+            '/Safari\/([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -202,7 +202,9 @@ class Android
         }
 
         $doMatch = preg_match(
-            '/AppleWebKit\/([\d\.]+)/', $this->useragent, $matches
+            '/AppleWebKit\/([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -210,7 +212,9 @@ class Android
         }
 
         $doMatch = preg_match(
-            '/MobileSafari\/([\d\.]+)/', $this->useragent, $matches
+            '/MobileSafari\/([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -218,7 +222,9 @@ class Android
         }
 
         $doMatch = preg_match(
-            '/Android\/([\d\.]+)/', $this->useragent, $matches
+            '/Android\/([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
 
         if ($doMatch) {
@@ -265,7 +271,9 @@ class Android
      * @return \BrowserDetector\Detector\Browser\General\Android
      */
     public function detectDependProperties(
-        EngineHandler $engine, OsHandler $os, DeviceHandler $device
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
 

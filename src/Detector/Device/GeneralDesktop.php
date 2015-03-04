@@ -57,39 +57,35 @@ class GeneralDesktop
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'              => 'general Desktop',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'general Desktop',
-        'has_qwerty_keyboard'     => null,
-        'pointing_method'         => 'mouse',
-
+        'model_name'             => 'general Desktop',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'general Desktop',
+        'has_qwerty_keyboard'    => null,
+        'pointing_method'        => 'mouse',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => null,
-        'physical_screen_height'  => null,
-        'columns'                 => null,
-        'rows'                    => null,
-        'max_image_width'         => null,
-        'max_image_height'        => null,
-        'resolution_width'        => null,
-        'resolution_height'       => null,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => false,
-
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -122,16 +118,46 @@ class GeneralDesktop
 
         $others = array(
             // Linux
-            'linux', 'debian', 'ubuntu', 'suse', 'fedora', 'mint', 'redhat',
-            'slackware', 'zenwalk gnu', 'centos', 'kubuntu', 'cros',
+            'linux',
+            'debian',
+            'ubuntu',
+            'suse',
+            'fedora',
+            'mint',
+            'redhat',
+            'slackware',
+            'zenwalk gnu',
+            'centos',
+            'kubuntu',
+            'cros',
             // Mac
-            'macintosh', 'darwin', 'mac_powerpc', 'macbook', 'for mac',
-            'ppc mac', 'mac os x', 'imac', 'macbookpro', 'macbookair',
-            'macbook', 'macmini',
+            'macintosh',
+            'darwin',
+            'mac_powerpc',
+            'macbook',
+            'for mac',
+            'ppc mac',
+            'mac os x',
+            'imac',
+            'macbookpro',
+            'macbookair',
+            'macbook',
+            'macmini',
             // others
-            'freebsd', 'openbsd', 'os/2', 'warp', 'sunos', 'netbsd', 'w3m',
-            'google desktop', 'eeepc', 'dillo', 'konqueror', 'eudora',
-            'masking-agent', 'safersurf'
+            'freebsd',
+            'openbsd',
+            'os/2',
+            'warp',
+            'sunos',
+            'netbsd',
+            'w3m',
+            'google desktop',
+            'eeepc',
+            'dillo',
+            'konqueror',
+            'eudora',
+            'masking-agent',
+            'safersurf'
         );
 
         if ($this->utils->checkIfContains($others, true)) {
@@ -213,10 +239,7 @@ class GeneralDesktop
     public function detectBrowser()
     {
         $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..'
-            . DIRECTORY_SEPARATOR . 'Browser'
-            . DIRECTORY_SEPARATOR . 'Desktop'
-            . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
         );
 
         $chain = new Chain();

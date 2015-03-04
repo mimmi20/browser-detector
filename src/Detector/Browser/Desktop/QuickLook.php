@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\QuickLook as QuickLookBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class QuickLook extends QuickLookBase
+class QuickLook
+    extends QuickLookBase
 {
     // nothing to do here
 }

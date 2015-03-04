@@ -55,39 +55,35 @@ class NokiaLumia800
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'nokia_lumia_800_ver1', // not in wurfl
+        'wurflKey'               => 'nokia_lumia_800_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'Lumia 800',
-        'model_extra_info'        => 'Vodafone',
-        'marketing_name'          => 'Lumia 800',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'Lumia 800',
+        'model_extra_info'       => 'Vodafone',
+        'marketing_name'         => 'Lumia 800',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://nds1.nds.nokia.com/uaprof/Nokia800r100.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://nds1.nds.nokia.com/uaprof/Nokia800r100.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 49,
-        'physical_screen_height'  => 81,
-        'columns'                 => 16,
-        'rows'                    => 12,
-        'max_image_width'         => 320, // wurflkey: nokia_lumia_800_ver1
-        'max_image_height'        => 480,
-        'resolution_width'        => 480,
-        'resolution_height'       => 800,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 81,
+        'columns'                => 16,
+        'rows'                   => 12,
+        'max_image_width'        => 320, // wurflkey: nokia_lumia_800_ver1
+        'max_image_height'       => 480,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => false,
+        'nfc_support'            => false,
     );
 
     /**
@@ -168,7 +164,9 @@ class NokiaLumia800
      * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia800
      */
     public function detectDependProperties(
-        BrowserHandler $browser, EngineHandler $engine, OsHandler $os
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 

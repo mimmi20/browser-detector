@@ -52,39 +52,35 @@ class CreativeZiiLabsZiio7
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'creative_ziio7_ver1', // not in wurfl
+        'wurflKey'               => 'creative_ziio7_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'ZiiO7',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'ZiiO7',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'ZiiO7',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'ZiiO7',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 92,
-        'physical_screen_height'  => 153,
-        'columns'                 => 15,
-        'rows'                    => 12,
-        'max_image_width'         => 240,
-        'max_image_height'        => 320,
-        'resolution_width'        => 800,
-        'resolution_height'       => 480,
-        'dual_orientation'        => true,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 92,
+        'physical_screen_height' => 153,
+        'columns'                => 15,
+        'rows'                   => 12,
+        'max_image_width'        => 240,
+        'max_image_height'       => 320,
+        'resolution_width'       => 800,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

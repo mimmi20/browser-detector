@@ -36,7 +36,9 @@ namespace BrowserDetector\Detector\Type\Browser;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Transcoder extends AbstractType implements TypeInterface
+class Transcoder
+    extends AbstractType
+    implements TypeInterface
 {
     /**
      * the name of the browser

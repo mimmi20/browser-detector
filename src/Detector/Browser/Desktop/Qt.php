@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Qt as QtBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Qt extends QtBase
+class Qt
+    extends QtBase
 {
     // nothing to do here
 }

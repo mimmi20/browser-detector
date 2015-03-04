@@ -53,39 +53,35 @@ class HpP160U
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'hp_veer_ver1_subwebos211', // not in wurfl
+        'wurflKey'               => 'hp_veer_ver1_subwebos211', // not in wurfl
 
         // device
-        'model_name'              => 'P160U',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'Veer', // wurflkey: hp_veer_ver1_subwebos211
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'touchscreen',
-
+        'model_name'             => 'P160U',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Veer', // wurflkey: hp_veer_ver1_subwebos211
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => 'http://downloads.palm.com/profiles/P160U_R1.xml',
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => 'http://downloads.palm.com/profiles/P160U_R1.xml',
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 50,
-        'physical_screen_height'  => 50,
-        'columns'                 => 20,
-        'rows'                    => 10,
-        'max_image_width'         => 300,
-        'max_image_height'        => 360,
-        'resolution_width'        => 320,
-        'resolution_height'       => 400,
-        'dual_orientation'        => false,
-        'colors'                  => 16777216,
-
+        'physical_screen_width'  => 50,
+        'physical_screen_height' => 50,
+        'columns'                => 20,
+        'rows'                   => 10,
+        'max_image_width'        => 300,
+        'max_image_height'       => 360,
+        'resolution_width'       => 320,
+        'resolution_height'      => 400,
+        'dual_orientation'       => false,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**

@@ -52,39 +52,36 @@ class BlackBerry8700
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                => 'blackberry8700_ver1', // not in wurfl
+        'wurflKey'               => 'blackberry8700_ver1', // not in wurfl
 
         // device
-        'model_name'              => 'BlackBerry 8700',
-        'model_extra_info'        => null,
-        'marketing_name'          => 'BlackBerry 8700',
-        'has_qwerty_keyboard'     => true,
-        'pointing_method'         => 'clickwheel', // wurflkey: blackberry8700_ver1
+        'model_name'             => 'BlackBerry 8700',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'BlackBerry 8700',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'clickwheel', // wurflkey: blackberry8700_ver1
 
         // product info
-        'ununiqueness_handler'    => null,
-        'uaprof'                  => null,
-        'uaprof2'                 => null,
-        'uaprof3'                 => null,
-        'unique'                  => true,
-
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
         // display
-        'physical_screen_width'   => 27,
-        'physical_screen_height'  => 27,
-        'columns'                 => 32,
-        'rows'                    => 16,
-        'max_image_width'         => 315,
-        'max_image_height'        => 220,
-        'resolution_width'        => 320,
-        'resolution_height'       => 240,
-        'dual_orientation'        => false,
-        'colors'                  => 65536,
-
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 32,
+        'rows'                   => 16,
+        'max_image_width'        => 315,
+        'max_image_height'       => 220,
+        'resolution_width'       => 320,
+        'resolution_height'      => 240,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'             => true,
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'             => true,
+        'nfc_support'            => true,
     );
 
     /**
