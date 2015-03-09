@@ -78,7 +78,7 @@ class WaterFox
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('WaterFox')) {
+        if (!$this->utils->checkIfContains('waterfox', true)) {
             return false;
         }
 

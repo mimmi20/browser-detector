@@ -28,16 +28,17 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcDesireSv
+class SamsungSghi747
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,12 +56,12 @@ class HtcDesireSv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_desire_sv_ver1', // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Desire SV',
+        'model_name'             => 'SGH-I747',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Desire SV',
+        'marketing_name'         => 'Galaxy S III',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -70,14 +71,14 @@ class HtcDesireSv
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 25,
-        'rows'                   => 21,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -93,7 +94,11 @@ class HtcDesireSv
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC_DesireSV', 'Desire SV', 'HTC/DesireSV', 'HTC Desire SV'))) {
+        if (!$this->utils->checkIfContains(array('SGH-I747'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('SAMSUNG-SGH-I747M', 'SGH-I747M'))) {
             return false;
         }
 
@@ -127,7 +132,7 @@ class HtcDesireSv
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company\Samsung();
     }
 
     /**
@@ -137,7 +142,7 @@ class HtcDesireSv
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company\Samsung();
     }
 
     /**
@@ -170,10 +175,56 @@ class HtcDesireSv
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        // Android 2.3
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (2.3 == $osVersion) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        }
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban41i747');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $this;
     }

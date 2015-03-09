@@ -95,6 +95,7 @@ class Iron
             'Rockmelt',
             'Maxthon',
             'RockMelt',
+            'Edge',
             // Bots
             'Google Wireless Transcoder',
             'Google Web Preview',

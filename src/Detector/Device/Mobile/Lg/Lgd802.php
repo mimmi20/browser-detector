@@ -199,6 +199,7 @@ class Lgd802
                 }
                 break;
             case 'Chrome':
+            case 'Android WebView':
                 $engine->setCapability('is_sencha_touch_ok', false);
 
                 switch ((float)$osVersion) {

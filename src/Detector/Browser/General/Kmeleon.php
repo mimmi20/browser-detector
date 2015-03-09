@@ -91,8 +91,7 @@ class Kmeleon
             'PaleMoon',
             'SeaMonkey',
             'Flock',
-            'Fennec',
-            'Firefox'
+            'Fennec'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {

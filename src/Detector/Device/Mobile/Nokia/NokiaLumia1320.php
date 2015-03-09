@@ -30,11 +30,15 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -52,7 +56,7 @@ class NokiaLumia1320
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'nokia_lumia_1320_ver1', // not in wurfl
 
         // device
         'model_name'             => 'Lumia 1320',
@@ -148,5 +152,38 @@ class NokiaLumia1320
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ((float)$osVersion) {
+            case 8.1:
+                $this->setCapability('wurflKey', 'nokia_lumia_1320_ver1_subos81');
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $this;
     }
 }

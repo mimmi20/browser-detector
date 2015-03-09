@@ -185,12 +185,14 @@ class SamsungGtn7000
                     case 4.0:
                         $this->setCapability('wurflKey', 'samsung_gt_n7000_ver1_suban40');
                         break;
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_n7000_ver1_suban41rom');
+                        break;
                     case 2.1:
                     case 2.2:
                     case 2.3:
                     case 3.1:
                     case 3.2:
-                    case 4.1:
                     case 4.2:
                     default:
                         // nothing to do here

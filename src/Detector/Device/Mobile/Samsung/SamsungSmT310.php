@@ -206,7 +206,7 @@ class SamsungSmT310
 
                 switch ((float)$osVersion) {
                     case 4.4:
-                        $this->setCapability('wurflKey', 'sony_d5503_ver1_suban44');
+                        $this->setCapability('wurflKey', 'samsung_sm_t310_ver1_suban44');
                         break;
                     case 2.1:
                     case 2.2:

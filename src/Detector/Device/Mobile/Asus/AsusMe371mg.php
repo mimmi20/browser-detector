@@ -56,7 +56,7 @@ class AsusMe371mg
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'asus_fonepad_me371mg_ver1', // not in wurfl
 
         // device
         'model_name'             => 'ME371MG',

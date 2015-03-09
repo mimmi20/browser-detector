@@ -198,7 +198,7 @@ class SamsungGti9100
                         $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40');
                         break;
                     case 4.1:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban41rom');
+                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban41');
                         break;
                     case 2.1:
                     case 2.2:

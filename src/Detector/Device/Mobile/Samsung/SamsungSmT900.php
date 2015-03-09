@@ -28,15 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -45,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcDesireSv
+class SamsungSmT900
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,12 +52,12 @@ class HtcDesireSv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_desire_sv_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_sm_t900_ver1', // not in wurfl
 
         // device
-        'model_name'             => 'Desire SV',
+        'model_name'             => 'SM-T900',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Desire SV',
+        'marketing_name'         => 'SM-T900',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -70,16 +67,16 @@ class HtcDesireSv
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 25,
-        'rows'                   => 21,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 2560,
+        'resolution_height'      => 1600,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -93,7 +90,7 @@ class HtcDesireSv
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC_DesireSV', 'Desire SV', 'HTC/DesireSV', 'HTC Desire SV'))) {
+        if (!$this->utils->checkIfContains('SM-T900')) {
             return false;
         }
 
@@ -117,7 +114,7 @@ class HtcDesireSv
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -127,7 +124,7 @@ class HtcDesireSv
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company\Samsung();
     }
 
     /**
@@ -137,7 +134,7 @@ class HtcDesireSv
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company\Samsung();
     }
 
     /**
@@ -151,30 +148,5 @@ class HtcDesireSv
         $handler->setUseragent($this->_useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        // Android 2.3
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
     }
 }
