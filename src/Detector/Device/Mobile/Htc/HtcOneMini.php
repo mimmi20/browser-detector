@@ -98,6 +98,10 @@ class HtcOneMini
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('HTC_One_mini_2'))) {
+            return false;
+        }
+
         return true;
     }
 

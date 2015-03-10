@@ -218,9 +218,13 @@ class HtcOne
                 }
                 break;
             case 'Chrome':
+            case 'Android WebView':
                 $engine->setCapability('is_sencha_touch_ok', false);
 
                 switch ((float)$osVersion) {
+                    case 4.2:
+                        $this->setCapability('wurflKey', 'htc_m7_ver1_suban42oneuscore');
+                        break;
                     case 4.4:
                         $this->setCapability('wurflKey', 'htc_m7_ver1_suban44uscore');
                         break;
@@ -231,7 +235,6 @@ class HtcOne
                     case 3.2:
                     case 4.0:
                     case 4.1:
-                    case 4.2:
                     default:
                         // nothing to do here
                         break;

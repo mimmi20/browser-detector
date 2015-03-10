@@ -95,7 +95,7 @@ class OdysXelio
         }
 
         if ($this->utils->checkIfContains(
-            array('Xelio 10 Pro', 'XELIO7PRO', 'Xelio 7 pro', 'XELIO10EXTREME', 'Xelio 10 Extreme')
+            array('Xelio 10 Pro', 'XELIO7PRO', 'Xelio 7 pro', 'XELIO10EXTREME', 'Xelio 10 Extreme', 'Xelio10Pro')
         )
         ) {
             return false;

@@ -127,6 +127,7 @@ class Motorola
             'xt907',
             'xt910',
             'xt925',
+            'xt1021',
             'xt1032'
         );
 

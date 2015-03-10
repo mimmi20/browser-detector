@@ -90,7 +90,7 @@ class OdysXelio10Pro
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Xelio 10 Pro')) {
+        if (!$this->utils->checkIfContains(array('Xelio 10 Pro', 'Xelio10Pro'))) {
             return false;
         }
 

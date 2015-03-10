@@ -38,6 +38,7 @@ use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -55,12 +56,12 @@ class Lge610
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_e612_ver1_subua610_subuachrome', // not in wurfl
+        'wurflKey'               => 'lg_e612_ver1_subua610', // not in wurfl
 
         // device
         'model_name'             => 'E610',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Optimus L5', // wurflkey: lg_e612_ver1_subua610_subuachrome
+        'marketing_name'         => 'Optimus L5',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -172,6 +173,48 @@ class Lge610
 
         $engine->setCapability('bmp', true);
         $engine->setCapability('softkey_support', true);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                $this->setCapability('wurflKey', 'lg_e612_ver1_subua610');
+
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                $this->setCapability('wurflKey', 'lg_e612_ver1_subua610_subuachrome');
+
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $this;
     }

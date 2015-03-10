@@ -56,7 +56,7 @@ class Lgd802
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'lg_f320_ver1_subua802', // not in wurfl
 
         // device
         'model_name'             => 'D802',

@@ -86,11 +86,11 @@ class Maxthon
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Maxthon', 'MyIE'))) {
+        if (!$this->utils->checkIfContains(array('Maxthon', 'MyIE', 'MxBrowser'))) {
             return false;
         }
 
-        $isNotReallyAnIE = array(
+        $isNotReallyAnMaxthon = array(
             // using also the Trident rendering engine
             'Crazy Browser',
             'Galeon',
@@ -108,7 +108,7 @@ class Maxthon
             'Firefox'
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
+        if ($this->utils->checkIfContains($isNotReallyAnMaxthon)) {
             return false;
         }
 
@@ -165,7 +165,7 @@ class Maxthon
 
         $detector->setDefaulVersion('2.0');
 
-        $searches = array('Maxthon', 'Version');
+        $searches = array('Maxthon', 'MxBrowser', 'Version');
 
         return $detector->detectVersion($searches);
     }

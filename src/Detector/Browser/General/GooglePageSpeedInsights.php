@@ -46,7 +46,7 @@ use BrowserDetector\Input\UserAgent;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GooglePageSpeed
+class GooglePageSpeedInsights
     extends BrowserHandler
 {
     /**
@@ -79,11 +79,7 @@ class GooglePageSpeed
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Google Page Speed')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('Google Page Speed Insights')) {
+        if (!$this->utils->checkIfContains('Google Page Speed Insights')) {
             return false;
         }
 
@@ -97,7 +93,7 @@ class GooglePageSpeed
      */
     public function getName()
     {
-        return 'Google Page Speed';
+        return 'Google PageSpeed Insights';
     }
 
     /**
@@ -130,7 +126,7 @@ class GooglePageSpeed
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Google Page Speed');
+        $searches = array('Google Page Speed Insights', 'Version');
 
         return $detector->detectVersion($searches);
     }
@@ -175,7 +171,7 @@ class GooglePageSpeed
     ) {
         parent::detectDependProperties($engine, $os, $device);
 
-        $agent = str_ireplace('Google Page Speed', '', $this->useragent);
+        $agent = str_ireplace('Google Page Speed Insights', '', $this->useragent);
 
         $detector = new UserAgent();
         $detector->setAgent($agent);

@@ -79,15 +79,13 @@ class Googlebot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('googlebot', true) && !$this->utils->checkIfContains(
-                'www.google.com/bot.html',
-                true
-            )
+        if (!$this->utils->checkIfContains('googlebot', true)
+            && !$this->utils->checkIfContains('www.google.com/bot.html', true)
         ) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Mediapartners-Google', 'Googlebot-Mobile', 'AdsBot-Google'))) {
+        if ($this->utils->checkIfContains(array('Mediapartners-Google', 'Googlebot-Mobile', 'AdsBot-Google', 'Google Page Speed'))) {
             return false;
         }
 

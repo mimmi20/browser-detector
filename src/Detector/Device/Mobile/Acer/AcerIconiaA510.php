@@ -38,6 +38,7 @@ use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -70,7 +71,7 @@ class AcerIconiaA510
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 217, // wurflkey: acer_iconia_tab_a510_ver1
+        'physical_screen_width'  => 217,
         'physical_screen_height' => 136,
         'columns'                => 28,
         'rows'                   => 30,
@@ -81,10 +82,9 @@ class AcerIconiaA510
         'dual_orientation'       => true,
         'colors'                 => 4294967296,
         // sms
-        'sms_enabled'            => true, // wurflkey: acer_iconia_tab_a510_ver1
-
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'            => true, // wurflkey: acer_iconia_tab_a510_ver1
+        'nfc_support'            => true,
     );
 
     /**
@@ -175,10 +175,51 @@ class AcerIconiaA510
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        // wurflkey: acer_iconia_tab_a510_ver1
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
         $engine->setCapability('bmp', true);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'acer_iconia_tab_a510_ver1_suban41');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $this;
     }

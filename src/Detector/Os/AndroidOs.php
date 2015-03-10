@@ -34,6 +34,8 @@ use BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc;
 use BrowserDetector\Detector\Browser\General\AndroidWebView;
 use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\General\GooglePageSpeed;
+use BrowserDetector\Detector\Browser\General\GooglePageSpeedInsights;
 use BrowserDetector\Detector\Browser\Mobile\Android;
 use BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
@@ -222,6 +224,8 @@ class AndroidOs
             new FlyFlow(),
             new Maxthon(),
             new GooglebotMobileBot(),
+            new GooglePageSpeed(),
+            new GooglePageSpeedInsights(),
             new AndroidWebView(),
         );
 

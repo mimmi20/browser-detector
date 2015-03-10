@@ -38,6 +38,7 @@ use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -170,13 +171,25 @@ class NokiaLumia620
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        // wurflkey: nokia_lumia_620_ver1
         $engine->setCapability('bmp', false);
         $engine->setCapability('wbmp', false);
         $engine->setCapability('tiff', false);
 
         if ($this->utils->checkIfContains('vodafone', true)) {
             $this->setCapability('model_extra_info', 'for Vodafone');
+        }
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ((float)$osVersion) {
+            case 8.1:
+                $this->setCapability('wurflKey', 'nokia_lumia_620_ver1_subos81');
+                break;
+            default:
+                // nothing to do here
+                break;
         }
 
         return $this;

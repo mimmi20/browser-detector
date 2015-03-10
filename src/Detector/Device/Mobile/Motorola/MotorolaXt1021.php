@@ -28,17 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Motorola;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
-use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia820
+class MotorolaXt1021
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,12 +52,12 @@ class NokiaLumia820
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_lumia_820_ver1', // not in wurfl
+        'wurflKey'               => 'motorola_xt1021_ver1', // not in wurfl
 
         // device
-        'model_name'             => 'Lumia 820',
+        'model_name'             => 'XT1021',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lumia 820',
+        'marketing_name'         => 'XT1021',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -71,16 +67,16 @@ class NokiaLumia820
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 57,
-        'physical_screen_height' => 94,
-        'columns'                => 12,
-        'rows'                   => 20,
-        'max_image_width'        => 320,
-        'max_image_height'       => 480,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -94,7 +90,7 @@ class NokiaLumia820
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia 820', true)) {
+        if (!$this->utils->checkIfContains(array('MOT-XT1021', 'XT1021'))) {
             return false;
         }
 
@@ -128,7 +124,7 @@ class NokiaLumia820
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Motorola();
     }
 
     /**
@@ -138,52 +134,19 @@ class NokiaLumia820
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Motorola();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new WindowsPhoneOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->_useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia820
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ((float)$osVersion) {
-            case 8.1:
-                $this->setCapability('wurflKey', 'nokia_lumia_820_ver1_subos81');
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
     }
 }

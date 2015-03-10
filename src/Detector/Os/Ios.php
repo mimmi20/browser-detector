@@ -35,6 +35,8 @@ use BrowserDetector\Detector\Browser\General\BingPreview;
 use BrowserDetector\Detector\Browser\General\GoogleAdsbotMobile;
 use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\General\GooglePageSpeed;
+use BrowserDetector\Detector\Browser\General\GooglePageSpeedInsights;
 use BrowserDetector\Detector\Browser\General\GoogleSearchAppliance;
 use BrowserDetector\Detector\Browser\General\MsnBotMedia;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
@@ -191,6 +193,8 @@ class Ios
             new AppleMail(),
             new Googlebot(),
             new GooglebotMobileBot(),
+            new GooglePageSpeed(),
+            new GooglePageSpeedInsights(),
             new GoogleSearchAppliance(),
             new Mercury(),
             new MsnBotMedia(),

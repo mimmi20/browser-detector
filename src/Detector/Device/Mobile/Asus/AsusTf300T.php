@@ -95,7 +95,7 @@ class AsusTf300T
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ASUS Transformer Pad TF300T'))) {
+        if (!$this->utils->checkIfContains(array('ASUS Transformer Pad TF300T', 'TF300T'))) {
             return false;
         }
 
@@ -188,6 +188,9 @@ class AsusTf300T
                 switch ((float)$osVersion) {
                     case 4.1:
                         $this->setCapability('wurflKey', 'asus_transformer_pad_tf300t_ver1_suban41');
+                        break;
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'asus_transformer_pad_tf300t_ver1_suban44');
                         break;
                     case 2.1:
                     case 2.2:

@@ -229,6 +229,9 @@ class SamsungGti9300
                     case 4.3:
                         $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban43');
                         break;
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9300_ver1_suban44chrome');
+                        break;
                     case 2.1:
                     case 2.2:
                     case 2.3:

@@ -170,15 +170,6 @@ class NokiaLumia630
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        // wurflkey: nokia_lumia_620_ver1
-        //$engine->setCapability('bmp', false);
-        //$engine->setCapability('wbmp', false);
-        //$engine->setCapability('tiff', false);
-
-        //if ($this->utils->checkIfContains('vodafone', true)) {
-        //    $this->setCapability('model_extra_info', 'for Vodafone');
-        //}
-
         return $this;
     }
 }

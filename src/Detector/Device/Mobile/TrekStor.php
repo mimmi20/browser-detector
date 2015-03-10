@@ -95,6 +95,7 @@ class TrekStor
         $trekStorPhones = array(
             'TrekStor',
             'ST10216-1',
+            'ST10416-1',
             'ST70104',
             'ST80216',
             'Liro_Color',

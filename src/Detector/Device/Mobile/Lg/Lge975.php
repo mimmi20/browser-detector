@@ -30,14 +30,18 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -55,7 +59,7 @@ class Lge975
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'lg_e975_ver1', // not in wurfl
 
         // device
         'model_name'             => 'E975',
@@ -158,5 +162,77 @@ class Lge975
         $chain->setHandlers($os);
 
         return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return DeviceHandler
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (2.3 == $osVersion) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        }
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'lg_e975_ver1_suban44');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $this;
     }
 }

@@ -182,43 +182,17 @@ class MotorolaXt890
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         }
 
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 4.1:
-                        $this->setCapability('wurflKey', 'mot_xt890_ver1_suban41');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
+        switch ((float)$osVersion) {
+            case 4.1:
+                $this->setCapability('wurflKey', 'mot_xt890_ver1_suban41');
                 break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 4.1:
-                        $this->setCapability('wurflKey', 'mot_xt890_ver1_suban41');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.0:
+            case 4.2:
             default:
                 // nothing to do here
                 break;

@@ -194,6 +194,9 @@ class SamsungGtn8000
         switch ($browser->getName()) {
             case 'Android Webkit':
                 switch ((float)$osVersion) {
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_n8000_ver1_suban41');
+                        break;
                     case 4.4:
                         $this->setCapability('wurflKey', 'samsung_gt_n8000_ver1_suban44');
                         break;
@@ -203,7 +206,6 @@ class SamsungGtn8000
                     case 3.1:
                     case 3.2:
                     case 4.0:
-                    case 4.1:
                     case 4.2:
                     default:
                         // nothing to do here

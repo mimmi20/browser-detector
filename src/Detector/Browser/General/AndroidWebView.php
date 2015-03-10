@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser\General;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -186,7 +187,17 @@ class AndroidWebView
      */
     public function detectEngine()
     {
-        $engine = new Blink();
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+        $detector->detectVersion(array('Chrome'));
+
+        $version = $detector->getVersion(Version::MAJORONLY);
+
+        if ($version >= 28) {
+            $engine = new Blink();
+        } else {
+            $engine = new Webkit();
+        }
 
         $engine->setUseragent($this->useragent);
 

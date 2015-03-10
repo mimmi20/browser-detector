@@ -126,7 +126,7 @@ class WaterFox
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $searches = array('WaterFox');
+        $searches = array('WaterFox', 'Waterfox');
 
         return $detector->detectVersion($searches);
     }

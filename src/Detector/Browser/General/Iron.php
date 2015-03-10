@@ -32,8 +32,11 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -96,6 +99,7 @@ class Iron
             'Maxthon',
             'RockMelt',
             'Edge',
+            'Dragon',
             // Bots
             'Google Wireless Transcoder',
             'Google Web Preview',
@@ -185,5 +189,69 @@ class Iron
         $engine->setUseragent($this->useragent);
 
         return $engine;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\Chrome
+     */
+    public function detectDependProperties(
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $osname = $os->getName();
+
+        if ('iOS' === $osname) {
+            $engine->setCapability('xhtml_format_as_css_property', true);
+            $this->setCapability('rss_support', true);
+        }
+
+        if ('Android' === $osname) {
+            $engine->setCapability('html_wi_imode_compact_generic', false);
+            $engine->setCapability('xhtml_avoid_accesskeys', true);
+            $engine->setCapability('xhtml_supports_forms_in_table', true);
+            $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        }
+
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if (!$device->getDeviceType()->isMobile()) {
+            $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        }
+
+        if ($version >= 11) {
+            $engine->setCapability('css_gradient', 'webkit');
+            $engine->setCapability('css_gradient_linear', 'none');
+            $engine->setCapability('css_border_image', 'none');
+            $engine->setCapability('css_rounded_corners', 'none');
+        }
+
+        if ($version >= 26) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+            $engine->setCapability('css_gradient', 'css3');
+            $engine->setCapability('svgt_1_1', true);
+        }
+
+        if ($version >= 31) {
+            $engine->setCapability('css_gradient_linear', 'css3');
+            $engine->setCapability('css_border_image', 'css3');
+            $engine->setCapability('css_rounded_corners', 'css3');
+        }
+
+        $this->setCapability('wurflKey', 'google_chrome_' . (int)$version);
+        $engine->setCapability('xhtml_table_support', false);
+
+        return $this;
     }
 }

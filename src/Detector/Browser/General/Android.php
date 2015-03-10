@@ -103,6 +103,7 @@ class Android
             'FlyFlow',
             'iPhone',
             'Maxthon',
+            'MxBrowser',
             'MQQBrowser',
             'NetFrontLifeBrowser',
             'NokiaBrowser',

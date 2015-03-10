@@ -109,6 +109,7 @@ class Asus
             'ME172V',
             'K00E',
             'ME372CG',
+            'TF300T',
         );
 
         if (!$this->utils->checkIfContains($asusPhones)) {
@@ -120,24 +121,6 @@ class Asus
         }
 
         return true;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Asus');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Asus' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
@@ -191,5 +174,23 @@ class Asus
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\DeviceHandler
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Asus');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Asus' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 }

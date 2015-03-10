@@ -56,7 +56,7 @@ class SonyC6603ExperiaZ
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'sonyericsson_c6603_ver1', // not in wurfl
 
         // device
         'model_name'             => 'C6603',

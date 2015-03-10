@@ -175,7 +175,6 @@ class SonyEricssonLT26i
     ) {
         parent::detectDependProperties($browser, $engine, $os);
 
-        // wurflkey: sonyericsson_lt26i_ver1
         $engine->setCapability('bmp', true);
         $engine->setCapability('gif_animated', true);
         $engine->setCapability('xhtml_can_embed_video', 'none');
@@ -185,24 +184,25 @@ class SonyEricssonLT26i
             Version::MAJORMINOR
         );
 
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 4.0:
-                        $this->setCapability('wurflKey', 'sonyericsson_lt26i_ver1_suban40');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
+        switch ((float)$osVersion) {
+            case 4.0:
+                $this->setCapability('wurflKey', 'sonyericsson_lt26i_ver1_suban40');
                 break;
+            case 4.1:
+                $this->setCapability('wurflKey', 'sonyericsson_lt26i_ver1_suban41nose');
+                break;
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+        }
+
+        switch ($browser->getName()) {
             case 'Chrome':
             case 'Android WebView':
                 switch ((float)$osVersion) {

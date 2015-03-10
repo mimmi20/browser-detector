@@ -186,9 +186,6 @@ class HtcOneS
         switch ($browser->getName()) {
             case 'Android Webkit':
                 switch ((float)$osVersion) {
-                    case 4.0:
-                        //    $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore');
-                        //    break;
                     case 2.1:
                     case 2.2:
                     case 2.3:
@@ -208,12 +205,14 @@ class HtcOneS
                     case 4.0:
                         $this->setCapability('wurflKey', 'htc_one_s_ver1_subuanouscore_subuachrome');
                         break;
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'htc_one_s_ver1_suban41nouscore');
+                        break;
                     case 2.1:
                     case 2.2:
                     case 2.3:
                     case 3.1:
                     case 3.2:
-                    case 4.1:
                     case 4.2:
                     default:
                         // nothing to do here

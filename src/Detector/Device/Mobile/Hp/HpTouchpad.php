@@ -41,6 +41,7 @@ use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -193,6 +194,51 @@ class HpTouchpad
             $this->setCapability('wurflKey', 'hp_touchpad_android_ver1');
             $this->setCapability('model_extra_info', 'Android port');
             $this->setCapability('colors', 65536);
+
+            $osVersion = $os->detectVersion()->getVersion(
+                Version::MAJORMINOR
+            );
+
+            switch ($browser->getName()) {
+                case 'Android Webkit':
+                    switch ((float)$osVersion) {
+                        case 4.0:
+                            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1_suban40rom');
+                            break;
+                        case 2.1:
+                        case 2.2:
+                        case 2.3:
+                        case 3.1:
+                        case 3.2:
+                        case 4.2:
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                    break;
+                case 'Chrome':
+                    $engine->setCapability('is_sencha_touch_ok', false);
+
+                    switch ((float)$osVersion) {
+                        case 4.0:
+                            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1_suban40rom');
+                            break;
+                        case 2.1:
+                        case 2.2:
+                        case 2.3:
+                        case 3.1:
+                        case 3.2:
+                        case 4.1:
+                        case 4.2:
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                    break;
+                default:
+                    // nothing to do here
+                    break;
+            }
         }
 
         return $this;
