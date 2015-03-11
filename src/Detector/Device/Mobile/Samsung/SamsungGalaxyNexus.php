@@ -98,7 +98,7 @@ class SamsungGalaxyNexus
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Nexus S', 'NexusHD2', 'Nexus 7', 'Nexus One', 'Nexus 10'))) {
+        if ($this->utils->checkIfContains(array('Nexus S', 'NexusHD2', 'Nexus 7', 'Nexus One', 'Nexus 10', 'Nexus 9'))) {
             return false;
         }
 

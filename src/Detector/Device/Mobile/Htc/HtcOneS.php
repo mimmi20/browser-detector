@@ -67,7 +67,6 @@ class HtcOneS
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/PJ401/ua-profile.xml',
-        // wurflkey: htc_one_s_ver1
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
@@ -186,12 +185,14 @@ class HtcOneS
         switch ($browser->getName()) {
             case 'Android Webkit':
                 switch ((float)$osVersion) {
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'htc_one_s_ver1_suban41');
+                        break;
                     case 2.1:
                     case 2.2:
                     case 2.3:
                     case 3.1:
                     case 3.2:
-                    case 4.1:
                     case 4.2:
                     default:
                         // nothing to do here

@@ -61,8 +61,8 @@ class SamsungGtp5100
         // device
         'model_name'             => 'GT-P5100',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 2 10.1', // wurflkey: samsung_gt_p5100_ver1
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p5100_ver1
+        'marketing_name'         => 'Galaxy Tab 2 10.1',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -71,7 +71,7 @@ class SamsungGtp5100
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 218, // wurflkey: samsung_gt_p5100_ver1
+        'physical_screen_width'  => 218,
         'physical_screen_height' => 136,
         'columns'                => 25,
         'rows'                   => 21,
@@ -82,10 +82,10 @@ class SamsungGtp5100
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true, // wurflkey: samsung_gt_p5100_ver1
+        'sms_enabled'            => true,
 
         // chips
-        'nfc_support'            => false, // wurflkey: samsung_gt_p5100_ver1
+        'nfc_support'            => false,
     );
 
     /**
@@ -192,12 +192,16 @@ class SamsungGtp5100
                     case 4.2:
                         $this->setCapability('wurflKey', 'samsung_gt_p5100_ver1_suban42');
                         break;
+                    case 4.0:
+                        if ('4.0.4' === $os->detectVersion()->getVersion()) {
+                            $this->setCapability('wurflKey', 'samsung_gt_p5100_ver1_suban404');
+                        }
+                        break;
                     case 2.1:
                     case 2.2:
                     case 2.3:
                     case 3.1:
                     case 3.2:
-                    case 4.0:
                     default:
                         // nothing to do here
                         break;

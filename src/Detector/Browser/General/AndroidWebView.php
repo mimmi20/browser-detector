@@ -187,13 +187,12 @@ class AndroidWebView
      */
     public function detectEngine()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(array('Chrome'));
+        $chrome = new Chrome();
+        $chrome->setUserAgent($this->useragent);
 
-        $version = $detector->getVersion(Version::MAJORONLY);
+        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
 
-        if ($version >= 28) {
+        if ($chromeVersion >= 28) {
             $engine = new Blink();
         } else {
             $engine = new Webkit();

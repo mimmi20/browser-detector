@@ -52,13 +52,13 @@ class AcerLiquidZ150
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'acer_liquid_ver1_subandroid_2_1', // not in wurfl
+        'wurflKey'               => 'acer_z150_ver1', // not in wurfl
 
         // device
         'model_name'             => 'Z150',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid Z5 Duo',
-        'has_qwerty_keyboard'    => false, // wurflkey: acer_liquid_ver1_subandroid_2_1
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,

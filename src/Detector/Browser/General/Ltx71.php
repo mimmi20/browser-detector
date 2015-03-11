@@ -32,21 +32,17 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
 /**
- * BenQUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SmartViera
+class Ltx71
     extends BrowserHandler
 {
     /**
@@ -60,8 +56,8 @@ class SmartViera
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -79,11 +75,11 @@ class SmartViera
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('Viera'))) {
-            return true;
+        if (!$this->utils->checkIfContains('ltx71')) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -93,7 +89,7 @@ class SmartViera
      */
     public function getName()
     {
-        return 'SmartViera';
+        return 'ltx71 Bot';
     }
 
     /**
@@ -103,7 +99,7 @@ class SmartViera
      */
     public function getManufacturer()
     {
-        return new Company\Panasonic();
+        return new Company\Ltx71();
     }
 
     /**
@@ -113,17 +109,7 @@ class SmartViera
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 9910;
+        return new BrowserType\Bot();
     }
 
     /**
@@ -136,33 +122,31 @@ class SmartViera
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Viera', 'SMART\-TV');
+        $searches = array('ltx71');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function detectEngine()
     {
-        $chrome = new Chrome();
-        $chrome->setUserAgent($this->useragent);
+        $handler = new UnknownEngine();
+        $handler->setUseragent($this->useragent);
 
-        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if ($chromeVersion >= 28) {
-            $engine = new Blink();
-        } else {
-            $engine = new Webkit();
-        }
-
-        $engine->setUseragent($this->useragent);
-
-        return $engine;
+        return $handler;
     }
 }
-

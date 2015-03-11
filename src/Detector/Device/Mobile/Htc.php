@@ -128,6 +128,7 @@ class Htc
             'Nexus One',
             'NexusOne',
             'Nexus-One',
+            'Nexus 9',
             'pcdadr6350',
             'ADR6350',
             'PJ83100'
@@ -138,24 +139,6 @@ class Htc
         }
 
         return true;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Htc');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Htc' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
@@ -209,5 +192,23 @@ class Htc
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\DeviceHandler
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->_useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Htc');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Htc' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 }

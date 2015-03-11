@@ -52,7 +52,7 @@ class SamsungSmT525
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'samsung_sm_t525_ver1', // not in wurfl
 
         // device
         'model_name'             => 'SM-T525',

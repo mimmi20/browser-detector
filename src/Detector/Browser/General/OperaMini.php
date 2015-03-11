@@ -77,7 +77,7 @@ class OperaMini
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Opera Mini')) {
+        if (!$this->utils->checkIfContains(array('Opera Mini', 'OPiOS'))) {
             return false;
         }
 
@@ -174,7 +174,9 @@ class OperaMini
             return $detector->setVersion($matches[1]);
         }
 
-        return $detector->setVersion('');
+        $searches = array('OPiOS');
+
+        return $detector->detectVersion($searches);
     }
 
     /**

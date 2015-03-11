@@ -112,6 +112,7 @@ class SonyEricsson
             'c6603',
             'c6503',
             'c6903',
+            'xperia z',
             'c6833',
             'd6503',
             'd5503',

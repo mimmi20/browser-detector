@@ -66,7 +66,6 @@ class HtcOneSv
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => 'http://www.htcmms.com.tw/Android/Common/PJ401/ua-profile.xml',
-        // wurflkey: htc_one_s_ver1
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,

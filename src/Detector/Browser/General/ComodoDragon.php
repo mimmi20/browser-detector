@@ -180,9 +180,12 @@ class ComodoDragon
      */
     public function detectEngine()
     {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+        $chrome = new Chrome();
+        $chrome->setUserAgent($this->useragent);
 
-        if ($version >= 28) {
+        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if ($chromeVersion >= 28) {
             $engine = new Blink();
         } else {
             $engine = new Webkit();

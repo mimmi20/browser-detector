@@ -31,13 +31,12 @@
 namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -187,18 +186,28 @@ class Maxthon
      */
     public function detectEngine()
     {
-        $engines = array(
-            new Webkit(),
-            new Gecko(),
-            new Trident()
-        );
+        if (false !== strpos($this->useragent, 'Trident')) {
+            $engine = new Trident();
+        } elseif (false !== strpos($this->useragent, 'Gecko')) {
+            $engine = new Gecko();
+        } elseif (false !== strpos($this->useragent, 'WebKit')) {
+            $chrome = new Chrome();
+            $chrome->setUserAgent($this->useragent);
 
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new UnknownEngine());
+            $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
 
-        return $chain->detect();
+            if ($chromeVersion >= 28) {
+                $engine = new Blink();
+            } else {
+                $engine = new UnknownEngine();
+            }
+        } else {
+            $engine = new UnknownEngine();
+        }
+
+        $engine->setUseragent($this->useragent);
+
+        return $engine;
     }
 
     /**
@@ -237,32 +246,32 @@ class Maxthon
         $chrome = new Chrome();
         $chrome->setUserAgent($this->useragent);
 
-        $chomeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
+        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
 
         if (!$device->getDeviceType()->isMobile()) {
             $engine->setCapability('xhtml_make_phone_call_string', 'none');
         }
 
-        if ($chomeVersion >= 21) {
+        if ($chromeVersion >= 21) {
             $engine->setCapability('css_gradient', 'webkit');
             $engine->setCapability('css_gradient_linear', 'none');
             $engine->setCapability('css_border_image', 'none');
             $engine->setCapability('css_rounded_corners', 'none');
         }
 
-        if ($chomeVersion >= 26) {
+        if ($chromeVersion >= 26) {
             $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
             $engine->setCapability('css_gradient', 'css3');
             $engine->setCapability('svgt_1_1', true);
         }
 
-        if ($chomeVersion >= 31) {
+        if ($chromeVersion >= 31) {
             $engine->setCapability('css_gradient_linear', 'css3');
             $engine->setCapability('css_border_image', 'css3');
             $engine->setCapability('css_rounded_corners', 'css3');
         }
 
-        $this->setCapability('wurflKey', 'google_chrome_' . (int)$chomeVersion);
+        $this->setCapability('wurflKey', 'google_chrome_' . (int)$chromeVersion);
         $engine->setCapability('xhtml_table_support', false);
 
         return $this;

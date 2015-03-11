@@ -28,17 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyC6903ExperiaZ1
+class SamsungSmN910C
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,12 +52,12 @@ class SonyC6903ExperiaZ1
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sony_c6903_ver1', // not in wurfl
+        'wurflKey'               => 'samsung_sm_n910a_ver1_subuac', // not in wurfl
 
         // device
-        'model_name'             => 'C6903',
+        'model_name'             => 'SM-N910C',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Z1',
+        'marketing_name'         => 'Galaxy Note 4 LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -77,8 +73,8 @@ class SonyC6903ExperiaZ1
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1080,
-        'resolution_height'      => 1920,
+        'resolution_width'       => 1440,
+        'resolution_height'      => 2560,
         'dual_orientation'       => true,
         'colors'                 => 16777216,
         // sms
@@ -94,7 +90,7 @@ class SonyC6903ExperiaZ1
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonC6903', 'SonyC6903', 'C6903', 'Xperia Z'))) {
+        if (!$this->utils->checkIfContains('SM-N910C')) {
             return false;
         }
 
@@ -128,7 +124,7 @@ class SonyC6903ExperiaZ1
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company\Samsung();
     }
 
     /**
@@ -138,7 +134,7 @@ class SonyC6903ExperiaZ1
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company\Samsung();
     }
 
     /**
@@ -152,77 +148,5 @@ class SonyC6903ExperiaZ1
         $handler->setUseragent($this->_useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (2.3 == $osVersion) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        }
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 4.4:
-                        $this->setCapability('wurflKey', 'sony_c6903_ver1_suban44');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
     }
 }

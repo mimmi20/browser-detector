@@ -52,7 +52,7 @@ class SamsungSmG901F
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'samsung_sm_g901f_ver1', // not in wurfl
 
         // device
         'model_name'             => 'SM-G901F',

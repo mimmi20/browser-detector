@@ -117,6 +117,7 @@ class Safari
             'MQQBrowser',
             'NokiaBrowser',
             'OmniWeb',
+            'OPiOS',
             'Origin',
             'PaleMoon',
             'PhantomJS',
@@ -206,8 +207,24 @@ class Safari
         }
 
         $regularVersions = array(
-            '3.0', '3.1', '3.2', '4.0', '4.1', '4.2', '4.3', '4.4', '5.0', '5.1', '5.2', '6.0',
-            '6.1', '6.2', '7.0', '7.1', '8.0', '8.1'
+            '3.0',
+            '3.1',
+            '3.2',
+            '4.0',
+            '4.1',
+            '4.2',
+            '4.3',
+            '4.4',
+            '5.0',
+            '5.1',
+            '5.2',
+            '6.0',
+            '6.1',
+            '6.2',
+            '7.0',
+            '7.1',
+            '8.0',
+            '8.1'
         );
 
         if (in_array(substr($detectedVersion, 0, 3), $regularVersions)) {

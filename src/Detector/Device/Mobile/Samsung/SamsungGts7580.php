@@ -52,7 +52,7 @@ class SamsungGts7580
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'samsung_gt_s7580_ver1', // not in wurfl
 
         // device
         'model_name'             => 'GT-S7580',
