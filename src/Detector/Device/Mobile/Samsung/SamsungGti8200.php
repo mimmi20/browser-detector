@@ -94,7 +94,7 @@ class SamsungGti8200
             return false;
         }
 
-        if ($this->utils->checkIfContains('GT-I8200N', 'SAMSUNG-GT-I8200N')) {
+        if ($this->utils->checkIfContains(array('GT-I8200N', 'SAMSUNG-GT-I8200N'))) {
             return false;
         }
 
