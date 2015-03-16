@@ -57,7 +57,7 @@ class SamsungSmT520
         // device
         'model_name'             => 'SM-T520',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab Pro 10.1',
+        'marketing_name'         => 'Galaxy Tab Pro 10.1 WiFi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

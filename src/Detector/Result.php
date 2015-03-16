@@ -1963,4 +1963,3 @@ class Result
         return $this;
     }
 }
-
