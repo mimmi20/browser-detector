@@ -85,6 +85,7 @@ class MicrosoftMobileExplorer
         $isNotReallyAnIE = array(
             // using also the Trident rendering engine
             'Maxthon',
+            'MxBrowser',
             'Galeon',
             'Lunascape',
             'Opera',

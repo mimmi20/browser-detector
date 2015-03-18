@@ -60,7 +60,7 @@ class SamsungGti9515
 
         // device
         'model_name'             => 'GT-I9515',
-        'model_extra_info'       => null,
+        'model_extra_info'       => 'Value Edition',
         'marketing_name'         => 'Galaxy S4 Value Edition',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',

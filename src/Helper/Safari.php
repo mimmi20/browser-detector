@@ -112,6 +112,7 @@ class Safari
             'Lunascape',
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Mercury',
             'Midori',
             'MQQBrowser',

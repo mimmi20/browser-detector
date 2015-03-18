@@ -96,6 +96,7 @@ class Seamonkey
             // using also the Gecko rendering engine
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Camino',
             'Galeon',
             'Lunascape',

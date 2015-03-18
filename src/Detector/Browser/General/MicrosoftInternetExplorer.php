@@ -116,6 +116,7 @@ class MicrosoftInternetExplorer
             'galeon',
             'lunascape',
             'maxthon',
+            'mxbrowser',
             'myie',
             'opera',
             'palemoon',
@@ -143,14 +144,16 @@ class MicrosoftInternetExplorer
             '360spider',
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnIE, true) && !$this->utils->checkIfContains(
+        if ($this->utils->checkIfContains($isNotReallyAnIE, true)
+            && !$this->utils->checkIfContains(
                 array('Bitte Mozilla Firefox verwenden', 'chromeframe')
             )
         ) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Gecko') && !$this->utils->checkIfContainsAll(array('like Gecko', 'rv:11.0'))
+        if ($this->utils->checkIfContains('Gecko')
+            && !$this->utils->checkIfContains(array('like Gecko', 'rv:11.0'))
         ) {
             return false;
         }
@@ -283,57 +286,57 @@ class MicrosoftInternetExplorer
         OsHandler $os,
         DeviceHandler $device
     ) {
-        $engineVersion = (int)$engine->detectVersion()->getVersion(
-            Version::MAJORONLY
-        );
-
         $browserVersion = $this->detectVersion();
 
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
             $browserVersion->setVersion($matches[1]);
-        }
 
-        $detectedVersion = $browserVersion->getVersion(Version::MAJORONLY);
+            $detectedVersion = (int) $browserVersion->getVersion(Version::MAJORONLY);
+            $engineVersion   = (int) $engine->detectVersion()->getVersion(
+                Version::MAJORONLY
+            );
 
-        switch ($engineVersion) {
-            case 4:
-                if ($this->utils->checkIfContains('Trident/4.0') && 8 > $detectedVersion
-                ) {
-                    $this->setCapability(
-                        'mobile_browser_modus',
-                        'IE ' . $detectedVersion . '.0 Compatibility Mode'
-                    );
-                }
-                break;
-            case 5:
-                if (9 > $detectedVersion) {
-                    $this->setCapability(
-                        'mobile_browser_modus',
-                        'IE ' . $detectedVersion . '.0 Compatibility Mode'
-                    );
-                }
-                break;
-            case 6:
-                if (10 > $detectedVersion) {
-                    $this->setCapability(
-                        'mobile_browser_modus',
-                        'IE ' . $detectedVersion . '.0 Compatibility Mode'
-                    );
-                }
-                break;
-            case 7:
-                if (11 > $detectedVersion) {
-                    $this->setCapability(
-                        'mobile_browser_modus',
-                        'IE ' . $detectedVersion . '.0 Compatibility Mode'
-                    );
-                }
-                break;
-            default:
-                //nothing to do
-                break;
+            switch ($engineVersion) {
+                case 4:
+                    if ($this->utils->checkIfContains('Trident/4.0')
+                        && 8 > $detectedVersion
+                    ) {
+                        $this->setCapability(
+                            'mobile_browser_modus',
+                            'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                        );
+                    }
+                    break;
+                case 5:
+                    if (9 > $detectedVersion) {
+                        $this->setCapability(
+                            'mobile_browser_modus',
+                            'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                        );
+                    }
+                    break;
+                case 6:
+                    if (10 > $detectedVersion) {
+                        $this->setCapability(
+                            'mobile_browser_modus',
+                            'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                        );
+                    }
+                    break;
+                case 7:
+                    if (11 > $detectedVersion) {
+                        $this->setCapability(
+                            'mobile_browser_modus',
+                            'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                        );
+                    }
+                    break;
+                default:
+                    //nothing to do
+                    break;
+            }
         }
 
         parent::detectDependProperties($engine, $os, $device);

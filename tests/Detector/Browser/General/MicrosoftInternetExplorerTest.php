@@ -39,6 +39,7 @@ class MicrosoftInternetExplorerTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; ARM; Trident/6.0; Touch)'),
+            array('Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 Edge/12.0'),
         );
     }
 

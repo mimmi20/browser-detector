@@ -86,6 +86,7 @@ class CometBird
         $isNotReallyAnIE = array(
             // using also the Trident rendering engine
             'Maxthon',
+            'MxBrowser',
             'Galeon',
             'Opera',
             'Lunascape',

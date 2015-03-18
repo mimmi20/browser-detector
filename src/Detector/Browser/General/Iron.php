@@ -97,6 +97,7 @@ class Iron
             'PaleMoon',
             'Rockmelt',
             'Maxthon',
+            'MxBrowser',
             'RockMelt',
             'Edge',
             'Dragon',

@@ -58,7 +58,7 @@ class AmazonKfthwi
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Kfthwi',
+        'model_name'             => 'KFTHWI',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kindle Fire HDX 7',
         'has_qwerty_keyboard'    => true,

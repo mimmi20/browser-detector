@@ -87,6 +87,7 @@ class Palemoon
             // using also the Trident rendering engine
             'CometBird',
             'Maxthon',
+            'MxBrowser',
             'Galeon',
             'Opera',
             'Lunascape',

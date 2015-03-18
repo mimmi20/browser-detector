@@ -61,7 +61,7 @@ class SamsungGtp5110
         // device
         'model_name'             => 'GT-P5110',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 2 10.1',
+        'marketing_name'         => 'Galaxy Tab 2 10.1 WiFi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

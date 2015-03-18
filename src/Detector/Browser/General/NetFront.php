@@ -160,15 +160,12 @@ class NetFront
      */
     public function detectEngine()
     {
-        $engines = array(
-            new Webkit(),
-            new NetFrontEngine()
-        );
+        $engines = array(new Webkit());
 
         $chain = new Chain();
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new UnknownEngine());
+        $chain->setDefaultHandler(new NetFrontEngine());
 
         return $chain->detect();
     }

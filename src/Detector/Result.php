@@ -1724,6 +1724,9 @@ class Result
                     case 'controlcap_advertised_browser':
                         $value = $browser->getName();
                         break;
+                    case 'mobile_browser_modus':
+                        $value = $browser->getCapability('mobile_browser_modus');
+                        break;
                     case 'mobile_browser_version':
                     case 'controlcap_advertised_browser_version':
                         $value = $browser->detectVersion();

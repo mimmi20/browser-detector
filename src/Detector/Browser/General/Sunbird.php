@@ -104,6 +104,7 @@ class Sunbird
             'Lunascape',
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Midori',
             'Mozad',
             'Navigator',

@@ -56,7 +56,7 @@ class HuaweiMt7L09
 
         // device
         'model_name'             => 'MT7-L09',
-        'model_extra_info'       => null,
+        'model_extra_info'       => 'Dual SIM TD-LTE',
         'marketing_name'         => 'MT7-L09',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',

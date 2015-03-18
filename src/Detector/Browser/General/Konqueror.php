@@ -103,6 +103,7 @@ class Konqueror
             'Lunascape',
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Midori',
             'Navigator',
             'OmniWeb',

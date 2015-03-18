@@ -57,7 +57,7 @@ class SamsungSmT535
         // device
         'model_name'             => 'SM-T535',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 4 10.1',
+        'marketing_name'         => 'Galaxy Tab 4 10.1 LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

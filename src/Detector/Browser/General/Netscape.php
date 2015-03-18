@@ -84,6 +84,7 @@ class Netscape
             'Firefox',
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Camino',
             'Galeon',
             'Lunascape',

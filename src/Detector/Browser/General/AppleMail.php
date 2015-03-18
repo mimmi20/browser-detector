@@ -114,6 +114,7 @@ class AppleMail
             'Lunascape',
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Midori',
             'MQQBrowser',
             'NokiaBrowser',

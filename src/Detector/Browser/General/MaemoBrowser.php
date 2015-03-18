@@ -89,6 +89,7 @@ class MaemoBrowser
         $isNotReallyAnFirefox = array(
             // using also the Gecko rendering engine
             'Maxthon',
+            'MxBrowser',
             'Camino',
             'Galeon',
             'Lunascape',

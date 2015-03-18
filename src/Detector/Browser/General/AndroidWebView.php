@@ -92,6 +92,7 @@ class AndroidWebView
             'Lunascape',
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Midori',
             'OPR',
             'PaleMoon',

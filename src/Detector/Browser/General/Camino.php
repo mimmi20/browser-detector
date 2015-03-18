@@ -88,6 +88,7 @@ class Camino
             // using also the Gecko rendering engine
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Galeon',
             'Lunascape',
             'Opera',

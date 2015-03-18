@@ -61,7 +61,7 @@ class SamsungGtp5210
         // device
         'model_name'             => 'GT-P5210',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 3 10.1',
+        'marketing_name'         => 'Galaxy Tab 3 10.1 3G WiFi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

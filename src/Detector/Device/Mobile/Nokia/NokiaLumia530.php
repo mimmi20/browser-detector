@@ -35,6 +35,10 @@ use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -148,5 +152,40 @@ class NokiaLumia530
         $handler->setUseragent($this->_useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return NokiaLumia530
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        if ($this->utils->checkIfContains('Dual SIM')) {
+            $this->setCapability('model_extra_info', 'Dual Sim');
+        }
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ((float)$osVersion) {
+            case 8.1:
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $this;
     }
 }

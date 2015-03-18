@@ -104,6 +104,7 @@ class Chrome
             'Lunascape',
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Midori',
             'OPR',
             'PaleMoon',

@@ -118,7 +118,7 @@ class Nintendo3ds
      */
     public function getDeviceType()
     {
-        return new DeviceType\TvConsole();
+        return new DeviceType\MobileConsole();
     }
 
     /**

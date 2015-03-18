@@ -188,8 +188,6 @@ class Maxthon
     {
         if (false !== strpos($this->useragent, 'Trident')) {
             $engine = new Trident();
-        } elseif (false !== strpos($this->useragent, 'Gecko')) {
-            $engine = new Gecko();
         } elseif (false !== strpos($this->useragent, 'WebKit')) {
             $chrome = new Chrome();
             $chrome->setUserAgent($this->useragent);
@@ -201,6 +199,8 @@ class Maxthon
             } else {
                 $engine = new UnknownEngine();
             }
+        } elseif (false !== strpos($this->useragent, 'Gecko')) {
+            $engine = new Gecko();
         } else {
             $engine = new UnknownEngine();
         }

@@ -83,6 +83,7 @@ class Kmeleon
             // using also the Gecko rendering engine
             'Maemo',
             'Maxthon',
+            'MxBrowser',
             'Camino',
             'Galeon',
             'Lunascape',
@@ -118,7 +119,7 @@ class Kmeleon
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\KmeleonBrowserOrg();
     }
 
     /**
