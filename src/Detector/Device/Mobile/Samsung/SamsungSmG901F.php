@@ -56,7 +56,7 @@ class SamsungSmG901F
 
         // device
         'model_name'             => 'SM-G901F',
-        'model_extra_info'       => null,
+        'model_extra_info'       => 'LTE-A',
         'marketing_name'         => 'Galaxy S5 Plus',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',

@@ -58,7 +58,7 @@ class AcerLiquidZ150
         'model_name'             => 'Z150',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid Z5 Duo',
-        'has_qwerty_keyboard'    => false,
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,

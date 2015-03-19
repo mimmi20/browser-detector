@@ -37,6 +37,7 @@ use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -197,7 +198,7 @@ class Maxthon
             if ($chromeVersion >= 28) {
                 $engine = new Blink();
             } else {
-                $engine = new UnknownEngine();
+                $engine = new Webkit();
             }
         } elseif (false !== strpos($this->useragent, 'Gecko')) {
             $engine = new Gecko();

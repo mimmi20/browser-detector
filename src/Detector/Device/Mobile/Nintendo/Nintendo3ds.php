@@ -61,7 +61,7 @@ class Nintendo3ds
         // device
         'model_name'             => '3DS',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '3DS',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

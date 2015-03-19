@@ -133,6 +133,7 @@ class Samsung
             'Nexus 7',
             'Nexus 4',
             'Nexus 5',
+            'Nexus 9',
             'NexusHD2',
             'Nexus One',
             'NexusOne',

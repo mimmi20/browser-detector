@@ -114,7 +114,7 @@ class MdLifetabS785x
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**

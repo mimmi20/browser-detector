@@ -57,7 +57,7 @@ class LenovoB8080f
         // device
         'model_name'             => 'B8080-F',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Yoga B8080-F',
+        'marketing_name'         => 'Yoga Tab 10 HD+',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

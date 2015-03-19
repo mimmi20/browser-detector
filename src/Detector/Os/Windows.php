@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Bits\Os;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
@@ -131,9 +132,17 @@ class Windows
                     $version = 'Vista';
                     break;
                 case '5.3':
-                case '5.2':
                 case '5.1':
                     $version = 'XP';
+                    break;
+                case '5.2':
+                    $bits = new Os();
+                    $bits->setUserAgent($this->_useragent);
+                    if ($bits->getBits() == 32) {
+                        $version = '2003';
+                    } else {
+                        $version = 'XP';
+                    }
                     break;
                 case '5.0':
                 case '5.01':
@@ -175,10 +184,18 @@ class Windows
                     $version = 'Server 2003';
                     break;
                 case '5.3':
-                case '5.2':
                 case '5.1':
                 case 'XP':
                     $version = 'XP';
+                    break;
+                case '5.2':
+                    $bits = new Os();
+                    $bits->setUserAgent($this->_useragent);
+                    if ($bits->getBits() == 32) {
+                        $version = '2003';
+                    } else {
+                        $version = 'XP';
+                    }
                     break;
                 case 'ME':
                     $version = 'ME';

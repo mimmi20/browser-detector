@@ -60,7 +60,7 @@ class AmazonKfthwi
         // device
         'model_name'             => 'KFTHWI',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Kindle Fire HDX 7',
+        'marketing_name'         => 'Kindle Fire HDX 7 WiFi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
