@@ -112,7 +112,7 @@ class DoCoMo
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\DoCoMo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'DoCoMo' . DIRECTORY_SEPARATOR
@@ -170,7 +170,7 @@ class DoCoMo
     public function detectOs()
     {
         $handler = new Java();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

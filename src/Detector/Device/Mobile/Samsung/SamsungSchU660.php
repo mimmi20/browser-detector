@@ -145,7 +145,7 @@ class SamsungSchU660
     public function detectOs()
     {
         $handler = new Brew();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

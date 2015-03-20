@@ -102,7 +102,7 @@ class GeneralMobile
     public function canHandle()
     {
         $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->_useragent);
+        $mobileDeviceHelper->setUserAgent($this->useragent);
 
         if ($mobileDeviceHelper->isMobileBrowser()) {
             return true;
@@ -129,7 +129,7 @@ class GeneralMobile
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
@@ -191,7 +191,7 @@ class GeneralMobile
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser\Mobile');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());

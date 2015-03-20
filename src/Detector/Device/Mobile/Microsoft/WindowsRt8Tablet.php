@@ -163,7 +163,7 @@ class WindowsRt8Tablet
     public function detectOs()
     {
         $handler = new WindowsRt();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }
@@ -184,7 +184,7 @@ class WindowsRt8Tablet
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

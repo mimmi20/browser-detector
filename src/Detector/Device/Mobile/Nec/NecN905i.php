@@ -148,7 +148,7 @@ class NecN905i
     public function detectOs()
     {
         $handler = new Maemo();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

@@ -145,7 +145,7 @@ class SamsungGts5220
     public function detectOs()
     {
         $handler = new Java();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

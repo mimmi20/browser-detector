@@ -107,7 +107,7 @@ class LePan
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\LePan');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'LePan' . DIRECTORY_SEPARATOR
@@ -165,7 +165,7 @@ class LePan
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

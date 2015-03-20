@@ -175,7 +175,8 @@ class Netscape
             'waybackarchive',
             'spbot',
             'heritrix',
-            'bingbot'
+            'bingbot',
+            'crawler',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscapeLowerCased, true)) {

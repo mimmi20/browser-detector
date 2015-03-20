@@ -146,7 +146,7 @@ class PlayStation4
     public function detectOs()
     {
         $handler = new CellOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }
@@ -159,7 +159,7 @@ class PlayStation4
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
         $searches = array('PLAYSTATION 3');

@@ -111,7 +111,7 @@ class Apple
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Apple');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Apple' . DIRECTORY_SEPARATOR
@@ -169,7 +169,7 @@ class Apple
     public function detectOs()
     {
         $handler = new Ios();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

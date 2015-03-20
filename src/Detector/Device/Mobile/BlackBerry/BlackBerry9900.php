@@ -150,7 +150,7 @@ class BlackBerry9900
     public function detectOs()
     {
         $handler = new RimOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

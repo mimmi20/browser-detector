@@ -114,7 +114,7 @@ class Pomp
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pomp');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pomp' . DIRECTORY_SEPARATOR
@@ -181,7 +181,7 @@ class Pomp
 
         $chain = new Chain();
         $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
+        $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
         return $chain->detect();

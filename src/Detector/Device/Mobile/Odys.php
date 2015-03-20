@@ -160,7 +160,7 @@ class Odys
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Odys');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Odys' . DIRECTORY_SEPARATOR
@@ -178,7 +178,7 @@ class Odys
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

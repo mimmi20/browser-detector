@@ -146,7 +146,7 @@ class Nokia6303classic
     public function detectOs()
     {
         $handler = new Symbianos();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

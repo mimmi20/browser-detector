@@ -111,7 +111,7 @@ class BarnesNoble
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\BarnesNoble');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'BarnesNoble' . DIRECTORY_SEPARATOR
@@ -169,7 +169,7 @@ class BarnesNoble
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

@@ -99,7 +99,7 @@ class QuickLook
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Apple();
     }
 
     /**

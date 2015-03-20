@@ -109,7 +109,7 @@ class Nintendo
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Nintendo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Nintendo' . DIRECTORY_SEPARATOR
@@ -167,7 +167,7 @@ class Nintendo
     public function detectOs()
     {
         $handler = new NintendoWii();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

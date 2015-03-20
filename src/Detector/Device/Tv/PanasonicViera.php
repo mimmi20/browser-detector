@@ -68,9 +68,9 @@ class PanasonicViera
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Viera',
+        'model_name'             => 'Viera TV',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'Viera TV',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info
@@ -164,7 +164,7 @@ class PanasonicViera
 
         $chain = new Chain();
         $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
+        $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
         return $chain->detect();
@@ -191,7 +191,7 @@ class PanasonicViera
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

@@ -146,7 +146,7 @@ class SamsungGts5230w
     public function detectOs()
     {
         $handler = new Java();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

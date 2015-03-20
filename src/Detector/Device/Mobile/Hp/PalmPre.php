@@ -165,7 +165,7 @@ class PalmPre
     public function detectOs()
     {
         $handler = new WebOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }
@@ -204,7 +204,7 @@ class PalmPre
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
         $searches = array('Pre');

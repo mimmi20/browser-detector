@@ -145,7 +145,7 @@ class SamsungGts7233e
     public function detectOs()
     {
         $handler = new Bada();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

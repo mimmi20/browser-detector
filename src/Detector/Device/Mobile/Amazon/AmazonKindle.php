@@ -160,7 +160,7 @@ class AmazonKindle
 
         $chain = new Chain();
         $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
+        $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
         return $chain->detect();
@@ -174,7 +174,7 @@ class AmazonKindle
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
         $searches = array('Kindle');

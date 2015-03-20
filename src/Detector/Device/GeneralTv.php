@@ -94,7 +94,7 @@ class GeneralTv
     public function canHandle()
     {
         $tvHelper = new TvHelper();
-        $tvHelper->setUserAgent($this->_useragent);
+        $tvHelper->setUserAgent($this->useragent);
 
         if (!$tvHelper->isTvDevice()) {
             return false;
@@ -111,7 +111,7 @@ class GeneralTv
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Tv');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Tv' . DIRECTORY_SEPARATOR
@@ -179,7 +179,7 @@ class GeneralTv
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser\Tv');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());

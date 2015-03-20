@@ -155,7 +155,7 @@ class Nintendo3ds
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 
@@ -170,7 +170,7 @@ class Nintendo3ds
     public function detectOs()
     {
         $handler = new UnknownOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

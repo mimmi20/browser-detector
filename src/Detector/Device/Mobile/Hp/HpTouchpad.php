@@ -159,7 +159,7 @@ class HpTouchpad
 
         $chain = new Chain();
         $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
+        $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
         return $chain->detect();

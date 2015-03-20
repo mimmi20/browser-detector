@@ -113,7 +113,7 @@ class Lenco
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Lenco');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Lenco' . DIRECTORY_SEPARATOR
@@ -171,7 +171,7 @@ class Lenco
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

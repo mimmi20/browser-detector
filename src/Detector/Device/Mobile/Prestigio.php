@@ -118,7 +118,7 @@ class Prestigio
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Prestigio');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Prestigio' . DIRECTORY_SEPARATOR
@@ -176,7 +176,7 @@ class Prestigio
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

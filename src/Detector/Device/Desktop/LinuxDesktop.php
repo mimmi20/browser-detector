@@ -209,7 +209,7 @@ class LinuxDesktop
 
         $chain = new Chain();
         $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
+        $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
         return $chain->detect();
@@ -227,7 +227,7 @@ class LinuxDesktop
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());

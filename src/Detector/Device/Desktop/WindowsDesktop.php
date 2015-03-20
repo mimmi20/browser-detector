@@ -94,7 +94,7 @@ class WindowsDesktop
     public function canHandle()
     {
         $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($this->_useragent);
+        $windowsHelper->setUserAgent($this->useragent);
 
         if (!$windowsHelper->isWindows()) {
             return false;
@@ -151,7 +151,7 @@ class WindowsDesktop
     public function detectOs()
     {
         $handler = new Windows();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }
@@ -168,7 +168,7 @@ class WindowsDesktop
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());

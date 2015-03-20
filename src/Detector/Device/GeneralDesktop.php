@@ -96,21 +96,21 @@ class GeneralDesktop
     public function canHandle()
     {
         $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->_useragent);
+        $mobileDeviceHelper->setUserAgent($this->useragent);
 
         if ($mobileDeviceHelper->isMobileBrowser()) {
             return false;
         }
 
         $tvHelper = new TvHelper();
-        $tvHelper->setUserAgent($this->_useragent);
+        $tvHelper->setUserAgent($this->useragent);
 
         if ($tvHelper->isTvDevice()) {
             return false;
         }
 
         $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($this->_useragent);
+        $windowsHelper->setUserAgent($this->useragent);
 
         if ($windowsHelper->isWindows()) {
             return true;
@@ -175,7 +175,7 @@ class GeneralDesktop
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Desktop');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
@@ -243,7 +243,7 @@ class GeneralDesktop
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
         $chain->setDirectory($browserPath);
         $chain->setDefaultHandler(new UnknownBrowser());

@@ -119,7 +119,7 @@ class Arnova
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Arnova');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Arnova' . DIRECTORY_SEPARATOR
@@ -177,7 +177,7 @@ class Arnova
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

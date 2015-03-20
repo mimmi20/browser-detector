@@ -112,7 +112,7 @@ class Wiko
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Wiko');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Wiko' . DIRECTORY_SEPARATOR
@@ -170,7 +170,7 @@ class Wiko
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

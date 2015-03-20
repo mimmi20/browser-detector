@@ -155,7 +155,7 @@ class LoeweSl121
     public function detectOs()
     {
         $handler = new LinuxTv();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }
@@ -180,7 +180,7 @@ class LoeweSl121
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

@@ -128,7 +128,8 @@ class Motorola
             'xt910',
             'xt925',
             'xt1021',
-            'xt1032'
+            'xt1052',
+            'xt1032',
         );
 
         if (!$this->utils->checkIfContains($motorolaPhones, true)) {
@@ -186,7 +187,7 @@ class Motorola
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Motorola');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Motorola' . DIRECTORY_SEPARATOR
@@ -204,7 +205,7 @@ class Motorola
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

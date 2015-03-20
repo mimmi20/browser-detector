@@ -145,7 +145,7 @@ class SonyEricssonW910i
     public function detectOs()
     {
         $handler = new Java();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

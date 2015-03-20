@@ -152,7 +152,7 @@ class NokiaN9
     public function detectOs()
     {
         $handler = new MeeGo();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

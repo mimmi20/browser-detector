@@ -145,7 +145,7 @@ class HtcMdaVarioV
     public function detectOs()
     {
         $handler = new WindowsMobileOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

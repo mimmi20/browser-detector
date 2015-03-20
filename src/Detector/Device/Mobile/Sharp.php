@@ -115,7 +115,7 @@ class Sharp
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Sharp');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Sharp' . DIRECTORY_SEPARATOR
@@ -173,7 +173,7 @@ class Sharp
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

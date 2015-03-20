@@ -107,7 +107,7 @@ class Epad
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Epad');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Epad' . DIRECTORY_SEPARATOR
@@ -165,7 +165,7 @@ class Epad
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

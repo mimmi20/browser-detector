@@ -122,7 +122,7 @@ class Amazon
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Amazon');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Amazon' . DIRECTORY_SEPARATOR
@@ -180,7 +180,7 @@ class Amazon
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

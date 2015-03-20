@@ -147,7 +147,7 @@ class PlayStationPortable
     public function detectBrowser()
     {
         $handler = new NetFront();
-        $handler->setUserAgent($this->_useragent);
+        $handler->setUserAgent($this->useragent);
 
         return $handler;
     }
@@ -160,7 +160,7 @@ class PlayStationPortable
     public function detectOs()
     {
         $handler = new Java();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

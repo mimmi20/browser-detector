@@ -107,7 +107,7 @@ class Pandigital
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pandigital');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pandigital' . DIRECTORY_SEPARATOR
@@ -165,7 +165,7 @@ class Pandigital
     public function detectOs()
     {
         $handler = new AndroidOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

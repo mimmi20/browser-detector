@@ -37,6 +37,25 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * @dataProvider providerIsSpamOrCrawlerPositive
+     * @param string $agent
+     */
+    public function testIsSpamOrCrawlerPositive($agent)
+    {
+        $this->object->setUserAgent($agent);
+
+        self::assertTrue($this->object->isSpamOrCrawler());
+    }
+
+    public function providerIsSpamOrCrawlerPositive()
+    {
+        return array(
+            array('curl/7.15.5 (i686-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5'),
+            array('NetLyzer FastProbe'),
+        );
+    }
+
+    /**
      * @dataProvider providerIsFakeIePositive
      * @param string $agent
      */

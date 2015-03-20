@@ -49,7 +49,7 @@ abstract class DeviceHandler
     /**
      * @var string the user agent to handle
      */
-    protected $_useragent = '';
+    protected $useragent = '';
 
     /**
      * @var \BrowserDetector\Helper\Utils the helper class
@@ -117,7 +117,7 @@ abstract class DeviceHandler
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;
@@ -141,7 +141,7 @@ abstract class DeviceHandler
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
         return $detector->setVersion('');
@@ -324,7 +324,7 @@ abstract class DeviceHandler
     public function detectBrowser()
     {
         $browser = new Browser\UnknownBrowser();
-        $browser->setUserAgent($this->_useragent);
+        $browser->setUserAgent($this->useragent);
 
         return $browser;
     }
@@ -338,7 +338,7 @@ abstract class DeviceHandler
     {
         $chain = new Chain();
         $chain->setDefaultHandler(new Os\UnknownOs());
-        $chain->setUseragent($this->_useragent);
+        $chain->setUseragent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Os');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR

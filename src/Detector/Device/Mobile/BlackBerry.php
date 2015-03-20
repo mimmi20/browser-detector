@@ -113,7 +113,7 @@ class BlackBerry
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\BlackBerry');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'BlackBerry' . DIRECTORY_SEPARATOR
@@ -179,7 +179,7 @@ class BlackBerry
 
         $chain = new Chain();
         $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->_useragent);
+        $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
         return $chain->detect();

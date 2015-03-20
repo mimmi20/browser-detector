@@ -83,7 +83,7 @@ class Chromium
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('AppleWebKit', 'Chromium'))) {
+        if (!$this->utils->checkIfContainsAll(array('applewebkit', 'chromium'), true)) {
             return false;
         }
 

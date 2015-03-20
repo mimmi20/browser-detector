@@ -148,7 +148,7 @@ class NokiaLumia925
     public function detectOs()
     {
         $handler = new WindowsPhoneOs();
-        $handler->setUseragent($this->_useragent);
+        $handler->setUseragent($this->useragent);
 
         return $handler;
     }
