@@ -28,12 +28,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Jaytech;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -44,9 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Wiko
+class JaytechTpcPa10
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -57,9 +55,9 @@ class Wiko
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'general Wiko Device',
+        'model_name'             => 'PA10.1M',
         'model_extra_info'       => null,
-        'marketing_name'         => 'general Wiko Device',
+        'marketing_name'         => 'PA10.1M',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -75,10 +73,10 @@ class Wiko
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -92,35 +90,11 @@ class Wiko
      */
     public function canHandle()
     {
-        $phones = array(
-            'Wiko',
-            'RAINBOW',
-            'GETAWAY',
-        );
-
-        if (!$this->utils->checkIfContains($phones)) {
+        if (!$this->utils->checkIfContains('TPC-PA10.1M')) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Wiko');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Wiko' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
@@ -130,7 +104,7 @@ class Wiko
      */
     public function getWeight()
     {
-        return 2847;
+        return 3;
     }
 
     /**
@@ -150,7 +124,7 @@ class Wiko
      */
     public function getManufacturer()
     {
-        return new Company\Wiko();
+        return new Company\Pipo();
     }
 
     /**
@@ -160,7 +134,7 @@ class Wiko
      */
     public function getBrand()
     {
-        return new Company\Wiko();
+        return new Company\Pipo();
     }
 
     /**

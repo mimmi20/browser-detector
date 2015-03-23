@@ -57,7 +57,7 @@ class SonyTabletSgp511
         // device
         'model_name'             => 'SGP511',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Tablet Z',
+        'marketing_name'         => 'Xperia Tablet Z WiFi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

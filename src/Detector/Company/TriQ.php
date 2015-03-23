@@ -36,7 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Exabot
+class TriQ
     extends AbstractCompany
     implements CompanyInterface
 {
@@ -45,12 +45,12 @@ class Exabot
      *
      * @var string
      */
-    protected $name = 'www.exabot.com';
+    protected $name = '3Q';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.exabot.com';
+    protected $brandname = '3Q';
 }

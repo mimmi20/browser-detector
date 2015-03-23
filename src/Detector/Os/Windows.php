@@ -117,6 +117,7 @@ class Windows
         if ($doMatch) {
             switch ($matches[1]) {
                 case '6.4':
+                case '10.0':
                     $version = '10';
                     break;
                 case '6.3':
@@ -165,6 +166,7 @@ class Windows
         if ($doMatch) {
             switch ($matches[1]) {
                 case '6.4':
+                case '10.0':
                     $version = '10';
                     break;
                 case '6.3':

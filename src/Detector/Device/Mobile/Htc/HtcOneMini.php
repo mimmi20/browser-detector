@@ -98,7 +98,7 @@ class HtcOneMini
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('HTC_One_mini_2'))) {
+        if ($this->utils->checkIfContains(array('HTC_One_mini_2', 'One mini 2'))) {
             return false;
         }
 

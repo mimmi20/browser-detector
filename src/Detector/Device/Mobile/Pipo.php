@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Wiko
+class Pipo
     extends DeviceHandler
     implements DeviceInterface, DeviceHasChildrenInterface
 {
@@ -57,9 +57,9 @@ class Wiko
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'general Wiko Device',
+        'model_name'             => 'general Pipo Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'general Wiko Device',
+        'marketing_name'         => 'general Pipo Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -92,17 +92,16 @@ class Wiko
      */
     public function canHandle()
     {
-        $phones = array(
-            'Wiko',
-            'RAINBOW',
-            'GETAWAY',
+        $pipophones = array(
+            'pipo',
+            'm9pro',
         );
 
-        if (!$this->utils->checkIfContains($phones)) {
-            return false;
+        if ($this->utils->checkIfContains($pipophones, true)) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -114,9 +113,9 @@ class Wiko
     {
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Wiko');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pipo');
         $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Wiko' . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . 'Pipo' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler($this);
 
@@ -130,7 +129,7 @@ class Wiko
      */
     public function getWeight()
     {
-        return 2847;
+        return 10;
     }
 
     /**
@@ -150,7 +149,7 @@ class Wiko
      */
     public function getManufacturer()
     {
-        return new Company\Wiko();
+        return new Company\Pipo();
     }
 
     /**
@@ -160,7 +159,7 @@ class Wiko
      */
     public function getBrand()
     {
-        return new Company\Wiko();
+        return new Company\Pipo();
     }
 
     /**

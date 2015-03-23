@@ -57,7 +57,7 @@ class SamsungSmT900
         // device
         'model_name'             => 'SM-T900',
         'model_extra_info'       => null,
-        'marketing_name'         => 'SM-T900',
+        'marketing_name'         => 'Galaxy Tab Pro 12.2',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

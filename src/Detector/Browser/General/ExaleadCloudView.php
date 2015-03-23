@@ -99,7 +99,7 @@ class ExaleadCloudView
      */
     public function getManufacturer()
     {
-        return new Company\Exabot();
+        return new Company\DassaultSystemes();
     }
 
     /**

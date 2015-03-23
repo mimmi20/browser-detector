@@ -61,7 +61,7 @@ class SonyD6503ExperiaZ2
         // device
         'model_name'             => 'D6503',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Z2',
+        'marketing_name'         => 'Xperia Z2 LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

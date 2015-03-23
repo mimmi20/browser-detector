@@ -1228,7 +1228,7 @@ class InputUserAgentTest extends \PHPUnit_Framework_TestCase
                 false, false, false, false, false, false, false
             ),
             array(
-                'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Exabot-Thumbnails)', 'Exabot',
+                'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (DassaultSystemes-Thumbnails)', 'DassaultSystemes',
                 '', 'unknown', '', 'general Bot', false, false, true, false, false, false, false, false, false, false,
                 false, false, false, false, false, false, false
             ),
