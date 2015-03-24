@@ -87,7 +87,7 @@ class WebOs
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         $searches = array('WebOS', 'webOS', 'hpwOS');
 
@@ -137,7 +137,7 @@ class WebOs
 
         $chain = new Chain(false, $browsers, $browserPath, $browserNs);
         $chain->setDefaultHandler(new UnknownBrowser());
-        $chain->setUseragent($this->_useragent);
+        $chain->setUseragent($this->useragent);
 
         $device = $chain->detect();
 
@@ -161,7 +161,7 @@ class WebOs
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

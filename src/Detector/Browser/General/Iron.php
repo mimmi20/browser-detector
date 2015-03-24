@@ -79,11 +79,11 @@ class Iron
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAll(array('Mozilla/', 'AppleWebKit'))) {
+        if (!$this->utils->checkIfContains('Mozilla/')) {
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Iron', 'Chrome'))) {
+        if (!$this->utils->checkIfContainsAll(array('AppleWebKit', 'Chrome'))) {
             return false;
         }
 
@@ -111,6 +111,10 @@ class Iron
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIron)) {
+            return false;
+        }
+
+        if (!$this->utils->checkIfContains('iron', true)) {
             return false;
         }
 

@@ -88,7 +88,7 @@ class Macosx
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
         $detector->setDefaulVersion('10');
 
         $searches = array('Mac OS X', 'Mac OS X v');

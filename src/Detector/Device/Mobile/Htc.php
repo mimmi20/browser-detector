@@ -131,7 +131,8 @@ class Htc
             'Nexus 9',
             'pcdadr6350',
             'ADR6350',
-            'PJ83100'
+            'PJ83100',
+            'Vodafone Smart Tab III 7'
         );
 
         if (!$this->utils->checkIfContains($htcPhones)) {

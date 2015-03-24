@@ -40,7 +40,7 @@ class SpamCrawlerFake
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = '';
+    private $useragent = '';
 
     /**
      * @var \BrowserDetector\Helper\Utils the helper class
@@ -66,7 +66,7 @@ class SpamCrawlerFake
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;
@@ -252,8 +252,8 @@ class SpamCrawlerFake
             return true;
         }
 
-        if ('Mozilla/4.0 (compatible;)' === $this->_useragent
-            || 'Mozilla/5.0 (compatible)' === $this->_useragent
+        if ('Mozilla/4.0 (compatible;)' === $this->useragent
+            || 'Mozilla/5.0 (compatible)' === $this->useragent
         ) {
             return true;
         }
@@ -323,20 +323,20 @@ class SpamCrawlerFake
             return true;
         }
 
-        $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $this->useragent, $matches);
 
         if ($doMatch) {
             if ($matches[2]) {
                 return true;
             }
 
-            if (4 > $matches[1] || $matches[1] >= 7) {
+            if ($matches[1] >= 7) {
                 return true;
             }
         }
 
         $doMatch = preg_match(
-            '/^Mozilla\/5\.0 \(X11; U; Linux i686; .*; rv:([\d\.]+)\) Gecko\/.* Firefox\/([\d\.]+)/', $this->_useragent,
+            '/^Mozilla\/5\.0 \(X11; U; Linux i686; .*; rv:([\d\.]+)\) Gecko\/.* Firefox\/([\d\.]+)/', $this->useragent,
             $matches
         );
 
@@ -347,13 +347,13 @@ class SpamCrawlerFake
             return true;
         }
 
-        $doMatch = preg_match('/Presto\/(\d+)\.(\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Presto\/(\d+)\.(\d+)/', $this->useragent, $matches);
 
         if ($doMatch && $matches[1] > 2) {
             return true;
         }
 
-        $doMatch = preg_match('/SeaMonkey\/(\d+)\.(\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/SeaMonkey\/(\d+)\.(\d+)/', $this->useragent, $matches);
 
         if ($doMatch && $matches[1] > 2) {
             return true;
@@ -373,7 +373,7 @@ class SpamCrawlerFake
 
     public function isFakeIe()
     {
-        $doMatch = preg_match('/MSIE (\d+)\.(\d+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MSIE (\d+)\.(\d+)/', $this->useragent, $matches);
 
         if ($doMatch && isset($matches[1])) {
             if ($matches[1] >= 6 && $matches[2] > 0) {
@@ -391,7 +391,7 @@ class SpamCrawlerFake
         }
 
         $doMatch = preg_match(
-            '/(Win|Windows )(2000|XP|2003|Vista|7|8) ([\d\.]+)/', $this->_useragent, $matches
+            '/(Win|Windows )(2000|XP|2003|Vista|7|8) ([\d\.]+)/', $this->useragent, $matches
         );
         if ($doMatch && !$this->utils->checkIfContains('anonym', true)) {
             return true;
@@ -402,8 +402,8 @@ class SpamCrawlerFake
             '6.2', '6.3', '6.4', '10.0'
         );
 
-        $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->_useragent, $matches)
-                || preg_match('/(Win|Windows )(2000|XP|2003|Vista|7|8)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->useragent, $matches)
+                || preg_match('/(Win|Windows )(2000|XP|2003|Vista|7|8)/', $this->useragent, $matches);
 
         if ($doMatch) {
             if ($this->utils->checkIfContains('anonym', true)) {
@@ -423,7 +423,7 @@ class SpamCrawlerFake
             return true;
         }
 
-        $doMatch = preg_match('/windows nt ([\d\.]+)/i', $this->_useragent, $matches);
+        $doMatch = preg_match('/windows nt ([\d\.]+)/i', $this->useragent, $matches);
         if ($doMatch) {
             return true;
         }
@@ -432,7 +432,7 @@ class SpamCrawlerFake
             && $this->utils->checkIfContains('MSIE')
         ) {
             $doMatch = preg_match(
-                '/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10|11)\.\d.*/', $this->_useragent, $matches
+                '/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10|11)\.\d.*/', $this->useragent, $matches
             );
             if (!$doMatch) {
                 return true;

@@ -57,7 +57,7 @@ class FirefoxOs
     public function canHandle()
     {
         $helper = new FirefoxOsHelper();
-        $helper->setUserAgent($this->_useragent);
+        $helper->setUserAgent($this->useragent);
 
         return $helper->isFirefoxOs();
     }
@@ -80,7 +80,7 @@ class FirefoxOs
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         //$searches = array('Gecko');
 

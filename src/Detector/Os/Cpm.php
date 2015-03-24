@@ -80,7 +80,7 @@ class Cpm
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         return $detector->setVersion('0.0');
     }

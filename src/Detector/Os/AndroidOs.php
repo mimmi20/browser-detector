@@ -104,14 +104,14 @@ class AndroidOs
         }
 
         $firefoxOshelper = new FirefoxOsHelper();
-        $firefoxOshelper->setUserAgent($this->_useragent);
+        $firefoxOshelper->setUserAgent($this->useragent);
 
         if ($firefoxOshelper->isFirefoxOs()) {
             return false;
         }
 
         $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->_useragent);
+        $safariHelper->setUserAgent($this->useragent);
 
         if ($this->utils->checkIfContains(
                 array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;')
@@ -120,7 +120,7 @@ class AndroidOs
             return true;
         }
 
-        $doMatch = preg_match('/Linux; U; (\d+[\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Linux; U; (\d+[\d\.]+)/', $this->useragent, $matches);
         if ($doMatch && $matches[1] >= 4) {
             return true;
         }
@@ -146,7 +146,7 @@ class AndroidOs
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         if ($this->utils->checkIfContains('android 2.1-update1', true)) {
             return $detector->setVersion('2.1.1');
@@ -230,7 +230,7 @@ class AndroidOs
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

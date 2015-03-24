@@ -123,7 +123,7 @@ class Ios
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         $searches = array(
             'IphoneOSX',
@@ -138,7 +138,7 @@ class Ios
 
         $detector->detectVersion($searches);
 
-        $doMatch = preg_match('/CPU like Mac OS X/', $this->_useragent, $matches);
+        $doMatch = preg_match('/CPU like Mac OS X/', $this->useragent, $matches);
 
         if ($doMatch) {
             $detector->setVersion('1.0');
@@ -203,7 +203,7 @@ class Ios
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

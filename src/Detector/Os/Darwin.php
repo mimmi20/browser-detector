@@ -100,7 +100,7 @@ class Darwin
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         $searches = array('Darwin');
 
@@ -157,7 +157,7 @@ class Darwin
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

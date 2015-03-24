@@ -68,7 +68,7 @@ abstract class Core implements InputInterface
      *
      * @var string
      */
-    protected $_agent = '';
+    protected $agent = '';
 
     /**
      * sets the cache used to make the detection faster
@@ -155,7 +155,7 @@ abstract class Core implements InputInterface
      */
     public function setAgent($userAgent)
     {
-        $this->_agent = $userAgent;
+        $this->agent = $userAgent;
 
         return $this;
     }
@@ -167,7 +167,7 @@ abstract class Core implements InputInterface
      */
     public function getAgent()
     {
-        return $this->_agent;
+        return $this->agent;
     }
 
     /**

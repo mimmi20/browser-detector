@@ -40,7 +40,7 @@ class Utils
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = '';
+    private $useragent = '';
 
     /**
      * sets the user agent to be handled
@@ -51,7 +51,7 @@ class Utils
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
 
         return $this;
     }
@@ -81,10 +81,10 @@ class Utils
         }
 
         if ($ci) {
-            return stripos($this->_useragent, strtolower($needle)) !== false;
+            return stripos($this->useragent, strtolower($needle)) !== false;
         }
 
-        return strpos($this->_useragent, $needle) !== false;
+        return strpos($this->useragent, $needle) !== false;
     }
 
     /**
@@ -131,9 +131,9 @@ class Utils
         }
 
         if ($ci) {
-            return stripos($this->_useragent, $needle) === 0;
+            return stripos($this->useragent, $needle) === 0;
         }
 
-        return strpos($this->_useragent, $needle) === 0;
+        return strpos($this->useragent, $needle) === 0;
     }
 }

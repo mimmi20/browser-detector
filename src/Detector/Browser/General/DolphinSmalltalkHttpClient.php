@@ -75,7 +75,7 @@ class DolphinSmalltalkHttpClient
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Dolphin http client'))) {
+        if (!$this->utils->checkIfContains(array('dolphin http client'), true)) {
             return false;
         }
 

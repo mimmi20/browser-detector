@@ -94,7 +94,11 @@ class HuaweiMediaPad10Link
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('MediaPad 10 LINK'))) {
+        if (!$this->utils->checkIfContains(array('mediapad 10 link'), true)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('mediapad 10 link+'), true)) {
             return false;
         }
 

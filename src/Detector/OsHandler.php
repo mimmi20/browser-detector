@@ -47,7 +47,7 @@ abstract class OsHandler
     /**
      * @var string the user agent to handle
      */
-    protected $_useragent = '';
+    protected $useragent = '';
 
     /**
      * @var \BrowserDetector\Helper\Utils the helper class
@@ -71,7 +71,7 @@ abstract class OsHandler
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;
@@ -134,7 +134,7 @@ abstract class OsHandler
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         return $detector->setVersion('');
     }

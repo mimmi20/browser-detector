@@ -109,7 +109,9 @@ class HtcDesire
             'Desire S',
             'Desire X',
             'Desire_S',
-            'Desire_500'
+            'Desire_310',
+            'Desire 310',
+            'Desire_500',
         );
 
         if ($this->utils->checkIfContains($specialHtcDesire)) {

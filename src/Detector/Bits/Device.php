@@ -50,7 +50,7 @@ class Device
     /**
      * @var string the bits of the detected browser
      */
-    private $_bits = null;
+    private $bits = null;
 
     /**
      * @var Utils
@@ -94,7 +94,7 @@ class Device
 
         $this->detectBits();
 
-        return $this->_bits;
+        return $this->bits;
     }
 
     /**
@@ -110,26 +110,26 @@ class Device
             true
         )
         ) {
-            $this->_bits = '64';
+            $this->bits = '64';
 
             return $this;
         }
 
         // old deprecated 16 bit windows systems
         if ($this->utils->checkIfContains(array('win3.1', 'windows 3.1'), true)) {
-            $this->_bits = '16';
+            $this->bits = '16';
 
             return $this;
         }
 
         // old deprecated 8 bit systems
         if ($this->utils->checkIfContains(array('cp/m', '8-bit'), true)) {
-            $this->_bits = '8';
+            $this->bits = '8';
 
             return $this;
         }
 
-        $this->_bits = '32';
+        $this->bits = '32';
 
         return $this;
     }

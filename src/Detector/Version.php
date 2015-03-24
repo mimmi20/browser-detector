@@ -114,37 +114,37 @@ class Version
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = null;
+    private $useragent = null;
 
     /**
      * @var string the detected complete version
      */
-    private $_version = null;
+    private $version = null;
 
     /**
      * @var string the detected major version
      */
-    private $_major = null;
+    private $major = null;
 
     /**
      * @var string the detected minor version
      */
-    private $_minor = null;
+    private $minor = null;
 
     /**
      * @var string the detected micro version
      */
-    private $_micro = null;
+    private $micro = null;
 
     /**
      * @var string the default version
      */
-    private $_default = '';
+    private $default = '';
 
     /**
      * @var integer
      */
-    private $_mode = self::COMPLETE;
+    private $mode = self::COMPLETE;
 
     /**
      * magic function needed to reconstruct the class from a var_export
@@ -173,10 +173,10 @@ class Version
     {
         return serialize(
             array(
-                'version'   => $this->_version,
-                'mode'      => $this->_mode,
-                'useragent' => $this->_useragent,
-                'default'   => $this->_default
+                'version'   => $this->version,
+                'mode'      => $this->mode,
+                'useragent' => $this->useragent,
+                'default'   => $this->default
             )
         );
     }
@@ -190,12 +190,12 @@ class Version
     {
         $unseriliazedData = unserialize($data);
 
-        $this->_version   = $unseriliazedData['version'];
-        $this->_mode      = $unseriliazedData['mode'];
-        $this->_useragent = $unseriliazedData['useragent'];
-        $this->_default   = $unseriliazedData['default'];
+        $this->version   = $unseriliazedData['version'];
+        $this->mode      = $unseriliazedData['mode'];
+        $this->useragent = $unseriliazedData['useragent'];
+        $this->default   = $unseriliazedData['default'];
 
-        $this->setVersion($this->_version);
+        $this->setVersion($this->version);
     }
 
     /**
@@ -207,7 +207,7 @@ class Version
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
 
         return $this;
     }
@@ -221,7 +221,7 @@ class Version
      */
     public function setMode($mode)
     {
-        $this->_mode = $mode;
+        $this->mode = $mode;
 
         return $this;
     }
@@ -242,7 +242,7 @@ class Version
             );
         }
 
-        $this->_default = $version;
+        $this->default = $version;
     }
 
     public function __toString()
@@ -266,33 +266,33 @@ class Version
      */
     public function getVersion($mode = null)
     {
-        if (null === $this->_version) {
-            if (null === $this->_useragent) {
+        if (null === $this->version) {
+            if (null === $this->useragent) {
                 throw new \UnexpectedValueException(
                     'You have to set the useragent before calling this function'
                 );
             }
 
             $this->detectVersion();
-        } elseif (null === $this->_major) {
-            $this->setVersion($this->_version);
+        } elseif (null === $this->major) {
+            $this->setVersion($this->version);
         }
 
         if (null === $mode) {
-            $mode = $this->_mode;
+            $mode = $this->mode;
         }
 
         $versions = array();
         if (self::MAJORONLY & $mode) {
-            $versions[0] = $this->_major;
+            $versions[0] = $this->major;
         }
 
         if (self::MINORONLY & $mode) {
-            $versions[1] = $this->_minor;
+            $versions[1] = $this->minor;
         }
 
         if (self::MICROONLY & $mode) {
-            $versions[2] = $this->_micro;
+            $versions[2] = $this->micro;
         }
 
         $microIsEmpty = false;
@@ -367,11 +367,11 @@ class Version
         $version  = trim(trim(str_replace('_', '.', $version)), '.');
         $splitted = explode('.', $version, 3);
 
-        $this->_major = (!empty($splitted[0]) ? $splitted[0] : '0');
-        $this->_minor = (!empty($splitted[1]) ? $splitted[1] : '0');
-        $this->_micro = (!empty($splitted[2]) ? $splitted[2] : '0');
+        $this->major = (!empty($splitted[0]) ? $splitted[0] : '0');
+        $this->minor = (!empty($splitted[1]) ? $splitted[1] : '0');
+        $this->micro = (!empty($splitted[2]) ? $splitted[2] : '0');
 
-        $this->_version = $version;
+        $this->version = $version;
 
         return $this;
     }
@@ -405,8 +405,8 @@ class Version
         );
 
         /** @var $version string */
-        $version   = $this->_default;
-        $useragent = $this->_useragent;
+        $version   = $this->default;
+        $useragent = $this->useragent;
 
         if (false !== strpos($useragent, '%')) {
             $useragent = urldecode($useragent);
@@ -454,7 +454,7 @@ class Version
      */
     public function isAlpha()
     {
-        return (false !== strpos($this->_version, 'a'));
+        return (false !== strpos($this->version, 'a'));
     }
 
     /**
@@ -464,6 +464,6 @@ class Version
      */
     public function isBeta()
     {
-        return (false !== strpos($this->_version, 'b'));
+        return (false !== strpos($this->version, 'b'));
     }
 }

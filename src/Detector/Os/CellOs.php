@@ -83,7 +83,7 @@ class CellOs
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         return $detector->setVersion('0.0');
     }
@@ -121,7 +121,7 @@ class CellOs
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

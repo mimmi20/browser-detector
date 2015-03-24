@@ -224,7 +224,7 @@ class Trident
             return false;
         }
 
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
             if ($matches[1] < 7 && $this->utils->checkIfContains('Gecko')) {
@@ -274,16 +274,16 @@ class Trident
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
             return $detector->setVersion($matches[1]);
         }
 
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
             $version = '';

@@ -143,6 +143,7 @@ class SonyEricsson
             'sgp312',
             'sgp321',
             'sgp511',
+            'sgp512',
             'sgp521',
             'sgpt12',
             'sgpt13',

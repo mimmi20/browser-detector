@@ -40,7 +40,7 @@ class Windows
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = '';
+    private $useragent = '';
 
     /**
      * @var \BrowserDetector\Helper\Utils the helper class
@@ -66,7 +66,7 @@ class Windows
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;
@@ -83,7 +83,7 @@ class Windows
         );
 
         $spamHelper = new SpamCrawlerFake();
-        $spamHelper->setUserAgent($this->_useragent);
+        $spamHelper->setUserAgent($this->useragent);
 
         if ($this->utils->checkIfContains($isNotReallyAWindows)
             || (!$spamHelper->isAnonymized() && $spamHelper->isFakeWindows())

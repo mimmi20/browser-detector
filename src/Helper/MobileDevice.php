@@ -40,7 +40,7 @@ class MobileDevice
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = '';
+    private $useragent = '';
 
     /**
      * @var \BrowserDetector\Helper\Utils the helper class
@@ -66,7 +66,7 @@ class MobileDevice
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;
@@ -77,7 +77,7 @@ class MobileDevice
      *
      * @return bool
      */
-    public function isMobileBrowser()
+    public function isMobile()
     {
         /**
          * @var array Collection of mobile browser keywords
@@ -202,15 +202,22 @@ class MobileDevice
             return true;
         }
 
-        $doMatch = preg_match('/\d+\*\d+/', $this->_useragent);
+        $doMatch = preg_match('/\d+\*\d+/', $this->useragent);
         if ($doMatch) {
             return true;
         }
 
         $helper = new FirefoxOs();
-        $helper->setUserAgent($this->_useragent);
+        $helper->setUserAgent($this->useragent);
 
         if ($helper->isFirefoxOs()) {
+            return true;
+        }
+
+        $windowsHelper = new Windows();
+        $windowsHelper->setUserAgent($this->useragent);
+
+        if ($windowsHelper->isWindows() && $this->utils->checkIfContains('touch', true)) {
             return true;
         }
 

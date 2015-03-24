@@ -80,7 +80,7 @@ class Irix
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         $searches = array('IRIX');
 

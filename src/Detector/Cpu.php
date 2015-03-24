@@ -45,12 +45,12 @@ class Cpu
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = null;
+    private $useragent = null;
 
     /**
      * @var string the bits of the detected browser
      */
-    private $_cpu = null;
+    private $cpu = null;
 
     /**
      * sets the user agent to be handled
@@ -61,24 +61,24 @@ class Cpu
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
 
         return $this;
     }
 
     public function getCpu()
     {
-        if (null === $this->_useragent) {
+        if (null === $this->useragent) {
             throw new \UnexpectedValueException(
                 'You have to set the useragent before calling this function'
             );
         }
 
-        if (null === $this->_cpu) {
+        if (null === $this->cpu) {
             $this->detectCpu();
         }
 
-        return $this->_cpu;
+        return $this->cpu;
     }
 
     /**
@@ -89,51 +89,51 @@ class Cpu
     private function detectCpu()
     {
         $utils = new Utils();
-        $utils->setUserAgent($this->_useragent);
+        $utils->setUserAgent($this->useragent);
 
         // Intel 64 bits
         if ($utils->checkIfContains(array('x64', 'x86_64'))) {
-            $this->_cpu = 'Intel X64';
+            $this->cpu = 'Intel X64';
 
             return $this;
         }
 
         // AMD 64 Bits
         if ($utils->checkIfContains(array('amd64', 'AMD64'))) {
-            $this->_cpu = 'AMD X64';
+            $this->cpu = 'AMD X64';
 
             return $this;
         }
 
         // PPC 64 Bits
         if ($utils->checkIfContains(array('ppc64'), true)) {
-            $this->_cpu = 'PPC X64';
+            $this->cpu = 'PPC X64';
 
             return $this;
         }
 
         // Intel X86
         if ($utils->checkIfContains(array('i586', 'i686', 'i386', 'i486', 'i86'))) {
-            $this->_cpu = 'Intel X86';
+            $this->cpu = 'Intel X86';
 
             return $this;
         }
 
         // PPC 64 Bits
         if ($utils->checkIfContains(array('ppc'), true)) {
-            $this->_cpu = 'PPC';
+            $this->cpu = 'PPC';
 
             return $this;
         }
 
         // ARM
         if ($utils->checkIfContains(array('arm'), true)) {
-            $this->_cpu = 'ARM';
+            $this->cpu = 'ARM';
 
             return $this;
         }
 
-        $this->_cpu = '';
+        $this->cpu = '';
 
         return $this;
     }

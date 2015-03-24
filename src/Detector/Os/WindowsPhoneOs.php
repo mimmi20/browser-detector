@@ -67,12 +67,12 @@ class WindowsPhoneOs
     public function canHandle()
     {
         $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->_useragent);
+        $mobileDeviceHelper->setUserAgent($this->useragent);
 
         $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($this->_useragent);
+        $windowsHelper->setUserAgent($this->useragent);
 
-        if (!$windowsHelper->isMobileWindows() && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobileBrowser(
+        if (!$windowsHelper->isMobileWindows() && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobile(
                 ))
         ) {
             return false;
@@ -85,7 +85,7 @@ class WindowsPhoneOs
             return false;
         }
 
-        $doMatch = preg_match('/Windows Phone ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows Phone ([\d\.]+)/', $this->useragent, $matches);
         if ($doMatch && $matches[1] < 7) {
             return false;
         }
@@ -111,7 +111,7 @@ class WindowsPhoneOs
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             return $detector->setVersion('7.5');
@@ -166,7 +166,7 @@ class WindowsPhoneOs
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

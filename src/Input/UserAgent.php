@@ -125,7 +125,7 @@ class UserAgent
         );
 
         $result = new Result();
-        $result->setCapability('useragent', $this->_agent);
+        $result->setCapability('useragent', $this->agent);
 
         $result->setDetectionResult(
             $this->device,
@@ -151,7 +151,7 @@ class UserAgent
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_agent);
+        $chain->setUserAgent($this->agent);
         $chain->setNamespace('\BrowserDetector\Detector\Device');
         $chain->setHandlers($handlersToUse);
         $chain->setDefaultHandler(new UnknownDevice());
@@ -173,7 +173,7 @@ class UserAgent
     private function detectOs()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_agent);
+        $chain->setUserAgent($this->agent);
         $chain->setNamespace('\BrowserDetector\Detector\Os');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
@@ -191,7 +191,7 @@ class UserAgent
     private function detectBrowser()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_agent);
+        $chain->setUserAgent($this->agent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR
@@ -209,7 +209,7 @@ class UserAgent
     private function detectEngine()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->_agent);
+        $chain->setUserAgent($this->agent);
         $chain->setNamespace('\BrowserDetector\Detector\Engine');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Engine' . DIRECTORY_SEPARATOR

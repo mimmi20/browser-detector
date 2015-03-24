@@ -49,7 +49,7 @@ abstract class EngineHandler
     /**
      * @var string the user agent to handle
      */
-    protected $_useragent = '';
+    protected $useragent = '';
 
     /**
      * the detected browser properties
@@ -548,7 +548,7 @@ abstract class EngineHandler
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;
@@ -572,7 +572,7 @@ abstract class EngineHandler
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         return $detector->setVersion('');
     }

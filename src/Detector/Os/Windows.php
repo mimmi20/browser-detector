@@ -58,7 +58,7 @@ class Windows
     public function canHandle()
     {
         $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($this->_useragent);
+        $windowsHelper->setUserAgent($this->useragent);
 
         if ($windowsHelper->isMobileWindows()) {
             return false;
@@ -93,7 +93,7 @@ class Windows
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
         if ($this->utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'))) {
@@ -112,7 +112,7 @@ class Windows
             return $detector->setVersion('NT');
         }
 
-        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
             switch ($matches[1]) {
@@ -138,7 +138,7 @@ class Windows
                     break;
                 case '5.2':
                     $bits = new Os();
-                    $bits->setUserAgent($this->_useragent);
+                    $bits->setUserAgent($this->useragent);
                     if ($bits->getBits() == 32) {
                         $version = '2003';
                     } else {
@@ -161,7 +161,7 @@ class Windows
             return $detector->setVersion($version);
         }
 
-        $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->_useragent, $matches);
+        $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
             switch ($matches[1]) {
@@ -192,7 +192,7 @@ class Windows
                     break;
                 case '5.2':
                     $bits = new Os();
-                    $bits->setUserAgent($this->_useragent);
+                    $bits->setUserAgent($this->useragent);
                     if ($bits->getBits() == 32) {
                         $version = '2003';
                     } else {

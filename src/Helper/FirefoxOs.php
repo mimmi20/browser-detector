@@ -40,7 +40,7 @@ class FirefoxOs
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = '';
+    private $useragent = '';
 
     /**
      * @var \BrowserDetector\Helper\Utils the helper class
@@ -66,7 +66,7 @@ class FirefoxOs
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;
@@ -83,7 +83,7 @@ class FirefoxOs
             return false;
         }
 
-        $doMatch = preg_match('/^Mozilla\/5\.0 \(.*(Mobile|Tablet); rv:(\d+\.\d+).*\) Gecko\/(\d+\.\d+).* Firefox\/(\d+\.\d+).*/', $this->_useragent, $matches);
+        $doMatch = preg_match('/^Mozilla\/5\.0 \(.*(Mobile|Tablet); rv:(\d+\.\d+).*\) Gecko\/(\d+\.\d+).* Firefox\/(\d+\.\d+).*/', $this->useragent, $matches);
 
         if (!$doMatch) {
             return false;

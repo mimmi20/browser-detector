@@ -100,7 +100,7 @@ class RimOs
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->_useragent);
+        $detector->setUserAgent($this->useragent);
 
         $searches = array('BlackBerry[0-9a-z]+', 'BlackBerrySimulator');
 
@@ -148,7 +148,7 @@ class RimOs
         );
 
         $chain = new Chain();
-        $chain->setUserAgent($this->_useragent);
+        $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
         $chain->setDefaultHandler(new UnknownBrowser());
 

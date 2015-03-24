@@ -103,7 +103,7 @@ class Opera
         $helper = new MobileDevice();
         $helper->setUserAgent($this->useragent);
 
-        if ($helper->isMobileBrowser()) {
+        if ($helper->isMobile()) {
             return false;
         }
 

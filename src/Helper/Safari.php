@@ -40,7 +40,7 @@ class Safari
     /**
      * @var string the user agent to handle
      */
-    private $_useragent = '';
+    private $useragent = '';
 
     /**
      * @var \BrowserDetector\Helper\Utils the helper class
@@ -66,7 +66,7 @@ class Safari
      */
     public function setUserAgent($userAgent)
     {
-        $this->_useragent = $userAgent;
+        $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
 
         return $this;
@@ -162,9 +162,9 @@ class Safari
         }
 
         $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->_useragent);
+        $mobileDeviceHelper->setUserAgent($this->useragent);
 
-        if (!$mobileDeviceHelper->isMobileBrowser()) {
+        if (!$mobileDeviceHelper->isMobile()) {
             return false;
         }
 

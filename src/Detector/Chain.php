@@ -41,19 +41,19 @@ use DirectoryIterator;
 class Chain
 {
     /** @var array */
-    private $_handlersToUse = array();
+    private $handlersToUse = array();
 
     /** @var mixed */
-    private $_defaultHandler = null;
+    private $defaultHandler = null;
 
     /** @var string */
-    private $_directory = '';
+    private $directory = '';
 
     /** @var string */
-    private $_namespace = '';
+    private $namespace = '';
 
     /** @var string */
-    private $_userAgent = '';
+    private $userAgent = '';
 
     /**
      * sets the cache used to make the detection faster
@@ -64,7 +64,7 @@ class Chain
      */
     public function setDefaultHandler($handler)
     {
-        $this->_defaultHandler = $handler;
+        $this->defaultHandler = $handler;
 
         return $this;
     }
@@ -78,7 +78,7 @@ class Chain
      */
     public function setHandlers(array $handlersToUse)
     {
-        $this->_handlersToUse = $handlersToUse;
+        $this->handlersToUse = $handlersToUse;
 
         return $this;
     }
@@ -92,7 +92,7 @@ class Chain
      */
     public function setDirectory($directory)
     {
-        $this->_directory = $directory;
+        $this->directory = $directory;
 
         return $this;
     }
@@ -106,7 +106,7 @@ class Chain
      */
     public function setNamespace($namespace)
     {
-        $this->_namespace = $namespace;
+        $this->namespace = $namespace;
 
         return $this;
     }
@@ -120,7 +120,7 @@ class Chain
      */
     public function setUserAgent($agent)
     {
-        $this->_userAgent = $agent;
+        $this->userAgent = $agent;
 
         return $this;
     }
@@ -134,15 +134,15 @@ class Chain
     {
         $chain = new \SplPriorityQueue();
 
-        if (!empty($this->_handlersToUse)) {
-            foreach ($this->_handlersToUse as $handler) {
+        if (!empty($this->handlersToUse)) {
+            foreach ($this->handlersToUse as $handler) {
                 $chain->insert($handler, $handler->getWeight());
             }
         }
 
-        if (!empty($this->_directory)) {
+        if (!empty($this->directory)) {
             // get all Handlers from the directory
-            $iterator = new DirectoryIterator($this->_directory);
+            $iterator = new DirectoryIterator($this->directory);
             $utils    = new Classname();
 
             foreach ($iterator as $fileinfo) {
@@ -155,7 +155,7 @@ class Chain
 
                 $className = $utils->getClassNameFromFile(
                     $filename,
-                    $this->_namespace,
+                    $this->namespace,
                     true
                 );
 
@@ -174,7 +174,7 @@ class Chain
 
             while ($chain->valid()) {
                 $handler = $chain->current();
-                $handler->setUserAgent($this->_userAgent);
+                $handler->setUserAgent($this->userAgent);
 
                 if ($handler->canHandle()) {
                     return $handler;
@@ -184,20 +184,20 @@ class Chain
             }
         }
 
-        if (null !== $this->_defaultHandler && is_object($this->_defaultHandler)
+        if (null !== $this->defaultHandler && is_object($this->defaultHandler)
         ) {
-            $handler = $this->_defaultHandler;
+            $handler = $this->defaultHandler;
         } else {
             $utils     = new Classname();
             $className = $utils->getClassNameFromFile(
                 'Unknown',
-                $this->_namespace,
+                $this->namespace,
                 true
             );
             $handler   = new $className();
         }
 
-        $handler->setUserAgent($this->_userAgent);
+        $handler->setUserAgent($this->userAgent);
 
         return $handler;
     }

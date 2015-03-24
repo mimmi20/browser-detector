@@ -58,7 +58,7 @@ class SamsungGts7390
         'model_name'             => 'GT-S7390',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Trend Lite',
-        'has_qwerty_keyboard'    => false,
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,

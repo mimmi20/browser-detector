@@ -104,7 +104,7 @@ class GeneralMobile
         $mobileDeviceHelper = new MobileDevice();
         $mobileDeviceHelper->setUserAgent($this->useragent);
 
-        if ($mobileDeviceHelper->isMobileBrowser()) {
+        if ($mobileDeviceHelper->isMobile()) {
             return true;
         }
 

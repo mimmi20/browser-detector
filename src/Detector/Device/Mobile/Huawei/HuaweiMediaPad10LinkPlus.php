@@ -46,7 +46,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HuaweiMediaPad
+class HuaweiMediaPad10LinkPlus
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,27 +56,27 @@ class HuaweiMediaPad
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_mediapad_ver1_suban40', // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
         'model_name'             => 'S7-301w',
-        'model_extra_info'       => 'aka T-Mobile Springboard',
-        'marketing_name'         => 'MediaPad',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'MediaPad 10 Link+',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://wap.huawei.com/uaprof/HuaweiMediaPadWIFIOnl',
+        'uaprof'                 => null,
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 151,
-        'physical_screen_height' => 95,
-        'columns'                => 80,
-        'rows'                   => 25,
-        'max_image_width'        => 980,
-        'max_image_height'       => 472,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
@@ -94,11 +94,7 @@ class HuaweiMediaPad
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HUAWEI MediaPad', 'MediaPad'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('mediapad 7 lite', 'mediapad 10 link', 'mediapad m1 8.0'), true)) {
+        if (!$this->utils->checkIfContains(array('mediapad 10 link+'), true)) {
             return false;
         }
 
@@ -182,18 +178,21 @@ class HuaweiMediaPad
             Version::MAJORMINOR
         );
 
+        if (2.3 == $osVersion) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        }
+
         switch ($browser->getName()) {
             case 'Android Webkit':
                 switch ((float)$osVersion) {
                     case 4.1:
-                        $this->setCapability('wurflKey', 'huawei_mediapad10_link_ver1_suban41');
-                        break;
                     case 2.1:
                     case 2.2:
                     case 2.3:
                     case 3.1:
                     case 3.2:
                     case 4.0:
+                    case 4.2:
                     default:
                         // nothing to do here
                         break;
@@ -208,6 +207,7 @@ class HuaweiMediaPad
                     case 2.3:
                     case 3.1:
                     case 3.2:
+                    case 4.0:
                     case 4.1:
                     case 4.2:
                     default:
