@@ -86,7 +86,7 @@ class Maxthon
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Maxthon', 'MyIE', 'MxBrowser'))) {
+        if (!$this->utils->checkIfContains(array('maxthon', 'myie', 'mxbrowser'), true)) {
             return false;
         }
 

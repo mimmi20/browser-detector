@@ -79,7 +79,12 @@ class Nbot
             return false;
         }
 
-        if ($this->utils->checkIfContains('msnbot')) {
+        $otherBots = array(
+            'msnbot',
+            'finbot'
+        );
+
+        if ($this->utils->checkIfContains($otherBots)) {
             return false;
         }
 

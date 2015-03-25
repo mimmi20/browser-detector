@@ -79,7 +79,7 @@ class Python
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Python-urllib'))) {
+        if ($this->utils->checkIfContains(array('python-urllib', 'python-requests'), true)) {
             return false;
         }
 
@@ -103,7 +103,7 @@ class Python
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\PythonSoftwareFoundation();
     }
 
     /**

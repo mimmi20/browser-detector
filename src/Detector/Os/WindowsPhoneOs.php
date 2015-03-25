@@ -72,16 +72,15 @@ class WindowsPhoneOs
         $windowsHelper = new WindowsHelper();
         $windowsHelper->setUserAgent($this->useragent);
 
-        if (!$windowsHelper->isMobileWindows() && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobile(
-                ))
+        if (!$windowsHelper->isMobileWindows()
+            && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobile())
         ) {
             return false;
         }
 
-        if (!$this->utils->checkIfContains(
-            array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone', 'WPDesktop')
-        )
-        ) {
+        $winPhoneCodes = array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone', 'WPDesktop');
+
+        if (!$this->utils->checkIfContains($winPhoneCodes)) {
             return false;
         }
 

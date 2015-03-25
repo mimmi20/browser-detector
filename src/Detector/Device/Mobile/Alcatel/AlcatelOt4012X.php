@@ -28,15 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
-use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Os\FirefoxOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -45,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia
+class AlcatelOt4012X
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -58,9 +55,9 @@ class NokiaLumia
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lumia',
+        'model_name'             => 'OT-4012X',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lumia',
+        'marketing_name'         => 'One Touch Fire',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -76,9 +73,9 @@ class NokiaLumia
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
@@ -93,28 +90,9 @@ class NokiaLumia
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia', true)) {
-            return false;
-        }
+        $firePhones = array('Alcatel-OT-4012X', 'ALCATEL ONE TOUCH 4012X', 'ALCATELOneTouch4012X');
 
-        $specialLumias = array(
-            'nokia; lumia 520',
-            'nokia; lumia 610',
-            'nokia; lumia 620',
-            'nokia; lumia 710',
-            'nokia; lumia 720',
-            'nokia; lumia 730',
-            'nokia; lumia 800',
-            'nokia; lumia 820',
-            'nokia; lumia 900',
-            'nokia; lumia 920',
-            'nokia; lumia 925',
-            'nokia; lumia 930',
-            'nokia; lumia 1320',
-            'nokia; lumia 1520',
-        );
-
-        if ($this->utils->checkIfContains($specialLumias, true)) {
+        if (!$this->utils->checkIfContains($firePhones)) {
             return false;
         }
 
@@ -148,7 +126,7 @@ class NokiaLumia
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Alcatel();
     }
 
     /**
@@ -158,39 +136,19 @@ class NokiaLumia
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Alcatel();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new WindowsPhoneOs();
+        $handler = new FirefoxOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        return $this;
     }
 }

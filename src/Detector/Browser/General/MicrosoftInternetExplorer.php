@@ -136,6 +136,7 @@ class MicrosoftInternetExplorer
             'wpdesktop',
             'htc_hd2',
             'gomezagent',
+            'deepnet explorer',
             // Fakes / Bots
             'msiecrawler',
             'mac; mac os ',

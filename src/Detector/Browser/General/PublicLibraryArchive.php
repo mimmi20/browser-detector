@@ -89,7 +89,7 @@ class PublicLibraryArchive
      */
     public function getName()
     {
-        return 'publiclibraryarchive';
+        return 'publiclibraryarchive Bot';
     }
 
     /**

@@ -94,7 +94,8 @@ class Xiaomi
     {
         $XiaomiPhones = array(
             'Xiaomi',
-            'MI 2'
+            'MI 2',
+            'MI 3W',
         );
 
         if ($this->utils->checkIfContains($XiaomiPhones)) {

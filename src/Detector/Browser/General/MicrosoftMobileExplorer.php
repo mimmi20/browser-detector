@@ -93,7 +93,6 @@ class MicrosoftMobileExplorer
             'Flock',
             'MyIE',
             //others
-            'Chrome',
             'Linux',
             'MSOffice',
             'Outlook',

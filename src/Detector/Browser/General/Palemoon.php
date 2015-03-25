@@ -96,7 +96,6 @@ class Palemoon
             // other Browsers
             'AppleWebKit',
             'Chrome',
-            'Linux',
             'MSOffice',
             'Outlook',
             'IEMobile',

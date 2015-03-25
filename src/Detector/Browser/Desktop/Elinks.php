@@ -28,7 +28,9 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Company;
+namespace BrowserDetector\Detector\Browser\Desktop;
+
+use BrowserDetector\Detector\Browser\General\Elinks as ElinksBase;
 
 /**
  * @category  BrowserDetector
@@ -36,21 +38,9 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ahrefs
-    extends AbstractCompany
-    implements CompanyInterface
+class Elinks
+    extends ElinksBase
 {
-    /**
-     * the name of the company
-     *
-     * @var string
-     */
-    protected $name = 'Ahrefs Pte Ltd';
-
-    /**
-     * the brand name of the company
-     *
-     * @var string
-     */
-    protected $brandname = 'Ahrefs';
+    // nothing to do here
 }
+

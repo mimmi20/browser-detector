@@ -122,6 +122,7 @@ class Chrome
             'HubSpot Webcrawler',
             'GomezAgent',
             'TagInspector',
+            '360Spider',
             // Fakes
             'Mac; Mac OS '
         );

@@ -79,11 +79,12 @@ class FirefoxOs
     {
         if (!$this->utils->checkIfStartsWith('Mozilla/')
             || !$this->utils->checkIfContainsAll(array('rv:', 'Gecko', 'Firefox'))
+            || $this->utils->checkIfContains(array('android'), true)
         ) {
             return false;
         }
 
-        $doMatch = preg_match('/^Mozilla\/5\.0 \(.*(Mobile|Tablet); rv:(\d+\.\d+).*\) Gecko\/(\d+\.\d+).* Firefox\/(\d+\.\d+).*/', $this->useragent, $matches);
+        $doMatch = preg_match('/^Mozilla\/5\.0 \(.*(Mobile|Tablet);.*rv:(\d+\.\d+).*\) Gecko\/(\d+\.\d+).* Firefox\/(\d+\.\d+).*/', $this->useragent, $matches);
 
         if (!$doMatch) {
             return false;

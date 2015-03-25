@@ -96,7 +96,8 @@ class Alcatel
             'ALCATEL',
             'Alcatel',
             'Vodafone 975N',
-            'Vodafone Smart II'
+            'Vodafone Smart II',
+            'ONE TOUCH',
         );
 
         if ($this->utils->checkIfContains($alcatelPhones)) {

@@ -119,6 +119,7 @@ class SonyEricsson
             'd6603',
             'd5803',
             'd2303',
+            'd2005',
             'e10i',
             'e15i',
             'e15av',

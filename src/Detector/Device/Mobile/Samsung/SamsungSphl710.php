@@ -56,9 +56,9 @@ class SamsungSphl710
 
         // device
         'model_name'             => 'SPH-L710',
-        'model_extra_info'       => null,
+        'model_extra_info'       => 'for Sprint',
         'marketing_name'         => 'Galaxy S III',
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_sph_d710_ver1_suban40rom
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,

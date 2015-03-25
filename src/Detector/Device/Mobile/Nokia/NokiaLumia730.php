@@ -28,12 +28,15 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -42,7 +45,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyC6503XperiaZ
+class NokiaLumia730
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +58,9 @@ class SonyC6503XperiaZ
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'C6503',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Z',
+        'model_name'             => 'Lumia 730',
+        'model_extra_info'       => 'Dual Sim',
+        'marketing_name'         => 'Lumia 730',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -73,8 +76,8 @@ class SonyC6503XperiaZ
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1080,
-        'resolution_height'      => 1920,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         'colors'                 => 16777216,
         // sms
@@ -90,11 +93,7 @@ class SonyC6503XperiaZ
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonC6503', 'SonyC6503', 'C6503'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('SonyEricssonC6503v', 'SonyC6503v', 'C6503v'))) {
+        if (!$this->utils->checkIfContains('nokia; lumia 730', true)) {
             return false;
         }
 
@@ -128,7 +127,7 @@ class SonyC6503XperiaZ
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company\Nokia();
     }
 
     /**
@@ -138,19 +137,43 @@ class SonyC6503XperiaZ
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company\Nokia();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
     public function detectOs()
     {
-        $handler = new AndroidOs();
+        $handler = new WindowsPhoneOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia730
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        if ($this->utils->checkIfContains('vodafone', true)) {
+            $this->setCapability('model_extra_info', 'Vodafone branding');
+        }
+
+        return $this;
     }
 }

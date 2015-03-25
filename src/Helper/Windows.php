@@ -78,7 +78,6 @@ class Windows
             // other OS and Mobile Windows
             'Linux',
             'Macintosh',
-            'Mac OS X',
             'Mobi'
         );
 
@@ -130,7 +129,6 @@ class Windows
             // other OS
             'Linux',
             'Macintosh',
-            'Mac OS X',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAWindows)) {

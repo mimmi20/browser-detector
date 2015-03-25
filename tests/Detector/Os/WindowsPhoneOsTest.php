@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Os;
 
-use BrowserDetector\Detector\Os\FirefoxOs;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 
 /**
- * Test class for \BrowserDetector\Detector\Os\FirefoxOs
+ * Test class for \BrowserDetector\Detector\Os\WindowsPhoneOs
  */
-class FirefoxOsTest extends \PHPUnit_Framework_TestCase
+class WindowsPhoneOsTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Os\FirefoxOs
+     * @var \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
     private $object = null;
 
@@ -21,7 +21,7 @@ class FirefoxOsTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new FirefoxOs();
+        $this->object = new WindowsPhoneOs();
     }
 
     /**
@@ -38,7 +38,7 @@ class FirefoxOsTest extends \PHPUnit_Framework_TestCase
     public function providerCanHandlePositive()
     {
         return array(
-            array('Mozilla/5.0 (Mobile; ALCATELOneTouch4012X/SVN 01010B; rv:18.1) Gecko/18.1 Firefox/18.1'),
+            array('Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 535) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537'),
         );
     }
 
@@ -57,11 +57,6 @@ class FirefoxOsTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array('Mozilla/5.0 (Linux; U; Android 4.3; de-de; SAMSUNG GT-I9305/I9305XXUEMKC Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'),
-            array('Mozilla/5.0 (Android; Tablet; rv:15.0) Gecko/15.0 Firefox/15.0.1'),
-            array('Mozilla/5.0 (Android; Mobile; rv:15.0) Gecko/15.0 Firefox/15.0'),
-            array('Mozilla/5.0 (Android; Tablet; rv:23.0) Gecko/23.0 Firefox/23.0'),
-            array('Mozilla/5.0 (Android; Mobile; rv:16.0) Gecko/16.0 Firefox/16.0'),
-            array('Mozilla/5.0 (Android; Tablet; rv:24.0) Gecko/24.0 Firefox/24.0'),
         );
     }
 

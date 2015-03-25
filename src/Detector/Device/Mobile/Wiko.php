@@ -96,6 +96,7 @@ class Wiko
             'Wiko',
             'RAINBOW',
             'GETAWAY',
+            'DARKMOON',
         );
 
         if (!$this->utils->checkIfContains($phones)) {

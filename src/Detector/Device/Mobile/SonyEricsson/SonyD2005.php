@@ -28,16 +28,17 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia
+class SonyD2005
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -58,9 +59,9 @@ class NokiaLumia
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lumia',
+        'model_name'             => 'D2005',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lumia',
+        'marketing_name'         => 'D2005',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -76,10 +77,10 @@ class NokiaLumia
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => 65536,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -93,28 +94,7 @@ class NokiaLumia
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia', true)) {
-            return false;
-        }
-
-        $specialLumias = array(
-            'nokia; lumia 520',
-            'nokia; lumia 610',
-            'nokia; lumia 620',
-            'nokia; lumia 710',
-            'nokia; lumia 720',
-            'nokia; lumia 730',
-            'nokia; lumia 800',
-            'nokia; lumia 820',
-            'nokia; lumia 900',
-            'nokia; lumia 920',
-            'nokia; lumia 925',
-            'nokia; lumia 930',
-            'nokia; lumia 1320',
-            'nokia; lumia 1520',
-        );
-
-        if ($this->utils->checkIfContains($specialLumias, true)) {
+        if (!$this->utils->checkIfContains(array('SonyEricssonD2005', 'SonyD2005', 'D2005'))) {
             return false;
         }
 
@@ -148,7 +128,7 @@ class NokiaLumia
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Sony();
     }
 
     /**
@@ -158,17 +138,17 @@ class NokiaLumia
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Sony();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new WindowsPhoneOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;
@@ -190,6 +170,59 @@ class NokiaLumia
         OsHandler $os
     ) {
         parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (2.3 == $osVersion) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        }
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                $this->setCapability('wurflKey', 'sony_D2005_ver1_subuachrome');
+
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'sony_D2005_ver1_suban44');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.0:
+                    case 4.1:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $this;
     }

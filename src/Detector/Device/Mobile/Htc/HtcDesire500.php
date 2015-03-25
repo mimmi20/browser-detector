@@ -94,7 +94,7 @@ class HtcDesire500
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Desire_500'))) {
+        if (!$this->utils->checkIfContains(array('Desire_500', 'Desire 500'))) {
             return false;
         }
 

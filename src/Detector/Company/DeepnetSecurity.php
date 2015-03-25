@@ -36,7 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ahrefs
+class DeepnetSecurity
     extends AbstractCompany
     implements CompanyInterface
 {
@@ -45,12 +45,12 @@ class Ahrefs
      *
      * @var string
      */
-    protected $name = 'Ahrefs Pte Ltd';
+    protected $name = 'Deepnet Security';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Ahrefs';
+    protected $brandname = 'Deepnet Security';
 }

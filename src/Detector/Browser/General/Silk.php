@@ -204,7 +204,9 @@ class Silk
         $engine->setCapability('max_url_length_in_requests', 128);
         $engine->setCapability('max_url_length_in_requests', 128);
 
-        if ($this->utils->checkIfContains('(Linux; U;')) {
+        if ($this->utils->checkIfContains('Linux; U;')
+            && !$this->utils->checkIfContains('android', true)
+        ) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
 

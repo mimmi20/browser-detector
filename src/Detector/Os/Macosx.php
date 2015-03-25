@@ -93,7 +93,18 @@ class Macosx
 
         $searches = array('Mac OS X', 'Mac OS X v');
 
-        return $detector->detectVersion($searches);
+        $detector->detectVersion($searches);
+
+        if ($detector->getVersion(Version::MAJORONLY) > 99) {
+            $versions = array();
+            $found    = preg_match('/(\d\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
+
+            if ($found) {
+                $detector->setVersion($versions[1] . '.' . $versions[2]);
+            }
+        }
+
+        return $detector;
     }
 
     /**

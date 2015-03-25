@@ -98,7 +98,12 @@ class Ios
             return false;
         }
 
-        if ($this->utils->checkIfContains('Darwin')) {
+        $otherOs = array(
+            'Darwin',
+            'Windows Phone'
+        );
+
+        if ($this->utils->checkIfContains($otherOs)) {
             return false;
         }
 
