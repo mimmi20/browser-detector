@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Browser\General\Bingbot;
+use BrowserDetector\Detector\Browser\General\Icab;
 use BrowserDetector\Detector\Browser\General\Maven;
 use BrowserDetector\Detector\Browser\Mobile\AppleMail;
 use BrowserDetector\Detector\Browser\Mobile\AtomicBrowser;
@@ -153,7 +154,8 @@ class Darwin
             new Incredimail(),
             new AppleMail(),
             new Coast(),
-            new QuickLook()
+            new QuickLook(),
+            new Icab(),
         );
 
         $chain = new Chain();

@@ -92,7 +92,6 @@ class Opera
             // Fakes
             'Mac; Mac OS ',
             'AppEngine-Google',
-            'NETTV',
             'InettvBrowser'
         );
 

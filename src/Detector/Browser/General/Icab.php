@@ -75,7 +75,7 @@ class Icab
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('iCab')) {
+        if (!$this->utils->checkIfContains(array('iCabMobile', 'iCab'))) {
             return false;
         }
 
@@ -144,7 +144,7 @@ class Icab
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('iCab');
+        $searches = array('iCabMobile', 'iCab');
 
         return $detector->detectVersion($searches);
     }

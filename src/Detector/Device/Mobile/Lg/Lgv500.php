@@ -28,15 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -45,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGts6312
+class Lgv500
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -58,9 +55,9 @@ class SamsungGts6312
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'GT-S6312',
+        'model_name'             => 'V500',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Young DUOS',
+        'marketing_name'         => 'V500',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -70,20 +67,20 @@ class SamsungGts6312
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 320,
-        'resolution_height'      => 480,
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 768,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -93,11 +90,7 @@ class SamsungGts6312
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-S6312')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('GT-S6312N')) {
+        if (!$this->utils->checkIfContains('LG-V500')) {
             return false;
         }
 
@@ -121,7 +114,7 @@ class SamsungGts6312
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -131,7 +124,7 @@ class SamsungGts6312
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company\Lg();
     }
 
     /**
@@ -141,7 +134,7 @@ class SamsungGts6312
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company\Lg();
     }
 
     /**
@@ -155,27 +148,5 @@ class SamsungGts6312
         $handler->setUseragent($this->useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
     }
 }
