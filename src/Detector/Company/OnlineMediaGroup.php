@@ -36,7 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Picsearch
+class OnlineMediaGroup
     extends AbstractCompany
     implements CompanyInterface
 {
@@ -45,12 +45,12 @@ class Picsearch
      *
      * @var string
      */
-    protected $name = 'Picsearch';
+    protected $name = 'Online Media Group, Inc.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Picsearch';
+    protected $brandname = 'Online Media Group';
 }

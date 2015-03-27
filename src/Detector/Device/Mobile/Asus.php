@@ -108,6 +108,7 @@ class Asus
             'ME302KL',
             'ME172V',
             'K00E',
+            'K00F',
             'K00Z',
             'ME372CG',
             'TF300T',

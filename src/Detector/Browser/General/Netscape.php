@@ -165,6 +165,8 @@ class Netscape
             'Yeti',
             'WinHttp',
             'naver',
+            'Feedfetcher-Google',
+            'feedfetcher',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

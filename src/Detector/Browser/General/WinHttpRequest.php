@@ -79,6 +79,10 @@ class WinHttpRequest
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('trendwinhttp'), true)) {
+            return false;
+        }
+
         return true;
     }
 

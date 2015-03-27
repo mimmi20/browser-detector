@@ -45,7 +45,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia
+class NokiaLumia635
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,12 +55,12 @@ class NokiaLumia
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'nokia_lumia_635_ver1', // not in wurfl
 
         // device
-        'model_name'             => 'Lumia',
+        'model_name'             => 'Lumia 635',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lumia',
+        'marketing_name'         => 'Lumia 635',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -76,10 +76,10 @@ class NokiaLumia
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => 65536,
+        'resolution_width'       => 480,
+        'resolution_height'      => 854,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -93,30 +93,7 @@ class NokiaLumia
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia', true)) {
-            return false;
-        }
-
-        $specialLumias = array(
-            'nokia; lumia 520',
-            'nokia; lumia 610',
-            'nokia; lumia 620',
-            'nokia; lumia 630',
-            'nokia; lumia 635',
-            'nokia; lumia 710',
-            'nokia; lumia 720',
-            'nokia; lumia 730',
-            'nokia; lumia 800',
-            'nokia; lumia 820',
-            'nokia; lumia 900',
-            'nokia; lumia 920',
-            'nokia; lumia 925',
-            'nokia; lumia 930',
-            'nokia; lumia 1320',
-            'nokia; lumia 1520',
-        );
-
-        if ($this->utils->checkIfContains($specialLumias, true)) {
+        if (!$this->utils->checkIfContains('nokia; lumia 635', true)) {
             return false;
         }
 
@@ -184,7 +161,7 @@ class NokiaLumia
      * @param \BrowserDetector\Detector\EngineHandler  $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia635
      */
     public function detectDependProperties(
         BrowserHandler $browser,

@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bot360
+class SmtBot
     extends BrowserHandler
 {
     /**
@@ -75,7 +75,7 @@ class Bot360
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('360Spider'))) {
+        if (!$this->utils->checkIfContains('SMTBot')) {
             return false;
         }
 
@@ -89,7 +89,7 @@ class Bot360
      */
     public function getName()
     {
-        return '360Spider';
+        return 'SMTBot';
     }
 
     /**
@@ -99,7 +99,7 @@ class Bot360
      */
     public function getManufacturer()
     {
-        return new Company\OnlineMediaGroup();
+        return new Company\Unknown();
     }
 
     /**
@@ -113,16 +113,6 @@ class Bot360
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 13827;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -132,20 +122,29 @@ class Bot360
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('360Spider');
+        $searches = array('SMTBot');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function detectEngine()
     {
-        $handler = new Webkit();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler;

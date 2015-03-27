@@ -39,6 +39,7 @@ use BrowserDetector\Detector\Browser\General\GooglePageSpeed;
 use BrowserDetector\Detector\Browser\General\GooglePageSpeedInsights;
 use BrowserDetector\Detector\Browser\General\GoogleSearchAppliance;
 use BrowserDetector\Detector\Browser\General\MsnBotMedia;
+use BrowserDetector\Detector\Browser\General\Ucweb;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
 use BrowserDetector\Detector\Browser\Mobile\DarwinBrowser;
 use BrowserDetector\Detector\Browser\Mobile\FacebookApp;
@@ -205,6 +206,7 @@ class Ios
             new MsnBotMedia(),
             new GoogleAdsbotMobile(),
             new BingPreview(),
+            new Ucweb(),
         );
 
         $chain = new Chain();

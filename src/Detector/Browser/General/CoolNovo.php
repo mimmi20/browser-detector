@@ -32,7 +32,11 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +46,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AppleMail
+class CoolNovo
     extends BrowserHandler
 {
     /**
@@ -75,75 +79,26 @@ class AppleMail
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfStartsWith('Mail')) {
-            return true;
-        }
-
-        if (!$this->utils->checkIfContains('Mozilla/') || $this->utils->checkIfContains(
-                'Safari'
-            ) || $this->utils->checkIfContains('Mobile')
-        ) {
+        if (!$this->utils->checkIfContains('Mozilla/')) {
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('AppleWebKit', 'CFNetwork'))) {
+        if (!$this->utils->checkIfContainsAll(array('CoolNovo'))) {
             return false;
         }
 
-        $isNotReallyAnAppleMailClient = array(
+        $isNotReallyAnChromium = array(
             // using also the KHTML rendering engine
-            '1Password',
-            'AdobeAIR',
-            'Arora',
-            'BlackBerry',
-            'BrowserNG',
-            'Chrome',
-            'Chromium',
-            'Dolfin',
-            'Dreamweaver',
-            'Epiphany',
-            'FBAN/',
-            'FBAV/',
-            'FBForIPhone',
             'Flock',
             'Galeon',
-            'Google Earth',
-            'iCab',
-            'Iron',
-            'konqueror',
             'Lunascape',
+            'Iron',
             'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Midori',
-            'MQQBrowser',
-            'NokiaBrowser',
-            'OmniWeb',
-            'Origin',
             'PaleMoon',
-            'PhantomJS',
-            'Qt',
-            'QuickLook',
-            'QupZilla',
-            'rekonq',
-            'Rockmelt',
-            'Silk',
-            'Shiira',
-            'WebBrowser',
-            'WebClip',
-            'WeTab',
-            'wOSBrowser',
-            //mobile Version
-            'Tablet',
-            'Android',
-            // Fakes/Bots
-            'Mac; Mac OS ',
-            'BingPreview',
-            'Mediapartners-Google',
-            'bot',
+            'Rockmelt'
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnAppleMailClient)) {
+        if ($this->utils->checkIfContains($isNotReallyAnChromium)) {
             return false;
         }
 
@@ -157,7 +112,7 @@ class AppleMail
      */
     public function getName()
     {
-        return 'Apple Mail';
+        return 'CoolNovo';
     }
 
     /**
@@ -167,7 +122,7 @@ class AppleMail
      */
     public function getManufacturer()
     {
-        return new Company\Apple();
+        return new Company\Unknown();
     }
 
     /**
@@ -177,17 +132,7 @@ class AppleMail
      */
     public function getBrowserType()
     {
-        return new BrowserType\EmailClient();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 115;
+        return new BrowserType\Browser();
     }
 
     /**
@@ -199,23 +144,108 @@ class AppleMail
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Mail');
+        $searches = array('CoolNovo');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 302204;
     }
 
     /**
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
     public function detectEngine()
     {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
+        $chrome = new Chrome();
+        $chrome->setUserAgent($this->useragent);
 
-        return $handler;
+        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if ($chromeVersion >= 28) {
+            $engine = new Blink();
+        } else {
+            $engine = new Webkit();
+        }
+
+        $engine->setUseragent($this->useragent);
+
+        return $engine;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\EngineHandler $engine
+     * @param \BrowserDetector\Detector\OsHandler     $os
+     * @param \BrowserDetector\Detector\DeviceHandler $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\Chrome
+     */
+    public function detectDependProperties(
+        EngineHandler $engine,
+        OsHandler $os,
+        DeviceHandler $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $osname = $os->getName();
+
+        if ('iOS' === $osname) {
+            $engine->setCapability('xhtml_format_as_css_property', true);
+            $this->setCapability('rss_support', true);
+        }
+
+        if ('Android' === $osname) {
+            $engine->setCapability('html_wi_imode_compact_generic', false);
+            $engine->setCapability('xhtml_avoid_accesskeys', true);
+            $engine->setCapability('xhtml_supports_forms_in_table', true);
+            $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        }
+
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if (!$device->getDeviceType()->isMobile()) {
+            $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        }
+
+        if ($version >= 11) {
+            $engine->setCapability('css_gradient', 'webkit');
+            $engine->setCapability('css_gradient_linear', 'none');
+            $engine->setCapability('css_border_image', 'none');
+            $engine->setCapability('css_rounded_corners', 'none');
+        }
+
+        if ($version >= 26) {
+            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+            $engine->setCapability('css_gradient', 'css3');
+            $engine->setCapability('svgt_1_1', true);
+        }
+
+        if ($version >= 31) {
+            $engine->setCapability('css_gradient_linear', 'css3');
+            $engine->setCapability('css_border_image', 'css3');
+            $engine->setCapability('css_rounded_corners', 'css3');
+        }
+
+        $this->setCapability('wurflKey', 'google_chrome_' . (int)$version);
+        $engine->setCapability('xhtml_table_support', false);
+
+        return $this;
     }
 }

@@ -114,6 +114,7 @@ class Chrome
             'Firefox',
             'Iceweasel',
             'Edge',
+            'CoolNovo',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',

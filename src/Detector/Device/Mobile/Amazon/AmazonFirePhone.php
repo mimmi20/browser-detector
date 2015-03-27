@@ -28,15 +28,15 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
-use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
-use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\Maemo;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -45,7 +45,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia
+class AmazonFirePhone
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,14 +55,15 @@ class NokiaLumia
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        'wurflKey'               => 'amazon_kindle_fire_ver1_suban40rom', // not in wurfl
 
         // device
-        'model_name'             => 'Lumia',
+        'model_name'             => 'SD4930UR', // wurflkey: amazon_kindle_fire_ver1_suban40rom
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lumia',
+        'marketing_name'         => 'Fire Phone', // wurflkey: amazon_kindle_fire_ver1_suban40rom
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
+        'pointing_method'        => 'touchscreen', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -79,7 +80,7 @@ class NokiaLumia
         'resolution_width'       => null,
         'resolution_height'      => null,
         'dual_orientation'       => null,
-        'colors'                 => 65536,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -93,30 +94,7 @@ class NokiaLumia
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia', true)) {
-            return false;
-        }
-
-        $specialLumias = array(
-            'nokia; lumia 520',
-            'nokia; lumia 610',
-            'nokia; lumia 620',
-            'nokia; lumia 630',
-            'nokia; lumia 635',
-            'nokia; lumia 710',
-            'nokia; lumia 720',
-            'nokia; lumia 730',
-            'nokia; lumia 800',
-            'nokia; lumia 820',
-            'nokia; lumia 900',
-            'nokia; lumia 920',
-            'nokia; lumia 925',
-            'nokia; lumia 930',
-            'nokia; lumia 1320',
-            'nokia; lumia 1520',
-        );
-
-        if ($this->utils->checkIfContains($specialLumias, true)) {
+        if (!$this->utils->checkIfContains(array('SD4930UR'))) {
             return false;
         }
 
@@ -150,7 +128,7 @@ class NokiaLumia
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Amazon();
     }
 
     /**
@@ -160,39 +138,26 @@ class NokiaLumia
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Amazon();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {
-        $handler = new WindowsPhoneOs();
-        $handler->setUseragent($this->useragent);
+        $os = array(
+            new AndroidOs(),
+            new Maemo()
+        );
 
-        return $handler;
-    }
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
 
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        return $this;
+        return $chain->detect();
     }
 }

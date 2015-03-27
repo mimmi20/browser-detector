@@ -36,7 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class So360cn
+class BobMottram
     extends AbstractCompany
     implements CompanyInterface
 {
@@ -45,12 +45,12 @@ class So360cn
      *
      * @var string
      */
-    protected $name = 'so.360.cn';
+    protected $name = 'Bob Mottram';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'so.360.cn';
+    protected $brandname = 'Bob Mottram';
 }

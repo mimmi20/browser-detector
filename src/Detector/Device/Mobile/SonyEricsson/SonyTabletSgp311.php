@@ -57,7 +57,7 @@ class SonyTabletSgp311
         // device
         'model_name'             => 'SGP311',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Tablet Z',
+        'marketing_name'         => 'Xperia Tablet Z LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

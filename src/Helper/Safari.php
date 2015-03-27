@@ -134,6 +134,7 @@ class Safari
             'WeTab',
             'wOSBrowser',
             'Skyfire',
+            'UCBrowser',
             //Bots
             'GSA',
             'GoogleBot',
@@ -141,6 +142,8 @@ class Safari
             'bingpreview',
             'spider-pig',
             'adsbot-google-mobile',
+            'SMTBot',
+            'Google Web Preview',
             //mobile Version
             'Tablet',
             'Android',
