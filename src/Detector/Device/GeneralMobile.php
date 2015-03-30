@@ -330,6 +330,41 @@ class GeneralMobile
             return $this;
         }
 
+        if ($this->utils->checkIfContainsAll(array('Windows NT', 'Touch'))) {
+            $this->deviceType = new DeviceType\Tablet();
+
+            $this->setCapability('physical_screen_width', 100);
+            $this->setCapability('physical_screen_height', 200);
+            $this->setCapability('columns', 60);
+            $this->setCapability('rows', 40);
+            $this->setCapability('max_image_width', 480);
+            $this->setCapability('max_image_height', 640);
+            $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 480);
+            $this->setCapability('dual_orientation', true);
+
+            return $this;
+        }
+
+        if ($this->utils->checkIfContains(array('Mobile'))) {
+            $this->deviceType = new DeviceType\MobilePhone();
+
+            $this->setCapability('physical_screen_width', 34);
+            $this->setCapability('physical_screen_height', 50);
+            $this->setCapability('columns', 60);
+            $this->setCapability('rows', 40);
+            $this->setCapability('max_image_width', 320);
+            $this->setCapability('max_image_height', 400);
+            $this->setCapability('resolution_width', 320);
+            $this->setCapability('resolution_height', 480);
+            $this->setCapability('dual_orientation', false);
+            $this->setCapability('has_qwerty_keyboard', false);
+            $this->setCapability('pointing_method', 'stylus');
+            $this->setCapability('colors', 4096);
+
+            return $this;
+        }
+
         return $this;
     }
 
