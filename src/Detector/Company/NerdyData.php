@@ -28,80 +28,29 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Os;
-
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
-use BrowserDetector\Detector\OsHandler;
-use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
+namespace BrowserDetector\Detector\Company;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class FirefoxOs
-    extends OsHandler
-    implements OsInterface
+class NerdyData
+    extends AbstractCompany
+    implements CompanyInterface
 {
     /**
-     * Returns true if this handler can handle the given $useragent
+     * the name of the company
      *
-     * @return bool
+     * @var string
      */
-    public function canHandle()
-    {
-        $helper = new FirefoxOsHelper();
-        $helper->setUserAgent($this->useragent);
-
-        return $helper->isFirefoxOs();
-    }
+    protected $name = 'NerdyData';
 
     /**
-     * returns the name of the operating system/platform
+     * the brand name of the company
      *
-     * @return string
+     * @var string
      */
-    public function getName()
-    {
-        return 'FirefoxOS';
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->setVersion('0.0');
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\MozillaFoundation();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 27046;
-    }
+    protected $brandname = 'NerdyData';
 }

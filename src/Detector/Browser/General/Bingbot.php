@@ -81,7 +81,7 @@ class Bingbot
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('BingPreview/'))) {
+        if ($this->utils->checkIfContains(array('BingPreview/', 'adidxbot'))) {
             return false;
         }
 

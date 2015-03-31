@@ -167,6 +167,7 @@ class Netscape
             'naver',
             'Feedfetcher-Google',
             'feedfetcher',
+            'Exabot',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

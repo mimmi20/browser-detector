@@ -25,17 +25,6 @@ class GeneralDesktopTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Tears down the fixture, for example, clDevicees a network connection.
-     * This method is called after a test is executed.
-     */
-    protected function tearDown()
-    {
-        unset($this->object);
-
-        parent::tearDown();
-    }
-
-    /**
      * @dataProvider providerCanHandlePositive
      * @param string $agent
      */
@@ -71,6 +60,7 @@ class GeneralDesktopTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array('Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'),
+            array('Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko'),
         );
     }
 
@@ -81,6 +71,8 @@ class GeneralDesktopTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetectDevice($agent, $device)
     {
+        self::markTestSkipped('need agent for general desktop');
+
         $this->object->setUserAgent($agent);
 
         self::assertInstanceOf($device, $this->object->detectDevice());
@@ -89,10 +81,10 @@ class GeneralDesktopTest extends \PHPUnit_Framework_TestCase
     public function providerDetectDevice()
     {
         return array(
-            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)', '\BrowserDetector\Detector\Device\Desktop\WindowsDesktop'),
-            array('Mozilla/5.0 (Windows; U; Windows NT 5.1; pl; rv:1.9) Gecko/2008052906 Firefox/3.0', '\BrowserDetector\Detector\Device\Desktop\WindowsDesktop'),
-            array('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)', '\BrowserDetector\Detector\Device\Desktop\WindowsDesktop'),
-            array('Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4', '\BrowserDetector\Detector\Device\Desktop\WindowsDesktop'),
+            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)', '\BrowserDetector\Detector\Device\GeneralDesktop'),
+            array('Mozilla/5.0 (Windows; U; Windows NT 5.1; pl; rv:1.9) Gecko/2008052906 Firefox/3.0', '\BrowserDetector\Detector\Device\GeneralDesktop'),
+            array('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)', '\BrowserDetector\Detector\Device\GeneralDesktop'),
+            array('Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4', '\BrowserDetector\Detector\Device\GeneralDesktop'),
         );
     }
 

@@ -96,7 +96,8 @@ class AndroidOs
             'webOS',
             'hpwOS',
             'like Android',
-            'BB10'
+            'BB10',
+            'Windows Phone'
         );
 
         if ($this->utils->checkIfContains($noAndroid)) {

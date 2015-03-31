@@ -1,15 +1,15 @@
 <?php
-namespace BrowserDetectorTest\Detector\Device\Desktop;
+namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
+use BrowserDetector\Detector\Browser\General\Netscape;
 
 /**
- * Test class for \BrowserDetector\Detector\Device\WindowsDesktop
+ * Test class for \BrowserDetector\Detector\Browser\General\AppleMail
  */
-class WindowsDesktopTest extends \PHPUnit_Framework_TestCase
+class NetscapeTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Device\Desktop\WindowsDesktop
+     * @var \BrowserDetector\Detector\Browser\General\Netscape
      */
     private $object = null;
 
@@ -21,7 +21,7 @@ class WindowsDesktopTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new WindowsDesktop();
+        $this->object = new Netscape();
     }
 
     /**
@@ -30,6 +30,8 @@ class WindowsDesktopTest extends \PHPUnit_Framework_TestCase
      */
     public function testCanHandlePositive($agent)
     {
+        self::markTestSkipped('need user agent');
+
         $this->object->setUserAgent($agent);
 
         self::assertTrue($this->object->canHandle());
@@ -38,10 +40,7 @@ class WindowsDesktopTest extends \PHPUnit_Framework_TestCase
     public function providerCanHandlePositive()
     {
         return array(
-            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)'),
-            array('Mozilla/5.0 (Windows; U; Windows NT 5.1; pl; rv:1.9) Gecko/2008052906 Firefox/3.0'),
-            array('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)'),
-            array('Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4'),
+            array('Mozilla/5.0 (SMART-TV; X11; Linux armv7l) AppleWebkit/537.42 (KHTML, like Gecko) Netscape/25.0.1349.2 Chrome/25.0.1349.2 Safari/537.42'),
         );
     }
 
@@ -59,7 +58,9 @@ class WindowsDesktopTest extends \PHPUnit_Framework_TestCase
     public function providerCanHandleNegative()
     {
         return array(
-            array('Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'),
+            array('Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile'),
+            array('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) crawler Safari/538.1'),
+            array('Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)'),
         );
     }
 

@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetLyzerFastProbe
+class NerdyBot
     extends BrowserHandler
 {
     /**
@@ -75,7 +75,7 @@ class NetLyzerFastProbe
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NetLyzerFastProbe', 'NetLyzer FastProbe'))) {
+        if (!$this->utils->checkIfContains('NerdyBot')) {
             return false;
         }
 
@@ -89,7 +89,7 @@ class NetLyzerFastProbe
      */
     public function getName()
     {
-        return 'NetLyzer FastProbe';
+        return 'NerdyBot';
     }
 
     /**
@@ -99,7 +99,7 @@ class NetLyzerFastProbe
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\NerdyData();
     }
 
     /**
@@ -113,16 +113,6 @@ class NetLyzerFastProbe
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -132,7 +122,19 @@ class NetLyzerFastProbe
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        return $detector->setVersion('0.0');
+        $searches = array('NerdyBot');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**
