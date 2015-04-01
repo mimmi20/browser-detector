@@ -109,7 +109,7 @@ class AndroidDownloadManager
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Application();
     }
 
     /**

@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\General\Netscape;
+use BrowserDetector\Detector\Browser\General\AdbeatBot;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\General\AppleMail
+ * Test class for \BrowserDetector\Detector\Browser\General\AdbeatBot
  */
-class NetscapeTest extends \PHPUnit_Framework_TestCase
+class AdbeatBotTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\General\Netscape
+     * @var \BrowserDetector\Detector\Browser\General\AdbeatBot
      */
     private $object = null;
 
@@ -21,7 +21,7 @@ class NetscapeTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new Netscape();
+        $this->object = new AdbeatBot();
     }
 
     /**
@@ -30,8 +30,6 @@ class NetscapeTest extends \PHPUnit_Framework_TestCase
      */
     public function testCanHandlePositive($agent)
     {
-        self::markTestSkipped('need user agent');
-
         $this->object->setUserAgent($agent);
 
         self::assertTrue($this->object->canHandle());
@@ -40,7 +38,7 @@ class NetscapeTest extends \PHPUnit_Framework_TestCase
     public function providerCanHandlePositive()
     {
         return array(
-            array('Mozilla/5.0 (SMART-TV; X11; Linux armv7l) AppleWebkit/537.42 (KHTML, like Gecko) Netscape/25.0.1349.2 Chrome/25.0.1349.2 Safari/537.42'),
+            array('Mozilla/5.0 (X11; U; Linux x86; de-DE) adbeat.com/policy Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3 AppleWebKit/532.4 Safari/532.4'),
         );
     }
 
@@ -60,8 +58,7 @@ class NetscapeTest extends \PHPUnit_Framework_TestCase
         return array(
             array('Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile'),
             array('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) crawler Safari/538.1'),
-            array('Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)'),
-            array('Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'),
+            array('Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6531.22.7 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)'),
         );
     }
 

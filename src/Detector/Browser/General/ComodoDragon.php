@@ -87,7 +87,7 @@ class ComodoDragon
             return false;
         }
 
-        $isNotReallyAnSafari = array(
+        $isNotReallyADragon = array(
             // using also the KHTML rendering engine
             'Flock',
             'Galeon',
@@ -95,10 +95,11 @@ class ComodoDragon
             'Iron',
             'Maemo',
             'PaleMoon',
-            'Rockmelt'
+            'Rockmelt',
+            'Amigo',
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
+        if ($this->utils->checkIfContains($isNotReallyADragon)) {
             return false;
         }
 

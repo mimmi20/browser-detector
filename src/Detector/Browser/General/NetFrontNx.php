@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Gecko;
+use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +44,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Netscape
+class NetFrontNx
     extends BrowserHandler
 {
     /**
@@ -75,118 +77,18 @@ class Netscape
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
+        $netfrontNx = array('NX', 'Nintendo 3DS');
+
+        if (!$this->utils->checkIfContains($netfrontNx)) {
             return false;
         }
 
-        $isNotReallyAnNetscape = array(
-            // using also the Gecko rendering engine
-            'Firefox',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Camino',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'Navigator',
-            'PaleMoon',
-            'SeaMonkey',
-            'Flock',
-            'Fennec',
-            'Iceape',
-            'Icedove',
-            'IceCat',
-            'Eudora',
-            //Nutch
-            'Nutch',
-            'CazoodleBot',
-            'LOOQ',
-            'Postbox',
-            // using the Trident rendering engine
-            'MSIE',
-            'AOL',
-            'TOB',
-            'MyIE',
-            'AppleWebKit',
-            'Chrome',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            // using the KHTML rendering engine
-            'AppleWebKit',
-            'Chrome',
-            'Chromium',
-            'Iron',
-            'Rockmelt',
-            'libwww',
-            'OviBrowser',
-            'K-Meleon',
-            'Google Desktop',
-            'Konqueror',
-            // other rendering engines
-            'Trident',
-            // other applications
-            'LotusNotes/',
-            'Lotus-Notes/',
-            // Fakes/Bots
-            'Mac; Mac OS ',
-            'Esribot',
-            'sp_auditbot',
-            'BLEXBot',
-            'Yahoo',
-            'ca-crawler',
-            'fr-crawler',
-            'sindice-fetcher',
-            'DotBot',
-            'semantic-visions.com crawler',
-            'proximic',
-            'publiclibraryarchive',
-            'nbot',
-            'WI Job Roboter',
-            'Spiderlytics',
-            'SemrushBot',
-            'XoviBot',
-            'aggregator:Spinn3r',
-            'URLAppendBot',
-            'GrapeshotCrawler',
-            'SeznamBot',
-            'linkdexbot',
-            'CareerBot',
-            'WBSearchBot',
-            'Mail.RU_Bot',
-            '80legs',
-            'ThumbShotsBot',
-            'OpenVAS',
-            'Genieo',
-            'Yeti',
-            'WinHttp',
-            'naver',
-            'Feedfetcher-Google',
-            'feedfetcher',
-            'Exabot',
-            'Powermarks',
+        $isNotReallyAnNetfront = array(
+            // using also the KHTML rendering engine
+            'Kindle'
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
-            return false;
-        }
-
-        $isNotReallyAnNetscapeLowerCased = array(
-            'www.archive.org',
-            'archive.org_bot',
-            'memorybot',
-            'waybackarchive',
-            'spbot',
-            'heritrix',
-            'bingbot',
-            'crawler',
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetscapeLowerCased, true)) {
+        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
             return false;
         }
 
@@ -200,7 +102,7 @@ class Netscape
      */
     public function getName()
     {
-        return 'Netscape';
+        return 'NetFront NX';
     }
 
     /**
@@ -210,7 +112,7 @@ class Netscape
      */
     public function getManufacturer()
     {
-        return new Company\Netscape();
+        return new Company\Access();
     }
 
     /**
@@ -233,7 +135,7 @@ class Netscape
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Netscape', 'Netscape6', 'rv\:', 'Mozilla');
+        $searches = array('NX');
 
         return $detector->detectVersion($searches);
     }
@@ -245,20 +147,24 @@ class Netscape
      */
     public function getWeight()
     {
-        return 53545;
+        return 9846;
     }
 
     /**
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Gecko
+     * @return \BrowserDetector\Detector\Engine\NetFront
      */
     public function detectEngine()
     {
-        $handler = new Gecko();
-        $handler->setUseragent($this->useragent);
+        $engines = array(new Webkit());
 
-        return $handler;
+        $chain = new Chain();
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new NetFrontEngine());
+
+        return $chain->detect();
     }
 }

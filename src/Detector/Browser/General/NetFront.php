@@ -34,7 +34,6 @@ use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -78,10 +77,9 @@ class NetFront
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
-            array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'NX', 'Nintendo 3DS')
-        )
-        ) {
+        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'PlayStation 4');
+
+        if (!$this->utils->checkIfContains($netfront)) {
             return false;
         }
 
@@ -137,7 +135,7 @@ class NetFront
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3', 'NX');
+        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3');
 
         return $detector->detectVersion($searches);
     }

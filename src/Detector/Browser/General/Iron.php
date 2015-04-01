@@ -102,6 +102,7 @@ class Iron
             'Edge',
             'Dragon',
             'YaBrowser',
+            'Amigo',
             // Bots
             'Google Wireless Transcoder',
             'Google Web Preview',
