@@ -4,7 +4,7 @@ namespace BrowserDetectorTest\Detector\Browser\General;
 use BrowserDetector\Detector\Browser\General\Chromium;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\General\AppleMail
+ * Test class for \BrowserDetector\Detector\Browser\General\Chromium
  */
 class ChromiumTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\General\GoogleApp;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
+ * Test class for \BrowserDetector\Detector\Browser\General\GoogleApp
  */
-class MicrosoftMobileExplorerTest extends \PHPUnit_Framework_TestCase
+class GoogleAppTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
+     * @var \BrowserDetector\Detector\Browser\General\GoogleApp
      */
     private $object = null;
 
@@ -21,7 +21,7 @@ class MicrosoftMobileExplorerTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new MicrosoftMobileExplorer();
+        $this->object = new GoogleApp();
     }
 
     /**
@@ -38,7 +38,7 @@ class MicrosoftMobileExplorerTest extends \PHPUnit_Framework_TestCase
     public function providerCanHandlePositive()
     {
         return array(
-            array('Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 535) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537'),
+            array('Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/5.1.42378 Mobile/12B440 Safari/600.1.4'),
         );
     }
 

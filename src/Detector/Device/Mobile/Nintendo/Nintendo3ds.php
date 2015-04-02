@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
 
-use BrowserDetector\Detector\Browser\Mobile\NetFront;
+use BrowserDetector\Detector\Browser\Mobile\NetFrontNx;
 use BrowserDetector\Detector\Browser\Mobile\Opera;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
@@ -150,7 +150,7 @@ class Nintendo3ds
     public function detectBrowser()
     {
         $browsers = array(
-            new NetFront(),
+            new NetFrontNx(),
             new Opera()
         );
 

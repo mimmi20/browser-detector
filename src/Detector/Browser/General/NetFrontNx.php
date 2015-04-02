@@ -83,15 +83,6 @@ class NetFrontNx
             return false;
         }
 
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
-            return false;
-        }
-
         return true;
     }
 

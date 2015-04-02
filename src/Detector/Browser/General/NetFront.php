@@ -85,7 +85,10 @@ class NetFront
 
         $isNotReallyAnNetfront = array(
             // using also the KHTML rendering engine
-            'Kindle'
+            'Kindle',
+            // a new version of the netfront browser
+            'NX',
+            'Nintendo 3DS'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {

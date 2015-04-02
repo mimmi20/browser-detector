@@ -37,7 +37,7 @@ use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\General\GooglePageSpeed;
 use BrowserDetector\Detector\Browser\General\GooglePageSpeedInsights;
-use BrowserDetector\Detector\Browser\General\GoogleSearchAppliance;
+use BrowserDetector\Detector\Browser\General\GoogleApp;
 use BrowserDetector\Detector\Browser\General\MsnBotMedia;
 use BrowserDetector\Detector\Browser\General\Ucweb;
 use BrowserDetector\Detector\Browser\Mobile\Chrome;
@@ -201,7 +201,7 @@ class Ios
             new GooglebotMobileBot(),
             new GooglePageSpeed(),
             new GooglePageSpeedInsights(),
-            new GoogleSearchAppliance(),
+            new GoogleApp(),
             new Mercury(),
             new MsnBotMedia(),
             new GoogleAdsbotMobile(),
