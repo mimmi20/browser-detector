@@ -75,7 +75,7 @@ class Exabot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DassaultSystemes')) {
+        if (!$this->utils->checkIfContains('Exabot')) {
             return false;
         }
 
@@ -89,7 +89,7 @@ class Exabot
      */
     public function getName()
     {
-        return 'DassaultSystemes';
+        return 'Exabot';
     }
 
     /**
@@ -122,7 +122,7 @@ class Exabot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('DassaultSystemes');
+        $searches = array('Exabot');
 
         return $detector->detectVersion($searches);
     }
