@@ -36,7 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Pipo
+class Comag
     extends AbstractCompany
     implements CompanyInterface
 {
@@ -45,12 +45,12 @@ class Pipo
      *
      * @var string
      */
-    protected $name = 'PiPO Technology';
+    protected $name = 'Comag';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'PiPO';
+    protected $brandname = 'Comag';
 }

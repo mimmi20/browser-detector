@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Pipo;
+namespace BrowserDetector\Detector\Device\Mobile\Comag;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PipoM9pro
+class ComagWtdr1018
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class PipoM9pro
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Q107',
+        'model_name'             => 'WTDR1018',
         'model_extra_info'       => null,
-        'marketing_name'         => 'M9 Pro',
+        'marketing_name'         => 'WTDR1018',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,14 +67,14 @@ class PipoM9pro
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 1920,
-        'resolution_height'      => 1200,
+        'physical_screen_width'  => 129,
+        'physical_screen_height' => 220,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 800,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -90,7 +90,7 @@ class PipoM9pro
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('m9pro', true)) {
+        if (!$this->utils->checkIfContains('WTDR1018')) {
             return false;
         }
 
@@ -124,7 +124,7 @@ class PipoM9pro
      */
     public function getManufacturer()
     {
-        return new Company\Pipo();
+        return new Company\Comag();
     }
 
     /**
@@ -134,7 +134,7 @@ class PipoM9pro
      */
     public function getBrand()
     {
-        return new Company\Pipo();
+        return new Company\Comag();
     }
 
     /**

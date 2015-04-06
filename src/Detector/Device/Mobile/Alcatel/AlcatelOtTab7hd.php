@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Pipo;
+namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PipoM9pro
+class AlcatelOtTab7hd
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class PipoM9pro
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Q107',
+        'model_name'             => 'OT-TAB7HD',
         'model_extra_info'       => null,
-        'marketing_name'         => 'M9 Pro',
+        'marketing_name'         => 'One Touch Tab 7HD',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,16 +67,16 @@ class PipoM9pro
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 1920,
-        'resolution_height'      => 1200,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 18,
+        'rows'                   => 6,
+        'max_image_width'        => 120,
+        'max_image_height'       => 120,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => false,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,7 +90,7 @@ class PipoM9pro
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('m9pro', true)) {
+        if (!$this->utils->checkIfContains('ONE TOUCH TAB 7HD')) {
             return false;
         }
 
@@ -124,7 +124,7 @@ class PipoM9pro
      */
     public function getManufacturer()
     {
-        return new Company\Pipo();
+        return new Company\Alcatel();
     }
 
     /**
@@ -134,7 +134,7 @@ class PipoM9pro
      */
     public function getBrand()
     {
-        return new Company\Pipo();
+        return new Company\Alcatel();
     }
 
     /**

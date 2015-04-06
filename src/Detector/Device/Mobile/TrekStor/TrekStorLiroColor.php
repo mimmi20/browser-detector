@@ -57,7 +57,7 @@ class TrekStorLiroColor
         // device
         'model_name'             => 'Liro Color',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'Liro Color',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

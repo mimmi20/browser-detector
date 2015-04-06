@@ -101,7 +101,8 @@ class TrekStor
             'Liro_Color',
             'SurfTab_',
             'ST701041',
-            'VT10416'
+            'VT10416',
+            'breeze 10.1 quad',
         );
 
         if ($this->utils->checkIfContains($trekStorPhones)) {

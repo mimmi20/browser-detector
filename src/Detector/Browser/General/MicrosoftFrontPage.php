@@ -30,12 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser\General;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -45,8 +40,8 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftOffice
-    extends BrowserHandler
+class MicrosoftFrontPage
+    extends MicrosoftOffice
 {
     /**
      * the detected browser properties
@@ -78,11 +73,11 @@ class MicrosoftOffice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('microsoft Office', 'MSOffice'))) {
+        if (!$this->utils->checkIfContains('FrontPage')) {
             return false;
         }
 
-        $isNotReallyAnIE = array(
+        $isNotReallyFrontPage = array(
             // using also the Trident rendering engine
             'Maxthon',
             'MxBrowser',
@@ -94,22 +89,16 @@ class MicrosoftOffice
             'AOL',
             'TOB',
             'MyIE',
-            'Excel',
-            'Word',
-            'Outlook',
-            'PowerPoint',
             //others
             'AppleWebKit',
             'Chrome',
             'Linux',
             'IEMobile',
             'BlackBerry',
-            'WebTV',
-            // Outlook Express
-            'Outlook-Express'
+            'WebTV'
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
+        if ($this->utils->checkIfContains($isNotReallyFrontPage)) {
             return false;
         }
 
@@ -123,7 +112,7 @@ class MicrosoftOffice
      */
     public function getName()
     {
-        return 'Office';
+        return 'FrontPage';
     }
 
     /**
@@ -157,7 +146,17 @@ class MicrosoftOffice
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
-        return $detector->setVersion($this->mapVersion($this->detectInternalVersion()));
+        $doMatch = preg_match(
+            '/FrontPage[\/ ]([\d\.]+)/',
+            $this->useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return $detector->setVersion($this->mapVersion($matches[1]));
+        }
+
+        return parent::detectVersion();
     }
 
     /**
@@ -169,65 +168,23 @@ class MicrosoftOffice
      */
     protected function mapVersion($version)
     {
-        if (15 == (int)$version) {
+        if ($version < 12) {
+            return (string) $version;
+        }
+
+        if (15 == (int) $version) {
             return '2013';
         }
 
-        if (14 == (int)$version) {
+        if (14 == (int) $version) {
             return '2010';
         }
 
-        if (12 == (int)$version) {
+        if (12 == (int) $version) {
             return '2007';
         }
 
-        return '';
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return string|null
-     */
-    protected function detectInternalVersion()
-    {
-        $doMatch = preg_match(
-            '/MSOffice ([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match('/MSOffice (\d+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Office\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Office\/(\d+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        return null;
+        return parent::mapVersion($version);
     }
 
     /**
@@ -237,67 +194,6 @@ class MicrosoftOffice
      */
     public function getWeight()
     {
-        return 3485393;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Trident
-     */
-    public function detectEngine()
-    {
-        $handler = new Trident();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return \BrowserDetector\Detector\Browser\General\MicrosoftOffice
-     */
-    public function detectDependProperties(
-        EngineHandler $engine,
-        OsHandler $os,
-        DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        $engine->setCapability('supports_background_sounds', false);
-        $engine->setCapability('supports_vb_script', false);
-        $engine->setCapability('supports_java_applets', false);
-        $engine->setCapability('supports_activex_controls', false);
-        $engine->setCapability('xhtml_supports_iframe', 'none');
-        $engine->setCapability('cookie_support', false);
-        $engine->setCapability('ajax_support_javascript', false);
-
-        $browserVersion = (int)$this->detectInternalVersion();
-
-        switch ($browserVersion) {
-            case 12:
-                $engine->setCapability('xhtml_supports_iframe', 'full');
-                $engine->setCapability('cookie_support', true);
-                $engine->setCapability('xhtml_table_support', false);
-                $engine->setCapability('svgt_1_1', true);
-                $engine->setCapability('ajax_support_javascript', true);
-                $engine->setCapability('image_inlining', true);
-                $engine->setCapability('css_spriting', true);
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        $this->setCapability('wurflKey', 'ms_office_subua' . $browserVersion);
-
-        return $this;
+        return 126410;
     }
 }

@@ -28,12 +28,18 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Pipo;
+namespace BrowserDetector\Detector\Device\Mobile\Honlin;
 
+use BrowserDetector\Detector\BrowserHandler;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Os\WebOs;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -42,7 +48,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PipoM9pro
+class HonlinPc1088
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +61,9 @@ class PipoM9pro
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Q107',
+        'model_name'             => 'PC1088',
         'model_extra_info'       => null,
-        'marketing_name'         => 'M9 Pro',
+        'marketing_name'         => 'PC1088',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,20 +73,21 @@ class PipoM9pro
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 1920,
-        'resolution_height'      => 1200,
+        'physical_screen_width'  => 100,
+        'physical_screen_height' => 200,
+        'columns'                => 100,
+        'rows'                   => 50,
+        'max_image_width'        => 768,
+        'max_image_height'       => 1000,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 262144,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => true, // wurflkey: hp_touchpad_ver1
+
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => true, // wurflkey: hp_touchpad_ver1
     );
 
     /**
@@ -90,7 +97,7 @@ class PipoM9pro
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('m9pro', true)) {
+        if (!$this->utils->checkIfContains(array('HL-PC1088'))) {
             return false;
         }
 
@@ -114,7 +121,7 @@ class PipoM9pro
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\Desktop();
     }
 
     /**
@@ -124,7 +131,7 @@ class PipoM9pro
      */
     public function getManufacturer()
     {
-        return new Company\Pipo();
+        return new Company\Honlin();
     }
 
     /**
@@ -134,19 +141,46 @@ class PipoM9pro
      */
     public function getBrand()
     {
-        return new Company\Pipo();
+        return new Company\Honlin();
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\OsHandler
      */
     public function detectOs()
     {
-        $handler = new AndroidOs();
-        $handler->setUseragent($this->useragent);
+        $os = array(
+            new WebOs(),
+            new AndroidOs()
+        );
 
-        return $handler;
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Honlin\HonlinPc1088
+     */
+    public function detectDependProperties(
+        BrowserHandler $browser,
+        EngineHandler $engine,
+        OsHandler $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        return $this;
     }
 }

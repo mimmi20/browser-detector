@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Pipo;
+namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -36,13 +36,13 @@ use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
-/**
+/*
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PipoM9pro
+class TrekStorBreeze10Quad
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class PipoM9pro
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Q107',
+        'model_name'             => 'SurfTab Breeze 10.1 Quad',
         'model_extra_info'       => null,
-        'marketing_name'         => 'M9 Pro',
+        'marketing_name'         => 'SurfTab Breeze 10.1 Quad',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -73,10 +73,10 @@ class PipoM9pro
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1920,
-        'resolution_height'      => 1200,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,11 +90,13 @@ class PipoM9pro
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('m9pro', true)) {
-            return false;
+        $trekStorPhones = array('breeze 10.1 quad');
+
+        if ($this->utils->checkIfContains($trekStorPhones)) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -104,7 +106,7 @@ class PipoM9pro
      */
     public function getWeight()
     {
-        return 3;
+        return 70634;
     }
 
     /**
@@ -124,7 +126,7 @@ class PipoM9pro
      */
     public function getManufacturer()
     {
-        return new Company\Pipo();
+        return new Company\TrekStor();
     }
 
     /**
@@ -134,7 +136,7 @@ class PipoM9pro
      */
     public function getBrand()
     {
-        return new Company\Pipo();
+        return new Company\TrekStor();
     }
 
     /**

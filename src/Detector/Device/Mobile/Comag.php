@@ -28,10 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Pipo;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -42,9 +44,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PipoM9pro
+class Comag
     extends DeviceHandler
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -55,9 +57,9 @@ class PipoM9pro
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Q107',
+        'model_name'             => 'general Comag Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'M9 Pro',
+        'marketing_name'         => 'general Comag Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -73,10 +75,10 @@ class PipoM9pro
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1920,
-        'resolution_height'      => 1200,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,11 +92,34 @@ class PipoM9pro
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('m9pro', true)) {
-            return false;
+        $comagphones = array(
+            'Comag',
+            'WTDR1018',
+        );
+
+        if ($this->utils->checkIfContains($comagphones, true)) {
+            return true;
         }
 
-        return true;
+        return false;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\DeviceHandler
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Comag');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Comag' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -104,7 +129,7 @@ class PipoM9pro
      */
     public function getWeight()
     {
-        return 3;
+        return 25091;
     }
 
     /**
@@ -124,7 +149,7 @@ class PipoM9pro
      */
     public function getManufacturer()
     {
-        return new Company\Pipo();
+        return new Company\Comag();
     }
 
     /**
@@ -134,7 +159,7 @@ class PipoM9pro
      */
     public function getBrand()
     {
-        return new Company\Pipo();
+        return new Company\Comag();
     }
 
     /**

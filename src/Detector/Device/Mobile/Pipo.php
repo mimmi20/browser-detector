@@ -95,6 +95,7 @@ class Pipo
         $pipophones = array(
             'pipo',
             'm9pro',
+            'm6pro',
         );
 
         if ($this->utils->checkIfContains($pipophones, true)) {

@@ -96,7 +96,7 @@ class Medion
             return true;
         }
 
-        if ($this->utils->checkIfContains(array('MD_', 'LIFETAB'))) {
+        if ($this->utils->checkIfContains(array('MD_', 'LIFETAB', 'P4501'))) {
             return true;
         }
 

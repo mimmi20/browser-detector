@@ -103,6 +103,7 @@ class Odys
             'uno_x10',
             'adm816kc',
             'adm816hc',
+            'neo_quad10',
         );
 
         if ($this->utils->checkIfContains($odysPhones, true)) {

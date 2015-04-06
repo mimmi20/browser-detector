@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PipoM9pro
+class PipoM6pro
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,9 +55,9 @@ class PipoM9pro
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Q107',
+        'model_name'             => 'Q977',
         'model_extra_info'       => null,
-        'marketing_name'         => 'M9 Pro',
+        'marketing_name'         => 'M6 pro',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -73,8 +73,8 @@ class PipoM9pro
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1920,
-        'resolution_height'      => 1200,
+        'resolution_width'       => 2048,
+        'resolution_height'      => 1536,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms

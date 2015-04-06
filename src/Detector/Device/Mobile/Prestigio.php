@@ -59,7 +59,7 @@ class Prestigio
         // device
         'model_name'             => 'general Prestigio Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general Prestigio Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -93,7 +93,7 @@ class Prestigio
     public function canHandle()
     {
         $phones = array(
-            'PrestigioPMP5080CPRO',
+            'Prestigio',
             'PMP5080CPRO',
             'PMP3370B',
             'PMP5197DULTRA',
@@ -101,6 +101,7 @@ class Prestigio
             'PMP7100D3G',
             'PMP7280C3G',
             'PMP5770D',
+            'PAP5000TDUO',
         );
 
         if (!$this->utils->checkIfContains($phones)) {

@@ -190,7 +190,9 @@ class Safari
      */
     public function mapSafariVersions($detectedVersion)
     {
-        if ($detectedVersion >= 9500) {
+        if ($detectedVersion >= 10500) {
+            $detectedVersion = '8.0';
+        } elseif ($detectedVersion >= 9500) {
             $detectedVersion = '7.0';
         } elseif ($detectedVersion >= 8500) {
             $detectedVersion = '6.0';
@@ -198,6 +200,8 @@ class Safari
             $detectedVersion = '5.1';
         } elseif ($detectedVersion >= 6500) {
             $detectedVersion = '5.0';
+        } elseif ($detectedVersion >= 1050) {
+            $detectedVersion = '8.0';
         } elseif ($detectedVersion >= 950) {
             $detectedVersion = '7.0';
         } elseif ($detectedVersion >= 850) {
@@ -228,7 +232,7 @@ class Safari
             '7.0',
             '7.1',
             '8.0',
-            '8.1'
+            '8.1',
         );
 
         if (in_array(substr($detectedVersion, 0, 3), $regularVersions)) {

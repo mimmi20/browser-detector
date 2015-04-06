@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Browser\General\Bingbot;
+use BrowserDetector\Detector\Browser\General\CfNetwork;
 use BrowserDetector\Detector\Browser\General\Icab;
 use BrowserDetector\Detector\Browser\General\Maven;
 use BrowserDetector\Detector\Browser\Mobile\AppleMail;
@@ -156,6 +157,7 @@ class Darwin
             new Coast(),
             new QuickLook(),
             new Icab(),
+            new CfNetwork(),
         );
 
         $chain = new Chain();
