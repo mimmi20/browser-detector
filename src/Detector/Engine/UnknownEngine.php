@@ -53,10 +53,10 @@ class UnknownEngine
         // markup
         'utf8_support'                                    => null,
         'multipart_support'                               => null,
-        'supports_background_sounds'                      => null, // not in wurfl
-        'supports_vb_script'                              => null, // not in wurfl
-        'supports_java_applets'                           => null, // not in wurfl
-        'supports_activex_controls'                       => null, // not in wurfl
+        'supports_background_sounds'                      => false, // not in wurfl
+        'supports_vb_script'                              => false, // not in wurfl
+        'supports_java_applets'                           => false, // not in wurfl
+        'supports_activex_controls'                       => false, // not in wurfl
         'preferred_markup'                                => null,
         'html_web_3_2'                                    => null,
         'html_web_4_0'                                    => null,
@@ -100,7 +100,7 @@ class UnknownEngine
         'xhtml_make_phone_call_string'                    => null,
         'xhtml_allows_disabled_form_elements'             => null,
         'xhtml_supports_invisible_text'                   => null,
-        'cookie_support'                                  => null,
+        'cookie_support'                                  => false,
         'xhtml_send_mms_string'                           => null,
         'xhtml_table_support'                             => null,
         'xhtml_display_accesskey'                         => null,

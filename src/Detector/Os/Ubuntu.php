@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Browser\Desktop\Chromium;
 use BrowserDetector\Detector\Browser\Desktop\Firefox;
 use BrowserDetector\Detector\Browser\Desktop\Opera;
 use BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc;
+use BrowserDetector\Detector\Browser\General\AdbeatBot;
 use BrowserDetector\Detector\Browser\General\Googlebot;
 use BrowserDetector\Detector\Browser\Mobile\Android;
 use BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager;
@@ -156,7 +157,8 @@ class Ubuntu
             new Ucweb(),
             new YaBrowser(),
             new MqqBrowser(),
-            new Chromium()
+            new Chromium(),
+            new AdbeatBot(),
         );
 
         $chain = new Chain();

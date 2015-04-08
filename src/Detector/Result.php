@@ -1636,10 +1636,8 @@ class Result
                         $value = ($device->getCapability('pointing_method', false) === 'touchscreen');
                         break;
                     case 'controlcap_is_largescreen':
-                        $value = ($device->getCapability('resolution_width', false) >= 480 && $device->getCapability(
-                                'resolution_height',
-                                false
-                            ) >= 480);
+                        $value = ($device->getCapability('resolution_width', false) >= 480
+                            && $device->getCapability('resolution_height', false) >= 480);
                         break;
                     case 'model_version':
                         $value = $device->detectVersion();
@@ -1940,6 +1938,12 @@ class Result
                         break;
                     case 'controlcap_is_mobilephone':
                         $value = null;
+                        break;
+                    case 'cookie_support':
+                        $value = $engine->getCapability('cookie_support');
+                        break;
+                    case 'xhtml_table_support':
+                        $value = $engine->getCapability('xhtml_table_support');
                         break;
                     default:
                         if (is_array($additionalData) && array_key_exists($property, $additionalData)) {

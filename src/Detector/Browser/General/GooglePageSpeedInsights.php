@@ -126,7 +126,7 @@ class GooglePageSpeedInsights
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Google Page Speed Insights', 'Version');
+        $searches = array('Google Page Speed Insights');
 
         return $detector->detectVersion($searches);
     }

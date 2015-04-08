@@ -88,7 +88,7 @@ class CfNetwork
      */
     public function getName()
     {
-        return 'general CFNetwork Application';
+        return 'CFNetwork';
     }
 
     /**
