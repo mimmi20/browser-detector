@@ -57,7 +57,7 @@ class CaterpillarB15q
         // device
         'model_name'             => 'B15Q',
         'model_extra_info'       => null,
-        'marketing_name'         => 'B15Q',
+        'marketing_name'         => 'Cat B15Q',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\General\NetFront;
 use BrowserDetector\Detector\Browser\General\PlaystationBrowser;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
@@ -118,6 +119,7 @@ class CellOs
     {
         $browsers = array(
             new PlaystationBrowser(),
+            new NetFront(),
         );
 
         $chain = new Chain();

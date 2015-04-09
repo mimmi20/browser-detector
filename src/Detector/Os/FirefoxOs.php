@@ -30,6 +30,9 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\Mobile\Firefox;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
@@ -103,5 +106,25 @@ class FirefoxOs
     public function getWeight()
     {
         return 27046;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\BrowserHandler
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new Firefox(),
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new UnknownBrowser());
+
+        return $chain->detect();
     }
 }
