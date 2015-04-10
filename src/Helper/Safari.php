@@ -144,6 +144,7 @@ class Safari
             'adsbot-google-mobile',
             'SMTBot',
             'Google Web Preview',
+            'Mediapartners-Google',
             //mobile Version
             'Tablet',
             'Android',

@@ -79,6 +79,10 @@ class Baidu
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('baiduspider-image'), true)) {
+            return false;
+        }
+
         return true;
     }
 

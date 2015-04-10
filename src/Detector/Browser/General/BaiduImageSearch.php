@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lg;
+namespace BrowserDetector\Detector\Browser\General;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,9 +42,8 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lgv500
-    extends DeviceHandler
-    implements DeviceInterface
+class BaiduImageSearch
+    extends BrowserHandler
 {
     /**
      * the detected browser properties
@@ -52,49 +51,80 @@ class Lgv500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        // browser
+        'wurflKey'                     => null, // not in wurfl
+        'mobile_browser_modus'         => null, // not in wurfl
 
-        // device
-        'model_name'             => 'V500',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'G Pad 8.3',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 217,
-        'physical_screen_height' => 136,
-        'columns'                => 100,
-        'rows'                   => 100,
-        'max_image_width'        => 980,
-        'max_image_height'       => 472,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 768,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => false,
-        // chips
-        'nfc_support'            => false,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
+        // pdf
+        'pdf_support'                  => true,
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
+        // rss
+        'rss_support'                  => false,
     );
 
     /**
-     * checks if this device is able to handle the useragent
+     * Returns true if this handler can handle the given user agent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-V500')) {
+        if (!$this->utils->checkIfContains(array('baiduspider-image'), true)) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'Baidu Image Search';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Baidu();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Bot();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('Baiduspider-image');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -104,47 +134,17 @@ class Lgv500
      */
     public function getWeight()
     {
-        return 3;
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new DeviceType\Tablet();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Lg();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company\Lg();
+        return 121205;
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectOs()
+    public function detectEngine()
     {
-        $handler = new AndroidOs();
+        $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);
 
         return $handler;

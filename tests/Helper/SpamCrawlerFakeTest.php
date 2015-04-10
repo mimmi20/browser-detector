@@ -41,6 +41,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
         return array(
             array('curl/7.15.5 (i686-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5'),
             array('NetLyzer FastProbe'),
+            array('Mozilla/5.0 (X11; U; Linux x86; de-DE) adbeat.com/policy Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3 AppleWebKit/532.4 Safari/532.4'),
         );
     }
 

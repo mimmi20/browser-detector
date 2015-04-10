@@ -187,7 +187,7 @@ class Maxthon
      */
     public function detectEngine()
     {
-        if (false !== strpos($this->useragent, 'Trident')) {
+        if (false !== strpos($this->useragent, 'Trident') || false !== strpos($this->useragent, 'MSIE')) {
             $engine = new Trident();
         } elseif (false !== strpos($this->useragent, 'WebKit')) {
             $chrome = new Chrome();

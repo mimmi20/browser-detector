@@ -46,7 +46,7 @@ use BrowserDetector\Input\UserAgent;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Googlebot
+class GoogleImageSearch
     extends BrowserHandler
 {
     /**
@@ -79,17 +79,7 @@ class Googlebot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('googlebot', true)
-            && !$this->utils->checkIfContains('www.google.com/bot.html', true)
-        ) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Mediapartners-Google', 'Googlebot-Mobile', 'AdsBot-Google', 'Google Page Speed'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('googlebot-image', true)) {
+        if (!$this->utils->checkIfContains('googlebot-image', true)) {
             return false;
         }
 
@@ -103,7 +93,7 @@ class Googlebot
      */
     public function getName()
     {
-        return 'Google Bot';
+        return 'Google Image Search';
     }
 
     /**
@@ -137,10 +127,7 @@ class Googlebot
         $detector->setUserAgent($this->useragent);
 
         $searches = array(
-            'Googlebot',
-            'Googlebot v',
-            'Googlebot\-News',
-            'Google'
+            'Googlebot\-Image',
         );
 
         return $detector->detectVersion($searches);
@@ -175,12 +162,7 @@ class Googlebot
 
         if ($this->utils->checkIfContains('compatible; Googlebot')) {
             $agent = str_ireplace(
-                array(
-                    'googlebot-news',
-                    'googlebot-mobile',
-                    'googlebot',
-                    'www.google.com/bot.html'
-                ),
+                array('googlebot-image'),
                 '',
                 $this->useragent
             );
