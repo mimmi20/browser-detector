@@ -109,7 +109,7 @@ class GoogleFeedfetcher
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new BrowserType\BotSyndicationReader();
     }
 
     /**

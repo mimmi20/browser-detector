@@ -244,12 +244,7 @@ class U3
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array(
-            'AppleWebKit',
-            'WebKit',
-            'CFNetwork',
-            'Browser\/AppleWebKit'
-        );
+        $searches = array('U3');
 
         return $detector->detectVersion($searches);
     }

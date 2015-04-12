@@ -45,7 +45,7 @@ class Picsearch
      *
      * @var string
      */
-    protected $name = 'Picsearch';
+    protected $name = 'Picsearch Services AB';
 
     /**
      * the brand name of the company
