@@ -28,25 +28,23 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Acer;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
-/*
+/**
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Zte
+class AcerV370
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -57,9 +55,9 @@ class Zte
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'general ZTE Device',
+        'model_name'             => 'V370',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'Liquid E2 Duo',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -75,10 +73,10 @@ class Zte
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -92,47 +90,11 @@ class Zte
      */
     public function canHandle()
     {
-        $ztePhones = array(
-            'zte',
-            'base tab',
-            'base lutea',
-            'BASE_Lutea_3',
-            'racerii',
-            ' x920 ',
-            ' n600 ',
-            ' w713 ',
-            ' v880 ',
-            ' v9 ',
-            'smarttab7',
-            'smarttab10',
-            'blade',
-            'kis plus',
-            'vodafone smart 4g',
-        );
-
-        if (!$this->utils->checkIfContains($ztePhones, true)) {
+        if (!$this->utils->checkIfContains(' V370 ')) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Zte');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Zte' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
@@ -142,7 +104,7 @@ class Zte
      */
     public function getWeight()
     {
-        return 70634;
+        return 3;
     }
 
     /**
@@ -162,7 +124,7 @@ class Zte
      */
     public function getManufacturer()
     {
-        return new Company\Zte();
+        return new Company\Acer();
     }
 
     /**
@@ -172,7 +134,7 @@ class Zte
      */
     public function getBrand()
     {
-        return new Company\Zte();
+        return new Company\Acer();
     }
 
     /**

@@ -123,6 +123,7 @@ class Acer
             ' Liquid ',
             ' S500 ',
             ' Z150 ',
+            ' V370 ',
         );
 
         if (!$this->utils->checkIfContains($acerPhones)) {

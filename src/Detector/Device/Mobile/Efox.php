@@ -38,13 +38,13 @@ use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
-/*
+/**
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Zte
+class Efox
     extends DeviceHandler
     implements DeviceInterface, DeviceHasChildrenInterface
 {
@@ -57,9 +57,9 @@ class Zte
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'general ZTE Device',
+        'model_name'             => 'general Efox Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general Efox Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -92,25 +92,11 @@ class Zte
      */
     public function canHandle()
     {
-        $ztePhones = array(
-            'zte',
-            'base tab',
-            'base lutea',
-            'BASE_Lutea_3',
-            'racerii',
-            ' x920 ',
-            ' n600 ',
-            ' w713 ',
-            ' v880 ',
-            ' v9 ',
-            'smarttab7',
-            'smarttab10',
-            'blade',
-            'kis plus',
-            'vodafone smart 4g',
+        $efoxPhones = array(
+            'SMART-E5'
         );
 
-        if (!$this->utils->checkIfContains($ztePhones, true)) {
+        if (!$this->utils->checkIfContains($efoxPhones)) {
             return false;
         }
 
@@ -126,9 +112,9 @@ class Zte
     {
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Zte');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Efox');
         $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Zte' . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . 'Efox' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler($this);
 
@@ -142,7 +128,7 @@ class Zte
      */
     public function getWeight()
     {
-        return 70634;
+        return 8587;
     }
 
     /**
@@ -162,7 +148,7 @@ class Zte
      */
     public function getManufacturer()
     {
-        return new Company\Zte();
+        return new Company\Efox();
     }
 
     /**
@@ -172,7 +158,7 @@ class Zte
      */
     public function getBrand()
     {
-        return new Company\Zte();
+        return new Company\Efox();
     }
 
     /**
