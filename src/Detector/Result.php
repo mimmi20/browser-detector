@@ -53,6 +53,13 @@ class Result
     private $renderAs = null;
 
     /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger = null;
+
+    /**
      * the detected browser properties
      *
      * @var array
@@ -663,6 +670,26 @@ class Result
     );
 
     /**
+     * @return \Psr\Log\LoggerInterface
+     */
+    public function getLogger()
+    {
+        return $this->logger;
+    }
+
+    /**
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \BrowserDetector\Detector\Result
+     */
+    public function setLogger($logger)
+    {
+        $this->logger = $logger;
+
+        return $this;
+    }
+
+    /**
      * the class constructor
      */
     public function __construct()
@@ -840,9 +867,9 @@ class Result
         $renderedAs    = $this->getRenderAs();
         $propertyValue = $this->properties[$capabilityName];
 
-        if ($includeRenderAs && $renderedAs instanceof Result && 'unknown' != strtolower(
-                $renderedAs->getCapability('renderingengine_name')
-            )
+        if ($includeRenderAs
+            && ($renderedAs instanceof Result)
+            && 'unknown' != strtolower($renderedAs->getCapability('renderingengine_name'))
         ) {
             $propertyValue = $this->_propertyToString($this->properties[$capabilityName]);
             $propertyValue .= ' [' . $this->_propertyToString($renderedAs->getCapability($capabilityName, false)) . ']';
@@ -1469,7 +1496,7 @@ class Result
         }
         $this->setCapability('wurflKey', $wurflKey);
 
-        $additionalData = Loader::load($wurflKey);
+        $additionalData = Loader::load($wurflKey, $this->getLogger());
 
         $properties = array_keys($this->getAllCapabilities());
 

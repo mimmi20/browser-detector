@@ -125,6 +125,11 @@ class UserAgent
         );
 
         $result = new Result();
+
+        if (null !== $this->logger) {
+            $result->setLogger($this->logger);
+        }
+
         $result->setCapability('useragent', $this->agent);
 
         $result->setDetectionResult(

@@ -31,6 +31,7 @@
 namespace BrowserDetector;
 
 use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use UnexpectedValueException;
 use WurflCache\Adapter\AdapterInterface;
 
@@ -162,6 +163,10 @@ class BrowserDetector
      */
     public function getLogger()
     {
+        if (null === $this->logger) {
+            $this->logger = new NullLogger();
+        }
+
         return $this->logger;
     }
 
