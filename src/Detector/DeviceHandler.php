@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\Utils;
+use Psr\Log\LoggerInterface;
 
 /**
  * base class for all Devices to detect
@@ -62,6 +63,13 @@ abstract class DeviceHandler
      * @var \BrowserDetector\Detector\Result
      */
     protected $renderAs = null;
+
+    /**
+     * an logger instance
+     *
+     * @var \Psr\Log\LoggerInterface
+     */
+    protected $logger = null;
 
     /**
      * the detected browser properties
@@ -379,5 +387,25 @@ abstract class DeviceHandler
     public function getRenderAs()
     {
         return $this->renderAs;
+    }
+
+    /**
+     * @return \Psr\Log\LoggerInterface
+     */
+    public function getLogger()
+    {
+        return $this->logger;
+    }
+
+    /**
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return DeviceHandler
+     */
+    public function setLogger(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+
+        return $this;
     }
 }

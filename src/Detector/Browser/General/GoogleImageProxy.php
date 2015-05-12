@@ -180,7 +180,10 @@ class GoogleImageProxy
         $agent = str_ireplace('GoogleImageProxy', '', $this->useragent);
 
         $detector = new UserAgent();
-        $detector->setAgent($agent);
+        $detector
+            ->setLogger($device->getLogger())
+            ->setAgent($agent)
+        ;
 
         $device->setRenderAs($detector->getBrowser());
 

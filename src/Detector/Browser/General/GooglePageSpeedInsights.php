@@ -174,7 +174,10 @@ class GooglePageSpeedInsights
         $agent = str_ireplace('Google Page Speed Insights', '', $this->useragent);
 
         $detector = new UserAgent();
-        $detector->setAgent($agent);
+        $detector
+            ->setLogger($device->getLogger())
+            ->setAgent($agent)
+        ;
 
         $device->setRenderAs($detector->getBrowser());
 

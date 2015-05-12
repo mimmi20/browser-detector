@@ -145,7 +145,10 @@ class AlcoholSearch
         $agent = str_ireplace('alcohol search', '', $this->useragent);
 
         $detector = new UserAgent();
-        $detector->setAgent($agent);
+        $detector
+            ->setLogger($device->getLogger())
+            ->setAgent($agent)
+        ;
 
         $device->setRenderAs($detector->getBrowser());
 

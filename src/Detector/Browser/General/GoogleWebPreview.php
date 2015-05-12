@@ -174,7 +174,10 @@ class GoogleWebPreview
         $agent = str_ireplace('Google Web Preview', '', $this->useragent);
 
         $detector = new UserAgent();
-        $detector->setAgent($agent);
+        $detector
+            ->setLogger($device->getLogger())
+            ->setAgent($agent)
+        ;
 
         $device->setRenderAs($detector->getBrowser());
 

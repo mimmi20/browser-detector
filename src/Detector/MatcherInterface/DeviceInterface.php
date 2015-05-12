@@ -33,6 +33,8 @@ namespace BrowserDetector\Detector\MatcherInterface;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\OsHandler;
+use BrowserDetector\Detector\Result;
+use Psr\Log\LoggerInterface;
 
 /**
  * interface for all devices to detect
@@ -110,4 +112,32 @@ interface DeviceInterface
      * @return \BrowserDetector\Detector\Company\CompanyInterface
      */
     public function getBrand();
+
+    /**
+     * sets a second device for rendering properties
+     *
+     * @var \BrowserDetector\Detector\Result $result
+     *
+     * @return DeviceInterface
+     */
+    public function setRenderAs(Result $result);
+
+    /**
+     * sets a second device for rendering properties
+     *
+     * @return \BrowserDetector\Detector\Result
+     */
+    public function getRenderAs();
+
+    /**
+     * @return \Psr\Log\LoggerInterface
+     */
+    public function getLogger();
+
+    /**
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return DeviceInterface
+     */
+    public function setLogger(LoggerInterface $logger);
 }

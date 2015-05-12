@@ -92,7 +92,10 @@ class UserAgent
     public function getBrowser()
     {
         $this->device = $this->detectDevice();
-        $this->device->detectSpecialProperties();
+        $this->device
+            ->setLogger($this->logger)
+            ->detectSpecialProperties()
+        ;
 
         // detect the os which runs on the device
         $this->os = $this->device->detectOs();
