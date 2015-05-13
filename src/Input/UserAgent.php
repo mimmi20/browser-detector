@@ -36,8 +36,7 @@ use BrowserDetector\Detector\Device\GeneralDesktop;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -116,10 +115,7 @@ class UserAgent
         }
 
         // detect the engine which is used in the browser
-        $this->engine = $this->browser->detectEngine($this->os);
-        if (!($this->engine instanceof EngineHandler)) {
-            $this->engine = $this->detectEngine();
-        }
+        $this->engine = EngineFactory::detectEngine($this->agent);
 
         $this->device->detectDependProperties(
             $this->browser,
@@ -205,24 +201,6 @@ class UserAgent
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
-    }
-
-    /**
-     * Gets the information about the rendering engine by User Agent
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    private function detectEngine()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Engine');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Engine' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler(new UnknownEngine());
 
         return $chain->detect();
     }
