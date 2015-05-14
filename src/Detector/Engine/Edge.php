@@ -200,22 +200,6 @@ class Edge
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        $edgeEngines = array('Edge');
-
-        if (!$this->utils->checkIfContains($edgeEngines)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the platform
      *
      * @return string
@@ -278,16 +262,6 @@ class Edge
         }
 
         return $detector->setVersion('');
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 378311339;
     }
 
     /**

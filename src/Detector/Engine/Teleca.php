@@ -200,29 +200,6 @@ class Teleca
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3'))) {
-            return false;
-        }
-
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the platform
      *
      * @return string
@@ -240,15 +217,5 @@ class Teleca
     public function getManufacturer()
     {
         return new Company\Obigo();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 627;
     }
 }

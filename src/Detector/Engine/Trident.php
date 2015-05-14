@@ -200,53 +200,6 @@ class Trident
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        $noTridentEngines = array(
-            'KHTML',
-            'AppleWebKit',
-            'WebKit',
-            'Presto',
-            'RGAnalytics',
-            'libwww',
-            'iPhone',
-            'Firefox',
-            'Mozilla/5.0 (en)',
-            'Mac_PowerPC',
-            'Opera'
-        );
-
-        if ($this->utils->checkIfContains($noTridentEngines)) {
-            return false;
-        }
-
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            if ($matches[1] < 7 && $this->utils->checkIfContains('Gecko')) {
-                return false;
-            }
-
-            if ($matches[1] == 7 && !$this->utils->checkIfContains('Gecko')) {
-                return false;
-            }
-
-            return true;
-        }
-
-        if ($this->utils->checkIfContains('Mozilla/') && $this->utils->checkIfContains(array('MSIE', 'Trident'))
-        ) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * gets the name of the platform
      *
      * @return string
@@ -309,16 +262,6 @@ class Trident
         }
 
         return $detector->setVersion('');
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 378311339;
     }
 
     /**

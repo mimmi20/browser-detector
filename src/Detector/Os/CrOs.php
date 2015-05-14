@@ -49,20 +49,6 @@ class CrOs
     implements OsInterface
 {
     /**
-     * Returns true if this handler can handle the given $useragent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('CrOS')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -95,10 +81,5 @@ class CrOs
     public function getManufacturer()
     {
         return new Company\Google();
-    }
-
-    public function getWeight()
-    {
-        return 22828;
     }
 }

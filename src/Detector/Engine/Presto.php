@@ -204,24 +204,6 @@ class Presto
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array('Presto', 'Opera'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('KHTML', 'Trident', 'Gecko'))) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the platform
      *
      * @return string
@@ -254,16 +236,6 @@ class Presto
         $searches = array('Presto');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 13811613;
     }
 
     /**

@@ -53,19 +53,6 @@ class FirefoxOs
     implements OsInterface
 {
     /**
-     * Returns true if this handler can handle the given $useragent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        $helper = new FirefoxOsHelper();
-        $helper->setUserAgent($this->useragent);
-
-        return $helper->isFirefoxOs();
-    }
-
-    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -96,16 +83,6 @@ class FirefoxOs
     public function getManufacturer()
     {
         return new Company\MozillaFoundation();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 27046;
     }
 
     /**
