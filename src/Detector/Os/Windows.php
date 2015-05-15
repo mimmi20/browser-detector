@@ -30,12 +30,10 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Bits\Os;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Windows as WindowsHelper;
 
 /**
  * MSIEAgentHandler
@@ -50,31 +48,6 @@ class Windows
     extends OsHandler
     implements OsInterface
 {
-    /**
-     * Returns true if this handler can handle the given $useragent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($this->useragent);
-
-        if ($windowsHelper->isMobileWindows()) {
-            return false;
-        }
-
-        if (!$windowsHelper->isWindows()) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('ARM;'))) {
-            return false;
-        }
-
-        return true;
-    }
-
     /**
      * returns the name of the operating system/platform
      *
@@ -224,15 +197,5 @@ class Windows
     public function getManufacturer()
     {
         return new Company\Microsoft();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 817419325;
     }
 }

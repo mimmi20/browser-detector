@@ -28,58 +28,29 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Os;
-
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
-use BrowserDetector\Detector\OsHandler;
-use BrowserDetector\Detector\Version;
+namespace BrowserDetector\Detector\Company;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Irix
-    extends OsHandler
-    implements OsInterface
+class BerkleyUniversity
+    extends AbstractCompany
+    implements CompanyInterface
 {
     /**
-     * returns the name of the operating system/platform
+     * the name of the company
      *
-     * @return string
+     * @var string
      */
-    public function getName()
-    {
-        return 'IRIX';
-    }
+    protected $name = 'University of California, Berkeley';
 
     /**
-     * returns the version of the operating system/platform
+     * the brand name of the company
      *
-     * @return \BrowserDetector\Detector\Version
+     * @var string
      */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('IRIX');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Unknown();
-    }
+    protected $brandname = 'Berkeley';
 }

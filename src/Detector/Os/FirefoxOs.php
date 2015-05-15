@@ -37,7 +37,6 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
 
 /**
  * MSIEAgentHandler

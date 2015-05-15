@@ -49,20 +49,6 @@ class Os2
     implements OsInterface
 {
     /**
-     * Returns true if this handler can handle the given $useragent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContainsAll(array('os/2', 'warp'), true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -95,16 +81,6 @@ class Os2
     public function getManufacturer()
     {
         return new Company\Ibm();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 2811;
     }
 }
 

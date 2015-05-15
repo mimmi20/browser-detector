@@ -37,6 +37,7 @@ use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Factory\EngineFactory;
+use BrowserDetector\Detector\Factory\OsFactory;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -97,10 +98,8 @@ class UserAgent
         ;
 
         // detect the os which runs on the device
-        $this->os = $this->device->detectOs();
-        if (!($this->os instanceof OsInterface)) {
-            $this->os = $this->detectOs();
-        }
+        $this->os = OsFactory::detectPlatform($this->agent);
+        $this->os->setUserAgent($this->agent);
 
         // detect the browser which is used
         $this->browser = $this->os->detectBrowser();
@@ -116,6 +115,7 @@ class UserAgent
 
         // detect the engine which is used in the browser
         $this->engine = EngineFactory::detectEngine($this->agent);
+        $this->engine->setUserAgent($this->agent);
 
         $this->device->detectDependProperties(
             $this->browser,
@@ -167,24 +167,6 @@ class UserAgent
         }
 
         return $device;
-    }
-
-    /**
-     * Gets the information about the os by User Agent
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    private function detectOs()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Os');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler(new UnknownOs());
-
-        return $chain->detect();
     }
 
     /**

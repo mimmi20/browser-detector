@@ -68,54 +68,6 @@ class Java
     implements OsInterface
 {
     /**
-     * Returns true if this handler can handle the given $useragent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(
-            array(
-                'Java',
-                'J2ME/MIDP',
-                'Profile/MIDP',
-                'JUC',
-                'UCWEB',
-                'NetFront',
-                'Nokia',
-                'Jasmine/1.0',
-                'JavaPlatform',
-                'WAP/OBIGO',
-                'Obigo/WAP'
-            )
-        )
-        ) {
-            return false;
-        }
-
-        $isNotReallyAJava = array(
-            'SymbianOS',
-            'SymbOS',
-            'Symbian',
-            'Series 60',
-            'S60V3',
-            'S60V5',
-            'MeeGo',
-            'Windows CE',
-            'Windows NT',
-            'MSIEMobile',
-            'IEMobile',
-            'Microsoft Windows'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAJava)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -148,16 +100,6 @@ class Java
     public function getManufacturer()
     {
         return new Company\Oracle();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 147240;
     }
 
     /**

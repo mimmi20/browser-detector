@@ -30,6 +30,13 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\Browser\Mobile\NokiaBrowser;
+use BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser;
+use BrowserDetector\Detector\Browser\Mobile\OperaMini;
+use BrowserDetector\Detector\Browser\Mobile\Ucweb;
+use BrowserDetector\Detector\Browser\Mobile\WebkitWebos;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
@@ -44,7 +51,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Irix
+class OpenVms
     extends OsHandler
     implements OsInterface
 {
@@ -55,7 +62,7 @@ class Irix
      */
     public function getName()
     {
-        return 'IRIX';
+        return 'OpenVMS';
     }
 
     /**
@@ -68,7 +75,7 @@ class Irix
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('IRIX');
+        $searches = array('OpenVMS');
 
         return $detector->detectVersion($searches);
     }
@@ -80,6 +87,6 @@ class Irix
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Hp();
     }
 }

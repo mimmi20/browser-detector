@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Irix
+class DragonflyBsd
     extends OsHandler
     implements OsInterface
 {
@@ -55,7 +55,7 @@ class Irix
      */
     public function getName()
     {
-        return 'IRIX';
+        return 'DragonFly BSD';
     }
 
     /**
@@ -68,7 +68,7 @@ class Irix
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('IRIX');
+        $searches = array('DragonFly');
 
         return $detector->detectVersion($searches);
     }
