@@ -13,13 +13,12 @@ os:
   - osx
 
 before_script:
-  - if [ "`phpenv version-name`" == "5.5" ] || [ "`phpenv version-name`" == "5.6" ]; then echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi
-  - if [ "`phpenv version-name`" == "5.5" ] || [ "`phpenv version-name`" == "5.6" ]; then echo 'opcache.enable_cli=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi
   - composer self-update
   - composer install -o --prefer-source
 
 script:
-  - phpunit --configuration travis.phpunit.xml.dist --coverage-text --coverage-clover=coverage.clover --colors --verbose
+  - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover --colors --verbose --strict
+  - vendor/bin/phpcs --standard=psr2 -np src tests
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar

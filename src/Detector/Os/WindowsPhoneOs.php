@@ -82,7 +82,7 @@ class WindowsPhoneOs
         }
 
         if ($this->utils->checkIfContains(array('WPDesktop'))) {
-            if ($this->utils->checkIfContains(array('Windows NT 6.2'))) {
+            if ($this->utils->checkIfContains(array('Windows NT 6.3'))) {
                 return $detector->setVersion('8.1');
             }
 
