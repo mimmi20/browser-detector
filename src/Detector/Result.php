@@ -1015,8 +1015,8 @@ class Result implements \Serializable
         $renderedAs = $this->getRenderAs();
 
         if ($renderedAs instanceof Result && 'unknown' != strtolower(
-                $renderedAs->getCapability('mobile_browser', false)
-            )
+            $renderedAs->getCapability('mobile_browser', false)
+        )
         ) {
             $browser .= ' [' . $renderedAs->getFullBrowserName($withBits, $mode) . ']';
         }
@@ -1164,9 +1164,9 @@ class Result implements \Serializable
             }
 
             if ('unknown' !== $manufacturer && '' !== $manufacturer && false === strpos(
-                    $device,
-                    'general'
-                ) && false === strpos($device, $manufacturer)
+                $device,
+                'general'
+            ) && false === strpos($device, $manufacturer)
             ) {
                 $device = $manufacturer . ' ' . $device;
             }
@@ -1188,8 +1188,8 @@ class Result implements \Serializable
         $renderedAs = $this->getRenderAs();
 
         if ($renderedAs instanceof Result && 'unknown' != strtolower(
-                $renderedAs->getCapability('renderingengine_name', false)
-            )
+            $renderedAs->getCapability('renderingengine_name', false)
+        )
         ) {
             $engine .= ' [' . $renderedAs->getFullEngineName($mode) . ']';
         }
@@ -1828,9 +1828,9 @@ class Result implements \Serializable
                         break;
                     case 'controlcap_is_xhtmlmp_preferred':
                         $value = ($engine->getCapability('xhtml_support_level') > 0 && strpos(
-                                $engine->getCapability('preferred_markup'),
-                                'html_web'
-                            ) !== 0);
+                            $engine->getCapability('preferred_markup'),
+                            'html_web'
+                        ) !== 0);
                         break;
                     case 'controlcap_is_wml_preferred':
                         $value = ($engine->getCapability('xhtml_support_level') <= 0);

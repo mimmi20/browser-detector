@@ -75,9 +75,9 @@ class GoogleFontAnalysis extends BrowserHandler
     public function canHandle()
     {
         if ($this->utils->checkIfContains('Google-FontAnalysis', true) || $this->utils->checkIfContains(
-                'www.google.com/webfonts',
-                true
-            )
+            'www.google.com/webfonts',
+            true
+        )
         ) {
             return true;
         }

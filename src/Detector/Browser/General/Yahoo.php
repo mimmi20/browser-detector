@@ -78,10 +78,10 @@ class Yahoo extends BrowserHandler
         }
 
         if ($this->utils->checkIfContains('Mozilla/5.0 (YahooYSMcm') || $this->utils->checkIfContains(
-                'Scooter'
-            ) || $this->utils->checkIfContains('Y!OASIS') || $this->utils->checkIfContains(
-                'YahooYSMcm'
-            ) || $this->utils->checkIfContains('YRL_ODP_CRAWLER') || $this->utils->checkIfContains('www.yahoo.com')
+            'Scooter'
+        ) || $this->utils->checkIfContains('Y!OASIS') || $this->utils->checkIfContains(
+            'YahooYSMcm'
+        ) || $this->utils->checkIfContains('YRL_ODP_CRAWLER') || $this->utils->checkIfContains('www.yahoo.com')
         ) {
             return true;
         }

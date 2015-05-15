@@ -79,8 +79,8 @@ class Seamonkey extends BrowserHandler
         }
 
         if (!$this->utils->checkIfContainsAll(array('Gecko', 'SeaMonkey')) && !$this->utils->checkIfContains(
-                'Seamonkey'
-            )
+            'Seamonkey'
+        )
         ) {
             return false;
         }

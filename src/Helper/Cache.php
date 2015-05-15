@@ -51,7 +51,8 @@ class Cache
      */
     public function getBrowserFromCache(
         AdapterInterface $cache,
-        $userAgent = null, $cachePrefix = null
+        $userAgent = null,
+        $cachePrefix = null
     ) {
         $cacheId = $this->getCacheIdFromAgent($userAgent, $cachePrefix);
         $success = true;
@@ -71,11 +72,12 @@ class Cache
     {
         return substr(
             $cachePrefix . 'agent_' . preg_replace(
-                '/[^a-zA-Z0-9_]/', '_', $userAgent
+                '/[^a-zA-Z0-9_]/',
+                '_',
+                $userAgent
             ),
             0,
             179
         );
     }
 }
-

@@ -79,8 +79,8 @@ class AppleMail extends BrowserHandler
         }
 
         if (!$this->utils->checkIfContains('Mozilla/') || $this->utils->checkIfContains(
-                'Safari'
-            ) || $this->utils->checkIfContains('Mobile')
+            'Safari'
+        ) || $this->utils->checkIfContains('Mobile')
         ) {
             return false;
         }
