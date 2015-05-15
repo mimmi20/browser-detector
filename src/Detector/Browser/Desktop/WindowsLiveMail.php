@@ -42,4 +42,3 @@ class WindowsLiveMail extends WindowsLiveMailBase
 {
     // nothing to do here
 }
-

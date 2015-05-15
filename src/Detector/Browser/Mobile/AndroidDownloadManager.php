@@ -42,4 +42,3 @@ class AndroidDownloadManager extends AndroidDownloadManagerBase
 {
     // nothing to do here
 }
-

@@ -148,4 +148,3 @@ class SamsungGtp5113 extends DeviceHandler implements DeviceInterface
         return $handler;
     }
 }
-

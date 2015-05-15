@@ -174,4 +174,3 @@ class YuandaoN90DualCore2 extends DeviceHandler implements DeviceInterface
         return $this;
     }
 }
-

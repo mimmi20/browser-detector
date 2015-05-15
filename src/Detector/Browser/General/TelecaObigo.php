@@ -191,4 +191,3 @@ class TelecaObigo extends BrowserHandler
         return $handler;
     }
 }
-

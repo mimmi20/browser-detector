@@ -42,4 +42,3 @@ class IchiroMobileBot extends IchiroMobileBotBase
 {
     // nothing to do here
 }
-

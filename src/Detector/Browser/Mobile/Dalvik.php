@@ -42,4 +42,3 @@ class Dalvik extends DalvikBase
 {
     // nothing to do here
 }
-

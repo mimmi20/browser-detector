@@ -42,4 +42,3 @@ class LotusNotes extends LotusNotesBase
 {
     // nothing to do here
 }
-

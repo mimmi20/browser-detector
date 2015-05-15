@@ -42,4 +42,3 @@ class WeTabBrowser extends WeTabBrowserBase
 {
     // nothing to do here
 }
-

@@ -174,4 +174,3 @@ class YuandaoN90fhdrk extends DeviceHandler implements DeviceInterface
         return $this;
     }
 }
-

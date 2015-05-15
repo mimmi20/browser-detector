@@ -133,4 +133,3 @@ abstract class AbstractType implements TypeInterface
         return $this->banned;
     }
 }
-

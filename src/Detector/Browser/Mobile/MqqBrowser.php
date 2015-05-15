@@ -42,4 +42,3 @@ class MqqBrowser extends MqqBrowserBase
 {
     // nothing to do here
 }
-

@@ -108,4 +108,3 @@ class Alcatel extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

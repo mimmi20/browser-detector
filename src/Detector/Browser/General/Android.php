@@ -320,4 +320,3 @@ class Android extends BrowserHandler
         return $this;
     }
 }
-

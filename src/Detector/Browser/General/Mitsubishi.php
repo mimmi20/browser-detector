@@ -108,4 +108,3 @@ class Mitsubishi extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

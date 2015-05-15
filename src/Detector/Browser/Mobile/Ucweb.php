@@ -42,4 +42,3 @@ class Ucweb extends UcwebBase
 {
     // nothing to do here
 }
-

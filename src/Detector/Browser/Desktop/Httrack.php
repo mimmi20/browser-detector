@@ -42,4 +42,3 @@ class Httrack extends HttrackBase
 {
     // nothing to do here
 }
-

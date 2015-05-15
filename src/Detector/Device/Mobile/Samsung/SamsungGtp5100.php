@@ -232,4 +232,3 @@ class SamsungGtp5100 extends DeviceHandler implements DeviceInterface
         return $this;
     }
 }
-

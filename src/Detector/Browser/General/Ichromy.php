@@ -114,4 +114,3 @@ class Ichromy extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

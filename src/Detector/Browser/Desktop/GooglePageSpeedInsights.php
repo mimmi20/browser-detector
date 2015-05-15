@@ -42,4 +42,3 @@ class GooglePageSpeedInsights extends GooglePageSpeedInsightsBase
 {
     // nothing to do here
 }
-

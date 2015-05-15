@@ -42,4 +42,3 @@ class Blackberry extends BlackberryBase
 {
     // nothing to do here
 }
-

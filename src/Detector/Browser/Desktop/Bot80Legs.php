@@ -42,4 +42,3 @@ class Bot80Legs extends Bot80LegsBase
 {
     // nothing to do here
 }
-

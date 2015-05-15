@@ -42,4 +42,3 @@ class YouWaveAndroidOnPc extends YouWaveAndroidOnPcBase
 {
     // nothing to do here
 }
-

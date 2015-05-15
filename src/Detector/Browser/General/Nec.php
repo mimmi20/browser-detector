@@ -108,4 +108,3 @@ class Nec extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

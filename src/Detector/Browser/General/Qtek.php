@@ -108,4 +108,3 @@ class Qtek extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

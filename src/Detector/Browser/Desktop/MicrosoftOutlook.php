@@ -42,4 +42,3 @@ class MicrosoftOutlook extends MicrosoftOutlookBase
 {
     // nothing to do here
 }
-

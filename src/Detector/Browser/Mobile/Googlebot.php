@@ -42,4 +42,3 @@ class Googlebot extends GooglebotBase
 {
     // nothing to do here
 }
-

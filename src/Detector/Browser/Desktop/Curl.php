@@ -42,4 +42,3 @@ class Curl extends CurlBase
 {
     // nothing to do here
 }
-

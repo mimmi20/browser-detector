@@ -157,4 +157,3 @@ class NetTv extends BrowserHandler
         return $handler;
     }
 }
-

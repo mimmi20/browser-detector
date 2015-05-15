@@ -42,4 +42,3 @@ class CoolNovo extends CoolNovoBase
 {
     // nothing to do here
 }
-

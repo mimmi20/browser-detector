@@ -122,4 +122,3 @@ class PlaystationBrowser extends BrowserHandler
         return 74458;
     }
 }
-

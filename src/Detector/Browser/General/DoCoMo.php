@@ -108,4 +108,3 @@ class DoCoMo extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

@@ -108,4 +108,3 @@ class Philips extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

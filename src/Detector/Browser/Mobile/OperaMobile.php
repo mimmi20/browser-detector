@@ -42,4 +42,3 @@ class OperaMobile extends OperaMobileBase
 {
     // nothing to do here
 }
-

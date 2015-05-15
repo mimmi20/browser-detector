@@ -42,4 +42,3 @@ class Dolfin extends DolfinBase
 {
     // nothing to do here
 }
-

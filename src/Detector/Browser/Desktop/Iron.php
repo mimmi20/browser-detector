@@ -42,4 +42,3 @@ class Iron extends IronBase
 {
     // nothing to do here
 }
-

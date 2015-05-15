@@ -149,4 +149,3 @@ class Openwave extends BrowserHandler
         return 100;
     }
 }
-

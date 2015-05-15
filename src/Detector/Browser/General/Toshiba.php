@@ -108,4 +108,3 @@ class Toshiba extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

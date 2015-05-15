@@ -42,4 +42,3 @@ class Epiphany extends EpiphanyBase
 {
     // nothing to do here
 }
-

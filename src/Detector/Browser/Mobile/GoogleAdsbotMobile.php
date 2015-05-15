@@ -42,4 +42,3 @@ class GoogleAdsbotMobile extends GoogleAdsbotMobileBase
 {
     // nothing to do here
 }
-

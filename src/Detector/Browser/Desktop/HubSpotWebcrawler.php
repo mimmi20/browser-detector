@@ -42,4 +42,3 @@ class HubSpotWebcrawler extends HubSpotWebcrawlerBase
 {
     // nothing to do here
 }
-

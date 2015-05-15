@@ -42,4 +42,3 @@ class MailRu extends MailRuBase
 {
     // nothing to do here
 }
-

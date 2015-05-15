@@ -108,4 +108,3 @@ class Sharp extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
-

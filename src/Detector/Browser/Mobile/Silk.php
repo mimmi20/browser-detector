@@ -42,4 +42,3 @@ class Silk extends SilkBase
 {
     // nothing to do here
 }
-

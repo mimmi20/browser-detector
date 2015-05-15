@@ -42,4 +42,3 @@ class BingPreview extends BingPreviewBase
 {
     // nothing to do here
 }
-

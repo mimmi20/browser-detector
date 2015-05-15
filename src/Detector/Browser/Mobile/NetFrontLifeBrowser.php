@@ -42,4 +42,3 @@ class NetFrontLifeBrowser extends NetFrontLifeBrowserBase
 {
     // nothing to do here
 }
-

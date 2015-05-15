@@ -224,4 +224,3 @@ class SamsungGtp5110 extends DeviceHandler implements DeviceInterface
         return $this;
     }
 }
-

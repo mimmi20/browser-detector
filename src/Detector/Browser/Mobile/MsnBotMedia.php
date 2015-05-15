@@ -42,4 +42,3 @@ class MsnBotMedia extends MsnBotMediaBase
 {
     // nothing to do here
 }
-

@@ -142,4 +142,3 @@ class Motorola extends BrowserHandler
         return $detector->detectVersion($searches);
     }
 }
-

@@ -42,4 +42,3 @@ class Exabot extends ExabotBase
 {
     // nothing to do here
 }
-

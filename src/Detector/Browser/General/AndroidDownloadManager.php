@@ -150,4 +150,3 @@ class AndroidDownloadManager extends BrowserHandler
         return $handler;
     }
 }
-

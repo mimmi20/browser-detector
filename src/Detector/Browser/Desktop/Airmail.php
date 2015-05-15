@@ -42,4 +42,3 @@ class Airmail extends AirmailBase
 {
     // nothing to do here
 }
-

@@ -138,4 +138,3 @@ class SonyEricsson extends BrowserHandler
         return 3;
     }
 }
-

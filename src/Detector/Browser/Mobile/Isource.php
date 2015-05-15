@@ -42,4 +42,3 @@ class Isource extends IsourceBase
 {
     // nothing to do here
 }
-

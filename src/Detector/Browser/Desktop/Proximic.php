@@ -42,4 +42,3 @@ class Proximic extends ProximicBase
 {
     // nothing to do here
 }
-

@@ -42,4 +42,3 @@ class BlackberryPlaybookTablet extends BlackberryPlaybookTabletBase
 {
     // nothing to do here
 }
-

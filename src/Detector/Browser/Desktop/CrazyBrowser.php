@@ -42,4 +42,3 @@ class CrazyBrowser extends CrazyBrowserBase
 {
     // nothing to do here
 }
-

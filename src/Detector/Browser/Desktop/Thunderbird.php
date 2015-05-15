@@ -42,4 +42,3 @@ class Thunderbird extends ThunderbirdBase
 {
     // nothing to do here
 }
-

@@ -191,4 +191,3 @@ class GoogleImageSearch extends BrowserHandler
         return $handler;
     }
 }
-

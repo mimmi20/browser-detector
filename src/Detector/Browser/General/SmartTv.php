@@ -147,4 +147,3 @@ class SmartTv extends BrowserHandler
         return $handler;
     }
 }
-

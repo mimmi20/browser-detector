@@ -42,4 +42,3 @@ class DeepnetExplorer extends DeepnetExplorerBase
 {
     // nothing to do here
 }
-

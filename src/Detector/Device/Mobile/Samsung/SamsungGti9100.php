@@ -235,4 +235,3 @@ class SamsungGti9100 extends DeviceHandler implements DeviceInterface
         return $this;
     }
 }
-
