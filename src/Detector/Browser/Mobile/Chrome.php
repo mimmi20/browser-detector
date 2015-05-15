@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Chrome as DefaultChrome;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome
-    extends DefaultChrome
+class Chrome extends DefaultChrome
 {
     // nothing to do here
 }

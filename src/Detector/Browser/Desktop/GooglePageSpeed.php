@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\GooglePageSpeed as GooglePageSpeedB
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GooglePageSpeed
-    extends GooglePageSpeedBase
+class GooglePageSpeed extends GooglePageSpeedBase
 {
     // nothing to do here
 }

@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\AtomicBrowser as DefaultAtomicBrows
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AtomicBrowser
-    extends DefaultAtomicBrowser
+class AtomicBrowser extends DefaultAtomicBrowser
 {
     // nothing to do here
 }

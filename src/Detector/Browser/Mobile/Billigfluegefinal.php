@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Billigfluegefinal as Billigfluegefi
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Billigfluegefinal
-    extends BilligfluegefinalBase
+class Billigfluegefinal extends BilligfluegefinalBase
 {
     // nothing to do here
 }

@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Mercury as MercuryBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Mercury
-    extends MercuryBase
+class Mercury extends MercuryBase
 {
     // nothing to do here
 }

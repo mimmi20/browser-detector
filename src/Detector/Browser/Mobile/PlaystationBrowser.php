@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\PlaystationBrowser as PlaystationBr
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlaystationBrowser
-    extends PlaystationBrowserBase
+class PlaystationBrowser extends PlaystationBrowserBase
 {
     // nothing to do here
 }

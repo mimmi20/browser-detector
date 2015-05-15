@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\YaBrowser as YaBrowserBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class YaBrowser
-    extends YaBrowserBase
+class YaBrowser extends YaBrowserBase
 {
     // nothing to do here
 }

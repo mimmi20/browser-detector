@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\InettvBrowser as InettvBrowserBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class InettvBrowser
-    extends InettvBrowserBase
+class InettvBrowser extends InettvBrowserBase
 {
     // nothing to do here
 }

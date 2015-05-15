@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Openwave as OpenwaveBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Openwave
-    extends OpenwaveBase
+class Openwave extends OpenwaveBase
 {
     // nothing to do here
 }

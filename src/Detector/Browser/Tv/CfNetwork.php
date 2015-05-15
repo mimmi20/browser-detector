@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\CfNetwork as CfNetworkBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CfNetwork
-    extends CfNetworkBase
+class CfNetwork extends CfNetworkBase
 {
     // nothing to do here
 }

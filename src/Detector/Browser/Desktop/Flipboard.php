@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Flipboard as FlipboardBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Flipboard
-    extends FlipboardBase
+class Flipboard extends FlipboardBase
 {
     // nothing to do here
 }

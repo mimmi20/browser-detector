@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Wget as WgetBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Wget
-    extends WgetBase
+class Wget extends WgetBase
 {
     // nothing to do here
 }

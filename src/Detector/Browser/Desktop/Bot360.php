@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Bot360 as Bot360Base;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bot360
-    extends Bot360Base
+class Bot360 extends Bot360Base
 {
     // nothing to do here
 }

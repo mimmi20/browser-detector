@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\IchiroMobileBot as IchiroMobileBotB
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IchiroMobileBot
-    extends IchiroMobileBotBase
+class IchiroMobileBot extends IchiroMobileBotBase
 {
     // nothing to do here
 }

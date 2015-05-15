@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Origin as DefaultOrigin;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Origin
-    extends DefaultOrigin
+class Origin extends DefaultOrigin
 {
     // nothing to do here
 }

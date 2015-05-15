@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\NokiaBrowser as NokiaBrowserBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaBrowser
-    extends NokiaBrowserBase
+class NokiaBrowser extends NokiaBrowserBase
 {
     // nothing to do here
 }

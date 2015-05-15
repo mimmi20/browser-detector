@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Jasmine as JasmineBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Jasmine
-    extends JasmineBase
+class Jasmine extends JasmineBase
 {
     // nothing to do here
 }

@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Coast as CoastBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Coast
-    extends CoastBase
+class Coast extends CoastBase
 {
     // nothing to do here
 }

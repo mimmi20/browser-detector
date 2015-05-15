@@ -41,8 +41,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CoobyBot
-    extends BrowserHandler
+class CoobyBot extends BrowserHandler
 {
     /**
      * the detected browser properties

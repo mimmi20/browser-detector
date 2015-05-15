@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Omniweb as DefaultOmniweb;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Omniweb
-    extends DefaultOmniweb
+class Omniweb extends DefaultOmniweb
 {
     // nothing to do here
 }

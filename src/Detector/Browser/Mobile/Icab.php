@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Icab as IcabBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Icab
-    extends IcabBase
+class Icab extends IcabBase
 {
     // nothing to do here
 }

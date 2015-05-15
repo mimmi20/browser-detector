@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\DeepnetExplorer as DeepnetExplorerB
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DeepnetExplorer
-    extends DeepnetExplorerBase
+class DeepnetExplorer extends DeepnetExplorerBase
 {
     // nothing to do here
 }

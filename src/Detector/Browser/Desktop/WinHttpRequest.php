@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\WinHttpRequest as WinHttpRequestBas
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WinHttpRequest
-    extends WinHttpRequestBase
+class WinHttpRequest extends WinHttpRequestBase
 {
     // nothing to do here
 }

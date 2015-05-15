@@ -36,9 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Subshell
-    extends AbstractCompany
-    implements CompanyInterface
+class Subshell extends AbstractCompany implements CompanyInterface
 {
     /**
      * the name of the company

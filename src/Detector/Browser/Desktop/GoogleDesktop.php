@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\GoogleDesktop as GoogleDesktopBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoogleDesktop
-    extends GoogleDesktopBase
+class GoogleDesktop extends GoogleDesktopBase
 {
     // nothing to do here
 }

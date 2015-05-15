@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Boxee as DefaultBoxee;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Boxee
-    extends DefaultBoxee
+class Boxee extends DefaultBoxee
 {
     // nothing to do here
 }

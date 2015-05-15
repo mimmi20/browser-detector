@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Firefox as FirefoxBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Firefox
-    extends FirefoxBase
+class Firefox extends FirefoxBase
 {
     // nothing to do here
 }

@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\SmartTv as SmartTvBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SmartTv
-    extends SmartTvBase
+class SmartTv extends SmartTvBase
 {
     // nothing to do here
 }

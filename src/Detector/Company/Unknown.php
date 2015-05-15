@@ -36,9 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Unknown
-    extends AbstractCompany
-    implements CompanyInterface
+class Unknown extends AbstractCompany implements CompanyInterface
 {
     // nothing to do
 }

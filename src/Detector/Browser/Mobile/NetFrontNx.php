@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\NetFrontNx as NetFrontNxBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetFrontNx
-    extends NetFrontNxBase
+class NetFrontNx extends NetFrontNxBase
 {
     // nothing to do here
 }

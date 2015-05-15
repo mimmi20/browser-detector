@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Extras4iMovie as DefaultExtras4iMov
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Extras4iMovie
-    extends DefaultExtras4iMovie
+class Extras4iMovie extends DefaultExtras4iMovie
 {
     // nothing to do here
 }

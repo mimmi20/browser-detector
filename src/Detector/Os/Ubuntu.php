@@ -64,9 +64,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ubuntu
-    extends OsHandler
-    implements OsInterface
+class Ubuntu extends OsHandler implements OsInterface
 {
     /**
      * returns the name of the operating system/platform

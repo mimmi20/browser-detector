@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Coverscout as DefaultCoverscout;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Coverscout
-    extends DefaultCoverscout
+class Coverscout extends DefaultCoverscout
 {
     // nothing to do here
 }

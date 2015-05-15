@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Proximic as ProximicBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Proximic
-    extends ProximicBase
+class Proximic extends ProximicBase
 {
     // nothing to do here
 }

@@ -41,8 +41,7 @@ use BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer as IeMobile
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftMobileExplorer
-    extends IeMobileBase
+class MicrosoftMobileExplorer extends IeMobileBase
 {
     // nothing to do here
 }

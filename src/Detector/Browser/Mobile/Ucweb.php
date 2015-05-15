@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Ucweb as UcwebBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ucweb
-    extends UcwebBase
+class Ucweb extends UcwebBase
 {
     // nothing to do here
 }

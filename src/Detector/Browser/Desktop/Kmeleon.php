@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Kmeleon as KmeleonBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Kmeleon
-    extends KmeleonBase
+class Kmeleon extends KmeleonBase
 {
     // nothing to do here
 }

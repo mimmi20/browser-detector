@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Spinn3r as Spinn3rBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Spinn3r
-    extends Spinn3rBase
+class Spinn3r extends Spinn3rBase
 {
     // nothing to do here
 }

@@ -36,9 +36,7 @@ namespace BrowserDetector\Detector\Type\Device;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TvConsole
-    extends AbstractType
-    implements TypeInterface
+class TvConsole extends AbstractType implements TypeInterface
 {
     /**
      * the name of the company

@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\GoogleImageProxy as GoogleImageProx
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoogleImageProxy
-    extends GoogleImageProxyBase
+class GoogleImageProxy extends GoogleImageProxyBase
 {
     // nothing to do here
 }

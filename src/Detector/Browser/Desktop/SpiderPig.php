@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\SpiderPig as SpiderPigBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SpiderPig
-    extends SpiderPigBase
+class SpiderPig extends SpiderPigBase
 {
     // nothing to do here
 }

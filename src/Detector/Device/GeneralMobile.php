@@ -49,9 +49,7 @@ use BrowserDetector\Helper\MobileDevice;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralMobile
-    extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+class GeneralMobile extends DeviceHandler implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties

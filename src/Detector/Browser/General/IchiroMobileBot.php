@@ -46,8 +46,7 @@ use BrowserDetector\Input\UserAgent;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IchiroMobileBot
-    extends BrowserHandler
+class IchiroMobileBot extends BrowserHandler
 {
     /**
      * the detected browser properties

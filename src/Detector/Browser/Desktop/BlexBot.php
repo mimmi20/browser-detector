@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\BlexBot as BlexBotBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlexBot
-    extends BlexBotBase
+class BlexBot extends BlexBotBase
 {
     // nothing to do here
 }

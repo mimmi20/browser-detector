@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Rockmelt as RockmeltBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Rockmelt
-    extends RockmeltBase
+class Rockmelt extends RockmeltBase
 {
     // nothing to do here
 }

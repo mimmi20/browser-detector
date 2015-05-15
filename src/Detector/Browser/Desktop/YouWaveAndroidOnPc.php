@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\YouWaveAndroidOnPc as YouWaveAndroi
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class YouWaveAndroidOnPc
-    extends YouWaveAndroidOnPcBase
+class YouWaveAndroidOnPc extends YouWaveAndroidOnPcBase
 {
     // nothing to do here
 }

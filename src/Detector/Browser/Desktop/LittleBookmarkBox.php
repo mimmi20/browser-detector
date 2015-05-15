@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\LittleBookmarkBox as AppBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LittleBookmarkBox
-    extends AppBase
+class LittleBookmarkBox extends AppBase
 {
     // nothing to do here
 }

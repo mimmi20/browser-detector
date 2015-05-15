@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Opera as DefaultOpera;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Opera
-    extends DefaultOpera
+class Opera extends DefaultOpera
 {
     // nothing to do here
 }

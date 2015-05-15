@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Airmail as AirmailBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Airmail
-    extends AirmailBase
+class Airmail extends AirmailBase
 {
     // nothing to do here
 }

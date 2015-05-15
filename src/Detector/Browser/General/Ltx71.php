@@ -42,8 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ltx71
-    extends BrowserHandler
+class Ltx71 extends BrowserHandler
 {
     /**
      * the detected browser properties

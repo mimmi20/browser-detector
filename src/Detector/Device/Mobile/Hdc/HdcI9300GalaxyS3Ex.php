@@ -42,9 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HdcI9300GalaxyS3Ex
-    extends DeviceHandler
-    implements DeviceInterface
+class HdcI9300GalaxyS3Ex extends DeviceHandler implements DeviceInterface
 {
     /**
      * the detected browser properties

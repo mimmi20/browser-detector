@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Terra as TerraBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Terra
-    extends TerraBase
+class Terra extends TerraBase
 {
     // nothing to do here
 }

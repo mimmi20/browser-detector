@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\LotusNotes as LotusNotesBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LotusNotes
-    extends LotusNotesBase
+class LotusNotes extends LotusNotesBase
 {
     // nothing to do here
 }

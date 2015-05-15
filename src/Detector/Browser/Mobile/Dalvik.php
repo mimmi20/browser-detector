@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Dalvik as DalvikBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Dalvik
-    extends DalvikBase
+class Dalvik extends DalvikBase
 {
     // nothing to do here
 }

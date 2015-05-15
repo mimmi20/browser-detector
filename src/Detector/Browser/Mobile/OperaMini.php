@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\OperaMini as OperaMiniBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OperaMini
-    extends OperaMiniBase
+class OperaMini extends OperaMiniBase
 {
     // nothing to do here
 }

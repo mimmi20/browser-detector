@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Elinks as ElinksBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Elinks
-    extends ElinksBase
+class Elinks extends ElinksBase
 {
     // nothing to do here
 }

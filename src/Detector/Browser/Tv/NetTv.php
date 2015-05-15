@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\NetTv as NetTvBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetTv
-    extends NetTvBase
+class NetTv extends NetTvBase
 {
     // nothing to do here
 }

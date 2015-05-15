@@ -44,8 +44,7 @@ use BrowserDetector\Helper\MobileDevice;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OperaMobile
-    extends BrowserHandler
+class OperaMobile extends BrowserHandler
 {
     /**
      * the detected browser properties

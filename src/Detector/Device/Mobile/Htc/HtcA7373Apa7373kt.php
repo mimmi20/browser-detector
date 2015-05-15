@@ -42,9 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcA7373Apa7373kt
-    extends DeviceHandler
-    implements DeviceInterface
+class HtcA7373Apa7373kt extends DeviceHandler implements DeviceInterface
 {
     /**
      * the detected browser properties

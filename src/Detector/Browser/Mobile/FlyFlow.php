@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\FlyFlow as DefaultFlyFlow;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class FlyFlow
-    extends DefaultFlyFlow
+class FlyFlow extends DefaultFlyFlow
 {
     // nothing to do here
 }

@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\OssProxy as OssProxyBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OssProxy
-    extends OssProxyBase
+class OssProxy extends OssProxyBase
 {
     // nothing to do here
 }

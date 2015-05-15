@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\CrystalSemanticsBot as CrystalSeman
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CrystalSemanticsBot
-    extends CrystalSemanticsBotBase
+class CrystalSemanticsBot extends CrystalSemanticsBotBase
 {
     // nothing to do here
 }

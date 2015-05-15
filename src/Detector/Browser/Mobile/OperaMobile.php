@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\OperaMobile as OperaMobileBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OperaMobile
-    extends OperaMobileBase
+class OperaMobile extends OperaMobileBase
 {
     // nothing to do here
 }

@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\SlimBrowser as SlimBrowserBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SlimBrowser
-    extends SlimBrowserBase
+class SlimBrowser extends SlimBrowserBase
 {
     // nothing to do here
 }

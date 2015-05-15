@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\SiteKiosk as DefaultSiteKiosk;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SiteKiosk
-    extends DefaultSiteKiosk
+class SiteKiosk extends DefaultSiteKiosk
 {
     // nothing to do here
 }

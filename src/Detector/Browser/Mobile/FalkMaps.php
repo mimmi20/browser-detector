@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\FalkMaps as DefaultFalkMaps;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class FalkMaps
-    extends DefaultFalkMaps
+class FalkMaps extends DefaultFalkMaps
 {
     // nothing to do here
 }

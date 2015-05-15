@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Exabot as ExabotBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Exabot
-    extends ExabotBase
+class Exabot extends ExabotBase
 {
     // nothing to do here
 }

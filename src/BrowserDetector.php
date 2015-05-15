@@ -287,4 +287,3 @@ class BrowserDetector
         return $result;
     }
 }
-

@@ -46,8 +46,7 @@ use BrowserDetector\Helper\SpamCrawlerFake;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Firefox
-    extends BrowserHandler
+class Firefox extends BrowserHandler
 {
     /**
      * the detected browser properties

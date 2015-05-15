@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Chromium as DefaultChromium;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chromium
-    extends DefaultChromium
+class Chromium extends DefaultChromium
 {
     // nothing to do here
 }

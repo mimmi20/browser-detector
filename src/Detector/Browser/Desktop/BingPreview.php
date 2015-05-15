@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\BingPreview as BingPreviewBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BingPreview
-    extends BingPreviewBase
+class BingPreview extends BingPreviewBase
 {
     // nothing to do here
 }

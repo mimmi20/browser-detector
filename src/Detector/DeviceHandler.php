@@ -44,8 +44,7 @@ use Psr\Log\LoggerInterface;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class DeviceHandler
-    implements DeviceInterface
+abstract class DeviceHandler implements DeviceInterface
 {
     /**
      * @var string the user agent to handle

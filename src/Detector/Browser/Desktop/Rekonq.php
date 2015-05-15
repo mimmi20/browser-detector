@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Rekonq as RekonqBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Rekonq
-    extends RekonqBase
+class Rekonq extends RekonqBase
 {
     // nothing to do here
 }

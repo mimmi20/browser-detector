@@ -42,9 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HuaweiU8950n
-    extends DeviceHandler
-    implements DeviceInterface
+class HuaweiU8950n extends DeviceHandler implements DeviceInterface
 {
     /**
      * the detected browser properties

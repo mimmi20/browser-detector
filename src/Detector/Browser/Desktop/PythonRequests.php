@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\PythonRequests as DefaultPythonRequ
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PythonRequests
-    extends DefaultPythonRequests
+class PythonRequests extends DefaultPythonRequests
 {
     // nothing to do here
 }

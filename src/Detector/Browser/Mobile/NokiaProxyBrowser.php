@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\NokiaProxyBrowser as NokiaProxyBrow
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaProxyBrowser
-    extends NokiaProxyBrowserBase
+class NokiaProxyBrowser extends NokiaProxyBrowserBase
 {
     // nothing to do here
 }

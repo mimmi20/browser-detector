@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\MicrosoftOutlook as MicrosoftOutloo
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftOutlook
-    extends MicrosoftOutlookBase
+class MicrosoftOutlook extends MicrosoftOutlookBase
 {
     // nothing to do here
 }

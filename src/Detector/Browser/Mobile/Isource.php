@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\Isource as IsourceBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Isource
-    extends IsourceBase
+class Isource extends IsourceBase
 {
     // nothing to do here
 }

@@ -38,8 +38,7 @@ use BrowserDetector\Detector\Browser\General\IcjobsCrawler as IcjobsCrawlerBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IcjobsCrawler
-    extends IcjobsCrawlerBase
+class IcjobsCrawler extends IcjobsCrawlerBase
 {
     // nothing to do here
 }
