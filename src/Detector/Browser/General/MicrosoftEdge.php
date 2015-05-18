@@ -33,12 +33,11 @@ namespace BrowserDetector\Detector\Browser\General;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Edge;
 use BrowserDetector\Detector\EngineHandler;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +45,7 @@ use BrowserDetector\Input\UserAgent;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GooglePageSpeed extends BrowserHandler
+class MicrosoftEdge extends BrowserHandler
 {
     /**
      * the detected browser properties
@@ -55,12 +54,12 @@ class GooglePageSpeed extends BrowserHandler
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
+        'wurflKey'                     => 'msie', // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -72,13 +71,27 @@ class GooglePageSpeed extends BrowserHandler
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains(array('Edge'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the name of the browser
      *
      * @return string
      */
     public function getName()
     {
-        return 'Google Page Speed';
+        return 'Edge';
     }
 
     /**
@@ -88,7 +101,7 @@ class GooglePageSpeed extends BrowserHandler
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company\Microsoft();
     }
 
     /**
@@ -98,7 +111,7 @@ class GooglePageSpeed extends BrowserHandler
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new BrowserType\Browser();
     }
 
     /**
@@ -111,19 +124,30 @@ class GooglePageSpeed extends BrowserHandler
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Google Page Speed');
+        $searches = array('Edge');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 369968046;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Edge
      */
     public function detectEngine()
     {
-        $handler = new UnknownEngine();
+        $handler = new Edge();
         $handler->setUseragent($this->useragent);
 
         return $handler;
@@ -137,7 +161,7 @@ class GooglePageSpeed extends BrowserHandler
      * @param \BrowserDetector\Detector\OsHandler     $os
      * @param \BrowserDetector\Detector\DeviceHandler $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\AlcoholSearch
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftEdge
      */
     public function detectDependProperties(
         EngineHandler $engine,
@@ -145,16 +169,6 @@ class GooglePageSpeed extends BrowserHandler
         DeviceHandler $device
     ) {
         parent::detectDependProperties($engine, $os, $device);
-
-        $agent = str_ireplace('Google Page Speed', '', $this->useragent);
-
-        $detector = new UserAgent();
-        $detector
-            ->setLogger($device->getLogger())
-            ->setAgent($agent)
-        ;
-
-        $device->setRenderAs($detector->getBrowser());
 
         return $this;
     }

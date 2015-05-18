@@ -72,39 +72,6 @@ class Amigo extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContainsAll(array('applewebkit', 'amigo'), true)) {
-            return false;
-        }
-
-        $isNotReallyAnAmigo = array(
-            // using also the KHTML rendering engine
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnAmigo)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string
@@ -148,16 +115,6 @@ class Amigo extends BrowserHandler
         $searches = array('Amigo');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 302204;
     }
 
     /**

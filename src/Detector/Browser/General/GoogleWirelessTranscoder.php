@@ -68,20 +68,6 @@ class GoogleWirelessTranscoder extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Google Wireless Transcoder')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string
@@ -124,16 +110,6 @@ class GoogleWirelessTranscoder extends BrowserHandler
         $searches = array('Google Wireless Transcoder');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 44297;
     }
 
     /**

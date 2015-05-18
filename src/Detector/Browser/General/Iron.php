@@ -72,56 +72,6 @@ class Iron extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContainsAll(array('AppleWebKit', 'Chrome'))) {
-            return false;
-        }
-
-        $isNotReallyAnIron = array(
-            // using also the KHTML rendering engine
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'Maxthon',
-            'MxBrowser',
-            'RockMelt',
-            'Edge',
-            'Dragon',
-            'YaBrowser',
-            'Amigo',
-            // Bots
-            'Google Wireless Transcoder',
-            'Google Web Preview',
-            'HubSpot Webcrawler',
-            'Google Page Speed',
-            'TagInspector',
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnIron)) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains('iron', true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string
@@ -164,16 +114,6 @@ class Iron extends BrowserHandler
         $searches = array('Iron', 'Chrome');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 705618;
     }
 
     /**

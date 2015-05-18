@@ -72,39 +72,6 @@ class CoolNovo extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContainsAll(array('CoolNovo'))) {
-            return false;
-        }
-
-        $isNotReallyAnChromium = array(
-            // using also the KHTML rendering engine
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnChromium)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string
@@ -148,16 +115,6 @@ class CoolNovo extends BrowserHandler
         $searches = array('CoolNovo');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 302204;
     }
 
     /**

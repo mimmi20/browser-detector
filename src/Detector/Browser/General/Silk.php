@@ -72,20 +72,6 @@ class Silk extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Silk')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string
@@ -113,16 +99,6 @@ class Silk extends BrowserHandler
     public function getBrowserType()
     {
         return new BrowserType\Transcoder();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 225706;
     }
 
     /**

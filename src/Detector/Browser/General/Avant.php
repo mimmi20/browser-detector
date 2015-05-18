@@ -72,20 +72,6 @@ class Avant extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('avant', true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string
@@ -126,16 +112,6 @@ class Avant extends BrowserHandler
         $detector->setUserAgent($this->useragent);
 
         return $detector->setVersion('0.0');
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 1983;
     }
 
     /**

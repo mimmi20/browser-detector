@@ -72,52 +72,6 @@ class ComodoDragon extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContainsAll(array('AppleWebKit', 'Chrome'))) {
-            return false;
-        }
-
-        $isNotReallyADragon = array(
-            // using also the KHTML rendering engine
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'Amigo',
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyADragon)) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Comodo Dragon', 'Dragon'))) {
-            $detector = new Version();
-            $detector->setUserAgent($this->useragent);
-            $detector->detectVersion(array('Chrome'));
-
-            if (0 != $detector->getVersion(Version::MINORONLY)) {
-                return true;
-            }
-
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string
@@ -160,16 +114,6 @@ class ComodoDragon extends BrowserHandler
         $searches = array('Comodo Dragon', 'Chrome');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 226543;
     }
 
     /**
