@@ -30,8 +30,8 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\General\NetFront;
-use BrowserDetector\Detector\Browser\General\PlaystationBrowser;
+use BrowserDetector\Detector\Browser\NetFront;
+use BrowserDetector\Detector\Browser\PlaystationBrowser;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;

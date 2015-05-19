@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\General\Firefox;
+use BrowserDetector\Detector\Browser\Firefox;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\General\Firefox
+ * Test class for \BrowserDetector\Detector\Browser\Firefox
  */
 class FirefoxTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\General\Firefox
+     * @var \BrowserDetector\Detector\Browser\Firefox
      */
     private $object = null;
 

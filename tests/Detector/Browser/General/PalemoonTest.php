@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\General\Palemoon;
+use BrowserDetector\Detector\Browser\Palemoon;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\General\Palemoon
+ * Test class for \BrowserDetector\Detector\Browser\Palemoon
  */
 class PalemoonTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\General\Palemoon
+     * @var \BrowserDetector\Detector\Browser\Palemoon
      */
     private $object = null;
 

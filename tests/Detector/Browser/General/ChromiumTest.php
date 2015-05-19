@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\General\Chromium;
+use BrowserDetector\Detector\Browser\Chromium;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\General\Chromium
+ * Test class for \BrowserDetector\Detector\Browser\Chromium
  */
 class ChromiumTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\General\Chromium
+     * @var \BrowserDetector\Detector\Browser\Chromium
      */
     private $object = null;
 

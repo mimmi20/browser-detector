@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\General\NetFront;
+use BrowserDetector\Detector\Browser\NetFront;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\General\NetFront
+ * Test class for \BrowserDetector\Detector\Browser\NetFront
  */
 class NetFrontTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\General\NetFront
+     * @var \BrowserDetector\Detector\Browser\NetFront
      */
     private $object = null;
 

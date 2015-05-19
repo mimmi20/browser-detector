@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
+ * Test class for \BrowserDetector\Detector\Browser\MicrosoftMobileExplorer
  */
 class MicrosoftMobileExplorerTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
+     * @var \BrowserDetector\Detector\Browser\MicrosoftMobileExplorer
      */
     private $object = null;
 

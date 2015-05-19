@@ -30,10 +30,10 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Microsoft;
 
-use BrowserDetector\Detector\Browser\General\MicrosoftOffice;
-use BrowserDetector\Detector\Browser\General\MicrosoftOutlook;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftOffice;
+use BrowserDetector\Detector\Browser\MicrosoftOutlook;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Chain;

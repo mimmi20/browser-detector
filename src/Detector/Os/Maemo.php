@@ -30,10 +30,10 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
-use BrowserDetector\Detector\Browser\Mobile\Android;
-use BrowserDetector\Detector\Browser\Mobile\Chrome;
-use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
+use BrowserDetector\Detector\Browser\Android;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\OperaMobile;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;

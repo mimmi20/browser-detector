@@ -30,55 +30,83 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Browser\Desktop\GooglePageSpeedInsights;
-use BrowserDetector\Detector\Browser\General\Amigo;
-use BrowserDetector\Detector\Browser\General\AndroidWebView;
-use BrowserDetector\Detector\Browser\General\Argclrint;
-use BrowserDetector\Detector\Browser\General\Arora;
-use BrowserDetector\Detector\Browser\General\Avant;
-use BrowserDetector\Detector\Browser\General\BingPreview;
-use BrowserDetector\Detector\Browser\General\Blackberry;
-use BrowserDetector\Detector\Browser\General\Bot360;
-use BrowserDetector\Detector\Browser\General\Chrome;
-use BrowserDetector\Detector\Browser\General\Chromium;
-use BrowserDetector\Detector\Browser\General\ComodoDragon;
-use BrowserDetector\Detector\Browser\General\CoolNovo;
-use BrowserDetector\Detector\Browser\General\CrazyBrowser;
-use BrowserDetector\Detector\Browser\General\CrystalSemanticsBot;
-use BrowserDetector\Detector\Browser\General\DeepnetExplorer;
-use BrowserDetector\Detector\Browser\General\Flock;
-use BrowserDetector\Detector\Browser\General\Galeon;
-use BrowserDetector\Detector\Browser\General\GomezAgent;
-use BrowserDetector\Detector\Browser\General\GoogleEarth;
-use BrowserDetector\Detector\Browser\General\GooglePageSpeed;
-use BrowserDetector\Detector\Browser\General\GoogleWebPreview;
-use BrowserDetector\Detector\Browser\General\GoogleWirelessTranscoder;
-use BrowserDetector\Detector\Browser\General\HubSpotWebcrawler;
-use BrowserDetector\Detector\Browser\General\InettvBrowser;
-use BrowserDetector\Detector\Browser\General\Iron;
-use BrowserDetector\Detector\Browser\General\Lunascape;
-use BrowserDetector\Detector\Browser\General\Maxthon;
-use BrowserDetector\Detector\Browser\General\MicrosoftEdge;
-use BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\General\MicrosoftOffice;
-use BrowserDetector\Detector\Browser\General\MicrosoftOutlook;
-use BrowserDetector\Detector\Browser\General\MqqBrowser;
-use BrowserDetector\Detector\Browser\General\MsieCrawler;
-use BrowserDetector\Detector\Browser\General\Opera;
-use BrowserDetector\Detector\Browser\General\OperaMini;
-use BrowserDetector\Detector\Browser\General\OperaMobile;
-use BrowserDetector\Detector\Browser\General\PagePeeker;
-use BrowserDetector\Detector\Browser\General\Palemoon;
-use BrowserDetector\Detector\Browser\General\Silk;
-use BrowserDetector\Detector\Browser\General\SlimBrowser;
-use BrowserDetector\Detector\Browser\General\TagInspectorBot;
-use BrowserDetector\Detector\Browser\General\Ucweb;
-use BrowserDetector\Detector\Browser\General\WebtvMsntv;
-use BrowserDetector\Detector\Browser\General\YaBrowser;
+use BrowserDetector\Detector\Browser\AdbeatBot;
+use BrowserDetector\Detector\Browser\Amigo;
+use BrowserDetector\Detector\Browser\AndroidWebView;
+use BrowserDetector\Detector\Browser\Argclrint;
+use BrowserDetector\Detector\Browser\Arora;
+use BrowserDetector\Detector\Browser\Avant;
+use BrowserDetector\Detector\Browser\BingPreview;
+use BrowserDetector\Detector\Browser\Blackberry;
+use BrowserDetector\Detector\Browser\Bot360;
+use BrowserDetector\Detector\Browser\Camino;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\Chromium;
+use BrowserDetector\Detector\Browser\CometBird;
+use BrowserDetector\Detector\Browser\CommonCrawl;
+use BrowserDetector\Detector\Browser\ComodoDragon;
+use BrowserDetector\Detector\Browser\ComodoIceDragon;
+use BrowserDetector\Detector\Browser\CoolNovo;
+use BrowserDetector\Detector\Browser\CrazyBrowser;
+use BrowserDetector\Detector\Browser\CrystalSemanticsBot;
+use BrowserDetector\Detector\Browser\DeepnetExplorer;
+use BrowserDetector\Detector\Browser\Epiphany;
+use BrowserDetector\Detector\Browser\Fennec;
+use BrowserDetector\Detector\Browser\Firebird;
+use BrowserDetector\Detector\Browser\Firefox;
+use BrowserDetector\Detector\Browser\Flock;
+use BrowserDetector\Detector\Browser\Galeon;
+use BrowserDetector\Detector\Browser\GomezAgent;
+use BrowserDetector\Detector\Browser\GoogleEarth;
+use BrowserDetector\Detector\Browser\GoogleImageProxy;
+use BrowserDetector\Detector\Browser\GooglePageSpeed;
+use BrowserDetector\Detector\Browser\GooglePageSpeedInsights;
+use BrowserDetector\Detector\Browser\GoogleWebPreview;
+use BrowserDetector\Detector\Browser\GoogleWebSnippet;
+use BrowserDetector\Detector\Browser\GoogleWirelessTranscoder;
+use BrowserDetector\Detector\Browser\HubSpotWebcrawler;
+use BrowserDetector\Detector\Browser\Iceape;
+use BrowserDetector\Detector\Browser\IceCat;
+use BrowserDetector\Detector\Browser\Icedove;
+use BrowserDetector\Detector\Browser\Iceowl;
+use BrowserDetector\Detector\Browser\Iceweasel;
+use BrowserDetector\Detector\Browser\InettvBrowser;
+use BrowserDetector\Detector\Browser\Iron;
+use BrowserDetector\Detector\Browser\Kmeleon;
+use BrowserDetector\Detector\Browser\Linguatools;
+use BrowserDetector\Detector\Browser\Lunascape;
+use BrowserDetector\Detector\Browser\MaemoBrowser;
+use BrowserDetector\Detector\Browser\Maxthon;
+use BrowserDetector\Detector\Browser\MicrosoftEdge;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftOffice;
+use BrowserDetector\Detector\Browser\MicrosoftOutlook;
+use BrowserDetector\Detector\Browser\MqqBrowser;
+use BrowserDetector\Detector\Browser\MsieCrawler;
+use BrowserDetector\Detector\Browser\NetscapeNavigator;
+use BrowserDetector\Detector\Browser\Nutch;
+use BrowserDetector\Detector\Browser\Opera;
+use BrowserDetector\Detector\Browser\OperaMini;
+use BrowserDetector\Detector\Browser\OperaMobile;
+use BrowserDetector\Detector\Browser\PagePeeker;
+use BrowserDetector\Detector\Browser\Palemoon;
+use BrowserDetector\Detector\Browser\Seamonkey;
+use BrowserDetector\Detector\Browser\Silk;
+use BrowserDetector\Detector\Browser\SlimBrowser;
+use BrowserDetector\Detector\Browser\Spinn3r;
+use BrowserDetector\Detector\Browser\TagInspectorBot;
+use BrowserDetector\Detector\Browser\TenFourFox;
+use BrowserDetector\Detector\Browser\Ucweb;
+use BrowserDetector\Detector\Browser\UnisterTesting;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Browser\WaterFox;
+use BrowserDetector\Detector\Browser\WebtvMsntv;
+use BrowserDetector\Detector\Browser\YaBrowser;
+use BrowserDetector\Detector\Browser\YahooSlurp;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
+use BrowserDetector\Helper\SpamCrawlerFake;
 use BrowserDetector\Helper\Utils;
 
 /**
@@ -303,6 +331,126 @@ class BrowserFactory
 
         if ($utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
             return new Chrome();
+        }
+
+        if ($utils->checkIfContains('Fennec')) {
+            return new Fennec();
+        }
+
+        if ($utils->checkIfContains('seamonkey', true)) {
+            return new Seamonkey();
+        }
+
+        if ($utils->checkIfContains('Navigator')) {
+            return new NetscapeNavigator();
+        }
+
+        if ($utils->checkIfContainsAll(array('Camino', 'Gecko'))) {
+            return new Camino();
+        }
+
+        if ($utils->checkIfContainsAll(array('Gecko', 'Maemo'))) {
+            return new MaemoBrowser();
+        }
+
+        if ($utils->checkIfContainsAll(array('CometBird'))) {
+            return new CometBird();
+        }
+
+        if ($utils->checkIfContains('Epiphany')) {
+            return new Epiphany();
+        }
+
+        if ($utils->checkIfContainsAll(array('IceCat', 'Gecko'))) {
+            return new IceCat();
+        }
+
+        if ($utils->checkIfContains(array('unistertesting', 'unister-test', 'unister-https-test'), true)) {
+            return new UnisterTesting();
+        }
+
+        if ($utils->checkIfContainsAll(array('Iceweasel', 'Gecko'))) {
+            return new Iceweasel();
+        }
+
+        if ($utils->checkIfContainsAll(array('Iceowl', 'Gecko'))) {
+            return new Iceowl();
+        }
+
+        if ($utils->checkIfContainsAll(array('Icedove', 'Gecko'))) {
+            return new Icedove();
+        }
+
+        if ($utils->checkIfContainsAll(array('Iceape', 'Gecko'))) {
+            return new Iceape();
+        }
+
+        if ($utils->checkIfContains(array('Firebird'))) {
+            return new Firebird();
+        }
+
+        if ($utils->checkIfContainsAll(array('Gecko', 'Firefox', 'IceDragon'))) {
+            return new ComodoIceDragon();
+        }
+
+        if ($utils->checkIfContains('TenFourFox')) {
+            return new TenFourFox();
+        }
+
+        if ($utils->checkIfContains('waterfox', true)) {
+            return new WaterFox();
+        }
+
+        if ($utils->checkIfContains('K-Meleon')) {
+            return new Kmeleon();
+        }
+
+        if ($utils->checkIfContains('developers.google.com/+/web/snippet/', true)) {
+            return new GoogleWebSnippet();
+        }
+
+        if ($utils->checkIfContains(array('linguatools'))) {
+            return new Linguatools();
+        }
+
+        if ($utils->checkIfContains('commoncrawl')) {
+            return new CommonCrawl();
+        }
+
+        if ($utils->checkIfContains(array('Nutch'))) {
+            return new Nutch();
+        }
+
+        if ($utils->checkIfContains('GoogleImageProxy')) {
+            return new GoogleImageProxy();
+        }
+
+        if ($utils->checkIfContains(array('Spinn3r'))) {
+            return new Spinn3r();
+        }
+
+        if ($utils->checkIfContains('Yahoo! Slurp')) {
+            return new YahooSlurp();
+        }
+
+        if ($utils->checkIfContains(array('adbeat.com', 'adbeat_bot'))) {
+            return new AdbeatBot();
+        }
+
+        $spamHelper = new SpamCrawlerFake();
+        $spamHelper->setUserAgent($agent);
+
+        $firefoxCodes = array(
+            'Firefox',
+            'Minefield',
+            'Nightly',
+            'Shiretoko',
+            'BonEcho',
+            'Namoroka',
+        );
+
+        if ($utils->checkIfContains($firefoxCodes) && !$spamHelper->isAnonymized()) {
+            return new Firefox();
         }
 
         return new UnknownBrowser();

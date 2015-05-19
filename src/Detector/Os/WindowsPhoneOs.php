@@ -30,10 +30,10 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\Mobile\Opera;
-use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\Opera;
+use BrowserDetector\Detector\Browser\OperaMobile;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Chain;

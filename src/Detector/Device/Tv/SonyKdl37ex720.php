@@ -30,14 +30,14 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
-use BrowserDetector\Detector\Browser\Tv\Boxee;
-use BrowserDetector\Detector\Browser\Tv\HbbTv;
-use BrowserDetector\Detector\Browser\Tv\InettvBrowser;
-use BrowserDetector\Detector\Browser\Tv\NetTv;
-use BrowserDetector\Detector\Browser\Tv\Opera;
-use BrowserDetector\Detector\Browser\Tv\Safari;
-use BrowserDetector\Detector\Browser\Tv\SmartTv;
-use BrowserDetector\Detector\Browser\Tv\SmartTvWebBrowser;
+use BrowserDetector\Detector\Browser\Boxee;
+use BrowserDetector\Detector\Browser\HbbTv;
+use BrowserDetector\Detector\Browser\InettvBrowser;
+use BrowserDetector\Detector\Browser\NetTv;
+use BrowserDetector\Detector\Browser\Opera;
+use BrowserDetector\Detector\Browser\Safari;
+use BrowserDetector\Detector\Browser\SmartTv;
+use BrowserDetector\Detector\Browser\SmartTvWebBrowser;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;

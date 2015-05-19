@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
 
-use BrowserDetector\Detector\Browser\Mobile\NetFront;
+use BrowserDetector\Detector\Browser\NetFront;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;

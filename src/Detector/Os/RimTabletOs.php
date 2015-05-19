@@ -30,11 +30,11 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Mobile\Blackberry;
-use BrowserDetector\Detector\Browser\Mobile\BlackberryPlaybookTablet;
-use BrowserDetector\Detector\Browser\Mobile\MqqBrowser;
-use BrowserDetector\Detector\Browser\Mobile\OperaMini;
-use BrowserDetector\Detector\Browser\Mobile\Ucweb;
+use BrowserDetector\Detector\Browser\Blackberry;
+use BrowserDetector\Detector\Browser\BlackberryPlaybookTablet;
+use BrowserDetector\Detector\Browser\MqqBrowser;
+use BrowserDetector\Detector\Browser\OperaMini;
+use BrowserDetector\Detector\Browser\Ucweb;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
