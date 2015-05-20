@@ -68,20 +68,6 @@ class Akregator extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Akregator')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string

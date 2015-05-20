@@ -69,16 +69,6 @@ class Alcatel extends BrowserHandler
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        return $this->utils->checkIfContains('Alcatel', true);
-    }
-
-    /**
      * gets the name of the browser
      *
      * @return string
