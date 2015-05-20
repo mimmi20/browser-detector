@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\General\Chrome;
 use BrowserDetector\Detector\Engine\BlackBerry;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Edge;

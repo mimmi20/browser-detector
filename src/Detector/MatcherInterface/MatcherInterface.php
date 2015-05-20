@@ -82,7 +82,7 @@ interface MatcherInterface
      *
      * @param mixed  $capabilityValue
      *
-     * @return MatcherInterface
+     * @return DeviceHandler
      * @throws \InvalidArgumentException
      */
     public function setCapability(

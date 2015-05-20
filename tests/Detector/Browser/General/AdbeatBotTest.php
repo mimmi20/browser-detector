@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\AdbeatBot;
+use BrowserDetector\Detector\Browser\General\AdbeatBot;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\AdbeatBot
+ * Test class for \BrowserDetector\Detector\Browser\General\AdbeatBot
  */
 class AdbeatBotTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\AdbeatBot
+     * @var \BrowserDetector\Detector\Browser\General\AdbeatBot
      */
     private $object = null;
 

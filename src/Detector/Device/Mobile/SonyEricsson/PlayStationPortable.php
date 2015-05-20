@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-use BrowserDetector\Detector\Browser\NetFront;
+use BrowserDetector\Detector\Browser\Mobile\NetFront;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
@@ -140,7 +140,7 @@ class PlayStationPortable extends DeviceHandler implements DeviceInterface
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Browser\NetFront
+     * @return \BrowserDetector\Detector\Browser\Mobile\NetFront
      */
     public function detectBrowser()
     {

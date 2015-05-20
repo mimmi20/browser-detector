@@ -40,6 +40,7 @@ use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\OsFactory;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Result;
 

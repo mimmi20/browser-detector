@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\GoogleApp;
+use BrowserDetector\Detector\Browser\General\GoogleApp;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\GoogleApp
+ * Test class for \BrowserDetector\Detector\Browser\General\GoogleApp
  */
 class GoogleAppTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\GoogleApp
+     * @var \BrowserDetector\Detector\Browser\General\GoogleApp
      */
     private $object = null;
 

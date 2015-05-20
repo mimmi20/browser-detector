@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Browser\General;
 
-use BrowserDetector\Detector\Browser\WinHttpRequest;
+use BrowserDetector\Detector\Browser\General\WinHttpRequest;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\WinHttpRequest
+ * Test class for \BrowserDetector\Detector\Browser\General\WinHttpRequest
  */
 class WinHttpRequestTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\WinHttpRequest
+     * @var \BrowserDetector\Detector\Browser\General\WinHttpRequest
      */
     private $object = null;
 

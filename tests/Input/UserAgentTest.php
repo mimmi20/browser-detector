@@ -1,6 +1,8 @@
 <?php
 namespace BrowserDetectorTest\Input;
 
+use BrowserDetector\Detector\Result;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Input\UserAgent;
 
 /**
