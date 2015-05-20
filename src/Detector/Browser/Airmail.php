@@ -68,6 +68,20 @@ class Airmail extends BrowserHandler
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains(array('Airmail'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the name of the browser
      *
      * @return string
@@ -110,6 +124,11 @@ class Airmail extends BrowserHandler
         $searches = array('Airmail');
 
         return $detector->detectVersion($searches);
+    }
+
+    public function getWeight()
+    {
+        return 2116;
     }
 
     /**

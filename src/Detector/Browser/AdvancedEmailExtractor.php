@@ -68,6 +68,20 @@ class AdvancedEmailExtractor extends BrowserHandler
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains('Advanced Email Extractor')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the name of the browser
      *
      * @return string
@@ -110,6 +124,16 @@ class AdvancedEmailExtractor extends BrowserHandler
         $searches = array('Advanced Email Extractor', 'Advanced Email Extractor v');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 282;
     }
 
     /**

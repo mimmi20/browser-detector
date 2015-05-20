@@ -30,20 +30,7 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Browser\A6Indexer;
-use BrowserDetector\Detector\Browser\AbontiBot;
-use BrowserDetector\Detector\Browser\AcoonBot;
 use BrowserDetector\Detector\Browser\AdbeatBot;
-use BrowserDetector\Detector\Browser\Adidxbot;
-use BrowserDetector\Detector\Browser\AdMuncher;
-use BrowserDetector\Detector\Browser\AdobeAIR;
-use BrowserDetector\Detector\Browser\AdvancedEmailExtractor;
-use BrowserDetector\Detector\Browser\AhrefsBot;
-use BrowserDetector\Detector\Browser\AiHitBot;
-use BrowserDetector\Detector\Browser\Airmail;
-use BrowserDetector\Detector\Browser\Akregator;
-use BrowserDetector\Detector\Browser\Alcatel;
-use BrowserDetector\Detector\Browser\AlcoholSearch;
 use BrowserDetector\Detector\Browser\Amigo;
 use BrowserDetector\Detector\Browser\AndroidWebView;
 use BrowserDetector\Detector\Browser\Argclrint;
@@ -464,58 +451,6 @@ class BrowserFactory
 
         if ($utils->checkIfContains($firefoxCodes) && !$spamHelper->isAnonymized()) {
             return new Firefox();
-        }
-
-        if ($utils->checkIfContains('A6-Indexer')) {
-            return new A6Indexer();
-        }
-
-        if ($utils->checkIfContains(array('Abonti'))) {
-            return new AbontiBot();
-        }
-
-        if ($utils->checkIfContains('AcoonBot')) {
-            return new AcoonBot();
-        }
-
-        if ($utils->checkIfContains(array('adidxbot'))) {
-            return new Adidxbot();
-        }
-
-        if ($utils->checkIfContains('Ad Muncher')) {
-            return new AdMuncher();
-        }
-
-        if ($utils->checkIfContains('AdobeAIR')) {
-            return new AdobeAIR();
-        }
-
-        if ($utils->checkIfContains('Advanced Email Extractor')) {
-            return new AdvancedEmailExtractor();
-        }
-
-        if ($utils->checkIfContains('AhrefsBot')) {
-            return new AhrefsBot();
-        }
-
-        if ($utils->checkIfContains('aiHitBot')) {
-            return new AiHitBot();
-        }
-
-        if ($utils->checkIfContains(array('Airmail'))) {
-            return new Airmail();
-        }
-
-        if ($utils->checkIfContains('Akregator')) {
-            return new Akregator();
-        }
-
-        if ($utils->checkIfContains('Alcatel', true)) {
-            return new Alcatel();
-        }
-
-        if ($utils->checkIfContains('Alcohol Search')) {
-            return new AlcoholSearch();
         }
 
         return new UnknownBrowser();
