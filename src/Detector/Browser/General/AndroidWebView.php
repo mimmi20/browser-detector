@@ -69,6 +69,61 @@ class AndroidWebView extends BrowserHandler
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContainsAll(array('Mozilla/', 'Chrome/', 'Version/'))) {
+            return false;
+        }
+
+        $isNotReallyAnChrome = array(
+            // using also the KHTML rendering engine
+            'Arora',
+            'Chromium',
+            'Comodo Dragon',
+            'Flock',
+            'Galeon',
+            'Google Earth',
+            'Iron',
+            'Lunascape',
+            'Maemo',
+            'Maxthon',
+            'MxBrowser',
+            'Midori',
+            'OPR',
+            'PaleMoon',
+            'RockMelt',
+            'Silk',
+            'YaBrowser',
+            // Bots trying to be a Chrome
+            'PagePeeker',
+            'Google Web Preview',
+            'Google Wireless Transcoder',
+            'Google Page Speed',
+            'HubSpot Webcrawler',
+            // Fakes
+            'Mac; Mac OS '
+        );
+
+        if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
+            return false;
+        }
+
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+        $detector->detectVersion(array('Chrome'));
+
+        if (0 != $detector->getVersion(Version::MINORONLY)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the name of the browser
      *
      * @return string
@@ -112,6 +167,16 @@ class AndroidWebView extends BrowserHandler
         $searches = array('Version');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 116398328;
     }
 
     /**

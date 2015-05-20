@@ -68,6 +68,20 @@ class DeepnetExplorer extends BrowserHandler
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains('Deepnet Explorer')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the name of the browser
      *
      * @return string
@@ -113,9 +127,19 @@ class DeepnetExplorer extends BrowserHandler
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Trident
+     * @return \BrowserDetector\Detector\Engine\Tident
      */
     public function detectEngine()
     {

@@ -72,6 +72,20 @@ class GomezAgent extends BrowserHandler
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains(array('GomezAgent'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the name of the browser
      *
      * @return string
@@ -114,6 +128,16 @@ class GomezAgent extends BrowserHandler
         $searches = array('GomezAgent');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 20293749;
     }
 
     /**

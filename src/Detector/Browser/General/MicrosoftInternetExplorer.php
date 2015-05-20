@@ -93,6 +93,81 @@ class MicrosoftInternetExplorer extends BrowserHandler
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains(array('Mozilla/', 'MSIE', 'Trident', 'Edge'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfStartsWith('IE')) {
+            return false;
+        }
+
+        $isNotReallyAnIE = array(
+            'presto',
+            // using also the Trident rendering engine
+            'crazy browser',
+            'flock',
+            'galeon',
+            'lunascape',
+            'maxthon',
+            'mxbrowser',
+            'myie',
+            'opera',
+            'palemoon',
+            'avant',
+            // other Browsers
+            'linux',
+            'msoffice',
+            'outlook',
+            'iemobile',
+            'blackberry',
+            'webtv',
+            'argclrint',
+            'slimbrowser',
+            // mobile IE
+            'xblwp7',
+            'zunewp7',
+            'wpdesktop',
+            'htc_hd2',
+            'gomezagent',
+            'deepnet explorer',
+            // Fakes / Bots
+            'msiecrawler',
+            'mac; mac os ',
+            'bingpreview',
+            'crystalsemanticsbot',
+            '360spider',
+        );
+
+        if ($this->utils->checkIfContains($isNotReallyAnIE, true)
+            && !$this->utils->checkIfContains(
+                array('Bitte Mozilla Firefox verwenden', 'chromeframe')
+            )
+        ) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('Gecko')
+            && !$this->utils->checkIfContains(array('like Gecko', 'rv:11.0'))
+        ) {
+            return false;
+        }
+
+        foreach (array_keys($this->patterns) as $pattern) {
+            if (preg_match($pattern, $this->useragent)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
      * gets the name of the browser
      *
      * @return string
@@ -170,6 +245,16 @@ class MicrosoftInternetExplorer extends BrowserHandler
         }
 
         return $detector->setVersion('');
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 369968046;
     }
 
     /**
