@@ -43,7 +43,9 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PalmPre extends DeviceHandler implements DeviceInterface
+class PalmPre
+    extends DeviceHandler
+    implements DeviceInterface
 {
     /**
      * @var \BrowserDetector\Detector\Company\CompanyInterface

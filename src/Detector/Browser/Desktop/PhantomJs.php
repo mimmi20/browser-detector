@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\PhantomJs as PhantomJsBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PhantomJs extends PhantomJsBase
+class PhantomJs
+    extends PhantomJsBase
 {
     // nothing to do here
 }

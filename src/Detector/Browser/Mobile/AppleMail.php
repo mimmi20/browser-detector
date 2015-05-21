@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\AppleMail as AppleMailBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AppleMail extends AppleMailBase
+class AppleMail
+    extends AppleMailBase
 {
     // nothing to do here
 }

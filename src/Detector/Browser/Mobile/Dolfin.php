@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Dolfin as DolfinBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Dolfin extends DolfinBase
+class Dolfin
+    extends DolfinBase
 {
     // nothing to do here
 }

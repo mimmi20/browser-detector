@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Powermarks as PowermarksBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Powermarks extends PowermarksBase
+class Powermarks
+    extends PowermarksBase
 {
     // nothing to do here
 }

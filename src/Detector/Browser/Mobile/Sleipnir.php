@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Sleipnir as DefaultSleipnir;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Sleipnir extends DefaultSleipnir
+class Sleipnir
+    extends DefaultSleipnir
 {
     // nothing to do here
 }

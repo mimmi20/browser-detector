@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Googlebot as GooglebotBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Googlebot extends GooglebotBase
+class Googlebot
+    extends GooglebotBase
 {
     // nothing to do here
 }

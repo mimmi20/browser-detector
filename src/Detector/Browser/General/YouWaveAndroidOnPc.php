@@ -46,7 +46,8 @@ use BrowserDetector\Input\UserAgent;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class YouWaveAndroidOnPc extends BrowserHandler
+class YouWaveAndroidOnPc
+    extends BrowserHandler
 {
     /**
      * the detected browser properties

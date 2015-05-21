@@ -43,7 +43,8 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Benq extends BrowserHandler
+class Benq
+    extends BrowserHandler
 {
     /**
      * the detected browser properties

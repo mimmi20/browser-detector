@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\MqqBrowser as MqqBrowserBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MqqBrowser extends MqqBrowserBase
+class MqqBrowser
+    extends MqqBrowserBase
 {
     // nothing to do here
 }

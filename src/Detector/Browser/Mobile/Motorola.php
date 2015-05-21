@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Motorola as MotorolaBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Motorola extends MotorolaBase
+class Motorola
+    extends MotorolaBase
 {
     // nothing to do here
 }

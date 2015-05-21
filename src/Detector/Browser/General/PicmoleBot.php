@@ -42,7 +42,8 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PicmoleBot extends BrowserHandler
+class PicmoleBot
+    extends BrowserHandler
 {
     /**
      * the detected browser properties

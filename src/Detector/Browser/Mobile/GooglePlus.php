@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\GooglePlus as GooglePlusBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GooglePlus extends GooglePlusBase
+class GooglePlus
+    extends GooglePlusBase
 {
     // nothing to do here
 }

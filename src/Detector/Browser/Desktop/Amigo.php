@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Amigo as DefaultAmigo;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Amigo extends DefaultAmigo
+class Amigo
+    extends DefaultAmigo
 {
     // nothing to do here
 }

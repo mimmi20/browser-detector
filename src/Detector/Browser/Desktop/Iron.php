@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Iron as IronBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Iron extends IronBase
+class Iron
+    extends IronBase
 {
     // nothing to do here
 }

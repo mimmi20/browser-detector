@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\HbbTv as HbbTvBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HbbTv extends HbbTvBase
+class HbbTv
+    extends HbbTvBase
 {
     // nothing to do here
 }

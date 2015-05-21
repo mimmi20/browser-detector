@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\ComodoDragon as ComodoDragonBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ComodoDragon extends ComodoDragonBase
+class ComodoDragon
+    extends ComodoDragonBase
 {
     // nothing to do here
 }

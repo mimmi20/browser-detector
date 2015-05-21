@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\CoolNovo as CoolNovoBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CoolNovo extends CoolNovoBase
+class CoolNovo
+    extends CoolNovoBase
 {
     // nothing to do here
 }

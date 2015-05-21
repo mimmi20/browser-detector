@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\MicrosoftOfficeProtocolDiscovery as
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftOfficeProtocolDiscovery extends MicrosoftOfficeProtocolDiscoveryBase
+class MicrosoftOfficeProtocolDiscovery
+    extends MicrosoftOfficeProtocolDiscoveryBase
 {
     // nothing to do here
 }

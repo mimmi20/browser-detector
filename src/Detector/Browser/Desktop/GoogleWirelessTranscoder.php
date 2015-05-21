@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\GoogleWirelessTranscoder as GoogleW
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoogleWirelessTranscoder extends GoogleWirelessTranscoderBase
+class GoogleWirelessTranscoder
+    extends GoogleWirelessTranscoderBase
 {
     // nothing to do here
 }

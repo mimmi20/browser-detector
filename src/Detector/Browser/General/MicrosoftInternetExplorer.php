@@ -45,7 +45,8 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftInternetExplorer extends BrowserHandler
+class MicrosoftInternetExplorer
+    extends BrowserHandler
 {
     private $patterns = array(
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',

@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Bot80Legs as Bot80LegsBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bot80Legs extends Bot80LegsBase
+class Bot80Legs
+    extends Bot80LegsBase
 {
     // nothing to do here
 }

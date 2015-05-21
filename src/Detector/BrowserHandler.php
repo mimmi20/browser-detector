@@ -53,7 +53,8 @@ use BrowserDetector\Helper\Utils;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class BrowserHandler implements MatcherInterface, BrowserInterface
+abstract class BrowserHandler
+    implements MatcherInterface, BrowserInterface
 {
     /**
      * @var string the user agent to handle
@@ -98,7 +99,7 @@ abstract class BrowserHandler implements MatcherInterface, BrowserInterface
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Detector\BrowserHandler
+     * @return BrowserHandler
      */
     public function __construct()
     {
@@ -110,7 +111,7 @@ abstract class BrowserHandler implements MatcherInterface, BrowserInterface
      *
      * @param string $userAgent
      *
-     * @return \BrowserDetector\Detector\BrowserHandler
+     * @return BrowserHandler
      */
     public function setUserAgent($userAgent)
     {
@@ -182,7 +183,7 @@ abstract class BrowserHandler implements MatcherInterface, BrowserInterface
      * @param string $capabilityName must be a valid capability name
      * @param mixed  $capabilityValue
      *
-     * @return \BrowserDetector\Detector\BrowserHandler
+     * @return BrowserHandler
      *
      * @throws \InvalidArgumentException
      */

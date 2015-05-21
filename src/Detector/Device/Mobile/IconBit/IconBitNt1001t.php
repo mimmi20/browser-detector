@@ -42,7 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IconBitNt1001t extends DeviceHandler implements DeviceInterface
+class IconBitNt1001t
+    extends DeviceHandler
+    implements DeviceInterface
 {
     /**
      * the detected browser properties

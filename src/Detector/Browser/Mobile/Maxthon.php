@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Maxthon as MaxthonBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Maxthon extends MaxthonBase
+class Maxthon
+    extends MaxthonBase
 {
     // nothing to do here
 }

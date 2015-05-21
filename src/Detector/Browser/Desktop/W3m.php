@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\W3m as W3mBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class W3m extends W3mBase
+class W3m
+    extends W3mBase
 {
     // nothing to do here
 }

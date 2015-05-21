@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Browser360 as DefaultBrowser360;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Browser360 extends DefaultBrowser360
+class Browser360
+    extends DefaultBrowser360
 {
     // nothing to do here
 }

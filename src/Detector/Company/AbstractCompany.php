@@ -36,7 +36,8 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractCompany implements CompanyInterface
+abstract class AbstractCompany
+    implements CompanyInterface
 {
     /**
      * the name of the company

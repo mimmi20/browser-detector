@@ -42,7 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PrestigioPmp7280c3g extends DeviceHandler implements DeviceInterface
+class PrestigioPmp7280c3g
+    extends DeviceHandler
+    implements DeviceInterface
 {
     /**
      * the detected browser properties

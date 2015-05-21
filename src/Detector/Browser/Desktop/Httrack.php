@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Httrack as HttrackBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Httrack extends HttrackBase
+class Httrack
+    extends HttrackBase
 {
     // nothing to do here
 }

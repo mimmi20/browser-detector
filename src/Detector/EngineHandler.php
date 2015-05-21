@@ -43,7 +43,8 @@ use BrowserDetector\Helper\Utils;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class EngineHandler implements EngineInterface
+abstract class EngineHandler
+    implements EngineInterface
 {
     /**
      * @var string the user agent to handle

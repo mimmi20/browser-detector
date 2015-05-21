@@ -48,7 +48,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackBerry extends DeviceHandler implements DeviceInterface, DeviceHasChildrenInterface
+class BlackBerry
+    extends DeviceHandler
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties

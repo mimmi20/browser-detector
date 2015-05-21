@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\DolphinSmalltalkHttpClient as Dolph
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DolphinSmalltalkHttpClient extends DolphinSmalltalkHttpClientBase
+class DolphinSmalltalkHttpClient
+    extends DolphinSmalltalkHttpClientBase
 {
     // nothing to do here
 }

@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\NetNewsWire as NetNewsWireBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetNewsWire extends NetNewsWireBase
+class NetNewsWire
+    extends NetNewsWireBase
 {
     // nothing to do here
 }

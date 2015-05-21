@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Silk as SilkBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Silk extends SilkBase
+class Silk
+    extends SilkBase
 {
     // nothing to do here
 }

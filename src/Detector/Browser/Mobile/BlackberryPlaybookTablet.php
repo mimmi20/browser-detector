@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\BlackberryPlaybookTablet as Blackbe
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackberryPlaybookTablet extends BlackberryPlaybookTabletBase
+class BlackberryPlaybookTablet
+    extends BlackberryPlaybookTabletBase
 {
     // nothing to do here
 }

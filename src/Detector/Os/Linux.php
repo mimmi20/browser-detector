@@ -44,7 +44,9 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Linux extends OsHandler implements OsInterface
+class Linux
+    extends OsHandler
+    implements OsInterface
 {
     /**
      * Returns true if this handler can handle the given $useragent

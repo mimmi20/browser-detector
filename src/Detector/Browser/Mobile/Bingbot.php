@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Bingbot as BingbotBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bingbot extends BingbotBase
+class Bingbot
+    extends BingbotBase
 {
     // nothing to do here
 }

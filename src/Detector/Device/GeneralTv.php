@@ -45,7 +45,9 @@ use BrowserDetector\Helper\Tv as TvHelper;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralTv extends DeviceHandler implements DeviceInterface, DeviceHasChildrenInterface
+class GeneralTv
+    extends DeviceHandler
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties

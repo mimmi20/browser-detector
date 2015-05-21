@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\YacyBot as YacyBotBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class YacyBot extends YacyBotBase
+class YacyBot
+    extends YacyBotBase
 {
     // nothing to do here
 }

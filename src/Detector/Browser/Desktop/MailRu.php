@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\MailRu as MailRuBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MailRu extends MailRuBase
+class MailRu
+    extends MailRuBase
 {
     // nothing to do here
 }

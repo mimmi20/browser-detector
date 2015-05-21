@@ -42,7 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonJ300 extends DeviceHandler implements DeviceInterface
+class SonyEricssonJ300
+    extends DeviceHandler
+    implements DeviceInterface
 {
     /**
      * the detected browser properties

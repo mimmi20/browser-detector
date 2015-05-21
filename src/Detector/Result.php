@@ -42,7 +42,8 @@ use WurflData\Loader;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Result implements \Serializable
+class Result
+    implements \Serializable
 {
     /**
      * should the device render the content like another?

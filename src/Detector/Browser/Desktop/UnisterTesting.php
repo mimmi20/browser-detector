@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\UnisterTesting as UnisterTestingBas
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnisterTesting extends UnisterTestingBase
+class UnisterTesting
+    extends UnisterTestingBase
 {
     // nothing to do here
 }

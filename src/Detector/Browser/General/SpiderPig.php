@@ -45,7 +45,8 @@ use BrowserDetector\Input\UserAgent;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SpiderPig extends BrowserHandler
+class SpiderPig
+    extends BrowserHandler
 {
     /**
      * the detected browser properties

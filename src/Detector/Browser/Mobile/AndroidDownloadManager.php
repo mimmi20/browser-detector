@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\AndroidDownloadManager as AndroidDo
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AndroidDownloadManager extends AndroidDownloadManagerBase
+class AndroidDownloadManager
+    extends AndroidDownloadManagerBase
 {
     // nothing to do here
 }

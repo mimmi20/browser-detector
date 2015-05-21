@@ -42,7 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SprintApa9292kt extends DeviceHandler implements DeviceInterface
+class SprintApa9292kt
+    extends DeviceHandler
+    implements DeviceInterface
 {
     /**
      * the detected browser properties

@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Spector as DefaultSpector;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Spector extends DefaultSpector
+class Spector
+    extends DefaultSpector
 {
     // nothing to do here
 }

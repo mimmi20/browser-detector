@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\AdobeAIR as AdobeAirBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AdobeAIR extends AdobeAirBase
+class AdobeAIR
+    extends AdobeAirBase
 {
     // nothing to do here
 }

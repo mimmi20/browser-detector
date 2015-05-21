@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Palemoon as PalemoonBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Palemoon extends PalemoonBase
+class Palemoon
+    extends PalemoonBase
 {
     // nothing to do here
 }

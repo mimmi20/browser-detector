@@ -47,7 +47,9 @@ use BrowserDetector\Helper\Windows as WindowsHelper;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralDesktop extends DeviceHandler implements DeviceInterface, DeviceHasChildrenInterface
+class GeneralDesktop
+    extends DeviceHandler
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties

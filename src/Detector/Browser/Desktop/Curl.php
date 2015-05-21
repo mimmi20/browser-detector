@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Curl as CurlBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Curl extends CurlBase
+class Curl
+    extends CurlBase
 {
     // nothing to do here
 }

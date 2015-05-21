@@ -38,7 +38,8 @@ use BrowserDetector\Detector\Browser\General\Epiphany as EpiphanyBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Epiphany extends EpiphanyBase
+class Epiphany
+    extends EpiphanyBase
 {
     // nothing to do here
 }

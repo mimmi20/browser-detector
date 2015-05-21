@@ -46,7 +46,8 @@ use BrowserDetector\Input\UserAgent;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GomezAgent extends BrowserHandler
+class GomezAgent
+    extends BrowserHandler
 {
     /**
      * the detected browser properties

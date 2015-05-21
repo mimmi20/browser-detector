@@ -39,7 +39,8 @@ use BrowserDetector\Detector\Browser\General\Omniweb as DefaultOmniweb;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  * @version   SVN: $Id: Omniweb.php 500 2013-04-14 12:00:06Z tmu $
  */
-class Omniweb extends DefaultOmniweb
+class Omniweb
+    extends DefaultOmniweb
 {
     // nothing to do here
 }

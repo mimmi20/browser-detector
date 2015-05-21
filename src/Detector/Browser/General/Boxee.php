@@ -41,7 +41,8 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Boxee extends BrowserHandler
+class Boxee
+    extends BrowserHandler
 {
     /**
      * the detected browser properties
