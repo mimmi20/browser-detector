@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Bits\Os;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
