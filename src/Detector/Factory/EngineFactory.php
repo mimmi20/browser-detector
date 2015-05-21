@@ -45,7 +45,7 @@ use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\U2;
 use BrowserDetector\Detector\Engine\U3;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\Engine\WebKit;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 
