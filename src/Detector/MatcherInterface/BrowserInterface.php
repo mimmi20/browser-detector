@@ -45,6 +45,14 @@ use BrowserDetector\Detector\OsHandler;
 interface BrowserInterface
 {
     /**
+     * returns null, if the browser does not have a specific rendering engine,
+     * returns the Engine Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\EngineHandler
+     */
+    public function detectEngine();
+
+    /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
