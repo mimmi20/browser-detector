@@ -74,9 +74,9 @@ class FacebookApp extends BrowserHandler
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('Facebook') && !$this->utils->checkIfContains(
-            array('fban', 'fbforiphone', 'fbav', 'facebookexternalhit'),
-            true
-        )
+                array('fban', 'fbforiphone', 'fbav', 'facebookexternalhit'),
+                true
+            )
         ) {
             return false;
         }

@@ -80,8 +80,8 @@ class OperaMobile extends BrowserHandler
         $mobileDeviceHelper->setUserAgent($this->useragent);
 
         if (!$this->utils->checkIfContains(
-            array('Opera Mobi', 'Opera Tablet', 'OPR')
-        ) && !($mobileDeviceHelper->isMobile() && $this->utils->checkIfContains(array('Opera', 'OPR')))
+                array('Opera Mobi', 'Opera Tablet', 'OPR')
+            ) && !($mobileDeviceHelper->isMobile() && $this->utils->checkIfContains(array('Opera', 'OPR')))
         ) {
             return false;
         }

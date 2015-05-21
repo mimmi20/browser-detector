@@ -214,8 +214,8 @@ class AndroidOs extends OsHandler implements OsInterface
         }
 
         if ($this->utils->checkIfContains(
-            array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
-        ) && !$this->utils->checkIfContains('Android')
+                array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
+            ) && !$this->utils->checkIfContains('Android')
         ) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
