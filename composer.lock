@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2f3fe5856218d8f7d1a4839f4090f3e4",
+    "hash": "affff4f0f38e75418ab1cbc310b4a0aa",
     "packages": [
         {
             "name": "browscap/browscap",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/browscap/browscap.git",
-                "reference": "52607139705df62122c6cddd6480bc29155a22c6"
+                "reference": "0b4319ce229d2e40f90dbb114daec8e027752997"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/browscap/browscap/zipball/52607139705df62122c6cddd6480bc29155a22c6",
-                "reference": "52607139705df62122c6cddd6480bc29155a22c6",
+                "url": "https://api.github.com/repos/browscap/browscap/zipball/0b4319ce229d2e40f90dbb114daec8e027752997",
+                "reference": "0b4319ce229d2e40f90dbb114daec8e027752997",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
             "keywords": [
                 "Browscap"
             ],
-            "time": "2015-05-11 07:28:55"
+            "time": "2015-05-17 20:48:32"
         },
         {
             "name": "mimmi20/wurfl-data",
@@ -1425,7 +1425,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=5.5.0"
     },
     "platform-dev": []
 }
