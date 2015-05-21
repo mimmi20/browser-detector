@@ -78,6 +78,58 @@ class AndroidOs
     implements OsInterface
 {
     /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        $noAndroid = array(
+            'SymbianOS',
+            'SymbOS',
+            'Symbian',
+            'Series 60',
+            'S60V3',
+            'Bada',
+            'MeeGo',
+            'BlackBerry; U; ',
+            'webOS',
+            'hpwOS',
+            'like Android',
+            'BB10',
+            'Windows Phone'
+        );
+
+        if ($this->utils->checkIfContains($noAndroid)) {
+            return false;
+        }
+
+        $firefoxOshelper = new FirefoxOsHelper();
+        $firefoxOshelper->setUserAgent($this->useragent);
+
+        if ($firefoxOshelper->isFirefoxOs()) {
+            return false;
+        }
+
+        $safariHelper = new SafariHelper();
+        $safariHelper->setUserAgent($this->useragent);
+
+        if ($this->utils->checkIfContains(
+                array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;')
+            ) || $safariHelper->isMobileAsSafari()
+        ) {
+            return true;
+        }
+
+        $doMatch = preg_match('/Linux; U; (\d+[\d\.]+)/', $this->useragent, $matches);
+        if ($doMatch && $matches[1] >= 4) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -133,6 +185,16 @@ class AndroidOs
     public function getManufacturer()
     {
         return new Company\Google();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 44624696;
     }
 
     /**

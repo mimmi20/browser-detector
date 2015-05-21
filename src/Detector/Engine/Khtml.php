@@ -201,6 +201,24 @@ class Khtml
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContainsAll(array('KHTML', 'Konqueror'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('Trident', 'Presto', 'AppleWebKit', 'WebKit', 'CFNetwork'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the name of the platform
      *
      * @return string
@@ -233,5 +251,15 @@ class Khtml
         $searches = array('KHTML');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 36711;
     }
 }

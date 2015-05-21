@@ -200,6 +200,38 @@ class BlackBerry
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains('BlackBerry')) {
+            return false;
+        }
+
+        $noBlackBerryEngines = array(
+            'KHTML',
+            'AppleWebKit',
+            'WebKit',
+            'Gecko',
+            'Presto',
+            'RGAnalytics',
+            'libwww',
+            'iPhone',
+            'Firefox',
+            'Mozilla/5.0 (en)',
+            'Trident'
+        );
+
+        if ($this->utils->checkIfContains($noBlackBerryEngines)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the name of the platform
      *
      * @return string
@@ -217,5 +249,15 @@ class BlackBerry
     public function getManufacturer()
     {
         return new Company\Rim();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 37238;
     }
 }

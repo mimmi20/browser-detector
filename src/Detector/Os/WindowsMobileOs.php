@@ -58,6 +58,42 @@ class WindowsMobileOs
     implements OsInterface
 {
     /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if ($this->utils->checkIfContains(array('Windows Phone OS', 'ZuneWP7', 'XBLWP7', 'WPDesktop'))) {
+            return false;
+        }
+
+        $mobileDeviceHelper = new MobileDevice();
+        $mobileDeviceHelper->setUserAgent($this->useragent);
+
+        $windowsHelper = new WindowsHelper();
+        $windowsHelper->setUserAgent($this->useragent);
+
+        if (!$windowsHelper->isMobileWindows() && !($windowsHelper->isWindows() && $mobileDeviceHelper->isMobile(
+                ))
+        ) {
+            return false;
+        }
+
+        $doMatch = preg_match('/Windows Phone ([\d\.]+)/', $this->useragent, $matches);
+        if ($doMatch && $matches[1] >= 7) {
+            return false;
+        }
+
+        $doMatch = preg_match('/mobile version([\d]+)/', $this->useragent, $matches);
+        if ($doMatch && $matches[1] >= 70) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -102,6 +138,16 @@ class WindowsMobileOs
     public function getManufacturer()
     {
         return new Company\Microsoft();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 42347;
     }
 
     /**

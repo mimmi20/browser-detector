@@ -200,6 +200,39 @@ class Tasman
     );
 
     /**
+     * Returns true if this handler can handle the given user agent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        $noTridentEngines = array(
+            'KHTML',
+            'AppleWebKit',
+            'WebKit',
+            'Gecko',
+            'Presto',
+            'RGAnalytics',
+            'libwww',
+            'iPhone',
+            'Firefox',
+            'Mozilla/5.0 (en)',
+            'Trident'
+        );
+
+        if ($this->utils->checkIfContains($noTridentEngines)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('Mozilla/') && $this->utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
+        ) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * gets the name of the platform
      *
      * @return string
@@ -217,5 +250,15 @@ class Tasman
     public function getManufacturer()
     {
         return new Company\Apple();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 93;
     }
 }

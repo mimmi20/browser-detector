@@ -76,6 +76,42 @@ class Ios
     implements OsInterface
 {
     /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        $ios = array(
+            'IphoneOSX',
+            'iPhone OS',
+            'like Mac OS X',
+            'iPad',
+            'IPad',
+            'iPhone',
+            'iPod',
+            'CPU OS',
+            'CPU iOS',
+            'IUC(U;iOS'
+        );
+
+        if (!$this->utils->checkIfContains($ios)) {
+            return false;
+        }
+
+        $otherOs = array(
+            'Darwin',
+            'Windows Phone'
+        );
+
+        if ($this->utils->checkIfContains($otherOs)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -125,6 +161,16 @@ class Ios
     public function getManufacturer()
     {
         return new Company\Apple();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 66458261;
     }
 
     /**
