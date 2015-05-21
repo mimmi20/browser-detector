@@ -49,6 +49,28 @@ class Macosx
     implements OsInterface
 {
     /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains(array('Macintosh', 'Mac OS X'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('like Mac OS X', 'iPhone OS'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('darwin', true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -93,5 +115,15 @@ class Macosx
     public function getManufacturer()
     {
         return new Company\Apple();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 35975963;
     }
 }

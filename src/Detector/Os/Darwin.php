@@ -71,6 +71,20 @@ class Darwin
     implements OsInterface
 {
     /**
+     * Returns true if this handler can handle the given $useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains('darwin', true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -103,6 +117,16 @@ class Darwin
     public function getManufacturer()
     {
         return new Company\Apple();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 70150;
     }
 
     /**
