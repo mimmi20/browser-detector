@@ -42,3 +42,4 @@ class MicrosoftOfficeProtocolDiscovery extends MicrosoftOfficeProtocolDiscoveryB
 {
     // nothing to do here
 }
+

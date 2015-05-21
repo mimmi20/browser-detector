@@ -42,3 +42,4 @@ class ComodoIceDragon extends ComodoIceDragonBase
 {
     // nothing to do here
 }
+

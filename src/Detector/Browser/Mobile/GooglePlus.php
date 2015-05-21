@@ -42,3 +42,4 @@ class GooglePlus extends GooglePlusBase
 {
     // nothing to do here
 }
+

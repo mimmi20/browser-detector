@@ -108,3 +108,4 @@ class Benq extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
+

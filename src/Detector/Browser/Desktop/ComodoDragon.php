@@ -42,3 +42,4 @@ class ComodoDragon extends ComodoDragonBase
 {
     // nothing to do here
 }
+

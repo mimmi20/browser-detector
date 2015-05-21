@@ -42,3 +42,4 @@ class ThumbShotsBot extends ThumbShotsBotBase
 {
     // nothing to do here
 }
+

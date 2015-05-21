@@ -153,3 +153,4 @@ class SmartTvWebBrowser extends BrowserHandler
         return $handler;
     }
 }
+

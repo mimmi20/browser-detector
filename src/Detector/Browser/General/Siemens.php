@@ -108,3 +108,4 @@ class Siemens extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
+

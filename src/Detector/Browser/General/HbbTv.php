@@ -157,3 +157,4 @@ class HbbTv extends BrowserHandler
         return $handler;
     }
 }
+

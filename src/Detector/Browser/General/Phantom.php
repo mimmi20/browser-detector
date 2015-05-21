@@ -176,3 +176,4 @@ class Phantom extends BrowserHandler
         return $this;
     }
 }
+

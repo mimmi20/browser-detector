@@ -42,3 +42,4 @@ class OperaMini extends OperaMiniBase
 {
     // nothing to do here
 }
+

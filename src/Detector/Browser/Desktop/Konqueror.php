@@ -42,3 +42,4 @@ class Konqueror extends KonquerorBase
 {
     // nothing to do here
 }
+

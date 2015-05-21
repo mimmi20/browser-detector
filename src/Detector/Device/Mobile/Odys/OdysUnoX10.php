@@ -233,3 +233,4 @@ class OdysUnoX10 extends DeviceHandler implements DeviceInterface
         return $this;
     }
 }
+

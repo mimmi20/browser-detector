@@ -81,3 +81,4 @@ class Os2 extends OsHandler implements OsInterface
         return new Company\Ibm();
     }
 }
+

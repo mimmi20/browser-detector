@@ -42,3 +42,4 @@ class GoogleWebPreview extends GoogleWebPreviewBase
 {
     // nothing to do here
 }
+

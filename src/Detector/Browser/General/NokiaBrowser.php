@@ -215,3 +215,4 @@ class NokiaBrowser extends BrowserHandler
         return $this;
     }
 }
+

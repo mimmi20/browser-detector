@@ -165,3 +165,4 @@ class ZteBaseTab extends DeviceHandler implements DeviceInterface
         return $detector->detectVersion($searches);
     }
 }
+

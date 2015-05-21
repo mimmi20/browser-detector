@@ -42,3 +42,4 @@ class SpiderPig extends SpiderPigBase
 {
     // nothing to do here
 }
+

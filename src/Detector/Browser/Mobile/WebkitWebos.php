@@ -42,3 +42,4 @@ class WebkitWebos extends WebkitWebosBase
 {
     // nothing to do here
 }
+

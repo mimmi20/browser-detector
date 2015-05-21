@@ -234,3 +234,4 @@ class SamsungGti9192 extends DeviceHandler implements DeviceInterface
         return $this;
     }
 }
+

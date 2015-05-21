@@ -42,3 +42,4 @@ class OnePassword extends OnePasswordBase
 {
     // nothing to do here
 }
+

@@ -42,3 +42,4 @@ class DolphinSmalltalkHttpClient extends DolphinSmalltalkHttpClientBase
 {
     // nothing to do here
 }
+

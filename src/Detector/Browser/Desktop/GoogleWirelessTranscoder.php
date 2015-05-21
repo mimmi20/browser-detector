@@ -42,3 +42,4 @@ class GoogleWirelessTranscoder extends GoogleWirelessTranscoderBase
 {
     // nothing to do here
 }
+

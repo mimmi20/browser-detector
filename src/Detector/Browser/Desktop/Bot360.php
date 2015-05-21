@@ -42,3 +42,4 @@ class Bot360 extends Bot360Base
 {
     // nothing to do here
 }
+

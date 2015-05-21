@@ -42,3 +42,4 @@ class Rekonq extends RekonqBase
 {
     // nothing to do here
 }
+

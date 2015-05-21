@@ -42,3 +42,4 @@ class YacyBot extends YacyBotBase
 {
     // nothing to do here
 }
+

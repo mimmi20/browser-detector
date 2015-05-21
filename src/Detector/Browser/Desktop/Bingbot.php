@@ -42,3 +42,4 @@ class Bingbot extends BingbotBase
 {
     // nothing to do here
 }
+

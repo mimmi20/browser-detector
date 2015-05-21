@@ -176,3 +176,4 @@ class MaemoBrowser extends BrowserHandler
         return $handler;
     }
 }
+

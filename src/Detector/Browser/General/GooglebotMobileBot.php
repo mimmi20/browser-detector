@@ -189,3 +189,4 @@ class GooglebotMobileBot extends BrowserHandler
         return $handler;
     }
 }
+

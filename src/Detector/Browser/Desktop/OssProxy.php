@@ -42,3 +42,4 @@ class OssProxy extends OssProxyBase
 {
     // nothing to do here
 }
+

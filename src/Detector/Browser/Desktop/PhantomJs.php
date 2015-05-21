@@ -42,3 +42,4 @@ class PhantomJs extends PhantomJsBase
 {
     // nothing to do here
 }
+

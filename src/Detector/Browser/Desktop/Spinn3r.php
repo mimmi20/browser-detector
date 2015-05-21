@@ -42,3 +42,4 @@ class Spinn3r extends Spinn3rBase
 {
     // nothing to do here
 }
+

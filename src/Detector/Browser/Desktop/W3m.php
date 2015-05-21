@@ -42,3 +42,4 @@ class W3m extends W3mBase
 {
     // nothing to do here
 }
+

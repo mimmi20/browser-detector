@@ -202,3 +202,4 @@ class Chain
         return $handler;
     }
 }
+

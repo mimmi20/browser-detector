@@ -127,3 +127,4 @@ class GoogleTv extends BrowserHandler
         return $handler;
     }
 }
+

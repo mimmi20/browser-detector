@@ -42,3 +42,4 @@ class Icab extends IcabBase
 {
     // nothing to do here
 }
+

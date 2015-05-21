@@ -42,3 +42,4 @@ class MicrosoftOffice extends MicrosoftOfficeBase
 {
     // nothing to do here
 }
+

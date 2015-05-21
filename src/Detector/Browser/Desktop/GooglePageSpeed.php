@@ -42,3 +42,4 @@ class GooglePageSpeed extends GooglePageSpeedBase
 {
     // nothing to do here
 }
+

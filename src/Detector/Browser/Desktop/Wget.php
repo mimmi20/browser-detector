@@ -42,3 +42,4 @@ class Wget extends WgetBase
 {
     // nothing to do here
 }
+

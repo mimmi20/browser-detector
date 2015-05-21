@@ -108,3 +108,4 @@ class SPV extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
+

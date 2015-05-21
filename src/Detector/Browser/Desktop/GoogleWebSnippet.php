@@ -42,3 +42,4 @@ class GoogleWebSnippet extends GoogleWebSnippetBase
 {
     // nothing to do here
 }
+

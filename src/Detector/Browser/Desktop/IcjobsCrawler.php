@@ -42,3 +42,4 @@ class IcjobsCrawler extends IcjobsCrawlerBase
 {
     // nothing to do here
 }
+

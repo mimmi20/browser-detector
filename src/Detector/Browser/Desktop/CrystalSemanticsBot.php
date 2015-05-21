@@ -42,3 +42,4 @@ class CrystalSemanticsBot extends CrystalSemanticsBotBase
 {
     // nothing to do here
 }
+

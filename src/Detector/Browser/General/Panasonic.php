@@ -108,3 +108,4 @@ class Panasonic extends BrowserHandler
         return new BrowserType\Browser();
     }
 }
+

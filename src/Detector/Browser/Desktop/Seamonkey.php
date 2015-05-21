@@ -42,3 +42,4 @@ class Seamonkey extends SeamonkeyBase
 {
     // nothing to do here
 }
+

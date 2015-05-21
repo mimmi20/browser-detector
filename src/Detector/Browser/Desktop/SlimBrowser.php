@@ -42,3 +42,4 @@ class SlimBrowser extends SlimBrowserBase
 {
     // nothing to do here
 }
+

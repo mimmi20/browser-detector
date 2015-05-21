@@ -42,3 +42,4 @@ class Elinks extends ElinksBase
 {
     // nothing to do here
 }
+
