@@ -78,6 +78,26 @@ abstract class OsHandler
     }
 
     /**
+     * Returns true if this handler can handle the given useragent
+     *
+     * @return bool
+     */
+    public function canHandle()
+    {
+        return false;
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 1;
+    }
+
+    /**
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *

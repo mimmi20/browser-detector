@@ -76,33 +76,6 @@ class EngineFactory
             return new Edge();
         }
 
-        if ($utils->checkIfContains(array('Presto', 'Opera'))) {
-            return new Presto();
-        }
-
-        if ($utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))) {
-            return new Tasman();
-        }
-
-        $trident = false;
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $agent, $matches);
-
-        if ($doMatch) {
-            if (($matches[1] == 7 && $utils->checkIfContains('Gecko'))
-                || ($matches[1] < 7 && !$utils->checkIfContains('Gecko'))
-            ) {
-                $trident = true;
-            }
-        } elseif ($utils->checkIfContains('Mozilla/')
-            && $utils->checkIfContains(array('MSIE', 'Trident'))
-        ) {
-            $trident = true;
-        }
-
-        if ($trident) {
-            return new Trident();
-        }
-
         if ($utils->checkIfContains(array('U2/'))) {
             return new U2();
         }
@@ -130,6 +103,33 @@ class EngineFactory
 
         if ($utils->checkIfContainsAll(array('KHTML', 'Konqueror'))) {
             return new Khtml();
+        }
+
+        if ($utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))) {
+            return new Tasman();
+        }
+
+        $trident = false;
+        $doMatch = preg_match('/Trident\/([\d\.]+)/', $agent, $matches);
+
+        if ($doMatch) {
+            if (($matches[1] == 7 && $utils->checkIfContains('Gecko'))
+                || ($matches[1] < 7 && !$utils->checkIfContains('Gecko'))
+            ) {
+                $trident = true;
+            }
+        } elseif ($utils->checkIfContains('Mozilla/')
+            && $utils->checkIfContains(array('MSIE', 'Trident'))
+        ) {
+            $trident = true;
+        }
+
+        if ($trident) {
+            return new Trident();
+        }
+
+        if ($utils->checkIfContains(array('Presto', 'Opera'))) {
+            return new Presto();
         }
 
         if ($utils->checkIfContains(array('Gecko', 'Firefox'))) {
