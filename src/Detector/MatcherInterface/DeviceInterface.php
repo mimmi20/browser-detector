@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\MatcherInterface;
 
 use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\EngineHandler;
+use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Result;
 use Psr\Log\LoggerInterface;
@@ -51,14 +51,14 @@ interface DeviceInterface
      * or the operating system
      *
      * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
+     * @param \BrowserDetector\Detector\Engine         $engine
      * @param \BrowserDetector\Detector\OsHandler      $os
      *
      * @return DeviceInterface
      */
     public function detectDependProperties(
         BrowserHandler $browser,
-        EngineHandler $engine,
+        Engine $engine,
         OsHandler $os
     );
 

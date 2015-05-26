@@ -1476,18 +1476,18 @@ class Result
     /**
      * Returns the value of a given capability name for the current device
      *
-     * @param \BrowserDetector\Detector\MatcherInterface\DeviceInterface $device
-     * @param OsHandler                                                  $os
-     * @param BrowserHandler                                             $browser
-     * @param EngineHandler                                              $engine
+     * @param \BrowserDetector\Detector\DeviceHandler  $device
+     * @param \BrowserDetector\Detector\OsHandler      $os
+     * @param \BrowserDetector\Detector\BrowserHandler $browser
+     * @param \BrowserDetector\Detector\Engine         $engine
      *
-     * @return Result
+     * @return \BrowserDetector\Detector\Result
      */
     public function setDetectionResult(
-        MatcherInterface\DeviceInterface $device,
+        DeviceHandler $device,
         OsHandler $os,
         BrowserHandler $browser,
-        EngineHandler $engine
+        Engine $engine
     ) {
         if ($device->getDeviceType()->isMobile()) {
             $wurflKey = $device->getCapability('wurflKey');
@@ -1822,7 +1822,7 @@ class Result
                         $value = $value->getBrandName();
                         break;
                     case 'renderingengine_version':
-                        $value = $engine->detectVersion();
+                        $value = $engine->getVersion();
                         break;
                     case 'renderingengine_name':
                         $value = $engine->getName();

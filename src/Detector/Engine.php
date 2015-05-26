@@ -27,13 +27,7 @@
 
 namespace BrowserDetector\Detector;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\MatcherInterface\EngineInterface;
-use BrowserDetector\Detector\OsHandler;
-use BrowserDetector\Detector\Version;
 
 /**
  * Engine
@@ -115,12 +109,14 @@ class Engine
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return string Capability value
+     * @return string|int|bool|null Capability value
      * @throws \InvalidArgumentException
      */
     public function getCapability($capabilityName)
     {
-        $this->checkCapability($capabilityName);
+        if (!array_key_exists($capabilityName, $this->properties)) {
+             return null;
+        }
 
         return $this->properties[$capabilityName];
     }
@@ -133,73 +129,5 @@ class Engine
     public function getCapabilities()
     {
         return $this->properties;
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @throws \InvalidArgumentException
-     */
-    private function checkCapability($capabilityName)
-    {
-        if (empty($capabilityName)) {
-            throw new \InvalidArgumentException(
-                'capability name must not be empty'
-            );
-        }
-
-        if (!array_key_exists($capabilityName, $this->properties)) {
-            throw new \InvalidArgumentException(
-                'no capability named [' . $capabilityName . '] is present.'
-            );
-        }
-    }
-
-    /**
-     * detects the engine version from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
-
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return $detector->setVersion($matches[1]);
-        }
-
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            $version = '';
-
-            switch ((float)$matches[1]) {
-                case 11.0:
-                    $version = '7.0';
-                    break;
-                case 10.0:
-                    $version = '6.0';
-                    break;
-                case 9.0:
-                    $version = '5.0';
-                    break;
-                case 8.0:
-                    $version = '4.0';
-                    break;
-                default:
-                    // do nothing here
-            }
-
-            return $detector->setVersion($version);
-        }
-
-        return $detector->setVersion('');
     }
 }

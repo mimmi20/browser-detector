@@ -30,8 +30,11 @@
 
 return [
     'Edge' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'Edge',
+        'company' => 'Microsoft',
+        'version' => [
+            'Edge'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -180,8 +183,11 @@ return [
         ]
     ],
     'Presto' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'Presto',
+        'company' => 'Opera',
+        'version' => [
+            'Presto'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -330,8 +336,11 @@ return [
         ]
     ],
     'Trident' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'Trident',
+        'company' => 'Microsoft',
+        'version' => [
+            'Trident'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -480,8 +489,11 @@ return [
         ]
     ],
     'U2' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'U2',
+        'company' => 'UcMobile',
+        'version' => [
+            'U2'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -630,8 +642,11 @@ return [
         ]
     ],
     'U3' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'U3',
+        'company' => 'UcMobile',
+        'version' => [
+            'U3'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -780,8 +795,11 @@ return [
         ]
     ],
     'T5' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'T5',
+        'company' => 'Baidu',
+        'version' => [
+            'T5'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -930,8 +948,14 @@ return [
         ]
     ],
     'Blink' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'Blink',
+        'company' => 'Google',
+        'version' => [
+            'AppleWebKit',
+            'WebKit',
+            'CFNetwork',
+            'Browser\/AppleWebKit'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1080,8 +1104,14 @@ return [
         ]
     ],
     'WebKit' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'WebKit',
+        'company' => 'Apple',
+        'version' => [
+            'AppleWebKit',
+            'WebKit',
+            'CFNetwork',
+            'Browser\/AppleWebKit'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1230,8 +1260,11 @@ return [
         ]
     ],
     'KHTML' => [
-        'name' => 'unknown',
+        'name' => 'KHTML',
         'company' => 'Unknown',
+        'version' => [
+            'KHTML'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1380,8 +1413,11 @@ return [
         ]
     ],
     'Gecko' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'Gecko',
+        'company' => 'MozillaFoundation',
+        'version' => [
+            'rv\:'
+        ],
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1530,8 +1566,8 @@ return [
         ]
     ],
     'NetFront' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'NetFront',
+        'company' => 'Access',
         'properties' => [
             // markup
             'utf8_support'                                    => null,
@@ -1680,8 +1716,8 @@ return [
         ]
     ],
     'BlackBerry' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'BlackBerry',
+        'company' => 'Rim',
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1830,8 +1866,8 @@ return [
         ]
     ],
     'Teleca' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'Teleca',
+        'company' => 'Obigo',
         'properties' => [
             // markup
             'utf8_support'                                    => null,
@@ -1980,8 +2016,8 @@ return [
         ]
     ],
     'Tasman' => [
-        'name' => 'unknown',
-        'company' => 'Unknown',
+        'name' => 'Tasman',
+        'company' => 'Apple',
         'properties' => [
             // markup
             'utf8_support'                                    => null,

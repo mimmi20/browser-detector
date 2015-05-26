@@ -31,7 +31,9 @@
 namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Engine;
+use BrowserDetector\Detector\Browser\General\Chrome;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\Utils;
 
 /**
  * Browser detection class
@@ -53,27 +55,76 @@ class EngineFactory implements FactoryInterface
      */
     public static function detect($agent)
     {
-        $rules      = require 'data/rules/engines.php';
-        $found      = false;
-        $engineName = null;
+        $utils = new Utils();
+        $utils->setUserAgent($agent);
 
-        foreach ($rules as $engineName => $rule) {
-            $rule = '/' . $rule . '/';
-            $matches = array();
+        if ($utils->checkIfContains(array('Edge'))) {
+            $engineKey = 'Edge';
+        } elseif ($utils->checkIfContains(array('U2/'))) {
+            $engineKey = 'U2';
+        } elseif ($utils->checkIfContains(array('U3/'))) {
+            $engineKey = 'U3';
+        } elseif ($utils->checkIfContains(array('T5/'))) {
+            $engineKey = 'T5';
+        } elseif ($utils->checkIfContains(array('AppleWebKit', 'WebKit', 'CFNetwork', 'Safari'))) {
+            $chrome = new Chrome();
+            $chrome->setUserAgent($agent);
 
-            if (preg_match($rule, $agent, $matches)) {
-                $found = true;
-                break;
+            $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
+
+            if ($chromeVersion >= 28) {
+                $engineKey = 'Blink';
+            } else {
+                $engineKey = 'WebKit';
+            }
+        } elseif ($utils->checkIfContainsAll(array('KHTML', 'Konqueror'))) {
+            $engineKey = 'KHTML';
+        } elseif ($utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))) {
+            $engineKey = 'Tasman';
+        } else {
+
+            $trident = false;
+            $doMatch = preg_match('/Trident\/([\d\.]+)/', $agent, $matches);
+
+            if ($doMatch) {
+                if (($matches[1] == 7 && $utils->checkIfContains('Gecko'))
+                    || ($matches[1] < 7 && !$utils->checkIfContains('Gecko'))
+                ) {
+                    $trident = true;
+                }
+            } elseif ($utils->checkIfContains('Mozilla/')
+                && $utils->checkIfContains(array('MSIE', 'Trident'))
+            ) {
+                $trident = true;
+            }
+
+            if ($trident) {
+                $engineKey = 'Trident';
+            } elseif ($utils->checkIfContains(array('Presto', 'Opera'))) {
+                $engineKey = 'Presto';
+            } elseif ($utils->checkIfContains(array('Gecko', 'Firefox'))) {
+                $engineKey = 'Gecko';
+            } elseif ($utils->checkIfContains(
+                    array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3')
+                ) && !$utils->checkIfContains(array('Kindle'))
+            ) {
+                $engineKey = 'NetFront';
+            } elseif ($utils->checkIfContains('BlackBerry')) {
+                $engineKey = 'BlackBerry';
+            } elseif ($utils->checkIfContains(array('Teleca', 'Obigo'))) {
+                $engineKey = 'Teleca';
+            } else {
+                $engineKey = 'UnknownEngine';
             }
         }
 
-        $properties = require 'data/properties/engines.php';
+        $allEnginesProperties = require 'data/properties/engines.php';
 
-        if (!$found || null === $engineName || !isset($properties[$engineName])) {
-            $engineName = 'UnknownEngine';
+        if (!isset($allEnginesProperties[$engineKey])) {
+            $engineKey = 'UnknownEngine';
         }
 
-        $engineProperties = $properties[$engineName];
+        $engineProperties = $allEnginesProperties[$engineKey];
         $manufacturerName = '\\Detector\\Company\\' . $engineProperties['company'];
         $company          = new $manufacturerName();
 
