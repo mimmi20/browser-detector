@@ -167,27 +167,6 @@ abstract class DeviceHandler
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param BrowserHandler $browser
-     * @param EngineHandler  $engine
-     * @param OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        $browser->detectDependProperties($engine, $os, $this);
-        $os->detectDependProperties($browser, $engine, $this);
-
-        return $this;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

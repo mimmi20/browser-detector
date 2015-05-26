@@ -156,25 +156,5 @@ class Phantom
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return Phantom
-     */
-    public function detectDependProperties(
-        EngineHandler $engine,
-        OsHandler $os,
-        DeviceHandler $device
-    ) {
-        $engine->setCapability('https_support', true);
-
-        return $this;
-    }
 }
 

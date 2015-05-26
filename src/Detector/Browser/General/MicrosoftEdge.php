@@ -152,24 +152,4 @@ class MicrosoftEdge extends BrowserHandler
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return \BrowserDetector\Detector\Browser\MicrosoftEdge
-     */
-    public function detectDependProperties(
-        EngineHandler $engine,
-        OsHandler $os,
-        DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        return $this;
-    }
 }

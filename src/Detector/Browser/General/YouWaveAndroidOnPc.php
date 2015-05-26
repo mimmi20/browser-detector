@@ -160,38 +160,4 @@ class YouWaveAndroidOnPc
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        EngineHandler $engine,
-        OsHandler $os,
-        DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        $agent = str_ireplace(
-            array('i9988_custom', 'i9999_custom'),
-            '',
-            $this->useragent
-        );
-
-        $detector = new UserAgent();
-        $detector
-            ->setLogger($device->getLogger())
-            ->setAgent($agent)
-        ;
-
-        $device->setRenderAs($detector->getBrowser());
-
-        return $this;
-    }
 }

@@ -163,30 +163,4 @@ class HtcX515m
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        // wurflkey: htc_evo_3d_ver1_suban40
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('bmp', true);
-
-        //$engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
-    }
 }

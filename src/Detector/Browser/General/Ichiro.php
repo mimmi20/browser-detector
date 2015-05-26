@@ -146,36 +146,6 @@ class Ichiro
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return \BrowserDetector\Detector\Browser\General\Ichiro
-     */
-    public function detectDependProperties(
-        EngineHandler $engine,
-        OsHandler $os,
-        DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        $agent = str_ireplace(array('ichiro/mobile', 'ichiro', 'search.goo'), '', $this->useragent);
-
-        $detector = new UserAgent();
-        $detector
-            ->setLogger($device->getLogger())
-            ->setAgent($agent)
-        ;
-
-        $device->setRenderAs($detector->getBrowser());
-
-        return $this;
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return UnknownEngine

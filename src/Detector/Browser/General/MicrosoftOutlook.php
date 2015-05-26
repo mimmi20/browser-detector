@@ -206,28 +206,4 @@ class MicrosoftOutlook
     {
         return 2839566;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return \BrowserDetector\Detector\Browser\General\MicrosoftOutlook
-     */
-    public function detectDependProperties(
-        EngineHandler $engine,
-        OsHandler $os,
-        DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        $browserVersion = (int)$this->detectInternalVersion();
-
-        $this->setCapability('wurflKey', 'ms_outlook_subua' . $browserVersion);
-
-        return $this;
-    }
 }

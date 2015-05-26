@@ -1828,10 +1828,8 @@ class Result
                         $value = $engine->getName();
                         break;
                     case 'controlcap_is_xhtmlmp_preferred':
-                        $value = ($engine->getCapability('xhtml_support_level') > 0 && strpos(
-                                $engine->getCapability('preferred_markup'),
-                                'html_web'
-                            ) !== 0);
+                        $value = ($engine->getCapability('xhtml_support_level') > 0
+                            && strpos($engine->getCapability('preferred_markup'), 'html_web') !== 0);
                         break;
                     case 'controlcap_is_wml_preferred':
                         $value = ($engine->getCapability('xhtml_support_level') <= 0);

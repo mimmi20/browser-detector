@@ -185,29 +185,4 @@ class Opera
 
         return $engine;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
-     */
-    public function detectDependProperties(
-        EngineHandler $engine,
-        OsHandler $os,
-        DeviceHandler $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
-        $browserVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        $this->setCapability('wurflKey', 'opera_' . (int)$browserVersion);
-        $engine->setCapability('xhtml_table_support', false);
-
-        return $this;
-    }
 }
