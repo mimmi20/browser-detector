@@ -30,8 +30,24 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Engine;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Engine\BlackBerry;
+use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\Edge;
+use BrowserDetector\Detector\Engine\Gecko;
+use BrowserDetector\Detector\Engine\Khtml;
+use BrowserDetector\Detector\Engine\NetFront;
+use BrowserDetector\Detector\Engine\Presto;
+use BrowserDetector\Detector\Engine\T5;
+use BrowserDetector\Detector\Engine\Tasman;
+use BrowserDetector\Detector\Engine\Teleca;
+use BrowserDetector\Detector\Engine\Trident;
+use BrowserDetector\Detector\Engine\U2;
+use BrowserDetector\Detector\Engine\U3;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\Utils;
 
 /**
  * Browser detection class
@@ -42,50 +58,14 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class EngineFactory implements FactoryInterface
+interface FactoryInterface
 {
     /**
      * Gets the information about the rendering engine by User Agent
      *
      * @param string $agent
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     * @return mixed
      */
-    public static function detect($agent)
-    {
-        $rules      = require 'data/rules/engines.php';
-        $found      = false;
-        $engineName = null;
-
-        foreach ($rules as $engineName => $rule) {
-            $rule = '/' . $rule . '/';
-            $matches = array();
-
-            if (preg_match($rule, $agent, $matches)) {
-                $found = true;
-                break;
-            }
-        }
-
-        $properties = require 'data/properties/engines.php';
-
-        if (!$found || null === $engineName || !isset($properties[$engineName])) {
-            $engineName = 'UnknownEngine';
-        }
-
-        $engineProperties = $properties[$engineName];
-        $manufacturerName = '\\Detector\\Company\\' . $engineProperties['company'];
-        $company          = new $manufacturerName();
-
-        $detector = new Version();
-        $detector->setUserAgent($agent);
-
-        if (isset($engineProperties['version'])) {
-            $detector->detectVersion($engineProperties['version']);
-        } else {
-            $detector->setVersion('0.0');
-        }
-
-        return new Engine($engineProperties['name'], $company, $detector, $engineProperties['properties']);
-    }
+    public static function detect($agent);
 }
