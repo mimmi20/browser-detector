@@ -199,29 +199,4 @@ class Chrome
     {
         return 116398328;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @param \BrowserDetector\Detector\OsHandler $os
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    public function detectEngine(OsHandler $os = null)
-    {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if (null !== $os && in_array($os->getName(), array('iOS'))) {
-            $engine = new Webkit();
-        } elseif ($version >= 28) {
-            $engine = new Blink();
-        } else {
-            $engine = new Webkit();
-        }
-
-        $engine->setUseragent($this->useragent);
-
-        return $engine;
-    }
 }

@@ -140,22 +140,4 @@ class NetFrontNx
     {
         return 9846;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\NetFront
-     */
-    public function detectEngine()
-    {
-        $engines = array(new Webkit());
-
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new NetFrontEngine());
-
-        return $chain->detect();
-    }
 }

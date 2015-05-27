@@ -153,36 +153,4 @@ class SonyEricssonLT18iv
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonLT18iv
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-        $engine->setCapability('svgt_1_1', false);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (4.0 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'sonyericsson_lt18i_ver1_subua40iv');
-        }
-
-        return $this;
-    }
 }

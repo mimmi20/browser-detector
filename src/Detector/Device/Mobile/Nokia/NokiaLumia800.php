@@ -152,29 +152,4 @@ class NokiaLumia800
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia800
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-        $engine->setCapability('canvas_support', 'full');
-
-        return $this;
-    }
 }

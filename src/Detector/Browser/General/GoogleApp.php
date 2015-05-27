@@ -138,17 +138,4 @@ class GoogleApp
 
         return $detector->detectVersion($searches);
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
-     */
-    public function detectEngine()
-    {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

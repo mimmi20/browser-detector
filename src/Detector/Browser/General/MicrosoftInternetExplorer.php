@@ -209,30 +209,6 @@ class MicrosoftInternetExplorer
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $engine = $this->detectEngine();
-
-        $engineVersion = (int)$engine->detectVersion()->getVersion(
-            Version::MAJORONLY
-        );
-
-        switch ($engineVersion) {
-            case 4:
-                return $detector->setVersion('8.0');
-                break;
-            case 5:
-                return $detector->setVersion('9.0');
-                break;
-            case 6:
-                return $detector->setVersion('10.0');
-                break;
-            case 7:
-                return $detector->setVersion('11.0');
-                break;
-            default:
-                //nothing to do
-                break;
-        }
-
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
@@ -256,19 +232,5 @@ class MicrosoftInternetExplorer
     public function getWeight()
     {
         return 369968046;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Trident
-     */
-    public function detectEngine()
-    {
-        $handler = new Trident();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

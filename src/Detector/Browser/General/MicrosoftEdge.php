@@ -138,18 +138,4 @@ class MicrosoftEdge extends BrowserHandler
     {
         return 369968046;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Edge
-     */
-    public function detectEngine()
-    {
-        $handler = new Edge();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

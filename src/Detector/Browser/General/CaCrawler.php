@@ -136,18 +136,4 @@ class CaCrawler
 
         return $detector->detectVersion($searches);
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function detectEngine()
-    {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

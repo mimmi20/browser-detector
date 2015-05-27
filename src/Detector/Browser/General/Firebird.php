@@ -178,18 +178,4 @@ class Firebird
     {
         return 3817;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Gecko
-     */
-    public function detectEngine()
-    {
-        $handler = new Gecko();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

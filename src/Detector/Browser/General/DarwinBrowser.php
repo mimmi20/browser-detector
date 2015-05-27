@@ -124,18 +124,4 @@ class DarwinBrowser
     {
         return 990;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
-     */
-    public function detectEngine()
-    {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

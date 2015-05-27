@@ -250,31 +250,4 @@ abstract class BrowserHandler
 
         return $detector->setVersion('');
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System,
-     * returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    public function detectEngine()
-    {
-        $engines = array(
-            new Webkit(),
-            new Gecko(),
-            new Trident(),
-            new Presto(),
-            new Tasman(),
-            new BlackBerry(),
-            new Khtml(),
-            new NetFrontEngine()
-        );
-
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new UnknownEngine());
-
-        return $chain->detect();
-    }
 }

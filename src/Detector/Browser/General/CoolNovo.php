@@ -160,28 +160,4 @@ class CoolNovo
     {
         return 302204;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    public function detectEngine()
-    {
-        $chrome = new Chrome();
-        $chrome->setUserAgent($this->useragent);
-
-        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if ($chromeVersion >= 28) {
-            $engine = new Blink();
-        } else {
-            $engine = new Webkit();
-        }
-
-        $engine->setUseragent($this->useragent);
-
-        return $engine;
-    }
 }

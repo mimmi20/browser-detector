@@ -162,20 +162,6 @@ class MicrosoftMobileExplorer
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Trident
-     */
-    public function detectEngine()
-    {
-        $handler = new Trident();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

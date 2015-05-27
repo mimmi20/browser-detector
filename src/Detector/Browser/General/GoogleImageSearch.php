@@ -142,18 +142,5 @@ class GoogleImageSearch
     {
         return 1945836;
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return UnknownEngine
-     */
-    public function detectEngine()
-    {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }
 

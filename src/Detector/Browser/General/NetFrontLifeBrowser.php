@@ -145,18 +145,4 @@ class NetFrontLifeBrowser
     {
         return 83;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\NetFront
-     */
-    public function detectEngine()
-    {
-        $handler = new NetFrontEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

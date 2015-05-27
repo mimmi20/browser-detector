@@ -171,36 +171,4 @@ class WindowsPhoneOs
 
         return $chain->detect();
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\DeviceHandler  $device
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        DeviceHandler $device
-    ) {
-        parent::detectDependProperties($browser, $engine, $device);
-
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
-            $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
-        }
-
-        $browserVersion = (float)$browser->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if ($browserVersion < 10.0) {
-            $engine->setCapability('is_sencha_touch_ok', false);
-        }
-
-        return $this;
-    }
 }

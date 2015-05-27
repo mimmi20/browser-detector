@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Browser\General\Chrome;
+use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 
@@ -49,16 +50,19 @@ class EngineFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $agent
+     * @param string                              $agent
+     * @param \BrowserDetector\Detector\OsHandler $os
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     * @return \BrowserDetector\Detector\Engine
      */
-    public static function detect($agent)
+    public static function detect($agent, OsHandler $os = null)
     {
         $utils = new Utils();
         $utils->setUserAgent($agent);
 
-        if ($utils->checkIfContains(array('Edge'))) {
+        if (null !== $os && in_array($os->getName(), array('iOS'))) {
+            $engineKey = 'WebKit';
+        } elseif ($utils->checkIfContains(array('Edge'))) {
             $engineKey = 'Edge';
         } elseif ($utils->checkIfContains(array('U2/'))) {
             $engineKey = 'U2';

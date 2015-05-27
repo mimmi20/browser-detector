@@ -53,22 +53,6 @@ interface BrowserInterface
     public function detectEngine();
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\EngineHandler $engine
-     * @param \BrowserDetector\Detector\OsHandler     $os
-     * @param \BrowserDetector\Detector\DeviceHandler $device
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\BrowserInterface
-     */
-    public function detectDependProperties(
-        EngineHandler $engine,
-        OsHandler $os,
-        DeviceHandler $device
-    );
-
-    /**
      * gets the name of the browser
      *
      * @return string

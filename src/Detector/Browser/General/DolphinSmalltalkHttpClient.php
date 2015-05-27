@@ -136,18 +136,4 @@ class DolphinSmalltalkHttpClient
     {
         return 4;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
-     */
-    public function detectEngine()
-    {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

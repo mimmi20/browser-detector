@@ -153,25 +153,4 @@ class Blackberry
     {
         return 216731;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\EngineHandler
-     */
-    public function detectEngine()
-    {
-        $engines = array(
-            new Webkit(),
-            new BlackBerryEngine()
-        );
-
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new UnknownEngine());
-
-        return $chain->detect();
-    }
 }

@@ -108,13 +108,7 @@ class UserAgent
         }
 
         // detect the engine which is used in the browser
-        $engine = EngineFactory::detect($this->agent);
-
-        $this->device->detectDependProperties(
-            $this->browser,
-            $engine,
-            $this->os
-        );
+        $engine = EngineFactory::detect($this->agent, $this->os);
 
         $result = new Result();
 

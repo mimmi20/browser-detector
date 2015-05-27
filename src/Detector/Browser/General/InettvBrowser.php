@@ -136,18 +136,4 @@ class InettvBrowser
     {
         return 1996;
     }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Presto
-     */
-    public function detectEngine()
-    {
-        $handler = new Presto();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

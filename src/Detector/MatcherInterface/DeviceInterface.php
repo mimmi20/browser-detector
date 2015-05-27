@@ -47,22 +47,6 @@ use Psr\Log\LoggerInterface;
 interface DeviceInterface
 {
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\Engine         $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return DeviceInterface
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        Engine $engine,
-        OsHandler $os
-    );
-
-    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return null|\BrowserDetector\Detector\BrowserHandler

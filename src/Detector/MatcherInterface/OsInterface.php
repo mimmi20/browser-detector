@@ -45,22 +45,6 @@ use BrowserDetector\Detector\EngineHandler;
 interface OsInterface
 {
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\DeviceHandler  $device
-     *
-     * @return DeviceHandler
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        DeviceHandler $device
-    );
-
-    /**
      * returns null, if the platform does not have a specific Browser
      * returns the Browser Handler otherwise
      *

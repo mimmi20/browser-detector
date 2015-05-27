@@ -136,17 +136,4 @@ class Findlinks
 
         return $detector->detectVersion($searches);
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\EngineHandler
-     */
-    public function detectEngine()
-    {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

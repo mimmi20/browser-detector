@@ -153,37 +153,4 @@ class NokiaLumia820
 
         return $handler;
     }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\EngineHandler  $engine
-     * @param \BrowserDetector\Detector\OsHandler      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia820
-     */
-    public function detectDependProperties(
-        BrowserHandler $browser,
-        EngineHandler $engine,
-        OsHandler $os
-    ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ((float)$osVersion) {
-            case 8.1:
-                $this->setCapability('wurflKey', 'nokia_lumia_820_ver1_subos81');
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
 }

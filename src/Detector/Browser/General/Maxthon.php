@@ -179,35 +179,4 @@ class Maxthon
     {
         return 497330;
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    public function detectEngine()
-    {
-        if (false !== strpos($this->useragent, 'Trident') || false !== strpos($this->useragent, 'MSIE')) {
-            $engine = new Trident();
-        } elseif (false !== strpos($this->useragent, 'WebKit')) {
-            $chrome = new Chrome();
-            $chrome->setUserAgent($this->useragent);
-
-            $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
-
-            if ($chromeVersion >= 28) {
-                $engine = new Blink();
-            } else {
-                $engine = new Webkit();
-            }
-        } elseif (false !== strpos($this->useragent, 'Gecko')) {
-            $engine = new Gecko();
-        } else {
-            $engine = new UnknownEngine();
-        }
-
-        $engine->setUseragent($this->useragent);
-
-        return $engine;
-    }
 }

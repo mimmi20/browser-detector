@@ -140,17 +140,4 @@ class Libwww
     {
         return 70465;
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function detectEngine()
-    {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }
