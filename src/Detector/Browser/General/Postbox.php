@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Gecko;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -160,19 +160,5 @@ class Postbox
     public function getWeight()
     {
         return 236840;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Gecko
-     */
-    public function detectEngine()
-    {
-        $handler = new Gecko();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Trident;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -138,19 +138,5 @@ class SlimBrowser
     public function getWeight()
     {
         return 4;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Khtml
-     */
-    public function detectEngine()
-    {
-        $handler = new Trident();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

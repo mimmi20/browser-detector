@@ -35,11 +35,9 @@ use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
 use BrowserDetector\Detector\Browser\Mobile\Opera;
 use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
+
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;

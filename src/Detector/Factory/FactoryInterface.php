@@ -30,24 +30,6 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Engine\BlackBerry;
-use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\Edge;
-use BrowserDetector\Detector\Engine\Gecko;
-use BrowserDetector\Detector\Engine\Khtml;
-use BrowserDetector\Detector\Engine\NetFront;
-use BrowserDetector\Detector\Engine\Presto;
-use BrowserDetector\Detector\Engine\T5;
-use BrowserDetector\Detector\Engine\Tasman;
-use BrowserDetector\Detector\Engine\Teleca;
-use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\Engine\U2;
-use BrowserDetector\Detector\Engine\U3;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Utils;
 
 /**
  * Browser detection class

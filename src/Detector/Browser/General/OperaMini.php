@@ -32,10 +32,9 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\Presto;
-use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\OsHandler;
+
+
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -188,28 +187,5 @@ class OperaMini
     public function getWeight()
     {
         return 365459;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @param \BrowserDetector\Detector\OsHandler $os
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    public function detectEngine(OsHandler $os = null)
-    {
-        if (null !== $os && in_array($os->getName(), array('iOS'))) {
-            $engine = new Webkit();
-        } elseif ($this->utils->checkIfContains('WebKit')) {
-            $engine = new Blink();
-        } else {
-            $engine = new Presto();
-        }
-
-        $engine->setUseragent($this->useragent);
-
-        return $engine;
     }
 }

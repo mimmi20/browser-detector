@@ -32,10 +32,8 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\OsHandler;
+
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
@@ -179,19 +177,5 @@ class Safari
     public function getWeight()
     {
         return 93432480;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
-     */
-    public function detectEngine()
-    {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

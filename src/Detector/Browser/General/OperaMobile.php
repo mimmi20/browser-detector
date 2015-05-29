@@ -32,8 +32,8 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\Presto;
+
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
@@ -148,26 +148,5 @@ class OperaMobile
     public function getWeight()
     {
         return 383409;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    public function detectEngine()
-    {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if ($version >= 14) {
-            $engine = new Blink();
-        } else {
-            $engine = new Presto();
-        }
-
-        $engine->setUseragent($this->useragent);
-
-        return $engine;
     }
 }

@@ -30,8 +30,8 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Browser\General\Chrome;
+use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;

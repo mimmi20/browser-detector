@@ -32,13 +32,10 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\OsHandler;
+
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -139,18 +136,5 @@ class UnisterTesting
     public function getWeight()
     {
         return 161860168;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function detectEngine()
-    {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

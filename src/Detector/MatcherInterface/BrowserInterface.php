@@ -30,9 +30,7 @@
 
 namespace BrowserDetector\Detector\MatcherInterface;
 
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
-use BrowserDetector\Detector\OsHandler;
+
 
 /**
  * interface for all browsers to detect
@@ -44,14 +42,6 @@ use BrowserDetector\Detector\OsHandler;
  */
 interface BrowserInterface
 {
-    /**
-     * returns null, if the browser does not have a specific rendering engine,
-     * returns the Engine Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\EngineHandler
-     */
-    public function detectEngine();
-
     /**
      * gets the name of the browser
      *

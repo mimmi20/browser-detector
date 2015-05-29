@@ -140,7 +140,7 @@ class BrowserFactory
      *
      * @return \BrowserDetector\Detector\MatcherInterface\BrowserInterface
      */
-    public static function detectEngine($agent)
+    public static function detect($agent)
     {
         $utils = new Utils();
         $utils->setUserAgent($agent);

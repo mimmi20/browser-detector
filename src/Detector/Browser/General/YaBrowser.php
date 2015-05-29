@@ -32,8 +32,8 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\Webkit;
+
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -136,26 +136,5 @@ class YaBrowser
         $searches = array('YaBrowser');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
-     */
-    public function detectEngine()
-    {
-        $version = $this->detectVersion()->getVersion(Version::MAJORMINOR);
-
-        if ($version >= '1.20') {
-            $engine = new Blink();
-        } else {
-            $engine = new Webkit();
-        }
-
-        $engine->setUseragent($this->useragent);
-
-        return $engine;
     }
 }

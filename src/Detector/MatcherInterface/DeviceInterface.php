@@ -30,9 +30,6 @@
 
 namespace BrowserDetector\Detector\MatcherInterface;
 
-use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Engine;
-use BrowserDetector\Detector\OsHandler;
 use BrowserDetector\Detector\Result;
 use Psr\Log\LoggerInterface;
 

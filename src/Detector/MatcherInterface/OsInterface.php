@@ -30,9 +30,7 @@
 
 namespace BrowserDetector\Detector\MatcherInterface;
 
-use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\EngineHandler;
+
 
 /**
  * interface for all platforms/operating systems to detect

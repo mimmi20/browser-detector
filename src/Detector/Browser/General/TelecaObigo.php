@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Teleca;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -176,20 +175,6 @@ class TelecaObigo
     public function getWeight()
     {
         return 627;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Teleca
-     */
-    public function detectEngine()
-    {
-        $handler = new Teleca();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }
 
