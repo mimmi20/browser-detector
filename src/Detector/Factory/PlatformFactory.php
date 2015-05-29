@@ -110,7 +110,7 @@ use BrowserDetector\Helper\Windows as WindowsHelper;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OsFactory
+class PlatformFactory
 {
     /**
      * Gets the information about the rendering engine by User Agent
@@ -124,31 +124,14 @@ class OsFactory
         $utils = new Utils();
         $utils->setUserAgent($agent);
 
-        $winPhoneCodes = array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone', 'WPDesktop');
+        $platformKey = 'UnknownOs';
 
-        if ($utils->checkIfContains($winPhoneCodes)) {
-            $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
-            if (!$doMatchPhone || $matchesPhone[1] >= 7) {
-                return new WindowsPhoneOs();
-            }
-        }
-
-        $isWindows = false;
+        $isWindows     = false;
         $windowsHelper = new WindowsHelper();
         $windowsHelper->setUserAgent($agent);
 
         $mobileDeviceHelper = new MobileDevice();
         $mobileDeviceHelper->setUserAgent($agent);
-
-        if ($windowsHelper->isMobileWindows()) {
-            $doMatchMobile = preg_match('/mobile version([\d]+)/', $agent, $matchesMobile);
-
-            if ($doMatchMobile && $matchesMobile[1] >= 70) {
-                return new WindowsPhoneOs();
-            }
-
-            return new WindowsMobileOs();
-        }
 
         if (!$windowsHelper->isMobileWindows()
             && $windowsHelper->isWindows()
@@ -157,110 +140,87 @@ class OsFactory
             $isWindows = true;
         }
 
-        if ($isWindows && $utils->checkIfContains(array('ARM;'))) {
-            return new WindowsRt();
-        } elseif ($isWindows) {
-            return new Windows();
-        }
-
-        if ($utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'S60V5'))) {
-            return new Symbianos();
-        }
-
-        if ($utils->checkIfContains('Bada')) {
-            return new Bada();
-        }
-
-        if ($utils->checkIfContains('MeeGo')) {
-            return new MeeGo();
-        }
-
-        if ($utils->checkIfContains(array('maemo', 'linux armv', 'like android', 'linux/x2/r1'), true)) {
-            return new Maemo();
-        }
-
-        if ($utils->checkIfContains(array('BlackBerry', 'BB10'))) {
-            return new RimOs();
-        }
-
-        if ($utils->checkIfContains(array('WebOS', 'hpwOS', 'webOS'))) {
-            return new WebOs();
-        }
-
-        if ($utils->checkIfContains(array('Tizen'))) {
-            return new Tizen();
-        }
-
-        $helper = new FirefoxOsHelper();
-        $helper->setUserAgent($agent);
-
-        if ($helper->isFirefoxOs()) {
-            return new FirefoxOs();
-        }
+        $firefoxOsHelper = new FirefoxOsHelper();
+        $firefoxOsHelper->setUserAgent($agent);
 
         $safariHelper = new SafariHelper();
         $safariHelper->setUserAgent($agent);
 
-        if ($utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;'))
+        $winPhoneCodes = array('Windows Phone OS', 'XBLWP7', 'ZuneWP7', 'Windows Phone', 'WPDesktop');
+
+        if ($utils->checkIfContains($winPhoneCodes)) {
+            $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
+            if (!$doMatchPhone || $matchesPhone[1] >= 7) {
+                $platformKey = 'Windows Phone OS';
+            } else {
+                $platformKey = 'Windows Mobile OS';
+            }
+        } elseif ($windowsHelper->isMobileWindows()) {
+            $doMatchMobile = preg_match('/mobile version([\d]+)/', $agent, $matchesMobile);
+
+            if ($doMatchMobile && $matchesMobile[1] >= 70) {
+                $platformKey = 'Windows Phone OS';
+            } else {
+                $platformKey = 'Windows Mobile OS';
+            }
+        } elseif ($isWindows && $utils->checkIfContains(array('ARM;'))) {
+            $platformKey = 'Windows RT';
+        } elseif ($isWindows) {
+            $platformKey = 'Windows';
+        } elseif ($utils->checkIfContains(array('SymbianOS', 'SymbOS', 'Symbian', 'Series 60', 'S60V3', 'S60V5'))) {
+            $platformKey = 'Symbian OS';
+        } elseif ($utils->checkIfContains('Bada')) {
+            $platformKey = 'Bada';
+        } elseif ($utils->checkIfContains('MeeGo')) {
+            $platformKey = 'MeeGo';
+        } elseif ($utils->checkIfContains(array('maemo', 'linux armv', 'like android', 'linux/x2/r1'), true)) {
+            $platformKey = 'Maemo';
+        } elseif ($utils->checkIfContains(array('BlackBerry', 'BB10'))) {
+            $platformKey = 'RIM OS';
+        } elseif ($utils->checkIfContains(array('WebOS', 'hpwOS', 'webOS'))) {
+            $platformKey = 'webOS';
+        } elseif ($utils->checkIfContains(array('Tizen'))) {
+            $platformKey = 'Tizen';
+        } elseif ($firefoxOsHelper->isFirefoxOs()) {
+            $platformKey = 'FirefoxOS';
+        } elseif ($utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;'))
             || $safariHelper->isMobileAsSafari()
         ) {
-            return new AndroidOs();
-        }
-
-        $doMatch = preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches);
-        if ($doMatch && $matches[1] >= 4) {
-            return new AndroidOs();
-        }
-
-        if ($utils->checkIfContains('darwin', true)) {
-            return new Darwin();
-        }
-
-        $ios = array(
-            'IphoneOSX',
-            'iPhone OS',
-            'like Mac OS X',
-            'iPad',
-            'IPad',
-            'iPhone',
-            'iPod',
-            'CPU OS',
-            'CPU iOS',
-            'IUC(U;iOS'
-        );
-
-        if ($utils->checkIfContains($ios)) {
-            return new Ios();
-        }
-
-        if ($utils->checkIfContains(array('Macintosh', 'Mac_PowerPC', 'PPC', '68K'))
+            $platformKey = 'AndroidOS';
+        } elseif (preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches) && $matches[1] >= 4) {
+            $platformKey = 'AndroidOS';
+        } elseif ($utils->checkIfContains('darwin', true)) {
+            $platformKey = 'Darwin';
+        } elseif ($utils->checkIfContains(array(
+                                        'IphoneOSX',
+                                        'iPhone OS',
+                                        'like Mac OS X',
+                                        'iPad',
+                                        'IPad',
+                                        'iPhone',
+                                        'iPod',
+                                        'CPU OS',
+                                        'CPU iOS',
+                                        'IUC(U;iOS'
+                                    ))
+        ) {
+            $platformKey = 'iOS';
+        } elseif ($utils->checkIfContains(array('Macintosh', 'Mac_PowerPC', 'PPC', '68K'))
             && !$utils->checkIfContains('Mac OS X')
         ) {
-            return new MacintoshOs();
-        }
-
-        if ($utils->checkIfContains(array('Macintosh', 'Mac OS X'))) {
-            return new Macosx();
-        }
-
-        if ($utils->checkIfContains('debian', true)) {
-            return new Debian();
-        }
-
-        if ($utils->checkIfContains('kubuntu', true)) {
-            return new Kubuntu();
-        }
-
-        if ($utils->checkIfContains('ubuntu', true)) {
-            return new Ubuntu();
-        }
-
-        if ($utils->checkIfContainsAll(array('RIM Tablet'))) {
-            return new RimTabletOs();
-        }
-
-        if ($utils->checkIfContains('centos', true)) {
-            return new CentOs();
+            $platformKey = 'Macintosh';
+        } elseif ($utils->checkIfContains(array('Macintosh', 'Mac OS X'))) {
+            $platformKey = 'Mac OS X';
+        } elseif ($utils->checkIfContains('debian', true)) {
+            $platformKey = 'Debian';
+        } elseif ($utils->checkIfContains('kubuntu', true)) {
+            $platformKey = 'Kubuntu';
+        } elseif ($utils->checkIfContains('ubuntu', true)) {
+            $platformKey = 'Ubuntu';
+        } elseif ($utils->checkIfContains(array('RIM Tablet'))) {
+            $platformKey = 'RIM Tablet OS';
+        } elseif ($utils->checkIfContains('centos', true)) {
+            $platformKey = 'CentOs';
         }
 
         if ($utils->checkIfContains('CrOS')) {
