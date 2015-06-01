@@ -160,17 +160,4 @@ class Apple
     {
         return new Company\Apple();
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\Ios
-     */
-    public function detectOs()
-    {
-        $handler = new Ios();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

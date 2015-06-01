@@ -35,14 +35,14 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Os\Linux;
+
+
+
 use BrowserDetector\Detector\Os\MeeGo;
-use BrowserDetector\Detector\Os\Symbianos;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
+
+
+
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -173,31 +173,6 @@ class Nokia
             __DIR__ . DIRECTORY_SEPARATOR . 'Nokia' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler($this);
-
-        return $chain->detect();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new Symbianos(),
-            new AndroidOs(),
-            new Java(),
-            new WindowsMobileOs(),
-            new WindowsPhoneOs(),
-            new Linux(),
-            new MeeGo()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
 
         return $chain->detect();
     }

@@ -34,9 +34,9 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
+
 use BrowserDetector\Detector\Os\Bada;
-use BrowserDetector\Detector\Os\UnknownOs;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -138,25 +138,5 @@ class SamsungGts5250
     public function getBrand()
     {
         return new Company\Samsung();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new AndroidOs(),
-            new Bada()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
     }
 }

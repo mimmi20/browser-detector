@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\LinuxTv;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -145,19 +145,6 @@ class LoeweSl150
     public function getBrand()
     {
         return new Company\Loewe();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\LinuxTv
-     */
-    public function detectOs()
-    {
-        $handler = new LinuxTv();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 
     /**

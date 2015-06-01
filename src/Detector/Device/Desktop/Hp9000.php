@@ -35,8 +35,8 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Hpux;
-use BrowserDetector\Detector\Os\UnknownOs;
+
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -138,25 +138,6 @@ class Hp9000
     public function getBrand()
     {
         return new Company\Hp();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new Hpux()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
     }
 
     /**

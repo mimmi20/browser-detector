@@ -138,17 +138,4 @@ class AlcatelOt4012X
     {
         return new Company\Alcatel();
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
-     */
-    public function detectOs()
-    {
-        $handler = new FirefoxOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

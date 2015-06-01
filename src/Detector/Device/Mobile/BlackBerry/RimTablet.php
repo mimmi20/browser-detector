@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\RimTabletOs;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -139,18 +139,5 @@ class RimTablet
     public function getBrand()
     {
         return new Company\Rim();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\RimTabletOs
-     */
-    public function detectOs()
-    {
-        $handler = new RimTabletOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

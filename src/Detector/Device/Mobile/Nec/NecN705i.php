@@ -139,17 +139,4 @@ class NecN705i
     {
         return new Company\Nec();
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\Maemo
-     */
-    public function detectOs()
-    {
-        $handler = new Maemo();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

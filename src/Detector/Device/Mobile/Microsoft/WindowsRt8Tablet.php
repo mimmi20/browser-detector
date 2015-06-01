@@ -153,19 +153,6 @@ class WindowsRt8Tablet
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\Windows
-     */
-    public function detectOs()
-    {
-        $handler = new WindowsRt();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
-
-    /**
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *

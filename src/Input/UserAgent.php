@@ -37,10 +37,8 @@ use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Factory\EngineFactory;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\Factory\PlatformFactory;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
-use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Result;
 
 /**
@@ -63,13 +61,6 @@ class UserAgent
     private $browser = null;
 
     /**
-     * the detected platform
-     *
-     * @var \BrowserDetector\Detector\OsHandler
-     */
-    private $os = null;
-
-    /**
      * the detected device
      *
      * @var \BrowserDetector\Detector\MatcherInterface\DeviceInterface
@@ -90,25 +81,13 @@ class UserAgent
         ;
 
         // detect the os which runs on the device
-        $this->os = $this->device->detectOs();
-        if (!($this->os instanceof OsInterface)) {
-            $this->os = $this->detectOs();
-        }
+        $platform = PlatformFactory::detect($this->agent);
 
         // detect the browser which is used
-        $this->browser = $this->os->detectBrowser();
-        if (!($this->browser instanceof BrowserInterface)
-            || ($this->os instanceof UnknownOs && is_callable(array($this->device, 'detectBrowser')))
-        ) {
-            $this->browser = $this->device->detectBrowser();
-        }
-
-        if (!($this->browser instanceof BrowserInterface)) {
-            $this->browser = $this->detectBrowser();
-        }
+        $this->browser = $this->detectBrowser();
 
         // detect the engine which is used in the browser
-        $engine = EngineFactory::detect($this->agent, $this->os);
+        $engine = EngineFactory::detect($this->agent, $platform);
 
         $result = new Result();
 
@@ -120,7 +99,7 @@ class UserAgent
 
         $result->setDetectionResult(
             $this->device,
-            $this->os,
+            $platform,
             $this->browser,
             $engine
         );
@@ -154,24 +133,6 @@ class UserAgent
         }
 
         return $device;
-    }
-
-    /**
-     * Gets the information about the os by User Agent
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    private function detectOs()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Os');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler(new UnknownOs());
-
-        return $chain->detect();
     }
 
     /**

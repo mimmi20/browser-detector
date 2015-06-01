@@ -30,14 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Honlin;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WebOs;
+
+
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -140,25 +139,5 @@ class HonlinPc1088
     public function getBrand()
     {
         return new Company\Honlin();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new WebOs(),
-            new AndroidOs()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
     }
 }

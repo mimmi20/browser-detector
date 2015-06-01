@@ -35,23 +35,23 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\CentOs;
-use BrowserDetector\Detector\Os\CrOs;
-use BrowserDetector\Detector\Os\Debian;
-use BrowserDetector\Detector\Os\Fedora;
-use BrowserDetector\Detector\Os\JoliOs;
-use BrowserDetector\Detector\Os\Kubuntu;
-use BrowserDetector\Detector\Os\Linux;
-use BrowserDetector\Detector\Os\LinuxTv;
-use BrowserDetector\Detector\Os\Mandriva;
-use BrowserDetector\Detector\Os\Mint;
-use BrowserDetector\Detector\Os\Redhat;
-use BrowserDetector\Detector\Os\Slackware;
-use BrowserDetector\Detector\Os\Suse;
-use BrowserDetector\Detector\Os\Ubuntu;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\Ventana;
-use BrowserDetector\Detector\Os\ZenwalkGnu;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -152,40 +152,6 @@ class EeePc
     public function getBrand()
     {
         return new Company\Asus();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new Linux(),
-            new Debian(),
-            new Fedora(),
-            new JoliOs(),
-            new Kubuntu(),
-            new Mint(),
-            new Redhat(),
-            new Slackware(),
-            new Suse(),
-            new Ubuntu(),
-            new ZenwalkGnu(),
-            new CentOs(),
-            new LinuxTv(),
-            new CrOs(),
-            new Ventana(),
-            new Mandriva()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
     }
 
     /**

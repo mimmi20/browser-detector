@@ -34,7 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -159,18 +159,5 @@ class NokiaLumia
     public function getBrand()
     {
         return new Company\Nokia();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
-     */
-    public function detectOs()
-    {
-        $handler = new WindowsPhoneOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

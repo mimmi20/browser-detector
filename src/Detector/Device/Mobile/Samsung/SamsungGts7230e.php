@@ -137,17 +137,4 @@ class SamsungGts7230e
     {
         return new Company\Samsung();
     }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\Bada
-     */
-    public function detectOs()
-    {
-        $handler = new Bada();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
 }

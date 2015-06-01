@@ -34,7 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -139,18 +139,5 @@ class HtcDesireC
     public function getBrand()
     {
         return new Company\Htc();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
-     */
-    public function detectOs()
-    {
-        $handler = new AndroidOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

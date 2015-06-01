@@ -317,24 +317,6 @@ abstract class DeviceHandler
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function detectOs()
-    {
-        $chain = new Chain();
-        $chain->setDefaultHandler(new Os\UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Os');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Os' . DIRECTORY_SEPARATOR
-        );
-
-        return $chain->detect();
-    }
-
-    /**
      * Returns the values of all capabilities for the current device
      *
      * @return array All Capability values

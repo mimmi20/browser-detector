@@ -44,9 +44,9 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\FreeBsd;
-use BrowserDetector\Detector\Os\LinuxTv;
-use BrowserDetector\Detector\Os\UnknownOs;
+
+
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -151,30 +151,10 @@ class PanasonicViera
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\OsHandler
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new LinuxTv(),
-            new FreeBsd()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\OsHandler
+     * @return null|\BrowserDetector\Detector\BrowserHandler
      */
     public function detectBrowser()
     {

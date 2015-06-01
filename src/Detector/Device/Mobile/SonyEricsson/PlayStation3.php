@@ -139,19 +139,6 @@ class PlayStation3
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\Java
-     */
-    public function detectOs()
-    {
-        $handler = new CellOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \BrowserDetector\Detector\Version

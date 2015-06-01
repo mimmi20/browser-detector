@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\UnknownOs;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -158,18 +158,5 @@ class NintendoWiiU
         $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        $handler = new UnknownOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }
