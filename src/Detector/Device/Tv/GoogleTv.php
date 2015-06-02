@@ -30,21 +30,9 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
-use BrowserDetector\Detector\Browser\Tv\Boxee;
-use BrowserDetector\Detector\Browser\Tv\Chrome;
-use BrowserDetector\Detector\Browser\Tv\HbbTv;
-use BrowserDetector\Detector\Browser\Tv\InettvBrowser;
-use BrowserDetector\Detector\Browser\Tv\NetTv;
-use BrowserDetector\Detector\Browser\Tv\Opera;
-use BrowserDetector\Detector\Browser\Tv\Safari;
-use BrowserDetector\Detector\Browser\Tv\SmartTv;
-use BrowserDetector\Detector\Browser\Tv\SmartTvWebBrowser;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -146,33 +134,5 @@ class GoogleTv
     public function getBrand()
     {
         return new Company\Google();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\OsHandler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Chrome(),
-            new Boxee(),
-            new Safari(),
-            new Opera(),
-            new SmartTvWebBrowser(),
-            new SmartTv(),
-            new HbbTv(),
-            new InettvBrowser(),
-            new NetTv(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

@@ -44,13 +44,6 @@ use Psr\Log\LoggerInterface;
 interface DeviceInterface
 {
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\BrowserHandler
-     */
-    public function detectBrowser();
-
-    /**
      * detects properties who are depending on the device version or the user
      * agent
      *

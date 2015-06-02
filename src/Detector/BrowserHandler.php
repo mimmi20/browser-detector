@@ -31,15 +31,6 @@
 namespace BrowserDetector\Detector;
 
 use BrowserDetector\Detector\Company;
-
-
-
-
-
-
-
-
-
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;

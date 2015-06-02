@@ -30,15 +30,9 @@
 
 namespace BrowserDetector\Detector\Device\Desktop;
 
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
-
-
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -157,25 +151,5 @@ class Imac
         $searches = array('iMac');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\BrowserHandler
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
-        $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

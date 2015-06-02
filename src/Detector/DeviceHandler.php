@@ -304,19 +304,6 @@ abstract class DeviceHandler
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Browser\UnknownBrowser
-     */
-    public function detectBrowser()
-    {
-        $browser = new Browser\UnknownBrowser();
-        $browser->setUserAgent($this->useragent);
-
-        return $browser;
-    }
-
-    /**
      * Returns the values of all capabilities for the current device
      *
      * @return array All Capability values

@@ -151,27 +151,4 @@ class WindowsRt8Tablet
     {
         return new Company\Microsoft();
     }
-
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\OsHandler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new MicrosoftInternetExplorer(),
-            new MicrosoftMobileExplorer(),
-            new MicrosoftOutlook(),
-            new MicrosoftOffice(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
-    }
 }

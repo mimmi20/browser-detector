@@ -96,7 +96,7 @@ class PlatformFactory implements FactoryInterface
             } else {
                 $platformKey = 'Windows Mobile OS';
             }
-        } elseif ($isWindows && $utils->checkIfContains(array('ARM;'))) {
+        } elseif ($isWindows && $utils->checkIfContains('ARM;')) {
             $platformKey = 'Windows RT';
         } elseif ($isWindows) {
             $platformKey = 'Windows';
@@ -112,7 +112,7 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'RIM OS';
         } elseif (preg_match('/(WebOS|hpwOS|webOS)/', $agent)) {
             $platformKey = 'webOS';
-        } elseif ($utils->checkIfContains(array('Tizen'))) {
+        } elseif ($utils->checkIfContains('Tizen')) {
             $platformKey = 'Tizen';
         } elseif ($firefoxOsHelper->isFirefoxOs()) {
             $platformKey = 'FirefoxOS';
@@ -124,25 +124,13 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'AndroidOS';
         } elseif ($utils->checkIfContains('darwin', true)) {
             $platformKey = 'Darwin';
-        } elseif ($utils->checkIfContains(array(
-                                        'IphoneOSX',
-                                        'iPhone OS',
-                                        'like Mac OS X',
-                                        'iPad',
-                                        'IPad',
-                                        'iPhone',
-                                        'iPod',
-                                        'CPU OS',
-                                        'CPU iOS',
-                                        'IUC(U;iOS'
-                                    ))
-        ) {
+        } elseif (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)) {
             $platformKey = 'iOS';
-        } elseif ($utils->checkIfContains(array('Macintosh', 'Mac_PowerPC', 'PPC', '68K'))
+        } elseif (preg_match('/(Macintosh|Mac_PowerPC|PPC|68K)/', $agent)
             && !$utils->checkIfContains('Mac OS X')
         ) {
             $platformKey = 'Macintosh';
-        } elseif ($utils->checkIfContains(array('Macintosh', 'Mac OS X'))) {
+        } elseif (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
             $platformKey = 'Mac OS X';
         } elseif ($utils->checkIfContains('debian', true)) {
             $platformKey = 'Debian';
@@ -236,20 +224,7 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'WyderOS';
         } elseif ($utils->checkIfContains('Liberate')) {
             $platformKey = 'Liberate';
-        } elseif ($utils->checkIfContains(array(
-                                        'Java',
-                                        'J2ME/MIDP',
-                                        'Profile/MIDP',
-                                        'JUC',
-                                        'UCWEB',
-                                        'NetFront',
-                                        'Nokia',
-                                        'Jasmine/1.0',
-                                        'JavaPlatform',
-                                        'WAP/OBIGO',
-                                        'Obigo/WAP'
-                                    ))
-        ) {
+        } elseif (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP)/', $agent)) {
             $platformKey = 'Java';
         } else {
             $platformKey = 'UnknownOs';
@@ -258,7 +233,7 @@ class PlatformFactory implements FactoryInterface
         $allPlatformProperties = require 'data/properties/platforms.php';
 
         if (!isset($allPlatformProperties[$platformKey])) {
-            $platformKey = 'UnknownEngine';
+            $platformKey = 'UnknownOs';
         }
 
         $platformProperties = $allPlatformProperties[$platformKey];

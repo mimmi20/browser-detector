@@ -140,25 +140,4 @@ class Nintendo3ds
     {
         return new Company\Nintendo();
     }
-
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\OsHandler
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new NetFrontNx(),
-            new Opera()
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
-    }
 }

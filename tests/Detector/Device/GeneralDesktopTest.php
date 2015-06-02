@@ -65,30 +65,6 @@ class GeneralDesktopTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider providerDetectDevice
-     * @param string $agent
-     * @param string $device
-     */
-    public function testDetectDevice($agent, $device)
-    {
-        self::markTestSkipped('need agent for general desktop');
-
-        $this->object->setUserAgent($agent);
-
-        self::assertInstanceOf($device, $this->object->detectDevice());
-    }
-
-    public function providerDetectDevice()
-    {
-        return array(
-            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)', '\BrowserDetector\Detector\Device\GeneralDesktop'),
-            array('Mozilla/5.0 (Windows; U; Windows NT 5.1; pl; rv:1.9) Gecko/2008052906 Firefox/3.0', '\BrowserDetector\Detector\Device\GeneralDesktop'),
-            array('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)', '\BrowserDetector\Detector\Device\GeneralDesktop'),
-            array('Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4', '\BrowserDetector\Detector\Device\GeneralDesktop'),
-        );
-    }
-
-    /**
      * tests that a integer is returned
      */
     public function testGetWeight()

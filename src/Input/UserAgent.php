@@ -144,9 +144,9 @@ class UserAgent
     {
         $chain = new Chain();
         $chain->setUserAgent($this->agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser');
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\General');
         $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'General' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler(new UnknownBrowser());
 

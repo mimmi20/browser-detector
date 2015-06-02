@@ -25,26 +25,6 @@ class NetscapeTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider providerCanHandlePositive
-     * @param string $agent
-     */
-    public function testCanHandlePositive($agent)
-    {
-        self::markTestSkipped('need user agent');
-
-        $this->object->setUserAgent($agent);
-
-        self::assertTrue($this->object->canHandle());
-    }
-
-    public function providerCanHandlePositive()
-    {
-        return array(
-            array('Mozilla/5.0 (SMART-TV; X11; Linux armv7l) AppleWebkit/537.42 (KHTML, like Gecko) Netscape/25.0.1349.2 Chrome/25.0.1349.2 Safari/537.42'),
-        );
-    }
-
-    /**
      * @dataProvider providerCanHandleNegative
      * @param string $agent
      */

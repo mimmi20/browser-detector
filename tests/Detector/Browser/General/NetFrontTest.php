@@ -25,26 +25,6 @@ class NetFrontTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider providerCanHandlePositive
-     * @param string $agent
-     */
-    public function testCanHandlePositive($agent)
-    {
-        self::markTestSkipped('need UA');
-
-        $this->object->setUserAgent($agent);
-
-        self::assertTrue($this->object->canHandle());
-    }
-
-    public function providerCanHandlePositive()
-    {
-        return array(
-            array('Mozilla/5.0 (X11; Linux i686; rv:25.1) Gecko/20141127 Firefox/31.9 NetFront/25.1.0'),
-        );
-    }
-
-    /**
      * @dataProvider providerCanHandleNegative
      * @param string $agent
      */

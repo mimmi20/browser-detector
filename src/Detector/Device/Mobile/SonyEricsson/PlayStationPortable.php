@@ -137,18 +137,4 @@ class PlayStationPortable
     {
         return new Company\Sony();
     }
-
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Browser\Mobile\NetFront
-     */
-    public function detectBrowser()
-    {
-        $handler = new NetFront();
-        $handler->setUserAgent($this->useragent);
-
-        return $handler;
-    }
 }
