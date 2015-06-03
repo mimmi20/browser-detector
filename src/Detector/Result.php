@@ -1477,7 +1477,7 @@ class Result
      * Returns the value of a given capability name for the current device
      *
      * @param \BrowserDetector\Detector\DeviceHandler  $device
-     * @param \BrowserDetector\Detector\OsHandler      $os
+     * @param \BrowserDetector\Detector\Platform       $os
      * @param \BrowserDetector\Detector\BrowserHandler $browser
      * @param \BrowserDetector\Detector\Engine         $engine
      *
@@ -1485,7 +1485,7 @@ class Result
      */
     public function setDetectionResult(
         DeviceHandler $device,
-        OsHandler $os,
+        Platform $os,
         BrowserHandler $browser,
         Engine $engine
     ) {
@@ -1783,7 +1783,7 @@ class Result
                         break;
                     case 'device_os_version':
                     case 'controlcap_advertised_device_os_version':
-                        $value = $os->detectVersion();
+                        $value = $os->getVersion();
                         break;
                     case 'device_os_manufacturer':
                         $value = $os->getManufacturer();
@@ -1931,7 +1931,7 @@ class Result
                         } elseif ($this->getCapability('resolution_width', false) < 320) {
                             $value = false;
                         } else {
-                            $os_ver = (float)$os->detectVersion()->getVersion(Version::MAJORMINOR);
+                            $os_ver = (float)$os->getVersion()->getVersion(Version::MAJORMINOR);
 
                             switch ($os->getName()) {
                                 case 'iOS':

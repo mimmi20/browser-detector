@@ -121,14 +121,14 @@ class EngineFactory implements FactoryInterface
             }
         }
 
-        $allEnginesProperties = require 'data/properties/engines.php';
+        $allEnginesProperties = require __DIR__ . '/../../../data/properties/engines.php';
 
         if (!isset($allEnginesProperties[$engineKey])) {
             $engineKey = 'UnknownEngine';
         }
 
         $engineProperties = $allEnginesProperties[$engineKey];
-        $manufacturerName = '\\Detector\\Company\\' . $engineProperties['company'];
+        $manufacturerName = '\\BrowserDetector\\Detector\\Company\\' . $engineProperties['company'];
         $company          = new $manufacturerName();
 
         $detector = new Version();

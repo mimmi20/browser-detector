@@ -230,14 +230,14 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'UnknownOs';
         }
 
-        $allPlatformProperties = require 'data/properties/platforms.php';
+        $allPlatformProperties = require __DIR__ . '/../../../data/properties/platforms.php';
 
         if (!isset($allPlatformProperties[$platformKey])) {
             $platformKey = 'UnknownOs';
         }
 
         $platformProperties = $allPlatformProperties[$platformKey];
-        $manufacturerName   = '\\Detector\\Company\\' . $platformProperties['company'];
+        $manufacturerName   = '\\BrowserDetector\\Detector\\Company\\' . $platformProperties['company'];
         $company            = new $manufacturerName();
 
         $detector = new Version();
