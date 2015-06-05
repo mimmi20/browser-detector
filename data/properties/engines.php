@@ -35,6 +35,7 @@ return [
         'version' => [
             'Edge'
         ],
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -188,6 +189,7 @@ return [
         'version' => [
             'Presto'
         ],
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -341,6 +343,7 @@ return [
         'version' => [
             'Trident'
         ],
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -494,6 +497,7 @@ return [
         'version' => [
             'U2'
         ],
+        'transcoder' => true,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -647,6 +651,7 @@ return [
         'version' => [
             'U3'
         ],
+        'transcoder' => true,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -800,6 +805,7 @@ return [
         'version' => [
             'T5'
         ],
+        'transcoder' => true,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -956,6 +962,7 @@ return [
             'CFNetwork',
             'Browser\/AppleWebKit'
         ],
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1112,6 +1119,7 @@ return [
             'CFNetwork',
             'Browser\/AppleWebKit'
         ],
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1265,6 +1273,7 @@ return [
         'version' => [
             'KHTML'
         ],
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1418,6 +1427,7 @@ return [
         'version' => [
             'rv\:'
         ],
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1568,6 +1578,7 @@ return [
     'NetFront' => [
         'name' => 'NetFront',
         'company' => 'Access',
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => null,
@@ -1718,6 +1729,7 @@ return [
     'BlackBerry' => [
         'name' => 'BlackBerry',
         'company' => 'Rim',
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => false,
@@ -1868,6 +1880,7 @@ return [
     'Teleca' => [
         'name' => 'Teleca',
         'company' => 'Obigo',
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => null,
@@ -2018,6 +2031,7 @@ return [
     'Tasman' => [
         'name' => 'Tasman',
         'company' => 'Apple',
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => null,
@@ -2168,6 +2182,7 @@ return [
     'UnknownEngine' => [
         'name' => 'unknown',
         'company' => 'Unknown',
+        'transcoder' => false,
         'properties' => [
             // markup
             'utf8_support'                                    => null,

@@ -55,6 +55,11 @@ class Engine
     private $version = null;
 
     /**
+     * @var boolean
+     */
+    private $transcoder = null;
+
+    /**
      * the detected browser properties
      *
      * @var array
@@ -65,13 +70,15 @@ class Engine
      * @param string                                             $name
      * @param \BrowserDetector\Detector\Company\CompanyInterface $manufacturer
      * @param \BrowserDetector\Detector\Version                  $version
+     * @param boolean                                            $transcoder
      * @param array                                              $properties
      */
-    public function __construct($name, Company\CompanyInterface $manufacturer, Version $version, array $properties)
+    public function __construct($name, Company\CompanyInterface $manufacturer, Version $version, $transcoder, array $properties)
     {
         $this->name = $name;
         $this->manufacturer = $manufacturer;
         $this->version = $version;
+        $this->transcoder = $transcoder;
         $this->properties = $properties;
     }
 
@@ -101,6 +108,14 @@ class Engine
     public function getVersion()
     {
         return $this->version;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isTranscoder()
+    {
+        return $this->transcoder;
     }
 
     /**

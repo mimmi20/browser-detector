@@ -137,6 +137,12 @@ class EngineFactory implements FactoryInterface
             $detector->setVersion('0.0');
         }
 
-        return new Engine($engineProperties['name'], $company, $detector, $engineProperties['properties']);
+        return new Engine(
+            $engineProperties['name'],
+            $company,
+            $detector,
+            $engineProperties['transcoder'],
+            $engineProperties['properties']
+        );
     }
 }
