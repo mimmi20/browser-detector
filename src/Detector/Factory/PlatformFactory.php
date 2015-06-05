@@ -65,12 +65,8 @@ class PlatformFactory implements FactoryInterface
         $windowsHelper = new WindowsHelper();
         $windowsHelper->setUserAgent($agent);
 
-        $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($agent);
-
         if (!$windowsHelper->isMobileWindows()
             && $windowsHelper->isWindows()
-            && !$mobileDeviceHelper->isMobile()
         ) {
             $isWindows = true;
         }
@@ -88,6 +84,8 @@ class PlatformFactory implements FactoryInterface
             } else {
                 $platformKey = 'Windows Mobile OS';
             }
+        } elseif ($windowsHelper->isMobileWindows() && $utils->checkIfContains('Windows CE')) {
+            $platformKey = 'Windows CE';
         } elseif ($windowsHelper->isMobileWindows()) {
             $doMatchMobile = preg_match('/mobile version([\d]+)/', $agent, $matchesMobile);
 
@@ -116,16 +114,16 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'Tizen';
         } elseif ($firefoxOsHelper->isFirefoxOs()) {
             $platformKey = 'FirefoxOS';
+        } elseif ($utils->checkIfContains('darwin', true)) {
+            $platformKey = 'Darwin';
+        } elseif (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)) {
+            $platformKey = 'iOS';
         } elseif (preg_match('/(Android|Silk|JUC\(Linux;U;|JUC \(Linux; U;)/', $agent)
             || $safariHelper->isMobileAsSafari()
         ) {
             $platformKey = 'AndroidOS';
         } elseif (preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches) && $matches[1] >= 4) {
             $platformKey = 'AndroidOS';
-        } elseif ($utils->checkIfContains('darwin', true)) {
-            $platformKey = 'Darwin';
-        } elseif (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)) {
-            $platformKey = 'iOS';
         } elseif (preg_match('/(Macintosh|Mac_PowerPC|PPC|68K)/', $agent)
             && !$utils->checkIfContains('Mac OS X')
         ) {
@@ -212,8 +210,8 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'Linux';
         } elseif ($utils->checkIfContains('CP/M')) {
             $platformKey = 'CP/M';
-        } elseif ($utils->checkIfContains(array('Nintendo Wii'))) {
-            $platformKey = 'Nintendo Wii OS';
+        } elseif ($utils->checkIfContains(array('Nintendo Wii', 'Nintendo 3DS'))) {
+            $platformKey = 'Nintendo OS';
         } elseif ($utils->checkIfContains(array('Nokia', 'Series40'))) {
             $platformKey = 'Nokia OS';
         } elseif ($utils->checkIfContains('ruby', true)) {
@@ -240,15 +238,348 @@ class PlatformFactory implements FactoryInterface
         $manufacturerName   = '\\BrowserDetector\\Detector\\Company\\' . $platformProperties['company'];
         $company            = new $manufacturerName();
 
-        $detector = new Version();
-        $detector->setUserAgent($agent);
+        switch ($platformProperties['name']) {
+            case 'Windows':
+                // break omitted
+            case 'Windows RT':
+                $detector = self::detectWindowsVersion($agent, $utils);
+                break;
+            case 'Windows Phone OS':
+                $detector = self::detectWindowsPhoneVersion($agent, $utils);
+                break;
+            case 'Windows Mobile OS':
+                $detector = self::detectWindowsMobileVersion($agent, $utils);
+                break;
+            case 'Mac OS X':
+                $detector = self::detectMacOsxVersion($agent);
+                break;
+            case 'iOS':
+                $detector = self::detectIosVersion($agent);
+                break;
+            case 'Android':
+                $detector = self::detectAndroidVersion($agent, $utils);
+                break;
+            case 'RIM OS':
+                $detector = self::detectBlackBerryVersion($agent, $utils);
+                break;
+            default:
+                $detector = new Version();
+                $detector->setUserAgent($agent);
 
-        if (isset($platformProperties['version'])) {
-            $detector->detectVersion($platformProperties['version']);
-        } else {
-            $detector->setVersion('0.0');
+                if (isset($platformProperties['version'])) {
+                    $detector->detectVersion($platformProperties['version']);
+                } else {
+                    $detector->setVersion('0.0');
+                }
+                break;
         }
 
         return new Platform($platformProperties['name'], $company, $detector, $platformProperties['properties']);
+    }
+
+    /**
+     * @param string                        $agent
+     * @param \BrowserDetector\Helper\Utils $utils
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    private static function detectWindowsVersion($agent, Utils $utils)
+    {
+        $detector = new Version();
+        $detector->setUserAgent($agent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
+
+        if ($utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'))) {
+            return $detector->setVersion('ME');
+        }
+
+        if ($utils->checkIfContains(array('Win98'))) {
+            return $detector->setVersion('98');
+        }
+
+        if ($utils->checkIfContains(array('Win95'))) {
+            return $detector->setVersion('95');
+        }
+
+        if ($utils->checkIfContains(array('Windows-NT'))) {
+            return $detector->setVersion('NT');
+        }
+
+        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $agent, $matches);
+
+        if ($doMatch) {
+            switch ($matches[1]) {
+                case '6.4':
+                case '10.0':
+                    $version = '10';
+                    break;
+                case '6.3':
+                    $version = '8.1';
+                    break;
+                case '6.2':
+                    $version = '8';
+                    break;
+                case '6.1':
+                    $version = '7';
+                    break;
+                case '6.0':
+                    $version = 'Vista';
+                    break;
+                case '5.3':
+                case '5.2':
+                case '5.1':
+                    $version = 'XP';
+                    break;
+                case '5.0':
+                case '5.01':
+                    $version = '2000';
+                    break;
+                case '4.1':
+                case '4.0':
+                    $version = 'NT';
+                    break;
+                default:
+                    $version = '';
+                    break;
+            }
+
+            return $detector->setVersion($version);
+        }
+
+        $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $agent, $matches);
+
+        if ($doMatch) {
+            switch ($matches[1]) {
+                case '6.4':
+                case '10.0':
+                    $version = '10';
+                    break;
+                case '6.3':
+                    $version = '8.1';
+                    break;
+                case '6.2':
+                    $version = '8';
+                    break;
+                case '6.1':
+                case '7':
+                    $version = '7';
+                    break;
+                case '6.0':
+                    $version = 'Vista';
+                    break;
+                case '2003':
+                    $version = 'Server 2003';
+                    break;
+                case '5.3':
+                case '5.2':
+                case '5.1':
+                case 'XP':
+                    $version = 'XP';
+                    break;
+                case 'ME':
+                    $version = 'ME';
+                    break;
+                case '2000':
+                case '5.0':
+                case '5.01':
+                    $version = '2000';
+                    break;
+                case '3.1':
+                    $version = '3.1';
+                    break;
+                case '95':
+                    $version = '95';
+                    break;
+                case '98':
+                    $version = '98';
+                    break;
+                case '4.1':
+                case '4.0':
+                case 'NT':
+                    $version = 'NT';
+                    break;
+                default:
+                    $version = '';
+                    break;
+            }
+
+            return $detector->setVersion($version);
+        }
+
+        return $detector->setVersion('');
+    }
+
+    /**
+     * @param string                        $agent
+     * @param \BrowserDetector\Helper\Utils $utils
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    private static function detectWindowsPhoneVersion($agent, Utils $utils)
+    {
+        $detector = new Version();
+        $detector->setUserAgent($agent);
+
+        if ($utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+            return $detector->setVersion('7.5');
+        }
+
+        if ($utils->checkIfContains(array('WPDesktop'))) {
+            if ($utils->checkIfContains(array('Windows NT 6.2'))) {
+                return $detector->setVersion('8.1');
+            }
+
+            return $detector->setVersion('8.0');
+        }
+
+        $searches = array('Windows Phone OS', 'Windows Phone');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * @param string                        $agent
+     * @param \BrowserDetector\Helper\Utils $utils
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    private static function detectWindowsMobileVersion($agent, Utils $utils)
+    {
+        $detector = new Version();
+        $detector->setUserAgent($agent);
+
+        if ($utils->checkIfContains('Windows NT 5.1')) {
+            return $detector->setVersion('6.0');
+        }
+
+        if ($utils->checkIfContains(array('Windows CE', 'Windows Mobile', 'MSIEMobile'))) {
+            $detector->setDefaulVersion('6.0');
+
+            $searches = array('MSIEMobile');
+
+            return $detector->detectVersion($searches);
+        }
+
+        $searches = array('Windows Phone');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * @param string                        $agent
+     * @param \BrowserDetector\Helper\Utils $utils
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    private static function detectBlackBerryVersion($agent, Utils $utils)
+    {
+        $detector = new Version();
+        $detector->setUserAgent($agent);
+
+        $searches = array('BlackBerry[0-9a-z]+', 'BlackBerrySimulator');
+
+        if (!$utils->checkIfContains('Opera')) {
+            $searches[] = 'Version';
+        }
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * @param string $agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    private static function detectMacOsxVersion($agent)
+    {
+        $detector = new Version();
+        $detector->setUserAgent($agent);
+        $detector->setDefaulVersion('10');
+
+        $searches = array('Mac OS X', 'Mac OS X v');
+
+        $detector->detectVersion($searches);
+
+        if ($detector->getVersion(Version::MAJORONLY) > 99) {
+            $versions = array();
+            $found    = preg_match('/(\d\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
+
+            if ($found) {
+                $detector->setVersion($versions[1] . '.' . $versions[2]);
+            }
+        }
+
+        return $detector;
+    }
+
+    /**
+     * @param string $agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    private static function detectIosVersion($agent)
+    {
+        $detector = new Version();
+        $detector->setUserAgent($agent);
+
+        $searches = array(
+            'IphoneOSX',
+            'CPU OS\_',
+            'CPU OS',
+            'CPU iOS',
+            'CPU iPad OS',
+            'iPhone OS',
+            'iPhone_OS',
+            'IUC\(U\;iOS'
+        );
+
+        $detector->detectVersion($searches);
+
+        $doMatch = preg_match('/CPU like Mac OS X/', $agent, $matches);
+
+        if ($doMatch) {
+            $detector->setVersion('1.0');
+        }
+
+        return $detector;
+    }
+
+    /**
+     * @param string                        $agent
+     * @param \BrowserDetector\Helper\Utils $utils
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    private static function detectAndroidVersion($agent, Utils $utils)
+    {
+        $detector = new Version();
+        $detector->setUserAgent($agent);
+
+        if ($utils->checkIfContains('android 2.1-update1', true)) {
+            return $detector->setVersion('2.1.1');
+        }
+
+        $searches = array(
+            'Android android',
+            'Android AndroidHouse Team',
+            'Android WildPuzzleROM v8 froyo',
+            'Android',
+            'JUC\(Linux;U;',
+            'Android OS'
+        );
+
+        $detector->detectVersion($searches);
+
+        if (!$detector->getVersion()) {
+            if ($utils->checkIfContains('android eclair', true)) {
+                $detector->setVersion('2.1');
+            }
+
+            if ($utils->checkIfContains('gingerbread', true)) {
+                $detector->setVersion('2.3');
+            }
+        }
+
+        return $detector;
     }
 }

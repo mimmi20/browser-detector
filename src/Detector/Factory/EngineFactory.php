@@ -60,6 +60,21 @@ class EngineFactory implements FactoryInterface
         $utils = new Utils();
         $utils->setUserAgent($agent);
 
+        $trident = false;
+        $doMatch = preg_match('/Trident\/([\d\.]+)/', $agent, $matches);
+
+        if ($doMatch) {
+            if (($matches[1] == 7 && $utils->checkIfContains('Gecko'))
+                || ($matches[1] < 7 && !$utils->checkIfContains('Gecko'))
+            ) {
+                $trident = true;
+            }
+        } elseif ($utils->checkIfContains('Mozilla/')
+            && $utils->checkIfContains(array('MSIE', 'Trident'))
+        ) {
+            $trident = true;
+        }
+
         if (null !== $os && in_array($os->getName(), array('iOS'))) {
             $engineKey = 'WebKit';
         } elseif ($utils->checkIfContains(array('Edge'))) {
@@ -70,6 +85,8 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'U3';
         } elseif ($utils->checkIfContains(array('T5/'))) {
             $engineKey = 'T5';
+        } elseif ($trident) {
+            $engineKey = 'Trident';
         } elseif (preg_match('/(AppleWebKit|WebKit|CFNetwork|Safari)/', $agent)) {
             $chrome = new Chrome();
             $chrome->setUserAgent($agent);
@@ -85,40 +102,20 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'KHTML';
         } elseif ($utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))) {
             $engineKey = 'Tasman';
+        } elseif (preg_match('/(Presto|Opera)/', $agent)) {
+            $engineKey = 'Presto';
+        } elseif (preg_match('/(Gecko|Firefox)/', $agent)) {
+            $engineKey = 'Gecko';
+        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowser|NF3|Nintendo 3DS)/', $agent)
+            && !$utils->checkIfContains(array('Kindle'))
+        ) {
+            $engineKey = 'NetFront';
+        } elseif ($utils->checkIfContains('BlackBerry')) {
+            $engineKey = 'BlackBerry';
+        } elseif (preg_match('/(Teleca|Obigo)/', $agent)) {
+            $engineKey = 'Teleca';
         } else {
-
-            $trident = false;
-            $doMatch = preg_match('/Trident\/([\d\.]+)/', $agent, $matches);
-
-            if ($doMatch) {
-                if (($matches[1] == 7 && $utils->checkIfContains('Gecko'))
-                    || ($matches[1] < 7 && !$utils->checkIfContains('Gecko'))
-                ) {
-                    $trident = true;
-                }
-            } elseif ($utils->checkIfContains('Mozilla/')
-                && $utils->checkIfContains(array('MSIE', 'Trident'))
-            ) {
-                $trident = true;
-            }
-
-            if ($trident) {
-                $engineKey = 'Trident';
-            } elseif (preg_match('/(Presto|Opera)/', $agent)) {
-                $engineKey = 'Presto';
-            } elseif (preg_match('/(Gecko|Firefox)/', $agent)) {
-                $engineKey = 'Gecko';
-            } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowser|NF3)/', $agent)
-                && !$utils->checkIfContains(array('Kindle'))
-            ) {
-                $engineKey = 'NetFront';
-            } elseif ($utils->checkIfContains('BlackBerry')) {
-                $engineKey = 'BlackBerry';
-            } elseif (preg_match('/(Teleca|Obigo)/', $agent)) {
-                $engineKey = 'Teleca';
-            } else {
-                $engineKey = 'UnknownEngine';
-            }
+            $engineKey = 'UnknownEngine';
         }
 
         $allEnginesProperties = require __DIR__ . '/../../../data/properties/engines.php';

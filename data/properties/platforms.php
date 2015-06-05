@@ -48,14 +48,6 @@ return [
     'AndroidOS' => [
         'name' => 'Android',
         'company' => 'Google',
-        'version' => [
-            'Android android',
-            'Android AndroidHouse Team',
-            'Android WildPuzzleROM v8 froyo',
-            'Android',
-            'JUC\(Linux;U;',
-            'Android OS'
-        ],
         'properties' => []
     ],
     'Bada' => [
@@ -177,17 +169,6 @@ return [
     'iOS' => [
         'name' => 'iOS',
         'company' => 'Apple',
-        'version' => [
-            'IphoneOSX',
-            'CPU OS\_',
-            'CPU OS',
-            'CPU iOS',
-            'CPU iPad OS',
-            'iPhone OS',
-            'iPhone_OS',
-            'IUC\(U\;iOS',
-            'CPU like Mac OS X'
-        ],
         'properties' => []
     ],
     'IRIX' => [
@@ -252,10 +233,6 @@ return [
     'Mac OS X' => [
         'name' => 'Mac OS X',
         'company' => 'Apple',
-        'version' => [
-            'Mac OS X',
-            'Mac OS X v'
-        ],
         'properties' => []
     ],
     'Maemo' => [
@@ -301,8 +278,8 @@ return [
         ],
         'properties' => []
     ],
-    'Nintendo Wii OS' => [
-        'name' => 'Nintendo Wii OS',
+    'Nintendo OS' => [
+        'name' => 'Nintendo OS',
         'company' => 'Nintendo',
         'properties' => []
     ],
@@ -352,10 +329,6 @@ return [
     'RIM OS' => [
         'name' => 'RIM OS',
         'company' => 'Rim',
-        'version' => [
-            'BlackBerry[0-9a-z]+',
-            'BlackBerrySimulator'
-        ],
         'properties' => []
     ],
     'RIM Tablet OS' => [
@@ -475,6 +448,11 @@ return [
     ],
     'Windows Mobile OS' => [
         'name' => 'Windows Mobile OS',
+        'company' => 'Microsoft',
+        'properties' => []
+    ],
+    'Windows CE' => [
+        'name' => 'Windows CE',
         'company' => 'Microsoft',
         'properties' => []
     ],
