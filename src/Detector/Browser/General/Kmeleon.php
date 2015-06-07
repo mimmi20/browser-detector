@@ -118,7 +118,7 @@ class Kmeleon
      */
     public function getManufacturer()
     {
-        return new Company\_KmeleonBrowserOrg();
+        return new Company\KmeleonBrowserOrg();
     }
 
     /**

@@ -36,7 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class _KmeleonBrowserOrg
+class KmeleonBrowserOrg
     extends AbstractCompany
     implements CompanyInterface
 {
