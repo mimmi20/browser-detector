@@ -1496,7 +1496,7 @@ class Result
         }
         $this->setCapability('wurflKey', $wurflKey);
 
-        $additionalData = Loader::load($wurflKey, $this->getLogger());
+        $additionalData = Loader::load(strtolower($wurflKey), $this->getLogger());
 
         $properties = array_keys($this->getAllCapabilities());
 
