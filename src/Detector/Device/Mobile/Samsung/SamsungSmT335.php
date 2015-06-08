@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia730
+class SamsungSmT335
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +56,9 @@ class NokiaLumia730
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lumia 730',
-        'model_extra_info'       => 'Dual Sim',
-        'marketing_name'         => 'Lumia 730',
+        'model_name'             => 'SM-T335',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Tab 3 8.0 LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -74,7 +74,7 @@ class NokiaLumia730
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 480,
+        'resolution_width'       => 1280,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
         'colors'                 => 16777216,
@@ -91,7 +91,7 @@ class NokiaLumia730
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 730', true)) {
+        if (!$this->utils->checkIfContains('SM-T335')) {
             return false;
         }
 
@@ -115,7 +115,7 @@ class NokiaLumia730
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -125,7 +125,7 @@ class NokiaLumia730
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Samsung();
     }
 
     /**
@@ -135,6 +135,6 @@ class NokiaLumia730
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Samsung();
     }
 }

@@ -28,11 +28,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Archos;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -43,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia730
+class Archos40Cesium
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +55,9 @@ class NokiaLumia730
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lumia 730',
-        'model_extra_info'       => 'Dual Sim',
-        'marketing_name'         => 'Lumia 730',
+        'model_name'             => '40 Cesium',
+        'model_extra_info'       => null,
+        'marketing_name'         => '40 Cesium',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -74,10 +73,10 @@ class NokiaLumia730
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -91,7 +90,7 @@ class NokiaLumia730
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 730', true)) {
+        if (!$this->utils->checkIfContains(array('ARCHOS; 40 Cesium'))) {
             return false;
         }
 
@@ -125,7 +124,7 @@ class NokiaLumia730
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Archos();
     }
 
     /**
@@ -135,6 +134,6 @@ class NokiaLumia730
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Archos();
     }
 }

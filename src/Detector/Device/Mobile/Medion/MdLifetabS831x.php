@@ -28,11 +28,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Medion;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -43,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia730
+class MdLifetabS831x
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +55,9 @@ class NokiaLumia730
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lumia 730',
-        'model_extra_info'       => 'Dual Sim',
-        'marketing_name'         => 'Lumia 730',
+        'model_name'             => 'Lifetab S831X',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Lifetab S831X',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -74,14 +73,14 @@ class NokiaLumia730
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -91,7 +90,7 @@ class NokiaLumia730
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 730', true)) {
+        if (!$this->utils->checkIfContains('LIFETAB_S831X')) {
             return false;
         }
 
@@ -115,7 +114,7 @@ class NokiaLumia730
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -125,7 +124,7 @@ class NokiaLumia730
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Lenovo();
     }
 
     /**
@@ -135,6 +134,6 @@ class NokiaLumia730
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Lenovo();
     }
 }

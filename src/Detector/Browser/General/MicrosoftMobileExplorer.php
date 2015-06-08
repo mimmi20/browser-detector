@@ -82,24 +82,24 @@ class MicrosoftMobileExplorer
 
         $isNotReallyAnIE = array(
             // using also the Trident rendering engine
-            'Maxthon',
-            'MxBrowser',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            'MyIE',
+            'maxthon',
+            'mxbrowser',
+            'galeon',
+            'lunascape',
+            'opera',
+            'palemoon',
+            'flock',
+            'myie',
             //others
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt'
+            'linux',
+            'msoffice',
+            'outlook',
+            'blackberry',
+            'webtv',
+            'argclrint'
         );
 
-        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
+        if ($this->utils->checkIfContains($isNotReallyAnIE, true)) {
             return false;
         }
 

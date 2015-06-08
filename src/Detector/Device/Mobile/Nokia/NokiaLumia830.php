@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia730
+class NokiaLumia830
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +56,9 @@ class NokiaLumia730
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lumia 730',
-        'model_extra_info'       => 'Dual Sim',
-        'marketing_name'         => 'Lumia 730',
+        'model_name'             => 'Lumia 830',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Lumia 830',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -68,16 +68,16 @@ class NokiaLumia730
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
+        'physical_screen_width'  => 57,
+        'physical_screen_height' => 94,
+        'columns'                => 12,
+        'rows'                   => 20,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -91,7 +91,7 @@ class NokiaLumia730
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 730', true)) {
+        if (!$this->utils->checkIfContains('nokia; lumia 830', true)) {
             return false;
         }
 

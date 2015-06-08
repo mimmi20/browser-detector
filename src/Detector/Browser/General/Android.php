@@ -112,7 +112,8 @@ class Android
             'wOSBrowser',
             'YahooMobileMessenger',
             'i9988_custom',
-            'i9999_custom'
+            'i9999_custom',
+            'PlayStation',
         );
 
         if ($this->utils->checkIfContains($noAndroid)) {

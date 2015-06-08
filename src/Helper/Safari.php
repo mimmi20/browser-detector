@@ -93,6 +93,7 @@ class Safari
             '1Password',
             'AdobeAIR',
             'Arora',
+            'BB10',
             'BlackBerry',
             'BrowserNG',
             'Chrome',

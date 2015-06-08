@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
-use BrowserDetector\Detector\Os\Maemo;
+
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 

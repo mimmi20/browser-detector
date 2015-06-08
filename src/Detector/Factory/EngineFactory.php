@@ -87,7 +87,7 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'T5';
         } elseif ($trident) {
             $engineKey = 'Trident';
-        } elseif (preg_match('/(AppleWebKit|WebKit|CFNetwork|Safari)/', $agent)) {
+        } elseif (preg_match('/(AppleWebKit|WebKit|CFNetwork|Safari|Dalvik)/', $agent)) {
             $chrome = new Chrome();
             $chrome->setUserAgent($agent);
 

@@ -124,6 +124,7 @@ class MobileDevice
             'meego',
             'midp',
             'mobile version',
+            'mobile safari',
             'mqqbrowser',
             'netfront',
             'nintendo',

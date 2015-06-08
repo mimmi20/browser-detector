@@ -28,11 +28,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -43,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia730
+class Lgv700
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +55,9 @@ class NokiaLumia730
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lumia 730',
-        'model_extra_info'       => 'Dual Sim',
-        'marketing_name'         => 'Lumia 730',
+        'model_name'             => 'V700',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'G Pad 8.3',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -68,20 +67,20 @@ class NokiaLumia730
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 768,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -91,7 +90,7 @@ class NokiaLumia730
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 730', true)) {
+        if (!$this->utils->checkIfContains('LG-V700')) {
             return false;
         }
 
@@ -115,7 +114,7 @@ class NokiaLumia730
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -125,7 +124,7 @@ class NokiaLumia730
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Lg();
     }
 
     /**
@@ -135,6 +134,6 @@ class NokiaLumia730
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Lg();
     }
 }

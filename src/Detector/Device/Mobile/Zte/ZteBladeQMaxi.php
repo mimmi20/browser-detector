@@ -28,22 +28,21 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Zte;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
-/**
+/*
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia730
+class ZteBladeQMaxi
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -56,9 +55,9 @@ class NokiaLumia730
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lumia 730',
-        'model_extra_info'       => 'Dual Sim',
-        'marketing_name'         => 'Lumia 730',
+        'model_name'             => 'Blade Q Maxi',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Blade Q Maxi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -77,7 +76,7 @@ class NokiaLumia730
         'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -91,7 +90,7 @@ class NokiaLumia730
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 730', true)) {
+        if (!$this->utils->checkIfContains(array('blade q maxi'), true)) {
             return false;
         }
 
@@ -125,7 +124,7 @@ class NokiaLumia730
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Zte();
     }
 
     /**
@@ -135,6 +134,6 @@ class NokiaLumia730
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Zte();
     }
 }

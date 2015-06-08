@@ -94,6 +94,10 @@ class ZteBlade
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('zte blade q maxi'), true)) {
+            return false;
+        }
+
         return true;
     }
 
