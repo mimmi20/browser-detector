@@ -111,6 +111,7 @@ class Chrome
             'Edge',
             'CoolNovo',
             'Amigo',
+            'Viera',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',

@@ -1763,10 +1763,7 @@ class Result
                         $value = $detector->getBits();
                         break;
                     case 'device_os_bits':
-                        $detector = new Bits\Os();
-                        $detector->setUserAgent($this->getCapability('useragent', false));
-
-                        $value = $detector->getBits();
+                        $value = $os->getBits();
                         break;
                     case 'device_os':
                     case 'controlcap_advertised_device_os':

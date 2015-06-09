@@ -60,21 +60,6 @@ class EngineFactory implements FactoryInterface
         $utils = new Utils();
         $utils->setUserAgent($agent);
 
-        $trident = false;
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $agent, $matches);
-
-        if ($doMatch) {
-            if (($matches[1] == 7 && $utils->checkIfContains('Gecko'))
-                || ($matches[1] < 7 && !$utils->checkIfContains('Gecko'))
-            ) {
-                $trident = true;
-            }
-        } elseif ($utils->checkIfContains('Mozilla/')
-            && $utils->checkIfContains(array('MSIE', 'Trident'))
-        ) {
-            $trident = true;
-        }
-
         if (null !== $os && in_array($os->getName(), array('iOS'))) {
             $engineKey = 'WebKit';
         } elseif ($utils->checkIfContains(array('Edge'))) {
@@ -85,7 +70,11 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'U3';
         } elseif ($utils->checkIfContains(array('T5/'))) {
             $engineKey = 'T5';
-        } elseif ($trident) {
+        } elseif (preg_match('/Trident\/([\d\.]+)/', $agent)) {
+            $engineKey = 'Trident';
+        } elseif ($utils->checkIfContains('Mozilla/')
+            && $utils->checkIfContains(array('MSIE', 'Trident'))
+        ) {
             $engineKey = 'Trident';
         } elseif (preg_match('/(AppleWebKit|WebKit|CFNetwork|Safari|Dalvik)/', $agent)) {
             $chrome = new Chrome();

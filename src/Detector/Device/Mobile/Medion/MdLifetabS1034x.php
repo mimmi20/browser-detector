@@ -55,7 +55,7 @@ class MdLifetabS1034x
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Lifetab S1034X',
+        'model_name'             => 'S1034X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lifetab S1034X',
         'has_qwerty_keyboard'    => true,

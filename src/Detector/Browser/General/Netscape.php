@@ -131,6 +131,7 @@ class Netscape
             // other applications
             'LotusNotes/',
             'Lotus-Notes/',
+            'Nintendo 3DS',
             // Fakes/Bots
             'Mac; Mac OS ',
             'Esribot',

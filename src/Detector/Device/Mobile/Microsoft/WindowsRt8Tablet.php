@@ -30,17 +30,9 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Microsoft;
 
-use BrowserDetector\Detector\Browser\General\MicrosoftOffice;
-use BrowserDetector\Detector\Browser\General\MicrosoftOutlook;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\WindowsRt;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -65,7 +57,7 @@ class WindowsRt8Tablet
         'model_name'             => 'Windows RT Tablet',
         'model_extra_info'       => null,
         'marketing_name'         => 'Windows RT Tablet',
-        'has_qwerty_keyboard'    => false, // windows_8_rt_ver1
+        'has_qwerty_keyboard'    => true, // windows_8_rt_ver1
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,

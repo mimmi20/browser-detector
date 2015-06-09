@@ -57,7 +57,7 @@ class LenovoA3500flIdeaTab
         // device
         'model_name'             => 'A3500-FL',
         'model_extra_info'       => null,
-        'marketing_name'         => 'IdeaTab A3500-FL',
+        'marketing_name'         => 'IdeaTab A7-40',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

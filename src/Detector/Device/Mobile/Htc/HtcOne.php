@@ -56,7 +56,7 @@ class HtcOne
         'wurflKey'               => 'htc_m7_ver1', // not in wurfl
 
         // device
-        'model_name'             => 'One M7',
+        'model_name'             => 'M7',
         'model_extra_info'       => null,
         'marketing_name'         => 'One',
         'has_qwerty_keyboard'    => true,

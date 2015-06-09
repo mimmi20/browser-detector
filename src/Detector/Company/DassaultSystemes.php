@@ -45,12 +45,12 @@ class DassaultSystemes
      *
      * @var string
      */
-    protected $name = 'Dassault Systemes';
+    protected $name = 'Dasault Systems';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Dassault Systemes';
+    protected $brandname = 'Dasault Systems';
 }

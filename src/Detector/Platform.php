@@ -55,6 +55,11 @@ class Platform
     private $version = null;
 
     /**
+     * @var int
+     */
+    private $bits = null;
+
+    /**
      * the detected browser properties
      *
      * @var array
@@ -66,13 +71,20 @@ class Platform
      * @param \BrowserDetector\Detector\Company\CompanyInterface $manufacturer
      * @param \BrowserDetector\Detector\Version                  $version
      * @param array                                              $properties
+     * @param int                                                $bits
      */
-    public function __construct($name, Company\CompanyInterface $manufacturer, Version $version, array $properties)
-    {
-        $this->name = $name;
+    public function __construct(
+        $name,
+        Company\CompanyInterface $manufacturer,
+        Version $version,
+        array $properties,
+        $bits
+    ) {
+        $this->name         = $name;
         $this->manufacturer = $manufacturer;
-        $this->version = $version;
-        $this->properties = $properties;
+        $this->version      = $version;
+        $this->properties   = $properties;
+        $this->bits         = $bits;
     }
 
     /**
@@ -101,6 +113,14 @@ class Platform
     public function getVersion()
     {
         return $this->version;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBits()
+    {
+        return $this->bits;
     }
 
     /**

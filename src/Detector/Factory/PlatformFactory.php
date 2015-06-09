@@ -98,13 +98,13 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'Windows RT';
         } elseif ($isWindows) {
             $platformKey = 'Windows';
-        } elseif (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $agent)) {
+        } elseif (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|Series40|S60V3|S60V5)/', $agent)) {
             $platformKey = 'Symbian OS';
         } elseif ($utils->checkIfContains('Bada')) {
             $platformKey = 'Bada';
         } elseif ($utils->checkIfContains('MeeGo')) {
             $platformKey = 'MeeGo';
-        } elseif (preg_match('/(maemo|linux armv|like android|linux\/x2\/r1)/i', $agent)) {
+        } elseif (preg_match('/(maemo|like android|linux\/x2\/r1)/i', $agent)) {
             $platformKey = 'Maemo';
         } elseif (preg_match('/(BlackBerry|BB10)/', $agent)) {
             $platformKey = 'RIM OS';
@@ -212,7 +212,7 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'CP/M';
         } elseif ($utils->checkIfContains(array('Nintendo Wii', 'Nintendo 3DS'))) {
             $platformKey = 'Nintendo OS';
-        } elseif ($utils->checkIfContains(array('Nokia', 'Series40'))) {
+        } elseif ($utils->checkIfContains(array('Nokia'))) {
             $platformKey = 'Nokia OS';
         } elseif ($utils->checkIfContains('ruby', true)) {
             $platformKey = 'Ruby';
@@ -274,7 +274,16 @@ class PlatformFactory implements FactoryInterface
                 break;
         }
 
-        return new Platform($platformProperties['name'], $company, $detector, $platformProperties['properties']);
+        $bitDetector = new \BrowserDetector\Detector\Bits\Os();
+        $bitDetector->setUserAgent($agent);
+
+        return new Platform(
+            $platformProperties['name'],
+            $company,
+            $detector,
+            $platformProperties['properties'],
+            $bitDetector->getBits()
+        );
     }
 
     /**

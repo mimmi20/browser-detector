@@ -92,6 +92,7 @@ class ComodoDragon
             'PaleMoon',
             'Rockmelt',
             'Amigo',
+            'Viera',
         );
 
         if ($this->utils->checkIfContains($isNotReallyADragon)) {
@@ -153,7 +154,7 @@ class ComodoDragon
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Comodo Dragon', 'Chrome');
+        $searches = array('Comodo Dragon', 'Dragon', 'Chrome');
 
         return $detector->detectVersion($searches);
     }
