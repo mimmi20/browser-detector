@@ -118,7 +118,7 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'Darwin';
         } elseif (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)) {
             $platformKey = 'iOS';
-        } elseif (preg_match('/(Android|Silk|JUC\(Linux;U;|JUC \(Linux; U;)/', $agent)
+        } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;)/i', $agent)
             || $safariHelper->isMobileAsSafari()
         ) {
             $platformKey = 'AndroidOS';

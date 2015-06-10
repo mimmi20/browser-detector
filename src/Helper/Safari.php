@@ -98,6 +98,7 @@ class Safari
             'BrowserNG',
             'Chrome',
             'Chromium',
+            'Coast',
             'Dolfin',
             'Dreamweaver',
             'Epiphany',

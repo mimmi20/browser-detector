@@ -28,9 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser\Mobile;
-
-use BrowserDetector\Detector\Browser\General\OperaCoast as CoastBase;
+namespace BrowserDetector\Detector\Company;
 
 /**
  * @category  BrowserDetector
@@ -38,8 +36,21 @@ use BrowserDetector\Detector\Browser\General\OperaCoast as CoastBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OperaCoast
-    extends CoastBase
+class Jobboerse
+    extends AbstractCompany
+    implements CompanyInterface
 {
-    // nothing to do here
+    /**
+     * the name of the company
+     *
+     * @var string
+     */
+    protected $name = 'Jobboerse.com';
+
+    /**
+     * the brand name of the company
+     *
+     * @var string
+     */
+    protected $brandname = 'Jobboerse.com';
 }

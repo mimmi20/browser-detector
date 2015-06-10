@@ -152,7 +152,7 @@ class MicrosoftOutlook
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
         $doMatch = preg_match(
-            '/microsoft Office Outlook ([\d\.]+)/',
+            '/Office Outlook ([\d\.]+)/',
             $this->useragent,
             $matches
         );
@@ -162,7 +162,7 @@ class MicrosoftOutlook
         }
 
         $doMatch = preg_match(
-            '/microsoft Office Outlook (\d+)/',
+            '/Office Outlook (\d+)/',
             $this->useragent,
             $matches
         );
@@ -172,7 +172,7 @@ class MicrosoftOutlook
         }
 
         $doMatch = preg_match(
-            '/microsoft Outlook ([\d\.]+)/',
+            '/Outlook ([\d\.]+)/',
             $this->useragent,
             $matches
         );
@@ -182,7 +182,7 @@ class MicrosoftOutlook
         }
 
         $doMatch = preg_match(
-            '/microsoft Outlook (\d+)/',
+            '/Outlook (\d+)/',
             $this->useragent,
             $matches
         );

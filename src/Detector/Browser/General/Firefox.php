@@ -133,6 +133,7 @@ class Firefox
             'Yahoo!',
             'Slurp',
             'adbeat.com',
+            'Jobboerse',
             //others
             'MSIE',
             'Trident',

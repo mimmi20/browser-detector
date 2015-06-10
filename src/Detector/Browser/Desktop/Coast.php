@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser\Desktop;
 
-use BrowserDetector\Detector\Browser\General\Coast as CoastBase;
+use BrowserDetector\Detector\Browser\General\OperaCoast as CoastBase;
 
 /**
  * @category  BrowserDetector
@@ -38,7 +38,7 @@ use BrowserDetector\Detector\Browser\General\Coast as CoastBase;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Coast
+class OperaCoast
     extends CoastBase
 {
     // nothing to do here

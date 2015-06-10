@@ -169,6 +169,8 @@ class Netscape
             'feedfetcher',
             'Exabot',
             'Powermarks',
+            'Insitesbot',
+            'yjapp',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

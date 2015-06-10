@@ -84,6 +84,7 @@ class Opera
             'Opera Mini',
             'Opera Mobi',
             'Opera Tablet',
+            'Coast',
             // Fakes
             'Mac; Mac OS ',
             'AppEngine-Google',

@@ -28,13 +28,15 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+
+
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -43,9 +45,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Prestigio
+class SamsungSghm919
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -56,10 +58,10 @@ class Prestigio
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'general Prestigio Device',
+        'model_name'             => 'SGH-M919',
         'model_extra_info'       => null,
-        'marketing_name'         => 'general Prestigio Device',
-        'has_qwerty_keyboard'    => true,
+        'marketing_name'         => 'Galaxy S4',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -68,16 +70,16 @@ class Prestigio
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'physical_screen_width'  => 42,
+        'physical_screen_height' => 70,
+        'columns'                => 16,
+        'rows'                   => 20,
+        'max_image_width'        => 228,
+        'max_image_height'       => 340,
+        'resolution_width'       => 240,
+        'resolution_height'      => 400,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -91,42 +93,11 @@ class Prestigio
      */
     public function canHandle()
     {
-        $phones = array(
-            'Prestigio',
-            'PMP5080CPRO',
-            'PMP3370B',
-            'PMP5197DULTRA',
-            'PMP5580C',
-            'PMP7100D3G',
-            'PMP7280C3G',
-            'PMP5770D',
-            'PAP5000TDUO',
-            'PMP5101C_QUAD',
-        );
-
-        if (!$this->utils->checkIfContains($phones)) {
+        if (!$this->utils->checkIfContains('SGH-M919')) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Prestigio');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Prestigio' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
@@ -136,7 +107,7 @@ class Prestigio
      */
     public function getWeight()
     {
-        return 2847;
+        return 3;
     }
 
     /**
@@ -146,7 +117,7 @@ class Prestigio
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -156,7 +127,7 @@ class Prestigio
      */
     public function getManufacturer()
     {
-        return new Company\Prestigio();
+        return new Company\Samsung();
     }
 
     /**
@@ -166,6 +137,6 @@ class Prestigio
      */
     public function getBrand()
     {
-        return new Company\Prestigio();
+        return new Company\Samsung();
     }
 }

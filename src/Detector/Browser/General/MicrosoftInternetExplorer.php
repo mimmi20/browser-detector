@@ -135,12 +135,14 @@ class MicrosoftInternetExplorer
             'htc_hd2',
             'gomezagent',
             'deepnet explorer',
+            'kkman',
             // Fakes / Bots
             'msiecrawler',
             'mac; mac os ',
             'bingpreview',
             'crystalsemanticsbot',
             '360spider',
+            'googletoolbar',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)

@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Coast
+class GoogleToolbar
     extends BrowserHandler
 {
     /**
@@ -55,10 +55,10 @@ class Coast
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
-        'pdf_support'                  => true,
+        'pdf_support'                  => false,
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
@@ -74,7 +74,7 @@ class Coast
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains('Coast')) {
+        if ($this->utils->checkIfContains('GoogleToolbar', true)) {
             return true;
         }
 
@@ -88,7 +88,7 @@ class Coast
      */
     public function getName()
     {
-        return 'Surfers Paradise Gold Coast App';
+        return 'Google Toolbar';
     }
 
     /**
@@ -98,7 +98,7 @@ class Coast
      */
     public function getManufacturer()
     {
-        return new Company\Opera();
+        return new Company\Google();
     }
 
     /**
@@ -108,17 +108,7 @@ class Coast
      */
     public function getBrowserType()
     {
-        return new BrowserType\Application();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 23;
+        return new BrowserType\Bot();
     }
 
     /**
@@ -131,8 +121,18 @@ class Coast
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Coast');
+        $searches = array('GoogleToolbar');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 5;
     }
 }

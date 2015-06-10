@@ -32,8 +32,6 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-
-
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -43,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftMobileExplorer
+class AdmantxPlatformSemanticAnalyzer
     extends BrowserHandler
 {
     /**
@@ -66,7 +64,7 @@ class MicrosoftMobileExplorer
         'basic_authentication_support' => true,
         'post_method_support'          => true,
         // rss
-        'rss_support'                  => true,
+        'rss_support'                  => false,
     );
 
     /**
@@ -76,38 +74,11 @@ class MicrosoftMobileExplorer
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop', 'XBLWP7', 'ZuneWP7'))) {
-            return false;
+        if ($this->utils->checkIfContains('ADmantX Platform Semantic Analyzer')) {
+            return true;
         }
 
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'maxthon',
-            'mxbrowser',
-            'galeon',
-            'lunascape',
-            'opera',
-            'palemoon',
-            'flock',
-            'myie',
-            //others
-            'linux',
-            'msoffice',
-            'outlook',
-            'blackberry',
-            'webtv',
-            'argclrint',
-            'kkman',
-            // Fakes / Bots
-            'msiecrawler',
-            'googletoolbar',
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnIE, true)) {
-            return false;
-        }
-
-        return true;
+        return false;
     }
 
     /**
@@ -117,7 +88,7 @@ class MicrosoftMobileExplorer
      */
     public function getName()
     {
-        return 'IEMobile';
+        return 'ADmantX Platform Semantic Analyzer';
     }
 
     /**
@@ -127,7 +98,7 @@ class MicrosoftMobileExplorer
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company\AdmantxInc();
     }
 
     /**
@@ -137,7 +108,7 @@ class MicrosoftMobileExplorer
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Bot();
     }
 
     /**
@@ -150,17 +121,7 @@ class MicrosoftMobileExplorer
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
-            return $detector->setVersion('9.0');
-        }
-
-        if ($this->utils->checkIfContains('WPDesktop') && !$this->utils->checkIfContains('rv:')) {
-            return $detector->setVersion('10.0');
-        }
-
-        $searches = array('IEMobile', 'MSIE', 'rv\:');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('0.0');
     }
 
     /**
@@ -170,6 +131,6 @@ class MicrosoftMobileExplorer
      */
     public function getWeight()
     {
-        return 828786;
+        return 4;
     }
 }

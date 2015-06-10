@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Prestigio
+class Micromax
     extends DeviceHandler
     implements DeviceInterface, DeviceHasChildrenInterface
 {
@@ -56,9 +56,9 @@ class Prestigio
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'general Prestigio Device',
+        'model_name'             => 'general Micromax Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'general Prestigio Device',
+        'marketing_name'         => 'general Micromax Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -91,24 +91,13 @@ class Prestigio
      */
     public function canHandle()
     {
-        $phones = array(
-            'Prestigio',
-            'PMP5080CPRO',
-            'PMP3370B',
-            'PMP5197DULTRA',
-            'PMP5580C',
-            'PMP7100D3G',
-            'PMP7280C3G',
-            'PMP5770D',
-            'PAP5000TDUO',
-            'PMP5101C_QUAD',
-        );
+        $MicromaxPhones = array('Micromax', ' A114 ');
 
-        if (!$this->utils->checkIfContains($phones)) {
-            return false;
+        if ($this->utils->checkIfContains($MicromaxPhones, true)) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -120,9 +109,9 @@ class Prestigio
     {
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Prestigio');
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Micromax');
         $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Prestigio' . DIRECTORY_SEPARATOR
+            __DIR__ . DIRECTORY_SEPARATOR . 'Micromax' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler($this);
 
@@ -136,7 +125,7 @@ class Prestigio
      */
     public function getWeight()
     {
-        return 2847;
+        return 3;
     }
 
     /**
@@ -146,7 +135,7 @@ class Prestigio
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -156,7 +145,7 @@ class Prestigio
      */
     public function getManufacturer()
     {
-        return new Company\Prestigio();
+        return new Company\Micromax();
     }
 
     /**
@@ -166,6 +155,6 @@ class Prestigio
      */
     public function getBrand()
     {
-        return new Company\Prestigio();
+        return new Company\Micromax();
     }
 }
