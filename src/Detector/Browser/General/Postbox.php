@@ -74,32 +74,7 @@ class Postbox
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContainsAll(array('Postbox', 'Gecko'))) {
-            return false;
-        }
-
-        $isNotReallyAnFirefox = array(
-            // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Camino',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'Navigator',
-            'PaleMoon',
-            'SeaMonkey',
-            'Flock',
-            'Fennec',
-            'Firefox'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
+        if (!$this->utils->checkIfContains('Postbox/')) {
             return false;
         }
 
@@ -113,7 +88,7 @@ class Postbox
      */
     public function getName()
     {
-        return 'Postbox';
+        return 'Postbox App';
     }
 
     /**

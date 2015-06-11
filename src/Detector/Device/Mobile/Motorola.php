@@ -129,6 +129,7 @@ class Motorola
             'xt1021',
             'xt1052',
             'xt1032',
+            'xt1033',
         );
 
         if (!$this->utils->checkIfContains($motorolaPhones, true)) {

@@ -88,6 +88,7 @@ class MicrosoftMobileExplorer
             'lunascape',
             'opera',
             'palemoon',
+            'avant',
             'flock',
             'myie',
             //others
@@ -97,10 +98,19 @@ class MicrosoftMobileExplorer
             'blackberry',
             'webtv',
             'argclrint',
+            'deepnet explorer',
             'kkman',
+            'crazy browser',
+            'slimbrowser',
             // Fakes / Bots
             'msiecrawler',
+            'gomezagent',
             'googletoolbar',
+            'presto',
+            'mac; mac os ',
+            'bingpreview',
+            'crystalsemanticsbot',
+            '360spider',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)) {

@@ -114,6 +114,9 @@ class Android
             'i9988_custom',
             'i9999_custom',
             'PlayStation',
+            'NintendoBrowser',
+            'NX/',
+            'Nintendo WiiU',
         );
 
         if ($this->utils->checkIfContains($noAndroid)) {
