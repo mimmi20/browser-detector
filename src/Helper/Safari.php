@@ -147,6 +147,7 @@ class Safari
             'SMTBot',
             'Google Web Preview',
             'Mediapartners-Google',
+            'bingbot',
             //mobile Version
             'Tablet',
             'Android',

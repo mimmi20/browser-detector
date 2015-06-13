@@ -104,7 +104,8 @@ class Lenovo
             'SmartTabII10',
             'SmartTabIII10',
             'Vodafone Smart Tab III 10',
-            'Vodafone Smart Tab 4'
+            'Vodafone Smart Tab 4',
+            'IdeaPadA10',
         );
 
         if (!$this->utils->checkIfContains($LenovoPhones)) {

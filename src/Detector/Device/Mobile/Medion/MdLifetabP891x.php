@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Medion;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoIdeaPadA1
+class MdLifetabP891x
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -53,12 +53,12 @@ class LenovoIdeaPadA1
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lenovo_ideapad_a1_ver1', // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'IdeaPad A1',
+        'model_name'             => 'LifeTab P891X',
         'model_extra_info'       => null,
-        'marketing_name'         => 'IdeaPad A1 Tablet',
+        'marketing_name'         => 'LifeTab P891X',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -68,20 +68,20 @@ class LenovoIdeaPadA1
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 90, // wurflkey: lenovo_ideapad_a1_ver1
-        'physical_screen_height' => 154,
-        'columns'                => 60,
-        'rows'                   => 40,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 600,
+        'physical_screen_width'  => 135,
+        'physical_screen_height' => 216,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -91,11 +91,7 @@ class LenovoIdeaPadA1
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A1_07')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('IdeaPadA10')) {
+        if (!$this->utils->checkIfContains('LIFETAB_P891X')) {
             return false;
         }
 
@@ -129,7 +125,7 @@ class LenovoIdeaPadA1
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company\Medion();
     }
 
     /**
@@ -139,6 +135,6 @@ class LenovoIdeaPadA1
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company\Medion();
     }
 }

@@ -78,6 +78,10 @@ class Genieo
             return false;
         }
 
+        if ($this->utils->checkIfContains('webfilter', true)) {
+            return false;
+        }
+
         return true;
     }
 

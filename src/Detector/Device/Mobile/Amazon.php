@@ -101,6 +101,7 @@ class Amazon
             'KFSOWI',
             'KFTHWI',
             'SD4930UR',
+            'KFAPWA',
         );
 
         if (!$this->utils->checkIfContains($amazonPhones)) {

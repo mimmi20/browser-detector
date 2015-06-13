@@ -57,7 +57,7 @@ class SamsungSmT235
         // device
         'model_name'             => 'SM-T235',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 4 7.0',
+        'marketing_name'         => 'Galaxy Tab 4 7.0 WiFi + LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

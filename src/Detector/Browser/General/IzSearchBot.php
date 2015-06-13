@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome
+class IzSearchBot
     extends BrowserHandler
 {
     /**
@@ -55,8 +55,8 @@ class Chrome
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -74,67 +74,7 @@ class Chrome
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'))) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Version/'))) {
-            return false;
-        }
-
-        $isNotReallyAnChrome = array(
-            // using also the KHTML rendering engine
-            'Arora',
-            'Chromium',
-            'Comodo Dragon',
-            'Dragon',
-            'Flock',
-            'Galeon',
-            'Google Earth',
-            'Iron',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Midori',
-            'OPR',
-            'PaleMoon',
-            'RockMelt',
-            'Silk',
-            'YaBrowser',
-            'Firefox',
-            'Iceweasel',
-            'Edge',
-            'CoolNovo',
-            'Amigo',
-            'Viera',
-            'SamsungBrowser',
-            // Bots trying to be a Chrome
-            'PagePeeker',
-            'Google Web Preview',
-            'Google Wireless Transcoder',
-            'Google Page Speed',
-            'HubSpot Webcrawler',
-            'GomezAgent',
-            'TagInspector',
-            '360Spider',
-            // Fakes
-            'Mac; Mac OS '
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
-            return false;
-        }
-
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(array('Chrome'));
-
-        if (0 != $detector->getVersion(Version::MINORONLY)) {
+        if (!$this->utils->checkIfContains(array('iZSearch'))) {
             return false;
         }
 
@@ -148,7 +88,7 @@ class Chrome
      */
     public function getName()
     {
-        return 'Chrome';
+        return 'iZSearch Bot';
     }
 
     /**
@@ -158,7 +98,7 @@ class Chrome
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company\IzSearch();
     }
 
     /**
@@ -168,7 +108,17 @@ class Chrome
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Bot();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 4;
     }
 
     /**
@@ -180,20 +130,7 @@ class Chrome
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Chrome', 'CrMo', 'CriOS');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 116398328;
+        return $detector->setVersion('0.0');
     }
 }
