@@ -78,6 +78,10 @@ class Bot360
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('HaosouSpider'))) {
+            return false;
+        }
+
         return true;
     }
 

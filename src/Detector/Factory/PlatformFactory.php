@@ -116,6 +116,8 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'FirefoxOS';
         } elseif ($utils->checkIfContains('darwin', true)) {
             $platformKey = 'Darwin';
+        } elseif ($utils->checkIfContains('playstation', true)) {
+            $platformKey = 'CellOS';
         } elseif (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)) {
             $platformKey = 'iOS';
         } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;)/i', $agent)
@@ -170,8 +172,6 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'AmigaOS';
         } elseif ($utils->checkIfContains('BREW')) {
             $platformKey = 'BREW';
-        } elseif ($utils->checkIfContains('playstation', true)) {
-            $platformKey = 'CellOS';
         } elseif ($utils->checkIfContains('cygwin', true)) {
             $platformKey = 'CygWin';
         } elseif ($utils->checkIfContains('freebsd', true)) {

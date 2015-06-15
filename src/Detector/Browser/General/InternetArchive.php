@@ -74,7 +74,11 @@ class InternetArchive
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ia_archiver')) {
+        if (!$this->utils->checkIfContains(array('ia_archiver'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('special_archiver'))) {
             return false;
         }
 

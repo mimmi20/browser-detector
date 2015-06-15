@@ -35,8 +35,6 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Bada;
-use BrowserDetector\Detector\Os\Brew;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -113,6 +111,7 @@ class SonyEricsson
             'd5803',
             'd2303',
             'd2005',
+            'd2203',
             'e10i',
             'e15i',
             'e15av',

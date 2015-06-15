@@ -77,6 +77,10 @@ class ArchiveOrgBot
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('special_archiver'))) {
+            return false;
+        }
+
         return true;
     }
 

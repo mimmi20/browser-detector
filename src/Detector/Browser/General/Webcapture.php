@@ -74,11 +74,7 @@ class Webcapture
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Webcapture/'))) {
+        if (!$this->utils->checkIfContains(array('webcapture'), true)) {
             return false;
         }
 
@@ -92,7 +88,7 @@ class Webcapture
      */
     public function getName()
     {
-        return 'Webcapture';
+        return 'WebCapture';
     }
 
     /**
@@ -125,7 +121,7 @@ class Webcapture
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Webcapture');
+        $searches = array('WebCapture');
 
         return $detector->detectVersion($searches);
     }

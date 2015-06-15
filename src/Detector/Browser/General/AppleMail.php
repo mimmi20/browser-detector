@@ -132,6 +132,7 @@ class AppleMail
             'WebClip',
             'WeTab',
             'wOSBrowser',
+            'ABrowse',
             //mobile Version
             'Tablet',
             'Android',

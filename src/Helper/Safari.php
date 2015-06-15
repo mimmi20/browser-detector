@@ -148,6 +148,7 @@ class Safari
             'Google Web Preview',
             'Mediapartners-Google',
             'bingbot',
+            'adbeat',
             //mobile Version
             'Tablet',
             'Android',

@@ -143,6 +143,8 @@ class MicrosoftInternetExplorer
             'crystalsemanticsbot',
             '360spider',
             'googletoolbar',
+            'code.google.com/appengine',
+            'appengine-google',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)

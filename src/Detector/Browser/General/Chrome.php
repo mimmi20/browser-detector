@@ -113,6 +113,8 @@ class Chrome
             'Amigo',
             'Viera',
             'SamsungBrowser',
+            'Puffin',
+            'WhiteHat Aviator',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',

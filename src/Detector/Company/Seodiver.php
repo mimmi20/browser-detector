@@ -36,7 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ArchiveOrg
+class Seodiver
     extends AbstractCompany
     implements CompanyInterface
 {
@@ -45,12 +45,12 @@ class ArchiveOrg
      *
      * @var string
      */
-    protected $name = 'The Internet Archive';
+    protected $name = 'seodiver.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'The Internet Archive';
+    protected $brandname = 'seodiver.com';
 }

@@ -134,6 +134,8 @@ class Firefox
             'Slurp',
             'adbeat.com',
             'Jobboerse',
+            'trendictionbot',
+            'trendiction search',
             //others
             'MSIE',
             'Trident',

@@ -77,11 +77,6 @@ class Firebird
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/4.0') && !$this->utils->checkIfContains('Mozilla/5.0')
-        ) {
-            return false;
-        }
-
         if (!$this->utils->checkIfContains(array('Firebird'))) {
             return false;
         }

@@ -171,6 +171,11 @@ class Netscape
             'Powermarks',
             'Insitesbot',
             'yjapp',
+            'SEOdiver',
+            'InfegyAtlas',
+            'WebCapture',
+            'Firebird',
+            'Superfish',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
