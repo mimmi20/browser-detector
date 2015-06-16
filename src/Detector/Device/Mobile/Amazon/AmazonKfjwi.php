@@ -58,9 +58,9 @@ class AmazonKfjwi
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'Kfjwi',
+        'model_name'             => 'KFJWI',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Kindle Fire HD 8.9',
+        'marketing_name'         => 'Kindle Fire HD 8.9 Wi-Fi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -32,8 +32,6 @@ namespace BrowserDetector\Detector\Browser\General;
 
 use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-
-
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -43,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftMobileExplorer
+class Vobsub
     extends BrowserHandler
 {
     /**
@@ -57,8 +55,8 @@ class MicrosoftMobileExplorer
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -66,7 +64,7 @@ class MicrosoftMobileExplorer
         'basic_authentication_support' => true,
         'post_method_support'          => true,
         // rss
-        'rss_support'                  => true,
+        'rss_support'                  => false,
     );
 
     /**
@@ -76,47 +74,7 @@ class MicrosoftMobileExplorer
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IEMobile', 'Windows CE', 'MSIE', 'WPDesktop', 'XBLWP7', 'ZuneWP7'))) {
-            return false;
-        }
-
-        $isNotReallyAnIE = array(
-            // using also the Trident rendering engine
-            'maxthon',
-            'mxbrowser',
-            'galeon',
-            'lunascape',
-            'opera',
-            'palemoon',
-            'avant',
-            'flock',
-            'myie',
-            //others
-            'linux',
-            'msoffice',
-            'outlook',
-            'blackberry',
-            'webtv',
-            'argclrint',
-            'deepnet explorer',
-            'kkman',
-            'crazy browser',
-            'slimbrowser',
-            'netscape',
-            // Fakes / Bots
-            'msiecrawler',
-            'gomezagent',
-            'googletoolbar',
-            'presto',
-            'mac; mac os ',
-            'bingpreview',
-            'crystalsemanticsbot',
-            '360spider',
-            'code.google.com/appengine',
-            'appengine-google',
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnIE, true)) {
+        if (!$this->utils->checkIfContains('vobsub')) {
             return false;
         }
 
@@ -130,7 +88,7 @@ class MicrosoftMobileExplorer
      */
     public function getName()
     {
-        return 'IEMobile';
+        return 'vobsub';
     }
 
     /**
@@ -140,7 +98,7 @@ class MicrosoftMobileExplorer
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company\Unknown();
     }
 
     /**
@@ -150,7 +108,7 @@ class MicrosoftMobileExplorer
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Application();
     }
 
     /**
@@ -163,15 +121,7 @@ class MicrosoftMobileExplorer
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
-            return $detector->setVersion('9.0');
-        }
-
-        if ($this->utils->checkIfContains('WPDesktop') && !$this->utils->checkIfContains('rv:')) {
-            return $detector->setVersion('10.0');
-        }
-
-        $searches = array('IEMobile', 'MSIE', 'rv\:');
+        $searches = array('vobsub');
 
         return $detector->detectVersion($searches);
     }
@@ -183,6 +133,6 @@ class MicrosoftMobileExplorer
      */
     public function getWeight()
     {
-        return 828786;
+        return 32;
     }
 }

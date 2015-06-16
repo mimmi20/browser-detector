@@ -130,7 +130,7 @@ class Epiphany
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\TheGnomeProject();
     }
 
     /**

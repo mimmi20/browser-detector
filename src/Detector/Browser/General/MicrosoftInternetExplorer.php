@@ -128,6 +128,7 @@ class MicrosoftInternetExplorer
             'webtv',
             'argclrint',
             'slimbrowser',
+            'netscape',
             // mobile IE
             'xblwp7',
             'zunewp7',
@@ -145,6 +146,7 @@ class MicrosoftInternetExplorer
             'googletoolbar',
             'code.google.com/appengine',
             'appengine-google',
+            'fr_crawler',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)

@@ -74,7 +74,7 @@ class FrCrawler
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('fr-crawler'))) {
+        if (!$this->utils->checkIfContains(array('fr-crawler', 'fr_crawler'))) {
             return false;
         }
 

@@ -1269,7 +1269,7 @@ return [
     ],
     'KHTML' => [
         'name' => 'KHTML',
-        'company' => 'Unknown',
+        'company' => 'Kde',
         'version' => [
             'KHTML'
         ],

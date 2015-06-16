@@ -109,6 +109,7 @@ class Firefox
             'Lunascape',
             'Opera',
             'PaleMoon',
+            'Palemoon',
             'SeaMonkey',
             'Flock',
             'IceCat',

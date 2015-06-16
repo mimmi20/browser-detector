@@ -146,7 +146,7 @@ class Imac
     public function detectVersion()
     {
         $detector = new Version();
-        $detector->setUserAgent($this->useragent);
+        $detector->setUserAgent(urldecode($this->useragent));
 
         $searches = array('iMac');
 

@@ -91,7 +91,7 @@ class NokiaLumia1020
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('nokia; lumia 1020', 'nokia; 909'), true)) {
+        if (!$this->utils->checkIfContains(array('nokia; lumia 1020', 'nokia; 909', 'wpdesktop; 909'), true)) {
             return false;
         }
 

@@ -91,7 +91,7 @@ class SonyD6503ExperiaZ2
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonD6503', 'SonyD6503', 'D6503'))) {
+        if (!$this->utils->checkIfContains(array('SonyEricssonD6503', 'SonyD6503', 'D6503', 'Xperia Z2'))) {
             return false;
         }
 

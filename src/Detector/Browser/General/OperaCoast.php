@@ -74,7 +74,7 @@ class OperaCoast
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('OperaCoast', 'Opera%20Coast'))) {
+        if ($this->utils->checkIfContains(array('OperaCoast', 'Opera%20Coast', 'Coast'))) {
             return true;
         }
 

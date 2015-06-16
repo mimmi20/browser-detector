@@ -95,6 +95,10 @@ class SamsungSmT210
             return false;
         }
 
+        if ($this->utils->checkIfContains('SM-T2105')) {
+            return false;
+        }
+
         return true;
     }
 

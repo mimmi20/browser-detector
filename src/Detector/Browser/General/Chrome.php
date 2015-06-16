@@ -115,6 +115,7 @@ class Chrome
             'SamsungBrowser',
             'Puffin',
             'WhiteHat Aviator',
+            ' SE ',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',

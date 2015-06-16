@@ -95,6 +95,10 @@ class SonyC6903ExperiaZ1
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('Xperia Z2'))) {
+            return false;
+        }
+
         return true;
     }
 

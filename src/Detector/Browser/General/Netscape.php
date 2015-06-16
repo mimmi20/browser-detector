@@ -176,6 +176,7 @@ class Netscape
             'WebCapture',
             'Firebird',
             'Superfish',
+            'Excel',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

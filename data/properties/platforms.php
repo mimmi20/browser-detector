@@ -121,9 +121,6 @@ return [
     'Debian' => [
         'name' => 'Debian',
         'company' => 'Debian',
-        'version' => [
-            'Debian'
-        ],
         'properties' => []
     ],
     'DragonFlyBSD' => [
