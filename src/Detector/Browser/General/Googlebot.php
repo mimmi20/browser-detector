@@ -80,7 +80,15 @@ class Googlebot
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Mediapartners-Google', 'Googlebot-Mobile', 'AdsBot-Google', 'Google Page Speed'))) {
+        $otherGoogleBots = array(
+            'Mediapartners-Google',
+            'Googlebot-Mobile',
+            'AdsBot-Google',
+            'Google Page Speed',
+            'Google Web Preview'
+        );
+
+        if ($this->utils->checkIfContains($otherGoogleBots)) {
             return false;
         }
 

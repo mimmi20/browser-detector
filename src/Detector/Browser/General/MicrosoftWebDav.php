@@ -36,12 +36,15 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
 /**
+ * BenQUserAgentHandler
+ *
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nutch
+class MicrosoftWebDav
     extends BrowserHandler
 {
     /**
@@ -55,7 +58,7 @@ class Nutch
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -74,11 +77,7 @@ class Nutch
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Nutch'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl', 'Domnutch'))) {
+        if (!$this->utils->checkIfContains('Microsoft-WebDAV')) {
             return false;
         }
 
@@ -92,7 +91,7 @@ class Nutch
      */
     public function getName()
     {
-        return 'Nutch';
+        return 'Microsoft-WebDAV';
     }
 
     /**
@@ -102,7 +101,7 @@ class Nutch
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company\Microsoft();
     }
 
     /**
@@ -125,7 +124,7 @@ class Nutch
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Nutch', 'Nutch\-');
+        $searches = array('Microsoft\-WebDAV\-MiniRedir', 'Microsoft\-WebDAV');
 
         return $detector->detectVersion($searches);
     }
@@ -137,6 +136,7 @@ class Nutch
      */
     public function getWeight()
     {
-        return 8116;
+        return 7;
     }
 }
+

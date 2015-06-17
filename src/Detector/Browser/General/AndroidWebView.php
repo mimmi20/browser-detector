@@ -97,6 +97,7 @@ class AndroidWebView
             'RockMelt',
             'Silk',
             'YaBrowser',
+            'bdbrowser_i18n',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',
@@ -104,7 +105,7 @@ class AndroidWebView
             'Google Page Speed',
             'HubSpot Webcrawler',
             // Fakes
-            'Mac; Mac OS '
+            'Mac; Mac OS ',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnChrome)) {

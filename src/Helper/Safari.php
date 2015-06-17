@@ -146,6 +146,8 @@ class Safari
             'adsbot-google-mobile',
             'SMTBot',
             'Google Web Preview',
+            'Google Page Speed Insights',
+            'Google Markup Tester',
             'Mediapartners-Google',
             'bingbot',
             'adbeat',

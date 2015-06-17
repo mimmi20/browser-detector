@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nutch
+class Domnutch
     extends BrowserHandler
 {
     /**
@@ -74,11 +74,7 @@ class Nutch
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Nutch'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl', 'Domnutch'))) {
+        if (!$this->utils->checkIfContains(array('Domnutch'))) {
             return false;
         }
 
@@ -92,7 +88,7 @@ class Nutch
      */
     public function getName()
     {
-        return 'Nutch';
+        return 'Domnutch Bot';
     }
 
     /**
@@ -102,7 +98,7 @@ class Nutch
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company\NutchDe();
     }
 
     /**
@@ -125,7 +121,7 @@ class Nutch
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Nutch', 'Nutch\-');
+        $searches = array('Domnutch\-Bot', 'Nutch\-');
 
         return $detector->detectVersion($searches);
     }
@@ -137,6 +133,6 @@ class Nutch
      */
     public function getWeight()
     {
-        return 8116;
+        return 8117;
     }
 }

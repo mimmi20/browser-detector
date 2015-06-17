@@ -98,7 +98,7 @@ class Links
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\MikulasPatocka();
     }
 
     /**

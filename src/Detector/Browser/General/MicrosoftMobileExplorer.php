@@ -114,6 +114,7 @@ class MicrosoftMobileExplorer
             '360spider',
             'code.google.com/appengine',
             'appengine-google',
+            'claritydailybot',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)) {

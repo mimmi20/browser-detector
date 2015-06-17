@@ -78,7 +78,7 @@ class Baidu
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('baiduspider-image'), true)) {
+        if ($this->utils->checkIfContains(array('baiduspider-image', 'heritrix'), true)) {
             return false;
         }
 

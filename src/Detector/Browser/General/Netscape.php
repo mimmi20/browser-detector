@@ -177,6 +177,11 @@ class Netscape
             'Firebird',
             'Superfish',
             'Excel',
+            'Prism',
+            'Songbird',
+            'Indy Library',
+            'libcurl',
+            'ClarityDailyBot',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

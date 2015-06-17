@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nutch
+class BaiduBrowser
     extends BrowserHandler
 {
     /**
@@ -55,8 +55,8 @@ class Nutch
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -74,11 +74,7 @@ class Nutch
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Nutch'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl', 'Domnutch'))) {
+        if (!$this->utils->checkIfContains(array('bdbrowser_i18n'))) {
             return false;
         }
 
@@ -92,7 +88,7 @@ class Nutch
      */
     public function getName()
     {
-        return 'Nutch';
+        return 'BaiduBrowser';
     }
 
     /**
@@ -102,7 +98,7 @@ class Nutch
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company\Baidu();
     }
 
     /**
@@ -112,7 +108,7 @@ class Nutch
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new BrowserType\Browser();
     }
 
     /**
@@ -124,8 +120,9 @@ class Nutch
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Nutch', 'Nutch\-');
+        $searches = array('bdbrowser_i18n');
 
         return $detector->detectVersion($searches);
     }
@@ -137,6 +134,6 @@ class Nutch
      */
     public function getWeight()
     {
-        return 8116;
+        return 116398329;
     }
 }

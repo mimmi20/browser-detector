@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nutch
+class Vivaldi
     extends BrowserHandler
 {
     /**
@@ -74,11 +74,7 @@ class Nutch
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Nutch'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl', 'Domnutch'))) {
+        if (!$this->utils->checkIfContains('Vivaldi')) {
             return false;
         }
 
@@ -92,7 +88,7 @@ class Nutch
      */
     public function getName()
     {
-        return 'Nutch';
+        return 'Vivaldi';
     }
 
     /**
@@ -102,7 +98,7 @@ class Nutch
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company\Vivaldi();
     }
 
     /**
@@ -112,7 +108,7 @@ class Nutch
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new BrowserType\Browser();
     }
 
     /**
@@ -125,18 +121,8 @@ class Nutch
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Nutch', 'Nutch\-');
+        $searches = array('Vivaldi');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 8116;
     }
 }

@@ -117,6 +117,7 @@ class Android
             'NintendoBrowser',
             'NX/',
             'Nintendo WiiU',
+            'bdbrowser_i18n',
         );
 
         if ($this->utils->checkIfContains($noAndroid)) {

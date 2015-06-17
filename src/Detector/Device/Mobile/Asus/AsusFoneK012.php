@@ -28,12 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser\General;
+namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
-use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+
+use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
  * @category  BrowserDetector
@@ -41,8 +42,9 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nutch
-    extends BrowserHandler
+class AsusFoneK012
+    extends DeviceHandler
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -50,84 +52,49 @@ class Nutch
      * @var array
      */
     protected $properties = array(
-        // browser
-        'wurflKey'                     => null, // not in wurfl
-        'mobile_browser_modus'         => null, // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
+        // device
+        'model_name'             => 'K012',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'K012',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
+        // display
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
+        // sms
+        'sms_enabled'            => true,
+        // chips
+        'nfc_support'            => true,
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
+     * checks if this device is able to handle the useragent
      *
-     * @return bool
+     * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Nutch'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl', 'Domnutch'))) {
+        if (!$this->utils->checkIfContains(array('K012'))) {
             return false;
         }
 
         return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Nutch';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Apache();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new BrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Nutch', 'Nutch\-');
-
-        return $detector->detectVersion($searches);
     }
 
     /**
@@ -137,6 +104,36 @@ class Nutch
      */
     public function getWeight()
     {
-        return 8116;
+        return 3;
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getDeviceType()
+    {
+        return new DeviceType\Tablet();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Asus();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getBrand()
+    {
+        return new Company\Asus();
     }
 }

@@ -78,7 +78,7 @@ class Iron
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('AppleWebKit', 'Chrome'))) {
+        if (!$this->utils->checkIfContains('AppleWebKit')) {
             return false;
         }
 

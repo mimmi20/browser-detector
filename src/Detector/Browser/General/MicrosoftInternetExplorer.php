@@ -129,14 +129,15 @@ class MicrosoftInternetExplorer
             'argclrint',
             'slimbrowser',
             'netscape',
+            'gomezagent',
+            'deepnet explorer',
+            'kkman',
             // mobile IE
             'xblwp7',
             'zunewp7',
             'wpdesktop',
             'htc_hd2',
-            'gomezagent',
-            'deepnet explorer',
-            'kkman',
+            'windows ce',
             // Fakes / Bots
             'msiecrawler',
             'mac; mac os ',
@@ -147,6 +148,7 @@ class MicrosoftInternetExplorer
             'code.google.com/appengine',
             'appengine-google',
             'fr_crawler',
+            'claritydailybot',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)

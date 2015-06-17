@@ -111,6 +111,7 @@ class Asus
             'K00Z',
             'ME372CG',
             'TF300T',
+            'K012',
         );
 
         if (!$this->utils->checkIfContains($asusPhones)) {

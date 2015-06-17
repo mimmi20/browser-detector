@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nutch
+class GigablastOpenSource
     extends BrowserHandler
 {
     /**
@@ -74,11 +74,7 @@ class Nutch
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Nutch'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl', 'Domnutch'))) {
+        if (!$this->utils->checkIfContains(array('GigablastOpenSource'))) {
             return false;
         }
 
@@ -92,7 +88,7 @@ class Nutch
      */
     public function getName()
     {
-        return 'Nutch';
+        return 'Gigablast Search Engine';
     }
 
     /**
@@ -102,7 +98,7 @@ class Nutch
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company\GigablastCom();
     }
 
     /**
@@ -125,7 +121,7 @@ class Nutch
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Nutch', 'Nutch\-');
+        $searches = array('GigablastOpenSource');
 
         return $detector->detectVersion($searches);
     }
@@ -137,6 +133,6 @@ class Nutch
      */
     public function getWeight()
     {
-        return 8116;
+        return 9;
     }
 }
