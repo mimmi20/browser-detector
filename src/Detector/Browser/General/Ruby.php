@@ -34,7 +34,6 @@ use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\SpamCrawlerFake;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +41,7 @@ use BrowserDetector\Helper\SpamCrawlerFake;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Firefox
+class Ruby
     extends BrowserHandler
 {
     /**
@@ -52,12 +51,12 @@ class Firefox
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => 'firefox', // not in wurfl
+        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -75,81 +74,7 @@ class Firefox
      */
     public function canHandle()
     {
-        $spamHelper = new SpamCrawlerFake();
-        $spamHelper->setUserAgent($this->useragent);
-
-        if (!$this->utils->checkIfContains('Mozilla/') && !$spamHelper->isAnonymized()
-        ) {
-            return false;
-        }
-
-        $firefoxCodes = array(
-            'Firefox',
-            'Minefield',
-            'Nightly',
-            'Shiretoko',
-            'BonEcho',
-            'Namoroka',
-            'Fennec'
-        );
-
-        if (!$this->utils->checkIfContains($firefoxCodes)) {
-            return false;
-        }
-
-        $isNotReallyAnFirefox = array(
-            // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Camino',
-            'CometBird',
-            'Epiphany',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Palemoon',
-            'SeaMonkey',
-            'Flock',
-            'IceCat',
-            'Iceweasel',
-            'Iceowl',
-            'Icedove',
-            'Iceape',
-            'Firebird',
-            'IceDragon',
-            'TenFourFox',
-            'WaterFox',
-            'Waterfox',
-            'K-Meleon',
-            //Bots
-            'Nutch',
-            'CazoodleBot',
-            'LOOQ',
-            'GoogleImageProxy',
-            'GomezAgent',
-            '360Spider',
-            'Spinn3r',
-            'Yahoo!',
-            'Slurp',
-            'adbeat.com',
-            'Jobboerse',
-            'trendictionbot',
-            'trendiction search',
-            'SurveyBot',
-            //others
-            'MSIE',
-            'Trident',
-            // Fakes
-            'Mac; Mac OS '
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('developers.google.com/+/web/snippet/', true)) {
+        if (!$this->utils->checkIfStartsWith(array('Ruby'))) {
             return false;
         }
 
@@ -163,7 +88,7 @@ class Firefox
      */
     public function getName()
     {
-        return 'Firefox';
+        return 'Generic Ruby Crawler';
     }
 
     /**
@@ -173,7 +98,7 @@ class Firefox
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company\Unknown();
     }
 
     /**
@@ -183,7 +108,7 @@ class Firefox
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Bot();
     }
 
     /**
@@ -195,16 +120,8 @@ class Firefox
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $searches = array(
-            'Firefox',
-            'Minefield',
-            'Shiretoko',
-            'BonEcho',
-            'Namoroka',
-            'Fennec'
-        );
+        $searches = array('Ruby');
 
         return $detector->detectVersion($searches);
     }
@@ -216,6 +133,6 @@ class Firefox
      */
     public function getWeight()
     {
-        return 330161978;
+        return 3;
     }
 }

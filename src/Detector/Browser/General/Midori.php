@@ -98,7 +98,7 @@ class Midori
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\ChristianDywan();
     }
 
     /**

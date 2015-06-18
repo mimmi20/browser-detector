@@ -513,9 +513,10 @@ class PlatformFactory implements FactoryInterface
 
         if ($detector->getVersion(Version::MAJORONLY) > 99) {
             $versions = array();
-            $found    = preg_match('/(\d\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
 
-            if ($found) {
+            if (preg_match('/(\d\d)(\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions)) {
+                $detector->setVersion($versions[1] . '.' . $versions[2] . '.' . $versions[3]);
+            } elseif (preg_match('/(\d\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions)) {
                 $detector->setVersion($versions[1] . '.' . $versions[2]);
             }
         }
@@ -550,6 +551,15 @@ class PlatformFactory implements FactoryInterface
 
         if ($doMatch) {
             $detector->setVersion('1.0');
+        }
+
+        if ($detector->getVersion(Version::MAJORONLY) > 99) {
+            $versions = array();
+            $found    = preg_match('/(\d)(\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
+
+            if ($found) {
+                $detector->setVersion($versions[1] . '.' . $versions[2] . '.' . $versions[3]);
+            }
         }
 
         return $detector;

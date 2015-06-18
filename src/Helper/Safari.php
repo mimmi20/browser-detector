@@ -137,6 +137,8 @@ class Safari
             'wOSBrowser',
             'Skyfire',
             'UCBrowser',
+            'wkhtmltoimage',
+            'wkhtmltopdf',
             //Bots
             'GSA',
             'GoogleBot',

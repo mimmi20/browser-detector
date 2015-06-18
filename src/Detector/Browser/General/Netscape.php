@@ -182,6 +182,8 @@ class Netscape
             'Indy Library',
             'libcurl',
             'ClarityDailyBot',
+            'Epiphany',
+            'Strata',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
@@ -246,7 +248,7 @@ class Netscape
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Netscape', 'Netscape6', 'rv\:', 'Mozilla');
+        $searches = array('Netscape6', 'Netscape', 'rv\:', 'Mozilla');
 
         return $detector->detectVersion($searches);
     }
