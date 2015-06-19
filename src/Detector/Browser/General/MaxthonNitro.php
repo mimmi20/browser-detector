@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome
+class MaxthonNitro
     extends BrowserHandler
 {
     /**
@@ -74,75 +74,7 @@ class Chrome
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'))) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Version/'))) {
-            return false;
-        }
-
-        $isNotReallyAnChrome = array(
-            // using also the KHTML rendering engine
-            'Arora',
-            'Chromium',
-            'Comodo Dragon',
-            'Dragon',
-            'Flock',
-            'Galeon',
-            'Google Earth',
-            'Iron',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Midori',
-            'OPR',
-            'PaleMoon',
-            'RockMelt',
-            'Silk',
-            'YaBrowser',
-            'Firefox',
-            'Iceweasel',
-            'Edge',
-            'CoolNovo',
-            'Amigo',
-            'Viera',
-            'Vivaldi',
-            'SamsungBrowser',
-            'Puffin',
-            'WhiteHat Aviator',
-            ' SE ',
-            'Nichrome',
-            'MxNitro',
-            'LBBROWSER',
-            // Bots trying to be a Chrome
-            'PagePeeker',
-            'Google Web Preview',
-            'Google Wireless Transcoder',
-            'Google Page Speed',
-            'Google Markup Tester',
-            'HubSpot Webcrawler',
-            'GomezAgent',
-            'TagInspector',
-            '360Spider',
-            // Fakes
-            'Mac; Mac OS '
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
-            return false;
-        }
-
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(array('Chrome'));
-
-        if (0 != $detector->getVersion(Version::MINORONLY)) {
+        if (!$this->utils->checkIfContains('MxNitro')) {
             return false;
         }
 
@@ -156,7 +88,7 @@ class Chrome
      */
     public function getName()
     {
-        return 'Chrome';
+        return 'Maxthon Nitro';
     }
 
     /**
@@ -166,7 +98,7 @@ class Chrome
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company\Maxthon();
     }
 
     /**
@@ -188,9 +120,8 @@ class Chrome
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Chrome', 'CrMo', 'CriOS');
+        $searches = array('MxNitro');
 
         return $detector->detectVersion($searches);
     }
@@ -202,6 +133,6 @@ class Chrome
      */
     public function getWeight()
     {
-        return 116398328;
+        return 49;
     }
 }

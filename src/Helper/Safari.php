@@ -139,6 +139,7 @@ class Safari
             'UCBrowser',
             'wkhtmltoimage',
             'wkhtmltopdf',
+            'MicroMessenger',
             //Bots
             'GSA',
             'GoogleBot',

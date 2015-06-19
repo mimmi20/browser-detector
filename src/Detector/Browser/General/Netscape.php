@@ -184,6 +184,7 @@ class Netscape
             'ClarityDailyBot',
             'Epiphany',
             'Strata',
+            'NetFrontNX',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

@@ -96,6 +96,12 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
                 '',
                 false
             ),
+            array(
+                'Mozilla/4.0 (compatible; MSIE 6.0; PPC Mac OS X 10.6.8; Tasman 1.0)',
+                'Tasman',
+                '',
+                false
+            ),
         );
     }
 }

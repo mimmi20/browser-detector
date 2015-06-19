@@ -28,67 +28,29 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Helper;
+namespace BrowserDetector\Detector\Company;
 
 /**
- * a helper to detect TV devices
- *
+ * @category  BrowserDetector
  * @package   BrowserDetector
+ * @copyright 2012-2014 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Tv
+class Tencent
+    extends AbstractCompany
+    implements CompanyInterface
 {
     /**
-     * @var \BrowserDetector\Helper\Utils the helper class
+     * the name of the company
+     *
+     * @var string
      */
-    private $utils = null;
+    protected $name = 'Tencent Ltd.';
 
     /**
-     * Class Constructor
+     * the brand name of the company
      *
-     * @return \BrowserDetector\Helper\Tv
+     * @var string
      */
-    public function __construct()
-    {
-        $this->utils = new Utils();
-    }
-
-    /**
-     * sets the user agent to be handled
-     *
-     * @param string $userAgent
-     *
-     * @return \BrowserDetector\Helper\Tv
-     */
-    public function setUserAgent($userAgent)
-    {
-        $this->utils->setUserAgent($userAgent);
-
-        return $this;
-    }
-
-    public function isTvDevice()
-    {
-        $tvDevices = array(
-            'boxee',
-            'ce-html',
-            'dlink.dsm380',
-            'googletv',
-            'hbbtv',
-            'idl-6651n',
-            'kdl40ex720',
-            'netrangemmh',
-            'loewe; sl121',
-            'loewe; sl150',
-            'smart-tv',
-            'sonydtv',
-            'viera',
-            'xbox'
-        );
-
-        if (!$this->utils->checkIfContains($tvDevices, true)) {
-            return false;
-        }
-
-        return true;
-    }
+    protected $brandname = 'Tencent';
 }

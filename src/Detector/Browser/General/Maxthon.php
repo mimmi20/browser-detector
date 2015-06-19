@@ -97,7 +97,8 @@ class Maxthon
             'BlackBerry',
             'WebTV',
             'ArgClrInt',
-            'Firefox'
+            'Firefox',
+            'MxNitro',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnMaxthon)) {

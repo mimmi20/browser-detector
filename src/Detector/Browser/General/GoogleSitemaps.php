@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome
+class GoogleSitemaps
     extends BrowserHandler
 {
     /**
@@ -55,10 +55,10 @@ class Chrome
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
         // pdf
-        'pdf_support'                  => true,
+        'pdf_support'                  => false,
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
@@ -74,79 +74,11 @@ class Chrome
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'))) {
-            return false;
+        if ($this->utils->checkIfContains('Google-Sitemaps')) {
+            return true;
         }
 
-        if (!$this->utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Version/'))) {
-            return false;
-        }
-
-        $isNotReallyAnChrome = array(
-            // using also the KHTML rendering engine
-            'Arora',
-            'Chromium',
-            'Comodo Dragon',
-            'Dragon',
-            'Flock',
-            'Galeon',
-            'Google Earth',
-            'Iron',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Midori',
-            'OPR',
-            'PaleMoon',
-            'RockMelt',
-            'Silk',
-            'YaBrowser',
-            'Firefox',
-            'Iceweasel',
-            'Edge',
-            'CoolNovo',
-            'Amigo',
-            'Viera',
-            'Vivaldi',
-            'SamsungBrowser',
-            'Puffin',
-            'WhiteHat Aviator',
-            ' SE ',
-            'Nichrome',
-            'MxNitro',
-            'LBBROWSER',
-            // Bots trying to be a Chrome
-            'PagePeeker',
-            'Google Web Preview',
-            'Google Wireless Transcoder',
-            'Google Page Speed',
-            'Google Markup Tester',
-            'HubSpot Webcrawler',
-            'GomezAgent',
-            'TagInspector',
-            '360Spider',
-            // Fakes
-            'Mac; Mac OS '
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
-            return false;
-        }
-
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(array('Chrome'));
-
-        if (0 != $detector->getVersion(Version::MINORONLY)) {
-            return false;
-        }
-
-        return true;
+        return false;
     }
 
     /**
@@ -156,7 +88,7 @@ class Chrome
      */
     public function getName()
     {
-        return 'Chrome';
+        return 'Google Sitemaps';
     }
 
     /**
@@ -176,7 +108,7 @@ class Chrome
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Bot();
     }
 
     /**
@@ -188,9 +120,8 @@ class Chrome
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Chrome', 'CrMo', 'CriOS');
+        $searches = array('Google\-Sitemaps');
 
         return $detector->detectVersion($searches);
     }
@@ -202,6 +133,6 @@ class Chrome
      */
     public function getWeight()
     {
-        return 116398328;
+        return 5;
     }
 }

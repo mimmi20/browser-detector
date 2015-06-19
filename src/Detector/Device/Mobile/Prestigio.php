@@ -93,15 +93,8 @@ class Prestigio
     {
         $phones = array(
             'Prestigio',
-            'PMP5080CPRO',
-            'PMP3370B',
-            'PMP5197DULTRA',
-            'PMP5580C',
-            'PMP7100D3G',
-            'PMP7280C3G',
-            'PMP5770D',
-            'PAP5000TDUO',
-            'PMP5101C_QUAD',
+            'PMP',
+            'PAP',
         );
 
         if (!$this->utils->checkIfContains($phones)) {

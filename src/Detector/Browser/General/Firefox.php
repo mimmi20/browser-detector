@@ -123,6 +123,8 @@ class Firefox
             'WaterFox',
             'Waterfox',
             'K-Meleon',
+            'Navigator',
+            'SailfishBrowser',
             //Bots
             'Nutch',
             'CazoodleBot',

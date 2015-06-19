@@ -162,14 +162,16 @@ class MobileDevice
             'wireless',
             'xda_diamond_2',
             'zunewp7',
-            'wpdesktop'
+            'wpdesktop',
+            'jolla',
+            'sailfish',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {
             $noMobiles = array(
                 'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
                 'google wireless transcoder', 'eeepc', 'i9988_custom',
-                'i9999_custom', 'wuid=', 'smart-tv'
+                'i9999_custom', 'wuid=', 'smart-tv', 'sonydtv'
             );
 
             if ($this->utils->checkIfContains($noMobiles, true)) {
@@ -191,10 +193,8 @@ class MobileDevice
             return true;
         }
 
-        if ($this->utils->checkIfContains('sony', true)
-            && !$this->utils->checkIfContains('sonydtv', true)
-        ) {
-            return true;
+        if ($this->utils->checkIfContains('sonydtv', true)) {
+            return false;
         }
 
         if ($this->utils->checkIfContains(array('ARM;'))

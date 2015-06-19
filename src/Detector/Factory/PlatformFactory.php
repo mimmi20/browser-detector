@@ -204,7 +204,7 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'Tru64 UNIX';
         } elseif ($utils->checkIfContains('unix', true)) {
             $platformKey = 'Unix';
-        } elseif ($utils->checkIfContainsAll(array('os/2', 'warp'), true)) {
+        } elseif ($utils->checkIfContains(array('os/2', 'warp'), true)) {
             $platformKey = 'OS/2';
         } elseif ($utils->checkIfContains(array('NETTV', 'HbbTV', 'SMART-TV'))) {
             $platformKey = 'Linux for TV';

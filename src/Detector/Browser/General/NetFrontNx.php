@@ -74,7 +74,7 @@ class NetFrontNx
      */
     public function canHandle()
     {
-        $netfrontNx = array('NX', 'Nintendo 3DS');
+        $netfrontNx = array('NetFrontNX', 'NX', 'Nintendo 3DS');
 
         if (!$this->utils->checkIfContains($netfrontNx)) {
             return false;

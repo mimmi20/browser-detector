@@ -75,17 +75,12 @@ class NetscapeNavigator
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
         if (!$this->utils->checkIfContains('Navigator')) {
             return false;
         }
 
         $isNotReallyAnFirefox = array(
             // using also the Gecko rendering engine
-            'Firefox',
             'Maemo',
             'Maxthon',
             'MxBrowser',

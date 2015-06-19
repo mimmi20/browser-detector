@@ -86,7 +86,8 @@ class Google
                 'AppEngine-Google',
                 'code.google.com/appengine',
                 'developers.google.com/+/web/snippet/',
-                'Google Web Preview'
+                'Google Web Preview',
+                'Google-Sitemaps',
             )
         )
         ) {
