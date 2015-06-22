@@ -98,6 +98,7 @@ class AndroidWebView
             'Silk',
             'YaBrowser',
             'bdbrowser_i18n',
+            'FBAV',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',

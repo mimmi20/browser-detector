@@ -28,13 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Browser\General;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
-use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,9 +41,8 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoA7600h
-    extends DeviceHandler
-    implements DeviceInterface
+class HyperCrawl
+    extends BrowserHandler
 {
     /**
      * the detected browser properties
@@ -52,49 +50,80 @@ class LenovoA7600h
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
+        // browser
+        'wurflKey'                     => null, // not in wurfl
+        'mobile_browser_modus'         => null, // not in wurfl
 
-        // device
-        'model_name'             => 'A7600-H',
-        'model_extra_info'       => 'Wi-Fi only (Mediatek MT8121)',
-        'marketing_name'         => 'A10-70 A7600 Wi-Fi + 3G',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
+        // pdf
+        'pdf_support'                  => true,
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
+        // rss
+        'rss_support'                  => false,
     );
 
     /**
-     * checks if this device is able to handle the useragent
+     * Returns true if this handler can handle the given user agent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('A7600-H'))) {
+        if (!$this->utils->checkIfContains('HyperCrawl')) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'HyperCrawl';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\SeoGraph();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Bot();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('HyperCrawl');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -104,36 +133,6 @@ class LenovoA7600h
      */
     public function getWeight()
     {
-        return 3;
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new DeviceType\Tablet();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Lenovo();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company\Lenovo();
+        return 5;
     }
 }

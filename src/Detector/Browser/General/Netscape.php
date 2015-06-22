@@ -185,6 +185,7 @@ class Netscape
             'Epiphany',
             'Strata',
             'NetFrontNX',
+            'HyperCrawl',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

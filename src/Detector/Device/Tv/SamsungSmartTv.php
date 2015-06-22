@@ -28,12 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -42,7 +41,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoA7600h
+class SamsungSmartTv
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -55,11 +54,11 @@ class LenovoA7600h
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'A7600-H',
-        'model_extra_info'       => 'Wi-Fi only (Mediatek MT8121)',
-        'marketing_name'         => 'A10-70 A7600 Wi-Fi + 3G',
+        'model_name'             => 'Smart TV',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Smart TV',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
+        'pointing_method'        => 'unknown',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -73,14 +72,14 @@ class LenovoA7600h
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => false,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -90,7 +89,7 @@ class LenovoA7600h
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('A7600-H'))) {
+        if (!$this->utils->checkIfContains('SMART-TV')) {
             return false;
         }
 
@@ -104,7 +103,7 @@ class LenovoA7600h
      */
     public function getWeight()
     {
-        return 3;
+        return 5;
     }
 
     /**
@@ -114,7 +113,7 @@ class LenovoA7600h
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\Tv();
     }
 
     /**
@@ -124,7 +123,7 @@ class LenovoA7600h
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company\Samsung();
     }
 
     /**
@@ -134,6 +133,6 @@ class LenovoA7600h
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company\Samsung();
     }
 }

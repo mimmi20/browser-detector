@@ -88,7 +88,7 @@ class SeoDiver
      */
     public function getName()
     {
-        return 'SEOdiver';
+        return 'SEOdiver Bot';
     }
 
     /**

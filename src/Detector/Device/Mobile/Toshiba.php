@@ -35,8 +35,6 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\Bada;
-use BrowserDetector\Detector\Os\Brew;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -100,10 +98,11 @@ class Toshiba
             'AT100',
             'AT200',
             'AT300',
+            'AT10-A',
             'folio100',
             'TSB_CLOUD_COMPANION;FOLIO_AND_A',
             'TOSHIBA_AC_AND_AZ',
-            'TOSHIBA_FOLIO_AND_A'
+            'TOSHIBA_FOLIO_AND_A',
         );
 
         if (!$this->utils->checkIfContains($ToshibaPhones)) {

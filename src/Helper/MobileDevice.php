@@ -165,6 +165,7 @@ class MobileDevice
             'wpdesktop',
             'jolla',
             'sailfish',
+            'padfone',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {

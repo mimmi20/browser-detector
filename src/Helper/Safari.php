@@ -154,6 +154,7 @@ class Safari
             'Mediapartners-Google',
             'bingbot',
             'adbeat',
+            'profiller',
             //mobile Version
             'Tablet',
             'Android',

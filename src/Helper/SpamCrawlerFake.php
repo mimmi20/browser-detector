@@ -272,7 +272,7 @@ class SpamCrawlerFake
      */
     public function isFakeBrowser()
     {
-        if ($this->utils->checkIfContains(array('HTTrack', 'OpenVAS', 'OpenWeb', 'Maxthon'))) {
+        if ($this->utils->checkIfContains(array('HTTrack', 'OpenVAS', 'OpenWeb', 'Maxthon', 'appengine'))) {
             return false;
         }
 
