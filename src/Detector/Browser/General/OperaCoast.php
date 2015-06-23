@@ -131,7 +131,7 @@ class OperaCoast
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('OperaCoast', 'Opera%20Coast');
+        $searches = array('OperaCoast', 'Opera%20Coast', 'Coast');
 
         return $detector->detectVersion($searches);
     }

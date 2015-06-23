@@ -28,13 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Cubot;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -43,9 +42,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Cubot
+class CubotGt953g
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -56,9 +55,9 @@ class Cubot
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'general Cubot Device',
+        'model_name'             => 'GT 95 3G',
         'model_extra_info'       => null,
-        'marketing_name'         => 'general Cubot Device',
+        'marketing_name'         => 'GT 95 3G',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -74,8 +73,8 @@ class Cubot
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
+        'resolution_width'       => 540,
+        'resolution_height'      => 960,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -91,9 +90,7 @@ class Cubot
      */
     public function canHandle()
     {
-        $cubotPhones = array('CUBOT', 'MT6572_TD');
-
-        if (!$this->utils->checkIfContains($cubotPhones)) {
+        if (!$this->utils->checkIfContains('MT6572_TD')) {
             return false;
         }
 
@@ -117,7 +114,7 @@ class Cubot
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -138,23 +135,5 @@ class Cubot
     public function getBrand()
     {
         return new Company\Cubot();
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Cubot');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Cubot' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 }

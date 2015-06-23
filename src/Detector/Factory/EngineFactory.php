@@ -88,7 +88,9 @@ class EngineFactory implements FactoryInterface
             }
         } elseif (preg_match('/(KHTML|Konqueror)/', $agent)) {
             $engineKey = 'KHTML';
-        } elseif ($utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))) {
+        } elseif (preg_match('/(tasman)/i', $agent)
+            || $utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
+        ) {
             $engineKey = 'Tasman';
         } elseif (preg_match('/(Presto|Opera)/', $agent)) {
             $engineKey = 'Presto';
