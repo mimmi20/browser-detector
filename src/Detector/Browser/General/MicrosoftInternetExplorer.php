@@ -149,6 +149,7 @@ class MicrosoftInternetExplorer
             'appengine-google',
             'fr_crawler',
             'claritydailybot',
+            'web link validator',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)

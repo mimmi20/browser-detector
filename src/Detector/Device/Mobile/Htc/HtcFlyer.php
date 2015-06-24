@@ -94,6 +94,10 @@ class HtcFlyer
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('HTC_Flyer_P510e', 'HTC Flyer P510e', 'HTC_Flyer_P512', 'HTC Flyer P512'))) {
+            return false;
+        }
+
         return true;
     }
 

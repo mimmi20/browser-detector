@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SurveyBot
+class WebLinkValidator
     extends BrowserHandler
 {
     /**
@@ -74,7 +74,7 @@ class SurveyBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SurveyBot')) {
+        if (!$this->utils->checkIfContains('Web Link Validator')) {
             return false;
         }
 
@@ -88,7 +88,7 @@ class SurveyBot
      */
     public function getName()
     {
-        return 'SurveyBot';
+        return 'Web Link Validator';
     }
 
     /**
@@ -98,7 +98,7 @@ class SurveyBot
      */
     public function getManufacturer()
     {
-        return new Company\DomainTools();
+        return new Company\Unknown();
     }
 
     /**
@@ -121,7 +121,7 @@ class SurveyBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SurveyBot');
+        $searches = array('Web Link Validator');
 
         return $detector->detectVersion($searches);
     }
@@ -133,6 +133,6 @@ class SurveyBot
      */
     public function getWeight()
     {
-        return 354;
+        return 5;
     }
 }

@@ -177,6 +177,7 @@ class Netscape
             'Firebird',
             'Superfish',
             'Excel',
+            'Word',
             'Prism',
             'Songbird',
             'Indy Library',
@@ -186,6 +187,7 @@ class Netscape
             'Strata',
             'NetFrontNX',
             'HyperCrawl',
+            'libcurl',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

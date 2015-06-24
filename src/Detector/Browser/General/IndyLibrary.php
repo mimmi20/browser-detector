@@ -34,6 +34,7 @@ use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\MobileDevice;
 
 /**
  * @category  BrowserDetector
@@ -41,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SurveyBot
+class IndyLibrary
     extends BrowserHandler
 {
     /**
@@ -55,8 +56,8 @@ class SurveyBot
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -74,7 +75,7 @@ class SurveyBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SurveyBot')) {
+        if (!$this->utils->checkIfContains('Indy Library')) {
             return false;
         }
 
@@ -88,7 +89,7 @@ class SurveyBot
      */
     public function getName()
     {
-        return 'SurveyBot';
+        return 'Indy Library';
     }
 
     /**
@@ -98,7 +99,7 @@ class SurveyBot
      */
     public function getManufacturer()
     {
-        return new Company\DomainTools();
+        return new Company\Unknown();
     }
 
     /**
@@ -120,8 +121,9 @@ class SurveyBot
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('SurveyBot');
+        $searches = array('Indy Library');
 
         return $detector->detectVersion($searches);
     }
@@ -133,6 +135,6 @@ class SurveyBot
      */
     public function getWeight()
     {
-        return 354;
+        return 4;
     }
 }

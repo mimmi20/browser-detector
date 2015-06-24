@@ -128,7 +128,6 @@ class MobileDevice
             'mqqbrowser',
             'netfront',
             'nintendo',
-            'nitro',
             'nokia',
             'obigo',
             'openwave',

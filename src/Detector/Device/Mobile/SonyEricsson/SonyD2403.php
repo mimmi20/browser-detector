@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
+
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -43,9 +43,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson
+class SonyD2403
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface
 {
     /**
      * the detected browser properties
@@ -56,9 +56,9 @@ class SonyEricsson
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'general SonyEricsson Device',
+        'model_name'             => 'D2403',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'D2403',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -74,10 +74,10 @@ class SonyEricsson
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -91,90 +91,7 @@ class SonyEricsson
      */
     public function canHandle()
     {
-        $sonyPhones = array(
-            'sonyericsson',
-            'sony',
-            'c1505',
-            'c1605',
-            'c1905',
-            'c2105',
-            'c5303',
-            'c6602',
-            'c6603',
-            'c6503',
-            'c6903',
-            'xperia z',
-            'c6833',
-            'd6503',
-            'd5503',
-            'd6603',
-            'd5803',
-            'd2303',
-            'd2005',
-            'd2203',
-            'd2403',
-            'e10i',
-            'e15i',
-            'e15av',
-            'ebrd1',
-            'lt15i',
-            'lt18',
-            'lt18i',
-            'lt22i',
-            'lt25i',
-            'lt26i',
-            'lt28h',
-            'lt30p',
-            'mk16i',
-            'mt11i',
-            'mt15i',
-            'mt27i',
-            'nexushd2',
-            'r800i',
-            's312',
-            'sk17i',
-            'sgp311',
-            'sgp312',
-            'sgp321',
-            'sgp511',
-            'sgp512',
-            'sgp521',
-            'sgpt12',
-            'sgpt13',
-            'st15i',
-            'st16i',
-            'st17i',
-            'st18i',
-            'st19i',
-            'st20i',
-            'st21i',
-            'st22i',
-            'st23i',
-            'st24i',
-            'st25i',
-            'st26i',
-            'st27i',
-            'u20i',
-            'w508a',
-            'w760i',
-            'wt13i',
-            'wt19i',
-            'x1i',
-            'x10',
-            'xst2',
-            'playstation',
-            'psp',
-            'xperia arc',
-            'netbox',
-        );
-
-        if (!$this->utils->checkIfContains($sonyPhones, true)) {
-            return false;
-        }
-
-        $others = array('uno_x10', 'x10.dual');
-
-        if ($this->utils->checkIfContains($others, true)) {
+        if (!$this->utils->checkIfContains(array('SonyEricssonD2403', 'SonyD2403', 'D2403'))) {
             return false;
         }
 
@@ -188,7 +105,7 @@ class SonyEricsson
      */
     public function getWeight()
     {
-        return 1633866;
+        return 3;
     }
 
     /**
@@ -208,7 +125,7 @@ class SonyEricsson
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company\Sony();
     }
 
     /**
@@ -218,24 +135,6 @@ class SonyEricsson
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\DeviceHandler
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\SonyEricsson');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'SonyEricsson' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return new Company\Sony();
     }
 }
