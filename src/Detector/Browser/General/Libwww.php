@@ -78,7 +78,7 @@ class Libwww
             return false;
         }
 
-        if ($this->utils->checkIfContains('Lynx')) {
+        if ($this->utils->checkIfContains(array('Lynx', 'W3C-checklink'))) {
             return false;
         }
 

@@ -165,6 +165,7 @@ class MobileDevice
             'jolla',
             'sailfish',
             'padfone',
+            'st80208',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {

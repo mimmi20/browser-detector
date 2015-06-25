@@ -98,7 +98,7 @@ class SpeedySpider
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Entireweb();
     }
 
     /**

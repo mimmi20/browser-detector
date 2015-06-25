@@ -62,13 +62,13 @@ class EngineFactory implements FactoryInterface
 
         if (null !== $os && in_array($os->getName(), array('iOS'))) {
             $engineKey = 'WebKit';
-        } elseif ($utils->checkIfContains(array('Edge'))) {
+        } elseif ($utils->checkIfContains('Edge')) {
             $engineKey = 'Edge';
-        } elseif ($utils->checkIfContains(array('U2/'))) {
+        } elseif ($utils->checkIfContains('U2/') && !$utils->checkIfContains('AskTbATU2')) {
             $engineKey = 'U2';
-        } elseif ($utils->checkIfContains(array('U3/'))) {
+        } elseif ($utils->checkIfContains('U3/')) {
             $engineKey = 'U3';
-        } elseif ($utils->checkIfContains(array('T5/'))) {
+        } elseif ($utils->checkIfContains('T5/')) {
             $engineKey = 'T5';
         } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $agent)
             && false === stripos($agent, 'opera')

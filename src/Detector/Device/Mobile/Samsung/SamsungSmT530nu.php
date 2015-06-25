@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmT530
+class SamsungSmT530nu
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -52,12 +52,12 @@ class SamsungSmT530
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_t530_ver1', // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'SM-T530',
+        'model_name'             => 'SM-T530NU',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 4 10.1 WiFi',
+        'marketing_name'         => 'Galaxy Tab 4 10.1 16GB',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -90,11 +90,7 @@ class SamsungSmT530
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-T530')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('SM-T530NU')) {
+        if (!$this->utils->checkIfContains('SM-T530NU')) {
             return false;
         }
 

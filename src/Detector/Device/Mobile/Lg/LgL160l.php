@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmT530
+class LgL160l
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -52,12 +52,12 @@ class SamsungSmT530
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_t530_ver1', // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'SM-T530',
+        'model_name'             => 'L160L',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 4 10.1 WiFi',
+        'marketing_name'         => 'L160L',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -73,10 +73,10 @@ class SamsungSmT530
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,11 +90,7 @@ class SamsungSmT530
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-T530')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('SM-T530NU')) {
+        if (!$this->utils->checkIfContains(array('LG-L160L', 'L160L'))) {
             return false;
         }
 
@@ -118,7 +114,7 @@ class SamsungSmT530
      */
     public function getDeviceType()
     {
-        return new DeviceType\FonePad();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -128,7 +124,7 @@ class SamsungSmT530
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company\Lg();
     }
 
     /**
@@ -138,6 +134,6 @@ class SamsungSmT530
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company\Lg();
     }
 }

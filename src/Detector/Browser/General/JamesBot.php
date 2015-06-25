@@ -28,13 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lg;
+namespace BrowserDetector\Detector\Browser\General;
 
+use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
-use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,9 +41,8 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LgE906
-    extends DeviceHandler
-    implements DeviceInterface
+class JamesBot
+    extends BrowserHandler
 {
     /**
      * the detected browser properties
@@ -52,49 +50,65 @@ class LgE906
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_e906_ver1', // not in wurfl
+        // browser
+        'wurflKey'                     => null, // not in wurfl
+        'mobile_browser_modus'         => null, // not in wurfl
 
-        // device
-        'model_name'             => 'E906',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'E906 Jill Sander',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
         // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://gsm.lge.com/html/gsm/LG-E906.xml',
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 50,
-        'physical_screen_height' => 84,
-        'columns'                => 16,
-        'rows'                   => 12,
-        'max_image_width'        => 320,
-        'max_image_height'       => 480,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 4294967296,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
+        // pdf
+        'pdf_support'                  => true,
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
+        // rss
+        'rss_support'                  => false,
     );
 
     /**
-     * checks if this device is able to handle the useragent
+     * Returns true if this handler can handle the given user agent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-E906')) {
+        if (!$this->utils->checkIfContains('James BOT')) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'JamesBOT';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Geskimo();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Bot();
     }
 
     /**
@@ -104,36 +118,21 @@ class LgE906
      */
     public function getWeight()
     {
-        return 3;
+        return 4;
     }
 
     /**
-     * returns the type of the current device
+     * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \BrowserDetector\Detector\Version
      */
-    public function getDeviceType()
+    public function detectVersion()
     {
-        return new DeviceType\MobilePhone();
-    }
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
 
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Lg();
-    }
+        $searches = array('fr-crawler');
 
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company\Lg();
+        return $detector->detectVersion($searches);
     }
 }

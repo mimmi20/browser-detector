@@ -188,6 +188,8 @@ class Netscape
             'NetFrontNX',
             'HyperCrawl',
             'libcurl',
+            'Superswan',
+            'NetPositive',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

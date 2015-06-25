@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
@@ -36,13 +36,13 @@ use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
-/**
+/*
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmT530
+class TrekStorSt80208
     extends DeviceHandler
     implements DeviceInterface
 {
@@ -52,12 +52,12 @@ class SamsungSmT530
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_t530_ver1', // not in wurfl
+        'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'SM-T530',
+        'model_name'             => 'ST80208',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 4 10.1 WiFi',
+        'marketing_name'         => 'ST80208',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -75,8 +75,8 @@ class SamsungSmT530
         'max_image_height'       => null,
         'resolution_width'       => 1280,
         'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,15 +90,13 @@ class SamsungSmT530
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-T530')) {
-            return false;
+        $trekStorPhones = array('ST80208');
+
+        if ($this->utils->checkIfContains($trekStorPhones)) {
+            return true;
         }
 
-        if ($this->utils->checkIfContains('SM-T530NU')) {
-            return false;
-        }
-
-        return true;
+        return false;
     }
 
     /**
@@ -108,7 +106,7 @@ class SamsungSmT530
      */
     public function getWeight()
     {
-        return 3;
+        return 5;
     }
 
     /**
@@ -118,7 +116,7 @@ class SamsungSmT530
      */
     public function getDeviceType()
     {
-        return new DeviceType\FonePad();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -128,7 +126,7 @@ class SamsungSmT530
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company\TrekStor();
     }
 
     /**
@@ -138,6 +136,6 @@ class SamsungSmT530
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company\TrekStor();
     }
 }

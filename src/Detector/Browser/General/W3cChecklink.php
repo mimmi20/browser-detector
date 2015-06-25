@@ -34,7 +34,6 @@ use BrowserDetector\Detector\BrowserHandler;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +41,7 @@ use BrowserDetector\Helper\Safari as SafariHelper;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Android
+class W3cChecklink
     extends BrowserHandler
 {
     /**
@@ -56,8 +55,8 @@ class Android
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -75,57 +74,7 @@ class Android
      */
     public function canHandle()
     {
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->useragent);
-
-        if (!$this->utils->checkIfContains(array('Android', 'JUC (Linux; U;')) && !$safariHelper->isMobileAsSafari()
-        ) {
-            return false;
-        }
-
-        $noAndroid = array(
-            'AndroidDownloadManager',
-            'BlackBerry',
-            'Blackberry',
-            'BB10',
-            'Browser/Phantom',
-            'CalDAV',
-            'Chrome',
-            'Dalvik',
-            'Dolfin',
-            'Dolphin',
-            'Fennec',
-            'Firefox',
-            'FlyFlow',
-            'iPhone',
-            'Maxthon',
-            'MxBrowser',
-            'MQQBrowser',
-            'NetFrontLifeBrowser',
-            'NokiaBrowser',
-            'Opera',
-            'RIM Tablet',
-            'Series60',
-            'Silk',
-            'UCBrowser',
-            'WeTab-Browser',
-            'wOSBrowser',
-            'YahooMobileMessenger',
-            'i9988_custom',
-            'i9999_custom',
-            'PlayStation',
-            'NintendoBrowser',
-            'NX/',
-            'Nintendo WiiU',
-            'bdbrowser_i18n',
-            'baidu',
-        );
-
-        if ($this->utils->checkIfContains($noAndroid)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('iPad') && !$this->utils->checkIfContains('TechniPad')) {
+        if (!$this->utils->checkIfContains('W3C-checklink')) {
             return false;
         }
 
@@ -139,7 +88,7 @@ class Android
      */
     public function getName()
     {
-        return 'Android Webkit';
+        return 'W3C-checklink';
     }
 
     /**
@@ -149,7 +98,7 @@ class Android
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company\W3c();
     }
 
     /**
@@ -159,7 +108,7 @@ class Android
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new BrowserType\Bot();
     }
 
     /**
@@ -171,70 +120,8 @@ class Android
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->useragent);
-
-        $doMatch = preg_match(
-            '/Version\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        if ($this->utils->checkIfContains('android eclair', true)) {
-            return $detector->setVersion('2.1');
-        }
-
-        if ($this->utils->checkIfContains('gingerbread', true)) {
-            return $detector->setVersion('2.3');
-        }
-
-        $doMatch = preg_match(
-            '/Safari\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/AppleWebKit\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/MobileSafari\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/Android\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $detector->setVersion($matches[1]);
-        }
-
-        $searches = array('Version', 'Safari', 'JUC \(Linux\; U\;');
+        $searches = array('W3C\-checklink');
 
         return $detector->detectVersion($searches);
     }
@@ -246,7 +133,6 @@ class Android
      */
     public function getWeight()
     {
-        return 38951839;
+        return 3;
     }
 }
-

@@ -140,6 +140,7 @@ class Firefox
             'trendictionbot',
             'trendiction search',
             'SurveyBot',
+            'James BOT',
             //others
             'MSIE',
             'Trident',

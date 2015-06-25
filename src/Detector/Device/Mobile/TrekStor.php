@@ -102,6 +102,7 @@ class TrekStor
             'ST701041',
             'VT10416',
             'breeze 10.1 quad',
+            'ST80208',
         );
 
         if ($this->utils->checkIfContains($trekStorPhones)) {
