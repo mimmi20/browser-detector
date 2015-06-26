@@ -74,11 +74,7 @@ class Palemoon
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContainsAll(array('PaleMoon'))) {
+        if (!$this->utils->checkIfContains('palemoon', true)) {
             return false;
         }
 

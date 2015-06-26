@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IzSearchBot
+class CoolNovoChromePlus
     extends BrowserHandler
 {
     /**
@@ -55,8 +55,8 @@ class IzSearchBot
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -74,7 +74,7 @@ class IzSearchBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('izsearch', true)) {
+        if (!$this->utils->checkIfContainsAll(array('CoolNovoChromePlus'))) {
             return false;
         }
 
@@ -88,7 +88,7 @@ class IzSearchBot
      */
     public function getName()
     {
-        return 'iZSearch Bot';
+        return 'CoolNovo Chrome Plus';
     }
 
     /**
@@ -98,7 +98,7 @@ class IzSearchBot
      */
     public function getManufacturer()
     {
-        return new Company\IzSearch();
+        return new Company\Unknown();
     }
 
     /**
@@ -108,17 +108,7 @@ class IzSearchBot
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 4;
+        return new BrowserType\Browser();
     }
 
     /**
@@ -130,7 +120,20 @@ class IzSearchBot
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        return $detector->setVersion('0.0');
+        $searches = array('CoolNovoChromePlus');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 7;
     }
 }

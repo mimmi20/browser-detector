@@ -36,6 +36,7 @@ use BrowserDetector\Detector\Company;
 
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\Windows;
 
 /**
  * @category  BrowserDetector
@@ -118,6 +119,16 @@ class MicrosoftMobileExplorer
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)) {
+            return false;
+        }
+
+        $windowsHelper = new Windows();
+        $windowsHelper->setUserAgent($this->useragent);
+
+        if ($this->utils->checkIfContains('MSIE')
+            && !$this->utils->checkIfContains('IEMobile')
+            && !$windowsHelper->isMobileWindows()
+        ) {
             return false;
         }
 

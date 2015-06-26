@@ -82,6 +82,10 @@ class PhantomJs
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('Phantom.js bot'))) {
+            return false;
+        }
+
         return true;
     }
 

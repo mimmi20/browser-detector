@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IzSearchBot
+class CheckLinks
     extends BrowserHandler
 {
     /**
@@ -55,7 +55,7 @@ class IzSearchBot
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -74,7 +74,7 @@ class IzSearchBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('izsearch', true)) {
+        if (!$this->utils->checkIfContains('CheckLinks')) {
             return false;
         }
 
@@ -88,7 +88,7 @@ class IzSearchBot
      */
     public function getName()
     {
-        return 'iZSearch Bot';
+        return 'CheckLinks';
     }
 
     /**
@@ -98,7 +98,7 @@ class IzSearchBot
      */
     public function getManufacturer()
     {
-        return new Company\IzSearch();
+        return new Company\Unknown();
     }
 
     /**
@@ -108,7 +108,7 @@ class IzSearchBot
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new BrowserType\Browser();
     }
 
     /**
@@ -118,7 +118,7 @@ class IzSearchBot
      */
     public function getWeight()
     {
-        return 4;
+        return 5;
     }
 
     /**
@@ -131,6 +131,8 @@ class IzSearchBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        return $detector->setVersion('0.0');
+        $searches = array('CheckLinks');
+
+        return $detector->detectVersion($searches);
     }
 }

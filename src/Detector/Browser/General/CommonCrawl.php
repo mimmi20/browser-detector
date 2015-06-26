@@ -78,6 +78,10 @@ class CommonCrawl
             return false;
         }
 
+        if ($this->utils->checkIfContains('CCBot')) {
+            return false;
+        }
+
         return true;
     }
 
@@ -98,7 +102,7 @@ class CommonCrawl
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\CommonCrawlFoundation();
     }
 
     /**

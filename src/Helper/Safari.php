@@ -155,6 +155,7 @@ class Safari
             'bingbot',
             'adbeat',
             'profiller',
+            'Kindle',
             //mobile Version
             'Tablet',
             'Android',

@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IzSearchBot
+class PhantomJsBot
     extends BrowserHandler
 {
     /**
@@ -55,7 +55,7 @@ class IzSearchBot
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -74,7 +74,7 @@ class IzSearchBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('izsearch', true)) {
+        if (!$this->utils->checkIfContains('Phantom.js bot')) {
             return false;
         }
 
@@ -88,7 +88,7 @@ class IzSearchBot
      */
     public function getName()
     {
-        return 'iZSearch Bot';
+        return 'Phantom.js bot';
     }
 
     /**
@@ -98,7 +98,7 @@ class IzSearchBot
      */
     public function getManufacturer()
     {
-        return new Company\IzSearch();
+        return new Company\Unknown();
     }
 
     /**
@@ -118,19 +118,6 @@ class IzSearchBot
      */
     public function getWeight()
     {
-        return 4;
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->setVersion('0.0');
+        return 5;
     }
 }

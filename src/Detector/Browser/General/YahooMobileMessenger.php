@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IzSearchBot
+class YahooMobileMessenger
     extends BrowserHandler
 {
     /**
@@ -74,11 +74,11 @@ class IzSearchBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('izsearch', true)) {
-            return false;
+        if ($this->utils->checkIfContains('YahooMobileMessenger')) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -88,7 +88,7 @@ class IzSearchBot
      */
     public function getName()
     {
-        return 'iZSearch Bot';
+        return 'Yahoo! Mobile Messenger';
     }
 
     /**
@@ -98,7 +98,7 @@ class IzSearchBot
      */
     public function getManufacturer()
     {
-        return new Company\IzSearch();
+        return new Company\Yahoo();
     }
 
     /**
@@ -108,7 +108,7 @@ class IzSearchBot
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new BrowserType\Application();
     }
 
     /**
@@ -118,7 +118,7 @@ class IzSearchBot
      */
     public function getWeight()
     {
-        return 4;
+        return 6;
     }
 
     /**
@@ -131,6 +131,8 @@ class IzSearchBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        return $detector->setVersion('0.0');
+        $searches = array('YahooMobileMessenger');
+
+        return $detector->detectVersion($searches);
     }
 }

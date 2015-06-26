@@ -77,20 +77,22 @@ class Google
             return false;
         }
 
-        if ($this->utils->checkIfContains(
-            array(
-                'GoogleToolbar',
-                'Google Earth',
-                'Googlebot',
-                'GoogleBot',
-                'AppEngine-Google',
-                'code.google.com/appengine',
-                'developers.google.com/+/web/snippet/',
-                'Google Web Preview',
-                'Google-Sitemaps',
-            )
-        )
-        ) {
+        $others = array(
+            'GoogleToolbar',
+            'Google Earth',
+            'Googlebot',
+            'GoogleBot',
+            'AppEngine-Google',
+            'code.google.com/appengine',
+            'developers.google.com/+/web/snippet/',
+            'Google Web Preview',
+            'Google-Sitemaps',
+            'like FeedFetcher-Google',
+            'Feedfetcher-Google',
+            'Feedly',
+        );
+
+        if ($this->utils->checkIfContains($others)) {
             return false;
         }
 

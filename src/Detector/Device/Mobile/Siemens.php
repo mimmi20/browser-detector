@@ -28,12 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -42,9 +43,9 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaC205
+class Siemens
     extends DeviceHandler
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -55,11 +56,11 @@ class NokiaC205
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'C2-05',
+        'model_name'             => 'general Siemens Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'C2',
+        'marketing_name'         => 'general Siemens Device',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
+        'pointing_method'        => 'unknown',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -67,16 +68,16 @@ class NokiaC205
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 45,
-        'columns'                => 15,
-        'rows'                   => 16,
-        'max_image_width'        => 228,
-        'max_image_height'       => 280,
-        'resolution_width'       => 240,
-        'resolution_height'      => 320,
-        'dual_orientation'       => false,
-        'colors'                 => 262144,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,11 +91,34 @@ class NokiaC205
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaC2-05')) {
-            return false;
+        $siemensPhones = array(
+            'Siemens',
+            'SIE-',
+        );
+
+        if ($this->utils->checkIfContains($siemensPhones)) {
+            return true;
         }
 
-        return true;
+        return false;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\DeviceHandler
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Siemens');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Siemens' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -104,7 +128,7 @@ class NokiaC205
      */
     public function getWeight()
     {
-        return 3;
+        return 5;
     }
 
     /**
@@ -124,7 +148,7 @@ class NokiaC205
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company\Siemens();
     }
 
     /**
@@ -134,6 +158,6 @@ class NokiaC205
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company\Siemens();
     }
 }

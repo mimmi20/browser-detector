@@ -190,6 +190,8 @@ class Netscape
             'libcurl',
             'Superswan',
             'NetPositive',
+            'KomodiaBot',
+            'Iceweasel',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

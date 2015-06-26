@@ -78,6 +78,10 @@ class Links
             return false;
         }
 
+        if ($this->utils->checkIfContains('CheckLinks')) {
+            return false;
+        }
+
         return true;
     }
 

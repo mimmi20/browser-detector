@@ -74,11 +74,11 @@ class CoolNovo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
+        if (!$this->utils->checkIfContainsAll(array('CoolNovo'))) {
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('CoolNovo'))) {
+        if ($this->utils->checkIfContainsAll(array('CoolNovoChromePlus'))) {
             return false;
         }
 

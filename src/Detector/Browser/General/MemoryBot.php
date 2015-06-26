@@ -121,7 +121,7 @@ class MemoryBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('memorybot');
+        $searches = array('memorybot', 'memoryBot');
 
         return $detector->detectVersion($searches);
     }

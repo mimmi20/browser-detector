@@ -58,7 +58,7 @@ class Toshiba
         // device
         'model_name'             => 'general Toshiba Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general Toshiba Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -91,7 +91,7 @@ class Toshiba
      */
     public function canHandle()
     {
-        $ToshibaPhones = array(
+        $toshibaPhones = array(
             'Toshiba-',
             'Toshiba/',
             'Toshiba',
@@ -105,7 +105,7 @@ class Toshiba
             'TOSHIBA_FOLIO_AND_A',
         );
 
-        if (!$this->utils->checkIfContains($ToshibaPhones)) {
+        if (!$this->utils->checkIfContains($toshibaPhones)) {
             return false;
         }
 

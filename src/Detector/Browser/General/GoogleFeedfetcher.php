@@ -78,6 +78,12 @@ class GoogleFeedfetcher
             return false;
         }
 
+        $others = array('like FeedFetcher-Google', 'Feedly');
+
+        if ($this->utils->checkIfContains($others)) {
+            return false;
+        }
+
         return true;
     }
 

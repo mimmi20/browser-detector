@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IzSearchBot
+class IscHeaderCollectorHandlers
     extends BrowserHandler
 {
     /**
@@ -74,7 +74,7 @@ class IzSearchBot
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('izsearch', true)) {
+        if (!$this->utils->checkIfContains(array('isc header collector handlers'))) {
             return false;
         }
 
@@ -88,7 +88,7 @@ class IzSearchBot
      */
     public function getName()
     {
-        return 'iZSearch Bot';
+        return 'isc header collector handlers';
     }
 
     /**
@@ -98,7 +98,7 @@ class IzSearchBot
      */
     public function getManufacturer()
     {
-        return new Company\IzSearch();
+        return new Company\Unknown();
     }
 
     /**
@@ -112,16 +112,6 @@ class IzSearchBot
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 4;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -131,6 +121,18 @@ class IzSearchBot
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        return $detector->setVersion('0.0');
+        $searches = array('isc header collector handlers');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 5;
     }
 }

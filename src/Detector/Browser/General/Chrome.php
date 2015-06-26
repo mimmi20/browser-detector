@@ -121,6 +121,7 @@ class Chrome
             'MxNitro',
             'LBBROWSER',
             'Seznam',
+            'Diga',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',
