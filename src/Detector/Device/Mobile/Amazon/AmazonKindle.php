@@ -99,7 +99,18 @@ class AmazonKindle
             return false;
         }
 
-        $otherKindles = array('Kindle Fire', 'KFTT', 'KFOT', 'KFJWI', 'KFTHWI', 'KFSOWI', 'KFAPWA', 'SD4930UR', 'KFAPWI');
+        $otherKindles = array(
+            'Kindle Fire',
+            'KFTT',
+            'KFOT',
+            'KFJWI',
+            'KFTHWI',
+            'KFSOWI',
+            'KFAPWA',
+            'SD4930UR',
+            'KFAPWI',
+            'KFASWI',
+        );
 
         if ($this->utils->checkIfContains($otherKindles)) {
             return false;

@@ -30,6 +30,11 @@
 
 namespace BrowserDetector;
 
+use BrowserDetector\Detector\Factory\BrowserFactory;
+use BrowserDetector\Detector\Factory\DeviceFactory;
+use BrowserDetector\Detector\Factory\EngineFactory;
+use BrowserDetector\Detector\Factory\PlatformFactory;
+use BrowserDetector\Detector\Result;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use UnexpectedValueException;
@@ -81,13 +86,6 @@ class BrowserDetector
     private $agent = null;
 
     /**
-     * the interface for the detection
-     *
-     * @var \BrowserDetector\Input\Core
-     */
-    private $interface = null;
-
-    /**
      * sets the cache used to make the detection faster
      *
      * @param \WurflCache\Adapter\AdapterInterface $cache
@@ -116,7 +114,7 @@ class BrowserDetector
      *
      * @param string $prefix the new prefix
      *
-     * @throws \UnexpectedValueException
+     * @throws UnexpectedValueException
      * @return \BrowserDetector\BrowserDetector
      */
     public function setCachePrefix($prefix)
@@ -195,66 +193,15 @@ class BrowserDetector
     }
 
     /**
-     * sets the the detection interface
-     *
-     * @param \BrowserDetector\Input\InputInterface $interface the new Interface to use
-     *
-     * @throws \UnexpectedValueException
-     * @return \BrowserDetector\BrowserDetector
-     */
-    public function setInterface(Input\InputInterface $interface)
-    {
-        $this->interface = $interface;
-
-        return $this;
-    }
-
-    /**
-     * returns the actual interface, the actual cache and the user agent are
-     * pushed to the interface
-     *
-     * @return \BrowserDetector\Input\InputInterface
-     */
-    public function getInterface()
-    {
-        if (null === $this->interface) {
-            // set the internal interface as default
-            $this->setInterface(new Input\UserAgent());
-        }
-
-        if (null !== $this->getCache()) {
-            $this->interface
-                ->setCache($this->getCache())
-                ->setCachePrefix($this->getCachePrefix())
-            ;
-        }
-
-        if (null !== $this->getLogger()) {
-            $this->interface->setLogger($this->getLogger());
-        }
-
-        $this->interface->setAgent($this->agent);
-
-        return $this->interface;
-    }
-
-    /**
      * Gets the information about the browser by User Agent
      *
      * @param boolean $forceDetect if TRUE a possible cache hit is ignored
      *
-     * @throws Input\Exception
-     * @throws \UnexpectedValueException
+     * @throws UnexpectedValueException
      * @return \BrowserDetector\Detector\Result
      */
     public function getBrowser($forceDetect = false)
     {
-        if (null === $this->interface) {
-            throw new UnexpectedValueException(
-                'You have to define the Interface before calling this function'
-            );
-        }
-
         if (null === $this->agent) {
             throw new UnexpectedValueException(
                 'You have to set the useragent before calling this function'
@@ -270,14 +217,41 @@ class BrowserDetector
         }
 
         if ($forceDetect || null === $this->getCache() || !$success || !($result instanceof Detector\Result)) {
-            $result = $this->getInterface()->getBrowser();
+            $device = DeviceFactory::detect($this->agent);
 
-            if (!($result instanceof Detector\Result)) {
-                throw new Input\Exception(
-                    'the getBrowser Function has to return an instance of \\BrowserDetector\\Detector\\Result',
-                    Input\Exception::NO_RESULT_CLASS_RETURNED
-                );
+            if (null !== $this->getLogger()) {
+                $device->setLogger($this->getLogger());
             }
+
+            // @todo: define an interface for this function, add a special function if the device has a version
+            $device->detectSpecialProperties();
+
+            // detect the os which runs on the device
+            $platform = PlatformFactory::detect($this->agent);
+
+            // detect the browser which is used
+            $browser = BrowserFactory::detect($this->agent);
+
+            // detect the engine which is used in the browser
+            $engine = EngineFactory::detect($this->agent, $platform);
+
+            // @todo: set engine related properties to the browser, define an interface for that
+            // @todo: set browser related properties to the device, define an interface for that
+
+            $result = new Result();
+
+            if (null !== $this->getLogger()) {
+                $result->setLogger($this->getLogger());
+            }
+
+            $result->setCapability('useragent', $this->agent);
+
+            $result->setDetectionResult(
+                $device,
+                $platform,
+                $browser,
+                $engine
+            );
 
             if (!$forceDetect && null !== $this->getCache()) {
                 $this->getCache()->setItem($cacheId, $result);

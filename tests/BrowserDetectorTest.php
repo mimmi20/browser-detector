@@ -68,30 +68,4 @@ class BrowserDetectorTest extends \PHPUnit_Framework_TestCase
         self::assertSame($this->object, $this->object->setAgent($agent));
         self::assertSame($agent, $this->object->getAgent());
     }
-
-    public function testGetDefaultInterface()
-    {
-        self::assertInstanceOf('\BrowserDetector\Input\UserAgent', $this->object->getInterface());
-    }
-
-    public function testSetGetInteraface()
-    {
-        $logger = $this->getMock('\Monolog\Logger', array(), array(), '', false);
-        $this->object->setLogger($logger);
-
-        $cache = $this->getMock('\WurflCache\Adapter\Memory', array(), array(), '', false);
-        $this->object->setCache($cache);
-
-
-        $interface = $this->getMock('\BrowserDetector\Input\UserAgent', array('setCache'), array(), '', false);
-        $interface
-            ->expects(self::once())
-            ->method('setCache')
-            ->will(self::returnSelf())
-        ;
-
-        $this->object->setInterface($interface);
-
-        self::assertSame($interface, $this->object->getInterface());
-    }
 }
