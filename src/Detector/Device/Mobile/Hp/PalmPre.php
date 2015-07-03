@@ -32,6 +32,8 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasVersionInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -45,7 +47,7 @@ use BrowserDetector\Detector\Version;
  */
 class PalmPre
     extends DeviceHandler
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasVersionInterface, DeviceHasRuntimeModificationsInterface
 {
     /**
      * @var \BrowserDetector\Detector\Company\CompanyInterface
@@ -161,7 +163,7 @@ class PalmPre
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectSpecialProperties()
     {
@@ -184,11 +186,9 @@ class PalmPre
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \BrowserDetector\Detector\Version
+     * detects the device version from the given user agent
      */
-    public function detectVersion()
+    public function detectDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -196,6 +196,6 @@ class PalmPre
 
         $searches = array('Pre');
 
-        return $detector->detectVersion($searches);
+        $this->version = $detector->detectVersion($searches);
     }
 }

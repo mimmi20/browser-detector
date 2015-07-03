@@ -34,10 +34,14 @@ use BrowserDetector\Detector\Factory\BrowserFactory;
 use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasVersionInterface;
 use BrowserDetector\Detector\Result;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use UnexpectedValueException;
+use Wurfl\Request\GenericRequest;
+use Wurfl\Request\GenericRequestFactory;
 use WurflCache\Adapter\AdapterInterface;
 
 /**
@@ -74,18 +78,6 @@ class BrowserDetector
     private $logger = null;
 
     /**
-     * @var string
-     */
-    private $cachePrefix = '';
-
-    /**
-     * the user agent sent from the browser
-     *
-     * @var string
-     */
-    private $agent = null;
-
-    /**
      * sets the cache used to make the detection faster
      *
      * @param \WurflCache\Adapter\AdapterInterface $cache
@@ -107,37 +99,6 @@ class BrowserDetector
     public function getCache()
     {
         return $this->cache;
-    }
-
-    /**
-     * sets the the cache prefix
-     *
-     * @param string $prefix the new prefix
-     *
-     * @throws UnexpectedValueException
-     * @return \BrowserDetector\BrowserDetector
-     */
-    public function setCachePrefix($prefix)
-    {
-        if (!is_string($prefix)) {
-            throw new UnexpectedValueException(
-                'the cache prefix has to be a string'
-            );
-        }
-
-        $this->cachePrefix = $prefix;
-
-        return $this;
-    }
-
-    /**
-     * returns the actual cache prefix
-     *
-     * @return string
-     */
-    public function getCachePrefix()
-    {
-        return $this->cachePrefix;
     }
 
     /**
@@ -169,46 +130,36 @@ class BrowserDetector
     }
 
     /**
-     * sets the user agent who should be detected
-     *
-     * @param string
-     *
-     * @return \BrowserDetector\BrowserDetector
-     */
-    public function setAgent($userAgent)
-    {
-        $this->agent = $userAgent;
-
-        return $this;
-    }
-
-    /**
-     * returns the stored user agent
-     *
-     * @return string
-     */
-    public function getAgent()
-    {
-        return $this->agent;
-    }
-
-    /**
      * Gets the information about the browser by User Agent
      *
-     * @param boolean $forceDetect if TRUE a possible cache hit is ignored
+     * @param string|array|\Wurfl\Request\GenericRequest $request
+     * @param boolean                                    $forceDetect if TRUE a possible cache hit is ignored
      *
-     * @throws UnexpectedValueException
      * @return \BrowserDetector\Detector\Result
      */
-    public function getBrowser($forceDetect = false)
+    public function getBrowser($request = null, $forceDetect = false)
     {
-        if (null === $this->agent) {
+        if (null === $request) {
             throw new UnexpectedValueException(
-                'You have to set the useragent before calling this function'
+                'You have to call this function with the useragent parameter'
             );
         }
 
-        $cacheId = $this->getCachePrefix() . $this->agent; //hash('sha512', $this->getCachePrefix() . $this->agent);
+        $requestFactory = new GenericRequestFactory();
+
+        if (is_string($request)) {
+            $request = $requestFactory->createRequestForUserAgent($request);
+        } elseif (is_array($request)) {
+            $request = $requestFactory->createRequest($request);
+        }
+
+        if (!($request instanceof GenericRequest)) {
+            throw new UnexpectedValueException(
+                'the useragent parameter has to be a string, an array or an instance of \Wurfl\Request\GenericRequest'
+            );
+        }
+
+        $cacheId = hash('sha512', $request->getDeviceUserAgent() . '||||' . $request->getBrowserUserAgent());
         $result  = null;
         $success = false;
 
@@ -217,23 +168,28 @@ class BrowserDetector
         }
 
         if ($forceDetect || null === $this->getCache() || !$success || !($result instanceof Detector\Result)) {
-            $device = DeviceFactory::detect($this->agent);
+            $device = DeviceFactory::detect($request->getDeviceUserAgent());
 
             if (null !== $this->getLogger()) {
                 $device->setLogger($this->getLogger());
             }
 
-            // @todo: define an interface for this function, add a special function if the device has a version
-            $device->detectSpecialProperties();
+            if ($device instanceof DeviceHasVersionInterface) {
+                $device->detectDeviceVersion();
+            }
+
+            if ($device instanceof DeviceHasRuntimeModificationsInterface) {
+                $device->detectSpecialProperties();
+            }
 
             // detect the os which runs on the device
-            $platform = PlatformFactory::detect($this->agent);
+            $platform = PlatformFactory::detect($request->getBrowserUserAgent());
 
             // detect the browser which is used
-            $browser = BrowserFactory::detect($this->agent);
+            $browser = BrowserFactory::detect($request->getBrowserUserAgent());
 
             // detect the engine which is used in the browser
-            $engine = EngineFactory::detect($this->agent, $platform);
+            $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
 
             // @todo: set engine related properties to the browser, define an interface for that
             // @todo: set browser related properties to the device, define an interface for that
@@ -244,7 +200,7 @@ class BrowserDetector
                 $result->setLogger($this->getLogger());
             }
 
-            $result->setCapability('useragent', $this->agent);
+            $result->setCapability('useragent', $request->getUserAgent());
 
             $result->setDetectionResult(
                 $device,

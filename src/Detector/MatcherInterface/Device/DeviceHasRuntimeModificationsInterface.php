@@ -28,22 +28,23 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\MatcherInterface;
+namespace BrowserDetector\Detector\MatcherInterface\Device;
 
 /**
- * interface for all devices to detect
+ * interface for all devices who are modified depending on useragent or device version
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-interface DeviceHasChildrenInterface
+interface DeviceHasRuntimeModificationsInterface
 {
     /**
-     * detects the device name from the given user agent
+     * detects properties who are depending on the device version or the user
+     * agent
      *
      * @return \BrowserDetector\Detector\DeviceHandler
      */
-    public function detectDevice();
+    public function detectSpecialProperties();
 }

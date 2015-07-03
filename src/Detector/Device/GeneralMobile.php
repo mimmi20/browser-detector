@@ -33,7 +33,8 @@ namespace BrowserDetector\Detector\Device;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\MobileDevice;
@@ -46,7 +47,7 @@ use BrowserDetector\Helper\MobileDevice;
  */
 class GeneralMobile
     extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface, DeviceHasChildrenInterface, DeviceHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties

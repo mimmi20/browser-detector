@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyEricssonLT15i
     extends DeviceHandler
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties
@@ -146,7 +147,7 @@ class SonyEricssonLT15i
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectSpecialProperties()
     {

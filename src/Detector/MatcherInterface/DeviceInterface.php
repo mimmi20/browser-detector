@@ -44,14 +44,6 @@ use Psr\Log\LoggerInterface;
 interface DeviceInterface
 {
     /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\DeviceInterface
-     */
-    public function detectSpecialProperties();
-
-    /**
      * detects the device version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version

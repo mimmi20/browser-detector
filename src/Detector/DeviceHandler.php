@@ -72,6 +72,13 @@ abstract class DeviceHandler
     protected $logger = null;
 
     /**
+     * device version
+     *
+     * @var \BrowserDetector\Detector\Version
+     */
+    protected $version = null;
+
+    /**
      * the detected browser properties
      *
      * @var array
@@ -148,22 +155,15 @@ abstract class DeviceHandler
      */
     public function detectVersion()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
+        if (null === $this->version) {
+            $detector = new Version();
+            $detector->setUserAgent($this->useragent);
+            $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        return $detector->setVersion('');
-    }
+            $this->version = $detector->setVersion('');
+        }
 
-    /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return DeviceHandler
-     */
-    public function detectSpecialProperties()
-    {
-        return $this;
+        return $this->version;
     }
 
     /**

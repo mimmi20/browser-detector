@@ -137,22 +137,4 @@ class SonyEricssonMT15iv
     {
         return new Company\SonyEricsson();
     }
-
-    /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return DeviceHandler
-     */
-    public function detectSpecialProperties()
-    {
-        if ($this->utils->checkIfContains(array('Build/4.0.2.'))) {
-            $this->setCapability(
-                'uaprof',
-                'http://wap.sonyericsson.com/UAprof/MT15iR402.xml'
-            );
-        }
-
-        return $this;
-    }
 }

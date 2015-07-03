@@ -146,7 +146,7 @@ class SonyEricssonMT15i
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectSpecialProperties()
     {

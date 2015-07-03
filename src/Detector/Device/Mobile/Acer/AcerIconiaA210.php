@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Acer;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
 
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class AcerIconiaA210
     extends DeviceHandler
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties

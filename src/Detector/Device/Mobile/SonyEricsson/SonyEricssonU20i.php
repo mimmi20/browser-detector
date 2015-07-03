@@ -30,10 +30,9 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\DeviceHandler;
-
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 
@@ -48,7 +47,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyEricssonU20i
     extends DeviceHandler
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties
@@ -149,7 +148,7 @@ class SonyEricssonU20i
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return DeviceHandler
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
     public function detectSpecialProperties()
     {

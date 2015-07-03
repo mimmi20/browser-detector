@@ -28,53 +28,22 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory;
-
-use BrowserDetector\Detector\Chain;
-use BrowserDetector\Detector\Device\GeneralDesktop;
-use BrowserDetector\Detector\Device\GeneralMobile;
-use BrowserDetector\Detector\Device\GeneralTv;
-use BrowserDetector\Detector\Device\UnknownDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+namespace BrowserDetector\Detector\MatcherInterface\Device;
 
 /**
- * Device detection class
+ * interface for all devices to detect
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
- * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DeviceFactory
+interface DeviceHasChildrenInterface
 {
     /**
-     * Gets the information about the rendering engine by User Agent
+     * detects the device name from the given user agent
      *
-     * @param string $agent
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\DeviceInterface
+     * @return \BrowserDetector\Detector\DeviceHandler
      */
-    public static function detect($agent)
-    {
-        $handlersToUse = array(
-            new GeneralMobile(),
-            new GeneralTv(),
-            new GeneralDesktop(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device');
-        $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new UnknownDevice());
-
-        $device = $chain->detect();
-
-        if ($device instanceof DeviceHasChildrenInterface) {
-            $device = $device->detectDevice();
-        }
-
-        return $device;
-    }
+    public function detectDevice();
 }
