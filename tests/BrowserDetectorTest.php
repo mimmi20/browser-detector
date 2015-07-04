@@ -37,17 +37,6 @@ class BrowserDetectorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     *
-     */
-    public function testSetGetCachePrefix()
-    {
-        $prefix = 'testPrefix';
-
-        self::assertSame($this->object, $this->object->setCachePrefix($prefix));
-        self::assertSame($prefix, $this->object->getCachePrefix());
-    }
-
-    /**
      * tests the setter and the getter for a logger
      */
     public function testSetGetLogger()
@@ -56,16 +45,5 @@ class BrowserDetectorTest extends \PHPUnit_Framework_TestCase
 
         self::assertSame($this->object, $this->object->setLogger($logger));
         self::assertSame($logger, $this->object->getLogger());
-    }
-
-    /**
-     *
-     */
-    public function testSetGetAgent()
-    {
-        $agent = 'testUserAgent';
-
-        self::assertSame($this->object, $this->object->setAgent($agent));
-        self::assertSame($agent, $this->object->getAgent());
     }
 }
