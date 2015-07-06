@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class LenovoB8080h
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -57,7 +57,7 @@ class LenovoB8080h
         // device
         'model_name'             => 'B8080-H',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Yoga Tablet 10 HD+',
+        'marketing_name'         => 'Yoga Tab 10 HD+',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -135,5 +135,18 @@ class LenovoB8080h
     public function getBrand()
     {
         return new Company\Lenovo();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new AndroidAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

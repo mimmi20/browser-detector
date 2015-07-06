@@ -30,8 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class DiigoBrowser
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -78,7 +79,7 @@ class DiigoBrowser
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('DiigoBrowser'))) {
+        if (!$this->utils->checkIfContains(array('DiigoAbstractBrowser'))) {
             return false;
         }
 
@@ -113,7 +114,7 @@ class DiigoBrowser
      */
     public function getName()
     {
-        return 'DiigoBrowser';
+        return 'DiigoAbstractBrowser';
     }
 
     /**
@@ -146,7 +147,7 @@ class DiigoBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Version', 'DiigoBrowser');
+        $searches = array('Version', 'DiigoAbstractBrowser');
 
         return $detector->detectVersion($searches);
     }
@@ -159,5 +160,19 @@ class DiigoBrowser
     public function getWeight()
     {
         return 6;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Webkit
+     */
+    public function detectEngine()
+    {
+        $handler = new Webkit();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

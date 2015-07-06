@@ -30,12 +30,15 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -44,7 +47,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class NokiaLumia1320
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -136,5 +139,51 @@ class NokiaLumia1320
     public function getBrand()
     {
         return new Company\Nokia();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new WindowsPhoneAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return AbstractDevice
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ((float)$osVersion) {
+            case 8.1:
+                $this->setCapability('wurflKey', 'nokia_lumia_1320_ver1_subos81');
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $this;
     }
 }

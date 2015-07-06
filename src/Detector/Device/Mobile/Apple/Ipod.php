@@ -30,15 +30,18 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
+
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\Darwin;
 use BrowserDetector\Detector\Os\Ios;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -47,7 +50,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Ipod
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -139,5 +142,87 @@ class Ipod
     public function getBrand()
     {
         return new Company\Apple();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new Ios(),
+            new Darwin()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Ipod
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORONLY
+        );
+
+        if (6 <= $osVersion) {
+            $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 960);
+        }
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        $this->setCapability('model_extra_info', $osVersion);
+
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('accept_third_party_cookie', false);
+        $engine->setCapability('xhtml_make_phone_call_string', 'none');
+        $engine->setCapability('xhtml_send_sms_string', 'none');
+        $browser->setCapability('pdf_support', false);
+        $engine->setCapability('css_gradient', 'none');
+        $engine->setCapability('supports_java_applets', true);
+
+        if (6.0 <= (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_ipod_touch_ver6');
+        }
+
+        $osVersion = $os->detectVersion()->getVersion();
+
+        switch ($osVersion) {
+            case '4.2.1':
+                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
+                break;
+            case '4.3.5':
+                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_3_5');
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+        if ('4.2.1' == $osVersion) {
+        }
+
+        return $this;
     }
 }

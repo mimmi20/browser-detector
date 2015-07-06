@@ -32,9 +32,18 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\Bada;
+use BrowserDetector\Detector\Os\Brew;
+use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\Linux;
+use BrowserDetector\Detector\Os\Symbianos;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
+use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -44,7 +53,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SonyEricsson
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
@@ -111,8 +120,6 @@ class SonyEricsson
             'd5803',
             'd2303',
             'd2005',
-            'd2203',
-            'd2403',
             'e10i',
             'e15i',
             'e15av',
@@ -164,8 +171,7 @@ class SonyEricsson
             'xst2',
             'playstation',
             'psp',
-            'xperia arc',
-            'netbox',
+            'xperia arc'
         );
 
         if (!$this->utils->checkIfContains($sonyPhones, true)) {
@@ -222,9 +228,35 @@ class SonyEricsson
     }
 
     /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new AndroidAbstractOs(),
+            new Bada(),
+            new Brew(),
+            new Java(),
+            new Symbianos(),
+            new WindowsMobileAbstractOs(),
+            new WindowsPhoneAbstractOs(),
+            new Linux(),
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\DeviceHandler
+     * @return \BrowserDetector\Detector\AbstractDevice
      */
     public function detectDevice()
     {

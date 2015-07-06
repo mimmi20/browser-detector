@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Browser\Mobile\NetFront;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class PlayStationPortable
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -136,5 +136,32 @@ class PlayStationPortable
     public function getBrand()
     {
         return new Company\Sony();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Browser\Mobile\NetFront
+     */
+    public function detectBrowser()
+    {
+        $handler = new NetFront();
+        $handler->setUserAgent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\Java
+     */
+    public function detectOs()
+    {
+        $handler = new Java();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

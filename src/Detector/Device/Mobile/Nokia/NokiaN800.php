@@ -30,10 +30,12 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\Symbianos;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -44,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class NokiaN800
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -137,5 +139,45 @@ class NokiaN800
     public function getBrand()
     {
         return new Company\Nokia();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\Symbianos
+     */
+    public function detectOs()
+    {
+        $handler = new Symbianos();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN800
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        if ($this->utils->checkIfContains(array('Series60/5.3'))) {
+            $this->setCapability('wurflKey', 'nokia_n8_00_ver1_subs53');
+            $this->setCapability('uaprof', 'http://nds1.nds.nokia.com/uaprof/NN8-00r310-3G.xml');
+            $this->setCapability('colors', 16777216);
+            $engine->setCapability('image_inlining', true);
+        }
+
+        return $this;
     }
 }

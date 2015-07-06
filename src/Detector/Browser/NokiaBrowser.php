@@ -30,8 +30,14 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\AbstractEngine;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +48,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class NokiaBrowser
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -74,7 +80,7 @@ class NokiaBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NokiaBrowser', 'Nokia'))) {
+        if (!$this->utils->checkIfContains(array('NokiaAbstractBrowser', 'Nokia'))) {
             return false;
         }
 
@@ -125,7 +131,7 @@ class NokiaBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('BrowserNG', 'NokiaBrowser');
+        $searches = array('BrowserNG', 'NokiaAbstractBrowser');
 
         return $detector->detectVersion($searches);
     }
@@ -138,6 +144,76 @@ class NokiaBrowser
     public function getWeight()
     {
         return 260003;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractEngine
+     */
+    public function detectEngine()
+    {
+        $engines = array(
+            new Webkit()
+        );
+
+        $chain = new Chain();
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new UnknownEngine());
+
+        return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\AbstractOs     $os
+     * @param \BrowserDetector\Detector\AbstractDevice $device
+     *
+     * @return \BrowserDetector\Detector\Browser\Mobile\NokiaBrowser
+     */
+    public function detectDependProperties(
+        AbstractEngine $engine,
+        AbstractOs $os,
+        AbstractDevice $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $engine->setCapability('multipart_support', true);
+        $engine->setCapability('wml_1_1', true);
+        $engine->setCapability('wml_1_2', true);
+        $engine->setCapability('wml_1_3', true);
+        $engine->setCapability('html_wi_imode_compact_generic', false);
+        $engine->setCapability('xhtml_avoid_accesskeys', true);
+        $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/xhtml+xml');
+        $engine->setCapability('xhtml_file_upload', 'supported');
+        $engine->setCapability('xhtml_make_phone_call_string', 'wtai://wp/mc;');
+        $engine->setCapability('xhtml_send_mms_string', 'mmsto:');
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('xhtml_format_as_css_property', true);
+        $engine->setCapability('wbmp', true);
+        $engine->setCapability('epoc_bmp', true);
+        $engine->setCapability('transparent_png_alpha', true);
+        $engine->setCapability('tiff', true);
+        $engine->setCapability('max_url_length_bookmark', 255);
+        $engine->setCapability('max_url_length_cached_page', 128);
+        $engine->setCapability('max_url_length_in_requests', 255);
+        $engine->setCapability('max_url_length_homepage', 100);
+        $engine->setCapability('ajax_preferred_geoloc_api', 'none');
+        $engine->setCapability('jqm_grade', 'B');
+        $engine->setCapability('is_sencha_touch_ok', false);
+        $engine->setCapability('image_inlining', false); // version 8.3
+        $engine->setCapability('canvas_support', 'none');
+        $engine->setCapability('css_border_image', 'none');
+        $engine->setCapability('css_rounded_corners', 'none');
+
+        return $this;
     }
 }
 

@@ -30,8 +30,12 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\AbstractEngine;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -45,7 +49,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Phantom
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -78,10 +82,6 @@ class Phantom
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('Phantom')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Phantom.js bot'))) {
             return false;
         }
 
@@ -141,6 +141,40 @@ class Phantom
         $searches = array('Phantom', 'Phantom\/V');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Webkit
+     */
+    public function detectEngine()
+    {
+        $handler = new Webkit();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\AbstractOs     $os
+     * @param \BrowserDetector\Detector\AbstractDevice $device
+     *
+     * @return Phantom
+     */
+    public function detectDependProperties(
+        AbstractEngine $engine,
+        AbstractOs $os,
+        AbstractDevice $device
+    ) {
+        $engine->setCapability('https_support', true);
+
+        return $this;
     }
 }
 

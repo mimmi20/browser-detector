@@ -30,8 +30,12 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Engine\Edge;
+use BrowserDetector\Detector\AbstractEngine;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -41,7 +45,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftEdge extends BrowserHandler
+class MicrosoftEdge extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -133,5 +137,39 @@ class MicrosoftEdge extends BrowserHandler
     public function getWeight()
     {
         return 369968046;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Edge
+     */
+    public function detectEngine()
+    {
+        $handler = new Edge();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\AbstractOs     $os
+     * @param \BrowserDetector\Detector\AbstractDevice $device
+     *
+     * @return \BrowserDetector\Detector\Browser\MicrosoftEdge
+     */
+    public function detectDependProperties(
+        AbstractEngine $engine,
+        AbstractOs $os,
+        AbstractDevice $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        return $this;
     }
 }

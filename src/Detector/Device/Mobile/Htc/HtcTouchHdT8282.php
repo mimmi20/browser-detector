@@ -32,11 +32,11 @@ namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
-
-
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -46,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class HtcTouchHdT8282
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -138,5 +138,25 @@ class HtcTouchHdT8282
     public function getBrand()
     {
         return new Company\Htc();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new WindowsMobileAbstractOs(),
+            new AndroidAbstractOs()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
     }
 }

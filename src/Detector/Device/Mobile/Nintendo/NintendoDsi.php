@@ -32,12 +32,12 @@ namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
 
 use BrowserDetector\Detector\Browser\Mobile\NetFront;
 use BrowserDetector\Detector\Browser\Mobile\Opera;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -47,7 +47,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class NintendoDsi
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -140,5 +140,39 @@ class NintendoDsi
     public function getBrand()
     {
         return new Company\Nintendo();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\AbstractOs
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new NetFront(),
+            new Opera()
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+
+        return $chain->detect();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\UnknownAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new UnknownAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

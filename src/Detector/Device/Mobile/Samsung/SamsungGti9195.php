@@ -30,12 +30,15 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -44,7 +47,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SamsungGti9195
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -140,6 +143,112 @@ class SamsungGti9195
     public function getBrand()
     {
         return new Company\Samsung();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new AndroidAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return AbstractDevice
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('gif_animated', true);
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('supports_java_applets', false);
+        $engine->setCapability('svgt_1_1', false);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.3:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1');
+
+                        if ($this->utils->checkIfContains('SAMSUNG GT-I9195/I9195')) {
+                            $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_subua');
+                        }
+                        break;
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban40');
+                        break;
+                    case 4.1:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban41rom');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 3.1:
+                    case 3.2:
+                    case 4.2:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+            case 'Android WebView':
+                $engine->setCapability('is_sencha_touch_ok', false);
+                $engine->setCapability('html_wi_imode_compact_generic', false);
+                $engine->setCapability('xhtml_avoid_accesskeys', true);
+                $engine->setCapability('xhtml_supports_forms_in_table', true);
+                $engine->setCapability('xhtml_file_upload', 'supported');
+                $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+                $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
+                $engine->setCapability('gif_animated', false);
+                $engine->setCapability('svgt_1_1', true);
+
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9195_ver1_suban40chrome');
+                        break;
+                    case 4.2:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_subua9195_subuachrome');
+                        break;
+                    case 4.4:
+                        $this->setCapability('wurflKey', 'samsung_gt_i9190_ver1_suban44i9195');
+                        break;
+                    case 2.1:
+                    case 2.2:
+                    case 2.3:
+                    case 3.1:
+                    case 3.2:
+                    case 4.1:
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $this;
     }
 }
 

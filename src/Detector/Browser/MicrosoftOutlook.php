@@ -31,6 +31,9 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -152,7 +155,7 @@ class MicrosoftOutlook
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
         $doMatch = preg_match(
-            '/Office Outlook ([\d\.]+)/',
+            '/microsoft Office Outlook ([\d\.]+)/',
             $this->useragent,
             $matches
         );
@@ -162,7 +165,7 @@ class MicrosoftOutlook
         }
 
         $doMatch = preg_match(
-            '/Office Outlook (\d+)/',
+            '/microsoft Office Outlook (\d+)/',
             $this->useragent,
             $matches
         );
@@ -172,7 +175,7 @@ class MicrosoftOutlook
         }
 
         $doMatch = preg_match(
-            '/Outlook ([\d\.]+)/',
+            '/microsoft Outlook ([\d\.]+)/',
             $this->useragent,
             $matches
         );
@@ -182,7 +185,7 @@ class MicrosoftOutlook
         }
 
         $doMatch = preg_match(
-            '/Outlook (\d+)/',
+            '/microsoft Outlook (\d+)/',
             $this->useragent,
             $matches
         );
@@ -202,5 +205,29 @@ class MicrosoftOutlook
     public function getWeight()
     {
         return 2839566;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\AbstractOs     $os
+     * @param \BrowserDetector\Detector\AbstractDevice $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftOutlook
+     */
+    public function detectDependProperties(
+        AbstractEngine $engine,
+        AbstractOs $os,
+        AbstractDevice $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $browserVersion = (int)$this->detectInternalVersion();
+
+        $this->setCapability('wurflKey', 'ms_outlook_subua' . $browserVersion);
+
+        return $this;
     }
 }

@@ -30,8 +30,13 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\Presto;
+use BrowserDetector\Detector\AbstractEngine;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
@@ -43,7 +48,7 @@ use BrowserDetector\Helper\MobileDevice;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Opera
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -84,11 +89,10 @@ class Opera
             'Opera Mini',
             'Opera Mobi',
             'Opera Tablet',
-            'Coast',
             // Fakes
             'Mac; Mac OS ',
             'AppEngine-Google',
-            'InettvBrowser'
+            'InettvAbstractBrowser'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnOpera)) {
@@ -159,5 +163,51 @@ class Opera
     public function getWeight()
     {
         return 13249665;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     */
+    public function detectEngine()
+    {
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if ($version >= 15) {
+            $engine = new Blink();
+        } else {
+            $engine = new Presto();
+        }
+
+        $engine->setUseragent($this->useragent);
+
+        return $engine;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\AbstractOs     $os
+     * @param \BrowserDetector\Detector\AbstractDevice $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
+     */
+    public function detectDependProperties(
+        AbstractEngine $engine,
+        AbstractOs $os,
+        AbstractDevice $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $browserVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        $this->setCapability('wurflKey', 'opera_' . (int)$browserVersion);
+        $engine->setCapability('xhtml_table_support', false);
+
+        return $this;
     }
 }

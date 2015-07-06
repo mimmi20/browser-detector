@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class AlcatelOt7047d
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**

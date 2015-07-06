@@ -32,11 +32,11 @@ namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
-
-
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\Maemo;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -47,7 +47,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class AmazonKindle
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -99,20 +99,7 @@ class AmazonKindle
             return false;
         }
 
-        $otherKindles = array(
-            'Kindle Fire',
-            'KFTT',
-            'KFOT',
-            'KFJWI',
-            'KFTHWI',
-            'KFSOWI',
-            'KFAPWA',
-            'SD4930UR',
-            'KFAPWI',
-            'KFASWI',
-        );
-
-        if ($this->utils->checkIfContains($otherKindles)) {
+        if ($this->utils->checkIfContains(array('Kindle Fire', 'KFTT', 'KFOT', 'KFJWI', 'KFTHWI', 'KFSOWI'))) {
             return false;
         }
 
@@ -157,6 +144,26 @@ class AmazonKindle
     public function getBrand()
     {
         return new Company\Amazon();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new AndroidAbstractOs(),
+            new Maemo()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
     }
 
     /**

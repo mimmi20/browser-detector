@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SonyLT26w
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -139,5 +139,18 @@ class SonyLT26w
     public function getBrand()
     {
         return new Company\Sony();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new AndroidAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

@@ -30,8 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class InternetArchive
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -74,11 +75,7 @@ class InternetArchive
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ia_archiver'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('special_archiver'))) {
+        if (!$this->utils->checkIfContains('ia_archiver')) {
             return false;
         }
 
@@ -138,5 +135,18 @@ class InternetArchive
     public function getWeight()
     {
         return 3406;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function detectEngine()
+    {
+        $handler = new UnknownEngine();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

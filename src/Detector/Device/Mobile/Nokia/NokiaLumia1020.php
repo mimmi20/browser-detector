@@ -30,10 +30,12 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -44,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class NokiaLumia1020
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -91,7 +93,7 @@ class NokiaLumia1020
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('nokia; lumia 1020', 'nokia; 909', 'wpdesktop; 909'), true)) {
+        if (!$this->utils->checkIfContains(array('nokia; lumia 1020', 'nokia; 909'), true)) {
             return false;
         }
 
@@ -136,5 +138,38 @@ class NokiaLumia1020
     public function getBrand()
     {
         return new Company\Nokia();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new WindowsPhoneAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia1020
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        return $this;
     }
 }

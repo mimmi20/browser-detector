@@ -30,9 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Company;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class WindowsPhoneSearch
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -109,5 +109,19 @@ class WindowsPhoneSearch
     public function getBrowserType()
     {
         return new BrowserType\Browser();
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Trident
+     */
+    public function detectEngine()
+    {
+        $handler = new Trident();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

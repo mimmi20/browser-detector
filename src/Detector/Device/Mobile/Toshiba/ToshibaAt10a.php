@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\Toshiba;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class ToshibaAt10a
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**

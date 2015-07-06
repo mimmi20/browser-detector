@@ -30,8 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class InettvBrowser
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -74,7 +75,7 @@ class InettvBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('InettvBrowser')) {
+        if (!$this->utils->checkIfContains('InettvAbstractBrowser')) {
             return false;
         }
 
@@ -88,7 +89,7 @@ class InettvBrowser
      */
     public function getName()
     {
-        return 'InettvBrowser';
+        return 'InettvAbstractBrowser';
     }
 
     /**
@@ -121,7 +122,7 @@ class InettvBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('InettvBrowser', 'Version');
+        $searches = array('InettvAbstractBrowser', 'Version');
 
         return $detector->detectVersion($searches);
     }
@@ -134,5 +135,19 @@ class InettvBrowser
     public function getWeight()
     {
         return 1996;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Presto
+     */
+    public function detectEngine()
+    {
+        $handler = new Presto();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

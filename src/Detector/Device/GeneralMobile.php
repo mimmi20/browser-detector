@@ -30,13 +30,17 @@
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
 
 /**
@@ -46,8 +50,8 @@ use BrowserDetector\Helper\MobileDevice;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class GeneralMobile
-    extends DeviceHandler
-    implements DeviceInterface, DeviceHasChildrenInterface, DeviceHasRuntimeModificationsInterface
+    extends AbstractDevice
+    implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -120,7 +124,7 @@ class GeneralMobile
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\DeviceHandler
+     * @return \BrowserDetector\Detector\AbstractDevice
      */
     public function detectDevice()
     {
@@ -173,6 +177,26 @@ class GeneralMobile
     public function getBrand()
     {
         return new Company\Unknown();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractBrowser
+     */
+    public function detectBrowser()
+    {
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\Mobile');
+        $chain->setDirectory($browserPath);
+        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+
+        return $chain->detect();
     }
 
     /**
@@ -339,6 +363,191 @@ class GeneralMobile
             $this->setCapability('colors', 4096);
 
             return $this;
+        }
+
+        return $this;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return \BrowserDetector\Detector\Device\GeneralMobile
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('bmp', false);
+        $engine->setCapability('wbmp', false);
+        $engine->setCapability('tiff', false);
+
+        $brwoserName = $browser->getName();
+
+        switch ($brwoserName) {
+            case 'Firefox':
+                if ('Android' == $os->getName()) {
+                    $os->detectVersion()->setVersion('2.0');
+
+                    if ($this->getDeviceType()->isTablet()) {
+                        $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec_tablet');
+                    } else {
+                        $this->setCapability('wurflKey', 'generic_android_ver2_0_fennec');
+
+                        $engine->setCapability('wbmp', true);
+                    }
+                }
+                break;
+            case 'Opera Mobile':
+                if ('Android' == $os->getName()) {
+                    $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
+
+                    switch ((float)$osVersion) {
+                        case 4.0:
+                            $this->setCapability('wurflKey', 'generic_android_ver4_0_opera_mobi');
+                            $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                            $engine->setCapability('wml_1_1', true);
+                            $engine->setCapability('chtml_table_support', false);
+                            $engine->setCapability('xhtml_select_as_radiobutton', false);
+                            $engine->setCapability('xhtml_select_as_dropdown', false);
+                            $engine->setCapability('xhtml_select_as_popup', false);
+                            $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+                            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+                            $engine->setCapability('xhtml_table_support', true);
+                            $engine->setCapability('xhtml_supports_table_for_layout', true);
+                            $engine->setCapability('wbmp', true);
+                            $engine->setCapability('canvas_support', 'full');
+                            $engine->setCapability('viewport_width', 'device_width_token');
+                            $engine->setCapability('viewport_supported', true);
+                            $engine->setCapability('viewport_userscalable', 'no');
+                            $engine->setCapability('css_border_image', 'opera');
+                            $engine->setCapability('css_rounded_corners', 'opera');
+                            break;
+                        case 4.1:
+                            $this->setCapability('wurflKey', 'uabait_opera_mobi_android_4_1_ver12');
+                            break;
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                } elseif ('Windows Mobile OS' == $os->getName()) {
+                    $this->setCapability('has_qwerty_keyboard', false);
+                    $this->setCapability('pointing_method', 'stylus');
+                    $this->setCapability('resolution_width', 240);
+                    $this->setCapability('resolution_height', 320);
+                    $this->setCapability('dual_orientation', false);
+                    $this->setCapability('colors', 4096);
+                } elseif ('Symbian OS' == $os->getName()) {
+                    $this->setCapability('has_qwerty_keyboard', false);
+                    $this->setCapability('pointing_method', null);
+                    $this->setCapability('resolution_width', 240);
+                    $this->setCapability('resolution_height', 320);
+                    $this->setCapability('dual_orientation', false);
+                    $this->setCapability('colors', 4096);
+                }
+                break;
+            case 'Opera Tablet':
+                if ('Android' == $os->getName()) {
+                    $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
+
+                    if (3.2 == (float)$osVersion) {
+                        $this->setCapability('wurflKey', 'generic_android_ver3_2_opera_tablet');
+                        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                        $engine->setCapability('wml_1_1', true);
+                        $engine->setCapability('chtml_table_support', false);
+                        $engine->setCapability('xhtml_select_as_radiobutton', false);
+                        $engine->setCapability('xhtml_select_as_dropdown', false);
+                        $engine->setCapability('xhtml_select_as_popup', false);
+                        $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+                        $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+                        $engine->setCapability('xhtml_table_support', true);
+                        $engine->setCapability('xhtml_supports_table_for_layout', true);
+                        $engine->setCapability('wbmp', true);
+                        $engine->setCapability('canvas_support', 'full');
+                        $engine->setCapability('viewport_width', 'device_width_token');
+                        $engine->setCapability('viewport_supported', true);
+                        $engine->setCapability('viewport_userscalable', 'no');
+                        $engine->setCapability('css_border_image', 'opera');
+                        $engine->setCapability('css_rounded_corners', 'opera');
+
+                        $this->setCapability('resolution_width', 1280);
+                        $this->setCapability('resolution_height', 768);
+                    }
+                }
+                break;
+            case 'Opera Mini':
+                if ('Android' == $os->getName()) {
+                    $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
+
+                    if (5.0 == (float)$osVersion) {
+                        $this->setCapability('wurflKey', 'generic_opera_mini_android_version5');
+                    }
+
+                    $this->setCapability('resolution_width', 240);
+                    $this->setCapability('resolution_height', 320);
+                    $this->setCapability('dual_orientation', false);
+                } elseif ('Java' == $os->getName()) {
+                    $this->setCapability('wurflKey', 'uabait_opera_mini_v10_op98');
+                    $this->setCapability('colors', 256);
+                }
+                break;
+            case 'Android Webkit':
+                if ('Android' == $os->getName()) {
+                    $this->setCapability('has_qwerty_keyboard', true);
+                    $this->setCapability('pointing_method', 'touchscreen');
+                }
+                break;
+            case 'Internet Explorer':
+            case 'IEMobile':
+                if ('Windows Mobile OS' == $os->getName()) {
+                    $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
+
+                    if (6.5 == (float)$osVersion) {
+                        // $this->setCapability('wurflKey', 'generic_android_ver3_2_opera_tablet');
+                        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                        $engine->setCapability('wml_1_1', true);
+                        $engine->setCapability('chtml_table_support', false);
+                        $engine->setCapability('xhtml_select_as_radiobutton', false);
+                        $engine->setCapability('xhtml_select_as_dropdown', false);
+                        $engine->setCapability('xhtml_select_as_popup', false);
+                        $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+                        $engine->setCapability('xhtml_allows_disabled_form_elements', true);
+                        $engine->setCapability('xhtml_table_support', true);
+                        $engine->setCapability('xhtml_supports_table_for_layout', true);
+                        $engine->setCapability('wbmp', true);
+                        $engine->setCapability('canvas_support', 'full');
+                        $engine->setCapability('viewport_width', 'device_width_token');
+                        $engine->setCapability('viewport_supported', true);
+                        $engine->setCapability('viewport_userscalable', 'no');
+                        $engine->setCapability('css_border_image', 'opera');
+                        $engine->setCapability('css_rounded_corners', 'opera');
+
+                        $browser->setCapability('rss_support', true);
+                    }
+                }
+                break;
+            default:
+                // nothing to do
+                break;
+        }
+
+        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7', 'WPDesktop'))) {
+            $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
+        }
+
+        if ($this->getDeviceType()->isTablet()) {
+            $this->setCapability('sms_enabled', false);
+            $this->setCapability('nfc_support', false);
+        } else {
+            $this->setCapability('sms_enabled', true);
+            $this->setCapability('nfc_support', true);
         }
 
         return $this;

@@ -30,10 +30,21 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Microsoft;
 
+use BrowserDetector\Detector\Browser\General\MicrosoftOffice;
+use BrowserDetector\Detector\Browser\General\MicrosoftOutlook;
+use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\WindowsRt;
+
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +53,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class WindowsRt8Tablet
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -57,7 +68,7 @@ class WindowsRt8Tablet
         'model_name'             => 'Windows RT Tablet',
         'model_extra_info'       => null,
         'marketing_name'         => 'Windows RT Tablet',
-        'has_qwerty_keyboard'    => true, // windows_8_rt_ver1
+        'has_qwerty_keyboard'    => false, // windows_8_rt_ver1
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -142,5 +153,109 @@ class WindowsRt8Tablet
     public function getBrand()
     {
         return new Company\Microsoft();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\Windows
+     */
+    public function detectOs()
+    {
+        $handler = new WindowsRt();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\AbstractOs
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new MicrosoftInternetExplorer(),
+            new MicrosoftMobileExplorer(),
+            new MicrosoftOutlook(),
+            new MicrosoftOffice(),
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+
+        return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return AbstractDevice
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_can_embed_video', 'none');
+        $engine->setCapability('svgt_1_1', false);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($osVersion) {
+            case '8.1':
+            case 'RT 8.1':
+                $this->setCapability('wurflKey', 'windows_8_rt_ver1_subos81');
+                $this->setCapability('has_qwerty_keyboard', true);
+                $this->setCapability('physical_screen_width', 22);
+                $this->setCapability('physical_screen_height', 12);
+                $this->setCapability('max_image_width', 1366);
+                $this->setCapability('max_image_height', 768);
+                $this->setCapability('resolution_width', 1366);
+                $this->setCapability('resolution_height', 768);
+                $this->setCapability('colors', 65535);
+                $this->setCapability('nfc_support', false);
+                $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                $engine->setCapability('chtml_table_support', false);
+                $engine->setCapability('xhtml_select_as_radiobutton', false);
+                $engine->setCapability('xhtml_avoid_accesskeys', false);
+                $engine->setCapability('xhtml_select_as_dropdown', false);
+                $engine->setCapability('xhtml_supports_iframe', 'none');
+                $engine->setCapability('xhtml_supports_forms_in_table', false);
+                $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/vnd.wap.xhtml+xml');
+                $engine->setCapability('xhtml_select_as_popup', false);
+                $engine->setCapability('xhtml_honors_bgcolor', false);
+                $engine->setCapability('xhtml_table_support', true);
+                $engine->setCapability('xhtml_can_embed_video', 'none');
+                $engine->setCapability('bmp', false);
+                $engine->setCapability('svgt_1_1', false);
+                $engine->setCapability('max_url_length_in_requests', 512);
+                $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+                $browser->setCapability('pdf_support', false);
+                $engine->setCapability('jqm_grade', 'none');
+                $engine->setCapability('is_sencha_touch_ok', false);
+                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('html_preferred_dtd', 'xhtml_mp1');
+                $engine->setCapability('css_rounded_corners', 'css3');
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $this;
     }
 }

@@ -32,9 +32,10 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -44,7 +45,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Archos
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
@@ -114,7 +115,7 @@ class Archos
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\DeviceHandler
+     * @return \BrowserDetector\Detector\AbstractDevice
      */
     public function detectDevice()
     {
@@ -167,5 +168,18 @@ class Archos
     public function getBrand()
     {
         return new Company\Archos();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new AndroidAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

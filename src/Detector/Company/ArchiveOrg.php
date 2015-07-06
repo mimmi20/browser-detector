@@ -45,12 +45,12 @@ class ArchiveOrg
      *
      * @var string
      */
-    protected $name = 'The Internet Archive';
+    protected $name = 'archive.org';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'The Internet Archive';
+    protected $brandname = 'archive.org';
 }

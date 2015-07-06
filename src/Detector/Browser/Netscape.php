@@ -30,8 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Netscape
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -131,7 +132,6 @@ class Netscape
             // other applications
             'LotusNotes/',
             'Lotus-Notes/',
-            'Nintendo 3DS',
             // Fakes/Bots
             'Mac; Mac OS ',
             'Esribot',
@@ -169,29 +169,6 @@ class Netscape
             'feedfetcher',
             'Exabot',
             'Powermarks',
-            'Insitesbot',
-            'yjapp',
-            'SEOdiver',
-            'InfegyAtlas',
-            'WebCapture',
-            'Firebird',
-            'Superfish',
-            'Excel',
-            'Word',
-            'Prism',
-            'Songbird',
-            'Indy Library',
-            'libcurl',
-            'ClarityDailyBot',
-            'Epiphany',
-            'Strata',
-            'NetFrontNX',
-            'HyperCrawl',
-            'libcurl',
-            'Superswan',
-            'NetPositive',
-            'KomodiaBot',
-            'Iceweasel',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
@@ -207,7 +184,6 @@ class Netscape
             'heritrix',
             'bingbot',
             'crawler',
-            'savetheworldheritage',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscapeLowerCased, true)) {
@@ -257,7 +233,7 @@ class Netscape
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Netscape6', 'Netscape', 'rv\:', 'Mozilla');
+        $searches = array('Netscape', 'Netscape6', 'rv\:', 'Mozilla');
 
         return $detector->detectVersion($searches);
     }
@@ -270,5 +246,19 @@ class Netscape
     public function getWeight()
     {
         return 53545;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Gecko
+     */
+    public function detectEngine()
+    {
+        $handler = new Gecko();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

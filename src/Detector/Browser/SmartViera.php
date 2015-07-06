@@ -30,8 +30,10 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -45,7 +47,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SmartViera
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -137,6 +139,30 @@ class SmartViera
         $searches = array('Viera', 'SMART\-TV');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Webkit
+     */
+    public function detectEngine()
+    {
+        $chrome = new Chrome();
+        $chrome->setUserAgent($this->useragent);
+
+        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if ($chromeVersion >= 28) {
+            $engine = new Blink();
+        } else {
+            $engine = new Webkit();
+        }
+
+        $engine->setUseragent($this->useragent);
+
+        return $engine;
     }
 }
 

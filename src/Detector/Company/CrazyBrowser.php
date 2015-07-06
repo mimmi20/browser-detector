@@ -45,12 +45,12 @@ class CrazyBrowser
      *
      * @var string
      */
-    protected $name = 'CrazyBrowser.com';
+    protected $name = 'CrazyAbstractBrowser.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'CrazyBrowser';
+    protected $brandname = 'CrazyAbstractBrowser';
 }

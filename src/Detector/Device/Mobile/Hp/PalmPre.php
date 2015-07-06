@@ -31,11 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasVersionInterface;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\WebAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -46,8 +44,8 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class PalmPre
-    extends DeviceHandler
-    implements DeviceInterface, DeviceHasVersionInterface, DeviceHasRuntimeModificationsInterface
+    extends AbstractDevice
+    implements DeviceInterface
 {
     /**
      * @var \BrowserDetector\Detector\Company\CompanyInterface
@@ -160,10 +158,23 @@ class PalmPre
     }
 
     /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\WebAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new WebAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return \BrowserDetector\Detector\DeviceHandler
+     * @return AbstractDevice
      */
     public function detectSpecialProperties()
     {
@@ -186,9 +197,11 @@ class PalmPre
     }
 
     /**
-     * detects the device version from the given user agent
+     * detects the device name from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
      */
-    public function detectDeviceVersion()
+    public function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -196,6 +209,6 @@ class PalmPre
 
         $searches = array('Pre');
 
-        $this->version = $detector->detectVersion($searches);
+        return $detector->detectVersion($searches);
     }
 }

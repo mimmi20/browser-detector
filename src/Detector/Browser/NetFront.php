@@ -30,8 +30,11 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +45,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class NetFront
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -74,7 +77,7 @@ class NetFront
      */
     public function canHandle()
     {
-        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'PlayStation 4');
+        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeAbstractBrowser/', 'NF3', 'PlayStation 4');
 
         if (!$this->utils->checkIfContains($netfront)) {
             return false;
@@ -135,7 +138,7 @@ class NetFront
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3');
+        $searches = array('NetFront', 'NF', 'NetFrontLifeAbstractBrowser', 'NF3');
 
         return $detector->detectVersion($searches);
     }
@@ -148,5 +151,23 @@ class NetFront
     public function getWeight()
     {
         return 9846;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\NetFront
+     */
+    public function detectEngine()
+    {
+        $engines = array(new Webkit());
+
+        $chain = new Chain();
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new NetFrontEngine());
+
+        return $chain->detect();
     }
 }

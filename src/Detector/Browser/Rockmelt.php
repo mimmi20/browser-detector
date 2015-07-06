@@ -30,8 +30,12 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +46,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Rockmelt
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -153,5 +157,26 @@ class Rockmelt
         $searches = array('RockMelt');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     */
+    public function detectEngine()
+    {
+        $engines = array(
+            new Webkit(),
+            new Blink()
+        );
+
+        $chain = new Chain();
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($engines);
+        $chain->setDefaultHandler(new UnknownEngine());
+
+        return $chain->detect();
     }
 }

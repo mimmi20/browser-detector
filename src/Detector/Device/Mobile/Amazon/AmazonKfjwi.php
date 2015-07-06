@@ -32,11 +32,11 @@ namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
-
-
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\Maemo;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -46,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class AmazonKfjwi
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -58,9 +58,9 @@ class AmazonKfjwi
         'wurflKey'               => null, // not in wurfl
 
         // device
-        'model_name'             => 'KFJWI',
+        'model_name'             => 'Kfjwi',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Kindle Fire HD 8.9 Wi-Fi',
+        'marketing_name'         => 'Kindle Fire HD 8.9',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -138,5 +138,25 @@ class AmazonKfjwi
     public function getBrand()
     {
         return new Company\Amazon();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new AndroidAbstractOs(),
+            new Maemo()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
     }
 }

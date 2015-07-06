@@ -143,7 +143,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($utils->checkIfContains(array('RIM Tablet'))) {
             $platformKey = 'RIM Tablet OS';
         } elseif ($utils->checkIfContains('centos', true)) {
-            $platformKey = 'CentOs';
+            $platformKey = 'CentAbstractOs';
         } elseif ($utils->checkIfContains('CrOS')) {
             $platformKey = 'ChromeOS';
         } elseif ($utils->checkIfContains('Joli OS')) {
@@ -170,8 +170,8 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'Zenwalk GNU Linux';
         } elseif ($utils->checkIfContains('AIX')) {
             $platformKey = 'AIX';
-        } elseif ($utils->checkIfContains('AmigaOS')) {
-            $platformKey = 'AmigaOS';
+        } elseif ($utils->checkIfContains('AmigaAbstractOS')) {
+            $platformKey = 'AmigaAbstractOS';
         } elseif ($utils->checkIfContains('BREW')) {
             $platformKey = 'BREW';
         } elseif ($utils->checkIfContains('cygwin', true)) {
@@ -227,13 +227,13 @@ class PlatformFactory implements FactoryInterface
         } elseif (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP)/', $agent)) {
             $platformKey = 'Java';
         } else {
-            $platformKey = 'UnknownOs';
+            $platformKey = 'UnknownAbstractOs';
         }
 
         $allPlatformProperties = require __DIR__ . '/../../../data/properties/platforms.php';
 
         if (!isset($allPlatformProperties[$platformKey])) {
-            $platformKey = 'UnknownOs';
+            $platformKey = 'UnknownAbstractOs';
         }
 
         $platformProperties = $allPlatformProperties[$platformKey];

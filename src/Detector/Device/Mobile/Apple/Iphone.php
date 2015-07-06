@@ -30,15 +30,18 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
+
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\Darwin;
 use BrowserDetector\Detector\Os\Ios;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -47,7 +50,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Iphone
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -143,5 +146,178 @@ class Iphone
     public function getBrand()
     {
         return new Company\Apple();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new Ios(),
+            new Darwin()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Iphone
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        $osVersion = $os->detectVersion()->getVersion();
+
+        if (6 <= $osVersion) {
+            $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 960);
+        }
+
+        $this->setCapability('model_extra_info', $osVersion);
+
+        if ('Safari' == $browser->getName() && !$browser->detectVersion()->getVersion()
+        ) {
+            $browser->detectVersion()->setVersion($osVersion);
+        }
+
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('accept_third_party_cookie', false);
+        $engine->setCapability('xhtml_file_upload', 'not_supported');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+        $engine->setCapability('css_gradient', 'webkit');
+        $engine->setCapability('accept_third_party_cookie', false);
+        $engine->setCapability('accept_third_party_cookie', false);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (4.1 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver4_1');
+
+            if ($this->utils->checkIfContains('Mobile/8B117')) {
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_1_sub8b117');
+            }
+        }
+
+        if (5.0 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver5_subua');
+        }
+
+        if (5.1 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver5_1');
+        }
+
+        if (6.0 <= (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver6');
+            $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('css_gradient_linear', 'webkit');
+        }
+
+        if (6.1 <= (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver6_1');
+            $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('css_gradient_linear', 'webkit');
+        }
+
+        if (7.0 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver7');
+        }
+
+        if (7.1 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver7_1');
+        }
+
+        if (8.0 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver8');
+        }
+
+        if (8.1 == (float)$osVersion) {
+            $this->setCapability('wurflKey', 'apple_iphone_ver8_1');
+        }
+
+        $browserVersion = $browser->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (6.0 <= (float)$browserVersion) {
+            $engine->setCapability('xhtml_file_upload', 'supported');
+            $engine->setCapability('css_gradient_linear', 'webkit');
+            $this->setCapability('resolution_width', 640);
+            $this->setCapability('resolution_height', 960);
+        }
+
+        $osVersion = $os->detectVersion()->getVersion();
+
+        switch ($osVersion) {
+            case '3.1.3':
+                $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
+                break;
+            case '4.2.1':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_2_1');
+                $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
+                $engine->setCapability('html_wi_imode_compact_generic', true);
+                $engine->setCapability('xhtml_select_as_radiobutton', false);
+                $engine->setCapability('xhtml_avoid_accesskeys', false);
+                $engine->setCapability('xhtml_select_as_dropdown', false);
+                $engine->setCapability('xhtml_supports_forms_in_table', false);
+                $engine->setCapability('xhtml_select_as_popup', false);
+                $engine->setCapability('xhtml_file_upload', 'not_supported');
+                $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
+                $engine->setCapability('xhtml_can_embed_video', 'none');
+                $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
+                $engine->setCapability('xhtml_supports_table_for_layout', true);
+                $engine->setCapability('max_url_length_in_requests', 512);
+                $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
+                $engine->setCapability('canvas_support', 'full');
+                $engine->setCapability('viewport_width', 'device_width_token');
+                $engine->setCapability('viewport_supported', true);
+                $engine->setCapability('viewport_userscalable', 'no');
+                $engine->setCapability('css_gradient', 'none');
+                $engine->setCapability('css_gradient_linear', 'none');
+                break;
+            case '4.3.0':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3');
+                break;
+            case '4.3.1':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3_1');
+                break;
+            case '4.3.2':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3_2');
+                break;
+            case '4.3.3':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3_3');
+                break;
+            case '4.3.4':
+            case '4.3.5':
+                $this->setCapability('wurflKey', 'apple_iphone_ver4_3_5');
+                break;
+            case '8.0.2':
+                $this->setCapability('wurflKey', 'apple_iphone_ver8_subua802');
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $this;
     }
 }

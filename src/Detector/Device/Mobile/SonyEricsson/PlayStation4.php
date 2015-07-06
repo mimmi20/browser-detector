@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\CellOs;
+use BrowserDetector\Detector\Os\CellAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class PlayStation4
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -136,6 +136,19 @@ class PlayStation4
     public function getBrand()
     {
         return new Company\Sony();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\CellAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new CellAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 
     /**

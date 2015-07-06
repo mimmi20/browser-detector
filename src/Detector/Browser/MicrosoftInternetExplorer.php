@@ -30,9 +30,11 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Company;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Engine\Trident;
+use BrowserDetector\Detector\AbstractEngine;
 
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -44,7 +46,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class MicrosoftInternetExplorer
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     private $patterns = array(
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',
@@ -128,28 +130,19 @@ class MicrosoftInternetExplorer
             'webtv',
             'argclrint',
             'slimbrowser',
-            'netscape',
-            'gomezagent',
-            'deepnet explorer',
-            'kkman',
             // mobile IE
             'xblwp7',
             'zunewp7',
             'wpdesktop',
             'htc_hd2',
-            'windows ce',
+            'gomezagent',
+            'deepnet explorer',
             // Fakes / Bots
             'msiecrawler',
             'mac; mac os ',
             'bingpreview',
             'crystalsemanticsbot',
             '360spider',
-            'googletoolbar',
-            'code.google.com/appengine',
-            'appengine-google',
-            'fr_crawler',
-            'claritydailybot',
-            'web link validator',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)
@@ -216,6 +209,30 @@ class MicrosoftInternetExplorer
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
+        $engine = $this->detectEngine();
+
+        $engineVersion = (int)$engine->detectVersion()->getVersion(
+            Version::MAJORONLY
+        );
+
+        switch ($engineVersion) {
+            case 4:
+                return $detector->setVersion('8.0');
+                break;
+            case 5:
+                return $detector->setVersion('9.0');
+                break;
+            case 6:
+                return $detector->setVersion('10.0');
+                break;
+            case 7:
+                return $detector->setVersion('11.0');
+                break;
+            default:
+                //nothing to do
+                break;
+        }
+
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
@@ -239,5 +256,145 @@ class MicrosoftInternetExplorer
     public function getWeight()
     {
         return 369968046;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Trident
+     */
+    public function detectEngine()
+    {
+        $handler = new Trident();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\AbstractOs     $os
+     * @param \BrowserDetector\Detector\AbstractDevice $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
+     */
+    public function detectDependProperties(
+        AbstractEngine $engine,
+        AbstractOs $os,
+        AbstractDevice $device
+    ) {
+        $browserVersion = $this->detectVersion();
+
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
+
+        if ($doMatch) {
+            $browserVersion->setVersion($matches[1]);
+
+            $detectedVersion = (int) $browserVersion->getVersion(Version::MAJORONLY);
+            $engineVersion   = (int) $engine->detectVersion()->getVersion(
+                Version::MAJORONLY
+            );
+
+            switch ($engineVersion) {
+                case 4:
+                    if ($this->utils->checkIfContains('Trident/4.0')
+                        && 8 > $detectedVersion
+                    ) {
+                        $this->setCapability(
+                            'mobile_browser_modus',
+                            'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                        );
+                    }
+                    break;
+                case 5:
+                    if (9 > $detectedVersion) {
+                        $this->setCapability(
+                            'mobile_browser_modus',
+                            'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                        );
+                    }
+                    break;
+                case 6:
+                    if (10 > $detectedVersion) {
+                        $this->setCapability(
+                            'mobile_browser_modus',
+                            'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                        );
+                    }
+                    break;
+                case 7:
+                    if (11 > $detectedVersion) {
+                        $this->setCapability(
+                            'mobile_browser_modus',
+                            'IE ' . $detectedVersion . '.0 Compatibility Mode'
+                        );
+                    }
+                    break;
+                default:
+                    //nothing to do
+                    break;
+            }
+        }
+
+        parent::detectDependProperties($engine, $os, $device);
+
+        $engine->setCapability('is_sencha_touch_ok', false);
+        $engine->setCapability('image_inlining', false);
+        $engine->setCapability('css_spriting', false);
+        $engine->setCapability('jqm_grade', 'C');
+        $engine->setCapability('xhtml_table_support', false);
+
+        $browserVersion = (int)$browserVersion->getVersion(Version::MAJORONLY);
+
+        switch ($browserVersion) {
+            case 11:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
+                break;
+            case 10:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
+                break;
+            case 9:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true); //wurflkey: msie_9
+                $engine->setCapability('css_spriting', true);
+                $engine->setCapability('svgt_1_1', true);
+                break;
+            case 8:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 7:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                $engine->setCapability('image_inlining', false);
+                $engine->setCapability('css_spriting', true);
+                break;
+            case 6:
+                $engine->setCapability('jqm_grade', 'A');
+                $engine->setCapability('is_sencha_touch_ok', true);
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        $this->setCapability('wurflKey', 'msie_' . $browserVersion);
+
+        return $this;
     }
 }

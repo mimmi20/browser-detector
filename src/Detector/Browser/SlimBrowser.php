@@ -30,8 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SlimBrowser
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -77,7 +78,7 @@ class SlimBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SlimBrowser'))) {
+        if (!$this->utils->checkIfContains(array('SlimAbstractBrowser'))) {
             return false;
         }
 
@@ -91,7 +92,7 @@ class SlimBrowser
      */
     public function getName()
     {
-        return 'SlimBrowser';
+        return 'SlimAbstractBrowser';
     }
 
     /**
@@ -124,7 +125,7 @@ class SlimBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SlimBrowser');
+        $searches = array('SlimAbstractBrowser');
 
         return $detector->detectVersion($searches);
     }
@@ -137,5 +138,19 @@ class SlimBrowser
     public function getWeight()
     {
         return 4;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Khtml
+     */
+    public function detectEngine()
+    {
+        $handler = new Trident();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

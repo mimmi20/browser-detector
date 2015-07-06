@@ -30,8 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Webcapture
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -74,7 +75,11 @@ class Webcapture
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('webcapture'), true)) {
+        if (!$this->utils->checkIfContains('Mozilla/')) {
+            return false;
+        }
+
+        if (!$this->utils->checkIfContains(array('Webcapture/'))) {
             return false;
         }
 
@@ -88,7 +93,7 @@ class Webcapture
      */
     public function getName()
     {
-        return 'WebCapture';
+        return 'Webcapture';
     }
 
     /**
@@ -121,7 +126,7 @@ class Webcapture
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('WebCapture');
+        $searches = array('Webcapture');
 
         return $detector->detectVersion($searches);
     }
@@ -134,5 +139,18 @@ class Webcapture
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function detectEngine()
+    {
+        $handler = new UnknownEngine();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

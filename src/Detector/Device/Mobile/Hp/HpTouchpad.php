@@ -30,15 +30,18 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
+
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
-
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\WebAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -47,7 +50,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class HpTouchpad
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -140,5 +143,104 @@ class HpTouchpad
     public function getBrand()
     {
         return new Company\Hp();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new WebAbstractOs(),
+            new AndroidAbstractOs()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpTouchpad
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_avoid_accesskeys', false);
+        $engine->setCapability('xhtml_supports_forms_in_table', false);
+        $engine->setCapability('xhtml_allows_disabled_form_elements', false);
+        $engine->setCapability('xhtml_supports_invisible_text', false);
+        $engine->setCapability('bmp', true); // wurflkey: hp_touchpad_ver1
+        $engine->setCapability('ajax_support_javascript', true);
+
+        if (('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName()) && 'Android' == $os->getName()
+        ) {
+            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1');
+            $this->setCapability('model_extra_info', 'Android port');
+            $this->setCapability('colors', 65536);
+
+            $osVersion = $os->detectVersion()->getVersion(
+                Version::MAJORMINOR
+            );
+
+            switch ($browser->getName()) {
+                case 'Android Webkit':
+                    switch ((float)$osVersion) {
+                        case 4.0:
+                            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1_suban40rom');
+                            break;
+                        case 2.1:
+                        case 2.2:
+                        case 2.3:
+                        case 3.1:
+                        case 3.2:
+                        case 4.2:
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                    break;
+                case 'Chrome':
+                    $engine->setCapability('is_sencha_touch_ok', false);
+
+                    switch ((float)$osVersion) {
+                        case 4.0:
+                            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1_suban40rom');
+                            break;
+                        case 2.1:
+                        case 2.2:
+                        case 2.3:
+                        case 3.1:
+                        case 3.2:
+                        case 4.1:
+                        case 4.2:
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                    break;
+                default:
+                    // nothing to do here
+                    break;
+            }
+        }
+
+        return $this;
     }
 }

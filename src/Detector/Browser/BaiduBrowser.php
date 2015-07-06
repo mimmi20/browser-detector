@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class BaiduBrowser
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -88,7 +88,7 @@ class BaiduBrowser
      */
     public function getName()
     {
-        return 'BaiduBrowser';
+        return 'BaiduAbstractBrowser';
     }
 
     /**

@@ -1,15 +1,15 @@
 <?php
 namespace BrowserDetectorTest\Detector\Os;
 
-use BrowserDetector\Detector\Browser\FakeBrowser;
+use BrowserDetector\Detector\Browser\FakeAbstractBrowser;
 
 /**
- * Test class for \BrowserDetector\Detector\Browser\FakeBrowser
+ * Test class for \BrowserDetector\Detector\Browser\FakeAbstractBrowser
  */
 class FakeBrowserTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Detector\Browser\FakeBrowser
+     * @var \BrowserDetector\Detector\Browser\FakeAbstractBrowser
      */
     private $object = null;
 
@@ -21,7 +21,7 @@ class FakeBrowserTest extends \PHPUnit_Framework_TestCase
     {
         parent::setUp();
 
-        $this->object = new FakeBrowser();
+        $this->object = new FakeAbstractBrowser();
     }
 
     /**

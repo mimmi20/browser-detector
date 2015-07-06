@@ -28,12 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
+namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 
 /**
@@ -44,7 +45,7 @@ use BrowserDetector\Helper\Utils;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class BrowserHandler
+abstract class AbstractBrowser
     implements MatcherInterface, BrowserInterface
 {
     /**
@@ -90,7 +91,7 @@ abstract class BrowserHandler
     /**
      * Class Constructor
      *
-     * @return BrowserHandler
+     * @return AbstractBrowser
      */
     public function __construct()
     {
@@ -102,7 +103,7 @@ abstract class BrowserHandler
      *
      * @param string $userAgent
      *
-     * @return BrowserHandler
+     * @return AbstractBrowser
      */
     public function setUserAgent($userAgent)
     {
@@ -174,7 +175,7 @@ abstract class BrowserHandler
      * @param string $capabilityName must be a valid capability name
      * @param mixed  $capabilityValue
      *
-     * @return BrowserHandler
+     * @return AbstractBrowser
      *
      * @throws \InvalidArgumentException
      */

@@ -30,15 +30,18 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
+
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
 use BrowserDetector\Detector\Os\Bada;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -47,7 +50,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SamsungGts5830
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -143,5 +146,68 @@ class SamsungGts5830
     public function getBrand()
     {
         return new Company\Samsung();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new Bada(),
+            new AndroidAbstractOs()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Samsung\SamsungGts5830
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('svgt_1_1', false);
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ((float)$osVersion) {
+            case 2.2:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban22');
+                break;
+            case 2.3:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban23');
+                break;
+            case 4.0:
+                $this->setCapability('wurflKey', 'samsung_gt_s5830_ver1_suban40');
+                break;
+            case 4.1:
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $this;
     }
 }

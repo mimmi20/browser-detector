@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SonyKdl50w815b
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**

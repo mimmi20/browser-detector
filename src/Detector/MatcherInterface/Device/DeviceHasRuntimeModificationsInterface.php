@@ -44,7 +44,7 @@ interface DeviceHasRuntimeModificationsInterface
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return \BrowserDetector\Detector\DeviceHandler
+     * @return \BrowserDetector\Detector\AbstractDevice
      */
     public function detectSpecialProperties();
 }

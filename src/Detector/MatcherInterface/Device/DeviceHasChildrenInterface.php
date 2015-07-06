@@ -43,7 +43,7 @@ interface DeviceHasChildrenInterface
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\DeviceHandler
+     * @return \BrowserDetector\Detector\AbstractDevice
      */
     public function detectDevice();
 }

@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 
@@ -41,7 +41,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class GooglePlus
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties

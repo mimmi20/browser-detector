@@ -30,9 +30,16 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
+use BrowserDetector\Detector\Browser\Tv\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\Tv\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\Windows;
+use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -42,7 +49,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class MicrosoftXbox
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -138,5 +145,46 @@ class MicrosoftXbox
     public function getBrand()
     {
         return new Company\Microsoft();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new WindowsPhoneAbstractOs(),
+            new Windows()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Browser
+     * returns the Browser Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\AbstractOs
+     */
+    public function detectBrowser()
+    {
+        $browsers = array(
+            new MicrosoftInternetExplorer(),
+            new MicrosoftMobileExplorer()
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setHandlers($browsers);
+        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+
+        return $chain->detect();
     }
 }

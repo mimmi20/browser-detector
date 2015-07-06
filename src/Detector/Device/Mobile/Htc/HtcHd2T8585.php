@@ -30,13 +30,15 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
+
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
-
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -47,7 +49,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class HtcHd2T8585
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -139,5 +141,55 @@ class HtcHd2T8585
     public function getBrand()
     {
         return new Company\Htc();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new WindowsMobileAbstractOs(),
+            new AndroidAbstractOs()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcHd2T8585
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        $osName = $os->getName();
+
+        if ('Android' == $osName) {
+            // htc_hd2_android_ver1_subua40htc
+            $this->setCapability('has_qwerty_keyboard', true);
+            $this->setCapability('physical_screen_width', 57);
+            $this->setCapability('physical_screen_height', 94);
+            $this->setCapability('dual_orientation', true);
+        }
+
+        parent::detectDependProperties($browser, $engine, $os);
+
+        return $this;
     }
 }

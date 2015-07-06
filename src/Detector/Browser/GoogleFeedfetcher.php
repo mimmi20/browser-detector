@@ -30,8 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class GoogleFeedfetcher
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -75,12 +76,6 @@ class GoogleFeedfetcher
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('Feedfetcher-Google')) {
-            return false;
-        }
-
-        $others = array('like FeedFetcher-Google', 'Feedly');
-
-        if ($this->utils->checkIfContains($others)) {
             return false;
         }
 
@@ -143,5 +138,18 @@ class GoogleFeedfetcher
     public function getWeight()
     {
         return 3835;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function detectEngine()
+    {
+        $handler = new UnknownEngine();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

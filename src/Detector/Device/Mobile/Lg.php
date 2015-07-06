@@ -32,11 +32,17 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
 use BrowserDetector\Detector\Os\Bada;
 use BrowserDetector\Detector\Os\Brew;
+use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\Symbianos;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
+use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -46,7 +52,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Lg
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
@@ -160,7 +166,7 @@ class Lg
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\DeviceHandler
+     * @return \BrowserDetector\Detector\AbstractDevice
      */
     public function detectDevice()
     {
@@ -171,6 +177,31 @@ class Lg
             __DIR__ . DIRECTORY_SEPARATOR . 'Lg' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler($this);
+
+        return $chain->detect();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new AndroidAbstractOs(),
+            new Bada(),
+            new Brew(),
+            new Java(),
+            new Symbianos(),
+            new WindowsMobileAbstractOs(),
+            new WindowsPhoneAbstractOs()
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
 
         return $chain->detect();
     }

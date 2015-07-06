@@ -30,10 +30,12 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -44,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class NokiaLumia
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -97,7 +99,6 @@ class NokiaLumia
 
         $specialLumias = array(
             'nokia; lumia 520',
-            'nokia; lumia 530',
             'nokia; lumia 610',
             'nokia; lumia 620',
             'nokia; lumia 630',
@@ -107,7 +108,6 @@ class NokiaLumia
             'nokia; lumia 730',
             'nokia; lumia 800',
             'nokia; lumia 820',
-            'nokia; lumia 830',
             'nokia; lumia 900',
             'nokia; lumia 920',
             'nokia; lumia 925',
@@ -161,5 +161,38 @@ class NokiaLumia
     public function getBrand()
     {
         return new Company\Nokia();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new WindowsPhoneAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return AbstractDevice
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        return $this;
     }
 }

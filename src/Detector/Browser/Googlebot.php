@@ -30,10 +30,15 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\AbstractEngine;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +47,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Googlebot
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -80,15 +85,7 @@ class Googlebot
             return false;
         }
 
-        $otherGoogleBots = array(
-            'Mediapartners-Google',
-            'Googlebot-Mobile',
-            'AdsBot-Google',
-            'Google Page Speed',
-            'Google Web Preview'
-        );
-
-        if ($this->utils->checkIfContains($otherGoogleBots)) {
+        if ($this->utils->checkIfContains(array('Mediapartners-Google', 'Googlebot-Mobile', 'AdsBot-Google', 'Google Page Speed'))) {
             return false;
         }
 
@@ -157,6 +154,60 @@ class Googlebot
     public function getWeight()
     {
         return 1945836;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\AbstractOs     $os
+     * @param \BrowserDetector\Detector\AbstractDevice $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\Googlebot
+     */
+    public function detectDependProperties(
+        AbstractEngine $engine,
+        AbstractOs $os,
+        AbstractDevice $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        if ($this->utils->checkIfContains('compatible; Googlebot')) {
+            $agent = str_ireplace(
+                array(
+                    'googlebot-news',
+                    'googlebot-mobile',
+                    'googlebot',
+                    'www.google.com/bot.html'
+                ),
+                '',
+                $this->useragent
+            );
+
+            $detector = new UserAgent();
+            $detector
+                ->setLogger($device->getLogger())
+                ->setAgent($agent)
+            ;
+
+            $device->setRenderAs($detector->getBrowser());
+        }
+
+        return $this;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return UnknownEngine
+     */
+    public function detectEngine()
+    {
+        $handler = new UnknownEngine();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }
 

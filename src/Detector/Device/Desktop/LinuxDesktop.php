@@ -30,9 +30,31 @@
 
 namespace BrowserDetector\Detector\Device\Desktop;
 
+use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\CentAbstractOs;
+use BrowserDetector\Detector\Os\CrAbstractOs;
+use BrowserDetector\Detector\Os\Debian;
+use BrowserDetector\Detector\Os\Fedora;
+use BrowserDetector\Detector\Os\Gentoo;
+use BrowserDetector\Detector\Os\JoliAbstractOs;
+use BrowserDetector\Detector\Os\Kubuntu;
+use BrowserDetector\Detector\Os\Linux;
+use BrowserDetector\Detector\Os\LinuxTv;
+use BrowserDetector\Detector\Os\Mandriva;
+use BrowserDetector\Detector\Os\Mint;
+use BrowserDetector\Detector\Os\Moblin;
+use BrowserDetector\Detector\Os\Redhat;
+use BrowserDetector\Detector\Os\Slackware;
+use BrowserDetector\Detector\Os\Suse;
+use BrowserDetector\Detector\Os\Ubuntu;
+use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\Ventana;
+use BrowserDetector\Detector\Os\ZenwalkGnu;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -42,7 +64,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class LinuxDesktop
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -101,7 +123,7 @@ class LinuxDesktop
             'Zenwalk GNU',
             'CentOS',
             'Kubuntu',
-            'CrOs',
+            'CrAbstractOs',
             'Moblin'
         );
 
@@ -154,5 +176,62 @@ class LinuxDesktop
     public function getBrand()
     {
         return new Company\Unknown();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\AbstractOs
+     */
+    public function detectOs()
+    {
+        $os = array(
+            new Linux(),
+            new Debian(),
+            new Fedora(),
+            new JoliAbstractOs(),
+            new Kubuntu(),
+            new Mint(),
+            new Redhat(),
+            new Slackware(),
+            new Suse(),
+            new Ubuntu(),
+            new ZenwalkGnu(),
+            new CentAbstractOs(),
+            new LinuxTv(),
+            new CrAbstractOs(),
+            new Ventana(),
+            new Mandriva(),
+            new Moblin(),
+            new Gentoo(),
+            new AndroidAbstractOs(),
+        );
+
+        $chain = new Chain();
+        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setUseragent($this->useragent);
+        $chain->setHandlers($os);
+
+        return $chain->detect();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return null|\BrowserDetector\Detector\AbstractBrowser
+     */
+    public function detectBrowser()
+    {
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
+        $chain->setDirectory($browserPath);
+        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+
+        return $chain->detect();
     }
 }

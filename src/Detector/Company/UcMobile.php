@@ -45,12 +45,12 @@ class UcMobile
      *
      * @var string
      */
-    protected $name = 'UC Web';
+    protected $name = 'UC Mobile';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'UC Web';
+    protected $brandname = 'UC Mobile';
 }

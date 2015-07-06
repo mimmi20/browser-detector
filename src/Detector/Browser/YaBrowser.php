@@ -30,8 +30,10 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -41,8 +43,8 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class YaBrowser
-    extends BrowserHandler
+class YaAbstractBrowser
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -74,7 +76,7 @@ class YaBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('YaBrowser/'))) {
+        if (!$this->utils->checkIfContains(array('YaAbstractBrowser/'))) {
             return false;
         }
 
@@ -131,8 +133,29 @@ class YaBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('YaBrowser');
+        $searches = array('YaAbstractBrowser');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     */
+    public function detectEngine()
+    {
+        $version = $this->detectVersion()->getVersion(Version::MAJORMINOR);
+
+        if ($version >= '1.20') {
+            $engine = new Blink();
+        } else {
+            $engine = new Webkit();
+        }
+
+        $engine->setUseragent($this->useragent);
+
+        return $engine;
     }
 }

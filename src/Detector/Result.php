@@ -30,6 +30,10 @@
 
 namespace BrowserDetector\Detector;
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Helper\Utils;
 use WurflData\Loader;
 
@@ -893,7 +897,7 @@ class Result
      *
      * @var \BrowserDetector\Detector\Result $result
      *
-     * @return DeviceHandler
+     * @return AbstractDevice
      */
     public function setRenderAs(Result $result)
     {
@@ -1476,18 +1480,18 @@ class Result
     /**
      * Returns the value of a given capability name for the current device
      *
-     * @param \BrowserDetector\Detector\DeviceHandler  $device
-     * @param \BrowserDetector\Detector\Platform       $os
-     * @param \BrowserDetector\Detector\BrowserHandler $browser
-     * @param \BrowserDetector\Detector\Engine         $engine
+     * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs       $os
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine         $engine
      *
      * @return \BrowserDetector\Detector\Result
      */
     public function setDetectionResult(
-        DeviceHandler $device,
-        Platform $os,
-        BrowserHandler $browser,
-        Engine $engine
+        AbstractDevice $device,
+        AbstractOs $os,
+        AbstractBrowser $browser,
+        AbstractEngine $engine
     ) {
         if ($device->getDeviceType()->isMobile()) {
             $wurflKey = $device->getCapability('wurflKey');

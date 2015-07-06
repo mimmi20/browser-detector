@@ -30,10 +30,12 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Odys;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AndroidAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -44,7 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class OdysUnoX10
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -136,6 +138,101 @@ class OdysUnoX10
     public function getBrand()
     {
         return new Company\Odys();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new AndroidAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\AbstractOs      $os
+     *
+     * @return AbstractDevice
+     */
+    public function detectDependProperties(
+        AbstractBrowser $browser,
+        AbstractEngine $engine,
+        AbstractOs $os
+    ) {
+        parent::detectDependProperties($browser, $engine, $os);
+
+        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
+        $engine->setCapability('xhtml_send_mms_string', 'mms:');
+        $engine->setCapability('xhtml_send_sms_string', 'sms:');
+
+        /*
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+        case 'Android Webkit':
+            switch ((float)$osVersion) {
+            case 2.1:
+                $engineVersion = $engine->detectVersion()->getVersion(Version::MAJORMINOR);
+
+                if ('530.17' == $engineVersion) {
+                    $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
+                }
+                break;
+            case 2.2:
+                $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban221');
+                break;
+            case 2.3:
+                $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban233bis');
+                break;
+            case 4.0:
+                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40');
+                break;
+            case 3.1:
+            case 3.2:
+            case 4.1:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        case 'Chrome':
+            $engine->setCapability('is_sencha_touch_ok', false);
+
+            switch ((float)$osVersion) {
+            case 4.0:
+                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40chrome');
+                break;
+            case 2.1:
+            case 2.2:
+            case 2.3:
+            case 3.1:
+            case 3.2:
+            case 4.1:
+            case 4.2:
+            default:
+                // nothing to do here
+                break;
+            }
+            break;
+        default:
+            // nothing to do here
+            break;
+        }
+        /**/
+
+        return $this;
     }
 }
 

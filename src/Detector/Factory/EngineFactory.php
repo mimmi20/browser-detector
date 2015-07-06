@@ -96,7 +96,7 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'Presto';
         } elseif (preg_match('/(Gecko|Firefox)/', $agent)) {
             $engineKey = 'Gecko';
-        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowser|NF3|Nintendo 3DS)/', $agent)
+        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeAbstractBrowser|NF3|Nintendo 3DS)/', $agent)
             && !$utils->checkIfContains(array('Kindle'))
         ) {
             $engineKey = 'NetFront';

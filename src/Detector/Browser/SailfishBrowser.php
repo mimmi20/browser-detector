@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -45,7 +45,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SailfishBrowser
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -77,7 +77,7 @@ class SailfishBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SailfishBrowser'))) {
+        if (!$this->utils->checkIfContains(array('SailfishAbstractBrowser'))) {
             return false;
         }
 
@@ -124,7 +124,7 @@ class SailfishBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SailfishBrowser');
+        $searches = array('SailfishAbstractBrowser');
 
         return $detector->detectVersion($searches);
     }

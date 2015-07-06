@@ -30,9 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
-use BrowserDetector\Detector\Company;
 
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class NetFrontLifeBrowser
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -75,7 +75,7 @@ class NetFrontLifeBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NetFrontLifeBrowser'))) {
+        if (!$this->utils->checkIfContains(array('NetFrontLifeAbstractBrowser'))) {
             return false;
         }
 
@@ -98,7 +98,7 @@ class NetFrontLifeBrowser
      */
     public function getName()
     {
-        return 'NetFrontLifeBrowser';
+        return 'NetFrontLifeAbstractBrowser';
     }
 
     /**
@@ -131,7 +131,7 @@ class NetFrontLifeBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFrontLifeBrowser');
+        $searches = array('NetFrontLifeAbstractBrowser');
 
         return $detector->detectVersion($searches);
     }
@@ -144,5 +144,19 @@ class NetFrontLifeBrowser
     public function getWeight()
     {
         return 83;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\NetFront
+     */
+    public function detectEngine()
+    {
+        $handler = new NetFrontEngine();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

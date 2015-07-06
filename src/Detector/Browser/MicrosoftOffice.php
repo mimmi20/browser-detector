@@ -30,8 +30,12 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Engine\Trident;
+use BrowserDetector\Detector\AbstractEngine;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +46,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class MicrosoftOffice
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -234,5 +238,66 @@ class MicrosoftOffice
     public function getWeight()
     {
         return 3485393;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Trident
+     */
+    public function detectEngine()
+    {
+        $handler = new Trident();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
+    }
+
+    /**
+     * detects properties who are depending on the browser, the rendering engine
+     * or the operating system
+     *
+     * @param \BrowserDetector\Detector\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\AbstractOs     $os
+     * @param \BrowserDetector\Detector\AbstractDevice $device
+     *
+     * @return \BrowserDetector\Detector\Browser\General\MicrosoftOffice
+     */
+    public function detectDependProperties(
+        AbstractEngine $engine,
+        AbstractOs $os,
+        AbstractDevice $device
+    ) {
+        parent::detectDependProperties($engine, $os, $device);
+
+        $engine->setCapability('supports_background_sounds', false);
+        $engine->setCapability('supports_vb_script', false);
+        $engine->setCapability('supports_java_applets', false);
+        $engine->setCapability('supports_activex_controls', false);
+        $engine->setCapability('xhtml_supports_iframe', 'none');
+        $engine->setCapability('cookie_support', false);
+        $engine->setCapability('ajax_support_javascript', false);
+
+        $browserVersion = (int)$this->detectInternalVersion();
+
+        switch ($browserVersion) {
+            case 12:
+                $engine->setCapability('xhtml_supports_iframe', 'full');
+                $engine->setCapability('cookie_support', true);
+                $engine->setCapability('xhtml_table_support', false);
+                $engine->setCapability('svgt_1_1', true);
+                $engine->setCapability('ajax_support_javascript', true);
+                $engine->setCapability('image_inlining', true);
+                $engine->setCapability('css_spriting', true);
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        $this->setCapability('wurflKey', 'ms_office_subua' . $browserVersion);
+
+        return $this;
     }
 }

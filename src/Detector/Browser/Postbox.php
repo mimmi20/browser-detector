@@ -30,8 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Postbox
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -74,7 +75,32 @@ class Postbox
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Postbox/')) {
+        if (!$this->utils->checkIfContains('Mozilla/')) {
+            return false;
+        }
+
+        if (!$this->utils->checkIfContainsAll(array('Postbox', 'Gecko'))) {
+            return false;
+        }
+
+        $isNotReallyAnFirefox = array(
+            // using also the Gecko rendering engine
+            'Maemo',
+            'Maxthon',
+            'MxBrowser',
+            'Camino',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'Navigator',
+            'PaleMoon',
+            'SeaMonkey',
+            'Flock',
+            'Fennec',
+            'Firefox'
+        );
+
+        if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
         }
 
@@ -88,7 +114,7 @@ class Postbox
      */
     public function getName()
     {
-        return 'Postbox App';
+        return 'Postbox';
     }
 
     /**
@@ -134,5 +160,19 @@ class Postbox
     public function getWeight()
     {
         return 236840;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Gecko
+     */
+    public function detectEngine()
+    {
+        $handler = new Gecko();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

@@ -30,8 +30,12 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\BrowserHandler;
+
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\Presto;
+use BrowserDetector\Detector\Engine\Webkit;
+
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -42,7 +46,7 @@ use BrowserDetector\Detector\Version;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class OperaMini
-    extends BrowserHandler
+    extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -75,10 +79,6 @@ class OperaMini
     public function canHandle()
     {
         if (!$this->utils->checkIfContains(array('Opera Mini', 'OPiOS'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('ucweb', 'uc browser', 'ucbrowser'), true)) {
             return false;
         }
 
@@ -188,5 +188,28 @@ class OperaMini
     public function getWeight()
     {
         return 365459;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @param \BrowserDetector\Detector\AbstractOs $os
+     *
+     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     */
+    public function detectEngine(AbstractOs $os = null)
+    {
+        if (null !== $os && in_array($os->getName(), array('iOS'))) {
+            $engine = new Webkit();
+        } elseif ($this->utils->checkIfContains('WebKit')) {
+            $engine = new Blink();
+        } else {
+            $engine = new Presto();
+        }
+
+        $engine->setUseragent($this->useragent);
+
+        return $engine;
     }
 }

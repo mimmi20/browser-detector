@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
+use BrowserDetector\Detector\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-
+use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class LgE906
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -57,7 +57,7 @@ class LgE906
         // device
         'model_name'             => 'E906',
         'model_extra_info'       => null,
-        'marketing_name'         => 'E906 Jill Sander',
+        'marketing_name'         => 'LG-E906 Jill Sander',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -135,5 +135,18 @@ class LgE906
     public function getBrand()
     {
         return new Company\Lg();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneAbstractOs
+     */
+    public function detectOs()
+    {
+        $handler = new WindowsPhoneAbstractOs();
+        $handler->setUseragent($this->useragent);
+
+        return $handler;
     }
 }

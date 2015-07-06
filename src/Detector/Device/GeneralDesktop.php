@@ -30,10 +30,11 @@
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\DeviceHandler;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+
+use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\MobileDevice;
@@ -47,7 +48,7 @@ use BrowserDetector\Helper\Windows as WindowsHelper;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class GeneralDesktop
-    extends DeviceHandler
+    extends AbstractDevice
     implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
@@ -169,7 +170,7 @@ class GeneralDesktop
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\DeviceHandler
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
      */
     public function detectDevice()
     {
@@ -228,5 +229,25 @@ class GeneralDesktop
     public function getBrand()
     {
         return new Company\Unknown();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     */
+    public function detectBrowser()
+    {
+        $browserPath = realpath(
+            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
+        );
+
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
+        $chain->setDirectory($browserPath);
+        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+
+        return $chain->detect();
     }
 }

@@ -118,7 +118,7 @@ class Safari
             'Mercury',
             'Midori',
             'MQQBrowser',
-            'NokiaBrowser',
+            'NokiaAbstractBrowser',
             'OmniWeb',
             'OPiOS',
             'Origin',

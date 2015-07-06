@@ -28,11 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
+namespace BrowserDetector\Detector\Device;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Result;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 use Psr\Log\LoggerInterface;
 
@@ -44,7 +46,7 @@ use Psr\Log\LoggerInterface;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class DeviceHandler
+abstract class AbstractDevice
     implements DeviceInterface
 {
     /**
@@ -60,7 +62,7 @@ abstract class DeviceHandler
     /**
      * should the device render the content like another?
      *
-     * @var \BrowserDetector\Detector\Result
+     * @var Result
      */
     protected $renderAs = null;
 
@@ -116,7 +118,7 @@ abstract class DeviceHandler
     /**
      * Class Constructor
      *
-     * @return DeviceHandler
+     * @return AbstractDevice
      */
     public function __construct()
     {
@@ -128,7 +130,7 @@ abstract class DeviceHandler
      *
      * @param string $userAgent
      *
-     * @return DeviceHandler
+     * @return AbstractDevice
      */
     public function setUserAgent($userAgent)
     {
@@ -230,7 +232,7 @@ abstract class DeviceHandler
      *
      * @param null   $capabilityValue
      *
-     * @return DeviceHandler
+     * @return AbstractDevice
      */
     public function setCapability(
         $capabilityName,
@@ -318,7 +320,7 @@ abstract class DeviceHandler
      *
      * @var \BrowserDetector\Detector\Result $result
      *
-     * @return DeviceHandler
+     * @return AbstractDevice
      */
     public function setRenderAs(Result $result)
     {
@@ -330,7 +332,7 @@ abstract class DeviceHandler
     /**
      * sets a second device for rendering properties
      *
-     * @return \BrowserDetector\Detector\Result
+     * @return Result
      */
     public function getRenderAs()
     {
@@ -348,7 +350,7 @@ abstract class DeviceHandler
     /**
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return DeviceHandler
+     * @return AbstractDevice
      */
     public function setLogger(LoggerInterface $logger)
     {
