@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\MatcherInterface;
 
 
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 
 /**
@@ -105,9 +105,9 @@ interface EngineInterface
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\AbstractOs      $os
-     * @param \BrowserDetector\Detector\AbstractDevice  $device
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
      *
      * @return AbstractDevice
      */

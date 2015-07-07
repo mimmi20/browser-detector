@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -161,9 +161,9 @@ class Phantom
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\AbstractOs     $os
-     * @param \BrowserDetector\Detector\AbstractDevice $device
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
+     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
      * @return Phantom
      */

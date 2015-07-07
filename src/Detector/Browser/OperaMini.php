@@ -194,7 +194,7 @@ class OperaMini
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @param \BrowserDetector\Detector\AbstractOs $os
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
      * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */

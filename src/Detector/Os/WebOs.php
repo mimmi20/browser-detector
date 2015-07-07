@@ -30,12 +30,12 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Mobile\NokiaBrowser;
-use BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser;
-use BrowserDetector\Detector\Browser\Mobile\OperaMini;
-use BrowserDetector\Detector\Browser\Mobile\Ucweb;
-use BrowserDetector\Detector\Browser\Mobile\WebkitWebos;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\NokiaBrowser;
+use BrowserDetector\Detector\Browser\NokiaProxyBrowser;
+use BrowserDetector\Detector\Browser\OperaMini;
+use BrowserDetector\Detector\Browser\Ucweb;
+use BrowserDetector\Detector\Browser\WebkitWebos;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -136,7 +136,7 @@ class WebOs
         $browserNs   = 'BrowserDetector\\Browser\\Handlers\\Mobile';
 
         $chain = new Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
         $chain->setUseragent($this->useragent);
 
         $device = $chain->detect();
@@ -145,10 +145,9 @@ class WebOs
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|AbstractOs
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -163,7 +162,7 @@ class WebOs
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

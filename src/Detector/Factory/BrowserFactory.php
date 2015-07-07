@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 
 /**
@@ -59,7 +59,7 @@ class BrowserFactory
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR
         );
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

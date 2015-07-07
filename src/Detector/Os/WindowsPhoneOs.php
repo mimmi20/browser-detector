@@ -30,16 +30,19 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\Mobile\Opera;
-use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\AbstractBrowser;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\Opera;
+use BrowserDetector\Detector\Browser\OperaMobile;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\Os\OsChangesBrowserInterface;
+use BrowserDetector\Detector\MatcherInterface\Os\OsChangesEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 
 use BrowserDetector\Detector\Version;
@@ -55,9 +58,9 @@ use BrowserDetector\Helper\Windows as WindowsHelper;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsPhoneAbstractOs
+class WindowsPhoneOs
     extends AbstractOs
-    implements OsInterface
+    implements OsInterface, OsChangesEngineInterface, OsChangesBrowserInterface
 {
     /**
      * Returns true if this handler can handle the given $useragent
@@ -150,10 +153,9 @@ class WindowsPhoneAbstractOs
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -167,32 +169,38 @@ class WindowsPhoneAbstractOs
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * changes properties of the browser depending on properties of the Os
      *
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractDevice  $device
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
      *
-     * @return AbstractDevice
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractDevice $device
-    ) {
-        parent::detectDependProperties($browser, $engine, $device);
-
+    public function changeBrowserProperties(AbstractBrowser $browser)
+    {
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
 
+        return $this;
+    }
+
+    /**
+     * changes properties of the engine depending on browser properties and depending on properties of the Os
+     *
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Device\AbstractDevice   $device
+     *
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     */
+    public function changeEngineProperties(AbstractEngine $engine, AbstractBrowser $browser, AbstractDevice $device)
+    {
         $browserVersion = (float)$browser->detectVersion()->getVersion(
             Version::MAJORMINOR
         );

@@ -685,10 +685,10 @@ abstract class AbstractEngine
      * or the operating system
      *
      * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     * @param \BrowserDetector\Detector\AbstractDevice  $device
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
      *
-     * @return \BrowserDetector\Detector\AbstractEngine
+     * @return \BrowserDetector\Detector\Engine\AbstractEngine
      */
     public function detectDependProperties(
         AbstractOs $os,

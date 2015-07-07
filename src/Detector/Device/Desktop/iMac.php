@@ -30,15 +30,15 @@
 
 namespace BrowserDetector\Detector\Device\Desktop;
 
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\Darwin;
-use BrowserDetector\Detector\Os\MacintoshAbstractOs;
+use BrowserDetector\Detector\Os\MacintoshOs;
 use BrowserDetector\Detector\Os\Macosx;
-use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -162,18 +162,18 @@ class Imac
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Os\AbstractOs
      */
     public function detectOs()
     {
         $os = array(
-            new MacintoshAbstractOs(),
+            new MacintoshOs(),
             new Macosx(),
             new Darwin()
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
@@ -181,9 +181,9 @@ class Imac
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractBrowser
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -195,7 +195,7 @@ class Imac
         $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

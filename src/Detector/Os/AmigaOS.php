@@ -55,7 +55,7 @@ class AmigaOS
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AmigaAbstractOS')) {
+        if (!$this->utils->checkIfContains('AmigaOS')) {
             return false;
         }
 
@@ -82,7 +82,7 @@ class AmigaOS
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('AmigaAbstractOS');
+        $searches = array('AmigaOS');
 
         return $detector->detectVersion($searches);
     }

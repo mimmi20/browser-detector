@@ -32,11 +32,11 @@ namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Maemo;
-use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -149,17 +149,17 @@ class AmazonKindle
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Os\AbstractOs
      */
     public function detectOs()
     {
         $os = array(
-            new AndroidAbstractOs(),
+            new AndroidOs(),
             new Maemo()
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 

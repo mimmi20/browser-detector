@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -144,11 +144,11 @@ class SonyLT26w
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\AbstractOs
+     * @return null|\BrowserDetector\Detector\Os\AbstractOs
      */
     public function detectOs()
     {
-        $handler = new AndroidAbstractOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;

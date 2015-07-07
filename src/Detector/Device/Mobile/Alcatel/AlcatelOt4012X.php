@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\FirefoxAbstractOs;
+use BrowserDetector\Detector\Os\FirefoxOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -142,11 +142,11 @@ class AlcatelOt4012X
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidAbstractOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new FirefoxAbstractOs();
+        $handler = new FirefoxOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;

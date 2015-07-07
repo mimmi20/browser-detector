@@ -33,11 +33,11 @@ namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidAbstractOs;
-use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -150,17 +150,17 @@ class HtcHd2
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Os\AbstractOs
      */
     public function detectOs()
     {
         $os = array(
             new WindowsMobileAbstractOs(),
-            new AndroidAbstractOs()
+            new AndroidOs()
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
@@ -171,9 +171,9 @@ class HtcHd2
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
      *
      * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcHd2
      */

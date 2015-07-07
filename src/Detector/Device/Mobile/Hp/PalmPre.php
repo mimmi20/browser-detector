@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\WebAbstractOs;
+use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -160,11 +160,11 @@ class PalmPre
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WebAbstractOs
+     * @return \BrowserDetector\Detector\Os\WebOs
      */
     public function detectOs()
     {
-        $handler = new WebAbstractOs();
+        $handler = new WebOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;

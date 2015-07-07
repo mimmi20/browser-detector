@@ -140,7 +140,7 @@ class Findlinks
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\AbstractEngine
+     * @return null|\BrowserDetector\Detector\Engine\AbstractEngine
      */
     public function detectEngine()
     {

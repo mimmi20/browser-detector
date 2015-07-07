@@ -29,8 +29,8 @@ namespace BrowserDetector\Detector\Engine;
 
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 
 use BrowserDetector\Detector\Version;
@@ -266,9 +266,9 @@ class Edge extends AbstractEngine implements EngineInterface
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\AbstractOs      $os
-     * @param \BrowserDetector\Detector\AbstractDevice  $device
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
      *
      * @return Trident
      */

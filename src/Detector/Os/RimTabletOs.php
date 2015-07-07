@@ -30,12 +30,12 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Mobile\Blackberry;
-use BrowserDetector\Detector\Browser\Mobile\BlackberryPlaybookTablet;
-use BrowserDetector\Detector\Browser\Mobile\MqqBrowser;
-use BrowserDetector\Detector\Browser\Mobile\OperaMini;
-use BrowserDetector\Detector\Browser\Mobile\Ucweb;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\Blackberry;
+use BrowserDetector\Detector\Browser\BlackberryPlaybookTablet;
+use BrowserDetector\Detector\Browser\MqqBrowser;
+use BrowserDetector\Detector\Browser\OperaMini;
+use BrowserDetector\Detector\Browser\Ucweb;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -51,7 +51,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class RimTabletAbstractOs
+class RimTabletOs
     extends AbstractOs
     implements OsInterface
 {
@@ -126,10 +126,9 @@ class RimTabletAbstractOs
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractBrowser
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -144,7 +143,7 @@ class RimTabletAbstractOs
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

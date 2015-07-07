@@ -32,13 +32,13 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\RimAbstractOs;
 use BrowserDetector\Detector\Os\RimTabletAbstractOs;
-use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -108,7 +108,7 @@ class BlackBerry
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\AbstractDevice
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
      */
     public function detectDevice()
     {
@@ -166,7 +166,7 @@ class BlackBerry
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Os\AbstractOs
      */
     public function detectOs()
     {
@@ -174,11 +174,11 @@ class BlackBerry
             new RimAbstractOs(),
             new RimTabletAbstractOs(),
             new WindowsMobileAbstractOs(),
-            new AndroidAbstractOs()
+            new AndroidOs()
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 

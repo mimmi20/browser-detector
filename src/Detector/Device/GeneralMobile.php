@@ -30,15 +30,16 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\AbstractBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
@@ -124,7 +125,7 @@ class GeneralMobile
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\AbstractDevice
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
      */
     public function detectDevice()
     {
@@ -180,9 +181,9 @@ class GeneralMobile
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\AbstractBrowser
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -194,7 +195,7 @@ class GeneralMobile
         $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser\Mobile');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }
@@ -372,9 +373,9 @@ class GeneralMobile
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
      *
      * @return \BrowserDetector\Detector\Device\GeneralMobile
      */
@@ -383,8 +384,6 @@ class GeneralMobile
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         $engine->setCapability('bmp', false);
         $engine->setCapability('wbmp', false);
         $engine->setCapability('tiff', false);

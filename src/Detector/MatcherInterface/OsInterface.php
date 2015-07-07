@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\MatcherInterface;
 
 
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 
 /**
  * interface for all platforms/operating systems to detect
@@ -45,26 +45,9 @@ use BrowserDetector\Detector\AbstractEngine;
 interface OsInterface
 {
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the Browser which used on the device
      *
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractDevice  $device
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractDevice $device
-    );
-
-    /**
-     * returns null, if the platform does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\BrowserDetector\Detector\AbstractBrowser
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser();
 

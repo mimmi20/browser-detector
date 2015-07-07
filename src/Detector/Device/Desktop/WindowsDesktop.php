@@ -30,10 +30,10 @@
 
 namespace BrowserDetector\Detector\Device\Desktop;
 
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -157,9 +157,9 @@ class WindowsDesktop
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\AbstractBrowser
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -171,7 +171,7 @@ class WindowsDesktop
         $chain->setUserAgent($this->useragent);
         $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
         $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

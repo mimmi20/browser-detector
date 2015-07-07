@@ -32,8 +32,8 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\Symbianos;
 
@@ -159,9 +159,9 @@ class SonyEricssonU5i
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
      *
      * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonU5i
      */

@@ -30,11 +30,11 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
-use BrowserDetector\Detector\Browser\Mobile\Android;
-use BrowserDetector\Detector\Browser\Mobile\Chrome;
-use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\Android;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\OperaMobile;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -114,10 +114,9 @@ class Maemo
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractBrowser
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -131,7 +130,7 @@ class Maemo
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

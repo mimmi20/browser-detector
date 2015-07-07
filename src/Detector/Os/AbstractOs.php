@@ -30,8 +30,8 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 
 /**
@@ -68,7 +68,7 @@ abstract class AbstractOs
      *
      * @param string $userAgent
      *
-     * @return \BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Os\AbstractOs
      */
     public function setUserAgent($userAgent)
     {
@@ -96,24 +96,6 @@ abstract class AbstractOs
     public function getWeight()
     {
         return 1;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractDevice  $device
-     *
-     * @return \BrowserDetector\Detector\AbstractOs
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractDevice $device
-    ) {
-        return $this;
     }
 
     /**

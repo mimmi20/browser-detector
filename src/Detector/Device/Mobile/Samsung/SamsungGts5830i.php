@@ -32,10 +32,10 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -143,11 +143,11 @@ class SamsungGts5830i
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidAbstractOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new AndroidAbstractOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;
@@ -157,9 +157,9 @@ class SamsungGts5830i
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
      *
      * @return AbstractDevice
      */

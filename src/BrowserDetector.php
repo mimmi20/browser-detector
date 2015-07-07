@@ -36,6 +36,8 @@ use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasVersionInterface;
+use BrowserDetector\Detector\MatcherInterface\Os\OsChangesBrowserInterface;
+use BrowserDetector\Detector\MatcherInterface\Os\OsChangesEngineInterface;
 use BrowserDetector\Detector\Result;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
@@ -190,6 +192,14 @@ class BrowserDetector
 
             // detect the engine which is used in the browser
             $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
+
+            if ($platform instanceof OsChangesEngineInterface) {
+                $platform->changeEngineProperties($engine, $browser, $engine);
+            }
+
+            if ($platform instanceof OsChangesBrowserInterface) {
+                $platform->changeBrowserProperties($browser);
+            }
 
             // @todo: set engine related properties to the browser, define an interface for that
             // @todo: set browser related properties to the device, define an interface for that

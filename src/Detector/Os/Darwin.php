@@ -30,27 +30,27 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\General\Bingbot;
-use BrowserDetector\Detector\Browser\General\CfNetwork;
-use BrowserDetector\Detector\Browser\General\Icab;
-use BrowserDetector\Detector\Browser\General\Maven;
-use BrowserDetector\Detector\Browser\Mobile\AppleMail;
-use BrowserDetector\Detector\Browser\Mobile\AtomicBrowser;
-use BrowserDetector\Detector\Browser\Mobile\Coast;
-use BrowserDetector\Detector\Browser\Mobile\DarwinBrowser;
-use BrowserDetector\Detector\Browser\Mobile\Incredimail;
-use BrowserDetector\Detector\Browser\Mobile\Mercury;
-use BrowserDetector\Detector\Browser\Mobile\Omniweb;
-use BrowserDetector\Detector\Browser\Mobile\OnePassword;
-use BrowserDetector\Detector\Browser\Mobile\PerfectBrowser;
-use BrowserDetector\Detector\Browser\Mobile\Puffin;
-use BrowserDetector\Detector\Browser\Mobile\QuickLook;
-use BrowserDetector\Detector\Browser\Mobile\Safari;
-use BrowserDetector\Detector\Browser\Mobile\Sleipnir;
-use BrowserDetector\Detector\Browser\Mobile\SmartSync;
-use BrowserDetector\Detector\Browser\Mobile\Spector;
-use BrowserDetector\Detector\Browser\Mobile\Terra;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\Bingbot;
+use BrowserDetector\Detector\Browser\CfNetwork;
+use BrowserDetector\Detector\Browser\Icab;
+use BrowserDetector\Detector\Browser\Maven;
+use BrowserDetector\Detector\Browser\AppleMail;
+use BrowserDetector\Detector\Browser\AtomicBrowser;
+use BrowserDetector\Detector\Browser\OperaCoast;
+use BrowserDetector\Detector\Browser\DarwinBrowser;
+use BrowserDetector\Detector\Browser\Incredimail;
+use BrowserDetector\Detector\Browser\Mercury;
+use BrowserDetector\Detector\Browser\Omniweb;
+use BrowserDetector\Detector\Browser\OnePassword;
+use BrowserDetector\Detector\Browser\PerfectBrowser;
+use BrowserDetector\Detector\Browser\Puffin;
+use BrowserDetector\Detector\Browser\QuickLook;
+use BrowserDetector\Detector\Browser\Safari;
+use BrowserDetector\Detector\Browser\Sleipnir;
+use BrowserDetector\Detector\Browser\SmartSync;
+use BrowserDetector\Detector\Browser\Spector;
+use BrowserDetector\Detector\Browser\Terra;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -130,10 +130,9 @@ class Darwin
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -154,7 +153,7 @@ class Darwin
             new SmartSync(),
             new Incredimail(),
             new AppleMail(),
-            new Coast(),
+            new OperaCoast(),
             new QuickLook(),
             new Icab(),
             new CfNetwork(),
@@ -163,7 +162,7 @@ class Darwin
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

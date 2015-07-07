@@ -30,11 +30,11 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Mobile\NokiaBrowser;
-use BrowserDetector\Detector\Browser\Mobile\NokiaProxyBrowser;
-use BrowserDetector\Detector\Browser\Mobile\OperaMini;
-use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
-use BrowserDetector\Detector\Browser\Mobile\Ucweb;
+use BrowserDetector\Detector\Browser\NokiaBrowser;
+use BrowserDetector\Detector\Browser\NokiaProxyBrowser;
+use BrowserDetector\Detector\Browser\OperaMini;
+use BrowserDetector\Detector\Browser\OperaMobile;
+use BrowserDetector\Detector\Browser\Ucweb;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -112,10 +112,9 @@ class Symbianos
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {

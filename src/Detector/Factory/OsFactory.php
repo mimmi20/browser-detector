@@ -31,34 +31,34 @@
 namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Os\Aix;
-use BrowserDetector\Detector\Os\AmigaAbstractOS;
-use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\AmigaOS;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Bada;
 use BrowserDetector\Detector\Os\Beos;
 use BrowserDetector\Detector\Os\Brew;
 use BrowserDetector\Detector\Os\BsdFour;
-use BrowserDetector\Detector\Os\CellAbstractOs;
-use BrowserDetector\Detector\Os\CentAbstractOs;
+use BrowserDetector\Detector\Os\CellOs;
+use BrowserDetector\Detector\Os\CentOs;
 use BrowserDetector\Detector\Os\Cpm;
-use BrowserDetector\Detector\Os\CrAbstractOs;
+use BrowserDetector\Detector\Os\CrOs;
 use BrowserDetector\Detector\Os\Cygwin;
 use BrowserDetector\Detector\Os\Darwin;
 use BrowserDetector\Detector\Os\Debian;
 use BrowserDetector\Detector\Os\DragonflyBsd;
 use BrowserDetector\Detector\Os\Fedora;
-use BrowserDetector\Detector\Os\FirefoxAbstractOs;
+use BrowserDetector\Detector\Os\FirefoxOs;
 use BrowserDetector\Detector\Os\FreeBsd;
 use BrowserDetector\Detector\Os\Gentoo;
 use BrowserDetector\Detector\Os\Hpux;
 use BrowserDetector\Detector\Os\Ios;
 use BrowserDetector\Detector\Os\Irix;
 use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Os\JoliAbstractOs;
+use BrowserDetector\Detector\Os\JoliOs;
 use BrowserDetector\Detector\Os\Kubuntu;
 use BrowserDetector\Detector\Os\Liberate;
 use BrowserDetector\Detector\Os\Linux;
 use BrowserDetector\Detector\Os\LinuxTv;
-use BrowserDetector\Detector\Os\MacintoshAbstractOs;
+use BrowserDetector\Detector\Os\MacintoshOs;
 use BrowserDetector\Detector\Os\Macosx;
 use BrowserDetector\Detector\Os\Maemo;
 use BrowserDetector\Detector\Os\Mandriva;
@@ -67,31 +67,31 @@ use BrowserDetector\Detector\Os\Mint;
 use BrowserDetector\Detector\Os\Moblin;
 use BrowserDetector\Detector\Os\NetBsd;
 use BrowserDetector\Detector\Os\NintendoWii;
-use BrowserDetector\Detector\Os\NokiaAbstractOs;
+use BrowserDetector\Detector\Os\NokiaOs;
 use BrowserDetector\Detector\Os\OpenBsd;
 use BrowserDetector\Detector\Os\OpenVms;
-use BrowserDetector\Detector\Os\AbstractOs2;
-use BrowserDetector\Detector\Os\PalmAbstractOs;
+use BrowserDetector\Detector\Os\Os2;
+use BrowserDetector\Detector\Os\PalmOs;
 use BrowserDetector\Detector\Os\Redhat;
 use BrowserDetector\Detector\Os\RimAbstractOs;
 use BrowserDetector\Detector\Os\RimTabletAbstractOs;
-use BrowserDetector\Detector\Os\RiscAbstractOs;
+use BrowserDetector\Detector\Os\RiscOs;
 use BrowserDetector\Detector\Os\Ruby;
 use BrowserDetector\Detector\Os\Slackware;
 use BrowserDetector\Detector\Os\Solaris;
-use BrowserDetector\Detector\Os\SunAbstractOs;
+use BrowserDetector\Detector\Os\SunOs;
 use BrowserDetector\Detector\Os\Suse;
 use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Os\Tizen;
 use BrowserDetector\Detector\Os\Tru64Unix;
 use BrowserDetector\Detector\Os\Ubuntu;
 use BrowserDetector\Detector\Os\Unix;
-use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\Ventana;
-use BrowserDetector\Detector\Os\WebAbstractOs;
+use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
-use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Os\WindowsRt;
 use BrowserDetector\Detector\Os\WyderAbstractOs;
 use BrowserDetector\Detector\Os\ZenwalkGnu;
@@ -129,7 +129,7 @@ class OsFactory
         if ($utils->checkIfContains($winPhoneCodes)) {
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
             if (!$doMatchPhone || $matchesPhone[1] >= 7) {
-                return new WindowsPhoneAbstractOs();
+                return new WindowsPhoneOs();
             }
         }
 
@@ -144,7 +144,7 @@ class OsFactory
             $doMatchMobile = preg_match('/mobile version([\d]+)/', $agent, $matchesMobile);
 
             if ($doMatchMobile && $matchesMobile[1] >= 70) {
-                return new WindowsPhoneAbstractOs();
+                return new WindowsPhoneOs();
             }
 
             return new WindowsMobileAbstractOs();
@@ -184,7 +184,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains(array('WebOS', 'hpwOS', 'webOS'))) {
-            return new WebAbstractOs();
+            return new WebOs();
         }
 
         if ($utils->checkIfContains(array('Tizen'))) {
@@ -195,7 +195,7 @@ class OsFactory
         $helper->setUserAgent($agent);
 
         if ($helper->isFirefoxOs()) {
-            return new FirefoxAbstractOs();
+            return new FirefoxOs();
         }
 
         $safariHelper = new SafariHelper();
@@ -204,12 +204,12 @@ class OsFactory
         if ($utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;'))
             || $safariHelper->isMobileAsSafari()
         ) {
-            return new AndroidAbstractOs();
+            return new AndroidOs();
         }
 
         $doMatch = preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches);
         if ($doMatch && $matches[1] >= 4) {
-            return new AndroidAbstractOs();
+            return new AndroidOs();
         }
 
         if ($utils->checkIfContains('darwin', true)) {
@@ -236,7 +236,7 @@ class OsFactory
         if ($utils->checkIfContains(array('Macintosh', 'Mac_PowerPC', 'PPC', '68K'))
             && !$utils->checkIfContains('Mac OS X')
         ) {
-            return new MacintoshAbstractOs();
+            return new MacintoshOs();
         }
 
         if ($utils->checkIfContains(array('Macintosh', 'Mac OS X'))) {
@@ -260,15 +260,15 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('centos', true)) {
-            return new CentAbstractOs();
+            return new CentOs();
         }
 
         if ($utils->checkIfContains('CrOS')) {
-            return new CrAbstractOs();
+            return new CrOs();
         }
 
         if ($utils->checkIfContains('Joli OS')) {
-            return new JoliAbstractOs();
+            return new JoliOs();
         }
 
         if ($utils->checkIfContains('mandriva', true)) {
@@ -315,8 +315,8 @@ class OsFactory
             return new Aix();
         }
 
-        if ($utils->checkIfContains('AmigaAbstractOS')) {
-            return new AmigaAbstractOS();
+        if ($utils->checkIfContains('AmigaOS')) {
+            return new AmigaOS();
         }
 
         if ($utils->checkIfContains('BREW')) {
@@ -324,7 +324,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('playstation', true)) {
-            return new CellAbstractOs();
+            return new CellOs();
         }
 
         if ($utils->checkIfContains('cygwin', true)) {
@@ -368,11 +368,11 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('sunos', true)) {
-            return new SunAbstractOs();
+            return new SunOs();
         }
 
         if ($utils->checkIfContains('RISC')) {
-            return new RiscAbstractOs();
+            return new RiscOs();
         }
 
         if ($utils->checkIfContains('OpenVMS')) {
@@ -388,7 +388,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContainsAll(array('os/2', 'warp'), true)) {
-            return new AbstractOs2();
+            return new Os2();
         }
 
         if ($utils->checkIfContains(array('NETTV', 'HbbTV', 'SMART-TV'))) {
@@ -408,7 +408,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains(array('Nokia', 'Series40'))) {
-            return new NokiaAbstractOs();
+            return new NokiaOs();
         }
 
         if ($utils->checkIfContains('ruby', true)) {
@@ -416,7 +416,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('Palm OS')) {
-            return new PalmAbstractOs();
+            return new PalmOs();
         }
 
         if ($utils->checkIfContains('WyderOS')) {
@@ -444,6 +444,6 @@ class OsFactory
             return new Java();
         }
 
-        return new UnknownAbstractOs();
+        return new UnknownOs();
     }
 }

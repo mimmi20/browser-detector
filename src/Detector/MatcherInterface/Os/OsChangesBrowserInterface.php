@@ -28,15 +28,26 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Input;
+namespace BrowserDetector\Detector\MatcherInterface\Os;
+
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 
 /**
- * Base class for Exceptions of the Detector Inputs
+ * interface for all platforms/operating systems to detect
  *
+ * @category  BrowserDetector
  * @package   BrowserDetector
+ * @copyright 2012-2014 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Exception extends \Exception
+interface OsChangesBrowserInterface
 {
-    const LOCAL_FILE_MISSING       = 100;
-    const NO_RESULT_CLASS_RETURNED = 100;
+    /**
+     * changes properties of the browser depending on properties of the Os
+     *
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     *
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     */
+    public function changeBrowserProperties(AbstractBrowser $browser);
 }

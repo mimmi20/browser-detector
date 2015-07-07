@@ -30,34 +30,37 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc;
-use BrowserDetector\Detector\Browser\General\AndroidWebView;
-use BrowserDetector\Detector\Browser\General\Googlebot;
-use BrowserDetector\Detector\Browser\General\GooglebotMobileBot;
-use BrowserDetector\Detector\Browser\General\GooglePageSpeed;
-use BrowserDetector\Detector\Browser\General\GooglePageSpeedInsights;
-use BrowserDetector\Detector\Browser\Mobile\Android;
-use BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager;
-use BrowserDetector\Detector\Browser\Mobile\Chrome;
-use BrowserDetector\Detector\Browser\Mobile\Dalvik;
-use BrowserDetector\Detector\Browser\Mobile\Dolfin;
-use BrowserDetector\Detector\Browser\Mobile\Firefox;
-use BrowserDetector\Detector\Browser\Mobile\FlyFlow;
-use BrowserDetector\Detector\Browser\Mobile\Maxthon;
-use BrowserDetector\Detector\Browser\Mobile\MqqBrowser;
-use BrowserDetector\Detector\Browser\Mobile\NetFrontLifeBrowser;
-use BrowserDetector\Detector\Browser\Mobile\Opera;
-use BrowserDetector\Detector\Browser\Mobile\OperaMini;
-use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
-use BrowserDetector\Detector\Browser\Mobile\Silk;
-use BrowserDetector\Detector\Browser\Mobile\Ucweb;
-use BrowserDetector\Detector\Browser\Mobile\YaBrowser;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\AbstractBrowser;
+use BrowserDetector\Detector\Browser\YouWaveAndroidOnPc;
+use BrowserDetector\Detector\Browser\AndroidWebView;
+use BrowserDetector\Detector\Browser\Googlebot;
+use BrowserDetector\Detector\Browser\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\GooglePageSpeed;
+use BrowserDetector\Detector\Browser\GooglePageSpeedInsights;
+use BrowserDetector\Detector\Browser\Android;
+use BrowserDetector\Detector\Browser\AndroidDownloadManager;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\Dalvik;
+use BrowserDetector\Detector\Browser\Dolfin;
+use BrowserDetector\Detector\Browser\Firefox;
+use BrowserDetector\Detector\Browser\FlyFlow;
+use BrowserDetector\Detector\Browser\Maxthon;
+use BrowserDetector\Detector\Browser\MqqBrowser;
+use BrowserDetector\Detector\Browser\NetFrontLifeBrowser;
+use BrowserDetector\Detector\Browser\Opera;
+use BrowserDetector\Detector\Browser\OperaMini;
+use BrowserDetector\Detector\Browser\OperaMobile;
+use BrowserDetector\Detector\Browser\Silk;
+use BrowserDetector\Detector\Browser\Ucweb;
+use BrowserDetector\Detector\Browser\YaBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\Os\OsChangesBrowserInterface;
+use BrowserDetector\Detector\MatcherInterface\Os\OsChangesEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
 
 use BrowserDetector\Detector\Version;
@@ -75,7 +78,7 @@ use BrowserDetector\Helper\Safari as SafariHelper;
  */
 class AndroidOs
     extends AbstractOs
-    implements OsInterface
+    implements OsInterface, OsChangesEngineInterface, OsChangesBrowserInterface
 {
     /**
      * Returns true if this handler can handle the given $useragent
@@ -198,10 +201,9 @@ class AndroidOs
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractBrowser
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -233,28 +235,41 @@ class AndroidOs
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * changes properties of the browser depending on properties of the Os
      *
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractDevice  $device
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
      *
-     * @return \BrowserDetector\Detector\Os\AndroidAbstractOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractDevice $device
-    ) {
-        parent::detectDependProperties($browser, $engine, $device);
+    public function changeBrowserProperties(AbstractBrowser $browser)
+    {
+        if ($this->utils->checkIfContains(
+                array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
+            ) && !$this->utils->checkIfContains('Android')
+        ) {
+            $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
+        }
 
+        return $this;
+    }
+
+    /**
+     * changes properties of the engine depending on browser properties and depending on properties of the Os
+     *
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Device\AbstractDevice   $device
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function changeEngineProperties(AbstractEngine $engine, AbstractBrowser $browser, AbstractDevice $device)
+    {
         if (!$device->getDeviceType()->isTablet()) {
             $engine->setCapability('xhtml_send_mms_string', 'mms:');
             $engine->setCapability('xhtml_send_sms_string', 'sms:');
@@ -277,13 +292,6 @@ class AndroidOs
 
         if ('Android Webkit' == $browser->getName()) {
             $engine->setCapability('is_sencha_touch_ok', false);
-        }
-
-        if ($this->utils->checkIfContains(
-                array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
-            ) && !$this->utils->checkIfContains('Android')
-        ) {
-            $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
 
         return $this;

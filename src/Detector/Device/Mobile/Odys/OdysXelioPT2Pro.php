@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\Odys;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;

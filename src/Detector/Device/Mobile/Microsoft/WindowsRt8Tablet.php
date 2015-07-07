@@ -30,17 +30,19 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Microsoft;
 
-use BrowserDetector\Detector\Browser\General\MicrosoftOffice;
-use BrowserDetector\Detector\Browser\General\MicrosoftOutlook;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\AbstractBrowser;
+use BrowserDetector\Detector\Browser\MicrosoftOffice;
+use BrowserDetector\Detector\Browser\MicrosoftOutlook;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
-use BrowserDetector\Detector\AbstractEngine;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WindowsRt;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -169,10 +171,9 @@ class WindowsRt8Tablet
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -186,7 +187,7 @@ class WindowsRt8Tablet
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }
@@ -195,9 +196,9 @@ class WindowsRt8Tablet
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
      *
      * @return AbstractDevice
      */
@@ -206,8 +207,6 @@ class WindowsRt8Tablet
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         $engine->setCapability('xhtml_can_embed_video', 'none');
         $engine->setCapability('svgt_1_1', false);
 

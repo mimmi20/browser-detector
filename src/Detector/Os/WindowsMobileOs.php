@@ -30,12 +30,12 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\Mobile\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\Mobile\Opera;
-use BrowserDetector\Detector\Browser\Mobile\OperaMini;
-use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\Opera;
+use BrowserDetector\Detector\Browser\OperaMini;
+use BrowserDetector\Detector\Browser\OperaMobile;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -53,7 +53,7 @@ use BrowserDetector\Helper\Windows as WindowsHelper;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsMobileAbstractOs
+class WindowsMobileOs
     extends AbstractOs
     implements OsInterface
 {
@@ -151,10 +151,9 @@ class WindowsMobileAbstractOs
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -169,7 +168,7 @@ class WindowsMobileAbstractOs
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

@@ -30,10 +30,10 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Mobile\Android;
-use BrowserDetector\Detector\Browser\Mobile\Chrome;
-use BrowserDetector\Detector\Browser\Mobile\Dalvik;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\Android;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\Dalvik;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -104,7 +104,7 @@ class NintendoWii
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\AbstractBrowser
+     * @return null|\BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -117,7 +117,7 @@ class NintendoWii
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

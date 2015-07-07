@@ -30,25 +30,25 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Desktop\Chrome;
-use BrowserDetector\Detector\Browser\Desktop\Chromium;
-use BrowserDetector\Detector\Browser\Desktop\Firefox;
-use BrowserDetector\Detector\Browser\Desktop\Opera;
-use BrowserDetector\Detector\Browser\Desktop\YouWaveAndroidOnPc;
-use BrowserDetector\Detector\Browser\General\AdbeatBot;
-use BrowserDetector\Detector\Browser\General\Googlebot;
-use BrowserDetector\Detector\Browser\Mobile\Android;
-use BrowserDetector\Detector\Browser\Mobile\AndroidDownloadManager;
-use BrowserDetector\Detector\Browser\Mobile\Dalvik;
-use BrowserDetector\Detector\Browser\Mobile\Dolfin;
-use BrowserDetector\Detector\Browser\Mobile\MqqBrowser;
-use BrowserDetector\Detector\Browser\Mobile\NetFrontLifeBrowser;
-use BrowserDetector\Detector\Browser\Mobile\OperaMini;
-use BrowserDetector\Detector\Browser\Mobile\OperaMobile;
-use BrowserDetector\Detector\Browser\Mobile\Silk;
-use BrowserDetector\Detector\Browser\Mobile\Ucweb;
-use BrowserDetector\Detector\Browser\Mobile\YaBrowser;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\Chromium;
+use BrowserDetector\Detector\Browser\Firefox;
+use BrowserDetector\Detector\Browser\Opera;
+use BrowserDetector\Detector\Browser\YouWaveAndroidOnPc;
+use BrowserDetector\Detector\Browser\AdbeatBot;
+use BrowserDetector\Detector\Browser\Googlebot;
+use BrowserDetector\Detector\Browser\Android;
+use BrowserDetector\Detector\Browser\AndroidDownloadManager;
+use BrowserDetector\Detector\Browser\Dalvik;
+use BrowserDetector\Detector\Browser\Dolfin;
+use BrowserDetector\Detector\Browser\MqqBrowser;
+use BrowserDetector\Detector\Browser\NetFrontLifeBrowser;
+use BrowserDetector\Detector\Browser\OperaMini;
+use BrowserDetector\Detector\Browser\OperaMobile;
+use BrowserDetector\Detector\Browser\Silk;
+use BrowserDetector\Detector\Browser\Ucweb;
+use BrowserDetector\Detector\Browser\YaBrowser;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
@@ -132,10 +132,9 @@ class Ubuntu
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractBrowser
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -164,7 +163,7 @@ class Ubuntu
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -103,7 +103,7 @@ class Micromax
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\AbstractDevice
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
      */
     public function detectDevice()
     {

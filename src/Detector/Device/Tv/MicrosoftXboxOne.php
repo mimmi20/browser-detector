@@ -30,16 +30,16 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
-use BrowserDetector\Detector\Browser\Tv\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\Tv\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\UnknownAbstractBrowser;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
+use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\UnknownAbstractOs;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\Windows;
-use BrowserDetector\Detector\Os\WindowsPhoneAbstractOs;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -146,17 +146,17 @@ class MicrosoftXboxOne
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Os\AbstractOs
      */
     public function detectOs()
     {
         $os = array(
-            new WindowsPhoneAbstractOs(),
+            new WindowsPhoneOs(),
             new Windows()
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownAbstractOs());
+        $chain->setDefaultHandler(new UnknownOs());
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
@@ -164,10 +164,9 @@ class MicrosoftXboxOne
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
+     * returns the Browser which used on the device
      *
-     * @return null|\BrowserDetector\Detector\AbstractOs
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public function detectBrowser()
     {
@@ -179,7 +178,7 @@ class MicrosoftXboxOne
         $chain = new Chain();
         $chain->setUserAgent($this->useragent);
         $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownAbstractBrowser());
+        $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
     }

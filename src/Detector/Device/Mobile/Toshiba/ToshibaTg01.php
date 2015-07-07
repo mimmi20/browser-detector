@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Device\Mobile\Toshiba;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\AbstractDevice;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidAbstractOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -140,11 +140,11 @@ class ToshibaTg01
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidAbstractOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        $handler = new AndroidAbstractOs();
+        $handler = new AndroidOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;
