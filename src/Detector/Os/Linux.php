@@ -49,55 +49,6 @@ class Linux
     implements OsInterface
 {
     /**
-     * Returns true if this handler can handle the given $useragent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array('Linux', 'linux', 'X11'))) {
-            return false;
-        }
-
-        $isNotReallyTheDefaultLinux = array(
-            // special Linux versions
-            'debian',
-            'ubuntu',
-            'centos',
-            'cros',
-            'joli os',
-            'mandriva',
-            'mint',
-            'suse',
-            'fedora',
-            'gentoo',
-            'redhat',
-            'red hat',
-            'slackware',
-            'nettv',
-            'hbbtv',
-            'hpwos',
-            'smart-tv',
-            'ventana',
-            'moblin',
-            // other OS which are using X11
-            'bsd',
-            'sunos',
-            'hp-ux'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyTheDefaultLinux, true)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('maemo', 'linux armv', 'like android', 'linux/x2/r1'), true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -128,15 +79,5 @@ class Linux
     public function getManufacturer()
     {
         return new Company\LinuxFoundation();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 5846999;
     }
 }

@@ -54,13 +54,6 @@ interface EngineInterface
     public function setUserAgent($userAgent);
 
     /**
-     * Returns true if this handler can handle the given useragent
-     *
-     * @return bool
-     */
-    public function canHandle();
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -100,22 +93,6 @@ interface EngineInterface
      * @return array All Capability values
      */
     public function getCapabilities();
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractOs $os,
-        AbstractDevice $device,
-        AbstractBrowser $browser
-    );
 
     /**
      * gets the name of the platform

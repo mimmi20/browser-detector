@@ -558,16 +558,6 @@ abstract class AbstractEngine
     }
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        return false;
-    }
-
-    /**
      * detects the engine version from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -678,23 +668,5 @@ abstract class AbstractEngine
     public function getCapabilities()
     {
         return $this->properties;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     *
-     * @return \BrowserDetector\Detector\Engine\AbstractEngine
-     */
-    public function detectDependProperties(
-        AbstractOs $os,
-        AbstractDevice $device,
-        AbstractBrowser $browser
-    ) {
-        return $this;
     }
 }

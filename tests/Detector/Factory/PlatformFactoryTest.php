@@ -15,14 +15,14 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetect($agent, $platform, $version)
     {
-        /** @var \BrowserDetector\Detector\Platform $result */
+        /** @var \BrowserDetector\Detector\Os\AbstractOs $result */
         $result = PlatformFactory::detect($agent);
 
-        self::assertInstanceOf('\BrowserDetector\Detector\Platform', $result);
+        self::assertInstanceOf('\BrowserDetector\Detector\Os\AbstractOs', $result);
         self::assertSame($platform, $result->getName());
 
-        self::assertInstanceOf('\BrowserDetector\Detector\Version', $result->getVersion());
-        self::assertSame($version, $result->getVersion()->getVersion(Version::MAJORMINOR));
+        self::assertInstanceOf('\BrowserDetector\Detector\Version', $result->detectVersion());
+        self::assertSame($version, $result->detectVersion()->getVersion(Version::MAJORMINOR));
 
         self::assertInstanceOf('\BrowserDetector\Detector\Company\CompanyInterface', $result->getManufacturer());
     }

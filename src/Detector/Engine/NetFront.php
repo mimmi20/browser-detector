@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 
 /**
@@ -198,29 +197,6 @@ class NetFront
         'css_rounded_corners'                             => null,
         'css_supports_width_as_percentage'                => null,
     );
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array('NetFront/', 'NF/', 'NetFrontLifeAbstractBrowser/', 'NF3'))) {
-            return false;
-        }
-
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
-            return false;
-        }
-
-        return true;
-    }
 
     /**
      * gets the name of the platform

@@ -45,7 +45,7 @@ use BrowserDetector\Helper\Windows as WindowsHelper;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsRt
+class WindowsCe
     extends AbstractOs
     implements OsInterface
 {
@@ -56,7 +56,7 @@ class WindowsRt
      */
     public function getName()
     {
-        return 'Windows RT';
+        return 'Windows CE';
     }
 
     /**

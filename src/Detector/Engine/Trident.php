@@ -28,11 +28,11 @@
 namespace BrowserDetector\Detector\Engine;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
-
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
 
 /**
@@ -200,53 +200,6 @@ class Trident
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        $noTridentEngines = array(
-            'KHTML',
-            'AppleWebKit',
-            'WebKit',
-            'Presto',
-            'RGAnalytics',
-            'libwww',
-            'iPhone',
-            'Firefox',
-            'Mozilla/5.0 (en)',
-            'Mac_PowerPC',
-            'Opera'
-        );
-
-        if ($this->utils->checkIfContains($noTridentEngines)) {
-            return false;
-        }
-
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            if ($matches[1] < 7 && $this->utils->checkIfContains('Gecko')) {
-                return false;
-            }
-
-            if ($matches[1] == 7 && !$this->utils->checkIfContains('Gecko')) {
-                return false;
-            }
-
-            return true;
-        }
-
-        if ($this->utils->checkIfContains('Mozilla/') && $this->utils->checkIfContains(array('MSIE', 'Trident'))
-        ) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * gets the name of the platform
      *
      * @return string
@@ -336,8 +289,6 @@ class Trident
         AbstractDevice $device,
         AbstractBrowser $browser
     ) {
-        parent::detectDependProperties($os, $device, $browser);
-
         if ($device->getDeviceType()->isMobile()
         ) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');

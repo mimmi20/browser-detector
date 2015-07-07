@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 use BrowserDetector\Detector\Version;
 
@@ -199,24 +198,6 @@ class Webkit
         'css_rounded_corners'                             => 'webkit',
         'css_supports_width_as_percentage'                => true,
     );
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array('KHTML', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Safari'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Trident', 'Presto', 'Konqueror', 'U3/'))) {
-            return false;
-        }
-
-        return true;
-    }
 
     /**
      * gets the name of the platform

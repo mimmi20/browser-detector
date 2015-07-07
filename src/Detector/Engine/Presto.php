@@ -31,11 +31,11 @@
 namespace BrowserDetector\Detector\Engine;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
-
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
 
 /**
@@ -204,24 +204,6 @@ class Presto
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array('Presto', 'Opera'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('KHTML', 'Trident', 'Gecko'))) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the platform
      *
      * @return string
@@ -281,8 +263,6 @@ class Presto
         AbstractDevice $device,
         AbstractBrowser $browser
     ) {
-        parent::detectDependProperties($os, $device, $browser);
-
         if ($device->getDeviceType()->isMobile()) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');
         } else {

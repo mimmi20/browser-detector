@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Platform;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
@@ -51,11 +52,11 @@ class EngineFactory implements FactoryInterface
      * Gets the information about the rendering engine by User Agent
      *
      * @param string                             $agent
-     * @param \BrowserDetector\Detector\Platform $os
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
-     * @return \BrowserDetector\Detector\Engine
+     * @return \BrowserDetector\Detector\Engine\AbstractEngine
      */
-    public static function detect($agent, Platform $os = null)
+    public static function detect($agent, AbstractOs $os = null)
     {
         $utils = new Utils();
         $utils->setUserAgent($agent);
@@ -87,7 +88,7 @@ class EngineFactory implements FactoryInterface
                 $engineKey = 'WebKit';
             }
         } elseif (preg_match('/(KHTML|Konqueror)/', $agent)) {
-            $engineKey = 'KHTML';
+            $engineKey = 'Khtml';
         } elseif (preg_match('/(tasman)/i', $agent)
             || $utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
         ) {
@@ -108,31 +109,12 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'UnknownEngine';
         }
 
-        $allEnginesProperties = require __DIR__ . '/../../../data/properties/engines.php';
+        $engineName = '\\BrowserDetector\\Detector\\Engine\\' . $engineKey;
 
-        if (!isset($allEnginesProperties[$engineKey])) {
-            $engineKey = 'UnknownEngine';
-        }
+        /** @var \BrowserDetector\Detector\Engine\AbstractEngine $engine */
+        $engine = new $engineName();
 
-        $engineProperties = $allEnginesProperties[$engineKey];
-        $manufacturerName = '\\BrowserDetector\\Detector\\Company\\' . $engineProperties['company'];
-        $company          = new $manufacturerName();
-
-        $detector = new Version();
-        $detector->setUserAgent($agent);
-
-        if (isset($engineProperties['version'])) {
-            $detector->detectVersion($engineProperties['version']);
-        } else {
-            $detector->setVersion('0.0');
-        }
-
-        return new Engine(
-            $engineProperties['name'],
-            $company,
-            $detector,
-            $engineProperties['transcoder'],
-            $engineProperties['properties']
-        );
+        $engine->setUserAgent($agent);
+        return $engine;
     }
 }

@@ -49,20 +49,6 @@ class Fedora
     implements OsInterface
 {
     /**
-     * Returns true if this handler can handle the given $useragent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('fedora', true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * returns the name of the operating system/platform
      *
      * @return string
@@ -93,15 +79,5 @@ class Fedora
     public function getManufacturer()
     {
         return new Company\Redhat();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 27046;
     }
 }

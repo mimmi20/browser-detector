@@ -204,24 +204,6 @@ class Gecko
     );
 
     /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array('Gecko', 'Firefox'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('KHTML', 'AppleWebKit', 'WebKit', 'Presto', 'Trident'))) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the name of the platform
      *
      * @return string

@@ -28,11 +28,11 @@
 namespace BrowserDetector\Detector\Engine;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
-
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
 
 /**
@@ -204,7 +204,7 @@ class Edge extends AbstractEngine implements EngineInterface
      */
     public function getName()
     {
-        return 'Trident';
+        return 'Edge';
     }
 
     /**
@@ -228,35 +228,10 @@ class Edge extends AbstractEngine implements EngineInterface
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->useragent, $matches);
+        $doMatch = preg_match('/Edge\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
             return $detector->setVersion($matches[1]);
-        }
-
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            $version = '';
-
-            switch ((float)$matches[1]) {
-                case 11.0:
-                    $version = '7.0';
-                    break;
-                case 10.0:
-                    $version = '6.0';
-                    break;
-                case 9.0:
-                    $version = '5.0';
-                    break;
-                case 8.0:
-                    $version = '4.0';
-                    break;
-                default:
-                    // do nothing here
-            }
-
-            return $detector->setVersion($version);
         }
 
         return $detector->setVersion('');
@@ -277,8 +252,6 @@ class Edge extends AbstractEngine implements EngineInterface
         AbstractDevice $device,
         AbstractBrowser $browser
     ) {
-        parent::detectDependProperties($os, $device, $browser);
-
         if ($device->getDeviceType()->isMobile()
         ) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');

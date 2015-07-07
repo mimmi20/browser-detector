@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 
 /**
@@ -195,16 +194,6 @@ class UnknownEngine
         'css_rounded_corners'                             => null,
         'css_supports_width_as_percentage'                => null,
     );
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        return true;
-    }
 
     /**
      * gets the name of the platform

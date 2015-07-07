@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 
 /**
@@ -198,38 +197,6 @@ class BlackBerry
         'css_rounded_corners'                             => 'none',
         'css_supports_width_as_percentage'                => true,
     );
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('BlackBerry')) {
-            return false;
-        }
-
-        $noBlackBerryEngines = array(
-            'KHTML',
-            'AppleWebKit',
-            'WebKit',
-            'Gecko',
-            'Presto',
-            'RGAnalytics',
-            'libwww',
-            'iPhone',
-            'Firefox',
-            'Mozilla/5.0 (en)',
-            'Trident'
-        );
-
-        if ($this->utils->checkIfContains($noBlackBerryEngines)) {
-            return false;
-        }
-
-        return true;
-    }
 
     /**
      * gets the name of the platform

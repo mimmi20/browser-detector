@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 
 /**
@@ -198,39 +197,6 @@ class Tasman
         'css_rounded_corners'                             => null,
         'css_supports_width_as_percentage'                => null,
     );
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        $noTridentEngines = array(
-            'KHTML',
-            'AppleWebKit',
-            'WebKit',
-            'Gecko',
-            'Presto',
-            'RGAnalytics',
-            'libwww',
-            'iPhone',
-            'Firefox',
-            'Mozilla/5.0 (en)',
-            'Trident'
-        );
-
-        if ($this->utils->checkIfContains($noTridentEngines)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('Mozilla/') && $this->utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
-        ) {
-            return true;
-        }
-
-        return false;
-    }
 
     /**
      * gets the name of the platform
