@@ -31,10 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -168,15 +170,11 @@ class HtcT9292
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         // wurflkey: htc_t9292_ver1_subos75
         $engine->setCapability('bmp', false);
         $engine->setCapability('wbmp', false);
         $engine->setCapability('tiff', false);
         $engine->setCapability('image_inlining', false);
-
-        //$engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;
     }

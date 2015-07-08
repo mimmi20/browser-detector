@@ -74,7 +74,7 @@ class SamsungBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains('SamsungAbstractBrowser')) {
+        if ($this->utils->checkIfContains('SamsungBrowser')) {
             return true;
         }
 
@@ -121,7 +121,7 @@ class SamsungBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SamsungAbstractBrowser');
+        $searches = array('SamsungBrowser');
 
         return $detector->detectVersion($searches);
     }

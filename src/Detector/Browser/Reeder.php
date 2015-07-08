@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Puffin
+class Reeder
     extends AbstractBrowser
 {
     /**
@@ -56,7 +56,7 @@ class Puffin
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -75,7 +75,7 @@ class Puffin
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Puffin', 'Puffin%20Free'))) {
+        if (!$this->utils->checkIfContains('Reeder')) {
             return false;
         }
 
@@ -89,7 +89,7 @@ class Puffin
      */
     public function getName()
     {
-        return 'Puffin';
+        return 'Reeder';
     }
 
     /**
@@ -122,7 +122,7 @@ class Puffin
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Puffin', 'Puffin%20Free');
+        $searches = array('Reeder');
 
         return $detector->detectVersion($searches);
     }
@@ -134,7 +134,7 @@ class Puffin
      */
     public function getWeight()
     {
-        return 214;
+        return 4;
     }
 
     /**

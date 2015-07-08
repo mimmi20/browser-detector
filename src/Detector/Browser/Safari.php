@@ -30,12 +30,11 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
@@ -203,7 +202,7 @@ class Safari
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\Safari
+     * @return \BrowserDetector\Detector\Browser\Safari
      */
     public function detectDependProperties(
         AbstractEngine $engine,
@@ -220,8 +219,6 @@ class Safari
         } else {
             $this->setCapability('rss_support', false);
         }
-
-        parent::detectDependProperties($engine, $os, $device);
 
         $osVersion = (float)$os->detectVersion()->getVersion(
             Version::MAJORMINOR

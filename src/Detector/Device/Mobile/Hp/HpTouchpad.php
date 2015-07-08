@@ -31,11 +31,13 @@
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WebOs;
@@ -180,8 +182,6 @@ class HpTouchpad
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         $engine->setCapability('xhtml_avoid_accesskeys', false);
         $engine->setCapability('xhtml_supports_forms_in_table', false);
         $engine->setCapability('xhtml_allows_disabled_form_elements', false);

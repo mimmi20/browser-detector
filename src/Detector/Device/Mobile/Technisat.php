@@ -39,7 +39,7 @@ use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -178,7 +178,7 @@ class Technisat
             new AndroidOs(),
             new Java(),
             new Symbianos(),
-            new WindowsMobileAbstractOs(),
+            new WindowsMobileOs(),
             new WindowsPhoneOs()
         );
 

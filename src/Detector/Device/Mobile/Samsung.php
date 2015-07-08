@@ -42,7 +42,7 @@ use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Os\Linux;
 use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -221,7 +221,7 @@ class Samsung
             new Brew(),
             new Java(),
             new Symbianos(),
-            new WindowsMobileAbstractOs(),
+            new WindowsMobileOs(),
             new WindowsPhoneOs(),
             new Linux()
         );

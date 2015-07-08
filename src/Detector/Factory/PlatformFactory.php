@@ -128,7 +128,7 @@ class PlatformFactory implements FactoryInterface
         } elseif (preg_match('/(Macintosh|Mac_PowerPC|PPC|68K)/', $agent)
             && !$utils->checkIfContains('Mac OS X')
         ) {
-            $platformKey = 'Macintosh';
+            $platformKey = 'MacintoshOs';
         } elseif (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
             $platformKey = 'Macosx';
         } elseif ($utils->checkIfContains('debian', true)) {

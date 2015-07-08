@@ -47,7 +47,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome
+class Kenshoo
     extends AbstractBrowser
 {
     /**
@@ -80,78 +80,7 @@ class Chrome
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'))) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Version/'))) {
-            return false;
-        }
-
-        $isNotReallyAnChrome = array(
-            // using also the KHTML rendering engine
-            'Arora',
-            'Chromium',
-            'Comodo Dragon',
-            'Dragon',
-            'Flock',
-            'Galeon',
-            'Google Earth',
-            'Iron',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Midori',
-            'OPR',
-            'PaleMoon',
-            'RockMelt',
-            'Silk',
-            'YaAbstractBrowser',
-            'Firefox',
-            'Iceweasel',
-            'Edge',
-            'CoolNovo',
-            'Amigo',
-            'Viera',
-            'Vivaldi',
-            'SamsungBrowser',
-            'Puffin',
-            'WhiteHat Aviator',
-            ' SE ',
-            'Nichrome',
-            'MxNitro',
-            'LBBROWSER',
-            'Seznam',
-            'Diga',
-            'Kenshoo',
-            // Bots trying to be a Chrome
-            'PagePeeker',
-            'Google Web Preview',
-            'Google Wireless Transcoder',
-            'Google Page Speed',
-            'Google Markup Tester',
-            'HubSpot Webcrawler',
-            'GomezAgent',
-            'TagInspector',
-            '360Spider',
-            // Fakes
-            'Mac; Mac OS '
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
-            return false;
-        }
-
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(array('Chrome'));
-
-        if (1 <= $detector->getVersion(Version::MAJORONLY) && 0 != $detector->getVersion(Version::MINORONLY)) {
+        if (!$this->utils->checkIfContains('Kenshoo')) {
             return false;
         }
 
@@ -165,7 +94,7 @@ class Chrome
      */
     public function getName()
     {
-        return 'Chrome';
+        return 'Kenshoo';
     }
 
     /**
@@ -175,7 +104,7 @@ class Chrome
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company\Unknown();
     }
 
     /**
@@ -199,7 +128,7 @@ class Chrome
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Chrome', 'CrMo', 'CriOS');
+        $searches = array('Kenshoo');
 
         return $detector->detectVersion($searches);
     }
@@ -211,24 +140,23 @@ class Chrome
      */
     public function getWeight()
     {
-        return 116398328;
+        return 302204;
     }
 
     /**
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs $os
-     *
      * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
      */
-    public function detectEngine(AbstractOs $os = null)
+    public function detectEngine()
     {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+        $chrome = new Chrome();
+        $chrome->setUserAgent($this->useragent);
 
-        if (null !== $os && in_array($os->getName(), array('iOS'))) {
-            $engine = new Webkit();
-        } elseif ($version >= 28) {
+        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if ($chromeVersion >= 28) {
             $engine = new Blink();
         } else {
             $engine = new Webkit();
@@ -247,7 +175,7 @@ class Chrome
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\Chrome
+     * @return \BrowserDetector\Detector\Browser\Kenshoo
      */
     public function detectDependProperties(
         AbstractEngine $engine,

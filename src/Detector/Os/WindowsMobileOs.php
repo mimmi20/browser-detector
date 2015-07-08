@@ -39,10 +39,7 @@ use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
-
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\Windows as WindowsHelper;
 
 /**
  * MSIEAgentHandler

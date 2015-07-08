@@ -32,6 +32,8 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
+use BrowserDetector\Helper\Classname;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * Browser detection class
@@ -47,20 +49,113 @@ class BrowserFactory
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $agent
+     * @param string                               $agent
+     * @param \WurflCache\Adapter\AdapterInterface $cache
      *
      * @return \BrowserDetector\Detector\MatcherInterface\BrowserInterface
      */
-    public static function detect($agent)
+    public static function detect($agent, AdapterInterface $cache = null)
     {
-        $chain = new Chain();
-        $chain->setUserAgent($agent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Detector' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler(new UnknownBrowser());
+        foreach (self::getChain($cache) as $browser) {
+            /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $browser */
+            $browser->setUserAgent($agent);
 
-        return $chain->detect();
+            if ($browser->canHandle()) {
+                return $browser;
+            }
+        }
+
+        $browser = new UnknownBrowser();
+        $browser->setUserAgent($agent);
+
+        return $browser;
+    }
+
+    /**
+     * @param \WurflCache\Adapter\AdapterInterface $cache
+     *
+     * @return \Generator
+     */
+    private static function getChain(AdapterInterface $cache = null)
+    {
+        static $list = null;
+
+        if (null === $list) {
+            if (null === $cache) {
+                $list = self::buildBrowserChain();
+            } else {
+                $success = null;
+                $list    = $cache->getItem('BrowserChain', $success);
+
+                if (!$success) {
+                    $list = self::buildBrowserChain();
+
+                    $cache->setItem('BrowserChain', $list);
+                }
+            }
+        }
+
+        foreach ($list as $browser) {
+            yield $browser;
+        }
+    }
+
+    /**
+     * creates the detection chain for browsers
+     *
+     * @return array
+     */
+    private static function buildBrowserChain()
+    {
+        $sourceDirectory = __DIR__ . '/../Browser/';
+
+        $utils    = new Classname();
+        $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
+        $list     = array();
+
+        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
+            /** @var $file \SplFileInfo */
+            if (!$file->isFile()
+                || $file->getExtension() != 'php'
+                || 'AbstractBrowser' == $file->getBasename('.php')
+            ) {
+                continue;
+            }
+
+            $className = $utils->getClassNameFromFile(
+                $file->getBasename('.php'),
+                '\BrowserDetector\Detector\Browser',
+                true
+            );
+
+            try {
+                $handler = new $className();
+            } catch (\Exception $e) {
+                continue;
+            }
+
+            $list[] = $handler;
+        }
+
+        $names   = array();
+        $weights = array();
+
+        foreach ($list as $key => $entry) {
+            /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $entry */
+            $names[$key]   = $entry->getName();
+            $weights[$key] = $entry->getWeight();
+        }
+
+        array_multisort(
+            $weights,
+            SORT_DESC,
+            SORT_NUMERIC,
+            $names,
+            SORT_ASC,
+            SORT_NATURAL,
+            $list
+        );
+
+        return $list;
     }
 }

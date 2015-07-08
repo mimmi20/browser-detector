@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Browser\Boxee;
-use BrowserDetector\Detector\Browser\bbTv;
+use BrowserDetector\Detector\Browser\HbbTv;
 use BrowserDetector\Detector\Browser\InettvBrowser;
 use BrowserDetector\Detector\Browser\NetTv;
 use BrowserDetector\Detector\Browser\Opera;

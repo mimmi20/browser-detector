@@ -30,11 +30,10 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +41,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2014 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Puffin
+class SamsungWebView
     extends AbstractBrowser
 {
     /**
@@ -56,8 +55,8 @@ class Puffin
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -75,7 +74,14 @@ class Puffin
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Puffin', 'Puffin%20Free'))) {
+        $safariHelper = new SafariHelper();
+        $safariHelper->setUserAgent($this->useragent);
+
+        if (!$safariHelper->isSafari()) {
+            return false;
+        }
+
+        if (!$this->utils->checkIfContainsAll(array('Safari', 'Tizen'))) {
             return false;
         }
 
@@ -89,7 +95,7 @@ class Puffin
      */
     public function getName()
     {
-        return 'Puffin';
+        return 'Samsung WebView';
     }
 
     /**
@@ -99,7 +105,7 @@ class Puffin
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Samsung();
     }
 
     /**
@@ -122,7 +128,7 @@ class Puffin
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Puffin', 'Puffin%20Free');
+        $searches = array('SamsungBrowser');
 
         return $detector->detectVersion($searches);
     }
@@ -134,20 +140,6 @@ class Puffin
      */
     public function getWeight()
     {
-        return 214;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
-     */
-    public function detectEngine()
-    {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return 6943;
     }
 }

@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
-use BrowserDetector\Detector\Os\RimAbstractOs;
+use BrowserDetector\Detector\Os\RimOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
@@ -145,11 +145,11 @@ class BlackBerry9900
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\RimAbstractOs
+     * @return \BrowserDetector\Detector\Os\RimOs
      */
     public function detectOs()
     {
-        $handler = new RimAbstractOs();
+        $handler = new RimOs();
         $handler->setUseragent($this->useragent);
 
         return $handler;

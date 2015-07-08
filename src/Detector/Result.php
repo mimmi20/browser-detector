@@ -1767,7 +1767,10 @@ class Result
                         $value = $detector->getBits();
                         break;
                     case 'device_os_bits':
-                        $value = $os->getBits();
+                        $detector = new Bits\Os();
+                        $detector->setUserAgent($this->getCapability('useragent', false));
+
+                        $value = $detector->getBits();
                         break;
                     case 'device_os':
                     case 'controlcap_advertised_device_os':
@@ -1784,7 +1787,7 @@ class Result
                         break;
                     case 'device_os_version':
                     case 'controlcap_advertised_device_os_version':
-                        $value = $os->getVersion();
+                        $value = $os->detectVersion();
                         break;
                     case 'device_os_manufacturer':
                         $value = $os->getManufacturer();
@@ -1823,7 +1826,7 @@ class Result
                         $value = $value->getBrandName();
                         break;
                     case 'renderingengine_version':
-                        $value = $engine->getVersion();
+                        $value = $engine->detectVersion();
                         break;
                     case 'renderingengine_name':
                         $value = $engine->getName();
@@ -1932,7 +1935,7 @@ class Result
                         } elseif ($this->getCapability('resolution_width', false) < 320) {
                             $value = false;
                         } else {
-                            $os_ver = (float)$os->getVersion()->getVersion(Version::MAJORMINOR);
+                            $os_ver = (float)$os->detectVersion()->getVersion(Version::MAJORMINOR);
 
                             switch ($os->getName()) {
                                 case 'iOS':

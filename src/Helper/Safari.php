@@ -140,6 +140,7 @@ class Safari
             'wkhtmltoimage',
             'wkhtmltopdf',
             'MicroMessenger',
+            'DiigoBrowser',
             //Bots
             'GSA',
             'GoogleBot',
@@ -159,6 +160,7 @@ class Safari
             //mobile Version
             'Tablet',
             'Android',
+            'Tizen',
             // Fakes
             'Mac; Mac OS '
         );

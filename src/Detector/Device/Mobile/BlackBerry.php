@@ -36,10 +36,10 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\RimAbstractOs;
-use BrowserDetector\Detector\Os\RimTabletAbstractOs;
+use BrowserDetector\Detector\Os\RimOs;
+use BrowserDetector\Detector\Os\RimTabletOs;
 use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -171,9 +171,9 @@ class BlackBerry
     public function detectOs()
     {
         $os = array(
-            new RimAbstractOs(),
-            new RimTabletAbstractOs(),
-            new WindowsMobileAbstractOs(),
+            new RimOs(),
+            new RimTabletOs(),
+            new WindowsMobileOs(),
             new AndroidOs()
         );
 

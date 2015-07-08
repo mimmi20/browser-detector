@@ -62,10 +62,7 @@ use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Os\OsChangesBrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\Os\OsChangesEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\OsInterface;
-
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
-use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * MSIEAgentHandler

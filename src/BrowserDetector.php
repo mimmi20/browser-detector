@@ -188,7 +188,7 @@ class BrowserDetector
             $platform = PlatformFactory::detect($request->getBrowserUserAgent());
 
             // detect the browser which is used
-            $browser = BrowserFactory::detect($request->getBrowserUserAgent());
+            $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $this->getCache());
 
             // detect the engine which is used in the browser
             $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);

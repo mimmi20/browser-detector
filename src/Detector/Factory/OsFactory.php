@@ -73,8 +73,8 @@ use BrowserDetector\Detector\Os\OpenVms;
 use BrowserDetector\Detector\Os\Os2;
 use BrowserDetector\Detector\Os\PalmOs;
 use BrowserDetector\Detector\Os\Redhat;
-use BrowserDetector\Detector\Os\RimAbstractOs;
-use BrowserDetector\Detector\Os\RimTabletAbstractOs;
+use BrowserDetector\Detector\Os\RimOs;
+use BrowserDetector\Detector\Os\RimTabletOs;
 use BrowserDetector\Detector\Os\RiscOs;
 use BrowserDetector\Detector\Os\Ruby;
 use BrowserDetector\Detector\Os\Slackware;
@@ -90,7 +90,7 @@ use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\Ventana;
 use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Os\Windows;
-use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Os\WindowsRt;
 use BrowserDetector\Detector\Os\WyderAbstractOs;
@@ -147,7 +147,7 @@ class OsFactory
                 return new WindowsPhoneOs();
             }
 
-            return new WindowsMobileAbstractOs();
+            return new WindowsMobileOs();
         }
 
         if (!$windowsHelper->isMobileWindows()
@@ -180,7 +180,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains(array('BlackBerry', 'BB10'))) {
-            return new RimAbstractOs();
+            return new RimOs();
         }
 
         if ($utils->checkIfContains(array('WebOS', 'hpwOS', 'webOS'))) {
@@ -256,7 +256,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContainsAll(array('RIM Tablet'))) {
-            return new RimTabletAbstractOs();
+            return new RimTabletOs();
         }
 
         if ($utils->checkIfContains('centos', true)) {

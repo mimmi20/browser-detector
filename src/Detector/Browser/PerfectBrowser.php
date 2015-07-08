@@ -75,7 +75,7 @@ class PerfectBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Perfect Browser')) {
+        if (!$this->utils->checkIfContains(array('Perfect Browser', 'Perfect%20Browser'))) {
             return false;
         }
 
@@ -122,7 +122,7 @@ class PerfectBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Perfect Browser', 'Perfect Browser\-iPad');
+        $searches = array('Perfect Browser', 'Perfect Browser\-iPad', 'Perfect%20Browser');
 
         return $detector->detectVersion($searches);
     }

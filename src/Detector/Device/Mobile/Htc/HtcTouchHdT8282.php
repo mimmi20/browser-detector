@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -148,7 +148,7 @@ class HtcTouchHdT8282
     public function detectOs()
     {
         $os = array(
-            new WindowsMobileAbstractOs(),
+            new WindowsMobileOs(),
             new AndroidOs()
         );
 

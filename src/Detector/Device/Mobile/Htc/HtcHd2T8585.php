@@ -31,14 +31,16 @@
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileAbstractOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -151,7 +153,7 @@ class HtcHd2T8585
     public function detectOs()
     {
         $os = array(
-            new WindowsMobileAbstractOs(),
+            new WindowsMobileOs(),
             new AndroidOs()
         );
 
@@ -187,8 +189,6 @@ class HtcHd2T8585
             $this->setCapability('physical_screen_height', 94);
             $this->setCapability('dual_orientation', true);
         }
-
-        parent::detectDependProperties($browser, $engine, $os);
 
         return $this;
     }
