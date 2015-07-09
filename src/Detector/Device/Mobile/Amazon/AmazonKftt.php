@@ -31,11 +31,13 @@
 namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Maemo;
 use BrowserDetector\Detector\Os\UnknownOs;
@@ -180,8 +182,6 @@ class AmazonKftt
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         if ('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName()) {
             $this->setCapability('wurflKey', 'amazon_kindle_fire_hd7_ver1_subuanosilk');
         }

@@ -31,10 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -169,10 +171,7 @@ class HtcA8181Desire
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         $engine->setCapability('bmp', true);
-        // $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

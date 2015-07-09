@@ -31,10 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -172,12 +174,8 @@ class AsusPadFone
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         // wurflkey: asus_padfone_ver1
         $engine->setCapability('bmp', true);
-
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;
     }

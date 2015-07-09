@@ -129,6 +129,7 @@ class BrowserFactory
             );
 
             try {
+                /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $handler */
                 $handler = new $className();
             } catch (\Exception $e) {
                 continue;

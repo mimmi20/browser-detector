@@ -31,10 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\Symbianos;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -169,8 +171,6 @@ class NokiaN800
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         if ($this->utils->checkIfContains(array('Series60/5.3'))) {
             $this->setCapability('wurflKey', 'nokia_n8_00_ver1_subs53');
             $this->setCapability('uaprof', 'http://nds1.nds.nokia.com/uaprof/NN8-00r310-3G.xml');

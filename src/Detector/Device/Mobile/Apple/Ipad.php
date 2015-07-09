@@ -31,11 +31,13 @@
 namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\Darwin;
 use BrowserDetector\Detector\Os\Ios;
 use BrowserDetector\Detector\Os\UnknownOs;
@@ -184,8 +186,6 @@ class Ipad
         );
 
         $this->setCapability('model_extra_info', $osVersion);
-
-        parent::detectDependProperties($browser, $engine, $os);
 
         $engine->setCapability('xhtml_make_phone_call_string', 'none');
         $engine->setCapability('supports_java_applets', true);

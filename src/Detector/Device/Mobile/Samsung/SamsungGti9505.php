@@ -31,10 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -173,8 +175,6 @@ class SamsungGti9505
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         $engine->setCapability('html_wi_imode_compact_generic', false);
         $engine->setCapability('xhtml_avoid_accesskeys', true);
         $engine->setCapability('xhtml_supports_forms_in_table', true);
