@@ -66,7 +66,7 @@ use BrowserDetector\Detector\Os\MeeGo;
 use BrowserDetector\Detector\Os\Mint;
 use BrowserDetector\Detector\Os\Moblin;
 use BrowserDetector\Detector\Os\NetBsd;
-use BrowserDetector\Detector\Os\NintendoWii;
+use BrowserDetector\Detector\Os\NintendoOs;
 use BrowserDetector\Detector\Os\NokiaOs;
 use BrowserDetector\Detector\Os\OpenBsd;
 use BrowserDetector\Detector\Os\OpenVms;
@@ -93,7 +93,7 @@ use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Os\WindowsRt;
-use BrowserDetector\Detector\Os\WyderAbstractOs;
+use BrowserDetector\Detector\Os\WyderOs;
 use BrowserDetector\Detector\Os\ZenwalkGnu;
 use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
 use BrowserDetector\Helper\MobileDevice;
@@ -404,7 +404,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains(array('Nintendo Wii'))) {
-            return new NintendoWii();
+            return new NintendoOs();
         }
 
         if ($utils->checkIfContains(array('Nokia', 'Series40'))) {
@@ -420,7 +420,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('WyderOS')) {
-            return new WyderAbstractOs();
+            return new WyderOs();
         }
 
         if ($utils->checkIfContains('Liberate')) {

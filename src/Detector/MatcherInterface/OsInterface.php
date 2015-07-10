@@ -30,10 +30,6 @@
 
 namespace BrowserDetector\Detector\MatcherInterface;
 
-
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
 /**
  * interface for all platforms/operating systems to detect
  *

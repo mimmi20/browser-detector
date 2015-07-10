@@ -194,7 +194,7 @@ class BrowserDetector
             $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
 
             if ($platform instanceof OsChangesEngineInterface) {
-                $platform->changeEngineProperties($engine, $browser, $engine);
+                $platform->changeEngineProperties($engine, $browser, $device);
             }
 
             if ($platform instanceof OsChangesBrowserInterface) {

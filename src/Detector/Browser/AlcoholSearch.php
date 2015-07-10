@@ -31,15 +31,13 @@
 namespace BrowserDetector\Detector\Browser;
 
 
+use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
-
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\AbstractEngine;
-
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -144,13 +142,10 @@ class AlcoholSearch
     ) {
         $agent = str_ireplace('alcohol search', '', $this->useragent);
 
-        $detector = new UserAgent();
-        $detector
-            ->setLogger($device->getLogger())
-            ->setAgent($agent)
-        ;
+        $detector = new BrowserDetector();
+        $detector->setLogger($device->getLogger());
 
-        $device->setRenderAs($detector->getBrowser());
+        $device->setRenderAs($detector->getBrowser($agent));
 
         return $this;
     }

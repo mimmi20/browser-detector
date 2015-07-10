@@ -140,7 +140,7 @@ class DeepnetExplorer
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Tident
+     * @return \BrowserDetector\Detector\Engine\Trident
      */
     public function detectEngine()
     {

@@ -30,12 +30,9 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Honlin;
 
-
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;

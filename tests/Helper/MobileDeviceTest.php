@@ -1,7 +1,6 @@
 <?php
 namespace BrowserDetectorTest\Helper;
 
-use BrowserDetector\Helper\FirefoxOs;
 use BrowserDetector\Helper\MobileDevice;
 
 /**

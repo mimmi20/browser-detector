@@ -53,7 +53,7 @@ class DeviceFactory
      *
      * @param string $agent
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\DeviceInterface
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
      */
     public static function detect($agent)
     {

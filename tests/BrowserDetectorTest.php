@@ -28,6 +28,7 @@ class BrowserDetectorTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetGetCache()
     {
+        /** @var \WurflCache\Adapter\Memory $cache */
         $cache = $this->getMock('\WurflCache\Adapter\Memory', array(), array(), '', false);
 
         self::assertSame($this->object, $this->object->setCache($cache));
@@ -39,6 +40,7 @@ class BrowserDetectorTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetGetLogger()
     {
+        /** @var \Monolog\Logger $logger */
         $logger = $this->getMock('\Monolog\Logger', array(), array(), '', false);
 
         self::assertSame($this->object, $this->object->setLogger($logger));

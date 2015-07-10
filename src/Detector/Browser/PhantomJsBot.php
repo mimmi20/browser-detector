@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector

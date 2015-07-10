@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Factory;
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Platform;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 

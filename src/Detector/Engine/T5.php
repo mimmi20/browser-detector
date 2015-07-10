@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 use BrowserDetector\Detector\Version;
 

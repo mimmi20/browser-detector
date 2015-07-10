@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Helper\Classname;
 use WurflCache\Adapter\AdapterInterface;
 
@@ -52,7 +51,7 @@ class BrowserFactory
      * @param string                               $agent
      * @param \WurflCache\Adapter\AdapterInterface $cache
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\BrowserInterface
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public static function detect($agent, AdapterInterface $cache = null)
     {

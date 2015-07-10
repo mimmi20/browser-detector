@@ -30,10 +30,8 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Xiaomi;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 

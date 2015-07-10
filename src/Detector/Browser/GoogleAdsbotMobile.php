@@ -115,7 +115,7 @@ class GoogleAdsbotMobile
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Browser\General\GoogleAdsbotMobile
+     * @return \BrowserDetector\Detector\Browser\GoogleAdsbotMobile
      */
     public function detectVersion()
     {

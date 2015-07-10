@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company\Unknown;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 

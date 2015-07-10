@@ -82,7 +82,7 @@ interface MatcherInterface
      *
      * @param mixed  $capabilityValue
      *
-     * @return AbstractDevice
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
      * @throws \InvalidArgumentException
      */
     public function setCapability(
