@@ -61,14 +61,14 @@ class EngineFactory implements FactoryInterface
         $utils->setUserAgent($agent);
 
         if (null !== $os && in_array($os->getName(), array('iOS'))) {
-            $engineKey = 'WebKit';
+            $engineKey = 'Webkit';
         } elseif ($utils->checkIfContains('Edge')) {
             $engineKey = 'Edge';
-        } elseif ($utils->checkIfContains('U2/') && !$utils->checkIfContains('AskTbATU2')) {
+        } elseif ($utils->checkIfContains(' U2/')) {
             $engineKey = 'U2';
-        } elseif ($utils->checkIfContains('U3/')) {
+        } elseif ($utils->checkIfContains(' U3/')) {
             $engineKey = 'U3';
-        } elseif ($utils->checkIfContains('T5/')) {
+        } elseif ($utils->checkIfContains(' T5/')) {
             $engineKey = 'T5';
         } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $agent)
             && false === stripos($agent, 'opera')
@@ -84,7 +84,7 @@ class EngineFactory implements FactoryInterface
             if ($chromeVersion >= 28) {
                 $engineKey = 'Blink';
             } else {
-                $engineKey = 'WebKit';
+                $engineKey = 'Webkit';
             }
         } elseif (preg_match('/(KHTML|Konqueror)/', $agent)) {
             $engineKey = 'Khtml';
