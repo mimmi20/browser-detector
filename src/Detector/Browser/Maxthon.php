@@ -40,6 +40,7 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -219,15 +220,13 @@ class Maxthon
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\Chrome
+     * @return \BrowserDetector\Detector\Browser\Maxthon
      */
     public function detectDependProperties(
         AbstractEngine $engine,
         AbstractOs $os,
         AbstractDevice $device
     ) {
-        parent::detectDependProperties($engine, $os, $device);
-
         $osname = $os->getName();
 
         if ('iOS' === $osname) {

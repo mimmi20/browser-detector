@@ -31,13 +31,14 @@
 namespace BrowserDetector\Detector\Browser;
 
 
+use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Input\UserAgent;
 
 /**
  * @category  BrowserDetector
@@ -146,25 +147,20 @@ class SpiderPig
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\SpiderPig
+     * @return \BrowserDetector\Detector\Browser\SpiderPig
      */
     public function detectDependProperties(
         AbstractEngine $engine,
         AbstractOs $os,
         AbstractDevice $device
     ) {
-        parent::detectDependProperties($engine, $os, $device);
-
         if ($this->utils->checkIfContains('spider-pig', true)) {
             $agent = str_ireplace(array('spider-pig'), '', $this->useragent);
 
-            $detector = new UserAgent();
-            $detector
-                ->setLogger($device->getLogger())
-                ->setAgent($agent)
-            ;
+            $detector = new BrowserDetector();
+            $detector->setLogger($device->getLogger());
 
-            $device->setRenderAs($detector->getBrowser());
+            $device->setRenderAs($detector->getBrowser($agent));
         }
 
         return $this;

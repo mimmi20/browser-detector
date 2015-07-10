@@ -31,10 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\Motorola;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -169,8 +171,6 @@ class MotorolaMb525
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         // wurflkey: mot_mb525_ver1_sub_android221
         $engine->setCapability('xhtml_file_upload', 'not_supported');
 

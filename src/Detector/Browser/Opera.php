@@ -37,6 +37,7 @@ use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
@@ -194,15 +195,13 @@ class Opera
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
+     * @return \BrowserDetector\Detector\Browser\Opera
      */
     public function detectDependProperties(
         AbstractEngine $engine,
         AbstractOs $os,
         AbstractDevice $device
     ) {
-        parent::detectDependProperties($engine, $os, $device);
-
         $browserVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
         $this->setCapability('wurflKey', 'opera_' . (int)$browserVersion);

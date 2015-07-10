@@ -31,10 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -169,21 +171,13 @@ class SonyTabletS
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        parent::detectDependProperties($browser, $engine, $os);
-
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORONLY
         );
 
         if (3.2 == $osVersion) {
-            // $this->setCapability('resolution_width', 640);
-            // $this->setCapability('resolution_height', 768);
             $this->setCapability('wurflKey', 'sony_tablet_s_ver1_suban22');
         }
-
-        // wurflkey: sonyericsson_e10i_ver1_suban21_03
-        // $engine->setCapability('bmp', true);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
 
         return $this;
     }

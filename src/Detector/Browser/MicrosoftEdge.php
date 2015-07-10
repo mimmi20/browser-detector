@@ -36,6 +36,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Edge;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -168,8 +169,6 @@ class MicrosoftEdge extends AbstractBrowser
         AbstractOs $os,
         AbstractDevice $device
     ) {
-        parent::detectDependProperties($engine, $os, $device);
-
         return $this;
     }
 }

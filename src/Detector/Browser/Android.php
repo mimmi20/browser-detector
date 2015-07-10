@@ -36,6 +36,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
@@ -275,15 +276,13 @@ class Android
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\Android
+     * @return \BrowserDetector\Detector\Browser\Android
      */
     public function detectDependProperties(
         AbstractEngine $engine,
         AbstractOs $os,
         AbstractDevice $device
     ) {
-        parent::detectDependProperties($engine, $os, $device);
-
         $engine->setCapability('html_wi_imode_compact_generic', false);
         $engine->setCapability('xhtml_avoid_accesskeys', true);
         $engine->setCapability('xhtml_supports_forms_in_table', true);

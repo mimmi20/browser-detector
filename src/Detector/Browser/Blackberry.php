@@ -39,6 +39,7 @@ use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -183,15 +184,13 @@ class Blackberry
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\Mobile\Blackberry
+     * @return \BrowserDetector\Detector\Browser\Blackberry
      */
     public function detectDependProperties(
         AbstractEngine $engine,
         AbstractOs $os,
         AbstractDevice $device
     ) {
-        parent::detectDependProperties($engine, $os, $device);
-
         $engine->setCapability('multipart_support', true);
         $engine->setCapability('wml_1_1', true);
         $engine->setCapability('wml_1_2', true);

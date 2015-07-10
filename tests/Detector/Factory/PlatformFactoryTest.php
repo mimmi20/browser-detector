@@ -11,7 +11,10 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
+     *
      * @param string $agent
+     * @param string $platform
+     * @param string $version
      */
     public function testDetect($agent, $platform, $version)
     {

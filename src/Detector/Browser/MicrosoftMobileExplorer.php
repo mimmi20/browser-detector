@@ -36,6 +36,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -193,15 +194,13 @@ class MicrosoftMobileExplorer
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\MicrosoftMobileExplorer
+     * @return \BrowserDetector\Detector\Browser\MicrosoftMobileExplorer
      */
     public function detectDependProperties(
         AbstractEngine $engine,
         AbstractOs $os,
         AbstractDevice $device
     ) {
-        parent::detectDependProperties($engine, $os, $device);
-
         $engine->setCapability('html_web_3_2', false);
         $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
         $engine->setCapability('chtml_table_support', false);

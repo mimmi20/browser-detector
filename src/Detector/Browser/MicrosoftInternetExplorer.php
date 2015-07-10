@@ -36,6 +36,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -280,7 +281,7 @@ class MicrosoftInternetExplorer
      * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\General\MicrosoftInternetExplorer
+     * @return \BrowserDetector\Detector\Browser\MicrosoftInternetExplorer
      */
     public function detectDependProperties(
         AbstractEngine $engine,
@@ -339,8 +340,6 @@ class MicrosoftInternetExplorer
                     break;
             }
         }
-
-        parent::detectDependProperties($engine, $os, $device);
 
         $engine->setCapability('is_sencha_touch_ok', false);
         $engine->setCapability('image_inlining', false);

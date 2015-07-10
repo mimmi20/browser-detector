@@ -31,11 +31,12 @@
 namespace BrowserDetector\Detector\Engine;
 
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\EngineInterface;
 
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
 
 /**
@@ -263,8 +264,6 @@ class Gecko
         AbstractDevice $device,
         AbstractBrowser $browser
     ) {
-        parent::detectDependProperties($os, $device, $browser);
-
         if ($device->getDeviceType()->isMobile()) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');
         } else {
