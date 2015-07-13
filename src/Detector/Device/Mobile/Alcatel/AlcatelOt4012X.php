@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\FirefoxOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -52,8 +52,6 @@ class AlcatelOt4012X
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'OT-4012X',
         'model_extra_info'       => null,

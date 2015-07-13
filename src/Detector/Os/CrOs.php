@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
+use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 
 use BrowserDetector\Detector\Version;
 

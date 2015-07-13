@@ -37,7 +37,7 @@ use BrowserDetector\Detector\Browser\OperaMobile;
 use BrowserDetector\Detector\Browser\Ucweb;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
+use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 
 use BrowserDetector\Detector\Version;
 

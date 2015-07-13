@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
@@ -57,8 +57,6 @@ class SamsungGts6810p
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'GT-S6810P',
         'model_extra_info'       => null,

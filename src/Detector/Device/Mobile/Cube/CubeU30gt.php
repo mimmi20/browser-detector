@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Cube;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -52,8 +52,6 @@ class CubeU30gt
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'U30GT',
         'model_extra_info'       => null,

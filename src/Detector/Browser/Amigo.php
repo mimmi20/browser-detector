@@ -30,13 +30,10 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -49,6 +46,7 @@ use BrowserDetector\Detector\Version;
  */
 class Amigo
     extends AbstractBrowser
+    implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -57,7 +55,6 @@ class Amigo
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -166,7 +163,7 @@ class Amigo
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
     public function detectEngine()
     {
@@ -187,64 +184,16 @@ class Amigo
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
-     * @return \BrowserDetector\Detector\Browser\Amigo
+     * @return string
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        $osname = $os->getName();
-
-        if ('iOS' === $osname) {
-            $engine->setCapability('xhtml_format_as_css_property', true);
-            $this->setCapability('rss_support', true);
-        }
-
-        if ('Android' === $osname) {
-            $engine->setCapability('html_wi_imode_compact_generic', false);
-            $engine->setCapability('xhtml_avoid_accesskeys', true);
-            $engine->setCapability('xhtml_supports_forms_in_table', true);
-            $engine->setCapability('xhtml_file_upload', 'supported');
-            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-            $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-        }
-
+    public function getWurflKey(AbstractOs $os)
+    {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
-        if (!$device->getDeviceType()->isMobile()) {
-            $engine->setCapability('xhtml_make_phone_call_string', 'none');
-        }
-
-        if ($version >= 11) {
-            $engine->setCapability('css_gradient', 'webkit');
-            $engine->setCapability('css_gradient_linear', 'none');
-            $engine->setCapability('css_border_image', 'none');
-            $engine->setCapability('css_rounded_corners', 'none');
-        }
-
-        if ($version >= 26) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-            $engine->setCapability('css_gradient', 'css3');
-            $engine->setCapability('svgt_1_1', true);
-        }
-
-        if ($version >= 31) {
-            $engine->setCapability('css_gradient_linear', 'css3');
-            $engine->setCapability('css_border_image', 'css3');
-            $engine->setCapability('css_rounded_corners', 'css3');
-        }
-
-        $this->setCapability('wurflKey', 'google_chrome_' . (int)$version);
-        $engine->setCapability('xhtml_table_support', false);
-
-        return $this;
+        return 'google_chrome_' . (int) $version;
     }
 }

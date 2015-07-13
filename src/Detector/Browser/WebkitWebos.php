@@ -56,7 +56,6 @@ class WebkitWebos
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -194,7 +193,7 @@ class WebkitWebos
         $engine->setCapability('xhtml_supports_css_cell_table_coloring', false);
         $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
         $engine->setCapability('xhtml_supports_table_for_layout', false);
-        $engine->setCapability('bmp', false); // wurflkey: palm_pre_ver1_subwebos141
+        $engine->setCapability('bmp', false);
         $engine->setCapability('wbmp', true);
         $engine->setCapability('max_url_length_in_requests', 256);
         $engine->setCapability('ajax_support_getelementbyid', false);

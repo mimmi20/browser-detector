@@ -28,90 +28,74 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\MatcherInterface;
+namespace BrowserDetector\Detector\MatcherInterface\Device;
 
-
-use BrowserDetector\Detector\Device\AbstractDevice;
-
+use BrowserDetector\Detector\Result;
+use Psr\Log\LoggerInterface;
 
 /**
- * interface for all rendering engines to detect
+ * interface for all devices to detect
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-interface EngineInterface
+interface DeviceInterface
 {
     /**
-     * sets the user agent to be handled
+     * detects the device version from the given user agent
      *
-     * @param string $userAgent
-     *
-     * @return void
+     * @return \BrowserDetector\Detector\Version
      */
-    public function setUserAgent($userAgent);
+    public function detectVersion();
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns the type of the current device
      *
-     * @return integer
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
      */
-    public function getWeight();
+    public function getDeviceType();
 
     /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @return string Capability value
-     * @throws \InvalidArgumentException
-     */
-    public function getCapability($capabilityName);
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @param mixed  $capabilityValue
-     *
-     * @return AbstractDevice
-     * @throws \InvalidArgumentException
-     */
-    public function setCapability(
-        $capabilityName,
-        $capabilityValue = null
-    );
-
-    /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All Capability values
-     */
-    public function getCapabilities();
-
-    /**
-     * gets the name of the platform
-     *
-     * @return string
-     */
-    public function getName();
-
-    /**
-     * gets the maker of the platform
+     * returns the type of the current device
      *
      * @return \BrowserDetector\Detector\Company\CompanyInterface
      */
     public function getManufacturer();
 
     /**
-     * detects the engine version from the given user agent
+     * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
      */
-    public function detectVersion();
+    public function getBrand();
+
+    /**
+     * sets a second device for rendering properties
+     *
+     * @var \BrowserDetector\Detector\Result $result
+     *
+     * @return DeviceInterface
+     */
+    public function setRenderAs(Result $result);
+
+    /**
+     * sets a second device for rendering properties
+     *
+     * @return \BrowserDetector\Detector\Result
+     */
+    public function getRenderAs();
+
+    /**
+     * @return \Psr\Log\LoggerInterface
+     */
+    public function getLogger();
+
+    /**
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return DeviceInterface
+     */
+    public function setLogger(LoggerInterface $logger);
 }

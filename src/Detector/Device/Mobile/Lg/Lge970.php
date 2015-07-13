@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Lg;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
@@ -66,9 +66,7 @@ class Lge970
         parent::__construct();
 
         $this->properties = array(
-            'wurflKey'               => null, // not in wurfl
-
-            // device
+                // device
             'model_name'             => 'E970',
             'model_extra_info'       => null,
             'marketing_name'         => 'Optimus G',

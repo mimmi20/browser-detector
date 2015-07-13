@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Micromax;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -52,8 +52,6 @@ class MicromaxA114
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'A114',
         'model_extra_info'       => null,

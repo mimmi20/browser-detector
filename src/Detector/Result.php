@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector;
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Helper\Utils;
 use WurflData\Loader;
@@ -728,8 +729,7 @@ class Result
             'device_os_version'
         );
 
-        if (in_array($capabilityName, $versionfields) && !($capabilityValue instanceof Version)
-        ) {
+        if (in_array($capabilityName, $versionfields) && !($capabilityValue instanceof Version)) {
             throw new \InvalidArgumentException(
                 'capability "' . $capabilityName . '" requires an instance of ' . '\\BrowserDetector\\Detector\\Version as value'
             );
@@ -1494,9 +1494,11 @@ class Result
         AbstractEngine $engine
     ) {
         if ($device->getDeviceType()->isMobile()) {
-            $wurflKey = $device->getCapability('wurflKey');
+            $wurflKey = null; //$device->getCapability('wurflKey');
+        } elseif ($browser instanceof BrowserHasWurflKeyInterface) {
+            $wurflKey = $browser->getWurflKey($os);
         } else {
-            $wurflKey = $browser->getCapability('wurflKey');
+            $wurflKey = null;
         }
         $this->setCapability('wurflKey', $wurflKey);
 

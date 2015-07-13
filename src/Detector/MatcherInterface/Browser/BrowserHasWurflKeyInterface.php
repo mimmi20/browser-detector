@@ -28,43 +28,26 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\MatcherInterface;
+namespace BrowserDetector\Detector\MatcherInterface\Browser;
+
+use BrowserDetector\Detector\Os\AbstractOs;
 
 /**
- * interface for all platforms/operating systems to detect
+ * interface for all browsers to detect
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-interface OsInterface
+interface BrowserHasWurflKeyInterface
 {
     /**
-     * returns the Browser which used on the device
+     * returns the WurflKey
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
-     */
-    public function detectBrowser();
-
-    /**
-     * returns the name of the operating system/platform
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
      * @return string
      */
-    public function getName();
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion();
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer();
+    public function getWurflKey(AbstractOs $os);
 }

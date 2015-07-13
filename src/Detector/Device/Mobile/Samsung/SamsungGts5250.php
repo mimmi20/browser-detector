@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Bada;
 use BrowserDetector\Detector\Os\UnknownOs;
@@ -55,8 +55,6 @@ class SamsungGts5250
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'GT-S5250',
         'model_extra_info'       => null,

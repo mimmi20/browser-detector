@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 

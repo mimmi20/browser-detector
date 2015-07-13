@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
@@ -57,8 +57,6 @@ class OdysUnoX10
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'Uno X10',
         'model_extra_info'       => null,
@@ -173,64 +171,6 @@ class OdysUnoX10
         $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
-
-        /*
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-        case 'Android Webkit':
-            switch ((float)$osVersion) {
-            case 2.1:
-                $engineVersion = $engine->detectVersion()->getVersion(Version::MAJORMINOR);
-
-                if ('530.17' == $engineVersion) {
-                    $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_sub53017');
-                }
-                break;
-            case 2.2:
-                $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban221');
-                break;
-            case 2.3:
-                $this->setCapability('wurflKey', 'samsung_gt_i9000_ver1_suban233bis');
-                break;
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40');
-                break;
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        case 'Chrome':
-            $engine->setCapability('is_sencha_touch_ok', false);
-
-            switch ((float)$osVersion) {
-            case 4.0:
-                $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40chrome');
-                break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-            }
-            break;
-        default:
-            // nothing to do here
-            break;
-        }
-        /**/
 
         return $this;
     }

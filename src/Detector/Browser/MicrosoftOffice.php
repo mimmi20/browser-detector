@@ -30,12 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -48,6 +45,7 @@ use BrowserDetector\Detector\Version;
  */
 class MicrosoftOffice
     extends AbstractBrowser
+    implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -56,7 +54,6 @@ class MicrosoftOffice
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -256,47 +253,16 @@ class MicrosoftOffice
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
-     * @return \BrowserDetector\Detector\Browser\MicrosoftOffice
+     * @return string
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        $engine->setCapability('supports_background_sounds', false);
-        $engine->setCapability('supports_vb_script', false);
-        $engine->setCapability('supports_java_applets', false);
-        $engine->setCapability('supports_activex_controls', false);
-        $engine->setCapability('xhtml_supports_iframe', 'none');
-        $engine->setCapability('cookie_support', false);
-        $engine->setCapability('ajax_support_javascript', false);
-
+    public function getWurflKey(AbstractOs $os)
+    {
         $browserVersion = (int)$this->detectInternalVersion();
 
-        switch ($browserVersion) {
-            case 12:
-                $engine->setCapability('xhtml_supports_iframe', 'full');
-                $engine->setCapability('cookie_support', true);
-                $engine->setCapability('xhtml_table_support', false);
-                $engine->setCapability('svgt_1_1', true);
-                $engine->setCapability('ajax_support_javascript', true);
-                $engine->setCapability('image_inlining', true);
-                $engine->setCapability('css_spriting', true);
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        $this->setCapability('wurflKey', 'ms_office_subua' . $browserVersion);
-
-        return $this;
+        return 'ms_office_subua' . $browserVersion;
     }
 }

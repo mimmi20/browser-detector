@@ -30,12 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Gecko;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -46,7 +43,9 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Fennec extends AbstractBrowser
+class Fennec
+    extends AbstractBrowser
+    implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -55,7 +54,6 @@ class Fennec extends AbstractBrowser
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => 'firefox', // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -134,78 +132,22 @@ class Fennec extends AbstractBrowser
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
-     * @return \BrowserDetector\Detector\Browser\Fennec
+     * @return string
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        $engine->setCapability('xhtml_table_support', false);
-
-        if ($device->getDeviceType()->isMobile() && 'Android' == $os->getName()
-        ) {
-            $device->setCapability('has_qwerty_keyboard', true);
-            $device->setCapability('pointing_method', 'touchscreen');
-            $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
-            $engine->setCapability('chtml_table_support', false);
-            $engine->setCapability('xhtml_select_as_radiobutton', false);
-            $engine->setCapability('xhtml_select_as_dropdown', false);
-            $engine->setCapability('xhtml_select_as_popup', false);
-            $engine->setCapability('xhtml_file_upload', 'not_supported');
-            $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
-            $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-            $engine->setCapability('xhtml_table_support', true);
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-            $engine->setCapability('xhtml_supports_table_for_layout', true);
-            $engine->setCapability('canvas_support', 'full');
-            $engine->setCapability('viewport_supported', true);
-            $engine->setCapability('viewport_width', 'device_width_token');
-            $engine->setCapability('viewport_userscalable', 'no');
-            $engine->setCapability('css_gradient', 'mozilla');
-            $engine->setCapability('css_border_image', 'mozilla');
-            $engine->setCapability('css_rounded_corners', 'mozilla');
-
-            if (!$device->getDeviceType()->isTablet()) {
-                $device->setCapability('sms_enabled', true);
-                $device->setCapability('nfc_support', true);
-            }
-        }
-
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if ($version >= 10) {
-            $engine->setCapability('css_gradient', 'mozilla');
-        }
-
-        if ($version >= 16) {
-            $engine->setCapability('css_gradient', 'css3');
-        }
-
-        if ($version >= 27) {
-            $engine->setCapability('css_gradient_linear', 'css3');
-            $engine->setCapability('css_border_image', 'css3');
-            $engine->setCapability('css_rounded_corners', 'css3');
-        }
-
+    public function getWurflKey(AbstractOs $os)
+    {
         $browserVersion = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
 
-        switch ($browserVersion) {
-            case 3.5:
-                $this->setCapability('wurflKey', 'firefox_3_5');
-                break;
-            default:
-                $this->setCapability('wurflKey', 'firefox_' . (int)$browserVersion . '_0');
-                break;
+        if (3.5 === $browserVersion) {
+            $wurflKey = 'firefox_3_5';
+        } else {
+            $wurflKey = 'firefox_' . (int)$browserVersion . '_0';
         }
 
-        return $this;
+        return $wurflKey;
     }
 }

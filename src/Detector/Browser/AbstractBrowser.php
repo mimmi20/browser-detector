@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\BrowserInterface;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -72,7 +72,6 @@ abstract class AbstractBrowser
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info

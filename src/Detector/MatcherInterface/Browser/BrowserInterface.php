@@ -28,22 +28,43 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\MatcherInterface;
+namespace BrowserDetector\Detector\MatcherInterface\Browser;
 
 /**
- * interface for all devices to detect
+ * interface for all browsers to detect
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-interface DeviceHasChildrenInterface
+interface BrowserInterface
 {
     /**
-     * detects the device name from the given user agent
+     * gets the name of the browser
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return string
      */
-    public function detectDevice();
+    public function getName();
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer();
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \BrowserDetector\Detector\Version
+     */
+    public function detectVersion();
+
+    /**
+     * returns the type of the current browser
+     *
+     * @return \BrowserDetector\Detector\Type\Browser\TypeInterface
+     */
+    public function getBrowserType();
 }

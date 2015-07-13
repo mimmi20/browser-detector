@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
@@ -58,8 +58,6 @@ class SamsungSmN7505
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'SM-N7505',
         'model_extra_info'       => 'LTE',

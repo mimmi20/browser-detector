@@ -34,8 +34,7 @@ use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\Os\AbstractOs;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserCalculatesAlternativeResultInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -47,6 +46,7 @@ use BrowserDetector\Detector\Version;
  */
 class YouWaveAndroidOnPc
     extends AbstractBrowser
+    implements BrowserCalculatesAlternativeResultInterface
 {
     /**
      * the detected browser properties
@@ -55,7 +55,6 @@ class YouWaveAndroidOnPc
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -161,20 +160,14 @@ class YouWaveAndroidOnPc
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * gets the name of the browser
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return AbstractDevice
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
+    public function calculateAlternativeRendering(AbstractDevice $device)
+    {
         $agent = str_ireplace(
             array('i9988_custom', 'i9999_custom'),
             '',

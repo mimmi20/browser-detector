@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Factory\BrowserFactory;
 use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserCalculatesAlternativeResultInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasVersionInterface;
 use BrowserDetector\Detector\MatcherInterface\Os\OsChangesBrowserInterface;
@@ -189,6 +190,10 @@ class BrowserDetector
 
             // detect the browser which is used
             $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $this->getCache());
+
+            if ($browser instanceof BrowserCalculatesAlternativeResultInterface) {
+                $browser->calculateAlternativeRendering($device);
+            }
 
             // detect the engine which is used in the browser
             $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);

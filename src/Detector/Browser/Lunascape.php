@@ -56,7 +56,6 @@ class Lunascape
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -172,7 +171,7 @@ class Lunascape
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
     public function detectEngine()
     {

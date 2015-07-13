@@ -34,8 +34,8 @@ use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
@@ -57,8 +57,6 @@ class GeneralDesktop
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'general Desktop',
         'model_extra_info'       => null,

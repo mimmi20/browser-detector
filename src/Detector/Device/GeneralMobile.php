@@ -36,8 +36,8 @@ use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -509,7 +509,6 @@ class GeneralMobile
                     $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
                     if (6.5 == (float)$osVersion) {
-                        // $this->setCapability('wurflKey', 'generic_android_ver3_2_opera_tablet');
                         $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
                         $engine->setCapability('wml_1_1', true);
                         $engine->setCapability('chtml_table_support', false);

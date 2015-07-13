@@ -30,12 +30,11 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -48,6 +47,7 @@ use BrowserDetector\Detector\Version;
  */
 class MicrosoftInternetExplorer
     extends AbstractBrowser
+    implements BrowserHasWurflKeyInterface
 {
     private $patterns = array(
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',
@@ -78,7 +78,6 @@ class MicrosoftInternetExplorer
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => 'msie', // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -341,59 +340,20 @@ class MicrosoftInternetExplorer
             }
         }
 
-        $engine->setCapability('is_sencha_touch_ok', false);
-        $engine->setCapability('image_inlining', false);
-        $engine->setCapability('css_spriting', false);
-        $engine->setCapability('jqm_grade', 'C');
-        $engine->setCapability('xhtml_table_support', false);
-
-        $browserVersion = (int)$browserVersion->getVersion(Version::MAJORONLY);
-
-        switch ($browserVersion) {
-            case 11:
-                $engine->setCapability('jqm_grade', 'A');
-                $engine->setCapability('is_sencha_touch_ok', true);
-                $engine->setCapability('image_inlining', true);
-                $engine->setCapability('css_spriting', true);
-                $engine->setCapability('svgt_1_1', true);
-                break;
-            case 10:
-                $engine->setCapability('jqm_grade', 'A');
-                $engine->setCapability('is_sencha_touch_ok', true);
-                $engine->setCapability('image_inlining', true);
-                $engine->setCapability('css_spriting', true);
-                $engine->setCapability('svgt_1_1', true);
-                break;
-            case 9:
-                $engine->setCapability('jqm_grade', 'A');
-                $engine->setCapability('is_sencha_touch_ok', true);
-                $engine->setCapability('image_inlining', true); //wurflkey: msie_9
-                $engine->setCapability('css_spriting', true);
-                $engine->setCapability('svgt_1_1', true);
-                break;
-            case 8:
-                $engine->setCapability('jqm_grade', 'A');
-                $engine->setCapability('is_sencha_touch_ok', true);
-                $engine->setCapability('image_inlining', true);
-                $engine->setCapability('css_spriting', true);
-                break;
-            case 7:
-                $engine->setCapability('jqm_grade', 'A');
-                $engine->setCapability('is_sencha_touch_ok', true);
-                $engine->setCapability('image_inlining', false);
-                $engine->setCapability('css_spriting', true);
-                break;
-            case 6:
-                $engine->setCapability('jqm_grade', 'A');
-                $engine->setCapability('is_sencha_touch_ok', true);
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        $this->setCapability('wurflKey', 'msie_' . $browserVersion);
-
         return $this;
+    }
+
+    /**
+     * returns the WurflKey
+     *
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
+     *
+     * @return string
+     */
+    public function getWurflKey(AbstractOs $os)
+    {
+        $browserVersion = (int) $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        return 'msie_' . $browserVersion;
     }
 }

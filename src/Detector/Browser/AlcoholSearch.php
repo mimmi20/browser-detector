@@ -30,13 +30,11 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\Os\AbstractOs;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserCalculatesAlternativeResultInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
@@ -47,6 +45,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  */
 class AlcoholSearch
     extends AbstractBrowser
+    implements BrowserCalculatesAlternativeResultInterface
 {
     /**
      * the detected browser properties
@@ -55,7 +54,6 @@ class AlcoholSearch
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -126,20 +124,14 @@ class AlcoholSearch
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * gets the name of the browser
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\AlcoholSearch
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
+    public function calculateAlternativeRendering(AbstractDevice $device)
+    {
         $agent = str_ireplace('alcohol search', '', $this->useragent);
 
         $detector = new BrowserDetector();

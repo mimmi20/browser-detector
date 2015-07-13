@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Texet;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -52,8 +52,6 @@ class TexetNaviPad
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'NaviPad TM-7055HD 3G',
         'model_extra_info'       => null,

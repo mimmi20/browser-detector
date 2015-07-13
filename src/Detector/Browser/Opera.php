@@ -30,13 +30,10 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -50,6 +47,7 @@ use BrowserDetector\Helper\MobileDevice;
  */
 class Opera
     extends AbstractBrowser
+    implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -58,7 +56,6 @@ class Opera
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -170,7 +167,7 @@ class Opera
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
     public function detectEngine()
     {
@@ -188,25 +185,16 @@ class Opera
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
-     * @return \BrowserDetector\Detector\Browser\Opera
+     * @return string
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
+    public function getWurflKey(AbstractOs $os)
+    {
         $browserVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
-        $this->setCapability('wurflKey', 'opera_' . (int)$browserVersion);
-        $engine->setCapability('xhtml_table_support', false);
-
-        return $this;
+        return 'opera_' . (int) $browserVersion;
     }
 }

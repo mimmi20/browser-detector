@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
@@ -56,7 +55,6 @@ class Avant
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -143,7 +141,7 @@ class Avant
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\EngineInterface
+     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
     public function detectEngine()
     {

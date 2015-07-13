@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\FreeBsd;
 use BrowserDetector\Detector\Os\LinuxTv;
 use BrowserDetector\Detector\Os\UnknownOs;
@@ -65,8 +65,6 @@ class PanasonicViera
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'Viera TV',
         'model_extra_info'       => null,

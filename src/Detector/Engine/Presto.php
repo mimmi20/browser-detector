@@ -34,7 +34,7 @@ namespace BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\EngineInterface;
+use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
 

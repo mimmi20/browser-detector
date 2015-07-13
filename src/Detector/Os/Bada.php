@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Browser\OperaMini;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\OsInterface;
+use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 
 use BrowserDetector\Detector\Version;
 

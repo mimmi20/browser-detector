@@ -28,74 +28,43 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\MatcherInterface;
-
-use BrowserDetector\Detector\Result;
-use Psr\Log\LoggerInterface;
+namespace BrowserDetector\Detector\MatcherInterface\Os;
 
 /**
- * interface for all devices to detect
+ * interface for all platforms/operating systems to detect
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-interface DeviceInterface
+interface OsInterface
 {
     /**
-     * detects the device version from the given user agent
+     * returns the Browser which used on the device
+     *
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     */
+    public function detectBrowser();
+
+    /**
+     * returns the name of the operating system/platform
+     *
+     * @return string
+     */
+    public function getName();
+
+    /**
+     * returns the version of the operating system/platform
      *
      * @return \BrowserDetector\Detector\Version
      */
     public function detectVersion();
 
     /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getDeviceType();
-
-    /**
-     * returns the type of the current device
+     * returns the version of the operating system/platform
      *
      * @return \BrowserDetector\Detector\Company\CompanyInterface
      */
     public function getManufacturer();
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getBrand();
-
-    /**
-     * sets a second device for rendering properties
-     *
-     * @var \BrowserDetector\Detector\Result $result
-     *
-     * @return DeviceInterface
-     */
-    public function setRenderAs(Result $result);
-
-    /**
-     * sets a second device for rendering properties
-     *
-     * @return \BrowserDetector\Detector\Result
-     */
-    public function getRenderAs();
-
-    /**
-     * @return \Psr\Log\LoggerInterface
-     */
-    public function getLogger();
-
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return DeviceInterface
-     */
-    public function setLogger(LoggerInterface $logger);
 }

@@ -30,12 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Gecko;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -48,6 +45,7 @@ use BrowserDetector\Detector\Version;
  */
 class Iceweasel
     extends AbstractBrowser
+    implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -56,7 +54,6 @@ class Iceweasel
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => 'firefox', // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -197,49 +194,22 @@ class Iceweasel
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
-     * @return \BrowserDetector\Detector\Browser\Iceweasel
+     * @return string
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        $engine->setCapability('xhtml_table_support', false);
-
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if ($version >= 14) {
-            $engine->setCapability('css_gradient', 'mozilla');
-        }
-
-        if ($version >= 16) {
-            $engine->setCapability('css_gradient', 'css3');
-        }
-
-        if ($version >= 32) {
-            $engine->setCapability('css_gradient_linear', 'css3');
-            $engine->setCapability('css_border_image', 'css3');
-            $engine->setCapability('css_rounded_corners', 'css3');
-        }
-
+    public function getWurflKey(AbstractOs $os)
+    {
         $browserVersion = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
 
-        switch ($browserVersion) {
-            case 3.5:
-                $this->setCapability('wurflKey', 'firefox_3_5');
-                break;
-            default:
-                $this->setCapability('wurflKey', 'firefox_' . (int)$browserVersion . '_0');
-                break;
+        if (3.5 === $browserVersion) {
+            $wurflKey = 'firefox_3_5';
+        } else {
+            $wurflKey = 'firefox_' . (int)$browserVersion . '_0';
         }
 
-        return $this;
+        return $wurflKey;
     }
 }

@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WebOs;
@@ -56,8 +56,6 @@ class Hp
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => null, // not in wurfl
-
         // device
         'model_name'             => 'general HP Device',
         'model_extra_info'       => null,

@@ -31,9 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -47,6 +46,7 @@ use BrowserDetector\Helper\Safari as SafariHelper;
  */
 class Safari
     extends AbstractBrowser
+    implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -55,7 +55,6 @@ class Safari
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -195,115 +194,31 @@ class Safari
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
-     * @return \BrowserDetector\Detector\Browser\Safari
+     * @return string
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        if ($device->getDeviceType()->isMobile()) {
-            $engine->setCapability('xhtml_format_as_css_property', true);
-            $engine->setCapability('css_gradient', 'webkit');
-
-            if (!$device->getDeviceType()->isTablet()) {
-                $engine->setCapability('xhtml_send_sms_string', 'sms:');
-            }
-        } else {
-            $this->setCapability('rss_support', false);
-        }
-
-        $osVersion = (float)$os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (!$device->getDeviceType()->isTablet() && $osVersion >= 6.0
-        ) {
-            $engine->setCapability('xhtml_file_upload', 'supported'); //iPhone with iOS 6.0 and Safari 6.0
-        }
-
-        $browserVersion = $this->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if ((float)$browserVersion < 4.0) {
-            $engine->setCapability('jqm_grade', 'B');
-        }
-
+    public function getWurflKey(AbstractOs $os)
+    {
         $osname    = $os->getName();
         $osVersion = (float)$os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 
-        $engine->setCapability('chtml_table_support', false);
-
-        if ('iOS' === $osname) {
-            if ($osVersion >= 4.3) {
-                $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
-                $engine->setCapability('html_wi_imode_compact_generic', true);
-                $engine->setCapability('xhtml_select_as_radiobutton', false);
-                $engine->setCapability('xhtml_avoid_accesskeys', false);
-                $engine->setCapability('xhtml_select_as_dropdown', false);
-                $engine->setCapability('xhtml_supports_forms_in_table', false);
-                $engine->setCapability('xhtml_select_as_popup', false);
-                $engine->setCapability('xhtml_file_upload', 'not_supported');
-                $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
-                $engine->setCapability('xhtml_can_embed_video', 'none');
-                $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
-                $engine->setCapability('xhtml_supports_table_for_layout', true);
-                $engine->setCapability('max_url_length_in_requests', 512);
-                $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-                $engine->setCapability('canvas_support', 'full');
-                $engine->setCapability('viewport_width', 'device_width_token');
-                $engine->setCapability('viewport_supported', true);
-                $engine->setCapability('viewport_userscalable', 'no');
-                $engine->setCapability('css_gradient', 'none');
-                $engine->setCapability('css_gradient_linear', 'none');
-            }
-
-            if ($osVersion >= 5.1) {
-                $engine->setCapability('jqm_grade', 'A');
-                $engine->setCapability('supports_java_applets', true);
-            }
-
-            if ((float)$browserVersion >= 5.1) {
-                $engine->setCapability('css_gradient_linear', 'webkit');
-            }
-        }
+        $browserVersion = $this->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
 
         if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('xhtml_make_phone_call_string', 'none');
-            $engine->setCapability('xhtml_table_support', false);
-            $engine->setCapability('css_gradient', 'none');
-            $engine->setCapability('css_gradient_linear', 'none');
-            $engine->setCapability('css_border_image', 'none');
-            $engine->setCapability('css_rounded_corners', 'none');
-            $engine->setCapability('chtml_table_support', true);
-
-            $this->setCapability('wurflKey', 'safari_' . (int)$browserVersion . '_0_mac');
+            return 'safari_' . (int)$browserVersion . '_0_mac';
         }
 
         if ('Windows' === $osname) {
-            $engine->setCapability('jqm_grade', 'A');
-            $engine->setCapability('xhtml_make_phone_call_string', 'none');
-            $engine->setCapability('xhtml_table_support', false);
-            $engine->setCapability('css_gradient', 'none');
-            $engine->setCapability('css_gradient_linear', 'none');
-            $engine->setCapability('css_border_image', 'none');
-            $engine->setCapability('css_rounded_corners', 'none');
-            $engine->setCapability('chtml_table_support', true);
-
-            $this->setCapability('wurflKey', 'safari_' . (int)$browserVersion . '_0_windows');
+            return 'safari_' . (int)$browserVersion . '_0_windows';
         }
 
-        return $this;
+        return '';
     }
 }

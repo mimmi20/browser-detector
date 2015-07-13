@@ -31,9 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -46,6 +44,7 @@ use BrowserDetector\Detector\Version;
  */
 class MicrosoftOutlook
     extends MicrosoftOffice
+    implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +53,6 @@ class MicrosoftOutlook
      */
     protected $properties = array(
         // browser
-        'wurflKey'                     => null, // not in wurfl
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -209,26 +207,16 @@ class MicrosoftOutlook
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs $os
      *
-     * @return \BrowserDetector\Detector\Browser\MicrosoftOutlook
+     * @return string
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        parent::detectDependProperties($engine, $os, $device);
-
+    public function getWurflKey(AbstractOs $os)
+    {
         $browserVersion = (int)$this->detectInternalVersion();
 
-        $this->setCapability('wurflKey', 'ms_outlook_subua' . $browserVersion);
-
-        return $this;
+        return 'ms_outlook_subua' . $browserVersion;
     }
 }
