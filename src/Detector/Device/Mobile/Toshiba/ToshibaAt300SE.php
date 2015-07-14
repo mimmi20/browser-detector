@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Toshiba;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -44,7 +45,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class ToshibaAT300SE
     extends AbstractDevice
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

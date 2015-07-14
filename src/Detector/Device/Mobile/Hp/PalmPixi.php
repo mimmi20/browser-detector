@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Version;
  */
 class PalmPixi
     extends AbstractDevice
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

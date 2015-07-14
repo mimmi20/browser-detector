@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -46,7 +47,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class Microsoft
     extends AbstractDevice
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface, DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

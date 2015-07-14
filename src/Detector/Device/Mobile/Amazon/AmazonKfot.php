@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Maemo;
@@ -47,7 +48,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class AmazonKfot
     extends AbstractDevice
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

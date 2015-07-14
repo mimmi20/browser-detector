@@ -41,6 +41,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WindowsRt;
@@ -56,7 +57,7 @@ use BrowserDetector\Detector\Version;
  */
 class WindowsRt8Tablet
     extends AbstractDevice
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

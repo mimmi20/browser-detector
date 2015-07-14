@@ -44,7 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class MotorolaXt530
     extends AbstractDevice
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasWurflKeyInterfacw
 {
     /**
      * the detected browser properties

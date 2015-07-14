@@ -37,6 +37,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 
 use BrowserDetector\Detector\Os\AbstractOs;
@@ -52,7 +53,7 @@ use BrowserDetector\Helper\MobileDevice;
  */
 class GeneralMobile
     extends AbstractDevice
-    implements DeviceInterface, DeviceHasChildrenInterface
+    implements DeviceInterface, DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
