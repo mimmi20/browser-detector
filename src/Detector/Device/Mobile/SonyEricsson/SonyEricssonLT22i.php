@@ -50,7 +50,7 @@ use BrowserDetector\Detector\Version;
  */
 class SonyEricssonLT22i
     extends AbstractDevice
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
