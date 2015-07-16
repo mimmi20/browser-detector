@@ -51,7 +51,7 @@ interface DeviceHasWurflKeyInterface
      * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
      * @param \BrowserDetector\Detector\Os\AbstractOs           $os
      *
-     * @return string
+     * @return string|null
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os);
 }

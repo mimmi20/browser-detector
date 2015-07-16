@@ -45,6 +45,11 @@ use Psr\Log\LoggerInterface;
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
+ * @property-read string  $deviceClass
+ * @property-read string  $userAgent
+ * @property-read string  $fallBack
+ * @property-read boolean $actualDeviceRoot
  */
 abstract class AbstractDevice
     implements DeviceInterface
@@ -279,9 +284,6 @@ abstract class AbstractDevice
     {
         if (isset($name)) {
             switch ($name) {
-                case 'id':
-                    return $this->getCapability('wurflKey');
-                    break;
                 case 'userAgent':
                     return $this->getCapability('useragent');
                     break;
