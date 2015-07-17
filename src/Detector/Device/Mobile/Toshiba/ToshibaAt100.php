@@ -183,4 +183,20 @@ class ToshibaAt100
 
         return $this;
     }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    {
+        $wurflKey = null;
+
+        return $wurflKey;
+    }
 }

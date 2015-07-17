@@ -30,14 +30,17 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
 use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
@@ -186,5 +189,21 @@ class MicrosoftXbox
         $chain->setDefaultHandler(new UnknownBrowser());
 
         return $chain->detect();
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    {
+        $wurflKey = null;
+
+        return $wurflKey;
     }
 }
