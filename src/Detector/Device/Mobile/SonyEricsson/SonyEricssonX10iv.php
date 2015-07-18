@@ -182,10 +182,22 @@ class SonyEricssonX10iv
             $this->setCapability('wurflKey', 'sonyericsson_x10iv_ver1_suban23');
         }
 
-        // wurflkey: sonyericsson_e10i_ver1_suban21_03
-        // $engine->setCapability('bmp', true);
-        // $engine->setCapability('xhtml_can_embed_video', 'none');
-
         return $this;
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    {
+        $wurflKey = null;
+
+        return $wurflKey;
     }
 }
