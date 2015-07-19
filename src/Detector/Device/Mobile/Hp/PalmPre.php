@@ -67,8 +67,6 @@ class PalmPre
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'palm_pre_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Pre',
         'model_extra_info'       => null,
@@ -175,32 +173,6 @@ class PalmPre
     }
 
     /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return AbstractDevice
-     */
-    public function detectSpecialProperties()
-    {
-        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if (3 == $modelVersion) {
-            $this->setCapability('resolution_width', 480);
-            $this->setCapability('resolution_height', 800);
-
-            $this->setCapability('model_name', 'Pre3');
-            $this->setCapability('wurflKey', 'hp_pre3_ver1');
-            $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
-            $this->setCapability('colors', 262144);
-
-            $this->manufacturer = new Company\Hp();
-            $this->brand        = new Company\Hp();
-        }
-
-        return $this;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -227,7 +199,22 @@ class PalmPre
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'palm_pre_ver1';
+
+        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if (3 == $modelVersion) {
+            $this->setCapability('resolution_width', 480);
+            $this->setCapability('resolution_height', 800);
+
+            $this->setCapability('model_name', 'Pre3');
+            $wurflKey = 'hp_pre3_ver1';
+            $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
+            $this->setCapability('colors', 262144);
+
+            $this->manufacturer = new Company\Hp();
+            $this->brand        = new Company\Hp();
+        }
 
         return $wurflKey;
     }

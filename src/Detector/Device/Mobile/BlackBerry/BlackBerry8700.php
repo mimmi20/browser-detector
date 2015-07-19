@@ -56,14 +56,12 @@ class BlackBerry8700
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry8700_ver1', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry 8700',
         'model_extra_info'       => null,
         'marketing_name'         => 'BlackBerry 8700',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'clickwheel', // wurflkey: blackberry8700_ver1
+        'pointing_method'        => 'clickwheel',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class BlackBerry8700
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry8700_ver1';
 
         return $wurflKey;
     }

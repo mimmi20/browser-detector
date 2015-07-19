@@ -56,8 +56,6 @@ class KoboTouch
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'kobo_touch_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Touch',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class KoboTouch
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'kobo_touch_ver1';
 
         return $wurflKey;
     }

@@ -58,8 +58,6 @@ class AcerIconiaA100
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'acer_iconia_tab_a100_ver1', // not in wurfl
-
         // device
         'model_name'             => 'A100',
         'model_extra_info'       => null,
@@ -158,27 +156,6 @@ class AcerIconiaA100
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -189,7 +166,7 @@ class AcerIconiaA100
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'acer_iconia_tab_a100_ver1';
 
         return $wurflKey;
     }

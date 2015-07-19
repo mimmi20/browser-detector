@@ -56,8 +56,6 @@ class GarminAsusA50
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'garminasus_a50_ver1', // not in wurfl
-
         // device
         'model_name'             => 'A50',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class GarminAsusA50
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'garminasus_a50_ver1';
 
         return $wurflKey;
     }

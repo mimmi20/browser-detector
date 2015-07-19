@@ -56,8 +56,6 @@ class HuaweiVodafone845
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_v845_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Vodafone 845',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HuaweiVodafone845
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_v845_ver1';
 
         return $wurflKey;
     }

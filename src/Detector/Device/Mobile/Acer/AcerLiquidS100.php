@@ -56,8 +56,6 @@ class AcerLiquidS100
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'acer_liquid_ver1_subandroid_2_1', // not in wurfl
-
         // device
         'model_name'             => 'Acer S100',
         'model_extra_info'       => null,
@@ -169,7 +167,7 @@ class AcerLiquidS100
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'acer_liquid_ver1_subandroid_2_1';
 
         return $wurflKey;
     }

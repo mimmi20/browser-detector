@@ -56,8 +56,6 @@ class DellStreak10Pro
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'dell_streak_10_pro_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Streak 10 Pro',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class DellStreak10Pro
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'dell_streak_10_pro_ver1';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class AsusEepPadTransformerTf101g
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'asus_eee_pad_tf101_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Eee Pad Transformer TF101G',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class AsusEepPadTransformerTf101g
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'asus_eee_pad_tf101_ver1';
 
         return $wurflKey;
     }

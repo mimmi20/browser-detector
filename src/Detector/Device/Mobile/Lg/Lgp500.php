@@ -59,8 +59,6 @@ class Lgp500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_p500_ver1', // not in wurfl
-
         // device
         'model_name'             => 'P500',
         'model_extra_info'       => null,
@@ -162,36 +160,6 @@ class Lgp500
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        // wurflkey: lg_p500_ver1_subua
-        $engine->setCapability('bmp', true);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORONLY
-        );
-
-        if (2.3 == $osVersion) {
-            // $this->setCapability('resolution_width', 640);
-            $this->setCapability('wurflKey', 'lg_p500_ver1_suban23');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -202,7 +170,16 @@ class Lgp500
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lg_p500_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORONLY
+        );
+
+        if (2.3 == $osVersion) {
+            // $this->setCapability('resolution_width', 640);
+            $wurflKey = 'lg_p500_ver1_suban23';
+        }
 
         return $wurflKey;
     }

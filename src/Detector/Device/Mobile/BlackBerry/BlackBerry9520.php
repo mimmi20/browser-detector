@@ -56,14 +56,12 @@ class BlackBerry9520
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry9520_ver1', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry 9520',
-        'model_extra_info'       => 'Oden', // wurflkey: blackberry9520_ver1
-        'marketing_name'         => 'Storm II', // wurflkey: blackberry9520_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: blackberry9520_ver1
-        'pointing_method'        => 'touchscreen', // wurflkey: blackberry9520_ver1
+        'model_extra_info'       => 'Oden',
+        'marketing_name'         => 'Storm II',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class BlackBerry9520
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry9520_ver1';
 
         return $wurflKey;
     }

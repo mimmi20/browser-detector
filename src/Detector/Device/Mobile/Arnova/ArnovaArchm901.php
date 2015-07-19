@@ -56,8 +56,6 @@ class ArnovaArchm901
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'arnova_archm901_ver1', // not in wurfl
-
         // device
         'model_name'             => 'ARCHM901',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class ArnovaArchm901
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'arnova_archm901_ver1';
 
         return $wurflKey;
     }

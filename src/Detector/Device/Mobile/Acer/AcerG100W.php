@@ -56,8 +56,6 @@ class AcerG100W
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'acer_g100w_ver1_suban32', // not in wurfl
-
         // device
         'model_name'             => 'G100W',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class AcerG100W
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'acer_g100w_ver1_suban32';
 
         return $wurflKey;
     }

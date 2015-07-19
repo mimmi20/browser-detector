@@ -56,8 +56,6 @@ class MotorolaXt1021
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'motorola_xt1021_ver1', // not in wurfl
-
         // device
         'model_name'             => 'XT1021',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MotorolaXt1021
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'motorola_xt1021_ver1';
 
         return $wurflKey;
     }

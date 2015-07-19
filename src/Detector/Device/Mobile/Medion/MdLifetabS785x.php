@@ -56,8 +56,6 @@ class MdLifetabS785x
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lenevo_lifetab_s785x_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Lifetab S785X',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MdLifetabS785x
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lenevo_lifetab_s785x_ver1';
 
         return $wurflKey;
     }

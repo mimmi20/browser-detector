@@ -56,8 +56,6 @@ class ArchosA70S
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'archos_a70s_ver1', // not in wurfl
-
         // device
         'model_name'             => 'A70S', // archos_a70s_ver1_sub02
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class ArchosA70S
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'archos_a70s_ver1';
 
         return $wurflKey;
     }

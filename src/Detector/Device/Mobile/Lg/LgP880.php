@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class LgP880
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_p880_ver1', // not in wurfl
-
         // device
         'model_name'             => 'P880',
         'model_extra_info'       => null,
@@ -158,71 +154,6 @@ class LgP880
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        // wurflkey: lg_p880_ver1
-        $engine->setCapability('bmp', true);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 4.0:
-                        $this->setCapability('wurflKey', 'lg_p880_ver1_subuachrome');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -233,7 +164,27 @@ class LgP880
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lg_p880_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Chrome':
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $wurflKey = 'lg_p880_ver1_subuachrome';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

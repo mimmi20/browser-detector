@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\RimOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class BlackBerry9900
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry9900_ver1_subua71', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry Bold Touch 9900',
         'model_extra_info'       => null,
@@ -159,36 +155,6 @@ class BlackBerry9900
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if ('7.0' == $osVersion) {
-            $this->setCapability(
-                'uaprof',
-                'http://www.blackberry.net/go/mobile/profiles/uaprof/9900/7.0.0.rdf'
-            );
-            $this->setCapability('wurflKey', 'blackberry9900_ver1_sub_os7');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -199,7 +165,15 @@ class BlackBerry9900
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry9900_ver1_subua71';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if ('7.0' == $osVersion) {
+            $this->setCapability('wurflKey', 'blackberry9900_ver1_sub_os7');
+        }
 
         return $wurflKey;
     }

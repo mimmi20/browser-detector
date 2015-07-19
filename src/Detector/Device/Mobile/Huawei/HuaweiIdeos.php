@@ -56,8 +56,6 @@ class HuaweiIdeos
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_u8150_ver1_sub02', // not in wurfl
-
         // device
         'model_name'             => 'BM-SWU300',
         'model_extra_info'       => null,
@@ -169,7 +167,7 @@ class HuaweiIdeos
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_u8150_ver1_sub02';
 
         return $wurflKey;
     }

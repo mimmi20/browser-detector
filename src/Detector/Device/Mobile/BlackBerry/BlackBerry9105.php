@@ -56,13 +56,11 @@ class BlackBerry9105
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry9105_ver1_subos6', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry 9105',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Pearl 3G', // wurflkey: blackberry9105_ver1_subos6
-        'has_qwerty_keyboard'    => false, // wurflkey: blackberry9105_ver1_subos6
+        'marketing_name'         => 'Pearl 3G',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'clickwheel',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class BlackBerry9105
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry9105_ver1_subos6';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class AcerIconiaB1711
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'acer_b1_711_ver1', // not in wurfl
-
         // device
         'model_name'             => 'B1-711',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class AcerIconiaB1711
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'acer_b1_711_ver1';
 
         return $wurflKey;
     }

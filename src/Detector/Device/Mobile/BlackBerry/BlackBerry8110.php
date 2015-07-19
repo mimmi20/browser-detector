@@ -56,14 +56,12 @@ class BlackBerry8110
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry8110_ver1_sub45055', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry 8110',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Pearl', // wurflkey: blackberry8110_ver1_sub45055
+        'marketing_name'         => 'Pearl',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'clickwheel', // wurflkey: blackberry8110_ver1_sub45055
+        'pointing_method'        => 'clickwheel',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class BlackBerry8110
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry8110_ver1_sub45055';
 
         return $wurflKey;
     }

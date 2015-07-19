@@ -56,8 +56,6 @@ class LenovoA60
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lenovo_a60_ver1', // not in wurfl
-
         // device
         'model_name'             => 'A60',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class LenovoA60
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lenovo_a60_ver1';
 
         return $wurflKey;
     }

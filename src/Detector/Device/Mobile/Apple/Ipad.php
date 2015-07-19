@@ -30,19 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Os\Darwin;
-use BrowserDetector\Detector\Os\Ios;
-use BrowserDetector\Detector\Os\UnknownOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -62,8 +56,6 @@ class Ipad
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'apple_ipad_ver1', // not in wurfl
-
         // device
         'model_name'             => 'iPad',
         'model_extra_info'       => null,
@@ -148,144 +140,6 @@ class Ipad
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new Ios(),
-            new Darwin()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Ipad
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        $this->setCapability('model_extra_info', $osVersion);
-
-        $engine->setCapability('xhtml_make_phone_call_string', 'none');
-        $engine->setCapability('supports_java_applets', true);
-
-        if (3.2 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_subua32');
-        }
-
-        if (5.0 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub5');
-            $engine->setCapability('html_wi_oma_xhtmlmp_1_0', true);
-            $engine->setCapability('html_wi_imode_compact_generic', true);
-            $engine->setCapability('xhtml_select_as_radiobutton', false);
-            $engine->setCapability('xhtml_avoid_accesskeys', false);
-            $engine->setCapability('xhtml_select_as_dropdown', false);
-            $engine->setCapability('xhtml_supports_forms_in_table', false);
-            $engine->setCapability('xhtml_select_as_popup', false);
-            $engine->setCapability('xhtml_file_upload', 'not_supported');
-            $engine->setCapability('xhtml_supports_css_cell_table_coloring', true);
-            $engine->setCapability('xhtml_can_embed_video', 'none');
-            $engine->setCapability('xhtml_readable_background_color1', '#D9EFFF');
-            $engine->setCapability('xhtml_supports_table_for_layout', true);
-            $engine->setCapability('max_url_length_in_requests', 512);
-            $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-            $engine->setCapability('canvas_support', 'full');
-            $engine->setCapability('viewport_width', 'device_width_token');
-            $engine->setCapability('viewport_supported', true);
-            $engine->setCapability('viewport_userscalable', 'no');
-            $engine->setCapability('css_gradient', 'none');
-            $engine->setCapability('css_gradient_linear', 'none');
-        }
-
-        if (5.1 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub51');
-            $engine->setCapability('css_gradient_linear', 'none');
-        }
-
-        if (6.0 <= (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub6');
-            $engine->setCapability('css_gradient_linear', 'none');
-        }
-
-        if (6.1 <= (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub61');
-        }
-
-        if (7.0 <= (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub7');
-        }
-
-        if (7.1 <= (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub71');
-        }
-
-        if (8.0 <= (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub8');
-        }
-
-        if (8.1 <= (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipad_ver1_sub8_1');
-        }
-
-        $osVersion = $os->detectVersion()->getVersion();
-
-        switch ($osVersion) {
-            case '3.1.3':
-                // $this->setCapability('wurflKey', 'apple_iphone_ver3_1_3_subenus');
-                break;
-            case '3.2.2':
-                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub321');
-                break;
-            case '4.2.1':
-                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub421');
-                break;
-            case '4.3.0':
-                // $this->setCapability('wurflKey', 'apple_iphone_ver4_3');
-                break;
-            case '4.3.1':
-                // $this->setCapability('wurflKey', 'apple_iphone_ver4_3_1');
-                break;
-            case '4.3.2':
-                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub432');
-                break;
-            case '4.3.3':
-                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub432');
-                break;
-            case '4.3.4':
-            case '4.3.5':
-                $this->setCapability('wurflKey', 'apple_ipad_ver1_sub435');
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -296,7 +150,82 @@ class Ipad
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'apple_ipad_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        $this->setCapability('model_extra_info', $osVersion);
+
+        if (3.2 == (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_subua32';
+        }
+
+        if (5.0 == (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_sub5';
+        }
+
+        if (5.1 == (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_sub51';
+        }
+
+        if (6.0 <= (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_sub6';
+        }
+
+        if (6.1 <= (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_sub61';
+        }
+
+        if (7.0 <= (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_sub7';
+        }
+
+        if (7.1 <= (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_sub71';
+        }
+
+        if (8.0 <= (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_sub8';
+        }
+
+        if (8.1 <= (float)$osVersion) {
+            $wurflKey = 'apple_ipad_ver1_sub8_1';
+        }
+
+        $osVersion = $os->detectVersion()->getVersion();
+
+        switch ($osVersion) {
+            case '3.1.3':
+                // $wurflKey = 'apple_iphone_ver3_1_3_subenus';
+                break;
+            case '3.2.2':
+                $wurflKey = 'apple_ipad_ver1_sub321';
+                break;
+            case '4.2.1':
+                $wurflKey = 'apple_ipad_ver1_sub421';
+                break;
+            case '4.3.0':
+                // $wurflKey = 'apple_iphone_ver4_3';
+                break;
+            case '4.3.1':
+                // $wurflKey = 'apple_iphone_ver4_3_1';
+                break;
+            case '4.3.2':
+                $wurflKey = 'apple_ipad_ver1_sub432';
+                break;
+            case '4.3.3':
+                $wurflKey = 'apple_ipad_ver1_sub432';
+                break;
+            case '4.3.4':
+            case '4.3.5':
+                $wurflKey = 'apple_ipad_ver1_sub435';
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

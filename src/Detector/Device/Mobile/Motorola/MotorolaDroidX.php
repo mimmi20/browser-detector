@@ -56,8 +56,6 @@ class MotorolaDroidX
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'mot_droidx_ver1', // not in wurfl
-
         // device
         'model_name'             => 'DroidX',
         'model_extra_info'       => 'Verizon',
@@ -165,7 +163,7 @@ class MotorolaDroidX
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'mot_droidx_ver1';
 
         return $wurflKey;
     }

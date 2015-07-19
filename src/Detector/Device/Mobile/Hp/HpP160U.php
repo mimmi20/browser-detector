@@ -57,8 +57,6 @@ class HpP160U
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'hp_veer_ver1_subwebos211', // not in wurfl
-
         // device
         'model_name'             => 'P160U',
         'model_extra_info'       => null,
@@ -182,7 +180,7 @@ class HpP160U
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'hp_veer_ver1_subwebos211';
 
         return $wurflKey;
     }

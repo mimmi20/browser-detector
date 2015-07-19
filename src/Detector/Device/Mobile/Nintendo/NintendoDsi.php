@@ -60,8 +60,6 @@ class NintendoDsi
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nintendo_dsi_ver1', // not in wurfl
-
         // device
         'model_name'             => 'DSi',
         'model_extra_info'       => null,
@@ -190,7 +188,7 @@ class NintendoDsi
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nintendo_dsi_ver1';
 
         return $wurflKey;
     }

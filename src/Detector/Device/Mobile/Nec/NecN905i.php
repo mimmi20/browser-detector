@@ -56,8 +56,6 @@ class NecN905i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'Nec_n900_ver1', // not in wurfl
-
         // device
         'model_name'             => 'N905i',
         'model_extra_info'       => null,
@@ -168,7 +166,7 @@ class NecN905i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'Nec_n900_ver1';
 
         return $wurflKey;
     }

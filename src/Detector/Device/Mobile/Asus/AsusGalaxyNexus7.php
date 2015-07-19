@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -59,8 +58,6 @@ class AsusGalaxyNexus7
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'google_nexus7_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Nexus 7',
         'model_extra_info'       => null,
@@ -159,79 +156,6 @@ class AsusGalaxyNexus7
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        // wurflkey: google_nexus7_ver1
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 4.3:
-                        $this->setCapability('wurflKey', 'google_nexus7_ver1_suban43');
-                        break;
-                    case 4.4:
-                        $this->setCapability('wurflKey', 'google_nexus7_ver1_suban44');
-                        break;
-                    case 5.0:
-                        $this->setCapability('wurflKey', 'google_nexus7_ver1_suban50');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -242,7 +166,33 @@ class AsusGalaxyNexus7
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'google_nexus7_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Chrome':
+                switch ((float)$osVersion) {
+                    case 4.3:
+                        $wurflKey = 'google_nexus7_ver1_suban43';
+                        break;
+                    case 4.4:
+                        $wurflKey = 'google_nexus7_ver1_suban44';
+                        break;
+                    case 5.0:
+                        $wurflKey = 'google_nexus7_ver1_suban50';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

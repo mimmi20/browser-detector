@@ -56,8 +56,6 @@ class LenovoIdeaPadK1
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lenovo_k1_ver1', // not in wurfl
-
         // device
         'model_name'             => 'K1', // wurflkey: lenovo_k1_ver1_suban32
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class LenovoIdeaPadK1
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lenovo_k1_ver1';
 
         return $wurflKey;
     }

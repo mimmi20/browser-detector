@@ -56,8 +56,6 @@ class MotorolaMz616
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'motorola_xoom2_ver1_suban40', // not in wurfl
-
         // device
         'model_name'             => 'MZ616',
         'model_extra_info'       => null,
@@ -169,7 +167,7 @@ class MotorolaMz616
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'motorola_xoom2_ver1_suban40';
 
         return $wurflKey;
     }

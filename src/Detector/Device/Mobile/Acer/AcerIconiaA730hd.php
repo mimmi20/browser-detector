@@ -59,8 +59,6 @@ class AcerIconiaA730hd
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'acer_iconia_one_ver1', // not in wurfl
-
         // device
         'model_name'             => 'B1-730HD',
         'model_extra_info'       => null,
@@ -158,77 +156,6 @@ class AcerIconiaA730hd
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (2.3 == $osVersion) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        }
-
-        switch ((float)$osVersion) {
-            case 4.4:
-                $this->setCapability('wurflKey', 'acer_iconia_one_ver1_suban44');
-                break;
-            case 2.1:
-            case 2.2:
-            case 2.3:
-            case 3.1:
-            case 3.2:
-            case 4.0:
-            case 4.1:
-            case 4.2:
-            default:
-                // nothing to do here
-                break;
-        }
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -239,7 +166,20 @@ class AcerIconiaA730hd
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'acer_iconia_one_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ((float)$osVersion) {
+            case 4.4:
+                $wurflKey = 'acer_iconia_one_ver1_suban44';
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

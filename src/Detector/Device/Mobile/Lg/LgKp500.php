@@ -56,8 +56,6 @@ class LgKp500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_kp500_ver1', // not in wurfl
-
         // device
         'model_name'             => 'KP500',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class LgKp500
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lg_kp500_ver1';
 
         return $wurflKey;
     }

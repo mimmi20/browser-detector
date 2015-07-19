@@ -56,8 +56,6 @@ class HuaweiIdeosS7
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_ideos_s7_ver1_subenus', // not in wurfl
-
         // device
         'model_name'             => 'IDEOS S7',
         'model_extra_info'       => null,
@@ -169,7 +167,7 @@ class HuaweiIdeosS7
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_ideos_s7_ver1_subenus';
 
         return $wurflKey;
     }

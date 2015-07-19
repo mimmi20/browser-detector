@@ -58,8 +58,6 @@ class Microsoft
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'windows_8_rt_ver1', // not in wurfl
-
         // device
         'model_name'             => 'general Microsoft Device',
         'model_extra_info'       => null,
@@ -193,7 +191,7 @@ class Microsoft
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'windows_8_rt_ver1';
 
         return $wurflKey;
     }

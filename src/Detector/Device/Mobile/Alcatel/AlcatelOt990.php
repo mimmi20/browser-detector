@@ -56,8 +56,6 @@ class AlcatelOt990
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'alcatel_ot990_ver1', // not in wurfl
-
         // device
         'model_name'             => 'OT-990',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class AlcatelOt990
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'alcatel_ot990_ver1';
 
         return $wurflKey;
     }

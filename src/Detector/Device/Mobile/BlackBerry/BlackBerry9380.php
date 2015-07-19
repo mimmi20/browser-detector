@@ -56,14 +56,12 @@ class BlackBerry9380
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry9380_ver1', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry 9380',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Blackberry 9380 Curve', // wurflkey: blackberry9380_ver1
+        'marketing_name'         => 'Blackberry 9380 Curve',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen', // wurflkey: blackberry9380_ver1
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class BlackBerry9380
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry9380_ver1';
 
         return $wurflKey;
     }

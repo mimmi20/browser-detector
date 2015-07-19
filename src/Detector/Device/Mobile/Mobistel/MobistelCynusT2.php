@@ -56,8 +56,6 @@ class MobistelCynusT2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'elson_cynus_t2_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Cynus T2',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MobistelCynusT2
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'elson_cynus_t2_ver1';
 
         return $wurflKey;
     }

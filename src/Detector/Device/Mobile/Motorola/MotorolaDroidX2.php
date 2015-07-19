@@ -56,8 +56,6 @@ class MotorolaDroidX2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'mot_droidx2_ver1_suban23', // not in wurfl
-
         // device
         'model_name'             => 'Droid X2',
         'model_extra_info'       => 'Verizon',
@@ -165,7 +163,7 @@ class MotorolaDroidX2
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'mot_droidx2_ver1_suban23';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class AsusTf300Tg
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'asus_transformer_pad_tf300t_ver1_subuag_subuachrome', // not in wurfl
-
         // device
         'model_name'             => 'TF300TG',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class AsusTf300Tg
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'asus_transformer_pad_tf300t_ver1_subuag_subuachrome';
 
         return $wurflKey;
     }

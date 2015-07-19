@@ -56,8 +56,6 @@ class MotorolaMb860
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'mot_mb860_ver1_suban23', // not in wurfl
-
         // device
         'model_name'             => 'MB860',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MotorolaMb860
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'mot_mb860_ver1_suban23';
 
         return $wurflKey;
     }

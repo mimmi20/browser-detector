@@ -56,8 +56,6 @@ class AcerIconiaA101
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'acer_iconia_tab_a101_ver1', // not in wurfl
-
         // device
         'model_name'             => 'A101',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class AcerIconiaA101
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'acer_iconia_tab_a101_ver1';
 
         return $wurflKey;
     }

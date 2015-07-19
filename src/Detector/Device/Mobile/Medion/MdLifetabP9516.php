@@ -56,8 +56,6 @@ class MdLifetabP9516
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'medion_lifetab_p9516_ver1_suban40', // not in wurfl
-
         // device
         'model_name'             => 'LifeTab P9516',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MdLifetabP9516
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'medion_lifetab_p9516_ver1_suban40';
 
         return $wurflKey;
     }

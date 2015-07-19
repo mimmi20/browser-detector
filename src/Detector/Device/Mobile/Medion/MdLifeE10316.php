@@ -56,8 +56,6 @@ class MdLifeE10316
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'medion_lifetab_e10316_ver1', // not in wurfl
-
         // device
         'model_name'             => 'LifeTab E10316',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MdLifeE10316
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'medion_lifetab_e10316_ver1';
 
         return $wurflKey;
     }

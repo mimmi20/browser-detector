@@ -56,14 +56,12 @@ class LgKm900
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_km900_ver1', // not in wurfl
-
         // device
         'model_name'             => 'KM900',
         'model_extra_info'       => null,
         'marketing_name'         => 'KM900',
-        'has_qwerty_keyboard'    => false, // wurflkey: lg_km900_ver1_subv10b
-        'pointing_method'        => 'touchscreen', // wurflkey: lg_km900_ver1_subv10b
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class LgKm900
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lg_km900_ver1';
 
         return $wurflKey;
     }

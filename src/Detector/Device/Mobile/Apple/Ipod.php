@@ -30,19 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Os\Darwin;
-use BrowserDetector\Detector\Os\Ios;
-use BrowserDetector\Detector\Os\UnknownOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -62,8 +56,6 @@ class Ipod
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'apple_ipod_touch_ver5', // not in wurfl
-
         // device
         'model_name'             => 'iPod Touch',
         'model_extra_info'       => null,
@@ -148,40 +140,18 @@ class Ipod
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new Ios(),
-            new Darwin()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
      *
-     * @return \BrowserDetector\Detector\Device\Mobile\Apple\Ipod
+     * @return string|null
      */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
+    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    {
+        $wurflKey = 'apple_ipod_touch_ver5';
+
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORONLY
         );
@@ -197,48 +167,23 @@ class Ipod
 
         $this->setCapability('model_extra_info', $osVersion);
 
-        $engine->setCapability('accept_third_party_cookie', false);
-        $engine->setCapability('xhtml_make_phone_call_string', 'none');
-        $engine->setCapability('xhtml_send_sms_string', 'none');
-        $browser->setCapability('pdf_support', false);
-        $engine->setCapability('css_gradient', 'none');
-        $engine->setCapability('supports_java_applets', true);
-
         if (6.0 <= (float)$osVersion) {
-            $this->setCapability('wurflKey', 'apple_ipod_touch_ver6');
+            $wurflKey = 'apple_ipod_touch_ver6';
         }
 
         $osVersion = $os->detectVersion()->getVersion();
 
         switch ($osVersion) {
             case '4.2.1':
-                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_2_1_subua');
+                $wurflKey = 'apple_ipod_touch_ver4_2_1_subua';
                 break;
             case '4.3.5':
-                $this->setCapability('wurflKey', 'apple_ipod_touch_ver4_3_5');
+                $wurflKey = 'apple_ipod_touch_ver4_3_5';
                 break;
             default:
                 // nothing to do here
                 break;
         }
-        if ('4.2.1' == $osVersion) {
-        }
-
-        return $this;
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
-    {
-        $wurflKey = null;
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class AsusTransformerPadTf700T
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'asus_tf700t_ver1', // not in wurfl
-
         // device
         'model_name'             => 'TF700T',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class AsusTransformerPadTf700T
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'asus_tf700t_ver1';
 
         return $wurflKey;
     }

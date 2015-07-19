@@ -56,8 +56,6 @@ class MotorolaXt720
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'mot_milestone_ver1_subxt720', // not in wurfl
-
         // device
         'model_name'             => 'Milestone XT720',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MotorolaXt720
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'mot_milestone_ver1_subxt720';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class RimTablet
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'rim_playbook_ver1_subos2', // not in wurfl
-
         // device
         'model_name'             => 'Tablet',
         'model_extra_info'       => null,
@@ -169,7 +167,7 @@ class RimTablet
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'rim_playbook_ver1_subos2';
 
         return $wurflKey;
     }

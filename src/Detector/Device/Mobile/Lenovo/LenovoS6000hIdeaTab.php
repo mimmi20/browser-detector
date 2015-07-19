@@ -56,8 +56,6 @@ class LenovoS6000hIdeaTab
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lenovo_ideatab_s6000h_ver1', // not in wurfl
-
         // device
         'model_name'             => 'S6000-H',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class LenovoS6000hIdeaTab
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lenovo_ideatab_s6000h_ver1';
 
         return $wurflKey;
     }

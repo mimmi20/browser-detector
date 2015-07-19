@@ -56,8 +56,6 @@ class ArchosA80KSC
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'archos_a80ksc_ver1', // not in wurfl
-
         // device
         'model_name'             => 'A80KSC',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class ArchosA80KSC
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'archos_a80ksc_ver1';
 
         return $wurflKey;
     }

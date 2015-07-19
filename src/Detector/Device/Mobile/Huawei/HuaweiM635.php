@@ -56,8 +56,6 @@ class HuaweiM635
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_m635_ver1', // not in wurfl
-
         // device
         'model_name'             => 'M635',
         'model_extra_info'       => null,
@@ -166,7 +164,7 @@ class HuaweiM635
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_m635_ver1';
 
         return $wurflKey;
     }

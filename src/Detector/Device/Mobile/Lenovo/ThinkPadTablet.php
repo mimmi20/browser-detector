@@ -56,8 +56,6 @@ class ThinkPadTablet
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lenovo_thankpad_tablet_ver1_suban40', // not in wurfl
-
         // device
         'model_name'             => '1838',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class ThinkPadTablet
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lenovo_thankpad_tablet_ver1_suban40';
 
         return $wurflKey;
     }

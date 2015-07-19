@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Huawei;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class HuaweiU8510
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_s41hw_ver1_subu8510', // not in wurfl
-
         // device
         'model_name'             => 'S41HW',
         'model_extra_info'       => null,
@@ -157,26 +153,6 @@ class HuaweiU8510
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -187,7 +163,7 @@ class HuaweiU8510
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_s41hw_ver1_subu8510';
 
         return $wurflKey;
     }

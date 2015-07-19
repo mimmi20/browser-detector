@@ -30,19 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WebOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -62,8 +56,6 @@ class HpTouchpad
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'hp_touchpad_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Touchpad',
         'model_extra_info'       => null,
@@ -149,103 +141,6 @@ class HpTouchpad
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new WebOs(),
-            new AndroidOs()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Hp\HpTouchpad
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_avoid_accesskeys', false);
-        $engine->setCapability('xhtml_supports_forms_in_table', false);
-        $engine->setCapability('xhtml_allows_disabled_form_elements', false);
-        $engine->setCapability('xhtml_supports_invisible_text', false);
-        $engine->setCapability('bmp', true); // wurflkey: hp_touchpad_ver1
-        $engine->setCapability('ajax_support_javascript', true);
-
-        if (('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName()) && 'Android' == $os->getName()
-        ) {
-            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1');
-            $this->setCapability('model_extra_info', 'Android port');
-            $this->setCapability('colors', 65536);
-
-            $osVersion = $os->detectVersion()->getVersion(
-                Version::MAJORMINOR
-            );
-
-            switch ($browser->getName()) {
-                case 'Android Webkit':
-                    switch ((float)$osVersion) {
-                        case 4.0:
-                            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1_suban40rom');
-                            break;
-                        case 2.1:
-                        case 2.2:
-                        case 2.3:
-                        case 3.1:
-                        case 3.2:
-                        case 4.2:
-                        default:
-                            // nothing to do here
-                            break;
-                    }
-                    break;
-                case 'Chrome':
-                    $engine->setCapability('is_sencha_touch_ok', false);
-
-                    switch ((float)$osVersion) {
-                        case 4.0:
-                            $this->setCapability('wurflKey', 'hp_touchpad_android_ver1_suban40rom');
-                            break;
-                        case 2.1:
-                        case 2.2:
-                        case 2.3:
-                        case 3.1:
-                        case 3.2:
-                        case 4.1:
-                        case 4.2:
-                        default:
-                            // nothing to do here
-                            break;
-                    }
-                    break;
-                default:
-                    // nothing to do here
-                    break;
-            }
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -256,7 +151,41 @@ class HpTouchpad
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'hp_touchpad_ver1';
+
+        if (('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName())
+            && 'Android' == $os->getName()
+        ) {
+            $osVersion = $os->detectVersion()->getVersion(
+                Version::MAJORMINOR
+            );
+
+            switch ($browser->getName()) {
+                case 'Android Webkit':
+                    switch ((float)$osVersion) {
+                        case 4.0:
+                            $wurflKey = 'hp_touchpad_android_ver1_suban40rom';
+                            break;
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                    break;
+                case 'Chrome':
+                    switch ((float)$osVersion) {
+                        case 4.0:
+                            $wurflKey = 'hp_touchpad_android_ver1_suban40rom';
+                            break;
+                        default:
+                            // nothing to do here
+                            break;
+                    }
+                    break;
+                default:
+                    // nothing to do here
+                    break;
+            }
+        }
 
         return $wurflKey;
     }

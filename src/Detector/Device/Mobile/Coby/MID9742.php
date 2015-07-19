@@ -56,8 +56,6 @@ class MID9742
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'coby_mid9742_ver1', // not in wurfl
-
         // device
         'model_name'             => 'MID9742',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MID9742
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'coby_mid9742_ver1';
 
         return $wurflKey;
     }

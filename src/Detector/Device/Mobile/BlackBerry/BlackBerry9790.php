@@ -56,8 +56,6 @@ class BlackBerry9790
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry9790_ver1', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry 9790',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class BlackBerry9790
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry9790_ver1';
 
         return $wurflKey;
     }

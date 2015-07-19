@@ -31,16 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 
 use BrowserDetector\Detector\Browser\AbstractBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\RimTabletOs;
-use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -59,8 +55,6 @@ class RimPlayBook
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'rim_playbook_ver1', // not in wurfl
-
         // device
         'model_name'             => 'PlayBook',
         'model_extra_info'       => null,
@@ -145,26 +139,6 @@ class RimPlayBook
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new RimTabletOs(),
-            new AndroidOs()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -175,7 +149,7 @@ class RimPlayBook
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'rim_playbook_ver1';
 
         return $wurflKey;
     }

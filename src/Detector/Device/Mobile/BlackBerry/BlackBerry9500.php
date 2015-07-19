@@ -56,15 +56,12 @@ class BlackBerry9500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry9500_ver1', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry 9500',
-        'model_extra_info'       => 'Thunder', // wurflkey: blackberry9500_ver1_subos5
-        'marketing_name'         => 'Storm', // wurflkey: blackberry9500_ver1_subos5
+        'model_extra_info'       => 'Thunder',
+        'marketing_name'         => 'Storm',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
-        // wurflkey: blackberry9500_ver1_subos5     // wurflkey: blackberry9500_ver1_subos5
 
         // product info
         'ununiqueness_handler'   => null,
@@ -167,7 +164,7 @@ class BlackBerry9500
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry9500_ver1';
 
         return $wurflKey;
     }

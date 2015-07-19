@@ -56,8 +56,6 @@ class Archos101G9
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'archos_101g9_ver1_suban40', // not in wurfl
-
         // device
         'model_name'             => '101 G9',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class Archos101G9
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'archos_101g9_ver1_suban40';
 
         return $wurflKey;
     }

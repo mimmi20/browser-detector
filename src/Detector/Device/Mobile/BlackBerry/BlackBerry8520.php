@@ -56,12 +56,10 @@ class BlackBerry8520
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'blackberry8520_ver1', // not in wurfl
-
         // device
         'model_name'             => 'BlackBerry 8520',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Curve', // blackberry8520_ver1_sub500822
+        'marketing_name'         => 'Curve',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'clickwheel',
         // product info
@@ -71,7 +69,7 @@ class BlackBerry8520
         'uaprof3'                => 'http://www.blackberry.net/go/mobile/profiles/uaprof/8520_gprs/4.6.1.rdf',
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 27, // blackberry8520_ver1_sub500822
+        'physical_screen_width'  => 27,
         'physical_screen_height' => 27,
         'columns'                => 32,
         'rows'                   => 16,
@@ -165,7 +163,7 @@ class BlackBerry8520
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'blackberry8520_ver1';
 
         return $wurflKey;
     }

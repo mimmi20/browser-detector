@@ -58,8 +58,6 @@ class V860
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'alcatel_v860_ver1', // not in wurfl
-
         // device
         'model_name'             => 'v860',
         'model_extra_info'       => 'Vodafone',
@@ -157,28 +155,6 @@ class V860
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        // wurflkey: alcatel_v860_ver1
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -189,7 +165,7 @@ class V860
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'alcatel_v860_ver1';
 
         return $wurflKey;
     }

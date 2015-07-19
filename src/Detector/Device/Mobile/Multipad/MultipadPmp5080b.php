@@ -56,8 +56,6 @@ class MultipadPmp5080b
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'multipad_pmp5080b_ver1_suban40', // not in wurfl
-
         // device
         'model_name'             => 'PMP5080B',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MultipadPmp5080b
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'multipad_pmp5080b_ver1_suban40';
 
         return $wurflKey;
     }

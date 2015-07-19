@@ -56,8 +56,6 @@ class HuaweiY300
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_Y300_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Y300',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HuaweiY300
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_Y300_ver1';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class AcerLiquidZ150
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'acer_z150_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Z150',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class AcerLiquidZ150
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'acer_z150_ver1';
 
         return $wurflKey;
     }

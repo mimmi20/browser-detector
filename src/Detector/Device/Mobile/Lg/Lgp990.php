@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class Lgp990
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_p990_ver1', // not in wurfl
-
         // device
         'model_name'             => 'P990',
         'model_extra_info'       => null,
@@ -158,81 +154,6 @@ class Lgp990
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('softkey_support', true);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 2.2:
-                        $this->setCapability('wurflKey', 'lg_p990_ver1_suban22');
-
-                        $osVersion = $os->detectVersion()->getVersion();
-
-                        if ('2.2.2' == $osVersion) {
-                            //Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; LG-P990 Build/FRG83G) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 MMS/LG-Android-MMS-V1.0/1.2
-                            $this->setCapability('wurflKey', 'lg_p990_ver1_sub_android222b');
-                        }
-                        break;
-                    case 2.3:
-                        $this->setCapability('wurflKey', 'lg_p990_ver1_suban23');
-                        break;
-                    case 2.1:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -243,7 +164,37 @@ class Lgp990
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lg_p990_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.2:
+                        $wurflKey = 'lg_p990_ver1_suban22';
+
+                        $osVersion = $os->detectVersion()->getVersion();
+
+                        if ('2.2.2' == $osVersion) {
+                            //Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; LG-P990 Build/FRG83G) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 MMS/LG-Android-MMS-V1.0/1.2
+                            $wurflKey = 'lg_p990_ver1_sub_android222b';
+                        }
+                        break;
+                    case 2.3:
+                        $wurflKey = 'lg_p990_ver1_suban23';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

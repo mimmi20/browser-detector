@@ -56,8 +56,6 @@ class MID8024
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'coby_mid8024_ver1_suban23', // not in wurfl
-
         // device
         'model_name'             => 'MID8024',
         'model_extra_info'       => '4GB',
@@ -165,7 +163,7 @@ class MID8024
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'coby_mid8024_ver1_suban23';
 
         return $wurflKey;
     }

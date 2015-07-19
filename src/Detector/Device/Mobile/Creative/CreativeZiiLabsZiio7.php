@@ -56,8 +56,6 @@ class CreativeZiiLabsZiio7
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'creative_ziio7_ver1', // not in wurfl
-
         // device
         'model_name'             => 'ZiiO7',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class CreativeZiiLabsZiio7
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'creative_ziio7_ver1';
 
         return $wurflKey;
     }

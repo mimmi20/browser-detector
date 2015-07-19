@@ -56,8 +56,6 @@ class HuaweiU8110
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_tsp21_ver1', // not in wurfl
-
         // device
         'model_name'             => 'U8110',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HuaweiU8110
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_tsp21_ver1';
 
         return $wurflKey;
     }

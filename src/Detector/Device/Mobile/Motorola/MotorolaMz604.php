@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Motorola;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class MotorolaMz604
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'mot_mz601_ver1_suban40mz604_subuachrome', // not in wurfl
-
         // device
         'model_name'             => 'MZ604', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
         'model_extra_info'       => null,
@@ -158,33 +154,6 @@ class MotorolaMz604
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORONLY
-        );
-
-        if (3.2 == $osVersion) {
-            // $this->setCapability('resolution_width', 640);
-            $this->setCapability('wurflKey', 'mot_mz601_ver1_suban32mz604');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -195,7 +164,15 @@ class MotorolaMz604
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'mot_mz601_ver1_suban40mz604_subuachrome';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORONLY
+        );
+
+        if (3.2 == $osVersion) {
+            $wurflKey = 'mot_mz601_ver1_suban32mz604';
+        }
 
         return $wurflKey;
     }

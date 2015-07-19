@@ -56,8 +56,6 @@ class MotorolaXt610
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'mot_xt610_ver1', // not in wurfl
-
         // device
         'model_name'             => 'XT610',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MotorolaXt610
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'mot_xt610_ver1';
 
         return $wurflKey;
     }

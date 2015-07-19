@@ -56,8 +56,6 @@ class HuaweiU8651
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'tmobile_u8651t_ver1_subuaprism', // not in wurfl
-
         // device
         'model_name'             => 'U8651T',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HuaweiU8651
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'tmobile_u8651t_ver1_subuaprism';
 
         return $wurflKey;
     }

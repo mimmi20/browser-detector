@@ -56,8 +56,6 @@ class NextbookM803hc
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nextbook_m803hc_ver1', // not in wurfl
-
         // device
         'model_name'             => 'M803HC',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class NextbookM803hc
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nextbook_m803hc_ver1';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class Lgp710
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_p710_ver1', // not in wurfl
-
         // device
         'model_name'             => 'P710',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class Lgp710
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lg_p710_ver1';
 
         return $wurflKey;
     }

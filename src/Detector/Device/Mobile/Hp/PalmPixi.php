@@ -154,24 +154,6 @@ class PalmPixi
     }
 
     /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return AbstractDevice
-     */
-    public function detectSpecialProperties()
-    {
-        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORMINOR);
-
-        if ('1.1' == $modelVersion) {
-            $this->setCapability('model_name', 'Pixi Plus');
-            $this->setCapability('wurflKey', 'palm_pixi_plus_ver1');
-        }
-
-        return $this;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \BrowserDetector\Detector\Version
@@ -199,6 +181,13 @@ class PalmPixi
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
         $wurflKey = null;
+
+        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORMINOR);
+
+        if ('1.1' == $modelVersion) {
+            $this->setCapability('model_name', 'Pixi Plus');
+            $wurflKey = 'palm_pixi_plus_ver1';
+        }
 
         return $wurflKey;
     }

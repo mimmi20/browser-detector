@@ -56,8 +56,6 @@ class MdLifetabE10320
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'medion_lifetab_e10320_ver1', // not in wurfl
-
         // device
         'model_name'             => 'E10320',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MdLifetabE10320
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'medion_lifetab_e10320_ver1';
 
         return $wurflKey;
     }

@@ -31,16 +31,12 @@
 namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Browser\AbstractBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Maemo;
-use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -59,8 +55,6 @@ class AmazonKfot
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'amazon_kindle_fire_7_ver1', // not in wurfl
-
         // device
         'model_name'             => 'KFOT',
         'model_extra_info'       => 'Gen 2',
@@ -145,26 +139,6 @@ class AmazonKfot
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new AndroidOs(),
-            new Maemo()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -175,7 +149,7 @@ class AmazonKfot
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'amazon_kindle_fire_7_ver1';
 
         return $wurflKey;
     }

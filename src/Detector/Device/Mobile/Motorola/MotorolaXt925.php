@@ -56,8 +56,6 @@ class MotorolaXt925
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'mot_xt925_ver1_subuamot', // not in wurfl
-
         // device
         'model_name'             => 'XT925',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MotorolaXt925
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'mot_xt925_ver1_subuamot';
 
         return $wurflKey;
     }

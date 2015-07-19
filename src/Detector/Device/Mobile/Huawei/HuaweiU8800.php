@@ -56,8 +56,6 @@ class HuaweiU8800
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_ideos_x5_ver1', // not in wurfl
-
         // device
         'model_name'             => 'U8800',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HuaweiU8800
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_ideos_x5_ver1';
 
         return $wurflKey;
     }

@@ -30,18 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Maemo;
-use BrowserDetector\Detector\Os\UnknownOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
@@ -61,8 +56,6 @@ class AmazonKftt
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'amazon_kindle_fire_hd7_ver1_subuadesktop', // not in wurfl
-
         // device
         'model_name'             => 'KFTT',
         'model_extra_info'       => null,
@@ -149,70 +142,6 @@ class AmazonKftt
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new AndroidOs(),
-            new Maemo()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        if ('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName()) {
-            $this->setCapability('wurflKey', 'amazon_kindle_fire_hd7_ver1_subuanosilk');
-        }
-
-        $engine->setCapability('png', false);
-        $engine->setCapability('jpg', false);
-        $engine->setCapability('xhtml_preferred_charset', 'utf8');
-        $engine->setCapability('transparent_png_index', false);
-        $engine->setCapability('transparent_png_alpha', false);
-        $engine->setCapability('max_url_length_in_requests', 128);
-        $engine->setCapability('ajax_preferred_geoloc_api', 'none');
-        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', false);
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('wml_1_2', true);
-        $engine->setCapability('wml_1_3', true);
-        $engine->setCapability('xhtml_support_level', 1);
-        $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/vnd.wap.xhtml+xml');
-        $engine->setCapability('xhtml_file_upload', 'not_supported');
-        $engine->setCapability('xhtml_make_phone_call_string', 'none');
-        $engine->setCapability('xhtml_allows_disabled_form_elements', false);
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        $engine->setCapability('xhtml_format_as_css_property', true);
-        $engine->setCapability('xhtml_marquee_as_css_property', true);
-        $browser->setCapability('pdf_support', false);
-        $engine->setCapability('is_sencha_touch_ok', true);
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -223,7 +152,10 @@ class AmazonKftt
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'amazon_kindle_fire_hd7_ver1_subuadesktop';
+        if ('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName()) {
+            $wurflKey = 'amazon_kindle_fire_hd7_ver1_subuanosilk';
+        }
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class Sl101
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'asus_eee_pad_sl101_ver1_suban40', // not in wurfl
-
         // device
         'model_name'             => 'SL101',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class Sl101
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'asus_eee_pad_sl101_ver1_suban40';
 
         return $wurflKey;
     }

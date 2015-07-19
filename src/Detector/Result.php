@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Helper\Utils;
 use WurflData\Loader;
@@ -1493,9 +1494,9 @@ class Result
         AbstractBrowser $browser,
         AbstractEngine $engine
     ) {
-        if ($device->getDeviceType()->isMobile()) {
-            $wurflKey = null; //$device->getCapability('wurflKey');
-        } elseif ($browser instanceof BrowserHasWurflKeyInterface) {
+        if ($device->getDeviceType()->isMobile() && $device instanceof DeviceHasWurflKeyInterface) {
+            $wurflKey = $device->getWurflKey($browser, $engine, $os);
+        } elseif (!$device->getDeviceType()->isMobile() && $browser instanceof BrowserHasWurflKeyInterface) {
             $wurflKey = $browser->getWurflKey($os);
         } else {
             $wurflKey = null;

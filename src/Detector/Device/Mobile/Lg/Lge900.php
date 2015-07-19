@@ -56,8 +56,6 @@ class Lge900
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'lg_e900_ver1_subos7_5', // not in wurfl
-
         // device
         'model_name'             => 'E900',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class Lge900
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'lg_e900_ver1_subos7_5';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class MotorolaMb511
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'motorola_mb511_ver1', // not in wurfl
-
         // device
         'model_name'             => 'MB511',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class MotorolaMb511
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'motorola_mb511_ver1';
 
         return $wurflKey;
     }

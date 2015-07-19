@@ -56,8 +56,6 @@ class HuaweiG5100100
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'huawei_t8951_ver1_suban41g5100100', // not in wurfl
-
         // device
         'model_name'             => 'G510-0100',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HuaweiG5100100
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'huawei_t8951_ver1_suban41g5100100';
 
         return $wurflKey;
     }
