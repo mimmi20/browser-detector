@@ -30,19 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -61,13 +55,11 @@ class HtcHd2T8585
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_t8585_ver1', // not in wurfl
-
         // device
-        'model_name'             => 'T8585', // wurflkey: htc_t8585_ver1
+        'model_name'             => 'T8585',
         'model_extra_info'       => null,
         'marketing_name'         => 'HD2',
-        'has_qwerty_keyboard'    => false, // wurflkey: htc_t8585_ver1
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -147,54 +139,6 @@ class HtcHd2T8585
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new WindowsMobileOs(),
-            new AndroidOs()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Htc\HtcHd2T8585
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osName = $os->getName();
-
-        if ('Android' == $osName) {
-            // htc_hd2_android_ver1_subua40htc
-            $this->setCapability('has_qwerty_keyboard', true);
-            $this->setCapability('physical_screen_width', 57);
-            $this->setCapability('physical_screen_height', 94);
-            $this->setCapability('dual_orientation', true);
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -205,7 +149,7 @@ class HtcHd2T8585
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_t8585_ver1';
 
         return $wurflKey;
     }

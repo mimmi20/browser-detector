@@ -56,12 +56,10 @@ class HtcSpark
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_spark_ver1_subtrophy75', // not in wurfl
-
         // device
         'model_name'             => 'Spark',
         'model_extra_info'       => null,
-        'marketing_name'         => '7 Trophy', // wurflkey: htc_spark_ver1_subtrophy75
+        'marketing_name'         => '7 Trophy',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -71,7 +69,7 @@ class HtcSpark
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 50, // wurflkey: htc_spark_ver1_subtrophy75
+        'physical_screen_width'  => 50,
         'physical_screen_height' => 83,
         'columns'                => 16,
         'rows'                   => 36,
@@ -165,7 +163,7 @@ class HtcSpark
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_spark_ver1_subtrophy75';
 
         return $wurflKey;
     }

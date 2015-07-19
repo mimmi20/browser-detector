@@ -56,8 +56,6 @@ class HtcTattoo
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_tattoo_ver1_sub16_01', // not in wurfl
-
         // device
         'model_name'             => 'Tattoo',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcTattoo
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_tattoo_ver1_sub16_01';
 
         return $wurflKey;
     }

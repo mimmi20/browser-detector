@@ -59,13 +59,11 @@ class HtcTouchHdT8282
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_touch_hd_t8282_ver1', // not in wurfl
-
         // device
-        'model_name'             => 'Touch HD T8282', // wurflkey: htc_touch_hd_t8282_ver1
+        'model_name'             => 'Touch HD T8282',
         'model_extra_info'       => null,
-        'marketing_name'         => 'BlackStone', // wurflkey: htc_touch_hd_t8282_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: htc_touch_hd_t8282_ver1
+        'marketing_name'         => 'BlackStone',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -145,26 +143,6 @@ class HtcTouchHdT8282
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new WindowsMobileOs(),
-            new AndroidOs()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -175,7 +153,7 @@ class HtcTouchHdT8282
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_touch_hd_t8282_ver1';
 
         return $wurflKey;
     }

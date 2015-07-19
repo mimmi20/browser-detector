@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Zte;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class ZteBaseLutea2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'zte_skate_ver1_subuabase', // not in wurfl
-
         // device
         'model_name'             => 'Lutea 2',
         'model_extra_info'       => 'for BASE ', // wurflkey: zte_skate_ver1_subuabase
@@ -157,26 +153,6 @@ class ZteBaseLutea2
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -187,7 +163,7 @@ class ZteBaseLutea2
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'zte_skate_ver1_subuabase';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class HtcSensationXlBeats
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_x315e_ver1', // not in wurfl
-
         // device
         'model_name'             => 'X315e',
         'model_extra_info'       => null,
@@ -182,7 +180,7 @@ class HtcSensationXlBeats
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_x315e_ver1';
 
         return $wurflKey;
     }

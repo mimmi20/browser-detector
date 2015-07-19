@@ -56,8 +56,6 @@ class NokiaX205
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_x2_05_ver1_subovibrsr', // not in wurfl
-
         // device
         'model_name'             => 'X2-05',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class NokiaX205
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_x2_05_ver1_subovibrsr';
 
         return $wurflKey;
     }

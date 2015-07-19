@@ -56,8 +56,6 @@ class HtcOneM8
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_m8_ver1', // not in wurfl
-
         // device
         'model_name'             => 'M8',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcOneM8
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_m8_ver1';
 
         return $wurflKey;
     }

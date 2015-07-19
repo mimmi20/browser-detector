@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class HtcA810eChaCha
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_chacha_ver1_subuauscore', // not in wurfl
-
         // device
         'model_name'             => 'A810e',
         'model_extra_info'       => null,
@@ -160,27 +156,6 @@ class HtcA810eChaCha
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        // wurflkey: htc_chacha_ver1_subuauscore
-        $engine->setCapability('bmp', true);
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -191,7 +166,7 @@ class HtcA810eChaCha
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_chacha_ver1_subuauscore';
 
         return $wurflKey;
     }

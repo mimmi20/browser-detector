@@ -56,14 +56,12 @@ class Nokia300
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_300_ver1', // not in wurfl
-
         // device
         'model_name'             => '300',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Asha 300', // wurflkey: nokia_300_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_300_ver1
-        'pointing_method'        => 'touchscreen', // wurflkey: nokia_300_ver1
+        'marketing_name'         => 'Asha 300',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class Nokia300
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_300_ver1';
 
         return $wurflKey;
     }

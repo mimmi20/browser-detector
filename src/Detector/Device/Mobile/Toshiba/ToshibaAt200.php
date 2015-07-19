@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Toshiba;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class ToshibaAt200
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'toshiba_at200_ver1', // not in wurfl
-
         // device
         'model_name'             => 'AT200',
         'model_extra_info'       => null,
@@ -158,34 +154,6 @@ class ToshibaAt200
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
-
-        if (3.2 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'toshiba_at200_ver1_suban32');
-        }
-
-        if (4.0 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'toshiba_at200_ver1_suban40');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -196,7 +164,17 @@ class ToshibaAt200
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'toshiba_at200_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
+
+        if (3.2 == (float)$osVersion) {
+            $wurflKey = 'toshiba_at200_ver1_suban32';
+        }
+
+        if (4.0 == (float)$osVersion) {
+            $wurflKey = 'toshiba_at200_ver1_suban40';
+        }
 
         return $wurflKey;
     }

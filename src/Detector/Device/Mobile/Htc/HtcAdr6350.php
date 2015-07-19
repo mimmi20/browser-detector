@@ -56,8 +56,6 @@ class HtcAdr6350
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_ADR6350_ver1', // not in wurfl
-
         // device
         'model_name'             => 'ADR6350',
         'model_extra_info'       => 'ADR6350',
@@ -170,7 +168,7 @@ class HtcAdr6350
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_ADR6350_ver1';
 
         return $wurflKey;
     }

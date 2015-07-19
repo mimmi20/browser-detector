@@ -56,13 +56,11 @@ class Nokia5310
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_5310_xpressmusic_ver1_sub0363', // not in wurfl
-
         // device
-        'model_name'             => '5310 XpressMusic', // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
-        'model_extra_info'       => null, // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
-        'marketing_name'         => 'XpressMusic', // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_5310_xpressmusic_ver1_sub0363
+        'model_name'             => '5310 XpressMusic',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'XpressMusic',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => '',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class Nokia5310
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_5310_xpressmusic_ver1_sub0363';
 
         return $wurflKey;
     }

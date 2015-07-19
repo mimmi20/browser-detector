@@ -56,8 +56,6 @@ class Nokia5800XpressMusic
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_5800d_ver1', // not in wurfl
-
         // device
         'model_name'             => '5800 XpressMusic',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class Nokia5800XpressMusic
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_5800d_ver1';
 
         return $wurflKey;
     }

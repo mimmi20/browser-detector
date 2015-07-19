@@ -56,8 +56,6 @@ class HtcSalsa
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_salsa_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Salsa',
         'model_extra_info'       => null,
@@ -168,7 +166,7 @@ class HtcSalsa
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_salsa_ver1';
 
         return $wurflKey;
     }

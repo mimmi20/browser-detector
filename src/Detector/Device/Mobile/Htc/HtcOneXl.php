@@ -56,8 +56,6 @@ class HtcOneXl
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_one_x_ver1_subuaxl', // not in wurfl
-
         // device
         'model_name'             => 'PJ83100',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcOneXl
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_one_x_ver1_subuaxl';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class TmobileMyTouch4G
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'tmobile_mytouch4g_ver1_suban23', // not in wurfl
-
         // device
         'model_name'             => 'myTouch4G',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class TmobileMyTouch4G
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'tmobile_mytouch4g_ver1_suban23';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class HtcLegend
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_legend_ver1_suban22', // not in wurfl
-
         // device
         'model_name'             => 'Legend',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcLegend
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_legend_ver1_suban22';
 
         return $wurflKey;
     }

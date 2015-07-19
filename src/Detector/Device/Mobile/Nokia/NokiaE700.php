@@ -56,8 +56,6 @@ class NokiaE700
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_e7_00_ver1_subua53', // not in wurfl
-
         // device
         'model_name'             => 'E7-00',
         'model_extra_info'       => null,
@@ -71,7 +69,7 @@ class NokiaE700
         'uaprof3'                => 'http://nds1.nds.nokia.com/uaprof/NE7-00r310.xml',
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 50, // wurflkey: nokia_e7_00_ver1_subua53
+        'physical_screen_width'  => 50,
         'physical_screen_height' => 89,
         'columns'                => 17,
         'rows'                   => 13,
@@ -80,7 +78,7 @@ class NokiaE700
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 16777216, // wurflkey: nokia_e7_00_ver1_subua53
+        'colors'                 => 16777216,
 
         // sms
         'sms_enabled'            => true,
@@ -166,7 +164,7 @@ class NokiaE700
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_e7_00_ver1_subua53';
 
         return $wurflKey;
     }

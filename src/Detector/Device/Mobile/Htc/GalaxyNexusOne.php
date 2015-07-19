@@ -56,8 +56,6 @@ class GalaxyNexusOne
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'google_nexusone_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Nexus One',
         'model_extra_info'       => 'Google Phone',
@@ -165,7 +163,7 @@ class GalaxyNexusOne
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'google_nexusone_ver1';
 
         return $wurflKey;
     }

@@ -56,14 +56,12 @@ class NokiaE51
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_e51_ver1_sub13003456', // not in wurfl
-
         // device
         'model_name'             => 'E51',
         'model_extra_info'       => null,
         'marketing_name'         => null,
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_e51_ver1_sub13003456
-        'pointing_method'        => '', // wurflkey: nokia_e51_ver1_sub13003456
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => '',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class NokiaE51
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_e51_ver1_sub13003456';
 
         return $wurflKey;
     }

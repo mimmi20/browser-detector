@@ -56,14 +56,12 @@ class NokiaC301
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_c3_01_ver1', // not in wurfl
-
         // device
         'model_name'             => 'C3-01',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen', // wurflkey: nokia_c3_01_ver1
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class NokiaC301
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_c3_01_ver1';
 
         return $wurflKey;
     }

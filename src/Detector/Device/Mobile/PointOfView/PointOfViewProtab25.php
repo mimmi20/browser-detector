@@ -56,8 +56,6 @@ class PointOfViewProtab25
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'pointofview_protab_2xl_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Protab 25',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class PointOfViewProtab25
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'pointofview_protab_2xl_ver1';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class HTC6435lvw
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_a310e_ver1', // not in wurfl
-
         // device
         'model_name'             => 'HTC6435LVW',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HTC6435lvw
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_a310e_ver1';
 
         return $wurflKey;
     }

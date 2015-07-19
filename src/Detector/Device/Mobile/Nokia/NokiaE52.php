@@ -56,13 +56,11 @@ class NokiaE52
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_e52_ver1', // not in wurfl
-
         // device
         'model_name'             => 'E52',
         'model_extra_info'       => null,
         'marketing_name'         => null,
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_e52_ver1_sub033002
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class NokiaE52
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_e52_ver1';
 
         return $wurflKey;
     }

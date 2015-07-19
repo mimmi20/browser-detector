@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class NokiaLumia800
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_lumia_800_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Lumia 800',
         'model_extra_info'       => 'Vodafone',
@@ -77,7 +73,7 @@ class NokiaLumia800
         'physical_screen_height' => 81,
         'columns'                => 16,
         'rows'                   => 12,
-        'max_image_width'        => 320, // wurflkey: nokia_lumia_800_ver1
+        'max_image_width'        => 320,
         'max_image_height'       => 480,
         'resolution_width'       => 480,
         'resolution_height'      => 800,
@@ -157,29 +153,6 @@ class NokiaLumia800
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia800
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        $engine->setCapability('ajax_preferred_geoloc_api', 'w3c_api');
-        $engine->setCapability('canvas_support', 'full');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -190,7 +163,7 @@ class NokiaLumia800
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_lumia_800_ver1';
 
         return $wurflKey;
     }

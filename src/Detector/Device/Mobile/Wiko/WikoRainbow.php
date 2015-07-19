@@ -56,8 +56,6 @@ class WikoRainbow
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'wiko_rainbow_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Rainbow',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class WikoRainbow
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'wiko_rainbow_ver1';
 
         return $wurflKey;
     }

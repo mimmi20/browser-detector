@@ -56,8 +56,6 @@ class NokiaC300
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_c3_00_ver1', // not in wurfl
-
         // device
         'model_name'             => 'C3-00',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class NokiaC300
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_c3_00_ver1';
 
         return $wurflKey;
     }

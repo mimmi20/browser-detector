@@ -56,8 +56,6 @@ class Nokia6700c
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_6700c_ver1_2', // not in wurfl
-
         // device
         'model_name'             => '6700 classic',
         'model_extra_info'       => null,
@@ -166,7 +164,7 @@ class Nokia6700c
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_6700c_ver1_2';
 
         return $wurflKey;
     }

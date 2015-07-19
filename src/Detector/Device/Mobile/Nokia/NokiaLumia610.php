@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class NokiaLumia610
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_lumia_610_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Lumia 610',
         'model_extra_info'       => null,
@@ -157,33 +153,6 @@ class NokiaLumia610
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia610
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        // wurflkey: nokia_lumia_610_ver1
-        $engine->setCapability('bmp', false);
-        $engine->setCapability('wbmp', false);
-        $engine->setCapability('tiff', false);
-
-        if ($this->utils->checkIfContains('vodafone', true)) {
-            $this->setCapability('model_extra_info', 'for Vodafone');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -194,7 +163,11 @@ class NokiaLumia610
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_lumia_610_ver1';
+
+        if ($this->utils->checkIfContains('vodafone', true)) {
+            $this->setCapability('model_extra_info', 'for Vodafone');
+        }
 
         return $wurflKey;
     }

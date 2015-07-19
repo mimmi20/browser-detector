@@ -56,13 +56,11 @@ class Nokia701
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_701_ver1', // not in wurfl
-
         // device
         'model_name'             => '701',
         'model_extra_info'       => null,
         'marketing_name'         => null,
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_701_ver1_subua113
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class Nokia701
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_701_ver1';
 
         return $wurflKey;
     }

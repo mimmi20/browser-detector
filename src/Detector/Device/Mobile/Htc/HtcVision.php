@@ -56,8 +56,6 @@ class HtcVision
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_desire_z_ver1_suban23', // not in wurfl
-
         // device
         'model_name'             => 'Vision',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcVision
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_desire_z_ver1_suban23';
 
         return $wurflKey;
     }

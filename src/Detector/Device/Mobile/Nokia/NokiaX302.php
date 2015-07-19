@@ -56,14 +56,12 @@ class NokiaX302
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_x3_02_ver1', // not in wurfl
-
         // device
         'model_name'             => 'X3-02',
         'model_extra_info'       => null,
         'marketing_name'         => null,
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_x3_02_ver1
-        'pointing_method'        => 'touchscreen', // wurflkey: nokia_x3_02_ver1
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class NokiaX302
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_x3_02_ver1';
 
         return $wurflKey;
     }

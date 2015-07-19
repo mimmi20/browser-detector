@@ -59,8 +59,6 @@ class NokiaLumia530
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_lumia_530_ver1_subuadualsim', // not in wurfl
-
         // device
         'model_name'             => 'Lumia 530',
         'model_extra_info'       => null,
@@ -158,39 +156,6 @@ class NokiaLumia530
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return NokiaLumia530
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        if ($this->utils->checkIfContains('Dual SIM')) {
-            $this->setCapability('model_extra_info', 'Dual Sim');
-        }
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ((float)$osVersion) {
-            case 8.1:
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -201,7 +166,11 @@ class NokiaLumia530
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_lumia_530_ver1_subuadualsim';
+
+        if ($this->utils->checkIfContains('Dual SIM')) {
+            $this->setCapability('model_extra_info', 'Dual Sim');
+        }
 
         return $wurflKey;
     }

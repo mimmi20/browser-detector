@@ -56,8 +56,6 @@ class Nokia6700s
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_6700s_ver1', // not in wurfl
-
         // device
         'model_name'             => '6700 slide',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class Nokia6700s
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_6700s_ver1';
 
         return $wurflKey;
     }

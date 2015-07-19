@@ -172,7 +172,7 @@ class BlackBerry9900
         );
 
         if ('7.0' == $osVersion) {
-            $this->setCapability('wurflKey', 'blackberry9900_ver1_sub_os7');
+            $wurflKey = 'blackberry9900_ver1_sub_os7';
         }
 
         return $wurflKey;

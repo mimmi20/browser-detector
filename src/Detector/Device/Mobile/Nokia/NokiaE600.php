@@ -56,12 +56,10 @@ class NokiaE600
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_e6_00_ver1', // not in wurfl
-
         // device
         'model_name'             => 'E6-00',
         'model_extra_info'       => null,
-        'marketing_name'         => 'E6', // wurflkey: nokia_e6_00_ver1
+        'marketing_name'         => 'E6',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -165,7 +163,7 @@ class NokiaE600
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_e6_00_ver1';
 
         return $wurflKey;
     }

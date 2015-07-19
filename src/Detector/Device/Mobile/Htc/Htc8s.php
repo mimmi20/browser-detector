@@ -56,8 +56,6 @@ class Htc8s
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_8s_ver1_subuaorange', // not in wurfl
-
         // device
         'model_name'             => '8S',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class Htc8s
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_8s_ver1_subuaorange';
 
         return $wurflKey;
     }

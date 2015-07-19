@@ -56,8 +56,6 @@ class NokiaN900
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_n900_ver1', // not in wurfl
-
         // device
         'model_name'             => 'N900',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class NokiaN900
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_n900_ver1';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class NokiaX700
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_x7_00_ver1', // not in wurfl
-
         // device
         'model_name'             => 'X7-00',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class NokiaX700
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_x7_00_ver1';
 
         return $wurflKey;
     }

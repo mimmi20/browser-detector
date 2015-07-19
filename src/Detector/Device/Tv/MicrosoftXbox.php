@@ -62,8 +62,6 @@ class MicrosoftXbox
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'microsoft_xbox360_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Xbox 360',
         'model_extra_info'       => null,
@@ -152,26 +150,6 @@ class MicrosoftXbox
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new WindowsPhoneOs(),
-            new Windows()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
      * returns the Browser which used on the device
      *
      * @return \BrowserDetector\Detector\Browser\AbstractBrowser
@@ -202,7 +180,7 @@ class MicrosoftXbox
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'microsoft_xbox360_ver1';
 
         return $wurflKey;
     }

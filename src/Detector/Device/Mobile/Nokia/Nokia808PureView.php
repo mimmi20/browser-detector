@@ -56,13 +56,11 @@ class Nokia808PureView
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_808_ver1', // not in wurfl
-
         // device
         'model_name'             => '808 PureView',
         'model_extra_info'       => null,
         'marketing_name'         => null,
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_808_ver1
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class Nokia808PureView
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_808_ver1';
 
         return $wurflKey;
     }

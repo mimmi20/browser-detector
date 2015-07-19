@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,10 +57,8 @@ class HtcA9191DesireHd
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_desirehd_ver1_suban23a9191', // not in wurfl
-
         // device
-        'model_name'             => 'A9191', // wurflkey: htc_desirehd_ver1_suban23a9191
+        'model_name'             => 'A9191',
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire HD',
         'has_qwerty_keyboard'    => true,
@@ -158,35 +154,6 @@ class HtcA9191DesireHd
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        $engine->setCapability('svgt_1_1', false);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (2.3 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'htc_desirehd_ver1_suban23');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -197,7 +164,15 @@ class HtcA9191DesireHd
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_desirehd_ver1_suban23a9191';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (2.3 == (float)$osVersion) {
+            $wurflKey = 'htc_desirehd_ver1_suban23';
+        }
 
         return $wurflKey;
     }

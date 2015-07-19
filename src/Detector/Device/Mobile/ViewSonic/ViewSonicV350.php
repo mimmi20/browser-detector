@@ -56,8 +56,6 @@ class ViewSonicV350
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'viewsonic_v350_ver1', // not in wurfl
-
         // device
         'model_name'             => 'V350',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class ViewSonicV350
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'viewsonic_v350_ver1';
 
         return $wurflKey;
     }

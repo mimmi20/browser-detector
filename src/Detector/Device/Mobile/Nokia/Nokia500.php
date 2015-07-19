@@ -56,13 +56,11 @@ class Nokia500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_500_ver1', // not in wurfl
-
         // device
         'model_name'             => '500',
         'model_extra_info'       => null,
         'marketing_name'         => '500',
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_500_ver1
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class Nokia500
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_500_ver1';
 
         return $wurflKey;
     }

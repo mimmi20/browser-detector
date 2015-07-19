@@ -56,8 +56,6 @@ class HtcNexus9
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_nexus9_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Nexus 9',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcNexus9
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_nexus9_ver1';
 
         return $wurflKey;
     }

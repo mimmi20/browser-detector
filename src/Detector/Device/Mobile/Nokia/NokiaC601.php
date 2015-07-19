@@ -56,13 +56,11 @@ class NokiaC601
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_c6_01_ver1_subuaseries53', // not in wurfl
-
         // device
         'model_name'             => 'C6-01',
         'model_extra_info'       => null,
         'marketing_name'         => null,
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_c6_01_ver1_subuaseries53
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class NokiaC601
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_c6_01_ver1_subuaseries53';
 
         return $wurflKey;
     }

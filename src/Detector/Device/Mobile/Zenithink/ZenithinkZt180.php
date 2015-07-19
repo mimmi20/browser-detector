@@ -56,8 +56,6 @@ class ZenithinkZt180
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'zenithink_zt180_ver1', // not in wurfl
-
         // device
         'model_name'             => 'ZT180',
         'model_extra_info'       => null,
@@ -170,7 +168,7 @@ class ZenithinkZt180
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'zenithink_zt180_ver1';
 
         return $wurflKey;
     }

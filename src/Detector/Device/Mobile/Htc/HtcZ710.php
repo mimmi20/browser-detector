@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class HtcZ710
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_sensation_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Z710',
         'model_extra_info'       => null,
@@ -188,40 +184,6 @@ class HtcZ710
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('bmp', true);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (4.0 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'htc_sensation_ver1_suban40rom');
-            $this->setCapability('uaprof', 'http://www.htcmms.com.tw/Android/TMO/Pyramid/ua-profile.xml');
-
-            if ($this->utils->checkIfContains('HTC_Sensation Build/IML74K')) {
-                $this->setCapability('wurflKey', 'htc_sensation_ver1_subua40uscore');
-            }
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -232,7 +194,20 @@ class HtcZ710
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_sensation_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (4.0 == (float)$osVersion) {
+            $wurflKey = 'htc_sensation_ver1_suban40rom';
+            $this->setCapability('uaprof', 'http://www.htcmms.com.tw/Android/TMO/Pyramid/ua-profile.xml');
+
+            if ($this->utils->checkIfContains('HTC_Sensation Build/IML74K')) {
+                $wurflKey = 'htc_sensation_ver1_subua40uscore';
+            }
+        }
 
         return $wurflKey;
     }

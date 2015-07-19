@@ -56,8 +56,6 @@ class Nokia6303iclassic
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_6303iclassic_ver1', // not in wurfl
-
         // device
         'model_name'             => '6303i classic',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class Nokia6303iclassic
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_6303iclassic_ver1';
 
         return $wurflKey;
     }

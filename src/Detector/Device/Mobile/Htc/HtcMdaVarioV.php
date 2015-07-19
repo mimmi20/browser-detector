@@ -56,8 +56,6 @@ class HtcMdaVarioV
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_mdavario5_ver1', // not in wurfl
-
         // device
         'model_name'             => 'MDA Vario V',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcMdaVarioV
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_mdavario5_ver1';
 
         return $wurflKey;
     }

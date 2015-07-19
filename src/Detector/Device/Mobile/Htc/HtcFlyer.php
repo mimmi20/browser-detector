@@ -56,8 +56,6 @@ class HtcFlyer
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_flyer_ver1', // not in wurfl
-
         // device
         'model_name'             => 'Flyer',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcFlyer
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_flyer_ver1';
 
         return $wurflKey;
     }

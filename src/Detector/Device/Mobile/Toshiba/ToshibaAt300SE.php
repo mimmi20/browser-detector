@@ -56,8 +56,6 @@ class ToshibaAT300SE
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'toshiba_AT300SE_ver1_subuachrome', // not in wurfl
-
         // device
         'model_name'             => 'AT300SE',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class ToshibaAT300SE
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'toshiba_AT300SE_ver1_subuachrome';
 
         return $wurflKey;
     }

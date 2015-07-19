@@ -56,8 +56,6 @@ class HtcMdaVarioIi
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'tmobile_mda_varioii_ver1', // not in wurfl
-
         // device
         'model_name'             => 'MDA Vario II',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcMdaVarioIi
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'tmobile_mda_varioii_ver1';
 
         return $wurflKey;
     }

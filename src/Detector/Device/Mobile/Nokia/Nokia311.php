@@ -56,14 +56,12 @@ class Nokia311
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_311_ver1', // not in wurfl
-
         // device
         'model_name'             => '311',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Asha 311', // wurflkey: nokia_311_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_311_ver1
-        'pointing_method'        => 'touchscreen', // wurflkey: nokia_311_ver1
+        'marketing_name'         => 'Asha 311',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class Nokia311
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_311_ver1';
 
         return $wurflKey;
     }

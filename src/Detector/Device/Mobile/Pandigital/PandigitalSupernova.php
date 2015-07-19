@@ -56,8 +56,6 @@ class PandigitalSupernova
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'pandigital_supernova_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SuperNova',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class PandigitalSupernova
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'pandigital_supernova_ver1';
 
         return $wurflKey;
     }

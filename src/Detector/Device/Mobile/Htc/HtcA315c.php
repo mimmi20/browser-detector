@@ -56,8 +56,6 @@ class HtcA315c
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_wildfire_s_ver1_subua', // not in wurfl
-
         // device
         'model_name'             => 'A315c',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcA315c
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_wildfire_s_ver1_subua';
 
         return $wurflKey;
     }

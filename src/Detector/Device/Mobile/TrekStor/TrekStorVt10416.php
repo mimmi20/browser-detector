@@ -56,8 +56,6 @@ class TrekStorVt10416
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'trekstor_vt10416_1_ver1', // not in wurfl
-
         // device
         'model_name'             => 'VT10416-1',
         'model_extra_info'       => null,
@@ -167,7 +165,7 @@ class TrekStorVt10416
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'trekstor_vt10416_1_ver1';
 
         return $wurflKey;
     }

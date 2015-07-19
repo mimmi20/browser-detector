@@ -56,8 +56,6 @@ class HtcTitan
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_titan_x310e_ver1', // not in wurfl
-
         // device
         'model_name'             => 'X310e',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class HtcTitan
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_titan_x310e_ver1';
 
         return $wurflKey;
     }

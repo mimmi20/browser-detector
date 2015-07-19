@@ -56,8 +56,6 @@ class ZteBlade
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'zte_blade_ver1_suban22bis', // not in wurfl
-
         // device
         'model_name'             => 'Blade',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class ZteBlade
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'zte_blade_ver1_suban22bis';
 
         return $wurflKey;
     }

@@ -56,13 +56,11 @@ class TmobileG2Touch
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'tmobile_g2_ver1_suban21', // not in wurfl
-
         // device
         'model_name'             => 'G2 Touch',
         'model_extra_info'       => null,
-        'marketing_name'         => 'HTC Sappire', // wurflkey: tmobile_g2_ver1_suban21
-        'has_qwerty_keyboard'    => false, // wurflkey: tmobile_g2_ver1_suban21
+        'marketing_name'         => 'HTC Sappire',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class TmobileG2Touch
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'tmobile_g2_ver1_suban21';
 
         return $wurflKey;
     }

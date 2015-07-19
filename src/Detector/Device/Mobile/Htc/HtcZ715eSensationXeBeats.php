@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,12 +56,10 @@ class HtcZ715eSensationXeBeats
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_sensationxe_z715e_ver1', // not in wurfl
-
         // device
-        'model_name'             => 'Sensation XE Beats Z715e', // wurflkey: htc_sensationxe_z715e_ver1_subuanohtc
+        'model_name'             => 'Sensation XE Beats Z715e',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Sensation', // wurflkey: htc_sensationxe_z715e_ver1_subuanohtc
+        'marketing_name'         => 'Sensation',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -170,27 +166,6 @@ class HtcZ715eSensationXeBeats
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('bmp', true);
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -201,7 +176,7 @@ class HtcZ715eSensationXeBeats
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_sensationxe_z715e_ver1';
 
         return $wurflKey;
     }

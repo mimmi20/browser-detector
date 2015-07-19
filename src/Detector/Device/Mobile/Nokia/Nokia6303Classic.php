@@ -56,14 +56,12 @@ class Nokia6303classic
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_6303c_ver1', // not in wurfl
-
         // device
         'model_name'             => '6303 classic',
         'model_extra_info'       => null,
-        'marketing_name'         => 'classic', // wurflkey: nokia_6303c_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_6303c_ver1
-        'pointing_method'        => '', // wurflkey: nokia_6303c_ver1     // wurflkey: nokia_6303c_ver1
+        'marketing_name'         => 'classic',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => '',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class Nokia6303classic
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_6303c_ver1';
 
         return $wurflKey;
     }

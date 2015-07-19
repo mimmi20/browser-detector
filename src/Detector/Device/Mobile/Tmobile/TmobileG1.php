@@ -56,8 +56,6 @@ class TmobileG1
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'tmobile_g1_ver1_6_subuk', // not in wurfl
-
         // device
         'model_name'             => 'G1',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class TmobileG1
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'tmobile_g1_ver1_6_subuk';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class HtcNexusHd2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_hd2_android_ver1_subuanexus', // not in wurfl
-
         // device
         'model_name'             => 'HD2',
         'model_extra_info'       => 'Nexus HD2 ROM',
@@ -165,7 +163,7 @@ class HtcNexusHd2
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_hd2_android_ver1_subuanexus';
 
         return $wurflKey;
     }

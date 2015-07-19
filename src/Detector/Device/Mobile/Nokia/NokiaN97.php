@@ -56,10 +56,8 @@ class NokiaN97
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_n97_ver1', // not in wurfl
-
         // device
-        'model_name'             => 'N97', // wurflkey: nokia_n97_ver1_sub_220110
+        'model_name'             => 'N97',
         'model_extra_info'       => null,
         'marketing_name'         => 'N97',
         'has_qwerty_keyboard'    => true,
@@ -165,7 +163,7 @@ class NokiaN97
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_n97_ver1';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class NokiaE72
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_e72_ver1', // not in wurfl
-
         // device
         'model_name'             => 'E72',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class NokiaE72
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_e72_ver1';
 
         return $wurflKey;
     }

@@ -56,14 +56,12 @@ class HtcT8282
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'htc_t8282_ver1', // not in wurfl
-
         // device
-        'model_name'             => '8282', // wurflkey: htc_t8282_ver1
+        'model_name'             => '8282',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Touch HD T8282', // wurflkey: htc_t8282_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: htc_t8282_ver1
-        'pointing_method'        => 'stylus', // wurflkey: htc_t8282_ver1
+        'marketing_name'         => 'Touch HD T8282',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'stylus',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -170,7 +168,7 @@ class HtcT8282
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'htc_t8282_ver1';
 
         return $wurflKey;
     }

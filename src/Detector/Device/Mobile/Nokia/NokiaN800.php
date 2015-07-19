@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\Symbianos;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,13 +56,11 @@ class NokiaN800
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'nokia_n8_00_ver1', // not in wurfl
-
         // device
         'model_name'             => 'N8-00',
         'model_extra_info'       => null,
-        'marketing_name'         => 'N8', // wurflkey: nokia_n8_00_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: nokia_n8_00_ver1
+        'marketing_name'         => 'N8',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -82,7 +78,7 @@ class NokiaN800
         'resolution_width'       => 360,
         'resolution_height'      => 640,
         'dual_orientation'       => true,
-        'colors'                 => 16777216, // wurflkey: nokia_n8_00_ver1_subs53
+        'colors'                 => 16777216,
 
         // sms
         'sms_enabled'            => true,
@@ -158,31 +154,6 @@ class NokiaN800
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaN800
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        if ($this->utils->checkIfContains(array('Series60/5.3'))) {
-            $this->setCapability('wurflKey', 'nokia_n8_00_ver1_subs53');
-            $this->setCapability('uaprof', 'http://nds1.nds.nokia.com/uaprof/NN8-00r310-3G.xml');
-            $this->setCapability('colors', 16777216);
-            $engine->setCapability('image_inlining', true);
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -193,7 +164,14 @@ class NokiaN800
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'nokia_n8_00_ver1';
+
+        if ($this->utils->checkIfContains(array('Series60/5.3'))) {
+            $wurflKey = 'nokia_n8_00_ver1_subs53';
+            $this->setCapability('uaprof', 'http://nds1.nds.nokia.com/uaprof/NN8-00r310-3G.xml');
+            $this->setCapability('colors', 16777216);
+            $engine->setCapability('image_inlining', true);
+        }
 
         return $wurflKey;
     }
