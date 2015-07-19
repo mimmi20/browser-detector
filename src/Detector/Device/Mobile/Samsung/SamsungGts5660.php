@@ -41,7 +41,6 @@ use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -158,28 +157,18 @@ class SamsungGts5660
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
      *
-     * @return AbstractDevice
+     * @return string|null
      */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
+    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    {
+        $wurflKey = null;
 
-        if (2.3 >= $osVersion) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        }
-
-        return $this;
+        return $wurflKey;
     }
 }

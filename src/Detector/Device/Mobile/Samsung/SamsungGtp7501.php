@@ -157,22 +157,18 @@ class SamsungGtp7501
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
      *
-     * @return AbstractDevice
+     * @return string|null
      */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('supports_java_applets', false);
+    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    {
+        $wurflKey = null;
 
-        return $this;
+        return $wurflKey;
     }
 }

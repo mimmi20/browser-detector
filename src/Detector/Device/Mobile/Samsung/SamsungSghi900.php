@@ -30,14 +30,13 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\Chain;
+use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
+use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -146,22 +145,18 @@ class SamsungSghi900
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the WurflKey for the device
      *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
+     *
+     * @return string|null
      */
-    public function detectOs()
+    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $os = array(
-            new WindowsMobileOs(),
-            new AndroidOs()
-        );
+        $wurflKey = null;
 
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
+        return $wurflKey;
     }
 }
