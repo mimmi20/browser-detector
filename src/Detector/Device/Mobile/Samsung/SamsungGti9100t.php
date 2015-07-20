@@ -39,6 +39,7 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use Wurfl\WurflConstants;
 
 /**
  * @category  BrowserDetector
@@ -163,7 +164,7 @@ class SamsungGti9100t
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = WurflConstants::NO_MATCH;
 
         return $wurflKey;
     }

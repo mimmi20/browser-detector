@@ -42,6 +42,7 @@ use BrowserDetector\Detector\Os\AndroidOs;
 
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
+use Wurfl\WurflConstants;
 
 /**
  * @category  BrowserDetector
@@ -166,7 +167,7 @@ class Lgd955
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = WurflConstants::NO_MATCH;
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

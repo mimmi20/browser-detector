@@ -40,6 +40,7 @@ use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
+use Wurfl\WurflConstants;
 
 /**
  * @category  BrowserDetector
@@ -164,7 +165,7 @@ class SamsungGtn5110
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = WurflConstants::NO_MATCH;
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR

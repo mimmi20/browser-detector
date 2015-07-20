@@ -37,6 +37,7 @@ use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterfac
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Helper\Utils;
+use Wurfl\WurflConstants;
 use WurflData\Loader;
 
 /**
@@ -70,7 +71,7 @@ class Result
     /**
      * @var string
      */
-    private $wurflKey = null;
+    private $wurflKey = WurflConstants::NO_MATCH;
 
     /**
      * @var string
@@ -1513,9 +1514,9 @@ class Result
         } elseif (!$device->getDeviceType()->isMobile() && $browser instanceof BrowserHasWurflKeyInterface) {
             $wurflKey = $browser->getWurflKey($os);
         } else {
-            $wurflKey = null;
+            $wurflKey = WurflConstants::NO_MATCH;
         }
-        
+
         $this->wurflKey = $wurflKey;
 
         $additionalData = Loader::load(strtolower($wurflKey), $this->getLogger());
