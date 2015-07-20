@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class SamsungGtp7501
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_galaxy_tab_p4_ver1_subuap7501', // not in wurfl
-
         // device
         'model_name'             => 'GT-P7501',
         'model_extra_info'       => '10.1 N',
@@ -167,7 +163,7 @@ class SamsungGtp7501
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_galaxy_tab_p4_ver1_subuap7501';
 
         return $wurflKey;
     }

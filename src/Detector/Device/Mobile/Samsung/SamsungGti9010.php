@@ -56,8 +56,6 @@ class SamsungGti9010
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9010_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-I9010',
         'model_extra_info'       => null,
@@ -169,7 +167,7 @@ class SamsungGti9010
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i9010_ver1';
 
         return $wurflKey;
     }

@@ -56,14 +56,12 @@ class SonyEricssonU8i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_u8i_ver1', // not in wurfl
-
         // device
         'model_name'             => 'U8i',
         'model_extra_info'       => null,
-        'marketing_name'         => 'kanna', // wurflkey: sonyericsson_u8i_ver1
+        'marketing_name'         => 'kanna',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen', // wurflkey: sonyericsson_u8i_ver1
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class SonyEricssonU8i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_u8i_ver1';
 
         return $wurflKey;
     }

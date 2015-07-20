@@ -59,14 +59,12 @@ class SamsungGtc3310
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_c3310_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-C3310',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-C3310',
         'has_qwerty_keyboard'    => false,
-        'pointing_method'        => '', // wurflkey: samsung_gt_c3310_ver1 // wurflkey: samsung_gt_c3310_ver1
+        'pointing_method'        => '',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -146,26 +144,6 @@ class SamsungGtc3310
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new AndroidOs(),
-            new Java()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -176,7 +154,7 @@ class SamsungGtc3310
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_c3310_ver1';
 
         return $wurflKey;
     }

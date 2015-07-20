@@ -56,8 +56,6 @@ class Ebrd1101
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sony_prst1_ver1', // not in wurfl
-
         // device
         'model_name'             => 'PRST1',
         'model_extra_info'       => 'EBRD1101',
@@ -165,7 +163,7 @@ class Ebrd1101
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sony_prst1_ver1';
 
         return $wurflKey;
     }

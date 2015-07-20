@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class SamsungGts5830c
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s5830_ver1_subuai', // not in wurfl
-
         // device
         'model_name'             => 'GT-S5830C',
         'model_extra_info'       => null,
@@ -167,7 +163,7 @@ class SamsungGts5830c
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s5830_ver1_subuai';
 
         return $wurflKey;
     }

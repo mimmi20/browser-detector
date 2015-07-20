@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ use BrowserDetector\Detector\Version;
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9100_ver1_subuag', // not in wurfl
-
         // device
         'model_name'             => 'GT-I9100G',
         'model_extra_info'       => null,
@@ -159,24 +155,17 @@ use BrowserDetector\Detector\Version;
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
      *
-     * @return AbstractDevice
+     * @return string|null
      */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('gif_animated', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-        $engine->setCapability('supports_java_applets', false);
-        $engine->setCapability('svgt_1_1', false);
+    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    {
+        $wurflKey = 'samsung_gt_i9100_ver1_subuag';
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
@@ -186,34 +175,11 @@ use BrowserDetector\Detector\Version;
             case 'Android Webkit':
                 switch ((float)$osVersion) {
                     case 4.0:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban40g');
+                        $wurflKey = 'samsung_gt_i9100_ver1_suban40g';
                         break;
                     case 4.1:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9100_ver1_suban41romg');
+                        $wurflKey = 'samsung_gt_i9100_ver1_suban41romg';
                         break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
                     default:
                         // nothing to do here
                         break;
@@ -224,22 +190,6 @@ use BrowserDetector\Detector\Version;
                 break;
         }
 
-        return $this;
+        return $wurflKey;
     }
-
-        /**
-         * returns the WurflKey for the device
-         *
-         * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-         * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
-         * @param \BrowserDetector\Detector\Os\AbstractOs           $os
-         *
-         * @return string|null
-         */
-        public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
-        {
-            $wurflKey = null;
-
-            return $wurflKey;
-        }
 }

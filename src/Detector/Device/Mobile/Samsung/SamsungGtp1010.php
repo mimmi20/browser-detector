@@ -56,8 +56,6 @@ class SamsungGtp1010
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_galaxy_tab_ver1_subp1010', // not in wurfl
-
         // device
         'model_name'             => 'GT-P1010',
         'model_extra_info'       => null,
@@ -80,7 +78,7 @@ class SamsungGtp1010
         'resolution_width'       => 1024,
         'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => 16777216, // wurflkey: samsung_galaxy_tab_ver1_subp1010
+        'colors'                 => 16777216,
 
         // sms
         'sms_enabled'            => true,
@@ -166,7 +164,7 @@ class SamsungGtp1010
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_galaxy_tab_ver1_subp1010';
 
         return $wurflKey;
     }

@@ -56,15 +56,12 @@ class SonyEricssonU10i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_u10i_ver1_subua2', // not in wurfl
-
         // device
         'model_name'             => 'U10i',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Aino', // wurflkey: sonyericsson_u10i_ver1_subua2
-        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_u10i_ver1_subua2
+        'marketing_name'         => 'Aino',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => '',
-        // wurflkey: sonyericsson_u10i_ver1_subua2  // wurflkey: sonyericsson_u10i_ver1_subua2
 
         // product info
         'ununiqueness_handler'   => null,
@@ -171,7 +168,7 @@ class SonyEricssonU10i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_u10i_ver1_subua2';
 
         return $wurflKey;
     }

@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,12 +56,10 @@ class SonyEricssonX10i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'                      => 'sonyericsson_x10i_ver1_suban23', // not in wurfl
-
         // device
         'model_name'                    => 'X10i',
         'model_extra_info'              => null,
-        'marketing_name'                => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
+        'marketing_name'                => 'Xperia X10',
         'has_qwerty_keyboard'           => true,
         'pointing_method'               => 'touchscreen',
         // product info
@@ -73,7 +69,7 @@ class SonyEricssonX10i
         'uaprof3'                       => null,
         'unique'                        => true,
         // display
-        'physical_screen_width'         => 40, // wurflkey: sonyericsson_x10i_ver1_suban23
+        'physical_screen_width'         => 40,
         'physical_screen_height'        => 60,
         'columns'                       => 44,
         'rows'                          => 32,
@@ -170,28 +166,6 @@ class SonyEricssonX10i
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_file_upload', 'not_supported');
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        $engine->setCapability('jqm_grade', 'C');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -202,7 +176,7 @@ class SonyEricssonX10i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_x10i_ver1_suban23';
 
         return $wurflKey;
     }

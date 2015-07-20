@@ -56,8 +56,6 @@ class PlayStationVita
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sony_playstation_vita_ver1', // not in wurfl
-
         // device
         'model_name'             => 'PlayStation Vita',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class PlayStationVita
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sony_playstation_vita_ver1';
 
         return $wurflKey;
     }

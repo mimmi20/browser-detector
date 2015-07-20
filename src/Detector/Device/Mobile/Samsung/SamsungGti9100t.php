@@ -56,13 +56,11 @@ class SamsungGti9100t
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9100_ver1_suban40t', // not in wurfl
-
         // device
-        'model_name'             => 'GT-I9100T', // wurflkey: samsung_gt_i9100_ver1_suban40t
+        'model_name'             => 'GT-I9100T',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy S II', // wurflkey: samsung_gt_i9100_ver1_suban40t
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i9100_ver1_suban40t
+        'marketing_name'         => 'Galaxy S II',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,

@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,13 +56,11 @@ class SamsungGts6802
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s6802_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-S6802',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Ace Duos', // wurflkey: samsung_gt_s6802_ver1
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_s6802_ver1
+        'marketing_name'         => 'Galaxy Ace Duos',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -73,7 +69,7 @@ class SamsungGts6802
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 50, // wurflkey: samsung_gt_s6802_ver1
+        'physical_screen_width'  => 50,
         'physical_screen_height' => 74,
         'columns'                => 25,
         'rows'                   => 21,
@@ -167,7 +163,7 @@ class SamsungGts6802
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s6802_ver1';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class SonyD6603ExperiaZ3
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sony_d6603_ver1', // not in wurfl
-
         // device
         'model_name'             => 'D6603',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SonyD6603ExperiaZ3
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sony_d6603_ver1';
 
         return $wurflKey;
     }

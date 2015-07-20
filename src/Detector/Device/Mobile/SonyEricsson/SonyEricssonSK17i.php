@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class SonyEricssonSK17i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_sk17i_ver1_suban40i', // not in wurfl
-
         // device
         'model_name'             => 'SK17i',
         'model_extra_info'       => null,
@@ -79,8 +75,8 @@ class SonyEricssonSK17i
         'rows'                   => 21,
         'max_image_width'        => 320,
         'max_image_height'       => 400,
-        'resolution_width'       => 320, // wurflkey: sonyericsson_sk17i_ver1
-        'resolution_height'      => 480, // wurflkey: sonyericsson_sk17i_ver1
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -161,27 +157,6 @@ class SonyEricssonSK17i
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonSK17i
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -192,7 +167,7 @@ class SonyEricssonSK17i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_sk17i_ver1_suban40i';
 
         return $wurflKey;
     }

@@ -56,14 +56,12 @@ class SamsungGts5230
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s5230_ver1_subjasmine1_0', // not in wurfl
-
         // device
         'model_name'             => 'GT-S5230',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Star', // wurflkey: samsung_gt_s5230_ver1_subjasmine1_0
+        'marketing_name'         => 'Star',
         'has_qwerty_keyboard'    => false,
-        'pointing_method'        => 'touchscreen', // wurflkey: samsung_gt_s5230_ver1_subjasmine1_0
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -170,7 +168,7 @@ class SamsungGts5230
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s5230_ver1_subjasmine1_0';
 
         return $wurflKey;
     }

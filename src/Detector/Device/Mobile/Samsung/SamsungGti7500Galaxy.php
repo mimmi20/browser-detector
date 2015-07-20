@@ -56,13 +56,11 @@ class SamsungGti7500Galaxy
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i7500_ver1_suban16', // not in wurfl
-
         // device
-        'model_name'             => 'GT-I7500', // wurflkey: samsung_gt_i7500_ver1_suban16
-        'model_extra_info'       => 'Donut', // wurflkey: samsung_gt_i7500_ver1_suban16
-        'marketing_name'         => 'Galaxy', // wurflkey: samsung_gt_i7500_ver1_suban16
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i7500_ver1_suban16
+        'model_name'             => 'GT-I7500',
+        'model_extra_info'       => 'Donut',
+        'marketing_name'         => 'Galaxy',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -169,7 +167,7 @@ class SamsungGti7500Galaxy
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i7500_ver1_suban16';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class SamsungGts6500d
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s6500_ver1_subuad', // not in wurfl
-
         // device
         'model_name'             => 'GT-S6500D',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungGts6500d
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s6500_ver1_subuad';
 
         return $wurflKey;
     }

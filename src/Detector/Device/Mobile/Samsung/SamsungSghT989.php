@@ -56,8 +56,6 @@ class SamsungSghT989
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sgh_t989_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SGH-T989',
         'model_extra_info'       => 'for T-Mobile',
@@ -169,7 +167,7 @@ class SamsungSghT989
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sgh_t989_ver1';
 
         return $wurflKey;
     }

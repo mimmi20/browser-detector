@@ -56,13 +56,11 @@ class SamsungGtp6211
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_p6210_ver1_subua6211ics', // not in wurfl
-
         // device
         'model_name'             => 'GT-P6211',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 7.0 Plus', // wurflkey: samsung_gt_p6210_ver1_subua6211ics
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p6210_ver1_subua6211ics
+        'marketing_name'         => 'Galaxy Tab 7.0 Plus',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungGtp6211
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_p6210_ver1_subua6211ics';
 
         return $wurflKey;
     }

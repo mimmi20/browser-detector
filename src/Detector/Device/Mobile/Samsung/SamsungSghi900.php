@@ -55,12 +55,10 @@ class SamsungSghi900
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sgh_i900_ver1_subopera95', // not in wurfl
-
         // device
-        'model_name'             => 'SGH-I900', // wurflkey: samsung_sgh_i900_ver1_subopera95
+        'model_name'             => 'SGH-I900',
         'model_extra_info'       => null,
-        'marketing_name'         => 'OMNIA', // wurflkey: samsung_sgh_i900_ver1_subopera95
+        'marketing_name'         => 'OMNIA',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -155,7 +153,7 @@ class SamsungSghi900
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sgh_i900_ver1_subopera95';
 
         return $wurflKey;
     }

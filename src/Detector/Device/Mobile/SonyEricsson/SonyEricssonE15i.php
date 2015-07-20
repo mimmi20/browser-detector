@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class SonyEricssonE15i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_e15i_ver1_sub21_01', // not in wurfl
-
         // device
         'model_name'             => 'E15i',
         'model_extra_info'       => null,
@@ -73,7 +69,7 @@ class SonyEricssonE15i
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 43, // wurflkey: sonyericsson_e15i_ver1_sub21_01
+        'physical_screen_width'  => 43,
         'physical_screen_height' => 64,
         'columns'                => 15,
         'rows'                   => 12,
@@ -157,27 +153,6 @@ class SonyEricssonE15i
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonE15i
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_file_upload', 'not_supported');
-        $engine->setCapability('jqm_grade', 'C');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -188,7 +163,7 @@ class SonyEricssonE15i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_e15i_ver1_sub21_01';
 
         return $wurflKey;
     }

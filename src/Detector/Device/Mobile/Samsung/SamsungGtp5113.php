@@ -56,13 +56,11 @@ class SamsungGtp5113
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_p5100_ver1_subua5113', // not in wurfl
-
         // device
         'model_name'             => 'GT-P5113',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 2 10.1 WiFi', // wurflkey: samsung_gt_p5100_ver1_subua5113
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p5100_ver1_subua5113
+        'marketing_name'         => 'Galaxy Tab 2 10.1 WiFi',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungGtp5113
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_p5100_ver1_subua5113';
 
         return $wurflKey;
     }

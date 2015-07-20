@@ -56,14 +56,12 @@ class SamsungGts8000
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_s8000_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-S8000',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Jet', //wurflkey: samsung_s8000_ver1
+        'marketing_name'         => 'Jet',
         'has_qwerty_keyboard'    => false,
-        'pointing_method'        => 'touchscreen', //wurflkey: samsung_s8000_ver1
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class SamsungGts8000
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_s8000_ver1';
 
         return $wurflKey;
     }

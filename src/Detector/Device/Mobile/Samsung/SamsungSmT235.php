@@ -56,8 +56,6 @@ class SamsungSmT235
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_t230_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SM-T235',
         'model_extra_info'       => null,
@@ -152,7 +150,7 @@ class SamsungSmT235
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sm_t230_ver1';
 
         return $wurflKey;
     }

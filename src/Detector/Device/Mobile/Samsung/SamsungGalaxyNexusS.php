@@ -56,13 +56,11 @@ class SamsungGalaxyNexusS
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_nexus_s_ver1_suban41', // not in wurfl
-
         // device
         'model_name'             => 'Nexus S',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nexus S',
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_nexus_s_ver1_suban41
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -71,7 +69,7 @@ class SamsungGalaxyNexusS
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 34, // wurflkey: samsung_nexus_s_ver1_suban41
+        'physical_screen_width'  => 34,
         'physical_screen_height' => 50,
         'columns'                => 60,
         'rows'                   => 40,
@@ -165,7 +163,7 @@ class SamsungGalaxyNexusS
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_nexus_s_ver1_suban41';
 
         return $wurflKey;
     }

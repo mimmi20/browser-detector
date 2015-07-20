@@ -56,14 +56,12 @@ class SamsungGts7220
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_s7220_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-S7220',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S7220',
         'has_qwerty_keyboard'    => false,
-        'pointing_method'        => '', // wurflkey: samsung_s7220_ver1 // wurflkey: samsung_s7220_ver1
+        'pointing_method'        => '',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class SamsungGts7220
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_s7220_ver1';
 
         return $wurflKey;
     }

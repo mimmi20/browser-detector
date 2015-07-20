@@ -56,12 +56,10 @@ class SamsungGti8000
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i8000_ver1_subopera95_v1', // not in wurfl
-
         // device
-        'model_name'             => 'GT-I8000', // wurflkey: samsung_gt_i8000_ver1_subopera95_v1
+        'model_name'             => 'GT-I8000',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Omnia II', // wurflkey: samsung_gt_i8000_ver1_subopera95_v1
+        'marketing_name'         => 'Omnia II',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -169,7 +167,7 @@ class SamsungGti8000
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i8000_ver1_subopera95_v1';
 
         return $wurflKey;
     }

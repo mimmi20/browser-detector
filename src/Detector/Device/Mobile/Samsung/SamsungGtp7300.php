@@ -56,8 +56,6 @@ class SamsungGtp7300
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_p7300_ver1_suban32', // not in wurfl
-
         // device
         'model_name'             => 'GT-P7300',
         'model_extra_info'       => null,
@@ -169,7 +167,7 @@ class SamsungGtp7300
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_p7300_ver1_suban32';
 
         return $wurflKey;
     }

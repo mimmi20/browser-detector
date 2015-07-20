@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class SonyEricssonMT15iv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_mt15i_ver1', // not in wurfl
-
         // device
         'model_name'             => 'MT15iv',
         'model_extra_info'       => null,
@@ -176,42 +172,6 @@ class SonyEricssonMT15iv
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonMT15iv
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        // wurflkey: sonyericsson_mt15i_ver1_suban233
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORONLY
-        );
-
-        if (2.3 == $osVersion) {
-            // $this->setCapability('resolution_width', 640);
-            $this->setCapability('wurflKey', 'sonyericsson_mt15i_ver1_suban233');
-        }
-
-        if (4.0 == $osVersion) {
-            // $this->setCapability('resolution_width', 640);
-            $this->setCapability('wurflKey', 'sonyericsson_mt15i_ver1_suban40');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -222,7 +182,21 @@ class SonyEricssonMT15iv
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_mt15i_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORONLY
+        );
+
+        if (2.3 == $osVersion) {
+            // $this->setCapability('resolution_width', 640);
+            $wurflKey = 'sonyericsson_mt15i_ver1_suban233';
+        }
+
+        if (4.0 == $osVersion) {
+            // $this->setCapability('resolution_width', 640);
+            $wurflKey = 'sonyericsson_mt15i_ver1_suban40';
+        }
 
         return $wurflKey;
     }

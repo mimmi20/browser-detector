@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,13 +56,11 @@ class SamsungGti9070
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9070_ver1_subuanosamsung', // not in wurfl
-
         // device
         'model_name'             => 'GT-I9070',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy S Advance', // wurflkey: samsung_gt_i9070_ver1_subuanosamsung
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i9070_ver1_subuanosamsung
+        'marketing_name'         => 'Galaxy S Advance',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -171,7 +167,7 @@ class SamsungGti9070
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i9070_ver1_subuanosamsung';
 
         return $wurflKey;
     }

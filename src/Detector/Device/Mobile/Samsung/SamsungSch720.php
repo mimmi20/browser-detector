@@ -56,13 +56,11 @@ class SamsungSch720
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sch_r720_ver1', // not in wurfl
-
         // device
-        'model_name'             => 'SCH-R720', // wurflkey: samsung_sch_r720_ver1
-        'model_extra_info'       => 'MetroPCS', // wurflkey: samsung_sch_r720_ver1
-        'marketing_name'         => 'Admire', // wurflkey: samsung_sch_r720_ver1
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_sch_r720_ver1
+        'model_name'             => 'SCH-R720',
+        'model_extra_info'       => 'MetroPCS',
+        'marketing_name'         => 'Admire',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungSch720
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sch_r720_ver1';
 
         return $wurflKey;
     }

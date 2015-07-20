@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,9 +38,7 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -59,13 +56,11 @@ class SamsungGtp3100
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_p3100_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-P3100',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 2 7.0', // wurflkey: samsung_gt_p3100_ver1
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p3100_ver1
+        'marketing_name'         => 'Galaxy Tab 2 7.0',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -74,7 +69,7 @@ class SamsungGtp3100
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 154, // wurflkey: samsung_gt_p3100_ver1
+        'physical_screen_width'  => 154,
         'physical_screen_height' => 90,
         'columns'                => 25,
         'rows'                   => 21,
@@ -158,35 +153,6 @@ class SamsungGtp3100
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (2.3 >= $osVersion) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        }
-
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -197,7 +163,7 @@ class SamsungGtp3100
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_p3100_ver1';
 
         return $wurflKey;
     }

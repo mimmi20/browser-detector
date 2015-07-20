@@ -57,8 +57,6 @@ class PlayStationPortable
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sony_psp_ver1', // not in wurfl
-
         // device
         'model_name'             => 'PlayStation Portable',
         'model_extra_info'       => null,
@@ -180,7 +178,7 @@ class PlayStationPortable
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sony_psp_ver1';
 
         return $wurflKey;
     }

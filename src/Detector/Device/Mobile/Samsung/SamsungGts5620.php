@@ -56,8 +56,6 @@ class SamsungGts5620
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s5620_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-S5620',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungGts5620
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s5620_ver1';
 
         return $wurflKey;
     }

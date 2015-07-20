@@ -56,14 +56,12 @@ class SonyEricssonJ10i2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_j10i2_ver1', // not in wurfl
-
         // device
         'model_name'             => 'J10i2',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Elm', // wurflkey: sonyericsson_j10i2_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_j10i2_ver1
-        'pointing_method'        => '', // wurflkey: sonyericsson_j10i2_ver1
+        'marketing_name'         => 'Elm',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => '',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class SonyEricssonJ10i2
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_j10i2_ver1';
 
         return $wurflKey;
     }

@@ -56,14 +56,12 @@ class SonyEricssonW995
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_w995_ver1', // not in wurfl
-
         // device
         'model_name'             => 'W995',
-        'model_extra_info'       => 'Walkman phone', // wurflkey: sonyericsson_w995_ver1
+        'model_extra_info'       => 'Walkman phone',
         'marketing_name'         => 'W995',
-        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_w995_ver1
-        'pointing_method'        => '', // wurflkey: sonyericsson_w995_ver1
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => '',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class SonyEricssonW995
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_w995_ver1';
 
         return $wurflKey;
     }

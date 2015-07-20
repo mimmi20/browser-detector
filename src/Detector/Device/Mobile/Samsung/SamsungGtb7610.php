@@ -56,13 +56,11 @@ class SamsungGtb7610
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_b7610_ver1_subvoda', // not in wurfl
-
         // device
         'model_name'             => 'GT-B7610',
-        'model_extra_info'       => 'Vodafone', // wurflkey: samsung_gt_b7610_ver1_subvoda
-        'marketing_name'         => 'Louvre', // wurflkey: samsung_gt_b7610_ver1_subvoda
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_b7610_ver1_subvoda
+        'model_extra_info'       => 'Vodafone',
+        'marketing_name'         => 'Louvre',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungGtb7610
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_b7610_ver1_subvoda';
 
         return $wurflKey;
     }

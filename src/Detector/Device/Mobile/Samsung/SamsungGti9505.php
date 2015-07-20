@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class SamsungGti9505
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9505_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-I9505',
         'model_extra_info'       => null,
@@ -162,86 +158,6 @@ class SamsungGti9505
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('html_wi_imode_compact_generic', false);
-        $engine->setCapability('xhtml_avoid_accesskeys', true);
-        $engine->setCapability('xhtml_supports_forms_in_table', true);
-        $engine->setCapability('xhtml_file_upload', 'supported');
-        $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-        $engine->setCapability('svgt_1_1', true);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-            case 'Android WebView':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 4.4:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9500_ver1_suban44i9505chrome');
-
-                        if ($browser->detectVersion()->getVersion() >= 35) {
-                            $this->setCapability('wurflKey', 'samsung_gt_i9500_ver1_suban44i9505chrome35');
-                        }
-                        break;
-                    case 4.3:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9500_ver1_suban43i9505');
-                        break;
-                    case 4.2:
-                        $this->setCapability('wurflKey', 'samsung_gt_i9500_ver1_subua9505sam');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.1:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -252,7 +168,38 @@ class SamsungGti9505
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i9505_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Chrome':
+            case 'Android WebView':
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $wurflKey = 'samsung_gt_i9500_ver1_suban44i9505chrome';
+
+                        if ($browser->detectVersion()->getVersion() >= 35) {
+                            $wurflKey = 'samsung_gt_i9500_ver1_suban44i9505chrome35';
+                        }
+                        break;
+                    case 4.3:
+                        $wurflKey = 'samsung_gt_i9500_ver1_suban43i9505';
+                        break;
+                    case 4.2:
+                        $wurflKey = 'samsung_gt_i9500_ver1_subua9505sam';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

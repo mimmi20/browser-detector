@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class SamsungSmG900F
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_g900f_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SM-G900F',
         'model_extra_info'       => null,
@@ -158,80 +154,6 @@ class SamsungSmG900F
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-        $engine->setCapability('svgt_1_1', false);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-            case 'Android WebView':
-                $engine->setCapability('is_sencha_touch_ok', false);
-                $engine->setCapability('html_wi_imode_compact_generic', false);
-                $engine->setCapability('xhtml_avoid_accesskeys', true);
-                $engine->setCapability('xhtml_supports_forms_in_table', true);
-                $engine->setCapability('xhtml_file_upload', 'supported');
-                $engine->setCapability('xhtml_allows_disabled_form_elements', true);
-                $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-                $engine->setCapability('gif_animated', false);
-                $engine->setCapability('svgt_1_1', true);
-
-                switch ((float)$osVersion) {
-                    case 4.1:
-                        $this->setCapability('wurflKey', 'samsung_gt_n7100_ver1_subuachrome');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -242,7 +164,28 @@ class SamsungSmG900F
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sm_g900f_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Chrome':
+            case 'Android WebView':
+                switch ((float)$osVersion) {
+                    case 4.1:
+                        $wurflKey = 'samsung_gt_n7100_ver1_subuachrome';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

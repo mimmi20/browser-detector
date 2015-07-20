@@ -56,8 +56,6 @@ class SamsungSmT525
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_t525_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SM-T525',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungSmT525
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sm_t525_ver1';
 
         return $wurflKey;
     }

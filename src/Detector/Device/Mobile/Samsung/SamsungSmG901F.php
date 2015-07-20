@@ -56,8 +56,6 @@ class SamsungSmG901F
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_g901f_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SM-G901F',
         'model_extra_info'       => 'LTE-A',
@@ -165,7 +163,7 @@ class SamsungSmG901F
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sm_g901f_ver1';
 
         return $wurflKey;
     }

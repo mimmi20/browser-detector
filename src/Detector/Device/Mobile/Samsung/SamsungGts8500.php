@@ -56,8 +56,6 @@ class SamsungGts8500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s8500_ver1_subua', // not in wurfl
-
         // device
         'model_name'             => 'GT-S8500',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungGts8500
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s8500_ver1_subua';
 
         return $wurflKey;
     }

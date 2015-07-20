@@ -47,6 +47,8 @@ use WurflData\Loader;
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ * @property-read $id
+ * @property-read $userAgent
  */
 class Result
     implements \Serializable
@@ -66,13 +68,21 @@ class Result
     private $logger = null;
 
     /**
+     * @var string
+     */
+    private $wurflKey = null;
+
+    /**
+     * @var string
+     */
+    private $userAgent = null;
+
+    /**
      * the detected browser properties
      *
      * @var array
      */
     private $properties = array(
-        'wurflKey'                                          => null, // not in wurfl
-        'useragent'                                         => null, // not in wurfl
         'deviceClass'                                       => null, // not in wurfl
         'browserClass'                                      => null, // not in wurfl
         'engineClass'                                       => null, // not in wurfl
@@ -793,7 +803,9 @@ class Result
         return serialize(
             array(
                 'properties' => $this->properties,
-                'renderAs'   => $this->renderAs
+                'renderAs'   => $this->renderAs,
+                'wurflKey'   => $this->wurflKey,
+                'userAgent'  => $this->userAgent,
             )
         );
     }
@@ -811,7 +823,9 @@ class Result
             $this->properties[$property] = $value;
         }
 
-        $this->renderAs = $unseriliazedData['renderAs'];
+        $this->renderAs  = $unseriliazedData['renderAs'];
+        $this->wurflKey  = $unseriliazedData['wurflKey'];
+        $this->userAgent = $unseriliazedData['userAgent'];
     }
 
     /**
@@ -986,10 +1000,10 @@ class Result
         if (isset($name)) {
             switch ($name) {
                 case 'id':
-                    return $this->getCapability('wurflKey', false);
+                    return $this->wurflKey;
                     break;
                 case 'userAgent':
-                    return $this->getCapability('useragent', false);
+                    return $this->userAgent;
                     break;
                 case 'deviceClass':
                     return $this->getCapability('deviceClass', false);
@@ -1501,7 +1515,8 @@ class Result
         } else {
             $wurflKey = null;
         }
-        $this->setCapability('wurflKey', $wurflKey);
+        
+        $this->wurflKey = $wurflKey;
 
         $additionalData = Loader::load(strtolower($wurflKey), $this->getLogger());
 
@@ -1509,10 +1524,6 @@ class Result
 
         foreach ($properties as $property) {
             $value = null;
-
-            if ('useragent' === $property || 'wurflKey' === $property) {
-                continue;
-            }
 
             try {
                 switch ($property) {
@@ -1678,13 +1689,13 @@ class Result
                         break;
                     case 'device_bits':
                         $detector = new Bits\Device();
-                        $detector->setUserAgent($this->getCapability('useragent', false));
+                        $detector->setUserAgent($this->userAgent);
 
                         $value = $detector->getBits();
                         break;
                     case 'device_cpu':
                         $detector = new Cpu();
-                        $detector->setUserAgent($this->getCapability('useragent', false));
+                        $detector->setUserAgent($this->userAgent);
 
                         $value = $detector->getCpu();
                         break;
@@ -1765,13 +1776,13 @@ class Result
                         break;
                     case 'mobile_browser_bits':
                         $detector = new Bits\Browser();
-                        $detector->setUserAgent($this->getCapability('useragent', false));
+                        $detector->setUserAgent($this->userAgent);
 
                         $value = $detector->getBits();
                         break;
                     case 'device_os_bits':
                         $detector = new Bits\Os();
-                        $detector->setUserAgent($this->getCapability('useragent', false));
+                        $detector->setUserAgent($this->userAgent);
 
                         $value = $detector->getBits();
                         break;
@@ -1845,7 +1856,7 @@ class Result
                         $value = (strpos($engine->getCapability('preferred_markup'), 'html_web') === 0);
                         break;
                     case 'controlcap_is_app':
-                        $ua    = $this->getCapability('useragent', false);
+                        $ua    = $this->userAgent;
                         $utils = new Utils();
                         $utils->setUserAgent($ua);
 

@@ -56,8 +56,6 @@ class SamsungGts6310N
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s6312_ver1_subua6310n', // not in wurfl
-
         // device
         'model_name'             => 'GT-S6310N',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungGts6310N
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s6312_ver1_subua6310n';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class SamsungSghi917
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_omnia7_ver1_subos75', // not in wurfl
-
         // device
         'model_name'             => 'SGH-I917',
         'model_extra_info'       => null,
@@ -71,7 +69,7 @@ class SamsungSghi917
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 49, // wurflkey: samsung_omnia7_ver1_subos75
+        'physical_screen_width'  => 49,
         'physical_screen_height' => 82,
         'columns'                => 12,
         'rows'                   => 20,
@@ -165,7 +163,7 @@ class SamsungSghi917
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_omnia7_ver1_subos75';
 
         return $wurflKey;
     }

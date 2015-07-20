@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -160,82 +158,6 @@ class SamsungGti9192
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $engine->setCapability('gif_animated', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-        $engine->setCapability('supports_java_applets', false);
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 2.3:
-                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1');
-
-                        if ($this->utils->checkIfContains('SAMSUNG GT-I9192/I9192')) {
-                            $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_subua');
-                        }
-                        break;
-                    case 4.0:
-                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban40');
-                        break;
-                    case 4.1:
-                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban41rom');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 3.1:
-                    case 3.2:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 4.0:
-                        $this->setCapability('wurflKey', 'samsung_gt_I9192_ver1_suban40chrome');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -247,6 +169,46 @@ class SamsungGti9192
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
         $wurflKey = null;
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 2.3:
+                        $wurflKey = 'samsung_gt_I9192_ver1';
+
+                        if ($this->utils->checkIfContains('SAMSUNG GT-I9192/I9192')) {
+                            $wurflKey = 'samsung_gt_I9192_ver1_subua';
+                        }
+                        break;
+                    case 4.0:
+                        $wurflKey = 'samsung_gt_I9192_ver1_suban40';
+                        break;
+                    case 4.1:
+                        $wurflKey = 'samsung_gt_I9192_ver1_suban41rom';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            case 'Chrome':
+                switch ((float)$osVersion) {
+                    case 4.0:
+                        $wurflKey = 'samsung_gt_I9192_ver1_suban40chrome';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

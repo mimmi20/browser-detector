@@ -56,8 +56,6 @@ class SamsungGtb7510
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_b7510_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-B7510',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungGtb7510
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_b7510_ver1';
 
         return $wurflKey;
     }

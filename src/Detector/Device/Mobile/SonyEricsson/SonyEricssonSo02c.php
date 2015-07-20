@@ -56,12 +56,10 @@ class SonyEricssonSo02c
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_xperia_acro_ver1_sub02', // not in wurfl
-
         // device
         'model_name'             => 'SO-02C',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia acro', // wurflkey: sonyericsson_xperia_acro_ver1_sub02
+        'marketing_name'         => 'Xperia acro',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -165,7 +163,7 @@ class SonyEricssonSo02c
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_xperia_acro_ver1_sub02';
 
         return $wurflKey;
     }

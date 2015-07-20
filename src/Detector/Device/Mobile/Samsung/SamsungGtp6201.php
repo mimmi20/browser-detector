@@ -56,8 +56,6 @@ class SamsungGtp6201
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_p6200_ver1_subua6201', // not in wurfl
-
         // device
         'model_name'             => 'GT-P6201',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungGtp6201
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_p6200_ver1_subua6201';
 
         return $wurflKey;
     }

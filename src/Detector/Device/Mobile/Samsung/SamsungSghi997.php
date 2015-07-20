@@ -56,13 +56,11 @@ class SamsungSghi997
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sgh_i997_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SGH-I997',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Infuse', // wurflkey: samsung_sgh_i997_ver1
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_sgh_i997_ver1
+        'marketing_name'         => 'Infuse',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungSghi997
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sgh_i997_ver1';
 
         return $wurflKey;
     }

@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,8 +56,6 @@ class SamsungGti9103
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9103_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-I9103',
         'model_extra_info'       => null,
@@ -73,7 +69,7 @@ class SamsungGti9103
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 34, // wurflkey: samsung_gt_i9103_ver1
+        'physical_screen_width'  => 34,
         'physical_screen_height' => 50,
         'columns'                => 25,
         'rows'                   => 21,
@@ -167,7 +163,7 @@ class SamsungGti9103
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i9103_ver1';
 
         return $wurflKey;
     }

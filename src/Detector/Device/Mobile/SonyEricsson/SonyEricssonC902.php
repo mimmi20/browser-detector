@@ -56,15 +56,12 @@ class SonyEricssonC902
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_c902_ver1_subr3da', // not in wurfl
-
         // device
         'model_name'             => 'C902',
         'model_extra_info'       => null,
         'marketing_name'         => 'C902',
-        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_c902_ver1_subr3da
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'joystick',
-        // wurflkey: sonyericsson_c902_ver1_subr3da      // wurflkey: sonyericsson_c902_ver1_subr3da
 
         // product info
         'ununiqueness_handler'   => null,
@@ -167,7 +164,7 @@ class SonyEricssonC902
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_c902_ver1_subr3da';
 
         return $wurflKey;
     }

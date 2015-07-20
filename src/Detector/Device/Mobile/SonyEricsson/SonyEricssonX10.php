@@ -56,12 +56,10 @@ class SonyEricssonX10
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_x10i_ver1_suban23', // not in wurfl
-
         // device
         'model_name'             => 'X10',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia X10', // wurflkey: sonyericsson_x10i_ver1_suban23
+        'marketing_name'         => 'Xperia X10',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -71,7 +69,7 @@ class SonyEricssonX10
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 40, // wurflkey: sonyericsson_x10i_ver1_suban23
+        'physical_screen_width'  => 40,
         'physical_screen_height' => 60,
         'columns'                => 44,
         'rows'                   => 32,
@@ -169,7 +167,7 @@ class SonyEricssonX10
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_x10i_ver1_suban23';
 
         return $wurflKey;
     }

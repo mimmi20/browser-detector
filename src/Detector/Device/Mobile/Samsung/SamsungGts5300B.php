@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,13 +56,11 @@ class SamsungGts5300B
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s5300_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-S5300B',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Pocket', // wurflkey: samsung_gt_s5300_ver1
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_s5300_ver1
+        'marketing_name'         => 'Galaxy Pocket',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -167,7 +163,7 @@ class SamsungGts5300B
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s5300_ver1';
 
         return $wurflKey;
     }

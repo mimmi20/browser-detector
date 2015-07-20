@@ -56,8 +56,6 @@ class SonyTabletSgp511
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sony_sgp511_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SGP511',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SonyTabletSgp511
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sony_sgp511_ver1';
 
         return $wurflKey;
     }

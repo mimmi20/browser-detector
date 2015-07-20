@@ -56,13 +56,11 @@ class SamsungGtp7510
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_p7510_ver1_suban40rom', // not in wurfl
-
         // device
         'model_name'             => 'GT-P7510',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 10.1',
-        'has_qwerty_keyboard'    => true, // samsung_gt_p7510_ver1_suban40rom
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungGtp7510
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_p7510_ver1_suban40rom';
 
         return $wurflKey;
     }

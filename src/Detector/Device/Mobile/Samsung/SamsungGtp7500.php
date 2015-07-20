@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,13 +57,11 @@ class SamsungGtp7500
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_galaxy_tab_p4_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-P7500',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 10.1', // wurflkey: samsung_galaxy_tab_p4_ver1_suban31
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_galaxy_tab_p4_ver1_suban31
+        'marketing_name'         => 'Galaxy Tab 10.1',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -158,72 +154,6 @@ class SamsungGtp7500
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 3.1:
-                        $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban31');
-                        break;
-                    case 3.2:
-                        $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban32');
-                        break;
-                    case 4.0:
-                        $this->setCapability('wurflKey', 'samsung_galaxy_tab_p4_ver1_suban40rom');
-                        break;
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 2.1:
-                    case 2.2:
-                    case 2.3:
-                    case 3.1:
-                    case 3.2:
-                    case 4.0:
-                    case 4.1:
-                    case 4.2:
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -234,7 +164,33 @@ class SamsungGtp7500
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_galaxy_tab_p4_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 3.1:
+                        $wurflKey = 'samsung_galaxy_tab_p4_ver1_suban31';
+                        break;
+                    case 3.2:
+                        $wurflKey = 'samsung_galaxy_tab_p4_ver1_suban32';
+                        break;
+                    case 4.0:
+                        $wurflKey = 'samsung_galaxy_tab_p4_ver1_suban40rom';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

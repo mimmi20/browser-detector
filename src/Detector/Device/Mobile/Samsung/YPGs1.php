@@ -56,8 +56,6 @@ class YPGs1
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_yp_gs1_ver1', // not in wurfl
-
         // device
         'model_name'             => 'YP-GS1',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class YPGs1
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_yp_gs1_ver1';
 
         return $wurflKey;
     }

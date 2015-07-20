@@ -56,13 +56,11 @@ class SamsungGts5670
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s5670_ver1_suban23', // not in wurfl
-
         // device
         'model_name'             => 'GT-S5670',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Fit', // wurflkey: samsung_gt_s5670_ver1_suban23
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_s5670_ver1_suban23
+        'marketing_name'         => 'Galaxy Fit',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungGts5670
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s5670_ver1_suban23';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class SamsungShwM380w
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_shw_m380s_ver1_suban32', // not in wurfl
-
         // device
         'model_name'             => 'SHW-M380W',
         'model_extra_info'       => 'SKT',
@@ -165,7 +163,7 @@ class SamsungShwM380w
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_shw_m380s_ver1_suban32';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class SamsungSchI5354G
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9300_ver1_subverizon', // not in wurfl
-
         // device
         'model_name'             => 'SCH-I535 4G',
         'model_extra_info'       => 'Verizon',
@@ -165,7 +163,7 @@ class SamsungSchI5354G
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i9300_ver1_subverizon';
 
         return $wurflKey;
     }

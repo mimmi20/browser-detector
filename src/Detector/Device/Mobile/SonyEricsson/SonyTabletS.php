@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,8 +57,6 @@ class SonyTabletS
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sony_tablet_s_ver1_suban40', // not in wurfl
-
         // device
         'model_name'             => 'Tablet S',
         'model_extra_info'       => null,
@@ -158,32 +154,6 @@ class SonyTabletS
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORONLY
-        );
-
-        if (3.2 == $osVersion) {
-            $this->setCapability('wurflKey', 'sony_tablet_s_ver1_suban22');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -194,7 +164,15 @@ class SonyTabletS
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sony_tablet_s_ver1_suban40';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORONLY
+        );
+
+        if (3.2 == $osVersion) {
+            $wurflKey = 'sony_tablet_s_ver1_suban22';
+        }
 
         return $wurflKey;
     }

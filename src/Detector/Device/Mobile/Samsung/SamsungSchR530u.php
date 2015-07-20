@@ -56,13 +56,11 @@ class SamsungSchR530u
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9300_ver1_subuauscellular', // not in wurfl
-
         // device
-        'model_name'             => 'GT-I9300', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-        'model_extra_info'       => 'for US Cellular', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-        'marketing_name'         => 'Galaxy S III', // wurflkey: samsung_gt_i9300_ver1_subuauscellular
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i9300_ver1_subuauscellular
+        'model_name'             => 'GT-I9300',
+        'model_extra_info'       => 'for US Cellular',
+        'marketing_name'         => 'Galaxy S III',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungSchR530u
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i9300_ver1_subuauscellular';
 
         return $wurflKey;
     }

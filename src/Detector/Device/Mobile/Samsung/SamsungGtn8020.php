@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 
@@ -59,13 +57,11 @@ class SamsungGtn8020
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_n8000_ver1_subua8020', // not in wurfl
-
         // device
         'model_name'             => 'GT-N8020',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Note 10.1 LTE', // wurflkey: samsung_gt_n8000_ver1_subua8020
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_n8000_ver1_subua8020
+        'marketing_name'         => 'Galaxy Note 10.1 LTE',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -158,36 +154,6 @@ class SamsungGtn8020
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (4.1 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'samsung_gt_n8000_ver1_suban41n8020');
-        }
-
-        if (4.4 == (float)$osVersion) {
-            $this->setCapability('wurflKey', 'samsung_gt_n8000_ver1_suban44n8020');
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -198,7 +164,19 @@ class SamsungGtn8020
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_n8000_ver1_subua8020';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if (4.1 == (float)$osVersion) {
+            $wurflKey = 'samsung_gt_n8000_ver1_suban41n8020';
+        }
+
+        if (4.4 == (float)$osVersion) {
+            $wurflKey = 'samsung_gt_n8000_ver1_suban44n8020';
+        }
 
         return $wurflKey;
     }

@@ -56,13 +56,11 @@ class SamsungGti9100p
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9100p_ver1_suban40nosam', // not in wurfl
-
         // device
         'model_name'             => 'GT-I9100P',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy S II NFC', // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i9100p_ver1_suban40nosam
+        'marketing_name'         => 'Galaxy S II NFC',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungGti9100p
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i9100p_ver1_suban40nosam';
 
         return $wurflKey;
     }

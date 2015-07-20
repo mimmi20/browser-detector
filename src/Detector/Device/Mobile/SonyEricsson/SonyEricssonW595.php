@@ -56,14 +56,12 @@ class SonyEricssonW595
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_w595_ver1', // not in wurfl
-
         // device
         'model_name'             => 'W595',
         'model_extra_info'       => null,
         'marketing_name'         => 'W595',
-        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_w595_ver1
-        'pointing_method'        => 'touchscreen', // wurflkey: sonyericsson_w595_ver1
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class SonyEricssonW595
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_w595_ver1';
 
         return $wurflKey;
     }

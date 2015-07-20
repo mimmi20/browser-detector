@@ -56,13 +56,11 @@ class SamsungSghT959
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sgh_t959_ver1_sub53017', // not in wurfl
-
         // device
         'model_name'             => 'SGH-T959',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Vibrant', // wurflkey: samsung_sgh_t959_ver1_sub53017
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_sgh_t959_ver1_sub53017
+        'marketing_name'         => 'Vibrant',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -169,7 +167,7 @@ class SamsungSghT959
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sgh_t959_ver1_sub53017';
 
         return $wurflKey;
     }

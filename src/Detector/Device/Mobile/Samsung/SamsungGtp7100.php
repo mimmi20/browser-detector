@@ -56,13 +56,11 @@ class SamsungGtp7100
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_p7100_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-P7100',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab 10.1V', // wurflkey: samsung_gt_p7100_ver1
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_p7100_ver1
+        'marketing_name'         => 'Galaxy Tab 10.1V',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungGtp7100
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_p7100_ver1';
 
         return $wurflKey;
     }

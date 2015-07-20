@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,9 +38,7 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -59,12 +56,10 @@ class SamsungGtp1000
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_galaxy_tab_ver1', // not in wurfl
-
         // device
         'model_name'             => 'GT-P1000',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Tab', // wurflkey: samsung_galaxy_tab_ver1
+        'marketing_name'         => 'Galaxy Tab',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -85,10 +80,10 @@ class SamsungGtp1000
         'dual_orientation'       => true,
         'colors'                 => 16777216,
         // sms
-        'sms_enabled'            => true, // wurflkey: samsung_galaxy_tab_ver1
+        'sms_enabled'            => true,
 
         // chips
-        'nfc_support'            => false, // wurflkey: samsung_galaxy_tab_ver1
+        'nfc_support'            => false,
     );
 
     /**
@@ -163,36 +158,6 @@ class SamsungGtp1000
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (2.3 >= $osVersion) {
-            $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        }
-
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-        $engine->setCapability('svgt_1_1', false);
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -203,7 +168,7 @@ class SamsungGtp1000
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_galaxy_tab_ver1';
 
         return $wurflKey;
     }

@@ -56,8 +56,6 @@ class SonyEricssonE15iv
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_e15i_ver1_subvoda_an21', // not in wurfl
-
         // device
         'model_name'             => 'E15iv',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SonyEricssonE15iv
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_e15i_ver1_subvoda_an21';
 
         return $wurflKey;
     }

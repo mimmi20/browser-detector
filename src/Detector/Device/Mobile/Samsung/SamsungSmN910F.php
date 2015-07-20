@@ -56,8 +56,6 @@ class SamsungSmN910F
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_n910a_ver1_subuaf', // not in wurfl
-
         // device
         'model_name'             => 'SM-N910F',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungSmN910F
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sm_n910a_ver1_subuaf';
 
         return $wurflKey;
     }

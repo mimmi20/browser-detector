@@ -56,8 +56,6 @@ class SamsungSphm930
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sph_m930_ver1', // not in wurfl
-
         // device
         'model_name'             => 'SPH-M930',
         'model_extra_info'       => 'Boost Mobile',
@@ -165,7 +163,7 @@ class SamsungSphm930
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sph_m930_ver1';
 
         return $wurflKey;
     }

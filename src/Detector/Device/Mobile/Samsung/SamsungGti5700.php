@@ -56,12 +56,10 @@ class SamsungGti5700
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i5700_ver1_subos21', // not in wurfl
-
         // device
-        'model_name'             => 'GT i5700', // wurflkey: samsung_gt_i5700_ver1_subos21
+        'model_name'             => 'GT i5700',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Spica', // wurflkey: samsung_gt_i5700_ver1_subos21
+        'marketing_name'         => 'Galaxy Spica',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -165,7 +163,7 @@ class SamsungGti5700
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i5700_ver1_subos21';
 
         return $wurflKey;
     }

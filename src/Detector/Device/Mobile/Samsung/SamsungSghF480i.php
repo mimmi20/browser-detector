@@ -56,10 +56,8 @@ class SamsungSghF480i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sgh_f480i_ver1', // not in wurfl
-
         // device
-        'model_name'             => 'SGH-F480I', // wurflkey: samsung_sgh_f480i_ver1
+        'model_name'             => 'SGH-F480I',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-F480I',
         'has_qwerty_keyboard'    => false,
@@ -165,7 +163,7 @@ class SamsungSghF480i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sgh_f480i_ver1';
 
         return $wurflKey;
     }

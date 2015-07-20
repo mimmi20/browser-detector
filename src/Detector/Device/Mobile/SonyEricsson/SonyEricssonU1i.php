@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -39,7 +38,6 @@ use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\Symbianos;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -58,18 +56,15 @@ class SonyEricssonU1i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_u1i_ver1', // not in wurfl
-
         // device
         'model_name'             => 'U1i',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Satio', // wurflkey: sonyericsson_u1i_ver1
-        'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_u1i_ver1
+        'marketing_name'         => 'Satio',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/U1iR000.xml',
-        // wurflkey: sonyericsson_u1i_ver1
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
@@ -162,28 +157,6 @@ class SonyEricssonU1i
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonU1i
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        if ('Symbian OS' == $os->getName()) {
-            $browser->setCapability('pdf_support', false);
-        }
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -194,7 +167,7 @@ class SonyEricssonU1i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_u1i_ver1';
 
         return $wurflKey;
     }

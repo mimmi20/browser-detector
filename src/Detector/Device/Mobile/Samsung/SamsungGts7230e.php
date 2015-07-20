@@ -56,14 +56,12 @@ class SamsungGts7230e
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_s7230e_ver1_suborange', // not in wurfl
-
         // device
         'model_name'             => 'GT-S7230E',
-        'model_extra_info'       => 'Orange', // wurflkey: samsung_gt_s7230e_ver1_suborange
-        'marketing_name'         => 'Wave 723', // wurflkey: samsung_gt_s7230e_ver1_suborange
+        'model_extra_info'       => 'Orange',
+        'marketing_name'         => 'Wave 723',
         'has_qwerty_keyboard'    => false,
-        'pointing_method'        => 'touchscreen', // wurflkey: samsung_gt_s7230e_ver1_suborange
+        'pointing_method'        => 'touchscreen',
 
         // product info
         'ununiqueness_handler'   => null,
@@ -166,7 +164,7 @@ class SamsungGts7230e
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_s7230e_ver1_suborange';
 
         return $wurflKey;
     }

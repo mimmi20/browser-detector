@@ -56,8 +56,6 @@ class SamsungSmT805
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_sm_t805y_ver1_subuay', // not in wurfl
-
         // device
         'model_name'             => 'SM-T805',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungSmT805
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_sm_t805y_ver1_subuay';
 
         return $wurflKey;
     }

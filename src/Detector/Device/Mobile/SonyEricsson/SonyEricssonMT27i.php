@@ -30,15 +30,14 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -49,7 +48,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  */
 class SonyEricssonMT27i
     extends AbstractDevice
-    implements DeviceInterface
+    implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -57,8 +56,6 @@ class SonyEricssonMT27i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_mt27i_ver1', // not in wurfl
-
         // device
         'model_name'             => 'MT27i',
         'model_extra_info'       => null,
@@ -156,28 +153,6 @@ class SonyEricssonMT27i
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\SonyEricsson\SonyEricssonMT27i
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        // wurflkey: sonyericsson_mt27i_ver1
-        $engine->setCapability('bmp', true);
-        $engine->setCapability('xhtml_can_embed_video', 'none');
-
-        return $this;
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -188,7 +163,7 @@ class SonyEricssonMT27i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_mt27i_ver1';
 
         return $wurflKey;
     }

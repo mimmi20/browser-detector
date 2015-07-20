@@ -56,8 +56,6 @@ class SonyST21i2
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sony_st21iv_ver1_subuai2', // not in wurfl
-
         // device
         'model_name'             => 'ST21i2',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SonyST21i2
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sony_st21iv_ver1_subuai2';
 
         return $wurflKey;
     }

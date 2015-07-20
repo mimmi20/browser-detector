@@ -56,8 +56,6 @@ class YPGB70
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_yp_gb70_ver1_suban23', // not in wurfl
-
         // device
         'model_name'             => 'YP-GB70',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class YPGB70
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_yp_gb70_ver1_suban23';
 
         return $wurflKey;
     }

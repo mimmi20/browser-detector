@@ -56,8 +56,6 @@ class SamsungGti9105p
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_gt_i9105p_ver1_suban40nosam', // not in wurfl
-
         // device
         'model_name'             => 'GT-I9105P',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SamsungGti9105p
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_gt_i9105p_ver1_suban40nosam';
 
         return $wurflKey;
     }

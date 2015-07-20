@@ -56,8 +56,6 @@ class SonyEricssonJ20i
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'sonyericsson_j20i_ver1', // not in wurfl
-
         // device
         'model_name'             => 'J20i',
         'model_extra_info'       => null,
@@ -165,7 +163,7 @@ class SonyEricssonJ20i
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'sonyericsson_j20i_ver1';
 
         return $wurflKey;
     }

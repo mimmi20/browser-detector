@@ -56,8 +56,6 @@ class SamsungSghi957
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_omnia7_ver1_subos75', // not in wurfl
-
         // device
         'model_name'             => 'SGH-I957',
         'model_extra_info'       => 'for AT&T',
@@ -165,7 +163,7 @@ class SamsungSghi957
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_omnia7_ver1_subos75';
 
         return $wurflKey;
     }

@@ -56,13 +56,11 @@ class SamsungShwM180s
      * @var array
      */
     protected $properties = array(
-        'wurflKey'               => 'samsung_galaxy_tab_ver1_sub_shwm180s_suban23b', // not in wurfl
-
         // device
         'model_name'             => 'SHW-M180S',
-        'model_extra_info'       => null, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
-        'marketing_name'         => 'GALAXY Tab (SKT)', // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
-        'has_qwerty_keyboard'    => true, // wurflkey: samsung_galaxy_tab_ver1_sub_shwm180s_suban23b
+        'model_extra_info'       => null,
+        'marketing_name'         => 'GALAXY Tab (SKT)',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -165,7 +163,7 @@ class SamsungShwM180s
      */
     public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
     {
-        $wurflKey = null;
+        $wurflKey = 'samsung_galaxy_tab_ver1_sub_shwm180s_suban23b';
 
         return $wurflKey;
     }
