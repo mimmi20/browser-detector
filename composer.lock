@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0cd26af40fd0d275d121a564bcff6607",
+    "hash": "a2070a14ef2b6c5a68b5662d6803e868",
     "packages": [
         {
             "name": "browscap/browscap",
@@ -75,16 +75,16 @@
         },
         {
             "name": "mimmi20/wurfl-constants",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/wurfl-constants.git",
-                "reference": "abd53b90bc530b5191ff780c543a2b523785b220"
+                "reference": "b97ce44840e5957aa9501faaa3fc2b1e77c25be7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mimmi20/wurfl-constants/zipball/abd53b90bc530b5191ff780c543a2b523785b220",
-                "reference": "abd53b90bc530b5191ff780c543a2b523785b220",
+                "url": "https://api.github.com/repos/mimmi20/wurfl-constants/zipball/b97ce44840e5957aa9501faaa3fc2b1e77c25be7",
+                "reference": "b97ce44840e5957aa9501faaa3fc2b1e77c25be7",
                 "shasum": ""
             },
             "require": {
@@ -113,7 +113,7 @@
                 "user agent",
                 "user-agent"
             ],
-            "time": "2015-07-20 20:54:43"
+            "time": "2015-07-21 18:23:08"
         },
         {
             "name": "mimmi20/wurfl-data",
@@ -171,20 +171,20 @@
         },
         {
             "name": "mimmi20/wurfl-generic-request",
-            "version": "1.0.0",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mimmi20/wurfl-generic-request.git",
-                "reference": "0d61700a97a29dd64dc142f11c40672ca17adaf6"
+                "reference": "f7ea6f9b3bc31e64720873b57a01fd507568a3d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mimmi20/wurfl-generic-request/zipball/0d61700a97a29dd64dc142f11c40672ca17adaf6",
-                "reference": "0d61700a97a29dd64dc142f11c40672ca17adaf6",
+                "url": "https://api.github.com/repos/mimmi20/wurfl-generic-request/zipball/f7ea6f9b3bc31e64720873b57a01fd507568a3d2",
+                "reference": "f7ea6f9b3bc31e64720873b57a01fd507568a3d2",
                 "shasum": ""
             },
             "require": {
-                "mimmi20/wurfl-constants": "1.0.0",
+                "mimmi20/wurfl-constants": "1.0.*",
                 "php": ">=5.3.3"
             },
             "require-dev": {
@@ -210,7 +210,7 @@
                 "user agent",
                 "user-agent"
             ],
-            "time": "2015-07-20 21:04:53"
+            "time": "2015-07-21 19:10:43"
         },
         {
             "name": "mimmi20/wurflcache",
