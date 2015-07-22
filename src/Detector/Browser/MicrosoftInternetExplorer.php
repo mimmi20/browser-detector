@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -47,7 +48,7 @@ use BrowserDetector\Detector\Version;
  */
 class MicrosoftInternetExplorer
     extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface
+    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     private $patterns = array(
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',
@@ -209,7 +210,7 @@ class MicrosoftInternetExplorer
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $engine = $this->detectEngine();
+        $engine = $this->getEngine();
 
         $engineVersion = (int)$engine->detectVersion()->getVersion(
             Version::MAJORONLY
@@ -264,7 +265,7 @@ class MicrosoftInternetExplorer
      *
      * @return \BrowserDetector\Detector\Engine\Trident
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Trident();
         $handler->setUseragent($this->useragent);

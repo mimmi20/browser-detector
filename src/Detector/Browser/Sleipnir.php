@@ -167,7 +167,7 @@ class Sleipnir
      *
      * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $engines = array(
             new Webkit(),

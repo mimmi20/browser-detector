@@ -133,7 +133,7 @@ class WindowsMediaPlayer
      *
      * @return \BrowserDetector\Detector\Engine\Trident
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Trident();
         $handler->setUseragent($this->useragent);

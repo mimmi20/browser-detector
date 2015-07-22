@@ -185,7 +185,7 @@ class Safari
      *
      * @return \BrowserDetector\Detector\Engine\Webkit
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Webkit();
         $handler->setUseragent($this->useragent);

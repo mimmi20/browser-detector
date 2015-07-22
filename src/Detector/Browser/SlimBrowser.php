@@ -145,7 +145,7 @@ class SlimBrowser
      *
      * @return \BrowserDetector\Detector\Engine\Khtml
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Trident();
         $handler->setUseragent($this->useragent);

@@ -183,7 +183,7 @@ class Maxthon
      *
      * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
-    public function detectEngine()
+    public function getEngine()
     {
         if (false !== strpos($this->useragent, 'Trident') || false !== strpos($this->useragent, 'MSIE')) {
             $engine = new Trident();

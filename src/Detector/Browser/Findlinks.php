@@ -141,7 +141,7 @@ class Findlinks
      *
      * @return null|\BrowserDetector\Detector\Engine\AbstractEngine
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);

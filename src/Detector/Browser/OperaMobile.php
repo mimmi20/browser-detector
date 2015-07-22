@@ -155,7 +155,7 @@ class OperaMobile
      *
      * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 

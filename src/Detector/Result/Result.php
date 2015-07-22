@@ -28,12 +28,19 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
+namespace BrowserDetector\Detector\Result;
 
 use BrowserDetector\Detector\Browser\AbstractBrowser;
+use BrowserDetector\Detector\Company\CompanyInterface;
+use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\Os\AbstractOs;
+use BrowserDetector\Detector\Type\Device\TypeInterface as DeviceTypeInterface;
+use BrowserDetector\Detector\Type\Device\Unknown as TypeUnknownDevice;
+use BrowserDetector\Detector\Type\Browser\TypeInterface as BrowserTypeInterface;
+use BrowserDetector\Detector\Type\Browser\Unknown as TypeUnknownBrowser;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
 use Wurfl\WurflConstants;
 
@@ -54,7 +61,7 @@ class Result
     /**
      * should the device render the content like another?
      *
-     * @var \BrowserDetector\Detector\Result
+     * @var \BrowserDetector\Detector\Result\Result
      */
     private $renderAs = null;
 
@@ -714,7 +721,7 @@ class Result
     /**
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return \BrowserDetector\Detector\Result
+     * @return \BrowserDetector\Detector\Result\Result
      */
     public function setLogger($logger)
     {
@@ -726,6 +733,7 @@ class Result
     /**
      * the class constructor
      *
+     * @param string                                            $userAgent
      * @param \BrowserDetector\Detector\Device\AbstractDevice   $device
      * @param \BrowserDetector\Detector\Os\AbstractOs           $os
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
@@ -733,6 +741,7 @@ class Result
      * @param null|string                                       $wurflKey
      */
     public function __construct(
+        $userAgent,
         AbstractDevice $device,
         AbstractOs $os,
         AbstractBrowser $browser,
@@ -747,7 +756,8 @@ class Result
         $this->setCapability('device_os_version', clone $detector);
         $this->setCapability('model_version', clone $detector);
 
-        $this->wurflKey = $wurflKey;
+        $this->userAgent = $userAgent;
+        $this->wurflKey  = $wurflKey;
 
         $this->device  = $device;
         $this->os      = $os;
@@ -778,7 +788,8 @@ class Result
 
         if (in_array($capabilityName, $versionfields) && !($capabilityValue instanceof Version)) {
             throw new \InvalidArgumentException(
-                'capability "' . $capabilityName . '" requires an instance of ' . '\\BrowserDetector\\Detector\\Version as value'
+                'capability "' . $capabilityName . '" requires an instance of '
+                . '\\BrowserDetector\\Detector\\Version as value'
             );
         }
 
@@ -812,9 +823,10 @@ class Result
     }
 
     /**
-     * serializes the object
-     *
-     * @return string
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * String representation of object
+     * @link http://php.net/manual/en/serializable.serialize.php
+     * @return string the string representation of the object or null
      */
     public function serialize()
     {
@@ -824,14 +836,22 @@ class Result
                 'renderAs'   => $this->renderAs,
                 'wurflKey'   => $this->wurflKey,
                 'userAgent'  => $this->userAgent,
+                'device'     => $this->device,
+                'os'         => $this->os,
+                'browser'    => $this->browser,
+                'engine'     => $this->engine,
             )
         );
     }
 
     /**
-     * unserializes the object
-     *
-     * @param string $data The serialized data
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * Constructs the object
+     * @link http://php.net/manual/en/serializable.unserialize.php
+     * @param string $serialized <p>
+     * The string representation of the object.
+     * </p>
+     * @return void
      */
     public function unserialize($data)
     {
@@ -844,6 +864,10 @@ class Result
         $this->renderAs  = $unseriliazedData['renderAs'];
         $this->wurflKey  = $unseriliazedData['wurflKey'];
         $this->userAgent = $unseriliazedData['userAgent'];
+        $this->engine    = $unseriliazedData['engine'];
+        $this->os        = $unseriliazedData['os'];
+        $this->browser   = $unseriliazedData['browser'];
+        $this->engine    = $unseriliazedData['engine'];
     }
 
     /**
@@ -918,7 +942,7 @@ class Result
     /**
      * returns a second device for rendering properties
      *
-     * @return \BrowserDetector\Detector\Result
+     * @return \BrowserDetector\Detector\Result\Result
      */
     public function getRenderAs()
     {
@@ -928,7 +952,7 @@ class Result
     /**
      * sets a second device for rendering properties
      *
-     * @var \BrowserDetector\Detector\Result $result
+     * @var \BrowserDetector\Detector\Result\Result $result
      *
      * @return AbstractDevice
      */
@@ -1304,8 +1328,8 @@ class Result
     {
         $value = $this->device->getManufacturer();
 
-        if (!($value instanceof Company\CompanyInterface)) {
-            $value = new Company\Unknown();
+        if (!($value instanceof CompanyInterface)) {
+            $value = new UnknownCompany();
         }
 
         return $value;
@@ -1320,8 +1344,8 @@ class Result
     {
         $value = $this->device->getBrand();
 
-        if (!($value instanceof Company\CompanyInterface)) {
-            $value = new Company\Unknown();
+        if (!($value instanceof CompanyInterface)) {
+            $value = new UnknownCompany();
         }
 
         return $value;
@@ -1334,8 +1358,8 @@ class Result
     {
         $type = $this->device->getDeviceType();
 
-        if (!($type instanceof Type\Device\TypeInterface)) {
-            $type = new Type\Device\Unknown();
+        if (!($type instanceof DeviceTypeInterface)) {
+            $type = new TypeUnknownDevice();
         }
 
         return $type;
@@ -1348,8 +1372,8 @@ class Result
     {
         $type = $this->browser->getBrowserType();
 
-        if (!($type instanceof Type\Browser\TypeInterface)) {
-            $type = new Type\Browser\Unknown();
+        if (!($type instanceof BrowserTypeInterface)) {
+            $type = new TypeUnknownBrowser();
         }
 
         return $type;

@@ -28,15 +28,20 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
+namespace BrowserDetector\Detector\Result;
 
 use BrowserDetector\Detector\Browser\AbstractBrowser;
+use BrowserDetector\Detector\Company\CompanyInterface;
+use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
+use BrowserDetector\Detector\Bits\Device as DeviceBits;
+use BrowserDetector\Detector\Bits\Browser as BrowserBits;
+use BrowserDetector\Detector\Bits\Os as OsBits;
+use BrowserDetector\Detector\Cpu;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Helper\Utils;
 use Psr\Log\LoggerInterface;
 use Wurfl\WurflConstants;
 use WurflData\Loader;
@@ -55,15 +60,17 @@ class ResultFactory
     /**
      * builds the result object and set the values
      *
+     * @param string                                            $userAgent
      * @param \BrowserDetector\Detector\Device\AbstractDevice   $device
      * @param \BrowserDetector\Detector\Os\AbstractOs           $os
      * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
      * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
      * @param \Psr\Log\LoggerInterface                          $logger
      *
-     * @return \BrowserDetector\Detector\Result
+     * @return \BrowserDetector\Detector\Result\Result
      */
     public static function build(
+        $userAgent,
         AbstractDevice $device,
         AbstractOs $os,
         AbstractBrowser $browser,
@@ -78,7 +85,7 @@ class ResultFactory
             $wurflKey = WurflConstants::NO_MATCH;
         }
 
-        $result = new Result($device, $os, $browser, $engine, $wurflKey);
+        $result = new Result($userAgent, $device, $os, $browser, $engine, $wurflKey);
         $result->setLogger($logger);
 
         $additionalData = Loader::load(strtolower($wurflKey), $logger);
@@ -103,49 +110,49 @@ class ResultFactory
                         $value = get_class($os);
                         break;
                     case 'manufacturer_name':
-                        $value = $this->getDeviceManufacturer()->getName();
+                        $value = $result->getDeviceManufacturer()->getName();
                         break;
                     case 'brand_name':
-                        $value = $this->getDeviceBrand()->getBrandName();
+                        $value = $result->getDeviceBrand()->getBrandName();
                         break;
                     case 'model_name':
-                        $value = $this->getDeviceName();
+                        $value = $result->getDeviceName();
                         break;
                     case 'marketing_name':
-                        $value = $this->getDeviceMarketingName();
+                        $value = $result->getDeviceMarketingName();
                         break;
                     case 'pointing_method':
-                        $value = $this->getDevicePointingMethod();
+                        $value = $result->getDevicePointingMethod();
                         break;
                     case 'resolution_width':
-                        $value = $this->getDeviceResolutionWidth();
+                        $value = $result->getDeviceResolutionWidth();
                         break;
                     case 'resolution_height':
-                        $value = $this->getDeviceResolutionHeight();
+                        $value = $result->getDeviceResolutionHeight();
                         break;
                     case 'dual_orientation':
-                        $value = $this->hasDeviceDualOrientation();
+                        $value = $result->hasDeviceDualOrientation();
                         break;
                     case 'colors':
-                        $value = $this->getDeviceColors();
+                        $value = $result->getDeviceColors();
                         break;
                     case 'sms_enabled':
-                        $value = $this->hasDeviceSmsEnabled();
+                        $value = $result->hasDeviceSmsEnabled();
                         break;
                     case 'nfc_support':
-                        $value = $this->hasDeviceNfcSupport();
+                        $value = $result->hasDeviceNfcSupport();
                         break;
                     case 'has_qwerty_keyboard':
-                        $value = $this->hasDeviceQwertyKeyboard();
+                        $value = $result->hasDeviceQwertyKeyboard();
                         break;
                     case 'model_extra_info':
                         $value = $device->getCapability('model_extra_info', false);
                         break;
                     case 'pdf_support':
-                        $value = $this->isPdfSupported();
+                        $value = $result->isPdfSupported();
                         break;
                     case 'rss_support':
-                        $value = $this->isRssSupported();
+                        $value = $result->isRssSupported();
                         break;
                     case 'basic_authentication_support':
                         $value = $browser->getCapability('basic_authentication_support', false);
@@ -155,55 +162,55 @@ class ResultFactory
                         break;
                     case 'device_type':
                     case 'controlcap_form_factor':
-                        $value = $this->getDeviceType()->getName();
+                        $value = $result->getDeviceType()->getName();
                         break;
                     case 'is_wireless_device':
                     case 'controlcap_is_mobile':
-                        $value = $this->isMobileDevice();
+                        $value = $result->isMobileDevice();
                         break;
                     case 'is_tablet':
-                        $value = $this->isTablet();
+                        $value = $result->isTablet();
                         break;
                     case 'is_smarttv':
-                        $value = $this->isTvDevice();
+                        $value = $result->isTvDevice();
                         break;
                     case 'is_console':
-                        $value = $this->isConsole();
+                        $value = $result->isConsole();
                         break;
                     case 'ux_full_desktop':
                     case 'controlcap_is_full_desktop':
-                        $value = $this->isDesktop();
+                        $value = $result->isDesktop();
                         break;
                     case 'can_assign_phone_number':
                     case 'controlcap_is_mobilephone':
-                        $value = $this->isPhone();
+                        $value = $result->isPhone();
                         break;
                     case 'controlcap_is_touchscreen':
-                        $value = $this->hasDeviceTouchScreen();
+                        $value = $result->hasDeviceTouchScreen();
                         break;
                     case 'controlcap_is_largescreen':
-                        $value = ($this->getDeviceResolutionWidth() >= 480 && $this->getDeviceResolutionHeight() >= 480);
+                        $value = ($result->getDeviceResolutionWidth() >= 480 && $result->getDeviceResolutionHeight() >= 480);
                         break;
                     case 'model_version':
                         $value = $device->detectVersion();
                         break;
                     case 'device_bits':
-                        $detector = new Bits\Device();
-                        $detector->setUserAgent($this->userAgent);
+                        $detector = new DeviceBits();
+                        $detector->setUserAgent($result->userAgent);
 
                         $value = $detector->getBits();
                         break;
                     case 'device_cpu':
                         $detector = new Cpu();
-                        $detector->setUserAgent($this->userAgent);
+                        $detector->setUserAgent($result->userAgent);
 
                         $value = $detector->getCpu();
                         break;
                     case 'mobile_browser_manufacturer':
                         $value = $browser->getManufacturer();
 
-                        if (!($value instanceof Company\CompanyInterface)) {
-                            $value = new Company\Unknown();
+                        if (!($value instanceof CompanyInterface)) {
+                            $value = new UnknownCompany();
                         }
 
                         $value = $value->getName();
@@ -211,27 +218,27 @@ class ResultFactory
                     case 'mobile_browser_brand_name':
                         $value = $browser->getManufacturer();
 
-                        if (!($value instanceof Company\CompanyInterface)) {
-                            $value = new Company\Unknown();
+                        if (!($value instanceof CompanyInterface)) {
+                            $value = new UnknownCompany();
                         }
 
                         $value = $value->getBrandName();
                         break;
                     case 'is_bot':
                     case 'controlcap_is_robot':
-                        $value = $this->isCrawler();
+                        $value = $result->isCrawler();
                         break;
                     case 'is_transcoder':
-                        $value = $this->isTranscoder();
+                        $value = $result->isTranscoder();
                         break;
                     case 'is_syndication_reader':
-                        $value = $this->isSyndicationReader();
+                        $value = $result->isSyndicationReader();
                         break;
                     case 'is_banned':
-                        $value = $this->isBanned();
+                        $value = $result->isBanned();
                         break;
                     case 'browser_type':
-                        $value = $this->getBrowserType()->getName();
+                        $value = $result->getBrowserType()->getName();
                         break;
                     case 'mobile_browser':
                     case 'controlcap_advertised_browser':
@@ -245,14 +252,14 @@ class ResultFactory
                         $value = $browser->detectVersion();
                         break;
                     case 'mobile_browser_bits':
-                        $detector = new Bits\Browser();
-                        $detector->setUserAgent($this->userAgent);
+                        $detector = new BrowserBits();
+                        $detector->setUserAgent($result->userAgent);
 
                         $value = $detector->getBits();
                         break;
                     case 'device_os_bits':
-                        $detector = new Bits\Os();
-                        $detector->setUserAgent($this->userAgent);
+                        $detector = new OsBits();
+                        $detector->setUserAgent($result->userAgent);
 
                         $value = $detector->getBits();
                         break;
@@ -276,8 +283,8 @@ class ResultFactory
                     case 'device_os_manufacturer':
                         $value = $os->getManufacturer();
 
-                        if (!($value instanceof Company\CompanyInterface)) {
-                            $value = new Company\Unknown();
+                        if (!($value instanceof CompanyInterface)) {
+                            $value = new UnknownCompany();
                         }
 
                         $value = $value->getName();
@@ -285,8 +292,8 @@ class ResultFactory
                     case 'device_os_brand_name':
                         $value = $os->getManufacturer();
 
-                        if (!($value instanceof Company\CompanyInterface)) {
-                            $value = new Company\Unknown();
+                        if (!($value instanceof CompanyInterface)) {
+                            $value = new UnknownCompany();
                         }
 
                         $value = $value->getBrandName();
@@ -294,8 +301,8 @@ class ResultFactory
                     case 'renderingengine_manufacturer':
                         $value = $engine->getManufacturer();
 
-                        if (!($value instanceof Company\CompanyInterface)) {
-                            $value = new Company\Unknown();
+                        if (!($value instanceof CompanyInterface)) {
+                            $value = new UnknownCompany();
                         }
 
                         $value = $value->getName();
@@ -303,8 +310,8 @@ class ResultFactory
                     case 'renderingengine_brand_name':
                         $value = $engine->getManufacturer();
 
-                        if (!($value instanceof Company\CompanyInterface)) {
-                            $value = new Company\Unknown();
+                        if (!($value instanceof CompanyInterface)) {
+                            $value = new UnknownCompany();
                         }
 
                         $value = $value->getBrandName();
@@ -326,16 +333,16 @@ class ResultFactory
                         $value = (strpos($engine->getCapability('preferred_markup'), 'html_web') === 0);
                         break;
                     case 'controlcap_is_app':
-                        $value = $this->isApp();
+                        $value = $result->isApp();
                         break;
                     case 'controlcap_is_smartphone':
-                        $value = $this->isSmartphone();
+                        $value = $result->isSmartphone();
                         break;
                     case 'cookie_support':
-                        $value = $this->supportsCookies();
+                        $value = $result->supportsCookies();
                         break;
                     case 'xhtml_table_support':
-                        $value = $this->supportsTables();
+                        $value = $result->supportsTables();
                         break;
                     default:
                         if (is_array($additionalData) && array_key_exists($property, $additionalData)) {
@@ -350,15 +357,15 @@ class ResultFactory
                 continue;
             }
 
-            $this->setCapability($property, $value);
+            $result->setCapability($property, $value);
         }
 
         $renderedAs = $device->getRenderAs();
 
         if ($renderedAs instanceof Result) {
-            $this->setRenderAs($renderedAs);
+            $result->setRenderAs($renderedAs);
         }
 
-        return $this;
+        return $result;
     }
 }

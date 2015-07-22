@@ -142,7 +142,7 @@ class MailRu
      *
      * @return \BrowserDetector\Detector\Engine\Gecko
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Gecko();
         $handler->setUseragent($this->useragent);

@@ -183,7 +183,7 @@ class Konqueror
      *
      * @return \BrowserDetector\Detector\Engine\Khtml
      */
-    public function detectEngine()
+    public function getEngine()
     {
         if ($this->utils->checkIfContains(array('like Gecko'))) {
             $handler = new Webkit();

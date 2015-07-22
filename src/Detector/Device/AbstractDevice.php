@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\Result;
+use BrowserDetector\Detector\Result\Result;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
@@ -52,7 +52,7 @@ use Psr\Log\LoggerInterface;
  * @property-read boolean $actualDeviceRoot
  */
 abstract class AbstractDevice
-    implements DeviceInterface
+    implements DeviceInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
@@ -124,6 +124,14 @@ abstract class AbstractDevice
      * @return AbstractDevice
      */
     public function __construct()
+    {
+        $this->init();
+    }
+
+    /**
+     * initializes the object
+     */
+    protected function init()
     {
         $this->utils = new Utils();
     }
@@ -318,7 +326,7 @@ abstract class AbstractDevice
     /**
      * sets a second device for rendering properties
      *
-     * @var \BrowserDetector\Detector\Result $result
+     * @var \BrowserDetector\Detector\Result\Result $result
      *
      * @return AbstractDevice
      */
@@ -332,7 +340,7 @@ abstract class AbstractDevice
     /**
      * sets a second device for rendering properties
      *
-     * @return Result
+     * @return \BrowserDetector\Detector\Result\Result
      */
     public function getRenderAs()
     {
@@ -357,5 +365,47 @@ abstract class AbstractDevice
         $this->logger = $logger;
 
         return $this;
+    }
+
+    /**
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * String representation of object
+     * @link http://php.net/manual/en/serializable.serialize.php
+     * @return string the string representation of the object or null
+     */
+    public function serialize()
+    {
+        return serialize(
+            array(
+                'properties' => $this->properties,
+                'userAgent'  => $this->useragent,
+                'renderAs'   => $this->renderAs,
+                'version'    => $this->version,
+            )
+        );
+    }
+
+    /**
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * Constructs the object
+     * @link http://php.net/manual/en/serializable.unserialize.php
+     * @param string $serialized <p>
+     * The string representation of the object.
+     * </p>
+     * @return void
+     */
+    public function unserialize($serialized)
+    {
+        $unseriliazedData = unserialize($serialized);
+
+        foreach ($unseriliazedData['properties'] as $property => $value) {
+            $this->properties[$property] = $value;
+        }
+
+        $this->init();
+        $this->setUserAgent($unseriliazedData['userAgent']);
+
+        $this->renderAs = $unseriliazedData['renderAs'];
+        $this->version  = $unseriliazedData['version'];
     }
 }

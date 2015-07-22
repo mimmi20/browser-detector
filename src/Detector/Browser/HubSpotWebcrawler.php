@@ -141,7 +141,7 @@ class HubSpotWebcrawler
      *
      * @return \BrowserDetector\Detector\Engine\WebKit
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new WebKit();
         $handler->setUseragent($this->useragent);

@@ -30,18 +30,14 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\MatcherInterface\Engine\EngineDependsOnDeviceInterface;
 use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
-
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
 
 /**
  * MSIEAgentHandler
- *
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
@@ -50,7 +46,7 @@ use BrowserDetector\Detector\Version;
  */
 class Blink
     extends AbstractEngine
-    implements EngineInterface
+    implements EngineInterface, EngineDependsOnDeviceInterface
 {
     /**
      * the detected browser properties
@@ -255,20 +251,14 @@ class Blink
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * sets properties on the engine depending on the device
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
      *
      * @return AbstractDevice
      */
-    public function detectDependProperties(
-        AbstractOs $os,
-        AbstractDevice $device,
-        AbstractBrowser $browser
-    ) {
+    public function detectDependProperties(AbstractDevice $device)
+    {
         if ($device->getDeviceType()->isMobile()) {
             $this->setCapability('html_wi_oma_xhtmlmp_1_0', true);
             $this->setCapability('html_wi_imode_compact_generic', true);

@@ -142,7 +142,7 @@ class InettvBrowser
      *
      * @return \BrowserDetector\Detector\Engine\Presto
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Presto();
         $handler->setUseragent($this->useragent);

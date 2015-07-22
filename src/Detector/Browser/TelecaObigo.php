@@ -183,7 +183,7 @@ class TelecaObigo
      *
      * @return \BrowserDetector\Detector\Engine\Teleca
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Teleca();
         $handler->setUseragent($this->useragent);

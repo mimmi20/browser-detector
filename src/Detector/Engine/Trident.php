@@ -27,12 +27,10 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\MatcherInterface\Engine\EngineDependsOnDeviceInterface;
 use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
 
 /**
@@ -45,7 +43,7 @@ use BrowserDetector\Detector\Version;
  */
 class Trident
     extends AbstractEngine
-    implements EngineInterface
+    implements EngineInterface, EngineDependsOnDeviceInterface
 {
     /**
      * the detected browser properties
@@ -275,22 +273,15 @@ class Trident
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * sets properties on the engine depending on the device
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
      * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
      *
-     * @return Trident
+     * @return AbstractDevice
      */
-    public function detectDependProperties(
-        AbstractOs $os,
-        AbstractDevice $device,
-        AbstractBrowser $browser
-    ) {
-        if ($device->getDeviceType()->isMobile()
-        ) {
+    public function detectDependProperties(AbstractDevice $device)
+    {
+        if ($device->getDeviceType()->isMobile()) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');
         } else {
             $this->setCapability('xhtml_make_phone_call_string', 'none');

@@ -135,7 +135,7 @@ class Realplayer
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);

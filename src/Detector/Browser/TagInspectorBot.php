@@ -139,7 +139,7 @@ class TagInspectorBot
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new WebKit();
         $handler->setUseragent($this->useragent);

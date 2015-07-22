@@ -37,6 +37,7 @@ use BrowserDetector\Detector\Factory\PlatformFactory;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserCalculatesAlternativeResultInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasVersionInterface;
+use BrowserDetector\Detector\MatcherInterface\Engine\EngineDependsOnDeviceInterface;
 use BrowserDetector\Detector\MatcherInterface\Os\OsChangesBrowserInterface;
 use BrowserDetector\Detector\MatcherInterface\Os\OsChangesEngineInterface;
 use BrowserDetector\Detector\Result;
@@ -138,7 +139,7 @@ class BrowserDetector
      * @param string|array|\Wurfl\Request\GenericRequest $request
      * @param boolean                                    $forceDetect if TRUE a possible cache hit is ignored
      *
-     * @return \BrowserDetector\Detector\Result
+     * @return \BrowserDetector\Detector\Result\Result
      */
     public function getBrowser($request = null, $forceDetect = false)
     {
@@ -170,7 +171,7 @@ class BrowserDetector
             $result = $this->getCache()->getItem($cacheId, $success);
         }
 
-        if ($forceDetect || null === $this->getCache() || !$success || !($result instanceof Detector\Result)) {
+        if ($forceDetect || null === $this->getCache() || !$success || !($result instanceof Detector\Result\Result)) {
             $device = DeviceFactory::detect($request->getDeviceUserAgent());
 
             if (null !== $this->getLogger()) {
@@ -198,6 +199,10 @@ class BrowserDetector
             // detect the engine which is used in the browser
             $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
 
+            if ($engine instanceof EngineDependsOnDeviceInterface) {
+                $engine->detectDependProperties($device);
+            }
+
             if ($platform instanceof OsChangesEngineInterface) {
                 $platform->changeEngineProperties($engine, $browser, $device);
             }
@@ -209,24 +214,20 @@ class BrowserDetector
             // @todo: set engine related properties to the browser, define an interface for that
             // @todo: set browser related properties to the device, define an interface for that
 
-            $result = new Result();
-
-            if (null !== $this->getLogger()) {
-                $result->setLogger($this->getLogger());
-            }
-
-            $result->setCapability('useragent', $request->getUserAgent());
-
-            $result->setDetectionResult(
+            $result = Result\ResultFactory::build(
+                $request->getUserAgent(),
                 $device,
                 $platform,
                 $browser,
-                $engine
+                $engine,
+                $this->getLogger()
             );
 
             if (!$forceDetect && null !== $this->getCache()) {
                 $this->getCache()->setItem($cacheId, $result);
             }
+        } else {
+            $result->setLogger($this->getLogger());
         }
 
         return $result;

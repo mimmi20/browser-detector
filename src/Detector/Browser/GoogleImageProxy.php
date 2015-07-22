@@ -145,7 +145,7 @@ class GoogleImageProxy
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectEngine()
+    public function getEngine()
     {
         if ($this->utils->checkIfContains('Gecko')) {
             $handler = new Gecko();

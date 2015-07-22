@@ -151,7 +151,7 @@ class NetFrontLifeBrowser
      *
      * @return \BrowserDetector\Detector\Engine\NetFront
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new NetFrontEngine();
         $handler->setUseragent($this->useragent);

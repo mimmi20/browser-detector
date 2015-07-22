@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Cosmote;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;

@@ -146,7 +146,7 @@ class SmartViera
      *
      * @return \BrowserDetector\Detector\Engine\Webkit
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $chrome = new Chrome();
         $chrome->setUserAgent($this->useragent);

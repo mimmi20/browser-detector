@@ -132,7 +132,7 @@ class Spinn3r
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Gecko();
         $handler->setUseragent($this->useragent);

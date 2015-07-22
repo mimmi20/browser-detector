@@ -146,7 +146,7 @@ class NetFrontNx
      *
      * @return \BrowserDetector\Detector\Engine\NetFront
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $engines = array(new Webkit());
 

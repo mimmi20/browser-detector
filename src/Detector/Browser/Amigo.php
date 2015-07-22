@@ -165,7 +165,7 @@ class Amigo
      *
      * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $chrome = new Chrome();
         $chrome->setUserAgent($this->useragent);

@@ -168,11 +168,6 @@ class NokiaLumia625
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        // wurflkey: nokia_lumia_625_ver1
-        $engine->setCapability('bmp', false);
-        $engine->setCapability('wbmp', false);
-        $engine->setCapability('tiff', false);
-
         if ($this->utils->checkIfContains('vodafone', true)) {
             $this->setCapability('model_extra_info', 'for Vodafone');
         }

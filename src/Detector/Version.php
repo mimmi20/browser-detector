@@ -147,27 +147,10 @@ class Version
     private $mode = self::COMPLETE;
 
     /**
-     * magic function needed to reconstruct the class from a var_export
-     *
-     * @param array $array
-     *
-     * @return Version
-     */
-    static function __set_state(array $array)
-    {
-        $obj = new self;
-
-        foreach ($array as $k => $v) {
-            $obj->$k = $v;
-        }
-
-        return $obj;
-    }
-
-    /**
-     * serializes the object
-     *
-     * @return string
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * String representation of object
+     * @link http://php.net/manual/en/serializable.serialize.php
+     * @return string the string representation of the object or null
      */
     public function serialize()
     {
@@ -182,13 +165,17 @@ class Version
     }
 
     /**
-     * unserializes the object
-     *
-     * @param string $data The serialized data
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * Constructs the object
+     * @link http://php.net/manual/en/serializable.unserialize.php
+     * @param string $serialized <p>
+     * The string representation of the object.
+     * </p>
+     * @return void
      */
-    public function unserialize($data)
+    public function unserialize($serialized)
     {
-        $unseriliazedData = unserialize($data);
+        $unseriliazedData = unserialize($serialized);
 
         $this->version   = $unseriliazedData['version'];
         $this->mode      = $unseriliazedData['mode'];
