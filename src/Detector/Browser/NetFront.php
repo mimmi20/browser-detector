@@ -30,11 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -150,23 +146,5 @@ class NetFront
     public function getWeight()
     {
         return 9846;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\NetFront
-     */
-    public function getEngine()
-    {
-        $engines = array(new Webkit());
-
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new NetFrontEngine());
-
-        return $chain->detect();
     }
 }
