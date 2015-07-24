@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -44,6 +45,7 @@ use BrowserDetector\Detector\Version;
  */
 class Voyager
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties

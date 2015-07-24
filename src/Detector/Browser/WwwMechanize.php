@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -47,6 +48,7 @@ use BrowserDetector\Detector\Version;
  */
 class WwwMechanize
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties

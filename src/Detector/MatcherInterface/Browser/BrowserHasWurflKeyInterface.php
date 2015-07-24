@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\MatcherInterface\Browser;
 use BrowserDetector\Detector\Os\AbstractOs;
 
 /**
- * interface for all browsers to detect
+ * interface for all browsers with an own wurfl key
  *
  * @category  BrowserDetector
  * @package   BrowserDetector

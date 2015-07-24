@@ -34,8 +34,6 @@ use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
 use BrowserDetector\Detector\Version;
 
 /**
- * MSIEAgentHandler
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
@@ -242,7 +240,7 @@ class Edge
      *
      * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
      *
-     * @return AbstractDevice
+     * @return \BrowserDetector\Detector\Engine\AbstractEngine
      */
     public function detectDependProperties(AbstractDevice $device)
     {

@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\MatcherInterface\Browser;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
- * interface for all browsers to detect
+ * interface for all browsers with the ability to render as an result
  *
  * @category  BrowserDetector
  * @package   BrowserDetector

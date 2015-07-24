@@ -28,53 +28,26 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Os;
+namespace BrowserDetector\Detector\MatcherInterface\Browser;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
-
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Detector\Engine\AbstractEngine;
 
 /**
+ * interface for all rendering engines to detect
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WyderOs extends AbstractOs implements OsInterface
+interface BrowserDependsOnEngineInterface
 {
     /**
-     * returns the name of the operating system/platform
+     * sets properties on the browser depending on the engine
      *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'WyderOS';
-    }
-
-    /**
-     * returns the version of the operating system/platform
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('WyderOS');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Unknown();
-    }
+    public function detectDependProperties(AbstractEngine $engine);
 }

@@ -34,8 +34,6 @@ use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
 use BrowserDetector\Detector\Version;
 
 /**
- * MSIEAgentHandler
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
@@ -263,21 +261,11 @@ class Trident
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 378311339;
-    }
-
-    /**
      * sets properties on the engine depending on the device
      *
      * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
      *
-     * @return AbstractDevice
+     * @return \BrowserDetector\Detector\Engine\AbstractEngine
      */
     public function detectDependProperties(AbstractDevice $device)
     {

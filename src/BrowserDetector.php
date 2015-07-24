@@ -35,6 +35,8 @@ use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserCalculatesAlternativeResultInterface;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserDependsOnEngineInterface;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasVersionInterface;
 use BrowserDetector\Detector\MatcherInterface\Engine\EngineDependsOnDeviceInterface;
@@ -192,12 +194,20 @@ class BrowserDetector
             // detect the browser which is used
             $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $this->getCache());
 
+            if ($browser instanceof BrowserHasRuntimeModificationsInterface) {
+                $browser->detectSpecialProperties();
+            }
+
             if ($browser instanceof BrowserCalculatesAlternativeResultInterface) {
                 $browser->calculateAlternativeRendering($device);
             }
 
             // detect the engine which is used in the browser
             $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
+
+            if ($browser instanceof BrowserDependsOnEngineInterface) {
+                $browser->detectDependProperties($engine);
+            }
 
             if ($engine instanceof EngineDependsOnDeviceInterface) {
                 $engine->detectDependProperties($device);
@@ -210,9 +220,6 @@ class BrowserDetector
             if ($platform instanceof OsChangesBrowserInterface) {
                 $platform->changeBrowserProperties($browser);
             }
-
-            // @todo: set engine related properties to the browser, define an interface for that
-            // @todo: set browser related properties to the device, define an interface for that
 
             $result = Result\ResultFactory::build(
                 $request->getUserAgent(),

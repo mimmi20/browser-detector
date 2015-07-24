@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
@@ -43,7 +44,7 @@ use BrowserDetector\Helper\Utils;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 abstract class AbstractOs
-    implements OsInterface, \Serializable
+    implements MatcherInterface, OsInterface, \Serializable
 {
     /**
      * @var string the user agent to handle

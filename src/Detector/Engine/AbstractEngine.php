@@ -32,10 +32,10 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company\Unknown;
 use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherHasCapabilitiesInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
-
-//use Zend\Cache\Frontend\Core;
 
 /**
  * base class for all rendering engines to detect
@@ -46,7 +46,7 @@ use BrowserDetector\Helper\Utils;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 abstract class AbstractEngine
-    implements EngineInterface, \Serializable
+    implements MatcherInterface, MatcherHasCapabilitiesInterface, EngineInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
@@ -580,16 +580,6 @@ abstract class AbstractEngine
         $detector->setUserAgent($this->useragent);
 
         return $detector->setVersion('');
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 1;
     }
 
     /**

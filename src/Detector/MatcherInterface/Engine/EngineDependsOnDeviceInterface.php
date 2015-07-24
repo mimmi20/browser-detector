@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\MatcherInterface\Engine;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
- * interface for all rendering engines to detect
+ * interface for all rendering engines which are depending on device properties
  *
  * @category  BrowserDetector
  * @package   BrowserDetector
@@ -47,7 +47,7 @@ interface EngineDependsOnDeviceInterface
      *
      * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
      *
-     * @return AbstractDevice
+     * @return \BrowserDetector\Detector\Engine\AbstractEngine
      */
     public function detectDependProperties(AbstractDevice $device);
 }

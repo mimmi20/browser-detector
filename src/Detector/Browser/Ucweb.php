@@ -30,12 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\U3;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -137,26 +132,5 @@ class Ucweb
     public function getWeight()
     {
         return 7976;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
-     */
-    public function getEngine()
-    {
-        $engines = array(
-            new Webkit(),
-            new U3(),
-        );
-
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new UnknownEngine());
-
-        return $chain->detect();
     }
 }

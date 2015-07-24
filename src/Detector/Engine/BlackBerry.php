@@ -34,9 +34,6 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
@@ -216,15 +213,5 @@ class BlackBerry
     public function getManufacturer()
     {
         return new Company\Rim();
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 37238;
     }
 }

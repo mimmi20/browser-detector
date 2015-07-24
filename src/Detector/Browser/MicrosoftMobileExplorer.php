@@ -30,14 +30,10 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasRuntimeModificationsInterface;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -49,7 +45,7 @@ use BrowserDetector\Detector\Version;
  */
 class MicrosoftMobileExplorer
     extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+    implements BrowserHasSpecificEngineInterface, BrowserHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties
@@ -188,20 +184,13 @@ class MicrosoftMobileExplorer
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * detects properties who are depending on the device version or the user
+     * agent
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
-     *
-     * @return \BrowserDetector\Detector\Browser\MicrosoftMobileExplorer
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
+    public function detectSpecialProperties()
+    {
         if ($this->utils->checkIfContains('WPDesktop')) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
         }

@@ -28,53 +28,22 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Os;
-
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
-
-use BrowserDetector\Detector\Version;
+namespace BrowserDetector\Detector\MatcherInterface;
 
 /**
+ * generic interface for all browsers, devices, platforms and engines to detect
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WyderOs extends AbstractOs implements OsInterface
+interface MatcherCanHandleInterface
 {
     /**
-     * returns the name of the operating system/platform
+     * Returns true if this handler can handle the given useragent
      *
-     * @return string
+     * @return bool
      */
-    public function getName()
-    {
-        return 'WyderOS';
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('WyderOS');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Unknown();
-    }
+    public function canHandle();
 }

@@ -31,9 +31,9 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Engine\AbstractEngine;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserDependsOnEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
@@ -48,7 +48,7 @@ use BrowserDetector\Detector\Version;
  */
 class MicrosoftInternetExplorer
     extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface, BrowserDependsOnEngineInterface
 {
     private $patterns = array(
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',
@@ -274,20 +274,14 @@ class MicrosoftInternetExplorer
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * sets properties on the browser depending on the engine
      *
      * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
      *
-     * @return \BrowserDetector\Detector\Browser\MicrosoftInternetExplorer
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
+    public function detectDependProperties(AbstractEngine $engine)
+    {
         $browserVersion = $this->detectVersion();
 
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);

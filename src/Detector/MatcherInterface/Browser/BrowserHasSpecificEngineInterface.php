@@ -30,8 +30,6 @@
 
 namespace BrowserDetector\Detector\MatcherInterface\Browser;
 
-use BrowserDetector\Detector\Os\AbstractOs;
-
 /**
  * interface for all browsers with a single specific engine
  *

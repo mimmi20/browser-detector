@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\MatcherInterface\Os;
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 
 /**
- * interface for all platforms/operating systems to detect
+ * interface for all platforms/operating systems which are able to change browser objects
  *
  * @category  BrowserDetector
  * @package   BrowserDetector

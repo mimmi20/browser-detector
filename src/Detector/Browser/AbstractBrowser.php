@@ -32,6 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherCanHandleInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherHasCapabilitiesInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherHasWeightInterface;
 use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -46,7 +49,7 @@ use BrowserDetector\Helper\Utils;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 abstract class AbstractBrowser
-    implements MatcherInterface, BrowserInterface, \Serializable
+    implements MatcherInterface, MatcherCanHandleInterface, MatcherHasCapabilitiesInterface, MatcherHasWeightInterface, BrowserInterface, \Serializable
 {
     /**
      * @var string the user agent to handle

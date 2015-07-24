@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\AbstractEngine;
 
 /**
- * interface for all platforms/operating systems to detect
+ * interface for all platforms/operating systems which are able to change engine objects
  *
  * @category  BrowserDetector
  * @package   BrowserDetector

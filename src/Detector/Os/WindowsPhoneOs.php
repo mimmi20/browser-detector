@@ -47,9 +47,6 @@ use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 use BrowserDetector\Detector\Version;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller

@@ -32,6 +32,10 @@ namespace BrowserDetector\Detector\Device;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherCanHandleInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherHasCapabilitiesInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherHasWeightInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Result\Result;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
@@ -52,7 +56,7 @@ use Psr\Log\LoggerInterface;
  * @property-read boolean $actualDeviceRoot
  */
 abstract class AbstractDevice
-    implements DeviceInterface, \Serializable
+    implements MatcherInterface, MatcherCanHandleInterface, MatcherHasCapabilitiesInterface, MatcherHasWeightInterface, DeviceInterface, \Serializable
 {
     /**
      * @var string the user agent to handle

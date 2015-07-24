@@ -28,53 +28,49 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Os;
-
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
-
-use BrowserDetector\Detector\Version;
+namespace BrowserDetector\Detector\MatcherInterface;
 
 /**
+ * generic interface for all browsers, devices, platforms and engines which have capabilities
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WyderOs extends AbstractOs implements OsInterface
+interface MatcherHasCapabilitiesInterface
 {
     /**
-     * returns the name of the operating system/platform
+     * Returns the value of a given capability name
+     * for the current device
      *
-     * @return string
+     * @param string $capabilityName must be a valid capability name
+     *
+     * @return string Capability value
+     * @throws \InvalidArgumentException
      */
-    public function getName()
-    {
-        return 'WyderOS';
-    }
+    public function getCapability($capabilityName);
 
     /**
-     * returns the version of the operating system/platform
+     * Returns the value of a given capability name
+     * for the current device
      *
-     * @return \BrowserDetector\Detector\Version
+     * @param string $capabilityName must be a valid capability name
+     *
+     * @param mixed  $capabilityValue
+     *
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @throws \InvalidArgumentException
      */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('WyderOS');
-
-        return $detector->detectVersion($searches);
-    }
+    public function setCapability(
+        $capabilityName,
+        $capabilityValue = null
+    );
 
     /**
-     * returns the version of the operating system/platform
+     * Returns the values of all capabilities for the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return array All Capability values
      */
-    public function getManufacturer()
-    {
-        return new Company\Unknown();
-    }
+    public function getCapabilities();
 }
