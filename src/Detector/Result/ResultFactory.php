@@ -85,7 +85,7 @@ class ResultFactory
             $wurflKey = WurflConstants::NO_MATCH;
         }
 
-        $result = new Result($userAgent, $device, $os, $browser, $engine, $wurflKey);
+        $result = new Result($userAgent, $wurflKey, $device, $os, $browser, $engine);
         $result->setLogger($logger);
 
         $additionalData = Loader::load(strtolower($wurflKey), $logger);

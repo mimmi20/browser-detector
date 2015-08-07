@@ -733,20 +733,20 @@ class Result
     /**
      * the class constructor
      *
-     * @param string                                            $userAgent
-     * @param \BrowserDetector\Detector\Device\AbstractDevice   $device
-     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
-     * @param null|string                                       $wurflKey
+     * @param string                                                 $userAgent
+     * @param string|null                                            $wurflKey
+     * @param \BrowserDetector\Detector\Device\AbstractDevice|null   $device
+     * @param \BrowserDetector\Detector\Os\AbstractOs|null           $os
+     * @param \BrowserDetector\Detector\Browser\AbstractBrowser|null $browser
+     * @param \BrowserDetector\Detector\Engine\AbstractEngine|null   $engine
      */
     public function __construct(
         $userAgent,
-        AbstractDevice $device,
-        AbstractOs $os,
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        $wurflKey = WurflConstants::NO_MATCH
+        $wurflKey = WurflConstants::NO_MATCH,
+        AbstractDevice $device = null,
+        AbstractOs $os = null,
+        AbstractBrowser $browser = null,
+        AbstractEngine $engine = null
     ) {
         $detector = new Version();
         $detector->setVersion('');
