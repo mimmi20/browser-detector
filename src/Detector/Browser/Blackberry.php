@@ -30,16 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\BlackBerry as BlackBerryEngine;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -152,74 +143,5 @@ class Blackberry
     public function getWeight()
     {
         return 216731;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\AbstractEngine
-     */
-    public function detectEngine()
-    {
-        $engines = array(
-            new Webkit(),
-            new BlackBerryEngine()
-        );
-
-        $chain = new Chain();
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($engines);
-        $chain->setDefaultHandler(new UnknownEngine());
-
-        return $chain->detect();
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
-     *
-     * @return \BrowserDetector\Detector\Browser\Blackberry
-     */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        $engine->setCapability('multipart_support', true);
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('wml_1_2', true);
-        $engine->setCapability('wml_1_3', true);
-        $engine->setCapability('html_wi_imode_html_1', true);
-        $engine->setCapability('xhtml_avoid_accesskeys', true);
-        $engine->setCapability('xhtml_file_upload', 'supported');
-        $engine->setCapability('xhtml_supports_css_cell_table_coloring', false);
-        $engine->setCapability('xhtml_make_phone_call_string', 'wtai://wp/mc;');
-        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-        $engine->setCapability('xhtml_supports_table_for_layout', false);
-        $engine->setCapability('bmp', false);
-        $engine->setCapability('wbmp', true);
-        $engine->setCapability('max_url_length_in_requests', 256);
-        $engine->setCapability('ajax_preferred_geoloc_api', 'gears');
-        $engine->setCapability('is_sencha_touch_ok', false);
-        $engine->setCapability('viewport_minimum_scale', '1.0');
-        $engine->setCapability('viewport_initial_scale', '1.0');
-        $engine->setCapability('viewport_maximum_scale', '1.0');
-        $engine->setCapability('handheldfriendly', true);
-        $engine->setCapability('css_border_image', 'none');
-        $engine->setCapability('css_rounded_corners', 'none');
-        $engine->setCapability('wml_1_1', true);
-
-        $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
-
-        if ($osVersion == 6.0) {
-            $this->setCapability('pdf_support', true);
-        }
-
-        return $this;
     }
 }

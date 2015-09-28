@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
@@ -46,6 +47,7 @@ use BrowserDetector\Helper\MobileDevice;
  */
 class OperaMobile
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -155,7 +157,7 @@ class OperaMobile
      *
      * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 

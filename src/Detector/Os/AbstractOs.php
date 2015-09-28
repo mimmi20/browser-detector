@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
@@ -43,7 +44,7 @@ use BrowserDetector\Helper\Utils;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 abstract class AbstractOs
-    implements OsInterface
+    implements MatcherInterface, OsInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
@@ -59,6 +60,14 @@ abstract class AbstractOs
      * Class Constructor
      */
     public function __construct()
+    {
+        $this->init();
+    }
+
+    /**
+     * initializes the object
+     */
+    protected function init()
     {
         $this->utils = new Utils();
     }
@@ -100,5 +109,37 @@ abstract class AbstractOs
         $detector->setUserAgent($this->useragent);
 
         return $detector->setVersion('');
+    }
+
+    /**
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * String representation of object
+     * @link http://php.net/manual/en/serializable.serialize.php
+     * @return string the string representation of the object or null
+     */
+    public function serialize()
+    {
+        return serialize(
+            array(
+                'userAgent' => $this->useragent,
+            )
+        );
+    }
+
+    /**
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * Constructs the object
+     * @link http://php.net/manual/en/serializable.unserialize.php
+     * @param string $serialized <p>
+     * The string representation of the object.
+     * </p>
+     * @return void
+     */
+    public function unserialize($serialized)
+    {
+        $unseriliazedData = unserialize($serialized);
+
+        $this->init();
+        $this->setUserAgent($unseriliazedData['userAgent']);
     }
 }

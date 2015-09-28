@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -46,7 +47,7 @@ use BrowserDetector\Helper\Safari as SafariHelper;
  */
 class Safari
     extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface
+    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -185,7 +186,7 @@ class Safari
      *
      * @return \BrowserDetector\Detector\Engine\Webkit
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Webkit();
         $handler->setUseragent($this->useragent);

@@ -43,9 +43,6 @@ use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 use BrowserDetector\Detector\Version;
 
 /**
- * MSIEAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
@@ -88,36 +85,6 @@ class WebOs
     public function getManufacturer()
     {
         return new Company\Hp();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|AbstractOs
-     */
-    public function getBrowser()
-    {
-        $browsers = array(
-            'NokiaAbstractBrowser',
-            'OperaMini',
-            'Ucweb',
-            'NokiaProxyAbstractBrowser',
-            'WebkitWebos'
-        );
-
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Handlers' . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
-        );
-        $browserNs   = 'BrowserDetector\\Browser\\Handlers\\Mobile';
-
-        $chain = new Chain(false, $browsers, $browserPath, $browserNs);
-        $chain->setDefaultHandler(new UnknownBrowser());
-        $chain->setUseragent($this->useragent);
-
-        $device = $chain->detect();
-
-        return $device->detect();
     }
 
     /**

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
@@ -43,6 +44,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  */
 class DarwinBrowser
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -130,7 +132,7 @@ class DarwinBrowser
      *
      * @return \BrowserDetector\Detector\Engine\Webkit
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Webkit();
         $handler->setUseragent($this->useragent);

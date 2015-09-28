@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -44,6 +45,7 @@ use BrowserDetector\Detector\Version;
  */
 class Eudora
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -157,7 +159,7 @@ class Eudora
      *
      * @return \BrowserDetector\Detector\Engine\Gecko
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Gecko();
         $handler->setUseragent($this->useragent);

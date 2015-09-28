@@ -30,14 +30,11 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
-use BrowserDetector\Detector\Os\AbstractOs;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasRuntimeModificationsInterface;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -49,6 +46,7 @@ use BrowserDetector\Detector\Version;
  */
 class Silk
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface, BrowserHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties
@@ -147,7 +145,7 @@ class Silk
      *
      * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $version = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
 
@@ -163,61 +161,17 @@ class Silk
     }
 
     /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
+     * detects properties who are depending on the device version or the user
+     * agent
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
-     *
-     * @return AbstractDevice
+     * @return \BrowserDetector\Detector\Device\AbstractDevice
      */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        $engine->setCapability('html_wi_oma_xhtmlmp_1_0', false);
-        $engine->setCapability('wml_1_1', true);
-        $engine->setCapability('wml_1_2', true);
-        $engine->setCapability('wml_1_3', true);
-        $engine->setCapability('xhtml_support_level', 1);
-        $engine->setCapability('html_wi_imode_compact_generic', false);
-        $engine->setCapability('xhtml_avoid_accesskeys', true);
-        $engine->setCapability('xhtml_supports_forms_in_table', true);
-        $engine->setCapability('xhtmlmp_preferred_mime_type', 'application/vnd.wap.xhtml+xml');
-        $engine->setCapability('xhtml_preferred_charset', 'utf8');
-        $engine->setCapability('xhtml_make_phone_call_string', 'none');
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
-        $engine->setCapability('xhtml_readable_background_color1', '#FFFFFF');
-        $engine->setCapability('xhtml_format_as_css_property', true);
-        $engine->setCapability('xhtml_marquee_as_css_property', true);
-        $engine->setCapability('jpg', false);
-        $engine->setCapability('png', false);
-        $engine->setCapability('transparent_png_index', false);
-        $engine->setCapability('transparent_png_alpha', false);
-        $engine->setCapability('max_url_length_in_requests', 128);
-        $engine->setCapability('ajax_preferred_geoloc_api', 'none');
-        $engine->setCapability('is_sencha_touch_ok', true);
-        $engine->setCapability('max_url_length_in_requests', 128);
-        $engine->setCapability('max_url_length_in_requests', 128);
-
+    public function detectSpecialProperties()
+    {
         if ($this->utils->checkIfContains('Linux; U;')
             && !$this->utils->checkIfContains('android', true)
         ) {
             $this->setCapability('mobile_browser_modus', 'Desktop Mode');
-        }
-
-        $browserVersion = $this->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (2.2 <= (float)$browserVersion) {
-            $engine->setCapability('xhtml_preferred_charset', 'utf8');
-            $engine->setCapability('max_url_length_in_requests', 128);
-            $engine->setCapability('ajax_preferred_geoloc_api', 'none');
-            $this->setCapability('pdf_support', false);
-            $engine->setCapability('is_sencha_touch_ok', true);
         }
 
         return $this;

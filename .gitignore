@@ -1,2 +1,12 @@
-vendor/
+*~
+.settings
+.buildpath
+.project
 .idea/
+vendor/
+data/
+!data/useragents/
+error.log
+ergebnis.txt
+resources/browscap-*/
+build/

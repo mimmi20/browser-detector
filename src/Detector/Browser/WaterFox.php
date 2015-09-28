@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Version;
  */
 class WaterFox
     extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface
+    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -145,7 +146,7 @@ class WaterFox
      *
      * @return \BrowserDetector\Detector\Engine\Gecko
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Gecko();
         $handler->setUseragent($this->useragent);

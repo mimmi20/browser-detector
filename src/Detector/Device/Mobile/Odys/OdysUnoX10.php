@@ -168,7 +168,6 @@ class OdysUnoX10
         AbstractEngine $engine,
         AbstractOs $os
     ) {
-        $engine->setCapability('xhtml_can_embed_video', 'play_and_stop');
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');
 

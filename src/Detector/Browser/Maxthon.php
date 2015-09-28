@@ -31,11 +31,6 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\Gecko;
-use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -176,37 +171,6 @@ class Maxthon
     public function getWeight()
     {
         return 497330;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
-     */
-    public function detectEngine()
-    {
-        if (false !== strpos($this->useragent, 'Trident') || false !== strpos($this->useragent, 'MSIE')) {
-            $engine = new Trident();
-        } elseif (false !== strpos($this->useragent, 'WebKit')) {
-            $chrome = new Chrome();
-            $chrome->setUserAgent($this->useragent);
-
-            $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
-
-            if ($chromeVersion >= 28) {
-                $engine = new Blink();
-            } else {
-                $engine = new Webkit();
-            }
-        } elseif (false !== strpos($this->useragent, 'Gecko')) {
-            $engine = new Gecko();
-        } else {
-            $engine = new UnknownEngine();
-        }
-
-        $engine->setUseragent($this->useragent);
-
-        return $engine;
     }
 
     /**

@@ -32,10 +32,10 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company\Unknown;
 use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherHasCapabilitiesInterface;
+use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Utils;
-
-//use Zend\Cache\Frontend\Core;
 
 /**
  * base class for all rendering engines to detect
@@ -46,12 +46,17 @@ use BrowserDetector\Helper\Utils;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 abstract class AbstractEngine
-    implements EngineInterface
+    implements MatcherInterface, MatcherHasCapabilitiesInterface, EngineInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
      */
     protected $useragent = '';
+
+    /**
+     * @var \BrowserDetector\Helper\Utils
+     */
+    protected $utils = null;
 
     /**
      * the detected browser properties
@@ -538,6 +543,14 @@ abstract class AbstractEngine
      */
     public function __construct()
     {
+        $this->init();
+    }
+
+    /**
+     * initializes the object
+     */
+    protected function init()
+    {
         $this->utils = new Utils();
     }
 
@@ -567,16 +580,6 @@ abstract class AbstractEngine
         $detector->setUserAgent($this->useragent);
 
         return $detector->setVersion('');
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 1;
     }
 
     /**
@@ -667,5 +670,42 @@ abstract class AbstractEngine
     public function getCapabilities()
     {
         return $this->properties;
+    }
+
+    /**
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * String representation of object
+     * @link http://php.net/manual/en/serializable.serialize.php
+     * @return string the string representation of the object or null
+     */
+    public function serialize()
+    {
+        return serialize(
+            array(
+                'properties' => $this->properties,
+                'userAgent'  => $this->useragent,
+            )
+        );
+    }
+
+    /**
+     * (PHP 5 &gt;= 5.1.0)<br/>
+     * Constructs the object
+     * @link http://php.net/manual/en/serializable.unserialize.php
+     * @param string $serialized <p>
+     * The string representation of the object.
+     * </p>
+     * @return void
+     */
+    public function unserialize($serialized)
+    {
+        $unseriliazedData = unserialize($serialized);
+
+        foreach ($unseriliazedData['properties'] as $property => $value) {
+            $this->properties[$property] = $value;
+        }
+        
+        $this->init();
+        $this->setUserAgent($unseriliazedData['userAgent']);
     }
 }

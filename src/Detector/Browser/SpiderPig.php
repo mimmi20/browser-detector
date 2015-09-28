@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserCalculatesAlternativeResultInterface;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
@@ -45,7 +46,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  */
 class SpiderPig
     extends AbstractBrowser
-    implements BrowserCalculatesAlternativeResultInterface
+    implements BrowserCalculatesAlternativeResultInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -128,7 +129,7 @@ class SpiderPig
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -44,6 +45,7 @@ use BrowserDetector\Detector\Version;
  */
 class Argclrint
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -174,7 +176,7 @@ class Argclrint
      *
      * @return \BrowserDetector\Detector\Engine\Trident
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Trident();
         $handler->setUseragent($this->useragent);

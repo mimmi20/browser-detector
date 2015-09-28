@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\MatcherInterface\Device;
 
-use BrowserDetector\Detector\Result;
+use BrowserDetector\Detector\Result\Result;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -74,7 +74,7 @@ interface DeviceInterface
     /**
      * sets a second device for rendering properties
      *
-     * @var \BrowserDetector\Detector\Result $result
+     * @var \BrowserDetector\Detector\Result\Result $result
      *
      * @return DeviceInterface
      */
@@ -83,7 +83,7 @@ interface DeviceInterface
     /**
      * sets a second device for rendering properties
      *
-     * @return \BrowserDetector\Detector\Result
+     * @return \BrowserDetector\Detector\Result\Result
      */
     public function getRenderAs();
 

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -44,6 +45,7 @@ use BrowserDetector\Detector\Version;
  */
 class Arora
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -166,7 +168,7 @@ class Arora
      *
      * @return \BrowserDetector\Detector\Engine\Webkit
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Webkit();
         $handler->setUseragent($this->useragent);

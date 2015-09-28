@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Presto;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -44,6 +45,7 @@ use BrowserDetector\Detector\Version;
  */
 class InettvBrowser
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -142,7 +144,7 @@ class InettvBrowser
      *
      * @return \BrowserDetector\Detector\Engine\Presto
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Presto();
         $handler->setUseragent($this->useragent);

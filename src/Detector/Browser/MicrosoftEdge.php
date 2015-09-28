@@ -30,13 +30,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\Edge;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
-use BrowserDetector\Detector\Os\AbstractOs;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -46,7 +42,9 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftEdge extends AbstractBrowser
+class MicrosoftEdge
+    extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -145,29 +143,11 @@ class MicrosoftEdge extends AbstractBrowser
      *
      * @return \BrowserDetector\Detector\Engine\Edge
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new Edge();
         $handler->setUseragent($this->useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs     $os
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
-     *
-     * @return \BrowserDetector\Detector\Browser\MicrosoftEdge
-     */
-    public function detectDependProperties(
-        AbstractEngine $engine,
-        AbstractOs $os,
-        AbstractDevice $device
-    ) {
-        return $this;
     }
 }

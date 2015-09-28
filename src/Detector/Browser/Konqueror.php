@@ -30,10 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Khtml;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -175,24 +172,5 @@ class Konqueror
     public function getWeight()
     {
         return 36711;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Khtml
-     */
-    public function detectEngine()
-    {
-        if ($this->utils->checkIfContains(array('like Gecko'))) {
-            $handler = new Webkit();
-        } else {
-            $handler = new Khtml();
-        }
-
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 }

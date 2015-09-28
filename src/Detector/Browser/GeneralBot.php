@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 
 /**
@@ -43,6 +44,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  */
 class GeneralBot
     extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -144,7 +146,7 @@ class GeneralBot
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $handler = new UnknownEngine();
         $handler->setUseragent($this->useragent);

@@ -33,8 +33,6 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\Gecko;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserCalculatesAlternativeResultInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
@@ -138,24 +136,6 @@ class GoogleImageProxy
     public function getWeight()
     {
         return 9;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function detectEngine()
-    {
-        if ($this->utils->checkIfContains('Gecko')) {
-            $handler = new Gecko();
-        } else {
-            $handler = new UnknownEngine();
-        }
-
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
     }
 
     /**

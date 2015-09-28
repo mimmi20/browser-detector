@@ -30,15 +30,10 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
 use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
 
 /**
@@ -174,23 +169,5 @@ class NokiaLumia
         $handler->setUseragent($this->useragent);
 
         return $handler;
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
-     *
-     * @return AbstractDevice
-     */
-    public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
-    ) {
-        return $this;
     }
 }

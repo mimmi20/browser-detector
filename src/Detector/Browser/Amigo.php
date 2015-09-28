@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
@@ -46,7 +47,7 @@ use BrowserDetector\Detector\Version;
  */
 class Amigo
     extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface
+    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -165,7 +166,7 @@ class Amigo
      *
      * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
      */
-    public function detectEngine()
+    public function getEngine()
     {
         $chrome = new Chrome();
         $chrome->setUserAgent($this->useragent);

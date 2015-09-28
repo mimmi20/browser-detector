@@ -30,10 +30,6 @@
 
 namespace BrowserDetector\Detector\MatcherInterface\Engine;
 
-
-use BrowserDetector\Detector\Device\AbstractDevice;
-
-
 /**
  * interface for all rendering engines to detect
  *
@@ -44,56 +40,6 @@ use BrowserDetector\Detector\Device\AbstractDevice;
  */
 interface EngineInterface
 {
-    /**
-     * sets the user agent to be handled
-     *
-     * @param string $userAgent
-     *
-     * @return void
-     */
-    public function setUserAgent($userAgent);
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight();
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @return string Capability value
-     * @throws \InvalidArgumentException
-     */
-    public function getCapability($capabilityName);
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @param mixed  $capabilityValue
-     *
-     * @return AbstractDevice
-     * @throws \InvalidArgumentException
-     */
-    public function setCapability(
-        $capabilityName,
-        $capabilityValue = null
-    );
-
-    /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All Capability values
-     */
-    public function getCapabilities();
-
     /**
      * gets the name of the platform
      *
