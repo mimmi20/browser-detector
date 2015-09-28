@@ -1,46 +1,54 @@
 {
-    "name": "mimmi20/browser-detector",
-    "description": "Library for PHP 5.3 to detect Browsers and Devices",
-    "type": "library",
-    "license": "MIT",
-    "keywords": ["Browser", "user agent", "http", "parser", "user-agent"],
-    "homepage": "https://github.com/mimmi20/BrowserDetector",
-    "authors": [
-        {
-            "name": "Thomas Müller",
-            "homepage": "https://github.com/mimmi20",
-            "role": "Developer"
-        },
-        {
-            "name": "Contributors",
-            "homepage": "https://github.com/mimmi20/BrowserDetector/graphs/contributors"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/mimmi20/BrowserDetector/issues",
-        "source": "https://github.com/mimmi20/BrowserDetector"
+  "name": "mimmi20/browser-detector",
+  "description": "Library for PHP 5.3 to detect Browsers and Devices",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "Browser",
+    "user agent",
+    "http",
+    "parser",
+    "user-agent"
+  ],
+  "homepage": "https://github.com/mimmi20/BrowserDetector",
+  "authors": [
+    {
+      "name": "Thomas Müller",
+      "homepage": "https://github.com/mimmi20",
+      "role": "Developer"
     },
-    "require": {
-        "php": ">=5.5.0",
-        "mimmi20/wurflcache": "~1.3",
-        "mimmi20/wurfl-data": "~1.6",
-        "mimmi20/wurfl-generic-request": "1.0.*",
-        "psr/log": "~1.0",
-        "browscap/browscap": "dev-master"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "*",
-        "monolog/monolog": "dev-master",
-        "mikey179/vfsStream": "dev-master"
-    },
-    "autoload": {
-        "psr-4": {
-            "BrowserDetector\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "BrowserDetectorTest\\": "tests/"
-        }
+    {
+      "name": "Contributors",
+      "homepage": "https://github.com/mimmi20/BrowserDetector/graphs/contributors"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/mimmi20/BrowserDetector/issues",
+    "source": "https://github.com/mimmi20/BrowserDetector"
+  },
+  "require": {
+    "php": ">=5.5.0",
+    "mimmi20/wurflcache": "~1.3",
+    "mimmi20/wurfl-data": "~1.6",
+    "mimmi20/wurfl-generic-request": "1.0.*",
+    "psr/log": "~1.0",
+    "browscap/browscap": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "monolog/monolog": "dev-master",
+    "mikey179/vfsStream": "dev-master",
+    "squizlabs/php_codesniffer": "2.*",
+    "fabpot/php-cs-fixer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "BrowserDetector\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BrowserDetectorTest\\": "tests/"
+    }
+  }
 }
