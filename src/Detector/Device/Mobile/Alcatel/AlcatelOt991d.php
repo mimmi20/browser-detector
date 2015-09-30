@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -48,9 +47,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AlcatelOt991d
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class AlcatelOt991d extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

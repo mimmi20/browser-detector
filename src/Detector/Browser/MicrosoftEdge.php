@@ -42,9 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftEdge
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class MicrosoftEdge extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties

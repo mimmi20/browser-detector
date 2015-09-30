@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -48,8 +47,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaBrowser
-    extends AbstractBrowser
+class NokiaBrowser extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -146,4 +144,3 @@ class NokiaBrowser
         return 260003;
     }
 }
-

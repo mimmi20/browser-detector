@@ -47,9 +47,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGtp5110
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class SamsungGtp5110 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -200,4 +198,3 @@ class SamsungGtp5110
         return $wurflKey;
     }
 }
-

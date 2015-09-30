@@ -43,8 +43,7 @@ use BrowserDetector\Helper\Utils;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractOs
-    implements MatcherInterface, OsInterface, \Serializable
+abstract class AbstractOs implements MatcherInterface, OsInterface, \Serializable
 {
     /**
      * @var string the user agent to handle

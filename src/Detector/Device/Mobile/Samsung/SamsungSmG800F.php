@@ -46,9 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmG800F
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class SamsungSmG800F extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

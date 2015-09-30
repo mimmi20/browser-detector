@@ -286,14 +286,16 @@ class SpamCrawlerFake
             array(
                 'ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey',
                 'chrome'
-            ), true
+            ),
+            true
         )
         ) {
             return true;
         }
 
         if ($this->utils->checkIfContains(
-            array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome', 'ua:', 'user-agent:'), true
+            array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome', 'ua:', 'user-agent:'),
+            true
         )
         ) {
             return true;
@@ -338,7 +340,8 @@ class SpamCrawlerFake
         }
 
         $doMatch = preg_match(
-            '/^Mozilla\/5\.0 \(X11; U; Linux i686; .*; rv:([\d\.]+)\) Gecko\/.* Firefox\/([\d\.]+)/', $this->useragent,
+            '/^Mozilla\/5\.0 \(X11; U; Linux i686; .*; rv:([\d\.]+)\) Gecko\/.* Firefox\/([\d\.]+)/',
+            $this->useragent,
             $matches
         );
 
@@ -393,7 +396,9 @@ class SpamCrawlerFake
         }
 
         $doMatch = preg_match(
-            '/(Win|Windows )(2000|XP|2003|Vista|7|8) ([\d\.]+)/', $this->useragent, $matches
+            '/(Win|Windows )(2000|XP|2003|Vista|7|8) ([\d\.]+)/',
+            $this->useragent,
+            $matches
         );
         if ($doMatch && !$this->utils->checkIfContains('anonym', true)) {
             return true;
@@ -434,7 +439,9 @@ class SpamCrawlerFake
             && $this->utils->checkIfContains('MSIE')
         ) {
             $doMatch = preg_match(
-                '/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10|11)\.\d.*/', $this->useragent, $matches
+                '/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10|11)\.\d.*/',
+                $this->useragent,
+                $matches
             );
             if (!$doMatch) {
                 return true;

@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
@@ -43,9 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class InettvBrowser
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class InettvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties

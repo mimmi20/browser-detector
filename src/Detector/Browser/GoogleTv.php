@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
@@ -45,9 +44,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoogleTv
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class GoogleTv extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -129,4 +126,3 @@ class GoogleTv
         return $handler;
     }
 }
-

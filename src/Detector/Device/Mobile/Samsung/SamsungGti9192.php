@@ -48,9 +48,7 @@ use Wurfl\WurflConstants;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGti9192
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class SamsungGti9192 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -214,4 +212,3 @@ class SamsungGti9192
         return $wurflKey;
     }
 }
-

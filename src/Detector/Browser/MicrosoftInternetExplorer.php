@@ -46,9 +46,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftInternetExplorer
-    extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface, BrowserDependsOnEngineInterface
+class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface, BrowserDependsOnEngineInterface
 {
     private $patterns = array(
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',

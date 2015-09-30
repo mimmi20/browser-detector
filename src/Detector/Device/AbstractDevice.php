@@ -55,8 +55,7 @@ use Psr\Log\LoggerInterface;
  * @property-read string  $fallBack
  * @property-read boolean $actualDeviceRoot
  */
-abstract class AbstractDevice
-    implements MatcherInterface, MatcherCanHandleInterface, MatcherHasCapabilitiesInterface, MatcherHasWeightInterface, DeviceInterface, \Serializable
+abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInterface, MatcherHasCapabilitiesInterface, MatcherHasWeightInterface, DeviceInterface, \Serializable
 {
     /**
      * @var string the user agent to handle

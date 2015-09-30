@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
@@ -43,9 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoogleFontAnalysis
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class GoogleFontAnalysis extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -77,9 +74,9 @@ class GoogleFontAnalysis
     public function canHandle()
     {
         if ($this->utils->checkIfContains('Google-FontAnalysis', true) || $this->utils->checkIfContains(
-                'www.google.com/webfonts',
-                true
-            )
+            'www.google.com/webfonts',
+            true
+        )
         ) {
             return true;
         }

@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 
@@ -43,8 +42,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Sanyo
-    extends AbstractBrowser
+class Sanyo extends AbstractBrowser
 {
     /**
      * the detected browser properties

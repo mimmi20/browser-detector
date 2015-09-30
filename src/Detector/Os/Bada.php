@@ -45,9 +45,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bada
-    extends AbstractOs
-    implements OsInterface
+class Bada extends AbstractOs implements OsInterface
 {
     /**
      * returns the name of the operating system/platform

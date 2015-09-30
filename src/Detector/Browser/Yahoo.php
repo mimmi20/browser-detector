@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
@@ -42,9 +41,7 @@ use BrowserDetector\Detector\Type\Browser as BrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Yahoo
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -80,10 +77,10 @@ class Yahoo
         }
 
         if ($this->utils->checkIfContains('Mozilla/5.0 (YahooYSMcm') || $this->utils->checkIfContains(
-                'Scooter'
-            ) || $this->utils->checkIfContains('Y!OASIS') || $this->utils->checkIfContains(
-                'YahooYSMcm'
-            ) || $this->utils->checkIfContains('YRL_ODP_CRAWLER') || $this->utils->checkIfContains('www.yahoo.com')
+            'Scooter'
+        ) || $this->utils->checkIfContains('Y!OASIS') || $this->utils->checkIfContains(
+            'YahooYSMcm'
+        ) || $this->utils->checkIfContains('YRL_ODP_CRAWLER') || $this->utils->checkIfContains('www.yahoo.com')
         ) {
             return true;
         }

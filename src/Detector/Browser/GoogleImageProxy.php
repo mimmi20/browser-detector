@@ -43,9 +43,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoogleImageProxy
-    extends AbstractBrowser
-    implements BrowserCalculatesAlternativeResultInterface
+class GoogleImageProxy extends AbstractBrowser implements BrowserCalculatesAlternativeResultInterface
 {
     /**
      * the detected browser properties

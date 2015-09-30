@@ -55,9 +55,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsRt8Tablet
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class WindowsRt8Tablet extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

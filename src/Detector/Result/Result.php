@@ -55,8 +55,7 @@ use Wurfl\WurflConstants;
  * @property-read $id
  * @property-read $userAgent
  */
-class Result
-    implements \Serializable
+class Result implements \Serializable
 {
     /**
      * should the device render the content like another?
@@ -1077,8 +1076,8 @@ class Result
         $renderedAs = $this->getRenderAs();
 
         if ($renderedAs instanceof Result && 'unknown' != strtolower(
-                $renderedAs->getCapability('mobile_browser', false)
-            )
+            $renderedAs->getCapability('mobile_browser', false)
+        )
         ) {
             $browser .= ' [' . $renderedAs->getFullBrowserName($withBits, $mode) . ']';
         }
@@ -1226,9 +1225,9 @@ class Result
             }
 
             if ('unknown' !== $manufacturer && '' !== $manufacturer && false === strpos(
-                    $device,
-                    'general'
-                ) && false === strpos($device, $manufacturer)
+                $device,
+                'general'
+            ) && false === strpos($device, $manufacturer)
             ) {
                 $device = $manufacturer . ' ' . $device;
             }
@@ -1250,8 +1249,8 @@ class Result
         $renderedAs = $this->getRenderAs();
 
         if ($renderedAs instanceof Result && 'unknown' != strtolower(
-                $renderedAs->getCapability('renderingengine_name', false)
-            )
+            $renderedAs->getCapability('renderingengine_name', false)
+        )
         ) {
             $engine .= ' [' . $renderedAs->getFullEngineName($mode) . ']';
         }

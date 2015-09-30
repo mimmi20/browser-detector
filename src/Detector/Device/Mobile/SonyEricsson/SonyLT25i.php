@@ -48,9 +48,7 @@ use Wurfl\WurflConstants;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyLT25i
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class SonyLT25i extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

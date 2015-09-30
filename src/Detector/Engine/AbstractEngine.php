@@ -45,8 +45,7 @@ use BrowserDetector\Helper\Utils;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractEngine
-    implements MatcherInterface, MatcherHasCapabilitiesInterface, EngineInterface, \Serializable
+abstract class AbstractEngine implements MatcherInterface, MatcherHasCapabilitiesInterface, EngineInterface, \Serializable
 {
     /**
      * @var string the user agent to handle

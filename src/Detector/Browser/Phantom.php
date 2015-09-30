@@ -45,9 +45,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Phantom
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -154,4 +152,3 @@ class Phantom
         return $handler;
     }
 }
-

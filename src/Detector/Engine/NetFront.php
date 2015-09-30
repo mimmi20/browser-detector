@@ -39,9 +39,7 @@ use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetFront
-    extends AbstractEngine
-    implements EngineInterface
+class NetFront extends AbstractEngine implements EngineInterface
 {
     /**
      * the detected browser properties

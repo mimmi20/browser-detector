@@ -38,8 +38,7 @@ namespace BrowserDetector\Detector;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Version
-    implements \Serializable
+class Version implements \Serializable
 {
     /**
      * @var integer

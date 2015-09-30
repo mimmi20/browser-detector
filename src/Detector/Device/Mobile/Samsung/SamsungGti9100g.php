@@ -47,9 +47,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-    class SamsungGti9100g
-        extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class SamsungGti9100g extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -57,34 +55,34 @@ use BrowserDetector\Detector\Version;
      * @var array
      */
     protected $properties = array(
-        // device
-        'model_name'             => 'GT-I9100G',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy S II',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-I9100G.xml',
-        // wurflkey: samsung_gt_i9100_ver1_subuag
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 57,
-        'physical_screen_height' => 94,
-        'columns'                => 25,
-        'rows'                   => 21,
-        'max_image_width'        => 320,
-        'max_image_height'       => 800,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => false,
+    // device
+    'model_name'             => 'GT-I9100G',
+    'model_extra_info'       => null,
+    'marketing_name'         => 'Galaxy S II',
+    'has_qwerty_keyboard'    => true,
+    'pointing_method'        => 'touchscreen',
+    // product info
+    'ununiqueness_handler'   => null,
+    'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-I9100G.xml',
+    // wurflkey: samsung_gt_i9100_ver1_subuag
+    'uaprof2'                => null,
+    'uaprof3'                => null,
+    'unique'                 => true,
+    // display
+    'physical_screen_width'  => 57,
+    'physical_screen_height' => 94,
+    'columns'                => 25,
+    'rows'                   => 21,
+    'max_image_width'        => 320,
+    'max_image_height'       => 800,
+    'resolution_width'       => 480,
+    'resolution_height'      => 800,
+    'dual_orientation'       => true,
+    'colors'                 => 16777216,
+    // sms
+    'sms_enabled'            => true,
+    // chips
+    'nfc_support'            => false,
     );
 
     /**

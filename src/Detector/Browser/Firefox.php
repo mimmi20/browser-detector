@@ -45,9 +45,7 @@ use BrowserDetector\Helper\SpamCrawlerFake;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Firefox
-    extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties

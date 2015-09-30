@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -48,9 +47,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcDesire516
-    extends AbstractDevice
-    implements DeviceInterface
+class HtcDesire516 extends AbstractDevice implements DeviceInterface
 {
     /**
      * the detected browser properties

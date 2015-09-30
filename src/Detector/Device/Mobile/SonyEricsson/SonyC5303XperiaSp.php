@@ -47,9 +47,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyC5303XperiaSp
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class SonyC5303XperiaSp extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

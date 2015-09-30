@@ -36,9 +36,7 @@ namespace BrowserDetector\Detector\Type\Browser;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Unknown
-    extends AbstractType
-    implements TypeInterface
+class Unknown extends AbstractType implements TypeInterface
 {
     // nothing to do here
 }

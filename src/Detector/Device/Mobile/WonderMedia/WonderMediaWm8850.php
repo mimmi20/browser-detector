@@ -42,9 +42,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WonderMediaWm8850
-    extends AbstractDevice
-    implements DeviceInterface
+class WonderMediaWm8850 extends AbstractDevice implements DeviceInterface
 {
     /**
      * the detected browser properties

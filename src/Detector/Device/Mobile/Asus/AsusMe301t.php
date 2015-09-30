@@ -48,9 +48,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AsusMe301t
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class AsusMe301t extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

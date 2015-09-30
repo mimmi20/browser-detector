@@ -45,9 +45,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Honlin
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasChildrenInterface
+class Honlin extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties

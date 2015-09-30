@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Acer;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -50,9 +49,7 @@ use Wurfl\WurflConstants;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerIconiaA701
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class AcerIconiaA701 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

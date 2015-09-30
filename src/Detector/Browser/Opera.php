@@ -46,9 +46,7 @@ use BrowserDetector\Helper\MobileDevice;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Opera
-    extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties

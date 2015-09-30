@@ -43,8 +43,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Blackberry
-    extends AbstractBrowser
+class Blackberry extends AbstractBrowser
 {
     /**
      * the detected browser properties

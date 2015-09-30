@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
@@ -46,9 +45,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MaemoBrowser
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class MaemoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -178,4 +175,3 @@ class MaemoBrowser
         return $handler;
     }
 }
-

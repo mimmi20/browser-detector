@@ -45,9 +45,7 @@ use BrowserDetector\Helper\Safari as SafariHelper;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Safari
-    extends AbstractBrowser
-    implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties

@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-
 /**
  * Browser detection class
  *

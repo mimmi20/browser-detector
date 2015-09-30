@@ -44,9 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Yusu
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasChildrenInterface
+class Yusu extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties

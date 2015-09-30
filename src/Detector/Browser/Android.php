@@ -43,9 +43,7 @@ use BrowserDetector\Helper\Safari as SafariHelper;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Android
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class Android extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -264,4 +262,3 @@ class Android
         return $handler;
     }
 }
-

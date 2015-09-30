@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
@@ -43,9 +42,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Seamonkey
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class Seamonkey extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -81,8 +78,8 @@ class Seamonkey
         }
 
         if (!$this->utils->checkIfContainsAll(array('Gecko', 'SeaMonkey')) && !$this->utils->checkIfContains(
-                'Seamonkey'
-            )
+            'Seamonkey'
+        )
         ) {
             return false;
         }

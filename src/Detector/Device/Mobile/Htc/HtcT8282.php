@@ -46,9 +46,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcT8282
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class HtcT8282 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

@@ -36,8 +36,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractCompany
-    implements CompanyInterface
+abstract class AbstractCompany implements CompanyInterface
 {
     /**
      * the name of the company
@@ -83,4 +82,3 @@ abstract class AbstractCompany
         return $this->brandname;
     }
 }
-

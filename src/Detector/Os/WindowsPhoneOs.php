@@ -52,9 +52,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsPhoneOs
-    extends AbstractOs
-    implements OsInterface, OsChangesEngineInterface, OsChangesBrowserInterface
+class WindowsPhoneOs extends AbstractOs implements OsInterface, OsChangesEngineInterface, OsChangesBrowserInterface
 {
     /**
      * returns the name of the operating system/platform

@@ -70,9 +70,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AndroidOs
-    extends AbstractOs
-    implements OsInterface, OsChangesEngineInterface, OsChangesBrowserInterface
+class AndroidOs extends AbstractOs implements OsInterface, OsChangesEngineInterface, OsChangesBrowserInterface
 {
     /**
      * returns the name of the operating system/platform
@@ -182,8 +180,8 @@ class AndroidOs
     public function changeBrowserProperties(AbstractBrowser $browser)
     {
         if ($this->utils->checkIfContains(
-                array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
-            ) && !$this->utils->checkIfContains('Android')
+            array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
+        ) && !$this->utils->checkIfContains('Android')
         ) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }

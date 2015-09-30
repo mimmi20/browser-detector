@@ -36,8 +36,7 @@ namespace BrowserDetector\Detector\Type\Device;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractType
-    implements TypeInterface
+abstract class AbstractType implements TypeInterface
 {
     /**
      * the name of the company
@@ -168,4 +167,3 @@ abstract class AbstractType
         return $this->tablet;
     }
 }
-

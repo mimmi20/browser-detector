@@ -44,9 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Olivetti
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasChildrenInterface
+class Olivetti extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -91,8 +89,8 @@ class Olivetti
     public function canHandle()
     {
         if (!$this->utils->checkIfContains('OP') || $this->utils->checkIfContains(
-                array('OPN-B', 'OPENMASTER', 'SL20_20101210_B_PD_INX7E_ENG_6410POP', 'Build/JOP')
-            )
+            array('OPN-B', 'OPENMASTER', 'SL20_20101210_B_PD_INX7E_ENG_6410POP', 'Build/JOP')
+        )
         ) {
             return false;
         }

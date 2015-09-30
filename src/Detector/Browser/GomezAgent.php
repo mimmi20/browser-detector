@@ -45,9 +45,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GomezAgent
-    extends AbstractBrowser
-    implements BrowserCalculatesAlternativeResultInterface, BrowserHasSpecificEngineInterface
+class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternativeResultInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties

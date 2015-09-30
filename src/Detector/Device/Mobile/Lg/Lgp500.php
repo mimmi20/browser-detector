@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
-
 use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -49,9 +48,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lgp500
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasWurflKeyInterface
+class Lgp500 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

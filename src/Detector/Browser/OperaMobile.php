@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
@@ -45,9 +44,7 @@ use BrowserDetector\Helper\MobileDevice;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OperaMobile
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface
+class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -82,8 +79,8 @@ class OperaMobile
         $mobileDeviceHelper->setUserAgent($this->useragent);
 
         if (!$this->utils->checkIfContains(
-                array('Opera Mobi', 'Opera Tablet', 'OPR')
-            ) && !($mobileDeviceHelper->isMobile() && $this->utils->checkIfContains(array('Opera', 'OPR')))
+            array('Opera Mobi', 'Opera Tablet', 'OPR')
+        ) && !($mobileDeviceHelper->isMobile() && $this->utils->checkIfContains(array('Opera', 'OPR')))
         ) {
             return false;
         }

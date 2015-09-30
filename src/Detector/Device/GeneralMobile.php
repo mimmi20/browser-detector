@@ -51,9 +51,7 @@ use BrowserDetector\Helper\MobileDevice;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralMobile
-    extends AbstractDevice
-    implements DeviceInterface, DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
+class GeneralMobile extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties

@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/browscap/browscap.git",
-                "reference": "d55e75971499f54ba70aeb0f10c1fed149a649c9"
+                "reference": "29c09be6111e86702dc1320c283ec499819213be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/browscap/browscap/zipball/d55e75971499f54ba70aeb0f10c1fed149a649c9",
-                "reference": "d55e75971499f54ba70aeb0f10c1fed149a649c9",
+                "url": "https://api.github.com/repos/browscap/browscap/zipball/29c09be6111e86702dc1320c283ec499819213be",
+                "reference": "29c09be6111e86702dc1320c283ec499819213be",
                 "shasum": ""
             },
             "require": {
@@ -72,7 +72,7 @@
             "keywords": [
                 "Browscap"
             ],
-            "time": "2015-09-28 16:44:05"
+            "time": "2015-09-30 12:17:37"
         },
         {
             "name": "mimmi20/wurfl-constants",
@@ -288,12 +288,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "ec0b383ace22d007e1f525a434096c388e427958"
+                "reference": "3d3feb167314024ba7b48aa67a88b18d3d748588"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/ec0b383ace22d007e1f525a434096c388e427958",
-                "reference": "ec0b383ace22d007e1f525a434096c388e427958",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/3d3feb167314024ba7b48aa67a88b18d3d748588",
+                "reference": "3d3feb167314024ba7b48aa67a88b18d3d748588",
                 "shasum": ""
             },
             "require": {
@@ -307,6 +307,7 @@
                 "aws/aws-sdk-php": "^2.4.9",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
                 "php-console/php-console": "^3.1.3",
                 "phpunit/phpunit": "~4.5",
                 "phpunit/phpunit-mock-objects": "2.3.0",
@@ -356,7 +357,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-09-21 09:25:59"
+            "time": "2015-09-29 09:34:13"
         },
         {
             "name": "psr/log",
