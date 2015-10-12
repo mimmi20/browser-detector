@@ -33,13 +33,12 @@ namespace BrowserDetector\Detector\Device;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -166,7 +165,7 @@ class GeneralDesktop extends AbstractDevice implements DeviceInterface, DeviceHa
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaMatcher\Device\DeviceInterface
      */
     public function detectDevice()
     {
@@ -230,7 +229,7 @@ class GeneralDesktop extends AbstractDevice implements DeviceInterface, DeviceHa
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

@@ -32,11 +32,11 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserCalculatesAlternativeResultInterface;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -138,11 +138,11 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
     /**
      * gets the name of the browser
      *
-     * @param \BrowserDetector\Detector\Device\AbstractDevice $device
+     * @param \UaMatcher\Device\DeviceInterface $device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
-    public function calculateAlternativeRendering(AbstractDevice $device)
+    public function calculateAlternativeRendering(DeviceInterface $device)
     {
         if ($this->utils->checkIfContains('spider-pig', true)) {
             $agent = str_ireplace(array('spider-pig'), '', $this->useragent);

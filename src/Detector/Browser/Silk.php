@@ -33,10 +33,10 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasRuntimeModificationsInterface;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -141,7 +141,7 @@ class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface,
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
+     * @return \UaMatcher\Engine\EngineInterface
      */
     public function getEngine()
     {
@@ -162,7 +162,7 @@ class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface,
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaMatcher\Device\DeviceInterface
      */
     public function detectSpecialProperties()
     {

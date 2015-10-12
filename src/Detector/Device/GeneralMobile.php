@@ -30,20 +30,18 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
-
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -122,7 +120,7 @@ class GeneralMobile extends AbstractDevice implements DeviceInterface, DeviceHas
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaMatcher\Device\DeviceInterface
      */
     public function detectDevice()
     {
@@ -180,7 +178,7 @@ class GeneralMobile extends AbstractDevice implements DeviceInterface, DeviceHas
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {
@@ -361,13 +359,13 @@ class GeneralMobile extends AbstractDevice implements DeviceInterface, DeviceHas
     /**
      * returns the WurflKey for the device
      *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
      *
      * @return string|null
      */
-    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
         $wurflKey = 'generic_mobile';
 

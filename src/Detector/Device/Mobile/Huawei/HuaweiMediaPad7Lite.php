@@ -30,15 +30,11 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Huawei;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -144,7 +140,7 @@ class HuaweiMediaPad7Lite extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new AndroidOs();
+        $handler = new AndroidOs($this->useragent);
         $handler->setUseragent($this->useragent);
 
         return $handler;

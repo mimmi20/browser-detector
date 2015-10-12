@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -77,7 +77,7 @@ class SymphonyBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('SymphonyAbstractBrowser/'))) {
+        if (!$this->utils->checkIfContains(array('SymphonyBrowserInterface/'))) {
             return false;
         }
 
@@ -91,7 +91,7 @@ class SymphonyBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getName()
     {
-        return 'SymphonyAbstractBrowser';
+        return 'SymphonyBrowserInterface';
     }
 
     /**
@@ -124,7 +124,7 @@ class SymphonyBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SymphonyAbstractBrowser');
+        $searches = array('SymphonyBrowserInterface');
 
         return $detector->detectVersion($searches);
     }

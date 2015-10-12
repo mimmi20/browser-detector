@@ -32,10 +32,10 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -97,7 +97,7 @@ class Jolla extends AbstractDevice implements DeviceInterface, DeviceHasChildren
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaMatcher\Device\DeviceInterface
      */
     public function detectDevice()
     {

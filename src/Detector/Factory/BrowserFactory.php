@@ -51,12 +51,12 @@ class BrowserFactory
      * @param string                               $agent
      * @param \WurflCache\Adapter\AdapterInterface $cache
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public static function detect($agent, AdapterInterface $cache = null)
     {
         foreach (self::getChain($cache) as $browser) {
-            /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $browser */
+            /** @var \UaMatcher\Browser\BrowserInterface $browser */
             $browser->setUserAgent($agent);
 
             if ($browser->canHandle()) {
@@ -116,7 +116,7 @@ class BrowserFactory
             /** @var $file \SplFileInfo */
             if (!$file->isFile()
                 || $file->getExtension() != 'php'
-                || 'AbstractBrowser' == $file->getBasename('.php')
+                || 'BrowserInterface' == $file->getBasename('.php')
             ) {
                 continue;
             }
@@ -128,7 +128,7 @@ class BrowserFactory
             );
 
             try {
-                /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $handler */
+                /** @var \UaMatcher\Browser\BrowserInterface $handler */
                 $handler = new $className();
             } catch (\Exception $e) {
                 continue;
@@ -141,7 +141,7 @@ class BrowserFactory
         $weights = array();
 
         foreach ($list as $key => $entry) {
-            /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $entry */
+            /** @var \UaMatcher\Browser\BrowserInterface $entry */
             $names[$key]   = $entry->getName();
             $weights[$key] = $entry->getWeight();
         }

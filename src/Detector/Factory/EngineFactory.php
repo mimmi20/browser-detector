@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Utils;
+use UaHelper\Utils;
+use UaMatcher\Os\OsInterface;
 
 /**
  * Browser detection class
@@ -51,11 +51,11 @@ class EngineFactory implements FactoryInterface
      * Gets the information about the rendering engine by User Agent
      *
      * @param string                             $agent
-     * @param \BrowserDetector\Detector\Os\AbstractOs $os
+     * @param \UaMatcher\Os\OsInterface $os
      *
-     * @return \BrowserDetector\Detector\Engine\AbstractEngine
+     * @return \UaMatcher\Engine\EngineInterface
      */
-    public static function detect($agent, AbstractOs $os = null)
+    public static function detect($agent, OsInterface $os = null)
     {
         $utils = new Utils();
         $utils->setUserAgent($agent);
@@ -96,7 +96,7 @@ class EngineFactory implements FactoryInterface
             $engineKey = 'Presto';
         } elseif (preg_match('/(Gecko|Firefox)/', $agent)) {
             $engineKey = 'Gecko';
-        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeAbstractBrowser|NF3|Nintendo 3DS)/', $agent)
+        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $agent)
             && !$utils->checkIfContains(array('Kindle'))
         ) {
             $engineKey = 'NetFront';
@@ -110,7 +110,7 @@ class EngineFactory implements FactoryInterface
 
         $engineName = '\\BrowserDetector\\Detector\\Engine\\' . $engineKey;
 
-        /** @var \BrowserDetector\Detector\Engine\AbstractEngine $engine */
+        /** @var \UaMatcher\Engine\EngineInterface $engine */
         $engine = new $engineName();
 
         $engine->setUserAgent($agent);

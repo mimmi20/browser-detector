@@ -38,9 +38,8 @@ use BrowserDetector\Detector\Browser\Ucweb;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
-
 use BrowserDetector\Detector\Version;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -92,7 +91,7 @@ class RimOs extends AbstractOs implements OsInterface
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

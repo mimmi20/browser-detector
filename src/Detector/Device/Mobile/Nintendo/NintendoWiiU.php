@@ -34,10 +34,10 @@ use BrowserDetector\Detector\Browser\NetFront;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -139,7 +139,7 @@ class NintendoWiiU extends AbstractDevice implements DeviceInterface
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {
@@ -162,7 +162,7 @@ class NintendoWiiU extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new UnknownOs();
+        $handler = new UnknownOs($this->useragent);
         $handler->setUseragent($this->useragent);
 
         return $handler;

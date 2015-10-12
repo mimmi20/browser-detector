@@ -30,15 +30,14 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Odys;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -144,7 +143,7 @@ class OdysUnoX10 extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new AndroidOs();
+        $handler = new AndroidOs($this->useragent);
         $handler->setUseragent($this->useragent);
 
         return $handler;
@@ -154,16 +153,16 @@ class OdysUnoX10 extends AbstractDevice implements DeviceInterface
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface  $engine
+     * @param \UaMatcher\Os\OsInterface      $os
      *
-     * @return AbstractDevice
+     * @return DeviceInterface
      */
     public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
+        BrowserInterface $browser,
+        EngineInterface $engine,
+        OsInterface $os
     ) {
         $engine->setCapability('xhtml_send_mms_string', 'mms:');
         $engine->setCapability('xhtml_send_sms_string', 'sms:');

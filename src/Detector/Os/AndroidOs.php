@@ -30,20 +30,18 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
-use BrowserDetector\Detector\Browser\YouWaveAndroidOnPc;
-use BrowserDetector\Detector\Browser\AndroidWebView;
-use BrowserDetector\Detector\Browser\Googlebot;
-use BrowserDetector\Detector\Browser\GooglebotMobileBot;
-use BrowserDetector\Detector\Browser\GooglePageSpeed;
-use BrowserDetector\Detector\Browser\GooglePageSpeedInsights;
 use BrowserDetector\Detector\Browser\Android;
 use BrowserDetector\Detector\Browser\AndroidDownloadManager;
+use BrowserDetector\Detector\Browser\AndroidWebView;
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Browser\Dalvik;
 use BrowserDetector\Detector\Browser\Dolfin;
 use BrowserDetector\Detector\Browser\Firefox;
 use BrowserDetector\Detector\Browser\FlyFlow;
+use BrowserDetector\Detector\Browser\Googlebot;
+use BrowserDetector\Detector\Browser\GooglebotMobileBot;
+use BrowserDetector\Detector\Browser\GooglePageSpeed;
+use BrowserDetector\Detector\Browser\GooglePageSpeedInsights;
 use BrowserDetector\Detector\Browser\Maxthon;
 use BrowserDetector\Detector\Browser\MqqBrowser;
 use BrowserDetector\Detector\Browser\NetFrontLifeBrowser;
@@ -52,17 +50,18 @@ use BrowserDetector\Detector\Browser\OperaMini;
 use BrowserDetector\Detector\Browser\OperaMobile;
 use BrowserDetector\Detector\Browser\Silk;
 use BrowserDetector\Detector\Browser\Ucweb;
-use BrowserDetector\Detector\Browser\YaBrowser;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
-
+use BrowserDetector\Detector\Browser\YaBrowser;
+use BrowserDetector\Detector\Browser\YouWaveAndroidOnPc;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Os\OsChangesBrowserInterface;
-use BrowserDetector\Detector\MatcherInterface\Os\OsChangesEngineInterface;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsChangesBrowserInterface;
+use UaMatcher\Os\OsChangesEngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -133,7 +132,7 @@ class AndroidOs extends AbstractOs implements OsInterface, OsChangesEngineInterf
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {
@@ -173,11 +172,11 @@ class AndroidOs extends AbstractOs implements OsInterface, OsChangesEngineInterf
     /**
      * changes properties of the browser depending on properties of the Os
      *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \UaMatcher\Browser\BrowserInterface $browser
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function changeBrowserProperties(AbstractBrowser $browser)
+    public function changeBrowserProperties(BrowserInterface $browser)
     {
         if ($this->utils->checkIfContains(
             array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
@@ -192,13 +191,13 @@ class AndroidOs extends AbstractOs implements OsInterface, OsChangesEngineInterf
     /**
      * changes properties of the engine depending on browser properties and depending on properties of the Os
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Device\AbstractDevice   $device
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Device\DeviceInterface   $device
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function changeEngineProperties(AbstractEngine $engine, AbstractBrowser $browser, AbstractDevice $device)
+    public function changeEngineProperties(EngineInterface $engine, BrowserInterface $browser, DeviceInterface $device)
     {
         if (!$device->getDeviceType()->isTablet()) {
             $engine->setCapability('xhtml_send_mms_string', 'mms:');

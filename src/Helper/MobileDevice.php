@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Helper;
 
+use UaHelper\Utils;
+
 /**
  * helper to get information if the device is a mobile
  *
@@ -43,7 +45,7 @@ class MobileDevice
     private $useragent = '';
 
     /**
-     * @var \BrowserDetector\Helper\Utils the helper class
+     * @var \UaHelper\Utils the helper class
      */
     private $utils = null;
 

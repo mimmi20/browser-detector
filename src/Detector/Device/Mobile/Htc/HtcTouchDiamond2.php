@@ -32,12 +32,12 @@ namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -139,17 +139,17 @@ class HtcTouchDiamond2 extends AbstractDevice implements DeviceInterface
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
+     * @return \UaMatcher\Os\OsInterface
      */
     public function detectOs()
     {
         $os = array(
             new WindowsMobileOs(),
-            new AndroidOs()
+            new AndroidOs($this->useragent)
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
+        $chain->setDefaultHandler(new UnknownOs($this->useragent));
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 

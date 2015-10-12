@@ -31,10 +31,10 @@
 namespace BrowserDetector\Detector\Device\Mobile\Pearl;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -140,7 +140,7 @@ class PearlTouchletX7g extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new AndroidOs();
+        $handler = new AndroidOs($this->useragent);
         $handler->setUseragent($this->useragent);
 
         return $handler;

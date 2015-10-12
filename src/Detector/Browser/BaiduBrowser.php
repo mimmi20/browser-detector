@@ -85,7 +85,7 @@ class BaiduBrowser extends AbstractBrowser
      */
     public function getName()
     {
-        return 'BaiduAbstractBrowser';
+        return 'BaiduBrowserInterface';
     }
 
     /**

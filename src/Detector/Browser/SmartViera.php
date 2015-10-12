@@ -31,11 +31,11 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * BenQUserAgentHandler

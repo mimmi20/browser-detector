@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -132,7 +132,7 @@ class Voyager extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\Engine\AbstractEngine
+     * @return null|\UaMatcher\Engine\EngineInterface
      */
     public function getEngine()
     {

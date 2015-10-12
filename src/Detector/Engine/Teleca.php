@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
+use UaMatcher\Engine\EngineInterface;
 
 /**
  * @category  BrowserDetector

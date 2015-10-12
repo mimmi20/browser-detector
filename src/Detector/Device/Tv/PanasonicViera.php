@@ -42,12 +42,12 @@ use BrowserDetector\Detector\Browser\SmartViera;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\FreeBsd;
 use BrowserDetector\Detector\Os\LinuxTv;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -149,17 +149,17 @@ class PanasonicViera extends AbstractDevice implements DeviceInterface
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
+     * @return \UaMatcher\Os\OsInterface
      */
     public function detectOs()
     {
         $os = array(
-            new LinuxTv(),
+            new LinuxTv($this->useragent),
             new FreeBsd()
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
+        $chain->setDefaultHandler(new UnknownOs($this->useragent));
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
@@ -169,7 +169,7 @@ class PanasonicViera extends AbstractDevice implements DeviceInterface
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

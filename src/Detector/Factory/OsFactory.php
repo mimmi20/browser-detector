@@ -98,8 +98,8 @@ use BrowserDetector\Detector\Os\ZenwalkGnu;
 use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Safari as SafariHelper;
-use BrowserDetector\Helper\Utils;
 use BrowserDetector\Helper\Windows as WindowsHelper;
+use UaHelper\Utils;
 
 /**
  * Browser detection class
@@ -117,7 +117,7 @@ class OsFactory
      *
      * @param string $agent
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\OsInterface
+     * @return \UaMatcher\OsInterface
      */
     public static function detectPlatform($agent)
     {
@@ -204,12 +204,12 @@ class OsFactory
         if ($utils->checkIfContains(array('Android', 'Silk', 'JUC(Linux;U;', 'JUC (Linux; U;'))
             || $safariHelper->isMobileAsSafari()
         ) {
-            return new AndroidOs();
+            return new AndroidOs($this->useragent);
         }
 
         $doMatch = preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches);
         if ($doMatch && $matches[1] >= 4) {
-            return new AndroidOs();
+            return new AndroidOs($this->useragent);
         }
 
         if ($utils->checkIfContains('darwin', true)) {
@@ -244,15 +244,15 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('debian', true)) {
-            return new Debian();
+            return new Debian($this->useragent);
         }
 
         if ($utils->checkIfContains('kubuntu', true)) {
-            return new Kubuntu();
+            return new Kubuntu($this->useragent);
         }
 
         if ($utils->checkIfContains('ubuntu', true)) {
-            return new Ubuntu();
+            return new Ubuntu($this->useragent);
         }
 
         if ($utils->checkIfContainsAll(array('RIM Tablet'))) {
@@ -260,31 +260,31 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('centos', true)) {
-            return new CentOs();
+            return new CentOs($this->useragent);
         }
 
         if ($utils->checkIfContains('CrOS')) {
-            return new CrOs();
+            return new CrOs($this->useragent);
         }
 
         if ($utils->checkIfContains('Joli OS')) {
-            return new JoliOs();
+            return new JoliOs($this->useragent);
         }
 
         if ($utils->checkIfContains('mandriva', true)) {
-            return new Mandriva();
+            return new Mandriva($this->useragent);
         }
 
         if ($utils->checkIfContainsAll(array('mint', 'linux'), true)) {
-            return new Mint();
+            return new Mint($this->useragent);
         }
 
         if ($utils->checkIfContains('suse', true)) {
-            return new Suse();
+            return new Suse($this->useragent);
         }
 
         if ($utils->checkIfContains('fedora', true)) {
-            return new Fedora();
+            return new Fedora($this->useragent);
         }
 
         if ($utils->checkIfContains('gentoo', true)) {
@@ -292,7 +292,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains(array('redhat', 'red hat'), true)) {
-            return new Redhat();
+            return new Redhat($this->useragent);
         }
 
         if ($utils->checkIfContains('slackware', true)) {
@@ -300,7 +300,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('ventana', true)) {
-            return new Ventana();
+            return new Ventana($this->useragent);
         }
 
         if ($utils->checkIfContains('Moblin')) {
@@ -308,7 +308,7 @@ class OsFactory
         }
 
         if ($utils->checkIfContains('Zenwalk GNU')) {
-            return new ZenwalkGnu();
+            return new ZenwalkGnu($this->useragent);
         }
 
         if ($utils->checkIfContains('AIX')) {
@@ -392,11 +392,11 @@ class OsFactory
         }
 
         if ($utils->checkIfContains(array('NETTV', 'HbbTV', 'SMART-TV'))) {
-            return new LinuxTv();
+            return new LinuxTv($this->useragent);
         }
 
         if ($utils->checkIfContains(array('Linux', 'linux', 'X11'))) {
-            return new Linux();
+            return new Linux($this->useragent);
         }
 
         if ($utils->checkIfContains('CP/M')) {
@@ -444,6 +444,6 @@ class OsFactory
             return new Java();
         }
 
-        return new UnknownOs();
+        return new UnknownOs($this->useragent);
     }
 }

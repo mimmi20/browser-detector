@@ -30,14 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 
@@ -78,7 +71,7 @@ class NokiaBrowser extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NokiaAbstractBrowser', 'Nokia'))) {
+        if (!$this->utils->checkIfContains(array('NokiaBrowserInterface', 'Nokia'))) {
             return false;
         }
 
@@ -129,7 +122,7 @@ class NokiaBrowser extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('BrowserNG', 'NokiaAbstractBrowser');
+        $searches = array('BrowserNG', 'NokiaBrowserInterface');
 
         return $detector->detectVersion($searches);
     }

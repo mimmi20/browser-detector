@@ -30,16 +30,16 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -170,13 +170,13 @@ class HpP160U extends AbstractDevice implements DeviceInterface, DeviceHasWurflK
     /**
      * returns the WurflKey for the device
      *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
      *
      * @return string|null
      */
-    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
         $wurflKey = 'hp_veer_ver1_subwebos211';
 

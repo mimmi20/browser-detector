@@ -30,18 +30,18 @@
 
 namespace BrowserDetector\Detector\Result;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company\CompanyInterface;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\Os\AbstractOs;
-use BrowserDetector\Detector\Type\Device\TypeInterface as DeviceTypeInterface;
-use BrowserDetector\Detector\Type\Device\Unknown as TypeUnknownDevice;
 use BrowserDetector\Detector\Type\Browser\TypeInterface as BrowserTypeInterface;
 use BrowserDetector\Detector\Type\Browser\Unknown as TypeUnknownBrowser;
+use BrowserDetector\Detector\Type\Device\TypeInterface as DeviceTypeInterface;
+use BrowserDetector\Detector\Type\Device\Unknown as TypeUnknownDevice;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Utils;
+use UaHelper\Utils;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 use Wurfl\WurflConstants;
 
 /**
@@ -82,22 +82,22 @@ class Result implements \Serializable
     private $userAgent = null;
 
     /**
-     * @var \BrowserDetector\Detector\Device\AbstractDevice
+     * @var \UaMatcher\Device\DeviceInterface
      */
     private $device = null;
 
     /**
-     * @var \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @var \UaMatcher\Browser\BrowserInterface
      */
     private $browser = null;
 
     /**
-     * @var \BrowserDetector\Detector\Os\AbstractOs
+     * @var \UaMatcher\Os\OsInterface
      */
     private $os = null;
 
     /**
-     * @var \BrowserDetector\Detector\Engine\AbstractEngine
+     * @var \UaMatcher\Engine\EngineInterface
      */
     private $engine = null;
 
@@ -734,18 +734,18 @@ class Result implements \Serializable
      *
      * @param string                                                 $userAgent
      * @param string|null                                            $wurflKey
-     * @param \BrowserDetector\Detector\Device\AbstractDevice|null   $device
-     * @param \BrowserDetector\Detector\Os\AbstractOs|null           $os
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser|null $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine|null   $engine
+     * @param \UaMatcher\Device\DeviceInterface|null   $device
+     * @param \UaMatcher\Os\OsInterface|null           $os
+     * @param \UaMatcher\Browser\BrowserInterface|null $browser
+     * @param \UaMatcher\Engine\EngineInterface|null   $engine
      */
     public function __construct(
         $userAgent,
         $wurflKey = WurflConstants::NO_MATCH,
-        AbstractDevice $device = null,
-        AbstractOs $os = null,
-        AbstractBrowser $browser = null,
-        AbstractEngine $engine = null
+        DeviceInterface $device = null,
+        OsInterface $os = null,
+        BrowserInterface $browser = null,
+        EngineInterface $engine = null
     ) {
         $detector = new Version();
         $detector->setVersion('');
@@ -953,7 +953,7 @@ class Result implements \Serializable
      *
      * @var \BrowserDetector\Detector\Result\Result $result
      *
-     * @return AbstractDevice
+     * @return DeviceInterface
      */
     public function setRenderAs(Result $result)
     {

@@ -30,19 +30,19 @@
 
 namespace BrowserDetector\Detector\Result;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
+use BrowserDetector\Detector\Bits\Browser as BrowserBits;
+use BrowserDetector\Detector\Bits\Device as DeviceBits;
+use BrowserDetector\Detector\Bits\Os as OsBits;
 use BrowserDetector\Detector\Company\CompanyInterface;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
-use BrowserDetector\Detector\Bits\Device as DeviceBits;
-use BrowserDetector\Detector\Bits\Browser as BrowserBits;
-use BrowserDetector\Detector\Bits\Os as OsBits;
 use BrowserDetector\Detector\Cpu;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use Psr\Log\LoggerInterface;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 use Wurfl\WurflConstants;
 use WurflData\Loader;
 
@@ -61,20 +61,20 @@ class ResultFactory
      * builds the result object and set the values
      *
      * @param string                                            $userAgent
-     * @param \BrowserDetector\Detector\Device\AbstractDevice   $device
-     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
+     * @param \UaMatcher\Device\DeviceInterface   $device
+     * @param \UaMatcher\Os\OsInterface           $os
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
      * @param \Psr\Log\LoggerInterface                          $logger
      *
      * @return \BrowserDetector\Detector\Result\Result
      */
     public static function build(
         $userAgent,
-        AbstractDevice $device,
-        AbstractOs $os,
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
+        DeviceInterface $device,
+        OsInterface $os,
+        BrowserInterface $browser,
+        EngineInterface $engine,
         LoggerInterface $logger
     ) {
         if ($device->getDeviceType()->isMobile() && $device instanceof DeviceHasWurflKeyInterface) {

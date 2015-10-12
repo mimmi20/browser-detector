@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Helper;
 
+use UaHelper\Utils;
+
 /**
  * a helper to detect TV devices
  *
@@ -38,7 +40,7 @@ namespace BrowserDetector\Helper;
 class Tv
 {
     /**
-     * @var \BrowserDetector\Helper\Utils the helper class
+     * @var \UaHelper\Utils the helper class
      */
     private $utils = null;
 

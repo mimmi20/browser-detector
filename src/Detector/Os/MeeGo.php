@@ -33,13 +33,12 @@ namespace BrowserDetector\Detector\Os;
 use BrowserDetector\Detector\Browser\Android;
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Browser\OperaMobile;
-use BrowserDetector\Detector\Browser\WeTabBrowser;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Browser\WeTabBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
-
 use BrowserDetector\Detector\Version;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -87,7 +86,7 @@ class MeeGo extends AbstractOs implements OsInterface
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

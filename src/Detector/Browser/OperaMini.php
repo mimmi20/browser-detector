@@ -34,10 +34,9 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Engine\Webkit;
-
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -192,11 +191,11 @@ class OperaMini extends AbstractBrowser
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs $os
+     * @param \UaMatcher\Os\OsInterface $os
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
+     * @return \UaMatcher\Engine\EngineInterface
      */
-    public function detectEngine(AbstractOs $os = null)
+    public function detectEngine(OsInterface $os = null)
     {
         if (null !== $os && in_array($os->getName(), array('iOS'))) {
             $engine = new Webkit();

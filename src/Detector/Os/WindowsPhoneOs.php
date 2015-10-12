@@ -30,21 +30,20 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
 use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
 use BrowserDetector\Detector\Browser\Opera;
 use BrowserDetector\Detector\Browser\OperaMobile;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
-
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Os\OsChangesBrowserInterface;
-use BrowserDetector\Detector\MatcherInterface\Os\OsChangesEngineInterface;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsChangesBrowserInterface;
+use UaMatcher\Os\OsChangesEngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -104,7 +103,7 @@ class WindowsPhoneOs extends AbstractOs implements OsInterface, OsChangesEngineI
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {
@@ -126,11 +125,11 @@ class WindowsPhoneOs extends AbstractOs implements OsInterface, OsChangesEngineI
     /**
      * changes properties of the browser depending on properties of the Os
      *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
+     * @param \UaMatcher\Browser\BrowserInterface $browser
      *
      * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
-    public function changeBrowserProperties(AbstractBrowser $browser)
+    public function changeBrowserProperties(BrowserInterface $browser)
     {
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
@@ -142,13 +141,13 @@ class WindowsPhoneOs extends AbstractOs implements OsInterface, OsChangesEngineI
     /**
      * changes properties of the engine depending on browser properties and depending on properties of the Os
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Device\AbstractDevice   $device
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Device\DeviceInterface   $device
      *
      * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
-    public function changeEngineProperties(AbstractEngine $engine, AbstractBrowser $browser, AbstractDevice $device)
+    public function changeEngineProperties(EngineInterface $engine, BrowserInterface $browser, DeviceInterface $device)
     {
         $browserVersion = (float)$browser->detectVersion()->getVersion(
             Version::MAJORMINOR

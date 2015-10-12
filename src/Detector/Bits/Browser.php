@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Bits;
 
-use BrowserDetector\Helper\Utils;
+use UaHelper\Utils;
 
 /**
  * Class to detect the Bit count for an Browser

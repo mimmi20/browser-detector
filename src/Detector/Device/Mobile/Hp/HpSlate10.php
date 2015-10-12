@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -140,8 +140,7 @@ class HpSlate10 extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new AndroidOs();
-        $handler->setUseragent($this->useragent);
+        $handler = new AndroidOs($this->useragent);
 
         return $handler;
     }

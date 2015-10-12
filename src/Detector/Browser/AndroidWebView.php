@@ -33,9 +33,9 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -96,7 +96,7 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
             'PaleMoon',
             'RockMelt',
             'Silk',
-            'YaAbstractBrowser',
+            'YaBrowserInterface',
             'bdbrowser_i18n',
             'FBAV',
             // Bots trying to be a Chrome

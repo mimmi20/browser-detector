@@ -33,12 +33,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\MobileDevice;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -89,7 +89,7 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
             // Fakes
             'Mac; Mac OS ',
             'AppEngine-Google',
-            'InettvAbstractBrowser'
+            'InettvBrowserInterface'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnOpera)) {
@@ -166,7 +166,7 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
+     * @return \UaMatcher\Engine\EngineInterface
      */
     public function getEngine()
     {
@@ -186,11 +186,11 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
     /**
      * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs $os
+     * @param \UaMatcher\Os\OsInterface $os
      *
      * @return string
      */
-    public function getWurflKey(AbstractOs $os)
+    public function getWurflKey(OsInterface $os)
     {
         $browserVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
 

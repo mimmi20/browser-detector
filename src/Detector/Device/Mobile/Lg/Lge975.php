@@ -30,19 +30,19 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -144,17 +144,17 @@ class Lge975 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKe
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
+     * @return \UaMatcher\Os\OsInterface
      */
     public function detectOs()
     {
         $os = array(
             new WindowsPhoneOs(),
-            new AndroidOs(),
+            new AndroidOs($this->useragent),
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
+        $chain->setDefaultHandler(new UnknownOs($this->useragent));
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
@@ -164,13 +164,13 @@ class Lge975 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKe
     /**
      * returns the WurflKey for the device
      *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine   $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs           $os
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
      *
      * @return string|null
      */
-    public function getWurflKey(AbstractBrowser $browser, AbstractEngine $engine, AbstractOs $os)
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
         $wurflKey = 'lg_e975_ver1';
 

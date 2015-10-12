@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Device\GeneralDesktop;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 
 /**
  * Device detection class
@@ -53,7 +53,7 @@ class DeviceFactory
      *
      * @param string $agent
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaMatcher\Device\DeviceInterface
      */
     public static function detect($agent)
     {

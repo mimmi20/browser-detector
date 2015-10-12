@@ -32,35 +32,34 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Browser\AppleMail;
 use BrowserDetector\Detector\Browser\BingPreview;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\DarwinBrowser;
+use BrowserDetector\Detector\Browser\FacebookApp;
 use BrowserDetector\Detector\Browser\GoogleAdsbotMobile;
+use BrowserDetector\Detector\Browser\GoogleApp;
 use BrowserDetector\Detector\Browser\Googlebot;
 use BrowserDetector\Detector\Browser\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\GooglePageSpeed;
 use BrowserDetector\Detector\Browser\GooglePageSpeedInsights;
-use BrowserDetector\Detector\Browser\GoogleApp;
-use BrowserDetector\Detector\Browser\MsnBotMedia;
-use BrowserDetector\Detector\Browser\Ucweb;
-use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Browser\DarwinBrowser;
-use BrowserDetector\Detector\Browser\FacebookApp;
 use BrowserDetector\Detector\Browser\GooglePlus;
 use BrowserDetector\Detector\Browser\Incredimail;
 use BrowserDetector\Detector\Browser\Isource;
 use BrowserDetector\Detector\Browser\Lunascape;
 use BrowserDetector\Detector\Browser\Mercury;
 use BrowserDetector\Detector\Browser\MqqBrowser;
+use BrowserDetector\Detector\Browser\MsnBotMedia;
 use BrowserDetector\Detector\Browser\NetNewsWire;
 use BrowserDetector\Detector\Browser\OnePassword;
 use BrowserDetector\Detector\Browser\OperaMini;
 use BrowserDetector\Detector\Browser\OperaMobile;
 use BrowserDetector\Detector\Browser\Safari;
 use BrowserDetector\Detector\Browser\Sleipnir;
+use BrowserDetector\Detector\Browser\Ucweb;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
-
 use BrowserDetector\Detector\Version;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -125,7 +124,7 @@ class Ios extends AbstractOs implements OsInterface
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

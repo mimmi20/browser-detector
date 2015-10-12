@@ -71,7 +71,7 @@ class NetFront extends AbstractBrowser
      */
     public function canHandle()
     {
-        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeAbstractBrowser/', 'NF3', 'PlayStation 4');
+        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeBrowserInterface/', 'NF3', 'PlayStation 4');
 
         if (!$this->utils->checkIfContains($netfront)) {
             return false;
@@ -132,7 +132,7 @@ class NetFront extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFront', 'NF', 'NetFrontLifeAbstractBrowser', 'NF3');
+        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowserInterface', 'NF3');
 
         return $detector->detectVersion($searches);
     }

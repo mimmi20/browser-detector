@@ -36,9 +36,8 @@ use BrowserDetector\Detector\Browser\Dalvik;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
-
 use BrowserDetector\Detector\Version;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -85,7 +84,7 @@ class NintendoOs extends AbstractOs implements OsInterface
      * returns null, if the device does not have a specific Browser
      * returns the Browser Handler otherwise
      *
-     * @return null|\BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return null|\UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

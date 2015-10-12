@@ -32,8 +32,8 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
 use BrowserDetector\Helper\Safari as SafariHelper;
-use BrowserDetector\Helper\Utils;
 use BrowserDetector\Helper\Windows as WindowsHelper;
+use UaHelper\Utils;
 
 /**
  * Browser detection class
@@ -51,7 +51,7 @@ class PlatformFactory implements FactoryInterface
      *
      * @param string $agent
      *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
+     * @return \UaMatcher\Os\OsInterface
      */
     public static function detect($agent)
     {
@@ -229,7 +229,7 @@ class PlatformFactory implements FactoryInterface
 
         $platformName = '\\BrowserDetector\\Detector\\Os\\' . $platformKey;
 
-        /** @var \BrowserDetector\Detector\Os\AbstractOs $platform */
+        /** @var \UaMatcher\Os\OsInterface $platform */
         $platform = new $platformName();
         $platform->setUserAgent($agent);
 

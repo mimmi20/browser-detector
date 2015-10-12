@@ -18,10 +18,10 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetect($agent, $platform, $version)
     {
-        /** @var \BrowserDetector\Detector\Os\AbstractOs $result */
+        /** @var \UaMatcher\Os\OsInterface $result */
         $result = PlatformFactory::detect($agent);
 
-        self::assertInstanceOf('\BrowserDetector\Detector\Os\AbstractOs', $result);
+        self::assertInstanceOf('\UaMatcher\Os\OsInterface', $result);
         self::assertSame($platform, $result->getName());
 
         self::assertInstanceOf('\BrowserDetector\Detector\Version', $result->detectVersion());

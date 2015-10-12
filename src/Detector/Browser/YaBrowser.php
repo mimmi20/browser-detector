@@ -33,9 +33,9 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -74,7 +74,7 @@ class YaBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('YaAbstractBrowser/'))) {
+        if (!$this->utils->checkIfContains(array('YaBrowserInterface/'))) {
             return false;
         }
 
@@ -131,7 +131,7 @@ class YaBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('YaAbstractBrowser');
+        $searches = array('YaBrowserInterface');
 
         return $detector->detectVersion($searches);
     }
@@ -140,7 +140,7 @@ class YaBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
+     * @return \UaMatcher\Engine\EngineInterface
      */
     public function getEngine()
     {

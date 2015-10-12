@@ -4,9 +4,13 @@
 .project
 .idea/
 vendor/
-data/
+composer.phar
+composer.lock
+build/build*/
+data/browscap-ua-test-*/
+data/browser/
+data/cache/
 !data/useragents/
 error.log
 ergebnis.txt
 resources/browscap-*/
-build/

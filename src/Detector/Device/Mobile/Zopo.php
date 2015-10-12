@@ -32,11 +32,11 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -152,7 +152,7 @@ class Zopo extends AbstractDevice implements DeviceInterface, DeviceHasChildrenI
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaMatcher\Device\DeviceInterface
      */
     public function detectDevice()
     {
@@ -174,7 +174,7 @@ class Zopo extends AbstractDevice implements DeviceInterface, DeviceHasChildrenI
      */
     public function detectOs()
     {
-        $handler = new AndroidOs();
+        $handler = new AndroidOs($this->useragent);
         $handler->setUseragent($this->useragent);
 
         return $handler;

@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Helper;
 
+use UaHelper\Utils;
+
 /**
  * a helper for detecting safari and some of his derefered browsers
  *
@@ -43,7 +45,7 @@ class Safari
     private $useragent = '';
 
     /**
-     * @var \BrowserDetector\Helper\Utils the helper class
+     * @var \UaHelper\Utils the helper class
      */
     private $utils = null;
 
@@ -118,7 +120,7 @@ class Safari
             'Mercury',
             'Midori',
             'MQQBrowser',
-            'NokiaAbstractBrowser',
+            'NokiaBrowserInterface',
             'OmniWeb',
             'OPiOS',
             'Origin',

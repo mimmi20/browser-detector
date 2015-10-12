@@ -32,7 +32,10 @@
     "mimmi20/wurfl-data": "~1.6",
     "mimmi20/wurfl-generic-request": "1.0.*",
     "psr/log": "~1.0",
-    "browscap/browscap": "dev-master"
+    "browscap/browscap": "dev-master",
+    "mimmi20/ua-result": "*",
+    "mimmi20/ua-matcher-interface": "*",
+    "mimmi20/ua-helper-utils": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "*",

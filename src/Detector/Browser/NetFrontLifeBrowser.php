@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -73,7 +73,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NetFrontLifeAbstractBrowser'))) {
+        if (!$this->utils->checkIfContains(array('NetFrontLifeBrowserInterface'))) {
             return false;
         }
 
@@ -96,7 +96,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getName()
     {
-        return 'NetFrontLifeAbstractBrowser';
+        return 'NetFrontLifeBrowserInterface';
     }
 
     /**
@@ -129,7 +129,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFrontLifeAbstractBrowser');
+        $searches = array('NetFrontLifeBrowserInterface');
 
         return $detector->detectVersion($searches);
     }

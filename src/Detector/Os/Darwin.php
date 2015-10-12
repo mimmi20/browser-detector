@@ -30,18 +30,18 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Bingbot;
-use BrowserDetector\Detector\Browser\CfNetwork;
-use BrowserDetector\Detector\Browser\Icab;
-use BrowserDetector\Detector\Browser\Maven;
 use BrowserDetector\Detector\Browser\AppleMail;
 use BrowserDetector\Detector\Browser\AtomicBrowser;
-use BrowserDetector\Detector\Browser\OperaCoast;
+use BrowserDetector\Detector\Browser\Bingbot;
+use BrowserDetector\Detector\Browser\CfNetwork;
 use BrowserDetector\Detector\Browser\DarwinBrowser;
+use BrowserDetector\Detector\Browser\Icab;
 use BrowserDetector\Detector\Browser\Incredimail;
+use BrowserDetector\Detector\Browser\Maven;
 use BrowserDetector\Detector\Browser\Mercury;
 use BrowserDetector\Detector\Browser\Omniweb;
 use BrowserDetector\Detector\Browser\OnePassword;
+use BrowserDetector\Detector\Browser\OperaCoast;
 use BrowserDetector\Detector\Browser\PerfectBrowser;
 use BrowserDetector\Detector\Browser\Puffin;
 use BrowserDetector\Detector\Browser\QuickLook;
@@ -53,9 +53,8 @@ use BrowserDetector\Detector\Browser\Terra;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
-
 use BrowserDetector\Detector\Version;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -103,7 +102,7 @@ class Darwin extends AbstractOs implements OsInterface
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

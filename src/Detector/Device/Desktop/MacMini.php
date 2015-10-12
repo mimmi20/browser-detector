@@ -33,13 +33,13 @@ namespace BrowserDetector\Detector\Device\Desktop;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\Darwin;
 use BrowserDetector\Detector\Os\MacintoshOs;
 use BrowserDetector\Detector\Os\Macosx;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -141,7 +141,7 @@ class MacMini extends AbstractDevice implements DeviceInterface
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
+     * @return \UaMatcher\Os\OsInterface
      */
     public function detectOs()
     {
@@ -152,7 +152,7 @@ class MacMini extends AbstractDevice implements DeviceInterface
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
+        $chain->setDefaultHandler(new UnknownOs($this->useragent));
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
@@ -162,7 +162,7 @@ class MacMini extends AbstractDevice implements DeviceInterface
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

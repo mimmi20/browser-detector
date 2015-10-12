@@ -30,10 +30,11 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
-use BrowserDetector\Detector\MatcherInterface\Os\OsInterface;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Utils;
+use Psr\Log\LoggerInterface;
+use UaHelper\Utils;
+use UaMatcher\MatcherInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * base class for all rendering platforms/operating systems to detect
@@ -51,39 +52,31 @@ abstract class AbstractOs implements MatcherInterface, OsInterface, \Serializabl
     protected $useragent = '';
 
     /**
-     * @var \BrowserDetector\Helper\Utils the helper class
+     * @var \UaHelper\Utils the helper class
      */
     protected $utils = null;
 
     /**
      * Class Constructor
+     *
+     * @param string                   $userAgent the user agent to be handled
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct()
+    public function __construct($userAgent, LoggerInterface $logger)
     {
-        $this->init();
+        $this->init($userAgent);
     }
 
     /**
      * initializes the object
+     * @param string $userAgent
      */
-    protected function init()
+    protected function init($userAgent)
     {
         $this->utils = new Utils();
-    }
 
-    /**
-     * sets the user agent to be handled
-     *
-     * @param string $userAgent
-     *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
-     */
-    public function setUserAgent($userAgent)
-    {
         $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
-
-        return $this;
     }
 
     /**
@@ -138,7 +131,6 @@ abstract class AbstractOs implements MatcherInterface, OsInterface, \Serializabl
     {
         $unseriliazedData = unserialize($serialized);
 
-        $this->init();
-        $this->setUserAgent($unseriliazedData['userAgent']);
+        $this->init($unseriliazedData['userAgent']);
     }
 }

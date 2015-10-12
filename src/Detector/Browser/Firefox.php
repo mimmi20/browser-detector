@@ -32,12 +32,12 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\SpamCrawlerFake;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -232,11 +232,11 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
     /**
      * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs $os
+     * @param \UaMatcher\Os\OsInterface $os
      *
      * @return string
      */
-    public function getWurflKey(AbstractOs $os)
+    public function getWurflKey(OsInterface $os)
     {
         $browserVersion = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
 

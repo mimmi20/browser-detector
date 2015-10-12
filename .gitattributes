@@ -1,5 +1,6 @@
 #Ensure the markdown uses lf
 *.markdown text eol=lf
+*.md text eol=lf
 *.js text eol=lf
 *.json text eol=lf
 *.lock text eol=lf
@@ -12,4 +13,3 @@
 *.txt text eol=lf
 .gitattributes text eol=lf
 .gitignore text eol=lf
-.gitkeep text eol=lf

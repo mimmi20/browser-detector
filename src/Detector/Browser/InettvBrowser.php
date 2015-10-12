@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Presto;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -73,7 +73,7 @@ class InettvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('InettvAbstractBrowser')) {
+        if (!$this->utils->checkIfContains('InettvBrowserInterface')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class InettvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getName()
     {
-        return 'InettvAbstractBrowser';
+        return 'InettvBrowserInterface';
     }
 
     /**
@@ -120,7 +120,7 @@ class InettvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('InettvAbstractBrowser', 'Version');
+        $searches = array('InettvBrowserInterface', 'Version');
 
         return $detector->detectVersion($searches);
     }

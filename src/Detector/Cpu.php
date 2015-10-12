@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector;
 
-use BrowserDetector\Helper\Utils;
+use UaHelper\Utils;
 
 /**
  * Class to detect the generic cpu of an Browser

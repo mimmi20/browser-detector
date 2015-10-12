@@ -28,10 +28,10 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Engine\EngineDependsOnDeviceInterface;
-use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineDependsOnDeviceInterface;
+use UaMatcher\Engine\EngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -236,11 +236,11 @@ class Edge extends AbstractEngine implements EngineInterface, EngineDependsOnDev
     /**
      * sets properties on the engine depending on the device
      *
-     * @param \BrowserDetector\Detector\Device\AbstractDevice  $device
+     * @param \UaMatcher\Device\DeviceInterface  $device
      *
-     * @return \BrowserDetector\Detector\Engine\AbstractEngine
+     * @return \UaMatcher\Engine\EngineInterface
      */
-    public function detectDependProperties(AbstractDevice $device)
+    public function detectDependProperties(DeviceInterface $device)
     {
         if ($device->getDeviceType()->isMobile()) {
             $this->setCapability('xhtml_make_phone_call_string', 'tel:');

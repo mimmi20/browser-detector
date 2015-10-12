@@ -31,11 +31,12 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company\Unknown;
-use BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherHasCapabilitiesInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Utils;
+use Psr\Log\LoggerInterface;
+use UaHelper\Utils;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\MatcherHasCapabilitiesInterface;
+use UaMatcher\MatcherInterface;
 
 /**
  * base class for all rendering engines to detect
@@ -53,7 +54,7 @@ abstract class AbstractEngine implements MatcherInterface, MatcherHasCapabilitie
     protected $useragent = '';
 
     /**
-     * @var \BrowserDetector\Helper\Utils
+     * @var \UaHelper\Utils
      */
     protected $utils = null;
 
@@ -538,34 +539,24 @@ abstract class AbstractEngine implements MatcherInterface, MatcherHasCapabilitie
     /**
      * Class Constructor
      *
-     * @return AbstractEngine
+     * @param string                   $userAgent the user agent to be handled
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct()
+    public function __construct($userAgent, LoggerInterface $logger)
     {
-        $this->init();
+        $this->init($userAgent);
     }
 
     /**
      * initializes the object
+     * @param string $userAgent
      */
-    protected function init()
+    protected function init($userAgent)
     {
         $this->utils = new Utils();
-    }
 
-    /**
-     * sets the user agent to be handled
-     *
-     * @param string $userAgent
-     *
-     * @return AbstractEngine
-     */
-    public function setUserAgent($userAgent)
-    {
         $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
-
-        return $this;
     }
 
     /**
@@ -648,7 +639,7 @@ abstract class AbstractEngine implements MatcherInterface, MatcherHasCapabilitie
      *
      * @param null   $capabilityValue
      *
-     * @return AbstractEngine
+     * @return EngineInterface
      */
     public function setCapability(
         $capabilityName,
@@ -703,8 +694,7 @@ abstract class AbstractEngine implements MatcherInterface, MatcherHasCapabilitie
         foreach ($unseriliazedData['properties'] as $property => $value) {
             $this->properties[$property] = $value;
         }
-        
-        $this->init();
-        $this->setUserAgent($unseriliazedData['userAgent']);
+
+        $this->init($unseriliazedData['userAgent']);
     }
 }

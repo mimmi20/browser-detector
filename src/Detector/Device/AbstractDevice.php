@@ -31,16 +31,17 @@
 namespace BrowserDetector\Detector\Device;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherCanHandleInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherHasCapabilitiesInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherHasWeightInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Result\Result;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Utils;
 use Psr\Log\LoggerInterface;
+use UaHelper\Utils;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasCapabilitiesInterface;
+use UaMatcher\MatcherHasWeightInterface;
+use UaMatcher\MatcherInterface;
+use UaMatcher\Result\ResultInterface;
 
 /**
  * base class for all Devices to detect
@@ -63,7 +64,7 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
     protected $useragent = '';
 
     /**
-     * @var \BrowserDetector\Helper\Utils the helper class
+     * @var \UaHelper\Utils the helper class
      */
     protected $utils = null;
 
@@ -124,34 +125,24 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
     /**
      * Class Constructor
      *
-     * @return AbstractDevice
+     * @param string                   $userAgent the user agent to be handled
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct()
+    public function __construct($userAgent, LoggerInterface $logger)
     {
-        $this->init();
+        $this->init($userAgent);
     }
 
     /**
      * initializes the object
+     * @param string $userAgent
      */
-    protected function init()
+    protected function init($userAgent)
     {
         $this->utils = new Utils();
-    }
 
-    /**
-     * sets the user agent to be handled
-     *
-     * @param string $userAgent
-     *
-     * @return AbstractDevice
-     */
-    public function setUserAgent($userAgent)
-    {
         $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
-
-        return $this;
     }
 
     /**
@@ -246,7 +237,7 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
      *
      * @param null   $capabilityValue
      *
-     * @return AbstractDevice
+     * @return DeviceInterface
      */
     public function setCapability(
         $capabilityName,
@@ -329,11 +320,11 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
     /**
      * sets a second device for rendering properties
      *
-     * @var \BrowserDetector\Detector\Result\Result $result
+     * @var \UaMatcher\Result\ResultInterface $result
      *
-     * @return AbstractDevice
+     * @return DeviceInterface
      */
-    public function setRenderAs(Result $result)
+    public function setRenderAs(ResultInterface $result)
     {
         $this->renderAs = $result;
 
@@ -361,7 +352,7 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
     /**
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return AbstractDevice
+     * @return DeviceInterface
      */
     public function setLogger(LoggerInterface $logger)
     {
@@ -405,8 +396,7 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
             $this->properties[$property] = $value;
         }
 
-        $this->init();
-        $this->setUserAgent($unseriliazedData['userAgent']);
+        $this->init($unseriliazedData['userAgent']);
 
         $this->renderAs = $unseriliazedData['renderAs'];
         $this->version  = $unseriliazedData['version'];

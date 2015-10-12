@@ -19,10 +19,10 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetect($agent, $engine, $version, $transcoder)
     {
-        /** @var \BrowserDetector\Detector\Engine\AbstractEngine $result */
+        /** @var \UaMatcher\Engine\EngineInterface $result */
         $result = EngineFactory::detect($agent);
 
-        self::assertInstanceOf('\BrowserDetector\Detector\Engine\AbstractEngine', $result);
+        self::assertInstanceOf('\UaMatcher\Engine\EngineInterface', $result);
         self::assertSame($engine, $result->getName());
 
         self::assertInstanceOf('\BrowserDetector\Detector\Version', $result->detectVersion());

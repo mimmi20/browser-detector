@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * KonquerorHandler
@@ -76,7 +76,7 @@ class SlimBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SlimAbstractBrowser'))) {
+        if (!$this->utils->checkIfContains(array('SlimBrowserInterface'))) {
             return false;
         }
 
@@ -90,7 +90,7 @@ class SlimBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'SlimAbstractBrowser';
+        return 'SlimBrowserInterface';
     }
 
     /**
@@ -123,7 +123,7 @@ class SlimBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SlimAbstractBrowser');
+        $searches = array('SlimBrowserInterface');
 
         return $detector->detectVersion($searches);
     }

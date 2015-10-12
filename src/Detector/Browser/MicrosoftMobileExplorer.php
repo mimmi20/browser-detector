@@ -32,10 +32,10 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasRuntimeModificationsInterface;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -185,7 +185,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
      * detects properties who are depending on the device version or the user
      * agent
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaMatcher\Device\DeviceInterface
      */
     public function detectSpecialProperties()
     {

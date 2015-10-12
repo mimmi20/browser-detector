@@ -31,14 +31,15 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherCanHandleInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherHasCapabilitiesInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherHasWeightInterface;
-use BrowserDetector\Detector\MatcherInterface\MatcherInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
-use BrowserDetector\Helper\Utils;
+use Psr\Log\LoggerInterface;
+use UaHelper\Utils;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasCapabilitiesInterface;
+use UaMatcher\MatcherHasWeightInterface;
+use UaMatcher\MatcherInterface;
 
 /**
  * base class for all browsers to detect
@@ -56,7 +57,7 @@ abstract class AbstractBrowser implements MatcherInterface, MatcherCanHandleInte
     protected $useragent = '';
 
     /**
-     * @var \BrowserDetector\Helper\Utils the helper class
+     * @var \UaHelper\Utils the helper class
      */
     protected $utils = null;
 
@@ -92,34 +93,24 @@ abstract class AbstractBrowser implements MatcherInterface, MatcherCanHandleInte
     /**
      * Class Constructor
      *
-     * @return AbstractBrowser
+     * @param string                   $userAgent the user agent to be handled
+     * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct()
+    public function __construct($userAgent, LoggerInterface $logger)
     {
-        $this->init();
+        $this->init($userAgent);
     }
 
     /**
      * initializes the object
+     * @param string $userAgent
      */
-    protected function init()
+    protected function init($userAgent)
     {
         $this->utils = new Utils();
-    }
 
-    /**
-     * sets the user agent to be handled
-     *
-     * @param string $userAgent
-     *
-     * @return AbstractBrowser
-     */
-    public function setUserAgent($userAgent)
-    {
         $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
-
-        return $this;
     }
 
     /**
@@ -184,7 +175,7 @@ abstract class AbstractBrowser implements MatcherInterface, MatcherCanHandleInte
      * @param string $capabilityName must be a valid capability name
      * @param mixed  $capabilityValue
      *
-     * @return AbstractBrowser
+     * @return BrowserInterface
      *
      * @throws \InvalidArgumentException
      */
@@ -285,7 +276,6 @@ abstract class AbstractBrowser implements MatcherInterface, MatcherCanHandleInte
             $this->properties[$property] = $value;
         }
 
-        $this->init();
-        $this->setUserAgent($unseriliazedData['userAgent']);
+        $this->init($unseriliazedData['userAgent']);
     }
 }

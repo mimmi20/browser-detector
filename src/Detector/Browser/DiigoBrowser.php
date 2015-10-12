@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -77,7 +77,7 @@ class DiigoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('DiigoAbstractBrowser'))) {
+        if (!$this->utils->checkIfContains(array('DiigoBrowserInterface'))) {
             return false;
         }
 
@@ -112,7 +112,7 @@ class DiigoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getName()
     {
-        return 'DiigoAbstractBrowser';
+        return 'DiigoBrowserInterface';
     }
 
     /**
@@ -145,7 +145,7 @@ class DiigoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Version', 'DiigoAbstractBrowser');
+        $searches = array('Version', 'DiigoBrowserInterface');
 
         return $detector->detectVersion($searches);
     }

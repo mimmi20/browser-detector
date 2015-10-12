@@ -33,10 +33,10 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -106,7 +106,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
             'PaleMoon',
             'RockMelt',
             'Silk',
-            'YaAbstractBrowser',
+            'YaBrowserInterface',
             'Firefox',
             'Iceweasel',
             'Edge',
@@ -213,11 +213,11 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs $os
+     * @param \UaMatcher\Os\OsInterface $os
      *
-     * @return \BrowserDetector\Detector\MatcherInterface\Engine\EngineInterface
+     * @return \UaMatcher\Engine\EngineInterface
      */
-    public function detectEngine(AbstractOs $os = null)
+    public function detectEngine(OsInterface $os = null)
     {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
@@ -237,11 +237,11 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
     /**
      * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs $os
+     * @param \UaMatcher\Os\OsInterface $os
      *
      * @return string
      */
-    public function getWurflKey(AbstractOs $os)
+    public function getWurflKey(OsInterface $os)
     {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 

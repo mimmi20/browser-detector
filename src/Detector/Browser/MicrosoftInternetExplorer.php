@@ -32,13 +32,13 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserDependsOnEngineInterface;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasWurflKeyInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserDependsOnEngineInterface;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -274,11 +274,11 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
     /**
      * sets properties on the browser depending on the engine
      *
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine $engine
+     * @param \UaMatcher\Engine\EngineInterface $engine
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
-    public function detectDependProperties(AbstractEngine $engine)
+    public function detectDependProperties(EngineInterface $engine)
     {
         $browserVersion = $this->detectVersion();
 
@@ -339,11 +339,11 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
     /**
      * returns the WurflKey
      *
-     * @param \BrowserDetector\Detector\Os\AbstractOs $os
+     * @param \UaMatcher\Os\OsInterface $os
      *
      * @return string
      */
-    public function getWurflKey(AbstractOs $os)
+    public function getWurflKey(OsInterface $os)
     {
         $browserVersion = (int) $this->detectVersion()->getVersion(Version::MAJORONLY);
 

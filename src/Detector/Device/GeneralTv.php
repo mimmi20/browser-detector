@@ -33,10 +33,10 @@ namespace BrowserDetector\Detector\Device;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\Tv as TvHelper;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -101,7 +101,7 @@ class GeneralTv extends AbstractDevice implements DeviceInterface, DeviceHasChil
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaMatcher\Device\DeviceInterface
      */
     public function detectDevice()
     {
@@ -165,7 +165,7 @@ class GeneralTv extends AbstractDevice implements DeviceInterface, DeviceHasChil
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {

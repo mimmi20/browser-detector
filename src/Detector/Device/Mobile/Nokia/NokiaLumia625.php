@@ -30,15 +30,14 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
-use BrowserDetector\Detector\Browser\AbstractBrowser;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Engine\AbstractEngine;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
-use BrowserDetector\Detector\Os\AbstractOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
-
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -154,16 +153,16 @@ class NokiaLumia625 extends AbstractDevice implements DeviceInterface
      * detects properties who are depending on the browser, the rendering engine
      * or the operating system
      *
-     * @param \BrowserDetector\Detector\Browser\AbstractBrowser $browser
-     * @param \BrowserDetector\Detector\Engine\AbstractEngine  $engine
-     * @param \BrowserDetector\Detector\Os\AbstractOs      $os
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface  $engine
+     * @param \UaMatcher\Os\OsInterface      $os
      *
      * @return \BrowserDetector\Detector\Device\Mobile\Nokia\NokiaLumia625
      */
     public function detectDependProperties(
-        AbstractBrowser $browser,
-        AbstractEngine $engine,
-        AbstractOs $os
+        BrowserInterface $browser,
+        EngineInterface $engine,
+        OsInterface $os
     ) {
         if ($this->utils->checkIfContains('vodafone', true)) {
             $this->setCapability('model_extra_info', 'for Vodafone');

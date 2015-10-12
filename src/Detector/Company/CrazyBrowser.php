@@ -43,12 +43,12 @@ class CrazyBrowser extends AbstractCompany implements CompanyInterface
      *
      * @var string
      */
-    protected $name = 'CrazyAbstractBrowser.com';
+    protected $name = 'CrazyBrowserInterface.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'CrazyAbstractBrowser';
+    protected $brandname = 'CrazyBrowserInterface';
 }

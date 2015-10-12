@@ -74,7 +74,7 @@ class SailfishBrowser extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SailfishAbstractBrowser'))) {
+        if (!$this->utils->checkIfContains(array('SailfishBrowserInterface'))) {
             return false;
         }
 
@@ -121,7 +121,7 @@ class SailfishBrowser extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SailfishAbstractBrowser');
+        $searches = array('SailfishBrowserInterface');
 
         return $detector->detectVersion($searches);
     }

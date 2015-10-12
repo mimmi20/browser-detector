@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -73,7 +73,7 @@ class AtomicBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AtomicAbstractBrowser') && !$this->utils->checkIfContains('AtomicLite')
+        if (!$this->utils->checkIfContains('AtomicBrowserInterface') && !$this->utils->checkIfContains('AtomicLite')
         ) {
             return false;
         }
@@ -121,7 +121,7 @@ class AtomicBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('AtomicAbstractBrowser', 'AtomicLite');
+        $searches = array('AtomicBrowserInterface', 'AtomicLite');
 
         return $detector->detectVersion($searches);
     }

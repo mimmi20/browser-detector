@@ -32,10 +32,10 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Detector\MatcherInterface\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -100,8 +100,8 @@ class Android extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             'Maxthon',
             'MxBrowser',
             'MQQBrowser',
-            'NetFrontLifeAbstractBrowser',
-            'NokiaAbstractBrowser',
+            'NetFrontLifeBrowserInterface',
+            'NokiaBrowserInterface',
             'Opera',
             'RIM Tablet',
             'Series60',

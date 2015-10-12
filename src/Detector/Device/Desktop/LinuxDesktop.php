@@ -33,8 +33,6 @@ namespace BrowserDetector\Detector\Device\Desktop;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\MatcherInterface\Device\DeviceInterface;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\CentOs;
 use BrowserDetector\Detector\Os\CrOs;
@@ -56,6 +54,8 @@ use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\Ventana;
 use BrowserDetector\Detector\Os\ZenwalkGnu;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\Device\DeviceInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -177,34 +177,34 @@ class LinuxDesktop extends AbstractDevice implements DeviceInterface
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AbstractOs
+     * @return \UaMatcher\Os\OsInterface
      */
     public function detectOs()
     {
         $os = array(
-            new Linux(),
-            new Debian(),
-            new Fedora(),
-            new JoliOs(),
-            new Kubuntu(),
-            new Mint(),
-            new Redhat(),
-            new Slackware(),
-            new Suse(),
-            new Ubuntu(),
-            new ZenwalkGnu(),
-            new CentOs(),
-            new LinuxTv(),
-            new CrOs(),
-            new Ventana(),
-            new Mandriva(),
-            new Moblin(),
-            new Gentoo(),
-            new AndroidOs(),
+            new Linux($this->useragent),
+            new Debian($this->useragent),
+            new Fedora($this->useragent),
+            new JoliOs($this->useragent),
+            new Kubuntu($this->useragent),
+            new Mint($this->useragent),
+            new Redhat($this->useragent),
+            new Slackware($this->useragent),
+            new Suse($this->useragent),
+            new Ubuntu($this->useragent),
+            new ZenwalkGnu($this->useragent),
+            new CentOs($this->useragent),
+            new LinuxTv($this->useragent),
+            new CrOs($this->useragent),
+            new Ventana($this->useragent),
+            new Mandriva($this->useragent),
+            new Moblin($this->useragent),
+            new Gentoo($this->useragent),
+            new AndroidOs($this->useragent),
         );
 
         $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs());
+        $chain->setDefaultHandler(new UnknownOs($this->useragent));
         $chain->setUseragent($this->useragent);
         $chain->setHandlers($os);
 
@@ -214,7 +214,7 @@ class LinuxDesktop extends AbstractDevice implements DeviceInterface
     /**
      * returns the Browser which used on the device
      *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
+     * @return \UaMatcher\Browser\BrowserInterface
      */
     public function detectBrowser()
     {
