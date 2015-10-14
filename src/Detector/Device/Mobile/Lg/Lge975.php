@@ -30,17 +30,12 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -50,7 +45,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lge975 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class Lge975 extends AbstractDevice implements DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -139,26 +134,6 @@ class Lge975 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKe
     public function getBrand()
     {
         return new Company\Lg();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \UaMatcher\Os\OsInterface
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new WindowsPhoneOs(),
-            new AndroidOs($this->useragent),
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs($this->useragent));
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
     }
 
     /**

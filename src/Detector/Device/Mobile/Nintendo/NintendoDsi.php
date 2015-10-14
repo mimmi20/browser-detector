@@ -30,17 +30,12 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
 
-use BrowserDetector\Detector\Browser\NetFront;
-use BrowserDetector\Detector\Browser\Opera;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -50,7 +45,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NintendoDsi extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class NintendoDsi extends AbstractDevice implements DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -143,26 +138,6 @@ class NintendoDsi extends AbstractDevice implements DeviceInterface, DeviceHasWu
     }
 
     /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new NetFront(),
-            new Opera()
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Os\UnknownOs
@@ -170,7 +145,6 @@ class NintendoDsi extends AbstractDevice implements DeviceInterface, DeviceHasWu
     public function detectOs()
     {
         $handler = new UnknownOs($this->useragent);
-        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

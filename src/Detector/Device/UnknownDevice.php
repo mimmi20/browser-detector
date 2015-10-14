@@ -34,7 +34,7 @@ use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnknownDevice extends AbstractDevice implements DeviceInterface
+class UnknownDevice extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -127,25 +127,5 @@ class UnknownDevice extends AbstractDevice implements DeviceInterface
     public function getBrand()
     {
         return new Company\Unknown();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'General' . DIRECTORY_SEPARATOR
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser\General');
-        $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

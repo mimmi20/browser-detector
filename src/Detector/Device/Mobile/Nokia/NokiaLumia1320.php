@@ -36,8 +36,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -47,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia1320 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class NokiaLumia1320 extends AbstractDevice implements DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -145,10 +144,7 @@ class NokiaLumia1320 extends AbstractDevice implements DeviceInterface, DeviceHa
      */
     public function detectOs()
     {
-        $handler = new WindowsPhoneOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new WindowsPhoneOs($this->useragent, $this->logger);
     }
 
     /**

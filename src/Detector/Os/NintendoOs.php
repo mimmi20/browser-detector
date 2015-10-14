@@ -30,11 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Android;
-use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Browser\Dalvik;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Os\OsInterface;
@@ -45,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NintendoOs extends AbstractOs implements OsInterface
+class NintendoOs extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform
@@ -78,27 +73,5 @@ class NintendoOs extends AbstractOs implements OsInterface
     public function getManufacturer()
     {
         return new Company\Nintendo();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null|\UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Android(),
-            new Chrome(),
-            new Dalvik()
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

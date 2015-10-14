@@ -39,7 +39,7 @@ use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -49,7 +49,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralMobile extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
+class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -173,26 +173,6 @@ class GeneralMobile extends AbstractDevice implements DeviceInterface, DeviceHas
     public function getBrand()
     {
         return new Company\Unknown();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser\Mobile');
-        $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 
     /**

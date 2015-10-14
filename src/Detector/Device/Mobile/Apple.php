@@ -35,8 +35,8 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Ios;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -44,7 +44,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Apple extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface
+class Apple extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -164,9 +164,6 @@ class Apple extends AbstractDevice implements DeviceInterface, DeviceHasChildren
      */
     public function detectOs()
     {
-        $handler = new Ios();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Ios($this->userAgent, $this->logger);
     }
 }

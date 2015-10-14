@@ -35,9 +35,9 @@ use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -47,7 +47,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PalmPre extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * @var \BrowserDetector\Detector\Company\CompanyInterface
@@ -164,10 +164,7 @@ class PalmPre extends AbstractDevice implements DeviceInterface, DeviceHasWurflK
      */
     public function detectOs()
     {
-        $handler = new WebOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new WebOs($this->userAgent, $this->logger);
     }
 
     /**

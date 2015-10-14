@@ -33,8 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Bada;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +41,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGts7233e extends AbstractDevice implements DeviceInterface
+class SamsungGts7233e extends AbstractDevice
 {
     /**
      * the detected browser properties

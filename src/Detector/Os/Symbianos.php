@@ -30,12 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\NokiaBrowser;
-use BrowserDetector\Detector\Browser\NokiaProxyBrowser;
-use BrowserDetector\Detector\Browser\OperaMini;
-use BrowserDetector\Detector\Browser\OperaMobile;
-use BrowserDetector\Detector\Browser\Ucweb;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Os\OsInterface;
@@ -46,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Symbianos extends AbstractOs implements OsInterface
+class Symbianos extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform
@@ -79,28 +73,5 @@ class Symbianos extends AbstractOs implements OsInterface
     public function getManufacturer()
     {
         return new Company\SymbianFoundation();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new NokiaBrowser(),
-            new NokiaProxyBrowser(),
-            new OperaMini(),
-            new OperaMobile(),
-            new Ucweb()
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new NokiaBrowser());
-
-        return $chain->detect();
     }
 }

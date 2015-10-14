@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector;
 
 use BrowserDetector\Helper\Classname;
 use DirectoryIterator;
+use UaMatcher\MatcherInterface;
 
 /**
  * a general chain used for detecting devices, browsers, platforms and engines
@@ -58,11 +59,11 @@ class Chain
     /**
      * sets the cache used to make the detection faster
      *
-     * @param mixed $handler
+     * @param \UaMatcher\MatcherInterface $handler
      *
-     * @return Chain
+     * @return \BrowserDetector\Detector\Chain
      */
-    public function setDefaultHandler($handler)
+    public function setDefaultHandler(MatcherInterface $handler)
     {
         $this->defaultHandler = $handler;
 
@@ -72,9 +73,9 @@ class Chain
     /**
      * sets the cache used to make the detection faster
      *
-     * @param array $handlersToUse
+     * @param \UaMatcher\MatcherInterface[] $handlersToUse
      *
-     * @return Chain
+     * @return \BrowserDetector\Detector\Chain
      */
     public function setHandlers(array $handlersToUse)
     {
@@ -88,7 +89,7 @@ class Chain
      *
      * @param string $directory
      *
-     * @return Chain
+     * @return \BrowserDetector\Detector\Chain
      */
     public function setDirectory($directory)
     {
@@ -102,7 +103,7 @@ class Chain
      *
      * @param string $namespace
      *
-     * @return Chain
+     * @return \BrowserDetector\Detector\Chain
      */
     public function setNamespace($namespace)
     {
@@ -116,7 +117,7 @@ class Chain
      *
      * @param string $agent
      *
-     * @return Chain
+     * @return \BrowserDetector\Detector\Chain
      */
     public function setUserAgent($agent)
     {
@@ -128,7 +129,7 @@ class Chain
     /**
      * detect the user agent
      *
-     * @return string
+     * @return \UaMatcher\MatcherInterface
      */
     public function detect()
     {

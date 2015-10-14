@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -38,7 +37,6 @@ use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +44,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralDesktop extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface
+class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -224,25 +222,5 @@ class GeneralDesktop extends AbstractDevice implements DeviceInterface, DeviceHa
     public function getBrand()
     {
         return new Company\Unknown();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
-        $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

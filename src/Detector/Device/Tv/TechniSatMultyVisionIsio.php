@@ -30,21 +30,10 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
-use BrowserDetector\Detector\Browser\Boxee;
-use BrowserDetector\Detector\Browser\HbbTv;
-use BrowserDetector\Detector\Browser\InettvBrowser;
-use BrowserDetector\Detector\Browser\NetTv;
-use BrowserDetector\Detector\Browser\Opera;
-use BrowserDetector\Detector\Browser\Safari;
-use BrowserDetector\Detector\Browser\SmartTv;
-use BrowserDetector\Detector\Browser\SmartTvWebBrowser;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\LinuxTv;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -52,54 +41,42 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TechniSatMultyVisionIsio extends AbstractDevice implements DeviceInterface
+class TechniSatMultyVisionIsio extends AbstractDevice
 {
     /**
      * the detected browser properties
      *
      * @var array
      */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Tv\TechniSatMultyVisionIsio
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-                // device
-            'model_name'             => 'MultyVision ISIO',
-            'model_extra_info'       => null,
-            'marketing_name'         => null,
-            'has_qwerty_keyboard'    => true,
-            'pointing_method'        => 'mouse',
-            // product info
-            'ununiqueness_handler'   => null,
-            'uaprof'                 => null,
-            'uaprof2'                => null,
-            'uaprof3'                => null,
-            'unique'                 => true,
-            // display
-            'physical_screen_width'  => null,
-            'physical_screen_height' => null,
-            'columns'                => null,
-            'rows'                   => null,
-            'max_image_width'        => null,
-            'max_image_height'       => null,
-            'resolution_width'       => null,
-            'resolution_height'      => null,
-            'dual_orientation'       => false,
-            'colors'                 => 65536,
-            // sms
-            'sms_enabled'            => false,
-            // chips
-            'nfc_support'            => false,
-        );
-    }
+    protected $properties = array(
+        // device
+        'model_name'             => 'MultyVision ISIO',
+        'model_extra_info'       => null,
+        'marketing_name'         => null,
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'mouse',
+        // product info
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
+        // display
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
+        // sms
+        'sms_enabled'            => false,
+        // chips
+        'nfc_support'            => false,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -162,35 +139,6 @@ class TechniSatMultyVisionIsio extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new LinuxTv($this->useragent);
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Boxee(),
-            new Safari(),
-            new Opera(),
-            new SmartTvWebBrowser(),
-            new SmartTv(),
-            new HbbTv(),
-            new InettvBrowser(),
-            new NetTv(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
+        return new LinuxTv($this->useragent, $this->logger);
     }
 }

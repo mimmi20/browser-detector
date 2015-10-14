@@ -42,8 +42,7 @@ use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -51,7 +50,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lg extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface
+class Lg extends AbstractDevice implements DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -173,31 +172,6 @@ class Lg extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInt
             __DIR__ . DIRECTORY_SEPARATOR . 'Lg' . DIRECTORY_SEPARATOR
         );
         $chain->setDefaultHandler($this);
-
-        return $chain->detect();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \UaMatcher\Os\OsInterface
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new AndroidOs($this->useragent),
-            new Bada(),
-            new Brew(),
-            new Java(),
-            new Symbianos(),
-            new WindowsMobileOs(),
-            new WindowsPhoneOs()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs($this->useragent));
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
 
         return $chain->detect();
     }

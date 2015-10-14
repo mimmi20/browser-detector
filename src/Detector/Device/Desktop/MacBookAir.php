@@ -30,17 +30,10 @@
 
 namespace BrowserDetector\Detector\Device\Desktop;
 
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\Darwin;
-use BrowserDetector\Detector\Os\MacintoshOs;
-use BrowserDetector\Detector\Os\Macosx;
-use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -48,7 +41,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MacBookAir extends AbstractDevice implements DeviceInterface
+class MacBookAir extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -152,46 +145,5 @@ class MacBookAir extends AbstractDevice implements DeviceInterface
         $searches = array('MacBookAir');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \UaMatcher\Os\OsInterface
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new MacintoshOs(),
-            new Macosx(),
-            new Darwin()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs($this->useragent));
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
-        $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

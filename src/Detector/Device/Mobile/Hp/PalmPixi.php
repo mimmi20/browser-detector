@@ -35,9 +35,9 @@ use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 use Wurfl\WurflConstants;
@@ -48,7 +48,7 @@ use Wurfl\WurflConstants;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PalmPixi extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -146,10 +146,7 @@ class PalmPixi extends AbstractDevice implements DeviceInterface, DeviceHasWurfl
      */
     public function detectOs()
     {
-        $handler = new WebOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new WebOs($this->userAgent, $this->logger);
     }
 
     /**

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Factory;
 use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
 use BrowserDetector\Helper\Safari as SafariHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
+use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 
 /**
@@ -50,10 +51,11 @@ class PlatformFactory implements FactoryInterface
      * Gets the information about the rendering engine by User Agent
      *
      * @param string $agent
+     * @param \Psr\Log\LoggerInterface $logger
      *
      * @return \UaMatcher\Os\OsInterface
      */
-    public static function detect($agent)
+    public static function detect($agent, LoggerInterface $logger)
     {
         $utils = new Utils();
         $utils->setUserAgent($agent);
@@ -229,10 +231,6 @@ class PlatformFactory implements FactoryInterface
 
         $platformName = '\\BrowserDetector\\Detector\\Os\\' . $platformKey;
 
-        /** @var \UaMatcher\Os\OsInterface $platform */
-        $platform = new $platformName();
-        $platform->setUserAgent($agent);
-
-        return $platform;
+        return new $platformName($agent, $logger);
     }
 }

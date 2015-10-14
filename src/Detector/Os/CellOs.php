@@ -30,10 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\NetFront;
-use BrowserDetector\Detector\Browser\PlaystationBrowser;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Os\OsInterface;
@@ -44,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CellOs extends AbstractOs implements OsInterface
+class CellOs extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform
@@ -77,25 +73,5 @@ class CellOs extends AbstractOs implements OsInterface
     public function getManufacturer()
     {
         return new Company\Sony();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new PlaystationBrowser(),
-            new NetFront(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

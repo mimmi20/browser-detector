@@ -37,10 +37,6 @@ use BrowserDetector\Detector\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Device\DeviceInterface;
-use UaMatcher\MatcherCanHandleInterface;
-use UaMatcher\MatcherHasCapabilitiesInterface;
-use UaMatcher\MatcherHasWeightInterface;
-use UaMatcher\MatcherInterface;
 use UaMatcher\Result\ResultInterface;
 
 /**
@@ -56,7 +52,7 @@ use UaMatcher\Result\ResultInterface;
  * @property-read string  $fallBack
  * @property-read boolean $actualDeviceRoot
  */
-abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInterface, MatcherHasCapabilitiesInterface, MatcherHasWeightInterface, DeviceInterface, \Serializable
+abstract class AbstractDevice implements DeviceInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
@@ -128,9 +124,11 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
      * @param string                   $userAgent the user agent to be handled
      * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct($userAgent, LoggerInterface $logger)
+    public function __construct($userAgent = null, LoggerInterface $logger = null)
     {
         $this->init($userAgent);
+
+        $this->logger = $logger;
     }
 
     /**
@@ -143,6 +141,35 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
 
         $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
+    }
+
+    /**
+     * sets the actual user agent
+     *
+     * @param string $agent
+     *
+     * @return \UaMatcher\MatcherInterface
+     */
+    public function setUseragent($agent)
+    {
+        $this->useragent = $agent;
+        $this->utils->setUserAgent($agent);
+
+        return $this;
+    }
+
+    /**
+     * sets the logger
+     *
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \UaMatcher\MatcherInterface
+     */
+    public function setLogger(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+
+        return $this;
     }
 
     /**
@@ -287,10 +314,7 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
         if (isset($name)) {
             switch ($name) {
                 case 'userAgent':
-                    return $this->getCapability('useragent');
-                    break;
-                case 'deviceClass':
-                    return $this->getCapability('deviceClass');
+                    return $this->useragent;
                     break;
                 case 'fallBack':
                 case 'actualDeviceRoot':
@@ -347,18 +371,6 @@ abstract class AbstractDevice implements MatcherInterface, MatcherCanHandleInter
     public function getLogger()
     {
         return $this->logger;
-    }
-
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return DeviceInterface
-     */
-    public function setLogger(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
-
-        return $this;
     }
 
     /**

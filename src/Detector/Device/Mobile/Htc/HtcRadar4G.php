@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Device\Mobile\Htc;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcRadar4G extends AbstractDevice implements DeviceInterface
+class HtcRadar4G extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -140,9 +140,6 @@ class HtcRadar4G extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new WindowsPhoneOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new WindowsPhoneOs($this->useragent, $this->logger);
     }
 }

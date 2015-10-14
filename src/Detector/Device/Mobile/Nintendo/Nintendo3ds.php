@@ -30,15 +30,10 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
 
-use BrowserDetector\Detector\Browser\NetFrontNx;
-use BrowserDetector\Detector\Browser\Opera;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +41,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nintendo3ds extends AbstractDevice implements DeviceInterface
+class Nintendo3ds extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -138,26 +133,6 @@ class Nintendo3ds extends AbstractDevice implements DeviceInterface
     }
 
     /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new NetFrontNx(),
-            new Opera()
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Os\UnknownOs
@@ -165,7 +140,6 @@ class Nintendo3ds extends AbstractDevice implements DeviceInterface
     public function detectOs()
     {
         $handler = new UnknownOs($this->useragent);
-        $handler->setUseragent($this->useragent);
 
         return $handler;
     }

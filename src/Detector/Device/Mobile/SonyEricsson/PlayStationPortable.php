@@ -36,8 +36,7 @@ use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -47,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlayStationPortable extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class PlayStationPortable extends AbstractDevice implements DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -139,30 +138,13 @@ class PlayStationPortable extends AbstractDevice implements DeviceInterface, Dev
     }
 
     /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Browser\\NetFront
-     */
-    public function detectBrowser()
-    {
-        $handler = new NetFront();
-        $handler->setUserAgent($this->useragent);
-
-        return $handler;
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        $handler = new Java();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Java($this->useragent, $this->logger);
     }
 
     /**

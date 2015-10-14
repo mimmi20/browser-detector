@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Device\GeneralDesktop;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
+use Psr\Log\LoggerInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 
 /**
@@ -52,24 +53,27 @@ class DeviceFactory
      * Gets the information about the rendering engine by User Agent
      *
      * @param string $agent
+     * @param \Psr\Log\LoggerInterface $logger
      *
      * @return \UaMatcher\Device\DeviceInterface
      */
-    public static function detect($agent)
+    public static function detect($agent, LoggerInterface $logger)
     {
         $handlersToUse = array(
-            new GeneralMobile(),
-            new GeneralTv(),
-            new GeneralDesktop(),
+            new GeneralMobile($agent, $logger),
+            new GeneralTv($agent, $logger),
+            new GeneralDesktop($agent, $logger),
         );
 
         $chain = new Chain();
         $chain->setUserAgent($agent);
         $chain->setNamespace('\BrowserDetector\Detector\Device');
         $chain->setHandlers($handlersToUse);
-        $chain->setDefaultHandler(new UnknownDevice());
+        $chain->setDefaultHandler(new UnknownDevice($agent, $logger));
 
+        /** @var \UaMatcher\Device\DeviceInterface $device */
         $device = $chain->detect();
+        $device->setLogger($logger);
 
         if ($device instanceof DeviceHasChildrenInterface) {
             $device = $device->detectDevice();

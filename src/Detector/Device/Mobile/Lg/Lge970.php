@@ -36,8 +36,7 @@ use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -45,54 +44,42 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lge970 extends AbstractDevice implements DeviceInterface
+class Lge970 extends AbstractDevice
 {
     /**
      * the detected browser properties
      *
      * @var array
      */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Lg\Lge970
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-                // device
-            'model_name'             => 'E970',
-            'model_extra_info'       => null,
-            'marketing_name'         => 'Optimus G',
-            'has_qwerty_keyboard'    => true,
-            'pointing_method'        => 'touchscreen',
-            // product info
-            'ununiqueness_handler'   => null,
-            'uaprof'                 => null,
-            'uaprof2'                => null,
-            'uaprof3'                => null,
-            'unique'                 => true,
-            // display
-            'physical_screen_width'  => null,
-            'physical_screen_height' => null,
-            'columns'                => null,
-            'rows'                   => null,
-            'max_image_width'        => null,
-            'max_image_height'       => null,
-            'resolution_width'       => 768,
-            'resolution_height'      => 1280,
-            'dual_orientation'       => true,
-            'colors'                 => 16777216,
-            // sms
-            'sms_enabled'            => true,
-            // chips
-            'nfc_support'            => true,
-        );
-    }
+    protected $properties = array(
+        // device
+        'model_name'             => 'E970',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Optimus G',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
+        // product info
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
+        // display
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 768,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
+        // sms
+        'sms_enabled'            => true,
+        // chips
+        'nfc_support'            => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -146,25 +133,5 @@ class Lge970 extends AbstractDevice implements DeviceInterface
     public function getBrand()
     {
         return new Company\Lg();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \UaMatcher\Os\OsInterface
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new WindowsPhoneOs(),
-            new AndroidOs($this->useragent),
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs($this->useragent));
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
     }
 }

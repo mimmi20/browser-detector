@@ -30,25 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Dalvik;
-use BrowserDetector\Detector\Browser\Dolfin;
-use BrowserDetector\Detector\Browser\GenericJavaCrawler;
-use BrowserDetector\Detector\Browser\GooglebotMobileBot;
-use BrowserDetector\Detector\Browser\IchiroMobileBot;
-use BrowserDetector\Detector\Browser\Jasmine;
-use BrowserDetector\Detector\Browser\Motorola;
-use BrowserDetector\Detector\Browser\NetFront;
-use BrowserDetector\Detector\Browser\NokiaBrowser;
-use BrowserDetector\Detector\Browser\NokiaProxyBrowser;
-use BrowserDetector\Detector\Browser\Openwave;
-use BrowserDetector\Detector\Browser\OperaMini;
-use BrowserDetector\Detector\Browser\Phantom;
-use BrowserDetector\Detector\Browser\PlaystationBrowser;
-use BrowserDetector\Detector\Browser\Silk;
-use BrowserDetector\Detector\Browser\TelecaObigo;
-use BrowserDetector\Detector\Browser\Ucweb;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Os\OsInterface;
@@ -59,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Java extends AbstractOs implements OsInterface
+class Java extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform
@@ -94,40 +75,5 @@ class Java extends AbstractOs implements OsInterface
     public function getManufacturer()
     {
         return new Company\Oracle();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Openwave(),
-            new TelecaObigo(),
-            new NetFront(),
-            new Phantom(),
-            new NokiaBrowser(),
-            new Dalvik(),
-            new Dolfin(),
-            new OperaMini(),
-            new Ucweb(),
-            new NokiaProxyBrowser(),
-            new Motorola(),
-            new GenericJavaCrawler(),
-            new PlaystationBrowser(),
-            new Silk(),
-            new Jasmine(),
-            new GooglebotMobileBot(),
-            new IchiroMobileBot(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

@@ -30,30 +30,9 @@
 
 namespace BrowserDetector\Detector\Device\Desktop;
 
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\CentOs;
-use BrowserDetector\Detector\Os\CrOs;
-use BrowserDetector\Detector\Os\Debian;
-use BrowserDetector\Detector\Os\Fedora;
-use BrowserDetector\Detector\Os\JoliOs;
-use BrowserDetector\Detector\Os\Kubuntu;
-use BrowserDetector\Detector\Os\Linux;
-use BrowserDetector\Detector\Os\LinuxTv;
-use BrowserDetector\Detector\Os\Mandriva;
-use BrowserDetector\Detector\Os\Mint;
-use BrowserDetector\Detector\Os\Redhat;
-use BrowserDetector\Detector\Os\Slackware;
-use BrowserDetector\Detector\Os\Suse;
-use BrowserDetector\Detector\Os\Ubuntu;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\Ventana;
-use BrowserDetector\Detector\Os\ZenwalkGnu;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -61,7 +40,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class EeePc extends AbstractDevice implements DeviceInterface
+class EeePc extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -149,58 +128,5 @@ class EeePc extends AbstractDevice implements DeviceInterface
     public function getBrand()
     {
         return new Company\Asus();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \UaMatcher\Os\OsInterface
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new Linux($this->useragent),
-            new Debian($this->useragent),
-            new Fedora($this->useragent),
-            new JoliOs($this->useragent),
-            new Kubuntu($this->useragent),
-            new Mint($this->useragent),
-            new Redhat($this->useragent),
-            new Slackware($this->useragent),
-            new Suse($this->useragent),
-            new Ubuntu($this->useragent),
-            new ZenwalkGnu($this->useragent),
-            new CentOs($this->useragent),
-            new LinuxTv($this->useragent),
-            new CrOs($this->useragent),
-            new Ventana($this->useragent),
-            new Mandriva($this->useragent)
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs($this->useragent));
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browserPath = realpath(
-            __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Browser' . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Browser\Desktop');
-        $chain->setDirectory($browserPath);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

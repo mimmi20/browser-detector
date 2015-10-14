@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
-use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +39,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Aix extends AbstractOs implements OsInterface
+class Aix extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform

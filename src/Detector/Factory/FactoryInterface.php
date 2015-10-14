@@ -29,6 +29,7 @@
  */
 
 namespace BrowserDetector\Detector\Factory;
+use Psr\Log\LoggerInterface;
 
 /**
  * Browser detection class
@@ -44,9 +45,10 @@ interface FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $agent
+     * @param string                   $agent
+     * @param \Psr\Log\LoggerInterface $logger
      *
      * @return mixed
      */
-    public static function detect($agent);
+    public static function detect($agent, LoggerInterface $logger);
 }

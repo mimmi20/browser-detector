@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Os;
 use BrowserDetector\Detector\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
-use UaMatcher\MatcherInterface;
 use UaMatcher\Os\OsInterface;
 
 /**
@@ -44,7 +43,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractOs implements MatcherInterface, OsInterface, \Serializable
+abstract class AbstractOs implements OsInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
@@ -57,14 +56,35 @@ abstract class AbstractOs implements MatcherInterface, OsInterface, \Serializabl
     protected $utils = null;
 
     /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    protected $logger = null;
+
+    /**
      * Class Constructor
      *
      * @param string                   $userAgent the user agent to be handled
      * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct($userAgent, LoggerInterface $logger)
+    public function __construct($userAgent = null, LoggerInterface $logger = null)
     {
         $this->init($userAgent);
+
+        $this->logger = $logger;
+    }
+
+    /**
+     * sets the logger
+     *
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \UaMatcher\MatcherInterface
+     */
+    public function setLogger(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+
+        return $this;
     }
 
     /**
@@ -77,17 +97,6 @@ abstract class AbstractOs implements MatcherInterface, OsInterface, \Serializabl
 
         $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
-    }
-
-    /**
-     * returns null, if the device does not have a specific Browser
-     * returns the Browser Handler otherwise
-     *
-     * @return null
-     */
-    public function detectBrowser()
-    {
-        return null;
     }
 
     /**

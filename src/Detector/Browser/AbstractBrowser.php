@@ -36,10 +36,6 @@ use BrowserDetector\Detector\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\MatcherCanHandleInterface;
-use UaMatcher\MatcherHasCapabilitiesInterface;
-use UaMatcher\MatcherHasWeightInterface;
-use UaMatcher\MatcherInterface;
 
 /**
  * base class for all browsers to detect
@@ -49,7 +45,7 @@ use UaMatcher\MatcherInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractBrowser implements MatcherInterface, MatcherCanHandleInterface, MatcherHasCapabilitiesInterface, MatcherHasWeightInterface, BrowserInterface, \Serializable
+abstract class AbstractBrowser implements BrowserInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
@@ -67,6 +63,11 @@ abstract class AbstractBrowser implements MatcherInterface, MatcherCanHandleInte
      * @var \WurflCache\Adapter\AdapterInterface
      */
     protected $cache = null;
+
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    protected $logger = null;
 
     /**
      * the detected browser properties
@@ -96,9 +97,11 @@ abstract class AbstractBrowser implements MatcherInterface, MatcherCanHandleInte
      * @param string                   $userAgent the user agent to be handled
      * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct($userAgent, LoggerInterface $logger)
+    public function __construct($userAgent = null, LoggerInterface $logger = null)
     {
         $this->init($userAgent);
+
+        $this->logger = $logger;
     }
 
     /**
@@ -111,6 +114,35 @@ abstract class AbstractBrowser implements MatcherInterface, MatcherCanHandleInte
 
         $this->useragent = $userAgent;
         $this->utils->setUserAgent($userAgent);
+    }
+
+    /**
+     * sets the actual user agent
+     *
+     * @param string $agent
+     *
+     * @return \UaMatcher\MatcherInterface
+     */
+    public function setUseragent($agent)
+    {
+        $this->useragent = $agent;
+        $this->utils->setUserAgent($agent);
+
+        return $this;
+    }
+
+    /**
+     * sets the logger
+     *
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \UaMatcher\MatcherInterface
+     */
+    public function setLogger(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+
+        return $this;
     }
 
     /**

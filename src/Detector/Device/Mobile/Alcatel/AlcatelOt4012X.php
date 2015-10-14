@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\FirefoxOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AlcatelOt4012X extends AbstractDevice implements DeviceInterface
+class AlcatelOt4012X extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -142,9 +142,6 @@ class AlcatelOt4012X extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new FirefoxOs();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new FirefoxOs($this->userAgent, $this->logger);
     }
 }

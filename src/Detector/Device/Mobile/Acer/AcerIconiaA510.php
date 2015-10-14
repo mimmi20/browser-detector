@@ -35,9 +35,9 @@ use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -47,7 +47,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerIconiaA510 extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class AcerIconiaA510 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -149,10 +149,7 @@ class AcerIconiaA510 extends AbstractDevice implements DeviceInterface, DeviceHa
      */
     public function detectOs()
     {
-        $handler = new AndroidOs($this->useragent);
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new AndroidOs($this->useragent, $this->logger);
     }
 
     /**

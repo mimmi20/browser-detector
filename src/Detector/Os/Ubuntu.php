@@ -30,26 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\AdbeatBot;
-use BrowserDetector\Detector\Browser\Android;
-use BrowserDetector\Detector\Browser\AndroidDownloadManager;
-use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Browser\Chromium;
-use BrowserDetector\Detector\Browser\Dalvik;
-use BrowserDetector\Detector\Browser\Dolfin;
-use BrowserDetector\Detector\Browser\Firefox;
-use BrowserDetector\Detector\Browser\Googlebot;
-use BrowserDetector\Detector\Browser\MqqBrowser;
-use BrowserDetector\Detector\Browser\NetFrontLifeBrowser;
-use BrowserDetector\Detector\Browser\Opera;
-use BrowserDetector\Detector\Browser\OperaMini;
-use BrowserDetector\Detector\Browser\OperaMobile;
-use BrowserDetector\Detector\Browser\Silk;
-use BrowserDetector\Detector\Browser\Ucweb;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Browser\YaBrowser;
-use BrowserDetector\Detector\Browser\YouWaveAndroidOnPc;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Os\OsInterface;
@@ -60,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ubuntu extends AbstractOs implements OsInterface
+class Ubuntu extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform
@@ -95,42 +75,5 @@ class Ubuntu extends AbstractOs implements OsInterface
     public function getManufacturer()
     {
         return new Company\Canonical();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-
-            new Android(),
-            new Chrome(),
-            new Dalvik(),
-            new Silk(),
-            new Dolfin(),
-            new NetFrontLifeBrowser(),
-            new Googlebot(),
-            new Opera(),
-            new OperaMini(),
-            new OperaMobile(),
-            new Firefox(),
-            new YouWaveAndroidOnPc(),
-            new AndroidDownloadManager(),
-            new Ucweb(),
-            new YaBrowser(),
-            new MqqBrowser(),
-            new Chromium(),
-            new AdbeatBot(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

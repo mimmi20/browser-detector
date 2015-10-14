@@ -30,13 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Blackberry;
-use BrowserDetector\Detector\Browser\BlackberryPlaybookTablet;
-use BrowserDetector\Detector\Browser\MqqBrowser;
-use BrowserDetector\Detector\Browser\OperaMini;
-use BrowserDetector\Detector\Browser\Ucweb;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Os\OsInterface;
@@ -47,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class RimTabletOs extends AbstractOs implements OsInterface
+class RimTabletOs extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform
@@ -82,28 +75,5 @@ class RimTabletOs extends AbstractOs implements OsInterface
     public function getManufacturer()
     {
         return new Company\Rim();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Blackberry(),
-            new BlackberryPlaybookTablet(),
-            new OperaMini(),
-            new Ucweb(),
-            new MqqBrowser()
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Device\Mobile\Denver;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,54 +42,42 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DenverTad10023 extends AbstractDevice implements DeviceInterface
+class DenverTad10023 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
      *
      * @var array
      */
-    protected $properties = array();
-
-    /**
-     * Class Constructor
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Denver\DenverTad10023
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->properties = array(
-                // device
-            'model_name'             => 'TAD-10023',
-            'model_extra_info'       => null,
-            'marketing_name'         => 'TAD-10023',
-            'has_qwerty_keyboard'    => true,
-            'pointing_method'        => 'touchscreen',
-            // product info
-            'ununiqueness_handler'   => null,
-            'uaprof'                 => null,
-            'uaprof2'                => null,
-            'uaprof3'                => null,
-            'unique'                 => true,
-            // display
-            'physical_screen_width'  => null,
-            'physical_screen_height' => null,
-            'columns'                => null,
-            'rows'                   => null,
-            'max_image_width'        => null,
-            'max_image_height'       => null,
-            'resolution_width'       => 1024,
-            'resolution_height'      => 600,
-            'dual_orientation'       => true,
-            'colors'                 => 65536,
-            // sms
-            'sms_enabled'            => true,
-            // chips
-            'nfc_support'            => true,
-        );
-    }
+    protected $properties = array(
+        // device
+        'model_name'             => 'TAD-10023',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'TAD-10023',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
+        // product info
+        'ununiqueness_handler'   => null,
+        'uaprof'                 => null,
+        'uaprof2'                => null,
+        'uaprof3'                => null,
+        'unique'                 => true,
+        // display
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
+        // sms
+        'sms_enabled'            => true,
+        // chips
+        'nfc_support'            => true,
+    );
 
     /**
      * checks if this device is able to handle the useragent
@@ -152,9 +140,6 @@ class DenverTad10023 extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new AndroidOs($this->useragent);
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

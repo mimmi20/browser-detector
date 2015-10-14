@@ -30,12 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\Opera;
-use BrowserDetector\Detector\Browser\OperaMobile;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Browser\BrowserInterface;
@@ -43,7 +37,6 @@ use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsChangesBrowserInterface;
 use UaMatcher\Os\OsChangesEngineInterface;
-use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -51,7 +44,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsPhoneOs extends AbstractOs implements OsInterface, OsChangesEngineInterface, OsChangesBrowserInterface
+class WindowsPhoneOs extends AbstractOs implements OsChangesEngineInterface, OsChangesBrowserInterface
 {
     /**
      * returns the name of the operating system/platform
@@ -98,28 +91,6 @@ class WindowsPhoneOs extends AbstractOs implements OsInterface, OsChangesEngineI
     public function getManufacturer()
     {
         return new Company\Microsoft();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new MicrosoftInternetExplorer(),
-            new MicrosoftMobileExplorer(),
-            new OperaMobile(),
-            new Opera()
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 
     /**

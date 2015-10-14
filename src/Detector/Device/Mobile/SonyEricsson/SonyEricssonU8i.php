@@ -35,8 +35,7 @@ use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -46,7 +45,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonU8i extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class SonyEricssonU8i extends AbstractDevice implements DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -145,10 +144,7 @@ class SonyEricssonU8i extends AbstractDevice implements DeviceInterface, DeviceH
      */
     public function detectOs()
     {
-        $handler = new Symbianos();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Symbianos($this->useragent, $this->logger);
     }
 
     /**

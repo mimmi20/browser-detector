@@ -36,9 +36,9 @@ use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -48,7 +48,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Microsoft extends AbstractDevice implements DeviceInterface, DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
+class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -172,10 +172,7 @@ class Microsoft extends AbstractDevice implements DeviceInterface, DeviceHasChil
      */
     public function detectOs()
     {
-        $handler = new Windows();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Windows($this->userAgent, $this->logger);
     }
 
     /**

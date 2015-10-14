@@ -30,30 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Android;
-use BrowserDetector\Detector\Browser\AndroidDownloadManager;
-use BrowserDetector\Detector\Browser\AndroidWebView;
-use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Browser\Dalvik;
-use BrowserDetector\Detector\Browser\Dolfin;
-use BrowserDetector\Detector\Browser\Firefox;
-use BrowserDetector\Detector\Browser\FlyFlow;
-use BrowserDetector\Detector\Browser\Googlebot;
-use BrowserDetector\Detector\Browser\GooglebotMobileBot;
-use BrowserDetector\Detector\Browser\GooglePageSpeed;
-use BrowserDetector\Detector\Browser\GooglePageSpeedInsights;
-use BrowserDetector\Detector\Browser\Maxthon;
-use BrowserDetector\Detector\Browser\MqqBrowser;
-use BrowserDetector\Detector\Browser\NetFrontLifeBrowser;
-use BrowserDetector\Detector\Browser\Opera;
-use BrowserDetector\Detector\Browser\OperaMini;
-use BrowserDetector\Detector\Browser\OperaMobile;
-use BrowserDetector\Detector\Browser\Silk;
-use BrowserDetector\Detector\Browser\Ucweb;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Browser\YaBrowser;
-use BrowserDetector\Detector\Browser\YouWaveAndroidOnPc;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Browser\BrowserInterface;
@@ -61,7 +37,6 @@ use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsChangesBrowserInterface;
 use UaMatcher\Os\OsChangesEngineInterface;
-use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -69,7 +44,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AndroidOs extends AbstractOs implements OsInterface, OsChangesEngineInterface, OsChangesBrowserInterface
+class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChangesBrowserInterface
 {
     /**
      * returns the name of the operating system/platform
@@ -127,46 +102,6 @@ class AndroidOs extends AbstractOs implements OsInterface, OsChangesEngineInterf
     public function getManufacturer()
     {
         return new Company\Google();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Android(),
-            new Chrome(),
-            new Dalvik(),
-            new Silk(),
-            new Dolfin(),
-            new NetFrontLifeBrowser(),
-            new Googlebot(),
-            new Opera(),
-            new OperaMini(),
-            new OperaMobile(),
-            new Firefox(),
-            new YouWaveAndroidOnPc(),
-            new AndroidDownloadManager(),
-            new Ucweb(),
-            new YaBrowser(),
-            new MqqBrowser(),
-            new FlyFlow(),
-            new Maxthon(),
-            new GooglebotMobileBot(),
-            new GooglePageSpeed(),
-            new GooglePageSpeedInsights(),
-            new AndroidWebView(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 
     /**

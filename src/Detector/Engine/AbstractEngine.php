@@ -35,8 +35,6 @@ use BrowserDetector\Detector\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Engine\EngineInterface;
-use UaMatcher\MatcherHasCapabilitiesInterface;
-use UaMatcher\MatcherInterface;
 
 /**
  * base class for all rendering engines to detect
@@ -46,7 +44,7 @@ use UaMatcher\MatcherInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractEngine implements MatcherInterface, MatcherHasCapabilitiesInterface, EngineInterface, \Serializable
+abstract class AbstractEngine implements EngineInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
@@ -57,6 +55,11 @@ abstract class AbstractEngine implements MatcherInterface, MatcherHasCapabilitie
      * @var \UaHelper\Utils
      */
     protected $utils = null;
+
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    protected $logger = null;
 
     /**
      * the detected browser properties
@@ -542,9 +545,11 @@ abstract class AbstractEngine implements MatcherInterface, MatcherHasCapabilitie
      * @param string                   $userAgent the user agent to be handled
      * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct($userAgent, LoggerInterface $logger)
+    public function __construct($userAgent = null, LoggerInterface $logger = null)
     {
         $this->init($userAgent);
+
+        $this->logger = $logger;
     }
 
     /**

@@ -30,21 +30,10 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
-use BrowserDetector\Detector\Browser\Boxee;
-use BrowserDetector\Detector\Browser\HbbTv;
-use BrowserDetector\Detector\Browser\InettvBrowser;
-use BrowserDetector\Detector\Browser\NetTv;
-use BrowserDetector\Detector\Browser\Opera;
-use BrowserDetector\Detector\Browser\Safari;
-use BrowserDetector\Detector\Browser\SmartTv;
-use BrowserDetector\Detector\Browser\SmartTvWebBrowser;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\LinuxTv;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -52,7 +41,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LoeweSl150 extends AbstractDevice implements DeviceInterface
+class LoeweSl150 extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -150,35 +139,6 @@ class LoeweSl150 extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new LinuxTv($this->useragent);
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Boxee(),
-            new Safari(),
-            new Opera(),
-            new SmartTvWebBrowser(),
-            new SmartTv(),
-            new HbbTv(),
-            new InettvBrowser(),
-            new NetTv(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
+        return new LinuxTv($this->useragent, $this->logger);
     }
 }

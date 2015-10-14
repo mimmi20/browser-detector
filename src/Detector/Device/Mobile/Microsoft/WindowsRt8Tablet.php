@@ -30,20 +30,14 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Microsoft;
 
-use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
-use BrowserDetector\Detector\Browser\MicrosoftOffice;
-use BrowserDetector\Detector\Browser\MicrosoftOutlook;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\WindowsRt;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -53,7 +47,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsRt8Tablet extends AbstractDevice implements DeviceInterface, DeviceHasWurflKeyInterface
+class WindowsRt8Tablet extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -159,32 +153,7 @@ class WindowsRt8Tablet extends AbstractDevice implements DeviceInterface, Device
      */
     public function detectOs()
     {
-        $handler = new WindowsRt();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new MicrosoftInternetExplorer(),
-            new MicrosoftMobileExplorer(),
-            new MicrosoftOutlook(),
-            new MicrosoftOffice(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
+        return new WindowsRt($this->useragent);
     }
 
     /**

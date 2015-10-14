@@ -33,8 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Sharp;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +41,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SH8128U extends AbstractDevice implements DeviceInterface
+class SH8128U extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -140,9 +139,6 @@ class SH8128U extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new AndroidOs($this->useragent);
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

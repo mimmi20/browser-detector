@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Helper\Classname;
+use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
 
 /**
@@ -49,23 +50,27 @@ class BrowserFactory
      * Gets the information about the rendering engine by User Agent
      *
      * @param string                               $agent
+     * @param \Psr\Log\LoggerInterface             $logger
      * @param \WurflCache\Adapter\AdapterInterface $cache
      *
      * @return \UaMatcher\Browser\BrowserInterface
      */
-    public static function detect($agent, AdapterInterface $cache = null)
+    public static function detect($agent, LoggerInterface $logger, AdapterInterface $cache = null)
     {
-        foreach (self::getChain($cache) as $browser) {
+        foreach (self::getChain($cache, $logger) as $browser) {
             /** @var \UaMatcher\Browser\BrowserInterface $browser */
             $browser->setUserAgent($agent);
 
             if ($browser->canHandle()) {
+                $browser->setLogger($logger);
+
                 return $browser;
             }
         }
 
         $browser = new UnknownBrowser();
         $browser->setUserAgent($agent);
+        $browser->setLogger($logger);
 
         return $browser;
     }
@@ -73,21 +78,23 @@ class BrowserFactory
     /**
      * @param \WurflCache\Adapter\AdapterInterface $cache
      *
-     * @return \Generator
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \UaMatcher\Browser\BrowserInterface[]
      */
-    private static function getChain(AdapterInterface $cache = null)
+    private static function getChain(AdapterInterface $cache = null, LoggerInterface $logger = null)
     {
         static $list = null;
 
         if (null === $list) {
             if (null === $cache) {
-                $list = self::buildBrowserChain();
+                $list = self::buildBrowserChain($logger);
             } else {
                 $success = null;
                 $list    = $cache->getItem('BrowserChain', $success);
 
                 if (!$success) {
-                    $list = self::buildBrowserChain();
+                    $list = self::buildBrowserChain($logger);
 
                     $cache->setItem('BrowserChain', $list);
                 }
@@ -102,9 +109,11 @@ class BrowserFactory
     /**
      * creates the detection chain for browsers
      *
-     * @return array
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \UaMatcher\Browser\BrowserInterface[]
      */
-    private static function buildBrowserChain()
+    private static function buildBrowserChain(LoggerInterface $logger = null)
     {
         $sourceDirectory = __DIR__ . '/../Browser/';
 
@@ -131,6 +140,8 @@ class BrowserFactory
                 /** @var \UaMatcher\Browser\BrowserInterface $handler */
                 $handler = new $className();
             } catch (\Exception $e) {
+                $logger->error(new \Exception('an error occured while creating the browser class', 0, $e));
+
                 continue;
             }
 

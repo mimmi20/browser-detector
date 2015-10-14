@@ -30,28 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\AppleMail;
-use BrowserDetector\Detector\Browser\AtomicBrowser;
-use BrowserDetector\Detector\Browser\Bingbot;
-use BrowserDetector\Detector\Browser\CfNetwork;
-use BrowserDetector\Detector\Browser\DarwinBrowser;
-use BrowserDetector\Detector\Browser\Icab;
-use BrowserDetector\Detector\Browser\Incredimail;
-use BrowserDetector\Detector\Browser\Maven;
-use BrowserDetector\Detector\Browser\Mercury;
-use BrowserDetector\Detector\Browser\Omniweb;
-use BrowserDetector\Detector\Browser\OnePassword;
-use BrowserDetector\Detector\Browser\OperaCoast;
-use BrowserDetector\Detector\Browser\PerfectBrowser;
-use BrowserDetector\Detector\Browser\Puffin;
-use BrowserDetector\Detector\Browser\QuickLook;
-use BrowserDetector\Detector\Browser\Safari;
-use BrowserDetector\Detector\Browser\Sleipnir;
-use BrowserDetector\Detector\Browser\SmartSync;
-use BrowserDetector\Detector\Browser\Spector;
-use BrowserDetector\Detector\Browser\Terra;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Os\OsInterface;
@@ -62,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Darwin extends AbstractOs implements OsInterface
+class Darwin extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform
@@ -97,43 +75,5 @@ class Darwin extends AbstractOs implements OsInterface
     public function getManufacturer()
     {
         return new Company\Apple();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Safari(),
-            new OnePassword(),
-            new Sleipnir(),
-            new DarwinBrowser(),
-            new Terra(),
-            new Puffin(),
-            new Omniweb(),
-            new AtomicBrowser(),
-            new Mercury(),
-            new Bingbot(),
-            new Maven(),
-            new PerfectBrowser(),
-            new Spector(),
-            new SmartSync(),
-            new Incredimail(),
-            new AppleMail(),
-            new OperaCoast(),
-            new QuickLook(),
-            new Icab(),
-            new CfNetwork(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

@@ -33,8 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +41,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonU20a extends AbstractDevice implements DeviceInterface
+class SonyEricssonU20a extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -140,9 +139,6 @@ class SonyEricssonU20a extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new Symbianos();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Symbianos($this->useragent, $this->logger);
     }
 }

@@ -30,12 +30,6 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Browser\Android;
-use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Browser\OperaMobile;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Browser\WeTabBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Version;
 use UaMatcher\Os\OsInterface;
@@ -46,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MeeGo extends AbstractOs implements OsInterface
+class MeeGo extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform
@@ -81,27 +75,5 @@ class MeeGo extends AbstractOs implements OsInterface
     public function getManufacturer()
     {
         return new Company\LinuxFoundation();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Android(),
-            new Chrome(),
-            new OperaMobile(),
-            new WeTabBrowser(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

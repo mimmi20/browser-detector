@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceInterface
+class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -155,9 +155,6 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceInterface
      */
     public function detectOs()
     {
-        $handler = new AndroidOs($this->useragent);
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

@@ -30,24 +30,9 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
-use BrowserDetector\Detector\Browser\Boxee;
-use BrowserDetector\Detector\Browser\HbbTv;
-use BrowserDetector\Detector\Browser\InettvBrowser;
-use BrowserDetector\Detector\Browser\NetTv;
-use BrowserDetector\Detector\Browser\Opera;
-use BrowserDetector\Detector\Browser\Safari;
-use BrowserDetector\Detector\Browser\SmartTv;
-use BrowserDetector\Detector\Browser\SmartTvWebBrowser;
-use BrowserDetector\Detector\Browser\SmartViera;
-use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\FreeBsd;
-use BrowserDetector\Detector\Os\LinuxTv;
-use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -55,7 +40,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PanasonicViera extends AbstractDevice implements DeviceInterface
+class PanasonicViera extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -144,52 +129,5 @@ class PanasonicViera extends AbstractDevice implements DeviceInterface
     public function getBrand()
     {
         return new Company\Panasonic();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \UaMatcher\Os\OsInterface
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new LinuxTv($this->useragent),
-            new FreeBsd()
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs($this->useragent));
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
-    }
-
-    /**
-     * returns the Browser which used on the device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function detectBrowser()
-    {
-        $browsers = array(
-            new Boxee(),
-            new Safari(),
-            new Opera(),
-            new SmartTvWebBrowser(),
-            new SmartTv(),
-            new HbbTv(),
-            new SmartViera(),
-            new InettvBrowser(),
-            new NetTv(),
-        );
-
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setHandlers($browsers);
-        $chain->setDefaultHandler(new UnknownBrowser());
-
-        return $chain->detect();
     }
 }

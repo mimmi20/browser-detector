@@ -40,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Os2 extends AbstractOs implements OsInterface
+class Os2 extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform

@@ -40,7 +40,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaOs extends AbstractOs implements OsInterface
+class NokiaOs extends AbstractOs
 {
     /**
      * returns the name of the operating system/platform

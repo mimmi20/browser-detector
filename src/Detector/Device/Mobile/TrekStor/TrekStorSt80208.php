@@ -32,8 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Device\DeviceInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /*
  * @category  BrowserDetector
@@ -41,7 +40,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TrekStorSt80208 extends AbstractDevice implements DeviceInterface
+class TrekStorSt80208 extends AbstractDevice
 {
     /**
      * the detected browser properties

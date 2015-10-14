@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Factory;
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Version;
+use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Os\OsInterface;
 
@@ -50,12 +51,13 @@ class EngineFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string                             $agent
+     * @param string                    $agent
+     * @param \Psr\Log\LoggerInterface  $logger
      * @param \UaMatcher\Os\OsInterface $os
      *
      * @return \UaMatcher\Engine\EngineInterface
      */
-    public static function detect($agent, OsInterface $os = null)
+    public static function detect($agent, LoggerInterface $logger, OsInterface $os = null)
     {
         $utils = new Utils();
         $utils->setUserAgent($agent);
@@ -76,8 +78,7 @@ class EngineFactory implements FactoryInterface
         ) {
             $engineKey = 'Trident';
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $agent)) {
-            $chrome = new Chrome();
-            $chrome->setUserAgent($agent);
+            $chrome = new Chrome($agent, $logger);
 
             $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
 
@@ -110,10 +111,6 @@ class EngineFactory implements FactoryInterface
 
         $engineName = '\\BrowserDetector\\Detector\\Engine\\' . $engineKey;
 
-        /** @var \UaMatcher\Engine\EngineInterface $engine */
-        $engine = new $engineName();
-
-        $engine->setUserAgent($agent);
-        return $engine;
+        return new $engineName($agent, $logger);
     }
 }
