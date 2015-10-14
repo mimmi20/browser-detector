@@ -87,52 +87,17 @@ class BrowserDetector
      * sets the cache used to make the detection faster
      *
      * @param \WurflCache\Adapter\AdapterInterface $cache
-     *
-     * @return \BrowserDetector\BrowserDetector
+     * @param \Psr\Log\LoggerInterface             $logger
      */
-    public function setCache(AdapterInterface $cache)
+    public function __construct(AdapterInterface $cache, LoggerInterface $logger = null)
     {
         $this->cache = $cache;
 
-        return $this;
-    }
-
-    /**
-     * returns the actual Cache Adapter
-     *
-     * @return \WurflCache\Adapter\AdapterInterface
-     */
-    public function getCache()
-    {
-        return $this->cache;
-    }
-
-    /**
-     * sets the logger
-     *
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\BrowserDetector
-     */
-    public function setLogger(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
-
-        return $this;
-    }
-
-    /**
-     * returns the logger
-     *
-     * @return \Psr\Log\LoggerInterface
-     */
-    public function getLogger()
-    {
-        if (null === $this->logger) {
-            $this->logger = new NullLogger();
+        if (null === $logger) {
+            $logger = new NullLogger();
         }
 
-        return $this->logger;
+        $this->logger = $logger;
     }
 
     /**
@@ -169,16 +134,13 @@ class BrowserDetector
         $result  = null;
         $success = false;
 
-        if (!$forceDetect && null !== $this->getCache()) {
-            $result = $this->getCache()->getItem($cacheId, $success);
+        if (!$forceDetect) {
+            $result = $this->cache->getItem($cacheId, $success);
         }
 
-        if ($forceDetect || null === $this->getCache() || !$success || !($result instanceof Detector\Result\Result)) {
+        if ($forceDetect || !$success || !($result instanceof Detector\Result\Result)) {
             $device = DeviceFactory::detect($request->getDeviceUserAgent());
-
-            if (null !== $this->getLogger()) {
-                $device->setLogger($this->getLogger());
-            }
+            $device->setLogger($this->logger);
 
             if ($device instanceof DeviceHasVersionInterface) {
                 $device->detectDeviceVersion();
@@ -192,7 +154,7 @@ class BrowserDetector
             $platform = PlatformFactory::detect($request->getBrowserUserAgent());
 
             // detect the browser which is used
-            $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $this->getCache());
+            $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $this->cache);
 
             if ($browser instanceof BrowserHasRuntimeModificationsInterface) {
                 $browser->detectSpecialProperties();
@@ -227,14 +189,12 @@ class BrowserDetector
                 $platform,
                 $browser,
                 $engine,
-                $this->getLogger()
+                $this->logger
             );
 
-            if (!$forceDetect && null !== $this->getCache()) {
-                $this->getCache()->setItem($cacheId, $result);
-            }
+            $this->cache->setItem($cacheId, $result);
         } else {
-            $result->setLogger($this->getLogger());
+            $result->setLogger($this->logger);
         }
 
         return $result;
