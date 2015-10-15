@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Type\Browser\TypeInterface as BrowserTypeInterface;
 use BrowserDetector\Detector\Type\Browser\Unknown as TypeUnknownBrowser;
 use BrowserDetector\Detector\Type\Device\TypeInterface as DeviceTypeInterface;
 use BrowserDetector\Detector\Type\Device\Unknown as TypeUnknownDevice;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceInterface;

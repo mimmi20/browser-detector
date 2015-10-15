@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -113,7 +113,7 @@ class DeepnetExplorer extends AbstractBrowser implements BrowserHasSpecificEngin
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -142,9 +142,6 @@ class DeepnetExplorer extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getEngine()
     {
-        $handler = new Trident();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Trident($this->useragent, $this->logger);
     }
 }

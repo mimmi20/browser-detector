@@ -135,9 +135,6 @@ class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getEngine()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

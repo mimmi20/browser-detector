@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Os\OsInterface;
@@ -102,7 +102,7 @@ abstract class AbstractOs implements OsInterface, \Serializable
     /**
      * returns the version of the operating system/platform
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

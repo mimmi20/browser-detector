@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 
 /**
  * BenQUserAgentHandler
@@ -114,7 +114,7 @@ class MovableType extends AbstractBrowser
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

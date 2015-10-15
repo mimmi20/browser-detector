@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
@@ -59,7 +59,7 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
     /**
      * returns the version of the operating system/platform
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

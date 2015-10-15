@@ -28,7 +28,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineDependsOnDeviceInterface;
 use UaMatcher\Engine\EngineInterface;
@@ -216,7 +216,7 @@ class Edge extends AbstractEngine implements EngineInterface, EngineDependsOnDev
     /**
      * detects the engine version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

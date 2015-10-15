@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Os\OsInterface;
 
 /**
@@ -115,7 +115,7 @@ class OperaMini extends AbstractBrowser
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -198,14 +198,12 @@ class OperaMini extends AbstractBrowser
     public function detectEngine(OsInterface $os = null)
     {
         if (null !== $os && in_array($os->getName(), array('iOS'))) {
-            $engine = new Webkit();
+            $engine = new Webkit($this->useragent, $this->logger);
         } elseif ($this->utils->checkIfContains('WebKit')) {
-            $engine = new Blink();
+            $engine = new Blink($this->useragent, $this->logger);
         } else {
-            $engine = new Presto();
+            $engine = new Presto($this->useragent, $this->logger);
         }
-
-        $engine->setUseragent($this->useragent);
 
         return $engine;
     }

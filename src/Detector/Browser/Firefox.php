@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use BrowserDetector\Helper\SpamCrawlerFake;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
@@ -185,7 +185,7 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -223,10 +223,7 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
      */
     public function getEngine()
     {
-        $handler = new Gecko();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Gecko($this->useragent, $this->logger);
     }
 
     /**

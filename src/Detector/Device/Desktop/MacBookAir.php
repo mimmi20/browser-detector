@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device\Desktop;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -135,7 +135,7 @@ class MacBookAir extends AbstractDevice
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

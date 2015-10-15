@@ -34,7 +34,7 @@ use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Device\DeviceInterface;
@@ -170,9 +170,6 @@ class GoogleAdSenseBot extends AbstractBrowser implements BrowserCalculatesAlter
      */
     public function getEngine()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -138,7 +138,7 @@ class Postbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -168,9 +168,6 @@ class Postbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getEngine()
     {
-        $handler = new Gecko();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Gecko($this->useragent, $this->logger);
     }
 }

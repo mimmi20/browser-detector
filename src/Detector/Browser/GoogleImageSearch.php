@@ -34,7 +34,7 @@ use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Device\DeviceInterface;
@@ -116,7 +116,7 @@ class GoogleImageSearch extends AbstractBrowser implements BrowserCalculatesAlte
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -172,9 +172,6 @@ class GoogleImageSearch extends AbstractBrowser implements BrowserCalculatesAlte
      */
     public function getEngine()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

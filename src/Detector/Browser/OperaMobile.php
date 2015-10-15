@@ -34,7 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -125,7 +125,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -159,12 +159,10 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
         if ($version >= 14) {
-            $engine = new Blink();
+            $engine = new Blink($this->useragent, $this->logger);
         } else {
-            $engine = new Presto();
+            $engine = new Presto($this->useragent, $this->logger);
         }
-
-        $engine->setUseragent($this->useragent);
 
         return $engine;
     }

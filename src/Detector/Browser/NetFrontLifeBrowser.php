@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\NetFront as NetFrontEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -122,7 +122,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -152,9 +152,6 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getEngine()
     {
-        $handler = new NetFrontEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new NetFrontEngine($this->useragent, $this->logger);
     }
 }

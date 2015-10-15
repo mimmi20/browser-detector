@@ -126,9 +126,6 @@ class BacklinkCrawler extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getEngine()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

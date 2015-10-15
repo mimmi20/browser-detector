@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\RimOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;

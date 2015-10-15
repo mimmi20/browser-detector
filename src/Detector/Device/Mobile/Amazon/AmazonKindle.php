@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\Maemo;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
@@ -144,7 +144,7 @@ class AmazonKindle extends AbstractDevice
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

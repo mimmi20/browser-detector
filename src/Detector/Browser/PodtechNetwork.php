@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -118,7 +118,7 @@ class PodtechNetwork extends AbstractBrowser implements BrowserHasSpecificEngine
     /**
      * Returns true if this handler can handle the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -147,9 +147,6 @@ class PodtechNetwork extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getEngine()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

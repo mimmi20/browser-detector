@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -224,7 +224,7 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -254,9 +254,6 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getEngine()
     {
-        $handler = new Gecko();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Gecko($this->useragent, $this->logger);
     }
 }

@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,7 +54,7 @@ class WindowsMobileOs extends AbstractOs
     /**
      * returns the version of the operating system/platform
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

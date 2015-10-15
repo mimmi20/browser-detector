@@ -116,9 +116,6 @@ class XmlRpcForPhp extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getEngine()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

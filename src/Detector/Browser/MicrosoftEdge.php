@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Edge;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -113,7 +113,7 @@ class MicrosoftEdge extends AbstractBrowser implements BrowserHasSpecificEngineI
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -143,9 +143,6 @@ class MicrosoftEdge extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getEngine()
     {
-        $handler = new Edge();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Edge($this->useragent, $this->logger);
     }
 }

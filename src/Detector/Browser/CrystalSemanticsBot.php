@@ -126,9 +126,6 @@ class CrystalSemanticsBot extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getEngine()
     {
-        $handler = new UnknownEngine();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

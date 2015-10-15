@@ -34,7 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -125,7 +125,7 @@ class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface,
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -148,12 +148,10 @@ class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface,
         $version = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
 
         if ($version >= 3.21) {
-            $engine = new Blink();
+            $engine = new Blink($this->useragent, $this->logger);
         } else {
-            $engine = new Webkit();
+            $engine = new Webkit($this->useragent, $this->logger);
         }
-
-        $engine->setUseragent($this->useragent);
 
         return $engine;
     }

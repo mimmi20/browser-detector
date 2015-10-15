@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserDependsOnEngineInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
@@ -200,7 +200,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -265,10 +265,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
      */
     public function getEngine()
     {
-        $handler = new Trident();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Trident($this->useragent, $this->logger);
     }
 
     /**

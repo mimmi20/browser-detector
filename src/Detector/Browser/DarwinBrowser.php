@@ -131,9 +131,6 @@ class DarwinBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getEngine()
     {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Webkit($this->useragent, $this->logger);
     }
 }

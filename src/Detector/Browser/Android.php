@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -164,7 +164,7 @@ class Android extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -256,9 +256,6 @@ class Android extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getEngine()
     {
-        $handler = new Webkit();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Webkit($this->useragent, $this->logger);
     }
 }

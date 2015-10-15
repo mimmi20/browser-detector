@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WebOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -170,7 +170,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

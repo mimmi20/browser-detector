@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result\Result;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Device\DeviceInterface;
@@ -81,7 +81,7 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
     /**
      * device version
      *
-     * @var \BrowserDetector\Detector\Version
+     * @var \UaResult\Version
      */
     protected $version = null;
 
@@ -185,7 +185,7 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
     /**
      * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {

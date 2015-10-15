@@ -34,7 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -127,7 +127,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
@@ -147,18 +147,15 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getEngine()
     {
-        $chrome = new Chrome();
-        $chrome->setUserAgent($this->useragent);
+        $chrome = new Chrome($this->useragent, $this->logger);
 
         $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
 
         if ($chromeVersion >= 28) {
-            $engine = new Blink();
+            $engine = new Blink($this->useragent, $this->logger);
         } else {
-            $engine = new Webkit();
+            $engine = new Webkit($this->useragent, $this->logger);
         }
-
-        $engine->setUseragent($this->useragent);
 
         return $engine;
     }

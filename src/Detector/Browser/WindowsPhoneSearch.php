@@ -117,9 +117,6 @@ class WindowsPhoneSearch extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getEngine()
     {
-        $handler = new Trident();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Trident($this->useragent, $this->logger);
     }
 }

@@ -2,7 +2,7 @@
 namespace BrowserDetectorTest\Detector\Factory;
 
 use BrowserDetector\Detector\Factory\EngineFactory;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\GeneralMobile
@@ -27,7 +27,7 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
         self::assertInstanceOf('\UaMatcher\Engine\EngineInterface', $result);
         self::assertSame($engine, $result->getName());
 
-        self::assertInstanceOf('\BrowserDetector\Detector\Version', $result->detectVersion());
+        self::assertInstanceOf('\UaResult\Version', $result->detectVersion());
         self::assertSame($version, $result->detectVersion()->getVersion(Version::MAJORMINOR));
 
         self::assertInstanceOf('\BrowserDetector\Detector\Company\CompanyInterface', $result->getManufacturer());

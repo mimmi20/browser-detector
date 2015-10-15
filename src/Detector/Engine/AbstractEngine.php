@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company\Unknown;
-use BrowserDetector\Detector\Version;
+use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Engine\EngineInterface;
@@ -567,7 +567,7 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
     /**
      * detects the engine version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \UaResult\Version
      */
     public function detectVersion()
     {
