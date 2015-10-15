@@ -63,14 +63,14 @@ class BrowserFactory
 
             if ($browser->canHandle()) {
                 $browser->setLogger($logger);
+                $browser->setCache($cache);
 
                 return $browser;
             }
         }
 
-        $browser = new UnknownBrowser();
-        $browser->setUserAgent($agent);
-        $browser->setLogger($logger);
+        $browser = new UnknownBrowser($agent, $logger);
+        $browser->setCache($cache);
 
         return $browser;
     }

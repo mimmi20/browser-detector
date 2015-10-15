@@ -36,6 +36,7 @@ use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserInterface;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * base class for all browsers to detect
@@ -141,6 +142,17 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable
     public function setLogger(LoggerInterface $logger)
     {
         $this->logger = $logger;
+
+        return $this;
+    }
+
+    /**
+     * @param \WurflCache\Adapter\AdapterInterface $cache
+     * @return \UaMatcher\Browser\BrowserInterface
+     */
+    public function setCache(AdapterInterface $cache)
+    {
+        $this->cache = $cache;
 
         return $this;
     }
