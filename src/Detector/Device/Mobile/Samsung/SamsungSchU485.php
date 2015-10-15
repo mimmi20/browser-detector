@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Brew;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,7 +42,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSchU485 extends AbstractDevice
+class SamsungSchU485 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -139,9 +140,6 @@ class SamsungSchU485 extends AbstractDevice
      */
     public function detectOs()
     {
-        $handler = new Brew();
-        $handler->setUseragent($this->useragent);
-
-        return $handler;
+        return new Brew($this->useragent, $this->logger);
     }
 }

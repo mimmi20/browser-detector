@@ -30,11 +30,7 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Bada;
-use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -133,25 +129,5 @@ class SamsungGts5780 extends AbstractDevice
     public function getBrand()
     {
         return new Company\Samsung();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \UaMatcher\Os\OsInterface
-     */
-    public function detectOs()
-    {
-        $os = array(
-            new Bada(),
-            new AndroidOs($this->useragent)
-        );
-
-        $chain = new Chain();
-        $chain->setDefaultHandler(new UnknownOs($this->useragent));
-        $chain->setUseragent($this->useragent);
-        $chain->setHandlers($os);
-
-        return $chain->detect();
     }
 }

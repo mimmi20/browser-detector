@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,7 +42,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGti8350OmniaW extends AbstractDevice
+class SamsungGti8350OmniaW extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -85,7 +86,7 @@ class SamsungGti8350OmniaW extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SAMSUNG; GT-I8350', 'GT-I8350', 'SAMSUNG-GT-I8350')) {
+        if (!$this->utils->checkIfContains(array('SAMSUNG; GT-I8350', 'GT-I8350', 'SAMSUNG-GT-I8350'))) {
             return false;
         }
 
