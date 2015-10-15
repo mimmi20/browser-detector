@@ -159,8 +159,7 @@ class GooglePageSpeedInsights extends AbstractBrowser implements BrowserCalculat
     {
         $agent = str_ireplace('Google Page Speed Insights', '', $this->useragent);
 
-        $detector = new BrowserDetector();
-        $detector->setLogger($device->getLogger());
+        $detector = new BrowserDetector($this->cache, $this->logger);
 
         $device->setRenderAs($detector->getBrowser($agent));
 

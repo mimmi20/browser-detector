@@ -159,8 +159,7 @@ class GoogleWebPreview extends AbstractBrowser implements BrowserCalculatesAlter
     {
         $agent = str_ireplace('Google Web Preview', '', $this->useragent);
 
-        $detector = new BrowserDetector();
-        $detector->setLogger($device->getLogger());
+        $detector = new BrowserDetector($this->cache, $this->logger);
 
         $device->setRenderAs($detector->getBrowser($agent));
 

@@ -156,8 +156,7 @@ class GoogleImageSearch extends AbstractBrowser implements BrowserCalculatesAlte
                 $this->useragent
             );
 
-            $detector = new BrowserDetector();
-            $detector->setLogger($device->getLogger());
+            $detector = new BrowserDetector($this->cache, $this->logger);
 
             $device->setRenderAs($detector->getBrowser($agent));
         }

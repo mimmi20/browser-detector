@@ -144,8 +144,7 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
         if ($this->utils->checkIfContains('spider-pig', true)) {
             $agent = str_ireplace(array('spider-pig'), '', $this->useragent);
 
-            $detector = new BrowserDetector();
-            $detector->setLogger($device->getLogger());
+            $detector = new BrowserDetector($this->cache, $this->logger);
 
             $device->setRenderAs($detector->getBrowser($agent));
         }

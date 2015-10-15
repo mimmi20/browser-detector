@@ -163,8 +163,7 @@ class UnisterTesting extends AbstractBrowser implements BrowserCalculatesAlterna
             $this->useragent
         );
 
-        $detector = new BrowserDetector();
-        $detector->setLogger($device->getLogger());
+        $detector = new BrowserDetector($this->cache, $this->logger);
 
         $device->setRenderAs($detector->getBrowser($agent));
 

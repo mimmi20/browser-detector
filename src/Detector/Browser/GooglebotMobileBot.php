@@ -154,8 +154,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserCalculatesAlt
                 $this->useragent
             );
 
-            $detector = new BrowserDetector();
-            $detector->setLogger($device->getLogger());
+            $detector = new BrowserDetector($this->cache, $this->logger);
 
             $device->setRenderAs($detector->getBrowser($agent));
         }

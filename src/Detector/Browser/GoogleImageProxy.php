@@ -147,8 +147,7 @@ class GoogleImageProxy extends AbstractBrowser implements BrowserCalculatesAlter
     {
         $agent = str_ireplace('GoogleImageProxy', '', $this->useragent);
 
-        $detector = new BrowserDetector();
-        $detector->setLogger($device->getLogger());
+        $detector = new BrowserDetector($this->cache, $this->logger);
 
         $device->setRenderAs($detector->getBrowser($agent));
 

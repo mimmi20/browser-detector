@@ -133,8 +133,7 @@ class AlcoholSearch extends AbstractBrowser implements BrowserCalculatesAlternat
     {
         $agent = str_ireplace('alcohol search', '', $this->useragent);
 
-        $detector = new BrowserDetector();
-        $detector->setLogger($device->getLogger());
+        $detector = new BrowserDetector($this->cache, $this->logger);
 
         $device->setRenderAs($detector->getBrowser($agent));
 

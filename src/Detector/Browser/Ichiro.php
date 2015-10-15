@@ -153,8 +153,7 @@ class Ichiro extends AbstractBrowser implements BrowserCalculatesAlternativeResu
     {
         $agent = str_ireplace(array('ichiro/mobile', 'ichiro', 'search.goo'), '', $this->useragent);
 
-        $detector = new BrowserDetector();
-        $detector->setLogger($device->getLogger());
+        $detector = new BrowserDetector($this->cache, $this->logger);
 
         $device->setRenderAs($detector->getBrowser($agent));
 

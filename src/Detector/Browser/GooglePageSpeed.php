@@ -163,8 +163,7 @@ class GooglePageSpeed extends AbstractBrowser implements BrowserCalculatesAltern
     {
         $agent = str_ireplace('Google Page Speed', '', $this->useragent);
 
-        $detector = new BrowserDetector();
-        $detector->setLogger($device->getLogger());
+        $detector = new BrowserDetector($this->cache, $this->logger);
 
         $device->setRenderAs($detector->getBrowser($agent));
 

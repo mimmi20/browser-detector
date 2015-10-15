@@ -159,8 +159,7 @@ class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternative
     {
         $agent = str_ireplace(array('GomezAgent'), '', $this->useragent);
 
-        $detector = new BrowserDetector();
-        $detector->setLogger($device->getLogger());
+        $detector = new BrowserDetector($this->cache, $this->logger);
 
         $device->setRenderAs($detector->getBrowser($agent));
 
