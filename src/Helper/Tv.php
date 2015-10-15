@@ -57,13 +57,13 @@ class Tv
     /**
      * sets the user agent to be handled
      *
-     * @param string $userAgent
+     * @param string $useragent
      *
      * @return \BrowserDetector\Helper\Tv
      */
-    public function setUserAgent($userAgent)
+    public function setUserAgent($useragent)
     {
-        $this->utils->setUserAgent($userAgent);
+        $this->utils->setUserAgent($useragent);
 
         return $this;
     }

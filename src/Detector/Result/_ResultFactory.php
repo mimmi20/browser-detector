@@ -60,7 +60,7 @@ class ResultFactory
     /**
      * builds the result object and set the values
      *
-     * @param string                                            $userAgent
+     * @param string                                            $useragent
      * @param \UaMatcher\Device\DeviceInterface   $device
      * @param \UaMatcher\Os\OsInterface           $os
      * @param \UaMatcher\Browser\BrowserInterface $browser
@@ -70,7 +70,7 @@ class ResultFactory
      * @return \BrowserDetector\Detector\Result\Result
      */
     public static function build(
-        $userAgent,
+        $useragent,
         DeviceInterface $device,
         OsInterface $os,
         BrowserInterface $browser,
@@ -85,7 +85,7 @@ class ResultFactory
             $wurflKey = WurflConstants::NO_MATCH;
         }
 
-        $result = new Result($userAgent, $wurflKey, $device, $os, $browser, $engine);
+        $result = new Result($useragent, $wurflKey, $device, $os, $browser, $engine);
         $result->setLogger($logger);
 
         $additionalData = Loader::load(strtolower($wurflKey), $logger);
@@ -196,13 +196,13 @@ class ResultFactory
                         break;
                     case 'device_bits':
                         $detector = new DeviceBits();
-                        $detector->setUserAgent($result->userAgent);
+                        $detector->setUserAgent($result->useragent);
 
                         $value = $detector->getBits();
                         break;
                     case 'device_cpu':
                         $detector = new Cpu();
-                        $detector->setUserAgent($result->userAgent);
+                        $detector->setUserAgent($result->useragent);
 
                         $value = $detector->getCpu();
                         break;
@@ -253,13 +253,13 @@ class ResultFactory
                         break;
                     case 'mobile_browser_bits':
                         $detector = new BrowserBits();
-                        $detector->setUserAgent($result->userAgent);
+                        $detector->setUserAgent($result->useragent);
 
                         $value = $detector->getBits();
                         break;
                     case 'device_os_bits':
                         $detector = new OsBits();
-                        $detector->setUserAgent($result->userAgent);
+                        $detector->setUserAgent($result->useragent);
 
                         $value = $detector->getBits();
                         break;

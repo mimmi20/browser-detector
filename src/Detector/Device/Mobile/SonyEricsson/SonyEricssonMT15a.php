@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
@@ -45,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonMT15a extends AbstractDevice implements DeviceHasWurflKeyInterface
+class SonyEricssonMT15a extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -134,24 +135,6 @@ class SonyEricssonMT15a extends AbstractDevice implements DeviceHasWurflKeyInter
     public function getBrand()
     {
         return new Company\SonyEricsson();
-    }
-
-    /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return DeviceInterface
-     */
-    public function detectSpecialProperties()
-    {
-        if ($this->utils->checkIfContains(array('Build/4.0.2.'))) {
-            $this->setCapability(
-                'uaprof',
-                'http://wap.sonyericsson.com/UAprof/MT15aR402.xml'
-            );
-        }
-
-        return $this;
     }
 
     /**

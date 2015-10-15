@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Version;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +43,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ZteBaseTab extends AbstractDevice
+class ZteBaseTab extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties

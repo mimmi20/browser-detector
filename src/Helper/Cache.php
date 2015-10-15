@@ -43,7 +43,7 @@ class Cache
      * Gets the information about the browser by User Agent
      *
      * @param \WurflCache\Adapter\AdapterInterface $cache
-     * @param string                            $userAgent the user agent string
+     * @param string                            $useragent the user agent string
      *
      * @param string                            $cachePrefix
      *
@@ -51,10 +51,10 @@ class Cache
      */
     public function getBrowserFromCache(
         AdapterInterface $cache,
-        $userAgent = null,
+        $useragent = null,
         $cachePrefix = null
     ) {
-        $cacheId = $this->getCacheIdFromAgent($userAgent, $cachePrefix);
+        $cacheId = $this->getCacheIdFromAgent($useragent, $cachePrefix);
         $success = true;
 
         return $cache->getItem($cacheId, $success);
@@ -63,18 +63,18 @@ class Cache
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $userAgent the user agent string
+     * @param string $useragent the user agent string
      * @param string $cachePrefix
      *
      * @return string
      */
-    public function getCacheIdFromAgent($userAgent = null, $cachePrefix = null)
+    public function getCacheIdFromAgent($useragent = null, $cachePrefix = null)
     {
         return substr(
             $cachePrefix . 'agent_' . preg_replace(
                 '/[^a-zA-Z0-9_]/',
                 '_',
-                $userAgent
+                $useragent
             ),
             0,
             179

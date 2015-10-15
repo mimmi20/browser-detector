@@ -162,6 +162,6 @@ class Nintendo extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function detectOs()
     {
-        return new NintendoOs($this->userAgent, $this->logger);
+        return new NintendoOs($this->useragent, $this->logger);
     }
 }

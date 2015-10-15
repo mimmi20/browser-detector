@@ -164,6 +164,6 @@ class Apple extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function detectOs()
     {
-        return new Ios($this->userAgent, $this->logger);
+        return new Ios($this->useragent, $this->logger);
     }
 }

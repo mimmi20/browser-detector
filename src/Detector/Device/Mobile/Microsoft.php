@@ -172,7 +172,7 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function detectOs()
     {
-        return new Windows($this->userAgent, $this->logger);
+        return new Windows($this->useragent, $this->logger);
     }
 
     /**

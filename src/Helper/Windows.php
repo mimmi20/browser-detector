@@ -62,14 +62,14 @@ class Windows
     /**
      * sets the user agent to be handled
      *
-     * @param string $userAgent
+     * @param string $useragent
      *
      * @return \BrowserDetector\Helper\Windows
      */
-    public function setUserAgent($userAgent)
+    public function setUserAgent($useragent)
     {
-        $this->useragent = $userAgent;
-        $this->utils->setUserAgent($userAgent);
+        $this->useragent = $useragent;
+        $this->utils->setUserAgent($useragent);
 
         return $this;
     }

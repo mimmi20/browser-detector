@@ -140,6 +140,6 @@ class HtcVpaCompactIv extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function detectOs()
     {
-        return new WindowsMobileOs($this->userAgent, $this->logger);
+        return new WindowsMobileOs($this->useragent, $this->logger);
     }
 }

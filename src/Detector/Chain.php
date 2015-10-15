@@ -54,7 +54,7 @@ class Chain
     private $namespace = '';
 
     /** @var string */
-    private $userAgent = '';
+    private $useragent = '';
 
     /**
      * sets the cache used to make the detection faster
@@ -121,7 +121,7 @@ class Chain
      */
     public function setUserAgent($agent)
     {
-        $this->userAgent = $agent;
+        $this->useragent = $agent;
 
         return $this;
     }
@@ -175,7 +175,7 @@ class Chain
 
             while ($chain->valid()) {
                 $handler = $chain->current();
-                $handler->setUserAgent($this->userAgent);
+                $handler->setUserAgent($this->useragent);
 
                 if ($handler->canHandle()) {
                     return $handler;
@@ -198,7 +198,7 @@ class Chain
             $handler   = new $className();
         }
 
-        $handler->setUserAgent($this->userAgent);
+        $handler->setUserAgent($this->useragent);
 
         return $handler;
     }

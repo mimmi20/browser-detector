@@ -144,7 +144,7 @@ class SamsungGts5380 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function detectOs()
     {
-        return new Bada($this->userAgent, $this->logger);
+        return new Bada($this->useragent, $this->logger);
     }
 
     /**

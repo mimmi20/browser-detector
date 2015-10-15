@@ -140,6 +140,6 @@ class BlackBerry7520 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function detectOs()
     {
-        return new RimOs($this->userAgent, $this->logger);
+        return new RimOs($this->useragent, $this->logger);
     }
 }

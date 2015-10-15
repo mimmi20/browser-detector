@@ -146,7 +146,7 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function detectOs()
     {
-        return new WebOs($this->userAgent, $this->logger);
+        return new WebOs($this->useragent, $this->logger);
     }
 
     /**

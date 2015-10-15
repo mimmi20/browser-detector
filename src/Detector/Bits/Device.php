@@ -68,13 +68,13 @@ class Device
     /**
      * sets the user agent to be handled
      *
-     * @param string $userAgent
+     * @param string $useragent
      *
      * @return Device
      */
-    public function setUserAgent($userAgent)
+    public function setUserAgent($useragent)
     {
-        $this->useragent = $userAgent;
+        $this->useragent = $useragent;
         $this->utils->setUserAgent($this->useragent);
 
         return $this;

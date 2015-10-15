@@ -144,7 +144,7 @@ class BlackBerry9320 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function detectOs()
     {
-        return new RimOs($this->userAgent, $this->logger);
+        return new RimOs($this->useragent, $this->logger);
     }
 
     /**

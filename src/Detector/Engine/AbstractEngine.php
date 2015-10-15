@@ -542,26 +542,26 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
     /**
      * Class Constructor
      *
-     * @param string                   $userAgent the user agent to be handled
+     * @param string                   $useragent the user agent to be handled
      * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct($userAgent = null, LoggerInterface $logger = null)
+    public function __construct($useragent = null, LoggerInterface $logger = null)
     {
-        $this->init($userAgent);
+        $this->init($useragent);
 
         $this->logger = $logger;
     }
 
     /**
      * initializes the object
-     * @param string $userAgent
+     * @param string $useragent
      */
-    protected function init($userAgent)
+    protected function init($useragent)
     {
         $this->utils = new Utils();
 
-        $this->useragent = $userAgent;
-        $this->utils->setUserAgent($userAgent);
+        $this->useragent = $useragent;
+        $this->utils->setUserAgent($useragent);
     }
 
     /**
@@ -678,7 +678,7 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
         return serialize(
             array(
                 'properties' => $this->properties,
-                'userAgent'  => $this->useragent,
+                'useragent'  => $this->useragent,
             )
         );
     }
@@ -700,6 +700,6 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
             $this->properties[$property] = $value;
         }
 
-        $this->init($unseriliazedData['userAgent']);
+        $this->init($unseriliazedData['useragent']);
     }
 }

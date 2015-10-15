@@ -164,7 +164,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function detectOs()
     {
-        return new WebOs($this->userAgent, $this->logger);
+        return new WebOs($this->useragent, $this->logger);
     }
 
     /**

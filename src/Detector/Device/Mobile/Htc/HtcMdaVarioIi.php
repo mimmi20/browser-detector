@@ -144,7 +144,7 @@ class HtcMdaVarioIi extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function detectOs()
     {
-        return new WindowsMobileOs($this->userAgent, $this->logger);
+        return new WindowsMobileOs($this->useragent, $this->logger);
     }
 
     /**

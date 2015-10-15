@@ -148,7 +148,7 @@ class RimTablet extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function detectOs()
     {
-        return new RimTabletOs($this->userAgent, $this->logger);
+        return new RimTabletOs($this->useragent, $this->logger);
     }
 
     /**

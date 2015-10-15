@@ -30,11 +30,11 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
-use BrowserDetector\Detector\Browser\NetFront;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
@@ -46,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlayStationPortable extends AbstractDevice implements DeviceHasWurflKeyInterface
+class PlayStationPortable extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties

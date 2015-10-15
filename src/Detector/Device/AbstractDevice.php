@@ -48,7 +48,7 @@ use UaMatcher\Result\ResultInterface;
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @property-read string  $deviceClass
- * @property-read string  $userAgent
+ * @property-read string  $useragent
  * @property-read string  $fallBack
  * @property-read boolean $actualDeviceRoot
  */
@@ -121,26 +121,26 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
     /**
      * Class Constructor
      *
-     * @param string                   $userAgent the user agent to be handled
+     * @param string                   $useragent the user agent to be handled
      * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct($userAgent = null, LoggerInterface $logger = null)
+    public function __construct($useragent = null, LoggerInterface $logger = null)
     {
-        $this->init($userAgent);
+        $this->init($useragent);
 
         $this->logger = $logger;
     }
 
     /**
      * initializes the object
-     * @param string $userAgent
+     * @param string $useragent
      */
-    protected function init($userAgent)
+    protected function init($useragent)
     {
         $this->utils = new Utils();
 
-        $this->useragent = $userAgent;
-        $this->utils->setUserAgent($userAgent);
+        $this->useragent = $useragent;
+        $this->utils->setUserAgent($useragent);
     }
 
     /**
@@ -313,7 +313,7 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
     {
         if (isset($name)) {
             switch ($name) {
-                case 'userAgent':
+                case 'useragent':
                     return $this->useragent;
                     break;
                 case 'fallBack':
@@ -384,7 +384,7 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
         return serialize(
             array(
                 'properties' => $this->properties,
-                'userAgent'  => $this->useragent,
+                'useragent'  => $this->useragent,
                 'renderAs'   => $this->renderAs,
                 'version'    => $this->version,
             )
@@ -408,7 +408,7 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
             $this->properties[$property] = $value;
         }
 
-        $this->init($unseriliazedData['userAgent']);
+        $this->init($unseriliazedData['useragent']);
 
         $this->renderAs = $unseriliazedData['renderAs'];
         $this->version  = $unseriliazedData['version'];

@@ -145,7 +145,7 @@ class SamsungGts7230e extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function detectOs()
     {
-        return new Bada($this->userAgent, $this->logger);
+        return new Bada($this->useragent, $this->logger);
     }
 
     /**

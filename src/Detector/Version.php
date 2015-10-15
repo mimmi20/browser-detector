@@ -187,13 +187,13 @@ class Version implements \Serializable
     /**
      * sets the user agent to be handled
      *
-     * @param string $userAgent
+     * @param string $useragent
      *
      * @return Version
      */
-    public function setUserAgent($userAgent)
+    public function setUserAgent($useragent)
     {
-        $this->useragent = $userAgent;
+        $this->useragent = $useragent;
 
         return $this;
     }

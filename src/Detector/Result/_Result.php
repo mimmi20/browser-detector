@@ -53,7 +53,7 @@ use Wurfl\WurflConstants;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  * @property-read $id
- * @property-read $userAgent
+ * @property-read $useragent
  */
 class Result implements \Serializable
 {
@@ -79,7 +79,7 @@ class Result implements \Serializable
     /**
      * @var string
      */
-    private $userAgent = null;
+    private $useragent = null;
 
     /**
      * @var \UaMatcher\Device\DeviceInterface
@@ -732,7 +732,7 @@ class Result implements \Serializable
     /**
      * the class constructor
      *
-     * @param string                                                 $userAgent
+     * @param string                                                 $useragent
      * @param string|null                                            $wurflKey
      * @param \UaMatcher\Device\DeviceInterface|null   $device
      * @param \UaMatcher\Os\OsInterface|null           $os
@@ -740,7 +740,7 @@ class Result implements \Serializable
      * @param \UaMatcher\Engine\EngineInterface|null   $engine
      */
     public function __construct(
-        $userAgent,
+        $useragent,
         $wurflKey = WurflConstants::NO_MATCH,
         DeviceInterface $device = null,
         OsInterface $os = null,
@@ -755,7 +755,7 @@ class Result implements \Serializable
         $this->setCapability('device_os_version', clone $detector);
         $this->setCapability('model_version', clone $detector);
 
-        $this->userAgent = $userAgent;
+        $this->useragent = $useragent;
         $this->wurflKey  = $wurflKey;
 
         $this->device  = $device;
@@ -834,7 +834,7 @@ class Result implements \Serializable
                 'properties' => $this->properties,
                 'renderAs'   => $this->renderAs,
                 'wurflKey'   => $this->wurflKey,
-                'userAgent'  => $this->userAgent,
+                'useragent'  => $this->useragent,
                 'device'     => $this->device,
                 'os'         => $this->os,
                 'browser'    => $this->browser,
@@ -862,7 +862,7 @@ class Result implements \Serializable
 
         $this->renderAs  = $unseriliazedData['renderAs'];
         $this->wurflKey  = $unseriliazedData['wurflKey'];
-        $this->userAgent = $unseriliazedData['userAgent'];
+        $this->useragent = $unseriliazedData['useragent'];
         $this->engine    = $unseriliazedData['engine'];
         $this->os        = $unseriliazedData['os'];
         $this->browser   = $unseriliazedData['browser'];
@@ -1043,8 +1043,8 @@ class Result implements \Serializable
                 case 'id':
                     return $this->wurflKey;
                     break;
-                case 'userAgent':
-                    return $this->userAgent;
+                case 'useragent':
+                    return $this->useragent;
                     break;
                 case 'deviceClass':
                     return $this->getCapability('deviceClass', false);
@@ -1630,7 +1630,7 @@ class Result implements \Serializable
      */
     public function isApp()
     {
-        $ua    = $this->userAgent;
+        $ua    = $this->useragent;
         $utils = new Utils();
         $utils->setUserAgent($ua);
 

@@ -55,13 +55,13 @@ class Cpu
     /**
      * sets the user agent to be handled
      *
-     * @param string $userAgent
+     * @param string $useragent
      *
      * @return Cpu
      */
-    public function setUserAgent($userAgent)
+    public function setUserAgent($useragent)
     {
-        $this->useragent = $userAgent;
+        $this->useragent = $useragent;
 
         return $this;
     }
