@@ -33,6 +33,9 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
         self::assertInstanceOf('\BrowserDetector\Detector\Company\CompanyInterface', $result->getManufacturer());
     }
 
+    /**
+     * @return array[]
+     */
     public function providerDetect()
     {
         return array(
