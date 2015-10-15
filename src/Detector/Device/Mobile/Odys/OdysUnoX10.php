@@ -33,10 +33,8 @@ namespace BrowserDetector\Detector\Device\Mobile\Odys;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Browser\BrowserInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -44,7 +42,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OdysUnoX10 extends AbstractDevice
+class OdysUnoX10 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -143,26 +141,5 @@ class OdysUnoX10 extends AbstractDevice
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * detects properties who are depending on the browser, the rendering engine
-     * or the operating system
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface  $engine
-     * @param \UaMatcher\Os\OsInterface      $os
-     *
-     * @return DeviceInterface
-     */
-    public function detectDependProperties(
-        BrowserInterface $browser,
-        EngineInterface $engine,
-        OsInterface $os
-    ) {
-        $engine->setCapability('xhtml_send_mms_string', 'mms:');
-        $engine->setCapability('xhtml_send_sms_string', 'sms:');
-
-        return $this;
     }
 }

@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
@@ -45,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NintendoDsi extends AbstractDevice implements DeviceHasWurflKeyInterface
+class NintendoDsi extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -144,9 +145,7 @@ class NintendoDsi extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function detectOs()
     {
-        $handler = new UnknownOs($this->useragent);
-
-        return $handler;
+        return new UnknownOs($this->useragent, $this->logger);
     }
 
     /**
