@@ -126,6 +126,7 @@ class BrowserFactory
             if (!$file->isFile()
                 || $file->getExtension() != 'php'
                 || 'BrowserInterface' == $file->getBasename('.php')
+                || 'AbstractBrowser' == $file->getBasename('.php')
             ) {
                 continue;
             }
