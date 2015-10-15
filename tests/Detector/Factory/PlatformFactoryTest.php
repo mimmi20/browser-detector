@@ -18,8 +18,11 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetect($agent, $platform, $version)
     {
+        /** @var \Monolog\Logger $logger */
+        $logger = $this->getMock('\Monolog\Logger', array(), array(), '', false);
+
         /** @var \UaMatcher\Os\OsInterface $result */
-        $result = PlatformFactory::detect($agent);
+        $result = PlatformFactory::detect($agent, $logger);
 
         self::assertInstanceOf('\UaMatcher\Os\OsInterface', $result);
         self::assertSame($platform, $result->getName());

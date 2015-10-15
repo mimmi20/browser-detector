@@ -19,8 +19,11 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetect($agent, $engine, $version, $transcoder)
     {
+        /** @var \Monolog\Logger $logger */
+        $logger = $this->getMock('\Monolog\Logger', array(), array(), '', false);
+
         /** @var \UaMatcher\Engine\EngineInterface $result */
-        $result = EngineFactory::detect($agent);
+        $result = EngineFactory::detect($agent, $logger);
 
         self::assertInstanceOf('\UaMatcher\Engine\EngineInterface', $result);
         self::assertSame($engine, $result->getName());
