@@ -39,10 +39,13 @@ use BrowserDetector\Detector\Cpu;
 use Psr\Log\LoggerInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasVersionInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Result;
+use UaResult\ResultFactoryInterface;
 use Wurfl\WurflConstants;
 use WurflData\Loader;
 
@@ -55,27 +58,27 @@ use WurflData\Loader;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ResultFactory
+class ResultFactory implements ResultFactoryInterface
 {
     /**
      * builds the result object and set the values
      *
-     * @param string                                            $useragent
+     * @param string                              $useragent
+     * @param \Psr\Log\LoggerInterface            $logger
      * @param \UaMatcher\Device\DeviceInterface   $device
      * @param \UaMatcher\Os\OsInterface           $os
      * @param \UaMatcher\Browser\BrowserInterface $browser
      * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \Psr\Log\LoggerInterface                          $logger
      *
      * @return \BrowserDetector\Detector\Result\Result
      */
     public static function build(
         $useragent,
-        DeviceInterface $device,
-        OsInterface $os,
-        BrowserInterface $browser,
-        EngineInterface $engine,
-        LoggerInterface $logger
+        LoggerInterface $logger,
+        DeviceInterface $device = null,
+        OsInterface $os = null,
+        BrowserInterface $browser = null,
+        EngineInterface $engine = null
     ) {
         if ($device->getDeviceType()->isMobile() && $device instanceof DeviceHasWurflKeyInterface) {
             $wurflKey = $device->getWurflKey($browser, $engine, $os);
@@ -85,8 +88,7 @@ class ResultFactory
             $wurflKey = WurflConstants::NO_MATCH;
         }
 
-        $result = new Result($useragent, $wurflKey, $device, $os, $browser, $engine);
-        $result->setLogger($logger);
+        $result = new Result($useragent, $device, $os, $browser, $engine, $logger, $wurflKey);
 
         $additionalData = Loader::load(strtolower($wurflKey), $logger);
 
@@ -146,7 +148,7 @@ class ResultFactory
                         $value = $result->hasDeviceQwertyKeyboard();
                         break;
                     case 'model_extra_info':
-                        $value = $device->getCapability('model_extra_info', false);
+                        $value = $device->getCapability('model_extra_info');
                         break;
                     case 'pdf_support':
                         $value = $result->isPdfSupported();
@@ -155,10 +157,10 @@ class ResultFactory
                         $value = $result->isRssSupported();
                         break;
                     case 'basic_authentication_support':
-                        $value = $browser->getCapability('basic_authentication_support', false);
+                        $value = $browser->getCapability('basic_authentication_support');
                         break;
                     case 'post_method_support':
-                        $value = $browser->getCapability('post_method_support', false);
+                        $value = $browser->getCapability('post_method_support');
                         break;
                     case 'device_type':
                     case 'controlcap_form_factor':
@@ -192,17 +194,21 @@ class ResultFactory
                         $value = ($result->getDeviceResolutionWidth() >= 480 && $result->getDeviceResolutionHeight() >= 480);
                         break;
                     case 'model_version':
-                        $value = $device->detectVersion();
+                        if ($device instanceof DeviceHasVersionInterface) {
+                            $value = $device->detectDeviceVersion();
+                        } else {
+                            $value = null;
+                        }
                         break;
                     case 'device_bits':
                         $detector = new DeviceBits();
-                        $detector->setUserAgent($result->useragent);
+                        $detector->setUserAgent($useragent);
 
                         $value = $detector->getBits();
                         break;
                     case 'device_cpu':
                         $detector = new Cpu();
-                        $detector->setUserAgent($result->useragent);
+                        $detector->setUserAgent($useragent);
 
                         $value = $detector->getCpu();
                         break;
@@ -253,13 +259,13 @@ class ResultFactory
                         break;
                     case 'mobile_browser_bits':
                         $detector = new BrowserBits();
-                        $detector->setUserAgent($result->useragent);
+                        $detector->setUserAgent($useragent);
 
                         $value = $detector->getBits();
                         break;
                     case 'device_os_bits':
                         $detector = new OsBits();
-                        $detector->setUserAgent($result->useragent);
+                        $detector->setUserAgent($useragent);
 
                         $value = $detector->getBits();
                         break;

@@ -190,11 +190,11 @@ class BrowserDetector
 
             $result = Result\ResultFactory::build(
                 $request->getUserAgent(),
+                $this->logger,
                 $device,
                 $platform,
                 $browser,
-                $engine,
-                $this->logger
+                $engine
             );
 
             $this->cache->setItem($cacheId, $result);
