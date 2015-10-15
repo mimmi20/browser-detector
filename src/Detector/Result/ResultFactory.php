@@ -44,7 +44,6 @@ use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
-use UaResult\Result;
 use UaResult\ResultFactoryInterface;
 use Wurfl\WurflConstants;
 use WurflData\Loader;
@@ -70,7 +69,7 @@ class ResultFactory implements ResultFactoryInterface
      * @param \UaMatcher\Browser\BrowserInterface $browser
      * @param \UaMatcher\Engine\EngineInterface   $engine
      *
-     * @return \BrowserDetector\Detector\Result\Result
+     * @return \UaMatcher\Result\ResultInterface
      */
     public static function build(
         $useragent,
@@ -88,7 +87,7 @@ class ResultFactory implements ResultFactoryInterface
             $wurflKey = WurflConstants::NO_MATCH;
         }
 
-        $result = new Result($useragent, $device, $os, $browser, $engine, $logger, $wurflKey);
+        $result = new Result($useragent, $logger, $wurflKey, $device, $os, $browser, $engine);
 
         $additionalData = Loader::load(strtolower($wurflKey), $logger);
 
