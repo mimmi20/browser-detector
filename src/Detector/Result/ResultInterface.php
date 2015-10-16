@@ -49,7 +49,7 @@ use Psr\Log\LoggerInterface;
  * @property-read $id
  * @property-read $userAgent
  */
-interface ResultInterface extends \UaResult\ResultInterface
+interface ResultInterface extends \UaMatcher\Result\ResultInterface
 {
     /**
      * the class constructor
@@ -75,7 +75,7 @@ interface ResultInterface extends \UaResult\ResultInterface
     /**
      * returns a second device for rendering properties
      *
-     * @return \UaMatcher\Result\ResultInterface
+     * @return \BrowserDetector\Detector\Result\ResultInterface
      */
     public function getRenderAs();
 
@@ -98,10 +98,34 @@ interface ResultInterface extends \UaResult\ResultInterface
      */
     public function getFullBrowser($withBits = true, $mode = null);
 
+    /**
+     * returns the name of the browser including the browser version and the browser modes
+     *
+     * @param bool    $withBits
+     * @param integer $mode
+     *
+     * @return string
+     */
     public function getFullBrowserName($withBits = true, $mode = null);
 
+    /**
+     * returns the name of the platform including the company brand name, the platform version
+     *
+     * @param bool    $withBits
+     * @param integer $mode
+     *
+     * @return mixed
+     */
     public function getFullPlatform($withBits = true, $mode = null);
 
+    /**
+     * returns the name of the platform including the platform version
+     *
+     * @param bool    $withBits
+     * @param integer $mode
+     *
+     * @return mixed
+     */
     public function getFullPlatformName($withBits = true, $mode = null);
 
     /**

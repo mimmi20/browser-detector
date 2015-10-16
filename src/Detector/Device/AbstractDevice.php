@@ -358,7 +358,7 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
     /**
      * sets a second device for rendering properties
      *
-     * @return \BrowserDetector\Detector\Result\Result
+     * @return \UaMatcher\Result\ResultInterface
      */
     public function getRenderAs()
     {
