@@ -300,6 +300,14 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
         return parent::__get($name);
     }
 
+    /**
+     * returns the name of the browser including the company brand name, the browser version and the browser modes
+     *
+     * @param bool    $withBits
+     * @param integer $mode
+     *
+     * @return string
+     */
     public function getFullBrowser(
         $withBits = true,
         $mode = null
@@ -321,6 +329,14 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
         return trim($browser);
     }
 
+    /**
+     * returns the name of the browser including the browser version and the browser modes
+     *
+     * @param bool    $withBits
+     * @param integer $mode
+     *
+     * @return string
+     */
     public function getFullBrowserName(
         $withBits = true,
         $mode = null
@@ -366,6 +382,14 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
         return trim($browser);
     }
 
+    /**
+     * returns the name of the platform including the company brand name, the platform version
+     *
+     * @param bool    $withBits
+     * @param integer $mode
+     *
+     * @return string
+     */
     public function getFullPlatform(
         $withBits = true,
         $mode = null
@@ -385,6 +409,14 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
         return trim($os);
     }
 
+    /**
+     * returns the name of the platform including the platform version
+     *
+     * @param bool    $withBits
+     * @param integer $mode
+     *
+     * @return string
+     */
     public function getFullPlatformName(
         $withBits = true,
         $mode = null

@@ -73,55 +73,6 @@ interface ResultInterface extends \UaMatcher\Result\ResultInterface
     );
 
     /**
-     * Returns the value of a given capability name for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     * @param string $capabilityValue
-     *
-     * @throws \InvalidArgumentException
-     * @return ResultInterface
-     */
-    public function setCapability($capabilityName, $capabilityValue = null);
-
-    /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All Capability values
-     */
-    public function getCapabilities();
-
-    /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All Capability values
-     */
-    public function getAllCapabilities();
-
-    /**
-     * Returns the value of a given capability name for the current result
-     *
-     * @param string  $name            must be a valid name of an virtual capability
-     * @param boolean $includeRenderAs If TRUE and the renderAs result is defined,
-     *                                 the property from the renderAs result will be included too
-     *
-     * @return string|VersionInterface Capability value
-     */
-    public function getVirtualCapability($name, $includeRenderAs = false);
-
-    /**
-     * Returns the value of a given capability name for the current device
-     *
-     * @param string  $capabilityName  must be a valid capability name
-     * @param boolean $includeRenderAs If TRUE and the renderAs resulr is
-     *                                 ndefined, the property from the renderAs result will be
-     *                                 included also
-     *
-     * @return string|VersionInterface Capability value
-     * @throws \InvalidArgumentException
-     */
-    public function getCapability($capabilityName, $includeRenderAs = false);
-
-    /**
      * returns a second device for rendering properties
      *
      * @return \UaMatcher\Result\ResultInterface
@@ -136,22 +87,6 @@ interface ResultInterface extends \UaMatcher\Result\ResultInterface
      * @return DeviceInterface
      */
     public function setRenderAs(ResultInterface $result);
-
-    /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All virtual Capability values
-     */
-    public function getAllVirtualCapabilities();
-
-    /**
-     * Returns the value of a given capability name for the current device
-     *
-     * @param array $capabilities An array of name/value pairs
-     *
-     * @return ResultInterface
-     */
-    public function setCapabilities(array $capabilities);
 
     /**
      * returns the name of the browser including the company brand name, the browser version and the browser modes
