@@ -49,7 +49,7 @@ use Psr\Log\LoggerInterface;
  * @property-read $id
  * @property-read $userAgent
  */
-interface ResultInterface extends \UaMatcher\Result\ResultInterface
+interface ResultInterface extends \UaResult\ResultInterface
 {
     /**
      * the class constructor
