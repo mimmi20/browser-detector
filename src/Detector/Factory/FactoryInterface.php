@@ -29,6 +29,7 @@
  */
 
 namespace BrowserDetector\Detector\Factory;
+
 use Psr\Log\LoggerInterface;
 
 /**

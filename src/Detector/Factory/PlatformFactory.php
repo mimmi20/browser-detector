@@ -182,7 +182,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($utils->checkIfContains('OpenBSD')) {
             $platformKey = 'OpenBsd';
         } elseif ($utils->checkIfContains('DragonFly')) {
-            $platformKey = 'DragonFlyBsd';
+            $platformKey = 'DragonflyBsd';
         } elseif ($utils->checkIfContains('BSD Four')) {
             $platformKey = 'BsdFour';
         } elseif ($utils->checkIfContainsAll(array('HP-UX', 'HPUX'))) {

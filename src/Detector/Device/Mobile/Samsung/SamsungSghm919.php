@@ -34,7 +34,6 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
-
 /**
  * @category  BrowserDetector
  * @package   BrowserDetector
