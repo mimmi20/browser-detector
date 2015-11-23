@@ -38,6 +38,7 @@ use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Result\ResultInterface;
+use BrowserDetector\Detector\Bits\Device as DeviceBits;
 
 /**
  * base class for all Devices to detect
@@ -412,5 +413,15 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
 
         $this->renderAs = $unseriliazedData['renderAs'];
         $this->version  = $unseriliazedData['version'];
+    }
+
+    /**
+     * @return string
+     */
+    public function detectBits()
+    {
+        $detector = new DeviceBits($this->useragent);
+
+        return $detector->getBits();
     }
 }

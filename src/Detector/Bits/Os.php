@@ -59,25 +59,15 @@ class Os
 
     /**
      * class constructor
-     */
-    public function __construct()
-    {
-        $this->utils = new Utils();
-    }
-
-    /**
-     * sets the user agent to be handled
      *
      * @param string $useragent
-     *
-     * @return Os
      */
-    public function setUserAgent($useragent)
+    public function __construct($useragent)
     {
+        $this->utils = new Utils();
+
         $this->useragent = $useragent;
         $this->utils->setUserAgent($this->useragent);
-
-        return $this;
     }
 
     /**

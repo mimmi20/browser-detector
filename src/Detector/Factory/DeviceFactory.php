@@ -35,8 +35,10 @@ use BrowserDetector\Detector\Device\GeneralDesktop;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\UnknownDevice;
+use BrowserDetector\Helper\MobileDevice;
 use Psr\Log\LoggerInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Helper\Tv as TvHelper;
 
 /**
  * Device detection class
@@ -73,6 +75,15 @@ class DeviceFactory
 
         /** @var \UaMatcher\Device\DeviceInterface $device */
         $device = $chain->detect();
+
+        $mobileDeviceHelper = new MobileDevice($agent);
+        $tvHelper = new TvHelper($agent);
+
+        if ($mobileDeviceHelper->isMobile()) {
+            $device = new GeneralMobile($agent, $logger);
+        } elseif (!$tvHelper->isTvDevice()) {
+            $device = new GeneralTv($agent, $logger);
+        }
         $device->setLogger($logger);
 
         if ($device instanceof DeviceHasChildrenInterface) {

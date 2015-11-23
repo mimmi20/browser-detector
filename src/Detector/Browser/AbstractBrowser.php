@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
+use BrowserDetector\Detector\Bits\Browser as BrowserBits;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
 use UaResult\Version;
@@ -321,5 +322,15 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable
         }
 
         $this->init($unseriliazedData['useragent']);
+    }
+
+    /**
+     * @return string
+     */
+    public function detectBits()
+    {
+        $detector = new BrowserBits($this->useragent);
+
+        return $detector->getBits();
     }
 }

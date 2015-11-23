@@ -180,8 +180,7 @@ class Safari
             return false;
         }
 
-        $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->useragent);
+        $mobileDeviceHelper = new MobileDevice($this->useragent);
 
         if (!$mobileDeviceHelper->isMobile()) {
             return false;

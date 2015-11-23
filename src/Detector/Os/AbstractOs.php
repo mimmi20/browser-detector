@@ -34,6 +34,7 @@ use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Os\OsInterface;
+use BrowserDetector\Detector\Bits\Os as OsBits;
 
 /**
  * base class for all rendering platforms/operating systems to detect
@@ -141,5 +142,15 @@ abstract class AbstractOs implements OsInterface, \Serializable
         $unseriliazedData = unserialize($serialized);
 
         $this->init($unseriliazedData['useragent']);
+    }
+
+    /**
+     * @return string
+     */
+    public function detectBits()
+    {
+        $detector = new OsBits($this->useragent);
+
+        return $detector->getBits();
     }
 }

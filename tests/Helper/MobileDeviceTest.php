@@ -10,31 +10,15 @@ use BrowserDetector\Helper\MobileDevice;
 class MobileDeviceTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Helper\MobileDevice
-     */
-    private $object = null;
-
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp()
-    {
-        parent::setUp();
-
-        $this->object = new MobileDevice();
-    }
-
-    /**
      * @dataProvider providerIsMobile
      *
      * @param string $agent
      */
     public function testIsMobile($agent)
     {
-        $this->object->setUserAgent($agent);
+        $object = new MobileDevice($agent);
 
-        self::assertTrue($this->object->isMobile());
+        self::assertTrue($object->isMobile());
     }
 
     public function providerIsMobile()
@@ -50,9 +34,9 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsNotMobile($agent)
     {
-        $this->object->setUserAgent($agent);
+        $object = new MobileDevice($agent);
 
-        self::assertFalse($this->object->isMobile());
+        self::assertFalse($object->isMobile());
     }
 
     public function providerIsNotMobile()

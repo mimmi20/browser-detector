@@ -30,9 +30,6 @@
 
 namespace BrowserDetector\Detector\Result;
 
-use BrowserDetector\Detector\Bits\Browser as BrowserBits;
-use BrowserDetector\Detector\Bits\Device as DeviceBits;
-use BrowserDetector\Detector\Bits\Os as OsBits;
 use BrowserDetector\Detector\Company\CompanyInterface;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use BrowserDetector\Detector\Cpu;
@@ -200,10 +197,7 @@ class ResultFactory implements ResultFactoryInterface
                         }
                         break;
                     case 'device_bits':
-                        $detector = new DeviceBits();
-                        $detector->setUserAgent($useragent);
-
-                        $value = $detector->getBits();
+                        $value = $device->detectBits();
                         break;
                     case 'device_cpu':
                         $detector = new Cpu();
@@ -257,16 +251,10 @@ class ResultFactory implements ResultFactoryInterface
                         $value = $browser->detectVersion();
                         break;
                     case 'mobile_browser_bits':
-                        $detector = new BrowserBits();
-                        $detector->setUserAgent($useragent);
-
-                        $value = $detector->getBits();
+                        $value = $browser->detectBits();
                         break;
                     case 'device_os_bits':
-                        $detector = new OsBits();
-                        $detector->setUserAgent($useragent);
-
-                        $value = $detector->getBits();
+                        $value = $os->detectBits();
                         break;
                     case 'device_os':
                     case 'controlcap_advertised_device_os':

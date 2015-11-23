@@ -47,25 +47,15 @@ class Tv
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Helper\Tv
-     */
-    public function __construct()
-    {
-        $this->utils = new Utils();
-    }
-
-    /**
-     * sets the user agent to be handled
-     *
      * @param string $useragent
      *
      * @return \BrowserDetector\Helper\Tv
      */
-    public function setUserAgent($useragent)
+    public function __construct($useragent)
     {
-        $this->utils->setUserAgent($useragent);
+        $this->utils = new Utils();
 
-        return $this;
+        $this->utils->setUserAgent($useragent);
     }
 
     public function isTvDevice()

@@ -2,7 +2,7 @@
 
 <phpunit bootstrap="tests/bootstrap.php">
   <testsuites>
-    <testsuite name="UA-Comparator Test Suite">
+    <testsuite name="BrowserDetector Test Suite">
       <directory>tests/</directory>
     </testsuite>
   </testsuites>

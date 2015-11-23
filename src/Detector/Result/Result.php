@@ -182,6 +182,38 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
     }
 
     /**
+     * @return \UaMatcher\Device\DeviceInterface|null
+     */
+    public function getDevice()
+    {
+        return $this->device;
+    }
+
+    /**
+     * @return \UaMatcher\Browser\BrowserInterface|null
+     */
+    public function getBrowser()
+    {
+        return $this->browser;
+    }
+
+    /**
+     * @return \UaMatcher\Os\OsInterface|null
+     */
+    public function getOs()
+    {
+        return $this->os;
+    }
+
+    /**
+     * @return \UaMatcher\Engine\EngineInterface|null
+     */
+    public function getEngine()
+    {
+        return $this->engine;
+    }
+
+    /**
      * Returns the value of a given capability name for the current result
      *
      * @param string  $name            must be a valid name of an virtual capability

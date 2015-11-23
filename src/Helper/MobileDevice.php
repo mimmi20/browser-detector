@@ -52,26 +52,16 @@ class MobileDevice
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Helper\MobileDevice
-     */
-    public function __construct()
-    {
-        $this->utils = new Utils();
-    }
-
-    /**
-     * sets the user agent to be handled
-     *
      * @param string $useragent
      *
      * @return \BrowserDetector\Helper\MobileDevice
      */
-    public function setUserAgent($useragent)
+    public function __construct($useragent)
     {
+        $this->utils = new Utils();
+
         $this->useragent = $useragent;
         $this->utils->setUserAgent($useragent);
-
-        return $this;
     }
 
     /**

@@ -30,7 +30,6 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
@@ -39,7 +38,6 @@ use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -97,8 +95,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function canHandle()
     {
-        $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->useragent);
+        $mobileDeviceHelper = new MobileDevice($this->useragent);
 
         if ($mobileDeviceHelper->isMobile()) {
             return true;

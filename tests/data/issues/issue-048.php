@@ -1,0 +1,34 @@
+<?php
+
+return [
+    'issue-048' => [
+        'Mozilla/5.0 (Android; Mobile; rv:26.0) Gecko/26.0 Firefox/26.0',
+        [
+            'Browser' => 'Firefox',
+            'Browser_Type' => 'Browser',
+            'Browser_Bits' => '32',
+            'Browser_Maker' => 'Mozilla Foundation',
+            'Version' => '26.0',
+            'MajorVer' => '26',
+            'MinorVer' => '0',
+            'Platform' => 'Android',
+            'Platform_Version' => 'unknown',
+            'Platform_Bits' => '32',
+            'Platform_Maker' => 'Google Inc',
+            'isMobileDevice' => true,
+            'isTablet' => false,
+            'Crawler' => false,
+            'Device_Name' => 'general Mobile Phone',
+            'Device_Maker' => 'unknown',
+            'Device_Type' => 'Mobile Phone',
+            'Device_Pointing_Method' => 'touchscreen',
+            'Device_Code_Name' => 'general Mobile Phone',
+            'Device_Brand_Name' => 'unknown',
+            'RenderingEngine_Name' => 'Gecko',
+            'RenderingEngine_Version' => '26.0',
+            'RenderingEngine_Maker' => 'Mozilla Foundation',
+        ],
+        'lite' => false,
+        'standard' => true,
+    ],
+];

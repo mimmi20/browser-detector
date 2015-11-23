@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
@@ -88,72 +89,9 @@ class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterfac
      */
     public function canHandle()
     {
-        $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->useragent);
+        $windowsHelper = new Desktop($this->useragent);
 
-        if ($mobileDeviceHelper->isMobile()) {
-            return false;
-        }
-
-        $tvHelper = new TvHelper();
-        $tvHelper->setUserAgent($this->useragent);
-
-        if ($tvHelper->isTvDevice()) {
-            return false;
-        }
-
-        $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($this->useragent);
-
-        if ($windowsHelper->isWindows()) {
-            return true;
-        }
-
-        $others = array(
-            // Linux
-            'linux',
-            'debian',
-            'ubuntu',
-            'suse',
-            'fedora',
-            'mint',
-            'redhat',
-            'slackware',
-            'zenwalk gnu',
-            'centos',
-            'kubuntu',
-            'cros',
-            // Mac
-            'macintosh',
-            'darwin',
-            'mac_powerpc',
-            'macbook',
-            'for mac',
-            'ppc mac',
-            'mac os x',
-            'imac',
-            'macbookpro',
-            'macbookair',
-            'macbook',
-            'macmini',
-            // others
-            'freebsd',
-            'openbsd',
-            'os/2',
-            'warp',
-            'sunos',
-            'netbsd',
-            'w3m',
-            'google desktop',
-            'eeepc',
-            'dillo',
-            'konqueror',
-            'eudora',
-            'masking-agent',
-            'safersurf'
-        );
-
-        if ($this->utils->checkIfContains($others, true)) {
+        if ($windowsHelper->isDesktopDevice()) {
             return true;
         }
 

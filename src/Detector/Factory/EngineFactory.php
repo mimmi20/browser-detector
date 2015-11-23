@@ -77,6 +77,8 @@ class EngineFactory implements FactoryInterface
             && false === stripos($agent, 'tasman')
         ) {
             $engineKey = 'Trident';
+        } elseif (preg_match('/(goanna)/i', $agent)) {
+            $engineKey = 'Goanna';
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $agent)) {
             $chrome = new Chrome($agent, $logger);
 

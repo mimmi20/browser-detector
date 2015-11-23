@@ -75,8 +75,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->useragent);
+        $mobileDeviceHelper = new MobileDevice($this->useragent);
 
         if (!$this->utils->checkIfContains(
             array('Opera Mobi', 'Opera Tablet', 'OPR')

@@ -96,8 +96,7 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
             return false;
         }
 
-        $helper = new MobileDevice();
-        $helper->setUserAgent($this->useragent);
+        $helper = new MobileDevice($this->useragent);
 
         if ($helper->isMobile()) {
             return false;
