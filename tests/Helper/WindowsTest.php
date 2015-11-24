@@ -14,7 +14,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
      * @param string $agent
      */
     public function testIsWindowsPositive($agent)
-    
+    {
         $object = new Windows($agent);
 
         self::assertTrue($object->isWindows());
