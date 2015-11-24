@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,23 +89,9 @@ class Arnova extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function canHandle()
     {
-        $arnovaPhones = array(
-            'ARNOVA',
-            'AN7CG2',
-            'AN7DG3',
-            'AN7FG3',
-            'AN10BG3',
-            'AN10DG3',
-            'ARCHM901',
-            'AN7BG2DT',
-            'AN9G2I'
-        );
+        $helper = new MobileDevice($this->useragent);
 
-        if (!$this->utils->checkIfContains($arnovaPhones)) {
-            return false;
-        }
-
-        return true;
+        return $helper->isArnova();
     }
 
     /**

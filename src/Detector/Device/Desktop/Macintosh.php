@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Desktop;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Helper\Macintosh as MacintoshHelper;
 
 /**
  * @category  BrowserDetector
@@ -84,29 +85,7 @@ class Macintosh extends AbstractDevice
      */
     public function canHandle()
     {
-        $mac = array(
-            'Macintosh',
-            'Darwin',
-            'Mac_PowerPC',
-            'MacBook',
-            'for Mac',
-            'PPC Mac',
-            'Mac OS X',
-            '(MacOS)'
-        );
-
-        if (!$this->utils->checkIfContains($mac)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(
-            array('MacBook', 'Macmini', 'iMac', 'MacPro', 'PowerMac', 'Power%20Macintosh')
-        )
-        ) {
-            return false;
-        }
-
-        return true;
+        return (new MacintoshHelper($this->useragent))->isMacintosh();
     }
 
     /**

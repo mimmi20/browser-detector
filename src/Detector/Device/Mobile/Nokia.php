@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -86,24 +87,8 @@ class Nokia extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function canHandle()
     {
-        $nokiaPhones = array(
-            'nokia',
-            's60; symbos;',
-            'series 40',
-            'series 60',
-            's60v5',
-            'n900'
-        );
-
-        if (!$this->utils->checkIfContains($nokiaPhones, true)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('N90 DUAL CORE2'))) {
-            return false;
-        }
-
-        return true;
+        $helper = new MobileDevice($this->useragent);
+        return $helper->isNokia();
     }
 
     /**

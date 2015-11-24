@@ -10,30 +10,14 @@ use BrowserDetector\Helper\Windows;
 class WindowsTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Helper\Windows
-     */
-    private $object = null;
-
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp()
-    {
-        parent::setUp();
-
-        $this->object = new Windows();
-    }
-
-    /**
      * @dataProvider providerIsWindowsPositive
      * @param string $agent
      */
     public function testIsWindowsPositive($agent)
-    {
-        $this->object->setUserAgent($agent);
+    
+        $object = new Windows($agent);
 
-        self::assertTrue($this->object->isWindows());
+        self::assertTrue($object->isWindows());
     }
 
     public function providerIsWindowsPositive()
@@ -53,9 +37,9 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsWindowsNegative($agent)
     {
-        $this->object->setUserAgent($agent);
+        $object = new Windows($agent);
 
-        self::assertFalse($this->object->isWindows());
+        self::assertFalse($object->isWindows());
     }
 
     public function providerIsWindowsNegative()

@@ -88,29 +88,7 @@ class Huawei extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function canHandle()
     {
-        $huaweiPhones = array(
-            'Huawei',
-            'HUAWEI',
-            'IDEOS ',
-            'Ideos ',
-            'U8100',
-            'U8110',
-            'U8180',
-            'U8500',
-            'U8510',
-            'U8650',
-            'u8800',
-            'U8850',
-            'Vodafone 858',
-            'Vodafone 845',
-            'TSP21'
-        );
-
-        if (!$this->utils->checkIfContains($huaweiPhones)) {
-            return false;
-        }
-
-        return true;
+        //
     }
 
     /**

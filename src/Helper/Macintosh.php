@@ -37,7 +37,7 @@ use UaHelper\Utils;
  *
  * @package   BrowserDetector
  */
-class Windows
+class Macintosh
 {
     /**
      * @var string the user agent to handle
@@ -54,7 +54,7 @@ class Windows
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Helper\Windows
+     * @return \BrowserDetector\Helper\Macintosh
      */
     public function __construct($useragent)
     {
@@ -64,66 +64,20 @@ class Windows
         $this->utils->setUserAgent($useragent);
     }
 
-    public function isWindows()
+    public function isMacintosh()
     {
-        $isNotReallyAWindows = array(
-            // other OS and Mobile Windows
-            'Linux',
+        $mac = array(
             'Macintosh',
-            'Mobi'
+            'Darwin',
+            'Mac_PowerPC',
+            'MacBook',
+            'for Mac',
+            'PPC Mac',
+            'Mac OS X',
+            '(MacOS)'
         );
 
-        $spamHelper = new SpamCrawlerFake();
-        $spamHelper->setUserAgent($this->useragent);
-
-        if ($this->utils->checkIfContains($isNotReallyAWindows)
-            || (!$spamHelper->isAnonymized() && $spamHelper->isFakeWindows())
-            || $this->isMobileWindows()
-        ) {
-            return false;
-        }
-
-        $windows = array(
-            'win10', 'win9', 'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
-            'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',
-            'windows 3.1', 'win9x/nt 4.90', 'windows xp', 'windows me',
-            'windows', 'win32'
-        );
-
-        if (!$this->utils->checkIfContains($windows, true)
-            && !$this->utils->checkIfContains(array('trident', 'Microsoft', 'outlook', 'msoffice', 'ms-office'), true)
-        ) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('trident', true)
-            && !$this->utils->checkIfContains($windows, true)
-        ) {
-            return false;
-        }
-
-        return true;
-    }
-
-    public function isMobileWindows()
-    {
-        $mobileWindows = array(
-            'windows ce', 'windows phone', 'windows mobile',
-            'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
-            'windowsmobile', 'wpdesktop', 'mobile version', 'wpdesktop'
-        );
-
-        if (!$this->utils->checkIfContains($mobileWindows, true)) {
-            return false;
-        }
-
-        $isNotReallyAWindows = array(
-            // other OS
-            'Linux',
-            'Macintosh',
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAWindows)) {
+        if (!$this->utils->checkIfContains($mac)) {
             return false;
         }
 

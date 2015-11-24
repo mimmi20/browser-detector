@@ -28,54 +28,68 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory;
+namespace BrowserDetector\Helper;
 
-use BrowserDetector\Detector\Device\GeneralMobile;
-use BrowserDetector\Detector\Device\UnknownDevice;
-use BrowserDetector\Detector\Factory\Device\DesktopFactory;
-use BrowserDetector\Detector\Factory\Device\TvFactory;
-use BrowserDetector\Helper\MobileDevice;
-use Psr\Log\LoggerInterface;
-use UaMatcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Helper\Tv as TvHelper;
-use BrowserDetector\Helper\Desktop;
+use UaHelper\Utils;
 
 /**
- * Device detection class
+ * a helper to detect windows
  *
- * @category  BrowserDetector
  * @package   BrowserDetector
- * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DeviceFactory
+class Linux
 {
     /**
-     * Gets the information about the rendering engine by User Agent
-     *
-     * @param string $agent
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \UaMatcher\Device\DeviceInterface
+     * @var string the user agent to handle
      */
-    public static function detect($agent, LoggerInterface $logger)
+    private $useragent = '';
+
+    /**
+     * @var \UaHelper\Utils the helper class
+     */
+    private $utils = null;
+
+    /**
+     * Class Constructor
+     *
+     * @param string $useragent
+     *
+     * @return \BrowserDetector\Helper\Linux
+     */
+    public function __construct($useragent)
     {
-        if ((new MobileDevice($agent))->isMobile()) {
-            $device = new GeneralMobile($agent, $logger);
-        } elseif ((new TvHelper($agent))->isTvDevice()) {
-            $device = TvFactory::detect($agent, $logger);
-        } elseif ((new Desktop($agent))->isDesktopDevice()) {
-            $device = DesktopFactory::detect($agent, $logger);
-        } else {
-            $device = new UnknownDevice($agent, $logger);
-        }
-        $device->setLogger($logger);
+        $this->utils = new Utils();
 
-        if ($device instanceof DeviceHasChildrenInterface) {
-            $device = $device->detectDevice();
+        $this->useragent = $useragent;
+        $this->utils->setUserAgent($useragent);
+    }
+
+    public function isLinux()
+    {
+        $linux = array(
+            'Linux',
+            'Debian',
+            'Ubuntu',
+            'SUSE',
+            'Fedora',
+            'Mint',
+            'redhat',
+            'Slackware',
+            'Zenwalk GNU',
+            'CentOS',
+            'Kubuntu',
+            'CrOs',
+            'Moblin'
+        );
+
+        if (!$this->utils->checkIfContains($linux, true)) {
+            return false;
         }
 
-        return $device;
+        if ($this->utils->checkIfContains(array('Loewe; SL121', 'eeepc'))) {
+            return false;
+        }
+
+        return true;
     }
 }

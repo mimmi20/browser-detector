@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,45 +89,9 @@ class Acer extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function canHandle()
     {
-        $otherPhones = array('HTC', 'IdeaTab', 'Wildfire S A510e', 'HTC_WildfireS_A510e', 'A101IT', 'SmartTabII7');
+        $helper = new MobileDevice($this->useragent);
 
-        if ($this->utils->checkIfContains($otherPhones)) {
-            return false;
-        }
-
-        $acerPhones = array(
-            'Acer',
-            'Iconia',
-            ' A100 ',
-            ' A101 ',
-            ' A200 ',
-            ' A210 ',
-            ' A211 ',
-            ' A500 ',
-            ' A501 ',
-            ' A510 ',
-            ' A511 ',
-            ' A700 ',
-            ' A701 ',
-            ' A1-',
-            ' A3-',
-            ' B1-',
-            ' E140 ',
-            ' E310 ',
-            ' E320 ',
-            ' G100W ',
-            'Stream-S110',
-            ' Liquid ',
-            ' S500 ',
-            ' Z150 ',
-            ' V370 ',
-        );
-
-        if (!$this->utils->checkIfContains($acerPhones)) {
-            return false;
-        }
-
-        return true;
+        return $helper->isAcer();
     }
 
     /**

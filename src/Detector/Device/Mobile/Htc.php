@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,54 +89,9 @@ class Htc extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains('WOHTC')) {
-            return false;
-        }
+        $helper = new MobileDevice($this->useragent);
 
-        $htcPhones = array(
-            'HTC',
-            '7 Trophy',
-            ' a6288 ',
-            'Desire_A8181',
-            'Desire HD',
-            'Desire S',
-            'EVO3D_X515m',
-            'HD2',
-            'IncredibleS_S710e',
-            'MDA_Compact_V',
-            'MDA Vario',
-            'MDA_Vario_V',
-            'One S',
-            'Sensation_4G',
-            'SensationXE',
-            'SensationXL',
-            'Sensation XL',
-            'Sensation_Z710e',
-            'Xda_Diamond_2',
-            'Vision-T-Mobile-G2',
-            'Wildfire S',
-            'Wildfire S A510e',
-            'HTC_WildfireS_A510e',
-            'VPA_Touch',
-            'APA9292KT',
-            'APA7373KT',
-            'APX515CKT',
-            ' a315c ',
-            'Nexus One',
-            'NexusOne',
-            'Nexus-One',
-            'Nexus 9',
-            'pcdadr6350',
-            'ADR6350',
-            'PJ83100',
-            'Vodafone Smart Tab III 7'
-        );
-
-        if (!$this->utils->checkIfContains($htcPhones)) {
-            return false;
-        }
-
-        return true;
+        return $helper->isHtc();
     }
 
     /**

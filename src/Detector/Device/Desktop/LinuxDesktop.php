@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Desktop;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\Linux;
 
 /**
  * @category  BrowserDetector
@@ -84,31 +85,7 @@ class LinuxDesktop extends AbstractDevice
      */
     public function canHandle()
     {
-        $linux = array(
-            'Linux',
-            'Debian',
-            'Ubuntu',
-            'SUSE',
-            'Fedora',
-            'Mint',
-            'redhat',
-            'Slackware',
-            'Zenwalk GNU',
-            'CentOS',
-            'Kubuntu',
-            'CrOs',
-            'Moblin'
-        );
-
-        if (!$this->utils->checkIfContains($linux, true)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('Loewe; SL121', 'eeepc'))) {
-            return false;
-        }
-
-        return true;
+        return (new Linux($this->useragent))->isLinux();
     }
 
     /**

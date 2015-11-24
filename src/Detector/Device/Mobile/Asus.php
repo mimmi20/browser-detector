@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,37 +89,9 @@ class Asus extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function canHandle()
     {
-        $asusPhones = array(
-            'Asus',
-            'ASUS',
-            'Transformer',
-            'Slider SL101',
-            'eee_701',
-            'eeepc',
-            'Nexus 7',
-            'PadFone',
-            'ME301T',
-            'ME302C',
-            'ME371MG',
-            'ME173X',
-            'ME302KL',
-            'ME172V',
-            'K00E',
-            'K00F',
-            'K00Z',
-            'ME372CG',
-            'TF300T',
-        );
+        $helper = new MobileDevice($this->useragent);
 
-        if (!$this->utils->checkIfContains($asusPhones)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('IdeaTab'))) {
-            return false;
-        }
-
-        return true;
+        return $helper->isAsus();
     }
 
     /**

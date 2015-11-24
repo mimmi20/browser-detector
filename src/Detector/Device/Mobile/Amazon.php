@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,27 +89,9 @@ class Amazon extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function canHandle()
     {
-        $amazonPhones = array(
-            'Amazon',
-            'Kindle',
-            'Silk',
-            'KFTT',
-            'KFOT',
-            'KFJWI',
-            'KFSOWI',
-            'KFTHWI',
-            'SD4930UR',
-        );
+        $helper = new MobileDevice($this->useragent);
 
-        if (!$this->utils->checkIfContains($amazonPhones)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('PlayStation')) {
-            return false;
-        }
-
-        return true;
+        return $helper->isAmazon();
     }
 
     /**

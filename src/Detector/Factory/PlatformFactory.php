@@ -61,8 +61,7 @@ class PlatformFactory implements FactoryInterface
         $utils->setUserAgent($agent);
 
         $isWindows     = false;
-        $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($agent);
+        $windowsHelper = new WindowsHelper($agent);
 
         if (!$windowsHelper->isMobileWindows()
             && $windowsHelper->isWindows()

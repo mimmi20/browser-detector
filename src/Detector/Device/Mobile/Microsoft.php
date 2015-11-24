@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -92,19 +93,9 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ARM;'))) {
-            return false;
-        }
+        $helper = new MobileDevice($this->useragent);
 
-        if (!$this->utils->checkIfContains(array('Windows NT 6.2', 'Windows NT 6.3'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('WPDesktop'))) {
-            return false;
-        }
-
-        return true;
+        return $helper->isMicrosoft();
     }
 
     /**

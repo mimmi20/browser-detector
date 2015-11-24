@@ -30,14 +30,9 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\Desktop;
-use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\Tv as TvHelper;
-use BrowserDetector\Helper\Windows as WindowsHelper;
-use UaMatcher\Device\DeviceHasChildrenInterface;
 
 /**
  * @category  BrowserDetector
@@ -45,7 +40,7 @@ use UaMatcher\Device\DeviceHasChildrenInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterface
+class GeneralDesktop extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -89,37 +84,13 @@ class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterfac
      */
     public function canHandle()
     {
-        $windowsHelper = new Desktop($this->useragent);
+        $desktopHelper = new Desktop($this->useragent);
 
-        if ($windowsHelper->isDesktopDevice()) {
+        if ($desktopHelper->isDesktopDevice()) {
             return true;
         }
 
         return false;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaMatcher\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Desktop');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        $device = $chain->detect();
-
-        if ($device !== $this && $device instanceof DeviceHasChildrenInterface) {
-            $device = $device->detectDevice();
-        }
-
-        return $device;
     }
 
     /**

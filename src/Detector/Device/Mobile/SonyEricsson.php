@@ -42,6 +42,7 @@ use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -95,91 +96,9 @@ class SonyEricsson extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function canHandle()
     {
-        $sonyPhones = array(
-            'sonyericsson',
-            'sony',
-            'c1505',
-            'c1605',
-            'c1905',
-            'c2105',
-            'c5303',
-            'c6602',
-            'c6603',
-            'c6503',
-            'c6903',
-            'xperia z',
-            'c6833',
-            'd6503',
-            'd5503',
-            'd6603',
-            'd5803',
-            'd2303',
-            'd2005',
-            'e10i',
-            'e15i',
-            'e15av',
-            'ebrd1',
-            'lt15i',
-            'lt18',
-            'lt18i',
-            'lt22i',
-            'lt25i',
-            'lt26i',
-            'lt28h',
-            'lt30p',
-            'mk16i',
-            'mt11i',
-            'mt15i',
-            'mt27i',
-            'nexushd2',
-            'r800i',
-            's312',
-            'sk17i',
-            'sgp311',
-            'sgp312',
-            'sgp321',
-            'sgp511',
-            'sgp512',
-            'sgp521',
-            'sgpt12',
-            'sgpt13',
-            'st15i',
-            'st16i',
-            'st17i',
-            'st18i',
-            'st19i',
-            'st20i',
-            'st21i',
-            'st22i',
-            'st23i',
-            'st24i',
-            'st25i',
-            'st26i',
-            'st27i',
-            'u20i',
-            'w508a',
-            'w760i',
-            'wt13i',
-            'wt19i',
-            'x1i',
-            'x10',
-            'xst2',
-            'playstation',
-            'psp',
-            'xperia arc'
-        );
+        $helper = new MobileDevice($this->useragent);
 
-        if (!$this->utils->checkIfContains($sonyPhones, true)) {
-            return false;
-        }
-
-        $others = array('uno_x10', 'x10.dual');
-
-        if ($this->utils->checkIfContains($others, true)) {
-            return false;
-        }
-
-        return true;
+        return $helper->isSony();
     }
 
     /**

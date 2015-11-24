@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,16 +89,9 @@ class Beidou extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function canHandle()
     {
-        $BeidouPhones = array(
-            'Beidou',
-            'LA-M1'
-        );
+        $helper = new MobileDevice($this->useragent);
 
-        if ($this->utils->checkIfContains($BeidouPhones)) {
-            return true;
-        }
-
-        return false;
+        return $helper->isBeidou();
     }
 
     /**

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -86,54 +87,9 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function canHandle()
     {
-        $samsungPhones = array(
-            'samsung',
-            'samsung',
-            'gt-',
-            'sam-',
-            'sc-',
-            'sch-',
-            'sec-',
-            'sgh-',
-            'shv-',
-            'shw-',
-            'sm-',
-            'sph-',
-            'galaxy',
-            'nexus',
-            'i7110',
-            'i9100',
-            'i9300',
-            'yp-g',
-            'continuum-',
-            'blaze'
-        );
+        $helper = new MobileDevice($this->useragent);
 
-        if (!$this->utils->checkIfContains($samsungPhones, true)) {
-            return false;
-        }
-
-        $otherMobiles = array(
-            'Asus',
-            'U30GT',
-            'Nexus 7',
-            'Nexus 4',
-            'Nexus 5',
-            'Nexus 9',
-            'NexusHD2',
-            'Nexus One',
-            'NexusOne',
-            'Nexus-One',
-            'GT-H',
-            'MT-GT-',
-            'Galaxy S3 EX'
-        );
-
-        if ($this->utils->checkIfContains($otherMobiles)) {
-            return false;
-        }
-
-        return true;
+        return $helper->isSamsung();
     }
 
     /**

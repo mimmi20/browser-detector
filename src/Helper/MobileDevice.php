@@ -208,10 +208,577 @@ class MobileDevice
             return true;
         }
 
-        $windowsHelper = new Windows();
-        $windowsHelper->setUserAgent($this->useragent);
+        $windowsHelper = new Windows($this->useragent);
 
         if ($windowsHelper->isWindows() && $this->utils->checkIfContains('touch', true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSamsung()
+    {
+        $samsungPhones = array(
+            'samsung',
+            'samsung',
+            'gt-',
+            'sam-',
+            'sc-',
+            'sch-',
+            'sec-',
+            'sgh-',
+            'shv-',
+            'shw-',
+            'sm-',
+            'sph-',
+            'galaxy',
+            'nexus',
+            'i7110',
+            'i9100',
+            'i9300',
+            'yp-g',
+            'continuum-',
+            'blaze'
+        );
+
+        if (!$this->utils->checkIfContains($samsungPhones, true)) {
+            return false;
+        }
+
+        $otherMobiles = array(
+            'Asus',
+            'U30GT',
+            'Nexus 7',
+            'Nexus 4',
+            'Nexus 5',
+            'Nexus 9',
+            'NexusHD2',
+            'Nexus One',
+            'NexusOne',
+            'Nexus-One',
+            'GT-H',
+            'MT-GT-',
+            'Galaxy S3 EX'
+        );
+
+        if ($this->utils->checkIfContains($otherMobiles)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isApple()
+    {
+        if (!$this->utils->checkIfContains(array('ipad', 'iphone', 'ipod', 'like mac os x'), true)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('Android', 'MooPad'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isHtc()
+    {
+        if ($this->utils->checkIfContains('WOHTC')) {
+            return false;
+        }
+
+        $htcPhones = array(
+            'HTC',
+            '7 Trophy',
+            ' a6288 ',
+            'Desire_A8181',
+            'Desire HD',
+            'Desire S',
+            'EVO3D_X515m',
+            'HD2',
+            'IncredibleS_S710e',
+            'MDA_Compact_V',
+            'MDA Vario',
+            'MDA_Vario_V',
+            'One S',
+            'Sensation_4G',
+            'SensationXE',
+            'SensationXL',
+            'Sensation XL',
+            'Sensation_Z710e',
+            'Xda_Diamond_2',
+            'Vision-T-Mobile-G2',
+            'Wildfire S',
+            'Wildfire S A510e',
+            'HTC_WildfireS_A510e',
+            'VPA_Touch',
+            'APA9292KT',
+            'APA7373KT',
+            'APX515CKT',
+            ' a315c ',
+            'Nexus One',
+            'NexusOne',
+            'Nexus-One',
+            'Nexus 9',
+            'pcdadr6350',
+            'ADR6350',
+            'PJ83100',
+            'Vodafone Smart Tab III 7'
+        );
+
+        if (!$this->utils->checkIfContains($htcPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isHuawei()
+    {
+        $huaweiPhones = array(
+            'Huawei',
+            'HUAWEI',
+            'IDEOS ',
+            'Ideos ',
+            'U8100',
+            'U8110',
+            'U8180',
+            'U8500',
+            'U8510',
+            'U8650',
+            'u8800',
+            'U8850',
+            'Vodafone 858',
+            'Vodafone 845',
+            'TSP21'
+        );
+
+        if (!$this->utils->checkIfContains($huaweiPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSony()
+    {
+        $sonyPhones = array(
+            'sonyericsson',
+            'sony',
+            'c1505',
+            'c1605',
+            'c1905',
+            'c2105',
+            'c5303',
+            'c6602',
+            'c6603',
+            'c6503',
+            'c6903',
+            'xperia z',
+            'c6833',
+            'd6503',
+            'd5503',
+            'd6603',
+            'd5803',
+            'd2303',
+            'd2005',
+            'e10i',
+            'e15i',
+            'e15av',
+            'ebrd1',
+            'lt15i',
+            'lt18',
+            'lt18i',
+            'lt22i',
+            'lt25i',
+            'lt26i',
+            'lt28h',
+            'lt30p',
+            'mk16i',
+            'mt11i',
+            'mt15i',
+            'mt27i',
+            'nexushd2',
+            'r800i',
+            's312',
+            'sk17i',
+            'sgp311',
+            'sgp312',
+            'sgp321',
+            'sgp511',
+            'sgp512',
+            'sgp521',
+            'sgpt12',
+            'sgpt13',
+            'st15i',
+            'st16i',
+            'st17i',
+            'st18i',
+            'st19i',
+            'st20i',
+            'st21i',
+            'st22i',
+            'st23i',
+            'st24i',
+            'st25i',
+            'st26i',
+            'st27i',
+            'u20i',
+            'w508a',
+            'w760i',
+            'wt13i',
+            'wt19i',
+            'x1i',
+            'x10',
+            'xst2',
+            'playstation',
+            'psp',
+            'xperia arc'
+        );
+
+        if (!$this->utils->checkIfContains($sonyPhones, true)) {
+            return false;
+        }
+
+        $others = array('uno_x10', 'x10.dual');
+
+        if ($this->utils->checkIfContains($others, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function isNokia()
+    {
+        $nokiaPhones = array(
+            'nokia',
+            's60; symbos;',
+            'series 40',
+            'series 60',
+            's60v5',
+            'n900'
+        );
+
+        if (!$this->utils->checkIfContains($nokiaPhones, true)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('N90 DUAL CORE2'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAmazon()
+    {
+        $amazonPhones = array(
+            'Amazon',
+            'Kindle',
+            'Silk',
+            'KFTT',
+            'KFOT',
+            'KFJWI',
+            'KFSOWI',
+            'KFTHWI',
+            'SD4930UR',
+        );
+
+        if (!$this->utils->checkIfContains($amazonPhones)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('PlayStation')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAlcatel()
+    {
+        $alcatelPhones = array(
+            'ALCATEL',
+            'Alcatel',
+            'Vodafone 975N',
+            'Vodafone Smart II',
+            'ONE TOUCH',
+        );
+
+        if ($this->utils->checkIfContains($alcatelPhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAcer()
+    {
+        $otherPhones = array('HTC', 'IdeaTab', 'Wildfire S A510e', 'HTC_WildfireS_A510e', 'A101IT', 'SmartTabII7');
+
+        if ($this->utils->checkIfContains($otherPhones)) {
+            return false;
+        }
+
+        $acerPhones = array(
+            'Acer',
+            'Iconia',
+            ' A100 ',
+            ' A101 ',
+            ' A200 ',
+            ' A210 ',
+            ' A211 ',
+            ' A500 ',
+            ' A501 ',
+            ' A510 ',
+            ' A511 ',
+            ' A700 ',
+            ' A701 ',
+            ' A1-',
+            ' A3-',
+            ' B1-',
+            ' E140 ',
+            ' E310 ',
+            ' E320 ',
+            ' G100W ',
+            'Stream-S110',
+            ' Liquid ',
+            ' S500 ',
+            ' Z150 ',
+            ' V370 ',
+        );
+
+        if (!$this->utils->checkIfContains($acerPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isMotorola()
+    {
+        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
+            return false;
+        }
+
+        $motorolaPhones = array(
+            'motorola',
+            'moto',
+            //'mot',
+            'mb200',
+            'mb300',
+            ' droid ',
+            ' droidx ',
+            'droid-bionic',
+            'xt702',
+            'mz601',
+            'mz604',
+            'mz616',
+            'xoom',
+            'milestone',
+            'mb511',
+            'mb525',
+            'mb526',
+            'mb632',
+            'mb860',
+            'me511',
+            'me525',
+            'me600',
+            'xt316',
+            'xt320',
+            'xt610',
+            'xt615',
+            'xt890',
+            'xt907',
+            'xt910',
+            'xt925',
+            'xt1021',
+            'xt1052',
+            'xt1032',
+        );
+
+        if (!$this->utils->checkIfContains($motorolaPhones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isMicrosoft()
+    {
+        if (!$this->utils->checkIfContains(array('ARM;'))) {
+            return false;
+        }
+
+        if (!$this->utils->checkIfContains(array('Windows NT 6.2', 'Windows NT 6.3'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('WPDesktop'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isArchos()
+    {
+        $archosPhones = array(
+            'archos',
+            'a35dm',
+            'a70bht',
+            'a70cht',
+            'a70s',
+            'a70h2',
+            'a80ksc',
+            'a101it',
+            'a70hb',
+            'a7eb'
+        );
+
+        if ($this->utils->checkIfContains($archosPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isArnova()
+    {
+        $arnovaPhones = array(
+            'ARNOVA',
+            'AN7CG2',
+            'AN7DG3',
+            'AN7FG3',
+            'AN10BG3',
+            'AN10DG3',
+            'ARCHM901',
+            'AN7BG2DT',
+            'AN9G2I'
+        );
+
+        if (!$this->utils->checkIfContains($arnovaPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAsus()
+    {
+        $asusPhones = array(
+            'Asus',
+            'ASUS',
+            'Transformer',
+            'Slider SL101',
+            'eee_701',
+            'eeepc',
+            'Nexus 7',
+            'PadFone',
+            'ME301T',
+            'ME302C',
+            'ME371MG',
+            'ME173X',
+            'ME302KL',
+            'ME172V',
+            'K00E',
+            'K00F',
+            'K00Z',
+            'ME372CG',
+            'TF300T',
+        );
+
+        if (!$this->utils->checkIfContains($asusPhones)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('IdeaTab'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isBeidou()
+    {
+        $beidouPhones = array(
+            'Beidou',
+            'LA-M1'
+        );
+
+        if ($this->utils->checkIfContains($beidouPhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isBlackberry()
+    {
+        $rimPhones = array('BlackBerry', 'PlayBook', 'RIM Tablet', 'BB10');
+
+        if ($this->utils->checkIfContains($rimPhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isBlaupunkt()
+    {
+        $blaupunktPhones = array('Blaupunkt', 'Endeavour');
+
+        if ($this->utils->checkIfContains($blaupunktPhones)) {
             return true;
         }
 

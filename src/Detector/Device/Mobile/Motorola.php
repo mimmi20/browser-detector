@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,51 +89,9 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
-            return false;
-        }
+        $helper = new MobileDevice($this->useragent);
 
-        $motorolaPhones = array(
-            'motorola',
-            'moto',
-            //'mot',
-            'mb200',
-            'mb300',
-            ' droid ',
-            ' droidx ',
-            'droid-bionic',
-            'xt702',
-            'mz601',
-            'mz604',
-            'mz616',
-            'xoom',
-            'milestone',
-            'mb511',
-            'mb525',
-            'mb526',
-            'mb632',
-            'mb860',
-            'me511',
-            'me525',
-            'me600',
-            'xt316',
-            'xt320',
-            'xt610',
-            'xt615',
-            'xt890',
-            'xt907',
-            'xt910',
-            'xt925',
-            'xt1021',
-            'xt1052',
-            'xt1032',
-        );
-
-        if (!$this->utils->checkIfContains($motorolaPhones, true)) {
-            return false;
-        }
-
-        return true;
+        return $helper->isMotorola();
     }
 
     /**

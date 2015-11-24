@@ -87,8 +87,7 @@ class WindowsDesktop extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($this->useragent);
+        $windowsHelper = new WindowsHelper($this->useragent);
 
         if (!$windowsHelper->isWindows()) {
             return false;

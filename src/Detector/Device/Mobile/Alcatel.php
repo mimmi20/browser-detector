@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,19 +89,9 @@ class Alcatel extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function canHandle()
     {
-        $alcatelPhones = array(
-            'ALCATEL',
-            'Alcatel',
-            'Vodafone 975N',
-            'Vodafone Smart II',
-            'ONE TOUCH',
-        );
+        $helper = new MobileDevice($this->useragent);
 
-        if ($this->utils->checkIfContains($alcatelPhones)) {
-            return true;
-        }
-
-        return false;
+        return $helper->isAlcatel();
     }
 
     /**

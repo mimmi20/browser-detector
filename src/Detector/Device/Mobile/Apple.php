@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Ios;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,15 +89,9 @@ class Apple extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ipad', 'iphone', 'ipod', 'like mac os x'), true)) {
-            return false;
-        }
+        $helper = new MobileDevice($this->useragent);
 
-        if ($this->utils->checkIfContains(array('Android', 'MooPad'))) {
-            return false;
-        }
-
-        return true;
+        return $helper->isApple();
     }
 
     /**

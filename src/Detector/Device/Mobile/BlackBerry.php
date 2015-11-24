@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -86,13 +87,9 @@ class BlackBerry extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function canHandle()
     {
-        $rimPhones = array('BlackBerry', 'PlayBook', 'RIM Tablet', 'BB10');
+        $helper = new MobileDevice($this->useragent);
 
-        if ($this->utils->checkIfContains($rimPhones)) {
-            return true;
-        }
-
-        return false;
+        return $helper->isBlackberry();
     }
 
     /**

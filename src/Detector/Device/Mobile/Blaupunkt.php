@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,13 +89,9 @@ class Blaupunkt extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function canHandle()
     {
-        $blaupunktPhones = array('Blaupunkt', 'Endeavour');
+        $helper = new MobileDevice($this->useragent);
 
-        if ($this->utils->checkIfContains($blaupunktPhones)) {
-            return true;
-        }
-
-        return false;
+        return $helper->isBlaupunkt();
     }
 
     /**

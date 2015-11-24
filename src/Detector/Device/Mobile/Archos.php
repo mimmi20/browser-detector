@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -88,24 +89,9 @@ class Archos extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function canHandle()
     {
-        $archosPhones = array(
-            'archos',
-            'a35dm',
-            'a70bht',
-            'a70cht',
-            'a70s',
-            'a70h2',
-            'a80ksc',
-            'a101it',
-            'a70hb',
-            'a7eb'
-        );
+        $helper = new MobileDevice($this->useragent);
 
-        if ($this->utils->checkIfContains($archosPhones, true)) {
-            return true;
-        }
-
-        return false;
+        return $helper->isArchos();
     }
 
     /**
