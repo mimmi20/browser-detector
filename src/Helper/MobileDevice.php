@@ -784,4 +784,492 @@ class MobileDevice
 
         return false;
     }
+
+    /**
+     * @return bool
+     */
+    public function isCaterpillar()
+    {
+        $caterpillarPhones = array(
+            'Caterpillar',
+            'B15Q',
+        );
+
+        if (!$this->utils->checkIfContains($caterpillarPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCatSound()
+    {
+        $catSoundPhones = array(
+            'CatNova',
+            'CAT NOVA',
+            'CatNova8',
+            'Cat StarGate',
+            'Cat Tablet',
+            'Tablet-PC-4',
+            'TOLINO_BROWSER',
+            'Weltbild',
+            'Kinder-Tablet'
+        );
+
+        if (!$this->utils->checkIfContains($catSoundPhones)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('INM8002KP'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCoby()
+    {
+        $cobyphones = array(
+            'Coby',
+            'MID8024',
+            'MID1125',
+            'MID1126',
+            'MID7015',
+            'MID7022',
+            'MID8127',
+            'MID8128',
+            'MID9742',
+            'NBPC724'
+        );
+
+        if ($this->utils->checkIfContains($cobyphones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isComag()
+    {
+        $comagphones = array(
+            'Comag',
+            'WTDR1018',
+        );
+
+        if ($this->utils->checkIfContains($comagphones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCosmote()
+    {
+        if (!$this->utils->checkIfContains('cosmote', true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCreative()
+    {
+        $creativePhones = array('Creative', 'ZiiLABS');
+
+        if ($this->utils->checkIfContains($creativePhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCube()
+    {
+        if (!$this->utils->checkIfContains(array('cube', 'U30GT'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCubot()
+    {
+        $cubotPhones = array('CUBOT');
+
+        if (!$this->utils->checkIfContains($cubotPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isZte()
+    {
+        $ztePhones = array(
+            'zte',
+            'base tab',
+            'base lutea',
+            'BASE_Lutea_3',
+            'racerii',
+            ' x920 ',
+            ' n600 ',
+            ' w713 ',
+            ' v880 ',
+            ' v9 ',
+            'smarttab7',
+            'smarttab10',
+            'blade',
+            'kis plus',
+            'vodafone smart 4g',
+        );
+
+        if (!$this->utils->checkIfContains($ztePhones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDell()
+    {
+        $dellphones = array('dell');
+
+        if ($this->utils->checkIfContains($dellphones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDenver()
+    {
+        if (!$this->utils->checkIfContains(array('Denver', 'TAD-'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDocomo()
+    {
+        $doCoMophones = array(
+            'DoCoMo',
+            'P900i'
+        );
+
+        if ($this->utils->checkIfContains($doCoMophones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isEasypix()
+    {
+        if (!$this->utils->checkIfContains(array('Easypix', 'Junior 4.0', 'EasyPad'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isEfox()
+    {
+        $efoxPhones = array(
+            'Efox', 'SMART-E5'
+        );
+
+        if (!$this->utils->checkIfContains($efoxPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isEpad()
+    {
+        if (!$this->utils->checkIfContains('p7901a', true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isFeiteng()
+    {
+        if (!$this->utils->checkIfContains(array('Feiteng', 'GT-H'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isFlytouch()
+    {
+        if (!$this->utils->checkIfContains('Flytouch')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isFujitsu()
+    {
+        if (!$this->utils->checkIfContains(array('Fujitsu', 'M532'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isHannspree()
+    {
+        if (!$this->utils->checkIfContains('SN10T1')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isHdc()
+    {
+        $hdcPhones = array(
+            'HDC',
+            'Galaxy S3 EX'
+        );
+
+        if (!$this->utils->checkIfContains($hdcPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isHiphone()
+    {
+        if (!$this->utils->checkIfContains(array('HiPhone', 'V919'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isHonlin()
+    {
+        $honlinPhones = array(
+            'Honlin',
+            'HL',
+            'PC1088',
+        );
+
+        if (!$this->utils->checkIfContains($honlinPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isHp()
+    {
+        $hpPhones = array(
+            'HP',
+            'Hp',
+            'P160U',
+            'TouchPad',
+            'hpwOS',
+            'hp-tablet',
+            'Pre/',
+            'Pixi/',
+            'Touchpad',
+            'Palm',
+            'Blazer',
+            'HPiPAQ',
+            'cm_tenderloin'
+        );
+
+        if (!$this->utils->checkIfContains($hpPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isHtm()
+    {
+        $htmPhones = array(
+            'MT-GT-A9500',
+        );
+
+        if (!$this->utils->checkIfContains($htmPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isIconbit()
+    {
+        $iconBitPhones = array('IconBit', 'nt-1001t', 'nt-1002t');
+
+        if ($this->utils->checkIfContains($iconBitPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isIntenso()
+    {
+        if (!$this->utils->checkIfContains(array('INM803HC', 'INM8002KP'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isIonik()
+    {
+        $ionikPhones = array('ionik', 'tp10.1-1500dc');
+
+        if ($this->utils->checkIfContains($ionikPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isJaytech()
+    {
+        $jaytechphones = array(
+            'JAY-tech',
+            'TPC-PA10.1M',
+        );
+
+        if ($this->utils->checkIfContains($jaytechphones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isJolla()
+    {
+        if (!$this->utils->checkIfContains(array('jolla', 'sailfish'), true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isKazam()
+    {
+        $kazamPhones = array('KAZAM');
+
+        if ($this->utils->checkIfContains($kazamPhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isKddi()
+    {
+        $kddiPhones = array('KDDI');
+
+        if ($this->utils->checkIfContains($kddiPhones)) {
+            return true;
+        }
+
+        return false;
+    }
 }
