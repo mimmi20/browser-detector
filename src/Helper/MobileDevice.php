@@ -1272,7 +1272,6 @@ class MobileDevice
 
         return true;
     }
-<<<<<<< HEAD
 
     /**
      * @return bool
@@ -2189,6 +2188,4 @@ class MobileDevice
 
         return true;
     }
-=======
->>>>>>> parent of 319cd8a... change Helper for Mobile devices
 }
