@@ -141,9 +141,11 @@ use BrowserDetector\Detector\Device\Mobile\Zenithink;
 use BrowserDetector\Detector\Device\Mobile\Zopo;
 use BrowserDetector\Detector\Device\Mobile\Zte;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\Classname;
 use BrowserDetector\Helper\MobileDevice;
 use Psr\Log\LoggerInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * @category  BrowserDetector
@@ -156,13 +158,30 @@ class MobileFactory
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string                               $useragent
+     * @param \Psr\Log\LoggerInterface             $logger
+     * @param \WurflCache\Adapter\AdapterInterface $cache
      *
      * @return \UaMatcher\Device\DeviceInterface
      */
-    public static function detect($useragent, LoggerInterface $logger)
+    public static function detect($useragent, LoggerInterface $logger, AdapterInterface $cache = null)
     {
+        foreach (self::getChain($cache, $logger) as $device) {
+            /** @var \UaMatcher\Device\DeviceInterface $device */
+            $device->setUserAgent($useragent);
+
+            if ($device->canHandle()) {
+                $device->setLogger($logger);
+                $device->setCache($cache);
+
+                return $device;
+            }
+        }
+
+        $device = new GeneralMobile($useragent, $logger);
+        $device->setCache($cache);
+
+        return $device;
         $helper = new MobileDevice($useragent);
 
         if ($helper->isSamsung()) {
@@ -388,5 +407,101 @@ class MobileFactory
         }
 
         return $device;
+    }
+
+    /**
+     * @param \WurflCache\Adapter\AdapterInterface $cache
+     * @param \Psr\Log\LoggerInterface             $logger
+     *
+     * @return \UaMatcher\Device\DeviceInterface[]
+     */
+    private static function getChain(AdapterInterface $cache = null, LoggerInterface $logger = null)
+    {
+        static $list = null;
+
+        if (null === $list) {
+            if (null === $cache) {
+                $list = self::buildDeviceChain($logger);
+            } else {
+                $success = null;
+                $list    = $cache->getItem('MobileDeviceChain', $success);
+
+                if (!$success) {
+                    $list = self::buildDeviceChain($logger);
+
+                    $cache->setItem('MobileDeviceChain', $list);
+                }
+            }
+        }
+
+        foreach ($list as $browser) {
+            yield $browser;
+        }
+    }
+
+    /**
+     * creates the detection chain for browsers
+     *
+     * @param \Psr\Log\LoggerInterface $logger
+     *
+     * @return \UaMatcher\Device\DeviceInterface[]
+     */
+    private static function buildDeviceChain(LoggerInterface $logger = null)
+    {
+        $sourceDirectory = __DIR__ . '/../../Device/Mobile/';
+
+        $utils    = new Classname();
+        $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
+        $list     = array();
+
+        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
+            /** @var $file \SplFileInfo */
+            if (!$file->isFile() || $file->getExtension() != 'php') {
+                continue;
+            }
+
+            $className = $utils->getClassNameFromFile(
+                $file->getBasename('.php'),
+                '\BrowserDetector\Detector\Device\Mobile',
+                true
+            );
+
+            try {
+                /** @var \UaMatcher\Device\DeviceInterface $handler */
+                $handler = new $className();
+            } catch (\Exception $e) {
+                $logger->error(new \Exception('an error occured while creating the device class', 0, $e));
+
+                continue;
+            }
+
+            $list[] = $handler;
+        }
+
+        $names     = array();
+        $companies = array();
+        $weights   = array();
+
+        foreach ($list as $key => $entry) {
+            /** @var \UaMatcher\Device\DeviceInterface $entry */
+            $names[$key]     = $entry->getCapability('device_name');
+            $weights[$key]   = $entry->getWeight();
+            $companies[$key] = $entry->getManufacturer()->getName();
+        }
+
+        array_multisort(
+            $weights,
+            SORT_DESC,
+            SORT_NUMERIC,
+            $companies,
+            SORT_ASC,
+            SORT_NATURAL,
+            $names,
+            SORT_ASC,
+            SORT_NATURAL,
+            $list
+        );
+
+        return $list;
     }
 }

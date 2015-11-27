@@ -30,13 +30,13 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Factory\Device\DesktopFactory;
 use BrowserDetector\Detector\Factory\Device\MobileFactory;
 use BrowserDetector\Detector\Factory\Device\TvFactory;
 use BrowserDetector\Helper\MobileDevice;
 use Psr\Log\LoggerInterface;
+use WurflCache\Adapter\AdapterInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Helper\Desktop;
@@ -55,15 +55,16 @@ class DeviceFactory
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $agent
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string                               $agent
+     * @param \Psr\Log\LoggerInterface             $logger
+     * @param \WurflCache\Adapter\AdapterInterface $cache
      *
      * @return \UaMatcher\Device\DeviceInterface
      */
-    public static function detect($agent, LoggerInterface $logger)
+    public static function detect($agent, LoggerInterface $logger, AdapterInterface $cache = null)
     {
         if ((new MobileDevice($agent))->isMobile()) {
-            $device = MobileFactory::detect($agent, $logger);
+            $device = MobileFactory::detect($agent, $logger, $cache);
         } elseif ((new TvHelper($agent))->isTvDevice()) {
             $device = TvFactory::detect($agent, $logger);
         } elseif ((new Desktop($agent))->isDesktopDevice()) {

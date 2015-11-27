@@ -157,7 +157,7 @@ class BrowserDetector
      */
     private function buildResult(GenericRequest $request)
     {
-        $device = DeviceFactory::detect($request->getDeviceUserAgent(), $this->logger);
+        $device = DeviceFactory::detect($request->getDeviceUserAgent(), $this->logger, $this->cache);
         $device->setLogger($this->logger);
 
         if ($device instanceof DeviceHasVersionInterface) {

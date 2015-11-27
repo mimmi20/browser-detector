@@ -30,20 +30,7 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Browser\Android;
-use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Browser\Dalvik;
-use BrowserDetector\Detector\Browser\FastbotCrawler;
-use BrowserDetector\Detector\Browser\Firefox;
-use BrowserDetector\Detector\Browser\FlyFlow;
-use BrowserDetector\Detector\Browser\MicrosoftEdge;
-use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
-use BrowserDetector\Detector\Browser\PhantomJs;
-use BrowserDetector\Detector\Browser\Safari;
-use BrowserDetector\Detector\Browser\SecureBrowser360;
-use BrowserDetector\Detector\Browser\SpeedBrowser360;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Detector\Browser\YahooSlurp;
 use BrowserDetector\Helper\Classname;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
@@ -66,52 +53,12 @@ class BrowserFactory
      * @param \Psr\Log\LoggerInterface             $logger
      * @param \WurflCache\Adapter\AdapterInterface $cache
      *
-     * @return \UaMatcher\Browser\BrowserInterface
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public static function detect($agent, LoggerInterface $logger, AdapterInterface $cache = null)
     {
-        /*
-        if (preg_match('/(flyflow)/i', $agent)) {
-            $browser = new FlyFlow($agent, $logger);
-        } elseif (preg_match('/(dalvik)/i', $agent)) {
-            $browser = new Dalvik($agent, $logger);
-        } elseif (preg_match('/(dol(ph|f)in)/i', $agent)) {
-            $browser = new Dalvik($agent, $logger);
-        } elseif (preg_match('/(qihu 360se)/i', $agent)) {
-            $browser = new SecureBrowser360($agent, $logger);
-        } elseif (preg_match('/(qihu 360ee)/i', $agent)) {
-            $browser = new SpeedBrowser360($agent, $logger);
-        } elseif (preg_match('/(edge)/i', $agent)) {
-            $browser = new MicrosoftEdge($agent, $logger);
-        } elseif (preg_match('/(msie)/i', $agent)) {
-            $browser = new MicrosoftInternetExplorer($agent, $logger);
-        } elseif (preg_match('/((linux|android).*version.*chrome.*safari)/i', $agent)) {
-            $browser = new Android($agent, $logger);
-        } elseif (preg_match('/(chrome|crmo)/i', $agent)) {
-            $browser = new Chrome($agent, $logger);
-        } elseif (preg_match('/((linux|android).*version.*safari)/i', $agent)) {
-            $browser = new Android($agent, $logger);
-        } elseif (preg_match('/(phantomjs)/i', $agent)) {
-            $browser = new PhantomJs($agent, $logger);
-        } elseif (preg_match('/(yahoo! slurp)/i', $agent)) {
-            $browser = new YahooSlurp($agent, $logger);
-        } elseif (preg_match('/(safari)/i', $agent)) {
-            $browser = new Safari($agent, $logger);
-        } elseif (preg_match('/(firefox)/i', $agent)) {
-            $browser = new Firefox($agent, $logger);
-        } elseif (preg_match('/(fastbot crawler)/i', $agent)) {
-            $browser = new FastbotCrawler($agent, $logger);
-        } else {
-            $browser = new UnknownBrowser($agent, $logger);
-        }
-
-        $browser->setCache($cache);
-
-        return $browser;
-        /**/
-
         foreach (self::getChain($cache, $logger) as $browser) {
-            /** @var \UaMatcher\Browser\BrowserInterface $browser */
+            /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $browser */
             $browser->setUserAgent($agent);
 
             if ($browser->canHandle()) {
@@ -133,7 +80,7 @@ class BrowserFactory
      *
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return \UaMatcher\Browser\BrowserInterface[]
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser[]
      */
     private static function getChain(AdapterInterface $cache = null, LoggerInterface $logger = null)
     {
@@ -164,7 +111,7 @@ class BrowserFactory
      *
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return \UaMatcher\Browser\BrowserInterface[]
+     * @return \BrowserDetector\Detector\Browser\AbstractBrowser[]
      */
     private static function buildBrowserChain(LoggerInterface $logger = null)
     {
@@ -191,7 +138,7 @@ class BrowserFactory
             );
 
             try {
-                /** @var \UaMatcher\Browser\BrowserInterface $handler */
+                /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $handler */
                 $handler = new $className();
             } catch (\Exception $e) {
                 $logger->error(new \Exception('an error occured while creating the browser class', 0, $e));
@@ -206,7 +153,7 @@ class BrowserFactory
         $weights = array();
 
         foreach ($list as $key => $entry) {
-            /** @var \UaMatcher\Browser\BrowserInterface $entry */
+            /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $entry */
             $names[$key]   = $entry->getName();
             $weights[$key] = $entry->getWeight();
         }
