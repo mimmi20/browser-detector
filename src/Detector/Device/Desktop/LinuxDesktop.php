@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Device\Desktop;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Helper\Linux;
 
 /**
  * @category  BrowserDetector
@@ -77,16 +76,6 @@ class LinuxDesktop extends AbstractDevice
         // chips
         'nfc_support'            => false,
     );
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        return (new Linux($this->useragent))->isLinux();
-    }
 
     /**
      * gets the weight of the handler, which is used for sorting

@@ -82,26 +82,6 @@ class Yuandao extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $YuandaoPhones = array(
-            'yuandao',
-            'n90 dual core2',
-            'n90fhdrk'
-        );
-
-        if ($this->utils->checkIfContains($YuandaoPhones, true)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

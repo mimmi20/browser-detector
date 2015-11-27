@@ -274,7 +274,7 @@ class SpamCrawlerFake
      */
     public function isFakeBrowser()
     {
-        $noFakes = array('HTTrack', 'OpenVAS', 'OpenWeb', 'Maxthon', 'appengine', 'ClarityDailyBot');
+        $noFakes = array('HTTrack', 'OpenVAS', 'OpenWeb', 'Maxthon', 'appengine', 'ClarityDailyBot', 'Daumoa');
 
         if ($this->utils->checkIfContains($noFakes)) {
             return false;

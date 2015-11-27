@@ -528,11 +528,11 @@ class MobileDevice
             'ONE TOUCH',
         );
 
-        if ($this->utils->checkIfContains($alcatelPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($alcatelPhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -671,11 +671,11 @@ class MobileDevice
             'a7eb'
         );
 
-        if ($this->utils->checkIfContains($archosPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($archosPhones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -750,11 +750,11 @@ class MobileDevice
             'LA-M1'
         );
 
-        if ($this->utils->checkIfContains($beidouPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($beidouPhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -764,11 +764,11 @@ class MobileDevice
     {
         $rimPhones = array('BlackBerry', 'PlayBook', 'RIM Tablet', 'BB10');
 
-        if ($this->utils->checkIfContains($rimPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($rimPhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -778,11 +778,11 @@ class MobileDevice
     {
         $blaupunktPhones = array('Blaupunkt', 'Endeavour');
 
-        if ($this->utils->checkIfContains($blaupunktPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($blaupunktPhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -848,11 +848,11 @@ class MobileDevice
             'NBPC724'
         );
 
-        if ($this->utils->checkIfContains($cobyphones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($cobyphones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -865,11 +865,11 @@ class MobileDevice
             'WTDR1018',
         );
 
-        if ($this->utils->checkIfContains($comagphones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($comagphones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -891,11 +891,11 @@ class MobileDevice
     {
         $creativePhones = array('Creative', 'ZiiLABS');
 
-        if ($this->utils->checkIfContains($creativePhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($creativePhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -961,11 +961,11 @@ class MobileDevice
     {
         $dellphones = array('dell');
 
-        if ($this->utils->checkIfContains($dellphones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($dellphones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -990,11 +990,11 @@ class MobileDevice
             'P900i'
         );
 
-        if ($this->utils->checkIfContains($doCoMophones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($doCoMophones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1183,11 +1183,11 @@ class MobileDevice
     {
         $iconBitPhones = array('IconBit', 'nt-1001t', 'nt-1002t');
 
-        if ($this->utils->checkIfContains($iconBitPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($iconBitPhones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1209,11 +1209,11 @@ class MobileDevice
     {
         $ionikPhones = array('ionik', 'tp10.1-1500dc');
 
-        if ($this->utils->checkIfContains($ionikPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($ionikPhones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1226,11 +1226,11 @@ class MobileDevice
             'TPC-PA10.1M',
         );
 
-        if ($this->utils->checkIfContains($jaytechphones)) {
-            return true;
+        if (!$this->utils->checkIfContains($jaytechphones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1252,11 +1252,11 @@ class MobileDevice
     {
         $kazamPhones = array('KAZAM');
 
-        if ($this->utils->checkIfContains($kazamPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($kazamPhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1266,11 +1266,11 @@ class MobileDevice
     {
         $kddiPhones = array('KDDI');
 
-        if ($this->utils->checkIfContains($kddiPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($kddiPhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1308,11 +1308,11 @@ class MobileDevice
             'CoolTab-70'
         );
 
-        if ($this->utils->checkIfContains($lencoPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($lencoPhones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1419,11 +1419,11 @@ class MobileDevice
     {
         $meizuPhones = array('Meizu', ' M9 ');
 
-        if ($this->utils->checkIfContains($meizuPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($meizuPhones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1433,11 +1433,11 @@ class MobileDevice
     {
         $micromaxPhones = array('Micromax', ' A114 ');
 
-        if ($this->utils->checkIfContains($micromaxPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($micromaxPhones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1463,11 +1463,11 @@ class MobileDevice
             'N705i'
         );
 
-        if ($this->utils->checkIfContains($necPhones)) {
-            return true;
+        if (!$this->utils->checkIfContains($necPhones)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1501,11 +1501,11 @@ class MobileDevice
     {
         $nintendoDevices = array('Nintendo');
 
-        if ($this->utils->checkIfContains($nintendoDevices)) {
-            return true;
+        if (!$this->utils->checkIfContains($nintendoDevices)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1527,11 +1527,11 @@ class MobileDevice
             'neo_quad10',
         );
 
-        if ($this->utils->checkIfContains($odysPhones, true)) {
-            return true;
+        if (!$this->utils->checkIfContains($odysPhones, true)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -1571,6 +1571,618 @@ class MobileDevice
     public function isPanasonic()
     {
         if (!$this->utils->checkIfContains(array('Panasonic', ' dL1 '))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPandigital()
+    {
+        if (!$this->utils->checkIfContains(array('pandigital', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPearl()
+    {
+        if (!$this->utils->checkIfContains(array(' X7G ', 'X10.Dual'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPhicomm()
+    {
+        $phicommPhones = array(
+            'Phicomm',
+            'FWS610_EU'
+        );
+
+        if (!$this->utils->checkIfContains($phicommPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPipo()
+    {
+        $pipophones = array(
+            'pipo',
+            'm9pro',
+            'm6pro',
+        );
+
+        if (!$this->utils->checkIfContains($pipophones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPointofview()
+    {
+        if (!$this->utils->checkIfContains(array('TAB-PROTAB'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPomp()
+    {
+        $pompPhones = array('pomp');
+
+        if (!$this->utils->checkIfContains($pompPhones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPrestigio()
+    {
+        $phones = array(
+            'Prestigio',
+            'PMP5080CPRO',
+            'PMP3370B',
+            'PMP5197DULTRA',
+            'PMP5580C',
+            'PMP7100D3G',
+            'PMP7280C3G',
+            'PMP5770D',
+            'PAP5000TDUO',
+            'PMP5080B',
+        );
+
+        if (!$this->utils->checkIfContains($phones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isQmobile()
+    {
+        $qmobilePhones = array(
+            'QMobile',
+            ' A10 '
+        );
+
+        if (!$this->utils->checkIfContains($qmobilePhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSanyo()
+    {
+        if (!$this->utils->checkIfContains(array('Sanyo', 'PM-8200'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSharp()
+    {
+        $sharpPhones = array(
+            'SHARP',
+            'IS05',
+            'SH80F',
+            'SH7228U',
+            'SH8128U'
+        );
+
+        if (!$this->utils->checkIfContains($sharpPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSiemens()
+    {
+        $siemensPhones = array(
+            'Siemens',
+            'SIE-',
+            'SL45i',
+        );
+
+        if (!$this->utils->checkIfContains($siemensPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSimvallay()
+    {
+        if (!$this->utils->checkIfContains(array('SPX-5'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSprint()
+    {
+        if (!$this->utils->checkIfContains('Sprint')) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('APA9292KT', 'APA7373KT', 'APX515CKT'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isStar()
+    {
+        $starPhones = array('Star', 'N9500');
+
+        if (!$this->utils->checkIfContains($starPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isTechnisat()
+    {
+        $phones = array(
+            'Technisat',
+            'TechniPad'
+        );
+
+        if (!$this->utils->checkIfContains($phones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isTexet()
+    {
+        if (!$this->utils->checkIfContains(array('Texet', 'NaviPad TM-7055HD 3G'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isThl()
+    {
+        if (!$this->utils->checkIfContains(array('thl'), true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isTmobile()
+    {
+        $tmobilePhones = array(
+            'T-Mobile',
+            'myTouch4G',
+            'MDA compact',
+            'T-Mobile_G2_Touch',
+            'Pulse',
+            'Ameo'
+        );
+
+        if (!$this->utils->checkIfContains($tmobilePhones, true)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('Vision-T-Mobile-G2')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isTolino()
+    {
+        if (!$this->utils->checkIfContains(array('tolino'), true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isToshiba()
+    {
+        $toshibaPhones = array(
+            'Toshiba-',
+            'Toshiba/',
+            'Toshiba',
+            'AT100',
+            'AT200',
+            'AT300',
+            'folio100',
+            'TSB_CLOUD_COMPANION;FOLIO_AND_A',
+            'TOSHIBA_AC_AND_AZ',
+            'TOSHIBA_FOLIO_AND_A'
+        );
+
+        if (!$this->utils->checkIfContains($toshibaPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isTrekstor()
+    {
+        $trekStorPhones = array(
+            'TrekStor',
+            'ST10216-1',
+            'ST10416-1',
+            'ST70104',
+            'ST80216',
+            'Liro_Color',
+            'SurfTab_',
+            'ST701041',
+            'VT10416',
+            'breeze 10.1 quad',
+        );
+
+        if (!$this->utils->checkIfContains($trekStorPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isTriq()
+    {
+        $triQphones = array(
+            '3Q',
+            'MT0812E',
+        );
+
+        if (!$this->utils->checkIfContains($triQphones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isViewsonic()
+    {
+        if (!$this->utils->checkIfContains(array('ViewSonic', 'ViewPad'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isWiko()
+    {
+        $phones = array(
+            'Wiko',
+            'RAINBOW',
+            'GETAWAY',
+            'DARKMOON',
+            'LENNY',
+        );
+
+        if (!$this->utils->checkIfContains($phones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isWondermedia()
+    {
+        if (!$this->utils->checkIfContains(array(' WM8650 ', ' WM8850 '))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isXiaomi()
+    {
+        $xiaomiPhones = array(
+            'Xiaomi',
+            'MI 2',
+            'MI 3W',
+        );
+
+        if (!$this->utils->checkIfContains($xiaomiPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isYuandao()
+    {
+        $yuandaoPhones = array(
+            'yuandao',
+            'n90 dual core2',
+            'n90fhdrk'
+        );
+
+        if (!$this->utils->checkIfContains($yuandaoPhones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isYusu()
+    {
+        $yusuPhones = array(
+            'Yusu',
+            'e1107'
+        );
+
+        if (!$this->utils->checkIfContains($yusuPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isZenithink()
+    {
+        $zenithinkPhones = array(
+            'Zenithink',
+            ' zt180 '
+        );
+
+        if (!$this->utils->checkIfContains($zenithinkPhones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isZopo()
+    {
+        $zopoPhones = array(
+            ' ZP100 ',
+            ' ZP200 ',
+            ' ZP300 ',
+            ' ZP500 ',
+            ' ZP800H ',
+            ' ZP810 ',
+            ' ZP900 ',
+            ' ZP900H ',
+            ' ZP910 ',
+            ' ZP950 ',
+            ' ZP980 '
+        );
+
+        if (!$this->utils->checkIfContains($zopoPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCoolpad()
+    {
+        if (!$this->utils->checkIfContains(' N930 ')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isFaktorZwei()
+    {
+        if (!$this->utils->checkIfContains('FX2-PAD10')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isO2()
+    {
+        if (!$this->utils->checkIfContains('Xda_orbit_2')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isNvsbl()
+    {
+        if (!$this->utils->checkIfContains('P4D SIRIUS')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isPantech()
+    {
+        if (!$this->utils->checkIfContains('PantechP2020')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isMemup()
+    {
+        if (!$this->utils->checkIfContains('Slidepad')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isEinsUndEins()
+    {
+        if (!$this->utils->checkIfContains('smartpad')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isVizio()
+    {
+        if (!$this->utils->checkIfContains('VTAB1008')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isMiui()
+    {
+        if (!$this->utils->checkIfContains('MIUI.us Sensation 4G')) {
             return false;
         }
 

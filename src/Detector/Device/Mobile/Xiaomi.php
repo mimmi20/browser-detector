@@ -82,26 +82,6 @@ class Xiaomi extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $XiaomiPhones = array(
-            'Xiaomi',
-            'MI 2',
-            'MI 3W',
-        );
-
-        if ($this->utils->checkIfContains($XiaomiPhones)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

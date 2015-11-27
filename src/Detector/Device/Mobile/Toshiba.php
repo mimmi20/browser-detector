@@ -80,33 +80,6 @@ class Toshiba extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $ToshibaPhones = array(
-            'Toshiba-',
-            'Toshiba/',
-            'Toshiba',
-            'AT100',
-            'AT200',
-            'AT300',
-            'folio100',
-            'TSB_CLOUD_COMPANION;FOLIO_AND_A',
-            'TOSHIBA_AC_AND_AZ',
-            'TOSHIBA_FOLIO_AND_A'
-        );
-
-        if (!$this->utils->checkIfContains($ToshibaPhones)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

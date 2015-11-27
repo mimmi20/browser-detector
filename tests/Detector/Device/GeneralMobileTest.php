@@ -25,49 +25,6 @@ class GeneralMobileTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider providerDetectDevice
-     * @param string $agent
-     * @param string $device
-     */
-    public function testDetectDevice($agent, $device)
-    {
-        $this->object->setUserAgent($agent);
-
-        self::assertInstanceOf($device, $this->object->detectDevice());
-    }
-
-    public function providerDetectDevice()
-    {
-        return array(
-            array('Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko', '\BrowserDetector\Detector\Device\GeneralMobile'),
-        );
-    }
-
-    /**
-     * @dataProvider providerGetDeviceType
-     *
-     * @param string $agent
-     * @param string $deviceType
-     */
-    public function testGetDeviceType($agent, $deviceType)
-    {
-        self::markTestSkipped('has to be changed');
-        $this->object->setUserAgent($agent);
-
-        $device = $this->object->detectDevice();
-        $device->detectSpecialProperties();
-
-        self::assertInstanceOf($deviceType, $this->object->getDeviceType());
-    }
-
-    public function providerGetDeviceType()
-    {
-        return array(
-            array('Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko', '\BrowserDetector\Detector\Type\Device\Tablet'),
-        );
-    }
-
-    /**
      * tests that a integer is returned
      */
     public function testGetWeight()

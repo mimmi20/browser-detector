@@ -82,25 +82,6 @@ class Hdc extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $hdcPhones = array(
-            'HDC',
-            'Galaxy S3 EX'
-        );
-
-        if (!$this->utils->checkIfContains($hdcPhones)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

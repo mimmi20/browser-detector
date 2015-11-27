@@ -80,20 +80,6 @@ class Jolla extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array('jolla', 'sailfish'), true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

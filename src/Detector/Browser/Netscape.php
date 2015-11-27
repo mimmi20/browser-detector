@@ -167,6 +167,8 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             'feedfetcher',
             'Exabot',
             'Powermarks',
+            'metager2-verification-bot',
+            'OpenHoseBot',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

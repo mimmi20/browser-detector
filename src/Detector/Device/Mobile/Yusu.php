@@ -82,25 +82,6 @@ class Yusu extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $YusuPhones = array(
-            'Yusu',
-            'e1107'
-        );
-
-        if (!$this->utils->checkIfContains($YusuPhones)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

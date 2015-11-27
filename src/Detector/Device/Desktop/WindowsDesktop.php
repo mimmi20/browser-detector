@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Device\Desktop;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Helper\Windows as WindowsHelper;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
@@ -79,22 +78,6 @@ class WindowsDesktop extends AbstractDevice implements DeviceHasSpecificPlatform
         // chips
         'nfc_support'            => false,
     );
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $windowsHelper = new WindowsHelper($this->useragent);
-
-        if (!$windowsHelper->isWindows()) {
-            return false;
-        }
-
-        return true;
-    }
 
     /**
      * gets the weight of the handler, which is used for sorting

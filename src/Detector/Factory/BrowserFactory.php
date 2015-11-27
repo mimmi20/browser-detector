@@ -30,7 +30,20 @@
 
 namespace BrowserDetector\Detector\Factory;
 
+use BrowserDetector\Detector\Browser\Android;
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\Dalvik;
+use BrowserDetector\Detector\Browser\FastbotCrawler;
+use BrowserDetector\Detector\Browser\Firefox;
+use BrowserDetector\Detector\Browser\FlyFlow;
+use BrowserDetector\Detector\Browser\MicrosoftEdge;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\PhantomJs;
+use BrowserDetector\Detector\Browser\Safari;
+use BrowserDetector\Detector\Browser\SecureBrowser360;
+use BrowserDetector\Detector\Browser\SpeedBrowser360;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Browser\YahooSlurp;
 use BrowserDetector\Helper\Classname;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
@@ -57,6 +70,46 @@ class BrowserFactory
      */
     public static function detect($agent, LoggerInterface $logger, AdapterInterface $cache = null)
     {
+        /*
+        if (preg_match('/(flyflow)/i', $agent)) {
+            $browser = new FlyFlow($agent, $logger);
+        } elseif (preg_match('/(dalvik)/i', $agent)) {
+            $browser = new Dalvik($agent, $logger);
+        } elseif (preg_match('/(dol(ph|f)in)/i', $agent)) {
+            $browser = new Dalvik($agent, $logger);
+        } elseif (preg_match('/(qihu 360se)/i', $agent)) {
+            $browser = new SecureBrowser360($agent, $logger);
+        } elseif (preg_match('/(qihu 360ee)/i', $agent)) {
+            $browser = new SpeedBrowser360($agent, $logger);
+        } elseif (preg_match('/(edge)/i', $agent)) {
+            $browser = new MicrosoftEdge($agent, $logger);
+        } elseif (preg_match('/(msie)/i', $agent)) {
+            $browser = new MicrosoftInternetExplorer($agent, $logger);
+        } elseif (preg_match('/((linux|android).*version.*chrome.*safari)/i', $agent)) {
+            $browser = new Android($agent, $logger);
+        } elseif (preg_match('/(chrome|crmo)/i', $agent)) {
+            $browser = new Chrome($agent, $logger);
+        } elseif (preg_match('/((linux|android).*version.*safari)/i', $agent)) {
+            $browser = new Android($agent, $logger);
+        } elseif (preg_match('/(phantomjs)/i', $agent)) {
+            $browser = new PhantomJs($agent, $logger);
+        } elseif (preg_match('/(yahoo! slurp)/i', $agent)) {
+            $browser = new YahooSlurp($agent, $logger);
+        } elseif (preg_match('/(safari)/i', $agent)) {
+            $browser = new Safari($agent, $logger);
+        } elseif (preg_match('/(firefox)/i', $agent)) {
+            $browser = new Firefox($agent, $logger);
+        } elseif (preg_match('/(fastbot crawler)/i', $agent)) {
+            $browser = new FastbotCrawler($agent, $logger);
+        } else {
+            $browser = new UnknownBrowser($agent, $logger);
+        }
+
+        $browser->setCache($cache);
+
+        return $browser;
+        /**/
+
         foreach (self::getChain($cache, $logger) as $browser) {
             /** @var \UaMatcher\Browser\BrowserInterface $browser */
             $browser->setUserAgent($agent);

@@ -87,7 +87,7 @@ class PythonRequests extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Python Requests';
+        return 'python-requests';
     }
 
     /**

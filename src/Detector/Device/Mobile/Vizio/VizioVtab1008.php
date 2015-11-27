@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Vizio;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SL45i',
+        'model_name'             => 'VTAB1008',
         'model_extra_info'       => null,
-        'marketing_name'         => 'SL45i',
+        'marketing_name'         => 'VTAB1008',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -86,7 +86,7 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SL45i')) {
+        if (!$this->utils->checkIfContains('VTAB1008')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new DeviceType\Tablet();
     }
 
     /**
@@ -120,7 +120,7 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\Siemens();
+        return new Company\Vizio();
     }
 
     /**
@@ -130,7 +130,7 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\Siemens();
+        return new Company\Vizio();
     }
 
     /**

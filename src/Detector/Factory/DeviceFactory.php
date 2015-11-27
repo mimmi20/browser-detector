@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Factory;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Factory\Device\DesktopFactory;
+use BrowserDetector\Detector\Factory\Device\MobileFactory;
 use BrowserDetector\Detector\Factory\Device\TvFactory;
 use BrowserDetector\Helper\MobileDevice;
 use Psr\Log\LoggerInterface;
@@ -62,7 +63,7 @@ class DeviceFactory
     public static function detect($agent, LoggerInterface $logger)
     {
         if ((new MobileDevice($agent))->isMobile()) {
-            $device = new GeneralMobile($agent, $logger);
+            $device = MobileFactory::detect($agent, $logger);
         } elseif ((new TvHelper($agent))->isTvDevice()) {
             $device = TvFactory::detect($agent, $logger);
         } elseif ((new Desktop($agent))->isDesktopDevice()) {
@@ -70,6 +71,7 @@ class DeviceFactory
         } else {
             $device = new UnknownDevice($agent, $logger);
         }
+
         $device->setLogger($logger);
 
         if ($device instanceof DeviceHasChildrenInterface) {

@@ -80,24 +80,6 @@ class SonyDtv115 extends AbstractDevice implements DeviceHasSpecificPlatformInte
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('SonyDTV115')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('KDL40EX720', 'KDL37EX720', 'KDL32HX755'))) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

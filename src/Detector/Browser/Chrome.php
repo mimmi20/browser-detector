@@ -134,6 +134,8 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
             'GomezAgent',
             'TagInspector',
             '360Spider',
+            'QIHU 360EE',
+            'QIHU 360SE',
             // Fakes
             'Mac; Mac OS '
         );

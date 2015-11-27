@@ -82,25 +82,6 @@ class Jaytech extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $jaytechphones = array(
-            'JAY-tech',
-            'TPC-PA10.1M',
-        );
-
-        if ($this->utils->checkIfContains($jaytechphones)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

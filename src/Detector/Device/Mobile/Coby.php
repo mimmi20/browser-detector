@@ -82,33 +82,6 @@ class Coby extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $Cobyphones = array(
-            'Coby',
-            'MID8024',
-            'MID1125',
-            'MID1126',
-            'MID7015',
-            'MID7022',
-            'MID8127',
-            'MID8128',
-            'MID9742',
-            'NBPC724'
-        );
-
-        if ($this->utils->checkIfContains($Cobyphones, true)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

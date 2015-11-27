@@ -79,21 +79,6 @@ class Imac extends AbstractDevice
     );
 
     /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @return boolean always true
-     */
-    public function canHandle()
-    {
-        if ($this->utils->checkIfContains(array('iMac'))) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

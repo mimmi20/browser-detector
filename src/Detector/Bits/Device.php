@@ -48,7 +48,7 @@ class Device
     private $useragent = null;
 
     /**
-     * @var string the bits of the detected browser
+     * @var int the bits of the detected browser
      */
     private $bits = null;
 
@@ -71,7 +71,7 @@ class Device
     }
 
     /**
-     * @return string
+     * @return int
      * @throws \UnexpectedValueException
      */
     public function getBits()
@@ -100,26 +100,26 @@ class Device
             true
         )
         ) {
-            $this->bits = '64';
+            $this->bits = 64;
 
             return $this;
         }
 
         // old deprecated 16 bit windows systems
         if ($this->utils->checkIfContains(array('win3.1', 'windows 3.1'), true)) {
-            $this->bits = '16';
+            $this->bits = 16;
 
             return $this;
         }
 
         // old deprecated 8 bit systems
         if ($this->utils->checkIfContains(array('cp/m', '8-bit'), true)) {
-            $this->bits = '8';
+            $this->bits = 8;
 
             return $this;
         }
 
-        $this->bits = '32';
+        $this->bits = 32;
 
         return $this;
     }

@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Memup;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Slidepad extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'VTAB1008',
+        'model_name'             => 'Slidepad',
         'model_extra_info'       => null,
-        'marketing_name'         => 'VTAB1008',
+        'marketing_name'         => 'Slidepad',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -86,7 +86,7 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('VTAB1008')) {
+        if (!$this->utils->checkIfContains('Slidepad')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -120,7 +120,7 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Vizio();
+        return new Company\Memup();
     }
 
     /**
@@ -130,7 +130,7 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Vizio();
+        return new Company\Memup();
     }
 
     /**

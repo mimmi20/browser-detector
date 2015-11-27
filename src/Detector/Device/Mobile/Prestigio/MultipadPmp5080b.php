@@ -28,13 +28,17 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Prestigio;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +46,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CoolpadN930 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class MultipadPmp5080b extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +55,9 @@ class CoolpadN930 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N930',
+        'model_name'             => 'PMP5080B',
         'model_extra_info'       => null,
-        'marketing_name'         => 'N930',
+        'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -63,16 +67,16 @@ class CoolpadN930 extends AbstractDevice implements DeviceHasSpecificPlatformInt
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'physical_screen_width'  => 122,
+        'physical_screen_height' => 163,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 800,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +90,7 @@ class CoolpadN930 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' N930 ')) {
+        if (!$this->utils->checkIfContains('PMP5080B')) {
             return false;
         }
 
@@ -120,7 +124,7 @@ class CoolpadN930 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Coolpad();
+        return new Company\Prestigio();
     }
 
     /**
@@ -130,7 +134,7 @@ class CoolpadN930 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Coolpad();
+        return new Company\Prestigio();
     }
 
     /**
@@ -141,5 +145,21 @@ class CoolpadN930 extends AbstractDevice implements DeviceHasSpecificPlatformInt
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
+    {
+        $wurflKey = 'multipad_pmp5080b_ver1_suban40';
+
+        return $wurflKey;
     }
 }

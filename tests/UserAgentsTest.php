@@ -26,6 +26,7 @@ use Browscap\Generator\BuildGenerator;
 use Browscap\Helper\CollectionCreator;
 use Browscap\Writer\Factory\PhpWriterFactory;
 use WurflCache\Adapter\File;
+use WurflCache\Adapter\NullStorage;
 
 /**
  * Class UserAgentsTest
@@ -51,7 +52,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $logger = new Logger('browser-detector-tests');
         $logger->pushHandler(new NullHandler());
 
-        $cache = new File(array(File::DIR => 'tests/cache/'));
+        $cache = new NullStorage();
         $this->object = new BrowserDetector($cache, $logger);
     }
 
@@ -116,27 +117,27 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             self::markTestSkipped('Could not run test - no properties were defined to test');
         }
 
-        $result = $this->object->getBrowser($userAgent);
+        $result = $this->object->getBrowser($userAgent, true);
 
         self::assertSame(
             $expectedProperties['Browser'],
             $result->getBrowser()->getName(),
-            'Expected actual "mobile_browser" to be "' . $expectedProperties['Browser']
-            . '" (was "' . $result->getCapability('mobile_browser', false) . '")'
+            'Expected actual "Browser" to be "' . $expectedProperties['Browser']
+            . '" (was "' . $result->getBrowser()->getName() . '")'
         );
 
         self::assertSame(
             $expectedProperties['Browser_Type'],
-            $result->getBrowser()->getBrowserType(),
-            'Expected actual "mobile_browser" to be "' . $expectedProperties['Browser_Type']
-            . '" (was "' . $result->getBrowser()->getBrowserType() . '")'
+            $result->getBrowser()->getBrowserType()->getName(),
+            'Expected actual "Browser_Type" to be "' . $expectedProperties['Browser_Type']
+            . '" (was "' . $result->getBrowser()->getBrowserType()->getName() . '")'
         );
 
         self::assertSame(
-            $expectedProperties['Browser_Bits'],
-            $result->getBrowser()->detectBits(),
-            'Expected actual "mobile_browser" to be "' . $expectedProperties['Browser_Bits']
-            . '" (was "' . $result->getBrowser()->detectBits() . '")'
+            $expectedProperties['Browser_Maker'],
+            $result->getBrowser()->getManufacturer()->getName(),
+            'Expected actual "Browser_Maker" to be "' . $expectedProperties['Browser_Maker']
+            . '" (was "' . $result->getBrowser()->getManufacturer()->getName() . '")'
         );
     }
 }

@@ -101,7 +101,7 @@ class Qihoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\Qihoo();
     }
 
     /**

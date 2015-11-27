@@ -82,22 +82,6 @@ class Star extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $starPhones = array('Star', 'N9500');
-
-        if (!$this->utils->checkIfContains($starPhones)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

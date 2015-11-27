@@ -159,6 +159,7 @@ class Safari
             'adbeat',
             'profiller',
             'Kindle',
+            'Slurp',
             //mobile Version
             'Tablet',
             'Android',

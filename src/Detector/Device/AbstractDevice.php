@@ -174,16 +174,6 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
     }
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaResult\Version

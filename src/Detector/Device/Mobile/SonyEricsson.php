@@ -32,17 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Bada;
-use BrowserDetector\Detector\Os\Brew;
-use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Os\Linux;
-use BrowserDetector\Detector\Os\Symbianos;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -88,18 +78,6 @@ class SonyEricsson extends AbstractDevice implements DeviceHasChildrenInterface
         // chips
         'nfc_support'            => true,
     );
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $helper = new MobileDevice($this->useragent);
-
-        return $helper->isSony();
-    }
 
     /**
      * gets the weight of the handler, which is used for sorting

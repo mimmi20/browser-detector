@@ -82,25 +82,6 @@ class TriQ extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $triQphones = array(
-            '3Q',
-            'MT0812E',
-        );
-
-        if ($this->utils->checkIfContains($triQphones)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

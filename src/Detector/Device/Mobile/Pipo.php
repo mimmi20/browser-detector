@@ -82,26 +82,6 @@ class Pipo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $pipophones = array(
-            'pipo',
-            'm9pro',
-            'm6pro',
-        );
-
-        if ($this->utils->checkIfContains($pipophones, true)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

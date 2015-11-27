@@ -30,10 +30,12 @@
 
 namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +44,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Smartpad extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class EinsUndEins extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +53,9 @@ class Smartpad extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Smartpad',
+        'model_name'             => 'general EinsUndEins device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general EinsUndEins device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -80,17 +82,21 @@ class Smartpad extends AbstractDevice implements DeviceHasSpecificPlatformInterf
     );
 
     /**
-     * checks if this device is able to handle the useragent
+     * detects the device name from the given user agent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return \UaMatcher\Device\DeviceInterface
      */
-    public function canHandle()
+    public function detectDevice()
     {
-        if (!$this->utils->checkIfContains('smartpad')) {
-            return false;
-        }
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\EinsUndEins');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'EinsUndEins' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
 
-        return true;
+        return $chain->detect();
     }
 
     /**

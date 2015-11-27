@@ -80,25 +80,6 @@ class Siemens extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $siemensPhones = array(
-            'Siemens',
-            'SIE-',
-        );
-
-        if ($this->utils->checkIfContains($siemensPhones)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

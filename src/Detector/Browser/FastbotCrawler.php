@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Type\Browser as BrowserType;
+use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class P4dSirius extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class FastbotCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -50,47 +50,79 @@ class P4dSirius extends AbstractDevice implements DeviceHasSpecificPlatformInter
      * @var array
      */
     protected $properties = array(
-        // device
-        'model_name'             => 'P4D Sirius',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'P4D Sirius',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
+        // browser
+        'mobile_browser_modus'         => null, // not in wurfl
+
         // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
+        // pdf
+        'pdf_support'                  => true,
+        // bugs
+        'empty_option_value_support'   => true,
+        'basic_authentication_support' => true,
+        'post_method_support'          => true,
+        // rss
+        'rss_support'                  => false,
     );
 
     /**
-     * checks if this device is able to handle the useragent
+     * Returns true if this handler can handle the given user agent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('P4D SIRIUS')) {
+        if (!$this->utils->checkIfContains('fastbot crawler')) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * gets the name of the browser
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return 'fastbot crawler';
+    }
+
+    /**
+     * gets the maker of the browser
+     *
+     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return new Company\Pagedesign();
+    }
+
+    /**
+     * returns the type of the current device
+     *
+     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     */
+    public function getBrowserType()
+    {
+        return new BrowserType\Bot();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('fastbot crawler beta', 'fastbot crawler');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -104,42 +136,12 @@ class P4dSirius extends AbstractDevice implements DeviceHasSpecificPlatformInter
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new DeviceType\MobilePhone();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company\Nvsbl();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company\Nvsbl();
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function detectOs()
+    public function getEngine()
     {
-        return new AndroidOs($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

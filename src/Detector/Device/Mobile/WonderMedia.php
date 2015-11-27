@@ -82,20 +82,6 @@ class WonderMedia extends AbstractDevice implements DeviceHasChildrenInterface, 
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(array(' WM8650 ', ' WM8850 '))) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

@@ -80,22 +80,6 @@ class Pomp extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $pompPhones = array('pomp');
-
-        if ($this->utils->checkIfContains($pompPhones, true)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

@@ -82,25 +82,6 @@ class DoCoMo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $doCoMophones = array(
-            'DoCoMo',
-            'P900i'
-        );
-
-        if ($this->utils->checkIfContains($doCoMophones, true)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

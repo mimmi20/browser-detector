@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\EinsUndEins;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Smartpad extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MIUI.us Sensation 4G',
+        'model_name'             => 'Smartpad',
         'model_extra_info'       => null,
-        'marketing_name'         => 'MIUI.us Sensation 4G',
+        'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -86,7 +86,7 @@ class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MIUI.us Sensation 4G')) {
+        if (!$this->utils->checkIfContains('smartpad')) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\EinsUndEins();
     }
 
     /**
@@ -130,7 +130,7 @@ class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company\EinsUndEins();
     }
 
     /**

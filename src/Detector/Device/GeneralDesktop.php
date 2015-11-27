@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Helper\Desktop;
 
 /**
  * @category  BrowserDetector
@@ -76,22 +75,6 @@ class GeneralDesktop extends AbstractDevice
         // chips
         'nfc_support'            => false,
     );
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $desktopHelper = new Desktop($this->useragent);
-
-        if ($desktopHelper->isDesktopDevice()) {
-            return true;
-        }
-
-        return false;
-    }
 
     /**
      * gets the weight of the handler, which is used for sorting

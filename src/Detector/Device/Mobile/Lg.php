@@ -32,14 +32,6 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Bada;
-use BrowserDetector\Detector\Os\Brew;
-use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Os\Symbianos;
-use BrowserDetector\Detector\Os\UnknownOs;
-use BrowserDetector\Detector\Os\WindowsMobileOs;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -86,37 +78,6 @@ class Lg extends AbstractDevice implements DeviceHasChildrenInterface
         // chips
         'nfc_support'            => true,
     );
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $lgPhones = array(
-            'LG-',
-            'LG/',
-            'LG',
-            'Optimus-',
-            'Optimus 2X',
-            ' p990 ',
-            ' GT540 ',
-            ' GT-540 ',
-            'Nexus 4',
-            'Nexus 5',
-        );
-
-        if (!$this->utils->checkIfContains($lgPhones)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('-LGG-'))) {
-            return false;
-        }
-
-        return true;
-    }
 
     /**
      * gets the weight of the handler, which is used for sorting

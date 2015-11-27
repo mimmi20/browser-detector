@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Bits\Browser as BrowserBits;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Browser as BrowserType;
+use UaMatcher\MatcherHasWeightInterface;
 use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
@@ -47,7 +48,7 @@ use WurflCache\Adapter\AdapterInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractBrowser implements BrowserInterface, \Serializable
+abstract class AbstractBrowser implements BrowserInterface, \Serializable, MatcherHasWeightInterface
 {
     /**
      * @var string the user agent to handle

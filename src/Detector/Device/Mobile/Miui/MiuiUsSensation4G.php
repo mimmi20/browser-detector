@@ -28,19 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Miui;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceHasChildrenInterface;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -48,7 +42,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Multipad extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -57,9 +51,9 @@ class Multipad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Multipad Device',
+        'model_name'             => 'MIUI.us Sensation 4G',
         'model_extra_info'       => null,
-        'marketing_name'         => 'general Multipad Device',
+        'marketing_name'         => 'MIUI.us Sensation 4G',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,16 +63,16 @@ class Multipad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 122,
-        'physical_screen_height' => 163,
-        'columns'                => 60,
-        'rows'                   => 40,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 800,
-        'resolution_height'      => 600,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -92,7 +86,7 @@ class Multipad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PMP5080B')) {
+        if (!$this->utils->checkIfContains('MIUI.us Sensation 4G')) {
             return false;
         }
 
@@ -116,7 +110,7 @@ class Multipad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new DeviceType\MobilePhone();
     }
 
     /**
@@ -126,7 +120,7 @@ class Multipad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Multipad();
+        return new Company\Miui();
     }
 
     /**
@@ -136,25 +130,7 @@ class Multipad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Multipad();
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaMatcher\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Multipad');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Multipad' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return new Company\Miui();
     }
 
     /**
@@ -165,21 +141,5 @@ class Multipad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'multipad_pmp5080b_ver1_suban40';
-
-        return $wurflKey;
     }
 }

@@ -140,62 +140,7 @@ class BrowserDetector
         }
 
         if ($forceDetect || !$success || !($result instanceof Detector\Result\Result)) {
-            $device = DeviceFactory::detect($request->getDeviceUserAgent(), $this->logger);
-            $device->setLogger($this->logger);
-
-            if ($device instanceof DeviceHasVersionInterface) {
-                $device->detectDeviceVersion();
-            }
-
-            if ($device instanceof DeviceHasRuntimeModificationsInterface) {
-                $device->detectSpecialProperties();
-            }
-
-            if ($device instanceof DeviceHasSpecificPlatformInterface) {
-                $platform = $device->detectOs();
-            } else {
-                // detect the os which runs on the device
-                $platform = PlatformFactory::detect($request->getBrowserUserAgent(), $this->logger);
-            }
-
-            // detect the browser which is used
-            $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $this->logger, $this->cache);
-
-            if ($browser instanceof BrowserHasRuntimeModificationsInterface) {
-                $browser->detectSpecialProperties();
-            }
-
-            if ($browser instanceof BrowserCalculatesAlternativeResultInterface) {
-                $browser->calculateAlternativeRendering($device);
-            }
-
-            // detect the engine which is used in the browser
-            $engine = EngineFactory::detect($request->getBrowserUserAgent(), $this->logger, $platform);
-
-            if ($browser instanceof BrowserDependsOnEngineInterface) {
-                $browser->detectDependProperties($engine);
-            }
-
-            if ($engine instanceof EngineDependsOnDeviceInterface) {
-                $engine->detectDependProperties($device);
-            }
-
-            if ($platform instanceof OsChangesEngineInterface) {
-                $platform->changeEngineProperties($engine, $browser, $device);
-            }
-
-            if ($platform instanceof OsChangesBrowserInterface) {
-                $platform->changeBrowserProperties($browser);
-            }
-
-            $result = Result\ResultFactory::build(
-                $request->getUserAgent(),
-                $this->logger,
-                $device,
-                $platform,
-                $browser,
-                $engine
-            );
+            $result = $this->buildResult($request);
 
             $this->cache->setItem($cacheId, $result);
         } else {
@@ -203,5 +148,70 @@ class BrowserDetector
         }
 
         return $result;
+    }
+
+    /**
+     * @param \Wurfl\Request\GenericRequest $request
+     *
+     * @return \UaMatcher\Result\ResultInterface
+     */
+    private function buildResult(GenericRequest $request)
+    {
+        $device = DeviceFactory::detect($request->getDeviceUserAgent(), $this->logger);
+        $device->setLogger($this->logger);
+
+        if ($device instanceof DeviceHasVersionInterface) {
+            $device->detectDeviceVersion();
+        }
+
+        if ($device instanceof DeviceHasRuntimeModificationsInterface) {
+            $device->detectSpecialProperties();
+        }
+
+        if ($device instanceof DeviceHasSpecificPlatformInterface) {
+            $platform = $device->detectOs();
+        } else {
+            // detect the os which runs on the device
+            $platform = PlatformFactory::detect($request->getBrowserUserAgent(), $this->logger);
+        }
+
+        // detect the browser which is used
+        $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $this->logger, $this->cache);
+
+        if ($browser instanceof BrowserHasRuntimeModificationsInterface) {
+            $browser->detectSpecialProperties();
+        }
+
+        if ($browser instanceof BrowserCalculatesAlternativeResultInterface) {
+            $browser->calculateAlternativeRendering($device);
+        }
+
+        // detect the engine which is used in the browser
+        $engine = EngineFactory::detect($request->getBrowserUserAgent(), $this->logger, $platform);
+
+        if ($browser instanceof BrowserDependsOnEngineInterface) {
+            $browser->detectDependProperties($engine);
+        }
+
+        if ($engine instanceof EngineDependsOnDeviceInterface) {
+            $engine->detectDependProperties($device);
+        }
+
+        if ($platform instanceof OsChangesEngineInterface) {
+            $platform->changeEngineProperties($engine, $browser, $device);
+        }
+
+        if ($platform instanceof OsChangesBrowserInterface) {
+            $platform->changeBrowserProperties($browser);
+        }
+
+        return Result\ResultFactory::build(
+            $request->getUserAgent(),
+            $this->logger,
+            $device,
+            $platform,
+            $browser,
+            $engine
+        );
     }
 }

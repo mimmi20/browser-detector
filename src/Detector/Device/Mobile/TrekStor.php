@@ -82,33 +82,6 @@ class TrekStor extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     );
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $trekStorPhones = array(
-            'TrekStor',
-            'ST10216-1',
-            'ST10416-1',
-            'ST70104',
-            'ST80216',
-            'Liro_Color',
-            'SurfTab_',
-            'ST701041',
-            'VT10416',
-            'breeze 10.1 quad',
-        );
-
-        if ($this->utils->checkIfContains($trekStorPhones)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

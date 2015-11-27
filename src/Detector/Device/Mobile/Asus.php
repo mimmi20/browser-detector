@@ -34,7 +34,6 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -81,18 +80,6 @@ class Asus extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
         // chips
         'nfc_support'            => true,
     );
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $helper = new MobileDevice($this->useragent);
-
-        return $helper->isAsus();
-    }
 
     /**
      * gets the weight of the handler, which is used for sorting

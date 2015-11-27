@@ -34,7 +34,6 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Detector\Type\Device as DeviceType;
-use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -85,18 +84,6 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
         // chips
         'nfc_support'            => true,
     );
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return boolean returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $helper = new MobileDevice($this->useragent);
-
-        return $helper->isMicrosoft();
-    }
 
     /**
      * detects the device name from the given user agent
