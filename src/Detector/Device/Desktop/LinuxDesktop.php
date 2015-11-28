@@ -97,7 +97,8 @@ class LinuxDesktop extends AbstractDevice
             'CentOS',
             'Kubuntu',
             'CrOs',
-            'Moblin'
+            'Moblin',
+            'Sabayon',
         );
 
         if (!$this->utils->checkIfContains($linux, true)) {

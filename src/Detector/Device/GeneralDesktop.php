@@ -88,24 +88,15 @@ class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterfac
      */
     public function canHandle()
     {
-        $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->useragent);
-
-        if ($mobileDeviceHelper->isMobile()) {
+        if ((new MobileDevice($this->useragent))->isMobile()) {
             return false;
         }
 
-        $tvHelper = new TvHelper();
-        $tvHelper->setUserAgent($this->useragent);
-
-        if ($tvHelper->isTvDevice()) {
+        if ((new TvHelper($this->useragent))->isTvDevice()) {
             return false;
         }
 
-        $windowsHelper = new WindowsHelper();
-        $windowsHelper->setUserAgent($this->useragent);
-
-        if ($windowsHelper->isWindows()) {
+        if ((new WindowsHelper($this->useragent))->isWindows()) {
             return true;
         }
 

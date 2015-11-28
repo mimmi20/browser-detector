@@ -88,14 +88,7 @@ class GeneralTv extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function canHandle()
     {
-        $tvHelper = new TvHelper();
-        $tvHelper->setUserAgent($this->useragent);
-
-        if (!$tvHelper->isTvDevice()) {
-            return false;
-        }
-
-        return true;
+        return (!(new TvHelper($this->useragent))->isTvDevice());
     }
 
     /**

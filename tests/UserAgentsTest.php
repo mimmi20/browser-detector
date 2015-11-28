@@ -68,7 +68,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         }
 
         $checks          = array();
-        $sourceDirectory = __DIR__ . '/data/issues/';
+        $sourceDirectory = 'vendor/browscap/browscap/tests/fixtures/issues/';
 
         $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
 

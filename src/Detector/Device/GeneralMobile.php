@@ -97,14 +97,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function canHandle()
     {
-        $mobileDeviceHelper = new MobileDevice();
-        $mobileDeviceHelper->setUserAgent($this->useragent);
-
-        if ($mobileDeviceHelper->isMobile()) {
-            return true;
-        }
-
-        return false;
+        return (new MobileDevice($this->useragent))->isMobile();
     }
 
     /**
