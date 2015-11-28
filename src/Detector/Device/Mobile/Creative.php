@@ -82,6 +82,22 @@ class Creative extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $creativePhones = array('Creative', 'ZiiLABS');
+
+        if ($this->utils->checkIfContains($creativePhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

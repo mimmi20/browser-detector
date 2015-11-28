@@ -82,6 +82,38 @@ class Zte extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $ztePhones = array(
+            'zte',
+            'base tab',
+            'base lutea',
+            'BASE_Lutea_3',
+            'racerii',
+            ' x920 ',
+            ' n600 ',
+            ' w713 ',
+            ' v880 ',
+            ' v9 ',
+            'smarttab7',
+            'smarttab10',
+            'blade',
+            'kis plus',
+            'vodafone smart 4g',
+        );
+
+        if (!$this->utils->checkIfContains($ztePhones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

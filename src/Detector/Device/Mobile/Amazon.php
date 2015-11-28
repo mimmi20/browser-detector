@@ -82,6 +82,36 @@ class Amazon extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $amazonPhones = array(
+            'Amazon',
+            'Kindle',
+            'Silk',
+            'KFTT',
+            'KFOT',
+            'KFJWI',
+            'KFSOWI',
+            'KFTHWI',
+            'SD4930UR',
+        );
+
+        if (!$this->utils->checkIfContains($amazonPhones)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('PlayStation')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

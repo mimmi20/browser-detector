@@ -82,6 +82,54 @@ class Acer extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $otherPhones = array('HTC', 'IdeaTab', 'Wildfire S A510e', 'HTC_WildfireS_A510e', 'A101IT', 'SmartTabII7');
+
+        if ($this->utils->checkIfContains($otherPhones)) {
+            return false;
+        }
+
+        $acerPhones = array(
+            'Acer',
+            'Iconia',
+            ' A100 ',
+            ' A101 ',
+            ' A200 ',
+            ' A210 ',
+            ' A211 ',
+            ' A500 ',
+            ' A501 ',
+            ' A510 ',
+            ' A511 ',
+            ' A700 ',
+            ' A701 ',
+            ' A1-',
+            ' A3-',
+            ' B1-',
+            ' E140 ',
+            ' E310 ',
+            ' E320 ',
+            ' G100W ',
+            'Stream-S110',
+            ' Liquid ',
+            ' S500 ',
+            ' Z150 ',
+            ' V370 ',
+        );
+
+        if (!$this->utils->checkIfContains($acerPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

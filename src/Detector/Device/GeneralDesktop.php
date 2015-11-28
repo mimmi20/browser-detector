@@ -30,8 +30,13 @@
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\MobileDevice;
+use BrowserDetector\Helper\Tv as TvHelper;
+use BrowserDetector\Helper\Windows as WindowsHelper;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 
 /**
  * @category  BrowserDetector
@@ -39,7 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralDesktop extends AbstractDevice
+class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -75,6 +80,109 @@ class GeneralDesktop extends AbstractDevice
         // chips
         'nfc_support'            => false,
     );
+
+    /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $mobileDeviceHelper = new MobileDevice();
+        $mobileDeviceHelper->setUserAgent($this->useragent);
+
+        if ($mobileDeviceHelper->isMobile()) {
+            return false;
+        }
+
+        $tvHelper = new TvHelper();
+        $tvHelper->setUserAgent($this->useragent);
+
+        if ($tvHelper->isTvDevice()) {
+            return false;
+        }
+
+        $windowsHelper = new WindowsHelper();
+        $windowsHelper->setUserAgent($this->useragent);
+
+        if ($windowsHelper->isWindows()) {
+            return true;
+        }
+
+        $others = array(
+            // Linux
+            'linux',
+            'debian',
+            'ubuntu',
+            'suse',
+            'fedora',
+            'mint',
+            'redhat',
+            'slackware',
+            'zenwalk gnu',
+            'centos',
+            'kubuntu',
+            'cros',
+            // Mac
+            'macintosh',
+            'darwin',
+            'mac_powerpc',
+            'macbook',
+            'for mac',
+            'ppc mac',
+            'mac os x',
+            'imac',
+            'macbookpro',
+            'macbookair',
+            'macbook',
+            'macmini',
+            // others
+            'freebsd',
+            'openbsd',
+            'os/2',
+            'warp',
+            'sunos',
+            'netbsd',
+            'w3m',
+            'google desktop',
+            'eeepc',
+            'dillo',
+            'konqueror',
+            'eudora',
+            'masking-agent',
+            'safersurf'
+        );
+
+        if ($this->utils->checkIfContains($others, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Desktop');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Desktop' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        $device = $chain->detect();
+
+        if ($device !== $this && $device instanceof DeviceHasChildrenInterface) {
+            $device = $device->detectDevice();
+        }
+
+        return $device;
+    }
 
     /**
      * gets the weight of the handler, which is used for sorting

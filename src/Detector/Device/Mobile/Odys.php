@@ -82,6 +82,34 @@ class Odys extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $odysPhones = array(
+            'odys',
+            'loox plus',
+            ' genesis ',
+            ' noon ',
+            ' loox ',
+            'xpress pro',
+            'xelio',
+            'uno_x10',
+            'adm816kc',
+            'adm816hc',
+            'neo_quad10',
+        );
+
+        if ($this->utils->checkIfContains($odysPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

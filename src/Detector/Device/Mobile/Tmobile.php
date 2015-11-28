@@ -80,6 +80,33 @@ class Tmobile extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $TmobilePhones = array(
+            'T-Mobile',
+            'myTouch4G',
+            'MDA compact',
+            'T-Mobile_G2_Touch',
+            'Pulse',
+            'Ameo'
+        );
+
+        if (!$this->utils->checkIfContains($TmobilePhones, true)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('Vision-T-Mobile-G2')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

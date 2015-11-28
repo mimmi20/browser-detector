@@ -82,6 +82,32 @@ class Prestigio extends AbstractDevice implements DeviceHasChildrenInterface, De
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $phones = array(
+            'Prestigio',
+            'PMP5080CPRO',
+            'PMP3370B',
+            'PMP5197DULTRA',
+            'PMP5580C',
+            'PMP7100D3G',
+            'PMP7280C3G',
+            'PMP5770D',
+            'PAP5000TDUO',
+        );
+
+        if (!$this->utils->checkIfContains($phones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

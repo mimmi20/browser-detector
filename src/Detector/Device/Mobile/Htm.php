@@ -82,6 +82,24 @@ class Htm extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $htmPhones = array(
+            'MT-GT-A9500',
+        );
+
+        if (!$this->utils->checkIfContains($htmPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

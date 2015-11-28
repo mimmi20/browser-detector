@@ -30,8 +30,13 @@
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Helper\Tv as TvHelper;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -39,7 +44,7 @@ use BrowserDetector\Detector\Type\Device as DeviceType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralTv extends AbstractDevice
+class GeneralTv extends AbstractDevice implements DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -75,6 +80,47 @@ class GeneralTv extends AbstractDevice
         // chips
         'nfc_support'            => false,
     );
+
+    /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $tvHelper = new TvHelper();
+        $tvHelper->setUserAgent($this->useragent);
+
+        if (!$tvHelper->isTvDevice()) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Tv');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Tv' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        $device = $chain->detect();
+
+        if ($device !== $this && $device instanceof DeviceHasChildrenInterface) {
+            $device = $device->detectDevice();
+        }
+
+        return $device;
+    }
 
     /**
      * gets the weight of the handler, which is used for sorting

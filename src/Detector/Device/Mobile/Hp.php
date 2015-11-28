@@ -80,6 +80,36 @@ class Hp extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $hpPhones = array(
+            'HP',
+            'Hp',
+            'P160U',
+            'TouchPad',
+            'hpwOS',
+            'hp-tablet',
+            'Pre/',
+            'Pixi/',
+            'Touchpad',
+            'Palm',
+            'Blazer',
+            'HPiPAQ',
+            'cm_tenderloin'
+        );
+
+        if (!$this->utils->checkIfContains($hpPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

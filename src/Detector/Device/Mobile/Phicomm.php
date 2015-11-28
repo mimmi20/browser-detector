@@ -82,6 +82,25 @@ class Phicomm extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $phicommPhones = array(
+            'Phicomm',
+            'FWS610_EU'
+        );
+
+        if ($this->utils->checkIfContains($phicommPhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

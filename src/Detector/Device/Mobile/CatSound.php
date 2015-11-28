@@ -82,6 +82,36 @@ class CatSound extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $catSoundPhones = array(
+            'CatNova',
+            'CAT NOVA',
+            'CatNova8',
+            'Cat StarGate',
+            'Cat Tablet',
+            'Tablet-PC-4',
+            'TOLINO_BROWSER',
+            'Weltbild',
+            'Kinder-Tablet'
+        );
+
+        if (!$this->utils->checkIfContains($catSoundPhones)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('INM8002KP'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

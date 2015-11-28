@@ -82,6 +82,26 @@ class Lenco extends AbstractDevice implements DeviceHasChildrenInterface, Device
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $LencoPhones = array(
+            'Lenco',
+            'LENCM900HZ',
+            'CoolTab-70'
+        );
+
+        if ($this->utils->checkIfContains($LencoPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

@@ -82,6 +82,28 @@ class Alcatel extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $alcatelPhones = array(
+            'ALCATEL',
+            'Alcatel',
+            'Vodafone 975N',
+            'Vodafone Smart II',
+            'ONE TOUCH',
+        );
+
+        if ($this->utils->checkIfContains($alcatelPhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

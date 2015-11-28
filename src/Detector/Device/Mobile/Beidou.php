@@ -82,6 +82,25 @@ class Beidou extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $BeidouPhones = array(
+            'Beidou',
+            'LA-M1'
+        );
+
+        if ($this->utils->checkIfContains($BeidouPhones)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

@@ -80,6 +80,22 @@ class Micromax extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $MicromaxPhones = array('Micromax', ' A114 ');
+
+        if ($this->utils->checkIfContains($MicromaxPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

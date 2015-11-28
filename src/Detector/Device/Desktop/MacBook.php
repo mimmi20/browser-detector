@@ -78,6 +78,24 @@ class MacBook extends AbstractDevice
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains(array('MacBook'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('MacBookPro', 'MacBookAir'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

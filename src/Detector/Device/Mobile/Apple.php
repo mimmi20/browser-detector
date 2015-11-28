@@ -82,6 +82,24 @@ class Apple extends AbstractDevice implements DeviceHasChildrenInterface, Device
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains(array('ipad', 'iphone', 'ipod', 'like mac os x'), true)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('Android', 'MooPad'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

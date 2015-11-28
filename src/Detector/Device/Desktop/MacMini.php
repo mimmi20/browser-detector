@@ -78,6 +78,20 @@ class MacMini extends AbstractDevice
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        if ($this->utils->checkIfContains(array('Macmini'))) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

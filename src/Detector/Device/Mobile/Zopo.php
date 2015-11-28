@@ -82,6 +82,34 @@ class Zopo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $zopoPhones = array(
+            ' ZP100 ',
+            ' ZP200 ',
+            ' ZP300 ',
+            ' ZP500 ',
+            ' ZP800H ',
+            ' ZP810 ',
+            ' ZP900 ',
+            ' ZP900H ',
+            ' ZP910 ',
+            ' ZP950 ',
+            ' ZP980 '
+        );
+
+        if (!$this->utils->checkIfContains($zopoPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

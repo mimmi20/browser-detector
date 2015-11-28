@@ -80,6 +80,22 @@ class Ionik extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $ionikPhones = array('ionik', 'tp10.1-1500dc');
+
+        if ($this->utils->checkIfContains($ionikPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

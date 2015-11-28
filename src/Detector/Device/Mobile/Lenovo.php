@@ -32,6 +32,12 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\Symbianos;
+use BrowserDetector\Detector\Os\UnknownOs;
+use BrowserDetector\Detector\Os\WindowsMobileOs;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -78,6 +84,36 @@ class Lenovo extends AbstractDevice implements DeviceHasChildrenInterface
         // chips
         'nfc_support'            => true,
     );
+
+    /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $LenovoPhones = array(
+            'Lenovo-',
+            'Lenovo/',
+            'Lenovo',
+            'A1_07',
+            ' K1 ',
+            'ThinkPad',
+            'IdeaTab',
+            'SmartTab II',
+            'SmartTabII7',
+            'SmartTabII10',
+            'SmartTabIII10',
+            'Vodafone Smart Tab III 10',
+            'Vodafone Smart Tab 4'
+        );
+
+        if (!$this->utils->checkIfContains($LenovoPhones)) {
+            return false;
+        }
+
+        return true;
+    }
 
     /**
      * gets the weight of the handler, which is used for sorting

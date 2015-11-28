@@ -82,6 +82,24 @@ class Medion extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        if ($this->utils->checkIfContains('medion', true)) {
+            return true;
+        }
+
+        if ($this->utils->checkIfContains(array('MD_', 'LIFETAB', 'P4501'))) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

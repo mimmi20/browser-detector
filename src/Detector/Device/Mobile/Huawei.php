@@ -82,6 +82,38 @@ class Huawei extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $huaweiPhones = array(
+            'Huawei',
+            'HUAWEI',
+            'IDEOS ',
+            'Ideos ',
+            'U8100',
+            'U8110',
+            'U8180',
+            'U8500',
+            'U8510',
+            'U8650',
+            'u8800',
+            'U8850',
+            'Vodafone 858',
+            'Vodafone 845',
+            'TSP21'
+        );
+
+        if (!$this->utils->checkIfContains($huaweiPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

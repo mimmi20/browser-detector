@@ -82,6 +82,27 @@ class Olivetti extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        if (!$this->utils->checkIfContains('OP') || $this->utils->checkIfContains(
+            array('OPN-B', 'OPENMASTER', 'SL20_20101210_B_PD_INX7E_ENG_6410POP', 'Build/JOP')
+        )
+        ) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('OPR/')) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

@@ -30,11 +30,16 @@
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaResult\Version;
+use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -44,7 +49,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralMobile extends AbstractDevice implements DeviceHasWurflKeyInterface
+class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -86,6 +91,23 @@ class GeneralMobile extends AbstractDevice implements DeviceHasWurflKeyInterface
     private $deviceType = null;
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $mobileDeviceHelper = new MobileDevice();
+        $mobileDeviceHelper->setUserAgent($this->useragent);
+
+        if ($mobileDeviceHelper->isMobile()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -93,6 +115,30 @@ class GeneralMobile extends AbstractDevice implements DeviceHasWurflKeyInterface
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        $device = $chain->detect();
+
+        if (($device !== $this) && ($device instanceof DeviceHasChildrenInterface)) {
+            $device = $device->detectDevice();
+        }
+
+        return $device;
     }
 
     /**

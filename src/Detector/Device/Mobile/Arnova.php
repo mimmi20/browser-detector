@@ -82,6 +82,32 @@ class Arnova extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $arnovaPhones = array(
+            'ARNOVA',
+            'AN7CG2',
+            'AN7DG3',
+            'AN7FG3',
+            'AN10BG3',
+            'AN10DG3',
+            'ARCHM901',
+            'AN7BG2DT',
+            'AN9G2I'
+        );
+
+        if (!$this->utils->checkIfContains($arnovaPhones)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

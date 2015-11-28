@@ -80,6 +80,22 @@ class IconBit extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $IconBitPhones = array('IconBit', 'nt-1001t', 'nt-1002t');
+
+        if ($this->utils->checkIfContains($IconBitPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

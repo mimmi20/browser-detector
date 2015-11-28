@@ -82,6 +82,46 @@ class Asus extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $asusPhones = array(
+            'Asus',
+            'ASUS',
+            'Transformer',
+            'Slider SL101',
+            'eee_701',
+            'eeepc',
+            'Nexus 7',
+            'PadFone',
+            'ME301T',
+            'ME302C',
+            'ME371MG',
+            'ME173X',
+            'ME302KL',
+            'ME172V',
+            'K00E',
+            'K00F',
+            'K00Z',
+            'ME372CG',
+            'TF300T',
+        );
+
+        if (!$this->utils->checkIfContains($asusPhones)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('IdeaTab'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

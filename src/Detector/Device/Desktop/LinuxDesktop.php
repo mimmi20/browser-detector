@@ -78,6 +78,40 @@ class LinuxDesktop extends AbstractDevice
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $linux = array(
+            'Linux',
+            'Debian',
+            'Ubuntu',
+            'SUSE',
+            'Fedora',
+            'Mint',
+            'redhat',
+            'Slackware',
+            'Zenwalk GNU',
+            'CentOS',
+            'Kubuntu',
+            'CrOs',
+            'Moblin'
+        );
+
+        if (!$this->utils->checkIfContains($linux, true)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('Loewe; SL121', 'eeepc'))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

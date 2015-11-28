@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -80,6 +81,26 @@ class Honlin extends AbstractDevice implements DeviceHasChildrenInterface, Devic
         // chips
         'nfc_support'            => true,
     );
+
+    /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $honlinPhones = array(
+            'Honlin',
+            'HL',
+            'PC1088',
+        );
+
+        if (!$this->utils->checkIfContains($honlinPhones)) {
+            return false;
+        }
+
+        return true;
+    }
 
     /**
      * detects the device name from the given user agent

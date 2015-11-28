@@ -80,6 +80,63 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $samsungPhones = array(
+            'samsung',
+            'samsung',
+            'gt-',
+            'sam-',
+            'sc-',
+            'sch-',
+            'sec-',
+            'sgh-',
+            'shv-',
+            'shw-',
+            'sm-',
+            'sph-',
+            'galaxy',
+            'nexus',
+            'i7110',
+            'i9100',
+            'i9300',
+            'yp-g',
+            'continuum-',
+            'blaze'
+        );
+
+        if (!$this->utils->checkIfContains($samsungPhones, true)) {
+            return false;
+        }
+
+        $otherMobiles = array(
+            'Asus',
+            'U30GT',
+            'Nexus 7',
+            'Nexus 4',
+            'Nexus 5',
+            'Nexus 9',
+            'NexusHD2',
+            'Nexus One',
+            'NexusOne',
+            'Nexus-One',
+            'GT-H',
+            'MT-GT-',
+            'Galaxy S3 EX'
+        );
+
+        if ($this->utils->checkIfContains($otherMobiles)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

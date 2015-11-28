@@ -82,6 +82,60 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
+            return false;
+        }
+
+        $motorolaPhones = array(
+            'motorola',
+            'moto',
+            //'mot',
+            'mb200',
+            'mb300',
+            ' droid ',
+            ' droidx ',
+            'droid-bionic',
+            'xt702',
+            'mz601',
+            'mz604',
+            'mz616',
+            'xoom',
+            'milestone',
+            'mb511',
+            'mb525',
+            'mb526',
+            'mb632',
+            'mb860',
+            'me511',
+            'me525',
+            'me600',
+            'xt316',
+            'xt320',
+            'xt610',
+            'xt615',
+            'xt890',
+            'xt907',
+            'xt910',
+            'xt925',
+            'xt1021',
+            'xt1052',
+            'xt1032',
+        );
+
+        if (!$this->utils->checkIfContains($motorolaPhones, true)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer

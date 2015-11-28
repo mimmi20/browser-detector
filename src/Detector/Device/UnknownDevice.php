@@ -30,8 +30,11 @@
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Detector\Browser\UnknownBrowser;
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -75,6 +78,16 @@ class UnknownDevice extends AbstractDevice
         // chips
         'nfc_support'            => false,
     );
+
+    /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        return true;
+    }
 
     /**
      * gets the weight of the handler, which is used for sorting

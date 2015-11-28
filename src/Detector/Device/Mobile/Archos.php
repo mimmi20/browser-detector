@@ -82,6 +82,33 @@ class Archos extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $archosPhones = array(
+            'archos',
+            'a35dm',
+            'a70bht',
+            'a70cht',
+            'a70s',
+            'a70h2',
+            'a80ksc',
+            'a101it',
+            'a70hb',
+            'a7eb'
+        );
+
+        if ($this->utils->checkIfContains($archosPhones, true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

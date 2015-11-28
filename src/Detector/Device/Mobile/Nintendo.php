@@ -82,6 +82,22 @@ class Nintendo extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $nintendoDevices = array('Nintendo');
+
+        if ($this->utils->checkIfContains($nintendoDevices)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * detects the device name from the given user agent
      *
      * @return \UaMatcher\Device\DeviceInterface

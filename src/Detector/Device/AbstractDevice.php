@@ -33,6 +33,8 @@ namespace BrowserDetector\Detector\Device;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result\Result;
 use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
@@ -53,7 +55,8 @@ use BrowserDetector\Detector\Bits\Device as DeviceBits;
  * @property-read string  $fallBack
  * @property-read boolean $actualDeviceRoot
  */
-abstract class AbstractDevice implements DeviceInterface, \Serializable
+abstract class AbstractDevice
+    implements DeviceInterface, \Serializable, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * @var string the user agent to handle
@@ -171,6 +174,16 @@ abstract class AbstractDevice implements DeviceInterface, \Serializable
         $this->logger = $logger;
 
         return $this;
+    }
+
+    /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        return false;
     }
 
     /**

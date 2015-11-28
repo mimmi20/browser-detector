@@ -78,6 +78,38 @@ class Macintosh extends AbstractDevice
     );
 
     /**
+     * checks if this device is able to handle the useragent
+     *
+     * @return boolean returns TRUE, if this device can handle the useragent
+     */
+    public function canHandle()
+    {
+        $mac = array(
+            'Macintosh',
+            'Darwin',
+            'Mac_PowerPC',
+            'MacBook',
+            'for Mac',
+            'PPC Mac',
+            'Mac OS X',
+            '(MacOS)'
+        );
+
+        if (!$this->utils->checkIfContains($mac)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(
+            array('MacBook', 'Macmini', 'iMac', 'MacPro', 'PowerMac', 'Power%20Macintosh')
+        )
+        ) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
