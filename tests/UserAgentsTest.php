@@ -70,9 +70,9 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $checks          = array();
         $sourceDirectory = 'vendor/browscap/browscap/tests/fixtures/issues/';
 
-        $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
+        $iterator = new \DirectoryIterator($sourceDirectory);
 
-        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
+        foreach ($iterator as $file) {
             /** @var $file \SplFileInfo */
             if (!$file->isFile() || $file->getExtension() != 'php') {
                 continue;

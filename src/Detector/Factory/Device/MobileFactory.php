@@ -224,10 +224,10 @@ class MobileFactory
         $sourceDirectory = __DIR__ . '/../../Device/Mobile/';
 
         $utils    = new Classname();
-        $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
+        $iterator = new \DirectoryIterator($sourceDirectory);
         $list     = array();
 
-        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
+        foreach ($iterator as $file) {
             /** @var $file \SplFileInfo */
             if (!$file->isFile() || $file->getExtension() != 'php') {
                 continue;
@@ -257,7 +257,7 @@ class MobileFactory
 
         foreach ($list as $key => $entry) {
             /** @var \BrowserDetector\Detector\Device\AbstractDevice $entry */
-            $names[$key]     = $entry->getCapability('device_name');
+            $names[$key]     = $entry->getCapability('model_name');
             $weights[$key]   = $entry->getWeight();
             $companies[$key] = $entry->getManufacturer()->getName();
         }
