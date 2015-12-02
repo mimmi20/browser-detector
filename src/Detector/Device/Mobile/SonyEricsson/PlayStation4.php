@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\CellOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaResult\Version;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -107,11 +106,11 @@ class PlayStation4 extends AbstractDevice implements DeviceHasSpecificPlatformIn
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tv();
+        return new \UaDeviceType\Tv();
     }
 
     /**

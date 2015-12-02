@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tv;
 
 /**
  * @category  BrowserDetector
@@ -104,11 +104,11 @@ class PanasonicViera extends AbstractDevice
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tv();
+        return new Tv();
     }
 
     /**

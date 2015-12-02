@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -111,11 +110,11 @@ class AsusMe301t extends AbstractDevice implements DeviceHasWurflKeyInterface, D
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new \UaDeviceType\Tablet();
     }
 
     /**

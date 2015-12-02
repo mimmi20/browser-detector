@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result\Result;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\MatcherCanHandleInterface;
 use UaMatcher\MatcherHasWeightInterface;
 use UaResult\Version;
@@ -217,11 +216,11 @@ abstract class AbstractDevice
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Unknown();
+        return new \UaDeviceType\Unknown();
     }
 
     /**

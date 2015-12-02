@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Bits\Browser as BrowserBits;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Type\Browser as BrowserType;
 use UaMatcher\MatcherHasWeightInterface;
 use UaResult\Version;
 use Psr\Log\LoggerInterface;
@@ -269,11 +268,11 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaBrowserType\TypeInterface
      */
     public function getBrowserType()
     {
-        return new BrowserType\Unknown();
+        return new \UaBrowserType\Unknown();
     }
 
     /**

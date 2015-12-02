@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Zte;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -110,11 +109,11 @@ class ZteBaseLutea2 extends AbstractDevice implements DeviceHasWurflKeyInterface
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new \UaDeviceType\MobilePhone();
     }
 
     /**

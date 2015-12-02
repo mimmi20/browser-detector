@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaDeviceType\TvConsole;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -112,11 +112,11 @@ class MicrosoftXbox extends AbstractDevice implements DeviceHasWurflKeyInterface
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\TvConsole();
+        return new TvConsole();
     }
 
     /**

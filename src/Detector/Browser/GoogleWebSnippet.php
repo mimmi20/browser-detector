@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use BrowserDetector\Detector\Type\Browser as BrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -102,11 +101,11 @@ class GoogleWebSnippet extends AbstractBrowser implements BrowserHasSpecificEngi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaBrowserType\TypeInterface
      */
     public function getBrowserType()
     {
-        return new BrowserType\Bot();
+        return new \UaBrowserType\Bot();
     }
 
     /**

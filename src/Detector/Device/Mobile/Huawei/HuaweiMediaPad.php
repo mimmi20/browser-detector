@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Huawei;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -115,11 +114,11 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new \UaDeviceType\Tablet();
     }
 
     /**

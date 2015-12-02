@@ -38,7 +38,6 @@ use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsMobileOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -128,11 +127,11 @@ class Lenovo extends AbstractDevice implements DeviceHasChildrenInterface
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new \UaDeviceType\Tablet();
     }
 
     /**

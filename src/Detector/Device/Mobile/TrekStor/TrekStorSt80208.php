@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
 /*
@@ -106,11 +105,11 @@ class TrekStorSt80208 extends AbstractDevice
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new \UaDeviceType\Tablet();
     }
 
     /**

@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Device\Desktop;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaResult\Version;
 
 /**
@@ -105,11 +104,11 @@ class MacBookAir extends AbstractDevice
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Desktop();
+        return new \UaDeviceType\Desktop();
     }
 
     /**

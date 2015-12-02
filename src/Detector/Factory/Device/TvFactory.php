@@ -51,7 +51,6 @@ use BrowserDetector\Detector\Device\Tv\SonyKdl50w815b;
 use BrowserDetector\Detector\Device\Tv\TechniSatDigiCorderIsioS;
 use BrowserDetector\Detector\Device\Tv\TechniSatDigitIsioS;
 use BrowserDetector\Detector\Device\Tv\TechniSatMultyVisionIsio;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use Psr\Log\LoggerInterface;
 
 /**

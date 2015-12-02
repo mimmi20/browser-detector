@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Ios;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -130,11 +129,11 @@ class Apple extends AbstractDevice implements DeviceHasChildrenInterface, Device
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new \UaDeviceType\MobilePhone();
     }
 
     /**

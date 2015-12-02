@@ -139,7 +139,6 @@ use BrowserDetector\Detector\Device\Mobile\Yusu;
 use BrowserDetector\Detector\Device\Mobile\Zenithink;
 use BrowserDetector\Detector\Device\Mobile\Zopo;
 use BrowserDetector\Detector\Device\Mobile\Zte;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\Classname;
 use Psr\Log\LoggerInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;

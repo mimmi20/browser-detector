@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WebOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaDeviceType\MobilePhone;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -112,11 +112,11 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

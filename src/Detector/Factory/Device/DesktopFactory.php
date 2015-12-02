@@ -43,7 +43,6 @@ use BrowserDetector\Detector\Device\Desktop\MacPro;
 use BrowserDetector\Detector\Device\Desktop\PowerMac;
 use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
 use BrowserDetector\Detector\Device\GeneralDesktop;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Helper\Linux;
 use Psr\Log\LoggerInterface;
 use BrowserDetector\Helper\Windows as WindowsHelper;

@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Type\Device as DeviceType;
+use UaDeviceType\Tablet;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -110,11 +110,11 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

@@ -32,7 +32,6 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
 use UaResult\Version;
-use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector

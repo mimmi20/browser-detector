@@ -31,7 +31,6 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Type\Browser as BrowserType;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
@@ -129,11 +128,11 @@ class Maxthon extends AbstractBrowser implements BrowserHasWurflKeyInterface
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaBrowserType\TypeInterface
      */
     public function getBrowserType()
     {
-        return new BrowserType\Browser();
+        return new \UaBrowserType\Browser();
     }
 
     /**

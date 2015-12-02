@@ -35,8 +35,8 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
-use BrowserDetector\Detector\Type\Device as DeviceType;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 
 /**
  * @category  BrowserDetector
@@ -108,11 +108,11 @@ class Lge970 extends AbstractDevice
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        return new DeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

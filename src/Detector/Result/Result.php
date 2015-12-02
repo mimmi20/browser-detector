@@ -32,10 +32,6 @@ namespace BrowserDetector\Detector\Result;
 
 use BrowserDetector\Detector\Company\CompanyInterface;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
-use BrowserDetector\Detector\Type\Browser\TypeInterface as BrowserTypeInterface;
-use BrowserDetector\Detector\Type\Browser\Unknown as TypeUnknownBrowser;
-use BrowserDetector\Detector\Type\Device\TypeInterface as DeviceTypeInterface;
-use BrowserDetector\Detector\Type\Device\Unknown as TypeUnknownDevice;
 use Psr\Log\LoggerInterface;
 use UaResult\Version;
 use UaHelper\Utils;
@@ -651,28 +647,28 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
     }
 
     /**
-     * @return \BrowserDetector\Detector\Type\Device\TypeInterface|\BrowserDetector\Detector\Type\Device\Unknown
+     * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
         $type = $this->device->getDeviceType();
 
-        if (!($type instanceof DeviceTypeInterface)) {
-            $type = new TypeUnknownDevice();
+        if (!($type instanceof \UaDeviceType\TypeInterface)) {
+            $type = new \UaDeviceType\Unknown();
         }
 
         return $type;
     }
 
     /**
-     * @return \BrowserDetector\Detector\Type\Browser\Unknown|\BrowserDetector\Detector\Type\Browser\TypeInterface
+     * @return \UaBrowserType\TypeInterface
      */
     public function getBrowserType()
     {
         $type = $this->browser->getBrowserType();
 
-        if (!($type instanceof BrowserTypeInterface)) {
-            $type = new TypeUnknownBrowser();
+        if (!($type instanceof \UaBrowserType\TypeInterface)) {
+            $type = new \UaBrowserType\Unknown();
         }
 
         return $type;
