@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Nec;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Maemo;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -112,7 +113,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

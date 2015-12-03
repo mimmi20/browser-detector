@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -117,7 +118,7 @@ class HtcRadar extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

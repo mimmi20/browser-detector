@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Application;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -105,7 +106,7 @@ class CfNetwork extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Application();
+        return new Application();
     }
 
     /**

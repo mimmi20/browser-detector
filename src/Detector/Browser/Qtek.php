@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Browser;
 
 /**
  * QtekUserAgentHandler
@@ -102,6 +103,6 @@ class Qtek extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 }

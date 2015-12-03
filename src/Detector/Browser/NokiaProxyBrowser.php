@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
+use UaBrowserType\Transcoder;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -102,7 +103,7 @@ class NokiaProxyBrowser extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Transcoder();
+        return new Transcoder();
     }
 
     /**

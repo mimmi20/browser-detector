@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Unknown;
 
 /**
  * @category  BrowserDetector
@@ -105,7 +106,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Unknown();
+        return new Unknown();
     }
 
     /**

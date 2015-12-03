@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Transcoder;
 use UaResult\Version;
 
 /**
@@ -104,7 +105,7 @@ class Ucweb extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Transcoder();
+        return new Transcoder();
     }
 
     /**

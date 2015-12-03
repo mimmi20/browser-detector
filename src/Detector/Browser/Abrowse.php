@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Browser;
 use UaResult\Version;
 
 /**
@@ -103,7 +104,7 @@ class Abrowse extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

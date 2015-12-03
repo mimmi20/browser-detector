@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Zte;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\Tablet;
 use UaResult\Version;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -110,7 +111,7 @@ class ZteBaseTab extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

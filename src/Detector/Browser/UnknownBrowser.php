@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Unknown;
 
 /**
  * @category  BrowserDetector
@@ -99,7 +100,7 @@ class UnknownBrowser extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Unknown();
+        return new Unknown();
     }
 
     /**

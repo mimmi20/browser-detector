@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -105,7 +106,7 @@ class Seokicks extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Bot();
+        return new Bot();
     }
 
     /**

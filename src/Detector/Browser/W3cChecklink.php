@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Bot;
 use UaResult\Version;
 
 /**
@@ -104,7 +105,7 @@ class W3cChecklink extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Bot();
+        return new Bot();
     }
 
     /**

@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\BotTrancoder;
 use UaResult\Version;
 
 /**
@@ -104,7 +105,7 @@ class GoogleMarkupTester extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\BotTrancoder();
+        return new BotTrancoder();
     }
 
     /**

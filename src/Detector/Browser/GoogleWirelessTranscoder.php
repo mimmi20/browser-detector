@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\BotTrancoder;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -106,7 +107,7 @@ class GoogleWirelessTranscoder extends AbstractBrowser implements BrowserHasSpec
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\BotTrancoder();
+        return new BotTrancoder();
     }
 
     /**

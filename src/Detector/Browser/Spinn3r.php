@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
+use UaBrowserType\BotSyndicationReader;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -106,7 +107,7 @@ class Spinn3r extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\BotSyndicationReader();
+        return new BotSyndicationReader();
     }
 
     /**

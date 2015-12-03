@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -103,7 +104,7 @@ class SamsungGtp7320 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

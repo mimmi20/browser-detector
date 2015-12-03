@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Bot;
 
 /**
  * @category  BrowserDetector
@@ -103,7 +104,7 @@ class PhantomJsBot extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Bot();
+        return new Bot();
     }
 
     /**

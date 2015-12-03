@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Nec;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Maemo;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -116,7 +117,7 @@ class NecN905i extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

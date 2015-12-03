@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Tv;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\LinuxTv;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tv;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class TechniSatDigitIsioS extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tv();
+        return new Tv();
     }
 
     /**

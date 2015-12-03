@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Windows;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Desktop;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -106,7 +107,7 @@ class WindowsDesktop extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Desktop();
+        return new Desktop();
     }
 
     /**
