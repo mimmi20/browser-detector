@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
+use UaBrowserType\EmailClient;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -131,7 +132,7 @@ class Thunderbird extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\EmailClient();
+        return new EmailClient();
     }
 
     /**

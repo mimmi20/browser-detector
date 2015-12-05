@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\RimTabletOs;
+use UaDeviceType\Tablet;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -117,7 +118,7 @@ class RimTablet extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

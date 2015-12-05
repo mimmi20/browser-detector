@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use BrowserDetector\Helper\SpamCrawlerFake;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
@@ -178,7 +179,7 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

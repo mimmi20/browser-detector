@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
@@ -181,7 +182,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

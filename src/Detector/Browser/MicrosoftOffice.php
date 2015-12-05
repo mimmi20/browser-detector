@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
+use UaBrowserType\Application;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
@@ -139,7 +140,7 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasWurflKeyInter
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Application();
+        return new Application();
     }
 
     /**

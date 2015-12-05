@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\EmailClient;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -175,7 +176,7 @@ class AppleMail extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\EmailClient();
+        return new EmailClient();
     }
 
     /**

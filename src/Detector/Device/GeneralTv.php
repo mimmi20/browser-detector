@@ -30,12 +30,11 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Helper\Tv as TvHelper;
+use UaDeviceType\Tv;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -131,7 +130,7 @@ class GeneralTv extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tv();
+        return new Tv();
     }
 
     /**

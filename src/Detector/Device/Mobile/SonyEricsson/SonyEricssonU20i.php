@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
+use UaDeviceType\MobilePhone;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -116,7 +117,7 @@ class SonyEricssonU20i extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

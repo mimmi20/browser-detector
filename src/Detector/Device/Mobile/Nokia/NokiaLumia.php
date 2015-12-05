@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -132,7 +133,7 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

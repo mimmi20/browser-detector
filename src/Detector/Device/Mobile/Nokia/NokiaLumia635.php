@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -113,7 +114,7 @@ class NokiaLumia635 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

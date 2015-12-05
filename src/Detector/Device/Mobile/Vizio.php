@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
@@ -115,7 +116,7 @@ class Vizio extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

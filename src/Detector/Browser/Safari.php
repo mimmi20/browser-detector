@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
@@ -116,7 +117,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

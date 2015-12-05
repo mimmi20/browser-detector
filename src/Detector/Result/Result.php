@@ -33,6 +33,8 @@ namespace BrowserDetector\Detector\Result;
 use BrowserDetector\Detector\Company\CompanyInterface;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use Psr\Log\LoggerInterface;
+use UaBrowserType\TypeInterface;
+use UaBrowserType\Unknown;
 use UaResult\Version;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserInterface;
@@ -667,8 +669,8 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
     {
         $type = $this->browser->getBrowserType();
 
-        if (!($type instanceof \UaBrowserType\TypeInterface)) {
-            $type = new \UaBrowserType\Unknown();
+        if (!($type instanceof TypeInterface)) {
+            $type = new Unknown();
         }
 
         return $type;

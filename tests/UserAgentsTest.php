@@ -9,7 +9,7 @@
  *
  * Refer to the LICENSE file distributed with this package.
  *
- * @category   BrowscapTest
+ * @category   CompareTest
  * @package    Test
  * @copyright  1998-2014 Browser Capabilities Project
  * @license    MIT
@@ -17,21 +17,15 @@
 
 namespace BrowserDetectorTest;
 
-use Browscap\Data\PropertyHolder;
 use BrowserDetector\BrowserDetector;
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
-use phpbrowscap\Browscap;
-use Browscap\Generator\BuildGenerator;
-use Browscap\Helper\CollectionCreator;
-use Browscap\Writer\Factory\PhpWriterFactory;
-use WurflCache\Adapter\File;
 use WurflCache\Adapter\NullStorage;
 
 /**
  * Class UserAgentsTest
  *
- * @category   BrowscapTest
+ * @category   CompareTest
  * @package    Test
  * @author     James Titcumb <james@asgrim.com>
  * @group      useragenttest

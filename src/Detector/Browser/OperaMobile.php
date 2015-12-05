@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
@@ -117,7 +118,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

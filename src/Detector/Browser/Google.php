@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Browser;
 
 /**
  * @category  BrowserDetector
@@ -122,7 +123,7 @@ class Google extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

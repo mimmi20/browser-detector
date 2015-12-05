@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Motorola;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\MobilePhone;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -114,7 +115,7 @@ class MotorolaXt1032 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
+use UaDeviceType\Desktop;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 
 /**
@@ -191,7 +192,7 @@ class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterfac
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Desktop();
+        return new Desktop();
     }
 
     /**

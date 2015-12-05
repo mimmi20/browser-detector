@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Company;
+use UaDeviceType\Tablet;
 use UaResult\Version;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -113,7 +114,7 @@ class AmazonKindle extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

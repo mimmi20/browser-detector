@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Application;
 use UaResult\Version;
 
 /**
@@ -129,7 +130,7 @@ class MicrosoftPowerPoint extends MicrosoftOffice
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Application();
+        return new Application();
     }
 
     /**

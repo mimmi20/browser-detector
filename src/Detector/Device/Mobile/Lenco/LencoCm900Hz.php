@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Lenco;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /*
@@ -114,7 +115,7 @@ class LencoCm900Hz extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

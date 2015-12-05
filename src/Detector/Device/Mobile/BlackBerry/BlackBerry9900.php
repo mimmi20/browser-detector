@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\RimOs;
+use UaDeviceType\MobilePhone;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -115,7 +116,7 @@ class BlackBerry9900 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

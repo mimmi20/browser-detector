@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -113,7 +114,7 @@ class NokiaC5 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

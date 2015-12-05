@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\NintendoOs;
+use UaDeviceType\MobileDevice;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -131,7 +132,7 @@ class Nintendo extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobileDevice();
+        return new MobileDevice();
     }
 
     /**

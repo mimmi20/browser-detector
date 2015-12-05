@@ -30,15 +30,15 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
 use UaResult\Version;
 use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -85,7 +85,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
         'nfc_support'            => true,
     );
     /**
-     * @var \UaDeviceType\MobilePhone
+     * @var MobilePhone
      */
     private $deviceType = null;
 
@@ -141,7 +141,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
     public function getDeviceType()
     {
         if (null === $this->deviceType) {
-            $this->deviceType = new \UaDeviceType\MobilePhone();
+            $this->deviceType = new MobilePhone();
         }
 
         return $this->deviceType;
@@ -176,7 +176,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
     public function detectSpecialProperties()
     {
         if ($this->utils->checkIfContains(array('Android; Tablet'))) {
-            $this->deviceType = new \UaDeviceType\Tablet();
+            $this->deviceType = new Tablet();
 
             $this->setCapability('physical_screen_width', 112);
             $this->setCapability('physical_screen_height', 187);
@@ -194,13 +194,13 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
         }
 
         if ($this->utils->checkIfContains(array('Android; Mobile', 'Android; Linux'))) {
-            $this->deviceType = new \UaDeviceType\MobilePhone();
+            $this->deviceType = new MobilePhone();
 
             return $this;
         }
 
         if ($this->utils->checkIfContains(array('Opera Tablet'))) {
-            $this->deviceType = new \UaDeviceType\Tablet();
+            $this->deviceType = new Tablet();
 
             $this->setCapability('physical_screen_width', 100);
             $this->setCapability('physical_screen_height', 200);
@@ -216,7 +216,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
         }
 
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
-            $this->deviceType = new \UaDeviceType\MobilePhone();
+            $this->deviceType = new MobilePhone();
 
             $this->setCapability('physical_screen_width', 50);
             $this->setCapability('physical_screen_height', 84);
@@ -236,7 +236,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
         }
 
         if ($this->utils->checkIfContains(array('Opera Mobi'))) {
-            $this->deviceType = new \UaDeviceType\MobilePhone();
+            $this->deviceType = new MobilePhone();
 
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
@@ -254,7 +254,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
         }
 
         if ($this->utils->checkIfContains(array('Opera Mini'))) {
-            $this->deviceType = new \UaDeviceType\MobilePhone();
+            $this->deviceType = new MobilePhone();
 
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
@@ -272,7 +272,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
         }
 
         if ($this->utils->checkIfContains(array('Windows Phone 6.5'))) {
-            $this->deviceType = new \UaDeviceType\MobilePhone();
+            $this->deviceType = new MobilePhone();
 
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
@@ -291,7 +291,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
         }
 
         if ($this->utils->checkIfContainsAll(array('Windows NT', 'Touch'))) {
-            $this->deviceType = new \UaDeviceType\Tablet();
+            $this->deviceType = new Tablet();
 
             $this->setCapability('physical_screen_width', 100);
             $this->setCapability('physical_screen_height', 200);
@@ -307,7 +307,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
         }
 
         if ($this->utils->checkIfContains(array('Mobile'))) {
-            $this->deviceType = new \UaDeviceType\MobilePhone();
+            $this->deviceType = new MobilePhone();
 
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);

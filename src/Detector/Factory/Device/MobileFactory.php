@@ -61,7 +61,6 @@ use BrowserDetector\Detector\Device\Mobile\EinsUndEins;
 use BrowserDetector\Detector\Device\Mobile\Epad;
 use BrowserDetector\Detector\Device\Mobile\FaktorZwei;
 use BrowserDetector\Detector\Device\Mobile\Feiteng;
-use BrowserDetector\Detector\Device\Mobile\Flytouch;
 use BrowserDetector\Detector\Device\Mobile\Fujitsu;
 use BrowserDetector\Detector\Device\Mobile\Hannspree;
 use BrowserDetector\Detector\Device\Mobile\Hdc;

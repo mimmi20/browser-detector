@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\EmailClient;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
@@ -136,7 +137,7 @@ class MicrosoftOutlook extends MicrosoftOffice implements BrowserHasWurflKeyInte
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\EmailClient();
+        return new EmailClient();
     }
 
     /**

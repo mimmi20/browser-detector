@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\CatSound;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\Tablet;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -114,7 +115,7 @@ class CatNova8 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

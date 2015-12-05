@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -121,7 +122,7 @@ class AlcatelOt991 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

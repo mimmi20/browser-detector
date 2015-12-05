@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Windows;
+use UaDeviceType\Tablet;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -141,7 +142,7 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

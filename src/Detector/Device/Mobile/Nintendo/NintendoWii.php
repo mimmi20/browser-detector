@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\TvConsole;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -113,7 +114,7 @@ class NintendoWii extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\TvConsole();
+        return new TvConsole();
     }
 
     /**

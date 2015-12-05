@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Application;
 use UaResult\Version;
 
 /**
@@ -123,7 +124,7 @@ class FacebookApp extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Application();
+        return new Application();
     }
 
     /**

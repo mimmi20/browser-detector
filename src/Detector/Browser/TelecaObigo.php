@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Teleca;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -115,7 +116,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**
@@ -183,8 +184,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getEngine()
     {
-        $handler = new Teleca();
-        $handler->setUseragent($this->useragent);
+        $handler = new Teleca($this->useragent);
 
         return $handler;
     }

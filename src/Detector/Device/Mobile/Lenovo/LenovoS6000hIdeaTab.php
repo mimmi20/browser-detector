@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\FonePad;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -113,7 +114,7 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\FonePad();
+        return new FonePad();
     }
 
     /**
