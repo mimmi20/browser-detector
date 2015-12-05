@@ -30,11 +30,7 @@
 
 namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Os\Maemo;
-use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**

@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Honlin;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Desktop;
 
 /**
  * @category  BrowserDetector
@@ -108,7 +109,7 @@ class HonlinPc1088 extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Desktop();
+        return new Desktop();
     }
 
     /**

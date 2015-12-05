@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Siemens;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 
 /**
  * @category  BrowserDetector
@@ -107,7 +108,7 @@ class SiemensS65 extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

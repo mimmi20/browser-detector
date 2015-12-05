@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Cubot;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 
 /**
  * @category  BrowserDetector
@@ -107,7 +108,7 @@ class CubotGt953g extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

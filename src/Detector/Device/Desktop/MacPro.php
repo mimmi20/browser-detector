@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Desktop;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Desktop;
 
 /**
  * @category  BrowserDetector
@@ -107,7 +108,7 @@ class MacPro extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Desktop();
+        return new Desktop();
     }
 
     /**

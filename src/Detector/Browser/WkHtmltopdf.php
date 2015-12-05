@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Application;
 use UaResult\Version;
 
 /**
@@ -107,7 +108,7 @@ class WkHtmltopdf extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Application();
+        return new Application();
     }
 
     /**

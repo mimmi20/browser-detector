@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Transcoder;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
@@ -108,7 +109,7 @@ class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface,
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Transcoder();
+        return new Transcoder();
     }
 
     /**

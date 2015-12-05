@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Medion;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 
 /**
  * @category  BrowserDetector
@@ -107,7 +108,7 @@ class MdLifetabP891x extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

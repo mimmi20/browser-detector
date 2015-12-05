@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Transcoder;
 use UaResult\Version;
 use UaMatcher\Os\OsInterface;
 
@@ -108,7 +109,7 @@ class OperaMini extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Transcoder();
+        return new Transcoder();
     }
 
     /**

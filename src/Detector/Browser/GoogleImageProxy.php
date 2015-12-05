@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Device\DeviceInterface;
@@ -107,7 +108,7 @@ class GoogleImageProxy extends AbstractBrowser implements BrowserCalculatesAlter
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Bot();
+        return new Bot();
     }
 
     /**

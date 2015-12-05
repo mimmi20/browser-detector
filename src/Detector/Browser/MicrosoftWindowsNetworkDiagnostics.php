@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Bot;
 use UaResult\Version;
 
 /**
@@ -107,7 +108,7 @@ class MicrosoftWindowsNetworkDiagnostics extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Bot();
+        return new Bot();
     }
 
     /**

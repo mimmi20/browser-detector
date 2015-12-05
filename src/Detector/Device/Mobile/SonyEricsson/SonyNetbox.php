@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tv;
 
 /**
  * @category  BrowserDetector
@@ -107,7 +108,7 @@ class SonyNetbox extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tv();
+        return new Tv();
     }
 
     /**

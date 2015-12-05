@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Odys;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 
 /**
  * @category  BrowserDetector
@@ -107,7 +108,7 @@ class OdysXelioPT2Pro extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**
