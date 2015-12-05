@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class Flytouch extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Intenso;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class IntensoTab803 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

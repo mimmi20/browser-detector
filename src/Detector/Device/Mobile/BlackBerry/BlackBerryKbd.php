@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\RimOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class BlackBerryKbd extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

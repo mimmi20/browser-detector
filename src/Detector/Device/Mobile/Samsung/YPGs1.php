@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -113,7 +114,7 @@ class YPGs1 extends AbstractDevice implements DeviceHasWurflKeyInterface, Device
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobileDevice();
+        return new MobileDevice();
     }
 
     /**

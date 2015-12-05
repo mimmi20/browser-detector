@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class AlcatelOt997d extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

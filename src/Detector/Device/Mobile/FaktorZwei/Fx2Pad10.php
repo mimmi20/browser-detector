@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\FaktorZwei;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class Fx2Pad10 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

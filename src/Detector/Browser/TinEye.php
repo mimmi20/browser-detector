@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -109,7 +110,7 @@ class TinEye extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Bot();
+        return new Bot();
     }
 
     /**

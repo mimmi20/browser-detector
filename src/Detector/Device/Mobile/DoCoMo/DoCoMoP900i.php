@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\DoCoMo;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class DoCoMoP900i extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

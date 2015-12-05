@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use BrowserDetector\Helper\SpamCrawlerFake;
+use UaBrowserType\Bot;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -109,7 +110,7 @@ class FakeBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Bot();
+        return new Bot();
     }
 
     /**

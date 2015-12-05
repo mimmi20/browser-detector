@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Device\Desktop;
 
 use BrowserDetector\Detector\Company;
+use UaDeviceType\Desktop;
 use UaResult\Version;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -109,7 +110,7 @@ class PowerMac extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Desktop();
+        return new Desktop();
     }
 
     /**

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\UnknownOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobileConsole;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class Nintendo3ds extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobileConsole();
+        return new MobileConsole();
     }
 
     /**

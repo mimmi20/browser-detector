@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Company;
+use UaDeviceType\Tablet;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -112,7 +113,7 @@ class AmazonKindleFire extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**

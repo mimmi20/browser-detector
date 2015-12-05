@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /*
@@ -111,7 +112,7 @@ class TrekStorSt70104 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

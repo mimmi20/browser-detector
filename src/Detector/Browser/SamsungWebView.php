@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
 
@@ -112,7 +113,7 @@ class SamsungWebView extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

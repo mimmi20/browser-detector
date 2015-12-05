@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Java;
+use UaDeviceType\MobileConsole;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -113,7 +114,7 @@ class PlayStationVita extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobileConsole();
+        return new MobileConsole();
     }
 
     /**

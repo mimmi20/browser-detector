@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
@@ -109,7 +110,7 @@ class UnisterTesting extends AbstractBrowser implements BrowserCalculatesAlterna
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Bot();
+        return new Bot();
     }
 
     /**

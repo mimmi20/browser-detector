@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
 use BrowserDetector\Detector\Company;
+use UaDeviceType\MobileDevice;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -112,7 +113,7 @@ class Ipod extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobileDevice();
+        return new MobileDevice();
     }
 
     /**

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
@@ -109,7 +110,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

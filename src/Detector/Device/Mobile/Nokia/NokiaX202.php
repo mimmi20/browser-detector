@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class NokiaX202 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\MobilePhone();
+        return new MobilePhone();
     }
 
     /**

@@ -31,6 +31,7 @@
 namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 
 use BrowserDetector\Detector\Company;
+use UaDeviceType\FonePad;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -111,7 +112,7 @@ class RimPlayBook extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\FonePad();
+        return new FonePad();
     }
 
     /**

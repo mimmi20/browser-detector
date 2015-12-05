@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Medion;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\FonePad;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class MdLifeE10312 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\FonePad();
+        return new FonePad();
     }
 
     /**

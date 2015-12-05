@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -109,7 +110,7 @@ class DarwinBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getBrowserType()
     {
-        return new \UaBrowserType\Browser();
+        return new Browser();
     }
 
     /**

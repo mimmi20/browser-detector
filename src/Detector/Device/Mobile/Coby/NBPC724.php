@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Coby;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Desktop;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class NBPC724 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Desktop();
+        return new Desktop();
     }
 
     /**

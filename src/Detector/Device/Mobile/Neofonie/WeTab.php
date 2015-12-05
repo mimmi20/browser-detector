@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Neofonie;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\MeeGo;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -109,7 +110,7 @@ class WeTab extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getDeviceType()
     {
-        return new \UaDeviceType\Tablet();
+        return new Tablet();
     }
 
     /**
