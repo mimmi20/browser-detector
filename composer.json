@@ -1,6 +1,6 @@
 {
   "name": "mimmi20/browser-detector",
-  "description": "Library for PHP 5.3 to detect Browsers and Devices",
+  "description": "Library for PHP 5.6+ to detect Browsers and Devices",
   "type": "library",
   "license": "MIT",
   "keywords": [
@@ -27,16 +27,16 @@
     "source": "https://github.com/mimmi20/BrowserDetector"
   },
   "require": {
-    "php": ">=5.5.0",
+    "php": ">=5.6.0",
     "mimmi20/wurflcache": "~1.3",
     "mimmi20/wurfl-data": ">=1.6.0.5",
     "mimmi20/wurfl-generic-request": "1.0.*",
     "psr/log": "~1.0",
     "browscap/browscap": "dev-master",
-    "mimmi20/ua-result": "~1.0.6",
-    "mimmi20/ua-matcher-interface": "~1.0.13",
+    "mimmi20/ua-result": "~1.1.0",
+    "mimmi20/ua-matcher-interface": "~1.1.0",
     "mimmi20/ua-helper-utils": "*",
-    "mimmi20/ua-data-mapper": "~1.0.1",
+    "mimmi20/ua-data-mapper": "~1.1.0",
     "mimmi20/ua-browser-type": "~1.0.0",
     "mimmi20/ua-device-type": "~1.0.0"
   },
