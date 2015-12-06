@@ -20,6 +20,7 @@ namespace BrowserDetectorTest;
 use BrowserDetector\BrowserDetector;
 use Monolog\Handler\NullHandler;
 use Monolog\Logger;
+use UaDataMapper\InputMapper;
 use WurflCache\Adapter\NullStorage;
 
 /**
@@ -112,25 +113,38 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         }
 
         $result = $this->object->getBrowser($userAgent, true);
+        $mapper = new InputMapper();
+
+        $expectedBrowserName = $mapper->mapBrowserName($expectedProperties['Browser']);
 
         self::assertSame(
-            $expectedProperties['Browser'],
+            $expectedBrowserName,
             $result->getBrowser()->getName(),
-            'Expected actual "Browser" to be "' . $expectedProperties['Browser']
+            'Expected actual "Browser" to be "' . $expectedBrowserName
+            . ' [' . $expectedProperties['Browser'] . ']'
             . '" (was "' . $result->getBrowser()->getName() . '")'
         );
 
+        $expectedBrowserType = $mapper->mapBrowserType($expectedProperties['Browser_Type'])->getName();
+
         self::assertSame(
-            $expectedProperties['Browser_Type'],
+            $expectedBrowserType,
             $result->getBrowser()->getBrowserType()->getName(),
-            'Expected actual "Browser_Type" to be "' . $expectedProperties['Browser_Type']
+            'Expected actual "Browser_Type" to be "' . $expectedBrowserType
+            . ' [' . $expectedProperties['Browser_Type'] . ']'
             . '" (was "' . $result->getBrowser()->getBrowserType()->getName() . '")'
         );
 
-        self::assertSame(
+        $expectedBrowserMaker = $mapper->mapBrowserMaker(
             $expectedProperties['Browser_Maker'],
+            $expectedProperties['Browser']
+        );
+
+        self::assertSame(
+            $expectedBrowserMaker,
             $result->getBrowser()->getManufacturer()->getName(),
-            'Expected actual "Browser_Maker" to be "' . $expectedProperties['Browser_Maker']
+            'Expected actual "Browser_Maker" to be "' . $expectedBrowserMaker
+            . ' [' . $expectedProperties['Browser_Maker'] . ']'
             . '" (was "' . $result->getBrowser()->getManufacturer()->getName() . '")'
         );
     }
