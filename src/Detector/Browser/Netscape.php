@@ -171,6 +171,11 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             'OpenHoseBot',
             'Kazehakase',
             'Polaris',
+            'GooglePlus',
+            'awmt',
+            'Another Web Mining Tool',
+            'TYPO3-linkvalidator',
+            'PaperLiBot',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

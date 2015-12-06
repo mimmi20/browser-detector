@@ -32,17 +32,15 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use UaBrowserType\Browser;
+use UaResult\Version;
 
 /**
- * SamsungUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Samsung extends AbstractBrowser
+class AnotherWebMiningTool extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -73,16 +71,11 @@ class Samsung extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(
-            array('Jasmine', 'NetFront', 'Dolfin', 'Dolphin', 'IEMobile', 'MSIEMobile', 'MSIE')
-        )
-        ) {
+        if (!$this->utils->checkIfContains(array('Another Web Mining Tool', 'awmt'))) {
             return false;
         }
 
-        return $this->utils->checkIfContains('Samsung/SGH') || $this->utils->checkIfContains(
-            array('SEC-', 'Samsung', 'SAMSUNG', 'SPH', 'SGH', 'SCH')
-        );
+        return true;
     }
 
     /**
@@ -92,7 +85,7 @@ class Samsung extends AbstractBrowser
      */
     public function getName()
     {
-        return 'Samsung Mobile Browser';
+        return 'Another Web Mining Tool';
     }
 
     /**
@@ -102,7 +95,7 @@ class Samsung extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company\Unknown();
     }
 
     /**
@@ -113,5 +106,30 @@ class Samsung extends AbstractBrowser
     public function getBrowserType()
     {
         return new Browser();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('Another Web Mining Tool');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 5;
     }
 }

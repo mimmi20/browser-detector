@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UcMobile extends AbstractCompany implements CompanyInterface
+class WooRank extends AbstractCompany implements CompanyInterface
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'UC Mobile';
+    protected $name = 'woorank.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'UC Mobile';
+    protected $brandname = 'WooRank';
 }

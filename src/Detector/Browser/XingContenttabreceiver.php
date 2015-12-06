@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Transcoder;
+use UaBrowserType\Browser;
 use UaResult\Version;
 
 /**
@@ -40,7 +40,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UcBrowser extends AbstractBrowser
+class XingContenttabreceiver extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -71,7 +71,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ucweb', 'uc browser', 'ucbrowser'), true)) {
+        if (!$this->utils->checkIfContains(array('XING-contenttabreceiver'))) {
             return false;
         }
 
@@ -85,7 +85,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getName()
     {
-        return 'UC Browser';
+        return 'XING Contenttabreceiver';
     }
 
     /**
@@ -95,7 +95,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\UcWeb();
+        return new Company\Unknown();
     }
 
     /**
@@ -105,7 +105,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Transcoder();
+        return new Browser();
     }
 
     /**
@@ -118,7 +118,7 @@ class UcBrowser extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('UC Browser', 'UCBrowser', 'UCWEB', 'Browser');
+        $searches = array('XING\-contenttabreceiver');
 
         return $detector->detectVersion($searches);
     }
@@ -130,6 +130,6 @@ class UcBrowser extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 7976;
+        return 5;
     }
 }

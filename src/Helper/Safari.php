@@ -161,6 +161,7 @@ class Safari
             'Kindle',
             'Slurp',
             'GINGERBREAD',
+            'Nokia',
             //mobile Version
             'Tablet',
             'Android',

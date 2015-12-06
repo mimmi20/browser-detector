@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Transcoder;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UcBrowser extends AbstractBrowser
+class Typo3Linkvalidator extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -52,7 +54,7 @@ class UcBrowser extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -71,7 +73,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ucweb', 'uc browser', 'ucbrowser'), true)) {
+        if (!$this->utils->checkIfContains(array('TYPO3-linkvalidator'))) {
             return false;
         }
 
@@ -85,7 +87,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getName()
     {
-        return 'UC Browser';
+        return 'TYPO3 Linkvalidator';
     }
 
     /**
@@ -95,7 +97,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\UcWeb();
+        return new Company\Unknown();
     }
 
     /**
@@ -105,7 +107,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Transcoder();
+        return new Bot();
     }
 
     /**
@@ -118,7 +120,7 @@ class UcBrowser extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('UC Browser', 'UCBrowser', 'UCWEB', 'Browser');
+        $searches = array('TYPO3\-linkvalidator');
 
         return $detector->detectVersion($searches);
     }
@@ -130,6 +132,16 @@ class UcBrowser extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 7976;
+        return 3;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function getEngine()
+    {
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

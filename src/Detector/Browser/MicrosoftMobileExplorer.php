@@ -94,7 +94,8 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
             'Outlook',
             'BlackBerry',
             'WebTV',
-            'ArgClrInt'
+            'ArgClrInt',
+            'Avant',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE)) {

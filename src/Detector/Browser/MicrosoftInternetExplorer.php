@@ -142,6 +142,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
             'bingpreview',
             'crystalsemanticsbot',
             '360spider',
+            'lightspeedsystems',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)

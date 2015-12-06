@@ -89,7 +89,7 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getName()
     {
-        return 'WaterFox';
+        return 'Waterfox';
     }
 
     /**

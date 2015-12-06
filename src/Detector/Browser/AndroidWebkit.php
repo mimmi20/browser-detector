@@ -121,6 +121,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
             'baidu',
             'iBrowser',
             'OneBrowser',
+            'douban',
         );
 
         if ($this->utils->checkIfContains($noAndroid)) {

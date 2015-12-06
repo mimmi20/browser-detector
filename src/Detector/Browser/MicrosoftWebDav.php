@@ -74,7 +74,7 @@ class MicrosoftWebDav extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Microsoft-WebDAV')) {
+        if (!$this->utils->checkIfContains(array('Microsoft-WebDAV', 'DavClnt'))) {
             return false;
         }
 
@@ -121,7 +121,7 @@ class MicrosoftWebDav extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Microsoft\-WebDAV\-MiniRedir', 'Microsoft\-WebDAV');
+        $searches = array('Microsoft\-WebDAV\-MiniRedir', 'Microsoft\-WebDAV', 'DavClnt');
 
         return $detector->detectVersion($searches);
     }

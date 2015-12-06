@@ -31,16 +31,18 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Transcoder;
-use UaResult\Version;
+use UaBrowserType\Browser;
 
 /**
+ * SamsungUserAgentHandler
+ *
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UcBrowser extends AbstractBrowser
+class SamsungMobileBrowser extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -71,11 +73,22 @@ class UcBrowser extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ucweb', 'uc browser', 'ucbrowser'), true)) {
+        $noSamsungBrowser = array(
+            'Jasmine',
+            'NetFront',
+            'Dolfin',
+            'Dolphin',
+            'IEMobile',
+            'MSIEMobile',
+            'MSIE',
+            'Polaris'
+        );
+
+        if ($this->utils->checkIfContains($noSamsungBrowser)) {
             return false;
         }
 
-        return true;
+        return $this->utils->checkIfContains(array('SEC-', 'Samsung', 'SAMSUNG', 'SPH', 'SGH', 'SCH'));
     }
 
     /**
@@ -85,7 +98,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getName()
     {
-        return 'UC Browser';
+        return 'Samsung Mobile Browser';
     }
 
     /**
@@ -95,7 +108,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\UcWeb();
+        return new Company\Samsung();
     }
 
     /**
@@ -105,31 +118,6 @@ class UcBrowser extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Transcoder();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('UC Browser', 'UCBrowser', 'UCWEB', 'Browser');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 7976;
+        return new Browser();
     }
 }

@@ -87,7 +87,7 @@ class QqBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'QQBrowser';
+        return 'QQbrowser';
     }
 
     /**
