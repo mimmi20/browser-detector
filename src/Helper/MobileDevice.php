@@ -158,6 +158,7 @@ class MobileDevice
             'sailfish',
             'padfone',
             'st80208',
+            'mtk',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {

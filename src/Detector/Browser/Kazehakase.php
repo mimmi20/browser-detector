@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Gecko;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Kazehakase extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +54,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,11 +73,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('GrapeshotCrawler', 'grapeshot.co.uk'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('grapeFX'))) {
+        if (!$this->utils->checkIfContains('Kazehakase')) {
             return false;
         }
 
@@ -91,7 +87,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getName()
     {
-        return 'GrapeshotCrawler';
+        return 'Kazehakase';
     }
 
     /**
@@ -101,7 +97,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\GrapeshotLimited();
+        return new Company\Unknown();
     }
 
     /**
@@ -111,7 +107,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Browser();
     }
 
     /**
@@ -124,7 +120,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('GrapeshotCrawler');
+        $searches = array('Kazehakase');
 
         return $detector->detectVersion($searches);
     }
@@ -136,16 +132,17 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 9540;
+        return 53545;
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Gecko
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Gecko($this->useragent, $this->logger);
     }
 }

@@ -77,9 +77,8 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
     {
         $mobileDeviceHelper = new MobileDevice($this->useragent);
 
-        if (!$this->utils->checkIfContains(
-            array('Opera Mobi', 'Opera Tablet', 'OPR')
-        ) && !($mobileDeviceHelper->isMobile() && $this->utils->checkIfContains(array('Opera', 'OPR')))
+        if (!$this->utils->checkIfContains(array('Opera Mobi', 'Opera Tablet', 'OPR'))
+            && !($mobileDeviceHelper->isMobile() && $this->utils->checkIfContains(array('Opera', 'OPR')))
         ) {
             return false;
         }

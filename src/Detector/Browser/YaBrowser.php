@@ -74,7 +74,7 @@ class YaBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('YaBrowserInterface/'))) {
+        if (!$this->utils->checkIfContains(array('YaBrowser/'))) {
             return false;
         }
 
@@ -131,7 +131,7 @@ class YaBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('YaBrowserInterface');
+        $searches = array('YaBrowser');
 
         return $detector->detectVersion($searches);
     }

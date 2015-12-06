@@ -86,6 +86,7 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
             'Opera Mini',
             'Opera Mobi',
             'Opera Tablet',
+            'MTK',
             // Fakes
             'Mac; Mac OS ',
             'AppEngine-Google',

@@ -43,7 +43,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Android extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -107,6 +107,7 @@ class Android extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             'Series60',
             'Silk',
             'UCBrowser',
+            'UCWEB',
             'WeTab-Browser',
             'wOSBrowser',
             'YahooMobileMessenger',
@@ -118,6 +119,8 @@ class Android extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             'Nintendo WiiU',
             'bdbrowser_i18n',
             'baidu',
+            'iBrowser',
+            'OneBrowser',
         );
 
         if ($this->utils->checkIfContains($noAndroid)) {

@@ -160,6 +160,7 @@ class Safari
             'profiller',
             'Kindle',
             'Slurp',
+            'GINGERBREAD',
             //mobile Version
             'Tablet',
             'Android',

@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class BaiduSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,11 +73,11 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('GrapeshotCrawler', 'grapeshot.co.uk'))) {
+        if (!$this->utils->checkIfContains(array('baiduspider', 'baidu'), true)) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('grapeFX'))) {
+        if ($this->utils->checkIfContains(array('baiduspider-image', 'flyflow'), true)) {
             return false;
         }
 
@@ -91,7 +91,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getName()
     {
-        return 'GrapeshotCrawler';
+        return 'BaiduSpider';
     }
 
     /**
@@ -101,7 +101,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\GrapeshotLimited();
+        return new Company\Baidu();
     }
 
     /**
@@ -124,7 +124,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('GrapeshotCrawler');
+        $searches = array('baiduspider', 'Baiduspider');
 
         return $detector->detectVersion($searches);
     }
@@ -136,7 +136,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 9540;
+        return 121205;
     }
 
     /**

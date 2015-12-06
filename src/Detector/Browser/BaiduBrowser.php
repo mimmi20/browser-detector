@@ -75,6 +75,10 @@ class BaiduBrowser extends AbstractBrowser
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('FlyFlow'))) {
+            return false;
+        }
+
         return true;
     }
 
@@ -85,7 +89,7 @@ class BaiduBrowser extends AbstractBrowser
      */
     public function getName()
     {
-        return 'BaiduBrowserInterface';
+        return 'Baidu Browser';
     }
 
     /**

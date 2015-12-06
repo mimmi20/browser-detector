@@ -31,10 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
+use UaBrowserType\Transcoder;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MqqBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class UcBrowser extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -73,7 +71,7 @@ class MqqBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('MQQBrowser'))) {
+        if (!$this->utils->checkIfContains(array('ucweb', 'uc browser', 'ucbrowser'), true)) {
             return false;
         }
 
@@ -87,7 +85,7 @@ class MqqBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getName()
     {
-        return 'MQQBrowser';
+        return 'UC Browser';
     }
 
     /**
@@ -97,7 +95,7 @@ class MqqBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\UcMobile();
     }
 
     /**
@@ -107,7 +105,7 @@ class MqqBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Transcoder();
     }
 
     /**
@@ -120,24 +118,18 @@ class MqqBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('MQQBrowser');
+        $searches = array('UC Browser', 'UCBrowser', 'UCWEB', 'Browser');
 
         return $detector->detectVersion($searches);
     }
 
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
-        return 653;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
-     */
-    public function getEngine()
-    {
-        return new Webkit($this->useragent, $this->logger);
+        return 7976;
     }
 }

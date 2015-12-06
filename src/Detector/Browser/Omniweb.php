@@ -87,7 +87,7 @@ class Omniweb extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getName()
     {
-        return 'Omniweb';
+        return 'OmniWeb';
     }
 
     /**

@@ -79,6 +79,10 @@ class OperaMini extends AbstractBrowser
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('ucweb', 'uc browser', 'ucbrowser'), true)) {
+            return false;
+        }
+
         return true;
     }
 

@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Baidu extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WooRank extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -51,6 +51,7 @@ class Baidu extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     protected $properties = array(
         // browser
+        'mobile_browser'               => 'Just-Crawler',
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -73,11 +74,7 @@ class Baidu extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('baiduspider', 'baidu'), true)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('baiduspider-image'), true)) {
+        if (!$this->utils->checkIfContains('woobot', true)) {
             return false;
         }
 
@@ -91,7 +88,7 @@ class Baidu extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'Baiduspider';
+        return 'WooRank';
     }
 
     /**
@@ -101,7 +98,7 @@ class Baidu extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Baidu();
+        return new Company\Unknown();
     }
 
     /**
@@ -124,7 +121,7 @@ class Baidu extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('baiduspider', 'Baiduspider');
+        $searches = array('woobot');
 
         return $detector->detectVersion($searches);
     }
@@ -136,7 +133,7 @@ class Baidu extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 121205;
+        return 14;
     }
 
     /**

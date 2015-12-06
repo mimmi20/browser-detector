@@ -106,7 +106,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
             'PaleMoon',
             'RockMelt',
             'Silk',
-            'YaBrowserInterface',
+            'YaBrowser',
             'Firefox',
             'Iceweasel',
             'Edge',
