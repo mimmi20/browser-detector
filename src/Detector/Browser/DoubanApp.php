@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Application;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GenericJavaCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class DoubanApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,15 +73,11 @@ class GenericJavaCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Java')) {
-            return false;
+        if ($this->utils->checkIfContains('com.douban.group', true)) {
+            return true;
         }
 
-        if ($this->utils->checkIfContains(array('Phantom', 'UCWEB', 'UCBrowser'))) {
-            return false;
-        }
-
-        return true;
+        return false;
     }
 
     /**
@@ -91,7 +87,7 @@ class GenericJavaCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getName()
     {
-        return 'Java Standard Library';
+        return 'douban App';
     }
 
     /**
@@ -101,7 +97,7 @@ class GenericJavaCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getManufacturer()
     {
-        return new Company\Oracle();
+        return new Company\Unknown();
     }
 
     /**
@@ -111,7 +107,17 @@ class GenericJavaCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 7;
     }
 
     /**
@@ -124,28 +130,20 @@ class GenericJavaCrawler extends AbstractBrowser implements BrowserHasSpecificEn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Java');
+        $searches = array(
+            'com\.douban\.group'
+        );
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 375779;
-    }
-
-    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

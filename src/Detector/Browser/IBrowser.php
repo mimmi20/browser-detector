@@ -77,6 +77,10 @@ class IBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             return false;
         }
 
+        if ($this->utils->checkIfContains('S40OviBrowser')) {
+            return false;
+        }
+
         return true;
     }
 

@@ -74,11 +74,9 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->useragent);
+        $safariHelper = new SafariHelper($this->useragent);
 
-        if (!$this->utils->checkIfContains(array('Android', 'JUC (Linux; U;')) && !$safariHelper->isMobileAsSafari()
-        ) {
+        if (!$this->utils->checkIfContains(array('Android', 'JUC (Linux; U;', 'GINGERBREAD'))) {
             return false;
         }
 
@@ -176,8 +174,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->useragent);
+        $safariHelper = new SafariHelper($this->useragent);
 
         $doMatch = preg_match(
             '/Version\/([\d\.]+)/',

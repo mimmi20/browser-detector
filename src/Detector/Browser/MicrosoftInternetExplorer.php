@@ -107,6 +107,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
             return false;
         }
 
+        /*
         $isNotReallyAnIE = array(
             'presto',
             // using also the Trident rendering engine
@@ -150,6 +151,49 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
                 array('Bitte Mozilla Firefox verwenden', 'chromeframe')
             )
         ) {
+            return false;
+        }
+        /**/
+
+        $isNotReallyAnIE = array(
+            'presto',
+            // using also the Trident rendering engine
+            'crazy browser',
+            'flock',
+            'galeon',
+            'lunascape',
+            'maxthon',
+            'mxbrowser',
+            'myie',
+            'opera',
+            'palemoon',
+            'avant',
+            // other Browsers
+            'linux',
+            'msoffice',
+            'outlook',
+            'iemobile',
+            'blackberry',
+            'webtv',
+            'argclrint',
+            'slimbrowser',
+            // mobile IE
+            'xblwp7',
+            'zunewp7',
+            'wpdesktop',
+            'htc_hd2',
+            'gomezagent',
+            'deepnet explorer',
+            // Fakes / Bots
+            'msiecrawler',
+            'mac; mac os ',
+            'bingpreview',
+            'crystalsemanticsbot',
+            '360spider',
+            'lightspeedsystems',
+        );
+
+        if ($this->utils->checkIfContains($isNotReallyAnIE, true)) {
             return false;
         }
 

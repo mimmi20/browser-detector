@@ -72,8 +72,7 @@ class SamsungWebView extends AbstractBrowser
      */
     public function canHandle()
     {
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->useragent);
+        $safariHelper = new SafariHelper($this->useragent);
 
         if (!$safariHelper->isSafari()) {
             return false;

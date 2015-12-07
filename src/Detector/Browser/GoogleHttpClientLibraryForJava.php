@@ -31,12 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Gecko;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaMatcher\Browser\BrowserHasWurflKeyInterface;
-use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -44,7 +42,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+class GoogleHttpClientLibraryForJava extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -56,8 +54,8 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
+        'can_skip_aligned_link_row'    => false,
+        'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -75,7 +73,7 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('waterfox', true)) {
+        if (!$this->utils->checkIfContains('Google-HTTP-Java-Client')) {
             return false;
         }
 
@@ -89,7 +87,7 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getName()
     {
-        return 'Waterfox';
+        return 'Google HTTP Client Library for Java';
     }
 
     /**
@@ -99,7 +97,7 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getManufacturer()
     {
-        return new Company\WaterfoxProject();
+        return new Company\Google();
     }
 
     /**
@@ -109,7 +107,7 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
     }
 
     /**
@@ -121,9 +119,8 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $searches = array('WaterFox', 'Waterfox');
+        $searches = array('Google\-HTTP\-Java\-Client');
 
         return $detector->detectVersion($searches);
     }
@@ -135,37 +132,16 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getWeight()
     {
-        return 10;
+        return 375779;
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Gecko
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Gecko($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey
-     *
-     * @param \UaMatcher\Os\OsInterface $os
-     *
-     * @return string
-     */
-    public function getWurflKey(OsInterface $os)
-    {
-        $browserVersion = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
-
-        if (3.5 === $browserVersion) {
-            $wurflKey = 'firefox_3_5';
-        } else {
-            $wurflKey = 'firefox_' . (int)$browserVersion . '_0';
-        }
-
-        return $wurflKey;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

@@ -52,26 +52,16 @@ class Safari
     /**
      * Class Constructor
      *
-     * @return \BrowserDetector\Helper\Safari
-     */
-    public function __construct()
-    {
-        $this->utils = new Utils();
-    }
-
-    /**
-     * sets the user agent to be handled
-     *
      * @param string $useragent
      *
      * @return \BrowserDetector\Helper\Safari
      */
-    public function setUserAgent($useragent)
+    public function __construct($useragent)
     {
+        $this->utils = new Utils();
+
         $this->useragent = $useragent;
         $this->utils->setUserAgent($useragent);
-
-        return $this;
     }
 
     /**
@@ -171,28 +161,6 @@ class Safari
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnSafari, true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    public function isMobileAsSafari()
-    {
-        if (!$this->isSafari()) {
-            return false;
-        }
-
-        $mobileDeviceHelper = new MobileDevice($this->useragent);
-
-        if (!$mobileDeviceHelper->isMobile()) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(
-            array('PLAYSTATION', 'Browser/AppleWebKit', 'CFNetwork', 'BlackBerry; U; BlackBerry')
-        )
-        ) {
             return false;
         }
 

@@ -76,8 +76,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
      */
     public function canHandle()
     {
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->useragent);
+        $safariHelper = new SafariHelper($this->useragent);
 
         if (!$safariHelper->isSafari()) {
             return false;
@@ -130,8 +129,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($this->useragent);
+        $safariHelper = new SafariHelper($this->useragent);
 
         $doMatch = preg_match('/Version\/([\d\.]+)/', $this->useragent, $matches);
 

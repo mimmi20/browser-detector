@@ -96,7 +96,8 @@ class Maxthon extends AbstractBrowser implements BrowserHasWurflKeyInterface
             'BlackBerry',
             'WebTV',
             'ArgClrInt',
-            'Firefox'
+            'Firefox',
+            'Avant',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnMaxthon)) {

@@ -87,7 +87,7 @@ class PaperLiBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getName()
     {
-        return 'PaperLiBot';
+        return 'Paper.li Bot';
     }
 
     /**

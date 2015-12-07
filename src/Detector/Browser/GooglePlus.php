@@ -84,7 +84,7 @@ class GooglePlus extends AbstractBrowser
      */
     public function getName()
     {
-        return 'GooglePlus App';
+        return 'Google+ App';
     }
 
     /**

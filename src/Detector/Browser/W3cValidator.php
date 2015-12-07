@@ -77,6 +77,10 @@ class W3cValidator extends AbstractBrowser implements BrowserHasSpecificEngineIn
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('Validator.nu/LV'))) {
+            return false;
+        }
+
         return true;
     }
 

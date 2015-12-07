@@ -72,8 +72,7 @@ class PlatformFactory implements FactoryInterface
         $firefoxOsHelper = new FirefoxOsHelper();
         $firefoxOsHelper->setUserAgent($agent);
 
-        $safariHelper = new SafariHelper();
-        $safariHelper->setUserAgent($agent);
+        $safariHelper = new SafariHelper($agent);
 
         if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop)/', $agent)) {
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
@@ -120,9 +119,7 @@ class PlatformFactory implements FactoryInterface
             && false === stripos($agent, 'technipad')
         ) {
             $platformKey = 'Ios';
-        } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr )/i', $agent)
-            || $safariHelper->isMobileAsSafari()
-        ) {
+        } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread)/i', $agent)) {
             $platformKey = 'AndroidOs';
         } elseif (preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches) && $matches[1] >= 4) {
             $platformKey = 'AndroidOs';

@@ -96,6 +96,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
             'WebTV',
             'ArgClrInt',
             'Avant',
+            'Lightspeedsystems',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE)) {

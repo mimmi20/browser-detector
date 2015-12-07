@@ -28,70 +28,27 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Helper;
-
-use UaHelper\Utils;
+namespace BrowserDetector\Detector\Company;
 
 /**
- * a helper for detecting safari and some of his derefered browsers
- *
+ * @category  BrowserDetector
  * @package   BrowserDetector
+ * @copyright 2012-2015 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class FirefoxOs
+class WaterfoxProject extends AbstractCompany implements CompanyInterface
 {
     /**
-     * @var string the user agent to handle
-     */
-    private $useragent = '';
-
-    /**
-     * @var \UaHelper\Utils the helper class
-     */
-    private $utils = null;
-
-    /**
-     * Class Constructor
+     * the name of the company
      *
-     * @return \BrowserDetector\Helper\FirefoxOs
+     * @var string
      */
-    public function __construct()
-    {
-        $this->utils = new Utils();
-    }
+    protected $name = 'www.waterfoxproject.org';
 
     /**
-     * sets the user agent to be handled
+     * the brand name of the company
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\FirefoxOs
+     * @var string
      */
-    public function setUserAgent($useragent)
-    {
-        $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
-
-        return $this;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isFirefoxOs()
-    {
-        if (!$this->utils->checkIfStartsWith('Mozilla/')
-            || !$this->utils->checkIfContainsAll(array('rv:', 'Gecko', 'Firefox'))
-            || $this->utils->checkIfContains(array('android'), true)
-        ) {
-            return false;
-        }
-
-        $doMatch = preg_match('/^Mozilla\/5\.0 \(.*(Mobile|Tablet);.*rv:(\d+\.\d+).*\) Gecko\/(\d+\.\d+).* Firefox\/(\d+\.\d+).*/', $this->useragent, $matches);
-
-        if (!$doMatch) {
-            return false;
-        }
-
-        return true;
-    }
+    protected $brandname = 'www.waterfoxproject.org';
 }

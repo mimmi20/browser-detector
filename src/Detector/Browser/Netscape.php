@@ -78,6 +78,7 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         }
 
         $isNotReallyAnNetscape = array(
+            'compatible',
             // using also the Gecko rendering engine
             'Firefox',
             'Maemo',
@@ -176,6 +177,21 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             'Another Web Mining Tool',
             'TYPO3-linkvalidator',
             'PaperLiBot',
+            'www.google.com',
+            'Google-StructuredDataTestingTool',
+            'WebmasterCoffee',
+            'picmole',
+            'uMBot',
+            'Zollard',
+            'FHScan',
+            'LoadTimeBot',
+            'Scrubby',
+            'lbot',
+            'Squzer',
+            'EasouSpider',
+            'Socialradarbot',
+            'Synapse',
+            'coccoc',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
