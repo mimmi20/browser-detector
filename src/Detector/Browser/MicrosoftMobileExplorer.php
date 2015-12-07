@@ -97,6 +97,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
             'ArgClrInt',
             'Avant',
             'Lightspeedsystems',
+            'Daumoa',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE)) {

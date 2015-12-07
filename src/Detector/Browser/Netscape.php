@@ -192,6 +192,17 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             'Socialradarbot',
             'Synapse',
             'coccoc',
+            'SiteExplorer',
+            'IstellaBot',
+            'meanpathbot',
+            'Apercite',
+            'XML Sitemaps Generator',
+            'PiplBot',
+            'Add Catalog',
+            'Moreover',
+            'LinkpadBot',
+            'Lipperhey SEO Service',
+            'Blog Search',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
@@ -268,7 +279,7 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 53545;
+        return 3;
     }
 
     /**

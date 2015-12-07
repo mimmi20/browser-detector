@@ -87,7 +87,7 @@ class UniversalFeedParser extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getName()
     {
-        return 'Universal FeedParser';
+        return 'UniversalFeedParser';
     }
 
     /**

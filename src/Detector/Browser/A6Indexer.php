@@ -97,7 +97,7 @@ class A6Indexer extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company\A6Corp();
     }
 
     /**
