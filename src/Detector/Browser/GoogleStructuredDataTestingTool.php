@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Application;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class GoogleStructuredDataTestingTool extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +54,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,7 +73,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Polaris'))) {
+        if (!$this->utils->checkIfContains('Google-StructuredDataTestingTool')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getName()
     {
-        return 'Polaris';
+        return 'Google Structured-Data TestingTool';
     }
 
     /**
@@ -97,7 +97,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Infraware();
+        return new Company\Google();
     }
 
     /**
@@ -107,7 +107,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getBrowserType()
     {
-        return new Application();
+        return new Bot();
     }
 
     /**
@@ -120,19 +120,26 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Polaris');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('0.0');
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 375779;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

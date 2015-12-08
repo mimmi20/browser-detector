@@ -31,10 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Application;
+use UaBrowserType\Bot;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class LightspeedSystemsCrawler extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -73,7 +71,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Polaris'))) {
+        if (!$this->utils->checkIfContains(array('Lightspeedsystems'))) {
             return false;
         }
 
@@ -87,7 +85,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getName()
     {
-        return 'Polaris';
+        return 'Lightspeed Systems Crawler';
     }
 
     /**
@@ -97,7 +95,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Infraware();
+        return new Company\LightspeedSystems();
     }
 
     /**
@@ -107,7 +105,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getBrowserType()
     {
-        return new Application();
+        return new Bot();
     }
 
     /**
@@ -120,19 +118,16 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Polaris');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('0.0');
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return integer
      */
-    public function getEngine()
+    public function getWeight()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return 5;
     }
 }

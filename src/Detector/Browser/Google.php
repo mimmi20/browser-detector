@@ -87,6 +87,7 @@ class Google extends AbstractBrowser
             'like FeedFetcher-Google',
             'Feedfetcher-Google',
             'Feedly',
+            'Google-StructuredDataTestingTool',
         );
 
         if ($this->utils->checkIfContains($others)) {

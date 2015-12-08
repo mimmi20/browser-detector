@@ -73,7 +73,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('sogou web spider', true)) {
+        if (!$this->utils->checkIfContains(array('sogou web spider', 'sogou-spider'), true)) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Sogou Web Spider';
+        return 'Sogou Spider';
     }
 
     /**
@@ -130,7 +130,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Sogou web spider');
+        $searches = array('Sogou web spider', 'Sogou\-Spider');
 
         return $detector->detectVersion($searches);
     }
