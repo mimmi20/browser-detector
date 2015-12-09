@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MikulasPatocka extends AbstractCompany implements CompanyInterface
+class MikulasPatocka extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Mikulas Patocka';
+    public $name = 'Mikulas Patocka';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Mikulas Patocka';
+    public $brandname = 'Mikulas Patocka';
 }

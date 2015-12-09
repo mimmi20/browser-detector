@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Majestic12 extends AbstractCompany implements CompanyInterface
+class Majestic12 extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Majestic-12 Ltd';
+    public $name = 'Majestic-12 Ltd';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Majestic-12';
+    public $brandname = 'Majestic-12';
 }

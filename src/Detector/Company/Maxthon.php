@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Maxthon extends AbstractCompany implements CompanyInterface
+class Maxthon extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Maxthon International Limited';
+    public $name = 'Maxthon International Limited';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Maxthon';
+    public $brandname = 'Maxthon';
 }

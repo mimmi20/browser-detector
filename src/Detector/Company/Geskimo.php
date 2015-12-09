@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Geskimo extends AbstractCompany implements CompanyInterface
+class Geskimo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'GESKIMO SRL';
+    public $name = 'GESKIMO SRL';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'GESKIMO';
+    public $brandname = 'GESKIMO';
 }

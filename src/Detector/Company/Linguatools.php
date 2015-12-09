@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Linguatools extends AbstractCompany implements CompanyInterface
+class Linguatools extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.linguatools.de';
+    public $name = 'www.linguatools.de';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.linguatools.de';
+    public $brandname = 'www.linguatools.de';
 }

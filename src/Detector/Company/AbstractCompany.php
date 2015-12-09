@@ -36,49 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractCompany implements CompanyInterface
+abstract class AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = null;
+    public $name = null;
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = null;
-
-    /**
-     * Returns the name of the company
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->getName();
-    }
-
-    /**
-     * Returns the name of the company
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return (string)$this->name;
-    }
-
-    /**
-     * Returns the brand name of the company
-     *
-     * @return string
-     */
-    public function getBrandName()
-    {
-        return $this->brandname;
-    }
+    public $brandname = null;
 }

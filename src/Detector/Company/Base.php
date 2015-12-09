@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Base extends AbstractCompany implements CompanyInterface
+class Base extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Base';
+    public $name = 'Base';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Base';
+    public $brandname = 'Base';
 }

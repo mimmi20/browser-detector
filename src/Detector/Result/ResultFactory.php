@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Result;
 
-use BrowserDetector\Detector\Company\CompanyInterface;
+use BrowserDetector\Detector\Company\AbstractCompany;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use BrowserDetector\Detector\Cpu;
 use Psr\Log\LoggerInterface;
@@ -108,10 +108,10 @@ class ResultFactory implements ResultFactoryInterface
                         $value = get_class($os);
                         break;
                     case 'manufacturer_name':
-                        $value = $result->getDeviceManufacturer()->getName();
+                        $value = $result->getDeviceManufacturer()->name;
                         break;
                     case 'brand_name':
-                        $value = $result->getDeviceBrand()->getBrandName();
+                        $value = $result->getDeviceBrand()->brandname;
                         break;
                     case 'model_name':
                         $value = $result->getDeviceName();
@@ -208,20 +208,20 @@ class ResultFactory implements ResultFactoryInterface
                     case 'mobile_browser_manufacturer':
                         $value = $browser->getManufacturer();
 
-                        if (!($value instanceof CompanyInterface)) {
+                        if (!($value instanceof AbstractCompany)) {
                             $value = new UnknownCompany();
                         }
 
-                        $value = $value->getName();
+                        $value = $value->name;
                         break;
                     case 'mobile_browser_brand_name':
                         $value = $browser->getManufacturer();
 
-                        if (!($value instanceof CompanyInterface)) {
+                        if (!($value instanceof AbstractCompany)) {
                             $value = new UnknownCompany();
                         }
 
-                        $value = $value->getBrandName();
+                        $value = $value->brandname;
                         break;
                     case 'is_bot':
                     case 'controlcap_is_robot':
@@ -276,38 +276,38 @@ class ResultFactory implements ResultFactoryInterface
                     case 'device_os_manufacturer':
                         $value = $os->getManufacturer();
 
-                        if (!($value instanceof CompanyInterface)) {
+                        if (!($value instanceof AbstractCompany)) {
                             $value = new UnknownCompany();
                         }
 
-                        $value = $value->getName();
+                        $value = $value->name;
                         break;
                     case 'device_os_brand_name':
                         $value = $os->getManufacturer();
 
-                        if (!($value instanceof CompanyInterface)) {
+                        if (!($value instanceof AbstractCompany)) {
                             $value = new UnknownCompany();
                         }
 
-                        $value = $value->getBrandName();
+                        $value = $value->brandname;
                         break;
                     case 'renderingengine_manufacturer':
                         $value = $engine->getManufacturer();
 
-                        if (!($value instanceof CompanyInterface)) {
+                        if (!($value instanceof AbstractCompany)) {
                             $value = new UnknownCompany();
                         }
 
-                        $value = $value->getName();
+                        $value = $value->name;
                         break;
                     case 'renderingengine_brand_name':
                         $value = $engine->getManufacturer();
 
-                        if (!($value instanceof CompanyInterface)) {
+                        if (!($value instanceof AbstractCompany)) {
                             $value = new UnknownCompany();
                         }
 
-                        $value = $value->getBrandName();
+                        $value = $value->brandname;
                         break;
                     case 'renderingengine_version':
                         $value = $engine->detectVersion();

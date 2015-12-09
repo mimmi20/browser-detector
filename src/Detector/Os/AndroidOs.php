@@ -97,7 +97,7 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
     /**
      * returns the version of the operating system/platform
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

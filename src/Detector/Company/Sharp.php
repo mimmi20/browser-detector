@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Sharp extends AbstractCompany implements CompanyInterface
+class Sharp extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Sharp';
+    public $name = 'Sharp';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Sharp';
+    public $brandname = 'Sharp';
 }

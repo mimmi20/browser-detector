@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IconBit extends AbstractCompany implements CompanyInterface
+class IconBit extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'iconBIT';
+    public $name = 'iconBIT';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'iconBIT';
+    public $brandname = 'iconBIT';
 }

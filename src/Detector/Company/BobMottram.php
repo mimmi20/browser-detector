@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BobMottram extends AbstractCompany implements CompanyInterface
+class BobMottram extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Bob Mottram';
+    public $name = 'Bob Mottram';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Bob Mottram';
+    public $brandname = 'Bob Mottram';
 }

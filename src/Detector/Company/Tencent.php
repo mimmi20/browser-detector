@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Tencent extends AbstractCompany implements CompanyInterface
+class Tencent extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Tencent Ltd.';
+    public $name = 'Tencent Ltd.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Tencent';
+    public $brandname = 'Tencent';
 }

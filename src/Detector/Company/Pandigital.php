@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Pandigital extends AbstractCompany implements CompanyInterface
+class Pandigital extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Pandigital';
+    public $name = 'Pandigital';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Pandigital';
+    public $brandname = 'Pandigital';
 }

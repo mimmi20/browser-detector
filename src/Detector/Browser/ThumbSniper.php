@@ -92,7 +92,7 @@ class ThumbSniper extends AbstractBrowser implements BrowserHasSpecificEngineInt
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Coolpad extends AbstractCompany implements CompanyInterface
+class Coolpad extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Coolpad';
+    public $name = 'Coolpad';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Coolpad';
+    public $brandname = 'Coolpad';
 }

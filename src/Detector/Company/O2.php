@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class O2 extends AbstractCompany implements CompanyInterface
+class O2 extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'O2';
+    public $name = 'O2';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'O2';
+    public $brandname = 'O2';
 }

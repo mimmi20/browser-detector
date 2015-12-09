@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Axandra extends AbstractCompany implements CompanyInterface
+class Axandra extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Axandra GmbH';
+    public $name = 'Axandra GmbH';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Axandra';
+    public $brandname = 'Axandra';
 }

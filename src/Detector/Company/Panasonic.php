@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Panasonic extends AbstractCompany implements CompanyInterface
+class Panasonic extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Panasonic';
+    public $name = 'Panasonic';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Panasonic';
+    public $brandname = 'Panasonic';
 }

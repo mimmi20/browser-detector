@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TheDocumentFoundation extends AbstractCompany implements CompanyInterface
+class TheDocumentFoundation extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'The Document Foundation';
+    public $name = 'The Document Foundation';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'The Document Foundation';
+    public $brandname = 'The Document Foundation';
 }

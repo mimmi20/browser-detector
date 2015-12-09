@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Sindice extends AbstractCompany implements CompanyInterface
+class Sindice extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Sindice';
+    public $name = 'Sindice';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Sindice';
+    public $brandname = 'Sindice';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Miui extends AbstractCompany implements CompanyInterface
+class Miui extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Miui';
+    public $name = 'Miui';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Miui';
+    public $brandname = 'Miui';
 }

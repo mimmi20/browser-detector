@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Qihoo extends AbstractCompany implements CompanyInterface
+class Qihoo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Qihoo 360 Technology Co. Ltd.';
+    public $name = 'Qihoo 360 Technology Co. Ltd.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Qihoo';
+    public $brandname = 'Qihoo';
 }

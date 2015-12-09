@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class EinsUndEins extends AbstractCompany implements CompanyInterface
+class EinsUndEins extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = '1 & 1';
+    public $name = '1 & 1';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = '1 & 1';
+    public $brandname = '1 & 1';
 }

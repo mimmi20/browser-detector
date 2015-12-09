@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OmniDevelopment extends AbstractCompany implements CompanyInterface
+class OmniDevelopment extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Omni Development Inc';
+    public $name = 'Omni Development Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Omni Development';
+    public $brandname = 'Omni Development';
 }

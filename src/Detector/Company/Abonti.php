@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Abonti extends AbstractCompany implements CompanyInterface
+class Abonti extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'abonti.com';
+    public $name = 'abonti.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Abonti';
+    public $brandname = 'Abonti';
 }

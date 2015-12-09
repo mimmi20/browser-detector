@@ -51,7 +51,6 @@ class WebmasterCoffee extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     protected $properties = array(
         // browser
-        'mobile_browser'               => 'Just-Crawler',
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -94,7 +93,7 @@ class WebmasterCoffee extends AbstractBrowser implements BrowserHasSpecificEngin
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

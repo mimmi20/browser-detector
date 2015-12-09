@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WonderMedia extends AbstractCompany implements CompanyInterface
+class WonderMedia extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'WonderMedia';
+    public $name = 'WonderMedia';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'WonderMedia';
+    public $brandname = 'WonderMedia';
 }

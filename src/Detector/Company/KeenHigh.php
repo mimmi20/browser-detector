@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class KeenHigh extends AbstractCompany implements CompanyInterface
+class KeenHigh extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Keen High';
+    public $name = 'Keen High';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Keen High';
+    public $brandname = 'Keen High';
 }

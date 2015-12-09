@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nextbook extends AbstractCompany implements CompanyInterface
+class Nextbook extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Nextbook';
+    public $name = 'Nextbook';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Nextbook';
+    public $brandname = 'Nextbook';
 }

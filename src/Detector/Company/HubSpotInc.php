@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HubSpotInc extends AbstractCompany implements CompanyInterface
+class HubSpotInc extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'HubSpot, Inc.';
+    public $name = 'HubSpot, Inc.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'HubSpot';
+    public $brandname = 'HubSpot';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LePan extends AbstractCompany implements CompanyInterface
+class LePan extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'LePan';
+    public $name = 'LePan';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'LePan';
+    public $brandname = 'LePan';
 }

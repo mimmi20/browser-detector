@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Kkbox extends AbstractCompany implements CompanyInterface
+class Kkbox extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'KKBOX Taiwan Co., Ltd.';
+    public $name = 'KKBOX Taiwan Co., Ltd.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'KKBOX';
+    public $brandname = 'KKBOX';
 }

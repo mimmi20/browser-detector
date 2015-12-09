@@ -127,7 +127,7 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -137,7 +137,7 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

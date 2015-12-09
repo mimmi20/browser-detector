@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WordPress extends AbstractCompany implements CompanyInterface
+class WordPress extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'wordpress.org';
+    public $name = 'wordpress.org';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'WordPress';
+    public $brandname = 'WordPress';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Tenbetterpages extends AbstractCompany implements CompanyInterface
+class Tenbetterpages extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = '10betterpages GmbH';
+    public $name = '10betterpages GmbH';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = '10betterpages';
+    public $brandname = '10betterpages';
 }

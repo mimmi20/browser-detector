@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Soso extends AbstractCompany implements CompanyInterface
+class Soso extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'soso.com';
+    public $name = 'soso.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'soso';
+    public $brandname = 'soso';
 }

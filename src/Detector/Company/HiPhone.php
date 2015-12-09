@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HiPhone extends AbstractCompany implements CompanyInterface
+class HiPhone extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'HiPhone';
+    public $name = 'HiPhone';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'HiPhone';
+    public $brandname = 'HiPhone';
 }

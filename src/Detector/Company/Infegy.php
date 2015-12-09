@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Infegy extends AbstractCompany implements CompanyInterface
+class Infegy extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'infegy.com';
+    public $name = 'infegy.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Infegy';
+    public $brandname = 'Infegy';
 }

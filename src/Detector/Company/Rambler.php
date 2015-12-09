@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Rambler extends AbstractCompany implements CompanyInterface
+class Rambler extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'rambler.ru';
+    public $name = 'rambler.ru';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'rambler';
+    public $brandname = 'rambler';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CameronKaiser extends AbstractCompany implements CompanyInterface
+class CameronKaiser extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Cameron Kaiser';
+    public $name = 'Cameron Kaiser';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Cameron Kaiser';
+    public $brandname = 'Cameron Kaiser';
 }

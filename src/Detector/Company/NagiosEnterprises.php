@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NagiosEnterprises extends AbstractCompany implements CompanyInterface
+class NagiosEnterprises extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Nagios Enterprises, LLC.';
+    public $name = 'Nagios Enterprises, LLC.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Nagios';
+    public $brandname = 'Nagios';
 }

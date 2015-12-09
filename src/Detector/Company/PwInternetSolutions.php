@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PwInternetSolutions extends AbstractCompany implements CompanyInterface
+class PwInternetSolutions extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'PW-Internet Solutions GmbH';
+    public $name = 'PW-Internet Solutions GmbH';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'PW-Internet Solutions';
+    public $brandname = 'PW-Internet Solutions';
 }

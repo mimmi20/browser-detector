@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HitLeap extends AbstractCompany implements CompanyInterface
+class HitLeap extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'HitLeap';
+    public $name = 'HitLeap';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'HitLeap';
+    public $brandname = 'HitLeap';
 }

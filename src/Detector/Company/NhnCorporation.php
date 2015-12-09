@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NhnCorporation extends AbstractCompany implements CompanyInterface
+class NhnCorporation extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'NHN Corporation';
+    public $name = 'NHN Corporation';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'NHN';
+    public $brandname = 'NHN';
 }

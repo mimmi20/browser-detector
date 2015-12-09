@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WortschatzUniLeipzig extends AbstractCompany implements CompanyInterface
+class WortschatzUniLeipzig extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'wortschatz.uni-leipzig.de';
+    public $name = 'wortschatz.uni-leipzig.de';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'wortschatz.uni-leipzig.de';
+    public $brandname = 'wortschatz.uni-leipzig.de';
 }

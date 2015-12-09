@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TrekStor extends AbstractCompany implements CompanyInterface
+class TrekStor extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'TrekStor';
+    public $name = 'TrekStor';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'TrekStor';
+    public $brandname = 'TrekStor';
 }

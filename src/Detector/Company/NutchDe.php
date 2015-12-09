@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NutchDe extends AbstractCompany implements CompanyInterface
+class NutchDe extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'nutch.de';
+    public $name = 'nutch.de';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'nutch.de';
+    public $brandname = 'nutch.de';
 }

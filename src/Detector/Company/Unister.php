@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Unister extends AbstractCompany implements CompanyInterface
+class Unister extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Unister Holding GmbH';
+    public $name = 'Unister Holding GmbH';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Unister';
+    public $brandname = 'Unister';
 }

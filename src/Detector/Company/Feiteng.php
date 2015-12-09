@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Feiteng extends AbstractCompany implements CompanyInterface
+class Feiteng extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Feiteng';
+    public $name = 'Feiteng';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Feiteng';
+    public $brandname = 'Feiteng';
 }

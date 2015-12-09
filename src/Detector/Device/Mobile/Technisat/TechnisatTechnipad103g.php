@@ -118,7 +118,7 @@ class TechnisatTechnipad103g extends AbstractDevice implements DeviceHasSpecific
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -128,7 +128,7 @@ class TechnisatTechnipad103g extends AbstractDevice implements DeviceHasSpecific
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

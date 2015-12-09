@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class FeedlyCom extends AbstractCompany implements CompanyInterface
+class FeedlyCom extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'feedly.com';
+    public $name = 'feedly.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'feedly';
+    public $brandname = 'feedly';
 }

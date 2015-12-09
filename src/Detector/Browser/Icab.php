@@ -115,7 +115,7 @@ class Icab extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

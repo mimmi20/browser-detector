@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bynergy extends AbstractCompany implements CompanyInterface
+class Bynergy extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.bynergy.com';
+    public $name = 'www.bynergy.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.bynergy.com';
+    public $brandname = 'www.bynergy.com';
 }

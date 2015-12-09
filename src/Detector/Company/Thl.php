@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Thl extends AbstractCompany implements CompanyInterface
+class Thl extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'THL';
+    public $name = 'THL';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'THL';
+    public $brandname = 'THL';
 }

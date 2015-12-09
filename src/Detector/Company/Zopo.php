@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Zopo extends AbstractCompany implements CompanyInterface
+class Zopo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Zopo';
+    public $name = 'Zopo';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'ZOPO';
+    public $brandname = 'ZOPO';
 }

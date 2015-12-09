@@ -123,7 +123,7 @@ class Qmobile extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -133,7 +133,7 @@ class Qmobile extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

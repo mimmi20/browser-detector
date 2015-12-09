@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CrystalSemantics extends AbstractCompany implements CompanyInterface
+class CrystalSemantics extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'CrystalSemantics';
+    public $name = 'CrystalSemantics';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'CrystalSemantics';
+    public $brandname = 'CrystalSemantics';
 }

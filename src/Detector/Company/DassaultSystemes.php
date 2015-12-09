@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DassaultSystemes extends AbstractCompany implements CompanyInterface
+class DassaultSystemes extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Dassault Systemes';
+    public $name = 'Dassault Systemes';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Dassault Systemes';
+    public $brandname = 'Dassault Systemes';
 }

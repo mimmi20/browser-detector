@@ -51,7 +51,6 @@ class WooRank extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     protected $properties = array(
         // browser
-        'mobile_browser'               => 'Just-Crawler',
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
@@ -94,7 +93,7 @@ class WooRank extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

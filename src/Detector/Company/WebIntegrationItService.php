@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WebIntegrationItService extends AbstractCompany implements CompanyInterface
+class WebIntegrationItService extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Web Integration IT Service GmbH';
+    public $name = 'Web Integration IT Service GmbH';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Web Integration';
+    public $brandname = 'Web Integration';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Efox extends AbstractCompany implements CompanyInterface
+class Efox extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'eFOX';
+    public $name = 'eFOX';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'eFOX';
+    public $brandname = 'eFOX';
 }

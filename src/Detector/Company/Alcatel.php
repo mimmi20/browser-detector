@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Alcatel extends AbstractCompany implements CompanyInterface
+class Alcatel extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Alcatel';
+    public $name = 'Alcatel';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Alcatel';
+    public $brandname = 'Alcatel';
 }

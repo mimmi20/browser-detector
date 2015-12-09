@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Philips extends AbstractCompany implements CompanyInterface
+class Philips extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Philips';
+    public $name = 'Philips';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Philips';
+    public $brandname = 'Philips';
 }

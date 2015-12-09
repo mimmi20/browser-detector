@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ahrefs extends AbstractCompany implements CompanyInterface
+class Ahrefs extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Ahrefs Pte Ltd';
+    public $name = 'Ahrefs Pte Ltd';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Ahrefs';
+    public $brandname = 'Ahrefs';
 }

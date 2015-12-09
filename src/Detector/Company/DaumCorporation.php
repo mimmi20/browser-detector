@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DaumCorporation extends AbstractCompany implements CompanyInterface
+class DaumCorporation extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Daum Communications Corp';
+    public $name = 'Daum Communications Corp';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Daum';
+    public $brandname = 'Daum';
 }

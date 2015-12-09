@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PythonSoftwareFoundation extends AbstractCompany implements CompanyInterface
+class PythonSoftwareFoundation extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Python Software Foundation';
+    public $name = 'Python Software Foundation';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Python Software Foundation';
+    public $brandname = 'Python Software Foundation';
 }

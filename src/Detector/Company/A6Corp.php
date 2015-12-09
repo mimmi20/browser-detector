@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class A6Corp extends AbstractCompany implements CompanyInterface
+class A6Corp extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'A6 Corp';
+    public $name = 'A6 Corp';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'A6 Corp';
+    public $brandname = 'A6 Corp';
 }

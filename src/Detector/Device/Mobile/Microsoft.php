@@ -148,7 +148,7 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -158,7 +158,7 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

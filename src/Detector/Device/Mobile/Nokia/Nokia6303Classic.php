@@ -121,7 +121,7 @@ class Nokia6303classic extends AbstractDevice implements DeviceHasWurflKeyInterf
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -131,7 +131,7 @@ class Nokia6303classic extends AbstractDevice implements DeviceHasWurflKeyInterf
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

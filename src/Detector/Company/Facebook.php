@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Facebook extends AbstractCompany implements CompanyInterface
+class Facebook extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Facebook';
+    public $name = 'Facebook';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Facebook';
+    public $brandname = 'Facebook';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ThomasSchulte extends AbstractCompany implements CompanyInterface
+class ThomasSchulte extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Thomas Schulte';
+    public $name = 'Thomas Schulte';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Thomas Schulte';
+    public $brandname = 'Thomas Schulte';
 }

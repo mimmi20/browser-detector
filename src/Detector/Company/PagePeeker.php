@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PagePeeker extends AbstractCompany implements CompanyInterface
+class PagePeeker extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'pagepeeker.com';
+    public $name = 'pagepeeker.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'PagePeeker';
+    public $brandname = 'PagePeeker';
 }

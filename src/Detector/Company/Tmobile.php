@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Tmobile extends AbstractCompany implements CompanyInterface
+class Tmobile extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'T-Mobile';
+    public $name = 'T-Mobile';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'T-Mobile';
+    public $brandname = 'T-Mobile';
 }

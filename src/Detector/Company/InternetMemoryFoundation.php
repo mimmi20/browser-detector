@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class InternetMemoryFoundation extends AbstractCompany implements CompanyInterface
+class InternetMemoryFoundation extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Internet Memory Foundation';
+    public $name = 'Internet Memory Foundation';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Internet Memory Foundation';
+    public $brandname = 'Internet Memory Foundation';
 }

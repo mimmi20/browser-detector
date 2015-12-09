@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Zte extends AbstractCompany implements CompanyInterface
+class Zte extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'ZTE';
+    public $name = 'ZTE';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'ZTE';
+    public $brandname = 'ZTE';
 }

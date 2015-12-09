@@ -133,7 +133,7 @@ class Lg extends AbstractDevice implements DeviceHasChildrenInterface
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -143,7 +143,7 @@ class Lg extends AbstractDevice implements DeviceHasChildrenInterface
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

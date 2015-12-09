@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Fenrir extends AbstractCompany implements CompanyInterface
+class Fenrir extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Fenrir Inc';
+    public $name = 'Fenrir Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Fenrir';
+    public $brandname = 'Fenrir';
 }

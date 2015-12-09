@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ElectronicArts extends AbstractCompany implements CompanyInterface
+class ElectronicArts extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Electronic Arts Inc';
+    public $name = 'Electronic Arts Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'EA';
+    public $brandname = 'EA';
 }

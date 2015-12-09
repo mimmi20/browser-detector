@@ -116,7 +116,7 @@ class SonyEricssonMK16a extends AbstractDevice implements DeviceHasSpecificPlatf
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -126,7 +126,7 @@ class SonyEricssonMK16a extends AbstractDevice implements DeviceHasSpecificPlatf
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

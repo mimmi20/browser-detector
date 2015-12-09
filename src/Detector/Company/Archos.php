@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Archos extends AbstractCompany implements CompanyInterface
+class Archos extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Archos';
+    public $name = 'Archos';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Archos';
+    public $brandname = 'Archos';
 }

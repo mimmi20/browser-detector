@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Vivaldi extends AbstractCompany implements CompanyInterface
+class Vivaldi extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Vivaldi Technologies';
+    public $name = 'Vivaldi Technologies';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Vivaldi';
+    public $brandname = 'Vivaldi';
 }

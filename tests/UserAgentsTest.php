@@ -116,13 +116,14 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $mapper = new InputMapper();
 
         $expectedBrowserName = $mapper->mapBrowserName($expectedProperties['Browser']);
+        $foundBrowserName    = $mapper->mapBrowserName($result->getBrowser()->getName());
 
         self::assertSame(
             $expectedBrowserName,
-            $result->getBrowser()->getName(),
-            'Expected actual "Browser" to be "' . $expectedBrowserName
-            . ' [' . $expectedProperties['Browser'] . ']'
-            . '" (was "' . $result->getBrowser()->getName() . '")'
+            $foundBrowserName,
+            'Expected actual "Browser" to be "'
+            . $expectedBrowserName . ' [' . $expectedProperties['Browser'] . ']'
+            . '" (was "' . $foundBrowserName . ' [' . $result->getBrowser()->getName() . ']' . '")'
         );
 
         $expectedBrowserType = $mapper->mapBrowserType($expectedProperties['Browser_Type'])->getName();
@@ -139,13 +140,17 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $expectedProperties['Browser_Maker'],
             $expectedProperties['Browser']
         );
+        $foundBrowserMaker = $mapper->mapBrowserMaker(
+            $result->getBrowser()->getManufacturer()->getName(),
+            $result->getBrowser()->getName()
+        );
 
         self::assertSame(
             $expectedBrowserMaker,
-            $result->getBrowser()->getManufacturer()->getName(),
-            'Expected actual "Browser_Maker" to be "' . $expectedBrowserMaker
-            . ' [' . $expectedProperties['Browser_Maker'] . ']'
-            . '" (was "' . $result->getBrowser()->getManufacturer()->getName() . '")'
+            $foundBrowserMaker,
+            'Expected actual "Browser_Maker" to be "'
+            . $expectedBrowserMaker . ' [' . $expectedProperties['Browser_Maker'] . ']'
+            . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer()->getName() . ']' . '")'
         );
     }
 }

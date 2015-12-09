@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TorstenRueckertInternetdienstleistungen extends AbstractCompany implements CompanyInterface
+class TorstenRueckertInternetdienstleistungen extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Torsten Rueckert Internetdienstleistungen';
+    public $name = 'Torsten Rueckert Internetdienstleistungen';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Torsten Rueckert';
+    public $brandname = 'Torsten Rueckert';
 }

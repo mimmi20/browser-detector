@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DoCoMo extends AbstractCompany implements CompanyInterface
+class DoCoMo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'DoCoMo';
+    public $name = 'DoCoMo';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'DoCoMo';
+    public $brandname = 'DoCoMo';
 }

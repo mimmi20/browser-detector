@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SeoGraph extends AbstractCompany implements CompanyInterface
+class SeoGraph extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'SEOGraph';
+    public $name = 'SEOGraph';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'SEOGraph';
+    public $brandname = 'SEOGraph';
 }

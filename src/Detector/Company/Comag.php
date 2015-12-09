@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Comag extends AbstractCompany implements CompanyInterface
+class Comag extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Comag';
+    public $name = 'Comag';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Comag';
+    public $brandname = 'Comag';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DavidRosca extends AbstractCompany implements CompanyInterface
+class DavidRosca extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'David Rosca';
+    public $name = 'David Rosca';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'David Rosca';
+    public $brandname = 'David Rosca';
 }

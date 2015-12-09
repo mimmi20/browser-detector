@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ichiro extends AbstractCompany implements CompanyInterface
+class Ichiro extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Ichiro';
+    public $name = 'Ichiro';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Ichiro';
+    public $brandname = 'Ichiro';
 }

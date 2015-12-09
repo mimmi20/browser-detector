@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetEstate extends AbstractCompany implements CompanyInterface
+class NetEstate extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'netEstate GmbH';
+    public $name = 'netEstate GmbH';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'netEstate';
+    public $brandname = 'netEstate';
 }

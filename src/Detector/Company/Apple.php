@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Apple extends AbstractCompany implements CompanyInterface
+class Apple extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Apple Inc';
+    public $name = 'Apple Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Apple';
+    public $brandname = 'Apple';
 }

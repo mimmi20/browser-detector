@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Wotbox extends AbstractCompany implements CompanyInterface
+class Wotbox extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.wotbox.com';
+    public $name = 'www.wotbox.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Wotbox';
+    public $brandname = 'Wotbox';
 }

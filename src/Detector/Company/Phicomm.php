@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Phicomm extends AbstractCompany implements CompanyInterface
+class Phicomm extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Phicomm';
+    public $name = 'Phicomm';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Phicomm';
+    public $brandname = 'Phicomm';
 }

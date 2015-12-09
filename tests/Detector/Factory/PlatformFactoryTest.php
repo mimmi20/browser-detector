@@ -30,7 +30,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
         self::assertInstanceOf('\UaResult\Version', $result->detectVersion());
         self::assertSame($version, $result->detectVersion()->getVersion(Version::MAJORMINOR));
 
-        self::assertInstanceOf('\BrowserDetector\Detector\Company\CompanyInterface', $result->getManufacturer());
+        self::assertInstanceOf('\BrowserDetector\Detector\Company\AbstractCompany', $result->getManufacturer());
     }
 
     /**

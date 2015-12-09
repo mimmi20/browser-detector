@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Kde extends AbstractCompany implements CompanyInterface
+class Kde extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'KDE e.V.';
+    public $name = 'KDE e.V.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'KDE';
+    public $brandname = 'KDE';
 }

@@ -143,7 +143,7 @@ class Olivetti extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -153,7 +153,7 @@ class Olivetti extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Iparadigms extends AbstractCompany implements CompanyInterface
+class Iparadigms extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'iParadigms, LLC.';
+    public $name = 'iParadigms, LLC.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'iParadigms';
+    public $brandname = 'iParadigms';
 }

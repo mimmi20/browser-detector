@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Picmole extends AbstractCompany implements CompanyInterface
+class Picmole extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'picmole.com';
+    public $name = 'picmole.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Picmole';
+    public $brandname = 'Picmole';
 }

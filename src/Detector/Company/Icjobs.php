@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Icjobs extends AbstractCompany implements CompanyInterface
+class Icjobs extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.icjobs.de';
+    public $name = 'www.icjobs.de';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.icjobs.de';
+    public $brandname = 'www.icjobs.de';
 }

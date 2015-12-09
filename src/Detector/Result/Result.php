@@ -30,7 +30,7 @@
 
 namespace BrowserDetector\Detector\Result;
 
-use BrowserDetector\Detector\Company\CompanyInterface;
+use BrowserDetector\Detector\Company\AbstractCompany;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use Psr\Log\LoggerInterface;
 use UaBrowserType\TypeInterface;
@@ -516,10 +516,10 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
         $device .= ($device != $version && '' != $version ? ' ' . $version : '');
 
         if ($withManufacturer) {
-            $manufacturer = $this->getDeviceBrand()->getBrandName();
+            $manufacturer = $this->getDeviceBrand()->brandname;
 
             if (!$manufacturer || 'unknown' == $manufacturer) {
-                $manufacturer = $this->getDeviceManufacturer()->getName();
+                $manufacturer = $this->getDeviceManufacturer()->name;
             }
 
             if ('unknown' !== $manufacturer && '' !== $manufacturer && false === strpos(
@@ -613,19 +613,18 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
      */
     public function getDeviceVersion()
     {
-        return null; // $this->getCapability('mobile_browser', false);
+        return null;
     }
 
     /**
      * returns the manufacturer of the actual device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
+     * @return \BrowserDetector\Detector\Company\AbstractCompany */
     public function getDeviceManufacturer()
     {
         $value = $this->device->getManufacturer();
 
-        if (!($value instanceof CompanyInterface)) {
+        if (!($value instanceof AbstractCompany)) {
             $value = new UnknownCompany();
         }
 
@@ -635,13 +634,12 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
     /**
      * returns the brand of the actual device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
-     */
+     * @return \BrowserDetector\Detector\Company\AbstractCompany */
     public function getDeviceBrand()
     {
         $value = $this->device->getBrand();
 
-        if (!($value instanceof CompanyInterface)) {
+        if (!($value instanceof AbstractCompany)) {
             $value = new UnknownCompany();
         }
 

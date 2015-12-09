@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Logikpd extends AbstractCompany implements CompanyInterface
+class Logikpd extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'LogicPD';
+    public $name = 'LogicPD';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'LogicPD';
+    public $brandname = 'LogicPD';
 }

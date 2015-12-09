@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WaybackArchiveOrg extends AbstractCompany implements CompanyInterface
+class WaybackArchiveOrg extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'waybackarchive.org';
+    public $name = 'waybackarchive.org';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'waybackarchive';
+    public $brandname = 'waybackarchive';
 }

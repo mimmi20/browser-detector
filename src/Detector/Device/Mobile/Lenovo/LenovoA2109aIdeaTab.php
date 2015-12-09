@@ -131,7 +131,7 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -141,7 +141,7 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Denver extends AbstractCompany implements CompanyInterface
+class Denver extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'DENVER ELECTRONICS A/S';
+    public $name = 'DENVER ELECTRONICS A/S';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Denver';
+    public $brandname = 'Denver';
 }

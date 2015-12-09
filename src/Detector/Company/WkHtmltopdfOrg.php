@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WkHtmltopdfOrg extends AbstractCompany implements CompanyInterface
+class WkHtmltopdfOrg extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'wkhtmltopdf.org';
+    public $name = 'wkhtmltopdf.org';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'wkhtmltopdf.org';
+    public $brandname = 'wkhtmltopdf.org';
 }

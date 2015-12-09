@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Beidou extends AbstractCompany implements CompanyInterface
+class Beidou extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Beidou';
+    public $name = 'Beidou';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Beidou';
+    public $brandname = 'Beidou';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AvantForce extends AbstractCompany implements CompanyInterface
+class AvantForce extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Avant Force';
+    public $name = 'Avant Force';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Avant Force';
+    public $brandname = 'Avant Force';
 }

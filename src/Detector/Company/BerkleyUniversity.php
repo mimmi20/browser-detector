@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BerkleyUniversity extends AbstractCompany implements CompanyInterface
+class BerkleyUniversity extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'University of California, Berkeley';
+    public $name = 'University of California, Berkeley';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Berkeley';
+    public $brandname = 'Berkeley';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GrapeshotLimited extends AbstractCompany implements CompanyInterface
+class GrapeshotLimited extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Grapeshot Limited';
+    public $name = 'Grapeshot Limited';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Grapeshot';
+    public $brandname = 'Grapeshot';
 }

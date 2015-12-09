@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Zenithink extends AbstractCompany implements CompanyInterface
+class Zenithink extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Zenithink';
+    public $name = 'Zenithink';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Zenithink';
+    public $brandname = 'Zenithink';
 }

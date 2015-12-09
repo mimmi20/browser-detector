@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TriQ extends AbstractCompany implements CompanyInterface
+class TriQ extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = '3Q';
+    public $name = '3Q';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = '3Q';
+    public $brandname = '3Q';
 }

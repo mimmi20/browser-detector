@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Obigo extends AbstractCompany implements CompanyInterface
+class Obigo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Obigo';
+    public $name = 'Obigo';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Obigo';
+    public $brandname = 'Obigo';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PaperLi extends AbstractCompany implements CompanyInterface
+class PaperLi extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Paper.li';
+    public $name = 'Paper.li';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Paper.li';
+    public $brandname = 'Paper.li';
 }

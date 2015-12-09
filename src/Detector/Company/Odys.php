@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Odys extends AbstractCompany implements CompanyInterface
+class Odys extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Odys';
+    public $name = 'Odys';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Odys';
+    public $brandname = 'Odys';
 }

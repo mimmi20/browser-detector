@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class XavierRoche extends AbstractCompany implements CompanyInterface
+class XavierRoche extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Xavier Roche';
+    public $name = 'Xavier Roche';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Xavier Roche';
+    public $brandname = 'Xavier Roche';
 }

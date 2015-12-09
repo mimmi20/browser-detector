@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Genieo extends AbstractCompany implements CompanyInterface
+class Genieo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.genieo.com';
+    public $name = 'www.genieo.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.genieo.com';
+    public $brandname = 'www.genieo.com';
 }

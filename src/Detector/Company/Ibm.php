@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ibm extends AbstractCompany implements CompanyInterface
+class Ibm extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'IBM';
+    public $name = 'IBM';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'IBM';
+    public $brandname = 'IBM';
 }

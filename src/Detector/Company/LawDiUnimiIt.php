@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LawDiUnimiIt extends AbstractCompany implements CompanyInterface
+class LawDiUnimiIt extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'http://law.di.unimi.it';
+    public $name = 'http://law.di.unimi.it';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'http://law.di.unimi.it';
+    public $brandname = 'http://law.di.unimi.it';
 }

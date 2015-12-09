@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Steeler extends AbstractCompany implements CompanyInterface
+class Steeler extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.tkl.iis.u-tokyo.ac.jp';
+    public $name = 'www.tkl.iis.u-tokyo.ac.jp';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.tkl.iis.u-tokyo.ac.jp';
+    public $brandname = 'www.tkl.iis.u-tokyo.ac.jp';
 }

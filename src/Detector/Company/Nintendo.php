@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nintendo extends AbstractCompany implements CompanyInterface
+class Nintendo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Nintendo';
+    public $name = 'Nintendo';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Nintendo';
+    public $brandname = 'Nintendo';
 }

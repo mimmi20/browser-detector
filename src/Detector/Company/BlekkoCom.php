@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlekkoCom extends AbstractCompany implements CompanyInterface
+class BlekkoCom extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'blekko.com';
+    public $name = 'blekko.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'blekko.com';
+    public $brandname = 'blekko.com';
 }

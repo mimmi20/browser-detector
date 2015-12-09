@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Cube extends AbstractCompany implements CompanyInterface
+class Cube extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Cube';
+    public $name = 'Cube';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Cube';
+    public $brandname = 'Cube';
 }

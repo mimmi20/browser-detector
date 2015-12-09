@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Google extends AbstractCompany implements CompanyInterface
+class Google extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Google Inc';
+    public $name = 'Google Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Google';
+    public $brandname = 'Google';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-interface CompanyInterface
+class Tarasco extends AbstractCompany
 {
     /**
-     * Returns the name of the company
+     * the name of the company
      *
-     * @return string
+     * @var string
      */
-    public function getName();
+    public $name = 'tarasco.org';
 
     /**
-     * Returns the brand name of the company
+     * the brand name of the company
      *
-     * @return string
+     * @var string
      */
-    public function getBrandName();
+    public $brandname = 'Tarasco';
 }

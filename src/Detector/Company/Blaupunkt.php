@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Blaupunkt extends AbstractCompany implements CompanyInterface
+class Blaupunkt extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Blaupunkt';
+    public $name = 'Blaupunkt';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Blaupunkt';
+    public $brandname = 'Blaupunkt';
 }

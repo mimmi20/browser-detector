@@ -124,7 +124,7 @@ class HtcS710e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -134,7 +134,7 @@ class HtcS710e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

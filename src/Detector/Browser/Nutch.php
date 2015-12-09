@@ -77,7 +77,9 @@ class Nutch extends AbstractBrowser implements BrowserHasSpecificEngineInterface
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl'))) {
+        $specials = array('CazoodleBot', 'LOOQ', 'linguatools', 'commoncrawl', 'DiscoverEd');
+
+        if ($this->utils->checkIfContains($specials)) {
             return false;
         }
 
@@ -97,7 +99,7 @@ class Nutch extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

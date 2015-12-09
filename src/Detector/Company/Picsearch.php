@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Picsearch extends AbstractCompany implements CompanyInterface
+class Picsearch extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Picsearch Services AB';
+    public $name = 'Picsearch Services AB';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Picsearch';
+    public $brandname = 'Picsearch';
 }

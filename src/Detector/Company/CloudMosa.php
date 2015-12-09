@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CloudMosa extends AbstractCompany implements CompanyInterface
+class CloudMosa extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'CloudMosa Inc.';
+    public $name = 'CloudMosa Inc.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'CloudMosa';
+    public $brandname = 'CloudMosa';
 }

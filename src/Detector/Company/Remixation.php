@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Remixation extends AbstractCompany implements CompanyInterface
+class Remixation extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Remixation, Inc';
+    public $name = 'Remixation, Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Remixation';
+    public $brandname = 'Remixation';
 }

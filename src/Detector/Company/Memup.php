@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Memup extends AbstractCompany implements CompanyInterface
+class Memup extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Memup';
+    public $name = 'Memup';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Memup';
+    public $brandname = 'Memup';
 }

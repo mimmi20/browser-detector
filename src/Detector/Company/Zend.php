@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Zend extends AbstractCompany implements CompanyInterface
+class Zend extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Zend Technologies Ltd.';
+    public $name = 'Zend Technologies Ltd.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Zend';
+    public $brandname = 'Zend';
 }

@@ -116,7 +116,7 @@ class SonyKdl40ex720 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -126,7 +126,7 @@ class SonyKdl40ex720 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

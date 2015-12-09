@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OpenWave extends AbstractCompany implements CompanyInterface
+class OpenWave extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'OpenWave Inc';
+    public $name = 'OpenWave Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'OpenWave';
+    public $brandname = 'OpenWave';
 }

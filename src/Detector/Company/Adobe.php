@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Adobe extends AbstractCompany implements CompanyInterface
+class Adobe extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Adobe';
+    public $name = 'Adobe';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Adobe';
+    public $brandname = 'Adobe';
 }

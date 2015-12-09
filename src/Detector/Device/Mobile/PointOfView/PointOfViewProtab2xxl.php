@@ -120,7 +120,7 @@ class PointOfViewProtab2xxl extends AbstractDevice implements DeviceHasWurflKeyI
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -130,7 +130,7 @@ class PointOfViewProtab2xxl extends AbstractDevice implements DeviceHasWurflKeyI
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

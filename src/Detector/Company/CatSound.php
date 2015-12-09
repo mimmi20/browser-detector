@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CatSound extends AbstractCompany implements CompanyInterface
+class CatSound extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Cat Sound';
+    public $name = 'Cat Sound';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'CatSound';
+    public $brandname = 'CatSound';
 }

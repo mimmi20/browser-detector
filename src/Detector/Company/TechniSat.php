@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TechniSat extends AbstractCompany implements CompanyInterface
+class TechniSat extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'TechniSat';
+    public $name = 'TechniSat';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'TechniSat';
+    public $brandname = 'TechniSat';
 }

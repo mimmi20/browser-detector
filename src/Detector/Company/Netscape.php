@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Netscape extends AbstractCompany implements CompanyInterface
+class Netscape extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Netscape';
+    public $name = 'Netscape';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Netscape';
+    public $brandname = 'Netscape';
 }

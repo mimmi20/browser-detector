@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class KmeleonBrowserOrg extends AbstractCompany implements CompanyInterface
+class KmeleonBrowserOrg extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'kmeleonbrowser.org';
+    public $name = 'kmeleonbrowser.org';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'kmeleonbrowser.org';
+    public $brandname = 'kmeleonbrowser.org';
 }

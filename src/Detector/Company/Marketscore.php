@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Marketscore extends AbstractCompany implements CompanyInterface
+class Marketscore extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Marketscore';
+    public $name = 'Marketscore';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Marketscore';
+    public $brandname = 'Marketscore';
 }

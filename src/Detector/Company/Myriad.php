@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Myriad extends AbstractCompany implements CompanyInterface
+class Myriad extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Myriad Group';
+    public $name = 'Myriad Group';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Myriad';
+    public $brandname = 'Myriad';
 }

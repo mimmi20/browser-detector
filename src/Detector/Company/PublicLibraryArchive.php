@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PublicLibraryArchive extends AbstractCompany implements CompanyInterface
+class PublicLibraryArchive extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'publiclibraryarchive.org';
+    public $name = 'publiclibraryarchive.org';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'publiclibraryarchive.org';
+    public $brandname = 'publiclibraryarchive.org';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Kobo extends AbstractCompany implements CompanyInterface
+class Kobo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Kobo';
+    public $name = 'Kobo';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Kobo';
+    public $brandname = 'Kobo';
 }

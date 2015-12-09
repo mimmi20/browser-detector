@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Showword extends AbstractCompany implements CompanyInterface
+class Showword extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'showword.info';
+    public $name = 'showword.info';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Showword';
+    public $brandname = 'Showword';
 }

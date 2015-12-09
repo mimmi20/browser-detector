@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Epad extends AbstractCompany implements CompanyInterface
+class Epad extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Epad';
+    public $name = 'Epad';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Epad';
+    public $brandname = 'Epad';
 }

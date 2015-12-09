@@ -116,7 +116,7 @@ class Archos80Cobalt extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -126,7 +126,7 @@ class Archos80Cobalt extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

@@ -116,7 +116,7 @@ class LenovoS6000lfIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -126,7 +126,7 @@ class LenovoS6000lfIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

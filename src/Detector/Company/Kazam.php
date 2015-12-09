@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Kazam extends AbstractCompany implements CompanyInterface
+class Kazam extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'KAZAM';
+    public $name = 'KAZAM';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'KAZAM';
+    public $brandname = 'KAZAM';
 }

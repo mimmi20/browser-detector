@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Esrihu extends AbstractCompany implements CompanyInterface
+class Esrihu extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.esrihu.hu';
+    public $name = 'www.esrihu.hu';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.esrihu.hu';
+    public $brandname = 'www.esrihu.hu';
 }

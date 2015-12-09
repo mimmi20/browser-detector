@@ -590,7 +590,7 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
     /**
      * gets the maker of the platform
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

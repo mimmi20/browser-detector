@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nec extends AbstractCompany implements CompanyInterface
+class Nec extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Nec';
+    public $name = 'Nec';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Nec';
+    public $brandname = 'Nec';
 }

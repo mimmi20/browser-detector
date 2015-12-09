@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BoardReader extends AbstractCompany implements CompanyInterface
+class BoardReader extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'BoardReader';
+    public $name = 'BoardReader';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'BoardReader';
+    public $brandname = 'BoardReader';
 }

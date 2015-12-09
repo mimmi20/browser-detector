@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TinEye extends AbstractCompany implements CompanyInterface
+class TinEye extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'tineye.com';
+    public $name = 'tineye.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'TinEye';
+    public $brandname = 'TinEye';
 }

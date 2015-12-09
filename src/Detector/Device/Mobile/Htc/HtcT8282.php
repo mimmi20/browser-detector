@@ -125,7 +125,7 @@ class HtcT8282 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -135,7 +135,7 @@ class HtcT8282 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

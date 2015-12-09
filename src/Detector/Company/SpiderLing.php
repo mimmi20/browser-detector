@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SpiderLing extends AbstractCompany implements CompanyInterface
+class SpiderLing extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'nlp.fi.muni.cz';
+    public $name = 'nlp.fi.muni.cz';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'nlp.fi.muni.cz';
+    public $brandname = 'nlp.fi.muni.cz';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Xiaomi extends AbstractCompany implements CompanyInterface
+class Xiaomi extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Xiaomi';
+    public $name = 'Xiaomi';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Xiaomi';
+    public $brandname = 'Xiaomi';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Intenso extends AbstractCompany implements CompanyInterface
+class Intenso extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Intenso';
+    public $name = 'Intenso';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Intenso';
+    public $brandname = 'Intenso';
 }

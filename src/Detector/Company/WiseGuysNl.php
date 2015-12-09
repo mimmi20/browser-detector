@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WiseGuysNl extends AbstractCompany implements CompanyInterface
+class WiseGuysNl extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'wise-guys.nl';
+    public $name = 'wise-guys.nl';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'wise-guys.nl';
+    public $brandname = 'wise-guys.nl';
 }

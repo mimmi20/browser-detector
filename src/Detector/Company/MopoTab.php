@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MopoTab extends AbstractCompany implements CompanyInterface
+class MopoTab extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'MopoTab Inc';
+    public $name = 'MopoTab Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'MopoTab';
+    public $brandname = 'MopoTab';
 }

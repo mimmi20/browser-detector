@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SeoEngine extends AbstractCompany implements CompanyInterface
+class SeoEngine extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.seoengine.com';
+    public $name = 'www.seoengine.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'SeoEngine';
+    public $brandname = 'SeoEngine';
 }

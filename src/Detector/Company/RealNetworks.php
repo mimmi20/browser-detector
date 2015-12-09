@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class RealNetworks extends AbstractCompany implements CompanyInterface
+class RealNetworks extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Real Networks';
+    public $name = 'Real Networks';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Real Networks';
+    public $brandname = 'Real Networks';
 }

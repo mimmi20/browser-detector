@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Pomp extends AbstractCompany implements CompanyInterface
+class Pomp extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Pomp';
+    public $name = 'Pomp';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Pomp';
+    public $brandname = 'Pomp';
 }

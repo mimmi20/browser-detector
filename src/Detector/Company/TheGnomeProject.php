@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TheGnomeProject extends AbstractCompany implements CompanyInterface
+class TheGnomeProject extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'The GNOME Project';
+    public $name = 'The GNOME Project';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'GNOME';
+    public $brandname = 'GNOME';
 }

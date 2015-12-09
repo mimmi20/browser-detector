@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Samsung extends AbstractCompany implements CompanyInterface
+class Samsung extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Samsung';
+    public $name = 'Samsung';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Samsung';
+    public $brandname = 'Samsung';
 }

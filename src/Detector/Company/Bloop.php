@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bloop extends AbstractCompany implements CompanyInterface
+class Bloop extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Bloop S.R.L.';
+    public $name = 'Bloop S.R.L.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Bloop';
+    public $brandname = 'Bloop';
 }

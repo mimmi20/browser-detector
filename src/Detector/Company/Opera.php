@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Opera extends AbstractCompany implements CompanyInterface
+class Opera extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Opera Software ASA';
+    public $name = 'Opera Software ASA';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Opera';
+    public $brandname = 'Opera';
 }

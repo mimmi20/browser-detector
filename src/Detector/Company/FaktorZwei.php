@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class FaktorZwei extends AbstractCompany implements CompanyInterface
+class FaktorZwei extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Faktor Zwei';
+    public $name = 'Faktor Zwei';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Faktor Zwei';
+    public $brandname = 'Faktor Zwei';
 }

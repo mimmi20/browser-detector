@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Mandriva extends AbstractCompany implements CompanyInterface
+class Mandriva extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Mandriva';
+    public $name = 'Mandriva';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Mandriva';
+    public $brandname = 'Mandriva';
 }

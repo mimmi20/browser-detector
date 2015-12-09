@@ -152,6 +152,7 @@ class Safari
             'Slurp',
             'GINGERBREAD',
             'Nokia',
+            'Twitter',
             //mobile Version
             'Tablet',
             'Android',

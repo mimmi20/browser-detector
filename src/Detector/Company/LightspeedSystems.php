@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LightspeedSystems extends AbstractCompany implements CompanyInterface
+class LightspeedSystems extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Lightspeed Systems';
+    public $name = 'Lightspeed Systems';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Lightspeed Systems';
+    public $brandname = 'Lightspeed Systems';
 }

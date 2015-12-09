@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Infotrust extends AbstractCompany implements CompanyInterface
+class Infotrust extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'InfoTrust, LLC.';
+    public $name = 'InfoTrust, LLC.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'InfoTrust';
+    public $brandname = 'InfoTrust';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Linguee extends AbstractCompany implements CompanyInterface
+class Linguee extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.linguee.com';
+    public $name = 'www.linguee.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.linguee.com';
+    public $brandname = 'www.linguee.com';
 }

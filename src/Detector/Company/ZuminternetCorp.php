@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ZuminternetCorp extends AbstractCompany implements CompanyInterface
+class ZuminternetCorp extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'ZUMinternet Corp';
+    public $name = 'ZUMinternet Corp';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'ZUMinternet';
+    public $brandname = 'ZUMinternet';
 }

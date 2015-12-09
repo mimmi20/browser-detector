@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IisNet extends AbstractCompany implements CompanyInterface
+class IisNet extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.iis.net';
+    public $name = 'www.iis.net';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.iis.net';
+    public $brandname = 'www.iis.net';
 }

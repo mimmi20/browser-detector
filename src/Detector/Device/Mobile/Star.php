@@ -138,7 +138,7 @@ class Star extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {
@@ -148,7 +148,7 @@ class Star extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {

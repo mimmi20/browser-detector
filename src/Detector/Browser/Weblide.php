@@ -93,7 +93,7 @@ class Weblide extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

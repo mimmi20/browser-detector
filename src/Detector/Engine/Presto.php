@@ -209,7 +209,7 @@ class Presto extends AbstractEngine implements EngineInterface, EngineDependsOnD
     /**
      * gets the maker of the platform
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

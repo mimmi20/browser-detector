@@ -75,6 +75,10 @@ class Feedly extends AbstractBrowser
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('FeedlyApp'))) {
+            return false;
+        }
+
         return true;
     }
 
@@ -91,7 +95,7 @@ class Feedly extends AbstractBrowser
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getManufacturer()
     {

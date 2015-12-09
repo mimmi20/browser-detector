@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SumaEv extends AbstractCompany implements CompanyInterface
+class SumaEv extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'SuMa-eV - Verein fuer freien Wissenszugang';
+    public $name = 'SuMa-eV - Verein fuer freien Wissenszugang';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'SuMa-eV';
+    public $brandname = 'SuMa-eV';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Yahoo extends AbstractCompany implements CompanyInterface
+class Yahoo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Yahoo! Inc.';
+    public $name = 'Yahoo! Inc.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Yahoo';
+    public $brandname = 'Yahoo';
 }

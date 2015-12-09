@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class InternetArchiveDe extends AbstractCompany implements CompanyInterface
+class InternetArchiveDe extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'www.archive-de.com';
+    public $name = 'www.archive-de.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'www.archive-de.com';
+    public $brandname = 'www.archive-de.com';
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Cosmote extends AbstractCompany implements CompanyInterface
+class Cosmote extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Cosmote';
+    public $name = 'Cosmote';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Cosmote';
+    public $brandname = 'Cosmote';
 }

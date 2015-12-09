@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Vodafone extends AbstractCompany implements CompanyInterface
+class Vodafone extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Vodafone';
+    public $name = 'Vodafone';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Vodafone';
+    public $brandname = 'Vodafone';
 }

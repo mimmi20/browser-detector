@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackPixel extends AbstractCompany implements CompanyInterface
+class BlackPixel extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Black Pixel';
+    public $name = 'Black Pixel';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Black Pixel';
+    public $brandname = 'Black Pixel';
 }

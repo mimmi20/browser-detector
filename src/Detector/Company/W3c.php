@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class W3c extends AbstractCompany implements CompanyInterface
+class W3c extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'W3C';
+    public $name = 'W3C';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'W3C';
+    public $brandname = 'W3C';
 }

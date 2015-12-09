@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Amazon extends AbstractCompany implements CompanyInterface
+class Amazon extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Amazon.com, Inc.';
+    public $name = 'Amazon.com, Inc.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Amazon';
+    public $brandname = 'Amazon';
 }

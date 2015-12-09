@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Provisio extends AbstractCompany implements CompanyInterface
+class Provisio extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'PROVISIO GmbH / LLC';
+    public $name = 'PROVISIO GmbH / LLC';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Provisio';
+    public $brandname = 'Provisio';
 }

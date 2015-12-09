@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UcWeb extends AbstractCompany implements CompanyInterface
+class UcWeb extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'UCWeb Inc.';
+    public $name = 'UCWeb Inc.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'UCWeb';
+    public $brandname = 'UCWeb';
 }

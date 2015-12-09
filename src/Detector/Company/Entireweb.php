@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Entireweb extends AbstractCompany implements CompanyInterface
+class Entireweb extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'Entireweb Sweden AB';
+    public $name = 'Entireweb Sweden AB';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'Entireweb';
+    public $brandname = 'Entireweb';
 }

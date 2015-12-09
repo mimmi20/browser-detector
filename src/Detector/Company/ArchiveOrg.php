@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ArchiveOrg extends AbstractCompany implements CompanyInterface
+class ArchiveOrg extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    protected $name = 'archive.org';
+    public $name = 'archive.org';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    protected $brandname = 'archive.org';
+    public $brandname = 'archive.org';
 }
