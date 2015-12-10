@@ -93,7 +93,7 @@ class UmBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

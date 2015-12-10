@@ -206,7 +206,7 @@ class Tasman extends AbstractEngine implements EngineInterface
     /**
      * gets the maker of the platform
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

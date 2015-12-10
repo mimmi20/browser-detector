@@ -123,7 +123,7 @@ class CometBird extends AbstractBrowser implements BrowserHasSpecificEngineInter
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

@@ -120,7 +120,7 @@ class SonyC5803XperiaZ3Compact extends AbstractDevice implements DeviceHasSpecif
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

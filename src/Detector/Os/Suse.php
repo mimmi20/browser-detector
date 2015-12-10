@@ -67,7 +67,7 @@ class Suse extends AbstractOs
     /**
      * returns the version of the operating system/platform
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

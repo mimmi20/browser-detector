@@ -206,7 +206,7 @@ class Trident extends AbstractEngine implements EngineInterface, EngineDependsOn
     /**
      * gets the maker of the platform
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

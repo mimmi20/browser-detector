@@ -141,7 +141,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $expectedProperties['Browser']
         );
         $foundBrowserMaker = $mapper->mapBrowserMaker(
-            $result->getBrowser()->getManufacturer()->getName(),
+            $result->getBrowser()->getManufacturer()->name,
             $result->getBrowser()->getName()
         );
 
@@ -150,7 +150,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $foundBrowserMaker,
             'Expected actual "Browser_Maker" to be "'
             . $expectedBrowserMaker . ' [' . $expectedProperties['Browser_Maker'] . ']'
-            . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer()->getName() . ']' . '")'
+            . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer()->name . ']' . '")'
         );
     }
 }

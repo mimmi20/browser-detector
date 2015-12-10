@@ -126,7 +126,7 @@ class HtcA510 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {
@@ -136,7 +136,7 @@ class HtcA510 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {

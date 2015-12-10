@@ -209,7 +209,7 @@ class Goanna extends AbstractEngine implements EngineInterface, EngineDependsOnD
     /**
      * gets the maker of the platform
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

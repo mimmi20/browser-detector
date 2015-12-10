@@ -125,7 +125,7 @@ class HuaweiMediaPad10Link extends AbstractDevice implements DeviceHasWurflKeyIn
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {
@@ -135,7 +135,7 @@ class HuaweiMediaPad10Link extends AbstractDevice implements DeviceHasWurflKeyIn
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {

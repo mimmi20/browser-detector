@@ -131,7 +131,7 @@ class Konqueror extends AbstractBrowser
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

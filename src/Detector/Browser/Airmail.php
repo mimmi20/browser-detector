@@ -93,11 +93,11 @@ class Airmail extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Bloop();
+        return new Company(new Company\Bloop());
     }
 
     /**

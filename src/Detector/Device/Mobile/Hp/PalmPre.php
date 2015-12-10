@@ -50,12 +50,12 @@ use UaMatcher\Os\OsInterface;
 class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
-     * @var \BrowserDetector\Detector\Company\AbstractCompany
+     * @var \UaMatcher\Company\CompanyInterface
      */
     private $brand = null;
 
     /**
-     * @var \BrowserDetector\Detector\Company\AbstractCompany
+     * @var \UaMatcher\Company\CompanyInterface
      */
     private $manufacturer = null;
 
@@ -132,7 +132,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {
@@ -146,7 +146,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {

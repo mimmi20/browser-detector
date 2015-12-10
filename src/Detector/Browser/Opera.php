@@ -117,7 +117,7 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

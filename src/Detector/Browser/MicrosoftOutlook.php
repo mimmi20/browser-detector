@@ -123,7 +123,7 @@ class MicrosoftOutlook extends MicrosoftOffice implements BrowserHasWurflKeyInte
     /**
      * gets the maker of the browser
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

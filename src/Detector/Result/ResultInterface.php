@@ -186,14 +186,14 @@ interface ResultInterface extends \UaMatcher\Result\ResultInterface
     /**
      * returns the manufacturer of the actual device
      *
-     * @return \UaMatcher\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getDeviceManufacturer();
 
     /**
      * returns the brand of the actual device
      *
-     * @return \UaMatcher\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getDeviceBrand();
 

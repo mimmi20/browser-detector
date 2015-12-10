@@ -140,7 +140,7 @@ class Htm extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {
@@ -150,7 +150,7 @@ class Htm extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {

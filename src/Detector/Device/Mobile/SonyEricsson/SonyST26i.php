@@ -124,7 +124,7 @@ class SonyST26i extends AbstractDevice implements DeviceHasWurflKeyInterface, De
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

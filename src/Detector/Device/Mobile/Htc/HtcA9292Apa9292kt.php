@@ -121,7 +121,7 @@ class HtcA9292Apa9292kt extends AbstractDevice implements DeviceHasWurflKeyInter
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {
@@ -131,7 +131,7 @@ class HtcA9292Apa9292kt extends AbstractDevice implements DeviceHasWurflKeyInter
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {

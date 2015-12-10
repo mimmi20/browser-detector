@@ -116,7 +116,7 @@ class SamsungSmG350 extends AbstractDevice implements DeviceHasSpecificPlatformI
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

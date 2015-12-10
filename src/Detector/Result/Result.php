@@ -619,7 +619,7 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
     /**
      * returns the manufacturer of the actual device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany */
+     * @return \UaMatcher\Company\CompanyInterface */
     public function getDeviceManufacturer()
     {
         $value = $this->device->getManufacturer();
@@ -634,7 +634,7 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
     /**
      * returns the brand of the actual device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany */
+     * @return \UaMatcher\Company\CompanyInterface */
     public function getDeviceBrand()
     {
         $value = $this->device->getBrand();

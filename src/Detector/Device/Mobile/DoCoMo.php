@@ -141,7 +141,7 @@ class DoCoMo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {
@@ -151,7 +151,7 @@ class DoCoMo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {

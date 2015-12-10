@@ -121,7 +121,7 @@ class SonyTabletSgpt12 extends AbstractDevice implements DeviceHasWurflKeyInterf
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {

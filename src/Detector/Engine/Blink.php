@@ -209,7 +209,7 @@ class Blink extends AbstractEngine implements EngineInterface, EngineDependsOnDe
     /**
      * gets the maker of the platform
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getManufacturer()
     {
