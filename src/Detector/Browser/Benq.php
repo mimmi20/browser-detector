@@ -93,7 +93,7 @@ class Benq extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Benq();
+        return new Company(new Company\Benq());
     }
 
     /**

@@ -97,7 +97,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\BlekkoCom();
+        return new Company(new Company\BlekkoCom());
     }
 
     /**

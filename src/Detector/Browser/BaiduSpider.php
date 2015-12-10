@@ -101,7 +101,7 @@ class BaiduSpider extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\Baidu();
+        return new Company(new Company\Baidu());
     }
 
     /**

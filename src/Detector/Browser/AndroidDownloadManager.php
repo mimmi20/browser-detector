@@ -97,7 +97,7 @@ class AndroidDownloadManager extends AbstractBrowser implements BrowserHasSpecif
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

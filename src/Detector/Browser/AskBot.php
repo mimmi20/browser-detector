@@ -97,7 +97,7 @@ class AskBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Ask();
+        return new Company(new Company\Ask());
     }
 
     /**

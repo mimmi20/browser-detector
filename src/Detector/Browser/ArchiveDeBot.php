@@ -97,7 +97,7 @@ class ArchiveDeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\InternetArchiveDe();
+        return new Company(new Company\InternetArchiveDe());
     }
 
     /**

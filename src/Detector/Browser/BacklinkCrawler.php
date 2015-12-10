@@ -96,7 +96,7 @@ class BacklinkCrawler extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getManufacturer()
     {
-        return new Company\BacklinkTest();
+        return new Company(new Company\BacklinkTest());
     }
 
     /**

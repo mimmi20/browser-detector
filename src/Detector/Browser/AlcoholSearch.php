@@ -99,7 +99,7 @@ class AlcoholSearch extends AbstractBrowser implements BrowserCalculatesAlternat
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

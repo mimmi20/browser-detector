@@ -97,7 +97,7 @@ class ApacheHttpClient extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company(new Company\Apache());
     }
 
     /**

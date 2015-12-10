@@ -97,7 +97,7 @@ class BaiduImageSearch extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\Baidu();
+        return new Company(new Company\Baidu());
     }
 
     /**

@@ -166,7 +166,7 @@ class AppleMail extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\Apple();
+        return new Company(new Company\Apple());
     }
 
     /**

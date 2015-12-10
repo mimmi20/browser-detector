@@ -95,7 +95,7 @@ class Avant extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\AvantForce();
+        return new Company(new Company\AvantForce());
     }
 
     /**

@@ -100,7 +100,7 @@ class ArchiveOrgBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\ArchiveOrg();
+        return new Company(new Company\ArchiveOrg());
     }
 
     /**

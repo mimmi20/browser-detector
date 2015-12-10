@@ -100,7 +100,7 @@ class BlackberryPlaybookTablet extends AbstractBrowser implements BrowserHasSpec
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**

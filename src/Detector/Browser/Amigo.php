@@ -119,7 +119,7 @@ class Amigo extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

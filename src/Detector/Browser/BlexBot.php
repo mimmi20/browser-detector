@@ -97,7 +97,7 @@ class BlexBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\WebmeupCrawlerCom();
+        return new Company(new Company\WebmeupCrawlerCom());
     }
 
     /**
