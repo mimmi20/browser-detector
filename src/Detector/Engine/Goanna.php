@@ -213,7 +213,7 @@ class Goanna extends AbstractEngine implements EngineInterface, EngineDependsOnD
      */
     public function getManufacturer()
     {
-        return new Company\MoonchildProductions();
+        return new Company(new Company\MoonchildProductions());
     }
 
     /**

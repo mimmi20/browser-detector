@@ -210,6 +210,6 @@ class Teleca extends AbstractEngine implements EngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Obigo();
+        return new Company(new Company\Obigo());
     }
 }

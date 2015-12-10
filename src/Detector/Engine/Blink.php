@@ -213,7 +213,7 @@ class Blink extends AbstractEngine implements EngineInterface, EngineDependsOnDe
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

@@ -211,7 +211,7 @@ class U2 extends AbstractEngine implements EngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\UcWeb();
+        return new Company(new Company\UcWeb());
     }
 
     /**

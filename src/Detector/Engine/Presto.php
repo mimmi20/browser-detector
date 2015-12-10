@@ -213,7 +213,7 @@ class Presto extends AbstractEngine implements EngineInterface, EngineDependsOnD
      */
     public function getManufacturer()
     {
-        return new Company\Opera();
+        return new Company(new Company\Opera());
     }
 
     /**

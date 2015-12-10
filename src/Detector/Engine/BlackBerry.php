@@ -210,6 +210,6 @@ class BlackBerry extends AbstractEngine implements EngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 }

@@ -210,7 +210,7 @@ class Trident extends AbstractEngine implements EngineInterface, EngineDependsOn
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**

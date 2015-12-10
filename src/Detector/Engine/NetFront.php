@@ -210,6 +210,6 @@ class NetFront extends AbstractEngine implements EngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Access();
+        return new Company(new Company\Access());
     }
 }

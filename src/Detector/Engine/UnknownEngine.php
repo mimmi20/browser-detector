@@ -210,6 +210,6 @@ class UnknownEngine extends AbstractEngine implements EngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 }

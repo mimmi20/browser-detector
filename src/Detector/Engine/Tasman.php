@@ -210,6 +210,6 @@ class Tasman extends AbstractEngine implements EngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Apple();
+        return new Company(new Company\Apple());
     }
 }

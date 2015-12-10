@@ -213,7 +213,7 @@ class Gecko extends AbstractEngine implements EngineInterface, EngineDependsOnDe
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**

@@ -211,7 +211,7 @@ class T5 extends AbstractEngine implements EngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Baidu();
+        return new Company(new Company\Baidu());
     }
 
     /**
