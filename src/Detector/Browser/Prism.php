@@ -139,7 +139,7 @@ class Prism extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**

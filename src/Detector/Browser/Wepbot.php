@@ -97,7 +97,7 @@ class Wepbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company(new Company\Apache());
     }
 
     /**

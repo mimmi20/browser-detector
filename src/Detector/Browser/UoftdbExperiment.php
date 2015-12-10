@@ -101,7 +101,7 @@ class UoftdbExperiment extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

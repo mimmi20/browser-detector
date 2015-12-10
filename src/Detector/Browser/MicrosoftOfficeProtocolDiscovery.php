@@ -97,7 +97,7 @@ class MicrosoftOfficeProtocolDiscovery extends AbstractBrowser implements Browse
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**

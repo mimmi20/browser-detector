@@ -121,7 +121,7 @@ class Iceape extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Debian();
+        return new Company(new Company\Debian());
     }
 
     /**

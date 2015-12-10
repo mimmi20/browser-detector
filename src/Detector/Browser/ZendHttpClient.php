@@ -97,7 +97,7 @@ class ZendHttpClient extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\Zend();
+        return new Company(new Company\Zend());
     }
 
     /**

@@ -93,7 +93,7 @@ class Philips extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Philips();
+        return new Company(new Company\Philips());
     }
 
     /**

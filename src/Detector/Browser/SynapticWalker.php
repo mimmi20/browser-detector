@@ -97,7 +97,7 @@ class SynapticWalker extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\Websynaptics();
+        return new Company(new Company\Websynaptics());
     }
 
     /**

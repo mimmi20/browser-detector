@@ -140,7 +140,7 @@ class Iceweasel extends AbstractBrowser implements BrowserHasWurflKeyInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\Debian();
+        return new Company(new Company\Debian());
     }
 
     /**

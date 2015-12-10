@@ -97,7 +97,7 @@ class OpenWeb extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\OpenWave();
+        return new Company(new Company\OpenWave());
     }
 
     /**

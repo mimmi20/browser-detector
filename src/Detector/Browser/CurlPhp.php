@@ -101,7 +101,7 @@ class CurlPhp extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\TeamHaxx();
+        return new Company(new Company\TeamHaxx());
     }
 
     /**

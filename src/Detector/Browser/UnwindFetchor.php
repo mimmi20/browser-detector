@@ -97,7 +97,7 @@ class UnwindFetchor extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\Gnip();
+        return new Company(new Company\Gnip());
     }
 
     /**

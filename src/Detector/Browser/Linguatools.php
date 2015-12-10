@@ -97,7 +97,7 @@ class Linguatools extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\Linguatools();
+        return new Company(new Company\Linguatools());
     }
 
     /**

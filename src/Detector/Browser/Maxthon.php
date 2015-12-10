@@ -124,7 +124,7 @@ class Maxthon extends AbstractBrowser implements BrowserHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Maxthon();
+        return new Company(new Company\Maxthon());
     }
 
     /**

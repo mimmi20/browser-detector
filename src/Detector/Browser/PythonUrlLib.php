@@ -97,7 +97,7 @@ class PythonUrlLib extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\PythonSoftwareFoundation();
+        return new Company(new Company\PythonSoftwareFoundation());
     }
 
     /**

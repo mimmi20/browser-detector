@@ -97,7 +97,7 @@ class SemrushBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Semrush();
+        return new Company(new Company\Semrush());
     }
 
     /**

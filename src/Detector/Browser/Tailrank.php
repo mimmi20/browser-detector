@@ -101,7 +101,7 @@ class Tailrank extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\Tailrank();
+        return new Company(new Company\Tailrank());
     }
 
     /**

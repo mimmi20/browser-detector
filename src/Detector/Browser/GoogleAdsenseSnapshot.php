@@ -97,7 +97,7 @@ class GoogleAdsenseSnapshot extends AbstractBrowser implements BrowserHasSpecifi
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

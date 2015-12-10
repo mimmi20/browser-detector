@@ -96,7 +96,7 @@ class GoogleWebSnippet extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

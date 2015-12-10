@@ -97,7 +97,7 @@ class Obot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Ibm();
+        return new Company(new Company\Ibm());
     }
 
     /**

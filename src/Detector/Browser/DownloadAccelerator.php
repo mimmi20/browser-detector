@@ -97,7 +97,7 @@ class DownloadAccelerator extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

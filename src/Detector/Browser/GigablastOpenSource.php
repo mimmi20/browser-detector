@@ -95,7 +95,7 @@ class GigablastOpenSource extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\GigablastCom();
+        return new Company(new Company\GigablastCom());
     }
 
     /**

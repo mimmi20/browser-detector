@@ -101,7 +101,7 @@ class Realplayer extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\RealNetworks();
+        return new Company(new Company\RealNetworks());
     }
 
     /**

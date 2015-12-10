@@ -133,7 +133,7 @@ class ComodoDragon extends AbstractBrowser implements BrowserHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Comodo();
+        return new Company(new Company\Comodo());
     }
 
     /**

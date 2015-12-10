@@ -97,7 +97,7 @@ class SecurepointContentFilter extends AbstractBrowser implements BrowserHasSpec
      */
     public function getManufacturer()
     {
-        return new Company\Securepoint();
+        return new Company(new Company\Securepoint());
     }
 
     /**

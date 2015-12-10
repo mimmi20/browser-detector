@@ -97,7 +97,7 @@ class FastbotCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\Pagedesign();
+        return new Company(new Company\Pagedesign());
     }
 
     /**

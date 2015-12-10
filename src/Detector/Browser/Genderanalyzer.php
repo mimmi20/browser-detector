@@ -97,7 +97,7 @@ class Genderanalyzer extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\GenderAnalyzer();
+        return new Company(new Company\GenderAnalyzer());
     }
 
     /**

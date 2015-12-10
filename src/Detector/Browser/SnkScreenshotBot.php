@@ -97,7 +97,7 @@ class SnkScreenshotBot extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\Savenkeep();
+        return new Company(new Company\Savenkeep());
     }
 
     /**

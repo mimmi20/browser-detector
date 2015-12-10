@@ -97,7 +97,7 @@ class Midori extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\ChristianDywan();
+        return new Company(new Company\ChristianDywan());
     }
 
     /**

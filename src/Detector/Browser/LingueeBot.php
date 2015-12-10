@@ -97,7 +97,7 @@ class LingueeBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Linguee();
+        return new Company(new Company\Linguee());
     }
 
     /**

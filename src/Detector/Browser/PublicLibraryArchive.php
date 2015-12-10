@@ -97,7 +97,7 @@ class PublicLibraryArchive extends AbstractBrowser implements BrowserHasSpecific
      */
     public function getManufacturer()
     {
-        return new Company\PublicLibraryArchive();
+        return new Company(new Company\PublicLibraryArchive());
     }
 
     /**

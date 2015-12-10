@@ -97,7 +97,7 @@ class WeseeAds extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\Wesee();
+        return new Company(new Company\Wesee());
     }
 
     /**

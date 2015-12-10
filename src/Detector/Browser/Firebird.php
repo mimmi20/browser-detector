@@ -139,7 +139,7 @@ class Firebird extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**

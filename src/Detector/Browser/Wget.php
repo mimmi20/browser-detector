@@ -97,7 +97,7 @@ class Wget extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\FreeSoftwareFoundation();
+        return new Company(new Company\FreeSoftwareFoundation());
     }
 
     /**

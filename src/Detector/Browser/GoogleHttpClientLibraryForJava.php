@@ -97,7 +97,7 @@ class GoogleHttpClientLibraryForJava extends AbstractBrowser implements BrowserH
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

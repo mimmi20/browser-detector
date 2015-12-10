@@ -94,7 +94,7 @@ class YahooLinkPreview extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Yahoo();
+        return new Company(new Company\Yahoo());
     }
 
     /**

@@ -100,7 +100,7 @@ class GoogleImageSearch extends AbstractBrowser implements BrowserCalculatesAlte
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

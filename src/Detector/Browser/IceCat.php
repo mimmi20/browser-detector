@@ -121,7 +121,7 @@ class IceCat extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Gnu();
+        return new Company(new Company\Gnu());
     }
 
     /**

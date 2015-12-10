@@ -97,7 +97,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\NhnCorporation();
+        return new Company(new Company\NhnCorporation());
     }
 
     /**

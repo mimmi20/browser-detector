@@ -95,7 +95,7 @@ class InternetArchiveSpecialArchiver extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\ArchiveOrg();
+        return new Company(new Company\ArchiveOrg());
     }
 
     /**

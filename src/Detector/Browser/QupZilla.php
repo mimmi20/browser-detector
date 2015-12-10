@@ -97,7 +97,7 @@ class QupZilla extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\DavidRosca();
+        return new Company(new Company\DavidRosca());
     }
 
     /**

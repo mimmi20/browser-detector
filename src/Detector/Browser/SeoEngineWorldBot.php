@@ -97,7 +97,7 @@ class SeoEngineWorldBot extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getManufacturer()
     {
-        return new Company\SeoEngine();
+        return new Company(new Company\SeoEngine());
     }
 
     /**

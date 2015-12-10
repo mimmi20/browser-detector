@@ -97,7 +97,7 @@ class MetaUri extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Metauri();
+        return new Company(new Company\Metauri());
     }
 
     /**

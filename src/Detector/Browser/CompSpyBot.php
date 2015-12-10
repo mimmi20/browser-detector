@@ -97,7 +97,7 @@ class CompSpyBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Compspy();
+        return new Company(new Company\Compspy());
     }
 
     /**

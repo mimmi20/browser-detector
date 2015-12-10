@@ -97,7 +97,7 @@ class GoogleWirelessTranscoder extends AbstractBrowser implements BrowserHasSpec
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

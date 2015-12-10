@@ -97,7 +97,7 @@ class IcjobsCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\Icjobs();
+        return new Company(new Company\Icjobs());
     }
 
     /**

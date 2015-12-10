@@ -102,7 +102,7 @@ class Motorola extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**

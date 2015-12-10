@@ -97,7 +97,7 @@ class Sindice extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Sindice();
+        return new Company(new Company\Sindice());
     }
 
     /**

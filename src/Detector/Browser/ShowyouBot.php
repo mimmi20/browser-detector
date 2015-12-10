@@ -97,7 +97,7 @@ class ShowyouBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Remixation();
+        return new Company(new Company\Remixation());
     }
 
     /**

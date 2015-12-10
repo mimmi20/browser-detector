@@ -97,7 +97,7 @@ class SsearchCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\Semantissimo();
+        return new Company(new Company\Semantissimo());
     }
 
     /**

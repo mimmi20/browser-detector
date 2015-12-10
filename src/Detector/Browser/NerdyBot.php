@@ -97,7 +97,7 @@ class NerdyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\NerdyData();
+        return new Company(new Company\NerdyData());
     }
 
     /**

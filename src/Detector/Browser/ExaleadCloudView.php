@@ -97,7 +97,7 @@ class ExaleadCloudView extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\DassaultSystemes();
+        return new Company(new Company\DassaultSystemes());
     }
 
     /**

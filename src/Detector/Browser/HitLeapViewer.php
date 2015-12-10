@@ -97,7 +97,7 @@ class HitLeapViewer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\HitLeap();
+        return new Company(new Company\HitLeap());
     }
 
     /**

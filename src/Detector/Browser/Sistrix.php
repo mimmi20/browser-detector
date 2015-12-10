@@ -96,7 +96,7 @@ class Sistrix extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Sistrix();
+        return new Company(new Company\Sistrix());
     }
 
     /**

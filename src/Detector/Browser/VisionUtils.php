@@ -97,7 +97,7 @@ class VisionUtils extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\BobMottram();
+        return new Company(new Company\BobMottram());
     }
 
     /**

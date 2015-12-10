@@ -97,7 +97,7 @@ class GarlikCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\Experian();
+        return new Company(new Company\Experian());
     }
 
     /**

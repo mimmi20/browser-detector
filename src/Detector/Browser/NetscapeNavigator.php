@@ -149,7 +149,7 @@ class NetscapeNavigator extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getManufacturer()
     {
-        return new Company\Netscape();
+        return new Company(new Company\Netscape());
     }
 
     /**

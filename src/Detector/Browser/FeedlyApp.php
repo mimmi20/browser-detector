@@ -95,7 +95,7 @@ class FeedlyApp extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\FeedlyCom();
+        return new Company(new Company\FeedlyCom());
     }
 
     /**

@@ -97,7 +97,7 @@ class FeedBlitz extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\FeedBlitz();
+        return new Company(new Company\FeedBlitz());
     }
 
     /**

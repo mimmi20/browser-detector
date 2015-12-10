@@ -97,7 +97,7 @@ class Picsearchbot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\Picsearch();
+        return new Company(new Company\Picsearch());
     }
 
     /**

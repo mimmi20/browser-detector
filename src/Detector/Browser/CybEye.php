@@ -95,7 +95,7 @@ class CybEye extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\CybEye();
+        return new Company(new Company\CybEye());
     }
 
     /**

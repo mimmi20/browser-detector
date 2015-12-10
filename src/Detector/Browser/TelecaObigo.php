@@ -106,7 +106,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\Obigo();
+        return new Company(new Company\Obigo());
     }
 
     /**

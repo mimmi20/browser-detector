@@ -99,7 +99,7 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
      */
     public function getManufacturer()
     {
-        return new Company\Tinfoilsecurity();
+        return new Company(new Company\Tinfoilsecurity());
     }
 
     /**

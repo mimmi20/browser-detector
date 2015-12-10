@@ -97,7 +97,7 @@ class YahooPipes extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Yahoo();
+        return new Company(new Company\Yahoo());
     }
 
     /**

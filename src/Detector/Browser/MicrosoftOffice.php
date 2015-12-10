@@ -130,7 +130,7 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasWurflKeyInter
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**

@@ -101,7 +101,7 @@ class TuringMachine extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

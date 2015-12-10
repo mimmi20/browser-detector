@@ -97,7 +97,7 @@ class SecureBrowser360 extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\Qihoo();
+        return new Company(new Company\Qihoo());
     }
 
     /**

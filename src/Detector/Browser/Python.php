@@ -101,7 +101,7 @@ class Python extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\PythonSoftwareFoundation();
+        return new Company(new Company\PythonSoftwareFoundation());
     }
 
     /**

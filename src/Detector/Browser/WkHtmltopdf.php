@@ -98,7 +98,7 @@ class WkHtmltopdf extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\WkHtmltopdfOrg();
+        return new Company(new Company\WkHtmltopdfOrg());
     }
 
     /**

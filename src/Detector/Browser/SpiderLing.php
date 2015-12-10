@@ -97,7 +97,7 @@ class SpiderLing extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\SpiderLing();
+        return new Company(new Company\SpiderLing());
     }
 
     /**

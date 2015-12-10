@@ -169,7 +169,7 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**

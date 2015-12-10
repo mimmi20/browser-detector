@@ -101,7 +101,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Panasonic();
+        return new Company(new Company\Panasonic());
     }
 
     /**

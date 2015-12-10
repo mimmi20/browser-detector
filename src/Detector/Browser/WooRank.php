@@ -97,7 +97,7 @@ class WooRank extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\WooRank();
+        return new Company(new Company\WooRank());
     }
 
     /**

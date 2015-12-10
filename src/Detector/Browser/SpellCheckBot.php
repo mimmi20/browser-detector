@@ -97,7 +97,7 @@ class SpellCheckBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\Showword();
+        return new Company(new Company\Showword());
     }
 
     /**

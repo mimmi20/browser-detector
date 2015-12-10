@@ -97,7 +97,7 @@ class NetFrontNx extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Access();
+        return new Company(new Company\Access());
     }
 
     /**

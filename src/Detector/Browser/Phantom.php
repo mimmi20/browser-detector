@@ -100,7 +100,7 @@ class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**

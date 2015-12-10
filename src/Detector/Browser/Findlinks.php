@@ -97,7 +97,7 @@ class Findlinks extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\WortschatzUniLeipzig();
+        return new Company(new Company\WortschatzUniLeipzig());
     }
 
     /**

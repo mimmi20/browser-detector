@@ -97,7 +97,7 @@ class Esribot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Esrihu();
+        return new Company(new Company\Esrihu());
     }
 
     /**

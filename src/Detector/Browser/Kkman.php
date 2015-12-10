@@ -95,7 +95,7 @@ class Kkman extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Kkbox();
+        return new Company(new Company\Kkbox());
     }
 
     /**

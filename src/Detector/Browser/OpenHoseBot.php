@@ -97,7 +97,7 @@ class OpenHoseBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\OpenHose();
+        return new Company(new Company\OpenHose());
     }
 
     /**

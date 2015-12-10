@@ -97,7 +97,7 @@ class DomainSigmaCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getManufacturer()
     {
-        return new Company\DomainSigma();
+        return new Company(new Company\DomainSigma());
     }
 
     /**

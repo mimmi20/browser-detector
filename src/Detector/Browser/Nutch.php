@@ -103,7 +103,7 @@ class Nutch extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company(new Company\Apache());
     }
 
     /**

@@ -97,7 +97,7 @@ class PagePeeker extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\PagePeeker();
+        return new Company(new Company\PagePeeker());
     }
 
     /**

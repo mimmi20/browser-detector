@@ -95,7 +95,7 @@ class WeChat extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Tencent();
+        return new Company(new Company\Tencent());
     }
 
     /**

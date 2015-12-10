@@ -96,7 +96,7 @@ class CrystalSemanticsBot extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getManufacturer()
     {
-        return new Company\CrystalSemantics();
+        return new Company(new Company\CrystalSemantics());
     }
 
     /**

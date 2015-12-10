@@ -95,7 +95,7 @@ class SeoDiver extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Seodiver();
+        return new Company(new Company\Seodiver());
     }
 
     /**

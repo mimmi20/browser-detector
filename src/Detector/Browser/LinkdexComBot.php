@@ -97,7 +97,7 @@ class LinkdexComBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\Linkdex();
+        return new Company(new Company\Linkdex());
     }
 
     /**

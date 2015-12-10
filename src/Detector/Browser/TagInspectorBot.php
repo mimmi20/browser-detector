@@ -97,7 +97,7 @@ class TagInspectorBot extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getManufacturer()
     {
-        return new Company\Infotrust();
+        return new Company(new Company\Infotrust());
     }
 
     /**

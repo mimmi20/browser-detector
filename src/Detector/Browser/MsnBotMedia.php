@@ -99,7 +99,7 @@ class MsnBotMedia extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**

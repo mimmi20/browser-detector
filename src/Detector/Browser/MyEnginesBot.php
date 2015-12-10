@@ -97,7 +97,7 @@ class MyEnginesBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\DomainDe();
+        return new Company(new Company\DomainDe());
     }
 
     /**

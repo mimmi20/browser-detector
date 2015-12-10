@@ -101,7 +101,7 @@ class TrendMicro extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\TrendMicro();
+        return new Company(new Company\TrendMicro());
     }
 
     /**

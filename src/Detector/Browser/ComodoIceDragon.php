@@ -116,7 +116,7 @@ class ComodoIceDragon extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getManufacturer()
     {
-        return new Company\Comodo();
+        return new Company(new Company\Comodo());
     }
 
     /**

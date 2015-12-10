@@ -97,7 +97,7 @@ class UmBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\UbermetricsTechnologies();
+        return new Company(new Company\UbermetricsTechnologies());
     }
 
     /**

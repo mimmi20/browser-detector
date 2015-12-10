@@ -97,7 +97,7 @@ class IisBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\IisNet();
+        return new Company(new Company\IisNet());
     }
 
     /**

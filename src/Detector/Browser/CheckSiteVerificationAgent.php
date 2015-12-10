@@ -97,7 +97,7 @@ class CheckSiteVerificationAgent extends AbstractBrowser implements BrowserHasSp
      */
     public function getManufacturer()
     {
-        return new Company\Checksite();
+        return new Company(new Company\Checksite());
     }
 
     /**

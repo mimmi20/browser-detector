@@ -99,7 +99,7 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getManufacturer()
     {
-        return new Company\WaterfoxProject();
+        return new Company(new Company\WaterfoxProject());
     }
 
     /**

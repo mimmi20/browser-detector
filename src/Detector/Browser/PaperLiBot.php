@@ -97,7 +97,7 @@ class PaperLiBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\PaperLi();
+        return new Company(new Company\PaperLi());
     }
 
     /**

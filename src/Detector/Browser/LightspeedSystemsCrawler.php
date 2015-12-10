@@ -95,7 +95,7 @@ class LightspeedSystemsCrawler extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\LightspeedSystems();
+        return new Company(new Company\LightspeedSystems());
     }
 
     /**

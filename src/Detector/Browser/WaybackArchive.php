@@ -97,7 +97,7 @@ class WaybackArchive extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\WaybackArchiveOrg();
+        return new Company(new Company\WaybackArchiveOrg());
     }
 
     /**

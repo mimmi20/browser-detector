@@ -101,7 +101,7 @@ class JakartaCommonsHttpClient extends AbstractBrowser implements BrowserHasSpec
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company(new Company\Apache());
     }
 
     /**

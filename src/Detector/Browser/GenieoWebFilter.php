@@ -95,7 +95,7 @@ class GenieoWebFilter extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Genieo();
+        return new Company(new Company\Genieo());
     }
 
     /**

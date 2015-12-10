@@ -91,7 +91,7 @@ class Boxee extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Boxee();
+        return new Company(new Company\Boxee());
     }
 
     /**

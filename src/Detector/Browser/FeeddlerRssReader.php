@@ -97,7 +97,7 @@ class FeeddlerRssReader extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getManufacturer()
     {
-        return new Company\CheBinLiu();
+        return new Company(new Company\CheBinLiu());
     }
 
     /**

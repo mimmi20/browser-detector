@@ -97,7 +97,7 @@ class WiJobRoboter extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\WebIntegrationItService();
+        return new Company(new Company\WebIntegrationItService());
     }
 
     /**

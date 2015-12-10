@@ -99,7 +99,7 @@ class WeseeSearch extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Wesee();
+        return new Company(new Company\Wesee());
     }
 
     /**

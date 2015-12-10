@@ -97,7 +97,7 @@ class OnePassword extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\Apple();
+        return new Company(new Company\Apple());
     }
 
     /**

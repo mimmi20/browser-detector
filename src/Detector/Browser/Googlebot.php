@@ -110,7 +110,7 @@ class Googlebot extends AbstractBrowser implements BrowserCalculatesAlternativeR
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

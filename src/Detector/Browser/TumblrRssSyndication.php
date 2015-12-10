@@ -101,7 +101,7 @@ class TumblrRssSyndication extends AbstractBrowser implements BrowserHasSpecific
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

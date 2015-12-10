@@ -98,7 +98,7 @@ class Nagios extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\NagiosEnterprises();
+        return new Company(new Company\NagiosEnterprises());
     }
 
     /**

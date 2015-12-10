@@ -95,7 +95,7 @@ class Kindle extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Amazon();
+        return new Company(new Company\Amazon());
     }
 
     /**

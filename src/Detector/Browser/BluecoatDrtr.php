@@ -97,7 +97,7 @@ class BluecoatDrtr extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\Bluecoat();
+        return new Company(new Company\Bluecoat());
     }
 
     /**

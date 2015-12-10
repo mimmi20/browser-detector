@@ -95,7 +95,7 @@ class W3m extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\SakamotoHironori();
+        return new Company(new Company\SakamotoHironori());
     }
 
     /**

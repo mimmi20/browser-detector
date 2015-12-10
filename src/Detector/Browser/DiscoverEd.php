@@ -97,7 +97,7 @@ class DiscoverEd extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\CreativeCommons();
+        return new Company(new Company\CreativeCommons());
     }
 
     /**

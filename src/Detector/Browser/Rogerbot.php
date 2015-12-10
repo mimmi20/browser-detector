@@ -97,7 +97,7 @@ class Rogerbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\SeoMoz();
+        return new Company(new Company\SeoMoz());
     }
 
     /**

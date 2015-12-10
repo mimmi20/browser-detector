@@ -97,7 +97,7 @@ class Wotbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Wotbox();
+        return new Company(new Company\Wotbox());
     }
 
     /**

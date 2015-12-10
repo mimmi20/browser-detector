@@ -95,7 +95,7 @@ class Vivaldi extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Vivaldi();
+        return new Company(new Company\Vivaldi());
     }
 
     /**

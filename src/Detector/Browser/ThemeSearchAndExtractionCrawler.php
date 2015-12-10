@@ -97,7 +97,7 @@ class ThemeSearchAndExtractionCrawler extends AbstractBrowser implements Browser
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

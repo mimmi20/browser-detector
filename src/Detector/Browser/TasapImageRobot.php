@@ -101,7 +101,7 @@ class TasapImageRobot extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

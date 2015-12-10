@@ -97,7 +97,7 @@ class PicmoleBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Picmole();
+        return new Company(new Company\Picmole());
     }
 
     /**

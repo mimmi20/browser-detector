@@ -97,7 +97,7 @@ class Elefent extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Elefent();
+        return new Company(new Company\Elefent());
     }
 
     /**

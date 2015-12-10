@@ -122,7 +122,7 @@ class Postbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Postbox();
+        return new Company(new Company\Postbox());
     }
 
     /**

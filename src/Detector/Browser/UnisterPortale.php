@@ -107,7 +107,7 @@ class UnisterPortale extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\Unister();
+        return new Company(new Company\Unister());
     }
 
     /**

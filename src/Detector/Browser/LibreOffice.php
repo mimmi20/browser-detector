@@ -95,7 +95,7 @@ class LibreOffice extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\TheDocumentFoundation();
+        return new Company(new Company\TheDocumentFoundation());
     }
 
     /**

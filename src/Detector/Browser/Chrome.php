@@ -172,7 +172,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

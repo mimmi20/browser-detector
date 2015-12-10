@@ -100,7 +100,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
      */
     public function getManufacturer()
     {
-        return new Company\YouWave();
+        return new Company(new Company\YouWave());
     }
 
     /**

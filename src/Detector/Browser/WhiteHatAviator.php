@@ -95,7 +95,7 @@ class WhiteHatAviator extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\WhiteHat();
+        return new Company(new Company\WhiteHat());
     }
 
     /**

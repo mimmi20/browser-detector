@@ -97,7 +97,7 @@ class Exabot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\DassaultSystemes();
+        return new Company(new Company\DassaultSystemes());
     }
 
     /**

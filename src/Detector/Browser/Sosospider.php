@@ -101,7 +101,7 @@ class Sosospider extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Soso();
+        return new Company(new Company\Soso());
     }
 
     /**

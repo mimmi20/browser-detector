@@ -144,7 +144,7 @@ class Medion extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company\Medion();
+        return new Company(new Company\Medion());
     }
 
     /**
@@ -154,7 +154,7 @@ class Medion extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getBrand()
     {
-        return new Company\Medion();
+        return new Company(new Company\Medion());
     }
 
     /**

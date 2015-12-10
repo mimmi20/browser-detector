@@ -97,7 +97,7 @@ class ScrapyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\ScrapyOrg();
+        return new Company(new Company\ScrapyOrg());
     }
 
     /**

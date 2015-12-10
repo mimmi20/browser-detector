@@ -99,7 +99,7 @@ class NokiaBrowser extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**

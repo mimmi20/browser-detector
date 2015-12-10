@@ -96,7 +96,7 @@ class Seokicks extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\TorstenRueckertInternetdienstleistungen();
+        return new Company(new Company\TorstenRueckertInternetdienstleistungen());
     }
 
     /**

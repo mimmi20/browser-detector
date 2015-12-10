@@ -93,7 +93,7 @@ class Sanyo extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Sanyo();
+        return new Company(new Company\Sanyo());
     }
 
     /**

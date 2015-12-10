@@ -100,7 +100,7 @@ class GooglePageSpeedInsights extends AbstractBrowser implements BrowserCalculat
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

@@ -97,7 +97,7 @@ class LtBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\LanguageTools();
+        return new Company(new Company\LanguageTools());
     }
 
     /**

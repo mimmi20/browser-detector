@@ -93,7 +93,7 @@ class NokiaProxyBrowser extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**

@@ -97,7 +97,7 @@ class Httrack extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\XavierRoche();
+        return new Company(new Company\XavierRoche());
     }
 
     /**

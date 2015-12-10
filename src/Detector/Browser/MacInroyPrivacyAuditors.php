@@ -97,7 +97,7 @@ class MacInroyPrivacyAuditors extends AbstractBrowser implements BrowserHasSpeci
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

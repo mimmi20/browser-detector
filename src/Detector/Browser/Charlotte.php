@@ -97,7 +97,7 @@ class Charlotte extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\Searchme();
+        return new Company(new Company\Searchme());
     }
 
     /**

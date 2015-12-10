@@ -97,7 +97,7 @@ class Bwc extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Bynergy();
+        return new Company(new Company\Bynergy());
     }
 
     /**

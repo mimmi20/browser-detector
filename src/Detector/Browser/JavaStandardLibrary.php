@@ -103,7 +103,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getManufacturer()
     {
-        return new Company\Oracle();
+        return new Company(new Company\Oracle());
     }
 
     /**

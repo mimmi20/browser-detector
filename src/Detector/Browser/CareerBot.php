@@ -97,7 +97,7 @@ class CareerBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\Careerx();
+        return new Company(new Company\Careerx());
     }
 
     /**

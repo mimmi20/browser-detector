@@ -100,7 +100,7 @@ class UnisterTesting extends AbstractBrowser implements BrowserCalculatesAlterna
      */
     public function getManufacturer()
     {
-        return new Company\Unister();
+        return new Company(new Company\Unister());
     }
 
     /**

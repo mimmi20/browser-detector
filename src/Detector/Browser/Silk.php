@@ -99,7 +99,7 @@ class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface,
      */
     public function getManufacturer()
     {
-        return new Company\Amazon();
+        return new Company(new Company\Amazon());
     }
 
     /**

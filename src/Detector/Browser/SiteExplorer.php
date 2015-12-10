@@ -97,7 +97,7 @@ class SiteExplorer extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\SiteExplorer();
+        return new Company(new Company\SiteExplorer());
     }
 
     /**

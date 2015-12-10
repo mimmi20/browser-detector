@@ -97,7 +97,7 @@ class Omniweb extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\OmniDevelopment();
+        return new Company(new Company\OmniDevelopment());
     }
 
     /**

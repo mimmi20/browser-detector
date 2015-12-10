@@ -97,7 +97,7 @@ class MagpieCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\Brandwatch();
+        return new Company(new Company\Brandwatch());
     }
 
     /**

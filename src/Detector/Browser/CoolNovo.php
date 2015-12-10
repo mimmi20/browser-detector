@@ -119,7 +119,7 @@ class CoolNovo extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

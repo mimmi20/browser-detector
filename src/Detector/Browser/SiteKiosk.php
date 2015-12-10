@@ -97,7 +97,7 @@ class SiteKiosk extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\Provisio();
+        return new Company(new Company\Provisio());
     }
 
     /**

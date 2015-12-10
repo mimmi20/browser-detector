@@ -128,7 +128,7 @@ class Camino extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**

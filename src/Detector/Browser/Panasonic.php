@@ -93,7 +93,7 @@ class Panasonic extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Panasonic();
+        return new Company(new Company\Panasonic());
     }
 
     /**

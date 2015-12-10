@@ -95,7 +95,7 @@ class Liebao extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Kingsoft();
+        return new Company(new Company\Kingsoft());
     }
 
     /**

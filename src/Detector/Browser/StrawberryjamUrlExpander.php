@@ -101,7 +101,7 @@ class StrawberryjamUrlExpander extends AbstractBrowser implements BrowserHasSpec
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

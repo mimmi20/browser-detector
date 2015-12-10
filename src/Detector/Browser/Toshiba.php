@@ -93,7 +93,7 @@ class Toshiba extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 
     /**

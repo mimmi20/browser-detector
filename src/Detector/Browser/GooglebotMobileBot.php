@@ -100,7 +100,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserCalculatesAlt
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

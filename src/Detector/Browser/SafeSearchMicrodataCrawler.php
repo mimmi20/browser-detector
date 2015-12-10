@@ -95,7 +95,7 @@ class SafeSearchMicrodataCrawler extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\AviraOperations();
+        return new Company(new Company\AviraOperations());
     }
 
     /**

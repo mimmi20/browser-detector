@@ -97,7 +97,7 @@ class Spiderlytics extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\Spiderlytics();
+        return new Company(new Company\Spiderlytics());
     }
 
     /**

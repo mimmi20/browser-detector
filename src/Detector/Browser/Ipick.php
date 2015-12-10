@@ -98,7 +98,7 @@ class Ipick extends CfNetworkBase implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

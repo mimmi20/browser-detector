@@ -142,7 +142,7 @@ class Sunbird extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**

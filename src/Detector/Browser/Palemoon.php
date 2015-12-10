@@ -126,7 +126,7 @@ class Palemoon extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\MoonchildProductions();
+        return new Company(new Company\MoonchildProductions());
     }
 
     /**

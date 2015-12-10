@@ -101,7 +101,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\GrapeshotLimited();
+        return new Company(new Company\GrapeshotLimited());
     }
 
     /**

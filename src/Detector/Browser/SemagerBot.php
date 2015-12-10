@@ -97,7 +97,7 @@ class SemagerBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Semager();
+        return new Company(new Company\Semager());
     }
 
     /**

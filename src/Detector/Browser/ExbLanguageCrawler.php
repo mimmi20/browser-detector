@@ -97,7 +97,7 @@ class ExbLanguageCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getManufacturer()
     {
-        return new Company\Exb();
+        return new Company(new Company\Exb());
     }
 
     /**

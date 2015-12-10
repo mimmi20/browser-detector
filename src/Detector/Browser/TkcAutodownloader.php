@@ -101,7 +101,7 @@ class TkcAutodownloader extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

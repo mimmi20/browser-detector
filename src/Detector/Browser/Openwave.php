@@ -109,7 +109,7 @@ class Openwave extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Myriad();
+        return new Company(new Company\Myriad());
     }
 
     /**

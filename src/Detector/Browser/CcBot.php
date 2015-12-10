@@ -95,7 +95,7 @@ class CcBot extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\CommonCrawlFoundation();
+        return new Company(new Company\CommonCrawlFoundation());
     }
 
     /**

@@ -95,7 +95,7 @@ class IzSearchBot extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\IzSearch();
+        return new Company(new Company\IzSearch());
     }
 
     /**

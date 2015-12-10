@@ -97,7 +97,7 @@ class GooBlog extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\NttResonant();
+        return new Company(new Company\NttResonant());
     }
 
     /**

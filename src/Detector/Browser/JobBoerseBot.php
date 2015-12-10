@@ -95,7 +95,7 @@ class JobBoerseBot extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Jobboerse();
+        return new Company(new Company\Jobboerse());
     }
 
     /**

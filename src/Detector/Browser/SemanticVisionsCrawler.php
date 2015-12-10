@@ -97,7 +97,7 @@ class SemanticVisionsCrawler extends AbstractBrowser implements BrowserHasSpecif
      */
     public function getManufacturer()
     {
-        return new Company\SemanticVisions();
+        return new Company(new Company\SemanticVisions());
     }
 
     /**

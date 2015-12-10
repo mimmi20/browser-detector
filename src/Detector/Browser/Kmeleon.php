@@ -117,7 +117,7 @@ class Kmeleon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\KmeleonBrowserOrg();
+        return new Company(new Company\KmeleonBrowserOrg());
     }
 
     /**

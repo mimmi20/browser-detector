@@ -95,7 +95,7 @@ class SamsungBrowser extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**

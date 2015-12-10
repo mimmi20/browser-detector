@@ -93,7 +93,7 @@ class DoCoMo extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\DoCoMo();
+        return new Company(new Company\DoCoMo());
     }
 
     /**

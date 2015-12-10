@@ -94,7 +94,7 @@ class TwitterApp extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Twitter();
+        return new Company(new Company\Twitter());
     }
 
     /**

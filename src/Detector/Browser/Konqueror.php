@@ -135,7 +135,7 @@ class Konqueror extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Kde();
+        return new Company(new Company\Kde());
     }
 
     /**

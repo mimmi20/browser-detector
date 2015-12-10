@@ -96,7 +96,7 @@ class ThumbSniper extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\ThomasSchulte();
+        return new Company(new Company\ThomasSchulte());
     }
 
     /**

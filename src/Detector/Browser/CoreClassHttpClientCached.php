@@ -97,7 +97,7 @@ class CoreClassHttpClientCached extends AbstractBrowser implements BrowserHasSpe
      */
     public function getManufacturer()
     {
-        return new Company\Unister();
+        return new Company(new Company\Unister());
     }
 
     /**

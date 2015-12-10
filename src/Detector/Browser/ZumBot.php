@@ -97,7 +97,7 @@ class ZumBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\ZuminternetCorp();
+        return new Company(new Company\ZuminternetCorp());
     }
 
     /**

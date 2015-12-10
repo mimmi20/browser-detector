@@ -97,7 +97,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\Sogou();
+        return new Company(new Company\Sogou());
     }
 
     /**

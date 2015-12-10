@@ -97,7 +97,7 @@ class SophoraLinkchecker extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getManufacturer()
     {
-        return new Company\Subshell();
+        return new Company(new Company\Subshell());
     }
 
     /**

@@ -97,7 +97,7 @@ class Bubing extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\LawDiUnimiIt();
+        return new Company(new Company\LawDiUnimiIt());
     }
 
     /**

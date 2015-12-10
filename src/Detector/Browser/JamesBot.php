@@ -95,7 +95,7 @@ class JamesBot extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Geskimo();
+        return new Company(new Company\Geskimo());
     }
 
     /**

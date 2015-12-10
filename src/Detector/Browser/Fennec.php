@@ -85,7 +85,7 @@ class Fennec extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**

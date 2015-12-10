@@ -97,7 +97,7 @@ class NetEstateCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\NetEstate();
+        return new Company(new Company\NetEstate());
     }
 
     /**

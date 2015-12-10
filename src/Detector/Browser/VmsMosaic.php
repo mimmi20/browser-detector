@@ -99,7 +99,7 @@ class VmsMosaic extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

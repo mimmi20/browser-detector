@@ -95,7 +95,7 @@ class Domnutch extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\NutchDe();
+        return new Company(new Company\NutchDe());
     }
 
     /**

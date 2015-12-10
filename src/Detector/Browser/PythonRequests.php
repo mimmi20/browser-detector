@@ -97,7 +97,7 @@ class PythonRequests extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\PythonSoftwareFoundation();
+        return new Company(new Company\PythonSoftwareFoundation());
     }
 
     /**

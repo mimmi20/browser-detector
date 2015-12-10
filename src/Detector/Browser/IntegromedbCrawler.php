@@ -97,7 +97,7 @@ class IntegromedbCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getManufacturer()
     {
-        return new Company\BiologicalNetworks();
+        return new Company(new Company\BiologicalNetworks());
     }
 
     /**

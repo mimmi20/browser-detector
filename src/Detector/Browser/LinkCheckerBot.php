@@ -97,7 +97,7 @@ class LinkCheckerBot extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\PwInternetSolutions();
+        return new Company(new Company\PwInternetSolutions());
     }
 
     /**

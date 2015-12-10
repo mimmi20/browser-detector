@@ -97,7 +97,7 @@ class MemoryBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\InternetMemoryFoundation();
+        return new Company(new Company\InternetMemoryFoundation());
     }
 
     /**

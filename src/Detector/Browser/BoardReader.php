@@ -112,7 +112,7 @@ class BoardReader extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\BoardReader();
+        return new Company(new Company\BoardReader());
     }
 
     /**

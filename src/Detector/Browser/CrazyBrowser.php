@@ -128,7 +128,7 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\CrazyBrowser();
+        return new Company(new Company\CrazyBrowser());
     }
 
     /**

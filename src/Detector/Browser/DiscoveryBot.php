@@ -97,7 +97,7 @@ class DiscoveryBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\DiscoveryEngine();
+        return new Company(new Company\DiscoveryEngine());
     }
 
     /**

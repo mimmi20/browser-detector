@@ -97,7 +97,7 @@ class TlsProber extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\Abonti();
+        return new Company(new Company\Abonti());
     }
 
     /**

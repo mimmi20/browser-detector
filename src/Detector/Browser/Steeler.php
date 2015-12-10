@@ -97,7 +97,7 @@ class Steeler extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Steeler();
+        return new Company(new Company\Steeler());
     }
 
     /**

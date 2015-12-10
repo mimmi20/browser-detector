@@ -97,7 +97,7 @@ class Socialradarbot extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company\Infegy();
+        return new Company(new Company\Infegy());
     }
 
     /**

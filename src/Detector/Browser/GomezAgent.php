@@ -100,7 +100,7 @@ class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternative
      */
     public function getManufacturer()
     {
-        return new Company\CompuwareApm();
+        return new Company(new Company\CompuwareApm());
     }
 
     /**

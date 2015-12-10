@@ -101,7 +101,7 @@ class Unisterbot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Unister();
+        return new Company(new Company\Unister());
     }
 
     /**

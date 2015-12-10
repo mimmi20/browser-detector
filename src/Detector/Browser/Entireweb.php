@@ -99,7 +99,7 @@ class Entireweb extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Entireweb();
+        return new Company(new Company\Entireweb());
     }
 
     /**

@@ -97,7 +97,7 @@ class TenFourFox extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\CameronKaiser();
+        return new Company(new Company\CameronKaiser());
     }
 
     /**

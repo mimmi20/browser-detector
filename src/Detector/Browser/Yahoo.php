@@ -105,7 +105,7 @@ class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Yahoo();
+        return new Company(new Company\Yahoo());
     }
 
     /**

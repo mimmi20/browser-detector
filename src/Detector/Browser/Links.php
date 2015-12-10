@@ -99,7 +99,7 @@ class Links extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\MikulasPatocka();
+        return new Company(new Company\MikulasPatocka());
     }
 
     /**

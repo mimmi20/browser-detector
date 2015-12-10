@@ -97,7 +97,7 @@ class Dreamweaver extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\Adobe();
+        return new Company(new Company\Adobe());
     }
 
     /**

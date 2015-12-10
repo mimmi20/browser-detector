@@ -97,7 +97,7 @@ class OpenVas extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Openvas();
+        return new Company(new Company\Openvas());
     }
 
     /**

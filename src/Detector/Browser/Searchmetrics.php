@@ -96,7 +96,7 @@ class Searchmetrics extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\Searchmetrics();
+        return new Company(new Company\Searchmetrics());
     }
 
     /**

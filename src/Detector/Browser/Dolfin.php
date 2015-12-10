@@ -114,7 +114,7 @@ class Dolfin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\MopoTab();
+        return new Company(new Company\MopoTab());
     }
 
     /**

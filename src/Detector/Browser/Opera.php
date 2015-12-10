@@ -121,7 +121,7 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
      */
     public function getManufacturer()
     {
-        return new Company\Opera();
+        return new Company(new Company\Opera());
     }
 
     /**

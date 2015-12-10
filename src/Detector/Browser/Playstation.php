@@ -102,7 +102,7 @@ class Playstation extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

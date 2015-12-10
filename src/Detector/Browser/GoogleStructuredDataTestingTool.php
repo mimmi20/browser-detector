@@ -97,7 +97,7 @@ class GoogleStructuredDataTestingTool extends AbstractBrowser implements Browser
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

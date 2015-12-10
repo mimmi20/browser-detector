@@ -95,7 +95,7 @@ class OpenOffice extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Apache();
+        return new Company(new Company\Apache());
     }
 
     /**

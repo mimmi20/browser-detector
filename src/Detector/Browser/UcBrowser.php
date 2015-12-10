@@ -95,7 +95,7 @@ class UcBrowser extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\UcWeb();
+        return new Company(new Company\UcWeb());
     }
 
     /**

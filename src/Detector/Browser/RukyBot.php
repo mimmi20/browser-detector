@@ -97,7 +97,7 @@ class RukyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Searchme();
+        return new Company(new Company\Searchme());
     }
 
     /**

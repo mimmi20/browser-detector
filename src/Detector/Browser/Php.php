@@ -97,7 +97,7 @@ class Php extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\PhpGroup();
+        return new Company(new Company\PhpGroup());
     }
 
     /**

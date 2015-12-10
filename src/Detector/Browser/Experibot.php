@@ -97,7 +97,7 @@ class Experibot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\AmirKrause();
+        return new Company(new Company\AmirKrause());
     }
 
     /**

@@ -93,7 +93,7 @@ class Nec extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Nec();
+        return new Company(new Company\Nec());
     }
 
     /**

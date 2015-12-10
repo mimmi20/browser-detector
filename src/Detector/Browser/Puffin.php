@@ -97,7 +97,7 @@ class Puffin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\CloudMosa();
+        return new Company(new Company\CloudMosa());
     }
 
     /**

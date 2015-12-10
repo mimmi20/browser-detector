@@ -97,7 +97,7 @@ class Daumoa extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\DaumCorporation();
+        return new Company(new Company\DaumCorporation());
     }
 
     /**

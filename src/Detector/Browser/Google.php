@@ -114,7 +114,7 @@ class Google extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

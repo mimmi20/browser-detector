@@ -97,7 +97,7 @@ class QuickiWikiBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company\QuickiWiki();
+        return new Company(new Company\QuickiWiki());
     }
 
     /**

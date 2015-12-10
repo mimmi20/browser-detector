@@ -97,7 +97,7 @@ class SeznamBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\Seznam();
+        return new Company(new Company\Seznam());
     }
 
     /**

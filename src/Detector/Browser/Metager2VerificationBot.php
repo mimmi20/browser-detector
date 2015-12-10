@@ -97,7 +97,7 @@ class Metager2VerificationBot extends AbstractBrowser implements BrowserHasSpeci
      */
     public function getManufacturer()
     {
-        return new Company\SumaEv();
+        return new Company(new Company\SumaEv());
     }
 
     /**

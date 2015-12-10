@@ -101,7 +101,7 @@ class WebmasterworldServerHeaderChecker extends AbstractBrowser implements Brows
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

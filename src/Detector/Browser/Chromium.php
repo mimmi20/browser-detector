@@ -119,7 +119,7 @@ class Chromium extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

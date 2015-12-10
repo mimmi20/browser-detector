@@ -101,7 +101,7 @@ class GoogleFontAnalysis extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

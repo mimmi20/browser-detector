@@ -114,7 +114,7 @@ class FacebookApp extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Facebook();
+        return new Company(new Company\Facebook());
     }
 
     /**

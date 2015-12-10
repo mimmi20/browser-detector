@@ -95,7 +95,7 @@ class OperaCoast extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Opera();
+        return new Company(new Company\Opera());
     }
 
     /**

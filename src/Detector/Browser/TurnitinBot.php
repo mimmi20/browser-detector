@@ -97,7 +97,7 @@ class TurnitinBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\Iparadigms();
+        return new Company(new Company\Iparadigms());
     }
 
     /**

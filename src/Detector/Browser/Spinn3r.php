@@ -97,7 +97,7 @@ class Spinn3r extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Tailrank();
+        return new Company(new Company\Tailrank());
     }
 
     /**

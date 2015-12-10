@@ -136,7 +136,7 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
      */
     public function getManufacturer()
     {
-        return new Company\Srware();
+        return new Company(new Company\Srware());
     }
 
     /**

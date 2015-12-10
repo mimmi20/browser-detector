@@ -97,7 +97,7 @@ class WindowsLiveMail extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**

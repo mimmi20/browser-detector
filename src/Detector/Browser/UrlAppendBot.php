@@ -97,7 +97,7 @@ class UrlAppendBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company\ProfoundNetworks();
+        return new Company(new Company\ProfoundNetworks());
     }
 
     /**

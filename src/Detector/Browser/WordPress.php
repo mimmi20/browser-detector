@@ -97,7 +97,7 @@ class WordPress extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company\WordPress();
+        return new Company(new Company\WordPress());
     }
 
     /**

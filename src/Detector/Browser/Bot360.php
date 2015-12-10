@@ -101,7 +101,7 @@ class Bot360 extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\OnlineMediaGroup();
+        return new Company(new Company\OnlineMediaGroup());
     }
 
     /**

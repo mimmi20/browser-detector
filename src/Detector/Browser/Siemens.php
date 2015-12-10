@@ -93,7 +93,7 @@ class Siemens extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Siemens();
+        return new Company(new Company\Siemens());
     }
 
     /**

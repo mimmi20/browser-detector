@@ -97,7 +97,7 @@ class DeepnetExplorer extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getManufacturer()
     {
-        return new Company\DeepnetSecurity();
+        return new Company(new Company\DeepnetSecurity());
     }
 
     /**

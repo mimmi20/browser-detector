@@ -97,7 +97,7 @@ class MailRu extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\MailRu();
+        return new Company(new Company\MailRu());
     }
 
     /**

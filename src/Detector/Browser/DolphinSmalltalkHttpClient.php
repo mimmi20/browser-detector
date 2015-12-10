@@ -97,7 +97,7 @@ class DolphinSmalltalkHttpClient extends AbstractBrowser implements BrowserHasSp
      */
     public function getManufacturer()
     {
-        return new Company\SteveWaring();
+        return new Company(new Company\SteveWaring());
     }
 
     /**

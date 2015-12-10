@@ -97,7 +97,7 @@ class OssProxy extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\Marketscore();
+        return new Company(new Company\Marketscore());
     }
 
     /**

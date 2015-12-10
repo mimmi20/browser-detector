@@ -97,7 +97,7 @@ class FhscanCore extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getManufacturer()
     {
-        return new Company\Tarasco();
+        return new Company(new Company\Tarasco());
     }
 
     /**

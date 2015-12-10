@@ -129,7 +129,7 @@ class NetNewsWire extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company\BlackPixel();
+        return new Company(new Company\BlackPixel());
     }
 
     /**

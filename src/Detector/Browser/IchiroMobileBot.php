@@ -100,7 +100,7 @@ class IchiroMobileBot extends AbstractBrowser implements BrowserCalculatesAltern
      */
     public function getManufacturer()
     {
-        return new Company\Ichiro();
+        return new Company(new Company\Ichiro());
     }
 
     /**

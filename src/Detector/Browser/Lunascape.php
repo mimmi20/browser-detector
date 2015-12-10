@@ -123,7 +123,7 @@ class Lunascape extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Lunascape();
+        return new Company(new Company\Lunascape());
     }
 
     /**

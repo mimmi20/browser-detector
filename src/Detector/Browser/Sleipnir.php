@@ -117,7 +117,7 @@ class Sleipnir extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Fenrir();
+        return new Company(new Company\Fenrir());
     }
 
     /**

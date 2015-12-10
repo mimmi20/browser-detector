@@ -93,7 +93,7 @@ class Sharp extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\Sharp();
+        return new Company(new Company\Sharp());
     }
 
     /**

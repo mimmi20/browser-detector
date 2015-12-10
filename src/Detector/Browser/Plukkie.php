@@ -97,7 +97,7 @@ class Plukkie extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\BotjeCom();
+        return new Company(new Company\BotjeCom());
     }
 
     /**

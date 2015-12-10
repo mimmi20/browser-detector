@@ -97,7 +97,7 @@ class PearHttpRequest2 extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\PhpGroup();
+        return new Company(new Company\PhpGroup());
     }
 
     /**

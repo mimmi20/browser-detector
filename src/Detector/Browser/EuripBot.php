@@ -97,7 +97,7 @@ class EuripBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company\Eurip();
+        return new Company(new Company\Eurip());
     }
 
     /**

@@ -97,7 +97,7 @@ class BoardReaderFaviconFetcher extends AbstractBrowser implements BrowserHasSpe
      */
     public function getManufacturer()
     {
-        return new Company\BoardReader();
+        return new Company(new Company\BoardReader());
     }
 
     /**

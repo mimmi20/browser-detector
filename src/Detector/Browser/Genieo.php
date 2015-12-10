@@ -97,7 +97,7 @@ class Genieo extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Genieo();
+        return new Company(new Company\Genieo());
     }
 
     /**
