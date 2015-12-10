@@ -73,6 +73,6 @@ class PalmOs extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Palm();
+        return new Company(new Company\Palm());
     }
 }

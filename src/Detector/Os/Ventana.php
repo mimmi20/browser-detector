@@ -73,6 +73,6 @@ class Ventana extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Ventana();
+        return new Company(new Company\Ventana());
     }
 }

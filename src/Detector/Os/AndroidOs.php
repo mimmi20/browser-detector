@@ -101,7 +101,7 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
      */
     public function getManufacturer()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

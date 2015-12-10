@@ -73,6 +73,6 @@ class Beos extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Access();
+        return new Company(new Company\Access());
     }
 }

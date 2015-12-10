@@ -73,6 +73,6 @@ class Hpux extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 }

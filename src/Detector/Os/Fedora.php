@@ -71,6 +71,6 @@ class Fedora extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Redhat();
+        return new Company(new Company\Redhat());
     }
 }

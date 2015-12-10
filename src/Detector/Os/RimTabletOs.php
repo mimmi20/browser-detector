@@ -73,6 +73,6 @@ class RimTabletOs extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 }

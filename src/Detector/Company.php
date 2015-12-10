@@ -57,7 +57,7 @@ class Company implements CompanyInterface
     /**
      * @param \BrowserDetector\Detector\Company\AbstractCompany $company
      */
-    public function __construct(AbstractCompany $company)
+    public function __construct(Company\AbstractCompany $company)
     {
         $this->name      = $company->name;
         $this->brandname = $company->brandname;

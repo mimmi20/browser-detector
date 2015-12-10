@@ -73,6 +73,6 @@ class Ubuntu extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Canonical();
+        return new Company(new Company\Canonical());
     }
 }

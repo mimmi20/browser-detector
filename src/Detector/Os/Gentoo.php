@@ -71,6 +71,6 @@ class Gentoo extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Gentoo();
+        return new Company(new Company\Gentoo());
     }
 }

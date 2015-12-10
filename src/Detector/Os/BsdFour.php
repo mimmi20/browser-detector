@@ -73,6 +73,6 @@ class BsdFour extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\BerkleyUniversity();
+        return new Company(new Company\BerkleyUniversity());
     }
 }

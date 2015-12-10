@@ -71,6 +71,6 @@ class NintendoOs extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 }

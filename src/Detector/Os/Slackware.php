@@ -73,6 +73,6 @@ class Slackware extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Slackware();
+        return new Company(new Company\Slackware());
     }
 }

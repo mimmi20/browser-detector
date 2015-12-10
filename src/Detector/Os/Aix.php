@@ -73,6 +73,6 @@ class Aix extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Ibm();
+        return new Company(new Company\Ibm());
     }
 }

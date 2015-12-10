@@ -71,6 +71,6 @@ class Symbianos extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\SymbianFoundation();
+        return new Company(new Company\SymbianFoundation());
     }
 }

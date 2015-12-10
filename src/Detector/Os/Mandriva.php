@@ -71,6 +71,6 @@ class Mandriva extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Mandriva();
+        return new Company(new Company\Mandriva());
     }
 }

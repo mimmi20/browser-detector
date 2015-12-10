@@ -71,6 +71,6 @@ class FirefoxOs extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\MozillaFoundation();
+        return new Company(new Company\MozillaFoundation());
     }
 }

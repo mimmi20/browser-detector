@@ -73,6 +73,6 @@ class Java extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Oracle();
+        return new Company(new Company\Oracle());
     }
 }

@@ -71,6 +71,6 @@ class Suse extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Suse();
+        return new Company(new Company\Suse());
     }
 }

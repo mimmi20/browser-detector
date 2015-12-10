@@ -85,6 +85,6 @@ class Macosx extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Apple();
+        return new Company(new Company\Apple());
     }
 }

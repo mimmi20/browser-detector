@@ -73,6 +73,6 @@ class Maemo extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\LinuxFoundation();
+        return new Company(new Company\LinuxFoundation());
     }
 }

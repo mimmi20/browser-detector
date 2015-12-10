@@ -73,6 +73,6 @@ class Os2 extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\Ibm();
+        return new Company(new Company\Ibm());
     }
 }

@@ -73,6 +73,6 @@ class FreeBsd extends AbstractOs
      */
     public function getManufacturer()
     {
-        return new Company\FreeBsdFoundation();
+        return new Company(new Company\FreeBsdFoundation());
     }
 }
