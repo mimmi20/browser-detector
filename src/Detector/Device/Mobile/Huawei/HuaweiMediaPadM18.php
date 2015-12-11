@@ -120,7 +120,7 @@ class HuaweiMediaPadM18 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -130,7 +130,7 @@ class HuaweiMediaPadM18 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**

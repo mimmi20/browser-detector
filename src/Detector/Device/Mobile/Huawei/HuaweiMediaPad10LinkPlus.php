@@ -120,7 +120,7 @@ class HuaweiMediaPad10LinkPlus extends AbstractDevice implements DeviceHasSpecif
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -130,7 +130,7 @@ class HuaweiMediaPad10LinkPlus extends AbstractDevice implements DeviceHasSpecif
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**

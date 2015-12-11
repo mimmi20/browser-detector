@@ -128,7 +128,7 @@ class HuaweiIdeos extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -138,7 +138,7 @@ class HuaweiIdeos extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**

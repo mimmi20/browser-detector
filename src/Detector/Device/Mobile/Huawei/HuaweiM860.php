@@ -120,7 +120,7 @@ class HuaweiM860 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -130,7 +130,7 @@ class HuaweiM860 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**

@@ -129,7 +129,7 @@ class HuaweiMediaPad10Link extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -139,7 +139,7 @@ class HuaweiMediaPad10Link extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**

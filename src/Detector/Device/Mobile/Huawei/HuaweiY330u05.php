@@ -118,7 +118,7 @@ class HuaweiY330u05 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -128,6 +128,6 @@ class HuaweiY330u05 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 }

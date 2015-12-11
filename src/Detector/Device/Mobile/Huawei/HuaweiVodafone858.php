@@ -124,7 +124,7 @@ class HuaweiVodafone858 extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -134,7 +134,7 @@ class HuaweiVodafone858 extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**

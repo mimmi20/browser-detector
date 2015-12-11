@@ -124,7 +124,7 @@ class HuaweiU8815 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -134,7 +134,7 @@ class HuaweiU8815 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**

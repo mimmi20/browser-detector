@@ -124,7 +124,7 @@ class HuaweiG5100100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
@@ -134,7 +134,7 @@ class HuaweiG5100100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Huawei();
+        return new Company(new Company\Huawei());
     }
 
     /**
