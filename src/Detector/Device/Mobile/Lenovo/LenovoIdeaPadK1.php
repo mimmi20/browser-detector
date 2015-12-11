@@ -124,7 +124,7 @@ class LenovoIdeaPadK1 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**
@@ -134,7 +134,7 @@ class LenovoIdeaPadK1 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**

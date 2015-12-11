@@ -120,7 +120,7 @@ class LenovoB6000h extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**
@@ -130,7 +130,7 @@ class LenovoB6000h extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**

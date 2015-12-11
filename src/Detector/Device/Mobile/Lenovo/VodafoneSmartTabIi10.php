@@ -120,7 +120,7 @@ class VodafoneSmartTabIi10 extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**
@@ -130,7 +130,7 @@ class VodafoneSmartTabIi10 extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function getBrand()
     {
-        return new Company\Vodafone();
+        return new Company(new Company\Vodafone());
     }
 
     /**

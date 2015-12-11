@@ -125,7 +125,7 @@ class LenovoA1107 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**
@@ -135,7 +135,7 @@ class LenovoA1107 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**

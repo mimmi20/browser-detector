@@ -135,7 +135,7 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**
@@ -145,7 +145,7 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**

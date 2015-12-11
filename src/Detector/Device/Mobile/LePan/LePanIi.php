@@ -110,7 +110,7 @@ class LePanIi extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\LePan();
+        return new Company(new Company\LePan());
     }
 
     /**
@@ -120,7 +120,7 @@ class LePanIi extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\LePan();
+        return new Company(new Company\LePan());
     }
 
     /**
