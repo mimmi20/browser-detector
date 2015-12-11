@@ -124,7 +124,7 @@ class Nokia5800XpressMusic extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**
@@ -134,7 +134,7 @@ class Nokia5800XpressMusic extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**

@@ -124,7 +124,7 @@ class NokiaLumia610 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**
@@ -134,7 +134,7 @@ class NokiaLumia610 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**

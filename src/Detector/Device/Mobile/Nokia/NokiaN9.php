@@ -131,7 +131,7 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**
@@ -141,7 +141,7 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**

@@ -118,7 +118,7 @@ class NokiaLumia830 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**
@@ -128,6 +128,6 @@ class NokiaLumia830 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 }

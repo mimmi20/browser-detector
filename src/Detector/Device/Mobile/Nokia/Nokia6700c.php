@@ -125,7 +125,7 @@ class Nokia6700c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     public function getManufacturer()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**
@@ -135,7 +135,7 @@ class Nokia6700c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     public function getBrand()
     {
-        return new Company\Nokia();
+        return new Company(new Company\Nokia());
     }
 
     /**
