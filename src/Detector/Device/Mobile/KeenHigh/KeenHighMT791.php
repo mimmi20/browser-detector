@@ -120,7 +120,7 @@ class KeenHighMT791 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\KeenHigh();
+        return new Company(new Company\KeenHigh());
     }
 
     /**
@@ -130,7 +130,7 @@ class KeenHighMT791 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\KeenHigh();
+        return new Company(new Company\KeenHigh());
     }
 
     /**

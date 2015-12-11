@@ -120,7 +120,7 @@ class JaytechTpcPa10 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Pipo();
+        return new Company(new Company\Jaytech());
     }
 
     /**
@@ -130,7 +130,7 @@ class JaytechTpcPa10 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getBrand()
     {
-        return new Company\Pipo();
+        return new Company(new Company\Jaytech());
     }
 
     /**

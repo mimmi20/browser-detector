@@ -120,7 +120,7 @@ class IntensoTab803 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Intenso();
+        return new Company(new Company\Intenso());
     }
 
     /**
@@ -130,7 +130,7 @@ class IntensoTab803 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Intenso();
+        return new Company(new Company\Intenso());
     }
 
     /**

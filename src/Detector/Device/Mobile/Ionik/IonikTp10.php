@@ -120,7 +120,7 @@ class IonikTp10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Ionik();
+        return new Company(new Company\Ionik());
     }
 
     /**
@@ -130,7 +130,7 @@ class IonikTp10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Ionik();
+        return new Company(new Company\Ionik());
     }
 
     /**

@@ -120,7 +120,7 @@ class KazamTrooper250 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Kazam();
+        return new Company(new Company\Kazam());
     }
 
     /**
@@ -130,7 +130,7 @@ class KazamTrooper250 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Kazam();
+        return new Company(new Company\Kazam());
     }
 
     /**

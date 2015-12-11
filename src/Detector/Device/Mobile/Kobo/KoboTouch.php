@@ -124,7 +124,7 @@ class KoboTouch extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Kobo();
+        return new Company(new Company\Kobo());
     }
 
     /**
@@ -134,7 +134,7 @@ class KoboTouch extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getBrand()
     {
-        return new Company\Kobo();
+        return new Company(new Company\Kobo());
     }
 
     /**

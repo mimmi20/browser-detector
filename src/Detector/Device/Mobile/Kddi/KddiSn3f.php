@@ -120,7 +120,7 @@ class KddiSn3f extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Kddi();
+        return new Company(new Company\Kddi());
     }
 
     /**
@@ -130,7 +130,7 @@ class KddiSn3f extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\Kddi();
+        return new Company(new Company\Kddi());
     }
 
     /**

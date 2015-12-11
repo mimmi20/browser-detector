@@ -118,7 +118,7 @@ class JollaSailfish extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Jolla();
+        return new Company(new Company\Jolla());
     }
 
     /**
@@ -128,6 +128,6 @@ class JollaSailfish extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Jolla();
+        return new Company(new Company\Jolla());
     }
 }

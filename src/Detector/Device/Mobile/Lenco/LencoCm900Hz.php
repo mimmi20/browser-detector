@@ -125,7 +125,7 @@ class LencoCm900Hz extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Lenco();
+        return new Company(new Company\Lenco());
     }
 
     /**
@@ -135,7 +135,7 @@ class LencoCm900Hz extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Lenco();
+        return new Company(new Company\Lenco());
     }
 
     /**
