@@ -118,7 +118,7 @@ class BlaupunktEndeavour101l extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Blaupunkt();
+        return new Company(new Company\Blaupunkt());
     }
 
     /**
@@ -128,6 +128,6 @@ class BlaupunktEndeavour101l extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Blaupunkt();
+        return new Company(new Company\Blaupunkt());
     }
 }

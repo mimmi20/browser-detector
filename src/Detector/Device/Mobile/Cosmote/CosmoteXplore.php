@@ -120,7 +120,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Cosmote();
+        return new Company(new Company\Cosmote());
     }
 
     /**
@@ -130,7 +130,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Cosmote();
+        return new Company(new Company\Cosmote());
     }
 
     /**

@@ -120,7 +120,7 @@ class DenverTad10023 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Denver();
+        return new Company(new Company\Denver());
     }
 
     /**
@@ -130,7 +130,7 @@ class DenverTad10023 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getBrand()
     {
-        return new Company\Denver();
+        return new Company(new Company\Denver());
     }
 
     /**

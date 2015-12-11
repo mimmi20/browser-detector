@@ -120,7 +120,7 @@ class ComagWtdr1018 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Comag();
+        return new Company(new Company\Comag());
     }
 
     /**
@@ -130,7 +130,7 @@ class ComagWtdr1018 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Comag();
+        return new Company(new Company\Comag());
     }
 
     /**

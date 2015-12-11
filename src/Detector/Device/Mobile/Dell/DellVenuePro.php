@@ -120,7 +120,7 @@ class DellVenuePro extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Dell();
+        return new Company(new Company\Dell());
     }
 
     /**
@@ -130,7 +130,7 @@ class DellVenuePro extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Dell();
+        return new Company(new Company\Dell());
     }
 
     /**

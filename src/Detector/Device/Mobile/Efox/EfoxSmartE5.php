@@ -120,7 +120,7 @@ class EfoxSmartE5 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Efox();
+        return new Company(new Company\Efox());
     }
 
     /**
@@ -130,7 +130,7 @@ class EfoxSmartE5 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Efox();
+        return new Company(new Company\Efox());
     }
 
     /**

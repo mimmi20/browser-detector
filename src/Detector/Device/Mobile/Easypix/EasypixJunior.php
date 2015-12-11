@@ -120,7 +120,7 @@ class EasypixJunior extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Easypix();
+        return new Company(new Company\Easypix());
     }
 
     /**
@@ -130,7 +130,7 @@ class EasypixJunior extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Easypix();
+        return new Company(new Company\Easypix());
     }
 
     /**

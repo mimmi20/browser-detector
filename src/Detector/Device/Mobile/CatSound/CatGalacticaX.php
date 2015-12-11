@@ -120,7 +120,7 @@ class CatGalacticaX extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\CatSound();
+        return new Company(new Company\CatSound());
     }
 
     /**
@@ -130,7 +130,7 @@ class CatGalacticaX extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\CatSound();
+        return new Company(new Company\CatSound());
     }
 
     /**

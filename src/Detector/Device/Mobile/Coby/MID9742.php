@@ -124,7 +124,7 @@ class MID9742 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Coby();
+        return new Company(new Company\Coby());
     }
 
     /**
@@ -134,7 +134,7 @@ class MID9742 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Coby();
+        return new Company(new Company\Coby());
     }
 
     /**

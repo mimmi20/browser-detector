@@ -120,7 +120,7 @@ class CreativeZiiLabsZiio10 extends AbstractDevice implements DeviceHasSpecificP
      */
     public function getManufacturer()
     {
-        return new Company\Creative();
+        return new Company(new Company\Creative());
     }
 
     /**
@@ -130,7 +130,7 @@ class CreativeZiiLabsZiio10 extends AbstractDevice implements DeviceHasSpecificP
      */
     public function getBrand()
     {
-        return new Company\Creative();
+        return new Company(new Company\Creative());
     }
 
     /**

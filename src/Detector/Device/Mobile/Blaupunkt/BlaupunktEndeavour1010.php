@@ -120,7 +120,7 @@ class BlaupunktEndeavour1010 extends AbstractDevice implements DeviceHasSpecific
      */
     public function getManufacturer()
     {
-        return new Company\Blaupunkt();
+        return new Company(new Company\Blaupunkt());
     }
 
     /**
@@ -130,7 +130,7 @@ class BlaupunktEndeavour1010 extends AbstractDevice implements DeviceHasSpecific
      */
     public function getBrand()
     {
-        return new Company\Blaupunkt();
+        return new Company(new Company\Blaupunkt());
     }
 
     /**

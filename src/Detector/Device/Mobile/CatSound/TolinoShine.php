@@ -120,7 +120,7 @@ class TolinoShine extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Longshine();
+        return new Company(new Company\Longshine());
     }
 
     /**
@@ -130,7 +130,7 @@ class TolinoShine extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Weltbild();
+        return new Company(new Company\Weltbild());
     }
 
     /**

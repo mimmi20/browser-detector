@@ -120,7 +120,7 @@ class Smartpad extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\EinsUndEins();
+        return new Company(new Company\EinsUndEins());
     }
 
     /**
@@ -130,7 +130,7 @@ class Smartpad extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\EinsUndEins();
+        return new Company(new Company\EinsUndEins());
     }
 
     /**

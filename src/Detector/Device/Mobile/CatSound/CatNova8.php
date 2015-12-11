@@ -125,7 +125,7 @@ class CatNova8 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\CatSound();
+        return new Company(new Company\CatSound());
     }
 
     /**
@@ -135,7 +135,7 @@ class CatNova8 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Weltbild();
+        return new Company(new Company\Weltbild());
     }
 
     /**

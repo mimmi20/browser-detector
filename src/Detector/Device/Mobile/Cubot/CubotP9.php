@@ -120,7 +120,7 @@ class CubotP9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Cubot();
+        return new Company(new Company\Cubot());
     }
 
     /**
@@ -130,7 +130,7 @@ class CubotP9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\Cubot();
+        return new Company(new Company\Cubot());
     }
 
     /**

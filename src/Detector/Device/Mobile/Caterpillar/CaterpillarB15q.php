@@ -120,7 +120,7 @@ class CaterpillarB15q extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Caterpillar();
+        return new Company(new Company\Caterpillar());
     }
 
     /**
@@ -130,7 +130,7 @@ class CaterpillarB15q extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Caterpillar();
+        return new Company(new Company\Caterpillar());
     }
 
     /**

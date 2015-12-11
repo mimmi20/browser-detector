@@ -120,7 +120,7 @@ class KinderTablet extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Weltbild();
+        return new Company(new Company\Weltbild());
     }
 
     /**
@@ -130,7 +130,7 @@ class KinderTablet extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Weltbild();
+        return new Company(new Company\Weltbild());
     }
 
     /**

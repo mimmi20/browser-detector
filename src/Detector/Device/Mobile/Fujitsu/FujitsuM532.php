@@ -120,7 +120,7 @@ class FujitsuM532 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Fujitsu();
+        return new Company(new Company\Fujitsu());
     }
 
     /**
@@ -130,7 +130,7 @@ class FujitsuM532 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Fujitsu();
+        return new Company(new Company\Fujitsu());
     }
 
     /**

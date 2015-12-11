@@ -124,7 +124,7 @@ class CreativeZiiLabsZiio7 extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     public function getManufacturer()
     {
-        return new Company\Creative();
+        return new Company(new Company\Creative());
     }
 
     /**
@@ -134,7 +134,7 @@ class CreativeZiiLabsZiio7 extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     public function getBrand()
     {
-        return new Company\Creative();
+        return new Company(new Company\Creative());
     }
 
     /**

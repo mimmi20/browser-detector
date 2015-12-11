@@ -120,7 +120,7 @@ class CubeU30gt2 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Cube();
+        return new Company(new Company\Cube());
     }
 
     /**
@@ -130,7 +130,7 @@ class CubeU30gt2 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Cube();
+        return new Company(new Company\Cube());
     }
 
     /**

@@ -120,7 +120,7 @@ class DoCoMoP900i extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\DoCoMo();
+        return new Company(new Company\DoCoMo());
     }
 
     /**
@@ -130,7 +130,7 @@ class DoCoMoP900i extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\DoCoMo();
+        return new Company(new Company\DoCoMo());
     }
 
     /**

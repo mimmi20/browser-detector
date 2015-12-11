@@ -120,7 +120,7 @@ class FeitengGth9500 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Feiteng();
+        return new Company(new Company\Feiteng());
     }
 
     /**
@@ -130,7 +130,7 @@ class FeitengGth9500 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getBrand()
     {
-        return new Company\Feiteng();
+        return new Company(new Company\Feiteng());
     }
 
     /**

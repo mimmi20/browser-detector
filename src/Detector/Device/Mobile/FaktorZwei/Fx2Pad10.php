@@ -120,7 +120,7 @@ class Fx2Pad10 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\FaktorZwei();
+        return new Company(new Company\FaktorZwei());
     }
 
     /**
@@ -130,7 +130,7 @@ class Fx2Pad10 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\FaktorZwei();
+        return new Company(new Company\FaktorZwei());
     }
 
     /**

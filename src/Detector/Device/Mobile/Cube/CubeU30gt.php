@@ -124,7 +124,7 @@ class CubeU30gt extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Cube();
+        return new Company(new Company\Cube());
     }
 
     /**
@@ -134,7 +134,7 @@ class CubeU30gt extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Cube();
+        return new Company(new Company\Cube());
     }
 
     /**

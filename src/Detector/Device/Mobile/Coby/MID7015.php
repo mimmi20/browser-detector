@@ -120,7 +120,7 @@ class MID7015 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Coby();
+        return new Company(new Company\Coby());
     }
 
     /**
@@ -130,7 +130,7 @@ class MID7015 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\Coby();
+        return new Company(new Company\Coby());
     }
 
     /**

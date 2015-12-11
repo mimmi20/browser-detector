@@ -120,7 +120,7 @@ class CatStarGate extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\CatSound();
+        return new Company(new Company\CatSound());
     }
 
     /**
@@ -130,7 +130,7 @@ class CatStarGate extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\CatSound();
+        return new Company(new Company\CatSound());
     }
 
     /**
