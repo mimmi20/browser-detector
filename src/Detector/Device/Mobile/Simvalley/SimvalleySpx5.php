@@ -128,7 +128,7 @@ class SimvalleySpx5 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Simvalley();
+        return new Company(new Company\Simvalley());
     }
 
     /**
@@ -138,7 +138,7 @@ class SimvalleySpx5 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\Simvalley();
+        return new Company(new Company\Simvalley());
     }
 
     /**

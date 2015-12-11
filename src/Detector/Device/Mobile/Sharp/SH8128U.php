@@ -120,7 +120,7 @@ class SH8128U extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Sharp();
+        return new Company(new Company\Sharp());
     }
 
     /**
@@ -130,7 +130,7 @@ class SH8128U extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\Sharp();
+        return new Company(new Company\Sharp());
     }
 
     /**

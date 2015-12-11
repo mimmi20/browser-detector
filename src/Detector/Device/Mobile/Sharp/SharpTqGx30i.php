@@ -120,7 +120,7 @@ class SharpTqGx30i extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Sharp();
+        return new Company(new Company\Sharp());
     }
 
     /**
@@ -130,7 +130,7 @@ class SharpTqGx30i extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Sharp();
+        return new Company(new Company\Sharp());
     }
 
     /**

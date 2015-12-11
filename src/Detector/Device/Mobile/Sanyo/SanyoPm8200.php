@@ -120,7 +120,7 @@ class SanyoPm8200 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Sanyo();
+        return new Company(new Company\Sanyo());
     }
 
     /**
@@ -130,7 +130,7 @@ class SanyoPm8200 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Sanyo();
+        return new Company(new Company\Sanyo());
     }
 
     /**

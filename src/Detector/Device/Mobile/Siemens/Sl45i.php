@@ -120,7 +120,7 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\Siemens();
+        return new Company(new Company\Siemens());
     }
 
     /**
@@ -130,7 +130,7 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\Siemens();
+        return new Company(new Company\Siemens());
     }
 
     /**
