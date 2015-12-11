@@ -118,7 +118,7 @@ class MotorolaXt1039 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**
@@ -128,6 +128,6 @@ class MotorolaXt1039 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 }

@@ -125,7 +125,7 @@ class MotorolaXt1032 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**
@@ -135,7 +135,7 @@ class MotorolaXt1032 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**

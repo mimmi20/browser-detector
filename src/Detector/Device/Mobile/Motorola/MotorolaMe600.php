@@ -120,7 +120,7 @@ class MotorolaMe600 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**
@@ -130,7 +130,7 @@ class MotorolaMe600 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**

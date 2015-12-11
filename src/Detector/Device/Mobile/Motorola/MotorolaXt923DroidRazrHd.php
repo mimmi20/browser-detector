@@ -120,7 +120,7 @@ class MotorolaXt923DroidRazrHd extends AbstractDevice implements DeviceHasSpecif
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**
@@ -130,7 +130,7 @@ class MotorolaXt923DroidRazrHd extends AbstractDevice implements DeviceHasSpecif
      */
     public function getBrand()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**

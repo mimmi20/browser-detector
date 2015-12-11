@@ -120,7 +120,7 @@ class MotorolaMilestoneXt720 extends AbstractDevice implements DeviceHasSpecific
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**
@@ -130,7 +130,7 @@ class MotorolaMilestoneXt720 extends AbstractDevice implements DeviceHasSpecific
      */
     public function getBrand()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**

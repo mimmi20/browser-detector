@@ -124,7 +124,7 @@ class MotorolaMilestone extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**
@@ -134,7 +134,7 @@ class MotorolaMilestone extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getBrand()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**
