@@ -141,7 +141,7 @@ class HtcSensationXlBeats extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
@@ -151,7 +151,7 @@ class HtcSensationXlBeats extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**

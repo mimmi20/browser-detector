@@ -137,7 +137,7 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasWurflK
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
@@ -147,7 +147,7 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasWurflK
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**

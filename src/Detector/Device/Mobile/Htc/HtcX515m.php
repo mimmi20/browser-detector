@@ -135,7 +135,7 @@ class HtcX515m extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
@@ -145,7 +145,7 @@ class HtcX515m extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**

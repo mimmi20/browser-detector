@@ -124,7 +124,7 @@ class HtcOneV extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
@@ -134,7 +134,7 @@ class HtcOneV extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**

@@ -118,7 +118,7 @@ class HtcDesire816g extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
@@ -128,6 +128,6 @@ class HtcDesire816g extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 }

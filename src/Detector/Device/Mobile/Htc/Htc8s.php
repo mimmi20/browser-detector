@@ -124,7 +124,7 @@ class Htc8s extends AbstractDevice implements DeviceHasWurflKeyInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
@@ -134,7 +134,7 @@ class Htc8s extends AbstractDevice implements DeviceHasWurflKeyInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**

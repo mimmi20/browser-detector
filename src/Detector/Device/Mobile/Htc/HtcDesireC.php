@@ -127,7 +127,7 @@ class HtcDesireC extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
@@ -137,7 +137,7 @@ class HtcDesireC extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**

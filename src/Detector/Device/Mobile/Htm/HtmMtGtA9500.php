@@ -124,7 +124,7 @@ class HtmMtGtA9500 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Htm();
+        return new Company(new Company\Htm());
     }
 
     /**
@@ -134,7 +134,7 @@ class HtmMtGtA9500 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Htm();
+        return new Company(new Company\Htm());
     }
 
     /**

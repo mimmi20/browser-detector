@@ -120,7 +120,7 @@ class HtcZ710SensationLs extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getManufacturer()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
@@ -130,7 +130,7 @@ class HtcZ710SensationLs extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getBrand()
     {
-        return new Company\Htc();
+        return new Company(new Company\Htc());
     }
 
     /**
