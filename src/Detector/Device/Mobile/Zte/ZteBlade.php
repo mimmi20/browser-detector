@@ -124,7 +124,7 @@ class ZteBlade extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Zte();
+        return new Company(new Company\Zte());
     }
 
     /**
@@ -134,7 +134,7 @@ class ZteBlade extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Zte();
+        return new Company(new Company\Zte());
     }
 
     /**

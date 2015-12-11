@@ -124,7 +124,7 @@ class WikoRainbow extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\Wiko();
+        return new Company(new Company\Wiko());
     }
 
     /**
@@ -134,7 +134,7 @@ class WikoRainbow extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getBrand()
     {
-        return new Company\Wiko();
+        return new Company(new Company\Wiko());
     }
 
     /**

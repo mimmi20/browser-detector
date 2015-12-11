@@ -120,7 +120,7 @@ class XiaomiMi2 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Xiaomi();
+        return new Company(new Company\Xiaomi());
     }
 
     /**
@@ -130,7 +130,7 @@ class XiaomiMi2 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Xiaomi();
+        return new Company(new Company\Xiaomi());
     }
 
     /**

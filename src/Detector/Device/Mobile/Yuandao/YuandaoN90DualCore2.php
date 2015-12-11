@@ -120,7 +120,7 @@ class YuandaoN90DualCore2 extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company\Yuandao();
+        return new Company(new Company\Yuandao());
     }
 
     /**
@@ -130,7 +130,7 @@ class YuandaoN90DualCore2 extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getBrand()
     {
-        return new Company\Yuandao();
+        return new Company(new Company\Yuandao());
     }
 
     /**

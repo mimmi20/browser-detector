@@ -120,7 +120,7 @@ class TriQMt0812e extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\TriQ();
+        return new Company(new Company\TriQ());
     }
 
     /**
@@ -130,7 +130,7 @@ class TriQMt0812e extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\TriQ();
+        return new Company(new Company\TriQ());
     }
 
     /**

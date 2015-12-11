@@ -120,7 +120,7 @@ class ZteSmart4G extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Vodafone();
+        return new Company(new Company\Vodafone());
     }
 
     /**
@@ -130,7 +130,7 @@ class ZteSmart4G extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Vodafone();
+        return new Company(new Company\Vodafone());
     }
 
     /**

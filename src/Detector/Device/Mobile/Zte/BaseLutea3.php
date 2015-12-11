@@ -120,7 +120,7 @@ class BaseLutea3 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Zte();
+        return new Company(new Company\Zte());
     }
 
     /**
@@ -130,7 +130,7 @@ class BaseLutea3 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Base();
+        return new Company(new Company\Base());
     }
 
     /**

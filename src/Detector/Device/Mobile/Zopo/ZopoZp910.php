@@ -120,7 +120,7 @@ class ZopoZp910 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Zopo();
+        return new Company(new Company\Zopo());
     }
 
     /**
@@ -130,7 +130,7 @@ class ZopoZp910 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Zopo();
+        return new Company(new Company\Zopo());
     }
 
     /**

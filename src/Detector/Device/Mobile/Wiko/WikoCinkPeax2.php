@@ -118,7 +118,7 @@ class WikoCinkPeax2 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Wiko();
+        return new Company(new Company\Wiko());
     }
 
     /**
@@ -128,6 +128,6 @@ class WikoCinkPeax2 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Wiko();
+        return new Company(new Company\Wiko());
     }
 }

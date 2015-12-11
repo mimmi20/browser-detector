@@ -120,7 +120,7 @@ class WikoDarkmoon extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Wiko();
+        return new Company(new Company\Wiko());
     }
 
     /**
@@ -130,7 +130,7 @@ class WikoDarkmoon extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Wiko();
+        return new Company(new Company\Wiko());
     }
 
     /**

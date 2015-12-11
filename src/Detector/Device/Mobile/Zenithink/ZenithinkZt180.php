@@ -129,7 +129,7 @@ class ZenithinkZt180 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Zenithink();
+        return new Company(new Company\Zenithink());
     }
 
     /**
@@ -139,7 +139,7 @@ class ZenithinkZt180 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Zenithink();
+        return new Company(new Company\Zenithink());
     }
 
     /**

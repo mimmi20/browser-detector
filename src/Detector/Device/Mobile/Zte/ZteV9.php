@@ -120,7 +120,7 @@ class ZteV9 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\Zte();
+        return new Company(new Company\Zte());
     }
 
     /**
@@ -130,7 +130,7 @@ class ZteV9 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\Zte();
+        return new Company(new Company\Zte());
     }
 
     /**

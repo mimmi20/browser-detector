@@ -120,7 +120,7 @@ class ZteSmartTab7 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Zte();
+        return new Company(new Company\Zte());
     }
 
     /**
@@ -130,7 +130,7 @@ class ZteSmartTab7 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Vodafone();
+        return new Company(new Company\Vodafone());
     }
 
     /**

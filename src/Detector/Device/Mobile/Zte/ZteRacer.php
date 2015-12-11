@@ -124,7 +124,7 @@ class ZteRacer extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Zte();
+        return new Company(new Company\Zte());
     }
 
     /**
@@ -134,7 +134,7 @@ class ZteRacer extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\Zte();
+        return new Company(new Company\Zte());
     }
 
     /**

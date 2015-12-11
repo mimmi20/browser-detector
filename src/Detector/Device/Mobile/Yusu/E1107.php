@@ -122,7 +122,7 @@ class E1107 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\Yusu();
+        return new Company(new Company\Yusu());
     }
 
     /**
@@ -132,7 +132,7 @@ class E1107 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\Yusu();
+        return new Company(new Company\Yusu());
     }
 
     /**

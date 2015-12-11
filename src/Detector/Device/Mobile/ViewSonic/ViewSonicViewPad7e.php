@@ -120,7 +120,7 @@ class ViewSonicViewPad7e extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getManufacturer()
     {
-        return new Company\ViewSonic();
+        return new Company(new Company\ViewSonic());
     }
 
     /**
@@ -130,7 +130,7 @@ class ViewSonicViewPad7e extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getBrand()
     {
-        return new Company\ViewSonic();
+        return new Company(new Company\ViewSonic());
     }
 
     /**

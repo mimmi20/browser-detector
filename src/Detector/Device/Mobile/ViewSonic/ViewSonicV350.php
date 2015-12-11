@@ -124,7 +124,7 @@ class ViewSonicV350 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\ViewSonic();
+        return new Company(new Company\ViewSonic());
     }
 
     /**
@@ -134,7 +134,7 @@ class ViewSonicV350 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\ViewSonic();
+        return new Company(new Company\ViewSonic());
     }
 
     /**

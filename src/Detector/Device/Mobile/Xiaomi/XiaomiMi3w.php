@@ -120,7 +120,7 @@ class XiaomiMi3w extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Xiaomi();
+        return new Company(new Company\Xiaomi());
     }
 
     /**
@@ -130,7 +130,7 @@ class XiaomiMi3w extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Xiaomi();
+        return new Company(new Company\Xiaomi());
     }
 
     /**

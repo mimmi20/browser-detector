@@ -120,7 +120,7 @@ class WonderMediaWm8650 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company\WonderMedia();
+        return new Company(new Company\WonderMedia());
     }
 
     /**
@@ -130,7 +130,7 @@ class WonderMediaWm8650 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company\WonderMedia();
+        return new Company(new Company\WonderMedia());
     }
 
     /**

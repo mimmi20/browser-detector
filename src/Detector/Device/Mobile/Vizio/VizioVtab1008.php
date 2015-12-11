@@ -120,7 +120,7 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Vizio();
+        return new Company(new Company\Vizio());
     }
 
     /**
@@ -130,7 +130,7 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Vizio();
+        return new Company(new Company\Vizio());
     }
 
     /**
