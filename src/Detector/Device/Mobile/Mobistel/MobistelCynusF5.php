@@ -120,7 +120,7 @@ class MobistelCynusF5 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Mobistel();
+        return new Company(new Company\Mobistel());
     }
 
     /**
@@ -130,7 +130,7 @@ class MobistelCynusF5 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Mobistel();
+        return new Company(new Company\Mobistel());
     }
 
     /**

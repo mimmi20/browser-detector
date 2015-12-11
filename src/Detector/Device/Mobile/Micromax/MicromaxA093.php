@@ -118,7 +118,7 @@ class MicromaxA093 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Micromax();
+        return new Company(new Company\Micromax());
     }
 
     /**
@@ -128,6 +128,6 @@ class MicromaxA093 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Micromax();
+        return new Company(new Company\Micromax());
     }
 }

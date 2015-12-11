@@ -124,7 +124,7 @@ class MobistelCynusT2 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Mobistel();
+        return new Company(new Company\Mobistel());
     }
 
     /**
@@ -134,7 +134,7 @@ class MobistelCynusT2 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getBrand()
     {
-        return new Company\Elson();
+        return new Company(new Company\Elson());
     }
 
     /**

@@ -120,7 +120,7 @@ class MeizuM9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Meizu();
+        return new Company(new Company\Meizu());
     }
 
     /**
@@ -130,7 +130,7 @@ class MeizuM9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\Meizu();
+        return new Company(new Company\Meizu());
     }
 
     /**

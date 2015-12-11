@@ -120,7 +120,7 @@ class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company\Miui();
+        return new Company(new Company\Miui());
     }
 
     /**
@@ -130,7 +130,7 @@ class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company\Miui();
+        return new Company(new Company\Miui());
     }
 
     /**
