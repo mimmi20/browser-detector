@@ -120,7 +120,7 @@ class SamsungGts5750eOrange extends AbstractDevice implements DeviceHasSpecificP
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -130,7 +130,7 @@ class SamsungGts5750eOrange extends AbstractDevice implements DeviceHasSpecificP
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**

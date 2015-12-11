@@ -124,7 +124,7 @@ class SamsungSmT520 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -134,7 +134,7 @@ class SamsungSmT520 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**

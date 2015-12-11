@@ -120,7 +120,7 @@ class SamsungShwM930bst extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -130,7 +130,7 @@ class SamsungShwM930bst extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**

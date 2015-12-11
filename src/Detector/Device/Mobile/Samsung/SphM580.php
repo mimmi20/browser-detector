@@ -120,7 +120,7 @@ class SphM580 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -130,7 +130,7 @@ class SphM580 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**

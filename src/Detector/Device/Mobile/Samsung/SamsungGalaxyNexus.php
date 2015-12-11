@@ -129,7 +129,7 @@ class SamsungGalaxyNexus extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -139,7 +139,7 @@ class SamsungGalaxyNexus extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**

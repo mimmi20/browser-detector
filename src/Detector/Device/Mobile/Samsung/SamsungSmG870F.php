@@ -118,7 +118,7 @@ class SamsungSmG870F extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -128,6 +128,6 @@ class SamsungSmG870F extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 }

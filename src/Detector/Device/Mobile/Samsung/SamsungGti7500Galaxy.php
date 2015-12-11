@@ -128,7 +128,7 @@ class SamsungGti7500Galaxy extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -138,7 +138,7 @@ class SamsungGti7500Galaxy extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**

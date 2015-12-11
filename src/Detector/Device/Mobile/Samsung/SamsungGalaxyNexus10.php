@@ -120,7 +120,7 @@ class SamsungGalaxyNexus10 extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -130,7 +130,7 @@ class SamsungGalaxyNexus10 extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function getBrand()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**
