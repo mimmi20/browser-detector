@@ -120,7 +120,7 @@ class PearlTouchletX7g extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getManufacturer()
     {
-        return new Company\Pearl();
+        return new Company(new Company\Pearl());
     }
 
     /**
@@ -130,7 +130,7 @@ class PearlTouchletX7g extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getBrand()
     {
-        return new Company\Pearl();
+        return new Company(new Company\Pearl());
     }
 
     /**

@@ -120,7 +120,7 @@ class PipoM6pro extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Pipo();
+        return new Company(new Company\Pipo());
     }
 
     /**
@@ -130,7 +130,7 @@ class PipoM6pro extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Pipo();
+        return new Company(new Company\Pipo());
     }
 
     /**

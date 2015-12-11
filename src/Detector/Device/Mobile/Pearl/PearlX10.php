@@ -124,7 +124,7 @@ class PearlX10 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Pearl();
+        return new Company(new Company\Pearl());
     }
 
     /**
@@ -134,7 +134,7 @@ class PearlX10 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\Pearl();
+        return new Company(new Company\Pearl());
     }
 
     /**

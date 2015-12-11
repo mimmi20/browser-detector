@@ -120,7 +120,7 @@ class PantechP2020 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Pantech();
+        return new Company(new Company\Pantech());
     }
 
     /**
@@ -130,7 +130,7 @@ class PantechP2020 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Pantech();
+        return new Company(new Company\Pantech());
     }
 
     /**

@@ -124,7 +124,7 @@ class PointOfViewProtab3xxl extends AbstractDevice implements DeviceHasWurflKeyI
      */
     public function getManufacturer()
     {
-        return new Company\PointOfView();
+        return new Company(new Company\PointOfView());
     }
 
     /**
@@ -134,7 +134,7 @@ class PointOfViewProtab3xxl extends AbstractDevice implements DeviceHasWurflKeyI
      */
     public function getBrand()
     {
-        return new Company\PointOfView();
+        return new Company(new Company\PointOfView());
     }
 
     /**

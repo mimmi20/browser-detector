@@ -120,7 +120,7 @@ class OP111 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\Olivetti();
+        return new Company(new Company\Olivetti());
     }
 
     /**
@@ -130,7 +130,7 @@ class OP111 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\Olivetti();
+        return new Company(new Company\Olivetti());
     }
 
     /**

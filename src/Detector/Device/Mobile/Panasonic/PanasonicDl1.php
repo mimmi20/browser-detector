@@ -120,7 +120,7 @@ class PanasonicDl1 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Panasonic();
+        return new Company(new Company\Panasonic());
     }
 
     /**
@@ -130,7 +130,7 @@ class PanasonicDl1 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Panasonic();
+        return new Company(new Company\Panasonic());
     }
 
     /**

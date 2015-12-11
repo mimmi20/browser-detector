@@ -124,7 +124,7 @@ class PandigitalSupernova extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function getManufacturer()
     {
-        return new Company\Pandigital();
+        return new Company(new Company\Pandigital());
     }
 
     /**
@@ -134,7 +134,7 @@ class PandigitalSupernova extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function getBrand()
     {
-        return new Company\Pandigital();
+        return new Company(new Company\Pandigital());
     }
 
     /**

@@ -120,7 +120,7 @@ class PandigitalNovel extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Pandigital();
+        return new Company(new Company\Pandigital());
     }
 
     /**
@@ -130,7 +130,7 @@ class PandigitalNovel extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Pandigital();
+        return new Company(new Company\Pandigital());
     }
 
     /**

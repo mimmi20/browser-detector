@@ -120,7 +120,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Oppo();
+        return new Company(new Company\Oppo());
     }
 
     /**
@@ -130,7 +130,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\Oppo();
+        return new Company(new Company\Oppo());
     }
 
     /**

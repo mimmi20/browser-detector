@@ -120,7 +120,7 @@ class PompW88 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Pomp();
+        return new Company(new Company\Pomp());
     }
 
     /**
@@ -130,7 +130,7 @@ class PompW88 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\Pomp();
+        return new Company(new Company\Pomp());
     }
 
     /**

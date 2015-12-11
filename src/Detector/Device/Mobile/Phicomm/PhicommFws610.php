@@ -120,7 +120,7 @@ class PhicommFws610 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Phicomm();
+        return new Company(new Company\Phicomm());
     }
 
     /**
@@ -130,7 +130,7 @@ class PhicommFws610 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Phicomm();
+        return new Company(new Company\Phicomm());
     }
 
     /**

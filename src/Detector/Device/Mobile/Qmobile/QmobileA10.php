@@ -122,7 +122,7 @@ class QmobileA10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Qmobile();
+        return new Company(new Company\Qmobile());
     }
 
     /**
@@ -132,7 +132,7 @@ class QmobileA10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Qmobile();
+        return new Company(new Company\Qmobile());
     }
 
     /**

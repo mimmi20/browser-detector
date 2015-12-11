@@ -120,7 +120,7 @@ class PrestigioPmp7280c3g extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company\Prestigio();
+        return new Company(new Company\Prestigio());
     }
 
     /**
@@ -130,7 +130,7 @@ class PrestigioPmp7280c3g extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getBrand()
     {
-        return new Company\Prestigio();
+        return new Company(new Company\Prestigio());
     }
 
     /**
