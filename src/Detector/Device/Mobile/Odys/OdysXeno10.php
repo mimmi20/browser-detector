@@ -120,7 +120,7 @@ class OdysXeno10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Odys();
+        return new Company(new Company\Odys());
     }
 
     /**
@@ -130,7 +130,7 @@ class OdysXeno10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Odys();
+        return new Company(new Company\Odys());
     }
 
     /**

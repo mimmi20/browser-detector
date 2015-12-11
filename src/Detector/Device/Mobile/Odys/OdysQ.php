@@ -120,7 +120,7 @@ class OdysQ extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\Odys();
+        return new Company(new Company\Odys());
     }
 
     /**
@@ -130,7 +130,7 @@ class OdysQ extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\Odys();
+        return new Company(new Company\Odys());
     }
 
     /**

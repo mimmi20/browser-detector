@@ -118,7 +118,7 @@ class OdysXelioPT2Pro extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Odys();
+        return new Company(new Company\Odys());
     }
 
     /**
@@ -128,6 +128,6 @@ class OdysXelioPT2Pro extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Odys();
+        return new Company(new Company\Odys());
     }
 }
