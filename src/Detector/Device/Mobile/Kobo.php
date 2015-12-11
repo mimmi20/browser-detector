@@ -140,7 +140,7 @@ class Kobo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getManufacturer()
     {
-        return new Company\Kobo();
+        return new Company(new Company\Kobo());
     }
 
     /**
@@ -150,7 +150,7 @@ class Kobo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getBrand()
     {
-        return new Company\Kobo();
+        return new Company(new Company\Kobo());
     }
 
     /**

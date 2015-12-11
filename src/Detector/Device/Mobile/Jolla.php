@@ -138,7 +138,7 @@ class Jolla extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Jolla();
+        return new Company(new Company\Jolla());
     }
 
     /**
@@ -148,6 +148,6 @@ class Jolla extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Jolla();
+        return new Company(new Company\Jolla());
     }
 }

@@ -120,7 +120,7 @@ class SonyKdl32hx755 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -130,7 +130,7 @@ class SonyKdl32hx755 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

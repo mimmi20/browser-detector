@@ -140,7 +140,7 @@ class Sanyo extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Sanyo();
+        return new Company(new Company\Sanyo());
     }
 
     /**
@@ -150,7 +150,7 @@ class Sanyo extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Sanyo();
+        return new Company(new Company\Sanyo());
     }
 
     /**

@@ -129,7 +129,7 @@ class Nec extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Nec();
+        return new Company(new Company\Nec());
     }
 
     /**
@@ -139,7 +139,7 @@ class Nec extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Nec();
+        return new Company(new Company\Nec());
     }
 
     /**

@@ -142,7 +142,7 @@ class Creative extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Creative();
+        return new Company(new Company\Creative());
     }
 
     /**
@@ -152,7 +152,7 @@ class Creative extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Creative();
+        return new Company(new Company\Creative());
     }
 
     /**

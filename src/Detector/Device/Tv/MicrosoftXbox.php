@@ -126,7 +126,7 @@ class MicrosoftXbox extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**
@@ -136,7 +136,7 @@ class MicrosoftXbox extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**

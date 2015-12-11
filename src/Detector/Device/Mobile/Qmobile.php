@@ -127,7 +127,7 @@ class Qmobile extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Qmobile();
+        return new Company(new Company\Qmobile());
     }
 
     /**
@@ -137,7 +137,7 @@ class Qmobile extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Qmobile();
+        return new Company(new Company\Qmobile());
     }
 
     /**

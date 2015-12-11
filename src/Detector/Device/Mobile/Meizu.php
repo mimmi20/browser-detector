@@ -140,7 +140,7 @@ class Meizu extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Meizu();
+        return new Company(new Company\Meizu());
     }
 
     /**
@@ -150,6 +150,6 @@ class Meizu extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Meizu();
+        return new Company(new Company\Meizu());
     }
 }

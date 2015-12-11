@@ -140,7 +140,7 @@ class KeenHigh extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\KeenHigh();
+        return new Company(new Company\KeenHigh());
     }
 
     /**
@@ -150,7 +150,7 @@ class KeenHigh extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\KeenHigh();
+        return new Company(new Company\KeenHigh());
     }
 
     /**

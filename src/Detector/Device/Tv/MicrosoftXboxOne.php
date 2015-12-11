@@ -122,7 +122,7 @@ class MicrosoftXboxOne extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**
@@ -132,7 +132,7 @@ class MicrosoftXboxOne extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getBrand()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**

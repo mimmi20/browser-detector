@@ -143,7 +143,7 @@ class Siemens extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Siemens();
+        return new Company(new Company\Siemens());
     }
 
     /**
@@ -153,6 +153,6 @@ class Siemens extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Siemens();
+        return new Company(new Company\Siemens());
     }
 }

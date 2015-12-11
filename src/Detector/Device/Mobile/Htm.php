@@ -144,7 +144,7 @@ class Htm extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function getManufacturer()
     {
-        return new Company\Htm();
+        return new Company(new Company\Htm());
     }
 
     /**
@@ -154,7 +154,7 @@ class Htm extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function getBrand()
     {
-        return new Company\Htm();
+        return new Company(new Company\Htm());
     }
 
     /**

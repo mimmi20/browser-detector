@@ -120,7 +120,7 @@ class Flytouch extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -130,7 +130,7 @@ class Flytouch extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

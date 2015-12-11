@@ -140,7 +140,7 @@ class Kddi extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Kddi();
+        return new Company(new Company\Kddi());
     }
 
     /**
@@ -150,6 +150,6 @@ class Kddi extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Kddi();
+        return new Company(new Company\Kddi());
     }
 }

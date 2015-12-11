@@ -142,7 +142,7 @@ class Nintendo extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**
@@ -152,7 +152,7 @@ class Nintendo extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**

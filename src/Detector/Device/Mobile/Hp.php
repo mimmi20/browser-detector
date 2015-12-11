@@ -154,7 +154,7 @@ class Hp extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 
     /**
@@ -164,6 +164,6 @@ class Hp extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 }

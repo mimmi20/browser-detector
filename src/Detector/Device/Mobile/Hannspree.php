@@ -140,7 +140,7 @@ class Hannspree extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Hannspree();
+        return new Company(new Company\Hannspree());
     }
 
     /**
@@ -150,7 +150,7 @@ class Hannspree extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getBrand()
     {
-        return new Company\Hannspree();
+        return new Company(new Company\Hannspree());
     }
 
     /**

@@ -145,7 +145,7 @@ class Hdc extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function getManufacturer()
     {
-        return new Company\Hdc();
+        return new Company(new Company\Hdc());
     }
 
     /**
@@ -155,7 +155,7 @@ class Hdc extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function getBrand()
     {
-        return new Company\Hdc();
+        return new Company(new Company\Hdc());
     }
 
     /**

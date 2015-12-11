@@ -152,7 +152,7 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**
@@ -162,7 +162,7 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getBrand()
     {
-        return new Company\Microsoft();
+        return new Company(new Company\Microsoft());
     }
 
     /**

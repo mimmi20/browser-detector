@@ -142,7 +142,7 @@ class Dell extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getManufacturer()
     {
-        return new Company\Dell();
+        return new Company(new Company\Dell());
     }
 
     /**
@@ -152,7 +152,7 @@ class Dell extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getBrand()
     {
-        return new Company\Dell();
+        return new Company(new Company\Dell());
     }
 
     /**

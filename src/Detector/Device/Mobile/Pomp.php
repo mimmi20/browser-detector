@@ -140,7 +140,7 @@ class Pomp extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Pomp();
+        return new Company(new Company\Pomp());
     }
 
     /**
@@ -150,6 +150,6 @@ class Pomp extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Pomp();
+        return new Company(new Company\Pomp());
     }
 }

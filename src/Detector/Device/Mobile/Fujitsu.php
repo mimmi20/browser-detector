@@ -140,7 +140,7 @@ class Fujitsu extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Fujitsu();
+        return new Company(new Company\Fujitsu());
     }
 
     /**
@@ -150,7 +150,7 @@ class Fujitsu extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Fujitsu();
+        return new Company(new Company\Fujitsu());
     }
 
     /**

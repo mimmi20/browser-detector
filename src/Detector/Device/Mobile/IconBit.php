@@ -140,7 +140,7 @@ class IconBit extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\IconBit();
+        return new Company(new Company\IconBit());
     }
 
     /**
@@ -150,6 +150,6 @@ class IconBit extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\IconBit();
+        return new Company(new Company\IconBit());
     }
 }

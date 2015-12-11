@@ -145,7 +145,7 @@ class Comag extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Comag();
+        return new Company(new Company\Comag());
     }
 
     /**
@@ -155,7 +155,7 @@ class Comag extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Comag();
+        return new Company(new Company\Comag());
     }
 
     /**

@@ -146,7 +146,7 @@ class Lenco extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Lenco();
+        return new Company(new Company\Lenco());
     }
 
     /**
@@ -156,7 +156,7 @@ class Lenco extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Lenco();
+        return new Company(new Company\Lenco());
     }
 
     /**

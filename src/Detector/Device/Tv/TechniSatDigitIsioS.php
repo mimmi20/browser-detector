@@ -120,7 +120,7 @@ class TechniSatDigitIsioS extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company\TechniSat();
+        return new Company(new Company\TechniSat());
     }
 
     /**
@@ -130,7 +130,7 @@ class TechniSatDigitIsioS extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getBrand()
     {
-        return new Company\TechniSat();
+        return new Company(new Company\TechniSat());
     }
 
     /**

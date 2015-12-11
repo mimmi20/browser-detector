@@ -148,7 +148,7 @@ class Sharp extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Sharp();
+        return new Company(new Company\Sharp());
     }
 
     /**
@@ -158,7 +158,7 @@ class Sharp extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Sharp();
+        return new Company(new Company\Sharp());
     }
 
     /**

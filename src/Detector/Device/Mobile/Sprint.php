@@ -142,7 +142,7 @@ class Sprint extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Sprint();
+        return new Company(new Company\Sprint());
     }
 
     /**
@@ -152,6 +152,6 @@ class Sprint extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Sprint();
+        return new Company(new Company\Sprint());
     }
 }

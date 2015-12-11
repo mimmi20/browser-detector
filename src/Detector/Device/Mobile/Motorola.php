@@ -162,7 +162,7 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**
@@ -172,7 +172,7 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Motorola();
+        return new Company(new Company\Motorola());
     }
 
     /**

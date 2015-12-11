@@ -140,7 +140,7 @@ class Pearl extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Pearl();
+        return new Company(new Company\Pearl());
     }
 
     /**
@@ -150,7 +150,7 @@ class Pearl extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Pearl();
+        return new Company(new Company\Pearl());
     }
 
     /**

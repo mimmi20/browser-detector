@@ -140,7 +140,7 @@ class Simvalley extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Simvalley();
+        return new Company(new Company\Simvalley());
     }
 
     /**
@@ -150,7 +150,7 @@ class Simvalley extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getBrand()
     {
-        return new Company\Simvalley();
+        return new Company(new Company\Simvalley());
     }
 
     /**

@@ -140,7 +140,7 @@ class PointOfView extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\PointOfView();
+        return new Company(new Company\PointOfView());
     }
 
     /**
@@ -150,7 +150,7 @@ class PointOfView extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getBrand()
     {
-        return new Company\PointOfView();
+        return new Company(new Company\PointOfView());
     }
 
     /**

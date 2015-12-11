@@ -120,7 +120,7 @@ class DlinkDsm380 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Dlink();
+        return new Company(new Company\Dlink());
     }
 
     /**
@@ -130,7 +130,7 @@ class DlinkDsm380 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Dlink();
+        return new Company(new Company\Dlink());
     }
 
     /**

@@ -145,7 +145,7 @@ class Caterpillar extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\Caterpillar();
+        return new Company(new Company\Caterpillar());
     }
 
     /**
@@ -155,7 +155,7 @@ class Caterpillar extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getBrand()
     {
-        return new Company\Caterpillar();
+        return new Company(new Company\Caterpillar());
     }
 
     /**

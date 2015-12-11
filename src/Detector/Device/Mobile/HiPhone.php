@@ -140,7 +140,7 @@ class HiPhone extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\HiPhone();
+        return new Company(new Company\HiPhone());
     }
 
     /**
@@ -150,7 +150,7 @@ class HiPhone extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\HiPhone();
+        return new Company(new Company\HiPhone());
     }
 
     /**

@@ -163,7 +163,7 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -173,7 +173,7 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Samsung();
+        return new Company(new Company\Samsung());
     }
 
     /**

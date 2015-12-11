@@ -140,7 +140,7 @@ class Denver extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company\Denver();
+        return new Company(new Company\Denver());
     }
 
     /**
@@ -150,7 +150,7 @@ class Denver extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getBrand()
     {
-        return new Company\Denver();
+        return new Company(new Company\Denver());
     }
 
     /**

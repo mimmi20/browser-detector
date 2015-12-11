@@ -145,7 +145,7 @@ class Phicomm extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Phicomm();
+        return new Company(new Company\Phicomm());
     }
 
     /**
@@ -155,7 +155,7 @@ class Phicomm extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Phicomm();
+        return new Company(new Company\Phicomm());
     }
 
     /**

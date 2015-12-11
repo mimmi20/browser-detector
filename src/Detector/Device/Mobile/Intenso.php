@@ -140,7 +140,7 @@ class Intenso extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Intenso();
+        return new Company(new Company\Intenso());
     }
 
     /**
@@ -150,7 +150,7 @@ class Intenso extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Intenso();
+        return new Company(new Company\Intenso());
     }
 
     /**

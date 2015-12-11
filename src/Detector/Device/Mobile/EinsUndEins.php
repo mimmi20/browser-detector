@@ -126,7 +126,7 @@ class EinsUndEins extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\EinsUndEins();
+        return new Company(new Company\EinsUndEins());
     }
 
     /**
@@ -136,7 +136,7 @@ class EinsUndEins extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getBrand()
     {
-        return new Company\EinsUndEins();
+        return new Company(new Company\EinsUndEins());
     }
 
     /**

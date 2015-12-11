@@ -147,7 +147,7 @@ class Olivetti extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Olivetti();
+        return new Company(new Company\Olivetti());
     }
 
     /**
@@ -157,7 +157,7 @@ class Olivetti extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Olivetti();
+        return new Company(new Company\Olivetti());
     }
 
     /**

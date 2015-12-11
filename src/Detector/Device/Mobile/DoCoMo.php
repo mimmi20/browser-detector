@@ -145,7 +145,7 @@ class DoCoMo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company\DoCoMo();
+        return new Company(new Company\DoCoMo());
     }
 
     /**
@@ -155,7 +155,7 @@ class DoCoMo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getBrand()
     {
-        return new Company\DoCoMo();
+        return new Company(new Company\DoCoMo());
     }
 
     /**

@@ -140,7 +140,7 @@ class Feiteng extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Feiteng();
+        return new Company(new Company\Feiteng());
     }
 
     /**
@@ -150,7 +150,7 @@ class Feiteng extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Feiteng();
+        return new Company(new Company\Feiteng());
     }
 
     /**

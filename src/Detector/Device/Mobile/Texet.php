@@ -140,7 +140,7 @@ class Texet extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Texet();
+        return new Company(new Company\Texet());
     }
 
     /**
@@ -150,7 +150,7 @@ class Texet extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Texet();
+        return new Company(new Company\Texet());
     }
 
     /**

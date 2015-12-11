@@ -142,7 +142,7 @@ class Blaupunkt extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Blaupunkt();
+        return new Company(new Company\Blaupunkt());
     }
 
     /**
@@ -152,7 +152,7 @@ class Blaupunkt extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getBrand()
     {
-        return new Company\Blaupunkt();
+        return new Company(new Company\Blaupunkt());
     }
 
     /**

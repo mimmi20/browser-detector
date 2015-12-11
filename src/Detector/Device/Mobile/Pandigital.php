@@ -140,7 +140,7 @@ class Pandigital extends AbstractDevice implements DeviceHasChildrenInterface, D
      */
     public function getManufacturer()
     {
-        return new Company\Pandigital();
+        return new Company(new Company\Pandigital());
     }
 
     /**
@@ -150,7 +150,7 @@ class Pandigital extends AbstractDevice implements DeviceHasChildrenInterface, D
      */
     public function getBrand()
     {
-        return new Company\Pandigital();
+        return new Company(new Company\Pandigital());
     }
 
     /**

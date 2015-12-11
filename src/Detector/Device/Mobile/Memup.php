@@ -126,7 +126,7 @@ class Memup extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Memup();
+        return new Company(new Company\Memup());
     }
 
     /**
@@ -136,7 +136,7 @@ class Memup extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Memup();
+        return new Company(new Company\Memup());
     }
 
     /**

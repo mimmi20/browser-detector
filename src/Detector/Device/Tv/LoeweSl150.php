@@ -120,7 +120,7 @@ class LoeweSl150 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Loewe();
+        return new Company(new Company\Loewe());
     }
 
     /**
@@ -130,7 +130,7 @@ class LoeweSl150 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Loewe();
+        return new Company(new Company\Loewe());
     }
 
     /**

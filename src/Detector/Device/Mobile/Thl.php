@@ -140,7 +140,7 @@ class Thl extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function getManufacturer()
     {
-        return new Company\Thl();
+        return new Company(new Company\Thl());
     }
 
     /**
@@ -150,7 +150,7 @@ class Thl extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function getBrand()
     {
-        return new Company\Thl();
+        return new Company(new Company\Thl());
     }
 
     /**

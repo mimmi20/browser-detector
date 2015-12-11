@@ -153,7 +153,7 @@ class Coby extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getManufacturer()
     {
-        return new Company\Coby();
+        return new Company(new Company\Coby());
     }
 
     /**
@@ -163,7 +163,7 @@ class Coby extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getBrand()
     {
-        return new Company\Coby();
+        return new Company(new Company\Coby());
     }
 
     /**

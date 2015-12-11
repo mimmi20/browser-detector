@@ -122,7 +122,7 @@ class WonderMedia extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\WonderMedia();
+        return new Company(new Company\WonderMedia());
     }
 
     /**
@@ -132,7 +132,7 @@ class WonderMedia extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getBrand()
     {
-        return new Company\WonderMedia();
+        return new Company(new Company\WonderMedia());
     }
 
     /**

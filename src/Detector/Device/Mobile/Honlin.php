@@ -146,7 +146,7 @@ class Honlin extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company\Honlin();
+        return new Company(new Company\Honlin());
     }
 
     /**
@@ -156,7 +156,7 @@ class Honlin extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getBrand()
     {
-        return new Company\Honlin();
+        return new Company(new Company\Honlin());
     }
 
     /**

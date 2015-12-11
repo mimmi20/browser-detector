@@ -152,7 +152,7 @@ class Prestigio extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Prestigio();
+        return new Company(new Company\Prestigio());
     }
 
     /**
@@ -162,7 +162,7 @@ class Prestigio extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getBrand()
     {
-        return new Company\Prestigio();
+        return new Company(new Company\Prestigio());
     }
 
     /**

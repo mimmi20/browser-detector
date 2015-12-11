@@ -156,7 +156,7 @@ class CatSound extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\CatSound();
+        return new Company(new Company\CatSound());
     }
 
     /**
@@ -166,7 +166,7 @@ class CatSound extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\CatSound();
+        return new Company(new Company\CatSound());
     }
 
     /**

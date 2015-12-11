@@ -140,7 +140,7 @@ class ViewSonic extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\ViewSonic();
+        return new Company(new Company\ViewSonic());
     }
 
     /**
@@ -150,7 +150,7 @@ class ViewSonic extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getBrand()
     {
-        return new Company\ViewSonic();
+        return new Company(new Company\ViewSonic());
     }
 
     /**

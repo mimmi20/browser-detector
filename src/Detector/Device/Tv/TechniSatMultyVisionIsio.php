@@ -120,7 +120,7 @@ class TechniSatMultyVisionIsio extends AbstractDevice implements DeviceHasSpecif
      */
     public function getManufacturer()
     {
-        return new Company\TechniSat();
+        return new Company(new Company\TechniSat());
     }
 
     /**
@@ -130,7 +130,7 @@ class TechniSatMultyVisionIsio extends AbstractDevice implements DeviceHasSpecif
      */
     public function getBrand()
     {
-        return new Company\TechniSat();
+        return new Company(new Company\TechniSat());
     }
 
     /**

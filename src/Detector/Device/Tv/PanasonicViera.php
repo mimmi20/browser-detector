@@ -118,7 +118,7 @@ class PanasonicViera extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Panasonic();
+        return new Company(new Company\Panasonic());
     }
 
     /**
@@ -128,6 +128,6 @@ class PanasonicViera extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Panasonic();
+        return new Company(new Company\Panasonic());
     }
 }

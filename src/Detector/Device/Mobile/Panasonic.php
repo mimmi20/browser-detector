@@ -140,7 +140,7 @@ class Panasonic extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Panasonic();
+        return new Company(new Company\Panasonic());
     }
 
     /**
@@ -150,7 +150,7 @@ class Panasonic extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getBrand()
     {
-        return new Company\Panasonic();
+        return new Company(new Company\Panasonic());
     }
 
     /**

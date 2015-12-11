@@ -120,7 +120,7 @@ class NetrangeMmh extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Netrange();
+        return new Company(new Company\Netrange());
     }
 
     /**
@@ -130,7 +130,7 @@ class NetrangeMmh extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Netrange();
+        return new Company(new Company\Netrange());
     }
 
     /**

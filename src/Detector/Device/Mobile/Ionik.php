@@ -140,7 +140,7 @@ class Ionik extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Ionik();
+        return new Company(new Company\Ionik());
     }
 
     /**
@@ -150,6 +150,6 @@ class Ionik extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Ionik();
+        return new Company(new Company\Ionik());
     }
 }

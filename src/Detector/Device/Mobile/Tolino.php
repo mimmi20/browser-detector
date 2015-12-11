@@ -122,7 +122,7 @@ class Tolino extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company\Tolino();
+        return new Company(new Company\Tolino());
     }
 
     /**
@@ -132,7 +132,7 @@ class Tolino extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getBrand()
     {
-        return new Company\Tolino();
+        return new Company(new Company\Tolino());
     }
 
     /**

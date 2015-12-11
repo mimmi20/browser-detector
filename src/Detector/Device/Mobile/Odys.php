@@ -136,7 +136,7 @@ class Odys extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getManufacturer()
     {
-        return new Company\Odys();
+        return new Company(new Company\Odys());
     }
 
     /**
@@ -146,7 +146,7 @@ class Odys extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getBrand()
     {
-        return new Company\Odys();
+        return new Company(new Company\Odys());
     }
 
     /**

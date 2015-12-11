@@ -140,7 +140,7 @@ class Easypix extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Easypix();
+        return new Company(new Company\Easypix());
     }
 
     /**
@@ -150,7 +150,7 @@ class Easypix extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Easypix();
+        return new Company(new Company\Easypix());
     }
 
     /**

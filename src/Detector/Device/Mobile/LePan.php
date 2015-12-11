@@ -140,7 +140,7 @@ class LePan extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\LePan();
+        return new Company(new Company\LePan());
     }
 
     /**
@@ -150,7 +150,7 @@ class LePan extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\LePan();
+        return new Company(new Company\LePan());
     }
 
     /**

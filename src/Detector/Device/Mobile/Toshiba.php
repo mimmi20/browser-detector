@@ -133,7 +133,7 @@ class Toshiba extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 
     /**
@@ -143,7 +143,7 @@ class Toshiba extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 
     /**

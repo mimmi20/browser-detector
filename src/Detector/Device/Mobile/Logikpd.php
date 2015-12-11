@@ -140,7 +140,7 @@ class Logikpd extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Logikpd();
+        return new Company(new Company\Logikpd());
     }
 
     /**
@@ -150,7 +150,7 @@ class Logikpd extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Logikpd();
+        return new Company(new Company\Logikpd());
     }
 
     /**

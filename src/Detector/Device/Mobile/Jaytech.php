@@ -145,7 +145,7 @@ class Jaytech extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Jaytech();
+        return new Company(new Company\Jaytech());
     }
 
     /**
@@ -155,7 +155,7 @@ class Jaytech extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Jaytech();
+        return new Company(new Company\Jaytech());
     }
 
     /**

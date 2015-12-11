@@ -146,7 +146,7 @@ class Yuandao extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Yuandao();
+        return new Company(new Company\Yuandao());
     }
 
     /**
@@ -156,7 +156,7 @@ class Yuandao extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Yuandao();
+        return new Company(new Company\Yuandao());
     }
 
     /**

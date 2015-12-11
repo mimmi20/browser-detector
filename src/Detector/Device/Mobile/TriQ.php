@@ -145,7 +145,7 @@ class TriQ extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getManufacturer()
     {
-        return new Company\TriQ();
+        return new Company(new Company\TriQ());
     }
 
     /**
@@ -155,7 +155,7 @@ class TriQ extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getBrand()
     {
-        return new Company\TriQ();
+        return new Company(new Company\TriQ());
     }
 
     /**

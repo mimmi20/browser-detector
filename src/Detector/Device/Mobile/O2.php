@@ -126,7 +126,7 @@ class O2 extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHas
      */
     public function getManufacturer()
     {
-        return new Company\O2();
+        return new Company(new Company\O2());
     }
 
     /**
@@ -136,7 +136,7 @@ class O2 extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHas
      */
     public function getBrand()
     {
-        return new Company\O2();
+        return new Company(new Company\O2());
     }
 
     /**

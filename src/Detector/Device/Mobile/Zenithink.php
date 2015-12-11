@@ -145,7 +145,7 @@ class Zenithink extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Zenithink();
+        return new Company(new Company\Zenithink());
     }
 
     /**
@@ -155,7 +155,7 @@ class Zenithink extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function getBrand()
     {
-        return new Company\Zenithink();
+        return new Company(new Company\Zenithink());
     }
 
     /**

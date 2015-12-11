@@ -140,7 +140,7 @@ class Neofonie extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Neofonie();
+        return new Company(new Company\Neofonie());
     }
 
     /**
@@ -150,7 +150,7 @@ class Neofonie extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Neofonie();
+        return new Company(new Company\Neofonie());
     }
 
     /**

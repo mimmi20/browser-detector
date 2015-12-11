@@ -125,7 +125,7 @@ class Technisat extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\TechniSat();
+        return new Company(new Company\TechniSat());
     }
 
     /**
@@ -135,7 +135,7 @@ class Technisat extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\TechniSat();
+        return new Company(new Company\TechniSat());
     }
 
     /**

@@ -126,7 +126,7 @@ class FaktorZwei extends AbstractDevice implements DeviceHasChildrenInterface, D
      */
     public function getManufacturer()
     {
-        return new Company\FaktorZwei();
+        return new Company(new Company\FaktorZwei());
     }
 
     /**
@@ -136,7 +136,7 @@ class FaktorZwei extends AbstractDevice implements DeviceHasChildrenInterface, D
      */
     public function getBrand()
     {
-        return new Company\FaktorZwei();
+        return new Company(new Company\FaktorZwei());
     }
 
     /**

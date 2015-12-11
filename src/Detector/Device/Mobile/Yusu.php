@@ -127,7 +127,7 @@ class Yusu extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getManufacturer()
     {
-        return new Company\Yusu();
+        return new Company(new Company\Yusu());
     }
 
     /**
@@ -137,7 +137,7 @@ class Yusu extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getBrand()
     {
-        return new Company\Yusu();
+        return new Company(new Company\Yusu());
     }
 
     /**

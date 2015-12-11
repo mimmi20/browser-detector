@@ -153,7 +153,7 @@ class TrekStor extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**
@@ -163,7 +163,7 @@ class TrekStor extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**

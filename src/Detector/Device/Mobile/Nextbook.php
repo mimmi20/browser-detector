@@ -122,7 +122,7 @@ class Nextbook extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Nextbook();
+        return new Company(new Company\Nextbook());
     }
 
     /**
@@ -132,7 +132,7 @@ class Nextbook extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Nextbook();
+        return new Company(new Company\Nextbook());
     }
 
     /**

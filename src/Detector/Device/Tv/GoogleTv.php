@@ -120,7 +120,7 @@ class GoogleTv extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -130,7 +130,7 @@ class GoogleTv extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

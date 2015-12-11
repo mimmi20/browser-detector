@@ -126,7 +126,7 @@ class Vizio extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Vizio();
+        return new Company(new Company\Vizio());
     }
 
     /**
@@ -136,7 +136,7 @@ class Vizio extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Vizio();
+        return new Company(new Company\Vizio());
     }
 
     /**

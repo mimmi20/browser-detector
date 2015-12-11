@@ -126,7 +126,7 @@ class Nvsbl extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getManufacturer()
     {
-        return new Company\Nvsbl();
+        return new Company(new Company\Nvsbl());
     }
 
     /**
@@ -136,7 +136,7 @@ class Nvsbl extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function getBrand()
     {
-        return new Company\Nvsbl();
+        return new Company(new Company\Nvsbl());
     }
 
     /**

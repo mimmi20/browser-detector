@@ -140,7 +140,7 @@ class Micromax extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Micromax();
+        return new Company(new Company\Micromax());
     }
 
     /**
@@ -150,6 +150,6 @@ class Micromax extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Micromax();
+        return new Company(new Company\Micromax());
     }
 }

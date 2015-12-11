@@ -140,7 +140,7 @@ class Mobistel extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Mobistel();
+        return new Company(new Company\Mobistel());
     }
 
     /**
@@ -150,7 +150,7 @@ class Mobistel extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Mobistel();
+        return new Company(new Company\Mobistel());
     }
 
     /**
