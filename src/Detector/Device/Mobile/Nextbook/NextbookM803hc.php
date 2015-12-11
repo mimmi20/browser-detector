@@ -124,7 +124,7 @@ class NextbookM803hc extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Nextbook();
+        return new Company(new Company\Nextbook());
     }
 
     /**
@@ -134,7 +134,7 @@ class NextbookM803hc extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Nextbook();
+        return new Company(new Company\Nextbook());
     }
 
     /**

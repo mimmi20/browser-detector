@@ -120,7 +120,7 @@ class NintendoWiiU extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**
@@ -130,7 +130,7 @@ class NintendoWiiU extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**

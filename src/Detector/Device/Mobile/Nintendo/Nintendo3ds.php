@@ -120,7 +120,7 @@ class Nintendo3ds extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**
@@ -130,7 +130,7 @@ class Nintendo3ds extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**

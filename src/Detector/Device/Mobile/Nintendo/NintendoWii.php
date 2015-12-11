@@ -124,7 +124,7 @@ class NintendoWii extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**
@@ -134,7 +134,7 @@ class NintendoWii extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**

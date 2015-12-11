@@ -120,7 +120,7 @@ class WeTab extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\WeTab();
+        return new Company(new Company\WeTab());
     }
 
     /**
@@ -130,7 +130,7 @@ class WeTab extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\WeTab();
+        return new Company(new Company\WeTab());
     }
 
     /**

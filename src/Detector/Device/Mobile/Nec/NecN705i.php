@@ -123,7 +123,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Nec();
+        return new Company(new Company\Nec());
     }
 
     /**
@@ -133,7 +133,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\Nec();
+        return new Company(new Company\Nec());
     }
 
     /**

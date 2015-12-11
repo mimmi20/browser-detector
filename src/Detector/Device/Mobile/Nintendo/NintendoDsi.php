@@ -125,7 +125,7 @@ class NintendoDsi extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**
@@ -135,7 +135,7 @@ class NintendoDsi extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     public function getBrand()
     {
-        return new Company\Nintendo();
+        return new Company(new Company\Nintendo());
     }
 
     /**
