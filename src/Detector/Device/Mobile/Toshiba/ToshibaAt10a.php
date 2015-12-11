@@ -118,7 +118,7 @@ class ToshibaAt10a extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 
     /**
@@ -128,6 +128,6 @@ class ToshibaAt10a extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 }

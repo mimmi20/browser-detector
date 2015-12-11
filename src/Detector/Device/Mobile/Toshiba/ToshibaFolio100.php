@@ -123,7 +123,7 @@ class ToshibaFolio100 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 
     /**
@@ -133,7 +133,7 @@ class ToshibaFolio100 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 
     /**

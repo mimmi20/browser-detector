@@ -129,7 +129,7 @@ class ToshibaAt300 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     public function getManufacturer()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 
     /**
@@ -139,7 +139,7 @@ class ToshibaAt300 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     public function getBrand()
     {
-        return new Company\Toshiba();
+        return new Company(new Company\Toshiba());
     }
 
     /**
