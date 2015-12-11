@@ -122,7 +122,7 @@ class TechnisatTechnipad103g extends AbstractDevice implements DeviceHasSpecific
      */
     public function getManufacturer()
     {
-        return new Company\TechniSat();
+        return new Company(new Company\TechniSat());
     }
 
     /**
@@ -132,7 +132,7 @@ class TechnisatTechnipad103g extends AbstractDevice implements DeviceHasSpecific
      */
     public function getBrand()
     {
-        return new Company\TechniSat();
+        return new Company(new Company\TechniSat());
     }
 
     /**

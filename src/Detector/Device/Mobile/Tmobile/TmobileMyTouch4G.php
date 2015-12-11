@@ -124,7 +124,7 @@ class TmobileMyTouch4G extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getManufacturer()
     {
-        return new Company\Tmobile();
+        return new Company(new Company\Tmobile());
     }
 
     /**
@@ -134,7 +134,7 @@ class TmobileMyTouch4G extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getBrand()
     {
-        return new Company\Tmobile();
+        return new Company(new Company\Tmobile());
     }
 
     /**

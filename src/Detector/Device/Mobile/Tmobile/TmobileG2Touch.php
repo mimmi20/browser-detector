@@ -124,7 +124,7 @@ class TmobileG2Touch extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Tmobile();
+        return new Company(new Company\Tmobile());
     }
 
     /**
@@ -134,7 +134,7 @@ class TmobileG2Touch extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Tmobile();
+        return new Company(new Company\Tmobile());
     }
 
     /**

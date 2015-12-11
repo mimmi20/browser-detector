@@ -120,7 +120,7 @@ class StarN9500 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Star();
+        return new Company(new Company\Star());
     }
 
     /**
@@ -130,7 +130,7 @@ class StarN9500 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Star();
+        return new Company(new Company\Star());
     }
 
     /**

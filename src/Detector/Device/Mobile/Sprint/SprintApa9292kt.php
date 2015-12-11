@@ -120,7 +120,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Sprint();
+        return new Company(new Company\Sprint());
     }
 
     /**
@@ -130,7 +130,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Sprint();
+        return new Company(new Company\Sprint());
     }
 
     /**

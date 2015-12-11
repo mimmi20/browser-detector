@@ -120,7 +120,7 @@ class TexetNaviPad extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Texet();
+        return new Company(new Company\Texet());
     }
 
     /**
@@ -130,7 +130,7 @@ class TexetNaviPad extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Texet();
+        return new Company(new Company\Texet());
     }
 
     /**

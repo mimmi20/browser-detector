@@ -120,7 +120,7 @@ class ThlW8 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\Thl();
+        return new Company(new Company\Thl());
     }
 
     /**
@@ -130,7 +130,7 @@ class ThlW8 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\Thl();
+        return new Company(new Company\Thl());
     }
 
     /**

@@ -120,7 +120,7 @@ class TolinoTab89 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Tolino();
+        return new Company(new Company\Tolino());
     }
 
     /**
@@ -130,7 +130,7 @@ class TolinoTab89 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Tolino();
+        return new Company(new Company\Tolino());
     }
 
     /**

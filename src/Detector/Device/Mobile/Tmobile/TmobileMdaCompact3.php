@@ -120,7 +120,7 @@ class TmobileMdaCompact3 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getManufacturer()
     {
-        return new Company\Tmobile();
+        return new Company(new Company\Tmobile());
     }
 
     /**
@@ -130,7 +130,7 @@ class TmobileMdaCompact3 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getBrand()
     {
-        return new Company\Tmobile();
+        return new Company(new Company\Tmobile());
     }
 
     /**

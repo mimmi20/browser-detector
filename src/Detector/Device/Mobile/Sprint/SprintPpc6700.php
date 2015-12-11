@@ -120,7 +120,7 @@ class SprintPpc6700 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\Sprint();
+        return new Company(new Company\Sprint());
     }
 
     /**
@@ -130,7 +130,7 @@ class SprintPpc6700 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Sprint();
+        return new Company(new Company\Sprint());
     }
 
     /**
