@@ -120,7 +120,7 @@ class HannspreeHannspad extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company\Hannspree();
+        return new Company(new Company\Hannspree());
     }
 
     /**
@@ -130,7 +130,7 @@ class HannspreeHannspad extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company\Hannspree();
+        return new Company(new Company\Hannspree());
     }
 
     /**

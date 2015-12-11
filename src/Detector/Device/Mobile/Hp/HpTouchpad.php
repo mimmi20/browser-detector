@@ -124,7 +124,7 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 
     /**
@@ -134,7 +134,7 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 
     /**

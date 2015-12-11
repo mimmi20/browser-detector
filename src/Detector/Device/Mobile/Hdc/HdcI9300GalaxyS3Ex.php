@@ -120,7 +120,7 @@ class HdcI9300GalaxyS3Ex extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getManufacturer()
     {
-        return new Company\Hdc();
+        return new Company(new Company\Hdc());
     }
 
     /**
@@ -130,7 +130,7 @@ class HdcI9300GalaxyS3Ex extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getBrand()
     {
-        return new Company\Hdc();
+        return new Company(new Company\Hdc());
     }
 
     /**

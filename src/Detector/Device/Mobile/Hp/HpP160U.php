@@ -125,7 +125,7 @@ class HpP160U extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 
     /**
@@ -135,7 +135,7 @@ class HpP160U extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 
     /**

@@ -137,7 +137,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     public function getManufacturer()
     {
         if (null === $this->manufacturer) {
-            return new Company\Palm();
+            return new Company(new Company\Palm());
         }
 
         return $this->manufacturer;
@@ -151,7 +151,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     public function getBrand()
     {
         if (null === $this->brand) {
-            return new Company\Palm();
+            return new Company(new Company\Palm());
         }
 
         return $this->brand;

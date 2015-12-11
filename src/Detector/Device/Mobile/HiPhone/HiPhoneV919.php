@@ -120,7 +120,7 @@ class HiPhoneV919 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\HiPhone();
+        return new Company(new Company\HiPhone());
     }
 
     /**
@@ -130,7 +130,7 @@ class HiPhoneV919 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\HiPhone();
+        return new Company(new Company\HiPhone());
     }
 
     /**

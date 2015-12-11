@@ -120,7 +120,7 @@ class HpSlate10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 
     /**
@@ -130,7 +130,7 @@ class HpSlate10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 
     /**

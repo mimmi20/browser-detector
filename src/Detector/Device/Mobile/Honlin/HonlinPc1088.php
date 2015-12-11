@@ -119,7 +119,7 @@ class HonlinPc1088 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Honlin();
+        return new Company(new Company\Honlin());
     }
 
     /**
@@ -129,6 +129,6 @@ class HonlinPc1088 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Honlin();
+        return new Company(new Company\Honlin());
     }
 }

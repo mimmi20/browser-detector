@@ -120,7 +120,7 @@ class PalmTx extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Palm();
+        return new Company(new Company\Palm());
     }
 
     /**
@@ -130,7 +130,7 @@ class PalmTx extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function getBrand()
     {
-        return new Company\Palm();
+        return new Company(new Company\Palm());
     }
 
     /**

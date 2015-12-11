@@ -126,7 +126,7 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Palm();
+        return new Company(new Company\Palm());
     }
 
     /**
@@ -136,7 +136,7 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Palm();
+        return new Company(new Company\Palm());
     }
 
     /**
