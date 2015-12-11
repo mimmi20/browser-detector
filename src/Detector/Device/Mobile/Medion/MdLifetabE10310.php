@@ -120,7 +120,7 @@ class MdLifetabE10310 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Medion();
+        return new Company(new Company\Medion());
     }
 
     /**
@@ -130,7 +130,7 @@ class MdLifetabE10310 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Medion();
+        return new Company(new Company\Medion());
     }
 
     /**

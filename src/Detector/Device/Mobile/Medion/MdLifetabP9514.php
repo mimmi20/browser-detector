@@ -125,7 +125,7 @@ class MdLifetabP9514 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Medion();
+        return new Company(new Company\Medion());
     }
 
     /**
@@ -135,7 +135,7 @@ class MdLifetabP9514 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Medion();
+        return new Company(new Company\Medion());
     }
 
     /**

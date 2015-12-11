@@ -118,7 +118,7 @@ class MdLifetabS831x extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 
     /**
@@ -128,6 +128,6 @@ class MdLifetabS831x extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Lenovo();
+        return new Company(new Company\Lenovo());
     }
 }

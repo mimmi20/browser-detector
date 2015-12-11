@@ -118,7 +118,7 @@ class MdLifetabP891x extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Medion();
+        return new Company(new Company\Medion());
     }
 
     /**
@@ -128,6 +128,6 @@ class MdLifetabP891x extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Medion();
+        return new Company(new Company\Medion());
     }
 }
