@@ -124,7 +124,7 @@ class Lgp700 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -134,7 +134,7 @@ class Lgp700 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     public function getBrand()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**

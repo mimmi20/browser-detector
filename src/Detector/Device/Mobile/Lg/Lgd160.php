@@ -118,7 +118,7 @@ class Lgd160 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -128,6 +128,6 @@ class Lgd160 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 }

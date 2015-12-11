@@ -125,7 +125,7 @@ class LgNexus4 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -135,7 +135,7 @@ class LgNexus4 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

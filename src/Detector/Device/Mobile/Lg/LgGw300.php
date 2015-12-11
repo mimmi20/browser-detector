@@ -119,7 +119,7 @@ class LgGw300 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -129,7 +129,7 @@ class LgGw300 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**

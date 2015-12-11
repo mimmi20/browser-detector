@@ -120,7 +120,7 @@ class Lgms690 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -130,7 +130,7 @@ class Lgms690 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function getBrand()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**

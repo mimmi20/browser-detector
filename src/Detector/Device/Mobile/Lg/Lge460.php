@@ -120,7 +120,7 @@ class Lge460 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -130,7 +130,7 @@ class Lge460 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function getBrand()
     {
-        return new Company\Lg();
+        return new Company(new Company\Lg());
     }
 
     /**

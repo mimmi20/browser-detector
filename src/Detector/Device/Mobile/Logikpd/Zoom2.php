@@ -120,7 +120,7 @@ class Zoom2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getManufacturer()
     {
-        return new Company\Logikpd();
+        return new Company(new Company\Logikpd());
     }
 
     /**
@@ -130,7 +130,7 @@ class Zoom2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function getBrand()
     {
-        return new Company\Logikpd();
+        return new Company(new Company\Logikpd());
     }
 
     /**
