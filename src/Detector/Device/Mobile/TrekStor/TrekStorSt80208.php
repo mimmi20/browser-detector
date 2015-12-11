@@ -120,7 +120,7 @@ class TrekStorSt80208 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**
@@ -130,6 +130,6 @@ class TrekStorSt80208 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 }

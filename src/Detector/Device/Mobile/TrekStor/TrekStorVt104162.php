@@ -126,7 +126,7 @@ class TrekStorVt104162 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getManufacturer()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**
@@ -136,7 +136,7 @@ class TrekStorVt104162 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getBrand()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**

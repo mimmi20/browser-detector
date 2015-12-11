@@ -122,7 +122,7 @@ class TrekStorSt102162 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getManufacturer()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**
@@ -132,7 +132,7 @@ class TrekStorSt102162 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getBrand()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**

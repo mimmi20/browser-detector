@@ -122,7 +122,7 @@ class TrekStorBreeze10Quad extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function getManufacturer()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**
@@ -132,7 +132,7 @@ class TrekStorBreeze10Quad extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function getBrand()
     {
-        return new Company\TrekStor();
+        return new Company(new Company\TrekStor());
     }
 
     /**
