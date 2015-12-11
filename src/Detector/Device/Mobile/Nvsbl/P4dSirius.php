@@ -120,7 +120,7 @@ class P4dSirius extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Nvsbl();
+        return new Company(new Company\Nvsbl());
     }
 
     /**
@@ -130,7 +130,7 @@ class P4dSirius extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Nvsbl();
+        return new Company(new Company\Nvsbl());
     }
 
     /**

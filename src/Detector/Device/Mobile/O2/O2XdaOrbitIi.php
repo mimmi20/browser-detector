@@ -120,7 +120,7 @@ class O2XdaOrbitIi extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\O2();
+        return new Company(new Company\O2());
     }
 
     /**
@@ -130,7 +130,7 @@ class O2XdaOrbitIi extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\O2();
+        return new Company(new Company\O2());
     }
 
     /**
