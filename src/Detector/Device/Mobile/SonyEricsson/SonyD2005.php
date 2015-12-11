@@ -126,7 +126,7 @@ class SonyD2005 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -136,7 +136,7 @@ class SonyD2005 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

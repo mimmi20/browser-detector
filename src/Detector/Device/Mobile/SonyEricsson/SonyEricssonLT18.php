@@ -124,7 +124,7 @@ class SonyEricssonLT18 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
@@ -134,7 +134,7 @@ class SonyEricssonLT18 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**

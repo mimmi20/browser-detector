@@ -121,7 +121,7 @@ class PlayStation4 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -131,7 +131,7 @@ class PlayStation4 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

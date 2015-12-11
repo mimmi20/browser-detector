@@ -118,7 +118,7 @@ class SonyNetbox extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -128,6 +128,6 @@ class SonyNetbox extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 }

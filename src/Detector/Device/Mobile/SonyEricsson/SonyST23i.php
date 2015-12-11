@@ -128,7 +128,7 @@ class SonyST23i extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -138,7 +138,7 @@ class SonyST23i extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

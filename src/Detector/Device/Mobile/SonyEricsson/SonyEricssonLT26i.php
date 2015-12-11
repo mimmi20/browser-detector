@@ -129,7 +129,7 @@ class SonyEricssonLT26i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
@@ -139,7 +139,7 @@ class SonyEricssonLT26i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**

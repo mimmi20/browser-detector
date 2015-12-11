@@ -129,7 +129,7 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -139,7 +139,7 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

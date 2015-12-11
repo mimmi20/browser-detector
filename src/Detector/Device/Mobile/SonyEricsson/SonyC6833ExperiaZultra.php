@@ -120,7 +120,7 @@ class SonyC6833ExperiaZultra extends AbstractDevice implements DeviceHasSpecific
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -130,7 +130,7 @@ class SonyC6833ExperiaZultra extends AbstractDevice implements DeviceHasSpecific
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

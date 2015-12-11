@@ -118,7 +118,7 @@ class SonyD2203 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -128,6 +128,6 @@ class SonyD2203 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 }

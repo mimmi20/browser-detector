@@ -124,7 +124,7 @@ class SonyC1605 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -134,7 +134,7 @@ class SonyC1605 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

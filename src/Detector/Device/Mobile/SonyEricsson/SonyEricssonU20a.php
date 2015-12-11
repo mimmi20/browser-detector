@@ -120,7 +120,7 @@ class SonyEricssonU20a extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
@@ -130,7 +130,7 @@ class SonyEricssonU20a extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**

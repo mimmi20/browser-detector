@@ -124,7 +124,7 @@ class Ebrd1101 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -134,7 +134,7 @@ class Ebrd1101 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

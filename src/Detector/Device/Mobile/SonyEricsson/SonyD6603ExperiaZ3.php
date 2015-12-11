@@ -124,7 +124,7 @@ class SonyD6603ExperiaZ3 extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -134,7 +134,7 @@ class SonyD6603ExperiaZ3 extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

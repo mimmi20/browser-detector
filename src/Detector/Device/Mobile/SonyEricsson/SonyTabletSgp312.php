@@ -124,7 +124,7 @@ class SonyTabletSgp312 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -134,7 +134,7 @@ class SonyTabletSgp312 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

@@ -125,7 +125,7 @@ class SonyD5503XperiaZ1Compact extends AbstractDevice implements DeviceHasWurflK
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -135,7 +135,7 @@ class SonyD5503XperiaZ1Compact extends AbstractDevice implements DeviceHasWurflK
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

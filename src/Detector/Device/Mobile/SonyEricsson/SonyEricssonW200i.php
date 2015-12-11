@@ -120,7 +120,7 @@ class SonyEricssonW200i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
@@ -130,7 +130,7 @@ class SonyEricssonW200i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**

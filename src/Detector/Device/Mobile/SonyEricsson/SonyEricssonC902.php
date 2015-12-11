@@ -125,7 +125,7 @@ class SonyEricssonC902 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
@@ -135,7 +135,7 @@ class SonyEricssonC902 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**

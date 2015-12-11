@@ -120,7 +120,7 @@ class SonyEricssonST25iv extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
@@ -130,7 +130,7 @@ class SonyEricssonST25iv extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**

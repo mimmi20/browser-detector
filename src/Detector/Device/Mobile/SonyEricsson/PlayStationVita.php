@@ -124,7 +124,7 @@ class PlayStationVita extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -134,7 +134,7 @@ class PlayStationVita extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getBrand()
     {
-        return new Company\Sony();
+        return new Company(new Company\Sony());
     }
 
     /**

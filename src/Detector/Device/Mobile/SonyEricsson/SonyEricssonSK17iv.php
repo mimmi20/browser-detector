@@ -124,7 +124,7 @@ class SonyEricssonSK17iv extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
@@ -134,7 +134,7 @@ class SonyEricssonSK17iv extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**

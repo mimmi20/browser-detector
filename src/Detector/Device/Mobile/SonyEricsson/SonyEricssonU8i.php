@@ -125,7 +125,7 @@ class SonyEricssonU8i extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getManufacturer()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
@@ -135,7 +135,7 @@ class SonyEricssonU8i extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getBrand()
     {
-        return new Company\SonyEricsson();
+        return new Company(new Company\SonyEricsson());
     }
 
     /**
