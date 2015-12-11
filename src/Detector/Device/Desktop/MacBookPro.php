@@ -118,7 +118,7 @@ class MacBookPro extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Apple();
+        return new Company(new Company\Apple());
     }
 
     /**
@@ -128,6 +128,6 @@ class MacBookPro extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Apple();
+        return new Company(new Company\Apple());
     }
 }

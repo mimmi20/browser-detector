@@ -124,7 +124,7 @@ class Archos5 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getManufacturer()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**
@@ -134,7 +134,7 @@ class Archos5 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     public function getBrand()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**

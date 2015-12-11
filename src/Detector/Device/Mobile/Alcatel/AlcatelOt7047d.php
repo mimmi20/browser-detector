@@ -118,7 +118,7 @@ class AlcatelOt7047d extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**
@@ -128,6 +128,6 @@ class AlcatelOt7047d extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 }

@@ -231,7 +231,7 @@ abstract class AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -241,7 +241,7 @@ abstract class AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

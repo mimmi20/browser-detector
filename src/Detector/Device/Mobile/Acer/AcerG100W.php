@@ -124,7 +124,7 @@ class AcerG100W extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -134,7 +134,7 @@ class AcerG100W extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getBrand()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**

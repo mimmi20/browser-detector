@@ -124,7 +124,7 @@ class AsusPadFone2 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -134,7 +134,7 @@ class AsusPadFone2 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

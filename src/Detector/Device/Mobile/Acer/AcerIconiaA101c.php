@@ -120,7 +120,7 @@ class AcerIconiaA101c extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -130,7 +130,7 @@ class AcerIconiaA101c extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**

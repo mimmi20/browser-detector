@@ -120,7 +120,7 @@ class AcerS500 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -129,8 +129,7 @@ class AcerS500 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
-    {
-        return new Company\Acer();
+ return new Company(new Company\Acer())ompany\Acer();
     }
 
     /**

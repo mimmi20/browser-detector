@@ -120,7 +120,7 @@ class AcerStreamS110 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -129,8 +129,7 @@ class AcerStreamS110 extends AbstractDevice implements DeviceHasSpecificPlatform
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
-    {
-        return new Company\Acer();
+ return new Company(new Company\Acer())ompany\Acer();
     }
 
     /**

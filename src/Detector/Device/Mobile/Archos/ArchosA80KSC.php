@@ -124,7 +124,7 @@ class ArchosA80KSC extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     public function getManufacturer()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**
@@ -134,7 +134,7 @@ class ArchosA80KSC extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     public function getBrand()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**

@@ -120,7 +120,7 @@ class AlcatelOt4030D extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**
@@ -129,8 +129,7 @@ class AlcatelOt4030D extends AbstractDevice implements DeviceHasSpecificPlatform
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
-    {
-        return new Company\Alcatel();
+ return new Company(new Company\Alcatel())any\Alcatel();
     }
 
     /**

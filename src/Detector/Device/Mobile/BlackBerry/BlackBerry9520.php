@@ -125,7 +125,7 @@ class BlackBerry9520 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**
@@ -134,8 +134,7 @@ class BlackBerry9520 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
-    {
-        return new Company\Rim();
+ return new Company(new Company\Rim())Company\Rim();
     }
 
     /**

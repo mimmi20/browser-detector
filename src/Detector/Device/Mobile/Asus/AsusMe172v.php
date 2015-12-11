@@ -120,7 +120,7 @@ class AsusMe172v extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -130,7 +130,7 @@ class AsusMe172v extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

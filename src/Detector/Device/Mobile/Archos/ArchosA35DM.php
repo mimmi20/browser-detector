@@ -120,7 +120,7 @@ class ArchosA35DM extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**
@@ -130,7 +130,7 @@ class ArchosA35DM extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**

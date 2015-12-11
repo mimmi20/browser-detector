@@ -125,7 +125,7 @@ class AsusEepPadTransformerTf201 extends AbstractDevice implements DeviceHasWurf
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -135,7 +135,7 @@ class AsusEepPadTransformerTf201 extends AbstractDevice implements DeviceHasWurf
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

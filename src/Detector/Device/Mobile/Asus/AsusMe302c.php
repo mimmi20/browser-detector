@@ -125,7 +125,7 @@ class AsusMe302c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -135,7 +135,7 @@ class AsusMe302c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

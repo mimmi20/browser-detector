@@ -118,7 +118,7 @@ class Hp9000 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 
     /**
@@ -128,6 +128,6 @@ class Hp9000 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Hp();
+        return new Company(new Company\Hp());
     }
 }

@@ -120,7 +120,7 @@ class Archos80Cobalt extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**
@@ -130,7 +130,7 @@ class Archos80Cobalt extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getBrand()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**

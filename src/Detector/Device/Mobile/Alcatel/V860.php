@@ -124,7 +124,7 @@ class V860 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceH
      */
     public function getManufacturer()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**
@@ -134,7 +134,7 @@ class V860 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceH
      */
     public function getBrand()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**

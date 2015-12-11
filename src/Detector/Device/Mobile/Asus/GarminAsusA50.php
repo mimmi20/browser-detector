@@ -124,7 +124,7 @@ class GarminAsusA50 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\GarminAsus();
+        return new Company(new Company\GarminAsus());
     }
 
     /**
@@ -134,7 +134,7 @@ class GarminAsusA50 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\GarminAsus();
+        return new Company(new Company\GarminAsus());
     }
 
     /**

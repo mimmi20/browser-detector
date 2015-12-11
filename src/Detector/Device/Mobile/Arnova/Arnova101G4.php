@@ -120,7 +120,7 @@ class Arnova101G4 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company\Arnova();
+        return new Company(new Company\Arnova());
     }
 
     /**
@@ -130,7 +130,7 @@ class Arnova101G4 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company\Arnova();
+        return new Company(new Company\Arnova());
     }
 
     /**

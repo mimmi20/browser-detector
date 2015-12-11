@@ -145,7 +145,7 @@ class Beidou extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company\Beidou();
+        return new Company(new Company\Beidou());
     }
 
     /**
@@ -155,7 +155,7 @@ class Beidou extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getBrand()
     {
-        return new Company\Beidou();
+        return new Company(new Company\Beidou());
     }
 
     /**

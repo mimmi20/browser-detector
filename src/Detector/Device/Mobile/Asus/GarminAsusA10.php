@@ -120,7 +120,7 @@ class GarminAsusA10 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\GarminAsus();
+        return new Company(new Company\GarminAsus());
     }
 
     /**
@@ -130,7 +130,7 @@ class GarminAsusA10 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

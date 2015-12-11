@@ -120,7 +120,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -129,8 +129,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
-    {
-        return new Company\Acer();
+ return new Company(new Company\Acer())ompany\Acer();
     }
 
     /**

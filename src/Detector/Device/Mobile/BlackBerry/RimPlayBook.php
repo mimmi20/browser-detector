@@ -122,7 +122,7 @@ class RimPlayBook extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**
@@ -132,7 +132,7 @@ class RimPlayBook extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**

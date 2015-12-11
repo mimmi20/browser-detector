@@ -120,7 +120,7 @@ class AlcatelOt216 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**
@@ -129,8 +129,7 @@ class AlcatelOt216 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
-    {
-        return new Company\Alcatel();
+ return new Company(new Company\Alcatel())any\Alcatel();
     }
 
     /**

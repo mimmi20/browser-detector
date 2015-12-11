@@ -126,7 +126,7 @@ class AsusGalaxyNexus7 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -136,7 +136,7 @@ class AsusGalaxyNexus7 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function getBrand()
     {
-        return new Company\Google();
+        return new Company(new Company\Google());
     }
 
     /**

@@ -140,7 +140,7 @@ class Amoi extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getManufacturer()
     {
-        return new Company\Amoi();
+        return new Company(new Company\Amoi());
     }
 
     /**
@@ -150,7 +150,7 @@ class Amoi extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function getBrand()
     {
-        return new Company\Amoi();
+        return new Company(new Company\Amoi());
     }
 
     /**

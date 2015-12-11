@@ -130,7 +130,7 @@ class AlcatelOt918d extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**
@@ -140,7 +140,7 @@ class AlcatelOt918d extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**

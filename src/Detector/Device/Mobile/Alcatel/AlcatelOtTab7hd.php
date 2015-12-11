@@ -120,7 +120,7 @@ class AlcatelOtTab7hd extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**
@@ -130,7 +130,7 @@ class AlcatelOtTab7hd extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Alcatel();
+        return new Company(new Company\Alcatel());
     }
 
     /**

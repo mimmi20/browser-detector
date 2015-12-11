@@ -202,7 +202,7 @@ class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -212,6 +212,6 @@ class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterfac
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 }

@@ -125,7 +125,7 @@ class BlackBerryZ10 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\BlackBerry();
+        return new Company(new Company\BlackBerry());
     }
 
     /**
@@ -135,7 +135,7 @@ class BlackBerryZ10 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\BlackBerry();
+        return new Company(new Company\BlackBerry());
     }
 
     /**

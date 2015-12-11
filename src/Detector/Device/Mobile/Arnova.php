@@ -152,7 +152,7 @@ class Arnova extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company\Arnova();
+        return new Company(new Company\Arnova());
     }
 
     /**
@@ -162,7 +162,7 @@ class Arnova extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getBrand()
     {
-        return new Company\Arnova();
+        return new Company(new Company\Arnova());
     }
 
     /**

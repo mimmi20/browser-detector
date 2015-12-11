@@ -117,7 +117,7 @@ class WindowsDesktop extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -127,7 +127,7 @@ class WindowsDesktop extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

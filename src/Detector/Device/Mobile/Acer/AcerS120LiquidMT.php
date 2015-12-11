@@ -120,7 +120,7 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -130,7 +130,7 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getBrand()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**

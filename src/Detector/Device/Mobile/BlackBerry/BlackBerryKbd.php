@@ -120,7 +120,7 @@ class BlackBerryKbd extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company\BlackBerry();
+        return new Company(new Company\BlackBerry());
     }
 
     /**
@@ -130,7 +130,7 @@ class BlackBerryKbd extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company\BlackBerry();
+        return new Company(new Company\BlackBerry());
     }
 
     /**

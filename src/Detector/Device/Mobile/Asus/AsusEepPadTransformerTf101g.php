@@ -124,7 +124,7 @@ class AsusEepPadTransformerTf101g extends AbstractDevice implements DeviceHasWur
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -134,7 +134,7 @@ class AsusEepPadTransformerTf101g extends AbstractDevice implements DeviceHasWur
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

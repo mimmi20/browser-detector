@@ -124,7 +124,7 @@ class ArnovaArchm901 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Arnova();
+        return new Company(new Company\Arnova());
     }
 
     /**
@@ -134,7 +134,7 @@ class ArnovaArchm901 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Arnova();
+        return new Company(new Company\Arnova());
     }
 
     /**

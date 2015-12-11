@@ -124,7 +124,7 @@ class Archos80G9 extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     public function getManufacturer()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**
@@ -134,7 +134,7 @@ class Archos80G9 extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     public function getBrand()
     {
-        return new Company\Archos();
+        return new Company(new Company\Archos());
     }
 
     /**

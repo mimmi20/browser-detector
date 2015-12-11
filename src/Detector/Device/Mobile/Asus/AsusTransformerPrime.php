@@ -127,7 +127,7 @@ class AsusTransformerPrime extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -137,7 +137,7 @@ class AsusTransformerPrime extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

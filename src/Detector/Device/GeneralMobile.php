@@ -154,7 +154,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -164,7 +164,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Unknown();
+        return new Company(new Company\Unknown());
     }
 
     /**

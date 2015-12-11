@@ -123,7 +123,7 @@ class Ipad extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company\Apple();
+        return new Company(new Company\Apple());
     }
 
     /**
@@ -133,7 +133,7 @@ class Ipad extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company\Apple();
+        return new Company(new Company\Apple());
     }
 
     /**

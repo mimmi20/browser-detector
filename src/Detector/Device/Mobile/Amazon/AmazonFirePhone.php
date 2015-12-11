@@ -123,7 +123,7 @@ class AmazonFirePhone extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Amazon();
+        return new Company(new Company\Amazon());
     }
 
     /**
@@ -133,7 +133,7 @@ class AmazonFirePhone extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     public function getBrand()
     {
-        return new Company\Amazon();
+        return new Company(new Company\Amazon());
     }
 
     /**

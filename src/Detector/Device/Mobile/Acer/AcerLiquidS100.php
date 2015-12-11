@@ -128,7 +128,7 @@ class AcerLiquidS100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -137,8 +137,7 @@ class AcerLiquidS100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
-    {
-        return new Company\Acer();
+ return new Company(new Company\Acer())ompany\Acer();
     }
 
     /**

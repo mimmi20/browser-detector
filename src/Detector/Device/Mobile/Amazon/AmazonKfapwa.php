@@ -118,7 +118,7 @@ class AmazonKfapwa extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company\Amazon();
+        return new Company(new Company\Amazon());
     }
 
     /**
@@ -128,6 +128,6 @@ class AmazonKfapwa extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company\Amazon();
+        return new Company(new Company\Amazon());
     }
 }

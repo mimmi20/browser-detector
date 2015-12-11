@@ -126,7 +126,7 @@ class BlackBerry9900 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**
@@ -136,7 +136,7 @@ class BlackBerry9900 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**

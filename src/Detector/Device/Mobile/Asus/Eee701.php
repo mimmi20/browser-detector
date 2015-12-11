@@ -120,7 +120,7 @@ class Eee701 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -130,7 +130,7 @@ class Eee701 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

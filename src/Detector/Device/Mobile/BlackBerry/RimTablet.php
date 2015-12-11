@@ -128,7 +128,7 @@ class RimTablet extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**
@@ -138,7 +138,7 @@ class RimTablet extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     public function getBrand()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**

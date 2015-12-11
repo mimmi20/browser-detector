@@ -130,7 +130,7 @@ class AcerIconiaA511 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -140,7 +140,7 @@ class AcerIconiaA511 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getBrand()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**

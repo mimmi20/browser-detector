@@ -124,7 +124,7 @@ class AcerE320 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getManufacturer()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**
@@ -134,7 +134,7 @@ class AcerE320 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     public function getBrand()
     {
-        return new Company\Acer();
+        return new Company(new Company\Acer());
     }
 
     /**

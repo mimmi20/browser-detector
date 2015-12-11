@@ -124,7 +124,7 @@ class AsusTransformerPadTf700T extends AbstractDevice implements DeviceHasWurflK
      */
     public function getManufacturer()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**
@@ -134,7 +134,7 @@ class AsusTransformerPadTf700T extends AbstractDevice implements DeviceHasWurflK
      */
     public function getBrand()
     {
-        return new Company\Asus();
+        return new Company(new Company\Asus());
     }
 
     /**

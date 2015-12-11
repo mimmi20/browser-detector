@@ -140,7 +140,7 @@ class BlackBerry extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**
@@ -150,6 +150,6 @@ class BlackBerry extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function getBrand()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 }

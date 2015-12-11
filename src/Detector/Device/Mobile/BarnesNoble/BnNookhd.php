@@ -120,7 +120,7 @@ class BnNookhd extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\BarnesNoble();
+        return new Company(new Company\BarnesNoble());
     }
 
     /**
@@ -130,7 +130,7 @@ class BnNookhd extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\BarnesNoble();
+        return new Company(new Company\BarnesNoble());
     }
 
     /**

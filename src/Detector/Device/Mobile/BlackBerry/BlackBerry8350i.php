@@ -120,7 +120,7 @@ class BlackBerry8350i extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**
@@ -130,7 +130,7 @@ class BlackBerry8350i extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company\Rim();
+        return new Company(new Company\Rim());
     }
 
     /**

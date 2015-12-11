@@ -144,7 +144,7 @@ class BarnesNoble extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getManufacturer()
     {
-        return new Company\BarnesNoble();
+        return new Company(new Company\BarnesNoble());
     }
 
     /**
@@ -154,7 +154,7 @@ class BarnesNoble extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function getBrand()
     {
-        return new Company\BarnesNoble();
+        return new Company(new Company\BarnesNoble());
     }
 
     /**

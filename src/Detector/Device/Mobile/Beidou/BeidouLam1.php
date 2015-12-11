@@ -120,7 +120,7 @@ class BeidouLam1 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getManufacturer()
     {
-        return new Company\Beidou();
+        return new Company(new Company\Beidou());
     }
 
     /**
@@ -130,7 +130,7 @@ class BeidouLam1 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function getBrand()
     {
-        return new Company\Beidou();
+        return new Company(new Company\Beidou());
     }
 
     /**

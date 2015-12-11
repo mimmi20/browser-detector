@@ -120,7 +120,7 @@ class AmoiN820 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company\Amoi();
+        return new Company(new Company\Amoi());
     }
 
     /**
@@ -130,7 +130,7 @@ class AmoiN820 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company\Amoi();
+        return new Company(new Company\Amoi());
     }
 
     /**
