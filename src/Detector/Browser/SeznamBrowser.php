@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Bot;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -108,7 +108,7 @@ class SeznamBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Browser();
     }
 
     /**
