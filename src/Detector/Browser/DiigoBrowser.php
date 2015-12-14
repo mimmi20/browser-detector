@@ -77,7 +77,7 @@ class DiigoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('DiigoBrowserInterface'))) {
+        if (!$this->utils->checkIfContains(array('DiigoBrowser'))) {
             return false;
         }
 
@@ -112,7 +112,7 @@ class DiigoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getName()
     {
-        return 'DiigoBrowserInterface';
+        return 'Diigo Browser';
     }
 
     /**
@@ -122,7 +122,7 @@ class DiigoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Diigo());
     }
 
     /**
@@ -145,7 +145,7 @@ class DiigoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Version', 'DiigoBrowserInterface');
+        $searches = array('Version', 'DiigoBrowser');
 
         return $detector->detectVersion($searches);
     }

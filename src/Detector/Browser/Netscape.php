@@ -203,6 +203,7 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             'LinkpadBot',
             'Lipperhey SEO Service',
             'Blog Search',
+            'SkypeUriPreview',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {

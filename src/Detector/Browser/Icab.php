@@ -73,7 +73,11 @@ class Icab extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('iCabMobile', 'iCab'))) {
+        if (!$this->utils->checkIfContains(array('iCab'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('iCabMobile'))) {
             return false;
         }
 
@@ -119,7 +123,7 @@ class Icab extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\AlexanderClauss());
     }
 
     /**

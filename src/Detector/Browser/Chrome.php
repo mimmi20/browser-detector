@@ -124,6 +124,13 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
             'Seznam',
             'Diga',
             'Kenshoo',
+            'coc_coc_browser',
+            'Superbird',
+            'ACHEETAHI',
+            'Beamrise',
+            'APUSBrowser',
+            'Diglo',
+            'Chedot',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',

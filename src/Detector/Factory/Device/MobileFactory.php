@@ -257,7 +257,7 @@ class MobileFactory
             /** @var \BrowserDetector\Detector\Device\AbstractDevice $entry */
             $names[$key]     = $entry->getCapability('model_name');
             $weights[$key]   = $entry->getWeight();
-            $companies[$key] = $entry->getManufacturer()->name;
+            $companies[$key] = $entry->getManufacturer()->getName();
         }
 
         array_multisort(

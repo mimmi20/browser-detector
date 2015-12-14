@@ -97,7 +97,7 @@ class W3cValidatorNuLv extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getManufacturer()
     {
-        return new Company\W3c();
+        return new Company(new Company\W3c());
     }
 
     /**

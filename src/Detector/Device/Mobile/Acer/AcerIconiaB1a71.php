@@ -129,7 +129,8 @@ class AcerIconiaB1a71 extends AbstractDevice implements DeviceHasSpecificPlatfor
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
- return new Company(new Company\Acer())ompany\Acer();
+    {
+        return new Company(new Company\Acer());
     }
 
     /**

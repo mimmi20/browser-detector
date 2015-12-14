@@ -99,6 +99,8 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
             'YaBrowserInterface',
             'bdbrowser_i18n',
             'FBAV',
+            'UCBrowser',
+            'ACHEETAHI',
             // Bots trying to be a Chrome
             'PagePeeker',
             'Google Web Preview',

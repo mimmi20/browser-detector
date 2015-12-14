@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Steeler extends AbstractCompany
+class Diglo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'www.tkl.iis.u-tokyo.ac.jp';
+    public $name = 'Diglo Inc';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'www.tkl.iis.u-tokyo.ac.jp';
+    public $brandname = 'Diglo';
 }

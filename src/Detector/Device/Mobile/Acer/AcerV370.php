@@ -129,7 +129,8 @@ class AcerV370 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
- return new Company(new Company\Acer())ompany\Acer();
+    {
+        return new Company(new Company\Acer());
     }
 
     /**

@@ -73,8 +73,7 @@ class AtomicBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AtomicBrowserInterface') && !$this->utils->checkIfContains('AtomicLite')
-        ) {
+        if (!$this->utils->checkIfContains(array('AtomicBrowser', 'AtomicLite'))) {
             return false;
         }
 
@@ -98,7 +97,7 @@ class AtomicBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\RichardTrautvetter());
     }
 
     /**
@@ -121,7 +120,7 @@ class AtomicBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('AtomicBrowserInterface', 'AtomicLite');
+        $searches = array('AtomicBrowser', 'AtomicLite');
 
         return $detector->detectVersion($searches);
     }

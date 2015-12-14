@@ -72,20 +72,24 @@ class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('Yahoo Pipes', 'Yahoo! Slurp'))) {
+        if ($this->utils->checkIfContains(array('Yahoo Pipes', 'Yahoo! Slurp', 'Y!J'))) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Mozilla/5.0 (YahooYSMcm') || $this->utils->checkIfContains(
-            'Scooter'
-        ) || $this->utils->checkIfContains('Y!OASIS') || $this->utils->checkIfContains(
-            'YahooYSMcm'
-        ) || $this->utils->checkIfContains('YRL_ODP_CRAWLER') || $this->utils->checkIfContains('www.yahoo.com')
-        ) {
-            return true;
+        $yahooBots = array(
+            'Mozilla/5.0 (YahooYSMcm',
+            'Scooter',
+            'Y!OASIS',
+            'YahooYSMcm',
+            'YRL_ODP_CRAWLER',
+            'www.yahoo.com'
+        );
+
+        if (!$this->utils->checkIfContains($yahooBots)) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**

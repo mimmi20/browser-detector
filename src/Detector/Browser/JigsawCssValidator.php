@@ -97,7 +97,7 @@ class JigsawCssValidator extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getManufacturer()
     {
-        return new Company\W3c();
+        return new Company(new Company\W3c());
     }
 
     /**

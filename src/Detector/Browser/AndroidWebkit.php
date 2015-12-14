@@ -74,8 +74,6 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        $safariHelper = new SafariHelper($this->useragent);
-
         if (!$this->utils->checkIfContains(array('Android', 'JUC (Linux; U;', 'GINGERBREAD'))) {
             return false;
         }
@@ -116,6 +114,8 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
             'NX/',
             'Nintendo WiiU',
             'bdbrowser_i18n',
+            'FBAV',
+            'ACHEETAHI',
             'baidu',
             'iBrowser',
             'OneBrowser',

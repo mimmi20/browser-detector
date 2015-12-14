@@ -74,15 +74,15 @@ class Blackberry extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains('MQQBrowser')) {
+        if ($this->utils->checkIfContains(array('MQQBrowser', 'UCBrowser', 'UCWEB'))) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('BlackBerry', 'Blackberry', 'BB10'))) {
-            return true;
+        if (!$this->utils->checkIfContains(array('BlackBerry', 'Blackberry', 'BB10'))) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**

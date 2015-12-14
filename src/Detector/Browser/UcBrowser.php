@@ -75,6 +75,10 @@ class UcBrowser extends AbstractBrowser
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('ucbrowserhd'), true)) {
+            return false;
+        }
+
         return true;
     }
 

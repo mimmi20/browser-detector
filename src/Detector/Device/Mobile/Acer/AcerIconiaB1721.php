@@ -127,6 +127,7 @@ class AcerIconiaB1721 extends AbstractDevice
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
- return new Company(new Company\Acer())ompany\Acer();
+    {
+        return new Company(new Company\Acer());
     }
 }

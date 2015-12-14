@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use UaBrowserType\Browser;
 use UaResult\Version;
-use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * @category  BrowserDetector
@@ -72,13 +71,11 @@ class SamsungWebView extends AbstractBrowser
      */
     public function canHandle()
     {
-        $safariHelper = new SafariHelper($this->useragent);
-
-        if (!$safariHelper->isSafari()) {
+        if (!$this->utils->checkIfContainsAll(array('Safari', 'Tizen', 'Version'))) {
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('Safari', 'Tizen'))) {
+        if ($this->utils->checkIfContains(array('SamsungBrowser'))) {
             return false;
         }
 
@@ -125,7 +122,7 @@ class SamsungWebView extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SamsungBrowser');
+        $searches = array('Version');
 
         return $detector->detectVersion($searches);
     }

@@ -133,7 +133,8 @@ class BlackBerry9700 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
- return new Company(new Company\Rim())Company\Rim();
+    {
+        return new Company(new Company\Rim());
     }
 
     /**

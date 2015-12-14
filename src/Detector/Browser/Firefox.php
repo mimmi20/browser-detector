@@ -134,6 +134,7 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
             'Yahoo!',
             'Slurp',
             'adbeat.com',
+            'myibrow',
             //others
             'MSIE',
             'Trident',

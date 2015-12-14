@@ -97,7 +97,7 @@ class Ltx71 extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company\Ltx71();
+        return new Company(new Company\Ltx71());
     }
 
     /**

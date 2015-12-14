@@ -135,7 +135,8 @@ class AcerIconiaA700 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
- return new Company(new Company\Acer())ompany\Acer();
+    {
+        return new Company(new Company\Acer());
     }
 
     /**

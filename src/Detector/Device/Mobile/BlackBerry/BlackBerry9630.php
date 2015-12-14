@@ -129,7 +129,8 @@ class BlackBerry9630 extends AbstractDevice implements DeviceHasSpecificPlatform
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
- return new Company(new Company\Rim())Company\Rim();
+    {
+        return new Company(new Company\Rim());
     }
 
     /**

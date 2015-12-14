@@ -131,7 +131,8 @@ class AlcatelOt4012X extends AbstractDevice implements DeviceHasSpecificPlatform
      * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
- return new Company(new Company\Alcatel())any\Alcatel();
+    {
+        return new Company(new Company\Alcatel());
     }
 
     /**

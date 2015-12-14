@@ -95,7 +95,7 @@ class W3cChecklink extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company\W3c();
+        return new Company(new Company\W3c());
     }
 
     /**

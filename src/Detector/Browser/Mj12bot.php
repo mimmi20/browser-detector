@@ -101,7 +101,7 @@ class Mj12bot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company\Majestic12();
+        return new Company(new Company\Majestic12());
     }
 
     /**
