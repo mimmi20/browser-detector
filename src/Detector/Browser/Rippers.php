@@ -132,7 +132,7 @@ class Rippers extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 1480281;
+        return 3;
     }
 
     /**

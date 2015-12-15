@@ -124,7 +124,7 @@ class HbbTv extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 55;
+        return 3;
     }
 
     /**

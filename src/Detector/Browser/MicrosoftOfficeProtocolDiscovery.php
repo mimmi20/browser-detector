@@ -132,7 +132,7 @@ class MicrosoftOfficeProtocolDiscovery extends AbstractBrowser implements Browse
      */
     public function getWeight()
     {
-        return 9;
+        return 3;
     }
 
     /**

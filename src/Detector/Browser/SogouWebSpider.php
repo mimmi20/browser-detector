@@ -117,7 +117,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 5904;
+        return 3;
     }
 
     /**

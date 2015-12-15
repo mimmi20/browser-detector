@@ -135,7 +135,7 @@ class GoogleFeedfetcher extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getWeight()
     {
-        return 3835;
+        return 3;
     }
 
     /**

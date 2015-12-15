@@ -130,6 +130,6 @@ class UcBrowserHd extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 7976;
+        return 3;
     }
 }

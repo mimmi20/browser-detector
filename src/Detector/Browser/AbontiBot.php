@@ -117,7 +117,7 @@ class AbontiBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 20807;
+        return 3;
     }
 
     /**

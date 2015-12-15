@@ -116,7 +116,7 @@ class BlitzBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 725000;
+        return 3;
     }
 
     /**

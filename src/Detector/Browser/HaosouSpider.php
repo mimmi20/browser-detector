@@ -115,7 +115,7 @@ class HaosouSpider extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 13827;
+        return 3;
     }
 
     /**

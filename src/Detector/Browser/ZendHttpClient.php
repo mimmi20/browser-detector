@@ -132,7 +132,7 @@ class ZendHttpClient extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 68455141;
+        return 3;
     }
 
     /**

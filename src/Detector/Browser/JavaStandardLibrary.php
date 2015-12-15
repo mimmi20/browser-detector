@@ -138,7 +138,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getWeight()
     {
-        return 375779;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class TheBatDownloadManager extends AbstractBrowser implements BrowserHasSpecifi
      */
     public function getWeight()
     {
-        return 781;
+        return 3;
     }
 
     /**

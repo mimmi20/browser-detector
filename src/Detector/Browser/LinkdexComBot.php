@@ -117,7 +117,7 @@ class LinkdexComBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 1153;
+        return 3;
     }
 
     /**

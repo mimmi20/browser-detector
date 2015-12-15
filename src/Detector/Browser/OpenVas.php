@@ -117,7 +117,7 @@ class OpenVas extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 19165;
+        return 3;
     }
 
     /**

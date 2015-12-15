@@ -135,7 +135,7 @@ class TinEye extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 263;
+        return 3;
     }
 
     /**

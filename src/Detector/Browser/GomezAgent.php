@@ -135,7 +135,7 @@ class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternative
      */
     public function getWeight()
     {
-        return 20293749;
+        return 3;
     }
 
     /**

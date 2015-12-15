@@ -119,7 +119,7 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
      */
     public function getWeight()
     {
-        return 66048;
+        return 3;
     }
 
     /**

@@ -121,7 +121,7 @@ class PhantomJs extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 44069;
+        return 3;
     }
 
     /**

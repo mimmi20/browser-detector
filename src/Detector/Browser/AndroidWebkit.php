@@ -246,7 +246,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 38951839;
+        return 3;
     }
 
     /**

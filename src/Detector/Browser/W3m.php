@@ -130,6 +130,6 @@ class W3m extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 278463;
+        return 3;
     }
 }

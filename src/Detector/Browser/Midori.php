@@ -132,7 +132,7 @@ class Midori extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 6943;
+        return 3;
     }
 
     /**

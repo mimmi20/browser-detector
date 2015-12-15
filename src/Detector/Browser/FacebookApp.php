@@ -149,6 +149,6 @@ class FacebookApp extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 199899;
+        return 3;
     }
 }

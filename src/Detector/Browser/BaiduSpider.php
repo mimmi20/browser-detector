@@ -136,7 +136,7 @@ class BaiduSpider extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 121205;
+        return 3;
     }
 
     /**

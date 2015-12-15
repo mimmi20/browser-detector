@@ -139,7 +139,7 @@ class Ichiro extends AbstractBrowser implements BrowserCalculatesAlternativeResu
      */
     public function getWeight()
     {
-        return 25813;
+        return 3;
     }
 
     /**

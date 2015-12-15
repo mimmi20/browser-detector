@@ -132,7 +132,7 @@ class Dreamweaver extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 65;
+        return 3;
     }
 
     /**

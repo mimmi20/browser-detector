@@ -132,7 +132,7 @@ class MailExchangeWebServices extends AbstractBrowser implements BrowserHasSpeci
      */
     public function getWeight()
     {
-        return 7;
+        return 3;
     }
 
     /**

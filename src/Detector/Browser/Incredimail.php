@@ -132,7 +132,7 @@ class Incredimail extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 13;
+        return 3;
     }
 
     /**

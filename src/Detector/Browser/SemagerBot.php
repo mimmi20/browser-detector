@@ -117,7 +117,7 @@ class SemagerBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 1611;
+        return 3;
     }
 
     /**

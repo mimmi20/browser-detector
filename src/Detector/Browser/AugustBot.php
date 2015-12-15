@@ -132,7 +132,7 @@ class AugustBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 10;
+        return 3;
     }
 
     /**

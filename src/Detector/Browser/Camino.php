@@ -163,7 +163,7 @@ class Camino extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 41576;
+        return 3;
     }
 
     /**

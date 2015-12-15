@@ -132,7 +132,7 @@ class Reeder extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

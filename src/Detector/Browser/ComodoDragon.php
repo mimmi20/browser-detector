@@ -168,7 +168,7 @@ class ComodoDragon extends AbstractBrowser implements BrowserHasWurflKeyInterfac
      */
     public function getWeight()
     {
-        return 226543;
+        return 3;
     }
 
     /**

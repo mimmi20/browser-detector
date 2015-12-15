@@ -132,7 +132,7 @@ class Kontact extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 50;
+        return 3;
     }
 
     /**

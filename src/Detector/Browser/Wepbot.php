@@ -132,7 +132,7 @@ class Wepbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 7520;
+        return 3;
     }
 
     /**

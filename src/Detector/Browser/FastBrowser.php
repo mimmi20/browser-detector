@@ -132,7 +132,7 @@ class FastBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 1190;
+        return 3;
     }
 
     /**

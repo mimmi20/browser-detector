@@ -132,7 +132,7 @@ class SpellCheckBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 3554;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class Crawler4j extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 18132;
+        return 3;
     }
 
     /**

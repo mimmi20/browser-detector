@@ -113,7 +113,7 @@ class NokiaProxyBrowser extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getWeight()
     {
-        return 11754;
+        return 3;
     }
 
     /**

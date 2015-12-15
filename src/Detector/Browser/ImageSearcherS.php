@@ -132,7 +132,7 @@ class ImageSearcherS extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 15;
+        return 3;
     }
 
     /**

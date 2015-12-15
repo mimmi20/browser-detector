@@ -163,7 +163,7 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 40588;
+        return 3;
     }
 
     /**

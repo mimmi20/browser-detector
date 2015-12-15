@@ -133,7 +133,7 @@ class TenFourFox extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 10373;
+        return 3;
     }
 
     /**

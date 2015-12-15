@@ -132,7 +132,7 @@ class MyEnginesBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 629;
+        return 3;
     }
 
     /**

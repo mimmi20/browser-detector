@@ -117,7 +117,7 @@ class UnwindFetchor extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 2079;
+        return 3;
     }
 
     /**

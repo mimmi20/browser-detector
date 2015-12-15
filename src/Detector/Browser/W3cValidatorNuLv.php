@@ -130,7 +130,7 @@ class W3cValidatorNuLv extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 627;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class NetEstateCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 36812;
+        return 3;
     }
 
     /**

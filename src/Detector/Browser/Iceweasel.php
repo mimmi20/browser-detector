@@ -175,7 +175,7 @@ class Iceweasel extends AbstractBrowser implements BrowserHasWurflKeyInterface, 
      */
     public function getWeight()
     {
-        return 284454;
+        return 3;
     }
 
     /**

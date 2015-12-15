@@ -151,7 +151,7 @@ class GoogleEarth extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 4905;
+        return 3;
     }
 
     /**

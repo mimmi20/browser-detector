@@ -132,7 +132,7 @@ class AdvancedEmailExtractor extends AbstractBrowser implements BrowserHasSpecif
      */
     public function getWeight()
     {
-        return 282;
+        return 3;
     }
 
     /**

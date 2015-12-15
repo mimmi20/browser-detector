@@ -30,8 +30,11 @@
 
 namespace BrowserDetector\Detector\Factory;
 
+use BrowserDetector\Detector\Browser\Chrome;
+use BrowserDetector\Detector\Browser\Firefox;
+use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\Safari;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
-use BrowserDetector\Helper\Classname;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
 
@@ -57,117 +60,25 @@ class BrowserFactory
      */
     public static function detect($agent, LoggerInterface $logger, AdapterInterface $cache = null)
     {
-        foreach (self::getChain($cache, $logger) as $browser) {
-            /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $browser */
-            $browser->setUserAgent($agent);
-
-            if ($browser->canHandle()) {
-                $browser->setLogger($logger);
-                $browser->setCache($cache);
-
-                return $browser;
-            }
+        if (preg_match('/Mozilla\/5\.0.*\(.*Trident\/7\.0.*rv\:11\.0.*\) like Gecko.*/', $agent)
+            || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.0.*/', $agent)
+            || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (9|8|7|6)\.0.*/', $agent)
+            || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (5|4)\.\d+.*/', $agent)
+            || preg_match('/Mozilla\/\d\.\d+.*\(.*MSIE (3|2|1)\.\d+.*/', $agent)
+        ) {
+            $browser = new MicrosoftInternetExplorer($agent, $logger);
+        } elseif (preg_match('/(chrome|crmo|crios)/i', $agent)) {
+            $browser = new Chrome($agent, $logger);
+        } elseif (preg_match('/(safari)/i', $agent)) {
+            $browser = new Safari($agent, $logger);
+        } elseif (preg_match('/(firefox|minefield|shiretoko|bonecho|namoroka)/i', $agent)) {
+            $browser = new Firefox($agent, $logger);
+        } else {
+            $browser = new UnknownBrowser($agent, $logger);
         }
 
-        $browser = new UnknownBrowser($agent, $logger);
         $browser->setCache($cache);
 
         return $browser;
-    }
-
-    /**
-     * @param \WurflCache\Adapter\AdapterInterface $cache
-     *
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser[]
-     */
-    private static function getChain(AdapterInterface $cache = null, LoggerInterface $logger = null)
-    {
-        static $list = null;
-
-        if (null === $list) {
-            if (null === $cache) {
-                $list = self::buildBrowserChain($logger);
-            } else {
-                $success = null;
-                $list    = $cache->getItem('BrowserChain', $success);
-
-                if (!$success) {
-                    $list = self::buildBrowserChain($logger);
-
-                    $cache->setItem('BrowserChain', $list);
-                }
-            }
-        }
-
-        foreach ($list as $browser) {
-            yield $browser;
-        }
-    }
-
-    /**
-     * creates the detection chain for browsers
-     *
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Detector\Browser\AbstractBrowser[]
-     */
-    private static function buildBrowserChain(LoggerInterface $logger = null)
-    {
-        $sourceDirectory = __DIR__ . '/../Browser/';
-
-        $utils    = new Classname();
-        $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
-        $list     = array();
-
-        foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-            /** @var $file \SplFileInfo */
-            if (!$file->isFile()
-                || $file->getExtension() != 'php'
-                || 'BrowserInterface' == $file->getBasename('.php')
-                || 'AbstractBrowser' == $file->getBasename('.php')
-            ) {
-                continue;
-            }
-
-            $className = $utils->getClassNameFromFile(
-                $file->getBasename('.php'),
-                '\BrowserDetector\Detector\Browser',
-                true
-            );
-
-            try {
-                /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $handler */
-                $handler = new $className();
-            } catch (\Exception $e) {
-                $logger->error(new \Exception('an error occured while creating the browser class', 0, $e));
-
-                continue;
-            }
-
-            $list[] = $handler;
-        }
-
-        $names   = array();
-        $weights = array();
-
-        foreach ($list as $key => $entry) {
-            /** @var \BrowserDetector\Detector\Browser\AbstractBrowser $entry */
-            $names[$key]   = $entry->getName();
-            $weights[$key] = $entry->getWeight();
-        }
-
-        array_multisort(
-            $weights,
-            SORT_DESC,
-            SORT_NUMERIC,
-            $names,
-            SORT_ASC,
-            SORT_NATURAL,
-            $list
-        );
-
-        return $list;
     }
 }

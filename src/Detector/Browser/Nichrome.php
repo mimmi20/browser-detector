@@ -131,6 +131,6 @@ class Nichrome extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 302204;
+        return 3;
     }
 }

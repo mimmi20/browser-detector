@@ -116,7 +116,7 @@ class Seokicks extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 322257;
+        return 3;
     }
 
     /**

@@ -134,7 +134,7 @@ class Rockmelt extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 25547;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class NixGibts extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 724998;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class GrapeFx extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 9540;
+        return 3;
     }
 
     /**

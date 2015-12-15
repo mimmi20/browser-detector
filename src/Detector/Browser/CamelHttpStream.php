@@ -132,7 +132,7 @@ class CamelHttpStream extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 3759;
+        return 3;
     }
 
     /**

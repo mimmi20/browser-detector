@@ -116,7 +116,7 @@ class Sistrix extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 179206;
+        return 3;
     }
 
     /**

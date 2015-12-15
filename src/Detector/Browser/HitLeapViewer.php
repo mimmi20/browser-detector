@@ -132,7 +132,7 @@ class HitLeapViewer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

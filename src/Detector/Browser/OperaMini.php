@@ -188,7 +188,7 @@ class OperaMini extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 365459;
+        return 3;
     }
 
     /**

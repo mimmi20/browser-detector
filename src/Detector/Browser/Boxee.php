@@ -111,7 +111,7 @@ class Boxee extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 30;
+        return 3;
     }
 
     /**

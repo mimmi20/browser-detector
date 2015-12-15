@@ -132,7 +132,7 @@ class MsSearch extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 1390;
+        return 3;
     }
 
     /**

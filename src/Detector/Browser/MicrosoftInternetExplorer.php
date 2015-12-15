@@ -252,7 +252,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
      */
     public function getWeight()
     {
-        return 369968046;
+        return 40000;
     }
 
     /**

@@ -136,7 +136,7 @@ class SuperBird extends AbstractBrowser implements BrowserHasWurflKeyInterface, 
      */
     public function getWeight()
     {
-        return 500;
+        return 3;
     }
 
     /**

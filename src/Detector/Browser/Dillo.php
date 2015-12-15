@@ -130,6 +130,6 @@ class Dillo extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 765;
+        return 3;
     }
 }

@@ -117,7 +117,7 @@ class Socialradarbot extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 835;
+        return 3;
     }
 
     /**

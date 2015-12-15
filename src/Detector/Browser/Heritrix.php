@@ -132,7 +132,7 @@ class Heritrix extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 9842;
+        return 3;
     }
 
     /**

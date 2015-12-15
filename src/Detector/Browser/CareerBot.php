@@ -132,7 +132,7 @@ class CareerBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 6683;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class Proximic extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 38074;
+        return 3;
     }
 
     /**

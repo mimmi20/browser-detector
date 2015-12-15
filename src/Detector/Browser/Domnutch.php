@@ -130,6 +130,6 @@ class Domnutch extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 8117;
+        return 3;
     }
 }

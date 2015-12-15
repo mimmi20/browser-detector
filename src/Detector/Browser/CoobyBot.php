@@ -116,7 +116,7 @@ class CoobyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 35;
+        return 3;
     }
 
     /**

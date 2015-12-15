@@ -130,6 +130,6 @@ class NetSurf extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 32;
+        return 3;
     }
 }

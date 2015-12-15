@@ -132,7 +132,7 @@ class Exabot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 72614;
+        return 3;
     }
 
     /**

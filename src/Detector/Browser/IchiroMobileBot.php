@@ -133,7 +133,7 @@ class IchiroMobileBot extends AbstractBrowser implements BrowserCalculatesAltern
      */
     public function getWeight()
     {
-        return 25813;
+        return 3;
     }
 
     /**

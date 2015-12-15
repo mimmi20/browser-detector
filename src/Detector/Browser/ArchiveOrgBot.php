@@ -120,7 +120,7 @@ class ArchiveOrgBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 48003;
+        return 3;
     }
 
     /**

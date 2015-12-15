@@ -161,7 +161,7 @@ class Palemoon extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 22208;
+        return 3;
     }
 
     /**

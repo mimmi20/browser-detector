@@ -117,7 +117,7 @@ class SpaceBison extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 1453;
+        return 3;
     }
 
     /**

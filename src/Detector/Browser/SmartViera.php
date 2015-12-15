@@ -121,7 +121,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 9910;
+        return 3;
     }
 
     /**

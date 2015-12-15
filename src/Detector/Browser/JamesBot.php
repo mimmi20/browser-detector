@@ -115,7 +115,7 @@ class JamesBot extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class WebmasterCoffee extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 14;
+        return 3;
     }
 
     /**

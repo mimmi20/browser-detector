@@ -132,7 +132,7 @@ class MyInternetBrowser extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

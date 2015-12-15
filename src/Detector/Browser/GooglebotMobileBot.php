@@ -135,7 +135,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserCalculatesAlt
      */
     public function getWeight()
     {
-        return 668872;
+        return 3;
     }
 
     /**

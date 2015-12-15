@@ -132,7 +132,7 @@ class Linguatools extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 2153;
+        return 3;
     }
 
     /**

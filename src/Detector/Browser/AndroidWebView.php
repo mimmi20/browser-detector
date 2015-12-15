@@ -179,7 +179,7 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 116398328;
+        return 3;
     }
 
     /**

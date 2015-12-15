@@ -132,7 +132,7 @@ class KomodiaBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 263;
+        return 3;
     }
 
     /**

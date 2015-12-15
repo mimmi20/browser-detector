@@ -101,6 +101,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
             'Sogou',
             '360Spider',
             'HaosouSpider',
+            'CybEye',
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnIE)) {
@@ -181,7 +182,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
      */
     public function getWeight()
     {
-        return 828786;
+        return 40001;
     }
 
     /**

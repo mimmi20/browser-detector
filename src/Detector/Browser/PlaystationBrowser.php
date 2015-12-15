@@ -117,6 +117,6 @@ class PlaystationBrowser extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 74458;
+        return 3;
     }
 }

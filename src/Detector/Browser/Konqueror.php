@@ -170,6 +170,6 @@ class Konqueror extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 36711;
+        return 3;
     }
 }

@@ -141,7 +141,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
      */
     public function getWeight()
     {
-        return 26185;
+        return 3;
     }
 
     /**

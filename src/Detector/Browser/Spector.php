@@ -117,7 +117,7 @@ class Spector extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 29;
+        return 3;
     }
 
     /**

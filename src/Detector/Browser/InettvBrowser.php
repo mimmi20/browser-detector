@@ -132,7 +132,7 @@ class InettvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 1996;
+        return 3;
     }
 
     /**

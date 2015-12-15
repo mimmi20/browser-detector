@@ -77,72 +77,9 @@ class AppleMail extends AbstractBrowser implements BrowserHasSpecificEngineInter
             return true;
         }
 
-        if (!$this->utils->checkIfContains('Mozilla/') || $this->utils->checkIfContains(
-            'Safari'
-        ) || $this->utils->checkIfContains('Mobile')
-        ) {
-            return false;
-        }
+        $regex = '/Mozilla\/5\.0.*\(.*(CPU iPhone OS|CPU OS) \d+(_|\.)\d+.* like Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)/';
 
-        if (!$this->utils->checkIfContains(array('AppleWebKit', 'CFNetwork'))) {
-            return false;
-        }
-
-        $isNotReallyAnAppleMailClient = array(
-            // using also the KHTML rendering engine
-            '1Password',
-            'AdobeAIR',
-            'Arora',
-            'BlackBerry',
-            'BrowserNG',
-            'Chrome',
-            'Chromium',
-            'Dolfin',
-            'Dreamweaver',
-            'Epiphany',
-            'FBAN/',
-            'FBAV/',
-            'FBForIPhone',
-            'Flock',
-            'Galeon',
-            'Google Earth',
-            'iCab',
-            'Iron',
-            'konqueror',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Midori',
-            'MQQBrowser',
-            'NokiaBrowserInterface',
-            'OmniWeb',
-            'Origin',
-            'PaleMoon',
-            'PhantomJS',
-            'Qt',
-            'QuickLook',
-            'QupZilla',
-            'rekonq',
-            'Rockmelt',
-            'Silk',
-            'Shiira',
-            'WebBrowser',
-            'WebClip',
-            'WeTab',
-            'wOSBrowser',
-            'ABrowse',
-            //mobile Version
-            'Tablet',
-            'Android',
-            // Fakes/Bots
-            'Mac; Mac OS ',
-            'BingPreview',
-            'Mediapartners-Google',
-            'bot',
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnAppleMailClient)) {
+        if (!preg_match($regex, $this->useragent)) {
             return false;
         }
 
@@ -186,7 +123,7 @@ class AppleMail extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 115;
+        return 3;
     }
 
     /**

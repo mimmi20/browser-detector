@@ -121,7 +121,7 @@ class Bot360 extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 13827;
+        return 3;
     }
 
     /**

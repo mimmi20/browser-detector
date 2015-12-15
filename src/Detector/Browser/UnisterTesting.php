@@ -135,7 +135,7 @@ class UnisterTesting extends AbstractBrowser implements BrowserCalculatesAlterna
      */
     public function getWeight()
     {
-        return 161860168;
+        return 3;
     }
 
     /**

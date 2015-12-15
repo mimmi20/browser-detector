@@ -132,7 +132,7 @@ class Terra extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 1104;
+        return 3;
     }
 
     /**

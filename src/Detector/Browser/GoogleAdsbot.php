@@ -136,7 +136,7 @@ class GoogleAdsbot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 410017;
+        return 3;
     }
 
     /**

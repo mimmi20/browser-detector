@@ -158,6 +158,6 @@ class Lunascape extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 30814;
+        return 3;
     }
 }

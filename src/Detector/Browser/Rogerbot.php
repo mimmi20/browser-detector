@@ -132,7 +132,7 @@ class Rogerbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 211018;
+        return 3;
     }
 
     /**

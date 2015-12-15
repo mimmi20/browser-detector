@@ -132,7 +132,7 @@ class AdobeAIR extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 729;
+        return 3;
     }
 
     /**

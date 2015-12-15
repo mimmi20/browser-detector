@@ -135,7 +135,7 @@ class GoogleWebPreview extends AbstractBrowser implements BrowserCalculatesAlter
      */
     public function getWeight()
     {
-        return 9;
+        return 3;
     }
 
     /**

@@ -155,7 +155,7 @@ class Chromium extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getWeight()
     {
-        return 302204;
+        return 3;
     }
 
     /**

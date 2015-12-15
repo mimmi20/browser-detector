@@ -130,7 +130,7 @@ class RankFlex extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 426;
+        return 3;
     }
 
     /**

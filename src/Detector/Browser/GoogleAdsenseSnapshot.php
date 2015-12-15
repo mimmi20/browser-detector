@@ -132,7 +132,7 @@ class GoogleAdsenseSnapshot extends AbstractBrowser implements BrowserHasSpecifi
      */
     public function getWeight()
     {
-        return 2654;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class GoogleAdsbotMobile extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getWeight()
     {
-        return 10873;
+        return 3;
     }
 
     /**

@@ -117,7 +117,7 @@ class LinkCheckerBot extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 1594;
+        return 3;
     }
 
     /**

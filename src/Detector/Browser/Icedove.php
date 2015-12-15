@@ -143,7 +143,7 @@ class Icedove extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 774;
+        return 3;
     }
 
     /**

@@ -130,7 +130,7 @@ class R6Feedfetcher extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 25;
+        return 3;
     }
 
     /**

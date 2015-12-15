@@ -135,7 +135,7 @@ class SlimBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class ExbLanguageCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getWeight()
     {
-        return 2051;
+        return 3;
     }
 
     /**

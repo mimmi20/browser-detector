@@ -133,7 +133,7 @@ class SeznamBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 20469;
+        return 3;
     }
 
     /**

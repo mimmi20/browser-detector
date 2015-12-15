@@ -156,7 +156,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 12755;
+        return 3;
     }
 
     /**

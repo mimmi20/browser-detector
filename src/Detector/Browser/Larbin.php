@@ -132,7 +132,7 @@ class Larbin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 5887;
+        return 3;
     }
 
     /**

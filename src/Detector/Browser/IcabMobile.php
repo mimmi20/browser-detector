@@ -154,7 +154,7 @@ class IcabMobile extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 1685;
+        return 3;
     }
 
     /**

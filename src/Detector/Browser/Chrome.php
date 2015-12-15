@@ -215,7 +215,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
      */
     public function getWeight()
     {
-        return 116398328;
+        return 30000;
     }
 
     /**

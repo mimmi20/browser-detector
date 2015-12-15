@@ -116,7 +116,7 @@ class ThumbShotsBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 14954;
+        return 3;
     }
 
     /**

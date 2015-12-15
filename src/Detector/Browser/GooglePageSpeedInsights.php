@@ -135,7 +135,7 @@ class GooglePageSpeedInsights extends AbstractBrowser implements BrowserCalculat
      */
     public function getWeight()
     {
-        return 9;
+        return 3;
     }
 
     /**

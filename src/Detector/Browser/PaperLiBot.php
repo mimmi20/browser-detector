@@ -117,7 +117,7 @@ class PaperLiBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 1728;
+        return 3;
     }
 
     /**

@@ -117,7 +117,7 @@ class RamblerMail extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 7659;
+        return 3;
     }
 
     /**

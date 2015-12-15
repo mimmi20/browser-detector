@@ -117,7 +117,7 @@ class Findlinks extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 5293;
+        return 3;
     }
 
     /**

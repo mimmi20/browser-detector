@@ -132,7 +132,7 @@ class PublicLibraryArchive extends AbstractBrowser implements BrowserHasSpecific
      */
     public function getWeight()
     {
-        return 32;
+        return 3;
     }
 
     /**

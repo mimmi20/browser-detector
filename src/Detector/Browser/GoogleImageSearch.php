@@ -137,7 +137,7 @@ class GoogleImageSearch extends AbstractBrowser implements BrowserCalculatesAlte
      */
     public function getWeight()
     {
-        return 1945836;
+        return 3;
     }
 
     /**

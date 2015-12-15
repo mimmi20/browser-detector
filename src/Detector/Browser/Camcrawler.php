@@ -132,7 +132,7 @@ class Camcrawler extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 28;
+        return 3;
     }
 
     /**

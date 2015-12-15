@@ -116,7 +116,7 @@ class CrystalSemanticsBot extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getWeight()
     {
-        return 4619;
+        return 3;
     }
 
     /**

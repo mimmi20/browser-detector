@@ -133,7 +133,7 @@ class Beamrise extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 1190;
+        return 3;
     }
 
     /**

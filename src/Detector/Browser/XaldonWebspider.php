@@ -116,7 +116,7 @@ class XaldonWebspider extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 20;
+        return 3;
     }
 
     /**

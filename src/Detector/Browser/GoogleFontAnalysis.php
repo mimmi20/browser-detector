@@ -136,7 +136,7 @@ class GoogleFontAnalysis extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getWeight()
     {
-        return 577;
+        return 3;
     }
 
     /**

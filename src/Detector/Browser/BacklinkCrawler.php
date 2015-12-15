@@ -116,7 +116,7 @@ class BacklinkCrawler extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 5959;
+        return 3;
     }
 
     /**

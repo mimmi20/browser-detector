@@ -132,7 +132,7 @@ class WaybackArchive extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 3406;
+        return 3;
     }
 
     /**

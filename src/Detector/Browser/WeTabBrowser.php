@@ -116,7 +116,7 @@ class WeTabBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

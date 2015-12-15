@@ -131,6 +131,6 @@ class SogouExplorer extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 116398329;
+        return 3;
     }
 }

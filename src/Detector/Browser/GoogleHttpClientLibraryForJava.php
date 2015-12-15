@@ -132,7 +132,7 @@ class GoogleHttpClientLibraryForJava extends AbstractBrowser implements BrowserH
      */
     public function getWeight()
     {
-        return 375779;
+        return 3;
     }
 
     /**

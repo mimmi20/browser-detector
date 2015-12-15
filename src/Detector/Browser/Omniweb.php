@@ -132,7 +132,7 @@ class Omniweb extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 3487;
+        return 3;
     }
 
     /**

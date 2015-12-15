@@ -132,6 +132,6 @@ class NetFrontNx extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 9846;
+        return 3;
     }
 }

@@ -136,7 +136,7 @@ class CurlPhp extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 60;
+        return 3;
     }
 
     /**

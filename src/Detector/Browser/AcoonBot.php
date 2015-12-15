@@ -132,7 +132,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 32;
+        return 3;
     }
 
     /**

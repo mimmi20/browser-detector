@@ -132,7 +132,7 @@ class SemrushBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 23794;
+        return 3;
     }
 
     /**

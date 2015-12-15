@@ -117,7 +117,7 @@ class Maven extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 92;
+        return 3;
     }
 
     /**

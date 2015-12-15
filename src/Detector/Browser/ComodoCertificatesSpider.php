@@ -132,7 +132,7 @@ class ComodoCertificatesSpider extends AbstractBrowser implements BrowserHasSpec
      */
     public function getWeight()
     {
-        return 646;
+        return 3;
     }
 
     /**

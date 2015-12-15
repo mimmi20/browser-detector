@@ -149,7 +149,7 @@ class Dolfin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 114193;
+        return 3;
     }
 
     /**

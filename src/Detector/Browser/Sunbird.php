@@ -177,7 +177,7 @@ class Sunbird extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

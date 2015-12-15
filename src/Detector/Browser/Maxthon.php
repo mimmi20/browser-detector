@@ -169,7 +169,7 @@ class Maxthon extends AbstractBrowser implements BrowserHasWurflKeyInterface
      */
     public function getWeight()
     {
-        return 497330;
+        return 3;
     }
 
     /**

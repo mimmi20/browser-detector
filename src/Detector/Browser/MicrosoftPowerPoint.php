@@ -164,6 +164,6 @@ class MicrosoftPowerPoint extends MicrosoftOffice
      */
     public function getWeight()
     {
-        return 126410;
+        return 3;
     }
 }

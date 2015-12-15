@@ -132,7 +132,7 @@ class NewsBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 1094;
+        return 3;
     }
 
     /**

@@ -158,7 +158,7 @@ class Icab extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 1685;
+        return 3;
     }
 
     /**

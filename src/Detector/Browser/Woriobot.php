@@ -116,7 +116,7 @@ class Woriobot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 12;
+        return 3;
     }
 
     /**

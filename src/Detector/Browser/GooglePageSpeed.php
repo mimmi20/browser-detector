@@ -139,7 +139,7 @@ class GooglePageSpeed extends AbstractBrowser implements BrowserCalculatesAltern
      */
     public function getWeight()
     {
-        return 9;
+        return 3;
     }
 
     /**

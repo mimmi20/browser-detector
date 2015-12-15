@@ -117,7 +117,7 @@ class IisBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 10460;
+        return 3;
     }
 
     /**

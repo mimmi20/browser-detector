@@ -132,7 +132,7 @@ class Elefent extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 322;
+        return 3;
     }
 
     /**

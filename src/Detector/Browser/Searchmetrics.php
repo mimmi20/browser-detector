@@ -116,7 +116,7 @@ class Searchmetrics extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 53897;
+        return 3;
     }
 
     /**

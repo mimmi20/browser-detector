@@ -117,7 +117,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 866;
+        return 3;
     }
 
     /**

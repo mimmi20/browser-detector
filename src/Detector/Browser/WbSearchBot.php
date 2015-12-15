@@ -132,7 +132,7 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 8829;
+        return 3;
     }
 
     /**

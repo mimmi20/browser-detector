@@ -132,7 +132,7 @@ class MsieCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 3597;
+        return 3;
     }
 
     /**

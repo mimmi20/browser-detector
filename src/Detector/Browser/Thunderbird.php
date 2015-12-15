@@ -157,7 +157,7 @@ class Thunderbird extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 962445;
+        return 3;
     }
 
     /**

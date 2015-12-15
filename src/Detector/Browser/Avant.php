@@ -128,6 +128,6 @@ class Avant extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 1983;
+        return 3;
     }
 }

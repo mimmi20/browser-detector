@@ -132,7 +132,7 @@ class FeedBlitz extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

@@ -157,7 +157,7 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
      */
     public function getWeight()
     {
-        return 13249665;
+        return 3;
     }
 
     /**

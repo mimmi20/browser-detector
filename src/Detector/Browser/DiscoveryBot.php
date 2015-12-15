@@ -132,7 +132,7 @@ class DiscoveryBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 850;
+        return 3;
     }
 
     /**

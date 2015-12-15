@@ -132,7 +132,7 @@ class SeoEngineWorldBot extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getWeight()
     {
-        return 1662;
+        return 3;
     }
 
     /**

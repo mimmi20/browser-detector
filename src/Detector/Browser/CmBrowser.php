@@ -131,7 +131,7 @@ class CmBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 1190;
+        return 3;
     }
 
     /**

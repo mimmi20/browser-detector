@@ -130,7 +130,7 @@ class Metager2VerificationBot extends AbstractBrowser implements BrowserHasSpeci
      */
     public function getWeight()
     {
-        return 1094;
+        return 3;
     }
 
     /**

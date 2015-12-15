@@ -132,7 +132,7 @@ class AtomicBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 1190;
+        return 3;
     }
 
     /**

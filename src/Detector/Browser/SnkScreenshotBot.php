@@ -132,7 +132,7 @@ class SnkScreenshotBot extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 992;
+        return 3;
     }
 
     /**

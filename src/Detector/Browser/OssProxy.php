@@ -117,7 +117,7 @@ class OssProxy extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 5298;
+        return 3;
     }
 
     /**

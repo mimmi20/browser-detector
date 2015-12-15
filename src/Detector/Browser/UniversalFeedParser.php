@@ -132,7 +132,7 @@ class UniversalFeedParser extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

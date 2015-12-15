@@ -132,7 +132,7 @@ class ApacheHttpClient extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 3368;
+        return 3;
     }
 
     /**

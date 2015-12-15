@@ -234,7 +234,7 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasWurflKeyInter
      */
     public function getWeight()
     {
-        return 3485393;
+        return 3;
     }
 
     /**

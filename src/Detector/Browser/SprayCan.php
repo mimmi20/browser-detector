@@ -132,7 +132,7 @@ class SprayCan extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 300;
+        return 3;
     }
 
     /**

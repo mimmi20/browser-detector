@@ -132,7 +132,7 @@ class PicmoleBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

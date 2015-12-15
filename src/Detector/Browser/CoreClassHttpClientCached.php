@@ -132,7 +132,7 @@ class CoreClassHttpClientCached extends AbstractBrowser implements BrowserHasSpe
      */
     public function getWeight()
     {
-        return 3315624;
+        return 3;
     }
 
     /**

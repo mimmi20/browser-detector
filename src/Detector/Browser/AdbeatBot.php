@@ -132,7 +132,7 @@ class AdbeatBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 5407;
+        return 3;
     }
 
     /**

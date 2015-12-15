@@ -132,7 +132,7 @@ class FinderleinResearchCrawler extends AbstractBrowser implements BrowserHasSpe
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

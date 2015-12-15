@@ -132,7 +132,7 @@ class QupZilla extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 196;
+        return 3;
     }
 
     /**

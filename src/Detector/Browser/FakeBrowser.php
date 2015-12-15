@@ -120,7 +120,7 @@ class FakeBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 899739;
+        return 3;
     }
 
     /**

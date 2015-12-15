@@ -130,7 +130,7 @@ class TagInspectorBot extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

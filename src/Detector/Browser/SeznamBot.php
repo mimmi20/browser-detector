@@ -132,7 +132,7 @@ class SeznamBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 20469;
+        return 3;
     }
 
     /**

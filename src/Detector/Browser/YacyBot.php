@@ -116,7 +116,7 @@ class YacyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 10625;
+        return 3;
     }
 
     /**

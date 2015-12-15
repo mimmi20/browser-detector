@@ -132,7 +132,7 @@ class Typo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 2;
+        return 3;
     }
 
     /**

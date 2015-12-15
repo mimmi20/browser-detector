@@ -135,7 +135,7 @@ class BlackberryPlaybookTablet extends AbstractBrowser implements BrowserHasSpec
      */
     public function getWeight()
     {
-        return 80286;
+        return 3;
     }
 
     /**

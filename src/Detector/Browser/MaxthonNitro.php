@@ -130,6 +130,6 @@ class MaxthonNitro extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 49;
+        return 3;
     }
 }

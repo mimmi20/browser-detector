@@ -117,7 +117,7 @@ class ScreamingFrogSeoSpider extends AbstractBrowser implements BrowserHasSpecif
      */
     public function getWeight()
     {
-        return 1132;
+        return 3;
     }
 
     /**

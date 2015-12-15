@@ -157,7 +157,7 @@ class Iceowl extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 63;
+        return 3;
     }
 
     /**

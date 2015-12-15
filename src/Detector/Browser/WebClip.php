@@ -136,7 +136,7 @@ class WebClip extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 5217;
+        return 3;
     }
 
     /**

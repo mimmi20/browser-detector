@@ -138,7 +138,7 @@ class Bingbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 1993194;
+        return 3;
     }
 
     /**

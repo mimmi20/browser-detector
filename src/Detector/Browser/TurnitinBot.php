@@ -132,7 +132,7 @@ class TurnitinBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 12753;
+        return 3;
     }
 
     /**

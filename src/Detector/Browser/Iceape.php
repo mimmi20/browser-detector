@@ -141,7 +141,7 @@ class Iceape extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 6341;
+        return 3;
     }
 
     /**

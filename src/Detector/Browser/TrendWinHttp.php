@@ -117,7 +117,7 @@ class TrendWinHttp extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 5;
+        return 3;
     }
 
     /**

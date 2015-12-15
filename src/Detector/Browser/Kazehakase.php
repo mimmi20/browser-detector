@@ -132,7 +132,7 @@ class Kazehakase extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 53545;
+        return 3;
     }
 
     /**

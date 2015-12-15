@@ -132,7 +132,7 @@ class PythonUrlLib extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 7;
+        return 3;
     }
 
     /**

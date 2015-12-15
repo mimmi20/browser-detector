@@ -117,7 +117,7 @@ class JigsawCssValidator extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getWeight()
     {
-        return 1190;
+        return 3;
     }
 
     /**

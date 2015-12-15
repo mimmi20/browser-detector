@@ -120,7 +120,7 @@ class TestCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 2;
+        return 3;
     }
 
     /**

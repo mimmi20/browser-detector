@@ -133,6 +133,6 @@ class SailfishBrowser extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 50;
+        return 3;
     }
 }

@@ -132,7 +132,7 @@ class Zookabot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 20;
+        return 3;
     }
 
     /**

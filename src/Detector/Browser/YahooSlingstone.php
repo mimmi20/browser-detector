@@ -116,7 +116,7 @@ class YahooSlingstone extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 32526;
+        return 3;
     }
 
     /**

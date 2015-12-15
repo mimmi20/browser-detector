@@ -117,7 +117,7 @@ class LingueeBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 2922;
+        return 3;
     }
 
     /**

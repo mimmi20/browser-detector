@@ -164,6 +164,6 @@ class MicrosoftExcel extends MicrosoftOffice
      */
     public function getWeight()
     {
-        return 80;
+        return 3;
     }
 }

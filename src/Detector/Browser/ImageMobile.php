@@ -132,7 +132,7 @@ class ImageMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 5;
+        return 3;
     }
 
     /**

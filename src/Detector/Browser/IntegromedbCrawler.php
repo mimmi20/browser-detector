@@ -117,7 +117,7 @@ class IntegromedbCrawler extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getWeight()
     {
-        return 77417;
+        return 3;
     }
 
     /**

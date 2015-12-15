@@ -135,7 +135,7 @@ class WaterFox extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      */
     public function getWeight()
     {
-        return 10;
+        return 3;
     }
 
     /**

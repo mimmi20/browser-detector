@@ -130,6 +130,6 @@ class SamsungBrowser extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 6943;
+        return 3;
     }
 }

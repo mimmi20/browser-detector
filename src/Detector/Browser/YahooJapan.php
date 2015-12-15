@@ -116,7 +116,7 @@ class YahooJapan extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 325;
+        return 3;
     }
 
     /**

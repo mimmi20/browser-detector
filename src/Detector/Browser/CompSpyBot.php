@@ -132,7 +132,7 @@ class CompSpyBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 820;
+        return 3;
     }
 
     /**

@@ -115,7 +115,7 @@ class Winwap extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 29;
+        return 3;
     }
 
     /**

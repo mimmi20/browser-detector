@@ -164,7 +164,7 @@ class Seamonkey extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 665801;
+        return 3;
     }
 
     /**

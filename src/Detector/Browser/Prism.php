@@ -174,7 +174,7 @@ class Prism extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 743;
+        return 3;
     }
 
     /**

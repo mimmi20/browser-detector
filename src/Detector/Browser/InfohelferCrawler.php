@@ -132,7 +132,7 @@ class InfohelferCrawler extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getWeight()
     {
-        return 7491;
+        return 3;
     }
 
     /**

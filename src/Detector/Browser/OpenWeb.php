@@ -117,7 +117,7 @@ class OpenWeb extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 676;
+        return 3;
     }
 
     /**

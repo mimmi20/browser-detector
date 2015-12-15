@@ -132,7 +132,7 @@ class LtBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 4237;
+        return 3;
     }
 
     /**

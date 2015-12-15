@@ -132,7 +132,7 @@ class IcjobsCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 59675;
+        return 3;
     }
 
     /**

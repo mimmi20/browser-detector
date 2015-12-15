@@ -136,7 +136,7 @@ class Voilabot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 562;
+        return 3;
     }
 
     /**

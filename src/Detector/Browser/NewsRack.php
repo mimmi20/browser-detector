@@ -132,7 +132,7 @@ class NewsRack extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 5;
+        return 3;
     }
 
     /**

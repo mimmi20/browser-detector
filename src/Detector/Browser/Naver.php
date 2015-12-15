@@ -132,7 +132,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 1916;
+        return 3;
     }
 
     /**

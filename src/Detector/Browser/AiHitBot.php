@@ -132,7 +132,7 @@ class AiHitBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 125;
+        return 3;
     }
 
     /**

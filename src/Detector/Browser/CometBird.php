@@ -162,7 +162,7 @@ class CometBird extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 9076;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class Ezooms extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 170919;
+        return 3;
     }
 
     /**

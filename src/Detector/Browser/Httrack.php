@@ -132,7 +132,7 @@ class Httrack extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 202976;
+        return 3;
     }
 
     /**

@@ -130,6 +130,6 @@ class GoogleMarkupTester extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 9;
+        return 3;
     }
 }

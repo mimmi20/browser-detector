@@ -132,7 +132,7 @@ class WindowsLiveMail extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 995343;
+        return 3;
     }
 
     /**

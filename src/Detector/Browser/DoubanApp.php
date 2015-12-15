@@ -117,7 +117,7 @@ class DoubanApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 7;
+        return 3;
     }
 
     /**

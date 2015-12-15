@@ -132,7 +132,7 @@ class WooRank extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 14;
+        return 3;
     }
 
     /**

@@ -135,7 +135,7 @@ class SmartTvWebBrowser extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getWeight()
     {
-        return 7223;
+        return 3;
     }
 
     /**

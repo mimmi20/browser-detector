@@ -132,7 +132,7 @@ class FeedFinder extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 10;
+        return 3;
     }
 
     /**

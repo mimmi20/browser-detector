@@ -150,7 +150,7 @@ class Googlebot extends AbstractBrowser implements BrowserCalculatesAlternativeR
      */
     public function getWeight()
     {
-        return 1945836;
+        return 3;
     }
 
     /**

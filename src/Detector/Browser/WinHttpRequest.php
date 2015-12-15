@@ -121,7 +121,7 @@ class WinHttpRequest extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 430;
+        return 3;
     }
 
     /**

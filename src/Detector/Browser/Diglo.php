@@ -133,7 +133,7 @@ class Diglo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 1190;
+        return 3;
     }
 
     /**

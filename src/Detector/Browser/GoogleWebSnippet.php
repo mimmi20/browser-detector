@@ -116,7 +116,7 @@ class GoogleWebSnippet extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 5;
+        return 3;
     }
 
     /**

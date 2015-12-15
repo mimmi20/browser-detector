@@ -132,7 +132,7 @@ class ContextadBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 800;
+        return 3;
     }
 
     /**

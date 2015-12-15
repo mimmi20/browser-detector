@@ -132,7 +132,7 @@ class Plukkie extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 339;
+        return 3;
     }
 
     /**

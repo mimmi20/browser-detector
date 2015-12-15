@@ -143,7 +143,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 383409;
+        return 3;
     }
 
     /**

@@ -116,7 +116,7 @@ class YahooExternalCache extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getWeight()
     {
-        return 23136;
+        return 3;
     }
 
     /**

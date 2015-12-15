@@ -132,7 +132,7 @@ class PagePeeker extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 4045;
+        return 3;
     }
 
     /**

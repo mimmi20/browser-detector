@@ -213,7 +213,7 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
      */
     public function getWeight()
     {
-        return 330161978;
+        return 10000;
     }
 
     /**

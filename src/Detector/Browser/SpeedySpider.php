@@ -132,7 +132,7 @@ class SpeedySpider extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 19;
+        return 3;
     }
 
     /**

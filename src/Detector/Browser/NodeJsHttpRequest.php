@@ -117,7 +117,7 @@ class NodeJsHttpRequest extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getWeight()
     {
-        return 12;
+        return 3;
     }
 
     /**

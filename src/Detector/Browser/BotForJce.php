@@ -132,7 +132,7 @@ class BotForJce extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 5;
+        return 3;
     }
 
     /**

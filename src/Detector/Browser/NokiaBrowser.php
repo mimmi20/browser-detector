@@ -134,6 +134,6 @@ class NokiaBrowser extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 260003;
+        return 3;
     }
 }

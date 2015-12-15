@@ -132,7 +132,7 @@ class SpiderLing extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 3712;
+        return 3;
     }
 
     /**

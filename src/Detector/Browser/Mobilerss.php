@@ -132,7 +132,7 @@ class Mobilerss extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 2;
+        return 3;
     }
 
     /**

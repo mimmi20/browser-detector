@@ -174,7 +174,7 @@ class Firebird extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 3817;
+        return 3;
     }
 
     /**

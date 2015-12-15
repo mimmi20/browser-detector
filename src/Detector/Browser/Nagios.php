@@ -133,7 +133,7 @@ class Nagios extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 14476;
+        return 3;
     }
 
     /**

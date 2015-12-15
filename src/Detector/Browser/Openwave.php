@@ -144,6 +144,6 @@ class Openwave extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 100;
+        return 3;
     }
 }

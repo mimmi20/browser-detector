@@ -162,6 +162,6 @@ class Epiphany extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 12063;
+        return 3;
     }
 }

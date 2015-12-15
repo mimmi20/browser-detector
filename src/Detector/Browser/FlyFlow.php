@@ -132,7 +132,7 @@ class FlyFlow extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 873;
+        return 3;
     }
 
     /**

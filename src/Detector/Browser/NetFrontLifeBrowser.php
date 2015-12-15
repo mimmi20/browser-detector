@@ -141,7 +141,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getWeight()
     {
-        return 83;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class AhrefsBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 337381;
+        return 3;
     }
 
     /**

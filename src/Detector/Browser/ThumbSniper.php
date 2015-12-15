@@ -116,7 +116,7 @@ class ThumbSniper extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 2391;
+        return 3;
     }
 
     /**

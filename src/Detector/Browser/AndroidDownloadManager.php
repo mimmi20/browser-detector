@@ -117,7 +117,7 @@ class AndroidDownloadManager extends AbstractBrowser implements BrowserHasSpecif
      */
     public function getWeight()
     {
-        return 1240;
+        return 3;
     }
 
     /**

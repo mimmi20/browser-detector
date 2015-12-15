@@ -132,7 +132,7 @@ class MacInroyPrivacyAuditors extends AbstractBrowser implements BrowserHasSpeci
      */
     public function getWeight()
     {
-        return 53;
+        return 3;
     }
 
     /**

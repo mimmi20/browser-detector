@@ -132,7 +132,7 @@ class DCPbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 373;
+        return 3;
     }
 
     /**

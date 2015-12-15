@@ -130,6 +130,6 @@ class Insitesbot extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 1390;
+        return 3;
     }
 }

@@ -141,6 +141,6 @@ class Blackberry extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 216731;
+        return 3;
     }
 }

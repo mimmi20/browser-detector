@@ -117,7 +117,7 @@ class FrCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 1132;
+        return 3;
     }
 
     /**

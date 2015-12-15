@@ -132,7 +132,7 @@ class MagpieCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 743;
+        return 3;
     }
 
     /**

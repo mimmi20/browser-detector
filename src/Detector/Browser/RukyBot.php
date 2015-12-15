@@ -132,7 +132,7 @@ class RukyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 344;
+        return 3;
     }
 
     /**

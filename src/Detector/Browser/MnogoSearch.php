@@ -132,7 +132,7 @@ class MnogoSearch extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 437;
+        return 3;
     }
 
     /**

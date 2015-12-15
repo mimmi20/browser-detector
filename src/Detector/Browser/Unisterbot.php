@@ -136,7 +136,7 @@ class Unisterbot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 106656;
+        return 3;
     }
 
     /**

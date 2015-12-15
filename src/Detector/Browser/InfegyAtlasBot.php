@@ -115,7 +115,7 @@ class InfegyAtlasBot extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 835;
+        return 3;
     }
 
     /**

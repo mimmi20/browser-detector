@@ -132,7 +132,7 @@ class AskBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 717;
+        return 3;
     }
 
     /**

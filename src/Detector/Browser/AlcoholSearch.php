@@ -119,7 +119,7 @@ class AlcoholSearch extends AbstractBrowser implements BrowserCalculatesAlternat
      */
     public function getWeight()
     {
-        return 3868;
+        return 3;
     }
 
     /**

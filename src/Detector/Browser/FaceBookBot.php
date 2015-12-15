@@ -137,7 +137,7 @@ class FaceBookBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 206369;
+        return 3;
     }
 
     /**

@@ -171,7 +171,7 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
      */
     public function getWeight()
     {
-        return 705618;
+        return 3;
     }
 
     /**

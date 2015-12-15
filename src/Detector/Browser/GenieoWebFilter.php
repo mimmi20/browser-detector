@@ -115,7 +115,7 @@ class GenieoWebFilter extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 1629;
+        return 3;
     }
 
     /**

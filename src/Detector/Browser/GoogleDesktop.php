@@ -132,7 +132,7 @@ class GoogleDesktop extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 49124;
+        return 3;
     }
 
     /**

@@ -114,6 +114,6 @@ class TwitterApp extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 277;
+        return 3;
     }
 }

@@ -117,7 +117,7 @@ class WebkitWebos extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 92364;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class CommonCrawl extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 246;
+        return 3;
     }
 
     /**

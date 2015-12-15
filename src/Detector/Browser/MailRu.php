@@ -132,7 +132,7 @@ class MailRu extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 15082;
+        return 3;
     }
 
     /**

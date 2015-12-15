@@ -132,7 +132,7 @@ class Picsearchbot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 2486;
+        return 3;
     }
 
     /**

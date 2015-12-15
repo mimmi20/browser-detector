@@ -149,6 +149,6 @@ class Flock extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 11455;
+        return 3;
     }
 }

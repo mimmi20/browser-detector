@@ -156,7 +156,7 @@ class Arora extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 1983;
+        return 3;
     }
 
     /**

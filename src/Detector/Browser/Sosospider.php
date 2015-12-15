@@ -136,7 +136,7 @@ class Sosospider extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 588;
+        return 3;
     }
 
     /**

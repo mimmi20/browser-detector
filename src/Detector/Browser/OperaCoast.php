@@ -115,7 +115,7 @@ class OperaCoast extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 23;
+        return 3;
     }
 
     /**

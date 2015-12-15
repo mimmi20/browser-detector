@@ -132,7 +132,7 @@ class Php extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 31809903;
+        return 3;
     }
 
     /**

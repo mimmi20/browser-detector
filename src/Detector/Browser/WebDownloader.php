@@ -117,7 +117,7 @@ class WebDownloader extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 693;
+        return 3;
     }
 
     /**

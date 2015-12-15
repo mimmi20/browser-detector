@@ -117,7 +117,7 @@ class SsearchCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 3431;
+        return 3;
     }
 
     /**

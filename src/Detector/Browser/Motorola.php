@@ -122,7 +122,7 @@ class Motorola extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 71;
+        return 3;
     }
 
     /**

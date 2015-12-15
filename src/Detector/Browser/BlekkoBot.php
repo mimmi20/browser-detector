@@ -132,7 +132,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 513;
+        return 3;
     }
 
     /**

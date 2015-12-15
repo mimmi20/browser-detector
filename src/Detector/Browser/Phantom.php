@@ -120,7 +120,7 @@ class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 2885;
+        return 3;
     }
 
     /**

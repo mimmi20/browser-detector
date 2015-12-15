@@ -117,7 +117,7 @@ class ArchiveDeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 426;
+        return 3;
     }
 
     /**

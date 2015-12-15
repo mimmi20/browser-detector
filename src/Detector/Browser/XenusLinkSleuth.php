@@ -120,7 +120,7 @@ class XenusLinkSleuth extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 4930;
+        return 3;
     }
 
     /**

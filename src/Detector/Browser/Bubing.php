@@ -132,7 +132,7 @@ class Bubing extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 5;
+        return 3;
     }
 
     /**

@@ -117,7 +117,7 @@ class Experibot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 10625;
+        return 3;
     }
 
     /**

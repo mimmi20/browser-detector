@@ -136,7 +136,7 @@ class JakartaCommonsHttpClient extends AbstractBrowser implements BrowserHasSpec
      */
     public function getWeight()
     {
-        return 1087189;
+        return 3;
     }
 
     /**

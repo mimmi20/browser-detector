@@ -117,7 +117,7 @@ class Genieo extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 1629;
+        return 3;
     }
 
     /**

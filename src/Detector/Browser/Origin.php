@@ -132,7 +132,7 @@ class Origin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 834;
+        return 3;
     }
 
     /**

@@ -117,7 +117,7 @@ class DotBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 1132;
+        return 3;
     }
 
     /**

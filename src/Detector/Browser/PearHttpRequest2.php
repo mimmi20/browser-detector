@@ -132,7 +132,7 @@ class PearHttpRequest2 extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 189;
+        return 3;
     }
 
     /**

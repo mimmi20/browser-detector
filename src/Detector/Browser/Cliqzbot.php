@@ -132,7 +132,7 @@ class Cliqzbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 56;
+        return 3;
     }
 
     /**

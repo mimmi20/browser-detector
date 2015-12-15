@@ -135,7 +135,7 @@ class GoogleAdSenseBot extends AbstractBrowser implements BrowserCalculatesAlter
      */
     public function getWeight()
     {
-        return 509949;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class ZumBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 390259;
+        return 3;
     }
 
     /**

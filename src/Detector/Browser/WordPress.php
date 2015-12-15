@@ -132,7 +132,7 @@ class WordPress extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 4686;
+        return 3;
     }
 
     /**

@@ -136,7 +136,7 @@ class W3cValidator extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 627;
+        return 3;
     }
 
     /**

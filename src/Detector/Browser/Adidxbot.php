@@ -132,7 +132,7 @@ class Adidxbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 1993194;
+        return 3;
     }
 
     /**

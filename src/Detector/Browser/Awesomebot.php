@@ -132,7 +132,7 @@ class Awesomebot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 31;
+        return 3;
     }
 
     /**

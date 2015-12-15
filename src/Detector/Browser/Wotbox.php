@@ -117,7 +117,7 @@ class Wotbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 4776;
+        return 3;
     }
 
     /**

@@ -156,7 +156,7 @@ class IceCat extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 86;
+        return 3;
     }
 
     /**

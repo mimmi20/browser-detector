@@ -132,7 +132,7 @@ class OpenHoseBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 1094;
+        return 3;
     }
 
     /**

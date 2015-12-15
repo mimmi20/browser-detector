@@ -136,7 +136,7 @@ class Python extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 71248;
+        return 3;
     }
 
     /**

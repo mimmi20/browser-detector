@@ -132,7 +132,7 @@ class DiscoverEd extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 8;
+        return 3;
     }
 
     /**

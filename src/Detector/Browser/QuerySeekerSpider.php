@@ -117,7 +117,7 @@ class QuerySeekerSpider extends AbstractBrowser implements BrowserHasSpecificEng
      */
     public function getWeight()
     {
-        return 689;
+        return 3;
     }
 
     /**

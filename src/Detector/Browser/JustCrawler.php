@@ -132,7 +132,7 @@ class JustCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 14;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class ScrapyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 127239;
+        return 3;
     }
 
     /**

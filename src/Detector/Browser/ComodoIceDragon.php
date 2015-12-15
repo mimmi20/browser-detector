@@ -151,7 +151,7 @@ class ComodoIceDragon extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 7960;
+        return 3;
     }
 
     /**

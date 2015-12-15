@@ -149,7 +149,7 @@ class Jasmine extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 2418;
+        return 3;
     }
 
     /**

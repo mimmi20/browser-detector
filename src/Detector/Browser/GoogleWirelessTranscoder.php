@@ -132,7 +132,7 @@ class GoogleWirelessTranscoder extends AbstractBrowser implements BrowserHasSpec
      */
     public function getWeight()
     {
-        return 44297;
+        return 3;
     }
 
     /**

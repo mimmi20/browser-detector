@@ -140,7 +140,7 @@ class Qt extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 1884243;
+        return 3;
     }
 
     /**

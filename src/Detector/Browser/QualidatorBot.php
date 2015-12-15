@@ -132,7 +132,7 @@ class QualidatorBot extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 332;
+        return 3;
     }
 
     /**

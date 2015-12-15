@@ -173,7 +173,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 627;
+        return 3;
     }
 
     /**

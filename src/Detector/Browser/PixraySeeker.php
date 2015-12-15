@@ -132,7 +132,7 @@ class PixraySeeker extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 17389;
+        return 3;
     }
 
     /**

@@ -151,7 +151,7 @@ class Galeon extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 2742;
+        return 3;
     }
 
     /**

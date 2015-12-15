@@ -117,7 +117,7 @@ class BnfFrBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 1132;
+        return 3;
     }
 
     /**

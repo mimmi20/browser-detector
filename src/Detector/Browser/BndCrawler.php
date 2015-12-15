@@ -117,7 +117,7 @@ class BndCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 884;
+        return 3;
     }
 
     /**

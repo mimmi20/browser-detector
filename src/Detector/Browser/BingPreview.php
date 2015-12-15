@@ -132,7 +132,7 @@ class BingPreview extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 284717;
+        return 3;
     }
 
     /**

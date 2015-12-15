@@ -117,7 +117,7 @@ class Steeler extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 831;
+        return 3;
     }
 
     /**

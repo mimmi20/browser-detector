@@ -136,7 +136,7 @@ class Mj12bot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 422276;
+        return 3;
     }
 
     /**

@@ -129,7 +129,7 @@ class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 32526;
+        return 3;
     }
 
     /**

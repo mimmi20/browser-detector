@@ -132,7 +132,7 @@ class Mozad extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 3118;
+        return 3;
     }
 
     /**

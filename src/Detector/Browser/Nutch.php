@@ -138,7 +138,7 @@ class Nutch extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 8116;
+        return 3;
     }
 
     /**

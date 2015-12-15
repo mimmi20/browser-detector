@@ -132,7 +132,7 @@ class DolphinSmalltalkHttpClient extends AbstractBrowser implements BrowserHasSp
      */
     public function getWeight()
     {
-        return 4;
+        return 3;
     }
 
     /**

@@ -135,7 +135,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasWurflKeyInterfa
      */
     public function getWeight()
     {
-        return 58;
+        return 3;
     }
 
     /**

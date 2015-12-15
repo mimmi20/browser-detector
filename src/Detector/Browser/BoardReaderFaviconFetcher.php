@@ -132,7 +132,7 @@ class BoardReaderFaviconFetcher extends AbstractBrowser implements BrowserHasSpe
      */
     public function getWeight()
     {
-        return 6;
+        return 3;
     }
 
     /**

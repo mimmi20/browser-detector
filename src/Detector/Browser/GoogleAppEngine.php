@@ -116,7 +116,7 @@ class GoogleAppEngine extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 2627;
+        return 3;
     }
 
     /**

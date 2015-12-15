@@ -117,7 +117,7 @@ class SquidWall extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 1855;
+        return 3;
     }
 
     /**

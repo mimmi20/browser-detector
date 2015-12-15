@@ -132,7 +132,7 @@ class UrlAppendBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 19073;
+        return 3;
     }
 
     /**

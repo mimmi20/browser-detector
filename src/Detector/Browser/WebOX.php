@@ -132,7 +132,7 @@ class WebOX extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 575;
+        return 3;
     }
 
     /**

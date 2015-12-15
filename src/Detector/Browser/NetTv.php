@@ -139,7 +139,7 @@ class NetTv extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 7066;
+        return 3;
     }
 
     /**

@@ -132,6 +132,6 @@ class BingProductsBot extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 19;
+        return 3;
     }
 }

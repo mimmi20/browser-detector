@@ -132,7 +132,7 @@ class ShowyouBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 520;
+        return 3;
     }
 
     /**

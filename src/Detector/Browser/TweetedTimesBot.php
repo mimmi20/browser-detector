@@ -117,7 +117,7 @@ class TweetedTimesBot extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 1825;
+        return 3;
     }
 
     /**

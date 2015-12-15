@@ -130,6 +130,6 @@ class Mercury extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 1235;
+        return 3;
     }
 }

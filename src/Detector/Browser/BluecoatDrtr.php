@@ -132,7 +132,7 @@ class BluecoatDrtr extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 504;
+        return 3;
     }
 
     /**

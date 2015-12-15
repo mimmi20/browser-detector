@@ -132,7 +132,7 @@ class InternetArchive extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getWeight()
     {
-        return 3406;
+        return 3;
     }
 
     /**

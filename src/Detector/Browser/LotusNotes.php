@@ -134,6 +134,6 @@ class LotusNotes extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 14993;
+        return 3;
     }
 }

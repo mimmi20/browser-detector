@@ -132,7 +132,7 @@ class SiteKiosk extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 2014;
+        return 3;
     }
 
     /**

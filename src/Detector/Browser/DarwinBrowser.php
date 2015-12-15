@@ -120,7 +120,7 @@ class DarwinBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 990;
+        return 3;
     }
 
     /**

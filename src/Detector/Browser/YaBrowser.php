@@ -118,7 +118,7 @@ class YaBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 35320;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class Bwc extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 19;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class Dalvik extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 5179;
+        return 3;
     }
 
     /**

@@ -132,7 +132,7 @@ class Rss2Html extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getWeight()
     {
-        return 10;
+        return 3;
     }
 
     /**

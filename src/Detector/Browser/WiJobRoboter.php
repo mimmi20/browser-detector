@@ -132,7 +132,7 @@ class WiJobRoboter extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 24999;
+        return 3;
     }
 
     /**

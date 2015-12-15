@@ -130,7 +130,7 @@ class GoogleStructuredDataTestingTool extends AbstractBrowser implements Browser
      */
     public function getWeight()
     {
-        return 375779;
+        return 3;
     }
 
     /**

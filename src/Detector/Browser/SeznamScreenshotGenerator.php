@@ -132,7 +132,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getWeight()
     {
-        return 7360;
+        return 3;
     }
 
     /**

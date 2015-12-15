@@ -132,7 +132,7 @@ class MicrosoftEdge extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 369968046;
+        return 50000;
     }
 
     /**

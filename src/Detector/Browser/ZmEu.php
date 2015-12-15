@@ -116,7 +116,7 @@ class ZmEu extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 5813;
+        return 3;
     }
 
     /**

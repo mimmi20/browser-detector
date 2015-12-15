@@ -132,7 +132,7 @@ class YandexBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 390259;
+        return 3;
     }
 
     /**

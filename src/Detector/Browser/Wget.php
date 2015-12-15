@@ -132,7 +132,7 @@ class Wget extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getWeight()
     {
-        return 516772;
+        return 3;
     }
 
     /**

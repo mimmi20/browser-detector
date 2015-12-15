@@ -132,7 +132,7 @@ class Spiderlytics extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 18198;
+        return 3;
     }
 
     /**

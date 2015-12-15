@@ -132,7 +132,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 354;
+        return 3;
     }
 
     /**

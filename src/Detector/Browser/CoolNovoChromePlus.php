@@ -131,6 +131,6 @@ class CoolNovoChromePlus extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 7;
+        return 3;
     }
 }

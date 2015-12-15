@@ -132,7 +132,7 @@ class Seoprofiler extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 1751;
+        return 3;
     }
 
     /**

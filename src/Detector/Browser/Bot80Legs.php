@@ -117,7 +117,7 @@ class Bot80Legs extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 10679;
+        return 3;
     }
 
     /**

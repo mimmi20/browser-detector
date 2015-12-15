@@ -115,7 +115,7 @@ class Elinks extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 107;
+        return 3;
     }
 
     /**

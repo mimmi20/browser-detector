@@ -130,6 +130,6 @@ class HyperCrawl extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 5;
+        return 3;
     }
 }

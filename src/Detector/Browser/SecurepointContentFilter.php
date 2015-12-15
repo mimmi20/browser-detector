@@ -130,7 +130,7 @@ class SecurepointContentFilter extends AbstractBrowser implements BrowserHasSpec
      */
     public function getWeight()
     {
-        return 14;
+        return 3;
     }
 
     /**

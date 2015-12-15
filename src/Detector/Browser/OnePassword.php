@@ -117,7 +117,7 @@ class OnePassword extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 2885;
+        return 3;
     }
 
     /**

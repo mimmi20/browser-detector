@@ -201,7 +201,7 @@ class MicrosoftOutlook extends MicrosoftOffice implements BrowserHasWurflKeyInte
      */
     public function getWeight()
     {
-        return 2839566;
+        return 3;
     }
 
     /**

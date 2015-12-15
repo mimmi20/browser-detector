@@ -136,7 +136,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 9540;
+        return 3;
     }
 
     /**

@@ -119,7 +119,7 @@ class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface,
      */
     public function getWeight()
     {
-        return 225706;
+        return 3;
     }
 
     /**

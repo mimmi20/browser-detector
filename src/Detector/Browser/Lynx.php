@@ -115,7 +115,7 @@ class Lynx extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 85;
+        return 3;
     }
 
     /**

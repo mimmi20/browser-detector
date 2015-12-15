@@ -134,6 +134,6 @@ class Google extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 6;
+        return 3;
     }
 }

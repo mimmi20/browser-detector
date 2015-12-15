@@ -136,7 +136,7 @@ class Libwww extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 70465;
+        return 3;
     }
 
     /**

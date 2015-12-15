@@ -119,7 +119,7 @@ class Links extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 37;
+        return 3;
     }
 
     /**

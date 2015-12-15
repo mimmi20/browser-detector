@@ -115,7 +115,7 @@ class TrendictionBot extends AbstractBrowser
      */
     public function getWeight()
     {
-        return 1132;
+        return 3;
     }
 
     /**

@@ -133,7 +133,7 @@ class Chedot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 1190;
+        return 3;
     }
 
     /**

@@ -136,7 +136,7 @@ class Kenshoo extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
      */
     public function getWeight()
     {
-        return 302204;
+        return 3;
     }
 
     /**

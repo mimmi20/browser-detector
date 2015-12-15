@@ -125,6 +125,11 @@ class Ibuilder extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         return $detector->detectVersion($searches);
     }
 
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
     public function getWeight()
     {
         return 3;

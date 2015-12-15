@@ -132,7 +132,7 @@ class Charlotte extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 1792;
+        return 3;
     }
 
     /**

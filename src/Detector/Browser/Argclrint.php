@@ -164,7 +164,7 @@ class Argclrint extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 5468;
+        return 3;
     }
 
     /**

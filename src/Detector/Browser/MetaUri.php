@@ -132,7 +132,7 @@ class MetaUri extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 426;
+        return 3;
     }
 
     /**

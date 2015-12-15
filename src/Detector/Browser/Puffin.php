@@ -132,7 +132,7 @@ class Puffin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getWeight()
     {
-        return 214;
+        return 3;
     }
 
     /**

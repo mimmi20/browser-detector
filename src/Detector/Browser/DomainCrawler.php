@@ -132,7 +132,7 @@ class DomainCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getWeight()
     {
-        return 63;
+        return 3;
     }
 
     /**

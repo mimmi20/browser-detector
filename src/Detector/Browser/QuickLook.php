@@ -132,7 +132,7 @@ class QuickLook extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getWeight()
     {
-        return 52532;
+        return 3;
     }
 
     /**

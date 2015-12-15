@@ -132,7 +132,7 @@ class Esribot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getWeight()
     {
-        return 7418;
+        return 3;
     }
 
     /**

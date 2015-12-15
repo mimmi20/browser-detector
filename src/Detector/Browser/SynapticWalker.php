@@ -132,7 +132,7 @@ class SynapticWalker extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getWeight()
     {
-        return 311;
+        return 3;
     }
 
     /**

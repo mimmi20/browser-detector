@@ -117,7 +117,7 @@ class RebelMouse extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getWeight()
     {
-        return 1028;
+        return 3;
     }
 
     /**

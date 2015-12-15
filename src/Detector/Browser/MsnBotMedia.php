@@ -134,7 +134,7 @@ class MsnBotMedia extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 1993194;
+        return 3;
     }
 
     /**

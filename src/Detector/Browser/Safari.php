@@ -173,7 +173,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
      */
     public function getWeight()
     {
-        return 93432480;
+        return 30000;
     }
 
     /**

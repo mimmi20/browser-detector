@@ -132,7 +132,7 @@ class BaiduImageSearch extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getWeight()
     {
-        return 121205;
+        return 3;
     }
 
     /**

@@ -117,7 +117,7 @@ class SiteExplorer extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getWeight()
     {
-        return 9557;
+        return 3;
     }
 
     /**
