@@ -176,7 +176,7 @@ class BrowserDetector
         }
 
         // detect the browser which is used
-        $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $this->logger, $this->cache);
+        $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $platform, $this->logger, $this->cache);
 
         if ($browser instanceof BrowserHasRuntimeModificationsInterface) {
             $browser->detectSpecialProperties();
