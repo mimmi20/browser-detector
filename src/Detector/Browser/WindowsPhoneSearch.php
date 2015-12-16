@@ -110,6 +110,16 @@ class WindowsPhoneSearch extends AbstractBrowser implements BrowserHasSpecificEn
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *

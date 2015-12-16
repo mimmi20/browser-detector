@@ -111,6 +111,16 @@ class Weblide extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version

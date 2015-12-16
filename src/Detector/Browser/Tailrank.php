@@ -139,4 +139,14 @@ class Tailrank extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     {
         return new Webkit($this->useragent, $this->logger);
     }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
 }

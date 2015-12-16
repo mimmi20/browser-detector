@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use UaBrowserType\MultimediaPlayer;
 use UaResult\Version;
 
 /**
@@ -106,7 +106,17 @@ class Winamp extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new MultimediaPlayer();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**

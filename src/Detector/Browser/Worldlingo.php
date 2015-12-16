@@ -110,6 +110,16 @@ class Worldlingo extends AbstractBrowser implements BrowserHasSpecificEngineInte
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine

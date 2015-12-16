@@ -116,6 +116,16 @@ class Playstation extends AbstractBrowser implements BrowserHasSpecificEngineInt
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * Returns true if this handler can handle the given user agent
      *
      * @return \UaResult\Version

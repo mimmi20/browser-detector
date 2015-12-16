@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
-use UaBrowserType\Application;
+use UaBrowserType\MultimediaPlayer;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -108,7 +108,17 @@ class WindowsMediaPlayer extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getBrowserType()
     {
-        return new Application();
+        return new MultimediaPlayer();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**
