@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Application;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class KamelioApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,15 +73,11 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NAVER', 'Yeti', 'help.naver.com'))) {
-            return false;
+        if ($this->utils->checkIfContains('Kamelio')) {
+            return true;
         }
 
-        if ($this->utils->checkIfContains(array('NaverMatome'))) {
-            return false;
-        }
-
-        return true;
+        return false;
     }
 
     /**
@@ -91,7 +87,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'NaverBot';
+        return 'Kamelio App';
     }
 
     /**
@@ -101,7 +97,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\NhnCorporation());
+        return new Company(new Company\Kamelio());
     }
 
     /**
@@ -111,22 +107,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getBrowserType()
     {
-        return new Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Naver', 'Yeti');
-
-        return $detector->detectVersion($searches);
+        return new Application();
     }
 
     /**
@@ -140,12 +121,29 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     }
 
     /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array(
+            'Kamelio'
+        );
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Gvfs extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,11 +73,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NAVER', 'Yeti', 'help.naver.com'))) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('NaverMatome'))) {
+        if (!$this->utils->checkIfContains(array('gvfs'))) {
             return false;
         }
 
@@ -91,7 +87,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'NaverBot';
+        return 'gvfs';
     }
 
     /**
@@ -101,7 +97,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\NhnCorporation());
+        return new Company(new Company\TheGnomeProject());
     }
 
     /**
@@ -115,6 +111,16 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -124,19 +130,9 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Naver', 'Yeti');
+        $searches = array('gvfs');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**

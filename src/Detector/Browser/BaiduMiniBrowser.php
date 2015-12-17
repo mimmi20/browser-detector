@@ -31,10 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use UaBrowserType\Browser;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class BaiduMiniBrowser extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -54,8 +52,8 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -73,11 +71,11 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NAVER', 'Yeti', 'help.naver.com'))) {
+        if (!$this->utils->checkIfContains(array('bdbrowser_mini'))) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('NaverMatome'))) {
+        if ($this->utils->checkIfContains(array('FlyFlow'))) {
             return false;
         }
 
@@ -91,7 +89,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'NaverBot';
+        return 'Baidu Browser Mini';
     }
 
     /**
@@ -101,7 +99,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\NhnCorporation());
+        return new Company(new Company\Baidu());
     }
 
     /**
@@ -111,7 +109,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Browser();
     }
 
     /**
@@ -123,8 +121,9 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Naver', 'Yeti');
+        $searches = array('bdbrowser_mini');
 
         return $detector->detectVersion($searches);
     }
@@ -137,15 +136,5 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     public function getWeight()
     {
         return 3;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function getEngine()
-    {
-        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

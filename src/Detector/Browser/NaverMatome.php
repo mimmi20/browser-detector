@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Application;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class NaverMatome extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -77,10 +77,6 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('NaverMatome'))) {
-            return false;
-        }
-
         return true;
     }
 
@@ -91,7 +87,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'NaverBot';
+        return 'NaverMatome';
     }
 
     /**
@@ -111,7 +107,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
     }
 
     /**
@@ -124,7 +120,7 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Naver', 'Yeti');
+        $searches = array('NaverMatome\-Android');
 
         return $detector->detectVersion($searches);
     }
@@ -146,6 +142,6 @@ class Naver extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }
