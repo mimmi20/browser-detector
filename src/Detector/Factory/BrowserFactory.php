@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\A6Indexer;
 use BrowserDetector\Detector\Browser\AdmantxPlatformSemanticAnalyzer;
+use BrowserDetector\Detector\Browser\AhrefsBot;
 use BrowserDetector\Detector\Browser\AlltopApp;
 use BrowserDetector\Detector\Browser\AndroidWebkit;
 use BrowserDetector\Detector\Browser\AndroidWebView;
@@ -209,7 +210,6 @@ use BrowserDetector\Detector\Browser\YahooSlingstone;
 use BrowserDetector\Detector\Browser\YahooSlurp;
 use BrowserDetector\Detector\Browser\ZmEu;
 use BrowserDetector\Detector\Browser\ZollardWorm;
-use BrowserDetector\Detector\Company\Ahrefs;
 use Psr\Log\LoggerInterface;
 use WurflCache\Adapter\AdapterInterface;
 use UaMatcher\Os\OsInterface;
@@ -481,7 +481,7 @@ class BrowserFactory
         } elseif (preg_match('/(webmastercoffee)/i', $agent)) {
             $browser = new WebmasterCoffee($agent, $logger);
         } elseif (preg_match('/(ahrefs)/i', $agent)) {
-            $browser = new Ahrefs($agent, $logger);
+            $browser = new AhrefsBot($agent, $logger);
         } elseif (preg_match('/apercite/i', $agent)) {
             $browser = new Apercite($agent, $logger);
         } elseif (preg_match('/woobot/', $agent)) {
