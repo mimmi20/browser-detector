@@ -101,7 +101,7 @@ class Scrubby extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\ScrubTheWeb());
     }
 
     /**

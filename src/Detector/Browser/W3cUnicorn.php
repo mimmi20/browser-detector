@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class W3cUnicorn extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('sogou web spider'), true)) {
+        if (!$this->utils->checkIfContains(array('W3C_Unicorn'))) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Sogou Web Spider';
+        return 'W3C Unicorn';
     }
 
     /**
@@ -97,7 +97,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sogou());
+        return new Company(new Company\W3c());
     }
 
     /**
@@ -111,16 +111,6 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -130,9 +120,19 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Sogou web spider');
+        $searches = array('W3C_Unicorn');
 
         return $detector->detectVersion($searches);
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**

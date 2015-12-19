@@ -31,10 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Apercite extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -54,7 +52,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,7 +71,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('sogou web spider'), true)) {
+        if (!$this->utils->checkIfContains(array('Apercite'))) {
             return false;
         }
 
@@ -87,7 +85,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Sogou Web Spider';
+        return 'Apercite';
     }
 
     /**
@@ -97,7 +95,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sogou());
+        return new Company(new Company\Apercite());
     }
 
     /**
@@ -111,16 +109,6 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -130,18 +118,18 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Sogou web spider');
+        $searches = array('Apercite');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return integer
      */
-    public function getEngine()
+    public function getWeight()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return 3;
     }
 }

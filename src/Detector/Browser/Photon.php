@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Photon extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('sogou web spider'), true)) {
+        if (!$this->utils->checkIfContains('Photon')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Sogou Web Spider';
+        return 'Photon';
     }
 
     /**
@@ -97,7 +97,22 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sogou());
+        return new Company(new Company\PhotonProject());
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('Photon');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -118,21 +133,6 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
     public function getWeight()
     {
         return 3;
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Sogou web spider');
-
-        return $detector->detectVersion($searches);
     }
 
     /**

@@ -31,10 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use UaBrowserType\Application;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class PinterestApp extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -73,11 +71,11 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('sogou web spider'), true)) {
-            return false;
+        if ($this->utils->checkIfContains('Pinterest')) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -87,7 +85,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Sogou Web Spider';
+        return 'Pinterest App';
     }
 
     /**
@@ -97,7 +95,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sogou());
+        return new Company(new Company\EricssonResearch());
     }
 
     /**
@@ -107,7 +105,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
     }
 
     /**
@@ -130,18 +128,8 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Sogou web spider');
+        $searches = array('Pinterest');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function getEngine()
-    {
-        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

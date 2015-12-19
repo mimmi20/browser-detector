@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WdgHtmlValidator extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('sogou web spider'), true)) {
+        if (!$this->utils->checkIfContains('WDG_Validator')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Sogou Web Spider';
+        return 'HTML Validator';
     }
 
     /**
@@ -97,7 +97,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sogou());
+        return new Company(new Company\WebDesignGroup());
     }
 
     /**
@@ -130,7 +130,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Sogou web spider');
+        $searches = array('WDG_Validator');
 
         return $detector->detectVersion($searches);
     }

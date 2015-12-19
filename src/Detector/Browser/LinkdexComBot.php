@@ -77,6 +77,10 @@ class LinkdexComBot extends AbstractBrowser implements BrowserHasSpecificEngineI
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('linkdexbot'))) {
+            return false;
+        }
+
         return true;
     }
 
@@ -130,7 +134,7 @@ class LinkdexComBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('linkdex\.com', 'linkdex\.com\/v', 'linkdexbot');
+        $searches = array('linkdex\.com', 'linkdex\.com\/v');
 
         return $detector->detectVersion($searches);
     }
