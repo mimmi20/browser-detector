@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Browser;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -107,7 +107,7 @@ class UnityWebPlayer extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
     }
 
     /**

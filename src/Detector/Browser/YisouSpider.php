@@ -31,9 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Application;
-use UaResult\Version;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -42,7 +41,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class YisouSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +53,7 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,7 +72,7 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Tumblr'))) {
+        if (!$this->utils->checkIfContains('YisouSpider')) {
             return false;
         }
 
@@ -87,7 +86,7 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'Tumblr App';
+        return 'YisouSpider';
     }
 
     /**
@@ -97,7 +96,7 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Tumblr());
+        return new Company(new Company\Yisou());
     }
 
     /**
@@ -107,22 +106,7 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getBrowserType()
     {
-        return new Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Tumblr');
-
-        return $detector->detectVersion($searches);
+        return new Bot();
     }
 
     /**
@@ -136,13 +120,12 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }
