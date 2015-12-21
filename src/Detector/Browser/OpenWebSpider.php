@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class OpenWebSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TweetmemeBot')) {
+        if (!$this->utils->checkIfContains(array('OpenWebSpider'))) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getName()
     {
-        return 'Tweetmeme Bot';
+        return 'OpenWebSpider';
     }
 
     /**
@@ -97,7 +97,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Datasift());
+        return new Company(new Company\StefanoAlimonti());
     }
 
     /**
@@ -130,13 +130,13 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('TweetmemeBot');
+        $searches = array('OpenWebSpider');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine, returns the Engine Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */

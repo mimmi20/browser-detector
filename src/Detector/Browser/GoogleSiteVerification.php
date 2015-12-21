@@ -31,10 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class GoogleSiteVerification extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -57,7 +55,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
-        'pdf_support'                  => true,
+        'pdf_support'                  => false,
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
@@ -73,11 +71,11 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TweetmemeBot')) {
-            return false;
+        if ($this->utils->checkIfContains('Google-Site-Verification')) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -87,7 +85,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getName()
     {
-        return 'Tweetmeme Bot';
+        return 'Google-Site-Verification';
     }
 
     /**
@@ -97,7 +95,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Datasift());
+        return new Company(new Company\Google());
     }
 
     /**
@@ -111,16 +109,6 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -130,18 +118,18 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('TweetmemeBot');
+        $searches = array('Google\-Site\-Verification');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * gets the weight of the handler, which is used for sorting
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return integer
      */
-    public function getEngine()
+    public function getWeight()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return 3;
     }
 }

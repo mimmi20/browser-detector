@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
+use UaBrowserType\BotSyndicationReader;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +43,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class R6CommentReader extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +74,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TweetmemeBot')) {
+        if (!$this->utils->checkIfContains('R6_CommentReader')) {
             return false;
         }
 
@@ -87,7 +88,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getName()
     {
-        return 'Tweetmeme Bot';
+        return 'R6 CommentReader';
     }
 
     /**
@@ -97,7 +98,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Datasift());
+        return new Company(new Company\Salesforce());
     }
 
     /**
@@ -111,16 +112,6 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -130,9 +121,17 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('TweetmemeBot');
+        return $detector->setVersion('0.0');
+    }
 
-        return $detector->detectVersion($searches);
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**

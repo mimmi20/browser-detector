@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class GroupHighBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TweetmemeBot')) {
+        if (!$this->utils->checkIfContains(array('GroupHigh'))) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getName()
     {
-        return 'Tweetmeme Bot';
+        return 'GroupHigh Bot';
     }
 
     /**
@@ -97,7 +97,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Datasift());
+        return new Company(new Company\GroupHigh());
     }
 
     /**
@@ -130,7 +130,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('TweetmemeBot');
+        $searches = array('GroupHigh');
 
         return $detector->detectVersion($searches);
     }

@@ -77,6 +77,10 @@ class OpenWeb extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('OpenWebSpider'))) {
+            return false;
+        }
+
         return true;
     }
 
