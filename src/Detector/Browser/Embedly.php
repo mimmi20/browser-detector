@@ -30,14 +30,11 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
-use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaMatcher\Device\DeviceInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -45,7 +42,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternativeResultInterface, BrowserHasSpecificEngineInterface
+class Embedly extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -76,7 +73,7 @@ class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternative
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('GomezAgent'))) {
+        if (!$this->utils->checkIfContains('Embedly')) {
             return false;
         }
 
@@ -90,7 +87,7 @@ class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternative
      */
     public function getName()
     {
-        return 'Gomez Site Monitor';
+        return 'Embedly';
     }
 
     /**
@@ -100,7 +97,7 @@ class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternative
      */
     public function getManufacturer()
     {
-        return new Company(new Company\CompuwareApm());
+        return new Company(new Company\Embedly());
     }
 
     /**
@@ -123,7 +120,7 @@ class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternative
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('GomezAgent');
+        $searches = array('Embedly');
 
         return $detector->detectVersion($searches);
     }
@@ -146,23 +143,5 @@ class GomezAgent extends AbstractBrowser implements BrowserCalculatesAlternative
     public function getEngine()
     {
         return new UnknownEngine($this->useragent, $this->logger);
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @param \UaMatcher\Device\DeviceInterface $device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function calculateAlternativeRendering(DeviceInterface $device)
-    {
-        $agent = str_ireplace(array('GomezAgent'), '', $this->useragent);
-
-        $detector = new BrowserDetector($this->cache, $this->logger);
-
-        $device->setRenderAs($detector->getBrowser($agent));
-
-        return $this;
     }
 }

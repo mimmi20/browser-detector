@@ -123,7 +123,7 @@ class Icedove extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Debian());
+        return new Company(new Company\SoftwareInThePublicInterest());
     }
 
     /**

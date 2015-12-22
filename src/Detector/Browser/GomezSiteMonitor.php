@@ -30,11 +30,14 @@
 
 namespace BrowserDetector\Detector\Browser;
 
+use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +45,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class GomezSiteMonitor extends AbstractBrowser implements BrowserCalculatesAlternativeResultInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +76,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Blekkobot'))) {
+        if (!$this->utils->checkIfContains(array('GomezAgent'))) {
             return false;
         }
 
@@ -87,7 +90,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'BlekkoBot';
+        return 'Gomez Site Monitor';
     }
 
     /**
@@ -97,7 +100,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\BlekkoCom());
+        return new Company(new Company\CompuwareApm());
     }
 
     /**
@@ -120,7 +123,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Blekkobot');
+        $searches = array('GomezAgent');
 
         return $detector->detectVersion($searches);
     }
@@ -143,5 +146,23 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
     public function getEngine()
     {
         return new UnknownEngine($this->useragent, $this->logger);
+    }
+
+    /**
+     * gets the name of the browser
+     *
+     * @param \UaMatcher\Device\DeviceInterface $device
+     *
+     * @return \UaMatcher\Browser\BrowserInterface
+     */
+    public function calculateAlternativeRendering(DeviceInterface $device)
+    {
+        $agent = str_ireplace(array('GomezAgent'), '', $this->useragent);
+
+        $detector = new BrowserDetector($this->cache, $this->logger);
+
+        $device->setRenderAs($detector->getBrowser($agent));
+
+        return $this;
     }
 }

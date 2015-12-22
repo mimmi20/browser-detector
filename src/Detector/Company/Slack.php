@@ -28,10 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Os;
-
-use BrowserDetector\Detector\Company;
-use UaResult\Version;
+namespace BrowserDetector\Detector\Company;
 
 /**
  * @category  BrowserDetector
@@ -39,46 +36,19 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Debian extends AbstractOs
+class Slack extends AbstractCompany
 {
     /**
-     * returns the name of the operating system/platform
+     * the name of the company
      *
-     * @return string
+     * @var string
      */
-    public function getName()
-    {
-        return 'Debian';
-    }
+    public $name = 'slack.com';
 
     /**
-     * returns the version of the operating system/platform
+     * the brand name of the company
      *
-     * @return \UaResult\Version
+     * @var string
      */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Debian');
-
-        $detector->detectVersion($searches);
-
-        if ($this->utils->checkIfContainsAll(array('debian', 'squeeze'), true)) {
-            $detector->setVersion('6.0');
-        }
-
-        return $detector;
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\SoftwareInThePublicInterest());
-    }
+    public $brandname = 'slack';
 }

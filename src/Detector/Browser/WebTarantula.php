@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WebTarantula extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,11 +73,11 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Blekkobot'))) {
-            return false;
+        if ($this->utils->checkIfContains(array('WebTarantula.com Crawler'))) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -87,7 +87,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'BlekkoBot';
+        return 'WebTarantula';
     }
 
     /**
@@ -97,7 +97,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\BlekkoCom());
+        return new Company(new Company\Webtarantula());
     }
 
     /**
@@ -120,7 +120,7 @@ class BlekkoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Blekkobot');
+        $searches = array('WebTarantula\.com Crawler');
 
         return $detector->detectVersion($searches);
     }

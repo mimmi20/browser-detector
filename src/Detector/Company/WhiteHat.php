@@ -43,7 +43,7 @@ class WhiteHat extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'WhiteHat';
+    public $name = 'WhiteHat Security';
 
     /**
      * the brand name of the company

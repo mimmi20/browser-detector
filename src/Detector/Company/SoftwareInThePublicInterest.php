@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Debian extends AbstractCompany
+class SoftwareInThePublicInterest extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'Debian';
+    public $name = 'Software in the Public Interest, Inc.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Debian';
+    public $brandname = 'Software in the Public Interest';
 }
