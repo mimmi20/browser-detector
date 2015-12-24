@@ -78,6 +78,7 @@ use BrowserDetector\Detector\Browser\CybEye;
 use BrowserDetector\Detector\Browser\Dalvik;
 use BrowserDetector\Detector\Browser\Daumoa;
 use BrowserDetector\Detector\Browser\Diglo;
+use BrowserDetector\Detector\Browser\Dillo;
 use BrowserDetector\Detector\Browser\DiscoverEd;
 use BrowserDetector\Detector\Browser\Dolfin;
 use BrowserDetector\Detector\Browser\DolphinSmalltalkHttpClient;
@@ -309,11 +310,13 @@ class BrowserFactory
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(x11; windows)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
-        } elseif (preg_match('/(windows x86\_64)/i', $agent)) {
+        } elseif (preg_match('/(windows x86\_64|compatible\-)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(app3lewebkit)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/(6|7|8|9)/i', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/^(\'|\"|\[|\])/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif ((false !== strpos($agent, 'OPR') && false !== strpos($agent, 'Android'))
             || (false !== strpos($agent, 'Opera Mobi'))
@@ -406,7 +409,7 @@ class BrowserFactory
             $browser = new LightspeedSystemsCrawler($agent, $logger);
         } elseif (preg_match('/SL Commerce Client/', $agent)) {
             $browser = new SecondLiveCommerceClient($agent, $logger);
-        } elseif (preg_match('/IEMobile/', $agent)) {
+        } elseif (preg_match('/(IEMobile|WPDesktop)/', $agent)) {
             $browser = new MicrosoftMobileExplorer($agent, $logger);
         } elseif (preg_match('/BingPreview/', $agent)) {
             $browser = new BingPreview($agent, $logger);
@@ -836,6 +839,8 @@ class BrowserFactory
             $browser = new Moozilla($agent, $logger);
         } elseif (preg_match('/Outlook\-Express/', $agent)) {
             $browser = new WindowsLiveMail($agent, $logger);
+        } elseif (preg_match('/dillo/i', $agent)) {
+            $browser = new Dillo($agent, $logger);
         } else {
             $browser = new UnknownBrowser($agent, $logger);
         }
