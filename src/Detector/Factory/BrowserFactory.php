@@ -36,8 +36,10 @@ use BrowserDetector\Detector\Browser\AddCatalog;
 use BrowserDetector\Detector\Browser\Adidxbot;
 use BrowserDetector\Detector\Browser\AdmantxPlatformSemanticAnalyzer;
 use BrowserDetector\Detector\Browser\AhrefsBot;
+use BrowserDetector\Detector\Browser\Airmail;
 use BrowserDetector\Detector\Browser\Alexabot;
 use BrowserDetector\Detector\Browser\AlltopApp;
+use BrowserDetector\Detector\Browser\AndroidDownloadManager;
 use BrowserDetector\Detector\Browser\AndroidWebkit;
 use BrowserDetector\Detector\Browser\AndroidWebView;
 use BrowserDetector\Detector\Browser\AnotherWebMiningTool;
@@ -61,10 +63,12 @@ use BrowserDetector\Detector\Browser\BloglovinBot;
 use BrowserDetector\Detector\Browser\BlogSearch;
 use BrowserDetector\Detector\Browser\BoardReaderFaviconFetcher;
 use BrowserDetector\Detector\Browser\Bot360;
+use BrowserDetector\Detector\Browser\Bot80Legs;
 use BrowserDetector\Detector\Browser\BotForJce;
 use BrowserDetector\Detector\Browser\BotRevolt;
 use BrowserDetector\Detector\Browser\Browsershots;
 use BrowserDetector\Detector\Browser\CaCrawler;
+use BrowserDetector\Detector\Browser\CareerBot;
 use BrowserDetector\Detector\Browser\CcBot;
 use BrowserDetector\Detector\Browser\CheckSiteVerificationAgent;
 use BrowserDetector\Detector\Browser\Chedot;
@@ -132,6 +136,7 @@ use BrowserDetector\Detector\Browser\Httrack;
 use BrowserDetector\Detector\Browser\IBrowser;
 use BrowserDetector\Detector\Browser\Icab;
 use BrowserDetector\Detector\Browser\Iceweasel;
+use BrowserDetector\Detector\Browser\InstagramApp;
 use BrowserDetector\Detector\Browser\Integrity;
 use BrowserDetector\Detector\Browser\InternetSeer;
 use BrowserDetector\Detector\Browser\Iridium;
@@ -219,6 +224,7 @@ use BrowserDetector\Detector\Browser\Safari;
 use BrowserDetector\Detector\Browser\SamsungBrowser;
 use BrowserDetector\Detector\Browser\SamsungWebView;
 use BrowserDetector\Detector\Browser\ScrapyBot;
+use BrowserDetector\Detector\Browser\ScreamingFrogSeoSpider;
 use BrowserDetector\Detector\Browser\ScreenerBot;
 use BrowserDetector\Detector\Browser\Scrubby;
 use BrowserDetector\Detector\Browser\SecondLiveCommerceClient;
@@ -238,6 +244,7 @@ use BrowserDetector\Detector\Browser\SmtBot;
 use BrowserDetector\Detector\Browser\Socialradarbot;
 use BrowserDetector\Detector\Browser\SogouSpider;
 use BrowserDetector\Detector\Browser\SogouWebSpider;
+use BrowserDetector\Detector\Browser\SonyEricsson;
 use BrowserDetector\Detector\Browser\Squzer;
 use BrowserDetector\Detector\Browser\SuperBird;
 use BrowserDetector\Detector\Browser\TelecaObigo;
@@ -265,6 +272,7 @@ use BrowserDetector\Detector\Browser\WadavnSearchBot;
 use BrowserDetector\Detector\Browser\WaterFox;
 use BrowserDetector\Detector\Browser\WbSearchBot;
 use BrowserDetector\Detector\Browser\WdgHtmlValidator;
+use BrowserDetector\Detector\Browser\WebdeMailCheck;
 use BrowserDetector\Detector\Browser\WebkitWebos;
 use BrowserDetector\Detector\Browser\WebmasterCoffee;
 use BrowserDetector\Detector\Browser\WebTarantula;
@@ -328,14 +336,14 @@ class BrowserFactory
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/^(\'|\"|\[|\])/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/opera mini/i', $agent)) {
+            $browser = new OperaMini($agent, $logger);
         } elseif (preg_match('/opera mobi/i', $agent)
             || (preg_match('/(opera|opr)/i', $agent) && preg_match('/(Android|MTK|MAUI)/', $agent))
         ) {
             $browser = new OperaMobile($agent, $logger);
         } elseif (preg_match('/(ucbrowser|uc browser|ucweb)/i', $agent)) {
             $browser = new UcBrowser($agent, $logger);
-        } elseif (preg_match('/opera mini/i', $agent)) {
-            $browser = new OperaMini($agent, $logger);
         } elseif (preg_match('/(opera|opr)/i', $agent)) {
             $browser = new Opera($agent, $logger);
         } elseif (false !== strpos($agent, 'iCab')) {
@@ -707,6 +715,12 @@ class BrowserFactory
             $browser = new Httrack($agent, $logger);
         } elseif (preg_match('/UnisterBot/', $agent)) {
             $browser = new Unisterbot($agent, $logger);
+        } elseif (preg_match('/CareerBot/', $agent)) {
+            $browser = new CareerBot($agent, $logger);
+        } elseif (preg_match('/80legs/i', $agent)) {
+            $browser = new Bot80Legs($agent, $logger);
+        } elseif (preg_match('/wada\.vn/i', $agent)) {
+            $browser = new WadavnSearchBot($agent, $logger);
         } elseif (preg_match('/^Mozilla\/\d/', $agent)) {
             $browser = new Netscape($agent, $logger);
         } elseif (preg_match('/^Dalvik\/\d/', $agent)) {
@@ -775,6 +789,8 @@ class BrowserFactory
             $browser = new MetaGeneratorCrawler($agent, $logger);
         } elseif (preg_match('/microsoft office mobile/i', $agent)) {
             $browser = new MicrosoftOffice($agent, $logger);
+        } elseif (preg_match('/microsoft office/i', $agent)) {
+            $browser = new MicrosoftOffice($agent, $logger);
         } elseif (preg_match('/tumblr/i', $agent)) {
             $browser = new TumblrApp($agent, $logger);
         } elseif (preg_match('/w3c\_i18n\-checker/i', $agent)) {
@@ -823,8 +839,6 @@ class BrowserFactory
             $browser = new HivaBot($agent, $logger);
         } elseif (preg_match('/Comodo Spider/', $agent)) {
             $browser = new ComodoSpider($agent, $logger);
-        } elseif (preg_match('/wada\.vn/i', $agent)) {
-            $browser = new WadavnSearchBot($agent, $logger);
         } elseif (preg_match('/reddit pic scraper/i', $agent)) {
             $browser = new RedditPicScraper($agent, $logger);
         } elseif (preg_match('/OpenWebSpider/i', $agent)) {
@@ -871,6 +885,20 @@ class BrowserFactory
             $browser = new MicrosoftExcel($agent, $logger);
         } elseif (preg_match('/WinHTTP/', $agent)) {
             $browser = new WinHttpRequest($agent, $logger);
+        } elseif (preg_match('/Airmail/', $agent)) {
+            $browser = new Airmail($agent, $logger);
+        } elseif (preg_match('/Instagram/', $agent)) {
+            $browser = new InstagramApp($agent, $logger);
+        } elseif (preg_match('/samsung/i', $agent)) {
+            $browser = new SamsungBrowser($agent, $logger);
+        } elseif (preg_match('/SonyEricsson/', $agent)) {
+            $browser = new SonyEricsson($agent, $logger);
+        } elseif (preg_match('/WEB\.DE MailCheck/', $agent)) {
+            $browser = new WebdeMailCheck($agent, $logger);
+        } elseif (preg_match('/Screaming Frog SEO Spider/', $agent)) {
+            $browser = new ScreamingFrogSeoSpider($agent, $logger);
+        } elseif (preg_match('/AndroidDownloadManager/', $agent)) {
+            $browser = new AndroidDownloadManager($agent, $logger);
         } else {
             $browser = new UnknownBrowser($agent, $logger);
         }
