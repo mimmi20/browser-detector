@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Dillo extends AbstractBrowser
+class DomainScanServerMonitoring extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -52,7 +54,7 @@ class Dillo extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -71,7 +73,7 @@ class Dillo extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Dillo/')) {
+        if (!$this->utils->checkIfContains('DomainSCAN')) {
             return false;
         }
 
@@ -85,7 +87,7 @@ class Dillo extends AbstractBrowser
      */
     public function getName()
     {
-        return 'Dillo';
+        return 'DomainScan Server Monitoring';
     }
 
     /**
@@ -95,7 +97,7 @@ class Dillo extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\DilloProject());
+        return new Company(new Company\GhSoftware());
     }
 
     /**
@@ -105,7 +107,7 @@ class Dillo extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
     }
 
     /**
@@ -118,7 +120,7 @@ class Dillo extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Dillo');
+        $searches = array('DomainSCAN');
 
         return $detector->detectVersion($searches);
     }
@@ -131,5 +133,15 @@ class Dillo extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function getEngine()
+    {
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }
