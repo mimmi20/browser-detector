@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class ImplisenseBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,11 +73,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Vagabondo/'))) {
+        if (!$this->utils->checkIfContains('ImplisenseBot')) {
             return false;
         }
 
@@ -91,7 +87,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'Vagabondo';
+        return 'ImplisenseBot';
     }
 
     /**
@@ -101,7 +97,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\WiseGuysNl());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -124,7 +120,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Vagabondo');
+        $searches = array('ImplisenseBot');
 
         return $detector->detectVersion($searches);
     }

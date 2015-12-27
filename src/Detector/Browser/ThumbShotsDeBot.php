@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -42,7 +41,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class ThumbShotsDeBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,11 +72,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Vagabondo/'))) {
+        if (!$this->utils->checkIfContains('thumbshots-de-bot')) {
             return false;
         }
 
@@ -91,7 +86,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'Vagabondo';
+        return 'thumbshots-de-bot';
     }
 
     /**
@@ -101,32 +96,17 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\WiseGuysNl());
+        return new Company(new Company\Thumbshots());
     }
 
     /**
      * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
+        *
+        * @return \UaBrowserType\TypeInterface
+    */
     public function getBrowserType()
     {
         return new Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Vagabondo');
-
-        return $detector->detectVersion($searches);
     }
 
     /**

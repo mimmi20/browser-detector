@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class SearchteqBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,11 +73,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('Vagabondo/'))) {
+        if (!$this->utils->checkIfContains(array('stq_bot'))) {
             return false;
         }
 
@@ -91,7 +87,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'Vagabondo';
+        return 'Searchteq Bot';
     }
 
     /**
@@ -101,7 +97,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\WiseGuysNl());
+        return new Company(new Company\Searchteq());
     }
 
     /**
@@ -115,6 +111,16 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -124,19 +130,9 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Vagabondo');
+        $searches = array('stq\_bot');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**

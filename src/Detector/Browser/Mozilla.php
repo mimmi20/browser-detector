@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Gecko;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Mozilla extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +54,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -77,10 +77,6 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Vagabondo/'))) {
-            return false;
-        }
-
         return true;
     }
 
@@ -91,7 +87,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'Vagabondo';
+        return 'Mozilla';
     }
 
     /**
@@ -101,7 +97,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\WiseGuysNl());
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**
@@ -111,7 +107,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Browser();
     }
 
     /**
@@ -124,7 +120,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Vagabondo');
+        $searches = array('rv\:');
 
         return $detector->detectVersion($searches);
     }
@@ -140,12 +136,13 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Gecko
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Gecko($this->useragent, $this->logger);
     }
 }
