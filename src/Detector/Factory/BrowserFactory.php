@@ -638,6 +638,11 @@ class BrowserFactory
             $browser = new Iceweasel($agent, $logger);
         } elseif (preg_match('/SurveyBot/', $agent)) {
             $browser = new SurveyBot($agent, $logger);
+        } elseif (preg_match('/firefox/i', $agent)
+            && !preg_match('/gecko/i', $agent)
+            && preg_match('/anonymized/i', $agent)
+        ) {
+            $browser = new Firefox($agent, $logger);
         } elseif (preg_match('/firefox/i', $agent) && !preg_match('/gecko/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(firefox|minefield|shiretoko|bonecho|namoroka|fxios)/i', $agent)) {

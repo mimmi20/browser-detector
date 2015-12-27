@@ -87,7 +87,7 @@ class AdobeAIR extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getName()
     {
-        return 'AdobeAIR';
+        return 'Adobe AIR';
     }
 
     /**

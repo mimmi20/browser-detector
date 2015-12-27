@@ -145,7 +145,7 @@ class GoogleImageProxy extends AbstractBrowser implements BrowserCalculatesAlter
      */
     public function calculateAlternativeRendering(DeviceInterface $device)
     {
-        $agent = str_ireplace('GoogleImageProxy', '', $this->useragent);
+        $agent = str_ireplace(array('GoogleImageProxy', 'via ggpht.com'), '', $this->useragent);
 
         $detector = new BrowserDetector($this->cache, $this->logger);
 

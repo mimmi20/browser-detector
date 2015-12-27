@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Application;
+use UaBrowserType\Bot;
 use UaResult\Version;
 
 /**
@@ -105,7 +105,7 @@ class YahooMobileApp extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Application();
+        return new Bot();
     }
 
     /**

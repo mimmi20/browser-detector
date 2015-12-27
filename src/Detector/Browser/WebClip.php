@@ -73,10 +73,6 @@ class WebClip extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
         if (!$this->utils->checkIfContains(array('webclip/'), true)) {
             return false;
         }

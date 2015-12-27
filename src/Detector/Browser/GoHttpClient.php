@@ -95,7 +95,7 @@ class GoHttpClient extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Google());
     }
 
     /**
