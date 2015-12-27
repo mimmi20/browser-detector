@@ -31,19 +31,16 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use UaBrowserType\Application;
 use UaResult\Version;
 
 /**
- * SonyEricssonUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractBrowser
+class YahooMobileApp extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -55,7 +52,7 @@ class SonyEricsson extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -74,11 +71,11 @@ class SonyEricsson extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('OpenWave'))) {
-            return false;
+        if ($this->utils->checkIfContains('YHOO_Search_App')) {
+            return true;
         }
 
-        return $this->utils->checkIfContains(array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
+        return false;
     }
 
     /**
@@ -88,7 +85,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getName()
     {
-        return 'SEMC';
+        return 'Yahoo Mobile App';
     }
 
     /**
@@ -98,7 +95,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Yahoo());
     }
 
     /**
@@ -108,7 +105,17 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Application();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**
@@ -121,18 +128,8 @@ class SonyEricsson extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SEMC\-Browser');
+        $searches = array('YHOO\_Search\_App');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 }

@@ -31,11 +31,13 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Browser;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
- * SonyEricssonUserAgentHandler
+ * MaemoUserAgentHandler
  *
  *
  * @category  BrowserDetector
@@ -43,7 +45,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractBrowser
+class MauiWapBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -56,7 +58,7 @@ class SonyEricsson extends AbstractBrowser
 
         // product info
         'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => false,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -74,11 +76,11 @@ class SonyEricsson extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('OpenWave'))) {
+        if (!$this->utils->checkIfContains('WAP Browser/MAUI')) {
             return false;
         }
 
-        return $this->utils->checkIfContains(array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
+        return true;
     }
 
     /**
@@ -88,7 +90,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getName()
     {
-        return 'SEMC';
+        return 'MAUI Wap Browser';
     }
 
     /**
@@ -98,7 +100,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -121,9 +123,7 @@ class SonyEricsson extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SEMC\-Browser');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('');
     }
 
     /**
@@ -134,5 +134,16 @@ class SonyEricsson extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Gecko
+     */
+    public function getEngine()
+    {
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

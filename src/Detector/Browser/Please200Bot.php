@@ -31,19 +31,18 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
- * SonyEricssonUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractBrowser
+class Please200Bot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -55,7 +54,7 @@ class SonyEricsson extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -74,11 +73,11 @@ class SonyEricsson extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('OpenWave'))) {
+        if (!$this->utils->checkIfContains(array('200PleaseBot'))) {
             return false;
         }
 
-        return $this->utils->checkIfContains(array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
+        return true;
     }
 
     /**
@@ -88,7 +87,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getName()
     {
-        return 'SEMC';
+        return '200PleaseBot';
     }
 
     /**
@@ -98,7 +97,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Please200());
     }
 
     /**
@@ -108,7 +107,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
     }
 
     /**
@@ -121,7 +120,7 @@ class SonyEricsson extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SEMC\-Browser');
+        $searches = array('200PleaseBot');
 
         return $detector->detectVersion($searches);
     }
@@ -134,5 +133,15 @@ class SonyEricsson extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function getEngine()
+    {
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

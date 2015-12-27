@@ -31,19 +31,16 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use UaBrowserType\Application;
 use UaResult\Version;
 
 /**
- * SonyEricssonUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractBrowser
+class Stagefright extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -74,11 +71,11 @@ class SonyEricsson extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('OpenWave'))) {
+        if (!$this->utils->checkIfContains('stagefright')) {
             return false;
         }
 
-        return $this->utils->checkIfContains(array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
+        return true;
     }
 
     /**
@@ -88,7 +85,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getName()
     {
-        return 'SEMC';
+        return 'stagefright';
     }
 
     /**
@@ -98,7 +95,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -108,7 +105,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Application();
     }
 
     /**
@@ -121,7 +118,7 @@ class SonyEricsson extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SEMC\-Browser');
+        $searches = array('stagefright');
 
         return $detector->detectVersion($searches);
     }

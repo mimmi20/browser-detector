@@ -31,19 +31,18 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\Gecko;
+use UaBrowserType\Bot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
- * SonyEricssonUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractBrowser
+class Pingdom extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -74,11 +73,11 @@ class SonyEricsson extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('OpenWave'))) {
+        if (!$this->utils->checkIfContains(array('Pingdom'))) {
             return false;
         }
 
-        return $this->utils->checkIfContains(array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
+        return true;
     }
 
     /**
@@ -88,7 +87,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getName()
     {
-        return 'SEMC';
+        return 'Pingdom';
     }
 
     /**
@@ -98,7 +97,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -108,7 +107,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
     }
 
     /**
@@ -121,7 +120,7 @@ class SonyEricsson extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SEMC\-Browser');
+        $searches = array('Pingdom\.com\_bot\_version\_');
 
         return $detector->detectVersion($searches);
     }
@@ -134,5 +133,16 @@ class SonyEricsson extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Gecko
+     */
+    public function getEngine()
+    {
+        return new Gecko($this->useragent, $this->logger);
     }
 }

@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Application;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -107,7 +107,7 @@ class AndroidDownloadManager extends AbstractBrowser implements BrowserHasSpecif
      */
     public function getBrowserType()
     {
-        return new Application();
+        return new Bot();
     }
 
     /**

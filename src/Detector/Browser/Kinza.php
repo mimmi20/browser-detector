@@ -31,19 +31,21 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\Blink;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Application;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
- * SonyEricssonUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractBrowser
+class Kinza extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -56,7 +58,7 @@ class SonyEricsson extends AbstractBrowser
 
         // product info
         'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => false,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -74,11 +76,11 @@ class SonyEricsson extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('OpenWave'))) {
+        if (!$this->utils->checkIfContains('Kinza')) {
             return false;
         }
 
-        return $this->utils->checkIfContains(array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
+        return true;
     }
 
     /**
@@ -88,7 +90,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getName()
     {
-        return 'SEMC';
+        return 'Kinza';
     }
 
     /**
@@ -98,7 +100,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Kinza());
     }
 
     /**
@@ -108,7 +110,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Application();
     }
 
     /**
@@ -120,8 +122,9 @@ class SonyEricsson extends AbstractBrowser
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('SEMC\-Browser');
+        $searches = array('Kinza');
 
         return $detector->detectVersion($searches);
     }
@@ -134,5 +137,40 @@ class SonyEricsson extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \UaMatcher\Engine\EngineInterface
+     */
+    public function getEngine()
+    {
+        $chrome = new Chrome($this->useragent, $this->logger);
+
+        $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if ($chromeVersion >= 28) {
+            $engine = new Blink($this->useragent, $this->logger);
+        } else {
+            $engine = new Webkit($this->useragent, $this->logger);
+        }
+
+        return $engine;
+    }
+
+    /**
+     * returns the WurflKey
+     *
+     * @param \UaMatcher\Os\OsInterface $os
+     *
+     * @return string
+     */
+    public function getWurflKey(OsInterface $os)
+    {
+        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        return 'google_chrome_' . (int) $version;
     }
 }

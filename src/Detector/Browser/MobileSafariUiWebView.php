@@ -31,19 +31,21 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
 use UaResult\Version;
+use BrowserDetector\Helper\Safari as SafariHelper;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
- * SonyEricssonUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractBrowser
+class MobileSafariUiWebView extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -56,7 +58,7 @@ class SonyEricsson extends AbstractBrowser
 
         // product info
         'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => false,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -64,7 +66,7 @@ class SonyEricsson extends AbstractBrowser
         'basic_authentication_support' => true,
         'post_method_support'          => true,
         // rss
-        'rss_support'                  => false,
+        'rss_support'                  => true,
     );
 
     /**
@@ -74,11 +76,21 @@ class SonyEricsson extends AbstractBrowser
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('OpenWave'))) {
+        $safariHelper = new SafariHelper($this->useragent);
+
+        if (!$safariHelper->isSafari()) {
             return false;
         }
 
-        return $this->utils->checkIfContains(array('SonyEricsson', 'Ericsson', 'SEMC-Browser'));
+        if (!$this->utils->checkIfContains(array('Mobile'))) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains(array('Safari'))) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
@@ -88,7 +100,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getName()
     {
-        return 'SEMC';
+        return 'Mobile Safari UIWebView';
     }
 
     /**
@@ -98,7 +110,7 @@ class SonyEricsson extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Apple());
     }
 
     /**
@@ -121,9 +133,7 @@ class SonyEricsson extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SEMC\-Browser');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('');
     }
 
     /**
@@ -134,5 +144,45 @@ class SonyEricsson extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Webkit
+     */
+    public function getEngine()
+    {
+        return new Webkit($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey
+     *
+     * @param \UaMatcher\Os\OsInterface $os
+     *
+     * @return string
+     */
+    public function getWurflKey(OsInterface $os)
+    {
+        $osname    = $os->getName();
+        $osVersion = (float)$os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        $browserVersion = $this->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
+            return 'safari_' . (int)$browserVersion . '_0_mac';
+        }
+
+        if ('Windows' === $osname) {
+            return 'safari_' . (int)$browserVersion . '_0_windows';
+        }
+
+        return '';
     }
 }
