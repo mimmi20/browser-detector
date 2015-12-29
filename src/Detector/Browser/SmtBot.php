@@ -97,7 +97,7 @@ class SmtBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\SimilarTech());
     }
 
     /**

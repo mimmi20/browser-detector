@@ -87,7 +87,7 @@ class SophoraLinkchecker extends AbstractBrowser implements BrowserHasSpecificEn
      */
     public function getName()
     {
-        return 'Grapeshot Crawler';
+        return 'Sophora Linkchecker';
     }
 
     /**

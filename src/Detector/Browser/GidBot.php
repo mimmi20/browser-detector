@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class GidBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SurveyBot')) {
+        if (!$this->utils->checkIfContains('GIDBot')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'SurveyBot';
+        return 'GIDBot';
     }
 
     /**
@@ -97,7 +97,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\DomainTools());
+        return new Company(new Company\JdeSilva());
     }
 
     /**
@@ -111,6 +111,16 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -120,19 +130,9 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SurveyBot');
+        $searches = array('GIDBot');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**

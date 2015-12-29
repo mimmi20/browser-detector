@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class AboutUsBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SurveyBot')) {
+        if (!$this->utils->checkIfContains('AboutUsBot')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'SurveyBot';
+        return 'AboutUs Bot';
     }
 
     /**
@@ -97,7 +97,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\DomainTools());
+        return new Company(new Company\AboutUs());
     }
 
     /**
@@ -120,7 +120,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SurveyBot');
+        $searches = array('AboutUsBot');
 
         return $detector->detectVersion($searches);
     }

@@ -87,7 +87,7 @@ class MetaUri extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getName()
     {
-        return 'MetaURI';
+        return 'MetaURI Bot';
     }
 
     /**

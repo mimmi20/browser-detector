@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class ForumPoster extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SurveyBot')) {
+        if (!$this->utils->checkIfContains('Forum Poster')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'SurveyBot';
+        return 'Forum Poster';
     }
 
     /**
@@ -97,7 +97,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\DomainTools());
+        return new Company(new Company\ForumPoster());
     }
 
     /**
@@ -120,7 +120,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SurveyBot');
+        $searches = array('Forum Poster V', 'Forum Poster');
 
         return $detector->detectVersion($searches);
     }
@@ -138,7 +138,7 @@ class SurveyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return UnknownEngine
      */
     public function getEngine()
     {

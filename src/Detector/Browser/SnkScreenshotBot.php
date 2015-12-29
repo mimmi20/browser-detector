@@ -87,7 +87,7 @@ class SnkScreenshotBot extends AbstractBrowser implements BrowserHasSpecificEngi
      */
     public function getName()
     {
-        return 'SNK Screenshot Bot';
+        return 'Save n Keep Screenshot Bot';
     }
 
     /**
