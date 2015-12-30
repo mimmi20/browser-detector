@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WebMasterAid extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AcoonBot/')) {
+        if (!$this->utils->checkIfContains('WebMasterAid')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getName()
     {
-        return 'AcoonBot';
+        return 'WebMasterAid';
     }
 
     /**
@@ -97,7 +97,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\MichaelSchoebel());
+        return new Company(new Company\Wmaid());
     }
 
     /**
@@ -120,7 +120,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('AcoonBot');
+        $searches = array('WebMasterAid');
 
         return $detector->detectVersion($searches);
     }

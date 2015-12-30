@@ -31,10 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use UaBrowserType\Browser;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Samsung extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -54,8 +52,8 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -73,11 +71,11 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AcoonBot/')) {
-            return false;
+        if ($this->utils->checkIfContains('Samsung')) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -87,7 +85,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getName()
     {
-        return 'AcoonBot';
+        return 'Samsung';
     }
 
     /**
@@ -97,7 +95,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\MichaelSchoebel());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -107,7 +105,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Browser();
     }
 
     /**
@@ -120,9 +118,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('AcoonBot');
-
-        return $detector->detectVersion($searches);
+        return $detector->setVersion('');
     }
 
     /**
@@ -133,15 +129,5 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     public function getWeight()
     {
         return 3;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function getEngine()
-    {
-        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

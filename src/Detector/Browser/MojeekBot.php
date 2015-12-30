@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Gecko;
-use UaBrowserType\BotSyndicationReader;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Spinn3r extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class MojeekBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class Spinn3r extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Spinn3r'))) {
+        if (!$this->utils->checkIfContains(array('MojeekBot'))) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class Spinn3r extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getName()
     {
-        return 'Spinn3r RSS Aggregator';
+        return 'MojeekBot';
     }
 
     /**
@@ -97,7 +97,7 @@ class Spinn3r extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Tailrank());
+        return new Company(new Company\Mojeek());
     }
 
     /**
@@ -107,7 +107,22 @@ class Spinn3r extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getBrowserType()
     {
-        return new BotSyndicationReader();
+        return new Bot();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('MojeekBot');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -121,28 +136,12 @@ class Spinn3r extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     }
 
     /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Spinn3r');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Gecko($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

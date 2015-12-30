@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Subshell extends AbstractCompany
+class Zookabot extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'subshell.com';
+    public $name = 'zookabot.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Subshell';
+    public $brandname = 'zookabot.com';
 }

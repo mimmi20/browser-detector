@@ -30,11 +30,14 @@
 
 namespace BrowserDetector\Detector\Browser;
 
+use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +45,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class IchiroBot extends AbstractBrowser implements BrowserCalculatesAlternativeResultInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +76,11 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AcoonBot/')) {
+        if (!$this->utils->checkIfContains('ichiro')) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('ichiro/mobile')) {
             return false;
         }
 
@@ -87,7 +94,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getName()
     {
-        return 'AcoonBot';
+        return 'Ichiro Bot';
     }
 
     /**
@@ -97,7 +104,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\MichaelSchoebel());
+        return new Company(new Company\Ichiro());
     }
 
     /**
@@ -120,7 +127,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('AcoonBot');
+        $searches = array('ichiro');
 
         return $detector->detectVersion($searches);
     }
@@ -136,9 +143,27 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     }
 
     /**
+     * gets the name of the browser
+     *
+     * @param \UaMatcher\Device\DeviceInterface $device
+     *
+     * @return \UaMatcher\Browser\BrowserInterface
+     */
+    public function calculateAlternativeRendering(DeviceInterface $device)
+    {
+        $agent = str_ireplace(array('ichiro/mobile', 'ichiro', 'search.goo'), '', $this->useragent);
+
+        $detector = new BrowserDetector($this->cache, $this->logger);
+
+        $device->setRenderAs($detector->getBrowser($agent));
+
+        return $this;
+    }
+
+    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return UnknownEngine
      */
     public function getEngine()
     {

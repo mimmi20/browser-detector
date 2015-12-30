@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class JoobleBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AcoonBot/')) {
+        if (!$this->utils->checkIfContains(array('JoobleBot'))) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getName()
     {
-        return 'AcoonBot';
+        return 'JoobleBot';
     }
 
     /**
@@ -97,7 +97,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\MichaelSchoebel());
+        return new Company(new Company\Jooble());
     }
 
     /**
@@ -111,6 +111,16 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -120,19 +130,9 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('AcoonBot');
+        $searches = array('JoobleBot');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**

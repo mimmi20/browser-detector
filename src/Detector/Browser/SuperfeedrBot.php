@@ -30,14 +30,11 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
@@ -45,7 +42,7 @@ use UaMatcher\Device\DeviceInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ichiro extends AbstractBrowser implements BrowserCalculatesAlternativeResultInterface, BrowserHasSpecificEngineInterface
+class SuperfeedrBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -76,11 +73,7 @@ class Ichiro extends AbstractBrowser implements BrowserCalculatesAlternativeResu
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ichiro')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('ichiro/mobile')) {
+        if (!$this->utils->checkIfContains(array('Superfeedr bot'))) {
             return false;
         }
 
@@ -94,7 +87,7 @@ class Ichiro extends AbstractBrowser implements BrowserCalculatesAlternativeResu
      */
     public function getName()
     {
-        return 'Ichiro Bot';
+        return 'Superfeedr Bot';
     }
 
     /**
@@ -104,7 +97,7 @@ class Ichiro extends AbstractBrowser implements BrowserCalculatesAlternativeResu
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Ichiro());
+        return new Company(new Company\Superfeedr());
     }
 
     /**
@@ -118,21 +111,6 @@ class Ichiro extends AbstractBrowser implements BrowserCalculatesAlternativeResu
     }
 
     /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('ichiro');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -143,27 +121,24 @@ class Ichiro extends AbstractBrowser implements BrowserCalculatesAlternativeResu
     }
 
     /**
-     * gets the name of the browser
+     * detects the browser version from the given user agent
      *
-     * @param \UaMatcher\Device\DeviceInterface $device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
+     * @return \UaResult\Version
      */
-    public function calculateAlternativeRendering(DeviceInterface $device)
+    public function detectVersion()
     {
-        $agent = str_ireplace(array('ichiro/mobile', 'ichiro', 'search.goo'), '', $this->useragent);
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
 
-        $detector = new BrowserDetector($this->cache, $this->logger);
+        $searches = array('Superfeedr bot');
 
-        $device->setRenderAs($detector->getBrowser($agent));
-
-        return $this;
+        return $detector->detectVersion($searches);
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {

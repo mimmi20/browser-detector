@@ -77,23 +77,6 @@ class Jasmine extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             return false;
         }
 
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Chrome',
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
-            return false;
-        }
-
         return true;
     }
 
@@ -104,7 +87,7 @@ class Jasmine extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getName()
     {
-        return 'Jasmine Webkit';
+        return 'Jasmine';
     }
 
     /**
