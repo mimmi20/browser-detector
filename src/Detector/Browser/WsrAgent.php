@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WsrAgent extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SeznamScreenshotGenerator/', 'Seznam screenshot-generator'))) {
+        if (!$this->utils->checkIfContains(array('wsr-agent'))) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getName()
     {
-        return 'Seznam Screenshot Generator';
+        return 'wsr-agent';
     }
 
     /**
@@ -97,7 +97,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Seznam());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -120,7 +120,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SeznamScreenshotGenerator', 'Seznam screenshot-generator');
+        $searches = array('wsr\-agent');
 
         return $detector->detectVersion($searches);
     }
@@ -136,9 +136,10 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function getEngine()
     {

@@ -43,12 +43,12 @@ class Careerx extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'www.career-x.de';
+    public $name = 'career-x.de';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'www.career-x.de';
+    public $brandname = 'career-x.de';
 }

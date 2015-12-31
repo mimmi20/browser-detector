@@ -31,18 +31,21 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
+ * PhantomUserAgentHandler
+ *
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class PhantomBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,10 +57,10 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
-        'pdf_support'                  => true,
+        'pdf_support'                  => false,
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
@@ -73,7 +76,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SeznamScreenshotGenerator/', 'Seznam screenshot-generator'))) {
+        if (!$this->utils->checkIfContains('Phantom')) {
             return false;
         }
 
@@ -87,7 +90,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getName()
     {
-        return 'Seznam Screenshot Generator';
+        return 'Phantom Browser';
     }
 
     /**
@@ -97,7 +100,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Seznam());
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -107,22 +110,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getBrowserType()
     {
-        return new Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('SeznamScreenshotGenerator', 'Seznam screenshot-generator');
-
-        return $detector->detectVersion($searches);
+        return new Browser();
     }
 
     /**
@@ -136,12 +124,28 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('Phantom', 'Phantom\/V');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

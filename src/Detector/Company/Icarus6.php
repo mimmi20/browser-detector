@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Infegy extends AbstractCompany
+class Icarus6 extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'Infegy';
+    public $name = 'icarus6.com';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Infegy';
+    public $brandname = 'icarus6.com';
 }

@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Application;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WordPressApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SeznamScreenshotGenerator/', 'Seznam screenshot-generator'))) {
+        if (!$this->utils->checkIfContains('wp-iphone')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getName()
     {
-        return 'Seznam Screenshot Generator';
+        return 'WordPress App';
     }
 
     /**
@@ -97,7 +97,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Seznam());
+        return new Company(new Company\WordPress());
     }
 
     /**
@@ -107,7 +107,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
     }
 
     /**
@@ -120,7 +120,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SeznamScreenshotGenerator', 'Seznam screenshot-generator');
+        $searches = array('wp\-iphone');
 
         return $detector->detectVersion($searches);
     }
@@ -142,6 +142,6 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

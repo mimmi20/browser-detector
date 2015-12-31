@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Infegy extends AbstractCompany
+class Plus5Files extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'Infegy';
+    public $name = 'plus5files.net';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Infegy';
+    public $brandname = 'plus5files.net';
 }

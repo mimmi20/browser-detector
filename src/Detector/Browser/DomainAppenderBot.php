@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class DomainAppenderBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SeznamScreenshotGenerator/', 'Seznam screenshot-generator'))) {
+        if (!$this->utils->checkIfContains('DomainAppender')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getName()
     {
-        return 'Seznam Screenshot Generator';
+        return 'DomainAppender Bot';
     }
 
     /**
@@ -97,7 +97,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Seznam());
+        return new Company(new Company\ProfoundNetworks());
     }
 
     /**
@@ -120,7 +120,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SeznamScreenshotGenerator', 'Seznam screenshot-generator');
+        $searches = array('DomainAppender \/', 'DomainAppender');
 
         return $detector->detectVersion($searches);
     }

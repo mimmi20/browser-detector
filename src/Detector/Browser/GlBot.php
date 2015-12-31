@@ -31,21 +31,18 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
- * PhantomUserAgentHandler
- *
- *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class GlBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -57,10 +54,10 @@ class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
-        'pdf_support'                  => false,
+        'pdf_support'                  => true,
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
@@ -76,7 +73,7 @@ class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Phantom')) {
+        if (!$this->utils->checkIfContains('GLBot')) {
             return false;
         }
 
@@ -90,7 +87,7 @@ class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getName()
     {
-        return 'Phantom';
+        return 'GLBot';
     }
 
     /**
@@ -100,7 +97,7 @@ class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Lg());
+        return new Company(new Company\Ichiro());
     }
 
     /**
@@ -110,7 +107,22 @@ class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('GLBot');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -124,28 +136,12 @@ class Phantom extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Phantom', 'Phantom\/V');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return UnknownEngine
      */
     public function getEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

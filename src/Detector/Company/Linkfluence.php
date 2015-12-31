@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Infegy extends AbstractCompany
+class Linkfluence extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'Infegy';
+    public $name = 'linkfluence.net';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Infegy';
+    public $brandname = 'linkfluence.net';
 }

@@ -74,7 +74,6 @@ class FaceBookBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
     public function canHandle()
     {
         $facebook = array(
-            'facebookexternalhit',
             'facebookplatform'
         );
 
@@ -125,7 +124,7 @@ class FaceBookBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('facebookexternalhit', 'facebookplatform');
+        $searches = array('facebookplatform');
 
         return $detector->detectVersion($searches);
     }

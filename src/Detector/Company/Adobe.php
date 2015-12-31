@@ -43,7 +43,7 @@ class Adobe extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Adobe';
+    public $name = 'Adobe Systems Incorporated';
 
     /**
      * the brand name of the company
