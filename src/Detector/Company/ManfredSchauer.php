@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CrazyBrowser extends AbstractCompany
+class ManfredSchauer extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'CrazyBrowser.com';
+    public $name = 'Dr. Manfred Schauer';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'CrazyBrowser';
+    public $brandname = 'Dr. Manfred Schauer';
 }

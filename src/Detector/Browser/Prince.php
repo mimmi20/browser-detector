@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Application;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SimplePie extends AbstractBrowser
+class Prince extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -52,7 +54,7 @@ class SimplePie extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -71,7 +73,7 @@ class SimplePie extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SimplePie')) {
+        if (!$this->utils->checkIfContains('Prince')) {
             return false;
         }
 
@@ -85,7 +87,7 @@ class SimplePie extends AbstractBrowser
      */
     public function getName()
     {
-        return 'SimplePie';
+        return 'Prince';
     }
 
     /**
@@ -95,7 +97,7 @@ class SimplePie extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\YesLogic());
     }
 
     /**
@@ -105,7 +107,7 @@ class SimplePie extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
     }
 
     /**
@@ -118,7 +120,7 @@ class SimplePie extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SimplePie');
+        $searches = array('Prince');
 
         return $detector->detectVersion($searches);
     }
@@ -131,5 +133,15 @@ class SimplePie extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function getEngine()
+    {
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

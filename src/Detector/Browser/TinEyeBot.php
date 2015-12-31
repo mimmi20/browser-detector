@@ -97,7 +97,7 @@ class TinEyeBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Bnf());
+        return new Company(new Company\Idee());
     }
 
     /**

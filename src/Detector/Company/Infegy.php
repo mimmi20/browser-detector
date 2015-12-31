@@ -43,7 +43,7 @@ class Infegy extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Infegy';
+    public $name = 'infegy.com';
 
     /**
      * the brand name of the company

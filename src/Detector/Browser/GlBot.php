@@ -97,7 +97,7 @@ class GlBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Ichiro());
+        return new Company(new Company\GalaxyDownloads());
     }
 
     /**
