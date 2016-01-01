@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Gecko;
+use UaBrowserType\Bot as TypeBot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Powermarks extends AbstractBrowser
+class Bot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -52,7 +54,7 @@ class Powermarks extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -71,7 +73,7 @@ class Powermarks extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Powermarks'))) {
+        if (!$this->utils->checkIfContains(array('bot'))) {
             return false;
         }
 
@@ -85,7 +87,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getName()
     {
-        return 'Powermarks';
+        return 'bot';
     }
 
     /**
@@ -95,7 +97,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\KaylonTechnologies());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -105,7 +107,17 @@ class Powermarks extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new TypeBot();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**
@@ -118,18 +130,19 @@ class Powermarks extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Powermarks');
+        $searches = array('bot');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return integer
+     * @return \BrowserDetector\Detector\Engine\Gecko
      */
-    public function getWeight()
+    public function getEngine()
     {
-        return 3;
+        return new Gecko($this->useragent, $this->logger);
     }
 }

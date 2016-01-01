@@ -31,8 +31,11 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Trident;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\MultimediaPlayer;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +43,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Powermarks extends AbstractBrowser
+class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -71,7 +74,7 @@ class Powermarks extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Powermarks'))) {
+        if (!$this->utils->checkIfContains('ElmediaPlayer')) {
             return false;
         }
 
@@ -85,7 +88,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getName()
     {
-        return 'Powermarks';
+        return 'Elmedia Player';
     }
 
     /**
@@ -95,7 +98,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\KaylonTechnologies());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -105,7 +108,17 @@ class Powermarks extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new MultimediaPlayer();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**
@@ -118,18 +131,19 @@ class Powermarks extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Powermarks');
+        $searches = array('ElmediaPlayer');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return integer
+     * @return \BrowserDetector\Detector\Engine\Trident
      */
-    public function getWeight()
+    public function getEngine()
     {
-        return 3;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

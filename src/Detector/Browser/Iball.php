@@ -31,16 +31,18 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Bot;
-use UaResult\Version;
+use UaBrowserType\Browser;
 
 /**
+ * ToshibaUserAgentHandler
+ *
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Powermarks extends AbstractBrowser
+class Iball extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -71,11 +73,7 @@ class Powermarks extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Powermarks'))) {
-            return false;
-        }
-
-        return true;
+        return $this->utils->checkIfContains('iBall');
     }
 
     /**
@@ -85,7 +83,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getName()
     {
-        return 'Powermarks';
+        return 'iBall';
     }
 
     /**
@@ -95,7 +93,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\KaylonTechnologies());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -105,22 +103,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Powermarks');
-
-        return $detector->detectVersion($searches);
+        return new Browser();
     }
 
     /**

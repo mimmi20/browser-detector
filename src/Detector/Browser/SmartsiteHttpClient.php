@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Powermarks extends AbstractBrowser
+class SmartsiteHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -71,11 +73,11 @@ class Powermarks extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Powermarks'))) {
-            return false;
+        if ($this->utils->checkIfContains('Smartsite HTTPClient')) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -85,7 +87,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getName()
     {
-        return 'Powermarks';
+        return 'Smartsite HTTPClient';
     }
 
     /**
@@ -95,7 +97,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\KaylonTechnologies());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -109,6 +111,16 @@ class Powermarks extends AbstractBrowser
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -118,18 +130,19 @@ class Powermarks extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Powermarks');
+        $searches = array('Smartsite HTTPClient');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return integer
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
-    public function getWeight()
+    public function getEngine()
     {
-        return 3;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

@@ -87,7 +87,7 @@ class GoogleAdsenseSnapshot extends AbstractBrowser implements BrowserHasSpecifi
      */
     public function getName()
     {
-        return 'Google Adsense Snapshot';
+        return 'AdSense Snapshot Bot';
     }
 
     /**

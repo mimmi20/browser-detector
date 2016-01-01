@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Bot;
+use UaBrowserType\Application;
 use UaResult\Version;
 
 /**
@@ -40,7 +40,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Powermarks extends AbstractBrowser
+class OktaMobileApp extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -52,7 +52,7 @@ class Powermarks extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -71,11 +71,11 @@ class Powermarks extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Powermarks'))) {
-            return false;
+        if ($this->utils->checkIfContains('OktaMobile')) {
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -85,7 +85,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getName()
     {
-        return 'Powermarks';
+        return 'Okta Mobile App';
     }
 
     /**
@@ -95,7 +95,7 @@ class Powermarks extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\KaylonTechnologies());
+        return new Company(new Company\Okta());
     }
 
     /**
@@ -105,7 +105,17 @@ class Powermarks extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**
@@ -118,18 +128,8 @@ class Powermarks extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Powermarks');
+        $searches = array('OktaMobile');
 
         return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 }
