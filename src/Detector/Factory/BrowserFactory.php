@@ -49,6 +49,7 @@ use BrowserDetector\Detector\Browser\AmazonCloudFront;
 use BrowserDetector\Detector\Browser\AndroidDownloadManager;
 use BrowserDetector\Detector\Browser\AndroidWebkit;
 use BrowserDetector\Detector\Browser\AndroidWebView;
+use BrowserDetector\Detector\Browser\Anonymizied;
 use BrowserDetector\Detector\Browser\AnotherWebMiningTool;
 use BrowserDetector\Detector\Browser\AntBot;
 use BrowserDetector\Detector\Browser\AolBot;
@@ -547,9 +548,15 @@ class BrowserFactory
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/(4|5)\.0 \(\)/', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/Mozilla\/(4|5)\.0\(/', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/^\[FBAN/i', $agent)) {
             $browser = new FacebookApp($agent, $logger);
-        } elseif (preg_match('/^(\'|\"|\[|\]|\=|\\\x|\(|label\=)/i', $agent)) {
+        } elseif (preg_match('/^(\'|\"|\[|\]|\=|\\\x|\(|label\=|windows)/i', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/applewebkit\/1\.1/i', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/mozila/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(ucbrowser|uc browser|ucweb)/i', $agent) && preg_match('/opera mini/i', $agent)) {
             $browser = new UcBrowser($agent, $logger);
@@ -638,8 +645,10 @@ class BrowserFactory
             && false !== strpos($agent, 'Tizen')
         ) {
             $browser = new SamsungWebView($agent, $logger);
-        } elseif (preg_match('/(cybeye)/i', $agent)) {
+        } elseif (preg_match('/cybeye/i', $agent)) {
             $browser = new CybEye($agent, $logger);
+        } elseif (preg_match('/(randomized|anonym)/i', $agent)) {
+            $browser = new Anonymizied($agent, $logger);
         } elseif (!preg_match('/trident/i', $agent) && preg_match('/msie (8|9|10|11)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/trident\/4/i', $agent) && preg_match('/msie (9|10|11)/i', $agent)) {
@@ -647,6 +656,8 @@ class BrowserFactory
         } elseif (preg_match('/trident\/5/i', $agent) && preg_match('/msie (10|11)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/trident\/6/i', $agent) && preg_match('/msie 11/i', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/netscape/i', $agent) && preg_match('/msie/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/msie (\d+)\.(\d+)/i', $agent, $matches)
             && isset($matches[1])
