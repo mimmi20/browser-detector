@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
-use UaBrowserType\Bot as TypeBot;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class BotBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -107,7 +107,7 @@ class Bot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getBrowserType()
     {
-        return new TypeBot();
+        return new Bot();
     }
 
     /**

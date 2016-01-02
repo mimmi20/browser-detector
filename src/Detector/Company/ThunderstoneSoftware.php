@@ -43,7 +43,7 @@ class ThunderstoneSoftware extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'hunderstone Software LLC';
+    public $name = 'Thunderstone Software LLC';
 
     /**
      * the brand name of the company
