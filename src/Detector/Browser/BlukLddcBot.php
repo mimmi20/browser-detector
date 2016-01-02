@@ -31,9 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
+use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
@@ -42,7 +41,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BnfFrBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class BlukLddcBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +72,7 @@ class BnfFrBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('bnf.fr_bot', 'bnf.fr'))) {
+        if (!$this->utils->checkIfContains('bl.uk_lddc_bot')) {
             return false;
         }
 
@@ -87,7 +86,7 @@ class BnfFrBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getName()
     {
-        return 'bnf.fr Bot';
+        return 'bl.uk_lddc_bot';
     }
 
     /**
@@ -97,7 +96,7 @@ class BnfFrBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\BibliothequeNationaledeFrance());
+        return new Company(new Company\TheBritishLegalDepositLibraries());
     }
 
     /**
@@ -121,28 +120,12 @@ class BnfFrBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('bnf.fr_bot');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

@@ -82,6 +82,8 @@ use BrowserDetector\Detector\Browser\BlexBot;
 use BrowserDetector\Detector\Browser\BloglovinBot;
 use BrowserDetector\Detector\Browser\BlogSearch;
 use BrowserDetector\Detector\Browser\BlogsharesSpiders;
+use BrowserDetector\Detector\Browser\BlukLddcBot;
+use BrowserDetector\Detector\Browser\BnfFrBot;
 use BrowserDetector\Detector\Browser\BoardReaderFaviconFetcher;
 use BrowserDetector\Detector\Browser\BotBot;
 use BrowserDetector\Detector\Browser\Bot360;
@@ -550,6 +552,8 @@ class BrowserFactory
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/(4|5)\.0\(/', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/Mozilla\/4\.0 \(compatible\;Android\;/', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/^\[FBAN/i', $agent)) {
             $browser = new FacebookApp($agent, $logger);
         } elseif (preg_match('/^(\'|\"|\[|\]|\=|\\\x|\(|label\=|windows)/i', $agent)) {
@@ -576,6 +580,8 @@ class BrowserFactory
             $browser = new Icab($agent, $logger);
         } elseif (preg_match('/HggH PhantomJS Screenshoter/', $agent)) {
             $browser = new HgghPhantomjsScreenshoter($agent, $logger);
+        } elseif (preg_match('/bl\.uk\_lddc\_bot/', $agent)) {
+            $browser = new BlukLddcBot($agent, $logger);
         } elseif (false !== strpos($agent, 'PhantomJS')) {
             $browser = new PhantomJs($agent, $logger);
         } elseif (false !== strpos($agent, 'YaBrowser')) {
@@ -971,6 +977,8 @@ class BrowserFactory
             $browser = new MonoBot($agent, $logger);
         } elseif (preg_match('/DomainSigmaCrawler/', $agent)) {
             $browser = new DomainSigmaCrawler($agent, $logger);
+        } elseif (preg_match('/bnf\.fr\_bot/', $agent)) {
+            $browser = new BnfFrBot($agent, $logger);
         } elseif (preg_match('/obot/i', $agent)) {
             $browser = new Obot($agent, $logger);
         } elseif (preg_match('/ZumBot/', $agent)) {
