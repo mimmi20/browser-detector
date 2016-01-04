@@ -31,10 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\MultimediaPlayer;
-use UaResult\Version;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class EspialTvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ElmediaPlayer')) {
+        if (!$this->utils->checkIfContains('Espial')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getName()
     {
-        return 'Elmedia Player';
+        return 'Espial TV Browser';
     }
 
     /**
@@ -97,7 +97,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\EltimaSoftware());
+        return new Company(new Company\EspialGroup());
     }
 
     /**
@@ -107,7 +107,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getBrowserType()
     {
-        return new MultimediaPlayer();
+        return new Browser();
     }
 
     /**
@@ -130,19 +130,18 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('ElmediaPlayer');
+        $searches = array('Espial');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Trident
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

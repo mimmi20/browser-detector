@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\MultimediaPlayer;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class JobdiggerSpider extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +54,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,7 +73,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ElmediaPlayer')) {
+        if (!$this->utils->checkIfContains('JobdiggerSpider')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getName()
     {
-        return 'Elmedia Player';
+        return 'JobdiggerSpider';
     }
 
     /**
@@ -97,7 +97,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\EltimaSoftware());
+        return new Company(new Company\Jobdigger());
     }
 
     /**
@@ -107,7 +107,22 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getBrowserType()
     {
-        return new MultimediaPlayer();
+        return new Bot();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('JobdiggerSpider');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -121,25 +136,9 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('ElmediaPlayer');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Trident
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {

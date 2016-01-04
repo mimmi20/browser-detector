@@ -32,9 +32,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\MultimediaPlayer;
-use UaResult\Version;
+use UaBrowserType\Bot;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class YahooAdMonitoring extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +54,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,7 +73,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ElmediaPlayer')) {
+        if (!$this->utils->checkIfContains('Yahoo Ad monitoring')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getName()
     {
-        return 'Elmedia Player';
+        return 'Yahoo Ad Monitoring';
     }
 
     /**
@@ -97,7 +97,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\EltimaSoftware());
+        return new Company(new Company\Yahoo());
     }
 
     /**
@@ -107,7 +107,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getBrowserType()
     {
-        return new MultimediaPlayer();
+        return new Bot();
     }
 
     /**
@@ -130,16 +130,15 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('ElmediaPlayer');
+        $searches = array('Yahoo Ad monitoring');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Trident
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
