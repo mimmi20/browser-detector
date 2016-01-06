@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Application;
+use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class PageFreezer extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Schoolwires')) {
+        if (!$this->utils->checkIfContains(array('PageFreezer'))) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Schoolwires App';
+        return 'PageFreezer';
     }
 
     /**
@@ -97,7 +97,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Schoolwires());
+        return new Company(new Company\PageFreezerSoftware());
     }
 
     /**
@@ -107,7 +107,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getBrowserType()
     {
-        return new Application();
+        return new Bot();
     }
 
     /**
@@ -120,7 +120,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Schoolwires');
+        $searches = array('PageFreezer');
 
         return $detector->detectVersion($searches);
     }

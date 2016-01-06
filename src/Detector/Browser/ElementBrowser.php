@@ -31,10 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Application;
-use UaResult\Version;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class ElementBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +54,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,7 +73,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Schoolwires')) {
+        if (!$this->utils->checkIfContains('Element Browser')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Schoolwires App';
+        return 'Element Browser';
     }
 
     /**
@@ -97,7 +97,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Schoolwires());
+        return new Company(new Company\ElementSoftware());
     }
 
     /**
@@ -107,22 +107,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getBrowserType()
     {
-        return new Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Schoolwires');
-
-        return $detector->detectVersion($searches);
+        return new Browser();
     }
 
     /**
@@ -136,12 +121,27 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
     }
 
     /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('Element Browser');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

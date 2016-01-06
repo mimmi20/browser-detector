@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Application;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Iweb extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Schoolwires')) {
+        if (!$this->utils->checkIfContains('iWeb')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Schoolwires App';
+        return 'iWeb';
     }
 
     /**
@@ -97,7 +97,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Schoolwires());
+        return new Company(new Company\Apple());
     }
 
     /**
@@ -120,7 +120,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Schoolwires');
+        $searches = array('iWeb');
 
         return $detector->detectVersion($searches);
     }
@@ -142,6 +142,6 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

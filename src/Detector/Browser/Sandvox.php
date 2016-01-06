@@ -31,10 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Application;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Sandvox extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +54,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,7 +73,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Schoolwires')) {
+        if (!$this->utils->checkIfContains('Sandvox')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Schoolwires App';
+        return 'Sandvox';
     }
 
     /**
@@ -97,7 +97,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Schoolwires());
+        return new Company(new Company\KareliaSoftware());
     }
 
     /**
@@ -120,7 +120,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Schoolwires');
+        $searches = array('Sandvox');
 
         return $detector->detectVersion($searches);
     }
@@ -142,6 +142,6 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

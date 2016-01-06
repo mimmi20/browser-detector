@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class ElluminateLive extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Schoolwires')) {
+        if (!$this->utils->checkIfContains('Elluminate Live')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getName()
     {
-        return 'Schoolwires App';
+        return 'Elluminate Live';
     }
 
     /**
@@ -97,7 +97,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Schoolwires());
+        return new Company(new Company\Blackboard());
     }
 
     /**
@@ -111,6 +111,16 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -120,19 +130,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Schoolwires');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return 3;
+        return $detector->setVersion('');
     }
 
     /**
