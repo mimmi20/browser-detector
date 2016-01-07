@@ -31,8 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\MultimediaPlayer;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class VlcMediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,7 +54,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -73,7 +73,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Akregator')) {
+        if (!$this->utils->checkIfContains('vlc', true)) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'akregator';
+        return 'VLC Media Player';
     }
 
     /**
@@ -97,7 +97,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\VideoLan());
     }
 
     /**
@@ -107,7 +107,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new MultimediaPlayer();
     }
 
     /**
@@ -130,7 +130,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Akregator');
+        $searches = array('VLC');
 
         return $detector->detectVersion($searches);
     }
@@ -139,10 +139,10 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\Engine\Trident
      */
     public function getEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

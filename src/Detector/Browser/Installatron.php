@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Bot;
+use UaBrowserType\Application;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaResult\Version;
 
@@ -107,7 +107,7 @@ class Installatron extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
     }
 
     /**

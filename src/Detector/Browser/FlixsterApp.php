@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Bot;
+use UaBrowserType\Application;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class FlixsterApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Akregator')) {
+        if (!$this->utils->checkIfContains(array('FlixsteriOS'))) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getName()
     {
-        return 'akregator';
+        return 'Flixster App';
     }
 
     /**
@@ -97,7 +97,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Flixster());
     }
 
     /**
@@ -107,7 +107,22 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('FlixsteriOS');
+
+        return $detector->detectVersion($searches);
     }
 
     /**
@@ -121,25 +136,9 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('Akregator');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {

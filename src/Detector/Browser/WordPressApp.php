@@ -73,7 +73,7 @@ class WordPressApp extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('wp-iphone')) {
+        if (!$this->utils->checkIfContains(array('wp-iphone', 'wp-android'))) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class WordPressApp extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('wp\-iphone');
+        $searches = array('wp\-iphone', 'wp\-android');
 
         return $detector->detectVersion($searches);
     }
