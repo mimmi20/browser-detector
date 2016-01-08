@@ -32,7 +32,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use UaBrowserType\Application;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
@@ -107,7 +107,7 @@ class RebelMouse extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Application();
     }
 
     /**

@@ -73,10 +73,6 @@ class Skyfire extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
         if (!$this->utils->checkIfContains(array('Skyfire/'))) {
             return false;
         }
@@ -101,7 +97,7 @@ class Skyfire extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Opera());
     }
 
     /**

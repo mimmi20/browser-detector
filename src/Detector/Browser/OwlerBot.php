@@ -31,10 +31,9 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +41,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class OwlerBot extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -55,7 +54,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
 
         // product info
         'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => false,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -73,31 +72,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('rekonq'), true)) {
-            return false;
-        }
-
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Chrome',
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'OmniWeb',
-            //mobile Version
-            'Mobile'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
+        if (!$this->utils->checkIfContains(array('Owler'))) {
             return false;
         }
 
@@ -111,7 +86,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getName()
     {
-        return 'rekonq';
+        return 'Owler Bot';
     }
 
     /**
@@ -121,7 +96,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Kde());
+        return new Company(new Company\Owler());
     }
 
     /**
@@ -131,7 +106,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
     }
 
     /**
@@ -143,8 +118,9 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Version', 'rekonq');
+        $searches = array('Owler');
 
         return $detector->detectVersion($searches);
     }
@@ -163,10 +139,10 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \UaMatcher\Engine\EngineInterface
      */
-    public function getEngine()
+    public function detectEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

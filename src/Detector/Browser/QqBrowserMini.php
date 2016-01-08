@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class QqBrowserMini extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,31 +73,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('rekonq'), true)) {
-            return false;
-        }
-
-        $isNotReallyAnSafari = array(
-            // using also the KHTML rendering engine
-            'Chrome',
-            'Chromium',
-            'Flock',
-            'Galeon',
-            'Lunascape',
-            'Iron',
-            'Maemo',
-            'PaleMoon',
-            'Rockmelt',
-            'OmniWeb',
-            //mobile Version
-            'Mobile'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
+        if (!$this->utils->checkIfContains(array('MQQBrowser/Mini'))) {
             return false;
         }
 
@@ -111,7 +87,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getName()
     {
-        return 'rekonq';
+        return 'QQbrowser Mini';
     }
 
     /**
@@ -121,7 +97,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Kde());
+        return new Company(new Company\Tencent());
     }
 
     /**
@@ -144,7 +120,7 @@ class Rekonq extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Version', 'rekonq');
+        $searches = array('MQQBrowser\/Mini');
 
         return $detector->detectVersion($searches);
     }
