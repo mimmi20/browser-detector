@@ -96,7 +96,7 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
             'PaleMoon',
             'RockMelt',
             'Silk',
-            'YaBrowserInterface',
+            'YaBrowser',
             'bdbrowser_i18n',
             'FBAV',
             'UCBrowser',

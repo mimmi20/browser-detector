@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetFront extends AbstractBrowser
+class MegaIndexBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -52,7 +54,7 @@ class NetFront extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -71,21 +73,7 @@ class NetFront extends AbstractBrowser
      */
     public function canHandle()
     {
-        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'PlayStation 4');
-
-        if (!$this->utils->checkIfContains($netfront)) {
-            return false;
-        }
-
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle',
-            // a new version of the netfront browser
-            'NX',
-            'Nintendo 3DS'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
+        if (!$this->utils->checkIfContains(array('MegaIndex.ru'))) {
             return false;
         }
 
@@ -99,7 +87,7 @@ class NetFront extends AbstractBrowser
      */
     public function getName()
     {
-        return 'NetFront';
+        return 'MegaIndex Bot';
     }
 
     /**
@@ -109,7 +97,7 @@ class NetFront extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Access());
+        return new Company(new Company\MegaIndex());
     }
 
     /**
@@ -119,7 +107,17 @@ class NetFront extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**
@@ -132,18 +130,18 @@ class NetFront extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3');
+        $searches = array('MegaIndex\.ru');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return integer
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function getWeight()
+    public function getEngine()
     {
-        return 3;
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

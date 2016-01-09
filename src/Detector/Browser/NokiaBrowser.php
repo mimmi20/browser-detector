@@ -71,7 +71,7 @@ class NokiaBrowser extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NokiaBrowserInterface', 'Nokia'))) {
+        if (!$this->utils->checkIfContains(array('NokiaBrowser', 'Nokia'))) {
             return false;
         }
 
@@ -122,7 +122,7 @@ class NokiaBrowser extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('BrowserNG', 'NokiaBrowserInterface');
+        $searches = array('BrowserNG', 'NokiaBrowser');
 
         return $detector->detectVersion($searches);
     }

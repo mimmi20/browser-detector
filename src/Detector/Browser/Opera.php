@@ -90,7 +90,7 @@ class Opera extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brow
             // Fakes
             'Mac; Mac OS ',
             'AppEngine-Google',
-            'InettvBrowserInterface'
+            'InettvBrowser'
         );
 
         if ($this->utils->checkIfContains($isNotReallyAnOpera)) {

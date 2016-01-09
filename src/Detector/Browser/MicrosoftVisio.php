@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use UaBrowserType\Application;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetFront extends AbstractBrowser
+class MicrosoftVisio extends MicrosoftOffice implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -53,7 +55,7 @@ class NetFront extends AbstractBrowser
 
         // product info
         'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => false,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -71,21 +73,7 @@ class NetFront extends AbstractBrowser
      */
     public function canHandle()
     {
-        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'PlayStation 4');
-
-        if (!$this->utils->checkIfContains($netfront)) {
-            return false;
-        }
-
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle',
-            // a new version of the netfront browser
-            'NX',
-            'Nintendo 3DS'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
+        if (!$this->utils->checkIfContains(array('Visio'))) {
             return false;
         }
 
@@ -99,7 +87,7 @@ class NetFront extends AbstractBrowser
      */
     public function getName()
     {
-        return 'NetFront';
+        return 'Visio';
     }
 
     /**
@@ -109,7 +97,7 @@ class NetFront extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Access());
+        return new Company(new Company\Microsoft());
     }
 
     /**
@@ -119,7 +107,7 @@ class NetFront extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Application();
     }
 
     /**
@@ -131,10 +119,19 @@ class NetFront extends AbstractBrowser
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
-        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3');
+        $doMatch = preg_match(
+            '/Visio(\/| )([\d\.]+)/',
+            $this->useragent,
+            $matches
+        );
 
-        return $detector->detectVersion($searches);
+        if ($doMatch) {
+            return $detector->setVersion($this->mapVersion($matches[1]));
+        }
+
+        return parent::detectVersion();
     }
 
     /**
@@ -145,5 +142,19 @@ class NetFront extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns the WurflKey
+     *
+     * @param \UaMatcher\Os\OsInterface $os
+     *
+     * @return string
+     */
+    public function getWurflKey(OsInterface $os)
+    {
+        $browserVersion = (int)$this->detectInternalVersion();
+
+        return 'ms_outlook_subua' . $browserVersion;
     }
 }

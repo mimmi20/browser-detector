@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaResult\Version;
 
 /**
@@ -41,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OwlerBot extends AbstractBrowser
+class OwlerBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -141,7 +142,7 @@ class OwlerBot extends AbstractBrowser
      *
      * @return \UaMatcher\Engine\EngineInterface
      */
-    public function detectEngine()
+    public function getEngine()
     {
         return new UnknownEngine($this->useragent, $this->logger);
     }

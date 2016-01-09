@@ -73,7 +73,7 @@ class InettvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('InettvBrowserInterface')) {
+        if (!$this->utils->checkIfContains('InettvBrowser')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class InettvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function getName()
     {
-        return 'InettvBrowserInterface';
+        return 'InettvBrowser';
     }
 
     /**
@@ -120,7 +120,7 @@ class InettvBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('InettvBrowserInterface', 'Version');
+        $searches = array('InettvBrowser', 'Version');
 
         return $detector->detectVersion($searches);
     }

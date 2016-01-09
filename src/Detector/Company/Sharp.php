@@ -43,7 +43,7 @@ class Sharp extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Sharp';
+    public $name = 'Sharp Corporation';
 
     /**
      * the brand name of the company

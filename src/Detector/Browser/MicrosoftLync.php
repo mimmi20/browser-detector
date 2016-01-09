@@ -33,6 +33,8 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use UaBrowserType\Application;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WeChat extends AbstractBrowser
+class MicrosoftLync extends MicrosoftOffice implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -52,8 +54,8 @@ class WeChat extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -71,7 +73,7 @@ class WeChat extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('MicroMessenger'))) {
+        if (!$this->utils->checkIfContains(array('Lync'))) {
             return false;
         }
 
@@ -85,7 +87,7 @@ class WeChat extends AbstractBrowser
      */
     public function getName()
     {
-        return 'WeChat App';
+        return 'Lync';
     }
 
     /**
@@ -95,7 +97,7 @@ class WeChat extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Tencent());
+        return new Company(new Company\Microsoft());
     }
 
     /**
@@ -117,10 +119,19 @@ class WeChat extends AbstractBrowser
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
-        $searches = array('MicroMessenger');
+        $doMatch = preg_match(
+            '/Lync(\/| )([\d\.]+)/',
+            $this->useragent,
+            $matches
+        );
 
-        return $detector->detectVersion($searches);
+        if ($doMatch) {
+            return $detector->setVersion($this->mapVersion($matches[1]));
+        }
+
+        return parent::detectVersion();
     }
 
     /**
@@ -131,5 +142,19 @@ class WeChat extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns the WurflKey
+     *
+     * @param \UaMatcher\Os\OsInterface $os
+     *
+     * @return string
+     */
+    public function getWurflKey(OsInterface $os)
+    {
+        $browserVersion = (int)$this->detectInternalVersion();
+
+        return 'ms_outlook_subua' . $browserVersion;
     }
 }

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Salesforce extends AbstractCompany
+class SetLinks extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'Salesforce.com, Inc.';
+    public $name = 'SetLinks.ru';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Salesforce';
+    public $brandname = 'SetLinks.ru';
 }

@@ -76,7 +76,7 @@ class SlimBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SlimBrowserInterface'))) {
+        if (!$this->utils->checkIfContains(array('SlimBrowser'))) {
             return false;
         }
 
@@ -90,7 +90,7 @@ class SlimBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'SlimBrowserInterface';
+        return 'SlimBrowser';
     }
 
     /**
@@ -123,7 +123,7 @@ class SlimBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SlimBrowserInterface');
+        $searches = array('SlimBrowser');
 
         return $detector->detectVersion($searches);
     }

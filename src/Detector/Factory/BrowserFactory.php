@@ -36,12 +36,15 @@ use BrowserDetector\Detector\Browser\Aboundexbot;
 use BrowserDetector\Detector\Browser\AboutUsBot;
 use BrowserDetector\Detector\Browser\AboutUsBotJohnny5;
 use BrowserDetector\Detector\Browser\Acapbot;
+use BrowserDetector\Detector\Browser\AccServer;
 use BrowserDetector\Detector\Browser\AcoonBot;
 use BrowserDetector\Detector\Browser\AdbeatBot;
 use BrowserDetector\Detector\Browser\AddCatalog;
+use BrowserDetector\Detector\Browser\AddThisRobot;
 use BrowserDetector\Detector\Browser\Adidxbot;
 use BrowserDetector\Detector\Browser\AdmantxPlatformSemanticAnalyzer;
 use BrowserDetector\Detector\Browser\AdobeAIR;
+use BrowserDetector\Detector\Browser\AdvBot;
 use BrowserDetector\Detector\Browser\AhrefsBot;
 use BrowserDetector\Detector\Browser\Airmail;
 use BrowserDetector\Detector\Browser\AjaxSnapBot;
@@ -65,6 +68,7 @@ use BrowserDetector\Detector\Browser\ApplePubSub;
 use BrowserDetector\Detector\Browser\ApusBrowser;
 use BrowserDetector\Detector\Browser\ArachnidaWebCrawler;
 use BrowserDetector\Detector\Browser\ArchiveBot;
+use BrowserDetector\Detector\Browser\ArchiveOrgBot;
 use BrowserDetector\Detector\Browser\Arora;
 use BrowserDetector\Detector\Browser\AskPeterBot;
 use BrowserDetector\Detector\Browser\Avant;
@@ -75,6 +79,7 @@ use BrowserDetector\Detector\Browser\BaiduMiniBrowser;
 use BrowserDetector\Detector\Browser\BaiduMobileSearch;
 use BrowserDetector\Detector\Browser\Bandscraper;
 use BrowserDetector\Detector\Browser\Beamrise;
+use BrowserDetector\Detector\Browser\BegunAdvertisingBot;
 use BrowserDetector\Detector\Browser\BigBozz;
 use BrowserDetector\Detector\Browser\Bingbot;
 use BrowserDetector\Detector\Browser\BingPreview;
@@ -98,6 +103,7 @@ use BrowserDetector\Detector\Browser\Browsershots;
 use BrowserDetector\Detector\Browser\Bubing;
 use BrowserDetector\Detector\Browser\BuiBuiBot;
 use BrowserDetector\Detector\Browser\BuSecurityProject;
+use BrowserDetector\Detector\Browser\ButterflyRobot;
 use BrowserDetector\Detector\Browser\CaCrawler;
 use BrowserDetector\Detector\Browser\CareerBot;
 use BrowserDetector\Detector\Browser\CarsAppBrowser;
@@ -128,9 +134,11 @@ use BrowserDetector\Detector\Browser\CrazyBrowser;
 use BrowserDetector\Detector\Browser\Crazywebcrawler;
 use BrowserDetector\Detector\Browser\CrowsnestMobileApp;
 use BrowserDetector\Detector\Browser\Curl;
+use BrowserDetector\Detector\Browser\Cyberduck;
 use BrowserDetector\Detector\Browser\CybEye;
 use BrowserDetector\Detector\Browser\Dalvik;
 use BrowserDetector\Detector\Browser\Daumoa;
+use BrowserDetector\Detector\Browser\DawinciAntiplagSpider;
 use BrowserDetector\Detector\Browser\Dbot;
 use BrowserDetector\Detector\Browser\DeepnetExplorer;
 use BrowserDetector\Detector\Browser\Diffbot;
@@ -151,6 +159,7 @@ use BrowserDetector\Detector\Browser\DotBot;
 use BrowserDetector\Detector\Browser\DoubanApp;
 use BrowserDetector\Detector\Browser\DownloadAccelerator;
 use BrowserDetector\Detector\Browser\Dreamweaver;
+use BrowserDetector\Detector\Browser\DuckDuckFaviconsBot;
 use BrowserDetector\Detector\Browser\EasouSpider;
 use BrowserDetector\Detector\Browser\EbApp;
 use BrowserDetector\Detector\Browser\Eccp;
@@ -230,6 +239,7 @@ use BrowserDetector\Detector\Browser\HttpClient;
 use BrowserDetector\Detector\Browser\HttpRequester;
 use BrowserDetector\Detector\Browser\Httrack;
 use BrowserDetector\Detector\Browser\HubSpotWebcrawler;
+use BrowserDetector\Detector\Browser\HyperCrawl;
 use BrowserDetector\Detector\Browser\Iball;
 use BrowserDetector\Detector\Browser\IbmConnections;
 use BrowserDetector\Detector\Browser\IbooksAuthor;
@@ -259,6 +269,8 @@ use BrowserDetector\Detector\Browser\IstellaBot;
 use BrowserDetector\Detector\Browser\ItsScan;
 use BrowserDetector\Detector\Browser\Itunes;
 use BrowserDetector\Detector\Browser\Iweb;
+use BrowserDetector\Detector\Browser\IzSearchBot;
+use BrowserDetector\Detector\Browser\JamesBot;
 use BrowserDetector\Detector\Browser\Jasmine;
 use BrowserDetector\Detector\Browser\JavaStandardLibrary;
 use BrowserDetector\Detector\Browser\Jeode;
@@ -276,11 +288,13 @@ use BrowserDetector\Detector\Browser\Kmeleon;
 use BrowserDetector\Detector\Browser\KomodiaBot;
 use BrowserDetector\Detector\Browser\Konqueror;
 use BrowserDetector\Detector\Browser\Kontact;
+use BrowserDetector\Detector\Browser\Kraken;
 use BrowserDetector\Detector\Browser\Krakenjs;
 use BrowserDetector\Detector\Browser\Kulturarw3;
 use BrowserDetector\Detector\Browser\Larbin;
 use BrowserDetector\Detector\Browser\Lbot;
 use BrowserDetector\Detector\Browser\LibreOffice;
+use BrowserDetector\Detector\Browser\Liebao;
 use BrowserDetector\Detector\Browser\LightspeedSystemsCrawler;
 use BrowserDetector\Detector\Browser\LightspeedSystemsRocketCrawler;
 use BrowserDetector\Detector\Browser\LinkdexBot;
@@ -297,6 +311,7 @@ use BrowserDetector\Detector\Browser\LotusNotes;
 use BrowserDetector\Detector\Browser\Ltx71;
 use BrowserDetector\Detector\Browser\Luakit;
 use BrowserDetector\Detector\Browser\LucidworksBot;
+use BrowserDetector\Detector\Browser\Lynx;
 use BrowserDetector\Detector\Browser\MailChimp;
 use BrowserDetector\Detector\Browser\MailRu;
 use BrowserDetector\Detector\Browser\MarketwireBot;
@@ -304,6 +319,7 @@ use BrowserDetector\Detector\Browser\MauiWapBrowser;
 use BrowserDetector\Detector\Browser\Maxthon;
 use BrowserDetector\Detector\Browser\MaxthonNitro;
 use BrowserDetector\Detector\Browser\MeanpathBot;
+use BrowserDetector\Detector\Browser\MegaIndexBot;
 use BrowserDetector\Detector\Browser\MemoryBot;
 use BrowserDetector\Detector\Browser\MerchantCentricBot;
 use BrowserDetector\Detector\Browser\Mercury;
@@ -313,18 +329,27 @@ use BrowserDetector\Detector\Browser\MetaHeadersBot;
 use BrowserDetector\Detector\Browser\MetaInspector;
 use BrowserDetector\Detector\Browser\MetaJobBot;
 use BrowserDetector\Detector\Browser\MetaUri;
+use BrowserDetector\Detector\Browser\MicrosoftAccess;
 use BrowserDetector\Detector\Browser\MicrosoftCryptoApi;
 use BrowserDetector\Detector\Browser\MicrosoftEdge;
 use BrowserDetector\Detector\Browser\MicrosoftExcel;
+use BrowserDetector\Detector\Browser\MicrosoftFrontPage;
 use BrowserDetector\Detector\Browser\MicrosoftInternetExplorer;
+use BrowserDetector\Detector\Browser\MicrosoftLync;
 use BrowserDetector\Detector\Browser\MicrosoftMobileExplorer;
 use BrowserDetector\Detector\Browser\MicrosoftOffice;
 use BrowserDetector\Detector\Browser\MicrosoftOfficeProtocolDiscovery;
+use BrowserDetector\Detector\Browser\MicrosoftOfficeSyncProc;
+use BrowserDetector\Detector\Browser\MicrosoftOfficeUploadCenter;
+use BrowserDetector\Detector\Browser\MicrosoftOneNote;
 use BrowserDetector\Detector\Browser\MicrosoftOutlook;
 use BrowserDetector\Detector\Browser\MicrosoftPowerPoint;
+use BrowserDetector\Detector\Browser\MicrosoftVisio;
 use BrowserDetector\Detector\Browser\MicrosoftWebDav;
+use BrowserDetector\Detector\Browser\MicrosoftWord;
 use BrowserDetector\Detector\Browser\Midori;
 use BrowserDetector\Detector\Browser\MignifyBot;
+use BrowserDetector\Detector\Browser\MiuiBrowser;
 use BrowserDetector\Detector\Browser\MixBot;
 use BrowserDetector\Detector\Browser\MixrankBot;
 use BrowserDetector\Detector\Browser\Mj12bot;
@@ -341,6 +366,7 @@ use BrowserDetector\Detector\Browser\Mozilla;
 use BrowserDetector\Detector\Browser\MozillaCrawler;
 use BrowserDetector\Detector\Browser\MsnBotMedia;
 use BrowserDetector\Detector\Browser\MyInternetBrowser;
+use BrowserDetector\Detector\Browser\Nagios;
 use BrowserDetector\Detector\Browser\NaverMatome;
 use BrowserDetector\Detector\Browser\Nbot;
 use BrowserDetector\Detector\Browser\NerdyBot;
@@ -348,6 +374,7 @@ use BrowserDetector\Detector\Browser\NetEstateCrawler;
 use BrowserDetector\Detector\Browser\NetFront;
 use BrowserDetector\Detector\Browser\NetFrontLifeBrowser;
 use BrowserDetector\Detector\Browser\NetFrontNx;
+use BrowserDetector\Detector\Browser\NetLyzerFastProbe;
 use BrowserDetector\Detector\Browser\Netscape;
 use BrowserDetector\Detector\Browser\NetseerCrawler;
 use BrowserDetector\Detector\Browser\NettioBot;
@@ -383,6 +410,7 @@ use BrowserDetector\Detector\Browser\Palemoon;
 use BrowserDetector\Detector\Browser\PaperLiBot;
 use BrowserDetector\Detector\Browser\PdrlabsBot;
 use BrowserDetector\Detector\Browser\PeeploScreenshotBot;
+use BrowserDetector\Detector\Browser\Phantomas;
 use BrowserDetector\Detector\Browser\PhantomBrowser;
 use BrowserDetector\Detector\Browser\PhantomJs;
 use BrowserDetector\Detector\Browser\PhantomJsBot;
@@ -418,6 +446,7 @@ use BrowserDetector\Detector\Browser\QuickiWikiBot;
 use BrowserDetector\Detector\Browser\QuickLook;
 use BrowserDetector\Detector\Browser\QuoraApp;
 use BrowserDetector\Detector\Browser\QupZilla;
+use BrowserDetector\Detector\Browser\Qwantify;
 use BrowserDetector\Detector\Browser\Qword;
 use BrowserDetector\Detector\Browser\R6CommentReader;
 use BrowserDetector\Detector\Browser\RamblerMail;
@@ -435,6 +464,7 @@ use BrowserDetector\Detector\Browser\RockyChatWorkMobile;
 use BrowserDetector\Detector\Browser\Rss2Html;
 use BrowserDetector\Detector\Browser\Ruby;
 use BrowserDetector\Detector\Browser\Safari;
+use BrowserDetector\Detector\Browser\SafeSearchMicrodataCrawler;
 use BrowserDetector\Detector\Browser\SalesForceApp;
 use BrowserDetector\Detector\Browser\Samsung;
 use BrowserDetector\Detector\Browser\SamsungBrowser;
@@ -444,6 +474,7 @@ use BrowserDetector\Detector\Browser\SchoolwiresApp;
 use BrowserDetector\Detector\Browser\ScrapyBot;
 use BrowserDetector\Detector\Browser\ScreamingFrogSeoSpider;
 use BrowserDetector\Detector\Browser\ScreenerBot;
+use BrowserDetector\Detector\Browser\ScreenshotBot;
 use BrowserDetector\Detector\Browser\Scrubby;
 use BrowserDetector\Detector\Browser\SearchteqBot;
 use BrowserDetector\Detector\Browser\SecondLiveClient;
@@ -457,6 +488,7 @@ use BrowserDetector\Detector\Browser\SemrushBot;
 use BrowserDetector\Detector\Browser\SeoDiver;
 use BrowserDetector\Detector\Browser\Seokicks;
 use BrowserDetector\Detector\Browser\Seoprofiler;
+use BrowserDetector\Detector\Browser\SetLinksCrawler;
 use BrowserDetector\Detector\Browser\SeznamBot;
 use BrowserDetector\Detector\Browser\SeznamBrowser;
 use BrowserDetector\Detector\Browser\SeznamScreenshotGenerator;
@@ -494,6 +526,7 @@ use BrowserDetector\Detector\Browser\SuperfeedrBot;
 use BrowserDetector\Detector\Browser\SurveyBot;
 use BrowserDetector\Detector\Browser\SynHttpClient;
 use BrowserDetector\Detector\Browser\TelecaObigo;
+use BrowserDetector\Detector\Browser\TestCrawler;
 use BrowserDetector\Detector\Browser\TexisWebscript;
 use BrowserDetector\Detector\Browser\TheOldReader;
 use BrowserDetector\Detector\Browser\ThumbnailAgent;
@@ -525,6 +558,7 @@ use BrowserDetector\Detector\Browser\Vagabondo;
 use BrowserDetector\Detector\Browser\VbulletinSeoBot;
 use BrowserDetector\Detector\Browser\ViralvideochartBot;
 use BrowserDetector\Detector\Browser\VisionUtils;
+use BrowserDetector\Detector\Browser\Vivaldi;
 use BrowserDetector\Detector\Browser\VkShare;
 use BrowserDetector\Detector\Browser\VlcMediaPlayer;
 use BrowserDetector\Detector\Browser\W3cI18nChecker;
@@ -548,6 +582,7 @@ use BrowserDetector\Detector\Browser\WebsiteExplorer;
 use BrowserDetector\Detector\Browser\WebsiteThumbnailGenerator;
 use BrowserDetector\Detector\Browser\WebTarantula;
 use BrowserDetector\Detector\Browser\WebThumb;
+use BrowserDetector\Detector\Browser\WeChatApp;
 use BrowserDetector\Detector\Browser\WeseeAds;
 use BrowserDetector\Detector\Browser\WeseeSearch;
 use BrowserDetector\Detector\Browser\WeTabBrowser;
@@ -559,12 +594,14 @@ use BrowserDetector\Detector\Browser\WindowsMediaPlayer;
 use BrowserDetector\Detector\Browser\WindowsPhoneSearch;
 use BrowserDetector\Detector\Browser\WindowsRssPlatform;
 use BrowserDetector\Detector\Browser\WinHttpRequest;
+use BrowserDetector\Detector\Browser\WiseNutSearchEngineCrawler;
 use BrowserDetector\Detector\Browser\WkHtmltopdf;
 use BrowserDetector\Detector\Browser\Wnmbot;
 use BrowserDetector\Detector\Browser\WooRank;
 use BrowserDetector\Detector\Browser\WordPress;
 use BrowserDetector\Detector\Browser\WordPressApp;
 use BrowserDetector\Detector\Browser\Woriobot;
+use BrowserDetector\Detector\Browser\WorldwebheritageBot;
 use BrowserDetector\Detector\Browser\WsrAgent;
 use BrowserDetector\Detector\Browser\XingContenttabreceiver;
 use BrowserDetector\Detector\Browser\XmlSitemapsGenerator;
@@ -633,6 +670,10 @@ class BrowserFactory
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/(4|5)\.0 \(\)/', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/reddit pic scraper/i', $agent)) {
+            $browser = new RedditPicScraper($agent, $logger);
+        } elseif (preg_match('/Mozilla crawl/', $agent)) {
+            $browser = new MozillaCrawler($agent, $logger);
         } elseif (preg_match('/^Mozilla /', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/4\.0 \(compatible\;Android\;/', $agent)) {
@@ -665,6 +706,8 @@ class BrowserFactory
             $browser = new HgghPhantomjsScreenshoter($agent, $logger);
         } elseif (preg_match('/bl\.uk\_lddc\_bot/', $agent)) {
             $browser = new BlukLddcBot($agent, $logger);
+        } elseif (preg_match('/phantomas/', $agent)) {
+            $browser = new Phantomas($agent, $logger);
         } elseif (false !== strpos($agent, 'PhantomJS')) {
             $browser = new PhantomJs($agent, $logger);
         } elseif (false !== strpos($agent, 'YaBrowser')) {
@@ -795,6 +838,20 @@ class BrowserFactory
             $browser = new MicrosoftExcel($agent, $logger);
         } elseif (preg_match('/powerpoint/i', $agent)) {
             $browser = new MicrosoftPowerPoint($agent, $logger);
+        } elseif (preg_match('/Word/', $agent)) {
+            $browser = new MicrosoftWord($agent, $logger);
+        } elseif (preg_match('/OneNote/', $agent)) {
+            $browser = new MicrosoftOneNote($agent, $logger);
+        } elseif (preg_match('/Visio/', $agent)) {
+            $browser = new MicrosoftVisio($agent, $logger);
+        } elseif (preg_match('/Access/', $agent)) {
+            $browser = new MicrosoftAccess($agent, $logger);
+        } elseif (preg_match('/Lync/', $agent)) {
+            $browser = new MicrosoftLync($agent, $logger);
+        } elseif (preg_match('/Office SyncProc/', $agent)) {
+            $browser = new MicrosoftOfficeSyncProc($agent, $logger);
+        } elseif (preg_match('/Office Upload Center/', $agent)) {
+            $browser = new MicrosoftOfficeUploadCenter($agent, $logger);
         } elseif (preg_match('/microsoft office/i', $agent)) {
             $browser = new MicrosoftOffice($agent, $logger);
         } elseif (preg_match('/Crazy Browser/', $agent)) {
@@ -871,6 +928,17 @@ class BrowserFactory
             $browser = new MicrosoftEdge($agent, $logger);
         } elseif (preg_match('/diffbot/i', $agent)) {
             $browser = new Diffbot($agent, $logger);
+        } elseif (preg_match('/vivaldi/i', $agent)) {
+            $browser = new Vivaldi($agent, $logger);
+        } elseif (preg_match('/LBBROWSER/', $agent)) {
+            $browser = new Liebao($agent, $logger);
+        } elseif (preg_match('/chrome\/(\d+)\.(\d+))/i', $agent, $matches)
+            && isset($matches[1])
+            && isset($matches[2])
+            && $matches[1] >= 1
+            && $matches[2] > 0
+        ) {
+            $browser = new ComodoDragon($agent, $logger);
         } elseif (preg_match('/(chrome|crmo|crios)/i', $agent)) {
             $browser = new Chrome($agent, $logger);
         } elseif (preg_match('/flyflow/i', $agent)) {
@@ -879,6 +947,8 @@ class BrowserFactory
             $browser = new DolphinSmalltalkHttpClient($agent, $logger);
         } elseif (preg_match('/(dolphin|dolfin)/i', $agent)) {
             $browser = new Dolfin($agent, $logger);
+        } elseif (preg_match('/MicroMessenger/', $agent)) {
+            $browser = new WeChatApp($agent, $logger);
         } elseif (preg_match('/MQQBrowser\/Mini/', $agent)) {
             $browser = new QqBrowserMini($agent, $logger);
         } elseif (preg_match('/MQQBrowser/', $agent)) {
@@ -889,6 +959,8 @@ class BrowserFactory
             $browser = new DoubanApp($agent, $logger);
         }  elseif (preg_match('/ovibrowser/i', $agent)) {
             $browser = new NokiaProxyBrowser($agent, $logger);
+        }  elseif (preg_match('/MiuiBrowser/i', $agent)) {
+            $browser = new MiuiBrowser($agent, $logger);
         }elseif (preg_match('/ibrowser/i', $agent)) {
             $browser = new IBrowser($agent, $logger);
         } elseif (preg_match('/OneBrowser/', $agent)) {
@@ -1003,6 +1075,10 @@ class BrowserFactory
             $browser = new SecondLiveClient($agent, $logger);
         } elseif (preg_match('/(Salesforce1|SalesforceTouchContainer)/', $agent)) {
             $browser = new SalesForceApp($agent, $logger);
+        } elseif (preg_match('/(nagios\-plugins|check\_http)/', $agent)) {
+            $browser = new Nagios($agent, $logger);
+        } elseif (preg_match('/bingbot/i', $agent)) {
+            $browser = new Bingbot($agent, $logger);
         } elseif (preg_match('/safari/i', $agent)) {
             $browser = new Safari($agent, $logger);
         } elseif (preg_match('/^Mozilla\/(4|5)\.0 \(Macintosh; .* Mac OS X .*\) AppleWebKit\/.* \(KHTML, like Gecko\) Version\/[\d\.]+$/i', $agent)) {
@@ -1039,6 +1115,10 @@ class BrowserFactory
             $browser = new Spinn3rRssAggregator($agent, $logger);
         } elseif (preg_match('/TweetmemeBot/', $agent)) {
             $browser = new TweetmemeBot($agent, $logger);
+        } elseif (preg_match('/Butterfly/', $agent)) {
+            $browser = new ButterflyRobot($agent, $logger);
+        } elseif (preg_match('/James BOT/', $agent)) {
+            $browser = new JamesBot($agent, $logger);
         } elseif (preg_match('/firefox/i', $agent)
             && !preg_match('/gecko/i', $agent)
             && preg_match('/anonymized/i', $agent)
@@ -1130,6 +1210,8 @@ class BrowserFactory
             $browser = new BnfFrBot($agent, $logger);
         } elseif (preg_match('/CrawlRobot/', $agent)) {
             $browser = new CrawlRobot($agent, $logger);
+        } elseif (preg_match('/AddThis\.com robot/', $agent)) {
+            $browser = new AddThisRobot($agent, $logger);
         } elseif (preg_match('/obot/i', $agent)) {
             $browser = new Obot($agent, $logger);
         } elseif (preg_match('/ZumBot/', $agent)) {
@@ -1246,7 +1328,7 @@ class BrowserFactory
             $browser = new WadavnSearchBot($agent, $logger);
         } elseif (preg_match('/AdobeAIR/', $agent)) {
             $browser = new AdobeAIR($agent, $logger);
-        } elseif (preg_match('/(NX|WiiU)/', $agent)) {
+        } elseif (preg_match('/(NX|WiiU|Nintendo 3DS)/', $agent)) {
             $browser = new NetFrontNx($agent, $logger);
         } elseif (preg_match('/(netfront|playstation 4)/i', $agent)) {
             $browser = new NetFront($agent, $logger);
@@ -1282,8 +1364,6 @@ class BrowserFactory
             $browser = new GoogleDesktop($agent, $logger);
         } elseif (preg_match('/Lotus\-Notes/', $agent)) {
             $browser = new LotusNotes($agent, $logger);
-        } elseif (preg_match('/bingbot/i', $agent)) {
-            $browser = new Bingbot($agent, $logger);
         } elseif (preg_match('/AskPeterBot/', $agent)) {
             $browser = new AskPeterBot($agent, $logger);
         } elseif (preg_match('/discoverybot/', $agent)) {
@@ -1368,6 +1448,8 @@ class BrowserFactory
             $browser = new ArachnidaWebCrawler($agent, $logger);
         } elseif (preg_match('/Finderlein Research Crawler/', $agent)) {
             $browser = new FinderleinResearchCrawler($agent, $logger);
+        } elseif (preg_match('/TestCrawler/', $agent)) {
+            $browser = new TestCrawler($agent, $logger);
         } elseif (preg_match('/Crawler/', $agent)) {
             $browser = new Crawler($agent, $logger);
         } elseif (preg_match('/MetaJobBot/', $agent)) {
@@ -1456,6 +1538,30 @@ class BrowserFactory
             $browser = new PubCrawler($agent, $logger);
         } elseif (preg_match('/RevIP\.info site analyzer/', $agent)) {
             $browser = new RevIpSnfoSiteAnalyzer($agent, $logger);
+        } elseif (preg_match('/Kraken/', $agent)) {
+            $browser = new Kraken($agent, $logger);
+        } elseif (preg_match('/Qwantify/', $agent)) {
+            $browser = new Qwantify($agent, $logger);
+        } elseif (preg_match('/SetLinks bot/', $agent)) {
+            $browser = new SetLinksCrawler($agent, $logger);
+        } elseif (preg_match('/MegaIndex\.ru/', $agent)) {
+            $browser = new MegaIndexBot($agent, $logger);
+        } elseif (preg_match('/Cliqzbot/', $agent)) {
+            $browser = new Cliqzbot($agent, $logger);
+        } elseif (preg_match('/DAWINCI ANTIPLAG SPIDER/', $agent)) {
+            $browser = new DawinciAntiplagSpider($agent, $logger);
+        } elseif (preg_match('/AdvBot/', $agent)) {
+            $browser = new AdvBot($agent, $logger);
+        } elseif (preg_match('/DuckDuckGo\-Favicons\-Bot/', $agent)) {
+            $browser = new DuckDuckFaviconsBot($agent, $logger);
+        } elseif (preg_match('/ZyBorg/', $agent)) {
+            $browser = new WiseNutSearchEngineCrawler($agent, $logger);
+        } elseif (preg_match('/HyperCrawl/', $agent)) {
+            $browser = new HyperCrawl($agent, $logger);
+        } elseif (preg_match('/ARCHIVE\.ORG\.UA crawler/', $agent)) {
+            $browser = new ArchiveOrgBot($agent, $logger);
+        } elseif (preg_match('/worldwebheritage/', $agent)) {
+            $browser = new WorldwebheritageBot($agent, $logger);
         } elseif (preg_match('/Netscape/', $agent)) {
             $browser = new Netscape($agent, $logger);
         } elseif (preg_match('/^Mozilla\/(\d)/', $agent, $matches)) {
@@ -1568,8 +1674,6 @@ class BrowserFactory
             $browser = new HivaBot($agent, $logger);
         } elseif (preg_match('/Comodo Spider/', $agent)) {
             $browser = new ComodoSpider($agent, $logger);
-        } elseif (preg_match('/reddit pic scraper/i', $agent)) {
-            $browser = new RedditPicScraper($agent, $logger);
         } elseif (preg_match('/OpenWebSpider/i', $agent)) {
             $browser = new OpenWebSpider($agent, $logger);
         } elseif (preg_match('/R6_CommentReader/i', $agent)) {
@@ -1678,8 +1782,6 @@ class BrowserFactory
             $browser = new IscHeaderCollectorHandlers($agent, $logger);
         } elseif (preg_match('/Thumbor/', $agent)) {
             $browser = new Thumbor($agent, $logger);
-        } elseif (preg_match('/Cliqzbot/', $agent)) {
-            $browser = new Cliqzbot($agent, $logger);
         } elseif (preg_match('/Forum Poster/', $agent)) {
             $browser = new ForumPoster($agent, $logger);
         } elseif (preg_match('/crawler4j/', $agent)) {
@@ -1708,8 +1810,6 @@ class BrowserFactory
             $browser = new DomainsBot($agent, $logger);
         } elseif (preg_match('/BUbiNG/', $agent)) {
             $browser = new Bubing($agent, $logger);
-        } elseif (preg_match('/Mozilla crawl/', $agent)) {
-            $browser = new MozillaCrawler($agent, $logger);
         } elseif (preg_match('/RamblerMail/', $agent)) {
             $browser = new RamblerMail($agent, $logger);
         } elseif (preg_match('/ichiro\/mobile/', $agent)) {
@@ -1834,6 +1934,24 @@ class BrowserFactory
             $browser = new GosquaredThumbnailer($agent, $logger);
         } elseif (preg_match('/optivo\(R\) NetHelper/', $agent)) {
             $browser = new OptivoNetHelper($agent, $logger);
+        } elseif (preg_match('/pr\-cy\.ru Screenshot Bot/', $agent)) {
+            $browser = new ScreenshotBot($agent, $logger);
+        } elseif (preg_match('/Cyberduck/', $agent)) {
+            $browser = new Cyberduck($agent, $logger);
+        } elseif (preg_match('/Lynx/', $agent)) {
+            $browser = new Lynx($agent, $logger);
+        } elseif (preg_match('/MSFrontPage/', $agent)) {
+            $browser = new MicrosoftFrontPage($agent, $logger);
+        } elseif (preg_match('/BegunAdvertising/', $agent)) {
+            $browser = new BegunAdvertisingBot($agent, $logger);
+        } elseif (preg_match('/AccServer/', $agent)) {
+            $browser = new AccServer($agent, $logger);
+        } elseif (preg_match('/SafeSearch microdata crawler/', $agent)) {
+            $browser = new SafeSearchMicrodataCrawler($agent, $logger);
+        } elseif (preg_match('/iZSearch/', $agent)) {
+            $browser = new IzSearchBot($agent, $logger);
+        } elseif (preg_match('/NetLyzer FastProbe/', $agent)) {
+            $browser = new NetLyzerFastProbe($agent, $logger);
         } elseif (preg_match('/java/i', $agent)) {
             $browser = new JavaStandardLibrary($agent, $logger);
         } else {

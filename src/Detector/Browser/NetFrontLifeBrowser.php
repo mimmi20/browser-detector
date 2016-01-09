@@ -73,16 +73,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NetFrontLifeBrowserInterface'))) {
-            return false;
-        }
-
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
+        if (!$this->utils->checkIfContains(array('NetFrontLifeBrowser'))) {
             return false;
         }
 
@@ -96,7 +87,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
      */
     public function getName()
     {
-        return 'NetFrontLifeBrowserInterface';
+        return 'NetFrontLifeBrowser';
     }
 
     /**
@@ -129,7 +120,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFrontLifeBrowserInterface');
+        $searches = array('NetFrontLifeBrowser');
 
         return $detector->detectVersion($searches);
     }

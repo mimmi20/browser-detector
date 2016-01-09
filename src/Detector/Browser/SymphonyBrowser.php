@@ -73,11 +73,7 @@ class SymphonyBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('SymphonyBrowserInterface/'))) {
+        if (!$this->utils->checkIfContains(array('SymphonyBrowser/'))) {
             return false;
         }
 
@@ -91,7 +87,7 @@ class SymphonyBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getName()
     {
-        return 'SymphonyBrowserInterface';
+        return 'SymphonyBrowser';
     }
 
     /**
@@ -124,7 +120,7 @@ class SymphonyBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('SymphonyBrowserInterface');
+        $searches = array('SymphonyBrowser');
 
         return $detector->detectVersion($searches);
     }

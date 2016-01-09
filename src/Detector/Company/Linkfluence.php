@@ -43,12 +43,12 @@ class Linkfluence extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'linkfluence.net';
+    public $name = 'Linkfluence SAS';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'linkfluence.net';
+    public $brandname = 'Linkfluence';
 }

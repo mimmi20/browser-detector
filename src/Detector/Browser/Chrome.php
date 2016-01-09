@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
@@ -44,7 +45,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
+class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -226,7 +227,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface
      *
      * @return \UaMatcher\Engine\EngineInterface
      */
-    public function detectEngine(OsInterface $os = null)
+    public function getEngine(OsInterface $os = null)
     {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 

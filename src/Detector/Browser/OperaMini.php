@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Transcoder;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaResult\Version;
 use UaMatcher\Os\OsInterface;
 
@@ -44,7 +45,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OperaMini extends AbstractBrowser
+class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -199,7 +200,7 @@ class OperaMini extends AbstractBrowser
      *
      * @return \UaMatcher\Engine\EngineInterface
      */
-    public function detectEngine(OsInterface $os = null)
+    public function getEngine(OsInterface $os = null)
     {
         if (null !== $os && in_array($os->getName(), array('iOS'))) {
             $engine = new Webkit($this->useragent, $this->logger);

@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Salesforce extends AbstractCompany
+class RebelMouse extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'Salesforce.com, Inc.';
+    public $name = 'RebelMouse';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Salesforce';
+    public $brandname = 'RebelMouse';
 }

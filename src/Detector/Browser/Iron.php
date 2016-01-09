@@ -98,7 +98,7 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
             'RockMelt',
             'Edge',
             'Dragon',
-            'YaBrowserInterface',
+            'YaBrowser',
             'Amigo',
             // Bots
             'Google Wireless Transcoder',

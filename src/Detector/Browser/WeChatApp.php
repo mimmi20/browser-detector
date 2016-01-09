@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use UaBrowserType\Application;
 use UaResult\Version;
 
 /**
@@ -40,7 +40,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetFront extends AbstractBrowser
+class WeChatApp extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -52,7 +52,7 @@ class NetFront extends AbstractBrowser
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => true,
+        'can_skip_aligned_link_row'    => false,
         'device_claims_web_support'    => false,
         // pdf
         'pdf_support'                  => true,
@@ -71,21 +71,7 @@ class NetFront extends AbstractBrowser
      */
     public function canHandle()
     {
-        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'PlayStation 4');
-
-        if (!$this->utils->checkIfContains($netfront)) {
-            return false;
-        }
-
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle',
-            // a new version of the netfront browser
-            'NX',
-            'Nintendo 3DS'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
+        if (!$this->utils->checkIfContains(array('MicroMessenger'))) {
             return false;
         }
 
@@ -99,7 +85,7 @@ class NetFront extends AbstractBrowser
      */
     public function getName()
     {
-        return 'NetFront';
+        return 'WeChat App';
     }
 
     /**
@@ -109,7 +95,7 @@ class NetFront extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Access());
+        return new Company(new Company\Tencent());
     }
 
     /**
@@ -119,7 +105,7 @@ class NetFront extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Application();
     }
 
     /**
@@ -132,7 +118,7 @@ class NetFront extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3');
+        $searches = array('MicroMessenger');
 
         return $detector->detectVersion($searches);
     }

@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
 use UaResult\Version;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetFront extends AbstractBrowser
+class Phantomas extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -71,21 +73,7 @@ class NetFront extends AbstractBrowser
      */
     public function canHandle()
     {
-        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'PlayStation 4');
-
-        if (!$this->utils->checkIfContains($netfront)) {
-            return false;
-        }
-
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle',
-            // a new version of the netfront browser
-            'NX',
-            'Nintendo 3DS'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
+        if (!$this->utils->checkIfContains(array('phantomas'))) {
             return false;
         }
 
@@ -99,7 +87,7 @@ class NetFront extends AbstractBrowser
      */
     public function getName()
     {
-        return 'NetFront';
+        return 'phantomas';
     }
 
     /**
@@ -109,7 +97,7 @@ class NetFront extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Access());
+        return new Company(new Company\MaciejBrencz());
     }
 
     /**
@@ -123,6 +111,16 @@ class NetFront extends AbstractBrowser
     }
 
     /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return 3;
+    }
+
+    /**
      * detects the browser version from the given user agent
      *
      * @return \UaResult\Version
@@ -132,18 +130,19 @@ class NetFront extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3');
+        $searches = array('phantomas');
 
         return $detector->detectVersion($searches);
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return integer
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
-    public function getWeight()
+    public function getEngine()
     {
-        return 3;
+        return new Webkit($this->useragent, $this->logger);
     }
 }

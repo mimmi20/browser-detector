@@ -31,7 +31,9 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaResult\Version;
 
 /**
@@ -40,7 +42,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NetFront extends AbstractBrowser
+class AdvBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -53,7 +55,7 @@ class NetFront extends AbstractBrowser
 
         // product info
         'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => false,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -71,21 +73,7 @@ class NetFront extends AbstractBrowser
      */
     public function canHandle()
     {
-        $netfront = array('NetFront/', 'NF/', 'NetFrontLifeBrowser/', 'NF3', 'PlayStation 4');
-
-        if (!$this->utils->checkIfContains($netfront)) {
-            return false;
-        }
-
-        $isNotReallyAnNetfront = array(
-            // using also the KHTML rendering engine
-            'Kindle',
-            // a new version of the netfront browser
-            'NX',
-            'Nintendo 3DS'
-        );
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetfront)) {
+        if (!$this->utils->checkIfContains(array('AdvBot'))) {
             return false;
         }
 
@@ -99,7 +87,7 @@ class NetFront extends AbstractBrowser
      */
     public function getName()
     {
-        return 'NetFront';
+        return 'AdvBot';
     }
 
     /**
@@ -109,7 +97,7 @@ class NetFront extends AbstractBrowser
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Access());
+        return new Company(new Company\AdvBot());
     }
 
     /**
@@ -119,7 +107,7 @@ class NetFront extends AbstractBrowser
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Bot();
     }
 
     /**
@@ -131,8 +119,9 @@ class NetFront extends AbstractBrowser
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3');
+        $searches = array('AdvBot');
 
         return $detector->detectVersion($searches);
     }
@@ -145,5 +134,16 @@ class NetFront extends AbstractBrowser
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \UaMatcher\Engine\EngineInterface
+     */
+    public function getEngine()
+    {
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }
