@@ -696,7 +696,7 @@ class BrowserFactory
     {
         if (preg_match('/windows nt (7|8|9)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
-        } elseif (preg_match('/(os x \d{4,5}\)|like macos x)/i', $agent)) {
+        } elseif (preg_match('/(os x \d{3,5}\)|like macos x|like Geccko)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(x11; windows)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
@@ -918,6 +918,8 @@ class BrowserFactory
             $browser = new MicrosoftOfficeSyncProc($agent, $logger);
         } elseif (preg_match('/Office Upload Center/', $agent)) {
             $browser = new MicrosoftOfficeUploadCenter($agent, $logger);
+        } elseif (preg_match('/frontpage/i', $agent)) {
+            $browser = new MicrosoftFrontPage($agent, $logger);
         } elseif (preg_match('/microsoft office/i', $agent)) {
             $browser = new MicrosoftOffice($agent, $logger);
         } elseif (preg_match('/Crazy Browser/', $agent)) {
@@ -930,6 +932,10 @@ class BrowserFactory
             $browser = new Lunascape($agent, $logger);
         } elseif (preg_match('/Smartsite HTTPClient/', $agent)) {
             $browser = new SmartsiteHttpClient($agent, $logger);
+        } elseif (preg_match('/Mozilla\/5\.0 .* (compatible; MSIE/', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/Mozilla\/4\.0\(compatible;MSIE/', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/trident/i', $agent)
             && preg_match('/rv\:/i', $agent)
             && !preg_match('/like/i', $agent)
@@ -1026,6 +1032,8 @@ class BrowserFactory
             && $matches[2] <= 10
         ) {
             $browser = new ComodoDragon($agent, $logger);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(Windows.*\) AppleWebKit\/.* \(KHTML like Gecko\) Chrome\/.*Safari\//', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(chrome|crmo|crios)/i', $agent)) {
             $browser = new Chrome($agent, $logger);
         } elseif (preg_match('/flyflow/i', $agent)) {
@@ -1184,6 +1192,8 @@ class BrowserFactory
             $browser = new Otter($agent, $logger);
         } elseif (preg_match('/PaleMoon/', $agent)) {
             $browser = new Palemoon($agent, $logger);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(.*\) AppleWebKit\/.* \(KHTML like Gecko\) Version\/.* Safari\//', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/safari/i', $agent)) {
             $browser = new Safari($agent, $logger);
         } elseif (preg_match('/^Mozilla\/(4|5)\.0 \(Macintosh; .* Mac OS X .*\) AppleWebKit\/.* \(KHTML, like Gecko\) Version\/[\d\.]+$/i', $agent)) {
@@ -1679,6 +1689,10 @@ class BrowserFactory
             $browser = new DigincoreBot($agent, $logger);
         } elseif (preg_match('/Steeler/', $agent)) {
             $browser = new Steeler($agent, $logger);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(.*\) Gecko\/.*\/\d+/', $agent)) {
+            $browser = new Firefox($agent, $logger);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(.*rv:\d+\.\d+.*\) Gecko\/.*\//', $agent)) {
+            $browser = new Firefox($agent, $logger);
         } elseif (preg_match('/Netscape/', $agent)) {
             $browser = new Netscape($agent, $logger);
         } elseif (preg_match('/^Mozilla\/(\d)/', $agent, $matches)) {
@@ -2055,8 +2069,6 @@ class BrowserFactory
             $browser = new Cyberduck($agent, $logger);
         } elseif (preg_match('/Lynx/', $agent)) {
             $browser = new Lynx($agent, $logger);
-        } elseif (preg_match('/MSFrontPage/', $agent)) {
-            $browser = new MicrosoftFrontPage($agent, $logger);
         } elseif (preg_match('/AccServer/', $agent)) {
             $browser = new AccServer($agent, $logger);
         } elseif (preg_match('/SafeSearch microdata crawler/', $agent)) {
