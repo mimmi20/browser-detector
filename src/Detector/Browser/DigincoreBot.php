@@ -31,10 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
-use UaResult\Version;
+use BrowserDetector\Detector\Engine\UnknownEngine;
+use UaBrowserType\Bot;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class DigincoreBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,7 +73,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MiuiBrowser')) {
+        if (!$this->utils->checkIfContains('Digincore bot')) {
             return false;
         }
 
@@ -87,7 +87,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'Miui Browser';
+        return 'Digincore Bot';
     }
 
     /**
@@ -97,7 +97,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Xiaomi());
+        return new Company(new Company\Unknown());
     }
 
     /**
@@ -107,22 +107,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getBrowserType()
     {
-        return new Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('MiuiBrowser');
-
-        return $detector->detectVersion($searches);
+        return new Bot();
     }
 
     /**
@@ -136,12 +121,27 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
     }
 
     /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('Digincore bot');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return new UnknownEngine($this->useragent, $this->logger);
     }
 }

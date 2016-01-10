@@ -37,12 +37,15 @@ use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
+ * PhantomUserAgentHandler
+ *
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Bowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,10 +57,10 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
+        'can_skip_aligned_link_row'    => true,
         'device_claims_web_support'    => false,
         // pdf
-        'pdf_support'                  => true,
+        'pdf_support'                  => false,
         // bugs
         'empty_option_value_support'   => true,
         'basic_authentication_support' => true,
@@ -73,7 +76,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MiuiBrowser')) {
+        if (!$this->utils->checkIfContains('Bowser')) {
             return false;
         }
 
@@ -87,7 +90,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'Miui Browser';
+        return 'Bowser';
     }
 
     /**
@@ -97,7 +100,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Xiaomi());
+        return new Company(new Company\EricssonResearch());
     }
 
     /**
@@ -111,21 +114,6 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
     }
 
     /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('MiuiBrowser');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -136,9 +124,25 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('Bowser');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function getEngine()
     {

@@ -31,10 +31,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
+use UaBrowserType\Application;
 use UaResult\Version;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class BaiduBoxApp extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -54,8 +52,8 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -73,7 +71,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MiuiBrowser')) {
+        if (!$this->utils->checkIfContains(array('baiduboxapp'))) {
             return false;
         }
 
@@ -87,7 +85,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'Miui Browser';
+        return 'Baidu Box App';
     }
 
     /**
@@ -97,7 +95,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Xiaomi());
+        return new Company(new Company\Baidu());
     }
 
     /**
@@ -107,7 +105,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getBrowserType()
     {
-        return new Browser();
+        return new Application();
     }
 
     /**
@@ -119,8 +117,9 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('MiuiBrowser');
+        $searches = array('baiduboxapp');
 
         return $detector->detectVersion($searches);
     }
@@ -133,15 +132,5 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
     public function getWeight()
     {
         return 3;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function getEngine()
-    {
-        return new Webkit($this->useragent, $this->logger);
     }
 }

@@ -34,7 +34,10 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
 use UaResult\Version;
+use BrowserDetector\Helper\SpamCrawlerFake;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaMatcher\Browser\BrowserHasWurflKeyInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +45,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class FirefoxIos extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,8 +57,8 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -73,7 +76,77 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MiuiBrowser')) {
+        $spamHelper = new SpamCrawlerFake();
+        $spamHelper->setUserAgent($this->useragent);
+
+        if (!$this->utils->checkIfContains('Mozilla/') && !$spamHelper->isAnonymized()
+        ) {
+            return false;
+        }
+
+        $firefoxCodes = array(
+            'Firefox',
+            'Minefield',
+            'Nightly',
+            'Shiretoko',
+            'BonEcho',
+            'Namoroka',
+            'Fennec'
+        );
+
+        if (!$this->utils->checkIfContains($firefoxCodes)) {
+            return false;
+        }
+
+        $isNotReallyAnFirefox = array(
+            // using also the Gecko rendering engine
+            'Maemo',
+            'Maxthon',
+            'MxBrowser',
+            'Camino',
+            'CometBird',
+            'Epiphany',
+            'Galeon',
+            'Lunascape',
+            'Opera',
+            'PaleMoon',
+            'SeaMonkey',
+            'Flock',
+            'IceCat',
+            'Iceweasel',
+            'Iceowl',
+            'Icedove',
+            'Iceape',
+            'Firebird',
+            'IceDragon',
+            'TenFourFox',
+            'WaterFox',
+            'Waterfox',
+            'K-Meleon',
+            //Bots
+            'Nutch',
+            'CazoodleBot',
+            'LOOQ',
+            'GoogleImageProxy',
+            'GomezAgent',
+            '360Spider',
+            'Spinn3r',
+            'Yahoo!',
+            'Slurp',
+            'adbeat.com',
+            'myibrow',
+            //others
+            'MSIE',
+            'Trident',
+            // Fakes
+            'Mac; Mac OS '
+        );
+
+        if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('developers.google.com/+/web/snippet/', true)) {
             return false;
         }
 
@@ -87,7 +160,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'Miui Browser';
+        return 'Firefox for iOS';
     }
 
     /**
@@ -97,7 +170,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Xiaomi());
+        return new Company(new Company\MozillaFoundation());
     }
 
     /**
@@ -120,7 +193,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('MiuiBrowser');
+        $searches = array('FxiOS');
 
         return $detector->detectVersion($searches);
     }
@@ -132,16 +205,37 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getWeight()
     {
-        return 3;
+        return 10000;
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Gecko
      */
     public function getEngine()
     {
         return new Webkit($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey
+     *
+     * @param \UaMatcher\Os\OsInterface $os
+     *
+     * @return string
+     */
+    public function getWurflKey(OsInterface $os)
+    {
+        $browserVersion = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
+
+        if (3.5 === $browserVersion) {
+            $wurflKey = 'firefox_3_5';
+        } else {
+            $wurflKey = 'firefox_' . (int)$browserVersion . '_0';
+        }
+
+        return $wurflKey;
     }
 }

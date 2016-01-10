@@ -37,12 +37,15 @@ use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
+ * MaemoUserAgentHandler
+ *
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class QuteBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,8 +57,8 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -73,7 +76,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MiuiBrowser')) {
+        if (!$this->utils->checkIfContains('qutebrowser')) {
             return false;
         }
 
@@ -87,7 +90,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'Miui Browser';
+        return 'qutebrowser';
     }
 
     /**
@@ -97,7 +100,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Xiaomi());
+        return new Company(new Company\FlorianBruhin());
     }
 
     /**
@@ -120,7 +123,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('MiuiBrowser');
+        $searches = array('qutebrowser');
 
         return $detector->detectVersion($searches);
     }
@@ -136,9 +139,10 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Gecko
      */
     public function getEngine()
     {

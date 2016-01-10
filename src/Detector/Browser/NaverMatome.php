@@ -87,7 +87,7 @@ class NaverMatome extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'NaverMatome';
+        return 'Matome';
     }
 
     /**

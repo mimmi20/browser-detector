@@ -73,11 +73,11 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('libcurl', 'PycURL', 'curl'))) {
+        if (!$this->utils->checkIfContains(array('libcurl', 'curl'))) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('<', 'Curl/PHP'))) {
+        if ($this->utils->checkIfContains(array('<', 'Curl/PHP', 'PycURL'))) {
             return false;
         }
 
@@ -124,7 +124,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('curl', 'libcurl-agent', 'PycURL');
+        $searches = array('curl', 'libcurl-agent');
 
         return $detector->detectVersion($searches);
     }
