@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DavidRosca extends AbstractCompany
+class Kenshoo extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'David Rosca and Community';
+    public $name = 'Kenshoo, Ltd.';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'David Rosca';
+    public $brandname = 'Kenshoo';
 }

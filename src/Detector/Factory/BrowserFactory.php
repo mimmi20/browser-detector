@@ -193,6 +193,7 @@ use BrowserDetector\Detector\Browser\FacebookExternalHit;
 use BrowserDetector\Detector\Browser\Facebookscraper;
 use BrowserDetector\Detector\Browser\FaceBot;
 use BrowserDetector\Detector\Browser\FakeBrowser;
+use BrowserDetector\Detector\Browser\FastBrowser;
 use BrowserDetector\Detector\Browser\FeedBlitz;
 use BrowserDetector\Detector\Browser\FeeddlerRssReader;
 use BrowserDetector\Detector\Browser\Feedly;
@@ -477,7 +478,7 @@ use BrowserDetector\Detector\Browser\QuoraApp;
 use BrowserDetector\Detector\Browser\QupZilla;
 use BrowserDetector\Detector\Browser\QuteBrowser;
 use BrowserDetector\Detector\Browser\Qwantify;
-use BrowserDetector\Detector\Browser\Qword;
+use BrowserDetector\Detector\Browser\QwordBrowser;
 use BrowserDetector\Detector\Browser\R6CommentReader;
 use BrowserDetector\Detector\Browser\R6Feedfetcher;
 use BrowserDetector\Detector\Browser\RamblerMail;
@@ -551,11 +552,13 @@ use BrowserDetector\Detector\Browser\SogouSpider;
 use BrowserDetector\Detector\Browser\SogouWebSpider;
 use BrowserDetector\Detector\Browser\SonyEricsson;
 use BrowserDetector\Detector\Browser\SophoraLinkchecker;
+use BrowserDetector\Detector\Browser\SpeedBrowser360;
 use BrowserDetector\Detector\Browser\Spinn3rRssAggregator;
 use BrowserDetector\Detector\Browser\Squzer;
 use BrowserDetector\Detector\Browser\SreleaseBot;
 use BrowserDetector\Detector\Browser\SsearchCrawler;
 use BrowserDetector\Detector\Browser\Stagefright;
+use BrowserDetector\Detector\Browser\Steeler;
 use BrowserDetector\Detector\Browser\SuperaramaComBot;
 use BrowserDetector\Detector\Browser\SuperBird;
 use BrowserDetector\Detector\Browser\SuperfeedrBot;
@@ -693,8 +696,6 @@ class BrowserFactory
     {
         if (preg_match('/windows nt (7|8|9)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
-        } elseif (preg_match('/(khtml like gecko)/i', $agent)) {
-            $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(os x \d{4,5}\)|like macos x)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(x11; windows)/i', $agent)) {
@@ -810,7 +811,7 @@ class BrowserFactory
         } elseif (false !== strpos($agent, 'Chedot')) {
             $browser = new Chedot($agent, $logger);
         } elseif (false !== strpos($agent, 'Qword')) {
-            $browser = new Qword($agent, $logger);
+            $browser = new QwordBrowser($agent, $logger);
         } elseif (false !== strpos($agent, 'Iridium')) {
             $browser = new Iridium($agent, $logger);
         } elseif (preg_match('/avant/i', $agent)) {
@@ -1013,6 +1014,10 @@ class BrowserFactory
             $browser = new Kenshoo($agent, $logger);
         } elseif (preg_match('/Bowser/', $agent)) {
             $browser = new Bowser($agent, $logger);
+        } elseif (preg_match('/360SE/', $agent)) {
+            $browser = new SecureBrowser360($agent, $logger);
+        } elseif (preg_match('/360EE/', $agent)) {
+            $browser = new SpeedBrowser360($agent, $logger);
         } elseif (preg_match('/chrome\/(\d+)\.(\d+)/i', $agent, $matches)
             && isset($matches[1])
             && isset($matches[2])
@@ -1177,6 +1182,8 @@ class BrowserFactory
             $browser = new QuteBrowser($agent, $logger);
         } elseif (preg_match('/Otter/', $agent)) {
             $browser = new Otter($agent, $logger);
+        } elseif (preg_match('/PaleMoon/', $agent)) {
+            $browser = new Palemoon($agent, $logger);
         } elseif (preg_match('/safari/i', $agent)) {
             $browser = new Safari($agent, $logger);
         } elseif (preg_match('/^Mozilla\/(4|5)\.0 \(Macintosh; .* Mac OS X .*\) AppleWebKit\/.* \(KHTML, like Gecko\) Version\/[\d\.]+$/i', $agent)) {
@@ -1187,8 +1194,6 @@ class BrowserFactory
             $browser = new PinterestApp($agent, $logger);
         } elseif (preg_match('/^Mozilla\/5\.0.*\((iPhone|iPad|iPod).*\).*AppleWebKit\/.*\(.*KHTML, like Gecko.*\).*Mobile.*/i', $agent)) {
             $browser = new MobileSafariUiWebView($agent, $logger);
-        } elseif (preg_match('/PaleMoon/', $agent)) {
-            $browser = new Palemoon($agent, $logger);
         } elseif (preg_match('/waterfox/i', $agent)) {
             $browser = new WaterFox($agent, $logger);
         } elseif (preg_match('/Thunderbird/', $agent)) {
@@ -1576,8 +1581,6 @@ class BrowserFactory
             $browser = new LucidworksBot($agent, $logger);
         } elseif (preg_match('/MerchantCentricBot/', $agent)) {
             $browser = new MerchantCentricBot($agent, $logger);
-        } elseif (preg_match('/360SE/', $agent)) {
-            $browser = new SecureBrowser360($agent, $logger);
         } elseif (preg_match('/Nett\.io bot/', $agent)) {
             $browser = new NettioBot($agent, $logger);
         } elseif (preg_match('/SemanticBot/', $agent)) {
@@ -1674,6 +1677,8 @@ class BrowserFactory
             $browser = new LipperheyKausAustralis($agent, $logger);
         } elseif (preg_match('/Digincore bot/', $agent)) {
             $browser = new DigincoreBot($agent, $logger);
+        } elseif (preg_match('/Steeler/', $agent)) {
+            $browser = new Steeler($agent, $logger);
         } elseif (preg_match('/Netscape/', $agent)) {
             $browser = new Netscape($agent, $logger);
         } elseif (preg_match('/^Mozilla\/(\d)/', $agent, $matches)) {
@@ -2078,6 +2083,8 @@ class BrowserFactory
             $browser = new PerfectBrowser($agent, $logger);
         } elseif (preg_match('/Reeder/', $agent)) {
             $browser = new Reeder($agent, $logger);
+        } elseif (preg_match('/FastBrowser/', $agent)) {
+            $browser = new FastBrowser($agent, $logger);
         } elseif (preg_match('/CFNetwork/', $agent)) {
             $browser = new CfNetwork($agent, $logger);
         } elseif (preg_match('/Y\!J\-ASR/', $agent)) {

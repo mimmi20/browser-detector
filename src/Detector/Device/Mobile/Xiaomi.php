@@ -146,7 +146,7 @@ class Xiaomi extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Xiaomi());
+        return new Company(new Company\XiaomiTech());
     }
 
     /**
@@ -156,7 +156,7 @@ class Xiaomi extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function getBrand()
     {
-        return new Company(new Company\Xiaomi());
+        return new Company(new Company\XiaomiTech());
     }
 
     /**

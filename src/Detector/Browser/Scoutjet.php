@@ -73,10 +73,6 @@ class Scoutjet extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
         if (!$this->utils->checkIfContains(array('Scoutjet/'))) {
             return false;
         }
@@ -91,7 +87,7 @@ class Scoutjet extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function getName()
     {
-        return 'Scoutjet';
+        return 'ScoutJet';
     }
 
     /**

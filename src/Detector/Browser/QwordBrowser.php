@@ -40,7 +40,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Qword extends AbstractBrowser
+class QwordBrowser extends AbstractBrowser
 {
     /**
      * the detected browser properties
@@ -85,7 +85,7 @@ class Qword extends AbstractBrowser
      */
     public function getName()
     {
-        return 'Qword';
+        return 'Qword Browser';
     }
 
     /**

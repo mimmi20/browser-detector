@@ -43,7 +43,7 @@ class Jolla extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Jolla';
+    public $name = 'Jolla Ltd.';
 
     /**
      * the brand name of the company
