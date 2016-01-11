@@ -333,6 +333,7 @@ use BrowserDetector\Detector\Browser\LucidworksBot;
 use BrowserDetector\Detector\Browser\Lunascape;
 use BrowserDetector\Detector\Browser\Lynx;
 use BrowserDetector\Detector\Browser\MacAppStore;
+use BrowserDetector\Detector\Browser\MailBar;
 use BrowserDetector\Detector\Browser\MailChimp;
 use BrowserDetector\Detector\Browser\MailRu;
 use BrowserDetector\Detector\Browser\MarketwireBot;
@@ -1123,6 +1124,8 @@ class BrowserFactory
             $browser = new IosDataaccessd($agent, $logger);
         } elseif (preg_match('/MailChimp/', $agent)) {
             $browser = new MailChimp($agent, $logger);
+        } elseif (preg_match('/MailBar/', $agent)) {
+            $browser = new MailBar($agent, $logger);
         } elseif (preg_match('/^Mail/', $agent)) {
             $browser = new AppleMail($agent, $logger);
         } elseif (preg_match('/^Mozilla\/5\.0.*\(.*(CPU iPhone OS|CPU OS) \d+(_|\.)\d+.* like Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $agent)) {
