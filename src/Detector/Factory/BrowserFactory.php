@@ -885,6 +885,10 @@ class BrowserFactory
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/4/', $agent) && preg_match('/Chrome/', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/Firefox/', $agent) && preg_match('/Chrome/', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
+        } elseif (preg_match('/^\d{2,}/', $agent) && preg_match('/Chrome/', $agent)) {
+            $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/LSSRocketCrawler/', $agent)) {
             $browser = new LightspeedSystemsRocketCrawler($agent, $logger);
         } elseif (preg_match('/lightspeedsystems/i', $agent)) {
@@ -1706,6 +1710,8 @@ class BrowserFactory
             $browser = new Steeler($agent, $logger);
         } elseif (preg_match('/Orangebot/', $agent)) {
             $browser = new Orangebot($agent, $logger);
+        } elseif (preg_match('/samsung/i', $agent)) {
+            $browser = new Samsung($agent, $logger);
         } elseif (preg_match('/^Mozilla\/5\.0 \(.*\) Gecko\/.*\/\d+/', $agent)
             && !preg_match('/Netscape/', $agent)
         ) {
@@ -1862,8 +1868,6 @@ class BrowserFactory
             $browser = new Airmail($agent, $logger);
         } elseif (preg_match('/Jasmine/', $agent)) {
             $browser = new Jasmine($agent, $logger);
-        } elseif (preg_match('/samsung/i', $agent)) {
-            $browser = new Samsung($agent, $logger);
         } elseif (preg_match('/SonyEricsson/', $agent)) {
             $browser = new SonyEricsson($agent, $logger);
         } elseif (preg_match('/WEB\.DE MailCheck/', $agent)) {
