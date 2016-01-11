@@ -426,6 +426,7 @@ use BrowserDetector\Detector\Browser\OperaMini;
 use BrowserDetector\Detector\Browser\OperaMobile;
 use BrowserDetector\Detector\Browser\OptimizerBot;
 use BrowserDetector\Detector\Browser\OptivoNetHelper;
+use BrowserDetector\Detector\Browser\Orangebot;
 use BrowserDetector\Detector\Browser\Otter;
 use BrowserDetector\Detector\Browser\OwaspSecretBrowser;
 use BrowserDetector\Detector\Browser\OwlerBot;
@@ -505,6 +506,7 @@ use BrowserDetector\Detector\Browser\SamsungBrowser;
 use BrowserDetector\Detector\Browser\SamsungWebView;
 use BrowserDetector\Detector\Browser\Sandvox;
 use BrowserDetector\Detector\Browser\SchoolwiresApp;
+use BrowserDetector\Detector\Browser\ScopiaCrawler;
 use BrowserDetector\Detector\Browser\Scoutjet;
 use BrowserDetector\Detector\Browser\ScrapyBot;
 use BrowserDetector\Detector\Browser\ScreamingFrogSeoSpider;
@@ -565,6 +567,7 @@ use BrowserDetector\Detector\Browser\SuperfeedrBot;
 use BrowserDetector\Detector\Browser\SurveyBot;
 use BrowserDetector\Detector\Browser\SynHttpClient;
 use BrowserDetector\Detector\Browser\TelecaObigo;
+use BrowserDetector\Detector\Browser\TestCertificateInfo;
 use BrowserDetector\Detector\Browser\TestCrawler;
 use BrowserDetector\Detector\Browser\TexisWebscript;
 use BrowserDetector\Detector\Browser\TheOldReader;
@@ -830,6 +833,8 @@ class BrowserFactory
             $browser = new QqBrowserMini($agent, $logger);
         } elseif (preg_match('/MQQBrowser/', $agent)) {
             $browser = new QqBrowser($agent, $logger);
+        } elseif (preg_match('/pinterest/i', $agent)) {
+            $browser = new PinterestApp($agent, $logger);
         } elseif (false !== strpos($agent, 'Chrome') && false !== strpos($agent, 'Version')) {
             $browser = new AndroidWebView($agent, $logger);
         } elseif (false !== strpos($agent, 'Safari')
@@ -932,7 +937,7 @@ class BrowserFactory
             $browser = new Lunascape($agent, $logger);
         } elseif (preg_match('/Smartsite HTTPClient/', $agent)) {
             $browser = new SmartsiteHttpClient($agent, $logger);
-        } elseif (preg_match('/Mozilla\/5\.0 .* (compatible; MSIE/', $agent)) {
+        } elseif (preg_match('/Mozilla\/5\.0 .* \(compatible; MSIE/', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/4\.0\(compatible;MSIE/', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
@@ -943,7 +948,7 @@ class BrowserFactory
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/5\.0.*\(.*Trident\/8\.0.*rv\:\d+\).*/', $agent)
             || preg_match('/Mozilla\/5\.0.*\(.*Trident\/7\.0.*rv\:11\.0.*\) like Gecko.*/', $agent)
-            || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.0.*Trident\/(6|7)\.0.*/', $agent)
+            || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.0.*Trident\/(6|7|8)\.0.*/', $agent)
             || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (9|8)\.0.*/', $agent)
             || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (7|6)\.0.*/', $agent)
             || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (5|4)\.\d+.*/', $agent)
@@ -1200,8 +1205,6 @@ class BrowserFactory
             $browser = new Safari($agent, $logger);
         } elseif (preg_match('/TWCAN\/SportsNet/', $agent)) {
             $browser = new TwcSportsNet($agent, $logger);
-        } elseif (preg_match('/pinterest/i', $agent)) {
-            $browser = new PinterestApp($agent, $logger);
         } elseif (preg_match('/^Mozilla\/5\.0.*\((iPhone|iPad|iPod).*\).*AppleWebKit\/.*\(.*KHTML, like Gecko.*\).*Mobile.*/i', $agent)) {
             $browser = new MobileSafariUiWebView($agent, $logger);
         } elseif (preg_match('/waterfox/i', $agent)) {
@@ -1567,6 +1570,8 @@ class BrowserFactory
             $browser = new FinderleinResearchCrawler($agent, $logger);
         } elseif (preg_match('/TestCrawler/', $agent)) {
             $browser = new TestCrawler($agent, $logger);
+        } elseif (preg_match('/Scopia Crawler/', $agent)) {
+            $browser = new ScopiaCrawler($agent, $logger);
         } elseif (preg_match('/Crawler/', $agent)) {
             $browser = new Crawler($agent, $logger);
         } elseif (preg_match('/MetaJobBot/', $agent)) {
@@ -1677,6 +1682,8 @@ class BrowserFactory
             $browser = new WorldwebheritageBot($agent, $logger);
         } elseif (preg_match('/BegunAdvertising/', $agent)) {
             $browser = new BegunAdvertisingBot($agent, $logger);
+        } elseif (preg_match('/TrendWinHttp/', $agent)) {
+            $browser = new TrendWinHttp($agent, $logger);
         } elseif (preg_match('/(winhttp|winhttprequest)/i', $agent)) {
             $browser = new WinHttpRequest($agent, $logger);
         } elseif (preg_match('/SkypeUriPreview/', $agent)) {
@@ -1689,9 +1696,15 @@ class BrowserFactory
             $browser = new DigincoreBot($agent, $logger);
         } elseif (preg_match('/Steeler/', $agent)) {
             $browser = new Steeler($agent, $logger);
-        } elseif (preg_match('/^Mozilla\/5\.0 \(.*\) Gecko\/.*\/\d+/', $agent)) {
+        } elseif (preg_match('/Orangebot/', $agent)) {
+            $browser = new Orangebot($agent, $logger);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(.*\) Gecko\/.*\/\d+/', $agent)
+            && !preg_match('/Netscape/', $agent)
+        ) {
             $browser = new Firefox($agent, $logger);
-        } elseif (preg_match('/^Mozilla\/5\.0 \(.*rv:\d+\.\d+.*\) Gecko\/.*\//', $agent)) {
+        } elseif (preg_match('/^Mozilla\/5\.0 \(.*rv:\d+\.\d+.*\) Gecko\/.*\//', $agent)
+            && !preg_match('/Netscape/', $agent)
+        ) {
             $browser = new Firefox($agent, $logger);
         } elseif (preg_match('/Netscape/', $agent)) {
             $browser = new Netscape($agent, $logger);
@@ -2077,8 +2090,6 @@ class BrowserFactory
             $browser = new IzSearchBot($agent, $logger);
         } elseif (preg_match('/NetLyzer FastProbe/', $agent)) {
             $browser = new NetLyzerFastProbe($agent, $logger);
-        } elseif (preg_match('/TrendWinHttp/', $agent)) {
-            $browser = new TrendWinHttp($agent, $logger);
         } elseif (preg_match('/MnoGoSearch/', $agent)) {
             $browser = new MnogoSearch($agent, $logger);
         } elseif (preg_match('/uipbot/', $agent)) {
@@ -2101,6 +2112,8 @@ class BrowserFactory
             $browser = new CfNetwork($agent, $logger);
         } elseif (preg_match('/Y\!J\-ASR/', $agent)) {
             $browser = new YahooJapan($agent, $logger);
+        } elseif (preg_match('/test certificate info/', $agent)) {
+            $browser = new TestCertificateInfo($agent, $logger);
         } elseif (preg_match('/java/i', $agent)) {
             $browser = new JavaStandardLibrary($agent, $logger);
         } else {
