@@ -31,7 +31,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
+use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Bot;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Applebot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,11 +73,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('curl')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('<', 'Curl/PHP', 'PycURL', 'libcurl'))) {
+        if (!$this->utils->checkIfContains(array('Applebot'))) {
             return false;
         }
 
@@ -91,7 +87,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'cURL';
+        return 'Applebot';
     }
 
     /**
@@ -101,7 +97,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Apple());
     }
 
     /**
@@ -115,21 +111,6 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     }
 
     /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('curl');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
      * gets the weight of the handler, which is used for sorting
      *
      * @return integer
@@ -140,12 +121,28 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('Applebot');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

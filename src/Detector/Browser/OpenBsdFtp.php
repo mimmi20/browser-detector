@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class OpenBsdFtp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,11 +73,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('curl')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('<', 'Curl/PHP', 'PycURL', 'libcurl'))) {
+        if (!$this->utils->checkIfContains('OpenBSD ftp')) {
             return false;
         }
 
@@ -91,7 +87,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'cURL';
+        return 'OpenBSD ftp';
     }
 
     /**
@@ -124,7 +120,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('curl');
+        $searches = array('OpenBSD ftp');
 
         return $detector->detectVersion($searches);
     }

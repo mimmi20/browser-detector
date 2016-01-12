@@ -31,10 +31,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
-use UaResult\Version;
+use BrowserDetector\Detector\Engine\Webkit;
+use UaBrowserType\Application;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class SoundCloudApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -73,15 +73,11 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('curl')) {
-            return false;
+        if ($this->utils->checkIfContains('SoundCloud')) {
+            return true;
         }
 
-        if ($this->utils->checkIfContains(array('<', 'Curl/PHP', 'PycURL', 'libcurl'))) {
-            return false;
-        }
-
-        return true;
+        return false;
     }
 
     /**
@@ -91,7 +87,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'cURL';
+        return 'SoundCloud App';
     }
 
     /**
@@ -101,7 +97,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\SoundCloud());
     }
 
     /**
@@ -111,22 +107,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getBrowserType()
     {
-        return new Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        $searches = array('curl');
-
-        return $detector->detectVersion($searches);
+        return new Application();
     }
 
     /**
@@ -140,12 +121,27 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     }
 
     /**
+     * detects the browser version from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+
+        $searches = array('SoundCloud');
+
+        return $detector->detectVersion($searches);
+    }
+
+    /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Webkit($this->useragent, $this->logger);
     }
 }

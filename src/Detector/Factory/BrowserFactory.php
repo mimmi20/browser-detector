@@ -63,9 +63,11 @@ use BrowserDetector\Detector\Browser\AolBot;
 use BrowserDetector\Detector\Browser\ApacheSynapse;
 use BrowserDetector\Detector\Browser\Apercite;
 use BrowserDetector\Detector\Browser\AppleAppStoreApp;
+use BrowserDetector\Detector\Browser\Applebot;
 use BrowserDetector\Detector\Browser\AppleCoreMedia;
 use BrowserDetector\Detector\Browser\AppleMail;
 use BrowserDetector\Detector\Browser\ApplePubSub;
+use BrowserDetector\Detector\Browser\AptHttpTransport;
 use BrowserDetector\Detector\Browser\ApusBrowser;
 use BrowserDetector\Detector\Browser\ArachnidaWebCrawler;
 use BrowserDetector\Detector\Browser\ArchiveBot;
@@ -74,6 +76,7 @@ use BrowserDetector\Detector\Browser\Arora;
 use BrowserDetector\Detector\Browser\AskPeterBot;
 use BrowserDetector\Detector\Browser\AtomicBrowser;
 use BrowserDetector\Detector\Browser\Avant;
+use BrowserDetector\Detector\Browser\AvastSafeZone;
 use BrowserDetector\Detector\Browser\BacklinkCrawler;
 use BrowserDetector\Detector\Browser\BaiduBoxApp;
 use BrowserDetector\Detector\Browser\BaiduBrowser;
@@ -103,6 +106,7 @@ use BrowserDetector\Detector\Browser\BotAraTurka;
 use BrowserDetector\Detector\Browser\BotForJce;
 use BrowserDetector\Detector\Browser\BotRevolt;
 use BrowserDetector\Detector\Browser\Bowser;
+use BrowserDetector\Detector\Browser\Browser2345;
 use BrowserDetector\Detector\Browser\Browsershots;
 use BrowserDetector\Detector\Browser\Bubing;
 use BrowserDetector\Detector\Browser\BuiBuiBot;
@@ -169,6 +173,7 @@ use BrowserDetector\Detector\Browser\DoubanApp;
 use BrowserDetector\Detector\Browser\DownloadAccelerator;
 use BrowserDetector\Detector\Browser\Dreamweaver;
 use BrowserDetector\Detector\Browser\DuckDuckFaviconsBot;
+use BrowserDetector\Detector\Browser\DueDilCrawler;
 use BrowserDetector\Detector\Browser\EasouSpider;
 use BrowserDetector\Detector\Browser\EbApp;
 use BrowserDetector\Detector\Browser\Eccp;
@@ -295,6 +300,7 @@ use BrowserDetector\Detector\Browser\JobBoerseBot;
 use BrowserDetector\Detector\Browser\JobdiggerSpider;
 use BrowserDetector\Detector\Browser\JobRoboter;
 use BrowserDetector\Detector\Browser\JoobleBot;
+use BrowserDetector\Detector\Browser\Jupdate;
 use BrowserDetector\Detector\Browser\KamelioApp;
 use BrowserDetector\Detector\Browser\Kazehakase;
 use BrowserDetector\Detector\Browser\Kenshoo;
@@ -311,7 +317,9 @@ use BrowserDetector\Detector\Browser\Krakenjs;
 use BrowserDetector\Detector\Browser\Kulturarw3;
 use BrowserDetector\Detector\Browser\Larbin;
 use BrowserDetector\Detector\Browser\Lbot;
+use BrowserDetector\Detector\Browser\Libcurl;
 use BrowserDetector\Detector\Browser\LibreOffice;
+use BrowserDetector\Detector\Browser\Libwww;
 use BrowserDetector\Detector\Browser\Liebao;
 use BrowserDetector\Detector\Browser\LightspeedSystemsCrawler;
 use BrowserDetector\Detector\Browser\LightspeedSystemsRocketCrawler;
@@ -416,6 +424,7 @@ use BrowserDetector\Detector\Browser\Obot;
 use BrowserDetector\Detector\Browser\OktaMobileApp;
 use BrowserDetector\Detector\Browser\Omniweb;
 use BrowserDetector\Detector\Browser\OneBrowser;
+use BrowserDetector\Detector\Browser\OpenBsdFtp;
 use BrowserDetector\Detector\Browser\OpenHoseBot;
 use BrowserDetector\Detector\Browser\OpenOffice;
 use BrowserDetector\Detector\Browser\OpenVulnerabilityAssessmentSystem;
@@ -495,9 +504,11 @@ use BrowserDetector\Detector\Browser\Rekonq;
 use BrowserDetector\Detector\Browser\Restify;
 use BrowserDetector\Detector\Browser\RevIpSnfoSiteAnalyzer;
 use BrowserDetector\Detector\Browser\Riddler;
+use BrowserDetector\Detector\Browser\RivalIqBot;
 use BrowserDetector\Detector\Browser\RmSnapKit;
 use BrowserDetector\Detector\Browser\Rockmelt;
 use BrowserDetector\Detector\Browser\RockyChatWorkMobile;
+use BrowserDetector\Detector\Browser\RokuDvp;
 use BrowserDetector\Detector\Browser\Rss2Html;
 use BrowserDetector\Detector\Browser\Ruby;
 use BrowserDetector\Detector\Browser\Safari;
@@ -557,6 +568,9 @@ use BrowserDetector\Detector\Browser\SogouSpider;
 use BrowserDetector\Detector\Browser\SogouWebSpider;
 use BrowserDetector\Detector\Browser\SonyEricsson;
 use BrowserDetector\Detector\Browser\SophoraLinkchecker;
+use BrowserDetector\Detector\Browser\SophosAgent;
+use BrowserDetector\Detector\Browser\SophosUpdateManager;
+use BrowserDetector\Detector\Browser\SoundCloudApp;
 use BrowserDetector\Detector\Browser\SpeedBrowser360;
 use BrowserDetector\Detector\Browser\Spinn3rRssAggregator;
 use BrowserDetector\Detector\Browser\Squzer;
@@ -598,10 +612,12 @@ use BrowserDetector\Detector\Browser\Uipbot;
 use BrowserDetector\Detector\Browser\UmBot;
 use BrowserDetector\Detector\Browser\Unisterbot;
 use BrowserDetector\Detector\Browser\UnityWebPlayer;
+use BrowserDetector\Detector\Browser\UniventionCorporateServer;
 use BrowserDetector\Detector\Browser\UniversalFeedParser;
 use BrowserDetector\Detector\Browser\UnknownBrowser;
 use BrowserDetector\Detector\Browser\UrlAppendBot;
 use BrowserDetector\Detector\Browser\UrlfilterDbCrawler;
+use BrowserDetector\Detector\Browser\UrlGrabber;
 use BrowserDetector\Detector\Browser\Vagabondo;
 use BrowserDetector\Detector\Browser\VbulletinSeoBot;
 use BrowserDetector\Detector\Browser\ViralvideochartBot;
@@ -618,6 +634,7 @@ use BrowserDetector\Detector\Browser\WaterFox;
 use BrowserDetector\Detector\Browser\WaybackArchive;
 use BrowserDetector\Detector\Browser\WbSearchBot;
 use BrowserDetector\Detector\Browser\WdgHtmlValidator;
+use BrowserDetector\Detector\Browser\WebceoBot;
 use BrowserDetector\Detector\Browser\WebClip;
 use BrowserDetector\Detector\Browser\WebdeMailCheck;
 use BrowserDetector\Detector\Browser\WebGlance;
@@ -642,8 +659,11 @@ use BrowserDetector\Detector\Browser\WindowsLiveMail;
 use BrowserDetector\Detector\Browser\WindowsMediaPlayer;
 use BrowserDetector\Detector\Browser\WindowsPhoneSearch;
 use BrowserDetector\Detector\Browser\WindowsRssPlatform;
+use BrowserDetector\Detector\Browser\WindowsUpdateAgent;
 use BrowserDetector\Detector\Browser\WinHttpRequest;
+use BrowserDetector\Detector\Browser\WireApp;
 use BrowserDetector\Detector\Browser\WiseNutSearchEngineCrawler;
+use BrowserDetector\Detector\Browser\WkBrowser;
 use BrowserDetector\Detector\Browser\WkHtmltopdf;
 use BrowserDetector\Detector\Browser\Wnmbot;
 use BrowserDetector\Detector\Browser\WooRank;
@@ -666,6 +686,7 @@ use BrowserDetector\Detector\Browser\YahooSlurp;
 use BrowserDetector\Detector\Browser\YandexBot;
 use BrowserDetector\Detector\Browser\YioopBot;
 use BrowserDetector\Detector\Browser\YisouSpider;
+use BrowserDetector\Detector\Browser\YoozBot;
 use BrowserDetector\Detector\Browser\ZendHttpClient;
 use BrowserDetector\Detector\Browser\ZetakeyBrowser;
 use BrowserDetector\Detector\Browser\Zitebot;
@@ -838,6 +859,12 @@ class BrowserFactory
             $browser = new QqBrowser($agent, $logger);
         } elseif (preg_match('/pinterest/i', $agent)) {
             $browser = new PinterestApp($agent, $logger);
+        } elseif (preg_match('/baiduboxapp/', $agent)) {
+            $browser = new BaiduBoxApp($agent, $logger);
+        } elseif (preg_match('/wkbrowser/', $agent)) {
+            $browser = new WkBrowser($agent, $logger);
+        } elseif (preg_match('/Mb2345Browser/', $agent)) {
+            $browser = new Browser2345($agent, $logger);
         } elseif (false !== strpos($agent, 'Chrome') && false !== strpos($agent, 'Version')) {
             $browser = new AndroidWebView($agent, $logger);
         } elseif (false !== strpos($agent, 'Safari')
@@ -1036,6 +1063,10 @@ class BrowserFactory
             $browser = new SecureBrowser360($agent, $logger);
         } elseif (preg_match('/360EE/', $agent)) {
             $browser = new SpeedBrowser360($agent, $logger);
+        } elseif (preg_match('/ASW/', $agent)) {
+            $browser = new AvastSafeZone($agent, $logger);
+        } elseif (preg_match('/Wire/', $agent)) {
+            $browser = new WireApp($agent, $logger);
         } elseif (preg_match('/chrome\/(\d+)\.(\d+)/i', $agent, $matches)
             && isset($matches[1])
             && isset($matches[2])
@@ -1072,8 +1103,6 @@ class BrowserFactory
             $browser = new BaiduMobileSearch($agent, $logger);
         } elseif (preg_match('/(yjapp|yjtop)/i', $agent)) {
             $browser = new YahooApp($agent, $logger);
-        } elseif (preg_match('/baiduboxapp/', $agent)) {
-            $browser = new BaiduBoxApp($agent, $logger);
         } elseif (preg_match('/(linux; u; android|linux; android)/i', $agent) && preg_match('/version/i', $agent)) {
             $browser = new AndroidWebkit($agent, $logger);
         } elseif (preg_match('/safari/i', $agent) && 'Android' === $platform->getName()) {
@@ -1090,6 +1119,8 @@ class BrowserFactory
             $browser = new Omniweb($agent, $logger);
         } elseif (preg_match('/Windows Phone Search/', $agent)) {
             $browser = new WindowsPhoneSearch($agent, $logger);
+        } elseif (preg_match('/Windows\-Update\-Agent/', $agent)) {
+            $browser = new WindowsUpdateAgent($agent, $logger);
         } elseif (preg_match('/^windows/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/nokia/i', $agent)) {
@@ -1212,6 +1243,12 @@ class BrowserFactory
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/slurp/i', $agent)) {
             $browser = new YahooSlurp($agent, $logger);
+        } elseif (preg_match('/applebot/i', $agent)) {
+            $browser = new Applebot($agent, $logger);
+        } elseif (preg_match('/SoundCloud/', $agent)) {
+            $browser = new SoundCloudApp($agent, $logger);
+        } elseif (preg_match('/Rival IQ/', $agent)) {
+            $browser = new RivalIqBot($agent, $logger);
         } elseif (preg_match('/safari/i', $agent)) {
             $browser = new Safari($agent, $logger);
         } elseif (preg_match('/^Mozilla\/(4|5)\.0 \(Macintosh; .* Mac OS X .*\) AppleWebKit\/.* \(KHTML, like Gecko\) Version\/[\d\.]+$/i', $agent)) {
@@ -1715,6 +1752,12 @@ class BrowserFactory
             $browser = new Orangebot($agent, $logger);
         } elseif (preg_match('/samsung/i', $agent)) {
             $browser = new Samsung($agent, $logger);
+        } elseif (preg_match('/electricmonk/', $agent)) {
+            $browser = new DueDilCrawler($agent, $logger);
+        } elseif (preg_match('/yoozBot/', $agent)) {
+            $browser = new YoozBot($agent, $logger);
+        } elseif (preg_match('/online\-webceo\-bot/', $agent)) {
+            $browser = new WebceoBot($agent, $logger);
         } elseif (preg_match('/^Mozilla\/5\.0 \(.*\) Gecko\/.*\/\d+/', $agent)
             && !preg_match('/Netscape/', $agent)
         ) {
@@ -1991,6 +2034,8 @@ class BrowserFactory
             $browser = new QuickiWikiBot($agent, $logger);
         } elseif (preg_match('/PycURL/', $agent)) {
             $browser = new PyCurl($agent, $logger);
+        } elseif (preg_match('/libcurl\-agent/', $agent)) {
+            $browser = new Libcurl($agent, $logger);
         } elseif (preg_match('/curl/i', $agent)) {
             $browser = new Curl($agent, $logger);
         } elseif (preg_match('/^PHP/', $agent)) {
@@ -2135,6 +2180,24 @@ class BrowserFactory
             $browser = new FastbotCrawler($agent, $logger);
         } elseif (preg_match('/Riddler/', $agent)) {
             $browser = new Riddler($agent, $logger);
+        } elseif (preg_match('/SophosUpdateManager/', $agent)) {
+            $browser = new SophosUpdateManager($agent, $logger);
+        } elseif (preg_match('/(Debian|Ubuntu) APT\-HTTP/', $agent)) {
+            $browser = new AptHttpTransport($agent, $logger);
+        } elseif (preg_match('/urlgrabber/', $agent)) {
+            $browser = new UrlGrabber($agent, $logger);
+        } elseif (preg_match('/UCS \(ESX\)/', $agent)) {
+            $browser = new UniventionCorporateServer($agent, $logger);
+        } elseif (preg_match('/libwww\-perl/', $agent)) {
+            $browser = new Libwww($agent, $logger);
+        } elseif (preg_match('/OpenBSD ftp/', $agent)) {
+            $browser = new OpenBsdFtp($agent, $logger);
+        } elseif (preg_match('/SophosAgent/', $agent)) {
+            $browser = new SophosAgent($agent, $logger);
+        } elseif (preg_match('/jupdate/', $agent)) {
+            $browser = new Jupdate($agent, $logger);
+        } elseif (preg_match('/Roku\/DVP/', $agent)) {
+            $browser = new RokuDvp($agent, $logger);
         } elseif (preg_match('/java/i', $agent)) {
             $browser = new JavaStandardLibrary($agent, $logger);
         } else {

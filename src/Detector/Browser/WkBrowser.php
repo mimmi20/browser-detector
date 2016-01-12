@@ -31,18 +31,21 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
+use BrowserDetector\Detector\Engine\Blink;
+use UaBrowserType\Browser;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
+ * KonquerorHandler
+ *
+ *
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WkBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
@@ -54,8 +57,8 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         'mobile_browser_modus'         => null, // not in wurfl
 
         // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
+        'can_skip_aligned_link_row'    => true,
+        'device_claims_web_support'    => true,
         // pdf
         'pdf_support'                  => true,
         // bugs
@@ -73,11 +76,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('curl')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(array('<', 'Curl/PHP', 'PycURL', 'libcurl'))) {
+        if (!$this->utils->checkIfContains(array('wkbrowser'))) {
             return false;
         }
 
@@ -91,7 +90,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getName()
     {
-        return 'cURL';
+        return 'WKBrowser';
     }
 
     /**
@@ -101,7 +100,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\KeanuLee());
     }
 
     /**
@@ -111,7 +110,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function getBrowserType()
     {
-        return new Bot();
+        return new Browser();
     }
 
     /**
@@ -124,7 +123,7 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('curl');
+        $searches = array('wkbrowser');
 
         return $detector->detectVersion($searches);
     }
@@ -140,12 +139,13 @@ class Curl extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns null, if the browser does not have a specific rendering engine
+     * returns the Engine Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Khtml
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
+        return new Blink($this->useragent, $this->logger);
     }
 }
