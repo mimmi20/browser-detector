@@ -152,5 +152,20 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             . $expectedBrowserMaker . ' [' . $expectedProperties['Browser_Maker'] . ']'
             . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer()->getName() . ']' . '")'
         );
+
+        $expectedDeviceName = $mapper->mapDeviceName(
+            $expectedProperties['Device_Name']
+        );
+        $foundDeviceName = $mapper->mapDeviceName(
+            $result->getDeviceName()
+        );
+
+        self::assertSame(
+            $expectedDeviceName,
+            $foundDeviceName,
+            'Expected actual "Browser_Maker" to be "'
+            . $expectedDeviceName . ' [' . $expectedProperties['Device_Name'] . ']'
+            . '" (was "' . $foundDeviceName . ' [' . $result->getDeviceName() . ']' . '")'
+        );
     }
 }
