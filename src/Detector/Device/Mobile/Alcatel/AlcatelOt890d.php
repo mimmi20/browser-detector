@@ -51,7 +51,7 @@ class AlcatelOt890d extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'one touch 890D',
+        'code_name'             => 'one touch 890D',
         'model_extra_info'       => null,
         'marketing_name'         => 'one touch 890D',
         'has_qwerty_keyboard'    => true,

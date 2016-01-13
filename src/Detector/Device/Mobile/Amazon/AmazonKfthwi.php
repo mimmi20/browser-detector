@@ -49,7 +49,7 @@ class AmazonKfthwi extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KFTHWI',
+        'code_name'             => 'KFTHWI',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kindle Fire HDX 7 WiFi',
         'has_qwerty_keyboard'    => true,

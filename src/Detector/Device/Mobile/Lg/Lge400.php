@@ -55,7 +55,7 @@ class Lge400 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E400',
+        'code_name'             => 'E400',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus L3',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class TriQ extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general 3Q Device',
+        'code_name'             => 'general 3Q Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general 3Q Device',
         'has_qwerty_keyboard'    => true,

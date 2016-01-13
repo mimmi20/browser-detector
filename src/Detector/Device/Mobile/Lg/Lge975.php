@@ -54,7 +54,7 @@ class Lge975 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E975',
+        'code_name'             => 'E975',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus G',
         'has_qwerty_keyboard'    => true,

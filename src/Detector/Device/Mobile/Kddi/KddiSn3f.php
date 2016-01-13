@@ -51,7 +51,7 @@ class KddiSn3f extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SN3F',
+        'code_name'             => 'SN3F',
         'model_extra_info'       => null,
         'marketing_name'         => 'SN3F',
         'has_qwerty_keyboard'    => true,

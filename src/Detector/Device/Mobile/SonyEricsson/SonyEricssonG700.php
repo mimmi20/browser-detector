@@ -51,7 +51,7 @@ class SonyEricssonG700 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'model_name'             => 'G700',
+        'code_name'             => 'G700',
         'model_extra_info'       => null,
         'marketing_name'         => 'G700',
         'has_qwerty_keyboard'    => true,

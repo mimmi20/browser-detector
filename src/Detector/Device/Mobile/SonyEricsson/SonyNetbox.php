@@ -49,7 +49,7 @@ class SonyNetbox extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Netbox',
+        'code_name'             => 'Netbox',
         'model_extra_info'       => null,
         'marketing_name'         => 'Netbox',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class HuaweiMediaPad7Lite extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MediaPad 7 Lite',
+        'code_name'             => 'MediaPad 7 Lite',
         'model_extra_info'       => null,
         'marketing_name'         => 'MediaPad 7 Lite',
         'has_qwerty_keyboard'    => true,

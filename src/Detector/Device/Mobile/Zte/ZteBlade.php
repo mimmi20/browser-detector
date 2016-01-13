@@ -55,7 +55,7 @@ class ZteBlade extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Blade',
+        'code_name'             => 'Blade',
         'model_extra_info'       => null,
         'marketing_name'         => 'Blade',
         'has_qwerty_keyboard'    => true,

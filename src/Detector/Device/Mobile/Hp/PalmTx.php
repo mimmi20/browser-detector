@@ -51,7 +51,7 @@ class PalmTx extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'TX',
+        'code_name'             => 'TX',
         'model_extra_info'       => null,
         'marketing_name'         => 'TX',
         'has_qwerty_keyboard'    => true,

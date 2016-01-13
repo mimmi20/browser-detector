@@ -55,7 +55,7 @@ class Lgp350 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'P350',
+        'code_name'             => 'P350',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus Me',
         'has_qwerty_keyboard'    => true,

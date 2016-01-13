@@ -55,7 +55,7 @@ class HtcA315c extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A315c',
+        'code_name'             => 'A315c',
         'model_extra_info'       => null,
         'marketing_name'         => 'Wildfire S', // wurflkey: htc_wildfire_s_ver1_subua
         'has_qwerty_keyboard'    => false, // wurflkey: htc_wildfire_s_ver1_subua

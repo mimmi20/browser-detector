@@ -51,7 +51,7 @@ class LencoCm900Hz extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'CM900HZ',
+        'code_name'             => 'CM900HZ',
         'model_extra_info'       => null,
         'marketing_name'         => 'CM900HZ',
         'has_qwerty_keyboard'    => true,

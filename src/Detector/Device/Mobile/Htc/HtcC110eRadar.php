@@ -51,7 +51,7 @@ class HtcC110eRadar extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Radar C110e',
+        'code_name'             => 'Radar C110e',
         'model_extra_info'       => null,
         'marketing_name'         => 'Radar C110e',
         'has_qwerty_keyboard'    => true,

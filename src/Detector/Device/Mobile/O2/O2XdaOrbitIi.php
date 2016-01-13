@@ -51,7 +51,7 @@ class O2XdaOrbitIi extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Xda Orbit II',
+        'code_name'             => 'Xda Orbit II',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xda Orbit II',
         'has_qwerty_keyboard'    => true,

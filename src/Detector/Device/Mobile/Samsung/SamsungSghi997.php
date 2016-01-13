@@ -55,7 +55,7 @@ class SamsungSghi997 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-I997',
+        'code_name'             => 'SGH-I997',
         'model_extra_info'       => null,
         'marketing_name'         => 'Infuse',
         'has_qwerty_keyboard'    => true,

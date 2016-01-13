@@ -51,7 +51,7 @@ class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MIUI.us Sensation 4G',
+        'code_name'             => 'MIUI.us Sensation 4G',
         'model_extra_info'       => null,
         'marketing_name'         => 'MIUI.us Sensation 4G',
         'has_qwerty_keyboard'    => true,

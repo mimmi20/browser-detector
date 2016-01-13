@@ -51,7 +51,7 @@ class AcerIconiaB1710 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'B1-710',
+        'code_name'             => 'B1-710',
         'model_extra_info'       => null,
         'marketing_name'         => 'Iconia B1-710',
         'has_qwerty_keyboard'    => true,

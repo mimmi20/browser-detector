@@ -55,7 +55,7 @@ class HtcA510e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A510e',
+        'code_name'             => 'A510e',
         'model_extra_info'       => null,
         'marketing_name'         => 'Wildfire S',
         'has_qwerty_keyboard'    => false,

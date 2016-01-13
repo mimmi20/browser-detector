@@ -51,7 +51,7 @@ class HuaweiS8600 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S8600',
+        'code_name'             => 'S8600',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend G330',
         'has_qwerty_keyboard'    => true,

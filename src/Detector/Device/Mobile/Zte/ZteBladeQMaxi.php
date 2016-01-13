@@ -49,7 +49,7 @@ class ZteBladeQMaxi extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Blade Q Maxi',
+        'code_name'             => 'Blade Q Maxi',
         'model_extra_info'       => null,
         'marketing_name'         => 'Blade Q Maxi',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SonyEricssonLT28at extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LT28at',
+        'code_name'             => 'LT28at',
         'model_extra_info'       => null,
         'marketing_name'         => 'LT28at',
         'has_qwerty_keyboard'    => true,

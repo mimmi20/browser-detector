@@ -51,7 +51,7 @@ class Nokia7510 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => '7510',
+        'code_name'             => '7510',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

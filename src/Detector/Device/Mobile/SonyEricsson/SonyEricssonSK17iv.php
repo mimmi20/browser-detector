@@ -55,7 +55,7 @@ class SonyEricssonSK17iv extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SK17iv',
+        'code_name'             => 'SK17iv',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Mini Pro',
         'has_qwerty_keyboard'    => true,

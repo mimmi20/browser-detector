@@ -55,7 +55,7 @@ class NokiaC202 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'C2-02',
+        'code_name'             => 'C2-02',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => false,

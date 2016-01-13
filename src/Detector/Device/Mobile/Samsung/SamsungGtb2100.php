@@ -51,7 +51,7 @@ class SamsungGtb2100 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-B2100',
+        'code_name'             => 'GT-B2100',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-B2100',
         'has_qwerty_keyboard'    => false,

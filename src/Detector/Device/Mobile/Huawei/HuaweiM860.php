@@ -51,7 +51,7 @@ class HuaweiM860 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'M860',
+        'code_name'             => 'M860',
         'model_extra_info'       => null,
         'marketing_name'         => 'M860',
         'has_qwerty_keyboard'    => true,

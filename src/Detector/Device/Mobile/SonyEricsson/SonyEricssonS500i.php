@@ -51,7 +51,7 @@ class SonyEricssonS500i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S500i',
+        'code_name'             => 'S500i',
         'model_extra_info'       => null,
         'marketing_name'         => 'S500i',
         'has_qwerty_keyboard'    => true,

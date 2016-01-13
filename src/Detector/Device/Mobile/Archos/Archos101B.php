@@ -51,7 +51,7 @@ class Archos101B extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => '101B',
+        'code_name'             => '101B',
         'model_extra_info'       => null,
         'marketing_name'         => '101B',
         'has_qwerty_keyboard'    => true,

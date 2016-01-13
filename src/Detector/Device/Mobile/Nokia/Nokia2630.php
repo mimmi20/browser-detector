@@ -51,7 +51,7 @@ class Nokia2630 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => '2630',
+        'code_name'             => '2630',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

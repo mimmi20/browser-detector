@@ -53,7 +53,7 @@ class Nextbook extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Nextbook Device',
+        'code_name'             => 'general Nextbook Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'Premium8',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class SonyKdl50w815b extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KDL50W815B',
+        'code_name'             => 'KDL50W815B',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

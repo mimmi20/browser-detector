@@ -55,7 +55,7 @@ class LenovoIdeaPadK1 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'K1', // wurflkey: lenovo_k1_ver1_suban32
+        'code_name'             => 'K1', // wurflkey: lenovo_k1_ver1_suban32
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaPad K1',
         'has_qwerty_keyboard'    => true,

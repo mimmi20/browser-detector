@@ -55,7 +55,7 @@ class ToshibaAT300SE extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'AT300SE',
+        'code_name'             => 'AT300SE',
         'model_extra_info'       => null,
         'marketing_name'         => 'Regza AT300SE',
         'has_qwerty_keyboard'    => true,

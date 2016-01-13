@@ -56,7 +56,7 @@ class ToshibaAt300 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'model_name'             => 'AT300',
+        'code_name'             => 'AT300',
         'model_extra_info'       => null,
         'marketing_name'         => 'Regza AT300',
         'has_qwerty_keyboard'    => true,

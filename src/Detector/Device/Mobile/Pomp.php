@@ -51,7 +51,7 @@ class Pomp extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Pomp Device',
+        'code_name'             => 'general Pomp Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Pomp Device',
         'has_qwerty_keyboard'    => true,

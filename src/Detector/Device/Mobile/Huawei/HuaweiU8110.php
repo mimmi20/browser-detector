@@ -55,7 +55,7 @@ class HuaweiU8110 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8110',
+        'code_name'             => 'U8110',
         'model_extra_info'       => null,
         'marketing_name'         => 'U8110',
         'has_qwerty_keyboard'    => true,

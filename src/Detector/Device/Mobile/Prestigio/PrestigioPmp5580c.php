@@ -51,7 +51,7 @@ class PrestigioPmp5580c extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PMP5580C',
+        'code_name'             => 'PMP5580C',
         'model_extra_info'       => null,
         'marketing_name'         => 'MultiPad 8.0 Pro Duo',
         'has_qwerty_keyboard'    => true,

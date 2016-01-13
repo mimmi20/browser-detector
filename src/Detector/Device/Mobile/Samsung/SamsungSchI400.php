@@ -51,7 +51,7 @@ class SamsungSchI400 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-I400',
+        'code_name'             => 'SCH-I400',
         'model_extra_info'       => null,
         'marketing_name'         => 'SCH-I400',
         'has_qwerty_keyboard'    => false,

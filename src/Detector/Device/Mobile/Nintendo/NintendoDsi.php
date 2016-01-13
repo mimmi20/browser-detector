@@ -55,7 +55,7 @@ class NintendoDsi extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'DSi',
+        'code_name'             => 'DSi',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => false, // wurflkey: nintendo_dsi_ver1

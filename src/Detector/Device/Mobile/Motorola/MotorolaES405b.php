@@ -51,7 +51,7 @@ class MotorolaES405b extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ES405B',
+        'code_name'             => 'ES405B',
         'model_extra_info'       => null,
         'marketing_name'         => 'ES405B',
         'has_qwerty_keyboard'    => true,

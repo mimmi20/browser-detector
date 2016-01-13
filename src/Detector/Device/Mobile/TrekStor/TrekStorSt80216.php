@@ -51,7 +51,7 @@ class TrekStorSt80216 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ST80216',
+        'code_name'             => 'ST80216',
         'model_extra_info'       => null,
         'marketing_name'         => 'SurfTab Ventos 8.0',
         'has_qwerty_keyboard'    => true,

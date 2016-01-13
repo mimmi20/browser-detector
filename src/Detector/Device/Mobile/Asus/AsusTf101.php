@@ -56,7 +56,7 @@ class AsusTf101 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'TF101',
+        'code_name'             => 'TF101',
         'model_extra_info'       => null,
         'marketing_name'         => 'Eee Pad Transformer TF101',
         'has_qwerty_keyboard'    => true,

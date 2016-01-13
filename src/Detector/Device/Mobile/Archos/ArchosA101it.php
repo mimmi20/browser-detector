@@ -55,7 +55,7 @@ class ArchosA101it extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A101IT',
+        'code_name'             => 'A101IT',
         'model_extra_info'       => null,
         'marketing_name'         => 'A101IT',
         'has_qwerty_keyboard'    => true,

@@ -255,7 +255,7 @@ class MobileFactory
 
         foreach ($list as $key => $entry) {
             /** @var \BrowserDetector\Detector\Device\AbstractDevice $entry */
-            $names[$key]     = $entry->getCapability('model_name');
+            $names[$key]     = $entry->getCapability('code_name');
             $weights[$key]   = $entry->getWeight();
             $companies[$key] = $entry->getManufacturer()->getName();
         }

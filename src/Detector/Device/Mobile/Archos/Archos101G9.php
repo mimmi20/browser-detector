@@ -55,7 +55,7 @@ class Archos101G9 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => '101 G9',
+        'code_name'             => '101 G9',
         'model_extra_info'       => null,
         'marketing_name'         => '101 G9',
         'has_qwerty_keyboard'    => true,

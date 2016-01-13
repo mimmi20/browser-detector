@@ -51,7 +51,7 @@ class SamsungSmT700 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-T700',
+        'code_name'             => 'SM-T700',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab S 8.4 Wi-Fi',
         'has_qwerty_keyboard'    => true,

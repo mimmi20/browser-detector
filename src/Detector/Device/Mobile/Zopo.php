@@ -53,7 +53,7 @@ class Zopo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Zopo Device',
+        'code_name'             => 'general Zopo Device',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

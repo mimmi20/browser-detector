@@ -55,7 +55,7 @@ class HuaweiU8651 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8651T',
+        'code_name'             => 'U8651T',
         'model_extra_info'       => null,
         'marketing_name'         => 'Prism', // wurflkey: tmobile_u8651t_ver1_subuaprism
         'has_qwerty_keyboard'    => true,

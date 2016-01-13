@@ -51,7 +51,7 @@ class LenovoS2110afIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S2110AF',
+        'code_name'             => 'S2110AF',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaTab S2110AF',
         'has_qwerty_keyboard'    => true,

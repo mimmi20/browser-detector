@@ -51,7 +51,7 @@ class PearlX10Plus extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X10+',
+        'code_name'             => 'X10+',
         'model_extra_info'       => null,
         'marketing_name'         => 'Touchlet X10.Dual+',
         'has_qwerty_keyboard'    => true,

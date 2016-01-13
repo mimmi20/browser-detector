@@ -55,7 +55,7 @@ class AcerE320 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E320',
+        'code_name'             => 'E320',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid Express',
         'has_qwerty_keyboard'    => true,

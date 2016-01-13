@@ -51,7 +51,7 @@ class LgVm670 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'VM670',
+        'code_name'             => 'VM670',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

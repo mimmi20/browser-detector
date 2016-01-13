@@ -51,7 +51,7 @@ class SamsungGtm7600 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-M7600',
+        'code_name'             => 'GT-M7600',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-M7600',
         'has_qwerty_keyboard'    => false,

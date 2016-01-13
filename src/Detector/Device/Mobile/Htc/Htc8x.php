@@ -51,7 +51,7 @@ class Htc8x extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Windows Phone 8X',
+        'code_name'             => 'Windows Phone 8X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Windows Phone 8X',
         'has_qwerty_keyboard'    => true,

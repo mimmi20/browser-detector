@@ -51,7 +51,7 @@ class SamsungGts3850 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S3850',
+        'code_name'             => 'GT-S3850',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S3850',
         'has_qwerty_keyboard'    => false,

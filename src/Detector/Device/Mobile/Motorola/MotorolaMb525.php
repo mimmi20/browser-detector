@@ -56,7 +56,7 @@ class MotorolaMb525 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MB525',
+        'code_name'             => 'MB525',
         'model_extra_info'       => null,
         'marketing_name'         => 'DEFY', // wurflkey: mot_mb525_ver1_sub_android221
         'has_qwerty_keyboard'    => true,

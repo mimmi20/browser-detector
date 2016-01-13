@@ -51,7 +51,7 @@ class LenovoA1000f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A1000-F',
+        'code_name'             => 'A1000-F',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaPad A1000-F',
         'has_qwerty_keyboard'    => true,

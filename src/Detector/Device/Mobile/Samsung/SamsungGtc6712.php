@@ -51,7 +51,7 @@ class SamsungGtc6712 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-C6712',
+        'code_name'             => 'GT-C6712',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-C6712',
         'has_qwerty_keyboard'    => false,

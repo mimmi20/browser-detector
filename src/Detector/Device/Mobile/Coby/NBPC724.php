@@ -51,7 +51,7 @@ class NBPC724 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'NBPC724',
+        'code_name'             => 'NBPC724',
         'model_extra_info'       => 'Netbook',
         'marketing_name'         => 'NBPC724',
         'has_qwerty_keyboard'    => true,

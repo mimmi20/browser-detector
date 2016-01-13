@@ -51,7 +51,7 @@ class PrestigioPmp7100D3g extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PMP7100D3G',
+        'code_name'             => 'PMP7100D3G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Multipad',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class Xiaomi extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Xiaomi Device',
+        'code_name'             => 'general Xiaomi Device',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

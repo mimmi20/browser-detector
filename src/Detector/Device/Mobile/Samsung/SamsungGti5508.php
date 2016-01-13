@@ -51,7 +51,7 @@ class SamsungGti5508 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I5508',
+        'code_name'             => 'GT-I5508',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-I5508',
         'has_qwerty_keyboard'    => false,

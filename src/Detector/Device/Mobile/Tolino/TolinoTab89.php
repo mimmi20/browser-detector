@@ -51,7 +51,7 @@ class TolinoTab89 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Tab 8.9',
+        'code_name'             => 'Tab 8.9',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tab 8.9',
         'has_qwerty_keyboard'    => true,

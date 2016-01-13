@@ -51,7 +51,7 @@ class SamsungGts7233e extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S7233E',
+        'code_name'             => 'GT-S7233E',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S7233E',
         'has_qwerty_keyboard'    => false,

@@ -55,7 +55,7 @@ class Nokia808PureView extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => '808 PureView',
+        'code_name'             => '808 PureView',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => false,

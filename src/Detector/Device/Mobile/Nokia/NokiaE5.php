@@ -51,7 +51,7 @@ class NokiaE5 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E5',
+        'code_name'             => 'E5',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

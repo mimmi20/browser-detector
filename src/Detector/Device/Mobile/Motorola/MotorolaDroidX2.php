@@ -55,7 +55,7 @@ class MotorolaDroidX2 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Droid X2',
+        'code_name'             => 'Droid X2',
         'model_extra_info'       => 'Verizon',
         'marketing_name'         => 'Droid X2',
         'has_qwerty_keyboard'    => true,

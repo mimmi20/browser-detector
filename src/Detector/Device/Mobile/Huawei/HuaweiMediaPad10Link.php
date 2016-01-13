@@ -56,7 +56,7 @@ class HuaweiMediaPad10Link extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S7-301w',
+        'code_name'             => 'S7-301w',
         'model_extra_info'       => null,
         'marketing_name'         => 'MediaPad 10 Link',
         'has_qwerty_keyboard'    => true,

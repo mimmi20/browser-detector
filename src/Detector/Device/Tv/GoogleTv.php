@@ -51,7 +51,7 @@ class GoogleTv extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Google TV',
+        'code_name'             => 'Google TV',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

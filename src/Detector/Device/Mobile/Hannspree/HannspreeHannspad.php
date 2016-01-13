@@ -51,7 +51,7 @@ class HannspreeHannspad extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'HANNSpad SN10T1',
+        'code_name'             => 'HANNSpad SN10T1',
         'model_extra_info'       => null,
         'marketing_name'         => 'HANNSpad SN10T1',
         'has_qwerty_keyboard'    => true,

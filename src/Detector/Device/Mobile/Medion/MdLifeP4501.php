@@ -51,7 +51,7 @@ class MdLifeP4501 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MD 98428',
+        'code_name'             => 'MD 98428',
         'model_extra_info'       => null,
         'marketing_name'         => 'Life P4501',
         'has_qwerty_keyboard'    => true,

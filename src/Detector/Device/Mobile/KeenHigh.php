@@ -53,7 +53,7 @@ class KeenHigh extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Keen High Device',
+        'code_name'             => 'general Keen High Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Keen High Device',
         'has_qwerty_keyboard'    => true,

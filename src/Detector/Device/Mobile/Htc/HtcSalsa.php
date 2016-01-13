@@ -55,7 +55,7 @@ class HtcSalsa extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Salsa',
+        'code_name'             => 'Salsa',
         'model_extra_info'       => null,
         'marketing_name'         => 'Salsa',
         'has_qwerty_keyboard'    => true,

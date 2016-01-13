@@ -53,7 +53,7 @@ class AmazonKftt extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KFTT',
+        'code_name'             => 'KFTT',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kindle Fire HD 7', // wurflkey: amazon_kindle_fire_hd7_ver1_subuanosilk
         'has_qwerty_keyboard'    => true,

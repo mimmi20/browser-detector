@@ -55,7 +55,7 @@ class Lgv900 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'V900',
+        'code_name'             => 'V900',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus Pad',
         'has_qwerty_keyboard'    => true,

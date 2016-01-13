@@ -51,7 +51,7 @@ class SamsungGalaxyNexus10 extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Nexus 10',
+        'code_name'             => 'Nexus 10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nexus 10',
         'has_qwerty_keyboard'    => true, // wurflkey: samsung_galaxy_nexus_ver1

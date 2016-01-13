@@ -51,7 +51,7 @@ class NokiaE6 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E6',
+        'code_name'             => 'E6',
         'model_extra_info'       => null,
         'marketing_name'         => 'E6',
         'has_qwerty_keyboard'    => true,

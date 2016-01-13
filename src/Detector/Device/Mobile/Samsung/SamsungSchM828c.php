@@ -51,7 +51,7 @@ class SamsungSchM828c extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-M828C',
+        'code_name'             => 'SCH-M828C',
         'model_extra_info'       => null,
         'marketing_name'         => 'SCH-M828C',
         'has_qwerty_keyboard'    => false,

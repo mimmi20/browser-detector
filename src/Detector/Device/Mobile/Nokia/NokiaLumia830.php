@@ -49,7 +49,7 @@ class NokiaLumia830 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Lumia 830',
+        'code_name'             => 'Lumia 830',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lumia 830',
         'has_qwerty_keyboard'    => true,

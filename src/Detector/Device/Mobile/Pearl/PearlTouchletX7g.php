@@ -51,7 +51,7 @@ class PearlTouchletX7g extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Touchlet X7G',
+        'code_name'             => 'Touchlet X7G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Touchlet X7G',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungSghi727 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-I727',
+        'code_name'             => 'SGH-I727',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S II Skyrocket',
         'has_qwerty_keyboard'    => false,

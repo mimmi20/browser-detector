@@ -51,7 +51,7 @@ class SamsungSchU660 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-U660',
+        'code_name'             => 'SCH-U660',
         'model_extra_info'       => null,
         'marketing_name'         => 'Convoy 2',
         'has_qwerty_keyboard'    => false,

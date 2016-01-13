@@ -53,7 +53,7 @@ class SamsungGti8320 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I8320',
+        'code_name'             => 'GT-I8320',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-I8320',
         'has_qwerty_keyboard'    => false,

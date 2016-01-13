@@ -51,7 +51,7 @@ class YuandaoN90fhdrk extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N90FHDRK',
+        'code_name'             => 'N90FHDRK',
         'model_extra_info'       => null,
         'marketing_name'         => 'Vido N90FHD',
         'has_qwerty_keyboard'    => true,

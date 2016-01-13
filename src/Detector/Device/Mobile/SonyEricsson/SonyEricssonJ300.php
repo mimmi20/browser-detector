@@ -51,7 +51,7 @@ class SonyEricssonJ300 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'model_name'             => 'J300',
+        'code_name'             => 'J300',
         'model_extra_info'       => null,
         'marketing_name'         => 'J300',
         'has_qwerty_keyboard'    => true,

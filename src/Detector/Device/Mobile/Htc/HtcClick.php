@@ -51,7 +51,7 @@ class HtcClick extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Click',
+        'code_name'             => 'Click',
         'model_extra_info'       => null,
         'marketing_name'         => 'Click',
         'has_qwerty_keyboard'    => true,

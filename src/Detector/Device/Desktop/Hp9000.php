@@ -49,7 +49,7 @@ class Hp9000 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => '9000',
+        'code_name'             => '9000',
         'model_extra_info'       => null,
         'marketing_name'         => '9000',
         'has_qwerty_keyboard'    => true,

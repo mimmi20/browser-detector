@@ -51,7 +51,7 @@ class SamsungSc02b extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SC-02B',
+        'code_name'             => 'SC-02B',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S SC-02B for DoCoMo',
         'has_qwerty_keyboard'    => false,

@@ -56,7 +56,7 @@ class SamsungGtn8000 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-N8000',
+        'code_name'             => 'GT-N8000',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 10.1',
         'has_qwerty_keyboard'    => true,

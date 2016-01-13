@@ -53,7 +53,7 @@ class Nintendo extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Nintendo Device',
+        'code_name'             => 'general Nintendo Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Nintendo Device',
         'has_qwerty_keyboard'    => true,

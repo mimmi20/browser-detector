@@ -51,7 +51,7 @@ class LenovoB6000h extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'B6000-H',
+        'code_name'             => 'B6000-H',
         'model_extra_info'       => null,
         'marketing_name'         => 'Yoga B6000-H',
         'has_qwerty_keyboard'    => true,

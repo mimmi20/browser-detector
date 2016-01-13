@@ -55,7 +55,7 @@ class SamsungGtp7510 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-P7510',
+        'code_name'             => 'GT-P7510',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 10.1',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class WonderMediaWm8850 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Prizm WM8850',
+        'code_name'             => 'Prizm WM8850',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

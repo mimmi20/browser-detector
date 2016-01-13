@@ -51,7 +51,7 @@ class SonyEricssonK800i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'K800i',
+        'code_name'             => 'K800i',
         'model_extra_info'       => null,
         'marketing_name'         => 'K800i',
         'has_qwerty_keyboard'    => true,

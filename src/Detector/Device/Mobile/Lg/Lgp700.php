@@ -55,7 +55,7 @@ class Lgp700 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'P700',
+        'code_name'             => 'P700',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus L7',
         'has_qwerty_keyboard'    => true,

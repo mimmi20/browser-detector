@@ -53,7 +53,7 @@ class Denver extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Denver Device',
+        'code_name'             => 'general Denver Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Denver Device',
         'has_qwerty_keyboard'    => true,

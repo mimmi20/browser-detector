@@ -49,7 +49,7 @@ class AlcatelOt7047d extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-7047D',
+        'code_name'             => 'OT-7047D',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch Scribe HD',
         'has_qwerty_keyboard'    => true,

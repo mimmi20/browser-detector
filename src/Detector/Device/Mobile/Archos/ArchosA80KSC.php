@@ -55,7 +55,7 @@ class ArchosA80KSC extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A80KSC',
+        'code_name'             => 'A80KSC',
         'model_extra_info'       => null,
         'marketing_name'         => 'A80KSC',
         'has_qwerty_keyboard'    => true,

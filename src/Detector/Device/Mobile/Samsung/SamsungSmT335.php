@@ -49,7 +49,7 @@ class SamsungSmT335 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-T335',
+        'code_name'             => 'SM-T335',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 3 8.0 LTE',
         'has_qwerty_keyboard'    => true,

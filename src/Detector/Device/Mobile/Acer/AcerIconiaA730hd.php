@@ -56,7 +56,7 @@ class AcerIconiaA730hd extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'B1-730HD',
+        'code_name'             => 'B1-730HD',
         'model_extra_info'       => null,
         'marketing_name'         => 'Iconia One 7',
         'has_qwerty_keyboard'    => true,

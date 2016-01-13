@@ -51,7 +51,7 @@ class AlcatelOt995 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-995',
+        'code_name'             => 'OT-995',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch 995',
         'has_qwerty_keyboard'    => true,

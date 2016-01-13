@@ -56,7 +56,7 @@ class HtcA9192Inspire4g extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Inspire 4G',
+        'code_name'             => 'Inspire 4G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Inspire 4G',
         'has_qwerty_keyboard'    => true,

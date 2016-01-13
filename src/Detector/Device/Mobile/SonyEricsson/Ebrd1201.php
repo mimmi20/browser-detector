@@ -51,7 +51,7 @@ class Ebrd1201 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PRST1',
+        'code_name'             => 'PRST1',
         'model_extra_info'       => null,
         'marketing_name'         => 'Sony Reader Wi-Fi',
         'has_qwerty_keyboard'    => true,

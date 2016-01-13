@@ -51,7 +51,7 @@ class LgKu800 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KU800',
+        'code_name'             => 'KU800',
         'model_extra_info'       => null,
         'marketing_name'         => 'KU800',
         'has_qwerty_keyboard'    => true,

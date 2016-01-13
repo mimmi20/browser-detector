@@ -51,7 +51,7 @@ class SamsungGalaxyNexusS4G extends AbstractDevice implements DeviceHasSpecificP
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Nexus S 4G',
+        'code_name'             => 'Nexus S 4G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nexus S 4G',
         'has_qwerty_keyboard'    => false,

@@ -51,7 +51,7 @@ class Lgp999 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'P999',
+        'code_name'             => 'P999',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

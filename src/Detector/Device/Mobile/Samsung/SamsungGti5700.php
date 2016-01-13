@@ -55,7 +55,7 @@ class SamsungGti5700 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT i5700',
+        'code_name'             => 'GT i5700',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Spica',
         'has_qwerty_keyboard'    => false,

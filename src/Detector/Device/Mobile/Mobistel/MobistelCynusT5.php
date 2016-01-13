@@ -55,7 +55,7 @@ class MobistelCynusT5 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Cynus T5',
+        'code_name'             => 'Cynus T5',
         'model_extra_info'       => null,
         'marketing_name'         => 'Cynus T5',
         'has_qwerty_keyboard'    => true,

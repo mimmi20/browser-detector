@@ -51,7 +51,7 @@ class EasypixEasyPad970 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'EasyPad 970',
+        'code_name'             => 'EasyPad 970',
         'model_extra_info'       => null,
         'marketing_name'         => 'EasyPad 970',
         'has_qwerty_keyboard'    => true,

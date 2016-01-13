@@ -51,7 +51,7 @@ class SamsungGts6500 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S6500',
+        'code_name'             => 'GT-S6500',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Mini 2',
         'has_qwerty_keyboard'    => true,

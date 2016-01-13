@@ -55,7 +55,7 @@ class SamsungGti9295 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9295',
+        'code_name'             => 'GT-I9295',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S4 Active',
         'has_qwerty_keyboard'    => true,

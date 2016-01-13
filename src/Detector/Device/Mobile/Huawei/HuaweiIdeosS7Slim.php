@@ -51,7 +51,7 @@ class HuaweiIdeosS7Slim extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S7_Slim',
+        'code_name'             => 'S7_Slim',
         'model_extra_info'       => null,
         'marketing_name'         => 'S7_Slim',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class Cosmote extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Cosmote Device',
+        'code_name'             => 'general Cosmote Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Cosmote Device',
         'has_qwerty_keyboard'    => true,

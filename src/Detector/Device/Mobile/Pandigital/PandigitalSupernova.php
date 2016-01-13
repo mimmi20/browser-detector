@@ -55,7 +55,7 @@ class PandigitalSupernova extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SuperNova',
+        'code_name'             => 'SuperNova',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

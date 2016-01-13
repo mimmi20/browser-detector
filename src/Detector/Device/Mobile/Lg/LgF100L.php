@@ -51,7 +51,7 @@ class LgF100L extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'F100L',
+        'code_name'             => 'F100L',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus Vu',
         'has_qwerty_keyboard'    => true,

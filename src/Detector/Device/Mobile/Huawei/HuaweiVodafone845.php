@@ -55,7 +55,7 @@ class HuaweiVodafone845 extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Vodafone 845',
+        'code_name'             => 'Vodafone 845',
         'model_extra_info'       => null,
         'marketing_name'         => 'Vodafone 845',
         'has_qwerty_keyboard'    => true,

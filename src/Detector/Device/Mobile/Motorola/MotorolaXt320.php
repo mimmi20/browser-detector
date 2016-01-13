@@ -51,7 +51,7 @@ class MotorolaXt320 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'XT320',
+        'code_name'             => 'XT320',
         'model_extra_info'       => null,
         'marketing_name'         => 'Defy Mini',
         'has_qwerty_keyboard'    => true,

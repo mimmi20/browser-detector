@@ -51,7 +51,7 @@ class TrekStorBreeze10Quad extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SurfTab Breeze 10.1 Quad',
+        'code_name'             => 'SurfTab Breeze 10.1 Quad',
         'model_extra_info'       => null,
         'marketing_name'         => 'SurfTab Breeze 10.1 Quad',
         'has_qwerty_keyboard'    => true,

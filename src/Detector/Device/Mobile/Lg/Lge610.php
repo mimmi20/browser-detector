@@ -55,7 +55,7 @@ class Lge610 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E610',
+        'code_name'             => 'E610',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus L5',
         'has_qwerty_keyboard'    => true,

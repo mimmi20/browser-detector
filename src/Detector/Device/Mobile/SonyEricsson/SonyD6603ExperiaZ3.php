@@ -55,7 +55,7 @@ class SonyD6603ExperiaZ3 extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'D6603',
+        'code_name'             => 'D6603',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Z3',
         'has_qwerty_keyboard'    => true,

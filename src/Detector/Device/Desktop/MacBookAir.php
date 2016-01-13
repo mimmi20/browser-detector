@@ -50,7 +50,7 @@ class MacBookAir extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MacBook Air',
+        'code_name'             => 'MacBook Air',
         'model_extra_info'       => null,
         'marketing_name'         => 'MacBook Air',
         'has_qwerty_keyboard'    => true,

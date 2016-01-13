@@ -49,7 +49,7 @@ class MotorolaXt1068 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'XT1068',
+        'code_name'             => 'XT1068',
         'model_extra_info'       => null,
         'marketing_name'         => 'XT1068',
         'has_qwerty_keyboard'    => true,

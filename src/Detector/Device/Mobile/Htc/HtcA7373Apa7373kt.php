@@ -51,7 +51,7 @@ class HtcA7373Apa7373kt extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A7373',
+        'code_name'             => 'A7373',
         'model_extra_info'       => null,
         'marketing_name'         => 'APA7373KT',
         'has_qwerty_keyboard'    => true,

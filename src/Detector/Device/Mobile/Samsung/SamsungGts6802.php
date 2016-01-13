@@ -55,7 +55,7 @@ class SamsungGts6802 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S6802',
+        'code_name'             => 'GT-S6802',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Ace Duos',
         'has_qwerty_keyboard'    => true,

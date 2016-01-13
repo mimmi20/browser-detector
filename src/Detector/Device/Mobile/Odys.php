@@ -53,7 +53,7 @@ class Odys extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Odys Device',
+        'code_name'             => 'general Odys Device',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

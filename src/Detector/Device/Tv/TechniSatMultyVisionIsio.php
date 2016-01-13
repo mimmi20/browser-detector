@@ -51,7 +51,7 @@ class TechniSatMultyVisionIsio extends AbstractDevice implements DeviceHasSpecif
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MultyVision ISIO',
+        'code_name'             => 'MultyVision ISIO',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

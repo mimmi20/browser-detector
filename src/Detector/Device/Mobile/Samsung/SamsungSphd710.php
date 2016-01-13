@@ -56,7 +56,7 @@ class SamsungSphd710 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SPH-D710',
+        'code_name'             => 'SPH-D710',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S II Epic 4G Touch',
         'has_qwerty_keyboard'    => true,

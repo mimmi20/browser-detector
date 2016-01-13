@@ -55,7 +55,7 @@ class RimTablet extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Tablet',
+        'code_name'             => 'Tablet',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tablet',
         'has_qwerty_keyboard'    => true,

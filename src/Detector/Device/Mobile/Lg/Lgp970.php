@@ -55,7 +55,7 @@ class Lgp970 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'P970',
+        'code_name'             => 'P970',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus Black',
         'has_qwerty_keyboard'    => true,

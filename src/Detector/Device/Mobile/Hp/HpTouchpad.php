@@ -54,7 +54,7 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Touchpad',
+        'code_name'             => 'Touchpad',
         'model_extra_info'       => null,
         'marketing_name'         => 'Touchpad',
         'has_qwerty_keyboard'    => true,

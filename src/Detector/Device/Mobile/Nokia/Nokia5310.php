@@ -55,7 +55,7 @@ class Nokia5310 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => '5310 XpressMusic',
+        'code_name'             => '5310 XpressMusic',
         'model_extra_info'       => null,
         'marketing_name'         => 'XpressMusic',
         'has_qwerty_keyboard'    => false,

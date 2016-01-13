@@ -55,7 +55,7 @@ class SamsungGts6500d extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S6500D',
+        'code_name'             => 'GT-S6500D',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Mini 2',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class Blaupunkt extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Blaupunkt Device',
+        'code_name'             => 'general Blaupunkt Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Blaupunkt Device',
         'has_qwerty_keyboard'    => true,

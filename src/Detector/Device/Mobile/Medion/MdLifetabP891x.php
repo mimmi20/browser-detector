@@ -49,7 +49,7 @@ class MdLifetabP891x extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LifeTab P891X',
+        'code_name'             => 'LifeTab P891X',
         'model_extra_info'       => null,
         'marketing_name'         => 'LifeTab P891X',
         'has_qwerty_keyboard'    => true,

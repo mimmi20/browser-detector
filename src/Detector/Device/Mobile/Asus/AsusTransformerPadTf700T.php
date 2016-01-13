@@ -55,7 +55,7 @@ class AsusTransformerPadTf700T extends AbstractDevice implements DeviceHasWurflK
      */
     protected $properties = array(
         // device
-        'model_name'             => 'TF700T',
+        'code_name'             => 'TF700T',
         'model_extra_info'       => null,
         'marketing_name'         => 'Transformer Pad TF700T',
         'has_qwerty_keyboard'    => true,

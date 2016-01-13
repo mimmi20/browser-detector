@@ -51,7 +51,7 @@ class SamsungGti9082 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9082',
+        'code_name'             => 'GT-I9082',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Grand Duos',
         'has_qwerty_keyboard'    => true,

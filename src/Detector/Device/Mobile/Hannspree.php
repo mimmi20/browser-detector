@@ -53,7 +53,7 @@ class Hannspree extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Hannspree Device',
+        'code_name'             => 'general Hannspree Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Hannspree Device',
         'has_qwerty_keyboard'    => true,

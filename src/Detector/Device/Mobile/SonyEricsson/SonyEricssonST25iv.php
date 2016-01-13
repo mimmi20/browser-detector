@@ -51,7 +51,7 @@ class SonyEricssonST25iv extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ST25iv',
+        'code_name'             => 'ST25iv',
         'model_extra_info'       => null,
         'marketing_name'         => 'ST25iv',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class StarN9500 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N9500',
+        'code_name'             => 'N9500',
         'model_extra_info'       => null,
         'marketing_name'         => 'N9500',
         'has_qwerty_keyboard'    => true,

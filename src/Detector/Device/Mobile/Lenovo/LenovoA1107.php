@@ -56,7 +56,7 @@ class LenovoA1107 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A1107',
+        'code_name'             => 'A1107',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaPad A1107',
         'has_qwerty_keyboard'    => true,

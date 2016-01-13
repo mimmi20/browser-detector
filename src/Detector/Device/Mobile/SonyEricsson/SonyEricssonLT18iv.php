@@ -56,7 +56,7 @@ class SonyEricssonLT18iv extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LT18iv',
+        'code_name'             => 'LT18iv',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Arc',
         'has_qwerty_keyboard'    => true,

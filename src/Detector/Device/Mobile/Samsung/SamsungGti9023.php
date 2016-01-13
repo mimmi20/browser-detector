@@ -51,7 +51,7 @@ class SamsungGti9023 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9023',
+        'code_name'             => 'GT-I9023',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-I9023',
         'has_qwerty_keyboard'    => false,

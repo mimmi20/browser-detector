@@ -51,7 +51,7 @@ class SamsungSchI200 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-I200',
+        'code_name'             => 'SCH-I200',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Stellar 4G',
         'has_qwerty_keyboard'    => false,

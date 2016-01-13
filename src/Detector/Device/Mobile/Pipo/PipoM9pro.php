@@ -51,7 +51,7 @@ class PipoM9pro extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Q107',
+        'code_name'             => 'Q107',
         'model_extra_info'       => null,
         'marketing_name'         => 'M9 Pro',
         'has_qwerty_keyboard'    => true,

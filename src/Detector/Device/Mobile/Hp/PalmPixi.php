@@ -57,7 +57,7 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Pixi',
+        'code_name'             => 'Pixi',
         'model_extra_info'       => null,
         'marketing_name'         => 'Pixi',
         'has_qwerty_keyboard'    => true,
@@ -181,7 +181,7 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
         $modelVersion = $this->detectVersion()->getVersion(Version::MAJORMINOR);
 
         if ('1.1' == $modelVersion) {
-            $this->setCapability('model_name', 'Pixi Plus');
+            $this->setCapability('code_name', 'Pixi Plus');
             $wurflKey = 'palm_pixi_plus_ver1';
         }
 

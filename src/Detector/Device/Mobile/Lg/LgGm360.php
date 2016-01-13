@@ -51,7 +51,7 @@ class LgGm360 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GM360',
+        'code_name'             => 'GM360',
         'model_extra_info'       => null,
         'marketing_name'         => 'GM360',
         'has_qwerty_keyboard'    => true,

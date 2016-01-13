@@ -55,7 +55,7 @@ class SonyTabletSgp312 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGP312',
+        'code_name'             => 'SGP312',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Tablet Z',
         'has_qwerty_keyboard'    => true,

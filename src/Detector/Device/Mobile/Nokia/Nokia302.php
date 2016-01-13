@@ -55,7 +55,7 @@ class Nokia302 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Asha 302',
+        'code_name'             => 'Asha 302',
         'model_extra_info'       => null,
         'marketing_name'         => 'Asha 302',
         'has_qwerty_keyboard'    => true,

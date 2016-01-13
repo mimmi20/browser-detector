@@ -55,7 +55,7 @@ class HuaweiIdeosS7 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'IDEOS S7',
+        'code_name'             => 'IDEOS S7',
         'model_extra_info'       => null,
         'marketing_name'         => 'IDEOS S7',
         'has_qwerty_keyboard'    => true,

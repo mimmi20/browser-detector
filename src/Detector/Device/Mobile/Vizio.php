@@ -53,7 +53,7 @@ class Vizio extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Vizio device',
+        'code_name'             => 'general Vizio device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Vizio device',
         'has_qwerty_keyboard'    => true,

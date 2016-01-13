@@ -55,7 +55,7 @@ class HuaweiU8185 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8185',
+        'code_name'             => 'U8185',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend Y100',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class Lge440 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E440',
+        'code_name'             => 'E440',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus L4 II',
         'has_qwerty_keyboard'    => true,

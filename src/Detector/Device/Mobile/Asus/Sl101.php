@@ -55,7 +55,7 @@ class Sl101 extends AbstractDevice implements DeviceHasWurflKeyInterface, Device
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SL101',
+        'code_name'             => 'SL101',
         'model_extra_info'       => null,
         'marketing_name'         => 'Eee Pad SL101 Slider',
         'has_qwerty_keyboard'    => true,

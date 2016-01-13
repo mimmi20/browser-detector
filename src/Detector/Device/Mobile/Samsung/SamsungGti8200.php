@@ -55,7 +55,7 @@ class SamsungGti8200 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I8200',
+        'code_name'             => 'GT-I8200',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-I8200',
         'has_qwerty_keyboard'    => true,

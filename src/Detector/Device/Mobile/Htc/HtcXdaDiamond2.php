@@ -51,7 +51,7 @@ class HtcXdaDiamond2 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Xda_Diamond_2',
+        'code_name'             => 'Xda_Diamond_2',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xda_Diamond_2',
         'has_qwerty_keyboard'    => true,

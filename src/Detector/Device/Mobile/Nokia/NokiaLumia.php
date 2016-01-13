@@ -51,7 +51,7 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Lumia',
+        'code_name'             => 'Lumia',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lumia',
         'has_qwerty_keyboard'    => true,

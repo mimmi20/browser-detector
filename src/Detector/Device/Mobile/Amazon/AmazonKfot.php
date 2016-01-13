@@ -53,7 +53,7 @@ class AmazonKfot extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KFOT',
+        'code_name'             => 'KFOT',
         'model_extra_info'       => 'Gen 2',
         'marketing_name'         => 'Kindle Fire 7',
         'has_qwerty_keyboard'    => true,

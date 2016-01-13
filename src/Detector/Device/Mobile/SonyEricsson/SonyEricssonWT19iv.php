@@ -51,7 +51,7 @@ class SonyEricssonWT19iv extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'model_name'             => 'WT19iv',
+        'code_name'             => 'WT19iv',
         'model_extra_info'       => null,
         'marketing_name'         => 'Live',
         'has_qwerty_keyboard'    => true,

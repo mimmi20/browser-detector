@@ -53,7 +53,7 @@ class Htc extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general HTC Device',
+        'code_name'             => 'general HTC Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general HTC Device',
         'has_qwerty_keyboard'    => true,

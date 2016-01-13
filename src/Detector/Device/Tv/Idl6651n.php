@@ -51,7 +51,7 @@ class Idl6651n extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'IDL-6651N',
+        'code_name'             => 'IDL-6651N',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

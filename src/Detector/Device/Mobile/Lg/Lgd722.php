@@ -55,7 +55,7 @@ class Lgd722 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'D722',
+        'code_name'             => 'D722',
         'model_extra_info'       => 'Taiwan',
         'marketing_name'         => 'G2',
         'has_qwerty_keyboard'    => true,

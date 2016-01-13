@@ -55,7 +55,7 @@ class HuaweiU8815 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8815',
+        'code_name'             => 'U8815',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascent G 300',
         'has_qwerty_keyboard'    => true,

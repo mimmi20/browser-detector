@@ -56,7 +56,7 @@ class Lgd802 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'D802',
+        'code_name'             => 'D802',
         'model_extra_info'       => null,
         'marketing_name'         => 'G2',
         'has_qwerty_keyboard'    => true,

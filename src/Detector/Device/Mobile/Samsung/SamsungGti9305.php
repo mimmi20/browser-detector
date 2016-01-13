@@ -56,7 +56,7 @@ class SamsungGti9305 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9305',
+        'code_name'             => 'GT-I9305',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S III LTE International',
         'has_qwerty_keyboard'    => true,

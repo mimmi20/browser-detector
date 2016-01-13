@@ -51,7 +51,7 @@ class YuandaoN90DualCore2 extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N90 DUAL CORE2',
+        'code_name'             => 'N90 DUAL CORE2',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

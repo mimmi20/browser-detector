@@ -51,7 +51,7 @@ class AlcatelOt997d extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-997D',
+        'code_name'             => 'OT-997D',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch 997D',
         'has_qwerty_keyboard'    => true,

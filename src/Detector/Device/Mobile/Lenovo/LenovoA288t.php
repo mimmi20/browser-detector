@@ -51,7 +51,7 @@ class LenovoA288t extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A288t',
+        'code_name'             => 'A288t',
         'model_extra_info'       => null,
         'marketing_name'         => 'A288t',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class Medion extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Medion Device',
+        'code_name'             => 'general Medion Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Medion Device',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungSphp100 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SPH-P100',
+        'code_name'             => 'SPH-P100',
         'model_extra_info'       => null,
         'marketing_name'         => 'SPH-P100',
         'has_qwerty_keyboard'    => false,

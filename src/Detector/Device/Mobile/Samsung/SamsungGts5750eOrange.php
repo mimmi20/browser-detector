@@ -51,7 +51,7 @@ class SamsungGts5750eOrange extends AbstractDevice implements DeviceHasSpecificP
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S5750E Orange',
+        'code_name'             => 'GT-S5750E Orange',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S5750E Orange',
         'has_qwerty_keyboard'    => false,

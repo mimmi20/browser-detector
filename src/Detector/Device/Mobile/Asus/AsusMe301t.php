@@ -56,7 +56,7 @@ class AsusMe301t extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ME301T',
+        'code_name'             => 'ME301T',
         'model_extra_info'       => null,
         'marketing_name'         => 'MeMO Pad Smart 10',
         'has_qwerty_keyboard'    => true,

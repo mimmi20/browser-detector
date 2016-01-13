@@ -51,7 +51,7 @@ class LoeweSl150 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SL150',
+        'code_name'             => 'SL150',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

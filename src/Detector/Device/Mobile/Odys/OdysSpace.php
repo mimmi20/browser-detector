@@ -55,7 +55,7 @@ class OdysSpace extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Space',
+        'code_name'             => 'Space',
         'model_extra_info'       => null,
         'marketing_name'         => 'Space',
         'has_qwerty_keyboard'    => true,

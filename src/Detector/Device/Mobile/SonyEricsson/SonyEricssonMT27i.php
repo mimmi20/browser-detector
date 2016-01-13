@@ -55,7 +55,7 @@ class SonyEricssonMT27i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MT27i',
+        'code_name'             => 'MT27i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Sola',
         'has_qwerty_keyboard'    => true,

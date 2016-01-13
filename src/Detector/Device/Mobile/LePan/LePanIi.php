@@ -51,7 +51,7 @@ class LePanIi extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LePan II',
+        'code_name'             => 'LePan II',
         'model_extra_info'       => null,
         'marketing_name'         => 'LePan II',
         'has_qwerty_keyboard'    => true,

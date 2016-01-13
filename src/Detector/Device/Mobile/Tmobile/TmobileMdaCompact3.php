@@ -51,7 +51,7 @@ class TmobileMdaCompact3 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MDA Compact III',
+        'code_name'             => 'MDA Compact III',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

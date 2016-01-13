@@ -51,7 +51,7 @@ class Nokia6220c extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => '6220 classic',
+        'code_name'             => '6220 classic',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

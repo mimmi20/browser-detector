@@ -51,7 +51,7 @@ class LgHb620t extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'HB620T',
+        'code_name'             => 'HB620T',
         'model_extra_info'       => null,
         'marketing_name'         => 'HB620T',
         'has_qwerty_keyboard'    => true,

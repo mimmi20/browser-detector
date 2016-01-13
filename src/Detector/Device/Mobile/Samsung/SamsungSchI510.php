@@ -51,7 +51,7 @@ class SamsungSchI510 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-I510',
+        'code_name'             => 'SCH-I510',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid Charge',
         'has_qwerty_keyboard'    => false,

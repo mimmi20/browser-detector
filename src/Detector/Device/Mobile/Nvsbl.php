@@ -53,7 +53,7 @@ class Nvsbl extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Nvsbl device',
+        'code_name'             => 'general Nvsbl device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Nvsbl device',
         'has_qwerty_keyboard'    => true,

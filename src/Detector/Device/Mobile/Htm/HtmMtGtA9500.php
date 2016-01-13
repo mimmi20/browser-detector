@@ -51,7 +51,7 @@ class HtmMtGtA9500 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-A9500',
+        'code_name'             => 'GT-A9500',
         'model_extra_info'       => 'GT-A9500',
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

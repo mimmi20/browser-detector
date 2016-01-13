@@ -51,7 +51,7 @@ class Lgv500 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'V500',
+        'code_name'             => 'V500',
         'model_extra_info'       => null,
         'marketing_name'         => 'G Pad 8.3',
         'has_qwerty_keyboard'    => true,

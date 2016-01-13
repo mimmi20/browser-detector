@@ -51,7 +51,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S120',
+        'code_name'             => 'S120',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid Metal',
         'has_qwerty_keyboard'    => true,

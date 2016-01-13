@@ -56,7 +56,7 @@ class SamsungGtn7100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-N7100',
+        'code_name'             => 'GT-N7100',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note II',
         'has_qwerty_keyboard'    => true,

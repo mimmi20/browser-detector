@@ -49,7 +49,7 @@ class SamsungSmG800h extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-G800H',
+        'code_name'             => 'SM-G800H',
         'model_extra_info'       => null,
         'marketing_name'         => 'SM-G800H',
         'has_qwerty_keyboard'    => true,

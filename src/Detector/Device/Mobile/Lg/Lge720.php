@@ -51,7 +51,7 @@ class Lge720 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E720',
+        'code_name'             => 'E720',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus Chic',
         'has_qwerty_keyboard'    => true,

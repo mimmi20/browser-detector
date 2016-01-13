@@ -51,7 +51,7 @@ class MotorolaDroidBionic4G extends AbstractDevice implements DeviceHasSpecificP
      */
     protected $properties = array(
         // device
-        'model_name'             => 'XT875',
+        'code_name'             => 'XT875',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid Bionic 4G LTE',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class SamsungGti7500Galaxy extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I7500',
+        'code_name'             => 'GT-I7500',
         'model_extra_info'       => 'Donut',
         'marketing_name'         => 'Galaxy',
         'has_qwerty_keyboard'    => true,

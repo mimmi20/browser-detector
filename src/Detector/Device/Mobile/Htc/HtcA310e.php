@@ -56,7 +56,7 @@ class HtcA310e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A310e',
+        'code_name'             => 'A310e',
         'model_extra_info'       => 'HTC Pico', // wurflkey: htc_a310e_ver1_subuauscore
         'marketing_name'         => 'Explorer', // wurflkey: htc_a310e_ver1_subuauscore
         'has_qwerty_keyboard'    => true,

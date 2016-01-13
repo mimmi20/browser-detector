@@ -51,7 +51,7 @@ class AlcatelOt991t extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-991T',
+        'code_name'             => 'OT-991T',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch 991T Play', // wurflkey: alcatel_ot991_ver1_subuad
         'has_qwerty_keyboard'    => true,

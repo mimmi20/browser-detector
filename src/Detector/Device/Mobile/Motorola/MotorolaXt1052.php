@@ -51,7 +51,7 @@ class MotorolaXt1052 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'XT1052',
+        'code_name'             => 'XT1052',
         'model_extra_info'       => 'For Europe',
         'marketing_name'         => 'XT1052',
         'has_qwerty_keyboard'    => true,

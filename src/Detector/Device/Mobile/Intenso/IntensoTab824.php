@@ -51,7 +51,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'INM8002KP',
+        'code_name'             => 'INM8002KP',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tab 824',
         'has_qwerty_keyboard'    => true,

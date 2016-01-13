@@ -51,7 +51,7 @@ class MotorolaXt702 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'XT702',
+        'code_name'             => 'XT702',
         'model_extra_info'       => null,
         'marketing_name'         => 'XT702',
         'has_qwerty_keyboard'    => true,

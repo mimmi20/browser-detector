@@ -55,7 +55,7 @@ class SonyEricssonU8i extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8i',
+        'code_name'             => 'U8i',
         'model_extra_info'       => null,
         'marketing_name'         => 'kanna',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class GeneralDesktop extends AbstractDevice implements DeviceHasChildrenInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Desktop',
+        'code_name'             => 'general Desktop',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Desktop',
         'has_qwerty_keyboard'    => null,

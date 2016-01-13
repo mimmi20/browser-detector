@@ -51,7 +51,7 @@ class HtcT3335 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'T3335',
+        'code_name'             => 'T3335',
         'model_extra_info'       => null,
         'marketing_name'         => 'Touch2',
         'has_qwerty_keyboard'    => true,

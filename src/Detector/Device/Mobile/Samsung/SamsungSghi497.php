@@ -51,7 +51,7 @@ class SamsungSghi497 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-I497',
+        'code_name'             => 'SGH-I497',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 2 10.1',
         'has_qwerty_keyboard'    => false,

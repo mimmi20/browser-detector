@@ -51,7 +51,7 @@ class LgBl40 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'BL40',
+        'code_name'             => 'BL40',
         'model_extra_info'       => null,
         'marketing_name'         => 'BL40',
         'has_qwerty_keyboard'    => true,

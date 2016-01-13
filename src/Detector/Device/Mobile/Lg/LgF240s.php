@@ -51,7 +51,7 @@ class LgF240s extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'F240S',
+        'code_name'             => 'F240S',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus G Pro',
         'has_qwerty_keyboard'    => true,

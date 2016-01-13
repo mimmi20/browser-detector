@@ -55,7 +55,7 @@ class AcerG100W extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'G100W',
+        'code_name'             => 'G100W',
         'model_extra_info'       => null,
         'marketing_name'         => 'G100W',
         'has_qwerty_keyboard'    => true,

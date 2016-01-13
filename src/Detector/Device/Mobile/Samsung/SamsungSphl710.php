@@ -51,7 +51,7 @@ class SamsungSphl710 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SPH-L710',
+        'code_name'             => 'SPH-L710',
         'model_extra_info'       => 'for Sprint',
         'marketing_name'         => 'Galaxy S III',
         'has_qwerty_keyboard'    => true,

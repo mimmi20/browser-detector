@@ -55,7 +55,7 @@ class HuaweiU8800 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8800',
+        'code_name'             => 'U8800',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ideos X5',
         'has_qwerty_keyboard'    => true,

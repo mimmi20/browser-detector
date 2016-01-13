@@ -51,7 +51,7 @@ class Slidepad extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Slidepad',
+        'code_name'             => 'Slidepad',
         'model_extra_info'       => null,
         'marketing_name'         => 'Slidepad',
         'has_qwerty_keyboard'    => true,

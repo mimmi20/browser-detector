@@ -51,7 +51,7 @@ class SamsungGtc3322 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-C3322',
+        'code_name'             => 'GT-C3322',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-C3322',
         'has_qwerty_keyboard'    => false,

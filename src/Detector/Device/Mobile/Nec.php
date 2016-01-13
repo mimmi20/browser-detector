@@ -51,7 +51,7 @@ class Nec extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Nec Device',
+        'code_name'             => 'general Nec Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Nec Device',
         'has_qwerty_keyboard'    => true,

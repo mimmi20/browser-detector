@@ -55,7 +55,7 @@ class MotorolaA953 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A953',
+        'code_name'             => 'A953',
         'model_extra_info'       => null,
         'marketing_name'         => 'MILESTONE 2',
         'has_qwerty_keyboard'    => true,

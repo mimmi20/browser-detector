@@ -55,7 +55,7 @@ class LenovoIdeaPadA1 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'IdeaPad A1',
+        'code_name'             => 'IdeaPad A1',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaPad A1 Tablet',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class SamsungSghT959 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-T959',
+        'code_name'             => 'SGH-T959',
         'model_extra_info'       => null,
         'marketing_name'         => 'Vibrant',
         'has_qwerty_keyboard'    => true,

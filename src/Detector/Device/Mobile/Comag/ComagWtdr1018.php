@@ -51,7 +51,7 @@ class ComagWtdr1018 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'WTDR1018',
+        'code_name'             => 'WTDR1018',
         'model_extra_info'       => null,
         'marketing_name'         => 'WTDR1018',
         'has_qwerty_keyboard'    => true,

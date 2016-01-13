@@ -55,7 +55,7 @@ class SamsungGts5230w extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT S5230W',
+        'code_name'             => 'GT S5230W',
         'model_extra_info'       => null,
         'marketing_name'         => 'Star',
         'has_qwerty_keyboard'    => false,

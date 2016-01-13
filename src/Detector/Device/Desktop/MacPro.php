@@ -49,7 +49,7 @@ class MacPro extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MacPro',
+        'code_name'             => 'MacPro',
         'model_extra_info'       => null,
         'marketing_name'         => 'MacPro',
         'has_qwerty_keyboard'    => true,

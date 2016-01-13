@@ -51,7 +51,7 @@ class ThlW8 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'W8',
+        'code_name'             => 'W8',
         'model_extra_info'       => null,
         'marketing_name'         => 'W8',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungSchI699 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-I699',
+        'code_name'             => 'SCH-I699',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Trend',
         'has_qwerty_keyboard'    => false,

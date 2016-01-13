@@ -51,7 +51,7 @@ class SamsungGte2550 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-E2550',
+        'code_name'             => 'GT-E2550',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-E2550',
         'has_qwerty_keyboard'    => false,

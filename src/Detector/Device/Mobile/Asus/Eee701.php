@@ -51,7 +51,7 @@ class Eee701 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'EEE 701',
+        'code_name'             => 'EEE 701',
         'model_extra_info'       => null,
         'marketing_name'         => 'EEE 701',
         'has_qwerty_keyboard'    => true,

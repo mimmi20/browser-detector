@@ -51,7 +51,7 @@ class SamsungGtc3510 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-C3510',
+        'code_name'             => 'GT-C3510',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-C3510',
         'has_qwerty_keyboard'    => false,

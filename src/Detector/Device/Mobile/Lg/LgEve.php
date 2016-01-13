@@ -51,7 +51,7 @@ class LgEve extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Eve',
+        'code_name'             => 'Eve',
         'model_extra_info'       => null,
         'marketing_name'         => 'Eve',
         'has_qwerty_keyboard'    => true,

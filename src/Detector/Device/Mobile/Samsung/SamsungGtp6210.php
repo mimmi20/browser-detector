@@ -55,7 +55,7 @@ class SamsungGtp6210 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-P6210',
+        'code_name'             => 'GT-P6210',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 7.0 Plus',
         'has_qwerty_keyboard'    => true,

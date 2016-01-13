@@ -66,7 +66,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Pre',
+        'code_name'             => 'Pre',
         'model_extra_info'       => null,
         'marketing_name'         => 'Pre',
         'has_qwerty_keyboard'    => true,
@@ -202,7 +202,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
             $this->setCapability('resolution_width', 480);
             $this->setCapability('resolution_height', 800);
 
-            $this->setCapability('model_name', 'Pre3');
+            $this->setCapability('code_name', 'Pre3');
             $wurflKey = 'hp_pre3_ver1';
             $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
             $this->setCapability('colors', 262144);

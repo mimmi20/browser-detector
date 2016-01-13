@@ -51,7 +51,7 @@ class HuaweiU8666 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8666',
+        'code_name'             => 'U8666',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend Y201 Pro',
         'has_qwerty_keyboard'    => true,

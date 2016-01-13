@@ -55,7 +55,7 @@ class Lgt500 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'T500',
+        'code_name'             => 'T500',
         'model_extra_info'       => null,
         'marketing_name'         => 'T500',
         'has_qwerty_keyboard'    => false,

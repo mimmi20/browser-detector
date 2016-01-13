@@ -51,7 +51,7 @@ class SamsungSmG350 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-G350',
+        'code_name'             => 'SM-G350',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Core Plus',
         'has_qwerty_keyboard'    => true,

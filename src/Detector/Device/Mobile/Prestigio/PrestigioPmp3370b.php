@@ -51,7 +51,7 @@ class PrestigioPmp3370b extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PMP3370B',
+        'code_name'             => 'PMP3370B',
         'model_extra_info'       => null,
         'marketing_name'         => 'MultiPad 7.0 Ultra',
         'has_qwerty_keyboard'    => true,

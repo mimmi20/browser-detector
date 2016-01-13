@@ -51,7 +51,7 @@ class HtcRadar4G extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Radar 4G',
+        'code_name'             => 'Radar 4G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Radar 4G',
         'has_qwerty_keyboard'    => true,

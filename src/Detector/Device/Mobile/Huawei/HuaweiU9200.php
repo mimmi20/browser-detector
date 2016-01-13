@@ -55,7 +55,7 @@ class HuaweiU9200 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U9200',
+        'code_name'             => 'U9200',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend P1',
         'has_qwerty_keyboard'    => true,

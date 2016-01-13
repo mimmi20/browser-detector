@@ -51,7 +51,7 @@ class LenovoS6000lfIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S6000L-F',
+        'code_name'             => 'S6000L-F',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaTab S6000-F Wi-Fi, 16GB',
         'has_qwerty_keyboard'    => true,

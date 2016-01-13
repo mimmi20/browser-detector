@@ -51,7 +51,7 @@ class SonyKdl32hx755 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KDL32HX755',
+        'code_name'             => 'KDL32HX755',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

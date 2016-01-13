@@ -51,7 +51,7 @@ class SamsungR631 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'R631',
+        'code_name'             => 'R631',
         'model_extra_info'       => null,
         'marketing_name'         => 'R631',
         'has_qwerty_keyboard'    => false,

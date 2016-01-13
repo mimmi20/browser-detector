@@ -51,7 +51,7 @@ class Nokia2730c extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => '2730 classic',
+        'code_name'             => '2730 classic',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

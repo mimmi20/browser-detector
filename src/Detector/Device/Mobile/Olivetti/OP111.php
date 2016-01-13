@@ -51,7 +51,7 @@ class OP111 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OP111',
+        'code_name'             => 'OP111',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

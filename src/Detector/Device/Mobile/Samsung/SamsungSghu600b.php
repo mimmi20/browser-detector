@@ -51,7 +51,7 @@ class SamsungSghu600b extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-U600B',
+        'code_name'             => 'SGH-U600B',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-U600B',
         'has_qwerty_keyboard'    => false,

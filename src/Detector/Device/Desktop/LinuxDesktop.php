@@ -49,7 +49,7 @@ class LinuxDesktop extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Linux Desktop',
+        'code_name'             => 'Linux Desktop',
         'model_extra_info'       => null,
         'marketing_name'         => 'Linux Desktop',
         'has_qwerty_keyboard'    => true,

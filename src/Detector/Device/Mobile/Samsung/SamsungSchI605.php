@@ -51,7 +51,7 @@ class SamsungSchI605 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-I605',
+        'code_name'             => 'SCH-I605',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note II',
         'has_qwerty_keyboard'    => false,

@@ -51,7 +51,7 @@ class SamsungGts5330 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S5330',
+        'code_name'             => 'GT-S5330',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S5330',
         'has_qwerty_keyboard'    => false,

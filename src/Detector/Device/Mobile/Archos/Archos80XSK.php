@@ -55,7 +55,7 @@ class Archos80XSK extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => '80XSK',
+        'code_name'             => '80XSK',
         'model_extra_info'       => null,
         'marketing_name'         => '80XSK',
         'has_qwerty_keyboard'    => true,

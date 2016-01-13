@@ -56,7 +56,7 @@ class NokiaLumia1320 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Lumia 1320',
+        'code_name'             => 'Lumia 1320',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lumia 1320',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class LgLs670 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LS670',
+        'code_name'             => 'LS670',
         'model_extra_info'       => null,
         'marketing_name'         => 'LS670',
         'has_qwerty_keyboard'    => true,

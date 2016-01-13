@@ -55,7 +55,7 @@ class TmobileG2Touch extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'G2 Touch',
+        'code_name'             => 'G2 Touch',
         'model_extra_info'       => null,
         'marketing_name'         => 'HTC Sappire',
         'has_qwerty_keyboard'    => false,

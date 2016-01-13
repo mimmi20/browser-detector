@@ -55,7 +55,7 @@ class HuaweiU8655 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8655',
+        'code_name'             => 'U8655',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend Y200',
         'has_qwerty_keyboard'    => true,

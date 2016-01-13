@@ -56,7 +56,7 @@ class SonyTabletSgpt12 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGPT12',
+        'code_name'             => 'SGPT12',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Tablet S',
         'has_qwerty_keyboard'    => true,

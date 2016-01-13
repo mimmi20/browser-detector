@@ -53,7 +53,7 @@ class Kobo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Kobo Device',
+        'code_name'             => 'general Kobo Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Kobo Device',
         'has_qwerty_keyboard'    => true,

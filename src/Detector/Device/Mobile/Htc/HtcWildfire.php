@@ -55,7 +55,7 @@ class HtcWildfire extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Wildfire',
+        'code_name'             => 'Wildfire',
         'model_extra_info'       => null,
         'marketing_name'         => 'Wildfire',
         'has_qwerty_keyboard'    => true,

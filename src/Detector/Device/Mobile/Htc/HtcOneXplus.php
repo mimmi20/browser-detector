@@ -51,7 +51,7 @@ class HtcOneXplus extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PM63100',
+        'code_name'             => 'PM63100',
         'model_extra_info'       => null,
         'marketing_name'         => 'One X+',
         'has_qwerty_keyboard'    => true,

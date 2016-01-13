@@ -55,7 +55,7 @@ class SamsungSmT535 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-T535',
+        'code_name'             => 'SM-T535',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 4 10.1 LTE',
         'has_qwerty_keyboard'    => true,

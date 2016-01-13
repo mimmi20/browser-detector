@@ -51,7 +51,7 @@ class Arnova7BG2DT extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => '7B G2 DT',
+        'code_name'             => '7B G2 DT',
         'model_extra_info'       => null,
         'marketing_name'         => '7B G2 DT',
         'has_qwerty_keyboard'    => true,

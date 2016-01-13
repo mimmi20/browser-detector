@@ -51,7 +51,7 @@ class BlackBerry8530 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'BlackBerry 8530',
+        'code_name'             => 'BlackBerry 8530',
         'model_extra_info'       => null,
         'marketing_name'         => 'BlackBerry 8530',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class MeizuM9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'M9',
+        'code_name'             => 'M9',
         'model_extra_info'       => null,
         'marketing_name'         => 'M9',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class LenovoS6000fIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'model_name'             => 'IdeaTab',
+        'code_name'             => 'IdeaTab',
         'model_extra_info'       => null,
         'marketing_name'         => 'S6000-F',
         'has_qwerty_keyboard'    => true,

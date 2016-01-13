@@ -57,7 +57,7 @@ class SamsungSmP605 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-P605',
+        'code_name'             => 'SM-P605',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 10.1 2014 Edition WI-FI + 4G LTE',
         'has_qwerty_keyboard'    => true,

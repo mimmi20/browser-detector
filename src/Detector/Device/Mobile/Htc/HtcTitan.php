@@ -55,7 +55,7 @@ class HtcTitan extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X310e',
+        'code_name'             => 'X310e',
         'model_extra_info'       => null,
         'marketing_name'         => 'Titan',
         'has_qwerty_keyboard'    => true,

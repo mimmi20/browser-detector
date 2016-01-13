@@ -51,7 +51,7 @@ class SamsungGts7390 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S7390',
+        'code_name'             => 'GT-S7390',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Trend Lite',
         'has_qwerty_keyboard'    => true,

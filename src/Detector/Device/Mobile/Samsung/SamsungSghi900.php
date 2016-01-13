@@ -53,7 +53,7 @@ class SamsungSghi900 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-I900',
+        'code_name'             => 'SGH-I900',
         'model_extra_info'       => null,
         'marketing_name'         => 'OMNIA',
         'has_qwerty_keyboard'    => false,

@@ -55,7 +55,7 @@ class HtcX515m extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X515m',
+        'code_name'             => 'X515m',
         'model_extra_info'       => 'aka Shooter',
         'marketing_name'         => 'EVO 3D',
         'has_qwerty_keyboard'    => true,

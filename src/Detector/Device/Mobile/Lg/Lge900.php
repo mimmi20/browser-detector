@@ -55,7 +55,7 @@ class Lge900 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E900',
+        'code_name'             => 'E900',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus 7',
         'has_qwerty_keyboard'    => true,

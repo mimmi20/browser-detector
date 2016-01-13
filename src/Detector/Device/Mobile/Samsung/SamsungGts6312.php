@@ -51,7 +51,7 @@ class SamsungGts6312 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S6312',
+        'code_name'             => 'GT-S6312',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Young DUOS',
         'has_qwerty_keyboard'    => true,

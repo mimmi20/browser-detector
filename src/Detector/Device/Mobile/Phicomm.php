@@ -53,7 +53,7 @@ class Phicomm extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Phicomm Device',
+        'code_name'             => 'general Phicomm Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Phicomm Device',
         'has_qwerty_keyboard'    => true,

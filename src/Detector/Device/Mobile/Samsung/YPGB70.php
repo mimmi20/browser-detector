@@ -55,7 +55,7 @@ class YPGB70 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'YP-GB70',
+        'code_name'             => 'YP-GB70',
         'model_extra_info'       => null,
         'marketing_name'         => 'WiFi 5.0',
         'has_qwerty_keyboard'    => true,

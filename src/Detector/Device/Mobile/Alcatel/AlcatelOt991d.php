@@ -55,7 +55,7 @@ class AlcatelOt991d extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-991D',
+        'code_name'             => 'OT-991D',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch 991 Play', // wurflkey: alcatel_ot991_ver1_subuad
         'has_qwerty_keyboard'    => true,

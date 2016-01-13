@@ -55,7 +55,7 @@ class HuaweiG5100100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'G510-0100',
+        'code_name'             => 'G510-0100',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend G510',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class ZteRacerIi extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Racer II',
+        'code_name'             => 'Racer II',
         'model_extra_info'       => null,
         'marketing_name'         => 'Racer II',
         'has_qwerty_keyboard'    => true,

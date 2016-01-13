@@ -51,7 +51,7 @@ class SamsungI7110 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'I7110',
+        'code_name'             => 'I7110',
         'model_extra_info'       => null,
         'marketing_name'         => 'I7110',
         'has_qwerty_keyboard'    => false,

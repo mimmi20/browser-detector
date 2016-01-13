@@ -49,7 +49,7 @@ class SamsungSmG900i extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-G900I',
+        'code_name'             => 'SM-G900I',
         'model_extra_info'       => null,
         'marketing_name'         => 'SM-G900I',
         'has_qwerty_keyboard'    => true,

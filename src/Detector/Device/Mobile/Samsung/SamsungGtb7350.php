@@ -51,7 +51,7 @@ class SamsungGtb7350 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-B7350',
+        'code_name'             => 'GT-B7350',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-B7350',
         'has_qwerty_keyboard'    => false,

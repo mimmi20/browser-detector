@@ -51,7 +51,7 @@ class SonyEricssonJ108i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'J108i',
+        'code_name'             => 'J108i',
         'model_extra_info'       => null,
         'marketing_name'         => 'J108i',
         'has_qwerty_keyboard'    => true,

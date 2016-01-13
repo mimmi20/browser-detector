@@ -51,7 +51,7 @@ class ToshibaFolio100 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Folio 100',
+        'code_name'             => 'Folio 100',
         'model_extra_info'       => null,
         'marketing_name'         => 'Folio 100',
         'has_qwerty_keyboard'    => true,

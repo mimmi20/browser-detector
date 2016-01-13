@@ -55,7 +55,7 @@ class HuaweiIdeos extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'BM-SWU300',
+        'code_name'             => 'BM-SWU300',
         'model_extra_info'       => null,
         'marketing_name'         => 'IDEOS',
         'has_qwerty_keyboard'    => true,

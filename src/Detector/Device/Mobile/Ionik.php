@@ -51,7 +51,7 @@ class Ionik extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general I-ONIK Device',
+        'code_name'             => 'general I-ONIK Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general I-ONIK Device',
         'has_qwerty_keyboard'    => true,

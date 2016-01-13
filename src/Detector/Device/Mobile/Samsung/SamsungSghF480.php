@@ -51,7 +51,7 @@ class SamsungSghF480 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-F480',
+        'code_name'             => 'SGH-F480',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-F480',
         'has_qwerty_keyboard'    => false,

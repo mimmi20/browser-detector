@@ -51,7 +51,7 @@ class HpSlate10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Slate 10',
+        'code_name'             => 'Slate 10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Slate 10',
         'has_qwerty_keyboard'    => true,

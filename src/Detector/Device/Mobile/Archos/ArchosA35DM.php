@@ -51,7 +51,7 @@ class ArchosA35DM extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A35DM',
+        'code_name'             => 'A35DM',
         'model_extra_info'       => null,
         'marketing_name'         => 'A35DM',
         'has_qwerty_keyboard'    => true,

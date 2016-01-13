@@ -55,7 +55,7 @@ class Nokia201 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Asha 201',
+        'code_name'             => 'Asha 201',
         'model_extra_info'       => null,
         'marketing_name'         => 'Asha 201',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class MicrosoftXbox extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Xbox 360',
+        'code_name'             => 'Xbox 360',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xbox 360',
         'has_qwerty_keyboard'    => true,

@@ -56,7 +56,7 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'C5303',
+        'code_name'             => 'C5303',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia SP',
         'has_qwerty_keyboard'    => true,

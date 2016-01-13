@@ -49,7 +49,7 @@ class AmazonKfjwi extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Kfjwi',
+        'code_name'             => 'Kfjwi',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kindle Fire HD 8.9',
         'has_qwerty_keyboard'    => true,

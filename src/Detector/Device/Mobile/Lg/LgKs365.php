@@ -51,7 +51,7 @@ class LgKs365 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KS365',
+        'code_name'             => 'KS365',
         'model_extra_info'       => null,
         'marketing_name'         => 'KS365',
         'has_qwerty_keyboard'    => true,

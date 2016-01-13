@@ -54,7 +54,7 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'iPhone',
+        'code_name'             => 'iPhone',
         'model_extra_info'       => null,
         'marketing_name'         => 'iPhone',
         'has_qwerty_keyboard'    => true,

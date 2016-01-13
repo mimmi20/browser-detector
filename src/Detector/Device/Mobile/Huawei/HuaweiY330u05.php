@@ -49,7 +49,7 @@ class HuaweiY330u05 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Y330-U05',
+        'code_name'             => 'Y330-U05',
         'model_extra_info'       => null,
         'marketing_name'         => 'Y330-U05',
         'has_qwerty_keyboard'    => true,

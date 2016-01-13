@@ -51,7 +51,7 @@ class CatStarGate extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'StarGate',
+        'code_name'             => 'StarGate',
         'model_extra_info'       => null,
         'marketing_name'         => 'StarGate',
         'has_qwerty_keyboard'    => true,

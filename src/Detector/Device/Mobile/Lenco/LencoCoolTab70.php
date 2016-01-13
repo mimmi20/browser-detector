@@ -51,7 +51,7 @@ class LencoCoolTab70 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'CoolTab-70',
+        'code_name'             => 'CoolTab-70',
         'model_extra_info'       => null,
         'marketing_name'         => 'CoolTab-70',
         'has_qwerty_keyboard'    => true,

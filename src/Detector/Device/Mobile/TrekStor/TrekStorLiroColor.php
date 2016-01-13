@@ -51,7 +51,7 @@ class TrekStorLiroColor extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Liro Color',
+        'code_name'             => 'Liro Color',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liro Color',
         'has_qwerty_keyboard'    => true,

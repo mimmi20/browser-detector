@@ -51,7 +51,7 @@ class SamsungGti9200 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9200',
+        'code_name'             => 'GT-I9200',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Mega',
         'has_qwerty_keyboard'    => true,

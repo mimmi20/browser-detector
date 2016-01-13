@@ -53,7 +53,7 @@ class Lenco extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Lenco Device',
+        'code_name'             => 'general Lenco Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Lenco Device',
         'has_qwerty_keyboard'    => true,

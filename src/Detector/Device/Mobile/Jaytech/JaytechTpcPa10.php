@@ -51,7 +51,7 @@ class JaytechTpcPa10 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PA10.1M',
+        'code_name'             => 'PA10.1M',
         'model_extra_info'       => null,
         'marketing_name'         => 'PA10.1M',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class AlcatelOt710D extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-710D',
+        'code_name'             => 'OT-710D',
         'model_extra_info'       => null,
         'marketing_name'         => 'OT-710D',
         'has_qwerty_keyboard'    => true,

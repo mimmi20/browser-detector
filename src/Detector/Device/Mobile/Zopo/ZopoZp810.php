@@ -51,7 +51,7 @@ class ZopoZp810 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ZP810',
+        'code_name'             => 'ZP810',
         'model_extra_info'       => null,
         'marketing_name'         => 'ZP800H LIBERO HD',
         'has_qwerty_keyboard'    => true,

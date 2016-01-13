@@ -51,7 +51,7 @@ class TriQMt0812e extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MT0812E',
+        'code_name'             => 'MT0812E',
         'model_extra_info'       => null,
         'marketing_name'         => 'MT0812E',
         'has_qwerty_keyboard'    => true,

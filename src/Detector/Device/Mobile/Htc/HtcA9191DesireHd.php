@@ -56,7 +56,7 @@ class HtcA9191DesireHd extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A9191',
+        'code_name'             => 'A9191',
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire HD',
         'has_qwerty_keyboard'    => true,

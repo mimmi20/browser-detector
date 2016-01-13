@@ -55,7 +55,7 @@ class NokiaN97 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N97',
+        'code_name'             => 'N97',
         'model_extra_info'       => null,
         'marketing_name'         => 'N97',
         'has_qwerty_keyboard'    => true,

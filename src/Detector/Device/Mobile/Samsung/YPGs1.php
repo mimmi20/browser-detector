@@ -55,7 +55,7 @@ class YPGs1 extends AbstractDevice implements DeviceHasWurflKeyInterface, Device
      */
     protected $properties = array(
         // device
-        'model_name'             => 'YP-GS1',
+        'code_name'             => 'YP-GS1',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Player 3.6',
         'has_qwerty_keyboard'    => true,

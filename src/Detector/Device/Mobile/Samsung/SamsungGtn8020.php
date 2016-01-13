@@ -56,7 +56,7 @@ class SamsungGtn8020 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-N8020',
+        'code_name'             => 'GT-N8020',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 10.1 LTE',
         'has_qwerty_keyboard'    => true,

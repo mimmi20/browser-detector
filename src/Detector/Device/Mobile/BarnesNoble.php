@@ -53,7 +53,7 @@ class BarnesNoble extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Barnes & Noble Device',
+        'code_name'             => 'general Barnes & Noble Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Barnes & Noble Device',
         'has_qwerty_keyboard'    => true,

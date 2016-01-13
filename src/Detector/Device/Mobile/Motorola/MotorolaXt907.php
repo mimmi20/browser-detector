@@ -57,7 +57,7 @@ class MotorolaXt907 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'XT907',
+        'code_name'             => 'XT907',
         'model_extra_info'       => null,
         'marketing_name'         => 'DROID RAZR M 4G LTE',
         'has_qwerty_keyboard'    => true,

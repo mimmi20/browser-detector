@@ -49,7 +49,7 @@ class LenovoS660 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S660',
+        'code_name'             => 'S660',
         'model_extra_info'       => null,
         'marketing_name'         => 'S660',
         'has_qwerty_keyboard'    => true,

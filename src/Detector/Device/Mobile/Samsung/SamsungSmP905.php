@@ -51,7 +51,7 @@ class SamsungSmP905 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-P905',
+        'code_name'             => 'SM-P905',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note Pro 12.2 LTE',
         'has_qwerty_keyboard'    => true,

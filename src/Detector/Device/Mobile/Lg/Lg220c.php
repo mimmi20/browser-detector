@@ -51,7 +51,7 @@ class Lg220c extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => '220C',
+        'code_name'             => '220C',
         'model_extra_info'       => null,
         'marketing_name'         => '220C',
         'has_qwerty_keyboard'    => true,

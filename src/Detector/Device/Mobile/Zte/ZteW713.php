@@ -51,7 +51,7 @@ class ZteW713 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'W713',
+        'code_name'             => 'W713',
         'model_extra_info'       => null,
         'marketing_name'         => 'W713',
         'has_qwerty_keyboard'    => true,

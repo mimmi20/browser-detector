@@ -56,7 +56,7 @@ class LgP880 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'P880',
+        'code_name'             => 'P880',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus 4X HD',
         'has_qwerty_keyboard'    => true,

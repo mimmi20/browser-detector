@@ -51,7 +51,7 @@ class SamsungSghi747m extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-I747M',
+        'code_name'             => 'SGH-I747M',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S III',
         'has_qwerty_keyboard'    => true,

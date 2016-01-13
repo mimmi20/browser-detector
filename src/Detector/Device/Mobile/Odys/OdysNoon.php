@@ -51,7 +51,7 @@ class OdysNoon extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Noon',
+        'code_name'             => 'Noon',
         'model_extra_info'       => null,
         'marketing_name'         => 'Noon',
         'has_qwerty_keyboard'    => true,

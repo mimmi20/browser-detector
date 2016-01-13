@@ -55,7 +55,7 @@ class HtcDesireSv extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Desire SV',
+        'code_name'             => 'Desire SV',
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire SV',
         'has_qwerty_keyboard'    => true,

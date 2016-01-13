@@ -51,7 +51,7 @@ class Micromax extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Micromax Device',
+        'code_name'             => 'general Micromax Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Micromax Device',
         'has_qwerty_keyboard'    => true,

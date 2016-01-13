@@ -51,7 +51,7 @@ class AmoiN820 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N820',
+        'code_name'             => 'N820',
         'model_extra_info'       => null,
         'marketing_name'         => 'N820',
         'has_qwerty_keyboard'    => true,

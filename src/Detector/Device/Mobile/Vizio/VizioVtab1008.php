@@ -51,7 +51,7 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'VTAB1008',
+        'code_name'             => 'VTAB1008',
         'model_extra_info'       => null,
         'marketing_name'         => 'VTAB1008',
         'has_qwerty_keyboard'    => true,

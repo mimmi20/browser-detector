@@ -51,7 +51,7 @@ class IonikTp10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'TP10.1-1500DC',
+        'code_name'             => 'TP10.1-1500DC',
         'model_extra_info'       => null,
         'marketing_name'         => 'TP10.1-1500DC',
         'has_qwerty_keyboard'    => true,

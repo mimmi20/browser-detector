@@ -51,7 +51,7 @@ class AcerS500 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S500',
+        'code_name'             => 'S500',
         'model_extra_info'       => null,
         'marketing_name'         => 'S500',
         'has_qwerty_keyboard'    => true,

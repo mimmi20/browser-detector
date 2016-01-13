@@ -595,7 +595,7 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
      */
     public function getDeviceName()
     {
-        return $this->device->getCapability('model_name');
+        return $this->device->getCapability('code_name');
     }
 
     /**

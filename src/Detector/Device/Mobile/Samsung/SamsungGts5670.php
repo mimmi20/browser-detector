@@ -55,7 +55,7 @@ class SamsungGts5670 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S5670',
+        'code_name'             => 'GT-S5670',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Fit',
         'has_qwerty_keyboard'    => true,

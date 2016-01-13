@@ -49,7 +49,7 @@ class AmazonKfaswi extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KFASWI',
+        'code_name'             => 'KFASWI',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kindle Fire HD 7',
         'has_qwerty_keyboard'    => true,

@@ -52,7 +52,7 @@ class WindowsDesktop extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Windows Desktop',
+        'code_name'             => 'Windows Desktop',
         'model_extra_info'       => null,
         'marketing_name'         => 'Windows Desktop',
         'has_qwerty_keyboard'    => true,

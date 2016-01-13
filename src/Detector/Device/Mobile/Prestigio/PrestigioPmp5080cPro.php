@@ -51,7 +51,7 @@ class PrestigioPmp5080cPro extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PMP5080CPRO',
+        'code_name'             => 'PMP5080CPRO',
         'model_extra_info'       => null,
         'marketing_name'         => 'MultiPad 5080 Pro',
         'has_qwerty_keyboard'    => true,

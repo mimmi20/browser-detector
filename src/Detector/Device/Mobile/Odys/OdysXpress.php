@@ -51,7 +51,7 @@ class OdysXpress extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Xpress',
+        'code_name'             => 'Xpress',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

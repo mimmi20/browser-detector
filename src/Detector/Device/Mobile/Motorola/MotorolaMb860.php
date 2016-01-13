@@ -55,7 +55,7 @@ class MotorolaMb860 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MB860',
+        'code_name'             => 'MB860',
         'model_extra_info'       => null,
         'marketing_name'         => 'Atrix',
         'has_qwerty_keyboard'    => true,

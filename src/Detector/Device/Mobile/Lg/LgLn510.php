@@ -51,7 +51,7 @@ class LgLn510 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LN510',
+        'code_name'             => 'LN510',
         'model_extra_info'       => null,
         'marketing_name'         => 'LN510',
         'has_qwerty_keyboard'    => true,

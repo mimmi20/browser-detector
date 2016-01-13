@@ -49,7 +49,7 @@ class HtcDesire816 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Desire 816',
+        'code_name'             => 'Desire 816',
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire 816',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class MicromaxA114 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A114',
+        'code_name'             => 'A114',
         'model_extra_info'       => null,
         'marketing_name'         => 'Canvas 2.2',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class TrekStorSt80208 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ST80208',
+        'code_name'             => 'ST80208',
         'model_extra_info'       => null,
         'marketing_name'         => 'ST80208',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungSphIp830w extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SPH-ip830w',
+        'code_name'             => 'SPH-ip830w',
         'model_extra_info'       => null,
         'marketing_name'         => 'SPH-ip830w',
         'has_qwerty_keyboard'    => false,

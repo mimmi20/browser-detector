@@ -55,7 +55,7 @@ class SamsungSmT805 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-T805',
+        'code_name'             => 'SM-T805',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab S 10.5 LTE',
         'has_qwerty_keyboard'    => true,

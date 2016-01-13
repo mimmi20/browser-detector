@@ -55,7 +55,7 @@ class HtcOneV extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'model_name'             => 'One V',
+        'code_name'             => 'One V',
         'model_extra_info'       => null,
         'marketing_name'         => 'One V',
         'has_qwerty_keyboard'    => true,

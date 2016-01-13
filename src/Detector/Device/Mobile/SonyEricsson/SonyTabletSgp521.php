@@ -55,7 +55,7 @@ class SonyTabletSgp521 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGP521',
+        'code_name'             => 'SGP521',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGP521',
         'has_qwerty_keyboard'    => true,

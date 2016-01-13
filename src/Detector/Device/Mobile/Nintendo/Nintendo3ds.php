@@ -51,7 +51,7 @@ class Nintendo3ds extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => '3DS',
+        'code_name'             => '3DS',
         'model_extra_info'       => null,
         'marketing_name'         => '3DS',
         'has_qwerty_keyboard'    => true,

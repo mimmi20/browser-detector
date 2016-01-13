@@ -51,7 +51,7 @@ class NokiaX200 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X2-00',
+        'code_name'             => 'X2-00',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

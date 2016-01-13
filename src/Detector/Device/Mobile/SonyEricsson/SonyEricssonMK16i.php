@@ -55,7 +55,7 @@ class SonyEricssonMK16i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MK16i',
+        'code_name'             => 'MK16i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Pro',
         'has_qwerty_keyboard'    => true,

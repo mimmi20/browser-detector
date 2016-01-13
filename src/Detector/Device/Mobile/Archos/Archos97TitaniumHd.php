@@ -51,7 +51,7 @@ class Archos97TitaniumHd extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'model_name'             => '97 TITANIUM HD',
+        'code_name'             => '97 TITANIUM HD',
         'model_extra_info'       => null,
         'marketing_name'         => '97 TITANIUM HD',
         'has_qwerty_keyboard'    => true,

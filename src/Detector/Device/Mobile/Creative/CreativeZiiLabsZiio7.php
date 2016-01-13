@@ -55,7 +55,7 @@ class CreativeZiiLabsZiio7 extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ZiiO7',
+        'code_name'             => 'ZiiO7',
         'model_extra_info'       => null,
         'marketing_name'         => 'ZiiO7',
         'has_qwerty_keyboard'    => true,

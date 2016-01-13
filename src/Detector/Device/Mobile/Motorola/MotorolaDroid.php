@@ -51,7 +51,7 @@ class MotorolaDroid extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Droid',
+        'code_name'             => 'Droid',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid',
         'has_qwerty_keyboard'    => true,

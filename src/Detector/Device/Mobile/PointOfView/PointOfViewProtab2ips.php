@@ -55,7 +55,7 @@ class PointOfViewProtab2ips extends AbstractDevice implements DeviceHasWurflKeyI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Protab 2 IPS',
+        'code_name'             => 'Protab 2 IPS',
         'model_extra_info'       => null,
         'marketing_name'         => 'Protab 2 IPS',
         'has_qwerty_keyboard'    => true,

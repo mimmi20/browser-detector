@@ -55,7 +55,7 @@ class NextbookM803hc extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'M803HC',
+        'code_name'             => 'M803HC',
         'model_extra_info'       => null,
         'marketing_name'         => 'Premium8',
         'has_qwerty_keyboard'    => true,

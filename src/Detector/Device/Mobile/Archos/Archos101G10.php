@@ -51,7 +51,7 @@ class Archos101G10 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => '101G10',
+        'code_name'             => '101G10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Gen10 101 XS',
         'has_qwerty_keyboard'    => true,

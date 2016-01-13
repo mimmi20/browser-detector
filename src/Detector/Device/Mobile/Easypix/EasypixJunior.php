@@ -51,7 +51,7 @@ class EasypixJunior extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Junior 4.0',
+        'code_name'             => 'Junior 4.0',
         'model_extra_info'       => null,
         'marketing_name'         => 'Junior 4.0', // wurflkey: Easypix_touch_ver1
         'has_qwerty_keyboard'    => true,

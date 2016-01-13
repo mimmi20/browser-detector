@@ -55,7 +55,7 @@ class CatNova8 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Cat Nova 8',
+        'code_name'             => 'Cat Nova 8',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tablet PC',
         'has_qwerty_keyboard'    => true,

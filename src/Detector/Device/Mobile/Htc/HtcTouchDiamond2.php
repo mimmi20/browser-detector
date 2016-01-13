@@ -49,7 +49,7 @@ class HtcTouchDiamond2 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Touch Diamond 2',
+        'code_name'             => 'Touch Diamond 2',
         'model_extra_info'       => null,
         'marketing_name'         => 'Touch Diamond 2',
         'has_qwerty_keyboard'    => false,

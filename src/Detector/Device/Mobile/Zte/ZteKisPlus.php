@@ -51,7 +51,7 @@ class ZteKisPlus extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'V788D',
+        'code_name'             => 'V788D',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kis Plus',
         'has_qwerty_keyboard'    => true,

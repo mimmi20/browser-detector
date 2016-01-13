@@ -51,7 +51,7 @@ class Zoom2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Zoom2',
+        'code_name'             => 'Zoom2',
         'model_extra_info'       => null,
         'marketing_name'         => 'Zoom2',
         'has_qwerty_keyboard'    => true,

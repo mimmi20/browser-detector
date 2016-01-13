@@ -51,7 +51,7 @@ class Tmobile extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general T-Mobile Device',
+        'code_name'             => 'general T-Mobile Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general T-Mobile Device',
         'has_qwerty_keyboard'    => true,

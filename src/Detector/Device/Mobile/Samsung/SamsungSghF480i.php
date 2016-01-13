@@ -55,7 +55,7 @@ class SamsungSghF480i extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-F480I',
+        'code_name'             => 'SGH-F480I',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-F480I',
         'has_qwerty_keyboard'    => false,

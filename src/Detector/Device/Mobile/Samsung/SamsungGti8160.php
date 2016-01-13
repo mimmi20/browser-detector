@@ -55,7 +55,7 @@ class SamsungGti8160 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I8160',
+        'code_name'             => 'GT-I8160',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Ace 2',
         'has_qwerty_keyboard'    => true,

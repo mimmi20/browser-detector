@@ -55,7 +55,7 @@ class SamsungGalaxyNexusS extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Nexus S',
+        'code_name'             => 'Nexus S',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nexus S',
         'has_qwerty_keyboard'    => true,

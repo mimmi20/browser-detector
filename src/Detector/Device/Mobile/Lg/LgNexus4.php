@@ -56,7 +56,7 @@ class LgNexus4 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Nexus 4',
+        'code_name'             => 'Nexus 4',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nexus 4',
         'has_qwerty_keyboard'    => true,

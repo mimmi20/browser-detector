@@ -51,7 +51,7 @@ class BnNookhd extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Nook HD+',
+        'code_name'             => 'Nook HD+',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nook HD+',
         'has_qwerty_keyboard'    => true,

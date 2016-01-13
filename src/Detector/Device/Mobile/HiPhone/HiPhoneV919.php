@@ -51,7 +51,7 @@ class HiPhoneV919 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'V919',
+        'code_name'             => 'V919',
         'model_extra_info'       => null,
         'marketing_name'         => 'V919',
         'has_qwerty_keyboard'    => true,

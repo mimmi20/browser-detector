@@ -56,7 +56,7 @@ class SamsungSmG900F extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-G900F',
+        'code_name'             => 'SM-G900F',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S5 LTE',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class PlayStationPortable extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PlayStation Portable',
+        'code_name'             => 'PlayStation Portable',
         'model_extra_info'       => null,
         'marketing_name'         => 'PSP',
         'has_qwerty_keyboard'    => false,

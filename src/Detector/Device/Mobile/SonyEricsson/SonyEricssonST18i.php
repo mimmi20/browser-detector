@@ -56,7 +56,7 @@ class SonyEricssonST18i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ST18i',
+        'code_name'             => 'ST18i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Urushi',
         'has_qwerty_keyboard'    => true,

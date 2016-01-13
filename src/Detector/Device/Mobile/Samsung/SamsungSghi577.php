@@ -51,7 +51,7 @@ class SamsungSghi577 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-I577',
+        'code_name'             => 'SGH-I577',
         'model_extra_info'       => null,
         'marketing_name'         => 'Exhilarate',
         'has_qwerty_keyboard'    => false,

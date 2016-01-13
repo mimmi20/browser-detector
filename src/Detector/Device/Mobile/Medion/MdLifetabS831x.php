@@ -49,7 +49,7 @@ class MdLifetabS831x extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Lifetab S831X',
+        'code_name'             => 'Lifetab S831X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lifetab S831X',
         'has_qwerty_keyboard'    => true,

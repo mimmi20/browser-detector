@@ -49,7 +49,7 @@ class SamsungSmT705 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-T705',
+        'code_name'             => 'SM-T705',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab S 8.4 LTE',
         'has_qwerty_keyboard'    => true,

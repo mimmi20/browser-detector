@@ -51,7 +51,7 @@ class TmobilePulse extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Pulse',
+        'code_name'             => 'Pulse',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

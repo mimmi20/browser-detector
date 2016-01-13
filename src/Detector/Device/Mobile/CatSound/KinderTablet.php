@@ -51,7 +51,7 @@ class KinderTablet extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Kinder-Tablet',
+        'code_name'             => 'Kinder-Tablet',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tablet PC Junior+',
         'has_qwerty_keyboard'    => true,

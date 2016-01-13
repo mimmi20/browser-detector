@@ -56,7 +56,7 @@ class SamsungGti8190 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I8190',
+        'code_name'             => 'GT-I8190',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S III Mini',
         'has_qwerty_keyboard'    => true,

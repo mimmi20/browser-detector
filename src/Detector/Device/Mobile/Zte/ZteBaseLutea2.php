@@ -55,7 +55,7 @@ class ZteBaseLutea2 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Lutea 2',
+        'code_name'             => 'Lutea 2',
         'model_extra_info'       => 'for BASE ', // wurflkey: zte_skate_ver1_subuabase
         'marketing_name'         => 'Lutea 2',
         'has_qwerty_keyboard'    => true,

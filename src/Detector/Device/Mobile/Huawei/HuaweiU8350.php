@@ -55,7 +55,7 @@ class HuaweiU8350 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8350',
+        'code_name'             => 'U8350',
         'model_extra_info'       => null,
         'marketing_name'         => 'Boulder', // wurflkey: huawei_u8350_ver1
         'has_qwerty_keyboard'    => true,

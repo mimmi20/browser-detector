@@ -51,7 +51,7 @@ class SamsungSchU485 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-U485',
+        'code_name'             => 'SCH-U485',
         'model_extra_info'       => null,
         'marketing_name'         => 'Convoy 2',
         'has_qwerty_keyboard'    => false,

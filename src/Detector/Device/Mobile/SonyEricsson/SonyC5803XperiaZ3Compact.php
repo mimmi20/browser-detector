@@ -51,7 +51,7 @@ class SonyC5803XperiaZ3Compact extends AbstractDevice implements DeviceHasSpecif
      */
     protected $properties = array(
         // device
-        'model_name'             => 'D5803',
+        'code_name'             => 'D5803',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Z3 Compact',
         'has_qwerty_keyboard'    => true,

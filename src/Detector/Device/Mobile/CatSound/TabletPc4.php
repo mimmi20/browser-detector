@@ -51,7 +51,7 @@ class TabletPc4 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Tablet PC 4',
+        'code_name'             => 'Tablet PC 4',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tablet PC 4',
         'has_qwerty_keyboard'    => true,

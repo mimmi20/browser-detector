@@ -55,7 +55,7 @@ class HtcFlyer extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Flyer',
+        'code_name'             => 'Flyer',
         'model_extra_info'       => null,
         'marketing_name'         => 'Flyer',
         'has_qwerty_keyboard'    => true,

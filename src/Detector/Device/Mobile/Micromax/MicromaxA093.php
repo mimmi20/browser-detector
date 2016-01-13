@@ -49,7 +49,7 @@ class MicromaxA093 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A093',
+        'code_name'             => 'A093',
         'model_extra_info'       => null,
         'marketing_name'         => 'A093',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class MdLifetabS1033x extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Lifetab S1033X',
+        'code_name'             => 'Lifetab S1033X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lifetab S1033X',
         'has_qwerty_keyboard'    => true,

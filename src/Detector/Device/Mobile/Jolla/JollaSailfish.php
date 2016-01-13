@@ -49,7 +49,7 @@ class JollaSailfish extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Sailfish',
+        'code_name'             => 'Sailfish',
         'model_extra_info'       => null,
         'marketing_name'         => 'Sailfish',
         'has_qwerty_keyboard'    => true,

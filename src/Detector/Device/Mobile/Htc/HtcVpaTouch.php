@@ -51,7 +51,7 @@ class HtcVpaTouch extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'VPA Touch',
+        'code_name'             => 'VPA Touch',
         'model_extra_info'       => null,
         'marketing_name'         => 'VPA Touch',
         'has_qwerty_keyboard'    => true,

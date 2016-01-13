@@ -56,7 +56,7 @@ class AcerIconiaA3A10 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A3-A10',
+        'code_name'             => 'A3-A10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Iconia Tab A3',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class Jolla extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Jolla Device',
+        'code_name'             => 'general Jolla Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Jolla Device',
         'has_qwerty_keyboard'    => true,

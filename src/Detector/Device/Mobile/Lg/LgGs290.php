@@ -51,7 +51,7 @@ class LgGs290 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GS290',
+        'code_name'             => 'GS290',
         'model_extra_info'       => null,
         'marketing_name'         => 'GS290',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class Lge739 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E739',
+        'code_name'             => 'E739',
         'model_extra_info'       => null,
         'marketing_name'         => 'E739',
         'has_qwerty_keyboard'    => true,

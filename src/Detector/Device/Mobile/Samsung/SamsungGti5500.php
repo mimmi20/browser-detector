@@ -55,7 +55,7 @@ class SamsungGti5500 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I5500',
+        'code_name'             => 'GT-I5500',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy 5',
         'has_qwerty_keyboard'    => false,

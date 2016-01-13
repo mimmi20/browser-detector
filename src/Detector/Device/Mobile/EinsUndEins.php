@@ -53,7 +53,7 @@ class EinsUndEins extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general EinsUndEins device',
+        'code_name'             => 'general EinsUndEins device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general EinsUndEins device',
         'has_qwerty_keyboard'    => true,

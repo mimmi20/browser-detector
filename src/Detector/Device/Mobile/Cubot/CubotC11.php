@@ -49,7 +49,7 @@ class CubotC11 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'C11',
+        'code_name'             => 'C11',
         'model_extra_info'       => null,
         'marketing_name'         => 'C11',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungSshR730 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-R730',
+        'code_name'             => 'SCH-R730',
         'model_extra_info'       => null,
         'marketing_name'         => 'SCH-R730',
         'has_qwerty_keyboard'    => true,

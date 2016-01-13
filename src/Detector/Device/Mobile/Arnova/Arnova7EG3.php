@@ -51,7 +51,7 @@ class Arnova7EG3 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => '7E G3',
+        'code_name'             => '7E G3',
         'model_extra_info'       => null,
         'marketing_name'         => '7E G3',
         'has_qwerty_keyboard'    => true,

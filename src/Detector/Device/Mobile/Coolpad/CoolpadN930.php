@@ -51,7 +51,7 @@ class CoolpadN930 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N930',
+        'code_name'             => 'N930',
         'model_extra_info'       => null,
         'marketing_name'         => 'N930',
         'has_qwerty_keyboard'    => true,

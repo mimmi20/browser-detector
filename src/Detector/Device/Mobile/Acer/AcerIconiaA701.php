@@ -57,7 +57,7 @@ class AcerIconiaA701 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A701',
+        'code_name'             => 'A701',
         'model_extra_info'       => null,
         'marketing_name'         => 'Iconia Tab A701',
         'has_qwerty_keyboard'    => true,

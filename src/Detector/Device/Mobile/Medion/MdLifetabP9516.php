@@ -55,7 +55,7 @@ class MdLifetabP9516 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LifeTab P9516',
+        'code_name'             => 'LifeTab P9516',
         'model_extra_info'       => null,
         'marketing_name'         => 'LifeTab P9516',
         'has_qwerty_keyboard'    => true,

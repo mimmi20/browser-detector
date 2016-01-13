@@ -51,7 +51,7 @@ class ZteV970 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'V970',
+        'code_name'             => 'V970',
         'model_extra_info'       => null,
         'marketing_name'         => 'V970',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class LenovoB8000h extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'B8000-H',
+        'code_name'             => 'B8000-H',
         'model_extra_info'       => null,
         'marketing_name'         => 'Yoga B8000-H',
         'has_qwerty_keyboard'    => true,

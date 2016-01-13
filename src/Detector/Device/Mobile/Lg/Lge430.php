@@ -51,7 +51,7 @@ class Lge430 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E430',
+        'code_name'             => 'E430',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus L3 II',
         'has_qwerty_keyboard'    => true,

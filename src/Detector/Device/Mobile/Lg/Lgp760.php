@@ -51,7 +51,7 @@ class Lgp760 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'P760',
+        'code_name'             => 'P760',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus L9',
         'has_qwerty_keyboard'    => true,

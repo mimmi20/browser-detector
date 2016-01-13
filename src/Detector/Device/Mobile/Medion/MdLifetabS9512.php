@@ -51,7 +51,7 @@ class MdLifetabS9512 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LifeTab S9512',
+        'code_name'             => 'LifeTab S9512',
         'model_extra_info'       => null,
         'marketing_name'         => 'LifeTab S9512',
         'has_qwerty_keyboard'    => true,

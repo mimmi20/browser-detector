@@ -51,7 +51,7 @@ class NokiaX7 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X7',
+        'code_name'             => 'X7',
         'model_extra_info'       => null,
         'marketing_name'         => 'X7',
         'has_qwerty_keyboard'    => true,

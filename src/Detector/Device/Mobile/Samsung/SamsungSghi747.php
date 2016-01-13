@@ -57,7 +57,7 @@ class SamsungSghi747 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-I747',
+        'code_name'             => 'SGH-I747',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S III',
         'has_qwerty_keyboard'    => true,

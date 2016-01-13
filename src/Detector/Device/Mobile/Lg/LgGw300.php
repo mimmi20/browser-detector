@@ -54,7 +54,7 @@ class LgGw300 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GW300',
+        'code_name'             => 'GW300',
         'model_extra_info'       => null,
         'marketing_name'         => 'GW300',
         'has_qwerty_keyboard'    => true,

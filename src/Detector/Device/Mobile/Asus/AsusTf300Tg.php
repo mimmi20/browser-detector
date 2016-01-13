@@ -55,7 +55,7 @@ class AsusTf300Tg extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'TF300TG',
+        'code_name'             => 'TF300TG',
         'model_extra_info'       => null,
         'marketing_name'         => 'Transformer Pad TF300T',
         'has_qwerty_keyboard'    => true,

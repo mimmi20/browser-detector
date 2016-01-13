@@ -51,7 +51,7 @@ class LenovoA7600f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A7600-F',
+        'code_name'             => 'A7600-F',
         'model_extra_info'       => 'Wi-Fi only (Mediatek MT8121)',
         'marketing_name'         => 'A7600-F',
         'has_qwerty_keyboard'    => true,

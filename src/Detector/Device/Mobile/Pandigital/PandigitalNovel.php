@@ -51,7 +51,7 @@ class PandigitalNovel extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Novel',
+        'code_name'             => 'Novel',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

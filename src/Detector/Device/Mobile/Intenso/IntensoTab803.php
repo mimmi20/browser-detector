@@ -51,7 +51,7 @@ class IntensoTab803 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Tab 803',
+        'code_name'             => 'Tab 803',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tab 803',
         'has_qwerty_keyboard'    => true,

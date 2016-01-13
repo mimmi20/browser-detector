@@ -51,7 +51,7 @@ class SamsungGtp7320 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-P7320',
+        'code_name'             => 'GT-P7320',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 8.9 LTE',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class MID8127 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MID8127',
+        'code_name'             => 'MID8127',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kyros MID8127',
         'has_qwerty_keyboard'    => true,

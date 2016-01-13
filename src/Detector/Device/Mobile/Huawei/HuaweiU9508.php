@@ -56,7 +56,7 @@ class HuaweiU9508 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U9508',
+        'code_name'             => 'U9508',
         'model_extra_info'       => null,
         'marketing_name'         => 'Honor 2',
         'has_qwerty_keyboard'    => true,

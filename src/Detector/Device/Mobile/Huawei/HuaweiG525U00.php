@@ -51,7 +51,7 @@ class HuaweiG525U00 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'G525-U00',
+        'code_name'             => 'G525-U00',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend G525-U00',
         'has_qwerty_keyboard'    => true,

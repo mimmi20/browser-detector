@@ -55,7 +55,7 @@ class BlackBerry8800 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'BlackBerry 8800',
+        'code_name'             => 'BlackBerry 8800',
         'model_extra_info'       => null,
         'marketing_name'         => 'BlackBerry 8800',
         'has_qwerty_keyboard'    => true,

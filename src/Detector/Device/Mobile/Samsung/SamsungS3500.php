@@ -51,7 +51,7 @@ class SamsungS3500 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S3500',
+        'code_name'             => 'S3500',
         'model_extra_info'       => null,
         'marketing_name'         => 'S3500',
         'has_qwerty_keyboard'    => false,

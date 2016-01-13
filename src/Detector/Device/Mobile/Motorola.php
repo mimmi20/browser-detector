@@ -53,7 +53,7 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Motorola Device',
+        'code_name'             => 'general Motorola Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Motorola Device',
         'has_qwerty_keyboard'    => true,

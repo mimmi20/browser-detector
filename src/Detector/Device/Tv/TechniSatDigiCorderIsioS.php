@@ -51,7 +51,7 @@ class TechniSatDigiCorderIsioS extends AbstractDevice implements DeviceHasSpecif
      */
     protected $properties = array(
         // device
-        'model_name'             => 'DigiCorder ISIO S',
+        'code_name'             => 'DigiCorder ISIO S',
         'model_extra_info'       => null,
         'marketing_name'         => 'DigiCorder ISIO S',
         'has_qwerty_keyboard'    => true,

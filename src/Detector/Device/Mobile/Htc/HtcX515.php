@@ -51,7 +51,7 @@ class HtcX515 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X515',
+        'code_name'             => 'X515',
         'model_extra_info'       => null,
         'marketing_name'         => 'EVO 3D',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class SonyEricssonSo02c extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SO-02C',
+        'code_name'             => 'SO-02C',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia acro',
         'has_qwerty_keyboard'    => true,

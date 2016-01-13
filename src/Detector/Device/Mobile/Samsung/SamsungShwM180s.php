@@ -55,7 +55,7 @@ class SamsungShwM180s extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SHW-M180S',
+        'code_name'             => 'SHW-M180S',
         'model_extra_info'       => null,
         'marketing_name'         => 'GALAXY Tab (SKT)',
         'has_qwerty_keyboard'    => true,

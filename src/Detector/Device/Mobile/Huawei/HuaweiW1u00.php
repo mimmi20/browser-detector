@@ -51,7 +51,7 @@ class HuaweiW1u00 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'W1-U00',
+        'code_name'             => 'W1-U00',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend W1',
         'has_qwerty_keyboard'    => true,

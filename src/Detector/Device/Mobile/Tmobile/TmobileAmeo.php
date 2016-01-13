@@ -51,7 +51,7 @@ class TmobileAmeo extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Ameo',
+        'code_name'             => 'Ameo',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

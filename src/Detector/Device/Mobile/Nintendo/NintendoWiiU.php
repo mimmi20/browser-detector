@@ -51,7 +51,7 @@ class NintendoWiiU extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'WiiU',
+        'code_name'             => 'WiiU',
         'model_extra_info'       => null,
         'marketing_name'         => 'WiiU',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class LenovoA3500flIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A3500-FL',
+        'code_name'             => 'A3500-FL',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaTab A3500-FL',
         'has_qwerty_keyboard'    => true,

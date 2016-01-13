@@ -51,7 +51,7 @@ class HtcA510a extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A510a',
+        'code_name'             => 'A510a',
         'model_extra_info'       => null,
         'marketing_name'         => 'A510a',
         'has_qwerty_keyboard'    => true,

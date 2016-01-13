@@ -51,7 +51,7 @@ class LgLs860 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LS860',
+        'code_name'             => 'LS860',
         'model_extra_info'       => null,
         'marketing_name'         => 'Mach LS860',
         'has_qwerty_keyboard'    => true,

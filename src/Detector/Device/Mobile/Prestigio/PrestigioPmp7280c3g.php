@@ -51,7 +51,7 @@ class PrestigioPmp7280c3g extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PMP7280C3G',
+        'code_name'             => 'PMP7280C3G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Multipad 2 Ultra Duo 8.0 3G',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class AmazonFirePhone extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SD4930UR', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        'code_name'             => 'SD4930UR', // wurflkey: amazon_kindle_fire_ver1_suban40rom
         'model_extra_info'       => null,
         'marketing_name'         => 'Fire Phone', // wurflkey: amazon_kindle_fire_ver1_suban40rom
         'has_qwerty_keyboard'    => true,

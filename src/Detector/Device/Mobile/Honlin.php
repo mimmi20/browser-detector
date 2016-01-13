@@ -53,7 +53,7 @@ class Honlin extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Honlin Device',
+        'code_name'             => 'general Honlin Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Honlin Device',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungGts5280 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S5280',
+        'code_name'             => 'GT-S5280',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Star',
         'has_qwerty_keyboard'    => true,

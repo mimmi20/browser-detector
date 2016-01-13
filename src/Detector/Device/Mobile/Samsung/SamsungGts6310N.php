@@ -55,7 +55,7 @@ class SamsungGts6310N extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S6310N',
+        'code_name'             => 'GT-S6310N',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Young',
         'has_qwerty_keyboard'    => true,

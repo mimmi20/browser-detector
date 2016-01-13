@@ -55,7 +55,7 @@ class SamsungSmT320 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-T320',
+        'code_name'             => 'SM-T320',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab Pro 8.4 Wi-Fi',
         'has_qwerty_keyboard'    => true,

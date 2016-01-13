@@ -51,7 +51,7 @@ class SamsungSghT839 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-T839',
+        'code_name'             => 'SGH-T839',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-T839',
         'has_qwerty_keyboard'    => false,

@@ -53,7 +53,7 @@ class Pipo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Pipo Device',
+        'code_name'             => 'general Pipo Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Pipo Device',
         'has_qwerty_keyboard'    => true,

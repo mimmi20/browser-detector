@@ -51,7 +51,7 @@ class SamsungSghU800 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-U800',
+        'code_name'             => 'SGH-U800',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-U800',
         'has_qwerty_keyboard'    => false,

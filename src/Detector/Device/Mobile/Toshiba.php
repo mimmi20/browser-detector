@@ -51,7 +51,7 @@ class Toshiba extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Toshiba Device',
+        'code_name'             => 'general Toshiba Device',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class SamsungSmT230nu extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-T230NU',
+        'code_name'             => 'SM-T230NU',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 4 7.0 (Wi-Fi) 8GB',
         'has_qwerty_keyboard'    => true,

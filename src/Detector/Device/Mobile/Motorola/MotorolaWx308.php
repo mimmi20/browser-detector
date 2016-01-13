@@ -55,7 +55,7 @@ class MotorolaWx308 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'WX308',
+        'code_name'             => 'WX308',
         'model_extra_info'       => null,
         'marketing_name'         => 'Gleam+/WX308', // wurflkey: mot_wx308_ver1
         'has_qwerty_keyboard'    => false, // wurflkey: mot_wx308_ver1

@@ -53,7 +53,7 @@ class Archos extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Archos Device',
+        'code_name'             => 'general Archos Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Archos Device',
         'has_qwerty_keyboard'    => true,

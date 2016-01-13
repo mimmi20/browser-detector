@@ -51,7 +51,7 @@ class SonyKdl37ex720 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KDL37EX720',
+        'code_name'             => 'KDL37EX720',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

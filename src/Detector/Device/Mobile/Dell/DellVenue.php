@@ -51,7 +51,7 @@ class DellVenue extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Venue',
+        'code_name'             => 'Venue',
         'model_extra_info'       => null,
         'marketing_name'         => 'Venue',
         'has_qwerty_keyboard'    => true,

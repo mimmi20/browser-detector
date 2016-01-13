@@ -55,7 +55,7 @@ class HuaweiU8500 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8500',
+        'code_name'             => 'U8500',
         'model_extra_info'       => null,
         'marketing_name'         => 'U8500', // wurflkey: huawei_u8500_ver1
         'has_qwerty_keyboard'    => true,

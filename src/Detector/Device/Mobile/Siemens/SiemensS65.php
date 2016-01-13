@@ -49,7 +49,7 @@ class SiemensS65 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S65',
+        'code_name'             => 'S65',
         'model_extra_info'       => null,
         'marketing_name'         => 'S65',
         'has_qwerty_keyboard'    => true,

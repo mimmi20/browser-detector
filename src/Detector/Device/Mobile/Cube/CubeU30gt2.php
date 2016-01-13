@@ -51,7 +51,7 @@ class CubeU30gt2 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U30GT2',
+        'code_name'             => 'U30GT2',
         'model_extra_info'       => null,
         'marketing_name'         => 'U30GT2',
         'has_qwerty_keyboard'    => true,

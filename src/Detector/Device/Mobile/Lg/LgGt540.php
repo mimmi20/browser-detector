@@ -56,7 +56,7 @@ class LgGt540 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT540',
+        'code_name'             => 'GT540',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT540 Optimus', // wurflkey: lg_gt540_ver1_subua_suban23
         'has_qwerty_keyboard'    => true, // wurflkey: lg_gt540_ver1_subua_suban23

@@ -57,7 +57,7 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Microsoft Device',
+        'code_name'             => 'general Microsoft Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Microsoft Device',
         'has_qwerty_keyboard'    => false, // windows_8_rt_ver1

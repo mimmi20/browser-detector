@@ -51,7 +51,7 @@ class MotorolaT720 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'T720',
+        'code_name'             => 'T720',
         'model_extra_info'       => null,
         'marketing_name'         => 'T720',
         'has_qwerty_keyboard'    => true,

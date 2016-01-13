@@ -51,7 +51,7 @@ class SamsungSmP900 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-P900',
+        'code_name'             => 'SM-P900',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note Pro 12.2 Wi-Fi',
         'has_qwerty_keyboard'    => true,

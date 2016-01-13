@@ -56,7 +56,7 @@ class SonyEricssonMT15iv extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     protected $properties = array(
         // device
-        'model_name'             => 'MT15iv',
+        'code_name'             => 'MT15iv',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Neo',
         'has_qwerty_keyboard'    => true,

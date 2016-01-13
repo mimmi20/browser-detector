@@ -51,7 +51,7 @@ class PhicommFws610 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'FWS610',
+        'code_name'             => 'FWS610',
         'model_extra_info'       => null,
         'marketing_name'         => 'FWS610',
         'has_qwerty_keyboard'    => true,

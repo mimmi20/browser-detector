@@ -53,7 +53,7 @@ class Dell extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Dell Device',
+        'code_name'             => 'general Dell Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Dell Device',
         'has_qwerty_keyboard'    => true,

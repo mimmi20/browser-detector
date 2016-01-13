@@ -51,7 +51,7 @@ class HtcShooterU extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Shooter U',
+        'code_name'             => 'Shooter U',
         'model_extra_info'       => null,
         'marketing_name'         => 'Shooter U',
         'has_qwerty_keyboard'    => true,

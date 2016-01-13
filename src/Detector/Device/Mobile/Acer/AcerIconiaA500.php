@@ -56,7 +56,7 @@ class AcerIconiaA500 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A500',
+        'code_name'             => 'A500',
         'model_extra_info'       => null,
         'marketing_name'         => 'Picasso', // wurflkey: acer_iconia_tab_a500_ver1_suban40
         'has_qwerty_keyboard'    => true,

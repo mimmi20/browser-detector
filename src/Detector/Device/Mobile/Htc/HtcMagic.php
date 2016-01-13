@@ -55,7 +55,7 @@ class HtcMagic extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Magic',
+        'code_name'             => 'Magic',
         'model_extra_info'       => null,
         'marketing_name'         => 'Magic',
         'has_qwerty_keyboard'    => true,

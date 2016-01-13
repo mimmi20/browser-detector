@@ -53,7 +53,7 @@ class Epad extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Epad Device',
+        'code_name'             => 'general Epad Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Epad Device',
         'has_qwerty_keyboard'    => true,

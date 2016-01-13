@@ -56,7 +56,7 @@ class HtcOneS extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'model_name'             => 'PJ401',
+        'code_name'             => 'PJ401',
         'model_extra_info'       => null,
         'marketing_name'         => 'One S',
         'has_qwerty_keyboard'    => true,

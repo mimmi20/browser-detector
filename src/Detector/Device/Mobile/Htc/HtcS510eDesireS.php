@@ -55,7 +55,7 @@ class HtcS510eDesireS extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S510e', // wurflkey: htc_s510e_ver1_subdesires
+        'code_name'             => 'S510e', // wurflkey: htc_s510e_ver1_subdesires
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire S',
         'has_qwerty_keyboard'    => true,

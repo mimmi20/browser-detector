@@ -51,7 +51,7 @@ class Nokia6210 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => '6210',
+        'code_name'             => '6210',
         'model_extra_info'       => null,
         'marketing_name'         => 'Navigator',
         'has_qwerty_keyboard'    => true,

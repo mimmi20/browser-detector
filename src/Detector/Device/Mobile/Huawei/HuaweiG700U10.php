@@ -51,7 +51,7 @@ class HuaweiG700U10 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'G700-U10',
+        'code_name'             => 'G700-U10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend G700',
         'has_qwerty_keyboard'    => true,

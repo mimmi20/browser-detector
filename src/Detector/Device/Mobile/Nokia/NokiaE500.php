@@ -55,7 +55,7 @@ class NokiaE500 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E5-00',
+        'code_name'             => 'E5-00',
         'model_extra_info'       => null,
         'marketing_name'         => 'Mystic',
         'has_qwerty_keyboard'    => true,

@@ -57,7 +57,7 @@ class SonyLT30p extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'LT30p',
+        'code_name'             => 'LT30p',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia T',
         'has_qwerty_keyboard'    => true,

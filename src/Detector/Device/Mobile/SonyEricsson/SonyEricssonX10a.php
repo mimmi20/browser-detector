@@ -51,7 +51,7 @@ class SonyEricssonX10a extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X10a',
+        'code_name'             => 'X10a',
         'model_extra_info'       => null,
         'marketing_name'         => 'X10a',
         'has_qwerty_keyboard'    => true,

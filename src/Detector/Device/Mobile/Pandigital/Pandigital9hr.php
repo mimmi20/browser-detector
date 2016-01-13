@@ -51,7 +51,7 @@ class Pandigital9hr extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => '9hr',
+        'code_name'             => '9hr',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class HuaweiM635 extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'model_name'             => 'M635',
+        'code_name'             => 'M635',
         'model_extra_info'       => null,
         'marketing_name'         => 'M635',
         'has_qwerty_keyboard'    => true,

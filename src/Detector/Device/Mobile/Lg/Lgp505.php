@@ -51,7 +51,7 @@ class Lgp505 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'P505',
+        'code_name'             => 'P505',
         'model_extra_info'       => null,
         'marketing_name'         => 'P505',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class SamsungGti5800 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I5800',
+        'code_name'             => 'GT-I5800',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy 3 Apollo',
         'has_qwerty_keyboard'    => true,

@@ -52,7 +52,7 @@ class PlayStation4 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Playstation 4',
+        'code_name'             => 'Playstation 4',
         'model_extra_info'       => null,
         'marketing_name'         => 'Playstation 4',
         'has_qwerty_keyboard'    => true,

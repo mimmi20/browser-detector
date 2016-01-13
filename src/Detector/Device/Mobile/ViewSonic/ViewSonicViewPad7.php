@@ -51,7 +51,7 @@ class ViewSonicViewPad7 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ViewPad7',
+        'code_name'             => 'ViewPad7',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

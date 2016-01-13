@@ -51,7 +51,7 @@ class CreativeZiiLabsZiio10 extends AbstractDevice implements DeviceHasSpecificP
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ZiiO 10',
+        'code_name'             => 'ZiiO 10',
         'model_extra_info'       => null,
         'marketing_name'         => 'ZiiO 10',
         'has_qwerty_keyboard'    => true,

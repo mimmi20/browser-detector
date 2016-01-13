@@ -51,7 +51,7 @@ class ArchosA70BHT extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A70BHT',
+        'code_name'             => 'A70BHT',
         'model_extra_info'       => null,
         'marketing_name'         => 'A70BHT',
         'has_qwerty_keyboard'    => true,

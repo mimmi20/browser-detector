@@ -53,7 +53,7 @@ class Efox extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Efox Device',
+        'code_name'             => 'general Efox Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Efox Device',
         'has_qwerty_keyboard'    => true,

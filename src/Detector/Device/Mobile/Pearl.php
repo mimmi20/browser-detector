@@ -53,7 +53,7 @@ class Pearl extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Pearl Device',
+        'code_name'             => 'general Pearl Device',
         'model_extra_info'       => null,
         'marketing_name'         => null, // wurflkey: Pearl_touch_ver1
         'has_qwerty_keyboard'    => true,

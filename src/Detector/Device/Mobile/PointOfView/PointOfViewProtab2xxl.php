@@ -55,7 +55,7 @@ class PointOfViewProtab2xxl extends AbstractDevice implements DeviceHasWurflKeyI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Protab 2 XXL',
+        'code_name'             => 'Protab 2 XXL',
         'model_extra_info'       => null,
         'marketing_name'         => 'Protab 2 XXL',
         'has_qwerty_keyboard'    => true,

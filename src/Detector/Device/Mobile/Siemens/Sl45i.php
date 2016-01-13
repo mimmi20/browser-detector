@@ -51,7 +51,7 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SL45i',
+        'code_name'             => 'SL45i',
         'model_extra_info'       => null,
         'marketing_name'         => 'SL45i',
         'has_qwerty_keyboard'    => true,

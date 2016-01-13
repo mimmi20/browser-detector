@@ -55,7 +55,7 @@ class LgKm900 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KM900',
+        'code_name'             => 'KM900',
         'model_extra_info'       => null,
         'marketing_name'         => 'KM900',
         'has_qwerty_keyboard'    => false,

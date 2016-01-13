@@ -49,7 +49,7 @@ class Lge970 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'E970',
+        'code_name'             => 'E970',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus G',
         'has_qwerty_keyboard'    => true,

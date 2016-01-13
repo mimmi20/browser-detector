@@ -51,7 +51,7 @@ class HtcWildfireSLs extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Wildfire S LS',
+        'code_name'             => 'Wildfire S LS',
         'model_extra_info'       => null,
         'marketing_name'         => 'Wildfire S LS',
         'has_qwerty_keyboard'    => true,

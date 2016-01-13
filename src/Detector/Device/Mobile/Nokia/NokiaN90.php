@@ -51,7 +51,7 @@ class NokiaN90 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N90',
+        'code_name'             => 'N90',
         'model_extra_info'       => null,
         'marketing_name'         => 'N90 DUAL CORE2',
         'has_qwerty_keyboard'    => false,

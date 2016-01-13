@@ -55,7 +55,7 @@ class SamsungGts8500 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S8500',
+        'code_name'             => 'GT-S8500',
         'model_extra_info'       => null,
         'marketing_name'         => 'Wave',
         'has_qwerty_keyboard'    => false,

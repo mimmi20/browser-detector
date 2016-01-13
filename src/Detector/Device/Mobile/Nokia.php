@@ -51,7 +51,7 @@ class Nokia extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Nokia Device',
+        'code_name'             => 'general Nokia Device',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

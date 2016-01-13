@@ -55,7 +55,7 @@ class Archos5 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'model_name'             => '5',
+        'code_name'             => '5',
         'model_extra_info'       => null,
         'marketing_name'         => '5',
         'has_qwerty_keyboard'    => true,

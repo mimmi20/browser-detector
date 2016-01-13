@@ -51,7 +51,7 @@ class YPGi1 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'YP-GI1',
+        'code_name'             => 'YP-GI1',
         'model_extra_info'       => null,
         'marketing_name'         => 'YP-GI1',
         'has_qwerty_keyboard'    => false,

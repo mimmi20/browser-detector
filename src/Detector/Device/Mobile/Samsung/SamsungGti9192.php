@@ -57,7 +57,7 @@ class SamsungGti9192 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9192',
+        'code_name'             => 'GT-I9192',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-I9192',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SonyC6602ExperiaZ extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'C6602',
+        'code_name'             => 'C6602',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Z',
         'has_qwerty_keyboard'    => true,

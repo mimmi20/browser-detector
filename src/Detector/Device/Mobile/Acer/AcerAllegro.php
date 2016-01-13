@@ -51,7 +51,7 @@ class AcerAllegro extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Allegro',
+        'code_name'             => 'Allegro',
         'model_extra_info'       => null,
         'marketing_name'         => 'Allegro',
         'has_qwerty_keyboard'    => true,

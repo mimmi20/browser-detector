@@ -51,7 +51,7 @@ class NextbookNext extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Next',
+        'code_name'             => 'Next',
         'model_extra_info'       => null,
         'marketing_name'         => 'Next',
         'has_qwerty_keyboard'    => true,

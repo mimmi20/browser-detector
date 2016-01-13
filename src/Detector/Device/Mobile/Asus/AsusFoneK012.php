@@ -49,7 +49,7 @@ class AsusFoneK012 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'K012',
+        'code_name'             => 'K012',
         'model_extra_info'       => null,
         'marketing_name'         => 'K012',
         'has_qwerty_keyboard'    => true,

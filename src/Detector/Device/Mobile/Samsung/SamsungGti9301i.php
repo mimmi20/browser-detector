@@ -55,7 +55,7 @@ class SamsungGti9301i extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9301I',
+        'code_name'             => 'GT-I9301I',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S III Neo+',
         'has_qwerty_keyboard'    => true,

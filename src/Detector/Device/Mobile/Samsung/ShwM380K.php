@@ -51,7 +51,7 @@ class ShwM380K extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SHW-M380K',
+        'code_name'             => 'SHW-M380K',
         'model_extra_info'       => null,
         'marketing_name'         => 'SHW-M380K',
         'has_qwerty_keyboard'    => false,

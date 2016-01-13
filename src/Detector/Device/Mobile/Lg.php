@@ -51,7 +51,7 @@ class Lg extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general LG Device',
+        'code_name'             => 'general LG Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general LG Device',
         'has_qwerty_keyboard'    => true,

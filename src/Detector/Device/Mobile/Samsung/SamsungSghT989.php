@@ -55,7 +55,7 @@ class SamsungSghT989 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-T989',
+        'code_name'             => 'SGH-T989',
         'model_extra_info'       => 'for T-Mobile',
         'marketing_name'         => 'Galaxy S II',
         'has_qwerty_keyboard'    => true,

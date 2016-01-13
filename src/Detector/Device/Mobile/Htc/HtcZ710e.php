@@ -56,7 +56,7 @@ class HtcZ710e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Z710e',
+        'code_name'             => 'Z710e',
         'model_extra_info'       => null,
         'marketing_name'         => 'Sensation',
         'has_qwerty_keyboard'    => true,

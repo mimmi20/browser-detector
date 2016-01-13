@@ -51,7 +51,7 @@ class SamsungGtn5120 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-N5120',
+        'code_name'             => 'GT-N5120',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 8.0 LTE',
         'has_qwerty_keyboard'    => true,

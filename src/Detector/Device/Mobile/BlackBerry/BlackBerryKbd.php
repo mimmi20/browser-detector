@@ -51,7 +51,7 @@ class BlackBerryKbd extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => 'KBD',
+        'code_name'             => 'KBD',
         'model_extra_info'       => null,
         'marketing_name'         => 'KBD',
         'has_qwerty_keyboard'    => true,

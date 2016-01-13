@@ -51,7 +51,7 @@ class SonyEricssonX1i extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X1i',
+        'code_name'             => 'X1i',
         'model_extra_info'       => null,
         'marketing_name'         => 'X1i',
         'has_qwerty_keyboard'    => true,

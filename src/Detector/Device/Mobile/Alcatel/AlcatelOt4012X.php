@@ -51,7 +51,7 @@ class AlcatelOt4012X extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-4012X',
+        'code_name'             => 'OT-4012X',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch Fire',
         'has_qwerty_keyboard'    => true,

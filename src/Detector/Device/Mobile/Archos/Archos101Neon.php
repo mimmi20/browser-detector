@@ -51,7 +51,7 @@ class Archos101Neon extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'model_name'             => '101 Neon',
+        'code_name'             => '101 Neon',
         'model_extra_info'       => null,
         'marketing_name'         => '101 Neon',
         'has_qwerty_keyboard'    => true,

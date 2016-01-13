@@ -49,7 +49,7 @@ class SamsungSmC105 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-C105',
+        'code_name'             => 'SM-C105',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S4 Zoom C105',
         'has_qwerty_keyboard'    => true,

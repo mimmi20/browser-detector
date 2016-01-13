@@ -55,7 +55,7 @@ class NokiaN800 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'N8-00',
+        'code_name'             => 'N8-00',
         'model_extra_info'       => null,
         'marketing_name'         => 'N8',
         'has_qwerty_keyboard'    => false,

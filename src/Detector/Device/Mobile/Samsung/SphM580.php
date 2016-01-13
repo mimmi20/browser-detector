@@ -51,7 +51,7 @@ class SphM580 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SPH-M580',
+        'code_name'             => 'SPH-M580',
         'model_extra_info'       => 'Boost Mobile',
         'marketing_name'         => 'Replenish',
         'has_qwerty_keyboard'    => true,

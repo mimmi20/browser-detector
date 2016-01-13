@@ -56,7 +56,7 @@ class AsusMe371mg extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ME371MG',
+        'code_name'             => 'ME371MG',
         'model_extra_info'       => null,
         'marketing_name'         => 'Fonepad ME371MG',
         'has_qwerty_keyboard'    => true,

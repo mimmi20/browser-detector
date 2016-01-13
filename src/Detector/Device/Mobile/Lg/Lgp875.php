@@ -51,7 +51,7 @@ class Lgp875 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'P875',
+        'code_name'             => 'P875',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus F5',
         'has_qwerty_keyboard'    => true,

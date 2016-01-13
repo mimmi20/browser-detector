@@ -55,7 +55,7 @@ class SamsungSchR530u extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9300',
+        'code_name'             => 'GT-I9300',
         'model_extra_info'       => 'for US Cellular',
         'marketing_name'         => 'Galaxy S III',
         'has_qwerty_keyboard'    => true,

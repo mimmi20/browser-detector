@@ -51,7 +51,7 @@ class NokiaC205 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'model_name'             => 'C2-05',
+        'code_name'             => 'C2-05',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

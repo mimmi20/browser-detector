@@ -51,7 +51,7 @@ class SH80F extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SH80F',
+        'code_name'             => 'SH80F',
         'model_extra_info'       => null,
         'marketing_name'         => 'Aquos Phone SH80F',
         'has_qwerty_keyboard'    => true,

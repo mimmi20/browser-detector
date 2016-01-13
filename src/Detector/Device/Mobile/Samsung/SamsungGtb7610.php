@@ -55,7 +55,7 @@ class SamsungGtb7610 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-B7610',
+        'code_name'             => 'GT-B7610',
         'model_extra_info'       => 'Vodafone',
         'marketing_name'         => 'Louvre',
         'has_qwerty_keyboard'    => true,

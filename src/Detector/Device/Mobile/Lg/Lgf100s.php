@@ -51,7 +51,7 @@ class Lgf100s extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'F100S',
+        'code_name'             => 'F100S',
         'model_extra_info'       => null,
         'marketing_name'         => 'F100S',
         'has_qwerty_keyboard'    => true,

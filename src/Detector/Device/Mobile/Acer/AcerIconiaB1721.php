@@ -49,7 +49,7 @@ class AcerIconiaB1721 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'B1-721',
+        'code_name'             => 'B1-721',
         'model_extra_info'       => null,
         'marketing_name'         => 'Iconia B1-721',
         'has_qwerty_keyboard'    => true,

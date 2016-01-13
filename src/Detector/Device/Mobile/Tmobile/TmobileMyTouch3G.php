@@ -51,7 +51,7 @@ class TmobileMyTouch3G extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'model_name'             => 'myTouch3G',
+        'code_name'             => 'myTouch3G',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

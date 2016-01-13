@@ -49,7 +49,7 @@ class SamsungSmT2105 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SM-T2105',
+        'code_name'             => 'SM-T2105',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 3 Kids',
         'has_qwerty_keyboard'    => true,

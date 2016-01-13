@@ -51,7 +51,7 @@ class SamsungGts5310 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S5310',
+        'code_name'             => 'GT-S5310',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Pocket Neo',
         'has_qwerty_keyboard'    => true,

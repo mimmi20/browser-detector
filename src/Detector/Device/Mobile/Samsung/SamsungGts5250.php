@@ -49,7 +49,7 @@ class SamsungGts5250 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S5250',
+        'code_name'             => 'GT-S5250',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S5250',
         'has_qwerty_keyboard'    => false,

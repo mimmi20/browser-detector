@@ -51,7 +51,7 @@ class AlcatelOt216 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-216',
+        'code_name'             => 'OT-216',
         'model_extra_info'       => null,
         'marketing_name'         => 'OT-216',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SonyEricssonS312 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S312',
+        'code_name'             => 'S312',
         'model_extra_info'       => null,
         'marketing_name'         => 'S312',
         'has_qwerty_keyboard'    => true,

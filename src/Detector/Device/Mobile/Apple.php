@@ -53,7 +53,7 @@ class Apple extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Apple Device',
+        'code_name'             => 'general Apple Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Apple Device',
         'has_qwerty_keyboard'    => true,

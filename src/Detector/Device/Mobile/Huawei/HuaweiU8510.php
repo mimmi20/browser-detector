@@ -55,7 +55,7 @@ class HuaweiU8510 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S41HW',
+        'code_name'             => 'S41HW',
         'model_extra_info'       => null,
         'marketing_name'         => 'Pocket WiFi S II for emobile', // wurflkey: huawei_s41hw_ver1_subu8510
         'has_qwerty_keyboard'    => true,

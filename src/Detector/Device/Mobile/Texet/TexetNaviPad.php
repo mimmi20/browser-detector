@@ -51,7 +51,7 @@ class TexetNaviPad extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'NaviPad TM-7055HD 3G',
+        'code_name'             => 'NaviPad TM-7055HD 3G',
         'model_extra_info'       => null,
         'marketing_name'         => 'NaviPad TM-7055HD 3G',
         'has_qwerty_keyboard'    => false,

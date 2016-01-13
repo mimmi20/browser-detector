@@ -51,7 +51,7 @@ class AcerV370 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'V370',
+        'code_name'             => 'V370',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid E2 Duo',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class AlcatelOt890 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'model_name'             => 'OT-890',
+        'code_name'             => 'OT-890',
         'model_extra_info'       => null,
         'marketing_name'         => 'OT-890',
         'has_qwerty_keyboard'    => true,

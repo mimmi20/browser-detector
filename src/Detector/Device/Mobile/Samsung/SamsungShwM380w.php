@@ -55,7 +55,7 @@ class SamsungShwM380w extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SHW-M380W',
+        'code_name'             => 'SHW-M380W',
         'model_extra_info'       => 'SKT',
         'marketing_name'         => 'Galaxy Tab 10.1',
         'has_qwerty_keyboard'    => true,

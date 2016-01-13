@@ -51,7 +51,7 @@ class LenovoA5500hIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'model_name'             => 'A5500-H',
+        'code_name'             => 'A5500-H',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ideatab A8-50 WI-FI + 3G',
         'has_qwerty_keyboard'    => true,

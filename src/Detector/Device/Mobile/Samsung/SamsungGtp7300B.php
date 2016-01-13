@@ -51,7 +51,7 @@ class SamsungGtp7300B extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-P7300B',
+        'code_name'             => 'GT-P7300B',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-P7300B',
         'has_qwerty_keyboard'    => false,

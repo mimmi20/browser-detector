@@ -53,7 +53,7 @@ class Miui extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Miui device',
+        'code_name'             => 'general Miui device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Miui device',
         'has_qwerty_keyboard'    => true,

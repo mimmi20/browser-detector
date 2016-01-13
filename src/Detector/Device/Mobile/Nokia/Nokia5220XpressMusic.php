@@ -51,7 +51,7 @@ class Nokia5220XpressMusic extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'model_name'             => '5220 XpressMusic',
+        'code_name'             => '5220 XpressMusic',
         'model_extra_info'       => null,
         'marketing_name'         => null,
         'has_qwerty_keyboard'    => true,

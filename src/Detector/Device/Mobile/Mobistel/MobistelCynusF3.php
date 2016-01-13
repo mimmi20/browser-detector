@@ -51,7 +51,7 @@ class MobistelCynusF3 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Cynus F3',
+        'code_name'             => 'Cynus F3',
         'model_extra_info'       => null,
         'marketing_name'         => 'Cynus F3',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class MotorolaDroidRazr extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Razr',
+        'code_name'             => 'Razr',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid Razr',
         'has_qwerty_keyboard'    => true,

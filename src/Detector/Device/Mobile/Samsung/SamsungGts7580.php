@@ -55,7 +55,7 @@ class SamsungGts7580 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S7580',
+        'code_name'             => 'GT-S7580',
         'model_extra_info'       => null,
         'marketing_name'         => 'Trend Plus',
         'has_qwerty_keyboard'    => true,

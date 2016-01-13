@@ -55,7 +55,7 @@ class SamsungGts5369 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S5369',
+        'code_name'             => 'GT-S5369',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Y',
         'has_qwerty_keyboard'    => true,

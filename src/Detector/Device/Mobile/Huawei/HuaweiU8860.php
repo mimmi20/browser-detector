@@ -56,7 +56,7 @@ class HuaweiU8860 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'model_name'             => 'U8860',
+        'code_name'             => 'U8860',
         'model_extra_info'       => null,
         'marketing_name'         => 'Honor', // wurflkey: huawei_u8860_ver1_suban40noh
         'has_qwerty_keyboard'    => true,

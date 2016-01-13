@@ -56,7 +56,7 @@ class WindowsRt8Tablet extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Windows RT Tablet',
+        'code_name'             => 'Windows RT Tablet',
         'model_extra_info'       => null,
         'marketing_name'         => 'Windows RT Tablet',
         'has_qwerty_keyboard'    => false, // windows_8_rt_ver1

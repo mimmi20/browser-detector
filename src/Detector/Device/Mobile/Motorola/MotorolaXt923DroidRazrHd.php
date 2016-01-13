@@ -51,7 +51,7 @@ class MotorolaXt923DroidRazrHd extends AbstractDevice implements DeviceHasSpecif
      */
     protected $properties = array(
         // device
-        'model_name'             => 'XT923',
+        'code_name'             => 'XT923',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid Razr HD',
         'has_qwerty_keyboard'    => true,

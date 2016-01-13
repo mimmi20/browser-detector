@@ -51,7 +51,7 @@ class ZteX920 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'X920',
+        'code_name'             => 'X920',
         'model_extra_info'       => null,
         'marketing_name'         => 'X920',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class Creative extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'model_name'             => 'general Creative Device',
+        'code_name'             => 'general Creative Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Creative Device',
         'has_qwerty_keyboard'    => true,

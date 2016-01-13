@@ -51,7 +51,7 @@ class CatNova extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Nova',
+        'code_name'             => 'Nova',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nova',
         'has_qwerty_keyboard'    => true,

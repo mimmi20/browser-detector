@@ -51,7 +51,7 @@ class SamsungSghi997r extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SGH-I997R',
+        'code_name'             => 'SGH-I997R',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-I997R',
         'has_qwerty_keyboard'    => false,

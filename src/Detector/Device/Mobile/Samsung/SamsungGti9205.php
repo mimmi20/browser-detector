@@ -55,7 +55,7 @@ class SamsungGti9205 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-I9205',
+        'code_name'             => 'GT-I9205',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Mega 6.3',
         'has_qwerty_keyboard'    => true,

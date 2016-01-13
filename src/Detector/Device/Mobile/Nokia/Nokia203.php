@@ -51,7 +51,7 @@ class Nokia203 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Asha 203',
+        'code_name'             => 'Asha 203',
         'model_extra_info'       => null,
         'marketing_name'         => 'Asha 203',
         'has_qwerty_keyboard'    => false,

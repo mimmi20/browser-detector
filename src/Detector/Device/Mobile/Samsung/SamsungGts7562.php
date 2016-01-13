@@ -55,7 +55,7 @@ class SamsungGts7562 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-S7562',
+        'code_name'             => 'GT-S7562',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S Duos',
         'has_qwerty_keyboard'    => true,

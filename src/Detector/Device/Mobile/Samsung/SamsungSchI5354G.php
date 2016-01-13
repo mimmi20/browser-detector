@@ -55,7 +55,7 @@ class SamsungSchI5354G extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'model_name'             => 'SCH-I535 4G',
+        'code_name'             => 'SCH-I535 4G',
         'model_extra_info'       => 'Verizon',
         'marketing_name'         => 'Galaxy S III 4G CDMA',
         'has_qwerty_keyboard'    => true,

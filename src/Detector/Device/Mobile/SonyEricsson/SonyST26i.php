@@ -55,7 +55,7 @@ class SonyST26i extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'model_name'             => 'ST26i',
+        'code_name'             => 'ST26i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia J',
         'has_qwerty_keyboard'    => true,

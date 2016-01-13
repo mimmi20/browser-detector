@@ -53,7 +53,7 @@ class SamsungGtc3310 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'model_name'             => 'GT-C3310',
+        'code_name'             => 'GT-C3310',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-C3310',
         'has_qwerty_keyboard'    => false,

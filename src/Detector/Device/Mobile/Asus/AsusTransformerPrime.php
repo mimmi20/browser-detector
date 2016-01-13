@@ -51,7 +51,7 @@ class AsusTransformerPrime extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'model_name'             => 'Eee Pad TF201',
+        'code_name'             => 'Eee Pad TF201',
         'model_extra_info'       => null,
         'marketing_name'         => 'Transformer Prime',
         'has_qwerty_keyboard'    => true,

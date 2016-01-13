@@ -113,7 +113,7 @@ class ResultFactory implements ResultFactoryInterface
                     case 'brand_name':
                         $value = $result->getDeviceBrand()->brandname;
                         break;
-                    case 'model_name':
+                    case 'code_name':
                         $value = $result->getDeviceName();
                         break;
                     case 'marketing_name':

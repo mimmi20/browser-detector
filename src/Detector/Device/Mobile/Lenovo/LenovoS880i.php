@@ -51,7 +51,7 @@ class LenovoS880i extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'model_name'             => 'S880i',
+        'code_name'             => 'S880i',
         'model_extra_info'       => null,
         'marketing_name'         => 'S880i',
         'has_qwerty_keyboard'    => true,
