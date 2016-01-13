@@ -99,6 +99,7 @@ use BrowserDetector\Detector\Browser\BlogsharesSpiders;
 use BrowserDetector\Detector\Browser\BlukLddcBot;
 use BrowserDetector\Detector\Browser\BnfFrBot;
 use BrowserDetector\Detector\Browser\BoardReaderFaviconFetcher;
+use BrowserDetector\Detector\Browser\Bot12345;
 use BrowserDetector\Detector\Browser\BotBot;
 use BrowserDetector\Detector\Browser\Bot360;
 use BrowserDetector\Detector\Browser\Bot80Legs;
@@ -1077,7 +1078,7 @@ class BrowserFactory
             $browser = new ComodoDragon($agent, $logger);
         } elseif (preg_match('/^Mozilla\/5\.0 \(Windows.*\) AppleWebKit\/.* \(KHTML like Gecko\) Chrome\/.*Safari\//', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
-        } elseif (preg_match('/^Mozilla\/5\.0 \(.*Mac OS X.[^\)] AppleWebKit\/.* \(KHTML, like Gecko\) Chrome\/.*Safari\//', $agent)) {
+        } elseif (preg_match('/^Mozilla\/5\.0 \(.*Mac OS X.[^\)]+ AppleWebKit\/.* \(KHTML, like Gecko\) Chrome\/.*Safari\//', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(chrome|crmo|crios)/i', $agent)) {
             $browser = new Chrome($agent, $logger);
@@ -1332,8 +1333,10 @@ class BrowserFactory
             $browser = new Typo3Linkvalidator($agent, $logger);
         } elseif (preg_match('/feeddlerrss/i', $agent)) {
             $browser = new FeeddlerRssReader($agent, $logger);
-        } elseif (preg_match('/(ios|iphone|ipad|ipod)/i', $agent)) {
+        } elseif (preg_match('/^mozilla\/5\.0 \((iphone|ipad|ipod).*CPU like Mac OS X.*\) AppleWebKit\/\d+/i', $agent)) {
             $browser = new Safari($agent, $logger);
+        } elseif (preg_match('/(ios|iphone|ipad|ipod)/i', $agent)) {
+            $browser = new MobileSafariUiWebView($agent, $logger);
         } elseif (preg_match('/paperlibot/i', $agent)) {
             $browser = new PaperLiBot($agent, $logger);
         } elseif (preg_match('/spbot/i', $agent)) {
@@ -1750,6 +1753,8 @@ class BrowserFactory
             $browser = new Steeler($agent, $logger);
         } elseif (preg_match('/Orangebot/', $agent)) {
             $browser = new Orangebot($agent, $logger);
+        } elseif (preg_match('/Jasmine/', $agent)) {
+            $browser = new Jasmine($agent, $logger);
         } elseif (preg_match('/samsung/i', $agent)) {
             $browser = new Samsung($agent, $logger);
         } elseif (preg_match('/electricmonk/', $agent)) {
@@ -1912,8 +1917,6 @@ class BrowserFactory
             $browser = new Links($agent, $logger);
         } elseif (preg_match('/Airmail/', $agent)) {
             $browser = new Airmail($agent, $logger);
-        } elseif (preg_match('/Jasmine/', $agent)) {
-            $browser = new Jasmine($agent, $logger);
         } elseif (preg_match('/SonyEricsson/', $agent)) {
             $browser = new SonyEricsson($agent, $logger);
         } elseif (preg_match('/WEB\.DE MailCheck/', $agent)) {
@@ -2200,6 +2203,8 @@ class BrowserFactory
             $browser = new RokuDvp($agent, $logger);
         } elseif (preg_match('/java/i', $agent)) {
             $browser = new JavaStandardLibrary($agent, $logger);
+        } elseif (preg_match('/^12345/i', $agent)) {
+            $browser = new Bot12345($agent, $logger);
         } else {
             $browser = new UnknownBrowser($agent, $logger);
         }
