@@ -153,19 +153,34 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer()->getName() . ']' . '")'
         );
 
-        $expectedDeviceName = $mapper->mapDeviceName(
+        $expectedDeviceCodeName = $mapper->mapDeviceName(
+            $expectedProperties['Device_Code_Name']
+        );
+        $foundDeviceCodeName = $mapper->mapDeviceName(
+            $result->getDeviceName()
+        );
+
+        self::assertSame(
+            $expectedDeviceCodeName,
+            $foundDeviceCodeName,
+            'Expected actual "Device_Code_Name" to be "'
+            . $expectedDeviceCodeName . ' [' . $expectedProperties['Device_Code_Name'] . ']'
+            . '" (was "' . $foundDeviceCodeName . ' [' . $result->getDeviceName() . ']' . '")'
+        );
+
+        $expectedDeviceName = $mapper->mapDeviceMarketingName(
             $expectedProperties['Device_Name']
         );
-        $foundDeviceName = $mapper->mapDeviceName(
-            $result->getDeviceName()
+        $foundDeviceName = $mapper->mapDeviceMarketingName(
+            $result->getDeviceMarketingName()
         );
 
         self::assertSame(
             $expectedDeviceName,
             $foundDeviceName,
-            'Expected actual "Browser_Maker" to be "'
+            'Expected actual "Device_Code_Name" to be "'
             . $expectedDeviceName . ' [' . $expectedProperties['Device_Name'] . ']'
-            . '" (was "' . $foundDeviceName . ' [' . $result->getDeviceName() . ']' . '")'
+            . '" (was "' . $foundDeviceName . ' [' . $result->getDeviceMarketingName() . ']' . '")'
         );
     }
 }
