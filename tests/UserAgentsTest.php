@@ -178,7 +178,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         self::assertSame(
             $expectedDeviceName,
             $foundDeviceName,
-            'Expected actual "Device_Code_Name" to be "'
+            'Expected actual "Device_Name" to be "'
             . $expectedDeviceName . ' [' . $expectedProperties['Device_Name'] . ']'
             . '" (was "' . $foundDeviceName . ' [' . $result->getDeviceMarketingName() . ']' . '")'
         );

@@ -223,7 +223,7 @@ class MobileFactory
             $device = new DoCoMo($useragent, $logger);
         } elseif (preg_match('/(Easypix|EasyPad|Junior 4\.0)/i', $useragent)) {
             $device = new Easypix($useragent, $logger);
-        } elseif (preg_match('/(efox|SMART\-E5)/i', $useragent)) {
+        } elseif (preg_match('/(Efox|SMART\-E5)/', $useragent)) {
             $device = new Efox($useragent, $logger);
         } elseif (preg_match('/1 \& 1/i', $useragent)) {
             $device = new EinsUndEins($useragent, $logger);
@@ -365,6 +365,8 @@ class MobileFactory
             $device = new Archos($useragent, $logger);
         } elseif (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
             $device = new Acer($useragent, $logger);
+        } elseif (preg_match('/PLAYSTATION/i', $useragent)) {
+            $device = new SonyEricsson($useragent, $logger);
         } else {
             $device = new GeneralMobile($useragent, $logger);
         }

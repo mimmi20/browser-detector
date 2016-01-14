@@ -90,6 +90,10 @@ class XiaomiMi2 extends AbstractDevice implements DeviceHasSpecificPlatformInter
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('MI 2A'))) {
+            return false;
+        }
+
         return true;
     }
 

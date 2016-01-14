@@ -28,10 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
-use UaDeviceType\Unknown;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\Java;
+use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -39,7 +42,7 @@ use UaDeviceType\Unknown;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnknownDevice extends AbstractDevice
+class LgGd350 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -48,11 +51,11 @@ class UnknownDevice extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'unknown',
+        'code_name'             => 'GD350',
         'model_extra_info'       => null,
-        'marketing_name'         => 'unknown',
-        'has_qwerty_keyboard'    => false,
-        'pointing_method'        => null,
+        'marketing_name'         => 'GD350',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -68,12 +71,12 @@ class UnknownDevice extends AbstractDevice
         'max_image_height'       => null,
         'resolution_width'       => null,
         'resolution_height'      => null,
-        'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
-        'sms_enabled'            => false,
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'            => false,
+        'nfc_support'            => true,
     );
 
     /**
@@ -83,6 +86,10 @@ class UnknownDevice extends AbstractDevice
      */
     public function canHandle()
     {
+        if (!$this->utils->checkIfContains(array('LG-GD350', 'LG/GD350'))) {
+            return false;
+        }
+
         return true;
     }
 
@@ -93,7 +100,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getWeight()
     {
-        return 0;
+        return 3;
     }
 
     /**
@@ -103,7 +110,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new Unknown();
+        return new MobilePhone();
     }
 
     /**
@@ -113,7 +120,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -123,6 +130,16 @@ class UnknownDevice extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Lg());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new Java($this->useragent, $this->logger);
     }
 }

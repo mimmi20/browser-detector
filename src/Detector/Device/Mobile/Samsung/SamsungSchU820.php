@@ -28,10 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
-use UaDeviceType\Unknown;
+use BrowserDetector\Detector\Os\Brew;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -39,7 +42,7 @@ use UaDeviceType\Unknown;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnknownDevice extends AbstractDevice
+class SamsungSchU820 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -48,11 +51,11 @@ class UnknownDevice extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'unknown',
+        'code_name'             => 'SCH-U820',
         'model_extra_info'       => null,
-        'marketing_name'         => 'unknown',
+        'marketing_name'         => 'SCH-U820',
         'has_qwerty_keyboard'    => false,
-        'pointing_method'        => null,
+        'pointing_method'        => '',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -66,14 +69,14 @@ class UnknownDevice extends AbstractDevice
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
+        'resolution_width'       => 240,
+        'resolution_height'      => 320,
         'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'colors'                 => 256,
         // sms
-        'sms_enabled'            => false,
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'            => false,
+        'nfc_support'            => true,
     );
 
     /**
@@ -83,6 +86,10 @@ class UnknownDevice extends AbstractDevice
      */
     public function canHandle()
     {
+        if (!$this->utils->checkIfContains(array('SAMSUNG-SCH-U820', 'SCH-U820'))) {
+            return false;
+        }
+
         return true;
     }
 
@@ -93,7 +100,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getWeight()
     {
-        return 0;
+        return 3;
     }
 
     /**
@@ -103,7 +110,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new Unknown();
+        return new MobilePhone();
     }
 
     /**
@@ -113,7 +120,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -123,6 +130,16 @@ class UnknownDevice extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Samsung());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\Brew
+     */
+    public function detectOs()
+    {
+        return new Brew($this->useragent, $this->logger);
     }
 }

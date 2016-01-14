@@ -28,10 +28,18 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
-use UaDeviceType\Unknown;
+use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\MobilePhone;
+use UaResult\Version;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -39,7 +47,7 @@ use UaDeviceType\Unknown;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnknownDevice extends AbstractDevice
+class Lgd805 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -48,11 +56,11 @@ class UnknownDevice extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'unknown',
+        'code_name'             => 'D805',
         'model_extra_info'       => null,
-        'marketing_name'         => 'unknown',
-        'has_qwerty_keyboard'    => false,
-        'pointing_method'        => null,
+        'marketing_name'         => 'D805',
+        'has_qwerty_keyboard'    => true,
+        'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -66,14 +74,14 @@ class UnknownDevice extends AbstractDevice
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => false,
-        'colors'                 => 65536,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
+        'dual_orientation'       => true,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'            => false,
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'            => false,
+        'nfc_support'            => true,
     );
 
     /**
@@ -83,6 +91,10 @@ class UnknownDevice extends AbstractDevice
      */
     public function canHandle()
     {
+        if (!$this->utils->checkIfContains(array('LG-D805', 'LGD805'))) {
+            return false;
+        }
+
         return true;
     }
 
@@ -93,7 +105,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getWeight()
     {
-        return 0;
+        return 3;
     }
 
     /**
@@ -103,7 +115,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new Unknown();
+        return new MobilePhone();
     }
 
     /**
@@ -113,7 +125,7 @@ class UnknownDevice extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -123,6 +135,53 @@ class UnknownDevice extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company(new Company\Unknown());
+        return new Company(new Company\Lg());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new AndroidOs($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
+    {
+        $wurflKey = 'lg_f320_ver1_subua805';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Chrome':
+            case 'Android WebView':
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $wurflKey = 'lg_f320_ver1_suban44d805chrome';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $wurflKey;
     }
 }
