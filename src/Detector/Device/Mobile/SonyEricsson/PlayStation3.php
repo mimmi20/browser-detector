@@ -52,9 +52,9 @@ class PlayStation3 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Playstation 3',
+        'code_name'              => 'Playstation 3',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'Playstation 3',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

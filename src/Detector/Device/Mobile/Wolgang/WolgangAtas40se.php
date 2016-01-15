@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Intenso;
+namespace BrowserDetector\Detector\Device\Mobile\Wolgang;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Tablet;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class WolgangAtas40se extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'INM8002KP',
+        'code_name'              => 'AT-AS40SE',
         'model_extra_info'       => null,
-        'marketing_name'         => 'TAB 824',
+        'marketing_name'         => 'AT-AS40SE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,14 +69,14 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 768,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -86,7 +86,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('INM8002KP')) {
+        if (!$this->utils->checkIfContains(array('AT-AS40SE'))) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new MobilePhone();
     }
 
     /**
@@ -120,7 +120,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Intenso());
+        return new Company(new Company\Wolgang());
     }
 
     /**
@@ -130,7 +130,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company(new Company\Intenso());
+        return new Company(new Company\Wolgang());
     }
 
     /**

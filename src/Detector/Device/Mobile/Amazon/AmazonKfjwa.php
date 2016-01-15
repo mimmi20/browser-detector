@@ -28,13 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Intenso;
+namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\Tablet;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +40,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AmazonKfjwa extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -51,9 +49,9 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'INM8002KP',
+        'code_name'             => 'KFJWA',
         'model_extra_info'       => null,
-        'marketing_name'         => 'TAB 824',
+        'marketing_name'         => 'Kindle Fire HD 8.9',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +67,10 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 768,
+        'resolution_width'       => 1920,
+        'resolution_height'      => 1200,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 256,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +84,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('INM8002KP')) {
+        if (!$this->utils->checkIfContains(array('KFJWA'))) {
             return false;
         }
 
@@ -120,26 +118,16 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Intenso());
+        return new Company(new Company\Amazon());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Intenso());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
-     */
-    public function detectOs()
-    {
-        return new AndroidOs($this->useragent, $this->logger);
+        return new Company(new Company\Amazon());
     }
 }

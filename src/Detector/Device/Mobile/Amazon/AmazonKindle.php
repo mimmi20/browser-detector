@@ -90,7 +90,9 @@ class AmazonKindle extends AbstractDevice
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Kindle Fire', 'KFTT', 'KFOT', 'KFJWI', 'KFTHWI', 'KFSOWI'))) {
+        $specialKindles = array('Kindle Fire', 'KFTT', 'KFOT', 'KFJWI', 'KFTHWI', 'KFSOWI', 'KFAPWI', 'SD4930UR', 'KFJWA');
+
+        if ($this->utils->checkIfContains($specialKindles)) {
             return false;
         }
 

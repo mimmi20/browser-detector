@@ -28,12 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Intenso;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Tablet;
+use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +44,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Sprd extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +53,9 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'INM8002KP',
+        'code_name'             => 'general sprd device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'TAB 824',
+        'marketing_name'         => 'general sprd device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +71,10 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 768,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -80,17 +82,21 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
     );
 
     /**
-     * checks if this device is able to handle the useragent
+     * detects the device name from the given user agent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return \UaMatcher\Device\DeviceInterface
      */
-    public function canHandle()
+    public function detectDevice()
     {
-        if (!$this->utils->checkIfContains('INM8002KP')) {
-            return false;
-        }
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Sprd');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Sprd' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
 
-        return true;
+        return $chain->detect();
     }
 
     /**
@@ -110,7 +116,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new MobilePhone();
     }
 
     /**
@@ -120,7 +126,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Intenso());
+        return new Company(new Company\Sprd());
     }
 
     /**
@@ -130,7 +136,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company(new Company\Intenso());
+        return new Company(new Company\Sprd());
     }
 
     /**

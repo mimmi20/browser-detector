@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Intenso;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Tablet;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SamsungGte3309t extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,28 +51,28 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'INM8002KP',
+        'code_name'              => 'GT-E3309T',
         'model_extra_info'       => null,
-        'marketing_name'         => 'TAB 824',
-        'has_qwerty_keyboard'    => true,
+        'marketing_name'         => 'GT-E3309T',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-E3309T.xml',
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
         // display
         'physical_screen_width'  => null,
         'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
+        'columns'                => 8,
+        'rows'                   => 20,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 768,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'resolution_width'       => 220,
+        'resolution_height'      => 176,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('INM8002KP')) {
+        if (!$this->utils->checkIfContains('GT-E3309T')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new MobilePhone();
     }
 
     /**
@@ -120,7 +120,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Intenso());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -130,7 +130,7 @@ class IntensoTab824 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company(new Company\Intenso());
+        return new Company(new Company\Samsung());
     }
 
     /**

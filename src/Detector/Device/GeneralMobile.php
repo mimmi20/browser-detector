@@ -30,14 +30,13 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use UaDeviceType\MobilePhone;
 use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
 use UaResult\Version;
 use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
@@ -48,7 +47,9 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasWurflKeyInterface
+class GeneralMobile
+    extends AbstractDevice
+    implements DeviceHasWurflKeyInterface, DeviceHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties
@@ -110,37 +111,13 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaMatcher\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Mobile' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        $device = $chain->detect();
-
-        if (($device !== $this) && ($device instanceof DeviceHasChildrenInterface)) {
-            $device = $device->detectDevice();
-        }
-
-        return $device;
-    }
-
-    /**
      * returns the type of the current device
      *
      * @return \UaDeviceType\TypeInterface
      */
     public function getDeviceType()
     {
-        if (null === $this->deviceType) {
+        if (null === $this->deviceType) {var_dump('$this->deviceType is null');
             $this->deviceType = new MobilePhone();
         }
 

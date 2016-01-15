@@ -89,7 +89,7 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('iPhone')) {
+        if (!$this->utils->checkIfContains('iPh')) {
             return false;
         }
 

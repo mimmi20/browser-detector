@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Acer;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\FonePad;
+use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -47,7 +48,9 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerIconiaA700 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class AcerIconiaA700
+    extends AbstractDevice
+    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties

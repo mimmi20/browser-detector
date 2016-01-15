@@ -44,7 +44,9 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface, BrowserHasRuntimeModificationsInterface
+class Silk
+    extends AbstractBrowser
+    implements BrowserHasSpecificEngineInterface, BrowserHasRuntimeModificationsInterface
 {
     /**
      * the detected browser properties

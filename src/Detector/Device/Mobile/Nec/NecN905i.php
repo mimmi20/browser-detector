@@ -55,7 +55,7 @@ class NecN905i extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'N905i',
+        'code_name'              => 'N905i',
         'model_extra_info'       => null,
         'marketing_name'         => 'N905i',
         'has_qwerty_keyboard'    => true,
