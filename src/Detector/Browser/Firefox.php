@@ -76,8 +76,7 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
      */
     public function canHandle()
     {
-        $spamHelper = new SpamCrawlerFake();
-        $spamHelper->setUserAgent($this->useragent);
+        $spamHelper = new SpamCrawlerFake($this->useragent);
 
         if (!$this->utils->checkIfContains('Mozilla/') && !$spamHelper->isAnonymized()
         ) {

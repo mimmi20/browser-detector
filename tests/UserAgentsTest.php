@@ -165,7 +165,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $foundDeviceCodeName,
             'Expected actual "Device_Code_Name" to be "'
             . $expectedDeviceCodeName . ' [' . $expectedProperties['Device_Code_Name'] . ']'
-            . '" (was "' . $foundDeviceCodeName . ' [' . $result->getDeviceName() . ']' . '")'
+            . '" (was "' . $foundDeviceCodeName . ' [' . $result->getDeviceName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
         );
 
         $expectedDeviceName = $mapper->mapDeviceMarketingName(
@@ -180,7 +180,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $foundDeviceName,
             'Expected actual "Device_Name" to be "'
             . $expectedDeviceName . ' [' . $expectedProperties['Device_Name'] . ']'
-            . '" (was "' . $foundDeviceName . ' [' . $result->getDeviceMarketingName() . ']' . '")'
+            . '" (was "' . $foundDeviceName . ' [' . $result->getDeviceMarketingName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
         );
     }
 }

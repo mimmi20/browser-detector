@@ -73,8 +73,7 @@ class Windows
             'Mobi'
         );
 
-        $spamHelper = new SpamCrawlerFake();
-        $spamHelper->setUserAgent($this->useragent);
+        $spamHelper = new SpamCrawlerFake($this->useragent);
 
         if ($this->utils->checkIfContains($isNotReallyAWindows)
             || (!$spamHelper->isAnonymized() && $spamHelper->isFakeWindows())

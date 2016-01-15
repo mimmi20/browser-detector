@@ -73,8 +73,7 @@ class FakeBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function canHandle()
     {
-        $spamHelper = new SpamCrawlerFake();
-        $spamHelper->setUserAgent($this->useragent);
+        $spamHelper = new SpamCrawlerFake($this->useragent);
 
         if ($spamHelper->isFakeBrowser() || $spamHelper->isFakeIe()) {
             return true;

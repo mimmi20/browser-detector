@@ -67,6 +67,11 @@ class Desktop
 
     public function isDesktopDevice()
     {
+        $fakeHelper = new SpamCrawlerFake($this->useragent);
+        if ($fakeHelper->isFakeWindows()) {
+            return false;
+        }
+
         $windowsHelper = new WindowsHelper($this->useragent);
 
         if ($windowsHelper->isWindows()) {
@@ -114,7 +119,8 @@ class Desktop
             'konqueror',
             'eudora',
             'masking-agent',
-            'safersurf'
+            'safersurf',
+            'integrity',
         );
 
         if ($this->utils->checkIfContains($others, true)) {

@@ -74,7 +74,8 @@ class Macintosh
             'for Mac',
             'PPC Mac',
             'Mac OS X',
-            '(MacOS)'
+            '(MacOS)',
+            'integrity',
         );
 
         if (!$this->utils->checkIfContains($mac)) {

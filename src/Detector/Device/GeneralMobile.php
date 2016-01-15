@@ -117,8 +117,11 @@ class GeneralMobile
      */
     public function getDeviceType()
     {
-        if (null === $this->deviceType) {var_dump('$this->deviceType is null');
+        if (null === $this->deviceType) {
             $this->deviceType = new MobilePhone();
+
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
         }
 
         return $this->deviceType;
@@ -155,6 +158,8 @@ class GeneralMobile
         if ($this->utils->checkIfContains(array('Android; Tablet'))) {
             $this->deviceType = new Tablet();
 
+            $this->setCapability('code_name', 'general Tablet');
+            $this->setCapability('marketing_name', 'general Tablet');
             $this->setCapability('physical_screen_width', 112);
             $this->setCapability('physical_screen_height', 187);
             $this->setCapability('columns', 40);
@@ -173,12 +178,17 @@ class GeneralMobile
         if ($this->utils->checkIfContains(array('Android; Mobile', 'Android; Linux'))) {
             $this->deviceType = new MobilePhone();
 
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
+
             return $this;
         }
 
         if ($this->utils->checkIfContains(array('Opera Tablet'))) {
             $this->deviceType = new Tablet();
 
+            $this->setCapability('code_name', 'general Tablet');
+            $this->setCapability('marketing_name', 'general Tablet');
             $this->setCapability('physical_screen_width', 100);
             $this->setCapability('physical_screen_height', 200);
             $this->setCapability('columns', 60);
@@ -195,6 +205,8 @@ class GeneralMobile
         if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
             $this->deviceType = new MobilePhone();
 
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
             $this->setCapability('physical_screen_width', 50);
             $this->setCapability('physical_screen_height', 84);
             $this->setCapability('columns', 12);
@@ -215,6 +227,8 @@ class GeneralMobile
         if ($this->utils->checkIfContains(array('Opera Mobi'))) {
             $this->deviceType = new MobilePhone();
 
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
             $this->setCapability('columns', 60);
@@ -233,6 +247,8 @@ class GeneralMobile
         if ($this->utils->checkIfContains(array('Opera Mini'))) {
             $this->deviceType = new MobilePhone();
 
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
             $this->setCapability('columns', 60);
@@ -251,6 +267,8 @@ class GeneralMobile
         if ($this->utils->checkIfContains(array('Windows Phone 6.5'))) {
             $this->deviceType = new MobilePhone();
 
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
             $this->setCapability('columns', 60);
@@ -270,6 +288,8 @@ class GeneralMobile
         if ($this->utils->checkIfContainsAll(array('Windows NT', 'Touch'))) {
             $this->deviceType = new Tablet();
 
+            $this->setCapability('code_name', 'general Tablet');
+            $this->setCapability('marketing_name', 'general Tablet');
             $this->setCapability('physical_screen_width', 100);
             $this->setCapability('physical_screen_height', 200);
             $this->setCapability('columns', 60);
@@ -286,6 +306,8 @@ class GeneralMobile
         if ($this->utils->checkIfContains(array('Mobile'))) {
             $this->deviceType = new MobilePhone();
 
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
             $this->setCapability('physical_screen_width', 34);
             $this->setCapability('physical_screen_height', 50);
             $this->setCapability('columns', 60);
@@ -298,6 +320,24 @@ class GeneralMobile
             $this->setCapability('has_qwerty_keyboard', false);
             $this->setCapability('pointing_method', 'stylus');
             $this->setCapability('colors', 4096);
+
+            return $this;
+        }
+        
+        if (preg_match('/Puffin\/[\d\.]+AT/', $this->useragent)) {
+            $this->deviceType = new Tablet();
+
+            $this->setCapability('code_name', 'general Tablet');
+            $this->setCapability('marketing_name', 'general Tablet');
+
+            return $this;
+        }
+        
+        if (preg_match('/Puffin\/[\d\.]+AP/', $this->useragent)) {
+            $this->deviceType = new MobilePhone();
+
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
 
             return $this;
         }

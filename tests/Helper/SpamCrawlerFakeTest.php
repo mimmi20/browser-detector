@@ -10,30 +10,14 @@ use BrowserDetector\Helper\SpamCrawlerFake;
 class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Helper\SpamCrawlerFake
-     */
-    private $object = null;
-
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp()
-    {
-        parent::setUp();
-
-        $this->object = new SpamCrawlerFake();
-    }
-
-    /**
      * @dataProvider providerIsSpamOrCrawlerPositive
      * @param string $agent
      */
     public function testIsSpamOrCrawlerPositive($agent)
     {
-        $this->object->setUserAgent($agent);
+        $object = new SpamCrawlerFake($agent);
 
-        self::assertTrue($this->object->isSpamOrCrawler());
+        self::assertTrue($object->isSpamOrCrawler());
     }
 
     public function providerIsSpamOrCrawlerPositive()
@@ -51,9 +35,9 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsFakeIePositive($agent)
     {
-        $this->object->setUserAgent($agent);
+        $object = new SpamCrawlerFake($agent);
 
-        self::assertTrue($this->object->isFakeIe());
+        self::assertTrue($object->isFakeIe());
     }
 
     public function providerIsFakeIePositive()
@@ -69,9 +53,9 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsFakeIeNegative($agent)
     {
-        $this->object->setUserAgent($agent);
+        $object = new SpamCrawlerFake($agent);
 
-        self::assertFalse($this->object->isFakeIe());
+        self::assertFalse($object->isFakeIe());
     }
 
     public function providerIsFakeIeNegative()
@@ -88,9 +72,9 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
      */
     public function testisFakeWindowsPositive($agent)
     {
-        $this->object->setUserAgent($agent);
+        $object = new SpamCrawlerFake($agent);
 
-        self::assertTrue($this->object->isFakeWindows());
+        self::assertTrue($object->isFakeWindows());
     }
 
     public function providerisFakeWindowsPositive()
@@ -106,9 +90,9 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
      */
     public function testisFakeWindowsNegative($agent)
     {
-        $this->object->setUserAgent($agent);
+        $object = new SpamCrawlerFake($agent);
 
-        self::assertFalse($this->object->isFakeWindows());
+        self::assertFalse($object->isFakeWindows());
     }
 
     public function providerisFakeWindowsNegative()
