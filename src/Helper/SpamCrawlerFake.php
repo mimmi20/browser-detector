@@ -295,75 +295,75 @@ class SpamCrawlerFake
 
     public function isFakeWindows()
     {
-        if (preg_match('/windows nt (7|8|9)/i', $agent)) {
+        if (preg_match('/windows nt (7|8|9)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/(os x \d{3,5}\)|like macos x|like Geccko)/i', $agent)) {
+        if (preg_match('/(os x \d{3,5}\)|like macos x|like Geccko)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/(x11; windows)/i', $agent)) {
+        if (preg_match('/(x11; windows)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/(windows x86\_64|compatible\-|window nt)/i', $agent)) {
+        if (preg_match('/(windows x86\_64|compatible\-|window nt)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/(app3lewebkit)/i', $agent)) {
+        if (preg_match('/(app3lewebkit)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/Mozilla\/(6|7|8|9)/i', $agent)) {
+        if (preg_match('/Mozilla\/(6|7|8|9)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/Mozilla\/(4|5)\.0(\+|  )/', $agent)) {
+        if (preg_match('/Mozilla\/(4|5)\.0(\+|  )/', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/Mozilla\/(4|5)\.0 \(;;/', $agent)) {
+        if (preg_match('/Mozilla\/(4|5)\.0 \(;;/', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/Mozilla\/(4|5)\.0 \(\)/', $agent)) {
+        if (preg_match('/Mozilla\/(4|5)\.0 \(\)/', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/^Mozilla /', $agent)) {
+        if (preg_match('/^Mozilla /', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/Mozilla\/4\.0 \(compatible\;Android\;/', $agent)) {
+        if (preg_match('/Mozilla\/4\.0 \(compatible\;Android\;/', $this->useragent)) {
             return true;
         }
 
-        if (!preg_match('/^\[FBAN/i', $agent) && preg_match('/^(\'|\"|\[|\]|\=|\\\x|%|\(|label\=|intel mac os x|agent\:|chrome)/i', $agent)) {
+        if (!preg_match('/^\[FBAN/i', $this->useragent) && preg_match('/^(\'|\"|\[|\]|\=|\\\x|%|\(|label\=|intel mac os x|agent\:|chrome)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/applewebkit\/1\.1/i', $agent)) {
+        if (preg_match('/applewebkit\/1\.1/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/(mozila|mozilmozilla|mozzila)/i', $agent)) {
+        if (preg_match('/(mozila|mozilmozilla|mozzila)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/trident\/4/i', $agent) && preg_match('/msie (9|10|11)/i', $agent)) {
+        if (preg_match('/trident\/4/i', $this->useragent) && preg_match('/msie (9|10|11)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/trident\/5/i', $agent) && preg_match('/msie (10|11)/i', $agent)) {
+        if (preg_match('/trident\/5/i', $this->useragent) && preg_match('/msie (10|11)/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/trident\/6/i', $agent) && preg_match('/msie 11/i', $agent)) {
+        if (preg_match('/trident\/6/i', $this->useragent) && preg_match('/msie 11/i', $this->useragent)) {
             return true;
         }
 
-        if (preg_match('/netscape/i', $agent) && preg_match('/msie/i', $agent)) {
+        if (preg_match('/netscape/i', $this->useragent) && preg_match('/msie/i', $this->useragent)) {
             return true;
         }
 

@@ -90,6 +90,10 @@ class Nokia5130c extends AbstractDevice implements DeviceHasSpecificPlatformInte
             return false;
         }
 
+        if ($this->utils->checkIfContains('5130c-2')) {
+            return false;
+        }
+
         return true;
     }
 

@@ -28,11 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
+use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -46,7 +47,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class SamsungSmN900A extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -55,9 +56,9 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Lumia 900',
+        'code_name'              => 'SM-N900A',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lumia 900',
+        'marketing_name'         => 'Galaxy Note 3 LTE (AT&T)',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,14 +68,14 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 57,
-        'physical_screen_height' => 94,
-        'columns'                => 12,
-        'rows'                   => 20,
+        'physical_screen_width'  => 71,
+        'physical_screen_height' => 127,
+        'columns'                => 25,
+        'rows'                   => 21,
         'max_image_width'        => 320,
-        'max_image_height'       => 480,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
         'dual_orientation'       => true,
         'colors'                 => 16777216,
         // sms
@@ -90,7 +91,7 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 900', true)) {
+        if (!$this->utils->checkIfContains('SM-N900A')) {
             return false;
         }
 
@@ -124,7 +125,7 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Nokia());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -134,17 +135,17 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Nokia());
+        return new Company(new Company\Samsung());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new WindowsPhoneOs($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent, $this->logger);
     }
 
     /**
@@ -158,7 +159,27 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
-        $wurflKey = 'nokia_lumia_900_ver1';
+        $wurflKey = 'samsung_sm_n900_ver1_suban44n900A';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $wurflKey = 'samsung_sm_n900_ver1_suban44n900A';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

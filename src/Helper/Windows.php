@@ -82,6 +82,14 @@ class Windows
             return false;
         }
 
+        if (preg_match('/firefox/i', $this->useragent) && preg_match('/anonym/i', $this->useragent)) {
+            return true;
+        }
+
+        if (preg_match('/trident/i', $this->useragent) && preg_match('/anonym/i', $this->useragent)) {
+            return true;
+        }
+
         $windows = array(
             'win10', 'win9', 'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
             'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',

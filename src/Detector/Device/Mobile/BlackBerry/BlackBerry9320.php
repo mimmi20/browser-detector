@@ -57,7 +57,7 @@ class BlackBerry9320 extends AbstractDevice implements DeviceHasWurflKeyInterfac
         // device
         'code_name'              => 'BlackBerry 9320',
         'model_extra_info'       => null,
-        'marketing_name'         => 'BlackBerry Curve 9320',
+        'marketing_name'         => 'Curve 9320',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

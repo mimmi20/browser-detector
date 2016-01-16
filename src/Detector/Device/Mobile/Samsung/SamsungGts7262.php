@@ -28,10 +28,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use BrowserDetector\Detector\Os\Bada;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -46,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class SamsungGts7262 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -55,28 +55,28 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Lumia 900',
+        'code_name'              => 'GT-S7262',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lumia 900',
-        'has_qwerty_keyboard'    => true,
+        'marketing_name'         => 'GT-S7262',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
+        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S7262_3G.rdf',
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 57,
-        'physical_screen_height' => 94,
-        'columns'                => 12,
-        'rows'                   => 20,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 20,
+        'rows'                   => 16,
         'max_image_width'        => 320,
         'max_image_height'       => 480,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,7 +90,7 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 900', true)) {
+        if (!$this->utils->checkIfContains('GT-S7262')) {
             return false;
         }
 
@@ -124,7 +124,7 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Nokia());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -134,17 +134,17 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Nokia());
+        return new Company(new Company\Samsung());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \BrowserDetector\Detector\Os\Bada
      */
     public function detectOs()
     {
-        return new WindowsPhoneOs($this->useragent, $this->logger);
+        return new Bada($this->useragent, $this->logger);
     }
 
     /**
@@ -158,7 +158,7 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
-        $wurflKey = 'nokia_lumia_900_ver1';
+        $wurflKey = 'samsung_gt_s7262_ver1';
 
         return $wurflKey;
     }

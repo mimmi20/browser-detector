@@ -51,7 +51,7 @@ class AmazonKfjwi extends AbstractDevice
         // device
         'code_name'              => 'KFJWI',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Kindle Fire HD 8.9',
+        'marketing_name'         => 'Kindle Fire HD 8.9 Wi-Fi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

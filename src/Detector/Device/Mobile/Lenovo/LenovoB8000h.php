@@ -51,7 +51,7 @@ class LenovoB8000h extends AbstractDevice
         // device
         'code_name'              => 'B8000-H',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Yoga B8000-H',
+        'marketing_name'         => 'Yoga Tablet 10 3G',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

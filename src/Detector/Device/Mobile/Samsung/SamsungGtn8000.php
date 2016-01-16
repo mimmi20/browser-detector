@@ -58,7 +58,7 @@ class SamsungGtn8000 extends AbstractDevice implements DeviceHasWurflKeyInterfac
         // device
         'code_name'              => 'GT-N8000',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Note 10.1',
+        'marketing_name'         => 'Galaxy Note 10.1 3G & WiFi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

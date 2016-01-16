@@ -161,6 +161,7 @@ class MobileDevice
             'mtk',
             'onebrowser',
             'qtcarbrowser',
+            'wap browser/maui',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {
@@ -214,6 +215,10 @@ class MobileDevice
         $windowsHelper = new Windows($this->useragent);
 
         if ($windowsHelper->isWindows() && $this->utils->checkIfContains('touch', true)) {
+            return true;
+        }
+
+        if (preg_match('/Puffin\/[\d\.]+(I|A)(T|P)/', $this->useragent)) {
             return true;
         }
 

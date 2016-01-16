@@ -31,14 +31,10 @@
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
-use UaDeviceType\MobilePhone;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Os\Symbianos;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +42,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class Nokia109 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -55,11 +51,11 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Lumia 900',
+        'code_name'              => '109',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lumia 900',
+        'marketing_name'         => '109',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
+        'pointing_method'        => null,
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -67,16 +63,16 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 57,
-        'physical_screen_height' => 94,
-        'columns'                => 12,
-        'rows'                   => 20,
-        'max_image_width'        => 320,
-        'max_image_height'       => 480,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 128,
+        'resolution_height'      => 160,
+        'dual_orientation'       => false,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -90,7 +86,7 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 900', true)) {
+        if (!$this->utils->checkIfContains('Nokia109')) {
             return false;
         }
 
@@ -140,26 +136,10 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {
-        return new WindowsPhoneOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'nokia_lumia_900_ver1';
-
-        return $wurflKey;
+        return new Symbianos($this->useragent, $this->logger);
     }
 }

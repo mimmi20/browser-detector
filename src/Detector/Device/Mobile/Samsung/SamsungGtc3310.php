@@ -55,7 +55,7 @@ class SamsungGtc3310 extends AbstractDevice implements DeviceHasWurflKeyInterfac
         // device
         'code_name'              => 'GT-C3310',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT-C3310',
+        'marketing_name'         => 'Champ Deluxe',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => '',
 

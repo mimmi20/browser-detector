@@ -2213,7 +2213,9 @@ class BrowserFactory
             $browser = new UnknownBrowser($agent, $logger);
         }
 
-        $browser->setCache($cache);
+        if (null !== $cache) {
+            $browser->setCache($cache);
+        }
 
         return $browser;
     }
