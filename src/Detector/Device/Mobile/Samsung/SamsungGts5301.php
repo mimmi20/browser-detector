@@ -51,7 +51,7 @@ class SamsungGts5301 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S5301',
+        'code_name'              => 'GT-S5301',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Pocket Plus',
         'has_qwerty_keyboard'    => true,

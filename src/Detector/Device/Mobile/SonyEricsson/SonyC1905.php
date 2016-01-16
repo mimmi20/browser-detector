@@ -51,7 +51,7 @@ class SonyC1905 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C1905',
+        'code_name'              => 'C1905',
         'model_extra_info'       => null,
         'marketing_name'         => 'C1905',
         'has_qwerty_keyboard'    => true,

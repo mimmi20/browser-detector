@@ -51,7 +51,7 @@ class SamsungGts6810p extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S6810P',
+        'code_name'              => 'GT-S6810P',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Fame',
         'has_qwerty_keyboard'    => true,

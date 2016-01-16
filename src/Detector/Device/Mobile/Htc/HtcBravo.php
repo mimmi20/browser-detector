@@ -51,7 +51,7 @@ class HtcBravo extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Bravo',
+        'code_name'              => 'Bravo',
         'model_extra_info'       => null,
         'marketing_name'         => 'Bravo',
         'has_qwerty_keyboard'    => true,

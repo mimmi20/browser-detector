@@ -51,7 +51,7 @@ class SamsungGtn7108 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-N7108',
+        'code_name'              => 'GT-N7108',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note II',
         'has_qwerty_keyboard'    => true,

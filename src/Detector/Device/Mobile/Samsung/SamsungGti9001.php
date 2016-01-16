@@ -55,7 +55,7 @@ class SamsungGti9001 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9001',
+        'code_name'              => 'GT-I9001',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-I9001',
         'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i9001_ver1

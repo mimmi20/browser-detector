@@ -55,7 +55,7 @@ class MdLifetabS785x extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Lifetab S785X',
+        'code_name'              => 'Lifetab S785X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lifetab S785X',
         'has_qwerty_keyboard'    => true,

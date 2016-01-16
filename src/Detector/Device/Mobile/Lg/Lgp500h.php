@@ -51,7 +51,7 @@ class Lgp500h extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P500h',
+        'code_name'              => 'P500h',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus One',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class DenverTad10023 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'TAD-10023',
+        'code_name'              => 'TAD-10023',
         'model_extra_info'       => null,
         'marketing_name'         => 'TAD-10023',
         'has_qwerty_keyboard'    => true,

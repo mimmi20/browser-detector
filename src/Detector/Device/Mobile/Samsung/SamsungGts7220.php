@@ -55,7 +55,7 @@ class SamsungGts7220 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S7220',
+        'code_name'              => 'GT-S7220',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S7220',
         'has_qwerty_keyboard'    => false,

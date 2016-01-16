@@ -51,7 +51,7 @@ class ZteBlade3 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Blade III',
+        'code_name'              => 'Blade III',
         'model_extra_info'       => null,
         'marketing_name'         => 'Blade III',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungContinuumI400 extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Continuum I400',
+        'code_name'              => 'Continuum I400',
         'model_extra_info'       => null,
         'marketing_name'         => 'Continuum I400',
         'has_qwerty_keyboard'    => false,

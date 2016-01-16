@@ -51,7 +51,7 @@ class EfoxSmartE5 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SMART E5',
+        'code_name'              => 'SMART E5',
         'model_extra_info'       => null,
         'marketing_name'         => 'SMART E5',
         'has_qwerty_keyboard'    => true,

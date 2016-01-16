@@ -55,7 +55,7 @@ class MotorolaXt925 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT925',
+        'code_name'              => 'XT925',
         'model_extra_info'       => null,
         'marketing_name'         => 'XT925',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungGti9505x extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9505X',
+        'code_name'              => 'GT-I9505X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S4',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class V860 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'code_name'             => 'v860',
+        'code_name'              => 'v860',
         'model_extra_info'       => 'Vodafone',
         'marketing_name'         => 'Smart II 3G',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class BlaupunktEndeavour1010 extends AbstractDevice implements DeviceHasSpecific
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Endeavour 1010',
+        'code_name'              => 'Endeavour 1010',
         'model_extra_info'       => null,
         'marketing_name'         => 'Endeavour 1010',
         'has_qwerty_keyboard'    => true,

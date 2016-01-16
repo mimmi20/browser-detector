@@ -51,7 +51,7 @@ class SonyC6503XperiaZl extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C6503',
+        'code_name'              => 'C6503',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia ZL LTE',
         'has_qwerty_keyboard'    => true,

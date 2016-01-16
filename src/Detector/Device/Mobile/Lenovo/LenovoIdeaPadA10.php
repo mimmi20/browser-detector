@@ -49,7 +49,7 @@ class LenovoIdeaPadA10 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'IdeaPad A10',
+        'code_name'              => 'IdeaPad A10',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaPad A10',
         'has_qwerty_keyboard'    => true,

@@ -51,9 +51,9 @@ class ViewSonicViewPad10s extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ViewPad 10S',
+        'code_name'              => 'ViewPad 10S',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'ViewPad 10S',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

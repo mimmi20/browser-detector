@@ -56,7 +56,7 @@ class SamsungGalaxyNexus extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Galaxy Nexus',
+        'code_name'              => 'Galaxy Nexus',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Nexus',
         'has_qwerty_keyboard'    => true, // wurflkey: samsung_galaxy_nexus_ver1

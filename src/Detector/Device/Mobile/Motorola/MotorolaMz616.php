@@ -55,7 +55,7 @@ class MotorolaMz616 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MZ616',
+        'code_name'              => 'MZ616',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xoom 2 3G',
         'has_qwerty_keyboard'    => true,

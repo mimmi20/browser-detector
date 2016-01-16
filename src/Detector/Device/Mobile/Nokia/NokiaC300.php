@@ -55,9 +55,9 @@ class NokiaC300 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C3-00',
+        'code_name'              => 'C3-00',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'C3',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'joystick',
         // product info

@@ -49,7 +49,7 @@ class BlaupunktEndeavour101l extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Endeavour 101L',
+        'code_name'              => 'Endeavour 101L',
         'model_extra_info'       => null,
         'marketing_name'         => 'Endeavour 101L',
         'has_qwerty_keyboard'    => true,

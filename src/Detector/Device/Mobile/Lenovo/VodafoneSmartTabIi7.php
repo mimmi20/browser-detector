@@ -51,7 +51,7 @@ class VodafoneSmartTabIi7 extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SmartTab II 7',
+        'code_name'              => 'SmartTab II 7',
         'model_extra_info'       => null,
         'marketing_name'         => 'SmartTab II 7',
         'has_qwerty_keyboard'    => true,

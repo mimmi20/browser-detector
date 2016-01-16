@@ -53,9 +53,9 @@ class Yuandao extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general YUANDAO Device',
+        'code_name'              => 'general YUANDAO Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general YUANDAO Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -51,7 +51,7 @@ class ArchosFamilyPad2 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Family Pad 2',
+        'code_name'              => 'Family Pad 2',
         'model_extra_info'       => null,
         'marketing_name'         => 'Family Pad 2',
         'has_qwerty_keyboard'    => true,

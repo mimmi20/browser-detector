@@ -51,9 +51,9 @@ class DlinkDsm380 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'DSM 380',
+        'code_name'              => 'DSM 380',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'DSM 380',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

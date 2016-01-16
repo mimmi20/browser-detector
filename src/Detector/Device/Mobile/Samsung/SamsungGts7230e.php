@@ -55,7 +55,7 @@ class SamsungGts7230e extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S7230E',
+        'code_name'              => 'GT-S7230E',
         'model_extra_info'       => 'Orange',
         'marketing_name'         => 'Wave 723',
         'has_qwerty_keyboard'    => false,

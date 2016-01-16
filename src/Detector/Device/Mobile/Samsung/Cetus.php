@@ -51,7 +51,7 @@ class Cetus extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Cetus',
+        'code_name'              => 'Cetus',
         'model_extra_info'       => null,
         'marketing_name'         => 'Cetus',
         'has_qwerty_keyboard'    => false,

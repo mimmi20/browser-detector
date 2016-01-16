@@ -51,7 +51,7 @@ class SonyEricssonU20a extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'U20a',
+        'code_name'              => 'U20a',
         'model_extra_info'       => null,
         'marketing_name'         => 'U20a',
         'has_qwerty_keyboard'    => true,

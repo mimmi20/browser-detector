@@ -55,7 +55,7 @@ class HuaweiU8650 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'U8650',
+        'code_name'              => 'U8650',
         'model_extra_info'       => null,
         'marketing_name'         => 'Sonic',
         'has_qwerty_keyboard'    => true,

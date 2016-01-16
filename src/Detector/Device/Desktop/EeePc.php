@@ -49,7 +49,7 @@ class EeePc extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'eee pc',
+        'code_name'              => 'eee pc',
         'model_extra_info'       => null,
         'marketing_name'         => 'eee pc',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class AcerE140 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E140',
+        'code_name'              => 'E140',
         'model_extra_info'       => null,
         'marketing_name'         => 'E140',
         'has_qwerty_keyboard'    => true,

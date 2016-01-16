@@ -51,7 +51,7 @@ class Archos50Titanium extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => '50 Titanium',
+        'code_name'              => '50 Titanium',
         'model_extra_info'       => null,
         'marketing_name'         => '50 Titanium',
         'has_qwerty_keyboard'    => true,

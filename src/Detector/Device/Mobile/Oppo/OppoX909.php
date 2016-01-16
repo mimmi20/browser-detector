@@ -51,7 +51,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'X909',
+        'code_name'              => 'X909',
         'model_extra_info'       => null,
         'marketing_name'         => 'Find 5 X909',
         'has_qwerty_keyboard'    => true,

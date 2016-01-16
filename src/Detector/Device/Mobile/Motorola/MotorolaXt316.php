@@ -51,7 +51,7 @@ class MotorolaXt316 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT316',
+        'code_name'              => 'XT316',
         'model_extra_info'       => null,
         'marketing_name'         => 'XT316',
         'has_qwerty_keyboard'    => true,

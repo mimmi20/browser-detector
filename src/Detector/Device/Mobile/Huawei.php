@@ -53,7 +53,7 @@ class Huawei extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Huawei Device',
+        'code_name'              => 'general Huawei Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Huawei Device',
         'has_qwerty_keyboard'    => true,

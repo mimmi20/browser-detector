@@ -55,7 +55,7 @@ class SamsungSmT900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T900',
+        'code_name'              => 'SM-T900',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab Pro 12.2',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class Tolino extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Tolino Device',
+        'code_name'              => 'general Tolino Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Tolino Device',
         'has_qwerty_keyboard'    => true,

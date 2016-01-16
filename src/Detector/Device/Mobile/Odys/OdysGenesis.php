@@ -51,9 +51,9 @@ class OdysGenesis extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Genesis',
+        'code_name'              => 'Genesis',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'Genesis',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

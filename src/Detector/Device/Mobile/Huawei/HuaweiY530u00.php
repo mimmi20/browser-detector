@@ -55,7 +55,7 @@ class HuaweiY530u00 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Y530-U00',
+        'code_name'              => 'Y530-U00',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend Y530-U00',
         'has_qwerty_keyboard'    => true,

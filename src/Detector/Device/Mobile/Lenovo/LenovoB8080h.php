@@ -51,7 +51,7 @@ class LenovoB8080h extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'B8080-H',
+        'code_name'              => 'B8080-H',
         'model_extra_info'       => null,
         'marketing_name'         => 'Yoga Tab 10 HD+',
         'has_qwerty_keyboard'    => true,

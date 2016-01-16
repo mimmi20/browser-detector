@@ -51,7 +51,7 @@ class SamsungSghE250 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-E250',
+        'code_name'              => 'SGH-E250',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-E250',
         'has_qwerty_keyboard'    => false,

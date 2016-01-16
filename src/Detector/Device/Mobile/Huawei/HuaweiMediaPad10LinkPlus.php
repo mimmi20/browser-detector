@@ -51,7 +51,7 @@ class HuaweiMediaPad10LinkPlus extends AbstractDevice implements DeviceHasSpecif
      */
     protected $properties = array(
         // device
-        'code_name'             => 'S7-301w',
+        'code_name'              => 'S7-301w',
         'model_extra_info'       => null,
         'marketing_name'         => 'MediaPad 10 Link+',
         'has_qwerty_keyboard'    => true,

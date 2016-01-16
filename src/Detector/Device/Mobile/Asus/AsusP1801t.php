@@ -51,7 +51,7 @@ class AsusP1801t extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P1801-T',
+        'code_name'              => 'P1801-T',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tablet AiO',
         'has_qwerty_keyboard'    => true,

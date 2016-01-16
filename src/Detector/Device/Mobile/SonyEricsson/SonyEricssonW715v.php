@@ -51,7 +51,7 @@ class SonyEricssonW715v extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'W715v',
+        'code_name'              => 'W715v',
         'model_extra_info'       => null,
         'marketing_name'         => 'W715v',
         'has_qwerty_keyboard'    => true,

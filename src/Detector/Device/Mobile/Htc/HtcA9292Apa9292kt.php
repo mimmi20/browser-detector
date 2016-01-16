@@ -56,7 +56,7 @@ class HtcA9292Apa9292kt extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'             => '9292',
+        'code_name'              => '9292',
         'model_extra_info'       => null,
         'marketing_name'         => 'EVO 4G',
         'has_qwerty_keyboard'    => false,

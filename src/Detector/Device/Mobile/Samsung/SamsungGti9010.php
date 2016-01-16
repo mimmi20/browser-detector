@@ -55,7 +55,7 @@ class SamsungGti9010 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9010',
+        'code_name'              => 'GT-I9010',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S Armani',
         'has_qwerty_keyboard'    => false,

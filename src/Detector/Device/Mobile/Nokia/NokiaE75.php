@@ -51,9 +51,9 @@ class NokiaE75 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E75',
+        'code_name'              => 'E75',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'E75',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

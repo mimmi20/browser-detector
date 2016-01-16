@@ -51,7 +51,7 @@ class DoCoMoP905i extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P905i',
+        'code_name'              => 'P905i',
         'model_extra_info'       => null,
         'marketing_name'         => 'P905i',
         'has_qwerty_keyboard'    => true,

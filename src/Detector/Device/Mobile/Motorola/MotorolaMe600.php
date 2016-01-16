@@ -51,7 +51,7 @@ class MotorolaMe600 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ME600',
+        'code_name'              => 'ME600',
         'model_extra_info'       => null,
         'marketing_name'         => 'ME600',
         'has_qwerty_keyboard'    => true,

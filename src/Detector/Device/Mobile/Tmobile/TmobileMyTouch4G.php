@@ -55,9 +55,9 @@ class TmobileMyTouch4G extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'myTouch4G',
+        'code_name'              => 'myTouch4G',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'myTouch4G',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

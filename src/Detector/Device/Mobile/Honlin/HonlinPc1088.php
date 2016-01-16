@@ -49,7 +49,7 @@ class HonlinPc1088 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PC1088',
+        'code_name'              => 'PC1088',
         'model_extra_info'       => null,
         'marketing_name'         => 'PC1088',
         'has_qwerty_keyboard'    => true,

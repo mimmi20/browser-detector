@@ -53,7 +53,7 @@ class Feiteng extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Feiteng Device',
+        'code_name'              => 'general Feiteng Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Feiteng Device',
         'has_qwerty_keyboard'    => true,

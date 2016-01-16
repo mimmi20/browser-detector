@@ -55,9 +55,9 @@ class NokiaX205 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'X2-05',
+        'code_name'              => 'X2-05',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'X2',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => null,
         // product info

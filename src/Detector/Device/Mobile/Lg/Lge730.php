@@ -51,7 +51,7 @@ class Lge730 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E730',
+        'code_name'              => 'E730',
         'model_extra_info'       => null,
         'marketing_name'         => 'E730',
         'has_qwerty_keyboard'    => true,

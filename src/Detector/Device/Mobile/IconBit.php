@@ -51,7 +51,7 @@ class IconBit extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general IconBit Device',
+        'code_name'              => 'general IconBit Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general IconBit Device',
         'has_qwerty_keyboard'    => true,

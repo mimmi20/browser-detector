@@ -56,7 +56,7 @@ class Lgp500 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P500',
+        'code_name'              => 'P500',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus One',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class AlcatelOt6033X extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-6033X',
+        'code_name'              => 'OT-6033X',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch Idol Ultra',
         'has_qwerty_keyboard'    => true,

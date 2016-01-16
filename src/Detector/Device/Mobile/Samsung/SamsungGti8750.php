@@ -51,7 +51,7 @@ class SamsungGti8750 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I8750',
+        'code_name'              => 'GT-I8750',
         'model_extra_info'       => null,
         'marketing_name'         => 'ATIV Odyssey',
         'has_qwerty_keyboard'    => true,

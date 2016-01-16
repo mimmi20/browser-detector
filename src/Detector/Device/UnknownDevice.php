@@ -48,7 +48,7 @@ class UnknownDevice extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'unknown',
+        'code_name'              => 'unknown',
         'model_extra_info'       => null,
         'marketing_name'         => 'unknown',
         'has_qwerty_keyboard'    => false,

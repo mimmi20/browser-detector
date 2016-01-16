@@ -51,7 +51,7 @@ class SamsungGti6410 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I6410',
+        'code_name'              => 'GT-I6410',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-I6410',
         'has_qwerty_keyboard'    => false,

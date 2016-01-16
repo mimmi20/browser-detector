@@ -49,7 +49,7 @@ class MacBook extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MacBook',
+        'code_name'              => 'MacBook',
         'model_extra_info'       => null,
         'marketing_name'         => 'MacBook',
         'has_qwerty_keyboard'    => true,

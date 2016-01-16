@@ -51,7 +51,7 @@ class ZteV9 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'V9',
+        'code_name'              => 'V9',
         'model_extra_info'       => null,
         'marketing_name'         => 'V9',
         'has_qwerty_keyboard'    => true,

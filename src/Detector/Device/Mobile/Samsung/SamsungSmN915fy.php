@@ -49,7 +49,7 @@ class SamsungSmN915fy extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-N915FY',
+        'code_name'              => 'SM-N915FY',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 4 LTE',
         'has_qwerty_keyboard'    => true,

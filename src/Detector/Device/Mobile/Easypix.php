@@ -53,7 +53,7 @@ class Easypix extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Easypix Device',
+        'code_name'              => 'general Easypix Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Easypix Device', // wurflkey: Easypix_touch_ver1
         'has_qwerty_keyboard'    => true,

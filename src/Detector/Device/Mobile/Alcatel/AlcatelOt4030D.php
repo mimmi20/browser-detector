@@ -51,7 +51,7 @@ class AlcatelOt4030D extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-4030D',
+        'code_name'              => 'OT-4030D',
         'model_extra_info'       => null,
         'marketing_name'         => 'S-POP',
         'has_qwerty_keyboard'    => true,

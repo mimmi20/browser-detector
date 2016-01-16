@@ -53,7 +53,7 @@ class Htm extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general HTM Device',
+        'code_name'              => 'general HTM Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general HTM Device',
         'has_qwerty_keyboard'    => true,

@@ -51,9 +51,9 @@ class Smartpad extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Smartpad',
+        'code_name'              => 'Smartpad',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'Smartpad',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

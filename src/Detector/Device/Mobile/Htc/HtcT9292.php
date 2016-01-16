@@ -55,7 +55,7 @@ class HtcT9292 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'T9292',
+        'code_name'              => 'T9292',
         'model_extra_info'       => null,
         'marketing_name'         => 'HD7',
         'has_qwerty_keyboard'    => true,

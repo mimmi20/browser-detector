@@ -51,7 +51,7 @@ class Meizu extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Meizu Device',
+        'code_name'              => 'general Meizu Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Meizu Device',
         'has_qwerty_keyboard'    => true,

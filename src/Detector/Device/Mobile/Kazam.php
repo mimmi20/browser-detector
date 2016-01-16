@@ -53,7 +53,7 @@ class Kazam extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Kazam Device',
+        'code_name'              => 'general Kazam Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Kazam Device',
         'has_qwerty_keyboard'    => true,

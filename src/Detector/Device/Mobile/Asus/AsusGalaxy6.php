@@ -51,7 +51,7 @@ class AsusGalaxy6 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Galaxy6',
+        'code_name'              => 'Galaxy6',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy6',
         'has_qwerty_keyboard'    => true,

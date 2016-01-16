@@ -51,7 +51,7 @@ class SamsungGte2222 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-E2222',
+        'code_name'              => 'GT-E2222',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-E2222',
         'has_qwerty_keyboard'    => false,

@@ -56,7 +56,7 @@ class SonyD2303 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'D2303',
+        'code_name'              => 'D2303',
         'model_extra_info'       => null,
         'marketing_name'         => 'D2303',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class HtcNexusHd2 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'HD2',
+        'code_name'              => 'HD2',
         'model_extra_info'       => 'Nexus HD2 ROM',
         'marketing_name'         => 'HD2',
         'has_qwerty_keyboard'    => true,

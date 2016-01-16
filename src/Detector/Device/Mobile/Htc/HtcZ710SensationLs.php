@@ -51,7 +51,7 @@ class HtcZ710SensationLs extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Z710',
+        'code_name'              => 'Z710',
         'model_extra_info'       => null,
         'marketing_name'         => 'Sensation LS',
         'has_qwerty_keyboard'    => true,

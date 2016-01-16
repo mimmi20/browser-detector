@@ -51,7 +51,7 @@ class SonyC2105XperiaL extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C2105',
+        'code_name'              => 'C2105',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia L',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class CatTablet extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Tablet',
+        'code_name'              => 'Tablet',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tablet',
         'has_qwerty_keyboard'    => true,

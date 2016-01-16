@@ -55,7 +55,7 @@ class SamsungGts7500 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S7500',
+        'code_name'              => 'GT-S7500',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Ace Plus',
         'has_qwerty_keyboard'    => true,

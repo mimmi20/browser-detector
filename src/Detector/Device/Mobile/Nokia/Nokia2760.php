@@ -51,9 +51,9 @@ class Nokia2760 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => '2760',
+        'code_name'              => '2760',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '2760',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

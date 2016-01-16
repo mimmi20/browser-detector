@@ -51,7 +51,7 @@ class FujitsuM532 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'M532',
+        'code_name'              => 'M532',
         'model_extra_info'       => null,
         'marketing_name'         => 'STYLISTIC M532',
         'has_qwerty_keyboard'    => true,

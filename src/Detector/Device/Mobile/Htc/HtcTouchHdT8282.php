@@ -53,7 +53,7 @@ class HtcTouchHdT8282 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Touch HD T8282',
+        'code_name'              => 'Touch HD T8282',
         'model_extra_info'       => null,
         'marketing_name'         => 'BlackStone',
         'has_qwerty_keyboard'    => false,

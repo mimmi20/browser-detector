@@ -51,7 +51,7 @@ class QmobileA10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A10',
+        'code_name'              => 'A10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Noir A10',
         'has_qwerty_keyboard'    => true,

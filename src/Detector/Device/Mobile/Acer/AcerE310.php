@@ -56,7 +56,7 @@ class AcerE310 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E310', // wurflkey: acer_e310_ver1_suban221
+        'code_name'              => 'E310', // wurflkey: acer_e310_ver1_suban221
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid Mini', // wurflkey: acer_e310_ver1_suban221
         'has_qwerty_keyboard'    => false, // wurflkey: acer_e310_ver1_suban221

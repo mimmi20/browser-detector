@@ -51,7 +51,7 @@ class WikoGetaway extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Getaway',
+        'code_name'              => 'Getaway',
         'model_extra_info'       => null,
         'marketing_name'         => 'Getaway',
         'has_qwerty_keyboard'    => true,

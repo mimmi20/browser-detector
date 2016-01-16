@@ -55,7 +55,7 @@ class SamsungSch720 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SCH-R720',
+        'code_name'              => 'SCH-R720',
         'model_extra_info'       => 'MetroPCS',
         'marketing_name'         => 'Admire',
         'has_qwerty_keyboard'    => true,

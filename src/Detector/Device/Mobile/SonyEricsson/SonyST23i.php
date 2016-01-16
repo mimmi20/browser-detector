@@ -55,7 +55,7 @@ class SonyST23i extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ST23i',
+        'code_name'              => 'ST23i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia miro',
         'has_qwerty_keyboard'    => true,

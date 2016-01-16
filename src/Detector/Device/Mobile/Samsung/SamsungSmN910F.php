@@ -55,7 +55,7 @@ class SamsungSmN910F extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-N910F',
+        'code_name'              => 'SM-N910F',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 4 LTE',
         'has_qwerty_keyboard'    => true,

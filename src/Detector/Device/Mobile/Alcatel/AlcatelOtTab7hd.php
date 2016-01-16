@@ -51,7 +51,7 @@ class AlcatelOtTab7hd extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-TAB7HD',
+        'code_name'              => 'OT-TAB7HD',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch Tab 7HD',
         'has_qwerty_keyboard'    => true,

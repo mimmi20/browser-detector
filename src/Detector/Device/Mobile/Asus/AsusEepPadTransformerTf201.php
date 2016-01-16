@@ -56,7 +56,7 @@ class AsusEepPadTransformerTf201 extends AbstractDevice implements DeviceHasWurf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Eee Pad TF201',
+        'code_name'              => 'Eee Pad TF201',
         'model_extra_info'       => null,
         'marketing_name'         => 'Transformer Prime',
         'has_qwerty_keyboard'    => true,

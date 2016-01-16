@@ -49,7 +49,7 @@ class SamsungGts5780 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S5780',
+        'code_name'              => 'GT-S5780',
         'model_extra_info'       => null,
         'marketing_name'         => 'Wave 578',
         'has_qwerty_keyboard'    => false,

@@ -55,7 +55,7 @@ class NokiaLumia630 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Lumia 630',
+        'code_name'              => 'Lumia 630',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lumia 630',
         'has_qwerty_keyboard'    => true,

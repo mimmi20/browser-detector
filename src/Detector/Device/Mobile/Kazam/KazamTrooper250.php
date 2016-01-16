@@ -51,7 +51,7 @@ class KazamTrooper250 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Trooper 2 5.0',
+        'code_name'              => 'Trooper 2 5.0',
         'model_extra_info'       => null,
         'marketing_name'         => 'Trooper 2 5.0',
         'has_qwerty_keyboard'    => true,

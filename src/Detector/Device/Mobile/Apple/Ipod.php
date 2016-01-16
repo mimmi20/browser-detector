@@ -54,7 +54,7 @@ class Ipod extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'iPod Touch',
+        'code_name'              => 'iPod Touch',
         'model_extra_info'       => null,
         'marketing_name'         => 'iPod Touch',
         'has_qwerty_keyboard'    => true,

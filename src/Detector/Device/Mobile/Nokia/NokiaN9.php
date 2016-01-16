@@ -55,9 +55,9 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'N9',
+        'code_name'              => 'N9',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'N9',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

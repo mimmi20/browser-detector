@@ -51,7 +51,7 @@ class VodafoneSmartTab4 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Smart Tab 4',
+        'code_name'              => 'Smart Tab 4',
         'model_extra_info'       => null,
         'marketing_name'         => 'Smart Tab 4',
         'has_qwerty_keyboard'    => true,

@@ -57,7 +57,7 @@ class SamsungGtp5220 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-P5220',
+        'code_name'              => 'GT-P5220',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 3 10.1 LTE',
         'has_qwerty_keyboard'    => true,

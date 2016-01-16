@@ -51,7 +51,7 @@ class Nokia309 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => '309',
+        'code_name'              => '309',
         'model_extra_info'       => null,
         'marketing_name'         => 'Asha 309',
         'has_qwerty_keyboard'    => true,

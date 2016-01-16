@@ -55,7 +55,7 @@ class HtcMdaVarioV extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MDA Vario V',
+        'code_name'              => 'MDA Vario V',
         'model_extra_info'       => null,
         'marketing_name'         => 'MDA Vario V',
         'has_qwerty_keyboard'    => true,

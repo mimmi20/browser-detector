@@ -55,7 +55,7 @@ class Lgp920 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P920',
+        'code_name'              => 'P920',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus 3D',
         'has_qwerty_keyboard'    => true,

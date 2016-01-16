@@ -55,7 +55,7 @@ class SamsungGti8000 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I8000',
+        'code_name'              => 'GT-I8000',
         'model_extra_info'       => null,
         'marketing_name'         => 'Omnia II',
         'has_qwerty_keyboard'    => false,

@@ -55,7 +55,7 @@ class NokiaLumia710 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Lumia 710',
+        'code_name'              => 'Lumia 710',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lumia 710',
         'has_qwerty_keyboard'    => true,

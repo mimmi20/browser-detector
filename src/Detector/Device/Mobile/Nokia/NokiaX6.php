@@ -51,9 +51,9 @@ class NokiaX6 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'X6',
+        'code_name'              => 'X6',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'X6',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

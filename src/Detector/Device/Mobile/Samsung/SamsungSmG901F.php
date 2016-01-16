@@ -55,7 +55,7 @@ class SamsungSmG901F extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-G901F',
+        'code_name'              => 'SM-G901F',
         'model_extra_info'       => 'LTE-A',
         'marketing_name'         => 'Galaxy S5 Plus',
         'has_qwerty_keyboard'    => true,

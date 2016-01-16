@@ -51,7 +51,7 @@ class P4dSirius extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P4D Sirius',
+        'code_name'              => 'P4D Sirius',
         'model_extra_info'       => null,
         'marketing_name'         => 'P4D Sirius',
         'has_qwerty_keyboard'    => true,

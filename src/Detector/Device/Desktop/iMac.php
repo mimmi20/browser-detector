@@ -50,7 +50,7 @@ class Imac extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'iMac',
+        'code_name'              => 'iMac',
         'model_extra_info'       => null,
         'marketing_name'         => 'iMac',
         'has_qwerty_keyboard'    => true,

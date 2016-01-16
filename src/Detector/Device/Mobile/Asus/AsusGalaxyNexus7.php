@@ -56,7 +56,7 @@ class AsusGalaxyNexus7 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Nexus 7',
+        'code_name'              => 'Nexus 7',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nexus 7',
         'has_qwerty_keyboard'    => true, //wurflkey: google_nexus7_ver1

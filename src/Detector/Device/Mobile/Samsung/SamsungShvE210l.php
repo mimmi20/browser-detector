@@ -51,7 +51,7 @@ class SamsungShvE210l extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SHV-E210L',
+        'code_name'              => 'SHV-E210L',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S III',
         'has_qwerty_keyboard'    => false,

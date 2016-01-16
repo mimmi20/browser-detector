@@ -51,7 +51,7 @@ class ZopoZp980 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ZP980',
+        'code_name'              => 'ZP980',
         'model_extra_info'       => null,
         'marketing_name'         => 'ZP980 SCORPIO',
         'has_qwerty_keyboard'    => true,

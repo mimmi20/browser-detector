@@ -55,7 +55,7 @@ class AcerLiquidZ150 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Z150',
+        'code_name'              => 'Z150',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid Z5 Duo',
         'has_qwerty_keyboard'    => true,

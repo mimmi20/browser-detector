@@ -51,7 +51,7 @@ class SonyEricssonR800x extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'R800x',
+        'code_name'              => 'R800x',
         'model_extra_info'       => null,
         'marketing_name'         => 'R800x',
         'has_qwerty_keyboard'    => true,

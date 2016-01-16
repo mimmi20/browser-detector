@@ -51,7 +51,7 @@ class TolinoShine extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Tolino Shine',
+        'code_name'              => 'Tolino Shine',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tolino Shine',
         'has_qwerty_keyboard'    => true,

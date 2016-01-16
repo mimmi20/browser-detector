@@ -51,7 +51,7 @@ class PipoM6pro extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Q977',
+        'code_name'              => 'Q977',
         'model_extra_info'       => null,
         'marketing_name'         => 'M6 pro',
         'has_qwerty_keyboard'    => true,

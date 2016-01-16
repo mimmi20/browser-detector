@@ -51,7 +51,7 @@ class LgGd880 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GD880',
+        'code_name'              => 'GD880',
         'model_extra_info'       => null,
         'marketing_name'         => 'GD880',
         'has_qwerty_keyboard'    => true,

@@ -51,9 +51,9 @@ class ToshibaTg01 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'TG01',
+        'code_name'              => 'TG01',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'TG01',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

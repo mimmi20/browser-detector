@@ -53,7 +53,7 @@ class Thl extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general THL Device',
+        'code_name'              => 'general THL Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general THL Device', // wurflkey: Thl_touch_ver1
         'has_qwerty_keyboard'    => true,

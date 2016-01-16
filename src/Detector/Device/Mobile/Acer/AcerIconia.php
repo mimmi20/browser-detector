@@ -51,7 +51,7 @@ class AcerIconia extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Iconia',
+        'code_name'              => 'Iconia',
         'model_extra_info'       => null,
         'marketing_name'         => 'Iconia',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class SonyEricssonWT19i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'WT19i',
+        'code_name'              => 'WT19i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Live',
         'has_qwerty_keyboard'    => true,

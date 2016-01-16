@@ -51,7 +51,7 @@ class BaseLutea3 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Lutea 3',
+        'code_name'              => 'Lutea 3',
         'model_extra_info'       => 'for Base',
         'marketing_name'         => 'Lutea 3',
         'has_qwerty_keyboard'    => true,

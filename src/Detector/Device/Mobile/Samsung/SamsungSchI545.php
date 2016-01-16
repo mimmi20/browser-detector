@@ -49,7 +49,7 @@ class SamsungSchI545 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SCH-I545',
+        'code_name'              => 'SCH-I545',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid Charge',
         'has_qwerty_keyboard'    => false,

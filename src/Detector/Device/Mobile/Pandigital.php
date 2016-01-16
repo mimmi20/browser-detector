@@ -53,7 +53,7 @@ class Pandigital extends AbstractDevice implements DeviceHasChildrenInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Pandigital Device',
+        'code_name'              => 'general Pandigital Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Pandigital Device',
         'has_qwerty_keyboard'    => true,

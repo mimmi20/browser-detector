@@ -51,7 +51,7 @@ class PrestigioPap5000tDuo extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PAP5000TDUO',
+        'code_name'              => 'PAP5000TDUO',
         'model_extra_info'       => null,
         'marketing_name'         => 'Multipad 2 Ultra Duo 8.0 3G',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class XiaomiMi2a extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MI 2A',
+        'code_name'              => 'MI 2A',
         'model_extra_info'       => null,
         'marketing_name'         => 'MI 2A',
         'has_qwerty_keyboard'    => true,

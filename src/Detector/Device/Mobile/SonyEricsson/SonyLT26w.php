@@ -51,7 +51,7 @@ class SonyLT26w extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LT26w',
+        'code_name'              => 'LT26w',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Acro S',
         'has_qwerty_keyboard'    => true,

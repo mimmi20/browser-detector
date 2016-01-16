@@ -51,7 +51,7 @@ class SamsungSchI800 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SCH-I800',
+        'code_name'              => 'SCH-I800',
         'model_extra_info'       => null,
         'marketing_name'         => 'SCH-I800',
         'has_qwerty_keyboard'    => false,

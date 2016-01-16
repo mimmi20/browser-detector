@@ -51,7 +51,7 @@ class SanyoPm8200 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PM-8200',
+        'code_name'              => 'PM-8200',
         'model_extra_info'       => null,
         'marketing_name'         => 'PM-8200',
         'has_qwerty_keyboard'    => true,

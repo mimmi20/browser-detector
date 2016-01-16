@@ -51,7 +51,7 @@ class HtcSensation4g extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Sensation 4G',
+        'code_name'              => 'Sensation 4G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Sensation 4G',
         'has_qwerty_keyboard'    => true,

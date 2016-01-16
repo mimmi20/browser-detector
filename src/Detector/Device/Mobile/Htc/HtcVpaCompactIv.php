@@ -51,7 +51,7 @@ class HtcVpaCompactIv extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'VPA Compact IV',
+        'code_name'              => 'VPA Compact IV',
         'model_extra_info'       => null,
         'marketing_name'         => 'Herald/Wing/Atlas',
         'has_qwerty_keyboard'    => true,

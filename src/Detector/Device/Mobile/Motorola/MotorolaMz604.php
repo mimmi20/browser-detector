@@ -56,7 +56,7 @@ class MotorolaMz604 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MZ604', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
+        'code_name'              => 'MZ604', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
         'model_extra_info'       => null,
         'marketing_name'         => 'Xoom', // wurflkey: mot_mz601_ver1_suban40mz604_subuachrome
         'has_qwerty_keyboard'    => true,

@@ -56,7 +56,7 @@ class MotorolaXt910 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT910',
+        'code_name'              => 'XT910',
         'model_extra_info'       => null,
         'marketing_name'         => 'RAZR XT910 Spider',
         'has_qwerty_keyboard'    => true,

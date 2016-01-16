@@ -51,9 +51,9 @@ class SharpTqGx30i extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'TQ-GX30i',
+        'code_name'              => 'TQ-GX30i',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'TQ-GX30i',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

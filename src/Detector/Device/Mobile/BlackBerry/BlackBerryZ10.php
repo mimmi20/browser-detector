@@ -56,7 +56,7 @@ class BlackBerryZ10 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Z10',
+        'code_name'              => 'Z10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Z10',
         'has_qwerty_keyboard'    => true,

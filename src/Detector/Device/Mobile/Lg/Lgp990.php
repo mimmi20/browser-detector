@@ -56,7 +56,7 @@ class Lgp990 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P990',
+        'code_name'              => 'P990',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus 2X',
         'has_qwerty_keyboard'    => true,

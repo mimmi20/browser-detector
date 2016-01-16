@@ -56,7 +56,7 @@ class AsusMe173x extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ME173X',
+        'code_name'              => 'ME173X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Memo Pad HD7',
         'has_qwerty_keyboard'    => true,

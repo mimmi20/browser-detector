@@ -53,7 +53,7 @@ class Arnova extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Arnova Device',
+        'code_name'              => 'general Arnova Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Arnova Device',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class Lgc550 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C550',
+        'code_name'              => 'C550',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus Chat',
         'has_qwerty_keyboard'    => true,

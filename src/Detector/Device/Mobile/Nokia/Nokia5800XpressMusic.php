@@ -55,7 +55,7 @@ class Nokia5800XpressMusic extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     protected $properties = array(
         // device
-        'code_name'             => '5800 XpressMusic',
+        'code_name'              => '5800 XpressMusic',
         'model_extra_info'       => null,
         'marketing_name'         => 'XpressMusic',
         'has_qwerty_keyboard'    => false,

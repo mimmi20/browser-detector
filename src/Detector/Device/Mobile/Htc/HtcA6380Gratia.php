@@ -51,7 +51,7 @@ class HtcA6380Gratia extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A6380',
+        'code_name'              => 'A6380',
         'model_extra_info'       => null,
         'marketing_name'         => 'Gratia',
         'has_qwerty_keyboard'    => true,

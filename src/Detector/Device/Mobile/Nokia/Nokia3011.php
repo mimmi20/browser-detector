@@ -51,7 +51,7 @@ class Nokia3011 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => '301.1',
+        'code_name'              => '301.1',
         'model_extra_info'       => null,
         'marketing_name'         => 'Asha 301',
         'has_qwerty_keyboard'    => false,

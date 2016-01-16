@@ -51,7 +51,7 @@ class Lgms690 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MS690',
+        'code_name'              => 'MS690',
         'model_extra_info'       => null,
         'marketing_name'         => 'MS690',
         'has_qwerty_keyboard'    => true,

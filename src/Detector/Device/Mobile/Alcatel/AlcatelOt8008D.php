@@ -51,7 +51,7 @@ class AlcatelOt8008D extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-8008D',
+        'code_name'              => 'OT-8008D',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch Scribe HD',
         'has_qwerty_keyboard'    => true,

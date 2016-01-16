@@ -55,7 +55,7 @@ class SamsungSghi917 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-I917',
+        'code_name'              => 'SGH-I917',
         'model_extra_info'       => null,
         'marketing_name'         => 'Focus',
         'has_qwerty_keyboard'    => true,

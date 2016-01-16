@@ -55,7 +55,7 @@ class HtcDesireZA7272 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A7272',
+        'code_name'              => 'A7272',
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire Z',
         'has_qwerty_keyboard'    => true,

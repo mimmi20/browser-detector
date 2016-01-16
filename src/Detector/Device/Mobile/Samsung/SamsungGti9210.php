@@ -55,7 +55,7 @@ class SamsungGti9210 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9210',
+        'code_name'              => 'GT-I9210',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S II LTE',
         'has_qwerty_keyboard'    => true,

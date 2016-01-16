@@ -55,9 +55,9 @@ class ViewSonicV350 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'V350',
+        'code_name'              => 'V350',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'V350',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

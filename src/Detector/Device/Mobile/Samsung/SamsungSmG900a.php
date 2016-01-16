@@ -49,7 +49,7 @@ class SamsungSmG900a extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-G900A',
+        'code_name'              => 'SM-G900A',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S5 LTE (AT&T)',
         'has_qwerty_keyboard'    => true,

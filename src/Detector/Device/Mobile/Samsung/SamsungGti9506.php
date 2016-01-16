@@ -55,7 +55,7 @@ class SamsungGti9506 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9506',
+        'code_name'              => 'GT-I9506',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S4 LTE+',
         'has_qwerty_keyboard'    => true,

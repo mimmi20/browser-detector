@@ -53,7 +53,7 @@ class Hdc extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general HDC Device',
+        'code_name'              => 'general HDC Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general HDC Device',
         'has_qwerty_keyboard'    => true,

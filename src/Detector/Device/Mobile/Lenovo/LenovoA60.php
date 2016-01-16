@@ -55,7 +55,7 @@ class LenovoA60 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A60',
+        'code_name'              => 'A60',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lephone A60', // wurflkey: lenovo_a60_ver1
         'has_qwerty_keyboard'    => true,

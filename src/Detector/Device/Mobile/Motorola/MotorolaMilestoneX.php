@@ -51,7 +51,7 @@ class MotorolaMilestoneX extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Milestone X',
+        'code_name'              => 'Milestone X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Milestone X',
         'has_qwerty_keyboard'    => true,

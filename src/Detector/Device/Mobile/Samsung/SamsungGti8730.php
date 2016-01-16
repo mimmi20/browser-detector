@@ -51,7 +51,7 @@ class SamsungGti8730 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I8730',
+        'code_name'              => 'GT-I8730',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Express',
         'has_qwerty_keyboard'    => true,

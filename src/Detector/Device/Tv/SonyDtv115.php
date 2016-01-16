@@ -51,9 +51,9 @@ class SonyDtv115 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'DTV115',
+        'code_name'              => 'DTV115',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'DTV115',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

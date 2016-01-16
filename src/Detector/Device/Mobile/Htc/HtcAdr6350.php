@@ -55,7 +55,7 @@ class HtcAdr6350 extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ADR6350',
+        'code_name'              => 'ADR6350',
         'model_extra_info'       => 'ADR6350',
         'marketing_name'         => 'Droid Incredible 2',
         'has_qwerty_keyboard'    => true,

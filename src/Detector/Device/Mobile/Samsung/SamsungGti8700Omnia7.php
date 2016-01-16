@@ -55,7 +55,7 @@ class SamsungGti8700Omnia7 extends AbstractDevice implements DeviceHasWurflKeyIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I8700',
+        'code_name'              => 'GT-I8700',
         'model_extra_info'       => null,
         'marketing_name'         => 'Omnia 7',
         'has_qwerty_keyboard'    => true,

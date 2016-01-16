@@ -55,7 +55,7 @@ class ArchosA70HB extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A70HB',
+        'code_name'              => 'A70HB',
         'model_extra_info'       => null,
         'marketing_name'         => 'A70HB',
         'has_qwerty_keyboard'    => true,

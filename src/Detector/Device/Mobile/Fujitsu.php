@@ -53,7 +53,7 @@ class Fujitsu extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Fujitsu Device',
+        'code_name'              => 'general Fujitsu Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Fujitsu Device',
         'has_qwerty_keyboard'    => true,

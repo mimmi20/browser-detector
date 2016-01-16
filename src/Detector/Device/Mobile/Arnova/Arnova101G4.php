@@ -51,7 +51,7 @@ class Arnova101G4 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => '101 G4',
+        'code_name'              => '101 G4',
         'model_extra_info'       => null,
         'marketing_name'         => '101 G4',
         'has_qwerty_keyboard'    => true,

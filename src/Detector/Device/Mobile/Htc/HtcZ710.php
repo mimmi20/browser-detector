@@ -56,7 +56,7 @@ class HtcZ710 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Z710',
+        'code_name'              => 'Z710',
         'model_extra_info'       => null,
         'marketing_name'         => 'Sensation',
         'has_qwerty_keyboard'    => true,

@@ -51,9 +51,9 @@ class TechniSatDigitIsioS extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'             => 'DIGIT ISIO S',
+        'code_name'              => 'DIGIT ISIO S',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'DIGIT ISIO S',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

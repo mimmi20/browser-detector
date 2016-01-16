@@ -49,7 +49,7 @@ class SamsungSghm919 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-M919',
+        'code_name'              => 'SGH-M919',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S4',
         'has_qwerty_keyboard'    => false,

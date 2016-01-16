@@ -49,7 +49,7 @@ class SamsungSmT530nu extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T530NU',
+        'code_name'              => 'SM-T530NU',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 4 10.1 16GB',
         'has_qwerty_keyboard'    => true,

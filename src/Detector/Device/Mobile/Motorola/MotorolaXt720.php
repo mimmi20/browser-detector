@@ -55,7 +55,7 @@ class MotorolaXt720 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Milestone XT720',
+        'code_name'              => 'Milestone XT720',
         'model_extra_info'       => null,
         'marketing_name'         => 'Milestone XT720',
         'has_qwerty_keyboard'    => true,

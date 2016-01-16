@@ -51,7 +51,7 @@ class Lgd280 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'D280',
+        'code_name'              => 'D280',
         'model_extra_info'       => null,
         'marketing_name'         => 'D280',
         'has_qwerty_keyboard'    => true,

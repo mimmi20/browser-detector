@@ -51,7 +51,7 @@ class NokiaLumia1020 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Lumia 1020',
+        'code_name'              => 'Lumia 1020',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lumia 1020',
         'has_qwerty_keyboard'    => true,

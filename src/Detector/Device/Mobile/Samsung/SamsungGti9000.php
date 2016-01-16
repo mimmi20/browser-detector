@@ -56,7 +56,7 @@ class SamsungGti9000 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9000',
+        'code_name'              => 'GT-I9000',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S',
         'has_qwerty_keyboard'    => false,

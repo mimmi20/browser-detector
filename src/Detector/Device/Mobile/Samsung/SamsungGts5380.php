@@ -55,7 +55,7 @@ class SamsungGts5380 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S5380',
+        'code_name'              => 'GT-S5380',
         'model_extra_info'       => 'Brazilian market',
         'marketing_name'         => 'GT-S5380',
         'has_qwerty_keyboard'    => false,

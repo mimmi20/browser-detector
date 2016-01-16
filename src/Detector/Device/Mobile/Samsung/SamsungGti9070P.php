@@ -51,7 +51,7 @@ class SamsungGti9070P extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9070P',
+        'code_name'              => 'GT-I9070P',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S Advance',
         'has_qwerty_keyboard'    => true,

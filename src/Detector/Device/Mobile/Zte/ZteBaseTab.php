@@ -52,7 +52,7 @@ class ZteBaseTab extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'BASE Tab',
+        'code_name'              => 'BASE Tab',
         'model_extra_info'       => null,
         'marketing_name'         => 'BASE Tab',
         'has_qwerty_keyboard'    => true,

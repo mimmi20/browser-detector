@@ -55,7 +55,7 @@ class SamsungSghi957 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-I957',
+        'code_name'              => 'SGH-I957',
         'model_extra_info'       => 'for AT&T',
         'marketing_name'         => 'Galaxy Tab 8.9',
         'has_qwerty_keyboard'    => true,

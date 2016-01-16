@@ -55,7 +55,7 @@ class NokiaX700 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'X7-00',
+        'code_name'              => 'X7-00',
         'model_extra_info'       => null,
         'marketing_name'         => 'X7',
         'has_qwerty_keyboard'    => false,

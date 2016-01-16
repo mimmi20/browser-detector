@@ -49,7 +49,7 @@ class PanasonicViera extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Viera TV',
+        'code_name'              => 'Viera TV',
         'model_extra_info'       => null,
         'marketing_name'         => 'Viera TV',
         'has_qwerty_keyboard'    => true,

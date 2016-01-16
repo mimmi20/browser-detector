@@ -51,9 +51,9 @@ class Nokia5233 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => '5233',
+        'code_name'              => '5233',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '5233',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

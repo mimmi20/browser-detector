@@ -55,7 +55,7 @@ class LgE906 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E906',
+        'code_name'              => 'E906',
         'model_extra_info'       => null,
         'marketing_name'         => 'LG-E906 Jill Sander',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class SamsungGts5570i extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S5570I',
+        'code_name'              => 'GT-S5570I',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Pop Plus',
         'has_qwerty_keyboard'    => true,

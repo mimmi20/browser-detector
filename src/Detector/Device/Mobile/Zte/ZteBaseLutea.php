@@ -55,7 +55,7 @@ class ZteBaseLutea extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Blade',
+        'code_name'              => 'Blade',
         'model_extra_info'       => null,
         'marketing_name'         => 'Blade',
         'has_qwerty_keyboard'    => true,

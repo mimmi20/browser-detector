@@ -55,7 +55,7 @@ class HtcOneMini2 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'One Mini 2',
+        'code_name'              => 'One Mini 2',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Mini 2',
         'has_qwerty_keyboard'    => true,

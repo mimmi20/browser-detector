@@ -51,7 +51,7 @@ class SamsungSghB100 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-B100',
+        'code_name'              => 'SGH-B100',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-B100',
         'has_qwerty_keyboard'    => false,

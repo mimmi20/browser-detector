@@ -48,6 +48,7 @@ use BrowserDetector\Detector\Device\Tv\SonyKdl32hx755;
 use BrowserDetector\Detector\Device\Tv\SonyKdl37ex720;
 use BrowserDetector\Detector\Device\Tv\SonyKdl40ex720;
 use BrowserDetector\Detector\Device\Tv\SonyKdl50w815b;
+use BrowserDetector\Detector\Device\Tv\SonyNszGs7Gx70;
 use BrowserDetector\Detector\Device\Tv\TechniSatDigiCorderIsioS;
 use BrowserDetector\Detector\Device\Tv\TechniSatDigitIsioS;
 use BrowserDetector\Detector\Device\Tv\TechniSatMultyVisionIsio;
@@ -77,6 +78,8 @@ class TvFactory
             $device = new MicrosoftXbox($useragent, $logger);
         } elseif (preg_match('/dlink\.dsm380/i', $useragent)) {
             $device = new DlinkDsm380($useragent, $logger);
+        } elseif (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
+            $device = new SonyNszGs7Gx70($useragent, $logger);
         } elseif (preg_match('/googletv/i', $useragent)) {
             $device = new GoogleTv($useragent, $logger);
         } elseif (preg_match('/idl\-6651n/i', $useragent)) {

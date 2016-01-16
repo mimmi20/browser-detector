@@ -51,7 +51,7 @@ class Lgp698 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P698',
+        'code_name'              => 'P698',
         'model_extra_info'       => null,
         'marketing_name'         => 'P698',
         'has_qwerty_keyboard'    => true,

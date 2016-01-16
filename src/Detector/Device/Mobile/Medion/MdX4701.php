@@ -51,7 +51,7 @@ class MdX4701 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'X4701',
+        'code_name'              => 'X4701',
         'model_extra_info'       => null,
         'marketing_name'         => 'X4701',
         'has_qwerty_keyboard'    => true,

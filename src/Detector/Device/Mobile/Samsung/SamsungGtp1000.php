@@ -55,7 +55,7 @@ class SamsungGtp1000 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-P1000',
+        'code_name'              => 'GT-P1000',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab',
         'has_qwerty_keyboard'    => true,

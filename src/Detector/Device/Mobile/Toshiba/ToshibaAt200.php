@@ -56,7 +56,7 @@ class ToshibaAt200 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'code_name'             => 'AT200',
+        'code_name'              => 'AT200',
         'model_extra_info'       => null,
         'marketing_name'         => 'Excite AT200',
         'has_qwerty_keyboard'    => true,

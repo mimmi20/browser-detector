@@ -53,7 +53,7 @@ class Wiko extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Wiko Device',
+        'code_name'              => 'general Wiko Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Wiko Device',
         'has_qwerty_keyboard'    => true,

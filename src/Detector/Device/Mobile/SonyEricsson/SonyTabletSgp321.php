@@ -51,7 +51,7 @@ class SonyTabletSgp321 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGP321',
+        'code_name'              => 'SGP321',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Tablet Z LTE',
         'has_qwerty_keyboard'    => true,

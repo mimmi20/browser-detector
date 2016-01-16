@@ -51,7 +51,7 @@ class LgP895 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P895',
+        'code_name'              => 'P895',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus Vu',
         'has_qwerty_keyboard'    => true,

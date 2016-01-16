@@ -53,7 +53,7 @@ class Logikpd extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general LogikPD device',
+        'code_name'              => 'general LogikPD device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general LogikPD device',
         'has_qwerty_keyboard'    => true,

@@ -53,9 +53,9 @@ class Zte extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general ZTE Device',
+        'code_name'              => 'general ZTE Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general ZTE Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

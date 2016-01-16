@@ -55,7 +55,7 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Lumia 900',
+        'code_name'              => 'Lumia 900',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lumia 900',
         'has_qwerty_keyboard'    => true,

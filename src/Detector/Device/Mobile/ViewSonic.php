@@ -53,9 +53,9 @@ class ViewSonic extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general ViewSonic Device',
+        'code_name'              => 'general ViewSonic Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general ViewSonic Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -55,7 +55,7 @@ class MotorolaMb511 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MB511',
+        'code_name'              => 'MB511',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ruth',
         'has_qwerty_keyboard'    => true,

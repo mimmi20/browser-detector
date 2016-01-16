@@ -51,7 +51,7 @@ class ZteN600 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'N600',
+        'code_name'              => 'N600',
         'model_extra_info'       => null,
         'marketing_name'         => 'N600',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class HtcHdMini extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'mini T5555',
+        'code_name'              => 'mini T5555',
         'model_extra_info'       => null,
         'marketing_name'         => 'mini T5555',
         'has_qwerty_keyboard'    => true,

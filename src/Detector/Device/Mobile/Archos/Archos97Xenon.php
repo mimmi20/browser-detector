@@ -51,7 +51,7 @@ class Archos97Xenon extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => '97 Xenon',
+        'code_name'              => '97 Xenon',
         'model_extra_info'       => null,
         'marketing_name'         => '97 Xenon',
         'has_qwerty_keyboard'    => true,

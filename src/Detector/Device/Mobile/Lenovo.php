@@ -51,7 +51,7 @@ class Lenovo extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Lenovo Device',
+        'code_name'              => 'general Lenovo Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Lenovo Device',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class Lgp720 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P720',
+        'code_name'              => 'P720',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus 3D Max',
         'has_qwerty_keyboard'    => true,

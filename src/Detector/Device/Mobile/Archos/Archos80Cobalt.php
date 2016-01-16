@@ -51,7 +51,7 @@ class Archos80Cobalt extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => '80 Cobalt',
+        'code_name'              => '80 Cobalt',
         'model_extra_info'       => null,
         'marketing_name'         => '80 Cobalt',
         'has_qwerty_keyboard'    => true,

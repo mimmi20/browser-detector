@@ -51,7 +51,7 @@ class IconBitNt1002t extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'NT-1002T',
+        'code_name'              => 'NT-1002T',
         'model_extra_info'       => null,
         'marketing_name'         => 'THOR LE NT-1002T',
         'has_qwerty_keyboard'    => true,

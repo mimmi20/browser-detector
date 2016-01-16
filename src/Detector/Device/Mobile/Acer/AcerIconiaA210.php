@@ -58,7 +58,7 @@ class AcerIconiaA210
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A210',
+        'code_name'              => 'A210',
         'model_extra_info'       => null,
         'marketing_name'         => 'A210',
         'has_qwerty_keyboard'    => true,

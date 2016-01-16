@@ -56,7 +56,7 @@ class SonyTabletS extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Tablet S',
+        'code_name'              => 'Tablet S',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tablet S',
         'has_qwerty_keyboard'    => true,

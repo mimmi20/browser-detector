@@ -55,7 +55,7 @@ class Nokia5230 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => '5230',
+        'code_name'              => '5230',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nuron',
         'has_qwerty_keyboard'    => false,

@@ -57,7 +57,7 @@ class SonyLT25i extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LT25i',
+        'code_name'              => 'LT25i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia V',
         'has_qwerty_keyboard'    => true,

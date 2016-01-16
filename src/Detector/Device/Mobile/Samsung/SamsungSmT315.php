@@ -57,7 +57,7 @@ class SamsungSmT315 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T315',
+        'code_name'              => 'SM-T315',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 3 8.0 LTE',
         'has_qwerty_keyboard'    => true,

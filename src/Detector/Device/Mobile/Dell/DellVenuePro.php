@@ -51,7 +51,7 @@ class DellVenuePro extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Venue Pro',
+        'code_name'              => 'Venue Pro',
         'model_extra_info'       => 'Lightning',
         'marketing_name'         => 'Venue Pro',
         'has_qwerty_keyboard'    => true,

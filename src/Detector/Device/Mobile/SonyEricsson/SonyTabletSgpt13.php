@@ -51,7 +51,7 @@ class SonyTabletSgpt13 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGPT13',
+        'code_name'              => 'SGPT13',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Tablet S',
         'has_qwerty_keyboard'    => true,

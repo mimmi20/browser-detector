@@ -55,7 +55,7 @@ class HuaweiMt7L09 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MT7-L09',
+        'code_name'              => 'MT7-L09',
         'model_extra_info'       => 'Dual SIM TD-LTE',
         'marketing_name'         => 'MT7-L09',
         'has_qwerty_keyboard'    => true,

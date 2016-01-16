@@ -55,7 +55,7 @@ class ArchosA7eb extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => '70c',
+        'code_name'              => '70c',
         'model_extra_info'       => null,
         'marketing_name'         => '70c eReader',
         'has_qwerty_keyboard'    => true,

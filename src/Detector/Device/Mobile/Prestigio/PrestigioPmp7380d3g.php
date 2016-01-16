@@ -49,7 +49,7 @@ class PrestigioPmp7380d3g extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PMP7380D3G',
+        'code_name'              => 'PMP7380D3G',
         'model_extra_info'       => null,
         'marketing_name'         => 'PMP7380D3G',
         'has_qwerty_keyboard'    => true,

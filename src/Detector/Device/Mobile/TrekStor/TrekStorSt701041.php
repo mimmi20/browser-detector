@@ -51,7 +51,7 @@ class TrekStorSt701041 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ST701041',
+        'code_name'              => 'ST701041',
         'model_extra_info'       => null,
         'marketing_name'         => 'SurfTab Breeze 7.0',
         'has_qwerty_keyboard'    => true,

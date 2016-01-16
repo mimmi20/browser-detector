@@ -51,7 +51,7 @@ class SamsungShwM110s extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SHW-M110S',
+        'code_name'              => 'SHW-M110S',
         'model_extra_info'       => null,
         'marketing_name'         => 'SHW-M110S',
         'has_qwerty_keyboard'    => false,

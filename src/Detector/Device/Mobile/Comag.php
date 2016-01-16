@@ -53,7 +53,7 @@ class Comag extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Comag Device',
+        'code_name'              => 'general Comag Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Comag Device',
         'has_qwerty_keyboard'    => true,

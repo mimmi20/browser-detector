@@ -55,7 +55,7 @@ class MdLifetabE10320 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E10320',
+        'code_name'              => 'E10320',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lifetab E10320',
         'has_qwerty_keyboard'    => true,

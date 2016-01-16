@@ -51,9 +51,9 @@ class SH8128U extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SH8128U',
+        'code_name'              => 'SH8128U',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'SH8128U',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

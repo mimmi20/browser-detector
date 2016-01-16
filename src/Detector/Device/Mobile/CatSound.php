@@ -53,7 +53,7 @@ class CatSound extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general CatSound Device',
+        'code_name'              => 'general CatSound Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general CatSound Device',
         'has_qwerty_keyboard'    => true,

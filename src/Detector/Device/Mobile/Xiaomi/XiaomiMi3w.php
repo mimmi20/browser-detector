@@ -51,7 +51,7 @@ class XiaomiMi3w extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MI 3W',
+        'code_name'              => 'MI 3W',
         'model_extra_info'       => null,
         'marketing_name'         => 'MI 3W',
         'has_qwerty_keyboard'    => true,

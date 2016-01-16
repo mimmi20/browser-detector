@@ -51,7 +51,7 @@ class SamsungSghT499 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-T499',
+        'code_name'              => 'SGH-T499',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-T499',
         'has_qwerty_keyboard'    => false,

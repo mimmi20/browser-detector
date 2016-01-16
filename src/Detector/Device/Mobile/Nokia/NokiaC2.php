@@ -51,9 +51,9 @@ class NokiaC2 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C2',
+        'code_name'              => 'C2',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'C2',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

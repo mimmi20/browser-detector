@@ -55,7 +55,7 @@ class MotorolaDroidX extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'DroidX',
+        'code_name'              => 'DroidX',
         'model_extra_info'       => 'Verizon',
         'marketing_name'         => 'DroidX',
         'has_qwerty_keyboard'    => true,

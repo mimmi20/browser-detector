@@ -55,7 +55,7 @@ class GarminAsusA50 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A50',
+        'code_name'              => 'A50',
         'model_extra_info'       => null,
         'marketing_name'         => 'A50',
         'has_qwerty_keyboard'    => false, // wurflkey: garminasus_a50_ver1

@@ -51,7 +51,7 @@ class MdLifeE10312 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LifeTab E10312',
+        'code_name'              => 'LifeTab E10312',
         'model_extra_info'       => null,
         'marketing_name'         => 'LifeTab E10312',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class Oppo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Oppo Device',
+        'code_name'              => 'general Oppo Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Oppo Device',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class SamsungSphm930 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SPH-M930',
+        'code_name'              => 'SPH-M930',
         'model_extra_info'       => 'Boost Mobile',
         'marketing_name'         => 'Transform Ultra',
         'has_qwerty_keyboard'    => false,

@@ -51,7 +51,7 @@ class HtcG21 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'G21',
+        'code_name'              => 'G21',
         'model_extra_info'       => null,
         'marketing_name'         => 'G21',
         'has_qwerty_keyboard'    => true,

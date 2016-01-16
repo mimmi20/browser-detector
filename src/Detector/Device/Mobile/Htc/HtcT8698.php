@@ -55,7 +55,7 @@ class HtcT8698 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'T8698',
+        'code_name'              => 'T8698',
         'model_extra_info'       => null,
         'marketing_name'         => '7 Mozart',
         'has_qwerty_keyboard'    => true,

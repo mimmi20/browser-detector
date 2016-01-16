@@ -51,7 +51,7 @@ class SonyEricssonE10iv extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E10iv',
+        'code_name'              => 'E10iv',
         'model_extra_info'       => null,
         'marketing_name'         => 'E10iv',
         'has_qwerty_keyboard'    => true,

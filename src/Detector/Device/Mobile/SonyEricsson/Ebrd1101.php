@@ -55,7 +55,7 @@ class Ebrd1101 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PRST1',
+        'code_name'              => 'PRST1',
         'model_extra_info'       => 'EBRD1101',
         'marketing_name'         => 'Sony Reader Wi-Fi',
         'has_qwerty_keyboard'    => true,

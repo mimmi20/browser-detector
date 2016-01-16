@@ -55,7 +55,7 @@ class SimvalleySpx53G extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SPX-5 3G',
+        'code_name'              => 'SPX-5 3G',
         'model_extra_info'       => null,
         'marketing_name'         => 'SPX-5 3G',
         'has_qwerty_keyboard'    => true,

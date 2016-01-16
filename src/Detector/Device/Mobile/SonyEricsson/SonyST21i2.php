@@ -55,7 +55,7 @@ class SonyST21i2 extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ST21i2',
+        'code_name'              => 'ST21i2',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Tipo Dual',
         'has_qwerty_keyboard'    => true,

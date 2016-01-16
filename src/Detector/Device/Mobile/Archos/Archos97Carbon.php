@@ -51,7 +51,7 @@ class Archos97Carbon extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => '97 carbon',
+        'code_name'              => '97 carbon',
         'model_extra_info'       => null,
         'marketing_name'         => '97 carbon',
         'has_qwerty_keyboard'    => true,

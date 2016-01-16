@@ -51,7 +51,7 @@ class SonyEricssonU1iv extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'U1iv',
+        'code_name'              => 'U1iv',
         'model_extra_info'       => null,
         'marketing_name'         => 'U1iv',
         'has_qwerty_keyboard'    => true,

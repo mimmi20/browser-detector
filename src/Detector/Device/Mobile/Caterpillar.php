@@ -53,7 +53,7 @@ class Caterpillar extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Caterpillar Device',
+        'code_name'              => 'general Caterpillar Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Caterpillar Device',
         'has_qwerty_keyboard'    => true,

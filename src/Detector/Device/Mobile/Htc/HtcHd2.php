@@ -53,7 +53,7 @@ class HtcHd2 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'HD2', // wurflkey: htc_t8585_ver1
+        'code_name'              => 'HD2', // wurflkey: htc_t8585_ver1
         'model_extra_info'       => null,
         'marketing_name'         => 'HD2',
         'has_qwerty_keyboard'    => false, // wurflkey: htc_t8585_ver1

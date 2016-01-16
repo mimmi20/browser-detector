@@ -56,7 +56,7 @@ class MotorolaXoom extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Xoom',
+        'code_name'              => 'Xoom',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xoom',
         'has_qwerty_keyboard'    => true,

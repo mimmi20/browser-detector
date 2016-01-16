@@ -51,7 +51,7 @@ class WikoDarkmoon extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Darkmoon',
+        'code_name'              => 'Darkmoon',
         'model_extra_info'       => null,
         'marketing_name'         => 'Darkmoon',
         'has_qwerty_keyboard'    => true,

@@ -51,9 +51,9 @@ class NokiaN81 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'N81',
+        'code_name'              => 'N81',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'N81',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

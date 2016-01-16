@@ -55,9 +55,9 @@ class NokiaX302 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'X3-02',
+        'code_name'              => 'X3-02',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'X3',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
 

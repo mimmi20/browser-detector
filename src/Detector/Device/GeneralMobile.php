@@ -58,7 +58,7 @@ class GeneralMobile
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Mobile Device',
+        'code_name'              => 'general Mobile Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Mobile Device',
         'has_qwerty_keyboard'    => true,
@@ -155,6 +155,24 @@ class GeneralMobile
      */
     public function detectSpecialProperties()
     {
+        if (preg_match('/Puffin\/[\d\.]+AT/', $this->useragent)) {
+            $this->deviceType = new Tablet();
+
+            $this->setCapability('code_name', 'general Tablet');
+            $this->setCapability('marketing_name', 'general Tablet');
+
+            return $this;
+        }
+
+        if (preg_match('/Puffin\/[\d\.]+AP/', $this->useragent)) {
+            $this->deviceType = new MobilePhone();
+
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
+
+            return $this;
+        }
+
         if ($this->utils->checkIfContains(array('Android; Tablet'))) {
             $this->deviceType = new Tablet();
 
@@ -320,24 +338,6 @@ class GeneralMobile
             $this->setCapability('has_qwerty_keyboard', false);
             $this->setCapability('pointing_method', 'stylus');
             $this->setCapability('colors', 4096);
-
-            return $this;
-        }
-        
-        if (preg_match('/Puffin\/[\d\.]+AT/', $this->useragent)) {
-            $this->deviceType = new Tablet();
-
-            $this->setCapability('code_name', 'general Tablet');
-            $this->setCapability('marketing_name', 'general Tablet');
-
-            return $this;
-        }
-        
-        if (preg_match('/Puffin\/[\d\.]+AP/', $this->useragent)) {
-            $this->deviceType = new MobilePhone();
-
-            $this->setCapability('code_name', 'general Mobile Phone');
-            $this->setCapability('marketing_name', 'general Mobile Phone');
 
             return $this;
         }

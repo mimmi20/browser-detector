@@ -49,7 +49,7 @@ class LgL160l extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'L160L',
+        'code_name'              => 'L160L',
         'model_extra_info'       => null,
         'marketing_name'         => 'L160L',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class Lgp925 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P925',
+        'code_name'              => 'P925',
         'model_extra_info'       => null,
         'marketing_name'         => 'Thrill',
         'has_qwerty_keyboard'    => true,

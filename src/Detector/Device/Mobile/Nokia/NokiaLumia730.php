@@ -51,7 +51,7 @@ class NokiaLumia730 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Lumia 730',
+        'code_name'              => 'Lumia 730',
         'model_extra_info'       => 'Dual Sim',
         'marketing_name'         => 'Lumia 730',
         'has_qwerty_keyboard'    => true,

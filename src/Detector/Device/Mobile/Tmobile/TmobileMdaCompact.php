@@ -51,9 +51,9 @@ class TmobileMdaCompact extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MDA Compact',
+        'code_name'              => 'MDA Compact',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'MDA Compact',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

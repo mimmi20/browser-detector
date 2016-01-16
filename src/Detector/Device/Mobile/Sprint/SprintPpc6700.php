@@ -51,7 +51,7 @@ class SprintPpc6700 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => '6700',
+        'code_name'              => '6700',
         'model_extra_info'       => null,
         'marketing_name'         => '6700',
         'has_qwerty_keyboard'    => true,

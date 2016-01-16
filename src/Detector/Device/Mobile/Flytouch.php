@@ -51,7 +51,7 @@ class Flytouch extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Flytouch',
+        'code_name'              => 'Flytouch',
         'model_extra_info'       => null,
         'marketing_name'         => 'Flytouch',
         'has_qwerty_keyboard'    => true,

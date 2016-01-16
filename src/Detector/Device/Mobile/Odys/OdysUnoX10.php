@@ -51,7 +51,7 @@ class OdysUnoX10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Uno X10',
+        'code_name'              => 'Uno X10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Uno X10',
         'has_qwerty_keyboard'    => true,

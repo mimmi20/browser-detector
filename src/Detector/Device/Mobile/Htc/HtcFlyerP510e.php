@@ -51,7 +51,7 @@ class HtcFlyerP510e extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Flyer',
+        'code_name'              => 'Flyer',
         'model_extra_info'       => null,
         'marketing_name'         => 'Flyer',
         'has_qwerty_keyboard'    => true,

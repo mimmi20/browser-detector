@@ -51,7 +51,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'APA9292KT',
+        'code_name'              => 'APA9292KT',
         'model_extra_info'       => null,
         'marketing_name'         => 'APA9292KT',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class SonyEricssonR800i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'R800i',
+        'code_name'              => 'R800i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia PLAY',
         'has_qwerty_keyboard'    => true,

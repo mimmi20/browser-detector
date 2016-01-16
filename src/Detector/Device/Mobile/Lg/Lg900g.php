@@ -51,7 +51,7 @@ class Lg900g extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => '900G',
+        'code_name'              => '900G',
         'model_extra_info'       => null,
         'marketing_name'         => '900G',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class AlcatelOt918d extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-918D',
+        'code_name'              => 'OT-918D',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch 918D',
         'has_qwerty_keyboard'    => true,

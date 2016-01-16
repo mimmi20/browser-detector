@@ -55,7 +55,7 @@ class Lgp710 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P710',
+        'code_name'              => 'P710',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus L7 II',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class HtcSpark extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Spark',
+        'code_name'              => 'Spark',
         'model_extra_info'       => null,
         'marketing_name'         => '7 Trophy',
         'has_qwerty_keyboard'    => true,

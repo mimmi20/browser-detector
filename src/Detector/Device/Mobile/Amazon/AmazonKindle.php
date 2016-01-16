@@ -50,7 +50,7 @@ class AmazonKindle extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Kindle',
+        'code_name'              => 'Kindle',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kindle',
         'has_qwerty_keyboard'    => true,

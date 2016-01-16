@@ -55,9 +55,9 @@ class NokiaC601 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C6-01',
+        'code_name'              => 'C6-01',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'C6',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

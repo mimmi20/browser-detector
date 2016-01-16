@@ -53,9 +53,9 @@ class Simvalley extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Simvalley Device',
+        'code_name'              => 'general Simvalley Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general Simvalley Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

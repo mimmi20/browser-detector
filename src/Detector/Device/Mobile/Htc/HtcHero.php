@@ -51,7 +51,7 @@ class HtcHero extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Hero',
+        'code_name'              => 'Hero',
         'model_extra_info'       => null,
         'marketing_name'         => 'Hero',
         'has_qwerty_keyboard'    => false,

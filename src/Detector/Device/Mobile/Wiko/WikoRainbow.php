@@ -55,7 +55,7 @@ class WikoRainbow extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Rainbow',
+        'code_name'              => 'Rainbow',
         'model_extra_info'       => null,
         'marketing_name'         => 'Rainbow',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class Archos40Cesium extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => '40 Cesium',
+        'code_name'              => '40 Cesium',
         'model_extra_info'       => null,
         'marketing_name'         => '40 Cesium',
         'has_qwerty_keyboard'    => true,

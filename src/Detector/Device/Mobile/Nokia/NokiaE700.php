@@ -55,7 +55,7 @@ class NokiaE700 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E7-00',
+        'code_name'              => 'E7-00',
         'model_extra_info'       => null,
         'marketing_name'         => 'E7',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class OdysNeoS8Plus extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ADM816KC',
+        'code_name'              => 'ADM816KC',
         'model_extra_info'       => null,
         'marketing_name'         => 'Neo S8 Plus',
         'has_qwerty_keyboard'    => true,

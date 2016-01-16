@@ -51,7 +51,7 @@ class SamsungGti8000v extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I8000V',
+        'code_name'              => 'GT-I8000V',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-I8000V',
         'has_qwerty_keyboard'    => false,

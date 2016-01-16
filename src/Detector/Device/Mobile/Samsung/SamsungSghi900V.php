@@ -51,7 +51,7 @@ class SamsungSghi900V extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-I900V',
+        'code_name'              => 'SGH-I900V',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-I900V',
         'has_qwerty_keyboard'    => false,

@@ -51,7 +51,7 @@ class OdysLooxPlus extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Loox Plus',
+        'code_name'              => 'Loox Plus',
         'model_extra_info'       => null,
         'marketing_name'         => 'Loox Plus',
         'has_qwerty_keyboard'    => true,

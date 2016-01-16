@@ -51,7 +51,7 @@ class LgKc910 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'KC910',
+        'code_name'              => 'KC910',
         'model_extra_info'       => null,
         'marketing_name'         => 'KC910',
         'has_qwerty_keyboard'    => true,

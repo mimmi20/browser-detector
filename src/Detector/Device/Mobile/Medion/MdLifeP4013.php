@@ -51,7 +51,7 @@ class MdLifeP4013 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Life P4013',
+        'code_name'              => 'Life P4013',
         'model_extra_info'       => null,
         'marketing_name'         => 'Life P4013',
         'has_qwerty_keyboard'    => true,

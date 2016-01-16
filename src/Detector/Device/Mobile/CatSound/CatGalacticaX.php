@@ -51,7 +51,7 @@ class CatGalacticaX extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Galactica X',
+        'code_name'              => 'Galactica X',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galactica X',
         'has_qwerty_keyboard'    => true,

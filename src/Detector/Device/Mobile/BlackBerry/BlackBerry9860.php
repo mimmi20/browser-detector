@@ -55,7 +55,7 @@ class BlackBerry9860 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'BlackBerry Torch 9860',
+        'code_name'              => 'BlackBerry Torch 9860',
         'model_extra_info'       => null,
         'marketing_name'         => 'Monza',
         'has_qwerty_keyboard'    => false,

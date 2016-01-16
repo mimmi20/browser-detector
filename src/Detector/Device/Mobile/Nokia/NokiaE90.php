@@ -51,9 +51,9 @@ class NokiaE90 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E90',
+        'code_name'              => 'E90',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'E90',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

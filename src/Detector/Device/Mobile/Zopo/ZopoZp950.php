@@ -51,7 +51,7 @@ class ZopoZp950 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ZP950',
+        'code_name'              => 'ZP950',
         'model_extra_info'       => null,
         'marketing_name'         => 'ZP950 LEADER MAX',
         'has_qwerty_keyboard'    => true,

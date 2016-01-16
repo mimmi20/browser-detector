@@ -51,7 +51,7 @@ class AcerIconiaA3A20 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A3-A20',
+        'code_name'              => 'A3-A20',
         'model_extra_info'       => null,
         'marketing_name'         => 'A3-A20',
         'has_qwerty_keyboard'    => true,

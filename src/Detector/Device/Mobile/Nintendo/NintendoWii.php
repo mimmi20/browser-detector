@@ -51,9 +51,9 @@ class NintendoWii extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Wii',
+        'code_name'              => 'Wii',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'Wii',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

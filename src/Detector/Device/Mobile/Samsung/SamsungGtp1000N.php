@@ -51,7 +51,7 @@ class SamsungGtp1000N extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-P1000N',
+        'code_name'              => 'GT-P1000N',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-P1000N',
         'has_qwerty_keyboard'    => false,

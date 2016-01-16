@@ -51,7 +51,7 @@ class SonyC6833ExperiaZultra extends AbstractDevice implements DeviceHasSpecific
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C6833',
+        'code_name'              => 'C6833',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Z Ultra',
         'has_qwerty_keyboard'    => true,

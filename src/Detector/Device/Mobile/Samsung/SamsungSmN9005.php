@@ -56,7 +56,7 @@ class SamsungSmN9005 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-N9005',
+        'code_name'              => 'SM-N9005',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 3 LTE',
         'has_qwerty_keyboard'    => true,

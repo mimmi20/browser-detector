@@ -51,7 +51,7 @@ class HtcVelocity4G extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Velocity 4G',
+        'code_name'              => 'Velocity 4G',
         'model_extra_info'       => 'for Telstra',
         'marketing_name'         => 'Velocity 4G',
         'has_qwerty_keyboard'    => true,

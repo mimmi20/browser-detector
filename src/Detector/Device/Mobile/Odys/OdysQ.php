@@ -51,9 +51,9 @@ class OdysQ extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Q',
+        'code_name'              => 'Q',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'Q',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

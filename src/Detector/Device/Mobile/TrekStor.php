@@ -53,9 +53,9 @@ class TrekStor extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general TrekStor Device',
+        'code_name'              => 'general TrekStor Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general TrekStor Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

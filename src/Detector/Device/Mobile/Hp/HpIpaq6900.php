@@ -51,7 +51,7 @@ class HpIpaq6900 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'iPAQ 6900',
+        'code_name'              => 'iPAQ 6900',
         'model_extra_info'       => null,
         'marketing_name'         => 'iPAQ 6900',
         'has_qwerty_keyboard'    => true,

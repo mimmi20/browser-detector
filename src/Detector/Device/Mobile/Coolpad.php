@@ -53,7 +53,7 @@ class Coolpad extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Coolpad device',
+        'code_name'              => 'general Coolpad device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Coolpad device',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class MacMini extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Mac Mini',
+        'code_name'              => 'Mac Mini',
         'model_extra_info'       => null,
         'marketing_name'         => 'Mac Mini',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungSchU820 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SCH-U820',
+        'code_name'              => 'SCH-U820',
         'model_extra_info'       => null,
         'marketing_name'         => 'SCH-U820',
         'has_qwerty_keyboard'    => false,

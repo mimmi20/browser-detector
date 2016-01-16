@@ -55,7 +55,7 @@ class HuaweiU8600 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'U8600',
+        'code_name'              => 'U8600',
         'model_extra_info'       => null,
         'marketing_name'         => 'T-Mobile Move Balance',
         'has_qwerty_keyboard'    => true,

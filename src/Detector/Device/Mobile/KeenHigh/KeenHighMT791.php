@@ -51,7 +51,7 @@ class KeenHighMT791 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MT791',
+        'code_name'              => 'MT791',
         'model_extra_info'       => null,
         'marketing_name'         => 'MT791',
         'has_qwerty_keyboard'    => true,

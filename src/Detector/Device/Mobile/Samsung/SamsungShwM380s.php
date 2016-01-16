@@ -51,7 +51,7 @@ class SamsungShwM380s extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SHW-M380S',
+        'code_name'              => 'SHW-M380S',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 10.1',
         'has_qwerty_keyboard'    => true,

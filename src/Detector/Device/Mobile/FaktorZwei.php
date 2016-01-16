@@ -53,7 +53,7 @@ class FaktorZwei extends AbstractDevice implements DeviceHasChildrenInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general FaktorZwei device',
+        'code_name'              => 'general FaktorZwei device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general FaktorZwei device',
         'has_qwerty_keyboard'    => true,

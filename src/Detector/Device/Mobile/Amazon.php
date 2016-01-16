@@ -53,7 +53,7 @@ class Amazon extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Amazon Device',
+        'code_name'              => 'general Amazon Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Amazon Device',
         'has_qwerty_keyboard'    => true,

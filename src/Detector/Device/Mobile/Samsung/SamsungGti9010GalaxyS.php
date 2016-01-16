@@ -51,7 +51,7 @@ class SamsungGti9010GalaxyS extends AbstractDevice implements DeviceHasSpecificP
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9010',
+        'code_name'              => 'GT-I9010',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S',
         'has_qwerty_keyboard'    => false,

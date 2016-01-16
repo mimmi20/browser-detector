@@ -53,7 +53,7 @@ class AmazonKindleFire extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'D01400', // wurflkey: amazon_kindle_fire_ver1_suban40rom
+        'code_name'              => 'D01400', // wurflkey: amazon_kindle_fire_ver1_suban40rom
         'model_extra_info'       => null,
         'marketing_name'         => 'Kindle Fire', // wurflkey: amazon_kindle_fire_ver1_suban40rom
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungGts5560 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S5560',
+        'code_name'              => 'GT-S5560',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S5560',
         'has_qwerty_keyboard'    => false,

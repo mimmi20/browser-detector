@@ -51,7 +51,7 @@ class Archos80Xenon extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => '80 Xenon',
+        'code_name'              => '80 Xenon',
         'model_extra_info'       => null,
         'marketing_name'         => '80 Xenon',
         'has_qwerty_keyboard'    => true,

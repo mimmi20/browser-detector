@@ -55,7 +55,7 @@ class AsusPadFone extends AbstractDevice implements DeviceHasWurflKeyInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PadFone',
+        'code_name'              => 'PadFone',
         'model_extra_info'       => null,
         'marketing_name'         => 'PadFone',
         'has_qwerty_keyboard'    => true,

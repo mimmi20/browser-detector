@@ -49,7 +49,7 @@ class Archos97Neon extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => '97 Neon',
+        'code_name'              => '97 Neon',
         'model_extra_info'       => null,
         'marketing_name'         => '97 Neon',
         'has_qwerty_keyboard'    => true,

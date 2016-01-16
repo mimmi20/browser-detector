@@ -55,7 +55,7 @@ class SamsungGts5660 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S5660',
+        'code_name'              => 'GT-S5660',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Gio',
         'has_qwerty_keyboard'    => true,

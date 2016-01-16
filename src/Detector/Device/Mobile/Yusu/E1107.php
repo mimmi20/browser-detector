@@ -51,7 +51,7 @@ class E1107 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E1107',
+        'code_name'              => 'E1107',
         'model_extra_info'       => null,
         'marketing_name'         => 'E1107',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class Siemens extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Siemens Device',
+        'code_name'              => 'general Siemens Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Siemens Device',
         'has_qwerty_keyboard'    => true,

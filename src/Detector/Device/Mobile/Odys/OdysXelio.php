@@ -51,7 +51,7 @@ class OdysXelio extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Xelio',
+        'code_name'              => 'Xelio',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xelio',
         'has_qwerty_keyboard'    => true,

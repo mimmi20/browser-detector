@@ -55,7 +55,7 @@ class HtcVision extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Vision',
+        'code_name'              => 'Vision',
         'model_extra_info'       => null,
         'marketing_name'         => 'Vision',
         'has_qwerty_keyboard'    => true,

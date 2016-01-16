@@ -51,7 +51,7 @@ class HtcP3700 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P3700',
+        'code_name'              => 'P3700',
         'model_extra_info'       => null,
         'marketing_name'         => 'P3700',
         'has_qwerty_keyboard'    => true,

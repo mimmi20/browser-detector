@@ -49,7 +49,7 @@ class Lgv700 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'V700',
+        'code_name'              => 'V700',
         'model_extra_info'       => null,
         'marketing_name'         => 'G Pad 8.3',
         'has_qwerty_keyboard'    => true,

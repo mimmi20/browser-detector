@@ -51,7 +51,7 @@ class OdysXpressPro extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Xpress Pro',
+        'code_name'              => 'Xpress Pro',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xpress Pro',
         'has_qwerty_keyboard'    => true,

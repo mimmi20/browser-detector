@@ -49,7 +49,7 @@ class SonyD2403 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'D2403',
+        'code_name'              => 'D2403',
         'model_extra_info'       => null,
         'marketing_name'         => 'D2403',
         'has_qwerty_keyboard'    => true,

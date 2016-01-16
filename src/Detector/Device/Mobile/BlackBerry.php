@@ -51,7 +51,7 @@ class BlackBerry extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general BlackBerry Device',
+        'code_name'              => 'general BlackBerry Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general BlackBerry Device',
         'has_qwerty_keyboard'    => true,

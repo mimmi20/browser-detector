@@ -51,7 +51,7 @@ class SprdB51plus extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'B51+',
+        'code_name'              => 'B51+',
         'model_extra_info'       => null,
         'marketing_name'         => 'B51+',
         'has_qwerty_keyboard'    => true,

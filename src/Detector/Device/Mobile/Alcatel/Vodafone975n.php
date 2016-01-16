@@ -51,7 +51,7 @@ class Vodafone975n extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => '975N',
+        'code_name'              => '975N',
         'model_extra_info'       => 'Vodafone',
         'marketing_name'         => 'Smart III',
         'has_qwerty_keyboard'    => true,

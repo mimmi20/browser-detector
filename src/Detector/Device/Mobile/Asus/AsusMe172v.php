@@ -51,7 +51,7 @@ class AsusMe172v extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ME172V',
+        'code_name'              => 'ME172V',
         'model_extra_info'       => null,
         'marketing_name'         => 'MeMO Pad ME172V',
         'has_qwerty_keyboard'    => true,

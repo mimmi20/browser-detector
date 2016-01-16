@@ -51,7 +51,7 @@ class WikoLenny extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LENNY',
+        'code_name'              => 'LENNY',
         'model_extra_info'       => null,
         'marketing_name'         => 'LENNY',
         'has_qwerty_keyboard'    => true,

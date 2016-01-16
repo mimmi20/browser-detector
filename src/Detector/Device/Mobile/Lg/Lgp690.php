@@ -51,7 +51,7 @@ class Lgp690 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P690',
+        'code_name'              => 'P690',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus Spirit',
         'has_qwerty_keyboard'    => true,

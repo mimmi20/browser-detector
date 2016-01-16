@@ -55,7 +55,7 @@ class HtcOneM8 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'M8',
+        'code_name'              => 'M8',
         'model_extra_info'       => null,
         'marketing_name'         => 'One M8',
         'has_qwerty_keyboard'    => true,

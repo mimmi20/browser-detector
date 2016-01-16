@@ -49,7 +49,7 @@ class ToshibaAt10a extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'AT10-A',
+        'code_name'              => 'AT10-A',
         'model_extra_info'       => null,
         'marketing_name'         => 'eXcite Pure',
         'has_qwerty_keyboard'    => true,

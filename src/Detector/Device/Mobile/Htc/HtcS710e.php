@@ -56,7 +56,7 @@ class HtcS710e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'S710E',
+        'code_name'              => 'S710E',
         'model_extra_info'       => 'aka Vivo',
         'marketing_name'         => 'Incredible S',
         'has_qwerty_keyboard'    => true,

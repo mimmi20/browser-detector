@@ -51,7 +51,7 @@ class Lgc660 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C660',
+        'code_name'              => 'C660',
         'model_extra_info'       => null,
         'marketing_name'         => 'C660',
         'has_qwerty_keyboard'    => true,

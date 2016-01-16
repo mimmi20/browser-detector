@@ -51,7 +51,7 @@ class OdysNeoX extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ADM816HC',
+        'code_name'              => 'ADM816HC',
         'model_extra_info'       => null,
         'marketing_name'         => 'Neo X',
         'has_qwerty_keyboard'    => true,

@@ -56,7 +56,7 @@ class SonyEricssonLT26i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LT26i',
+        'code_name'              => 'LT26i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Arc HD',
         'has_qwerty_keyboard'    => true,

@@ -68,8 +68,16 @@ class Desktop
     public function isDesktopDevice()
     {
         $fakeHelper = new SpamCrawlerFake($this->useragent);
-        if ($fakeHelper->isFakeWindows()) {
+        if ($fakeHelper->isFakeBrowser() || $fakeHelper->isFakeWindows() || $fakeHelper->isFakeIe()) {
             return false;
+        }
+
+        if (preg_match('/firefox/i', $this->useragent) && preg_match('/anonym/i', $this->useragent)) {
+            return true;
+        }
+        
+        if (preg_match('/trident/i', $this->useragent) && preg_match('/anonym/i', $this->useragent)) {
+            return true;
         }
 
         $windowsHelper = new WindowsHelper($this->useragent);

@@ -51,7 +51,7 @@ class SamsungGtc3350 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-C3350',
+        'code_name'              => 'GT-C3350',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-C3350',
         'has_qwerty_keyboard'    => false,

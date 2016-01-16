@@ -51,7 +51,7 @@ class SonyEricssonW910i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'W910i',
+        'code_name'              => 'W910i',
         'model_extra_info'       => null,
         'marketing_name'         => 'W910i',
         'has_qwerty_keyboard'    => true,

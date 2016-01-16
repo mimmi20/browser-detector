@@ -51,7 +51,7 @@ class Sprint extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Sprint Device',
+        'code_name'              => 'general Sprint Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Sprint Device',
         'has_qwerty_keyboard'    => true,

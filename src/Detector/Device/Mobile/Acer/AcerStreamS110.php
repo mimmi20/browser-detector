@@ -51,7 +51,7 @@ class AcerStreamS110 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Stream S110',
+        'code_name'              => 'Stream S110',
         'model_extra_info'       => null,
         'marketing_name'         => 'Stream S110',
         'has_qwerty_keyboard'    => true,

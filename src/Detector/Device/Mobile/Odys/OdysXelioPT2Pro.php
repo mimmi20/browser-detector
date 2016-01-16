@@ -49,7 +49,7 @@ class OdysXelioPT2Pro extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Xelio PT2 Pro',
+        'code_name'              => 'Xelio PT2 Pro',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xelio PT2 Pro',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class HtcDream extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Dream',
+        'code_name'              => 'Dream',
         'model_extra_info'       => null,
         'marketing_name'         => 'Dream',
         'has_qwerty_keyboard'    => true,

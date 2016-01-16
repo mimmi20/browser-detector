@@ -53,9 +53,9 @@ class WonderMedia extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general WonderMedia Device',
+        'code_name'              => 'general WonderMedia Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general WonderMedia Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

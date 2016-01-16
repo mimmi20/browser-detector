@@ -51,7 +51,7 @@ class CatTabletPhoenix extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Phoenix',
+        'code_name'              => 'Phoenix',
         'model_extra_info'       => null,
         'marketing_name'         => 'Phoenix',
         'has_qwerty_keyboard'    => true,

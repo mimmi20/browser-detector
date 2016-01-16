@@ -51,7 +51,7 @@ class AsusFoneK00z extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'K00Z',
+        'code_name'              => 'K00Z',
         'model_extra_info'       => null,
         'marketing_name'         => 'K00Z',
         'has_qwerty_keyboard'    => true,

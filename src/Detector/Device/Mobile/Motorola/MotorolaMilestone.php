@@ -55,7 +55,7 @@ class MotorolaMilestone extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Milestone',
+        'code_name'              => 'Milestone',
         'model_extra_info'       => null,
         'marketing_name'         => 'Milestone',
         'has_qwerty_keyboard'    => true,

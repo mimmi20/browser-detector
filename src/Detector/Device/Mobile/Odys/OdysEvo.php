@@ -51,7 +51,7 @@ class OdysEvo extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Evo',
+        'code_name'              => 'Evo',
         'model_extra_info'       => null,
         'marketing_name'         => 'Evo',
         'has_qwerty_keyboard'    => true,

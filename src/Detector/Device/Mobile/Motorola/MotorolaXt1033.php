@@ -49,7 +49,7 @@ class MotorolaXt1033 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT1033',
+        'code_name'              => 'XT1033',
         'model_extra_info'       => null,
         'marketing_name'         => 'Moto G',
         'has_qwerty_keyboard'    => true,

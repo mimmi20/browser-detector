@@ -51,7 +51,7 @@ class DellStreak extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Streak',
+        'code_name'              => 'Streak',
         'model_extra_info'       => null,
         'marketing_name'         => 'Streak',
         'has_qwerty_keyboard'    => true,

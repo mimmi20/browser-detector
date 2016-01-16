@@ -55,7 +55,7 @@ class SamsungSmT520 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T520',
+        'code_name'              => 'SM-T520',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab Pro 10.1 WiFi',
         'has_qwerty_keyboard'    => true,

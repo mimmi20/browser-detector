@@ -49,7 +49,7 @@ class Archos70Xenon extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => '70 Xenon',
+        'code_name'              => '70 Xenon',
         'model_extra_info'       => null,
         'marketing_name'         => '70 Xenon',
         'has_qwerty_keyboard'    => true,

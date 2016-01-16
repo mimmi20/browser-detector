@@ -51,9 +51,9 @@ class LgSu660 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SU660',
+        'code_name'              => 'SU660',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'SU660',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

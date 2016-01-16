@@ -55,7 +55,7 @@ class SonyEricssonLT28h extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LT28h',
+        'code_name'              => 'LT28h',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Ion',
         'has_qwerty_keyboard'    => true,

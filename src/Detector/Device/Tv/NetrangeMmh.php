@@ -51,9 +51,9 @@ class NetrangeMmh extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'NETRANGEMMH',
+        'code_name'              => 'NETRANGEMMH',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'NETRANGEMMH',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

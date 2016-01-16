@@ -51,7 +51,7 @@ class SamsungGtp6800 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-P6800',
+        'code_name'              => 'GT-P6800',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 7.7',
         'has_qwerty_keyboard'    => true,

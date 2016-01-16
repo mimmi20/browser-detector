@@ -51,7 +51,7 @@ class ZopoZp300 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ZP300',
+        'code_name'              => 'ZP300',
         'model_extra_info'       => null,
         'marketing_name'         => 'ZP300 FIELD',
         'has_qwerty_keyboard'    => true,

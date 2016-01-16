@@ -51,7 +51,7 @@ class SamsungSghi897 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-I897',
+        'code_name'              => 'SGH-I897',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-I897',
         'has_qwerty_keyboard'    => false,

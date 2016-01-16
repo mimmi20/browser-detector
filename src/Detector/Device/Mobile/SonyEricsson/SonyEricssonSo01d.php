@@ -51,7 +51,7 @@ class SonyEricssonSo01d extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SO-01D',
+        'code_name'              => 'SO-01D',
         'model_extra_info'       => null,
         'marketing_name'         => 'SO-01D',
         'has_qwerty_keyboard'    => true,

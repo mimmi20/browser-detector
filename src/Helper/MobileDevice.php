@@ -159,6 +159,8 @@ class MobileDevice
             'padfone',
             'st80208',
             'mtk',
+            'onebrowser',
+            'qtcarbrowser',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {

@@ -51,9 +51,9 @@ class SonyKdl40ex720 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'KDL40EX720',
+        'code_name'              => 'KDL40EX720',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'KDL40EX720',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

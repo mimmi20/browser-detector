@@ -56,7 +56,7 @@ class HpP160U extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P160U',
+        'code_name'              => 'P160U',
         'model_extra_info'       => null,
         'marketing_name'         => 'Veer', // wurflkey: hp_veer_ver1_subwebos211
         'has_qwerty_keyboard'    => true,

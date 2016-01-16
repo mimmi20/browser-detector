@@ -51,7 +51,7 @@ class SamsungSmG850F extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-G850F',
+        'code_name'              => 'SM-G850F',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Alpha',
         'has_qwerty_keyboard'    => true,

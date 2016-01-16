@@ -51,9 +51,9 @@ class LgVs700 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'VS700',
+        'code_name'              => 'VS700',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'VS700',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

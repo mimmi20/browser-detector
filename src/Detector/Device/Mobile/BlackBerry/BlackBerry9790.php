@@ -55,7 +55,7 @@ class BlackBerry9790 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'BlackBerry 9790',
+        'code_name'              => 'BlackBerry 9790',
         'model_extra_info'       => null,
         'marketing_name'         => 'BlackBerry Bold 9790',
         'has_qwerty_keyboard'    => true,

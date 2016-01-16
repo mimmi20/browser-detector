@@ -55,7 +55,7 @@ class HtcT7576 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'T7576',
+        'code_name'              => 'T7576',
         'model_extra_info'       => null,
         'marketing_name'         => '7 pro',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class CubotGt99 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT99',
+        'code_name'              => 'GT99',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT99',
         'has_qwerty_keyboard'    => true,

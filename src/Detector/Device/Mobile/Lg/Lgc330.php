@@ -51,7 +51,7 @@ class Lgc330 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C330',
+        'code_name'              => 'C330',
         'model_extra_info'       => null,
         'marketing_name'         => 'C330',
         'has_qwerty_keyboard'    => true,

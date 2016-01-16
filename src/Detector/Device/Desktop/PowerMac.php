@@ -50,7 +50,7 @@ class PowerMac extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PowerMac',
+        'code_name'              => 'PowerMac',
         'model_extra_info'       => null,
         'marketing_name'         => 'PowerMac',
         'has_qwerty_keyboard'    => true,

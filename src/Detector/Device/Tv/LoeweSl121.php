@@ -51,9 +51,9 @@ class LoeweSl121 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SL121',
+        'code_name'              => 'SL121',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'SL121',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

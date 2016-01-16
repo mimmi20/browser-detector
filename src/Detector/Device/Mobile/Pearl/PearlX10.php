@@ -51,7 +51,7 @@ class PearlX10 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'X10',
+        'code_name'              => 'X10',
         'model_extra_info'       => null,
         'marketing_name'         => 'X10',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class HtcA3333 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A3333',
+        'code_name'              => 'A3333',
         'model_extra_info'       => null,
         'marketing_name'         => 'Wildfire',
         'has_qwerty_keyboard'    => true,

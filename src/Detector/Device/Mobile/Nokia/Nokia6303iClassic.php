@@ -55,7 +55,7 @@ class Nokia6303iclassic extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'             => '6303i classic',
+        'code_name'              => '6303i classic',
         'model_extra_info'       => null,
         'marketing_name'         => 'Classic',
         'has_qwerty_keyboard'    => false,

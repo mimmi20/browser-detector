@@ -51,7 +51,7 @@ class LenovoA65 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A65',
+        'code_name'              => 'A65',
         'model_extra_info'       => null,
         'marketing_name'         => 'A65',
         'has_qwerty_keyboard'    => true,

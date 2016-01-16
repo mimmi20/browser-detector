@@ -66,7 +66,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Pre',
+        'code_name'              => 'Pre',
         'model_extra_info'       => null,
         'marketing_name'         => 'Pre',
         'has_qwerty_keyboard'    => true,

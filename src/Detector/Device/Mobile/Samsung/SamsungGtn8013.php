@@ -51,7 +51,7 @@ class SamsungGtn8013 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-N8013',
+        'code_name'              => 'GT-N8013',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 10.1 WiFi',
         'has_qwerty_keyboard'    => true,

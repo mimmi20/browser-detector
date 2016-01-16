@@ -53,7 +53,7 @@ class Prestigio extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Prestigio Device',
+        'code_name'              => 'general Prestigio Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Prestigio Device',
         'has_qwerty_keyboard'    => true,

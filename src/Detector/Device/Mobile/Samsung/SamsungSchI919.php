@@ -51,7 +51,7 @@ class SamsungSchI919 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SCH-I919',
+        'code_name'              => 'SCH-I919',
         'model_extra_info'       => null,
         'marketing_name'         => 'SCH-I919',
         'has_qwerty_keyboard'    => false,

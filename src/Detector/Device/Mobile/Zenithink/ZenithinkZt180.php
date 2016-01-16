@@ -55,7 +55,7 @@ class ZenithinkZt180 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ZT180',
+        'code_name'              => 'ZT180',
         'model_extra_info'       => null,
         'marketing_name'         => 'ZT180',
         'has_qwerty_keyboard'    => true,

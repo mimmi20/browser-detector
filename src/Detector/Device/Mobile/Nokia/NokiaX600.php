@@ -55,9 +55,9 @@ class NokiaX600 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'X6-00',
+        'code_name'              => 'X6-00',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'X6',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

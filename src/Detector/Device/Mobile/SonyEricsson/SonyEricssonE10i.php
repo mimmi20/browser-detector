@@ -55,7 +55,7 @@ class SonyEricssonE10i extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E10i',
+        'code_name'              => 'E10i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia X10 Mini',
         'has_qwerty_keyboard'    => true,

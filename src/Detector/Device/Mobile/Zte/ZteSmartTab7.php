@@ -51,7 +51,7 @@ class ZteSmartTab7 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SmartTab7',
+        'code_name'              => 'SmartTab7',
         'model_extra_info'       => null,
         'marketing_name'         => 'Smart Tab 7',
         'has_qwerty_keyboard'    => true,

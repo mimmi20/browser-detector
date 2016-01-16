@@ -51,7 +51,7 @@ class AlcatelOt5020D extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-5020D',
+        'code_name'              => 'OT-5020D',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch MPop',
         'has_qwerty_keyboard'    => true,

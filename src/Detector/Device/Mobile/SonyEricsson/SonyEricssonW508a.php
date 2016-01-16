@@ -51,7 +51,7 @@ class SonyEricssonW508a extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'W508a',
+        'code_name'              => 'W508a',
         'model_extra_info'       => null,
         'marketing_name'         => 'W508a',
         'has_qwerty_keyboard'    => true,

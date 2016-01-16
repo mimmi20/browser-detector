@@ -51,7 +51,7 @@ class HuaweiU8950 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'U8950',
+        'code_name'              => 'U8950',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend G600',
         'has_qwerty_keyboard'    => true,

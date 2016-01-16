@@ -56,7 +56,7 @@ class MotorolaXt1032 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT1032',
+        'code_name'              => 'XT1032',
         'model_extra_info'       => null,
         'marketing_name'         => 'Moto G',
         'has_qwerty_keyboard'    => true,

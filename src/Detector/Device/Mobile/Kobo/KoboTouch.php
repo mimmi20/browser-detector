@@ -55,7 +55,7 @@ class KoboTouch extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Touch',
+        'code_name'              => 'Touch',
         'model_extra_info'       => null,
         'marketing_name'         => 'Touch eReader', // wurflkey: kobo_touch_ver1
         'has_qwerty_keyboard'    => true,

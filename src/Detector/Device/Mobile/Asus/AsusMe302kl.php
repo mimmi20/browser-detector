@@ -51,7 +51,7 @@ class AsusMe302kl extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ME302KL',
+        'code_name'              => 'ME302KL',
         'model_extra_info'       => null,
         'marketing_name'         => 'MeMO Pad FHD 10',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class TrekStorSt102162 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ST10216-2',
+        'code_name'              => 'ST10216-2',
         'model_extra_info'       => null,
         'marketing_name'         => 'ST10216-2',
         'has_qwerty_keyboard'    => true,

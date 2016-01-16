@@ -51,7 +51,7 @@ class PompW88 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'W88',
+        'code_name'              => 'W88',
         'model_extra_info'       => null,
         'marketing_name'         => 'W88',
         'has_qwerty_keyboard'    => true,

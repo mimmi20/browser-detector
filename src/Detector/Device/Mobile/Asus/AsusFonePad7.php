@@ -51,7 +51,7 @@ class AsusFonePad7 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'K00E',
+        'code_name'              => 'K00E',
         'model_extra_info'       => null,
         'marketing_name'         => 'FonePad 7',
         'has_qwerty_keyboard'    => true,

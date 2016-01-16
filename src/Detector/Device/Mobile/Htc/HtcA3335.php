@@ -51,7 +51,7 @@ class HtcA3335 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A3335',
+        'code_name'              => 'A3335',
         'model_extra_info'       => null,
         'marketing_name'         => 'A3335',
         'has_qwerty_keyboard'    => true,

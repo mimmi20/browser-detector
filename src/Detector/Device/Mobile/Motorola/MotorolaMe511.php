@@ -51,7 +51,7 @@ class MotorolaMe511 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ME511',
+        'code_name'              => 'ME511',
         'model_extra_info'       => null,
         'marketing_name'         => 'ME511',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class HuaweiU8180 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'U8180',
+        'code_name'              => 'U8180',
         'model_extra_info'       => null,
         'marketing_name'         => 'U8180',
         'has_qwerty_keyboard'    => true,

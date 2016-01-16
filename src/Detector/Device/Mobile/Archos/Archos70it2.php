@@ -51,7 +51,7 @@ class Archos70it2 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => '70it2',
+        'code_name'              => '70it2',
         'model_extra_info'       => null,
         'marketing_name'         => '70it2',
         'has_qwerty_keyboard'    => true,

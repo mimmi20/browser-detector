@@ -51,7 +51,7 @@ class AlcatelOt6030X extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-6030X',
+        'code_name'              => 'OT-6030X',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch Idol',
         'has_qwerty_keyboard'    => true,

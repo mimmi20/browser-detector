@@ -55,7 +55,7 @@ class AsusEepPadTransformerTf101g extends AbstractDevice implements DeviceHasWur
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Eee Pad Transformer TF101G',
+        'code_name'              => 'Eee Pad Transformer TF101G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Eee Pad Transformer TF101',
         'has_qwerty_keyboard'    => true,

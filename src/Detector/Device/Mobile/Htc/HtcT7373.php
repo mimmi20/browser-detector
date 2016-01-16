@@ -51,7 +51,7 @@ class HtcT7373 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'T7373',
+        'code_name'              => 'T7373',
         'model_extra_info'       => null,
         'marketing_name'         => 'Touch Pro2',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class CaterpillarB15q extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'B15Q',
+        'code_name'              => 'B15Q',
         'model_extra_info'       => null,
         'marketing_name'         => 'Cat B15Q',
         'has_qwerty_keyboard'    => true,

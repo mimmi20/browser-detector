@@ -53,7 +53,7 @@ class Acer extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Acer Device',
+        'code_name'              => 'general Acer Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Acer Device',
         'has_qwerty_keyboard'    => true,

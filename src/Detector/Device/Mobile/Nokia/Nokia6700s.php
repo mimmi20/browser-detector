@@ -55,9 +55,9 @@ class Nokia6700s extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => '6700 slide',
+        'code_name'              => '6700 slide',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '6700 slide',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -55,7 +55,7 @@ class HtcSmartF3188 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Smart F3188',
+        'code_name'              => 'Smart F3188',
         'model_extra_info'       => null,
         'marketing_name'         => 'Smart F3188',
         'has_qwerty_keyboard'    => true,

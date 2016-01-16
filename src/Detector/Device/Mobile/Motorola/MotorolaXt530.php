@@ -55,7 +55,7 @@ class MotorolaXt530 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT530',
+        'code_name'              => 'XT530',
         'model_extra_info'       => null,
         'marketing_name'         => 'XT530',
         'has_qwerty_keyboard'    => true,

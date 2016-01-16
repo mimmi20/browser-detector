@@ -51,7 +51,7 @@ class HtcS510b extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'S510B',
+        'code_name'              => 'S510B',
         'model_extra_info'       => null,
         'marketing_name'         => 'Rhyme',
         'has_qwerty_keyboard'    => true,

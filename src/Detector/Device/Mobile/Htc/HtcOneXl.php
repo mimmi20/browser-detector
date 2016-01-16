@@ -55,7 +55,7 @@ class HtcOneXl extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PJ83100',
+        'code_name'              => 'PJ83100',
         'model_extra_info'       => null,
         'marketing_name'         => 'One XL',
         'has_qwerty_keyboard'    => true,

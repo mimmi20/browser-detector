@@ -51,7 +51,7 @@ class HtcMdaVarioIii extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MDA Vario III',
+        'code_name'              => 'MDA Vario III',
         'model_extra_info'       => null,
         'marketing_name'         => 'MDA Vario III',
         'has_qwerty_keyboard'    => true,

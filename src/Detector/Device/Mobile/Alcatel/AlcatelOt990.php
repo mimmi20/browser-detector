@@ -55,7 +55,7 @@ class AlcatelOt990 extends AbstractDevice implements DeviceHasWurflKeyInterface,
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-990',
+        'code_name'              => 'OT-990',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch 990',
         'has_qwerty_keyboard'    => true,

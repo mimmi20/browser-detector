@@ -51,7 +51,7 @@ class SonyEricssonXST2 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XST2',
+        'code_name'              => 'XST2',
         'model_extra_info'       => null,
         'marketing_name'         => 'XST2',
         'has_qwerty_keyboard'    => true,

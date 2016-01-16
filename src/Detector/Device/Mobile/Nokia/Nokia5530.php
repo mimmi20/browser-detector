@@ -51,9 +51,9 @@ class Nokia5530 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => '5530 classic',
+        'code_name'              => '5530 classic',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '5530 classic',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

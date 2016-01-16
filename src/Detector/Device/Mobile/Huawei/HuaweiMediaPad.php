@@ -56,7 +56,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'S7-301w',
+        'code_name'              => 'S7-301w',
         'model_extra_info'       => 'aka T-Mobile Springboard',
         'marketing_name'         => 'MediaPad',
         'has_qwerty_keyboard'    => true,

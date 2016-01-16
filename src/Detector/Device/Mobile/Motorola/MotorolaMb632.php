@@ -51,7 +51,7 @@ class MotorolaMb632 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MB632',
+        'code_name'              => 'MB632',
         'model_extra_info'       => null,
         'marketing_name'         => 'Pro+',
         'has_qwerty_keyboard'    => true,

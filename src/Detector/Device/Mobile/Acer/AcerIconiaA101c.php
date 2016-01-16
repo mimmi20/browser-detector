@@ -51,7 +51,7 @@ class AcerIconiaA101c extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A101C',
+        'code_name'              => 'A101C',
         'model_extra_info'       => null,
         'marketing_name'         => 'A101C',
         'has_qwerty_keyboard'    => true,

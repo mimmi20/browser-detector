@@ -51,7 +51,7 @@ class SamsungSghi780 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-I780',
+        'code_name'              => 'SGH-I780',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-I780',
         'has_qwerty_keyboard'    => false,

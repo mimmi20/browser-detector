@@ -55,9 +55,9 @@ class TmobileG1 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'G1',
+        'code_name'              => 'G1',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'G1',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

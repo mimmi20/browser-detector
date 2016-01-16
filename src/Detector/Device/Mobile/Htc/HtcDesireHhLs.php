@@ -51,7 +51,7 @@ class HtcDesireHhLs extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Desire HD LS',
+        'code_name'              => 'Desire HD LS',
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire HD LS',
         'has_qwerty_keyboard'    => true,

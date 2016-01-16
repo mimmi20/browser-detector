@@ -57,7 +57,7 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Pixi',
+        'code_name'              => 'Pixi',
         'model_extra_info'       => null,
         'marketing_name'         => 'Pixi',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class HTC6435lvw extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => 'HTC6435LVW',
+        'code_name'              => 'HTC6435LVW',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid DNA',
         'has_qwerty_keyboard'    => true,

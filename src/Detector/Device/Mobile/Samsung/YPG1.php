@@ -51,7 +51,7 @@ class YPG1 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'YP-G1',
+        'code_name'              => 'YP-G1',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Player 4.0',
         'has_qwerty_keyboard'    => true,

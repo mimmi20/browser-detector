@@ -55,7 +55,7 @@ class ThinkPadTablet extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => '1838',
+        'code_name'              => '1838',
         'model_extra_info'       => null,
         'marketing_name'         => 'ThinkPad Tablet',
         'has_qwerty_keyboard'    => true,

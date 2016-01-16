@@ -51,7 +51,7 @@ class SonyTabletSgp512 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGP512',
+        'code_name'              => 'SGP512',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Tablet Z WiFi',
         'has_qwerty_keyboard'    => true,

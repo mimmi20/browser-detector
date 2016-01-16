@@ -55,7 +55,7 @@ class SonyEricssonW995 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'W995',
+        'code_name'              => 'W995',
         'model_extra_info'       => 'Walkman phone',
         'marketing_name'         => 'W995',
         'has_qwerty_keyboard'    => false,

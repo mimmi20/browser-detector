@@ -56,7 +56,7 @@ class AcerIconiaA511 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A511',
+        'code_name'              => 'A511',
         'model_extra_info'       => null,
         'marketing_name'         => 'A511',
         'has_qwerty_keyboard'    => true,

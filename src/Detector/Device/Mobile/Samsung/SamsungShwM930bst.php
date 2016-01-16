@@ -51,7 +51,7 @@ class SamsungShwM930bst extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SHW-M930BST',
+        'code_name'              => 'SHW-M930BST',
         'model_extra_info'       => null,
         'marketing_name'         => 'SHW-M930BST',
         'has_qwerty_keyboard'    => false,

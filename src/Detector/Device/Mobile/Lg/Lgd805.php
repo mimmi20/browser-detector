@@ -56,7 +56,7 @@ class Lgd805 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'D805',
+        'code_name'              => 'D805',
         'model_extra_info'       => null,
         'marketing_name'         => 'D805',
         'has_qwerty_keyboard'    => true,

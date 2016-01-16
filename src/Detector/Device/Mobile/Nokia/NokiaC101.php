@@ -51,9 +51,9 @@ class NokiaC101 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C1-01',
+        'code_name'              => 'C1-01',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'C1',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

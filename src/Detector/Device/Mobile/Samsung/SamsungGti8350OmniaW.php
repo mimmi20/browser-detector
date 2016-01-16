@@ -51,7 +51,7 @@ class SamsungGti8350OmniaW extends AbstractDevice implements DeviceHasSpecificPl
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I8350',
+        'code_name'              => 'GT-I8350',
         'model_extra_info'       => null,
         'marketing_name'         => 'Omnia W',
         'has_qwerty_keyboard'    => true,

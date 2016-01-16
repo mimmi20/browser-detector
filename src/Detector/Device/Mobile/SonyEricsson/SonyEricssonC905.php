@@ -55,7 +55,7 @@ class SonyEricssonC905 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C905',
+        'code_name'              => 'C905',
         'model_extra_info'       => null,
         'marketing_name'         => 'C905',
         'has_qwerty_keyboard'    => false,

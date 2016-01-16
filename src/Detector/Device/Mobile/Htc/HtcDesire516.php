@@ -51,7 +51,7 @@ class HtcDesire516 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Desire 516',
+        'code_name'              => 'Desire 516',
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire 516',
         'has_qwerty_keyboard'    => true,

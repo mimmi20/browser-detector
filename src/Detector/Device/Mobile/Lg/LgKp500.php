@@ -55,7 +55,7 @@ class LgKp500 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'KP500',
+        'code_name'              => 'KP500',
         'model_extra_info'       => null,
         'marketing_name'         => 'KP500',
         'has_qwerty_keyboard'    => false,

@@ -51,7 +51,7 @@ class HtcMdaCompactV extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MDA Compact V',
+        'code_name'              => 'MDA Compact V',
         'model_extra_info'       => null,
         'marketing_name'         => 'MDA Compact V',
         'has_qwerty_keyboard'    => true,

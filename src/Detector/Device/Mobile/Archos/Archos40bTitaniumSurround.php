@@ -51,7 +51,7 @@ class Archos40bTitaniumSurround extends AbstractDevice implements DeviceHasSpeci
      */
     protected $properties = array(
         // device
-        'code_name'             => '40b Titanium Surround',
+        'code_name'              => '40b Titanium Surround',
         'model_extra_info'       => null,
         'marketing_name'         => '40b Titanium Surround',
         'has_qwerty_keyboard'    => true,

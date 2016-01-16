@@ -55,7 +55,7 @@ class SamsungGts5300B extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S5300B',
+        'code_name'              => 'GT-S5300B',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Pocket',
         'has_qwerty_keyboard'    => true,

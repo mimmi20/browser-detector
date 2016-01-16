@@ -55,7 +55,7 @@ class SonyEricssonJ20i extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'J20i',
+        'code_name'              => 'J20i',
         'model_extra_info'       => null,
         'marketing_name'         => 'J20i',
         'has_qwerty_keyboard'    => false,

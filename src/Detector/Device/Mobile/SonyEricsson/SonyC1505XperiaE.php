@@ -51,7 +51,7 @@ class SonyC1505XperiaE extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'C1505',
+        'code_name'              => 'C1505',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia E',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class Archos50Platinum extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => '50 Platinum',
+        'code_name'              => '50 Platinum',
         'model_extra_info'       => null,
         'marketing_name'         => '50 Platinum',
         'has_qwerty_keyboard'    => true,

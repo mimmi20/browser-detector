@@ -55,7 +55,7 @@ class SonyST21iv extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ST21iv',
+        'code_name'              => 'ST21iv',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Tipo',
         'has_qwerty_keyboard'    => true,

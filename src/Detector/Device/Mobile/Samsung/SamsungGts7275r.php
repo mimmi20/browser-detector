@@ -51,7 +51,7 @@ class SamsungGts7275r extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S7275R',
+        'code_name'              => 'GT-S7275R',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Ace 3',
         'has_qwerty_keyboard'    => true,

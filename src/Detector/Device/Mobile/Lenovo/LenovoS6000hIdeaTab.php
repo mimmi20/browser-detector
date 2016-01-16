@@ -55,7 +55,7 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'S6000-H',
+        'code_name'              => 'S6000-H',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaTab S6000-H',
         'has_qwerty_keyboard'    => true,

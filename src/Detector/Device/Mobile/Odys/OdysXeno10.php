@@ -51,7 +51,7 @@ class OdysXeno10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Xeno 10',
+        'code_name'              => 'Xeno 10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xeno 10',
         'has_qwerty_keyboard'    => true,

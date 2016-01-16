@@ -51,7 +51,7 @@ class LgGd350 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GD350',
+        'code_name'              => 'GD350',
         'model_extra_info'       => null,
         'marketing_name'         => 'GD350',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class PrestigioPmp5770d extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PMP5770D',
+        'code_name'              => 'PMP5770D',
         'model_extra_info'       => null,
         'marketing_name'         => 'MultiPad 7.0 Prime Duo',
         'has_qwerty_keyboard'    => true,

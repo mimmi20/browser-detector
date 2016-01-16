@@ -51,7 +51,7 @@ class OdysNeoQuad10 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Neo Quad 10',
+        'code_name'              => 'Neo Quad 10',
         'model_extra_info'       => null,
         'marketing_name'         => 'Neo Quad 10',
         'has_qwerty_keyboard'    => true,

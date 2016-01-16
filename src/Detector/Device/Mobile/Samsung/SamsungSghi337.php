@@ -51,7 +51,7 @@ class SamsungSghi337 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-I337',
+        'code_name'              => 'SGH-I337',
         'model_extra_info'       => 'for AT&T',
         'marketing_name'         => 'SGH-I337',
         'has_qwerty_keyboard'    => false,

@@ -51,9 +51,9 @@ class NokiaN86 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'N86',
+        'code_name'              => 'N86',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'N86',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -51,7 +51,7 @@ class HuaweiMt1U06 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MT1-U06',
+        'code_name'              => 'MT1-U06',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend Mate',
         'has_qwerty_keyboard'    => true,

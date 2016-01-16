@@ -51,7 +51,7 @@ class NokiaLumia720 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Lumia 720',
+        'code_name'              => 'Lumia 720',
         'model_extra_info'       => null,
         'marketing_name'         => 'Lumia 720',
         'has_qwerty_keyboard'    => true,

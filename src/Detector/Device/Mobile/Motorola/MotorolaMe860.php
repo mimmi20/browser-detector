@@ -51,7 +51,7 @@ class MotorolaMe860 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ME860',
+        'code_name'              => 'ME860',
         'model_extra_info'       => null,
         'marketing_name'         => 'Atrix',
         'has_qwerty_keyboard'    => true,

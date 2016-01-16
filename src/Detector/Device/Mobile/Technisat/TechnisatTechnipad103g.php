@@ -51,7 +51,7 @@ class TechnisatTechnipad103g extends AbstractDevice implements DeviceHasSpecific
      */
     protected $properties = array(
         // device
-        'code_name'             => 'TechniPad 10 3G',
+        'code_name'              => 'TechniPad 10 3G',
         'model_extra_info'       => null,
         'marketing_name'         => 'TechniPad 10 3G',
         'has_qwerty_keyboard'    => true,

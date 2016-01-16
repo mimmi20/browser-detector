@@ -51,7 +51,7 @@ class MotorolaDroidBionic extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Droid Bionic',
+        'code_name'              => 'Droid Bionic',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid Bionic',
         'has_qwerty_keyboard'    => true,

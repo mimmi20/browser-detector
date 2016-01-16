@@ -53,7 +53,7 @@ class MicrosoftXboxOne extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Xbox One',
+        'code_name'              => 'Xbox One',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xbox One',
         'has_qwerty_keyboard'    => true,

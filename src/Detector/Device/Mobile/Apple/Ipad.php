@@ -54,7 +54,7 @@ class Ipad extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'iPad',
+        'code_name'              => 'iPad',
         'model_extra_info'       => null,
         'marketing_name'         => 'iPad',
         'has_qwerty_keyboard'    => true,

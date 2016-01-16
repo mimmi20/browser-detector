@@ -51,7 +51,7 @@ class ZteSkatE extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Skate',
+        'code_name'              => 'Skate',
         'model_extra_info'       => null,
         'marketing_name'         => 'Skate',
         'has_qwerty_keyboard'    => true,

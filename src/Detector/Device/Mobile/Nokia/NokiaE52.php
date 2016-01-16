@@ -55,9 +55,9 @@ class NokiaE52 extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E52',
+        'code_name'              => 'E52',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'E52',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

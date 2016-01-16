@@ -53,7 +53,7 @@ class O2 extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHas
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general O2 device',
+        'code_name'              => 'general O2 device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general O2 device',
         'has_qwerty_keyboard'    => true,

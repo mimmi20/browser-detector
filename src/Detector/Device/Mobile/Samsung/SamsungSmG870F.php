@@ -49,7 +49,7 @@ class SamsungSmG870F extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-G870F',
+        'code_name'              => 'SM-G870F',
         'model_extra_info'       => null,
         'marketing_name'         => 'SM-G870F',
         'has_qwerty_keyboard'    => true,

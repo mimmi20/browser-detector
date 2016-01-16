@@ -55,7 +55,7 @@ class Lgp940 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P940',
+        'code_name'              => 'P940',
         'model_extra_info'       => null,
         'marketing_name'         => 'Prada 3.0',
         'has_qwerty_keyboard'    => true,

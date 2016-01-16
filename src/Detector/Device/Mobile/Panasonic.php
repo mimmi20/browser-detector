@@ -53,9 +53,9 @@ class Panasonic extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Panasonic Device',
+        'code_name'              => 'general Panasonic Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general Panasonic Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

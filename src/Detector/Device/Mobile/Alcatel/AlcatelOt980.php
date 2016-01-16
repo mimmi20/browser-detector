@@ -51,7 +51,7 @@ class AlcatelOt980 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-980',
+        'code_name'              => 'OT-980',
         'model_extra_info'       => null,
         'marketing_name'         => 'OT-980',
         'has_qwerty_keyboard'    => true,

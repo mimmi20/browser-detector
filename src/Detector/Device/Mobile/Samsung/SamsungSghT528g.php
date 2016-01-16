@@ -51,7 +51,7 @@ class SamsungSghT528g extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-T528g',
+        'code_name'              => 'SGH-T528g',
         'model_extra_info'       => null,
         'marketing_name'         => 'SGH-T528g',
         'has_qwerty_keyboard'    => false,

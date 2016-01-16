@@ -51,7 +51,7 @@ class OdysXelio10Extreme extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Xelio 10 Extreme',
+        'code_name'              => 'Xelio 10 Extreme',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xelio 10 Extreme',
         'has_qwerty_keyboard'    => true,

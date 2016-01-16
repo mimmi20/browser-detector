@@ -51,7 +51,7 @@ class Lgp705 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P705',
+        'code_name'              => 'P705',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus L7',
         'has_qwerty_keyboard'    => true,

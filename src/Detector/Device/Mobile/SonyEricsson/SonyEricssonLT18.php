@@ -51,7 +51,7 @@ class SonyEricssonLT18 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LT18',
+        'code_name'              => 'LT18',
         'model_extra_info'       => null,
         'marketing_name'         => 'LT18',
         'has_qwerty_keyboard'    => true,

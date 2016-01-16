@@ -53,7 +53,7 @@ class Neofonie extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Neofonie Device',
+        'code_name'              => 'general Neofonie Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Neofonie Device',
         'has_qwerty_keyboard'    => true,

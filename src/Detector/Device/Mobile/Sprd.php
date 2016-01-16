@@ -53,7 +53,7 @@ class Sprd extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general sprd device',
+        'code_name'              => 'general sprd device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general sprd device',
         'has_qwerty_keyboard'    => true,

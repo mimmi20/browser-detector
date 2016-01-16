@@ -51,9 +51,9 @@ class PhilipsTv extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Philips TV',
+        'code_name'              => 'general Philips TV',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general Philips TV',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'mouse',
         // product info

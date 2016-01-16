@@ -55,7 +55,7 @@ class AcerLiquidS100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Acer S100',
+        'code_name'              => 'Acer S100',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid',
         'has_qwerty_keyboard'    => false, // wurflkey: acer_liquid_ver1_subandroid_2_1

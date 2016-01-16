@@ -56,7 +56,7 @@ class SamsungSmP600 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-P600',
+        'code_name'              => 'SM-P600',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Note 10.1 2014 Edition Wi-Fi',
         'has_qwerty_keyboard'    => true,

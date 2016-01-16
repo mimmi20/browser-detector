@@ -51,7 +51,7 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'S120',
+        'code_name'              => 'S120',
         'model_extra_info'       => null,
         'marketing_name'         => 'Liquid MT',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SonyTabletP extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGPT211',
+        'code_name'              => 'SGPT211',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tablet P',
         'has_qwerty_keyboard'    => true,

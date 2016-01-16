@@ -51,7 +51,7 @@ class MotorolaDroidPro extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'DROID PRO',
+        'code_name'              => 'DROID PRO',
         'model_extra_info'       => null,
         'marketing_name'         => 'DROID PRO',
         'has_qwerty_keyboard'    => true,

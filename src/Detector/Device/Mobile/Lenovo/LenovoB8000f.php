@@ -51,7 +51,7 @@ class LenovoB8000f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'B8000-F',
+        'code_name'              => 'B8000-F',
         'model_extra_info'       => null,
         'marketing_name'         => 'Yoga B8000-F',
         'has_qwerty_keyboard'    => true,

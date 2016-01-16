@@ -53,7 +53,7 @@ class RimPlayBook extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PlayBook',
+        'code_name'              => 'PlayBook',
         'model_extra_info'       => null,
         'marketing_name'         => 'PlayBook',
         'has_qwerty_keyboard'    => true,

@@ -51,9 +51,9 @@ class Nokia113 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => '113',
+        'code_name'              => '113',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '113',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => null,
         // product info

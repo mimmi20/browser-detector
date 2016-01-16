@@ -51,7 +51,7 @@ class HuaweiU7510 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'U7510',
+        'code_name'              => 'U7510',
         'model_extra_info'       => null,
         'marketing_name'         => 'U7510',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class AlcatelOt4030X extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'OT-4030X',
+        'code_name'              => 'OT-4030X',
         'model_extra_info'       => null,
         'marketing_name'         => 'One Touch 4030X',
         'has_qwerty_keyboard'    => true,

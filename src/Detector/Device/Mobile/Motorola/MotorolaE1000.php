@@ -51,7 +51,7 @@ class MotorolaE1000 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E1000',
+        'code_name'              => 'E1000',
         'model_extra_info'       => null,
         'marketing_name'         => 'E1000',
         'has_qwerty_keyboard'    => true,

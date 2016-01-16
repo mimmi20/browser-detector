@@ -55,7 +55,7 @@ class SonyEricssonW595 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'W595',
+        'code_name'              => 'W595',
         'model_extra_info'       => null,
         'marketing_name'         => 'W595',
         'has_qwerty_keyboard'    => false,

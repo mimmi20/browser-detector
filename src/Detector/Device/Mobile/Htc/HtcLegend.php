@@ -55,7 +55,7 @@ class HtcLegend extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Legend',
+        'code_name'              => 'Legend',
         'model_extra_info'       => null,
         'marketing_name'         => 'Legend',
         'has_qwerty_keyboard'    => true,

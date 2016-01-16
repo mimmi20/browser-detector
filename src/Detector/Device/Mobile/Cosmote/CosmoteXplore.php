@@ -51,7 +51,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P7901A',
+        'code_name'              => 'P7901A',
         'model_extra_info'       => null,
         'marketing_name'         => 'P7901A',
         'has_qwerty_keyboard'    => true,

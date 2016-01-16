@@ -53,7 +53,7 @@ class Olivetti extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Olivetti Device',
+        'code_name'              => 'general Olivetti Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Olivetti Device',
         'has_qwerty_keyboard'    => true,

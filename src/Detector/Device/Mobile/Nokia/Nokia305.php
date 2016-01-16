@@ -51,7 +51,7 @@ class Nokia305 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => '305',
+        'code_name'              => '305',
         'model_extra_info'       => null,
         'marketing_name'         => '305',
         'has_qwerty_keyboard'    => false,

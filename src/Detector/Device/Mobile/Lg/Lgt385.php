@@ -55,7 +55,7 @@ class Lgt385 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      */
     protected $properties = array(
         // device
-        'code_name'             => 'T385',
+        'code_name'              => 'T385',
         'model_extra_info'       => null,
         'marketing_name'         => 'T385',
         'has_qwerty_keyboard'    => true,

@@ -53,7 +53,7 @@ class HiPhone extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general HiPhone Device',
+        'code_name'              => 'general HiPhone Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general HiPhone Device',
         'has_qwerty_keyboard'    => true,

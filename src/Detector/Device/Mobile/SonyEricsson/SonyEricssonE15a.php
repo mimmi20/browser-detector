@@ -51,7 +51,7 @@ class SonyEricssonE15a extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'             => 'E15a',
+        'code_name'              => 'E15a',
         'model_extra_info'       => null,
         'marketing_name'         => 'E15a',
         'has_qwerty_keyboard'    => true,

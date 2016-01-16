@@ -55,7 +55,7 @@ class HtcNexus9 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Nexus 9',
+        'code_name'              => 'Nexus 9',
         'model_extra_info'       => null,
         'marketing_name'         => 'Nexus 9',
         'has_qwerty_keyboard'    => true,

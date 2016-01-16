@@ -49,7 +49,7 @@ class Archos50cOxygen extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => '50c Oxygen',
+        'code_name'              => '50c Oxygen',
         'model_extra_info'       => null,
         'marketing_name'         => '50c Oxygen',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class OdysXelio7Pro extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Xelio 7 Pro',
+        'code_name'              => 'Xelio 7 Pro',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xelio 7 Pro',
         'has_qwerty_keyboard'    => true,

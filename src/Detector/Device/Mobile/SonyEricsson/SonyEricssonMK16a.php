@@ -51,7 +51,7 @@ class SonyEricssonMK16a extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MK16a',
+        'code_name'              => 'MK16a',
         'model_extra_info'       => null,
         'marketing_name'         => 'MK16a',
         'has_qwerty_keyboard'    => true,

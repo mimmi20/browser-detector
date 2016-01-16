@@ -51,7 +51,7 @@ class Lgd213 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'D213',
+        'code_name'              => 'D213',
         'model_extra_info'       => null,
         'marketing_name'         => 'L50 NFC',
         'has_qwerty_keyboard'    => true,

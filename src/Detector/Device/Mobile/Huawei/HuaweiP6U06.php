@@ -51,7 +51,7 @@ class HuaweiP6U06 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P6-U06',
+        'code_name'              => 'P6-U06',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend P6',
         'has_qwerty_keyboard'    => true,

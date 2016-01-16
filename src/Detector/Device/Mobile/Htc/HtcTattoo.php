@@ -55,7 +55,7 @@ class HtcTattoo extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Tattoo',
+        'code_name'              => 'Tattoo',
         'model_extra_info'       => null,
         'marketing_name'         => 'Tattoo',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class SamsungGti9190 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9190',
+        'code_name'              => 'GT-I9190',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S4 Mini',
         'has_qwerty_keyboard'    => true,

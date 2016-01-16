@@ -55,7 +55,7 @@ class SamsungGts6102 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S6102',
+        'code_name'              => 'GT-S6102',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Y Duos',
         'has_qwerty_keyboard'    => true,

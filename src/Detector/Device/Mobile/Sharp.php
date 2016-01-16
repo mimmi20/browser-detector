@@ -53,9 +53,9 @@ class Sharp extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Sharp Device',
+        'code_name'              => 'general Sharp Device',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'general Sharp Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

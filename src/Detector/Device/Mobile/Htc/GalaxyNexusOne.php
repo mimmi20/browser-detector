@@ -55,7 +55,7 @@ class GalaxyNexusOne extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Nexus One',
+        'code_name'              => 'Nexus One',
         'model_extra_info'       => 'Google Phone',
         'marketing_name'         => 'HTC Nexus One',
         'has_qwerty_keyboard'    => true,

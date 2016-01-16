@@ -51,7 +51,7 @@ class HdcI9300GalaxyS3Ex extends AbstractDevice implements DeviceHasSpecificPlat
      */
     protected $properties = array(
         // device
-        'code_name'             => 'i9300',
+        'code_name'              => 'i9300',
         'model_extra_info'       => null,
         'marketing_name'         => 'i9300 Galaxy S3 EX',
         'has_qwerty_keyboard'    => true,

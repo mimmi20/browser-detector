@@ -51,7 +51,7 @@ class LenovoA3000hIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A3000-H',
+        'code_name'              => 'A3000-H',
         'model_extra_info'       => null,
         'marketing_name'         => 'IdeaTab A3000-H',
         'has_qwerty_keyboard'    => true,

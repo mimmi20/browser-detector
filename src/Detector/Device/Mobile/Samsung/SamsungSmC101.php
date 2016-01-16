@@ -51,7 +51,7 @@ class SamsungSmC101 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-C101',
+        'code_name'              => 'SM-C101',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S4 Zoom C101',
         'has_qwerty_keyboard'    => true,

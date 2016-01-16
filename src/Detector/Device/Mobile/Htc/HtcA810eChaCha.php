@@ -55,7 +55,7 @@ class HtcA810eChaCha extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A810e',
+        'code_name'              => 'A810e',
         'model_extra_info'       => null,
         'marketing_name'         => 'ChaCha',
         'has_qwerty_keyboard'    => true,

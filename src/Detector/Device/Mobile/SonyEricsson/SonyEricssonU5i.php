@@ -55,7 +55,7 @@ class SonyEricssonU5i extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'U5i',
+        'code_name'              => 'U5i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Vivaz',
         'has_qwerty_keyboard'    => false, // wurflkey: sonyericsson_u5i_ver1

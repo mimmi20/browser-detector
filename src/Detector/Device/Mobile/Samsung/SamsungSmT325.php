@@ -49,7 +49,7 @@ class SamsungSmT325 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T325',
+        'code_name'              => 'SM-T325',
         'model_extra_info'       => null,
         'marketing_name'         => 'SM-T325',
         'has_qwerty_keyboard'    => true,

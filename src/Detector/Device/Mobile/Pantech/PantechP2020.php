@@ -51,7 +51,7 @@ class PantechP2020 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P2020',
+        'code_name'              => 'P2020',
         'model_extra_info'       => null,
         'marketing_name'         => 'P2020',
         'has_qwerty_keyboard'    => true,

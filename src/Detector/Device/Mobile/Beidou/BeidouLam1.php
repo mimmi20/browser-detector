@@ -51,7 +51,7 @@ class BeidouLam1 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LA-M1',
+        'code_name'              => 'LA-M1',
         'model_extra_info'       => null,
         'marketing_name'         => 'Chili Pepper LA-M1',
         'has_qwerty_keyboard'    => true,

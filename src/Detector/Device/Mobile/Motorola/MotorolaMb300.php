@@ -51,7 +51,7 @@ class MotorolaMb300 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MB300',
+        'code_name'              => 'MB300',
         'model_extra_info'       => null,
         'marketing_name'         => 'Backflip',
         'has_qwerty_keyboard'    => true,

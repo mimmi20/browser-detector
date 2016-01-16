@@ -55,7 +55,7 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasWurflK
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Sensation XE Beats Z715e',
+        'code_name'              => 'Sensation XE Beats Z715e',
         'model_extra_info'       => null,
         'marketing_name'         => 'Sensation',
         'has_qwerty_keyboard'    => true,

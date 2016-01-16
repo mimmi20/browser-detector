@@ -51,7 +51,7 @@ class GeneralTv extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general TV Device',
+        'code_name'              => 'general TV Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general TV Device',
         'has_qwerty_keyboard'    => null,

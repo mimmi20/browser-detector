@@ -55,9 +55,9 @@ class MultipadPmp5080b extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PMP5080B',
+        'code_name'              => 'PMP5080B',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'PMP5080B',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

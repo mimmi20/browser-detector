@@ -55,7 +55,7 @@ class MID8024 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MID8024',
+        'code_name'              => 'MID8024',
         'model_extra_info'       => '4GB',
         'marketing_name'         => 'Kyros MID8024',
         'has_qwerty_keyboard'    => true,

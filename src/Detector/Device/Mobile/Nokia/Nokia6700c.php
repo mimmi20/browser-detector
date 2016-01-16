@@ -55,9 +55,9 @@ class Nokia6700c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => '6700 classic',
+        'code_name'              => '6700 classic',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '6700 classic',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => null,
         // product info

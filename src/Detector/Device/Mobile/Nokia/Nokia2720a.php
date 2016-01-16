@@ -51,9 +51,9 @@ class Nokia2720a extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => '2720a',
+        'code_name'              => '2720a',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '2720a',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

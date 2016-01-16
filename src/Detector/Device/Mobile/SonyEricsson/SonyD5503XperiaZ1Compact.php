@@ -56,7 +56,7 @@ class SonyD5503XperiaZ1Compact extends AbstractDevice implements DeviceHasWurflK
      */
     protected $properties = array(
         // device
-        'code_name'             => 'D5503',
+        'code_name'              => 'D5503',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia Z1 Compact',
         'has_qwerty_keyboard'    => true,

@@ -49,7 +49,7 @@ class WikoCinkPeax2 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Cink Peax 2',
+        'code_name'              => 'Cink Peax 2',
         'model_extra_info'       => null,
         'marketing_name'         => 'Cink Peax 2',
         'has_qwerty_keyboard'    => true,

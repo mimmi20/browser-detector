@@ -55,7 +55,7 @@ class SamsungGts7250 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S7250',
+        'code_name'              => 'GT-S7250',
         'model_extra_info'       => null,
         'marketing_name'         => 'Wave M',
         'has_qwerty_keyboard'    => false,

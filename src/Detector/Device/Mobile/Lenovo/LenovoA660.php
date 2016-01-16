@@ -51,7 +51,7 @@ class LenovoA660 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A660',
+        'code_name'              => 'A660',
         'model_extra_info'       => null,
         'marketing_name'         => 'A660',
         'has_qwerty_keyboard'    => true,

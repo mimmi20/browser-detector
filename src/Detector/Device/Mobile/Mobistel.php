@@ -53,7 +53,7 @@ class Mobistel extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Mobistel Device',
+        'code_name'              => 'general Mobistel Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Mobistel Device',
         'has_qwerty_keyboard'    => true,

@@ -51,9 +51,9 @@ class Lgt300 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'T300',
+        'code_name'              => 'T300',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'T300',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

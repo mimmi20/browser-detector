@@ -51,7 +51,7 @@ class SamsungGtb5510 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-B5510',
+        'code_name'              => 'GT-B5510',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Y',
         'has_qwerty_keyboard'    => true,

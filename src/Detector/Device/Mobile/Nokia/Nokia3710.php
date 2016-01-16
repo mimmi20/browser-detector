@@ -51,9 +51,9 @@ class Nokia3710 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'             => '3710',
+        'code_name'              => '3710',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '3710',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

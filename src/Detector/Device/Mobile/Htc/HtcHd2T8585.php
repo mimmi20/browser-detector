@@ -53,7 +53,7 @@ class HtcHd2T8585 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'T8585',
+        'code_name'              => 'T8585',
         'model_extra_info'       => null,
         'marketing_name'         => 'HD2',
         'has_qwerty_keyboard'    => false,

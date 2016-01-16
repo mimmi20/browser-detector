@@ -51,7 +51,7 @@ class OP070 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Olipad 70',
+        'code_name'              => 'Olipad 70',
         'model_extra_info'       => null,
         'marketing_name'         => 'Olipad Smart',
         'has_qwerty_keyboard'    => true,

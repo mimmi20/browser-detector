@@ -55,7 +55,7 @@ class MotorolaDroidRazr4g extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT912B',
+        'code_name'              => 'XT912B',
         'model_extra_info'       => null,
         'marketing_name'         => 'Droid Razr 4G',
         'has_qwerty_keyboard'    => true,

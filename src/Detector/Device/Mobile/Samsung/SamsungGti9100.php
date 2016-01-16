@@ -56,7 +56,7 @@ class SamsungGti9100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9100',
+        'code_name'              => 'GT-I9100',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S II',
         'has_qwerty_keyboard'    => true,

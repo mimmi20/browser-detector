@@ -51,7 +51,7 @@ class SamsungSmT111 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T111',
+        'code_name'              => 'SM-T111',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 3 Lite 7.0 3G',
         'has_qwerty_keyboard'    => true,

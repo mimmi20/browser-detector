@@ -55,7 +55,7 @@ class MotorolaXt389 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT389',
+        'code_name'              => 'XT389',
         'model_extra_info'       => null,
         'marketing_name'         => 'Motoluxe XT389',
         'has_qwerty_keyboard'    => true,

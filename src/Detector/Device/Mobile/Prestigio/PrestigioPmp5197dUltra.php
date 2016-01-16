@@ -51,7 +51,7 @@ class PrestigioPmp5197dUltra extends AbstractDevice implements DeviceHasSpecific
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PMP5197DULTRA',
+        'code_name'              => 'PMP5197DULTRA',
         'model_extra_info'       => null,
         'marketing_name'         => 'MultiPad 9.7 Ultra',
         'has_qwerty_keyboard'    => true,

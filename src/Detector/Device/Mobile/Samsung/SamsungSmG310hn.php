@@ -49,7 +49,7 @@ class SamsungSmG310hn extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-G310HN',
+        'code_name'              => 'SM-G310HN',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Core Plus',
         'has_qwerty_keyboard'    => true,

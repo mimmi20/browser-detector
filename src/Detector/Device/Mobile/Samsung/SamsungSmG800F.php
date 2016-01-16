@@ -55,7 +55,7 @@ class SamsungSmG800F extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-G800F',
+        'code_name'              => 'SM-G800F',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S5 Mini',
         'has_qwerty_keyboard'    => true,

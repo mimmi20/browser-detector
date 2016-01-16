@@ -51,7 +51,7 @@ class HtcVelocity extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Velocity',
+        'code_name'              => 'Velocity',
         'model_extra_info'       => null,
         'marketing_name'         => 'Velocity',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class HuaweiY330u01 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Y330-U01',
+        'code_name'              => 'Y330-U01',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend Y330',
         'has_qwerty_keyboard'    => true,

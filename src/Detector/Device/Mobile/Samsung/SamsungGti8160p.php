@@ -55,7 +55,7 @@ class SamsungGti8160p extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I8160P',
+        'code_name'              => 'GT-I8160P',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Ace 2 NFC', // wurflkey: samsung_gt_i8160_ver1_subuap
         'has_qwerty_keyboard'    => true, // wurflkey: samsung_gt_i8160_ver1_subuap

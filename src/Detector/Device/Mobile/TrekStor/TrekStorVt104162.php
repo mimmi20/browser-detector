@@ -55,7 +55,7 @@ class TrekStorVt104162 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     protected $properties = array(
         // device
-        'code_name'             => 'VT10416-2',
+        'code_name'              => 'VT10416-2',
         'model_extra_info'       => null,
         'marketing_name'         => 'VT10416-2',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class PanasonicDl1 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'             => 'dL1',
+        'code_name'              => 'dL1',
         'model_extra_info'       => null,
         'marketing_name'         => 'Eluga',
         'has_qwerty_keyboard'    => true,

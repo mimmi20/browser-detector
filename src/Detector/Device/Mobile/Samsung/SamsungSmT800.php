@@ -51,7 +51,7 @@ class SamsungSmT800 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T800',
+        'code_name'              => 'SM-T800',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab S 10.5',
         'has_qwerty_keyboard'    => true,

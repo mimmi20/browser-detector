@@ -55,9 +55,9 @@ class PlayStationVita extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PlayStation Vita',
+        'code_name'              => 'PlayStation Vita',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => 'PlayStation Vita',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -55,7 +55,7 @@ class SamsungGti9105p extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9105P',
+        'code_name'              => 'GT-I9105P',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S II Plus NFC',
         'has_qwerty_keyboard'    => true,

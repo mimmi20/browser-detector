@@ -55,7 +55,7 @@ class Htc8s extends AbstractDevice implements DeviceHasWurflKeyInterface, Device
      */
     protected $properties = array(
         // device
-        'code_name'             => '8S',
+        'code_name'              => '8S',
         'model_extra_info'       => null,
         'marketing_name'         => '8S',
         'has_qwerty_keyboard'    => true,

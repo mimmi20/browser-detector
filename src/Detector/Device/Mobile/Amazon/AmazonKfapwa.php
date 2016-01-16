@@ -49,7 +49,7 @@ class AmazonKfapwa extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'KFAPWA',
+        'code_name'              => 'KFAPWA',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kindle Fire HDX 8.9',
         'has_qwerty_keyboard'    => true,

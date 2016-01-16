@@ -56,7 +56,7 @@ class MotorolaXt890 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'XT890',
+        'code_name'              => 'XT890',
         'model_extra_info'       => null,
         'marketing_name'         => 'RAZR i',
         'has_qwerty_keyboard'    => true,

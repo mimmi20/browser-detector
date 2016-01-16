@@ -720,8 +720,12 @@ class BrowserFactory
      *
      * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
-    public static function detect($agent, OsInterface $platform, LoggerInterface $logger, AdapterInterface $cache = null)
-    {
+    public static function detect(
+        $agent,
+        OsInterface $platform = null,
+        LoggerInterface $logger = null,
+        AdapterInterface $cache = null
+    ) {
         if (preg_match('/windows nt (7|8|9)/i', $agent)) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/(os x \d{3,5}\)|like macos x|like Geccko)/i', $agent)) {
@@ -1040,7 +1044,7 @@ class BrowserFactory
             $browser = new SogouExplorer($agent, $logger);
         } elseif (preg_match('/ArchiveBot/', $agent)) {
             $browser = new ArchiveBot($agent, $logger);
-        } elseif (preg_match('/Edge/', $agent) && 'Windows Phone OS' === $platform->getName()) {
+        } elseif (preg_match('/Edge/', $agent) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
             $browser = new MicrosoftEdgeMobile($agent, $logger);
         } elseif (preg_match('/Edge/', $agent)) {
             $browser = new MicrosoftEdge($agent, $logger);
@@ -1106,7 +1110,7 @@ class BrowserFactory
             $browser = new YahooApp($agent, $logger);
         } elseif (preg_match('/(linux; u; android|linux; android)/i', $agent) && preg_match('/version/i', $agent)) {
             $browser = new AndroidWebkit($agent, $logger);
-        } elseif (preg_match('/safari/i', $agent) && 'Android' === $platform->getName()) {
+        } elseif (preg_match('/safari/i', $agent) && null !== $platform && 'Android' === $platform->getName()) {
             $browser = new AndroidWebkit($agent, $logger);
         } elseif (preg_match('/Browser\/AppleWebKit/', $agent)) {
             $browser = new AndroidWebkit($agent, $logger);

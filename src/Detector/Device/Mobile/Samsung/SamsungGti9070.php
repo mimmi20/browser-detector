@@ -55,7 +55,7 @@ class SamsungGti9070 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-I9070',
+        'code_name'              => 'GT-I9070',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S Advance',
         'has_qwerty_keyboard'    => true,

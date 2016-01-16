@@ -55,7 +55,7 @@ class DellStreak10Pro extends AbstractDevice implements DeviceHasWurflKeyInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Streak 10 Pro',
+        'code_name'              => 'Streak 10 Pro',
         'model_extra_info'       => null,
         'marketing_name'         => 'Streak 10 Pro',
         'has_qwerty_keyboard'    => true,

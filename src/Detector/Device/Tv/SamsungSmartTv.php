@@ -49,7 +49,7 @@ class SamsungSmartTv extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Smart TV',
+        'code_name'              => 'Smart TV',
         'model_extra_info'       => null,
         'marketing_name'         => 'Smart TV',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class ArnovaArchm901 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'ARCHM901',
+        'code_name'              => 'ARCHM901',
         'model_extra_info'       => null,
         'marketing_name'         => 'ARCHM901',
         'has_qwerty_keyboard'    => true,

@@ -51,9 +51,9 @@ class Nokia6610i extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => '6610i',
+        'code_name'              => '6610i',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '6610i',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

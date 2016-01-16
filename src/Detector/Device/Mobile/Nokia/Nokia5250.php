@@ -55,9 +55,9 @@ class Nokia5250 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      */
     protected $properties = array(
         // device
-        'code_name'             => '5250',
+        'code_name'              => '5250',
         'model_extra_info'       => null,
-        'marketing_name'         => null,
+        'marketing_name'         => '5250',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

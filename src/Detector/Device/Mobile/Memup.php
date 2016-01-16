@@ -53,7 +53,7 @@ class Memup extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Memup device',
+        'code_name'              => 'general Memup device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Memup device',
         'has_qwerty_keyboard'    => true,

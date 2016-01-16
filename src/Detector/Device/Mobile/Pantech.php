@@ -53,7 +53,7 @@ class Pantech extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P2020',
+        'code_name'              => 'P2020',
         'model_extra_info'       => null,
         'marketing_name'         => 'P2020',
         'has_qwerty_keyboard'    => true,

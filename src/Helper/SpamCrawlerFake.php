@@ -30,6 +30,8 @@
 
 namespace BrowserDetector\Helper;
 
+use BrowserDetector\Detector\Browser\FakeBrowser;
+use BrowserDetector\Detector\Factory\BrowserFactory;
 use UaHelper\Utils;
 
 /**
@@ -264,109 +266,9 @@ class SpamCrawlerFake
      */
     public function isFakeBrowser()
     {
-        $noFakes = array(
-            'HTTrack',
-            'OpenVAS',
-            'OpenWeb',
-            'Maxthon',
-            'appengine',
-            'ClarityDailyBot',
-            'Daumoa',
-            'Sogou',
-            'CybEye',
-        );
+        $browser = BrowserFactory::detect($this->useragent);
 
-        if ($this->utils->checkIfContains($noFakes)) {
-            return false;
-        }
-
-        if ($this->isAnonymized()) {
-            return false;
-        }
-
-        if ($this->utils->checkIfStartsWith(
-            array(
-                'ie', 'msie', 'internet explorer', 'firefox', 'mozillafirefox', 'flock', 'konqueror', 'seamonkey',
-                'chrome'
-            ),
-            true
-        )
-        ) {
-            return true;
-        }
-
-        if ($this->utils->checkIfContains(
-            array('mac; mac os ', 'fake', 'linux; unix os', '000000000;', 'google chrome', 'ua:', 'user-agent:'),
-            true
-        )
-        ) {
-            return true;
-        }
-
-        if ($this->utils->checkIfContains(array('internet explorer'), true)
-            && !$this->utils->checkIfContains(array('internet explorer anonymized by'), true)
-        ) {
-            return true;
-        }
-
-        if (!$this->utils->checkIfStartsWith('Mozilla/') // regular IE
-            && !$this->utils->checkIfStartsWith('Outlook-Express/') // Windows Live Mail
-            && !$this->utils->checkIfContains('Windows CE') // Windows CE
-            && !$this->utils->checkIfContains('Opera') // Opera
-            && $this->utils->checkIfContains('MSIE')
-        ) {
-            return true;
-        }
-
-        if ($this->utils->checkIfContains('Gecko')
-            && !$this->utils->checkIfContains(array('like gecko', 'ubuntu'), true)
-            && $this->utils->checkIfContains(array('chrome', 'safari', 'internet explorer'), true)
-        ) {
-            return true;
-        }
-
-        if ($this->isFakeWindows() || $this->isFakeIe()) {
-            return true;
-        }
-
-        $doMatch = preg_match('/^Mozilla\/(\d+)\.(\d+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            if ($matches[2]) {
-                return true;
-            }
-
-            if ($matches[1] >= 7) {
-                return true;
-            }
-        }
-
-        $doMatch = preg_match(
-            '/^Mozilla\/5\.0 \(X11; U; Linux i686; .*; rv:([\d\.]+)\) Gecko\/.* Firefox\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch
-            && (float)$matches[2] >= 4
-            && ((float)$matches[1] != (float)$matches[2])
-        ) {
-            return true;
-        }
-
-        $doMatch = preg_match('/Presto\/(\d+)\.(\d+)/', $this->useragent, $matches);
-
-        if ($doMatch && $matches[1] > 2) {
-            return true;
-        }
-
-        $doMatch = preg_match('/SeaMonkey\/(\d+)\.(\d+)/', $this->useragent, $matches);
-
-        if ($doMatch && $matches[1] > 2) {
-            return true;
-        }
-
-        return false;
+        return ($browser instanceof FakeBrowser);
     }
 
     public function isAnonymized()
@@ -393,7 +295,75 @@ class SpamCrawlerFake
 
     public function isFakeWindows()
     {
-        if ($this->utils->checkIfContains('X11; MSIE')) {
+        if (preg_match('/windows nt (7|8|9)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/(os x \d{3,5}\)|like macos x|like Geccko)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/(x11; windows)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/(windows x86\_64|compatible\-|window nt)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/(app3lewebkit)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/Mozilla\/(6|7|8|9)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/Mozilla\/(4|5)\.0(\+|  )/', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/Mozilla\/(4|5)\.0 \(;;/', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/Mozilla\/(4|5)\.0 \(\)/', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/^Mozilla /', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/Mozilla\/4\.0 \(compatible\;Android\;/', $agent)) {
+            return true;
+        }
+
+        if (!preg_match('/^\[FBAN/i', $agent) && preg_match('/^(\'|\"|\[|\]|\=|\\\x|%|\(|label\=|intel mac os x|agent\:|chrome)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/applewebkit\/1\.1/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/(mozila|mozilmozilla|mozzila)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/trident\/4/i', $agent) && preg_match('/msie (9|10|11)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/trident\/5/i', $agent) && preg_match('/msie (10|11)/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/trident\/6/i', $agent) && preg_match('/msie 11/i', $agent)) {
+            return true;
+        }
+
+        if (preg_match('/netscape/i', $agent) && preg_match('/msie/i', $agent)) {
             return true;
         }
 

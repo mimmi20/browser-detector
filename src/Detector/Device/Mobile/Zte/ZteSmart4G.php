@@ -51,7 +51,7 @@ class ZteSmart4G extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Smart 4G',
+        'code_name'              => 'Smart 4G',
         'model_extra_info'       => null,
         'marketing_name'         => 'Smart 4G',
         'has_qwerty_keyboard'    => true,

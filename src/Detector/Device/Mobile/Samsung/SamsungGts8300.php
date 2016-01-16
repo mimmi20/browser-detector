@@ -51,7 +51,7 @@ class SamsungGts8300 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-S8300',
+        'code_name'              => 'GT-S8300',
         'model_extra_info'       => null,
         'marketing_name'         => 'GT-S8300',
         'has_qwerty_keyboard'    => false,

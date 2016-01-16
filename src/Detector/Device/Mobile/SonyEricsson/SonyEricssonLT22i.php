@@ -56,7 +56,7 @@ class SonyEricssonLT22i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'             => 'LT22i',
+        'code_name'              => 'LT22i',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xperia P LT22i', // wurflkey: sonyericsson_lt22i_ver1_subua40_subuachr
         'has_qwerty_keyboard'    => true,

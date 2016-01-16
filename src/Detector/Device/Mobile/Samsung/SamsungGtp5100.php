@@ -56,7 +56,7 @@ class SamsungGtp5100 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'GT-P5100',
+        'code_name'              => 'GT-P5100',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 2 10.1',
         'has_qwerty_keyboard'    => true,

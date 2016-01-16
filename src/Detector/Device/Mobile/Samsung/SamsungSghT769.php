@@ -51,7 +51,7 @@ class SamsungSghT769 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SGH-T769',
+        'code_name'              => 'SGH-T769',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy S Blaze 4G',
         'has_qwerty_keyboard'    => true,

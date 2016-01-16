@@ -55,7 +55,7 @@ class MID9742 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MID9742',
+        'code_name'              => 'MID9742',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kyros MID9742',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class HuaweiY300 extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Y300',
+        'code_name'              => 'Y300',
         'model_extra_info'       => null,
         'marketing_name'         => 'Ascend Y 300',
         'has_qwerty_keyboard'    => true,

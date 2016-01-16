@@ -49,7 +49,7 @@ class PrestigioPmp5101cQuad extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'             => 'PMP5101C_QUAD',
+        'code_name'              => 'PMP5101C_QUAD',
         'model_extra_info'       => null,
         'marketing_name'         => 'MultiPad 4 Quantum 10.1',
         'has_qwerty_keyboard'    => true,

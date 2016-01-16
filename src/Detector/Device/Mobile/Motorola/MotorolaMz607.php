@@ -51,7 +51,7 @@ class MotorolaMz607 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MZ607',
+        'code_name'              => 'MZ607',
         'model_extra_info'       => null,
         'marketing_name'         => 'Xoom 2 Media Edition',
         'has_qwerty_keyboard'    => true,

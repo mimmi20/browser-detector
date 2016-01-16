@@ -51,7 +51,7 @@ class HuaweiG6609 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'             => 'G6609',
+        'code_name'              => 'G6609',
         'model_extra_info'       => null,
         'marketing_name'         => 'G6609',
         'has_qwerty_keyboard'    => true,

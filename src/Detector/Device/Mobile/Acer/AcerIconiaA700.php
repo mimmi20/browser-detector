@@ -59,7 +59,7 @@ class AcerIconiaA700
      */
     protected $properties = array(
         // device
-        'code_name'             => 'A700',
+        'code_name'              => 'A700',
         'model_extra_info'       => null,
         'marketing_name'         => 'Iconia Tab A700',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class Technisat extends AbstractDevice implements DeviceHasChildrenInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'general Technisat Device',
+        'code_name'              => 'general Technisat Device',
         'model_extra_info'       => null,
         'marketing_name'         => 'general Technisat Device',
         'has_qwerty_keyboard'    => true,

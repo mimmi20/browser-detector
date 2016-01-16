@@ -51,7 +51,7 @@ class Lgp936 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     protected $properties = array(
         // device
-        'code_name'             => 'P936',
+        'code_name'              => 'P936',
         'model_extra_info'       => null,
         'marketing_name'         => 'Optimus LTE',
         'has_qwerty_keyboard'    => true,

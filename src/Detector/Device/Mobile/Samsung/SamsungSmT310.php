@@ -56,7 +56,7 @@ class SamsungSmT310 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T310',
+        'code_name'              => 'SM-T310',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 3 8.0',
         'has_qwerty_keyboard'    => true,

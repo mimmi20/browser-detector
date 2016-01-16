@@ -51,7 +51,7 @@ class HtcDesireV extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'             => 'Desire V',
+        'code_name'              => 'Desire V',
         'model_extra_info'       => null,
         'marketing_name'         => 'Desire V',
         'has_qwerty_keyboard'    => true,

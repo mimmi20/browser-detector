@@ -55,7 +55,7 @@ class SamsungSmT530 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     protected $properties = array(
         // device
-        'code_name'             => 'SM-T530',
+        'code_name'              => 'SM-T530',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Tab 4 10.1 WiFi',
         'has_qwerty_keyboard'    => true,

@@ -55,7 +55,7 @@ class YPG70 extends AbstractDevice implements DeviceHasWurflKeyInterface, Device
      */
     protected $properties = array(
         // device
-        'code_name'             => 'YP-G70',
+        'code_name'              => 'YP-G70',
         'model_extra_info'       => null,
         'marketing_name'         => 'Galaxy Player 5',
         'has_qwerty_keyboard'    => true,

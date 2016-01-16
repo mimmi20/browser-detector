@@ -51,7 +51,7 @@ class MID7015 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'MID7015',
+        'code_name'              => 'MID7015',
         'model_extra_info'       => null,
         'marketing_name'         => 'Kyros MID7015',
         'has_qwerty_keyboard'    => true,

@@ -51,7 +51,7 @@ class ZteV880 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'             => 'V880',
+        'code_name'              => 'V880',
         'model_extra_info'       => null,
         'marketing_name'         => 'V880',
         'has_qwerty_keyboard'    => true,
