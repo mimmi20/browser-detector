@@ -84,7 +84,7 @@ class MicromaxA40 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' A40 ')) {
+        if (!$this->utils->checkIfContains('A40')) {
             return false;
         }
 

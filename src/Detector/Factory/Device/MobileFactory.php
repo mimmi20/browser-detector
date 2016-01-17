@@ -75,6 +75,7 @@ use BrowserDetector\Detector\Device\Mobile\Htm;
 use BrowserDetector\Detector\Device\Mobile\Huawei;
 use BrowserDetector\Detector\Device\Mobile\IconBit;
 use BrowserDetector\Detector\Device\Mobile\Intenso;
+use BrowserDetector\Detector\Device\Mobile\Intex;
 use BrowserDetector\Detector\Device\Mobile\Ionik;
 use BrowserDetector\Detector\Device\Mobile\Jaytech;
 use BrowserDetector\Detector\Device\Mobile\Jolla;
@@ -88,6 +89,7 @@ use BrowserDetector\Detector\Device\Mobile\LePan;
 use BrowserDetector\Detector\Device\Mobile\Lg;
 use BrowserDetector\Detector\Device\Mobile\Logikpd;
 use BrowserDetector\Detector\Device\Mobile\Malata;
+use BrowserDetector\Detector\Device\Mobile\Mastone;
 use BrowserDetector\Detector\Device\Mobile\Medion;
 use BrowserDetector\Detector\Device\Mobile\Meizu;
 use BrowserDetector\Detector\Device\Mobile\Memup;
@@ -406,6 +408,10 @@ class MobileFactory
             $device = new Fairphone($useragent, $logger);
         } elseif (preg_match('/(Videocon|A15)/', $useragent)) {
             $device = new Videocon($useragent, $logger);
+        } elseif (preg_match('/intex/i', $useragent)) {
+            $device = new Intex($useragent, $logger);
+        } elseif (preg_match('/mastone/i', $useragent)) {
+            $device = new Mastone($useragent, $logger);
         } elseif (preg_match('/(LOOX|UNO\_X10)/i', $useragent)) {
             $device = new Odys($useragent, $logger);
         } elseif (preg_match('/iPh\d\,\d/', $useragent)) {
@@ -440,8 +446,10 @@ class MobileFactory
             $device = new Toshiba($useragent, $logger);
         } elseif (preg_match('/(PAP|PMP)/', $useragent)) {
             $device = new Prestigio($useragent, $logger);
-        } elseif (preg_match('/APA9292KT/', $useragent)) {
+        } elseif (preg_match('/(APA9292KT|PJ83100)/', $useragent)) {
             $device = new Htc($useragent, $logger);
+        } elseif (preg_match('/Aqua\_Star/', $useragent)) {
+            $device = new Intex($useragent, $logger);
         } else {
             $device = new GeneralMobile($useragent, $logger);
         }

@@ -118,10 +118,7 @@ class GeneralMobile
     public function getDeviceType()
     {
         if (null === $this->deviceType) {
-            $this->deviceType = new MobilePhone();
-
-            $this->setCapability('code_name', 'general Mobile Phone');
-            $this->setCapability('marketing_name', 'general Mobile Phone');
+            $this->deviceType = new \UaDeviceType\MobileDevice();
         }
 
         return $this->deviceType;
@@ -220,7 +217,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7', 'WPDesktop'))) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');
@@ -242,7 +239,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Opera Mobi'))) {
+        if ($this->utils->checkIfContains(array('Opera Mini'))) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');
@@ -262,7 +259,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Opera Mini'))) {
+        if ($this->utils->checkIfContains(array('Opera'))) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');

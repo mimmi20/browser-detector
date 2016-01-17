@@ -90,7 +90,7 @@ class SamsungGts5620 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-S5620')) {
+        if (!$this->utils->checkIfContains('gt-s5620', true)) {
             return false;
         }
 

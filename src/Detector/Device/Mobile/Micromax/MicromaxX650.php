@@ -84,7 +84,7 @@ class MicromaxX650 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' X650 ')) {
+        if (!$this->utils->checkIfContains('X650')) {
             return false;
         }
 

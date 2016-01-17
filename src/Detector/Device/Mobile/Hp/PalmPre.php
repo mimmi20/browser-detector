@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WebOs;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -47,7 +48,9 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class PalmPre
+    extends AbstractDevice
+    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasRuntimeModificationsInterface
 {
     /**
      * @var \UaMatcher\Company\CompanyInterface
@@ -184,6 +187,29 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     }
 
     /**
+     * detects properties who are depending on the device version or the user
+     * agent
+     *
+     * @return \BrowserDetector\Detector\Device\GeneralMobile
+     */
+    public function detectSpecialProperties()
+    {
+        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
+
+        if (3 == $modelVersion) {
+            $this->setCapability('resolution_width', 480);
+            $this->setCapability('resolution_height', 800);
+
+            $this->setCapability('code_name', 'Pre3');
+            $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
+            $this->setCapability('colors', 262144);
+
+            $this->manufacturer = new Company\Hp();
+            $this->brand        = new Company\Hp();
+        }
+    }
+
+    /**
      * returns the WurflKey for the device
      *
      * @param \UaMatcher\Browser\BrowserInterface $browser
@@ -199,16 +225,7 @@ class PalmPre extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
         $modelVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
         if (3 == $modelVersion) {
-            $this->setCapability('resolution_width', 480);
-            $this->setCapability('resolution_height', 800);
-
-            $this->setCapability('code_name', 'Pre3');
             $wurflKey = 'hp_pre3_ver1';
-            $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
-            $this->setCapability('colors', 262144);
-
-            $this->manufacturer = new Company\Hp();
-            $this->brand        = new Company\Hp();
         }
 
         return $wurflKey;
