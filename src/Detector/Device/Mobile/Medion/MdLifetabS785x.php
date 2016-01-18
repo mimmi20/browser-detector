@@ -57,7 +57,7 @@ class MdLifetabS785x extends AbstractDevice implements DeviceHasWurflKeyInterfac
         // device
         'code_name'              => 'Lifetab S785X',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lifetab S785X',
+        'marketing_name'         => 'LifeTab S785X',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

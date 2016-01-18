@@ -53,7 +53,7 @@ class MdLifetabE10310 extends AbstractDevice implements DeviceHasSpecificPlatfor
         // device
         'code_name'              => 'E10310',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lifetab E10310',
+        'marketing_name'         => 'LifeTab E10310',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

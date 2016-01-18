@@ -94,6 +94,10 @@ class SamsungSmT530 extends AbstractDevice implements DeviceHasWurflKeyInterface
             return false;
         }
 
+        if ($this->utils->checkIfContains('SM-T530NU')) {
+            return false;
+        }
+
         return true;
     }
 

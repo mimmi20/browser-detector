@@ -57,7 +57,7 @@ class MdLifetabE10320 extends AbstractDevice implements DeviceHasWurflKeyInterfa
         // device
         'code_name'              => 'E10320',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lifetab E10320',
+        'marketing_name'         => 'LifeTab E10320',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -53,7 +53,7 @@ class MdLifetabE7312 extends AbstractDevice implements DeviceHasSpecificPlatform
         // device
         'code_name'              => 'Lifetab E7312',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lifetab E7312',
+        'marketing_name'         => 'LifeTab E7312',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -162,6 +162,7 @@ class MobileDevice
             'onebrowser',
             'qtcarbrowser',
             'wap browser/maui',
+            'wetab',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {

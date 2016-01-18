@@ -51,7 +51,7 @@ class MdLifetabS831x extends AbstractDevice
         // device
         'code_name'              => 'Lifetab S831X',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lifetab S831X',
+        'marketing_name'         => 'LifeTab S831X',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

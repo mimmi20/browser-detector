@@ -51,7 +51,7 @@ class SamsungSchI545 extends AbstractDevice
         // device
         'code_name'              => 'SCH-I545',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Droid Charge',
+        'marketing_name'         => 'Galaxy S4 LTE (Verizon), White Frost 16GB',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

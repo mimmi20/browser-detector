@@ -53,7 +53,7 @@ class MdLifetabS1034x extends AbstractDevice implements DeviceHasSpecificPlatfor
         // device
         'code_name'              => 'Lifetab S1034X',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lifetab S1034X',
+        'marketing_name'         => 'LifeTab S1034X',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

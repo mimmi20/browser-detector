@@ -57,7 +57,7 @@ class HuaweiY530u00 extends AbstractDevice implements DeviceHasWurflKeyInterface
         // device
         'code_name'              => 'Y530-U00',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Ascend Y530-U00',
+        'marketing_name'         => 'Ascend Y530',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

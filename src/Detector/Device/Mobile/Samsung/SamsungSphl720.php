@@ -31,8 +31,10 @@
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSghm919 extends AbstractDevice
+class SamsungSphl720 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -49,10 +51,10 @@ class SamsungSghm919 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'SGH-M919',
+        'code_name'              => 'SPH-L720',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy S4 LTE (T-Mobile), Black Mist',
-        'has_qwerty_keyboard'    => false,
+        'marketing_name'         => 'Galaxy S4 LTE (Sprint), White Frost',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -61,14 +63,14 @@ class SamsungSghm919 extends AbstractDevice
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 42,
-        'physical_screen_height' => 70,
-        'columns'                => 16,
-        'rows'                   => 20,
-        'max_image_width'        => 228,
-        'max_image_height'       => 340,
-        'resolution_width'       => 240,
-        'resolution_height'      => 400,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -84,7 +86,11 @@ class SamsungSghm919 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SGH-M919')) {
+        if (!$this->utils->checkIfContains('SPH-L720')) {
+            return false;
+        }
+
+        if ($this->utils->checkIfContains('SPH-L720BST')) {
             return false;
         }
 
@@ -129,5 +135,15 @@ class SamsungSghm919 extends AbstractDevice
     public function getBrand()
     {
         return new Company(new Company\Samsung());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

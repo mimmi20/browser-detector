@@ -31,8 +31,15 @@
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
+use UaResult\Version;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +47,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSghm919 extends AbstractDevice
+class SamsungSmN900V extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -49,10 +56,10 @@ class SamsungSghm919 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'SGH-M919',
+        'code_name'              => 'SM-N900V',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy S4 LTE (T-Mobile), Black Mist',
-        'has_qwerty_keyboard'    => false,
+        'marketing_name'         => 'Galaxy Note 3 LTE (Verizon)',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -61,16 +68,16 @@ class SamsungSghm919 extends AbstractDevice
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 42,
-        'physical_screen_height' => 70,
-        'columns'                => 16,
-        'rows'                   => 20,
-        'max_image_width'        => 228,
-        'max_image_height'       => 340,
-        'resolution_width'       => 240,
-        'resolution_height'      => 400,
+        'physical_screen_width'  => 71,
+        'physical_screen_height' => 127,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -84,7 +91,7 @@ class SamsungSghm919 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SGH-M919')) {
+        if (!$this->utils->checkIfContains('SM-N900V')) {
             return false;
         }
 
@@ -129,5 +136,51 @@ class SamsungSghm919 extends AbstractDevice
     public function getBrand()
     {
         return new Company(new Company\Samsung());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new AndroidOs($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
+    {
+        $wurflKey = 'samsung_sm_n900_ver1_suban44N900V';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $wurflKey = 'samsung_sm_n900_ver1_suban44N900V';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $wurflKey;
     }
 }

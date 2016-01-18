@@ -59,7 +59,7 @@ class SamsungSmN7505 extends AbstractDevice implements DeviceHasWurflKeyInterfac
         // device
         'code_name'              => 'SM-N7505',
         'model_extra_info'       => 'LTE',
-        'marketing_name'         => 'Note 3 Neo Duos',
+        'marketing_name'         => 'Galaxy Note 3 Neo LTE+',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -90,7 +90,7 @@ class MotorolaDroidRazr extends AbstractDevice implements DeviceHasSpecificPlatf
             return false;
         }
 
-        if ($this->utils->checkIfContains('DROID RAZR 4G', 'DROID RAZR HD')) {
+        if ($this->utils->checkIfContains('DROID RAZR 4G', 'DROID RAZR HD', 'RAZRV3x')) {
             return false;
         }
 

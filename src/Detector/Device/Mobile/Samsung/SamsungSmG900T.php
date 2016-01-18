@@ -40,7 +40,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSghm919 extends AbstractDevice
+class SamsungSmG900T extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -49,10 +49,10 @@ class SamsungSghm919 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'SGH-M919',
+        'code_name'              => 'SM-G900T',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy S4 LTE (T-Mobile), Black Mist',
-        'has_qwerty_keyboard'    => false,
+        'marketing_name'         => 'Galaxy S5 LTE (T-Mobile)',
+        'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -61,20 +61,20 @@ class SamsungSghm919 extends AbstractDevice
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 42,
-        'physical_screen_height' => 70,
-        'columns'                => 16,
-        'rows'                   => 20,
-        'max_image_width'        => 228,
-        'max_image_height'       => 340,
-        'resolution_width'       => 240,
-        'resolution_height'      => 400,
+        'physical_screen_width'  => 34,
+        'physical_screen_height' => 50,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -84,7 +84,7 @@ class SamsungSghm919 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SGH-M919')) {
+        if (!$this->utils->checkIfContains('SM-G900T')) {
             return false;
         }
 

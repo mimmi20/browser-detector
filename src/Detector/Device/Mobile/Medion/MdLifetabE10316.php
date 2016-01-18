@@ -57,7 +57,7 @@ class MdLifetabE10316 extends AbstractDevice implements DeviceHasWurflKeyInterfa
         // device
         'code_name'              => 'Lifetab E10316',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Lifetab E10316',
+        'marketing_name'         => 'LifeTab E10316',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
