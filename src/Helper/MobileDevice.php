@@ -71,6 +71,12 @@ class MobileDevice
      */
     public function isMobile()
     {
+        $fakeHelper = new SpamCrawlerFake($this->useragent);
+
+        if ($fakeHelper->isFakeBrowser()) {
+            return false;
+        }
+
         /**
          * @var array Collection of mobile browser keywords
          */
@@ -163,13 +169,16 @@ class MobileDevice
             'qtcarbrowser',
             'wap browser/maui',
             'wetab',
+            '[fban',
+            'dataaccessd',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {
             $noMobiles = array(
                 'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
                 'google wireless transcoder', 'eeepc', 'i9988_custom',
-                'i9999_custom', 'wuid=', 'smart-tv', 'sonydtv', 'hbbtv'
+                'i9999_custom', 'wuid=', 'smart-tv', 'sonydtv', 'hbbtv',
+                'dolphin http client',
             );
 
             if ($this->utils->checkIfContains($noMobiles, true)) {

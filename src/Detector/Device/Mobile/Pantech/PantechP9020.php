@@ -53,7 +53,7 @@ class PantechP9020 extends AbstractDevice implements DeviceHasSpecificPlatformIn
         // device
         'code_name'              => 'P9020',
         'model_extra_info'       => null,
-        'marketing_name'         => 'P9020',
+        'marketing_name'         => 'Pursuit P9020',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

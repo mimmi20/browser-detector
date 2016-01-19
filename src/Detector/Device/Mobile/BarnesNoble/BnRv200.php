@@ -28,14 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\BarnesNoble;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\CellOs;
-use UaDeviceType\Tv;
-use UaMatcher\Device\DeviceHasVersionInterface;
-use UaResult\Version;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -44,9 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlayStation4
-    extends AbstractDevice
-    implements DeviceHasSpecificPlatformInterface, DeviceHasVersionInterface
+class BnRv200 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -55,11 +51,11 @@ class PlayStation4
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Playstation 4',
+        'code_name'              => 'BNRV200',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Playstation 4',
+        'marketing_name'         => 'Nook Color Wifi',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'mouse',
+        'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -73,20 +69,15 @@ class PlayStation4
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 685,
-        'resolution_height'      => 600,
-        'dual_orientation'       => false,
+        'resolution_width'       => 1920,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
-
-    /**
-     * @var \UaResult\Version
-     */
-    private $version = null;
 
     /**
      * checks if this device is able to handle the useragent
@@ -95,11 +86,11 @@ class PlayStation4
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('PlayStation 4'))) {
-            return true;
+        if (!$this->utils->checkIfContains(array('BNRV200'))) {
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -119,7 +110,7 @@ class PlayStation4
      */
     public function getDeviceType()
     {
-        return new Tv();
+        return new Tablet();
     }
 
     /**
@@ -129,44 +120,26 @@ class PlayStation4
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\BarnesNoble());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\BarnesNoble());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\CellOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new CellOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectDeviceVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-
-        $searches = array('PlayStation 4');
-
-        $this->version = $detector->detectVersion($searches);
-
-        return $this->version;
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

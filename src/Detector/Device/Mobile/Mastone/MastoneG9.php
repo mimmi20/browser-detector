@@ -51,9 +51,9 @@ class MastoneG9 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     protected $properties = array(
         // device
-        'code_name'              => 'I50',
+        'code_name'              => 'G9',
         'model_extra_info'       => null,
-        'marketing_name'         => 'I50',
+        'marketing_name'         => 'G9',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

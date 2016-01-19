@@ -68,6 +68,7 @@ class Desktop
     public function isDesktopDevice()
     {
         $fakeHelper = new SpamCrawlerFake($this->useragent);
+
         if ($fakeHelper->isFakeBrowser() || $fakeHelper->isFakeWindows() || $fakeHelper->isFakeIe()) {
             return false;
         }
@@ -86,7 +87,7 @@ class Desktop
             return true;
         }
 
-        $others = array(
+        $desktopCodes = array(
             // Linux
             'linux',
             'debian',
@@ -129,12 +130,28 @@ class Desktop
             'masking-agent',
             'safersurf',
             'integrity',
+            'davclnt',
+            'cybeye',
+            'google pp default',
+            'microsoft office protocol discovery',
+            'nsplayer',
+        );
+
+        if (!$this->utils->checkIfContains($desktopCodes, true)) {
+            return false;
+        }
+
+        $others = array(
+            'new-sogou-spider',
+            'zollard',
+            'socialradarbot',
+            'revolt',
         );
 
         if ($this->utils->checkIfContains($others, true)) {
-            return true;
+            return false;
         }
 
-        return false;
+        return true;
     }
 }

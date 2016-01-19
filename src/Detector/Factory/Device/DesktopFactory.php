@@ -88,6 +88,8 @@ class DesktopFactory
             $device = new EeePc($useragent, $logger);
         } elseif (preg_match('/hp\-ux 9000/i', $useragent)) {
             $device = new Hp9000($useragent, $logger);
+        } elseif (preg_match('/Dillo/', $useragent)) {
+            $device = new LinuxDesktop($useragent, $logger);
         } else {
             $device = new GeneralDesktop($useragent, $logger);
         }

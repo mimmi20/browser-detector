@@ -34,6 +34,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WebOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
+use UaMatcher\Device\DeviceHasVersionInterface;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -50,7 +51,7 @@ use UaMatcher\Os\OsInterface;
  */
 class PalmPre
     extends AbstractDevice
-    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasRuntimeModificationsInterface
+    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasRuntimeModificationsInterface, DeviceHasVersionInterface
 {
     /**
      * @var \UaMatcher\Company\CompanyInterface
@@ -61,6 +62,11 @@ class PalmPre
      * @var \UaMatcher\Company\CompanyInterface
      */
     private $manufacturer = null;
+
+    /**
+     * @var \UaResult\Version
+     */
+    private $version = null;
 
     /**
      * the detected browser properties
@@ -175,7 +181,7 @@ class PalmPre
      *
      * @return \UaResult\Version
      */
-    public function detectVersion()
+    public function detectDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -183,7 +189,9 @@ class PalmPre
 
         $searches = array('Pre');
 
-        return $detector->detectVersion($searches);
+        $this->version = $detector->detectVersion($searches);
+
+        return $this->version;
     }
 
     /**
@@ -194,7 +202,7 @@ class PalmPre
      */
     public function detectSpecialProperties()
     {
-        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
+        $modelVersion = $this->version->getVersion(Version::MAJORONLY);
 
         if (3 == $modelVersion) {
             $this->setCapability('resolution_width', 480);
@@ -222,7 +230,7 @@ class PalmPre
     {
         $wurflKey = 'palm_pre_ver1';
 
-        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORONLY);
+        $modelVersion = $this->version->getVersion(Version::MAJORONLY);
 
         if (3 == $modelVersion) {
             $wurflKey = 'hp_pre3_ver1';

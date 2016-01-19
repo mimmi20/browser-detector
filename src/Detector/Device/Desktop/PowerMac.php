@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Desktop;
 
 use BrowserDetector\Detector\Company;
 use UaDeviceType\Desktop;
+use UaMatcher\Device\DeviceHasVersionInterface;
 use UaResult\Version;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -41,7 +42,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PowerMac extends AbstractDevice
+class PowerMac extends AbstractDevice implements DeviceHasVersionInterface
 {
     /**
      * the detected browser properties
@@ -77,6 +78,11 @@ class PowerMac extends AbstractDevice
         // chips
         'nfc_support'            => false,
     );
+
+    /**
+     * @var \UaResult\Version
+     */
+    private $version = null;
 
     /**
      * Final Interceptor: Intercept
@@ -138,13 +144,16 @@ class PowerMac extends AbstractDevice
      *
      * @return \UaResult\Version
      */
-    public function detectVersion()
+    public function detectDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
         $searches = array('PowerMac');
 
-        return $detector->detectVersion($searches);
+        $this->version = $detector->detectVersion($searches);
+
+        return $this->version;
     }
 }

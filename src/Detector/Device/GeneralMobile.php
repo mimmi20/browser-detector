@@ -339,6 +339,27 @@ class GeneralMobile
             return $this;
         }
 
+        if ($this->utils->checkIfContains(array('AdobeAIR', 'YUANDA', 'stagefright'))) {
+            $this->deviceType = new MobilePhone();
+
+            $this->setCapability('code_name', 'general Mobile Phone');
+            $this->setCapability('marketing_name', 'general Mobile Phone');
+            $this->setCapability('physical_screen_width', 34);
+            $this->setCapability('physical_screen_height', 50);
+            $this->setCapability('columns', 60);
+            $this->setCapability('rows', 40);
+            $this->setCapability('max_image_width', 320);
+            $this->setCapability('max_image_height', 400);
+            $this->setCapability('resolution_width', 320);
+            $this->setCapability('resolution_height', 480);
+            $this->setCapability('dual_orientation', false);
+            $this->setCapability('has_qwerty_keyboard', false);
+            $this->setCapability('pointing_method', 'stylus');
+            $this->setCapability('colors', 4096);
+
+            return $this;
+        }
+
         return $this;
     }
 

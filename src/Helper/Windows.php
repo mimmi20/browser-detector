@@ -73,12 +73,17 @@ class Windows
             'Mobi'
         );
 
+        if ($this->utils->checkIfContains($isNotReallyAWindows)) {
+            return false;
+        }
+
         $spamHelper = new SpamCrawlerFake($this->useragent);
 
-        if ($this->utils->checkIfContains($isNotReallyAWindows)
-            || (!$spamHelper->isAnonymized() && $spamHelper->isFakeWindows())
-            || $this->isMobileWindows()
-        ) {
+        if (!$spamHelper->isAnonymized() && $spamHelper->isFakeWindows()) {
+            return false;
+        }
+
+        if ($this->isMobileWindows()) {
             return false;
         }
 
@@ -97,15 +102,7 @@ class Windows
             'windows', 'win32'
         );
 
-        if (!$this->utils->checkIfContains($windows, true)
-            && !$this->utils->checkIfContains(array('trident', 'Microsoft', 'outlook', 'msoffice', 'ms-office'), true)
-        ) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('trident', true)
-            && !$this->utils->checkIfContains($windows, true)
-        ) {
+        if (!$this->utils->checkIfContains($windows, true)) {
             return false;
         }
 

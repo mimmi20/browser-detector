@@ -35,7 +35,6 @@ use BrowserDetector\Detector\Result\Result;
 use UaDeviceType\Unknown;
 use UaMatcher\MatcherCanHandleInterface;
 use UaMatcher\MatcherHasWeightInterface;
-use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Device\DeviceInterface;
@@ -184,24 +183,6 @@ abstract class AbstractDevice
     public function canHandle()
     {
         return false;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        if (null === $this->version) {
-            $detector = new Version();
-            $detector->setUserAgent($this->useragent);
-            $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-
-            $this->version = $detector->setVersion('');
-        }
-
-        return $this->version;
     }
 
     /**

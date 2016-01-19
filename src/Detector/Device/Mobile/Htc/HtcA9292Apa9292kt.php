@@ -95,6 +95,10 @@ class HtcA9292Apa9292kt extends AbstractDevice implements DeviceHasWurflKeyInter
             return false;
         }
 
+        if ($this->utils->checkIfContains('Sprint APA9292KT')) {
+            return false;
+        }
+
         return true;
     }
 

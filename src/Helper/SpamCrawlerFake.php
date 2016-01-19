@@ -381,7 +381,7 @@ class SpamCrawlerFake
             '6.2', '6.3', '6.4', '10.0'
         );
 
-        $doMatch = preg_match('/Windows NT ([\d\.]+)(;|\))/', $this->useragent, $matches)
+        $doMatch = preg_match('/Windows NT ([\d\.]+)(;| ;|\))/', $this->useragent, $matches)
                 || preg_match('/(Win|Windows )(2000|XP|2003|Vista|7|8)/', $this->useragent, $matches);
 
         if ($doMatch) {

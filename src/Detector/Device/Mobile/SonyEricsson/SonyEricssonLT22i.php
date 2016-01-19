@@ -58,7 +58,7 @@ class SonyEricssonLT22i extends AbstractDevice implements DeviceHasWurflKeyInter
         // device
         'code_name'              => 'LT22i',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia P LT22i', // wurflkey: sonyericsson_lt22i_ver1_subua40_subuachr
+        'marketing_name'         => 'Xperia P',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

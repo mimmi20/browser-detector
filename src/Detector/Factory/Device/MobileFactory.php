@@ -440,11 +440,13 @@ class MobileFactory
             $device = new Motorola($useragent, $logger);
         } elseif (preg_match('/MB\d{3}/', $useragent)) {
             $device = new Motorola($useragent, $logger);
+        } elseif (preg_match('/smart tab/i', $useragent)) {
+            $device = new Lenovo($useragent, $logger);
         } elseif (preg_match('/one (s|x)/i', $useragent)) {
             $device = new Htc($useragent, $logger);
         } elseif (preg_match('/Tablet\-PC\-4/', $useragent)) {
             $device = new CatSound($useragent, $logger);
-        } elseif (preg_match('/C\d{4}/', $useragent)) {
+        } elseif (preg_match('/(C|D)\d{4}/', $useragent)) {
             $device = new SonyEricsson($useragent, $logger);
         } elseif (preg_match('/SGP\d{3}/', $useragent)) {
             $device = new SonyEricsson($useragent, $logger);
@@ -456,14 +458,14 @@ class MobileFactory
             $device = new Toshiba($useragent, $logger);
         } elseif (preg_match('/(PAP|PMP)/', $useragent)) {
             $device = new Prestigio($useragent, $logger);
-        } elseif (preg_match('/(APA9292KT|PJ83100|pcdadr6350|831C)/i', $useragent)) {
+        } elseif (preg_match('/(APA9292KT|PJ83100|831C)/', $useragent)) {
+            $device = new Htc($useragent, $logger);
+        } elseif (preg_match('/(pcdadr6350)/i', $useragent)) {
             $device = new Htc($useragent, $logger);
         } elseif (preg_match('/Aqua\_Star/', $useragent)) {
             $device = new Intex($useragent, $logger);
         } elseif (preg_match('/NEXT/', $useragent)) {
             $device = new Nextbook($useragent, $logger);
-        } elseif (preg_match('/Smart Tab/i', $useragent)) {
-            $device = new Lenovo($useragent, $logger);
         } elseif (preg_match('/XT\d{3,4}/', $useragent)) {
             $device = new Motorola($useragent, $logger);
         } elseif (preg_match('/( droid)/i', $useragent)) {
@@ -478,6 +480,10 @@ class MobileFactory
             $device = new BarnesNoble($useragent, $logger);
         } elseif (preg_match('/Zaffire/', $useragent)) {
             $device = new Nuqleo($useragent, $logger);
+        } elseif (preg_match('/BNRV\d{3}/', $useragent)) {
+            $device = new BarnesNoble($useragent, $logger);
+        } elseif (preg_match('/CFNetwork/', $useragent)) {
+            $device = new Apple($useragent, $logger);
         } else {
             $device = new GeneralMobile($useragent, $logger);
         }
@@ -485,7 +491,6 @@ class MobileFactory
         if ($device instanceof DeviceHasChildrenInterface) {
             $device = $device->detectDevice();
         }
-
 
         return $device;
     }

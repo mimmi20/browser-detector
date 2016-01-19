@@ -53,7 +53,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
         // device
         'code_name'              => '9292',
         'model_extra_info'       => null,
-        'marketing_name'         => 'APA9292KT',
+        'marketing_name'         => 'EVO 4G',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

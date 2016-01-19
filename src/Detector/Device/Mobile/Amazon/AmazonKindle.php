@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Company;
 use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasVersionInterface;
 use UaResult\Version;
 use BrowserDetector\Detector\Device\AbstractDevice;
 
@@ -41,7 +42,7 @@ use BrowserDetector\Detector\Device\AbstractDevice;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AmazonKindle extends AbstractDevice
+class AmazonKindle extends AbstractDevice implements DeviceHasVersionInterface
 {
     /**
      * the detected browser properties
@@ -77,6 +78,11 @@ class AmazonKindle extends AbstractDevice
         // chips
         'nfc_support'            => true,
     );
+
+    /**
+     * @var \UaResult\Version
+     */
+    private $version = null;
 
     /**
      * Final Interceptor: Intercept
@@ -144,14 +150,16 @@ class AmazonKindle extends AbstractDevice
      *
      * @return \UaResult\Version
      */
-    public function detectVersion()
+    public function detectDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
         $searches = array('Kindle');
 
-        return $detector->detectVersion($searches);
+        $this->version = $detector->detectVersion($searches);
+
+        return $this->version;
     }
 }

@@ -53,7 +53,7 @@ class SamsungGts3370 extends AbstractDevice implements DeviceHasSpecificPlatform
         // device
         'code_name'              => 'GT-S3370',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT-S3370',
+        'marketing_name'         => 'Corby 3G',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -51,9 +51,9 @@ class Arnova9G2I extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'              => 'AN9G2I',
+        'code_name'              => '9 G2',
         'model_extra_info'       => null,
-        'marketing_name'         => 'AN9G2I',
+        'marketing_name'         => '9 G2',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

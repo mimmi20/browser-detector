@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WebOs;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasVersionInterface;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -47,7 +48,9 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HpP160U extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class HpP160U
+    extends AbstractDevice
+    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasVersionInterface
 {
     /**
      * the detected browser properties
@@ -83,6 +86,11 @@ class HpP160U extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
         // chips
         'nfc_support'            => true,
     );
+
+    /**
+     * @var \UaResult\Version
+     */
+    private $version = null;
 
     /**
      * checks if this device is able to handle the useragent
@@ -153,7 +161,7 @@ class HpP160U extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      *
      * @return \UaResult\Version
      */
-    public function detectVersion()
+    public function detectDeviceVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
@@ -161,7 +169,9 @@ class HpP160U extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
 
         $searches = array('P160U');
 
-        return $detector->detectVersion($searches);
+        $this->version = $detector->detectVersion($searches);
+
+        return $this->version;
     }
 
     /**

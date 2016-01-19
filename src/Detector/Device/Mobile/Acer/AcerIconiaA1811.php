@@ -53,7 +53,7 @@ class AcerIconiaA1811 extends AbstractDevice implements DeviceHasSpecificPlatfor
         // device
         'code_name'              => 'A1-811',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Iconia A1-811',
+        'marketing_name'         => 'Iconia A',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

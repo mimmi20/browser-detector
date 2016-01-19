@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\WebOs;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasVersionInterface;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -48,7 +49,9 @@ use Wurfl\WurflConstants;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class PalmPixi
+    extends AbstractDevice
+    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasVersionInterface
 {
     /**
      * the detected browser properties
@@ -84,6 +87,11 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
         // chips
         'nfc_support'            => true,
     );
+
+    /**
+     * @var \UaResult\Version
+     */
+    private $version = null;
 
     /**
      * checks if this device is able to handle the useragent
@@ -150,22 +158,6 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
     }
 
     /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-
-        $searches = array('Pixi');
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
      * returns the WurflKey for the device
      *
      * @param \UaMatcher\Browser\BrowserInterface $browser
@@ -186,5 +178,23 @@ class PalmPixi extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
         }
 
         return $wurflKey;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaResult\Version
+     */
+    public function detectDeviceVersion()
+    {
+        $detector = new Version();
+        $detector->setUserAgent($this->useragent);
+        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
+
+        $searches = array('Pixi');
+
+        $this->version = $detector->detectVersion($searches);
+
+        return $this->version;
     }
 }

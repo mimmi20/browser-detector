@@ -57,7 +57,7 @@ class SamsungGts5620 extends AbstractDevice implements DeviceHasWurflKeyInterfac
         // device
         'code_name'              => 'GT-S5620',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT-S5620',
+        'marketing_name'         => 'S5620 Monte',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
