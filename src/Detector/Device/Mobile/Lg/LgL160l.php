@@ -51,7 +51,7 @@ class LgL160l extends AbstractDevice
         // device
         'code_name'              => 'L160L',
         'model_extra_info'       => null,
-        'marketing_name'         => 'L160L',
+        'marketing_name'         => 'Optimus LTE2',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

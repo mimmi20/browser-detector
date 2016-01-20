@@ -66,7 +66,7 @@ class PalmPre
     /**
      * @var \UaResult\Version
      */
-    private $version = null;
+    protected $version = null;
 
     /**
      * the detected browser properties

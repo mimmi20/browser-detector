@@ -10,40 +10,53 @@ use BrowserDetector\Helper\Desktop;
 class DesktopTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @dataProvider providerIsMobile
+     * @dataProvider providerIsDesktop
      *
      * @param string $agent
      */
-    public function testIsMobile($agent)
+    public function testIsDesktop($agent)
     {
         $object = new Desktop($agent);
 
         self::assertTrue($object->isDesktopDevice());
     }
 
-    public function providerIsMobile()
+    public function providerIsDesktop()
     {
         return array(
             array('Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'),
+            array('CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)'),
+            array('revolt'),
+            array('Microsoft Office Excel 2013'),
+            array('iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17'),
+            array('Mozilla/5.0 (X11; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) wkhtmltoimage Safari/534.34'),
         );
     }
 
     /**
-     * @dataProvider providerIsNotMobile
+     * @dataProvider providerIsNoDesktop
      * @param string $agent
      */
-    public function testIsNotMobile($agent)
+    public function testIsNoDesktop($agent)
     {
         $object = new Desktop($agent);
 
         self::assertFalse($object->isDesktopDevice());
     }
 
-    public function providerIsNotMobile()
+    public function providerIsNoDesktop()
     {
         return array(
             array('Mozilla/5.0 (Mobile; ALCATELOneTouch4012X/SVN 01010B; rv:18.1) Gecko/18.1 Firefox/18.1'),
             array('Mozilla/5.0 (PLAYSTATION 3; 2.00)'),
+            array('Microsoft Office Protocol Discovery'),
+            array('Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'),
+            array('ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36'),
+            array('Crowsnest/0.5 (+http://www.crowsnest.tv/)'),
+            array('Dorado WAP-Browser/1.0.0'),
+            array('DINO762 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
+            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'),
+            array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
         );
     }
 }

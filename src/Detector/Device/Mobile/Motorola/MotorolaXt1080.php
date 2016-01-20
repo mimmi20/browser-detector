@@ -53,7 +53,7 @@ class MotorolaXt1080 extends AbstractDevice implements DeviceHasSpecificPlatform
         // device
         'code_name'              => 'XT1080',
         'model_extra_info'       => null,
-        'marketing_name'         => 'XT1080',
+        'marketing_name'         => 'Droid Ultra',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

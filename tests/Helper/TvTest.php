@@ -10,36 +10,37 @@ use BrowserDetector\Helper\Tv;
 class TvTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @dataProvider providerIsMobile
+     * @dataProvider providerIsTv
      *
      * @param string $agent
      */
-    public function testIsMobile($agent)
+    public function testIsTv($agent)
     {
         $object = new Tv($agent);
 
         self::assertTrue($object->isTvDevice());
     }
 
-    public function providerIsMobile()
+    public function providerIsTv()
     {
         return array(
             array('dlink.dsm380'),
+            array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
         );
     }
 
     /**
-     * @dataProvider providerIsNotMobile
+     * @dataProvider providerIsNotTv
      * @param string $agent
      */
-    public function testIsNotMobile($agent)
+    public function testIsNotTv($agent)
     {
         $object = new Tv($agent);
 
         self::assertFalse($object->isTvDevice());
     }
 
-    public function providerIsNotMobile()
+    public function providerIsNotTv()
     {
         return array(
             array('Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'),

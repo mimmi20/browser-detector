@@ -81,6 +81,31 @@ class Desktop
             return true;
         }
 
+        $noDesktops = array(
+            'new-sogou-spider',
+            'zollard',
+            'socialradarbot',
+            'microsoft office protocol discovery',
+            'powermarks',
+            'archivebot',
+            'dino762',
+            'marketwirebot',
+            'akregator',
+            'installatron',
+        );
+
+        if ($this->utils->checkIfContains($noDesktops, true)) {
+            return false;
+        }
+
+        $othersDesktops = array(
+            'revolt',
+        );
+
+        if ($this->utils->checkIfContains($othersDesktops, true)) {
+            return true;
+        }
+
         $windowsHelper = new WindowsHelper($this->useragent);
 
         if ($windowsHelper->isWindows()) {
@@ -114,13 +139,15 @@ class Desktop
             'macbookair',
             'macbook',
             'macmini',
-            // others
+            // BSD
             'freebsd',
             'openbsd',
+            'netbsd',
+            'bsd four',
+            // others
             'os/2',
             'warp',
             'sunos',
-            'netbsd',
             'w3m',
             'google desktop',
             'eeepc',
@@ -138,17 +165,6 @@ class Desktop
         );
 
         if (!$this->utils->checkIfContains($desktopCodes, true)) {
-            return false;
-        }
-
-        $others = array(
-            'new-sogou-spider',
-            'zollard',
-            'socialradarbot',
-            'revolt',
-        );
-
-        if ($this->utils->checkIfContains($others, true)) {
             return false;
         }
 

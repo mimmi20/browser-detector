@@ -171,6 +171,9 @@ class MobileDevice
             'wetab',
             '[fban',
             'dataaccessd',
+            'crowsnest',
+            'wap-browser',
+            'dino762',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {

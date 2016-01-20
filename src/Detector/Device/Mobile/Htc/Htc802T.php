@@ -51,9 +51,9 @@ class Htc802T extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     protected $properties = array(
         // device
-        'code_name'              => 'One 802T',
+        'code_name'              => '802T',
         'model_extra_info'       => null,
-        'marketing_name'         => '802T',
+        'marketing_name'         => 'One 802T',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

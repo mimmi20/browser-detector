@@ -82,7 +82,7 @@ class MacBookAir extends AbstractDevice implements DeviceHasVersionInterface
     /**
      * @var \UaResult\Version
      */
-    private $version = null;
+    protected $version = null;
 
     /**
      * checks if this device is able to handle the useragent

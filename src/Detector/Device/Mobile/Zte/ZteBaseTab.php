@@ -86,7 +86,7 @@ class ZteBaseTab
     /**
      * @var \UaResult\Version
      */
-    private $version = null;
+    protected $version = null;
 
     /**
      * checks if this device is able to handle the useragent

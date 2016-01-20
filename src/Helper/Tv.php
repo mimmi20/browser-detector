@@ -74,7 +74,9 @@ class Tv
             'smart-tv',
             'sonydtv',
             'viera',
-            'xbox'
+            'xbox',
+            'espial',
+            'aquosbrowser',
         );
 
         if (!$this->utils->checkIfContains($tvDevices, true)) {

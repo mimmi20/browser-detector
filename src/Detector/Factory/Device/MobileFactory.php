@@ -354,7 +354,9 @@ class MobileFactory
             $device = new Star($useragent, $logger);
         } elseif (preg_match('/Texet/', $useragent)) {
             $device = new Texet($useragent, $logger);
-        } elseif (preg_match('/thl/i', $useragent)) {
+        } elseif (preg_match('/alcatel/i', $useragent)) {
+            $device = new Alcatel($useragent, $logger);
+        } elseif (preg_match('/thl/i', $useragent) && !preg_match('/LIAuthLibrary/', $useragent)) {
             $device = new Thl($useragent, $logger);
         } elseif (preg_match('/T\-Mobile/', $useragent)) {
             $device = new Tmobile($useragent, $logger);
@@ -380,8 +382,6 @@ class MobileFactory
             $device = new Zenithink($useragent, $logger);
         } elseif (preg_match('/zte/i', $useragent)) {
             $device = new Zte($useragent, $logger);
-        } elseif (preg_match('/alcatel/i', $useragent)) {
-            $device = new Alcatel($useragent, $logger);
         } elseif (preg_match('/ MT791 /i', $useragent)) {
             $device = new KeenHigh($useragent, $logger);
         } elseif (preg_match('/(g100w|stream\-s110)/i', $useragent)) {

@@ -82,7 +82,7 @@ class AmazonKindle extends AbstractDevice implements DeviceHasVersionInterface
     /**
      * @var \UaResult\Version
      */
-    private $version = null;
+    protected $version = null;
 
     /**
      * Final Interceptor: Intercept

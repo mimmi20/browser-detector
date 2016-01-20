@@ -26,6 +26,9 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
         return array(
             array('Mozilla/5.0 (Mobile; ALCATELOneTouch4012X/SVN 01010B; rv:18.1) Gecko/18.1 Firefox/18.1'),
             array('Mozilla/5.0 (PLAYSTATION 3; 2.00)'),
+            array('Crowsnest/0.5 (+http://www.crowsnest.tv/)'),
+            array('Dorado WAP-Browser/1.0.0'),
+            array('DINO762 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
         );
     }
 
@@ -44,6 +47,8 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array('Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'),
+            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'),
+            array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
         );
     }
 }

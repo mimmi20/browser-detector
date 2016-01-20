@@ -28,12 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Hp;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\WebOs;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaMatcher\Device\DeviceHasVersionInterface;
 use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -48,9 +47,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HpP160U
-    extends AbstractDevice
-    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasVersionInterface
+class SonyD2306 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -59,27 +56,27 @@ class HpP160U
      */
     protected $properties = array(
         // device
-        'code_name'              => 'P160U',
+        'code_name'              => 'D2306',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Veer', // wurflkey: hp_veer_ver1_subwebos211
+        'marketing_name'         => 'Xperia M2',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://downloads.palm.com/profiles/P160U_R1.xml',
+        'uaprof'                 => null,
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 50,
-        'physical_screen_height' => 50,
-        'columns'                => 20,
-        'rows'                   => 10,
-        'max_image_width'        => 300,
-        'max_image_height'       => 360,
-        'resolution_width'       => 320,
-        'resolution_height'      => 400,
-        'dual_orientation'       => false,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
+        'dual_orientation'       => true,
         'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
@@ -88,18 +85,13 @@ class HpP160U
     );
 
     /**
-     * @var \UaResult\Version
-     */
-    protected $version = null;
-
-    /**
      * checks if this device is able to handle the useragent
      *
      * @return boolean returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('P160U')) {
+        if (!$this->utils->checkIfContains(array('SonyEricssonD2306', 'SonyD2306', 'D2306'))) {
             return false;
         }
 
@@ -133,45 +125,27 @@ class HpP160U
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Hp());
+        return new Company(new Company\Sony());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Hp());
+        return new Company(new Company\Sony());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\WebOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new WebOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectDeviceVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-
-        $searches = array('P160U');
-
-        $this->version = $detector->detectVersion($searches);
-
-        return $this->version;
+        return new AndroidOs($this->useragent, $this->logger);
     }
 
     /**
@@ -185,7 +159,29 @@ class HpP160U
      */
     public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
-        $wurflKey = 'hp_veer_ver1_subwebos211';
+        $wurflKey = 'sony_d2306_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Chrome':
+                $wurflKey = 'sony_d2306_ver1_subuachrome';
+
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $wurflKey = 'sony_d2306_ver1_suban44';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
 
         return $wurflKey;
     }

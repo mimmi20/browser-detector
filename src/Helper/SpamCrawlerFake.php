@@ -67,7 +67,7 @@ class SpamCrawlerFake
     }
 
     /**
-     * Returns true if the give $useragent is from a spam bot or crawler
+     * Returns true if the given $useragent is from a bot/crawler
      *
      * @return bool
      */
@@ -260,7 +260,7 @@ class SpamCrawlerFake
     }
 
     /**
-     * Returns true if the give $useragent is from a spam bot or crawler
+     * Returns true if the given $useragent looks like it was changed to fake other browsers
      *
      * @return bool
      */
@@ -271,6 +271,11 @@ class SpamCrawlerFake
         return ($browser instanceof FakeBrowser);
     }
 
+    /**
+     * returns true if the given useragent looks like an anonymizer was used to change it
+     *
+     * @return bool
+     */
     public function isAnonymized()
     {
         if ($this->utils->checkIfContains(array('anonymisiert durch', 'anonymized by'), true)) {
@@ -280,6 +285,11 @@ class SpamCrawlerFake
         return false;
     }
 
+    /**
+     * returns true if the given useragent lokks like it was faked to look like an IE
+     *
+     * @return bool
+     */
     public function isFakeIe()
     {
         $doMatch = preg_match('/MSIE (\d+)\.(\d+)/', $this->useragent, $matches);
@@ -290,9 +300,34 @@ class SpamCrawlerFake
             }
         }
 
+        if (preg_match('/CybEye/', $this->useragent)) {
+            return false;
+        }
+
+        if (preg_match('/trident\/4/i', $this->useragent) && preg_match('/msie (9|10|11)/i', $this->useragent)) {
+            return true;
+        }
+
+        if (preg_match('/trident\/5/i', $this->useragent) && preg_match('/msie (10|11)/i', $this->useragent)) {
+            return true;
+        }
+
+        if (preg_match('/trident\/6/i', $this->useragent) && preg_match('/msie 11/i', $this->useragent)) {
+            return true;
+        }
+
+        if (preg_match('/netscape/i', $this->useragent) && preg_match('/msie/i', $this->useragent)) {
+            return true;
+        }
+
         return false;
     }
 
+    /**
+     * returns true if the given useragent lokks like it was faked to look like a windows system
+     *
+     * @return bool
+     */
     public function isFakeWindows()
     {
         if (preg_match('/windows nt (7|8|9)/i', $this->useragent)) {
@@ -351,38 +386,12 @@ class SpamCrawlerFake
             return true;
         }
 
-        if (preg_match('/trident\/4/i', $this->useragent) && preg_match('/msie (9|10|11)/i', $this->useragent)) {
-            return true;
-        }
-
-        if (preg_match('/trident\/5/i', $this->useragent) && preg_match('/msie (10|11)/i', $this->useragent)) {
-            return true;
-        }
-
-        if (preg_match('/trident\/6/i', $this->useragent) && preg_match('/msie 11/i', $this->useragent)) {
-            return true;
-        }
-
-        if (preg_match('/netscape/i', $this->useragent) && preg_match('/msie/i', $this->useragent)) {
-            return true;
-        }
-
-        $doMatch = preg_match(
-            '/(Win|Windows )(2000|XP|2003|Vista|7|8) ([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-        if ($doMatch && !$this->utils->checkIfContains('anonym', true)) {
-            return true;
-        }
-
         $ntVersions = array(
             '3.5', '4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1',
             '6.2', '6.3', '6.4', '10.0'
         );
 
-        $doMatch = preg_match('/Windows NT ([\d\.]+)(;| ;|\))/', $this->useragent, $matches)
-                || preg_match('/(Win|Windows )(2000|XP|2003|Vista|7|8)/', $this->useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)(;| ;|\))/', $this->useragent, $matches);
 
         if ($doMatch) {
             if ($this->utils->checkIfContains('anonym', true)) {
@@ -402,7 +411,7 @@ class SpamCrawlerFake
             return true;
         }
 
-        $doMatch = preg_match('/windows nt ([\d\.]+)/i', $this->useragent, $matches);
+        $doMatch = preg_match('/windows nt ([\d\.]+)/i', $this->useragent);
         if ($doMatch) {
             return true;
         }
@@ -412,8 +421,7 @@ class SpamCrawlerFake
         ) {
             $doMatch = preg_match(
                 '/Mozilla\/(2|3|4|5)\.0 \(.*MSIE (3|4|5|6|7|8|9|10|11)\.\d.*/',
-                $this->useragent,
-                $matches
+                $this->useragent
             );
             if (!$doMatch) {
                 return true;
