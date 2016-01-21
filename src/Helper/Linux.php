@@ -67,26 +67,26 @@ class Linux
     public function isLinux()
     {
         $linux = array(
-            'Linux',
-            'Debian',
-            'Ubuntu',
-            'SUSE',
-            'Fedora',
-            'Mint',
+            'linux',
+            'debian',
+            'ubuntu',
+            'suse',
+            'fedora',
+            'mint',
             'redhat',
-            'Slackware',
-            'Zenwalk GNU',
-            'CentOS',
-            'Kubuntu',
-            'CrOs',
-            'Moblin'
+            'slackware',
+            'zenwalk gnu',
+            'xentos',
+            'kubuntu',
+            'cros',
+            'moblin'
         );
 
         if (!$this->utils->checkIfContains($linux, true)) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Loewe; SL121', 'eeepc'))) {
+        if ($this->utils->checkIfContains(array('Loewe; SL121', 'eeepc', 'Microsoft Office'))) {
             return false;
         }
 

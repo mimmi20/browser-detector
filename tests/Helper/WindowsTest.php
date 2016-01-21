@@ -1,7 +1,7 @@
 <?php
 namespace BrowserDetectorTest\Helper;
 
-use BrowserDetector\Helper\Windows;
+use BrowserDetector\Helper\Windows as WindowsHelper;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -15,7 +15,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsWindowsPositive($agent)
     {
-        $object = new Windows($agent);
+        $object = new WindowsHelper($agent);
 
         self::assertTrue($object->isWindows());
     }
@@ -28,6 +28,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)'),
             array('Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4'),
             array('Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko'),
+            array('revolt'),
         );
     }
 
@@ -37,7 +38,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsWindowsNegative($agent)
     {
-        $object = new Windows($agent);
+        $object = new WindowsHelper($agent);
 
         self::assertFalse($object->isWindows());
     }
@@ -46,6 +47,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array('Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'),
+            array('Microsoft Office Excel 2013'),
         );
     }
 }

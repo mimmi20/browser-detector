@@ -32,6 +32,7 @@ namespace BrowserDetector\Helper;
 
 use UaHelper\Utils;
 use BrowserDetector\Helper\Windows as WindowsHelper;
+use BrowserDetector\Helper\Linux as LinuxHelper;
 
 /**
  * a helper to detect Desktop devices
@@ -112,20 +113,13 @@ class Desktop
             return true;
         }
 
+        $linuxHelper = new LinuxHelper($this->useragent);
+
+        if ($linuxHelper->isLinux()) {
+            return true;
+        }
+
         $desktopCodes = array(
-            // Linux
-            'linux',
-            'debian',
-            'ubuntu',
-            'suse',
-            'fedora',
-            'mint',
-            'redhat',
-            'slackware',
-            'zenwalk gnu',
-            'centos',
-            'kubuntu',
-            'cros',
             // Mac
             'macintosh',
             'darwin',
@@ -160,7 +154,7 @@ class Desktop
             'davclnt',
             'cybeye',
             'google pp default',
-            'microsoft office protocol discovery',
+            'microsoft office',
             'nsplayer',
         );
 

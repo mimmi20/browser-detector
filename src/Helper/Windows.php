@@ -95,7 +95,7 @@ class Windows
             return true;
         }
 
-        if (preg_match('/DavClnt/', $this->useragent)) {
+        if (preg_match('/(DavClnt|revolt)/', $this->useragent)) {
             return true;
         }
 

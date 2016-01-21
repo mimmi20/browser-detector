@@ -43,7 +43,7 @@ use BrowserDetector\Detector\Device\Desktop\MacPro;
 use BrowserDetector\Detector\Device\Desktop\PowerMac;
 use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
 use BrowserDetector\Detector\Device\GeneralDesktop;
-use BrowserDetector\Helper\Linux;
+use BrowserDetector\Helper\Linux as LinuxHelper;
 use Psr\Log\LoggerInterface;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 use BrowserDetector\Helper\Macintosh as MacintoshHelper;
@@ -68,7 +68,7 @@ class DesktopFactory
     {
         if ((new WindowsHelper($useragent))->isWindows()) {
             $device = new WindowsDesktop($useragent, $logger);
-        } elseif ((new Linux($useragent))->isLinux()) {
+        } elseif ((new LinuxHelper($useragent))->isLinux()) {
             $device = new LinuxDesktop($useragent, $logger);
         } elseif (preg_match('/macbookpro/i', $useragent)) {
             $device = new MacBookPro($useragent, $logger);
