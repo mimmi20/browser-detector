@@ -64,8 +64,10 @@ use BrowserDetector\Detector\Device\Mobile\Epad;
 use BrowserDetector\Detector\Device\Mobile\Fairphone;
 use BrowserDetector\Detector\Device\Mobile\FaktorZwei;
 use BrowserDetector\Detector\Device\Mobile\Feiteng;
+use BrowserDetector\Detector\Device\Mobile\Fly;
 use BrowserDetector\Detector\Device\Mobile\Flytouch;
 use BrowserDetector\Detector\Device\Mobile\Fujitsu;
+use BrowserDetector\Detector\Device\Mobile\GoClever;
 use BrowserDetector\Detector\Device\Mobile\Hannspree;
 use BrowserDetector\Detector\Device\Mobile\Hdc;
 use BrowserDetector\Detector\Device\Mobile\HiPhone;
@@ -148,6 +150,7 @@ use BrowserDetector\Detector\Device\Mobile\Wiko;
 use BrowserDetector\Detector\Device\Mobile\Wolgang;
 use BrowserDetector\Detector\Device\Mobile\WonderMedia;
 use BrowserDetector\Detector\Device\Mobile\Xiaomi;
+use BrowserDetector\Detector\Device\Mobile\Yarvik;
 use BrowserDetector\Detector\Device\Mobile\Yuandao;
 use BrowserDetector\Detector\Device\Mobile\Yusu;
 use BrowserDetector\Detector\Device\Mobile\Zenithink;
@@ -382,6 +385,12 @@ class MobileFactory
             $device = new Zenithink($useragent, $logger);
         } elseif (preg_match('/zte/i', $useragent)) {
             $device = new Zte($useragent, $logger);
+        } elseif (preg_match('/Fly/', $useragent)) {
+            $device = new Fly($useragent, $logger);
+        } elseif (preg_match('/Yarvik/', $useragent)) {
+            $device = new Yarvik($useragent, $logger);
+        } elseif (preg_match('/GOCLEVER/', $useragent)) {
+            $device = new GoClever($useragent, $logger);
         } elseif (preg_match('/ MT791 /i', $useragent)) {
             $device = new KeenHigh($useragent, $logger);
         } elseif (preg_match('/(g100w|stream\-s110)/i', $useragent)) {
@@ -482,6 +491,12 @@ class MobileFactory
             $device = new Nuqleo($useragent, $logger);
         } elseif (preg_match('/BNRV\d{3}/', $useragent)) {
             $device = new BarnesNoble($useragent, $logger);
+        } elseif (preg_match('/IQ\d{4}/', $useragent)) {
+            $device = new Fly($useragent, $logger);
+        } elseif (preg_match('/TAB10\-400/', $useragent)) {
+            $device = new Yarvik($useragent, $logger);
+        } elseif (preg_match('/TQ\d{3}/', $useragent)) {
+            $device = new GoClever($useragent, $logger);
         } elseif (preg_match('/CFNetwork/', $useragent)) {
             $device = new Apple($useragent, $logger);
         } else {

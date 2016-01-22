@@ -53,7 +53,7 @@ class LenovoB8080h extends AbstractDevice implements DeviceHasSpecificPlatformIn
         // device
         'code_name'              => 'B8080-H',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Yoga Tab 10 HD+',
+        'marketing_name'         => 'Yoga Tablet 10 HD+',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

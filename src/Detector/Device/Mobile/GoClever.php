@@ -28,12 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +44,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class GoClever extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +53,9 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'              => 'B8080-F',
+        'code_name'              => 'general GOCLEVER Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Yoga Tablet 10 HD+',
+        'marketing_name'         => 'general GOCLEVER Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +71,10 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,11 +88,34 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Lenovo B8080-F')) {
+        $phones = array(
+            'GOCLEVER',
+            'TQ700',
+        );
+
+        if (!$this->utils->checkIfContains($phones)) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\GoClever');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'GoClever' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -120,7 +145,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\GoClever());
     }
 
     /**
@@ -130,7 +155,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\GoClever());
     }
 
     /**

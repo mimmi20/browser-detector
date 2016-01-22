@@ -104,6 +104,7 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
             'nokia; lumia 900',
             'nokia; lumia 920',
             'nokia; lumia 925',
+            'nokia; lumia 928',
             'nokia; lumia 930',
             'nokia; lumia 1320',
             'nokia; lumia 1520',

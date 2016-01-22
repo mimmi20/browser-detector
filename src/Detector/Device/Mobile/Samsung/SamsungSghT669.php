@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Tablet;
+use BrowserDetector\Detector\Os\Java;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SamsungSghT669 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'              => 'B8080-F',
+        'code_name'              => 'SGH-T669',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Yoga Tablet 10 HD+',
+        'marketing_name'         => 'Gravity T',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,7 +69,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1280,
+        'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
         'colors'                 => 65536,
@@ -86,7 +86,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Lenovo B8080-F')) {
+        if (!$this->utils->checkIfContains(array('SGH-T669', 'blaze'))) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new MobilePhone();
     }
 
     /**
@@ -120,7 +120,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -130,7 +130,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -140,6 +140,6 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function detectOs()
     {
-        return new AndroidOs($this->useragent, $this->logger);
+        return new Java($this->useragent, $this->logger);
     }
 }

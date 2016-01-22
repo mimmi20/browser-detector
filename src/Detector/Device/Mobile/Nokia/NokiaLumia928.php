@@ -28,13 +28,17 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Tablet;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
+use UaDeviceType\MobilePhone;
+use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +46,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class NokiaLumia928 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +55,9 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     protected $properties = array(
         // device
-        'code_name'              => 'B8080-F',
+        'code_name'              => 'Lumia 928',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Yoga Tablet 10 HD+',
+        'marketing_name'         => 'Lumia 928',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -63,14 +67,14 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => 59,
+        'physical_screen_height' => 99,
+        'columns'                => 12,
+        'rows'                   => 20,
+        'max_image_width'        => 320,
+        'max_image_height'       => 480,
+        'resolution_width'       => 768,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -86,7 +90,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Lenovo B8080-F')) {
+        if (!$this->utils->checkIfContains('nokia; lumia 928', true)) {
             return false;
         }
 
@@ -110,7 +114,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new MobilePhone();
     }
 
     /**
@@ -120,7 +124,7 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Nokia());
     }
 
     /**
@@ -130,16 +134,32 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function getBrand()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Nokia());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
     public function detectOs()
     {
-        return new AndroidOs($this->useragent, $this->logger);
+        return new WindowsPhoneOs($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
+    {
+        $wurflKey = 'nokia_lumia_928_ver1';
+
+        return $wurflKey;
     }
 }
