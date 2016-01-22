@@ -203,12 +203,13 @@ class PalmPre
     public function detectSpecialProperties()
     {
         $modelVersion = $this->version->getVersion(Version::MAJORONLY);
-var_dump($modelVersion);
+
         if (3 == $modelVersion) {
             $this->setCapability('resolution_width', 480);
             $this->setCapability('resolution_height', 800);
 
             $this->setCapability('code_name', 'Pre3');
+            $this->setCapability('marketing_name', 'Pre3');
             $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
             $this->setCapability('colors', 262144);
 

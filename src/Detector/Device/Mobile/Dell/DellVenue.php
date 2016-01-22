@@ -90,7 +90,7 @@ class DellVenue extends AbstractDevice implements DeviceHasSpecificPlatformInter
             return false;
         }
 
-        if ($this->utils->checkIfContains('DELL; Venue Pro')) {
+        if ($this->utils->checkIfContains(array('DELL; Venue Pro', 'Venue 7 3730'))) {
             return false;
         }
 

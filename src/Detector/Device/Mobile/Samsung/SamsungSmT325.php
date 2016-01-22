@@ -51,7 +51,7 @@ class SamsungSmT325 extends AbstractDevice
         // device
         'code_name'              => 'SM-T325',
         'model_extra_info'       => null,
-        'marketing_name'         => 'SM-T325',
+        'marketing_name'         => 'Galaxy Tab Pro 8.4 LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

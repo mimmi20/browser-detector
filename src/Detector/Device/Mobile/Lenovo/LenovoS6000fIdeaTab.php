@@ -53,7 +53,7 @@ class LenovoS6000fIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
         // device
         'code_name'              => 'IdeaTab',
         'model_extra_info'       => null,
-        'marketing_name'         => 'S6000-F',
+        'marketing_name'         => 'IdeaTab S6000-F',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

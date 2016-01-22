@@ -95,7 +95,9 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('mediapad 7 lite', 'mediapad 10 link', 'mediapad m1 8.0'), true)) {
+        $otherMediaPads = array('mediapad 7 lite', 'mediapad 10 link', 'mediapad m1 8.0', 'mediapad t1 8.0');
+
+        if ($this->utils->checkIfContains($otherMediaPads, true)) {
             return false;
         }
 

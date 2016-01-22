@@ -57,7 +57,7 @@ class SamsungSmN910F extends AbstractDevice implements DeviceHasWurflKeyInterfac
         // device
         'code_name'              => 'SM-N910F',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Note 4 LTE',
+        'marketing_name'         => 'Galaxy Note 4 LTE (Europe)',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

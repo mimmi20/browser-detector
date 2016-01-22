@@ -32,7 +32,9 @@ namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaDeviceType\Tablet;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AsusFoneK012 extends AbstractDevice
+class AsusFoneK012 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -129,5 +131,15 @@ class AsusFoneK012 extends AbstractDevice
     public function getBrand()
     {
         return new Company(new Company\Asus());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

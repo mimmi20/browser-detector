@@ -90,6 +90,10 @@ class PrestigioPmp7280c3g extends AbstractDevice implements DeviceHasSpecificPla
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('PMP7280C3G_QUAD'))) {
+            return false;
+        }
+
         return true;
     }
 

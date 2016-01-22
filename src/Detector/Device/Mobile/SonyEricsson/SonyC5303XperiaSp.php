@@ -58,7 +58,7 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
         // device
         'code_name'              => 'C5303',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia SP',
+        'marketing_name'         => 'Xperia SP LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

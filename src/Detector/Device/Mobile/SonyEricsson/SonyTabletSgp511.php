@@ -57,7 +57,7 @@ class SonyTabletSgp511 extends AbstractDevice implements DeviceHasWurflKeyInterf
         // device
         'code_name'              => 'SGP511',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Tablet Z WiFi',
+        'marketing_name'         => 'Xperia Tablet Z2 WiFi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

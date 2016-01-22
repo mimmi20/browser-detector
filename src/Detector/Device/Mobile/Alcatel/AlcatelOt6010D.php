@@ -53,7 +53,7 @@ class AlcatelOt6010D extends AbstractDevice implements DeviceHasSpecificPlatform
         // device
         'code_name'              => 'OT-6010D',
         'model_extra_info'       => null,
-        'marketing_name'         => 'One Touch 6010D',
+        'marketing_name'         => 'One Touch Star 6010D',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

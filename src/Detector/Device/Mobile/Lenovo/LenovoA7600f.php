@@ -53,7 +53,7 @@ class LenovoA7600f extends AbstractDevice implements DeviceHasSpecificPlatformIn
         // device
         'code_name'              => 'A7600-F',
         'model_extra_info'       => 'Wi-Fi only (Mediatek MT8121)',
-        'marketing_name'         => 'A7600-F',
+        'marketing_name'         => 'A10-70 A7600 Wi-Fi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

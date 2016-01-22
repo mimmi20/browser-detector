@@ -58,7 +58,7 @@ class SamsungGtn8010 extends AbstractDevice implements DeviceHasWurflKeyInterfac
         // device
         'code_name'              => 'GT-N8010',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Galaxy Note 10.1',
+        'marketing_name'         => 'Galaxy Note 10.1 WiFi',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

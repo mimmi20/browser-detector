@@ -57,7 +57,7 @@ class SonyTabletSgp521 extends AbstractDevice implements DeviceHasWurflKeyInterf
         // device
         'code_name'              => 'SGP521',
         'model_extra_info'       => null,
-        'marketing_name'         => 'SGP521',
+        'marketing_name'         => 'Xperia Tablet Z2 LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
