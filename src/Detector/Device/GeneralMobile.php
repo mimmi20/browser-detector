@@ -339,7 +339,17 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('AdobeAIR', 'YUANDA', 'stagefright'))) {
+        $mobiles = array(
+            'AdobeAIR',
+            'YUANDA',
+            'stagefright',
+            'AndroidDownloadManager',
+            'WAP Browser',
+            'Crowsnest',
+            'Dorado',
+        );
+
+        if ($this->utils->checkIfContains($mobiles)) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');

@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class LgVs980 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'              => 'A388T',
+        'code_name'              => 'VS980',
         'model_extra_info'       => null,
-        'marketing_name'         => 'A388T',
+        'marketing_name'         => 'G2 Verizon VS980',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +69,10 @@ class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInt
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 320,
-        'resolution_height'      => 480,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('lenovo a388t', 'lenovo-a388t'), true)) {
+        if (!$this->utils->checkIfContains('VS980')) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -130,7 +130,7 @@ class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Lg());
     }
 
     /**

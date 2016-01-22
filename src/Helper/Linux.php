@@ -86,7 +86,9 @@ class Linux
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Loewe; SL121', 'eeepc', 'Microsoft Office'))) {
+        $noLinux = array('Loewe; SL121', 'eeepc', 'Microsoft Office', 'InfegyAtlas');
+
+        if ($this->utils->checkIfContains($noLinux)) {
             return false;
         }
 

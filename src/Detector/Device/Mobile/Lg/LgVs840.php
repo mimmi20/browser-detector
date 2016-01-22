@@ -86,7 +86,7 @@ class LgVs840 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-VS840')) {
+        if (!$this->utils->checkIfContains('VS840')) {
             return false;
         }
 

@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AlcatelOt4037T extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'              => 'A388T',
+        'code_name'              => '4037T',
         'model_extra_info'       => null,
-        'marketing_name'         => 'A388T',
+        'marketing_name'         => 'One Touch Evolve II Black',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -86,7 +86,7 @@ class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('lenovo a388t', 'lenovo-a388t'), true)) {
+        if (!$this->utils->checkIfContains(array('OT-4037T', 'ALCATEL ONE TOUCH 4037T'))) {
             return false;
         }
 
@@ -120,17 +120,17 @@ class LenovoA388T extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Alcatel());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Alcatel());
     }
 
     /**

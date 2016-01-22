@@ -44,6 +44,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'),
             array('revolt'),
             array('Microsoft Office Excel 2013'),
+            array('Mozilla/5.0 (compatible; Linux; InfegyAtlas/1.0; en-US; collection@infegy.com)'),
         );
     }
 }
