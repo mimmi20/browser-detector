@@ -43,6 +43,7 @@ use BrowserDetector\Detector\Device\Tv\NetrangeMmh;
 use BrowserDetector\Detector\Device\Tv\PanasonicViera;
 use BrowserDetector\Detector\Device\Tv\PhilipsTv;
 use BrowserDetector\Detector\Device\Tv\SamsungSmartTv;
+use BrowserDetector\Detector\Device\Tv\SharpAquosTv;
 use BrowserDetector\Detector\Device\Tv\SonyDtv115;
 use BrowserDetector\Detector\Device\Tv\SonyKdl32hx755;
 use BrowserDetector\Detector\Device\Tv\SonyKdl37ex720;
@@ -112,6 +113,8 @@ class TvFactory
             $device = new TechniSatDigitIsioS($useragent, $logger);
         } elseif (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
             $device = new TechniSatMultyVisionIsio($useragent, $logger);
+        } elseif (preg_match('/AQUOSBrowser/', $useragent)) {
+            $device = new SharpAquosTv($useragent, $logger);
         } else {
             $device = new GeneralTv($useragent, $logger);
         }

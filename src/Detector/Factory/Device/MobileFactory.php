@@ -267,7 +267,7 @@ class MobileFactory
             $device = new Dell($useragent, $logger);
         } elseif (preg_match('/(Denver|TAD\-)/i', $useragent)) {
             $device = new Denver($useragent, $logger);
-        } elseif (preg_match('/(nec|n905i)/i', $useragent)) {
+        } elseif (preg_match('/(nec|n905i)/i', $useragent) && !preg_match('/fennec/i', $useragent)) {
             $device = new Nec($useragent, $logger);
         } elseif (preg_match('/(DoCoMo|P900i)/i', $useragent)) {
             $device = new DoCoMo($useragent, $logger);
@@ -469,7 +469,7 @@ class MobileFactory
             $device = new Apple\Iphone($useragent, $logger);
         } elseif (preg_match('/Pre/', $useragent) && !preg_match('/Presto/', $useragent)) {
             $device = new Hp($useragent, $logger);
-        } elseif (preg_match('/Z221|V788D/', $useragent)) {
+        } elseif (preg_match('/(Z221|V788D|KIS PLUS)/', $useragent)) {
             $device = new Zte($useragent, $logger);
         } elseif (preg_match('/ME\d{3}[A-Z]/', $useragent)) {
             $device = new Asus($useragent, $logger);
@@ -529,7 +529,7 @@ class MobileFactory
             $device = new GoClever($useragent, $logger);
         } elseif (preg_match('/AX\d{3}/', $useragent)) {
             $device = new Bmobile($useragent, $logger);
-        } elseif (preg_match('/FreeTAB 1001/', $useragent)) {
+        } elseif (preg_match('/FreeTAB \d{4}/', $useragent)) {
             $device = new Modecom($useragent, $logger);
         } elseif (preg_match('/Venue/', $useragent)) {
             $device = new Dell($useragent, $logger);
@@ -549,7 +549,7 @@ class MobileFactory
             $device = new FaktorZwei($useragent, $logger);
         } elseif (preg_match('/AN\d{1,2}/', $useragent)) {
             $device = new Arnova($useragent, $logger);
-        } elseif (preg_match('/Touchlet/', $useragent)) {
+        } elseif (preg_match('/(Touchlet|X7G)/', $useragent)) {
             $device = new Pearl($useragent, $logger);
         } elseif (preg_match('/CFNetwork/', $useragent)) {
             $device = new Apple($useragent, $logger);

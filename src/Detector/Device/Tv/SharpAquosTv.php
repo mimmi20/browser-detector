@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Prestigio;
+namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Tablet;
+use BrowserDetector\Detector\Os\UnknownOs;
+use UaDeviceType\Tv;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SharpAquosTv extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,11 +51,11 @@ class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecifi
      */
     protected $properties = array(
         // device
-        'code_name'              => 'PMP7280C3G_QUAD',
+        'code_name'              => 'Aquos TV',
         'model_extra_info'       => null,
-        'marketing_name'         => 'MultiPad 4 Ultra Quad 8.0 3G',
+        'marketing_name'         => 'Aquos TV',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
+        'pointing_method'        => 'mouse',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -69,14 +69,14 @@ class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecifi
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 768,
-        'dual_orientation'       => true,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => false,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -86,7 +86,7 @@ class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecifi
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('PMP7280C3G_QUAD'))) {
+        if (!$this->utils->checkIfContains('(; Philips; ; ; ; )')) {
             return false;
         }
 
@@ -100,7 +100,7 @@ class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecifi
      */
     public function getWeight()
     {
-        return 3;
+        return 5;
     }
 
     /**
@@ -110,7 +110,7 @@ class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecifi
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new Tv();
     }
 
     /**
@@ -120,7 +120,7 @@ class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecifi
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Prestigio());
+        return new Company(new Company\Sharp());
     }
 
     /**
@@ -130,16 +130,16 @@ class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecifi
      */
     public function getBrand()
     {
-        return new Company(new Company\Prestigio());
+        return new Company(new Company\Sharp());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\LinuxTv
      */
     public function detectOs()
     {
-        return new AndroidOs($this->useragent, $this->logger);
+        return new UnknownOs($this->useragent, $this->logger);
     }
 }
