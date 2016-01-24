@@ -93,6 +93,7 @@ class Desktop
             'marketwirebot',
             'akregator',
             'installatron',
+            'microsoft-cryptoapi',
         );
 
         if ($this->utils->checkIfContains($noDesktops, true)) {

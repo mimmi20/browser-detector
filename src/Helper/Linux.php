@@ -67,6 +67,7 @@ class Linux
     public function isLinux()
     {
         $linux = array(
+            // linux systems
             'linux',
             'debian',
             'ubuntu',
@@ -79,7 +80,10 @@ class Linux
             'xentos',
             'kubuntu',
             'cros',
-            'moblin'
+            'moblin',
+            // bots on linux
+            'akregator',
+            'installatron',
         );
 
         if (!$this->utils->checkIfContains($linux, true)) {

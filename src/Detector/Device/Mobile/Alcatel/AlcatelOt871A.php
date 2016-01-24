@@ -28,11 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Micromax;
+namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AlcatelOt871A extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'              => 'A27',
+        'code_name'              => 'OT-871A',
         'model_extra_info'       => null,
-        'marketing_name'         => 'A27',
+        'marketing_name'         => 'One Touch 871A',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +69,10 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 640,
-        'resolution_height'      => 960,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A27')) {
+        if (!$this->utils->checkIfContains('OT871A')) {
             return false;
         }
 
@@ -120,17 +120,17 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Micromax());
+        return new Company(new Company\Alcatel());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Micromax());
+        return new Company(new Company\Alcatel());
     }
 
     /**

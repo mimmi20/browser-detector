@@ -78,7 +78,7 @@ class Macintosh
             'integrity',
         );
 
-        if (!$this->utils->checkIfContains($mac)) {
+        if (!$this->utils->checkIfContains($mac, true)) {
             return false;
         }
 

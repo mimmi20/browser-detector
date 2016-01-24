@@ -174,6 +174,7 @@ class MobileDevice
             'crowsnest',
             'wap-browser',
             'dino762',
+            'iball',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {

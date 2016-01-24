@@ -28,13 +28,17 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Micromax;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
+use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +46,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SamsungSmT531 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +55,9 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'              => 'A27',
+        'code_name'              => 'SM-T531',
         'model_extra_info'       => null,
-        'marketing_name'         => 'A27',
+        'marketing_name'         => 'Galaxy Tab 4 10.1',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +73,10 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 640,
-        'resolution_height'      => 960,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +90,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A27')) {
+        if (!$this->utils->checkIfContains('SM-T531')) {
             return false;
         }
 
@@ -110,7 +114,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,7 +124,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Micromax());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -130,7 +134,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company(new Company\Micromax());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -141,5 +145,21 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
+    {
+        $wurflKey = 'samsung_sm_t530_ver1_subuaT531';
+
+        return $wurflKey;
     }
 }

@@ -126,6 +126,7 @@ use BrowserDetector\Detector\Device\Mobile\Pandigital;
 use BrowserDetector\Detector\Device\Mobile\Pantech;
 use BrowserDetector\Detector\Device\Mobile\Pearl;
 use BrowserDetector\Detector\Device\Mobile\Phicomm;
+use BrowserDetector\Detector\Device\Mobile\Philips;
 use BrowserDetector\Detector\Device\Mobile\Pipo;
 use BrowserDetector\Detector\Device\Mobile\PointOfView;
 use BrowserDetector\Detector\Device\Mobile\Pomp;
@@ -225,7 +226,7 @@ class MobileFactory
             $device = new Lg($useragent, $logger);
         } elseif (preg_match('/htc/i', $useragent) && !preg_match('/WOHTC/', $useragent)) {
             $device = new Htc($useragent, $logger);
-        } elseif (preg_match('/(lenovo|ideatab|smarttab)/i', $useragent)) {
+        } elseif (preg_match('/(lenovo|ideatab|ideapad|smarttab)/i', $useragent)) {
             $device = new Lenovo($useragent, $logger);
         } elseif (preg_match('/(acer|iconia)/i', $useragent)) {
             $device = new Acer($useragent, $logger);
@@ -419,6 +420,8 @@ class MobileFactory
             $device = new Kiano($useragent, $logger);
         } elseif (preg_match('/manta/i', $useragent)) {
             $device = new Manta($useragent, $logger);
+        } elseif (preg_match('/philips/i', $useragent)) {
+            $device = new Philips($useragent, $logger);
         } elseif (preg_match('/ MT791 /i', $useragent)) {
             $device = new KeenHigh($useragent, $logger);
         } elseif (preg_match('/(g100w|stream\-s110)/i', $useragent)) {
@@ -473,7 +476,9 @@ class MobileFactory
             $device = new Zte($useragent, $logger);
         } elseif (preg_match('/ME\d{3}[A-Z]/', $useragent)) {
             $device = new Asus($useragent, $logger);
-        } elseif (preg_match('/(PadFone|K01A)/', $useragent)) {
+        } elseif (preg_match('/PadFone/', $useragent)) {
+            $device = new Asus($useragent, $logger);
+        } elseif (preg_match('/K0(0|1)[a-zA-Z]/', $useragent)) {
             $device = new Asus($useragent, $logger);
         } elseif (preg_match('/QtCarBrowser/', $useragent)) {
             $device = new Tesla($useragent, $logger);
@@ -490,6 +495,8 @@ class MobileFactory
         } elseif (preg_match('/(C|D)\d{4}/', $useragent)) {
             $device = new SonyEricsson($useragent, $logger);
         } elseif (preg_match('/SGP\d{3}/', $useragent)) {
+            $device = new SonyEricsson($useragent, $logger);
+        } elseif (preg_match('/SGPT\d{2}/', $useragent)) {
             $device = new SonyEricsson($useragent, $logger);
         } elseif (preg_match('/VS\d{3}/', $useragent)) {
             $device = new Lg($useragent, $logger);
@@ -511,7 +518,7 @@ class MobileFactory
             $device = new Motorola($useragent, $logger);
         } elseif (preg_match('/( droid)/i', $useragent)) {
             $device = new Motorola($useragent, $logger);
-        } elseif (preg_match('/(ST|LT)\d{2}/', $useragent)) {
+        } elseif (preg_match('/(ST|LT|WT)\d{2}/', $useragent)) {
             $device = new SonyEricsson($useragent, $logger);
         } elseif (preg_match('/VIVO/', $useragent)) {
             $device = new Blu($useragent, $logger);
@@ -535,7 +542,7 @@ class MobileFactory
             $device = new Dell($useragent, $logger);
         } elseif (preg_match('/FunTab/', $useragent)) {
             $device = new Orange($useragent, $logger);
-        } elseif (preg_match('/OV\-Solution 10II/', $useragent)) {
+        } elseif (preg_match('/(OV\-|Solution 7III)/', $useragent)) {
             $device = new Overmax($useragent, $logger);
         } elseif (preg_match('/MT6572\_TD/', $useragent)) {
             $device = new Cubot($useragent, $logger);
@@ -551,6 +558,12 @@ class MobileFactory
             $device = new Arnova($useragent, $logger);
         } elseif (preg_match('/(Touchlet|X7G)/', $useragent)) {
             $device = new Pearl($useragent, $logger);
+        } elseif (preg_match('/PI\d{4}/', $useragent)) {
+            $device = new Philips($useragent, $logger);
+        } elseif (preg_match('/SM \- /', $useragent)) {
+            $device = new Samsung($useragent, $logger);
+        } elseif (preg_match('/SH05C/', $useragent)) {
+            $device = new Sharp($useragent, $logger);
         } elseif (preg_match('/CFNetwork/', $useragent)) {
             $device = new Apple($useragent, $logger);
         } else {

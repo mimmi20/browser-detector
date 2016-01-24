@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Micromax;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\MobilePhone;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Lgv490 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'              => 'A27',
+        'code_name'              => 'V490',
         'model_extra_info'       => null,
-        'marketing_name'         => 'A27',
+        'marketing_name'         => 'G Pad 8.0 4G LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -63,20 +63,20 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 640,
-        'resolution_height'      => 960,
+        'physical_screen_width'  => 217,
+        'physical_screen_height' => 136,
+        'columns'                => 100,
+        'rows'                   => 100,
+        'max_image_width'        => 980,
+        'max_image_height'       => 472,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 768,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -86,7 +86,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A27')) {
+        if (!$this->utils->checkIfContains('LG-V490')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,7 +120,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Micromax());
+        return new Company(new Company\Lg());
     }
 
     /**
@@ -130,7 +130,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company(new Company\Micromax());
+        return new Company(new Company\Lg());
     }
 
     /**

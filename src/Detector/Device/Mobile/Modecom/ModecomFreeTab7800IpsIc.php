@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Micromax;
+namespace BrowserDetector\Detector\Device\Mobile\Modecom;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\MobilePhone;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class ModecomFreeTab7800IpsIc extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     protected $properties = array(
         // device
-        'code_name'              => 'A27',
+        'code_name'              => 'FreeTAB 7800 IPS IC',
         'model_extra_info'       => null,
-        'marketing_name'         => 'A27',
+        'marketing_name'         => 'FreeTAB 7800 IPS IC',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,14 +69,14 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 640,
-        'resolution_height'      => 960,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -86,7 +86,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A27')) {
+        if (!$this->utils->checkIfContains('FreeTAB 7800 IPS IC')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,7 +120,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Micromax());
+        return new Company(new Company\Modecom());
     }
 
     /**
@@ -130,7 +130,7 @@ class MicromaxA27 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function getBrand()
     {
-        return new Company(new Company\Micromax());
+        return new Company(new Company\Modecom());
     }
 
     /**
