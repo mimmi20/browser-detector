@@ -90,6 +90,10 @@ class LenovoA65 extends AbstractDevice implements DeviceHasSpecificPlatformInter
             return false;
         }
 
+        if ($this->utils->checkIfContains('Lenovo A656')) {
+            return false;
+        }
+
         return true;
     }
 

@@ -49,9 +49,9 @@ class SonyD2203 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Xperia E3',
+        'code_name'              => 'D2203',
         'model_extra_info'       => null,
-        'marketing_name'         => 'D2203',
+        'marketing_name'         => 'Xperia E3',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

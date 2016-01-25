@@ -51,9 +51,9 @@ class ShaanMajestic24d extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'              => '303',
+        'code_name'              => 'Majestic 2.4D',
         'model_extra_info'       => null,
-        'marketing_name'         => '303',
+        'marketing_name'         => 'Majestic 2.4D',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

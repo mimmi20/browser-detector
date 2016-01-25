@@ -90,7 +90,7 @@ class SamsungSmT531 extends AbstractDevice implements DeviceHasWurflKeyInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-T531')) {
+        if (!$this->utils->checkIfContains(array('SM-T531', 'SM - T531'))) {
             return false;
         }
 

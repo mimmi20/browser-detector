@@ -90,6 +90,10 @@ class LenovoA3300h extends AbstractDevice implements DeviceHasSpecificPlatformIn
             return false;
         }
 
+        if ($this->utils->checkIfContains('A3300-HV')) {
+            return false;
+        }
+
         return true;
     }
 

@@ -81,6 +81,8 @@ class Linux
             'kubuntu',
             'cros',
             'moblin',
+            // browsers on linux
+            'dillo',
             // bots on linux
             'akregator',
             'installatron',
@@ -90,9 +92,17 @@ class Linux
             return false;
         }
 
-        $noLinux = array('loewe; sl121', 'eeepc', 'microsoft office', 'infegyatlas');
+        $noLinux = array('loewe; sl121', 'eeepc', 'microsoft office', 'infegyatlas', 'TERRA_101');
 
         if ($this->utils->checkIfContains($noLinux, true)) {
+            return false;
+        }
+
+        if (preg_match('/TBD\d{4}/', $this->useragent)) {
+            return false;
+        }
+
+        if (preg_match('/TBD(B|C)\d{3,4}/', $this->useragent)) {
             return false;
         }
 

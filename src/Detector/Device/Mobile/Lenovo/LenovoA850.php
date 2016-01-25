@@ -90,6 +90,10 @@ class LenovoA850 extends AbstractDevice implements DeviceHasSpecificPlatformInte
             return false;
         }
 
+        if ($this->utils->checkIfContains('A850+')) {
+            return false;
+        }
+
         return true;
     }
 

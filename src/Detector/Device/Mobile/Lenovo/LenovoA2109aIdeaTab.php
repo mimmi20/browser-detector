@@ -99,6 +99,7 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
             'IdeaTab A3000-H',
             'S6000L',
             'S6000',
+            'A1000L-F',
         );
 
         if ($this->utils->checkIfContains($otherLenovoTabs)) {

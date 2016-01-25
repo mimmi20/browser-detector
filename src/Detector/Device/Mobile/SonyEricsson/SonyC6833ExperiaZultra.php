@@ -53,7 +53,7 @@ class SonyC6833ExperiaZultra extends AbstractDevice implements DeviceHasSpecific
         // device
         'code_name'              => 'C6833',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Z Ultra',
+        'marketing_name'         => 'Xperia Z Ultra LTE',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -59,7 +59,7 @@ class SonyD2005 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
         // device
         'code_name'              => 'D2005',
         'model_extra_info'       => null,
-        'marketing_name'         => 'D2005',
+        'marketing_name'         => 'Xperia E1',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

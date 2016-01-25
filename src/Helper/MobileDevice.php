@@ -236,6 +236,14 @@ class MobileDevice
             return true;
         }
 
+        if (preg_match('/TBD\d{4}/', $this->useragent)) {
+            return true;
+        }
+
+        if (preg_match('/TBD(B|C)\d{3,4}/', $this->useragent)) {
+            return true;
+        }
+
         return false;
     }
 }
