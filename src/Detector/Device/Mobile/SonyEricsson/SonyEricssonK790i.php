@@ -86,7 +86,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('sonyericssonk7900i', true)) {
+        if (!$this->utils->checkIfContains('sonyericssonk790i', true)) {
             return false;
         }
 

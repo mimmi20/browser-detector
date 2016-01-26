@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\TbTouch;
+namespace BrowserDetector\Detector\Device\Mobile\Exeq;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Tablet;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class ExeqP720 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Ignis 8',
+        'code_name'              => 'P-720',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Ignis 8',
+        'marketing_name'         => 'P-720',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -86,7 +86,7 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Ignis 8'))) {
+        if (!$this->utils->checkIfContains('P-720')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new MobilePhone();
     }
 
     /**
@@ -120,7 +120,7 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\TbTouch());
+        return new Company(new Company\Exeq());
     }
 
     /**
@@ -130,7 +130,7 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company(new Company\TbTouch());
+        return new Company(new Company\Exeq());
     }
 
     /**

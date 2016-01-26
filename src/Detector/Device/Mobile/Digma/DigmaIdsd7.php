@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\TbTouch;
+namespace BrowserDetector\Detector\Device\Mobile\Digma;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class DigmaIdsd7 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Ignis 8',
+        'code_name'              => 'iDsD7',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Ignis 8',
+        'marketing_name'         => 'iDsD7',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,14 +69,14 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 720,
-        'resolution_height'      => 1280,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => false,
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'            => false,
+        'nfc_support'            => true,
     );
 
     /**
@@ -86,7 +86,7 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Ignis 8'))) {
+        if (!$this->utils->checkIfContains('iDsD7')) {
             return false;
         }
 
@@ -120,17 +120,17 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\TbTouch());
+        return new Company(new Company\Digma());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\TbTouch());
+        return new Company(new Company\Digma());
     }
 
     /**
