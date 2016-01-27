@@ -53,7 +53,7 @@ class SonyC1905 extends AbstractDevice implements DeviceHasSpecificPlatformInter
         // device
         'code_name'              => 'C1905',
         'model_extra_info'       => null,
-        'marketing_name'         => 'C1905',
+        'marketing_name'         => 'Xperia M',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

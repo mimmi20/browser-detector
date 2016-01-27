@@ -259,7 +259,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Opera'))) {
+        if ($this->utils->checkIfContains(array('Opera', 'OPR'))) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');

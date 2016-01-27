@@ -95,6 +95,10 @@ class SamsungGti9300 extends AbstractDevice implements DeviceHasWurflKeyInterfac
             return false;
         }
 
+        if ($this->utils->checkIfContains('GT-I9300I', true)) {
+            return false;
+        }
+
         return true;
     }
 

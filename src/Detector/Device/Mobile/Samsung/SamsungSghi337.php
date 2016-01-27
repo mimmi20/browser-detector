@@ -90,6 +90,10 @@ class SamsungSghi337 extends AbstractDevice implements DeviceHasSpecificPlatform
             return false;
         }
 
+        if ($this->utils->checkIfContains('SGH-I337M')) {
+            return false;
+        }
+
         return true;
     }
 

@@ -51,9 +51,9 @@ class DigmaIdsd7 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     protected $properties = array(
         // device
-        'code_name'              => 'iDsD7',
+        'code_name'              => 'iDsD7 3G',
         'model_extra_info'       => null,
-        'marketing_name'         => 'iDsD7',
+        'marketing_name'         => 'iDsD7 3G',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

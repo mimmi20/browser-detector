@@ -90,6 +90,10 @@ class ZteV9 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('ZTE V970', 'V967S'))) {
+            return false;
+        }
+
         return true;
     }
 

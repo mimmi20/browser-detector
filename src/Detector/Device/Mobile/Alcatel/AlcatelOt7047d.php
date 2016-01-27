@@ -51,7 +51,7 @@ class AlcatelOt7047d extends AbstractDevice
         // device
         'code_name'              => 'OT-7047D',
         'model_extra_info'       => null,
-        'marketing_name'         => 'One Touch Scribe HD',
+        'marketing_name'         => 'One Touch Pop C9',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

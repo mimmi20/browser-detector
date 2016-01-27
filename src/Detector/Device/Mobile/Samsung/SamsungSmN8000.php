@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Huawei;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -40,6 +40,7 @@ use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use Wurfl\WurflConstants;
 
 /**
  * @category  BrowserDetector
@@ -47,7 +48,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class SamsungSmN8000 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -56,32 +57,32 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S7-301w',
-        'model_extra_info'       => 'aka T-Mobile Springboard',
-        'marketing_name'         => 'MediaPad',
+        'code_name'              => 'SM-N8000',
+        'model_extra_info'       => 'LTE',
+        'marketing_name'         => 'Galaxy Note 10.1 3G',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://wap.huawei.com/uaprof/HuaweiMediaPadWIFIOnl',
+        'uaprof'                 => null,
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 151,
-        'physical_screen_height' => 95,
-        'columns'                => 80,
-        'rows'                   => 25,
-        'max_image_width'        => 980,
-        'max_image_height'       => 472,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
-        'colors'                 => 4294967296,
+        'colors'                 => 16777216,
         // sms
-        'sms_enabled'            => false,
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'            => false,
+        'nfc_support'            => true,
     );
 
     /**
@@ -91,19 +92,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HUAWEI MediaPad', 'MediaPad'))) {
-            return false;
-        }
-
-        $otherMediaPads = array(
-            'mediapad 7 lite',
-            'mediapad 10 link',
-            'mediapad m1 8.0',
-            'mediapad t1 8.0',
-            'mediapad 7 classic'
-        );
-
-        if ($this->utils->checkIfContains($otherMediaPads, true)) {
+        if (!$this->utils->checkIfContains('SM-N8000')) {
             return false;
         }
 
@@ -137,17 +126,17 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Huawei());
+        return new Company(new Company\Samsung());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Huawei());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -171,17 +160,20 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
-        $wurflKey = 'huawei_mediapad_ver1_suban40';
+        $wurflKey = WurflConstants::NO_MATCH;
 
         $osVersion = $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 
         switch ($browser->getName()) {
-            case 'Android Webkit':
+            case 'Chrome':
+            case 'Android WebView':
+                $engine->setCapability('is_sencha_touch_ok', false);
+
                 switch ((float)$osVersion) {
-                    case 4.1:
-                        $wurflKey = 'huawei_mediapad10_link_ver1_suban41';
+                    case 4.4:
+                        $wurflKey = 'samsung_sm_n7502_ver1_suban44n8000';
                         break;
                     default:
                         // nothing to do here

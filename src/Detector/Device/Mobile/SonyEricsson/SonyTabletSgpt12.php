@@ -91,7 +91,7 @@ class SonyTabletSgpt12 extends AbstractDevice implements DeviceHasWurflKeyInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SGPT12')) {
+        if (!$this->utils->checkIfContains('sgpt12', true)) {
             return false;
         }
 

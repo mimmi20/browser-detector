@@ -57,7 +57,7 @@ class HuaweiU8815 extends AbstractDevice implements DeviceHasWurflKeyInterface, 
         // device
         'code_name'              => 'U8815',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Ascent G 300',
+        'marketing_name'         => 'Ascend G300',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -175,6 +175,7 @@ class MobileDevice
             'wap-browser',
             'dino762',
             'iball',
+            'terra_101',
         );
 
         if ($this->utils->checkIfContains($mobileBrowsers, true)) {

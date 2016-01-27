@@ -28,18 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Huawei;
+namespace BrowserDetector\Detector\Device\Mobile\Gionee;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\Tablet;
-use UaResult\Version;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -47,7 +42,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class GioneeMarathonM3 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -56,28 +51,28 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S7-301w',
-        'model_extra_info'       => 'aka T-Mobile Springboard',
-        'marketing_name'         => 'MediaPad',
+        'code_name'              => 'M3',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Marathon M3',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://wap.huawei.com/uaprof/HuaweiMediaPadWIFIOnl',
+        'uaprof'                 => null,
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 151,
-        'physical_screen_height' => 95,
-        'columns'                => 80,
-        'rows'                   => 25,
-        'max_image_width'        => 980,
-        'max_image_height'       => 472,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
-        'colors'                 => 4294967296,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => false,
         // chips
@@ -91,19 +86,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HUAWEI MediaPad', 'MediaPad'))) {
-            return false;
-        }
-
-        $otherMediaPads = array(
-            'mediapad 7 lite',
-            'mediapad 10 link',
-            'mediapad m1 8.0',
-            'mediapad t1 8.0',
-            'mediapad 7 classic'
-        );
-
-        if ($this->utils->checkIfContains($otherMediaPads, true)) {
+        if (!$this->utils->checkIfContains(' M3 ')) {
             return false;
         }
 
@@ -127,7 +110,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new MobilePhone();
     }
 
     /**
@@ -137,17 +120,17 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Huawei());
+        return new Company(new Company\Gionee());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Huawei());
+        return new Company(new Company\Gionee());
     }
 
     /**
@@ -158,41 +141,5 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'huawei_mediapad_ver1_suban40';
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 4.1:
-                        $wurflKey = 'huawei_mediapad10_link_ver1_suban41';
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $wurflKey;
     }
 }

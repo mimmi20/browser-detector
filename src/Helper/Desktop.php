@@ -92,7 +92,8 @@ class Desktop
             'dino762',
             'marketwirebot',
             'microsoft-cryptoapi',
-            'TERRA_101',
+            'pad-bot',
+            'terra_101',
         );
 
         if ($this->utils->checkIfContains($noDesktops, true)) {
@@ -101,7 +102,6 @@ class Desktop
 
         $othersDesktops = array(
             'revolt',
-            'pad-bot',
             'akregator',
             'installatron',
             'lynx',

@@ -28,12 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Huawei;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\Tablet;
-use UaResult\Version;
+use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -47,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class SamsungGti8262 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -56,32 +55,32 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S7-301w',
-        'model_extra_info'       => 'aka T-Mobile Springboard',
-        'marketing_name'         => 'MediaPad',
+        'code_name'              => 'GT-I8262',
+        'model_extra_info'       => null,
+        'marketing_name'         => 'Galaxy Core',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://wap.huawei.com/uaprof/HuaweiMediaPadWIFIOnl',
+        'uaprof'                 => null,
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 151,
-        'physical_screen_height' => 95,
-        'columns'                => 80,
-        'rows'                   => 25,
-        'max_image_width'        => 980,
-        'max_image_height'       => 472,
-        'resolution_width'       => 1280,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 480,
         'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 4294967296,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'            => false,
+        'sms_enabled'            => true,
         // chips
-        'nfc_support'            => false,
+        'nfc_support'            => true,
     );
 
     /**
@@ -91,19 +90,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HUAWEI MediaPad', 'MediaPad'))) {
-            return false;
-        }
-
-        $otherMediaPads = array(
-            'mediapad 7 lite',
-            'mediapad 10 link',
-            'mediapad m1 8.0',
-            'mediapad t1 8.0',
-            'mediapad 7 classic'
-        );
-
-        if ($this->utils->checkIfContains($otherMediaPads, true)) {
+        if (!$this->utils->checkIfContains('GT-I8262')) {
             return false;
         }
 
@@ -127,7 +114,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getDeviceType()
     {
-        return new Tablet();
+        return new MobilePhone();
     }
 
     /**
@@ -137,23 +124,23 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Huawei());
+        return new Company(new Company\Samsung());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Huawei());
+        return new Company(new Company\Samsung());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaMatcher\Os\OsInterface
      */
     public function detectOs()
     {
@@ -171,27 +158,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      */
     public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
-        $wurflKey = 'huawei_mediapad_ver1_suban40';
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 4.1:
-                        $wurflKey = 'huawei_mediapad10_link_ver1_suban41';
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $wurflKey = 'samsung_gt_i8262_ver1';
 
         return $wurflKey;
     }
