@@ -513,7 +513,7 @@ class MobileFactory
             $device = new Keneksi($useragent, $logger);
         } elseif (preg_match('/gionee/i', $useragent)) {
             $device = new Gionee($useragent, $logger);
-        } elseif (preg_match('/msi/i', $useragent)) {
+        } elseif (preg_match('/msi/i', $useragent) && !preg_match('/msie/i', $useragent)) {
             $device = new Msi($useragent, $logger);
         } elseif (preg_match('/Orange/', $useragent)) {
             $device = new Orange($useragent, $logger);

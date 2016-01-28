@@ -55,9 +55,9 @@ class NgmMiracle extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Miracle',
+        'code_name'              => 'WeMove Miracle',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Miracle',
+        'marketing_name'         => 'WeMove Miracle',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'unknown',
         // product info
