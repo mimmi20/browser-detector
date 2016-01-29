@@ -86,7 +86,7 @@ class HighscreenZeraF extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Zera F')) {
+        if (!$this->utils->checkIfContains(array('Zera F', 'Zera_F'))) {
             return false;
         }
 
