@@ -28,11 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\Java;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class LenovoK910l extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,11 +51,11 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'K790i',
+        'code_name'              => 'K910L',
         'model_extra_info'       => null,
-        'marketing_name'         => 'K790i',
+        'marketing_name'         => 'Vibe Z LTE',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'unknown',
+        'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -86,7 +86,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('sonyericssonk790i', true)) {
+        if (!$this->utils->checkIfContains('K910L')) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Lenovo());
     }
 
     /**
@@ -130,7 +130,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Vodafone());
     }
 
     /**
@@ -140,6 +140,6 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function detectOs()
     {
-        return new Java($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

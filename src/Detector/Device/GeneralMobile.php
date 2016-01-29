@@ -190,7 +190,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Android; Mobile', 'Android; Linux'))) {
+        if ($this->utils->checkIfContains(array('Android; Mobile', 'Android; Linux', 'Browser/AppleWebKit'))) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');

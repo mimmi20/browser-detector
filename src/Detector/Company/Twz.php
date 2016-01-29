@@ -28,62 +28,27 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Helper;
-
-use UaHelper\Utils;
+namespace BrowserDetector\Detector\Company;
 
 /**
- * a helper to detect TV devices
- *
+ * @category  BrowserDetector
  * @package   BrowserDetector
+ * @copyright 2012-2015 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Tv
+class Twz extends AbstractCompany
 {
     /**
-     * @var \UaHelper\Utils the helper class
+     * the name of the company
+     *
+     * @var string
      */
-    private $utils = null;
+    public $name = 'TWZ';
 
     /**
-     * Class Constructor
+     * the brand name of the company
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Tv
+     * @var string
      */
-    public function __construct($useragent)
-    {
-        $this->utils = new Utils();
-
-        $this->utils->setUserAgent($useragent);
-    }
-
-    public function isTvDevice()
-    {
-        $tvDevices = array(
-            'boxee',
-            'ce-html',
-            'dlink.dsm380',
-            'googletv',
-            'hbbtv',
-            'idl-6651n',
-            'kdl40ex720',
-            'netrangemmh',
-            'loewe; sl121',
-            'loewe; sl150',
-            'smart-tv',
-            'sonydtv',
-            'viera',
-            'xbox',
-            'espial',
-            'aquosbrowser',
-            'gxt_dongle_3188',
-        );
-
-        if (!$this->utils->checkIfContains($tvDevices, true)) {
-            return false;
-        }
-
-        return true;
-    }
+    public $brandname = 'TWZ';
 }

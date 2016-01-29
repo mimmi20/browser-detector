@@ -28,12 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +44,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Irbis extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,11 +53,11 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'K790i',
+        'code_name'              => 'general Irbis Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'K790i',
+        'marketing_name'         => 'general Irbis Device',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'unknown',
+        'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -86,11 +88,33 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('sonyericssonk790i', true)) {
+        $phones = array(
+            'Irbis',
+        );
+
+        if (!$this->utils->checkIfContains($phones)) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Irbis');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Irbis' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -110,7 +134,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,7 +144,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Irbis());
     }
 
     /**
@@ -130,7 +154,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Irbis());
     }
 
     /**
@@ -140,6 +164,6 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function detectOs()
     {
-        return new Java($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

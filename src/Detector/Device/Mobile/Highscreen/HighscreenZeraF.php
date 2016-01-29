@@ -28,10 +28,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Highscreen;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\Java;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class HighscreenZeraF extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,11 +51,11 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'K790i',
+        'code_name'              => 'Zera F',
         'model_extra_info'       => null,
-        'marketing_name'         => 'K790i',
+        'marketing_name'         => 'Zera F',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'unknown',
+        'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -69,14 +69,14 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -86,7 +86,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('sonyericssonk790i', true)) {
+        if (!$this->utils->checkIfContains('Zera F')) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Highscreen());
     }
 
     /**
@@ -130,7 +130,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getBrand()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Highscreen());
     }
 
     /**
@@ -140,6 +140,6 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function detectOs()
     {
-        return new Java($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

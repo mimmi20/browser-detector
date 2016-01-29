@@ -28,13 +28,17 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Bq;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\Java;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +46,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Bq4007 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,11 +55,11 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'K790i',
+        'code_name'              => 'BQS-4007',
         'model_extra_info'       => null,
-        'marketing_name'         => 'K790i',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'unknown',
+        'marketing_name'         => 'Valencia',
+        'has_qwerty_keyboard'    => false,
+        'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -63,16 +67,16 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 300,
+        'max_image_height'       => 450,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +90,7 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('sonyericssonk790i', true)) {
+        if (!$this->utils->checkIfContains('BQS-4007')) {
             return false;
         }
 
@@ -120,17 +124,17 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Bq());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Bq());
     }
 
     /**
@@ -140,6 +144,22 @@ class SonyEricssonK790i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function detectOs()
     {
-        return new Java($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
+    {
+        $wurflKey = 'garminasus_a50_ver1';
+
+        return $wurflKey;
     }
 }

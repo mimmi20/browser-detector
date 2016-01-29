@@ -53,9 +53,9 @@ class AlcatelOt818 extends AbstractDevice implements DeviceHasSpecificPlatformIn
         // device
         'code_name'              => 'OT-818',
         'model_extra_info'       => null,
-        'marketing_name'         => 'OT-818',
+        'marketing_name'         => 'One Touch 818',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
+        'pointing_method'        => 'unknown',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
