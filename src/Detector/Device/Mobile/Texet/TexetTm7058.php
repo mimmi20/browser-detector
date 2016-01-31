@@ -28,18 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Texet;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\MobilePhone;
-use UaResult\Version;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -47,7 +42,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class TexetTm7058 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -56,10 +51,10 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'              => 'C6603',
+        'code_name'              => 'TM-7058',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Z',
-        'has_qwerty_keyboard'    => true,
+        'marketing_name'         => 'X-pad STYLE 7.1 3G',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -74,8 +69,8 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1080,
-        'resolution_height'      => 1920,
+        'resolution_width'       => 1280,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
         'colors'                 => 16777216,
         // sms
@@ -91,11 +86,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('C6603', 'Xperia Z'))) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('C6603v', 'C6903', 'Xperia Z1'))) {
+        if (!$this->utils->checkIfContains('X-pad STYLE 7.1 3G')) {
             return false;
         }
 
@@ -119,7 +110,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -129,7 +120,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Texet());
     }
 
     /**
@@ -139,7 +130,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getBrand()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Texet());
     }
 
     /**
@@ -150,43 +141,5 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'sonyericsson_c6603_ver1';
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 4.4:
-                        $wurflKey = 'sonyericsson_c6603_ver1_suban44nosechrome';
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $wurflKey;
     }
 }

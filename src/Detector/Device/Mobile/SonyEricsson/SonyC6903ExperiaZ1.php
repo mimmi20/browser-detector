@@ -91,7 +91,7 @@ class SonyC6903ExperiaZ1 extends AbstractDevice implements DeviceHasWurflKeyInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonC6903', 'SonyC6903', 'C6903', 'Xperia Z'))) {
+        if (!$this->utils->checkIfContains(array('C6903', 'Xperia Z1'))) {
             return false;
         }
 

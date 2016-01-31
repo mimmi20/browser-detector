@@ -544,7 +544,7 @@ class MobileFactory
             $device = new Apple\Iphone($useragent, $logger);
         } elseif (preg_match('/Pre/', $useragent) && !preg_match('/Presto/', $useragent)) {
             $device = new Hp($useragent, $logger);
-        } elseif (preg_match('/(Z221|V788D|KIS PLUS|NX402)/', $useragent)) {
+        } elseif (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501)/', $useragent)) {
             $device = new Zte($useragent, $logger);
         } elseif (preg_match('/ME\d{3}[A-Z]/', $useragent)) {
             $device = new Asus($useragent, $logger);
@@ -680,10 +680,10 @@ class MobileFactory
             $device = new Wiko($useragent, $logger);
         } elseif (preg_match('/(TX17|TX68)/', $useragent)) {
             $device = new Irbis($useragent, $logger);
-        } elseif (preg_match('/X-pad LITE/', $useragent)) {
+        } elseif (preg_match('/(X-pad LITE|X-pad STYLE)/', $useragent)) {
             $device = new Texet($useragent, $logger);
         } elseif (preg_match('/ G3 /', $useragent)) {
-            $device = new Lenovo($useragent, $logger);
+            $device = new Lg($useragent, $logger);
         } elseif (preg_match('/Zera_F/', $useragent)) {
             $device = new Highscreen($useragent, $logger);
         } elseif (preg_match('/CFNetwork/', $useragent)) {

@@ -28,12 +28,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -47,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class SamsungGti9128v extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -56,9 +55,9 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'              => 'C6603',
+        'code_name'              => 'GT-I9128V',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Z',
+        'marketing_name'         => 'Galaxy Grand',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -68,20 +67,20 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 1080,
-        'resolution_height'      => 1920,
+        'physical_screen_width'  => 49,
+        'physical_screen_height' => 81,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 480,
+        'resolution_height'      => 800,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -91,11 +90,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('C6603', 'Xperia Z'))) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(array('C6603v', 'C6903', 'Xperia Z1'))) {
+        if (!$this->utils->checkIfContains('GT-I9128V')) {
             return false;
         }
 
@@ -129,7 +124,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -139,7 +134,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getBrand()
     {
-        return new Company(new Company\Sony());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -163,29 +158,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
-        $wurflKey = 'sonyericsson_c6603_ver1';
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Chrome':
-                $engine->setCapability('is_sencha_touch_ok', false);
-
-                switch ((float)$osVersion) {
-                    case 4.4:
-                        $wurflKey = 'sonyericsson_c6603_ver1_suban44nosechrome';
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $wurflKey = 'samsung_gt_i8150_ver1';
 
         return $wurflKey;
     }

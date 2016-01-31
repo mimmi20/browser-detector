@@ -153,6 +153,40 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer()->getName() . ']' . '")'
         );
 
+        $expectedDeviceMaker = $mapper->mapDeviceMaker(
+            $expectedProperties['Device_Maker'],
+            $expectedProperties['Device_Code_Name']
+        );
+        $foundDeviceMaker = $mapper->mapDeviceMaker(
+            $result->getDevice()->getManufacturer()->getName(),
+            $result->getDeviceName()
+        );
+
+        self::assertSame(
+            $expectedDeviceMaker,
+            $foundDeviceMaker,
+            'Expected actual "Device_Maker" to be "'
+            . $expectedDeviceMaker . ' [' . $expectedProperties['Device_Maker'] . ']'
+            . '" (was "' . $foundDeviceMaker . ' [' . $result->getDevice()->getManufacturer()->getName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
+        );
+
+        $expectedDeviceBrand = $mapper->mapDeviceBrandName(
+            $expectedProperties['Device_Brand_Name'],
+            $expectedProperties['Device_Code_Name']
+        );
+        $foundDeviceBrand = $mapper->mapDeviceBrandName(
+            $result->getDevice()->getManufacturer()->getBrandName(),
+            $result->getDeviceName()
+        );
+
+        self::assertSame(
+            $expectedDeviceBrand,
+            $foundDeviceBrand,
+            'Expected actual "Device_Brand_Name" to be "'
+            . $expectedDeviceBrand . ' [' . $expectedProperties['Device_Brand_Name'] . ']'
+            . '" (was "' . $foundDeviceBrand . ' [' . $result->getDevice()->getManufacturer()->getBrandName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
+        );
+
         $expectedDeviceCodeName = $mapper->mapDeviceName(
             $expectedProperties['Device_Code_Name']
         );
