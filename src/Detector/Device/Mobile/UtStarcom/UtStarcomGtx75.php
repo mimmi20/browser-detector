@@ -130,7 +130,7 @@ class UtStarcomGtx75 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function getBrand()
     {
-        return new Company(new Company\UtStarcom());
+        return new Company(new Company\Att());
     }
 
     /**

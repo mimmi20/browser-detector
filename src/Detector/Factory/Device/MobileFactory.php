@@ -480,6 +480,8 @@ class MobileFactory
             $device = new Archos($useragent, $logger);
         } elseif (preg_match('/(sprd|SPHS|B51\+)/i', $useragent)) {
             $device = new Sprd($useragent, $logger);
+        } elseif (preg_match('/TAB A742/', $useragent)) {
+            $device = new Wexler($useragent, $logger);
         } elseif (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
             $device = new Acer($useragent, $logger);
         } elseif (preg_match('/AT\-AS40SE/', $useragent)) {

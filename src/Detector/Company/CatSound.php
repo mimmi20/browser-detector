@@ -43,7 +43,7 @@ class CatSound extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Cat Sound';
+    public $name = 'CatSound';
 
     /**
      * the brand name of the company

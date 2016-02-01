@@ -50,5 +50,5 @@ class TeslaMotors extends AbstractCompany
      *
      * @var string
      */
-    public $brandname = 'Tesla Motors';
+    public $brandname = 'Tesla';
 }

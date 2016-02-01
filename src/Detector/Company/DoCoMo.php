@@ -50,5 +50,5 @@ class DoCoMo extends AbstractCompany
      *
      * @var string
      */
-    public $brandname = 'DoCoMo';
+    public $brandname = 'NTT DoCoMo';
 }

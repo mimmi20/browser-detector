@@ -170,22 +170,24 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             . '" (was "' . $foundDeviceMaker . ' [' . $result->getDevice()->getManufacturer()->getName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
         );
 
-        $expectedDeviceBrand = $mapper->mapDeviceBrandName(
-            $expectedProperties['Device_Brand_Name'],
-            $expectedProperties['Device_Code_Name']
-        );
-        $foundDeviceBrand = $mapper->mapDeviceBrandName(
-            $result->getDevice()->getManufacturer()->getBrandName(),
-            $result->getDeviceName()
-        );
+        if (isset($expectedProperties['Device_Brand_Name'])) { //@todo: remove this check
+            $expectedDeviceBrand = $mapper->mapDeviceBrandName(
+                $expectedProperties['Device_Brand_Name'],
+                $expectedProperties['Device_Code_Name']
+            );
+            $foundDeviceBrand = $mapper->mapDeviceBrandName(
+                $result->getDevice()->getBrand()->getBrandName(),
+                $result->getDeviceName()
+            );
 
-        self::assertSame(
-            $expectedDeviceBrand,
-            $foundDeviceBrand,
-            'Expected actual "Device_Brand_Name" to be "'
-            . $expectedDeviceBrand . ' [' . $expectedProperties['Device_Brand_Name'] . ']'
-            . '" (was "' . $foundDeviceBrand . ' [' . $result->getDevice()->getManufacturer()->getBrandName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
-        );
+            self::assertSame(
+                $expectedDeviceBrand,
+                $foundDeviceBrand,
+                'Expected actual "Device_Brand_Name" to be "'
+                . $expectedDeviceBrand . ' [' . $expectedProperties['Device_Brand_Name'] . ']'
+                . '" (was "' . $foundDeviceBrand . ' [' . $result->getDevice()->getBrand()->getBrandName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
+            );
+        }
 
         $expectedDeviceCodeName = $mapper->mapDeviceName(
             $expectedProperties['Device_Code_Name']

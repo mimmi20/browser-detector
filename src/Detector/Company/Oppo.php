@@ -43,12 +43,12 @@ class Oppo extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Oppo';
+    public $name = 'OPPO';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Oppo';
+    public $brandname = 'OPPO';
 }

@@ -43,7 +43,7 @@ class Zopo extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Zopo';
+    public $name = 'ZOPO';
 
     /**
      * the brand name of the company

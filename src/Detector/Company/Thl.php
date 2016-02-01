@@ -43,12 +43,12 @@ class Thl extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'THL';
+    public $name = 'ThL';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'THL';
+    public $brandname = 'ThL';
 }

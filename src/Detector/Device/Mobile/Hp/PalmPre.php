@@ -213,8 +213,8 @@ class PalmPre
             $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
             $this->setCapability('colors', 262144);
 
-            $this->manufacturer = new Company\Hp();
-            $this->brand        = new Company\Hp();
+            $this->manufacturer = new Company(new Company\Hp());
+            $this->brand        = new Company(new Company\Hp());
         }
     }
 

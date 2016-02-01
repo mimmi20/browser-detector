@@ -43,12 +43,12 @@ class Texet extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'texet';
+    public $name = 'TeXet';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'texet';
+    public $brandname = 'TeXet';
 }

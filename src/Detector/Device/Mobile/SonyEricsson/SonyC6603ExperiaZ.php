@@ -95,7 +95,7 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasWurflKeyInter
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('C6603v', 'C6903', 'Xperia Z1'))) {
+        if ($this->utils->checkIfContains(array('C6603v', 'C6903', 'Xperia Z1'))) {
             return false;
         }
 

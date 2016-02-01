@@ -53,9 +53,9 @@ class Texet extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     protected $properties = array(
         // device
-        'code_name'              => 'general Texet Device',
+        'code_name'              => 'general TeXet Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'general Texet Device',
+        'marketing_name'         => 'general TeXet Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

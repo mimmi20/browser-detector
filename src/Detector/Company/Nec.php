@@ -43,12 +43,12 @@ class Nec extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Nec';
+    public $name = 'NEC';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'Nec';
+    public $brandname = 'NEC';
 }
