@@ -183,7 +183,7 @@ class MobileDevice
                 'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
                 'google wireless transcoder', 'eeepc', 'i9988_custom',
                 'i9999_custom', 'wuid=', 'smart-tv', 'sonydtv', 'hbbtv',
-                'dolphin http client',
+                'dolphin http client', 'gxt_dongle_3188',
             );
 
             if ($this->utils->checkIfContains($noMobiles, true)) {

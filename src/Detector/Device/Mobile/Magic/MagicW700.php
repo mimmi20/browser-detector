@@ -28,17 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Magic;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\FonePad;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +42,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class MagicW700 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -55,9 +51,9 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S6000-H',
+        'code_name'              => 'W700',
         'model_extra_info'       => null,
-        'marketing_name'         => 'IdeaTab S6000-H',
+        'marketing_name'         => 'W700',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,14 +63,14 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 218,
-        'physical_screen_height' => 136,
-        'columns'                => 100,
-        'rows'                   => 100,
-        'max_image_width'        => 980,
-        'max_image_height'       => 472,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
+        'resolution_width'       => 640,
+        'resolution_height'      => 960,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -90,7 +86,7 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IdeaTab S6000-H'))) {
+        if (!$this->utils->checkIfContains('W700')) {
             return false;
         }
 
@@ -114,7 +110,7 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function getDeviceType()
     {
-        return new FonePad();
+        return new MobilePhone();
     }
 
     /**
@@ -124,7 +120,7 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Lenovo());
+        return new Company(new Company\Magic());
     }
 
     /**
@@ -134,7 +130,7 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
      */
     public function getBrand()
     {
-        return new Company(new Company\Vodafone());
+        return new Company(new Company\Magic());
     }
 
     /**
@@ -145,21 +141,5 @@ class LenovoS6000hIdeaTab extends AbstractDevice implements DeviceHasWurflKeyInt
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'lenovo_ideatab_s6000h_ver1';
-
-        return $wurflKey;
     }
 }
