@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Sprint;
+namespace BrowserDetector\Detector\Device\Mobile\TriQ;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class TriQqpad extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'              => '9292',
+        'code_name'              => 'QS0716D',
         'model_extra_info'       => null,
-        'marketing_name'         => 'EVO 4G',
+        'marketing_name'         => 'Q-pad',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +69,10 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 768,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Sprint APA9292KT')) {
+        if (!$this->utils->checkIfContains('QS0716D')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,7 +120,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Htc());
+        return new Company(new Company\TriQ());
     }
 
     /**
@@ -130,7 +130,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company(new Company\Sprint());
+        return new Company(new Company\TriQ());
     }
 
     /**

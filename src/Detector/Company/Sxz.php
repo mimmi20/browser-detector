@@ -36,19 +36,19 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DoCoMo extends AbstractCompany
+class Sxz extends AbstractCompany
 {
     /**
      * the name of the company
      *
      * @var string
      */
-    public $name = 'NTT DoCoMo';
+    public $name = 'SXZ';
 
     /**
      * the brand name of the company
      *
      * @var string
      */
-    public $brandname = 'NTT DoCoMo';
+    public $brandname = 'SXZ';
 }

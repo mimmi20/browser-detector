@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Sprint;
+namespace BrowserDetector\Detector\Device\Mobile\Kingzone;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class KingzoneKz168 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'              => '9292',
+        'code_name'              => 'KZ-168',
         'model_extra_info'       => null,
-        'marketing_name'         => 'EVO 4G',
+        'marketing_name'         => 'K1 Turbo',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,14 +69,14 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -86,7 +86,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Sprint APA9292KT')) {
+        if (!$this->utils->checkIfContains('K1 turbo')) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Htc());
+        return new Company(new Company\Kingzone());
     }
 
     /**
@@ -130,7 +130,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company(new Company\Sprint());
+        return new Company(new Company\Kingzone());
     }
 
     /**

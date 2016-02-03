@@ -28,12 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Sprint;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +44,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Irulu extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +53,9 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'              => '9292',
+        'code_name'              => 'general iRulu Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'EVO 4G',
+        'marketing_name'         => 'general iRulu Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -86,11 +88,33 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Sprint APA9292KT')) {
+        $phones = array(
+            'Irulu',
+        );
+
+        if (!$this->utils->checkIfContains($phones)) {
             return false;
         }
 
         return true;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Irulu');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Irulu' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -120,7 +144,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Htc());
+        return new Company(new Company\Irulu());
     }
 
     /**
@@ -130,7 +154,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company(new Company\Sprint());
+        return new Company(new Company\Irulu());
     }
 
     /**

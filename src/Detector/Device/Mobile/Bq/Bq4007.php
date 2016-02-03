@@ -33,12 +33,8 @@ namespace BrowserDetector\Detector\Device\Mobile\Bq;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +42,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Bq4007 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class Bq4007 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -145,21 +141,5 @@ class Bq4007 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'garminasus_a50_ver1';
-
-        return $wurflKey;
     }
 }

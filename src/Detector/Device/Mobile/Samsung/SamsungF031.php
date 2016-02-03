@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Sprint;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SamsungF031 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,10 +51,10 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'              => '9292',
+        'code_name'              => 'F031',
         'model_extra_info'       => null,
-        'marketing_name'         => 'EVO 4G',
-        'has_qwerty_keyboard'    => true,
+        'marketing_name'         => 'Galaxy S5',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -86,7 +86,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Sprint APA9292KT')) {
+        if (!$this->utils->checkIfContains('F031')) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Htc());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -130,7 +130,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getBrand()
     {
-        return new Company(new Company\Sprint());
+        return new Company(new Company\Samsung());
     }
 
     /**

@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Sprint;
+namespace BrowserDetector\Detector\Device\Mobile\Caterpillar;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class CaterpillarB15 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     protected $properties = array(
         // device
-        'code_name'              => '9292',
+        'code_name'              => 'B15',
         'model_extra_info'       => null,
-        'marketing_name'         => 'EVO 4G',
+        'marketing_name'         => 'Cat B15',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -63,16 +63,16 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'physical_screen_width'  => 123,
+        'physical_screen_height' => 164,
+        'columns'                => 60,
+        'rows'                   => 40,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 800,
+        'resolution_height'      => 600,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Sprint APA9292KT')) {
+        if (!$this->utils->checkIfContains(array('B15'))) {
             return false;
         }
 
@@ -120,17 +120,17 @@ class SprintApa9292kt extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Htc());
+        return new Company(new Company\Caterpillar());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Sprint());
+        return new Company(new Company\Caterpillar());
     }
 
     /**
