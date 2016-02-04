@@ -29,6 +29,8 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4'),
             array('Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko'),
             array('revolt'),
+            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
+            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
         );
     }
 

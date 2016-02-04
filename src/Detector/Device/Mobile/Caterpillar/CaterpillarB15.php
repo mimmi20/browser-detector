@@ -90,6 +90,10 @@ class CaterpillarB15 extends AbstractDevice implements DeviceHasSpecificPlatform
             return false;
         }
 
+        if ($this->utils->checkIfContains(array('B15Q'))) {
+            return false;
+        }
+
         return true;
     }
 

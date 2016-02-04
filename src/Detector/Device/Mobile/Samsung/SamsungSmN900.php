@@ -95,7 +95,7 @@ class SamsungSmN900 extends AbstractDevice implements DeviceHasWurflKeyInterface
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('SM-N900A', 'SM-N9005', 'SM-N900V'))) {
+        if ($this->utils->checkIfContains(array('SM-N900A', 'SM-N9005', 'SM-N900V', 'SM-N9008V'))) {
             return false;
         }
 

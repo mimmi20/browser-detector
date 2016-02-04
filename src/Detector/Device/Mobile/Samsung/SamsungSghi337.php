@@ -53,7 +53,7 @@ class SamsungSghi337 extends AbstractDevice implements DeviceHasSpecificPlatform
         // device
         'code_name'              => 'SGH-I337',
         'model_extra_info'       => 'for AT&T',
-        'marketing_name'         => 'SGH-I337',
+        'marketing_name'         => 'Galaxy S4 (AT&T)',
         'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info

@@ -34,7 +34,6 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
-use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**

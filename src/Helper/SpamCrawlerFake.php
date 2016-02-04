@@ -391,7 +391,8 @@ class SpamCrawlerFake
             '6.2', '6.3', '6.4', '10.0'
         );
 
-        $doMatch = preg_match('/Windows NT ([\d\.]+)(;| ;|\))/', $this->useragent, $matches);
+        $doMatch = preg_match('/Windows NT ([\d\.]+)(;| ;|\))/', $this->useragent, $matches)
+            || preg_match('/Windows NT ([\d\.]+)$/', $this->useragent, $matches);
 
         if ($doMatch) {
             if ($this->utils->checkIfContains('anonym', true)) {

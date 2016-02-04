@@ -94,6 +94,9 @@ class Desktop
             'microsoft-cryptoapi',
             'pad-bot',
             'terra_101',
+            'butterfly',
+            'james bot',
+            'winhttp',
         );
 
         if ($this->utils->checkIfContains($noDesktops, true)) {
@@ -160,6 +163,8 @@ class Desktop
             'google pp default',
             'microsoft office',
             'nsplayer',
+            'msfrontpage',
+            'ms frontpage',
         );
 
         if (!$this->utils->checkIfContains($desktopCodes, true)) {

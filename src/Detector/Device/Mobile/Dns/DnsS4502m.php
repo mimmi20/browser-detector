@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cosmote;
+namespace BrowserDetector\Detector\Device\Mobile\Dns;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class DnsS4502m extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Xplore',
+        'code_name'              => 'S4502M',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xplore',
+        'marketing_name'         => 'S4502M',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,8 +69,8 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -86,7 +86,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Cosmote Xplore')) {
+        if (!$this->utils->checkIfContains('s4502m', true)) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cosmote());
+        return new Company(new Company\Dns());
     }
 
     /**
@@ -130,7 +130,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getBrand()
     {
-        return new Company(new Company\Cosmote());
+        return new Company(new Company\Dns());
     }
 
     /**

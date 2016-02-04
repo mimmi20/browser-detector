@@ -86,11 +86,11 @@ class SonyC6503XperiaZl extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonC6503', 'SonyC6503', 'C6503'))) {
+        if (!$this->utils->checkIfContains('C6503')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('SonyEricssonC6503v', 'SonyC6503v', 'C6503v'))) {
+        if ($this->utils->checkIfContains('C6503v')) {
             return false;
         }
 

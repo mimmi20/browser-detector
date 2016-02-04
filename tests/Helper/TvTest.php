@@ -47,6 +47,8 @@ class TvTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'),
             array('Mozilla/5.0 (Mobile; ALCATELOneTouch4012X/SVN 01010B; rv:18.1) Gecko/18.1 Firefox/18.1'),
             array('Mozilla/5.0 (PLAYSTATION 3; 2.00)'),
+            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
+            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
         );
     }
 }

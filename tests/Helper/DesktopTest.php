@@ -30,6 +30,10 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             array('Microsoft Office Excel 2013'),
             array('iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17'),
             array('Mozilla/5.0 (X11; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) wkhtmltoimage Safari/534.34'),
+            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
+            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
+            array('MSFrontPage/15.0'),
+            array('Mozilla/2.0 (compatible; MS FrontPage 5.0)'),
         );
     }
 
@@ -61,6 +65,9 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             array('TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
             array('TERRA_101 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
             array('Mozilla/5.0 (compatible; PAD-bot/9.0; +http://www.descargarprogramagratis.com/)'),
+            array('Mozilla/5.0 (Macintosh; Butterfly/1.0; +http://labs.topsy.com/butterfly/) Gecko/2009032608 Firefox/3.0.8'),
+            array('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6 - James BOT - WebCrawler http://cognitiveseo.com/bot.html'),
+            array('Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'),
         );
     }
 }

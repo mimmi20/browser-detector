@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cosmote;
+namespace BrowserDetector\Detector\Device\Mobile\Pipo;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class PipoPa101m extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Xplore',
+        'code_name'              => 'PA10.1M',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xplore',
+        'marketing_name'         => 'PA10.1M',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,8 +69,8 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'resolution_width'       => 1920,
+        'resolution_height'      => 1200,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -86,7 +86,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Cosmote Xplore')) {
+        if (!$this->utils->checkIfContains('TPC-PA10.1M')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,17 +120,17 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cosmote());
+        return new Company(new Company\Pipo());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Cosmote());
+        return new Company(new Company\Pipo());
     }
 
     /**

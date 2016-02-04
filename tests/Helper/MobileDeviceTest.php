@@ -52,6 +52,8 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'),
             array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'),
             array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
+            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
+            array('MSFrontPage/15.0'),
         );
     }
 }

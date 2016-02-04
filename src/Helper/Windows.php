@@ -95,7 +95,7 @@ class Windows
             return true;
         }
 
-        if (preg_match('/(DavClnt|revolt)/', $this->useragent)) {
+        if (preg_match('/(DavClnt|revolt|Microsoft Outlook)/', $this->useragent)) {
             return true;
         }
 

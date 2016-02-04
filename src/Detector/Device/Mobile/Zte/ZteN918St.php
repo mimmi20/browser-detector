@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cosmote;
+namespace BrowserDetector\Detector\Device\Mobile\Zte;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -36,13 +36,13 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
-/**
+/*
  * @category  BrowserDetector
  * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class ZteN918St extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Xplore',
+        'code_name'              => 'N918St',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xplore',
+        'marketing_name'         => 'V5S',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +69,10 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Cosmote Xplore')) {
+        if (!$this->utils->checkIfContains('N918St')) {
             return false;
         }
 
@@ -120,17 +120,17 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cosmote());
+        return new Company(new Company\Zte());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Cosmote());
+        return new Company(new Company\Zte());
     }
 
     /**

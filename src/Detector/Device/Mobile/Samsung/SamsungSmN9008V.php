@@ -28,13 +28,18 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cosmote;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaResult\Version;
+use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +47,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SamsungSmN9008V extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +56,9 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'              => 'Xplore',
+        'code_name'              => 'SM-N9008V',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xplore',
+        'marketing_name'         => 'Galaxy Note 3 Duos',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -63,16 +68,16 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
+        'physical_screen_width'  => 71,
+        'physical_screen_height' => 127,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 320,
+        'max_image_height'       => 400,
+        'resolution_width'       => 1080,
+        'resolution_height'      => 1920,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +91,7 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Cosmote Xplore')) {
+        if (!$this->utils->checkIfContains('SM-N9008V')) {
             return false;
         }
 
@@ -120,17 +125,17 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cosmote());
+        return new Company(new Company\Samsung());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Cosmote());
+        return new Company(new Company\Samsung());
     }
 
     /**
@@ -141,5 +146,41 @@ class CosmoteXplore extends AbstractDevice implements DeviceHasSpecificPlatformI
     public function detectOs()
     {
         return new AndroidOs($this->useragent, $this->logger);
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
+    {
+        $wurflKey = 'samsung_sm_n900_ver1_suban44n9008V';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Android Webkit':
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $wurflKey = 'samsung_sm_n900_ver1_suban44n9008V';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $wurflKey;
     }
 }

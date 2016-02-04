@@ -61,6 +61,9 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
             array('TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
             array('TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
+            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
+            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
+            array('MSFrontPage/15.0'),
         );
     }
 
@@ -112,6 +115,9 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
             array('TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
             array('TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
+            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
+            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
+            array('MSFrontPage/15.0'),
         );
     }
 
@@ -165,6 +171,9 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
             array('TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
             array('TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
+            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
+            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
+            array('MSFrontPage/15.0'),
         );
     }
 }
