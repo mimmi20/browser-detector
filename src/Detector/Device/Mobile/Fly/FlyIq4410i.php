@@ -28,11 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cubot;
+namespace BrowserDetector\Detector\Device\Mobile\Fly;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CubotGt99 extends AbstractDevice
+class FlyIq4410i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -49,9 +51,9 @@ class CubotGt99 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'GT99',
+        'code_name'              => 'IQ4410i',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT99',
+        'marketing_name'         => 'IQ4410i Quad Phoenix 2',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,14 +69,14 @@ class CubotGt99 extends AbstractDevice
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 540,
-        'resolution_height'      => 960,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -84,7 +86,7 @@ class CubotGt99 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT99')) {
+        if (!$this->utils->checkIfContains('Phoenix 2')) {
             return false;
         }
 
@@ -118,16 +120,26 @@ class CubotGt99 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Fly());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Fly());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

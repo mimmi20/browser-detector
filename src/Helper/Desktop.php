@@ -97,6 +97,7 @@ class Desktop
             'butterfly',
             'james bot',
             'winhttp',
+            'jobboerse',
         );
 
         if ($this->utils->checkIfContains($noDesktops, true)) {

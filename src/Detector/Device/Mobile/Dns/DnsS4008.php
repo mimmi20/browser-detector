@@ -28,11 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cubot;
+namespace BrowserDetector\Detector\Device\Mobile\Dns;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CubotGt99 extends AbstractDevice
+class DnsS4008 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -49,9 +51,9 @@ class CubotGt99 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'GT99',
+        'code_name'              => 'S4008',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT99',
+        'marketing_name'         => 'S4008',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,8 +69,8 @@ class CubotGt99 extends AbstractDevice
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 540,
-        'resolution_height'      => 960,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
@@ -84,7 +86,7 @@ class CubotGt99 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT99')) {
+        if (!$this->utils->checkIfContains('S4008')) {
             return false;
         }
 
@@ -118,7 +120,7 @@ class CubotGt99 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Dns());
     }
 
     /**
@@ -128,6 +130,16 @@ class CubotGt99 extends AbstractDevice
      */
     public function getBrand()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Dns());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

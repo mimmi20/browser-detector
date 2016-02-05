@@ -49,6 +49,7 @@ class TvTest extends \PHPUnit_Framework_TestCase
             array('Mozilla/5.0 (PLAYSTATION 3; 2.00)'),
             array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
             array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
+            array('Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'),
         );
     }
 }

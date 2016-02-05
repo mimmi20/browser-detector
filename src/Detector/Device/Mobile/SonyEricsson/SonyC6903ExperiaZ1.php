@@ -95,6 +95,10 @@ class SonyC6903ExperiaZ1 extends AbstractDevice implements DeviceHasWurflKeyInte
             return false;
         }
 
+        if ($this->utils->checkIfContains('C6902')) {
+            return false;
+        }
+
         return true;
     }
 

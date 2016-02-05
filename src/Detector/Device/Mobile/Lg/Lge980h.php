@@ -28,11 +28,16 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cubot;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaResult\Version;
+use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaMatcher\Engine\EngineInterface;
+use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +45,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CubotGt99 extends AbstractDevice
+class Lge980h extends AbstractDevice implements DeviceHasWurflKeyInterface
 {
     /**
      * the detected browser properties
@@ -49,9 +54,9 @@ class CubotGt99 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'GT99',
+        'code_name'              => 'E980h',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT99',
+        'marketing_name'         => 'Optimus G Pro',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,10 +72,10 @@ class CubotGt99 extends AbstractDevice
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 540,
-        'resolution_height'      => 960,
+        'resolution_width'       => 768,
+        'resolution_height'      => 1280,
         'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'colors'                 => 16777216,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -84,7 +89,7 @@ class CubotGt99 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT99')) {
+        if (!$this->utils->checkIfContains('LG-E980h')) {
             return false;
         }
 
@@ -118,16 +123,52 @@ class CubotGt99 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Lg());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Lg());
+    }
+
+    /**
+     * returns the WurflKey for the device
+     *
+     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param \UaMatcher\Os\OsInterface           $os
+     *
+     * @return string|null
+     */
+    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
+    {
+        $wurflKey = 'lg_e980_ver1';
+
+        $osVersion = $os->detectVersion()->getVersion(
+            Version::MAJORMINOR
+        );
+
+        switch ($browser->getName()) {
+            case 'Chrome':
+                switch ((float)$osVersion) {
+                    case 4.4:
+                        $wurflKey = 'lg_e980_ver1_suban44';
+                        break;
+                    default:
+                        // nothing to do here
+                        break;
+                }
+                break;
+            default:
+                // nothing to do here
+                break;
+        }
+
+        return $wurflKey;
     }
 }

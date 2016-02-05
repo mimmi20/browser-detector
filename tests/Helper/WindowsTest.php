@@ -50,6 +50,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
         return array(
             array('Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'),
             array('Microsoft Office Excel 2013'),
+            array('Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'),
         );
     }
 }

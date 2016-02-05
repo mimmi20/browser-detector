@@ -28,11 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cubot;
+namespace BrowserDetector\Detector\Device\Mobile\Xoro;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +43,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CubotGt99 extends AbstractDevice
+class XoroXor400250 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -49,9 +52,9 @@ class CubotGt99 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'GT99',
+        'code_name'              => 'ZP100',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT99',
+        'marketing_name'         => 'TelePAD 9A1',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -84,7 +87,7 @@ class CubotGt99 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT99')) {
+        if (!$this->utils->checkIfContains('TelePAD 9A1')) {
             return false;
         }
 
@@ -108,7 +111,7 @@ class CubotGt99 extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -118,16 +121,26 @@ class CubotGt99 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Xoro());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Xoro());
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

@@ -40,7 +40,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CubotGt99 extends AbstractDevice
+class CubotC7 extends AbstractDevice
 {
     /**
      * the detected browser properties
@@ -49,9 +49,9 @@ class CubotGt99 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'GT99',
+        'code_name'              => 'C7',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT99',
+        'marketing_name'         => 'C7',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -84,7 +84,7 @@ class CubotGt99 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT99')) {
+        if (!$this->utils->checkIfContains(' C7 ')) {
             return false;
         }
 

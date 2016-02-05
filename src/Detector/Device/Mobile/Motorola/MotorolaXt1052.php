@@ -53,7 +53,7 @@ class MotorolaXt1052 extends AbstractDevice implements DeviceHasSpecificPlatform
         // device
         'code_name'              => 'XT1052',
         'model_extra_info'       => 'For Europe',
-        'marketing_name'         => 'XT1052',
+        'marketing_name'         => 'Moto X',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

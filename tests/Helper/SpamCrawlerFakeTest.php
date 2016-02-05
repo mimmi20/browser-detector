@@ -64,6 +64,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
             array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
             array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
             array('MSFrontPage/15.0'),
+            array('Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'),
         );
     }
 
@@ -118,6 +119,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
             array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
             array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
             array('MSFrontPage/15.0'),
+            array('Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'),
         );
     }
 
@@ -174,6 +176,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
             array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
             array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
             array('MSFrontPage/15.0'),
+            array('Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'),
         );
     }
 }

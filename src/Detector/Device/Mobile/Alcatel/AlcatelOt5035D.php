@@ -53,7 +53,7 @@ class AlcatelOt5035D extends AbstractDevice implements DeviceHasSpecificPlatform
         // device
         'code_name'              => 'OT-5035D',
         'model_extra_info'       => null,
-        'marketing_name'         => 'One Touch X Pop',
+        'marketing_name'         => 'One Touch XPop',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

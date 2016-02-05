@@ -28,11 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Cubot;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +42,7 @@ use UaDeviceType\MobilePhone;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CubotGt99 extends AbstractDevice
+class Intego extends AbstractDevice implements DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -49,9 +51,9 @@ class CubotGt99 extends AbstractDevice
      */
     protected $properties = array(
         // device
-        'code_name'              => 'GT99',
+        'code_name'              => 'general Intego Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'GT99',
+        'marketing_name'         => 'general Intego Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -67,10 +69,10 @@ class CubotGt99 extends AbstractDevice
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 540,
-        'resolution_height'      => 960,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -84,7 +86,11 @@ class CubotGt99 extends AbstractDevice
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT99')) {
+        $phones = array(
+            'Intego',
+        );
+
+        if (!$this->utils->checkIfContains($phones)) {
             return false;
         }
 
@@ -108,7 +114,7 @@ class CubotGt99 extends AbstractDevice
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -118,16 +124,34 @@ class CubotGt99 extends AbstractDevice
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Intego());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Cubot());
+        return new Company(new Company\Intego());
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Intego');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Intego' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 }

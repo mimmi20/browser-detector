@@ -90,6 +90,10 @@ class SamsungSmG350 extends AbstractDevice implements DeviceHasSpecificPlatformI
             return false;
         }
 
+        if ($this->utils->checkIfContains('SM-G3502L')) {
+            return false;
+        }
+
         return true;
     }
 
