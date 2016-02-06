@@ -53,7 +53,7 @@ class CubeU51gt extends AbstractDevice implements DeviceHasSpecificPlatformInter
         // device
         'code_name'              => 'U51GT',
         'model_extra_info'       => null,
-        'marketing_name'         => 'U51GT',
+        'marketing_name'         => 'Talk 7',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info

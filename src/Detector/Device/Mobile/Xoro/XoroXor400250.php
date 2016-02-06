@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Xoro;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
 use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
@@ -52,7 +51,7 @@ class XoroXor400250 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     protected $properties = array(
         // device
-        'code_name'              => 'ZP100',
+        'code_name'              => 'Xor400250',
         'model_extra_info'       => null,
         'marketing_name'         => 'TelePAD 9A1',
         'has_qwerty_keyboard'    => true,

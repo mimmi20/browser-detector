@@ -110,7 +110,7 @@ class HtcDesire extends AbstractDevice implements DeviceHasWurflKeyInterface, De
             'Desire_500',
             'Desire 500',
             'Desire_516',
-            'Desire 516',
+            'Desire 816',
         );
 
         if ($this->utils->checkIfContains($specialHtcDesire)) {
