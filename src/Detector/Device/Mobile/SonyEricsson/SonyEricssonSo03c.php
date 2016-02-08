@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
@@ -47,7 +46,7 @@ use UaMatcher\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonMT11i extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class SonyEricssonSo03c extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -56,24 +55,24 @@ class SonyEricssonMT11i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     protected $properties = array(
         // device
-        'code_name'              => 'MT11i',
+        'code_name'              => 'SO-03C',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Xperia Neo V',
+        'marketing_name'         => 'Xperia ray',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://wap.sonyericsson.com/UAprof/MT11iR402.xml',
+        'uaprof'                 => null,
         'uaprof2'                => null,
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 44,
-        'rows'                   => 32,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
+        'physical_screen_width'  => null,
+        'physical_screen_height' => null,
+        'columns'                => null,
+        'rows'                   => null,
+        'max_image_width'        => null,
+        'max_image_height'       => null,
         'resolution_width'       => 480,
         'resolution_height'      => 854,
         'dual_orientation'       => true,
@@ -91,7 +90,7 @@ class SonyEricssonMT11i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonMT11i', 'MT11i'))) {
+        if (!$this->utils->checkIfContains('SO-03C')) {
             return false;
         }
 
@@ -159,27 +158,7 @@ class SonyEricssonMT11i extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
     {
-        $wurflKey = 'sonyericsson_mt11i_ver1';
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float)$osVersion) {
-                    case 4.0:
-                        $wurflKey = 'sonyericsson_mt11i_ver1_suban40i';
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
+        $wurflKey = 'sonyericsson_xperia_acro_ver1_sub02';
 
         return $wurflKey;
     }
