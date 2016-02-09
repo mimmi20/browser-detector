@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nec;
+namespace BrowserDetector\Detector\Device\Mobile\Nextway;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\Maemo;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class NextwayF10x extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,11 +51,11 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'N705i',
+        'code_name'              => 'F10X',
         'model_extra_info'       => null,
-        'marketing_name'         => 'N705i',
+        'marketing_name'         => 'F10X',
         'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
+        'pointing_method'        => 'unknown',
         // product info
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
@@ -86,7 +86,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('N705i'))) {
+        if (!$this->utils->checkIfContains('F10X')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,7 +120,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Nec());
+        return new Company(new Company\Nextway());
     }
 
     /**
@@ -130,7 +130,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company(new Company\Nec());
+        return new Company(new Company\Nextway());
     }
 
     /**
@@ -140,6 +140,6 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function detectOs()
     {
-        return new Maemo($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

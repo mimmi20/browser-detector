@@ -86,7 +86,7 @@ class MeizuM9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' M9 ')) {
+        if (!$this->utils->checkIfContains(array(' M9 ', 'meizu_m9'))) {
             return false;
         }
 

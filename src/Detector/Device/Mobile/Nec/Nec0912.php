@@ -61,9 +61,6 @@ class Nec0912 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'unknown',
         // product info
-        'Nec_feature_pack'       => 0,
-        'Nec_series'             => 0,
-        'Nec_edition'            => 0,
         'ununiqueness_handler'   => null,
         'uaprof'                 => null,
         'uaprof2'                => null,

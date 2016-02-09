@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nec;
+namespace BrowserDetector\Detector\Device\Mobile\Adspec;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\Maemo;
+use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AdspecAdTab7Lite extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'N705i',
+        'code_name'              => 'AdTab 7 Lite',
         'model_extra_info'       => null,
-        'marketing_name'         => 'N705i',
+        'marketing_name'         => 'AdTab 7 Lite',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -63,16 +63,16 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 854,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 18,
+        'rows'                   => 6,
+        'max_image_width'        => 120,
+        'max_image_height'       => 120,
+        'resolution_width'       => 128,
+        'resolution_height'      => 128,
         'dual_orientation'       => false,
-        'colors'                 => 16777216,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('N705i'))) {
+        if (!$this->utils->checkIfContains('AdTab 7 Lite')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,26 +120,26 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Nec());
+        return new Company(new Company\Adspec());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Nec());
+        return new Company(new Company\Adspec());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\Maemo
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Maemo($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }

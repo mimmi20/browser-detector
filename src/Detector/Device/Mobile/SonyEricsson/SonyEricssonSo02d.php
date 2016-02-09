@@ -124,7 +124,7 @@ class SonyEricssonSo02d extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getManufacturer()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Sony());
     }
 
     /**
@@ -134,7 +134,7 @@ class SonyEricssonSo02d extends AbstractDevice implements DeviceHasWurflKeyInter
      */
     public function getBrand()
     {
-        return new Company(new Company\SonyEricsson());
+        return new Company(new Company\Sony());
     }
 
     /**

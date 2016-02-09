@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nec;
+namespace BrowserDetector\Detector\Device\Mobile\Axgio;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\Maemo;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AxgioNeonN1 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,10 +51,10 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'N705i',
+        'code_name'              => 'Neon N1',
         'model_extra_info'       => null,
-        'marketing_name'         => 'N705i',
-        'has_qwerty_keyboard'    => true,
+        'marketing_name'         => 'Neon N1',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -63,16 +63,16 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 480,
-        'resolution_height'      => 854,
-        'dual_orientation'       => false,
-        'colors'                 => 16777216,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 300,
+        'max_image_height'       => 450,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('N705i'))) {
+        if (!$this->utils->checkIfContains('Neon-N1')) {
             return false;
         }
 
@@ -120,26 +120,26 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Nec());
+        return new Company(new Company\Axgio());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Nec());
+        return new Company(new Company\Axgio());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\Maemo
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new Maemo($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent, $this->logger);
     }
 }
