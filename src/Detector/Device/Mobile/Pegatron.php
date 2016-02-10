@@ -28,12 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Acer;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +44,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Pegatron extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +53,9 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S120',
+        'code_name'              => 'general Pegatron Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Liquid Metal',
+        'marketing_name'         => 'general Pegatron Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -86,11 +88,29 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Liquid MT', 'Liquid Metal'))) {
-            return false;
+        if ($this->utils->checkIfContains('Pegatron')) {
+            return true;
         }
 
-        return true;
+        return false;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pegatron');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Pegatron' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -120,7 +140,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\Pegatron());
     }
 
     /**
@@ -130,7 +150,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getBrand()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\Pegatron());
     }
 
     /**

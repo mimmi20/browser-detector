@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Acer;
+namespace BrowserDetector\Detector\Device\Mobile\Accent;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AccentTouareg83g extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S120',
+        'code_name'              => 'Touareg8 3G',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Liquid MT',
+        'marketing_name'         => 'Touareg8 3G',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -63,15 +63,15 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 28,
-        'rows'                   => 24,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 480,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
+        'physical_screen_width'  => 27,
+        'physical_screen_height' => 27,
+        'columns'                => 18,
+        'rows'                   => 6,
+        'max_image_width'        => 120,
+        'max_image_height'       => 120,
+        'resolution_width'       => 128,
+        'resolution_height'      => 128,
+        'dual_orientation'       => false,
         'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
@@ -86,7 +86,7 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Liquid MT'))) {
+        if (!$this->utils->checkIfContains('TOUAREG8_3G')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,7 +120,7 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\Accent());
     }
 
     /**
@@ -130,13 +130,13 @@ class AcerS120LiquidMT extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function getBrand()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\Accent());
     }
 
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {

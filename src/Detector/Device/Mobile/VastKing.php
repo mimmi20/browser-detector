@@ -28,12 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Acer;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +44,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class VastKing extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +53,9 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S120',
+        'code_name'              => 'general VastKing device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Liquid Metal',
+        'marketing_name'         => 'general VastKing device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -80,17 +82,21 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
     );
 
     /**
-     * checks if this device is able to handle the useragent
+     * detects the device name from the given user agent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return \UaMatcher\Device\DeviceInterface
      */
-    public function canHandle()
+    public function detectDevice()
     {
-        if (!$this->utils->checkIfContains(array('Liquid MT', 'Liquid Metal'))) {
-            return false;
-        }
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\VastKing');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'VastKing' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
 
-        return true;
+        return $chain->detect();
     }
 
     /**
@@ -110,7 +116,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,17 +126,17 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\VastKing());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\VastKing());
     }
 
     /**

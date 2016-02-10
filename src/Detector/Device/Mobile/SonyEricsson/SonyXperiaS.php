@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Acer;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SonyXperiaS extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S120',
+        'code_name'              => 'Xperia S',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Liquid Metal',
+        'marketing_name'         => 'Xperia S',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +69,10 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
+        'resolution_width'       => 720,
+        'resolution_height'      => 1280,
+        'dual_orientation'       => true,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Liquid MT', 'Liquid Metal'))) {
+        if (!$this->utils->checkIfContains('Xperia S')) {
             return false;
         }
 
@@ -120,17 +120,17 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\Sony());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\Sony());
     }
 
     /**

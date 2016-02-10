@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Acer;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
+use UaDeviceType\Tablet;
+use UaMatcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Globex extends AbstractDevice implements DeviceHasChildrenInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     protected $properties = array(
         // device
-        'code_name'              => 'S120',
+        'code_name'              => 'general Globex Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Liquid Metal',
+        'marketing_name'         => 'general Globex Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -86,7 +86,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Liquid MT', 'Liquid Metal'))) {
+        if (!$this->utils->checkIfContains('Globex')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,26 +120,34 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\Globex());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return \BrowserDetector\Detector\Company\AbstractCompany
      */
     public function getBrand()
     {
-        return new Company(new Company\Acer());
+        return new Company(new Company\Globex());
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * detects the device name from the given user agent
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaMatcher\Device\DeviceInterface
      */
-    public function detectOs()
+    public function detectDevice()
     {
-        return new AndroidOs($this->useragent, $this->logger);
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Globex');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Globex' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 }

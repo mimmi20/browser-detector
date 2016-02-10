@@ -32,6 +32,7 @@ namespace BrowserDetector\Detector\Factory\Device;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\GeneralMobile;
+use BrowserDetector\Detector\Device\Mobile\Accent;
 use BrowserDetector\Detector\Device\Mobile\Acer;
 use BrowserDetector\Detector\Device\Mobile\Adspec;
 use BrowserDetector\Detector\Device\Mobile\Advent;
@@ -89,10 +90,13 @@ use BrowserDetector\Detector\Device\Mobile\Fly;
 use BrowserDetector\Detector\Device\Mobile\Flytouch;
 use BrowserDetector\Detector\Device\Mobile\Fujitsu;
 use BrowserDetector\Detector\Device\Mobile\Geniatech;
+use BrowserDetector\Detector\Device\Mobile\Gfive;
 use BrowserDetector\Detector\Device\Mobile\Gigabyte;
 use BrowserDetector\Detector\Device\Mobile\Gionee;
+use BrowserDetector\Detector\Device\Mobile\Globex;
 use BrowserDetector\Detector\Device\Mobile\GoClever;
 use BrowserDetector\Detector\Device\Mobile\Gzone;
+use BrowserDetector\Detector\Device\Mobile\Haier;
 use BrowserDetector\Detector\Device\Mobile\Haipai;
 use BrowserDetector\Detector\Device\Mobile\Hannspree;
 use BrowserDetector\Detector\Device\Mobile\Hdc;
@@ -105,6 +109,7 @@ use BrowserDetector\Detector\Device\Mobile\Htm;
 use BrowserDetector\Detector\Device\Mobile\Huawei;
 use BrowserDetector\Detector\Device\Mobile\Hummer;
 use BrowserDetector\Detector\Device\Mobile\IconBit;
+use BrowserDetector\Detector\Device\Mobile\Imobile;
 use BrowserDetector\Detector\Device\Mobile\Impression;
 use BrowserDetector\Detector\Device\Mobile\Inew;
 use BrowserDetector\Detector\Device\Mobile\Intego;
@@ -172,6 +177,7 @@ use BrowserDetector\Detector\Device\Mobile\Panasonic;
 use BrowserDetector\Detector\Device\Mobile\Pandigital;
 use BrowserDetector\Detector\Device\Mobile\Pantech;
 use BrowserDetector\Detector\Device\Mobile\Pearl;
+use BrowserDetector\Detector\Device\Mobile\Pegatron;
 use BrowserDetector\Detector\Device\Mobile\Pentagram;
 use BrowserDetector\Detector\Device\Mobile\Perfeo;
 use BrowserDetector\Detector\Device\Mobile\Phicomm;
@@ -185,8 +191,10 @@ use BrowserDetector\Detector\Device\Mobile\Prestigio;
 use BrowserDetector\Detector\Device\Mobile\Pulid;
 use BrowserDetector\Detector\Device\Mobile\Qmobile;
 use BrowserDetector\Detector\Device\Mobile\Qumo;
+use BrowserDetector\Detector\Device\Mobile\Reeder;
 use BrowserDetector\Detector\Device\Mobile\Reellex;
 use BrowserDetector\Detector\Device\Mobile\Ritmix;
+use BrowserDetector\Detector\Device\Mobile\RoverPad;
 use BrowserDetector\Detector\Device\Mobile\Samsung;
 use BrowserDetector\Detector\Device\Mobile\Sanyo;
 use BrowserDetector\Detector\Device\Mobile\Senseit;
@@ -196,6 +204,7 @@ use BrowserDetector\Detector\Device\Mobile\Shiru;
 use BrowserDetector\Detector\Device\Mobile\Siemens;
 use BrowserDetector\Detector\Device\Mobile\Simvalley;
 use BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+use BrowserDetector\Detector\Device\Mobile\Spice;
 use BrowserDetector\Detector\Device\Mobile\Sprd;
 use BrowserDetector\Detector\Device\Mobile\Sprint;
 use BrowserDetector\Detector\Device\Mobile\Star;
@@ -215,12 +224,14 @@ use BrowserDetector\Detector\Device\Mobile\Toshiba;
 use BrowserDetector\Detector\Device\Mobile\TrekStor;
 use BrowserDetector\Detector\Device\Mobile\TriQ;
 use BrowserDetector\Detector\Device\Mobile\Triray;
+use BrowserDetector\Detector\Device\Mobile\TurboPad;
 use BrowserDetector\Detector\Device\Mobile\Twinovo;
 use BrowserDetector\Detector\Device\Mobile\Twz;
 use BrowserDetector\Detector\Device\Mobile\Ultrafone;
 use BrowserDetector\Detector\Device\Mobile\Umi;
 use BrowserDetector\Detector\Device\Mobile\United;
 use BrowserDetector\Detector\Device\Mobile\UtStarcom;
+use BrowserDetector\Detector\Device\Mobile\VastKing;
 use BrowserDetector\Detector\Device\Mobile\Vertex;
 use BrowserDetector\Detector\Device\Mobile\Videocon;
 use BrowserDetector\Detector\Device\Mobile\ViewSonic;
@@ -230,10 +241,12 @@ use BrowserDetector\Detector\Device\Mobile\Wexler;
 use BrowserDetector\Detector\Device\Mobile\Wiko;
 use BrowserDetector\Detector\Device\Mobile\Wolgang;
 use BrowserDetector\Detector\Device\Mobile\WonderMedia;
+use BrowserDetector\Detector\Device\Mobile\Woo;
 use BrowserDetector\Detector\Device\Mobile\Xiaomi;
 use BrowserDetector\Detector\Device\Mobile\Xolo;
 use BrowserDetector\Detector\Device\Mobile\Xoro;
 use BrowserDetector\Detector\Device\Mobile\Yarvik;
+use BrowserDetector\Detector\Device\Mobile\Yota;
 use BrowserDetector\Detector\Device\Mobile\Yuanda;
 use BrowserDetector\Detector\Device\Mobile\Yuandao;
 use BrowserDetector\Detector\Device\Mobile\Yusu;
@@ -270,6 +283,7 @@ class MobileFactory
             $device = new Nokia($useragent, $logger);
         } elseif (preg_match('/(ipad|iphone|ipod|like mac os x)/i', $useragent)
             && !preg_match('/windows phone/i', $useragent)
+            && !preg_match('/ adr /i', $useragent)
         ) {
             $device = new Apple($useragent, $logger);
         } elseif (preg_match('/samsung/i', $useragent)) {
@@ -312,7 +326,7 @@ class MobileFactory
             $device = new Zte($useragent, $logger);
         } elseif (preg_match('/(lenovo|ideatab|ideapad|smarttab)/i', $useragent)) {
             $device = new Lenovo($useragent, $logger);
-        } elseif (preg_match('/(acer|iconia)/i', $useragent)) {
+        } elseif (preg_match('/(acer|iconialLiquid)/i', $useragent)) {
             $device = new Acer($useragent, $logger);
         } elseif (preg_match('/PLAYSTATION/i', $useragent)) {
             $device = new SonyEricsson($useragent, $logger);
@@ -404,6 +418,12 @@ class MobileFactory
             $device = new Gzone($useragent, $logger);
         } elseif (preg_match('/reellex/i', $useragent)) {
             $device = new Reellex($useragent, $logger);
+        } elseif (preg_match('/spice/i', $useragent)) {
+            $device = new Spice($useragent, $logger);
+        } elseif (preg_match('/turbopad/i', $useragent)) {
+            $device = new TurboPad($useragent, $logger);
+        } elseif (preg_match('/haier/i', $useragent)) {
+            $device = new Haier($useragent, $logger);
         } elseif (preg_match('/sunstech/i', $useragent)) {
             $device = new Sunstech($useragent, $logger);
         } elseif (preg_match('/AOC/', $useragent)) {
@@ -416,6 +436,8 @@ class MobileFactory
             $device = new Vertex($useragent, $logger);
         } elseif (preg_match('/pantech/i', $useragent)) {
             $device = new Pantech($useragent, $logger);
+        } elseif (preg_match('/gfive/i', $useragent)) {
+            $device = new Gfive($useragent, $logger);
         } elseif (preg_match('/(HP|P160U|TouchPad|Pixi|palm|Blazer|cm_tenderloin)/i', $useragent)) {
             $device = new Hp($useragent, $logger);
         } elseif (preg_match('/iconbit/i', $useragent)) {
@@ -446,6 +468,10 @@ class MobileFactory
             $device = new Meizu($useragent, $logger);
         } elseif (preg_match('/allwinner/i', $useragent)) {
             $device = new AllWinner($useragent, $logger);
+        } elseif (preg_match('/accent/i', $useragent)) {
+            $device = new Accent($useragent, $logger);
+        } elseif (preg_match('/yota/i', $useragent)) {
+            $device = new Yota($useragent, $logger);
         } elseif (preg_match('/ainol/i', $useragent)) {
             $device = new Ainol($useragent, $logger);
         } elseif (preg_match('/supra/i', $useragent)) {
@@ -551,7 +577,7 @@ class MobileFactory
             $device = new Zenithink($useragent, $logger);
         } elseif (preg_match('/zte/i', $useragent)) {
             $device = new Zte($useragent, $logger);
-        } elseif (preg_match('/Fly/', $useragent)) {
+        } elseif (preg_match('/Fly/', $useragent) && !preg_match('/FlyFlow/', $useragent)) {
             $device = new Fly($useragent, $logger);
         } elseif (preg_match('/PocketBook/', $useragent)) {
             $device = new PocketBook($useragent, $logger);
@@ -567,6 +593,8 @@ class MobileFactory
             $device = new Twz($useragent, $logger);
         } elseif (preg_match('/irbis/i', $useragent)) {
             $device = new Irbis($useragent, $logger);
+        } elseif (preg_match('/i\-mobile/i', $useragent)) {
+            $device = new Imobile($useragent, $logger);
         } elseif (preg_match('/NGM/', $useragent)) {
             $device = new Ngm($useragent, $logger);
         } elseif (preg_match('/dino/i', $useragent)) {
@@ -601,6 +629,8 @@ class MobileFactory
             $device = new Digma($useragent, $logger);
         } elseif (preg_match('/axgio/i', $useragent)) {
             $device = new Axgio($useragent, $logger);
+        } elseif (preg_match('/roverpad/i', $useragent)) {
+            $device = new RoverPad($useragent, $logger);
         } elseif (preg_match('/zopo/i', $useragent)) {
             $device = new Zopo($useragent, $logger);
         } elseif (preg_match('/ultrafone/', $useragent)) {
@@ -609,6 +639,8 @@ class MobileFactory
             $device = new Malata($useragent, $logger);
         } elseif (preg_match('/starway/i', $useragent)) {
             $device = new Starway($useragent, $logger);
+        } elseif (preg_match('/pegatron/i', $useragent)) {
+            $device = new Pegatron($useragent, $logger);
         } elseif (preg_match('/logicom/i', $useragent)) {
             $device = new Logicom($useragent, $logger);
         } elseif (preg_match('/gigabyte/i', $useragent)) {
@@ -673,8 +705,12 @@ class MobileFactory
             $device = new Gionee($useragent, $logger);
         } elseif (preg_match('/highscreen/i', $useragent)) {
             $device = new Highscreen($useragent, $logger);
+        } elseif (preg_match('/reeder/i', $useragent)) {
+            $device = new Reeder($useragent, $logger);
         } elseif (preg_match('/nomi/i', $useragent)) {
             $device = new Nomi($useragent, $logger);
+        } elseif (preg_match('/globex/i', $useragent)) {
+            $device = new Globex($useragent, $logger);
         } elseif (preg_match('/AIS/', $useragent)) {
             $device = new Ais($useragent, $logger);
         } elseif (preg_match('/CIOtCUD/i', $useragent)) {
@@ -695,13 +731,17 @@ class MobileFactory
             $device = new Bq($useragent, $logger);
         } elseif (preg_match('/BQ \d{4}/', $useragent)) {
             $device = new Bq($useragent, $logger);
+        } elseif (preg_match('/bq Aquaris 5 HD/', $useragent)) {
+            $device = new Bq($useragent, $logger);
         } elseif (preg_match('/msi/i', $useragent) && !preg_match('/msie/i', $useragent)) {
             $device = new Msi($useragent, $logger);
         } elseif (preg_match('/Orange/', $useragent)) {
             $device = new Orange($useragent, $logger);
+        } elseif (preg_match('/vastking/i', $useragent)) {
+            $device = new VastKing($useragent, $logger);
         } elseif (preg_match('/myTAB/', $useragent)) {
             $device = new Mytab($useragent, $logger);
-        } elseif (preg_match('/(LOOX|UNO\_X10|Xelio 7|NEO\_QUAD10)/i', $useragent)) {
+        } elseif (preg_match('/(LOOX|UNO\_X10|Xelio 7|NEO\_QUAD10|IEOS\_QUAD)/i', $useragent)) {
             $device = new Odys($useragent, $logger);
         } elseif (preg_match('/iPh\d\,\d/', $useragent)) {
             $device = new Apple($useragent, $logger);
@@ -741,6 +781,8 @@ class MobileFactory
             $device = new TriQ($useragent, $logger);
         } elseif (preg_match('/ImPAD6213M_v2/', $useragent)) {
             $device = new Impression($useragent, $logger);
+        } elseif (preg_match('/(A10100|C07000)/', $useragent)) {
+            $device = new Nomi($useragent, $logger);
         } elseif (preg_match('/(C|D)\d{4}/', $useragent)) {
             $device = new SonyEricsson($useragent, $logger);
         } elseif (preg_match('/SGP\d{3}/', $useragent)) {
@@ -859,14 +901,14 @@ class MobileFactory
             $device = new Wiko($useragent, $logger);
         } elseif (preg_match('/T(X|G)\d{2}/', $useragent)) {
             $device = new Irbis($useragent, $logger);
-        } elseif (preg_match('/(X-pad LITE|X-pad STYLE)/', $useragent)) {
+        } elseif (preg_match('/YD\d{3}/', $useragent)) {
+            $device = new Yota($useragent, $logger);
+        } elseif (preg_match('/X\-pad/', $useragent)) {
             $device = new Texet($useragent, $logger);
         } elseif (preg_match('/ G3 /', $useragent)) {
             $device = new Lg($useragent, $logger);
         } elseif (preg_match('/(Zera_F|Boost IIse|Ice2|Prime S)/', $useragent)) {
             $device = new Highscreen($useragent, $logger);
-        } elseif (preg_match('/A10100/', $useragent)) {
-            $device = new Nomi($useragent, $logger);
         } elseif (preg_match('/iris708/', $useragent)) {
             $device = new Ais($useragent, $logger);
         } elseif (preg_match('/L930/', $useragent)) {
@@ -921,7 +963,7 @@ class MobileFactory
             $device = new Prestigio($useragent, $logger);
         } elseif (preg_match('/ N1 /', $useragent)) {
             $device = new Nokia($useragent, $logger);
-        } elseif (preg_match('/N9500/', $useragent)) {
+        } elseif (preg_match('/N\d{4}/', $useragent)) {
             $device = new Star($useragent, $logger);
         } elseif (preg_match('/(Rio R1|GSmart\_T4)/', $useragent)) {
             $device = new Gigabyte($useragent, $logger);
@@ -959,12 +1001,26 @@ class MobileFactory
             $device = new Adspec($useragent, $logger);
         } elseif (preg_match('/Plane 10\.3 3G PS1043MG/', $useragent)) {
             $device = new Digma($useragent, $logger);
-        } elseif (preg_match('/Neon\-N1/', $useragent)) {
+        } elseif (preg_match('/(Neon\-N1|WING\-W2)/', $useragent)) {
             $device = new Axgio($useragent, $logger);
         } elseif (preg_match('/T118/', $useragent)) {
             $device = new Twinovo($useragent, $logger);
-        } elseif (preg_match('/A10/', $useragent)) {
+        } elseif (preg_match('/ A10 /', $useragent)) {
             $device = new AllWinner($useragent, $logger);
+        } elseif (preg_match('/TOUAREG8_3G/', $useragent)) {
+            $device = new Accent($useragent, $logger);
+        } elseif (preg_match('/chagall/', $useragent)) {
+            $device = new Pegatron($useragent, $logger);
+        } elseif (preg_match('/Turbo X6/', $useragent)) {
+            $device = new TurboPad($useragent, $logger);
+        } elseif (preg_match('/HW\-W718/', $useragent)) {
+            $device = new Haier($useragent, $logger);
+        } elseif (preg_match('/Air A70/', $useragent)) {
+            $device = new RoverPad($useragent, $logger);
+        } elseif (preg_match('/SP\-6020 QUASAR/', $useragent)) {
+            $device = new Woo($useragent, $logger);
+        } elseif (preg_match('/M717R-HD/', $useragent)) {
+            $device = new VastKing($useragent, $logger);
         } elseif (preg_match('/CFNetwork/', $useragent)) {
             $device = new Apple($useragent, $logger);
         } else {
