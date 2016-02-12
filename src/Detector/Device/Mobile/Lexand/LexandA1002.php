@@ -28,12 +28,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Oppo;
+namespace BrowserDetector\Detector\Device\Mobile\Lexand;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class LexandA1002 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'X909',
+        'code_name'              => 'A1002',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Find 5 X909',
+        'marketing_name'         => 'A1002',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +69,10 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1080,
-        'resolution_height'      => 1920,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('x909', true)) {
+        if (!$this->utils->checkIfContains('A1002')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,7 +120,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Oppo());
+        return new Company(new Company\Lexand());
     }
 
     /**
@@ -130,7 +130,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company(new Company\Oppo());
+        return new Company(new Company\Lexand());
     }
 
     /**

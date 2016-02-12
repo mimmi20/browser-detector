@@ -28,13 +28,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Oppo;
+namespace BrowserDetector\Detector\Device\Mobile\Bliss;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class BlissPadB9712kb extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,10 +51,10 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'X909',
+        'code_name'              => 'Pad B9712KB',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Find 5 X909',
-        'has_qwerty_keyboard'    => true,
+        'marketing_name'         => 'Pad B9712KB',
+        'has_qwerty_keyboard'    => false,
         'pointing_method'        => 'touchscreen',
         // product info
         'ununiqueness_handler'   => null,
@@ -63,16 +63,16 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
         'uaprof3'                => null,
         'unique'                 => true,
         // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 1080,
-        'resolution_height'      => 1920,
+        'physical_screen_width'  => 40,
+        'physical_screen_height' => 60,
+        'columns'                => 25,
+        'rows'                   => 21,
+        'max_image_width'        => 300,
+        'max_image_height'       => 450,
+        'resolution_width'       => 320,
+        'resolution_height'      => 480,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 65536,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,7 +86,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('x909', true)) {
+        if (!$this->utils->checkIfContains('Pad B9712KB')) {
             return false;
         }
 
@@ -110,7 +110,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getDeviceType()
     {
-        return new MobilePhone();
+        return new Tablet();
     }
 
     /**
@@ -120,17 +120,17 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Oppo());
+        return new Company(new Company\Bliss());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Oppo());
+        return new Company(new Company\Bliss());
     }
 
     /**

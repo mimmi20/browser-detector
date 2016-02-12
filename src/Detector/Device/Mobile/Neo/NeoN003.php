@@ -28,7 +28,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Oppo;
+namespace BrowserDetector\Detector\Device\Mobile\Neo;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
@@ -42,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class NeoN003 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +51,9 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'X909',
+        'code_name'              => 'N003',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Find 5 X909',
+        'marketing_name'         => 'N003',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,14 +69,14 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1080,
-        'resolution_height'      => 1920,
+        'resolution_width'       => 1024,
+        'resolution_height'      => 600,
         'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'colors'                 => 65500,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => false,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => false,
     );
 
     /**
@@ -86,7 +86,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('x909', true)) {
+        if (!$this->utils->checkIfContains('1080P-N003')) {
             return false;
         }
 
@@ -120,7 +120,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Oppo());
+        return new Company(new Company\Neo());
     }
 
     /**
@@ -130,7 +130,7 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getBrand()
     {
-        return new Company(new Company\Oppo());
+        return new Company(new Company\Neo());
     }
 
     /**

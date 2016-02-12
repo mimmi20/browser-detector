@@ -28,12 +28,14 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Oppo;
+namespace BrowserDetector\Detector\Device\Mobile;
 
+use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Os\AndroidOs;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
+use UaMatcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
@@ -42,7 +44,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Telsda extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the detected browser properties
@@ -51,9 +53,9 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     protected $properties = array(
         // device
-        'code_name'              => 'X909',
+        'code_name'              => 'general Telsda Device',
         'model_extra_info'       => null,
-        'marketing_name'         => 'Find 5 X909',
+        'marketing_name'         => 'general Telsda Device',
         'has_qwerty_keyboard'    => true,
         'pointing_method'        => 'touchscreen',
         // product info
@@ -69,10 +71,10 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
         'rows'                   => null,
         'max_image_width'        => null,
         'max_image_height'       => null,
-        'resolution_width'       => 1080,
-        'resolution_height'      => 1920,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
+        'resolution_width'       => null,
+        'resolution_height'      => null,
+        'dual_orientation'       => null,
+        'colors'                 => null,
         // sms
         'sms_enabled'            => true,
         // chips
@@ -86,11 +88,29 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('x909', true)) {
-            return false;
+        if ($this->utils->checkIfContains('Telsda')) {
+            return true;
         }
 
-        return true;
+        return false;
+    }
+
+    /**
+     * detects the device name from the given user agent
+     *
+     * @return \UaMatcher\Device\DeviceInterface
+     */
+    public function detectDevice()
+    {
+        $chain = new Chain();
+        $chain->setUserAgent($this->useragent);
+        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Telsda');
+        $chain->setDirectory(
+            __DIR__ . DIRECTORY_SEPARATOR . 'Telsda' . DIRECTORY_SEPARATOR
+        );
+        $chain->setDefaultHandler($this);
+
+        return $chain->detect();
     }
 
     /**
@@ -120,17 +140,17 @@ class OppoX909 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Oppo());
+        return new Company(new Company\Telsda());
     }
 
     /**
      * returns the type of the current device
      *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
+     * @return \UaMatcher\Company\CompanyInterface
      */
     public function getBrand()
     {
-        return new Company(new Company\Oppo());
+        return new Company(new Company\Telsda());
     }
 
     /**
