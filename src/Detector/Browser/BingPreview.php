@@ -87,7 +87,7 @@ class BingPreview extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getName()
     {
-        return 'BingPreview';
+        return 'Bing Preview';
     }
 
     /**

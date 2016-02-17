@@ -232,7 +232,7 @@ use BrowserDetector\Detector\Browser\GoogleAdsbotMobile;
 use BrowserDetector\Detector\Browser\GoogleAdSenseBot;
 use BrowserDetector\Detector\Browser\GoogleAdsenseSnapshot;
 use BrowserDetector\Detector\Browser\GoogleAdwordsDisplayAdsWebRender;
-use BrowserDetector\Detector\Browser\GoogleApp;
+use BrowserDetector\Detector\Browser\GoogleSearchApp;
 use BrowserDetector\Detector\Browser\Googlebot;
 use BrowserDetector\Detector\Browser\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\GoogleDesktop;
@@ -421,6 +421,7 @@ use BrowserDetector\Detector\Browser\Nichrome;
 use BrowserDetector\Detector\Browser\NikiBot;
 use BrowserDetector\Detector\Browser\NokiaBrowser;
 use BrowserDetector\Detector\Browser\NokiaProxyBrowser;
+use BrowserDetector\Detector\Browser\Nutch;
 use BrowserDetector\Detector\Browser\Obot;
 use BrowserDetector\Detector\Browser\OktaMobileApp;
 use BrowserDetector\Detector\Browser\Omniweb;
@@ -612,6 +613,7 @@ use BrowserDetector\Detector\Browser\UcBrowserHd;
 use BrowserDetector\Detector\Browser\Uipbot;
 use BrowserDetector\Detector\Browser\UmBot;
 use BrowserDetector\Detector\Browser\Unisterbot;
+use BrowserDetector\Detector\Browser\UnisterTesting;
 use BrowserDetector\Detector\Browser\UnityWebPlayer;
 use BrowserDetector\Detector\Browser\UniventionCorporateServer;
 use BrowserDetector\Detector\Browser\UniversalFeedParser;
@@ -940,6 +942,8 @@ class BrowserFactory
             $browser = new MicrosoftOutlook($agent, $logger);
         } elseif (preg_match('/microsoft office mobile/i', $agent)) {
             $browser = new MicrosoftOffice($agent, $logger);
+        } elseif (preg_match('/MSOffice/', $agent)) {
+            $browser = new MicrosoftOffice($agent, $logger);
         } elseif (preg_match('/Microsoft Office Protocol Discovery/', $agent)) {
             $browser = new MicrosoftOfficeProtocolDiscovery($agent, $logger);
         } elseif (preg_match('/excel/i', $agent)) {
@@ -1133,7 +1137,7 @@ class BrowserFactory
         } elseif (preg_match('/(twitter for i)/i', $agent)) {
             $browser = new TwitterApp($agent, $logger);
         } elseif (preg_match('/GSA/', $agent)) {
-            $browser = new GoogleApp($agent, $logger);
+            $browser = new GoogleSearchApp($agent, $logger);
         } elseif (preg_match('/QtCarBrowser/', $agent)) {
             $browser = new ModelsBrowser($agent, $logger);
         } elseif (preg_match('/Qt/', $agent)) {
@@ -1780,7 +1784,9 @@ class BrowserFactory
         } elseif (preg_match('/^Mozilla\/5\.0$/', $agent)) {
             $browser = new UnknownBrowser($agent, $logger);
         } elseif (preg_match('/^Mozilla\/(\d)/', $agent, $matches)) {
-            if (isset($matches[1]) && $matches[1] < 5) {
+            if (isset($matches[1]) && $matches[1] >= 4 && !preg_match('/gecko/i', $agent)) {
+                $browser = new UnknownBrowser($agent, $logger);
+            } elseif (isset($matches[1]) && $matches[1] < 5) {
                 $browser = new Netscape($agent, $logger);
             } else {
                 $browser = new Mozilla($agent, $logger);
@@ -1823,6 +1829,8 @@ class BrowserFactory
             $browser = new RankFlex($agent, $logger);
         } elseif (preg_match('/domnutch/i', $agent)) {
             $browser = new Domnutch($agent, $logger);
+        } elseif (preg_match('/nutch/i', $agent)) {
+            $browser = new Nutch($agent, $logger);
         } elseif (preg_match('/discovered/i', $agent)) {
             $browser = new DiscoverEd($agent, $logger);
         } elseif (preg_match('/boardreader favicon fetcher/i', $agent)) {
@@ -2170,7 +2178,7 @@ class BrowserFactory
         } elseif (preg_match('/(AtomicBrowser|AtomicLite)/', $agent)) {
             $browser = new AtomicBrowser($agent, $logger);
         } elseif (preg_match('/Google/', $agent)) {
-            $browser = new GoogleApp($agent, $logger);
+            $browser = new GoogleSearchApp($agent, $logger);
         } elseif (preg_match('/Perfect%20Browser/', $agent)) {
             $browser = new PerfectBrowser($agent, $logger);
         } elseif (preg_match('/Reeder/', $agent)) {
@@ -2207,6 +2215,8 @@ class BrowserFactory
             $browser = new RokuDvp($agent, $logger);
         } elseif (preg_match('/java/i', $agent)) {
             $browser = new JavaStandardLibrary($agent, $logger);
+        } elseif (preg_match('/(unister\-test|unistertesting|unister\-https\-test)/i', $agent)) {
+            $browser = new UnisterTesting($agent, $logger);
         } elseif (preg_match('/^12345/i', $agent)) {
             $browser = new Bot12345($agent, $logger);
         } else {
