@@ -108,10 +108,10 @@ class ResultFactory implements ResultFactoryInterface
                         $value = get_class($os);
                         break;
                     case 'manufacturer_name':
-                        $value = $result->getDeviceManufacturer()->name;
+                        $value = $result->getDeviceManufacturer()->getName();
                         break;
                     case 'brand_name':
-                        $value = $result->getDeviceBrand()->brandname;
+                        $value = $result->getDeviceBrand()->getBrandName();
                         break;
                     case 'code_name':
                         $value = $result->getDeviceName();
@@ -206,22 +206,24 @@ class ResultFactory implements ResultFactoryInterface
                         $value = $detector->getCpu();
                         break;
                     case 'mobile_browser_manufacturer':
-                        $value = $browser->getManufacturer();
+                        /** @var \UaMatcher\Company\CompanyInterface $company */
+                        $company = $browser->getManufacturer();
 
-                        if (!($value instanceof AbstractCompany)) {
-                            $value = new UnknownCompany();
+                        if (!($company instanceof AbstractCompany)) {
+                            $company = new UnknownCompany();
                         }
 
-                        $value = $value->name;
+                        $value = $company->getName();
                         break;
                     case 'mobile_browser_brand_name':
-                        $value = $browser->getManufacturer();
+                        /** @var \UaMatcher\Company\CompanyInterface $company */
+                        $company = $browser->getManufacturer();
 
-                        if (!($value instanceof AbstractCompany)) {
-                            $value = new UnknownCompany();
+                        if (!($company instanceof AbstractCompany)) {
+                            $company = new UnknownCompany();
                         }
 
-                        $value = $value->brandname;
+                        $value = $company->getBrandName();
                         break;
                     case 'is_bot':
                     case 'controlcap_is_robot':
@@ -274,40 +276,44 @@ class ResultFactory implements ResultFactoryInterface
                         $value = $os->detectVersion();
                         break;
                     case 'device_os_manufacturer':
-                        $value = $os->getManufacturer();
+                        /** @var \UaMatcher\Company\CompanyInterface $company */
+                        $company = $os->getManufacturer();
 
-                        if (!($value instanceof AbstractCompany)) {
-                            $value = new UnknownCompany();
+                        if (!($company instanceof AbstractCompany)) {
+                            $company = new UnknownCompany();
                         }
 
-                        $value = $value->name;
+                        $value = $company->getName();
                         break;
                     case 'device_os_brand_name':
-                        $value = $os->getManufacturer();
+                        /** @var \UaMatcher\Company\CompanyInterface $company */
+                        $company = $os->getManufacturer();
 
-                        if (!($value instanceof AbstractCompany)) {
-                            $value = new UnknownCompany();
+                        if (!($company instanceof AbstractCompany)) {
+                            $company = new UnknownCompany();
                         }
 
-                        $value = $value->brandname;
+                        $value = $company->getBrandName();
                         break;
                     case 'renderingengine_manufacturer':
-                        $value = $engine->getManufacturer();
+                        /** @var \UaMatcher\Company\CompanyInterface $company */
+                        $company = $engine->getManufacturer();
 
-                        if (!($value instanceof AbstractCompany)) {
-                            $value = new UnknownCompany();
+                        if (!($company instanceof AbstractCompany)) {
+                            $company = new UnknownCompany();
                         }
 
-                        $value = $value->name;
+                        $value = $company->getName();
                         break;
                     case 'renderingengine_brand_name':
-                        $value = $engine->getManufacturer();
+                        /** @var \UaMatcher\Company\CompanyInterface $company */
+                        $company = $engine->getManufacturer();
 
-                        if (!($value instanceof AbstractCompany)) {
-                            $value = new UnknownCompany();
+                        if (!($company instanceof AbstractCompany)) {
+                            $company = new UnknownCompany();
                         }
 
-                        $value = $value->brandname;
+                        $value = $company->getBrandName();
                         break;
                     case 'renderingengine_version':
                         $value = $engine->detectVersion();

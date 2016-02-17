@@ -34,7 +34,6 @@ use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
-use UaMatcher\Version\VersionInterface;
 use Wurfl\WurflConstants;
 use Psr\Log\LoggerInterface;
 
