@@ -36,6 +36,7 @@ use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use Psr\Log\LoggerInterface;
 use UaBrowserType\TypeInterface;
 use UaBrowserType\Unknown;
+use UaMatcher\Company\CompanyInterface;
 use UaResult\Version;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserInterface;
@@ -625,7 +626,7 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
     {
         $value = $this->device->getManufacturer();
 
-        if (!($value instanceof AbstractCompany)) {
+        if (!($value instanceof CompanyInterface)) {
             $value = new Company(new UnknownCompany());
         }
 
@@ -640,7 +641,7 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
     {
         $value = $this->device->getBrand();
 
-        if (!($value instanceof AbstractCompany)) {
+        if (!($value instanceof CompanyInterface)) {
             $value = new Company(new UnknownCompany());
         }
 

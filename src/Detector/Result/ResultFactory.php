@@ -31,12 +31,12 @@
 namespace BrowserDetector\Detector\Result;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Company\AbstractCompany;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use BrowserDetector\Detector\Cpu;
 use Psr\Log\LoggerInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Company\CompanyInterface;
 use UaMatcher\Device\DeviceHasVersionInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use UaMatcher\Device\DeviceInterface;
@@ -210,7 +210,7 @@ class ResultFactory implements ResultFactoryInterface
                         /** @var \UaMatcher\Company\CompanyInterface $company */
                         $company = $browser->getManufacturer();
 
-                        if (!($company instanceof AbstractCompany)) {
+                        if (!($company instanceof CompanyInterface)) {
                             $company = new Company(new UnknownCompany());
                         }
 
@@ -220,7 +220,7 @@ class ResultFactory implements ResultFactoryInterface
                         /** @var \UaMatcher\Company\CompanyInterface $company */
                         $company = $browser->getManufacturer();
 
-                        if (!($company instanceof AbstractCompany)) {
+                        if (!($company instanceof CompanyInterface)) {
                             $company = new Company(new UnknownCompany());
                         }
 
@@ -280,7 +280,7 @@ class ResultFactory implements ResultFactoryInterface
                         /** @var \UaMatcher\Company\CompanyInterface $company */
                         $company = $os->getManufacturer();
 
-                        if (!($company instanceof AbstractCompany)) {
+                        if (!($company instanceof CompanyInterface)) {
                             $company = new Company(new UnknownCompany());
                         }
 
@@ -290,7 +290,7 @@ class ResultFactory implements ResultFactoryInterface
                         /** @var \UaMatcher\Company\CompanyInterface $company */
                         $company = $os->getManufacturer();
 
-                        if (!($company instanceof AbstractCompany)) {
+                        if (!($company instanceof CompanyInterface)) {
                             $company = new Company(new UnknownCompany());
                         }
 
@@ -300,7 +300,7 @@ class ResultFactory implements ResultFactoryInterface
                         /** @var \UaMatcher\Company\CompanyInterface $company */
                         $company = $engine->getManufacturer();
 
-                        if (!($company instanceof AbstractCompany)) {
+                        if (!($company instanceof CompanyInterface)) {
                             $company = new Company(new UnknownCompany());
                         }
 
@@ -310,7 +310,7 @@ class ResultFactory implements ResultFactoryInterface
                         /** @var \UaMatcher\Company\CompanyInterface $company */
                         $company = $engine->getManufacturer();
 
-                        if (!($company instanceof AbstractCompany)) {
+                        if (!($company instanceof CompanyInterface)) {
                             $company = new Company(new UnknownCompany());
                         }
 
