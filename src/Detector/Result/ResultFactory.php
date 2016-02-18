@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Result;
 
+use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Company\AbstractCompany;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use BrowserDetector\Detector\Cpu;
@@ -210,7 +211,7 @@ class ResultFactory implements ResultFactoryInterface
                         $company = $browser->getManufacturer();
 
                         if (!($company instanceof AbstractCompany)) {
-                            $company = new UnknownCompany();
+                            $company = new Company(new UnknownCompany());
                         }
 
                         $value = $company->getName();
@@ -220,7 +221,7 @@ class ResultFactory implements ResultFactoryInterface
                         $company = $browser->getManufacturer();
 
                         if (!($company instanceof AbstractCompany)) {
-                            $company = new UnknownCompany();
+                            $company = new Company(new UnknownCompany());
                         }
 
                         $value = $company->getBrandName();
@@ -280,7 +281,7 @@ class ResultFactory implements ResultFactoryInterface
                         $company = $os->getManufacturer();
 
                         if (!($company instanceof AbstractCompany)) {
-                            $company = new UnknownCompany();
+                            $company = new Company(new UnknownCompany());
                         }
 
                         $value = $company->getName();
@@ -290,7 +291,7 @@ class ResultFactory implements ResultFactoryInterface
                         $company = $os->getManufacturer();
 
                         if (!($company instanceof AbstractCompany)) {
-                            $company = new UnknownCompany();
+                            $company = new Company(new UnknownCompany());
                         }
 
                         $value = $company->getBrandName();
@@ -300,7 +301,7 @@ class ResultFactory implements ResultFactoryInterface
                         $company = $engine->getManufacturer();
 
                         if (!($company instanceof AbstractCompany)) {
-                            $company = new UnknownCompany();
+                            $company = new Company(new UnknownCompany());
                         }
 
                         $value = $company->getName();
@@ -310,7 +311,7 @@ class ResultFactory implements ResultFactoryInterface
                         $company = $engine->getManufacturer();
 
                         if (!($company instanceof AbstractCompany)) {
-                            $company = new UnknownCompany();
+                            $company = new Company(new UnknownCompany());
                         }
 
                         $value = $company->getBrandName();

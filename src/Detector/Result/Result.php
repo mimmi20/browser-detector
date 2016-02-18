@@ -30,6 +30,7 @@
 
 namespace BrowserDetector\Detector\Result;
 
+use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Company\AbstractCompany;
 use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use Psr\Log\LoggerInterface;
@@ -625,7 +626,7 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
         $value = $this->device->getManufacturer();
 
         if (!($value instanceof AbstractCompany)) {
-            $value = new UnknownCompany();
+            $value = new Company(new UnknownCompany());
         }
 
         return $value;
@@ -640,7 +641,7 @@ class Result extends \UaResult\Result implements ResultInterface, \Serializable
         $value = $this->device->getBrand();
 
         if (!($value instanceof AbstractCompany)) {
-            $value = new UnknownCompany();
+            $value = new Company(new UnknownCompany());
         }
 
         return $value;
