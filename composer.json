@@ -53,9 +53,9 @@
   "require-dev": {
     "phpunit/phpunit": "*",
     "monolog/monolog": "~1",
-    "mikey179/vfsStream": "dev-master",
+    "mikey179/vfsStream": "1.3.*",
     "squizlabs/php_codesniffer": "2.*",
-    "fabpot/php-cs-fixer": "*",
+    "fabpot/php-cs-fixer": "~1.11",
     "mimmi20/ua-data-mapper": "~1.1"
   },
   "autoload": {
