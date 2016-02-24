@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,12 +37,12 @@ use BrowserDetector\Detector\Engine\Presto;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Transcoder;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaResult\Version;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInter
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInter
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -76,11 +77,11 @@ class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Opera Mini', 'OPiOS'))) {
+        if (!$this->utils->checkIfContains(['Opera Mini', 'OPiOS'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('ucweb', 'uc browser', 'ucbrowser'), true)) {
+        if ($this->utils->checkIfContains(['ucweb', 'uc browser', 'ucbrowser'], true)) {
             return false;
         }
 
@@ -177,7 +178,7 @@ class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInter
             return $detector->setVersion($matches[1]);
         }
 
-        $searches = array('OPiOS');
+        $searches = ['OPiOS'];
 
         return $detector->detectVersion($searches);
     }
@@ -185,7 +186,7 @@ class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInter
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -202,7 +203,7 @@ class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInter
      */
     public function getEngine(OsInterface $os = null)
     {
-        if (null !== $os && in_array($os->getName(), array('iOS'))) {
+        if (null !== $os && in_array($os->getName(), ['iOS'])) {
             $engine = new Webkit($this->useragent, $this->logger);
         } elseif ($this->utils->checkIfContains('WebKit')) {
             $engine = new Blink($this->useragent, $this->logger);

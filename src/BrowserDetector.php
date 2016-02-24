@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -55,19 +56,19 @@ use WurflCache\Adapter\AdapterInterface;
  * Browser Detection class
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class BrowserDetector
 {
-    const INTERFACE_INTERNAL     = 1;
-    const INTERFACE_BROWSCAP_INI = 2;
-    const INTERFACE_WURFL_FILE   = 3;
-    const INTERFACE_WURFL_CLOUD  = 4;
-    const INTERFACE_UAPARSER     = 5;
-    const INTERFACE_UASPARSER    = 6;
+    const INTERFACE_INTERNAL           = 1;
+    const INTERFACE_BROWSCAP_INI       = 2;
+    const INTERFACE_WURFL_FILE         = 3;
+    const INTERFACE_WURFL_CLOUD        = 4;
+    const INTERFACE_UAPARSER           = 5;
+    const INTERFACE_UASPARSER          = 6;
     const INTERFACE_BROWSCAP_CROSSJOIN = 7;
 
     /**
@@ -105,7 +106,7 @@ class BrowserDetector
      * Gets the information about the browser by User Agent
      *
      * @param string|array|\Wurfl\Request\GenericRequest $request
-     * @param boolean                                    $forceDetect if TRUE a possible cache hit is ignored
+     * @param bool                                       $forceDetect if TRUE a possible cache hit is ignored
      *
      * @return \BrowserDetector\Detector\Result\Result
      */

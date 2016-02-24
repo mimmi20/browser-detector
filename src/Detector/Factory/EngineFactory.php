@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,16 +33,16 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
-use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * Browser detection class
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
@@ -62,7 +63,7 @@ class EngineFactory implements FactoryInterface
         $utils = new Utils();
         $utils->setUserAgent($agent);
 
-        if (null !== $os && in_array($os->getName(), array('iOS'))) {
+        if (null !== $os && in_array($os->getName(), ['iOS'])) {
             $engineKey = 'Webkit';
         } elseif ($utils->checkIfContains('Edge')) {
             $engineKey = 'Edge';
@@ -92,7 +93,7 @@ class EngineFactory implements FactoryInterface
         } elseif (preg_match('/(KHTML|Konqueror)/', $agent)) {
             $engineKey = 'Khtml';
         } elseif (preg_match('/(tasman)/i', $agent)
-            || $utils->checkIfContainsAll(array('MSIE', 'Mac_PowerPC'))
+            || $utils->checkIfContainsAll(['MSIE', 'Mac_PowerPC'])
         ) {
             $engineKey = 'Tasman';
         } elseif (preg_match('/(Presto|Opera)/', $agent)) {
@@ -100,7 +101,7 @@ class EngineFactory implements FactoryInterface
         } elseif (preg_match('/(Gecko|Firefox)/', $agent)) {
             $engineKey = 'Gecko';
         } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $agent)
-            && !$utils->checkIfContains(array('Kindle'))
+            && !$utils->checkIfContains(['Kindle'])
         ) {
             $engineKey = 'NetFront';
         } elseif ($utils->checkIfContains('BlackBerry')) {

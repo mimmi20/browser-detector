@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,7 +37,7 @@ use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -47,7 +48,7 @@ class MicrosoftFrontPage extends MicrosoftOffice
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -62,7 +63,7 @@ class MicrosoftFrontPage extends MicrosoftOffice
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -75,7 +76,7 @@ class MicrosoftFrontPage extends MicrosoftOffice
             return false;
         }
 
-        $isNotReallyFrontPage = array(
+        $isNotReallyFrontPage = [
             // using also the Trident rendering engine
             'Maxthon',
             'MxBrowser',
@@ -93,8 +94,8 @@ class MicrosoftFrontPage extends MicrosoftOffice
             'Linux',
             'IEMobile',
             'BlackBerry',
-            'WebTV'
-        );
+            'WebTV',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyFrontPage)) {
             return false;
@@ -170,15 +171,15 @@ class MicrosoftFrontPage extends MicrosoftOffice
             return (string) $version;
         }
 
-        if (15 == (int) $version) {
+        if (15 === (int) $version) {
             return '2013';
         }
 
-        if (14 == (int) $version) {
+        if (14 === (int) $version) {
             return '2010';
         }
 
-        if (12 == (int) $version) {
+        if (12 === (int) $version) {
             return '2007';
         }
 
@@ -188,7 +189,7 @@ class MicrosoftFrontPage extends MicrosoftOffice
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

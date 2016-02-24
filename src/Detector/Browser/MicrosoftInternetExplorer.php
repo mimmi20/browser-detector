@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,22 +34,22 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserDependsOnEngineInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface, BrowserDependsOnEngineInterface
 {
-    private $patterns = array(
+    private $patterns = [
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',
         '/Mozilla\/5\.0.*\(.*Trident\/7\.0.*rv\:11\.0.*\) like Gecko.*/'                       => '11.0',
         '/Mozilla\/5\.0.*\(.*MSIE 10\.0.*/'                                                    => '10.0',
@@ -67,15 +68,15 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
         '/Mozilla\/(4|5)\.0 \(.*MSIE 4\.0.*/'                                                  => '4.0',
         '/Mozilla\/.*\(.*MSIE 3\..*/'                                                          => '3.0',
         '/Mozilla\/.*\(.*MSIE 2\..*/'                                                          => '2.0',
-        '/Mozilla\/.*\(.*MSIE 1\..*/'                                                          => '1.0'
-    );
+        '/Mozilla\/.*\(.*MSIE 1\..*/'                                                          => '1.0',
+    ];
 
     /**
      * the detected browser properties
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -90,7 +91,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -99,7 +100,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'MSIE', 'Trident', 'Edge'))) {
+        if (!$this->utils->checkIfContains(['Mozilla/', 'MSIE', 'Trident', 'Edge'])) {
             return false;
         }
 
@@ -107,7 +108,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
             return false;
         }
 
-        $isNotReallyAnIE = array(
+        $isNotReallyAnIE = [
             'presto',
             // using also the Trident rendering engine
             'crazy browser',
@@ -144,14 +145,14 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
             '360spider',
             'haosouspider',
             'lightspeedsystems',
-        );
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnIE, true)) {
             return false;
         }
 
         if ($this->utils->checkIfContains('Gecko')
-            && !$this->utils->checkIfContains(array('like Gecko', 'rv:11.0'))
+            && !$this->utils->checkIfContains(['like Gecko', 'rv:11.0'])
         ) {
             return false;
         }
@@ -208,7 +209,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
 
         $engine = $this->getEngine();
 
-        $engineVersion = (int)$engine->detectVersion()->getVersion(
+        $engineVersion = (int) $engine->detectVersion()->getVersion(
             Version::MAJORONLY
         );
 
@@ -248,7 +249,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasWur
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

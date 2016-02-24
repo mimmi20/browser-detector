@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class SonyC6903ExperiaZ1 extends AbstractDevice implements DeviceHasWurflKeyInte
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'C6903',
         'model_extra_info'       => null,
@@ -82,16 +83,16 @@ class SonyC6903ExperiaZ1 extends AbstractDevice implements DeviceHasWurflKeyInte
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('C6903', 'Xperia Z1'))) {
+        if (!$this->utils->checkIfContains(['C6903', 'Xperia Z1'])) {
             return false;
         }
 
@@ -105,7 +106,7 @@ class SonyC6903ExperiaZ1 extends AbstractDevice implements DeviceHasWurflKeyInte
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -173,7 +174,7 @@ class SonyC6903ExperiaZ1 extends AbstractDevice implements DeviceHasWurflKeyInte
             case 'Chrome':
                 $engine->setCapability('is_sencha_touch_ok', false);
 
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.4:
                         $wurflKey = 'sony_c6903_ver1_suban44';
                         break;

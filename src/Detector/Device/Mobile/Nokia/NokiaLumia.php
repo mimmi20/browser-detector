@@ -21,24 +21,25 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\WindowsPhoneOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'Lumia',
         'model_extra_info'       => null,
@@ -77,12 +78,12 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -90,7 +91,7 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
             return false;
         }
 
-        $specialLumias = array(
+        $specialLumias = [
             'nokia; lumia 520',
             'nokia; lumia 610',
             'nokia; lumia 620',
@@ -108,7 +109,7 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
             'nokia; lumia 930',
             'nokia; lumia 1320',
             'nokia; lumia 1520',
-        );
+        ];
 
         if ($this->utils->checkIfContains($specialLumias, true)) {
             return false;
@@ -120,7 +121,7 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

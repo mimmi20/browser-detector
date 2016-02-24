@@ -21,18 +21,19 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
@@ -49,7 +50,7 @@ class TrekStorSt102162 extends AbstractDevice implements DeviceHasSpecificPlatfo
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'ST10216-2',
         'model_extra_info'       => null,
@@ -77,16 +78,16 @@ class TrekStorSt102162 extends AbstractDevice implements DeviceHasSpecificPlatfo
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $trekStorPhones = array('ST10216-2');
+        $trekStorPhones = ['ST10216-2'];
 
         if ($this->utils->checkIfContains($trekStorPhones)) {
             return true;
@@ -98,7 +99,7 @@ class TrekStorSt102162 extends AbstractDevice implements DeviceHasSpecificPlatfo
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

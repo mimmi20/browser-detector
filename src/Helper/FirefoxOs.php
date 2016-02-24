@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,8 +35,6 @@ use UaHelper\Utils;
 
 /**
  * a helper for detecting safari and some of his derefered browsers
- *
- * @package   BrowserDetector
  */
 class FirefoxOs
 {
@@ -80,8 +79,8 @@ class FirefoxOs
     public function isFirefoxOs()
     {
         if (!$this->utils->checkIfStartsWith('Mozilla/')
-            || !$this->utils->checkIfContainsAll(array('rv:', 'Gecko', 'Firefox'))
-            || $this->utils->checkIfContains(array('android'), true)
+            || !$this->utils->checkIfContainsAll(['rv:', 'Gecko', 'Firefox'])
+            || $this->utils->checkIfContains(['android'], true)
         ) {
             return false;
         }

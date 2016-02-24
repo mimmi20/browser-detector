@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,7 +37,7 @@ use UaDeviceType\Desktop;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -47,7 +48,7 @@ class HonlinPc1088 extends AbstractDevice
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'PC1088',
         'model_extra_info'       => null,
@@ -76,16 +77,16 @@ class HonlinPc1088 extends AbstractDevice
 
         // chips
         'nfc_support'            => true, // wurflkey: hp_touchpad_ver1
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HL-PC1088'))) {
+        if (!$this->utils->checkIfContains(['HL-PC1088'])) {
             return false;
         }
 
@@ -95,7 +96,7 @@ class HonlinPc1088 extends AbstractDevice
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

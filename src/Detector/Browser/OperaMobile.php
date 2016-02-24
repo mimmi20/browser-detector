@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,14 +34,14 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Presto;
-use UaBrowserType\Browser;
-use UaResult\Version;
 use BrowserDetector\Helper\MobileDevice;
+use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -51,7 +52,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -66,7 +67,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,13 +78,13 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
     {
         $mobileDeviceHelper = new MobileDevice($this->useragent);
 
-        if (!$this->utils->checkIfContains(array('Opera Mobi', 'Opera Tablet', 'OPR'))
-            && !($mobileDeviceHelper->isMobile() && $this->utils->checkIfContains(array('Opera', 'OPR')))
+        if (!$this->utils->checkIfContains(['Opera Mobi', 'Opera Tablet', 'OPR'])
+            && !($mobileDeviceHelper->isMobile() && $this->utils->checkIfContains(['Opera', 'OPR']))
         ) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Opera Mini'))) {
+        if ($this->utils->checkIfContains(['Opera Mini'])) {
             return false;
         }
 
@@ -131,7 +132,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Version', 'OPR', 'Opera ', 'Opera Mobi', 'Opera');
+        $searches = ['Version', 'OPR', 'Opera ', 'Opera Mobi', 'Opera'];
 
         return $detector->detectVersion($searches);
     }
@@ -139,7 +140,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

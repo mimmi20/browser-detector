@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Helper\MobileDevice;
 use UaDeviceType\MobilePhone;
 use UaDeviceType\Tablet;
-use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
-use UaResult\Version;
-use BrowserDetector\Helper\MobileDevice;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -56,7 +57,7 @@ class GeneralMobile
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'general Mobile Device',
         'model_extra_info'       => null,
@@ -84,7 +85,7 @@ class GeneralMobile
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
     /**
      * @var MobilePhone
      */
@@ -93,7 +94,7 @@ class GeneralMobile
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -103,7 +104,7 @@ class GeneralMobile
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -170,7 +171,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Android; Tablet'))) {
+        if ($this->utils->checkIfContains(['Android; Tablet'])) {
             $this->deviceType = new Tablet();
 
             $this->setCapability('code_name', 'general Tablet');
@@ -190,7 +191,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Android; Mobile', 'Android; Linux', 'Browser/AppleWebKit'))) {
+        if ($this->utils->checkIfContains(['Android; Mobile', 'Android; Linux', 'Browser/AppleWebKit'])) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');
@@ -199,7 +200,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Opera Tablet'))) {
+        if ($this->utils->checkIfContains(['Opera Tablet'])) {
             $this->deviceType = new Tablet();
 
             $this->setCapability('code_name', 'general Tablet');
@@ -217,7 +218,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7', 'WPDesktop'))) {
+        if ($this->utils->checkIfContains(['XBLWP7', 'ZuneWP7', 'WPDesktop'])) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');
@@ -239,7 +240,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Opera Mini'))) {
+        if ($this->utils->checkIfContains(['Opera Mini'])) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');
@@ -259,7 +260,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Opera', 'OPR'))) {
+        if ($this->utils->checkIfContains(['Opera', 'OPR'])) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');
@@ -279,7 +280,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Windows Phone 6.5'))) {
+        if ($this->utils->checkIfContains(['Windows Phone 6.5'])) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');
@@ -300,7 +301,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContainsAll(array('Windows NT', 'Touch'))) {
+        if ($this->utils->checkIfContainsAll(['Windows NT', 'Touch'])) {
             $this->deviceType = new Tablet();
 
             $this->setCapability('code_name', 'general Tablet');
@@ -318,7 +319,7 @@ class GeneralMobile
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('Mobile'))) {
+        if ($this->utils->checkIfContains(['Mobile'])) {
             $this->deviceType = new MobilePhone();
 
             $this->setCapability('code_name', 'general Mobile Phone');
@@ -339,7 +340,7 @@ class GeneralMobile
             return $this;
         }
 
-        $mobiles = array(
+        $mobiles = [
             'AdobeAIR',
             'YUANDA',
             'stagefright',
@@ -347,7 +348,7 @@ class GeneralMobile
             'WAP Browser',
             'Crowsnest',
             'Dorado',
-        );
+        ];
 
         if ($this->utils->checkIfContains($mobiles)) {
             $this->deviceType = new MobilePhone();
@@ -386,13 +387,13 @@ class GeneralMobile
     {
         $wurflKey = 'generic_mobile';
 
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+        if ($this->utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
             $wurflKey = 'generic_ms_phone_os7_5_desktopmode';
-        } elseif ($this->utils->checkIfContains(array('Opera Mobi'))) {
+        } elseif ($this->utils->checkIfContains(['Opera Mobi'])) {
             $wurflKey = 'generic_android_ver4_0_opera_mobi';
-        } elseif ($this->utils->checkIfContains(array('Opera Mini'))) {
+        } elseif ($this->utils->checkIfContains(['Opera Mini'])) {
             $wurflKey = 'generic_opera_mini_android';
-        } elseif ($this->utils->checkIfContains(array('Windows Phone 6.5'))) {
+        } elseif ($this->utils->checkIfContains(['Windows Phone 6.5'])) {
             $wurflKey = 'generic_opera_mini_android';
         }
 
@@ -400,7 +401,7 @@ class GeneralMobile
 
         switch ($brwoserName) {
             case 'Firefox':
-                if ('Android' == $os->getName()) {
+                if ('Android' === $os->getName()) {
                     $os->detectVersion()->setVersion('2.0');
 
                     if ($this->getDeviceType()->isTablet()) {
@@ -411,10 +412,10 @@ class GeneralMobile
                 }
                 break;
             case 'Opera Mobile':
-                if ('Android' == $os->getName()) {
+                if ('Android' === $os->getName()) {
                     $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
-                    switch ((float)$osVersion) {
+                    switch ((float) $osVersion) {
                         case 4.0:
                             $wurflKey = 'generic_android_ver4_0_opera_mobi';
                             break;
@@ -425,14 +426,14 @@ class GeneralMobile
                             // nothing to do here
                             break;
                     }
-                } elseif ('Windows Mobile OS' == $os->getName()) {
+                } elseif ('Windows Mobile OS' === $os->getName()) {
                     $this->setCapability('has_qwerty_keyboard', false);
                     $this->setCapability('pointing_method', 'stylus');
                     $this->setCapability('resolution_width', 240);
                     $this->setCapability('resolution_height', 320);
                     $this->setCapability('dual_orientation', false);
                     $this->setCapability('colors', 4096);
-                } elseif ('Symbian OS' == $os->getName()) {
+                } elseif ('Symbian OS' === $os->getName()) {
                     $this->setCapability('has_qwerty_keyboard', false);
                     $this->setCapability('pointing_method', null);
                     $this->setCapability('resolution_width', 240);
@@ -442,10 +443,10 @@ class GeneralMobile
                 }
                 break;
             case 'Opera Tablet':
-                if ('Android' == $os->getName()) {
+                if ('Android' === $os->getName()) {
                     $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
-                    if (3.2 == (float)$osVersion) {
+                    if (3.2 === (float) $osVersion) {
                         $wurflKey = 'generic_android_ver3_2_opera_tablet';
 
                         $this->setCapability('resolution_width', 1280);
@@ -454,17 +455,17 @@ class GeneralMobile
                 }
                 break;
             case 'Opera Mini':
-                if ('Android' == $os->getName()) {
+                if ('Android' === $os->getName()) {
                     $osVersion = $os->detectVersion()->getVersion(Version::MAJORMINOR);
 
-                    if (5.0 == (float)$osVersion) {
+                    if (5.0 === (float) $osVersion) {
                         $wurflKey = 'generic_opera_mini_android_version5';
                     }
 
                     $this->setCapability('resolution_width', 240);
                     $this->setCapability('resolution_height', 320);
                     $this->setCapability('dual_orientation', false);
-                } elseif ('Java' == $os->getName()) {
+                } elseif ('Java' === $os->getName()) {
                     $wurflKey = 'uabait_opera_mini_v10_op98';
 
                     $this->setCapability('colors', 256);
@@ -475,7 +476,7 @@ class GeneralMobile
                 break;
         }
 
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7', 'WPDesktop'))) {
+        if ($this->utils->checkIfContains(['XBLWP7', 'ZuneWP7', 'WPDesktop'])) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
 

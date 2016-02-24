@@ -21,16 +21,16 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\Desktop\EeePc;
 use BrowserDetector\Detector\Device\Desktop\Hp9000;
 use BrowserDetector\Detector\Device\Desktop\LinuxDesktop;
@@ -44,13 +44,13 @@ use BrowserDetector\Detector\Device\Desktop\PowerMac;
 use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
 use BrowserDetector\Detector\Device\GeneralDesktop;
 use BrowserDetector\Helper\Linux as LinuxHelper;
-use Psr\Log\LoggerInterface;
-use BrowserDetector\Helper\Windows as WindowsHelper;
 use BrowserDetector\Helper\Macintosh as MacintoshHelper;
+use BrowserDetector\Helper\Windows as WindowsHelper;
+use Psr\Log\LoggerInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -59,7 +59,7 @@ class DesktopFactory
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string                   $useragent
      * @param \Psr\Log\LoggerInterface $logger
      *
      * @return \UaMatcher\Device\DeviceInterface

@@ -21,18 +21,19 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Zte;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
@@ -49,7 +50,7 @@ class ZteV9 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'V9',
         'model_extra_info'       => null,
@@ -77,20 +78,20 @@ class ZteV9 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('ZTE V9', ' V9 '))) {
+        if (!$this->utils->checkIfContains(['ZTE V9', ' V9 '])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('ZTE V970', 'V967S'))) {
+        if ($this->utils->checkIfContains(['ZTE V970', 'V967S'])) {
             return false;
         }
 
@@ -100,7 +101,7 @@ class ZteV9 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

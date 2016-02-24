@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,12 +34,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class Sunbird extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class Sunbird extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,11 +78,11 @@ class Sunbird extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('Gecko', 'Sunbird'))) {
+        if (!$this->utils->checkIfContainsAll(['Gecko', 'Sunbird'])) {
             return false;
         }
 
-        $isNotReallyAnSunbird = array(
+        $isNotReallyAnSunbird = [
             'SnapPreviewBot',
             'ScanAlert',
             'spider',
@@ -115,8 +116,8 @@ class Sunbird extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             // other Browsers
             'Chrome',
             'Chromium',
-            'rekonq'
-        );
+            'rekonq',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnSunbird)) {
             return false;
@@ -165,7 +166,7 @@ class Sunbird extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Sunbird');
+        $searches = ['Sunbird'];
 
         return $detector->detectVersion($searches);
     }
@@ -173,7 +174,7 @@ class Sunbird extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

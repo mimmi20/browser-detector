@@ -21,28 +21,29 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -53,7 +54,7 @@ class HtcX515m extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'X515m',
         'model_extra_info'       => 'aka Shooter',
@@ -81,25 +82,25 @@ class HtcX515m extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
         if (!$this->utils->checkIfContains(
-            array(
+            [
                 'HTC/EVO_3D',
                 'HTC EVO 3D',
                 'HTC_EVO3D',
                 'HTC EVO 3D X515m',
                 'HTC_EVO3D_X515m',
                 'EVO3D_X515m',
-                'HTC_EVO_3D_GSM_X515m'
-            )
+                'HTC_EVO_3D_GSM_X515m',
+            ]
         )
         ) {
             return false;
@@ -111,7 +112,7 @@ class HtcX515m extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

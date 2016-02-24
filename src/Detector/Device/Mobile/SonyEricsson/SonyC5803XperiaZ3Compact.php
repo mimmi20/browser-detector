@@ -21,24 +21,25 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class SonyC5803XperiaZ3Compact extends AbstractDevice implements DeviceHasSpecif
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'D5803',
         'model_extra_info'       => null,
@@ -77,20 +78,20 @@ class SonyC5803XperiaZ3Compact extends AbstractDevice implements DeviceHasSpecif
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonD5803', 'SonyD5803', 'D5803'))) {
+        if (!$this->utils->checkIfContains(['SonyEricssonD5803', 'SonyD5803', 'D5803'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('SonyEricssonD5803v', 'SonyD5803v', 'D5803v'))) {
+        if ($this->utils->checkIfContains(['SonyEricssonD5803v', 'SonyD5803v', 'D5803v'])) {
             return false;
         }
 
@@ -100,7 +101,7 @@ class SonyC5803XperiaZ3Compact extends AbstractDevice implements DeviceHasSpecif
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

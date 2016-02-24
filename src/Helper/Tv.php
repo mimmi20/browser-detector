@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,8 +35,6 @@ use UaHelper\Utils;
 
 /**
  * a helper to detect TV devices
- *
- * @package   BrowserDetector
  */
 class Tv
 {
@@ -60,7 +59,7 @@ class Tv
 
     public function isTvDevice()
     {
-        $tvDevices = array(
+        $tvDevices = [
             'boxee',
             'ce-html',
             'dlink.dsm380',
@@ -78,7 +77,7 @@ class Tv
             'espial',
             'aquosbrowser',
             'gxt_dongle_3188',
-        );
+        ];
 
         if (!$this->utils->checkIfContains($tvDevices, true)) {
             return false;

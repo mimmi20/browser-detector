@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,7 +37,7 @@ use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -47,7 +48,7 @@ class NokiaBrowser extends AbstractBrowser
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -62,7 +63,7 @@ class NokiaBrowser extends AbstractBrowser
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -71,11 +72,11 @@ class NokiaBrowser extends AbstractBrowser
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NokiaBrowser', 'Nokia'))) {
+        if (!$this->utils->checkIfContains(['NokiaBrowser', 'Nokia'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('OviBrowser', 'UCWEB', 'S40OviBrowser'))) {
+        if ($this->utils->checkIfContains(['OviBrowser', 'UCWEB', 'S40OviBrowser'])) {
             return false;
         }
 
@@ -122,7 +123,7 @@ class NokiaBrowser extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('BrowserNG', 'NokiaBrowser');
+        $searches = ['BrowserNG', 'NokiaBrowser'];
 
         return $detector->detectVersion($searches);
     }
@@ -130,7 +131,7 @@ class NokiaBrowser extends AbstractBrowser
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

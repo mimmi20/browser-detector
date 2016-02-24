@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,13 +33,13 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use UaBrowserType\Application;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class MicrosoftOneNote extends MicrosoftOffice implements BrowserHasWurflKeyInte
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class MicrosoftOneNote extends MicrosoftOffice implements BrowserHasWurflKeyInte
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -73,7 +74,7 @@ class MicrosoftOneNote extends MicrosoftOffice implements BrowserHasWurflKeyInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('OneNote'))) {
+        if (!$this->utils->checkIfContains(['OneNote'])) {
             return false;
         }
 
@@ -137,7 +138,7 @@ class MicrosoftOneNote extends MicrosoftOffice implements BrowserHasWurflKeyInte
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -153,7 +154,7 @@ class MicrosoftOneNote extends MicrosoftOffice implements BrowserHasWurflKeyInte
      */
     public function getWurflKey(OsInterface $os)
     {
-        $browserVersion = (int)$this->detectInternalVersion();
+        $browserVersion = (int) $this->detectInternalVersion();
 
         return 'ms_outlook_subua' . $browserVersion;
     }

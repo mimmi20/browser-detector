@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,12 +34,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Trident;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -81,11 +82,11 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Crazy Browser'))) {
+        if (!$this->utils->checkIfContains(['Crazy Browser'])) {
             return false;
         }
 
-        $isNotReallyAnIE = array(
+        $isNotReallyAnIE = [
             // using also the Trident rendering engine
             'Galeon',
             'Lunascape',
@@ -101,8 +102,8 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
             'Outlook',
             'IEMobile',
             'BlackBerry',
-            'WebTV'
-        );
+            'WebTV',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnIE)) {
             return false;
@@ -151,7 +152,7 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Crazy Browser');
+        $searches = ['Crazy Browser'];
 
         return $detector->detectVersion($searches);
     }
@@ -159,7 +160,7 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -39,7 +40,7 @@ use UaResult\Version;
  *
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -50,7 +51,7 @@ class Konqueror extends AbstractBrowser
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -65,7 +66,7 @@ class Konqueror extends AbstractBrowser
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -78,11 +79,11 @@ class Konqueror extends AbstractBrowser
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Konqueror', 'konqueror', 'kded'))) {
+        if (!$this->utils->checkIfContains(['Konqueror', 'konqueror', 'kded'])) {
             return false;
         }
 
-        $isNotReallyAnKonqueror = array(
+        $isNotReallyAnKonqueror = [
             // using also the Gecko rendering engine
             'Camino',
             'Chrome',
@@ -108,8 +109,8 @@ class Konqueror extends AbstractBrowser
             'Qt',
             'rekonq',
             'RockMelt',
-            'SeaMonkey'
-        );
+            'SeaMonkey',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnKonqueror)) {
             return false;
@@ -158,7 +159,7 @@ class Konqueror extends AbstractBrowser
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Konqueror', 'konqueror');
+        $searches = ['Konqueror', 'konqueror'];
 
         return $detector->detectVersion($searches);
     }
@@ -166,7 +167,7 @@ class Konqueror extends AbstractBrowser
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,8 +35,6 @@ use WurflCache\Adapter\AdapterInterface;
 
 /**
  * a general helper to work with \Zend\Cache
- *
- * @package   BrowserDetector
  */
 class Cache
 {
@@ -43,9 +42,8 @@ class Cache
      * Gets the information about the browser by User Agent
      *
      * @param \WurflCache\Adapter\AdapterInterface $cache
-     * @param string                            $useragent the user agent string
-     *
-     * @param string                            $cachePrefix
+     * @param string                               $useragent   the user agent string
+     * @param string                               $cachePrefix
      *
      * @return mixed
      */
@@ -63,7 +61,7 @@ class Cache
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $useragent the user agent string
+     * @param string $useragent   the user agent string
      * @param string $cachePrefix
      *
      * @return string

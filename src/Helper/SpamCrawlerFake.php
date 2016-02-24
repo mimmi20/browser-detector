@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,8 +37,6 @@ use UaHelper\Utils;
 
 /**
  * a helper to detect bot and fake browsers
- *
- * @package   BrowserDetector
  */
 class SpamCrawlerFake
 {
@@ -73,7 +72,7 @@ class SpamCrawlerFake
      */
     public function isSpamOrCrawler()
     {
-        $bots = array(
+        $bots = [
             '<',
             '>',
             '\\x01',
@@ -204,16 +203,16 @@ class SpamCrawlerFake
             'yahoo pipes',
             'yandex',
             'zend_http_client',
-            'zmeu'
-        );
+            'zmeu',
+        ];
 
         if ($this->utils->checkIfContains($bots, true)) {
-            $noBot = array(
+            $noBot = [
                 'google earth', 'google desktop', 'googletoolbar', 'googlet5',
                 'simbar', 'googletv', 'google_impact',
                 'google-tr', '=google', 'enusbingip',
-                'fbmapping', 'yandex.translate', 'yandex browser'
-            );
+                'fbmapping', 'yandex.translate', 'yandex browser',
+            ];
 
             if ($this->utils->checkIfContains($noBot, true)) {
                 return false;
@@ -222,9 +221,9 @@ class SpamCrawlerFake
             return true;
         }
 
-        $searchNoBot = array(
-            'searchtoolbar', 'searchalot ie', 'isearch', 'searchbar'
-        );
+        $searchNoBot = [
+            'searchtoolbar', 'searchalot ie', 'isearch', 'searchbar',
+        ];
 
         if ($this->utils->checkIfContains('search', true)
             && !$this->utils->checkIfContains($searchNoBot, true)
@@ -232,7 +231,7 @@ class SpamCrawlerFake
             return true;
         }
 
-        if ($this->utils->checkIfContainsAll(array('http', 'request'), true)) {
+        if ($this->utils->checkIfContainsAll(['http', 'request'], true)) {
             return true;
         }
 
@@ -252,7 +251,7 @@ class SpamCrawlerFake
             return true;
         }
 
-        if ($this->utils->checkIfStartsWith(array('PHP/', 'PHP-SOAP/'))) {
+        if ($this->utils->checkIfStartsWith(['PHP/', 'PHP-SOAP/'])) {
             return true;
         }
 
@@ -278,7 +277,7 @@ class SpamCrawlerFake
      */
     public function isAnonymized()
     {
-        if ($this->utils->checkIfContains(array('anonymisiert durch', 'anonymized by'), true)) {
+        if ($this->utils->checkIfContains(['anonymisiert durch', 'anonymized by'], true)) {
             return true;
         }
 
@@ -386,10 +385,10 @@ class SpamCrawlerFake
             return true;
         }
 
-        $ntVersions = array(
+        $ntVersions = [
             '3.5', '4.0', '4.1', '5.0', '5.01', '5.1', '5.2', '5.3', '6.0', '6.1',
-            '6.2', '6.3', '6.4', '10.0'
-        );
+            '6.2', '6.3', '6.4', '10.0',
+        ];
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)(;| ;|\))/', $this->useragent, $matches)
             || preg_match('/Windows NT ([\d\.]+)$/', $this->useragent, $matches);

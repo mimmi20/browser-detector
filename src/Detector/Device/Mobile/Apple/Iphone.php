@@ -21,27 +21,28 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'iPhone',
         'model_extra_info'       => null,
@@ -80,12 +81,12 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => false,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -93,7 +94,7 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('ipod', 'ipod touch', 'ipad', 'ipad'), true)) {
+        if ($this->utils->checkIfContains(['ipod', 'ipod touch', 'ipad', 'ipad'], true)) {
             return false;
         }
 
@@ -103,7 +104,7 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -157,7 +158,7 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
 
         $this->setCapability('model_extra_info', $osVersion);
 
-        if ('Safari' == $browser->getName() && !$browser->detectVersion()->getVersion()
+        if ('Safari' === $browser->getName() && !$browser->detectVersion()->getVersion()
         ) {
             $browser->detectVersion()->setVersion($osVersion);
         }
@@ -166,7 +167,7 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
             Version::MAJORMINOR
         );
 
-        if (4.1 == (float)$osVersion) {
+        if (4.1 === (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver4_1';
 
             if ($this->utils->checkIfContains('Mobile/8B117')) {
@@ -174,35 +175,35 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
             }
         }
 
-        if (5.0 == (float)$osVersion) {
+        if (5.0 === (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver5_subua';
         }
 
-        if (5.1 == (float)$osVersion) {
+        if (5.1 === (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver5_1';
         }
 
-        if (6.0 <= (float)$osVersion) {
+        if (6.0 <= (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver6';
         }
 
-        if (6.1 <= (float)$osVersion) {
+        if (6.1 <= (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver6_1';
         }
 
-        if (7.0 == (float)$osVersion) {
+        if (7.0 === (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver7';
         }
 
-        if (7.1 == (float)$osVersion) {
+        if (7.1 === (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver7_1';
         }
 
-        if (8.0 == (float)$osVersion) {
+        if (8.0 === (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver8';
         }
 
-        if (8.1 == (float)$osVersion) {
+        if (8.1 === (float) $osVersion) {
             $wurflKey = 'apple_iphone_ver8_1';
         }
 
@@ -210,7 +211,7 @@ class Iphone extends AbstractDevice implements DeviceHasWurflKeyInterface
             Version::MAJORMINOR
         );
 
-        if (6.0 <= (float)$browserVersion) {
+        if (6.0 <= (float) $browserVersion) {
             $this->setCapability('resolution_width', 640);
             $this->setCapability('resolution_height', 960);
         }

@@ -21,27 +21,28 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\Tablet;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class Ipad extends AbstractDevice implements DeviceHasWurflKeyInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'iPad',
         'model_extra_info'       => null,
@@ -80,12 +81,12 @@ class Ipad extends AbstractDevice implements DeviceHasWurflKeyInterface
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => false, // wurflkey: apple_ipad_ver1_sub51
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -99,7 +100,7 @@ class Ipad extends AbstractDevice implements DeviceHasWurflKeyInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -155,39 +156,39 @@ class Ipad extends AbstractDevice implements DeviceHasWurflKeyInterface
 
         $this->setCapability('model_extra_info', $osVersion);
 
-        if (3.2 == (float)$osVersion) {
+        if (3.2 === (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_subua32';
         }
 
-        if (5.0 == (float)$osVersion) {
+        if (5.0 === (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_sub5';
         }
 
-        if (5.1 == (float)$osVersion) {
+        if (5.1 === (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_sub51';
         }
 
-        if (6.0 <= (float)$osVersion) {
+        if (6.0 <= (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_sub6';
         }
 
-        if (6.1 <= (float)$osVersion) {
+        if (6.1 <= (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_sub61';
         }
 
-        if (7.0 <= (float)$osVersion) {
+        if (7.0 <= (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_sub7';
         }
 
-        if (7.1 <= (float)$osVersion) {
+        if (7.1 <= (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_sub71';
         }
 
-        if (8.0 <= (float)$osVersion) {
+        if (8.0 <= (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_sub8';
         }
 
-        if (8.1 <= (float)$osVersion) {
+        if (8.1 <= (float) $osVersion) {
             $wurflKey = 'apple_ipad_ver1_sub8_1';
         }
 

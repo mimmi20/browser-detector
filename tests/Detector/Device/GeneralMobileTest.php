@@ -1,4 +1,5 @@
 <?php
+
 namespace BrowserDetectorTest\Detector\Device;
 
 use BrowserDetector\Detector\Device\GeneralMobile;
@@ -26,6 +27,7 @@ class GeneralMobileTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerDetectDevice
+     *
      * @param string $agent
      * @param string $device
      */
@@ -38,9 +40,9 @@ class GeneralMobileTest extends \PHPUnit_Framework_TestCase
 
     public function providerDetectDevice()
     {
-        return array(
-            array('Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko', '\BrowserDetector\Detector\Device\GeneralMobile'),
-        );
+        return [
+            ['Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko', '\BrowserDetector\Detector\Device\GeneralMobile'],
+        ];
     }
 
     /**
@@ -62,8 +64,8 @@ class GeneralMobileTest extends \PHPUnit_Framework_TestCase
 
     public function providerGetDeviceType()
     {
-        return array(
-            array('Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko', '\UaDeviceType\Tablet'),
-        );
+        return [
+            ['Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko', '\UaDeviceType\Tablet'],
+        ];
     }
 }

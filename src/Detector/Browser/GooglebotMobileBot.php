@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,14 +35,14 @@ use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Device\DeviceInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserCalculatesAlt
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserCalculatesAlt
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -123,7 +124,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserCalculatesAlt
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Googlebot\-Mobile');
+        $searches = ['Googlebot\-Mobile'];
 
         return $detector->detectVersion($searches);
     }
@@ -131,7 +132,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserCalculatesAlt
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -149,7 +150,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserCalculatesAlt
     {
         if ($this->utils->checkIfContains('Googlebot-Mobile')) {
             $agent = str_ireplace(
-                array('googlebot-mobile', 'www.google.com/bot.html'),
+                ['googlebot-mobile', 'www.google.com/bot.html'],
                 '',
                 $this->useragent
             );

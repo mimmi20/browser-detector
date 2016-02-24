@@ -21,30 +21,32 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Result;
 
+use Psr\Log\LoggerInterface;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 use Wurfl\WurflConstants;
-use Psr\Log\LoggerInterface;
 
 /**
  * BrowserDetector.ini parsing class with caching and update capabilities
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @property-read $id
  * @property-read $userAgent
  */
@@ -81,7 +83,7 @@ interface ResultInterface extends \UaMatcher\Result\ResultInterface
     /**
      * sets a second device for rendering properties
      *
-     * @var \BrowserDetector\Detector\Result\ResultInterface $result
+     * @var \BrowserDetector\Detector\Result\ResultInterface
      *
      * @return DeviceInterface
      */

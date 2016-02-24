@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,8 +35,6 @@ use UaHelper\Utils;
 
 /**
  * a helper for detecting safari and some of his derefered browsers
- *
- * @package   BrowserDetector
  */
 class Safari
 {
@@ -76,11 +75,11 @@ class Safari
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Safari', 'AppleWebKit', 'CFNetwork'))) {
+        if (!$this->utils->checkIfContains(['Safari', 'AppleWebKit', 'CFNetwork'])) {
             return false;
         }
 
-        $isNotReallyAnSafari = array(
+        $isNotReallyAnSafari = [
             // using also the KHTML rendering engine
             '1Password',
             'AdobeAIR',
@@ -166,8 +165,8 @@ class Safari
             'Android',
             'Tizen',
             // Fakes
-            'Mac; Mac OS '
-        );
+            'Mac; Mac OS ',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnSafari, true)) {
             return false;
@@ -209,7 +208,7 @@ class Safari
             $detectedVersion = '4.0';
         }
 
-        $regularVersions = array(
+        $regularVersions = [
             '3.0',
             '3.1',
             '3.2',
@@ -228,7 +227,7 @@ class Safari
             '7.1',
             '8.0',
             '8.1',
-        );
+        ];
 
         if (in_array(substr($detectedVersion, 0, 3), $regularVersions)) {
             return $detectedVersion;

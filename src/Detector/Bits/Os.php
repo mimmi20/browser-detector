@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,7 +37,7 @@ use UaHelper\Utils;
  * Class to detect the Bit count for an Platform/Operating System
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -71,8 +72,9 @@ class Os
     }
 
     /**
-     * @return int
      * @throws \UnexpectedValueException
+     *
+     * @return int
      */
     public function getBits()
     {
@@ -95,7 +97,7 @@ class Os
     private function detectBits()
     {
         if ($this->utils->checkIfContains(
-            array('x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64'),
+            ['x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64'],
             true
         )
         ) {
@@ -104,14 +106,14 @@ class Os
             return $this;
         }
 
-        if ($this->utils->checkIfContains(array('win3.1', 'windows 3.1'), true)) {
+        if ($this->utils->checkIfContains(['win3.1', 'windows 3.1'], true)) {
             $this->bits = 16;
 
             return $this;
         }
 
         // old deprecated 8 bit systems
-        if ($this->utils->checkIfContains(array('cp/m', '8-bit'), true)) {
+        if ($this->utils->checkIfContains(['cp/m', '8-bit'], true)) {
             $this->bits = 8;
 
             return $this;

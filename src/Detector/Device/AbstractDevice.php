@@ -21,38 +21,39 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Detector\Bits\Device as DeviceBits;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result\Result;
-use UaDeviceType\Unknown;
-use UaMatcher\MatcherCanHandleInterface;
-use UaMatcher\MatcherHasWeightInterface;
 use Psr\Log\LoggerInterface;
+use UaDeviceType\Unknown;
 use UaHelper\Utils;
 use UaMatcher\Device\DeviceInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 use UaMatcher\Result\ResultInterface;
-use BrowserDetector\Detector\Bits\Device as DeviceBits;
 
 /**
  * base class for all Devices to detect
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @property-read string  $deviceClass
  * @property-read string  $useragent
  * @property-read string  $fallBack
- * @property-read boolean $actualDeviceRoot
+ * @property-read bool $actualDeviceRoot
  */
 abstract class AbstractDevice
     implements DeviceInterface, \Serializable, MatcherHasWeightInterface, MatcherCanHandleInterface
@@ -93,7 +94,7 @@ abstract class AbstractDevice
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'unknown',
         'model_extra_info'       => null,
@@ -119,7 +120,7 @@ abstract class AbstractDevice
         'colors'                 => 65536,
         // chips
         'nfc_support'            => null,
-    );
+    ];
 
     /**
      * Class Constructor
@@ -136,6 +137,7 @@ abstract class AbstractDevice
 
     /**
      * initializes the object
+     *
      * @param string $useragent
      */
     protected function init($useragent)
@@ -178,7 +180,7 @@ abstract class AbstractDevice
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -188,7 +190,7 @@ abstract class AbstractDevice
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -231,8 +233,9 @@ abstract class AbstractDevice
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return string Capability value
      * @throws \InvalidArgumentException
+     *
+     * @return string Capability value
      */
     public function getCapability($capabilityName)
     {
@@ -245,8 +248,7 @@ abstract class AbstractDevice
      * Returns the value of a given capability name
      * for the current device
      *
-     * @param string $capabilityName must be a valid capability name
-     *
+     * @param string $capabilityName  must be a valid capability name
      * @param null   $capabilityValue
      *
      * @return DeviceInterface
@@ -269,7 +271,6 @@ abstract class AbstractDevice
      * @param string $capabilityName must be a valid capability name
      *
      * @throws \InvalidArgumentException
-     * @return void
      */
     protected function checkCapability($capabilityName)
     {
@@ -292,6 +293,7 @@ abstract class AbstractDevice
      * @param string $name
      *
      * @throws \InvalidArgumentException
+     *
      * @return string
      */
     public function __get($name)
@@ -303,7 +305,7 @@ abstract class AbstractDevice
                     break;
                 case 'fallBack':
                 case 'actualDeviceRoot':
-                    return null;
+                    return;
                     break;
                 default:
                     // nothing to do here
@@ -329,7 +331,7 @@ abstract class AbstractDevice
     /**
      * sets a second device for rendering properties
      *
-     * @var \UaMatcher\Result\ResultInterface $result
+     * @var \UaMatcher\Result\ResultInterface
      *
      * @return DeviceInterface
      */
@@ -361,29 +363,32 @@ abstract class AbstractDevice
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
      * String representation of object
+     *
      * @link http://php.net/manual/en/serializable.serialize.php
+     *
      * @return string the string representation of the object or null
      */
     public function serialize()
     {
         return serialize(
-            array(
+            [
                 'properties' => $this->properties,
                 'useragent'  => $this->useragent,
                 'renderAs'   => $this->renderAs,
                 'version'    => $this->version,
-            )
+            ]
         );
     }
 
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
      * Constructs the object
+     *
      * @link http://php.net/manual/en/serializable.unserialize.php
+     *
      * @param string $serialized <p>
-     * The string representation of the object.
-     * </p>
-     * @return void
+     *                           The string representation of the object.
+     *                           </p>
      */
     public function unserialize($serialized)
     {

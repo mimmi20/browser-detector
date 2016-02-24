@@ -10,7 +10,7 @@
  * Refer to the LICENSE file distributed with this package.
  *
  * @category   CompareTest
- * @package    Test
+ *
  * @copyright  1998-2014 Browser Capabilities Project
  * @license    MIT
  */
@@ -27,7 +27,7 @@ use WurflCache\Adapter\NullStorage;
  * Class UserAgentsTest
  *
  * @category   CompareTest
- * @package    Test
+ *
  * @author     James Titcumb <james@asgrim.com>
  * @group      useragenttest
  */
@@ -47,7 +47,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $logger = new Logger('browser-detector-tests');
         $logger->pushHandler(new NullHandler());
 
-        $cache = new NullStorage();
+        $cache        = new NullStorage();
         $this->object = new BrowserDetector($cache, $logger);
     }
 
@@ -56,20 +56,20 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
      */
     public function userAgentDataProvider()
     {
-        static $data = array();
+        static $data = [];
 
         if (count($data)) {
             return $data;
         }
 
-        $checks          = array();
+        $checks          = [];
         $sourceDirectory = 'vendor/browscap/browscap/tests/fixtures/issues/';
 
         $iterator = new \DirectoryIterator($sourceDirectory);
 
         foreach ($iterator as $file) {
             /** @var $file \SplFileInfo */
-            if (!$file->isFile() || $file->getExtension() != 'php') {
+            if (!$file->isFile() || $file->getExtension() !== 'php') {
                 continue;
             }
 
@@ -188,6 +188,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
                 . '" (was "' . $foundDeviceBrand . ' [' . $result->getDevice()->getBrand()->getBrandName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
             );
         }
+
         return; //@todo: remove
 
         $expectedDeviceCodeName = $mapper->mapDeviceName(

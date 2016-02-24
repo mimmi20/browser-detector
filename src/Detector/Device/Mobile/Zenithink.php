@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,10 +33,10 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /*
@@ -51,7 +52,7 @@ class Zenithink extends AbstractDevice implements DeviceHasChildrenInterface, De
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'general Zenithink Device',
         'model_extra_info'       => null,
@@ -79,19 +80,19 @@ class Zenithink extends AbstractDevice implements DeviceHasChildrenInterface, De
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $zenithinkPhones = array(
+        $zenithinkPhones = [
             'Zenithink',
-            ' zt180 '
-        );
+            ' zt180 ',
+        ];
 
         if ($this->utils->checkIfContains($zenithinkPhones, true)) {
             return true;
@@ -121,7 +122,7 @@ class Zenithink extends AbstractDevice implements DeviceHasChildrenInterface, De
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,15 +34,15 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Teleca;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * SonyEricssonUserAgentHandler
  *
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,15 +78,15 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
     public function canHandle()
     {
         return $this->utils->checkIfContains(
-            array(
+            [
                 'Teleca',
                 'AU-MIC',
                 'MIC/',
                 'Obigo',
                 'ObigoInternetBrowser',
                 'obigo-browser',
-                'WAP/OBIGO'
-            )
+                'WAP/OBIGO',
+            ]
         );
     }
 
@@ -149,7 +150,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
             return $detector->setVersion($matches[1]);
         }
 
-        $searches = array(
+        $searches = [
             'MIC',
             'ObigoInternetBrowser',
             'Obigo Browser',
@@ -160,8 +161,8 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
             'Teleca\-Q',
             'Obigo\-Q',
             'Obigo\/Q',
-            'Teleca\/Q'
-        );
+            'Teleca\/Q',
+        ];
 
         return $detector->detectVersion($searches);
     }
@@ -169,7 +170,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

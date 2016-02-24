@@ -21,27 +21,28 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\Tablet;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'Touchpad',
         'model_extra_info'       => null,
@@ -81,16 +82,16 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
 
         // chips
         'nfc_support'            => true, // wurflkey: hp_touchpad_ver1
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('TouchPad', 'Touchpad', 'cm_tenderloin'))) {
+        if (!$this->utils->checkIfContains(['TouchPad', 'Touchpad', 'cm_tenderloin'])) {
             return false;
         }
 
@@ -100,7 +101,7 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -150,8 +151,8 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
     {
         $wurflKey = 'hp_touchpad_ver1';
 
-        if (('Android Webkit' == $browser->getName() || 'Chrome' == $browser->getName())
-            && 'Android' == $os->getName()
+        if (('Android Webkit' === $browser->getName() || 'Chrome' === $browser->getName())
+            && 'Android' === $os->getName()
         ) {
             $osVersion = $os->detectVersion()->getVersion(
                 Version::MAJORMINOR
@@ -159,7 +160,7 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
 
             switch ($browser->getName()) {
                 case 'Android Webkit':
-                    switch ((float)$osVersion) {
+                    switch ((float) $osVersion) {
                         case 4.0:
                             $wurflKey = 'hp_touchpad_android_ver1_suban40rom';
                             break;
@@ -169,7 +170,7 @@ class HpTouchpad extends AbstractDevice implements DeviceHasWurflKeyInterface
                     }
                     break;
                 case 'Chrome':
-                    switch ((float)$osVersion) {
+                    switch ((float) $osVersion) {
                         case 4.0:
                             $wurflKey = 'hp_touchpad_android_ver1_suban40rom';
                             break;

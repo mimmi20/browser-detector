@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,16 +33,16 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
-use UaResult\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
+use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
         'post_method_support'          => true,
         // rss
         'rss_support'                  => true,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -82,7 +83,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Safari', 'Mobile'))) {
+        if (!$this->utils->checkIfContains(['Safari', 'Mobile'])) {
             return false;
         }
 
@@ -169,7 +170,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -197,7 +198,7 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
     public function getWurflKey(OsInterface $os)
     {
         $osname    = $os->getName();
-        $osVersion = (float)$os->detectVersion()->getVersion(
+        $osVersion = (float) $os->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 
@@ -206,11 +207,11 @@ class Safari extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
         );
 
         if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
-            return 'safari_' . (int)$browserVersion . '_0_mac';
+            return 'safari_' . (int) $browserVersion . '_0_mac';
         }
 
         if ('Windows' === $osname) {
-            return 'safari_' . (int)$browserVersion . '_0_windows';
+            return 'safari_' . (int) $browserVersion . '_0_windows';
         }
 
         return '';

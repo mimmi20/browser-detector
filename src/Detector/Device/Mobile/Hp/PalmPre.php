@@ -21,31 +21,32 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\WebOs;
 use UaDeviceType\MobilePhone;
-use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
-use UaMatcher\Device\DeviceHasVersionInterface;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasVersionInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -73,7 +74,7 @@ class PalmPre
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'Pre',
         'model_extra_info'       => null,
@@ -102,12 +103,12 @@ class PalmPre
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -121,7 +122,7 @@ class PalmPre
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -187,7 +188,7 @@ class PalmPre
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $searches = array('Pre');
+        $searches = ['Pre'];
 
         $this->version = $detector->detectVersion($searches);
 
@@ -204,7 +205,7 @@ class PalmPre
     {
         $modelVersion = $this->version->getVersion(Version::MAJORONLY);
 
-        if (3 == $modelVersion) {
+        if (3 === $modelVersion) {
             $this->setCapability('resolution_width', 480);
             $this->setCapability('resolution_height', 800);
 
@@ -233,7 +234,7 @@ class PalmPre
 
         $modelVersion = $this->version->getVersion(Version::MAJORONLY);
 
-        if (3 == $modelVersion) {
+        if (3 === $modelVersion) {
             $wurflKey = 'hp_pre3_ver1';
         }
 

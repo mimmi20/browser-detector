@@ -21,28 +21,29 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\MeeGo;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -53,7 +54,7 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'N9',
         'model_extra_info'       => null,
@@ -81,12 +82,12 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -95,7 +96,7 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
         }
 
         if ($this->utils->checkIfContains(
-            array('NokiaN90', 'NokiaN91', 'NokiaN95', 'NokiaN96', 'NokiaN97', 'NokiaN900')
+            ['NokiaN90', 'NokiaN91', 'NokiaN95', 'NokiaN96', 'NokiaN97', 'NokiaN900']
         )
         ) {
             return false;
@@ -107,7 +108,7 @@ class NokiaN9 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,15 +34,15 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * PrismUserAgentHandler
  *
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class Prism extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class Prism extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -81,11 +82,11 @@ class Prism extends AbstractBrowser implements BrowserHasSpecificEngineInterface
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Prism'))) {
+        if (!$this->utils->checkIfContains(['Prism'])) {
             return false;
         }
 
-        $isNotReallyAnPrism = array(
+        $isNotReallyAnPrism = [
             // using also the Gecko rendering engine
             'Maemo',
             'Maxthon',
@@ -112,8 +113,8 @@ class Prism extends AbstractBrowser implements BrowserHasSpecificEngineInterface
             //others
             'MSIE',
             // Fakes
-            'Mac; Mac OS '
-        );
+            'Mac; Mac OS ',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnPrism)) {
             return false;
@@ -162,7 +163,7 @@ class Prism extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Prism');
+        $searches = ['Prism'];
 
         return $detector->detectVersion($searches);
     }
@@ -170,7 +171,7 @@ class Prism extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

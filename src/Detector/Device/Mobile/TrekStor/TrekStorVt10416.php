@@ -21,22 +21,23 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
@@ -53,7 +54,7 @@ class TrekStorVt10416 extends AbstractDevice implements DeviceHasWurflKeyInterfa
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'VT10416-1',
         'model_extra_info'       => null,
@@ -81,16 +82,16 @@ class TrekStorVt10416 extends AbstractDevice implements DeviceHasWurflKeyInterfa
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $trekStorPhones = array('VT10416-1');
+        $trekStorPhones = ['VT10416-1'];
 
         if ($this->utils->checkIfContains($trekStorPhones)) {
             return true;
@@ -102,7 +103,7 @@ class TrekStorVt10416 extends AbstractDevice implements DeviceHasWurflKeyInterfa
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

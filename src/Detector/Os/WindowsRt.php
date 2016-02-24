@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -35,7 +36,7 @@ use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -62,19 +63,19 @@ class WindowsRt extends AbstractOs
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
 
-        if ($this->utils->checkIfContains(array('win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'))) {
+        if ($this->utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
             return $detector->setVersion('ME');
         }
 
-        if ($this->utils->checkIfContains(array('Win98'))) {
+        if ($this->utils->checkIfContains(['Win98'])) {
             return $detector->setVersion('98');
         }
 
-        if ($this->utils->checkIfContains(array('Win95'))) {
+        if ($this->utils->checkIfContains(['Win95'])) {
             return $detector->setVersion('95');
         }
 
-        if ($this->utils->checkIfContains(array('Windows-NT'))) {
+        if ($this->utils->checkIfContains(['Windows-NT'])) {
             return $detector->setVersion('NT');
         }
 

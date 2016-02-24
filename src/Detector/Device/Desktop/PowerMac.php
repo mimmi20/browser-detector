@@ -21,24 +21,25 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Desktop;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\Desktop;
 use UaMatcher\Device\DeviceHasVersionInterface;
 use UaResult\Version;
-use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class PowerMac extends AbstractDevice implements DeviceHasVersionInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'PowerMac',
         'model_extra_info'       => null,
@@ -77,7 +78,7 @@ class PowerMac extends AbstractDevice implements DeviceHasVersionInterface
         'sms_enabled'            => false,
         // chips
         'nfc_support'            => false,
-    );
+    ];
 
     /**
      * @var \UaResult\Version
@@ -88,11 +89,11 @@ class PowerMac extends AbstractDevice implements DeviceHasVersionInterface
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @return boolean always true
+     * @return bool always true
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('PowerMac', 'Power%20Macintosh'))) {
+        if ($this->utils->checkIfContains(['PowerMac', 'Power%20Macintosh'])) {
             return true;
         }
 
@@ -102,7 +103,7 @@ class PowerMac extends AbstractDevice implements DeviceHasVersionInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -150,7 +151,7 @@ class PowerMac extends AbstractDevice implements DeviceHasVersionInterface
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $searches = array('PowerMac');
+        $searches = ['PowerMac'];
 
         $this->version = $detector->detectVersion($searches);
 

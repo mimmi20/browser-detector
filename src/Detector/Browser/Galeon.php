@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,12 +34,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class Galeon extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class Galeon extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,11 +78,11 @@ class Galeon extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('Galeon'))) {
+        if (!$this->utils->checkIfContainsAll(['Galeon'])) {
             return false;
         }
 
-        $isNotReallyAnSafari = array(
+        $isNotReallyAnSafari = [
             // using also the KHTML rendering engine
             'Chromium',
             'Flock',
@@ -89,8 +90,8 @@ class Galeon extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
             'Iron',
             'Maemo',
             'PaleMoon',
-            'Rockmelt'
-        );
+            'Rockmelt',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnSafari)) {
             return false;
@@ -139,7 +140,7 @@ class Galeon extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Galeon');
+        $searches = ['Galeon'];
 
         return $detector->detectVersion($searches);
     }
@@ -147,7 +148,7 @@ class Galeon extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

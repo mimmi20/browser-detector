@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,12 +34,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class NaverBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class NaverBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -73,11 +74,11 @@ class NaverBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('NAVER', 'Yeti', 'help.naver.com'))) {
+        if (!$this->utils->checkIfContains(['NAVER', 'Yeti', 'help.naver.com'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('NaverMatome'))) {
+        if ($this->utils->checkIfContains(['NaverMatome'])) {
             return false;
         }
 
@@ -124,7 +125,7 @@ class NaverBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Naver', 'Yeti');
+        $searches = ['Naver', 'Yeti'];
 
         return $detector->detectVersion($searches);
     }
@@ -132,7 +133,7 @@ class NaverBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

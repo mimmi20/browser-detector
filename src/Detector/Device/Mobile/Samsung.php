@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,13 +33,13 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'general Samsung Device',
         'model_extra_info'       => null,
@@ -77,16 +78,16 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $samsungPhones = array(
+        $samsungPhones = [
             'samsung',
             'samsung',
             'gt-',
@@ -106,14 +107,14 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
             'i9300',
             'yp-g',
             'continuum-',
-            'blaze'
-        );
+            'blaze',
+        ];
 
         if (!$this->utils->checkIfContains($samsungPhones, true)) {
             return false;
         }
 
-        $otherMobiles = array(
+        $otherMobiles = [
             'Asus',
             'U30GT',
             'Nexus 7',
@@ -126,8 +127,8 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
             'Nexus-One',
             'GT-H',
             'MT-GT-',
-            'Galaxy S3 EX'
-        );
+            'Galaxy S3 EX',
+        ];
 
         if ($this->utils->checkIfContains($otherMobiles)) {
             return false;
@@ -139,7 +140,7 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

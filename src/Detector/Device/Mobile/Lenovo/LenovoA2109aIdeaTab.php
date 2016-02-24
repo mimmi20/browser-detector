@@ -21,24 +21,25 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'A2109A',
         'model_extra_info'       => null,
@@ -77,20 +78,20 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('IdeaTab', 'A2109A'))) {
+        if (!$this->utils->checkIfContains(['IdeaTab', 'A2109A'])) {
             return false;
         }
 
-        $otherLenovoTabs = array(
+        $otherLenovoTabs = [
             'IdeaTab_A1107',
             'IdeaTabS2110AF',
             'IdeaTab A2107A-H',
@@ -100,7 +101,7 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
             'S6000L',
             'S6000',
             'A1000L-F',
-        );
+        ];
 
         if ($this->utils->checkIfContains($otherLenovoTabs)) {
             return false;
@@ -112,7 +113,7 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

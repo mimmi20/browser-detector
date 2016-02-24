@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,12 +35,12 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -50,7 +51,7 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -65,7 +66,7 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -74,11 +75,11 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAll(array('Mozilla/', 'Chrome/', 'Version/'))) {
+        if (!$this->utils->checkIfContainsAll(['Mozilla/', 'Chrome/', 'Version/'])) {
             return false;
         }
 
-        $isNotReallyAnChrome = array(
+        $isNotReallyAnChrome = [
             // using also the KHTML rendering engine
             'Arora',
             'Chromium',
@@ -109,7 +110,7 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
             'HubSpot Webcrawler',
             // Fakes
             'Mac; Mac OS ',
-        );
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
             return false;
@@ -117,9 +118,9 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
 
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(array('Chrome'));
+        $detector->detectVersion(['Chrome']);
 
-        if (0 != $detector->getVersion(Version::MINORONLY)) {
+        if (0 !== $detector->getVersion(Version::MINORONLY)) {
             return false;
         }
 
@@ -167,7 +168,7 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Version');
+        $searches = ['Version'];
 
         return $detector->detectVersion($searches);
     }
@@ -175,7 +176,7 @@ class AndroidWebView extends AbstractBrowser implements BrowserHasSpecificEngine
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

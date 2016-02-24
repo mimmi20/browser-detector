@@ -21,26 +21,27 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsChangesBrowserInterface;
 use UaMatcher\Os\OsChangesEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -70,14 +71,14 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
             return $detector->setVersion('2.1.1');
         }
 
-        $searches = array(
+        $searches = [
             'Android android',
             'Android AndroidHouse Team',
             'Android WildPuzzleROM v8 froyo',
             'Android',
             'JUC\(Linux;U;',
-            'Android OS'
-        );
+            'Android OS',
+        ];
 
         $detector->detectVersion($searches);
 
@@ -114,7 +115,7 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
     public function changeBrowserProperties(BrowserInterface $browser)
     {
         if ($this->utils->checkIfContains(
-            array('(Linux; U;', 'Linux x86_64;', 'Mac OS X')
+            ['(Linux; U;', 'Linux x86_64;', 'Mac OS X']
         ) && !$this->utils->checkIfContains('Android')
         ) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
@@ -154,7 +155,7 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
         $engine->setCapability('menu_with_list_of_links_recommended', true);
         $engine->setCapability('break_list_of_links_with_br_element_recommended', true);
 
-        if ('Android Webkit' == $browser->getName()) {
+        if ('Android Webkit' === $browser->getName()) {
             $engine->setCapability('is_sencha_touch_ok', false);
         }
 

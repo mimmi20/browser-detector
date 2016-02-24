@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -37,7 +38,7 @@ use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -48,7 +49,7 @@ class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -63,7 +64,7 @@ class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -72,18 +73,18 @@ class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('Yahoo Pipes', 'Yahoo! Slurp', 'Y!J'))) {
+        if ($this->utils->checkIfContains(['Yahoo Pipes', 'Yahoo! Slurp', 'Y!J'])) {
             return false;
         }
 
-        $yahooBots = array(
+        $yahooBots = [
             'Mozilla/5.0 (YahooYSMcm',
             'Scooter',
             'Y!OASIS',
             'YahooYSMcm',
             'YRL_ODP_CRAWLER',
-            'www.yahoo.com'
-        );
+            'www.yahoo.com',
+        ];
 
         if (!$this->utils->checkIfContains($yahooBots)) {
             return false;
@@ -125,7 +126,7 @@ class Yahoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

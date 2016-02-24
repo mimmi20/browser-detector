@@ -21,22 +21,23 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use UaResult\Version;
 use UaMatcher\Engine\EngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -47,7 +48,7 @@ class Webkit extends AbstractEngine implements EngineInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // markup
         'utf8_support'                                    => false,
         'multipart_support'                               => false,
@@ -192,7 +193,7 @@ class Webkit extends AbstractEngine implements EngineInterface
         'css_border_image'                                => 'webkit',
         'css_rounded_corners'                             => 'webkit',
         'css_supports_width_as_percentage'                => true,
-    );
+    ];
 
     /**
      * gets the name of the platform
@@ -224,12 +225,12 @@ class Webkit extends AbstractEngine implements EngineInterface
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array(
+        $searches = [
             'AppleWebKit',
             'WebKit',
             'CFNetwork',
-            'Browser\/AppleWebKit'
-        );
+            'Browser\/AppleWebKit',
+        ];
 
         return $detector->detectVersion($searches);
     }

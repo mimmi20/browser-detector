@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,8 +35,6 @@ use UaHelper\Utils;
 
 /**
  * a helper to detect windows
- *
- * @package   BrowserDetector
  */
 class Windows
 {
@@ -66,12 +65,12 @@ class Windows
 
     public function isWindows()
     {
-        $isNotReallyAWindows = array(
+        $isNotReallyAWindows = [
             // other OS and Mobile Windows
             'Linux',
             'Macintosh',
-            'Mobi'
-        );
+            'Mobi',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAWindows)) {
             return false;
@@ -99,12 +98,12 @@ class Windows
             return true;
         }
 
-        $windows = array(
+        $windows = [
             'win10', 'win9', 'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
             'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',
             'windows 3.1', 'win9x/nt 4.90', 'windows xp', 'windows me',
-            'windows', 'win32'
-        );
+            'windows', 'win32',
+        ];
 
         if (!$this->utils->checkIfContains($windows, true)) {
             return false;
@@ -115,21 +114,21 @@ class Windows
 
     public function isMobileWindows()
     {
-        $mobileWindows = array(
+        $mobileWindows = [
             'windows ce', 'windows phone', 'windows mobile',
             'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
-            'windowsmobile', 'wpdesktop', 'mobile version', 'wpdesktop'
-        );
+            'windowsmobile', 'wpdesktop', 'mobile version', 'wpdesktop',
+        ];
 
         if (!$this->utils->checkIfContains($mobileWindows, true)) {
             return false;
         }
 
-        $isNotReallyAWindows = array(
+        $isNotReallyAWindows = [
             // other OS
             'Linux',
             'Macintosh',
-        );
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAWindows)) {
             return false;

@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Acer;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\FonePad;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class AcerIconiaA511 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'A511',
         'model_extra_info'       => null,
@@ -83,20 +84,20 @@ class AcerIconiaA511 extends AbstractDevice implements DeviceHasWurflKeyInterfac
 
         // chips
         'nfc_support'            => true, // wurflkey: acer_iconia_tab_a511_ver1
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Iconia A511', 'A511'))) {
+        if (!$this->utils->checkIfContains(['Iconia A511', 'A511'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('HTC'))) {
+        if ($this->utils->checkIfContains(['HTC'])) {
             return false;
         }
 
@@ -106,7 +107,7 @@ class AcerIconiaA511 extends AbstractDevice implements DeviceHasWurflKeyInterfac
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -172,7 +173,7 @@ class AcerIconiaA511 extends AbstractDevice implements DeviceHasWurflKeyInterfac
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.1:
                         $wurflKey = 'acer_iconia_tab_a511_ver1_suban41';
                         break;

@@ -21,28 +21,29 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -53,7 +54,7 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasWurflK
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'Sensation XE Beats Z715e',
         'model_extra_info'       => null,
@@ -81,16 +82,16 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasWurflK
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $phones = array(
+        $phones = [
             'HTC Sensation XE',
             'HTC_SensationXE',
             'HTC Sensation XE Beats',
@@ -100,8 +101,8 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasWurflK
             'HTC_SensationXE_Beats_Z715e',
             'HTC Sensation XE with Beats Audio Z715e',
             'HTC Sensation XE with Beats Audio',
-            'SensationXE_Beats_Z715e'
-        );
+            'SensationXE_Beats_Z715e',
+        ];
 
         if (!$this->utils->checkIfContains($phones)) {
             return false;
@@ -113,7 +114,7 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasWurflK
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

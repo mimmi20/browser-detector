@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,12 +34,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class IcabMobile extends AbstractBrowser implements BrowserHasSpecificEngineInte
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class IcabMobile extends AbstractBrowser implements BrowserHasSpecificEngineInte
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -73,11 +74,11 @@ class IcabMobile extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('iCabMobile'))) {
+        if (!$this->utils->checkIfContains(['iCabMobile'])) {
             return false;
         }
 
-        $isNotReallyAnFirefox = array(
+        $isNotReallyAnFirefox = [
             // using also the Gecko rendering engine
             'Maemo',
             'Maxthon',
@@ -92,8 +93,8 @@ class IcabMobile extends AbstractBrowser implements BrowserHasSpecificEngineInte
             'Flock',
             'Fennec',
             'Firefox',
-            'Lynx'
-        );
+            'Lynx',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
@@ -142,7 +143,7 @@ class IcabMobile extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('iCabMobile', 'iCab');
+        $searches = ['iCabMobile', 'iCab'];
 
         return $detector->detectVersion($searches);
     }
@@ -150,7 +151,7 @@ class IcabMobile extends AbstractBrowser implements BrowserHasSpecificEngineInte
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

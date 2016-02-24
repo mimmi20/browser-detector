@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,14 +35,14 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class Chromium extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class Chromium extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -80,11 +81,11 @@ class Chromium extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('applewebkit', 'chromium'), true)) {
+        if (!$this->utils->checkIfContainsAll(['applewebkit', 'chromium'], true)) {
             return false;
         }
 
-        $isNotReallyAnChromium = array(
+        $isNotReallyAnChromium = [
             // using also the KHTML rendering engine
             'Flock',
             'Galeon',
@@ -92,8 +93,8 @@ class Chromium extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
             'Iron',
             'Maemo',
             'PaleMoon',
-            'Rockmelt'
-        );
+            'Rockmelt',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnChromium)) {
             return false;
@@ -143,7 +144,7 @@ class Chromium extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Chromium');
+        $searches = ['Chromium'];
 
         return $detector->detectVersion($searches);
     }
@@ -151,7 +152,7 @@ class Chromium extends AbstractBrowser implements BrowserHasWurflKeyInterface, B
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

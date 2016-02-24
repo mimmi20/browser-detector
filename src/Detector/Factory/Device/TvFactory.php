@@ -21,16 +21,16 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\GeneralTv;
 use BrowserDetector\Detector\Device\Tv\DlinkDsm380;
 use BrowserDetector\Detector\Device\Tv\GoogleTv;
@@ -57,7 +57,7 @@ use Psr\Log\LoggerInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -66,7 +66,7 @@ class TvFactory
     /**
      * detects the device name from the given user agent
      *
-     * @param string $useragent
+     * @param string                   $useragent
      * @param \Psr\Log\LoggerInterface $logger
      *
      * @return \UaMatcher\Device\DeviceInterface

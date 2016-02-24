@@ -21,26 +21,27 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsChangesBrowserInterface;
 use UaMatcher\Os\OsChangesEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -66,19 +67,19 @@ class WindowsPhoneOs extends AbstractOs implements OsChangesEngineInterface, OsC
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+        if ($this->utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
             return $detector->setVersion('7.5');
         }
 
-        if ($this->utils->checkIfContains(array('WPDesktop'))) {
-            if ($this->utils->checkIfContains(array('Windows NT 6.2'))) {
+        if ($this->utils->checkIfContains(['WPDesktop'])) {
+            if ($this->utils->checkIfContains(['Windows NT 6.2'])) {
                 return $detector->setVersion('8.1');
             }
 
             return $detector->setVersion('8.0');
         }
 
-        $searches = array('Windows Phone OS', 'Windows Phone');
+        $searches = ['Windows Phone OS', 'Windows Phone'];
 
         return $detector->detectVersion($searches);
     }
@@ -102,7 +103,7 @@ class WindowsPhoneOs extends AbstractOs implements OsChangesEngineInterface, OsC
      */
     public function changeBrowserProperties(BrowserInterface $browser)
     {
-        if ($this->utils->checkIfContains(array('XBLWP7', 'ZuneWP7'))) {
+        if ($this->utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
             $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
         }
 
@@ -120,7 +121,7 @@ class WindowsPhoneOs extends AbstractOs implements OsChangesEngineInterface, OsC
      */
     public function changeEngineProperties(EngineInterface $engine, BrowserInterface $browser, DeviceInterface $device)
     {
-        $browserVersion = (float)$browser->detectVersion()->getVersion(
+        $browserVersion = (float) $browser->detectVersion()->getVersion(
             Version::MAJORMINOR
         );
 

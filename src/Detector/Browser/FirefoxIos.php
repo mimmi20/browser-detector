@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,16 +33,16 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
-use UaResult\Version;
 use BrowserDetector\Helper\SpamCrawlerFake;
+use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class FirefoxIos extends AbstractBrowser implements BrowserHasWurflKeyInterface,
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class FirefoxIos extends AbstractBrowser implements BrowserHasWurflKeyInterface,
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -83,21 +84,21 @@ class FirefoxIos extends AbstractBrowser implements BrowserHasWurflKeyInterface,
             return false;
         }
 
-        $firefoxCodes = array(
+        $firefoxCodes = [
             'Firefox',
             'Minefield',
             'Nightly',
             'Shiretoko',
             'BonEcho',
             'Namoroka',
-            'Fennec'
-        );
+            'Fennec',
+        ];
 
         if (!$this->utils->checkIfContains($firefoxCodes)) {
             return false;
         }
 
-        $isNotReallyAnFirefox = array(
+        $isNotReallyAnFirefox = [
             // using also the Gecko rendering engine
             'Maemo',
             'Maxthon',
@@ -138,8 +139,8 @@ class FirefoxIos extends AbstractBrowser implements BrowserHasWurflKeyInterface,
             'MSIE',
             'Trident',
             // Fakes
-            'Mac; Mac OS '
-        );
+            'Mac; Mac OS ',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
@@ -192,7 +193,7 @@ class FirefoxIos extends AbstractBrowser implements BrowserHasWurflKeyInterface,
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('FxiOS');
+        $searches = ['FxiOS'];
 
         return $detector->detectVersion($searches);
     }
@@ -200,7 +201,7 @@ class FirefoxIos extends AbstractBrowser implements BrowserHasWurflKeyInterface,
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -227,12 +228,12 @@ class FirefoxIos extends AbstractBrowser implements BrowserHasWurflKeyInterface,
      */
     public function getWurflKey(OsInterface $os)
     {
-        $browserVersion = (float)$this->detectVersion()->getVersion(Version::MAJORMINOR);
+        $browserVersion = (float) $this->detectVersion()->getVersion(Version::MAJORMINOR);
 
         if (3.5 === $browserVersion) {
             $wurflKey = 'firefox_3_5';
         } else {
-            $wurflKey = 'firefox_' . (int)$browserVersion . '_0';
+            $wurflKey = 'firefox_' . (int) $browserVersion . '_0';
         }
 
         return $wurflKey;

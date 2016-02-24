@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Acer;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\FonePad;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -56,7 +57,7 @@ class AcerIconiaA210
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'A210',
         'model_extra_info'       => null,
@@ -84,16 +85,16 @@ class AcerIconiaA210
         'sms_enabled'            => false,
         // chips
         'nfc_support'            => false,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Iconia A210', 'A210'))) {
+        if (!$this->utils->checkIfContains(['Iconia A210', 'A210'])) {
             return false;
         }
 
@@ -103,7 +104,7 @@ class AcerIconiaA210
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -148,7 +149,7 @@ class AcerIconiaA210
      */
     public function detectSpecialProperties()
     {
-        if ($this->utils->checkIfContains(array('Build/IMM76D'))) {
+        if ($this->utils->checkIfContains(['Build/IMM76D'])) {
             $this->setCapability(
                 'uaprof',
                 'http://support.acer.com/UAprofile/Acer_A210_IMM76D_Profile.xml'
@@ -187,7 +188,7 @@ class AcerIconiaA210
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.1:
                         $wurflKey = 'acer_iconia_tab_a210_ver1_suban41';
                         break;

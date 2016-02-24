@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,7 +37,7 @@ use UaDeviceType\Desktop;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -47,7 +48,7 @@ class Macintosh extends AbstractDevice
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'Macintosh',
         'model_extra_info'       => null,
@@ -75,16 +76,16 @@ class Macintosh extends AbstractDevice
         'sms_enabled'            => false,
         // chips
         'nfc_support'            => false,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $mac = array(
+        $mac = [
             'Macintosh',
             'Darwin',
             'Mac_PowerPC',
@@ -92,15 +93,15 @@ class Macintosh extends AbstractDevice
             'for Mac',
             'PPC Mac',
             'Mac OS X',
-            '(MacOS)'
-        );
+            '(MacOS)',
+        ];
 
         if (!$this->utils->checkIfContains($mac)) {
             return false;
         }
 
         if ($this->utils->checkIfContains(
-            array('MacBook', 'Macmini', 'iMac', 'MacPro', 'PowerMac', 'Power%20Macintosh')
+            ['MacBook', 'Macmini', 'iMac', 'MacPro', 'PowerMac', 'Power%20Macintosh']
         )
         ) {
             return false;
@@ -112,7 +113,7 @@ class Macintosh extends AbstractDevice
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

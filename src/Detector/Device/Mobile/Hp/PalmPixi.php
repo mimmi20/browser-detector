@@ -21,31 +21,32 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\WebOs;
 use UaDeviceType\MobilePhone;
-use UaMatcher\Device\DeviceHasVersionInterface;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\Device\DeviceHasVersionInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 use Wurfl\WurflConstants;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -58,7 +59,7 @@ class PalmPixi
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'Pixi',
         'model_extra_info'       => null,
@@ -86,7 +87,7 @@ class PalmPixi
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * @var \UaResult\Version
@@ -96,7 +97,7 @@ class PalmPixi
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -110,7 +111,7 @@ class PalmPixi
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -172,7 +173,7 @@ class PalmPixi
 
         $modelVersion = $this->detectVersion()->getVersion(Version::MAJORMINOR);
 
-        if ('1.1' == $modelVersion) {
+        if ('1.1' === $modelVersion) {
             $this->setCapability('code_name', 'Pixi Plus');
             $wurflKey = 'palm_pixi_plus_ver1';
         }
@@ -191,7 +192,7 @@ class PalmPixi
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $searches = array('Pixi');
+        $searches = ['Pixi'];
 
         $this->version = $detector->detectVersion($searches);
 

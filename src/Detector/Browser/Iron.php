@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,14 +35,14 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -80,11 +81,11 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('AppleWebKit', 'Chrome'))) {
+        if (!$this->utils->checkIfContainsAll(['AppleWebKit', 'Chrome'])) {
             return false;
         }
 
-        $isNotReallyAnIron = array(
+        $isNotReallyAnIron = [
             // using also the KHTML rendering engine
             'Chromium',
             'Flock',
@@ -106,7 +107,7 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
             'HubSpot Webcrawler',
             'Google Page Speed',
             'TagInspector',
-        );
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnIron)) {
             return false;
@@ -159,7 +160,7 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Iron', 'Chrome');
+        $searches = ['Iron', 'Chrome'];
 
         return $detector->detectVersion($searches);
     }
@@ -167,7 +168,7 @@ class Iron extends AbstractBrowser implements BrowserHasWurflKeyInterface, Brows
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

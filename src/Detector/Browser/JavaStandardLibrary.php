@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,12 +34,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,7 +78,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
             return false;
         }
 
-        $others = array('Phantom', 'UCWEB', 'UCBrowser', 'Google-HTTP-Java-Client');
+        $others = ['Phantom', 'UCWEB', 'UCBrowser', 'Google-HTTP-Java-Client'];
 
         if ($this->utils->checkIfContains($others)) {
             return false;
@@ -126,7 +127,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Java');
+        $searches = ['Java'];
 
         return $detector->detectVersion($searches);
     }
@@ -134,7 +135,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

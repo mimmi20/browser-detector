@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,14 +33,14 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
-use UaResult\Version;
 use BrowserDetector\Helper\Safari as SafariHelper;
+use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -50,7 +51,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -65,7 +66,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -74,11 +75,11 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Android', 'JUC (Linux; U;', 'GINGERBREAD'))) {
+        if (!$this->utils->checkIfContains(['Android', 'JUC (Linux; U;', 'GINGERBREAD'])) {
             return false;
         }
 
-        $noAndroid = array(
+        $noAndroid = [
             'AndroidDownloadManager',
             'BlackBerry',
             'Blackberry',
@@ -120,7 +121,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
             'iBrowser',
             'OneBrowser',
             'douban',
-        );
+        ];
 
         if ($this->utils->checkIfContains($noAndroid)) {
             return false;
@@ -234,7 +235,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
             return $detector->setVersion($matches[1]);
         }
 
-        $searches = array('Version', 'Safari', 'JUC \(Linux\; U\;');
+        $searches = ['Version', 'Safari', 'JUC \(Linux\; U\;'];
 
         return $detector->detectVersion($searches);
     }
@@ -242,7 +243,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

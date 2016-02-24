@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class HtcX315eSensationXlBeats extends AbstractDevice implements DeviceHasWurflK
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'X315e',
         'model_extra_info'       => null,
@@ -82,22 +83,22 @@ class HtcX315eSensationXlBeats extends AbstractDevice implements DeviceHasWurflK
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $phones = array(
+        $phones = [
             'HTC_SensationXL_Beats_X315e',
             'HTC Sensation XL with Beats Audio X315e',
             'SensationXL_Beats_X315e',
             'HTC_DesireHD_Beats_X315e',
-            'HTC_Runnymede'
-        );
+            'HTC_Runnymede',
+        ];
 
         if (!$this->utils->checkIfContains($phones)) {
             return false;
@@ -109,7 +110,7 @@ class HtcX315eSensationXlBeats extends AbstractDevice implements DeviceHasWurflK
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -175,7 +176,7 @@ class HtcX315eSensationXlBeats extends AbstractDevice implements DeviceHasWurflK
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.0:
                         $wurflKey = 'htc_x315e_ver1_suban40uscore';
                         break;

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -35,13 +36,13 @@ use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -76,19 +77,19 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'))) {
+        if (!$this->utils->checkIfContains(['Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'])) {
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Chrome', 'CrMo', 'CriOS'))) {
+        if (!$this->utils->checkIfContains(['Chrome', 'CrMo', 'CriOS'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Version/'))) {
+        if ($this->utils->checkIfContains(['Version/'])) {
             return false;
         }
 
-        $isNotReallyAnChrome = array(
+        $isNotReallyAnChrome = [
             // using also the KHTML rendering engine
             'Arora',
             'Chromium',
@@ -145,8 +146,8 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
             'QIHU 360EE',
             'QIHU 360SE',
             // Fakes
-            'Mac; Mac OS '
-        );
+            'Mac; Mac OS ',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
             return false;
@@ -154,9 +155,9 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
 
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(array('Chrome'));
+        $detector->detectVersion(['Chrome']);
 
-        if (1 <= $detector->getVersion(Version::MAJORONLY) && 0 != $detector->getVersion(Version::MINORONLY)) {
+        if (1 <= $detector->getVersion(Version::MAJORONLY) && 0 !== $detector->getVersion(Version::MINORONLY)) {
             return false;
         }
 
@@ -204,7 +205,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('Chrome', 'CrMo', 'CriOS');
+        $searches = ['Chrome', 'CrMo', 'CriOS'];
 
         return $detector->detectVersion($searches);
     }
@@ -212,7 +213,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -231,7 +232,7 @@ class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, Bro
     {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
-        if (null !== $os && in_array($os->getName(), array('iOS'))) {
+        if (null !== $os && in_array($os->getName(), ['iOS'])) {
             $engine = new Webkit($this->useragent, $this->logger);
         } elseif ($version >= 28) {
             $engine = new Blink($this->useragent, $this->logger);

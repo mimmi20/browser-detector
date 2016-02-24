@@ -21,24 +21,25 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class SonyEricssonMK16a extends AbstractDevice implements DeviceHasSpecificPlatf
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'MK16a',
         'model_extra_info'       => null,
@@ -77,16 +78,16 @@ class SonyEricssonMK16a extends AbstractDevice implements DeviceHasSpecificPlatf
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonMK16a', 'MK16a'))) {
+        if (!$this->utils->checkIfContains(['SonyEricssonMK16a', 'MK16a'])) {
             return false;
         }
 
@@ -96,7 +97,7 @@ class SonyEricssonMK16a extends AbstractDevice implements DeviceHasSpecificPlatf
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

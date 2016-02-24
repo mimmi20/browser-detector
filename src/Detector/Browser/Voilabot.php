@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,12 +34,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\UnknownEngine;
 use UaBrowserType\Bot;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class Voilabot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class Voilabot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,7 +78,7 @@ class Voilabot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             return false;
         }
 
-        if (!$this->utils->checkIfContains(array('Voilabot', 'VoilaBot'))) {
+        if (!$this->utils->checkIfContains(['Voilabot', 'VoilaBot'])) {
             return false;
         }
 
@@ -124,7 +125,7 @@ class Voilabot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Voilabot', 'VoilaBot BETA');
+        $searches = ['Voilabot', 'VoilaBot BETA'];
 
         return $detector->detectVersion($searches);
     }
@@ -132,7 +133,7 @@ class Voilabot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

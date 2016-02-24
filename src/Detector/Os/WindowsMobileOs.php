@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -35,7 +36,7 @@ use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -65,15 +66,15 @@ class WindowsMobileOs extends AbstractOs
             return $detector->setVersion('6.0');
         }
 
-        if ($this->utils->checkIfContains(array('Windows CE', 'Windows Mobile', 'MSIEMobile'))) {
+        if ($this->utils->checkIfContains(['Windows CE', 'Windows Mobile', 'MSIEMobile'])) {
             $detector->setDefaulVersion('6.0');
 
-            $searches = array('MSIEMobile');
+            $searches = ['MSIEMobile'];
 
             return $detector->detectVersion($searches);
         }
 
-        $searches = array('Windows Phone');
+        $searches = ['Windows Phone'];
 
         return $detector->detectVersion($searches);
     }

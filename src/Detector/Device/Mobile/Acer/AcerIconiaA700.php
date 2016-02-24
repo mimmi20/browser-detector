@@ -21,30 +21,31 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Acer;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\FonePad;
-use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -57,7 +58,7 @@ class AcerIconiaA700
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'A700',
         'model_extra_info'       => null,
@@ -86,16 +87,16 @@ class AcerIconiaA700
 
         // chips
         'nfc_support'            => true, // wurflkey: acer_iconia_tab_a700_ver1_suban41
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Iconia A700', 'A700'))) {
+        if (!$this->utils->checkIfContains(['Iconia A700', 'A700'])) {
             return false;
         }
 
@@ -105,7 +106,7 @@ class AcerIconiaA700
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -150,7 +151,7 @@ class AcerIconiaA700
      */
     public function detectSpecialProperties()
     {
-        if ($this->utils->checkIfContains(array('Build/IMM7'))) {
+        if ($this->utils->checkIfContains(['Build/IMM7'])) {
             $this->setCapability(
                 'uaprof',
                 'http://support.acer.com/UAprofile/Acer_A700_IML74K_Profile.xml'
@@ -189,7 +190,7 @@ class AcerIconiaA700
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.1:
                         $wurflKey = 'acer_iconia_tab_a700_ver1_suban41';
                         break;
@@ -199,7 +200,7 @@ class AcerIconiaA700
                 }
                 break;
             case 'Chrome':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.0:
                         $wurflKey = 'acer_iconia_tab_a700_ver1_subuachrome';
                         break;

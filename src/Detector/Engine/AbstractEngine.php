@@ -21,26 +21,27 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company\Unknown;
-use UaResult\Version;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Engine\EngineInterface;
+use UaResult\Version;
 
 /**
  * base class for all rendering engines to detect
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -66,7 +67,7 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // markup
         'html_web_3_2'                                      => null,
         'html_wi_oma_xhtmlmp_1_0'                           => null,
@@ -537,7 +538,7 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
         'midi_polyphonic'                                   => null,
         // transcoding
         'transcoder_ua_header'                              => null,
-    );
+    ];
 
     /**
      * Class Constructor
@@ -554,6 +555,7 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
 
     /**
      * initializes the object
+     *
      * @param string $useragent
      */
     protected function init($useragent)
@@ -603,8 +605,9 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return string Capability value
      * @throws \InvalidArgumentException
+     *
+     * @return string Capability value
      */
     public function getCapability($capabilityName)
     {
@@ -640,8 +643,7 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
      * Returns the value of a given capability name
      * for the current device
      *
-     * @param string $capabilityName must be a valid capability name
-     *
+     * @param string $capabilityName  must be a valid capability name
      * @param null   $capabilityValue
      *
      * @return EngineInterface
@@ -670,27 +672,30 @@ abstract class AbstractEngine implements EngineInterface, \Serializable
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
      * String representation of object
+     *
      * @link http://php.net/manual/en/serializable.serialize.php
+     *
      * @return string the string representation of the object or null
      */
     public function serialize()
     {
         return serialize(
-            array(
+            [
                 'properties' => $this->properties,
                 'useragent'  => $this->useragent,
-            )
+            ]
         );
     }
 
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
      * Constructs the object
+     *
      * @link http://php.net/manual/en/serializable.unserialize.php
+     *
      * @param string $serialized <p>
-     * The string representation of the object.
-     * </p>
-     * @return void
+     *                           The string representation of the object.
+     *                           </p>
      */
     public function unserialize($serialized)
     {

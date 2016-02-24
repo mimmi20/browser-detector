@@ -21,30 +21,31 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 use Wurfl\WurflConstants;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -55,7 +56,7 @@ class SamsungGtp5220 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'GT-P5220',
         'model_extra_info'       => null,
@@ -83,16 +84,16 @@ class SamsungGtp5220 extends AbstractDevice implements DeviceHasWurflKeyInterfac
         'sms_enabled'            => false,
         // chips
         'nfc_support'            => false,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SAMSUNG-GT-P5220', 'GT-P5220'))) {
+        if (!$this->utils->checkIfContains(['SAMSUNG-GT-P5220', 'GT-P5220'])) {
             return false;
         }
 
@@ -102,7 +103,7 @@ class SamsungGtp5220 extends AbstractDevice implements DeviceHasWurflKeyInterfac
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -168,7 +169,7 @@ class SamsungGtp5220 extends AbstractDevice implements DeviceHasWurflKeyInterfac
 
         switch ($browser->getName()) {
             case 'Chrome':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.4:
                         $wurflKey = 'samsung_gt_p5200_ver1_suban4p5220chrome';
                         break;

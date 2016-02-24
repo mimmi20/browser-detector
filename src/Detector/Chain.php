@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,13 +37,11 @@ use UaMatcher\MatcherInterface;
 
 /**
  * a general chain used for detecting devices, browsers, platforms and engines
- *
- * @package   BrowserDetector
  */
 class Chain
 {
     /** @var array */
-    private $handlersToUse = array();
+    private $handlersToUse = [];
 
     /** @var mixed */
     private $defaultHandler = null;

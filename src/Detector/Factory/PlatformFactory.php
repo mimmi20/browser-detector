@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -40,7 +41,7 @@ use UaHelper\Utils;
  * Browser detection class
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
@@ -50,7 +51,7 @@ class PlatformFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $agent
+     * @param string                   $agent
      * @param \Psr\Log\LoggerInterface $logger
      *
      * @return \UaMatcher\Os\OsInterface
@@ -135,7 +136,7 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'Kubuntu';
         } elseif ($utils->checkIfContains('ubuntu', true)) {
             $platformKey = 'Ubuntu';
-        } elseif ($utils->checkIfContains(array('RIM Tablet'))) {
+        } elseif ($utils->checkIfContains(['RIM Tablet'])) {
             $platformKey = 'RimTabletOs';
         } elseif ($utils->checkIfContains('centos', true)) {
             $platformKey = 'CentOs';
@@ -145,7 +146,7 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'JoliOs';
         } elseif ($utils->checkIfContains('mandriva', true)) {
             $platformKey = 'Mandriva';
-        } elseif ($utils->checkIfContainsAll(array('mint', 'linux'), true)) {
+        } elseif ($utils->checkIfContainsAll(['mint', 'linux'], true)) {
             $platformKey = 'Mint';
         } elseif ($utils->checkIfContains('suse', true)) {
             $platformKey = 'Suse';
@@ -153,7 +154,7 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'Fedora';
         } elseif ($utils->checkIfContains('gentoo', true)) {
             $platformKey = 'Gentoo';
-        } elseif ($utils->checkIfContains(array('redhat', 'red hat'), true)) {
+        } elseif ($utils->checkIfContains(['redhat', 'red hat'], true)) {
             $platformKey = 'Redhat';
         } elseif ($utils->checkIfContains('slackware', true)) {
             $platformKey = 'Slackware';
@@ -181,11 +182,11 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'DragonflyBsd';
         } elseif ($utils->checkIfContains('BSD Four')) {
             $platformKey = 'BsdFour';
-        } elseif ($utils->checkIfContainsAll(array('HP-UX', 'HPUX'))) {
+        } elseif ($utils->checkIfContainsAll(['HP-UX', 'HPUX'])) {
             $platformKey = 'HP-UX';
-        } elseif ($utils->checkIfContainsAll(array('BeOS'))) {
+        } elseif ($utils->checkIfContainsAll(['BeOS'])) {
             $platformKey = 'Beos';
-        } elseif ($utils->checkIfContains(array('IRIX64', 'IRIX'))) {
+        } elseif ($utils->checkIfContains(['IRIX64', 'IRIX'])) {
             $platformKey = 'IRIX';
         } elseif ($utils->checkIfContains('solaris', true)) {
             $platformKey = 'Solaris';
@@ -195,21 +196,21 @@ class PlatformFactory implements FactoryInterface
             $platformKey = 'RiscOs';
         } elseif ($utils->checkIfContains('OpenVMS')) {
             $platformKey = 'OpenVms';
-        } elseif ($utils->checkIfContains(array('Tru64 UNIX', 'Digital Unix'))) {
+        } elseif ($utils->checkIfContains(['Tru64 UNIX', 'Digital Unix'])) {
             $platformKey = 'Tru64Unix';
         } elseif ($utils->checkIfContains('unix', true)) {
             $platformKey = 'Unix';
-        } elseif ($utils->checkIfContains(array('os/2', 'warp'), true)) {
+        } elseif ($utils->checkIfContains(['os/2', 'warp'], true)) {
             $platformKey = 'Os2';
-        } elseif ($utils->checkIfContains(array('NETTV', 'HbbTV', 'SMART-TV'))) {
+        } elseif ($utils->checkIfContains(['NETTV', 'HbbTV', 'SMART-TV'])) {
             $platformKey = 'LinuxTv';
-        } elseif ($utils->checkIfContains(array('Linux', 'linux', 'X11'))) {
+        } elseif ($utils->checkIfContains(['Linux', 'linux', 'X11'])) {
             $platformKey = 'Linux';
         } elseif ($utils->checkIfContains('CP/M')) {
             $platformKey = 'Cpm';
-        } elseif ($utils->checkIfContains(array('Nintendo Wii', 'Nintendo 3DS'))) {
+        } elseif ($utils->checkIfContains(['Nintendo Wii', 'Nintendo 3DS'])) {
             $platformKey = 'NintendoOs';
-        } elseif ($utils->checkIfContains(array('Nokia'))) {
+        } elseif ($utils->checkIfContains(['Nokia'])) {
             $platformKey = 'NokiaOs';
         } elseif ($utils->checkIfContains('ruby', true)) {
             $platformKey = 'Ruby';

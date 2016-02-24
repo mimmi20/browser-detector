@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class HtcOneX extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'PJ83100',
         'model_extra_info'       => null,
@@ -82,21 +83,21 @@ class HtcOneX extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC One X', 'HTC_One_X', 'HTC/One_X', 'HTC_OneX', 'PJ83100'))) {
+        if (!$this->utils->checkIfContains(['HTC One X', 'HTC_One_X', 'HTC/One_X', 'HTC_OneX', 'PJ83100'])) {
             return false;
         }
 
         if ($this->utils->checkIfContains(
-            array('HTC One XL', 'HTC_One_XL', 'HTC/One_XL', 'HTC One X+', 'HTC_One_X+', 'HTC/One_X+', 'HTC_OneXplus')
+            ['HTC One XL', 'HTC_One_XL', 'HTC/One_XL', 'HTC One X+', 'HTC_One_X+', 'HTC/One_X+', 'HTC_OneXplus']
         )
         ) {
             return false;
@@ -108,7 +109,7 @@ class HtcOneX extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -174,7 +175,7 @@ class HtcOneX extends AbstractDevice implements DeviceHasWurflKeyInterface, Devi
 
         switch ($browser->getName()) {
             case 'Chrome':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.0:
                         $wurflKey = 'htc_one_x_ver1_subuanouscore_subuachrome';
                         break;

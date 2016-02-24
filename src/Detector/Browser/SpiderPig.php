@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -40,7 +41,7 @@ use UaMatcher\Device\DeviceInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -51,7 +52,7 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -66,7 +67,7 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -75,7 +76,7 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('Spider-Pig'))) {
+        if (!$this->utils->checkIfContains(['Spider-Pig'])) {
             return false;
         }
 
@@ -115,7 +116,7 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -142,7 +143,7 @@ class SpiderPig extends AbstractBrowser implements BrowserCalculatesAlternativeR
     public function calculateAlternativeRendering(DeviceInterface $device)
     {
         if ($this->utils->checkIfContains('spider-pig', true)) {
-            $agent = str_ireplace(array('spider-pig'), '', $this->useragent);
+            $agent = str_ireplace(['spider-pig'], '', $this->useragent);
 
             $detector = new BrowserDetector($this->cache, $this->logger);
 

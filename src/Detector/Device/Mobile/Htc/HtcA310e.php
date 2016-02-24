@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class HtcA310e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'A310e',
         'model_extra_info'       => 'HTC Pico', // wurflkey: htc_a310e_ver1_subuauscore
@@ -82,23 +83,23 @@ class HtcA310e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $phones = array(
+        $phones = [
             'HTC/Explorer',
             'HTC_Explorer',
             'HTC/Explorer/A310e',
             'HTC_Explorer_A310e',
             'HTC_A310e',
-            'HTC Explorer A310e'
-        );
+            'HTC Explorer A310e',
+        ];
 
         if (!$this->utils->checkIfContains($phones)) {
             return false;
@@ -110,7 +111,7 @@ class HtcA310e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -176,7 +177,7 @@ class HtcA310e extends AbstractDevice implements DeviceHasWurflKeyInterface, Dev
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 2.3:
                         $wurflKey = 'htc_a310e_ver1_subuauscore';
 

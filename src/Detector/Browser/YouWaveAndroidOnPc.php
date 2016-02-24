@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,14 +35,14 @@ use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Device\DeviceInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -76,7 +77,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('i9988_custom', 'i9999_custom'))) {
+        if (!$this->utils->checkIfContains(['i9988_custom', 'i9999_custom'])) {
             return false;
         }
 
@@ -122,9 +123,9 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
     {
         $version = '';
 
-        if ($this->utils->checkIfContains(array('i9988_custom'))) {
+        if ($this->utils->checkIfContains(['i9988_custom'])) {
             $version = 'Basic';
-        } elseif ($this->utils->checkIfContains(array('i9999_custom'))) {
+        } elseif ($this->utils->checkIfContains(['i9999_custom'])) {
             $version = 'Home';
         }
 
@@ -137,7 +138,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -165,7 +166,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserCalculatesAlt
     public function calculateAlternativeRendering(DeviceInterface $device)
     {
         $agent = str_ireplace(
-            array('i9988_custom', 'i9999_custom'),
+            ['i9988_custom', 'i9999_custom'],
             '',
             $this->useragent
         );

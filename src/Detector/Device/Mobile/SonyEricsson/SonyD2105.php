@@ -21,30 +21,31 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 use Wurfl\WurflConstants;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -55,7 +56,7 @@ class SonyD2105 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'D2105',
         'model_extra_info'       => null,
@@ -83,16 +84,16 @@ class SonyD2105 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonD2105', 'SonyD2105', 'D2105'))) {
+        if (!$this->utils->checkIfContains(['SonyEricssonD2105', 'SonyD2105', 'D2105'])) {
             return false;
         }
 
@@ -102,7 +103,7 @@ class SonyD2105 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -170,7 +171,7 @@ class SonyD2105 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
             case 'Chrome':
                 $wurflKey = 'sony_D2105_ver1_subuachrome';
 
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.4:
                         $wurflKey = 'sony_D2105_ver1_suban44';
                         break;

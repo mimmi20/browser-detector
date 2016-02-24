@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,15 +33,15 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -51,7 +52,7 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'general Motorola Device',
         'model_extra_info'       => null,
@@ -79,20 +80,20 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('HTC', 'Amazon Kindle Fire'))) {
+        if ($this->utils->checkIfContains(['HTC', 'Amazon Kindle Fire'])) {
             return false;
         }
 
-        $motorolaPhones = array(
+        $motorolaPhones = [
             'motorola',
             'moto',
             //'mot',
@@ -126,7 +127,7 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
             'xt1021',
             'xt1052',
             'xt1032',
-        );
+        ];
 
         if (!$this->utils->checkIfContains($motorolaPhones, true)) {
             return false;
@@ -138,7 +139,7 @@ class Motorola extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

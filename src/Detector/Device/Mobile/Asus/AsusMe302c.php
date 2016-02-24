@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class AsusMe302c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'ME302C',
         'model_extra_info'       => null,
@@ -82,12 +83,12 @@ class AsusMe302c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
         'sms_enabled'            => false,
         // chips
         'nfc_support'            => false,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -101,7 +102,7 @@ class AsusMe302c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -167,7 +168,7 @@ class AsusMe302c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.3:
                         $wurflKey = 'asus_memo_pad_me302c_ver1_suban43';
                         break;
@@ -177,7 +178,7 @@ class AsusMe302c extends AbstractDevice implements DeviceHasWurflKeyInterface, D
                 }
                 break;
             case 'Chrome':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.3:
                         $wurflKey = 'asus_memo_pad_me302c_ver1_suban43';
                         break;

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -35,7 +36,7 @@ use UaMatcher\Engine\EngineInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -46,7 +47,7 @@ class UnknownEngine extends AbstractEngine implements EngineInterface
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // markup
         'utf8_support'                                    => null,
         'multipart_support'                               => null,
@@ -191,7 +192,7 @@ class UnknownEngine extends AbstractEngine implements EngineInterface
         'css_border_image'                                => null,
         'css_rounded_corners'                             => null,
         'css_supports_width_as_percentage'                => null,
-    );
+    ];
 
     /**
      * gets the name of the platform

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -36,7 +37,7 @@ use UaHelper\Utils;
  * Class to detect the generic cpu of an Browser
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -92,42 +93,42 @@ class Cpu
         $utils->setUserAgent($this->useragent);
 
         // Intel 64 bits
-        if ($utils->checkIfContains(array('x64', 'x86_64'))) {
+        if ($utils->checkIfContains(['x64', 'x86_64'])) {
             $this->cpu = 'Intel X64';
 
             return $this;
         }
 
         // AMD 64 Bits
-        if ($utils->checkIfContains(array('amd64', 'AMD64'))) {
+        if ($utils->checkIfContains(['amd64', 'AMD64'])) {
             $this->cpu = 'AMD X64';
 
             return $this;
         }
 
         // PPC 64 Bits
-        if ($utils->checkIfContains(array('ppc64'), true)) {
+        if ($utils->checkIfContains(['ppc64'], true)) {
             $this->cpu = 'PPC X64';
 
             return $this;
         }
 
         // Intel X86
-        if ($utils->checkIfContains(array('i586', 'i686', 'i386', 'i486', 'i86'))) {
+        if ($utils->checkIfContains(['i586', 'i686', 'i386', 'i486', 'i86'])) {
             $this->cpu = 'Intel X86';
 
             return $this;
         }
 
         // PPC 64 Bits
-        if ($utils->checkIfContains(array('ppc'), true)) {
+        if ($utils->checkIfContains(['ppc'], true)) {
             $this->cpu = 'PPC';
 
             return $this;
         }
 
         // ARM
-        if ($utils->checkIfContains(array('arm'), true)) {
+        if ($utils->checkIfContains(['arm'], true)) {
             $this->cpu = 'ARM';
 
             return $this;

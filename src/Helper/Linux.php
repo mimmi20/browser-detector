@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,8 +35,6 @@ use UaHelper\Utils;
 
 /**
  * a helper to detect windows
- *
- * @package   BrowserDetector
  */
 class Linux
 {
@@ -66,7 +65,7 @@ class Linux
 
     public function isLinux()
     {
-        $linux = array(
+        $linux = [
             // linux systems
             'linux',
             'debian',
@@ -86,21 +85,21 @@ class Linux
             // bots on linux
             'akregator',
             'installatron',
-        );
+        ];
 
         if (!$this->utils->checkIfContains($linux, true)) {
             return false;
         }
 
-        $noLinux = array(
+        $noLinux = [
             'loewe; sl121',
             'eeepc',
             'microsoft office',
             'microsoft outlook',
             'infegyatlas',
             'terra_101',
-            'jobboerse'
-        );
+            'jobboerse',
+        ];
 
         if ($this->utils->checkIfContains($noLinux, true)) {
             return false;

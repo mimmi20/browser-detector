@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,19 +33,19 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Bits\Browser as BrowserBits;
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Unknown;
-use UaMatcher\MatcherHasWeightInterface;
-use UaResult\Version;
 use Psr\Log\LoggerInterface;
+use UaBrowserType\Unknown;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserInterface;
+use UaMatcher\MatcherHasWeightInterface;
+use UaResult\Version;
 use WurflCache\Adapter\AdapterInterface;
 
 /**
  * base class for all browsers to detect
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -77,7 +78,7 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -92,7 +93,7 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Class Constructor
@@ -109,6 +110,7 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
 
     /**
      * initializes the object
+     *
      * @param string $useragent
      */
     protected function init($useragent)
@@ -150,6 +152,7 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
 
     /**
      * @param \WurflCache\Adapter\AdapterInterface $cache
+     *
      * @return \UaMatcher\Browser\BrowserInterface
      */
     public function setCache(AdapterInterface $cache)
@@ -172,7 +175,7 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -185,8 +188,9 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
      *
      * @param string $capabilityName must be a valid capability name
      *
-     * @return string Capability value
      * @throws \InvalidArgumentException
+     *
+     * @return string Capability value
      */
     public function getCapability($capabilityName)
     {
@@ -218,12 +222,12 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
      * Returns the value of a given capability name
      * for the current device
      *
-     * @param string $capabilityName must be a valid capability name
+     * @param string $capabilityName  must be a valid capability name
      * @param mixed  $capabilityValue
      *
-     * @return BrowserInterface
-     *
      * @throws \InvalidArgumentException
+     *
+     * @return BrowserInterface
      */
     public function setCapability(
         $capabilityName,
@@ -292,27 +296,30 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
      * String representation of object
+     *
      * @link http://php.net/manual/en/serializable.serialize.php
+     *
      * @return string the string representation of the object or null
      */
     public function serialize()
     {
         return serialize(
-            array(
+            [
                 'properties' => $this->properties,
                 'useragent'  => $this->useragent,
-            )
+            ]
         );
     }
 
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
      * Constructs the object
+     *
      * @link http://php.net/manual/en/serializable.unserialize.php
+     *
      * @param string $serialized <p>
-     * The string representation of the object.
-     * </p>
-     * @return void
+     *                           The string representation of the object.
+     *                           </p>
      */
     public function unserialize($serialized)
     {

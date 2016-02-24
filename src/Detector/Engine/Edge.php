@@ -18,24 +18,25 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use UaResult\Version;
 use UaMatcher\Device\DeviceInterface;
 use UaMatcher\Engine\EngineDependsOnDeviceInterface;
 use UaMatcher\Engine\EngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -46,7 +47,7 @@ class Edge extends AbstractEngine implements EngineInterface, EngineDependsOnDev
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // markup
         'utf8_support'                                    => false,
         'multipart_support'                               => false,
@@ -191,7 +192,7 @@ class Edge extends AbstractEngine implements EngineInterface, EngineDependsOnDev
         'css_border_image'                                => 'none',
         'css_rounded_corners'                             => 'none',
         'css_supports_width_as_percentage'                => true,
-    );
+    ];
 
     /**
      * gets the name of the platform
@@ -236,7 +237,7 @@ class Edge extends AbstractEngine implements EngineInterface, EngineDependsOnDev
     /**
      * sets properties on the engine depending on the device
      *
-     * @param \UaMatcher\Device\DeviceInterface  $device
+     * @param \UaMatcher\Device\DeviceInterface $device
      *
      * @return \UaMatcher\Engine\EngineInterface
      */

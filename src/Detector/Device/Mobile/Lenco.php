@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,10 +33,10 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /*
@@ -51,7 +52,7 @@ class Lenco extends AbstractDevice implements DeviceHasChildrenInterface, Device
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'general Lenco Device',
         'model_extra_info'       => null,
@@ -79,20 +80,20 @@ class Lenco extends AbstractDevice implements DeviceHasChildrenInterface, Device
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $LencoPhones = array(
+        $LencoPhones = [
             'Lenco',
             'LENCM900HZ',
-            'CoolTab-70'
-        );
+            'CoolTab-70',
+        ];
 
         if ($this->utils->checkIfContains($LencoPhones, true)) {
             return true;
@@ -122,7 +123,7 @@ class Lenco extends AbstractDevice implements DeviceHasChildrenInterface, Device
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

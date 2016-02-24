@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -34,15 +35,15 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * BenQUserAgentHandler
  *
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -53,7 +54,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -68,7 +69,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,7 +78,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('Viera'))) {
+        if ($this->utils->checkIfContains(['Viera'])) {
             return true;
         }
 
@@ -117,7 +118,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -134,7 +135,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Viera', 'SMART\-TV');
+        $searches = ['Viera', 'SMART\-TV'];
 
         return $detector->detectVersion($searches);
     }

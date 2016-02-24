@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class Lgp990 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'P990',
         'model_extra_info'       => null,
@@ -82,16 +83,16 @@ class Lgp990 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('LG-P990', ' p990 ', 'Optimus 2X'))) {
+        if (!$this->utils->checkIfContains(['LG-P990', ' p990 ', 'Optimus 2X'])) {
             return false;
         }
 
@@ -101,7 +102,7 @@ class Lgp990 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -167,13 +168,13 @@ class Lgp990 extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 2.2:
                         $wurflKey = 'lg_p990_ver1_suban22';
 
                         $osVersion = $os->detectVersion()->getVersion();
 
-                        if ('2.2.2' == $osVersion) {
+                        if ('2.2.2' === $osVersion) {
                             //Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; LG-P990 Build/FRG83G) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 MMS/LG-Android-MMS-V1.0/1.2
                             $wurflKey = 'lg_p990_ver1_sub_android222b';
                         }

@@ -21,26 +21,27 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Os;
 
-use UaResult\Version;
+use BrowserDetector\Detector\Bits\Os as OsBits;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Os\OsInterface;
-use BrowserDetector\Detector\Bits\Os as OsBits;
+use UaResult\Version;
 
 /**
  * base class for all rendering platforms/operating systems to detect
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -90,6 +91,7 @@ abstract class AbstractOs implements OsInterface, \Serializable
 
     /**
      * initializes the object
+     *
      * @param string $useragent
      */
     protected function init($useragent)
@@ -116,26 +118,29 @@ abstract class AbstractOs implements OsInterface, \Serializable
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
      * String representation of object
+     *
      * @link http://php.net/manual/en/serializable.serialize.php
+     *
      * @return string the string representation of the object or null
      */
     public function serialize()
     {
         return serialize(
-            array(
+            [
                 'useragent' => $this->useragent,
-            )
+            ]
         );
     }
 
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
      * Constructs the object
+     *
      * @link http://php.net/manual/en/serializable.unserialize.php
+     *
      * @param string $serialized <p>
-     * The string representation of the object.
-     * </p>
-     * @return void
+     *                           The string representation of the object.
+     *                           </p>
      */
     public function unserialize($serialized)
     {

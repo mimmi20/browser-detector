@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -100,10 +101,10 @@ use BrowserDetector\Detector\Browser\BlukLddcBot;
 use BrowserDetector\Detector\Browser\BnfFrBot;
 use BrowserDetector\Detector\Browser\BoardReaderFaviconFetcher;
 use BrowserDetector\Detector\Browser\Bot12345;
-use BrowserDetector\Detector\Browser\BotBot;
 use BrowserDetector\Detector\Browser\Bot360;
 use BrowserDetector\Detector\Browser\Bot80Legs;
 use BrowserDetector\Detector\Browser\BotAraTurka;
+use BrowserDetector\Detector\Browser\BotBot;
 use BrowserDetector\Detector\Browser\BotForJce;
 use BrowserDetector\Detector\Browser\BotRevolt;
 use BrowserDetector\Detector\Browser\Bowser;
@@ -232,7 +233,6 @@ use BrowserDetector\Detector\Browser\GoogleAdsbotMobile;
 use BrowserDetector\Detector\Browser\GoogleAdSenseBot;
 use BrowserDetector\Detector\Browser\GoogleAdsenseSnapshot;
 use BrowserDetector\Detector\Browser\GoogleAdwordsDisplayAdsWebRender;
-use BrowserDetector\Detector\Browser\GoogleSearchApp;
 use BrowserDetector\Detector\Browser\Googlebot;
 use BrowserDetector\Detector\Browser\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\GoogleDesktop;
@@ -242,6 +242,7 @@ use BrowserDetector\Detector\Browser\GoogleImageSearch;
 use BrowserDetector\Detector\Browser\GoogleKeywordSuggestion;
 use BrowserDetector\Detector\Browser\GooglePageSpeedInsights;
 use BrowserDetector\Detector\Browser\GooglePlus;
+use BrowserDetector\Detector\Browser\GoogleSearchApp;
 use BrowserDetector\Detector\Browser\GoogleSiteVerification;
 use BrowserDetector\Detector\Browser\GoogleStructuredDataTestingTool;
 use BrowserDetector\Detector\Browser\GoogleToolbar;
@@ -698,14 +699,14 @@ use BrowserDetector\Detector\Browser\ZollardWorm;
 use BrowserDetector\Detector\Browser\Zookabot;
 use BrowserDetector\Detector\Browser\ZumBot;
 use Psr\Log\LoggerInterface;
-use WurflCache\Adapter\AdapterInterface;
 use UaMatcher\Os\OsInterface;
+use WurflCache\Adapter\AdapterInterface;
 
 /**
  * Browser detection class
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
@@ -915,7 +916,7 @@ class BrowserFactory
             && isset($matches[1])
             && isset($matches[2])
             && $matches[1] > 5
-            && $matches[2] != 0
+            && $matches[2] !== 0
         ) {
             $browser = new FakeBrowser($agent, $logger);
         } elseif (preg_match('/Mozilla\/4/', $agent) && preg_match('/Chrome/', $agent)) {
@@ -1100,11 +1101,11 @@ class BrowserFactory
             $browser = new Arora($agent, $logger);
         } elseif (preg_match('/com\.douban\.group/i', $agent)) {
             $browser = new DoubanApp($agent, $logger);
-        }  elseif (preg_match('/ovibrowser/i', $agent)) {
+        } elseif (preg_match('/ovibrowser/i', $agent)) {
             $browser = new NokiaProxyBrowser($agent, $logger);
-        }  elseif (preg_match('/MiuiBrowser/i', $agent)) {
+        } elseif (preg_match('/MiuiBrowser/i', $agent)) {
             $browser = new MiuiBrowser($agent, $logger);
-        }elseif (preg_match('/ibrowser/i', $agent)) {
+        } elseif (preg_match('/ibrowser/i', $agent)) {
             $browser = new IBrowser($agent, $logger);
         } elseif (preg_match('/OneBrowser/', $agent)) {
             $browser = new OneBrowser($agent, $logger);

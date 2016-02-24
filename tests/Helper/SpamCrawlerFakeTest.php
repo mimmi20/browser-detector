@@ -1,4 +1,5 @@
 <?php
+
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\SpamCrawlerFake;
@@ -11,6 +12,7 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerIsSpamOrCrawlerPositive
+     *
      * @param string $agent
      */
     public function testIsSpamOrCrawlerPositive($agent)
@@ -24,18 +26,19 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     public function providerIsSpamOrCrawlerPositive()
     {
-        return array(
-            array('curl/7.15.5 (i686-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5'),
-            array('NetLyzer FastProbe'),
-            array('Microsoft Office Protocol Discovery'),
-            array('Mozilla/5.0 (X11; U; Linux x86; de-DE) adbeat.com/policy Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3 AppleWebKit/532.4 Safari/532.4'),
-            array('ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36'),
-            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'),
-        );
+        return [
+            ['curl/7.15.5 (i686-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5'],
+            ['NetLyzer FastProbe'],
+            ['Microsoft Office Protocol Discovery'],
+            ['Mozilla/5.0 (X11; U; Linux x86; de-DE) adbeat.com/policy Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3 AppleWebKit/532.4 Safari/532.4'],
+            ['ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36'],
+            ['Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'],
+        ];
     }
 
     /**
      * @dataProvider providerIsSpamOrCrawlerNegative
+     *
      * @param string $agent
      */
     public function testIsSpamOrCrawlerNegative($agent)
@@ -49,27 +52,28 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     public function providerIsSpamOrCrawlerNegative()
     {
-        return array(
-            array('CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)'),
-            array('revolt'),
-            array('Microsoft Office Excel 2013'),
-            array('iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17'),
-            array('Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'),
-            array('Crowsnest/0.5 (+http://www.crowsnest.tv/)'),
-            array('Dorado WAP-Browser/1.0.0'),
-            array('DINO762 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
-            array('TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
-            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
-            array('MSFrontPage/15.0'),
-            array('Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'),
-        );
+        return [
+            ['CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)'],
+            ['revolt'],
+            ['Microsoft Office Excel 2013'],
+            ['iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17'],
+            ['Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'],
+            ['Crowsnest/0.5 (+http://www.crowsnest.tv/)'],
+            ['Dorado WAP-Browser/1.0.0'],
+            ['DINO762 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'],
+            ['TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'],
+            ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
+            ['MSFrontPage/15.0'],
+            ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
+        ];
     }
 
     /**
      * @dataProvider providerIsFakeIePositive
+     *
      * @param string $agent
      */
     public function testIsFakeIePositive($agent)
@@ -81,14 +85,15 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     public function providerIsFakeIePositive()
     {
-        return array(
-            array('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0'),
-            array('Mozilla/5.0 (compatible; MSIE 10.6; Windows NT 6.1; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0'),
-        );
+        return [
+            ['Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0'],
+            ['Mozilla/5.0 (compatible; MSIE 10.6; Windows NT 6.1; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0'],
+        ];
     }
 
     /**
      * @dataProvider providerIsFakeIeNegative
+     *
      * @param string $agent
      */
     public function testIsFakeIeNegative($agent)
@@ -100,31 +105,32 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     public function providerIsFakeIeNegative()
     {
-        return array(
-            array('Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; .NET CLR 1.1.4322)'),
-            array('CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)'),
-            array('revolt'),
-            array('Microsoft Office Protocol Discovery'),
-            array('Microsoft Office Excel 2013'),
-            array('iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17'),
-            array('Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'),
-            array('ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36'),
-            array('Crowsnest/0.5 (+http://www.crowsnest.tv/)'),
-            array('Dorado WAP-Browser/1.0.0'),
-            array('DINO762 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'),
-            array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
-            array('TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
-            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
-            array('MSFrontPage/15.0'),
-            array('Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'),
-        );
+        return [
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; .NET CLR 1.1.4322)'],
+            ['CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)'],
+            ['revolt'],
+            ['Microsoft Office Protocol Discovery'],
+            ['Microsoft Office Excel 2013'],
+            ['iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17'],
+            ['Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'],
+            ['ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36'],
+            ['Crowsnest/0.5 (+http://www.crowsnest.tv/)'],
+            ['Dorado WAP-Browser/1.0.0'],
+            ['DINO762 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'],
+            ['Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'],
+            ['TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'],
+            ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
+            ['MSFrontPage/15.0'],
+            ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
+        ];
     }
 
     /**
      * @dataProvider providerisFakeWindowsPositive
+     *
      * @param string $agent
      */
     public function testisFakeWindowsPositive($agent)
@@ -138,13 +144,14 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     public function providerisFakeWindowsPositive()
     {
-        return array(
-            array('Mozilla/5.0 (compatible; MSIE 10.0; Windows XP; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0'),
-        );
+        return [
+            ['Mozilla/5.0 (compatible; MSIE 10.0; Windows XP; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0'],
+        ];
     }
 
     /**
      * @dataProvider providerisFakeWindowsNegative
+     *
      * @param string $agent
      */
     public function testisFakeWindowsNegative($agent)
@@ -156,27 +163,27 @@ class SpamCrawlerFakeTest extends \PHPUnit_Framework_TestCase
 
     public function providerisFakeWindowsNegative()
     {
-        return array(
-            array('Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0'),
-            array('Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; .NET CLR 1.1.4322)'),
-            array('CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)'),
-            array('revolt'),
-            array('Microsoft Office Protocol Discovery'),
-            array('Microsoft Office Excel 2013'),
-            array('iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17'),
-            array('Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'),
-            array('ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36'),
-            array('Crowsnest/0.5 (+http://www.crowsnest.tv/)'),
-            array('Dorado WAP-Browser/1.0.0'),
-            array('DINO762 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'),
-            array('Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'),
-            array('TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'),
-            array('Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'),
-            array('Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'),
-            array('MSFrontPage/15.0'),
-            array('Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'),
-        );
+        return [
+            ['Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; .NET CLR 1.1.4322)'],
+            ['CybEye.com/2.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/4.0; GTB6.4)'],
+            ['revolt'],
+            ['Microsoft Office Protocol Discovery'],
+            ['Microsoft Office Excel 2013'],
+            ['iTunes/11.3.1 (Windows; Microsoft Windows 7 x64 Home Premium Edition Service Pack 1 (Build 7601)) AppleWebKit/537.60.17'],
+            ['Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)'],
+            ['ArchiveTeam ArchiveBot/20141009.02 (wpull 0.1002a1) and not Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36'],
+            ['Crowsnest/0.5 (+http://www.crowsnest.tv/)'],
+            ['Dorado WAP-Browser/1.0.0'],
+            ['DINO762 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['Mozilla/5.0 (compatible; MSIE 9.0; Windows NT; MarketwireBot +http://www.marketwire.com)'],
+            ['Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'],
+            ['TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'],
+            ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
+            ['MSFrontPage/15.0'],
+            ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
+        ];
     }
 }

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -35,7 +36,7 @@ use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -62,12 +63,12 @@ class Macosx extends AbstractOs
         $detector->setUserAgent($this->useragent);
         $detector->setDefaulVersion('10');
 
-        $searches = array('Mac OS X', 'Mac OS X v');
+        $searches = ['Mac OS X', 'Mac OS X v'];
 
         $detector->detectVersion($searches);
 
         if ($detector->getVersion(Version::MAJORONLY) > 99) {
-            $versions = array();
+            $versions = [];
             $found    = preg_match('/(\d\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
 
             if ($found) {

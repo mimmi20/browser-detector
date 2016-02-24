@@ -21,27 +21,28 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class SonyEricssonU20i extends AbstractDevice implements DeviceHasWurflKeyInterf
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'U20i',
         'model_extra_info'       => null,
@@ -80,20 +81,20 @@ class SonyEricssonU20i extends AbstractDevice implements DeviceHasWurflKeyInterf
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonU20i', 'U20i', ' u20i '))) {
+        if (!$this->utils->checkIfContains(['SonyEricssonU20i', 'U20i', ' u20i '])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('SonyEricssonU20iv', 'U20iv'))) {
+        if ($this->utils->checkIfContains(['SonyEricssonU20iv', 'U20iv'])) {
             return false;
         }
 
@@ -103,7 +104,7 @@ class SonyEricssonU20i extends AbstractDevice implements DeviceHasWurflKeyInterf
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -159,7 +160,7 @@ class SonyEricssonU20i extends AbstractDevice implements DeviceHasWurflKeyInterf
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 2.1:
                         $wurflKey = 'sonyericsson_u20i_ver1_suban21';
                         break;

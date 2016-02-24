@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,15 +33,15 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -51,7 +52,7 @@ class Acer extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'general Acer Device',
         'model_extra_info'       => null,
@@ -79,22 +80,22 @@ class Acer extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $otherPhones = array('HTC', 'IdeaTab', 'Wildfire S A510e', 'HTC_WildfireS_A510e', 'A101IT', 'SmartTabII7');
+        $otherPhones = ['HTC', 'IdeaTab', 'Wildfire S A510e', 'HTC_WildfireS_A510e', 'A101IT', 'SmartTabII7'];
 
         if ($this->utils->checkIfContains($otherPhones)) {
             return false;
         }
 
-        $acerPhones = array(
+        $acerPhones = [
             'Acer',
             'Iconia',
             ' A100 ',
@@ -120,7 +121,7 @@ class Acer extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
             ' S500 ',
             ' Z150 ',
             ' V370 ',
-        );
+        ];
 
         if (!$this->utils->checkIfContains($acerPhones)) {
             return false;
@@ -150,7 +151,7 @@ class Acer extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

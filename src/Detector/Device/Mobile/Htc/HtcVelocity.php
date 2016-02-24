@@ -21,24 +21,25 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Os\AndroidOs;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class HtcVelocity extends AbstractDevice implements DeviceHasSpecificPlatformInt
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'Velocity',
         'model_extra_info'       => null,
@@ -77,20 +78,20 @@ class HtcVelocity extends AbstractDevice implements DeviceHasSpecificPlatformInt
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC Velocity', 'HTC/Velocity', 'HTC_Velocity'))) {
+        if (!$this->utils->checkIfContains(['HTC Velocity', 'HTC/Velocity', 'HTC_Velocity'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('Velocity 4G'))) {
+        if ($this->utils->checkIfContains(['Velocity 4G'])) {
             return false;
         }
 
@@ -100,7 +101,7 @@ class HtcVelocity extends AbstractDevice implements DeviceHasSpecificPlatformInt
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

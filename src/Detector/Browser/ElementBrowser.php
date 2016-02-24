@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -38,7 +39,7 @@ use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class ElementBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class ElementBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -113,7 +114,7 @@ class ElementBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -130,7 +131,7 @@ class ElementBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Element Browser');
+        $searches = ['Element Browser'];
 
         return $detector->detectVersion($searches);
     }

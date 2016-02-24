@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -35,13 +36,13 @@ use BrowserDetector\Detector\Engine\Blink;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -52,7 +53,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasWurflKeyInterfa
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -67,7 +68,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasWurflKeyInterfa
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -76,7 +77,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasWurflKeyInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('coc_coc_browser'))) {
+        if (!$this->utils->checkIfContains(['coc_coc_browser'])) {
             return false;
         }
 
@@ -124,7 +125,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasWurflKeyInterfa
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
-        $searches = array('coc_coc_browser');
+        $searches = ['coc_coc_browser'];
 
         return $detector->detectVersion($searches);
     }
@@ -132,7 +133,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasWurflKeyInterfa
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -151,7 +152,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasWurflKeyInterfa
     {
         $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
 
-        if (null !== $os && in_array($os->getName(), array('iOS'))) {
+        if (null !== $os && in_array($os->getName(), ['iOS'])) {
             $engine = new Webkit($this->useragent, $this->logger);
         } elseif ($version >= 28) {
             $engine = new Blink($this->useragent, $this->logger);

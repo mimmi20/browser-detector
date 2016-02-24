@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -33,12 +34,12 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Gecko;
 use UaBrowserType\EmailClient;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -49,7 +50,7 @@ class Thunderbird extends AbstractBrowser implements BrowserHasSpecificEngineInt
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // browser
         'mobile_browser_modus'         => null, // not in wurfl
 
@@ -64,7 +65,7 @@ class Thunderbird extends AbstractBrowser implements BrowserHasSpecificEngineInt
         'post_method_support'          => true,
         // rss
         'rss_support'                  => false,
-    );
+    ];
 
     /**
      * Returns true if this handler can handle the given user agent
@@ -77,11 +78,11 @@ class Thunderbird extends AbstractBrowser implements BrowserHasSpecificEngineInt
             return false;
         }
 
-        if (!$this->utils->checkIfContainsAll(array('Thunderbird', 'Gecko'))) {
+        if (!$this->utils->checkIfContainsAll(['Thunderbird', 'Gecko'])) {
             return false;
         }
 
-        $isNotReallyAnFirefox = array(
+        $isNotReallyAnFirefox = [
             // using also the Gecko rendering engine
             'Maemo',
             'Maxthon',
@@ -95,8 +96,8 @@ class Thunderbird extends AbstractBrowser implements BrowserHasSpecificEngineInt
             'SeaMonkey',
             'Flock',
             'Fennec',
-            'Firefox'
-        );
+            'Firefox',
+        ];
 
         if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
             return false;
@@ -145,7 +146,7 @@ class Thunderbird extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = array('Thunderbird');
+        $searches = ['Thunderbird'];
 
         return $detector->detectVersion($searches);
     }
@@ -153,7 +154,7 @@ class Thunderbird extends AbstractBrowser implements BrowserHasSpecificEngineInt
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -38,18 +39,18 @@ use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Imac extends AbstractDevice implements DeviceHasVersionInterface
+class iMac extends AbstractDevice implements DeviceHasVersionInterface
 {
     /**
      * the detected browser properties
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'iMac',
         'model_extra_info'       => null,
@@ -77,7 +78,7 @@ class Imac extends AbstractDevice implements DeviceHasVersionInterface
         'sms_enabled'            => false,
         // chips
         'nfc_support'            => false,
-    );
+    ];
 
     /**
      * @var \UaResult\Version
@@ -88,11 +89,11 @@ class Imac extends AbstractDevice implements DeviceHasVersionInterface
      * Final Interceptor: Intercept
      * Everything that has not been trapped by a previous handler
      *
-     * @return boolean always true
+     * @return bool always true
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(array('iMac'))) {
+        if ($this->utils->checkIfContains(['iMac'])) {
             return true;
         }
 
@@ -102,7 +103,7 @@ class Imac extends AbstractDevice implements DeviceHasVersionInterface
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -150,7 +151,7 @@ class Imac extends AbstractDevice implements DeviceHasVersionInterface
         $detector->setUserAgent($this->useragent);
         $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
-        $searches = array('iMac');
+        $searches = ['iMac'];
 
         $this->version = $detector->detectVersion($searches);
 

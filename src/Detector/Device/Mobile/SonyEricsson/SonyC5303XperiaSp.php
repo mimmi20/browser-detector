@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'C5303',
         'model_extra_info'       => null,
@@ -82,20 +83,20 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('SonyEricssonC5303', 'SonyC5303', 'C5303'))) {
+        if (!$this->utils->checkIfContains(['SonyEricssonC5303', 'SonyC5303', 'C5303'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(array('SonyEricssonC5303v', 'SonyC5303v', 'C5303v'))) {
+        if ($this->utils->checkIfContains(['SonyEricssonC5303v', 'SonyC5303v', 'C5303v'])) {
             return false;
         }
 
@@ -105,7 +106,7 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -171,7 +172,7 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.3:
                         $wurflKey = 'sony_c5303_ver1_suban43';
                         break;
@@ -183,7 +184,7 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasWurflKeyInter
             case 'Chrome':
                 $engine->setCapability('is_sencha_touch_ok', false);
 
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.3:
                         $wurflKey = 'sony_c5303_ver1_suban43_subuachrome';
                         break;

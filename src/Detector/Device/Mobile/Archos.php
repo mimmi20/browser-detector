@@ -21,10 +21,11 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
@@ -32,15 +33,15 @@ namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -51,7 +52,7 @@ class Archos extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'general Archos Device',
         'model_extra_info'       => null,
@@ -79,16 +80,16 @@ class Archos extends AbstractDevice implements DeviceHasChildrenInterface, Devic
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        $archosPhones = array(
+        $archosPhones = [
             'archos',
             'a35dm',
             'a70bht',
@@ -98,8 +99,8 @@ class Archos extends AbstractDevice implements DeviceHasChildrenInterface, Devic
             'a80ksc',
             'a101it',
             'a70hb',
-            'a7eb'
-        );
+            'a7eb',
+        ];
 
         if ($this->utils->checkIfContains($archosPhones, true)) {
             return true;
@@ -129,7 +130,7 @@ class Archos extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {

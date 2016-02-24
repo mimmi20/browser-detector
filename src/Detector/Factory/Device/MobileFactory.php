@@ -21,16 +21,16 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\GeneralMobile;
 use BrowserDetector\Detector\Device\Mobile\Accent;
 use BrowserDetector\Detector\Device\Mobile\Acer;
@@ -149,7 +149,6 @@ use BrowserDetector\Detector\Device\Mobile\MegaFon;
 use BrowserDetector\Detector\Device\Mobile\Meizu;
 use BrowserDetector\Detector\Device\Mobile\Memup;
 use BrowserDetector\Detector\Device\Mobile\Micromax;
-use BrowserDetector\Detector\Device\Mobile\Microsoft;
 use BrowserDetector\Detector\Device\Mobile\Mitashi;
 use BrowserDetector\Detector\Device\Mobile\Miui;
 use BrowserDetector\Detector\Device\Mobile\Mobistel;
@@ -171,9 +170,7 @@ use BrowserDetector\Detector\Device\Mobile\Nomi;
 use BrowserDetector\Detector\Device\Mobile\NttSystem;
 use BrowserDetector\Detector\Device\Mobile\Nuqleo;
 use BrowserDetector\Detector\Device\Mobile\Nvsbl;
-use BrowserDetector\Detector\Device\Mobile\O2;
 use BrowserDetector\Detector\Device\Mobile\Odys;
-use BrowserDetector\Detector\Device\Mobile\Olivetti;
 use BrowserDetector\Detector\Device\Mobile\Onda;
 use BrowserDetector\Detector\Device\Mobile\Oppo;
 use BrowserDetector\Detector\Device\Mobile\Orange;
@@ -209,7 +206,6 @@ use BrowserDetector\Detector\Device\Mobile\Shaan;
 use BrowserDetector\Detector\Device\Mobile\Sharp;
 use BrowserDetector\Detector\Device\Mobile\Shiru;
 use BrowserDetector\Detector\Device\Mobile\Siemens;
-use BrowserDetector\Detector\Device\Mobile\Simvalley;
 use BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 use BrowserDetector\Detector\Device\Mobile\Spice;
 use BrowserDetector\Detector\Device\Mobile\Sprd;
@@ -246,11 +242,9 @@ use BrowserDetector\Detector\Device\Mobile\Vertex;
 use BrowserDetector\Detector\Device\Mobile\Videocon;
 use BrowserDetector\Detector\Device\Mobile\ViewSonic;
 use BrowserDetector\Detector\Device\Mobile\Vivo;
-use BrowserDetector\Detector\Device\Mobile\Vizio;
 use BrowserDetector\Detector\Device\Mobile\Wexler;
 use BrowserDetector\Detector\Device\Mobile\Wiko;
 use BrowserDetector\Detector\Device\Mobile\Wolgang;
-use BrowserDetector\Detector\Device\Mobile\WonderMedia;
 use BrowserDetector\Detector\Device\Mobile\Woo;
 use BrowserDetector\Detector\Device\Mobile\Wopad;
 use BrowserDetector\Detector\Device\Mobile\Xiaomi;
@@ -270,7 +264,7 @@ use UaMatcher\Device\DeviceHasChildrenInterface;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */

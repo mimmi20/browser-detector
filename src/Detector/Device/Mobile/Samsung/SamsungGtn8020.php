@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class SamsungGtn8020 extends AbstractDevice implements DeviceHasWurflKeyInterfac
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'GT-N8020',
         'model_extra_info'       => null,
@@ -82,12 +83,12 @@ class SamsungGtn8020 extends AbstractDevice implements DeviceHasWurflKeyInterfac
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -101,7 +102,7 @@ class SamsungGtn8020 extends AbstractDevice implements DeviceHasWurflKeyInterfac
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -165,11 +166,11 @@ class SamsungGtn8020 extends AbstractDevice implements DeviceHasWurflKeyInterfac
             Version::MAJORMINOR
         );
 
-        if (4.1 == (float)$osVersion) {
+        if (4.1 === (float) $osVersion) {
             $wurflKey = 'samsung_gt_n8000_ver1_suban41n8020';
         }
 
-        if (4.4 == (float)$osVersion) {
+        if (4.4 === (float) $osVersion) {
             $wurflKey = 'samsung_gt_n8000_ver1_suban44n8020';
         }
 

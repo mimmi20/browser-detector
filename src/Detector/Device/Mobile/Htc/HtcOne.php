@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\MobilePhone;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class HtcOne extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'M7',
         'model_extra_info'       => null,
@@ -82,20 +83,20 @@ class HtcOne extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
         'sms_enabled'            => true,
         // chips
         'nfc_support'            => true,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HTC One', 'HTC_One', 'HTC/One'))) {
+        if (!$this->utils->checkIfContains(['HTC One', 'HTC_One', 'HTC/One'])) {
             return false;
         }
 
-        $specialOne = array(
+        $specialOne = [
             'HTC_One_',
             'HTC/One_',
             'HTC_OneX',
@@ -104,8 +105,8 @@ class HtcOne extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
             'HTC One S',
             'HTC One V',
             'HTC One mini',
-            'HTC One_M8'
-        );
+            'HTC One_M8',
+        ];
 
         if ($this->utils->checkIfContains($specialOne)) {
             return false;
@@ -117,7 +118,7 @@ class HtcOne extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -183,7 +184,7 @@ class HtcOne extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.4:
                         $wurflKey = 'htc_m7_ver1_suban44';
                         break;
@@ -196,7 +197,7 @@ class HtcOne extends AbstractDevice implements DeviceHasWurflKeyInterface, Devic
             case 'Android WebView':
                 $engine->setCapability('is_sencha_touch_ok', false);
 
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.2:
                         $wurflKey = 'htc_m7_ver1_suban42oneuscore';
                         break;

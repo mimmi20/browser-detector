@@ -21,29 +21,30 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
+ *
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
 namespace BrowserDetector\Detector\Device\Mobile\Huawei;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
 use UaDeviceType\Tablet;
-use UaResult\Version;
 use UaMatcher\Browser\BrowserInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use BrowserDetector\Detector\Device\AbstractDevice;
 use UaMatcher\Engine\EngineInterface;
 use UaMatcher\Os\OsInterface;
+use UaResult\Version;
 
 /**
  * @category  BrowserDetector
- * @package   BrowserDetector
+ *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -54,7 +55,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
      *
      * @var array
      */
-    protected $properties = array(
+    protected $properties = [
         // device
         'code_name'              => 'S7-301w',
         'model_extra_info'       => 'aka T-Mobile Springboard',
@@ -82,26 +83,26 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
         'sms_enabled'            => false,
         // chips
         'nfc_support'            => false,
-    );
+    ];
 
     /**
      * checks if this device is able to handle the useragent
      *
-     * @return boolean returns TRUE, if this device can handle the useragent
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(array('HUAWEI MediaPad', 'MediaPad'))) {
+        if (!$this->utils->checkIfContains(['HUAWEI MediaPad', 'MediaPad'])) {
             return false;
         }
 
-        $otherMediaPads = array(
+        $otherMediaPads = [
             'mediapad 7 lite',
             'mediapad 10 link',
             'mediapad m1 8.0',
             'mediapad t1 8.0',
-            'mediapad 7 classic'
-        );
+            'mediapad 7 classic',
+        ];
 
         if ($this->utils->checkIfContains($otherMediaPads, true)) {
             return false;
@@ -113,7 +114,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
     /**
      * gets the weight of the handler, which is used for sorting
      *
-     * @return integer
+     * @return int
      */
     public function getWeight()
     {
@@ -179,7 +180,7 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasWurflKeyInterfac
 
         switch ($browser->getName()) {
             case 'Android Webkit':
-                switch ((float)$osVersion) {
+                switch ((float) $osVersion) {
                     case 4.1:
                         $wurflKey = 'huawei_mediapad10_link_ver1_suban41';
                         break;
