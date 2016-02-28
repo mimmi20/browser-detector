@@ -38,25 +38,25 @@
   ],
   "require": {
     "php": ">=5.6.0",
-    "mimmi20/wurflcache": "~1.3",
-    "mimmi20/wurfl-data": "~1.6",
-    "mimmi20/wurfl-generic-request": "~1.0",
-    "psr/log": "~1.0",
+    "mimmi20/wurflcache": "^1.3",
+    "mimmi20/wurfl-data": "^1.6",
+    "mimmi20/wurfl-generic-request": "^1.0",
+    "psr/log": "^1.0",
     "browscap/browscap": "dev-detection-issues",
-    "mimmi20/ua-result": "~1.1",
-    "mimmi20/ua-matcher-interface": "~1.1",
-    "mimmi20/ua-helper-utils": "*",
-    "mimmi20/ua-browser-type": "~1.0",
-    "mimmi20/ua-device-type": "~1.0",
-    "version/version": "~2.2"
+    "mimmi20/ua-result": "^2.0@dev",
+    "mimmi20/ua-matcher-interface": "^1.1",
+    "mimmi20/ua-helper-utils": "^1.0.3",
+    "mimmi20/ua-browser-type": "^1.0.2",
+    "mimmi20/ua-device-type": "^1.0.2",
+    "version/version": "^2.2"
   },
   "require-dev": {
-    "phpunit/phpunit": "*",
-    "monolog/monolog": "~1",
-    "mikey179/vfsStream": "1.3.*",
-    "squizlabs/php_codesniffer": "2.*",
-    "fabpot/php-cs-fixer": "~1.11",
-    "mimmi20/ua-data-mapper": "~1.1"
+    "phpunit/phpunit": "^5.2",
+    "monolog/monolog": "^1.7",
+    "mikey179/vfsStream": "^1.6",
+    "squizlabs/php_codesniffer": "^2.5",
+    "fabpot/php-cs-fixer": "^1.11",
+    "mimmi20/ua-data-mapper": "^2.0@dev"
   },
   "autoload": {
     "psr-4": {
