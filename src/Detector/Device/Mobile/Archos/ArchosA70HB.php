@@ -50,6 +50,43 @@ use UaMatcher\Os\OsInterface;
 class ArchosA70HB extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
 {
     /**
+     * the class constructor
+     *
+     * @param string                   $useragent
+     * @param array                    $data
+     * @param \Psr\Log\LoggerInterface $logger
+     */
+    public function __construct(
+        $useragent,
+        array $data,
+        LoggerInterface $logger = null
+    ) {
+        $this->useragent = $useragent;
+
+        $this->setData(
+            [
+                'deviceName'        => 'general HiPhone Device',
+                'marketingName'     => 'general HiPhone Device',
+                'version'           => null,
+                'manufacturer'      => (new Company\HiPhone())->name,
+                'brand'             => (new Company\HiPhone())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => null,
+                'resolutionHeight'  => null,
+                'dualOrientation'   => true,
+                'colors'            => null,
+                'smsSupport'        => true,
+                'nfcSupport'        => true,
+                'hasQwertyKeyboard' => true,
+                'type'              => new Tablet(),
+            ]
+        );
+
+        $this->logger = $logger;
+    }
+
+    /**
      * the detected browser properties
      *
      * @var array

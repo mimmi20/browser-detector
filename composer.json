@@ -67,5 +67,10 @@
     "psr-4": {
       "BrowserDetectorTest\\": "tests/"
     }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
   }
 }

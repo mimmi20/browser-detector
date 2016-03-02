@@ -36,14 +36,14 @@ use BrowserDetector\Detector\Company\Unknown as UnknownCompany;
 use BrowserDetector\Detector\Cpu;
 use Psr\Log\LoggerInterface;
 use UaMatcher\Browser\BrowserHasWurflKeyInterface;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Company\CompanyInterface;
+use UaResult\Browser\BrowserInterface;
+use UaResult\Company\CompanyInterface;
 use UaMatcher\Device\DeviceHasVersionInterface;
 use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\ResultFactoryInterface;
+use UaResult\Device\DeviceInterface;
+use UaResult\Engine\EngineInterface;
+use UaResult\Os\OsInterface;
+use UaResult\Result\ResultFactoryInterface;
 use Wurfl\WurflConstants;
 use WurflData\Loader;
 
@@ -61,18 +61,18 @@ class ResultFactory implements ResultFactoryInterface
     /**
      * builds the result object and set the values
      *
-     * @param string                              $useragent
-     * @param \Psr\Log\LoggerInterface            $logger
-     * @param \UaMatcher\Device\DeviceInterface   $device
-     * @param \UaMatcher\Os\OsInterface           $os
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
+     * @param string                             $useragent
+     * @param \Psr\Log\LoggerInterface           $logger
+     * @param \UaResult\Device\DeviceInterface   $device
+     * @param \UaResult\Os\OsInterface           $os
+     * @param \UaResult\Browser\BrowserInterface $browser
+     * @param \UaResult\Engine\EngineInterface   $engine
      *
-     * @return \UaMatcher\Result\ResultInterface
+     * @return \UaResult\Result\ResultInterface
      */
     public static function build(
         $useragent,
-        LoggerInterface $logger,
+        LoggerInterface $logger = null,
         DeviceInterface $device = null,
         OsInterface $os = null,
         BrowserInterface $browser = null,

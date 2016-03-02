@@ -69,7 +69,7 @@ class TvFactory
      * @param string                   $useragent
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return \UaMatcher\Device\DeviceInterface
+     * @return \UaResult\Device\DeviceInterface
      */
     public static function detect($useragent, LoggerInterface $logger)
     {

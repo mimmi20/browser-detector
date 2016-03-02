@@ -35,7 +35,6 @@ use BrowserDetector\Detector\Factory\BrowserFactory;
 use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
-use BrowserDetector\Detector\Result;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
@@ -47,6 +46,8 @@ use UaMatcher\Device\DeviceHasVersionInterface;
 use UaMatcher\Engine\EngineDependsOnDeviceInterface;
 use UaMatcher\Os\OsChangesBrowserInterface;
 use UaMatcher\Os\OsChangesEngineInterface;
+use UaResult\Result\Result;
+use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 use Wurfl\Request\GenericRequest;
 use Wurfl\Request\GenericRequestFactory;
@@ -63,14 +64,6 @@ use WurflCache\Adapter\AdapterInterface;
  */
 class BrowserDetector
 {
-    const INTERFACE_INTERNAL           = 1;
-    const INTERFACE_BROWSCAP_INI       = 2;
-    const INTERFACE_WURFL_FILE         = 3;
-    const INTERFACE_WURFL_CLOUD        = 4;
-    const INTERFACE_UAPARSER           = 5;
-    const INTERFACE_UASPARSER          = 6;
-    const INTERFACE_BROWSCAP_CROSSJOIN = 7;
-
     /**
      * a \WurflCache\Adapter\AdapterInterface object
      *
@@ -106,11 +99,10 @@ class BrowserDetector
      * Gets the information about the browser by User Agent
      *
      * @param string|array|\Wurfl\Request\GenericRequest $request
-     * @param bool                                       $forceDetect if TRUE a possible cache hit is ignored
      *
-     * @return \BrowserDetector\Detector\Result\Result
+     * @return \UaResult\Result\Result
      */
-    public function getBrowser($request = null, $forceDetect = false)
+    public function getBrowser($request = null)
     {
         if (null === $request) {
             throw new UnexpectedValueException(
@@ -136,16 +128,12 @@ class BrowserDetector
         $result  = null;
         $success = false;
 
-        if (!$forceDetect) {
-            $result = $this->cache->getItem($cacheId, $success);
-        }
+        $result = $this->cache->getItem($cacheId, $success);
 
-        if ($forceDetect || !$success || !($result instanceof Detector\Result\Result)) {
+        if (!$success || !($result instanceof ResultInterface)) {
             $result = $this->buildResult($request);
 
             $this->cache->setItem($cacheId, $result);
-        } else {
-            $result->setLogger($this->logger);
         }
 
         return $result;
@@ -154,7 +142,7 @@ class BrowserDetector
     /**
      * @param \Wurfl\Request\GenericRequest $request
      *
-     * @return \UaMatcher\Result\ResultInterface
+     * @return \UaResult\Result\ResultInterface
      */
     private function buildResult(GenericRequest $request)
     {
@@ -206,9 +194,8 @@ class BrowserDetector
             $platform->changeBrowserProperties($browser);
         }
 
-        return Result\ResultFactory::build(
+        return new Result(
             $request->getUserAgent(),
-            $this->logger,
             $device,
             $platform,
             $browser,

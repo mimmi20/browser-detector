@@ -31,16 +31,10 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Bits\Device as DeviceBits;
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Result\Result;
 use Psr\Log\LoggerInterface;
-use UaDeviceType\Unknown;
-use UaHelper\Utils;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\MatcherCanHandleInterface;
-use UaMatcher\MatcherHasWeightInterface;
-use UaMatcher\Result\ResultInterface;
+use UaResult\Device\DeviceInterface;
+use UaDeviceType\TypeInterface;
+use Version\Version;
 
 /**
  * base class for all Devices to detect
@@ -49,31 +43,19 @@ use UaMatcher\Result\ResultInterface;
  *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
- *
- * @property-read string  $deviceClass
- * @property-read string  $useragent
- * @property-read string  $fallBack
- * @property-read bool $actualDeviceRoot
  */
 abstract class AbstractDevice
-    implements DeviceInterface, \Serializable, MatcherHasWeightInterface, MatcherCanHandleInterface
+    implements DeviceInterface
 {
     /**
      * @var string the user agent to handle
      */
-    protected $useragent = '';
+    protected $useragent = null;
 
     /**
      * @var \UaHelper\Utils the helper class
      */
     protected $utils = null;
-
-    /**
-     * should the device render the content like another?
-     *
-     * @var Result
-     */
-    protected $renderAs = null;
 
     /**
      * an logger instance
@@ -83,281 +65,225 @@ abstract class AbstractDevice
     protected $logger = null;
 
     /**
-     * device version
-     *
-     * @var \UaResult\Version
+     * @var string|null
+     */
+    protected $deviceName = null;
+
+    /**
+     * @var string|null
+     */
+    protected $marketingName = null;
+
+    /**
+     * @var \Version\Version|null
      */
     protected $version = null;
 
     /**
-     * the detected browser properties
-     *
-     * @var array
+     * @var \UaResult\Company\CompanyInterface|null
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'unknown',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'unknown',
-        'has_qwerty_keyboard'    => null,
-        'pointing_method'        => null,
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 11,
-        'rows'                   => 6,
-        'max_image_width'        => 90,
-        'max_image_height'       => 35,
-        'resolution_width'       => 90,
-        'resolution_height'      => 40,
-        'dual_orientation'       => false,
-        'colors'                 => 65536,
-        // chips
-        'nfc_support'            => null,
-    ];
+    protected $manufacturer = null;
 
     /**
-     * Class Constructor
+     * @var string|null
+     */
+    protected $brand = null;
+
+    /**
+     * @var string|null
+     */
+    protected $formFactor = null;
+
+    /**
+     * @var string|null
+     */
+    protected $pointingMethod = null;
+
+    /**
+     * @var int|null
+     */
+    protected $resolutionWidth = null;
+
+    /**
+     * @var int|null
+     */
+    protected $resolutionHeight = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $dualOrientation = null;
+
+    /**
+     * @var int|null
+     */
+    protected $colors = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $smsSupport = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $nfcSupport = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $hasQwertyKeyboard = null;
+
+    /**
+     * @var \UaDeviceType\TypeInterface|null
+     */
+    protected $type = null;
+
+    /**
+     * the class constructor
      *
-     * @param string                   $useragent the user agent to be handled
+     * @param string                   $useragent
+     * @param array                    $data
      * @param \Psr\Log\LoggerInterface $logger
      */
-    public function __construct($useragent = null, LoggerInterface $logger = null)
-    {
-        $this->init($useragent);
-
-        $this->logger = $logger;
-    }
-
-    /**
-     * initializes the object
-     *
-     * @param string $useragent
-     */
-    protected function init($useragent)
-    {
-        $this->utils = new Utils();
-
+    public function __construct(
+        $useragent,
+        array $data,
+        LoggerInterface $logger = null
+    ) {
         $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
-    }
 
-    /**
-     * sets the actual user agent
-     *
-     * @param string $agent
-     *
-     * @return \UaMatcher\MatcherInterface
-     */
-    public function setUseragent($agent)
-    {
-        $this->useragent = $agent;
-        $this->utils->setUserAgent($agent);
+        $this->setData($data);
 
-        return $this;
-    }
-
-    /**
-     * sets the logger
-     *
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \UaMatcher\MatcherInterface
-     */
-    public function setLogger(LoggerInterface $logger)
-    {
         $this->logger = $logger;
-
-        return $this;
     }
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
+     * @return null|string
      */
-    public function canHandle()
+    public function getDeviceName()
     {
-        return false;
+        return $this->deviceName;
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 1;
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new Unknown();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Unknown());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return null|string
      */
     public function getBrand()
     {
-        return new Company(new Company\Unknown());
+        return $this->brand;
     }
 
     /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @throws \InvalidArgumentException
-     *
-     * @return string Capability value
+     * @return int|null
      */
-    public function getCapability($capabilityName)
+    public function getColors()
     {
-        $this->checkCapability($capabilityName);
-
-        return $this->properties[$capabilityName];
+        return $this->colors;
     }
 
     /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName  must be a valid capability name
-     * @param null   $capabilityValue
-     *
-     * @return DeviceInterface
+     * @return bool|null
      */
-    public function setCapability(
-        $capabilityName,
-        $capabilityValue = null
-    ) {
-        $this->checkCapability($capabilityName);
-
-        $this->properties[$capabilityName] = $capabilityValue;
-
-        return $this;
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @throws \InvalidArgumentException
-     */
-    protected function checkCapability($capabilityName)
+    public function getDualOrientation()
     {
-        if (empty($capabilityName)) {
-            throw new \InvalidArgumentException(
-                'capability name must not be empty'
-            );
-        }
-
-        if (!array_key_exists($capabilityName, $this->properties)) {
-            throw new \InvalidArgumentException(
-                'no capability named [' . $capabilityName . '] is present.'
-            );
-        }
+        return $this->dualOrientation;
     }
 
     /**
-     * Magic Method
-     *
-     * @param string $name
-     *
-     * @throws \InvalidArgumentException
-     *
+     * @return null|string
+     */
+    public function getFormFactor()
+    {
+        return $this->formFactor;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getHasQwertyKeyboard()
+    {
+        return $this->hasQwertyKeyboard;
+    }
+
+    /**
+     * @return null|\UaResult\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return $this->manufacturer;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getMarketingName()
+    {
+        return $this->marketingName;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getNfcSupport()
+    {
+        return $this->nfcSupport;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getPointingMethod()
+    {
+        return $this->pointingMethod;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getResolutionHeight()
+    {
+        return $this->resolutionHeight;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getResolutionWidth()
+    {
+        return $this->resolutionWidth;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getSmsSupport()
+    {
+        return $this->smsSupport;
+    }
+
+    /**
      * @return string
      */
-    public function __get($name)
+    public function getUseragent()
     {
-        if (isset($name)) {
-            switch ($name) {
-                case 'useragent':
-                    return $this->useragent;
-                    break;
-                case 'fallBack':
-                case 'actualDeviceRoot':
-                    return;
-                    break;
-                default:
-                    // nothing to do here
-                    break;
-            }
-        }
-
-        throw new \InvalidArgumentException(
-            'the property "' . $name . '" is not defined'
-        );
+        return $this->useragent;
     }
 
     /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All Capability values
+     * @return null|\Version\Version
      */
-    public function getCapabilities()
+    public function getVersion()
     {
-        return $this->properties;
+        return $this->version;
     }
 
     /**
-     * sets a second device for rendering properties
-     *
-     * @var \UaMatcher\Result\ResultInterface
-     *
-     * @return DeviceInterface
+     * @return null|\UaDeviceType\TypeInterface
      */
-    public function setRenderAs(ResultInterface $result)
+    public function getType()
     {
-        $this->renderAs = $result;
-
-        return $this;
-    }
-
-    /**
-     * sets a second device for rendering properties
-     *
-     * @return \UaMatcher\Result\ResultInterface
-     */
-    public function getRenderAs()
-    {
-        return $this->renderAs;
-    }
-
-    /**
-     * @return \Psr\Log\LoggerInterface
-     */
-    public function getLogger()
-    {
-        return $this->logger;
+        return $this->type;
     }
 
     /**
@@ -370,14 +296,7 @@ abstract class AbstractDevice
      */
     public function serialize()
     {
-        return serialize(
-            [
-                'properties' => $this->properties,
-                'useragent'  => $this->useragent,
-                'renderAs'   => $this->renderAs,
-                'version'    => $this->version,
-            ]
-        );
+        return serialize($this->getData());
     }
 
     /**
@@ -386,31 +305,120 @@ abstract class AbstractDevice
      *
      * @link http://php.net/manual/en/serializable.unserialize.php
      *
-     * @param string $serialized <p>
-     *                           The string representation of the object.
-     *                           </p>
+     * @param string $data <p>
+     *                     The string representation of the object.
+     *                     </p>
      */
-    public function unserialize($serialized)
+    public function unserialize($data)
     {
-        $unseriliazedData = unserialize($serialized);
+        $unseriliazedData = unserialize($data);
 
-        foreach ($unseriliazedData['properties'] as $property => $value) {
-            $this->properties[$property] = $value;
-        }
-
-        $this->init($unseriliazedData['useragent']);
-
-        $this->renderAs = $unseriliazedData['renderAs'];
-        $this->version  = $unseriliazedData['version'];
+        $this->useragent = $unseriliazedData['useragent'];
+        $this->setData($unseriliazedData['data']);
     }
 
     /**
-     * @return string
+     * (PHP 5 &gt;= 5.4.0)<br/>
+     * Specify data which should be serialized to JSON
+     *
+     * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
+     *
+     * @return mixed data which can be serialized by <b>json_encode</b>,
+     *               which is a value of any type other than a resource.
      */
-    public function detectBits()
+    public function jsonSerialize()
     {
-        $detector = new DeviceBits($this->useragent);
+        return $this->getData();
+    }
 
-        return $detector->getBits();
+    /**
+     * @return array
+     */
+    protected function getData()
+    {
+        return [
+            'useragent' => $this->useragent,
+            'data'      => [
+                'deviceName'        => $this->deviceName,
+                'marketingName'     => $this->marketingName,
+                'version'           => $this->version,
+                'manufacturer'      => $this->manufacturer,
+                'brand'             => $this->brand,
+                'formFactor'        => $this->formFactor,
+                'pointingMethod'    => $this->pointingMethod,
+                'resolutionWidth'   => $this->resolutionWidth,
+                'resolutionHeight'  => $this->resolutionHeight,
+                'dualOrientation'   => $this->dualOrientation,
+                'colors'            => $this->colors,
+                'smsSupport'        => $this->smsSupport,
+                'nfcSupport'        => $this->nfcSupport,
+                'hasQwertyKeyboard' => $this->hasQwertyKeyboard,
+                'type'              => $this->type,
+            ],
+        ];
+    }
+
+    /**
+     * @param array $data
+     */
+    protected function setData(array $data)
+    {
+        $this->deviceName = $data['deviceName'];
+
+        if (!empty($data['marketingName'])) {
+            $this->marketingName = $data['marketingName'];
+        }
+
+        if (!empty($data['version']) && $data['version'] instanceof Version) {
+            $this->version = $data['version'];
+        }
+
+        if (!empty($data['manufacturer'])) {
+            $this->manufacturer = $data['manufacturer'];
+        }
+
+        if (!empty($data['brand'])) {
+            $this->brand = $data['brand'];
+        }
+
+        if (!empty($data['formFactor'])) {
+            $this->formFactor = $data['formFactor'];
+        }
+
+        if (!empty($data['pointingMethod'])) {
+            $this->pointingMethod = $data['pointingMethod'];
+        }
+
+        if (!empty($data['resolutionWidth'])) {
+            $this->resolutionWidth = $data['resolutionWidth'];
+        }
+
+        if (!empty($data['resolutionHeight'])) {
+            $this->resolutionHeight = $data['resolutionHeight'];
+        }
+
+        if (!empty($data['dualOrientation'])) {
+            $this->dualOrientation = $data['dualOrientation'];
+        }
+
+        if (!empty($data['colors'])) {
+            $this->colors = $data['colors'];
+        }
+
+        if (!empty($data['smsSupport'])) {
+            $this->smsSupport = $data['smsSupport'];
+        }
+
+        if (!empty($data['nfcSupport'])) {
+            $this->nfcSupport = $data['nfcSupport'];
+        }
+
+        if (!empty($data['hasQwertyKeyboard'])) {
+            $this->hasQwertyKeyboard = $data['hasQwertyKeyboard'];
+        }
+
+        if (!empty($data['type']) && $data['type'] instanceof TypeInterface) {
+            $this->type = $data['type'];
+        }
     }
 }

@@ -276,7 +276,7 @@ class MobileFactory
      * @param string                   $useragent
      * @param \Psr\Log\LoggerInterface $logger
      *
-     * @return \BrowserDetector\Detector\Device\AbstractDevice
+     * @return \UaResult\Device\DeviceInterface
      */
     public static function detect($useragent, LoggerInterface $logger)
     {
