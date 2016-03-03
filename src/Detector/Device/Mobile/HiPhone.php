@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -35,7 +35,6 @@ use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os\AndroidOs;
-use Psr\Log\LoggerInterface;
 use UaDeviceType\Tablet;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
@@ -43,7 +42,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class HiPhone extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
@@ -53,12 +52,10 @@ class HiPhone extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      *
      * @param string                   $useragent
      * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
@@ -81,14 +78,12 @@ class HiPhone extends AbstractDevice implements DeviceHasChildrenInterface, Devi
                 'type'              => new Tablet(),
             ]
         );
-
-        $this->logger = $logger;
     }
 
     /**
      * detects the device name from the given user agent
      *
-     * @return \UaMatcher\Device\DeviceInterface
+     * @return \UaResult\Device\DeviceInterface
      */
     public function detectDevice()
     {
@@ -110,6 +105,6 @@ class HiPhone extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new AndroidOs($this->useragent, $this->logger);
+        return new AndroidOs($this->useragent);
     }
 }

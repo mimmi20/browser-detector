@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -31,7 +31,6 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use Psr\Log\LoggerInterface;
 use UaResult\Device\DeviceInterface;
 use UaDeviceType\TypeInterface;
 use Version\Version;
@@ -41,7 +40,7 @@ use Version\Version;
  *
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 abstract class AbstractDevice
@@ -56,13 +55,6 @@ abstract class AbstractDevice
      * @var \UaHelper\Utils the helper class
      */
     protected $utils = null;
-
-    /**
-     * an logger instance
-     *
-     * @var \Psr\Log\LoggerInterface
-     */
-    protected $logger = null;
 
     /**
      * @var string|null
@@ -144,18 +136,14 @@ abstract class AbstractDevice
      *
      * @param string                   $useragent
      * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
         $this->setData($data);
-
-        $this->logger = $logger;
     }
 
     /**
