@@ -168,7 +168,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $pos1 = strpos($filecontent, 'public function canHandle');
         $pos2 = strpos($filecontent, '{', $pos1);
         $pos3 = strpos($filecontent, "\n    }", $pos2);
-        $check = ltrim(substr($filecontent, $pos2 + 1, $pos3 - $pos2));
+        $check = trim(substr($filecontent, $pos2 + 1, $pos3 - $pos2));
     } else {
         $check = 'return false;';
     }
