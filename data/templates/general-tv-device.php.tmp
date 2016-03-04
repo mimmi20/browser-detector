@@ -35,7 +35,6 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use UaDeviceType;
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Result\Result;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
