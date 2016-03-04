@@ -93,11 +93,7 @@ class ###ClassName### extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('###check###')) {
-            return false;
-        }
-
-        return true;
+        ###check###
     }
 
     /**

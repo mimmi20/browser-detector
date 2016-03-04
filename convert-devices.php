@@ -162,9 +162,15 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $wight = '0';
     }
 
+    if (preg_match('/public function canHandle\\(\\)\\n    \\{(.*)\\n    \\}/', $filecontent, $matches)) {
+        $check = $matches[1];
+    } else {
+        $check = 'return false;';
+    }
+
     $templateContent = str_replace(
-        ['###pointing###', '###width###', '###Height###', '###dual###', '###colors###', '###sms###', '###nfc###', '###querty###', '###type###', '###codename###', '###marketingname###', '###Manu###', '###Brand###', '###OS###', '###wight###'],
-        [$pointing, $width, $height, $dual, $colors, $sms, $nfc, $qwerty, $type, $codename, $marketing, $manufacturer, $brand, $os, $wight],
+        ['###pointing###', '###width###', '###Height###', '###dual###', '###colors###', '###sms###', '###nfc###', '###querty###', '###type###', '###codename###', '###marketingname###', '###Manu###', '###Brand###', '###OS###', '###wight###', '###check###'],
+        [$pointing, $width, $height, $dual, $colors, $sms, $nfc, $qwerty, $type, $codename, $marketing, $manufacturer, $brand, $os, $wight, $check],
         $templateContent
     );
 
