@@ -33,6 +33,8 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 
     if (preg_match('/Detector\\\\Device\\\\(Desktop|Tv)\\\\([^\\.]+)/', $fullpath, $pathMatches)) {
         $template = 'data/templates/general-tv-device.php.tmp';
+    } elseif (preg_match('/Detector\\\\Device\\\\(Mobile)\\\\([^\\.]+)/', $fullpath, $pathMatches)) {
+        $template = 'data/templates/general-device.php.tmp';
     } elseif (preg_match('/Detector\\\\Device\\\\(Desktop|Mobile|Tv)\\\\([^\\\\]+)\\\\([^\\.]+)/', $fullpath, $pathMatches) && $pathMatches[1] === 'Mobile') {
         $template = 'data/templates/general-sub-device.php.tmp';
     } else {
