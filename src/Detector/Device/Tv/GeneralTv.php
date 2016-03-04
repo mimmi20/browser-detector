@@ -29,10 +29,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device;
+namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
 use UaDeviceType\Tv;
 use UaMatcher\Device\DeviceHasChildrenInterface;

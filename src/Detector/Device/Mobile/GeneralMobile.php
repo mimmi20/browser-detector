@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device;
+namespace BrowserDetector\Detector\Device\Mobile;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Helper\MobileDevice;
@@ -82,9 +82,9 @@ class GeneralMobile
         'dual_orientation'       => true,
         'colors'                 => 65536,
         // sms
-        'sms_enabled'            => true,
+        'sms_enabled'            => null,
         // chips
-        'nfc_support'            => true,
+        'nfc_support'            => null,
     ];
     /**
      * @var MobilePhone

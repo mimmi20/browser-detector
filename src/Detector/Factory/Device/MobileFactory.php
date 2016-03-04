@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Device\GeneralMobile;
+use BrowserDetector\Detector\Device\Mobile\GeneralMobile;
 use BrowserDetector\Detector\Device\Mobile\Accent;
 use BrowserDetector\Detector\Device\Mobile\Acer;
 use BrowserDetector\Detector\Device\Mobile\Adspec;

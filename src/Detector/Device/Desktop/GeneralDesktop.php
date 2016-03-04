@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device;
+namespace BrowserDetector\Detector\Device\Desktop;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Helper\MobileDevice;
