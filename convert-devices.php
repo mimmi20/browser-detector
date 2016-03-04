@@ -156,9 +156,15 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $os = 'Unknown';
     }
 
+    if (preg_match('/getWeight\\(\\)\\n    {\\n        return ([\\d]+)/', $filecontent, $matches)) {
+        $wight = $matches[1];
+    } else {
+        $wight = '0';
+    }
+
     $templateContent = str_replace(
-        ['###pointing###', '###width###', '###Height###', '###dual###', '###colors###', '###sms###', '###nfc###', '###querty###', '###type###', '###codename###', '###marketingname###', '###Manu###', '###Brand###', '###OS###'],
-        [$pointing, $width, $height, $dual, $colors, $sms, $nfc, $qwerty, $type, $codename, $marketing, $manufacturer, $brand, $os],
+        ['###pointing###', '###width###', '###Height###', '###dual###', '###colors###', '###sms###', '###nfc###', '###querty###', '###type###', '###codename###', '###marketingname###', '###Manu###', '###Brand###', '###OS###', '###wight###'],
+        [$pointing, $width, $height, $dual, $colors, $sms, $nfc, $qwerty, $type, $codename, $marketing, $manufacturer, $brand, $os, $wight],
         $templateContent
     );
 
