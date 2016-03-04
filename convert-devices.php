@@ -155,7 +155,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     if (preg_match('/detectOs\\(\\)\\n    {\\n        return new ([^\\(]+)/', $filecontent, $matches)) {
         $os = $matches[1];
     } else {
-        $os = 'Unknown';
+        $os = 'UnknownOs';
     }
 
     if (preg_match('/getWeight\\(\\)\\n    {\\n        return ([\\d]+)/', $filecontent, $matches)) {
