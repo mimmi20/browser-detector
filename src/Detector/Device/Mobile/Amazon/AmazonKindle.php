@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,100 +33,58 @@ namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Tablet;
-use UaMatcher\Device\DeviceHasVersionInterface;
-use UaResult\Version;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AmazonKindle extends AbstractDevice implements DeviceHasVersionInterface
+class AmazonKindle extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
         $this->setData(
             [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
+                'deviceName'        => 'Kindle',
+                'marketingName'     => 'Kindle',
                 'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
+                'manufacturer'      => (new Company\Amazon())->name,
+                'brand'             => (new Company\Amazon())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
+                'resolutionWidth'   => 600,
+                'resolutionHeight'  => 800,
                 'dualOrientation'   => true,
-                'colors'            => null,
+                'colors'            => 65536,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
-
-        $this->logger = $logger;
     }
 
     /**
-     * the detected browser properties
+     * checks if this device is able to handle the useragent
      *
-     * @var array
-     */
-    protected $properties = [
-        // device
-        'code_name'              => 'Kindle',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'Kindle',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 600,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
-
-    /**
-     * @var \UaResult\Version
-     */
-    protected $version = null;
-
-    /**
-     * Final Interceptor: Intercept
-     * Everything that has not been trapped by a previous handler
-     *
-     * @return bool always true
+     * @return bool returns TRUE, if this device can handle the useragent
      */
     public function canHandle()
     {
@@ -154,50 +112,12 @@ class AmazonKindle extends AbstractDevice implements DeviceHasVersionInterface
     }
 
     /**
-     * returns the type of the current device
+     * returns the OS Handler
      *
-     * @return \UaDeviceType\TypeInterface
+     * @return \BrowserDetector\Detector\Os\UnknownOs
      */
-    public function getDeviceType()
+    public function detectOs()
     {
-        return new Tablet();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Amazon());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Amazon());
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectDeviceVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-
-        $searches = ['Kindle'];
-
-        $this->version = $detector->detectVersion($searches);
-
-        return $this->version;
+        return new Os\UnknownOs($this->useragent);
     }
 }

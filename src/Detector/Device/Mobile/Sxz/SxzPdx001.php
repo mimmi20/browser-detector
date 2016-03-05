@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,52 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Sxz;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\Tablet;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SxzPdx001 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SxzPdx001 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
-     * the detected browser properties
+     * the class constructor
      *
-     * @var array
+     * @param string $useragent
+     * @param array  $data
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'PDX0-01',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'PDX0-01',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 720,
-        'resolution_height'      => 1280,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => false,
-        // chips
-        'nfc_support'            => false,
-    ];
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+
+        $this->setData(
+            [
+                'deviceName'        => 'PDX0-01',
+                'marketingName'     => 'PDX0-01',
+                'version'           => null,
+                'manufacturer'      => (new Company\Sxz())->name,
+                'brand'             => (new Company\Sxz())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 720,
+                'resolutionHeight'  => 1280,
+                'dualOrientation'   => true,
+                'colors'            => 65536,
+                'smsSupport'        => false,
+                'nfcSupport'        => false,
+                'hasQwertyKeyboard' => true,
+                'type'              => new UaDeviceType\Tablet(),
+            ]
+        );
+    }
 
     /**
      * checks if this device is able to handle the useragent
@@ -105,42 +106,12 @@ class SxzPdx001 extends AbstractDevice implements DeviceHasSpecificPlatformInter
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new Tablet();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Sxz());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Sxz());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new AndroidOs($this->useragent, $this->logger);
+        return new Os\AndroidOs($this->useragent);
     }
 }

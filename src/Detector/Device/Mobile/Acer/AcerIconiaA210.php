@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,96 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Acer;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\FonePad;
-use UaMatcher\Browser\BrowserInterface;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerIconiaA210
-    extends AbstractDevice
-    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class AcerIconiaA210 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
         $this->setData(
             [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
+                'deviceName'        => 'A210',
+                'marketingName'     => 'A210',
                 'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
+                'manufacturer'      => (new Company\Acer())->name,
+                'brand'             => (new Company\Acer())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
+                'resolutionWidth'   => 1280,
+                'resolutionHeight'  => 800,
                 'dualOrientation'   => true,
-                'colors'            => null,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
+                'colors'            => 4294967296,
+                'smsSupport'        => false,
+                'nfcSupport'        => false,
                 'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
+                'type'              => new UaDeviceType\FonePad(),
             ]
         );
-
-        $this->logger = $logger;
     }
-
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = [
-        // device
-        'code_name'              => 'A210',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'A210',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => 'https://support.acer.com/UAprofile/Acer_A210_JRO03H_Profile.xml',
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 34,
-        'physical_screen_height' => 50,
-        'columns'                => 28,
-        'rows'                   => 30,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 4294967296,
-        // sms
-        'sms_enabled'            => false,
-        // chips
-        'nfc_support'            => false,
-    ];
 
     /**
      * checks if this device is able to handle the useragent
@@ -149,96 +106,12 @@ class AcerIconiaA210
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new FonePad();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Acer());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Acer());
-    }
-
-    /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return \BrowserDetector\Detector\Device\Mobile\Acer\AcerIconiaA210
-     */
-    public function detectSpecialProperties()
-    {
-        if ($this->utils->checkIfContains(['Build/IMM76D'])) {
-            $this->setCapability(
-                'uaprof',
-                'http://support.acer.com/UAprofile/Acer_A210_IMM76D_Profile.xml'
-            );
-        }
-
-        return $this;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new AndroidOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'acer_iconia_tab_a210_ver1';
-
-        $osVersion = $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        switch ($browser->getName()) {
-            case 'Android Webkit':
-                switch ((float) $osVersion) {
-                    case 4.1:
-                        $wurflKey = 'acer_iconia_tab_a210_ver1_suban41';
-                        break;
-                    default:
-                        // nothing to do here
-                        break;
-                }
-                break;
-            default:
-                // nothing to do here
-                break;
-        }
-
-        return $wurflKey;
+        return new Os\AndroidOs($this->useragent);
     }
 }

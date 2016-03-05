@@ -31,8 +31,8 @@
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Device\Tv\GeneralTv;
 use BrowserDetector\Detector\Device\Tv\DlinkDsm380;
+use BrowserDetector\Detector\Device\Tv\GeneralTv;
 use BrowserDetector\Detector\Device\Tv\GoogleTv;
 use BrowserDetector\Detector\Device\Tv\Idl6651n;
 use BrowserDetector\Detector\Device\Tv\LoeweSl121;

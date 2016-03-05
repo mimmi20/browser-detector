@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,57 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\Bada;
-use UaDeviceType\MobilePhone;
-use UaMatcher\Browser\BrowserInterface;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGts7230e extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class SamsungGts7230e extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
-     * the detected browser properties
+     * the class constructor
      *
-     * @var array
+     * @param string $useragent
+     * @param array  $data
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'GT-S7230E',
-        'model_extra_info'       => 'Orange',
-        'marketing_name'         => 'Wave 723',
-        'has_qwerty_keyboard'    => false,
-        'pointing_method'        => 'touchscreen',
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
 
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://wap.samsungmobile.com/uaprof/GT-S7230E.rdf',
-        'uaprof2'                => 'http://wap.samsungmobile.com/uaprof/GT-S7230E_3G.rdf',
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 240,
-        'resolution_height'      => 400,
-        'dual_orientation'       => false,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
+        $this->setData(
+            [
+                'deviceName'        => 'GT-S7230E',
+                'marketingName'     => 'Wave 723',
+                'version'           => null,
+                'manufacturer'      => (new Company\Samsung())->name,
+                'brand'             => (new Company\Samsung())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 240,
+                'resolutionHeight'  => 400,
+                'dualOrientation'   => false,
+                'colors'            => 65536,
+                'smsSupport'        => true,
+                'nfcSupport'        => true,
+                'hasQwertyKeyboard' => false,
+                'type'              => new UaDeviceType\MobilePhone(),
+            ]
+        );
+    }
 
     /**
      * checks if this device is able to handle the useragent
@@ -110,58 +106,12 @@ class SamsungGts7230e extends AbstractDevice implements DeviceHasWurflKeyInterfa
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new MobilePhone();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Samsung());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Samsung());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\Bada
      */
     public function detectOs()
     {
-        return new Bada($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'samsung_gt_s7230e_ver1_suborange';
-
-        return $wurflKey;
+        return new Os\Bada($this->useragent);
     }
 }

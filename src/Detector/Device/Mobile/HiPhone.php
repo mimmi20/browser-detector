@@ -50,8 +50,8 @@ class HiPhone extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,

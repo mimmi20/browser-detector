@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Factory\Device;
 
 use BrowserDetector\Detector\Device\Desktop\EeePc;
+use BrowserDetector\Detector\Device\Desktop\GeneralDesktop;
 use BrowserDetector\Detector\Device\Desktop\Hp9000;
 use BrowserDetector\Detector\Device\Desktop\LinuxDesktop;
 use BrowserDetector\Detector\Device\Desktop\MacBook;
@@ -42,7 +43,6 @@ use BrowserDetector\Detector\Device\Desktop\MacMini;
 use BrowserDetector\Detector\Device\Desktop\MacPro;
 use BrowserDetector\Detector\Device\Desktop\PowerMac;
 use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
-use BrowserDetector\Detector\Device\Desktop\GeneralDesktop;
 use BrowserDetector\Helper\Linux as LinuxHelper;
 use BrowserDetector\Helper\Macintosh as MacintoshHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;

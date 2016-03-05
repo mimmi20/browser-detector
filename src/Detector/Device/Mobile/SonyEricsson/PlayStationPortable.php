@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,56 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\Java;
-use UaDeviceType\MobileConsole;
-use UaMatcher\Browser\BrowserInterface;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlayStationPortable extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class PlayStationPortable extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
-     * the detected browser properties
+     * the class constructor
      *
-     * @var array
+     * @param string $useragent
+     * @param array  $data
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'PlayStation Portable',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'PSP',
-        'has_qwerty_keyboard'    => false,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 11,
-        'rows'                   => 6,
-        'max_image_width'        => 480,
-        'max_image_height'       => 272,
-        'resolution_width'       => 480,
-        'resolution_height'      => 272,
-        'dual_orientation'       => false,
-        'colors'                 => 256,
-        // sms
-        'sms_enabled'            => false,
-        // chips
-        'nfc_support'            => false,
-    ];
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+
+        $this->setData(
+            [
+                'deviceName'        => 'PlayStation Portable',
+                'marketingName'     => 'PSP',
+                'version'           => null,
+                'manufacturer'      => (new Company\Sony())->name,
+                'brand'             => (new Company\Sony())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 480,
+                'resolutionHeight'  => 272,
+                'dualOrientation'   => false,
+                'colors'            => 256,
+                'smsSupport'        => false,
+                'nfcSupport'        => false,
+                'hasQwertyKeyboard' => false,
+                'type'              => new UaDeviceType\MobileConsole(),
+            ]
+        );
+    }
 
     /**
      * checks if this device is able to handle the useragent
@@ -109,58 +106,12 @@ class PlayStationPortable extends AbstractDevice implements DeviceHasWurflKeyInt
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new MobileConsole();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Sony());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Sony());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Java($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'sony_psp_ver1';
-
-        return $wurflKey;
+        return new Os\Java($this->useragent);
     }
 }

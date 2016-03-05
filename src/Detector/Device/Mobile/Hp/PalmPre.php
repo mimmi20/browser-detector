@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,77 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\WebOs;
-use UaDeviceType\MobilePhone;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasVersionInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PalmPre
-    extends AbstractDevice
-    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasRuntimeModificationsInterface, DeviceHasVersionInterface
+class PalmPre extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
-     * @var \UaMatcher\Company\CompanyInterface
-     */
-    private $brand = null;
-
-    /**
-     * @var \UaMatcher\Company\CompanyInterface
-     */
-    private $manufacturer = null;
-
-    /**
-     * @var \UaResult\Version
-     */
-    protected $version = null;
-
-    /**
-     * the detected browser properties
+     * the class constructor
      *
-     * @var array
+     * @param string $useragent
+     * @param array  $data
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'Pre',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'Pre',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 44,
-        'physical_screen_height' => 66,
-        'columns'                => 18,
-        'rows'                   => 10,
-        'max_image_width'        => 320,
-        'max_image_height'       => 480,
-        'resolution_width'       => 320,
-        'resolution_height'      => 480,
-        'dual_orientation'       => false,
-        'colors'                 => 256, // wurflkey: palm_pre_ver1_subwebos141
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
 
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
+        $this->setData(
+            [
+                'deviceName'        => 'Pre',
+                'marketingName'     => 'Pre',
+                'version'           => null,
+                'manufacturer'      => (new Company\Unknown())->name,
+                'brand'             => (new Company\Unknown())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 320,
+                'resolutionHeight'  => 480,
+                'dualOrientation'   => false,
+                'colors'            => 256,
+                'smsSupport'        => true,
+                'nfcSupport'        => true,
+                'hasQwertyKeyboard' => true,
+                'type'              => new UaDeviceType\MobilePhone(),
+            ]
+        );
+    }
 
     /**
      * checks if this device is able to handle the useragent
@@ -130,114 +106,12 @@ class PalmPre
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new MobilePhone();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        if (null === $this->manufacturer) {
-            return new Company(new Company\Palm());
-        }
-
-        return $this->manufacturer;
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        if (null === $this->brand) {
-            return new Company(new Company\Palm());
-        }
-
-        return $this->brand;
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\WebOs
      */
     public function detectOs()
     {
-        return new WebOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectDeviceVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-
-        $searches = ['Pre'];
-
-        $this->version = $detector->detectVersion($searches);
-
-        return $this->version;
-    }
-
-    /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return \BrowserDetector\Detector\Device\GeneralMobile
-     */
-    public function detectSpecialProperties()
-    {
-        $modelVersion = $this->version->getVersion(Version::MAJORONLY);
-
-        if (3 === $modelVersion) {
-            $this->setCapability('resolution_width', 480);
-            $this->setCapability('resolution_height', 800);
-
-            $this->setCapability('code_name', 'Pre3');
-            $this->setCapability('marketing_name', 'Pre3');
-            $this->setCapability('uaprof', 'http://downloads.palm.com/profiles/P130U_R4.xml');
-            $this->setCapability('colors', 262144);
-
-            $this->manufacturer = new Company(new Company\Hp());
-            $this->brand        = new Company(new Company\Hp());
-        }
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'palm_pre_ver1';
-
-        $modelVersion = $this->version->getVersion(Version::MAJORONLY);
-
-        if (3 === $modelVersion) {
-            $wurflKey = 'hp_pre3_ver1';
-        }
-
-        return $wurflKey;
+        return new Os\WebOs($this->useragent);
     }
 }

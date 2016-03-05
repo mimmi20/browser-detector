@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,66 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\WebOs;
-use UaDeviceType\MobilePhone;
-use UaMatcher\Browser\BrowserInterface;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasVersionInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
-use Wurfl\WurflConstants;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PalmPixi
-    extends AbstractDevice
-    implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface, DeviceHasVersionInterface
+class PalmPixi extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
-     * the detected browser properties
+     * the class constructor
      *
-     * @var array
+     * @param string $useragent
+     * @param array  $data
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'Pixi',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'Pixi',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 18,
-        'rows'                   => 10,
-        'max_image_width'        => 320,
-        'max_image_height'       => 400,
-        'resolution_width'       => 320,
-        'resolution_height'      => 400,
-        'dual_orientation'       => false,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
 
-    /**
-     * @var \UaResult\Version
-     */
-    protected $version = null;
+        $this->setData(
+            [
+                'deviceName'        => 'Pixi',
+                'marketingName'     => 'Pixi',
+                'version'           => null,
+                'manufacturer'      => (new Company\Palm())->name,
+                'brand'             => (new Company\Palm())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 320,
+                'resolutionHeight'  => 400,
+                'dualOrientation'   => false,
+                'colors'            => 65536,
+                'smsSupport'        => true,
+                'nfcSupport'        => true,
+                'hasQwertyKeyboard' => true,
+                'type'              => new UaDeviceType\MobilePhone(),
+            ]
+        );
+    }
 
     /**
      * checks if this device is able to handle the useragent
@@ -119,83 +106,12 @@ class PalmPixi
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new MobilePhone();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Palm());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Palm());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\WebOs
      */
     public function detectOs()
     {
-        return new WebOs($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = WurflConstants::NO_MATCH;
-
-        $modelVersion = $this->detectVersion()->getVersion(Version::MAJORMINOR);
-
-        if ('1.1' === $modelVersion) {
-            $this->setCapability('code_name', 'Pixi Plus');
-            $wurflKey = 'palm_pixi_plus_ver1';
-        }
-
-        return $wurflKey;
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectDeviceVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
-
-        $searches = ['Pixi'];
-
-        $this->version = $detector->detectVersion($searches);
-
-        return $this->version;
+        return new Os\WebOs($this->useragent);
     }
 }

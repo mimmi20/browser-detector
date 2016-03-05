@@ -31,7 +31,6 @@
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Device\Mobile\GeneralMobile;
 use BrowserDetector\Detector\Device\Mobile\Accent;
 use BrowserDetector\Detector\Device\Mobile\Acer;
 use BrowserDetector\Detector\Device\Mobile\Adspec;
@@ -92,6 +91,7 @@ use BrowserDetector\Detector\Device\Mobile\Feiteng;
 use BrowserDetector\Detector\Device\Mobile\Fly;
 use BrowserDetector\Detector\Device\Mobile\Flytouch;
 use BrowserDetector\Detector\Device\Mobile\Fujitsu;
+use BrowserDetector\Detector\Device\Mobile\GeneralMobile;
 use BrowserDetector\Detector\Device\Mobile\Geniatech;
 use BrowserDetector\Detector\Device\Mobile\Gfive;
 use BrowserDetector\Detector\Device\Mobile\Gigabyte;

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,89 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Advent;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\Java;
-use UaDeviceType\Tablet;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AdventP10an01 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AdventP10an01 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
         $this->setData(
             [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
+                'deviceName'        => 'P10AN01',
+                'marketingName'     => 'Vega',
                 'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
+                'manufacturer'      => (new Company\Advent())->name,
+                'brand'             => (new Company\Advent())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => true,
-                'colors'            => null,
+                'resolutionWidth'   => 128,
+                'resolutionHeight'  => 128,
+                'dualOrientation'   => false,
+                'colors'            => 65536,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
-
-        $this->logger = $logger;
     }
-
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = [
-        // device
-        'code_name'              => 'P10AN01',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'Vega',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 18,
-        'rows'                   => 6,
-        'max_image_width'        => 120,
-        'max_image_height'       => 120,
-        'resolution_width'       => 128,
-        'resolution_height'      => 128,
-        'dual_orientation'       => false,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
 
     /**
      * checks if this device is able to handle the useragent
@@ -142,42 +106,12 @@ class AdventP10an01 extends AbstractDevice implements DeviceHasSpecificPlatformI
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new Tablet();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Advent());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Advent());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Java($this->useragent, $this->logger);
+        return new Os\Java($this->useragent);
     }
 }

@@ -31,8 +31,8 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use UaResult\Device\DeviceInterface;
 use UaDeviceType\TypeInterface;
+use UaResult\Device\DeviceInterface;
 use Version\Version;
 
 /**
@@ -134,8 +134,8 @@ abstract class AbstractDevice
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,

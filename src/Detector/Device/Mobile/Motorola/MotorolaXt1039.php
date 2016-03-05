@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,50 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Motorola;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MotorolaXt1039 extends AbstractDevice
+class MotorolaXt1039 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
-     * the detected browser properties
+     * the class constructor
      *
-     * @var array
+     * @param string $useragent
+     * @param array  $data
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'XT1039',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'XT1039',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => 720,
-        'resolution_height'      => 1280,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+
+        $this->setData(
+            [
+                'deviceName'        => 'XT1039',
+                'marketingName'     => 'XT1039',
+                'version'           => null,
+                'manufacturer'      => (new Company\Motorola())->name,
+                'brand'             => (new Company\Motorola())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 720,
+                'resolutionHeight'  => 1280,
+                'dualOrientation'   => true,
+                'colors'            => 16777216,
+                'smsSupport'        => true,
+                'nfcSupport'        => true,
+                'hasQwertyKeyboard' => true,
+                'type'              => new UaDeviceType\MobilePhone(),
+            ]
+        );
+    }
 
     /**
      * checks if this device is able to handle the useragent
@@ -103,32 +106,12 @@ class MotorolaXt1039 extends AbstractDevice
     }
 
     /**
-     * returns the type of the current device
+     * returns the OS Handler
      *
-     * @return \UaDeviceType\TypeInterface
+     * @return \BrowserDetector\Detector\Os\UnknownOs
      */
-    public function getDeviceType()
+    public function detectOs()
     {
-        return new MobilePhone();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Motorola());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Motorola());
+        return new Os\UnknownOs($this->useragent);
     }
 }

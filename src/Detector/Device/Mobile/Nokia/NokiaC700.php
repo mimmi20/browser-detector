@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,58 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\Symbianos;
-use UaDeviceType\MobilePhone;
-use UaMatcher\Browser\BrowserInterface;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaC700 extends AbstractDevice implements DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class NokiaC700 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
-     * the detected browser properties
+     * the class constructor
      *
-     * @var array
+     * @param string $useragent
+     * @param array  $data
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'C7-00',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'Astound',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => 'http://nds1.nds.nokia.com/uaprof/NC7-00r100.xml',
-        'uaprof2'                => 'http://nds1.nds.nokia.com/uaprof/NC7-00r100-VF3G.xml',
-        'uaprof3'                => 'http://nds1.nds.nokia.com/uaprof/NC7-00r310.xml',
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 44,
-        'physical_screen_height' => 78,
-        'columns'                => 17,
-        'rows'                   => 13,
-        'max_image_width'        => 360,
-        'max_image_height'       => 620,
-        'resolution_width'       => 360,
-        'resolution_height'      => 640,
-        'dual_orientation'       => true,
-        'colors'                 => 16777216, // wurflkey: nokia_c7_00_ver1_subbrowserng73
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
 
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
+        $this->setData(
+            [
+                'deviceName'        => 'C7-00',
+                'marketingName'     => 'Astound',
+                'version'           => null,
+                'manufacturer'      => (new Company\Nokia())->name,
+                'brand'             => (new Company\Nokia())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 360,
+                'resolutionHeight'  => 640,
+                'dualOrientation'   => true,
+                'colors'            => 16777216,
+                'smsSupport'        => true,
+                'nfcSupport'        => true,
+                'hasQwertyKeyboard' => true,
+                'type'              => new UaDeviceType\MobilePhone(),
+            ]
+        );
+    }
 
     /**
      * checks if this device is able to handle the useragent
@@ -111,69 +106,12 @@ class NokiaC700 extends AbstractDevice implements DeviceHasWurflKeyInterface, De
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new MobilePhone();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Nokia());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Nokia());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {
-        return new Symbianos($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'nokia_c7_00_ver1_subuaseries53';
-
-        $browserVersion = $browser->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if (!$this->utils->checkIfContains(['Series60/5.3'])) {
-            $wurflKey = 'nokia_c7_00_ver1_subuaseries53';
-        } elseif (7.3 === (float) $browserVersion) {
-            $wurflKey = 'nokia_c7_00_ver1_subbrowserng73';
-            $this->setCapability('colors', 16777216);
-        }
-
-        return $wurflKey;
+        return new Os\Symbianos($this->useragent);
     }
 }

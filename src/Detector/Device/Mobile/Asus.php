@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -34,15 +34,15 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\AndroidOs;
-use UaDeviceType\Tablet;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class Asus extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
@@ -50,169 +50,40 @@ class Asus extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
         $this->setData(
             [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
+                'deviceName'        => 'general Asus Device',
+                'marketingName'     => 'general Asus Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
+                'manufacturer'      => (new Company\Asus())->name,
+                'brand'             => (new Company\Asus())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
                 'resolutionHeight'  => null,
-                'dualOrientation'   => true,
+                'dualOrientation'   => null,
                 'colors'            => null,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
-
-        $this->logger = $logger;
-    }
-
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = [
-        // device
-        'code_name'              => 'general Asus Device',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'general Asus Device',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $asusPhones = [
-            'Asus',
-            'ASUS',
-            'Transformer',
-            'Slider SL101',
-            'eee_701',
-            'eeepc',
-            'Nexus 7',
-            'PadFone',
-            'ME301T',
-            'ME302C',
-            'ME371MG',
-            'ME173X',
-            'ME302KL',
-            'ME172V',
-            'K00E',
-            'K00F',
-            'K00Z',
-            'ME372CG',
-            'TF300T',
-        ];
-
-        if (!$this->utils->checkIfContains($asusPhones)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(['IdeaTab'])) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 182775;
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new Tablet();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Asus());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Asus());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
-     */
-    public function detectOs()
-    {
-        return new AndroidOs($this->useragent, $this->logger);
     }
 
     /**
      * detects the device name from the given user agent
      *
-     * @return \UaMatcher\Device\DeviceInterface
+     * @return \UaResult\Device\DeviceInterface
      */
     public function detectDevice()
     {
@@ -225,5 +96,15 @@ class Asus extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
         $chain->setDefaultHandler($this);
 
         return $chain->detect();
+    }
+
+    /**
+     * returns the OS Handler
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent);
     }
 }

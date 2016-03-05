@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -34,111 +34,56 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\MobilePhone;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Sprint extends AbstractDevice implements DeviceHasChildrenInterface
+class Sprint extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
         $this->setData(
             [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
+                'deviceName'        => 'general Sprint Device',
+                'marketingName'     => 'general Sprint Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
+                'manufacturer'      => (new Company\Sprint())->name,
+                'brand'             => (new Company\Sprint())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
                 'resolutionHeight'  => null,
-                'dualOrientation'   => true,
+                'dualOrientation'   => null,
                 'colors'            => null,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
+                'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-
-        $this->logger = $logger;
-    }
-
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = [
-        // device
-        'code_name'              => 'general Sprint Device',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'general Sprint Device',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => null,
-        'physical_screen_height' => null,
-        'columns'                => null,
-        'rows'                   => null,
-        'max_image_width'        => null,
-        'max_image_height'       => null,
-        'resolution_width'       => null,
-        'resolution_height'      => null,
-        'dual_orientation'       => null,
-        'colors'                 => null,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Sprint')) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(['APA9292KT', 'APA7373KT', 'APX515CKT'])) {
-            return false;
-        }
-
-        return true;
     }
 
     /**
      * detects the device name from the given user agent
      *
-     * @return \UaMatcher\Device\DeviceInterface
+     * @return \UaResult\Device\DeviceInterface
      */
     public function detectDevice()
     {
@@ -154,42 +99,12 @@ class Sprint extends AbstractDevice implements DeviceHasChildrenInterface
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns the OS Handler
      *
-     * @return int
+     * @return \BrowserDetector\Detector\Os\UnknownOs
      */
-    public function getWeight()
+    public function detectOs()
     {
-        return 3;
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new MobilePhone();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Sprint());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Sprint());
+        return new Os\UnknownOs($this->useragent);
     }
 }

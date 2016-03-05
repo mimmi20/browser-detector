@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,91 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\FonePad;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class RimPlayBook extends AbstractDevice implements DeviceHasWurflKeyInterface
+class RimPlayBook extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
         $this->setData(
             [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
+                'deviceName'        => 'PlayBook',
+                'marketingName'     => 'PlayBook',
                 'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
+                'manufacturer'      => (new Company\Rim())->name,
+                'brand'             => (new Company\Rim())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
+                'resolutionWidth'   => 1024,
+                'resolutionHeight'  => 600,
                 'dualOrientation'   => true,
-                'colors'            => null,
+                'colors'            => 65536,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
+                'type'              => new UaDeviceType\FonePad(),
             ]
         );
-
-        $this->logger = $logger;
     }
-
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = [
-        // device
-        'code_name'              => 'PlayBook',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'PlayBook',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 154,
-        'physical_screen_height' => 90,
-        'columns'                => 60,
-        'rows'                   => 40,
-        'max_image_width'        => 1024,
-        'max_image_height'       => 600,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 600,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
 
     /**
      * checks if this device is able to handle the useragent
@@ -144,48 +106,12 @@ class RimPlayBook extends AbstractDevice implements DeviceHasWurflKeyInterface
     }
 
     /**
-     * returns the type of the current device
+     * returns the OS Handler
      *
-     * @return \UaDeviceType\TypeInterface
+     * @return \BrowserDetector\Detector\Os\UnknownOs
      */
-    public function getDeviceType()
+    public function detectOs()
     {
-        return new FonePad();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Rim());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Rim());
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'rim_playbook_ver1';
-
-        return $wurflKey;
+        return new Os\UnknownOs($this->useragent);
     }
 }

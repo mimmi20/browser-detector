@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,51 +33,53 @@ namespace BrowserDetector\Detector\Device\Mobile\Honlin;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use UaDeviceType\Desktop;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use UaHelper\Utils;
+use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
+use UaMatcher\MatcherCanHandleInterface;
+use UaMatcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HonlinPc1088 extends AbstractDevice
+class HonlinPc1088 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
-     * the detected browser properties
+     * the class constructor
      *
-     * @var array
+     * @param string $useragent
+     * @param array  $data
      */
-    protected $properties = [
-        // device
-        'code_name'              => 'PC1088',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'PC1088',
-        'has_qwerty_keyboard'    => true,
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 100,
-        'physical_screen_height' => 200,
-        'columns'                => 100,
-        'rows'                   => 50,
-        'max_image_width'        => 768,
-        'max_image_height'       => 1000,
-        'resolution_width'       => 1024,
-        'resolution_height'      => 768,
-        'dual_orientation'       => true,
-        'colors'                 => 262144,
-        // sms
-        'sms_enabled'            => true, // wurflkey: hp_touchpad_ver1
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
 
-        // chips
-        'nfc_support'            => true, // wurflkey: hp_touchpad_ver1
-    ];
+        $this->setData(
+            [
+                'deviceName'        => 'PC1088',
+                'marketingName'     => 'PC1088',
+                'version'           => null,
+                'manufacturer'      => (new Company\Honlin())->name,
+                'brand'             => (new Company\Honlin())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 1024,
+                'resolutionHeight'  => 768,
+                'dualOrientation'   => true,
+                'colors'            => 262144,
+                'smsSupport'        => true,
+                'nfcSupport'        => true,
+                'hasQwertyKeyboard' => true,
+                'type'              => new UaDeviceType\Desktop(),
+            ]
+        );
+    }
 
     /**
      * checks if this device is able to handle the useragent
@@ -104,32 +106,12 @@ class HonlinPc1088 extends AbstractDevice
     }
 
     /**
-     * returns the type of the current device
+     * returns the OS Handler
      *
-     * @return \UaDeviceType\TypeInterface
+     * @return \BrowserDetector\Detector\Os\UnknownOs
      */
-    public function getDeviceType()
+    public function detectOs()
     {
-        return new Desktop();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Honlin());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Honlin());
+        return new Os\UnknownOs($this->useragent);
     }
 }

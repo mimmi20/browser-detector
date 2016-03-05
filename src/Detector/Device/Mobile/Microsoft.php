@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -34,121 +34,56 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\Windows;
-use UaDeviceType\Tablet;
-use UaMatcher\Browser\BrowserInterface;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
 use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsInterface;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasWurflKeyInterface, DeviceHasSpecificPlatformInterface
+class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
-     * @param string                   $useragent
-     * @param array                    $data
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent
+     * @param array  $data
      */
     public function __construct(
         $useragent,
-        array $data,
-        LoggerInterface $logger = null
+        array $data
     ) {
         $this->useragent = $useragent;
 
         $this->setData(
             [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
+                'deviceName'        => 'general Microsoft Device',
+                'marketingName'     => 'general Microsoft Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
+                'manufacturer'      => (new Company\Microsoft())->name,
+                'brand'             => (new Company\Microsoft())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
+                'resolutionWidth'   => 1280,
+                'resolutionHeight'  => 800,
                 'dualOrientation'   => true,
-                'colors'            => null,
+                'colors'            => 65536,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
+                'hasQwertyKeyboard' => false,
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
-
-        $this->logger = $logger;
-    }
-
-    /**
-     * the detected browser properties
-     *
-     * @var array
-     */
-    protected $properties = [
-        // device
-        'code_name'              => 'general Microsoft Device',
-        'model_extra_info'       => null,
-        'marketing_name'         => 'general Microsoft Device',
-        'has_qwerty_keyboard'    => false, // windows_8_rt_ver1
-        'pointing_method'        => 'touchscreen',
-        // product info
-        'ununiqueness_handler'   => null,
-        'uaprof'                 => null,
-        'uaprof2'                => null,
-        'uaprof3'                => null,
-        'unique'                 => true,
-        // display
-        'physical_screen_width'  => 27,
-        'physical_screen_height' => 27,
-        'columns'                => 80,
-        'rows'                   => 20,
-        'max_image_width'        => 1280,
-        'max_image_height'       => 800,
-        'resolution_width'       => 1280,
-        'resolution_height'      => 800,
-        'dual_orientation'       => true,
-        'colors'                 => 65536,
-        // sms
-        'sms_enabled'            => true,
-        // chips
-        'nfc_support'            => true,
-    ];
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(['ARM;'])) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(['Windows NT 6.2', 'Windows NT 6.3'])) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(['WPDesktop'])) {
-            return false;
-        }
-
-        return true;
     }
 
     /**
      * detects the device name from the given user agent
      *
-     * @return \UaMatcher\Device\DeviceInterface
+     * @return \UaResult\Device\DeviceInterface
      */
     public function detectDevice()
     {
@@ -164,68 +99,12 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaDeviceType\TypeInterface
-     */
-    public function getDeviceType()
-    {
-        return new Tablet();
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Microsoft());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \BrowserDetector\Detector\Company\AbstractCompany
-     */
-    public function getBrand()
-    {
-        return new Company(new Company\Microsoft());
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\Windows
      */
     public function detectOs()
     {
-        return new Windows($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey for the device
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Os\OsInterface           $os
-     *
-     * @return string|null
-     */
-    public function getWurflKey(BrowserInterface $browser, EngineInterface $engine, OsInterface $os)
-    {
-        $wurflKey = 'windows_8_rt_ver1';
-
-        return $wurflKey;
+        return new Os\Windows($this->useragent);
     }
 }
