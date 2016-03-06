@@ -53,7 +53,7 @@ use BrowserDetector\Detector\Device\Tv\SonyNszGs7Gx70;
 use BrowserDetector\Detector\Device\Tv\TechniSatDigiCorderIsioS;
 use BrowserDetector\Detector\Device\Tv\TechniSatDigitIsioS;
 use BrowserDetector\Detector\Device\Tv\TechniSatMultyVisionIsio;
-use Psr\Log\LoggerInterface;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -61,62 +61,61 @@ use Psr\Log\LoggerInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TvFactory
+class TvFactory implements FactoryInterface
 {
     /**
      * detects the device name from the given user agent
      *
-     * @param string                   $useragent
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent
      *
      * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($useragent, LoggerInterface $logger)
+    public static function detect($useragent)
     {
         if (preg_match('/xbox one/i', $useragent)) {
-            $device = new MicrosoftXboxOne($useragent, $logger);
+            $device = new MicrosoftXboxOne($useragent, []);
         } elseif (preg_match('/xbox/i', $useragent)) {
-            $device = new MicrosoftXbox($useragent, $logger);
+            $device = new MicrosoftXbox($useragent, []);
         } elseif (preg_match('/dlink\.dsm380/i', $useragent)) {
-            $device = new DlinkDsm380($useragent, $logger);
+            $device = new DlinkDsm380($useragent, []);
         } elseif (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
-            $device = new SonyNszGs7Gx70($useragent, $logger);
+            $device = new SonyNszGs7Gx70($useragent, []);
         } elseif (preg_match('/googletv/i', $useragent)) {
-            $device = new GoogleTv($useragent, $logger);
+            $device = new GoogleTv($useragent, []);
         } elseif (preg_match('/idl\-6651n/i', $useragent)) {
-            $device = new Idl6651n($useragent, $logger);
+            $device = new Idl6651n($useragent, []);
         } elseif (preg_match('/loewe; sl121/i', $useragent)) {
-            $device = new LoeweSl121($useragent, $logger);
+            $device = new LoeweSl121($useragent, []);
         } elseif (preg_match('/loewe; sl150/i', $useragent)) {
-            $device = new LoeweSl150($useragent, $logger);
+            $device = new LoeweSl150($useragent, []);
         } elseif (preg_match('/NETRANGEMMH/', $useragent)) {
-            $device = new NetrangeMmh($useragent, $logger);
+            $device = new NetrangeMmh($useragent, []);
         } elseif (preg_match('/viera/i', $useragent)) {
-            $device = new PanasonicViera($useragent, $logger);
+            $device = new PanasonicViera($useragent, []);
         } elseif (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
-            $device = new PhilipsTv($useragent, $logger);
+            $device = new PhilipsTv($useragent, []);
         } elseif (preg_match('/SMART\-TV/', $useragent)) {
-            $device = new SamsungSmartTv($useragent, $logger);
+            $device = new SamsungSmartTv($useragent, []);
         } elseif (preg_match('/KDL32HX755/', $useragent)) {
-            $device = new SonyKdl32hx755($useragent, $logger);
+            $device = new SonyKdl32hx755($useragent, []);
         } elseif (preg_match('/KDL37EX720/', $useragent)) {
-            $device = new SonyKdl37ex720($useragent, $logger);
+            $device = new SonyKdl37ex720($useragent, []);
         } elseif (preg_match('/KDL40EX720/', $useragent)) {
-            $device = new SonyKdl40ex720($useragent, $logger);
+            $device = new SonyKdl40ex720($useragent, []);
         } elseif (preg_match('/KDL50W815B/', $useragent)) {
-            $device = new SonyKdl50w815b($useragent, $logger);
+            $device = new SonyKdl50w815b($useragent, []);
         } elseif (preg_match('/SonyDTV115/', $useragent)) {
-            $device = new SonyDtv115($useragent, $logger);
+            $device = new SonyDtv115($useragent, []);
         } elseif (preg_match('/technisat digicorder isio s/i', $useragent)) {
-            $device = new TechniSatDigiCorderIsioS($useragent, $logger);
+            $device = new TechniSatDigiCorderIsioS($useragent, []);
         } elseif (preg_match('/technisat digit isio s/i', $useragent)) {
-            $device = new TechniSatDigitIsioS($useragent, $logger);
+            $device = new TechniSatDigitIsioS($useragent, []);
         } elseif (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
-            $device = new TechniSatMultyVisionIsio($useragent, $logger);
+            $device = new TechniSatMultyVisionIsio($useragent, []);
         } elseif (preg_match('/AQUOSBrowser/', $useragent)) {
-            $device = new SharpAquosTv($useragent, $logger);
+            $device = new SharpAquosTv($useragent, []);
         } else {
-            $device = new GeneralTv($useragent, $logger);
+            $device = new GeneralTv($useragent, []);
         }
 
         return $device;

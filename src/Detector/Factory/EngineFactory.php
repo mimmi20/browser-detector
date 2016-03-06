@@ -33,10 +33,8 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
-use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use UaResult\Os\OsInterface;
 
 /**
  * Browser detection class
@@ -53,12 +51,11 @@ class EngineFactory implements FactoryInterface
      * Gets the information about the rendering engine by User Agent
      *
      * @param string                    $agent
-     * @param \Psr\Log\LoggerInterface  $logger
-     * @param \UaMatcher\Os\OsInterface $os
+     * @param \UaResult\Os\OsInterface $os
      *
-     * @return \UaMatcher\Engine\EngineInterface
+     * @return \UaResult\Engine\EngineInterface
      */
-    public static function detect($agent, LoggerInterface $logger, OsInterface $os = null)
+    public static function detect($agent, OsInterface $os = null)
     {
         $utils = new Utils();
         $utils->setUserAgent($agent);
@@ -81,9 +78,9 @@ class EngineFactory implements FactoryInterface
         } elseif (preg_match('/(goanna)/i', $agent)) {
             $engineKey = 'Goanna';
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $agent)) {
-            $chrome = new Chrome($agent, $logger);
+            //$chrome = new Chrome($agent, []);
 
-            $chromeVersion = $chrome->detectVersion()->getVersion(Version::MAJORONLY);
+            $chromeVersion = 0; //$chrome->get(Version::MAJORONLY);
 
             if ($chromeVersion >= 28) {
                 $engineKey = 'Blink';
@@ -114,6 +111,6 @@ class EngineFactory implements FactoryInterface
 
         $engineName = '\\BrowserDetector\\Detector\\Engine\\' . $engineKey;
 
-        return new $engineName($agent, $logger);
+        return new $engineName($agent);
     }
 }

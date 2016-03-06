@@ -43,37 +43,37 @@ use UaResult\Version;
 class Aix extends AbstractOs
 {
     /**
-     * returns the name of the operating system/platform
+     * Class Constructor
      *
-     * @return string
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    public function getName()
-    {
-        return 'AIX';
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+
+        $this->setData(
+            [
+                'name'         => 'AIX',
+                'version'      => $this->detectVersion(),
+                'manufacturer' => (new Company\Ibm())->name,
+                'bits'         => null,
+            ]
+        );
     }
 
     /**
      * returns the version of the operating system/platform
      *
-     * @return \UaResult\Version
+     * @return string
      */
-    public function detectVersion()
+    private function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
-        $searches = ['AIX'];
-
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Ibm());
+        return $detector->detectVersion(['AIX'])->getVersion();
     }
 }

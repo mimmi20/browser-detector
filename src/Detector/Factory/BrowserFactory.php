@@ -711,7 +711,7 @@ use WurflCache\Adapter\AdapterInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BrowserFactory
+class BrowserFactory implements FactoryInterface
 {
     /**
      * Gets the information about the rendering engine by User Agent

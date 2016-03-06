@@ -32,9 +32,9 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Engine\EngineInterface;
+use UaResult\Browser\BrowserInterface;
+use UaResult\Device\DeviceInterface;
+use UaResult\Engine\EngineInterface;
 use UaMatcher\Os\OsChangesBrowserInterface;
 use UaMatcher\Os\OsChangesEngineInterface;
 use UaResult\Version;
@@ -62,13 +62,13 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
      *
      * @return \UaResult\Version
      */
-    public function detectVersion()
+    private function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
 
         if ($this->utils->checkIfContains('android 2.1-update1', true)) {
-            return $detector->setVersion('2.1.1');
+            return '2.1.1';
         }
 
         $searches = [
@@ -84,15 +84,15 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
 
         if (!$detector->getVersion()) {
             if ($this->utils->checkIfContains('android eclair', true)) {
-                $detector->setVersion('2.1');
+                return '2.1';
             }
 
             if ($this->utils->checkIfContains('gingerbread', true)) {
-                $detector->setVersion('2.3');
+                return '2.3';
             }
         }
 
-        return $detector;
+        return $detector->getVersion();
     }
 
     /**
@@ -108,7 +108,7 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
     /**
      * changes properties of the browser depending on properties of the Os
      *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
+     * @param \UaResult\Browser\BrowserInterface $browser
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */
@@ -127,9 +127,9 @@ class AndroidOs extends AbstractOs implements OsChangesEngineInterface, OsChange
     /**
      * changes properties of the engine depending on browser properties and depending on properties of the Os
      *
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Device\DeviceInterface   $device
+     * @param \UaResult\Engine\EngineInterface   $engine
+     * @param \UaResult\Browser\BrowserInterface $browser
+     * @param \UaResult\Device\DeviceInterface   $device
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */

@@ -45,12 +45,9 @@ use Psr\Log\LoggerInterface;
 interface FactoryInterface
 {
     /**
-     * Gets the information about the rendering engine by User Agent
-     *
-     * @param string                   $agent
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $agent
      *
      * @return mixed
      */
-    public static function detect($agent, LoggerInterface $logger);
+    public static function detect($agent);
 }

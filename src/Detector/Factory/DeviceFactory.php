@@ -50,29 +50,26 @@ use UaMatcher\Device\DeviceHasChildrenInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DeviceFactory
+class DeviceFactory implements FactoryInterface
 {
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string                   $agent
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $agent
      *
      * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($agent, LoggerInterface $logger)
+    public static function detect($agent)
     {
         if ((new MobileDevice($agent))->isMobile()) {
-            $device = MobileFactory::detect($agent, $logger);
+            $device = MobileFactory::detect($agent);
         } elseif ((new TvHelper($agent))->isTvDevice()) {
-            $device = TvFactory::detect($agent, $logger);
+            $device = TvFactory::detect($agent);
         } elseif ((new Desktop($agent))->isDesktopDevice()) {
-            $device = DesktopFactory::detect($agent, $logger);
+            $device = DesktopFactory::detect($agent);
         } else {
-            $device = new UnknownDevice($agent, $logger);
+            $device = new UnknownDevice($agent, []);
         }
-
-        $device->setLogger($logger);
 
         if ($device instanceof DeviceHasChildrenInterface) {
             $device = $device->detectDevice();

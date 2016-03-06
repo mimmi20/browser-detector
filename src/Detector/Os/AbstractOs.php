@@ -32,10 +32,8 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Bits\Os as OsBits;
-use Psr\Log\LoggerInterface;
-use UaHelper\Utils;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use UaResult\Os\OsInterface;
+use Version\Version;
 
 /**
  * base class for all rendering platforms/operating systems to detect
@@ -45,7 +43,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractOs implements OsInterface, \Serializable
+abstract class AbstractOs implements OsInterface
 {
     /**
      * @var string the user agent to handle
@@ -53,66 +51,70 @@ abstract class AbstractOs implements OsInterface, \Serializable
     protected $useragent = '';
 
     /**
-     * @var \UaHelper\Utils the helper class
+     * @var string|null
      */
-    protected $utils = null;
+    protected $name = null;
 
     /**
-     * @var \Psr\Log\LoggerInterface
+     * @var \Version\Version|null
      */
-    protected $logger = null;
+    protected $version = null;
+
+    /**
+     * @var \UaResult\Company\CompanyInterface|null
+     */
+    protected $manufacturer = null;
+
+    /**
+     * @var int|null
+     */
+    protected $bits = null;
 
     /**
      * Class Constructor
      *
-     * @param string                   $useragent the user agent to be handled
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    public function __construct($useragent = null, LoggerInterface $logger = null)
-    {
-        $this->init($useragent);
-
-        $this->logger = $logger;
-    }
-
-    /**
-     * sets the logger
-     *
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \UaMatcher\MatcherInterface
-     */
-    public function setLogger(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
-
-        return $this;
-    }
-
-    /**
-     * initializes the object
-     *
-     * @param string $useragent
-     */
-    protected function init($useragent)
-    {
-        $this->utils = new Utils();
-
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
         $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
+
+        $this->setData($data);
     }
 
     /**
-     * returns the version of the operating system/platform
-     *
-     * @return \UaResult\Version
+     * @return int|null
      */
-    public function detectVersion()
+    public function getBits()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
+        return $this->bits;
+    }
 
-        return $detector->setVersion('');
+    /**
+     * @return null|\UaResult\Company\CompanyInterface
+     */
+    public function getManufacturer()
+    {
+        return $this->manufacturer;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return null|\Version\Version
+     */
+    public function getVersion()
+    {
+        return $this->version;
     }
 
     /**
@@ -128,6 +130,12 @@ abstract class AbstractOs implements OsInterface, \Serializable
         return serialize(
             [
                 'useragent' => $this->useragent,
+                'data'      => [
+                    'name'         => $this->name,
+                    'version'      => $this->version,
+                    'manufacturer' => $this->manufacturer,
+                    'bits'         => $this->bits,
+                ],
             ]
         );
     }
@@ -146,16 +154,48 @@ abstract class AbstractOs implements OsInterface, \Serializable
     {
         $unseriliazedData = unserialize($serialized);
 
-        $this->init($unseriliazedData['useragent']);
+        $this->useragent = $unseriliazedData['useragent'];
+        $this->setData($unseriliazedData['data']);
     }
 
     /**
-     * @return string
+     * (PHP 5 &gt;= 5.4.0)<br/>
+     * Specify data which should be serialized to JSON
+     *
+     * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
+     *
+     * @return mixed data which can be serialized by <b>json_encode</b>,
+     *               which is a value of any type other than a resource.
      */
-    public function detectBits()
+    public function jsonSerialize()
     {
-        $detector = new OsBits($this->useragent);
+        return [
+            'useragent' => $this->useragent,
+            'data'      => [
+                'name'         => $this->name,
+                'version'      => $this->version,
+                'manufacturer' => $this->manufacturer,
+                'bits'         => $this->bits,
+            ],
+        ];
+    }
 
-        return $detector->getBits();
+    /**
+     * @param array $data
+     */
+    protected function setData(array $data)
+    {
+        $this->name = $data['name'];
+
+        if (!empty($data['version']) && $data['version'] instanceof Version) {
+            $this->version = $data['version'];
+        }
+
+        if (!empty($data['manufacturer'])) {
+            $this->manufacturer = $data['manufacturer'];
+        }
+
+        $detector   = new OsBits($this->useragent);
+        $this->bits = $detector->getBits();
     }
 }

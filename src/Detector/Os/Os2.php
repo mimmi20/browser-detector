@@ -57,7 +57,7 @@ class Os2 extends AbstractOs
      *
      * @return \UaResult\Version
      */
-    public function detectVersion()
+    private function detectVersion()
     {
         $detector = new Version();
         $detector->setUserAgent($this->useragent);
