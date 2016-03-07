@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -41,7 +41,7 @@ use Version\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Aix extends AbstractOs
+class ###ClassName### extends AbstractOs
 {
     /**
      * Class Constructor
@@ -58,9 +58,9 @@ class Aix extends AbstractOs
 
         $this->setData(
             [
-                'name'         => 'AIX',
+                'name'         => '###codename###',
                 'version'      => ($version === null ? new Version($version) : Version::parse($version)),
-                'manufacturer' => (new Company\Ibm())->name,
+                'manufacturer' => (new Company\###Manu###())->name,
                 'bits'         => null,
             ]
         );
@@ -69,13 +69,10 @@ class Aix extends AbstractOs
     /**
      * returns the version of the operating system/platform
      *
-     * @return string
+     * @return string|null
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['AIX'])->getVersion();
+        ###detectVersion###
     }
 }
