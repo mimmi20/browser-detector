@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,7 +32,8 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use UaResult\Version;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -43,23 +44,36 @@ use UaResult\Version;
 class Ios extends AbstractOs
 {
     /**
-     * returns the name of the operating system/platform
+     * Class Constructor
      *
-     * @return string
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    public function getName()
-    {
-        return 'iOS';
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
+
+        $this->setData(
+            [
+                'name'         => 'iOS',
+                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer' => (new Company\Apple())->name,
+                'bits'         => null,
+            ]
+        );
     }
 
     /**
      * returns the version of the operating system/platform
      *
-     * @return \UaResult\Version
+     * @return string|null
      */
     private function detectVersion()
     {
-        $detector = new Version();
+        $detector = new ResultVersion();
         $detector->setUserAgent($this->useragent);
 
         $searches = [
@@ -78,19 +92,9 @@ class Ios extends AbstractOs
         $doMatch = preg_match('/CPU like Mac OS X/', $this->useragent, $matches);
 
         if ($doMatch) {
-            $detector->setVersion('1.0');
+            return '1.0';
         }
 
-        return $detector;
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Apple());
+        return $detector->getVersion();
     }
 }

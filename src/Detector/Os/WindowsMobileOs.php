@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,7 +32,9 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use UaResult\Version;
+use UaHelper\Utils;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -43,49 +45,55 @@ use UaResult\Version;
 class WindowsMobileOs extends AbstractOs
 {
     /**
-     * returns the name of the operating system/platform
+     * Class Constructor
      *
-     * @return string
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    public function getName()
-    {
-        return 'Windows Mobile OS';
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
+
+        $this->setData(
+            [
+                'name'         => 'Windows Mobile OS',
+                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer' => (new Company\Microsoft())->name,
+                'bits'         => null,
+            ]
+        );
     }
 
     /**
      * returns the version of the operating system/platform
      *
-     * @return \UaResult\Version
+     * @return string|null
      */
     private function detectVersion()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        if ($this->utils->checkIfContains('Windows NT 5.1')) {
-            return $detector->setVersion('6.0');
+        if (false !== strpos($this->useragent, 'Windows NT 5.1')) {
+            return '6.0';
         }
 
-        if ($this->utils->checkIfContains(['Windows CE', 'Windows Mobile', 'MSIEMobile'])) {
+        $detector = new ResultVersion();
+        $detector->setUserAgent($this->useragent);
+
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['Windows CE', 'Windows Mobile', 'MSIEMobile'])) {
             $detector->setDefaulVersion('6.0');
 
             $searches = ['MSIEMobile'];
 
-            return $detector->detectVersion($searches);
+            return $detector->detectVersion($searches)->getVersion();
         }
 
         $searches = ['Windows Phone'];
 
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Microsoft());
+        return $detector->detectVersion($searches)->getVersion();
     }
 }

@@ -51,7 +51,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $templateContent
     );
 
-    if (preg_match('/\\\'name\\\'\s+ => \\\'([^\\\\\']+)\\\'/', $filecontent, $matches)) {
+    if (preg_match('/getName\\(\\)\\n    {\\n        return \\\'([^\\\\\']+)\\\'/', $filecontent, $matches)) {
         $codename = $matches[1];
     } else {
         $codename = 'unknown';

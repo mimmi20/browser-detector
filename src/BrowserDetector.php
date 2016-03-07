@@ -42,7 +42,6 @@ use UaMatcher\Browser\BrowserDependsOnEngineInterface;
 use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
 use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Device\DeviceHasVersionInterface;
 use UaMatcher\Engine\EngineDependsOnDeviceInterface;
 use UaMatcher\Os\OsChangesBrowserInterface;
 use UaMatcher\Os\OsChangesEngineInterface;

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,12 +32,9 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaMatcher\Engine\EngineInterface;
-use UaMatcher\Os\OsChangesBrowserInterface;
-use UaMatcher\Os\OsChangesEngineInterface;
-use UaResult\Version;
+use UaHelper\Utils;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -45,90 +42,58 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsPhoneOs extends AbstractOs implements OsChangesEngineInterface, OsChangesBrowserInterface
+class WindowsPhoneOs extends AbstractOs
 {
     /**
-     * returns the name of the operating system/platform
+     * Class Constructor
      *
-     * @return string
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    public function getName()
-    {
-        return 'Windows Phone OS';
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
+
+        $this->setData(
+            [
+                'name'         => 'Windows Phone OS',
+                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer' => (new Company\Microsoft())->name,
+                'bits'         => null,
+            ]
+        );
     }
 
     /**
      * returns the version of the operating system/platform
      *
-     * @return \UaResult\Version
+     * @return string|null
      */
     private function detectVersion()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
 
-        if ($this->utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
-            return $detector->setVersion('7.5');
+        if ($utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
+            return '7.5';
         }
 
-        if ($this->utils->checkIfContains(['WPDesktop'])) {
-            if ($this->utils->checkIfContains(['Windows NT 6.2'])) {
-                return $detector->setVersion('8.1');
+        $detector = new ResultVersion();
+        $detector->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['WPDesktop'])) {
+            if ($utils->checkIfContains(['Windows NT 6.2'])) {
+                return '8.1';
             }
 
-            return $detector->setVersion('8.0');
+            return '8.0';
         }
 
         $searches = ['Windows Phone OS', 'Windows Phone'];
 
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Microsoft());
-    }
-
-    /**
-     * changes properties of the browser depending on properties of the Os
-     *
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
-     */
-    public function changeBrowserProperties(BrowserInterface $browser)
-    {
-        if ($this->utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
-            $browser->setCapability('mobile_browser_modus', 'Desktop Mode');
-        }
-
-        return $this;
-    }
-
-    /**
-     * changes properties of the engine depending on browser properties and depending on properties of the Os
-     *
-     * @param \UaMatcher\Engine\EngineInterface   $engine
-     * @param \UaMatcher\Browser\BrowserInterface $browser
-     * @param \UaMatcher\Device\DeviceInterface   $device
-     *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
-     */
-    public function changeEngineProperties(EngineInterface $engine, BrowserInterface $browser, DeviceInterface $device)
-    {
-        $browserVersion = (float) $browser->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if ($browserVersion < 10.0) {
-            $engine->setCapability('is_sencha_touch_ok', false);
-        }
-
-        return $this;
+        return $detector->detectVersion($searches)->getVersion();
     }
 }

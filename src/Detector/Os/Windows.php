@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,7 +32,8 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use UaResult\Version;
+use UaHelper\Utils;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -43,40 +44,52 @@ use UaResult\Version;
 class Windows extends AbstractOs
 {
     /**
-     * returns the name of the operating system/platform
+     * Class Constructor
      *
-     * @return string
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    public function getName()
-    {
-        return 'Windows';
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
+
+        $this->setData(
+            [
+                'name'         => 'Windows',
+                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer' => (new Company\Microsoft())->name,
+                'bits'         => null,
+            ]
+        );
     }
 
     /**
      * returns the version of the operating system/platform
      *
-     * @return \UaResult\Version
+     * @return string|null
      */
     private function detectVersion()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
 
-        if ($this->utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
-            return $detector->setVersion('ME');
+        if ($utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
+            return 'ME';
         }
 
-        if ($this->utils->checkIfContains(['Win98'])) {
-            return $detector->setVersion('98');
+        if ($utils->checkIfContains(['Win98'])) {
+            return '98';
         }
 
-        if ($this->utils->checkIfContains(['Win95'])) {
-            return $detector->setVersion('95');
+        if ($utils->checkIfContains(['Win95'])) {
+            return '95';
         }
 
-        if ($this->utils->checkIfContains(['Windows-NT'])) {
-            return $detector->setVersion('NT');
+        if ($utils->checkIfContains(['Windows-NT'])) {
+            return 'NT';
         }
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->useragent, $matches);
@@ -117,7 +130,7 @@ class Windows extends AbstractOs
                     break;
             }
 
-            return $detector->setVersion($version);
+            return $version;
         }
 
         $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->useragent, $matches);
@@ -173,23 +186,13 @@ class Windows extends AbstractOs
                     $version = 'NT';
                     break;
                 default:
-                    $version = '';
+                    $version = '0.0';
                     break;
             }
 
-            return $detector->setVersion($version);
+            return $version;
         }
 
-        return $detector->setVersion('');
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Microsoft());
+        return '0.0';
     }
 }
