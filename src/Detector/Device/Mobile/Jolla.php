@@ -88,7 +88,7 @@ class Jolla extends AbstractDevice implements DeviceHasChildrenInterface, Device
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Jolla');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Jolla' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Jolla extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

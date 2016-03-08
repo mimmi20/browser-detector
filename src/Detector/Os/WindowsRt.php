@@ -75,7 +75,7 @@ class WindowsRt extends AbstractOs
     {
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
-        
+
         if ($utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
             return 'ME';
         }

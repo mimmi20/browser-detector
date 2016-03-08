@@ -112,6 +112,6 @@ class PrestigioPmp5101cQuad extends AbstractDevice implements DeviceHasSpecificP
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

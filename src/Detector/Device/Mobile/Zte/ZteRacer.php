@@ -116,6 +116,6 @@ class ZteRacer extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

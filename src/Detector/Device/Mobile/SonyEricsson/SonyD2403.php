@@ -112,6 +112,6 @@ class SonyD2403 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

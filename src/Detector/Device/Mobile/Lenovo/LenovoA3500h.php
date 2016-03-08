@@ -112,6 +112,6 @@ class LenovoA3500h extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

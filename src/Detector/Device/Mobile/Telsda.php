@@ -88,7 +88,7 @@ class Telsda extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Telsda');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Telsda' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Telsda extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Andro($this->useragent, [])ent);
     }
 }

@@ -112,6 +112,6 @@ class DellVenuePro extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

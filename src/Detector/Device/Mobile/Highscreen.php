@@ -88,7 +88,7 @@ class Highscreen extends AbstractDevice implements DeviceHasChildrenInterface, D
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Highscreen');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Highscreen' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Highscreen extends AbstractDevice implements DeviceHasChildrenInterface, D
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

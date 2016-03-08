@@ -112,6 +112,6 @@ class Archos40bTitaniumSurround extends AbstractDevice implements DeviceHasSpeci
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

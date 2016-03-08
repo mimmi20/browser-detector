@@ -112,6 +112,6 @@ class SamsungSmT2105 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

@@ -88,7 +88,7 @@ class DoCoMo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\DoCoMo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'DoCoMo' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class DoCoMo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent);
+        return new Os\Java($this->useragent, []);
     }
 }

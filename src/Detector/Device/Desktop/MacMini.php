@@ -85,6 +85,6 @@ class MacMini extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

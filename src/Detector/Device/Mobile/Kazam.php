@@ -88,7 +88,7 @@ class Kazam extends AbstractDevice implements DeviceHasChildrenInterface, Device
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Kazam');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Kazam' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Kazam extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

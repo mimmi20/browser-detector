@@ -112,6 +112,6 @@ class Nokia6730c extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

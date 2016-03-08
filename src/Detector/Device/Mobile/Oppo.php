@@ -88,7 +88,7 @@ class Oppo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Oppo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Oppo' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Oppo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

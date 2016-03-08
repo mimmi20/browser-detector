@@ -114,6 +114,6 @@ class TrekStorSt80208 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

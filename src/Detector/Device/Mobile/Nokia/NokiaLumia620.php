@@ -112,6 +112,6 @@ class NokiaLumia620 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

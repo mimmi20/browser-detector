@@ -112,6 +112,6 @@ class Nokia5800XpressMusic extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

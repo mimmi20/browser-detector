@@ -112,6 +112,6 @@ class BlackBerry9520 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function detectOs()
     {
-        return new Os\RimOs($this->useragent);
+        return new Os\RimOs($this->useragent, []);
     }
 }

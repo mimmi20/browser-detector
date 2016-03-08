@@ -112,6 +112,6 @@ class SonyEricssonW595 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

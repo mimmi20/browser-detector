@@ -88,7 +88,7 @@ class Bmobile extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Bmobile');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Bmobile' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Bmobile extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

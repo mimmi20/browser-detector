@@ -112,6 +112,6 @@ class AsusEepPadTransformerTf101g extends AbstractDevice implements DeviceHasSpe
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

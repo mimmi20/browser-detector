@@ -112,6 +112,6 @@ class BqAquarisE5 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

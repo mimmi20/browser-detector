@@ -112,6 +112,6 @@ class HuaweiW1u00 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

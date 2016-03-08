@@ -119,6 +119,6 @@ class NokiaN9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return new Os\MeeGo($this->useragent);
+        return new Os\MeeGo($this->useragent, []);
     }
 }

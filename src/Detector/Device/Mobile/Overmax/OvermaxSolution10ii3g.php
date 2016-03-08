@@ -112,6 +112,6 @@ class OvermaxSolution10ii3g extends AbstractDevice implements DeviceHasSpecificP
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

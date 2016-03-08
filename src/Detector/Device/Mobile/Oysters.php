@@ -88,7 +88,7 @@ class Oysters extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Oysters');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Oysters' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Oysters extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

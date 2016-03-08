@@ -88,7 +88,7 @@ class Pomp extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pomp');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pomp' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Pomp extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

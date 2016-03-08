@@ -112,6 +112,6 @@ class Nokia2720a extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

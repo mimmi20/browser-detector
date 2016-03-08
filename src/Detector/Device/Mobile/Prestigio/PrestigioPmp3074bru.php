@@ -112,6 +112,6 @@ class PrestigioPmp3074bru extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

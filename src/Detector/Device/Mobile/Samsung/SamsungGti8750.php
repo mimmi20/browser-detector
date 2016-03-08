@@ -112,6 +112,6 @@ class SamsungGti8750 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

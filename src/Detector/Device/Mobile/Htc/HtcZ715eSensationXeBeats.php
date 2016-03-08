@@ -125,6 +125,6 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasSpecif
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -112,6 +112,6 @@ class HtcMdaVarioIi extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function detectOs()
     {
-        return new Os\WindowsMobileOs($this->useragent);
+        return new Os\WindowsMobileOs($this->useragent, []);
     }
 }

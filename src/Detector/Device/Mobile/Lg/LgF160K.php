@@ -112,6 +112,6 @@ class LgF160K extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -112,6 +112,6 @@ class HtcSpark extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

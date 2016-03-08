@@ -112,6 +112,6 @@ class UnitedMt6515m extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

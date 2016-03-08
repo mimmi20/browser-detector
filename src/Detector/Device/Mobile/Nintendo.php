@@ -88,7 +88,7 @@ class Nintendo extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Nintendo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Nintendo' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Nintendo extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function detectOs()
     {
-        return new Os\NintendoOs($this->useragent);
+        return new Os\NintendoOs($this->useragent, []);
     }
 }

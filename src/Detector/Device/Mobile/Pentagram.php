@@ -88,7 +88,7 @@ class Pentagram extends AbstractDevice implements DeviceHasChildrenInterface, De
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pentagram');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pentagram' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Pentagram extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

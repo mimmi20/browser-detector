@@ -112,6 +112,6 @@ class NokiaX3 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

@@ -88,7 +88,7 @@ class SonyEricsson extends AbstractDevice implements DeviceHasChildrenInterface,
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\SonyEricsson');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'SonyEricsson' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class SonyEricsson extends AbstractDevice implements DeviceHasChildrenInterface,
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\Unkno($this->useragent, [])ent);
     }
 }

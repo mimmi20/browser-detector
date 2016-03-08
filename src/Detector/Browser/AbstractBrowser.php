@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -33,13 +33,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Bits\Browser as BrowserBits;
 use BrowserDetector\Detector\Company;
-use Psr\Log\LoggerInterface;
-use UaBrowserType\Unknown;
-use UaHelper\Utils;
-use UaMatcher\Browser\BrowserInterface;
-use UaMatcher\MatcherHasWeightInterface;
-use UaResult\Version;
-use WurflCache\Adapter\AdapterInterface;
+use UaResult\Browser\BrowserInterface;
+use UaBrowserType\TypeInterface;
+use Version\Version;
 
 /**
  * base class for all browsers to detect
@@ -49,7 +45,7 @@ use WurflCache\Adapter\AdapterInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractBrowser implements BrowserInterface, \Serializable, MatcherHasWeightInterface
+abstract class AbstractBrowser implements BrowserInterface
 {
     /**
      * @var string the user agent to handle
@@ -57,197 +53,83 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
     protected $useragent = '';
 
     /**
-     * @var \UaHelper\Utils the helper class
+     * @var string|null
      */
-    protected $utils = null;
+    protected $name = null;
 
     /**
-     * a Cache object
-     *
-     * @var \WurflCache\Adapter\AdapterInterface
+     * @var string|null
      */
-    protected $cache = null;
+    protected $modus = null;
 
     /**
-     * @var \Psr\Log\LoggerInterface
+     * @var \Version\Version|null
      */
-    protected $logger = null;
+    protected $version = null;
 
     /**
-     * the detected browser properties
-     *
-     * @var array
+     * @var \UaResult\Company\CompanyInterface|null
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    protected $manufacturer = null;
 
-        // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => null,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
-    ];
+    /**
+     * @var bool|null
+     */
+    protected $pdfSupport = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $rssSupport = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $canSkipAlignedLinkRow = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $claimsWebSupport = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $supportsEmptyOptionValues = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $supportsBasicAuthentication = null;
+
+    /**
+     * @var bool|null
+     */
+    protected $supportsPostMethod = null;
+
+    /**
+     * @var int|null
+     */
+    protected $bits = null;
+
+    /**
+     * @var \UaBrowserType\TypeInterface|null
+     */
+    protected $type = null;
 
     /**
      * Class Constructor
      *
-     * @param string                   $useragent the user agent to be handled
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    public function __construct($useragent = null, LoggerInterface $logger = null)
-    {
-        $this->init($useragent);
-
-        $this->logger = $logger;
-    }
-
-    /**
-     * initializes the object
-     *
-     * @param string $useragent
-     */
-    protected function init($useragent)
-    {
-        $this->utils = new Utils();
-
-        $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
-    }
-
-    /**
-     * sets the actual user agent
-     *
-     * @param string $agent
-     *
-     * @return \UaMatcher\MatcherInterface
-     */
-    public function setUseragent($agent)
-    {
-        $this->useragent = $agent;
-        $this->utils->setUserAgent($agent);
-
-        return $this;
-    }
-
-    /**
-     * sets the logger
-     *
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \UaMatcher\MatcherInterface
-     */
-    public function setLogger(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
-
-        return $this;
-    }
-
-    /**
-     * @param \WurflCache\Adapter\AdapterInterface $cache
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function setCache(AdapterInterface $cache)
-    {
-        $this->cache = $cache;
-
-        return $this;
-    }
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        return false;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 1;
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @throws \InvalidArgumentException
-     *
-     * @return string Capability value
-     */
-    public function getCapability($capabilityName)
-    {
-        $this->checkCapability($capabilityName);
-
-        return $this->properties[$capabilityName];
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName must be a valid capability name
-     *
-     * @throws \InvalidArgumentException
-     */
-    protected function checkCapability($capabilityName)
-    {
-        if (empty($capabilityName)) {
-            throw new \InvalidArgumentException('capability name must not be empty');
-        }
-
-        if (!array_key_exists($capabilityName, $this->properties)) {
-            throw new \InvalidArgumentException('no capability named [' . $capabilityName . '] is present.');
-        }
-    }
-
-    /**
-     * Returns the value of a given capability name
-     * for the current device
-     *
-     * @param string $capabilityName  must be a valid capability name
-     * @param mixed  $capabilityValue
-     *
-     * @throws \InvalidArgumentException
-     *
-     * @return BrowserInterface
-     */
-    public function setCapability(
-        $capabilityName,
-        $capabilityValue = null
+    public function __construct(
+        $useragent,
+        array $data
     ) {
-        $this->checkCapability($capabilityName);
+        $this->useragent = $useragent;
 
-        $this->properties[$capabilityName] = $capabilityValue;
-
-        return $this;
-    }
-
-    /**
-     * Returns the values of all capabilities for the current device
-     *
-     * @return array All Capability values
-     */
-    public function getCapabilities()
-    {
-        return $this->properties;
+        $this->setData($data);
     }
 
     /**
@@ -257,40 +139,111 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
      */
     public function getName()
     {
-        return 'unknown';
+        return $this->name;
     }
 
     /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
+     * @return bool|null
+     */
+    public function getCanSkipAlignedLinkRow()
+    {
+        return $this->canSkipAlignedLinkRow;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getClaimsWebSupport()
+    {
+        return $this->claimsWebSupport;
+    }
+
+    /**
+     * @return null|\UaResult\Company\CompanyInterface
      */
     public function getManufacturer()
     {
-        return new Company(new Company\Unknown());
+        return $this->manufacturer;
     }
 
     /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
+     * @return null|string
      */
-    public function getBrowserType()
+    public function getModus()
     {
-        return new Unknown();
+        return $this->modus;
     }
 
     /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
+     * @return bool|null
      */
-    public function detectVersion()
+    public function getPdfSupport()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
+        return $this->pdfSupport;
+    }
 
-        return $detector->setVersion('');
+    /**
+     * @return bool|null
+     */
+    public function getRssSupport()
+    {
+        return $this->rssSupport;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getSupportsBasicAuthentication()
+    {
+        return $this->supportsBasicAuthentication;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getSupportsEmptyOptionValues()
+    {
+        return $this->supportsEmptyOptionValues;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function getSupportsPostMethod()
+    {
+        return $this->supportsPostMethod;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUseragent()
+    {
+        return $this->useragent;
+    }
+
+    /**
+     * @return null|\Version\Version
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getBits()
+    {
+        return $this->bits;
+    }
+
+    /**
+     * @return null|\UaBrowserType\TypeInterface
+     */
+    public function getType()
+    {
+        return $this->type;
     }
 
     /**
@@ -303,12 +256,7 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
      */
     public function serialize()
     {
-        return serialize(
-            [
-                'properties' => $this->properties,
-                'useragent'  => $this->useragent,
-            ]
-        );
+        return serialize($this->getData());
     }
 
     /**
@@ -325,20 +273,101 @@ abstract class AbstractBrowser implements BrowserInterface, \Serializable, Match
     {
         $unseriliazedData = unserialize($serialized);
 
-        foreach ($unseriliazedData['properties'] as $property => $value) {
-            $this->properties[$property] = $value;
-        }
-
-        $this->init($unseriliazedData['useragent']);
+        $this->useragent = $unseriliazedData['useragent'];
+        $this->setData($unseriliazedData['data']);
     }
 
     /**
-     * @return string
+     * (PHP 5 &gt;= 5.4.0)<br/>
+     * Specify data which should be serialized to JSON
+     *
+     * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
+     *
+     * @return mixed data which can be serialized by <b>json_encode</b>,
+     *               which is a value of any type other than a resource.
      */
-    public function detectBits()
+    public function jsonSerialize()
     {
-        $detector = new BrowserBits($this->useragent);
+        return $this->getData();
+    }
 
-        return $detector->getBits();
+    /**
+     * @return array
+     */
+    protected function getData()
+    {
+        return [
+            'useragent' => $this->useragent,
+            'data'      => [
+                'name'                        => $this->name,
+                'modus'                       => $this->modus,
+                'version'                     => $this->version,
+                'manufacturer'                => $this->manufacturer,
+                'pdfSupport'                  => $this->pdfSupport,
+                'rssSupport'                  => $this->rssSupport,
+                'canSkipAlignedLinkRow'       => $this->canSkipAlignedLinkRow,
+                'claimsWebSupport'            => $this->claimsWebSupport,
+                'supportsEmptyOptionValues'   => $this->supportsEmptyOptionValues,
+                'supportsBasicAuthentication' => $this->supportsBasicAuthentication,
+                'supportsPostMethod'          => $this->supportsPostMethod,
+                'bits'                        => $this->bits,
+                'type'                        => $this->type,
+            ],
+        ];
+    }
+
+    /**
+     * @param array $data
+     */
+    protected function setData(array $data)
+    {
+        $this->name = $data['name'];
+
+        if (!empty($data['modus'])) {
+            $this->modus = $data['modus'];
+        }
+
+        if (!empty($data['version']) && $data['version'] instanceof Version) {
+            $this->version = $data['version'];
+        }
+
+        if (!empty($data['manufacturer'])) {
+            $this->manufacturer = $data['manufacturer'];
+        }
+
+        if (!empty($data['pdfSupport'])) {
+            $this->pdfSupport = $data['pdfSupport'];
+        }
+
+        if (!empty($data['rssSupport'])) {
+            $this->rssSupport = $data['rssSupport'];
+        }
+
+        if (!empty($data['canSkipAlignedLinkRow'])) {
+            $this->canSkipAlignedLinkRow = $data['canSkipAlignedLinkRow'];
+        }
+
+        if (!empty($data['claimsWebSupport'])) {
+            $this->claimsWebSupport = $data['claimsWebSupport'];
+        }
+
+        if (!empty($data['supportsEmptyOptionValues'])) {
+            $this->supportsEmptyOptionValues = $data['supportsEmptyOptionValues'];
+        }
+
+        if (!empty($data['supportsBasicAuthentication'])) {
+            $this->supportsBasicAuthentication = $data['supportsBasicAuthentication'];
+        }
+
+        if (!empty($data['supportsPostMethod'])) {
+            $this->supportsPostMethod = $data['supportsPostMethod'];
+        }
+
+        $detector   = new BrowserBits($this->useragent);
+        $this->bits = $detector->getBits();
+
+        if (!empty($data['type']) && $data['type'] instanceof TypeInterface) {
+            $this->type = $data['type'];
+        }
     }
 }

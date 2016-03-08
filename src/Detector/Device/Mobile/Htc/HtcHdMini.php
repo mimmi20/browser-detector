@@ -112,6 +112,6 @@ class HtcHdMini extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function detectOs()
     {
-        return new Os\WindowsMobileOs($this->useragent);
+        return new Os\WindowsMobileOs($this->useragent, []);
     }
 }

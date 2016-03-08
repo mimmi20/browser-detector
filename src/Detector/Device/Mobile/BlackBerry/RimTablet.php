@@ -116,6 +116,6 @@ class RimTablet extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function detectOs()
     {
-        return new Os\RimTabletOs($this->useragent);
+        return new Os\RimTabletOs($this->useragent, []);
     }
 }

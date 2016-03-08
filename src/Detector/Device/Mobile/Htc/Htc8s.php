@@ -112,6 +112,6 @@ class Htc8s extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

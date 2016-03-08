@@ -116,6 +116,6 @@ class SonyEricssonU1i extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

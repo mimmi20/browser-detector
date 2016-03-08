@@ -112,6 +112,6 @@ class ModecomFreeTab1014IpsX43g extends AbstractDevice implements DeviceHasSpeci
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

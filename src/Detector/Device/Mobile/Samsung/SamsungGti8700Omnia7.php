@@ -112,6 +112,6 @@ class SamsungGti8700Omnia7 extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

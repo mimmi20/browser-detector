@@ -88,7 +88,7 @@ class TriQ extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\TriQ');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'TriQ' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class TriQ extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Andro($this->useragent, [])ent);
     }
 }

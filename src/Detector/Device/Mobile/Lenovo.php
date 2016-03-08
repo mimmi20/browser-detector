@@ -88,7 +88,7 @@ class Lenovo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Lenovo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Lenovo' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Lenovo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

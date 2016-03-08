@@ -112,6 +112,6 @@ class HuaweiMediaPad7Classic extends AbstractDevice implements DeviceHasSpecific
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

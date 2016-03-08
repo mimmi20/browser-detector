@@ -85,6 +85,6 @@ class TechniSatMultyVisionIsio extends AbstractDevice implements DeviceHasSpecif
      */
     public function detectOs()
     {
-        return new Os\LinuxTv($this->useragent);
+        return new Os\LinuxTv($this->useragent, []);
     }
 }

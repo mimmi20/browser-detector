@@ -112,6 +112,6 @@ class NokiaN900 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function detectOs()
     {
-        return new Os\Maemo($this->useragent);
+        return new Os\Maemo($this->useragent, []);
     }
 }

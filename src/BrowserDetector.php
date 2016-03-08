@@ -40,11 +40,8 @@ use Psr\Log\NullLogger;
 use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
 use UaMatcher\Browser\BrowserDependsOnEngineInterface;
 use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
-use UaMatcher\Device\DeviceHasRuntimeModificationsInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 use UaMatcher\Engine\EngineDependsOnDeviceInterface;
-use UaMatcher\Os\OsChangesBrowserInterface;
-use UaMatcher\Os\OsChangesEngineInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
@@ -180,13 +177,13 @@ class BrowserDetector
             $engine->detectDependProperties($device);
         }
 
-        if ($platform instanceof OsChangesEngineInterface) {
-            $platform->changeEngineProperties($engine, $browser, $device);
-        }
+        //if ($platform instanceof OsChangesEngineInterface) {
+        //    $platform->changeEngineProperties($engine, $browser, $device);
+        //}
 
-        if ($platform instanceof OsChangesBrowserInterface) {
-            $platform->changeBrowserProperties($browser);
-        }
+        //if ($platform instanceof OsChangesBrowserInterface) {
+        //    $platform->changeBrowserProperties($browser);
+        //}
 
         return new Result(
             $request->getUserAgent(),

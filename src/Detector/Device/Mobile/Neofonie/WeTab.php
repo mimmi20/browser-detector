@@ -112,6 +112,6 @@ class WeTab extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\MeeGo($this->useragent);
+        return new Os\MeeGo($this->useragent, []);
     }
 }

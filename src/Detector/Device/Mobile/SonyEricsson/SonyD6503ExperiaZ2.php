@@ -112,6 +112,6 @@ class SonyD6503ExperiaZ2 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

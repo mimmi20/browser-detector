@@ -88,7 +88,7 @@ class Kddi extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Kddi');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Kddi' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Kddi extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

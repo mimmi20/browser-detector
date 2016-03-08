@@ -85,6 +85,6 @@ class LoeweSl150 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function detectOs()
     {
-        return new Os\LinuxTv($this->useragent);
+        return new Os\LinuxTv($this->useragent, []);
     }
 }

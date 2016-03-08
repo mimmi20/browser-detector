@@ -85,6 +85,6 @@ class NetrangeMmh extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function detectOs()
     {
-        return new Os\LinuxTv($this->useragent);
+        return new Os\LinuxTv($this->useragent, []);
     }
 }

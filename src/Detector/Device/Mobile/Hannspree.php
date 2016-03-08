@@ -88,7 +88,7 @@ class Hannspree extends AbstractDevice implements DeviceHasChildrenInterface, De
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Hannspree');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Hannspree' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Hannspree extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -112,6 +112,6 @@ class PointOfViewProtab2ips extends AbstractDevice implements DeviceHasSpecificP
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -88,7 +88,7 @@ class Ais extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Ais');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Ais' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Ais extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -112,6 +112,6 @@ class Lgd160 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

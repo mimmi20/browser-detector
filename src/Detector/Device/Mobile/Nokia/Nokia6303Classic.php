@@ -112,6 +112,6 @@ class Nokia6303Classic extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

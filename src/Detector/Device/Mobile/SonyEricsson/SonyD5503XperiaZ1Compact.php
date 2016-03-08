@@ -112,6 +112,6 @@ class SonyD5503XperiaZ1Compact extends AbstractDevice implements DeviceHasSpecif
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

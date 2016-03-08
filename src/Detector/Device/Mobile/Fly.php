@@ -88,7 +88,7 @@ class Fly extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Fly');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Fly' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Fly extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

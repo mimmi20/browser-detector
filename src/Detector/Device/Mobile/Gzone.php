@@ -88,7 +88,7 @@ class Gzone extends AbstractDevice implements DeviceHasChildrenInterface, Device
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Gzone');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Gzone' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Gzone extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

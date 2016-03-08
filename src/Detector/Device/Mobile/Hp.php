@@ -88,7 +88,7 @@ class Hp extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHas
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Hp');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Hp' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Hp extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHas
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

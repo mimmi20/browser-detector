@@ -114,6 +114,6 @@ class E1107 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

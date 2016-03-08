@@ -112,6 +112,6 @@ class MotorolaXt923DroidRazrHd extends AbstractDevice implements DeviceHasSpecif
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

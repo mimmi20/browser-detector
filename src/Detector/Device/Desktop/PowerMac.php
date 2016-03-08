@@ -85,6 +85,6 @@ class PowerMac extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

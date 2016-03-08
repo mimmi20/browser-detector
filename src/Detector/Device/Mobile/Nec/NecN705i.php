@@ -112,6 +112,6 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function detectOs()
     {
-        return new Os\Maemo($this->useragent);
+        return new Os\Maemo($this->useragent, []);
     }
 }

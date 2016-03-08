@@ -88,7 +88,7 @@ class Twinovo extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Twinovo');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Twinovo' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Twinovo extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Andro($this->useragent, [])ent);
     }
 }

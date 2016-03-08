@@ -85,6 +85,6 @@ class GoogleTv extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function detectOs()
     {
-        return new Os\LinuxTv($this->useragent);
+        return new Os\LinuxTv($this->useragent, []);
     }
 }

@@ -112,6 +112,6 @@ class LgKp500 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent);
+        return new Os\Java($this->useragent, []);
     }
 }

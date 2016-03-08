@@ -112,6 +112,6 @@ class Nokia5230 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

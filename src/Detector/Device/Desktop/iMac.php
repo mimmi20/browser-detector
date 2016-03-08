@@ -85,6 +85,6 @@ class iMac extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

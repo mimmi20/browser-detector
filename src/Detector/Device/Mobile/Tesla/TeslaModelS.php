@@ -112,6 +112,6 @@ class TeslaModelS extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function detectOs()
     {
-        return new Os\Linux($this->useragent);
+        return new Os\Linux($this->useragent, []);
     }
 }

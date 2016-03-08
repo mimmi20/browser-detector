@@ -88,7 +88,7 @@ class Advent extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Advent');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Advent' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Advent extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

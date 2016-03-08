@@ -191,6 +191,6 @@ class WindowsCe extends AbstractOs
             return $version;
         }
 
-        return null;
+        return;
     }
 }

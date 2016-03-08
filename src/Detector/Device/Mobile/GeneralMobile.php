@@ -88,7 +88,7 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\GeneralMobile');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'GeneralMobile' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class GeneralMobile extends AbstractDevice implements DeviceHasChildrenInterface
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

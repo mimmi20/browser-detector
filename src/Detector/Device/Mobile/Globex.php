@@ -88,7 +88,7 @@ class Globex extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Globex');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Globex' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Globex extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

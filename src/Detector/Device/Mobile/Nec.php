@@ -88,7 +88,7 @@ class Nec extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Nec');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Nec' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Nec extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

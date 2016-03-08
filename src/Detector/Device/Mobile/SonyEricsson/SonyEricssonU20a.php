@@ -112,6 +112,6 @@ class SonyEricssonU20a extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

@@ -88,7 +88,7 @@ class Technisat extends AbstractDevice implements DeviceHasChildrenInterface, De
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Technisat');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Technisat' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Technisat extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\Unkno($this->useragent, [])ent);
     }
 }

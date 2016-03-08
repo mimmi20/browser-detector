@@ -112,6 +112,6 @@ class PrestigioPmp7280c3gQuad extends AbstractDevice implements DeviceHasSpecifi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

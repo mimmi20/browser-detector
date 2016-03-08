@@ -88,7 +88,7 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Samsung');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Samsung' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Samsung extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

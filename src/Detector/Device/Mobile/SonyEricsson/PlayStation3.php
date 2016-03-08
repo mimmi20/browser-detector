@@ -112,6 +112,6 @@ class PlayStation3 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function detectOs()
     {
-        return new Os\CellOs($this->useragent);
+        return new Os\CellOs($this->useragent, []);
     }
 }

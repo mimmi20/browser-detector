@@ -112,6 +112,6 @@ class PrestigioPmp7079dQuad extends AbstractDevice implements DeviceHasSpecificP
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

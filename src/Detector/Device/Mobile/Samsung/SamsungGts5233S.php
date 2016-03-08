@@ -116,6 +116,6 @@ class SamsungGts5233S extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent);
+        return new Os\Java($this->useragent, []);
     }
 }

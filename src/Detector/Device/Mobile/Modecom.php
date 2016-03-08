@@ -88,7 +88,7 @@ class Modecom extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Modecom');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Modecom' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Modecom extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -88,7 +88,7 @@ class Starway extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Starway');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Starway' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Starway extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Andro($this->useragent, [])ent);
     }
 }

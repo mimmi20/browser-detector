@@ -112,6 +112,6 @@ class HpP160U extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return new Os\WebOs($this->useragent);
+        return new Os\WebOs($this->useragent, []);
     }
 }

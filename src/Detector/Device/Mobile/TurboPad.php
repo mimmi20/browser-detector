@@ -88,7 +88,7 @@ class TurboPad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\TurboPad');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'TurboPad' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class TurboPad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Andro($this->useragent, [])ent);
     }
 }

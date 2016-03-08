@@ -112,6 +112,6 @@ class LenovoS2110afIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

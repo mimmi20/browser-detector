@@ -114,6 +114,6 @@ class AlcatelOt4012X extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function detectOs()
     {
-        return new Os\FirefoxOs($this->useragent);
+        return new Os\FirefoxOs($this->useragent, []);
     }
 }

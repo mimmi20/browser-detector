@@ -88,7 +88,7 @@ class Xiaomi extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Xiaomi');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Xiaomi' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Xiaomi extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Andro($this->useragent, [])ent);
     }
 }

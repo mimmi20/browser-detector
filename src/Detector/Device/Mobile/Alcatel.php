@@ -88,7 +88,7 @@ class Alcatel extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Alcatel');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Alcatel' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Alcatel extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

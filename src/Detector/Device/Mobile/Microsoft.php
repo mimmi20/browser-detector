@@ -88,7 +88,7 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Microsoft');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Microsoft' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Microsoft extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function detectOs()
     {
-        return new Os\Windows($this->useragent);
+        return new Os\Windows($this->useragent, []);
     }
 }

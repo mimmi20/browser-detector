@@ -112,6 +112,6 @@ class PlayStationPortable extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent);
+        return new Os\Java($this->useragent, []);
     }
 }

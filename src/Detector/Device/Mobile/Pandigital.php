@@ -88,7 +88,7 @@ class Pandigital extends AbstractDevice implements DeviceHasChildrenInterface, D
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pandigital');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pandigital' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Pandigital extends AbstractDevice implements DeviceHasChildrenInterface, D
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

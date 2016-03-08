@@ -88,7 +88,7 @@ class Arnova extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Arnova');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Arnova' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Arnova extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

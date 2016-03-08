@@ -88,7 +88,7 @@ class Wolgang extends AbstractDevice implements DeviceHasChildrenInterface, Devi
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Wolgang');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Wolgang' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Wolgang extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Andro($this->useragent, [])ent);
     }
 }

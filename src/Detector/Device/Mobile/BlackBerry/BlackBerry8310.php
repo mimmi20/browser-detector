@@ -112,6 +112,6 @@ class BlackBerry8310 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function detectOs()
     {
-        return new Os\RimOs($this->useragent);
+        return new Os\RimOs($this->useragent, []);
     }
 }

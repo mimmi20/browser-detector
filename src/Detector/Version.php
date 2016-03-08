@@ -21,7 +21,6 @@
  * THE SOFTWARE.
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
@@ -36,7 +35,6 @@ use UaMatcher\Version\VersionInterface;
  * a general version detector
  *
  * @category  BrowserDetector
- * @package   BrowserDetector
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
@@ -73,7 +71,7 @@ class Version implements VersionInterface, \Serializable
     private $default = '';
 
     /**
-     * @var integer
+     * @var int
      */
     private $mode = VersionInterface::COMPLETE;
 
@@ -86,12 +84,12 @@ class Version implements VersionInterface, \Serializable
     public function serialize()
     {
         return serialize(
-            array(
+            [
                 'version'   => $this->version,
                 'mode'      => $this->mode,
                 'useragent' => $this->useragent,
-                'default'   => $this->default
-            )
+                'default'   => $this->default,
+            ]
         );
     }
 
@@ -100,9 +98,8 @@ class Version implements VersionInterface, \Serializable
      * Constructs the object
      * @link http://php.net/manual/en/serializable.unserialize.php
      * @param string $serialized <p>
-     * The string representation of the object.
-     * </p>
-     * @return void
+     *                           The string representation of the object.
+     *                           </p>
      */
     public function unserialize($serialized)
     {
@@ -133,7 +130,7 @@ class Version implements VersionInterface, \Serializable
     /**
      * sets the user agent to be handled
      *
-     * @param integer $mode
+     * @param int $mode
      *
      * @return Version
      */
@@ -149,8 +146,8 @@ class Version implements VersionInterface, \Serializable
      *
      * @param string $version
      *
-     * @return Version
      * @throws \UnexpectedValueException
+     * @return Version
      */
     public function setDefaulVersion($version)
     {
@@ -177,10 +174,10 @@ class Version implements VersionInterface, \Serializable
     /**
      * returns the detected version
      *
-     * @param integer $mode
+     * @param int $mode
      *
-     * @return string
      * @throws \UnexpectedValueException
+     * @return string
      */
     public function getVersion($mode = null)
     {
@@ -200,7 +197,7 @@ class Version implements VersionInterface, \Serializable
             $mode = $this->mode;
         }
 
-        $versions = array();
+        $versions = [];
         if (VersionInterface::MAJORONLY & $mode) {
             $versions[0] = $this->major;
         }
@@ -275,8 +272,8 @@ class Version implements VersionInterface, \Serializable
      *
      * @param string $version
      *
-     * @return Version
      * @throws \UnexpectedValueException
+     * @return Version
      */
     public function setVersion($version)
     {
@@ -297,8 +294,8 @@ class Version implements VersionInterface, \Serializable
      *
      * @param string|array $searches
      *
-     * @return Version
      * @throws \UnexpectedValueException
+     * @return Version
      */
     public function detectVersion($searches = '')
     {
@@ -309,16 +306,16 @@ class Version implements VersionInterface, \Serializable
         }
 
         if (!is_array($searches)) {
-            $searches = array($searches);
+            $searches = [$searches];
         }
 
-        $modifiers = array(
-            array('\/', ''),
-            array('\(', '\)'),
-            array(' ', ''),
-            array('', ''),
-            array(' \(', '\;')
-        );
+        $modifiers = [
+            ['\/', ''],
+            ['\(', '\)'],
+            [' ', ''],
+            ['', ''],
+            [' \(', '\;'],
+        ];
 
         /** @var $version string */
         $version   = $this->default;
@@ -366,7 +363,7 @@ class Version implements VersionInterface, \Serializable
     /**
      * detects if the version is makred as Alpha
      *
-     * @return boolean
+     * @return bool
      */
     public function isAlpha()
     {
@@ -376,7 +373,7 @@ class Version implements VersionInterface, \Serializable
     /**
      * detects if the version is makred as Beta
      *
-     * @return boolean
+     * @return bool
      */
     public function isBeta()
     {

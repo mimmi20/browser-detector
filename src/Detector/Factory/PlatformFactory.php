@@ -31,10 +31,10 @@
 
 namespace BrowserDetector\Detector\Factory;
 
+use BrowserDetector\Detector\Os;
 use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 use UaHelper\Utils;
-use BrowserDetector\Detector\Os;
 
 /**
  * Browser detection class

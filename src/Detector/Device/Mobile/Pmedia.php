@@ -88,7 +88,7 @@ class Pmedia extends AbstractDevice implements DeviceHasChildrenInterface, Devic
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pmedia');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Pmedia' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Pmedia extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

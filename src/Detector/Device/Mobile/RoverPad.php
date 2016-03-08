@@ -88,7 +88,7 @@ class RoverPad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\RoverPad');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'RoverPad' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class RoverPad extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -88,7 +88,7 @@ class Micromax extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Micromax');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Micromax' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Micromax extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

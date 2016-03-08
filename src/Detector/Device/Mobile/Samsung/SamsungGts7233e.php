@@ -112,6 +112,6 @@ class SamsungGts7233e extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function detectOs()
     {
-        return new Os\Bada($this->useragent);
+        return new Os\Bada($this->useragent, []);
     }
 }

@@ -112,6 +112,6 @@ class NokiaLumia520Rm914 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

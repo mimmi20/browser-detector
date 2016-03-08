@@ -112,6 +112,6 @@ class SamsungSchU820 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function detectOs()
     {
-        return new Os\Brew($this->useragent);
+        return new Os\Brew($this->useragent, []);
     }
 }

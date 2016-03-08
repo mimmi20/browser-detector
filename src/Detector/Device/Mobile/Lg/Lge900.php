@@ -112,6 +112,6 @@ class Lge900 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

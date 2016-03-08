@@ -120,6 +120,6 @@ class WindowsRt8Tablet extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function detectOs()
     {
-        return new Os\WindowsRt($this->useragent);
+        return new Os\WindowsRt($this->useragent, []);
     }
 }

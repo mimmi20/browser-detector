@@ -88,7 +88,7 @@ class Neofonie extends AbstractDevice implements DeviceHasChildrenInterface, Dev
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Neofonie');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Neofonie' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Neofonie extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function detectOs()
     {
-        return new Os\MeeGo($this->useragent);
+        return new Os\MeeGo($this->useragent, []);
     }
 }

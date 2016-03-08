@@ -112,6 +112,6 @@ class PrestigioPmp7380d3g extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

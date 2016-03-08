@@ -50,7 +50,7 @@ class EngineFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string                    $agent
+     * @param string                   $agent
      * @param \UaResult\Os\OsInterface $os
      *
      * @return \UaResult\Engine\EngineInterface

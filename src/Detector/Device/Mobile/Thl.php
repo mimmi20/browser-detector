@@ -88,7 +88,7 @@ class Thl extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Thl');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Thl' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Thl extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Andro($this->useragent, [])ent);
     }
 }

@@ -88,7 +88,7 @@ class Coby extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
     public function detectDevice()
     {
         $chain = new Chain();
-        $chain->setUserAgent($this->useragent);
+        $chain->setUserAgent($this->useragent, []);
         $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Coby');
         $chain->setDirectory(
             __DIR__ . DIRECTORY_SEPARATOR . 'Coby' . DIRECTORY_SEPARATOR
@@ -105,6 +105,6 @@ class Coby extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }
