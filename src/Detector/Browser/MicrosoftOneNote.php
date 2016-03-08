@@ -43,7 +43,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftOneNote extends MicrosoftOffice implements BrowserHasWurflKeyInterface
+class MicrosoftOneNote extends AbstractBrowser implements BrowserHasWurflKeyInterface
 {
     /**
      * the detected browser properties

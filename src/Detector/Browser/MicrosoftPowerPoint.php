@@ -41,7 +41,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftPowerPoint extends MicrosoftOffice
+class MicrosoftPowerPoint extends AbstractBrowser
 {
     /**
      * the detected browser properties
