@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,12 +32,11 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Trident;
-use UaBrowserType\Application;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaMatcher\Browser\BrowserHasWurflKeyInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use Version\Version;
+use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 
 /**
  * @category  BrowserDetector
@@ -45,221 +44,59 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftOffice extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+class MicrosoftOffice extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
-        // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(['microsoft Office', 'MSOffice'])) {
-            return false;
-        }
-
-        $isNotReallyAnIE = [
-            // using also the Trident rendering engine
-            'Maxthon',
-            'MxBrowser',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            'AOL',
-            'TOB',
-            'MyIE',
-            'Excel',
-            'Word',
-            'Outlook',
-            'PowerPoint',
-            //others
-            'AppleWebKit',
-            'Chrome',
-            'Linux',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            // Outlook Express
-            'Outlook-Express',
-        ];
-
-        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Office';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Microsoft());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Application();
+        $this->setData(
+            [
+                'name'                        => 'Office',
+                'modus'                       => null,
+                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer'                => (new Company\Microsoft())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => false,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Application(),
+            ]
+        );
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MINOR);
-
-        return $detector->setVersion($this->mapVersion($this->detectInternalVersion()));
-    }
-
-    /**
-     * maps the version
-     *
-     * @param string $version
-     *
      * @return string
      */
-    protected function mapVersion($version)
+    private function detectVersion()
     {
-        if (15 === (int) $version) {
-            return '2013';
-        }
+        $helper = new MicrosoftOfficeHelper();
 
-        if (14 === (int) $version) {
-            return '2010';
-        }
-
-        if (12 === (int) $version) {
-            return '2007';
-        }
-
-        return '';
+        return $helper->mapVersion($helper->detectInternalVersion($this->useragent));
     }
 
     /**
-     * detects the browser version from the given user agent
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return string|null
-     */
-    protected function detectInternalVersion()
-    {
-        $doMatch = preg_match(
-            '/MSOffice ([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match('/MSOffice (\d+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Office\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Office\/(\d+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        return;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Trident
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Trident($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey
-     *
-     * @param \UaMatcher\Os\OsInterface $os
-     *
-     * @return string
-     */
-    public function getWurflKey(OsInterface $os)
-    {
-        $browserVersion = (int) $this->detectInternalVersion();
-
-        return 'ms_office_subua' . $browserVersion;
+        return new Engine\Trident($this->useragent, []);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,10 +32,11 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use UaBrowserType\Browser;
-use UaMatcher\Browser\BrowserHasWurflKeyInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -43,147 +44,71 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Maxthon extends AbstractBrowser implements BrowserHasWurflKeyInterface
+class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
-        // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(['maxthon', 'myie', 'mxbrowser'], true)) {
-            return false;
-        }
-
-        $isNotReallyAnMaxthon = [
-            // using also the Trident rendering engine
-            'Crazy Browser',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            // other Browsers
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            'Firefox',
-            'Avant',
-        ];
-
-        if ($this->utils->checkIfContains($isNotReallyAnMaxthon)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Maxthon';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Maxthon());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Browser();
+        $this->setData(
+            [
+                'name'                        => 'Maxthon',
+                'modus'                       => null,
+                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer'                => (new Company\Maxthon())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => false,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Browser(),
+            ]
+        );
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return \UaResult\Version
+     * @return string
      */
-    public function detectVersion()
+    private function detectVersion()
     {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
         if (false !== strpos($this->useragent, 'MyIE2')) {
-            return $detector->setVersion('2.0');
+            return '2.0';
         }
 
         if (false !== strpos($this->useragent, 'MyIE')) {
-            return $detector->setVersion('1.0');
+            return '1.0';
         }
 
+        $detector = new ResultVersion();
+        $detector->setUserAgent($this->useragent);
         $detector->setDefaulVersion('2.0');
 
         $searches = ['Maxthon', 'MxBrowser', 'Version'];
 
-        return $detector->detectVersion($searches);
+        return $detector->detectVersion($searches)->getVersion();
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return int
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function getWeight()
+    public function getEngine()
     {
-        return 3;
-    }
-
-    /**
-     * returns the WurflKey
-     *
-     * @param \UaMatcher\Os\OsInterface $os
-     *
-     * @return string
-     */
-    public function getWurflKey(OsInterface $os)
-    {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        return 'google_chrome_' . (int) $version;
+        return new Engine\UnknownEngine($this->useragent, []);
     }
 }

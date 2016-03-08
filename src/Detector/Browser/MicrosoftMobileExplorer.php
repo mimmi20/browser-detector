@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,11 +32,12 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Trident;
-use UaBrowserType\Browser;
-use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
+use UaHelper\Utils;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaResult\Version;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -44,162 +45,73 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftMobileExplorer
-    extends AbstractBrowser
-    implements BrowserHasSpecificEngineInterface, BrowserHasRuntimeModificationsInterface
+class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
-        // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => true,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(['IEMobile', 'Windows CE', 'MSIE', 'WPDesktop', 'XBLWP7', 'ZuneWP7'])) {
-            return false;
-        }
-
-        $isNotReallyAnIE = [
-            // using also the Trident rendering engine
-            'Maxthon',
-            'MxBrowser',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'Flock',
-            'MyIE',
-            //others
-            'Linux',
-            'MSOffice',
-            'Outlook',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            'Avant',
-            'Lightspeedsystems',
-            'Daumoa',
-            'Sogou',
-            '360Spider',
-            'HaosouSpider',
-            'CybEye',
-        ];
-
-        if ($this->utils->checkIfContains($isNotReallyAnIE)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'IEMobile';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Microsoft());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Browser();
+        $this->setData(
+            [
+                'name'                        => 'IEMobile',
+                'modus'                       => null,
+                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer'                => (new Company\Microsoft())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => true,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Browser(),
+            ]
+        );
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return \UaResult\Version
+     * @return string
      */
-    public function detectVersion()
+    private function detectVersion()
     {
-        $detector = new Version();
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        $detector = new ResultVersion();
         $detector->setUserAgent($this->useragent);
 
-        if ($this->utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
-            return $detector->setVersion('9.0');
+        if ($utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
+            return '9.0';
         }
 
-        if ($this->utils->checkIfContains('WPDesktop') && !$this->utils->checkIfContains('rv:')) {
-            return $detector->setVersion('10.0');
+        if ($utils->checkIfContains('WPDesktop') && !$utils->checkIfContains('rv:')) {
+            return '10.0';
         }
 
         $searches = ['IEMobile', 'MSIE', 'rv\:'];
 
-        return $detector->detectVersion($searches);
+        return $detector->detectVersion($searches)->getVersion();
     }
 
     /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\Trident
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Trident($this->useragent, $this->logger);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 40001;
-    }
-
-    /**
-     * detects properties who are depending on the device version or the user
-     * agent
-     *
-     * @return \UaMatcher\Device\DeviceInterface
-     */
-    public function detectSpecialProperties()
-    {
-        if ($this->utils->checkIfContains('WPDesktop')) {
-            $this->setCapability('mobile_browser_modus', 'Desktop Mode');
-        }
-
-        return $this;
+        return new Engine\Trident($this->useragent, []);
     }
 }

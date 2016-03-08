@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,10 +32,11 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Gecko;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaResult\Version;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,252 +47,59 @@ use UaResult\Version;
 class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
-        // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => false,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains('Mozilla/')) {
-            return false;
-        }
-
-        $isNotReallyAnNetscape = [
-            'compatible',
-            // using also the Gecko rendering engine
-            'Firefox',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Camino',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'Navigator',
-            'PaleMoon',
-            'SeaMonkey',
-            'Flock',
-            'Fennec',
-            'Iceape',
-            'Icedove',
-            'IceCat',
-            'Eudora',
-            //Nutch
-            'Nutch',
-            'CazoodleBot',
-            'LOOQ',
-            'Postbox',
-            // using the Trident rendering engine
-            'MSIE',
-            'AOL',
-            'TOB',
-            'MyIE',
-            'AppleWebKit',
-            'Chrome',
-            'MSOffice',
-            'Outlook',
-            'IEMobile',
-            'BlackBerry',
-            'WebTV',
-            'ArgClrInt',
-            // using the KHTML rendering engine
-            'AppleWebKit',
-            'Chrome',
-            'Chromium',
-            'Iron',
-            'Rockmelt',
-            'libwww',
-            'OviBrowser',
-            'K-Meleon',
-            'Google Desktop',
-            'Konqueror',
-            // other rendering engines
-            'Trident',
-            // other applications
-            'LotusNotes/',
-            'Lotus-Notes/',
-            // Fakes/Bots
-            'Mac; Mac OS ',
-            'Esribot',
-            'sp_auditbot',
-            'BLEXBot',
-            'Yahoo',
-            'ca-crawler',
-            'fr-crawler',
-            'sindice-fetcher',
-            'DotBot',
-            'semantic-visions.com crawler',
-            'proximic',
-            'publiclibraryarchive',
-            'nbot',
-            'WI Job Roboter',
-            'Spiderlytics',
-            'SemrushBot',
-            'XoviBot',
-            'aggregator:Spinn3r',
-            'URLAppendBot',
-            'GrapeshotCrawler',
-            'SeznamBot',
-            'linkdexbot',
-            'CareerBot',
-            'WBSearchBot',
-            'Mail.RU_Bot',
-            '80legs',
-            'ThumbShotsBot',
-            'OpenVAS',
-            'Genieo',
-            'Yeti',
-            'WinHttp',
-            'naver',
-            'Feedfetcher-Google',
-            'feedfetcher',
-            'Exabot',
-            'Powermarks',
-            'metager2-verification-bot',
-            'OpenHoseBot',
-            'Kazehakase',
-            'Polaris',
-            'GooglePlus',
-            'awmt',
-            'Another Web Mining Tool',
-            'TYPO3-linkvalidator',
-            'PaperLiBot',
-            'www.google.com',
-            'Google-StructuredDataTestingTool',
-            'WebmasterCoffee',
-            'picmole',
-            'uMBot',
-            'Zollard',
-            'FHScan',
-            'LoadTimeBot',
-            'Scrubby',
-            'lbot',
-            'Squzer',
-            'EasouSpider',
-            'Socialradarbot',
-            'Synapse',
-            'coccoc',
-            'SiteExplorer',
-            'IstellaBot',
-            'meanpathbot',
-            'Apercite',
-            'XML Sitemaps Generator',
-            'PiplBot',
-            'Add Catalog',
-            'Moreover',
-            'LinkpadBot',
-            'Lipperhey SEO Service',
-            'Blog Search',
-            'SkypeUriPreview',
-        ];
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetscape)) {
-            return false;
-        }
-
-        $isNotReallyAnNetscapeLowerCased = [
-            'www.archive.org',
-            'archive.org_bot',
-            'memorybot',
-            'waybackarchive',
-            'spbot',
-            'heritrix',
-            'bingbot',
-            'crawler',
-        ];
-
-        if ($this->utils->checkIfContains($isNotReallyAnNetscapeLowerCased, true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Netscape';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Netscape());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Browser();
+        $this->setData(
+            [
+                'name'                        => 'Netscape',
+                'modus'                       => null,
+                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer'                => (new Company\Netscape())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => false,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => false,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Browser(),
+            ]
+        );
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return \UaResult\Version
+     * @return string
      */
-    public function detectVersion()
+    private function detectVersion()
     {
-        $detector = new Version();
+        $detector = new ResultVersion();
         $detector->setUserAgent($this->useragent);
 
         $searches = ['Netscape', 'Netscape6', 'rv\:', 'Mozilla'];
 
-        return $detector->detectVersion($searches);
+        return $detector->detectVersion($searches)->getVersion();
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Gecko
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Gecko($this->useragent, $this->logger);
+        return new Engine\Gecko($this->useragent, []);
     }
 }

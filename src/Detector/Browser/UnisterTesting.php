@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -31,14 +31,12 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\BrowserDetector;
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\UnknownEngine;
-use UaBrowserType\Bot;
-use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaMatcher\Device\DeviceInterface;
-use UaResult\Version;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,97 +44,53 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnisterTesting extends AbstractBrowser implements BrowserCalculatesAlternativeResultInterface, BrowserHasSpecificEngineInterface
+class UnisterTesting extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
-        // product info
-        'can_skip_aligned_link_row'    => false,
-        'device_claims_web_support'    => false,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(['unistertesting', 'unister-test', 'unister-https-test'], true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'UnisterTesting';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Unister());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Bot();
+        $this->setData(
+            [
+                'name'                        => 'UnisterTesting',
+                'modus'                       => null,
+                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer'                => (new Company\Unister())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => false,
+                'canSkipAlignedLinkRow'       => false,
+                'claimsWebSupport'            => false,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Bot(),
+            ]
+        );
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return \UaResult\Version
+     * @return string
      */
-    public function detectVersion()
+    private function detectVersion()
     {
-        $detector = new Version();
+        $detector = new ResultVersion();
         $detector->setUserAgent($this->useragent);
 
         $searches = ['UnisterTesting'];
 
-        return $detector->detectVersion($searches);
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
+        return $detector->detectVersion($searches)->getVersion();
     }
 
     /**
@@ -146,28 +100,6 @@ class UnisterTesting extends AbstractBrowser implements BrowserCalculatesAlterna
      */
     public function getEngine()
     {
-        return new UnknownEngine($this->useragent, $this->logger);
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @param \UaMatcher\Device\DeviceInterface $device
-     *
-     * @return \UaMatcher\Browser\BrowserInterface
-     */
-    public function calculateAlternativeRendering(DeviceInterface $device)
-    {
-        $agent = str_ireplace(
-            ['unistertesting', 'unister-test', 'unister-https-test'],
-            '',
-            $this->useragent
-        );
-
-        $detector = new BrowserDetector($this->cache, $this->logger);
-
-        $device->setRenderAs($detector->getBrowser($agent));
-
-        return $this;
+        return new Engine\UnknownEngine($this->useragent, []);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,13 +32,11 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Blink;
-use BrowserDetector\Detector\Engine\Webkit;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaMatcher\Browser\BrowserHasWurflKeyInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,214 +44,62 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+class Chrome extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
-        // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(['Mozilla/', 'Chrome/', 'CrMo/', 'CriOS/'])) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(['Chrome', 'CrMo', 'CriOS'])) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(['Version/'])) {
-            return false;
-        }
-
-        $isNotReallyAnChrome = [
-            // using also the KHTML rendering engine
-            'Arora',
-            'Chromium',
-            'Comodo Dragon',
-            'Dragon',
-            'Flock',
-            'Galeon',
-            'Google Earth',
-            'Iron',
-            'Lunascape',
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Midori',
-            'OPR',
-            'PaleMoon',
-            'RockMelt',
-            'Silk',
-            'YaBrowser',
-            'Firefox',
-            'Iceweasel',
-            'Edge',
-            'CoolNovo',
-            'Amigo',
-            'Viera',
-            'Vivaldi',
-            'SamsungBrowser',
-            'Puffin',
-            'WhiteHat Aviator',
-            ' SE ',
-            'Nichrome',
-            'MxNitro',
-            'LBBROWSER',
-            'Seznam',
-            'Diga',
-            'Kenshoo',
-            'coc_coc_browser',
-            'Superbird',
-            'ACHEETAHI',
-            'Beamrise',
-            'APUSBrowser',
-            'Diglo',
-            'Chedot',
-            // Bots trying to be a Chrome
-            'PagePeeker',
-            'Google Web Preview',
-            'Google Wireless Transcoder',
-            'Google Page Speed',
-            'Google Markup Tester',
-            'HubSpot Webcrawler',
-            'GomezAgent',
-            'TagInspector',
-            '360Spider',
-            'QIHU 360EE',
-            'QIHU 360SE',
-            // Fakes
-            'Mac; Mac OS ',
-        ];
-
-        if ($this->utils->checkIfContains($isNotReallyAnChrome)) {
-            return false;
-        }
-
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-        $detector->detectVersion(['Chrome']);
-
-        if (1 <= $detector->getVersion(Version::MAJORONLY) && 0 !== $detector->getVersion(Version::MINORONLY)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Chrome';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Google());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Browser();
+        $this->setData(
+            [
+                'name'                        => 'Chrome',
+                'modus'                       => null,
+                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer'                => (new Company\Google())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => false,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Browser(),
+            ]
+        );
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return \UaResult\Version
+     * @return string
      */
-    public function detectVersion()
+    private function detectVersion()
     {
-        $detector = new Version();
+        $detector = new ResultVersion();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO);
 
         $searches = ['Chrome', 'CrMo', 'CriOS'];
 
-        return $detector->detectVersion($searches);
+        return $detector->detectVersion($searches)->getVersion();
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return int
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
-    public function getWeight()
+    public function getEngine()
     {
-        return 30000;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @param \UaMatcher\Os\OsInterface $os
-     *
-     * @return \UaMatcher\Engine\EngineInterface
-     */
-    public function getEngine(OsInterface $os = null)
-    {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        if (null !== $os && in_array($os->getName(), ['iOS'])) {
-            $engine = new Webkit($this->useragent, $this->logger);
-        } elseif ($version >= 28) {
-            $engine = new Blink($this->useragent, $this->logger);
-        } else {
-            $engine = new Webkit($this->useragent, $this->logger);
-        }
-
-        return $engine;
-    }
-
-    /**
-     * returns the WurflKey
-     *
-     * @param \UaMatcher\Os\OsInterface $os
-     *
-     * @return string
-     */
-    public function getWurflKey(OsInterface $os)
-    {
-        $version = $this->detectVersion()->getVersion(Version::MAJORONLY);
-
-        return 'google_chrome_' . (int) $version;
+        return new Engine\UnknownEngine($this->useragent, []);
     }
 }

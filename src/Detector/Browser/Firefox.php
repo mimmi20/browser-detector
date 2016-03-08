@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,13 +32,11 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Gecko;
-use BrowserDetector\Helper\SpamCrawlerFake;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaMatcher\Browser\BrowserHasWurflKeyInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use UaResult\Version as ResultVersion;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,153 +44,49 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+class Firefox extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
-        // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        $spamHelper = new SpamCrawlerFake($this->useragent);
-
-        if (!$this->utils->checkIfContains('Mozilla/') && !$spamHelper->isAnonymized()
-        ) {
-            return false;
-        }
-
-        $firefoxCodes = [
-            'Firefox',
-            'Minefield',
-            'Nightly',
-            'Shiretoko',
-            'BonEcho',
-            'Namoroka',
-            'Fennec',
-        ];
-
-        if (!$this->utils->checkIfContains($firefoxCodes)) {
-            return false;
-        }
-
-        $isNotReallyAnFirefox = [
-            // using also the Gecko rendering engine
-            'Maemo',
-            'Maxthon',
-            'MxBrowser',
-            'Camino',
-            'CometBird',
-            'Epiphany',
-            'Galeon',
-            'Lunascape',
-            'Opera',
-            'PaleMoon',
-            'SeaMonkey',
-            'Flock',
-            'IceCat',
-            'Iceweasel',
-            'Iceowl',
-            'Icedove',
-            'Iceape',
-            'Firebird',
-            'IceDragon',
-            'TenFourFox',
-            'WaterFox',
-            'Waterfox',
-            'K-Meleon',
-            //Bots
-            'Nutch',
-            'CazoodleBot',
-            'LOOQ',
-            'GoogleImageProxy',
-            'GomezAgent',
-            '360Spider',
-            'Spinn3r',
-            'Yahoo!',
-            'Slurp',
-            'adbeat.com',
-            'myibrow',
-            //others
-            'MSIE',
-            'Trident',
-            // Fakes
-            'Mac; Mac OS ',
-        ];
-
-        if ($this->utils->checkIfContains($isNotReallyAnFirefox)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('developers.google.com/+/web/snippet/', true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Firefox';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\MozillaFoundation());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Browser();
+        $this->setData(
+            [
+                'name'                        => 'Firefox',
+                'modus'                       => null,
+                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer'                => (new Company\MozillaFoundation())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => false,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Browser(),
+            ]
+        );
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return \UaResult\Version
+     * @return string
      */
-    public function detectVersion()
+    private function detectVersion()
     {
-        $detector = new Version();
+        $detector = new ResultVersion();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
         $searches = [
             'Firefox',
@@ -203,47 +97,16 @@ class Firefox extends AbstractBrowser implements BrowserHasWurflKeyInterface, Br
             'Fennec',
         ];
 
-        return $detector->detectVersion($searches);
+        return $detector->detectVersion($searches)->getVersion();
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 10000;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Gecko
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Gecko($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey
-     *
-     * @param \UaMatcher\Os\OsInterface $os
-     *
-     * @return string
-     */
-    public function getWurflKey(OsInterface $os)
-    {
-        $browserVersion = (float) $this->detectVersion()->getVersion(Version::MAJORMINOR);
-
-        if (3.5 === $browserVersion) {
-            $wurflKey = 'firefox_3_5';
-        } else {
-            $wurflKey = 'firefox_' . (int) $browserVersion . '_0';
-        }
-
-        return $wurflKey;
+        return new Engine\Gecko($this->useragent, []);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,11 +32,13 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Helper\Safari as SafariHelper;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
+use UaHelper\Utils;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaResult\Version;
+use UaResult\Version as ResultVersion;
+use Version\Version;
+use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * @category  BrowserDetector
@@ -47,133 +49,46 @@ use UaResult\Version;
 class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
-        // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => false,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        if (!$this->utils->checkIfContains(['Android', 'JUC (Linux; U;', 'GINGERBREAD'])) {
-            return false;
-        }
-
-        $noAndroid = [
-            'AndroidDownloadManager',
-            'BlackBerry',
-            'Blackberry',
-            'BB10',
-            'Browser/Phantom',
-            'CalDAV',
-            'Chrome',
-            'Dalvik',
-            'Dolfin',
-            'Dolphin',
-            'Fennec',
-            'Firefox',
-            'FlyFlow',
-            'iPhone',
-            'Maxthon',
-            'MxBrowser',
-            'MQQBrowser',
-            'NetFrontLifeBrowser',
-            'NokiaBrowser',
-            'Opera',
-            'RIM Tablet',
-            'Series60',
-            'Silk',
-            'UCBrowser',
-            'UCWEB',
-            'WeTab-Browser',
-            'wOSBrowser',
-            'YahooMobileMessenger',
-            'i9988_custom',
-            'i9999_custom',
-            'PlayStation',
-            'NintendoBrowser',
-            'NX/',
-            'Nintendo WiiU',
-            'bdbrowser_i18n',
-            'FBAV',
-            'ACHEETAHI',
-            'baidu',
-            'iBrowser',
-            'OneBrowser',
-            'douban',
-        ];
-
-        if ($this->utils->checkIfContains($noAndroid)) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains('iPad') && !$this->utils->checkIfContains('TechniPad')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the name of the browser
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Android Webkit';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Google());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Browser();
+        $this->setData(
+            [
+                'name'                        => 'Android Webkit',
+                'modus'                       => null,
+                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer'                => (new Company\Google())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => false,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Browser(),
+            ]
+        );
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return \UaResult\Version
+     * @return string
      */
-    public function detectVersion()
+    private function detectVersion()
     {
-        $detector = new Version();
+        $detector = new ResultVersion();
         $detector->setUserAgent($this->useragent);
-        $detector->setMode(Version::COMPLETE | Version::IGNORE_MICRO_IF_EMPTY);
 
         $safariHelper = new SafariHelper($this->useragent);
 
@@ -184,15 +99,18 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
+            return $safariHelper->mapSafariVersions($matches[1]);
         }
 
-        if ($this->utils->checkIfContains('android eclair', true)) {
-            return $detector->setVersion('2.1');
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('android eclair', true)) {
+            return '2.1';
         }
 
-        if ($this->utils->checkIfContains('gingerbread', true)) {
-            return $detector->setVersion('2.3');
+        if ($utils->checkIfContains('gingerbread', true)) {
+            return '2.3';
         }
 
         $doMatch = preg_match(
@@ -202,7 +120,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
+            return $safariHelper->mapSafariVersions($matches[1]);
         }
 
         $doMatch = preg_match(
@@ -212,7 +130,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
+            return $safariHelper->mapSafariVersions($matches[1]);
         }
 
         $doMatch = preg_match(
@@ -222,7 +140,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $detector->setVersion($safariHelper->mapSafariVersions($matches[1]));
+            return $safariHelper->mapSafariVersions($matches[1]);
         }
 
         $doMatch = preg_match(
@@ -232,32 +150,21 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $detector->setVersion($matches[1]);
+            return $matches[1];
         }
 
         $searches = ['Version', 'Safari', 'JUC \(Linux\; U\;'];
 
-        return $detector->detectVersion($searches);
+        return $detector->detectVersion($searches)->getVersion();
     }
 
     /**
-     * gets the weight of the handler, which is used for sorting
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
+        return new Engine\Webkit($this->useragent, []);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,13 +32,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine\Webkit;
-use BrowserDetector\Helper\Safari as SafariHelper;
-use UaBrowserType\Browser;
+use BrowserDetector\Detector\Engine;
+use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaMatcher\Browser\BrowserHasWurflKeyInterface;
-use UaMatcher\Os\OsInterface;
-use UaResult\Version;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,144 +43,46 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MobileSafariUiWebView extends AbstractBrowser implements BrowserHasWurflKeyInterface, BrowserHasSpecificEngineInterface
+class MobileSafariUiWebView extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
-     * the detected browser properties
+     * Class Constructor
      *
-     * @var array
+     * @param string $useragent the user agent to be handled
+     * @param array  $data
      */
-    protected $properties = [
-        // browser
-        'mobile_browser_modus'         => null, // not in wurfl
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
 
-        // product info
-        'can_skip_aligned_link_row'    => true,
-        'device_claims_web_support'    => true,
-        // pdf
-        'pdf_support'                  => true,
-        // bugs
-        'empty_option_value_support'   => true,
-        'basic_authentication_support' => true,
-        'post_method_support'          => true,
-        // rss
-        'rss_support'                  => true,
-    ];
-
-    /**
-     * Returns true if this handler can handle the given user agent
-     *
-     * @return bool
-     */
-    public function canHandle()
-    {
-        $safariHelper = new SafariHelper($this->useragent);
-
-        if (!$safariHelper->isSafari()) {
-            return false;
-        }
-
-        if (!$this->utils->checkIfContains(['Mobile'])) {
-            return false;
-        }
-
-        if ($this->utils->checkIfContains(['Safari'])) {
-            return false;
-        }
-
-        return true;
+        $this->setData(
+            [
+                'name'                        => 'Mobile Safari UIWebView',
+                'modus'                       => null,
+                'version'                     => new Version(null),
+                'manufacturer'                => (new Company\Apple())->name,
+                'pdfSupport'                  => true,
+                'rssSupport'                  => true,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
+                'supportsEmptyOptionValues'   => true,
+                'supportsBasicAuthentication' => true,
+                'supportsPostMethod'          => true,
+                'bits'                        => null,
+                'type'                        => new UaBrowserType\Browser(),
+            ]
+        );
     }
 
     /**
-     * gets the name of the browser
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'Mobile Safari UIWebView';
-    }
-
-    /**
-     * gets the maker of the browser
-     *
-     * @return \UaMatcher\Company\CompanyInterface
-     */
-    public function getManufacturer()
-    {
-        return new Company(new Company\Apple());
-    }
-
-    /**
-     * returns the type of the current device
-     *
-     * @return \UaBrowserType\TypeInterface
-     */
-    public function getBrowserType()
-    {
-        return new Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \UaResult\Version
-     */
-    public function detectVersion()
-    {
-        $detector = new Version();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->setVersion('');
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
-     * returns null, if the browser does not have a specific rendering engine
-     * returns the Engine Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\Webkit
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
      */
     public function getEngine()
     {
-        return new Webkit($this->useragent, $this->logger);
-    }
-
-    /**
-     * returns the WurflKey
-     *
-     * @param \UaMatcher\Os\OsInterface $os
-     *
-     * @return string
-     */
-    public function getWurflKey(OsInterface $os)
-    {
-        $osname    = $os->getName();
-        $osVersion = (float) $os->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        $browserVersion = $this->detectVersion()->getVersion(
-            Version::MAJORMINOR
-        );
-
-        if ('Mac OS X' === $osname && 10.0 <= $osVersion) {
-            return 'safari_' . (int) $browserVersion . '_0_mac';
-        }
-
-        if ('Windows' === $osname) {
-            return 'safari_' . (int) $browserVersion . '_0_windows';
-        }
-
-        return '';
+        return new Engine\Webkit($this->useragent, []);
     }
 }

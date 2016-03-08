@@ -29,13 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser;
-
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine;
-use UaBrowserType;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use Version\Version;
+namespace BrowserDetector\Helper;
 
 /**
  * @category  BrowserDetector
@@ -43,46 +37,76 @@ use Version\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SPV extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class MicrosoftOffice
 {
     /**
-     * Class Constructor
+     * maps the version
      *
-     * @param string $useragent the user agent to be handled
-     * @param array  $data
+     * @param string $version
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return string
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
+    public function mapVersion($version)
+    {
+        if (15 === (int) $version) {
+            return '2013';
+        }
 
-        $this->setData(
-            [
-                'name'                        => 'SPV',
-                'modus'                       => null,
-                'version'                     => new Version(null),
-                'manufacturer'                => (new Company\Unknown())->name,
-                'pdfSupport'                  => true,
-                'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => true,
-                'claimsWebSupport'            => false,
-                'supportsEmptyOptionValues'   => true,
-                'supportsBasicAuthentication' => true,
-                'supportsPostMethod'          => true,
-                'bits'                        => null,
-                'type'                        => new UaBrowserType\Browser(),
-            ]
-        );
+        if (14 === (int) $version) {
+            return '2010';
+        }
+
+        if (12 === (int) $version) {
+            return '2007';
+        }
+
+        return '';
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return string|null
      */
-    public function getEngine()
+    public function detectInternalVersion($useragent)
     {
-        return new Engine\UnknownEngine($this->useragent, []);
+        $doMatch = preg_match(
+            '/MSOffice ([\d\.]+)/',
+            $useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match('/MSOffice (\d+)/', $useragent, $matches);
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match(
+            '/microsoft Office\/([\d\.]+)/',
+            $useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        $doMatch = preg_match(
+            '/microsoft Office\/(\d+)/',
+            $useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return $matches[1];
+        }
+
+        return;
     }
 }
