@@ -31,7 +31,6 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Browser\CfNetwork as CfNetworkBase;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine\Webkit;
 use UaBrowserType\Browser;
@@ -44,7 +43,7 @@ use UaResult\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ipick extends CfNetworkBase implements BrowserHasSpecificEngineInterface
+class Ipick extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * the detected browser properties
