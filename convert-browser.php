@@ -46,8 +46,6 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 
     echo 'processing ', $fullpath, PHP_EOL;
 
-    echo 'processing ', $fullpath, PHP_EOL;
-
     $templateContent = str_replace(
         ['###ClassName###'],
         [$matches[1]],
@@ -125,10 +123,10 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $pos2 = strpos($filecontent, '{', $pos1);
         $pos3 = strpos($filecontent, "\n    }", $pos2);
         $check = trim(substr($filecontent, $pos2 + 1, $pos3 - $pos2));
-        
+
         $check = str_replace(
-            'return $detector->detectVersion($searches);',
-            'return $detector->detectVersion($searches)->getVersion();',
+            ['return $detector->detectVersion($searches);', '$detector = new Version();'],
+            ['return $detector->detectVersion($searches)->getVersion();', '$detector = new ResultVersion();'],
             $check
         );
     } else {
@@ -141,7 +139,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $templateContent
     );
 
-    file_put_contents($fullpath, $templateContent);exit;
+    file_put_contents($fullpath, $templateContent);
 
     if (false !== strpos($templateContent, '#')) {
         echo 'placeholders found in file ', $fullpath, PHP_EOL;
