@@ -43,7 +43,7 @@ class MicrosoftOffice
      * maps the version
      *
      * @param string $version
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *                        returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
      * @return string
      */

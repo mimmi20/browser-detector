@@ -143,7 +143,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
             }
         }
 
-        return null;
+        return;
     }
 
     /**

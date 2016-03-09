@@ -32,9 +32,8 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Bits\Browser as BrowserBits;
-use BrowserDetector\Detector\Company;
-use UaResult\Browser\BrowserInterface;
 use UaBrowserType\TypeInterface;
+use UaResult\Browser\BrowserInterface;
 use Version\Version;
 
 /**

@@ -33,11 +33,11 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
+use BrowserDetector\Helper\Safari as SafariHelper;
 use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaResult\Version as ResultVersion;
 use Version\Version;
-use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * @category  BrowserDetector
@@ -123,7 +123,7 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
             return $safariHelper->mapSafariVersions($matches[1]);
         }
 
-        return null;
+        return;
     }
 
     /**

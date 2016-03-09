@@ -33,12 +33,12 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
+use BrowserDetector\Helper\Safari as SafariHelper;
 use UaBrowserType;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaResult\Version as ResultVersion;
 use Version\Version;
-use BrowserDetector\Helper\Safari as SafariHelper;
 
 /**
  * @category  BrowserDetector
