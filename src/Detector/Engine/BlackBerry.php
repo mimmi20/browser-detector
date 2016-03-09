@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
+use Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -56,7 +57,7 @@ class BlackBerry extends AbstractEngine
         $this->setData(
             [
                 'name'         => 'BlackBerry',
-                'version'      => null,
+                'version'      => new Version(null),
                 'manufacturer' => (new Company\Rim())->name,
             ]
         );
