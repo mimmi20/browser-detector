@@ -31,11 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company\Unknown;
-use Psr\Log\LoggerInterface;
-use UaHelper\Utils;
 use UaResult\Engine\EngineInterface;
-use UaResult\Version as ResultVersion;
 use Version\Version;
 
 /**
