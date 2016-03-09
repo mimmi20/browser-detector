@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -36,10 +36,10 @@ use BrowserDetector\Detector\Company;
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackBerry extends AbstractEngine
+class ###ClassName### extends AbstractEngine
 {
     /**
      * Class Constructor
@@ -52,13 +52,24 @@ class BlackBerry extends AbstractEngine
         array $data
     ) {
         $this->useragent = $useragent;
+        $version         = $this->detectVersion();
 
         $this->setData(
             [
-                'name'         => 'BlackBerry',
-                'version'      => null,
-                'manufacturer' => (new Company\Rim())->name,
+                'name'         => '###name###',
+                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'manufacturer' => (new Company\###Manu###())->name,
             ]
         );
+    }
+
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return string
+     */
+    private function detectVersion()
+    {
+        ###detectVersion###
     }
 }
