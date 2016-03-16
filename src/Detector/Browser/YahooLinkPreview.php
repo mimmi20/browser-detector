@@ -61,7 +61,7 @@ class YahooLinkPreview extends AbstractBrowser implements BrowserHasSpecificEngi
             [
                 'name'                        => 'Yahoo Link Preview',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Yahoo())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -57,7 +57,7 @@ class UnknownOs extends AbstractOs
         $this->setData(
             [
                 'name'         => 'unknown',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Unknown())->name,
                 'bits'         => null,
             ]

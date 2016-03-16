@@ -61,7 +61,7 @@ class R6Feedfetcher extends AbstractBrowser implements BrowserHasSpecificEngineI
             [
                 'name'                        => 'R6 FeedFetcher',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Salesforce())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

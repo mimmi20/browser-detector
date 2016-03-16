@@ -57,7 +57,7 @@ class CentOs extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Cent OS Linux',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Unknown())->name,
                 'bits'         => null,
             ]

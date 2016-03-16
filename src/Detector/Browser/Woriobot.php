@@ -61,7 +61,7 @@ class Woriobot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             [
                 'name'                        => 'woriobot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Flipboard())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

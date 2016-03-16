@@ -61,7 +61,7 @@ class Nec extends AbstractBrowser implements BrowserHasSpecificEngineInterface
             [
                 'name'                        => 'Nec',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Nec())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -61,7 +61,7 @@ class YisouSpider extends AbstractBrowser implements BrowserHasSpecificEngineInt
             [
                 'name'                        => 'YisouSpider',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Yisou())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -61,7 +61,7 @@ class IzSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
             [
                 'name'                        => 'iZSearch Bot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\IzSearch())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

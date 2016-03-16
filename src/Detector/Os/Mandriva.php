@@ -57,7 +57,7 @@ class Mandriva extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Mandriva Linux',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Mandriva())->name,
                 'bits'         => null,
             ]

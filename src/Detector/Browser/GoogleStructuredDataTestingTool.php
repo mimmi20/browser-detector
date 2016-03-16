@@ -61,7 +61,7 @@ class GoogleStructuredDataTestingTool extends AbstractBrowser implements Browser
             [
                 'name'                        => 'Google Structured-Data TestingTool',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Google())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

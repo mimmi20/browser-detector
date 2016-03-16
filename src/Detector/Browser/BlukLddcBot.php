@@ -61,7 +61,7 @@ class BlukLddcBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
             [
                 'name'                        => 'bl.uk_lddc_bot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\TheBritishLegalDepositLibraries())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

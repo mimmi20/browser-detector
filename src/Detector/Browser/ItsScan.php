@@ -61,7 +61,7 @@ class ItsScan extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             [
                 'name'                        => 'itsscan',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\MuensterUniversityOfAppliedSciences())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

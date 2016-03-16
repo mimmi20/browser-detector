@@ -61,7 +61,7 @@ class Searchmetrics extends AbstractBrowser implements BrowserHasSpecificEngineI
             [
                 'name'                        => 'SearchmetricsBot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Searchmetrics())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

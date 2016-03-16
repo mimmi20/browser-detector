@@ -57,7 +57,7 @@ class UnknownEngine extends AbstractEngine
         $this->setData(
             [
                 'name'         => 'unknown',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Unknown())->name,
             ]
         );

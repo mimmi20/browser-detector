@@ -61,7 +61,7 @@ class AdmantxPlatformSemanticAnalyzer extends AbstractBrowser implements Browser
             [
                 'name'                        => 'ADmantX Platform Semantic Analyzer',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\AdmantxInc())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -61,7 +61,7 @@ class ThumbSniper extends AbstractBrowser implements BrowserHasSpecificEngineInt
             [
                 'name'                        => 'ThumbSniper',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\ThomasSchulte())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

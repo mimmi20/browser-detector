@@ -57,7 +57,7 @@ class Suse extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Suse Linux',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Suse())->name,
                 'bits'         => null,
             ]

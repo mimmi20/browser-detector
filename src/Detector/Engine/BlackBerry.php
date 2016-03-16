@@ -57,7 +57,7 @@ class BlackBerry extends AbstractEngine
         $this->setData(
             [
                 'name'         => 'BlackBerry',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Rim())->name,
             ]
         );

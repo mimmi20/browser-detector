@@ -57,7 +57,7 @@ class Moblin extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Moblin',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Unknown())->name,
                 'bits'         => null,
             ]

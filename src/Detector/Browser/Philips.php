@@ -61,7 +61,7 @@ class Philips extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             [
                 'name'                        => 'Philips',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Philips())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

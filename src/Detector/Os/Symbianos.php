@@ -57,7 +57,7 @@ class Symbianos extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Symbian OS',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\SymbianFoundation())->name,
                 'bits'         => null,
             ]

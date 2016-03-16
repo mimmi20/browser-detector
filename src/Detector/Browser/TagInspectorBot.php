@@ -61,7 +61,7 @@ class TagInspectorBot extends AbstractBrowser implements BrowserHasSpecificEngin
             [
                 'name'                        => 'TagInspector',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Infotrust())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

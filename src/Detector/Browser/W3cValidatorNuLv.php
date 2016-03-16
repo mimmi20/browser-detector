@@ -61,7 +61,7 @@ class W3cValidatorNuLv extends AbstractBrowser implements BrowserHasSpecificEngi
             [
                 'name'                        => 'Validator.nu/LV',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\W3c())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -57,7 +57,7 @@ class Tasman extends AbstractEngine
         $this->setData(
             [
                 'name'         => 'Tasman',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Apple())->name,
             ]
         );

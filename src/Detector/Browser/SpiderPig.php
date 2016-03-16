@@ -61,7 +61,7 @@ class SpiderPig extends AbstractBrowser implements BrowserHasSpecificEngineInter
             [
                 'name'                        => 'Spider-Pig',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Tinfoilsecurity())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

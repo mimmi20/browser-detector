@@ -61,7 +61,7 @@ class Avant extends AbstractBrowser implements BrowserHasSpecificEngineInterface
             [
                 'name'                        => 'Avant',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\AvantForce())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -61,7 +61,7 @@ class GoogleAppEngine extends AbstractBrowser implements BrowserHasSpecificEngin
             [
                 'name'                        => 'Google App Engine',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Google())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

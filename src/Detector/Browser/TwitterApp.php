@@ -61,7 +61,7 @@ class TwitterApp extends AbstractBrowser implements BrowserHasSpecificEngineInte
             [
                 'name'                        => 'Twitter App',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Twitter())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => true,

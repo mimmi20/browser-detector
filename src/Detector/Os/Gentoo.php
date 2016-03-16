@@ -57,7 +57,7 @@ class Gentoo extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Gentoo Linux',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Gentoo())->name,
                 'bits'         => null,
             ]

@@ -61,7 +61,7 @@ class ElluminateLive extends AbstractBrowser implements BrowserHasSpecificEngine
             [
                 'name'                        => 'Elluminate Live',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Blackboard())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

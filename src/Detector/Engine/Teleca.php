@@ -57,7 +57,7 @@ class Teleca extends AbstractEngine
         $this->setData(
             [
                 'name'         => 'Teleca',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Obigo())->name,
             ]
         );

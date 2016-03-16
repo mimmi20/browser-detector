@@ -57,7 +57,7 @@ class NokiaOs extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Nokia OS',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Nokia())->name,
                 'bits'         => null,
             ]

@@ -57,7 +57,7 @@ class NintendoOs extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Nintendo OS',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Nintendo())->name,
                 'bits'         => null,
             ]

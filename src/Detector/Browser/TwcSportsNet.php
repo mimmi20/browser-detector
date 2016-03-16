@@ -61,7 +61,7 @@ class TwcSportsNet extends AbstractBrowser implements BrowserHasSpecificEngineIn
             [
                 'name'                        => 'TWC SportsNet',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\TimeWarnerCable())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => true,

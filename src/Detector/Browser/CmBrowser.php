@@ -61,7 +61,7 @@ class CmBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
             [
                 'name'                        => 'CM Browser',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\CheetahMobile())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

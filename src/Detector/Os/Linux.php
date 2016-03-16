@@ -57,7 +57,7 @@ class Linux extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Linux',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\LinuxFoundation())->name,
                 'bits'         => null,
             ]

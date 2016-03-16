@@ -61,7 +61,7 @@ class GoogleWebSnippet extends AbstractBrowser implements BrowserHasSpecificEngi
             [
                 'name'                        => 'Google Web Snippet',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Google())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

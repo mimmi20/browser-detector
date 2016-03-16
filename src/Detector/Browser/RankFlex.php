@@ -61,7 +61,7 @@ class RankFlex extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             [
                 'name'                        => 'RankFlex',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\RankFlex())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

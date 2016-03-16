@@ -61,7 +61,7 @@ class UnknownBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
             [
                 'name'                        => 'unknown',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Unknown())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -61,7 +61,7 @@ class ThumbShotsDeBot extends AbstractBrowser implements BrowserHasSpecificEngin
             [
                 'name'                        => 'thumbshots-de-bot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Thumbshots())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

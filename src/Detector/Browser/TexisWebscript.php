@@ -61,7 +61,7 @@ class TexisWebscript extends AbstractBrowser implements BrowserHasSpecificEngine
             [
                 'name'                        => 'Texis Webscript',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\ThunderstoneSoftware())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

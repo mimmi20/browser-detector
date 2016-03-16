@@ -61,7 +61,7 @@ class SecurepointContentFilter extends AbstractBrowser implements BrowserHasSpec
             [
                 'name'                        => 'Securepoint Content Filter',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Securepoint())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

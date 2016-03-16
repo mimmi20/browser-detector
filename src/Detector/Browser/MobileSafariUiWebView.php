@@ -61,7 +61,7 @@ class MobileSafariUiWebView extends AbstractBrowser implements BrowserHasSpecifi
             [
                 'name'                        => 'Mobile Safari UIWebView',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Apple())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => true,

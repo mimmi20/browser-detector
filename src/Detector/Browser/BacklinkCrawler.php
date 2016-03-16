@@ -61,7 +61,7 @@ class BacklinkCrawler extends AbstractBrowser implements BrowserHasSpecificEngin
             [
                 'name'                        => 'BacklinkCrawler',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\BacklinkTest())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

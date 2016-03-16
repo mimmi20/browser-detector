@@ -61,7 +61,7 @@ class OptivoNetHelper extends AbstractBrowser implements BrowserHasSpecificEngin
             [
                 'name'                        => 'optivo NetHelper',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Optivo())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -61,7 +61,7 @@ class YahooExternalCache extends AbstractBrowser implements BrowserHasSpecificEn
             [
                 'name'                        => 'YahooExternalCache',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Yahoo())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

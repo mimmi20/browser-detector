@@ -61,7 +61,7 @@ class Metager2VerificationBot extends AbstractBrowser implements BrowserHasSpeci
             [
                 'name'                        => 'metager2-verification-bot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\SumaEv())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

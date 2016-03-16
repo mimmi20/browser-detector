@@ -61,7 +61,7 @@ class IchiroMobileBot extends AbstractBrowser implements BrowserHasSpecificEngin
             [
                 'name'                        => 'Ichiro Mobile Bot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Ichiro())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

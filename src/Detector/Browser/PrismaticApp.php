@@ -61,7 +61,7 @@ class PrismaticApp extends AbstractBrowser implements BrowserHasSpecificEngineIn
             [
                 'name'                        => 'Prismatic App',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Prismatic())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

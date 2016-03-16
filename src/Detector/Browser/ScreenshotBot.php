@@ -61,7 +61,7 @@ class ScreenshotBot extends AbstractBrowser implements BrowserHasSpecificEngineI
             [
                 'name'                        => 'Screenshot Bot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Prcy())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

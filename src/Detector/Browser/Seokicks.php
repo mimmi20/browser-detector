@@ -61,7 +61,7 @@ class Seokicks extends AbstractBrowser implements BrowserHasSpecificEngineInterf
             [
                 'name'                        => 'SEOkicks Robot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\TorstenRueckertInternetdienstleistungen())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

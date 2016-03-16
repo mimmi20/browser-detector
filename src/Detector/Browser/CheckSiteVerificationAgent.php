@@ -61,7 +61,7 @@ class CheckSiteVerificationAgent extends AbstractBrowser implements BrowserHasSp
             [
                 'name'                        => 'CheckSite Verification Agent',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Checksite())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

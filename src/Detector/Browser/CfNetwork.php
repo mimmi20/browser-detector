@@ -61,7 +61,7 @@ class CfNetwork extends AbstractBrowser implements BrowserHasSpecificEngineInter
             [
                 'name'                        => 'CFNetwork',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Apple())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

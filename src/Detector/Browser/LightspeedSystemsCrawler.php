@@ -61,7 +61,7 @@ class LightspeedSystemsCrawler extends AbstractBrowser implements BrowserHasSpec
             [
                 'name'                        => 'Lightspeed Systems Crawler',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\LightspeedSystems())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

@@ -57,7 +57,7 @@ class LinuxTv extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Linux for TV',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\LinuxFoundation())->name,
                 'bits'         => null,
             ]

@@ -61,7 +61,7 @@ class SamsungMobileBrowser extends AbstractBrowser implements BrowserHasSpecific
             [
                 'name'                        => 'Samsung Mobile Browser',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Samsung())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

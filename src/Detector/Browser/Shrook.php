@@ -61,7 +61,7 @@ class Shrook extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
             [
                 'name'                        => 'Shrook',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\UtsireSoftware())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

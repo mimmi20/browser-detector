@@ -57,7 +57,7 @@ class CellOs extends AbstractOs
         $this->setData(
             [
                 'name'         => 'CellOS',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Sony())->name,
                 'bits'         => null,
             ]

@@ -61,7 +61,7 @@ class CrystalSemanticsBot extends AbstractBrowser implements BrowserHasSpecificE
             [
                 'name'                        => 'CrystalSemanticsBot',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\CrystalSemantics())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

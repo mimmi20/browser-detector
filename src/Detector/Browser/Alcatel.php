@@ -61,7 +61,7 @@ class Alcatel extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             [
                 'name'                        => 'Alcatel',
                 'modus'                       => null,
-                'version'                     => new Version(null),
+                'version'                     => new Version(0),
                 'manufacturer'                => (new Company\Alcatel())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,

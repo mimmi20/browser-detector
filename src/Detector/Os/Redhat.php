@@ -57,7 +57,7 @@ class Redhat extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Redhat Linux',
-                'version'      => new Version(null),
+                'version'      => new Version(0),
                 'manufacturer' => (new Company\Redhat())->name,
                 'bits'         => null,
             ]
