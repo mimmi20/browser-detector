@@ -88,7 +88,10 @@ class SamsungSghT499 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SGH-T499')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SGH-T499')) {
             return false;
         }
 

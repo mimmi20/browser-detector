@@ -88,7 +88,10 @@ class GlobexGu7814 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GU7814')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GU7814')) {
             return false;
         }
 

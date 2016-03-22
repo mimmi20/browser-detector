@@ -88,7 +88,10 @@ class Nokia2700c extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nokia2700c')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nokia2700c')) {
             return false;
         }
 

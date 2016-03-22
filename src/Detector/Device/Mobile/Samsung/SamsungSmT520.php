@@ -88,7 +88,10 @@ class SamsungSmT520 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-T520')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-T520')) {
             return false;
         }
 

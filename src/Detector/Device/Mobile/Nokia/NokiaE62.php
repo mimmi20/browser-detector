@@ -88,7 +88,10 @@ class NokiaE62 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaE62')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NokiaE62')) {
             return false;
         }
 

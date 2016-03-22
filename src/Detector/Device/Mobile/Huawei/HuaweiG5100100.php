@@ -88,7 +88,10 @@ class HuaweiG5100100 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HUAWEI G510-0100'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HUAWEI G510-0100'])) {
             return false;
         }
 

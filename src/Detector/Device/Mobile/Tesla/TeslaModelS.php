@@ -88,7 +88,10 @@ class TeslaModelS extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['QtCarBrowser'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['QtCarBrowser'])) {
             return false;
         }
 

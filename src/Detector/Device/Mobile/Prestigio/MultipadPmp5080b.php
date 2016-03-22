@@ -88,7 +88,10 @@ class MultipadPmp5080b extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PMP5080B')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PMP5080B')) {
             return false;
         }
 

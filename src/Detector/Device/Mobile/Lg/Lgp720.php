@@ -88,7 +88,10 @@ class Lgp720 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-P720')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('LG-P720')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SamsungSmN8000 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-N8000')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-N8000')) {
             return false;
         }
 

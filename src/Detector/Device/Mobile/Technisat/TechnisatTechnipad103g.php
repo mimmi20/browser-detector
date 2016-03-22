@@ -90,7 +90,10 @@ class TechnisatTechnipad103g extends AbstractDevice implements DeviceHasSpecific
     {
         $trekStorPhones = ['TechniPad_10-3G'];
 
-        if (!$this->utils->checkIfContains($trekStorPhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($trekStorPhones)) {
             return false;
         }
 

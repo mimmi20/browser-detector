@@ -88,7 +88,10 @@ class PrestigioPmp3370b extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PrestigioPMP3370B', 'PMP3370B'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PrestigioPMP3370B', 'PMP3370B'])) {
             return false;
         }
 

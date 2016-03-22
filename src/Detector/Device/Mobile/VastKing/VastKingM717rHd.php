@@ -88,7 +88,10 @@ class VastKingM717rHd extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('M717R-HD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('M717R-HD')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class DellVenuePro extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DELL; Venue Pro')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('DELL; Venue Pro')) {
             return false;
         }
 

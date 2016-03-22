@@ -88,7 +88,10 @@ class XiaomiHmnote1ltetd extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HM NOTE 1LTETD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HM NOTE 1LTETD')) {
             return false;
         }
 

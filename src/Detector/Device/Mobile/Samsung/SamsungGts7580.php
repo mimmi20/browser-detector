@@ -88,7 +88,10 @@ class SamsungGts7580 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S7580', 'GT-S7580'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S7580', 'GT-S7580'])) {
             return false;
         }
 

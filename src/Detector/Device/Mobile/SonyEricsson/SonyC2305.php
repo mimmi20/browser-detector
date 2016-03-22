@@ -88,7 +88,10 @@ class SonyC2305 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('C2305')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('C2305')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SamsungGte2550 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-E2550')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-E2550')) {
             return false;
         }
 

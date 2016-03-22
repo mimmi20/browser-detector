@@ -88,7 +88,10 @@ class ExplayD723g extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('D7.2 3G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('D7.2 3G')) {
             return false;
         }
 

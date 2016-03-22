@@ -88,7 +88,10 @@ class TexetTm3204r extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TM-3204R')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TM-3204R')) {
             return false;
         }
 

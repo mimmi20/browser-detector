@@ -88,7 +88,10 @@ class HtcTouchHdT8282 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Touch_HD_T8282'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Touch_HD_T8282'])) {
             return false;
         }
 

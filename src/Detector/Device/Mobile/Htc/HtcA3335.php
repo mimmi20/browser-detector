@@ -88,7 +88,10 @@ class HtcA3335 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HTC_A3335')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HTC_A3335')) {
             return false;
         }
 

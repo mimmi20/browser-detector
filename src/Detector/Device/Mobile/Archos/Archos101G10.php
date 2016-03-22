@@ -88,7 +88,10 @@ class Archos101G10 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARCHOS 101G10')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ARCHOS 101G10')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class HuaweiU9200 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiU9200', 'U9200'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiU9200', 'U9200'])) {
             return false;
         }
 

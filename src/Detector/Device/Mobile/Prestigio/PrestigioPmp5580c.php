@@ -88,7 +88,10 @@ class PrestigioPmp5580c extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PrestigioPMP5580C', 'PMP5580C'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PrestigioPMP5580C', 'PMP5580C'])) {
             return false;
         }
 

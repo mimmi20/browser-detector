@@ -88,7 +88,10 @@ class ZopoZp200 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' ZP200 ')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(' ZP200 ')) {
             return false;
         }
 

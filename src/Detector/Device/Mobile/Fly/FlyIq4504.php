@@ -88,7 +88,10 @@ class FlyIq4504 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('IQ4504')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('IQ4504')) {
             return false;
         }
 

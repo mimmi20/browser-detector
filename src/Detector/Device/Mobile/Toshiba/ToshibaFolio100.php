@@ -88,7 +88,10 @@ class ToshibaFolio100 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(
             ['TSB_CLOUD_COMPANION;FOLIO_AND_A', 'TOSHIBA_AC_AND_AZ', 'folio100', 'TOSHIBA_FOLIO_AND_A']
         )
         ) {

@@ -88,7 +88,10 @@ class YarvikTab10400 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TAB10-400')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TAB10-400')) {
             return false;
         }
 

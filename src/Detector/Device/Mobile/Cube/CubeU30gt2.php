@@ -88,7 +88,10 @@ class CubeU30gt2 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('U30GT 2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('U30GT 2')) {
             return false;
         }
 

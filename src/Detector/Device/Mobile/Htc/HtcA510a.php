@@ -88,7 +88,10 @@ class HtcA510a extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC-A510a'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC-A510a'])) {
             return false;
         }
 

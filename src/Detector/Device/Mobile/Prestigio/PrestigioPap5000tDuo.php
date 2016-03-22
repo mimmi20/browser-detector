@@ -88,7 +88,10 @@ class PrestigioPap5000tDuo extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PAP5000TDUO'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PAP5000TDUO'])) {
             return false;
         }
 

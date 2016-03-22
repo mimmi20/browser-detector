@@ -88,7 +88,10 @@ class LgKm900 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG/KM900', 'LG-KM900'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG/KM900', 'LG-KM900'])) {
             return false;
         }
 

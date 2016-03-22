@@ -88,7 +88,10 @@ class PointOfViewPi1045 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PI1045')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PI1045')) {
             return false;
         }
 

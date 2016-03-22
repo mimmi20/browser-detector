@@ -88,7 +88,10 @@ class TmobileG2Touch extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['T-Mobile_G2_Touch', 'T-Mobile G2'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['T-Mobile_G2_Touch', 'T-Mobile G2'])) {
             return false;
         }
 

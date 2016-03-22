@@ -88,7 +88,10 @@ class Lgd724 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-D724', 'LGD724'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-D724', 'LGD724'])) {
             return false;
         }
 

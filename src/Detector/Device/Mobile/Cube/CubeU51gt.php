@@ -88,7 +88,10 @@ class CubeU51gt extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('U51GT')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('U51GT')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class DigmaIdxd7 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('iDxD7')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('iDxD7')) {
             return false;
         }
 

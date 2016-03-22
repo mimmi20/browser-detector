@@ -88,7 +88,10 @@ class SamsungGts5230w extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S5230W', 'GT-S5230W'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S5230W', 'GT-S5230W'])) {
             return false;
         }
 

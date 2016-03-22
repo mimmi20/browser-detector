@@ -88,7 +88,10 @@ class SamsungGtb7350 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-B7350')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-B7350')) {
             return false;
         }
 

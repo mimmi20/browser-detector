@@ -88,7 +88,10 @@ class SamsungSmN9008V extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-N9008V')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-N9008V')) {
             return false;
         }
 

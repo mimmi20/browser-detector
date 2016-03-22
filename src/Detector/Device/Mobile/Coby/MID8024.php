@@ -88,7 +88,10 @@ class MID8024 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MID8024')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MID8024')) {
             return false;
         }
 

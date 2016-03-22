@@ -88,7 +88,10 @@ class SamsungGtc3310 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-C3310')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-C3310')) {
             return false;
         }
 

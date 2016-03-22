@@ -88,7 +88,10 @@ class HuaweiW1u00 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HUAWEI; W1-U00'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HUAWEI; W1-U00'])) {
             return false;
         }
 

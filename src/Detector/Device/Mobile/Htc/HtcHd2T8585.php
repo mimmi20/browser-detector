@@ -88,7 +88,10 @@ class HtcHd2T8585 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_HD2_T8585'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_HD2_T8585'])) {
             return false;
         }
 

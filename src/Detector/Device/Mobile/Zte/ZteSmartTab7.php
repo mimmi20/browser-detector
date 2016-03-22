@@ -88,7 +88,10 @@ class ZteSmartTab7 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ZTE SmartTab7', ' SmartTab7'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ZTE SmartTab7', ' SmartTab7'])) {
             return false;
         }
 

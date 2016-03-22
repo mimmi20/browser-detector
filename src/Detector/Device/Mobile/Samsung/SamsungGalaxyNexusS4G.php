@@ -88,7 +88,10 @@ class SamsungGalaxyNexusS4G extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nexus S 4G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nexus S 4G')) {
             return false;
         }
 

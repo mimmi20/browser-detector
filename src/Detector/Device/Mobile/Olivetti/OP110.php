@@ -88,7 +88,10 @@ class OP110 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('OP110')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('OP110')) {
             return false;
         }
 

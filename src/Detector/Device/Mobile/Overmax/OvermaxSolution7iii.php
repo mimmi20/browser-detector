@@ -88,7 +88,10 @@ class OvermaxSolution7iii extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Solution 7III')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Solution 7III')) {
             return false;
         }
 

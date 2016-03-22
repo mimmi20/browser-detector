@@ -88,7 +88,10 @@ class KoboTouch extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Kobo Touch')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Kobo Touch')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class LgGw300 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-GW300', 'LG/GW300'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-GW300', 'LG/GW300'])) {
             return false;
         }
 

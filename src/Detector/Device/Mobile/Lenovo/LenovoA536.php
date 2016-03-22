@@ -88,7 +88,10 @@ class LenovoA536 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A536')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('A536')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class Lgp970 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-P970', 'Optimus-Black'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-P970', 'Optimus-Black'])) {
             return false;
         }
 

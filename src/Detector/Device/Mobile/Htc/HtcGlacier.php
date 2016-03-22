@@ -88,7 +88,10 @@ class HtcGlacier extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HTC Glacier')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HTC Glacier')) {
             return false;
         }
 

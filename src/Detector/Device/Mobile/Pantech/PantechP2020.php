@@ -88,7 +88,10 @@ class PantechP2020 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PantechP2020')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PantechP2020')) {
             return false;
         }
 

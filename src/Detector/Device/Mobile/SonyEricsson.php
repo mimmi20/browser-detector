@@ -105,6 +105,6 @@ class SonyEricsson extends AbstractDevice implements DeviceHasChildrenInterface,
      */
     public function detectOs()
     {
-        return new Os\Unkno($this->useragent, [])ent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

@@ -88,7 +88,10 @@ class AmazonKfot extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['KFOT'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['KFOT'])) {
             return false;
         }
 

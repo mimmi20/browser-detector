@@ -88,7 +88,10 @@ class BlaupunktEndeavour101l extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Endeavour 101L'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Endeavour 101L'])) {
             return false;
         }
 

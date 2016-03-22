@@ -88,11 +88,17 @@ class LenovoA65 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Lenovo A65')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Lenovo A65')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Lenovo A656')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('Lenovo A656')) {
             return false;
         }
 

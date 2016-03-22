@@ -88,11 +88,17 @@ class NokiaC3 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaC3')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NokiaC3')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['NokiaC3-'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['NokiaC3-'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class HuaweiIdeosS7Slim extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['IDEOS S7 Slim', 'Ideos S7 Slim'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['IDEOS S7 Slim', 'Ideos S7 Slim'])) {
             return false;
         }
 

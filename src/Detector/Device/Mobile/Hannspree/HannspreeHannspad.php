@@ -88,7 +88,10 @@ class HannspreeHannspad extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SN10T1')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SN10T1')) {
             return false;
         }
 

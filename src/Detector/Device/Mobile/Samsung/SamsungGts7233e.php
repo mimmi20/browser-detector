@@ -88,7 +88,10 @@ class SamsungGts7233e extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-S7233E')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-S7233E')) {
             return false;
         }
 

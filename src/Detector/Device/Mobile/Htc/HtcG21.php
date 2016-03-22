@@ -88,7 +88,10 @@ class HtcG21 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC-G21', 'HTC G21'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC-G21', 'HTC G21'])) {
             return false;
         }
 

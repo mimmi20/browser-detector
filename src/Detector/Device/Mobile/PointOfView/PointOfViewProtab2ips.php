@@ -88,7 +88,10 @@ class PointOfViewProtab2ips extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TAB-PROTAB2-IPS')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TAB-PROTAB2-IPS')) {
             return false;
         }
 

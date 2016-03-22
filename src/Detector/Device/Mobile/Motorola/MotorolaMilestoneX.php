@@ -88,7 +88,10 @@ class MotorolaMilestoneX extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Milestone X')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Milestone X')) {
             return false;
         }
 

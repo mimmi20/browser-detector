@@ -88,7 +88,10 @@ class ArkBenefitM3s extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Benefit M3S')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Benefit M3S')) {
             return false;
         }
 

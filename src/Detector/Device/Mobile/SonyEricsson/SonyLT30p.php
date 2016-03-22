@@ -88,11 +88,17 @@ class SonyLT30p extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonLT30p', 'SonyLT30p', 'LT30p'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonLT30p', 'SonyLT30p', 'LT30p'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonLT30pv', 'SonyLT30pv', 'LT30pv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonLT30pv', 'SonyLT30pv', 'LT30pv'])) {
             return false;
         }
 

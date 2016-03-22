@@ -88,7 +88,10 @@ class PointOfViewProtab2xl extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TAB-PROTAB2XL')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TAB-PROTAB2XL')) {
             return false;
         }
 

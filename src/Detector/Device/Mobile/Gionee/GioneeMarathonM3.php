@@ -88,7 +88,10 @@ class GioneeMarathonM3 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' M3 ')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(' M3 ')) {
             return false;
         }
 

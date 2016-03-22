@@ -88,7 +88,10 @@ class HuaweiY330u01 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiY330-U01', 'HUAWEI-Y330-U01', 'HUAWEI Y330-U01'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiY330-U01', 'HUAWEI-Y330-U01', 'HUAWEI Y330-U01'])) {
             return false;
         }
 

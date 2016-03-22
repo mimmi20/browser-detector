@@ -88,7 +88,10 @@ class MiuiUsSensation4G extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MIUI.us Sensation 4G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MIUI.us Sensation 4G')) {
             return false;
         }
 

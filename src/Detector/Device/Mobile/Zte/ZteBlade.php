@@ -88,7 +88,10 @@ class ZteBlade extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['zte-blade', 'zte blade'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['zte-blade', 'zte blade'], true)) {
             return false;
         }
 

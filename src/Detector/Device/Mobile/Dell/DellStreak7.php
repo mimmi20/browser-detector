@@ -88,7 +88,10 @@ class DellStreak7 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Dell Streak 7')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Dell Streak 7')) {
             return false;
         }
 

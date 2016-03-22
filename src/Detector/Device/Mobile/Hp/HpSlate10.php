@@ -88,7 +88,10 @@ class HpSlate10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HP Slate 10 HD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HP Slate 10 HD')) {
             return false;
         }
 

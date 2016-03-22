@@ -88,11 +88,17 @@ class SamsungSghi900 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SAMSUNG-SGH-i900')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SAMSUNG-SGH-i900')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('SAMSUNG-SGH-i900V')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('SAMSUNG-SGH-i900V')) {
             return false;
         }
 

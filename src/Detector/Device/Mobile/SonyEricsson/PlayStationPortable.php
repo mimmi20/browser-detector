@@ -88,7 +88,10 @@ class PlayStationPortable extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(['PlayStation Portable', 'PSP'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['PlayStation Portable', 'PSP'])) {
             return true;
         }
 

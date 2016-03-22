@@ -94,7 +94,10 @@ class HtcSensationXlBeats extends AbstractDevice implements DeviceHasSpecificPla
             'Sensation XL with Beats Audio',
         ];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 
@@ -105,7 +108,10 @@ class HtcSensationXlBeats extends AbstractDevice implements DeviceHasSpecificPla
             'HTC_DesireHD_Beats_X315e',
         ];
 
-        if ($this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($phones)) {
             return false;
         }
 

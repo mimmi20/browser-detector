@@ -88,7 +88,10 @@ class GalaxyNexusOne extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Nexus One', 'NexusOne', 'Nexus-One'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Nexus One', 'NexusOne', 'Nexus-One'])) {
             return false;
         }
 

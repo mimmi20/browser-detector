@@ -88,7 +88,10 @@ class ViewSonicV350 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ViewSonic-V350')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ViewSonic-V350')) {
             return false;
         }
 

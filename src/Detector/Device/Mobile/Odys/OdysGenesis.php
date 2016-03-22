@@ -88,7 +88,10 @@ class OdysGenesis extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' Genesis ')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(' Genesis ')) {
             return false;
         }
 

@@ -105,6 +105,6 @@ class Tmobile extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\Unkno($this->useragent, [])ent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

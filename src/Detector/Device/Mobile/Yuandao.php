@@ -105,6 +105,6 @@ class Yuandao extends AbstractDevice implements DeviceHasChildrenInterface, Devi
      */
     public function detectOs()
     {
-        return new Os\Andro($this->useragent, [])ent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

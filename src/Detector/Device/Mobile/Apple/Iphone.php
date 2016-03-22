@@ -88,11 +88,17 @@ class Iphone extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('iPh')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('iPh')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['ipod', 'ipod touch', 'ipad', 'ipad'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['ipod', 'ipod touch', 'ipad', 'ipad'], true)) {
             return false;
         }
 

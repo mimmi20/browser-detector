@@ -88,7 +88,10 @@ class MobistelCynusF4 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Cynus F4')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Cynus F4')) {
             return false;
         }
 

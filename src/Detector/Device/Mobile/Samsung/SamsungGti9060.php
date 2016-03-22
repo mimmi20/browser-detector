@@ -88,11 +88,17 @@ class SamsungGti9060 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-I9060')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-I9060')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('GT-I9060P')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('GT-I9060P')) {
             return false;
         }
 

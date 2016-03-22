@@ -88,7 +88,10 @@ class WikoCinkPeax2 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('CINK PEAX 2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('CINK PEAX 2')) {
             return false;
         }
 

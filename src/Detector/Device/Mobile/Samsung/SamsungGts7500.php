@@ -88,7 +88,10 @@ class SamsungGts7500 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S7500', 'GT-S7500'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S7500', 'GT-S7500'])) {
             return false;
         }
 

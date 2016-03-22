@@ -88,7 +88,10 @@ class CubotC11 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('CUBOT C11')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('CUBOT C11')) {
             return false;
         }
 

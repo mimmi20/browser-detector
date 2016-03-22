@@ -88,7 +88,10 @@ class VodafoneSmartTab4 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Vodafone Smart Tab 4'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Vodafone Smart Tab 4'])) {
             return false;
         }
 

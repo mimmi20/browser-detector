@@ -88,7 +88,10 @@ class SamsungSchU660 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-U660', 'SCH-U660'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-U660', 'SCH-U660'])) {
             return false;
         }
 

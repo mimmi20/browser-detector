@@ -88,11 +88,17 @@ class SamsungGts5233S extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S5233S', 'GT-S5233S'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S5233S', 'GT-S5233S'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SAMSUNG-GT-S5233SW', 'GT-S5233SW'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SAMSUNG-GT-S5233SW', 'GT-S5233SW'])) {
             return false;
         }
 

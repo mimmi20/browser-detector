@@ -88,7 +88,10 @@ class LgGm360 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-GM360', 'LG/GM360'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-GM360', 'LG/GM360'])) {
             return false;
         }
 

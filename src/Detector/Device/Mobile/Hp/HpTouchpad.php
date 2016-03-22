@@ -88,7 +88,10 @@ class HpTouchpad extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['TouchPad', 'Touchpad', 'cm_tenderloin'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['TouchPad', 'Touchpad', 'cm_tenderloin'])) {
             return false;
         }
 

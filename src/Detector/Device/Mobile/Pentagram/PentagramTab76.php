@@ -88,7 +88,10 @@ class PentagramTab76 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PentagramTAB7.6')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PentagramTAB7.6')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SamsungGtp6211 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-P6211', 'GT-P6211'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-P6211', 'GT-P6211'])) {
             return false;
         }
 

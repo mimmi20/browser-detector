@@ -88,7 +88,10 @@ class NextbookM803hc extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DATAM803HC')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('DATAM803HC')) {
             return false;
         }
 

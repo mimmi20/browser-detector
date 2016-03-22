@@ -88,7 +88,10 @@ class ZteV880 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ZTE V880', ' V880 ', 'ZTE-U V880'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ZTE V880', ' V880 ', 'ZTE-U V880'])) {
             return false;
         }
 

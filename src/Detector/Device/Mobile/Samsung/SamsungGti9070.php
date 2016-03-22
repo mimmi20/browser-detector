@@ -88,11 +88,17 @@ class SamsungGti9070 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-I9070')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-I9070')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('GT-I9070P')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('GT-I9070P')) {
             return false;
         }
 

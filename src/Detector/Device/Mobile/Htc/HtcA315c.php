@@ -88,7 +88,10 @@ class HtcA315c extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains([' a315c '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains([' a315c '])) {
             return false;
         }
 

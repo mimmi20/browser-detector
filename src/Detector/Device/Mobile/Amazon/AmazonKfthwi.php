@@ -88,7 +88,10 @@ class AmazonKfthwi extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Kfthwi', 'KFTHWI'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Kfthwi', 'KFTHWI'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class ModecomFreeTab7800IpsIc extends AbstractDevice implements DeviceHasSpecifi
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FreeTAB 7800 IPS IC')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FreeTAB 7800 IPS IC')) {
             return false;
         }
 

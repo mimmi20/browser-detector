@@ -88,7 +88,10 @@ class MotorolaXt925 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MOT-XT925', 'XT925'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MOT-XT925', 'XT925'])) {
             return false;
         }
 

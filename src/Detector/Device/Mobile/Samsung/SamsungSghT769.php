@@ -88,7 +88,10 @@ class SamsungSghT769 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SGH-T769', 'blaze'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SGH-T769', 'blaze'])) {
             return false;
         }
 

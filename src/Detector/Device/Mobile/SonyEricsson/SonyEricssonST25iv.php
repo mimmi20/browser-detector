@@ -88,7 +88,10 @@ class SonyEricssonST25iv extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonST25iv', 'ST25iv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonST25iv', 'ST25iv'])) {
             return false;
         }
 

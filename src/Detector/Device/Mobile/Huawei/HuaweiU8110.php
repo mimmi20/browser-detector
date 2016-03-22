@@ -88,7 +88,10 @@ class HuaweiU8110 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['U8110', 'TSP21'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['U8110', 'TSP21'])) {
             return false;
         }
 

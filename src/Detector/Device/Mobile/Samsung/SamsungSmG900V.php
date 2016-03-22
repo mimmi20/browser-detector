@@ -88,7 +88,10 @@ class SamsungSmG900V extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-G900V')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-G900V')) {
             return false;
         }
 

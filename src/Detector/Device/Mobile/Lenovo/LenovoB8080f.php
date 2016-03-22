@@ -88,7 +88,10 @@ class LenovoB8080f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Lenovo B8080-F')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Lenovo B8080-F')) {
             return false;
         }
 

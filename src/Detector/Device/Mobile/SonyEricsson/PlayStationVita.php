@@ -88,7 +88,10 @@ class PlayStationVita extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(['PlayStation Vita'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['PlayStation Vita'])) {
             return true;
         }
 

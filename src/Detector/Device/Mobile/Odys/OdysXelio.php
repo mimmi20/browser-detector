@@ -88,11 +88,17 @@ class OdysXelio extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Xelio')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Xelio')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(
             ['Xelio 10 Pro', 'XELIO7PRO', 'Xelio 7 pro', 'XELIO10EXTREME', 'Xelio 10 Extreme', 'Xelio10Pro']
         )
         ) {

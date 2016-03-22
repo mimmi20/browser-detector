@@ -88,7 +88,10 @@ class HtcLegend extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HTC Legend')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HTC Legend')) {
             return false;
         }
 

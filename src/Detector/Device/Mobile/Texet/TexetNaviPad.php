@@ -88,7 +88,10 @@ class TexetNaviPad extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NaviPad TM-7055HD 3G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NaviPad TM-7055HD 3G')) {
             return false;
         }
 

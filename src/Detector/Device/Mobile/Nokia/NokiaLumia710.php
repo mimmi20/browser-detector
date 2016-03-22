@@ -88,7 +88,10 @@ class NokiaLumia710 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia 710', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('nokia; lumia 710', true)) {
             return false;
         }
 

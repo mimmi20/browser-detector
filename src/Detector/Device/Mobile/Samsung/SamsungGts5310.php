@@ -88,11 +88,17 @@ class SamsungGts5310 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S5310', 'GT-S5310'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S5310', 'GT-S5310'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SAMSUNG-GT-S5310B', 'GT-S5310B'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SAMSUNG-GT-S5310B', 'GT-S5310B'])) {
             return false;
         }
 

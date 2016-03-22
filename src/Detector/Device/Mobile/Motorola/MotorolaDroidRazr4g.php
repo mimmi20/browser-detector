@@ -88,7 +88,10 @@ class MotorolaDroidRazr4g extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DROID RAZR 4G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('DROID RAZR 4G')) {
             return false;
         }
 

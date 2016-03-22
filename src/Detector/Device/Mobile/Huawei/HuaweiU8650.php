@@ -88,7 +88,10 @@ class HuaweiU8650 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiU8650', 'U8650'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiU8650', 'U8650'])) {
             return false;
         }
 

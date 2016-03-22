@@ -88,7 +88,10 @@ class AlcatelOt216 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Alcatel-OT-216')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Alcatel-OT-216')) {
             return false;
         }
 

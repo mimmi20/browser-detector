@@ -88,7 +88,10 @@ class LenovoA288t extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Lenovo A288t', 'Lenovo-A288t'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Lenovo A288t', 'Lenovo-A288t'])) {
             return false;
         }
 

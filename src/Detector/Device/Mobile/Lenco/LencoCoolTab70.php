@@ -88,7 +88,10 @@ class LencoCoolTab70 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains('CoolTab-70')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('CoolTab-70')) {
             return true;
         }
 

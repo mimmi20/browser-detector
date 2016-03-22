@@ -88,11 +88,17 @@ class SonyC6603ExperiaZ extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['C6603', 'Xperia Z'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['C6603', 'Xperia Z'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['C6603v', 'C6903', 'Xperia Z1'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['C6603v', 'C6903', 'Xperia Z1'])) {
             return false;
         }
 

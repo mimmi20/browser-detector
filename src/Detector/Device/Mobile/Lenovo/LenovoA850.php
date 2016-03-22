@@ -88,11 +88,17 @@ class LenovoA850 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A850')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('A850')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('A850+')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('A850+')) {
             return false;
         }
 

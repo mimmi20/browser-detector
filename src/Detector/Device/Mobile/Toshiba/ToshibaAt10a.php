@@ -88,7 +88,10 @@ class ToshibaAt10a extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AT10-A')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('AT10-A')) {
             return false;
         }
 

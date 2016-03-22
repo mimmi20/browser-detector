@@ -88,7 +88,10 @@ class ArchosA70CHT extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A70CHT')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('A70CHT')) {
             return false;
         }
 

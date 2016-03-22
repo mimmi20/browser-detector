@@ -88,7 +88,10 @@ class HtcA810eChaCha extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(
             ['HTC/ChaCha', 'HTC ChaCha', 'HTC/ChaCha/A810e', 'HTC ChaCha A810e', 'HTC_ChaCha_A810e']
         )
         ) {

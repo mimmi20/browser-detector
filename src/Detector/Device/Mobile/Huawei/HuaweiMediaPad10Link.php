@@ -88,11 +88,17 @@ class HuaweiMediaPad10Link extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['mediapad 10 link'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['mediapad 10 link'], true)) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['mediapad 10 link+'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['mediapad 10 link+'], true)) {
             return false;
         }
 

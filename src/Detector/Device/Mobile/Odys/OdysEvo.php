@@ -88,7 +88,10 @@ class OdysEvo extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ODYS-EVO', ' Evo '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ODYS-EVO', ' Evo '])) {
             return false;
         }
 

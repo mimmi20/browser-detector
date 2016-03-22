@@ -88,7 +88,10 @@ class SamsungSchU750 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-U750', 'SCH-U750'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-U750', 'SCH-U750'])) {
             return false;
         }
 

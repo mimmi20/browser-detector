@@ -88,11 +88,17 @@ class NintendoWii extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nintendo Wii')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nintendo Wii')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Nintendo WiiU')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('Nintendo WiiU')) {
             return false;
         }
 

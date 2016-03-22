@@ -88,11 +88,17 @@ class Lgp500 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LG-P500')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('LG-P500')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('LG-P500h')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('LG-P500h')) {
             return false;
         }
 

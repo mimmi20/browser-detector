@@ -88,11 +88,17 @@ class HtcVelocity extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC Velocity', 'HTC/Velocity', 'HTC_Velocity'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC Velocity', 'HTC/Velocity', 'HTC_Velocity'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['Velocity 4G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['Velocity 4G'])) {
             return false;
         }
 

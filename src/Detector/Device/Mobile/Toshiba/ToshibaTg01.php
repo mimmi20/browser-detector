@@ -88,7 +88,10 @@ class ToshibaTg01 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Toshiba/TG01')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Toshiba/TG01')) {
             return false;
         }
 

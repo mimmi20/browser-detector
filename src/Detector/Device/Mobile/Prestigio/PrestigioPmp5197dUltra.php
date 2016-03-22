@@ -88,7 +88,10 @@ class PrestigioPmp5197dUltra extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PrestigioPMP5197DULTRA', 'PMP5197DULTRA'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PrestigioPMP5197DULTRA', 'PMP5197DULTRA'])) {
             return false;
         }
 

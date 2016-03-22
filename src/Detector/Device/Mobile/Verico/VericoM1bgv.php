@@ -88,7 +88,10 @@ class VericoM1bgv extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('UQ785-M1BGV')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('UQ785-M1BGV')) {
             return false;
         }
 

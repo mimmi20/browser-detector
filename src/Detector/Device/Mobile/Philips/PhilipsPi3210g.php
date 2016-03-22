@@ -88,7 +88,10 @@ class PhilipsPi3210g extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PI3210G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PI3210G')) {
             return false;
         }
 

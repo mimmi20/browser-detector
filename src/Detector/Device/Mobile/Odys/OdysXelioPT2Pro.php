@@ -88,7 +88,10 @@ class OdysXelioPT2Pro extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['XelioPT2Pro'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['XelioPT2Pro'])) {
             return false;
         }
 

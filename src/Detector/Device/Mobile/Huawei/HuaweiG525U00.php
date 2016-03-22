@@ -88,7 +88,10 @@ class HuaweiG525U00 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HUAWEI G525-U00'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HUAWEI G525-U00'])) {
             return false;
         }
 

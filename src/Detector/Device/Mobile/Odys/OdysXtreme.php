@@ -88,7 +88,10 @@ class OdysXtreme extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ODYS Xtreme')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ODYS Xtreme')) {
             return false;
         }
 

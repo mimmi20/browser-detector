@@ -88,7 +88,10 @@ class PmediaPmSmart450 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PMSmart450')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PMSmart450')) {
             return false;
         }
 

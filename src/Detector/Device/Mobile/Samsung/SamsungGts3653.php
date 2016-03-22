@@ -88,7 +88,10 @@ class SamsungGts3653 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S3653', 'GT-S3653'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S3653', 'GT-S3653'])) {
             return false;
         }
 

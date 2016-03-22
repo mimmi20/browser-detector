@@ -88,7 +88,10 @@ class ViewSonicViewPad7 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ViewPad7', 'ViewPad-7'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ViewPad7', 'ViewPad-7'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SonyC6833ExperiaZultra extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonC6833', 'SonyC6833', 'C6833'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonC6833', 'SonyC6833', 'C6833'])) {
             return false;
         }
 

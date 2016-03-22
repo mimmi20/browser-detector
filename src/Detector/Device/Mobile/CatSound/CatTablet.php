@@ -88,11 +88,17 @@ class CatTablet extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Cat Tablet'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Cat Tablet'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['Cat Tablet PHOENIX'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['Cat Tablet PHOENIX'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class CubotP9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('CUBOT P9')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('CUBOT P9')) {
             return false;
         }
 

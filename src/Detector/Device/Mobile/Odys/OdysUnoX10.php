@@ -88,7 +88,10 @@ class OdysUnoX10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('UNO_X10')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('UNO_X10')) {
             return false;
         }
 

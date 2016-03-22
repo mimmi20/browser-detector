@@ -88,7 +88,10 @@ class SamsungSghi777 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SGH-I777', 'SGH-I777'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SGH-I777', 'SGH-I777'])) {
             return false;
         }
 

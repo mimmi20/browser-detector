@@ -88,7 +88,10 @@ class AsusEepPadTransformerTf101g extends AbstractDevice implements DeviceHasSpe
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Transformer TF101G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Transformer TF101G')) {
             return false;
         }
 

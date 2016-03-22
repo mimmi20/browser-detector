@@ -88,11 +88,17 @@ class NokiaN9 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaN9')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NokiaN9')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(
             ['NokiaN90', 'NokiaN91', 'NokiaN95', 'NokiaN96', 'NokiaN97', 'NokiaN900']
         )
         ) {

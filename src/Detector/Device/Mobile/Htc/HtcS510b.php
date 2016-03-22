@@ -88,7 +88,10 @@ class HtcS510b extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Rhyme_S510b', 'HTC Rhyme S510b'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Rhyme_S510b', 'HTC Rhyme S510b'])) {
             return false;
         }
 

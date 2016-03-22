@@ -88,7 +88,10 @@ class YuandaoN90fhdrk extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['N90FHDRK'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['N90FHDRK'])) {
             return false;
         }
 

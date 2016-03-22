@@ -88,7 +88,10 @@ class AcerDa241hl extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DA241HL')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('DA241HL')) {
             return false;
         }
 

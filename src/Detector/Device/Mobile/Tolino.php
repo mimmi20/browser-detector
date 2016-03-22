@@ -105,6 +105,6 @@ class Tolino extends AbstractDevice implements DeviceHasChildrenInterface, Devic
      */
     public function detectOs()
     {
-        return new Os\Andro($this->useragent, [])ent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -88,11 +88,17 @@ class AlcatelOt918 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ALCATEL ONE TOUCH 918')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ALCATEL ONE TOUCH 918')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['ALCATEL ONE TOUCH 918D', 'ALCATEL_one_touch_918D'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['ALCATEL ONE TOUCH 918D', 'ALCATEL_one_touch_918D'])) {
             return false;
         }
 

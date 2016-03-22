@@ -88,7 +88,10 @@ class Perfeo7007Hd extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('7007HD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('7007HD')) {
             return false;
         }
 

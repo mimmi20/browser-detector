@@ -88,7 +88,10 @@ class Lgd605 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-D605', 'LGD605'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-D605', 'LGD605'])) {
             return false;
         }
 

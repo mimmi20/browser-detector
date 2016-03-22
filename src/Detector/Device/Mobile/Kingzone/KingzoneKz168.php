@@ -88,7 +88,10 @@ class KingzoneKz168 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('K1 turbo')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('K1 turbo')) {
             return false;
         }
 

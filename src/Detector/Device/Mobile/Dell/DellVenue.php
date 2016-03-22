@@ -88,11 +88,17 @@ class DellVenue extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Dell Venue')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Dell Venue')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['DELL; Venue Pro', 'Venue 7 3730'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['DELL; Venue Pro', 'Venue 7 3730'])) {
             return false;
         }
 

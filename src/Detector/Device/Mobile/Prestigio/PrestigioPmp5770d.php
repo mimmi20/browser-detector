@@ -88,7 +88,10 @@ class PrestigioPmp5770d extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PMP5770D'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PMP5770D'])) {
             return false;
         }
 

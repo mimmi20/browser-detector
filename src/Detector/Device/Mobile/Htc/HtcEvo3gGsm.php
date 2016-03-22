@@ -88,7 +88,10 @@ class HtcEvo3gGsm extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Evo 3D GSM')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Evo 3D GSM')) {
             return false;
         }
 

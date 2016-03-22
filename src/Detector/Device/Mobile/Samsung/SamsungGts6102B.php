@@ -88,7 +88,10 @@ class SamsungGts6102B extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-S6102B')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-S6102B')) {
             return false;
         }
 

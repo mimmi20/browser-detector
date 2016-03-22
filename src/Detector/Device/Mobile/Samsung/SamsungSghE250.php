@@ -88,7 +88,10 @@ class SamsungSghE250 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SAMSUNG-SGH-E250')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SAMSUNG-SGH-E250')) {
             return false;
         }
 

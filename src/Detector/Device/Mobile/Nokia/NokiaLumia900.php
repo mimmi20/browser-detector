@@ -88,7 +88,10 @@ class NokiaLumia900 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('lumia 900', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('lumia 900', true)) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class WolgangAtas40se extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['AT-AS40SE'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['AT-AS40SE'])) {
             return false;
         }
 

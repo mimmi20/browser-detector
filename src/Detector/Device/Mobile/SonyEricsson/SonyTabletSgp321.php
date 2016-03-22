@@ -88,7 +88,10 @@ class SonyTabletSgp321 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SGP321')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SGP321')) {
             return false;
         }
 

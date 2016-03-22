@@ -88,15 +88,24 @@ class WindowsRt8Tablet extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ARM;'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ARM;'])) {
             return false;
         }
 
-        if (!$this->utils->checkIfContains(['Windows NT 6.2', 'Windows NT 6.3'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Windows NT 6.2', 'Windows NT 6.3'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['WPDesktop'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['WPDesktop'])) {
             return false;
         }
 

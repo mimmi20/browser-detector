@@ -88,7 +88,10 @@ class PrestigioPmt3377wi extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PMT3377_Wi'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PMT3377_Wi'])) {
             return false;
         }
 

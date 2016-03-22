@@ -88,7 +88,10 @@ class SamsungSghi780 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SAMSUNG-SGH-i780')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SAMSUNG-SGH-i780')) {
             return false;
         }
 

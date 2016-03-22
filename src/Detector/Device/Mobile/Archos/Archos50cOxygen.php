@@ -88,7 +88,10 @@ class Archos50cOxygen extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Archos 50c Oxygen')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Archos 50c Oxygen')) {
             return false;
         }
 

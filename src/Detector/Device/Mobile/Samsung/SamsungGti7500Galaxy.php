@@ -88,11 +88,17 @@ class SamsungGti7500Galaxy extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Galaxy'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Galaxy'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['Galaxy Nexus', 'Nexus'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['Galaxy Nexus', 'Nexus'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SonyEricssonWT19i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonWT19i', 'WT19i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonWT19i', 'WT19i'])) {
             return false;
         }
 

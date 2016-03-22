@@ -88,11 +88,17 @@ class TabletPc4 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Tablet-PC-4'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Tablet-PC-4'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['INM8002KP'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['INM8002KP'])) {
             return false;
         }
 

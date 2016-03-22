@@ -88,7 +88,10 @@ class DigmaIdjd7 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('iDjD7')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('iDjD7')) {
             return false;
         }
 

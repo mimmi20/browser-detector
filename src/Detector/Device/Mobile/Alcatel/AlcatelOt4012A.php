@@ -90,7 +90,10 @@ class AlcatelOt4012A extends AbstractDevice implements DeviceHasSpecificPlatform
     {
         $firePhones = ['Alcatel-OT-4012A', 'ALCATEL ONE TOUCH 4012A', 'ALCATELOneTouch4012A'];
 
-        if (!$this->utils->checkIfContains($firePhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($firePhones)) {
             return false;
         }
 

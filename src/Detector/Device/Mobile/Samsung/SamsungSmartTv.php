@@ -88,7 +88,10 @@ class SamsungSmartTv extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('smart-tv', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('smart-tv', true)) {
             return false;
         }
 

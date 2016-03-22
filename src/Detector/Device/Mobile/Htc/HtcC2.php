@@ -88,7 +88,10 @@ class HtcC2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HTC C2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HTC C2')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class AmazonKfapwi extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['KFAPWI'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['KFAPWI'])) {
             return false;
         }
 

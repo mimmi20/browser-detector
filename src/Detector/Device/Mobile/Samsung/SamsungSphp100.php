@@ -88,7 +88,10 @@ class SamsungSphp100 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SPH-P100')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SPH-P100')) {
             return false;
         }
 

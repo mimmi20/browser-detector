@@ -88,7 +88,10 @@ class SonyEricssonC902 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SonyEricssonC902')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SonyEricssonC902')) {
             return false;
         }
 

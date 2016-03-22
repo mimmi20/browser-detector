@@ -88,7 +88,10 @@ class VodafoneSmartTabIi7 extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SmartTabII7'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SmartTabII7'])) {
             return false;
         }
 

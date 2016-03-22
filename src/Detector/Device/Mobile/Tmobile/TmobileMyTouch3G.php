@@ -88,7 +88,10 @@ class TmobileMyTouch3G extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('T-Mobile myTouch 3G Slide')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('T-Mobile myTouch 3G Slide')) {
             return false;
         }
 

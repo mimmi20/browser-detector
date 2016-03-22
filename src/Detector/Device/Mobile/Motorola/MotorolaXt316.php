@@ -88,7 +88,10 @@ class MotorolaXt316 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MOT-XT316', 'XT316'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MOT-XT316', 'XT316'])) {
             return false;
         }
 

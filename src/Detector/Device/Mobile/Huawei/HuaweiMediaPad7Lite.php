@@ -88,7 +88,10 @@ class HuaweiMediaPad7Lite extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MediaPad 7 Lite'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MediaPad 7 Lite'])) {
             return false;
         }
 

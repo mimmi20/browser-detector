@@ -88,7 +88,10 @@ class TelsdaT96661 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('T9666-1')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('T9666-1')) {
             return false;
         }
 

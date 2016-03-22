@@ -88,7 +88,10 @@ class Arnova7DG3 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AN7DG3')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('AN7DG3')) {
             return false;
         }
 

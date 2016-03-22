@@ -88,7 +88,10 @@ class CatStarGate extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Cat StarGate'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Cat StarGate'])) {
             return false;
         }
 

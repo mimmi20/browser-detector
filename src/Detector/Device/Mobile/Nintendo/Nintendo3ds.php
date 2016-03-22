@@ -88,7 +88,10 @@ class Nintendo3ds extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nintendo 3DS')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nintendo 3DS')) {
             return false;
         }
 

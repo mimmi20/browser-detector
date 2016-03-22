@@ -88,7 +88,10 @@ class SamsungGtp7300B extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-P7300B', 'GT-P7300B'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-P7300B', 'GT-P7300B'])) {
             return false;
         }
 

@@ -92,7 +92,10 @@ class HtmMtGtA9500 extends AbstractDevice implements DeviceHasSpecificPlatformIn
             'MT-GT-A9500',
         ];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 

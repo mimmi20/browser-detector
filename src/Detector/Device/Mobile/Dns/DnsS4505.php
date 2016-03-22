@@ -88,11 +88,17 @@ class DnsS4505 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('S4505')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('S4505')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('S4505M')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('S4505M')) {
             return false;
         }
 

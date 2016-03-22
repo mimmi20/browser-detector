@@ -88,7 +88,10 @@ class Archos53Platinum extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Archos 53 Platinum')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Archos 53 Platinum')) {
             return false;
         }
 

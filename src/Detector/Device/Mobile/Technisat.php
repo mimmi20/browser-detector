@@ -105,6 +105,6 @@ class Technisat extends AbstractDevice implements DeviceHasChildrenInterface, De
      */
     public function detectOs()
     {
-        return new Os\Unkno($this->useragent, [])ent);
+        return new Os\UnknownOs($this->useragent, []);
     }
 }

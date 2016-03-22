@@ -90,7 +90,10 @@ class TrekStorBreeze10Quad extends AbstractDevice implements DeviceHasSpecificPl
     {
         $trekStorPhones = ['breeze 10.1 quad'];
 
-        if ($this->utils->checkIfContains($trekStorPhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($trekStorPhones)) {
             return true;
         }
 

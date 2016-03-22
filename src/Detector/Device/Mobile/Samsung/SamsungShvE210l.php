@@ -88,7 +88,10 @@ class SamsungShvE210l extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SHV-E210L')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SHV-E210L')) {
             return false;
         }
 

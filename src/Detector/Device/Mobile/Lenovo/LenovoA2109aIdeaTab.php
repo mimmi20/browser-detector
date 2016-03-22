@@ -88,7 +88,10 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['IdeaTab', 'A2109A'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['IdeaTab', 'A2109A'])) {
             return false;
         }
 
@@ -104,7 +107,10 @@ class LenovoA2109aIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
             'A1000L-F',
         ];
 
-        if ($this->utils->checkIfContains($otherLenovoTabs)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($otherLenovoTabs)) {
             return false;
         }
 

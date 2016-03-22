@@ -88,7 +88,10 @@ class HtcOneV extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC One V', 'HTC_One_V'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC One V', 'HTC_One_V'])) {
             return false;
         }
 

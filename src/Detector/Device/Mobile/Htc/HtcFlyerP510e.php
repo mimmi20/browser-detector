@@ -88,7 +88,10 @@ class HtcFlyerP510e extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Flyer_P510e', 'HTC Flyer P510e'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Flyer_P510e', 'HTC Flyer P510e'])) {
             return false;
         }
 

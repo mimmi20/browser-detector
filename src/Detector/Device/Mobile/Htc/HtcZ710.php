@@ -95,7 +95,10 @@ class HtcZ710 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
             'HTC_Sensation',
         ];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 
@@ -118,7 +121,10 @@ class HtcZ710 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
             'Sensation_Z710e',
         ];
 
-        if ($this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($phones)) {
             return false;
         }
 

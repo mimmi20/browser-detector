@@ -88,7 +88,10 @@ class SamsungSghT528g extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SGH-T528g')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SGH-T528g')) {
             return false;
         }
 

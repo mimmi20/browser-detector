@@ -88,7 +88,10 @@ class MotorolaMz608 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAll(['XOOM 2 ME', 'MZ608'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContainsAll(['XOOM 2 ME', 'MZ608'])) {
             return false;
         }
 

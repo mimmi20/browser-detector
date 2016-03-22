@@ -88,7 +88,10 @@ class LenovoA3300hv extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('A3300-HV')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('A3300-HV')) {
             return false;
         }
 

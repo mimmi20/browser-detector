@@ -96,7 +96,10 @@ class HtcX315eSensationXlBeats extends AbstractDevice implements DeviceHasSpecif
             'HTC_Runnymede',
         ];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 

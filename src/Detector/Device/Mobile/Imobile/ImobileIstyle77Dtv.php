@@ -88,7 +88,10 @@ class ImobileIstyle77Dtv extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('i-STYLE 7.7 DTV')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('i-STYLE 7.7 DTV')) {
             return false;
         }
 

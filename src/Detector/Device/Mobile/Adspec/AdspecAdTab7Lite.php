@@ -88,7 +88,10 @@ class AdspecAdTab7Lite extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AdTab 7 Lite')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('AdTab 7 Lite')) {
             return false;
         }
 

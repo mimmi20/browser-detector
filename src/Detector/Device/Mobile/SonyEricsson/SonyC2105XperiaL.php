@@ -88,11 +88,17 @@ class SonyC2105XperiaL extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonC2105', 'SonyC2105', 'C2105'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonC2105', 'SonyC2105', 'C2105'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonC2105v', 'SonyC2105v', 'C2105v'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonC2105v', 'SonyC2105v', 'C2105v'])) {
             return false;
         }
 

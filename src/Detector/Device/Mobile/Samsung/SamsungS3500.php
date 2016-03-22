@@ -88,7 +88,10 @@ class SamsungS3500 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SAMSUNG-S3500')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SAMSUNG-S3500')) {
             return false;
         }
 

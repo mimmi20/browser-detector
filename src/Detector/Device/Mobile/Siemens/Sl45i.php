@@ -88,7 +88,10 @@ class Sl45i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SL45i')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SL45i')) {
             return false;
         }
 

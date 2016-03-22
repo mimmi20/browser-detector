@@ -88,7 +88,10 @@ class SamsungGtp6800 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-P6800', 'GT-P6800'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-P6800', 'GT-P6800'])) {
             return false;
         }
 

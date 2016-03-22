@@ -88,7 +88,10 @@ class SamsungShwM930bst extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SHW-M930BST')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SHW-M930BST')) {
             return false;
         }
 

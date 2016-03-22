@@ -88,11 +88,17 @@ class HtcX515 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_X515', 'APX515CKT'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_X515', 'APX515CKT'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['HTC_X515E'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['HTC_X515E'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class AlcatelOt6010D extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Alcatel-OT-6010D', 'ALCATEL ONE TOUCH 6010D'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Alcatel-OT-6010D', 'ALCATEL ONE TOUCH 6010D'])) {
             return false;
         }
 

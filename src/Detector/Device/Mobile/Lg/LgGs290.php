@@ -88,7 +88,10 @@ class LgGs290 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-GS290', 'LG/GS290'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-GS290', 'LG/GS290'])) {
             return false;
         }
 

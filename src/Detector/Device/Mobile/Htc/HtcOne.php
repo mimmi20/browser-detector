@@ -88,7 +88,10 @@ class HtcOne extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC One', 'HTC_One', 'HTC/One'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC One', 'HTC_One', 'HTC/One'])) {
             return false;
         }
 
@@ -104,7 +107,10 @@ class HtcOne extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
             'HTC One_M8',
         ];
 
-        if ($this->utils->checkIfContains($specialOne)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($specialOne)) {
             return false;
         }
 

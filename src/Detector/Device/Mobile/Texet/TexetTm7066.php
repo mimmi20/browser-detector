@@ -88,7 +88,10 @@ class TexetTm7066 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('X-pad LITE 7.1')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('X-pad LITE 7.1')) {
             return false;
         }
 

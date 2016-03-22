@@ -88,7 +88,10 @@ class HuaweiVodafone845 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Vodafone 845'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Vodafone 845'])) {
             return false;
         }
 

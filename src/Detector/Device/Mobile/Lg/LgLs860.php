@@ -88,7 +88,10 @@ class LgLs860 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-LS860', 'LS860'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-LS860', 'LS860'])) {
             return false;
         }
 

@@ -88,11 +88,17 @@ class SamsungSmN900 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-N900')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-N900')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SM-N900A', 'SM-N9005', 'SM-N900V', 'SM-N9008V'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SM-N900A', 'SM-N9005', 'SM-N900V', 'SM-N9008V'])) {
             return false;
         }
 

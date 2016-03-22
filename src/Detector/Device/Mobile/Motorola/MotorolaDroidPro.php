@@ -88,7 +88,10 @@ class MotorolaDroidPro extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' DROID Pro ')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(' DROID Pro ')) {
             return false;
         }
 

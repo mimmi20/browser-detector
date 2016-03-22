@@ -88,7 +88,10 @@ class Lgd300 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-D300', 'LGD300'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-D300', 'LGD300'])) {
             return false;
         }
 

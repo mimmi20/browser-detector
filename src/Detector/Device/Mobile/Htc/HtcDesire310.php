@@ -88,7 +88,10 @@ class HtcDesire310 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Desire_310', 'Desire 310'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Desire_310', 'Desire 310'])) {
             return false;
         }
 

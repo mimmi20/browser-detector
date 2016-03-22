@@ -88,7 +88,10 @@ class ShwM380K extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SHW-M380K')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SHW-M380K')) {
             return false;
         }
 

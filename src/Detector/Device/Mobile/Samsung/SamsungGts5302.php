@@ -88,11 +88,17 @@ class SamsungGts5302 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S5302', 'GT-S5302'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S5302', 'GT-S5302'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SAMSUNG-GT-S5302B', 'GT-S5302B'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SAMSUNG-GT-S5302B', 'GT-S5302B'])) {
             return false;
         }
 

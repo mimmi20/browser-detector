@@ -88,7 +88,10 @@ class PandigitalNovel extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['pandigitalopc1', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['pandigitalopc1', 'SL20_20101210_B_PD_INX7E_ENG_6410POP'])) {
             return false;
         }
 

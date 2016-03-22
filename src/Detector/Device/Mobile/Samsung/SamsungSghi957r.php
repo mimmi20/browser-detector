@@ -88,7 +88,10 @@ class SamsungSghi957r extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SGH-I957R'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SGH-I957R'])) {
             return false;
         }
 

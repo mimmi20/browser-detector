@@ -88,11 +88,17 @@ class AsusTf101 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Transformer TF101')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Transformer TF101')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Transformer TF101G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('Transformer TF101G')) {
             return false;
         }
 

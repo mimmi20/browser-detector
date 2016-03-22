@@ -88,7 +88,10 @@ class Vodafone975n extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Vodafone 975N'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Vodafone 975N'])) {
             return false;
         }
 

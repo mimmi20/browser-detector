@@ -88,11 +88,17 @@ class ZteBaseLutea extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['base lutea', 'blade'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['base lutea', 'blade'], true)) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('base lutea 2', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('base lutea 2', true)) {
             return false;
         }
 

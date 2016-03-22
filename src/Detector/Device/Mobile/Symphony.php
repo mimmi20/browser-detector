@@ -105,6 +105,6 @@ class Symphony extends AbstractDevice implements DeviceHasChildrenInterface, Dev
      */
     public function detectOs()
     {
-        return new Os\Andro($this->useragent, [])ent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -88,7 +88,10 @@ class LgGd350 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-GD350', 'LG/GD350'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-GD350', 'LG/GD350'])) {
             return false;
         }
 

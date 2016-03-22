@@ -88,7 +88,10 @@ class SonyEricssonJ10i2 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SonyEricssonJ10i2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SonyEricssonJ10i2')) {
             return false;
         }
 

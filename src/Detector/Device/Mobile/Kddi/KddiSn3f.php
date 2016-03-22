@@ -88,7 +88,10 @@ class KddiSn3f extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('KDDI-SN3F')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('KDDI-SN3F')) {
             return false;
         }
 

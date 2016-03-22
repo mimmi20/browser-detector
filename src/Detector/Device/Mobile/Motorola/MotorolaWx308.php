@@ -88,7 +88,10 @@ class MotorolaWx308 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Mot-WX308', 'WX308'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Mot-WX308', 'WX308'])) {
             return false;
         }
 

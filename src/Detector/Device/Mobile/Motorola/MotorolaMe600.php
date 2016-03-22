@@ -88,7 +88,10 @@ class MotorolaMe600 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['motome600', 'me600'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['motome600', 'me600'], true)) {
             return false;
         }
 

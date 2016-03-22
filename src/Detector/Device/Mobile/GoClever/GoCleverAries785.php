@@ -88,7 +88,10 @@ class GoCleverAries785 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARIES_785')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ARIES_785')) {
             return false;
         }
 

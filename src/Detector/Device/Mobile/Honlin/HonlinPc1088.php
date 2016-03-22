@@ -88,7 +88,10 @@ class HonlinPc1088 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HL-PC1088'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HL-PC1088'])) {
             return false;
         }
 

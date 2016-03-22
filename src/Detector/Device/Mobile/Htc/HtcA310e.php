@@ -97,7 +97,10 @@ class HtcA310e extends AbstractDevice implements DeviceHasSpecificPlatformInterf
             'HTC Explorer A310e',
         ];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 

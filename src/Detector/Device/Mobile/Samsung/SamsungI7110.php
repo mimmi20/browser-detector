@@ -88,7 +88,10 @@ class SamsungI7110 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SamsungI7110', 'I7110'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SamsungI7110', 'I7110'])) {
             return false;
         }
 

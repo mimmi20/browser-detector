@@ -88,11 +88,17 @@ class SamsungGti9023 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-I9023')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-I9023')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('GT-I9023P')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('GT-I9023P')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class LgL160l extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-L160L', 'L160L'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-L160L', 'L160L'])) {
             return false;
         }
 

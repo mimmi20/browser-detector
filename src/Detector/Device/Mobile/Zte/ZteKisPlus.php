@@ -88,7 +88,10 @@ class ZteKisPlus extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['KIS PLUS'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['KIS PLUS'])) {
             return false;
         }
 

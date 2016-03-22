@@ -88,7 +88,10 @@ class ZteBladeQMaxi extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['blade q maxi'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['blade q maxi'], true)) {
             return false;
         }
 

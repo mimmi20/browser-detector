@@ -88,7 +88,10 @@ class GigabyteGsmartt4 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GSmart_T4')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GSmart_T4')) {
             return false;
         }
 

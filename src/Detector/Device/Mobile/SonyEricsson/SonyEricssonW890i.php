@@ -88,7 +88,10 @@ class SonyEricssonW890i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonW890i', 'W890i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonW890i', 'W890i'])) {
             return false;
         }
 

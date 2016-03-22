@@ -88,7 +88,10 @@ class QumoQuest450 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('QUEST_450')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('QUEST_450')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SprintPpc6700 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Sprint:PPC-6700')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Sprint:PPC-6700')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class HtcOneM8 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_One_M8', 'HTC One_M8'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_One_M8', 'HTC One_M8'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class HtcSensation4g extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Sensation_4G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Sensation_4G'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class Arnova101G4 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARNOVA 101 G4')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ARNOVA 101 G4')) {
             return false;
         }
 

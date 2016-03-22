@@ -88,7 +88,10 @@ class AmazonFirePhone extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SD4930UR'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SD4930UR'])) {
             return false;
         }
 

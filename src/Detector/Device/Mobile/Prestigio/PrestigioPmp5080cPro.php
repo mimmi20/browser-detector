@@ -88,7 +88,10 @@ class PrestigioPmp5080cPro extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PrestigioPMP5080CPRO', 'PMP5080CPRO'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PrestigioPMP5080CPRO', 'PMP5080CPRO'])) {
             return false;
         }
 

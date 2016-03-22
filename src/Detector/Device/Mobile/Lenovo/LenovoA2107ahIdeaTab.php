@@ -88,7 +88,10 @@ class LenovoA2107ahIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['IdeaTab A2107A-H'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['IdeaTab A2107A-H'])) {
             return false;
         }
 

@@ -88,11 +88,17 @@ class SamsungGtp1000 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-P1000')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-P1000')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('GT-P1000N')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('GT-P1000N')) {
             return false;
         }
 

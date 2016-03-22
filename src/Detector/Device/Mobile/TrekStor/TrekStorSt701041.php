@@ -90,7 +90,10 @@ class TrekStorSt701041 extends AbstractDevice implements DeviceHasSpecificPlatfo
     {
         $trekStorPhones = ['ST701041', 'SurfTab_7.0'];
 
-        if ($this->utils->checkIfContains($trekStorPhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($trekStorPhones)) {
             return true;
         }
 

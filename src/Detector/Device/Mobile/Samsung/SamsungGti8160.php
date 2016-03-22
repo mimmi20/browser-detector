@@ -88,11 +88,17 @@ class SamsungGti8160 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-I8160')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-I8160')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('GT-I8160P')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('GT-I8160P')) {
             return false;
         }
 

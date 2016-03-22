@@ -88,7 +88,10 @@ class Archos40Cesium extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ARCHOS; 40 Cesium'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ARCHOS; 40 Cesium'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class MdLifeE10316 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LIFETAB_E10316')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('LIFETAB_E10316')) {
             return false;
         }
 

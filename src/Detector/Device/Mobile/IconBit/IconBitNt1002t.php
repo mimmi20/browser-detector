@@ -88,7 +88,10 @@ class IconBitNt1002t extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nt-1002t', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('nt-1002t', true)) {
             return false;
         }
 

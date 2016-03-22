@@ -88,7 +88,10 @@ class PrestigioPmp7079d3gQuad extends AbstractDevice implements DeviceHasSpecifi
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PMP7079D3G_QUAD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PMP7079D3G_QUAD')) {
             return false;
         }
 

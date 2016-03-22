@@ -88,7 +88,10 @@ class HuaweiVodafone858 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiVodafone 858', 'Vodafone 858'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiVodafone 858', 'Vodafone 858'])) {
             return false;
         }
 

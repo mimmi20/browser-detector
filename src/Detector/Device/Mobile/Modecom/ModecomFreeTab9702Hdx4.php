@@ -88,7 +88,10 @@ class ModecomFreeTab9702Hdx4 extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FreeTAB 9702 HD X4')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FreeTAB 9702 HD X4')) {
             return false;
         }
 

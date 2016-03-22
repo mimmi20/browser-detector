@@ -88,7 +88,10 @@ class HtcSmartF3188 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Smart_F3188'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Smart_F3188'])) {
             return false;
         }
 

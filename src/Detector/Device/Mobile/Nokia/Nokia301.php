@@ -88,11 +88,17 @@ class Nokia301 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nokia301')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nokia301')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Nokia301.1')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('Nokia301.1')) {
             return false;
         }
 

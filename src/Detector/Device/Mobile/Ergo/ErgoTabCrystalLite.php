@@ -88,7 +88,10 @@ class ErgoTabCrystalLite extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Tab Crystal Lite')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Tab Crystal Lite')) {
             return false;
         }
 

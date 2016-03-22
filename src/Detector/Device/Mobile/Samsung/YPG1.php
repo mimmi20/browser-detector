@@ -88,7 +88,10 @@ class YPG1 extends AbstractDevice implements DeviceHasSpecificPlatformInterface,
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('YP-G1')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('YP-G1')) {
             return false;
         }
 

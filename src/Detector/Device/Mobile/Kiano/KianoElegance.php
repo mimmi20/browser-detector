@@ -88,11 +88,17 @@ class KianoElegance extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Elegance')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Elegance')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Elegance 8 3G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('Elegance 8 3G')) {
             return false;
         }
 

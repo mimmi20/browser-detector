@@ -88,7 +88,10 @@ class SamsungSmT530nu extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-T530NU')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-T530NU')) {
             return false;
         }
 

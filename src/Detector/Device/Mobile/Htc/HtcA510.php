@@ -88,13 +88,19 @@ class HtcA510 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC Wildfire S', 'HTC/WildfireS', 'HTC_WildfireS', 'Wildfire S'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC Wildfire S', 'HTC/WildfireS', 'HTC_WildfireS', 'Wildfire S'])) {
             return false;
         }
 
         $otherHtc = ['HTC Wildfire S A510e', 'HTC_WildfireS-orange-LS', 'Wildfire S A510e', 'HTC_WildfireS_A510e'];
 
-        if ($this->utils->checkIfContains($otherHtc)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($otherHtc)) {
             return false;
         }
 

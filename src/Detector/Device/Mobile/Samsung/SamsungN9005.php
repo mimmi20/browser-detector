@@ -88,11 +88,17 @@ class SamsungN9005 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SamsungN9005', 'N9005'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SamsungN9005', 'N9005'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('SM-N9005')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('SM-N9005')) {
             return false;
         }
 

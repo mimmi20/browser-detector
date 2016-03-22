@@ -88,7 +88,10 @@ class Archos80Xenon extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Archos 80 Xenon')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Archos 80 Xenon')) {
             return false;
         }
 

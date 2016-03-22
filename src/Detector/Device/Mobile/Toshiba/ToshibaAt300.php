@@ -88,11 +88,17 @@ class ToshibaAt300 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AT300')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('AT300')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('AT300SE')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('AT300SE')) {
             return false;
         }
 

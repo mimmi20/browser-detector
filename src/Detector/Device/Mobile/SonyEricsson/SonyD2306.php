@@ -88,7 +88,10 @@ class SonyD2306 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonD2306', 'SonyD2306', 'D2306'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonD2306', 'SonyD2306', 'D2306'])) {
             return false;
         }
 

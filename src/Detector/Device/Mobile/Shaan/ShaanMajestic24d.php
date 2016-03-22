@@ -88,7 +88,10 @@ class ShaanMajestic24d extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('iBall Majestic 2.4D')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('iBall Majestic 2.4D')) {
             return false;
         }
 

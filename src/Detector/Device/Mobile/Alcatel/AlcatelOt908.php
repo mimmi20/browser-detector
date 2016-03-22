@@ -88,7 +88,10 @@ class AlcatelOt908 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ALCATEL ONE TOUCH 908')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ALCATEL ONE TOUCH 908')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SamsungSphd710bst extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SPH-D710BST')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SPH-D710BST')) {
             return false;
         }
 

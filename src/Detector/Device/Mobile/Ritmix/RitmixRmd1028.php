@@ -88,7 +88,10 @@ class RitmixRmd1028 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('RMD-1028')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('RMD-1028')) {
             return false;
         }
 

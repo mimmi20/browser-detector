@@ -88,7 +88,10 @@ class SamsungGalaxyNexus10 extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Galaxy Nexus 10', 'Nexus 10'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Galaxy Nexus 10', 'Nexus 10'])) {
             return false;
         }
 

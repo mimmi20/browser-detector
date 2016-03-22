@@ -88,7 +88,10 @@ class OdysNeoS8Plus extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ADM816KC'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ADM816KC'])) {
             return false;
         }
 

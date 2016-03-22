@@ -88,7 +88,10 @@ class SonyEricssonMT11i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonMT11i', 'MT11i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonMT11i', 'MT11i'])) {
             return false;
         }
 

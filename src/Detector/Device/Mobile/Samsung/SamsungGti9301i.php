@@ -88,7 +88,10 @@ class SamsungGti9301i extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['GT-I9301I', 'GT-i9301I', 'I9301I', 'GT-l9301I'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['GT-I9301I', 'GT-i9301I', 'I9301I', 'GT-l9301I'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SamsungSchI5354G extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-I535', 'SCH-I535'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-I535', 'SCH-I535'])) {
             return false;
         }
 

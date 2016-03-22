@@ -88,7 +88,10 @@ class SonyEricssonSo03c extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SO-03C')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SO-03C')) {
             return false;
         }
 

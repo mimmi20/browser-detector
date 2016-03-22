@@ -88,7 +88,10 @@ class ReellexTab97e01 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TAB-97E-01')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TAB-97E-01')) {
             return false;
         }
 

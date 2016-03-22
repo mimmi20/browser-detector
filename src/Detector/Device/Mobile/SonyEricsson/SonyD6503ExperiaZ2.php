@@ -88,7 +88,10 @@ class SonyD6503ExperiaZ2 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonD6503', 'SonyD6503', 'D6503'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonD6503', 'SonyD6503', 'D6503'])) {
             return false;
         }
 

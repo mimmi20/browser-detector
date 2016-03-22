@@ -88,11 +88,17 @@ class SamsungSghT959 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SGH-T959')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SGH-T959')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('SGH-T959V')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('SGH-T959V')) {
             return false;
         }
 

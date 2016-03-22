@@ -88,11 +88,17 @@ class NokiaE7 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaE7')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NokiaE7')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['NokiaE71', 'NokiaE72', 'NokiaE75', 'NokiaE7-'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['NokiaE71', 'NokiaE72', 'NokiaE75', 'NokiaE7-'])) {
             return false;
         }
 

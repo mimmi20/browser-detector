@@ -88,7 +88,10 @@ class NgmDynamicRacingGp extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NGM Dynamic Racing')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NGM Dynamic Racing')) {
             return false;
         }
 

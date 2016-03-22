@@ -88,11 +88,17 @@ class SamsungGts6312 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-S6312')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-S6312')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('GT-S6312N')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('GT-S6312N')) {
             return false;
         }
 

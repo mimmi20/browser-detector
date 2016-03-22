@@ -88,7 +88,10 @@ class ArchosFamilyPad2 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ARCHOS FAMILYPAD 2'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ARCHOS FAMILYPAD 2'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class MdLifetabE7316 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LIFETAB_E7316')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('LIFETAB_E7316')) {
             return false;
         }
 

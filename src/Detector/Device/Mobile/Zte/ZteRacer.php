@@ -88,11 +88,17 @@ class ZteRacer extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['racer'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['racer'], true)) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['racerii'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['racerii'], true)) {
             return false;
         }
 

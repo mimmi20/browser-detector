@@ -88,7 +88,10 @@ class HtcX515m extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(
             [
                 'HTC/EVO_3D',
                 'HTC EVO 3D',

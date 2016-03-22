@@ -88,7 +88,10 @@ class PearlTouchletX7g extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' X7G ')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(' X7G ')) {
             return false;
         }
 

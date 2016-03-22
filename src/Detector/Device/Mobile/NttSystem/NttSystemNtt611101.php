@@ -88,7 +88,10 @@ class NttSystemNtt611101 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['NTT 611'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['NTT 611'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class PhicommFws610 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['FWS610_EU'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['FWS610_EU'])) {
             return false;
         }
 

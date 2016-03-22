@@ -88,7 +88,10 @@ class PrestigioPmp3074bru extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PMP3074BRU')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PMP3074BRU')) {
             return false;
         }
 

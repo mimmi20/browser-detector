@@ -88,7 +88,10 @@ class HtcVision extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC Vision', 'HTC/Vision', 'HTC_Vision', 'Vision-T-Mobile-G2'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC Vision', 'HTC/Vision', 'HTC_Vision', 'Vision-T-Mobile-G2'])) {
             return false;
         }
 

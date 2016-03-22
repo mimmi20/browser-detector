@@ -88,7 +88,10 @@ class SonyEricssonW715v extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonW715v', 'W715v'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonW715v', 'W715v'])) {
             return false;
         }
 

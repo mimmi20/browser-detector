@@ -88,11 +88,17 @@ class AsusTf300T extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ASUS Transformer Pad TF300T', 'TF300T'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ASUS Transformer Pad TF300T', 'TF300T'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['ASUS Transformer Pad TF300TG', 'ASUS Transformer Pad TF300TL'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['ASUS Transformer Pad TF300TG', 'ASUS Transformer Pad TF300TL'])) {
             return false;
         }
 

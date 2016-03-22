@@ -88,7 +88,10 @@ class PantechIma830l extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('IM-A830L')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('IM-A830L')) {
             return false;
         }
 

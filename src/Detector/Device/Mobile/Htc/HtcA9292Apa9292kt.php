@@ -88,11 +88,17 @@ class HtcA9292Apa9292kt extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['APA9292KT'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['APA9292KT'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Sprint APA9292KT')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('Sprint APA9292KT')) {
             return false;
         }
 

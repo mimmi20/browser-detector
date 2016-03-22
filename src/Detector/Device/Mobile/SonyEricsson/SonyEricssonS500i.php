@@ -88,7 +88,10 @@ class SonyEricssonS500i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonS500i', 'S500i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonS500i', 'S500i'])) {
             return false;
         }
 

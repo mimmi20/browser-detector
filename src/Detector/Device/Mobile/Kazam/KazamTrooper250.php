@@ -88,7 +88,10 @@ class KazamTrooper250 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('KAZAM Trooper2 50')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('KAZAM Trooper2 50')) {
             return false;
         }
 

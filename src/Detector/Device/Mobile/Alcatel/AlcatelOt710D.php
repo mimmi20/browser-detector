@@ -88,7 +88,10 @@ class AlcatelOt710D extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Alcatel-OT-710D')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Alcatel-OT-710D')) {
             return false;
         }
 

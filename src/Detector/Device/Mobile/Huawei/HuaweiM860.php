@@ -88,7 +88,10 @@ class HuaweiM860 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiM860', 'HUAWEI-M860'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiM860', 'HUAWEI-M860'])) {
             return false;
         }
 

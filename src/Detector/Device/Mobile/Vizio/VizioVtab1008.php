@@ -88,7 +88,10 @@ class VizioVtab1008 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('VTAB1008')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('VTAB1008')) {
             return false;
         }
 

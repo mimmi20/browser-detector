@@ -88,7 +88,10 @@ class SonyEricssonW995 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonW995', 'W995'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonW995', 'W995'])) {
             return false;
         }
 

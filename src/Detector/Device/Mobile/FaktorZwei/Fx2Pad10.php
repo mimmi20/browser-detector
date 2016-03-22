@@ -88,7 +88,10 @@ class Fx2Pad10 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FX2-PAD10')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FX2-PAD10')) {
             return false;
         }
 

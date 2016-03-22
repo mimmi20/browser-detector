@@ -88,7 +88,10 @@ class SamsungR631 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-R631', 'sam-r631'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-R631', 'sam-r631'])) {
             return false;
         }
 

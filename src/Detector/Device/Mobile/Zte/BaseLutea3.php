@@ -88,7 +88,10 @@ class BaseLutea3 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('base_lutea_3', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('base_lutea_3', true)) {
             return false;
         }
 

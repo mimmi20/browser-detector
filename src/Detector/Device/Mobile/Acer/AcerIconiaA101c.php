@@ -88,7 +88,10 @@ class AcerIconiaA101c extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Iconia A101C', 'A101C'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Iconia A101C', 'A101C'])) {
             return false;
         }
 

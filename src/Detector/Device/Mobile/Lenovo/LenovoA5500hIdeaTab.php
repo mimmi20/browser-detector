@@ -88,7 +88,10 @@ class LenovoA5500hIdeaTab extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['A5500-H'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['A5500-H'])) {
             return false;
         }
 

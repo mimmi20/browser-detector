@@ -88,7 +88,10 @@ class HtcOneXl extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC One XL', 'HTC_One_XL', 'HTC/One_XL'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC One XL', 'HTC_One_XL', 'HTC/One_XL'])) {
             return false;
         }
 

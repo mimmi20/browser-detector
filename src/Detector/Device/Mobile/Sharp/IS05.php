@@ -88,7 +88,10 @@ class IS05 extends AbstractDevice implements DeviceHasSpecificPlatformInterface,
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('IS05')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('IS05')) {
             return false;
         }
 

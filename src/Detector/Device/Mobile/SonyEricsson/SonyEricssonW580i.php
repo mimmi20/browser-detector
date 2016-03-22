@@ -88,7 +88,10 @@ class SonyEricssonW580i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonW580i', 'W580i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonW580i', 'W580i'])) {
             return false;
         }
 

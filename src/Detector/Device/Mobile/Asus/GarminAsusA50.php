@@ -88,7 +88,10 @@ class GarminAsusA50 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Garmin-Asus A50'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Garmin-Asus A50'])) {
             return false;
         }
 

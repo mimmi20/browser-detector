@@ -88,11 +88,17 @@ class RimTablet extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('RIM Tablet')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('RIM Tablet')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('PlayBook')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('PlayBook')) {
             return false;
         }
 

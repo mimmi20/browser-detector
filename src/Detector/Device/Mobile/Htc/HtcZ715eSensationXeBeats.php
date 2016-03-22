@@ -101,7 +101,10 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasSpecif
             'SensationXE_Beats_Z715e',
         ];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 

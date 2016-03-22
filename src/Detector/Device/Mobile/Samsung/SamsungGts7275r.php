@@ -88,7 +88,10 @@ class SamsungGts7275r extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['GT-S7275R'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['GT-S7275R'])) {
             return false;
         }
 

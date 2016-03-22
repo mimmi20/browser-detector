@@ -88,7 +88,10 @@ class ZekiTbdc1093 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TBDC1093')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TBDC1093')) {
             return false;
         }
 

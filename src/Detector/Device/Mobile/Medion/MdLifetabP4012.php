@@ -88,7 +88,10 @@ class MdLifetabP4012 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MEDION LIFE P4012')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MEDION LIFE P4012')) {
             return false;
         }
 

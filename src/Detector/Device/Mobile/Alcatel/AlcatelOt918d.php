@@ -94,7 +94,10 @@ class AlcatelOt918d extends AbstractDevice implements DeviceHasSpecificPlatformI
             'ALCATEL_OT_918D',
         ];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 

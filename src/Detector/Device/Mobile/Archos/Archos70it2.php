@@ -88,7 +88,10 @@ class Archos70it2 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARCHOS 70it2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ARCHOS 70it2')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class ShiruSamurai10 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SAMURAI10')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SAMURAI10')) {
             return false;
         }
 

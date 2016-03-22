@@ -88,7 +88,10 @@ class TmobileMdaCompact3 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MDA compact/3')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MDA compact/3')) {
             return false;
         }
 

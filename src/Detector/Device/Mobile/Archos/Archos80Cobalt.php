@@ -88,7 +88,10 @@ class Archos80Cobalt extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARCHOS 80 COBALT')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ARCHOS 80 COBALT')) {
             return false;
         }
 

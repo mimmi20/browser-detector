@@ -88,7 +88,10 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HUAWEI MediaPad', 'MediaPad'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HUAWEI MediaPad', 'MediaPad'])) {
             return false;
         }
 
@@ -100,7 +103,10 @@ class HuaweiMediaPad extends AbstractDevice implements DeviceHasSpecificPlatform
             'mediapad 7 classic',
         ];
 
-        if ($this->utils->checkIfContains($otherMediaPads, true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($otherMediaPads, true)) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class HtcC110eRadar extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC; Radar C110e', 'HTC; Radar; Orange'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC; Radar C110e', 'HTC; Radar; Orange'])) {
             return false;
         }
 

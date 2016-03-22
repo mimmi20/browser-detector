@@ -88,7 +88,10 @@ class SonyEricssonK800i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('sonyericssonk800i', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('sonyericssonk800i', true)) {
             return false;
         }
 

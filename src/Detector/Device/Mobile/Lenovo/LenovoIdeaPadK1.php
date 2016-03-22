@@ -88,7 +88,10 @@ class LenovoIdeaPadK1 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Ideapad K1', ' K1 '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Ideapad K1', ' K1 '])) {
             return false;
         }
 

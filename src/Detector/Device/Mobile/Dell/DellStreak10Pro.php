@@ -88,7 +88,10 @@ class DellStreak10Pro extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Dell Streak 10 Pro')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Dell Streak 10 Pro')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SamsungGts5750eOrange extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SAMSUNG-GT-S5750E-Orange')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SAMSUNG-GT-S5750E-Orange')) {
             return false;
         }
 

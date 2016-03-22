@@ -88,7 +88,10 @@ class SamsungSchI545 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SCH-I545'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SCH-I545'])) {
             return false;
         }
 

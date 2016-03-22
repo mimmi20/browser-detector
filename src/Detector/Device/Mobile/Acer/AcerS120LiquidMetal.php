@@ -88,7 +88,10 @@ class AcerS120LiquidMetal extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Liquid MT', 'Liquid Metal'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Liquid MT', 'Liquid Metal'])) {
             return false;
         }
 

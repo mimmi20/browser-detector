@@ -88,7 +88,10 @@ class GoCleverTerra101 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TERRA_101')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TERRA_101')) {
             return false;
         }
 

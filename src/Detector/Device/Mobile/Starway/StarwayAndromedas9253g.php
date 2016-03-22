@@ -88,7 +88,10 @@ class StarwayAndromedas9253g extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Andromeda S925 3G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Andromeda S925 3G')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class Arnova7BG2DT extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AN7BG2DT')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('AN7BG2DT')) {
             return false;
         }
 

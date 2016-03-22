@@ -88,7 +88,10 @@ class LgEve extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-Eve', 'LG Eve'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-Eve', 'LG Eve'])) {
             return false;
         }
 

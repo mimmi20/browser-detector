@@ -88,11 +88,17 @@ class NokiaN8 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaN8')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NokiaN8')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['NokiaN81', 'NokiaN82', 'NokiaN85', 'NokiaN86', 'NokiaN8-'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['NokiaN81', 'NokiaN82', 'NokiaN85', 'NokiaN86', 'NokiaN8-'])) {
             return false;
         }
 

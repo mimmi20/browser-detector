@@ -88,11 +88,17 @@ class SonyEricssonSK17i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonSK17i', 'SK17i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonSK17i', 'SK17i'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonSK17iv', 'SK17iv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonSK17iv', 'SK17iv'])) {
             return false;
         }
 

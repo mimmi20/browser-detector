@@ -88,11 +88,17 @@ class SamsungSmG350 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-G350')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-G350')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('SM-G3502L')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('SM-G3502L')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SonyD2005 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonD2005', 'SonyD2005', 'D2005'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonD2005', 'SonyD2005', 'D2005'])) {
             return false;
         }
 

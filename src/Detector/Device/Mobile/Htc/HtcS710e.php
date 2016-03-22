@@ -88,7 +88,10 @@ class HtcS710e extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(
             ['HTC Incredible S', 'HTC_IncredibleS_S710e', 'IncredibleS_S710e', 'HTCS710e']
         )
         ) {

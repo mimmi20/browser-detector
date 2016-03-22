@@ -88,7 +88,10 @@ class IconBitNt3710s extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nt-3710s', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('nt-3710s', true)) {
             return false;
         }
 

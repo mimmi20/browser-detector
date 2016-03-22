@@ -88,7 +88,10 @@ class ArnovaArchm901 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARCHM901')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ARCHM901')) {
             return false;
         }
 

@@ -88,11 +88,17 @@ class HtcRadar extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC; Radar'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC; Radar'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['HTC; Radar 4G', 'HTC; Radar C110e', 'HTC; Radar; Orange'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['HTC; Radar 4G', 'HTC; Radar C110e', 'HTC; Radar; Orange'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class NokiaLumia520Rm914 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('rm-914', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('rm-914', true)) {
             return false;
         }
 

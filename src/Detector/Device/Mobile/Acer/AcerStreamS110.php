@@ -88,7 +88,10 @@ class AcerStreamS110 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Stream-S110')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Stream-S110')) {
             return false;
         }
 

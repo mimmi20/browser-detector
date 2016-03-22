@@ -88,7 +88,10 @@ class HtcZ710SensationLs extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Sensation-orange-LS'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Sensation-orange-LS'])) {
             return false;
         }
 

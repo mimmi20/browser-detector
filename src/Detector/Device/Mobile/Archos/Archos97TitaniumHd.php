@@ -88,7 +88,10 @@ class Archos97TitaniumHd extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARCHOS 97 TITANIUMHD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ARCHOS 97 TITANIUMHD')) {
             return false;
         }
 

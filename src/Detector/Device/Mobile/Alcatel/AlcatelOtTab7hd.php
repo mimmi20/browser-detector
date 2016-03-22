@@ -88,7 +88,10 @@ class AlcatelOtTab7hd extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ONE TOUCH TAB 7HD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ONE TOUCH TAB 7HD')) {
             return false;
         }
 

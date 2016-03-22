@@ -88,7 +88,10 @@ class AsusFonePad7 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['K00E', 'ME372CG'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['K00E', 'ME372CG'])) {
             return false;
         }
 

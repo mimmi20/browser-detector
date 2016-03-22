@@ -88,7 +88,10 @@ class PrestigioPmp7170B3g extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PMP7170B3G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PMP7170B3G'])) {
             return false;
         }
 

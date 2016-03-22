@@ -88,7 +88,10 @@ class Lgd280 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-D280', 'LGD280'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-D280', 'LGD280'])) {
             return false;
         }
 

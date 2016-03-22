@@ -88,7 +88,10 @@ class HuaweiG6609 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HuaweiG6609')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HuaweiG6609')) {
             return false;
         }
 

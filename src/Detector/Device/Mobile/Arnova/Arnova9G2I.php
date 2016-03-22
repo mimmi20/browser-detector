@@ -88,7 +88,10 @@ class Arnova9G2I extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('AN9G2I')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('AN9G2I')) {
             return false;
         }
 

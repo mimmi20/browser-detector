@@ -88,7 +88,10 @@ class KinderTablet extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Kinder-Tablet'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Kinder-Tablet'])) {
             return false;
         }
 

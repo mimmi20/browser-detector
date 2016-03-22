@@ -88,7 +88,10 @@ class HtcT8698 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC;7 Mozart', '7 Mozart'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC;7 Mozart', '7 Mozart'])) {
             return false;
         }
 

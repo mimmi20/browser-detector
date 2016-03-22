@@ -88,11 +88,17 @@ class CatNova extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['CatNova', 'CAT NOVA'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['CatNova', 'CAT NOVA'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['CatNova8'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['CatNova8'])) {
             return false;
         }
 

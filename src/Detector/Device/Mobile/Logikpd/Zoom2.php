@@ -88,7 +88,10 @@ class Zoom2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Zoom2', 'NookColor'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Zoom2', 'NookColor'])) {
             return false;
         }
 

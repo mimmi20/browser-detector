@@ -88,7 +88,10 @@ class SamsungGts5260 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S5260', 'GT-S5260', 'samsung-gt-s5260'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S5260', 'GT-S5260', 'samsung-gt-s5260'])) {
             return false;
         }
 

@@ -88,13 +88,19 @@ class AmazonKindle extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Kindle', 'Silk'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Kindle', 'Silk'])) {
             return false;
         }
 
         $specialKindles = ['Kindle Fire', 'KFTT', 'KFOT', 'KFJWI', 'KFTHWI', 'KFSOWI', 'KFAPWI', 'SD4930UR', 'KFJWA'];
 
-        if ($this->utils->checkIfContains($specialKindles)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($specialKindles)) {
             return false;
         }
 

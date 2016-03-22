@@ -88,7 +88,10 @@ class AinolNumyNote9 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Numy_Note_9')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Numy_Note_9')) {
             return false;
         }
 

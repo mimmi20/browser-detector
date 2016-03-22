@@ -88,7 +88,10 @@ class HtcDesire extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC Desire', 'HTC_Desire'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC Desire', 'HTC_Desire'])) {
             return false;
         }
 
@@ -111,7 +114,10 @@ class HtcDesire extends AbstractDevice implements DeviceHasSpecificPlatformInter
             'Desire 816',
         ];
 
-        if ($this->utils->checkIfContains($specialHtcDesire)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($specialHtcDesire)) {
             return false;
         }
 

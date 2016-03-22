@@ -88,7 +88,10 @@ class SamsungSchI699 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-I699', 'SCH-I699'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-I699', 'SCH-I699'])) {
             return false;
         }
 

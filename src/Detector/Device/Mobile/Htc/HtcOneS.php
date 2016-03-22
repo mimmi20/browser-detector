@@ -88,11 +88,17 @@ class HtcOneS extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC One S', 'HTC_One_S', 'HTC_OneS', 'One S'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC One S', 'HTC_One_S', 'HTC_OneS', 'One S'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['HTC One SV', 'HTC_One_SV', 'HTC_OneSV', 'One SV'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['HTC One SV', 'HTC_One_SV', 'HTC_OneSV', 'One SV'])) {
             return false;
         }
 

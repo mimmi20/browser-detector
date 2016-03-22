@@ -88,7 +88,10 @@ class MdLifeP4310 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MEDION LIFE P4310')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MEDION LIFE P4310')) {
             return false;
         }
 

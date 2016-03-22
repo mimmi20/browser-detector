@@ -88,7 +88,10 @@ class HighscreenOmegaPrimeS extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Prime S')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Prime S')) {
             return false;
         }
 

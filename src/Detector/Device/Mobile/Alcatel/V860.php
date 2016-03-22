@@ -88,7 +88,10 @@ class V860 extends AbstractDevice implements DeviceHasSpecificPlatformInterface,
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['V860', 'Vodafone Smart II'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['V860', 'Vodafone Smart II'])) {
             return false;
         }
 

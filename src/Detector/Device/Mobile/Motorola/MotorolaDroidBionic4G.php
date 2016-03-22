@@ -88,7 +88,10 @@ class MotorolaDroidBionic4G extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DROID BIONIC 4G', 'XT875')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('DROID BIONIC 4G', 'XT875')) {
             return false;
         }
 

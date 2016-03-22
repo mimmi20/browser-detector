@@ -88,7 +88,10 @@ class HighscreenBoostiiSe extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Boost IIse')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Boost IIse')) {
             return false;
         }
 

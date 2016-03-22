@@ -88,7 +88,10 @@ class MotorolaE1000 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MOT-E1000')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MOT-E1000')) {
             return false;
         }
 

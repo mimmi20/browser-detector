@@ -88,7 +88,10 @@ class LenovoA3500flIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['A3500-FL'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['A3500-FL'])) {
             return false;
         }
 

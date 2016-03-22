@@ -88,7 +88,10 @@ class ModecomFreeTab8001Ipsx23g extends AbstractDevice implements DeviceHasSpeci
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FreeTAB 8001 IPS X2 3G+')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FreeTAB 8001 IPS X2 3G+')) {
             return false;
         }
 

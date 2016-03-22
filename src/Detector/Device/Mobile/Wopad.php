@@ -105,6 +105,6 @@ class Wopad extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function detectOs()
     {
-        return new Os\Andro($this->useragent, [])ent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -88,7 +88,10 @@ class HtcRadar4G extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC; Radar 4G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC; Radar 4G'])) {
             return false;
         }
 

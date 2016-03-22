@@ -105,6 +105,6 @@ class Twz extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHa
      */
     public function detectOs()
     {
-        return new Os\Andro($this->useragent, [])ent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

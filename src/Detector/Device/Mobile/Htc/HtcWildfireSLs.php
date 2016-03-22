@@ -88,7 +88,10 @@ class HtcWildfireSLs extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_WildfireS-orange-LS'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_WildfireS-orange-LS'])) {
             return false;
         }
 

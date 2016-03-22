@@ -88,7 +88,10 @@ class HuaweiM635 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiM635', 'HUAWEI-M635'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiM635', 'HUAWEI-M635'])) {
             return false;
         }
 

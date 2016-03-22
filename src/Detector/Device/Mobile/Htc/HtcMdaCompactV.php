@@ -88,7 +88,10 @@ class HtcMdaCompactV extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MDA_Compact_V'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MDA_Compact_V'])) {
             return false;
         }
 

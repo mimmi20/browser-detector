@@ -88,7 +88,10 @@ class SamsungGti8700Omnia7 extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG; OMNIA7'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG; OMNIA7'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class YuandaoN90DualCore2 extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['n90 dual core2'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['n90 dual core2'], true)) {
             return false;
         }
 

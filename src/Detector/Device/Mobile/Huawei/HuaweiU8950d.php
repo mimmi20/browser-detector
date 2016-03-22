@@ -88,7 +88,10 @@ class HuaweiU8950d extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiU8950D', 'U8950D'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiU8950D', 'U8950D'])) {
             return false;
         }
 

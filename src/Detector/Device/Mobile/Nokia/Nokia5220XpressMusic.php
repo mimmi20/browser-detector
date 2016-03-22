@@ -88,7 +88,10 @@ class Nokia5220XpressMusic extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nokia5220XpressMusic')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nokia5220XpressMusic')) {
             return false;
         }
 

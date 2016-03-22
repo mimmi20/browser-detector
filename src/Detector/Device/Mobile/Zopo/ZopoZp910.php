@@ -88,7 +88,10 @@ class ZopoZp910 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains([' ZP910 ', ' ZP900H '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains([' ZP910 ', ' ZP900H '])) {
             return false;
         }
 

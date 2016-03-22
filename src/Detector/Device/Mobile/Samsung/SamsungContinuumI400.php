@@ -88,7 +88,10 @@ class SamsungContinuumI400 extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Continuum-I400'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Continuum-I400'])) {
             return false;
         }
 

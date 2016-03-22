@@ -88,7 +88,10 @@ class HuaweiG7300 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContainsAll(['huawei', 'G7300'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContainsAll(['huawei', 'G7300'], true)) {
             return false;
         }
 

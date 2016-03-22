@@ -88,7 +88,10 @@ class HuaweiG527u081 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('G527-U081')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('G527-U081')) {
             return false;
         }
 

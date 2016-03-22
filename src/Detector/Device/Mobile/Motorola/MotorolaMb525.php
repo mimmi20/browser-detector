@@ -88,7 +88,10 @@ class MotorolaMb525 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MOT-MB525', 'MB525'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MOT-MB525', 'MB525'])) {
             return false;
         }
 

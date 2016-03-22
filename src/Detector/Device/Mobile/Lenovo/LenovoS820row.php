@@ -88,7 +88,10 @@ class LenovoS820row extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('S820_ROW')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('S820_ROW')) {
             return false;
         }
 

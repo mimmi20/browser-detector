@@ -88,7 +88,10 @@ class HtcT7373 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Touch_Pro2_T7373'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Touch_Pro2_T7373'])) {
             return false;
         }
 

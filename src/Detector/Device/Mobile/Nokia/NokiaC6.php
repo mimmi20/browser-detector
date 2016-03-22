@@ -88,11 +88,17 @@ class NokiaC6 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaC6')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NokiaC6')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('NokiaC6-')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('NokiaC6-')) {
             return false;
         }
 

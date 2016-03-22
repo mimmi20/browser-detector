@@ -88,7 +88,10 @@ class AsusEepPadTransformerTf201 extends AbstractDevice implements DeviceHasSpec
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Transformer TF201', 'Transformer Prime TF201'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Transformer TF201', 'Transformer Prime TF201'])) {
             return false;
         }
 

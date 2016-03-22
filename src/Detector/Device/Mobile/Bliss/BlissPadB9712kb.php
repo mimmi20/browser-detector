@@ -88,7 +88,10 @@ class BlissPadB9712kb extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Pad B9712KB')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Pad B9712KB')) {
             return false;
         }
 

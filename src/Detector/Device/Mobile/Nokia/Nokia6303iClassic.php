@@ -88,7 +88,10 @@ class Nokia6303iClassic extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nokia6303iclassic')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nokia6303iclassic')) {
             return false;
         }
 

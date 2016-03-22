@@ -88,11 +88,17 @@ class AcerIconiaA511 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Iconia A511', 'A511'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Iconia A511', 'A511'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['HTC'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['HTC'])) {
             return false;
         }
 

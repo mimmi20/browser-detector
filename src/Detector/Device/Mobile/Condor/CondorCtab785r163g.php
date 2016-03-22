@@ -88,7 +88,10 @@ class CondorCtab785r163g extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('CTAB785R16-3G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('CTAB785R16-3G')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SonyD5503XperiaZ1Compact extends AbstractDevice implements DeviceHasSpecif
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonD5503', 'SonyD5503', 'D5503'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonD5503', 'SonyD5503', 'D5503'])) {
             return false;
         }
 

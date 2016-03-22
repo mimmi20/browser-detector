@@ -88,11 +88,17 @@ class HtcOneMini extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_One_mini', 'HTC One mini'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_One_mini', 'HTC One mini'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['HTC_One_mini_2', 'One mini 2'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['HTC_One_mini_2', 'One mini 2'])) {
             return false;
         }
 

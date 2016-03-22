@@ -88,7 +88,10 @@ class SamsungSchM828c extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-M828C', 'SCH-M828C'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-M828C', 'SCH-M828C'])) {
             return false;
         }
 

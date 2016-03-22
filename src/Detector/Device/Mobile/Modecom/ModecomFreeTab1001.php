@@ -88,7 +88,10 @@ class ModecomFreeTab1001 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FreeTAB 1001')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FreeTAB 1001')) {
             return false;
         }
 

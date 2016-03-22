@@ -88,11 +88,17 @@ class SonyEricssonLT18i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonLT18i', 'LT18i', 'Xperia Arc'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonLT18i', 'LT18i', 'Xperia Arc'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonLT18iv', 'LT18iv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonLT18iv', 'LT18iv'])) {
             return false;
         }
 

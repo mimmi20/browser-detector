@@ -88,7 +88,10 @@ class AmazonKfapwa extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('kfapwa', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('kfapwa', true)) {
             return false;
         }
 

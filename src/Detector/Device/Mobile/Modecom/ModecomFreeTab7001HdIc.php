@@ -88,7 +88,10 @@ class ModecomFreeTab7001HdIc extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FreeTAB 7001 HD IC')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FreeTAB 7001 HD IC')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class P4dSirius extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('P4D SIRIUS')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('P4D SIRIUS')) {
             return false;
         }
 

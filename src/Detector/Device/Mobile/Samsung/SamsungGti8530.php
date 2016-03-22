@@ -88,7 +88,10 @@ class SamsungGti8530 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(
             ['SAMSUNG; GT-I8530', 'GT-I8530', 'SAMSUNG-GT-I8530', 'SAMSUNG GT-I8530']
         )
         ) {

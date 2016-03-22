@@ -88,7 +88,10 @@ class DellVenue8Hspa extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Venue 8 HSPA+')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Venue 8 HSPA+')) {
             return false;
         }
 

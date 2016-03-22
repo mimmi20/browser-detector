@@ -88,7 +88,10 @@ class XoroXor400250 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TelePAD 9A1')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TelePAD 9A1')) {
             return false;
         }
 

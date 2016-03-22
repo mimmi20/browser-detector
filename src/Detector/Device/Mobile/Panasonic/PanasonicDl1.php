@@ -88,7 +88,10 @@ class PanasonicDl1 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Panasonic', ' dL1 '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Panasonic', ' dL1 '])) {
             return false;
         }
 

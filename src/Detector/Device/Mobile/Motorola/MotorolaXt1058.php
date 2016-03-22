@@ -88,7 +88,10 @@ class MotorolaXt1058 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MOT-XT1058', 'XT1058'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MOT-XT1058', 'XT1058'])) {
             return false;
         }
 

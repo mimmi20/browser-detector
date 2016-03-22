@@ -88,14 +88,20 @@ class HtcDesireS extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(
             ['HTC_DesireS', 'Desire S', 'HTC/DesireS', 'HTC Desire S', 'HTC_Desire_S']
         )
         ) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(
             ['HTC_DesireS_S510e', 'HTC_DesireSV', 'Desire SV', 'HTC/DesireSV', 'HTC Desire SV']
         )
         ) {

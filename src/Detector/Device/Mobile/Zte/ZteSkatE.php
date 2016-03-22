@@ -88,7 +88,10 @@ class ZteSkatE extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['zte-skate', 'zte skate'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['zte-skate', 'zte skate'], true)) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class LgKp500 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG/KP500', 'LG-KP500'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG/KP500', 'LG-KP500'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class SamsungGts6802 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S6802', 'GT-S6802'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S6802', 'GT-S6802'])) {
             return false;
         }
 

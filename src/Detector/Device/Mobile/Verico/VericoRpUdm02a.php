@@ -88,7 +88,10 @@ class VericoRpUdm02a extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('RP-UDM02A')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('RP-UDM02A')) {
             return false;
         }
 

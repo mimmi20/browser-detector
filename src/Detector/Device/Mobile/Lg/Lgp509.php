@@ -88,7 +88,10 @@ class Lgp509 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-P509', 'Optimus-T'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-P509', 'Optimus-T'])) {
             return false;
         }
 

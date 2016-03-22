@@ -88,7 +88,10 @@ class HtcT7576 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC; 7 Pro T7576', '7 Pro T7576'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC; 7 Pro T7576', '7 Pro T7576'])) {
             return false;
         }
 

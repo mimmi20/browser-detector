@@ -88,7 +88,10 @@ class WikoDarkmoon extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DARKMOON')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('DARKMOON')) {
             return false;
         }
 

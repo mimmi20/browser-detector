@@ -88,7 +88,10 @@ class MotorolaRazrV3x extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('RAZRV3x')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('RAZRV3x')) {
             return false;
         }
 

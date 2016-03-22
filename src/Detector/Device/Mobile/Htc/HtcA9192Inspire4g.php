@@ -88,7 +88,10 @@ class HtcA9192Inspire4g extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC-A9192'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC-A9192'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class MotorolaMe860 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Moto_ME860')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Moto_ME860')) {
             return false;
         }
 

@@ -88,11 +88,17 @@ class HtcWildfire extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC Wildfire', 'HTC/Wildfire', 'HTC_Wildfire'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC Wildfire', 'HTC/Wildfire', 'HTC_Wildfire'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(
             ['HTC Wildfire S', 'HTC/WildfireS', 'HTC_WildfireS', 'Wildfire S', 'HTC_Wildfire_A3333']
         )
         ) {

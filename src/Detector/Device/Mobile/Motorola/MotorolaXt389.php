@@ -88,7 +88,10 @@ class MotorolaXt389 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MOT-XT389', 'XT389'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MOT-XT389', 'XT389'])) {
             return false;
         }
 

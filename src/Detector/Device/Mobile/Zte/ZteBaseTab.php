@@ -88,7 +88,10 @@ class ZteBaseTab extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('BASE Tab')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('BASE Tab')) {
             return false;
         }
 

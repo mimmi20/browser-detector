@@ -88,7 +88,10 @@ class LenovoA1000f extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('IdeaTabA1000-F')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('IdeaTabA1000-F')) {
             return false;
         }
 

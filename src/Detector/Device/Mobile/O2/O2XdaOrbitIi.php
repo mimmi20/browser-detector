@@ -88,7 +88,10 @@ class O2XdaOrbitIi extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Xda_orbit_2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Xda_orbit_2')) {
             return false;
         }
 

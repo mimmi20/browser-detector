@@ -88,7 +88,10 @@ class SamsungGalaxyNexusS extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nexus S')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nexus S')) {
             return false;
         }
 

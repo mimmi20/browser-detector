@@ -88,7 +88,10 @@ class ModecomFreeTab9000IpsIc extends AbstractDevice implements DeviceHasSpecifi
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FreeTAB 9000 IPS IC')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FreeTAB 9000 IPS IC')) {
             return false;
         }
 

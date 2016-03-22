@@ -88,7 +88,10 @@ class AcerIconiaA730hd extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['B1-730HD'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['B1-730HD'])) {
             return false;
         }
 

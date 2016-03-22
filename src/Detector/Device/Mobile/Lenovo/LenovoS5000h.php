@@ -88,7 +88,10 @@ class LenovoS5000h extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('S5000-H')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('S5000-H')) {
             return false;
         }
 

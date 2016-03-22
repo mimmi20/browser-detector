@@ -88,7 +88,10 @@ class VodafoneSmartTabIii10 extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Vodafone Smart Tab III 10', 'SmartTabIII10'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Vodafone Smart Tab III 10', 'SmartTabIII10'])) {
             return false;
         }
 

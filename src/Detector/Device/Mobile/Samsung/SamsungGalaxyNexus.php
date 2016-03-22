@@ -88,11 +88,17 @@ class SamsungGalaxyNexus extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Galaxy Nexus', 'Nexus'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Galaxy Nexus', 'Nexus'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['Nexus S', 'NexusHD2', 'Nexus 7', 'Nexus One', 'Nexus 10', 'Nexus 9'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['Nexus S', 'NexusHD2', 'Nexus 7', 'Nexus One', 'Nexus 10', 'Nexus 9'])) {
             return false;
         }
 

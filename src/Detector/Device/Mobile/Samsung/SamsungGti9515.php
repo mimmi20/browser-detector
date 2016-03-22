@@ -88,11 +88,17 @@ class SamsungGti9515 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-I9515')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-I9515')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['GT-I9515X', 'GT-I9515G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['GT-I9515X', 'GT-I9515G'])) {
             return false;
         }
 

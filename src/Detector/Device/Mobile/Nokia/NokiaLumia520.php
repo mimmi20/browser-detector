@@ -88,7 +88,10 @@ class NokiaLumia520 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia 520', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('nokia; lumia 520', true)) {
             return false;
         }
 

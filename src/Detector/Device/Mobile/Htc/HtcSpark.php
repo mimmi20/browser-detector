@@ -88,7 +88,10 @@ class HtcSpark extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC;7 Trophy', '7 Trophy', 'HTC; mwp6985'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC;7 Trophy', '7 Trophy', 'HTC; mwp6985'])) {
             return false;
         }
 

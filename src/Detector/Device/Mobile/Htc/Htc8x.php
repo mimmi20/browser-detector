@@ -88,7 +88,10 @@ class Htc8x extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC; Windows Phone 8X by HTC'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC; Windows Phone 8X by HTC'])) {
             return false;
         }
 

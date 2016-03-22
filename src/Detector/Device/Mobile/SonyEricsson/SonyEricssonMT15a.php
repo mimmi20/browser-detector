@@ -88,7 +88,10 @@ class SonyEricssonMT15a extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonMT15a', 'MT15a'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonMT15a', 'MT15a'])) {
             return false;
         }
 

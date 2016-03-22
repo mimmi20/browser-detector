@@ -88,7 +88,10 @@ class ViewSonicViewPad10e extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ViewPad 10e'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ViewPad 10e'])) {
             return false;
         }
 

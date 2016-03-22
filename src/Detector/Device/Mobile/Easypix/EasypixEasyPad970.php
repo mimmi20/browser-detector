@@ -88,7 +88,10 @@ class EasypixEasyPad970 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['EasyPad 970'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['EasyPad 970'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class AlcatelOt871A extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('OT871A')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('OT871A')) {
             return false;
         }
 

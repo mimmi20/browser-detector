@@ -88,7 +88,10 @@ class HuaweiMediaPad7Classic extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MediaPad 7 Classic')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MediaPad 7 Classic')) {
             return false;
         }
 

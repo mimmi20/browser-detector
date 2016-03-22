@@ -88,7 +88,10 @@ class BlackBerry9700 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['BlackBerry 9700', 'BlackBerry9700'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['BlackBerry 9700', 'BlackBerry9700'])) {
             return false;
         }
 

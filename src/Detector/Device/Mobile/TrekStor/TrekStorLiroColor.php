@@ -90,7 +90,10 @@ class TrekStorLiroColor extends AbstractDevice implements DeviceHasSpecificPlatf
     {
         $trekStorPhones = ['TrekStor_Liro_Color'];
 
-        if ($this->utils->checkIfContains($trekStorPhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($trekStorPhones)) {
             return true;
         }
 

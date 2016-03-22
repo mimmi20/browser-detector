@@ -88,7 +88,10 @@ class PrestigioPmt70773g extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PMT7077_3G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PMT7077_3G'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class PandigitalSupernova extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('pandigitalsprnova1')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('pandigitalsprnova1')) {
             return false;
         }
 

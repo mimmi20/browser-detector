@@ -93,7 +93,10 @@ class ZenithinkZt180 extends AbstractDevice implements DeviceHasSpecificPlatform
             ' zt180 ',
         ];
 
-        if ($this->utils->checkIfContains($zenithinkPhones, true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($zenithinkPhones, true)) {
             return true;
         }
 

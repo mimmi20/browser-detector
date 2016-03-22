@@ -88,7 +88,10 @@ class HtcXdaDiamond2 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Xda_Diamond_2'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Xda_Diamond_2'])) {
             return false;
         }
 

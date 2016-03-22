@@ -88,7 +88,10 @@ class FlyIq4410i extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Phoenix 2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Phoenix 2')) {
             return false;
         }
 

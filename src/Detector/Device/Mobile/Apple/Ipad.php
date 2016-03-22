@@ -88,7 +88,10 @@ class Ipad extends AbstractDevice implements DeviceHasSpecificPlatformInterface,
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ipad', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ipad', true)) {
             return false;
         }
 

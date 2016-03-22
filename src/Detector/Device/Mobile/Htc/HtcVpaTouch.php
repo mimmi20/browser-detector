@@ -88,7 +88,10 @@ class HtcVpaTouch extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['VPA_Touch'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['VPA_Touch'])) {
             return false;
         }
 

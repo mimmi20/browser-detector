@@ -88,7 +88,10 @@ class OdysXpressPro extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('XPRESS PRO')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('XPRESS PRO')) {
             return false;
         }
 

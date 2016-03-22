@@ -88,7 +88,10 @@ class AmazonKindleFire extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Kindle Fire'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Kindle Fire'])) {
             return false;
         }
 

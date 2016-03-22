@@ -88,7 +88,10 @@ class HtcOneXplus extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC One X+', 'HTC_One_X+', 'HTC/One_X+', 'HTC_OneXplus'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC One X+', 'HTC_One_X+', 'HTC/One_X+', 'HTC_OneXplus'])) {
             return false;
         }
 

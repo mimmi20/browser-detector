@@ -88,7 +88,10 @@ class OvermaxSteelCore extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('OV-SteelCore-B')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('OV-SteelCore-B')) {
             return false;
         }
 

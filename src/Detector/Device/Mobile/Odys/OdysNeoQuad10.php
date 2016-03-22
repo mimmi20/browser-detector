@@ -88,7 +88,10 @@ class OdysNeoQuad10 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['NEO_QUAD10'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['NEO_QUAD10'])) {
             return false;
         }
 

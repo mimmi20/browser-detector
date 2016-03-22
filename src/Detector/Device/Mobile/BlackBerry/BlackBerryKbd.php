@@ -88,7 +88,10 @@ class BlackBerryKbd extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('BB10; Kbd')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('BB10; Kbd')) {
             return false;
         }
 

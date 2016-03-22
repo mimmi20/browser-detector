@@ -88,7 +88,10 @@ class Archos40bTitaniumSurround extends AbstractDevice implements DeviceHasSpeci
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Archos 40b Titanium Surround')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Archos 40b Titanium Surround')) {
             return false;
         }
 

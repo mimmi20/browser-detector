@@ -88,7 +88,10 @@ class SamsungGtp5200 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-P5200', 'GT-P5200'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-P5200', 'GT-P5200'])) {
             return false;
         }
 

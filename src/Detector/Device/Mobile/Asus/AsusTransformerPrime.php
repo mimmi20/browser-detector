@@ -88,11 +88,17 @@ class AsusTransformerPrime extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Transformer Prime'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Transformer Prime'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(
             ['Transformer TF201', 'Transformer Prime TF201', 'ASUS Transformer Pad TF700T']
         )
         ) {

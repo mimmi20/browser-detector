@@ -88,7 +88,10 @@ class SamsungSphm930 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SPH-M930')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SPH-M930')) {
             return false;
         }
 

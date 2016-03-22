@@ -88,7 +88,10 @@ class Htc6500Lvw extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC6500LVW'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC6500LVW'])) {
             return false;
         }
 

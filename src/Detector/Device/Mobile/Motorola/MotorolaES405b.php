@@ -88,7 +88,10 @@ class MotorolaES405b extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Motorola_ES405B')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Motorola_ES405B')) {
             return false;
         }
 

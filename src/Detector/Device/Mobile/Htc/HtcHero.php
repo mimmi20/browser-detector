@@ -88,7 +88,10 @@ class HtcHero extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC Hero', ' a6288 '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC Hero', ' a6288 '])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class HtcTitan extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC; TITAN', 'HTC; TITAN X310e'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC; TITAN', 'HTC; TITAN X310e'])) {
             return false;
         }
 

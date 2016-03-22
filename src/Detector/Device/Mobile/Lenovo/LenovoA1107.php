@@ -88,7 +88,10 @@ class LenovoA1107 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('IdeaTab_A1107')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('IdeaTab_A1107')) {
             return false;
         }
 

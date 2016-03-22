@@ -88,11 +88,17 @@ class SonyC5303XperiaSp extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonC5303', 'SonyC5303', 'C5303'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonC5303', 'SonyC5303', 'C5303'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonC5303v', 'SonyC5303v', 'C5303v'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonC5303v', 'SonyC5303v', 'C5303v'])) {
             return false;
         }
 

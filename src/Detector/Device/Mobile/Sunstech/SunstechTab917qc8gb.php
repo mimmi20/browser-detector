@@ -88,7 +88,10 @@ class SunstechTab917qc8gb extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TAB917QC-8GB')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TAB917QC-8GB')) {
             return false;
         }
 

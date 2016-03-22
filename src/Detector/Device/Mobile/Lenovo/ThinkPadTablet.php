@@ -88,7 +88,10 @@ class ThinkPadTablet extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ThinkPad Tablet'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ThinkPad Tablet'])) {
             return false;
         }
 

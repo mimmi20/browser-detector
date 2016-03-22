@@ -88,11 +88,17 @@ class SonyST21i extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonST21i', 'SonyST21i', 'ST21i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonST21i', 'SonyST21i', 'ST21i'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonST21iv', 'SonyST21iv', 'ST21iv', 'ST21i2'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonST21iv', 'SonyST21iv', 'ST21iv', 'ST21i2'])) {
             return false;
         }
 

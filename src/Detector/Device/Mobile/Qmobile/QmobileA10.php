@@ -90,7 +90,10 @@ class QmobileA10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
     {
         $qmobilePhones = [' A10 '];
 
-        if (!$this->utils->checkIfContains($qmobilePhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($qmobilePhones)) {
             return false;
         }
 

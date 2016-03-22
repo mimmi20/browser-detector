@@ -88,7 +88,10 @@ class SamsungSchR530u extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-R530U', 'SCH-R530U'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-R530U', 'SCH-R530U'])) {
             return false;
         }
 

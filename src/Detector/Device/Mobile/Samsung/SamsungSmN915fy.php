@@ -88,7 +88,10 @@ class SamsungSmN915fy extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-N915FY')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-N915FY')) {
             return false;
         }
 

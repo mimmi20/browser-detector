@@ -88,11 +88,17 @@ class SonyC6602ExperiaZ extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonC6602', 'SonyC6602', 'C6602'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonC6602', 'SonyC6602', 'C6602'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonC6602v', 'SonyC6602v', 'C6602v'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonC6602v', 'SonyC6602v', 'C6602v'])) {
             return false;
         }
 

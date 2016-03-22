@@ -88,7 +88,10 @@ class HuaweiY300 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiY300', 'HUAWEI-Y300', 'HUAWEI Y300'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiY300', 'HUAWEI-Y300', 'HUAWEI Y300'])) {
             return false;
         }
 

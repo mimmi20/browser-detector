@@ -88,7 +88,10 @@ class ExplaySurfer7343g extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Surfer 7.34')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Surfer 7.34')) {
             return false;
         }
 

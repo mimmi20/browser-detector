@@ -88,11 +88,17 @@ class SamsungGti9100 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['GT-I9100', 'I9100'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['GT-I9100', 'I9100'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['GT-I9100P', 'GT-I9100T', 'GT-I9100G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['GT-I9100P', 'GT-I9100T', 'GT-I9100G'])) {
             return false;
         }
 

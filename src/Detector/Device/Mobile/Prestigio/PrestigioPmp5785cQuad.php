@@ -88,7 +88,10 @@ class PrestigioPmp5785cQuad extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PMP5785C_QUAD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PMP5785C_QUAD')) {
             return false;
         }
 

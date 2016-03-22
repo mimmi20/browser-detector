@@ -90,7 +90,10 @@ class E1107 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
     {
         $YusuPhones = ['e1107'];
 
-        if (!$this->utils->checkIfContains($YusuPhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($YusuPhones)) {
             return false;
         }
 

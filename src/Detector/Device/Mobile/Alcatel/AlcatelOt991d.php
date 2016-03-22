@@ -90,7 +90,10 @@ class AlcatelOt991d extends AbstractDevice implements DeviceHasSpecificPlatformI
     {
         $phones = ['ALCATEL ONE TOUCH 991D', 'ALCATEL_one_touch_991D'];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 

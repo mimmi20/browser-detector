@@ -88,7 +88,10 @@ class XiaomiHm1sc extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HM 1SC')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HM 1SC')) {
             return false;
         }
 

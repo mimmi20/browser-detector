@@ -88,7 +88,10 @@ class BqAquarisE5 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Aquaris 5 HD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Aquaris 5 HD')) {
             return false;
         }
 

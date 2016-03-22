@@ -88,7 +88,10 @@ class OvermaxSolution10ii3g extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('OV-Solution 10II')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('OV-Solution 10II')) {
             return false;
         }
 

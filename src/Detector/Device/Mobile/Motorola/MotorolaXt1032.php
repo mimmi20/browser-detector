@@ -88,7 +88,10 @@ class MotorolaXt1032 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MOT-XT1032', 'XT1032'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MOT-XT1032', 'XT1032'])) {
             return false;
         }
 

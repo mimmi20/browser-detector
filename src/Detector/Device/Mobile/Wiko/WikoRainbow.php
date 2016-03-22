@@ -88,7 +88,10 @@ class WikoRainbow extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('RAINBOW')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('RAINBOW')) {
             return false;
         }
 

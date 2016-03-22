@@ -88,7 +88,10 @@ class EfoxSmartE5 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SMART-E5')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SMART-E5')) {
             return false;
         }
 

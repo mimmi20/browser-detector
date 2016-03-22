@@ -88,7 +88,10 @@ class NintendoDsi extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nintendo DSi')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nintendo DSi')) {
             return false;
         }
 

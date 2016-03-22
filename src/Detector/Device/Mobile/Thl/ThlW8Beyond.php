@@ -88,7 +88,10 @@ class ThlW8Beyond extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('W8_beyond')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('W8_beyond')) {
             return false;
         }
 

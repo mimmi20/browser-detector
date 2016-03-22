@@ -88,7 +88,10 @@ class HtcT9292 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC; HD7 T9292', 'HTC; HD7', 'HTC; Mondrian'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC; HD7 T9292', 'HTC; HD7', 'HTC; Mondrian'])) {
             return false;
         }
 

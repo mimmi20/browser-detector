@@ -88,7 +88,10 @@ class HtcVpaCompactIv extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_VPACompactIV'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_VPACompactIV'])) {
             return false;
         }
 

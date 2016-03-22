@@ -88,7 +88,10 @@ class LgG3 extends AbstractDevice implements DeviceHasSpecificPlatformInterface,
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' G3 ')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(' G3 ')) {
             return false;
         }
 

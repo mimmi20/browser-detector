@@ -105,6 +105,6 @@ class WonderMedia extends AbstractDevice implements DeviceHasChildrenInterface, 
      */
     public function detectOs()
     {
-        return new Os\Andro($this->useragent, [])ent);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

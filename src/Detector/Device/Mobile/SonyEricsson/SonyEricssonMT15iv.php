@@ -88,7 +88,10 @@ class SonyEricssonMT15iv extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonMT15iv', 'MT15iv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonMT15iv', 'MT15iv'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class CatGalacticaX extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Cat Tablet Galactica X'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Cat Tablet Galactica X'])) {
             return false;
         }
 

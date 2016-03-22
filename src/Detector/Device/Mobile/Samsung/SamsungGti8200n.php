@@ -88,7 +88,10 @@ class SamsungGti8200n extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-I8200N', 'SAMSUNG-GT-I8200N')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-I8200N', 'SAMSUNG-GT-I8200N')) {
             return false;
         }
 

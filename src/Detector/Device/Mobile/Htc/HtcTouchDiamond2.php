@@ -88,7 +88,10 @@ class HtcTouchDiamond2 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Touch_Diamond2'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Touch_Diamond2'])) {
             return false;
         }
 

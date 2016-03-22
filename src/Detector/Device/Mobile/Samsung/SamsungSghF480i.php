@@ -88,7 +88,10 @@ class SamsungSghF480i extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SAMSUNG-SGH-F480i')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SAMSUNG-SGH-F480i')) {
             return false;
         }
 

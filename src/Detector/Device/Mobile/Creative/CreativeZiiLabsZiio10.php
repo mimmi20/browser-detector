@@ -88,7 +88,10 @@ class CreativeZiiLabsZiio10 extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ZiiLABS ZiiO10')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ZiiLABS ZiiO10')) {
             return false;
         }
 

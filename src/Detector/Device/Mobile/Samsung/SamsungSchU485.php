@@ -88,7 +88,10 @@ class SamsungSchU485 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-U485', 'SCH-U485'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-U485', 'SCH-U485'])) {
             return false;
         }
 

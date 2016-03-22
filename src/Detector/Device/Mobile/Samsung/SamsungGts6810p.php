@@ -88,7 +88,10 @@ class SamsungGts6810p extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-S6810P', 'GT-S6810P'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-S6810P', 'GT-S6810P'])) {
             return false;
         }
 

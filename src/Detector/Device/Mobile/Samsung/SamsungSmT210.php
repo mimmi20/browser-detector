@@ -88,11 +88,17 @@ class SamsungSmT210 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-T210')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-T210')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('SM-T2105')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('SM-T2105')) {
             return false;
         }
 

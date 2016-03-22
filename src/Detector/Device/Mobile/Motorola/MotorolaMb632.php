@@ -88,7 +88,10 @@ class MotorolaMb632 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MotoMB632', 'MB632'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MotoMB632', 'MB632'])) {
             return false;
         }
 

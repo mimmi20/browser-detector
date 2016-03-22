@@ -88,7 +88,10 @@ class LenovoS6000lfIdeaTab extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Lenovo S6000L-F'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Lenovo S6000L-F'])) {
             return false;
         }
 

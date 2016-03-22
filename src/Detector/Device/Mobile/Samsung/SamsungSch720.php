@@ -88,7 +88,10 @@ class SamsungSch720 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-R720', 'SCH-R720'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-R720', 'SCH-R720'])) {
             return false;
         }
 

@@ -88,11 +88,17 @@ class MotorolaDroidBionic extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains([' Droid-Bionic ', ' DROID BIONIC '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains([' Droid-Bionic ', ' DROID BIONIC '])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['DROID BIONIC 4G', 'DROID BIONIC 4G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['DROID BIONIC 4G', 'DROID BIONIC 4G'])) {
             return false;
         }
 

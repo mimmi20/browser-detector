@@ -88,7 +88,10 @@ class PearlX10Plus extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('X10.Dual+')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('X10.Dual+')) {
             return false;
         }
 

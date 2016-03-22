@@ -88,7 +88,10 @@ class ZteSmart4G extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Vodafone Smart 4G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Vodafone Smart 4G'])) {
             return false;
         }
 

@@ -88,11 +88,17 @@ class OdysLoox extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Odys-Loox', ' LOOX '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Odys-Loox', ' LOOX '])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('LOOX Plus')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('LOOX Plus')) {
             return false;
         }
 

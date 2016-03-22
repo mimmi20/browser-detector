@@ -88,7 +88,10 @@ class ExplayM1Plus extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('M1_Plus')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('M1_Plus')) {
             return false;
         }
 

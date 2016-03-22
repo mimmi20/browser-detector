@@ -88,11 +88,17 @@ class MotorolaDroidRazr extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DROID RAZR')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('DROID RAZR')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('DROID RAZR 4G', 'DROID RAZR HD', 'RAZRV3x')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('DROID RAZR 4G', 'DROID RAZR HD', 'RAZRV3x')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class DenverTad70112 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['TAD-70112'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['TAD-70112'])) {
             return false;
         }
 

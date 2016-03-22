@@ -93,7 +93,10 @@ class LencoCm900Hz extends AbstractDevice implements DeviceHasSpecificPlatformIn
             'LENCM900HZ',
         ];
 
-        if ($this->utils->checkIfContains($lencoPhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($lencoPhones)) {
             return true;
         }
 

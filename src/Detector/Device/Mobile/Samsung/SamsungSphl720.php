@@ -88,11 +88,17 @@ class SamsungSphl720 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SPH-L720')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SPH-L720')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('SPH-L720BST')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('SPH-L720BST')) {
             return false;
         }
 

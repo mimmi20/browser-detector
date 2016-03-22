@@ -88,7 +88,10 @@ class HtcA7373Apa7373kt extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['APA7373KT'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['APA7373KT'])) {
             return false;
         }
 

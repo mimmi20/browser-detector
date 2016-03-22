@@ -88,7 +88,10 @@ class LgGd880 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-GD880', 'LG/GD880'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-GD880', 'LG/GD880'])) {
             return false;
         }
 

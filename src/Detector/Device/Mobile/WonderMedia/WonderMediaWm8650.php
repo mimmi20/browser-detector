@@ -88,7 +88,10 @@ class WonderMediaWm8650 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' WM8650 ')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(' WM8650 ')) {
             return false;
         }
 

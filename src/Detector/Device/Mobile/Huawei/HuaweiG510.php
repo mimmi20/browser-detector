@@ -88,11 +88,17 @@ class HuaweiG510 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiG510', 'HUAWEI G510', 'HUAWEI_T8951'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiG510', 'HUAWEI G510', 'HUAWEI_T8951'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['HUAWEI G510-0100'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['HUAWEI G510-0100'])) {
             return false;
         }
 

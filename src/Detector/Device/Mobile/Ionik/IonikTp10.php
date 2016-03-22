@@ -88,7 +88,10 @@ class IonikTp10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('tp10.1-1500dc', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('tp10.1-1500dc', true)) {
             return false;
         }
 

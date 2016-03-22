@@ -88,7 +88,10 @@ class SamsungGts5620 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('gt-s5620', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('gt-s5620', true)) {
             return false;
         }
 

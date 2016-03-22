@@ -88,7 +88,10 @@ class HtcHdMini extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC HD mini', 'HTC_HD_mini', 'HD mini', 'HTC_HD_mini_T5555'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC HD mini', 'HTC_HD_mini', 'HD mini', 'HTC_HD_mini_T5555'])) {
             return false;
         }
 

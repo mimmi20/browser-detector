@@ -88,7 +88,10 @@ class OystersPacific800i extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Pacific800i')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Pacific800i')) {
             return false;
         }
 

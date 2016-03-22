@@ -88,7 +88,10 @@ class HpIpaq6900 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HPiPAQhw6900')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HPiPAQhw6900')) {
             return false;
         }
 

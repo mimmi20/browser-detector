@@ -88,7 +88,10 @@ class TurboPadTurboX6 extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Turbo X6')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Turbo X6')) {
             return false;
         }
 

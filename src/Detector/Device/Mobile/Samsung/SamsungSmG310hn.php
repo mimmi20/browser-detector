@@ -88,7 +88,10 @@ class SamsungSmG310hn extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SM-G310HN')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SM-G310HN')) {
             return false;
         }
 

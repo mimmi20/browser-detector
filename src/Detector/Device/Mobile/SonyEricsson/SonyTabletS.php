@@ -88,7 +88,10 @@ class SonyTabletS extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Sony Tablet S')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Sony Tablet S')) {
             return false;
         }
 

@@ -88,11 +88,17 @@ class SonyLT26w extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonLT26w', 'SonyLT26w', 'LT26w'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonLT26w', 'SonyLT26w', 'LT26w'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonLT26wv', 'SonyLT26wv', 'LT26wv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonLT26wv', 'SonyLT26wv', 'LT26wv'])) {
             return false;
         }
 

@@ -88,11 +88,17 @@ class HuaweiU8666 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HuaweiU8666', 'U8666'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HuaweiU8666', 'U8666'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['HuaweiU8666E', 'U8666E'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['HuaweiU8666E', 'U8666E'])) {
             return false;
         }
 

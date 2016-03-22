@@ -88,7 +88,10 @@ class AsusTransformerPadTf700T extends AbstractDevice implements DeviceHasSpecif
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ASUS Transformer Pad TF700T'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ASUS Transformer Pad TF700T'])) {
             return false;
         }
 

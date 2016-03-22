@@ -88,7 +88,10 @@ class TmobileG1 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('T-Mobile G1')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('T-Mobile G1')) {
             return false;
         }
 

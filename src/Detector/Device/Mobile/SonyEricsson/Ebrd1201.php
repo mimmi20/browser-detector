@@ -88,7 +88,10 @@ class Ebrd1201 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('EBRD1201')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('EBRD1201')) {
             return false;
         }
 

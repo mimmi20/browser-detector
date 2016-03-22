@@ -88,7 +88,10 @@ class XiaomiMi3w extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MI 3W'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MI 3W'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class OdysNoon extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['odys-noon', ' noon '], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['odys-noon', ' noon '], true)) {
             return false;
         }
 

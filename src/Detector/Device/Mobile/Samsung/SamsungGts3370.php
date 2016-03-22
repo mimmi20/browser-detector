@@ -88,7 +88,10 @@ class SamsungGts3370 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('gt-s3370', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('gt-s3370', true)) {
             return false;
         }
 

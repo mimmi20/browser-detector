@@ -88,7 +88,10 @@ class OdysXeno10 extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['XENO10', 'ODYS XENO 10'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['XENO10', 'ODYS XENO 10'])) {
             return false;
         }
 

@@ -90,7 +90,10 @@ class TrekStorSt80208 extends AbstractDevice implements DeviceHasSpecificPlatfor
     {
         $trekStorPhones = ['ST80208'];
 
-        if ($this->utils->checkIfContains($trekStorPhones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($trekStorPhones)) {
             return true;
         }
 

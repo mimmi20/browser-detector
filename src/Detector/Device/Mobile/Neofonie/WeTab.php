@@ -88,7 +88,10 @@ class WeTab extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['WeTab', 'WeTab-Browser'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['WeTab', 'WeTab-Browser'])) {
             return false;
         }
 

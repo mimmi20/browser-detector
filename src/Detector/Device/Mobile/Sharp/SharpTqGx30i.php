@@ -88,7 +88,10 @@ class SharpTqGx30i extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SHARP-TQ-GX30i')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SHARP-TQ-GX30i')) {
             return false;
         }
 

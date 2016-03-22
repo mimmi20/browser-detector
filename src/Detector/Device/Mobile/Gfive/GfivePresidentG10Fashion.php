@@ -88,7 +88,10 @@ class GfivePresidentG10Fashion extends AbstractDevice implements DeviceHasSpecif
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('President G10 Fashion')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('President G10 Fashion')) {
             return false;
         }
 

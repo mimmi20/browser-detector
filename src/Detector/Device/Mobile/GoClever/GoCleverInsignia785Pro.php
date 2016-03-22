@@ -88,7 +88,10 @@ class GoCleverInsignia785Pro extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('INSIGNIA_785_PRO')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('INSIGNIA_785_PRO')) {
             return false;
         }
 

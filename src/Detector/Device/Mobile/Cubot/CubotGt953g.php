@@ -88,7 +88,10 @@ class CubotGt953g extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MT6572_TD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MT6572_TD')) {
             return false;
         }
 

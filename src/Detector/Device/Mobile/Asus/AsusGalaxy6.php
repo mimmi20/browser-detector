@@ -88,7 +88,10 @@ class AsusGalaxy6 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Asus;Galaxy6'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Asus;Galaxy6'])) {
             return false;
         }
 

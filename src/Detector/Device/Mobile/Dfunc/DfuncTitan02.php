@@ -88,7 +88,10 @@ class DfuncTitan02 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FUNC TITAN-02')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FUNC TITAN-02')) {
             return false;
         }
 

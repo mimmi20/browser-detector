@@ -88,7 +88,10 @@ class MicromaxA093 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Micromax_A093')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Micromax_A093')) {
             return false;
         }
 

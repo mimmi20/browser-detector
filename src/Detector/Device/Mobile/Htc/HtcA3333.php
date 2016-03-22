@@ -88,7 +88,10 @@ class HtcA3333 extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HTC_Wildfire_A3333')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HTC_Wildfire_A3333')) {
             return false;
         }
 

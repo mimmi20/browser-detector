@@ -88,7 +88,10 @@ class OrangeFunTab8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('FunTab 8')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('FunTab 8')) {
             return false;
         }
 

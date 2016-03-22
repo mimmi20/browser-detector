@@ -88,7 +88,10 @@ class SprdSphs extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SPHS_on_Hsdroid')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SPHS_on_Hsdroid')) {
             return false;
         }
 

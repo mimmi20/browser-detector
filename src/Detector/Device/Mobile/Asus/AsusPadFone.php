@@ -88,11 +88,17 @@ class AsusPadFone extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('PadFone')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('PadFone')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('PadFone 2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('PadFone 2')) {
             return false;
         }
 

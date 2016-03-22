@@ -88,7 +88,10 @@ class MdLifeE3501 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('LIFE E3501')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('LIFE E3501')) {
             return false;
         }
 

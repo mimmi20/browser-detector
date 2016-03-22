@@ -88,7 +88,10 @@ class SamsungSghU800 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SGH-U800', 'SAMSUNG-SGH-U800'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SGH-U800', 'SAMSUNG-SGH-U800'])) {
             return false;
         }
 

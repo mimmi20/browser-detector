@@ -88,7 +88,10 @@ class TbTouchIgnis8 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Ignis 8'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Ignis 8'])) {
             return false;
         }
 

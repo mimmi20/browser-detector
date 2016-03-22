@@ -88,7 +88,10 @@ class SonyEricssonR800iv extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonR800iv', 'R800iv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonR800iv', 'R800iv'])) {
             return false;
         }
 

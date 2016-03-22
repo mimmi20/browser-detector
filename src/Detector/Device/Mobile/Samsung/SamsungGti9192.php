@@ -88,11 +88,17 @@ class SamsungGti9192 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['GT-I9192', 'I9192'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['GT-I9192', 'I9192'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['GT-I9192P', 'GT-I9192T', 'GT-I9192G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['GT-I9192P', 'GT-I9192T', 'GT-I9192G'])) {
             return false;
         }
 

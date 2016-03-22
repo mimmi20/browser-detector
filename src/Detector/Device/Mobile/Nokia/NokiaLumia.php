@@ -88,7 +88,10 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('nokia; lumia', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('nokia; lumia', true)) {
             return false;
         }
 
@@ -112,7 +115,10 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
             'nokia; lumia 1520',
         ];
 
-        if ($this->utils->checkIfContains($specialLumias, true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($specialLumias, true)) {
             return false;
         }
 

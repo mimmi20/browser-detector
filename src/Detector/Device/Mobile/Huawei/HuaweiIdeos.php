@@ -88,11 +88,17 @@ class HuaweiIdeos extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ideos '], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ideos '], true)) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['ideos s7'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['ideos s7'], true)) {
             return false;
         }
 

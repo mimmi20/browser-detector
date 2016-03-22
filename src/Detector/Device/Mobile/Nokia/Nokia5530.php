@@ -88,11 +88,17 @@ class Nokia5530 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nokia5530')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nokia5530')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('Nokia5530c')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('Nokia5530c')) {
             return false;
         }
 

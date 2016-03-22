@@ -88,7 +88,10 @@ class SamsungShwM110s extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SHW-M110S')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SHW-M110S')) {
             return false;
         }
 

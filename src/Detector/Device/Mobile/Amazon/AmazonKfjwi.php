@@ -88,7 +88,10 @@ class AmazonKfjwi extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['KFJWI'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['KFJWI'])) {
             return false;
         }
 

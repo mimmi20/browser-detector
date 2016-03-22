@@ -88,7 +88,10 @@ class AsusP1801t extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ASUS Tablet P1801-T')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ASUS Tablet P1801-T')) {
             return false;
         }
 

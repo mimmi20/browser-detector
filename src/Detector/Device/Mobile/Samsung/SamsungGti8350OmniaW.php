@@ -88,7 +88,10 @@ class SamsungGti8350OmniaW extends AbstractDevice implements DeviceHasSpecificPl
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG; GT-I8350', 'GT-I8350', 'SAMSUNG-GT-I8350'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG; GT-I8350', 'GT-I8350', 'SAMSUNG-GT-I8350'])) {
             return false;
         }
 

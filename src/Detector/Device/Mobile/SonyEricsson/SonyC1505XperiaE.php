@@ -88,11 +88,17 @@ class SonyC1505XperiaE extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonC1505', 'SonyC1505', 'C1505'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonC1505', 'SonyC1505', 'C1505'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonC1505v', 'SonyC1505v', 'C1505v'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonC1505v', 'SonyC1505v', 'C1505v'])) {
             return false;
         }
 

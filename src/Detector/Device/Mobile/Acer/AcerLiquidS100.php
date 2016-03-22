@@ -88,11 +88,17 @@ class AcerLiquidS100 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Liquid')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Liquid')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['Liquid MT', 'Acer Liquid Metal', 'Liquid Metal'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['Liquid MT', 'Acer Liquid Metal', 'Liquid Metal'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class Nokia808PureView extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nokia808PureView')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nokia808PureView')) {
             return false;
         }
 

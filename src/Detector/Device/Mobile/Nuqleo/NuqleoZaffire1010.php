@@ -88,7 +88,10 @@ class NuqleoZaffire1010 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Zaffire 1010'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Zaffire 1010'])) {
             return false;
         }
 

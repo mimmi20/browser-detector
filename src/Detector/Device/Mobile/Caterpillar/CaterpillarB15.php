@@ -88,11 +88,17 @@ class CaterpillarB15 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['B15'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['B15'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['B15Q'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['B15Q'])) {
             return false;
         }
 

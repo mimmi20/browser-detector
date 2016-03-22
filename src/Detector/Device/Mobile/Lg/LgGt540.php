@@ -88,7 +88,10 @@ class LgGt540 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['GT-540', 'GT540'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['GT-540', 'GT540'])) {
             return false;
         }
 

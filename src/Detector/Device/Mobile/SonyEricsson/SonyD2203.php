@@ -88,7 +88,10 @@ class SonyD2203 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonD2203', 'SonyD2203', 'D2203'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonD2203', 'SonyD2203', 'D2203'])) {
             return false;
         }
 

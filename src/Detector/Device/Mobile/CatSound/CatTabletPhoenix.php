@@ -88,7 +88,10 @@ class CatTabletPhoenix extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Cat Tablet PHOENIX'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Cat Tablet PHOENIX'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class ZteAtlasW extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ATLAS_W')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ATLAS_W')) {
             return false;
         }
 

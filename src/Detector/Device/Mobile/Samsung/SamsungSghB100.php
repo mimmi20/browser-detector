@@ -88,7 +88,10 @@ class SamsungSghB100 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SGH-B100', 'SEC-SGHB100'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SGH-B100', 'SEC-SGHB100'])) {
             return false;
         }
 

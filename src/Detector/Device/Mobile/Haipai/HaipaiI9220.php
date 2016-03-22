@@ -88,7 +88,10 @@ class HaipaiI9220 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Noble_I9220')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Noble_I9220')) {
             return false;
         }
 

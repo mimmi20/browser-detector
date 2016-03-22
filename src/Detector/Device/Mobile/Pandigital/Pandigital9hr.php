@@ -88,7 +88,10 @@ class Pandigital9hr extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['pandigital9hr'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['pandigital9hr'])) {
             return false;
         }
 

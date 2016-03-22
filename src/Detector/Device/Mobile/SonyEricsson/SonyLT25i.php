@@ -88,11 +88,17 @@ class SonyLT25i extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonLT25i', 'SonyLT25i', 'LT25i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonLT25i', 'SonyLT25i', 'LT25i'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonLT25iv', 'SonyLT25iv', 'LT25iv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonLT25iv', 'SonyLT25iv', 'LT25iv'])) {
             return false;
         }
 

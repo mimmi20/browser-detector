@@ -88,7 +88,10 @@ class SamsungGti8320 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-I8320', 'SAMSUNG-GT-I8320')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-I8320', 'SAMSUNG-GT-I8320')) {
             return false;
         }
 

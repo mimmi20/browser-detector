@@ -88,7 +88,10 @@ class MotorolaXt923DroidRazrHd extends AbstractDevice implements DeviceHasSpecif
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('DROID RAZR HD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('DROID RAZR HD')) {
             return false;
         }
 

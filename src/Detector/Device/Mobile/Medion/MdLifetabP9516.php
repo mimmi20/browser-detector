@@ -88,7 +88,10 @@ class MdLifetabP9516 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MD_LIFETAB_P9516')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MD_LIFETAB_P9516')) {
             return false;
         }
 

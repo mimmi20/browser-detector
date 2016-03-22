@@ -88,7 +88,10 @@ class TolinoTab89 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['tolino tab 8.9'], true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['tolino tab 8.9'], true)) {
             return false;
         }
 

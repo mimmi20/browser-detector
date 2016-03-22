@@ -88,7 +88,10 @@ class HtcS510eDesireS extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_DesireS_S510e'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_DesireS_S510e'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class WooSp6020 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SP-6020 QUASAR')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SP-6020 QUASAR')) {
             return false;
         }
 

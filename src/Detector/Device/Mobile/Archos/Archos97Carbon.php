@@ -88,7 +88,10 @@ class Archos97Carbon extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ARCHOS 97 CARBON')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ARCHOS 97 CARBON')) {
             return false;
         }
 

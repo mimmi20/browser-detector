@@ -88,7 +88,10 @@ class BnNookhd extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['BN NookHD+'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['BN NookHD+'])) {
             return false;
         }
 

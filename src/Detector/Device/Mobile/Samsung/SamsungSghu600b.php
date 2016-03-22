@@ -88,7 +88,10 @@ class SamsungSghu600b extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SEC-SGHU600B')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SEC-SGHU600B')) {
             return false;
         }
 

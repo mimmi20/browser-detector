@@ -88,7 +88,10 @@ class HtcDesireHhLs extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HTC_DesireHD-orange-LS')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HTC_DesireHD-orange-LS')) {
             return false;
         }
 

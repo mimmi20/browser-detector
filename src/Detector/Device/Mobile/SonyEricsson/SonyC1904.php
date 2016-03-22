@@ -88,11 +88,17 @@ class SonyC1904 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('C1904')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('C1904')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('C1904v')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('C1904v')) {
             return false;
         }
 

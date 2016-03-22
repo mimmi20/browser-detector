@@ -88,11 +88,17 @@ class SamsungGti9010GalaxyS extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Galaxy S', 'Galaxy-S'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Galaxy S', 'Galaxy-S'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['GT-I9010L', 'GT-I9010P'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['GT-I9010L', 'GT-I9010P'])) {
             return false;
         }
 

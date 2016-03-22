@@ -88,7 +88,10 @@ class DigmaPs1043mg extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Plane 10.3 3G PS1043MG')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Plane 10.3 3G PS1043MG')) {
             return false;
         }
 

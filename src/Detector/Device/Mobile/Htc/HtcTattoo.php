@@ -88,7 +88,10 @@ class HtcTattoo extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC Tattoo', 'HTC_TATTOO_A3288'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC Tattoo', 'HTC_TATTOO_A3288'])) {
             return false;
         }
 

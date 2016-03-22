@@ -88,7 +88,10 @@ class HtcNexusHd2 extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['NexusHD2', 'Nexus EvoHd2'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['NexusHD2', 'Nexus EvoHd2'])) {
             return false;
         }
 

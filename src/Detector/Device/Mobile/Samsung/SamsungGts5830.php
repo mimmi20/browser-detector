@@ -88,11 +88,17 @@ class SamsungGts5830 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-S5830')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-S5830')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['GT-S5830i', 'GT-S5830L', 'GT-S5830C'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['GT-S5830i', 'GT-S5830L', 'GT-S5830C'])) {
             return false;
         }
 

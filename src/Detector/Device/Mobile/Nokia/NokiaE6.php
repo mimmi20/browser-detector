@@ -88,11 +88,17 @@ class NokiaE6 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('NokiaE6')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('NokiaE6')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['NokiaE62', 'NokiaE63', 'NokiaE66', 'NokiaE6-'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['NokiaE62', 'NokiaE63', 'NokiaE66', 'NokiaE6-'])) {
             return false;
         }
 

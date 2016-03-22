@@ -88,11 +88,17 @@ class SonyC5803XperiaZ3Compact extends AbstractDevice implements DeviceHasSpecif
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonD5803', 'SonyD5803', 'D5803'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonD5803', 'SonyD5803', 'D5803'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonD5803v', 'SonyD5803v', 'D5803v'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonD5803v', 'SonyD5803v', 'D5803v'])) {
             return false;
         }
 

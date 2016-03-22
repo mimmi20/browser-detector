@@ -88,7 +88,10 @@ class AcerAllegro extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Acer; Allegro')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Acer; Allegro')) {
             return false;
         }
 

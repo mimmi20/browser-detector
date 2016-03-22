@@ -88,7 +88,10 @@ class WikoGetaway extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GETAWAY')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GETAWAY')) {
             return false;
         }
 

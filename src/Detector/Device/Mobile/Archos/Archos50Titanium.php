@@ -88,7 +88,10 @@ class Archos50Titanium extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Archos 50 Titanium')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Archos 50 Titanium')) {
             return false;
         }
 

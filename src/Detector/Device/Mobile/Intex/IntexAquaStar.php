@@ -88,7 +88,10 @@ class IntexAquaStar extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Aqua_Star'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Aqua_Star'])) {
             return false;
         }
 

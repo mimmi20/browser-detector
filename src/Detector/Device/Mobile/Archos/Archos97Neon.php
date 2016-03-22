@@ -88,7 +88,10 @@ class Archos97Neon extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('archos 97 neon', true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('archos 97 neon', true)) {
             return false;
         }
 

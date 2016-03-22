@@ -88,7 +88,10 @@ class HdcI9300GalaxyS3Ex extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Galaxy S3 EX'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Galaxy S3 EX'])) {
             return false;
         }
 

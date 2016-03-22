@@ -88,7 +88,10 @@ class OvermaxQuattor10 extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('OV-Quattor 10+')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('OV-Quattor 10+')) {
             return false;
         }
 

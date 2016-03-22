@@ -88,11 +88,17 @@ class XiaomiHmnote1lte extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('HM NOTE 1LTE')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('HM NOTE 1LTE')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('HM NOTE 1LTETD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('HM NOTE 1LTETD')) {
             return false;
         }
 

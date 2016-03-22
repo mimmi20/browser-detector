@@ -88,11 +88,17 @@ class SamsungGts5570 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('GT-S5570')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('GT-S5570')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains('GT-S5570I')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains('GT-S5570I')) {
             return false;
         }
 

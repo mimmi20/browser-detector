@@ -88,7 +88,10 @@ class MasterSmartphone650 extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Smartphone650')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Smartphone650')) {
             return false;
         }
 

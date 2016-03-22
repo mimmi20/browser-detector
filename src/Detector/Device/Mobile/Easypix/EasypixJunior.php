@@ -88,7 +88,10 @@ class EasypixJunior extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['Junior 4.0'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['Junior 4.0'])) {
             return false;
         }
 

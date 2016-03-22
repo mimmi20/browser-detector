@@ -88,7 +88,10 @@ class NokiaN800 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['NokiaN8-00'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['NokiaN8-00'])) {
             return false;
         }
 

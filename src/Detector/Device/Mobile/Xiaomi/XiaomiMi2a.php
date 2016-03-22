@@ -88,7 +88,10 @@ class XiaomiMi2a extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MI 2A'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MI 2A'])) {
             return false;
         }
 

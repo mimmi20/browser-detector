@@ -88,7 +88,10 @@ class HuaweiMediaPadM18 extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MediaPad M1 8.0'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MediaPad M1 8.0'])) {
             return false;
         }
 

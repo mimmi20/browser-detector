@@ -88,7 +88,10 @@ class MotorolaMilestoneXt720 extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Milestone XT720')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Milestone XT720')) {
             return false;
         }
 

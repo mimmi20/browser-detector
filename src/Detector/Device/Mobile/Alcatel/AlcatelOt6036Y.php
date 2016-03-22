@@ -88,7 +88,10 @@ class AlcatelOt6036Y extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('6036Y')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('6036Y')) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class VodafoneSmartTab3g extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Vodafone Smart Tab 3G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Vodafone Smart Tab 3G')) {
             return false;
         }
 

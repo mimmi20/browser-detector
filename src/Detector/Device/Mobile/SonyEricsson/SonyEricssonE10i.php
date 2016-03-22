@@ -88,7 +88,10 @@ class SonyEricssonE10i extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonE10i', 'E10i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonE10i', 'E10i'])) {
             return false;
         }
 

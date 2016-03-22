@@ -88,7 +88,10 @@ class HuaweiMediaPadT180 extends AbstractDevice implements DeviceHasSpecificPlat
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['MediaPad T1 8.0'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['MediaPad T1 8.0'])) {
             return false;
         }
 

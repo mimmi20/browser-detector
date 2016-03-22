@@ -88,7 +88,10 @@ class HtcZ710e extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Sensation_Z710e', 'HTC Sensation Z710e', 'Sensation_Z710e'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Sensation_Z710e', 'HTC Sensation Z710e', 'Sensation_Z710e'])) {
             return false;
         }
 

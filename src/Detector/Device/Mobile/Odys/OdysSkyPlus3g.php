@@ -88,7 +88,10 @@ class OdysSkyPlus3g extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Sky Plus')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Sky Plus')) {
             return false;
         }
 

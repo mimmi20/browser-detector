@@ -88,11 +88,17 @@ class SonyEricssonST27i extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonST27i', 'ST27i'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonST27i', 'ST27i'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonST27iv', 'ST27iv'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonST27iv', 'ST27iv'])) {
             return false;
         }
 

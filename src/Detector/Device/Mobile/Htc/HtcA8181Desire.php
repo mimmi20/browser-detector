@@ -88,7 +88,10 @@ class HtcA8181Desire extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Desire_A8181', 'Desire_A8181'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Desire_A8181', 'Desire_A8181'])) {
             return false;
         }
 

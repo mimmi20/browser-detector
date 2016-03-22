@@ -88,7 +88,10 @@ class ZteOpen extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ZTEOPEN'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ZTEOPEN'])) {
             return false;
         }
 

@@ -88,7 +88,10 @@ class LgLn510 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-LN510', 'LN510'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-LN510', 'LN510'])) {
             return false;
         }
 

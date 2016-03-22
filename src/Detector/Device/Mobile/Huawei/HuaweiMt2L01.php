@@ -88,7 +88,10 @@ class HuaweiMt2L01 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MT2-L01')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MT2-L01')) {
             return false;
         }
 

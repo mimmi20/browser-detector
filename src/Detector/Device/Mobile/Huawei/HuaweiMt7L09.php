@@ -88,7 +88,10 @@ class HuaweiMt7L09 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HUAWEI MT7-L09'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HUAWEI MT7-L09'])) {
             return false;
         }
 

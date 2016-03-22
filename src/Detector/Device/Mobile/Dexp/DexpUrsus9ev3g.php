@@ -88,7 +88,10 @@ class DexpUrsus9ev3g extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Ursus 9EV 3G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Ursus 9EV 3G')) {
             return false;
         }
 

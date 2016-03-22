@@ -88,7 +88,10 @@ class GeniatechMxEnjoyTvBox extends AbstractDevice implements DeviceHasSpecificP
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('MX Enjoy TV BOX')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('MX Enjoy TV BOX')) {
             return false;
         }
 

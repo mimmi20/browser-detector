@@ -88,7 +88,10 @@ class SamsungSshR730 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SCH-R730')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SCH-R730')) {
             return false;
         }
 

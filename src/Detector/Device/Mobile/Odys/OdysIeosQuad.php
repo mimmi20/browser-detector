@@ -88,7 +88,10 @@ class OdysIeosQuad extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('IEOS_QUAD')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('IEOS_QUAD')) {
             return false;
         }
 

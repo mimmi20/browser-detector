@@ -88,7 +88,10 @@ class HtcA6380Gratia extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['HTC_Gratia', 'HTC Gratia', 'HTC Gratia A6380', 'HTC_Gratia_A6380'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['HTC_Gratia', 'HTC Gratia', 'HTC Gratia A6380', 'HTC_Gratia_A6380'])) {
             return false;
         }
 

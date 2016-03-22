@@ -88,7 +88,10 @@ class SonyEricssonMK16a extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonMK16a', 'MK16a'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonMK16a', 'MK16a'])) {
             return false;
         }
 

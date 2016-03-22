@@ -88,7 +88,10 @@ class PocketBookSurfpad4l extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SURFpad 4 L')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SURFpad 4 L')) {
             return false;
         }
 

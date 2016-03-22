@@ -88,7 +88,10 @@ class LgHb620t extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['LG-HB620T', 'LG/HB620T'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['LG-HB620T', 'LG/HB620T'])) {
             return false;
         }
 

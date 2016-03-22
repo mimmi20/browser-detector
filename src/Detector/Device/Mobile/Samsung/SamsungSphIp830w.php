@@ -88,7 +88,10 @@ class SamsungSphIp830w extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SPH-ip830w')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SPH-ip830w')) {
             return false;
         }
 

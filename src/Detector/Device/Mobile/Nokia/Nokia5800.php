@@ -88,11 +88,17 @@ class Nokia5800 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('Nokia5800')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Nokia5800')) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['Nokia5800d'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['Nokia5800d'])) {
             return false;
         }
 

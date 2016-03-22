@@ -88,7 +88,10 @@ class SamsungSchU820 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-SCH-U820', 'SCH-U820'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-SCH-U820', 'SCH-U820'])) {
             return false;
         }
 

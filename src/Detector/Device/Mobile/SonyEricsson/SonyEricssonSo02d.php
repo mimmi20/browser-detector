@@ -88,7 +88,10 @@ class SonyEricssonSo02d extends AbstractDevice implements DeviceHasSpecificPlatf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('SO-02D')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('SO-02D')) {
             return false;
         }
 

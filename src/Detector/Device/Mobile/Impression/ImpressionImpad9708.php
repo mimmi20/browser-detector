@@ -88,7 +88,10 @@ class ImpressionImpad9708 extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ImPAD 9708')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ImPAD 9708')) {
             return false;
         }
 

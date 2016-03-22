@@ -88,11 +88,17 @@ class ZteV9 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['ZTE V9', ' V9 '])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['ZTE V9', ' V9 '])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['ZTE V970', 'V967S'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['ZTE V970', 'V967S'])) {
             return false;
         }
 

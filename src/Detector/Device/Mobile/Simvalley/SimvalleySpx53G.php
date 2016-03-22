@@ -88,7 +88,10 @@ class SimvalleySpx53G extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SPX-5 3G', 'SPX-5_3G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SPX-5 3G', 'SPX-5_3G'])) {
             return false;
         }
 

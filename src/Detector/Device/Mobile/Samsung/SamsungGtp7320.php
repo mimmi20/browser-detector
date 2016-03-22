@@ -88,11 +88,17 @@ class SamsungGtp7320 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SAMSUNG-GT-P7320', 'GT-P7320'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SAMSUNG-GT-P7320', 'GT-P7320'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SAMSUNG-GT-P7320B', 'GT-P7320B'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SAMSUNG-GT-P7320B', 'GT-P7320B'])) {
             return false;
         }
 

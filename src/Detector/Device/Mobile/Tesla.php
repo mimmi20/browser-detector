@@ -105,6 +105,6 @@ class Tesla extends AbstractDevice implements DeviceHasChildrenInterface, Device
      */
     public function detectOs()
     {
-        return new Os\L($this->useragent, [])ent);
+        return new Os\Linux($this->useragent, []);
     }
 }

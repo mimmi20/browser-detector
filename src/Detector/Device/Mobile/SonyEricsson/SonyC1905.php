@@ -88,11 +88,17 @@ class SonyC1905 extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['SonyEricssonC1905', 'SonyC1905', 'C1905'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['SonyEricssonC1905', 'SonyC1905', 'C1905'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['SonyEricssonC1905v', 'SonyC1905v', 'C1905v'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['SonyEricssonC1905v', 'SonyC1905v', 'C1905v'])) {
             return false;
         }
 

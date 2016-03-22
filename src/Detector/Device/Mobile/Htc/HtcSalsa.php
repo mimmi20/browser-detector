@@ -88,7 +88,10 @@ class HtcSalsa extends AbstractDevice implements DeviceHasSpecificPlatformInterf
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(
             ['HTC/Salsa', 'HTC/Salsa/', 'HTC Salsa', 'HTC_Salsa', 'HTC Salsa C510e']
         )
         ) {

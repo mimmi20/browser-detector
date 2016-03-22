@@ -88,7 +88,10 @@ class MotorolaDroidX extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(' DROIDX ')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(' DROIDX ')) {
             return false;
         }
 

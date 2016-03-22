@@ -88,7 +88,10 @@ class BlackBerryZ10 extends AbstractDevice implements DeviceHasSpecificPlatformI
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('BB10; Touch')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('BB10; Touch')) {
             return false;
         }
 

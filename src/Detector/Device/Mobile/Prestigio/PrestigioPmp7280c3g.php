@@ -88,11 +88,17 @@ class PrestigioPmp7280c3g extends AbstractDevice implements DeviceHasSpecificPla
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['PMP7280C3G'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['PMP7280C3G'])) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['PMP7280C3G_QUAD'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['PMP7280C3G_QUAD'])) {
             return false;
         }
 

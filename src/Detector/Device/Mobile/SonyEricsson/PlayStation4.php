@@ -88,7 +88,10 @@ class PlayStation4 extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function canHandle()
     {
-        if ($this->utils->checkIfContains(['PlayStation 4'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(['PlayStation 4'])) {
             return true;
         }
 

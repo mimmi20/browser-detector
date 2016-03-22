@@ -88,7 +88,10 @@ class ImpressionImpad6213Mv2 extends AbstractDevice implements DeviceHasSpecific
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('ImPAD6213M_v2')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('ImPAD6213M_v2')) {
             return false;
         }
 

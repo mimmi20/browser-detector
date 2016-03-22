@@ -93,7 +93,10 @@ class HtcAdr6350 extends AbstractDevice implements DeviceHasSpecificPlatformInte
             'ADR6350',
         ];
 
-        if (!$this->utils->checkIfContains($phones)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains($phones)) {
             return false;
         }
 

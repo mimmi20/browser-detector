@@ -88,7 +88,10 @@ class BluVivoIv extends AbstractDevice implements DeviceHasSpecificPlatformInter
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains(['VIVO IV'])) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains(['VIVO IV'])) {
             return false;
         }
 
