@@ -88,7 +88,10 @@ class AccentTouareg83g extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function canHandle()
     {
-        if (!$this->utils->checkIfContains('TOUAREG8_3G')) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('TOUAREG8_3G')) {
             return false;
         }
 

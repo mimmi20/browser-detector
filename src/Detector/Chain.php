@@ -31,16 +31,16 @@
 
 namespace BrowserDetector\Detector;
 
+use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Helper\Classname;
 use DirectoryIterator;
-use UaMatcher\MatcherInterface;
 
 /**
  * a general chain used for detecting devices, browsers, platforms and engines
  */
 class Chain
 {
-    /** @var array */
+    /** @var \UaMatcher\MatcherHasWeightInterface[] */
     private $handlersToUse = [];
 
     /** @var mixed */
@@ -58,11 +58,11 @@ class Chain
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \UaMatcher\MatcherInterface $handler
+     * @param \BrowserDetector\Detector\Device\AbstractDevice $handler
      *
      * @return \BrowserDetector\Detector\Chain
      */
-    public function setDefaultHandler(MatcherInterface $handler)
+    public function setDefaultHandler(AbstractDevice $handler)
     {
         $this->defaultHandler = $handler;
 
@@ -72,7 +72,7 @@ class Chain
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \UaMatcher\MatcherInterface[] $handlersToUse
+     * @param \UaMatcher\MatcherHasWeightInterface[] $handlersToUse
      *
      * @return \BrowserDetector\Detector\Chain
      */
@@ -160,7 +160,8 @@ class Chain
                 );
 
                 try {
-                    $handler = new $className();
+                    /** @var \UaMatcher\MatcherHasWeightInterface $handler */
+                    $handler = new $className($this->useragent, []);
                 } catch (\Exception $e) {
                     continue;
                 }
@@ -173,8 +174,8 @@ class Chain
             $chain->top();
 
             while ($chain->valid()) {
+                /** @var \UaMatcher\MatcherCanHandleInterface $handler */
                 $handler = $chain->current();
-                $handler->setUserAgent($this->useragent);
 
                 if ($handler->canHandle()) {
                     return $handler;
@@ -184,8 +185,7 @@ class Chain
             }
         }
 
-        if (null !== $this->defaultHandler && is_object($this->defaultHandler)
-        ) {
+        if (null !== $this->defaultHandler && is_object($this->defaultHandler)) {
             $handler = $this->defaultHandler;
         } else {
             $utils     = new Classname();
@@ -194,10 +194,8 @@ class Chain
                 $this->namespace,
                 true
             );
-            $handler   = new $className();
+            $handler   = new $className($this->useragent, []);
         }
-
-        $handler->setUserAgent($this->useragent);
 
         return $handler;
     }
