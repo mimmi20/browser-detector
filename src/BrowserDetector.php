@@ -37,11 +37,12 @@ use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
-use UaMatcher\Browser\BrowserDependsOnEngineInterface;
-use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
+//use UaMatcher\Browser\BrowserCalculatesAlternativeResultInterface;
+//use UaMatcher\Browser\BrowserDependsOnEngineInterface;
+//use UaMatcher\Browser\BrowserHasRuntimeModificationsInterface;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\Engine\EngineDependsOnDeviceInterface;
+//use UaMatcher\Engine\EngineDependsOnDeviceInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
@@ -152,30 +153,34 @@ class BrowserDetector
             $platform = $device->detectOs();
         } else {
             // detect the os which runs on the device
-            $platform = PlatformFactory::detect($request->getBrowserUserAgent(), $this->logger);
+            $platform = PlatformFactory::detect($request->getBrowserUserAgent());
         }
 
         // detect the browser which is used
-        $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $platform, $this->logger, $this->cache);
+        $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $platform);
 
-        if ($browser instanceof BrowserHasRuntimeModificationsInterface) {
-            $browser->detectSpecialProperties();
-        }
+        //if ($browser instanceof BrowserHasRuntimeModificationsInterface) {
+        //    $browser->detectSpecialProperties();
+        //}
 
-        if ($browser instanceof BrowserCalculatesAlternativeResultInterface) {
-            $browser->calculateAlternativeRendering($device);
-        }
+        //if ($browser instanceof BrowserCalculatesAlternativeResultInterface) {
+        //    $browser->calculateAlternativeRendering($device);
+        //}
 
         // detect the engine which is used in the browser
-        $engine = EngineFactory::detect($request->getBrowserUserAgent(), $this->logger, $platform);
-
-        if ($browser instanceof BrowserDependsOnEngineInterface) {
-            $browser->detectDependProperties($engine);
+        if ($browser instanceof BrowserHasSpecificEngineInterface) {
+            $engine = $browser->getEngine();
+        } else {
+            $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
         }
 
-        if ($engine instanceof EngineDependsOnDeviceInterface) {
-            $engine->detectDependProperties($device);
-        }
+        //if ($browser instanceof BrowserDependsOnEngineInterface) {
+        //    $browser->detectDependProperties($engine);
+        //}
+
+        //if ($engine instanceof EngineDependsOnDeviceInterface) {
+        //    $engine->detectDependProperties($device);
+        //}
 
         //if ($platform instanceof OsChangesEngineInterface) {
         //    $platform->changeEngineProperties($engine, $browser, $device);

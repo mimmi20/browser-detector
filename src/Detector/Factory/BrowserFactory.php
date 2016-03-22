@@ -100,7 +100,6 @@ use BrowserDetector\Detector\Browser\BlogsharesSpiders;
 use BrowserDetector\Detector\Browser\BlukLddcBot;
 use BrowserDetector\Detector\Browser\BnfFrBot;
 use BrowserDetector\Detector\Browser\BoardReaderFaviconFetcher;
-use BrowserDetector\Detector\Browser\Bot12345;
 use BrowserDetector\Detector\Browser\Bot360;
 use BrowserDetector\Detector\Browser\Bot80Legs;
 use BrowserDetector\Detector\Browser\BotAraTurka;
@@ -698,9 +697,7 @@ use BrowserDetector\Detector\Browser\ZmEu;
 use BrowserDetector\Detector\Browser\ZollardWorm;
 use BrowserDetector\Detector\Browser\Zookabot;
 use BrowserDetector\Detector\Browser\ZumBot;
-use Psr\Log\LoggerInterface;
-use UaMatcher\Os\OsInterface;
-use WurflCache\Adapter\AdapterInterface;
+use UaResult\Os\OsInterface;
 
 /**
  * Browser detection class
@@ -716,18 +713,14 @@ class BrowserFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string                               $agent
-     * @param \UaMatcher\Os\OsInterface            $platform
-     * @param \Psr\Log\LoggerInterface             $logger
-     * @param \WurflCache\Adapter\AdapterInterface $cache
+     * @param string                   $agent
+     * @param \UaResult\Os\OsInterface $platform
      *
      * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public static function detect(
         $agent,
-        OsInterface $platform = null,
-        LoggerInterface $logger = null,
-        AdapterInterface $cache = null
+        OsInterface $platform = null
     ) {
         if (preg_match('/windows nt (7|8|9)/i', $agent)) {
             $browser = new FakeBrowser($agent, []);
@@ -2220,10 +2213,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new UnisterTesting($agent, []);
         } else {
             $browser = new UnknownBrowser($agent, []);
-        }
-
-        if (null !== $cache) {
-            $browser->setCache($cache);
         }
 
         return $browser;

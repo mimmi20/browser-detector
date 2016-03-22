@@ -256,12 +256,8 @@ class Version implements VersionInterface, \Serializable
 
         $version = implode('.', $versions);
 
-        if ('0' === $version || '0.0' === $version || '0.0.0' === $version) {
-            $version = '';
-        }
-
-        if (VersionInterface::GET_ZERO_IF_EMPTY & $mode && '' === $version) {
-            $version = '0';
+        if ('0' === $version || '0.0' === $version ||  '' === $version) {
+            $version = '0.0.0';
         }
 
         return $version;
