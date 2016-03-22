@@ -3,7 +3,7 @@
 namespace BrowserDetectorTest\Detector\Factory;
 
 use BrowserDetector\Detector\Factory\EngineFactory;
-use UaResult\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\GeneralMobile

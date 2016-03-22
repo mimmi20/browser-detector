@@ -27,7 +27,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace UaResult;
+namespace BrowserDetector\Detector;
 
 use UaMatcher\Version\VersionInterface;
 

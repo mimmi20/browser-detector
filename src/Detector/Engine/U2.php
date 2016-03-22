@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use UaResult\Version as ResultVersion;
+use BrowserDetector\Detector\Version as ResultVersion;
 use Version\Version;
 
 /**

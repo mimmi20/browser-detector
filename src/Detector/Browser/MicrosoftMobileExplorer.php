@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use UaResult\Version as ResultVersion;
+use BrowserDetector\Detector\Version as ResultVersion;
 use Version\Version;
 
 /**
