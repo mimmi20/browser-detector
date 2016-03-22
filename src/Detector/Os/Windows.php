@@ -59,7 +59,7 @@ class Windows extends AbstractOs
         $this->setData(
             [
                 'name'         => 'Windows',
-                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'      => (($version === null || !is_numeric($version)) ? new Version($version) : Version::parse($version)),
                 'manufacturer' => (new Company\Microsoft())->name,
                 'bits'         => null,
             ]

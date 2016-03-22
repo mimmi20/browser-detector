@@ -109,9 +109,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
     {
         $engine = $this->getEngine();
 
-        $engineVersion = (int) $engine->detectVersion()->getVersion(
-            ResultVersion::MAJORONLY
-        );
+        $engineVersion = (int) $engine->getVersion()->getMajor();
 
         switch ($engineVersion) {
             case 4:
