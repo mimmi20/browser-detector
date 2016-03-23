@@ -33,9 +33,7 @@ namespace BrowserDetector\Detector\Device\Desktop;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
 use UaDeviceType;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +41,7 @@ use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LinuxDesktop extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class LinuxDesktop extends AbstractDevice
 {
     /**
      * the class constructor
@@ -76,15 +74,5 @@ class LinuxDesktop extends AbstractDevice implements DeviceHasSpecificPlatformIn
                 'type'              => new UaDeviceType\Desktop(),
             ]
         );
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

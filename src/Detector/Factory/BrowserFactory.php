@@ -798,7 +798,7 @@ class BrowserFactory implements FactoryInterface
             $browser = new FacebookApp($agent, []);
         } elseif (false !== strpos($agent, 'ACHEETAHI')) {
             $browser = new CmBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'bdbrowser_i18n')) {
+        } elseif (false !== strpos($agent, 'bdbrowser_i18n') || false !== strpos($agent, 'baidubrowser')) {
             $browser = new BaiduBrowser($agent, []);
         } elseif (false !== strpos($agent, 'bdbrowserhd_i18n')) {
             $browser = new BaiduHdBrowser($agent, []);

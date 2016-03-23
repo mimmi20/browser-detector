@@ -32,9 +32,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine;
 use UaBrowserType;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Version as ResultVersion;
 use Version\Version;
 
@@ -44,7 +42,7 @@ use Version\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Chrome extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Chrome extends AbstractBrowser
 {
     /**
      * Class Constructor
@@ -91,15 +89,5 @@ class Chrome extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $searches = ['Chrome', 'CrMo', 'CriOS'];
 
         return $detector->detectVersion($searches)->getVersion();
-    }
-
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function getEngine()
-    {
-        return new Engine\UnknownEngine($this->useragent, []);
     }
 }
