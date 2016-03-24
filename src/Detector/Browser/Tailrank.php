@@ -96,7 +96,7 @@ class Tailrank extends AbstractBrowser implements BrowserHasSpecificEngineInterf
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     * @return \BrowserDetector\Detector\Engine\Webkit
      */
     public function getEngine()
     {

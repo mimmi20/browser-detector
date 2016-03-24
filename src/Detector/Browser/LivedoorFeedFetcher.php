@@ -32,7 +32,9 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Engine;
 use UaBrowserType;
+use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Version as ResultVersion;
 use Version\Version;
 
@@ -42,7 +44,7 @@ use Version\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Opera extends AbstractBrowser
+class LivedoorFeedFetcher extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,19 +61,19 @@ class Opera extends AbstractBrowser
 
         $this->setData(
             [
-                'name'                        => 'Opera',
+                'name'                        => 'Livedoor',
                 'modus'                       => null,
                 'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
-                'manufacturer'                => (new Company\Opera())->name,
+                'manufacturer'                => (new Company\Unknown())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => true,
-                'claimsWebSupport'            => true,
+                'canSkipAlignedLinkRow'       => false,
+                'claimsWebSupport'            => false,
                 'supportsEmptyOptionValues'   => true,
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Browser(),
+                'type'                        => new UaBrowserType\Bot(),
             ]
         );
     }
@@ -86,8 +88,18 @@ class Opera extends AbstractBrowser
         $detector = new ResultVersion();
         $detector->setUserAgent($this->useragent);
 
-        $searches = ['Version', 'Opera', 'OPR'];
+        $searches = ['livedoor FeedFetcher'];
 
         return $detector->detectVersion($searches)->getVersion();
+    }
+
+    /**
+     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     *
+     * @return \BrowserDetector\Detector\Engine\UnknownEngine
+     */
+    public function getEngine()
+    {
+        return new Engine\UnknownEngine($this->useragent, []);
     }
 }

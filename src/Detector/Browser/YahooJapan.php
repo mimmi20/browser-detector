@@ -59,7 +59,7 @@ class YahooJapan extends AbstractBrowser implements BrowserHasSpecificEngineInte
 
         $this->setData(
             [
-                'name'                        => 'Y!J-AGENT',
+                'name'                        => 'Yahoo! Japan',
                 'modus'                       => null,
                 'version'                     => new Version(0),
                 'manufacturer'                => (new Company\YahooJapan())->name,
