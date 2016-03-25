@@ -29,8 +29,6 @@
 
 namespace BrowserDetector\Detector;
 
-use UaMatcher\Version\VersionInterface;
-
 /**
  * a general version detector
  *
@@ -40,16 +38,6 @@ use UaMatcher\Version\VersionInterface;
  */
 class Version implements VersionInterface, \Serializable
 {
-    /**
-     * @var string the user agent to handle
-     */
-    private $useragent = null;
-
-    /**
-     * @var string the detected complete version
-     */
-    private $version = null;
-
     /**
      * @var string the detected major version
      */
@@ -66,14 +54,40 @@ class Version implements VersionInterface, \Serializable
     private $micro = null;
 
     /**
-     * @var string the default version
+     * @var string
      */
-    private $default = '';
+    private $preRelease = null;
 
     /**
-     * @var int
+     * @var string
      */
-    private $mode = VersionInterface::COMPLETE;
+    private $build = null;
+
+    /**
+     * @param int|string $major
+     * @param int|string $minor
+     * @param int|string $patch
+     * @param array|string $preRelease OPTIONAL
+     * @param array|string $build OPTIONAL
+     */
+    public function __construct($major, $minor = 0, $patch = 0, $preRelease = null, $build = null)
+    {
+        if ((!is_int($major) && !is_string($major)) || $major < 0) {
+            throw new \InvalidArgumentException('Major version must be a non-negative integer or a string');
+        }
+        if ((!is_int($minor) && !is_string($minor)) || $minor < 0) {
+            throw new \InvalidArgumentException('Minor version must be a non-negative integer or a string');
+        }
+        if ((!is_int($patch) && !is_string($patch)) || $patch < 0) {
+            throw new \InvalidArgumentException('Patch version must be a non-negative integer or a string');
+        }
+
+        $this->major = $major;
+        $this->minor = $minor;
+        $this->micro = $patch;
+        $this->preRelease = $preRelease;
+        $this->build = $build;
+    }
 
     /**
      * (PHP 5 &gt;= 5.1.0)<br/>
@@ -85,10 +99,11 @@ class Version implements VersionInterface, \Serializable
     {
         return serialize(
             [
-                'version'   => $this->version,
-                'mode'      => $this->mode,
-                'useragent' => $this->useragent,
-                'default'   => $this->default,
+                'major'      => $this->major,
+                'minor'      => $this->minor,
+                'micro'      => $this->micro,
+                'preRelease' => $this->preRelease,
+                'build'      => $this->build,
             ]
         );
     }
@@ -105,59 +120,11 @@ class Version implements VersionInterface, \Serializable
     {
         $unseriliazedData = unserialize($serialized);
 
-        $this->version   = $unseriliazedData['version'];
-        $this->mode      = $unseriliazedData['mode'];
-        $this->useragent = $unseriliazedData['useragent'];
-        $this->default   = $unseriliazedData['default'];
-
-        $this->setVersion($this->version);
-    }
-
-    /**
-     * sets the user agent to be handled
-     *
-     * @param string $userAgent
-     *
-     * @return Version
-     */
-    public function setUserAgent($userAgent)
-    {
-        $this->useragent = $userAgent;
-
-        return $this;
-    }
-
-    /**
-     * sets the user agent to be handled
-     *
-     * @param int $mode
-     *
-     * @return Version
-     */
-    public function setMode($mode)
-    {
-        $this->mode = $mode;
-
-        return $this;
-    }
-
-    /**
-     * sets the default version, which is used, if no version could be detected
-     *
-     * @param string $version
-     *
-     * @throws \UnexpectedValueException
-     * @return Version
-     */
-    public function setDefaulVersion($version)
-    {
-        if (!is_string($version)) {
-            throw new \UnexpectedValueException(
-                'the default version needs to be a string'
-            );
-        }
-
-        $this->default = $version;
+        $this->major      = $unseriliazedData['major'];
+        $this->minor      = $unseriliazedData['minor'];
+        $this->micro      = $unseriliazedData['micro'];
+        $this->preRelease = $unseriliazedData['preRelease'];
+        $this->build      = $unseriliazedData['build'];
     }
 
     public function __toString()
@@ -179,24 +146,8 @@ class Version implements VersionInterface, \Serializable
      * @throws \UnexpectedValueException
      * @return string
      */
-    public function getVersion($mode = null)
+    public function getVersion($mode = VersionInterface::COMPLETE)
     {
-        if (null === $this->version) {
-            if (null === $this->useragent) {
-                throw new \UnexpectedValueException(
-                    'You have to set the useragent before calling this function'
-                );
-            }
-
-            $this->detectVersion();
-        } elseif (null === $this->major) {
-            $this->setVersion($this->version);
-        }
-
-        if (null === $mode) {
-            $mode = $this->mode;
-        }
-
         $versions = [];
         if (VersionInterface::MAJORONLY & $mode) {
             $versions[0] = $this->major;
@@ -208,6 +159,8 @@ class Version implements VersionInterface, \Serializable
 
         if (VersionInterface::MICROONLY & $mode) {
             $versions[2] = $this->micro;
+            $versions[3] = $this->preRelease;
+            $versions[4] = $this->build;
         }
 
         $microIsEmpty = false;
@@ -216,16 +169,15 @@ class Version implements VersionInterface, \Serializable
         }
 
         if (VersionInterface::IGNORE_MICRO & $mode) {
-            unset($versions[2]);
+            unset($versions[2], $versions[3], $versions[4]);
         } elseif (VersionInterface::IGNORE_MICRO_IF_EMPTY & $mode && $microIsEmpty) {
-            unset($versions[2]);
+            unset($versions[2], $versions[3], $versions[4]);
         }
 
         $minorIsEmpty = false;
 
         if (VersionInterface::IGNORE_MINOR & $mode) {
-            unset($versions[1]);
-            unset($versions[2]);
+            unset($versions[1], $versions[2], $versions[3], $versions[4]);
             $minorIsEmpty = true;
         } elseif (VersionInterface::IGNORE_MINOR_IF_EMPTY & $mode) {
             if ($microIsEmpty
@@ -235,8 +187,7 @@ class Version implements VersionInterface, \Serializable
             }
 
             if ($minorIsEmpty) {
-                unset($versions[1]);
-                unset($versions[2]);
+                unset($versions[1], $versions[2], $versions[3], $versions[4]);
             }
         }
 
@@ -248,19 +199,23 @@ class Version implements VersionInterface, \Serializable
             }
 
             if ($macroIsEmpty) {
-                unset($versions[0]);
-                unset($versions[1]);
-                unset($versions[2]);
+                unset($versions[0], $versions[1], $versions[2], $versions[3], $versions[4]);
             }
         }
 
-        $version = implode('.', $versions);
+        if (!isset($versions[0])) {
+            if (VersionInterface::GET_ZERO_IF_EMPTY & $mode) {
+                return '0';
+            }
 
-        if ('0' === $version || '0.0' === $version ||  '' === $version) {
-            $version = '0.0.0';
+            return '';
         }
 
-        return $version;
+        return $versions[0]
+            . (isset($versions[1]) ? '.' . (string) $versions[1] : '')
+            . (isset($versions[2]) ? '.' . (string) $versions[2] : '')
+            . (isset($versions[3]) ? '-' . (string) $versions[3] : '')
+            . (isset($versions[4]) ? '+' . (string) $versions[4] : '');
     }
 
     /**
