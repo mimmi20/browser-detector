@@ -73,9 +73,6 @@ class MacintoshOs extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Macintosh'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Macintosh']);
     }
 }

@@ -73,9 +73,6 @@ class Kubuntu extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Kubuntu', 'kubuntu'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Kubuntu', 'kubuntu']);
     }
 }

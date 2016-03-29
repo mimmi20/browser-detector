@@ -81,16 +81,13 @@ class Wotbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $searches = ['Wotbox'];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -125,8 +125,8 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $check = trim(substr($filecontent, $pos2 + 1, $pos3 - $pos2));
 
         $check = str_replace(
-            ['return $detector->detectVersion($searches);', '$detector = new Version();'],
-            ['return $detector->detectVersion($searches)->getVersion();', '$detector = new ResultVersion();'],
+            ['return ResultVersion::detectVersion($this->useragent, $searches);', '$detector = new Version();'],
+            ['return ResultVersion::detectVersion($this->useragent, $searches);', ''],
             $check
         );
     } else {

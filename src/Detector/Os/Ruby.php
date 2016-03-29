@@ -73,9 +73,6 @@ class Ruby extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Ruby'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Ruby']);
     }
 }

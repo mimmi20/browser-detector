@@ -81,16 +81,13 @@ class WdgHtmlValidator extends AbstractBrowser implements BrowserHasSpecificEngi
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $searches = ['WDG_Validator'];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -81,16 +81,13 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $searches = ['Java'];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 
     /**

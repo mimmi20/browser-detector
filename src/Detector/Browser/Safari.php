@@ -82,13 +82,10 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $safariHelper = new SafariHelper($this->useragent);
 
         $doMatch = preg_match('/Version\/([\d\.]+)/', $this->useragent, $matches);

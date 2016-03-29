@@ -73,9 +73,6 @@ class Ios extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $searches = [
             'IphoneOSX',
             'CPU OS\_',

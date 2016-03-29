@@ -73,9 +73,6 @@ class FreeBsd extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['FreeBSD', 'freebsd'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['FreeBSD', 'freebsd']);
     }
 }

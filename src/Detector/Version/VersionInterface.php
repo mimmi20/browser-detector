@@ -130,38 +130,13 @@ interface VersionInterface
     public function getVersion($mode = null);
 
     /**
-     * sets the detected version
-     *
-     * @param string $version
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return VersionInterface
-     */
-    public function setVersion($version);
-
-    /**
      * detects the bit count by this browser from the given user agent
      *
+     * @param string       $useragent
      * @param string|array $searches
-     *
-     * @throws \UnexpectedValueException
+     * @param string       $default
      *
      * @return VersionInterface
      */
-    public function detectVersion($searches = '');
-
-    /**
-     * detects if the version is makred as Alpha
-     *
-     * @return bool
-     */
-    public function isAlpha();
-
-    /**
-     * detects if the version is makred as Beta
-     *
-     * @return bool
-     */
-    public function isBeta();
+    public static function detectVersion($useragent, $searches = '', $default = '0');
 }

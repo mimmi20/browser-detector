@@ -73,9 +73,6 @@ class Slackware extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Slackware'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Slackware']);
     }
 }

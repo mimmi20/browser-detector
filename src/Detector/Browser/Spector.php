@@ -81,16 +81,13 @@ class Spector extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $searches = ['Spector', 'Spector%20Pro'];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -73,9 +73,6 @@ class Irix extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['IRIX'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['IRIX']);
     }
 }

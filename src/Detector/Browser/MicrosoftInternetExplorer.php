@@ -103,7 +103,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {

@@ -73,9 +73,6 @@ class Ubuntu extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Ubuntu', 'ubuntu'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Ubuntu', 'ubuntu']);
     }
 }

@@ -73,9 +73,6 @@ class Tizen extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Tizen'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Tizen']);
     }
 }

@@ -73,9 +73,6 @@ class OpenVms extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['OpenVMS'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['OpenVMS']);
     }
 }

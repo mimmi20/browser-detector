@@ -82,13 +82,10 @@ class MicrosoftOfficeSyncProc extends AbstractBrowser implements BrowserHasSpeci
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $doMatch = preg_match(
             '/Office SyncProc(\/| )([\d\.]+)/',
             $this->useragent,

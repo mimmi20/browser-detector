@@ -68,13 +68,10 @@ class Webkit extends AbstractEngine
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $searches = [
             'AppleWebKit',
             'WebKit',
@@ -82,6 +79,6 @@ class Webkit extends AbstractEngine
             'Browser\/AppleWebKit',
         ];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 }

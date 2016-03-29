@@ -73,9 +73,6 @@ class AmigaOS extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['AmigaOS'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['AmigaOS']);
     }
 }

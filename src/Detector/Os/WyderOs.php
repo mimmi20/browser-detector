@@ -73,9 +73,6 @@ class WyderOs extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['WyderOS'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['WyderOS']);
     }
 }

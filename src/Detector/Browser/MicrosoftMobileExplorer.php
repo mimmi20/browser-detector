@@ -82,15 +82,12 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
-
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
             return '9.0';
@@ -102,7 +99,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
 
         $searches = ['IEMobile', 'MSIE', 'rv\:'];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 
     /**

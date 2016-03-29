@@ -81,9 +81,6 @@ class Debian extends AbstractOs
             return '6.0';
         }
 
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Debian'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Debian']);
     }
 }

@@ -73,9 +73,6 @@ class JoliOs extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Joli OS'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Joli OS']);
     }
 }

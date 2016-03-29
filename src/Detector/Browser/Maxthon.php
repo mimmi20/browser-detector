@@ -81,7 +81,7 @@ class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
@@ -93,13 +93,9 @@ class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
             return '1.0';
         }
 
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-        $detector->setDefaulVersion('2.0');
-
         $searches = ['Maxthon', 'MxBrowser', 'Version'];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches, '2.0');
     }
 
     /**

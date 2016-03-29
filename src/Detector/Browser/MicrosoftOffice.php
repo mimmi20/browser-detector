@@ -81,7 +81,7 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasSpecificEngin
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {

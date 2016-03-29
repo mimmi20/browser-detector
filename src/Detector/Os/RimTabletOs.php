@@ -73,9 +73,6 @@ class RimTabletOs extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['RIM Tablet OS'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['RIM Tablet OS']);
     }
 }

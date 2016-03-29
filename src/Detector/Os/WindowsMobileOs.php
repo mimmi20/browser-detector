@@ -78,22 +78,17 @@ class WindowsMobileOs extends AbstractOs
             return '6.0';
         }
 
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains(['Windows CE', 'Windows Mobile', 'MSIEMobile'])) {
-            $detector->setDefaulVersion('6.0');
-
             $searches = ['MSIEMobile'];
 
-            return $detector->detectVersion($searches)->getVersion();
+            return ResultVersion::detectVersion($this->useragent, $searches, '6.0');
         }
 
         $searches = ['Windows Phone'];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 }

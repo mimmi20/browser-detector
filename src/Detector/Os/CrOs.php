@@ -73,9 +73,6 @@ class CrOs extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['CrOS'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['CrOS']);
     }
 }

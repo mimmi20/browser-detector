@@ -81,7 +81,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserHasSpecificEn
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {

@@ -73,9 +73,6 @@ class OpenBsd extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['OpenBSD'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['OpenBSD']);
     }
 }

@@ -73,9 +73,6 @@ class Mint extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Mint', 'mint'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Mint', 'mint']);
     }
 }

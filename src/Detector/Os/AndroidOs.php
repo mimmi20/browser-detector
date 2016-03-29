@@ -77,9 +77,6 @@ class AndroidOs extends AbstractOs
             return '2.1.1';
         }
 
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $searches = [
             'Android android',
             'Android AndroidHouse Team',

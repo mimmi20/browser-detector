@@ -73,15 +73,12 @@ class RimOs extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $searches = ['BlackBerry[0-9a-z]+', 'BlackBerrySimulator'];
 
         if (false !== stripos($this->useragent, 'opera')) {
             $searches[] = 'Version';
         }
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 }

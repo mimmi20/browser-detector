@@ -81,9 +81,6 @@ class WindowsPhoneOs extends AbstractOs
             return '7.5';
         }
 
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         if ($utils->checkIfContains(['WPDesktop'])) {
             if ($utils->checkIfContains(['Windows NT 6.2'])) {
                 return '8.1';
@@ -94,6 +91,6 @@ class WindowsPhoneOs extends AbstractOs
 
         $searches = ['Windows Phone OS', 'Windows Phone'];
 
-        return $detector->detectVersion($searches)->getVersion();
+        return ResultVersion::detectVersion($this->useragent, $searches);
     }
 }

@@ -73,9 +73,6 @@ class Bada extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Bada'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Bada']);
     }
 }

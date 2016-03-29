@@ -73,9 +73,6 @@ class Tru64Unix extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Tru64 UNIX', 'Digital Unix'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Tru64 UNIX', 'Digital Unix']);
     }
 }

@@ -73,9 +73,6 @@ class Unix extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Unix'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Unix']);
     }
 }

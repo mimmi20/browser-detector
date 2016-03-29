@@ -73,13 +73,9 @@ class Macosx extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-        $detector->setDefaulVersion('10');
-
         $searches = ['Mac OS X', 'Mac OS X v'];
 
-        $detector->detectVersion($searches);
+        $detector = ResultVersion::detectVersion($this->useragent, $searches, '10');
 
         if ($detector->getVersion(ResultVersion::MAJORONLY) > 99) {
             $versions = [];
@@ -90,6 +86,6 @@ class Macosx extends AbstractOs
             }
         }
 
-        return $detector->getVersion();
+        return $detector;
     }
 }

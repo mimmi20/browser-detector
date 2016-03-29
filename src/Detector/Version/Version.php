@@ -243,12 +243,13 @@ class Version implements VersionInterface, \Serializable
     /**
      * detects the bit count by this browser from the given user agent
      *
+     * @param string       $useragent
      * @param string|array $searches
+     * @param string       $default
      *
-     * @throws \UnexpectedValueException
      * @return Version
      */
-    public function detectVersion($searches = '')
+    public static function detectVersion($useragent, $searches = '', $default = '0')
     {
         if (!is_array($searches) && !is_string($searches)) {
             throw new \UnexpectedValueException(
@@ -269,8 +270,7 @@ class Version implements VersionInterface, \Serializable
         ];
 
         /** @var $version string */
-        $version   = $this->default;
-        $useragent = $this->useragent;
+        $version   = $default;
 
         if (false !== strpos($useragent, '%')) {
             $useragent = urldecode($useragent);
@@ -285,8 +285,6 @@ class Version implements VersionInterface, \Serializable
                 $search = urldecode($search);
             }
 
-            $found = false;
-
             foreach ($modifiers as $modifier) {
                 $compareString = '/' . $search . $modifier[0] . '(\d+[\d\.\_ab]*)' . $modifier[1] . '/';
 
@@ -298,36 +296,11 @@ class Version implements VersionInterface, \Serializable
 
                 if ($doMatch) {
                     $version = $matches[1];
-                    $found   = true;
-                    break;
+                    break 2;
                 }
-            }
-
-            if ($found) {
-                break;
             }
         }
 
-        return $this->setVersion($version);
-    }
-
-    /**
-     * detects if the version is makred as Alpha
-     *
-     * @return bool
-     */
-    public function isAlpha()
-    {
-        return (false !== strpos($this->version, 'a'));
-    }
-
-    /**
-     * detects if the version is makred as Beta
-     *
-     * @return bool
-     */
-    public function isBeta()
-    {
-        return (false !== strpos($this->version, 'b'));
+        return self::setVersion($version);
     }
 }

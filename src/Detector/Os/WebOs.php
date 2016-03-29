@@ -73,9 +73,6 @@ class WebOs extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['WebOS', 'webOS', 'hpwOS'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['WebOS', 'webOS', 'hpwOS']);
     }
 }

@@ -73,9 +73,6 @@ class Ventana extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['Ventana', 'Ventana Linux'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['Ventana', 'Ventana Linux']);
     }
 }

@@ -82,13 +82,10 @@ class MicrosoftOneNote extends AbstractBrowser implements BrowserHasSpecificEngi
     /**
      * detects the browser version from the given user agent
      *
-     * @return string
+     * @return ResultVersion
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
         $doMatch = preg_match(
             '/OneNote(\/| )([\d\.]+)/',
             $this->useragent,

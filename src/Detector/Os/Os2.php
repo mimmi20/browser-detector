@@ -73,9 +73,6 @@ class Os2 extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = new ResultVersion();
-        $detector->setUserAgent($this->useragent);
-
-        return $detector->detectVersion(['OS\/2', 'Warp'])->getVersion();
+        return ResultVersion::detectVersion($this->useragent, ['OS\/2', 'Warp']);
     }
 }
