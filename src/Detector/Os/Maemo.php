@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,12 +53,11 @@ class Maemo extends AbstractOs
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'         => 'Linux MobilePhone OS (Maemo)',
-                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\LinuxFoundation())->name,
                 'bits'         => null,
             ]
@@ -73,6 +71,6 @@ class Maemo extends AbstractOs
      */
     private function detectVersion()
     {
-        return ResultVersion::detectVersion($this->useragent, ['Maemo']);
+        return Version::detectVersion($this->useragent, ['Maemo']);
     }
 }

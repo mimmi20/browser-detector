@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -57,13 +57,12 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserHasSpecificEn
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => 'YouWave Android on PC',
                 'modus'                       => null,
-                'version'                     => new Version($version),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\YouWave())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
@@ -81,22 +80,22 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserHasSpecificEn
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
-        $version = null;
-
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains(['i9988_custom'])) {
-            $version = 'Basic';
-        } elseif ($utils->checkIfContains(['i9999_custom'])) {
-            $version = 'Home';
+            return Version::set('Basic');
         }
 
-        return $version;
+        if ($utils->checkIfContains(['i9999_custom'])) {
+            return Version::set('Home');
+        }
+
+        return new Version();
     }
 
     /**

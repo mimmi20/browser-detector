@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector;
 
-use UaMatcher\Company\CompanyInterface;
+use UaResult\Company\CompanyInterface;
 
 /**
  * @category  BrowserDetector

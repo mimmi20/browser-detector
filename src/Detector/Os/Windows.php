@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
 use UaHelper\Utils;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,12 +54,11 @@ class Windows extends AbstractOs
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'         => 'Windows',
-                'version'      => (($version === null || !is_numeric($version)) ? new Version($version) : Version::parse($version)),
+                'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\Microsoft())->name,
                 'bits'         => null,
             ]
@@ -77,19 +76,19 @@ class Windows extends AbstractOs
         $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
-            return 'ME';
+            return Version::set('ME');
         }
 
         if ($utils->checkIfContains(['Win98'])) {
-            return '98';
+            return Version::set('98');
         }
 
         if ($utils->checkIfContains(['Win95'])) {
-            return '95';
+            return Version::set('95');
         }
 
         if ($utils->checkIfContains(['Windows-NT'])) {
-            return 'NT';
+            return Version::set('NT');
         }
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->useragent, $matches);
@@ -130,7 +129,7 @@ class Windows extends AbstractOs
                     break;
             }
 
-            return $version;
+            return Version::set($version);
         }
 
         $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->useragent, $matches);
@@ -190,9 +189,9 @@ class Windows extends AbstractOs
                     break;
             }
 
-            return $version;
+            return Version::set($version);
         }
 
-        return '0.0';
+        return Version::set('0.0');
     }
 }

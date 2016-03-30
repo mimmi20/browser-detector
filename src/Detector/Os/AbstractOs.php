@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Bits\Os as OsBits;
 use UaResult\Os\OsInterface;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * base class for all rendering platforms/operating systems to detect
@@ -56,7 +56,7 @@ abstract class AbstractOs implements OsInterface
     protected $name = null;
 
     /**
-     * @var \Version\Version|null
+     * @var \BrowserDetector\Detector\Version|null
      */
     protected $version = null;
 
@@ -110,7 +110,7 @@ abstract class AbstractOs implements OsInterface
     }
 
     /**
-     * @return null|\Version\Version
+     * @return null|\BrowserDetector\Detector\Version
      */
     public function getVersion()
     {

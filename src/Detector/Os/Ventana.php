@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,12 +53,11 @@ class Ventana extends AbstractOs
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'         => 'Ventana Linux',
-                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\Ventana())->name,
                 'bits'         => null,
             ]
@@ -73,6 +71,6 @@ class Ventana extends AbstractOs
      */
     private function detectVersion()
     {
-        return ResultVersion::detectVersion($this->useragent, ['Ventana', 'Ventana Linux']);
+        return Version::detectVersion($this->useragent, ['Ventana', 'Ventana Linux']);
     }
 }

@@ -35,8 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -79,13 +78,12 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => 'Internet Explorer',
                 'modus'                       => null,
-                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Microsoft())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
@@ -103,7 +101,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
@@ -113,16 +111,16 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
 
         switch ($engineVersion) {
             case 4:
-                return '8.0';
+                return Version::set('8.0');
                 break;
             case 5:
-                return '9.0';
+                return Version::set('9.0');
                 break;
             case 6:
-                return '10.0';
+                return Version::set('10.0');
                 break;
             case 7:
-                return '11.0';
+                return Version::set('11.0');
                 break;
             default:
                 //nothing to do
@@ -132,16 +130,16 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return $matches[1];
+            return Version::set($matches[1]);
         }
 
         foreach ($this->patterns as $pattern => $version) {
             if (preg_match($pattern, $this->useragent)) {
-                return $version;
+                return Version::set($version);
             }
         }
 
-        return;
+        return new Version();
     }
 
     /**

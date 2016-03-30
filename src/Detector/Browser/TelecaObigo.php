@@ -35,8 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -57,13 +56,12 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => 'Teleca-Obigo',
                 'modus'                       => null,
-                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Obigo())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
@@ -81,7 +79,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
@@ -92,7 +90,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
         );
 
         if ($doMatch) {
-            return $matches[1];
+            return Version::set($matches[1]);
         }
 
         $doMatch = preg_match(
@@ -102,7 +100,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
         );
 
         if ($doMatch) {
-            return $matches[1];
+            return Version::set($matches[1]);
         }
 
         $searches = [
@@ -119,7 +117,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
             'Teleca\/Q',
         ];
 
-        return ResultVersion::detectVersion($this->useragent, $searches);
+        return Version::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -61,13 +61,15 @@ class MicrosoftOffice
             return '2007';
         }
 
-        return '';
+        return '0.0';
     }
 
     /**
      * detects the browser version from the given user agent
      *
-     * @return string|null
+     * @param string $useragent
+     *
+     * @return string
      */
     public function detectInternalVersion($useragent)
     {
@@ -107,6 +109,6 @@ class MicrosoftOffice
             return $matches[1];
         }
 
-        return;
+        return '0.0';
     }
 }

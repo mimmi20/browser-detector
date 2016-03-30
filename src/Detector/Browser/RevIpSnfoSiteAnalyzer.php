@@ -35,8 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -57,13 +56,12 @@ class RevIpSnfoSiteAnalyzer extends AbstractBrowser implements BrowserHasSpecifi
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => 'Reverse IP Lookup',
                 'modus'                       => null,
-                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Binarymonkey())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
@@ -81,13 +79,13 @@ class RevIpSnfoSiteAnalyzer extends AbstractBrowser implements BrowserHasSpecifi
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
         $searches = ['RevIP\.info site analyzer v'];
 
-        return ResultVersion::detectVersion($this->useragent, $searches);
+        return Version::detectVersion($this->useragent, $searches);
     }
 
     /**

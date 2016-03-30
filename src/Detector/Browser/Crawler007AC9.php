@@ -35,8 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -57,13 +56,12 @@ class Crawler007AC9 extends AbstractBrowser implements BrowserHasSpecificEngineI
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => '007AC9 Crawler',
                 'modus'                       => null,
-                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Sistrix())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
@@ -81,13 +79,13 @@ class Crawler007AC9 extends AbstractBrowser implements BrowserHasSpecificEngineI
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
         $searches = ['007ac9 Crawler'];
 
-        return ResultVersion::detectVersion($this->useragent, $searches);
+        return Version::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use UaHelper\Utils;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,12 +53,11 @@ class WindowsRt extends AbstractOs
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'         => 'Windows RT',
-                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\Microsoft())->name,
                 'bits'         => null,
             ]
@@ -69,29 +67,10 @@ class WindowsRt extends AbstractOs
     /**
      * returns the version of the operating system/platform
      *
-     * @return string|null
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
-            return 'ME';
-        }
-
-        if ($utils->checkIfContains(['Win98'])) {
-            return '98';
-        }
-
-        if ($utils->checkIfContains(['Win95'])) {
-            return '95';
-        }
-
-        if ($utils->checkIfContains(['Windows-NT'])) {
-            return 'NT';
-        }
-
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
@@ -108,28 +87,12 @@ class WindowsRt extends AbstractOs
                 case '6.1':
                     $version = '7';
                     break;
-                case '6.0':
-                    $version = 'Vista';
-                    break;
-                case '5.3':
-                case '5.2':
-                case '5.1':
-                    $version = 'XP';
-                    break;
-                case '5.0':
-                case '5.01':
-                    $version = '2000';
-                    break;
-                case '4.1':
-                case '4.0':
-                    $version = 'NT';
-                    break;
                 default:
                     $version = '';
                     break;
             }
 
-            return $version;
+            return Version::set($version);
         }
 
         $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->useragent, $matches);
@@ -149,48 +112,14 @@ class WindowsRt extends AbstractOs
                 case '7':
                     $version = '7';
                     break;
-                case '6.0':
-                    $version = 'Vista';
-                    break;
-                case '2003':
-                    $version = 'Server 2003';
-                    break;
-                case '5.3':
-                case '5.2':
-                case '5.1':
-                case 'XP':
-                    $version = 'XP';
-                    break;
-                case 'ME':
-                    $version = 'ME';
-                    break;
-                case '2000':
-                case '5.0':
-                case '5.01':
-                    $version = '2000';
-                    break;
-                case '3.1':
-                    $version = '3.1';
-                    break;
-                case '95':
-                    $version = '95';
-                    break;
-                case '98':
-                    $version = '98';
-                    break;
-                case '4.1':
-                case '4.0':
-                case 'NT':
-                    $version = 'NT';
-                    break;
                 default:
                     $version = '';
                     break;
             }
 
-            return $version;
+            return Version::set($version);
         }
 
-        return '';
+        return Version::set('0.0');
     }
 }

@@ -36,8 +36,7 @@ use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -58,13 +57,12 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => 'IEMobile',
                 'modus'                       => null,
-                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Microsoft())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => true,
@@ -82,7 +80,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
@@ -99,7 +97,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
 
         $searches = ['IEMobile', 'MSIE', 'rv\:'];
 
-        return ResultVersion::detectVersion($this->useragent, $searches);
+        return Version::detectVersion($this->useragent, $searches);
     }
 
     /**

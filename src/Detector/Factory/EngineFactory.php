@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
 use UaHelper\Utils;
 use UaResult\Os\OsInterface;
+use BrowserDetector\Detector\Version;
 
 /**
  * Browser detection class
@@ -78,9 +79,9 @@ class EngineFactory implements FactoryInterface
         } elseif (preg_match('/(goanna)/i', $agent)) {
             $engineKey = 'Goanna';
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $agent)) {
-            //$chrome = new Chrome($agent, []);
+            $chrome = new Chrome($agent, []);
 
-            $chromeVersion = 0; //$chrome->get(Version::MAJORONLY);
+            $chromeVersion = $chrome->getVersion()->getVersion(Version::MAJORONLY);
 
             if ($chromeVersion >= 28) {
                 $engineKey = 'Blink';

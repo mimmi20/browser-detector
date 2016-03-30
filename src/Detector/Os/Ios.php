@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,12 +53,11 @@ class Ios extends AbstractOs
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'         => 'iOS',
-                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\Apple())->name,
                 'bits'         => null,
             ]
@@ -69,10 +67,16 @@ class Ios extends AbstractOs
     /**
      * returns the version of the operating system/platform
      *
-     * @return string|null
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
+        $doMatch = preg_match('/CPU like Mac OS X/', $this->useragent, $matches);
+
+        if ($doMatch) {
+            return Version::set('1.0');
+        }
+
         $searches = [
             'IphoneOSX',
             'CPU OS\_',
@@ -84,14 +88,6 @@ class Ios extends AbstractOs
             'IUC\(U\;iOS',
         ];
 
-        $detector->detectVersion($searches);
-
-        $doMatch = preg_match('/CPU like Mac OS X/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return '1.0';
-        }
-
-        return $detector->getVersion();
+        return Version::detectVersion($this->useragent, $searches);
     }
 }

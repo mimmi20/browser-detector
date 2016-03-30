@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,12 +53,11 @@ class Macosx extends AbstractOs
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'         => 'Mac OS X',
-                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\Apple())->name,
                 'bits'         => null,
             ]
@@ -73,16 +71,14 @@ class Macosx extends AbstractOs
      */
     private function detectVersion()
     {
-        $searches = ['Mac OS X', 'Mac OS X v'];
+        $detector = Version::detectVersion($this->useragent, ['Mac OS X', 'Mac OS X v'], '10');
 
-        $detector = ResultVersion::detectVersion($this->useragent, $searches, '10');
-
-        if ($detector->getVersion(ResultVersion::MAJORONLY) > 99) {
+        if ($detector->getVersion(Version::MAJORONLY) > 99) {
             $versions = [];
-            $found    = preg_match('/(\d\d)(\d)/', $detector->getVersion(ResultVersion::MAJORONLY), $versions);
+            $found    = preg_match('/(\d\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
 
             if ($found) {
-                return $versions[1] . '.' . $versions[2];
+                return Version::set($versions[1] . '.' . $versions[2]);
             }
         }
 

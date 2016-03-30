@@ -38,6 +38,8 @@ namespace BrowserDetector\Detector;
  */
 class Version implements VersionInterface, \Serializable
 {
+    const STABILITY_REGEX = '[-|_|\.]{0,1}([R|r][C|c]|pl|a|alpha|[B|b][E|e][T|t][A|a]|b|B|patch|stable|p|[D|d][E|e][V|v]|[D|d])\.{0,1}(\d*)';
+
     /**
      * @var string the detected major version
      */
@@ -70,7 +72,7 @@ class Version implements VersionInterface, \Serializable
      * @param array|string $preRelease OPTIONAL
      * @param array|string $build OPTIONAL
      */
-    public function __construct($major, $minor = 0, $patch = 0, $preRelease = null, $build = null)
+    public function __construct($major = 0, $minor = 0, $patch = 0, $preRelease = null, $build = null)
     {
         if ((!is_int($major) && !is_string($major)) || $major < 0) {
             throw new \InvalidArgumentException('Major version must be a non-negative integer or a string');
@@ -125,6 +127,30 @@ class Version implements VersionInterface, \Serializable
         $this->micro      = $unseriliazedData['micro'];
         $this->preRelease = $unseriliazedData['preRelease'];
         $this->build      = $unseriliazedData['build'];
+    }
+
+    /**
+     * @return int
+     */
+    public function getMajor()
+    {
+        return $this->major;
+    }
+
+    /**
+     * @return int
+     */
+    public function getMinor()
+    {
+        return $this->minor;
+    }
+
+    /**
+     * @return int
+     */
+    public function getMicro()
+    {
+        return $this->micro;
     }
 
     public function __toString()
@@ -226,18 +252,51 @@ class Version implements VersionInterface, \Serializable
      * @throws \UnexpectedValueException
      * @return Version
      */
-    public function setVersion($version)
+    public static function set($version)
     {
-        $version  = trim(trim(str_replace('_', '.', $version)), '.');
-        $splitted = explode('.', $version, 3);
+        $regex = '/^' .
+            'v?' .
+            '(?:(\d+)[-|\._])?' .
+            '(?:(\d+)[-|\._])?' .
+            '(?:(\d+)\.)?' .
+            '(?:(\d+))?' .
+            '(?:' . self::STABILITY_REGEX . ')?' .
+            '$/';
 
-        $this->major = (!empty($splitted[0]) ? $splitted[0] : '0');
-        $this->minor = (!empty($splitted[1]) ? $splitted[1] : '0');
-        $this->micro = (!empty($splitted[2]) ? $splitted[2] : '0');
+        if (!preg_match($regex, $version, $matches)) {
+            return new self();
+        }
 
-        $this->version = $version;
+        $numbers = array();
 
-        return $this;
+        if (isset($matches[1]) && strlen($matches[1]) > 0) {
+            $numbers[] = $matches[1];
+        }
+
+        if (isset($matches[2]) && strlen($matches[2]) > 0) {
+            $numbers[] = $matches[2];
+        }
+
+        if (isset($matches[3]) && strlen($matches[3]) > 0) {
+            $numbers[] = $matches[3];
+        }
+
+        if (isset($matches[4]) && strlen($matches[4]) > 0) {
+            $numbers[] = $matches[4];
+        }
+
+        if (empty($numbers)) {
+            return new self();
+        }
+
+        /* Version numbers */
+
+        return new self(
+            $numbers[0],
+            (isset($numbers[1]) ? $numbers[1] : 0),
+            (isset($numbers[2]) ? $numbers[2] : 0),
+            (isset($numbers[3]) ? $numbers[3] : null)
+        );
     }
 
     /**
@@ -301,6 +360,6 @@ class Version implements VersionInterface, \Serializable
             }
         }
 
-        return self::setVersion($version);
+        return self::set($version);
     }
 }

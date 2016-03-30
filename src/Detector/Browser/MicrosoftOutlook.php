@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -57,13 +57,12 @@ class MicrosoftOutlook extends AbstractBrowser implements BrowserHasSpecificEngi
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => 'Outlook',
                 'modus'                       => null,
-                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Microsoft())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
@@ -81,7 +80,7 @@ class MicrosoftOutlook extends AbstractBrowser implements BrowserHasSpecificEngi
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
@@ -94,7 +93,7 @@ class MicrosoftOutlook extends AbstractBrowser implements BrowserHasSpecificEngi
         $helper = new MicrosoftOfficeHelper();
 
         if ($doMatch) {
-            return $helper->mapVersion($matches[1]);
+            return Version::set($helper->mapVersion($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -104,7 +103,7 @@ class MicrosoftOutlook extends AbstractBrowser implements BrowserHasSpecificEngi
         );
 
         if ($doMatch) {
-            return $helper->mapVersion($matches[1]);
+            return Version::set($helper->mapVersion($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -114,7 +113,7 @@ class MicrosoftOutlook extends AbstractBrowser implements BrowserHasSpecificEngi
         );
 
         if ($doMatch) {
-            return $helper->mapVersion($matches[1]);
+            return Version::set($helper->mapVersion($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -124,10 +123,10 @@ class MicrosoftOutlook extends AbstractBrowser implements BrowserHasSpecificEngi
         );
 
         if ($doMatch) {
-            return $helper->mapVersion($matches[1]);
+            return Version::set($helper->mapVersion($matches[1]));
         }
 
-        return $helper->mapVersion($helper->detectInternalVersion($this->useragent));
+        return Version::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**

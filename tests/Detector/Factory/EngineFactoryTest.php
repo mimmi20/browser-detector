@@ -31,7 +31,7 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
         self::assertInstanceOf('\UaResult\Version', $result->detectVersion());
         self::assertSame($version, $result->detectVersion()->getVersion(Version::MAJORMINOR));
 
-        self::assertInstanceOf('\UaMatcher\Company\CompanyInterface', $result->getManufacturer());
+        self::assertInstanceOf('\UaResult\Company\CompanyInterface', $result->getManufacturer());
     }
 
     /**

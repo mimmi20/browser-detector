@@ -37,8 +37,7 @@ use BrowserDetector\Helper\Safari as SafariHelper;
 use UaBrowserType;
 use UaHelper\Utils;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -59,13 +58,12 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => 'Android Webkit',
                 'modus'                       => null,
-                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Google())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
@@ -83,7 +81,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
@@ -152,7 +150,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
 
         $searches = ['Version', 'Safari', 'JUC \(Linux\; U\;'];
 
-        return ResultVersion::detectVersion($this->useragent, $searches);
+        return Version::detectVersion($this->useragent, $searches);
     }
 
     /**

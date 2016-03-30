@@ -36,8 +36,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 use UaBrowserType;
 use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -58,13 +57,12 @@ class MicrosoftWord extends AbstractBrowser implements BrowserHasSpecificEngineI
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'                        => 'Word',
                 'modus'                       => null,
-                'version'                     => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Microsoft())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
@@ -82,7 +80,7 @@ class MicrosoftWord extends AbstractBrowser implements BrowserHasSpecificEngineI
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
@@ -91,10 +89,10 @@ class MicrosoftWord extends AbstractBrowser implements BrowserHasSpecificEngineI
         $helper = new MicrosoftOfficeHelper();
 
         if ($doMatch) {
-            return $helper->mapVersion($matches[1]);
+            return Version::set($helper->mapVersion($matches[1]));
         }
 
-        return $helper->mapVersion($helper->detectInternalVersion($this->useragent));
+        return Version::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**

@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version as ResultVersion;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,12 +53,11 @@ class Presto extends AbstractEngine
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'         => 'Presto',
-                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\Opera())->name,
             ]
         );
@@ -68,10 +66,10 @@ class Presto extends AbstractEngine
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
-        return ResultVersion::detectVersion($this->useragent, ['Presto']);
+        return Version::detectVersion($this->useragent, ['Presto']);
     }
 }

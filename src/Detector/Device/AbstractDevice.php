@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Device;
 
 use UaDeviceType\TypeInterface;
 use UaResult\Device\DeviceInterface;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * base class for all Devices to detect
@@ -67,7 +67,7 @@ abstract class AbstractDevice
     protected $marketingName = null;
 
     /**
-     * @var \Version\Version|null
+     * @var \BrowserDetector\Detector\Version|null
      */
     protected $version = null;
 
@@ -259,7 +259,7 @@ abstract class AbstractDevice
     }
 
     /**
-     * @return null|\Version\Version
+     * @return null|\BrowserDetector\Detector\Version
      */
     public function getVersion()
     {

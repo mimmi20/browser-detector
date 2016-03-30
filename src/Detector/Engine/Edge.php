@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -53,12 +53,11 @@ class Edge extends AbstractEngine
         array $data
     ) {
         $this->useragent = $useragent;
-        $version         = $this->detectVersion();
 
         $this->setData(
             [
                 'name'         => 'Edge',
-                'version'      => ($version === null ? new Version($version) : Version::parse($version)),
+                'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\Microsoft())->name,
             ]
         );
@@ -67,16 +66,16 @@ class Edge extends AbstractEngine
     /**
      * detects the browser version from the given user agent
      *
-     * @return ResultVersion
+     * @return \BrowserDetector\Detector\Version
      */
     private function detectVersion()
     {
         $doMatch = preg_match('/Edge\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return $matches[1];
+            return Version::set($matches[1]);
         }
 
-        return null;
+        return new Version();
     }
 }

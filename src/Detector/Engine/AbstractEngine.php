@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use UaResult\Engine\EngineInterface;
-use Version\Version;
+use BrowserDetector\Detector\Version;
 
 /**
  * base class for all rendering engines to detect
@@ -55,7 +55,7 @@ abstract class AbstractEngine implements EngineInterface
     protected $name = null;
 
     /**
-     * @var \Version\Version|null
+     * @var \BrowserDetector\Detector\Version|null
      */
     protected $version = null;
 
@@ -96,7 +96,7 @@ abstract class AbstractEngine implements EngineInterface
     }
 
     /**
-     * @return null|\Version\Version
+     * @return null|\BrowserDetector\Detector\Version
      */
     public function getVersion()
     {
