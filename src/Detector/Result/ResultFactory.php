@@ -33,8 +33,8 @@ namespace BrowserDetector\Detector\Result;
 
 use BrowserDetector\Detector\Company;
 use Psr\Log\LoggerInterface;
-use UaMatcher\Browser\BrowserHasWurflKeyInterface;
-use UaMatcher\Device\DeviceHasWurflKeyInterface;
+use BrowserDetector\Matcher\Browser\BrowserHasWurflKeyInterface;
+use BrowserDetector\Matcher\Device\DeviceHasWurflKeyInterface;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Device\DeviceInterface;
 use UaResult\Engine\EngineInterface;

@@ -38,7 +38,7 @@ use BrowserDetector\Detector\Factory\Device\TvFactory;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
-use UaMatcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 
 /**
  * Device detection class

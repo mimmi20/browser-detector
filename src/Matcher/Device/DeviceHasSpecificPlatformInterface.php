@@ -29,68 +29,22 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
-
-use UaResult\Company\CompanyInterface;
+namespace BrowserDetector\Matcher\Device;
 
 /**
+ * interface for all devices to detect
+ *
  * @category  BrowserDetector
  *
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Company implements CompanyInterface
+interface DeviceHasSpecificPlatformInterface
 {
     /**
-     * the name of the company
+     * returns a specific Operating System
      *
-     * @var string
+     * @return \UaResult\Os\OsInterface
      */
-    private $name = null;
-
-    /**
-     * the brand name of the company
-     *
-     * @var string
-     */
-    private $brandname = null;
-
-    /**
-     * @param \BrowserDetector\Detector\Company\AbstractCompany $company
-     */
-    public function __construct(Company\AbstractCompany $company)
-    {
-        $this->name      = $company->name;
-        $this->brandname = $company->brandname;
-    }
-
-    /**
-     * Returns the name of the company
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->getName();
-    }
-
-    /**
-     * Returns the name of the company
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return (string) $this->name;
-    }
-
-    /**
-     * Returns the brand name of the company
-     *
-     * @return string
-     */
-    public function getBrandName()
-    {
-        return $this->brandname;
-    }
+    public function detectOs();
 }

@@ -260,7 +260,7 @@ use BrowserDetector\Detector\Device\Mobile\Zenithink;
 use BrowserDetector\Detector\Device\Mobile\Zopo;
 use BrowserDetector\Detector\Device\Mobile\Zte;
 use BrowserDetector\Detector\Factory\FactoryInterface;
-use UaMatcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 
 /**
  * @category  BrowserDetector

@@ -6,7 +6,7 @@ use BrowserDetector\Detector\Factory\PlatformFactory;
 use BrowserDetector\Detector\Version;
 
 /**
- * Test class for \BrowserDetector\Detector\Device\GeneralMobile
+ * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
 class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
 {
@@ -19,17 +19,14 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetect($agent, $platform, $version)
     {
-        /** @var \Monolog\Logger $logger */
-        $logger = $this->getMock('\Monolog\Logger', [], [], '', false);
+        /** @var \UaResult\Os\OsInterface $result */
+        $result = PlatformFactory::detect($agent);
 
-        /** @var \UaMatcher\Os\OsInterface $result */
-        $result = PlatformFactory::detect($agent, $logger);
-
-        self::assertInstanceOf('\UaMatcher\Os\OsInterface', $result);
+        self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
         self::assertSame($platform, $result->getName());
 
-        self::assertInstanceOf('\UaResult\Version', $result->detectVersion());
-        self::assertSame($version, $result->detectVersion()->getVersion(Version::MAJORMINOR));
+        self::assertInstanceOf('\UaResult\Version', $result->getVersion());
+        self::assertSame($version, $result->getVersion()->getVersion(Version::MAJORMINOR));
 
         self::assertInstanceOf('\UaResult\Company\CompanyInterface', $result->getManufacturer());
     }

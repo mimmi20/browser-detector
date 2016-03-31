@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\Safari as SafariHelper;
 use UaBrowserType;
 use UaHelper\Utils;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Version;
 
 /**

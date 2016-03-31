@@ -36,9 +36,9 @@ use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use UaDeviceType;
 use UaHelper\Utils;
-use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
-use UaMatcher\MatcherCanHandleInterface;
-use UaMatcher\MatcherHasWeightInterface;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Matcher\MatcherCanHandleInterface;
+use BrowserDetector\Matcher\MatcherHasWeightInterface;
 
 /**
  * @category  BrowserDetector

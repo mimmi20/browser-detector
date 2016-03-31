@@ -6,7 +6,7 @@ use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Version;
 
 /**
- * Test class for \BrowserDetector\Detector\Device\GeneralMobile
+ * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
 class EngineFactoryTest extends \PHPUnit_Framework_TestCase
 {
@@ -19,17 +19,14 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetect($agent, $engine, $version)
     {
-        /** @var \Monolog\Logger $logger */
-        $logger = $this->getMock('\Monolog\Logger', [], [], '', false);
+        /** @var \UaResult\Engine\EngineInterface $result */
+        $result = EngineFactory::detect($agent);
 
-        /** @var \UaMatcher\Engine\EngineInterface $result */
-        $result = EngineFactory::detect($agent, $logger);
-
-        self::assertInstanceOf('\UaMatcher\Engine\EngineInterface', $result);
+        self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);
         self::assertSame($engine, $result->getName());
 
-        self::assertInstanceOf('\UaResult\Version', $result->detectVersion());
-        self::assertSame($version, $result->detectVersion()->getVersion(Version::MAJORMINOR));
+        self::assertInstanceOf('\UaResult\Version', $result->getVersion());
+        self::assertSame($version, $result->getVersion()->getVersion(Version::MAJORMINOR));
 
         self::assertInstanceOf('\UaResult\Company\CompanyInterface', $result->getManufacturer());
     }

@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use UaHelper\Utils;
-use UaMatcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Detector\Version;
 
 /**

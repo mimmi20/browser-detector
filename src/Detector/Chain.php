@@ -40,7 +40,7 @@ use DirectoryIterator;
  */
 class Chain
 {
-    /** @var \UaMatcher\MatcherHasWeightInterface[] */
+    /** @var \BrowserDetector\Matcher\MatcherHasWeightInterface[] */
     private $handlersToUse = [];
 
     /** @var mixed */
@@ -72,7 +72,7 @@ class Chain
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \UaMatcher\MatcherHasWeightInterface[] $handlersToUse
+     * @param \BrowserDetector\Matcher\MatcherHasWeightInterface[] $handlersToUse
      *
      * @return \BrowserDetector\Detector\Chain
      */
@@ -128,7 +128,7 @@ class Chain
     /**
      * detect the user agent
      *
-     * @return \UaMatcher\MatcherInterface
+     * @return \BrowserDetector\Matcher\MatcherInterface
      */
     public function detect()
     {
@@ -160,7 +160,7 @@ class Chain
                 );
 
                 try {
-                    /** @var \UaMatcher\MatcherHasWeightInterface $handler */
+                    /** @var \BrowserDetector\Matcher\MatcherHasWeightInterface $handler */
                     $handler = new $className($this->useragent, []);
                 } catch (\Exception $e) {
                     continue;
@@ -174,7 +174,7 @@ class Chain
             $chain->top();
 
             while ($chain->valid()) {
-                /** @var \UaMatcher\MatcherCanHandleInterface $handler */
+                /** @var \BrowserDetector\Matcher\MatcherCanHandleInterface $handler */
                 $handler = $chain->current();
 
                 if ($handler->canHandle()) {
