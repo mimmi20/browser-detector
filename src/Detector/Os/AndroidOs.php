@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -84,7 +84,7 @@ class AndroidOs extends AbstractOs
             'Android OS',
         ];
 
-        $detector = Version::detectVersion($this->useragent, $searches);
+        $detector = \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
 
         if ($detector->getVersion()) {
             return $detector;

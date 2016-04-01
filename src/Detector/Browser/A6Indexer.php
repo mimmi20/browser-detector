@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -79,11 +79,11 @@ class A6Indexer extends AbstractBrowser implements BrowserHasSpecificEngineInter
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Version\Version
      */
     private function detectVersion()
     {
-        return Version::detectVersion($this->useragent, ['A6\-Indexer']);
+        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['A6\-Indexer']);
     }
 
     /**

@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -71,6 +71,6 @@ class Ubuntu extends AbstractOs
      */
     private function detectVersion()
     {
-        return Version::detectVersion($this->useragent, ['Ubuntu', 'ubuntu']);
+        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['Ubuntu', 'ubuntu']);
     }
 }

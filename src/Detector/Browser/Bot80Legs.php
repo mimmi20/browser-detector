@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -79,13 +79,13 @@ class Bot80Legs extends AbstractBrowser implements BrowserHasSpecificEngineInter
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Version\Version
      */
     private function detectVersion()
     {
         $searches = ['80legs', '008'];
 
-        return Version::detectVersion($this->useragent, $searches);
+        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

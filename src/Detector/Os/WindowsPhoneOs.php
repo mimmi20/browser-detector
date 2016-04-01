@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
 use UaHelper\Utils;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -89,6 +89,6 @@ class WindowsPhoneOs extends AbstractOs
 
         $searches = ['Windows Phone OS', 'Windows Phone'];
 
-        return Version::detectVersion($this->useragent, $searches);
+        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
     }
 }

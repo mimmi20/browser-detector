@@ -33,7 +33,7 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use UaBrowserType;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -77,12 +77,12 @@ class Opera extends AbstractBrowser
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Version\Version
      */
     private function detectVersion()
     {
         $searches = ['Version', 'Opera', 'OPR'];
 
-        return Version::detectVersion($this->useragent, $searches);
+        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
     }
 }

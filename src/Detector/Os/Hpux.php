@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -71,6 +71,6 @@ class Hpux extends AbstractOs
      */
     private function detectVersion()
     {
-        return Version::detectVersion($this->useragent, ['HP-UX']);
+        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['HP-UX']);
     }
 }

@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use UaResult\Engine\EngineInterface;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * base class for all rendering engines to detect
@@ -55,7 +55,7 @@ abstract class AbstractEngine implements EngineInterface
     protected $name = null;
 
     /**
-     * @var \BrowserDetector\Detector\Version|null
+     * @var \BrowserDetector\Version\Version|null
      */
     protected $version = null;
 
@@ -96,7 +96,7 @@ abstract class AbstractEngine implements EngineInterface
     }
 
     /**
-     * @return null|\BrowserDetector\Detector\Version
+     * @return null|\BrowserDetector\Version\Version
      */
     public function getVersion()
     {
@@ -173,6 +173,8 @@ abstract class AbstractEngine implements EngineInterface
 
         if (!empty($data['version']) && $data['version'] instanceof Version) {
             $this->version = $data['version'];
+        } else {
+            $this->version = new Version();
         }
 
         if (!empty($data['manufacturer'])) {

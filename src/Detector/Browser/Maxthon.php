@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -79,7 +79,7 @@ class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Version\Version
      */
     private function detectVersion()
     {
@@ -93,7 +93,7 @@ class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
 
         $searches = ['Maxthon', 'MxBrowser', 'Version'];
 
-        return Version::detectVersion($this->useragent, $searches, '2.0');
+        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches, '2.0');
     }
 
     /**

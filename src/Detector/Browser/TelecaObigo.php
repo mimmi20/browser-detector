@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use UaBrowserType;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -79,7 +79,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Version\Version
      */
     private function detectVersion()
     {
@@ -117,7 +117,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
             'Teleca\/Q',
         ];
 
-        return Version::detectVersion($this->useragent, $searches);
+        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

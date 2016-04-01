@@ -34,7 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Bits\Browser as BrowserBits;
 use UaBrowserType\TypeInterface;
 use UaResult\Browser\BrowserInterface;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * base class for all browsers to detect
@@ -62,7 +62,7 @@ abstract class AbstractBrowser implements BrowserInterface
     protected $modus = null;
 
     /**
-     * @var \BrowserDetector\Detector\Version|null
+     * @var \BrowserDetector\Version\Version|null
      */
     protected $version = null;
 
@@ -222,7 +222,7 @@ abstract class AbstractBrowser implements BrowserInterface
     }
 
     /**
-     * @return null|\BrowserDetector\Detector\Version
+     * @return null|\BrowserDetector\Version\Version
      */
     public function getVersion()
     {
@@ -328,6 +328,8 @@ abstract class AbstractBrowser implements BrowserInterface
 
         if (!empty($data['version']) && $data['version'] instanceof Version) {
             $this->version = $data['version'];
+        } else {
+            $this->version = new Version();
         }
 
         if (!empty($data['manufacturer'])) {

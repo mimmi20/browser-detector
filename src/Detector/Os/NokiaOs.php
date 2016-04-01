@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector

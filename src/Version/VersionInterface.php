@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
+namespace BrowserDetector\Detector\Version;
 
 /**
  * a general version detector
@@ -128,15 +128,4 @@ interface VersionInterface
      * @return string
      */
     public function getVersion($mode = null);
-
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string       $useragent
-     * @param string|array $searches
-     * @param string       $default
-     *
-     * @return VersionInterface
-     */
-    public static function detectVersion($useragent, $searches = '', $default = '0');
 }

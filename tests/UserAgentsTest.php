@@ -141,7 +141,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $expectedProperties['Browser']
         );
         $foundBrowserMaker = $mapper->mapBrowserMaker(
-            $result->getBrowser()->getManufacturer()->getName(),
+            $result->getBrowser()->getManufacturer(),
             $result->getBrowser()->getName()
         );
 
@@ -150,7 +150,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $foundBrowserMaker,
             'Expected actual "Browser_Maker" to be "'
             . $expectedBrowserMaker . ' [' . $expectedProperties['Browser_Maker'] . ']'
-            . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer()->getName() . ']' . '")'
+            . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer() . ']' . '")'
         );
 
         $expectedDeviceMaker = $mapper->mapDeviceMaker(
@@ -158,7 +158,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $expectedProperties['Device_Code_Name']
         );
         $foundDeviceMaker = $mapper->mapDeviceMaker(
-            $result->getDevice()->getManufacturer()->getName(),
+            $result->getDevice()->getManufacturer(),
             $result->getDevice()->getDeviceName()
         );
 
@@ -167,7 +167,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             $foundDeviceMaker,
             'Expected actual "Device_Maker" to be "'
             . $expectedDeviceMaker . ' [' . $expectedProperties['Device_Maker'] . ']'
-            . '" (was "' . $foundDeviceMaker . ' [' . $result->getDevice()->getManufacturer()->getName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
+            . '" (was "' . $foundDeviceMaker . ' [' . $result->getDevice()->getManufacturer() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
         );
 
         if (isset($expectedProperties['Device_Brand_Name'])) { //@todo: remove this check

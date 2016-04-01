@@ -35,7 +35,7 @@ use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
 use UaHelper\Utils;
 use UaResult\Os\OsInterface;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * Browser detection class

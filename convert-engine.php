@@ -71,8 +71,8 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $check = trim(substr($filecontent, $pos2 + 1, $pos3 - $pos2));
 
         $check = str_replace(
-            ['return Version::detectVersion($this->useragent, $searches);', '$detector = new Version();'],
-            ['return Version::detectVersion($this->useragent, $searches);', ''],
+            ['return VersionFactory::detectVersion($this->useragent, $searches);', '$detector = new Version();'],
+            ['return VersionFactory::detectVersion($this->useragent, $searches);', ''],
             $check
         );
     } else {

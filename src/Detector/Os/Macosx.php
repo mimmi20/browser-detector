@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -71,7 +71,7 @@ class Macosx extends AbstractOs
      */
     private function detectVersion()
     {
-        $detector = Version::detectVersion($this->useragent, ['Mac OS X', 'Mac OS X v'], '10');
+        $detector = \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['Mac OS X', 'Mac OS X v'], '10');
 
         if ($detector->getVersion(Version::MAJORONLY) > 99) {
             $versions = [];

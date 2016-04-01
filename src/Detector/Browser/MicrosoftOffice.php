@@ -36,7 +36,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 use UaBrowserType;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -80,7 +80,7 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasSpecificEngin
     /**
      * detects the browser version from the given user agent
      *
-     * @return \BrowserDetector\Detector\Version
+     * @return \BrowserDetector\Version\Version
      */
     private function detectVersion()
     {

@@ -27,7 +27,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
+namespace BrowserDetector\Version;
 
 /**
  * a general version detector
@@ -153,6 +153,11 @@ class Version implements VersionInterface, \Serializable
         return $this->micro;
     }
 
+    /**
+     * converts the version object into a string
+     *
+     * @return string
+     */
     public function __toString()
     {
         try {
@@ -242,124 +247,5 @@ class Version implements VersionInterface, \Serializable
             . (isset($versions[2]) ? '.' . (string) $versions[2] : '')
             . (isset($versions[3]) ? '-' . (string) $versions[3] : '')
             . (isset($versions[4]) ? '+' . (string) $versions[4] : '');
-    }
-
-    /**
-     * sets the detected version
-     *
-     * @param string $version
-     *
-     * @throws \UnexpectedValueException
-     * @return Version
-     */
-    public static function set($version)
-    {
-        $regex = '/^' .
-            'v?' .
-            '(?:(\d+)[-|\._])?' .
-            '(?:(\d+)[-|\._])?' .
-            '(?:(\d+)\.)?' .
-            '(?:(\d+))?' .
-            '(?:' . self::STABILITY_REGEX . ')?' .
-            '$/';
-
-        if (!preg_match($regex, $version, $matches)) {
-            return new self();
-        }
-
-        $numbers = array();
-
-        if (isset($matches[1]) && strlen($matches[1]) > 0) {
-            $numbers[] = $matches[1];
-        }
-
-        if (isset($matches[2]) && strlen($matches[2]) > 0) {
-            $numbers[] = $matches[2];
-        }
-
-        if (isset($matches[3]) && strlen($matches[3]) > 0) {
-            $numbers[] = $matches[3];
-        }
-
-        if (isset($matches[4]) && strlen($matches[4]) > 0) {
-            $numbers[] = $matches[4];
-        }
-
-        if (empty($numbers)) {
-            return new self();
-        }
-
-        /* Version numbers */
-
-        return new self(
-            $numbers[0],
-            (isset($numbers[1]) ? $numbers[1] : 0),
-            (isset($numbers[2]) ? $numbers[2] : 0),
-            (isset($numbers[3]) ? $numbers[3] : null)
-        );
-    }
-
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @param string       $useragent
-     * @param string|array $searches
-     * @param string       $default
-     *
-     * @return Version
-     */
-    public static function detectVersion($useragent, $searches = '', $default = '0')
-    {
-        if (!is_array($searches) && !is_string($searches)) {
-            throw new \UnexpectedValueException(
-                'a string or an array of strings is expected as parameter'
-            );
-        }
-
-        if (!is_array($searches)) {
-            $searches = [$searches];
-        }
-
-        $modifiers = [
-            ['\/', ''],
-            ['\(', '\)'],
-            [' ', ''],
-            ['', ''],
-            [' \(', '\;'],
-        ];
-
-        /** @var $version string */
-        $version   = $default;
-
-        if (false !== strpos($useragent, '%')) {
-            $useragent = urldecode($useragent);
-        }
-
-        foreach ($searches as $search) {
-            if (!is_string($search)) {
-                continue;
-            }
-
-            if (false !== strpos($search, '%')) {
-                $search = urldecode($search);
-            }
-
-            foreach ($modifiers as $modifier) {
-                $compareString = '/' . $search . $modifier[0] . '(\d+[\d\.\_ab]*)' . $modifier[1] . '/';
-
-                $doMatch = preg_match(
-                    $compareString,
-                    $useragent,
-                    $matches
-                );
-
-                if ($doMatch) {
-                    $version = $matches[1];
-                    break 2;
-                }
-            }
-        }
-
-        return self::set($version);
     }
 }
