@@ -33,10 +33,10 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
-use UaBrowserType;
-use UaHelper\Utils;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
+use UaBrowserType;
+use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -88,11 +88,11 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserHasSpecificEn
         $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains(['i9988_custom'])) {
-            return Version::set('Basic');
+            return \BrowserDetector\Version\VersionFactory::set('Basic');
         }
 
         if ($utils->checkIfContains(['i9999_custom'])) {
-            return Version::set('Home');
+            return \BrowserDetector\Version\VersionFactory::set('Home');
         }
 
         return new Version();

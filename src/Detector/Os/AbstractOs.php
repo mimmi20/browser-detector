@@ -32,8 +32,8 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Bits\Os as OsBits;
-use UaResult\Os\OsInterface;
 use BrowserDetector\Version\Version;
+use UaResult\Os\OsInterface;
 
 /**
  * base class for all rendering platforms/operating systems to detect

@@ -58,7 +58,7 @@ class VersionFactory
             $version,
             $parts
         )) {
-            return new self();
+            return new Version();
         }
 
         list($major, $minor, $patch) = explode('.', $parts['core'], 3);
@@ -66,7 +66,7 @@ class VersionFactory
         $preRelease = (!empty($parts['preRelease'])) ? $parts['preRelease'] : null;
         $build      = (!empty($parts['build'])) ? $parts['build'] : null;
 
-        return new self($major, $minor, $patch, $preRelease, $build);
+        return new Version($major, $minor, $patch, $preRelease, $build);
     }
 
     /**

@@ -35,20 +35,21 @@ use BrowserDetector\Detector\Factory\BrowserFactory;
 use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
-use Psr\Log\LoggerInterface;
-use Psr\Log\NullLogger;
-//use BrowserDetector\Matcher\Browser\BrowserCalculatesAlternativeResultInterface;
-//use BrowserDetector\Matcher\Browser\BrowserDependsOnEngineInterface;
-//use BrowserDetector\Matcher\Browser\BrowserHasRuntimeModificationsInterface;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-//use BrowserDetector\Matcher\Engine\EngineDependsOnDeviceInterface;
+use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 use Wurfl\Request\GenericRequest;
 use Wurfl\Request\GenericRequestFactory;
 use WurflCache\Adapter\AdapterInterface;
+
+//use BrowserDetector\Matcher\Browser\BrowserCalculatesAlternativeResultInterface;
+//use BrowserDetector\Matcher\Browser\BrowserDependsOnEngineInterface;
+//use BrowserDetector\Matcher\Browser\BrowserHasRuntimeModificationsInterface;
+//use BrowserDetector\Matcher\Engine\EngineDependsOnDeviceInterface;
 
 /**
  * Browser Detection class

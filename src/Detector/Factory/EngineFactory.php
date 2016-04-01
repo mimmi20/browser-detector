@@ -33,9 +33,9 @@ namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Browser\Chrome;
 use BrowserDetector\Detector\Engine;
+use BrowserDetector\Version\Version;
 use UaHelper\Utils;
 use UaResult\Os\OsInterface;
-use BrowserDetector\Version\Version;
 
 /**
  * Browser detection class

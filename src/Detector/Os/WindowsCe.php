@@ -32,7 +32,6 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -71,6 +70,6 @@ class WindowsCe extends AbstractOs
      */
     private function detectVersion()
     {
-        return Version::set('0.0');
+        return \BrowserDetector\Version\VersionFactory::set('0.0');
     }
 }

@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
 use UaHelper\Utils;
-use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector

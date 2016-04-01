@@ -31,9 +31,9 @@
 
 namespace BrowserDetector\Detector\Device;
 
+use BrowserDetector\Version\Version;
 use UaDeviceType\TypeInterface;
 use UaResult\Device\DeviceInterface;
-use BrowserDetector\Version\Version;
 
 /**
  * base class for all Devices to detect

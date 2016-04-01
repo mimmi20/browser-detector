@@ -34,10 +34,9 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\Safari as SafariHelper;
+use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
 use UaHelper\Utils;
-use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector

@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
 use UaHelper\Utils;
-use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -76,19 +75,19 @@ class Windows extends AbstractOs
         $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
-            return Version::set('ME');
+            return \BrowserDetector\Version\VersionFactory::set('ME');
         }
 
         if ($utils->checkIfContains(['Win98'])) {
-            return Version::set('98');
+            return \BrowserDetector\Version\VersionFactory::set('98');
         }
 
         if ($utils->checkIfContains(['Win95'])) {
-            return Version::set('95');
+            return \BrowserDetector\Version\VersionFactory::set('95');
         }
 
         if ($utils->checkIfContains(['Windows-NT'])) {
-            return Version::set('NT');
+            return \BrowserDetector\Version\VersionFactory::set('NT');
         }
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->useragent, $matches);
@@ -129,7 +128,7 @@ class Windows extends AbstractOs
                     break;
             }
 
-            return Version::set($version);
+            return \BrowserDetector\Version\VersionFactory::set($version);
         }
 
         $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->useragent, $matches);
@@ -189,9 +188,9 @@ class Windows extends AbstractOs
                     break;
             }
 
-            return Version::set($version);
+            return \BrowserDetector\Version\VersionFactory::set($version);
         }
 
-        return Version::set('0.0');
+        return \BrowserDetector\Version\VersionFactory::set('0.0');
     }
 }

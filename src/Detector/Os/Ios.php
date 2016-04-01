@@ -32,7 +32,6 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -74,7 +73,7 @@ class Ios extends AbstractOs
         $doMatch = preg_match('/CPU like Mac OS X/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return Version::set('1.0');
+            return \BrowserDetector\Version\VersionFactory::set('1.0');
         }
 
         $searches = [

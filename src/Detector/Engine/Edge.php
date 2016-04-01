@@ -73,7 +73,7 @@ class Edge extends AbstractEngine
         $doMatch = preg_match('/Edge\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return Version::set($matches[1]);
+            return \BrowserDetector\Version\VersionFactory::set($matches[1]);
         }
 
         return new Version();

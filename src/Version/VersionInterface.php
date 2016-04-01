@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Version;
+namespace BrowserDetector\Version;
 
 /**
  * a general version detector

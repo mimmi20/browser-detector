@@ -78,7 +78,7 @@ class Macosx extends AbstractOs
             $found    = preg_match('/(\d\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
 
             if ($found) {
-                return Version::set($versions[1] . '.' . $versions[2]);
+                return \BrowserDetector\Version\VersionFactory::set($versions[1] . '.' . $versions[2]);
             }
         }
 

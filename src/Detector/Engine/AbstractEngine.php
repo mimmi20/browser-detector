@@ -31,8 +31,8 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use UaResult\Engine\EngineInterface;
 use BrowserDetector\Version\Version;
+use UaResult\Engine\EngineInterface;
 
 /**
  * base class for all rendering engines to detect

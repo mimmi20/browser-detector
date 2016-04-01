@@ -32,9 +32,9 @@
 namespace BrowserDetector\Detector\Result;
 
 use BrowserDetector\Detector\Company;
-use Psr\Log\LoggerInterface;
 use BrowserDetector\Matcher\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Matcher\Device\DeviceHasWurflKeyInterface;
+use Psr\Log\LoggerInterface;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Device\DeviceInterface;
 use UaResult\Engine\EngineInterface;

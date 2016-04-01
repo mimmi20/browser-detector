@@ -34,9 +34,8 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
-use UaBrowserType;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\Version;
+use UaBrowserType;
 
 /**
  * @category  BrowserDetector
@@ -86,7 +85,7 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasSpecificEngin
     {
         $helper = new MicrosoftOfficeHelper();
 
-        return Version::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
+        return \BrowserDetector\Version\VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**

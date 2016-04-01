@@ -199,7 +199,6 @@ use BrowserDetector\Detector\Browser\FacebookApp;
 use BrowserDetector\Detector\Browser\FacebookExternalHit;
 use BrowserDetector\Detector\Browser\Facebookscraper;
 use BrowserDetector\Detector\Browser\FaceBot;
-use BrowserDetector\Detector\Browser\FakeBrowser;
 use BrowserDetector\Detector\Browser\FastbotCrawler;
 use BrowserDetector\Detector\Browser\FastBrowser;
 use BrowserDetector\Detector\Browser\FastladderFeedFetcher;
@@ -733,9 +732,7 @@ class BrowserFactory implements FactoryInterface
         $agent,
         OsInterface $platform = null
     ) {
-        if (preg_match('/windows nt (7|8|9)/i', $agent)) {
-            $browser = new FakeBrowser($agent, []);
-        } elseif (preg_match('/RevIP\.info site analyzer/', $agent)) {
+        if (preg_match('/RevIP\.info site analyzer/', $agent)) {
             $browser = new RevIpSnfoSiteAnalyzer($agent, []);
         } elseif (preg_match('/reddit pic scraper/i', $agent)) {
             $browser = new RedditPicScraper($agent, []);
@@ -880,13 +877,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new GoogleToolbar($agent, []);
         } elseif (preg_match('/netscape/i', $agent) && preg_match('/msie/i', $agent)) {
             $browser = new Netscape($agent, []);
-        } elseif (preg_match('/msie (\d+)\.(\d+)/i', $agent, $matches)
-            && isset($matches[1])
-            && isset($matches[2])
-            && $matches[1] > 5
-            && $matches[2] !== 0
-        ) {
-            $browser = new FakeBrowser($agent, []);
         } elseif (preg_match('/LSSRocketCrawler/', $agent)) {
             $browser = new LightspeedSystemsRocketCrawler($agent, []);
         } elseif (preg_match('/lightspeedsystems/i', $agent)) {
@@ -1081,8 +1071,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new WindowsPhoneSearch($agent, []);
         } elseif (preg_match('/Windows\-Update\-Agent/', $agent)) {
             $browser = new WindowsUpdateAgent($agent, []);
-        } elseif (preg_match('/^windows/i', $agent)) {
-            $browser = new FakeBrowser($agent, []);
         } elseif (preg_match('/nokia/i', $agent)) {
             $browser = new NokiaBrowser($agent, []);
         } elseif (preg_match('/twitter for i/i', $agent)) {
