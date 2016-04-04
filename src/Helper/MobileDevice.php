@@ -70,12 +70,6 @@ class MobileDevice
      */
     public function isMobile()
     {
-        $fakeHelper = new SpamCrawlerFake($this->useragent);
-
-        if ($fakeHelper->isFakeBrowser()) {
-            return false;
-        }
-
         /*
          * @var array Collection of mobile browser keywords
          */
@@ -219,16 +213,11 @@ class MobileDevice
             return true;
         }
 
-        $helper = new FirefoxOs();
-        $helper->setUserAgent($this->useragent);
-
-        if ($helper->isFirefoxOs()) {
+        if ((new FirefoxOs($this->useragent))->isFirefoxOs()) {
             return true;
         }
 
-        $windowsHelper = new Windows($this->useragent);
-
-        if ($windowsHelper->isWindows() && $this->utils->checkIfContains('touch', true)) {
+        if ((new Windows($this->useragent))->isWindows() && $this->utils->checkIfContains('touch', true)) {
             return true;
         }
 

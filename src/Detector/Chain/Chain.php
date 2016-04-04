@@ -29,10 +29,9 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector;
+namespace BrowserDetector\Detector\Chain;
 
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Helper\Classname;
 use DirectoryIterator;
 
 /**
@@ -60,7 +59,7 @@ class Chain
      *
      * @param \BrowserDetector\Detector\Device\AbstractDevice $handler
      *
-     * @return \BrowserDetector\Detector\Chain
+     * @return \BrowserDetector\Detector\Chain\Chain
      */
     public function setDefaultHandler(AbstractDevice $handler)
     {
@@ -74,7 +73,7 @@ class Chain
      *
      * @param \BrowserDetector\Matcher\MatcherHasWeightInterface[] $handlersToUse
      *
-     * @return \BrowserDetector\Detector\Chain
+     * @return \BrowserDetector\Detector\Chain\Chain
      */
     public function setHandlers(array $handlersToUse)
     {
@@ -88,7 +87,7 @@ class Chain
      *
      * @param string $directory
      *
-     * @return \BrowserDetector\Detector\Chain
+     * @return \BrowserDetector\Detector\Chain\Chain
      */
     public function setDirectory($directory)
     {
@@ -102,7 +101,7 @@ class Chain
      *
      * @param string $namespace
      *
-     * @return \BrowserDetector\Detector\Chain
+     * @return \BrowserDetector\Detector\Chain\Chain
      */
     public function setNamespace($namespace)
     {
@@ -116,7 +115,7 @@ class Chain
      *
      * @param string $agent
      *
-     * @return \BrowserDetector\Detector\Chain
+     * @return \BrowserDetector\Detector\Chain\Chain
      */
     public function setUserAgent($agent)
     {

@@ -11,31 +11,13 @@ use BrowserDetector\Helper\FirefoxOs;
 class FirefoxOsTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \BrowserDetector\Helper\FirefoxOs
-     */
-    private $object = null;
-
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp()
-    {
-        parent::setUp();
-
-        $this->object = new FirefoxOs();
-    }
-
-    /**
      * @dataProvider providerIsFirefoxOsPositive
      *
      * @param string $agent
      */
     public function testIsFirefoxOsPositive($agent)
     {
-        $this->object->setUserAgent($agent);
-
-        self::assertTrue($this->object->isFirefoxOs());
+        self::assertTrue((new FirefoxOs($agent))->isFirefoxOs());
     }
 
     public function providerIsFirefoxOsPositive()
@@ -52,9 +34,7 @@ class FirefoxOsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsFirefoxOsNegative($agent)
     {
-        $this->object->setUserAgent($agent);
-
-        self::assertFalse($this->object->isFirefoxOs());
+        self::assertFalse((new FirefoxOs($agent))->isFirefoxOs());
     }
 
     public function providerIsFirefoxOsNegative()

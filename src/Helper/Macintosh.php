@@ -39,11 +39,6 @@ use UaHelper\Utils;
 class Macintosh
 {
     /**
-     * @var string the user agent to handle
-     */
-    private $useragent = '';
-
-    /**
      * @var \UaHelper\Utils the helper class
      */
     private $utils = null;
@@ -59,7 +54,6 @@ class Macintosh
     {
         $this->utils = new Utils();
 
-        $this->useragent = $useragent;
         $this->utils->setUserAgent($useragent);
     }
 

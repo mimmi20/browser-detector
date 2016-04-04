@@ -29,53 +29,21 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Helper;
-
-use WurflCache\Adapter\AdapterInterface;
+namespace BrowserDetector\Detector\Chain;
 
 /**
- * a general helper to work with \Zend\Cache
+ * helper to get the class name
  */
-class Cache
+class Classname
 {
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param \WurflCache\Adapter\AdapterInterface $cache
-     * @param string                               $useragent   the user agent string
-     * @param string                               $cachePrefix
-     *
-     * @return mixed
-     */
-    public function getBrowserFromCache(
-        AdapterInterface $cache,
-        $useragent = null,
-        $cachePrefix = null
-    ) {
-        $cacheId = $this->getCacheIdFromAgent($useragent, $cachePrefix);
-        $success = true;
-
-        return $cache->getItem($cacheId, $success);
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string $useragent   the user agent string
-     * @param string $cachePrefix
-     *
-     * @return string
-     */
-    public function getCacheIdFromAgent($useragent = null, $cachePrefix = null)
+    public function getClassNameFromFile($filename, $namespace = __NAMESPACE__, $createFullName = true)
     {
-        return substr(
-            $cachePrefix . 'agent_' . preg_replace(
-                '/[^a-zA-Z0-9_]/',
-                '_',
-                $useragent
-            ),
-            0,
-            179
-        );
+        $filename = ltrim($filename, '\\');
+
+        if (!$createFullName) {
+            return $filename;
+        }
+
+        return '\\' . ltrim($namespace, '\\') . '\\' . $filename;
     }
 }

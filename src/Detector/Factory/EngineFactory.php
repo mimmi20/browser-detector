@@ -112,6 +112,6 @@ class EngineFactory implements FactoryInterface
 
         $engineName = '\\BrowserDetector\\Detector\\Engine\\' . $engineKey;
 
-        return new $engineName($agent);
+        return new $engineName($agent, []);
     }
 }

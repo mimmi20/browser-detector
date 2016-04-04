@@ -76,12 +76,6 @@ class Windows
             return false;
         }
 
-        $spamHelper = new SpamCrawlerFake($this->useragent);
-
-        if (!$spamHelper->isAnonymized() && $spamHelper->isFakeWindows()) {
-            return false;
-        }
-
         if ($this->isMobileWindows()) {
             return false;
         }

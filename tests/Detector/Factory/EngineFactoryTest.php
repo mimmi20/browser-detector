@@ -25,10 +25,10 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
         self::assertInstanceOf('\UaResult\Engine\EngineInterface', $result);
         self::assertSame($engine, $result->getName());
 
-        self::assertInstanceOf('\UaResult\Version', $result->getVersion());
+        self::assertInstanceOf('\BrowserDetector\Version\Version', $result->getVersion());
         self::assertSame($version, $result->getVersion()->getVersion(Version::MAJORMINOR));
 
-        self::assertInstanceOf('\UaResult\Company\CompanyInterface', $result->getManufacturer());
+        //self::assertInstanceOf('\UaResult\Company\CompanyInterface', $result->getManufacturer());
     }
 
     /**
@@ -70,7 +70,7 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7567.EU',
                 'NetFront',
-                '',
+                '0.0',
             ],
             [
                 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
@@ -85,12 +85,12 @@ class EngineFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 8.01',
                 'Presto',
-                '',
+                '0.0',
             ],
             [
                 'Mozilla/4.0 (compatible; MSIE 6.0; PPC Mac OS X 10.6.8; Tasman 1.0)',
                 'Tasman',
-                '',
+                '0.0',
             ],
             [
                 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:26.0.0b2) Goanna/20150828 Gecko/20100101 AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37 PaleMoon/26.0.0b2',

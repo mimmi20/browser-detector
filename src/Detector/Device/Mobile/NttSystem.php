@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Chain;
+use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;

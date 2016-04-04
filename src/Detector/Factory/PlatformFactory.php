@@ -68,9 +68,6 @@ class PlatformFactory implements FactoryInterface
             $isWindows = true;
         }
 
-        $firefoxOsHelper = new FirefoxOsHelper();
-        $firefoxOsHelper->setUserAgent($agent);
-
         if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop)/', $agent)) {
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
             if (!$doMatchPhone || $matchesPhone[1] >= 7) {
@@ -106,7 +103,7 @@ class PlatformFactory implements FactoryInterface
             $platform = new Os\WebOs($agent, []);
         } elseif ($utils->checkIfContains('Tizen')) {
             $platform = new Os\Tizen($agent, []);
-        } elseif ($firefoxOsHelper->isFirefoxOs()) {
+        } elseif ((new FirefoxOsHelper($agent))->isFirefoxOs()) {
             $platform = new Os\FirefoxOs($agent, []);
         } elseif ($utils->checkIfContains('darwin', true)) {
             $platform = new Os\Darwin($agent, []);

@@ -25,10 +25,10 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
         self::assertSame($platform, $result->getName());
 
-        self::assertInstanceOf('\UaResult\Version', $result->getVersion());
+        self::assertInstanceOf('\BrowserDetector\Version\Version', $result->getVersion());
         self::assertSame($version, $result->getVersion()->getVersion(Version::MAJORMINOR));
 
-        self::assertInstanceOf('\UaResult\Company\CompanyInterface', $result->getManufacturer());
+        //self::assertInstanceOf('\UaResult\Company\CompanyInterface', $result->getManufacturer());
     }
 
     /**
@@ -70,7 +70,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7567.EU',
                 'Nintendo OS',
-                '',
+                '0.0',
             ],
             [
                 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',

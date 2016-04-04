@@ -29,6 +29,8 @@
 
 namespace BrowserDetector\Version;
 
+use Version\Stability;
+
 /**
  * a general version detector factory
  *
@@ -48,25 +50,78 @@ class VersionFactory
      */
     public static function set($version)
     {
-        $parts = [];
-        if (!preg_match(
-            '#^'
-            . '(?P<core>(?:[0-9]|[1-9][0-9]+)(?:\.(?:[0-9]|[1-9][0-9]+)){2,4})'
-            . '(?:\-(?P<preRelease>[0-9A-Za-z\-\.]+))?'
-            . '(?:\+(?P<build>[0-9A-Za-z\-\.]+))?'
-            . '$#',
-            $version,
-            $parts
-        )) {
+        $matches = [];
+
+        $regex = '/^' .
+            'v?' .
+            '(?:(\d+)[-|\.])?' .
+            '(?:(\d+)[-|\.])?' .
+            '(?:(\d+)[-|\.])?' .
+            '(?:(\d+)\.)?' .
+            '(?:(\d+))?' .
+            '(?:' . Stability::REGEX . ')?' .
+            '$/';
+
+        if (preg_match($regex, $version, $matches)) {
+            $numbers = self::mapMatches($matches);
+        } else {
+            $secondMatches = [];
+            $secondRegex   = '/^' .
+                'v?' .
+                '(?:(\d+)[-|\.])?' .
+                '(?:(\d+)[-|\.])?' .
+                '(?:(\d+)[-|\.])?' .
+                '(?:(\d+)\.)?' .
+                '(?:(\d+))?' .
+                '.*$/';
+
+            if (!preg_match($secondRegex, $version, $secondMatches)) {
+                return new Version();
+            }
+
+            $numbers = self::mapMatches($secondMatches);
+        }
+
+        if (empty($numbers)) {
             return new Version();
         }
 
-        list($major, $minor, $patch) = explode('.', $parts['core'], 3);
+        $major = (isset($numbers[0]) ? $numbers[0] : '0');
+        $minor = (isset($numbers[1]) ? $numbers[1] : '0');
+        $patch = (isset($numbers[2]) ? $numbers[2] : '0') . (isset($numbers[3]) ? '.' . $numbers[3] : '') . (isset($numbers[4]) ? '.' . $numbers[4] : '');
 
-        $preRelease = (!empty($parts['preRelease'])) ? $parts['preRelease'] : null;
-        $build      = (!empty($parts['build'])) ? $parts['build'] : null;
+        $stability = (!empty($matches['6'])) ? $matches['6'] : null;
 
-        return new Version($major, $minor, $patch, $preRelease, $build);
+        if (strlen($stability) == 0) {
+            $stability = 'stable';
+        }
+        $stability = strtolower($stability);
+        switch ($stability) {
+            case 'rc':
+                $stability = 'RC';
+                break;
+            case 'patch':
+            case 'pl':
+            case 'p':
+                $stability = 'patch';
+                break;
+            case 'beta':
+            case 'b':
+                $stability = 'beta';
+                break;
+            case 'alpha':
+            case 'a':
+                $stability = 'alpha';
+                break;
+            case 'dev':
+            case 'd':
+                $stability = 'dev';
+                break;
+        }
+
+        $build = (!empty($matches['7'])) ? $matches['7'] : null;
+
+        return new Version($major, $minor, $patch, $stability, $build);
     }
 
     /**
@@ -115,7 +170,7 @@ class VersionFactory
             }
 
             foreach ($modifiers as $modifier) {
-                $compareString = '/' . $search . $modifier[0] . '(\d+[\d\.\_ab]*)' . $modifier[1] . '/';
+                $compareString = '/' . $search . $modifier[0] . '(\d+[\d\.\_\-\+abcdehlprstv]*)' . $modifier[1] . '/i';
 
                 $doMatch = preg_match(
                     $compareString,
@@ -124,12 +179,40 @@ class VersionFactory
                 );
 
                 if ($doMatch) {
-                    $version = $matches[1];
+                    $version = strtolower(str_replace('_', '.', $matches[1]));
                     break 2;
                 }
             }
         }
 
         return self::set($version);
+    }
+
+    /**
+     * @param array $matches
+     *
+     * @return array
+     */
+    private static function mapMatches(array $matches)
+    {
+        $numbers = [];
+
+        if (isset($matches[1]) && strlen($matches[1]) > 0) {
+            $numbers[] = $matches[1];
+        }
+        if (isset($matches[2]) && strlen($matches[2]) > 0) {
+            $numbers[] = $matches[2];
+        }
+        if (isset($matches[3]) && strlen($matches[3]) > 0) {
+            $numbers[] = $matches[3];
+        }
+        if (isset($matches[4]) && strlen($matches[4]) > 0) {
+            $numbers[] = $matches[4];
+        }
+        if (isset($matches[5]) && strlen($matches[5]) > 0) {
+            $numbers[] = $matches[5];
+        }
+
+        return $numbers;
     }
 }

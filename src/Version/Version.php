@@ -58,7 +58,7 @@ class Version implements VersionInterface, \Serializable
     /**
      * @var string
      */
-    private $preRelease = null;
+    private $stability = null;
 
     /**
      * @var string
@@ -72,7 +72,7 @@ class Version implements VersionInterface, \Serializable
      * @param array|string $preRelease OPTIONAL
      * @param array|string $build OPTIONAL
      */
-    public function __construct($major = 0, $minor = 0, $patch = 0, $preRelease = null, $build = null)
+    public function __construct($major = '0', $minor = '0', $patch = '0', $preRelease = null, $build = null)
     {
         if ((!is_int($major) && !is_string($major)) || $major < 0) {
             throw new \InvalidArgumentException('Major version must be a non-negative integer or a string');
@@ -84,10 +84,10 @@ class Version implements VersionInterface, \Serializable
             throw new \InvalidArgumentException('Patch version must be a non-negative integer or a string');
         }
 
-        $this->major = $major;
-        $this->minor = $minor;
-        $this->micro = $patch;
-        $this->preRelease = $preRelease;
+        $this->major = (string) $major;
+        $this->minor = (string) $minor;
+        $this->micro = (string) $patch;
+        $this->stability = $preRelease;
         $this->build = $build;
     }
 
@@ -104,7 +104,7 @@ class Version implements VersionInterface, \Serializable
                 'major'      => $this->major,
                 'minor'      => $this->minor,
                 'micro'      => $this->micro,
-                'preRelease' => $this->preRelease,
+                'preRelease' => $this->stability,
                 'build'      => $this->build,
             ]
         );
@@ -122,11 +122,11 @@ class Version implements VersionInterface, \Serializable
     {
         $unseriliazedData = unserialize($serialized);
 
-        $this->major      = $unseriliazedData['major'];
-        $this->minor      = $unseriliazedData['minor'];
-        $this->micro      = $unseriliazedData['micro'];
-        $this->preRelease = $unseriliazedData['preRelease'];
-        $this->build      = $unseriliazedData['build'];
+        $this->major     = $unseriliazedData['major'];
+        $this->minor     = $unseriliazedData['minor'];
+        $this->micro     = $unseriliazedData['micro'];
+        $this->stability = $unseriliazedData['preRelease'];
+        $this->build     = $unseriliazedData['build'];
     }
 
     /**
@@ -151,6 +151,22 @@ class Version implements VersionInterface, \Serializable
     public function getMicro()
     {
         return $this->micro;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getBuild()
+    {
+        return $this->build;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getStability()
+    {
+        return $this->stability;
     }
 
     /**
@@ -190,7 +206,7 @@ class Version implements VersionInterface, \Serializable
 
         if (VersionInterface::MICROONLY & $mode) {
             $versions[2] = $this->micro;
-            $versions[3] = $this->preRelease;
+            $versions[3] = $this->stability;
             $versions[4] = $this->build;
         }
 
@@ -245,7 +261,7 @@ class Version implements VersionInterface, \Serializable
         return $versions[0]
             . (isset($versions[1]) ? '.' . (string) $versions[1] : '')
             . (isset($versions[2]) ? '.' . (string) $versions[2] : '')
-            . (isset($versions[3]) ? '-' . (string) $versions[3] : '')
+            . ((isset($versions[3]) && 'stable' !== $versions[3]) ? '-' . (string) $versions[3] : '')
             . (isset($versions[4]) ? '+' . (string) $versions[4] : '');
     }
 }
