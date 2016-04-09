@@ -45,8 +45,6 @@ interface MatcherIsCacheableInterface
      * sets the actual user agent
      *
      * @param string $agent
-     *
-  BrowserDetector\Matcherurn \BrowserDetector\Matcher\MatcherInterface
      */
     public function setUseragent($agent);
 }

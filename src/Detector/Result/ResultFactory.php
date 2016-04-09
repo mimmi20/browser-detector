@@ -31,7 +31,6 @@
 
 namespace BrowserDetector\Detector\Result;
 
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Matcher\Browser\BrowserHasWurflKeyInterface;
 use BrowserDetector\Matcher\Device\DeviceHasWurflKeyInterface;
 use Psr\Log\LoggerInterface;

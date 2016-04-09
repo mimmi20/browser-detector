@@ -34,11 +34,11 @@ namespace BrowserDetector\Detector\Device\Mobile\GoClever;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use UaDeviceType;
-use UaHelper\Utils;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use BrowserDetector\Matcher\MatcherCanHandleInterface;
 use BrowserDetector\Matcher\MatcherHasWeightInterface;
+use UaDeviceType;
+use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector

@@ -72,7 +72,7 @@ class RimOs extends AbstractOs
     {
         $searches = ['BlackBerry[0-9a-z]+', 'BlackBerrySimulator'];
 
-        if (false !== stripos($this->useragent, 'opera')) {
+        if (false !== stripos($this->useragent, 'bb10') || false !== stripos($this->useragent, 'opera')) {
             $searches[] = 'Version';
         }
 

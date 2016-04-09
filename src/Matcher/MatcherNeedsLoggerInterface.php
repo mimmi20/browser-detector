@@ -47,8 +47,6 @@ interface MatcherNeedsLoggerInterface
      * sets the logger
      *
      * @param \Psr\Log\LoggerInterface $logger
-     *
-  BrowserDetector\Matcherurn \BrowserDetector\Matcher\MatcherInterface
      */
     public function setLogger(LoggerInterface $logger);
 }

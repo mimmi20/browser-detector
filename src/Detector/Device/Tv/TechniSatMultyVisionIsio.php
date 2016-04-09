@@ -34,8 +34,8 @@ namespace BrowserDetector\Detector\Device\Tv;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use UaDeviceType;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
 
 /**
  * @category  BrowserDetector

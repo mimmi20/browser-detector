@@ -61,8 +61,6 @@ interface MatcherHasCapabilitiesInterface
      * @param mixed  $capabilityValue
      *
      * @throws \InvalidArgumentException
-     *
-  BrowserDetector\Matcherurn \BrowserDetector\Matcher\MatcherInterface
      */
     public function setCapability(
         $capabilityName,
