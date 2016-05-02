@@ -42,7 +42,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoogleSearchApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WkHtmltoImage extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -58,13 +58,13 @@ class GoogleSearchApp extends AbstractBrowser implements BrowserHasSpecificEngin
 
         $this->setData(
             [
-                'name'                        => 'Google Search',
+                'name'                        => 'wkhtmltoimage',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Google())->name,
+                'manufacturer'                => (new Company\WkHtmltopdfOrg())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
+                'canSkipAlignedLinkRow'       => true,
                 'claimsWebSupport'            => false,
                 'supportsEmptyOptionValues'   => true,
                 'supportsBasicAuthentication' => true,
@@ -82,9 +82,7 @@ class GoogleSearchApp extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     private function detectVersion()
     {
-        $searches = [
-            'GSA',
-        ];
+        $searches = ['wkhtmltoimage'];
 
         return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
     }
@@ -96,6 +94,6 @@ class GoogleSearchApp extends AbstractBrowser implements BrowserHasSpecificEngin
      */
     public function getEngine()
     {
-        return new Engine\Webkit($this->useragent, []);
+        return new Engine\UnknownEngine($this->useragent, []);
     }
 }

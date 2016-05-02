@@ -42,7 +42,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WkHtmltopdf extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class GoogleApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -58,13 +58,13 @@ class WkHtmltopdf extends AbstractBrowser implements BrowserHasSpecificEngineInt
 
         $this->setData(
             [
-                'name'                        => 'wkhtmltopdf',
+                'name'                        => 'Google App',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\WkHtmltopdfOrg())->name,
+                'manufacturer'                => (new Company\Google())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => true,
+                'canSkipAlignedLinkRow'       => false,
                 'claimsWebSupport'            => false,
                 'supportsEmptyOptionValues'   => true,
                 'supportsBasicAuthentication' => true,
@@ -82,7 +82,9 @@ class WkHtmltopdf extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     private function detectVersion()
     {
-        $searches = ['wkhtmltopdf'];
+        $searches = [
+            'GSA',
+        ];
 
         return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
     }
@@ -94,6 +96,6 @@ class WkHtmltopdf extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getEngine()
     {
-        return new Engine\UnknownEngine($this->useragent, []);
+        return new Engine\Webkit($this->useragent, []);
     }
 }

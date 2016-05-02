@@ -44,7 +44,7 @@ class Evernote extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Evernote';
+    public $name = 'Evernote Corporation';
 
     /**
      * the brand name of the company

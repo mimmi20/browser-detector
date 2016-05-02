@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Hp;
+namespace BrowserDetector\Detector\Device\Mobile\Yuanda;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -46,7 +46,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PalmPre extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class YuandaN90fhdrk extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
@@ -62,21 +62,21 @@ class PalmPre extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
 
         $this->setData(
             [
-                'deviceName'        => 'Pre',
-                'marketingName'     => 'Pre',
+                'deviceName'        => 'N90FHDRK',
+                'marketingName'     => 'Vido N90FHD',
                 'version'           => null,
-                'manufacturer'      => (new Company\Hp())->name,
-                'brand'             => (new Company\Hp())->brandname,
+                'manufacturer'      => (new Company\Yuandao())->name,
+                'brand'             => (new Company\Yuandao())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 320,
-                'resolutionHeight'  => 480,
-                'dualOrientation'   => false,
-                'colors'            => 256,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
+                'resolutionWidth'   => 1024,
+                'resolutionHeight'  => 768,
+                'dualOrientation'   => true,
+                'colors'            => 65536,
+                'smsSupport'        => false,
+                'nfcSupport'        => false,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
     }
@@ -91,11 +91,11 @@ class PalmPre extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
-        if (!$utils->checkIfContains('Pre/')) {
+        if (!$utils->checkIfContains(['N90FHDRK'])) {
             return false;
         }
 
-        return true;
+        return false;
     }
 
     /**
@@ -111,10 +111,10 @@ class PalmPre extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\WebOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new Os\WebOs($this->useragent, []);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

@@ -44,7 +44,7 @@ class Videocon extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Videocon';
+    public $name = 'Videocon Industries Limited';
 
     /**
      * the brand name of the company
