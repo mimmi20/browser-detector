@@ -80,15 +80,15 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
                     throw new \RuntimeException('Test data is duplicated for key "' . $key . '"');
                 }
 
-                if (isset($checks[$test[0]])) {
+                if (isset($checks[$test['ua']])) {
                     throw new \RuntimeException(
-                        'UA "' . $test[0] . '" added more than once, now for key "' . $key . '", before for key "'
-                        . $checks[$test[0]] . '"'
+                        'UA "' . $test['ua'] . '" added more than once, now for key "' . $key . '", before for key "'
+                        . $checks[$test['ua']] . '"'
                     );
                 }
 
-                $data[$key]       = $test;
-                $checks[$test[0]] = $key;
+                $data[$key]          = $test;
+                $checks[$test['ua']] = $key;
             }
         }
 
