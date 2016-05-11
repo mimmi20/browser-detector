@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -73,7 +74,7 @@ class Trident extends AbstractEngine
         $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($matches[1]);
+            return VersionFactory::set($matches[1]);
         }
 
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
@@ -98,7 +99,7 @@ class Trident extends AbstractEngine
                     // do nothing here
             }
 
-            return \BrowserDetector\Version\VersionFactory::set($version);
+            return VersionFactory::set($version);
         }
 
         return new Version();

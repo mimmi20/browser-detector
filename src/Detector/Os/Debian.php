@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 use UaHelper\Utils;
 
 /**
@@ -78,6 +79,6 @@ class Debian extends AbstractOs
             return '6.0';
         }
 
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['Debian']);
+        return VersionFactory::detectVersion($this->useragent, ['Debian']);
     }
 }

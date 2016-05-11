@@ -63,7 +63,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         }
 
         $checks          = [];
-        $sourceDirectory = 'vendor/browscap/browscap/tests/fixtures/issues/';
+        $sourceDirectory = 'tests/issues/';
 
         $iterator = new \DirectoryIterator($sourceDirectory);
 
@@ -77,14 +77,13 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
 
             foreach ($tests as $key => $test) {
                 if (isset($data[$key])) {
-                    throw new \RuntimeException('Test data is duplicated for key "' . $key . '"');
+                    // Test data is duplicated for key
+                    continue;
                 }
 
                 if (isset($checks[$test['ua']])) {
-                    throw new \RuntimeException(
-                        'UA "' . $test['ua'] . '" added more than once, now for key "' . $key . '", before for key "'
-                        . $checks[$test['ua']] . '"'
-                    );
+                    // UA was added more than once
+                    continue;
                 }
 
                 $data[$key]          = $test;

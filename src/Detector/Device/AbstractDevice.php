@@ -43,8 +43,7 @@ use UaResult\Device\DeviceInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractDevice
-    implements DeviceInterface
+abstract class AbstractDevice implements DeviceInterface
 {
     /**
      * @var string the user agent to handle

@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -70,6 +71,6 @@ class Os2 extends AbstractOs
      */
     private function detectVersion()
     {
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['OS\/2', 'Warp']);
+        return VersionFactory::detectVersion($this->useragent, ['OS\/2', 'Warp']);
     }
 }

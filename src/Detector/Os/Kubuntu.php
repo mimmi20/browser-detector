@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -70,6 +71,6 @@ class Kubuntu extends AbstractOs
      */
     private function detectVersion()
     {
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['Kubuntu', 'kubuntu']);
+        return VersionFactory::detectVersion($this->useragent, ['Kubuntu', 'kubuntu']);
     }
 }

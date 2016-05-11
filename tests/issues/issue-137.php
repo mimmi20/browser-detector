@@ -1,0 +1,34 @@
+<?php
+
+return [
+    'browscap-issue-137' => [
+        'ua' => 'Mozilla/5.0 (compatible; Konqueror/2.2.2; Linux 2.4.14-xfs; X11; i686)',
+        'properties' => [
+            'Browser' => 'Konqueror',
+            'Browser_Type' => 'Browser',
+            'Browser_Bits' => 32,
+            'Browser_Maker' => 'KDE e.V.',
+            'Browser_Modus' => 'unknown',
+            'Version' => '2.2',
+            'Platform' => 'Linux',
+            'Platform_Version' => 'unknown',
+            'Platform_Bits' => 32,
+            'Platform_Maker' => 'Linux Foundation',
+            'Win16' => false,
+            'Win32' => false,
+            'Win64' => false,
+            'isMobileDevice' => false,
+            'isTablet' => false,
+            'Crawler' => false,
+            'Device_Name' => 'Linux Desktop',
+            'Device_Maker' => 'Various',
+            'Device_Type' => 'Desktop',
+            'Device_Pointing_Method' => 'mouse',
+            'Device_Code_Name' => 'Linux Desktop',
+            'Device_Brand_Name' => 'unknown',
+            'RenderingEngine_Name' => 'KHTML',
+            'RenderingEngine_Version' => 'unknown',
+            'RenderingEngine_Maker' => 'KDE e.V.',
+        ],
+    ],
+];

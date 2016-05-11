@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -82,7 +83,7 @@ class Qt extends AbstractBrowser implements BrowserHasSpecificEngineInterface
      */
     private function detectVersion()
     {
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['Qt']);
+        return VersionFactory::detectVersion($this->useragent, ['Qt']);
     }
 
     /**

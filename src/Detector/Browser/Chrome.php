@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -80,6 +81,6 @@ class Chrome extends AbstractBrowser
      */
     private function detectVersion()
     {
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['Chrome', 'CrMo', 'CriOS']);
+        return VersionFactory::detectVersion($this->useragent, ['Chrome', 'CrMo', 'CriOS']);
     }
 }

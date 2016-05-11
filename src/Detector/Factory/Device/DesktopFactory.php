@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Factory\Device;
 use BrowserDetector\Detector\Device\Desktop\EeePc;
 use BrowserDetector\Detector\Device\Desktop\GeneralDesktop;
 use BrowserDetector\Detector\Device\Desktop\Hp9000;
+use BrowserDetector\Detector\Device\Desktop\Imac;
 use BrowserDetector\Detector\Device\Desktop\LinuxDesktop;
 use BrowserDetector\Detector\Device\Desktop\MacBook;
 use BrowserDetector\Detector\Device\Desktop\MacBookAir;
@@ -69,6 +70,8 @@ class DesktopFactory implements FactoryInterface
             $device = new WindowsDesktop($useragent, []);
         } elseif ((new LinuxHelper($useragent))->isLinux()) {
             $device = new LinuxDesktop($useragent, []);
+        } elseif (preg_match('/iMac/', $useragent)) {
+            $device = new Imac($useragent, []);
         } elseif (preg_match('/macbookpro/i', $useragent)) {
             $device = new MacBookPro($useragent, []);
         } elseif (preg_match('/macbookair/i', $useragent)) {

@@ -21,8 +21,6 @@ class GeneralMobileTest extends \PHPUnit_Framework_TestCase
     protected function setUp()
     {
         self::markTestSkipped('need to be changed');
-
-        $this->object = new GeneralMobile();
     }
 
     /**
@@ -33,7 +31,7 @@ class GeneralMobileTest extends \PHPUnit_Framework_TestCase
      */
     public function testDetectDevice($agent, $device)
     {
-        $this->object->setUserAgent($agent);
+        $this->object = new GeneralMobile($agent, []);
 
         self::assertInstanceOf($device, $this->object->detectDevice());
     }
@@ -54,7 +52,7 @@ class GeneralMobileTest extends \PHPUnit_Framework_TestCase
     public function testGetDeviceType($agent, $deviceType)
     {
         self::markTestSkipped('has to be changed');
-        $this->object->setUserAgent($agent);
+        $this->object = new GeneralMobile($agent, []);
 
         $device = $this->object->detectDevice();
         $device->detectSpecialProperties();

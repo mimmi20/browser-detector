@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -73,7 +74,7 @@ class Edge extends AbstractEngine
         $doMatch = preg_match('/Edge\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($matches[1]);
+            return VersionFactory::set($matches[1]);
         }
 
         return new Version();

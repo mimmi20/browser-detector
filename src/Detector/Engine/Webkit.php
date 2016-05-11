@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -76,6 +77,6 @@ class Webkit extends AbstractEngine
             'Browser\/AppleWebKit',
         ];
 
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
+        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 }

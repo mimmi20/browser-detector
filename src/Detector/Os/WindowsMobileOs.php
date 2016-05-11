@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 use UaHelper\Utils;
 
 /**
@@ -81,11 +82,11 @@ class WindowsMobileOs extends AbstractOs
         if ($utils->checkIfContains(['Windows CE', 'Windows Mobile', 'MSIEMobile'])) {
             $searches = ['MSIEMobile'];
 
-            return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches, '6.0');
+            return VersionFactory::detectVersion($this->useragent, $searches, '6.0');
         }
 
         $searches = ['Windows Phone'];
 
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
+        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 }

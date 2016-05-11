@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -91,7 +92,7 @@ class WindowsRt extends AbstractOs
                     break;
             }
 
-            return \BrowserDetector\Version\VersionFactory::set($version);
+            return VersionFactory::set($version);
         }
 
         $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->useragent, $matches);
@@ -116,9 +117,9 @@ class WindowsRt extends AbstractOs
                     break;
             }
 
-            return \BrowserDetector\Version\VersionFactory::set($version);
+            return VersionFactory::set($version);
         }
 
-        return \BrowserDetector\Version\VersionFactory::set('0.0');
+        return VersionFactory::set('0.0');
     }
 }

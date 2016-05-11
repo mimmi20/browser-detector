@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -71,7 +72,7 @@ class AndroidOs extends AbstractOs
     private function detectVersion()
     {
         if (false !== stripos($this->useragent, 'android 2.1-update1')) {
-            return \BrowserDetector\Version\VersionFactory::set('2.1.1');
+            return VersionFactory::set('2.1.1');
         }
 
         $searches = [
@@ -83,20 +84,20 @@ class AndroidOs extends AbstractOs
             'Android OS',
         ];
 
-        $detector = \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
+        $detector = VersionFactory::detectVersion($this->useragent, $searches);
 
         if ($detector->getVersion()) {
             return $detector;
         }
 
         if (false !== stripos($this->useragent, 'android eclair')) {
-            return \BrowserDetector\Version\VersionFactory::set('2.1');
+            return VersionFactory::set('2.1');
         }
 
         if (false !== stripos($this->useragent, 'gingerbread')) {
-            return \BrowserDetector\Version\VersionFactory::set('2.3');
+            return VersionFactory::set('2.3');
         }
 
-        return \BrowserDetector\Version\VersionFactory::set('0.0');
+        return VersionFactory::set('0.0');
     }
 }

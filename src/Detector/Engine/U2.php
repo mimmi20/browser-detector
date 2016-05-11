@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -69,6 +70,6 @@ class U2 extends AbstractEngine
      */
     private function detectVersion()
     {
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['U2']);
+        return VersionFactory::detectVersion($this->useragent, ['U2']);
     }
 }

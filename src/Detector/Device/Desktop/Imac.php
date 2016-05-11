@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class iMac extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Imac extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor

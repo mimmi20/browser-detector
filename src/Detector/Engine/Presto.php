@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -69,6 +70,6 @@ class Presto extends AbstractEngine
      */
     private function detectVersion()
     {
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, ['Presto']);
+        return VersionFactory::detectVersion($this->useragent, ['Presto']);
     }
 }
