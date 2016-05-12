@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\Safari as SafariHelper;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 use UaHelper\Utils;
 
@@ -149,7 +150,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
 
         $searches = ['Version', 'Safari', 'JUC \(Linux\; U\;'];
 
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
+        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

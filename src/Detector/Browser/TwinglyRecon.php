@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -84,7 +85,7 @@ class TwinglyRecon extends AbstractBrowser implements BrowserHasSpecificEngineIn
     {
         $searches = ['Twingly Recon'];
 
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
+        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

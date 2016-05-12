@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -84,7 +85,7 @@ class TypoLinkvalidator extends AbstractBrowser implements BrowserHasSpecificEng
     {
         $searches = ['TypoLinkvalidator'];
 
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
+        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

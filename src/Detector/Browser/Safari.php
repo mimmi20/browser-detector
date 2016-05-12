@@ -36,6 +36,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\Safari as SafariHelper;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -89,7 +90,7 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $doMatch = preg_match('/Version\/([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
+            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -99,13 +100,13 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         );
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
+            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match('/Safari([\d\.]+)/', $this->useragent, $matches);
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
+            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -115,7 +116,7 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         );
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
+            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
         return new Version();

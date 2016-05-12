@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -89,7 +90,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
         );
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($matches[1]);
+            return VersionFactory::set($matches[1]);
         }
 
         $doMatch = preg_match(
@@ -99,7 +100,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
         );
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($matches[1]);
+            return VersionFactory::set($matches[1]);
         }
 
         $searches = [
@@ -116,7 +117,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
             'Teleca\/Q',
         ];
 
-        return \BrowserDetector\Version\VersionFactory::detectVersion($this->useragent, $searches);
+        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

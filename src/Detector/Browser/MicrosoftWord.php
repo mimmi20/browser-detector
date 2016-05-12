@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -88,10 +89,10 @@ class MicrosoftWord extends AbstractBrowser implements BrowserHasSpecificEngineI
         $helper = new MicrosoftOfficeHelper();
 
         if ($doMatch) {
-            return \BrowserDetector\Version\VersionFactory::set($helper->mapVersion($matches[1]));
+            return VersionFactory::set($helper->mapVersion($matches[1]));
         }
 
-        return \BrowserDetector\Version\VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
+        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**
