@@ -30,10 +30,6 @@
     {
       "type": "git",
       "url": "https://github.com/mimmi20/uasparser.git"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/mimmi20/browscap.git"
     }
   ],
   "require": {
@@ -42,7 +38,6 @@
     "mimmi20/wurfl-data": "^1.6",
     "mimmi20/wurfl-generic-request": "^1.7",
     "psr/log": "^1.0",
-    "browscap/browscap": "dev-detection-issues",
     "mimmi20/ua-result": "^2.0@dev",
     "mimmi20/ua-helper-utils": "^1.0.3",
     "mimmi20/ua-browser-type": "^1.0.2",

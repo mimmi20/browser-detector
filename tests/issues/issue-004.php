@@ -4,10 +4,10 @@ return [
     'browscap-issue-004' => [
         'ua'         => 'Mozilla/5.0 (PLAYSTATION 3; 2.00)',
         'properties' => [
-            'Browser'                 => 'Playstation Browser',
+            'Browser'                 => 'NetFront',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
-            'Browser_Maker'           => 'Sony',
+            'Browser_Maker'           => 'Access',
             'Browser_Modus'           => 'unknown',
             'Version'                 => '0.0',
             'Platform'                => 'CellOS',

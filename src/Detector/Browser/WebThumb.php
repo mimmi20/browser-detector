@@ -71,7 +71,7 @@ class WebThumb extends AbstractBrowser implements BrowserHasSpecificEngineInterf
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Application(),
             ]
         );
     }

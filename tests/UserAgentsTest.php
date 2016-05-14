@@ -152,6 +152,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer() . ']' . '")'
         );
 
+        /*
         $expectedDeviceMaker = $mapper->mapDeviceMaker(
             $expectedProperties['Device_Maker'],
             $expectedProperties['Device_Code_Name']
@@ -188,8 +189,6 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             );
         }
 
-        return; //@todo: remove
-
         $expectedDeviceCodeName = $mapper->mapDeviceName(
             $expectedProperties['Device_Code_Name']
         );
@@ -219,5 +218,6 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             . $expectedDeviceName . ' [' . $expectedProperties['Device_Name'] . ']'
             . '" (was "' . $foundDeviceName . ' [' . $result->getDevice()->getMarketingName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
         );
+        /**/
     }
 }

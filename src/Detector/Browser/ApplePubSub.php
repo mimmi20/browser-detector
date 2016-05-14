@@ -59,7 +59,7 @@ class ApplePubSub extends AbstractBrowser implements BrowserHasSpecificEngineInt
 
         $this->setData(
             [
-                'name'                        => 'Apple-PubSub',
+                'name'                        => 'Apple PubSub',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Apple())->name,

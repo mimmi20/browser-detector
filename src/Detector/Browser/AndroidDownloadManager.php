@@ -71,7 +71,7 @@ class AndroidDownloadManager extends AbstractBrowser implements BrowserHasSpecif
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Application(),
             ]
         );
     }

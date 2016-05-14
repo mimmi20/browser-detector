@@ -64,10 +64,10 @@ return [
     'browscap-issue-405-C' => [
         'ua'         => 'Mozilla/5.0 (PLAYSTATION 3 4.60) AppleWebKit/531.22.8 (KHTML, like Gecko)',
         'properties' => [
-            'Browser'                 => 'Playstation Browser',
+            'Browser'                 => 'NetFront',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
-            'Browser_Maker'           => 'Sony',
+            'Browser_Maker'           => 'Access',
             'Browser_Modus'           => 'unknown',
             'Version'                 => '0.0',
             'Platform'                => 'CellOS',

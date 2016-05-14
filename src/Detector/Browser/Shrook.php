@@ -71,7 +71,7 @@ class Shrook extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\FeedReader(),
             ]
         );
     }

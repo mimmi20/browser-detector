@@ -71,7 +71,7 @@ class SiteCon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Application(),
             ]
         );
     }

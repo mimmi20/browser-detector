@@ -71,7 +71,7 @@ class JigBrowserWeb extends AbstractBrowser implements BrowserHasSpecificEngineI
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Browser(),
             ]
         );
     }

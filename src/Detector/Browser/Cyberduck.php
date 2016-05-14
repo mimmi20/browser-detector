@@ -71,7 +71,7 @@ class Cyberduck extends AbstractBrowser implements BrowserHasSpecificEngineInter
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Application(),
             ]
         );
     }

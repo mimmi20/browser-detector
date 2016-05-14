@@ -241,7 +241,6 @@ use BrowserDetector\Detector\Browser\GooglebotMobileBot;
 use BrowserDetector\Detector\Browser\GoogleDesktop;
 use BrowserDetector\Detector\Browser\GoogleFeedfetcher;
 use BrowserDetector\Detector\Browser\GoogleHttpClientLibraryForJava;
-use BrowserDetector\Detector\Browser\GoogleImageProxy;
 use BrowserDetector\Detector\Browser\GoogleImageSearch;
 use BrowserDetector\Detector\Browser\GoogleKeywordSuggestion;
 use BrowserDetector\Detector\Browser\GooglePageSpeedInsights;
@@ -952,8 +951,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new Midori($agent, []);
         } elseif (preg_match('/Google Page Speed Insights/', $agent)) {
             $browser = new GooglePageSpeedInsights($agent, []);
-        } elseif (preg_match('/(googleimageproxy|via ggpht\.com)/i', $agent)) {
-            $browser = new GoogleImageProxy($agent, []);
         } elseif (preg_match('/(web\/snippet)/', $agent)) {
             $browser = new GoogleWebSnippet($agent, []);
         } elseif (preg_match('/(googlebot\-mobile)/i', $agent)) {

@@ -71,7 +71,7 @@ class OpenWebkitSharp extends AbstractBrowser implements BrowserHasSpecificEngin
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Browser(),
             ]
         );
     }

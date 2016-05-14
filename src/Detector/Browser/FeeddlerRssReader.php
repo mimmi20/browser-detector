@@ -71,7 +71,7 @@ class FeeddlerRssReader extends AbstractBrowser implements BrowserHasSpecificEng
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\FeedReader(),
             ]
         );
     }

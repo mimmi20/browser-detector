@@ -92,7 +92,7 @@ return [
         ],
     ],
     'browscap-issue-498-D' => [
-        'ua'         => 'Apple-PubSub/65.28',
+        'ua'         => 'Apple PubSub/65.28',
         'properties' => [
             'Browser'                 => 'Apple PubSub',
             'Browser_Type'            => 'Feed Reader',

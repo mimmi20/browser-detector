@@ -44,7 +44,7 @@ class CompuwareApm extends AbstractCompany
      *
      * @var string
      */
-    public $name = 'Compuware APM';
+    public $name = 'Compuware Corporation';
 
     /**
      * the brand name of the company

@@ -71,7 +71,7 @@ class YahooMobileApp extends AbstractBrowser implements BrowserHasSpecificEngine
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Application(),
             ]
         );
     }
