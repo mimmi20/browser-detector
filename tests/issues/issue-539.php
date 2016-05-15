@@ -1474,7 +1474,7 @@ return [
     'browscap-issue-539-BL' => [
         'ua'         => 'Mozzila/5.0(Linux; Android 4.4.2; ru-ru; Fly IQ4415 Quad Build/KOT49H) AppleWebKit/537.36(KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36;',
         'properties' => [
-            'Browser_Name'            => 'Android Webview',
+            'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

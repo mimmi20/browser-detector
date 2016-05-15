@@ -4,7 +4,7 @@ return [
     'browscap-issue-817' => [
         'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 7_1 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)',
         'properties' => [
-            'Browser_Name'            => 'Yahoo! Slurp',
+            'Browser_Name'            => 'Slurp',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Yahoo! Inc.',

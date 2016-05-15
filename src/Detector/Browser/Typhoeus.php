@@ -34,7 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\Version;
 use UaBrowserType;
 
 /**
@@ -43,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Typhoeus extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,10 +59,10 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
 
         $this->setData(
             [
-                'name'                        => 'WBSearchBot',
+                'name'                        => 'Typhoeus',
                 'modus'                       => null,
-                'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Warebay())->name,
+                'version'                     => new Version(0),
+                'manufacturer'                => (new Company\Unknown())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
                 'canSkipAlignedLinkRow'       => false,
@@ -74,18 +74,6 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
                 'type'                        => new UaBrowserType\Bot(),
             ]
         );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['WBSearchBot', 'WbSrch'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

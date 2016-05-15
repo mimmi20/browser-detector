@@ -11,9 +11,8 @@ os:
   - linux
 
 env:
-  matrix:
-    - PREFER_LOWEST="--prefer-lowest"
-    - PREFER_LOWEST=""
+  - PREFER_LOWEST="--prefer-lowest"
+  - PREFER_LOWEST=""
 
 matrix:
   allow_failures:

@@ -43,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class EvernoteApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,10 +59,10 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
 
         $this->setData(
             [
-                'name'                        => 'WBSearchBot',
+                'name'                        => 'Evernote App',
                 'modus'                       => null,
-                'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Warebay())->name,
+                'version'                     => VersionFactory::set('0.0'),
+                'manufacturer'                => (new Company\Evernote())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
                 'canSkipAlignedLinkRow'       => false,
@@ -71,21 +71,9 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Application(),
             ]
         );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['WBSearchBot', 'WbSrch'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**
@@ -95,6 +83,6 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getEngine()
     {
-        return new Engine\UnknownEngine($this->useragent, []);
+        return new Engine\Webkit($this->useragent, []);
     }
 }

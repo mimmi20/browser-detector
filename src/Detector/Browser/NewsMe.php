@@ -43,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class NewsMe extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,10 +59,10 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
 
         $this->setData(
             [
-                'name'                        => 'WBSearchBot',
+                'name'                        => 'newsme',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Warebay())->name,
+                'manufacturer'                => (new Company\NewsMe())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
                 'canSkipAlignedLinkRow'       => false,
@@ -83,7 +83,7 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     private function detectVersion()
     {
-        $searches = ['WBSearchBot', 'WbSrch'];
+        $searches = ['newsme'];
 
         return VersionFactory::detectVersion($this->useragent, $searches);
     }
@@ -95,6 +95,6 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     public function getEngine()
     {
-        return new Engine\UnknownEngine($this->useragent, []);
+        return new Engine\Webkit($this->useragent, []);
     }
 }
