@@ -244,10 +244,10 @@ return [
     'browscap-issue-317-I' => [
         'ua'         => 'SAMSUNG-GT-C3322/C3322DDLK2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0',
         'properties' => [
-            'Browser_Name'            => 'Samsung',
-            'Browser_Type'            => 'Browser',
+            'Browser_Name'            => 'unknown',
+            'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 32,
-            'Browser_Maker'           => 'Samsung',
+            'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'JAVA',

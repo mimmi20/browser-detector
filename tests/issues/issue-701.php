@@ -64,7 +64,7 @@ return [
     'browscap-issue-701-C' => [
         'ua'         => 'Y!J-ASR/0.1 crawler (http://www.yahoo-help.jp/app/answers/detail/p/595/a_id/42716/)',
         'properties' => [
-            'Browser_Name'            => 'Y!J-AGENT',
+            'Browser_Name'            => 'Yahoo! Japan',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Yahoo!JAPAN',

@@ -4,7 +4,7 @@ return [
     'browscap-issue-648-A' => [
         'ua'         => 'AppleCoreMedia/1.0.0.12F69 (Apple TV; U; CPU OS 8_3 like Mac OS X; en_us)',
         'properties' => [
-            'Browser_Name'            => 'AppleCoreMedia',
+            'Browser_Name'            => 'CoreMedia',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',

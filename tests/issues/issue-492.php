@@ -724,7 +724,7 @@ return [
     'browscap-issue-492-AE' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0; BingPreview/1.0b) like Gecko',
         'properties' => [
-            'Browser_Name'            => 'BingPreview',
+            'Browser_Name'            => 'Bing Preview',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -904,7 +904,7 @@ return [
     'browscap-issue-492-AK' => [
         'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML; like Gecko) Version/6.0 Mobile/10A523 Safari/8536.25 BingPreview/1.0b',
         'properties' => [
-            'Browser_Name'            => 'BingPreview',
+            'Browser_Name'            => 'Bing Preview',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -3334,7 +3334,7 @@ return [
     'browscap-issue-492-DM' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0) BingPreview/1.0b',
         'properties' => [
-            'Browser_Name'            => 'BingPreview',
+            'Browser_Name'            => 'Bing Preview',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',

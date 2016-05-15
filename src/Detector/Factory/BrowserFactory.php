@@ -849,7 +849,10 @@ class BrowserFactory implements FactoryInterface
             $browser = new WkBrowser($agent, []);
         } elseif (preg_match('/Mb2345Browser/', $agent)) {
             $browser = new Browser2345($agent, []);
-        } elseif (false !== strpos($agent, 'Chrome') && false !== strpos($agent, 'Version')) {
+        } elseif (false !== strpos($agent, 'Chrome')
+            && false !== strpos($agent, 'Version')
+            && 0 < strpos($agent, 'Chrome')
+        ) {
             $browser = new AndroidWebView($agent, []);
         } elseif (false !== strpos($agent, 'Safari')
             && false !== strpos($agent, 'Version')
@@ -1717,7 +1720,7 @@ class BrowserFactory implements FactoryInterface
             $browser = new Netscape($agent, []);
         } elseif (preg_match('/^Mozilla\/5\.0$/', $agent)) {
             $browser = new UnknownBrowser($agent, []);
-        } elseif (preg_match('/^Mozilla\/(\d\.\d+)/', $agent, $matches)) {
+        } elseif (preg_match('/^Mozilla\/(4\.\d+)/', $agent, $matches) && !preg_match('/msie/i', $agent, $matches)) {
             $browser = new Netscape($agent, []);
         } elseif (preg_match('/^Dalvik\/\d/', $agent)) {
             $browser = new Dalvik($agent, []);

@@ -64,7 +64,7 @@ return [
     'browscap-issue-821-F' => [
         'ua'         => 'Mozilla/5.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -604,7 +604,7 @@ return [
     'browscap-issue-821-AX' => [
         'ua'         => '( ; MSIE 9.0; Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -724,7 +724,7 @@ return [
     'browscap-issue-821-BD' => [
         'ua'         => '24.0.1284.0.0 (Windows NT 6.1) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/24.0.1284.0.3.742.2 Safari/534.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -754,7 +754,7 @@ return [
     'browscap-issue-821-BE' => [
         'ua'         => '24.0.1284.0.0 (Windows NT 6.1) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/24.0.1284.0.4.742.7 Safari/534.7',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -874,7 +874,7 @@ return [
     'browscap-issue-821-BL' => [
         'ua'         => 'Mozilla/5.0 (Chrome 32) WebKit/22.0 Firefox/22.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1384,7 +1384,7 @@ return [
     'browscap-issue-821-CH' => [
         'ua'         => 'X-WebBrowser',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

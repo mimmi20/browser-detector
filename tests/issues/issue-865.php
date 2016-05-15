@@ -394,7 +394,7 @@ return [
     'browscap-issue-865-N' => [
         'ua'         => 'Mozilla/5.0 ;Windows NT 6.2; WOW64; rv:27.0; Gecko/20100101 Firefox/27.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -484,7 +484,7 @@ return [
     'browscap-issue-865-Q' => [
         'ua'         => 'WEBDAV Client',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -634,7 +634,7 @@ return [
     'browscap-issue-865-V' => [
         'ua'         => 'Mozilla/5.0 (X11; U;                                     Linux i686; en-US; rv:1.8.1.1)                                     Gecko/20061205 Iceweasel/2.0.0.1                                     (Debian-2.0.0.1+dfsg-2)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -844,7 +844,7 @@ return [
     'browscap-issue-865-AC' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE8.0; Windows NT 6.0) .NET CLR 2.0.50727)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1174,7 +1174,7 @@ return [
     'browscap-issue-865-AN' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.6)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1684,7 +1684,7 @@ return [
     'browscap-issue-865-BE' => [
         'ua'         => 'Mozilla/5.0 (Linux) LINE PagePoker',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1714,7 +1714,7 @@ return [
     'browscap-issue-865-BF' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; ru:1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1774,7 +1774,7 @@ return [
     'browscap-issue-865-BH' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 5.5; Windows NT 6.0)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -2404,7 +2404,7 @@ return [
     'browscap-issue-865-CD' => [
         'ua'         => '\'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36\'',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -2494,7 +2494,7 @@ return [
     'browscap-issue-865-CG' => [
         'ua'         => 'no-ua',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -2674,7 +2674,7 @@ return [
     'browscap-issue-865-CM' => [
         'ua'         => 'Ruby, Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -3064,7 +3064,7 @@ return [
     'browscap-issue-865-CZ' => [
         'ua'         => 'Mozilla/5.0 (X11;) Firefox/38.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -3094,7 +3094,7 @@ return [
     'browscap-issue-865-DA' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; WOW64)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -3124,7 +3124,7 @@ return [
     'browscap-issue-865-DB' => [
         'ua'         => 'AppleWebKit/525.13 (KHTML, like Gecko) Safari/525.13.',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -3214,7 +3214,7 @@ return [
     'browscap-issue-865-DE' => [
         'ua'         => 'Mozilla/5.0 (Android 3.2; en-us) AppleWebKit/1.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -3334,7 +3334,7 @@ return [
     'browscap-issue-865-DI' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 5.1)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -3574,7 +3574,7 @@ return [
     'browscap-issue-865-DQ' => [
         'ua'         => 'Mozilla/5.0 (X11; U; Linux i686; ru; rv:33.2.3.12) Gecko/20120201 SeaMonkey/8.2.8',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -6064,7 +6064,7 @@ return [
     'browscap-issue-865-GV' => [
         'ua'         => 'Mozilla/4.2 (compatible; MSIE 7.0; Windows NT 5.2; en-US)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -6304,7 +6304,7 @@ return [
     'browscap-issue-865-HD' => [
         'ua'         => 'Mozilla/5.0 (X11; Linux x86_64)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -6364,7 +6364,7 @@ return [
     'browscap-issue-865-HF' => [
         'ua'         => 'Ruby, Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -6394,7 +6394,7 @@ return [
     'browscap-issue-865-HG' => [
         'ua'         => 'SAMSUNG-GT-I9100/100.40102',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -6934,7 +6934,7 @@ return [
     'browscap-issue-865-HY' => [
         'ua'         => 'Mozilla/5.0 Windows NT 6.1 WOW64 rv 9.0.1 Gecko/20100101 Firefox/9.0.1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -7054,7 +7054,7 @@ return [
     'browscap-issue-865-IC' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 2.3; en-us) AppleWebKit/999+ (KHTML, like Gecko) Safari/999.9',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -7084,7 +7084,7 @@ return [
     'browscap-issue-865-ID' => [
         'ua'         => 'Mozilla/5.0 (compatible; Macintosh; Intel Mac OS X 10_7_4)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -7174,7 +7174,7 @@ return [
     'browscap-issue-865-IG' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -8524,7 +8524,7 @@ return [
     'browscap-issue-865-JZ' => [
         'ua'         => '\'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36\'',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

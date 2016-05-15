@@ -424,7 +424,7 @@ return [
     'browscap-issue-436-O' => [
         'ua'         => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.16) Gecko',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -814,7 +814,7 @@ return [
     'browscap-issue-436-AB' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 6.1; Windows NT)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -934,7 +934,7 @@ return [
     'browscap-issue-436-AG' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.11; Windows NT 6.1; Trident/5.0)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1114,7 +1114,7 @@ return [
     'browscap-issue-436-AM' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.11; Windows NT 6.2; Trident/5.0)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1474,7 +1474,7 @@ return [
     'browscap-issue-436-AY' => [
         'ua'         => 'Mozila/4.0 (compatible; MSIE 6.0; Windows NT 5.1;)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1654,7 +1654,7 @@ return [
     'browscap-issue-436-BE' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.10; Windows NT 6.1; Trident/5.0)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

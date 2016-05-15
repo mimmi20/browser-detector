@@ -514,7 +514,7 @@ return [
     'browscap-issue-378-R' => [
         'ua'         => 'AppleCoreMedia/1.0.0.11D5145e (iPad; U; CPU OS 7_1 like Mac OS X; fr_fr)',
         'properties' => [
-            'Browser_Name'            => 'AppleCoreMedia',
+            'Browser_Name'            => 'CoreMedia',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',
@@ -544,7 +544,7 @@ return [
     'browscap-issue-378-S' => [
         'ua'         => 'AppleCoreMedia/1.0.0.11D169 (iPhone; U; CPU OS 7_1 like Mac OS X; fr_fr)',
         'properties' => [
-            'Browser_Name'            => 'AppleCoreMedia',
+            'Browser_Name'            => 'CoreMedia',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',
@@ -574,7 +574,7 @@ return [
     'browscap-issue-378-T' => [
         'ua'         => 'AppleCoreMedia/1.0.0.11D201 (iPod touch; U; CPU OS 7_1_1 like Mac OS X; fr_fr)',
         'properties' => [
-            'Browser_Name'            => 'AppleCoreMedia',
+            'Browser_Name'            => 'CoreMedia',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',
@@ -604,7 +604,7 @@ return [
     'browscap-issue-378-U' => [
         'ua'         => 'AppleCoreMedia/1.0.0.11G63b (Macintosh; U; Intel Mac OS X 10_7_5; fr_ca)',
         'properties' => [
-            'Browser_Name'            => 'AppleCoreMedia',
+            'Browser_Name'            => 'CoreMedia',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',

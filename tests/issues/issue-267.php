@@ -784,7 +784,7 @@ return [
     'browscap-issue-267-AA' => [
         'ua'         => 'WDG_Validator/1.6.5',
         'properties' => [
-            'Browser_Name'            => 'WDG HTML Validator',
+            'Browser_Name'            => 'HTML Validator',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Web Design Group',

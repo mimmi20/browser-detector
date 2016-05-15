@@ -214,7 +214,7 @@ return [
     'browscap-issue-084-A' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.6; Windows NT 6.1; Trident/5.0; InfoPath.2; SLCC1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727) 3gpp-gba UNTRUSTED/1.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

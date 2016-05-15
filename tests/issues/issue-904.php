@@ -4,7 +4,7 @@ return [
     'browscap-issue-904-A' => [
         'ua'         => 'Rome Client (http://tinyurl.com/64t5n)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -154,7 +154,7 @@ return [
     'browscap-issue-904-F' => [
         'ua'         => 'http://www.almaden.ibm.com/cs/crawler',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1144,7 +1144,7 @@ return [
     'browscap-issue-904-AM' => [
         'ua'         => 'Y!J-BRP/YFSBJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerBetaJp/2.0; users 0; views 80)',
         'properties' => [
-            'Browser_Name'            => 'Y!J-AGENT',
+            'Browser_Name'            => 'Yahoo! Japan',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Yahoo!JAPAN',
@@ -1414,7 +1414,7 @@ return [
     'browscap-issue-904-AV' => [
         'ua'         => 'Liquida.it-Crawler/1.0 ( crawler@liquida.it +http://www.liquida.it )',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1444,7 +1444,7 @@ return [
     'browscap-issue-904-AW' => [
         'ua'         => 'CosmixCrawler/0.1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1474,7 +1474,7 @@ return [
     'browscap-issue-904-AX' => [
         'ua'         => 'Content Crawler',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

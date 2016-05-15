@@ -6544,7 +6544,7 @@ return [
     'browscap-issue-900-HU' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; pl-pl) AppleWebKit/312.8 (KHTML, like Gecko, Safari) DeskBrowse/1.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -6574,7 +6574,7 @@ return [
     'browscap-issue-900-HV' => [
         'ua'         => 'Dooble/0.07 (de_CH) WebKit',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -8944,7 +8944,7 @@ return [
     'browscap-issue-900-KZ' => [
         'ua'         => 'Mozilla/5.0 (Windows x86; rv:19.0) Gecko/20100101 Firefox/19.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -9154,7 +9154,7 @@ return [
     'browscap-issue-900-LH' => [
         'ua'         => 'Mozilla/5.0 Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.13) Firefox/3.6.13',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -9214,7 +9214,7 @@ return [
     'browscap-issue-900-LJ' => [
         'ua'         => 'Mozilla/5.0(Windows; U; Windows NT 7.0; rv:1.9.2) Gecko/20100101 Firefox/3.6',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -9244,7 +9244,7 @@ return [
     'browscap-issue-900-LL' => [
         'ua'         => 'Mozilla/5.0 (X11; FreeBSD i686) Firefox/3.6',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -9334,7 +9334,7 @@ return [
     'browscap-issue-900-LR' => [
         'ua'         => 'Mozilla/6.0 (Windows; U; Windows NT 7.0; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.9 (.NET CLR 3.5.30729)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -9364,7 +9364,7 @@ return [
     'browscap-issue-900-LS' => [
         'ua'         => 'Mozilla/5.0  (Windows; U;  Windows NT 5.1; de; rv:1.9.0.4) Firefox/3.0.8)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -9394,7 +9394,7 @@ return [
     'browscap-issue-900-LT' => [
         'ua'         => 'Mozilla/6.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.8 (.NET CLR 3.5.30729)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -9424,7 +9424,7 @@ return [
     'browscap-issue-900-LU' => [
         'ua'         => 'Mozilla/6.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.8',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -10714,7 +10714,7 @@ return [
     'browscap-issue-900-OQ' => [
         'ua'         => 'Mozilla/5.0(X11;U;Linux(x86_64);en;rv:1.9a8)Gecko/2007100619;GranParadiso/3.1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12064,7 +12064,7 @@ return [
     'browscap-issue-900-RL' => [
         'ua'         => 'Mozilla/15.0 (X11; U; Linux i686; es-ES; rv:1.8.1.9) Gecko/20071025 Iceweasel/2.0.0.9',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12094,7 +12094,7 @@ return [
     'browscap-issue-900-RM' => [
         'ua'         => 'Mozilla 5.0 (X11; U; Linux i686; en-US; rv:1.8.1.14) Gecko/200770508  Iceweasel/2.0.0.4',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12334,7 +12334,7 @@ return [
     'browscap-issue-900-RU' => [
         'ua'         => 'Mozilla/5.0 (Linux) Gecko Iceweasel (Debian) Mnenhy',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12364,7 +12364,7 @@ return [
     'browscap-issue-900-RX' => [
         'ua'         => 'Mozilla/4.0(compatible; MSIE 7.0b; Windows NT 6.0)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12394,7 +12394,7 @@ return [
     'browscap-issue-900-SA' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12424,7 +12424,7 @@ return [
     'browscap-issue-900-SB' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12454,7 +12454,7 @@ return [
     'browscap-issue-900-SC' => [
         'ua'         => 'Mozilla/45.0 (compatible; MSIE 6.0; Windows NT 5.1)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12484,7 +12484,7 @@ return [
     'browscap-issue-900-SM' => [
         'ua'         => 'Mozilla/4.0 (compatible;MSIE 5.5; Windows 98)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12514,7 +12514,7 @@ return [
     'browscap-issue-900-SN' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 5.5;)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12544,7 +12544,7 @@ return [
     'browscap-issue-900-SO' => [
         'ua'         => 'Mozilla/4.0(compatible; MSIE 5.0; Windows 98; DigExt)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12664,7 +12664,7 @@ return [
     'browscap-issue-900-TH' => [
         'ua'         => 'Mozilla/5.0 (X11; U; Linux amd64) Iron/21.0.1200.0 Chrome/21.0.1200.0 Safari/537.1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12694,7 +12694,7 @@ return [
     'browscap-issue-900-TI' => [
         'ua'         => 'Mozilla/5.0 (X11; U; Linux amd64) Iron/20.0.1150.1 Chrome/20.0.1150.1 Safari/536.11',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12784,7 +12784,7 @@ return [
     'browscap-issue-900-TL' => [
         'ua'         => 'Mozilla/5.0 (Windows; U;) AppleWebKit/532.0 (KHTML, like Gecko) Iron/3.0.197.0 Safari/532.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12814,7 +12814,7 @@ return [
     'browscap-issue-900-TM' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) Chrome/0.0.0 Iron/3.0.197.0 AppleWebKit/532.0 (KHTML, like Gecko) Safari/532.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12844,7 +12844,7 @@ return [
     'browscap-issue-900-TN' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/532.0 (KHTML, like Gecko)  Chrome/0.0.0 Safari/532.0 Iron/3.0.197.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12874,7 +12874,7 @@ return [
     'browscap-issue-900-TO' => [
         'ua'         => 'Mozilla/5.0 (U;) AppleWebKit/532.0 (KHTML, like Gecko) Iron/3.0.197.0 Safari/532.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12904,7 +12904,7 @@ return [
     'browscap-issue-900-TP' => [
         'ua'         => 'Iron/2.0.168.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/530.1 (KHTML, like Gecko)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12934,7 +12934,7 @@ return [
     'browscap-issue-900-TQ' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US)AppleWebKit/525.19 (KHTML, like Gecko) Iron/0.2.152.0 Safari/13657880.525',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -12964,7 +12964,7 @@ return [
     'browscap-issue-900-TR' => [
         'ua'         => 'Mozilla/5.0 (Windows; U;) AppleWebKit/532.0 (KHTML, like Gecko) Iron',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -13054,7 +13054,7 @@ return [
     'browscap-issue-900-TU' => [
         'ua'         => 'Mozilla/5.0 (Darwin; FreeBSD 5.6; en-GB; rv:1.9.1b3pre)Gecko/20081211 K-Meleon/1.5.2',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -14494,7 +14494,7 @@ return [
     'browscap-issue-900-WD' => [
         'ua'         => 'Mozilla/5.0 (X11) KHTML/4.9.1 (like Gecko) Konqueror/4.9',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -21154,7 +21154,7 @@ return [
     'browscap-issue-900-AII' => [
         'ua'         => 'Mozilla/5.001 (X11; U; Linux i686; rv:1.8.1.6; de-ch) Gecko/25250101 (ubuntu-feisty)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -21184,7 +21184,7 @@ return [
     'browscap-issue-900-AIJ' => [
         'ua'         => 'Mozilla/5.001 (Macintosh; N; PPC; ja) Gecko/25250101',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -25894,7 +25894,7 @@ return [
     'browscap-issue-900-APS' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/522+ (KHTML, like Gecko) OmniWeb',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -26644,7 +26644,7 @@ return [
     'browscap-issue-900-AQR' => [
         'ua'         => 'Opera/9.99 (X11; U; sk)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29134,7 +29134,7 @@ return [
     'browscap-issue-900-AUB' => [
         'ua'         => 'Mozilla/5.0 (Windows XP; U) Opera 6.06  [en]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29164,7 +29164,7 @@ return [
     'browscap-issue-900-AUE' => [
         'ua'         => 'Opera/6.05 (Windows XP; U) [en]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29194,7 +29194,7 @@ return [
     'browscap-issue-900-AUF' => [
         'ua'         => 'Opera/6.05 (Windows XP; U)  [en]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29224,7 +29224,7 @@ return [
     'browscap-issue-900-AUG' => [
         'ua'         => 'Opera/6.05 (Windows XP; U)  [de]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29254,7 +29254,7 @@ return [
     'browscap-issue-900-AUH' => [
         'ua'         => 'Mozilla/5.0 (Windows XP; U) Opera 6.05  [de]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29284,7 +29284,7 @@ return [
     'browscap-issue-900-AUI' => [
         'ua'         => 'Opera/6.04 (Windows XP; U)  [en]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29314,7 +29314,7 @@ return [
     'browscap-issue-900-AUJ' => [
         'ua'         => 'Opera/6.04 (Windows XP; U)  [de]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29584,7 +29584,7 @@ return [
     'browscap-issue-900-AUX' => [
         'ua'         => 'Opera/6.01 (X11; U; nn)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29614,7 +29614,7 @@ return [
     'browscap-issue-900-AUY' => [
         'ua'         => 'Opera/6.01 (Windows XP; U)  [de]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -29644,7 +29644,7 @@ return [
     'browscap-issue-900-AVC' => [
         'ua'         => 'Opera/6.0 (Windows XP; U)  [de]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -30004,7 +30004,7 @@ return [
     'browscap-issue-900-AVV' => [
         'ua'         => 'Opera/5.02 (Macintosh; U; id)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -30064,7 +30064,7 @@ return [
     'browscap-issue-900-AWC' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; ; Intel Mac OS X; fr; rv:1.8.1.1) Gecko/20061204 Opera',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -33964,7 +33964,7 @@ return [
     'browscap-issue-900-BIU' => [
         'ua'         => 'Mozilla/5.0 (compatible; AnyApexBot/1.0; +http://www.anyapex.com/bot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -33994,7 +33994,7 @@ return [
     'browscap-issue-900-BIV' => [
         'ua'         => 'Mozilla/4.0 (compatible; B-l-i-t-z-B-O-T)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34204,7 +34204,7 @@ return [
     'browscap-issue-900-BJC' => [
         'ua'         => 'Mozilla/5.0 (compatible; BeslistBot; nl; BeslistBot 1.0;  http://www.beslist.nl/',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34234,7 +34234,7 @@ return [
     'browscap-issue-900-BJD' => [
         'ua'         => 'BillyBobBot/1.0 (+http://www.billybobbot.com/crawler/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34264,7 +34264,7 @@ return [
     'browscap-issue-900-BJE' => [
         'ua'         => 'Bimbot/1.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34294,7 +34294,7 @@ return [
     'browscap-issue-900-BJF' => [
         'ua'         => 'Mozilla/4.0 (compatible; BlitzBot)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34414,7 +34414,7 @@ return [
     'browscap-issue-900-BJJ' => [
         'ua'         => 'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/) (Charlotte/0.9t; http://www.searchme.com/support/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34444,7 +34444,7 @@ return [
     'browscap-issue-900-BJK' => [
         'ua'         => 'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34504,7 +34504,7 @@ return [
     'browscap-issue-900-BJM' => [
         'ua'         => 'DataparkSearch/4.37-23012006 ( http://www.dataparksearch.org/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34534,7 +34534,7 @@ return [
     'browscap-issue-900-BJN' => [
         'ua'         => 'DataparkSearch/4.36 ( http://www.dataparksearch.org/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34564,7 +34564,7 @@ return [
     'browscap-issue-900-BJO' => [
         'ua'         => 'DataparkSearch/4.35-02122005 ( http://www.dataparksearch.org/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34594,7 +34594,7 @@ return [
     'browscap-issue-900-BJP' => [
         'ua'         => 'DataparkSearch/4.35 ( http://www.dataparksearch.org/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34624,7 +34624,7 @@ return [
     'browscap-issue-900-BJQ' => [
         'ua'         => 'Mozilla/5.0 (compatible; discobot/1.0; +http://discoveryengine.com/discobot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34654,7 +34654,7 @@ return [
     'browscap-issue-900-BJR' => [
         'ua'         => 'EmeraldShield.com WebBot (http://www.emeraldshield.com/webbot.aspx)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34684,7 +34684,7 @@ return [
     'browscap-issue-900-BJS' => [
         'ua'         => 'EsperanzaBot(+http://www.esperanza.to/bot/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34714,7 +34714,7 @@ return [
     'browscap-issue-900-BJT' => [
         'ua'         => 'FAST Enteprise Crawler/6 (www dot fastsearch dot com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34774,7 +34774,7 @@ return [
     'browscap-issue-900-BJV' => [
         'ua'         => 'Mozilla/4.0 compatible FurlBot/Furl Search 2.0 (FurlBot; http://www.furl.net; wn.furlbot@looksmart.net)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34864,7 +34864,7 @@ return [
     'browscap-issue-900-BJY' => [
         'ua'         => 'g2Crawler nobody@airmail.net',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -34894,7 +34894,7 @@ return [
     'browscap-issue-900-BJZ' => [
         'ua'         => 'GalaxyBot/1.0 (http://www.galaxy.com/galaxybot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35194,7 +35194,7 @@ return [
     'browscap-issue-900-BKJ' => [
         'ua'         => 'HappyFunBot/1.1 ( http://www.happyfunsearch.com/bot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35224,7 +35224,7 @@ return [
     'browscap-issue-900-BKK' => [
         'ua'         => 'hl_ftien_spider_v1.1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35254,7 +35254,7 @@ return [
     'browscap-issue-900-BKL' => [
         'ua'         => 'hl_ftien_spider',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35464,7 +35464,7 @@ return [
     'browscap-issue-900-BKS' => [
         'ua'         => 'iaskspider/2.0(+http://iask.com/help/help_index.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35494,7 +35494,7 @@ return [
     'browscap-issue-900-BKT' => [
         'ua'         => 'iaskspider',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35524,7 +35524,7 @@ return [
     'browscap-issue-900-BKU' => [
         'ua'         => 'iCCrawler (http://www.iccenter.net/bot.htm)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35554,7 +35554,7 @@ return [
     'browscap-issue-900-BKV' => [
         'ua'         => 'igdeSpyder (compatible; igde.ru; +http://igde.ru/doc/tech.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35734,7 +35734,7 @@ return [
     'browscap-issue-900-BLB' => [
         'ua'         => 'IssueCrawler',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35764,7 +35764,7 @@ return [
     'browscap-issue-900-BLC' => [
         'ua'         => 'Jaxified Bot (+http://www.jaxified.com/crawler/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35794,7 +35794,7 @@ return [
     'browscap-issue-900-BLD' => [
         'ua'         => 'Jyxobot/1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35824,7 +35824,7 @@ return [
     'browscap-issue-900-BLE' => [
         'ua'         => 'Mozilla/5.0 (compatible; KoepaBot BETA; http://www.koepa.nl/bot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35854,7 +35854,7 @@ return [
     'browscap-issue-900-BLF' => [
         'ua'         => 'L.webis/0.87 (http://webalgo.iit.cnr.it/index.php?pg=lwebis)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35884,7 +35884,7 @@ return [
     'browscap-issue-900-BLH' => [
         'ua'         => 'LexxeBot/1.0 (lexxebot@lexxe.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35944,7 +35944,7 @@ return [
     'browscap-issue-900-BLJ' => [
         'ua'         => 'lmspider lmspider@scansoft.com',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -35974,7 +35974,7 @@ return [
     'browscap-issue-900-BLK' => [
         'ua'         => 'lmspider (lmspider@scansoft.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36124,7 +36124,7 @@ return [
     'browscap-issue-900-BLP' => [
         'ua'         => 'http://www.mabontland.com',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36154,7 +36154,7 @@ return [
     'browscap-issue-900-BLQ' => [
         'ua'         => 'mogimogi/1.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36184,7 +36184,7 @@ return [
     'browscap-issue-900-BLR' => [
         'ua'         => 'MojeekBot/0.2 (archi; http://www.mojeek.com/bot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36214,7 +36214,7 @@ return [
     'browscap-issue-900-BLS' => [
         'ua'         => 'Moreoverbot/5.1 ( http://w.moreover.com; webmaster@moreover.com) Mozilla/5.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36244,7 +36244,7 @@ return [
     'browscap-issue-900-BLT' => [
         'ua'         => 'Moreoverbot/5.00 (+http://www.moreover.com; webmaster@moreover.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36274,7 +36274,7 @@ return [
     'browscap-issue-900-BLU' => [
         'ua'         => 'Moreoverbot/5.00 (+http://www.moreover.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36454,7 +36454,7 @@ return [
     'browscap-issue-900-BMB' => [
         'ua'         => 'MVAClient',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36484,7 +36484,7 @@ return [
     'browscap-issue-900-BMC' => [
         'ua'         => 'Mozilla/5.0 (compatible; mxbot/1.0; +http://www.chainn.com/mxbot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36514,7 +36514,7 @@ return [
     'browscap-issue-900-BMD' => [
         'ua'         => 'Mozilla/5.0 (compatible; mxbot/1.0;  http://www.chainn.com/mxbot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36544,7 +36544,7 @@ return [
     'browscap-issue-900-BMK' => [
         'ua'         => 'noxtrumbot/1.0 (crawler@noxtrum.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36574,7 +36574,7 @@ return [
     'browscap-issue-900-BML' => [
         'ua'         => 'Nymesis/1.0 (http://nymesis.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36604,7 +36604,7 @@ return [
     'browscap-issue-900-BMN' => [
         'ua'         => 'oegp v. 1.3.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36634,7 +36634,7 @@ return [
     'browscap-issue-900-BMO' => [
         'ua'         => 'omgilibot/0.4 +http://omgili.com',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36664,7 +36664,7 @@ return [
     'browscap-issue-900-BMP' => [
         'ua'         => 'omgilibot/0.3 +http://www.omgili.com/Crawler.html',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36694,7 +36694,7 @@ return [
     'browscap-issue-900-BMQ' => [
         'ua'         => 'omgilibot/0.3  http://www.omgili.com/Crawler.html',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36724,7 +36724,7 @@ return [
     'browscap-issue-900-BMR' => [
         'ua'         => 'OmniExplorer_Bot/6.70 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36754,7 +36754,7 @@ return [
     'browscap-issue-900-BMS' => [
         'ua'         => 'OmniExplorer_Bot/6.65a (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36784,7 +36784,7 @@ return [
     'browscap-issue-900-BMT' => [
         'ua'         => 'OmniExplorer_Bot/6.63b (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36814,7 +36814,7 @@ return [
     'browscap-issue-900-BMU' => [
         'ua'         => 'OmniExplorer_Bot/6.62 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36844,7 +36844,7 @@ return [
     'browscap-issue-900-BMV' => [
         'ua'         => 'OmniExplorer_Bot/6.60 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36874,7 +36874,7 @@ return [
     'browscap-issue-900-BMW' => [
         'ua'         => 'OmniExplorer_Bot/6.47 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36904,7 +36904,7 @@ return [
     'browscap-issue-900-BMX' => [
         'ua'         => 'OmniExplorer_Bot/5.91c (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36934,7 +36934,7 @@ return [
     'browscap-issue-900-BMY' => [
         'ua'         => 'OmniExplorer_Bot/5.28 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36964,7 +36964,7 @@ return [
     'browscap-issue-900-BMZ' => [
         'ua'         => 'OmniExplorer_Bot/5.25 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -36994,7 +36994,7 @@ return [
     'browscap-issue-900-BNA' => [
         'ua'         => 'OmniExplorer_Bot/5.20 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37024,7 +37024,7 @@ return [
     'browscap-issue-900-BNB' => [
         'ua'         => 'OmniExplorer_Bot/5.01 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37054,7 +37054,7 @@ return [
     'browscap-issue-900-BNC' => [
         'ua'         => 'OmniExplorer_Bot/4.80 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37084,7 +37084,7 @@ return [
     'browscap-issue-900-BND' => [
         'ua'         => 'OmniExplorer_Bot/4.32 (+http://www.omni-explorer.com) WorldIndexer',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37114,7 +37114,7 @@ return [
     'browscap-issue-900-BNE' => [
         'ua'         => 'OOZBOT/0.20 ( -- ; http://www.setooz.com/oozbot.html ; agentname at setooz dot_com )',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37144,7 +37144,7 @@ return [
     'browscap-issue-900-BNF' => [
         'ua'         => 'OOZBOT/0.17 (--; http://www.setooz.com/oozbot.html; pvvpr at iiit dot ac dot in)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37174,7 +37174,7 @@ return [
     'browscap-issue-900-BNG' => [
         'ua'         => 'Orbiter (+http://www.dailyorbit.com/bot.htm)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37204,7 +37204,7 @@ return [
     'browscap-issue-900-BNH' => [
         'ua'         => 'PageBitesHyperBot/600 (http://www.pagebites.com/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37234,7 +37234,7 @@ return [
     'browscap-issue-900-BNI' => [
         'ua'         => 'Mozilla/5.0 (compatible; Peew/1.0; http://www.peew.de/crawler/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37264,7 +37264,7 @@ return [
     'browscap-issue-900-BNJ' => [
         'ua'         => 'PostPost/1.0 (+http://postpo.st/crawlers)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37294,7 +37294,7 @@ return [
     'browscap-issue-900-BNK' => [
         'ua'         => 'PycURL',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37324,7 +37324,7 @@ return [
     'browscap-issue-900-BNL' => [
         'ua'         => 'Qseero v1.0.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37354,7 +37354,7 @@ return [
     'browscap-issue-900-BNM' => [
         'ua'         => 'radian6_default_(www.radian6.com/crawler)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37384,7 +37384,7 @@ return [
     'browscap-issue-900-BNN' => [
         'ua'         => 'RAMPyBot - www.giveRAMP.com/0.1 (RAMPyBot - www.giveRAMP.com; http://www.giveramp.com/bot.html; support@giveRAMP.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37414,7 +37414,7 @@ return [
     'browscap-issue-900-BNO' => [
         'ua'         => 'RufusBot (Rufus Web Miner; http://64.124.122.252/feedback.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37444,7 +37444,7 @@ return [
     'browscap-issue-900-BNP' => [
         'ua'         => 'SandCrawler - Compatibility Testing',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37504,7 +37504,7 @@ return [
     'browscap-issue-900-BNR' => [
         'ua'         => 'Mozilla/5.0 (compatible; ScoutJet;  http://www.scoutjet.com/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37684,7 +37684,7 @@ return [
     'browscap-issue-900-BNX' => [
         'ua'         => 'SearchSight/2.0 (http://SearchSight.com/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37714,7 +37714,7 @@ return [
     'browscap-issue-900-BNY' => [
         'ua'         => 'Sensis Web Crawler (search_comments\at\sensis\dot\com\dot\au)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37744,7 +37744,7 @@ return [
     'browscap-issue-900-BOA' => [
         'ua'         => 'Mozilla/4.0 (compatible: Shoula robot)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37774,7 +37774,7 @@ return [
     'browscap-issue-900-BOB' => [
         'ua'         => 'silk/1.0 (+http://www.slider.com/silk.htm)/3.7',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37804,7 +37804,7 @@ return [
     'browscap-issue-900-BOC' => [
         'ua'         => 'Silk/1.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37834,7 +37834,7 @@ return [
     'browscap-issue-900-BOD' => [
         'ua'         => 'Mozilla/5.0 (compatible; SiteBot/0.1; +http://www.sitebot.org/robot/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37864,7 +37864,7 @@ return [
     'browscap-issue-900-BOE' => [
         'ua'         => 'Mozilla/5.0 (compatible; SiteBot/0.1;  http://www.sitebot.org/robot/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -37894,7 +37894,7 @@ return [
     'browscap-issue-900-BOF' => [
         'ua'         => 'Snappy/1.1 ( http://www.urltrends.com/ )',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38284,7 +38284,7 @@ return [
     'browscap-issue-900-BOT' => [
         'ua'         => 'Mozilla/5.0 (compatible; suggybot v0.01a, http://blog.suggy.com/was-ist-suggy/suggy-webcrawler/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38314,7 +38314,7 @@ return [
     'browscap-issue-900-BOU' => [
         'ua'         => 'SynooBot/0.7.1 (SynooBot; http://www.synoo.de/bot.html; webmaster@synoo.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38434,7 +38434,7 @@ return [
     'browscap-issue-900-BOY' => [
         'ua'         => 'TheSuBot/0.2 (www.thesubot.de)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38464,7 +38464,7 @@ return [
     'browscap-issue-900-BOZ' => [
         'ua'         => 'TheSuBot/0.1 (www.thesubot.de)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38554,7 +38554,7 @@ return [
     'browscap-issue-900-BPD' => [
         'ua'         => 'truwoGPS/1.0 (GNU/Linux; U; i686; en-US; +http://www.lan4lano.net/browser.html )',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38584,7 +38584,7 @@ return [
     'browscap-issue-900-BPE' => [
         'ua'         => 'TwengaBot',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38614,7 +38614,7 @@ return [
     'browscap-issue-900-BPF' => [
         'ua'         => 'Mozilla/5.0 (compatible; Urlfilebot/2.2; +http://urlfile.com/bot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38794,7 +38794,7 @@ return [
     'browscap-issue-900-BPO' => [
         'ua'         => 'VYU2 (GNU; OpenRISC)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38824,7 +38824,7 @@ return [
     'browscap-issue-900-BPP' => [
         'ua'         => 'Websquash.com (Add url robot)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38854,7 +38854,7 @@ return [
     'browscap-issue-900-BPQ' => [
         'ua'         => 'http://www.almaden.ibm.com/cs/crawler   [wf84]',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38884,7 +38884,7 @@ return [
     'browscap-issue-900-BPR' => [
         'ua'         => 'WoFindeIch Robot 1.0(+http://www.search.wofindeich.com/robot.php)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38914,7 +38914,7 @@ return [
     'browscap-issue-900-BPS' => [
         'ua'         => 'WoFindeIch Robot 1.0( http://www.search.wofindeich.com/robot.php)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38944,7 +38944,7 @@ return [
     'browscap-issue-900-BPT' => [
         'ua'         => 'WomlpeFactory/0.1 (+http://www.Womple.com/bot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -38974,7 +38974,7 @@ return [
     'browscap-issue-900-BPU' => [
         'ua'         => 'Xaldon_WebSpider/2.0.b1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39004,7 +39004,7 @@ return [
     'browscap-issue-900-BPW' => [
         'ua'         => 'Yasaklibot/v1.2 (http://www.Yasakli.com/bot.php)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39124,7 +39124,7 @@ return [
     'browscap-issue-900-BQA' => [
         'ua'         => 'yoogliFetchAgent/0.1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39184,7 +39184,7 @@ return [
     'browscap-issue-900-BQD' => [
         'ua'         => 'Mozilla/4.0 (compatible; Zealbot 1.0)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39214,7 +39214,7 @@ return [
     'browscap-issue-900-BQE' => [
         'ua'         => 'zspider/0.9-dev http://feedback.redkolibri.com/',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39424,7 +39424,7 @@ return [
     'browscap-issue-900-BQL' => [
         'ua'         => 'Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.8.1.4) Gecko/20070622 Thunderbird/2.0.0.4',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39544,7 +39544,7 @@ return [
     'browscap-issue-900-BQP' => [
         'ua'         => 'everyfeed-spider/2.0 (http://www.everyfeed.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39664,7 +39664,7 @@ return [
     'browscap-issue-900-BQT' => [
         'ua'         => 'NFReader/1.4.1.0 (http://www.gaijin.at/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39694,7 +39694,7 @@ return [
     'browscap-issue-900-BQU' => [
         'ua'         => 'UniversalFeedParser/3.3 +http://feedparser.org/',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -39724,7 +39724,7 @@ return [
     'browscap-issue-900-BQV' => [
         'ua'         => 'BinGet/1.00.A (http://www.bin-co.com/php/scripts/load/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -40684,7 +40684,7 @@ return [
     'browscap-issue-900-BSC' => [
         'ua'         => 'Peach/1.01 (Ubuntu 8.04 LTS; U; en)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -40714,7 +40714,7 @@ return [
     'browscap-issue-900-BSD' => [
         'ua'         => 'pxyscand/2.1',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41074,7 +41074,7 @@ return [
     'browscap-issue-900-BSP' => [
         'ua'         => 'Mozilla/5.0 (compatible; AbiLogicBot/1.0; +http://www.abilogic.com/bot.html)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41104,7 +41104,7 @@ return [
     'browscap-issue-900-BSQ' => [
         'ua'         => 'Mozilla/5.0 (compatible; AbiLogicBot/1.0; +http://www.abilogic.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41164,7 +41164,7 @@ return [
     'browscap-issue-900-BSS' => [
         'ua'         => 'Link Validity Check From: http://www.w3dir.com/cgi-bin (Using: Hot Links SQL by Mrcgiguy.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41194,7 +41194,7 @@ return [
     'browscap-issue-900-BST' => [
         'ua'         => 'LinkExaminer/1.01 (Windows)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41284,7 +41284,7 @@ return [
     'browscap-issue-900-BSW' => [
         'ua'         => 'Mojoo Robot (http://www.mojoo.com/)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41314,7 +41314,7 @@ return [
     'browscap-issue-900-BSX' => [
         'ua'         => 'Notifixious/LinkChecker (http://notifixio.us)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41374,7 +41374,7 @@ return [
     'browscap-issue-900-BSZ' => [
         'ua'         => 'Ploetz + Zeller (http://www.ploetz-zeller.de) Link Validator v1.0 (support@p-und-z.de) for ARIS Business Architect',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41404,7 +41404,7 @@ return [
     'browscap-issue-900-BTA' => [
         'ua'         => 'InfoWizards Reciprocal Link System PRO - (http://www.infowizards.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -41524,7 +41524,7 @@ return [
     'browscap-issue-900-BTE' => [
         'ua'         => 'Vivante Link Checker (http://www.vivante.com)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -42454,7 +42454,7 @@ return [
     'browscap-issue-900-BUK' => [
         'ua'         => 'SamsungI8910/SymbianOS/9.1 Series60/3.0',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -42484,7 +42484,7 @@ return [
     'browscap-issue-900-BYC' => [
         'ua'         => 'Mozilla/5.0 (Windows NT; U; en) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Iris/1.1.7 Safari/525.20',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

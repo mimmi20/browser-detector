@@ -4,7 +4,7 @@ return [
     'browscap-issue-513-A' => [
         'ua'         => '(){ :; }; :(){ :|:& };:',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1114,7 +1114,7 @@ return [
     'browscap-issue-513-AM' => [
         'ua'         => 'label=ypmobapp;anv=YPmobile4.3.1;os=Android 4.4.2;dev=hlteatt;devm=SAMSUNG-SM-N900A;man=samsung;brw=Android;shwd=1080x1920;shwa=1080x1845;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1384,7 +1384,7 @@ return [
     'browscap-issue-513-AV' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; b2w 0.1)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1534,7 +1534,7 @@ return [
     'browscap-issue-513-BA' => [
         'ua'         => 'Mozilla/4.0 (compatible;Android;320x480)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1594,7 +1594,7 @@ return [
     'browscap-issue-513-BC' => [
         'ua'         => 'Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -1714,7 +1714,7 @@ return [
     'browscap-issue-513-BG' => [
         'ua'         => 'Mozilla/5.0 ()',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
@@ -2194,7 +2194,7 @@ return [
     'browscap-issue-513-BX' => [
         'ua'         => 'Mozilla/5.0 (compatible; rv:33.0; ; Trident/5.0)',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

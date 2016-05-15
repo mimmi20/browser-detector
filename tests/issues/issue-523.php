@@ -364,7 +364,7 @@ return [
     'browscap-issue-523-M' => [
         'ua'         => 'Mozilla/5.0 (X11; U; Linux i686; rv:1.9a3pre) Gecko/20070330',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

@@ -394,7 +394,7 @@ return [
     'browscap-issue-279-P' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;  WOW64;  Trident/5.0;  BingPreview/1.0b)',
         'properties' => [
-            'Browser_Name'            => 'BingPreview',
+            'Browser_Name'            => 'Bing Preview',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',

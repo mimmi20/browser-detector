@@ -4,7 +4,7 @@ return [
     'browscap-issue-620' => [
         'ua'         => 'this user agent should never exist hopefully as it is is only used in browscap tests',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',

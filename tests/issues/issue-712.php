@@ -184,7 +184,7 @@ return [
     'browscap-issue-712-H' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) WhiteHat Aviator/37.0.2062.99 Chrome/37.0.2062.99 Safari/537.36',
         'properties' => [
-            'Browser_Name'            => 'WhiteHat Aviator',
+            'Browser_Name'            => 'Aviator',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'WhiteHat Security',
@@ -1384,7 +1384,7 @@ return [
     'browscap-issue-712-AY' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) WhiteHat Aviator/37.0.2062.99 Chrome/37.0.2062.99 Safari/537.36',
         'properties' => [
-            'Browser_Name'            => 'WhiteHat Aviator',
+            'Browser_Name'            => 'Aviator',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'WhiteHat Security',
@@ -4144,7 +4144,7 @@ return [
     'browscap-issue-712-FB' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) WhiteHat Aviator/37.0.2062.99 Chrome/37.0.2062.99 Safari/537.36',
         'properties' => [
-            'Browser_Name'            => 'WhiteHat Aviator',
+            'Browser_Name'            => 'Aviator',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'WhiteHat Security',

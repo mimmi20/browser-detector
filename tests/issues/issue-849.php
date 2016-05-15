@@ -214,7 +214,7 @@ return [
     'browscap-issue-849-I' => [
         'ua'         => 'Chrome LINUX 45.0.2454.85 (4c2743615eaa2806ad014c59bf6acbb652cf3aa8)-devel',
         'properties' => [
-            'Browser_Name'            => 'Default Browser',
+            'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
