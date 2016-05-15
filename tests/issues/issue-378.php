@@ -34,7 +34,7 @@ return [
     'browscap-issue-378-B' => [
         'ua'         => 'Z15A-Z15A/1.0 Linux/2.6.35.7 Android/4.0 Release/03.25.2013 Browser/AppleWebKit533.1 (KHTML, like Gecko) Mozilla/5.0 Mobile',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

@@ -64,12 +64,12 @@ return [
     'browscap-issue-084-F' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '10.0',
+            'Version'                 => '9.0',
             'Platform'                => 'Win7',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 32,
@@ -87,14 +87,14 @@ return [
             'Device_Code_Name'        => 'Windows Desktop',
             'Device_Brand_Name'       => 'unknown',
             'RenderingEngine_Name'    => 'Trident',
-            'RenderingEngine_Version' => '6.0',
+            'RenderingEngine_Version' => '5.0',
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
     'browscap-issue-084-E' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS101607; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; Ask',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -124,7 +124,7 @@ return [
     'browscap-issue-084-D' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 7.1; Trident/5.0)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -154,12 +154,12 @@ return [
     'browscap-issue-084-C' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/4.0; InfoPath.2; SV1; .NET CLR 2.0.50727; WOW64)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '10.0',
+            'Version'                 => '8.0',
             'Platform'                => 'Win7',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 64,
@@ -177,14 +177,14 @@ return [
             'Device_Code_Name'        => 'Windows Desktop',
             'Device_Brand_Name'       => 'unknown',
             'RenderingEngine_Name'    => 'Trident',
-            'RenderingEngine_Version' => '6.0',
+            'RenderingEngine_Version' => '4.0',
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
     'browscap-issue-084-B' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; es-sa; LG-D805 Build/JDQ39B) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

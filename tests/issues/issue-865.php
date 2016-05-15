@@ -1804,7 +1804,7 @@ return [
     'browscap-issue-865-BI' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; Aqua Q3; Android/4.4.2; Release/03.05.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2344,7 +2344,7 @@ return [
     'browscap-issue-865-CB' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; itel_it1502; Android/4.4.2; Release/03.23.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2464,7 +2464,7 @@ return [
     'browscap-issue-865-CF' => [
         'ua'         => 'Mozilla/5.0(Linux;U;Android 4.2.1; en_us; ZTE Grand X2 Build/JOP40D) AppleWebKit/534.30(KHTML,like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2794,7 +2794,7 @@ return [
     'browscap-issue-865-CQ' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; AquaSense5.0; Android/4.4.2; Release/07.29.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2824,7 +2824,7 @@ return [
     'browscap-issue-865-CR' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; X1 Beats; Android/4.4.2; Release/01.23.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -3004,7 +3004,7 @@ return [
     'browscap-issue-865-CX' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; Andi 4F ARC3; Android/4.4.2; Release/07.14.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -3604,7 +3604,7 @@ return [
     'browscap-issue-865-DR' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; X1 atom; Android/4.4.2; Release/04.08.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -6604,7 +6604,7 @@ return [
     'browscap-issue-865-HN' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; WOW; Android/4.4.2; Release/02.02.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -6844,7 +6844,7 @@ return [
     'browscap-issue-865-HV' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; PLAY Style; Android/4.4.2; Release/08.11.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -6874,7 +6874,7 @@ return [
     'browscap-issue-865-HW' => [
         'ua'         => 'Mozilla/5.0(Linux;U;Android 4.2.2;pt;CCE SK352)/AppleWebKit534.30 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -6994,7 +6994,7 @@ return [
     'browscap-issue-865-IA' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; era; Android/4.4.2; Release/06.24.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -7264,7 +7264,7 @@ return [
     'browscap-issue-865-IJ' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; Aqua Star II; Android/4.4.2; Release/06.17.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -7354,7 +7354,7 @@ return [
     'browscap-issue-865-IM' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 5.1; zh-cn; Infinix X510 Build/ AppleWebKit/534.30 (KHTML, like Gecko) Version/5.1 Mobile Safari/534.30;',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -7444,7 +7444,7 @@ return [
     'browscap-issue-865-IP' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; Atom 2; Android/4.4.2; Release/07.17.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -7594,7 +7594,7 @@ return [
     'browscap-issue-865-IU' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0; like Gecko',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -7624,7 +7624,7 @@ return [
     'browscap-issue-865-IV' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; 8_96_Android; Android/4.4.2; Release/07.30.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -7864,7 +7864,7 @@ return [
     'browscap-issue-865-JD' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; Aqua Star II HD; Android/4.4.2; Release/04.23.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -7924,7 +7924,7 @@ return [
     'browscap-issue-865-JF' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Trident/6.0; Windows 98; Dealio Toolbar 3.1.03)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -7954,7 +7954,7 @@ return [
     'browscap-issue-865-JG' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Trident/6.0; Windows NT 6.1; InfoPath.2)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -7984,7 +7984,7 @@ return [
     'browscap-issue-865-JH' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Trident/6.0; Windows NT 5.0; FDM; Zango 2.6.91; Zango 5.3.98)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -8074,7 +8074,7 @@ return [
     'browscap-issue-865-JK' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; Aqua Star II; Android/4.4.2; Release/05.04.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

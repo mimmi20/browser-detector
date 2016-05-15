@@ -214,7 +214,7 @@ return [
     'browscap-issue-323-H' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; HTC_Sensation_Z710e; da-dk) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

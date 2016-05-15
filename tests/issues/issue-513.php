@@ -784,7 +784,7 @@ return [
     'browscap-issue-513-AB' => [
         'ua'         => 'HTC_ChaCha_A810e/Mozilla/5.0(Linux; U; Android 2.3.5;it-it; Build/GRH78C) AppleWebkit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -814,7 +814,7 @@ return [
     'browscap-issue-513-AC' => [
         'ua'         => 'HTC7088_TD/1.0 Android/4.1 release/2013 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -844,7 +844,7 @@ return [
     'browscap-issue-513-AD' => [
         'ua'         => 'HTC802t_TD/1.0 Android/4.1 release/2013 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -994,7 +994,7 @@ return [
     'browscap-issue-513-AI' => [
         'ua'         => 'IVO/1.0 Android/4.4.2 Release/KVT49L Browser/AppleWebKit534.30 Profile/MIDP-2.0 Configuration/CLDC-1.1',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -1144,7 +1144,7 @@ return [
     'browscap-issue-513-AN' => [
         'ua'         => 'Lenovo-A388t_TD/S100 Linux/3.4.5 Android/4.1.2 Release/07.30.2013 Browser/AppleWebkit534.30 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -1444,7 +1444,7 @@ return [
     'browscap-issue-513-AX' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.0450',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -1474,7 +1474,7 @@ return [
     'browscap-issue-513-AY' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; FunWebProducts; GTB6.3; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; OfficeLiveConnector.1.4; OfficeLivePatch.0.0; .NET CLR 3.0.30729; InfoPath.2; MS-RTC LM 8; .NE',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -1684,7 +1684,7 @@ return [
     'browscap-issue-513-BF' => [
         'ua'         => 'Mozilla/5.0 (;;; en-us; Huawei-U8651S Build/U8651SV100R001USAC85B843) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2014,7 +2014,7 @@ return [
     'browscap-issue-513-BQ' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; AOL 9.7; AOLBuild 4343.1028; Windows NT 5.1; WOW64; Trident/7.0)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -2044,7 +2044,7 @@ return [
     'browscap-issue-513-BR' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/BD6)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -2104,7 +2104,7 @@ return [
     'browscap-issue-513-BT' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -2674,7 +2674,7 @@ return [
     'browscap-issue-513-CP' => [
         'ua'         => 'Mozilla/5.0 (Linux; N; Android 4.0.3; ru-ru; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2734,7 +2734,7 @@ return [
     'browscap-issue-513-CR' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; Bmobile_AX540 Build/IMM76D) AppleWebKit/534.30 (KHMTL, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2764,7 +2764,7 @@ return [
     'browscap-issue-513-CS' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; TAB10-400Build/NobleTAB10-400) AppleWebKit/534.30 (KHTML, likeGecko) Version/4.0 Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2854,7 +2854,7 @@ return [
     'browscap-issue-513-CV' => [
         'ua'         => 'Mozilla/5.0 (Linux;u;Android 2.3.7;zh-cn;HTC Desire Build) AppleWebKit/533.1 (KHTML,like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -2884,7 +2884,7 @@ return [
     'browscap-issue-513-CW' => [
         'ua'         => 'Mozilla/5.0 (Linux;U;Android 4.2.2; en-us; Nuqleo; Zaffire 1010 Build/ICS) AppleWebKit/531.21.10(KTHML,like Gecko) Version/4.0.4 Mobile/7B367 Safari/531.21.10',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -3394,7 +3394,7 @@ return [
     'browscap-issue-513-DO' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 64,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -3484,7 +3484,7 @@ return [
     'browscap-issue-513-DR' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.4; Trident/8.0; rv:550) AppleWebKit/537.36 (KHTML, like Gecko) Version/7.0 Safari/550.1.3',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -3994,7 +3994,7 @@ return [
     'browscap-issue-513-EI' => [
         'ua'         => 'Mozilla/5.0(Linux;U; Android 4.0.4; en-us;NEC-0912 Build/A8212300)AppleWebKit/534.30(KHTML, Like Gecko)Version/4.0 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -4024,7 +4024,7 @@ return [
     'browscap-issue-513-EJ' => [
         'ua'         => 'Mozilla/5.0(Linux;U;Android 4.2.2;en-us;BLU Studio 5.0 S II Build/JDQ39)AppleWebKit/534.30(KHTML,like Gecko)Version/4.0 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
@@ -4054,7 +4054,7 @@ return [
     'browscap-issue-513-EK' => [
         'ua'         => 'Mozilla/5.0(Linux/3.4.5; U; Android 4.4.2; zh-cn; Lenovo A536 Build/KOT49H)AppleWebKit/534.30 (KHTML, like Gecko) Version/4.4.2 Mobile Safari/534.30 Release/01.17.2014',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

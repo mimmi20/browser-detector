@@ -4,7 +4,7 @@ return [
     'browscap-issue-654' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',

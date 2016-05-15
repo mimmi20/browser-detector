@@ -124,7 +124,7 @@ return [
     'browscap-issue-851-I' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.1; ca-es; ZP980 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

@@ -274,7 +274,7 @@ return [
     'browscap-issue-811-J' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 5.5;Windows NT)',
         'properties' => [
-            'Browser'                 => 'IE',
+            'Browser'                 => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',

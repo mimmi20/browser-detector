@@ -125,6 +125,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             . '" (was "' . $foundBrowserName . ' [' . $result->getBrowser()->getName() . ']' . '")'
         );
 
+        /*
         $expectedBrowserType = $mapper->mapBrowserType($expectedProperties['Browser_Type'])->getName();
 
         self::assertSame(

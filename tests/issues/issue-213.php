@@ -4,7 +4,7 @@ return [
     'browscap-issue-213' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.3; fr-fr; GT-I9305 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

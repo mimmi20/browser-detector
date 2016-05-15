@@ -184,7 +184,7 @@ return [
     'browscap-issue-539-H' => [
         'ua'         => 'Lenovo A789/S210 Linux/3.0.13 Android/4.0 Release/05.11.2012 Browser/AppleWebKit533.1 Profile/ Configuration/',
         'properties' => [
-            'Browser'                 => 'Android',
+            'Browser'                 => 'Android Webkit',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',

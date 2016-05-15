@@ -937,7 +937,7 @@ class BrowserFactory implements FactoryInterface
             $browser = new SmartsiteHttpClient($agent, []);
         } elseif (preg_match('/Mozilla\/5\.0.*\(.*Trident\/8\.0.*rv\:\d+\).*/', $agent)
             || preg_match('/Mozilla\/5\.0.*\(.*Trident\/7\.0.*\) like Gecko.*/', $agent)
-            || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.0.*Trident\/(6|7|8)\.0.*/', $agent)
+            || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.0.*Trident\/(4|5|6|7|8)\.0.*/', $agent)
             || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (9|8|7|6)\.0.*/', $agent)
             || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (5|4)\.\d+.*/', $agent)
             || preg_match('/Mozilla\/\d\.\d+.*\(.*MSIE (3|2|1)\.\d+.*/', $agent)
@@ -1115,6 +1115,8 @@ class BrowserFactory implements FactoryInterface
             $browser = new AppleMail($agent, []);
         } elseif (preg_match('/msnbot\-media/i', $agent)) {
             $browser = new MsnBotMedia($agent, []);
+        } elseif (preg_match('/adidxbot/i', $agent)) {
+            $browser = new Adidxbot($agent, []);
         } elseif (preg_match('/msnbot/i', $agent)) {
             $browser = new Bingbot($agent, []);
         } elseif (preg_match('/(backberry|bb10)/i', $agent)) {
@@ -1167,8 +1169,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new SalesForceApp($agent, []);
         } elseif (preg_match('/(nagios\-plugins|check\_http)/', $agent)) {
             $browser = new Nagios($agent, []);
-        } elseif (preg_match('/adidxbot/i', $agent)) {
-            $browser = new Adidxbot($agent, []);
         } elseif (preg_match('/bingbot/i', $agent)) {
             $browser = new Bingbot($agent, []);
         } elseif (preg_match('/Mediapartners\-Google/', $agent)) {
