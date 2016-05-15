@@ -4,13 +4,13 @@ return [
     'browscap-issue-148' => [
         'ua'         => 'Yahoo:LinkExpander:Slingstone',
         'properties' => [
-            'Browser'                 => 'Yahoo Slingstone',
+            'Browser_Name'            => 'Yahoo Slingstone',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Yahoo! Inc.',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

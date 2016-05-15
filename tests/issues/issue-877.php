@@ -4,13 +4,13 @@ return [
     'browscap-issue-877' => [
         'ua'         => 'Roku/DVP-6.2 (096.02E06005A)',
         'properties' => [
-            'Browser'                 => 'Roku DVP',
+            'Browser_Name'            => 'Roku DVP',
             'Browser_Type'            => 'Multimedia Player',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Roku, Inc.',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '6.2',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '6.2',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

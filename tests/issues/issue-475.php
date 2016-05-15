@@ -4,13 +4,13 @@ return [
     'browscap-issue-475' => [
         'ua'         => 'Java/1.7',
         'properties' => [
-            'Browser'                 => 'Java Standard Library',
+            'Browser_Name'            => 'Java Standard Library',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Oracle',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.7',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.7',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-137' => [
         'ua'         => 'Mozilla/5.0 (compatible; Konqueror/2.2.2; Linux 2.4.14-xfs; X11; i686)',
         'properties' => [
-            'Browser'                 => 'Konqueror',
+            'Browser_Name'            => 'Konqueror',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'KDE e.V.',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.2',
-            'Platform'                => 'Linux',
+            'Browser_Version'         => '2.2',
+            'Platform_Name'           => 'Linux',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Linux Foundation',

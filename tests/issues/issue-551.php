@@ -4,13 +4,13 @@ return [
     'browscap-issue-551' => [
         'ua'         => 'Mozilla/5.0 (compatible; Kraken/0.1; http://linkfluence.net/; bot@linkfluence.net)',
         'properties' => [
-            'Browser'                 => 'Kraken',
+            'Browser_Name'            => 'Kraken',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Linkfluence SAS',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.1',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.1',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

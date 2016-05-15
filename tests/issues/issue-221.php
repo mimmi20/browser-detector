@@ -4,13 +4,13 @@ return [
     'browscap-issue-221' => [
         'ua'         => 'securepoint cf',
         'properties' => [
-            'Browser'                 => 'Securepoint Content Filter',
+            'Browser_Name'            => 'Securepoint Content Filter',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Securepoint GmbH',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-850' => [
         'ua'         => 'Mozilla/5.0 (compatible; online-webceo-bot/1.0; +http://online.webceo.com)',
         'properties' => [
-            'Browser'                 => 'webceo Bot',
+            'Browser_Name'            => 'webceo Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Web CEO Limited',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

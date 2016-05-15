@@ -4,13 +4,13 @@ return [
     'browscap-issue-751' => [
         'ua'         => 'Opera/9.27',
         'properties' => [
-            'Browser'                 => 'Opera',
+            'Browser_Name'            => 'Opera',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '9.27',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '9.27',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

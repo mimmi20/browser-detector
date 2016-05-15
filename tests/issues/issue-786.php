@@ -4,13 +4,13 @@ return [
     'browscap-issue-786' => [
         'ua'         => 'Mozilla/5.0 (BB10; Touch) AppleWebKit/537.35  (KHTML, like Gecko) Version/10.3.1.2243 Mobile Safari/537.35',
         'properties' => [
-            'Browser'                 => 'BlackBerry',
+            'Browser_Name'            => 'BlackBerry',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Research In Motion Limited',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '10.3',
-            'Platform'                => 'RIM OS',
+            'Browser_Version'         => '10.3',
+            'Platform_Name'           => 'RIM OS',
             'Platform_Version'        => '10.3',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Research In Motion Limited',

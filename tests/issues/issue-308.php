@@ -4,13 +4,13 @@ return [
     'browscap-issue-308' => [
         'ua'         => 'Microsoft Office Excel 2013',
         'properties' => [
-            'Browser'                 => 'Excel',
+            'Browser_Name'            => 'Excel',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2013',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '2013',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

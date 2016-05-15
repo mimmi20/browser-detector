@@ -4,13 +4,13 @@ return [
     'browscap-issue-926' => [
         'ua'         => 'DMCA.com Page Protection Crawling Service',
         'properties' => [
-            'Browser'                 => 'DMCA Page Protection Crawling Service',
+            'Browser_Name'            => 'DMCA Page Protection Crawling Service',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Digital Millennium Copyright Act Services Ltd.',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

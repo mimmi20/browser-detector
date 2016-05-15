@@ -4,13 +4,13 @@ return [
     'browscap-issue-304' => [
         'ua'         => 'Slackbot-LinkExpanding+(+https://api.slack.com/robots)',
         'properties' => [
-            'Browser'                 => 'Slackbot-Link-Expanding',
+            'Browser_Name'            => 'Slackbot-Link-Expanding',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'slack.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-264' => [
         'ua'         => 'DiscoverEd/Nutch-1.7 (OER search crawler; http://wiki.creativecommons.org/DiscoverEd; webmaster@creativecommons.org)',
         'properties' => [
-            'Browser'                 => 'DiscoverEd',
+            'Browser_Name'            => 'DiscoverEd',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Creative Commons',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.7',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.7',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

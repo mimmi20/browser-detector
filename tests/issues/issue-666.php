@@ -4,13 +4,13 @@ return [
     'browscap-issue-666' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.7149; ms-office; MSOffice 14)',
         'properties' => [
-            'Browser'                 => 'Outlook',
+            'Browser_Name'            => 'Outlook',
             'Browser_Type'            => 'Email Client',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2010',
-            'Platform'                => 'Win7',
+            'Browser_Version'         => '2010',
+            'Platform_Name'           => 'Win7',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-301' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; Media Center PC 4.0; SLCC1; .NET CLR 3.0.04320)',
         'properties' => [
-            'Browser'                 => 'Internet Explorer',
+            'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '8.0',
-            'Platform'                => 'WinXP',
+            'Browser_Version'         => '8.0',
+            'Platform_Name'           => 'WinXP',
             'Platform_Version'        => '5.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

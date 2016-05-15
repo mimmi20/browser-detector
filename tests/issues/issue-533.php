@@ -4,13 +4,13 @@ return [
     'browscap-issue-533' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)',
         'properties' => [
-            'Browser'                 => 'Firefox',
+            'Browser_Name'            => 'Firefox',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '11.0',
-            'Platform'                => 'WinXP',
+            'Browser_Version'         => '11.0',
+            'Platform_Name'           => 'WinXP',
             'Platform_Version'        => '5.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

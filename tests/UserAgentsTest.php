@@ -39,6 +39,21 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
     private $object = null;
 
     /**
+     * @var \UaDataMapper\InputMapper
+     */
+    private static $mapper = null;
+
+    /**
+     * This method is called before the first test of this test class is run.
+     *
+     * @since Method available since Release 3.4.0
+     */
+    public static function setUpBeforeClass()
+    {
+        self::$mapper = new InputMapper();
+    }
+
+    /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
      */
@@ -78,12 +93,15 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             foreach ($tests as $key => $test) {
                 if (isset($data[$key])) {
                     // Test data is duplicated for key
-                    continue;
+                    throw new \RuntimeException('Test data is duplicated for key "' . $key . '"');
                 }
 
                 if (isset($checks[$test['ua']])) {
                     // UA was added more than once
-                    continue;
+                    throw new \RuntimeException(
+                        'UA "' . $test['ua'] . '" added more than once, now for key "' . $key . '", before for key "'
+                        . $checks[$test['ua']] . '"'
+                    );
                 }
 
                 $data[$key]          = $test;
@@ -112,112 +130,73 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
         }
 
         $result = $this->object->getBrowser($userAgent, true);
-        $mapper = new InputMapper();
 
-        $expectedBrowserName = $mapper->mapBrowserName($expectedProperties['Browser']);
-        $foundBrowserName    = $mapper->mapBrowserName($result->getBrowser()->getName());
+        $expectedBrowserName = $expectedProperties['Browser_Name'];
+        $foundBrowserName    = $result->getBrowser()->getName();
 
         self::assertSame(
             $expectedBrowserName,
             $foundBrowserName,
-            'Expected actual "Browser" to be "'
-            . $expectedBrowserName . ' [' . $expectedProperties['Browser'] . ']'
-            . '" (was "' . $foundBrowserName . ' [' . $result->getBrowser()->getName() . ']' . '")'
+            'Expected actual "Browser" to be "' . $expectedBrowserName . '" (was "' . $foundBrowserName . '")'
         );
 
-        /*
-        $expectedBrowserType = $mapper->mapBrowserType($expectedProperties['Browser_Type'])->getName();
+        /**
+        // @todo: add check for browser version
+        // @todo: add check for browser modus
+        $expectedBrowserType = self::$mapper->mapBrowserType($expectedProperties['Browser_Type'])->getName();
+        $foundBrowserType    = $result->getBrowser()->getType()->getName();
 
         self::assertSame(
             $expectedBrowserType,
-            $result->getBrowser()->getType()->getName(),
-            'Expected actual "Browser_Type" to be "' . $expectedBrowserType
-            . ' [' . $expectedProperties['Browser_Type'] . ']'
-            . '" (was "' . $result->getBrowser()->getType()->getName() . '")'
+            $foundBrowserType,
+            'Expected actual "Browser_Type" to be "' . $expectedBrowserType . '" (was "' . $foundBrowserType . '")'
         );
 
-        $expectedBrowserMaker = $mapper->mapBrowserMaker(
-            $expectedProperties['Browser_Maker'],
-            $expectedProperties['Browser']
-        );
-        $foundBrowserMaker = $mapper->mapBrowserMaker(
-            $result->getBrowser()->getManufacturer(),
-            $result->getBrowser()->getName()
-        );
+        $expectedBrowserMaker = $expectedProperties['Browser_Maker'];
+        $foundBrowserMaker    = $result->getBrowser()->getManufacturer();
 
         self::assertSame(
             $expectedBrowserMaker,
             $foundBrowserMaker,
-            'Expected actual "Browser_Maker" to be "'
-            . $expectedBrowserMaker . ' [' . $expectedProperties['Browser_Maker'] . ']'
-            . '" (was "' . $foundBrowserMaker . ' [' . $result->getBrowser()->getManufacturer() . ']' . '")'
+            'Expected actual "Browser_Maker" to be "' . $expectedBrowserMaker . '" (was "' . $foundBrowserMaker . '")'
         );
 
-        /*
-        $expectedDeviceMaker = $mapper->mapDeviceMaker(
-            $expectedProperties['Device_Maker'],
-            $expectedProperties['Device_Code_Name']
-        );
-        $foundDeviceMaker = $mapper->mapDeviceMaker(
-            $result->getDevice()->getManufacturer(),
-            $result->getDevice()->getDeviceName()
-        );
+        // @todo: add check for browser bits
+
+        $expectedDeviceMaker = $expectedProperties['Device_Maker'];
+        $foundDeviceMaker    = $result->getDevice()->getManufacturer();
 
         self::assertSame(
             $expectedDeviceMaker,
             $foundDeviceMaker,
-            'Expected actual "Device_Maker" to be "'
-            . $expectedDeviceMaker . ' [' . $expectedProperties['Device_Maker'] . ']'
-            . '" (was "' . $foundDeviceMaker . ' [' . $result->getDevice()->getManufacturer() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
+            'Expected actual "Device_Maker" to be "' . $expectedDeviceMaker . '" (was "' . $foundDeviceMaker . '")'
         );
 
-        if (isset($expectedProperties['Device_Brand_Name'])) { //@todo: remove this check
-            $expectedDeviceBrand = $mapper->mapDeviceBrandName(
-                $expectedProperties['Device_Brand_Name'],
-                $expectedProperties['Device_Code_Name']
-            );
-            $foundDeviceBrand = $mapper->mapDeviceBrandName(
-                $result->getDevice()->getBrand(),
-                $result->getDevice()->getDeviceName()
-            );
+        $expectedDeviceBrand = $expectedProperties['Device_Brand_Name'];
+        $foundDeviceBrand    = $result->getDevice()->getBrand();
 
-            self::assertSame(
-                $expectedDeviceBrand,
-                $foundDeviceBrand,
-                'Expected actual "Device_Brand_Name" to be "'
-                . $expectedDeviceBrand . ' [' . $expectedProperties['Device_Brand_Name'] . ']'
-                . '" (was "' . $foundDeviceBrand . ' [' . $result->getDevice()->getBrand() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
-            );
-        }
+        self::assertSame(
+            $expectedDeviceBrand,
+            $foundDeviceBrand,
+            'Expected actual "Device_Brand_Name" to be "' . $expectedDeviceBrand . '" (was "' . $foundDeviceBrand . '")'
+        );
 
-        $expectedDeviceCodeName = $mapper->mapDeviceName(
-            $expectedProperties['Device_Code_Name']
-        );
-        $foundDeviceCodeName = $mapper->mapDeviceName(
-            $result->getDevice()->getDeviceName()
-        );
+        $expectedDeviceCodeName = $expectedProperties['Device_Code_Name'];
+        $foundDeviceCodeName    = $result->getDevice()->getDeviceName();
 
         self::assertSame(
             $expectedDeviceCodeName,
             $foundDeviceCodeName,
-            'Expected actual "Device_Code_Name" to be "'
-            . $expectedDeviceCodeName . ' [' . $expectedProperties['Device_Code_Name'] . ']'
-            . '" (was "' . $foundDeviceCodeName . ' [' . $result->getDevice()->getDeviceName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
+            'Expected actual "Device_Code_Name" to be "' . $expectedDeviceCodeName . '" (was "' . $foundDeviceCodeName . '")'
         );
 
-        $expectedDeviceName = $mapper->mapDeviceMarketingName(
-            $expectedProperties['Device_Name']
-        );
-        $foundDeviceName = $mapper->mapDeviceMarketingName(
-            $result->getDevice()->getMarketingName()
-        );
+        $expectedDeviceName = $expectedProperties['Device_Name'];
+        $foundDeviceName    = $result->getDevice()->getMarketingName();
 
         self::assertSame(
             $expectedDeviceName,
             $foundDeviceName,
-            'Expected actual "Device_Name" to be "'
-            . $expectedDeviceName . ' [' . $expectedProperties['Device_Name'] . ']'
-            . '" (was "' . $foundDeviceName . ' [' . $result->getDevice()->getMarketingName() . ']' . '"; class type was ' . get_class($result->getDevice()) . ')'
+            'Expected actual "Device_Name" to be "' . $expectedDeviceName . '" (was "' . $foundDeviceName . '"'
         );
         /**/
     }

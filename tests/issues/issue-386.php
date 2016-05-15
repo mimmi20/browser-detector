@@ -4,13 +4,13 @@ return [
     'browscap-issue-386' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36 Kinza/1.2.0',
         'properties' => [
-            'Browser'                 => 'Kinza',
+            'Browser_Name'            => 'Kinza',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'kinza.jp',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.2',
-            'Platform'                => 'Win8.1',
+            'Browser_Version'         => '1.2',
+            'Platform_Name'           => 'Win8.1',
             'Platform_Version'        => '6.3',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

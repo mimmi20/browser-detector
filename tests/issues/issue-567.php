@@ -4,13 +4,13 @@ return [
     'browscap-issue-567' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36',
         'properties' => [
-            'Browser'                 => 'Samsung Browser',
+            'Browser_Name'            => 'Samsung Browser',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Samsung',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.1',
-            'Platform'                => 'Android',
+            'Browser_Version'         => '2.1',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '5.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

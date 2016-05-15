@@ -4,13 +4,13 @@ return [
     'browscap-issue-268' => [
         'ua'         => 'Mozilla/5.0 (compatible; Embedly/0.2; snap; +http://support.embed.ly/)',
         'properties' => [
-            'Browser'                 => 'Embedly',
+            'Browser_Name'            => 'Embedly',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'embed.ly',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.2',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.2',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-245' => [
         'ua'         => 'Mozilla/5.0 (compatible; Zollard; Linux)',
         'properties' => [
-            'Browser'                 => 'Zollard Worm',
+            'Browser_Name'            => 'Zollard Worm',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

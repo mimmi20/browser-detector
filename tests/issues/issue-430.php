@@ -4,13 +4,13 @@ return [
     'browscap-issue-430' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.2.2; Lenovo B8000-H Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Safari/537.36',
         'properties' => [
-            'Browser'                 => 'Chrome',
+            'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '28.0',
-            'Platform'                => 'Android',
+            'Browser_Version'         => '28.0',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

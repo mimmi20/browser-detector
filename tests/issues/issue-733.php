@@ -4,13 +4,13 @@ return [
     'browscap-issue-733' => [
         'ua'         => 'Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0',
         'properties' => [
-            'Browser'                 => 'Sailfish Browser',
+            'Browser_Name'            => 'Sailfish Browser',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Jolla Ltd.',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'SailfishOS',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'SailfishOS',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Jolla Ltd.',

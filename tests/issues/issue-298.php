@@ -4,13 +4,13 @@ return [
     'browscap-issue-298' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.132 Safari/537.36 OPR/21.0.1432.67',
         'properties' => [
-            'Browser'                 => 'Opera',
+            'Browser_Name'            => 'Opera',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '21.0',
-            'Platform'                => 'Win7',
+            'Browser_Version'         => '21.0',
+            'Platform_Name'           => 'Win7',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

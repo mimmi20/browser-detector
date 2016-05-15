@@ -43,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class ObigoQ extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,7 +59,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
 
         $this->setData(
             [
-                'name'                        => 'Teleca-Obigo',
+                'name'                        => 'Obigo Q',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\Obigo())->name,
@@ -83,13 +83,31 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
      */
     private function detectVersion()
     {
+        $doMatch = preg_match(
+            '/ObigoInternetBrowser\/Q(\d+)/',
+            $this->useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        $doMatch = preg_match(
+            '/obigo\-browser\/Q(\d+)/',
+            $this->useragent,
+            $matches
+        );
+
+        if ($doMatch) {
+            return VersionFactory::set($matches[1]);
+        }
+
         $searches = [
-            'MIC',
-            'ObigoInternetBrowser',
-            'Obigo Browser',
-            'Obigo\-Browser',
-            'Teleca\-Obigo',
-            'TelecaBrowser',
+            'Teleca\-Q',
+            'Obigo\-Q',
+            'Obigo\/Q',
+            'Teleca\/Q',
         ];
 
         return VersionFactory::detectVersion($this->useragent, $searches);

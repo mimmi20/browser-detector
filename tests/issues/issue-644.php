@@ -4,13 +4,13 @@ return [
     'browscap-issue-644' => [
         'ua'         => 'MS Web Services Client Protocol 1.0.3705.0',
         'properties' => [
-            'Browser'                 => '.NET Framework CLR',
+            'Browser_Name'            => '.NET Framework CLR',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

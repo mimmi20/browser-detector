@@ -4,13 +4,13 @@ return [
     'browscap-issue-048' => [
         'ua'         => 'Mozilla/5.0 (Android; Mobile; rv:26.0) Gecko/26.0 Firefox/26.0',
         'properties' => [
-            'Browser'                 => 'Firefox',
+            'Browser_Name'            => 'Firefox',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '26.0',
-            'Platform'                => 'Android',
+            'Browser_Version'         => '26.0',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

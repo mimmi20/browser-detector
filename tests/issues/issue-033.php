@@ -4,13 +4,13 @@ return [
     'browscap-issue-033' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.2.23) Gecko/20110920 Firefox/3.6.23',
         'properties' => [
-            'Browser'                 => 'Firefox',
+            'Browser_Name'            => 'Firefox',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '3.6',
-            'Platform'                => 'MacOSX',
+            'Browser_Version'         => '3.6',
+            'Platform_Name'           => 'MacOSX',
             'Platform_Version'        => '10.5',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

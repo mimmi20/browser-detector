@@ -4,13 +4,13 @@ return [
     'browscap-issue-781' => [
         'ua'         => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) qutebrowser/0.2.1 Safari/538.1',
         'properties' => [
-            'Browser'                 => 'qutebrowser',
+            'Browser_Name'            => 'qutebrowser',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 64,
             'Browser_Maker'           => 'Florian Bruhin',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.2',
-            'Platform'                => 'Linux',
+            'Browser_Version'         => '0.2',
+            'Platform_Name'           => 'Linux',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Linux Foundation',

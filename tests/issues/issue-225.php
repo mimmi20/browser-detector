@@ -4,13 +4,13 @@ return [
     'browscap-issue-225' => [
         'ua'         => 'New-Sogou-Spider/1.0 (compatible; MSIE 5.5; Windows 98)',
         'properties' => [
-            'Browser'                 => 'Sogou Spider',
+            'Browser_Name'            => 'Sogou Spider',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Sogou Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

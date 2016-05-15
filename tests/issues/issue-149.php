@@ -4,13 +4,13 @@ return [
     'browscap-issue-149' => [
         'ua'         => 'Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/20023257-what-is-paper-li)',
         'properties' => [
-            'Browser'                 => 'Paper.li Bot',
+            'Browser_Name'            => 'Paper.li Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Paper.li',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.1',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '2.1',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

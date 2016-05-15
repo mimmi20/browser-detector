@@ -4,13 +4,13 @@ return [
     'browscap-issue-398' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; en-us; SAMSUNG-SM-N900A Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
-            'Browser'                 => 'Android WebView',
+            'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.5',
-            'Platform'                => 'Android',
+            'Browser_Version'         => '1.5',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '4.4',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

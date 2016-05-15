@@ -402,7 +402,6 @@ use BrowserDetector\Detector\Browser\Moreover;
 use BrowserDetector\Detector\Browser\MosBookmarks;
 use BrowserDetector\Detector\Browser\MosBookmarksLinkChecker;
 use BrowserDetector\Detector\Browser\MotorolaInternetBrowser;
-use BrowserDetector\Detector\Browser\Mozilla;
 use BrowserDetector\Detector\Browser\MozillaCrawler;
 use BrowserDetector\Detector\Browser\MsnBotMedia;
 use BrowserDetector\Detector\Browser\MyInternetBrowser;
@@ -427,6 +426,7 @@ use BrowserDetector\Detector\Browser\NikiBot;
 use BrowserDetector\Detector\Browser\NokiaBrowser;
 use BrowserDetector\Detector\Browser\NokiaProxyBrowser;
 use BrowserDetector\Detector\Browser\Nutch;
+use BrowserDetector\Detector\Browser\ObigoQ;
 use BrowserDetector\Detector\Browser\Obot;
 use BrowserDetector\Detector\Browser\OktaMobileApp;
 use BrowserDetector\Detector\Browser\Omniweb;
@@ -523,7 +523,6 @@ use BrowserDetector\Detector\Browser\Safari;
 use BrowserDetector\Detector\Browser\SafeSearchMicrodataCrawler;
 use BrowserDetector\Detector\Browser\SailfishBrowser;
 use BrowserDetector\Detector\Browser\SalesForceApp;
-use BrowserDetector\Detector\Browser\Samsung;
 use BrowserDetector\Detector\Browser\SamsungBrowser;
 use BrowserDetector\Detector\Browser\SamsungWebView;
 use BrowserDetector\Detector\Browser\Sandvox;
@@ -1700,8 +1699,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new Orangebot($agent, []);
         } elseif (preg_match('/Jasmine/', $agent)) {
             $browser = new Jasmine($agent, []);
-        } elseif (preg_match('/samsung/i', $agent)) {
-            $browser = new Samsung($agent, []);
         } elseif (preg_match('/electricmonk/', $agent)) {
             $browser = new DueDilCrawler($agent, []);
         } elseif (preg_match('/yoozBot/', $agent)) {
@@ -1720,14 +1717,8 @@ class BrowserFactory implements FactoryInterface
             $browser = new Netscape($agent, []);
         } elseif (preg_match('/^Mozilla\/5\.0$/', $agent)) {
             $browser = new UnknownBrowser($agent, []);
-        } elseif (preg_match('/^Mozilla\/(\d)/', $agent, $matches)) {
-            if (isset($matches[1]) && $matches[1] >= 4 && !preg_match('/gecko/i', $agent)) {
-                $browser = new UnknownBrowser($agent, []);
-            } elseif (isset($matches[1]) && $matches[1] < 5) {
-                $browser = new Netscape($agent, []);
-            } else {
-                $browser = new Mozilla($agent, []);
-            }
+        } elseif (preg_match('/^Mozilla\/(\d\.\d+)/', $agent, $matches)) {
+            $browser = new Netscape($agent, []);
         } elseif (preg_match('/^Dalvik\/\d/', $agent)) {
             $browser = new Dalvik($agent, []);
         } elseif (preg_match('/niki\-bot/', $agent)) {
@@ -1744,6 +1735,8 @@ class BrowserFactory implements FactoryInterface
             $browser = new SogouWebSpider($agent, []);
         } elseif (preg_match('/(OpenWave|UP\.Browser|UP\/)/', $agent)) {
             $browser = new Openwave($agent, []);
+        } elseif (preg_match('/(ObigoInternetBrowser|obigo\-browser|Obigo|Teleca)(\/|-)Q(\d+)/', $agent)) {
+            $browser = new ObigoQ($agent, []);
         } elseif (preg_match('/(Teleca|Obigo|MIC\/|AU\-MIC)/', $agent)) {
             $browser = new TelecaObigo($agent, []);
         } elseif (preg_match('/DavClnt/', $agent)) {

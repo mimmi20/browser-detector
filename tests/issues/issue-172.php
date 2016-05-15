@@ -4,13 +4,13 @@ return [
     'browscap-issue-172' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; ARM; Trident/7.0; Touch; rv:11.0) like Gecko',
         'properties' => [
-            'Browser'                 => 'Internet Explorer',
+            'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '11.0',
-            'Platform'                => 'WinRT8.1',
+            'Browser_Version'         => '11.0',
+            'Platform_Name'           => 'WinRT8.1',
             'Platform_Version'        => '6.3',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

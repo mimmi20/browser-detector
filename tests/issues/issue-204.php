@@ -4,13 +4,13 @@ return [
     'browscap-issue-204' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Thunderbird/24.4.0 Lightning/2.6.4',
         'properties' => [
-            'Browser'                 => 'Thunderbird',
+            'Browser_Name'            => 'Thunderbird',
             'Browser_Type'            => 'Email Client',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '24.4',
-            'Platform'                => 'Win7',
+            'Browser_Version'         => '24.4',
+            'Platform_Name'           => 'Win7',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-409' => [
         'ua'         => 'CRAZYWEBCRAWLER 0.9.0, http://www.crazywebcrawler.com',
         'properties' => [
-            'Browser'                 => 'Crazywebcrawler',
+            'Browser_Name'            => 'Crazywebcrawler',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'crazywebcrawler.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.9',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.9',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

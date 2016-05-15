@@ -4,13 +4,13 @@ return [
     'browscap-issue-262' => [
         'ua'         => 'Mozilla/5.0 (compatible; AhrefsBot/5.0; +http://ahrefs.com/robot/)',
         'properties' => [
-            'Browser'                 => 'AhrefsBot',
+            'Browser_Name'            => 'AhrefsBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Ahrefs Pte Ltd',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '5.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '5.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

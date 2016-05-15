@@ -4,13 +4,13 @@ return [
     'browscap-issue-537' => [
         'ua'         => 'ltx71 - (http://ltx71.com/)',
         'properties' => [
-            'Browser'                 => 'ltx71 Bot',
+            'Browser_Name'            => 'ltx71 Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'ltx71.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

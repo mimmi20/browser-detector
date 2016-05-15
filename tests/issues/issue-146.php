@@ -4,13 +4,13 @@ return [
     'browscap-issue-146' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0;Windows NT 5.1;.NET CLR 1.1.4322;.NET CLR 2.0.50727;.NET CLR 3.0.04506.30) Lightspeedsystems',
         'properties' => [
-            'Browser'                 => 'Lightspeed Systems Crawler',
+            'Browser_Name'            => 'Lightspeed Systems Crawler',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Lightspeed Systems',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'WinXP',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'WinXP',
             'Platform_Version'        => '5.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

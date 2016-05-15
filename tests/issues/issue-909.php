@@ -4,13 +4,13 @@ return [
     'browscap-issue-909' => [
         'ua'         => 'Echoping/6.0.2',
         'properties' => [
-            'Browser'                 => 'Echoping',
+            'Browser_Name'            => 'Echoping',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Stephane Bortzmeyer',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '6.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '6.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

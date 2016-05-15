@@ -4,13 +4,13 @@ return [
     'browscap-issue-117' => [
         'ua'         => 'netEstate NE Crawler (+http://www.website-datenbank.de/)',
         'properties' => [
-            'Browser'                 => 'netEstate NE Crawler',
+            'Browser_Name'            => 'netEstate NE Crawler',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'netEstate GmbH',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

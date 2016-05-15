@@ -4,13 +4,13 @@ return [
     'browscap-issue-309' => [
         'ua'         => 'WinHTTP',
         'properties' => [
-            'Browser'                 => 'WinHttp',
+            'Browser_Name'            => 'WinHttp',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

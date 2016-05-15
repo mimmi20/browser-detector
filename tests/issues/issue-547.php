@@ -4,13 +4,13 @@ return [
     'browscap-issue-547' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Vivaldi/1.0.83.38 Safari/537.36',
         'properties' => [
-            'Browser'                 => 'Vivaldi',
+            'Browser_Name'            => 'Vivaldi',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Vivaldi Technologies',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'MacOSX',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'MacOSX',
             'Platform_Version'        => '10.10',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

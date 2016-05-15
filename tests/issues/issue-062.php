@@ -4,13 +4,13 @@ return [
     'browscap-issue-062' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0)',
         'properties' => [
-            'Browser'                 => 'Internet Explorer',
+            'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'IE 7.0 Compatibility Mode',
-            'Version'                 => '11.0',
-            'Platform'                => 'Win8.1',
+            'Browser_Version'         => '11.0',
+            'Platform_Name'           => 'Win8.1',
             'Platform_Version'        => '6.3',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

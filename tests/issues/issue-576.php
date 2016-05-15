@@ -4,13 +4,13 @@ return [
     'browscap-issue-576' => [
         'ua'         => 'Mozilla/5.0 (compatible; SetLinks bot 1.2)',
         'properties' => [
-            'Browser'                 => 'SetLinks.ru Crawler',
+            'Browser_Name'            => 'SetLinks.ru Crawler',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'SetLinks.ru',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.2',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.2',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

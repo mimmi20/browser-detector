@@ -4,13 +4,13 @@ return [
     'browscap-issue-263' => [
         'ua'         => 'Domnutch-Bot/Nutch-1.0 (Domnutch; http://www.Nutch.de/)',
         'properties' => [
-            'Browser'                 => 'Domnutch Bot',
+            'Browser_Name'            => 'Domnutch Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'nutch.de',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

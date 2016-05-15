@@ -4,13 +4,13 @@ return [
     'browscap-issue-343' => [
         'ua'         => 'Mozilla/5.0 (PlayStation 4 1.72) AppleWebKit/536.26 (KHTML, like Gecko)',
         'properties' => [
-            'Browser'                 => 'NetFront',
+            'Browser_Name'            => 'NetFront',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Access',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'CellOS',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'CellOS',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Sony',

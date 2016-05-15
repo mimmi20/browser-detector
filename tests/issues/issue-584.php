@@ -4,13 +4,13 @@ return [
     'browscap-issue-584' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-T230NU Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
-            'Browser'                 => 'Android WebView',
+            'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '4.0',
-            'Platform'                => 'Android',
+            'Browser_Version'         => '4.0',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '4.4',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

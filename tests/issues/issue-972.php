@@ -4,13 +4,13 @@ return [
     'browscap-issue-972' => [
         'ua'         => 'CaptiveNetworkSupport-324 wispr',
         'properties' => [
-            'Browser'                 => 'CaptiveNetworkAgent',
+            'Browser_Name'            => 'CaptiveNetworkAgent',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'iOS',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

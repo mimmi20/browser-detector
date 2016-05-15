@@ -4,13 +4,13 @@ return [
     'browscap-issue-922' => [
         'ua'         => 'Digg Feed Fetcher 1.0 (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_1) AppleWebKit/534.48.3 (KHTML, like Gecko) Version/5.1 Safari/534.48.3)',
         'properties' => [
-            'Browser'                 => 'Digg Feed Fetcher',
+            'Browser_Name'            => 'Digg Feed Fetcher',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'News.me Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'MacOSX',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'MacOSX',
             'Platform_Version'        => '10.7',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

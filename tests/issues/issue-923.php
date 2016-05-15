@@ -4,13 +4,13 @@ return [
     'browscap-issue-923' => [
         'ua'         => 'FeedlyBot/1.0 (http://feedly.com)',
         'properties' => [
-            'Browser'                 => 'FeedlyBot',
+            'Browser_Name'            => 'FeedlyBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'feedly.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

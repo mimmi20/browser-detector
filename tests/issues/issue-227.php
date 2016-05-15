@@ -4,13 +4,13 @@ return [
     'browscap-issue-227' => [
         'ua'         => 'RankFlex.com Webspider',
         'properties' => [
-            'Browser'                 => 'RankFlex',
+            'Browser_Name'            => 'RankFlex',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'rankflex.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-575' => [
         'ua'         => 'Mozilla/5.0 (compatible; BegunAdvertising/3.0; +http://begun.ru/begun/technology/indexer/)',
         'properties' => [
-            'Browser'                 => 'Begun Advertising Bot',
+            'Browser_Name'            => 'Begun Advertising Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'begun.ru',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '3.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '3.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

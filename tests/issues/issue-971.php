@@ -4,13 +4,13 @@ return [
     'browscap-issue-971' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; CrystalSemanticsBot http://www.crystalsemantics.com/service-navigation/imprint/useragent/)',
         'properties' => [
-            'Browser'                 => 'CrystalSemanticsBot',
+            'Browser_Name'            => 'CrystalSemanticsBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'WinXP',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'WinXP',
             'Platform_Version'        => '5.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

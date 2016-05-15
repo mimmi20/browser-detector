@@ -4,13 +4,13 @@ return [
     'browscap-issue-459' => [
         'ua'         => 'Facebot/1.0',
         'properties' => [
-            'Browser'                 => 'Facebot',
+            'Browser_Name'            => 'Facebot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Facebook',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

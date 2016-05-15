@@ -4,13 +4,13 @@ return [
     'browscap-issue-417' => [
         'ua'         => 'psbot-page (+http://www.picsearch.com/bot.html)',
         'properties' => [
-            'Browser'                 => 'Picsearch Bot',
+            'Browser_Name'            => 'Picsearch Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Picsearch Services AB',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

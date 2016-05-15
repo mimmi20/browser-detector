@@ -4,13 +4,13 @@ return [
     'browscap-issue-216' => [
         'ua'         => 'Mozilla/5.0 (compatible; WebmasterCoffee/0.7; +http://webmastercoffee.com/about)',
         'properties' => [
-            'Browser'                 => 'WebmasterCoffee',
+            'Browser_Name'            => 'WebmasterCoffee',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.7',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.7',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

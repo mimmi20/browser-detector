@@ -79,9 +79,9 @@ class AndroidOs extends AbstractOs
             'Android android',
             'Android AndroidHouse Team',
             'Android WildPuzzleROM v8 froyo',
-            'Android',
             'JUC\(Linux;U;',
             'Android OS',
+            'Android',
         ];
 
         $detector = VersionFactory::detectVersion($this->useragent, $searches);

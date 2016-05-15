@@ -4,13 +4,13 @@ return [
     'browscap-issue-261' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 YaBrowser/14.2.1700.12599 Safari/537.36',
         'properties' => [
-            'Browser'                 => 'Yandex Browser',
+            'Browser_Name'            => 'Yandex Browser',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Yandex LLC',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '14.2',
-            'Platform'                => 'Win7',
+            'Browser_Version'         => '14.2',
+            'Platform_Name'           => 'Win7',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

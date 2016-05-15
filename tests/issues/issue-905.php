@@ -4,13 +4,13 @@ return [
     'browscap-issue-905' => [
         'ua'         => 'Lynx/2.8.9dev.1 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/3.3.8',
         'properties' => [
-            'Browser'                 => 'Lynx',
+            'Browser_Name'            => 'Lynx',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Thomas Dickey',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.8',
-            'Platform'                => 'Linux',
+            'Browser_Version'         => '2.8',
+            'Platform_Name'           => 'Linux',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Linux Foundation',

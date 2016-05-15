@@ -4,13 +4,13 @@ return [
     'browscap-issue-520' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mercury/7.4.1 Mobile/10A523 Safari/8536.25',
         'properties' => [
-            'Browser'                 => 'Mercury',
+            'Browser_Name'            => 'Mercury',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'iLegendSoft, Inc.',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '7.4',
-            'Platform'                => 'iOS',
+            'Browser_Version'         => '7.4',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => '6.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

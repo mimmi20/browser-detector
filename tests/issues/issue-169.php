@@ -4,13 +4,13 @@ return [
     'browscap-issue-169' => [
         'ua'         => 'Mozilla/5.0 (iPad; U; CPU OS 4_3_3 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J3 Safari/6533.18.5',
         'properties' => [
-            'Browser'                 => 'Safari',
+            'Browser_Name'            => 'Safari',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '5.0',
-            'Platform'                => 'iOS',
+            'Browser_Version'         => '5.0',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => '4.3',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

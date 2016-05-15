@@ -4,13 +4,13 @@ return [
     'browscap-issue-228' => [
         'ua'         => 'Mozilla/5.0 (X11; Windows x86_64) AppleWebKit/536.11 (KHTML, like Gecko) chrome/22.0.1190.0 Safari/536.11',
         'properties' => [
-            'Browser'                 => 'Chrome',
+            'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '22.0',
-            'Platform'                => 'Win32',
+            'Browser_Version'         => '22.0',
+            'Platform_Name'           => 'Win32',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

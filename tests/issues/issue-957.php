@@ -4,13 +4,13 @@ return [
     'browscap-issue-957' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
         'properties' => [
-            'Browser'                 => 'Google Bot',
+            'Browser_Name'            => 'Google Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.1',
-            'Platform'                => 'Android',
+            'Browser_Version'         => '2.1',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '6.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-461' => [
         'ua'         => 'Mozilla/5.0 (compatible;bingbot/2.0;+http://www.bing.com/bingbot.htm)',
         'properties' => [
-            'Browser'                 => 'BingBot',
+            'Browser_Name'            => 'BingBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '2.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

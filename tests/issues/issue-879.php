@@ -4,13 +4,13 @@ return [
     'browscap-issue-879' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Wire/2.3.2553 Chrome/45.0.2454.85 Electron/0.35.2 Safari/537.36',
         'properties' => [
-            'Browser'                 => 'Wire App',
+            'Browser_Name'            => 'Wire App',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Wire Swiss GmbH',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.3',
-            'Platform'                => 'MacOSX',
+            'Browser_Version'         => '2.3',
+            'Platform_Name'           => 'MacOSX',
             'Platform_Version'        => '10.11',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

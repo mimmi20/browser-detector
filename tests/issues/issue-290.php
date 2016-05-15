@@ -4,13 +4,13 @@ return [
     'browscap-issue-290' => [
         'ua'         => 'woobot/2.0',
         'properties' => [
-            'Browser'                 => 'WooRank',
+            'Browser_Name'            => 'WooRank',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'woorank.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '2.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

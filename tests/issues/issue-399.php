@@ -4,13 +4,13 @@ return [
     'browscap-issue-399' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 7.1) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.112 Safari/534.30',
         'properties' => [
-            'Browser'                 => 'Chrome',
+            'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '12.0',
-            'Platform'                => 'Win32',
+            'Browser_Version'         => '12.0',
+            'Platform_Name'           => 'Win32',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

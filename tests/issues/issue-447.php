@@ -4,13 +4,13 @@ return [
     'browscap-issue-447' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/600.1.17 (KHTML, like Gecko) Version/6.2 Safari/537.85.10',
         'properties' => [
-            'Browser'                 => 'Safari',
+            'Browser_Name'            => 'Safari',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '6.2',
-            'Platform'                => 'MacOSX',
+            'Browser_Version'         => '6.2',
+            'Platform_Name'           => 'MacOSX',
             'Platform_Version'        => '10.8',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

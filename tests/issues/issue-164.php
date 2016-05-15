@@ -4,13 +4,13 @@ return [
     'browscap-issue-164' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 10.0; Trident/6.0; Windows 98; MyIE2)',
         'properties' => [
-            'Browser'                 => 'Maxthon',
+            'Browser_Name'            => 'Maxthon',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Maxthon International Limited',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.0',
-            'Platform'                => 'Win98',
+            'Browser_Version'         => '2.0',
+            'Platform_Name'           => 'Win98',
             'Platform_Version'        => '98',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

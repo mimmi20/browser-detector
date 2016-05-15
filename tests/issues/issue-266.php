@@ -4,13 +4,13 @@ return [
     'browscap-issue-266' => [
         'ua'         => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:32.0) Gecko/20100101 Firefox/32.0',
         'properties' => [
-            'Browser'                 => 'Firefox',
+            'Browser_Name'            => 'Firefox',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 64,
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '32.0',
-            'Platform'                => 'Ubuntu',
+            'Browser_Version'         => '32.0',
+            'Platform_Name'           => 'Ubuntu',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Canonical Foundation',

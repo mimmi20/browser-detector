@@ -4,13 +4,13 @@ return [
     'browscap-issue-236' => [
         'ua'         => 'Mozilla/5.0 (compatible;picmole/1.0 +http://www.picmole.com)',
         'properties' => [
-            'Browser'                 => 'picmole Bot',
+            'Browser_Name'            => 'picmole Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'picmole.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

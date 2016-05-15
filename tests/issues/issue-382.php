@@ -4,13 +4,13 @@ return [
     'browscap-issue-382' => [
         'ua'         => 'iOS/6.1.3 (10B329) dataaccessd/1.0',
         'properties' => [
-            'Browser'                 => 'iOS dataaccessd',
+            'Browser_Name'            => 'iOS dataaccessd',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'iOS',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

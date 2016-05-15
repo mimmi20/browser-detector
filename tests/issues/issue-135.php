@@ -4,13 +4,13 @@ return [
     'browscap-issue-135' => [
         'ua'         => 'Mozilla/5.0 (compatible; WBSearchBot/1.1; +http://www.warebay.com/bot.html)',
         'properties' => [
-            'Browser'                 => 'WBSearchBot',
+            'Browser_Name'            => 'WBSearchBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'www.warebay.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.1',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.1',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

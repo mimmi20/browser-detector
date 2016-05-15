@@ -4,13 +4,13 @@ return [
     'browscap-issue-601' => [
         'ua'         => 'Mozilla/5.0 (compatible; worldwebheritage.org/1.0; +crawl@worldwebheritage.org)',
         'properties' => [
-            'Browser'                 => 'worldwebheritage.org Bot',
+            'Browser_Name'            => 'worldwebheritage.org Bot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'GoDaddy, LLC',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

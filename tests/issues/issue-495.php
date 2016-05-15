@@ -4,13 +4,13 @@ return [
     'browscap-issue-495' => [
         'ua'         => 'JoobleBot (compatible; http://jooble.org/jooble-bot)',
         'properties' => [
-            'Browser'                 => 'JoobleBot',
+            'Browser_Name'            => 'JoobleBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'jooble.com',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

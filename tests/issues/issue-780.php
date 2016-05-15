@@ -4,13 +4,13 @@ return [
     'browscap-issue-780' => [
         'ua'         => 'Alizee iPod 2005 (Beta; Mac OS X)',
         'properties' => [
-            'Browser'                 => 'Mobile Safari UIWebView',
+            'Browser_Name'            => 'Mobile Safari UIWebView',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'iOS',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

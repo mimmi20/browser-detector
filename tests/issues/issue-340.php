@@ -4,13 +4,13 @@ return [
     'browscap-issue-340' => [
         'ua'         => 'Mozilla/5.0 (Android; U; -GB) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/13.0',
         'properties' => [
-            'Browser'                 => 'Adobe AIR',
+            'Browser_Name'            => 'Adobe AIR',
             'Browser_Type'            => 'Application',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Adobe Systems Incorporated',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '13.0',
-            'Platform'                => 'Android',
+            'Browser_Version'         => '13.0',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

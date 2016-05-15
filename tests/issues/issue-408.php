@@ -4,13 +4,13 @@ return [
     'browscap-issue-408' => [
         'ua'         => 'Pingdom.com_bot_version_1.4_(http://www.pingdom.com)',
         'properties' => [
-            'Browser'                 => 'Pingdom',
+            'Browser_Name'            => 'Pingdom',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '1.4',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '1.4',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

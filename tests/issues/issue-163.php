@@ -4,13 +4,13 @@ return [
     'browscap-issue-163' => [
         'ua'         => 'Validator.nu/LV http://validator.w3.org/services',
         'properties' => [
-            'Browser'                 => 'Validator.nu/LV',
+            'Browser_Name'            => 'Validator.nu/LV',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'W3C',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

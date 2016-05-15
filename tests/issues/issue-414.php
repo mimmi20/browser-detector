@@ -4,13 +4,13 @@ return [
     'browscap-issue-414' => [
         'ua'         => 'WeSEE:Ads/PageBot (http://www.wesee.com/bot/)',
         'properties' => [
-            'Browser'                 => 'WeSEE:Ads',
+            'Browser_Name'            => 'WeSEE:Ads',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'WeSEE Ltd',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

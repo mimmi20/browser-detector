@@ -4,13 +4,13 @@ return [
     'browscap-issue-807' => [
         'ua'         => 'Mozilla/5.0 (compatible; Orangebot/2.0; support.orangebot@orange.com)',
         'properties' => [
-            'Browser'                 => 'Orangebot',
+            'Browser_Name'            => 'Orangebot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Orange S.A.',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '2.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '2.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

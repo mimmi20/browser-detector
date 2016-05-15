@@ -4,13 +4,13 @@ return [
     'browscap-issue-156' => [
         'ua'         => 'BOT/0.1 (BOT for JCE)',
         'properties' => [
-            'Browser'                 => 'BOT for JCE',
+            'Browser_Name'            => 'BOT for JCE',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.1',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.1',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',

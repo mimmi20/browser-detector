@@ -4,13 +4,13 @@ return [
     'browscap-issue-195' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_1) AppleWebkit/535.1 (KHTML, like Gecko) Chrome/13.0.782.215 Safari/535.1',
         'properties' => [
-            'Browser'                 => 'Chrome',
+            'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '13.0',
-            'Platform'                => 'MacOSX',
+            'Browser_Version'         => '13.0',
+            'Platform_Name'           => 'MacOSX',
             'Platform_Version'        => '10.7',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-032' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MASMJS; rv:11.0) like Gecko',
         'properties' => [
-            'Browser'                 => 'Internet Explorer',
+            'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '11.0',
-            'Platform'                => 'Win8.1',
+            'Browser_Version'         => '11.0',
+            'Platform_Name'           => 'Win8.1',
             'Platform_Version'        => '6.3',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

@@ -4,13 +4,13 @@ return [
     'browscap-issue-141' => [
         'ua'         => 'Mozilla/5.0 TYPO3-linkvalidator',
         'properties' => [
-            'Browser'                 => 'TYPO3 Linkvalidator',
+            'Browser_Name'            => 'TYPO3 Linkvalidator',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
-            'Version'                 => '0.0',
-            'Platform'                => 'unknown',
+            'Browser_Version'         => '0.0',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 0,
             'Platform_Maker'          => 'unknown',
