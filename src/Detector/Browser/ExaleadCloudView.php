@@ -59,7 +59,7 @@ class ExaleadCloudView extends AbstractBrowser implements BrowserHasSpecificEngi
 
         $this->setData(
             [
-                'name'                        => 'ExaleadCloudView',
+                'name'                        => 'Exalead CloudView',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
                 'manufacturer'                => (new Company\DassaultSystemes())->name,

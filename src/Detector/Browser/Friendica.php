@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
@@ -43,7 +44,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class Friendica extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,10 +60,10 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
 
         $this->setData(
             [
-                'name'                        => 'GO HttpClient',
+                'name'                        => 'Friendica',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Google())->name,
+                'manufacturer'                => (new Company\Unknown())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
                 'canSkipAlignedLinkRow'       => false,
@@ -83,9 +84,17 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     private function detectVersion()
     {
-        $searches = ['Go\-http\-client', 'Go'];
+        $doMatch = preg_match(
+            '/Friendica \'[^\']*\' (\d+[\d\.\_\-\+abcdehlprstv]*).*/',
+            $this->useragent,
+            $matches
+        );
 
-        return VersionFactory::detectVersion($this->useragent, $searches);
+        if (!$doMatch) {
+            return new Version(0);
+        }
+
+        return VersionFactory::set($matches[1]);
     }
 
     /**

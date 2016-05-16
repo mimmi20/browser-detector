@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Browser;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
@@ -43,7 +44,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class WapBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,33 +60,21 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
 
         $this->setData(
             [
-                'name'                        => 'GO HttpClient',
+                'name'                        => 'WAP Browser',
                 'modus'                       => null,
-                'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Google())->name,
+                'version'                     => new Version(0),
+                'manufacturer'                => (new Company\Unknown())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
-                'claimsWebSupport'            => false,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
                 'supportsEmptyOptionValues'   => true,
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\WapBrowser(),
             ]
         );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Go\-http\-client', 'Go'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**
@@ -95,6 +84,6 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getEngine()
     {
-        return new Engine\UnknownEngine($this->useragent, []);
+        return new Engine\Gecko($this->useragent, []);
     }
 }

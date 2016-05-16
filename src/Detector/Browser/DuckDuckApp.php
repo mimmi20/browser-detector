@@ -43,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class DuckDuckApp extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,19 +59,19 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
 
         $this->setData(
             [
-                'name'                        => 'GO HttpClient',
+                'name'                        => 'DuckDuck App',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Google())->name,
+                'manufacturer'                => (new Company\DuckDuckGo())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
-                'claimsWebSupport'            => false,
+                'canSkipAlignedLinkRow'       => true,
+                'claimsWebSupport'            => true,
                 'supportsEmptyOptionValues'   => true,
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Application(),
             ]
         );
     }
@@ -83,7 +83,7 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     private function detectVersion()
     {
-        $searches = ['Go\-http\-client', 'Go'];
+        $searches = ['DDG\-Android\-'];
 
         return VersionFactory::detectVersion($this->useragent, $searches);
     }

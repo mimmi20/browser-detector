@@ -43,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class QuoraLinkPreviewBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,10 +59,10 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
 
         $this->setData(
             [
-                'name'                        => 'GO HttpClient',
+                'name'                        => 'Quora Link Preview Bot',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Google())->name,
+                'manufacturer'                => (new Company\Quora())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
                 'canSkipAlignedLinkRow'       => false,
@@ -83,7 +83,7 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     private function detectVersion()
     {
-        $searches = ['Go\-http\-client', 'Go'];
+        $searches = ['Quora Link Preview'];
 
         return VersionFactory::detectVersion($this->useragent, $searches);
     }

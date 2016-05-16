@@ -43,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class MultiZilla extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,19 +59,19 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
 
         $this->setData(
             [
-                'name'                        => 'GO HttpClient',
+                'name'                        => 'MultiZilla',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Google())->name,
+                'manufacturer'                => (new Company\Unknown())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
+                'canSkipAlignedLinkRow'       => true,
                 'claimsWebSupport'            => false,
                 'supportsEmptyOptionValues'   => true,
                 'supportsBasicAuthentication' => true,
                 'supportsPostMethod'          => true,
                 'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
+                'type'                        => new UaBrowserType\Browser(),
             ]
         );
     }
@@ -83,7 +83,7 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     private function detectVersion()
     {
-        $searches = ['Go\-http\-client', 'Go'];
+        $searches = ['MultiZilla'];
 
         return VersionFactory::detectVersion($this->useragent, $searches);
     }
@@ -95,6 +95,6 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     public function getEngine()
     {
-        return new Engine\UnknownEngine($this->useragent, []);
+        return new Engine\Gecko($this->useragent, []);
     }
 }

@@ -36304,7 +36304,7 @@ return [
     'browscap-issue-900-BLW' => [
         'ua'         => 'msnbot/2.1',
         'properties' => [
-            'Browser_Name'            => 'msnbot',
+            'Browser_Name'            => 'BingBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -36334,7 +36334,7 @@ return [
     'browscap-issue-900-BLX' => [
         'ua'         => 'msnbot/0.9 (+http://search.msn.com/msnbot.htm)',
         'properties' => [
-            'Browser_Name'            => 'msnbot',
+            'Browser_Name'            => 'BingBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -36364,7 +36364,7 @@ return [
     'browscap-issue-900-BLY' => [
         'ua'         => 'msnbot/0.11 ( http://search.msn.com/msnbot.htm)',
         'properties' => [
-            'Browser_Name'            => 'msnbot',
+            'Browser_Name'            => 'BingBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -36394,7 +36394,7 @@ return [
     'browscap-issue-900-BLZ' => [
         'ua'         => 'MSNBOT/0.1 (http://search.msn.com/msnbot.htm)',
         'properties' => [
-            'Browser_Name'            => 'msnbot',
+            'Browser_Name'            => 'BingBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',

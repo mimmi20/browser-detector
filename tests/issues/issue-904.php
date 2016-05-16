@@ -634,7 +634,7 @@ return [
     'browscap-issue-904-V' => [
         'ua'         => 'msnbot/1.1 ( http://search.msn.com/msnbot.htm)',
         'properties' => [
-            'Browser_Name'            => 'msnbot',
+            'Browser_Name'            => 'BingBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',
@@ -1114,7 +1114,7 @@ return [
     'browscap-issue-904-AL' => [
         'ua'         => 'msnbot/2.0b v1394720947.6703',
         'properties' => [
-            'Browser_Name'            => 'msnbot',
+            'Browser_Name'            => 'BingBot',
             'Browser_Type'            => 'Bot/Crawler',
             'Browser_Bits'            => 0,
             'Browser_Maker'           => 'Microsoft Corporation',

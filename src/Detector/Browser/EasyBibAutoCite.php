@@ -43,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class EasyBibAutoCite extends AbstractBrowser implements BrowserHasSpecificEngineInterface
 {
     /**
      * Class Constructor
@@ -59,13 +59,13 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
 
         $this->setData(
             [
-                'name'                        => 'GO HttpClient',
+                'name'                        => 'EasyBib AutoCite',
                 'modus'                       => null,
                 'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Google())->name,
+                'manufacturer'                => (new Company\Unknown())->name,
                 'pdfSupport'                  => true,
                 'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
+                'canSkipAlignedLinkRow'       => true,
                 'claimsWebSupport'            => false,
                 'supportsEmptyOptionValues'   => true,
                 'supportsBasicAuthentication' => true,
@@ -83,7 +83,7 @@ class GoHttpClient extends AbstractBrowser implements BrowserHasSpecificEngineIn
      */
     private function detectVersion()
     {
-        $searches = ['Go\-http\-client', 'Go'];
+        $searches = ['EasyBib AutoCite'];
 
         return VersionFactory::detectVersion($this->useragent, $searches);
     }
