@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Brave Software Inc.',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.7',
-            'Platform_Name'           => 'MacOSX',
+            'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => '10.11',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

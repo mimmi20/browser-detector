@@ -56,7 +56,7 @@ class Maemo extends AbstractOs
 
         $this->setData(
             [
-                'name'         => 'Linux MobilePhone OS (Maemo)',
+                'name'         => 'Linux Smartphone OS (Maemo)',
                 'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\LinuxFoundation())->name,
                 'bits'         => null,

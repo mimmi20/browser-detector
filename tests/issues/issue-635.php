@@ -4810,7 +4810,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '7.6',
-            'Platform_Name'           => 'WinPhone',
+            'Platform_Name'           => 'Windows Phone OS',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

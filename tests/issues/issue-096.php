@@ -400,7 +400,7 @@ return [
             'Browser_Maker'           => 'Omni Development Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '5.11',
-            'Platform_Name'           => 'MacOSX',
+            'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => '10.9',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',
