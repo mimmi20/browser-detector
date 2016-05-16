@@ -131,6 +131,15 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
 
         $result = $this->object->getBrowser($userAgent, true);
 
+        $expectedPlatformName = $expectedProperties['Platform_Name'];
+        $foundPlatformName    = $result->getOs()->getName();
+
+        self::assertSame(
+            $expectedPlatformName,
+            $foundPlatformName,
+            'Expected actual "Browser" to be "' . $expectedPlatformName . '" (was "' . $foundPlatformName . '")'
+        );
+
         $expectedBrowserName = $expectedProperties['Browser_Name'];
         $foundBrowserName    = $result->getBrowser()->getName();
 

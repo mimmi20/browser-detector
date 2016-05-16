@@ -408,6 +408,7 @@ use BrowserDetector\Detector\Browser\MetaHeadersBot;
 use BrowserDetector\Detector\Browser\MetaInspector;
 use BrowserDetector\Detector\Browser\MetaJobBot;
 use BrowserDetector\Detector\Browser\MetaUri;
+use BrowserDetector\Detector\Browser\MicroB;
 use BrowserDetector\Detector\Browser\MicrosoftAccess;
 use BrowserDetector\Detector\Browser\MicrosoftCryptoApi;
 use BrowserDetector\Detector\Browser\MicrosoftDotNetFrameworkClr;
@@ -430,6 +431,7 @@ use BrowserDetector\Detector\Browser\MicrosoftWebDav;
 use BrowserDetector\Detector\Browser\MicrosoftWord;
 use BrowserDetector\Detector\Browser\Midori;
 use BrowserDetector\Detector\Browser\MignifyBot;
+use BrowserDetector\Detector\Browser\Minimo;
 use BrowserDetector\Detector\Browser\MiuiBrowser;
 use BrowserDetector\Detector\Browser\MixBot;
 use BrowserDetector\Detector\Browser\MixrankBot;
@@ -538,6 +540,7 @@ use BrowserDetector\Detector\Browser\Puffin;
 use BrowserDetector\Detector\Browser\PwBot;
 use BrowserDetector\Detector\Browser\PyCurl;
 use BrowserDetector\Detector\Browser\PythonRequests;
+use BrowserDetector\Detector\Browser\PythonUrlLib;
 use BrowserDetector\Detector\Browser\QqBrowser;
 use BrowserDetector\Detector\Browser\QqBrowserMini;
 use BrowserDetector\Detector\Browser\Qt;
@@ -1313,6 +1316,10 @@ class BrowserFactory implements FactoryInterface
             $browser = new Safari($agent, []);
         } elseif (preg_match('/TWCAN\/SportsNet/', $agent)) {
             $browser = new TwcSportsNet($agent, []);
+        } elseif (preg_match('/AdobeAIR/', $agent)) {
+            $browser = new AdobeAIR($agent, []);
+        } elseif (preg_match('/(easouspider)/i', $agent)) {
+            $browser = new EasouSpider($agent, []);
         } elseif (preg_match('/^Mozilla\/5\.0.*\((iPhone|iPad|iPod).*\).*AppleWebKit\/.*\(.*KHTML, like Gecko.*\).*Mobile.*/i', $agent)) {
             $browser = new MobileSafariUiWebView($agent, []);
         } elseif (preg_match('/waterfox/i', $agent)) {
@@ -1361,6 +1368,10 @@ class BrowserFactory implements FactoryInterface
             $browser = new SlimerJs($agent, []);
         } elseif (preg_match('/MultiZilla/', $agent)) {
             $browser = new MultiZilla($agent, []);
+        } elseif (preg_match('/Minimo/', $agent)) {
+            $browser = new Minimo($agent, []);
+        } elseif (preg_match('/MicroB/', $agent)) {
+            $browser = new MicroB($agent, []);
         } elseif (preg_match('/firefox/i', $agent)
             && !preg_match('/gecko/i', $agent)
             && preg_match('/anonymized/i', $agent)
@@ -1486,8 +1497,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new Lbot($agent, []);
         } elseif (preg_match('/(blexbot)/i', $agent)) {
             $browser = new BlexBot($agent, []);
-        } elseif (preg_match('/(easouspider)/i', $agent)) {
-            $browser = new EasouSpider($agent, []);
         } elseif (preg_match('/(socialradarbot)/i', $agent)) {
             $browser = new Socialradarbot($agent, []);
         } elseif (preg_match('/(synapse)/i', $agent)) {
@@ -1568,8 +1577,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new Bot80Legs($agent, []);
         } elseif (preg_match('/wada\.vn/i', $agent)) {
             $browser = new WadavnSearchBot($agent, []);
-        } elseif (preg_match('/AdobeAIR/', $agent)) {
-            $browser = new AdobeAIR($agent, []);
         } elseif (preg_match('/(NX|WiiU|Nintendo 3DS)/', $agent)) {
             $browser = new NetFrontNx($agent, []);
         } elseif (preg_match('/(netfront|playstation 4)/i', $agent)) {
@@ -2050,6 +2057,8 @@ class BrowserFactory implements FactoryInterface
             $browser = new ThumbShotsDeBot($agent, []);
         } elseif (preg_match('/python\-requests/', $agent)) {
             $browser = new PythonRequests($agent, []);
+        } elseif (preg_match('/Python\-urllib/', $agent)) {
+            $browser = new PythonUrlLib($agent, []);
         } elseif (preg_match('/Bot\.AraTurka\.com/', $agent)) {
             $browser = new BotAraTurka($agent, []);
         } elseif (preg_match('/http\_requester/', $agent)) {
@@ -2426,7 +2435,7 @@ class BrowserFactory implements FactoryInterface
             $browser = new ShortUrlChecker($agent, []);
         } elseif (preg_match('/webnumbrFetcher/', $agent)) {
             $browser = new WebnumbrFetcher($agent, []);
-        } elseif (preg_match('/(WAP Browser|Spice QT\-75)/', $agent)) {
+        } elseif (preg_match('/(WAP Browser|Spice QT\-75|KKT20\/MIDP)/', $agent)) {
             $browser = new WapBrowser($agent, []);
         } elseif (preg_match('/java/i', $agent)) {
             $browser = new JavaStandardLibrary($agent, []);
