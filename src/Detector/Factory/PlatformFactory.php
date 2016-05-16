@@ -99,7 +99,7 @@ class PlatformFactory implements FactoryInterface
             $platform = new Os\Maemo($agent, []);
         } elseif (preg_match('/(BlackBerry|BB10)/', $agent)) {
             $platform = new Os\RimOs($agent, []);
-        } elseif (preg_match('/(WebOS|hpwOS|webOS)/', $agent)) {
+        } elseif (preg_match('/(webos|hpwos)/i', $agent)) {
             $platform = new Os\WebOs($agent, []);
         } elseif ($utils->checkIfContains('Tizen')) {
             $platform = new Os\Tizen($agent, []);

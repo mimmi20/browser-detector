@@ -63,7 +63,7 @@ class SamsungGts7262 extends AbstractDevice implements DeviceHasSpecificPlatform
         $this->setData(
             [
                 'deviceName'        => 'GT-S7262',
-                'marketingName'     => 'GT-S7262',
+                'marketingName'     => 'Galaxy Star Pro',
                 'version'           => null,
                 'manufacturer'      => (new Company\Samsung())->name,
                 'brand'             => (new Company\Samsung())->brandname,
@@ -115,6 +115,6 @@ class SamsungGts7262 extends AbstractDevice implements DeviceHasSpecificPlatform
      */
     public function detectOs()
     {
-        return new Os\Bada($this->useragent, []);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

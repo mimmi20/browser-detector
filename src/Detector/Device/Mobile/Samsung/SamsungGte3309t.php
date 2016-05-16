@@ -63,7 +63,7 @@ class SamsungGte3309t extends AbstractDevice implements DeviceHasSpecificPlatfor
         $this->setData(
             [
                 'deviceName'        => 'GT-E3309T',
-                'marketingName'     => 'GT-E3309T',
+                'marketingName'     => 'Manhattan',
                 'version'           => null,
                 'manufacturer'      => (new Company\Samsung())->name,
                 'brand'             => (new Company\Samsung())->brandname,
@@ -115,6 +115,6 @@ class SamsungGte3309t extends AbstractDevice implements DeviceHasSpecificPlatfor
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\Java($this->useragent, []);
     }
 }
