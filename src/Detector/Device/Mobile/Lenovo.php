@@ -45,7 +45,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lenovo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
+class Lenovo extends AbstractDevice implements DeviceHasChildrenInterface
 {
     /**
      * the class constructor
@@ -96,15 +96,5 @@ class Lenovo extends AbstractDevice implements DeviceHasChildrenInterface, Devic
         $chain->setDefaultHandler($this);
 
         return $chain->detect();
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

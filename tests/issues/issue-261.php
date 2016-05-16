@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Yandex LLC',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '14.2',
-            'Platform_Name'           => 'Win7',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

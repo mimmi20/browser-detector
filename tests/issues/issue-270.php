@@ -40,7 +40,7 @@ return [
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.01',
-            'Platform_Name'           => 'WinNT',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

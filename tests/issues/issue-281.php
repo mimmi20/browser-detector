@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'WhiteHat Security',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '33.0',
-            'Platform_Name'           => 'WinVista',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '6.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

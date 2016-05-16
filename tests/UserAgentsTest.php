@@ -140,6 +140,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             'Expected actual "Browser" to be "' . $expectedPlatformName . '" (was "' . $foundPlatformName . '")'
         );
 
+        /*
         $expectedBrowserName = $expectedProperties['Browser_Name'];
         $foundBrowserName    = $result->getBrowser()->getName();
 

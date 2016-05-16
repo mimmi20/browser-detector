@@ -56,7 +56,7 @@ class Brew extends AbstractOs
 
         $this->setData(
             [
-                'name'         => 'BREW',
+                'name'         => 'Brew',
                 'version'      => $this->detectVersion(),
                 'manufacturer' => (new Company\Unknown())->name,
                 'bits'         => null,

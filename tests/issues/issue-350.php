@@ -160,7 +160,7 @@ return [
             'Browser_Maker'           => 'proxy-base.org',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.1',
-            'Platform_Name'           => 'Win7',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

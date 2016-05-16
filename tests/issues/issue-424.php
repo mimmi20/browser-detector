@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '11.3',
-            'Platform_Name'           => 'Win32',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

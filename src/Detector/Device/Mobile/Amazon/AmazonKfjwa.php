@@ -115,6 +115,6 @@ class AmazonKfjwa extends AbstractDevice implements DeviceHasSpecificPlatformInt
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent, []);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

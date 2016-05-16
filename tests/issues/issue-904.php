@@ -70,7 +70,7 @@ return [
             'Browser_Maker'           => 'Compuware Corporation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.0',
-            'Platform_Name'           => 'WinNT',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'UCWeb Inc.',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '5.6',
-            'Platform_Name'           => 'Win7',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

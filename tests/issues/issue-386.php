@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'kinza.jp',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '1.2',
-            'Platform_Name'           => 'Win8.1',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '6.3',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

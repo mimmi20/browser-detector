@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmartTv extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SamsungSmartTv extends AbstractDevice
 {
     /**
      * the class constructor

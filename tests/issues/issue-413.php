@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Qihoo 360 Technology Co. Ltd.',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
-            'Platform_Name'           => 'Win7',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '6.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

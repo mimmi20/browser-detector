@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.1',
-            'Platform_Name'           => 'JAVA',
+            'Platform_Name'           => 'Java',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Oracle',

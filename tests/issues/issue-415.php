@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'DomainTools',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.3',
-            'Platform_Name'           => 'WinXP',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '5.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

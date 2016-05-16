@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Maxthon International Limited',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.0',
-            'Platform_Name'           => 'Win98',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '98',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
