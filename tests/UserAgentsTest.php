@@ -93,15 +93,20 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             foreach ($tests as $key => $test) {
                 if (isset($data[$key])) {
                     // Test data is duplicated for key
-                    throw new \RuntimeException('Test data is duplicated for key "' . $key . '"');
+                    //throw new \RuntimeException('Test data is duplicated for key "' . $key . '"');
+                    echo 'Test data is duplicated for key "' . $key . '"', PHP_EOL;
+                    continue;
                 }
 
                 if (isset($checks[$test['ua']])) {
                     // UA was added more than once
-                    throw new \RuntimeException(
-                        'UA "' . $test['ua'] . '" added more than once, now for key "' . $key . '", before for key "'
-                        . $checks[$test['ua']] . '"'
-                    );
+                    //throw new \RuntimeException(
+                    //    'UA "' . $test['ua'] . '" added more than once, now for key "' . $key . '", before for key "'
+                    //    . $checks[$test['ua']] . '"'
+                    //);
+                    echo 'UA "' . $test['ua'] . '" added more than once, now for key "' . $key . '", before for key "'
+                        . $checks[$test['ua']] . '"', PHP_EOL;
+                    continue;
                 }
 
                 $data[$key]          = $test;
