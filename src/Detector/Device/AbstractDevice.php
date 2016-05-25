@@ -266,7 +266,7 @@ abstract class AbstractDevice implements DeviceInterface
     }
 
     /**
-     * @return null|\UaDeviceType\TypeInterface
+     * @return \UaBrowserType\TypeInterface|null
      */
     public function getType()
     {
