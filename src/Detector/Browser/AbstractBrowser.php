@@ -67,7 +67,7 @@ abstract class AbstractBrowser implements BrowserInterface
     protected $version = null;
 
     /**
-     * @var \UaResult\Company\CompanyInterface|null
+     * @var string|null
      */
     protected $manufacturer = null;
 
@@ -158,7 +158,7 @@ abstract class AbstractBrowser implements BrowserInterface
     }
 
     /**
-     * @return null|\UaResult\Company\CompanyInterface
+     * @return string|null
      */
     public function getManufacturer()
     {
@@ -166,7 +166,7 @@ abstract class AbstractBrowser implements BrowserInterface
     }
 
     /**
-     * @return null|string
+     * @return string|null
      */
     public function getModus()
     {
@@ -222,7 +222,7 @@ abstract class AbstractBrowser implements BrowserInterface
     }
 
     /**
-     * @return null|\BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\Version|null
      */
     public function getVersion()
     {
@@ -238,7 +238,7 @@ abstract class AbstractBrowser implements BrowserInterface
     }
 
     /**
-     * @return null|\UaBrowserType\TypeInterface
+     * @return \UaBrowserType\TypeInterface|null
      */
     public function getType()
     {

@@ -70,6 +70,8 @@ class Windows
             'Linux',
             'Macintosh',
             'Mobi',
+            'MSIE or Firefox mutant',
+            'not on Windows server',
         ];
 
         if ($this->utils->checkIfContains($isNotReallyAWindows)) {

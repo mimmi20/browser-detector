@@ -60,7 +60,7 @@ abstract class AbstractEngine implements EngineInterface
     protected $version = null;
 
     /**
-     * @var \UaResult\Company\CompanyInterface|null
+     * @var string|null
      */
     protected $manufacturer = null;
 
@@ -80,7 +80,7 @@ abstract class AbstractEngine implements EngineInterface
     }
 
     /**
-     * @return null|\UaResult\Company\CompanyInterface
+     * @return string|null
      */
     public function getManufacturer()
     {
@@ -88,7 +88,7 @@ abstract class AbstractEngine implements EngineInterface
     }
 
     /**
-     * @return null|string
+     * @return string|null
      */
     public function getName()
     {
@@ -96,7 +96,7 @@ abstract class AbstractEngine implements EngineInterface
     }
 
     /**
-     * @return null|\BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\Version|null
      */
     public function getVersion()
     {
@@ -169,7 +169,9 @@ abstract class AbstractEngine implements EngineInterface
      */
     protected function setData(array $data)
     {
-        $this->name = $data['name'];
+        if (!empty($data['name'])) {
+            $this->name = $data['name'];
+        }
 
         if (!empty($data['version']) && $data['version'] instanceof Version) {
             $this->version = $data['version'];

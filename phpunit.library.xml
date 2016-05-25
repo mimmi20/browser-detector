@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="tests/bootstrap.php">
+  <testsuites>
+    <testsuite name="BrowserDetector Test Suite">
+      <directory>tests/Detector/</directory>
+      <directory>tests/Helper/</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <whitelist>
+      <directory suffix=".php">src/</directory>
+    </whitelist>
+  </filter>
+</phpunit>

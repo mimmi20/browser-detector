@@ -63,7 +63,7 @@ class SamsungGts3802 extends AbstractDevice implements DeviceHasSpecificPlatform
         $this->setData(
             [
                 'deviceName'        => 'GT-S3802',
-                'marketingName'     => 'GT-S3802',
+                'marketingName'     => 'Rex 70',
                 'version'           => null,
                 'manufacturer'      => (new Company\Samsung())->name,
                 'brand'             => (new Company\Samsung())->brandname,
@@ -111,10 +111,10 @@ class SamsungGts3802 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\Java($this->useragent, []);
     }
 }

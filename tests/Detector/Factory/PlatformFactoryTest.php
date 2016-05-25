@@ -3,7 +3,6 @@
 namespace BrowserDetectorTest\Detector\Factory;
 
 use BrowserDetector\Detector\Factory\PlatformFactory;
-use BrowserDetector\Version\Version;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
@@ -26,7 +25,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
         self::assertSame($platform, $result->getName());
 
         self::assertInstanceOf('\BrowserDetector\Version\Version', $result->getVersion());
-        self::assertSame($version, $result->getVersion()->getVersion(Version::MAJORMINOR));
+        self::assertSame($version, $result->getVersion()->getVersion());
 
         //self::assertInstanceOf('\UaResult\Company\CompanyInterface', $result->getManufacturer());
     }
@@ -95,7 +94,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'SonyEricssonS312/R1EA Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1',
                 'Java',
-                'unknown',
+                '0.0',
             ],
             [
                 'Huawei/1.0/HUAWEI-G7300 Browser/Opera MMS/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; it-IT) Presto/2.5.28 Version/10.10',
@@ -105,10 +104,30 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'SAMSUNG-GT-E3309T Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.34189/34.1016; U; en) Presto/2.8.119 Version/11.10',
                 'Java',
-                'unknown',
+                '0.0',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; AX5_Duo) U2/1.0.0 UCBrowser/8.8.1.359 Mobile',
+                'Android',
+                'unknown',
+            ],
+            [
+                'MicromaxX650 ASTRO36_TD/v3 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10',
+                'Java',
+                '0.0',
+            ],
+            [
+                'Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31762/34.1000; U; en) Presto/2.8.119 Version/11.10',
+                'Android',
+                'unknown',
+            ],
+            [
+                'SAMSUNG-GT-B7722/DDKD1 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1',
+                'Java',
+                '0.0',
+            ],
+            [
+                'Opera/9.80 (SpreadTrum; Opera Mini/4.4.31492/34.1000; U; en) Presto/2.8.119 Version/11.10',
                 'Android',
                 'unknown',
             ],

@@ -113,7 +113,9 @@ class PlatformFactory implements FactoryInterface
             && false === stripos($agent, 'technipad')
         ) {
             $platform = new Os\Ios($agent, []);
-        } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread)/i', $agent)) {
+        } elseif (preg_match('/(micromaxx650|dolfin\/)/i', $agent)) {
+            $platform = new Os\Java($agent, []);
+        } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 (linux; u; opera mini|maui|spreadtrum)/i', $agent)) {
             $platform = new Os\AndroidOs($agent, []);
         } elseif (preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches) && $matches[1] >= 4) {
             $platform = new Os\AndroidOs($agent, []);
@@ -197,7 +199,7 @@ class PlatformFactory implements FactoryInterface
             $platform = new Os\Os2($agent, []);
         } elseif ($utils->checkIfContains(['NETTV', 'HbbTV', 'SMART-TV'])) {
             $platform = new Os\LinuxTv($agent, []);
-        } elseif ($utils->checkIfContains(['Linux', 'linux', 'X11'])) {
+        } elseif ($utils->checkIfContains(['Linux', 'linux', 'X11', 'Dillo'])) {
             $platform = new Os\Linux($agent, []);
         } elseif ($utils->checkIfContains('CP/M')) {
             $platform = new Os\Cpm($agent, []);
@@ -213,7 +215,7 @@ class PlatformFactory implements FactoryInterface
             $platform = new Os\WyderOs($agent, []);
         } elseif ($utils->checkIfContains('Liberate')) {
             $platform = new Os\Liberate($agent, []);
-        } elseif (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP)/', $agent)) {
+        } elseif (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/)/', $agent)) {
             $platform = new Os\Java($agent, []);
         } else {
             $platform = new Os\UnknownOs($agent, []);

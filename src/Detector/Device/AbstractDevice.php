@@ -71,7 +71,7 @@ abstract class AbstractDevice implements DeviceInterface
     protected $version = null;
 
     /**
-     * @var \UaResult\Company\CompanyInterface|null
+     * @var string|null
      */
     protected $manufacturer = null;
 
@@ -146,7 +146,7 @@ abstract class AbstractDevice implements DeviceInterface
     }
 
     /**
-     * @return null|string
+     * @return string|null
      */
     public function getDeviceName()
     {
@@ -154,7 +154,7 @@ abstract class AbstractDevice implements DeviceInterface
     }
 
     /**
-     * @return null|string
+     * @return string|null
      */
     public function getBrand()
     {
@@ -178,7 +178,7 @@ abstract class AbstractDevice implements DeviceInterface
     }
 
     /**
-     * @return null|string
+     * @return string|null
      */
     public function getFormFactor()
     {
@@ -194,7 +194,7 @@ abstract class AbstractDevice implements DeviceInterface
     }
 
     /**
-     * @return null|\UaResult\Company\CompanyInterface
+     * @return string|null
      */
     public function getManufacturer()
     {
@@ -202,7 +202,7 @@ abstract class AbstractDevice implements DeviceInterface
     }
 
     /**
-     * @return null|string
+     * @return string|null
      */
     public function getMarketingName()
     {
@@ -218,7 +218,7 @@ abstract class AbstractDevice implements DeviceInterface
     }
 
     /**
-     * @return null|string
+     * @return string|null
      */
     public function getPointingMethod()
     {
@@ -258,7 +258,7 @@ abstract class AbstractDevice implements DeviceInterface
     }
 
     /**
-     * @return null|\BrowserDetector\Version\Version
+     * @return \BrowserDetector\Version\Version|null
      */
     public function getVersion()
     {
