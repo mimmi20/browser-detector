@@ -104,7 +104,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'SAMSUNG-GT-E3309T Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.34189/34.1016; U; en) Presto/2.8.119 Version/11.10',
                 'Java',
-                '0.0',
+                '0.0.0',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; AX5_Duo) U2/1.0.0 UCBrowser/8.8.1.359 Mobile',
@@ -129,7 +129,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Opera/9.80 (SpreadTrum; Opera Mini/4.4.31492/34.1000; U; en) Presto/2.8.119 Version/11.10',
                 'Android',
-                'unknown',
+                '0.0.0',
             ],
         ];
     }
