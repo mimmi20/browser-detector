@@ -134,7 +134,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Wget/1.17.1 (cygwin)',
                 'Cygwin',
-                'unknown',
+                '0.0.0',
             ],
         ];
     }
