@@ -131,6 +131,11 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Android',
                 'unknown',
             ],
+            [
+                'Wget/1.17.1 (cygwin)',
+                'Cygwin',
+                'unknown',
+            ],
         ];
     }
 }

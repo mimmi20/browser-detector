@@ -166,7 +166,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($utils->checkIfContains('BREW')) {
             $platform = new Os\Brew($agent, []);
         } elseif ($utils->checkIfContains('cygwin', true)) {
-            $platform = new Os\CygWin($agent, []);
+            $platform = new Os\Cygwin($agent, []);
         } elseif ($utils->checkIfContains('freebsd', true)) {
             $platform = new Os\FreeBsd($agent, []);
         } elseif ($utils->checkIfContains('NetBSD')) {
