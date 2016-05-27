@@ -2,7 +2,7 @@
 
 return [
     'browscap-issue-993-0' => [
-        'ua' => 'okhttp/2.7.5',
+        'ua'         => 'okhttp/2.7.5',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -29,7 +29,7 @@ return [
         ],
     ],
     'browscap-issue-993-1' => [
-        'ua' => 'Stitcher/iOS',
+        'ua'         => 'Stitcher/iOS',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -56,7 +56,7 @@ return [
         ],
     ],
     'browscap-issue-993-2' => [
-        'ua' => 'Stitcher/Android',
+        'ua'         => 'Stitcher/Android',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -83,7 +83,7 @@ return [
         ],
     ],
     'browscap-issue-993-3' => [
-        'ua' => 'Mozilla/5.0 (Linux; U; en-us; BeyondPod 4)',
+        'ua'         => 'Mozilla/5.0 (Linux; U; en-us; BeyondPod 4)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -110,7 +110,7 @@ return [
         ],
     ],
     'browscap-issue-993-4' => [
-        'ua' => 'NSPlayer/10.0.0.3702 WMFSDK/10.0',
+        'ua'         => 'NSPlayer/10.0.0.3702 WMFSDK/10.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -137,7 +137,7 @@ return [
         ],
     ],
     'browscap-issue-993-5' => [
-        'ua' => 'NSPlayer/12.00.10011.16384 WMFSDK/12.00.10011.16384',
+        'ua'         => 'NSPlayer/12.00.10011.16384 WMFSDK/12.00.10011.16384',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -164,7 +164,7 @@ return [
         ],
     ],
     'browscap-issue-993-6' => [
-        'ua' => 'Pocket Casts',
+        'ua'         => 'Pocket Casts',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -191,7 +191,7 @@ return [
         ],
     ],
     'browscap-issue-993-7' => [
-        'ua' => 'Shifty Jelly Pocket Casts, Android v4.3.5',
+        'ua'         => 'Shifty Jelly Pocket Casts, Android v4.3.5',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -218,7 +218,7 @@ return [
         ],
     ],
     'browscap-issue-993-8' => [
-        'ua' => 'Player/LG Player 1.0 for Android 4.4.2 (stagefright alternative), Pocket Casts',
+        'ua'         => 'Player/LG Player 1.0 for Android 4.4.2 (stagefright alternative), Pocket Casts',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -245,7 +245,7 @@ return [
         ],
     ],
     'browscap-issue-993-9' => [
-        'ua' => 'PocketTunes/5.5.8',
+        'ua'         => 'PocketTunes/5.5.8',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -272,7 +272,7 @@ return [
         ],
     ],
     'browscap-issue-993-10' => [
-        'ua' => 'Overcast/2.0 (+http://overcast.fm/; iOS podcast app)',
+        'ua'         => 'Overcast/2.0 (+http://overcast.fm/; iOS podcast app)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -299,7 +299,7 @@ return [
         ],
     ],
     'browscap-issue-993-11' => [
-        'ua' => 'Overcast/1.0 Podcast Sync (+http://overcast.fm/)',
+        'ua'         => 'Overcast/1.0 Podcast Sync (+http://overcast.fm/)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -326,7 +326,7 @@ return [
         ],
     ],
     'browscap-issue-993-12' => [
-        'ua' => 'Player FM',
+        'ua'         => 'Player FM',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -353,7 +353,7 @@ return [
         ],
     ],
     'browscap-issue-993-13' => [
-        'ua' => 'Player/LG Player 1.0 for Android 4.4.2 (stagefright alternative), Player FM',
+        'ua'         => 'Player/LG Player 1.0 for Android 4.4.2 (stagefright alternative), Player FM',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -380,7 +380,7 @@ return [
         ],
     ],
     'browscap-issue-993-14' => [
-        'ua' => 'AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn), Player FM',
+        'ua'         => 'AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn), Player FM',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -407,7 +407,7 @@ return [
         ],
     ],
     'browscap-issue-993-15' => [
-        'ua' => 'Player FM BMID/E6804C1C77',
+        'ua'         => 'Player FM BMID/E6804C1C77',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -434,7 +434,7 @@ return [
         ],
     ],
     'browscap-issue-993-16' => [
-        'ua' => 'ExoPlayerDemo/4.11 (Linux;Android 5.1.1) ExoPlayerLib/1.5.2',
+        'ua'         => 'ExoPlayerDemo/4.11 (Linux;Android 5.1.1) ExoPlayerLib/1.5.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -461,7 +461,7 @@ return [
         ],
     ],
     'browscap-issue-993-17' => [
-        'ua' => 'Radio/1.0 (Linux;Android 6.0.1) ExoPlayerLib/1.5.2',
+        'ua'         => 'Radio/1.0 (Linux;Android 6.0.1) ExoPlayerLib/1.5.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -488,7 +488,7 @@ return [
         ],
     ],
     'browscap-issue-993-18' => [
-        'ua' => 'AlexaMediaPlayer/5.3.1-21 (Linux;Android 5.1) ExoPlayerLib/1.3.3',
+        'ua'         => 'AlexaMediaPlayer/5.3.1-21 (Linux;Android 5.1) ExoPlayerLib/1.3.3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -515,7 +515,7 @@ return [
         ],
     ],
     'browscap-issue-993-19' => [
-        'ua' => 'Podkicker/2.2.4',
+        'ua'         => 'Podkicker/2.2.4',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -542,7 +542,7 @@ return [
         ],
     ],
     'browscap-issue-993-20' => [
-        'ua' => 'Podkicker Pro/2.2.2',
+        'ua'         => 'Podkicker Pro/2.2.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -569,7 +569,7 @@ return [
         ],
     ],
     'browscap-issue-993-21' => [
-        'ua' => 'Podkicker Classic/1.2.9',
+        'ua'         => 'Podkicker Classic/1.2.9',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -596,7 +596,7 @@ return [
         ],
     ],
     'browscap-issue-993-22' => [
-        'ua' => 'Downcast/2.9.13 (iPhone; iOS 9.2.1; Scale/2.00)',
+        'ua'         => 'Downcast/2.9.13 (iPhone; iOS 9.2.1; Scale/2.00)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -623,7 +623,7 @@ return [
         ],
     ],
     'browscap-issue-993-23' => [
-        'ua' => 'iTunes/10.7 Downcast/5608',
+        'ua'         => 'iTunes/10.7 Downcast/5608',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -650,7 +650,7 @@ return [
         ],
     ],
     'browscap-issue-993-24' => [
-        'ua' => 'Downcast/2.9.10 (Mac OS X Version 10.11.3 (Build 15D21))',
+        'ua'         => 'Downcast/2.9.10 (Mac OS X Version 10.11.3 (Build 15D21))',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -677,7 +677,7 @@ return [
         ],
     ],
     'browscap-issue-993-25' => [
-        'ua' => 'iTunes/10.7 Downcast/2.8.14.1002',
+        'ua'         => 'iTunes/10.7 Downcast/2.8.14.1002',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -704,7 +704,7 @@ return [
         ],
     ],
     'browscap-issue-993-26' => [
-        'ua' => 'ESPN%20Radio/3.2.113 CFNetwork/485.12.30 Darwin/10.4.0',
+        'ua'         => 'ESPN%20Radio/3.2.113 CFNetwork/485.12.30 Darwin/10.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -731,7 +731,7 @@ return [
         ],
     ],
     'browscap-issue-993-27' => [
-        'ua' => 'Stitcher/28420 CFNetwork/548.1.4 Darwin/11.0.0',
+        'ua'         => 'Stitcher/28420 CFNetwork/548.1.4 Darwin/11.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -758,7 +758,7 @@ return [
         ],
     ],
     'browscap-issue-993-28' => [
-        'ua' => 'Stitcher/3.310746 CFNetwork/459 Darwin/10.0.0d3',
+        'ua'         => 'Stitcher/3.310746 CFNetwork/459 Darwin/10.0.0d3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -785,7 +785,7 @@ return [
         ],
     ],
     'browscap-issue-993-29' => [
-        'ua' => 'Mark%20Levin%20Show/11 CFNetwork/758.3.15 Darwin/15.4.0',
+        'ua'         => 'Mark%20Levin%20Show/11 CFNetwork/758.3.15 Darwin/15.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -812,7 +812,7 @@ return [
         ],
     ],
     'browscap-issue-993-30' => [
-        'ua' => 'The%20Dan%20Patrick%20Show/11 CFNetwork/758.2.8 Darwin/15.0.0',
+        'ua'         => 'The%20Dan%20Patrick%20Show/11 CFNetwork/758.2.8 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -839,7 +839,7 @@ return [
         ],
     ],
     'browscap-issue-993-31' => [
-        'ua' => '77%20WABC/11 CFNetwork/758.3.15 Darwin/15.4.0',
+        'ua'         => '77%20WABC/11 CFNetwork/758.3.15 Darwin/15.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -866,7 +866,7 @@ return [
         ],
     ],
     'browscap-issue-993-32' => [
-        'ua' => 'KNBR%20680/11 CFNetwork/758.3.15 Darwin/15.4.0',
+        'ua'         => 'KNBR%20680/11 CFNetwork/758.3.15 Darwin/15.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -893,7 +893,7 @@ return [
         ],
     ],
     'browscap-issue-993-33' => [
-        'ua' => 'PodcastOne/3.0.6 CFNetwork/758.3.15 Darwin/15.4.0',
+        'ua'         => 'PodcastOne/3.0.6 CFNetwork/758.3.15 Darwin/15.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -920,7 +920,7 @@ return [
         ],
     ],
     'browscap-issue-993-34' => [
-        'ua' => 'PodcastOne/2.0 CFNetwork/758.2.8 Darwin/15.0.0',
+        'ua'         => 'PodcastOne/2.0 CFNetwork/758.2.8 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -947,7 +947,7 @@ return [
         ],
     ],
     'browscap-issue-993-35' => [
-        'ua' => 'AudioBoom/226 CFNetwork/758.3.15 Darwin/15.4.0',
+        'ua'         => 'AudioBoom/226 CFNetwork/758.3.15 Darwin/15.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -974,7 +974,7 @@ return [
         ],
     ],
     'browscap-issue-993-36' => [
-        'ua' => 'https://audioboom.com/boos/',
+        'ua'         => 'https://audioboom.com/boos/',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1001,7 +1001,7 @@ return [
         ],
     ],
     'browscap-issue-993-37' => [
-        'ua' => 'Sports%20Talk%201050/10 CFNetwork/758.3.15 Darwin/15.4.0',
+        'ua'         => 'Sports%20Talk%201050/10 CFNetwork/758.3.15 Darwin/15.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1028,7 +1028,7 @@ return [
         ],
     ],
     'browscap-issue-993-38' => [
-        'ua' => 'PodCruncher/3.2 CFNetwork/758.2.8 Darwin/15.0.0',
+        'ua'         => 'PodCruncher/3.2 CFNetwork/758.2.8 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1055,7 +1055,7 @@ return [
         ],
     ],
     'browscap-issue-993-39' => [
-        'ua' => 'iTunes/10.5.2 (PodCruncher 2.2)',
+        'ua'         => 'iTunes/10.5.2 (PodCruncher 2.2)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1082,7 +1082,7 @@ return [
         ],
     ],
     'browscap-issue-993-40' => [
-        'ua' => 'Zune/4.8',
+        'ua'         => 'Zune/4.8',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1109,7 +1109,7 @@ return [
         ],
     ],
     'browscap-issue-993-41' => [
-        'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; Zune 4.7)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; Zune 4.7)',
         'properties' => [
             'Browser_Name'            => 'IE',
             'Browser_Type'            => 'Browser',
@@ -1136,7 +1136,7 @@ return [
         ],
     ],
     'browscap-issue-993-42' => [
-        'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; OverDrive Download Station 1.0; Zune 4.7; .NET4.0C)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; OverDrive Download Station 1.0; Zune 4.7; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'IE',
             'Browser_Type'            => 'Browser',
@@ -1162,35 +1162,8 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-993-43' => [
-        'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Zune 4.0; InfoPath.3; MS-RTC LM 8; .NET4.0C; .NET4.0E)',
-        'properties' => [
-            'Browser_Name'            => 'IE',
-            'Browser_Type'            => 'Browser',
-            'Browser_Bits'            => 32,
-            'Browser_Maker'           => 'Microsoft Corporation',
-            'Browser_Modus'           => 'unknown',
-            'Browser_Version'         => '9.0',
-            'Platform_Name'           => 'Windows',
-            'Platform_Version'        => '7',
-            'Platform_Bits'           => 64,
-            'Platform_Maker'          => 'Microsoft Corporation',
-            'isMobileDevice'          => false,
-            'isTablet'                => false,
-            'Crawler'                 => false,
-            'Device_Name'             => 'Windows Desktop',
-            'Device_Maker'            => 'Various',
-            'Device_Type'             => 'Desktop',
-            'Device_Pointing_Method'  => 'mouse',
-            'Device_Code_Name'        => 'Windows Desktop',
-            'Device_Brand_Name'       => 'unknown',
-            'RenderingEngine_Name'    => 'Trident',
-            'RenderingEngine_Version' => 'unknown',
-            'RenderingEngine_Maker'   => 'Microsoft Corporation',
-        ],
-    ],
     'browscap-issue-993-44' => [
-        'ua' => 'RSSRadio/8899 (iPhone,iPhone OS,9.3)',
+        'ua'         => 'RSSRadio/8899 (iPhone,iPhone OS,9.3)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1217,7 +1190,7 @@ return [
         ],
     ],
     'browscap-issue-993-45' => [
-        'ua' => 'RSSRadio (Push Notification Scanner;support@dorada.co.uk)',
+        'ua'         => 'RSSRadio (Push Notification Scanner;support@dorada.co.uk)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1244,7 +1217,7 @@ return [
         ],
     ],
     'browscap-issue-993-46' => [
-        'ua' => 'RSS_Radio 1.5',
+        'ua'         => 'RSS_Radio 1.5',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1271,7 +1244,7 @@ return [
         ],
     ],
     'browscap-issue-993-47' => [
-        'ua' => 'RSSRadio/2.68.14049 CFNetwork/672.1.15 Darwin/14.0.0',
+        'ua'         => 'RSSRadio/2.68.14049 CFNetwork/672.1.15 Darwin/14.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1298,7 +1271,7 @@ return [
         ],
     ],
     'browscap-issue-993-48' => [
-        'ua' => 'Lavf/56.15.102',
+        'ua'         => 'Lavf/56.15.102',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1325,7 +1298,7 @@ return [
         ],
     ],
     'browscap-issue-993-49' => [
-        'ua' => 'Lavf52.64.2',
+        'ua'         => 'Lavf52.64.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1352,7 +1325,7 @@ return [
         ],
     ],
     'browscap-issue-993-50' => [
-        'ua' => 'Lavf53.32.100/WinampMPEG/2.8',
+        'ua'         => 'Lavf53.32.100/WinampMPEG/2.8',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1379,7 +1352,7 @@ return [
         ],
     ],
     'browscap-issue-993-51' => [
-        'ua' => 'Lavf52.104.0 WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203',
+        'ua'         => 'Lavf52.104.0 WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1406,7 +1379,7 @@ return [
         ],
     ],
     'browscap-issue-993-52' => [
-        'ua' => 'WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203',
+        'ua'         => 'WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1433,7 +1406,7 @@ return [
         ],
     ],
     'browscap-issue-993-53' => [
-        'ua' => 'AntennaPod/1.5.2.0',
+        'ua'         => 'AntennaPod/1.5.2.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1460,7 +1433,7 @@ return [
         ],
     ],
     'browscap-issue-993-54' => [
-        'ua' => 'Antenna/965 CFNetwork/758.2.8 Darwin/15.0.0',
+        'ua'         => 'Antenna/965 CFNetwork/758.2.8 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1487,7 +1460,7 @@ return [
         ],
     ],
     'browscap-issue-993-55' => [
-        'ua' => 'AntennaPod/1.2.1',
+        'ua'         => 'AntennaPod/1.2.1',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1514,7 +1487,7 @@ return [
         ],
     ],
     'browscap-issue-993-56' => [
-        'ua' => 'HTC Streaming Player htc / 1.0 / cingular_us / 5.0.2',
+        'ua'         => 'HTC Streaming Player htc / 1.0 / cingular_us / 5.0.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1541,7 +1514,7 @@ return [
         ],
     ],
     'browscap-issue-993-57' => [
-        'ua' => 'HTC Streaming Player utstarcom_wwe-generic / 1.0 / htc_kingdom / 2.3.4',
+        'ua'         => 'HTC Streaming Player utstarcom_wwe-generic / 1.0 / htc_kingdom / 2.3.4',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1568,7 +1541,7 @@ return [
         ],
     ],
     'browscap-issue-993-58' => [
-        'ua' => 'HTC Streaming Player telus_wwe / 1.0 / htc_ruby / 4.0.3',
+        'ua'         => 'HTC Streaming Player telus_wwe / 1.0 / htc_ruby / 4.0.3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1595,7 +1568,7 @@ return [
         ],
     ],
     'browscap-issue-993-59' => [
-        'ua' => 'HTC Streaming Player htc / 1.0 / himauhl_htc_asia_tw / 6.0',
+        'ua'         => 'HTC Streaming Player htc / 1.0 / himauhl_htc_asia_tw / 6.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1622,7 +1595,7 @@ return [
         ],
     ],
     'browscap-issue-993-60' => [
-        'ua' => 'ZDM/4.0; Windows Mobile 8.1',
+        'ua'         => 'ZDM/4.0; Windows Mobile 8.1',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1649,7 +1622,7 @@ return [
         ],
     ],
     'browscap-issue-993-61' => [
-        'ua' => 'bPod',
+        'ua'         => 'bPod',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1676,7 +1649,7 @@ return [
         ],
     ],
     'browscap-issue-993-62' => [
-        'ua' => 'bPod BMID/E679FACD4C',
+        'ua'         => 'bPod BMID/E679FACD4C',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1703,7 +1676,7 @@ return [
         ],
     ],
     'browscap-issue-993-63' => [
-        'ua' => 'PodcastAddict/v2 - Dalvik/2.1.0 (Linux; U; Android 6.0; LG-H811 Build/MRA58K)',
+        'ua'         => 'PodcastAddict/v2 - Dalvik/2.1.0 (Linux; U; Android 6.0; LG-H811 Build/MRA58K)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1730,7 +1703,7 @@ return [
         ],
     ],
     'browscap-issue-993-64' => [
-        'ua' => 'Podcast Addict - Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-G920P Build/LMY47X)',
+        'ua'         => 'Podcast Addict - Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-G920P Build/LMY47X)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1757,7 +1730,7 @@ return [
         ],
     ],
     'browscap-issue-993-65' => [
-        'ua' => 'LG-H345/V10f Player/LG Player 1.0 for Android 5.1.1 (stagefright alternative)',
+        'ua'         => 'LG-H345/V10f Player/LG Player 1.0 for Android 5.1.1 (stagefright alternative)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1784,7 +1757,7 @@ return [
         ],
     ],
     'browscap-issue-993-66' => [
-        'ua' => 'Player/LG Player 1.0 for Android 6.0 (stagefright alternative)',
+        'ua'         => 'Player/LG Player 1.0 for Android 6.0 (stagefright alternative)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1811,7 +1784,7 @@ return [
         ],
     ],
     'browscap-issue-993-67' => [
-        'ua' => 'EspnDownloadManager',
+        'ua'         => 'EspnDownloadManager',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1838,7 +1811,7 @@ return [
         ],
     ],
     'browscap-issue-993-68' => [
-        'ua' => 'ESPN Radio 4.7.4 rv:1032 (iPhone; iPhone OS 9.2.1; en_US)',
+        'ua'         => 'ESPN Radio 4.7.4 rv:1032 (iPhone; iPhone OS 9.2.1; en_US)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1865,7 +1838,7 @@ return [
         ],
     ],
     'browscap-issue-993-69' => [
-        'ua' => 'ESPN Radio 4.5.1 (iPhone; iPhone OS 5.1.1; en_US)',
+        'ua'         => 'ESPN Radio 4.5.1 (iPhone; iPhone OS 5.1.1; en_US)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1892,7 +1865,7 @@ return [
         ],
     ],
     'browscap-issue-993-70' => [
-        'ua' => 'ESPN Radio 4.0 (iPhone; iPhone OS 7.1.2; en_AU)',
+        'ua'         => 'ESPN Radio 4.0 (iPhone; iPhone OS 7.1.2; en_AU)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1919,7 +1892,7 @@ return [
         ],
     ],
     'browscap-issue-993-71' => [
-        'ua' => 'http://c.espnradio.com/s:',
+        'ua'         => 'http://c.espnradio.com/s:',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1946,7 +1919,7 @@ return [
         ],
     ],
     'browscap-issue-993-72' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; HP Slate 17 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36ESPN APP',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; HP Slate 17 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36ESPN APP',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',
@@ -1973,7 +1946,7 @@ return [
         ],
     ],
     'browscap-issue-993-73' => [
-        'ua' => 'Mozilla/5.0 (compatible; heritrix/3.2.0 +http://espn.go.com',
+        'ua'         => 'Mozilla/5.0 (compatible; heritrix/3.2.0 +http://espn.go.com',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2000,7 +1973,7 @@ return [
         ],
     ],
     'browscap-issue-993-74' => [
-        'ua' => 'Custom-Feed Reader',
+        'ua'         => 'Custom-Feed Reader',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2027,7 +2000,7 @@ return [
         ],
     ],
     'browscap-issue-993-75' => [
-        'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) amarok/2.8.0 Safari/534.34',
+        'ua'         => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) amarok/2.8.0 Safari/534.34',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2054,7 +2027,7 @@ return [
         ],
     ],
     'browscap-issue-993-76' => [
-        'ua' => 'amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1',
+        'ua'         => 'amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2081,7 +2054,7 @@ return [
         ],
     ],
     'browscap-issue-993-77' => [
-        'ua' => 'Banshee/2.6.2 (http://banshee-project.org/)',
+        'ua'         => 'Banshee/2.6.2 (http://banshee-project.org/)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2108,7 +2081,7 @@ return [
         ],
     ],
     'browscap-issue-993-78' => [
-        'ua' => 'gPodder/3.7.0 (+http://gpodder.org/)',
+        'ua'         => 'gPodder/3.7.0 (+http://gpodder.org/)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2135,7 +2108,7 @@ return [
         ],
     ],
     'browscap-issue-993-79' => [
-        'ua' => 'jPodder v 1.1 RC3',
+        'ua'         => 'jPodder v 1.1 RC3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2162,7 +2135,7 @@ return [
         ],
     ],
     'browscap-issue-993-80' => [
-        'ua' => 'iPodder/2.1 +http://ipodder.sf.net/',
+        'ua'         => 'iPodder/2.1 +http://ipodder.sf.net/',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2189,7 +2162,7 @@ return [
         ],
     ],
     'browscap-issue-993-81' => [
-        'ua' => 'massyn.net philpodder/1.6 (linux)',
+        'ua'         => 'massyn.net philpodder/1.6 (linux)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2216,7 +2189,7 @@ return [
         ],
     ],
     'browscap-issue-993-82' => [
-        'ua' => 'BashPodder',
+        'ua'         => 'BashPodder',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2243,7 +2216,7 @@ return [
         ],
     ],
     'browscap-issue-993-83' => [
-        'ua' => 'Clementine-qt5 1.2.3',
+        'ua'         => 'Clementine-qt5 1.2.3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2270,7 +2243,7 @@ return [
         ],
     ],
     'browscap-issue-993-84' => [
-        'ua' => 'Clementine 1.2.3-1457-g4db358a',
+        'ua'         => 'Clementine 1.2.3-1457-g4db358a',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2297,7 +2270,7 @@ return [
         ],
     ],
     'browscap-issue-993-85' => [
-        'ua' => 'Clementine 1.2.3',
+        'ua'         => 'Clementine 1.2.3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2324,7 +2297,7 @@ return [
         ],
     ],
     'browscap-issue-993-86' => [
-        'ua' => 'Clementine 1.2',
+        'ua'         => 'Clementine 1.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2351,7 +2324,7 @@ return [
         ],
     ],
     'browscap-issue-993-87' => [
-        'ua' => 'Clementine 1.2.2 Clementine 1.2.2 Clementine 1.2.2',
+        'ua'         => 'Clementine 1.2.2 Clementine 1.2.2 Clementine 1.2.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2378,7 +2351,7 @@ return [
         ],
     ],
     'browscap-issue-993-88' => [
-        'ua' => 'foobar2000/1.1.14a',
+        'ua'         => 'foobar2000/1.1.14a',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2405,7 +2378,7 @@ return [
         ],
     ],
     'browscap-issue-993-89' => [
-        'ua' => 'foobar2000/1.2.3',
+        'ua'         => 'foobar2000/1.2.3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2432,7 +2405,7 @@ return [
         ],
     ],
     'browscap-issue-993-90' => [
-        'ua' => 'Juice/2.2 (Windows) +http://juicereceiver.sf.net/',
+        'ua'         => 'Juice/2.2 (Windows) +http://juicereceiver.sf.net/',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2459,7 +2432,7 @@ return [
         ],
     ],
     'browscap-issue-993-91' => [
-        'ua' => 'Liferea/0.x.x (Linux; en_US.UTF-8; http://liferea.sf.net/)',
+        'ua'         => 'Liferea/0.x.x (Linux; en_US.UTF-8; http://liferea.sf.net/)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2486,7 +2459,7 @@ return [
         ],
     ],
     'browscap-issue-993-92' => [
-        'ua' => 'MediaGo',
+        'ua'         => 'MediaGo',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2513,7 +2486,7 @@ return [
         ],
     ],
     'browscap-issue-993-93' => [
-        'ua' => 'MediaGo/3.0.0.403 (Windows NT 6.3; WOW64) NetworkDownloader/1.6.01.0 PlaybackEngine/2.20.103.05220',
+        'ua'         => 'MediaGo/3.0.0.403 (Windows NT 6.3; WOW64) NetworkDownloader/1.6.01.0 PlaybackEngine/2.20.103.05220',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2540,7 +2513,7 @@ return [
         ],
     ],
     'browscap-issue-993-94' => [
-        'ua' => 'MediaMonkey',
+        'ua'         => 'MediaMonkey',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2567,7 +2540,7 @@ return [
         ],
     ],
     'browscap-issue-993-95' => [
-        'ua' => 'MediaMonkey 4.1.9.1764',
+        'ua'         => 'MediaMonkey 4.1.9.1764',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2594,7 +2567,7 @@ return [
         ],
     ],
     'browscap-issue-993-96' => [
-        'ua' => 'Miro/6.0 (http://www.getmiro.com/; Windows post2008Server x86)',
+        'ua'         => 'Miro/6.0 (http://www.getmiro.com/; Windows post2008Server x86)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2621,7 +2594,7 @@ return [
         ],
     ],
     'browscap-issue-993-97' => [
-        'ua' => 'Miro/3.0.3 (http://www.getmiro.com/; Microsoft Windows )',
+        'ua'         => 'Miro/3.0.3 (http://www.getmiro.com/; Microsoft Windows )',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2648,7 +2621,7 @@ return [
         ],
     ],
     'browscap-issue-993-98' => [
-        'ua' => 'Fancy Cloud Music 1.4 build 2 (iPhone; iPhone OS 9.2.1; en_US)',
+        'ua'         => 'Fancy Cloud Music 1.4 build 2 (iPhone; iPhone OS 9.2.1; en_US)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2675,7 +2648,7 @@ return [
         ],
     ],
     'browscap-issue-993-99' => [
-        'ua' => 'FancyMusic 1.5.0 build 5 (iPod touch; iPhone OS 9.2.1; en_US)',
+        'ua'         => 'FancyMusic 1.5.0 build 5 (iPod touch; iPhone OS 9.2.1; en_US)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2702,7 +2675,7 @@ return [
         ],
     ],
     'browscap-issue-993-100' => [
-        'ua' => 'VOX Music Player',
+        'ua'         => 'VOX Music Player',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2729,7 +2702,7 @@ return [
         ],
     ],
     'browscap-issue-993-101' => [
-        'ua' => 'NetNewsWire/3.3 (Mac OS X; http://netnewswireapp.com/mac/; gzip-happy)',
+        'ua'         => 'NetNewsWire/3.3 (Mac OS X; http://netnewswireapp.com/mac/; gzip-happy)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2756,7 +2729,7 @@ return [
         ],
     ],
     'browscap-issue-993-102' => [
-        'ua' => 'NetNewsWire/3.1.7 (Mac OS X; http://www.newsgator.com/Individuals/NetNewsWire/)',
+        'ua'         => 'NetNewsWire/3.1.7 (Mac OS X; http://www.newsgator.com/Individuals/NetNewsWire/)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2783,7 +2756,7 @@ return [
         ],
     ],
     'browscap-issue-993-103' => [
-        'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) NetNewsWire/3.2',
+        'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) NetNewsWire/3.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2810,7 +2783,7 @@ return [
         ],
     ],
     'browscap-issue-993-104' => [
-        'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) NetNewsWire/3.3.2',
+        'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) NetNewsWire/3.3.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2837,7 +2810,7 @@ return [
         ],
     ],
     'browscap-issue-993-105' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 5.0; Rivo RHYTHM RX75 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36; | 2016-04-07 14:37:04',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; Rivo RHYTHM RX75 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36; | 2016-04-07 14:37:04',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',
@@ -2864,7 +2837,7 @@ return [
         ],
     ],
     'browscap-issue-993-106' => [
-        'ua' => 'Spotify',
+        'ua'         => 'Spotify',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2891,7 +2864,7 @@ return [
         ],
     ],
     'browscap-issue-993-107' => [
-        'ua' => 'Spotify/1.0',
+        'ua'         => 'Spotify/1.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2918,7 +2891,7 @@ return [
         ],
     ],
     'browscap-issue-993-108' => [
-        'ua' => 'vlc/1.1.0 LibVLC/1.1.0',
+        'ua'         => 'vlc/1.1.0 LibVLC/1.1.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2945,7 +2918,7 @@ return [
         ],
     ],
     'browscap-issue-993-109' => [
-        'ua' => 'VLC/3.0.0-git LibVLC/3.0.0-git BMID/E67AB28521',
+        'ua'         => 'VLC/3.0.0-git LibVLC/3.0.0-git BMID/E67AB28521',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2972,7 +2945,7 @@ return [
         ],
     ],
     'browscap-issue-993-110' => [
-        'ua' => 'Mozilla/5.0 (iPhone; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/9.3 Mobile/11A465 Safari/9537.53 VLC for iOS/2.7.2',
+        'ua'         => 'Mozilla/5.0 (iPhone; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/9.3 Mobile/11A465 Safari/9537.53 VLC for iOS/2.7.2',
         'properties' => [
             'Browser_Name'            => 'Safari',
             'Browser_Type'            => 'Browser',
@@ -2999,7 +2972,7 @@ return [
         ],
     ],
     'browscap-issue-993-111' => [
-        'ua' => 'VLC media player - version 1.0.3 Goldeneye - (c) 1996-2009 the VideoLAN team',
+        'ua'         => 'VLC media player - version 1.0.3 Goldeneye - (c) 1996-2009 the VideoLAN team',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3026,7 +2999,7 @@ return [
         ],
     ],
     'browscap-issue-993-112' => [
-        'ua' => 'VLC/2.2.0-rc1 LibVLC/2.2.0-rc1',
+        'ua'         => 'VLC/2.2.0-rc1 LibVLC/2.2.0-rc1',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3053,7 +3026,7 @@ return [
         ],
     ],
     'browscap-issue-993-113' => [
-        'ua' => 'VLC/2.2.0-pre4 LibVLC/2.2.0-pre4',
+        'ua'         => 'VLC/2.2.0-pre4 LibVLC/2.2.0-pre4',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3080,7 +3053,7 @@ return [
         ],
     ],
     'browscap-issue-993-114' => [
-        'ua' => 'CITA RSS Aggregator/2.7',
+        'ua'         => 'CITA RSS Aggregator/2.7',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3107,7 +3080,7 @@ return [
         ],
     ],
     'browscap-issue-993-115' => [
-        'ua' => 'Doppler 2.9.5.4',
+        'ua'         => 'Doppler 2.9.5.4',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3134,7 +3107,7 @@ return [
         ],
     ],
     'browscap-issue-993-116' => [
-        'ua' => 'GoldenPod/0.8.4 (GNU/Linux; podcatcher; Using LWP) libwwwperl',
+        'ua'         => 'GoldenPod/0.8.4 (GNU/Linux; podcatcher; Using LWP) libwwwperl',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3161,7 +3134,7 @@ return [
         ],
     ],
     'browscap-issue-993-117' => [
-        'ua' => 'Replay AV',
+        'ua'         => 'Replay AV',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3188,7 +3161,7 @@ return [
         ],
     ],
     'browscap-issue-993-118' => [
-        'ua' => 'MusicDownloaderLite/1.0.1 CFNetwork/609.1.4 Darwin/13.0.0',
+        'ua'         => 'MusicDownloaderLite/1.0.1 CFNetwork/609.1.4 Darwin/13.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3215,7 +3188,7 @@ return [
         ],
     ],
     'browscap-issue-993-119' => [
-        'ua' => 'MusicDownloader/2.0.3 CFNetwork/548.0.4 Darwin/11.0.0',
+        'ua'         => 'MusicDownloader/2.0.3 CFNetwork/548.0.4 Darwin/11.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3242,7 +3215,7 @@ return [
         ],
     ],
     'browscap-issue-993-120' => [
-        'ua' => 'Plugged%20-%20Stream%20Podcasts%2C%20Music%20&%20More%20Free/5.0 CFNetwork/711.5.6 Darwin/14.0.0',
+        'ua'         => 'Plugged%20-%20Stream%20Podcasts%2C%20Music%20&%20More%20Free/5.0 CFNetwork/711.5.6 Darwin/14.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3269,7 +3242,7 @@ return [
         ],
     ],
     'browscap-issue-993-121' => [
-        'ua' => 'PodWrangler/1.1 CFNetwork/672.1.15 Darwin/14.0.0',
+        'ua'         => 'PodWrangler/1.1 CFNetwork/672.1.15 Darwin/14.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3296,7 +3269,7 @@ return [
         ],
     ],
     'browscap-issue-993-122' => [
-        'ua' => 'Custom/12 CFNetwork/758.2.8 Darwin/15.0.0',
+        'ua'         => 'Custom/12 CFNetwork/758.2.8 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3323,7 +3296,7 @@ return [
         ],
     ],
     'browscap-issue-993-123' => [
-        'ua' => 'GoodReader4/100 CFNetwork/758.3.15 Darwin/15.4.0',
+        'ua'         => 'GoodReader4/100 CFNetwork/758.3.15 Darwin/15.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3350,7 +3323,7 @@ return [
         ],
     ],
     'browscap-issue-993-124' => [
-        'ua' => 'Free-Podcasts/132 CFNetwork/758.2.8 Darwin/15.0.0',
+        'ua'         => 'Free-Podcasts/132 CFNetwork/758.2.8 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3377,7 +3350,7 @@ return [
         ],
     ],
     'browscap-issue-993-125' => [
-        'ua' => 'Free-Podcasts/1.05 CFNetwork/609 Darwin/13.0.0',
+        'ua'         => 'Free-Podcasts/1.05 CFNetwork/609 Darwin/13.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3404,7 +3377,7 @@ return [
         ],
     ],
     'browscap-issue-993-126' => [
-        'ua' => 'TopPodcasts/261 CFNetwork/758.0.2 Darwin/15.0.0',
+        'ua'         => 'TopPodcasts/261 CFNetwork/758.0.2 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3431,7 +3404,7 @@ return [
         ],
     ],
     'browscap-issue-993-127' => [
-        'ua' => 'TopPodcastsPro/201 CFNetwork/758.2.8 Darwin/15.0.0',
+        'ua'         => 'TopPodcastsPro/201 CFNetwork/758.2.8 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3458,7 +3431,7 @@ return [
         ],
     ],
     'browscap-issue-993-128' => [
-        'ua' => 'TopPodcasts/2.1.4 CFNetwork/672.1.15 Darwin/14.0.0',
+        'ua'         => 'TopPodcasts/2.1.4 CFNetwork/672.1.15 Darwin/14.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3485,7 +3458,7 @@ return [
         ],
     ],
     'browscap-issue-993-129' => [
-        'ua' => 'Podcasts/2.2',
+        'ua'         => 'Podcasts/2.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3512,7 +3485,7 @@ return [
         ],
     ],
     'browscap-issue-993-130' => [
-        'ua' => 'Podcasts/1.4.113',
+        'ua'         => 'Podcasts/1.4.113',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3539,7 +3512,7 @@ return [
         ],
     ],
     'browscap-issue-993-131' => [
-        'ua' => 'Peapod/pre1.0 +http://www.peapodpy.org.uk',
+        'ua'         => 'Peapod/pre1.0 +http://www.peapodpy.org.uk',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3566,7 +3539,7 @@ return [
         ],
     ],
     'browscap-issue-993-132' => [
-        'ua' => 'Peapod/1.0 +http://www.peapodpy.org.uk',
+        'ua'         => 'Peapod/1.0 +http://www.peapodpy.org.uk',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3593,7 +3566,7 @@ return [
         ],
     ],
     'browscap-issue-993-133' => [
-        'ua' => 'podracer v1.4.1; GNU/Linux; x86_64',
+        'ua'         => 'podracer v1.4.1; GNU/Linux; x86_64',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3620,7 +3593,7 @@ return [
         ],
     ],
     'browscap-issue-993-134' => [
-        'ua' => 'Kinoma5',
+        'ua'         => 'Kinoma5',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3647,7 +3620,7 @@ return [
         ],
     ],
     'browscap-issue-993-135' => [
-        'ua' => 'QuickTime/7.6',
+        'ua'         => 'QuickTime/7.6',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3674,7 +3647,7 @@ return [
         ],
     ],
     'browscap-issue-993-136' => [
-        'ua' => 'QuickTime.7.6.6',
+        'ua'         => 'QuickTime.7.6.6',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3701,7 +3674,7 @@ return [
         ],
     ],
     'browscap-issue-993-137' => [
-        'ua' => 'QuickNews/1.25',
+        'ua'         => 'QuickNews/1.25',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3728,7 +3701,7 @@ return [
         ],
     ],
     'browscap-issue-993-138' => [
-        'ua' => 'Mozilla/5.0 (Linux; U; Windows NT 6.1; en-us; dream) DoggCatcher',
+        'ua'         => 'Mozilla/5.0 (Linux; U; Windows NT 6.1; en-us; dream) DoggCatcher',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3755,7 +3728,7 @@ return [
         ],
     ],
     'browscap-issue-993-139' => [
-        'ua' => 'DoggCatcher/1.2',
+        'ua'         => 'DoggCatcher/1.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
