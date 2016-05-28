@@ -191,7 +191,7 @@ return [
         ],
     ],
     'test-0015-7' => [
-        'ua'         => '\',
+        'ua'         => '\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
