@@ -569,7 +569,7 @@ return [
         ],
     ],
     'test-0023-21' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36 OPR/31.0.1889.174\\'',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36 OPR/31.0.1889.174\'',
         'properties' => [
             'Browser_Name'            => 'Opera',
             'Browser_Type'            => 'Browser',

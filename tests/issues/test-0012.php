@@ -30431,7 +30431,7 @@ return [
         ],
     ],
     'test-0012-1127' => [
-        'ua'         => '() { :;}; /bin/bash -c \\'ping -c 10 127.0.0.1; id; cat /etc/passwd\\'',
+        'ua'         => '() { :;}; /bin/bash -c \'ping -c 10 127.0.0.1; id; cat /etc/passwd\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

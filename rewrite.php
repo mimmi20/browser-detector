@@ -41,7 +41,7 @@ foreach ($iterator as $file) {
         $checks[$test['ua']] = $key;
 
         $outputDetector .= "    '$key' => [
-        'ua'         => '" . str_replace("'", "\\'", str_replace("'", "\\'", $test['ua'])) . "',
+        'ua'         => '" . str_replace("'", "\\'", $test['ua']) . "',
         'properties' => [
             'Browser_Name'            => '" . str_replace("'", "\\'", $test['properties']['Browser_Name']) . "',
             'Browser_Type'            => '" . str_replace("'", "\\'", $test['properties']['Browser_Type']) . "',

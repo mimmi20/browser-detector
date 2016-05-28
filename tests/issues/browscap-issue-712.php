@@ -2027,7 +2027,7 @@ return [
         ],
     ],
     'browscap-issue-712-CE' => [
-        'ua'         => 'UCWEB/2.0 (Linux; U; Adr 4.4.4; en-US; SM-G530H) U2/1.0.0 UC Browser/8.8.0.332 U2/1.0.0 EH(\\'�D',
+        'ua'         => 'UCWEB/2.0 (Linux; U; Adr 4.4.4; en-US; SM-G530H) U2/1.0.0 UC Browser/8.8.0.332 U2/1.0.0 EH(\'�D',
         'properties' => [
             'Browser_Name'            => 'UC Browser',
             'Browser_Type'            => 'Browser',

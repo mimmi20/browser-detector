@@ -17687,7 +17687,7 @@ return [
         ],
     ],
     'test-0013-665' => [
-        'ua'         => '\\'Mozilla/5.2 (X11; U; FreeBSD i386; ru-RU; rv:1.9.1.10) Gecko/20100625 Firefox/3.5.10\\'',
+        'ua'         => '\'Mozilla/5.2 (X11; U; FreeBSD i386; ru-RU; rv:1.9.1.10) Gecko/20100625 Firefox/3.5.10\'',
         'properties' => [
             'Browser_Name'            => 'Firefox',
             'Browser_Type'            => 'Browser',

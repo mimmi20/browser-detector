@@ -67826,7 +67826,7 @@ return [
         ],
     ],
     'test-0042-2512' => [
-        'ua'         => '--custom-header-propagation --custom-header \\'User-Agent\\' \\'Mozilla/5.0 (compatible; TSuchebot/1.1; +http://tsuche.com/bot)\\'',
+        'ua'         => '--custom-header-propagation --custom-header \'User-Agent\' \'Mozilla/5.0 (compatible; TSuchebot/1.1; +http://tsuche.com/bot)\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

