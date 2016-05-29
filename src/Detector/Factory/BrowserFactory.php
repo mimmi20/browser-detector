@@ -962,8 +962,6 @@ class BrowserFactory implements FactoryInterface
             $browser = new Firefox($agent, []);
         } elseif (preg_match('/trident/i', $agent) && preg_match('/anonym/i', $agent)) {
             $browser = new MicrosoftInternetExplorer($agent, []);
-        } elseif (preg_match('/(randomized|anonym)/i', $agent)) {
-            $browser = new Anonymizied($agent, []);
         } elseif (preg_match('/Windows\-RSS\-Platform/', $agent)) {
             $browser = new WindowsRssPlatform($agent, []);
         } elseif (preg_match('/MarketwireBot/', $agent)) {

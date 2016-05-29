@@ -115,7 +115,7 @@ class PlatformFactory implements FactoryInterface
             $platform = new Os\Ios($agent, []);
         } elseif (preg_match('/(micromaxx650|dolfin\/)/i', $agent)) {
             $platform = new Os\Java($agent, []);
-        } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum)/i', $agent)) {
+        } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $agent)) {
             $platform = new Os\AndroidOs($agent, []);
         } elseif (preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches) && $matches[1] >= 4) {
             $platform = new Os\AndroidOs($agent, []);

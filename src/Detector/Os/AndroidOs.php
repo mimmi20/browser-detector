@@ -80,6 +80,7 @@ class AndroidOs extends AbstractOs
             'Android AndroidHouse Team',
             'Android WildPuzzleROM v8 froyo',
             'JUC\(Linux;U;',
+            'Linux; GoogleTV',
             'Android OS',
             'Android',
         ];

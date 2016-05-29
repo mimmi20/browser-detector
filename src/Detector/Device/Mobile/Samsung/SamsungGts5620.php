@@ -63,7 +63,7 @@ class SamsungGts5620 extends AbstractDevice implements DeviceHasSpecificPlatform
         $this->setData(
             [
                 'deviceName'        => 'GT-S5620',
-                'marketingName'     => 'S5620 Monte',
+                'marketingName'     => 'Monte',
                 'version'           => null,
                 'manufacturer'      => (new Company\Samsung())->name,
                 'brand'             => (new Company\Samsung())->brandname,
@@ -111,10 +111,10 @@ class SamsungGts5620 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\Java($this->useragent, []);
     }
 }

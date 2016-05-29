@@ -26,8 +26,6 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
 
         self::assertInstanceOf('\BrowserDetector\Version\Version', $result->getVersion());
         self::assertSame($version, $result->getVersion()->getVersion());
-
-        self::assertInternalType('string', $result->getManufacturer());
     }
 
     /**
@@ -134,6 +132,11 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'Wget/1.17.1 (cygwin)',
                 'Cygwin',
+                '0.0.0',
+            ],
+            [
+                'Opera/9.80 (VRE; Opera Mini/4.2/34.1000; U; en) Presto/2.8.119 Version/11.10',
+                'Android',
                 '0.0.0',
             ],
         ];

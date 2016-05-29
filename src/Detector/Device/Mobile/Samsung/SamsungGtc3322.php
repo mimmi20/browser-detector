@@ -63,7 +63,7 @@ class SamsungGtc3322 extends AbstractDevice implements DeviceHasSpecificPlatform
         $this->setData(
             [
                 'deviceName'        => 'GT-C3322',
-                'marketingName'     => 'GT-C3322',
+                'marketingName'     => 'Metro Duos',
                 'version'           => null,
                 'manufacturer'      => (new Company\Samsung())->name,
                 'brand'             => (new Company\Samsung())->brandname,
@@ -111,10 +111,10 @@ class SamsungGtc3322 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\Java($this->useragent, []);
     }
 }
