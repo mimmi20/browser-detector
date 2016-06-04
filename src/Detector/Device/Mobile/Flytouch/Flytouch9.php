@@ -62,8 +62,8 @@ class Flytouch9 extends AbstractDevice implements DeviceHasSpecificPlatformInter
 
         $this->setData(
             [
-                'deviceName'        => 'Flytouch',
-                'marketingName'     => 'Flytouch',
+                'deviceName'        => '9',
+                'marketingName'     => 'SuperPAD IX',
                 'version'           => null,
                 'manufacturer'      => (new Company\Unknown())->name,
                 'brand'             => (new Company\Unknown())->brandname,
