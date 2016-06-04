@@ -70,7 +70,6 @@ class FirefoxOs
     {
         if (!$this->utils->checkIfStartsWith('Mozilla/')
             || !$this->utils->checkIfContainsAll(['rv:', 'Gecko', 'Firefox'])
-            || $this->utils->checkIfContains(['android'], true)
         ) {
             return false;
         }

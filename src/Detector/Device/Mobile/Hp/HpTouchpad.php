@@ -34,7 +34,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use BrowserDetector\Matcher\MatcherCanHandleInterface;
 use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
@@ -46,7 +45,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HpTouchpad extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class HpTouchpad extends AbstractDevice implements MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
@@ -106,15 +105,5 @@ class HpTouchpad extends AbstractDevice implements DeviceHasSpecificPlatformInte
     public function getWeight()
     {
         return 3;
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

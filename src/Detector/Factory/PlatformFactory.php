@@ -113,7 +113,7 @@ class PlatformFactory implements FactoryInterface
             && false === stripos($agent, 'technipad')
         ) {
             $platform = new Os\Ios($agent, []);
-        } elseif (preg_match('/(micromaxx650|dolfin\/)/i', $agent)) {
+        } elseif (preg_match('/(micromaxx650|dolfin\/|yuanda50|profile|wap browser)/i', $agent)) {
             $platform = new Os\Java($agent, []);
         } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $agent)) {
             $platform = new Os\AndroidOs($agent, []);

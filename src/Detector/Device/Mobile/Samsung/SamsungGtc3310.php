@@ -111,10 +111,10 @@ class SamsungGtc3310 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent, []);
+        return new Os\Java($this->useragent, []);
     }
 }
