@@ -95,9 +95,6 @@ class SamsungSmT530 extends AbstractDevice implements DeviceHasSpecificPlatformI
             return false;
         }
 
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
         if ($utils->checkIfContains('SM-T530NU')) {
             return false;
         }

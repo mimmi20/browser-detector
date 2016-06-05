@@ -111,10 +111,10 @@ class Nokia5130c2 extends AbstractDevice implements DeviceHasSpecificPlatformInt
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Symbianos
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent, []);
+        return new Os\Java($this->useragent, []);
     }
 }

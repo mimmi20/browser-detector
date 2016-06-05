@@ -334,7 +334,7 @@ return [
             'Browser_Maker'           => 'UCWeb Inc.',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '7.7',
-            'Platform_Name'           => 'WinCE',
+            'Platform_Name'           => 'Windows CE',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

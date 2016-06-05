@@ -198,7 +198,7 @@ class PlatformFactory implements FactoryInterface
         } elseif ($utils->checkIfContains(['os/2', 'warp'], true)) {
             $platform = new Os\Os2($agent, []);
         } elseif ($utils->checkIfContains(['NETTV', 'HbbTV', 'SMART-TV'])) {
-            $platform = new Os\LinuxTv($agent, []);
+            $platform = new Os\Linux($agent, []);
         } elseif ($utils->checkIfContains(['Linux', 'linux', 'X11', 'Dillo'])) {
             $platform = new Os\Linux($agent, []);
         } elseif ($utils->checkIfContains('CP/M')) {
