@@ -139,6 +139,26 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Android',
                 '0.0.0',
             ],
+            [
+                'Mozilla/5.0 AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1 Installatron (Mimicking WebKit)',
+                'Linux',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/5.0 (X11; U; Linux i686; rv:1.9a3pre) Gecko/20070330',
+                'Linux',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.1; AT10-A Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
+                'Android',
+                '4.2.1',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; SM-T235 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36',
+                'Android',
+                '4.4.2',
+            ],
         ];
     }
 }

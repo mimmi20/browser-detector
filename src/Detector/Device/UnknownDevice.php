@@ -42,7 +42,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnknownDevice extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class UnknownDevice extends AbstractDevice
 {
     /**
      * the class constructor
@@ -75,15 +75,5 @@ class UnknownDevice extends AbstractDevice implements DeviceHasSpecificPlatformI
                 'type'              => new UaDeviceType\Unknown(),
             ]
         );
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

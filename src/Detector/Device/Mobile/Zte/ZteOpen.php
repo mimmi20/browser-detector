@@ -111,10 +111,10 @@ class ZteOpen extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\FirefoxOs
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\FirefoxOs($this->useragent, []);
     }
 }
