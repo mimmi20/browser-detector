@@ -24169,7 +24169,7 @@ return [
     'test-0044-895' => [
         'ua'         => 'Mozilla/5.0 (PlayStation Vita 3.51) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2',
         'properties' => [
-             'Browser_Name'            => 'Silk',
+            'Browser_Name'            => 'Silk',
             'Browser_Type'            => 'Browser',
             'Browser_Bits'            => 32,
             'Browser_Maker'           => 'Amazon.com, Inc.',
