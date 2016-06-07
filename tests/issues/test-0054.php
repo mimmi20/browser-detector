@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'browscap-issue-2016-05-31-testagents.txt-0' => [
+    'test-0054-0' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -28,7 +28,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1' => [
+    'test-0054-1' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -55,7 +55,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-2' => [
+    'test-0054-2' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -82,7 +82,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-3' => [
+    'test-0054-3' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; C6903 Build/14.6.A.1.236) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.8.770 U3/0.8.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'UC Browser',
@@ -109,7 +109,7 @@ return [
             'RenderingEngine_Maker'   => 'UC Web',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-4' => [
+    'test-0054-4' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS21845; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -136,7 +136,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-5' => [
+    'test-0054-5' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2716.0 Safari/537.36 OPR/39.0.2234.0 (Edition developer)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -163,7 +163,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-6' => [
+    'test-0054-6' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.23 Safari/537.36 IR/1',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -190,7 +190,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-7' => [
+    'test-0054-7' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; hu-hu; A1-810 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -217,7 +217,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-8' => [
+    'test-0054-8' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.21 (KHTML, like Gecko) QupZilla/1.6.0 Safari/537.21',
         'properties' => [
             'Browser_Name'            => 'QupZilla',
@@ -244,7 +244,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-9' => [
+    'test-0054-9' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; POV_TAB-PROTAB25XXL Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -271,7 +271,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-10' => [
+    'test-0054-10' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/9.0.60246 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -298,7 +298,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-11' => [
+    'test-0054-11' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2650.0 Iron Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Iron',
@@ -325,7 +325,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-12' => [
+    'test-0054-12' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/6.1.3 Safari/537.75.14',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -352,7 +352,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-13' => [
+    'test-0054-13' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G920F/G920FXXU3DPEB Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -379,7 +379,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-14' => [
+    'test-0054-14' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -406,7 +406,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-15' => [
+    'test-0054-15' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/32.0.1700.102 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -433,7 +433,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-16' => [
+    'test-0054-16' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-N915FY Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -460,7 +460,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-17' => [
+    'test-0054-17' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-N915FY Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -487,7 +487,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-18' => [
+    'test-0054-18' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -514,7 +514,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-19' => [
+    'test-0054-19' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; EIE10;DEDEMSE; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -541,7 +541,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-20' => [
+    'test-0054-20' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G800F/G800FXXU1BPC4 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -568,7 +568,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-21' => [
+    'test-0054-21' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D955 Build/KOT49I.D95520a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -595,7 +595,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-22' => [
+    'test-0054-22' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; JY-S3 Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -622,7 +622,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-23' => [
+    'test-0054-23' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -649,7 +649,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-24' => [
+    'test-0054-24' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; tb-1und1/2.6.6; MATMJS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -676,7 +676,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-25' => [
+    'test-0054-25' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Silk/50.2.1 like Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Silk',
@@ -703,7 +703,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-26' => [
+    'test-0054-26' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; A0001 Build/MMB29X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -730,7 +730,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-27' => [
+    'test-0054-27' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; LG-D802 Build/MOB30J; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -757,7 +757,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-28' => [
+    'test-0054-28' => [
         'ua' => 'YOUniversal Media Service Bot',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -784,7 +784,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-29' => [
+    'test-0054-29' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.36 Safari/537.36 OPR/38.0.2220.12 (Edition beta)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -811,7 +811,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-30' => [
+    'test-0054-30' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -838,7 +838,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-31' => [
+    'test-0054-31' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/14.14351',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -865,7 +865,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-32' => [
+    'test-0054-32' => [
         'ua' => 'Mozilla/5.0 (Linux;U; Android 4.1; en-gb; ST10216-1Build/ST10216-1)AppleWebKit/534.30 (KHTML,like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -892,7 +892,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-33' => [
+    'test-0054-33' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/14.0.119004557 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -919,7 +919,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-34' => [
+    'test-0054-34' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1; U; en; WUID=106f38c5773a47afc576030e205e7b95; WTB=6787) Presto/2.6.31 Version/10.70',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -946,7 +946,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-35' => [
+    'test-0054-35' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/14.14351',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -973,7 +973,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-36' => [
+    'test-0054-36' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; HTC_0PFH11/4.11.111.2 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -1000,7 +1000,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-37' => [
+    'test-0054-37' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13E238 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -1027,7 +1027,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-38' => [
+    'test-0054-38' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -1054,7 +1054,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-39' => [
+    'test-0054-39' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2751.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1081,7 +1081,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-40' => [
+    'test-0054-40' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1108,7 +1108,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-41' => [
+    'test-0054-41' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1135,7 +1135,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-42' => [
+    'test-0054-42' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; 5015D Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1162,7 +1162,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-43' => [
+    'test-0054-43' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; ZTE Blade L3 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.95 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -1189,7 +1189,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-44' => [
+    'test-0054-44' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.10 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1216,7 +1216,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-45' => [
+    'test-0054-45' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-T810 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1243,7 +1243,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-46' => [
+    'test-0054-46' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 AOL/9.7 AOLBuild/4343.4043.US Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1270,7 +1270,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-47' => [
+    'test-0054-47' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; MAAU; (1und1/1.0.0.8); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1297,7 +1297,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-48' => [
+    'test-0054-48' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G928F/G928FXXS2BPE2 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -1324,7 +1324,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-49' => [
+    'test-0054-49' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; Plane 8.6 3G PS8086MG Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Safari/537.36 ACHEETAHI/2100502042',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -1351,7 +1351,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-50' => [
+    'test-0054-50' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Aquaris X5 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1378,7 +1378,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-51' => [
+    'test-0054-51' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; QXW03416)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1405,7 +1405,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-52' => [
+    'test-0054-52' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1432,7 +1432,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-53' => [
+    'test-0054-53' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0;WUID=7473E5F23F00432EBC697CAC4859B6F9;WTB=6787) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1459,7 +1459,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-54' => [
+    'test-0054-54' => [
         'ua' => 'Mozilla/5.0 (Android; Tablet; rv:31.0) Gecko/31.0 Firefox/31.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -1486,7 +1486,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-55' => [
+    'test-0054-55' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1513,7 +1513,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-56' => [
+    'test-0054-56' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; (gmx/1.3.0.0); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1540,7 +1540,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-57' => [
+    'test-0054-57' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MAMD; tb-webde/2.6.7; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1567,7 +1567,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-58' => [
+    'test-0054-58' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; GTB6.3; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; BRI/1; AskTB5.6)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1594,7 +1594,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-59' => [
+    'test-0054-59' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML like Gecko) Chrome/26.0.1410.43 Safari/537.31',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1621,7 +1621,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-60' => [
+    'test-0054-60' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1648,7 +1648,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-61' => [
+    'test-0054-61' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.1; M532 Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1675,7 +1675,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-62' => [
+    'test-0054-62' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G12 Safari/601.1',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -1702,7 +1702,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-63' => [
+    'test-0054-63' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; Aquaris E4.5 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1729,7 +1729,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-64' => [
+    'test-0054-64' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; SGP321 Build/10.5.1.A.0.292) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1756,7 +1756,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-65' => [
+    'test-0054-65' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.13 (KHTML, like Gecko) Chrome/24.0.1290.1 Safari/537.13',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1783,7 +1783,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-66' => [
+    'test-0054-66' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; BTRS124348; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; eSobiSubscriber 2.0.4.16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1810,7 +1810,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-67' => [
+    'test-0054-67' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1) Presto/2.12.388 Version/12.14',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1837,7 +1837,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-68' => [
+    'test-0054-68' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 7047D Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1864,7 +1864,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-69' => [
+    'test-0054-69' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.1.0 Waterfox/40.1.0',
         'properties' => [
             'Browser_Name'            => 'Waterfox',
@@ -1891,7 +1891,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-70' => [
+    'test-0054-70' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1918,7 +1918,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-71' => [
+    'test-0054-71' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; S208 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1945,7 +1945,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-72' => [
+    'test-0054-72' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.7.3000 Chrome/30.0.1599.101 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Maxthon',
@@ -1972,7 +1972,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-73' => [
+    'test-0054-73' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; E5823 Build/32.1.A.1.185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1999,7 +1999,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-74' => [
+    'test-0054-74' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MOB30J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.101 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2026,7 +2026,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-75' => [
+    'test-0054-75' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.3; C6903 Build/14.2.A.1.136) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2053,7 +2053,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-76' => [
+    'test-0054-76' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0; MASBJS; WebView/1.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2080,7 +2080,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-77' => [
+    'test-0054-77' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/50.0.2661.95 Mobile/13C75 Safari/601.1.46',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2107,7 +2107,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-78' => [
+    'test-0054-78' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1122628597',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2134,7 +2134,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-79' => [
+    'test-0054-79' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; C6603 Build/10.7.A.0.228; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -2161,7 +2161,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-80' => [
+    'test-0054-80' => [
         'ua' => 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/43.0.2357.130 Chrome/43.0.2357.130 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chromium',
@@ -2188,7 +2188,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-81' => [
+    'test-0054-81' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; rv:42.0) Gecko/20100101 Firefox/42.0 SeaMonkey/2.39',
         'properties' => [
             'Browser_Name'            => 'SeaMonkey',
@@ -2215,7 +2215,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-82' => [
+    'test-0054-82' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2242,7 +2242,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-83' => [
+    'test-0054-83' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; TPC-XTE10D Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -2269,7 +2269,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-84' => [
+    'test-0054-84' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; GT-P5200 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -2296,7 +2296,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-85' => [
+    'test-0054-85' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.4; pl-pl; GT-P6800 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -2323,7 +2323,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-86' => [
+    'test-0054-86' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0) Gecko/20100101 Firefox/46.0 anonymized by Abelssoft 1354512772',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2350,7 +2350,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-87' => [
+    'test-0054-87' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0) Gecko/20100101 Firefox/46.0 anonymized by Abelssoft 1301078630',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2377,7 +2377,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-88' => [
+    'test-0054-88' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2404,7 +2404,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-89' => [
+    'test-0054-89' => [
         'ua' => 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; HUAWEI CRR-L09 Build/HUAWEICRR-L09C02B122)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -2431,7 +2431,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-90' => [
+    'test-0054-90' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0 OWASMIME/4.0100',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2458,7 +2458,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-91' => [
+    'test-0054-91' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.0; AOLBuild 4327.5201; Windows NT 6.2; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; Media Center PC 6.0; Tablet PC 2.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2485,7 +2485,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-92' => [
+    'test-0054-92' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1; WOW64) Presto/2.12 Version/12.15',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -2512,7 +2512,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-93' => [
+    'test-0054-93' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; ONDA V989 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2539,7 +2539,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-94' => [
+    'test-0054-94' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/35.0.1916.114 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2566,7 +2566,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-95' => [
+    'test-0054-95' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) OPiOS/13.0.1.100754 Mobile/13F69 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Opera Mini',
@@ -2593,7 +2593,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-96' => [
+    'test-0054-96' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43 (Edition Campaign 69)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -2620,7 +2620,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-97' => [
+    'test-0054-97' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10 (.NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2647,7 +2647,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-98' => [
+    'test-0054-98' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Win 9x 4.90; en-US; rv:1.0.1) Gecko/20020823 Netscape/7.0',
         'properties' => [
             'Browser_Name'            => 'Netscape',
@@ -2674,7 +2674,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-99' => [
+    'test-0054-99' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-N9100 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -2701,7 +2701,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-100' => [
+    'test-0054-100' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.20.2661.78 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2728,7 +2728,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-101' => [
+    'test-0054-101' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0;Windows NT 6.0; Trident/6.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2755,7 +2755,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-102' => [
+    'test-0054-102' => [
         'ua' => 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-P600 Build/LMY47X) U2/1.0.0 UCBrowser/10.7.2.757 Mobile',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -2782,7 +2782,7 @@ return [
             'RenderingEngine_Maker'   => 'UC Web',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-103' => [
+    'test-0054-103' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; rv:42.0 ) Gecko/20100101 Firefox/42.0  anonymized by Abelssoft 136297529',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2809,7 +2809,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-104' => [
+    'test-0054-104' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Dragon/49.13.20.402 Chrome/49.0.2623.110 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Dragon',
@@ -2836,7 +2836,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-105' => [
+    'test-0054-105' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; GT-I8150 Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -2863,7 +2863,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-106' => [
+    'test-0054-106' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; TNJB; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2890,7 +2890,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-107' => [
+    'test-0054-107' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SGP521 Build/23.5.A.0.570) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2917,7 +2917,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-108' => [
+    'test-0054-108' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2944,7 +2944,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-109' => [
+    'test-0054-109' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; D2403 Build/18.3.1.C.1.17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2971,7 +2971,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-110' => [
+    'test-0054-110' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; K01E Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.108 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -2998,7 +2998,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-111' => [
+    'test-0054-111' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 AviraScout/2016.05.18.00018s',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3025,7 +3025,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-112' => [
+    'test-0054-112' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.76 YaBrowser/16.6.0.6376 (beta) Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Yandex Browser',
@@ -3052,7 +3052,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-113' => [
+    'test-0054-113' => [
         'ua' => 'YOUBot',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -3079,7 +3079,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-114' => [
+    'test-0054-114' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1987741408',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -3106,7 +3106,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-115' => [
+    'test-0054-115' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Archos 101 Copper Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3133,7 +3133,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-116' => [
+    'test-0054-116' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; MAAU; MAAU)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -3160,7 +3160,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-117' => [
+    'test-0054-117' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; HUAWEI G750-U10 Build/HuaweiG750-U10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3187,7 +3187,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-118' => [
+    'test-0054-118' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 YaBrowser/16.4.1.8950 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Yandex Browser',
@@ -3214,7 +3214,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-119' => [
+    'test-0054-119' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3241,7 +3241,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-120' => [
+    'test-0054-120' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-at; GT-P5100 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -3268,7 +3268,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-121' => [
+    'test-0054-121' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; bg-bg; GT-N8000 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -3295,7 +3295,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-122' => [
+    'test-0054-122' => [
         'ua' => 'WhatsApp/2.16.89 A',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -3322,7 +3322,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-123' => [
+    'test-0054-123' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; PEAQ Tablet Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3349,7 +3349,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-124' => [
+    'test-0054-124' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; i545 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -3376,7 +3376,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-125' => [
+    'test-0054-125' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Win64; x64; Trident/5.0; tb-webde/2.6.6)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -3403,7 +3403,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-126' => [
+    'test-0054-126' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.10.2661.78 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3430,7 +3430,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-127' => [
+    'test-0054-127' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -3457,7 +3457,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-128' => [
+    'test-0054-128' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2480.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3484,7 +3484,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-129' => [
+    'test-0054-129' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.20.2661.78 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3511,7 +3511,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-130' => [
+    'test-0054-130' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; N1 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3538,7 +3538,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-131' => [
+    'test-0054-131' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3565,7 +3565,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-132' => [
+    'test-0054-132' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.19 Safari/537.36 OPR/39.0.2226.0 (Edition developer)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -3592,7 +3592,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-133' => [
+    'test-0054-133' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SurfTab xintron i 10.1 3G Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3619,7 +3619,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-134' => [
+    'test-0054-134' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SIMBAR={1D433148-AFA9-4340-A000-7858D63969D3}; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -3646,7 +3646,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-135' => [
+    'test-0054-135' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.22 anonymized by Abelssoft 1028211468',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3673,7 +3673,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-136' => [
+    'test-0054-136' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0 ) Gecko/20100101 Firefox/46.0  anonymized by Abelssoft 1720234471',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -3700,7 +3700,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-137' => [
+    'test-0054-137' => [
         'ua' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -3727,7 +3727,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-138' => [
+    'test-0054-138' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 7834.67.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.111 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3754,7 +3754,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-139' => [
+    'test-0054-139' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.1.1; HTC VLE_U Build/JRO03C)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -3781,7 +3781,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-140' => [
+    'test-0054-140' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; TP97.1-500DC Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -3808,7 +3808,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-141' => [
+    'test-0054-141' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:41.0.2) Gecko/20100101 Firefox/41.0.2 anonymized by Abelssoft 286215730',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -3835,7 +3835,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-142' => [
+    'test-0054-142' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; tb-webde/2.6.7; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -3862,7 +3862,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-143' => [
+    'test-0054-143' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -3889,7 +3889,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-144' => [
+    'test-0054-144' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/7.0.55539 Mobile/13E233 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -3916,7 +3916,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-145' => [
+    'test-0054-145' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; GT-N7000 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.43 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -3943,7 +3943,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-146' => [
+    'test-0054-146' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; HTC_One_S Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -3970,7 +3970,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-147' => [
+    'test-0054-147' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-ch; GT-I9100 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -3997,7 +3997,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-148' => [
+    'test-0054-148' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; MAVEN_10_PLUS Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/47.0.2526.100 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -4024,7 +4024,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-149' => [
+    'test-0054-149' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.23 Safari/537.36 IR/1',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4051,7 +4051,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-150' => [
+    'test-0054-150' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.0.575; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -4078,7 +4078,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-151' => [
+    'test-0054-151' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; fr; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -4105,7 +4105,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-152' => [
+    'test-0054-152' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-T800 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.54 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4132,7 +4132,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-153' => [
+    'test-0054-153' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; LIFETAB_P831X Build/LRX22L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -4159,7 +4159,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-154' => [
+    'test-0054-154' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; F5121 Build/34.0.A.1.267) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4186,7 +4186,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-155' => [
+    'test-0054-155' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/5.2.43972 Mobile/12D508 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -4213,7 +4213,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-156' => [
+    'test-0054-156' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4240,7 +4240,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-157' => [
+    'test-0054-157' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/41.0.2272.58 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4267,7 +4267,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-158' => [
+    'test-0054-158' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -4294,7 +4294,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-159' => [
+    'test-0054-159' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; GT-I8200N Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -4321,7 +4321,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-160' => [
+    'test-0054-160' => [
         'ua' => 'Mozilla/5.0 (iPod touch; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13F69 Safari/601.1',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -4348,7 +4348,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-161' => [
+    'test-0054-161' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.1) Gecko/20100101 Firefox/10.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -4375,7 +4375,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-162' => [
+    'test-0054-162' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13F69 Safari/601.1',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -4402,7 +4402,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-163' => [
+    'test-0054-163' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-P605 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.61 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4429,7 +4429,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-164' => [
+    'test-0054-164' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; PAD1001 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -4456,7 +4456,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-165' => [
+    'test-0054-165' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G920F/XXS3DPE5 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -4483,7 +4483,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-166' => [
+    'test-0054-166' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.3; HTC One Build/KTU84L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4510,7 +4510,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-167' => [
+    'test-0054-167' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 6.0; de-de; E5823 Build/32.1.A.1.185) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -4537,7 +4537,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-168' => [
+    'test-0054-168' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Discovery 1000c Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -4564,7 +4564,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-169' => [
+    'test-0054-169' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64;  Anonymisiert durch AlMiSoft Browser-Anonymisierer 60969662; Trident/7.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -4591,7 +4591,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-170' => [
+    'test-0054-170' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/35.0.1 (x86 de) Anonymisiert durch AlMiSoft Browser-Maulkorb 84997171',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -4618,7 +4618,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-171' => [
+    'test-0054-171' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; HTC_DesireZ_A7272 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -4645,7 +4645,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-172' => [
+    'test-0054-172' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; S Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -4672,7 +4672,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-173' => [
+    'test-0054-173' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; HTC Desire EYE Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -4699,7 +4699,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-174' => [
+    'test-0054-174' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; xs-wH73LYrP5Pk;iwNrBl; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -4726,7 +4726,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-175' => [
+    'test-0054-175' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; H30-U10 Build/HuaweiH30-U10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4753,7 +4753,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-176' => [
+    'test-0054-176' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:43.0; .NET CLR 4.0.30319; ffco7) Gecko/20100101 Firefox/43.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -4780,7 +4780,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-177' => [
+    'test-0054-177' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; IQ1800 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -4807,7 +4807,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-178' => [
+    'test-0054-178' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:29.0) Gecko/20100101 Firefox/29.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -4834,7 +4834,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-179' => [
+    'test-0054-179' => [
         'ua' => 'UCWEB/2.0 (MIDP-2.0; U; Adr 5.1.1; en-US; SM-P600) U2/1.0.0 UCBrowser/10.7.2.757 U2/1.0.0 Mobile',
         'properties' => [
             'Browser_Name'            => 'UC Browser',
@@ -4861,7 +4861,7 @@ return [
             'RenderingEngine_Maker'   => 'UC Web',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-180' => [
+    'test-0054-180' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; de-de; MB526 Build/4.5.1-134_DFP-231) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -4888,7 +4888,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-181' => [
+    'test-0054-181' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -4915,7 +4915,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-182' => [
+    'test-0054-182' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -4942,7 +4942,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-183' => [
+    'test-0054-183' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 255785081',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -4969,7 +4969,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-184' => [
+    'test-0054-184' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.1; iOCEAN X7 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -4996,7 +4996,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-185' => [
+    'test-0054-185' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.1; HUAWEI G610-U20 Build/HuaweiG610-U20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5023,7 +5023,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-186' => [
+    'test-0054-186' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; Media Center PC 6.0; McAfee; ms-office)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -5050,7 +5050,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-187' => [
+    'test-0054-187' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko ICAPoHTTPS',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -5077,7 +5077,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-188' => [
+    'test-0054-188' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 950 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5104,7 +5104,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-189' => [
+    'test-0054-189' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux x86_64; de-de) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.3.0.1852AT',
         'properties' => [
             'Browser_Name'            => 'Puffin',
@@ -5131,7 +5131,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-190' => [
+    'test-0054-190' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GT-I9100 Build/MHC19J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5158,7 +5158,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-191' => [
+    'test-0054-191' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Version/5.1.6 Safari/534.56.5',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -5185,7 +5185,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-192' => [
+    'test-0054-192' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2650.0 Iron Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Iron',
@@ -5212,7 +5212,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-193' => [
+    'test-0054-193' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GT-N8000 Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5239,7 +5239,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-194' => [
+    'test-0054-194' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13E238 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -5266,7 +5266,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-195' => [
+    'test-0054-195' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.0.4; ALCATEL ONE TOUCH 997D Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5293,7 +5293,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-196' => [
+    'test-0054-196' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; SM-G350 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -5320,7 +5320,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-197' => [
+    'test-0054-197' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G925F/G925FXXU3DPEB Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -5347,7 +5347,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-198' => [
+    'test-0054-198' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.22 anonymized by Abelssoft 1295718404',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5374,7 +5374,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-199' => [
+    'test-0054-199' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64;  Anonymisiert durch AlMiSoft Browser-Maulkorb 51188528) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5401,7 +5401,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-200' => [
+    'test-0054-200' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; HTC_One_V Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -5428,7 +5428,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-201' => [
+    'test-0054-201' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; tb-gmx/2.6.8; (gmx/1.4.0.0); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -5455,7 +5455,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-202' => [
+    'test-0054-202' => [
         'ua' => 'Mozilla/5.0 (Windows NT 4.10; rv:36.0) Gecko/20100101 Firefox/36.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -5482,7 +5482,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-203' => [
+    'test-0054-203' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -5509,7 +5509,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-204' => [
+    'test-0054-204' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Doro Liberto 820 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5536,7 +5536,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-205' => [
+    'test-0054-205' => [
         'ua' => 'Java/1.6.0_22',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -5563,7 +5563,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-206' => [
+    'test-0054-206' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; b1-720 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5590,7 +5590,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-207' => [
+    'test-0054-207' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.3; GT-I9300 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5617,7 +5617,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-208' => [
+    'test-0054-208' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; SGPT12 Build/TISU0105) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -5644,7 +5644,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-209' => [
+    'test-0054-209' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.30729; .NET CLR 3.5.30729; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -5671,7 +5671,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-210' => [
+    'test-0054-210' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0 DT-Browser/DTB7.41.0.21_01',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -5698,7 +5698,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-211' => [
+    'test-0054-211' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43 (Edition Campaign 67)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -5725,7 +5725,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-212' => [
+    'test-0054-212' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; LIFETAB_P891X Build/LRX22L; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -5752,7 +5752,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-213' => [
+    'test-0054-213' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:41.0) Gecko/20100101 Firefox/41.0 DT-Browser/DTB7.41.0.21_10',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -5779,7 +5779,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-214' => [
+    'test-0054-214' => [
         'ua' => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-GB; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -5806,7 +5806,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-215' => [
+    'test-0054-215' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 6.0.1; de-de; SM-G900F Build/MMB29M) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -5833,7 +5833,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-216' => [
+    'test-0054-216' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-A510F/A510FXXS2APD2 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -5860,7 +5860,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-217' => [
+    'test-0054-217' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; GT-P5220-ORANGE/P5220XXUBNH2 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -5887,7 +5887,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-218' => [
+    'test-0054-218' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -5914,7 +5914,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-219' => [
+    'test-0054-219' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/55.2.124 Chrome/49.2.2623.124 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Coc Coc Browser',
@@ -5941,7 +5941,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-220' => [
+    'test-0054-220' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; TP9.7-1500DC Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -5968,7 +5968,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-221' => [
+    'test-0054-221' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; de-de; SAMSUNG GT-I9195/I9195XXUBMJ7 Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Version/1.0 Chrome/18.0.1025.308 Mobile Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -5995,7 +5995,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-222' => [
+    'test-0054-222' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 733903404',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -6022,7 +6022,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-223' => [
+    'test-0054-223' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0) Gecko/20100101 Firefox/46.0 anonymized by Abelssoft 236242996',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -6049,7 +6049,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-224' => [
+    'test-0054-224' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13F69 Safari/601.1',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -6076,7 +6076,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-225' => [
+    'test-0054-225' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; GT-N7100 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6103,7 +6103,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-226' => [
+    'test-0054-226' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13B143 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -6130,7 +6130,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-227' => [
+    'test-0054-227' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 9 Build/MMB29R) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6157,7 +6157,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-228' => [
+    'test-0054-228' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; SM-S820L Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6184,7 +6184,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-229' => [
+    'test-0054-229' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; SAMSUNG GT-S6310N/S6310NXXANR5 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -6211,7 +6211,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-230' => [
+    'test-0054-230' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/538.1 (KHTML, like Gecko) Wombie/1.1.9 Safari/538.1',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -6238,7 +6238,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-231' => [
+    'test-0054-231' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; XT1562 Build/MPD24.107-52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6265,7 +6265,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-232' => [
+    'test-0054-232' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MAMD; BOIE9;ENUS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -6292,7 +6292,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-233' => [
+    'test-0054-233' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -6319,7 +6319,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-234' => [
+    'test-0054-234' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1; Galaxy Nexus Build/JRN84D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19 ACHEETAHI/2100050012',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -6346,7 +6346,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-235' => [
+    'test-0054-235' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13B143 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -6373,7 +6373,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-236' => [
+    'test-0054-236' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GT-I9505 Build/MMB29U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6400,7 +6400,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-237' => [
+    'test-0054-237' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2751.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6427,7 +6427,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-238' => [
+    'test-0054-238' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.0.3; MD_LIFETAB_P9516 Build/IML74K) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.169 Safari/537.22',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6454,7 +6454,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-239' => [
+    'test-0054-239' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-E500H Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6481,7 +6481,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-240' => [
+    'test-0054-240' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; ASUS Transformer Pad TF700T Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -6508,7 +6508,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-241' => [
+    'test-0054-241' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/13D15 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6535,7 +6535,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-242' => [
+    'test-0054-242' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; GT-P3100 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -6562,7 +6562,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-243' => [
+    'test-0054-243' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbAVR-3/5.15.1.22229)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -6589,7 +6589,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-244' => [
+    'test-0054-244' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D620 Build/KOT49I.A1395545709) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6616,7 +6616,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-245' => [
+    'test-0054-245' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; GWX:QUALIFIED; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -6643,7 +6643,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-246' => [
+    'test-0054-246' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6670,7 +6670,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-247' => [
+    'test-0054-247' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36 OPR/36.0.2130.59',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -6697,7 +6697,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-248' => [
+    'test-0054-248' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; 706_v92_jbla_fhd Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -6724,7 +6724,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-249' => [
+    'test-0054-249' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1381313899',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -6751,7 +6751,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-250' => [
+    'test-0054-250' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-T810 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -6778,7 +6778,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-251' => [
+    'test-0054-251' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; AskTbORJ/5.15.15.36191; .NET4.0E; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -6805,7 +6805,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-252' => [
+    'test-0054-252' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; GT-I9192 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6832,7 +6832,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-253' => [
+    'test-0054-253' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HUAWEI; W1-U00)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -6859,7 +6859,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-254' => [
+    'test-0054-254' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.1; nl-nl; ME301T Build/JOP40D) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -6886,7 +6886,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-255' => [
+    'test-0054-255' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; tb-webde/2.6.7; LCJB; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -6913,7 +6913,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-256' => [
+    'test-0054-256' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; MXIII-G Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6940,7 +6940,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-257' => [
+    'test-0054-257' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6967,7 +6967,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-258' => [
+    'test-0054-258' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 7_0_6 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) CriOS/47.0.2526.107 Mobile/11B651 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -6994,7 +6994,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-259' => [
+    'test-0054-259' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-T550 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7021,7 +7021,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-260' => [
+    'test-0054-260' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -7048,7 +7048,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-261' => [
+    'test-0054-261' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -7075,7 +7075,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-262' => [
+    'test-0054-262' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.10 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7102,7 +7102,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-263' => [
+    'test-0054-263' => [
         'ua' => 'Opera/9.80 (Android; Opera Mini/11.0.1912/37.8433; U; en) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -7129,7 +7129,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-264' => [
+    'test-0054-264' => [
         'ua' => 'Opera/9.80 (Android; Opera Mini/7.6.40234/37.8433; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -7156,7 +7156,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-265' => [
+    'test-0054-265' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/40.0.2214.73 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7183,7 +7183,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-266' => [
+    'test-0054-266' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/14.0.119004557 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -7210,7 +7210,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-267' => [
+    'test-0054-267' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; tb-webde/2.4.1; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -7237,7 +7237,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-268' => [
+    'test-0054-268' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2752.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7264,7 +7264,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-269' => [
+    'test-0054-269' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 867572816',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -7291,7 +7291,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-270' => [
+    'test-0054-270' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; XT890 Build/9.8.2I-50_SMI-26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7318,7 +7318,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-271' => [
+    'test-0054-271' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.26.2661.78 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7345,7 +7345,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-272' => [
+    'test-0054-272' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:) Gecko/20100101 Firefox/ anonymized by Abelssoft 1286728657',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -7372,7 +7372,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-273' => [
+    'test-0054-273' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/538.1 (KHTML, like Gecko) QupZilla/1.8.9 Safari/538.1',
         'properties' => [
             'Browser_Name'            => 'QupZilla',
@@ -7399,7 +7399,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-274' => [
+    'test-0054-274' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 3.2.1; de-de; G100W Build/HTK55D) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -7426,7 +7426,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-275' => [
+    'test-0054-275' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; XT1021 Build/LPC23.13-34.8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7453,7 +7453,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-276' => [
+    'test-0054-276' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.3; HUAWEI Y530-U00 Build/HuaweiY530-U00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7480,7 +7480,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-277' => [
+    'test-0054-277' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; HUAWEI G6-U10 Build/HuaweiG6-U10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -7507,7 +7507,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-278' => [
+    'test-0054-278' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/14.14342',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7534,7 +7534,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-279' => [
+    'test-0054-279' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Gigaset QV1030 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -7561,7 +7561,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-280' => [
+    'test-0054-280' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; B1-820 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7588,7 +7588,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-281' => [
+    'test-0054-281' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13E238 Safari/601.1',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -7615,7 +7615,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-282' => [
+    'test-0054-282' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_2_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13D15 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -7642,7 +7642,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-283' => [
+    'test-0054-283' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.22 anonymized by Abelssoft 95314542',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7669,7 +7669,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-284' => [
+    'test-0054-284' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.5; de-de; GT-I9001 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -7696,7 +7696,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-285' => [
+    'test-0054-285' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/11.1.66360 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -7723,7 +7723,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-286' => [
+    'test-0054-286' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2752.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7750,7 +7750,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-287' => [
+    'test-0054-287' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1445306351; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -7777,7 +7777,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-288' => [
+    'test-0054-288' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -7804,7 +7804,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-289' => [
+    'test-0054-289' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.1; ALE-L21 Build/HuaweiALE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 MxBrowser/4.5.9.3000',
         'properties' => [
             'Browser_Name'            => 'Maxthon',
@@ -7831,7 +7831,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-290' => [
+    'test-0054-290' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; MT13 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7858,7 +7858,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-291' => [
+    'test-0054-291' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; ZP951 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7885,7 +7885,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-292' => [
+    'test-0054-292' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7912,7 +7912,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-293' => [
+    'test-0054-293' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MAMD; tb-webde/1.6.3; (webde/1.0.0.8); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -7939,7 +7939,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-294' => [
+    'test-0054-294' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.1 (KHTML, like Gecko)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -7966,7 +7966,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-295' => [
+    'test-0054-295' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.22 anonymized by Abelssoft 1654181061',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -7993,7 +7993,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-296' => [
+    'test-0054-296' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:45.0.1) Gecko/20100101 Firefox/45.0.1 anonymized by Abelssoft 1393765054',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -8020,7 +8020,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-297' => [
+    'test-0054-297' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SGP612 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8047,7 +8047,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-298' => [
+    'test-0054-298' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43 (Edition Campaign 68)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -8074,7 +8074,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-299' => [
+    'test-0054-299' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node KYMHNQX6HBBLUBB3EY23ZDSFKCKEPHLOUBFFTMGDJHWREYKO5HZCVUQMDVTPPNI.7.6N634VLAVN7KKRZ7DLRVOKS6O67JCXDLAJBNKDEGZ4KO3JF2.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -8101,7 +8101,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-300' => [
+    'test-0054-300' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node OFDPVY6FPNBDT7GOM557RJ6ZOT3PEFNQ6YN3B2VEXNZS5GWAWD5ZRWC6VQJLTSK.L.BEZE7X63Y3ZXVMYODOI3K5OK6OZ47H677DFZX2AXVXPRLGK6.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -8128,7 +8128,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-301' => [
+    'test-0054-301' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8155,7 +8155,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-302' => [
+    'test-0054-302' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8182,7 +8182,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-303' => [
+    'test-0054-303' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB6; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8209,7 +8209,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-304' => [
+    'test-0054-304' => [
         'ua' => 'Mozilla/5.0 (Windows 6.1) (KHTML, 1242116149',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -8236,7 +8236,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-305' => [
+    'test-0054-305' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; tb-webde/2.6.7; LCJB; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8263,7 +8263,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-306' => [
+    'test-0054-306' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/601.4.4 (KHTML, like Gecko)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -8290,7 +8290,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-307' => [
+    'test-0054-307' => [
         'ua' => 'curl/7.49.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -8317,7 +8317,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-308' => [
+    'test-0054-308' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAEM; InfoPath.2; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8344,7 +8344,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-309' => [
+    'test-0054-309' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node DZUKQZW5T6WCW2RDFNJKRUIEX2TOIC4YR6CSLQMFTQKCCBNYODBO4KWLM2GNXXT.U.L6A57NK75R4X3M2ZD2YAVPVKGFZPERCCKOM5AC3CUZZHRQPQ.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -8371,7 +8371,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-310' => [
+    'test-0054-310' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1) Presto/2.12 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -8398,7 +8398,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-311' => [
+    'test-0054-311' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8425,7 +8425,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-312' => [
+    'test-0054-312' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1700524274',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -8452,7 +8452,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-313' => [
+    'test-0054-313' => [
         'ua' => 'Opera/12.80 (Windows NT 5.1; U; en) Presto/2.10.289 Version/12.02',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -8479,7 +8479,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-314' => [
+    'test-0054-314' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.78.2 (KHTML, like Gecko) WebClip/9537.86.6.16 Safari/9537.86.6.17',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -8506,7 +8506,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-315' => [
+    'test-0054-315' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-T810 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -8533,7 +8533,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-316' => [
+    'test-0054-316' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node YONIWKDDTT57XFKXXYGYBZJUM4I7PRAN6AJMUBDANW6S3BSV3MFXWKBDLZYE42I.6.U7KAO3QAGLLEWRWYX6GHNCCYNOPIMCDOTJVDAH2ERVLXQT4B.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -8560,7 +8560,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-317' => [
+    'test-0054-317' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 ASW/1.48.2066.101',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8587,7 +8587,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-318' => [
+    'test-0054-318' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8614,7 +8614,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-319' => [
+    'test-0054-319' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0; tb-webde/1.9.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8641,7 +8641,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-320' => [
+    'test-0054-320' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -8668,7 +8668,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-321' => [
+    'test-0054-321' => [
         'ua' => 'Opera/9.80 (Android; Opera Mini/14.0.2065/37.8433; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -8695,7 +8695,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-322' => [
+    'test-0054-322' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/12B435 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -8722,7 +8722,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-323' => [
+    'test-0054-323' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; HTC_One Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -8749,7 +8749,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-324' => [
+    'test-0054-324' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; NX512J Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8776,7 +8776,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-325' => [
+    'test-0054-325' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8803,7 +8803,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-326' => [
+    'test-0054-326' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; SurfTab xintron i 8.0 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8830,7 +8830,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-327' => [
+    'test-0054-327' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8857,7 +8857,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-328' => [
+    'test-0054-328' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; HUAWEI CRR-L09 Build/HUAWEICRR-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8884,7 +8884,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-329' => [
+    'test-0054-329' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; HTC One X+ Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -8911,7 +8911,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-330' => [
+    'test-0054-330' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.10 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8938,7 +8938,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-331' => [
+    'test-0054-331' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET4.0C; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; AskTbAVR-4/5.15.31.57710)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -8965,7 +8965,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-332' => [
+    'test-0054-332' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G925K Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -8992,7 +8992,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-333' => [
+    'test-0054-333' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; IQ1010 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9019,7 +9019,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-334' => [
+    'test-0054-334' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.3; HTC Desire 510 Build/KTU84L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9046,7 +9046,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-335' => [
+    'test-0054-335' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; (webde/1.0.0.8))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -9073,7 +9073,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-336' => [
+    'test-0054-336' => [
         'ua' => 'Opera/9.80 (Series 60; Opera Mini/7.1.32444/37.8433; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -9100,7 +9100,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-337' => [
+    'test-0054-337' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; GT-N7100 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.61 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9127,7 +9127,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-338' => [
+    'test-0054-338' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/41.0.1 (x86 de) Anonymisiert durch AlMiSoft Browser-Maulkorb 68247701',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -9154,7 +9154,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-339' => [
+    'test-0054-339' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-N910F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -9181,7 +9181,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-340' => [
+    'test-0054-340' => [
         'ua' => 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 640 XL Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Mobile Safari/537.36 Edge/14.14342',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9208,7 +9208,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-341' => [
+    'test-0054-341' => [
         'ua' => 'Opera/9.80 (Windows NT 5.1; U; de) Presto/2.9.168 Version/11.51',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -9235,7 +9235,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-342' => [
+    'test-0054-342' => [
         'ua' => 'Mozilla/5.0 (Android 4.3; Mobile; rv:43.0) Gecko/43.0 Firefox/43.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -9262,7 +9262,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-343' => [
+    'test-0054-343' => [
         'ua' => 'Mozilla/5.0 (Android 5.0.1; Mobile; rv:47.0) Gecko/47.0 Firefox/47.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -9289,7 +9289,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-344' => [
+    'test-0054-344' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; VOYAGER2 DG310 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9316,7 +9316,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-345' => [
+    'test-0054-345' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MTC19T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.43 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9343,7 +9343,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-346' => [
+    'test-0054-346' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; ru-ru; GT-P5210 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -9370,7 +9370,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-347' => [
+    'test-0054-347' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; (web.de/1.0.0.8); MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -9397,7 +9397,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-348' => [
+    'test-0054-348' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; ZTE Blade L3 Build/LRX21M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -9424,7 +9424,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-349' => [
+    'test-0054-349' => [
         'ua' => 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 930) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Mobile Safari/537.36 Edge/14.14342',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9451,7 +9451,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-350' => [
+    'test-0054-350' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; VT10416-2 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9478,7 +9478,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-351' => [
+    'test-0054-351' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; E39 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -9505,7 +9505,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-352' => [
+    'test-0054-352' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.1; HUAWEI GRA-L09 Build/HUAWEIGRA-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -9532,7 +9532,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-353' => [
+    'test-0054-353' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Discovery_1001 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9559,7 +9559,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-354' => [
+    'test-0054-354' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; D6683 Build/23.1.2.E.0.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9586,7 +9586,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-355' => [
+    'test-0054-355' => [
         'ua' => 'Mozilla/5.0 (Android 4.4.2; Mobile; rv:42.0) Gecko/42.0 Firefox/42.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -9613,7 +9613,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-356' => [
+    'test-0054-356' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0) AppEngine-Google; (+http://code.google.com/appengine; appid: s~rertrtrg-02)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -9640,7 +9640,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-357' => [
+    'test-0054-357' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; K08; Android/4.4.2; Release/12.22.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -9667,7 +9667,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-358' => [
+    'test-0054-358' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; ru-ru; GT-I9100 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -9694,7 +9694,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-359' => [
+    'test-0054-359' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:42.0; WUID=8b110d9f68f0958e518f59e006879585; WTB=3580) Gecko/20100101 Firefox/42.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -9721,7 +9721,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-360' => [
+    'test-0054-360' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:45.0 () Gecko/20100101 Firefox/45.0 ( anonymized by Abelssoft 1325980940',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -9748,7 +9748,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-361' => [
+    'test-0054-361' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.54 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9775,7 +9775,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-362' => [
+    'test-0054-362' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; McAfee; .NET4.0E; GWX:RED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -9802,7 +9802,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-363' => [
+    'test-0054-363' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; K4000_PRO Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -9829,7 +9829,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-364' => [
+    'test-0054-364' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; K08 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -9856,7 +9856,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-365' => [
+    'test-0054-365' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2752.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -9883,7 +9883,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-366' => [
+    'test-0054-366' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; LIFETAB_S1034X Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -9910,7 +9910,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-367' => [
+    'test-0054-367' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-E975 Build/KOT49I.E97520a) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -9937,7 +9937,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-368' => [
+    'test-0054-368' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:41.0) Gecko/20100101 Firefox/45.0 (x86 de) Anonymisiert durch AlMiSoft Browser-Anonymisierer 44318158',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -9964,7 +9964,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-369' => [
+    'test-0054-369' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; LIFETAB_S9714 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -9991,7 +9991,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-370' => [
+    'test-0054-370' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9505/I9505XXUGNH7 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -10018,7 +10018,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-371' => [
+    'test-0054-371' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; pl-pl; LG-P760 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -10045,7 +10045,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-372' => [
+    'test-0054-372' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/534.15 (KHTML, like Gecko) Chrome/10.0.613.0 Safari/534.15',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10072,7 +10072,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-373' => [
+    'test-0054-373' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2751.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10099,7 +10099,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-374' => [
+    'test-0054-374' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D160 Build/KOT49I.A1440493504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10126,7 +10126,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-375' => [
+    'test-0054-375' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1397394576',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -10153,7 +10153,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-376' => [
+    'test-0054-376' => [
         'ua' => 'Dalvik/2.1.0 (Linux; U; Android 5.0.1; LG-H420 Build/LRX21Y)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -10180,7 +10180,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-377' => [
+    'test-0054-377' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; GT-I9301I Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10207,7 +10207,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-378' => [
+    'test-0054-378' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE; rv:1.8.1.24pre) Gecko/20100228 K-Meleon/1.5.4',
         'properties' => [
             'Browser_Name'            => 'K-Meleon',
@@ -10234,7 +10234,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-379' => [
+    'test-0054-379' => [
         'ua' => 'Opera/9.00 (Windows NT 5.1; U; ru)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -10261,7 +10261,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-380' => [
+    'test-0054-380' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node MJVGWIHOF7OWSABQAHAH6BROBFJPEQ6SSHI7M3ZAPCLQBYUHP6RQWYDDJA4YLU2.G.UNCQCFDQBF3ZOCURCF2HZK4DUI6HI3MYJP2B6Q6KFY2IBBKV.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -10288,7 +10288,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-381' => [
+    'test-0054-381' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; Tablet PC 2.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -10315,7 +10315,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-382' => [
+    'test-0054-382' => [
         'ua' => 'Opera/9.80 (Android; Opera Mini/16.0.2168/37.8433; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -10342,7 +10342,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-383' => [
+    'test-0054-383' => [
         'ua' => 'yacybot (/global; amd64 no-os-name no-os-version; java no-java-version; Europe/en) http://yacy.net/bot.html',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -10369,7 +10369,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-384' => [
+    'test-0054-384' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0.1) Gecko/20100101 Firefox/36.0.1 anonymized by Abelssoft 280855505',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -10396,7 +10396,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-385' => [
+    'test-0054-385' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -10423,7 +10423,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-386' => [
+    'test-0054-386' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-T550 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36 GSA/5.13.31.21.arm',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -10450,7 +10450,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-387' => [
+    'test-0054-387' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; CAPTIVA PAD 10.1 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -10477,7 +10477,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-388' => [
+    'test-0054-388' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; TAQ-70202 MK2 PO9191 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -10504,7 +10504,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-389' => [
+    'test-0054-389' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Z1 Build/LMY49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.61 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10531,7 +10531,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-390' => [
+    'test-0054-390' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:45.0.2) Gecko/20100101 Firefox/45.0.2 anonymized by Abelssoft 323569196',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -10558,7 +10558,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-391' => [
+    'test-0054-391' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; E5823 Build/32.1.A.1.185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10585,7 +10585,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-392' => [
+    'test-0054-392' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-T550 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.61 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10612,7 +10612,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-393' => [
+    'test-0054-393' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.71 Safari/537.17 YE',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10639,7 +10639,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-394' => [
+    'test-0054-394' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1; WOW64; MRA 6.2 (build 7314)) Presto/2.12.388 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -10666,7 +10666,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-395' => [
+    'test-0054-395' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -10693,7 +10693,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-396' => [
+    'test-0054-396' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; PAP4055DUO Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -10720,7 +10720,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-397' => [
+    'test-0054-397' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10747,7 +10747,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-398' => [
+    'test-0054-398' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) FxiOS/3.0 Mobile/13F69 Safari/601.1.46',
         'properties' => [
             'Browser_Name'            => 'Firefox for iOS',
@@ -10774,7 +10774,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-399' => [
+    'test-0054-399' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; K012 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.64 Safari/537.36 OPR/33.0.2002.97617',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -10801,7 +10801,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-400' => [
+    'test-0054-400' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0 DT-Browser/DTB7.41.0.21_10',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -10828,7 +10828,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-401' => [
+    'test-0054-401' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0 DT-Browser/DTB7.031.0020',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -10855,7 +10855,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-402' => [
+    'test-0054-402' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36 OPR/18.0.1284.63',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -10882,7 +10882,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-403' => [
+    'test-0054-403' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.1; LG-F320S Build/LRX21Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10909,7 +10909,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-404' => [
+    'test-0054-404' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2748.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10936,7 +10936,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-405' => [
+    'test-0054-405' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Lenovo YT3-X50L Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -10963,7 +10963,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-406' => [
+    'test-0054-406' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; B1-730HD Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -10990,7 +10990,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-407' => [
+    'test-0054-407' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0; WUID=db3e065c934eabdc5702eff7009222df; WTB=4028) Gecko/20100101 Firefox/35.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -11017,7 +11017,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-408' => [
+    'test-0054-408' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0; BOIE9;DEDEMSE)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -11044,7 +11044,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-409' => [
+    'test-0054-409' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/14.14342',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11071,7 +11071,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-410' => [
+    'test-0054-410' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0.2) Gecko/20120216 Firefox/10.0.2 SeaMonkey/2.7.2',
         'properties' => [
             'Browser_Name'            => 'SeaMonkey',
@@ -11098,7 +11098,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-411' => [
+    'test-0054-411' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko,gzip(gfe)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -11125,7 +11125,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-412' => [
+    'test-0054-412' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.1; SGPT12 Build/TJDSU0177) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11152,7 +11152,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-413' => [
+    'test-0054-413' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/50.0.2661.95 Mobile/13B143 Safari/601.1.46',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11179,7 +11179,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-414' => [
+    'test-0054-414' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11206,7 +11206,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-415' => [
+    'test-0054-415' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.0.4; XT925 Build/7.7.1Q_144_VQU_DE_S3-35-1101) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11233,7 +11233,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-416' => [
+    'test-0054-416' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-D405 Build/KOT49I.A1415186125) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -11260,7 +11260,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-417' => [
+    'test-0054-417' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; HS-U980 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -11287,7 +11287,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-418' => [
+    'test-0054-418' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; UNO_X10 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11314,7 +11314,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-419' => [
+    'test-0054-419' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686; rv:24.0) Gecko/20140319 Firefox/24.0 Iceweasel/24.4.0',
         'properties' => [
             'Browser_Name'            => 'Iceweasel',
@@ -11341,7 +11341,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-420' => [
+    'test-0054-420' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686; rv:17.0) Gecko/20130917 Firefox/17.0 Iceweasel/17.0.9',
         'properties' => [
             'Browser_Name'            => 'Iceweasel',
@@ -11368,7 +11368,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-421' => [
+    'test-0054-421' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G928C Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -11395,7 +11395,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-422' => [
+    'test-0054-422' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; fr-fr; SM-G316HU Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -11422,7 +11422,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-423' => [
+    'test-0054-423' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; BlueClient)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -11449,7 +11449,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-424' => [
+    'test-0054-424' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; TAB1024 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -11476,7 +11476,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-425' => [
+    'test-0054-425' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; FP2 Build/FP2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11503,7 +11503,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-426' => [
+    'test-0054-426' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; D5503 Build/14.6.A.1.236; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -11530,7 +11530,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-427' => [
+    'test-0054-427' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/43.0.2357.61 Mobile/13D15 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11557,7 +11557,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-428' => [
+    'test-0054-428' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GT-I9300 Build/MOB30J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -11584,7 +11584,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-429' => [
+    'test-0054-429' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G361F Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -11611,7 +11611,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-430' => [
+    'test-0054-430' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-li; CUBOT ONE-S Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -11638,7 +11638,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-431' => [
+    'test-0054-431' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; S208 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11665,7 +11665,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-432' => [
+    'test-0054-432' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.10 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11692,7 +11692,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-433' => [
+    'test-0054-433' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; tb-webde/2.4.1; (webde/1.4.0.0); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -11719,7 +11719,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-434' => [
+    'test-0054-434' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2750.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11746,7 +11746,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-435' => [
+    'test-0054-435' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.0.122066290 Mobile/13B143 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -11773,7 +11773,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-436' => [
+    'test-0054-436' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D802 Build/KOT49I.D80220h) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -11800,7 +11800,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-437' => [
+    'test-0054-437' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; AOL 9.7; AOLBuild 4343.55; Windows NT 6.2; WOW64; Trident/7.0; MALNJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -11827,7 +11827,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-438' => [
+    'test-0054-438' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4; LIFETAB_S785X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -11854,7 +11854,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-439' => [
+    'test-0054-439' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; S222 Build/CUBOT) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -11881,7 +11881,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-440' => [
+    'test-0054-440' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.54 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11908,7 +11908,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-441' => [
+    'test-0054-441' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; de-de; SAMSUNG GT-I9070P/I9070PBOLK1 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -11935,7 +11935,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-442' => [
+    'test-0054-442' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; GT-N8000 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -11962,7 +11962,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-443' => [
+    'test-0054-443' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; TAQ-10162 PO9349 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -11989,7 +11989,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-444' => [
+    'test-0054-444' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONETOUCH 6032 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12016,7 +12016,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-445' => [
+    'test-0054-445' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2750.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12043,7 +12043,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-446' => [
+    'test-0054-446' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; MDDRJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -12070,7 +12070,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-447' => [
+    'test-0054-447' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS armv7l 8302.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2727.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12097,7 +12097,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-448' => [
+    'test-0054-448' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:38.0) Gecko/20100101 IceDragon/38.0.5 Firefox/38.0.5',
         'properties' => [
             'Browser_Name'            => 'Dragon',
@@ -12124,7 +12124,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-449' => [
+    'test-0054-449' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:26.0) Gecko/20100101 Firefox/26.0 anonymized by Abelssoft 2046535776',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -12151,7 +12151,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-450' => [
+    'test-0054-450' => [
         'ua' => 'Mozilla/5.0 (masking-agent; rv:32.0) Gecko/20100101 Firefox/32.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -12178,7 +12178,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-451' => [
+    'test-0054-451' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2751.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12205,7 +12205,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-452' => [
+    'test-0054-452' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Iron/36.0.1950.0 Chrome/36.0.1950.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Iron',
@@ -12232,7 +12232,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-453' => [
+    'test-0054-453' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Archos 70b Xenon Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12259,7 +12259,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-454' => [
+    'test-0054-454' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; KFARWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Silk/50.2.1 like Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Silk',
@@ -12286,7 +12286,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-455' => [
+    'test-0054-455' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; MAAU; EIE10;DEDEWOL; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -12313,7 +12313,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-456' => [
+    'test-0054-456' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 2053794818',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -12340,7 +12340,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-457' => [
+    'test-0054-457' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B141 Safari/8536.25',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -12367,7 +12367,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-458' => [
+    'test-0054-458' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:45.0.2) Gecko/20100101 Firefox/45.0.2 anonymized by Abelssoft 1251105896',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -12394,7 +12394,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-459' => [
+    'test-0054-459' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G925F/XXS3DPE5 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -12421,7 +12421,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-460' => [
+    'test-0054-460' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 2135760792',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -12448,7 +12448,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-461' => [
+    'test-0054-461' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GCE x86 phone Build/MMB30D.MZC89) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2751.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12475,7 +12475,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-462' => [
+    'test-0054-462' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; 10BPE0H Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -12502,7 +12502,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-463' => [
+    'test-0054-463' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 5.1.1; de-de; SM-G925F Build/LMY47X) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -12529,7 +12529,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-464' => [
+    'test-0054-464' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; UniverseTap Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -12556,7 +12556,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-465' => [
+    'test-0054-465' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Archos 45 Neon Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12583,7 +12583,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-466' => [
+    'test-0054-466' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; tb-webde/2.6.7; ASU2JS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -12610,7 +12610,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-467' => [
+    'test-0054-467' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; Kazam Trooper2 60 Build/KAZAMA1800) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12637,7 +12637,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-468' => [
+    'test-0054-468' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12664,7 +12664,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-469' => [
+    'test-0054-469' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; C6603 Build/10.5.1.A.0.292) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12691,7 +12691,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-470' => [
+    'test-0054-470' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-T550 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.54 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12718,7 +12718,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-471' => [
+    'test-0054-471' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12745,7 +12745,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-472' => [
+    'test-0054-472' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686; rv:26.0) Gecko/20100101 Firefox/26.0 Iceweasel/26.0',
         'properties' => [
             'Browser_Name'            => 'Iceweasel',
@@ -12772,7 +12772,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-473' => [
+    'test-0054-473' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2750.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12799,7 +12799,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-474' => [
+    'test-0054-474' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node DJFHKHBIDIWQ6N33DH53OTFPQY6KZRWGOM3C537CJPX266YISVG6HBSQHVDYZ3E.X.BTHVYYVVPJENSWXCF3BEPPYOR35CT6B3LMBBXFWXWL4PHF3S.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -12826,7 +12826,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-475' => [
+    'test-0054-475' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; tb-gmx/2.6.7; (gmx/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -12853,7 +12853,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-476' => [
+    'test-0054-476' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.6 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12880,7 +12880,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-477' => [
+    'test-0054-477' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 5.1.1; de-DE; D5503 Build/14.6.A.1.236) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OPR/16.0.2168.103662 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -12907,7 +12907,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-478' => [
+    'test-0054-478' => [
         'ua' => 'SynHttpClient-Built/5825',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -12934,7 +12934,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-479' => [
+    'test-0054-479' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; WOW64; rv:41.0) Gecko/20100101 Firefox/46.0.1 (x86 de) Anonymisiert durch AlMiSoft Browser-Maulkorb 47938088',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -12961,7 +12961,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-480' => [
+    'test-0054-480' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.6 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -12988,7 +12988,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-481' => [
+    'test-0054-481' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; 6045Y Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13015,7 +13015,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-482' => [
+    'test-0054-482' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:QUALIFIED; ms-office)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13042,7 +13042,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-483' => [
+    'test-0054-483' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node QUZNJDWZELMKFZ4RJ5DKXLVMF6CIMULRQYDR2DMQYXH2RFWX2FV4H77HLQPC47P.R.3NVKJGQVMGPY7GQBLCN2ONHUDERK4YPD4IYGAECJU36KB277.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -13069,7 +13069,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-484' => [
+    'test-0054-484' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64; rv:42.0) Gecko/20100101 Firefox/42.0 SeaMonkey/2.39 Lightning/4.4b2',
         'properties' => [
             'Browser_Name'            => 'SeaMonkey',
@@ -13096,7 +13096,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-485' => [
+    'test-0054-485' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Endeavour_101G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13123,7 +13123,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-486' => [
+    'test-0054-486' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.31 (KHTML, like Gecko) PhantomJS/19.0',
         'properties' => [
             'Browser_Name'            => 'PhantomJS',
@@ -13150,7 +13150,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-487' => [
+    'test-0054-487' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; rv:33.0; WUID=181ad19679f6d06c0fcb5b47e3849152; WTB=24086; WUID=181ad19679f6d06c0fcb5b47e3849152; WTB=24086) Gecko/20100101 Firefox/33.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -13177,7 +13177,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-488' => [
+    'test-0054-488' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0.1) Gecko/20100101 Firefox/36.0.1 anonymized by Abelssoft 334289647',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -13204,7 +13204,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-489' => [
+    'test-0054-489' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node D4R4EJUOJKQF2TXEN5DIZGB3C36TEMPPJQ7XFIIFLYR2I45NV352QGFRFZQST6C.2.IJVOTEKTXNINLWVY6T6MD4BF6A4I24XOX7Z2ECJIYOG4LKJN.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -13231,7 +13231,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-490' => [
+    'test-0054-490' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D405 Build/KOT49I.A1415186125) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13258,7 +13258,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-491' => [
+    'test-0054-491' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI P7-L10 Build/HuaweiP7-L10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -13285,7 +13285,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-492' => [
+    'test-0054-492' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13312,7 +13312,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-493' => [
+    'test-0054-493' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 4.0) Opera 7.0 [en]',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -13339,7 +13339,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-494' => [
+    'test-0054-494' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2;de-DE, en-US; 7045Y Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -13366,7 +13366,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-495' => [
+    'test-0054-495' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Win64; x64; Trident/6.0; tb-gmx/2.6.7; (gmx/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13393,7 +13393,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-496' => [
+    'test-0054-496' => [
         'ua' => 'Mozilla/5.0 (AOL 9.7; AOLBuild 4343.55; Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13420,7 +13420,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-497' => [
+    'test-0054-497' => [
         'ua' => 'Netvibes (http://www.netvibes.com)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -13447,7 +13447,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-498' => [
+    'test-0054-498' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB6.4; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13474,7 +13474,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-499' => [
+    'test-0054-499' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; GTB6.4; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13501,7 +13501,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-500' => [
+    'test-0054-500' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; tb-webde/2.6.7; ASU2JS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13528,7 +13528,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-501' => [
+    'test-0054-501' => [
         'ua' => 'AndroidDownloadManager/4.1.1 (Linux; U; Android 4.1.1; BioniQ700HX Build/JRO03C)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -13555,7 +13555,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-502' => [
+    'test-0054-502' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.31 (KHTML like Gecko) Chrome/26.0.1410.64 Safari/537.31',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13582,7 +13582,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-503' => [
+    'test-0054-503' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; AskTbAVR-4/5.15.24.42066)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13609,7 +13609,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-504' => [
+    'test-0054-504' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64;  Anonymisiert durch AlMiSoft Browser-Maulkorb 39971049) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13636,7 +13636,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-505' => [
+    'test-0054-505' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG-SM-G920A Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13663,7 +13663,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-506' => [
+    'test-0054-506' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-D213 Build/KOT49I.A1407976057) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -13690,7 +13690,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-507' => [
+    'test-0054-507' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbAVR-4/5.15.10.29781; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13717,7 +13717,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-508' => [
+    'test-0054-508' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1;  Anonymisiert durch AlMiSoft Browser-Anonymisierer 37392274; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; Tablet PC 2.0; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13744,7 +13744,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-509' => [
+    'test-0054-509' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; GWX:DOWNLOADED; Creative AutoUpdate v1.41.07; Microsoft Outlook 15.0.4815; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13771,7 +13771,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-510' => [
+    'test-0054-510' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D280 Build/KOT49I.A1399482427) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13798,7 +13798,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-511' => [
+    'test-0054-511' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.5; rv:13.0) Gecko/20100101 Firefox/13.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -13825,7 +13825,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-512' => [
+    'test-0054-512' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; S7Q Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -13852,7 +13852,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-513' => [
+    'test-0054-513' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; GTB7.5; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13879,7 +13879,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-514' => [
+    'test-0054-514' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -13906,7 +13906,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-515' => [
+    'test-0054-515' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.1; ASUS Transformer Pad TF700T Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13933,7 +13933,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-516' => [
+    'test-0054-516' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; B1-710 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13960,7 +13960,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-517' => [
+    'test-0054-517' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; D5103 Build/18.1.A.1.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -13987,7 +13987,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-518' => [
+    'test-0054-518' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; HUAWEI GRA-L09 Build/HUAWEIGRA-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14014,7 +14014,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-519' => [
+    'test-0054-519' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -14041,7 +14041,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-520' => [
+    'test-0054-520' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 2028724395',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -14068,7 +14068,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-521' => [
+    'test-0054-521' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3; ; ; ;s093g953;hoch)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -14095,7 +14095,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-522' => [
+    'test-0054-522' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MOB30H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -14122,7 +14122,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-523' => [
+    'test-0054-523' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4; S108 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -14149,7 +14149,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-524' => [
+    'test-0054-524' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 AviraScout/2016.05.18.00018s',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14176,7 +14176,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-525' => [
+    'test-0054-525' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Dragon Touch M8 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Dragon',
@@ -14203,7 +14203,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-526' => [
+    'test-0054-526' => [
         'ua' => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; de; rv:1.9.2.28) Gecko/20120306 Firefox/3.6.28',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -14230,7 +14230,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-527' => [
+    'test-0054-527' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; tb-gmx/2.6.7; ASJB; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -14257,7 +14257,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-528' => [
+    'test-0054-528' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-N900P Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -14284,7 +14284,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-529' => [
+    'test-0054-529' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; D2203 Build/18.4.C.1.29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14311,7 +14311,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-530' => [
+    'test-0054-530' => [
         'ua' => 'Opera/9.51 (Windows 98; U; de)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -14338,7 +14338,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-531' => [
+    'test-0054-531' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; ONE TOUCH EVO7HD Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -14365,7 +14365,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-532' => [
+    'test-0054-532' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 5 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.1.2126.102083',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -14392,7 +14392,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-533' => [
+    'test-0054-533' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; SM-G920F Build/MMB29K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.8.770 U3/0.8.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'UC Browser',
@@ -14419,7 +14419,7 @@ return [
             'RenderingEngine_Maker'   => 'UC Web',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-534' => [
+    'test-0054-534' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MOB30J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14446,7 +14446,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-535' => [
+    'test-0054-535' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; Vodafone Smart 4G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14473,7 +14473,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-536' => [
+    'test-0054-536' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; ComCard GmbH; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -14500,7 +14500,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-537' => [
+    'test-0054-537' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.54 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14527,7 +14527,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-538' => [
+    'test-0054-538' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B143 Safari/8536.25',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -14554,7 +14554,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-539' => [
+    'test-0054-539' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 [FBAN/FBIOS;FBAV/52.0.0.46.157;FBBV/26424168;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.3.1;FBSS/2; FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -14581,7 +14581,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-540' => [
+    'test-0054-540' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_0 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.0.122066290 Mobile/13A344 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -14608,7 +14608,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-541' => [
+    'test-0054-541' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GT-I9300 Build/MOB30J; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -14635,7 +14635,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-542' => [
+    'test-0054-542' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.0.122066290 Mobile/12D508 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -14662,7 +14662,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-543' => [
+    'test-0054-543' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36,gzip(gfe)',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14689,7 +14689,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-544' => [
+    'test-0054-544' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3; ; ; ;s093a673;hoch)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -14716,7 +14716,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-545' => [
+    'test-0054-545' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; D5803 Build/23.2.A.1.62) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14743,7 +14743,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-546' => [
+    'test-0054-546' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36 OPR/37.0.2178.41',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -14770,7 +14770,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-547' => [
+    'test-0054-547' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.36 Safari/537.36 OPR/38.0.2220.12 (Edition beta)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -14797,7 +14797,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-548' => [
+    'test-0054-548' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36 OPR/36.0.2130.66 Anonymisiert durch AlMiSoft Browser-Anonymisierer 32332881',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -14824,7 +14824,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-549' => [
+    'test-0054-549' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:43.0.1) Gecko/20100101 Firefox/43.0.1 anonymized by Abelssoft 906825098',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -14851,7 +14851,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-550' => [
+    'test-0054-550' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; LIFETAB_S733X Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14878,7 +14878,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-551' => [
+    'test-0054-551' => [
         'ua' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:19.0) Gecko/20100101 Firefox/19.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -14905,7 +14905,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-552' => [
+    'test-0054-552' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -14932,7 +14932,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-553' => [
+    'test-0054-553' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2749.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -14959,7 +14959,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-554' => [
+    'test-0054-554' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0; tb-webde/1.7.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -14986,7 +14986,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-555' => [
+    'test-0054-555' => [
         'ua' => 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Mobile Safari/537.36 Edge/14.14342',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15013,7 +15013,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-556' => [
+    'test-0054-556' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:41.0 () Gecko/20100101 Firefox/41.0 ( anonymized by Abelssoft 1609568553',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -15040,7 +15040,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-557' => [
+    'test-0054-557' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1716604950',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -15067,7 +15067,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-558' => [
+    'test-0054-558' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2749.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15094,7 +15094,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-559' => [
+    'test-0054-559' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; A0001 Build/MMB29X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -15121,7 +15121,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-560' => [
+    'test-0054-560' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.40 Safari/537.31',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15148,7 +15148,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-561' => [
+    'test-0054-561' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; sl-si; GT-S6500 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -15175,7 +15175,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-562' => [
+    'test-0054-562' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2;de-de; Lenovo S5000-F/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2.2 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -15202,7 +15202,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-563' => [
+    'test-0054-563' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; PX8845 SX7.v2 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.99 Safari/537.36 OPR/35.0.2070.100283',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -15229,7 +15229,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-564' => [
+    'test-0054-564' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; G620S-L01 Build/HuaweiG620S-L01C150B265) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15256,7 +15256,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-565' => [
+    'test-0054-565' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; YOGA Tablet 2 Pro-1380F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15283,7 +15283,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-566' => [
+    'test-0054-566' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0; MSN 9.0;MSN 9.1;MSN 9.6;MSN 10.0;MSN 10.2;MSN 10.5;MSN 11;MSN 11.5; MSNbMSNI; MSNmde-de; MSNcOTH) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -15310,7 +15310,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-567' => [
+    'test-0054-567' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2749.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15337,7 +15337,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-568' => [
+    'test-0054-568' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; tb-webde/2.3.0; (web.de/1.3.0.0); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -15364,7 +15364,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-569' => [
+    'test-0054-569' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.77.4 (KHTML, like Gecko) Version/6.1.5 Safari/537.77.4',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -15391,7 +15391,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-570' => [
+    'test-0054-570' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/7.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -15418,7 +15418,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-571' => [
+    'test-0054-571' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2750.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15445,7 +15445,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-572' => [
+    'test-0054-572' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 AOL/9.7 AOLBuild/4343.4025.de Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15472,7 +15472,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-573' => [
+    'test-0054-573' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; PadFone 2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -15499,7 +15499,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-574' => [
+    'test-0054-574' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Mobile Safari/537.36 OPR/34.0.2044.98679',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -15526,7 +15526,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-575' => [
+    'test-0054-575' => [
         'ua' => 'Webshot/0.9 ( http://www.shrinktheweb.com/ )',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -15553,7 +15553,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-576' => [
+    'test-0054-576' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; rv:45.0) Gecko/20100101 Firefox/45.0 TO-Browser/TOB7.45.0.113_10',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -15580,7 +15580,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-577' => [
+    'test-0054-577' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.0 AOL/9.7 AOLBuild/4343.2046.US Safari/537.1',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15607,7 +15607,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-578' => [
+    'test-0054-578' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; Archos 50 Neon Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15634,7 +15634,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-579' => [
+    'test-0054-579' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.19 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15661,7 +15661,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-580' => [
+    'test-0054-580' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; GTB7.5; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; eSobiSubscriber 2.0.4.16; InfoPath.2; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET CLR 3.0.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -15688,7 +15688,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-581' => [
+    'test-0054-581' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; tb-gmx/2.6.7; TOnlineIE11B; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -15715,7 +15715,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-582' => [
+    'test-0054-582' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; MEDION E4506 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -15742,7 +15742,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-583' => [
+    'test-0054-583' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.0.122066290 Mobile/12D508 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -15769,7 +15769,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-584' => [
+    'test-0054-584' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; GT-P3110 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -15796,7 +15796,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-585' => [
+    'test-0054-585' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node 7B6KKTWRYPQ57NYFOVAMTHHRHH22325ZZDAIBPDQQNLEPFHRSBOH2WQVEEFZ2YA.H.7H7GI2VT73SGYPHZ4CKENVP6Q2VQK5KT5EWB2BEOCJQ62KET.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -15823,7 +15823,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-586' => [
+    'test-0054-586' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safari/8536.25',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -15850,7 +15850,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-587' => [
+    'test-0054-587' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1;engb;Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 4.1.1; de-de; ST80208-2 Build/JRO03HSafari/534.30;SurfTab_8.0',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -15877,7 +15877,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-588' => [
+    'test-0054-588' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.0; AOLBuild 4327.5201; Windows NT 5.1; Trident/4.0; MRA 8.1 (build 6337); GTB7.5; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -15904,7 +15904,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-589' => [
+    'test-0054-589' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Aquaris M5 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -15931,7 +15931,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-590' => [
+    'test-0054-590' => [
         'ua' => 'Mozilla/5.0 (Android; Mobile; rv:38.0) Gecko/38.0 Firefox/38.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -15958,7 +15958,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-591' => [
+    'test-0054-591' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node LLFI6JCEYJJYCYVVFABIF2IMZBGVZPCNTX3VLJP4KR5BTTQ5KAG7TEKPR4ABM44.6.RQHR4V55QMABYNLFTGU4YQG7VPPFC2GDFUWO2FV4CRUMX5BW.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -15985,7 +15985,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-592' => [
+    'test-0054-592' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36 OPR/25.0.1614.68',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -16012,7 +16012,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-593' => [
+    'test-0054-593' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node UNPNUM27VFKLHKPXCFZY7HC3ZJ26SQ3FPV45SANMRHDGZBWLRH7GKMHIE3FYLDC.5.JYJ43A6JV5C66F3TGWXWYIU7RMHYSEIYH65HZRXBPMKOYZUL.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -16039,7 +16039,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-594' => [
+    'test-0054-594' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; HPNTDF; .NET4.0C; .NET4.0E; GWX:RESERVED; GWX:QUALIFIED; ms-office)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16066,7 +16066,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-595' => [
+    'test-0054-595' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6) Gecko/20100101 Firefox/5.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -16093,7 +16093,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-596' => [
+    'test-0054-596' => [
         'ua' => 'basic/Nutch-1.10',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -16120,7 +16120,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-597' => [
+    'test-0054-597' => [
         'ua' => 'Mozilla/5.0 (Android; Mobile; rv:33.0) Gecko/33.0 Firefox/33.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -16147,7 +16147,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-598' => [
+    'test-0054-598' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/28.0.1500.72 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -16174,7 +16174,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-599' => [
+    'test-0054-599' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; de-de; SAMSUNG GT-S5839i/S5839iBOLG1 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -16201,7 +16201,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-600' => [
+    'test-0054-600' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/34.0.1847.131 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -16228,7 +16228,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-601' => [
+    'test-0054-601' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) FxiOS/2.1 Mobile/13F69 Safari/601.1.46',
         'properties' => [
             'Browser_Name'            => 'Firefox for iOS',
@@ -16255,7 +16255,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-602' => [
+    'test-0054-602' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.151 Safari/534.16',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -16282,7 +16282,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-603' => [
+    'test-0054-603' => [
         'ua' => 'NetTrack Anonymous Web Statistics https://nettrack.info/support.php',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -16309,7 +16309,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-604' => [
+    'test-0054-604' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16336,7 +16336,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-605' => [
+    'test-0054-605' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/4.0; GTB7.5; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; eSobiSubscriber 2.0.4.16; InfoPath.2; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET CLR 3.0.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16363,7 +16363,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-606' => [
+    'test-0054-606' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; hi6210sft Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -16390,7 +16390,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-607' => [
+    'test-0054-607' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) Gecko/20100101 Firefox/4.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -16417,7 +16417,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-608' => [
+    'test-0054-608' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; tb-gmx/2.6.7; ASJB; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16444,7 +16444,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-609' => [
+    'test-0054-609' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; HTC 10 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -16471,7 +16471,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-610' => [
+    'test-0054-610' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.2; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -16498,7 +16498,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-611' => [
+    'test-0054-611' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-T815/XU2BPD6 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -16525,7 +16525,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-612' => [
+    'test-0054-612' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16552,7 +16552,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-613' => [
+    'test-0054-613' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; MAARJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16579,7 +16579,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-614' => [
+    'test-0054-614' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; ARNOVA 101 G4 Build/JDQ39) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -16606,7 +16606,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-615' => [
+    'test-0054-615' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.1; K007 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -16633,7 +16633,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-616' => [
+    'test-0054-616' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) GSA/5.2.43972 Mobile/11B554a Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -16660,7 +16660,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-617' => [
+    'test-0054-617' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; TID-80042 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -16687,7 +16687,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-618' => [
+    'test-0054-618' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; takee 1 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -16714,7 +16714,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-619' => [
+    'test-0054-619' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI MT7-L09 Build/HuaweiMT7-L09) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -16741,7 +16741,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-620' => [
+    'test-0054-620' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.36 Safari/537.36 OPR/38.0.2220.12 (Edition beta)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -16768,7 +16768,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-621' => [
+    'test-0054-621' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; handyCafeCln/3.3.21)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16795,7 +16795,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-622' => [
+    'test-0054-622' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/12.0.68608 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -16822,7 +16822,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-623' => [
+    'test-0054-623' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; tb-webde/2.3.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16849,7 +16849,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-624' => [
+    'test-0054-624' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; IdeaTab A2107A-H Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -16876,7 +16876,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-625' => [
+    'test-0054-625' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 2123309637',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -16903,7 +16903,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-626' => [
+    'test-0054-626' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; GT-I8750) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16930,7 +16930,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-627' => [
+    'test-0054-627' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729; InfoPath.1)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -16957,7 +16957,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-628' => [
+    'test-0054-628' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; D2303 Build/18.3.C.0.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -16984,7 +16984,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-629' => [
+    'test-0054-629' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; HTC One XL Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17011,7 +17011,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-630' => [
+    'test-0054-630' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.3; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -17038,7 +17038,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-631' => [
+    'test-0054-631' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.3; WOW64) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -17065,7 +17065,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-632' => [
+    'test-0054-632' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.22 (KHTML, like Gecko) Ubuntu Chromium/25.0.1364.160 Chrome/25.0.1364.160 Safari/537.22',
         'properties' => [
             'Browser_Name'            => 'Chromium',
@@ -17092,7 +17092,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-633' => [
+    'test-0054-633' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43 (Edition Campaign 70)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -17119,7 +17119,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-634' => [
+    'test-0054-634' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 Vivaldi/1.1.453.59',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17146,7 +17146,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-635' => [
+    'test-0054-635' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -17173,7 +17173,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-636' => [
+    'test-0054-636' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3; ; ; ;s093f616;hoch)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -17200,7 +17200,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-637' => [
+    'test-0054-637' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -17227,7 +17227,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-638' => [
+    'test-0054-638' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17254,7 +17254,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-639' => [
+    'test-0054-639' => [
         'ua' => 'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8) Presto/2.12.388 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -17281,7 +17281,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-640' => [
+    'test-0054-640' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; IdeaTab A3000-F Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17308,7 +17308,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-641' => [
+    'test-0054-641' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.0.4; MEDION P4013 Build/IMM76I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Mobile Safari/537.36 OPR/29.0.1809.93516',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -17335,7 +17335,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-642' => [
+    'test-0054-642' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS107816; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -17362,7 +17362,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-643' => [
+    'test-0054-643' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; GT-I8200N Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Mobile Safari/537.36 OPR/34.0.2044.98679',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -17389,7 +17389,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-644' => [
+    'test-0054-644' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Pegasus Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17416,7 +17416,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-645' => [
+    'test-0054-645' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; D2303 Build/18.6.A.0.182; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -17443,7 +17443,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-646' => [
+    'test-0054-646' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; HTC One M9 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -17470,7 +17470,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-647' => [
+    'test-0054-647' => [
         'ua' => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.4; de; rv:1.9.2.28) Gecko/20120306 Firefox/3.6.28',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -17497,7 +17497,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-648' => [
+    'test-0054-648' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SGP521 Build/23.1.A.1.28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17524,7 +17524,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-649' => [
+    'test-0054-649' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/11.0.65374 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -17551,7 +17551,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-650' => [
+    'test-0054-650' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:44.0 () Gecko/20100101 Firefox/44.0 ( anonymized by Abelssoft 1272546798',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -17578,7 +17578,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-651' => [
+    'test-0054-651' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MAMD; MSNIE9A; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -17605,7 +17605,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-652' => [
+    'test-0054-652' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; LG-E986 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17632,7 +17632,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-653' => [
+    'test-0054-653' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; MEDION P5001 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -17659,7 +17659,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-654' => [
+    'test-0054-654' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2749.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17686,7 +17686,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-655' => [
+    'test-0054-655' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Archos 97 Neon Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -17713,7 +17713,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-656' => [
+    'test-0054-656' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Z500 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17740,7 +17740,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-657' => [
+    'test-0054-657' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -17767,7 +17767,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-658' => [
+    'test-0054-658' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 OPR/33.0.1990.58 (Edition Campaign 10)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -17794,7 +17794,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-659' => [
+    'test-0054-659' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/12.0.68608 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -17821,7 +17821,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-660' => [
+    'test-0054-660' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1889694758',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -17848,7 +17848,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-661' => [
+    'test-0054-661' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2748.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17875,7 +17875,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-662' => [
+    'test-0054-662' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; .NET CLR 1.1.4322)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -17902,7 +17902,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-663' => [
+    'test-0054-663' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2748.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -17929,7 +17929,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-664' => [
+    'test-0054-664' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; de-de; AC50BHE Build/KTU84P) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -17956,7 +17956,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-665' => [
+    'test-0054-665' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; Discovery 111C Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -17983,7 +17983,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-666' => [
+    'test-0054-666' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; GWX:RED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18010,7 +18010,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-667' => [
+    'test-0054-667' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; SiteKiosk 8.7 Build 1435)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18037,7 +18037,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-668' => [
+    'test-0054-668' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; tb-webde/2.6.8; (webde/1.4.0.0); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18064,7 +18064,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-669' => [
+    'test-0054-669' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; HSG1310 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18091,7 +18091,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-670' => [
+    'test-0054-670' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; D5803 Build/23.0.1.A.5.77) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18118,7 +18118,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-671' => [
+    'test-0054-671' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.22 anonymized by Abelssoft 1108446737',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18145,7 +18145,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-672' => [
+    'test-0054-672' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mercury/8.9.4 Mobile/11B554a Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -18172,7 +18172,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-673' => [
+    'test-0054-673' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; D6603 Build/23.2.A.1.62) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18199,7 +18199,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-674' => [
+    'test-0054-674' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-D213 Build/KOT49I.A1439991991) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -18226,7 +18226,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-675' => [
+    'test-0054-675' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-P900 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18253,7 +18253,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-676' => [
+    'test-0054-676' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G925F/G925FXXS3DPE1 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -18280,7 +18280,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-677' => [
+    'test-0054-677' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D213 Build/KOT49I.A1439991991) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18307,7 +18307,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-678' => [
+    'test-0054-678' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node 56F7ERJWEYVP4KV6HAB65V5HA47CC2GY4UMLAJCTNWV3BDKI3M234SJ3THHZEPG.L.SGQWZFYIXF4RI6IKZMISY6RNY5GHTHJ3TSIF34CL3VVA3SJZ.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -18334,7 +18334,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-679' => [
+    'test-0054-679' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SGP511 Build/23.4.A.0.546) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18361,7 +18361,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-680' => [
+    'test-0054-680' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.4; hu-hu; MZ601 Build/I.7.1-45) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -18388,7 +18388,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-681' => [
+    'test-0054-681' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node ZAHUNTIFPBKGR4VGYOSUUV5QGWI55ZF2OSLEPQ3LHVTEXNWBPYQWR2KLG2U5ZFZ.I.PYY7XLB5X4F22TFYGTAT6IVM5IDLDA327DRNQFOOLFW6SGMX.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -18415,7 +18415,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-682' => [
+    'test-0054-682' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0 DT-Browser/DTB7.41.0.21_04',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -18442,7 +18442,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-683' => [
+    'test-0054-683' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) GSA/9.0.60246 Mobile/11B554a Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -18469,7 +18469,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-684' => [
+    'test-0054-684' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:47.0) Gecko/20100101 Firefox/47.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -18496,7 +18496,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-685' => [
+    'test-0054-685' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node OK5JEKLFNQIJGOCITEHLY2GV44O72KTI5DZF2YUITVV5KQS6Q5GIJOXT3GG3SQS.W.5KAWGSV6NMTDXJDWSR6WVAAIDZZZ46Y72J4XHOH26W4PYC3H.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -18523,7 +18523,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-686' => [
+    'test-0054-686' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; LG-E430 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18550,7 +18550,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-687' => [
+    'test-0054-687' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18577,7 +18577,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-688' => [
+    'test-0054-688' => [
         'ua' => 'BeNosey Mohawk Crawler',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -18604,7 +18604,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-689' => [
+    'test-0054-689' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18631,7 +18631,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-690' => [
+    'test-0054-690' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; E5823 Build/32.0.A.6.152) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18658,7 +18658,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-691' => [
+    'test-0054-691' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; P9000_Lite Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -18685,7 +18685,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-692' => [
+    'test-0054-692' => [
         'ua' => 'aklamio - http://www.aklamio.com',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -18712,7 +18712,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-693' => [
+    'test-0054-693' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; Touch; LCJB; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18739,7 +18739,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-694' => [
+    'test-0054-694' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Win64; x64; Trident/6.0; tb-webde/2.3.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18766,7 +18766,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-695' => [
+    'test-0054-695' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; rv:8.0) Gecko/20100101 Firefox/8.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -18793,7 +18793,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-696' => [
+    'test-0054-696' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; el-gr; HUAWEI Y625-U51 Build/HUAWEIY625-U51) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -18820,7 +18820,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-697' => [
+    'test-0054-697' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:6.0) Gecko/20110814 Firefox/6.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -18847,7 +18847,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-698' => [
+    'test-0054-698' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:QUALIFIED; MDDSJS; ms-office)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18874,7 +18874,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-699' => [
+    'test-0054-699' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/5.1.42378 Mobile/12B440 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -18901,7 +18901,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-700' => [
+    'test-0054-700' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; chromeframe/21.0.1180.83; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18928,7 +18928,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-701' => [
+    'test-0054-701' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Win64; x64; Trident/6.0; MAARJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -18955,7 +18955,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-702' => [
+    'test-0054-702' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2748.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -18982,7 +18982,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-703' => [
+    'test-0054-703' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:12.0) Gecko/20100101 Firefox/12.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19009,7 +19009,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-704' => [
+    'test-0054-704' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; chromeframe/21.0.1180.83; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -19036,7 +19036,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-705' => [
+    'test-0054-705' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; RISE 10 Quad Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19063,7 +19063,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-706' => [
+    'test-0054-706' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/7.0),gzip(gfe)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -19090,7 +19090,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-707' => [
+    'test-0054-707' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0 anonymized by Abelssoft 193361192',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19117,7 +19117,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-708' => [
+    'test-0054-708' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; tb-1und1/2.6.6; (1und1/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -19144,7 +19144,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-709' => [
+    'test-0054-709' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.26 (KHTML, like Gecko) Chrome/32.0.2033.85 Safari/536.26',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19171,7 +19171,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-710' => [
+    'test-0054-710' => [
         'ua' => 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.40312/37.8380; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -19198,7 +19198,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-711' => [
+    'test-0054-711' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.3; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -19225,7 +19225,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-712' => [
+    'test-0054-712' => [
         'ua' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19252,7 +19252,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-713' => [
+    'test-0054-713' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1636369681',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19279,7 +19279,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-714' => [
+    'test-0054-714' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; rv:37.0.2) Gecko/20100101 Firefox/37.0.2 anonymized by Abelssoft 2053794818',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19306,7 +19306,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-715' => [
+    'test-0054-715' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; SAMSUNG GT-N8020/N8020XXUDNE4 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -19333,7 +19333,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-716' => [
+    'test-0054-716' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; de-de; SAMSUNG SM-T365 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -19360,7 +19360,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-717' => [
+    'test-0054-717' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; GTB7.5; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -19387,7 +19387,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-718' => [
+    'test-0054-718' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19414,7 +19414,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-719' => [
+    'test-0054-719' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; tr-tr; LG-P880 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -19441,7 +19441,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-720' => [
+    'test-0054-720' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Iron/19.0.1100.0 Chrome/19.0.1100.0 Safari/536.5',
         'properties' => [
             'Browser_Name'            => 'Iron',
@@ -19468,7 +19468,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-721' => [
+    'test-0054-721' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:26.0; WUID=f36677f9d0acbf8185240c1f112f928b; WTB=3869) Gecko/20100101 Firefox/26.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19495,7 +19495,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-722' => [
+    'test-0054-722' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:45.0.1) Gecko/20100101 Firefox/45.0.1 anonymized by Abelssoft 1573945792',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19522,7 +19522,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-723' => [
+    'test-0054-723' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SGP521 Build/23.5.A.0.570) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19549,7 +19549,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-724' => [
+    'test-0054-724' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1) Presto/2.12.388 Version/12.13',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -19576,7 +19576,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-725' => [
+    'test-0054-725' => [
         'ua' => 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.15',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -19603,7 +19603,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-726' => [
+    'test-0054-726' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19630,7 +19630,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-727' => [
+    'test-0054-727' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -19657,7 +19657,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-728' => [
+    'test-0054-728' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43 (Edition Ask)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -19684,7 +19684,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-729' => [
+    'test-0054-729' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:32.0) Gecko/20100101 Firefox/32.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19711,7 +19711,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-730' => [
+    'test-0054-730' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; KFSAWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Silk/50.2.1 like Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Silk',
@@ -19738,7 +19738,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-731' => [
+    'test-0054-731' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -19765,7 +19765,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-732' => [
+    'test-0054-732' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MATM)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -19792,7 +19792,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-733' => [
+    'test-0054-733' => [
         'ua' => 'Mozilla/5.0 (compatible; Charlotte/1.1; http://www.searchme.com/support/)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -19819,7 +19819,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-734' => [
+    'test-0054-734' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G900FD Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19846,7 +19846,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-735' => [
+    'test-0054-735' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.1; ARCHOS 101G10 Build/JRO03L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19873,7 +19873,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-736' => [
+    'test-0054-736' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; D6603 Build/23.1.A.0.726) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19900,7 +19900,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-737' => [
+    'test-0054-737' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2;de-DE, en-US; Vodafone 985N Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 SVN/110FBN2',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -19927,7 +19927,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-738' => [
+    'test-0054-738' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -19954,7 +19954,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-739' => [
+    'test-0054-739' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; SGP321 Build/10.1.1.A.1.253) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -19981,7 +19981,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-740' => [
+    'test-0054-740' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -20008,7 +20008,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-741' => [
+    'test-0054-741' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/44.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20035,7 +20035,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-742' => [
+    'test-0054-742' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; Discovery 108C Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -20062,7 +20062,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-743' => [
+    'test-0054-743' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 6.0; de-de; E6853 Build/32.1.A.1.185) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -20089,7 +20089,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-744' => [
+    'test-0054-744' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; SM-G318H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -20116,7 +20116,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-745' => [
+    'test-0054-745' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0 TO-Browser/TOB7.45.0.113_11',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20143,7 +20143,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-746' => [
+    'test-0054-746' => [
         'ua' => 'Opera/9.80 (MAUI Runtime; Opera Mini/4.4.39001/37.8380; U; en) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -20170,7 +20170,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-747' => [
+    'test-0054-747' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; rv:48.0) Gecko/20100101 Firefox/48.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20197,7 +20197,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-748' => [
+    'test-0054-748' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -20224,7 +20224,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-749' => [
+    'test-0054-749' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:44.0 () Gecko/20100101 Firefox/44.0 ( anonymized by Abelssoft 612517034',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20251,7 +20251,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-750' => [
+    'test-0054-750' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; End_101G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -20278,7 +20278,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-751' => [
+    'test-0054-751' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Build/LMY49G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -20305,7 +20305,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-752' => [
+    'test-0054-752' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; SM-G350 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -20332,7 +20332,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-753' => [
+    'test-0054-753' => [
         'ua' => 'Firefox/44.0.2 (x86 de); anonymized by Abelssoft 1593487876',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20359,7 +20359,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-754' => [
+    'test-0054-754' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; XT1072 Build/MPB24.65-34; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.95 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -20386,7 +20386,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-755' => [
+    'test-0054-755' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.4; de-de; SonyEricssonST18iv Build/4.0.2.A.0.42) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -20413,7 +20413,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-756' => [
+    'test-0054-756' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1079914906',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20440,7 +20440,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-757' => [
+    'test-0054-757' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1807560671',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20467,7 +20467,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-758' => [
+    'test-0054-758' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; DARKFULL Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -20494,7 +20494,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-759' => [
+    'test-0054-759' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1) Presto/2.12.388 Version/12.11',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -20521,7 +20521,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-760' => [
+    'test-0054-760' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.22 anonymized by Abelssoft 869471633',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -20548,7 +20548,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-761' => [
+    'test-0054-761' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; AOL 9.6; AOLBuild 4340.168; Windows NT 6.2; WOW64; Trident/7.0; MASBJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -20575,7 +20575,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-762' => [
+    'test-0054-762' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; S102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -20602,7 +20602,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-763' => [
+    'test-0054-763' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/5.2.43972 Mobile/12B435 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -20629,7 +20629,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-764' => [
+    'test-0054-764' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 YaBrowser/16.2.2.7988.00 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Yandex Browser',
@@ -20656,7 +20656,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-765' => [
+    'test-0054-765' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) GSA/5.1.42378 Mobile/11D257 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -20683,7 +20683,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-766' => [
+    'test-0054-766' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Coast/5.03.102982 Mobile/13F69 Safari/7534.48.3',
         'properties' => [
             'Browser_Name'            => 'Coast',
@@ -20710,7 +20710,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-767' => [
+    'test-0054-767' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1791479994',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20737,7 +20737,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-768' => [
+    'test-0054-768' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D620 Build/KOT49I.A1407998226) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -20764,7 +20764,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-769' => [
+    'test-0054-769' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS99892; GTB7.5; InfoPath.3; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -20791,7 +20791,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-770' => [
+    'test-0054-770' => [
         'ua' => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; de-de) AppleWebKit/534.15+ (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -20818,7 +20818,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-771' => [
+    'test-0054-771' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 2062616452',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20845,7 +20845,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-772' => [
+    'test-0054-772' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2450.0 Iron/46.0.2450.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Iron',
@@ -20872,7 +20872,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-773' => [
+    'test-0054-773' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1531063988',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -20899,7 +20899,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-774' => [
+    'test-0054-774' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2716.0 Safari/537.36 OPR/39.0.2234.0 (Edition developer)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -20926,7 +20926,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-775' => [
+    'test-0054-775' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F/G900FXXU1POGB Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -20953,7 +20953,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-776' => [
+    'test-0054-776' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2739.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -20980,7 +20980,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-777' => [
+    'test-0054-777' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; TPC-PA7807 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -21007,7 +21007,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-778' => [
+    'test-0054-778' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2747.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21034,7 +21034,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-779' => [
+    'test-0054-779' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; P01MA Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.108 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -21061,7 +21061,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-780' => [
+    'test-0054-780' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS102281; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729;WUID=9475C4A5FB3B40188090A0A671378120;WTB=6787)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -21088,7 +21088,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-781' => [
+    'test-0054-781' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-N910F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.54 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21115,7 +21115,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-782' => [
+    'test-0054-782' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; rv:45.0) Gecko/20100101 Firefox/45.0 TO-Browser/TOB7.45.0.113_20',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -21142,7 +21142,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-783' => [
+    'test-0054-783' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -21169,7 +21169,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-784' => [
+    'test-0054-784' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; HTC/Sensation/3.32.162.52 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -21196,7 +21196,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-785' => [
+    'test-0054-785' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; HUAWEI Y550-L01 Build/HuaweiY550-L01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21223,7 +21223,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-786' => [
+    'test-0054-786' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2) Gecko/20100115 Firefox/3.6',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -21250,7 +21250,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-787' => [
+    'test-0054-787' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:42.0 ) Gecko/20100101 Firefox/42.0  anonymized by Abelssoft 2076966424',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -21277,7 +21277,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-788' => [
+    'test-0054-788' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.11) Gecko/20101012 YFF35 Firefox/3.6.11',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -21304,7 +21304,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-789' => [
+    'test-0054-789' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21331,7 +21331,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-790' => [
+    'test-0054-790' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.3; X9006 Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21358,7 +21358,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-791' => [
+    'test-0054-791' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.8',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -21385,7 +21385,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-792' => [
+    'test-0054-792' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2748.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21412,7 +21412,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-793' => [
+    'test-0054-793' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; IdeaPadA10 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -21439,7 +21439,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-794' => [
+    'test-0054-794' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:41.0.2) Gecko/20100101 Firefox/41.0.2 anonymized by Abelssoft 1461549169',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -21466,7 +21466,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-795' => [
+    'test-0054-795' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GCE x86 phone Build/MMB30D.MZC89) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2748.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21493,7 +21493,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-796' => [
+    'test-0054-796' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.22 anonymized by Abelssoft 1581036721',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21520,7 +21520,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-797' => [
+    'test-0054-797' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows 95; de; rv:1.9.2.6) Gecko/20100625 Firefox/ Anonymisiert durch AlMiSoft Browser-Anonymisierer 48905439',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -21547,7 +21547,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-798' => [
+    'test-0054-798' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21574,7 +21574,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-799' => [
+    'test-0054-799' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GCE x86 phone Build/MMB30D.MZC89) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2747.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21601,7 +21601,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-800' => [
+    'test-0054-800' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; RAINBOW LITE Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21628,7 +21628,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-801' => [
+    'test-0054-801' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.10 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21655,7 +21655,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-802' => [
+    'test-0054-802' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0; WUID=c69ad4a2402f359bf55ce8aa18eff9e9; WTB=23890) Gecko/20100101 Firefox/30.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -21682,7 +21682,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-803' => [
+    'test-0054-803' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; Nexus 7 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21709,7 +21709,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-804' => [
+    'test-0054-804' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2747.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21736,7 +21736,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-805' => [
+    'test-0054-805' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node QOFJG3ZVPUPHH5Z3IROUABYDTLJBNWJGJ2STEJIFHBZTEGQRCA43N7PSDZJXZF2.I.VLHJ2TLEL3FBFGMVWWNRYBT7TFPIHUI3E5RM45HUDBWFL53X.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -21763,7 +21763,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-806' => [
+    'test-0054-806' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21790,7 +21790,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-807' => [
+    'test-0054-807' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; AVUS A57 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -21817,7 +21817,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-808' => [
+    'test-0054-808' => [
         'ua' => 'WordPress/4.5.2; http://de.patheticearthlings.com',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -21844,7 +21844,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-809' => [
+    'test-0054-809' => [
         'ua' => 'Mozilla/5.0 (compatible) Feedfetcher-Google; (+http://www.google.com/feedfetcher.html)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -21871,7 +21871,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-810' => [
+    'test-0054-810' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.0.3; HUAWEI U8666E Build/HuaweiU8666E) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21898,7 +21898,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-811' => [
+    'test-0054-811' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-T335 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.517 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21925,7 +21925,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-812' => [
+    'test-0054-812' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2747.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21952,7 +21952,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-813' => [
+    'test-0054-813' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SGP511 Build/17.1.1.A.0.402) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -21979,7 +21979,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-814' => [
+    'test-0054-814' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -22006,7 +22006,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-815' => [
+    'test-0054-815' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node ZZCAFZWQCNUIQ6VNGNQPULFWMSHCKLRRZ42IJ5CUBUTNSBDTKXZT2CUSCMNAN34.O.ANE244KGXU3LKSXLO3XYDIASNKZNZ6TEORPOQ37XSIKC5VYK.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -22033,7 +22033,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-816' => [
+    'test-0054-816' => [
         'ua' => 'Mozilla/5.0 (Android 4.2.1; Tablet; rv:46.0.1) Gecko/46.0.1 Firefox/46.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22060,7 +22060,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-817' => [
+    'test-0054-817' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.8) Gecko/2009032600 SUSE/3.0.8-1.1.1 Firefox/3.0.8',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22087,7 +22087,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-818' => [
+    'test-0054-818' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.8) Gecko/2009032713 Ubuntu/9.04 (jaunty) Firefox/3.0.8',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22114,7 +22114,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-819' => [
+    'test-0054-819' => [
         'ua' => 'Opera%20Coast/5.03.102982 CFNetwork/758.4.3 Darwin/15.5.0',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -22141,7 +22141,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-820' => [
+    'test-0054-820' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node X4F64ZW4UT7QMKMOD3GVCIM3YDIM2XXWFHEADOYAYX26Q2LRO2LMWXOP4DUGEQH.R.BVALUYJ5VOAAXKFM6EX5YLFDLVHD2SJ7MZGACUAWMZ4ZONGV.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -22168,7 +22168,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-821' => [
+    'test-0054-821' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; tb-gmx/2.5.1; MAARJS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22195,7 +22195,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-822' => [
+    'test-0054-822' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64; rv:38.0) Gecko/20100101 Thunderbird/38.8.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -22222,7 +22222,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-823' => [
+    'test-0054-823' => [
         'ua' => 'Dalvik/2.1.0 (Linux; U; Android 6.0; XT1072 Build/MPB24.65-34)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -22249,7 +22249,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-824' => [
+    'test-0054-824' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.14) Gecko/20080514 Firefox/2.0.0.14 Flock/1.1.4',
         'properties' => [
             'Browser_Name'            => 'Flock',
@@ -22276,7 +22276,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-825' => [
+    'test-0054-825' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0.1) Gecko/20100101 Firefox/36.0.1 anonymized by Abelssoft 107765697',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22303,7 +22303,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-826' => [
+    'test-0054-826' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE) AppleWebKit/532+ (KHTML, like Gecko) Version/4.0.4 Safari/531.21.1',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -22330,7 +22330,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-827' => [
+    'test-0054-827' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.2) Gecko/20100115 Firefox/3.6 (.NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22357,7 +22357,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-828' => [
+    'test-0054-828' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; SGP511 Build/17.1.1.A.0.402)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -22384,7 +22384,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-829' => [
+    'test-0054-829' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; PadFone T004 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -22411,7 +22411,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-830' => [
+    'test-0054-830' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 617877260',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22438,7 +22438,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-831' => [
+    'test-0054-831' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; tb-gmx/2.6.7; MAFSJS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22465,7 +22465,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-832' => [
+    'test-0054-832' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.2; de; rv:1.9.2.6) Gecko/20100625 Firefox/38.0.5 (x86 de) Anonymisiert durch AlMiSoft Browser-Anonymisierer 40237522',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22492,7 +22492,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-833' => [
+    'test-0054-833' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22519,7 +22519,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-834' => [
+    'test-0054-834' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22546,7 +22546,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-835' => [
+    'test-0054-835' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux x86_64; de; rv:1.9.0.16) Gecko/2009121707 CentOS/3.0.16-1.el5.centos Firefox/3.0.16',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22573,7 +22573,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-836' => [
+    'test-0054-836' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; AC45NE Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -22600,7 +22600,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-837' => [
+    'test-0054-837' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; FSTE; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22627,7 +22627,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-838' => [
+    'test-0054-838' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 2094777805',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22654,7 +22654,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-839' => [
+    'test-0054-839' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/4.0 Mobile/12H143 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Firefox for iOS',
@@ -22681,7 +22681,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-840' => [
+    'test-0054-840' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; 5.1; DsGEx; DSGInt;; Trident/7.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22708,7 +22708,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-841' => [
+    'test-0054-841' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; GT-I9195 Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -22735,7 +22735,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-842' => [
+    'test-0054-842' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; InfoPath.2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22762,7 +22762,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-843' => [
+    'test-0054-843' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; tb-1und1/2.6.6)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22789,7 +22789,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-844' => [
+    'test-0054-844' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0; UnityMedia Welcome Package v7)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22816,7 +22816,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-845' => [
+    'test-0054-845' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9515/I9515XXU1AND3 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -22843,7 +22843,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-846' => [
+    'test-0054-846' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; tb-webde/2.4.1; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22870,7 +22870,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-847' => [
+    'test-0054-847' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-G530FZ Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -22897,7 +22897,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-848' => [
+    'test-0054-848' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; LEN2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22924,7 +22924,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-849' => [
+    'test-0054-849' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0; ; NCLIENT50_AAPB09264A9635) Gecko/20100101 Firefox/42.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -22951,7 +22951,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-850' => [
+    'test-0054-850' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3; ; ; ;s093a110;hoch)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -22978,7 +22978,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-851' => [
+    'test-0054-851' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; de-at; SAMSUNG SM-T535 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -23005,7 +23005,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-852' => [
+    'test-0054-852' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0 TO-Browser/TOB7.45.0.113_05',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -23032,7 +23032,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-853' => [
+    'test-0054-853' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; KINGZONE_N5 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23059,7 +23059,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-854' => [
+    'test-0054-854' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0; Mozilla Firefox 38.5.0 - 11712--86',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -23086,7 +23086,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-855' => [
+    'test-0054-855' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-P555 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -23113,7 +23113,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-856' => [
+    'test-0054-856' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; ARCHOS 101 XS 2 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23140,7 +23140,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-857' => [
+    'test-0054-857' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/38.0.2125.59 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23167,7 +23167,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-858' => [
+    'test-0054-858' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:38.0.5) Gecko/20100101 Firefox/38.0.5 anonymized by Abelssoft 1204762683',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -23194,7 +23194,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-859' => [
+    'test-0054-859' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2739.3 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23221,7 +23221,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-860' => [
+    'test-0054-860' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0; WUID=af02a2a4bf419ac53c1dab76dd56ca89; WTB=3580) Gecko/20100101 Firefox/20.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -23248,7 +23248,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-861' => [
+    'test-0054-861' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.3.4000 Chrome/30.0.1599.101 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Maxthon',
@@ -23275,7 +23275,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-862' => [
+    'test-0054-862' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43 (Edition Campaign 51)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -23302,7 +23302,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-863' => [
+    'test-0054-863' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; SHW-M440S Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -23329,7 +23329,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-864' => [
+    'test-0054-864' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.36 Safari/537.36 OPR/38.0.2220.12 (Edition beta)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -23356,7 +23356,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-865' => [
+    'test-0054-865' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; GT-P5110 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -23383,7 +23383,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-866' => [
+    'test-0054-866' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) GSA/9.0.60246 Mobile/11B554a Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -23410,7 +23410,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-867' => [
+    'test-0054-867' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; H60-L02 Build/HDH60-L02) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -23437,7 +23437,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-868' => [
+    'test-0054-868' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; GT-S7390 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -23464,7 +23464,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-869' => [
+    'test-0054-869' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-ch; GT-P5110 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -23491,7 +23491,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-870' => [
+    'test-0054-870' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -23518,7 +23518,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-871' => [
+    'test-0054-871' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 1stBrowser/45.0.2454.167 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23545,7 +23545,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-872' => [
+    'test-0054-872' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 639318162',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -23572,7 +23572,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-873' => [
+    'test-0054-873' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.0.4; GT-P7510 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.138 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23599,7 +23599,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-874' => [
+    'test-0054-874' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; GT-N7000 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23626,7 +23626,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-875' => [
+    'test-0054-875' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23653,7 +23653,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-876' => [
+    'test-0054-876' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-G800F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -23680,7 +23680,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-877' => [
+    'test-0054-877' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.54.16 (KHTML, like Gecko) Version/5.1.4 Safari/534.54.16',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -23707,7 +23707,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-878' => [
+    'test-0054-878' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2729.4 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23734,7 +23734,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-879' => [
+    'test-0054-879' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.6; de-de; SAMSUNG GT-S5690/S5690BOLL1 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -23761,7 +23761,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-880' => [
+    'test-0054-880' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; M532 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -23788,7 +23788,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-881' => [
+    'test-0054-881' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23815,7 +23815,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-882' => [
+    'test-0054-882' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; CHC-U01 Build/HuaweiCHC-U01) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.7.5.658 U3/0.8.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'UC Browser',
@@ -23842,7 +23842,7 @@ return [
             'RenderingEngine_Maker'   => 'UC Web',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-883' => [
+    'test-0054-883' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; HTC Desire 500 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Mobile Safari/537.36 OPR/36.0.2126.101812',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -23869,7 +23869,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-884' => [
+    'test-0054-884' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Che2-L11 Build/HonorChe2-L11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23896,7 +23896,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-885' => [
+    'test-0054-885' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; ONE TOUCH 4033D Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23923,7 +23923,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-886' => [
+    'test-0054-886' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.99 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -23950,7 +23950,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-887' => [
+    'test-0054-887' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.0.575; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -23977,7 +23977,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-888' => [
+    'test-0054-888' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; LG-D855 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -24004,7 +24004,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-889' => [
+    'test-0054-889' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; PO9660TAQ-10182 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -24031,7 +24031,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-890' => [
+    'test-0054-890' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; E2105 Build/24.0.A.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -24058,7 +24058,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-891' => [
+    'test-0054-891' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 476948805',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -24085,7 +24085,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-892' => [
+    'test-0054-892' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GCE x86 phone Build/MMB30D.MZC89) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2746.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -24112,7 +24112,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-893' => [
+    'test-0054-893' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; X17_S Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -24139,7 +24139,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-894' => [
+    'test-0054-894' => [
         'ua' => 'Dalvik/2.1.0 (Linux; U; Android 5.0.2; SM-T715 Build/LRX22G)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -24166,7 +24166,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-895' => [
+    'test-0054-895' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Trident/7.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24193,7 +24193,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-896' => [
+    'test-0054-896' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21M.A1415646276) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -24220,7 +24220,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-897' => [
+    'test-0054-897' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 Vivaldi/1.0.435.42',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -24247,7 +24247,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-898' => [
+    'test-0054-898' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:43.0.1) Gecko/20100101 Firefox/43.0.1 anonymized by Abelssoft 1083376314',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -24274,7 +24274,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-899' => [
+    'test-0054-899' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; UP520 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -24301,7 +24301,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-900' => [
+    'test-0054-900' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; tb-gmx/2.6.7; MAFSJS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24328,7 +24328,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-901' => [
+    'test-0054-901' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node JQWBJGXLCGQBD3LMNM3FWCUVGVKAJX5W5SLZBMVHY6QWRVUTQN7DGMFQOSFOV5O.P.ZHPM42B3MRLZVIJE5EOAX2AJUQYQNVOSASOILL7ZLAXPIK4S.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -24355,7 +24355,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-902' => [
+    'test-0054-902' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36 OPR/37.0.2178.41',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -24382,7 +24382,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-903' => [
+    'test-0054-903' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0) Gecko/20100101 Firefox/46.0 anonymized by Abelssoft 1704153795',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -24409,7 +24409,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-904' => [
+    'test-0054-904' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24436,7 +24436,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-905' => [
+    'test-0054-905' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node NJDJYLZLFCULMHZI3VGUS3RX56PFZYIR3236NNN56NFSSZ7NEC6QDIU2GJNOVCY.Z.KXZ5RNBDXCLB53SKGOMEF3YUZYIZITRGALOVJUTIFJKEGHY2.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -24463,7 +24463,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-906' => [
+    'test-0054-906' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; TAB744 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -24490,7 +24490,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-907' => [
+    'test-0054-907' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; BRI/2; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24517,7 +24517,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-908' => [
+    'test-0054-908' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbAVR-4/5.15.31.57710)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24544,7 +24544,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-909' => [
+    'test-0054-909' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0; BOIE9;NLNL)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24571,7 +24571,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-910' => [
+    'test-0054-910' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node AHVXB64ZAFHE2SGXV3DIHVG7OV6TAPXOQQICFTMA3XXMMP2Y42NTCMYHUDLXMUC.I.VVZKPJMOUBVZS7EIX2U2VTQZPCI7QIW6QQNRAXEJHB2YQOLE.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -24598,7 +24598,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-911' => [
+    'test-0054-911' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-E975 Build/KOT49I.E97520b) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -24625,7 +24625,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-912' => [
+    'test-0054-912' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-E975 Build/KOT49I.E97520b) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -24652,7 +24652,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-913' => [
+    'test-0054-913' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.8) Gecko/2009032712 Ubuntu/8.10 (intrepid) Firefox/3.0.8',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -24679,7 +24679,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-914' => [
+    'test-0054-914' => [
         'ua' => 'NaWeBe - see http://einfach-denken.at/crawler/pages/faq (still testing, please do not rely on the results)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -24706,7 +24706,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-915' => [
+    'test-0054-915' => [
         'ua' => 'Mozilla/5.0 (Android 4.2.2; Mobile; rv:44.0.2) Gecko/44.0.2 Firefox/44.0.2',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -24733,7 +24733,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-916' => [
+    'test-0054-916' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:MANAGED; GWX:DOWNLOADED; GWX:QUALIFIED; MAFSJS; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24760,7 +24760,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-917' => [
+    'test-0054-917' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 GSA/5.13.31.21.arm64',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -24787,7 +24787,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-918' => [
+    'test-0054-918' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 YaBrowser/16.3.0.7843 Yowser/2.5 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Yandex Browser',
@@ -24814,7 +24814,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-919' => [
+    'test-0054-919' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24841,7 +24841,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-920' => [
+    'test-0054-920' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:MANAGED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24868,7 +24868,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-921' => [
+    'test-0054-921' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -24895,7 +24895,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-922' => [
+    'test-0054-922' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0 TO-Browser/TOB7.45.0.113_02',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -24922,7 +24922,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-923' => [
+    'test-0054-923' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/48.0.2564.87 Mobile/13E238 Safari/601.1.46',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -24949,7 +24949,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-924' => [
+    'test-0054-924' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; 8BPE0H Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -24976,7 +24976,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-925' => [
+    'test-0054-925' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:44.0.2) Gecko/20100101 Firefox/44.0.2 anonymized by Abelssoft 1891425462',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -25003,7 +25003,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-926' => [
+    'test-0054-926' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; D5803 Build/23.4.A.1.236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -25030,7 +25030,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-927' => [
+    'test-0054-927' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; 706_v92_jbla_fhd Build/JDQ39)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -25057,7 +25057,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-928' => [
+    'test-0054-928' => [
         'ua' => 'Mozilla/5.0 (compatible; idmarch Automatic.beta/1.4; +http://www.idmarch.org/bot.html)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -25084,7 +25084,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-929' => [
+    'test-0054-929' => [
         'ua' => 'WhatsApp/2.16.95 A',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -25111,7 +25111,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-930' => [
+    'test-0054-930' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2752.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -25138,7 +25138,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-931' => [
+    'test-0054-931' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; eSobiSubscriber 2.0.4.16; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; InfoPath.3; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25165,7 +25165,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-932' => [
+    'test-0054-932' => [
         'ua' => 'Mozilla/5.0 (compatible; evc-batch/2.0.20160526223739)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -25192,7 +25192,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-933' => [
+    'test-0054-933' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.2) Gecko/20020508 Netscape6/6.1',
         'properties' => [
             'Browser_Name'            => 'Netscape',
@@ -25219,7 +25219,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-934' => [
+    'test-0054-934' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; HUAWEI G6-U10 Build/HuaweiG6-U10)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -25246,7 +25246,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-935' => [
+    'test-0054-935' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-J500FN Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -25273,7 +25273,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-936' => [
+    'test-0054-936' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0; BIDUBrowser 2.x)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25300,7 +25300,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-937' => [
+    'test-0054-937' => [
         'ua' => 'BSNBrowser/1001 CFNetwork/758.4.3 Darwin/15.5.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -25327,7 +25327,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-938' => [
+    'test-0054-938' => [
         'ua' => 'Dolphin http client/11.3.8(421) (Android)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -25354,7 +25354,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-939' => [
+    'test-0054-939' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; ARCHOS; 40 Cesium)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25381,7 +25381,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-940' => [
+    'test-0054-940' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node M35WJDVWG3TCWPHYVNZOPSL622LEMDJLQL5UXBPLZFBKPTY4WT2XJYJXSIB36BF.S.LZ2H6WMXCI4WJ55ABJ4IOQWBT7W2FMLNIBNF4J7BP5WVF64J.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -25408,7 +25408,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-941' => [
+    'test-0054-941' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node VEEAAOTOBA2CCE5MBQI5P5BFVTV5QQGEZYEB5BPZRVP7BLSJSP445GL2LRTDQCP.M.I3PBFKHAZZ53KMHVRYOXY5HYIQHYT7NGVXSBLKIJ2FIQS6R5.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -25435,7 +25435,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-942' => [
+    'test-0054-942' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node 52APAYMQXQS6DFLXISSBKZZVNVF6AZPDXK2VX7SCYGLYCJ347N7GO3FN3QLLODX.Y.BD7VDRZY5LTAQPY5HMOPGYFBXDASLV5XTAVSA6AYKEU4URU4.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -25462,7 +25462,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-943' => [
+    'test-0054-943' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; HTC One X+ Build/JDQ39)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -25489,7 +25489,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-944' => [
+    'test-0054-944' => [
         'ua' => 'Mozilla/5\\.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6 ( .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -25516,7 +25516,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-945' => [
+    'test-0054-945' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-E975 Build/KOT49I.E97520a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -25543,7 +25543,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-946' => [
+    'test-0054-946' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0.1) Gecko/20100101 Firefox/36.0.1 anonymized by Abelssoft 1434748041',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -25570,7 +25570,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-947' => [
+    'test-0054-947' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; Lenovo TAB 2 A8-50F Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36 GSA/5.12.35.21.arm64',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -25597,7 +25597,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-948' => [
+    'test-0054-948' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-T330 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -25624,7 +25624,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-949' => [
+    'test-0054-949' => [
         'ua' => 'Safari/11601.7.1 CFNetwork/760.5.1 Darwin/15.6.0 (x86_64)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -25651,7 +25651,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-950' => [
+    'test-0054-950' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node SZYIY7JUQX5N3OYXFRMQMNGYZJBD5WAFP5UCUMR3A33DQSA5K7PXA6BXDXZ22A3.R.KPMC6TPBAIDOMD7RZUSD67INPPEP5CLS2AHLKNM5NL5HRCSC.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -25678,7 +25678,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-951' => [
+    'test-0054-951' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; MAAU; EIE10;DEDEWOL; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25705,7 +25705,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-952' => [
+    'test-0054-952' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; ZangoToolbar 8.9.96; SpamBlockerUtility 2.5.85; IEMB3; SpamBlockerUtility 8.9.53)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25732,7 +25732,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-953' => [
+    'test-0054-953' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:36.0.1) Gecko/20100101 Firefox/36.0.1 anonymized by Abelssoft 1268917277',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -25759,7 +25759,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-954' => [
+    'test-0054-954' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; Maxthon; Zango 8.8.78; Zango 9.0.91; MEGAUPLOAD 3.6.71)',
         'properties' => [
             'Browser_Name'            => 'Maxthon',
@@ -25786,7 +25786,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-955' => [
+    'test-0054-955' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 8172.39.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.55 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -25813,7 +25813,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-956' => [
+    'test-0054-956' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:MANAGED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25840,7 +25840,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-957' => [
+    'test-0054-957' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MASM; .NET4.0C; .NET4.0E; BRI/2; AskTbMGX/5.14.1.20007; .NET CLR 1.1.4322; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25867,7 +25867,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-958' => [
+    'test-0054-958' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; LG-P990 Build/FRG83G) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 MMS/LG-Android-MMS-V1.0/1.2',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -25894,7 +25894,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-959' => [
+    'test-0054-959' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; WOW64; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.21022; .NET CLR 3.5.30729; .NET4.0C; .NET CLR 3.0.30729; AskTbNRO2/5.11.3.15590; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25921,7 +25921,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-960' => [
+    'test-0054-960' => [
         'ua' => 'okhttp/2.3.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -25948,7 +25948,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-961' => [
+    'test-0054-961' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; ComCard GmbH; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25975,7 +25975,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-962' => [
+    'test-0054-962' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; tb-gmx/2.6.7; TOnlineIE11B; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26002,7 +26002,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-963' => [
+    'test-0054-963' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.187 Safari/535.1',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -26029,7 +26029,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-964' => [
+    'test-0054-964' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Aquaris E5 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -26056,7 +26056,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-965' => [
+    'test-0054-965' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node TGQXKJNTTLQEC5P2JMDO4OFFVA2VT2DWE6HS3B2BDI7X55J4T76A3MMP3RA76HS.W.YCD4T6JL4FLUYC7WYE5NFPLGZT4KMVQQZTCHVRHLRWHQ5GGC.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -26083,7 +26083,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-966' => [
+    'test-0054-966' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:45.0.2) Gecko/20100101 Firefox/45.0.2 anonymized by Abelssoft 1256466121',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -26110,7 +26110,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-967' => [
+    'test-0054-967' => [
         'ua' => 'Mozilla/5.0 (Android 5.0; Mobile; rv:42.0.1) Gecko/42.0.1 Firefox/42.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -26137,7 +26137,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-968' => [
+    'test-0054-968' => [
         'ua' => 'Thumbor/5.2.1',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -26164,7 +26164,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-969' => [
+    'test-0054-969' => [
         'ua' => 'Mercury/894 CFNetwork/758.4.3 Darwin/15.5.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -26191,7 +26191,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-970' => [
+    'test-0054-970' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.0.4; MZ601 Build/I.7.1-45)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -26218,7 +26218,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-971' => [
+    'test-0054-971' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; HPNTDF; .NET4.0C; .NET4.0E; GWX:RESERVED; GWX:QUALIFIED; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26245,7 +26245,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-972' => [
+    'test-0054-972' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; MAAU; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26272,7 +26272,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-973' => [
+    'test-0054-973' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0 AlexaToolbar/alxf-2.21',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -26299,7 +26299,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-974' => [
+    'test-0054-974' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Mobile Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -26326,7 +26326,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-975' => [
+    'test-0054-975' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26353,7 +26353,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-976' => [
+    'test-0054-976' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; D6603 Build/23.1.A.0.690) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -26380,7 +26380,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-977' => [
+    'test-0054-977' => [
         'ua' => 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; XT389 Build/0C.03.05R_S) U2/1.0.0 UCBrowser/10.7.2.757 Mobile',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -26407,7 +26407,7 @@ return [
             'RenderingEngine_Maker'   => 'UC Web',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-978' => [
+    'test-0054-978' => [
         'ua' => 'User-agent: Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -26434,7 +26434,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-979' => [
+    'test-0054-979' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; BRI/2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26461,7 +26461,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-980' => [
+    'test-0054-980' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; ASU2JS; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26488,7 +26488,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-981' => [
+    'test-0054-981' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node RS3VJWIUYXOSHPZZBHOUIVTRIYXFOYJ4UISW7DA6MSBO6TT4OYG5WMRQJIMUP3K.T.XA4XU5S34TRRODRZEP76INC3EAMJ4YMXF7JM2SBYPEATG26F.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -26515,7 +26515,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-982' => [
+    'test-0054-982' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:13.0) Gecko/20100101 Firefox/13.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -26542,7 +26542,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-983' => [
+    'test-0054-983' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/46.0.1 (x86 de) Anonymisiert durch AlMiSoft Browser-Maulkorb 84439213',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -26569,7 +26569,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-984' => [
+    'test-0054-984' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; GTB7.5)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26596,7 +26596,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-985' => [
+    'test-0054-985' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB6; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26623,7 +26623,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-986' => [
+    'test-0054-986' => [
         'ua' => 'Mozilla/5.0 (iphone; cpu iphone os 7_0_2 like mac os x) Applewebkit/537.51.1 (khtml, like gecko) version/7.0 mobile/11a501 safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -26650,7 +26650,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-987' => [
+    'test-0054-987' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; 7045Y Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -26677,7 +26677,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-988' => [
+    'test-0054-988' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:DOWNLOADED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26704,7 +26704,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-989' => [
+    'test-0054-989' => [
         'ua' => 'ActiveBookmark 1.x',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -26731,7 +26731,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-990' => [
+    'test-0054-990' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.8.131 Version/11.11',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -26758,7 +26758,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-991' => [
+    'test-0054-991' => [
         'ua' => 'Mozilla/5.0 CommonCrawler Node CHXSWBJEKRSPBCKJLQNUCBNGBAUNU25OBBHBT6LB5POAZK673N6X3I3ZR3RUIBJ.O.ITXELDINYPZT2BCX6EUOLWPTB4THM5MUPEOBWJOMBAZFEVAH.cdn0.common.crawl.zone',
         'properties' => [
             'Browser_Name'            => 'CommonCrawler Node',
@@ -26785,7 +26785,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-992' => [
+    'test-0054-992' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET CLR 3.0.04506; .NET4.0C; Media Center PC 5.0; SLCC1; .NET4.0E; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26812,7 +26812,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-993' => [
+    'test-0054-993' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; MALCJS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26839,7 +26839,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-994' => [
+    'test-0054-994' => [
         'ua' => 'Mozilla/3.0 (Win16; I)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -26866,7 +26866,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-995' => [
+    'test-0054-995' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -26893,7 +26893,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-996' => [
+    'test-0054-996' => [
         'ua' => 'Opera/9.80 (Android; Linux; Opera Mobi/ADR-1011151731; U; de) Presto/2.5.28 Version/10.1',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -26920,7 +26920,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-997' => [
+    'test-0054-997' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Win64; x64; Trident/6.0; tb-1und1/2.6.6)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26947,7 +26947,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-998' => [
+    'test-0054-998' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; MAAU; tb-gmx/2.6.8; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -26974,7 +26974,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-999' => [
+    'test-0054-999' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; XELIO10_QUAD Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -27001,7 +27001,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1000' => [
+    'test-0054-1000' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27028,7 +27028,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1001' => [
+    'test-0054-1001' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/29.0.1547.57 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -27055,7 +27055,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1002' => [
+    'test-0054-1002' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:MANAGED; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27082,7 +27082,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1003' => [
+    'test-0054-1003' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) Gecko Firefox/5.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -27109,7 +27109,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1004' => [
+    'test-0054-1004' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/4.0; GTB7.4; InfoPath.3; SV1; .NET CLR 3.1.76908; WOW64; de-de)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27136,7 +27136,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1005' => [
+    'test-0054-1005' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; InfoPath.3; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27163,7 +27163,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1006' => [
+    'test-0054-1006' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Microsoft Outlook 16.0.4266; Microsoft Outlook 16.0.4266; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27190,7 +27190,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1007' => [
+    'test-0054-1007' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.1 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.1',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -27217,7 +27217,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1008' => [
+    'test-0054-1008' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Thunderbird/45.1.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -27244,7 +27244,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1009' => [
+    'test-0054-1009' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; GWX:MANAGED; GWX:RED; GWX:QUALIFIED; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27271,7 +27271,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1010' => [
+    'test-0054-1010' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Thunderbird/24.3.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -27298,7 +27298,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1011' => [
+    'test-0054-1011' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27325,7 +27325,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1012' => [
+    'test-0054-1012' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -27352,7 +27352,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1013' => [
+    'test-0054-1013' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27379,7 +27379,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1014' => [
+    'test-0054-1014' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; SLCC2; Media Center PC 6.0; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27406,7 +27406,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1015' => [
+    'test-0054-1015' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.11.2661.78 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -27433,7 +27433,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1016' => [
+    'test-0054-1016' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; GT-P5110 Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -27460,7 +27460,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1017' => [
+    'test-0054-1017' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27487,7 +27487,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1018' => [
+    'test-0054-1018' => [
         'ua' => 'sss',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -27514,7 +27514,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1019' => [
+    'test-0054-1019' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.10 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -27541,7 +27541,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1020' => [
+    'test-0054-1020' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; NP08; MAAU; NP08; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27568,7 +27568,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1021' => [
+    'test-0054-1021' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; AskTbAVR-4/5.15.26.45268; .NET CLR 1.1.4322)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27595,7 +27595,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1022' => [
+    'test-0054-1022' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-P605 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -27622,7 +27622,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1023' => [
+    'test-0054-1023' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; BTRS102380; GTB7.5)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27649,7 +27649,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1024' => [
+    'test-0054-1024' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbAVR-4/5.15.31.57710; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27676,7 +27676,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1025' => [
+    'test-0054-1025' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SGP521 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -27703,7 +27703,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1026' => [
+    'test-0054-1026' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -27730,7 +27730,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1027' => [
+    'test-0054-1027' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; TU-1489A Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -27757,7 +27757,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1028' => [
+    'test-0054-1028' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0E; .NET4.0C; GWX:DOWNLOADED; Microsoft Outlook 14.0.7167; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27784,7 +27784,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1029' => [
+    'test-0054-1029' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27811,7 +27811,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1030' => [
+    'test-0054-1030' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64; de-AT) adbeat.com/policy AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -27838,7 +27838,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1031' => [
+    'test-0054-1031' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; Microsoft Outlook 15.0.4771; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27865,7 +27865,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1032' => [
+    'test-0054-1032' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; GWX:RED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27892,7 +27892,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1033' => [
+    'test-0054-1033' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.1.9; .NET CLR 4.0.30319; ffco7) Gecko/20100315 YFF35 Firefox/3.5.9',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -27919,7 +27919,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1034' => [
+    'test-0054-1034' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.1; LG-H440n Build/LRX21Y; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -27946,7 +27946,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1035' => [
+    'test-0054-1035' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; InfoPath.3; .NET4.0C; .NET4.0E; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -27973,7 +27973,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1036' => [
+    'test-0054-1036' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:RESERVED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28000,7 +28000,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1037' => [
+    'test-0054-1037' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/11.0.65374 Mobile/13F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -28027,7 +28027,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1038' => [
+    'test-0054-1038' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.6131; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28054,7 +28054,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1039' => [
+    'test-0054-1039' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.30729; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28081,7 +28081,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1040' => [
+    'test-0054-1040' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MALN; .NET4.0C; Tablet PC 2.0; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28108,7 +28108,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1041' => [
+    'test-0054-1041' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; SM-J100H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -28135,7 +28135,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1042' => [
+    'test-0054-1042' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; MediaPad M1 8.0 Build/HuaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -28162,7 +28162,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1043' => [
+    'test-0054-1043' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; eSobiSubscriber 1.0.0.40; BRI/2; MAAR; .NET4.0C; McAfee; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28189,7 +28189,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1044' => [
+    'test-0054-1044' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; LG-H525n Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -28216,7 +28216,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1045' => [
+    'test-0054-1045' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; tb-webde/2.6.6; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28243,7 +28243,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1046' => [
+    'test-0054-1046' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28270,7 +28270,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1047' => [
+    'test-0054-1047' => [
         'ua' => 'AndroidDownloadManager/4.4.2 (Linux; U; Android 4.4.2; GT-P5210 Build/KOT49H)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -28297,7 +28297,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1048' => [
+    'test-0054-1048' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; NP08; MAAU; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28324,7 +28324,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1049' => [
+    'test-0054-1049' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28351,7 +28351,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1050' => [
+    'test-0054-1050' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:RED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28378,7 +28378,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1051' => [
+    'test-0054-1051' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28405,7 +28405,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1052' => [
+    'test-0054-1052' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; MATM; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28432,7 +28432,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1053' => [
+    'test-0054-1053' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Microsoft Outlook 14.0.6131; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28459,7 +28459,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1054' => [
+    'test-0054-1054' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0 TO-Browser/TOB7.45.0.113_12',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -28486,7 +28486,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1055' => [
+    'test-0054-1055' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.1; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28513,7 +28513,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1056' => [
+    'test-0054-1056' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 6.0; en-US; E6653 Build/32.1.A.1.185) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.8.770 U3/0.8.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'UC Browser',
@@ -28540,7 +28540,7 @@ return [
             'RenderingEngine_Maker'   => 'UC Web',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1057' => [
+    'test-0054-1057' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; tb-webde/2.5.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28567,7 +28567,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1058' => [
+    'test-0054-1058' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET4.0C; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28594,7 +28594,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1059' => [
+    'test-0054-1059' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0 BLNGBAR',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -28621,7 +28621,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1060' => [
+    'test-0054-1060' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SGP311 Build/10.6.A.0.454) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -28648,7 +28648,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1061' => [
+    'test-0054-1061' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.1.14) Gecko/20080612 Fedora/2.0.0.14-20080612.fc8.acer Firefox/2.0.0.14',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -28675,7 +28675,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1062' => [
+    'test-0054-1062' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SGP611 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -28702,7 +28702,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1063' => [
+    'test-0054-1063' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.4; de-de; SonyEricssonMK16i Build/4.0.2.A.0.69) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -28729,7 +28729,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1064' => [
+    'test-0054-1064' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; WOW64; Trident/7.0; tb-gmx/2.6.7)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28756,7 +28756,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1065' => [
+    'test-0054-1065' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; EVOLUTION12 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -28783,7 +28783,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1066' => [
+    'test-0054-1066' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.54 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -28810,7 +28810,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1067' => [
+    'test-0054-1067' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; HP Slate 8 Pro Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -28837,7 +28837,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1068' => [
+    'test-0054-1068' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; K01B Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -28864,7 +28864,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1069' => [
+    'test-0054-1069' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; BRI/2; GWX:QUALIFIED; Creative AutoUpdate v1.41.09; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28891,7 +28891,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1070' => [
+    'test-0054-1070' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-P605 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -28918,7 +28918,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1071' => [
+    'test-0054-1071' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; eSobiSubscriber 1.0.0.40; MAAR; .NET4.0C; .NET4.0E; InfoPath.3; tb-webde/2.6.6; GWX:RESERVED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28945,7 +28945,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1072' => [
+    'test-0054-1072' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAAU; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; ZemanaAID/FFFF0059; BRI/2; InfoPath.3; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28972,7 +28972,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1073' => [
+    'test-0054-1073' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Creative AutoUpdate v1.40.01; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -28999,7 +28999,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1074' => [
+    'test-0054-1074' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29026,7 +29026,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1075' => [
+    'test-0054-1075' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; SM-T230 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -29053,7 +29053,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1076' => [
+    'test-0054-1076' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29080,7 +29080,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1077' => [
+    'test-0054-1077' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29107,7 +29107,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1078' => [
+    'test-0054-1078' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; TOnlineIE11B; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29134,7 +29134,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1079' => [
+    'test-0054-1079' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29161,7 +29161,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1080' => [
+    'test-0054-1080' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MS-RTC LM 8; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29188,7 +29188,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1081' => [
+    'test-0054-1081' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; LIFETAB_P831X Build/LRX22L; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -29215,7 +29215,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1082' => [
+    'test-0054-1082' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-T815 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -29242,7 +29242,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1083' => [
+    'test-0054-1083' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29269,7 +29269,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1084' => [
+    'test-0054-1084' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; MALNJS; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29296,7 +29296,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1085' => [
+    'test-0054-1085' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; AskTB5.6; (1und1/1.4.0.0); MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29323,7 +29323,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1086' => [
+    'test-0054-1086' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; RAINBOW JAM Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -29350,7 +29350,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1087' => [
+    'test-0054-1087' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; BTRS100671; .NET CLR 1.1.4322; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; AskTbAVR-W1/5.12.5.17700; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET CLR 2.0.50727)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29377,7 +29377,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1088' => [
+    'test-0054-1088' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; K012 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -29404,7 +29404,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1089' => [
+    'test-0054-1089' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.0.122066290 Mobile/13E233 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -29431,7 +29431,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1090' => [
+    'test-0054-1090' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Thunderbird/45.1.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -29458,7 +29458,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1091' => [
+    'test-0054-1091' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1; rv:45.0) Gecko/20100101 Thunderbird/45.1.0 Lightning/4.7.1',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -29485,7 +29485,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1092' => [
+    'test-0054-1092' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-N910T3 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -29512,7 +29512,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1093' => [
+    'test-0054-1093' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MASM; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29539,7 +29539,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1094' => [
+    'test-0054-1094' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; InfoPath.1; .NET4.0E; BRI/2; GWX:RED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29566,7 +29566,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1095' => [
+    'test-0054-1095' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; BRI/2; GWX:RED; GWX:QUALIFIED; TOnlineIE11B; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29593,7 +29593,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1096' => [
+    'test-0054-1096' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Tablet PC 2.0; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; MAMI; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29620,7 +29620,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1097' => [
+    'test-0054-1097' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 OPR/36.0.2130.36',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -29647,7 +29647,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1098' => [
+    'test-0054-1098' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29674,7 +29674,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1099' => [
+    'test-0054-1099' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SHIELD Tablet Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -29701,7 +29701,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1100' => [
+    'test-0054-1100' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/36.0.2130.75',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -29728,7 +29728,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1101' => [
+    'test-0054-1101' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; IdeaTabA1000L-F Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -29755,7 +29755,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1102' => [
+    'test-0054-1102' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29782,7 +29782,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1103' => [
+    'test-0054-1103' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; PI3210G Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -29809,7 +29809,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1104' => [
+    'test-0054-1104' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; NOON Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -29836,7 +29836,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1105' => [
+    'test-0054-1105' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 849761435',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -29863,7 +29863,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1106' => [
+    'test-0054-1106' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.0.122066290 Mobile/12B435 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -29890,7 +29890,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1107' => [
+    'test-0054-1107' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 mailapp/5.0.3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -29917,7 +29917,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1108' => [
+    'test-0054-1108' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0; WUID=41abb3d66067a05fa12d42446ad9f550; WTB=24086) Gecko/20100101 Firefox/45.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -29944,7 +29944,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1109' => [
+    'test-0054-1109' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0) Gecko/20100101 Firefox/46.0 anonymized by Abelssoft 1729056105',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -29971,7 +29971,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1110' => [
+    'test-0054-1110' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:MANAGED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -29998,7 +29998,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1111' => [
+    'test-0054-1111' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; Tablet PC 2.0; MASMJS; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30025,7 +30025,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1112' => [
+    'test-0054-1112' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30052,7 +30052,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1113' => [
+    'test-0054-1113' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; C6603 Build/10.1.1.A.1.253) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -30079,7 +30079,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1114' => [
+    'test-0054-1114' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbAVR-4/5.15.5.28481; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30106,7 +30106,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1115' => [
+    'test-0054-1115' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.52 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -30133,7 +30133,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1116' => [
+    'test-0054-1116' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G12',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -30160,7 +30160,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1117' => [
+    'test-0054-1117' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; CMDTDFJS; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; AskTB5.6; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30187,7 +30187,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1118' => [
+    'test-0054-1118' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET CLR 1.1.4322; .NET4.0E; Microsoft Outlook 16.0.4378; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30214,7 +30214,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1119' => [
+    'test-0054-1119' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -30241,7 +30241,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1120' => [
+    'test-0054-1120' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; GWX:RED; GWX:RESERVED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30268,7 +30268,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1121' => [
+    'test-0054-1121' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; AskTB5.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30295,7 +30295,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1122' => [
+    'test-0054-1122' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.30729; .NET4.0C; .NET CLR 3.5.30729; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30322,7 +30322,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1123' => [
+    'test-0054-1123' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30349,7 +30349,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1124' => [
+    'test-0054-1124' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CMDTDF; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30376,7 +30376,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1125' => [
+    'test-0054-1125' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Elephone P3000S Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -30403,7 +30403,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1126' => [
+    'test-0054-1126' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.1; ALE-L02 Build/HuaweiALE-L02) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -30430,7 +30430,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1127' => [
+    'test-0054-1127' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.1; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:RESERVED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30457,7 +30457,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1128' => [
+    'test-0054-1128' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; HTC One_M8 Build/MRA58K.H13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -30484,7 +30484,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1129' => [
+    'test-0054-1129' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.1; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; AskTbAVR-4/5.15.13.33021; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30511,7 +30511,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1130' => [
+    'test-0054-1130' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; MDDCJS; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30538,7 +30538,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1131' => [
+    'test-0054-1131' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MALN; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30565,7 +30565,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1132' => [
+    'test-0054-1132' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-T815 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -30592,7 +30592,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1133' => [
+    'test-0054-1133' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30619,7 +30619,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1134' => [
+    'test-0054-1134' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-H220 Build/KOT49I.A1440501878) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -30646,7 +30646,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1135' => [
+    'test-0054-1135' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; I68G Build/LMY48G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -30673,7 +30673,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1136' => [
+    'test-0054-1136' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; B3-A20 Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -30700,7 +30700,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1137' => [
+    'test-0054-1137' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Thunderbird/45.1.0 Lightning/4.7.1',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -30727,7 +30727,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1138' => [
+    'test-0054-1138' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20110624 Thunderbird/5.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -30754,7 +30754,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1139' => [
+    'test-0054-1139' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30781,7 +30781,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1140' => [
+    'test-0054-1140' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Thunderbird/45.2 Lightning/4.7b1',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -30808,7 +30808,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1141' => [
+    'test-0054-1141' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.1; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30835,7 +30835,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1142' => [
+    'test-0054-1142' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:38.0) Gecko/20100101 Thunderbird/38.8.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -30862,7 +30862,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1143' => [
+    'test-0054-1143' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; .NET4.0C; tb-gmx/2.6.6; GWX:RED; GWX:QUALIFIED; TOnlineIE11B; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30889,7 +30889,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1144' => [
+    'test-0054-1144' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CPNTDF; InfoPath.1; BRI/2; AskTbORJ/5.14.1.20007; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30916,7 +30916,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1145' => [
+    'test-0054-1145' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; GWX:MANAGED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30943,7 +30943,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1146' => [
+    'test-0054-1146' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; GWX:RESERVED; GWX:QUALIFIED; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30970,7 +30970,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1147' => [
+    'test-0054-1147' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; HRTS; H9P; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -30997,7 +30997,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1148' => [
+    'test-0054-1148' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; anonymized by Abelssoft 1600746919; InfoPath.3; anonymized by Abelssoft 1188682007; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31024,7 +31024,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1149' => [
+    'test-0054-1149' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET CLR 1.1.4322; .NET4.0E; Microsoft Outlook 15.0.4797; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31051,7 +31051,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1150' => [
+    'test-0054-1150' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.5 (KHTML, like Gecko) Chrome/4.0.249.89 Safari/532.5',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -31078,7 +31078,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1151' => [
+    'test-0054-1151' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; BRI/2; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31105,7 +31105,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1152' => [
+    'test-0054-1152' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686; rv:21.0) Gecko/20100101 Firefox/21.0 Iceweasel/21.0',
         'properties' => [
             'Browser_Name'            => 'Iceweasel',
@@ -31132,7 +31132,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1153' => [
+    'test-0054-1153' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; GWX:MANAGED; GWX:DOWNLOADED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31159,7 +31159,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1154' => [
+    'test-0054-1154' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 5.0; de-de; LG-D855 Build/LRX21R.A1440597237) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.1847.118 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -31186,7 +31186,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1155' => [
+    'test-0054-1155' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31213,7 +31213,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1156' => [
+    'test-0054-1156' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:17.0) Gecko/20130801 Thunderbird/17.0.8',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -31240,7 +31240,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1157' => [
+    'test-0054-1157' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/537.36 (KHTML, like Gecko) Version/8.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -31267,7 +31267,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1158' => [
+    'test-0054-1158' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43 (Edition Campaign 37)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -31294,7 +31294,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1159' => [
+    'test-0054-1159' => [
         'ua' => 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; SAMSUNG; SM-W750V) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31321,7 +31321,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1160' => [
+    'test-0054-1160' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; MI 4LTE Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -31348,7 +31348,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1161' => [
+    'test-0054-1161' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-G903F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -31375,7 +31375,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1162' => [
+    'test-0054-1162' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.1; ASUS Transformer Pad TF300T Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -31402,7 +31402,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1163' => [
+    'test-0054-1163' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -31429,7 +31429,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1164' => [
+    'test-0054-1164' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; PMP3970B Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -31456,7 +31456,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1165' => [
+    'test-0054-1165' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; de-at; SAMSUNG SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -31483,7 +31483,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1166' => [
+    'test-0054-1166' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:RESERVED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31510,7 +31510,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1167' => [
+    'test-0054-1167' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-T520 Build/MOB30J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -31537,7 +31537,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1168' => [
+    'test-0054-1168' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31564,7 +31564,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1169' => [
+    'test-0054-1169' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31591,7 +31591,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1170' => [
+    'test-0054-1170' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; ONE A2001 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -31618,7 +31618,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1171' => [
+    'test-0054-1171' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) OPiOS/13.0.1.100754 Mobile/13F69 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Opera Mini',
@@ -31645,7 +31645,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1172' => [
+    'test-0054-1172' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G12 Safari/601.1',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -31672,7 +31672,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1173' => [
+    'test-0054-1173' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; HPDTDFJS; InfoPath.3; GWX:RESERVED; Microsoft Outlook 15.0.4797; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31699,7 +31699,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1174' => [
+    'test-0054-1174' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; tb-gmx/2.6.6; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; (gmx/1.0.0.8); MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31726,7 +31726,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1175' => [
+    'test-0054-1175' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0; McAfee; InfoPath.3; ASU2JS; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31753,7 +31753,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1176' => [
+    'test-0054-1176' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31780,7 +31780,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1177' => [
+    'test-0054-1177' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; Letv X500 Build/DBXCNOP5501001303S) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -31807,7 +31807,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1178' => [
+    'test-0054-1178' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.1; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31834,7 +31834,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1179' => [
+    'test-0054-1179' => [
         'ua' => 'Mozilla/5.0 (X11; Fedora; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -31861,7 +31861,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1180' => [
+    'test-0054-1180' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-P550 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -31888,7 +31888,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1181' => [
+    'test-0054-1181' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:QUALIFIED; AskTB5.6)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31915,7 +31915,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1182' => [
+    'test-0054-1182' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.1; A700 Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -31942,7 +31942,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1183' => [
+    'test-0054-1183' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; WebView/2.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -31969,7 +31969,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1184' => [
+    'test-0054-1184' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-N915FY Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -31996,7 +31996,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1185' => [
+    'test-0054-1185' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.1; YOGA Tablet 2-1050L Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -32023,7 +32023,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1186' => [
+    'test-0054-1186' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32050,7 +32050,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1187' => [
+    'test-0054-1187' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32077,7 +32077,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1188' => [
+    'test-0054-1188' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; SLCC2; Media Center PC 6.0; Tablet PC 2.0; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32104,7 +32104,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1189' => [
+    'test-0054-1189' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:31.0) Gecko/20100101 Thunderbird/31.4.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -32131,7 +32131,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1190' => [
+    'test-0054-1190' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SGP521 Build/23.5.A.0.570; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -32158,7 +32158,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1191' => [
+    'test-0054-1191' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; ASU2JS; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32185,7 +32185,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1192' => [
+    'test-0054-1192' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; .NET CLR 1.1.4322; GWX:DOWNLOADED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32212,7 +32212,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1193' => [
+    'test-0054-1193' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; BTRS101581; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; InfoPath.2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.1.4322; .NET4.0C; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32239,7 +32239,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1194' => [
+    'test-0054-1194' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.1.4322; .NET CLR 3.0.04506; .NET4.0C; SLCC1; .NET4.0E; Tablet PC 2.0; Media Center PC 6.0; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32266,7 +32266,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1195' => [
+    'test-0054-1195' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; BRI/2; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; Tablet PC 2.0; GWX:RESERVED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32293,7 +32293,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1196' => [
+    'test-0054-1196' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2; BRI/2; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32320,7 +32320,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1197' => [
+    'test-0054-1197' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MANM; .NET4.0C; Tablet PC 2.0; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32347,7 +32347,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1198' => [
+    'test-0054-1198' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:RED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32374,7 +32374,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1199' => [
+    'test-0054-1199' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Thunderbird/45.1.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -32401,7 +32401,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1200' => [
+    'test-0054-1200' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; HTC 10 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -32428,7 +32428,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1201' => [
+    'test-0054-1201' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 1948489125',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -32455,7 +32455,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1202' => [
+    'test-0054-1202' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32482,7 +32482,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1203' => [
+    'test-0054-1203' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; InfoPath.2; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32509,7 +32509,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1204' => [
+    'test-0054-1204' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; InfoPath.3; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32536,7 +32536,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1205' => [
+    'test-0054-1205' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0E; .NET4.0C; .NET CLR 1.1.4322; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32563,7 +32563,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1206' => [
+    'test-0054-1206' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MDDS; Tablet PC 2.0; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32590,7 +32590,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1207' => [
+    'test-0054-1207' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.3; KFTHWA Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -32617,7 +32617,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1208' => [
+    'test-0054-1208' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-T355 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -32644,7 +32644,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1209' => [
+    'test-0054-1209' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; SM-T520 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -32671,7 +32671,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1210' => [
+    'test-0054-1210' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32698,7 +32698,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1211' => [
+    'test-0054-1211' => [
         'ua' => 'Mozilla/5.0 (iPod; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10A523',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -32725,7 +32725,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1212' => [
+    'test-0054-1212' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32752,7 +32752,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1213' => [
+    'test-0054-1213' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-D331 Build/KOT49I.A1421911913) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -32779,7 +32779,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1214' => [
+    'test-0054-1214' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; BRI/2; tb-gmx/2.6.6; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32806,7 +32806,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1215' => [
+    'test-0054-1215' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MDDR; Tablet PC 2.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32833,7 +32833,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1216' => [
+    'test-0054-1216' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; WOW64; rv:41.0) Gecko/20100101 Firefox/46.0.1 (x86 de) Anonymisiert durch AlMiSoft Browser-Maulkorb 53084412',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -32860,7 +32860,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1217' => [
+    'test-0054-1217' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; Microsoft Outlook 14.0.7167; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32887,7 +32887,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1218' => [
+    'test-0054-1218' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MASBJS; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32914,7 +32914,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1219' => [
+    'test-0054-1219' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:MANAGED; GWX:QUALIFIED; Microsoft Outlook 15.0.4420; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -32941,7 +32941,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1220' => [
+    'test-0054-1220' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.54 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -32968,7 +32968,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1221' => [
+    'test-0054-1221' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) GSA/5.2.43972 Mobile/11D257 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -32995,7 +32995,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1222' => [
+    'test-0054-1222' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; YOGA Tablet 2-830F Build/KOT49H) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -33022,7 +33022,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1223' => [
+    'test-0054-1223' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -33049,7 +33049,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1224' => [
+    'test-0054-1224' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-T810 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -33076,7 +33076,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1225' => [
+    'test-0054-1225' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; AskTbAVR-4/5.15.31.57710; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33103,7 +33103,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1226' => [
+    'test-0054-1226' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; BRI/2; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; InfoPath.3; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33130,7 +33130,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1227' => [
+    'test-0054-1227' => [
         'ua' => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6; de-de) AppleWebKit/531.9 (KHTML, like Gecko)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -33157,7 +33157,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1228' => [
+    'test-0054-1228' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET CLR 1.1.4322; .NET4.0C; InfoPath.2; Media Center PC 5.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; SLCC1; .NET4.0E; AskTbAVR-4/5.15.31.57710; GWX:RED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33184,7 +33184,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1229' => [
+    'test-0054-1229' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33211,7 +33211,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1230' => [
+    'test-0054-1230' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; GWX:RED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33238,7 +33238,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1231' => [
+    'test-0054-1231' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; Media Center PC 6.0; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.3; SLCC2; Tablet PC 2.0; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33265,7 +33265,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1232' => [
+    'test-0054-1232' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; HTC One M8s Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -33292,7 +33292,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1233' => [
+    'test-0054-1233' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D331 Build/KOT49I.A1421911913) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -33319,7 +33319,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1234' => [
+    'test-0054-1234' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; Media Center PC 6.0; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33346,7 +33346,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1235' => [
+    'test-0054-1235' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0E; .NET4.0C; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33373,7 +33373,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1236' => [
+    'test-0054-1236' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; MASB; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33400,7 +33400,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1237' => [
+    'test-0054-1237' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; Microsoft Outlook 14.0.6025; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33427,7 +33427,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1238' => [
+    'test-0054-1238' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; BRI/2; MASBJS; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33454,7 +33454,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1239' => [
+    'test-0054-1239' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33481,7 +33481,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1240' => [
+    'test-0054-1240' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.3; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33508,7 +33508,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1241' => [
+    'test-0054-1241' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; Tablet PC 2.0; InfoPath.1; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; AskTbAVR-4/5.15.26.45268; InfoPath.3; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33535,7 +33535,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1242' => [
+    'test-0054-1242' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; LCJB; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33562,7 +33562,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1243' => [
+    'test-0054-1243' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B436 Version/7.0 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -33589,7 +33589,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1244' => [
+    'test-0054-1244' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; Media Center PC 6.0; MAMD; Media Center PC 5.0; SLCC1; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; Microsoft Outlook 14.0.7012; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33616,7 +33616,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1245' => [
+    'test-0054-1245' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33643,7 +33643,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1246' => [
+    'test-0054-1246' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33670,7 +33670,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1247' => [
+    'test-0054-1247' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; anonymized by Abelssoft 978238734; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33697,7 +33697,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1248' => [
+    'test-0054-1248' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; eSobiSubscriber 2.0.4.16; MAAR; .NET4.0C; AskTbALSV5/5.15.25.44892; .NET4.0E; GWX:RESERVED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33724,7 +33724,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1249' => [
+    'test-0054-1249' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-N7505 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -33751,7 +33751,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1250' => [
+    'test-0054-1250' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; SLCC2; Media Center PC 6.0; Tablet PC 2.0; tb-webde/2.6.6; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33778,7 +33778,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1251' => [
+    'test-0054-1251' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; C1905 Build/15.4.A.1.9) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -33805,7 +33805,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1252' => [
+    'test-0054-1252' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MALNJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33832,7 +33832,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1253' => [
+    'test-0054-1253' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; Avant Browser; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33859,7 +33859,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1254' => [
+    'test-0054-1254' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33886,7 +33886,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1255' => [
+    'test-0054-1255' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko/20100101 Firefox/12.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -33913,7 +33913,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1256' => [
+    'test-0054-1256' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; Tablet PC 2.0; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33940,7 +33940,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1257' => [
+    'test-0054-1257' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; tb-gmx/2.6.6; (gmx/1.4.0.0; ms-office; MSOffice 14); Microsoft Outlook 14.0.7169)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33967,7 +33967,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1258' => [
+    'test-0054-1258' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; SLCC2; Media Center PC 6.0; Media Center PC 5.1; SLCC1; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -33994,7 +33994,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1259' => [
+    'test-0054-1259' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; Media Center PC 6.0; tb-gmx/2.6.7; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34021,7 +34021,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1260' => [
+    'test-0054-1260' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; GWX:RED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34048,7 +34048,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1261' => [
+    'test-0054-1261' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:DOWNLOADED; GWX:QUALIFIED; MASBJS; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34075,7 +34075,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1262' => [
+    'test-0054-1262' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-N7505 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -34102,7 +34102,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1263' => [
+    'test-0054-1263' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; (gmx/1.0.0.8))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34129,7 +34129,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1264' => [
+    'test-0054-1264' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.3; LCJB; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34156,7 +34156,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1265' => [
+    'test-0054-1265' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34183,7 +34183,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1266' => [
+    'test-0054-1266' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:QUALIFIED; ; gmx/1.4.0.0; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34210,7 +34210,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1267' => [
+    'test-0054-1267' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; LT26i Build/6.2.B.1.96) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -34237,7 +34237,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1268' => [
+    'test-0054-1268' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; InfoPath.2; .NET4.0C; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34264,7 +34264,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1269' => [
+    'test-0054-1269' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; V919 Air DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -34291,7 +34291,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1270' => [
+    'test-0054-1270' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34318,7 +34318,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1271' => [
+    'test-0054-1271' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2; GWX:DOWNLOADED; GWX:QUALIFIED; MATMJS; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34345,7 +34345,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1272' => [
+    'test-0054-1272' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; AOL 9.7; AOLBuild 4346.1009; Trident/7.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34372,7 +34372,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1273' => [
+    'test-0054-1273' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Evernote Windows/301769 (cs-CZ); Windows/6.1.7601 Service Pack 1 (Win64); Safari/536.5',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -34399,7 +34399,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1274' => [
+    'test-0054-1274' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/534.30 (KHTML, like Gecko) Iron/12.0.750.0 Chrome/12.0.750.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Iron',
@@ -34426,7 +34426,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1275' => [
+    'test-0054-1275' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; SLCC1; Tablet PC 2.0; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34453,7 +34453,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1276' => [
+    'test-0054-1276' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34480,7 +34480,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1277' => [
+    'test-0054-1277' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CMNTDF; BRI/1; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34507,7 +34507,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1278' => [
+    'test-0054-1278' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:QUALIFIED; Tablet PC 2.0; InfoPath.3; Microsoft Outlook 15.0.4779; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34534,7 +34534,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1279' => [
+    'test-0054-1279' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAAR; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34561,7 +34561,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1280' => [
+    'test-0054-1280' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64;  Anonymisiert durch AlMiSoft Browser-Maulkorb 71541331; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34588,7 +34588,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1281' => [
+    'test-0054-1281' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; CMDTDFJS; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34615,7 +34615,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1282' => [
+    'test-0054-1282' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34642,7 +34642,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1283' => [
+    'test-0054-1283' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Thunderbird/38.8.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -34669,7 +34669,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1284' => [
+    'test-0054-1284' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; TOnlineIE11B)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34696,7 +34696,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1285' => [
+    'test-0054-1285' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.1; MALNJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34723,7 +34723,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1286' => [
+    'test-0054-1286' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; CMDTDFJS; F9J; GWX:MANAGED; GWX:DOWNLOADED; GWX:QUALIFIED; BistroPortal)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34750,7 +34750,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1287' => [
+    'test-0054-1287' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; rv:45.0) Gecko/20100101 Thunderbird/45.1.0 Lightning/4.7.1',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -34777,7 +34777,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1288' => [
+    'test-0054-1288' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; InfoPath.3; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34804,7 +34804,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1289' => [
+    'test-0054-1289' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; Avant Browser; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34831,7 +34831,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1290' => [
+    'test-0054-1290' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34858,7 +34858,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1291' => [
+    'test-0054-1291' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Thunderbird/45.1.0 Lightning/4.7',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -34885,7 +34885,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1292' => [
+    'test-0054-1292' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-G920F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -34912,7 +34912,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1293' => [
+    'test-0054-1293' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; SLCC2; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -34939,7 +34939,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1294' => [
+    'test-0054-1294' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Z1 Build/LMY49H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -34966,7 +34966,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1295' => [
+    'test-0054-1295' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Thunderbird/45.1.0 Lightning/4.7.1',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -34993,7 +34993,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1296' => [
+    'test-0054-1296' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; Microsoft Outlook 16.0.6741; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35020,7 +35020,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1297' => [
+    'test-0054-1297' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; GWX:DOWNLOADED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35047,7 +35047,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1298' => [
+    'test-0054-1298' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; Media Center PC 6.0; Microsoft Outlook 16.0.4378; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35074,7 +35074,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1299' => [
+    'test-0054-1299' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; SM-G900FD Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -35101,7 +35101,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1300' => [
+    'test-0054-1300' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:45.0) Gecko/20100101 Thunderbird/45.1.0 Lightning/4.7.1',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -35128,7 +35128,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1301' => [
+    'test-0054-1301' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-T210R Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -35155,7 +35155,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1302' => [
+    'test-0054-1302' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAMD; InfoPath.2; .NET4.0C; Tablet PC 2.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35182,7 +35182,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1303' => [
+    'test-0054-1303' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35209,7 +35209,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1304' => [
+    'test-0054-1304' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35236,7 +35236,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1305' => [
+    'test-0054-1305' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; rv:24.0) Gecko/20100101 Thunderbird/24.4.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -35263,7 +35263,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1306' => [
+    'test-0054-1306' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35290,7 +35290,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1307' => [
+    'test-0054-1307' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13F69 [FBAN/FBIOS;FBAV/55.0.0.40.137;FBBV/29582208;FBRV/0;FBDV/iPad2,1;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.2;FBSS/1;FBCR/;FBID/tablet;FBLC/de_DE;FBOP/5]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -35317,7 +35317,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1308' => [
+    'test-0054-1308' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; xs-BEQpOiGoJuQ;kLU5E_; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35344,7 +35344,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1309' => [
+    'test-0054-1309' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; pl-pl; GT-N8000 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -35371,7 +35371,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1310' => [
+    'test-0054-1310' => [
         'ua' => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.7; en-US; rv:11.0) Gecko/20100101 Firefox/11.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -35398,7 +35398,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1311' => [
+    'test-0054-1311' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.22 anonymized by Abelssoft 824859124',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -35425,7 +35425,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1312' => [
+    'test-0054-1312' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.2; de; rv:1.9.2.6) Gecko/20100625 Firefox/46.0.1 (x86 de) Anonymisiert durch AlMiSoft Browser-Maulkorb 83273664',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -35452,7 +35452,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1313' => [
+    'test-0054-1313' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; InfoPath.2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; AskTbAVR-4/5.15.18.37268; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35479,7 +35479,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1314' => [
+    'test-0054-1314' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2739.2 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -35506,7 +35506,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1315' => [
+    'test-0054-1315' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 10.0; Win64; x64; Trident/7.0; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35533,7 +35533,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1316' => [
+    'test-0054-1316' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; P023 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/47.0.2526.100 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -35560,7 +35560,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1317' => [
+    'test-0054-1317' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; BRI/2; GWX:DOWNLOADED; Microsoft Outlook 14.0.7167; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35587,7 +35587,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1318' => [
+    'test-0054-1318' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0; Mozilla Firefox 38.7.0 - 11712-10116-86',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -35614,7 +35614,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1319' => [
+    'test-0054-1319' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35641,7 +35641,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1320' => [
+    'test-0054-1320' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Dragon/49.13.20.402 Chrome/49.0.2623.110 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Dragon',
@@ -35668,7 +35668,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1321' => [
+    'test-0054-1321' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; tb-gmx/2.6.7; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35695,7 +35695,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1322' => [
+    'test-0054-1322' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MDDC; .NET4.0C; InfoPath.2; .NET4.0E; McAfee; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35722,7 +35722,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1323' => [
+    'test-0054-1323' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-T715 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -35749,7 +35749,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1324' => [
+    'test-0054-1324' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MDDR; InfoPath.3; BRI/2; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35776,7 +35776,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1325' => [
+    'test-0054-1325' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.8.1000 Chrome/30.0.1599.101 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Maxthon',
@@ -35803,7 +35803,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1326' => [
+    'test-0054-1326' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35830,7 +35830,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1327' => [
+    'test-0054-1327' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:RESERVED; GWX:QUALIFIED; MASBJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35857,7 +35857,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1328' => [
+    'test-0054-1328' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; BTRS102287; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35884,7 +35884,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1329' => [
+    'test-0054-1329' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; Microsoft Outlook 14.0.6025; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35911,7 +35911,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1330' => [
+    'test-0054-1330' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET CLR 1.1.4322; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35938,7 +35938,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1331' => [
+    'test-0054-1331' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; GWX:DOWNLOADED; GWX:QUALIFIED; .NAP 1.1; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35965,7 +35965,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1332' => [
+    'test-0054-1332' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -35992,7 +35992,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1333' => [
+    'test-0054-1333' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/4.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36019,7 +36019,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1334' => [
+    'test-0054-1334' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0E; .NET4.0C; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36046,7 +36046,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1335' => [
+    'test-0054-1335' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/7.0; MAFSJS; Microsoft Outlook 15.0.4823; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36073,7 +36073,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1336' => [
+    'test-0054-1336' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; GWX:RED; GWX:RESERVED; GWX:QUALIFIED; MALNJS; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36100,7 +36100,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1337' => [
+    'test-0054-1337' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36127,7 +36127,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1338' => [
+    'test-0054-1338' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:45.0) Gecko/20100101 Thunderbird/45.1.0 Lightning/4.7.1',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -36154,7 +36154,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1339' => [
+    'test-0054-1339' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.16 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -36181,7 +36181,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1340' => [
+    'test-0054-1340' => [
         'ua' => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; de-de) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -36208,7 +36208,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1341' => [
+    'test-0054-1341' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; .NET4.0C; tb-gmx/2.6.6; GWX:DOWNLOADED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36235,7 +36235,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1342' => [
+    'test-0054-1342' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; rv:44.0 ) Gecko/20100101 Firefox/44.0  anonymized by Abelssoft 849761435',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -36262,7 +36262,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1343' => [
+    'test-0054-1343' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36289,7 +36289,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1344' => [
+    'test-0054-1344' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 5.1; Trident/4.0; BTRS101962; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36316,7 +36316,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1345' => [
+    'test-0054-1345' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; LG-D686 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -36343,7 +36343,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1346' => [
+    'test-0054-1346' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; ro-ro; SAMSUNG SM-T230 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -36370,7 +36370,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1347' => [
+    'test-0054-1347' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Versatel.de ISDN 0404; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36397,7 +36397,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1348' => [
+    'test-0054-1348' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-at; SM-T311 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -36424,7 +36424,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1349' => [
+    'test-0054-1349' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; pl-pl; GT-P5100 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -36451,7 +36451,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1350' => [
+    'test-0054-1350' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/14.14300',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -36478,7 +36478,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1351' => [
+    'test-0054-1351' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.20.2661.78 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -36505,7 +36505,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1352' => [
+    'test-0054-1352' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; HP Slate 10 Plus Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -36532,7 +36532,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1353' => [
+    'test-0054-1353' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; K019 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -36559,7 +36559,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1354' => [
+    'test-0054-1354' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Dragon/49.13.20.400 Chrome/49.0.2623.110 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Dragon',
@@ -36586,7 +36586,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1355' => [
+    'test-0054-1355' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.76.4 (KHTML, like Gecko) Version/6.1.4 Safari/537.76.4',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -36613,7 +36613,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1356' => [
+    'test-0054-1356' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.0.122066290 Mobile/13F68 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -36640,7 +36640,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1357' => [
+    'test-0054-1357' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; GWX:MANAGED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36667,7 +36667,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1358' => [
+    'test-0054-1358' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; tb-gmx/2.6.6; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36694,7 +36694,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1359' => [
+    'test-0054-1359' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36721,7 +36721,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1360' => [
+    'test-0054-1360' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36748,7 +36748,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1361' => [
+    'test-0054-1361' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; MASBJS; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36775,7 +36775,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1362' => [
+    'test-0054-1362' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET4.0C; .NET CLR 3.0.30729; .NET4.0E; BRI/2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36802,7 +36802,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1363' => [
+    'test-0054-1363' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; ASU2JS; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36829,7 +36829,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1364' => [
+    'test-0054-1364' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; Media Center PC 6.0; LCJB; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36856,7 +36856,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1365' => [
+    'test-0054-1365' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-G925F Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -36883,7 +36883,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1366' => [
+    'test-0054-1366' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; Tablet PC 2.0; .NET4.0E; GWX:RED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36910,7 +36910,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1367' => [
+    'test-0054-1367' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 10.0; Trident/6.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36937,7 +36937,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1368' => [
+    'test-0054-1368' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4346.1009; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -36964,7 +36964,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1369' => [
+    'test-0054-1369' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/12F69 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -36991,7 +36991,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1370' => [
+    'test-0054-1370' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37018,7 +37018,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1371' => [
+    'test-0054-1371' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37045,7 +37045,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1372' => [
+    'test-0054-1372' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; yie8; (web.de/1.0.0.8))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37072,7 +37072,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1373' => [
+    'test-0054-1373' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-A500FU Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -37099,7 +37099,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1374' => [
+    'test-0054-1374' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; GT-N7105 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -37126,7 +37126,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1375' => [
+    'test-0054-1375' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 830)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37153,7 +37153,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1376' => [
+    'test-0054-1376' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0E; MAFS; InfoPath.1; .NET4.0C; GWX:DOWNLOADED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37180,7 +37180,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1377' => [
+    'test-0054-1377' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37207,7 +37207,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1378' => [
+    'test-0054-1378' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37234,7 +37234,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1379' => [
+    'test-0054-1379' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; X5pro Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -37261,7 +37261,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1380' => [
+    'test-0054-1380' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37288,7 +37288,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1381' => [
+    'test-0054-1381' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; Tablet PC 2.0; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37315,7 +37315,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1382' => [
+    'test-0054-1382' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; Microsoft Outlook 16.0.4266; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37342,7 +37342,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1383' => [
+    'test-0054-1383' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:QUALIFIED; MASMJS; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37369,7 +37369,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1384' => [
+    'test-0054-1384' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37396,7 +37396,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1385' => [
+    'test-0054-1385' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; McAfee; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37423,7 +37423,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1386' => [
+    'test-0054-1386' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; Tablet PC 2.0; .NET4.0E; GWX:DOWNLOADED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37450,7 +37450,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1387' => [
+    'test-0054-1387' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; MASEJS; Microsoft Outlook 16.0.6868; ms-office; MSOffice 16)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37477,7 +37477,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1388' => [
+    'test-0054-1388' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-T715 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -37504,7 +37504,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1389' => [
+    'test-0054-1389' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/8.0; .NET4.0C; .NET4.0E; InfoPath.3; Tablet PC 2.0; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37531,7 +37531,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1390' => [
+    'test-0054-1390' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 9_0_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13A404',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -37558,7 +37558,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1391' => [
+    'test-0054-1391' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; NP06; BRI/2; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37585,7 +37585,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1392' => [
+    'test-0054-1392' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0; InfoPath.3; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37612,7 +37612,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1393' => [
+    'test-0054-1393' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; BRI/2; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; Tablet PC 2.0; GWX:RED; GWX:QUALIFIED; MANM)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37639,7 +37639,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1394' => [
+    'test-0054-1394' => [
         'ua' => 'Microsoft Office/16.0 (Microsoft Outlook Mail 16.0.6965; Pro)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -37666,7 +37666,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1395' => [
+    'test-0054-1395' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -37693,7 +37693,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1396' => [
+    'test-0054-1396' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37720,7 +37720,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1397' => [
+    'test-0054-1397' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0; CMNTDFJS; f9J; InfoPath.3; GWX:DOWNLOADED; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37747,7 +37747,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1398' => [
+    'test-0054-1398' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; SX7.mini Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -37774,7 +37774,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1399' => [
+    'test-0054-1399' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; BRI/2; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37801,7 +37801,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1400' => [
+    'test-0054-1400' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37828,7 +37828,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1401' => [
+    'test-0054-1401' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37855,7 +37855,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1402' => [
+    'test-0054-1402' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/6.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; MASBJS; Microsoft Outlook 15.0.4815; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37882,7 +37882,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1403' => [
+    'test-0054-1403' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:DOWNLOADED; GWX:QUALIFIED; MDDCJS; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37909,7 +37909,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1404' => [
+    'test-0054-1404' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0; LG-D855 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -37936,7 +37936,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1405' => [
+    'test-0054-1405' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37963,7 +37963,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1406' => [
+    'test-0054-1406' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; Tablet PC 2.0; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED; Microsoft Outlook 14.0.7153; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -37990,7 +37990,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1407' => [
+    'test-0054-1407' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -38017,7 +38017,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1408' => [
+    'test-0054-1408' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:45.0) Gecko/20100101 Thunderbird/45.1.0',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -38044,7 +38044,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1409' => [
+    'test-0054-1409' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CMDTDF; BRI/1; Tablet PC 2.0; .NET4.0C; AskTbNRO2/5.14.1.20007; .NET4.0E; BRI/2; GWX:MANAGED; GWX:QUALIFIED; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -38071,7 +38071,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1410' => [
+    'test-0054-1410' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; Tablet PC 2.0; .NET4.0E; InfoPath.3; Microsoft Outlook 15.0.4823; Microsoft Outlook 15.0.4823; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -38098,7 +38098,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1411' => [
+    'test-0054-1411' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; InfoPath.3; Microsoft Outlook 14.0.6025; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -38125,7 +38125,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1412' => [
+    'test-0054-1412' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-J500F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -38152,7 +38152,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1413' => [
+    'test-0054-1413' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -38179,7 +38179,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1414' => [
+    'test-0054-1414' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; ar-ae; SM-G530H Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -38206,7 +38206,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1415' => [
+    'test-0054-1415' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -38233,7 +38233,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1416' => [
+    'test-0054-1416' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; D2203 Build/18.5.C.0.25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38260,7 +38260,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1417' => [
+    'test-0054-1417' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.15.2661.78 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38287,7 +38287,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1418' => [
+    'test-0054-1418' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0 TO-Browser/TOB7.45.0.113_12',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -38314,7 +38314,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1419' => [
+    'test-0054-1419' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D160 Build/KOT49I.A1393411223) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38341,7 +38341,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1420' => [
+    'test-0054-1420' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Win64; x64; Trident/6.0; (webde/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -38368,7 +38368,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1421' => [
+    'test-0054-1421' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB6; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -38395,7 +38395,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1422' => [
+    'test-0054-1422' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI CRR-L09 Build/HUAWEICRR-L09C02B122) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.2.2126.102826',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -38422,7 +38422,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1423' => [
+    'test-0054-1423' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; MAMD; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -38449,7 +38449,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1424' => [
+    'test-0054-1424' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.71 Safari/537.17 YE',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38476,7 +38476,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1425' => [
+    'test-0054-1425' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; GT-I9300 Build/MOB30J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38503,7 +38503,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1426' => [
+    'test-0054-1426' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; D5103 Build/18.1.A.2.25) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -38530,7 +38530,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1427' => [
+    'test-0054-1427' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; D5803 Build/23.0.A.2.98) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38557,7 +38557,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1428' => [
+    'test-0054-1428' => [
         'ua' => 'Opera/9.80 (Android; Opera Mini/7.5.35721/37.8433; U; en) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -38584,7 +38584,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1429' => [
+    'test-0054-1429' => [
         'ua' => 'libwww-perl/5.836',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -38611,7 +38611,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1430' => [
+    'test-0054-1430' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; SM-A300FU Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.534 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38638,7 +38638,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1431' => [
+    'test-0054-1431' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; ASUS_Z00ED Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.108 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -38665,7 +38665,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1432' => [
+    'test-0054-1432' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 469857876',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -38692,7 +38692,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1433' => [
+    'test-0054-1433' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38719,7 +38719,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1434' => [
+    'test-0054-1434' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1; rv:45.0) Gecko/20100101 Firefox/45.0 TO-Browser/TOB7.45.0.113_20',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -38746,7 +38746,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1435' => [
+    'test-0054-1435' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; GT-S6310N Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38773,7 +38773,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1436' => [
+    'test-0054-1436' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0; WUID=af47f5973731cbe267683ec7d7bcf568; WTB=3869) Gecko/20100101 Firefox/29.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -38800,7 +38800,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1437' => [
+    'test-0054-1437' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; P1050X Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -38827,7 +38827,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1438' => [
+    'test-0054-1438' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38854,7 +38854,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1439' => [
+    'test-0054-1439' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38881,7 +38881,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1440' => [
+    'test-0054-1440' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; ZTE Blade L3 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.66 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -38908,7 +38908,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1441' => [
+    'test-0054-1441' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 2 Build/LRX22B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38935,7 +38935,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1442' => [
+    'test-0054-1442' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; HUAWEI MT1-U06 Build/HuaweiMT1-U06) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -38962,7 +38962,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1443' => [
+    'test-0054-1443' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; Vodafone 858 Build/Vodafone858C02B650) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -38989,7 +38989,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1444' => [
+    'test-0054-1444' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; tb-gmx/2.6.7)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -39016,7 +39016,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1445' => [
+    'test-0054-1445' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.95 Safari/537.4',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -39043,7 +39043,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1446' => [
+    'test-0054-1446' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.5; de-de; SAMSUNG GT-I9100/I9100BUKJ3 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -39070,7 +39070,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1447' => [
+    'test-0054-1447' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.88 Safari/537.36 Vivaldi/1.1.453.43',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -39097,7 +39097,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1448' => [
+    'test-0054-1448' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; HUAWEI RIO-L02 Build/HUAWEIRIO-L02) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -39124,7 +39124,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1449' => [
+    'test-0054-1449' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; Elite 5 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -39151,7 +39151,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1450' => [
+    'test-0054-1450' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G925F/G925FXXU3QOJQ Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.2 Chrome/38.0.2125.102 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -39178,7 +39178,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1451' => [
+    'test-0054-1451' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.1; HTC One S Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -39205,7 +39205,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1452' => [
+    'test-0054-1452' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SIMBAR Enabled; InfoPath.1)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -39232,7 +39232,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1453' => [
+    'test-0054-1453' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.2357.125 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -39259,7 +39259,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1454' => [
+    'test-0054-1454' => [
         'ua' => 'eCatch/3.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39286,7 +39286,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1455' => [
+    'test-0054-1455' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; MASIE9A; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -39313,7 +39313,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1456' => [
+    'test-0054-1456' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -39340,7 +39340,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1457' => [
+    'test-0054-1457' => [
         'ua' => 'Mozilla/3.0 (Planetweb/2.100 JS SSL US; Dreamcast US)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39367,7 +39367,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1458' => [
+    'test-0054-1458' => [
         'ua' => 'Zoo Tycoon 2 Client -- http://www.zootycoon.com',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39394,7 +39394,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1459' => [
+    'test-0054-1459' => [
         'ua' => 'WebCopier vx.xa',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39421,7 +39421,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1460' => [
+    'test-0054-1460' => [
         'ua' => 'Offline Explorer 1.*',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39448,7 +39448,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1461' => [
+    'test-0054-1461' => [
         'ua' => 'Lynx/2.6 libwww-FM/2.14',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39475,7 +39475,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1462' => [
+    'test-0054-1462' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -39502,7 +39502,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1463' => [
+    'test-0054-1463' => [
         'ua' => 'Ace Explorer',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39529,7 +39529,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1464' => [
+    'test-0054-1464' => [
         'ua' => 'Express WebPictures (www.express-soft.com)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39556,7 +39556,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1465' => [
+    'test-0054-1465' => [
         'ua' => 'MSFrontPage/4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39583,7 +39583,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1466' => [
+    'test-0054-1466' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; AskTbAVR-3/5.15.13.33021; StepOver-eSO-4.9; StepOver-eSO-AddOn-4.9)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -39610,7 +39610,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1467' => [
+    'test-0054-1467' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; ASUS_T00F Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -39637,7 +39637,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1468' => [
+    'test-0054-1468' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; HTC Desire 610 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -39664,7 +39664,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1469' => [
+    'test-0054-1469' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Archos 45c Helium Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -39691,7 +39691,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1470' => [
+    'test-0054-1470' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; SM-J100H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -39718,7 +39718,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1471' => [
+    'test-0054-1471' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G928F/XXU2BPC3 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -39745,7 +39745,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1472' => [
+    'test-0054-1472' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; MC706 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -39772,7 +39772,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1473' => [
+    'test-0054-1473' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; tr-tr; GT-N7100 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -39799,7 +39799,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1474' => [
+    'test-0054-1474' => [
         'ua' => 'Y!TunnelPro',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39826,7 +39826,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1475' => [
+    'test-0054-1475' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.76.4 (KHTML, like Gecko) Version/7.0.4 Safari/537.76.4',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -39853,7 +39853,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1476' => [
+    'test-0054-1476' => [
         'ua' => 'MC706/V1 Linux/3.4.67 Android/4.4.2 Release/04.23.2015 Browser/AppleWebKit537.36 Mobile Safari/537.36 MBBMS/2.2 System/Android 4.4.2',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -39880,7 +39880,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1477' => [
+    'test-0054-1477' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; Vodafone Smart Tab 4G Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -39907,7 +39907,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1478' => [
+    'test-0054-1478' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36 OPR/36.0.2130.65 (Edition Campaign 48)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -39934,7 +39934,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1479' => [
+    'test-0054-1479' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; Coolpad E501_EU Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -39961,7 +39961,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1480' => [
+    'test-0054-1480' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G900FD Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -39988,7 +39988,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1481' => [
+    'test-0054-1481' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; HTC One dual sim Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40015,7 +40015,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1482' => [
+    'test-0054-1482' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Archos 50b Neon Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40042,7 +40042,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1483' => [
+    'test-0054-1483' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.5 (KHTML, like Gecko) Chrome/4.0.249.78 Safari/532.5',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40069,7 +40069,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1484' => [
+    'test-0054-1484' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; LG-E440 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40096,7 +40096,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1485' => [
+    'test-0054-1485' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; tb-webde/1.7.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40123,7 +40123,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1486' => [
+    'test-0054-1486' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; LEN2; T-Brand-RC; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40150,7 +40150,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1487' => [
+    'test-0054-1487' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; (webde/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40177,7 +40177,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1488' => [
+    'test-0054-1488' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2231.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40204,7 +40204,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1489' => [
+    'test-0054-1489' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G920F/XXU2QOH8 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -40231,7 +40231,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1490' => [
+    'test-0054-1490' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SUNSET Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40258,7 +40258,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1491' => [
+    'test-0054-1491' => [
         'ua' => 'Mozilla/5.0 (Android 4.2.1; Mobile; rv:46.0.1) Gecko/46.0.1 Firefox/46.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -40285,7 +40285,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1492' => [
+    'test-0054-1492' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Windows Phone 8X by HTC; 5.20.162.01) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40312,7 +40312,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1493' => [
+    'test-0054-1493' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; GT-I9305 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -40339,7 +40339,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1494' => [
+    'test-0054-1494' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.3; LT25i Build/9.2.A.2.5)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -40366,7 +40366,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1495' => [
+    'test-0054-1495' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.3; C2005 Build/15.5.A.1.5)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -40393,7 +40393,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1496' => [
+    'test-0054-1496' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.0.570) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.1.2126.102083',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -40420,7 +40420,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1497' => [
+    'test-0054-1497' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; it-it; SAMSUNG GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -40447,7 +40447,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1498' => [
+    'test-0054-1498' => [
         'ua' => 'Jakarta Commons-HttpClient/2.0xxx',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -40474,7 +40474,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1499' => [
+    'test-0054-1499' => [
         'ua' => 'Mozilla/3.0 (Win95; I)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -40501,7 +40501,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1500' => [
+    'test-0054-1500' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; GWX:DOWNLOADED; GWX:RESERVED; GWX:QUALIFIED; StepOver-eSO-4.6.0.639; StepOver-eSO-4.10; StepOver-eSO-4.9; StepOver-eSO-AddOn-4.9; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40528,7 +40528,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1501' => [
+    'test-0054-1501' => [
         'ua' => 'Mozilla/3.0 (compatible; Opera/3.0; Windows 95/NT4) 3.2',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -40555,7 +40555,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1502' => [
+    'test-0054-1502' => [
         'ua' => 'UPG1 UP/4.0 (compatible; Blazer 1.0)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -40582,7 +40582,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1503' => [
+    'test-0054-1503' => [
         'ua' => 'Mozilla/4.77C-SGI [en] (X11; U; IRIX 6.5 IP32)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -40609,7 +40609,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1504' => [
+    'test-0054-1504' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; AskTbAVR-3/5.15.13.33021; StepOver-eSO-4.9; StepOver-eSO-AddOn-4.9)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40636,7 +40636,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1505' => [
+    'test-0054-1505' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40663,7 +40663,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1506' => [
+    'test-0054-1506' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; BRI/2; Microsoft Outlook 14.0.7012; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40690,7 +40690,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1507' => [
+    'test-0054-1507' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; MAMIJS; MSAppHost/2.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40717,7 +40717,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1508' => [
+    'test-0054-1508' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40744,7 +40744,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1509' => [
+    'test-0054-1509' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40771,7 +40771,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1510' => [
+    'test-0054-1510' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40798,7 +40798,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1511' => [
+    'test-0054-1511' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MDDC; .NET4.0C; .NET4.0E; GWX:RESERVED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40825,7 +40825,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1512' => [
+    'test-0054-1512' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAAR; InfoPath.1; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40852,7 +40852,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1513' => [
+    'test-0054-1513' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; BRI/2; .NET4.0E; .NET4.0C; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40879,7 +40879,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1514' => [
+    'test-0054-1514' => [
         'ua' => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; eSobiSubscriber 1.0.0.40; MAAR; .NET4.0C; .NET4.0E; BRI/2; GWX:DOWNLOADED; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40906,7 +40906,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1515' => [
+    'test-0054-1515' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB5; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -40933,7 +40933,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1516' => [
+    'test-0054-1516' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.2.2; Vodafone Smart Tab III 7 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40960,7 +40960,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1517' => [
+    'test-0054-1517' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2739.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -40987,7 +40987,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1518' => [
+    'test-0054-1518' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-T310 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.104006',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -41014,7 +41014,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1519' => [
+    'test-0054-1519' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SGP321 Build/10.7.A.0.222) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -41041,7 +41041,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1520' => [
+    'test-0054-1520' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SM-T805 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -41068,7 +41068,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1521' => [
+    'test-0054-1521' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B329 Safari/8536.25',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -41095,7 +41095,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1522' => [
+    'test-0054-1522' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1) Gecko/20100101 Firefox/7.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -41122,7 +41122,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1523' => [
+    'test-0054-1523' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -41149,7 +41149,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1524' => [
+    'test-0054-1524' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; InfoPath.2; FDM)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -41176,7 +41176,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1525' => [
+    'test-0054-1525' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; P01V Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -41203,7 +41203,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1526' => [
+    'test-0054-1526' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.23) Gecko/20090907 SeaMonkey/1.1.18',
         'properties' => [
             'Browser_Name'            => 'SeaMonkey',
@@ -41230,7 +41230,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1527' => [
+    'test-0054-1527' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux i686; de-AT; rv:1.4) Gecko/20030812',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -41257,7 +41257,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1528' => [
+    'test-0054-1528' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.4b) Gecko/20030516 Mozilla Firebird/0.6',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -41284,7 +41284,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1529' => [
+    'test-0054-1529' => [
         'ua' => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_8; ja-jp) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -41311,7 +41311,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1530' => [
+    'test-0054-1530' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6 ( .NET CLR 3.5.30729; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -41338,7 +41338,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1531' => [
+    'test-0054-1531' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.7) Gecko/2009031802 Gentoo Firefox/3.0.7',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -41365,7 +41365,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1532' => [
+    'test-0054-1532' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.47 Safari/535.11 MRCHROME',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -41392,7 +41392,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1533' => [
+    'test-0054-1533' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:2.0b9pre) Gecko/20101228 Firefox/4.0b9pre',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -41419,7 +41419,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1534' => [
+    'test-0054-1534' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.17) Gecko/20110424 Lightning/1.0b2 Thunderbird/3.1.10',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -41446,7 +41446,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1535' => [
+    'test-0054-1535' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; HTC One X Build/JDQ39)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -41473,7 +41473,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1536' => [
+    'test-0054-1536' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/28.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -41500,7 +41500,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1537' => [
+    'test-0054-1537' => [
         'ua' => 'Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; feed-id=13645798864011762265)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -41527,7 +41527,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1538' => [
+    'test-0054-1538' => [
         'ua' => 'Mozilla/5.0 (compatible; Konqueror/3.1-rc2; i686 Linux; 20020612)',
         'properties' => [
             'Browser_Name'            => 'Konqueror',
@@ -41554,7 +41554,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1539' => [
+    'test-0054-1539' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.47 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -41581,7 +41581,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1540' => [
+    'test-0054-1540' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 5.0; fr-FR; rv:1.8.1.2pre) Gecko/20070111 SeaMonkey/1.1',
         'properties' => [
             'Browser_Name'            => 'SeaMonkey',
@@ -41608,7 +41608,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1541' => [
+    'test-0054-1541' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux i686; de-AT; rv:1.7.2) Gecko/20040804',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -41635,7 +41635,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1542' => [
+    'test-0054-1542' => [
         'ua' => 'iCab/4.5 (Macintosh; U; Intel Mac OS X)',
         'properties' => [
             'Browser_Name'            => 'iCab',
@@ -41662,7 +41662,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1543' => [
+    'test-0054-1543' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -41689,7 +41689,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1544' => [
+    'test-0054-1544' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.47 Safari/537.36,gzip(gfe)',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -41716,7 +41716,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1545' => [
+    'test-0054-1545' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Coast/5.02.99991 Mobile/13D15 Safari/7534.48.3',
         'properties' => [
             'Browser_Name'            => 'Coast',
@@ -41743,7 +41743,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1546' => [
+    'test-0054-1546' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Mobile Safari/537.36 OPR/37.0.2192.104006',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -41770,7 +41770,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1547' => [
+    'test-0054-1547' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -41797,7 +41797,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1548' => [
+    'test-0054-1548' => [
         'ua' => 'Opera%20Coast/5.02.99991 CFNetwork/758.2.8 Darwin/15.0.0',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -41824,7 +41824,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1549' => [
+    'test-0054-1549' => [
         'ua' => 'Opera/7.03 (Windows NT 5.1; U) [de]',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -41851,7 +41851,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1550' => [
+    'test-0054-1550' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0; msn OptimizedIE8;DEDE)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -41878,7 +41878,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1551' => [
+    'test-0054-1551' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; MDDRJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -41905,7 +41905,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1552' => [
+    'test-0054-1552' => [
         'ua' => 'Mozilla/5.0 (compatible; Konqueror/3.0; i686 Linux; 20020608)',
         'properties' => [
             'Browser_Name'            => 'Konqueror',
@@ -41932,7 +41932,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1553' => [
+    'test-0054-1553' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; sv-SE; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -41959,7 +41959,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1554' => [
+    'test-0054-1554' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; P01V Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -41986,7 +41986,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1555' => [
+    'test-0054-1555' => [
         'ua' => '=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -42013,7 +42013,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1556' => [
+    'test-0054-1556' => [
         'ua' => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.1) Gecko/Debian-1.8.0.1-5 Galeon/2.0.1 (Debian package 2.0.1-3)',
         'properties' => [
             'Browser_Name'            => 'Galeon',
@@ -42040,7 +42040,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1557' => [
+    'test-0054-1557' => [
         'ua' => 'studylib download bot, see http://studylib.net/public/bot for additional info',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -42067,7 +42067,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1558' => [
+    'test-0054-1558' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.1.2; LG-E455 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42094,7 +42094,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1559' => [
+    'test-0054-1559' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.1.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42121,7 +42121,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1560' => [
+    'test-0054-1560' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; MS-RTC LM 8)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -42148,7 +42148,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1561' => [
+    'test-0054-1561' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-T813 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -42175,7 +42175,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1562' => [
+    'test-0054-1562' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G920F/XXU1AOCV Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -42202,7 +42202,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1563' => [
+    'test-0054-1563' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; A0001 Build/MMB29V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.43 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42229,7 +42229,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1564' => [
+    'test-0054-1564' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/12B466 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -42256,7 +42256,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1565' => [
+    'test-0054-1565' => [
         'ua' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/13C75 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -42283,7 +42283,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1566' => [
+    'test-0054-1566' => [
         'ua' => 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2751.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42310,7 +42310,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1567' => [
+    'test-0054-1567' => [
         'ua' => 'TYPO3/6.2.25',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -42337,7 +42337,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1568' => [
+    'test-0054-1568' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; XT1039 Build/LPBS23.13-17.6-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42364,7 +42364,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1569' => [
+    'test-0054-1569' => [
         'ua' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0; MANMJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -42391,7 +42391,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1570' => [
+    'test-0054-1570' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-T700 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42418,7 +42418,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1571' => [
+    'test-0054-1571' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42445,7 +42445,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1572' => [
+    'test-0054-1572' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; rv:46.0.1) Gecko/20100101 Firefox/46.0.1 anonymized by Abelssoft 917545549',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -42472,7 +42472,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1573' => [
+    'test-0054-1573' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42499,7 +42499,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1574' => [
+    'test-0054-1574' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; Discovery 102C Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42526,7 +42526,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1575' => [
+    'test-0054-1575' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-G903F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 ACHEETAHI/2100502044',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -42553,7 +42553,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1576' => [
+    'test-0054-1576' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; PLK-L01 Build/HONORPLK-L01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42580,7 +42580,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1577' => [
+    'test-0054-1577' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; T-Brand-RC)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -42607,7 +42607,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1578' => [
+    'test-0054-1578' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; HTC_Desire_610/1.29.111.3 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -42634,7 +42634,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1579' => [
+    'test-0054-1579' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 6.0; de-de; LG-H635 Build/MRA58K) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -42661,7 +42661,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1580' => [
+    'test-0054-1580' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42688,7 +42688,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1581' => [
+    'test-0054-1581' => [
         'ua' => 'Readability/8dc896 - http://readability.com/about/',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -42715,7 +42715,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1582' => [
+    'test-0054-1582' => [
         'ua' => 'Pcore-HTTP/v0.23.15',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -42742,7 +42742,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1583' => [
+    'test-0054-1583' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; MALNJS; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -42769,7 +42769,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1584' => [
+    'test-0054-1584' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.4; SGP521 Build/23.0.1.A.0.167) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42796,7 +42796,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1585' => [
+    'test-0054-1585' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; 6043D Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42823,7 +42823,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1586' => [
+    'test-0054-1586' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1; XT1021 Build/LPCS23.13-34.8-3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42850,7 +42850,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1587' => [
+    'test-0054-1587' => [
         'ua' => 'Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) GSA/9.0.60246 Mobile/11A465 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -42877,7 +42877,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1588' => [
+    'test-0054-1588' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2178.43 (Edition FCR)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -42904,7 +42904,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1589' => [
+    'test-0054-1589' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 9 Build/MOB30G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -42931,7 +42931,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1590' => [
+    'test-0054-1590' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; GWX:RESERVED; GWX:QUALIFIED; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -42958,7 +42958,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1591' => [
+    'test-0054-1591' => [
         'ua' => 'Opera/9.80 (X11; Linux i686; U; ja) Presto/2.7.62 Version/11.01',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -42985,7 +42985,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1592' => [
+    'test-0054-1592' => [
         'ua' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Ubuntu/10.10 Chromium/12.0.703.0 Chrome/12.0.703.0 Safari/534.24',
         'properties' => [
             'Browser_Name'            => 'Chromium',
@@ -43012,7 +43012,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1593' => [
+    'test-0054-1593' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; SLCC2; Media Center PC 6.0; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -43039,7 +43039,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1594' => [
+    'test-0054-1594' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0; LIFETAB_P831X.2 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -43066,7 +43066,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1595' => [
+    'test-0054-1595' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS x86_64 7978.76.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.104 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -43093,7 +43093,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1596' => [
+    'test-0054-1596' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2739.2 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -43120,7 +43120,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1597' => [
+    'test-0054-1597' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAAR; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -43147,7 +43147,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1598' => [
+    'test-0054-1598' => [
         'ua' => 'Opera/9.80 (Windows NT 5.1; U;) Presto/2.7.62 Version/11.01',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -43174,7 +43174,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1599' => [
+    'test-0054-1599' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; FunWebProducts; GTB6; .NET CLR 1.1.1136.2314; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -43201,7 +43201,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1600' => [
+    'test-0054-1600' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; chromeframe/21.0.1180.83; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -43228,7 +43228,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1601' => [
+    'test-0054-1601' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; thl T6 pro Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -43255,7 +43255,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1602' => [
+    'test-0054-1602' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; B + S Betrieb; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -43282,7 +43282,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1603' => [
+    'test-0054-1603' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.1; de-de; ZP910 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -43309,7 +43309,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1604' => [
+    'test-0054-1604' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; HTC_Desire_510 Build/KTU84L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -43336,7 +43336,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1605' => [
+    'test-0054-1605' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:17.0) Gecko/20100101 Firefox/17.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -43363,7 +43363,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1606' => [
+    'test-0054-1606' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G920T Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -43390,7 +43390,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1607' => [
+    'test-0054-1607' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.7; de-de; Vodafone Smart II Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 SVN/01021',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -43417,7 +43417,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1608' => [
+    'test-0054-1608' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; A0001 Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -43444,7 +43444,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1609' => [
+    'test-0054-1609' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.1.4322; Microsoft Outlook 14.0.7169; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -43471,7 +43471,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1610' => [
+    'test-0054-1610' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.19) Gecko/20081209 Thunderbird/2.0.0.19',
         'properties' => [
             'Browser_Name'            => 'Thunderbird',
@@ -43498,7 +43498,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1611' => [
+    'test-0054-1611' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MALN; .NET4.0C; InfoPath.2; .NET4.0E; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -43525,7 +43525,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1612' => [
+    'test-0054-1612' => [
         'ua' => 'Mozilla/5.0 (Windows; Windows NT 6.3; rv:38.0) Gecko/38.0 Firefox/38.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -43552,7 +43552,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1613' => [
+    'test-0054-1613' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D280 Build/KOT49I.A1399482427) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.103 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -43579,7 +43579,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1614' => [
+    'test-0054-1614' => [
         'ua' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; es-ES; rv:1.8.1.21) Gecko/20090331 K-Meleon/1.5.3',
         'properties' => [
             'Browser_Name'            => 'K-Meleon',
@@ -43606,7 +43606,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1615' => [
+    'test-0054-1615' => [
         'ua' => 'Mozilla/5.0 (X11; CrOS i686 12.0.742.91) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.93 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -43633,7 +43633,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1616' => [
+    'test-0054-1616' => [
         'ua' => 'Opera/9.80 (Windows NT 5.1; U; zh-sg) Presto/2.9.181 Version/12.00',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -43660,7 +43660,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1617' => [
+    'test-0054-1617' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36 OPR/37.0.2178.31 (Edition beta)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -43687,7 +43687,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1618' => [
+    'test-0054-1618' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36 OPR/37.0.2178.31 (Edition beta),gzip(gfe)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -43714,7 +43714,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1619' => [
+    'test-0054-1619' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2150.0 Iron/40.0.2150.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Iron',
@@ -43741,7 +43741,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1620' => [
+    'test-0054-1620' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.1; rv:29.0) Gecko/20100101 Firefox/29.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -43768,7 +43768,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1621' => [
+    'test-0054-1621' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; KFTHWI Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -43795,7 +43795,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1622' => [
+    'test-0054-1622' => [
         'ua' => 'Mozilla/5.0 (Linux; U; Android 5.0; de-DE; LG-D855 Build/LRX21R.A1445306351) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OPR/16.0.2168.103662 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -43822,7 +43822,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1623' => [
+    'test-0054-1623' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; BRI/2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -43849,7 +43849,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1624' => [
+    'test-0054-1624' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.1.1; LG-H955 Build/LMY47S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.54 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -43876,7 +43876,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1625' => [
+    'test-0054-1625' => [
         'ua' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2746.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -43903,7 +43903,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1626' => [
+    'test-0054-1626' => [
         'ua' => 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.17',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -43930,7 +43930,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1627' => [
+    'test-0054-1627' => [
         'ua' => 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; SM-T310 Build/JDQ39)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -43957,7 +43957,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1628' => [
+    'test-0054-1628' => [
         'ua' => 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1107071606; U; en) Presto/2.8.149 Version/11.10',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -43984,7 +43984,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1629' => [
+    'test-0054-1629' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; GTB5; .NET CLR 1.1.1136.2314; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; MS-RTC LM 8)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -44011,7 +44011,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1630' => [
+    'test-0054-1630' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; fr) Opera 11.00',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -44038,7 +44038,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1631' => [
+    'test-0054-1631' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; MS-RTC LM 8)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -44065,7 +44065,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1632' => [
+    'test-0054-1632' => [
         'ua' => 'Opera/9.80 (Windows NT 6.0; U; en) Presto/2.8.99 Version/11.10',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -44092,7 +44092,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1633' => [
+    'test-0054-1633' => [
         'ua' => 'Opera/9.80 (Android 2.2; Linux; Opera Mobi/ADR-2093533312; U; pl) Presto/2.7.60 Version/10.5',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -44119,7 +44119,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1634' => [
+    'test-0054-1634' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; WOW64; SLCC1; Media Center PC 5.0; .NET CLR 2.0.6535.0500)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -44146,7 +44146,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1635' => [
+    'test-0054-1635' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; FBUnified; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; Tablet PC 2.0; .NET4.0E; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -44173,7 +44173,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1636' => [
+    'test-0054-1636' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:2.0b8pre) Gecko/20101114 Firefox/4.0b8pre',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -44200,7 +44200,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1637' => [
+    'test-0054-1637' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/27.0.1453.110 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -44227,7 +44227,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1638' => [
+    'test-0054-1638' => [
         'ua' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/34.0.1847.137 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -44254,7 +44254,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1639' => [
+    'test-0054-1639' => [
         'ua' => 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.466 Mobile Safari/534.8+',
         'properties' => [
             'Browser_Name'            => 'BlackBerry',
@@ -44281,7 +44281,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1640' => [
+    'test-0054-1640' => [
         'ua' => 'Opera/9.80 (Windows NT 6.1; U; zh-tw) Presto/2.7.62 Version/11.01',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -44308,7 +44308,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1641' => [
+    'test-0054-1641' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; Media Center PC 6.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -44335,7 +44335,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1642' => [
+    'test-0054-1642' => [
         'ua' => 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1104061449; U; da) Presto/2.7.81 Version/11.00',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -44362,7 +44362,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1643' => [
+    'test-0054-1643' => [
         'ua' => 'Mozilla/5.0 (Windows NT 5.2; rv:2.0b13pre) Gecko/20110304 Firefox/4.0b13pre',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -44389,7 +44389,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1644' => [
+    'test-0054-1644' => [
         'ua' => 'Mozilla/5.0 (Linux; Android 5.0.2; HTC One dual sim Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -44416,7 +44416,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1645' => [
+    'test-0054-1645' => [
         'ua' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.151 Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -44443,7 +44443,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1646' => [
+    'test-0054-1646' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -44470,7 +44470,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1647' => [
+    'test-0054-1647' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2; .NET CLR 1.0.6535.0500; InfoPath.1; .NET CLR 2.0.50727)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -44497,7 +44497,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'browscap-issue-2016-05-31-testagents.txt-1648' => [
+    'test-0054-1648' => [
         'ua' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
