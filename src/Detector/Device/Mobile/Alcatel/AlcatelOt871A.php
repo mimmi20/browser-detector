@@ -111,10 +111,10 @@ class AlcatelOt871A extends AbstractDevice implements DeviceHasSpecificPlatformI
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\Java
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\Java($this->useragent, []);
     }
 }
