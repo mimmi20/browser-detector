@@ -10,12 +10,19 @@ $data            = [];
 $sourceDirectory = 'tests/issues/';
 
 $iterator = new \DirectoryIterator($sourceDirectory);
+$files = scandir($sourceDirectory, SCANDIR_SORT_ASCENDING);
 
-foreach ($iterator as $file) {
+foreach ($files as $filename) {
+    $file = new \SplFileInfo($sourceDirectory . DIRECTORY_SEPARATOR . $filename);
+
+    echo 'checking file ', $file->getBasename(), ' ...', PHP_EOL;
+
     /** @var $file \SplFileInfo */
     if (!$file->isFile() || $file->getExtension() !== 'php') {
         continue;
     }
+
+    echo 'reading file ', $file->getBasename(), ' ...', PHP_EOL;
 
     $tests = require_once $file->getPathname();
 
@@ -53,9 +60,6 @@ foreach ($iterator as $file) {
             'Platform_Version'        => '" . str_replace("'", "\\'", $test['properties']['Platform_Version']) . "',
             'Platform_Bits'           => " . str_replace("'", "\\'", $test['properties']['Platform_Bits']) . ",
             'Platform_Maker'          => '" . str_replace("'", "\\'", $test['properties']['Platform_Maker']) . "',
-            'isMobileDevice'          => " . ($test['properties']['isMobileDevice'] ? 'true' : 'false') . ",
-            'isTablet'                => " . ($test['properties']['isTablet'] ? 'true' : 'false') . ",
-            'Crawler'                 => " . ($test['properties']['Crawler'] ? 'true' : 'false') . ",
             'Device_Name'             => '" . str_replace("'", "\\'", $test['properties']['Device_Name']) . "',
             'Device_Maker'            => '" . str_replace("'", "\\'", $test['properties']['Device_Maker']) . "',
             'Device_Type'             => '" . str_replace("'", "\\'", $test['properties']['Device_Type']) . "',
