@@ -40,7 +40,7 @@ use BrowserDetector\Version\VersionFactory;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AmigaOS extends AbstractOs
+class AmigaOs extends AbstractOs
 {
     /**
      * Class Constructor
