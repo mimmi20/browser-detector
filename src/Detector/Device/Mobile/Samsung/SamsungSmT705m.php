@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -46,7 +46,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoS5000h extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class SamsungSmT705m extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
@@ -62,17 +62,17 @@ class LenovoS5000h extends AbstractDevice implements DeviceHasSpecificPlatformIn
 
         $this->setData(
             [
-                'deviceName'        => 'S5000-H',
-                'marketingName'     => 'IdeaTab S5000-H',
+                'deviceName'        => 'SM-T705M',
+                'marketingName'     => 'Galaxy Tab S 8.4 LTE',
                 'version'           => null,
-                'manufacturer'      => (new Company\Lenovo())->name,
-                'brand'             => (new Company\Lenovo())->brandname,
+                'manufacturer'      => (new Company\Samsung())->name,
+                'brand'             => (new Company\Samsung())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => null,
-                'colors'            => null,
+                'resolutionWidth'   => 1280,
+                'resolutionHeight'  => 800,
+                'dualOrientation'   => true,
+                'colors'            => 16777216,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
@@ -91,7 +91,7 @@ class LenovoS5000h extends AbstractDevice implements DeviceHasSpecificPlatformIn
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
-        if (!$utils->checkIfContains('S5000-H')) {
+        if (!$utils->checkIfContains('SM-T705M')) {
             return false;
         }
 
