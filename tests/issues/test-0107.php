@@ -2,7 +2,7 @@
 
 return [
     'test-0107-0' => [
-        'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; en-za; SAMSUNG SM-G800H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.6 Chrome/28.0.1500.94 Mobile Safari/537.36',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; en-za; SAMSUNG SM-G800H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.6 Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',
@@ -14,9 +14,6 @@ return [
             'Platform_Version'        => '4.4',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
-            'isMobileDevice'          => true,
-            'isTablet'                => false,
-            'Crawler'                 => false,
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -29,7 +26,7 @@ return [
         ],
     ],
     'test-0107-1' => [
-        'ua' => 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00/40.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba',
+        'ua'         => 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00/40.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -38,12 +35,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Symbian OS',
-            'Platform_Version'        => 'unknown',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Symbian Foundation',
-            'isMobileDevice'          => true,
-            'isTablet'                => false,
-            'Crawler'                 => false,
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -56,7 +50,7 @@ return [
         ],
     ],
     'test-0107-2' => [
-        'ua' => 'Mozilla/5.0 (Linux; U; Android 4.1.2; en-in; SonyLT26i Build/6.2.B.1.96) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+        'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.1.2; en-in; SonyLT26i Build/6.2.B.1.96) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
             'Browser_Type'            => 'Browser',
@@ -65,12 +59,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.1',
+            'Platform_Version'        => '4.1.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
-            'isMobileDevice'          => true,
-            'isTablet'                => false,
-            'Crawler'                 => false,
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -83,7 +74,7 @@ return [
         ],
     ],
     'test-0107-3' => [
-        'ua' => 'Mozilla/5.0 (Linux; U; Android 2.3.4; ro-ro; SonyEricssonLT18i Build/4.0.2.A.0.62) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+        'ua'         => 'Mozilla/5.0 (Linux; U; Android 2.3.4; ro-ro; SonyEricssonLT18i Build/4.0.2.A.0.62) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
             'Browser_Type'            => 'Browser',
@@ -92,12 +83,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '2.3',
+            'Platform_Version'        => '2.3.4',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
-            'isMobileDevice'          => true,
-            'isTablet'                => false,
-            'Crawler'                 => false,
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -110,7 +98,7 @@ return [
         ],
     ],
     'test-0107-4' => [
-        'ua' => 'Mozilla/5.0 (Linux; U; Android 4.2.2; fa-ir; HUAWEI G750-U10 Build/HuaweiG750-U10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+        'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; fa-ir; HUAWEI G750-U10 Build/HuaweiG750-U10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
             'Browser_Type'            => 'Browser',
@@ -119,12 +107,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.2',
+            'Platform_Version'        => '4.2.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
-            'isMobileDevice'          => true,
-            'isTablet'                => false,
-            'Crawler'                 => false,
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -137,7 +122,7 @@ return [
         ],
     ],
     'test-0107-5' => [
-        'ua' => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/125.4 (KHTML, like Gecko, Safari) OmniWeb/v563.15',
+        'ua'         => 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/125.4 (KHTML, like Gecko, Safari) OmniWeb/v563.15',
         'properties' => [
             'Browser_Name'            => 'Omniweb',
             'Browser_Type'            => 'Browser',
@@ -146,12 +131,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Mac OS X',
-            'Platform_Version'        => 'unknown',
+            'Platform_Version'        => '10.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',
-            'isMobileDevice'          => false,
-            'isTablet'                => false,
-            'Crawler'                 => false,
             'Device_Name'             => 'Macintosh',
             'Device_Maker'            => 'Apple Inc',
             'Device_Type'             => 'Desktop',

@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '50.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.1',
+            'Platform_Version'        => '5.1.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'Aquaris M10',
