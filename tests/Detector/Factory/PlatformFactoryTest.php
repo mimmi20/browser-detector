@@ -159,6 +159,16 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Android',
                 '4.4.2',
             ],
+            [
+                'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 928) like Gecko',
+                'Windows Phone OS',
+                '8.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 920; Vodafone ES) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
+                'Windows Phone OS',
+                '8.1.0',
+            ],
         ];
     }
 }

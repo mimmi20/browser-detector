@@ -134,7 +134,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             self::markTestSkipped('Could not run test - no properties were defined to test');
         }
 
-        $result = $this->object->getBrowser($userAgent, true);
+        $result = $this->object->getBrowser($userAgent);
 
         $expectedPlatformName = $expectedProperties['Platform_Name'];
         $foundPlatformName    = $result->getOs()->getName();

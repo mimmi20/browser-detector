@@ -95,9 +95,6 @@ class NokiaX2 extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
             return false;
         }
 
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
         if ($utils->checkIfContains(['NokiaX2-', 'NokiaX2DS'])) {
             return false;
         }

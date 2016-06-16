@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -46,7 +46,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoS660 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class NokiaX201 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
@@ -62,11 +62,11 @@ class LenovoS660 extends AbstractDevice implements DeviceHasSpecificPlatformInte
 
         $this->setData(
             [
-                'deviceName'        => 'S660',
-                'marketingName'     => 'S660',
+                'deviceName'        => 'X2-01',
+                'marketingName'     => 'X2',
                 'version'           => null,
-                'manufacturer'      => (new Company\Lenovo())->name,
-                'brand'             => (new Company\Lenovo())->brandname,
+                'manufacturer'      => (new Company\Nokia())->name,
+                'brand'             => (new Company\Nokia())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -76,7 +76,7 @@ class LenovoS660 extends AbstractDevice implements DeviceHasSpecificPlatformInte
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
+                'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
     }
@@ -91,7 +91,7 @@ class LenovoS660 extends AbstractDevice implements DeviceHasSpecificPlatformInte
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
-        if (!$utils->checkIfContains('Lenovo S660')) {
+        if (!$utils->checkIfContains('NokiaX2-01')) {
             return false;
         }
 
@@ -111,10 +111,10 @@ class LenovoS660 extends AbstractDevice implements DeviceHasSpecificPlatformInte
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

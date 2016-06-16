@@ -100,7 +100,7 @@ class BrowserDetector
      *
      * @return \UaResult\Result\Result
      */
-    public function getBrowser($request = null)
+    public function getBrowser($request)
     {
         if (null === $request) {
             throw new UnexpectedValueException(

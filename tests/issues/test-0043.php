@@ -62938,7 +62938,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '3.0',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'Linux Mint',
             'Platform_Version'        => '6.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Linux Foundation',

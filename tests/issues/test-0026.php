@@ -14314,7 +14314,7 @@ return [
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '7.0',
-            'Platform_Name'           => 'Windows',
+            'Platform_Name'           => 'Windows RT',
             'Platform_Version'        => '8.1.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

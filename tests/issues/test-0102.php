@@ -2,7 +2,7 @@
 
 return [
     'test-0102-0' => [
-        'ua'         => '\',
+        'ua'         => '\\',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -178,10 +178,10 @@ return [
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '11.0',
-            'Platform_Name'           => 'Android',
+            'Platform_Name'           => 'Windows Phone OS',
             'Platform_Version'        => '8.1.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Google Inc',
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

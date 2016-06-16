@@ -20842,7 +20842,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '12.15',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'Linux Mint',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Linux Foundation',

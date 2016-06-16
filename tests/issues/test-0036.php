@@ -46450,7 +46450,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '12.14',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'Linux Mint',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Linux Foundation',
