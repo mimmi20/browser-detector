@@ -7370,7 +7370,7 @@ return [
         ],
     ],
     'test-0044-307' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:21.0) Gecko/20100101 Firefox/21.0 USA\Miami Style',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:21.0) Gecko/20100101 Firefox/21.0 USA\\Miami Style',
         'properties' => [
             'Browser_Name'            => 'Firefox',
             'Browser_Type'            => 'Browser',
@@ -9227,7 +9227,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '29.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',

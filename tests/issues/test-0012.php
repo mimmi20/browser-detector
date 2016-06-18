@@ -9491,6 +9491,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Windows Phone OS',
+            'Platform_Version'        => '8.1.0',
+            'Platform_Bits'           => 32,
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -15368,7 +15371,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '49.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.1',
+            'Platform_Version'        => '5.1.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -23831,7 +23834,7 @@ return [
         ],
     ],
     'test-0012-993' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; KLZ M\xc3\xbchlengrund 2014; MASBJS; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; KLZ M\\xc3\\xbchlengrund 2014; MASBJS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -27047,7 +27050,7 @@ return [
         ],
     ],
     'test-0012-1127' => [
-        'ua'         => '() { :;}; /bin/bash -c \'ping -c 10 127.0.0.1; id; cat /etc/passwd\'',
+        'ua'         => '() { :;}; /bin/bash -c \\'ping -c 10 127.0.0.1; id; cat /etc/passwd\\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

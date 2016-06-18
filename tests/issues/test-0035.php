@@ -17906,7 +17906,7 @@ return [
         ],
     ],
     'test-0035-746' => [
-        'ua'         => '\'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5\'',
+        'ua'         => '\\'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5\\'',
         'properties' => [
             'Browser_Name'            => 'Safari',
             'Browser_Type'            => 'Browser',
@@ -32738,7 +32738,7 @@ return [
         ],
     ],
     'test-0035-1364' => [
-        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; ESPERANZA DREAMTAB 7\' AX2 HD Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 OPR/29.0.1809.92697',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; ESPERANZA DREAMTAB 7\\' AX2 HD Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 OPR/29.0.1809.92697',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
             'Browser_Type'            => 'Browser',
@@ -48146,7 +48146,7 @@ return [
         ],
     ],
     'test-0035-2006' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; Rudolf R\xc3\xb6ser Verlag; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; Rudolf R\\xc3\\xb6ser Verlag; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

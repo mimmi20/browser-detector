@@ -12587,7 +12587,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '47.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.1',
+            'Platform_Version'        => '5.1.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -13466,7 +13466,7 @@ return [
         ],
     ],
     'test-0041-567' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; KLZ M\xfchlengrund 2009; KLZ M\xfchlengrund 2014)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; KLZ M\\xfchlengrund 2009; KLZ M\\xfchlengrund 2014)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -13490,7 +13490,7 @@ return [
         ],
     ],
     'test-0041-568' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; KLZ M\xc3\xbchlengrund 2009; KLZ M\xc3\xbchlengrund 2014)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; KLZ M\\xc3\\xbchlengrund 2009; KLZ M\\xc3\\xbchlengrund 2014)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -18995,7 +18995,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',

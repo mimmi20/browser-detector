@@ -16811,7 +16811,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.1',
+            'Platform_Version'        => '5.1.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -17162,7 +17162,7 @@ return [
         ],
     ],
     'test-0007-715' => [
-        'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-G80\x9cF\x90\x16uild/LMY47X; wv) A\xb80\x0c\x02vDbKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-G80\\x9cF\\x90\\x16uild/LMY47X; wv) A\\xb80\\x0c\\x02vDbKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',

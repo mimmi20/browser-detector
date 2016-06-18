@@ -30698,7 +30698,7 @@ return [
         ],
     ],
     'test-0055-1280' => [
-        'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; sOW6$?\xa0T\xbfkde\x06m\x8f6.=)\r\xc3Acc\xa9iT-Ww\xe3o\xc5k.g24Gz-q, Dm\xe6lape',
+        'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; sOW6$?\\xa0T\\xbfkde\\x06m\\x8f6.=)\\r\\xc3Acc\\xa9iT-Ww\\xe3o\\xc5k.g24Gz-q, Dm\\xe6lape',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',

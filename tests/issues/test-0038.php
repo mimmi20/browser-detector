@@ -1634,7 +1634,7 @@ return [
         ],
     ],
     'test-0038-68' => [
-        'ua'         => 'don\'t be so nosey',
+        'ua'         => 'don\\'t be so nosey',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -25970,7 +25970,7 @@ return [
         ],
     ],
     'test-0038-1084' => [
-        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; P98 3G\xe5\x85\xab\xe6\xa0\xb8(A4HY) Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; P98 3G\\xe5\\x85\\xab\\xe6\\xa0\\xb8(A4HY) Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
             'Browser_Type'            => 'Browser',
@@ -35162,7 +35162,7 @@ return [
         ],
     ],
     'test-0038-1468' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=Brunner\, Viktoria Christine,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=Brunner\\, Viktoria Christine,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -37610,7 +37610,7 @@ return [
         ],
     ],
     'test-0038-1571' => [
-        'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.1; it-it; \xe5\xae\x9a\xe5\x88\xb6\xe7\x89\x88 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+        'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.1; it-it; \\xe5\\xae\\x9a\\xe5\\x88\\xb6\\xe7\\x89\\x88 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
             'Browser_Type'            => 'Browser',
@@ -44090,7 +44090,7 @@ return [
         ],
     ],
     'test-0038-1841' => [
-        'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; bg-bg; E8Q Build/JDQ39) AppleWebKit/534.30 (KHTML, \xd0\xba\xd0\xb0\xd1\x82\xd0\xbe Gecko) Version/4.0 \xd0\x9c\xd0\xbe\xd0\xb1\xd0\xb8\xd0\xbb\xd0\xb5\xd0\xbd Safari/534.30',
+        'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; bg-bg; E8Q Build/JDQ39) AppleWebKit/534.30 (KHTML, \\xd0\\xba\\xd0\\xb0\\xd1\\x82\\xd0\\xbe Gecko) Version/4.0 \\xd0\\x9c\\xd0\\xbe\\xd0\\xb1\\xd0\\xb8\\xd0\\xbb\\xd0\\xb5\\xd0\\xbd Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
             'Browser_Type'            => 'Browser',
@@ -51410,7 +51410,7 @@ return [
         ],
     ],
     'test-0038-2148' => [
-        'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; Stadt Grevesm\xc3\xbchlen)',
+        'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; Stadt Grevesm\\xc3\\xbchlen)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -51722,7 +51722,7 @@ return [
         ],
     ],
     'test-0038-2161' => [
-        'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Win64; x64; Trident/6.0; Stadt Grevesm\xc3\xbchlen)',
+        'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Win64; x64; Trident/6.0; Stadt Grevesm\\xc3\\xbchlen)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',

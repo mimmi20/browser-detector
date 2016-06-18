@@ -20699,7 +20699,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '40.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.2',
+            'Platform_Version'        => '4.2.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -26738,7 +26738,7 @@ return [
         ],
     ],
     'test-0048-1114' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; Altenheim St Elisabeth von Th\xc3\xbcringen; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; Altenheim St Elisabeth von Th\xc3\xbcringen)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; Altenheim St Elisabeth von Th\\xc3\\xbcringen; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; Altenheim St Elisabeth von Th\\xc3\\xbcringen)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -27899,7 +27899,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.2',
+            'Platform_Version'        => '4.2.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -28106,7 +28106,7 @@ return [
         ],
     ],
     'test-0048-1171' => [
-        'ua'         => 'Mozilla/5.0 (Macintosh\t Intel Mac OS X 10_7_5)',
+        'ua'         => 'Mozilla/5.0 (Macintosh\\t Intel Mac OS X 10_7_5)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -32642,7 +32642,7 @@ return [
         ],
     ],
     'test-0048-1360' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; Altenheim St Elisabeth von Th\xfcringen; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; Altenheim St Elisabeth von Th\xfcringen)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; Altenheim St Elisabeth von Th\\xfcringen; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; Altenheim St Elisabeth von Th\\xfcringen)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -49235,7 +49235,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '40.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -50579,7 +50579,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '1.5',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -64538,7 +64538,7 @@ return [
         ],
     ],
     'test-0048-2689' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Ing. B\xc3\xbcro Olker; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Ing. B\\xc3\\xbcro Olker; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

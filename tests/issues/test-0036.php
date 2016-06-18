@@ -15083,7 +15083,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '42.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -44930,7 +44930,7 @@ return [
         ],
     ],
     'test-0036-1880' => [
-        'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; Departement f\xc3\xbcr Wirtschaft, Soziales und Umwelt)',
+        'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; Departement f\\xc3\\xbcr Wirtschaft, Soziales und Umwelt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',

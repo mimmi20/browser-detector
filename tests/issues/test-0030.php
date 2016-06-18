@@ -10946,7 +10946,7 @@ return [
         ],
     ],
     'test-0030-456' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; TOX D\xc3\xbcbel-Technik GmbH; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; TOX D\\xc3\\xbcbel-Technik GmbH; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -17411,7 +17411,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '1.5',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -32402,7 +32402,7 @@ return [
         ],
     ],
     'test-0030-1350' => [
-        'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Gesellschaft zur F\xc3\xb6rderung psychisch Kranker mbH - gemeinn\xc3\xbctzig)',
+        'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Gesellschaft zur F\\xc3\\xb6rderung psychisch Kranker mbH - gemeinn\\xc3\\xbctzig)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',

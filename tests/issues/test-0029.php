@@ -434,7 +434,7 @@ return [
         ],
     ],
     'test-0029-20' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=Pagel\, Anke,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=Pagel\\, Anke,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -1187,7 +1187,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '42.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -36371,7 +36371,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '28.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.2',
+            'Platform_Version'        => '4.2.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -37346,7 +37346,7 @@ return [
         ],
     ],
     'test-0029-1564' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Gebr\xc3\xbcder Wollenhaupt GmbH; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Gebr\\xc3\\xbcder Wollenhaupt GmbH; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

@@ -8738,7 +8738,7 @@ return [
         ],
     ],
     'test-0045-364' => [
-        'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 [FBAN/MessengerForiOS;FBAV/19.1.0.12.23;FBBV/6318336;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.1;FBSS/3; FBCR/OrangeEspa\xf1a;FBID/phone;FBLC/en_US;FBOP/5]',
+        'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 [FBAN/MessengerForiOS;FBAV/19.1.0.12.23;FBBV/6318336;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.1;FBSS/3; FBCR/OrangeEspa\\xf1a;FBID/phone;FBLC/en_US;FBOP/5]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
             'Browser_Type'            => 'Application',
@@ -10499,7 +10499,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -15851,7 +15851,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '34.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.2',
+            'Platform_Version'        => '4.2.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -22691,7 +22691,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '1.6',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -27770,7 +27770,7 @@ return [
         ],
     ],
     'test-0045-1157' => [
-        'ua'         => ';i:1;}\xf0\x9d\x8c\x86',
+        'ua'         => ';i:1;}\\xf0\\x9d\\x8c\\x86',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -27986,7 +27986,7 @@ return [
         ],
     ],
     'test-0045-1166' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36 OPR/34.0.2036.25\r\x1aReferer: http://www.geld.de/css/standard.navigation.css',
+        'ua'         => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36 OPR/34.0.2036.25\\r\\x1aReferer: http://www.geld.de/css/standard.navigation.css',
         'properties' => [
             'Browser_Name'            => 'Opera',
             'Browser_Type'            => 'Browser',
@@ -36026,7 +36026,7 @@ return [
         ],
     ],
     'test-0045-1501' => [
-        'ua'         => 'QQ\xe6\xb5\x8f\xe8\xa7\x88\xe5\x99\xa8 6.1.1 (iPhone; iPhone OS 7.1.2; en_GB)',
+        'ua'         => 'QQ\\xe6\\xb5\\x8f\\xe8\\xa7\\x88\\xe5\\x99\\xa8 6.1.1 (iPhone; iPhone OS 7.1.2; en_GB)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -57371,7 +57371,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.1',
+            'Platform_Version'        => '5.1.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',

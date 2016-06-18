@@ -6923,7 +6923,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '1.6',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -14666,7 +14666,7 @@ return [
         ],
     ],
     'test-0050-619' => [
-        'ua'         => '(\'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) \', \'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36\')',
+        'ua'         => '(\\'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) \\', \\'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36\\')',
         'properties' => [
             'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
@@ -69746,7 +69746,7 @@ return [
         ],
     ],
     'test-0050-2916' => [
-        'ua'         => 'Mozilla/5.0 (MSIE 9.0;eSafeUser=CN=Wolf\, G\xc3\xbcnter,OU=User; Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (MSIE 9.0;eSafeUser=CN=Wolf\\, G\\xc3\\xbcnter,OU=User; Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -72698,7 +72698,7 @@ return [
         ],
     ],
     'test-0050-3039' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; TOX D\xc3\xbcbelwerk GmbH; TOX D\xc3\xbcbel-Technik GmbH; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; TOX D\\xc3\\xbcbelwerk GmbH; TOX D\\xc3\\xbcbel-Technik GmbH; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

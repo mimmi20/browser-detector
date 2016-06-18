@@ -7739,7 +7739,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '40.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.2',
+            'Platform_Version'        => '4.2.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -43514,7 +43514,7 @@ return [
         ],
     ],
     'test-0042-1813' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; W\xc3\xbcrth Elektronik GmbH & Co KG; Wuerth Elektronik GmbH & Co KG; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; W\\xc3\\xbcrth Elektronik GmbH & Co KG; Wuerth Elektronik GmbH & Co KG; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -59987,7 +59987,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.4',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.2',
+            'Platform_Version'        => '4.2.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -60290,7 +60290,7 @@ return [
         ],
     ],
     'test-0042-2512' => [
-        'ua'         => '--custom-header-propagation --custom-header \'User-Agent\' \'Mozilla/5.0 (compatible; TSuchebot/1.1; +http://tsuche.com/bot)\'',
+        'ua'         => '--custom-header-propagation --custom-header \\'User-Agent\\' \\'Mozilla/5.0 (compatible; TSuchebot/1.1; +http://tsuche.com/bot)\\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

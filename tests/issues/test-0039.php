@@ -3107,7 +3107,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '43.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -6419,7 +6419,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '43.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -20810,7 +20810,7 @@ return [
         ],
     ],
     'test-0039-867' => [
-        'ua'         => 'Mozilla/5.0 \(Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D\) AppleWebKit/535.19 \(KHTML, like Gecko\) Chrome/18.0.1025.166 Mobile Safari/535.19',
+        'ua'         => 'Mozilla/5.0 \\(Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D\\) AppleWebKit/535.19 \\(KHTML, like Gecko\\) Chrome/18.0.1025.166 Mobile Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
@@ -28250,7 +28250,7 @@ return [
         ],
     ],
     'test-0039-1177' => [
-        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Bereitgestellt durch die Stadtentw\xc3\xa4sserung Hannover; rv:11.0) like Gecko',
+        'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Bereitgestellt durch die Stadtentw\\xc3\\xa4sserung Hannover; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -38459,7 +38459,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '43.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.2',
+            'Platform_Version'        => '4.2.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -51866,7 +51866,7 @@ return [
         ],
     ],
     'test-0039-2161' => [
-        'ua'         => '\'firefox',
+        'ua'         => '\\'firefox',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

@@ -5618,7 +5618,7 @@ return [
         ],
     ],
     'test-0016-240' => [
-        'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; G17s 3G\xe5\x9b\x9b\xe6\xa0\xb8(K5E5) Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+        'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; G17s 3G\\xe5\\x9b\\x9b\\xe6\\xa0\\xb8(K5E5) Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
             'Browser_Type'            => 'Browser',
@@ -6995,7 +6995,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '48.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.1',
+            'Platform_Version'        => '5.1.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -9890,7 +9890,7 @@ return [
         ],
     ],
     'test-0016-421' => [
-        'ua'         => 'Mozilla/5.1 (X11; Linux x86_64) \xd8\xa7\xd9\x84\xd9\x84\xd9\x87 \xd8\xa3\xd9\x83\xd8\xa8\xd8\xb1',
+        'ua'         => 'Mozilla/5.1 (X11; Linux x86_64) \\xd8\\xa7\\xd9\\x84\\xd9\\x84\\xd9\\x87 \\xd8\\xa3\\xd9\\x83\\xd8\\xa8\\xd8\\xb1',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -12554,7 +12554,7 @@ return [
         ],
     ],
     'test-0016-535' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=H\xc3\xb6hnerbach-R\xc3\xbchl\, Martina,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=H\\xc3\\xb6hnerbach-R\\xc3\\xbchl\\, Martina,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -13634,7 +13634,7 @@ return [
         ],
     ],
     'test-0016-582' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=H\xf6hnerbach-R\xfchl\, Martina,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=H\\xf6hnerbach-R\\xfchl\\, Martina,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -16946,7 +16946,7 @@ return [
         ],
     ],
     'test-0016-723' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=Paczia\, Martina,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=Paczia\\, Martina,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -17243,6 +17243,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Windows Phone OS',
+            'Platform_Version'        => '8.1.0',
+            'Platform_Bits'           => 32,
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
@@ -44120,7 +44123,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '48.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -46472,6 +46475,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Windows Phone OS',
+            'Platform_Version'        => '8.1.0',
+            'Platform_Bits'           => 32,
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

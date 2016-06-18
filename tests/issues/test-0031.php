@@ -11747,7 +11747,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '32.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '4.4',
+            'Platform_Version'        => '4.4.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
@@ -17378,7 +17378,7 @@ return [
         ],
     ],
     'test-0031-724' => [
-        'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; HS Sch\xc3\xb6llkrippen)',
+        'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; HS Sch\\xc3\\xb6llkrippen)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -21314,7 +21314,7 @@ return [
         ],
     ],
     'test-0031-888' => [
-        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Allg\xc3\xa4uer Medien Zentrum)',
+        'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Allg\\xc3\\xa4uer Medien Zentrum)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
             'Browser_Type'            => 'Browser',
@@ -27635,6 +27635,9 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Windows Phone OS',
+            'Platform_Version'        => '8.1.0',
+            'Platform_Bits'           => 32,
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

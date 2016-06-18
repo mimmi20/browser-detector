@@ -15722,7 +15722,7 @@ return [
         ],
     ],
     'test-0013-665' => [
-        'ua'         => '\'Mozilla/5.2 (X11; U; FreeBSD i386; ru-RU; rv:1.9.1.10) Gecko/20100625 Firefox/3.5.10\'',
+        'ua'         => '\\'Mozilla/5.2 (X11; U; FreeBSD i386; ru-RU; rv:1.9.1.10) Gecko/20100625 Firefox/3.5.10\\'',
         'properties' => [
             'Browser_Name'            => 'Firefox',
             'Browser_Type'            => 'Browser',
@@ -45698,7 +45698,7 @@ return [
         ],
     ],
     'test-0013-1917' => [
-        'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) \robile/13D15',
+        'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) \\robile/13D15',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -46235,7 +46235,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.1',
+            'Platform_Version'        => '5.1.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',

@@ -10586,7 +10586,7 @@ return [
         ],
     ],
     'test-0047-441' => [
-        'ua'         => 'Mozilla/5.0 \(Windows NT 6.1\) AppleWebKit/537.36 \(KHTML, like Gecko\) Chrome/41.0.2228.0 Safari/537.36',
+        'ua'         => 'Mozilla/5.0 \\(Windows NT 6.1\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/41.0.2228.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
@@ -10634,7 +10634,7 @@ return [
         ],
     ],
     'test-0047-443' => [
-        'ua'         => 'QQ\xe6\xb5\x8f\xe8\xa7\x88\xe5\x99\xa8 5.8 (iPhone; iPhone OS 8.0; zh-Hans_DE)',
+        'ua'         => 'QQ\\xe6\\xb5\\x8f\\xe8\\xa7\\x88\\xe5\\x99\\xa8 5.8 (iPhone; iPhone OS 8.0; zh-Hans_DE)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
