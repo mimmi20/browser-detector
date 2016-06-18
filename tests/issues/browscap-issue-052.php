@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '26.0',
             'Platform_Name'           => 'Windows',
-            'Platform_Version'        => 'unknown',
+            'Platform_Version'        => 'NT.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'Windows Desktop',

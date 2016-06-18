@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '49.0',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '6.0',
+            'Platform_Version'        => '6.0.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'Nexus 7',

@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '9.1',
             'Platform_Name'           => 'Mac OS X',
-            'Platform_Version'        => '10.11',
+            'Platform_Version'        => '10.11.4',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',
             'Device_Name'             => 'Macintosh',

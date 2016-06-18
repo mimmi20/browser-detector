@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'CellOS',
-            'Platform_Version'        => 'unknown',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Sony',
             'Device_Name'             => 'Playstation 4',
