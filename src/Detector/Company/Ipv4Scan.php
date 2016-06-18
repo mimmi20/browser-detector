@@ -37,7 +37,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ipv4Scan extends AbstractCompany
+class Ipv4Scan
 {
     /**
      * the name of the company

@@ -37,7 +37,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WebIntegrationItService extends AbstractCompany
+class WebIntegrationItService
 {
     /**
      * the name of the company

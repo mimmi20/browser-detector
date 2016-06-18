@@ -37,7 +37,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class InternetMemoryResearch extends AbstractCompany
+class InternetMemoryResearch
 {
     /**
      * the name of the company

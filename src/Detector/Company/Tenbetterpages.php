@@ -37,7 +37,7 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Tenbetterpages extends AbstractCompany
+class Tenbetterpages
 {
     /**
      * the name of the company
