@@ -46,31 +46,12 @@ class Beos extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'BeOS',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Access())->name,
-                'bits'         => null,
-            ]
-        );
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::detectVersion($this->useragent, ['BeOS']);
+        $this->useragent    = $useragent;
+        $this->name         = 'BeOS';
+        $this->version      = VersionFactory::detectVersion($useragent, ['BeOS']);
+        $this->manufacturer = (new Company\Access())->name;
     }
 }

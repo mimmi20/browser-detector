@@ -46,23 +46,20 @@ class Macosx extends AbstractOs
     /**
      * Class Constructor
      *
-     * @param string $useragent the user agent to be handled
-     * @param array  $data
+     * @param string      $useragent the user agent to be handled
+     * @param string|null $version
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
+    public function __construct($useragent, $version = null)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'Mac OS X';
+        $this->manufacturer = (new Company\Apple())->name;
 
-        $this->setData(
-            [
-                'name'         => 'Mac OS X',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Apple())->name,
-                'bits'         => null,
-            ]
-        );
+        if (null !== $version && is_string($version)) {
+            $this->version = VersionFactory::set($version);
+        } else {
+            $this->version = $this->detectVersion();
+        }
     }
 
     /**
@@ -73,6 +70,15 @@ class Macosx extends AbstractOs
     private function detectVersion()
     {
         $detector = VersionFactory::detectVersion($this->useragent, ['Mac OS X', 'Mac OS X v'], '10');
+
+        if ($detector->getVersion(Version::MAJORONLY) > 999) {
+            $versions = [];
+            $found    = preg_match('/(\d\d)(\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
+
+            if ($found) {
+                return VersionFactory::set($versions[1] . '.' . $versions[2] . '.' . $versions[3]);
+            }
+        }
 
         if ($detector->getVersion(Version::MAJORONLY) > 99) {
             $versions = [];

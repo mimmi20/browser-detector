@@ -46,21 +46,12 @@ class CellOs extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'CellOS',
-                'version'      => new Version(0),
-                'manufacturer' => (new Company\Sony())->name,
-                'bits'         => null,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'CellOS';
+        $this->version      = new Version(0);
+        $this->manufacturer = (new Company\Sony())->name;
     }
 }

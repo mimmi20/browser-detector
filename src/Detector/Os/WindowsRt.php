@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,13 @@ class WindowsRt extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Windows RT',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Microsoft())->name,
-                'bits'         => null,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'Windows RT';
+        $this->version      = $this->detectVersion();
+        $this->manufacturer = (new Company\Microsoft())->name;
     }
 
     /**
@@ -120,6 +112,6 @@ class WindowsRt extends AbstractOs
             return VersionFactory::set($version);
         }
 
-        return VersionFactory::set('0.0');
+        return new Version(0);
     }
 }

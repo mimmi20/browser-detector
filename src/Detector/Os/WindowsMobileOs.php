@@ -47,39 +47,30 @@ class WindowsMobileOs extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Windows Mobile OS',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Microsoft())->name,
-                'bits'         => null,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'Windows Mobile OS';
+        $this->version      = $this->detectVersion();
+        $this->manufacturer = (new Company\Microsoft())->name;
     }
 
     /**
      * returns the version of the operating system/platform
      *
-     * @return string|null
+     * @return \BrowserDetector\Version\Version
      */
     private function detectVersion()
     {
         if (false !== strpos($this->useragent, 'Windows NT 5.1')) {
-            return '6.0';
+            return VersionFactory::set('6.0');
         }
 
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
-        if ($utils->checkIfContains(['Windows CE', 'Windows Mobile', 'MSIEMobile'])) {
+        if ($utils->checkIfContains(['Windows Mobile', 'MSIEMobile'])) {
             $searches = ['MSIEMobile'];
 
             return VersionFactory::detectVersion($this->useragent, $searches, '6.0');

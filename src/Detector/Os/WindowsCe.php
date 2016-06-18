@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,31 +46,12 @@ class WindowsCe extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Windows CE',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Microsoft())->name,
-                'bits'         => null,
-            ]
-        );
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::set('0.0');
+        $this->useragent    = $useragent;
+        $this->name         = 'Windows CE';
+        $this->version      = new Version(0);
+        $this->manufacturer = (new Company\Microsoft())->name;
     }
 }

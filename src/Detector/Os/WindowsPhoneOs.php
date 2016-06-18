@@ -47,28 +47,19 @@ class WindowsPhoneOs extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Windows Phone OS',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Microsoft())->name,
-                'bits'         => null,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'Windows Phone OS';
+        $this->version      = $this->detectVersion();
+        $this->manufacturer = (new Company\Microsoft())->name;
     }
 
     /**
      * returns the version of the operating system/platform
      *
-     * @return string|null
+     * @return \BrowserDetector\Version\Version
      */
     private function detectVersion()
     {
@@ -76,15 +67,15 @@ class WindowsPhoneOs extends AbstractOs
         $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
-            return '7.5';
+            return VersionFactory::set('7.5');
         }
 
         if ($utils->checkIfContains(['WPDesktop'])) {
             if ($utils->checkIfContains(['Windows NT 6.2'])) {
-                return '8.1';
+                return VersionFactory::set('8.1');
             }
 
-            return '8.0';
+            return VersionFactory::set('8.0');
         }
 
         $searches = ['Windows Phone OS', 'Windows Phone'];

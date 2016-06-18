@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +47,13 @@ class AndroidOs extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Android',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Google())->name,
-                'bits'         => null,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'Android';
+        $this->version      = $this->detectVersion();
+        $this->manufacturer = (new Company\Google())->name;
     }
 
     /**
@@ -99,6 +91,6 @@ class AndroidOs extends AbstractOs
             return VersionFactory::set('2.3');
         }
 
-        return VersionFactory::set('0.0');
+        return new Version(0);
     }
 }

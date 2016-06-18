@@ -46,31 +46,12 @@ class DragonflyBsd extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'DragonFly BSD',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Unknown())->name,
-                'bits'         => null,
-            ]
-        );
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::detectVersion($this->useragent, ['DragonFly']);
+        $this->useragent    = $useragent;
+        $this->name         = 'DragonFly BSD';
+        $this->version      = VersionFactory::detectVersion($useragent, ['DragonFly']);
+        $this->manufacturer = (new Company\Unknown())->name;
     }
 }

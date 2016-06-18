@@ -46,31 +46,12 @@ class FreeBsd extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'FreeBSD',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\FreeBsdFoundation())->name,
-                'bits'         => null,
-            ]
-        );
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::detectVersion($this->useragent, ['FreeBSD', 'freebsd']);
+        $this->useragent    = $useragent;
+        $this->name         = 'FreeBSD';
+        $this->version      = VersionFactory::detectVersion($useragent, ['FreeBSD', 'freebsd']);
+        $this->manufacturer = (new Company\FreeBsdFoundation())->name;
     }
 }

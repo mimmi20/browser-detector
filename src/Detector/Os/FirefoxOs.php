@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,22 +46,13 @@ class FirefoxOs extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'FirefoxOS',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\MozillaFoundation())->name,
-                'bits'         => null,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'FirefoxOS';
+        $this->version      = $this->detectVersion();
+        $this->manufacturer = (new Company\MozillaFoundation())->name;
     }
 
     /**
@@ -72,6 +63,6 @@ class FirefoxOs extends AbstractOs
     private function detectVersion()
     {
         //@todo: add logic here
-        return VersionFactory::set('0.0');
+        return new Version(0);
     }
 }

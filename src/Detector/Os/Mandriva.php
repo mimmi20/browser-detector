@@ -46,21 +46,12 @@ class Mandriva extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Mandriva Linux',
-                'version'      => new Version(0),
-                'manufacturer' => (new Company\Mandriva())->name,
-                'bits'         => null,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'Mandriva Linux';
+        $this->version      = new Version(0);
+        $this->manufacturer = (new Company\Mandriva())->name;
     }
 }

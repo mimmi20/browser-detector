@@ -45,23 +45,20 @@ class Ios extends AbstractOs
     /**
      * Class Constructor
      *
-     * @param string $useragent the user agent to be handled
-     * @param array  $data
+     * @param string      $useragent the user agent to be handled
+     * @param string|null $version
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
+    public function __construct($useragent, $version = null)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'iOS';
+        $this->manufacturer = (new Company\Apple())->name;
 
-        $this->setData(
-            [
-                'name'         => 'iOS',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Apple())->name,
-                'bits'         => null,
-            ]
-        );
+        if (null !== $version && is_string($version)) {
+            $this->version = VersionFactory::set($version);
+        } else {
+            $this->version = $this->detectVersion();
+        }
     }
 
     /**

@@ -46,31 +46,12 @@ class Solaris extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Solaris',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Oracle())->name,
-                'bits'         => null,
-            ]
-        );
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::detectVersion($this->useragent, ['Solaris']);
+        $this->useragent    = $useragent;
+        $this->name         = 'Solaris';
+        $this->version      = VersionFactory::detectVersion($useragent, ['Solaris']);
+        $this->manufacturer = (new Company\Oracle())->name;
     }
 }

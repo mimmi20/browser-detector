@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -46,31 +46,12 @@ class Java extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Java',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Oracle())->name,
-                'bits'         => null,
-            ]
-        );
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::detectVersion($this->useragent, ['Java']);
+        $this->useragent    = $useragent;
+        $this->name         = 'Java';
+        $this->version      = new Version(0);
+        $this->manufacturer = (new Company\Oracle())->name;
     }
 }

@@ -46,31 +46,12 @@ class Aix extends AbstractOs
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'AIX',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Ibm())->name,
-                'bits'         => null,
-            ]
-        );
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::detectVersion($this->useragent, ['AIX']);
+        $this->useragent    = $useragent;
+        $this->name         = 'AIX';
+        $this->version      = VersionFactory::detectVersion($useragent, ['AIX']);
+        $this->manufacturer = (new Company\Ibm())->name;
     }
 }
