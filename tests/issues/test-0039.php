@@ -51866,7 +51866,7 @@ return [
         ],
     ],
     'test-0039-2161' => [
-        'ua'         => '\\'firefox',
+        'ua'         => '\'firefox',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

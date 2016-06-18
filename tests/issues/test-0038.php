@@ -1634,7 +1634,7 @@ return [
         ],
     ],
     'test-0038-68' => [
-        'ua'         => 'don\\'t be so nosey',
+        'ua'         => 'don\'t be so nosey',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

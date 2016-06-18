@@ -170,7 +170,7 @@ return [
         ],
     ],
     'test-0015-7' => [
-        'ua'         => '\\'',
+        'ua'         => '\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -386,7 +386,7 @@ return [
         ],
     ],
     'test-0015-17' => [
-        'ua'         => '1 waitfor delay \\'0:0:6\\' --',
+        'ua'         => '1 waitfor delay \'0:0:6\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -506,7 +506,7 @@ return [
         ],
     ],
     'test-0015-22' => [
-        'ua'         => 'Q3voO4U2\\'));select pg_sleep(9); --',
+        'ua'         => 'Q3voO4U2\'));select pg_sleep(9); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -530,7 +530,7 @@ return [
         ],
     ],
     'test-0015-23' => [
-        'ua'         => 'bgVhbCZW\\');select pg_sleep(6); --',
+        'ua'         => 'bgVhbCZW\');select pg_sleep(6); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -554,7 +554,7 @@ return [
         ],
     ],
     'test-0015-24' => [
-        'ua'         => 'i8GPq3FW\\')); waitfor delay \\'0:0:3\\' --',
+        'ua'         => 'i8GPq3FW\')); waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -578,7 +578,7 @@ return [
         ],
     ],
     'test-0015-25' => [
-        'ua'         => 'BJShnoHv\\'; waitfor delay \\'0:0:9\\' --',
+        'ua'         => 'BJShnoHv\'; waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -602,7 +602,7 @@ return [
         ],
     ],
     'test-0015-26' => [
-        'ua'         => 'ivEcBESP\\'); waitfor delay \\'0:0:3\\' --',
+        'ua'         => 'ivEcBESP\'); waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -626,7 +626,7 @@ return [
         ],
     ],
     'test-0015-27' => [
-        'ua'         => '-1\\' OR 2+390-390-1=0+0+0+1 or \\'BXEOx876\\'=\\'',
+        'ua'         => '-1\' OR 2+390-390-1=0+0+0+1 or \'BXEOx876\'=\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -722,7 +722,7 @@ return [
         ],
     ],
     'test-0015-31' => [
-        'ua'         => '5yVoIY9d\\'));select pg_sleep(6); --',
+        'ua'         => '5yVoIY9d\'));select pg_sleep(6); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -746,7 +746,7 @@ return [
         ],
     ],
     'test-0015-32' => [
-        'ua'         => 'IRQxuvRt\\')); waitfor delay \\'0:0:3\\' --',
+        'ua'         => 'IRQxuvRt\')); waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -770,7 +770,7 @@ return [
         ],
     ],
     'test-0015-33' => [
-        'ua'         => 'KJAsJEzn\\'); waitfor delay \\'0:0:9\\' --',
+        'ua'         => 'KJAsJEzn\'); waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -794,7 +794,7 @@ return [
         ],
     ],
     'test-0015-34' => [
-        'ua'         => '-1\\' OR 2+780-780-1=0+0+0+1 or \\'5jjk90ME\\'=\\'',
+        'ua'         => '-1\' OR 2+780-780-1=0+0+0+1 or \'5jjk90ME\'=\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -842,7 +842,7 @@ return [
         ],
     ],
     'test-0015-36' => [
-        'ua'         => '6hatD5LF\\';select pg_sleep(3); --',
+        'ua'         => '6hatD5LF\';select pg_sleep(3); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -866,7 +866,7 @@ return [
         ],
     ],
     'test-0015-37' => [
-        'ua'         => 'pOD1m1ij\\');select pg_sleep(6); --',
+        'ua'         => 'pOD1m1ij\');select pg_sleep(6); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -890,7 +890,7 @@ return [
         ],
     ],
     'test-0015-38' => [
-        'ua'         => '-1\\' OR 2+889-889-1=0+0+0+1 or \\'S2KSRTAL\\'=\\'',
+        'ua'         => '-1\' OR 2+889-889-1=0+0+0+1 or \'S2KSRTAL\'=\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -962,7 +962,7 @@ return [
         ],
     ],
     'test-0015-41' => [
-        'ua'         => 'iFmws66k\\';select pg_sleep(3); --',
+        'ua'         => 'iFmws66k\';select pg_sleep(3); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -986,7 +986,7 @@ return [
         ],
     ],
     'test-0015-42' => [
-        'ua'         => 'ExtqPRY1\\')); waitfor delay \\'0:0:9\\' --',
+        'ua'         => 'ExtqPRY1\')); waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1010,7 +1010,7 @@ return [
         ],
     ],
     'test-0015-43' => [
-        'ua'         => '-1\\' OR 2+722-722-1=0+0+0+1 or \\'G3Jcjbqz\\'=\\'',
+        'ua'         => '-1\' OR 2+722-722-1=0+0+0+1 or \'G3Jcjbqz\'=\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1082,7 +1082,7 @@ return [
         ],
     ],
     'test-0015-46' => [
-        'ua'         => 'LfmPljPN\\'));select pg_sleep(3); --',
+        'ua'         => 'LfmPljPN\'));select pg_sleep(3); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1106,7 +1106,7 @@ return [
         ],
     ],
     'test-0015-47' => [
-        'ua'         => 'RPY2IPvg\\');select pg_sleep(9); --',
+        'ua'         => 'RPY2IPvg\');select pg_sleep(9); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1130,7 +1130,7 @@ return [
         ],
     ],
     'test-0015-48' => [
-        'ua'         => 'fKcLJSTS\\')); waitfor delay \\'0:0:9\\' --',
+        'ua'         => 'fKcLJSTS\')); waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1154,7 +1154,7 @@ return [
         ],
     ],
     'test-0015-49' => [
-        'ua'         => '1 waitfor delay \\'0:0:3\\' --',
+        'ua'         => '1 waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1202,7 +1202,7 @@ return [
         ],
     ],
     'test-0015-51' => [
-        'ua'         => 'PvZGIL9r\\'));select pg_sleep(9); --',
+        'ua'         => 'PvZGIL9r\'));select pg_sleep(9); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1226,7 +1226,7 @@ return [
         ],
     ],
     'test-0015-52' => [
-        'ua'         => '8fXAsXVL\\';select pg_sleep(6); --',
+        'ua'         => '8fXAsXVL\';select pg_sleep(6); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1250,7 +1250,7 @@ return [
         ],
     ],
     'test-0015-53' => [
-        'ua'         => '-1\\' OR 2+160-160-1=0+0+0+1 --',
+        'ua'         => '-1\' OR 2+160-160-1=0+0+0+1 --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1322,7 +1322,7 @@ return [
         ],
     ],
     'test-0015-56' => [
-        'ua'         => 'riADbH4f\\');select pg_sleep(3); --',
+        'ua'         => 'riADbH4f\');select pg_sleep(3); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1346,7 +1346,7 @@ return [
         ],
     ],
     'test-0015-57' => [
-        'ua'         => '01uKaIdY\\';select pg_sleep(3); --',
+        'ua'         => '01uKaIdY\';select pg_sleep(3); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1370,7 +1370,7 @@ return [
         ],
     ],
     'test-0015-58' => [
-        'ua'         => '5IGBCTT2\\'; waitfor delay \\'0:0:9\\' --',
+        'ua'         => '5IGBCTT2\'; waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -1418,7 +1418,7 @@ return [
         ],
     ],
     'test-0015-60' => [
-        'ua'         => '-1\\' OR 2+265-265-1=0+0+0+1 or \\'v5EDpi3p\\'=\\'',
+        'ua'         => '-1\' OR 2+265-265-1=0+0+0+1 or \'v5EDpi3p\'=\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3338,7 +3338,7 @@ return [
         ],
     ],
     'test-0015-142' => [
-        'ua'         => '1 waitfor delay \\'0:0:9\\' --',
+        'ua'         => '1 waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3458,7 +3458,7 @@ return [
         ],
     ],
     'test-0015-148' => [
-        'ua'         => '3y0Y4Rvx\\';select pg_sleep(6); --',
+        'ua'         => '3y0Y4Rvx\';select pg_sleep(6); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3530,7 +3530,7 @@ return [
         ],
     ],
     'test-0015-151' => [
-        'ua'         => '-1\\' OR 2+793-793-1=0+0+0+1 --',
+        'ua'         => '-1\' OR 2+793-793-1=0+0+0+1 --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3554,7 +3554,7 @@ return [
         ],
     ],
     'test-0015-152' => [
-        'ua'         => '9JaY58Qv\\');select pg_sleep(3); --',
+        'ua'         => '9JaY58Qv\');select pg_sleep(3); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3578,7 +3578,7 @@ return [
         ],
     ],
     'test-0015-153' => [
-        'ua'         => 'HyE0N4J6\\';select pg_sleep(3); --',
+        'ua'         => 'HyE0N4J6\';select pg_sleep(3); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3602,7 +3602,7 @@ return [
         ],
     ],
     'test-0015-154' => [
-        'ua'         => 'fntXpsFd\\'; waitfor delay \\'0:0:6\\' --',
+        'ua'         => 'fntXpsFd\'; waitfor delay \'0:0:6\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3626,7 +3626,7 @@ return [
         ],
     ],
     'test-0015-155' => [
-        'ua'         => '-1\\' OR 2+180-180-1=0+0+0+1 --',
+        'ua'         => '-1\' OR 2+180-180-1=0+0+0+1 --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3746,7 +3746,7 @@ return [
         ],
     ],
     'test-0015-160' => [
-        'ua'         => 'Ej1gnODM\\'));select pg_sleep(6); --',
+        'ua'         => 'Ej1gnODM\'));select pg_sleep(6); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3770,7 +3770,7 @@ return [
         ],
     ],
     'test-0015-161' => [
-        'ua'         => 'AcI2YVVE\\'; waitfor delay \\'0:0:9\\' --',
+        'ua'         => 'AcI2YVVE\'; waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3794,7 +3794,7 @@ return [
         ],
     ],
     'test-0015-162' => [
-        'ua'         => 'e1iprS2x\\')); waitfor delay \\'0:0:3\\' --',
+        'ua'         => 'e1iprS2x\')); waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3818,7 +3818,7 @@ return [
         ],
     ],
     'test-0015-163' => [
-        'ua'         => 'hYL7oRfY\\'); waitfor delay \\'0:0:3\\' --',
+        'ua'         => 'hYL7oRfY\'); waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3890,7 +3890,7 @@ return [
         ],
     ],
     'test-0015-166' => [
-        'ua'         => '-1\\' OR 2+831-831-1=0+0+0+1 --',
+        'ua'         => '-1\' OR 2+831-831-1=0+0+0+1 --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3938,7 +3938,7 @@ return [
         ],
     ],
     'test-0015-168' => [
-        'ua'         => 'bJgUEgOQ\\'));select pg_sleep(9); --',
+        'ua'         => 'bJgUEgOQ\'));select pg_sleep(9); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3962,7 +3962,7 @@ return [
         ],
     ],
     'test-0015-169' => [
-        'ua'         => 'RuNsUB2C\\');select pg_sleep(6); --',
+        'ua'         => 'RuNsUB2C\');select pg_sleep(6); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -3986,7 +3986,7 @@ return [
         ],
     ],
     'test-0015-170' => [
-        'ua'         => 'M9Zxjxb4\\'); waitfor delay \\'0:0:9\\' --',
+        'ua'         => 'M9Zxjxb4\'); waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4010,7 +4010,7 @@ return [
         ],
     ],
     'test-0015-171' => [
-        'ua'         => 'n2Tnfg3j\\'; waitfor delay \\'0:0:6\\' --',
+        'ua'         => 'n2Tnfg3j\'; waitfor delay \'0:0:6\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4034,7 +4034,7 @@ return [
         ],
     ],
     'test-0015-172' => [
-        'ua'         => '-1\\' OR 2+505-505-1=0+0+0+1 --',
+        'ua'         => '-1\' OR 2+505-505-1=0+0+0+1 --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4130,7 +4130,7 @@ return [
         ],
     ],
     'test-0015-176' => [
-        'ua'         => 'c6v1hVRt\\';select pg_sleep(9); --',
+        'ua'         => 'c6v1hVRt\';select pg_sleep(9); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4154,7 +4154,7 @@ return [
         ],
     ],
     'test-0015-177' => [
-        'ua'         => '28eHMBEr\\'); waitfor delay \\'0:0:6\\' --',
+        'ua'         => '28eHMBEr\'); waitfor delay \'0:0:6\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4178,7 +4178,7 @@ return [
         ],
     ],
     'test-0015-178' => [
-        'ua'         => '7JqODtgm\\'; waitfor delay \\'0:0:3\\' --',
+        'ua'         => '7JqODtgm\'; waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4250,7 +4250,7 @@ return [
         ],
     ],
     'test-0015-181' => [
-        'ua'         => '-1\\' OR 2+18-18-1=0+0+0+1 --',
+        'ua'         => '-1\' OR 2+18-18-1=0+0+0+1 --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4274,7 +4274,7 @@ return [
         ],
     ],
     'test-0015-182' => [
-        'ua'         => '-1\\' OR 2+64-64-1=0+0+0+1 or \\'NOh4JmfT\\'=\\'',
+        'ua'         => '-1\' OR 2+64-64-1=0+0+0+1 or \'NOh4JmfT\'=\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4346,7 +4346,7 @@ return [
         ],
     ],
     'test-0015-185' => [
-        'ua'         => 'jfQopZ0o\\');select pg_sleep(9); --',
+        'ua'         => 'jfQopZ0o\');select pg_sleep(9); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4370,7 +4370,7 @@ return [
         ],
     ],
     'test-0015-186' => [
-        'ua'         => 'BKQM2B6f\\')); waitfor delay \\'0:0:6\\' --',
+        'ua'         => 'BKQM2B6f\')); waitfor delay \'0:0:6\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4394,7 +4394,7 @@ return [
         ],
     ],
     'test-0015-187' => [
-        'ua'         => 'zGdL06eu\\'); waitfor delay \\'0:0:3\\' --',
+        'ua'         => 'zGdL06eu\'); waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4418,7 +4418,7 @@ return [
         ],
     ],
     'test-0015-188' => [
-        'ua'         => 'SdEyKTgd\\'; waitfor delay \\'0:0:3\\' --',
+        'ua'         => 'SdEyKTgd\'; waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4442,7 +4442,7 @@ return [
         ],
     ],
     'test-0015-189' => [
-        'ua'         => '-1\\' OR 2+286-286-1=0+0+0+1 or \\'XJayyAYw\\'=\\'',
+        'ua'         => '-1\' OR 2+286-286-1=0+0+0+1 or \'XJayyAYw\'=\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4538,7 +4538,7 @@ return [
         ],
     ],
     'test-0015-193' => [
-        'ua'         => 'I25IGDr1\\'));select pg_sleep(6); --',
+        'ua'         => 'I25IGDr1\'));select pg_sleep(6); --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4562,7 +4562,7 @@ return [
         ],
     ],
     'test-0015-194' => [
-        'ua'         => 'ry0abMUr\\')); waitfor delay \\'0:0:3\\' --',
+        'ua'         => 'ry0abMUr\')); waitfor delay \'0:0:3\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4586,7 +4586,7 @@ return [
         ],
     ],
     'test-0015-195' => [
-        'ua'         => '2NHjmxwH\\'); waitfor delay \\'0:0:9\\' --',
+        'ua'         => '2NHjmxwH\'); waitfor delay \'0:0:9\' --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',
@@ -4634,7 +4634,7 @@ return [
         ],
     ],
     'test-0015-197' => [
-        'ua'         => '-1\\' OR 2+433-433-1=0+0+0+1 --',
+        'ua'         => '-1\' OR 2+433-433-1=0+0+0+1 --',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

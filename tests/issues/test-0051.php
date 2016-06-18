@@ -36458,7 +36458,7 @@ return [
         ],
     ],
     'test-0051-1519' => [
-        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; eZee\\'tab7D14-S Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
+        'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; eZee\'tab7D14-S Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
             'Browser_Type'            => 'Browser',
