@@ -71,156 +71,286 @@ class PlatformFactory implements FactoryInterface
         if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop)/', $agent)) {
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
             if (!$doMatchPhone || $matchesPhone[1] >= 7) {
-                $platform = new Os\WindowsPhoneOs($agent, []);
-            } else {
-                $platform = new Os\WindowsMobileOs($agent, []);
+                return new Os\WindowsPhoneOs($agent);
             }
-        } elseif ($windowsHelper->isMobileWindows() && $utils->checkIfContains('Windows CE')) {
-            $platform = new Os\WindowsCe($agent, []);
-        } elseif ($windowsHelper->isMobileWindows()) {
+
+            return new Os\WindowsMobileOs($agent);
+        }
+
+        if ($windowsHelper->isMobileWindows() && $utils->checkIfContains('Windows CE')) {
+            return new Os\WindowsCe($agent);
+        }
+
+        if ($windowsHelper->isMobileWindows()) {
             $doMatchMobile = preg_match('/mobile version([\d]+)/', $agent, $matchesMobile);
 
             if ($doMatchMobile && $matchesMobile[1] >= 70) {
-                $platform = new Os\WindowsPhoneOs($agent, []);
-            } else {
-                $platform = new Os\WindowsMobileOs($agent, []);
+                return new Os\WindowsPhoneOs($agent);
             }
-        } elseif ($isWindows && $utils->checkIfContains('ARM;')) {
-            $platform = new Os\WindowsRt($agent, []);
-        } elseif ($isWindows) {
-            $platform = new Os\Windows($agent, []);
-        } elseif (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|Series40|S60V3|S60V5)/', $agent)) {
-            $platform = new Os\Symbianos($agent, []);
-        } elseif ($utils->checkIfContains('Bada')) {
-            $platform = new Os\Bada($agent, []);
-        } elseif ($utils->checkIfContains('MeeGo')) {
-            $platform = new Os\MeeGo($agent, []);
-        } elseif (preg_match('/(maemo|like android|linux\/x2\/r1)/i', $agent)) {
-            $platform = new Os\Maemo($agent, []);
-        } elseif (preg_match('/(BlackBerry|BB10)/', $agent)) {
-            $platform = new Os\RimOs($agent, []);
-        } elseif (preg_match('/(webos|hpwos)/i', $agent)) {
-            $platform = new Os\WebOs($agent, []);
-        } elseif ($utils->checkIfContains('Tizen')) {
-            $platform = new Os\Tizen($agent, []);
-        } elseif ((new FirefoxOsHelper($agent))->isFirefoxOs()) {
-            $platform = new Os\FirefoxOs($agent, []);
-        } elseif ($utils->checkIfContains('darwin', true)) {
-            $platform = new Os\Darwin($agent, []);
-        } elseif ($utils->checkIfContains('playstation', true)) {
-            $platform = new Os\CellOs($agent, []);
-        } elseif (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)
-            && false === stripos($agent, 'technipad')
-        ) {
-            $platform = new Os\Ios($agent, []);
-        } elseif (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap browser)/i', $agent)) {
-            $platform = new Os\Java($agent, []);
-        } elseif (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $agent)) {
-            $platform = new Os\AndroidOs($agent, []);
-        } elseif (preg_match('/(profile)/i', $agent)) {
-            $platform = new Os\Java($agent, []);
-        } elseif (preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches) && $matches[1] >= 4) {
-            $platform = new Os\AndroidOs($agent, []);
-        } elseif (preg_match('/(Macintosh|Mac_PowerPC|PPC|68K)/', $agent)
-            && !$utils->checkIfContains('Mac OS X')
-        ) {
-            $platform = new Os\MacintoshOs($agent, []);
-        } elseif (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
-            $platform = new Os\Macosx($agent, []);
-        } elseif ($utils->checkIfContains('debian', true)) {
-            $platform = new Os\Debian($agent, []);
-        } elseif ($utils->checkIfContains('kubuntu', true)) {
-            $platform = new Os\Kubuntu($agent, []);
-        } elseif ($utils->checkIfContains('ubuntu', true)) {
-            $platform = new Os\Ubuntu($agent, []);
-        } elseif ($utils->checkIfContains(['RIM Tablet'])) {
-            $platform = new Os\RimTabletOs($agent, []);
-        } elseif ($utils->checkIfContains('centos', true)) {
-            $platform = new Os\CentOs($agent, []);
-        } elseif ($utils->checkIfContains('CrOS')) {
-            $platform = new Os\CrOs($agent, []);
-        } elseif ($utils->checkIfContains('Joli OS')) {
-            $platform = new Os\JoliOs($agent, []);
-        } elseif ($utils->checkIfContains('mandriva', true)) {
-            $platform = new Os\Mandriva($agent, []);
-        } elseif ($utils->checkIfContainsAll(['mint', 'linux'], true)) {
-            $platform = new Os\Mint($agent, []);
-        } elseif ($utils->checkIfContains('suse', true)) {
-            $platform = new Os\Suse($agent, []);
-        } elseif ($utils->checkIfContains('fedora', true)) {
-            $platform = new Os\Fedora($agent, []);
-        } elseif ($utils->checkIfContains('gentoo', true)) {
-            $platform = new Os\Gentoo($agent, []);
-        } elseif ($utils->checkIfContains(['redhat', 'red hat'], true)) {
-            $platform = new Os\Redhat($agent, []);
-        } elseif ($utils->checkIfContains('slackware', true)) {
-            $platform = new Os\Slackware($agent, []);
-        } elseif ($utils->checkIfContains('ventana', true)) {
-            $platform = new Os\Ventana($agent, []);
-        } elseif ($utils->checkIfContains('Moblin')) {
-            $platform = new Os\Moblin($agent, []);
-        } elseif ($utils->checkIfContains('Zenwalk GNU')) {
-            $platform = new Os\ZenwalkGnu($agent, []);
-        } elseif ($utils->checkIfContains('AIX')) {
-            $platform = new Os\Aix($agent, []);
-        } elseif ($utils->checkIfContains('AmigaOS')) {
-            $platform = new Os\AmigaOs($agent, []);
-        } elseif ($utils->checkIfContains('BREW')) {
-            $platform = new Os\Brew($agent, []);
-        } elseif ($utils->checkIfContains('cygwin', true)) {
-            $platform = new Os\Cygwin($agent, []);
-        } elseif ($utils->checkIfContains('freebsd', true)) {
-            $platform = new Os\FreeBsd($agent, []);
-        } elseif ($utils->checkIfContains('NetBSD')) {
-            $platform = new Os\NetBsd($agent, []);
-        } elseif ($utils->checkIfContains('OpenBSD')) {
-            $platform = new Os\OpenBsd($agent, []);
-        } elseif ($utils->checkIfContains('DragonFly')) {
-            $platform = new Os\DragonflyBsd($agent, []);
-        } elseif ($utils->checkIfContains('BSD Four')) {
-            $platform = new Os\BsdFour($agent, []);
-        } elseif ($utils->checkIfContainsAll(['HP-UX', 'HPUX'])) {
-            $platform = new Os\Hpux($agent, []);
-        } elseif ($utils->checkIfContainsAll(['BeOS'])) {
-            $platform = new Os\Beos($agent, []);
-        } elseif ($utils->checkIfContains(['IRIX64', 'IRIX'])) {
-            $platform = new Os\Irix($agent, []);
-        } elseif ($utils->checkIfContains('solaris', true)) {
-            $platform = new Os\Solaris($agent, []);
-        } elseif ($utils->checkIfContains('sunos', true)) {
-            $platform = new Os\SunOs($agent, []);
-        } elseif ($utils->checkIfContains('RISC')) {
-            $platform = new Os\RiscOs($agent, []);
-        } elseif ($utils->checkIfContains('OpenVMS')) {
-            $platform = new Os\OpenVms($agent, []);
-        } elseif ($utils->checkIfContains(['Tru64 UNIX', 'Digital Unix'])) {
-            $platform = new Os\Tru64Unix($agent, []);
-        } elseif ($utils->checkIfContains('unix', true)) {
-            $platform = new Os\Unix($agent, []);
-        } elseif ($utils->checkIfContains(['os/2', 'warp'], true)) {
-            $platform = new Os\Os2($agent, []);
-        } elseif ($utils->checkIfContains(['nettv', 'hbbtv', 'smart-tv', 'linux', 'x11', 'dillo', 'installatron'], true)) {
-            $platform = new Os\Linux($agent, []);
-        } elseif ($utils->checkIfContains('CP/M')) {
-            $platform = new Os\Cpm($agent, []);
-        } elseif ($utils->checkIfContains(['Nintendo Wii', 'Nintendo 3DS'])) {
-            $platform = new Os\NintendoOs($agent, []);
-        } elseif ($utils->checkIfContains(['Nokia'])) {
-            $platform = new Os\NokiaOs($agent, []);
-        } elseif ($utils->checkIfContains('ruby', true)) {
-            $platform = new Os\Ruby($agent, []);
-        } elseif ($utils->checkIfContains('Palm OS')) {
-            $platform = new Os\PalmOS($agent, []);
-        } elseif ($utils->checkIfContains('WyderOS')) {
-            $platform = new Os\WyderOs($agent, []);
-        } elseif ($utils->checkIfContains('Liberate')) {
-            $platform = new Os\Liberate($agent, []);
-        } elseif (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/)/', $agent)) {
-            $platform = new Os\Java($agent, []);
-        } else {
-            $platform = new Os\UnknownOs($agent, []);
+
+            return new Os\WindowsMobileOs($agent);
         }
 
-        return $platform;
+        if ($isWindows && $utils->checkIfContains('ARM;')) {
+            return new Os\WindowsRt($agent);
+        }
+
+        if ($isWindows) {
+            return new Os\Windows($agent);
+        }
+
+        if (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|Series40|S60V3|S60V5)/', $agent)) {
+            return new Os\Symbianos($agent);
+        }
+
+        if ($utils->checkIfContains('Bada')) {
+            return new Os\Bada($agent);
+        }
+
+        if ($utils->checkIfContains('MeeGo')) {
+            return new Os\MeeGo($agent);
+        }
+
+        if (preg_match('/(maemo|like android|linux\/x2\/r1)/i', $agent)) {
+            return new Os\Maemo($agent);
+        }
+
+        if (preg_match('/(BlackBerry|BB10)/', $agent)) {
+            return new Os\RimOs($agent);
+        }
+
+        if (preg_match('/(webos|hpwos)/i', $agent)) {
+            return new Os\WebOs($agent);
+        }
+
+        if ($utils->checkIfContains('Tizen')) {
+            return new Os\Tizen($agent);
+        }
+
+        if ((new FirefoxOsHelper($agent))->isFirefoxOs()) {
+            return new Os\FirefoxOs($agent);
+        }
+
+        if ($utils->checkIfContains(['darwin', 'cfnetwork'], true)) {
+            return Platform\DarwinFactory::detect($agent);
+        }
+
+        if ($utils->checkIfContains('playstation', true)) {
+            return new Os\CellOs($agent);
+        }
+
+        if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)
+            && false === stripos($agent, 'technipad')
+        ) {
+            return new Os\Ios($agent);
+        }
+
+        if (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap browser)/i', $agent)) {
+            return new Os\Java($agent);
+        }
+
+        if (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $agent)) {
+            return new Os\AndroidOs($agent);
+        }
+
+        if (preg_match('/(profile)/i', $agent)) {
+            return new Os\Java($agent);
+        }
+
+        if (preg_match('/Linux; U; (\d+[\d\.]+)/', $agent, $matches) && $matches[1] >= 4) {
+            return new Os\AndroidOs($agent);
+        }
+
+        if (preg_match('/(Macintosh|Mac_PowerPC|PPC|68K)/', $agent)
+            && !$utils->checkIfContains('Mac OS X')
+        ) {
+            return new Os\MacintoshOs($agent);
+        }
+
+        if (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
+            return new Os\Macosx($agent);
+        }
+
+        if ($utils->checkIfContains('debian', true)) {
+            return new Os\Debian($agent);
+        }
+
+        if ($utils->checkIfContains('kubuntu', true)) {
+            return new Os\Kubuntu($agent);
+        }
+
+        if ($utils->checkIfContains('ubuntu', true)) {
+            return new Os\Ubuntu($agent);
+        }
+
+        if ($utils->checkIfContains(['RIM Tablet'])) {
+            return new Os\RimTabletOs($agent);
+        }
+
+        if ($utils->checkIfContains('centos', true)) {
+            return new Os\CentOs($agent);
+        }
+
+        if ($utils->checkIfContains('CrOS')) {
+            return new Os\CrOs($agent);
+        }
+
+        if ($utils->checkIfContains('Joli OS')) {
+            return new Os\JoliOs($agent);
+        }
+
+        if ($utils->checkIfContains('mandriva', true)) {
+            return new Os\Mandriva($agent);
+        }
+
+        if ($utils->checkIfContainsAll(['mint', 'linux'], true)) {
+            return new Os\Mint($agent);
+        }
+
+        if ($utils->checkIfContains('suse', true)) {
+            return new Os\Suse($agent);
+        }
+
+        if ($utils->checkIfContains('fedora', true)) {
+            return new Os\Fedora($agent);
+        }
+
+        if ($utils->checkIfContains('gentoo', true)) {
+            return new Os\Gentoo($agent);
+        }
+
+        if ($utils->checkIfContains(['redhat', 'red hat'], true)) {
+            return new Os\Redhat($agent);
+        }
+
+        if ($utils->checkIfContains('slackware', true)) {
+            return new Os\Slackware($agent);
+        }
+
+        if ($utils->checkIfContains('ventana', true)) {
+            return new Os\Ventana($agent);
+        }
+
+        if ($utils->checkIfContains('Moblin')) {
+            return new Os\Moblin($agent);
+        }
+
+        if ($utils->checkIfContains('Zenwalk GNU')) {
+            return new Os\ZenwalkGnu($agent);
+        }
+
+        if ($utils->checkIfContains('AIX')) {
+            return new Os\Aix($agent);
+        }
+
+        if ($utils->checkIfContains('AmigaOS')) {
+            return new Os\AmigaOs($agent);
+        }
+
+        if ($utils->checkIfContains('BREW')) {
+            return new Os\Brew($agent);
+        }
+
+        if ($utils->checkIfContains('cygwin', true)) {
+            return new Os\Cygwin($agent);
+        }
+
+        if ($utils->checkIfContains('freebsd', true)) {
+            return new Os\FreeBsd($agent);
+        }
+
+        if ($utils->checkIfContains('NetBSD')) {
+            return new Os\NetBsd($agent);
+        }
+
+        if ($utils->checkIfContains('OpenBSD')) {
+            return new Os\OpenBsd($agent);
+        }
+
+        if ($utils->checkIfContains('DragonFly')) {
+            return new Os\DragonflyBsd($agent);
+        }
+
+        if ($utils->checkIfContains('BSD Four')) {
+            return new Os\BsdFour($agent);
+        }
+
+        if ($utils->checkIfContainsAll(['HP-UX', 'HPUX'])) {
+            return new Os\Hpux($agent);
+        }
+
+        if ($utils->checkIfContainsAll(['BeOS'])) {
+            return new Os\Beos($agent);
+        }
+
+        if ($utils->checkIfContains(['IRIX64', 'IRIX'])) {
+            return new Os\Irix($agent);
+        }
+
+        if ($utils->checkIfContains('solaris', true)) {
+            return new Os\Solaris($agent);
+        }
+
+        if ($utils->checkIfContains('sunos', true)) {
+            return new Os\SunOs($agent);
+        }
+
+        if ($utils->checkIfContains('RISC')) {
+            return new Os\RiscOs($agent);
+        }
+
+        if ($utils->checkIfContains('OpenVMS')) {
+            return new Os\OpenVms($agent);
+        }
+
+        if ($utils->checkIfContains(['Tru64 UNIX', 'Digital Unix'])) {
+            return new Os\Tru64Unix($agent);
+        }
+
+        if ($utils->checkIfContains('unix', true)) {
+            return new Os\Unix($agent);
+        }
+
+        if ($utils->checkIfContains(['os/2', 'warp'], true)) {
+            return new Os\Os2($agent);
+        }
+
+        if ($utils->checkIfContains(['nettv', 'hbbtv', 'smart-tv', 'linux', 'x11', 'dillo', 'installatron'], true)) {
+            return new Os\Linux($agent);
+        }
+
+        if ($utils->checkIfContains('CP/M')) {
+            return new Os\Cpm($agent);
+        }
+
+        if ($utils->checkIfContains(['Nintendo Wii', 'Nintendo 3DS'])) {
+            return new Os\NintendoOs($agent);
+        }
+
+        if ($utils->checkIfContains(['Nokia'])) {
+            return new Os\NokiaOs($agent);
+        }
+
+        if ($utils->checkIfContains('ruby', true)) {
+            return new Os\Ruby($agent);
+        }
+
+        if ($utils->checkIfContains('Palm OS')) {
+            return new Os\PalmOS($agent);
+        }
+
+        if ($utils->checkIfContains('WyderOS')) {
+            return new Os\WyderOs($agent);
+        }
+
+        if ($utils->checkIfContains('Liberate')) {
+            return new Os\Liberate($agent);
+        }
+
+        if (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/)/', $agent)) {
+            return new Os\Java($agent);
+        }
+
+        return new Os\UnknownOs($agent);
     }
 }

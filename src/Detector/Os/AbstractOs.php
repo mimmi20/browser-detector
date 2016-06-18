@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Bits\Os as OsBits;
-use BrowserDetector\Version\Version;
-use UaResult\Os\OsInterface;
+use UaResult\Os\Os;
 
 /**
  * base class for all rendering platforms/operating systems to detect
@@ -43,163 +42,18 @@ use UaResult\Os\OsInterface;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractOs implements OsInterface
+abstract class AbstractOs extends Os
 {
-    /**
-     * @var string the user agent to handle
-     */
-    protected $useragent = '';
-
-    /**
-     * @var string|null
-     */
-    protected $name = null;
-
-    /**
-     * @var \BrowserDetector\Version\Version|null
-     */
-    protected $version = null;
-
-    /**
-     * @var string|null
-     */
-    protected $manufacturer = null;
-
-    /**
-     * @var int|null
-     */
-    protected $bits = null;
-
-    /**
-     * Class Constructor
-     *
-     * @param string $useragent the user agent to be handled
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData($data);
-    }
-
     /**
      * @return int|null
      */
     public function getBits()
     {
+        if (null === $this->bits) {
+            $detector   = new OsBits($this->useragent);
+            $this->bits = $detector->getBits();
+        }
+
         return $this->bits;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getManufacturer()
-    {
-        return $this->manufacturer;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @return \BrowserDetector\Version\Version|null
-     */
-    public function getVersion()
-    {
-        return $this->version;
-    }
-
-    /**
-     * (PHP 5 &gt;= 5.1.0)<br/>
-     * String representation of object
-     *
-     * @link http://php.net/manual/en/serializable.serialize.php
-     *
-     * @return string the string representation of the object or null
-     */
-    public function serialize()
-    {
-        return serialize(
-            [
-                'useragent' => $this->useragent,
-                'data'      => [
-                    'name'         => $this->name,
-                    'version'      => $this->version,
-                    'manufacturer' => $this->manufacturer,
-                    'bits'         => $this->bits,
-                ],
-            ]
-        );
-    }
-
-    /**
-     * (PHP 5 &gt;= 5.1.0)<br/>
-     * Constructs the object
-     *
-     * @link http://php.net/manual/en/serializable.unserialize.php
-     *
-     * @param string $serialized <p>
-     *                           The string representation of the object.
-     *                           </p>
-     */
-    public function unserialize($serialized)
-    {
-        $unseriliazedData = unserialize($serialized);
-
-        $this->useragent = $unseriliazedData['useragent'];
-        $this->setData($unseriliazedData['data']);
-    }
-
-    /**
-     * (PHP 5 &gt;= 5.4.0)<br/>
-     * Specify data which should be serialized to JSON
-     *
-     * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
-     *
-     * @return mixed data which can be serialized by <b>json_encode</b>,
-     *               which is a value of any type other than a resource.
-     */
-    public function jsonSerialize()
-    {
-        return [
-            'useragent' => $this->useragent,
-            'data'      => [
-                'name'         => $this->name,
-                'version'      => $this->version,
-                'manufacturer' => $this->manufacturer,
-                'bits'         => $this->bits,
-            ],
-        ];
-    }
-
-    /**
-     * @param array $data
-     */
-    protected function setData(array $data)
-    {
-        if (!empty($data['name'])) {
-            $this->name = $data['name'];
-        }
-
-        if (!empty($data['version']) && $data['version'] instanceof Version) {
-            $this->version = $data['version'];
-        } else {
-            $this->version = new Version();
-        }
-
-        if (!empty($data['manufacturer'])) {
-            $this->manufacturer = $data['manufacturer'];
-        }
-
-        $detector   = new OsBits($this->useragent);
-        $this->bits = $detector->getBits();
     }
 }
