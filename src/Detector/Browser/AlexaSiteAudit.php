@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -32,15 +32,15 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class AlexaSiteAudit extends AbstractBrowser implements BrowserHasSpecificEngineInterface
@@ -49,43 +49,22 @@ class AlexaSiteAudit extends AbstractBrowser implements BrowserHasSpecificEngine
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'                        => 'Alexa Site Audit',
-                'modus'                       => null,
-                'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\AlexaInternet())->name,
-                'pdfSupport'                  => true,
-                'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
-                'claimsWebSupport'            => false,
-                'supportsEmptyOptionValues'   => true,
-                'supportsBasicAuthentication' => true,
-                'supportsPostMethod'          => true,
-                'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
-            ]
-        );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        $searches = ['alexa site audit'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
+        $this->useragent                   = $useragent;
+        $this->name                        = 'Alexa Site Audit';
+        $this->modus                       = null;
+        $this->version                     = VersionFactory::detectVersion($useragent, ['alexa site audit']);
+        $this->manufacturer                = (new Company\AlexaInternet())->name;
+        $this->pdfSupport                  = true;
+        $this->rssSupport                  = false;
+        $this->canSkipAlignedLinkRow       = false;
+        $this->claimsWebSupport            = false;
+        $this->supportsEmptyOptionValues   = true;
+        $this->supportsBasicAuthentication = true;
+        $this->supportsPostMethod          = true;
+        $this->type                        = new UaBrowserType\Bot();
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2016 Thomas Mueller
+ * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -32,9 +32,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\Version;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -49,43 +50,22 @@ class AdobeAIR extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'                        => 'Adobe AIR',
-                'modus'                       => null,
-                'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Adobe())->name,
-                'pdfSupport'                  => true,
-                'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => true,
-                'claimsWebSupport'            => false,
-                'supportsEmptyOptionValues'   => true,
-                'supportsBasicAuthentication' => true,
-                'supportsPostMethod'          => true,
-                'bits'                        => null,
-                'type'                        => new UaBrowserType\Application(),
-            ]
-        );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        $searches = ['AdobeAIR'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
+        $this->useragent                   = $useragent;
+        $this->name                        = 'Adobe AIR';
+        $this->modus                       = null;
+        $this->version                     = VersionFactory::detectVersion($useragent, ['AdobeAIR']);
+        $this->manufacturer                = (new Company\Adobe())->name;
+        $this->pdfSupport                  = true;
+        $this->rssSupport                  = false;
+        $this->canSkipAlignedLinkRow       = true;
+        $this->claimsWebSupport            = false;
+        $this->supportsEmptyOptionValues   = true;
+        $this->supportsBasicAuthentication = true;
+        $this->supportsPostMethod          = true;
+        $this->type                        = new UaBrowserType\Application();
     }
 
     /**
