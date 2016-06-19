@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\Version;
+use UaResult\Engine\Engine;
 
 /**
  * @category  BrowserDetector
@@ -40,26 +41,18 @@ use BrowserDetector\Version\Version;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackBerry extends AbstractEngine
+class BlackBerry extends Engine
 {
     /**
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'BlackBerry',
-                'version'      => new Version(0),
-                'manufacturer' => (new Company\Rim())->name,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'BlackBerry';
+        $this->version      = new Version(0);
+        $this->manufacturer = (new Company\Rim())->name;
     }
 }

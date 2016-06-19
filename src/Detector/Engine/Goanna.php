@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\VersionFactory;
+use UaResult\Engine\Engine;
 
 /**
  * @category  BrowserDetector
@@ -40,27 +41,19 @@ use BrowserDetector\Version\VersionFactory;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Goanna extends AbstractEngine
+class Goanna extends Engine
 {
     /**
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Goanna',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\MoonchildProductions())->name,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'Goanna';
+        $this->version      = $this->detectVersion();
+        $this->manufacturer = (new Company\MoonchildProductions())->name;
     }
 
     /**
@@ -70,6 +63,21 @@ class Goanna extends AbstractEngine
      */
     private function detectVersion()
     {
-        return VersionFactory::detectVersion($this->useragent, ['rv\:']);
+        // lastest version: version on "Goanna" token
+        $doMatch = preg_match('/Goanna\/([\d\.]+)/', $this->useragent, $matches);
+
+        if ($doMatch && 2015 > substr($matches[1], 0, 4)) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        // second version: version on "rv:" token
+        $doMatch = preg_match('/rv\:([\d\.]+)/', $this->useragent, $matches);
+
+        if ($doMatch && 2 >= substr($matches[1], 0, 4)) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        // first version: uses gecko version
+        return VersionFactory::set('1.0');
     }
 }

@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\VersionFactory;
+use UaResult\Engine\Engine;
 
 /**
  * @category  BrowserDetector
@@ -40,43 +41,26 @@ use BrowserDetector\Version\VersionFactory;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Blink extends AbstractEngine
+class Blink extends Engine
 {
     /**
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'Blink';
+        $this->version      = VersionFactory::detectVersion(
+            $useragent,
             [
-                'name'         => 'Blink',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Google())->name,
+                'AppleWebKit',
+                'WebKit',
+                'CFNetwork',
+                'Browser\/AppleWebKit',
             ]
         );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = [
-            'AppleWebKit',
-            'WebKit',
-            'CFNetwork',
-            'Browser\/AppleWebKit',
-        ];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
+        $this->manufacturer = (new Company\Google())->name;
     }
 }

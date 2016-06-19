@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
+use UaResult\Engine\Engine;
 
 /**
  * @category  BrowserDetector
@@ -41,42 +42,18 @@ use BrowserDetector\Version\VersionFactory;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Edge extends AbstractEngine
+class Edge extends Engine
 {
     /**
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'Edge',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Microsoft())->name,
-            ]
-        );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        $doMatch = preg_match('/Edge\/([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return VersionFactory::set($matches[1]);
-        }
-
-        return new Version();
+        $this->useragent    = $useragent;
+        $this->name         = 'Edge';
+        $this->version      = VersionFactory::detectVersion($useragent, ['Edge']);
+        $this->manufacturer = (new Company\Microsoft())->name;
     }
 }

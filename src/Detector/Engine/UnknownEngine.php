@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\Version;
+use UaResult\Engine\Engine;
 
 /**
  * @category  BrowserDetector
@@ -40,26 +41,18 @@ use BrowserDetector\Version\Version;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnknownEngine extends AbstractEngine
+class UnknownEngine extends Engine
 {
     /**
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'unknown',
-                'version'      => new Version(0),
-                'manufacturer' => (new Company\Unknown())->name,
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent    = $useragent;
+        $this->name         = 'unknown';
+        $this->version      = new Version(0);
+        $this->manufacturer = (new Company\Unknown())->name;
     }
 }

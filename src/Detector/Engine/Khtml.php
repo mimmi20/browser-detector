@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\VersionFactory;
+use UaResult\Engine\Engine;
 
 /**
  * @category  BrowserDetector
@@ -40,36 +41,18 @@ use BrowserDetector\Version\VersionFactory;
  * @copyright 2012-2015 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Khtml extends AbstractEngine
+class Khtml extends Engine
 {
     /**
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'         => 'KHTML',
-                'version'      => $this->detectVersion(),
-                'manufacturer' => (new Company\Unknown())->name,
-            ]
-        );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::detectVersion($this->useragent, ['KHTML']);
+        $this->useragent    = $useragent;
+        $this->name         = 'KHTML';
+        $this->version      = VersionFactory::detectVersion($useragent, ['KHTML']);
+        $this->manufacturer = (new Company\Unknown())->name;
     }
 }
