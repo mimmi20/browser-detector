@@ -32,9 +32,9 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -49,43 +49,22 @@ class Aboundexbot extends AbstractBrowser implements BrowserHasSpecificEngineInt
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'                        => 'Aboundexbot',
-                'modus'                       => null,
-                'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Aboundex())->name,
-                'pdfSupport'                  => true,
-                'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
-                'claimsWebSupport'            => false,
-                'supportsEmptyOptionValues'   => true,
-                'supportsBasicAuthentication' => true,
-                'supportsPostMethod'          => true,
-                'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
-            ]
-        );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        $searches = ['Aboundex'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
+        $this->useragent                   = $useragent;
+        $this->name                        = 'Aboundexbot';
+        $this->modus                       = null;
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Aboundex']);
+        $this->manufacturer                = (new Company\Aboundex())->name;
+        $this->pdfSupport                  = true;
+        $this->rssSupport                  = false;
+        $this->canSkipAlignedLinkRow       = false;
+        $this->claimsWebSupport            = false;
+        $this->supportsEmptyOptionValues   = true;
+        $this->supportsBasicAuthentication = true;
+        $this->supportsPostMethod          = true;
+        $this->type                        = new UaBrowserType\Bot();
     }
 
     /**

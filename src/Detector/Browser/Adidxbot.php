@@ -49,43 +49,22 @@ class Adidxbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'                        => 'adidxbot',
-                'modus'                       => null,
-                'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Microsoft())->name,
-                'pdfSupport'                  => true,
-                'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
-                'claimsWebSupport'            => false,
-                'supportsEmptyOptionValues'   => true,
-                'supportsBasicAuthentication' => true,
-                'supportsPostMethod'          => true,
-                'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
-            ]
-        );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        $searches = ['adidxbot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
+        $this->useragent                   = $useragent;
+        $this->name                        = 'adidxbot';
+        $this->modus                       = null;
+        $this->version                     = VersionFactory::detectVersion($useragent, ['adidxbot']);
+        $this->manufacturer                = (new Company\Microsoft())->name;
+        $this->pdfSupport                  = true;
+        $this->rssSupport                  = false;
+        $this->canSkipAlignedLinkRow       = false;
+        $this->claimsWebSupport            = false;
+        $this->supportsEmptyOptionValues   = true;
+        $this->supportsBasicAuthentication = true;
+        $this->supportsPostMethod          = true;
+        $this->type                        = new UaBrowserType\Bot();
     }
 
     /**

@@ -32,9 +32,9 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**
@@ -49,41 +49,22 @@ class AbontiBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'                        => 'Abonti WebSearch',
-                'modus'                       => null,
-                'version'                     => $this->detectVersion(),
-                'manufacturer'                => (new Company\Abonti())->name,
-                'pdfSupport'                  => true,
-                'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => false,
-                'claimsWebSupport'            => false,
-                'supportsEmptyOptionValues'   => true,
-                'supportsBasicAuthentication' => true,
-                'supportsPostMethod'          => true,
-                'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
-            ]
-        );
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
+    public function __construct($useragent)
     {
-        return VersionFactory::detectVersion($this->useragent, ['Abonti']);
+        $this->useragent                   = $useragent;
+        $this->name                        = 'Abonti WebSearch';
+        $this->modus                       = null;
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Abonti']);
+        $this->manufacturer                = (new Company\Abonti())->name;
+        $this->pdfSupport                  = true;
+        $this->rssSupport                  = false;
+        $this->canSkipAlignedLinkRow       = false;
+        $this->claimsWebSupport            = false;
+        $this->supportsEmptyOptionValues   = true;
+        $this->supportsBasicAuthentication = true;
+        $this->supportsPostMethod          = true;
+        $this->type                        = new UaBrowserType\Bot();
     }
 
     /**

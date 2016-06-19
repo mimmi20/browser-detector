@@ -49,31 +49,22 @@ class AdmantxPlatformSemanticAnalyzer extends AbstractBrowser implements Browser
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'name'                        => 'ADmantX Platform Semantic Analyzer',
-                'modus'                       => null,
-                'version'                     => new Version(0),
-                'manufacturer'                => (new Company\AdmantxInc())->name,
-                'pdfSupport'                  => true,
-                'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => true,
-                'claimsWebSupport'            => true,
-                'supportsEmptyOptionValues'   => true,
-                'supportsBasicAuthentication' => true,
-                'supportsPostMethod'          => true,
-                'bits'                        => null,
-                'type'                        => new UaBrowserType\Bot(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent                   = $useragent;
+        $this->name                        = 'ADmantX Platform Semantic Analyzer';
+        $this->modus                       = null;
+        $this->version                     = new Version(0);
+        $this->manufacturer                = (new Company\AdmantxInc())->name;
+        $this->pdfSupport                  = true;
+        $this->rssSupport                  = false;
+        $this->canSkipAlignedLinkRow       = true;
+        $this->claimsWebSupport            = true;
+        $this->supportsEmptyOptionValues   = true;
+        $this->supportsBasicAuthentication = true;
+        $this->supportsPostMethod          = true;
+        $this->type                        = new UaBrowserType\Bot();
     }
 
     /**
