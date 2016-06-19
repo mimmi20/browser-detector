@@ -39,5 +39,17 @@ namespace BrowserDetector\Detector\Company;
  */
 class Unknown
 {
-    // nothing to do
+    /**
+     * the name of the company
+     *
+     * @var string
+     */
+    public $name = null;
+
+    /**
+     * the brand name of the company
+     *
+     * @var string
+     */
+    public $brandname = null;
 }
