@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -32,15 +32,16 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\Version;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\Version;
 use UaBrowserType;
 
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class SamsungMobileBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInterface
@@ -49,31 +50,32 @@ class SamsungMobileBrowser extends AbstractBrowser implements BrowserHasSpecific
      * Class Constructor
      *
      * @param string $useragent the user agent to be handled
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
+    public function __construct($useragent)
+    {
+        $this->useragent                   = $useragent;
+        $this->name                        = 'Samsung Mobile Browser';
+        $this->modus                       = null;
+        $this->version                     = $this->detectVersion();
+        $this->manufacturer                = (new Company\Samsung())->name;
+        $this->pdfSupport                  = true;
+        $this->rssSupport                  = false;
+        $this->canSkipAlignedLinkRow       = true;
+        $this->claimsWebSupport            = false;
+        $this->supportsEmptyOptionValues   = true;
+        $this->supportsBasicAuthentication = true;
+        $this->supportsPostMethod          = true;
+        $this->type                        = new UaBrowserType\Browser();
+    }
 
-        $this->setData(
-            [
-                'name'                        => 'Samsung Mobile Browser',
-                'modus'                       => null,
-                'version'                     => new Version(0),
-                'manufacturer'                => (new Company\Samsung())->name,
-                'pdfSupport'                  => true,
-                'rssSupport'                  => false,
-                'canSkipAlignedLinkRow'       => true,
-                'claimsWebSupport'            => false,
-                'supportsEmptyOptionValues'   => true,
-                'supportsBasicAuthentication' => true,
-                'supportsPostMethod'          => true,
-                'bits'                        => null,
-                'type'                        => new UaBrowserType\Browser(),
-            ]
-        );
+    /**
+     * detects the browser version from the given user agent
+     *
+     * @return \BrowserDetector\Version\Version
+     */
+    private function detectVersion()
+    {
+        return new Version(0);
     }
 
     /**
