@@ -32,10 +32,10 @@
 namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\VersionFactory;
-use BrowserDetector\Version\Version;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
+use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 
 /**

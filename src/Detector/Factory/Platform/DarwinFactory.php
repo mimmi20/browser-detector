@@ -31,8 +31,8 @@
 
 namespace BrowserDetector\Detector\Factory\Platform;
 
-use BrowserDetector\Detector\Os;
 use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Os;
 
 /**
  * Browser detection class

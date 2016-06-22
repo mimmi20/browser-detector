@@ -34,9 +34,7 @@ namespace BrowserDetector\Detector\Device\Mobile;
 use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**

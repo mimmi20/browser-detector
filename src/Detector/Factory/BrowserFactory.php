@@ -59,7 +59,6 @@ use BrowserDetector\Detector\Browser\Amigo;
 use BrowserDetector\Detector\Browser\AndroidDownloadManager;
 use BrowserDetector\Detector\Browser\AndroidWebkit;
 use BrowserDetector\Detector\Browser\AndroidWebView;
-use BrowserDetector\Detector\Browser\Anonymizied;
 use BrowserDetector\Detector\Browser\AnotherWebMiningTool;
 use BrowserDetector\Detector\Browser\AntBot;
 use BrowserDetector\Detector\Browser\AolBot;

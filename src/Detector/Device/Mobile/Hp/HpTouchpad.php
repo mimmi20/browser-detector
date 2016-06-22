@@ -33,7 +33,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\MatcherCanHandleInterface;
 use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
