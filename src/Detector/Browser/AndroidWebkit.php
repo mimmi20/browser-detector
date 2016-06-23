@@ -33,10 +33,12 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
+use BrowserDetector\Helper\Safari as SafariHelper;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
+use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -84,18 +86,18 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $safariHelper->mapSafariVersions($matches[1]);
+            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains('android eclair', true)) {
-            return '2.1';
+            return VersionFactory::set('2.1');
         }
 
         if ($utils->checkIfContains('gingerbread', true)) {
-            return '2.3';
+            return VersionFactory::set('2.3');
         }
 
         $doMatch = preg_match(
@@ -105,7 +107,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $safariHelper->mapSafariVersions($matches[1]);
+            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -115,7 +117,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $safariHelper->mapSafariVersions($matches[1]);
+            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -125,7 +127,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $safariHelper->mapSafariVersions($matches[1]);
+            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
         }
 
         $doMatch = preg_match(
@@ -135,7 +137,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         );
 
         if ($doMatch) {
-            return $matches[1];
+            return VersionFactory::set($matches[1]);
         }
 
         $searches = ['Version', 'Safari', 'JUC \(Linux\; U\;'];
