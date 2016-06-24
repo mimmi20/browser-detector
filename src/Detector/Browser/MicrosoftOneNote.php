@@ -33,11 +33,11 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Engine;
+use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
-use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 
 /**
  * @category  BrowserDetector
