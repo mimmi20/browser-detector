@@ -43,7 +43,7 @@ use UaResult\Device\DeviceInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractDevice implements DeviceInterface
+abstract class AbstractDevice implements DeviceInterface, \Serializable
 {
     /**
      * @var string the user agent to handle
@@ -301,21 +301,7 @@ abstract class AbstractDevice implements DeviceInterface
         $unseriliazedData = unserialize($data);
 
         $this->useragent = $unseriliazedData['useragent'];
-        $this->setData($unseriliazedData['data']);
-    }
-
-    /**
-     * (PHP 5 &gt;= 5.4.0)<br/>
-     * Specify data which should be serialized to JSON
-     *
-     * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
-     *
-     * @return mixed data which can be serialized by <b>json_encode</b>,
-     *               which is a value of any type other than a resource.
-     */
-    public function jsonSerialize()
-    {
-        return $this->getData();
+        $this->setData($unseriliazedData);
     }
 
     /**
@@ -324,24 +310,22 @@ abstract class AbstractDevice implements DeviceInterface
     protected function getData()
     {
         return [
-            'useragent' => $this->useragent,
-            'data'      => [
-                'deviceName'        => $this->deviceName,
-                'marketingName'     => $this->marketingName,
-                'version'           => $this->version,
-                'manufacturer'      => $this->manufacturer,
-                'brand'             => $this->brand,
-                'formFactor'        => $this->formFactor,
-                'pointingMethod'    => $this->pointingMethod,
-                'resolutionWidth'   => $this->resolutionWidth,
-                'resolutionHeight'  => $this->resolutionHeight,
-                'dualOrientation'   => $this->dualOrientation,
-                'colors'            => $this->colors,
-                'smsSupport'        => $this->smsSupport,
-                'nfcSupport'        => $this->nfcSupport,
-                'hasQwertyKeyboard' => $this->hasQwertyKeyboard,
-                'type'              => $this->type,
-            ],
+            'useragent'         => $this->useragent,
+            'deviceName'        => $this->deviceName,
+            'marketingName'     => $this->marketingName,
+            'version'           => $this->version,
+            'manufacturer'      => $this->manufacturer,
+            'brand'             => $this->brand,
+            'formFactor'        => $this->formFactor,
+            'pointingMethod'    => $this->pointingMethod,
+            'resolutionWidth'   => $this->resolutionWidth,
+            'resolutionHeight'  => $this->resolutionHeight,
+            'dualOrientation'   => $this->dualOrientation,
+            'colors'            => $this->colors,
+            'smsSupport'        => $this->smsSupport,
+            'nfcSupport'        => $this->nfcSupport,
+            'hasQwertyKeyboard' => $this->hasQwertyKeyboard,
+            'type'              => $this->type,
         ];
     }
 

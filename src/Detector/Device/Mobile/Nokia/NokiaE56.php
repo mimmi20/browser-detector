@@ -29,16 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +43,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungGts5750eOrange extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class NokiaE56 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -62,59 +59,32 @@ class SamsungGts5750eOrange extends AbstractDevice implements DeviceHasSpecificP
 
         $this->setData(
             [
-                'deviceName'        => 'GT-S5750E Orange',
-                'marketingName'     => 'GT-S5750E Orange',
+                'deviceName'        => 'E56',
+                'marketingName'     => 'E56',
                 'version'           => null,
-                'manufacturer'      => (new Company\Samsung())->name,
-                'brand'             => (new Company\Samsung())->brandname,
+                'manufacturer'      => (new Company\Nokia())->name,
+                'brand'             => (new Company\Nokia())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => null,
-                'colors'            => null,
+                'resolutionWidth'   => 240,
+                'resolutionHeight'  => 320,
+                'dualOrientation'   => false,
+                'colors'            => 65536,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
-                'hasQwertyKeyboard' => false,
+                'hasQwertyKeyboard' => true,
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
     }
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains('SAMSUNG-GT-S5750E-Orange')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\Symbianos($this->useragent, []);
     }
 }

@@ -31,7 +31,6 @@
 
 namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
@@ -43,7 +42,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Technisat extends AbstractDevice implements DeviceHasChildrenInterface
+class Technisat extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -79,20 +78,12 @@ class Technisat extends AbstractDevice implements DeviceHasChildrenInterface
     }
 
     /**
-     * detects the device name from the given user agent
+     * returns the OS Handler
      *
-     * @return \UaResult\Device\DeviceInterface
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function detectDevice()
+    public function detectOs()
     {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Technisat');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Technisat' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

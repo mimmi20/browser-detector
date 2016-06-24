@@ -29,16 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +43,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSch720 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class NokiaLumia640 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -62,17 +59,17 @@ class SamsungSch720 extends AbstractDevice implements DeviceHasSpecificPlatformI
 
         $this->setData(
             [
-                'deviceName'        => 'SCH-R720',
-                'marketingName'     => 'Admire',
+                'deviceName'        => 'Lumia 640',
+                'marketingName'     => 'Lumia 640',
                 'version'           => null,
-                'manufacturer'      => (new Company\Samsung())->name,
-                'brand'             => (new Company\Samsung())->brandname,
+                'manufacturer'      => (new Company\Nokia())->name,
+                'brand'             => (new Company\Nokia())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 320,
-                'resolutionHeight'  => 480,
+                'resolutionWidth'   => 480,
+                'resolutionHeight'  => 854,
                 'dualOrientation'   => true,
-                'colors'            => 65536,
+                'colors'            => 16777216,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
@@ -82,39 +79,12 @@ class SamsungSch720 extends AbstractDevice implements DeviceHasSpecificPlatformI
     }
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains(['SAMSUNG-SCH-R720', 'SCH-R720'])) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\WindowsPhoneOs($this->useragent, []);
     }
 }

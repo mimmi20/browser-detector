@@ -35,10 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +43,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -79,60 +76,6 @@ class NokiaLumia extends AbstractDevice implements DeviceHasSpecificPlatformInte
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains('nokia; lumia', true)) {
-            return false;
-        }
-
-        $specialLumias = [
-            'nokia; lumia 520',
-            'nokia; lumia 610',
-            'nokia; lumia 620',
-            'nokia; lumia 630',
-            'nokia; lumia 635',
-            'nokia; lumia 710',
-            'nokia; lumia 720',
-            'nokia; lumia 730',
-            'nokia; lumia 800',
-            'nokia; lumia 820',
-            'nokia; lumia 900',
-            'nokia; lumia 920',
-            'nokia; lumia 925',
-            'nokia; lumia 928',
-            'nokia; lumia 930',
-            'nokia; lumia 1320',
-            'nokia; lumia 1520',
-        ];
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains($specialLumias, true)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**

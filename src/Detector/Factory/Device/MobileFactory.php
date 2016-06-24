@@ -280,19 +280,29 @@ class MobileFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/(HiPhone|V919)/i', $useragent)) {
-            $device = new HiPhone($useragent, []);
-        } elseif (preg_match('/(Technisat|TechniPad)/', $useragent)) {
-            $device = new Technisat($useragent, []);
-        } elseif (preg_match('/nokia/i', $useragent)) {
-            $device = new Nokia($useragent, []);
-        } elseif (preg_match('/(ipad|iphone|ipod|like mac os x)/i', $useragent)
+            return Mobile\HiPhoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/(Technisat|TechniPad)/', $useragent)) {
+            return Mobile\TechnisatFactory::detect($useragent);
+        }
+
+        if (preg_match('/(nokia|5130c\-2)/i', $useragent)) {
+            return Mobile\NokiaFactory::detect($useragent);
+        }
+
+        if (preg_match('/(ipad|iphone|ipod|like mac os x)/i', $useragent)
             && !preg_match('/windows phone/i', $useragent)
             && !preg_match('/ adr /i', $useragent)
         ) {
-            $device = new Apple($useragent, []);
-        } elseif (preg_match('/samsung/i', $useragent)) {
-            $device = new Samsung($useragent, []);
-        } elseif (preg_match('/asus/i', $useragent)) {
+            return Mobile\AppleFactory::detect($useragent);
+        }
+
+        if (preg_match('/samsung/i', $useragent)) {
+            return Mobile\SamsungFactory::detect($useragent);
+        }
+
+        if (preg_match('/asus/i', $useragent)) {
             $device = new Asus($useragent, []);
         } elseif (preg_match('/MT\-GT\-A9500/i', $useragent)) {
             $device = new Htm($useragent, []);
@@ -305,7 +315,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/GT\-9000/i', $useragent)) {
             $device = new Star($useragent, []);
         } elseif (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum)\-/i', $useragent)) {
-            $device = new Samsung($useragent, []);
+            return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/(HDC|Galaxy S3 EX)/i', $useragent)) {
             $device = new Hdc($useragent, []);
         } elseif (preg_match('/nexus (4|5)/i', $useragent)) {
@@ -317,7 +327,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/nexus one/i', $useragent)) {
             $device = new Htc($useragent, []);
         } elseif (preg_match('/(galaxy|nexus|i7110|i9100|i9300|yp\-g|blaze)/i', $useragent)) {
-            $device = new Samsung($useragent, []);
+            return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/sony/i', $useragent)) {
             $device = new SonyEricsson($useragent, []);
         } elseif (preg_match('/twinovo/i', $useragent)) {
@@ -770,13 +780,13 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(LOOX|UNO\_X10|Xelio 7|NEO\_QUAD10|IEOS\_QUAD|Sky Plus)/i', $useragent)) {
             $device = new Odys($useragent, []);
         } elseif (preg_match('/iPh\d\,\d/', $useragent)) {
-            $device = new Apple($useragent, []);
+            return Mobile\AppleFactory::detect($useragent);
         } elseif (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
-            $device = new Apple\Ipad($useragent, []);
+            return new Apple\Ipad($useragent, []);
         } elseif (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
-            $device = new Apple\Iphone($useragent, []);
+            return new Apple\Iphone($useragent, []);
         } elseif (preg_match('/dataaccessd/', $useragent)) {
-            $device = new Apple($useragent, []);
+            return Mobile\AppleFactory::detect($useragent);
         } elseif (preg_match('/Pre/', $useragent) && !preg_match('/Presto/', $useragent)) {
             $device = new Hp($useragent, []);
         } elseif (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501|N918St|Beeline Pro|ATLAS_W)/', $useragent)) {
@@ -892,7 +902,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/PI\d{4}/', $useragent)) {
             $device = new Philips($useragent, []);
         } elseif (preg_match('/SM \- /', $useragent)) {
-            $device = new Samsung($useragent, []);
+            return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/(SH05C|304SH)/', $useragent)) {
             $device = new Sharp($useragent, []);
         } elseif (preg_match('/SH\-\d{2}(D|F)/', $useragent)) {
@@ -954,7 +964,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/PMSmart450/', $useragent)) {
             $device = new Pmedia($useragent, []);
         } elseif (preg_match('/(F031|SCL24|ACE)/', $useragent)) {
-            $device = new Samsung($useragent, []);
+            return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/ImPAD/', $useragent)) {
             $device = new Impression($useragent, []);
         } elseif (preg_match('/K1 turbo/', $useragent)) {
@@ -992,7 +1002,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/GV7777/', $useragent)) {
             $device = new Prestigio($useragent, []);
         } elseif (preg_match('/ N1 /', $useragent)) {
-            $device = new Nokia($useragent, []);
+            return Mobile\NokiaFactory::detect($useragent);
         } elseif (preg_match('/N\d{4}/', $useragent)) {
             $device = new Star($useragent, []);
         } elseif (preg_match('/(Rio R1|GSmart\_T4)/', $useragent)) {
@@ -1074,7 +1084,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/x909/', $useragent)) {
             $device = new Oppo($useragent, []);
         } elseif (preg_match('/CFNetwork/', $useragent)) {
-            $device = new Apple($useragent, []);
+            return Mobile\AppleFactory::detect($useragent);
         } else {
             $device = new GeneralMobile($useragent, []);
         }

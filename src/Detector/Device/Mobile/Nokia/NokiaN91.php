@@ -29,16 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Nokia;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +43,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungB2100 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class NokiaN91 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -62,16 +59,16 @@ class SamsungB2100 extends AbstractDevice implements DeviceHasSpecificPlatformIn
 
         $this->setData(
             [
-                'deviceName'        => 'B2100',
-                'marketingName'     => 'B2100',
+                'deviceName'        => 'N91',
+                'marketingName'     => 'N91',
                 'version'           => null,
-                'manufacturer'      => (new Company\Samsung())->name,
-                'brand'             => (new Company\Samsung())->brandname,
+                'manufacturer'      => (new Company\Nokia())->name,
+                'brand'             => (new Company\Nokia())->brandname,
                 'formFactor'        => null,
-                'pointingMethod'    => null,
-                'resolutionWidth'   => 128,
-                'resolutionHeight'  => 160,
-                'dualOrientation'   => false,
+                'pointingMethod'    => 'joystick',
+                'resolutionWidth'   => 240,
+                'resolutionHeight'  => 320,
+                'dualOrientation'   => true,
                 'colors'            => 65536,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
@@ -82,39 +79,12 @@ class SamsungB2100 extends AbstractDevice implements DeviceHasSpecificPlatformIn
     }
 
     /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains(['SAMSUNG-B2100'])) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Java
+     * @return \BrowserDetector\Detector\Os\Symbianos
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent, []);
+        return new Os\Symbianos($this->useragent, []);
     }
 }
