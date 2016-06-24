@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (c) 2012-2015, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
+ * Copyright (c) 2012-2016, Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  * @category  BrowserDetector
  *
  * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  *
  * @link      https://github.com/mimmi20/BrowserDetector
@@ -265,7 +265,7 @@ use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 /**
  * @category  BrowserDetector
  *
- * @copyright 2012-2015 Thomas Mueller
+ * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
 class MobileFactory implements FactoryInterface
@@ -303,14 +303,22 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/asus/i', $useragent)) {
-            $device = new Asus($useragent, []);
-        } elseif (preg_match('/MT\-GT\-A9500/i', $useragent)) {
-            $device = new Htm($useragent, []);
-        } elseif (preg_match('/GT\-A7100/i', $useragent)) {
-            $device = new Sprd($useragent, []);
-        } elseif (preg_match('/(Feiteng|GT\-H)/i', $useragent)) {
-            $device = new Feiteng($useragent, []);
-        } elseif (preg_match('/(cube|U30GT|U51GT|U55GT)/i', $useragent)) {
+            return Mobile\AsusFactory::detect($useragent);
+        }
+
+        if (preg_match('/MT\-GT\-A9500/i', $useragent)) {
+            return Mobile\HtmFactory::detect($useragent);
+        }
+
+        if (preg_match('/GT\-A7100/i', $useragent)) {
+            return Mobile\SprdFactory::detect($useragent);
+        }
+
+        if (preg_match('/(Feiteng|GT\-H)/i', $useragent)) {
+            return Mobile\FeitengFactory::detect($useragent);
+        }
+
+        if (preg_match('/(cube|U30GT|U51GT|U55GT)/i', $useragent)) {
             $device = new Cube($useragent, []);
         } elseif (preg_match('/GT\-9000/i', $useragent)) {
             $device = new Star($useragent, []);
@@ -321,7 +329,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/nexus (4|5)/i', $useragent)) {
             $device = new Lg($useragent, []);
         } elseif (preg_match('/nexus 7/i', $useragent)) {
-            $device = new Asus($useragent, []);
+            return Mobile\AsusFactory::detect($useragent);
         } elseif (preg_match('/nexus 6/i', $useragent)) {
             $device = new Motorola($useragent, []);
         } elseif (preg_match('/nexus one/i', $useragent)) {
@@ -692,7 +700,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/a101it/i', $useragent)) {
             $device = new Archos($useragent, []);
         } elseif (preg_match('/(sprd|SPHS|B51\+)/i', $useragent)) {
-            $device = new Sprd($useragent, []);
+            return Mobile\SprdFactory::detect($useragent);
         } elseif (preg_match('/TAB A742/', $useragent)) {
             $device = new Wexler($useragent, []);
         } elseif (preg_match('/ a\d{3} /i', $useragent) && preg_match('/android 3\.2/i', $useragent)) {
@@ -792,11 +800,11 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501|N918St|Beeline Pro|ATLAS_W)/', $useragent)) {
             $device = new Zte($useragent, []);
         } elseif (preg_match('/ME\d{3}[A-Z]/', $useragent)) {
-            $device = new Asus($useragent, []);
+            return Mobile\AsusFactory::detect($useragent);
         } elseif (preg_match('/(PadFone|Transformer)/', $useragent)) {
-            $device = new Asus($useragent, []);
+            return Mobile\AsusFactory::detect($useragent);
         } elseif (preg_match('/K0(0|1)[0-9a-zA-Z]/', $useragent)) {
-            $device = new Asus($useragent, []);
+            return Mobile\AsusFactory::detect($useragent);
         } elseif (preg_match('/QtCarBrowser/', $useragent)) {
             $device = new Tesla($useragent, []);
         } elseif (preg_match('/MOT/', $useragent)) {
@@ -1080,7 +1088,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/AP\-105/', $useragent)) {
             $device = new Mitashi($useragent, []);
         } elseif (preg_match('/H7100/', $useragent)) {
-            $device = new Feiteng($useragent, []);
+            return Mobile\FeitengFactory::detect($useragent);
         } elseif (preg_match('/x909/', $useragent)) {
             $device = new Oppo($useragent, []);
         } elseif (preg_match('/CFNetwork/', $useragent)) {
