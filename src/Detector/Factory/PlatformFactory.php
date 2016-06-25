@@ -139,18 +139,18 @@ class PlatformFactory implements FactoryInterface
             return new Os\CellOs($agent);
         }
 
-        if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)
-            && false === stripos($agent, 'technipad')
-        ) {
-            return new Os\Ios($agent);
-        }
-
         if (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap browser)/i', $agent)) {
             return new Os\Java($agent);
         }
 
         if (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $agent)) {
             return new Os\AndroidOs($agent);
+        }
+
+        if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)
+            && false === stripos($agent, 'technipad')
+        ) {
+            return new Os\Ios($agent);
         }
 
         if (preg_match('/(profile)/i', $agent)) {

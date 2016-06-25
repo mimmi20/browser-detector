@@ -111,10 +111,10 @@ class SamsungSmT230nu extends AbstractDevice implements DeviceHasSpecificPlatfor
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent, []);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

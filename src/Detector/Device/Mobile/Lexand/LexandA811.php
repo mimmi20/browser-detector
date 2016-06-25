@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Device\Mobile\Lexand;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -46,7 +46,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcT328w extends AbstractDevice implements MatcherHasWeightInterface, MatcherCanHandleInterface
+class LexandA811 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
@@ -62,11 +62,11 @@ class HtcT328w extends AbstractDevice implements MatcherHasWeightInterface, Matc
 
         $this->setData(
             [
-                'deviceName'        => 'T328w',
-                'marketingName'     => 'Desire V',
+                'deviceName'        => 'A811',
+                'marketingName'     => 'A811',
                 'version'           => null,
-                'manufacturer'      => (new Company\Htc())->name,
-                'brand'             => (new Company\Htc())->brandname,
+                'manufacturer'      => (new Company\Lexand())->name,
+                'brand'             => (new Company\Lexand())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -76,7 +76,7 @@ class HtcT328w extends AbstractDevice implements MatcherHasWeightInterface, Matc
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
     }
@@ -91,7 +91,7 @@ class HtcT328w extends AbstractDevice implements MatcherHasWeightInterface, Matc
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
-        if (!$utils->checkIfContains('T328w')) {
+        if (!$utils->checkIfContains('A811')) {
             return false;
         }
 
@@ -106,5 +106,15 @@ class HtcT328w extends AbstractDevice implements MatcherHasWeightInterface, Matc
     public function getWeight()
     {
         return 3;
+    }
+
+    /**
+     * returns the OS Handler
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

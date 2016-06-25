@@ -111,10 +111,10 @@ class AdventP10an01 extends AbstractDevice implements DeviceHasSpecificPlatformI
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Java
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent, []);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

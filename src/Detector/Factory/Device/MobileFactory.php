@@ -1031,7 +1031,7 @@ class MobileFactory implements FactoryInterface
             $device = new Axgio($useragent, []);
         } elseif (preg_match('/T118/', $useragent)) {
             $device = new Twinovo($useragent, []);
-        } elseif (preg_match('/A1002/', $useragent)) {
+        } elseif (preg_match('/(A1002|A811)/', $useragent)) {
             $device = new Lexand($useragent, []);
         } elseif (preg_match('/ A10/', $useragent)) {
             $device = new AllWinner($useragent, []);
