@@ -319,14 +319,18 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(cube|U30GT|U51GT|U55GT)/i', $useragent)) {
-            $device = new Cube($useragent, []);
-        } elseif (preg_match('/GT\-9000/i', $useragent)) {
-            $device = new Star($useragent, []);
-        } elseif (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum)\-/i', $useragent)) {
+            return Mobile\CubeFactory::detect($useragent);
+        }
+
+        if (preg_match('/(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum)\-/i', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
-        } elseif (preg_match('/(HDC|Galaxy S3 EX)/i', $useragent)) {
-            $device = new Hdc($useragent, []);
-        } elseif (preg_match('/nexus (4|5)/i', $useragent)) {
+        }
+
+        if (preg_match('/(hdc|galaxy s3 ex)/i', $useragent)) {
+            return Mobile\HdcFactory::detect($useragent);
+        }
+
+        if (preg_match('/nexus (4|5)/i', $useragent)) {
             $device = new Lg($useragent, []);
         } elseif (preg_match('/nexus 7/i', $useragent)) {
             return Mobile\AsusFactory::detect($useragent);
@@ -556,7 +560,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Sprint/', $useragent)) {
             $device = new Sprint($useragent, []);
         } elseif (preg_match('/Star/', $useragent) && !preg_match('/Aqua\_Star/', $useragent)) {
-            $device = new Star($useragent, []);
+            return Mobile\StarFactory::detect($useragent);
         } elseif (preg_match('/texet/i', $useragent)) {
             $device = new Texet($useragent, []);
         } elseif (preg_match('/condor/i', $useragent)) {
@@ -1012,7 +1016,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ N1 /', $useragent)) {
             return Mobile\NokiaFactory::detect($useragent);
         } elseif (preg_match('/N\d{4}/', $useragent)) {
-            $device = new Star($useragent, []);
+            return Mobile\StarFactory::detect($useragent);
         } elseif (preg_match('/(Rio R1|GSmart\_T4)/', $useragent)) {
             $device = new Gigabyte($useragent, []);
         } elseif (preg_match('/7007HD/', $useragent)) {
