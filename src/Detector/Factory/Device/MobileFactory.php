@@ -390,6 +390,8 @@ class MobileFactory implements FactoryInterface
             $device = new EinsUndEins($useragent, []);
         } elseif (preg_match('/p7901a/i', $useragent)) {
             $device = new Epad($useragent, []);
+        } elseif (preg_match('/p7mini/i', $useragent)) {
+            $device = new Huawei($useragent, []);
         } elseif (preg_match('/FaktorZwei/i', $useragent)) {
             $device = new FaktorZwei($useragent, []);
         } elseif (preg_match('/Flytouch/i', $useragent)) {
@@ -891,7 +893,9 @@ class MobileFactory implements FactoryInterface
             $device = new Philips($useragent, []);
         } elseif (preg_match('/SM \- /', $useragent)) {
             $device = new Samsung($useragent, []);
-        } elseif (preg_match('/(SH05C|304SH|SH\-01F)/', $useragent)) {
+        } elseif (preg_match('/(SH05C|304SH)/', $useragent)) {
+            $device = new Sharp($useragent, []);
+        } elseif (preg_match('/SH\-\d{2}(D|F)/', $useragent)) {
             $device = new Sharp($useragent, []);
         } elseif (preg_match('/SAMURAI10/', $useragent)) {
             $device = new Shiru($useragent, []);

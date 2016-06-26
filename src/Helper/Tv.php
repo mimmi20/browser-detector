@@ -77,6 +77,11 @@ class Tv
             'espial',
             'aquosbrowser',
             'gxt_dongle_3188',
+            'lf1v307',
+            'lf1v325',
+            'lf1v373',
+            'lf1v394',
+            'lf1v401',
         ];
 
         if (!$this->utils->checkIfContains($tvDevices, true)) {

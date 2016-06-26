@@ -111,7 +111,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\MeeGo($agent);
         }
 
-        if (preg_match('/(maemo|like android|linux\/x2\/r1)/i', $agent)) {
+        if (preg_match('/(maemo|like android|linux\/x2\/r1|linux armv)/i', $agent)) {
             return new Os\Maemo($agent);
         }
 
@@ -162,7 +162,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if (preg_match('/(Macintosh|Mac_PowerPC|PPC|68K)/', $agent)
-            && !$utils->checkIfContains('Mac OS X')
+            && !$utils->checkIfContains('OS X')
         ) {
             return new Os\MacintoshOs($agent);
         }

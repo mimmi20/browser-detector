@@ -209,6 +209,11 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Android',
                 '4.2.0',
             ],
+            [
+                'Opera/9.80 (Linux armv7l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/THOM;SW-Version/V8-MT51F01-LF1V307;Cnt/DEU;Lan/bul) Presto/2.12.362 Version/12.11',
+                'Linux Smartphone OS (Maemo)',
+                '0.0.0',
+            ],
         ];
     }
 }
