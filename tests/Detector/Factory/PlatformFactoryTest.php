@@ -171,7 +171,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'ASTRO36_TD/v3 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10',
-                'Java',
+                'Android',
                 '0.0.0',
             ],
             [
@@ -191,7 +191,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Lynx/2.8.5rel.1 libwww-FM/2.15FC SSL-MM/1.4.1c OpenSSL/0.9.7e-dev',
-                'Java',
+                'Linux',
                 '0.0.0',
             ],
             [

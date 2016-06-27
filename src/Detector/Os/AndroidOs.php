@@ -75,6 +75,7 @@ class AndroidOs extends AbstractOs
             'Linux; GoogleTV',
             'Android OS',
             'Android',
+            'Adr ',
         ];
 
         $detector = VersionFactory::detectVersion($this->useragent, $searches);

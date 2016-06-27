@@ -139,7 +139,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\CellOs($agent);
         }
 
-        if (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap browser)/i', $agent)) {
+        if (preg_match('/(micromaxx650|dolfin\/|yuanda50|wap[ \-]browser)/i', $agent)) {
             return new Os\Java($agent);
         }
 
@@ -315,7 +315,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Os2($agent);
         }
 
-        if ($utils->checkIfContains(['nettv', 'hbbtv', 'smart-tv', 'linux', 'x11', 'dillo', 'installatron'], true)) {
+        if ($utils->checkIfContains(['nettv', 'hbbtv', 'smart-tv', 'linux', 'x11', 'dillo', 'installatron', 'lynx'], true)) {
             return new Os\Linux($agent);
         }
 
