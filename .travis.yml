@@ -10,6 +10,11 @@ php:
 os:
   - linux
 
+cache:
+  directories:
+    - $TRAVIS_BUILD_DIR/vendor
+  timeout: 120
+
 env:
   - PREFER_LOWEST="--prefer-lowest"
   - PREFER_LOWEST=""

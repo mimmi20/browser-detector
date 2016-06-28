@@ -331,10 +331,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/nexus (4|5)/i', $useragent)) {
-            $device = new Lg($useragent, []);
-        } elseif (preg_match('/nexus 7/i', $useragent)) {
+            return Mobile\LgFactory::detect($useragent);
+        }
+
+        if (preg_match('/nexus 7/i', $useragent)) {
             return Mobile\AsusFactory::detect($useragent);
-        } elseif (preg_match('/nexus 6/i', $useragent)) {
+        }
+
+        if (preg_match('/nexus 6/i', $useragent)) {
             $device = new Motorola($useragent, []);
         } elseif (preg_match('/nexus one/i', $useragent)) {
             $device = new Htc($useragent, []);
@@ -345,7 +349,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/twinovo/i', $useragent)) {
             $device = new Twinovo($useragent, []);
         } elseif (preg_match('/LG/', $useragent)) {
-            $device = new Lg($useragent, []);
+            return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/htc/i', $useragent) && !preg_match('/WOHTC/', $useragent)) {
             $device = new Htc($useragent, []);
         } elseif (preg_match('/(SmartTab7|Smart 4G)/', $useragent)) {
@@ -840,7 +844,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/xperia/i', $useragent)) {
             $device = new SonyEricsson($useragent, []);
         } elseif (preg_match('/VS\d{3}/', $useragent)) {
-            $device = new Lg($useragent, []);
+            return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/(SurfTab|VT10416|breeze 10\.1 quad)/', $useragent)) {
             $device = new TrekStor($useragent, []);
         } elseif (preg_match('/AT\d{2,3}/', $useragent)) {
@@ -958,7 +962,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/TM\-\d{4}/', $useragent)) {
             $device = new Texet($useragent, []);
         } elseif (preg_match('/ G3 /', $useragent)) {
-            $device = new Lg($useragent, []);
+            return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/(Zera_F|Boost IIse|Ice2|Prime S|Explosion)/', $useragent)) {
             $device = new Highscreen($useragent, []);
         } elseif (preg_match('/iris708/', $useragent)) {
