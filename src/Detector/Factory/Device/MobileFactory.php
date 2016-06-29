@@ -339,8 +339,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/nexus 6/i', $useragent)) {
-            $device = new Motorola($useragent, []);
-        } elseif (preg_match('/nexus one/i', $useragent)) {
+            return Mobile\MotorolaFactory::detect($useragent);
+        }
+
+        if (preg_match('/nexus one/i', $useragent)) {
             $device = new Htc($useragent, []);
         } elseif (preg_match('/(galaxy|nexus|i7110|i9100|i9300|yp\-g|blaze)/i', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
@@ -526,7 +528,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/cynus/i', $useragent)) {
             $device = new Mobistel($useragent, []);
         } elseif (preg_match('/motorola/i', $useragent)) {
-            $device = new Motorola($useragent, []);
+            return Mobile\MotorolaFactory::detect($useragent);
         } elseif (preg_match('/WeTab/', $useragent)) {
             $device = new Neofonie($useragent, []);
         } elseif (preg_match('/Nextbook/', $useragent)) {
@@ -816,9 +818,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/QtCarBrowser/', $useragent)) {
             $device = new Tesla($useragent, []);
         } elseif (preg_match('/MOT/', $useragent)) {
-            $device = new Motorola($useragent, []);
+            return Mobile\MotorolaFactory::detect($useragent);
         } elseif (preg_match('/MB\d{3}/', $useragent)) {
-            $device = new Motorola($useragent, []);
+            return Mobile\MotorolaFactory::detect($useragent);
         } elseif (preg_match('/smart tab/i', $useragent)) {
             $device = new Lenovo($useragent, []);
         } elseif (preg_match('/one (s|x)/i', $useragent) && !preg_match('/vodafone smart/i', $useragent)) {
@@ -860,9 +862,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/NEXT/', $useragent)) {
             $device = new Nextbook($useragent, []);
         } elseif (preg_match('/XT\d{3,4}/', $useragent)) {
-            $device = new Motorola($useragent, []);
+            return Mobile\MotorolaFactory::detect($useragent);
         } elseif (preg_match('/( droid)/i', $useragent)) {
-            $device = new Motorola($useragent, []);
+            return Mobile\MotorolaFactory::detect($useragent);
         } elseif (preg_match('/MT6572\_TD/', $useragent)) {
             $device = new Cubot($useragent, []);
         } elseif (preg_match('/(S|L|W|M)T\d{2}/', $useragent)) {
