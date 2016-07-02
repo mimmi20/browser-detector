@@ -28,7 +28,7 @@ use WurflCache\Adapter\NullStorage;
  *
  * @category   CompareTest
  *
- * @author     James Titcumb <james@asgrim.com>
+ * @author     Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @group      useragenttest
  */
 class UserAgentsTest extends \PHPUnit_Framework_TestCase
@@ -71,12 +71,9 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
      */
     public function userAgentDataProvider()
     {
-        static $data = [];
+        echo 'start provider', PHP_EOL;
 
-        if (count($data)) {
-            return $data;
-        }
-
+        $data            = [];
         $checks          = [];
         $sourceDirectory = 'tests/issues/';
 
@@ -114,6 +111,8 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
             }
         }
 
+        echo 'finish provider', PHP_EOL;
+
         return $data;
     }
 
@@ -130,6 +129,8 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
      */
     public function testUserAgents($userAgent, $expectedProperties)
     {
+        echo 'start test for', $userAgent, PHP_EOL;
+
         if (!is_array($expectedProperties) || !count($expectedProperties)) {
             self::markTestSkipped('Could not run test - no properties were defined to test');
         }
