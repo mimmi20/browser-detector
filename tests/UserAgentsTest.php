@@ -129,8 +129,6 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
      */
     public function testUserAgents($userAgent, $expectedProperties)
     {
-        echo 'start test for', $userAgent, PHP_EOL;
-
         if (!is_array($expectedProperties) || !count($expectedProperties)) {
             self::markTestSkipped('Could not run test - no properties were defined to test');
         }
