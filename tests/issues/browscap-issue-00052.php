@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'www.waterfoxproject.org',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '26.0',
-            'Platform_Name'           => 'WinNT',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => 'NT.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',
