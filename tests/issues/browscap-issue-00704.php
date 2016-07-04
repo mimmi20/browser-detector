@@ -35,7 +35,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '3.2',
             'Platform_Name'           => 'Android',
-            'Platform_Version'        => '5.0',
+            'Platform_Version'        => '5.0.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'Galaxy Tab 4 10.1 WiFi',

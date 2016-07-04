@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '10.3',
             'Platform_Name'           => 'RIM OS',
-            'Platform_Version'        => '10.3',
+            'Platform_Version'        => '10.3.1.2243',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Research In Motion Limited',
             'Device_Name'             => 'Z10',

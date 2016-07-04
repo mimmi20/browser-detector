@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '6.0',
             'Platform_Name'           => 'WinCE',
-            'Platform_Version'        => 'unknown',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'general Mobile Phone',

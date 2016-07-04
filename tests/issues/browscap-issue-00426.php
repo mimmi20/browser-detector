@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.1',
             'Platform_Name'           => 'iOS',
-            'Platform_Version'        => '7.1',
+            'Platform_Version'        => '7.1.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',
             'Device_Name'             => 'iPhone',

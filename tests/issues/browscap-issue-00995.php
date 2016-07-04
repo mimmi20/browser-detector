@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'IE 7.0 Compatibility Mode',
             'Browser_Version'         => '11.0',
             'Platform_Name'           => 'Win10',
-            'Platform_Version'        => '10.0',
+            'Platform_Version'        => '10.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'Windows Desktop',

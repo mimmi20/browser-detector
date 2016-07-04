@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '11.0',
             'Platform_Name'           => 'WinPhone8.1',
-            'Platform_Version'        => '8.1',
+            'Platform_Version'        => '8.1.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'Lumia 730',

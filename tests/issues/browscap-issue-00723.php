@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '1.0',
             'Platform_Name'           => 'Ubuntu',
-            'Platform_Version'        => '14.04',
+            'Platform_Version'        => '14.04.2',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Canonical Foundation',
             'Device_Name'             => 'Linux Desktop',

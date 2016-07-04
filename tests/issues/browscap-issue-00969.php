@@ -11,7 +11,7 @@ return [
             'Browser_Modus'           => 'IEMobile 10.0 Compatibility Mode',
             'Browser_Version'         => '11.0',
             'Platform_Name'           => 'WinPhone8',
-            'Platform_Version'        => '8.0',
+            'Platform_Version'        => '8.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'Lumia 920',

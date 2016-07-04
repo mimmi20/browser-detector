@@ -35,7 +35,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.8',
             'Platform_Name'           => 'Linux',
-            'Platform_Version'        => 'unknown',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Linux Foundation',
             'Device_Name'             => 'general Desktop',
