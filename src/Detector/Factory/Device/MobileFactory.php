@@ -342,9 +342,15 @@ class MobileFactory implements FactoryInterface
             return Mobile\MotorolaFactory::detect($useragent);
         }
 
-        if (preg_match('/nexus one/i', $useragent)) {
-            $device = new Htc($useragent, []);
-        } elseif (preg_match('/(galaxy|nexus|i7110|i9100|i9300|yp\-g|blaze)/i', $useragent)) {
+        if (preg_match('/nexus (one|9)/i', $useragent)) {
+            return Mobile\HtcFactory::detect($useragent);
+        }
+
+        if (preg_match('/nexus(hd2| evohd2)/i', $useragent)) {
+            return Mobile\HtcFactory::detect($useragent);
+        }
+
+        if (preg_match('/(galaxy|nexus|i7110|i9100|i9300|yp\-g|blaze)/i', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/sony/i', $useragent)) {
             $device = new SonyEricsson($useragent, []);
@@ -353,7 +359,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/LG/', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/htc/i', $useragent) && !preg_match('/WOHTC/', $useragent)) {
-            $device = new Htc($useragent, []);
+            return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/(SmartTab7|Smart 4G)/', $useragent)) {
             $device = new Zte($useragent, []);
         } elseif (preg_match('/(lenovo|ideatab|ideapad|smarttab)/i', $useragent)) {
@@ -706,7 +712,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ (a1|a3|b1)\-/i', $useragent)) {
             $device = new Acer($useragent, []);
         } elseif (preg_match('/wildfire/i', $useragent)) {
-            $device = new Htc($useragent, []);
+            return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/a101it/i', $useragent)) {
             $device = new Archos($useragent, []);
         } elseif (preg_match('/(sprd|SPHS|B51\+)/i', $useragent)) {
@@ -824,7 +830,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/smart tab/i', $useragent)) {
             $device = new Lenovo($useragent, []);
         } elseif (preg_match('/one (s|x)/i', $useragent) && !preg_match('/vodafone smart/i', $useragent)) {
-            $device = new Htc($useragent, []);
+            return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/Tablet\-PC\-4/', $useragent)) {
             $device = new CatSound($useragent, []);
         } elseif (preg_match('/TBD\d{4}/', $useragent)) {
@@ -854,9 +860,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(PAP|PMP|PMT)/', $useragent)) {
             $device = new Prestigio($useragent, []);
         } elseif (preg_match('/(APA9292KT|PJ83100|831C|Evo 3D GSM|Eris 2\.1)/', $useragent)) {
-            $device = new Htc($useragent, []);
+            return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/adr\d{4}/i', $useragent)) {
-            $device = new Htc($useragent, []);
+            return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/Aqua\_Star/', $useragent)) {
             $device = new Intex($useragent, []);
         } elseif (preg_match('/NEXT/', $useragent)) {
@@ -1050,7 +1056,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/vega/i', $useragent)) {
             $device = new Advent($useragent, []);
         } elseif (preg_match('/dream/i', $useragent)) {
-            $device = new Htc($useragent, []);
+            return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/F10X/', $useragent)) {
             $device = new Nextway($useragent, []);
         } elseif (preg_match('/ M8 /', $useragent)) {

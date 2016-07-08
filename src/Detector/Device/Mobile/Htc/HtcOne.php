@@ -35,10 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +43,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcOne extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class HtcOne extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -79,52 +76,6 @@ class HtcOne extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains(['HTC One', 'HTC_One', 'HTC/One'])) {
-            return false;
-        }
-
-        $specialOne = [
-            'HTC_One_',
-            'HTC/One_',
-            'HTC_OneX',
-            'HTC_OneS',
-            'HTC One X',
-            'HTC One S',
-            'HTC One V',
-            'HTC One mini',
-            'HTC One_M8',
-        ];
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains($specialOne)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**

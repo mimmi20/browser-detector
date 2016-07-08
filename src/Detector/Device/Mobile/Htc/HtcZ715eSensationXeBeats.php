@@ -35,10 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +43,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -79,46 +76,6 @@ class HtcZ715eSensationXeBeats extends AbstractDevice implements DeviceHasSpecif
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $phones = [
-            'HTC Sensation XE',
-            'HTC_SensationXE',
-            'HTC Sensation XE Beats',
-            'HTC_SensationXE_Beats',
-            'HTC Sensation XE with Beats',
-            'HTC Sensation XE Beats Z715e',
-            'HTC_SensationXE_Beats_Z715e',
-            'HTC Sensation XE with Beats Audio Z715e',
-            'HTC Sensation XE with Beats Audio',
-            'SensationXE_Beats_Z715e',
-        ];
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains($phones)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**
