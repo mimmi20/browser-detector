@@ -167,8 +167,8 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesireS($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/WildfireS\-orange\-LS|WildfireS\-LS/i', $useragent)) {
+            return new Htc\HtcWildfireSLs($useragent, []);
         }
 
         if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
