@@ -171,12 +171,12 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcWildfireSLs($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/ a315c /i', $useragent)) {
+            return new Htc\HtcA315c($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Wildfire\_A3333/i', $useragent)) {
+            return new Htc\HtcA3333($useragent, []);
         }
 
         if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
