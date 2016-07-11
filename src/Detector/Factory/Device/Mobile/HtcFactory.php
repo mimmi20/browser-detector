@@ -179,80 +179,80 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcA3333($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/(Wildfire S A510e|WildfireS_A510e)/i', $useragent)) {
+            return new Htc\HtcA510e($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/ADR6230/i', $useragent)) {
+            return new Htc\HtcAdr6230($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Wildfire[ |]S/i', $useragent)) {
+            return new Htc\HtcA510($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Wildfire/i', $useragent)) {
+            return new Htc\HtcWildfire($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Vision/i', $useragent)) {
+            return new Htc\HtcVision($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Velocity 4G/i', $useragent)) {
+            return new Htc\HtcVelocity4G($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Velocity/i', $useragent)) {
+            return new Htc\HtcVelocity($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Touch\_HD\_T8282/i', $useragent)) {
+            return new Htc\HtcTouchHdT8282($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Touch\_Diamond2/i', $useragent)) {
+            return new Htc\HtcTouchDiamond2($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/titan/i', $useragent)) {
+            return new Htc\HtcTitan($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/tattoo/i', $useragent)) {
+            return new Htc\HtcTattoo($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/(HD7|Mondrian)/i', $useragent)) {
+            return new Htc\HtcT9292($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/7 Mozart/i', $useragent)) {
+            return new Htc\HtcT8698($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/T8282/i', $useragent)) {
+            return new Htc\HtcT8282($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/7 Pro T7576/i', $useragent)) {
+            return new Htc\HtcT7576($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Touch\_Pro2\_T7373/i', $useragent)) {
+            return new Htc\HtcT7373($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/Touch2/i', $useragent)) {
+            return new Htc\HtcT3335($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/T328w/i', $useragent)) {
+            return new Htc\HtcT328w($useragent, []);
         }
 
-        if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
-            return new Htc\GalaxyNexusOne($useragent, []);
+        if (preg_match('/(7 Trophy|mwp6985)/i', $useragent)) {
+            return new Htc\HtcSpark($useragent, []);
         }
 
         if (preg_match('/(Nexus[ |\-]One|NexusOne)/i', $useragent)) {
