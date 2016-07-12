@@ -352,7 +352,9 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/(galaxy|nexus|i7110|i9100|i9300|yp\-g|blaze)/i', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
-        } elseif (preg_match('/sony/i', $useragent)) {
+        }
+
+        if (preg_match('/sony/i', $useragent)) {
             $device = new SonyEricsson($useragent, []);
         } elseif (preg_match('/twinovo/i', $useragent)) {
             $device = new Twinovo($useragent, []);
