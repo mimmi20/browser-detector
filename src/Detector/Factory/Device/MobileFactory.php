@@ -357,7 +357,7 @@ class MobileFactory implements FactoryInterface
         if (preg_match('/sony/i', $useragent)) {
             $device = new SonyEricsson($useragent, []);
         } elseif (preg_match('/twinovo/i', $useragent)) {
-            $device = new Twinovo($useragent, []);
+            return Mobile\TwinovoFactory::detect($useragent);
         } elseif (preg_match('/LG/', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/htc/i', $useragent) && !preg_match('/WOHTC/', $useragent)) {
