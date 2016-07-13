@@ -31,10 +31,8 @@
 
 namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use UaDeviceType;
 
 /**
@@ -43,7 +41,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractDevice implements DeviceHasChildrenInterface
+class SonyEricsson extends AbstractDevice
 {
     /**
      * the class constructor
@@ -76,23 +74,5 @@ class SonyEricsson extends AbstractDevice implements DeviceHasChildrenInterface
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\SonyEricsson');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'SonyEricsson' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 }

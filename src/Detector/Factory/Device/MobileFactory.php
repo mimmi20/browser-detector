@@ -355,21 +355,29 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/sony/i', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
-        } elseif (preg_match('/twinovo/i', $useragent)) {
+            return Mobile\SonyFactory::detect($useragent);
+        }
+
+        if (preg_match('/twinovo/i', $useragent)) {
             return Mobile\TwinovoFactory::detect($useragent);
-        } elseif (preg_match('/LG/', $useragent)) {
+        }
+
+        if (preg_match('/LG/', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
-        } elseif (preg_match('/htc/i', $useragent) && !preg_match('/WOHTC/', $useragent)) {
+        }
+
+        if (preg_match('/htc/i', $useragent) && !preg_match('/WOHTC/', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
-        } elseif (preg_match('/(SmartTab7|Smart 4G)/', $useragent)) {
+        }
+
+        if (preg_match('/(SmartTab7|Smart 4G)/', $useragent)) {
             $device = new Zte($useragent, []);
         } elseif (preg_match('/(lenovo|ideatab|ideapad|smarttab)/i', $useragent)) {
             $device = new Lenovo($useragent, []);
         } elseif (preg_match('/(acer|iconia|liquid)/i', $useragent)) {
             $device = new Acer($useragent, []);
         } elseif (preg_match('/PLAYSTATION/i', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/(amazon|kindle|silk|KFTT|KFOT|KFJWI|KFSOWI|KFTHWI|SD4930UR)/i', $useragent)) {
             $device = new Amazon($useragent, []);
         } elseif (preg_match('/amoi/i', $useragent)) {
@@ -846,13 +854,13 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(A10100|C07000)/', $useragent)) {
             $device = new Nomi($useragent, []);
         } elseif (preg_match('/(C|D)\d{4}/', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/SGP\d{3}/', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/sgpt\d{2}/i', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/xperia/i', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/VS\d{3}/', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/(SurfTab|VT10416|breeze 10\.1 quad)/', $useragent)) {
@@ -876,11 +884,11 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/MT6572\_TD/', $useragent)) {
             $device = new Cubot($useragent, []);
         } elseif (preg_match('/(S|L|W|M)T\d{2}/', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/SK\d{2}/', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/(SO-03E|SO-02D)/', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/VIVO/', $useragent)) {
             $device = new Blu($useragent, []);
         } elseif (preg_match('/NOOK/', $useragent)) {
@@ -938,7 +946,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Ignis 8/', $useragent)) {
             $device = new TbTouch($useragent, []);
         } elseif (preg_match('/A5000/', $useragent)) {
-            $device = new SonyEricsson($useragent, []);
+            return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/FUNC/', $useragent)) {
             $device = new Dfunc($useragent, []);
         } elseif (preg_match('/iD(j|n|s|x)D\d/', $useragent)) {

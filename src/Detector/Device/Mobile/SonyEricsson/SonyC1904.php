@@ -46,7 +46,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyC1904 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class SonyC1904 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -79,40 +79,6 @@ class SonyC1904 extends AbstractDevice implements DeviceHasSpecificPlatformInter
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains('C1904')) {
-            return false;
-        }
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains('C1904v')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**
