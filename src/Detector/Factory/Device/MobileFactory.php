@@ -371,18 +371,20 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(SmartTab7|Smart 4G)/', $useragent)) {
-            $device = new Zte($useragent, []);
-        } elseif (preg_match('/(lenovo|ideatab|ideapad|smarttab)/i', $useragent)) {
+            return Mobile\ZteFactory::detect($useragent);
+        }
+
+        if (preg_match('/(lenovo|ideatab|ideapad|smarttab)/i', $useragent)) {
             $device = new Lenovo($useragent, []);
         } elseif (preg_match('/(acer|iconia|liquid)/i', $useragent)) {
             $device = new Acer($useragent, []);
-        } elseif (preg_match('/PLAYSTATION/i', $useragent)) {
+        } elseif (preg_match('/playstation/i', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
-        } elseif (preg_match('/(amazon|kindle|silk|KFTT|KFOT|KFJWI|KFSOWI|KFTHWI|SD4930UR)/i', $useragent)) {
+        } elseif (preg_match('/(amazon|kindle|silk|kftt|kfot|kfjwi|kfsowi|kfthwi|sd4930ur)/i', $useragent)) {
             $device = new Amazon($useragent, []);
         } elseif (preg_match('/amoi/i', $useragent)) {
             $device = new Amoi($useragent, []);
-        } elseif (preg_match('/(Blaupunkt|Endeavour)/i', $useragent)) {
+        } elseif (preg_match('/(blaupunkt|endeavour)/i', $useragent)) {
             $device = new Blaupunkt($useragent, []);
         } elseif (preg_match('/ONDA/', $useragent)) {
             $device = new Onda($useragent, []);
@@ -642,7 +644,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Zenithink/i', $useragent)) {
             $device = new Zenithink($useragent, []);
         } elseif (preg_match('/zte/i', $useragent)) {
-            $device = new Zte($useragent, []);
+            return Mobile\ZteFactory::detect($useragent);
         } elseif (preg_match('/Fly/', $useragent) && !preg_match('/FlyFlow/', $useragent)) {
             $device = new Fly($useragent, []);
         } elseif (preg_match('/PocketBook/', $useragent)) {
@@ -824,7 +826,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Pre/', $useragent) && !preg_match('/Presto/', $useragent)) {
             $device = new Hp($useragent, []);
         } elseif (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501|N918St|Beeline Pro|ATLAS_W)/', $useragent)) {
-            $device = new Zte($useragent, []);
+            return Mobile\ZteFactory::detect($useragent);
         } elseif (preg_match('/ME\d{3}[A-Z]/', $useragent)) {
             return Mobile\AsusFactory::detect($useragent);
         } elseif (preg_match('/(PadFone|Transformer)/', $useragent)) {
