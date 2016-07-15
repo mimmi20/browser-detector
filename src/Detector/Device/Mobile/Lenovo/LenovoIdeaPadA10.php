@@ -78,7 +78,7 @@ class LenovoIdeaPadA10 extends AbstractDevice implements DeviceHasSpecificPlatfo
         );
     }
 
-    **
+    /**
      * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
