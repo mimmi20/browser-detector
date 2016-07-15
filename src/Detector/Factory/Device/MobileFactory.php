@@ -379,10 +379,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(acer|iconia|liquid)/i', $useragent)) {
-            $device = new Acer($useragent, []);
-        } elseif (preg_match('/playstation/i', $useragent)) {
+            return Mobile\AcerFactory::detect($useragent);
+        }
+
+        if (preg_match('/playstation/i', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
-        } elseif (preg_match('/(amazon|kindle|silk|kftt|kfot|kfjwi|kfsowi|kfthwi|sd4930ur)/i', $useragent)) {
+        }
+
+        if (preg_match('/(amazon|kindle|silk|kftt|kfot|kfjwi|kfsowi|kfthwi|sd4930ur)/i', $useragent)) {
             $device = new Amazon($useragent, []);
         } elseif (preg_match('/amoi/i', $useragent)) {
             $device = new Amoi($useragent, []);
@@ -449,7 +453,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/SN10T1/i', $useragent)) {
             $device = new Hannspree($useragent, []);
         } elseif (preg_match('/DA241HL/', $useragent)) {
-            $device = new Acer($useragent, []);
+            return Mobile\AcerFactory::detect($useragent);
         } elseif (preg_match('/(Honlin|PC1088|HL)/', $useragent)) {
             $device = new Honlin($useragent, []);
         } elseif (preg_match('/Huawei/i', $useragent)) {
@@ -722,9 +726,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ MT791 /i', $useragent)) {
             $device = new KeenHigh($useragent, []);
         } elseif (preg_match('/(g100w|stream\-s110)/i', $useragent)) {
-            $device = new Acer($useragent, []);
+            return Mobile\AcerFactory::detect($useragent);
         } elseif (preg_match('/ (a1|a3|b1)\-/i', $useragent)) {
-            $device = new Acer($useragent, []);
+            return Mobile\AcerFactory::detect($useragent);
         } elseif (preg_match('/wildfire/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/a101it/i', $useragent)) {
@@ -736,7 +740,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ a\d{3} /i', $useragent) && preg_match('/android 3\.2/i', $useragent)) {
             $device = new Micromax($useragent, []);
         } elseif (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
-            $device = new Acer($useragent, []);
+            return Mobile\AcerFactory::detect($useragent);
         } elseif (preg_match('/AT\-AS40SE/', $useragent)) {
             $device = new Wolgang($useragent, []);
         } elseif (preg_match('/(United|MT6515M)/', $useragent)) {
