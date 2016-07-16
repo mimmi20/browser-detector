@@ -387,8 +387,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(amazon|kindle|silk|kftt|kfot|kfjwi|kfsowi|kfthwi|sd4930ur)/i', $useragent)) {
-            $device = new Amazon($useragent, []);
-        } elseif (preg_match('/amoi/i', $useragent)) {
+            return Mobile\AmazonFactory::detect($useragent);
+        }
+
+        if (preg_match('/amoi/i', $useragent)) {
             $device = new Amoi($useragent, []);
         } elseif (preg_match('/(blaupunkt|endeavour)/i', $useragent)) {
             $device = new Blaupunkt($useragent, []);
