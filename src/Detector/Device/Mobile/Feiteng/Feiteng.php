@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Feiteng;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Amazon extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Feiteng extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,11 +59,11 @@ class Amazon extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
 
         $this->setData(
             [
-                'deviceName'        => 'general Amazon Device',
-                'marketingName'     => 'general Amazon Device',
+                'deviceName'        => 'general Feiteng Device',
+                'marketingName'     => 'general Feiteng Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Amazon())->name,
-                'brand'             => (new Company\Amazon())->brandname,
+                'manufacturer'      => (new Company\Feiteng())->name,
+                'brand'             => (new Company\Feiteng())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,

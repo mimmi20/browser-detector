@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Cube;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType\Tablet;
+use UaDeviceType;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +43,7 @@ use UaDeviceType\Tablet;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HiPhone extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Cube extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,32 +59,32 @@ class HiPhone extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
 
         $this->setData(
             [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
+                'deviceName'        => 'general Cube Device',
+                'marketingName'     => 'general Cube Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
+                'manufacturer'      => (new Company\Cube())->name,
+                'brand'             => (new Company\Cube())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
+                'resolutionWidth'   => 1280,
+                'resolutionHeight'  => 800,
                 'dualOrientation'   => true,
-                'colors'            => null,
+                'colors'            => 65536,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
      * @return \BrowserDetector\Detector\Os\AndroidOs
      */
     public function detectOs()
     {
-        return new AndroidOs($this->useragent, []);
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

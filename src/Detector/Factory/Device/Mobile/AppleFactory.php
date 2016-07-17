@@ -63,6 +63,6 @@ class AppleFactory implements FactoryInterface
             return new Apple\Iphone($useragent, []);
         }
 
-        return new Apple($useragent, []);
+        return new Apple\Apple($useragent, []);
     }
 }

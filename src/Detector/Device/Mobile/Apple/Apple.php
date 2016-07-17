@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Apple;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Zte extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Apple extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,11 +59,11 @@ class Zte extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 
         $this->setData(
             [
-                'deviceName'        => 'general ZTE Device',
-                'marketingName'     => 'general ZTE Device',
+                'deviceName'        => 'general Apple Device',
+                'marketingName'     => 'general Apple Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Zte())->name,
-                'brand'             => (new Company\Zte())->brandname,
+                'manufacturer'      => (new Company\Apple())->name,
+                'brand'             => (new Company\Apple())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -81,10 +81,10 @@ class Zte extends AbstractDevice implements DeviceHasSpecificPlatformInterface
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \BrowserDetector\Detector\Os\Ios
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new Os\Ios($this->useragent, []);
     }
 }

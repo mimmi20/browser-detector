@@ -55,6 +55,6 @@ class TechnisatFactory implements FactoryInterface
             return new Technisat\TechnisatTechnipad103g($useragent, []);
         }
 
-        return new Technisat($useragent, []);
+        return new Technisat\Technisat($useragent, []);
     }
 }

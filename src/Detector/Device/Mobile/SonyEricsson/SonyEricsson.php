@@ -29,12 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**
@@ -43,7 +41,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Feiteng extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SonyEricsson extends AbstractDevice
 {
     /**
      * the class constructor
@@ -59,11 +57,11 @@ class Feiteng extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
 
         $this->setData(
             [
-                'deviceName'        => 'general Feiteng Device',
-                'marketingName'     => 'general Feiteng Device',
+                'deviceName'        => 'general SonyEricsson Device',
+                'marketingName'     => 'general SonyEricsson Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Feiteng())->name,
-                'brand'             => (new Company\Feiteng())->brandname,
+                'manufacturer'      => (new Company\SonyEricsson())->name,
+                'brand'             => (new Company\SonyEricsson())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -73,18 +71,8 @@ class Feiteng extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
+                'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
-     */
-    public function detectOs()
-    {
-        return new Os\AndroidOs($this->useragent, []);
     }
 }

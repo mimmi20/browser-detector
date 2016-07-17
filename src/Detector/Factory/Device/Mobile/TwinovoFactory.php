@@ -55,6 +55,6 @@ class TwinovoFactory implements FactoryInterface
             return new Twinovo\TwinovoT118($useragent, []);
         }
 
-        return new Twinovo($useragent, []);
+        return new Twinovo\Twinovo($useragent, []);
     }
 }

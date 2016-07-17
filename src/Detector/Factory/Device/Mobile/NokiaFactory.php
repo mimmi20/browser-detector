@@ -691,6 +691,6 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\Nokia109($useragent, []);
         }
 
-        return new Nokia($useragent, []);
+        return new Nokia\Nokia($useragent, []);
     }
 }

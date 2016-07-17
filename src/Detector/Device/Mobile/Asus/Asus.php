@@ -29,10 +29,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Asus;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**
@@ -41,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricsson extends AbstractDevice
+class Asus extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -57,11 +59,11 @@ class SonyEricsson extends AbstractDevice
 
         $this->setData(
             [
-                'deviceName'        => 'general SonyEricsson Device',
-                'marketingName'     => 'general SonyEricsson Device',
+                'deviceName'        => 'general Asus Device',
+                'marketingName'     => 'general Asus Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\SonyEricsson())->name,
-                'brand'             => (new Company\SonyEricsson())->brandname,
+                'manufacturer'      => (new Company\Asus())->name,
+                'brand'             => (new Company\Asus())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -71,8 +73,18 @@ class SonyEricsson extends AbstractDevice
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
+    }
+
+    /**
+     * returns the OS Handler
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

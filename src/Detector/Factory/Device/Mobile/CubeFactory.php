@@ -67,6 +67,6 @@ class CubeFactory implements FactoryInterface
             return new Cube\CubeU30gt($useragent, []);
         }
 
-        return new Cube($useragent, []);
+        return new Cube\Cube($useragent, []);
     }
 }

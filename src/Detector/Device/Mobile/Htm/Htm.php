@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Htm;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Asus extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Htm extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,11 +59,11 @@ class Asus extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 
         $this->setData(
             [
-                'deviceName'        => 'general Asus Device',
-                'marketingName'     => 'general Asus Device',
+                'deviceName'        => 'general HTM Device',
+                'marketingName'     => 'general HTM Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Asus())->name,
-                'brand'             => (new Company\Asus())->brandname,
+                'manufacturer'      => (new Company\Htm())->name,
+                'brand'             => (new Company\Htm())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -73,7 +73,7 @@ class Asus extends AbstractDevice implements DeviceHasSpecificPlatformInterface
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
+                'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
     }

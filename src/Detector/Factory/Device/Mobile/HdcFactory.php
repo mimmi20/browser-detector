@@ -55,6 +55,6 @@ class HdcFactory implements FactoryInterface
             return new Hdc\HdcI9300GalaxyS3Ex($useragent, []);
         }
 
-        return new Hdc($useragent, []);
+        return new Hdc\Hdc($useragent, []);
     }
 }

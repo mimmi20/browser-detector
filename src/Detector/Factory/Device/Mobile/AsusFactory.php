@@ -175,6 +175,6 @@ class AsusFactory implements FactoryInterface
             return new Asus\Eee701($useragent, []);
         }
 
-        return new Asus($useragent, []);
+        return new Asus\Asus($useragent, []);
     }
 }

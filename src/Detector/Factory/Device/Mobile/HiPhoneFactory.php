@@ -55,6 +55,6 @@ class HiPhoneFactory implements FactoryInterface
             return new HiPhone\HiPhoneV919($useragent, []);
         }
 
-        return new HiPhone($useragent, []);
+        return new HiPhone\HiPhone($useragent, []);
     }
 }

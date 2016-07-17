@@ -63,6 +63,6 @@ class SprdFactory implements FactoryInterface
             return new Sprd\SprdB51plus($useragent, []);
         }
 
-        return new Sprd($useragent, []);
+        return new Sprd\Sprd($useragent, []);
     }
 }

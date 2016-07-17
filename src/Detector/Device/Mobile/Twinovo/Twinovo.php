@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Twinovo;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Cube extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Twinovo extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,21 +59,21 @@ class Cube extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 
         $this->setData(
             [
-                'deviceName'        => 'general Cube Device',
-                'marketingName'     => 'general Cube Device',
+                'deviceName'        => 'general Twinovo Device',
+                'marketingName'     => 'general Twinovo Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Cube())->name,
-                'brand'             => (new Company\Cube())->brandname,
+                'manufacturer'      => (new Company\Twinovo())->name,
+                'brand'             => (new Company\Twinovo())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 1280,
-                'resolutionHeight'  => 800,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
+                'resolutionWidth'   => null,
+                'resolutionHeight'  => null,
+                'dualOrientation'   => null,
+                'colors'            => null,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
+                'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
     }

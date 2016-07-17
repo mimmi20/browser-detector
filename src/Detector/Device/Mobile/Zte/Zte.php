@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Zte;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Sprd extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Zte extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,11 +59,11 @@ class Sprd extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 
         $this->setData(
             [
-                'deviceName'        => 'general sprd device',
-                'marketingName'     => 'general sprd device',
+                'deviceName'        => 'general ZTE Device',
+                'marketingName'     => 'general ZTE Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Sprd())->name,
-                'brand'             => (new Company\Sprd())->brandname,
+                'manufacturer'      => (new Company\Zte())->name,
+                'brand'             => (new Company\Zte())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,

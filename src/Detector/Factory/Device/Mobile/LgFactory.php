@@ -859,6 +859,6 @@ class LgFactory implements FactoryInterface
             return new Lg\LgVs980($useragent, []);
         }
 
-        return new Lg($useragent, []);
+        return new Lg\Lg($useragent, []);
     }
 }

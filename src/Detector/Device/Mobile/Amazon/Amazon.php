@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Amazon;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Htc extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Amazon extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,11 +59,11 @@ class Htc extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 
         $this->setData(
             [
-                'deviceName'        => 'general HTC Device',
-                'marketingName'     => 'general HTC Device',
+                'deviceName'        => 'general Amazon Device',
+                'marketingName'     => 'general Amazon Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Htc())->name,
-                'brand'             => (new Company\Htc())->brandname,
+                'manufacturer'      => (new Company\Amazon())->name,
+                'brand'             => (new Company\Amazon())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -73,7 +73,7 @@ class Htc extends AbstractDevice implements DeviceHasSpecificPlatformInterface
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
     }

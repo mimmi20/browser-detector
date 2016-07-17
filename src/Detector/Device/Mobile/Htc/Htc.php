@@ -29,10 +29,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**
@@ -41,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Lg extends AbstractDevice
+class Htc extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -57,11 +59,11 @@ class Lg extends AbstractDevice
 
         $this->setData(
             [
-                'deviceName'        => 'general LG Device',
-                'marketingName'     => 'general LG Device',
+                'deviceName'        => 'general HTC Device',
+                'marketingName'     => 'general HTC Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Lg())->name,
-                'brand'             => (new Company\Lg())->brandname,
+                'manufacturer'      => (new Company\Htc())->name,
+                'brand'             => (new Company\Htc())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -74,5 +76,15 @@ class Lg extends AbstractDevice
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
+    }
+
+    /**
+     * returns the OS Handler
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

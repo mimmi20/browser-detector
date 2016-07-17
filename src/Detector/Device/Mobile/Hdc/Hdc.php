@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Hdc;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Acer extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Hdc extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,11 +59,11 @@ class Acer extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 
         $this->setData(
             [
-                'deviceName'        => 'general Acer Device',
-                'marketingName'     => 'general Acer Device',
+                'deviceName'        => 'general HDC Device',
+                'marketingName'     => 'general HDC Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Acer())->name,
-                'brand'             => (new Company\Acer())->brandname,
+                'manufacturer'      => (new Company\Hdc())->name,
+                'brand'             => (new Company\Hdc())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,

@@ -279,6 +279,6 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\ThinkPadTablet($useragent, []);
         }
 
-        return new Lenovo($useragent, []);
+        return new Lenovo\Lenovo($useragent, []);
     }
 }

@@ -1431,6 +1431,6 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmartTv($useragent, []);
         }
 
-        return new Samsung($useragent, []);
+        return new Samsung\Samsung($useragent, []);
     }
 }

@@ -59,6 +59,6 @@ class FeitengFactory implements FactoryInterface
             return new Feiteng\FeitengH7100($useragent, []);
         }
 
-        return new Feiteng($useragent, []);
+        return new Feiteng\Feiteng($useragent, []);
     }
 }

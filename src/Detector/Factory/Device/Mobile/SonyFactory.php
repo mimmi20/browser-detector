@@ -727,6 +727,6 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyXperiaS($useragent, []);
         }
 
-        return new SonyEricsson($useragent, []);
+        return new SonyEricsson\SonyEricsson($useragent, []);
     }
 }

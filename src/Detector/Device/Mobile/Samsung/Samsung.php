@@ -29,11 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use UaDeviceType;
 
 /**
@@ -42,7 +41,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nokia extends AbstractDevice
+class Samsung extends AbstractDevice
 {
     /**
      * the class constructor
@@ -58,17 +57,17 @@ class Nokia extends AbstractDevice
 
         $this->setData(
             [
-                'deviceName'        => 'general Nokia Device',
-                'marketingName'     => 'general Nokia Device',
+                'deviceName'        => 'general Samsung Device',
+                'marketingName'     => 'general Samsung Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Nokia())->name,
-                'brand'             => (new Company\Nokia())->brandname,
+                'manufacturer'      => (new Company\Samsung())->name,
+                'brand'             => (new Company\Samsung())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 240,
-                'resolutionHeight'  => 320,
-                'dualOrientation'   => false,
-                'colors'            => 65536,
+                'resolutionWidth'   => null,
+                'resolutionHeight'  => null,
+                'dualOrientation'   => null,
+                'colors'            => null,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,

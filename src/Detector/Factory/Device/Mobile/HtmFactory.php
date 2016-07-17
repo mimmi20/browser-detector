@@ -55,6 +55,6 @@ class HtmFactory implements FactoryInterface
             return new Htm\HtmMtGtA9500($useragent, []);
         }
 
-        return new Htm($useragent, []);
+        return new Htm\Htm($useragent, []);
     }
 }

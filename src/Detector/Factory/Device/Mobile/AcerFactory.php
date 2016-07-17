@@ -199,6 +199,6 @@ class AcerFactory implements FactoryInterface
             return new Acer\AcerAllegro($useragent, []);
         }
 
-        return new Acer($useragent, []);
+        return new Acer\Acer($useragent, []);
     }
 }

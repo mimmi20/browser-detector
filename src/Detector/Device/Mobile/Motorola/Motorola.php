@@ -29,11 +29,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Motorola;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**
@@ -42,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Samsung extends AbstractDevice
+class Motorola extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -58,11 +59,11 @@ class Samsung extends AbstractDevice
 
         $this->setData(
             [
-                'deviceName'        => 'general Samsung Device',
-                'marketingName'     => 'general Samsung Device',
+                'deviceName'        => 'general Motorola Device',
+                'marketingName'     => 'general Motorola Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Samsung())->name,
-                'brand'             => (new Company\Samsung())->brandname,
+                'manufacturer'      => (new Company\Motorola())->name,
+                'brand'             => (new Company\Motorola())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -75,5 +76,15 @@ class Samsung extends AbstractDevice
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
+    }
+
+    /**
+     * returns the OS Handler
+     *
+     * @return \BrowserDetector\Detector\Os\AndroidOs
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

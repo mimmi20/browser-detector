@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Technisat;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Twinovo extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class Technisat extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,11 +59,11 @@ class Twinovo extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
 
         $this->setData(
             [
-                'deviceName'        => 'general Twinovo Device',
-                'marketingName'     => 'general Twinovo Device',
+                'deviceName'        => 'general Technisat Device',
+                'marketingName'     => 'general Technisat Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Twinovo())->name,
-                'brand'             => (new Company\Twinovo())->brandname,
+                'manufacturer'      => (new Company\TechniSat())->name,
+                'brand'             => (new Company\TechniSat())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,

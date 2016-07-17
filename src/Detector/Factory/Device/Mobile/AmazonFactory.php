@@ -99,6 +99,6 @@ class AmazonFactory implements FactoryInterface
             return new Amazon\AmazonKindle($useragent, []);
         }
 
-        return new Amazon($useragent, []);
+        return new Amazon\Amazon($useragent, []);
     }
 }

@@ -391,8 +391,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/amoi/i', $useragent)) {
-            $device = new Amoi($useragent, []);
-        } elseif (preg_match('/(blaupunkt|endeavour)/i', $useragent)) {
+            return Mobile\AmoiFactory::detect($useragent);
+        }
+
+        if (preg_match('/(blaupunkt|endeavour)/i', $useragent)) {
             $device = new Blaupunkt($useragent, []);
         } elseif (preg_match('/ONDA/', $useragent)) {
             $device = new Onda($useragent, []);

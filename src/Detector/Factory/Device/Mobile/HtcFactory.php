@@ -515,6 +515,6 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcVpaCompactIv($useragent, []);
         }
 
-        return new Htc($useragent, []);
+        return new Htc\Htc($useragent, []);
     }
 }

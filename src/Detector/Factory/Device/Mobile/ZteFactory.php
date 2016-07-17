@@ -171,6 +171,6 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteAtlasW($useragent, []);
         }
 
-        return new Zte($useragent, []);
+        return new Zte\Zte($useragent, []);
     }
 }
