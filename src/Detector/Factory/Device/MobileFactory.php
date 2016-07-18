@@ -399,8 +399,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ONDA/', $useragent)) {
-            $device = new Onda($useragent, []);
-        } elseif (preg_match('/archos/i', $useragent)) {
+            return Mobile\OndaFactory::detect($useragent);
+        }
+
+        if (preg_match('/archos/i', $useragent)) {
             $device = new Archos($useragent, []);
         } elseif (preg_match('/IRULU/', $useragent)) {
             $device = new Irulu($useragent, []);
