@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Blaupunkt;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Blaupunkt;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,25 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlaupunktEndeavour101l extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class BlaupunktFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Endeavour 101L',
-                'marketingName'     => 'Endeavour 101L',
-                'version'           => null,
-                'manufacturer'      => (new Company\Blaupunkt())->name,
-                'brand'             => (new Company\Blaupunkt())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 2048,
-                'resolutionHeight'  => 1536,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\UnknownOs($this->useragent, []);
+        if (preg_match('/Endeavour 101L/i', $useragent)) {
+            return new Blaupunkt\BlaupunktEndeavour101l($useragent, []);
+        }
+
+        if (preg_match('/Endeavour 1010/i', $useragent)) {
+            return new Blaupunkt\BlaupunktEndeavour1010($useragent, []);
+        }
+
+        return new Blaupunkt\Blaupunkt($useragent, []);
     }
 }
