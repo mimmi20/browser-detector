@@ -403,8 +403,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/archos/i', $useragent)) {
-            $device = new Archos($useragent, []);
-        } elseif (preg_match('/IRULU/', $useragent)) {
+            return Mobile\ArchosFactory::detect($useragent);
+        }
+
+        if (preg_match('/IRULU/', $useragent)) {
             $device = new Irulu($useragent, []);
         } elseif (preg_match('/Symphony/', $useragent)) {
             $device = new Symphony($useragent, []);
@@ -740,7 +742,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/wildfire/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/a101it/i', $useragent)) {
-            $device = new Archos($useragent, []);
+            return Mobile\ArchosFactory::detect($useragent);
         } elseif (preg_match('/(sprd|SPHS|B51\+)/i', $useragent)) {
             return Mobile\SprdFactory::detect($useragent);
         } elseif (preg_match('/TAB A742/', $useragent)) {
@@ -1094,7 +1096,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(Neon\-N1|WING\-W2)/', $useragent)) {
             $device = new Axgio($useragent, []);
         } elseif (preg_match('/T118/', $useragent)) {
-            $device = new Twinovo($useragent, []);
+            return Mobile\TwinovoFactory::detect($useragent);
         } elseif (preg_match('/(A1002|A811)/', $useragent)) {
             $device = new Lexand($useragent, []);
         } elseif (preg_match('/ A10/', $useragent)) {
