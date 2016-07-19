@@ -431,10 +431,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/caterpillar/i', $useragent)) {
-            $device = new Caterpillar($useragent, []);
-        } elseif (preg_match('/B15/', $useragent)) {
-            $device = new Caterpillar($useragent, []);
-        } elseif (preg_match('/(CatNova|Cat StarGate|Cat Tablet)/i', $useragent)) {
+            return Mobile\CaterpillarFactory::detect($useragent);
+        }
+
+        if (preg_match('/B15/', $useragent)) {
+            return Mobile\CaterpillarFactory::detect($useragent);
+        }
+
+        if (preg_match('/(CatNova|Cat StarGate|Cat Tablet)/i', $useragent)) {
             $device = new CatSound($useragent, []);
         } elseif (preg_match('/(Coby|NBPC724|MID\d{4})/i', $useragent)) {
             $device = new Coby($useragent, []);
