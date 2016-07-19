@@ -423,8 +423,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/beidou/i', $useragent)) {
-            $device = new Beidou($useragent, []);
-        } elseif (preg_match('/(blackberry|playbook|rim tablet|bb10)/i', $useragent)) {
+            return Mobile\BeidouFactory::detect($useragent);
+        }
+
+        if (preg_match('/(blackberry|playbook|rim tablet|bb10)/i', $useragent)) {
             $device = new BlackBerry($useragent, []);
         } elseif (preg_match('/caterpillar/i', $useragent)) {
             $device = new Caterpillar($useragent, []);
