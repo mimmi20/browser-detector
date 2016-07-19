@@ -415,8 +415,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/arnova/i', $useragent)) {
-            $device = new Arnova($useragent, []);
-        } elseif (preg_match('/ bn /i', $useragent)) {
+            return Mobile\ArnovaFactory::detect($useragent);
+        }
+
+        if (preg_match('/ bn /i', $useragent)) {
             $device = new BarnesNoble($useragent, []);
         } elseif (preg_match('/beidou/i', $useragent)) {
             $device = new Beidou($useragent, []);
@@ -950,7 +952,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/FX2/', $useragent)) {
             $device = new FaktorZwei($useragent, []);
         } elseif (preg_match('/AN\d{1,2}/', $useragent)) {
-            $device = new Arnova($useragent, []);
+            return Mobile\ArnovaFactory::detect($useragent);
         } elseif (preg_match('/(Touchlet|X7G)/', $useragent)) {
             $device = new Pearl($useragent, []);
         } elseif (preg_match('/POV/', $useragent)) {
