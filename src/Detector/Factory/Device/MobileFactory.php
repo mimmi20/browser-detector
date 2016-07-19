@@ -419,10 +419,12 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ bn /i', $useragent)) {
-            $device = new BarnesNoble($useragent, []);
-        } elseif (preg_match('/beidou/i', $useragent)) {
+            return Mobile\BarnesNobleFactory::detect($useragent);
+        }
+
+        if (preg_match('/beidou/i', $useragent)) {
             $device = new Beidou($useragent, []);
-        } elseif (preg_match('/(BlackBerry|PlayBook|RIM Tablet|BB10)/i', $useragent)) {
+        } elseif (preg_match('/(blackberry|playbook|rim tablet|bb10)/i', $useragent)) {
             $device = new BlackBerry($useragent, []);
         } elseif (preg_match('/caterpillar/i', $useragent)) {
             $device = new Caterpillar($useragent, []);
@@ -916,11 +918,11 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/VIVO/', $useragent)) {
             $device = new Blu($useragent, []);
         } elseif (preg_match('/NOOK/', $useragent)) {
-            $device = new BarnesNoble($useragent, []);
+            return Mobile\BarnesNobleFactory::detect($useragent);
         } elseif (preg_match('/Zaffire/', $useragent)) {
             $device = new Nuqleo($useragent, []);
         } elseif (preg_match('/BNRV\d{3}/', $useragent)) {
-            $device = new BarnesNoble($useragent, []);
+            return Mobile\BarnesNobleFactory::detect($useragent);
         } elseif (preg_match('/IQ\d{3,4}/', $useragent)) {
             $device = new Fly($useragent, []);
         } elseif (preg_match('/Phoenix 2/', $useragent)) {
