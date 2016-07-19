@@ -427,8 +427,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(blackberry|playbook|rim tablet|bb10)/i', $useragent)) {
-            $device = new BlackBerry($useragent, []);
-        } elseif (preg_match('/caterpillar/i', $useragent)) {
+            return Mobile\BlackBerryFactory::detect($useragent);
+        }
+
+        if (preg_match('/caterpillar/i', $useragent)) {
             $device = new Caterpillar($useragent, []);
         } elseif (preg_match('/B15/', $useragent)) {
             $device = new Caterpillar($useragent, []);
