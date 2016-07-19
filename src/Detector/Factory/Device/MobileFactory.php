@@ -407,10 +407,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/IRULU/', $useragent)) {
-            $device = new Irulu($useragent, []);
-        } elseif (preg_match('/Symphony/', $useragent)) {
-            $device = new Symphony($useragent, []);
-        } elseif (preg_match('/arnova/i', $useragent)) {
+            return Mobile\IruluFactory::detect($useragent);
+        }
+
+        if (preg_match('/Symphony/', $useragent)) {
+            return Mobile\SymphonyFactory::detect($useragent);
+        }
+
+        if (preg_match('/arnova/i', $useragent)) {
             $device = new Arnova($useragent, []);
         } elseif (preg_match('/ bn /i', $useragent)) {
             $device = new BarnesNoble($useragent, []);

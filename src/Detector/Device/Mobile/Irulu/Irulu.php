@@ -29,13 +29,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Irulu;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
@@ -45,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Symphony extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
+class Irulu extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -61,11 +59,11 @@ class Symphony extends AbstractDevice implements DeviceHasChildrenInterface, Dev
 
         $this->setData(
             [
-                'deviceName'        => 'general Symphony Device',
-                'marketingName'     => 'general Symphony Device',
+                'deviceName'        => 'general iRulu Device',
+                'marketingName'     => 'general iRulu Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Symphony())->name,
-                'brand'             => (new Company\Symphony())->brandname,
+                'manufacturer'      => (new Company\Irulu())->name,
+                'brand'             => (new Company\Irulu())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -78,24 +76,6 @@ class Symphony extends AbstractDevice implements DeviceHasChildrenInterface, Dev
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Symphony');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Symphony' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
