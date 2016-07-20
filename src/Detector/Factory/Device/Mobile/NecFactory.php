@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nec;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Nec;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,29 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Nec0912 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class NecFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => '0912',
-                'marketingName'     => 'NEC Casio N-02E',
-                'version'           => null,
-                'manufacturer'      => (new Company\Nec())->name,
-                'brand'             => (new Company\DoCoMo())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'unknown',
-                'resolutionWidth'   => 480,
-                'resolutionHeight'  => 854,
-                'dualOrientation'   => false,
-                'colors'            => 16777216,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/N905i/i', $useragent)) {
+            return new Nec\NecN905i($useragent, []);
+        }
+
+        if (preg_match('/N705i/i', $useragent)) {
+            return new Nec\NecN705i($useragent, []);
+        }
+
+        if (preg_match('/0912/i', $useragent)) {
+            return new Nec\Nec0912($useragent, []);
+        }
+
+        return new Nec\Nec($useragent, []);
     }
 }

@@ -475,8 +475,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(nec|n905i)/i', $useragent) && !preg_match('/fennec/i', $useragent)) {
-            $device = new Nec($useragent, []);
-        } elseif (preg_match('/(DoCoMo|P900i)/i', $useragent)) {
+            return Mobile\NecFactory::detect($useragent);
+        }
+
+        if (preg_match('/(DoCoMo|P900i)/i', $useragent)) {
             $device = new DoCoMo($useragent, []);
         } elseif (preg_match('/(Easypix|EasyPad|Junior 4\.0)/i', $useragent)) {
             $device = new Easypix($useragent, []);
