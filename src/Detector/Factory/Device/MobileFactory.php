@@ -463,8 +463,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/cubot/i', $useragent)) {
-            $device = new Cubot($useragent, []);
-        } elseif (preg_match('/dell/i', $useragent)) {
+            return Mobile\CubotFactory::detect($useragent);
+        }
+
+        if (preg_match('/dell/i', $useragent)) {
             $device = new Dell($useragent, []);
         } elseif (preg_match('/(Denver|TAD\-)/i', $useragent)) {
             $device = new Denver($useragent, []);
@@ -928,7 +930,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/( droid)/i', $useragent)) {
             return Mobile\MotorolaFactory::detect($useragent);
         } elseif (preg_match('/MT6572\_TD/', $useragent)) {
-            $device = new Cubot($useragent, []);
+            return Mobile\CubotFactory::detect($useragent);
         } elseif (preg_match('/(S|L|W|M)T\d{2}/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/SK\d{2}/', $useragent)) {
@@ -1078,7 +1080,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/M5301/', $useragent)) {
             $device = new Iru($useragent, []);
         } elseif (preg_match('/ C7 /', $useragent)) {
-            $device = new Cubot($useragent, []);
+            return Mobile\CubotFactory::detect($useragent);
         } elseif (preg_match('/GV7777/', $useragent)) {
             $device = new Prestigio($useragent, []);
         } elseif (preg_match('/ N1 /', $useragent)) {
