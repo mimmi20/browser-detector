@@ -447,8 +447,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(Comag|WTDR1018)/i', $useragent)) {
-            $device = new Comag($useragent, []);
-        } elseif (preg_match('/coolpad/i', $useragent)) {
+            return Mobile\ComagFactory::detect($useragent);
+        }
+
+        if (preg_match('/coolpad/i', $useragent)) {
             $device = new Coolpad($useragent, []);
         } elseif (preg_match('/cosmote/i', $useragent)) {
             $device = new Cosmote($useragent, []);
