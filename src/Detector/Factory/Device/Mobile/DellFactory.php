@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Dell;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Dell;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,53 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DellVenue73730 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class DellFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Venue 7 3730',
-                'marketingName'     => 'Venue 7 3730',
-                'version'           => null,
-                'manufacturer'      => (new Company\Dell())->name,
-                'brand'             => (new Company\Dell())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => null,
-                'colors'            => null,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/venue pro/i', $useragent)) {
+            return new Dell\DellVenuePro($useragent, []);
+        }
+
+        if (preg_match('/venue 8 hspa\+/i', $useragent)) {
+            return new Dell\DellVenue8Hspa($useragent, []);
+        }
+
+        if (preg_match('/venue 8 3830/i', $useragent)) {
+            return new Dell\DellVenue83830($useragent, []);
+        }
+
+        if (preg_match('/venue 7 hspa\+/i', $useragent)) {
+            return new Dell\DellVenue7Hspa($useragent, []);
+        }
+
+        if (preg_match('/venue 7 3730/i', $useragent)) {
+            return new Dell\DellVenue73730($useragent, []);
+        }
+
+        if (preg_match('/venue/i', $useragent)) {
+            return new Dell\DellVenue($useragent, []);
+        }
+
+        if (preg_match('/streak 10 pro/i', $useragent)) {
+            return new Dell\DellStreak10Pro($useragent, []);
+        }
+
+        if (preg_match('/streak 7/i', $useragent)) {
+            return new Dell\DellStreak7($useragent, []);
+        }
+
+        if (preg_match('/streak/i', $useragent)) {
+            return new Dell\DellStreak($useragent, []);
+        }
+
+        return new Dell\Dell($useragent, []);
     }
 }

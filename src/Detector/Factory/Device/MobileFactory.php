@@ -467,8 +467,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/dell/i', $useragent)) {
-            $device = new Dell($useragent, []);
-        } elseif (preg_match('/(Denver|TAD\-)/i', $useragent)) {
+            return Mobile\DellFactory::detect($useragent);
+        }
+
+        if (preg_match('/(Denver|TAD\-)/i', $useragent)) {
             $device = new Denver($useragent, []);
         } elseif (preg_match('/(nec|n905i)/i', $useragent) && !preg_match('/fennec/i', $useragent)) {
             $device = new Nec($useragent, []);
@@ -962,7 +964,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/FreeTAB \d{4}/', $useragent)) {
             $device = new Modecom($useragent, []);
         } elseif (preg_match('/Venue/', $useragent)) {
-            $device = new Dell($useragent, []);
+            return Mobile\DellFactory::detect($useragent);
         } elseif (preg_match('/FunTab/', $useragent)) {
             $device = new Orange($useragent, []);
         } elseif (preg_match('/(OV\-|Solution 7III)/', $useragent)) {
