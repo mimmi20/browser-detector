@@ -470,9 +470,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\DellFactory::detect($useragent);
         }
 
-        if (preg_match('/(Denver|TAD\-)/i', $useragent)) {
-            $device = new Denver($useragent, []);
-        } elseif (preg_match('/(nec|n905i)/i', $useragent) && !preg_match('/fennec/i', $useragent)) {
+        if (preg_match('/(denver|tad\-)/i', $useragent)) {
+            return Mobile\DenverFactory::detect($useragent);
+        }
+
+        if (preg_match('/(nec|n905i)/i', $useragent) && !preg_match('/fennec/i', $useragent)) {
             $device = new Nec($useragent, []);
         } elseif (preg_match('/(DoCoMo|P900i)/i', $useragent)) {
             $device = new DoCoMo($useragent, []);
