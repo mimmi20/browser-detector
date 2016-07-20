@@ -459,8 +459,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(Creative|ZiiLABS)/i', $useragent)) {
-            $device = new Creative($useragent, []);
-        } elseif (preg_match('/cubot/i', $useragent)) {
+            return Mobile\CreativeFactory::detect($useragent);
+        }
+
+        if (preg_match('/cubot/i', $useragent)) {
             $device = new Cubot($useragent, []);
         } elseif (preg_match('/dell/i', $useragent)) {
             $device = new Dell($useragent, []);
