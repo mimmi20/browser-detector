@@ -451,8 +451,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/coolpad/i', $useragent)) {
-            $device = new Coolpad($useragent, []);
-        } elseif (preg_match('/cosmote/i', $useragent)) {
+            return Mobile\CoolpadFactory::detect($useragent);
+        }
+
+        if (preg_match('/cosmote/i', $useragent)) {
             $device = new Cosmote($useragent, []);
         } elseif (preg_match('/(Creative|ZiiLABS)/i', $useragent)) {
             $device = new Creative($useragent, []);
