@@ -439,8 +439,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(CatNova|Cat StarGate|Cat Tablet)/i', $useragent)) {
-            $device = new CatSound($useragent, []);
-        } elseif (preg_match('/(Coby|NBPC724|MID\d{4})/i', $useragent)) {
+            return Mobile\CatSoundFactory::detect($useragent);
+        }
+
+        if (preg_match('/(Coby|NBPC724|MID\d{4})/i', $useragent)) {
             $device = new Coby($useragent, []);
         } elseif (preg_match('/(Comag|WTDR1018)/i', $useragent)) {
             $device = new Comag($useragent, []);
@@ -875,8 +877,8 @@ class MobileFactory implements FactoryInterface
             return Mobile\LenovoFactory::detect($useragent);
         } elseif (preg_match('/one (s|x)/i', $useragent) && !preg_match('/vodafone smart/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
-        } elseif (preg_match('/Tablet\-PC\-4/', $useragent)) {
-            $device = new CatSound($useragent, []);
+        } elseif (preg_match('/(Tablet\-PC\-4|Kinder\-Tablet)/', $useragent)) {
+            return Mobile\CatSoundFactory::detect($useragent);
         } elseif (preg_match('/TBD\d{4}/', $useragent)) {
             $device = new Zeki($useragent, []);
         } elseif (preg_match('/TBD(B|C)\d{3,4}/', $useragent)) {

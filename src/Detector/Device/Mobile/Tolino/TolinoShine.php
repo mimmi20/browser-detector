@@ -29,15 +29,16 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Tolino;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Matcher\MatcherCanHandleInterface;
+use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
+use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -45,7 +46,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CatSound extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
+class TolinoShine extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
 {
     /**
      * the class constructor
@@ -61,41 +62,50 @@ class CatSound extends AbstractDevice implements DeviceHasChildrenInterface, Dev
 
         $this->setData(
             [
-                'deviceName'        => 'general CatSound Device',
-                'marketingName'     => 'general CatSound Device',
+                'deviceName'        => 'Tolino Shine',
+                'marketingName'     => 'Tolino Shine',
                 'version'           => null,
-                'manufacturer'      => (new Company\CatSound())->name,
-                'brand'             => (new Company\CatSound())->brandname,
+                'manufacturer'      => (new Company\Longshine())->name,
+                'brand'             => (new Company\Weltbild())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => null,
-                'colors'            => null,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
+                'resolutionWidth'   => 758,
+                'resolutionHeight'  => 1024,
+                'dualOrientation'   => true,
+                'colors'            => 256,
+                'smsSupport'        => false,
+                'nfcSupport'        => false,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
+                'type'              => new UaDeviceType\MobileDevice(),
             ]
         );
     }
 
     /**
-     * detects the device name from the given user agent
+     * checks if this device is able to handle the useragent
      *
-     * @return \UaResult\Device\DeviceInterface
+     * @return bool returns TRUE, if this device can handle the useragent
      */
-    public function detectDevice()
+    public function canHandle()
     {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\CatSound');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'CatSound' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
 
-        return $chain->detect();
+        if (!$utils->checkIfContains(['Tolino'])) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * gets the weight of the handler, which is used for sorting
+     *
+     * @return int
+     */
+    public function getWeight()
+    {
+        return 3;
     }
 
     /**

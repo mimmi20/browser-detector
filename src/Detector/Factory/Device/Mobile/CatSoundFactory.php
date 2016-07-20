@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\CatSound;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\CatSound;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,49 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class CatNova8 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class CatSoundFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Cat Nova 8',
-                'marketingName'     => 'Tablet PC',
-                'version'           => null,
-                'manufacturer'      => (new Company\CatSound())->name,
-                'brand'             => (new Company\Weltbild())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 800,
-                'resolutionHeight'  => 600,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/CatNova8/i', $useragent)) {
+            return new CatSound\CatNova8($useragent, []);
+        }
+
+        if (preg_match('/nova/i', $useragent)) {
+            return new CatSound\CatNova($useragent, []);
+        }
+
+        if (preg_match('/Cat Tablet Galactica X/i', $useragent)) {
+            return new CatSound\CatGalacticaX($useragent, []);
+        }
+
+        if (preg_match('/StarGate/i', $useragent)) {
+            return new CatSound\CatStarGate($useragent, []);
+        }
+
+        if (preg_match('/Cat Tablet PHOENIX/i', $useragent)) {
+            return new CatSound\CatTabletPhoenix($useragent, []);
+        }
+
+        if (preg_match('/Cat Tablet/i', $useragent)) {
+            return new CatSound\CatTablet($useragent, []);
+        }
+
+        if (preg_match('/Tablet\-PC\-4/i', $useragent)) {
+            return new CatSound\TabletPc4($useragent, []);
+        }
+
+        if (preg_match('/Kinder\-Tablet/i', $useragent)) {
+            return new CatSound\KinderTablet($useragent, []);
+        }
+
+        return new CatSound\CatSound($useragent, []);
     }
 }
