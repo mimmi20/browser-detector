@@ -443,8 +443,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(Coby|NBPC724|MID\d{4})/i', $useragent)) {
-            $device = new Coby($useragent, []);
-        } elseif (preg_match('/(Comag|WTDR1018)/i', $useragent)) {
+            return Mobile\CobyFactory::detect($useragent);
+        }
+
+        if (preg_match('/(Comag|WTDR1018)/i', $useragent)) {
             $device = new Comag($useragent, []);
         } elseif (preg_match('/coolpad/i', $useragent)) {
             $device = new Coolpad($useragent, []);

@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Coby;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Coby;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,53 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MID8024 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class CobyFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'MID8024',
-                'marketingName'     => 'Kyros MID8024',
-                'version'           => null,
-                'manufacturer'      => (new Company\Coby())->name,
-                'brand'             => (new Company\Coby())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 800,
-                'resolutionHeight'  => 600,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/MID9742/i', $useragent)) {
+            return new Coby\MID9742($useragent, []);
+        }
+
+        if (preg_match('/MID8128/i', $useragent)) {
+            return new Coby\MID8128($useragent, []);
+        }
+
+        if (preg_match('/MID8127/i', $useragent)) {
+            return new Coby\MID8127($useragent, []);
+        }
+
+        if (preg_match('/MID8024/i', $useragent)) {
+            return new Coby\MID8024($useragent, []);
+        }
+
+        if (preg_match('/MID7022/i', $useragent)) {
+            return new Coby\MID7022($useragent, []);
+        }
+
+        if (preg_match('/MID7015/i', $useragent)) {
+            return new Coby\MID7015($useragent, []);
+        }
+
+        if (preg_match('/MID1126/i', $useragent)) {
+            return new Coby\MID1126($useragent, []);
+        }
+
+        if (preg_match('/MID1125/i', $useragent)) {
+            return new Coby\MID1125($useragent, []);
+        }
+
+        if (preg_match('/NBPC724/i', $useragent)) {
+            return new Coby\NBPC724($useragent, []);
+        }
+
+        return new Coby\Coby($useragent, []);
     }
 }
