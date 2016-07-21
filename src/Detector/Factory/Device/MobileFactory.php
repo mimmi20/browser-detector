@@ -498,11 +498,15 @@ class MobileFactory implements FactoryInterface
             return Mobile\EinsUndEinsFactory::detect($useragent);
         }
 
-        if (preg_match('/TelePAD 9A1/', $useragent)) {
-            $device = new Xoro($useragent, []);
-        } elseif (preg_match('/(epad|p7901a)/i', $useragent)) {
+        if (preg_match('/(xoro|telepad 9a1)/i', $useragent)) {
+            return Mobile\XoroFactory::detect($useragent);
+        }
+
+        if (preg_match('/(epad|p7901a)/i', $useragent)) {
             return Mobile\EpadFactory::detect($useragent);
-        } elseif (preg_match('/p7mini/i', $useragent)) {
+        }
+
+        if (preg_match('/p7mini/i', $useragent)) {
             $device = new Huawei($useragent, []);
         } elseif (preg_match('/FaktorZwei/i', $useragent)) {
             $device = new FaktorZwei($useragent, []);
