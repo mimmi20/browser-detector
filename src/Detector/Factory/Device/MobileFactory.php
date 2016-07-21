@@ -498,8 +498,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\EinsUndEinsFactory::detect($useragent);
         }
 
-        if (preg_match('/p7901a/i', $useragent)) {
-            $device = new Epad($useragent, []);
+        if (preg_match('/TelePAD 9A1/', $useragent)) {
+            $device = new Xoro($useragent, []);
+        } elseif (preg_match('/(epad|p7901a)/i', $useragent)) {
+            return Mobile\EpadFactory::detect($useragent);
         } elseif (preg_match('/p7mini/i', $useragent)) {
             $device = new Huawei($useragent, []);
         } elseif (preg_match('/FaktorZwei/i', $useragent)) {
@@ -1089,8 +1091,6 @@ class MobileFactory implements FactoryInterface
             $device = new Master($useragent, []);
         } elseif (preg_match('/MX Enjoy TV BOX/', $useragent)) {
             $device = new Geniatech($useragent, []);
-        } elseif (preg_match('/TelePAD 9A1/', $useragent)) {
-            $device = new Xoro($useragent, []);
         } elseif (preg_match('/A1000s/', $useragent)) {
             $device = new Xolo($useragent, []);
         } elseif (preg_match('/P3000/', $useragent)) {
