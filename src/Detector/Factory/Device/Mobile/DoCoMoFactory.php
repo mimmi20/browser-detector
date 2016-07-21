@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\DoCoMo;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\DoCoMo;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,25 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DoCoMoP900i extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class DoCoMoFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'P900i',
-                'marketingName'     => 'P900i',
-                'version'           => null,
-                'manufacturer'      => (new Company\DoCoMo())->name,
-                'brand'             => (new Company\DoCoMo())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'unknown',
-                'resolutionWidth'   => 240,
-                'resolutionHeight'  => 320,
-                'dualOrientation'   => false,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Java
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\Java($this->useragent, []);
+        if (preg_match('/P905i/i', $useragent)) {
+            return new DoCoMo\DoCoMoP905i($useragent, []);
+        }
+
+        if (preg_match('/P900i/i', $useragent)) {
+            return new DoCoMo\DoCoMoP900i($useragent, []);
+        }
+
+        return new DoCoMo\DoCoMo($useragent, []);
     }
 }

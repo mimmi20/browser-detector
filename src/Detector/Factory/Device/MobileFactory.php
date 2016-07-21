@@ -479,8 +479,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(DoCoMo|P900i)/i', $useragent)) {
-            $device = new DoCoMo($useragent, []);
-        } elseif (preg_match('/(Easypix|EasyPad|Junior 4\.0)/i', $useragent)) {
+            return Mobile\DoCoMoFactory::detect($useragent);
+        }
+
+        if (preg_match('/(Easypix|EasyPad|Junior 4\.0)/i', $useragent)) {
             $device = new Easypix($useragent, []);
         } elseif (preg_match('/(Efox|SMART\-E5)/', $useragent)) {
             $device = new Efox($useragent, []);
