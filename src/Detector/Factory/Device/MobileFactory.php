@@ -279,7 +279,7 @@ class MobileFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/(HiPhone|V919)/i', $useragent)) {
+        if (preg_match('/(hiphone|v919)/i', $useragent)) {
             return Mobile\HiPhoneFactory::detect($useragent);
         }
 
@@ -306,19 +306,19 @@ class MobileFactory implements FactoryInterface
             return Mobile\AsusFactory::detect($useragent);
         }
 
-        if (preg_match('/MT\-GT\-A9500/i', $useragent)) {
+        if (preg_match('/mt\-gt\-a9500/i', $useragent)) {
             return Mobile\HtmFactory::detect($useragent);
         }
 
-        if (preg_match('/GT\-A7100/i', $useragent)) {
+        if (preg_match('/gt\-a7100/i', $useragent)) {
             return Mobile\SprdFactory::detect($useragent);
         }
 
-        if (preg_match('/(Feiteng|GT\-H)/i', $useragent)) {
+        if (preg_match('/(feiteng|gt\-h)/i', $useragent)) {
             return Mobile\FeitengFactory::detect($useragent);
         }
 
-        if (preg_match('/(cube|U30GT|U51GT|U55GT)/i', $useragent)) {
+        if (preg_match('/(cube|u30gt|u51gt|u55gt)/i', $useragent)) {
             return Mobile\CubeFactory::detect($useragent);
         }
 
@@ -438,15 +438,19 @@ class MobileFactory implements FactoryInterface
             return Mobile\CaterpillarFactory::detect($useragent);
         }
 
-        if (preg_match('/(CatNova|Cat StarGate|Cat Tablet)/i', $useragent)) {
+        if (preg_match('/(catnova|cat stargate|cat tablet)/i', $useragent)) {
             return Mobile\CatSoundFactory::detect($useragent);
         }
 
-        if (preg_match('/(Coby|NBPC724|MID\d{4})/i', $useragent)) {
+        if (preg_match('/(coby|nbpc724)/i', $useragent)) {
             return Mobile\CobyFactory::detect($useragent);
         }
 
-        if (preg_match('/(Comag|WTDR1018)/i', $useragent)) {
+        if (preg_match('/MID\d{4}/', $useragent)) {
+            return Mobile\CobyFactory::detect($useragent);
+        }
+
+        if (preg_match('/(comag|wtdr1018)/i', $useragent)) {
             return Mobile\ComagFactory::detect($useragent);
         }
 
@@ -458,7 +462,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\CosmoteFactory::detect($useragent);
         }
 
-        if (preg_match('/(Creative|ZiiLABS)/i', $useragent)) {
+        if (preg_match('/(creative|ziilabs)/i', $useragent)) {
             return Mobile\CreativeFactory::detect($useragent);
         }
 
@@ -478,13 +482,15 @@ class MobileFactory implements FactoryInterface
             return Mobile\NecFactory::detect($useragent);
         }
 
-        if (preg_match('/(DoCoMo|P900i)/i', $useragent)) {
+        if (preg_match('/(docomo|p900i)/i', $useragent)) {
             return Mobile\DoCoMoFactory::detect($useragent);
         }
 
-        if (preg_match('/(Easypix|EasyPad|Junior 4\.0)/i', $useragent)) {
-            $device = new Easypix($useragent, []);
-        } elseif (preg_match('/(Efox|SMART\-E5)/', $useragent)) {
+        if (preg_match('/(easypix|easypad|junior 4\.0)/i', $useragent)) {
+            return Mobile\EasypixFactory::detect($useragent);
+        }
+
+        if (preg_match('/(Efox|SMART\-E5)/', $useragent)) {
             $device = new Efox($useragent, []);
         } elseif (preg_match('/1 \& 1/i', $useragent)) {
             $device = new EinsUndEins($useragent, []);
