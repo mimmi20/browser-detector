@@ -495,8 +495,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/1 \& 1/i', $useragent)) {
-            $device = new EinsUndEins($useragent, []);
-        } elseif (preg_match('/p7901a/i', $useragent)) {
+            return Mobile\EinsUndEinsFactory::detect($useragent);
+        }
+
+        if (preg_match('/p7901a/i', $useragent)) {
             $device = new Epad($useragent, []);
         } elseif (preg_match('/p7mini/i', $useragent)) {
             $device = new Huawei($useragent, []);
