@@ -491,8 +491,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(Efox|SMART\-E5)/', $useragent)) {
-            $device = new Efox($useragent, []);
-        } elseif (preg_match('/1 \& 1/i', $useragent)) {
+            return Mobile\EfoxFactory::detect($useragent);
+        }
+
+        if (preg_match('/1 \& 1/i', $useragent)) {
             $device = new EinsUndEins($useragent, []);
         } elseif (preg_match('/p7901a/i', $useragent)) {
             $device = new Epad($useragent, []);
