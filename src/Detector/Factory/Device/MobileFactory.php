@@ -547,8 +547,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/SXZ/', $useragent)) {
-            $device = new Sxz($useragent, []);
-        } elseif (preg_match('/explay/i', $useragent)) {
+            return Mobile\SxzFactory::detect($useragent);
+        }
+
+        if (preg_match('/explay/i', $useragent)) {
             $device = new Explay($useragent, []);
         } elseif (preg_match('/pmedia/i', $useragent)) {
             $device = new Pmedia($useragent, []);
