@@ -510,13 +510,15 @@ class MobileFactory implements FactoryInterface
             return Mobile\HuaweiFactory::detect($useragent);
         }
 
-        if (preg_match('/FaktorZwei/i', $useragent)) {
-            $device = new FaktorZwei($useragent, []);
-        } elseif (preg_match('/Flytouch/i', $useragent)) {
+        if (preg_match('/faktorzwei/i', $useragent)) {
+            return Mobile\FaktorZweiFactory::detect($useragent);
+        }
+
+        if (preg_match('/flytouch/i', $useragent)) {
             $device = new Flytouch($useragent, []);
-        } elseif (preg_match('/(Fujitsu|M532)/i', $useragent)) {
+        } elseif (preg_match('/(fujitsu|m532)/i', $useragent)) {
             $device = new Fujitsu($useragent, []);
-        } elseif (preg_match('/SN10T1/i', $useragent)) {
+        } elseif (preg_match('/sn10t1/i', $useragent)) {
             $device = new Hannspree($useragent, []);
         } elseif (preg_match('/DA241HL/', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
@@ -1000,7 +1002,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/FWS610_EU/', $useragent)) {
             $device = new Phicomm($useragent, []);
         } elseif (preg_match('/FX2/', $useragent)) {
-            $device = new FaktorZwei($useragent, []);
+            return Mobile\FaktorZweiFactory::detect($useragent);
         } elseif (preg_match('/AN\d{1,2}/', $useragent)) {
             return Mobile\ArnovaFactory::detect($useragent);
         } elseif (preg_match('/(Touchlet|X7G)/', $useragent)) {
