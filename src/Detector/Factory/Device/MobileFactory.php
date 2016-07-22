@@ -539,10 +539,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/micromax/i', $useragent)) {
-            $device = new Micromax($useragent, []);
-        } elseif (preg_match('/triray/i', $useragent)) {
-            $device = new Triray($useragent, []);
-        } elseif (preg_match('/SXZ/', $useragent)) {
+            return Mobile\MicromaxFactory::detect($useragent);
+        }
+
+        if (preg_match('/triray/i', $useragent)) {
+            return Mobile\TrirayFactory::detect($useragent);
+        }
+
+        if (preg_match('/SXZ/', $useragent)) {
             $device = new Sxz($useragent, []);
         } elseif (preg_match('/explay/i', $useragent)) {
             $device = new Explay($useragent, []);
@@ -818,7 +822,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/TAB A742/', $useragent)) {
             $device = new Wexler($useragent, []);
         } elseif (preg_match('/ a\d{3} /i', $useragent) && preg_match('/android 3\.2/i', $useragent)) {
-            $device = new Micromax($useragent, []);
+            return Mobile\MicromaxFactory::detect($useragent);
         } elseif (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
         } elseif (preg_match('/AT\-AS40SE/', $useragent)) {
@@ -1078,7 +1082,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/SMART Run/', $useragent)) {
             $device = new Mtc($useragent, []);
         } elseif (preg_match('/X8\+/', $useragent)) {
-            $device = new Triray($useragent, []);
+            return Mobile\TrirayFactory::detect($useragent);
         } elseif (preg_match('/QS0716D/', $useragent)) {
             $device = new TriQ($useragent, []);
         } elseif (preg_match('/(Surfer 7\.34|M1_Plus|D7\.2 3G)/', $useragent)) {

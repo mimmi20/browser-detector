@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Micromax;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Micromax;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,53 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicromaxA093 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class MicromaxFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'A093',
-                'marketingName'     => 'A093',
-                'version'           => null,
-                'manufacturer'      => (new Company\Micromax())->name,
-                'brand'             => (new Company\Micromax())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 640,
-                'resolutionHeight'  => 960,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/X650/i', $useragent)) {
+            return new Micromax\MicromaxX650($useragent, []);
+        }
+
+        if (preg_match('/A120/i', $useragent)) {
+            return new Micromax\MicromaxA120($useragent, []);
+        }
+
+        if (preg_match('/A116/i', $useragent)) {
+            return new Micromax\MicromaxA116($useragent, []);
+        }
+
+        if (preg_match('/A114/i', $useragent)) {
+            return new Micromax\MicromaxA114($useragent, []);
+        }
+
+        if (preg_match('/A093/i', $useragent)) {
+            return new Micromax\MicromaxA093($useragent, []);
+        }
+
+        if (preg_match('/A065/i', $useragent)) {
+            return new Micromax\MicromaxA065($useragent, []);
+        }
+
+        if (preg_match('/A40/i', $useragent)) {
+            return new Micromax\MicromaxA40($useragent, []);
+        }
+
+        if (preg_match('/A35/i', $useragent)) {
+            return new Micromax\MicromaxA35($useragent, []);
+        }
+
+        if (preg_match('/A27/i', $useragent)) {
+            return new Micromax\MicromaxA27($useragent, []);
+        }
+
+        return new Micromax\Micromax($useragent, []);
     }
 }
