@@ -515,8 +515,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/flytouch/i', $useragent)) {
-            $device = new Flytouch($useragent, []);
-        } elseif (preg_match('/(fujitsu|m532)/i', $useragent)) {
+            return Mobile\FlytouchFactory::detect($useragent);
+        }
+
+        if (preg_match('/(fujitsu|m532)/i', $useragent)) {
             $device = new Fujitsu($useragent, []);
         } elseif (preg_match('/sn10t1/i', $useragent)) {
             $device = new Hannspree($useragent, []);
