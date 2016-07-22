@@ -523,10 +523,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/sn10t1/i', $useragent)) {
-            $device = new Hannspree($useragent, []);
-        } elseif (preg_match('/DA241HL/', $useragent)) {
+            return Mobile\HannspreeFactory::detect($useragent);
+        }
+
+        if (preg_match('/DA241HL/', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
-        } elseif (preg_match('/(Honlin|PC1088|HL)/', $useragent)) {
+        }
+
+        if (preg_match('/(Honlin|PC1088|HL)/', $useragent)) {
             $device = new Honlin($useragent, []);
         } elseif (preg_match('/huawei/i', $useragent)) {
             return Mobile\HuaweiFactory::detect($useragent);
