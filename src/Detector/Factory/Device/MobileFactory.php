@@ -519,8 +519,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(fujitsu|m532)/i', $useragent)) {
-            $device = new Fujitsu($useragent, []);
-        } elseif (preg_match('/sn10t1/i', $useragent)) {
+            return Mobile\FujitsuFactory::detect($useragent);
+        }
+
+        if (preg_match('/sn10t1/i', $useragent)) {
             $device = new Hannspree($useragent, []);
         } elseif (preg_match('/DA241HL/', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
