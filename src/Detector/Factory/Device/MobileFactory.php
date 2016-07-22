@@ -507,8 +507,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/p7mini/i', $useragent)) {
-            $device = new Huawei($useragent, []);
-        } elseif (preg_match('/FaktorZwei/i', $useragent)) {
+            return Mobile\HuaweiFactory::detect($useragent);
+        }
+
+        if (preg_match('/FaktorZwei/i', $useragent)) {
             $device = new FaktorZwei($useragent, []);
         } elseif (preg_match('/Flytouch/i', $useragent)) {
             $device = new Flytouch($useragent, []);
@@ -520,8 +522,8 @@ class MobileFactory implements FactoryInterface
             return Mobile\AcerFactory::detect($useragent);
         } elseif (preg_match('/(Honlin|PC1088|HL)/', $useragent)) {
             $device = new Honlin($useragent, []);
-        } elseif (preg_match('/Huawei/i', $useragent)) {
-            $device = new Huawei($useragent, []);
+        } elseif (preg_match('/huawei/i', $useragent)) {
+            return Mobile\HuaweiFactory::detect($useragent);
         } elseif (preg_match('/micromax/i', $useragent)) {
             $device = new Micromax($useragent, []);
         } elseif (preg_match('/triray/i', $useragent)) {
