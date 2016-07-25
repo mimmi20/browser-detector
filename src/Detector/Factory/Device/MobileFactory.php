@@ -571,8 +571,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/reellex/i', $useragent)) {
-            $device = new Reellex($useragent, []);
-        } elseif (preg_match('/spice/i', $useragent)) {
+            return Mobile\ReellexFactory::detect($useragent);
+        }
+
+        if (preg_match('/spice/i', $useragent)) {
             $device = new Spice($useragent, []);
         } elseif (preg_match('/turbopad/i', $useragent)) {
             $device = new TurboPad($useragent, []);
@@ -1164,7 +1166,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Numy_Note_9/', $useragent)) {
             $device = new Ainol($useragent, []);
         } elseif (preg_match('/TAB\-97E\-01/', $useragent)) {
-            $device = new Reellex($useragent, []);
+            return Mobile\ReellexFactory::detect($useragent);
         } elseif (preg_match('/vega/i', $useragent)) {
             $device = new Advent($useragent, []);
         } elseif (preg_match('/dream/i', $useragent)) {
