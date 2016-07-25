@@ -575,8 +575,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/spice/i', $useragent)) {
-            $device = new Spice($useragent, []);
-        } elseif (preg_match('/turbopad/i', $useragent)) {
+            return Mobile\SpiceFactory::detect($useragent);
+        }
+
+        if (preg_match('/turbopad/i', $useragent)) {
             $device = new TurboPad($useragent, []);
         } elseif (preg_match('/haier/i', $useragent)) {
             $device = new Haier($useragent, []);
