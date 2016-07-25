@@ -567,8 +567,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/gzone/i', $useragent)) {
-            $device = new Gzone($useragent, []);
-        } elseif (preg_match('/reellex/i', $useragent)) {
+            return Mobile\GzoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/reellex/i', $useragent)) {
             $device = new Reellex($useragent, []);
         } elseif (preg_match('/spice/i', $useragent)) {
             $device = new Spice($useragent, []);
@@ -1158,7 +1160,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/M040/', $useragent)) {
             $device = new Meizu($useragent, []);
         } elseif (preg_match('/CAL21/', $useragent)) {
-            $device = new Gzone($useragent, []);
+            return Mobile\GzoneFactory::detect($useragent);
         } elseif (preg_match('/Numy_Note_9/', $useragent)) {
             $device = new Ainol($useragent, []);
         } elseif (preg_match('/TAB\-97E\-01/', $useragent)) {
