@@ -595,8 +595,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/hummer/i', $useragent)) {
-            $device = new Hummer($useragent, []);
-        } elseif (preg_match('/oysters/i', $useragent)) {
+            return Mobile\HummerFactory::detect($useragent);
+        }
+
+        if (preg_match('/oysters/i', $useragent)) {
             $device = new Oysters($useragent, []);
         } elseif (preg_match('/vertex/i', $useragent)) {
             $device = new Vertex($useragent, []);
@@ -1164,7 +1166,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/M601/', $useragent)) {
             return Mobile\AocFactory::detect($useragent);
         } elseif (preg_match('/H1\+/', $useragent)) {
-            $device = new Hummer($useragent, []);
+            return Mobile\HummerFactory::detect($useragent);
         } elseif (preg_match('/Pacific800i/', $useragent)) {
             $device = new Oysters($useragent, []);
         } elseif (preg_match('/Impress\_L/', $useragent)) {
