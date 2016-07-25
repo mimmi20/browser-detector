@@ -583,8 +583,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/haier/i', $useragent)) {
-            $device = new Haier($useragent, []);
-        } elseif (preg_match('/sunstech/i', $useragent)) {
+            return Mobile\HaierFactory::detect($useragent);
+        }
+
+        if (preg_match('/sunstech/i', $useragent)) {
             $device = new Sunstech($useragent, []);
         } elseif (preg_match('/AOC/', $useragent)) {
             $device = new Aoc($useragent, []);
@@ -1198,7 +1200,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Turbo X6/', $useragent)) {
             return Mobile\TurboPadFactory::detect($useragent);
         } elseif (preg_match('/HW\-W718/', $useragent)) {
-            $device = new Haier($useragent, []);
+            return Mobile\HaierFactory::detect($useragent);
         } elseif (preg_match('/Air A70/', $useragent)) {
             $device = new RoverPad($useragent, []);
         } elseif (preg_match('/SP\-6020 QUASAR/', $useragent)) {
