@@ -555,8 +555,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/pmedia/i', $useragent)) {
-            $device = new Pmedia($useragent, []);
-        } elseif (preg_match('/impression/i', $useragent)) {
+            return Mobile\PmediaFactory::detect($useragent);
+        }
+
+        if (preg_match('/impression/i', $useragent)) {
             $device = new Impression($useragent, []);
         } elseif (preg_match('/kingzone/i', $useragent)) {
             $device = new Kingzone($useragent, []);
@@ -1092,7 +1094,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(Surfer 7\.34|M1_Plus|D7\.2 3G)/', $useragent)) {
             return Mobile\ExplayFactory::detect($useragent);
         } elseif (preg_match('/PMSmart450/', $useragent)) {
-            $device = new Pmedia($useragent, []);
+            return Mobile\PmediaFactory::detect($useragent);
         } elseif (preg_match('/(F031|SCL24|ACE)/', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/ImPAD/', $useragent)) {
