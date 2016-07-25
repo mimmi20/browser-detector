@@ -563,8 +563,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/kingzone/i', $useragent)) {
-            $device = new Kingzone($useragent, []);
-        } elseif (preg_match('/gzone/i', $useragent)) {
+            return Mobile\KingzoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/gzone/i', $useragent)) {
             $device = new Gzone($useragent, []);
         } elseif (preg_match('/reellex/i', $useragent)) {
             $device = new Reellex($useragent, []);
@@ -1102,7 +1104,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ImPAD/', $useragent)) {
             return Mobile\ImpressionFactory::detect($useragent);
         } elseif (preg_match('/K1 turbo/', $useragent)) {
-            $device = new Kingzone($useragent, []);
+            return Mobile\KingzoneFactory::detect($useragent);
         } elseif (preg_match('/TAB917QC\-8GB/', $useragent)) {
             $device = new Sunstech($useragent, []);
         } elseif (preg_match('/(TPC\-PA10\.1M|M7T|P93G|i75)/', $useragent)) {
