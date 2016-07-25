@@ -559,8 +559,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/impression/i', $useragent)) {
-            $device = new Impression($useragent, []);
-        } elseif (preg_match('/kingzone/i', $useragent)) {
+            return Mobile\ImpressionFactory::detect($useragent);
+        }
+
+        if (preg_match('/kingzone/i', $useragent)) {
             $device = new Kingzone($useragent, []);
         } elseif (preg_match('/gzone/i', $useragent)) {
             $device = new Gzone($useragent, []);
@@ -947,8 +949,8 @@ class MobileFactory implements FactoryInterface
             $device = new Zeki($useragent, []);
         } elseif (preg_match('/AC0732C/', $useragent)) {
             $device = new TriQ($useragent, []);
-        } elseif (preg_match('/ImPAD6213M_v2/', $useragent)) {
-            $device = new Impression($useragent, []);
+        } elseif (preg_match('/ImPAD6213M\_v2/', $useragent)) {
+            return Mobile\ImpressionFactory::detect($useragent);
         } elseif (preg_match('/(A10100|C07000)/', $useragent)) {
             $device = new Nomi($useragent, []);
         } elseif (preg_match('/(C|D)\d{4}/', $useragent)) {
@@ -1098,7 +1100,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(F031|SCL24|ACE)/', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/ImPAD/', $useragent)) {
-            $device = new Impression($useragent, []);
+            return Mobile\ImpressionFactory::detect($useragent);
         } elseif (preg_match('/K1 turbo/', $useragent)) {
             $device = new Kingzone($useragent, []);
         } elseif (preg_match('/TAB917QC\-8GB/', $useragent)) {
