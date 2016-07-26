@@ -29,12 +29,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Hp extends AbstractDevice implements DeviceHasChildrenInterface
+class HpSlate10Hd extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,17 +59,17 @@ class Hp extends AbstractDevice implements DeviceHasChildrenInterface
 
         $this->setData(
             [
-                'deviceName'        => 'general HP Device',
-                'marketingName'     => 'general HP Device',
+                'deviceName'        => 'Slate 10',
+                'marketingName'     => 'Slate 10',
                 'version'           => null,
                 'manufacturer'      => (new Company\Hp())->name,
                 'brand'             => (new Company\Hp())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => null,
-                'colors'            => null,
+                'resolutionWidth'   => 1280,
+                'resolutionHeight'  => 800,
+                'dualOrientation'   => true,
+                'colors'            => 16777216,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
@@ -79,20 +79,12 @@ class Hp extends AbstractDevice implements DeviceHasChildrenInterface
     }
 
     /**
-     * detects the device name from the given user agent
+     * returns the OS Handler
      *
-     * @return \UaResult\Device\DeviceInterface
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function detectDevice()
+    public function detectOs()
     {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Hp');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Hp' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

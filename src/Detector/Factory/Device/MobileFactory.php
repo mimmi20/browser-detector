@@ -614,9 +614,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\GfiveFactory::detect($useragent);
         }
 
-        if (preg_match('/(HP|P160U|TouchPad|Pixi|palm|Blazer|cm_tenderloin)/i', $useragent)) {
-            $device = new Hp($useragent, []);
-        } elseif (preg_match('/iconbit/i', $useragent)) {
+        if (preg_match('/(hp|p160u|touchpad|pixi|palm|blazer|cm\_tenderloin)/i', $useragent)) {
+            return Mobile\HpFactory::detect($useragent);
+        }
+
+        if (preg_match('/iconbit/i', $useragent)) {
             $device = new IconBit($useragent, []);
         } elseif (preg_match('/(INM803HC|INM8002KP)/', $useragent)) {
             $device = new Intenso($useragent, []);
@@ -948,7 +950,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/dataaccessd/', $useragent)) {
             return Mobile\AppleFactory::detect($useragent);
         } elseif (preg_match('/Pre/', $useragent) && !preg_match('/Presto/', $useragent)) {
-            $device = new Hp($useragent, []);
+            return Mobile\HpFactory::detect($useragent);
         } elseif (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501|N918St|Beeline Pro|ATLAS_W)/', $useragent)) {
             return Mobile\ZteFactory::detect($useragent);
         } elseif (preg_match('/ME\d{3}[A-Z]/', $useragent)) {

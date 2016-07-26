@@ -33,12 +33,7 @@ namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +41,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HpSlate10 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class Hp extends AbstractDevice
 {
     /**
      * the class constructor
@@ -62,59 +57,22 @@ class HpSlate10 extends AbstractDevice implements DeviceHasSpecificPlatformInter
 
         $this->setData(
             [
-                'deviceName'        => 'Slate 10',
-                'marketingName'     => 'Slate 10',
+                'deviceName'        => 'general HP Device',
+                'marketingName'     => 'general HP Device',
                 'version'           => null,
                 'manufacturer'      => (new Company\Hp())->name,
                 'brand'             => (new Company\Hp())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 1280,
-                'resolutionHeight'  => 800,
-                'dualOrientation'   => true,
-                'colors'            => 16777216,
+                'resolutionWidth'   => null,
+                'resolutionHeight'  => null,
+                'dualOrientation'   => null,
+                'colors'            => null,
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
                 'type'              => new UaDeviceType\Tablet(),
             ]
         );
-    }
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains('HP Slate 10 HD')) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
-     */
-    public function detectOs()
-    {
-        return new Os\AndroidOs($this->useragent, []);
     }
 }
