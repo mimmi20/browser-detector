@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Jolla;
 
 use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
