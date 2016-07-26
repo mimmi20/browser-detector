@@ -658,9 +658,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\LencoFactory::detect($useragent);
         }
 
-        if (preg_match('/LePan/i', $useragent)) {
-            $device = new LePan($useragent, []);
-        } elseif (preg_match('/(LogicPD|Zoom2|NookColor)/', $useragent)) {
+        if (preg_match('/LePan/', $useragent)) {
+            return Mobile\LePanFactory::detect($useragent);
+        }
+
+        if (preg_match('/(LogicPD|Zoom2|NookColor)/', $useragent)) {
             $device = new Logikpd($useragent, []);
         } elseif (preg_match('/(medion|lifetab)/i', $useragent)) {
             $device = new Medion($useragent, []);
