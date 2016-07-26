@@ -619,8 +619,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/iconbit/i', $useragent)) {
-            $device = new IconBit($useragent, []);
-        } elseif (preg_match('/(INM803HC|INM8002KP)/', $useragent)) {
+            return Mobile\IconBitFactory::detect($useragent);
+        }
+
+        if (preg_match('/(INM803HC|INM8002KP)/', $useragent)) {
             $device = new Intenso($useragent, []);
         } elseif (preg_match('/ionik/i', $useragent)) {
             $device = new Ionik($useragent, []);
@@ -1094,7 +1096,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(W100|W200|W8_beyond)/', $useragent)) {
             $device = new Thl($useragent, []);
         } elseif (preg_match('/NT\-\d{4}(S|P|T)/', $useragent)) {
-            $device = new IconBit($useragent, []);
+            return Mobile\IconBitFactory::detect($useragent);
         } elseif (preg_match('/Primo76/', $useragent)) {
             $device = new Msi($useragent, []);
         } elseif (preg_match('/CINK PEAX 2/', $useragent)) {

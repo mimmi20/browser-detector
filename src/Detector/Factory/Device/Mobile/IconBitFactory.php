@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\IconBit;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\IconBit;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,33 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class IconBitNt3601p extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class IconBitFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'NetTAB Pocket 3G',
-                'marketingName'     => 'NetTAB Pocket 3G',
-                'version'           => null,
-                'manufacturer'      => (new Company\IconBit())->name,
-                'brand'             => (new Company\IconBit())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 1024,
-                'resolutionHeight'  => 600,
-                'dualOrientation'   => true,
-                'colors'            => 65500,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/nt\-3710s/i', $useragent)) {
+            return new IconBit\IconBitNt3710s($useragent, []);
+        }
+
+        if (preg_match('/nt\-3601p/i', $useragent)) {
+            return new IconBit\IconBitNt3601p($useragent, []);
+        }
+
+        if (preg_match('/nt\-1002t/i', $useragent)) {
+            return new IconBit\IconBitNt1002t($useragent, []);
+        }
+
+        if (preg_match('/nt\-1001t/i', $useragent)) {
+            return new IconBit\IconBitNt1001t($useragent, []);
+        }
+
+        return new IconBit\IconBit($useragent, []);
     }
 }
