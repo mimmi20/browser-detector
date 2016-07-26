@@ -622,9 +622,15 @@ class MobileFactory implements FactoryInterface
             return Mobile\IconBitFactory::detect($useragent);
         }
 
-        if (preg_match('/(INM803HC|INM8002KP)/', $useragent)) {
-            $device = new Intenso($useragent, []);
-        } elseif (preg_match('/ionik/i', $useragent)) {
+        if (preg_match('/intenso/', $useragent)) {
+            return Mobile\IntensoFactory::detect($useragent);
+        }
+
+        if (preg_match('/INM\d{3,4}/', $useragent)) {
+            return Mobile\IntensoFactory::detect($useragent);
+        }
+
+        if (preg_match('/ionik/i', $useragent)) {
             $device = new Ionik($useragent, []);
         } elseif (preg_match('/JAY\-tech/i', $useragent)) {
             $device = new Jaytech($useragent, []);
