@@ -138,7 +138,7 @@ use BrowserDetector\Detector\Device\Mobile\LePan;
 use BrowserDetector\Detector\Device\Mobile\Lexand;
 use BrowserDetector\Detector\Device\Mobile\Lg;
 use BrowserDetector\Detector\Device\Mobile\Logicom;
-use BrowserDetector\Detector\Device\Mobile\Logikpd;
+use BrowserDetector\Detector\Device\Mobile\Logicpd;
 use BrowserDetector\Detector\Device\Mobile\Magic;
 use BrowserDetector\Detector\Device\Mobile\Malata;
 use BrowserDetector\Detector\Device\Mobile\Manta;
@@ -663,8 +663,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(LogicPD|Zoom2|NookColor)/', $useragent)) {
-            $device = new Logikpd($useragent, []);
-        } elseif (preg_match('/(medion|lifetab)/i', $useragent)) {
+            return Mobile\LogicpdFactory::detect($useragent);
+        }
+
+        if (preg_match('/(medion|lifetab)/i', $useragent)) {
             $device = new Medion($useragent, []);
         } elseif (preg_match('/meizu/i', $useragent)) {
             $device = new Meizu($useragent, []);

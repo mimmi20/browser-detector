@@ -29,16 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Logikpd;
+namespace BrowserDetector\Detector\Device\Mobile\Logicpd;
 
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +43,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Zoom2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class Zoom2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -65,8 +62,8 @@ class Zoom2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
                 'deviceName'        => 'Zoom2',
                 'marketingName'     => 'Zoom2',
                 'version'           => null,
-                'manufacturer'      => (new Company\Logikpd())->name,
-                'brand'             => (new Company\Logikpd())->brandname,
+                'manufacturer'      => (new Company\Logicpd())->name,
+                'brand'             => (new Company\Logicpd())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -79,33 +76,6 @@ class Zoom2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains(['Zoom2', 'NookColor'])) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**

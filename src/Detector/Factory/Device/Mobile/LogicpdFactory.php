@@ -29,7 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Company;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
+
+use BrowserDetector\Detector\Device\Mobile\Logicpd;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -37,19 +40,21 @@ namespace BrowserDetector\Detector\Company;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Logikpd
+class LogicpdFactory implements FactoryInterface
 {
     /**
-     * the name of the company
+     * detects the device name from the given user agent
      *
-     * @var string
+     * @param string $useragent
+     *
+     * @return \UaResult\Device\DeviceInterface
      */
-    public $name = 'LogicPD';
+    public static function detect($useragent)
+    {
+        if (preg_match('/(zoom2|nookcolor)/i', $useragent)) {
+            return new Logicpd\Zoom2($useragent, []);
+        }
 
-    /**
-     * the brand name of the company
-     *
-     * @var string
-     */
-    public $brandname = 'LogicPD';
+        return new Logicpd\Logicpd($useragent, []);
+    }
 }
