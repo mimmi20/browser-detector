@@ -611,8 +611,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/gfive/i', $useragent)) {
-            $device = new Gfive($useragent, []);
-        } elseif (preg_match('/(HP|P160U|TouchPad|Pixi|palm|Blazer|cm_tenderloin)/i', $useragent)) {
+            return Mobile\GfiveFactory::detect($useragent);
+        }
+
+        if (preg_match('/(HP|P160U|TouchPad|Pixi|palm|Blazer|cm_tenderloin)/i', $useragent)) {
             $device = new Hp($useragent, []);
         } elseif (preg_match('/iconbit/i', $useragent)) {
             $device = new IconBit($useragent, []);
