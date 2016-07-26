@@ -631,8 +631,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ionik/i', $useragent)) {
-            $device = new Ionik($useragent, []);
-        } elseif (preg_match('/JAY\-tech/i', $useragent)) {
+            return Mobile\IonikFactory::detect($useragent);
+        }
+
+        if (preg_match('/JAY\-tech/i', $useragent)) {
             $device = new Jaytech($useragent, []);
         } elseif (preg_match('/(jolla|sailfish)/i', $useragent)) {
             $device = new Jolla($useragent, []);
