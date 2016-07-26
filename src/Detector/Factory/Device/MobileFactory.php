@@ -646,9 +646,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\KazamFactory::detect($useragent);
         }
 
-        if (preg_match('/KDDI/i', $useragent)) {
-            $device = new Kddi($useragent, []);
-        } elseif (preg_match('/Kobo Touch/i', $useragent)) {
+        if (preg_match('/kddi/i', $useragent)) {
+            return Mobile\KddiFactory::detect($useragent);
+        }
+
+        if (preg_match('/Kobo Touch/i', $useragent)) {
             $device = new Kobo($useragent, []);
         } elseif (preg_match('/Lenco/i', $useragent)) {
             $device = new Lenco($useragent, []);
