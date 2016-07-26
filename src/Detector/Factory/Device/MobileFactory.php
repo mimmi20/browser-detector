@@ -642,9 +642,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\JollaFactory::detect($useragent);
         }
 
-        if (preg_match('/KAZAM/i', $useragent)) {
-            $device = new Kazam($useragent, []);
-        } elseif (preg_match('/KDDI/i', $useragent)) {
+        if (preg_match('/kazam/i', $useragent)) {
+            return Mobile\KazamFactory::detect($useragent);
+        }
+
+        if (preg_match('/KDDI/i', $useragent)) {
             $device = new Kddi($useragent, []);
         } elseif (preg_match('/Kobo Touch/i', $useragent)) {
             $device = new Kobo($useragent, []);
