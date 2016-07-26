@@ -635,8 +635,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/JAY\-tech/i', $useragent)) {
-            $device = new Jaytech($useragent, []);
-        } elseif (preg_match('/(jolla|sailfish)/i', $useragent)) {
+            return Mobile\JaytechFactory::detect($useragent);
+        }
+
+        if (preg_match('/(jolla|sailfish)/i', $useragent)) {
             $device = new Jolla($useragent, []);
         } elseif (preg_match('/KAZAM/i', $useragent)) {
             $device = new Kazam($useragent, []);
