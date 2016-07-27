@@ -671,8 +671,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/meizu/i', $useragent)) {
-            $device = new Meizu($useragent, []);
-        } elseif (preg_match('/allwinner/i', $useragent)) {
+            return Mobile\MeizuFactory::detect($useragent);
+        }
+
+        if (preg_match('/allwinner/i', $useragent)) {
             $device = new AllWinner($useragent, []);
         } elseif (preg_match('/accent/i', $useragent)) {
             $device = new Accent($useragent, []);
@@ -1210,7 +1212,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Impress\_L/', $useragent)) {
             return Mobile\VertexFactory::detect($useragent);
         } elseif (preg_match('/M040/', $useragent)) {
-            $device = new Meizu($useragent, []);
+            return Mobile\MeizuFactory::detect($useragent);
         } elseif (preg_match('/CAL21/', $useragent)) {
             return Mobile\GzoneFactory::detect($useragent);
         } elseif (preg_match('/Numy_Note_9/', $useragent)) {

@@ -29,12 +29,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Meizu;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Meizu extends AbstractDevice implements DeviceHasChildrenInterface
+class Meizu extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -79,20 +79,12 @@ class Meizu extends AbstractDevice implements DeviceHasChildrenInterface
     }
 
     /**
-     * detects the device name from the given user agent
+     * returns the OS Handler
      *
-     * @return \UaResult\Device\DeviceInterface
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function detectDevice()
+    public function detectOs()
     {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Meizu');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Meizu' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return new Os\AndroidOs($this->useragent, []);
     }
 }
