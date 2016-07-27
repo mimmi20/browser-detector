@@ -691,8 +691,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/supra/i', $useragent)) {
-            $device = new Supra($useragent, []);
-        } elseif (preg_match('/nextway/i', $useragent)) {
+            return Mobile\SupraFactory::detect($useragent);
+        }
+
+        if (preg_match('/nextway/i', $useragent)) {
             $device = new Nextway($useragent, []);
         } elseif (preg_match('/amlogic/i', $useragent)) {
             $device = new Amlogic($useragent, []);
