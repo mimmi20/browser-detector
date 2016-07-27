@@ -29,13 +29,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Ainol;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
@@ -45,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Yota extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
+class Ainol extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -61,11 +59,11 @@ class Yota extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
 
         $this->setData(
             [
-                'deviceName'        => 'general Yota Device',
-                'marketingName'     => 'general Yota Device',
+                'deviceName'        => 'general Ainol Device',
+                'marketingName'     => 'general Ainol Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Yota())->name,
-                'brand'             => (new Company\Yota())->brandname,
+                'manufacturer'      => (new Company\Ainol())->name,
+                'brand'             => (new Company\Ainol())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -75,27 +73,9 @@ class Yota extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Yota');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Yota' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**

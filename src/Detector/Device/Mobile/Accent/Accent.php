@@ -29,13 +29,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Accent;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
@@ -45,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ainol extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
+class Accent extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -61,11 +59,11 @@ class Ainol extends AbstractDevice implements DeviceHasChildrenInterface, Device
 
         $this->setData(
             [
-                'deviceName'        => 'general Ainol Device',
-                'marketingName'     => 'general Ainol Device',
+                'deviceName'        => 'general Accent Device',
+                'marketingName'     => 'general Accent Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Ainol())->name,
-                'brand'             => (new Company\Ainol())->brandname,
+                'manufacturer'      => (new Company\Accent())->name,
+                'brand'             => (new Company\Accent())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -78,24 +76,6 @@ class Ainol extends AbstractDevice implements DeviceHasChildrenInterface, Device
                 'type'              => new UaDeviceType\Tablet(),
             ]
         );
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Ainol');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Ainol' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
