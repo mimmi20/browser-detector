@@ -718,8 +718,10 @@ class MobileFactory implements FactoryInterface
             && !preg_match('/miuibrowser/i', $useragent)
             && !preg_match('/build\/miui/i', $useragent)
         ) {
-            $device = new Miui($useragent, []);
-        } elseif (preg_match('/cynus/i', $useragent)) {
+            return Mobile\MiuiFactory::detect($useragent);
+        }
+
+        if (preg_match('/cynus/i', $useragent)) {
             $device = new Mobistel($useragent, []);
         } elseif (preg_match('/motorola/i', $useragent)) {
             return Mobile\MotorolaFactory::detect($useragent);
