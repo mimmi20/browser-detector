@@ -695,10 +695,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/nextway/i', $useragent)) {
-            $device = new Nextway($useragent, []);
-        } elseif (preg_match('/amlogic/i', $useragent)) {
-            $device = new Amlogic($useragent, []);
-        } elseif (preg_match('/adspec/i', $useragent)) {
+            return Mobile\NextwayFactory::detect($useragent);
+        }
+
+        if (preg_match('/amlogic/i', $useragent)) {
+            return Mobile\AmlogicFactory::detect($useragent);
+        }
+
+        if (preg_match('/adspec/i', $useragent)) {
             $device = new Adspec($useragent, []);
         } elseif (preg_match('/m\-way/i', $useragent)) {
             $device = new Mway($useragent, []);
@@ -1234,9 +1238,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/dream/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/F10X/', $useragent)) {
-            $device = new Nextway($useragent, []);
+            return Mobile\NextwayFactory::detect($useragent);
         } elseif (preg_match('/ M8 /', $useragent)) {
-            $device = new Amlogic($useragent, []);
+            return Mobile\AmlogicFactory::detect($useragent);
         } elseif (preg_match('/AdTab 7 Lite/', $useragent)) {
             $device = new Adspec($useragent, []);
         } elseif (preg_match('/Plane 10\.3 3G PS1043MG/', $useragent)) {

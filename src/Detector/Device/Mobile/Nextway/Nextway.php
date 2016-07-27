@@ -29,13 +29,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Nextway;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
@@ -45,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Amlogic extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
+class Nextway extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -61,11 +59,11 @@ class Amlogic extends AbstractDevice implements DeviceHasChildrenInterface, Devi
 
         $this->setData(
             [
-                'deviceName'        => 'general Amlogic Device',
-                'marketingName'     => 'general Amlogic Device',
+                'deviceName'        => 'general Nextway Device',
+                'marketingName'     => 'general Nextway Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Amlogic())->name,
-                'brand'             => (new Company\Amlogic())->brandname,
+                'manufacturer'      => (new Company\Nextway())->name,
+                'brand'             => (new Company\Nextway())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -75,27 +73,9 @@ class Amlogic extends AbstractDevice implements DeviceHasChildrenInterface, Devi
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tv(),
+                'type'              => new UaDeviceType\Tablet(),
             ]
         );
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Amlogic');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Amlogic' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
