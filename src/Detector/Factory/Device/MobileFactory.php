@@ -707,10 +707,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/m\-way/i', $useragent)) {
-            $device = new Mway($useragent, []);
-        } elseif (preg_match('/memup/i', $useragent)) {
-            $device = new Memup($useragent, []);
-        } elseif (preg_match('/miui/i', $useragent)
+            return Mobile\MwayFactory::detect($useragent);
+        }
+
+        if (preg_match('/memup/i', $useragent)) {
+            return Mobile\MemupFactory::detect($useragent);
+        }
+
+        if (preg_match('/miui/i', $useragent)
             && !preg_match('/miuibrowser/i', $useragent)
             && !preg_match('/build\/miui/i', $useragent)
         ) {
@@ -1186,7 +1190,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/6036Y/', $useragent)) {
             $device = new Alcatel($useragent, []);
         } elseif (preg_match('/MD948G/', $useragent)) {
-            $device = new Mway($useragent, []);
+            return Mobile\MwayFactory::detect($useragent);
         } elseif (preg_match('/P4501/', $useragent)) {
             return Mobile\MedionFactory::detect($useragent);
         } elseif (preg_match('/ V3 /', $useragent)) {
