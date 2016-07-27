@@ -667,8 +667,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(medion|lifetab)/i', $useragent)) {
-            $device = new Medion($useragent, []);
-        } elseif (preg_match('/meizu/i', $useragent)) {
+            return Mobile\MedionFactory::detect($useragent);
+        }
+
+        if (preg_match('/meizu/i', $useragent)) {
             $device = new Meizu($useragent, []);
         } elseif (preg_match('/allwinner/i', $useragent)) {
             $device = new AllWinner($useragent, []);
@@ -1168,7 +1170,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/MD948G/', $useragent)) {
             $device = new Mway($useragent, []);
         } elseif (preg_match('/P4501/', $useragent)) {
-            $device = new Medion($useragent, []);
+            return Mobile\MedionFactory::detect($useragent);
         } elseif (preg_match('/ V3 /', $useragent)) {
             $device = new Inew($useragent, []);
         } elseif (preg_match('/PX\-0905/', $useragent)) {
