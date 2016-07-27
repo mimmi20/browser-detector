@@ -675,8 +675,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/allwinner/i', $useragent)) {
-            $device = new AllWinner($useragent, []);
-        } elseif (preg_match('/accent/i', $useragent)) {
+            return Mobile\AllWinnerFactory::detect($useragent);
+        }
+
+        if (preg_match('/accent/i', $useragent)) {
             $device = new Accent($useragent, []);
         } elseif (preg_match('/yota/i', $useragent)) {
             $device = new Yota($useragent, []);
@@ -1238,7 +1240,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(A1002|A811)/', $useragent)) {
             $device = new Lexand($useragent, []);
         } elseif (preg_match('/ A10/', $useragent)) {
-            $device = new AllWinner($useragent, []);
+            return Mobile\AllWinnerFactory::detect($useragent);
         } elseif (preg_match('/TOUAREG8_3G/', $useragent)) {
             $device = new Accent($useragent, []);
         } elseif (preg_match('/chagall/', $useragent)) {
