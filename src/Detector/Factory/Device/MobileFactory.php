@@ -730,8 +730,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/WeTab/', $useragent)) {
-            $device = new Neofonie($useragent, []);
-        } elseif (preg_match('/Nextbook/', $useragent)) {
+            return Mobile\NeofonieFactory::detect($useragent);
+        }
+
+        if (preg_match('/Nextbook/', $useragent)) {
             $device = new Nextbook($useragent, []);
         } elseif (preg_match('/Nintendo/', $useragent)) {
             $device = new Nintendo($useragent, []);
