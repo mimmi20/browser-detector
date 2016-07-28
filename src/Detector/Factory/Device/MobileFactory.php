@@ -738,8 +738,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Nintendo/', $useragent)) {
-            $device = new Nintendo($useragent, []);
-        } elseif (preg_match('/Nvsbl/', $useragent)) {
+            return Mobile\NintendoFactory::detect($useragent);
+        }
+
+        if (preg_match('/Nvsbl/', $useragent)) {
             $device = new Nvsbl($useragent, []);
         } elseif (preg_match('/odys/i', $useragent)) {
             $device = new Odys($useragent, []);

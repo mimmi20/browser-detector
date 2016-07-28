@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nintendo;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Nintendo;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,33 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NintendoDsi extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class NintendoFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'DSi',
-                'marketingName'     => 'DSi',
-                'version'           => null,
-                'manufacturer'      => (new Company\Nintendo())->name,
-                'brand'             => (new Company\Nintendo())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => null,
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => null,
-                'colors'            => null,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => false,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\UnknownOs($this->useragent, []);
+        if (preg_match('/WiiU/', $useragent)) {
+            return new Nintendo\NintendoWiiU($useragent, []);
+        }
+
+        if (preg_match('/Wii/', $useragent)) {
+            return new Nintendo\NintendoWii($useragent, []);
+        }
+
+        if (preg_match('/DSi/', $useragent)) {
+            return new Nintendo\NintendoDsi($useragent, []);
+        }
+
+        if (preg_match('/3DS/', $useragent)) {
+            return new Nintendo\Nintendo3ds($useragent, []);
+        }
+
+        return new Nintendo\Nintendo($useragent, []);
     }
 }
