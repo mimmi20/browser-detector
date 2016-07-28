@@ -742,8 +742,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Nvsbl/', $useragent)) {
-            $device = new Nvsbl($useragent, []);
-        } elseif (preg_match('/odys/i', $useragent)) {
+            return Mobile\NvsblFactory::detect($useragent);
+        }
+
+        if (preg_match('/odys/i', $useragent)) {
             $device = new Odys($useragent, []);
         } elseif (preg_match('/oppo/i', $useragent)) {
             $device = new Oppo($useragent, []);
