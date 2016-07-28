@@ -734,8 +734,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Nextbook/', $useragent)) {
-            $device = new Nextbook($useragent, []);
-        } elseif (preg_match('/Nintendo/', $useragent)) {
+            return Mobile\NextbookFactory::detect($useragent);
+        }
+
+        if (preg_match('/Nintendo/', $useragent)) {
             $device = new Nintendo($useragent, []);
         } elseif (preg_match('/Nvsbl/', $useragent)) {
             $device = new Nvsbl($useragent, []);
@@ -1062,7 +1064,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Aqua\_Star/', $useragent)) {
             $device = new Intex($useragent, []);
         } elseif (preg_match('/NEXT/', $useragent)) {
-            $device = new Nextbook($useragent, []);
+            return Mobile\NextbookFactory::detect($useragent);
         } elseif (preg_match('/XT\d{3,4}/', $useragent)) {
             return Mobile\MotorolaFactory::detect($useragent);
         } elseif (preg_match('/( droid)/i', $useragent)) {
