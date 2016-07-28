@@ -746,8 +746,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/odys/i', $useragent)) {
-            $device = new Odys($useragent, []);
-        } elseif (preg_match('/oppo/i', $useragent)) {
+            return Mobile\OdysFactory::detect($useragent);
+        }
+
+        if (preg_match('/oppo/i', $useragent)) {
             $device = new Oppo($useragent, []);
         } elseif (preg_match('/Panasonic/', $useragent)) {
             $device = new Panasonic($useragent, []);
@@ -1003,8 +1005,8 @@ class MobileFactory implements FactoryInterface
             $device = new Anka($useragent, []);
         } elseif (preg_match('/myTAB/', $useragent)) {
             $device = new Mytab($useragent, []);
-        } elseif (preg_match('/(LOOX|UNO\_X10|Xelio 7|NEO\_QUAD10|IEOS\_QUAD|Sky Plus)/i', $useragent)) {
-            $device = new Odys($useragent, []);
+        } elseif (preg_match('/(loox|uno\_x10|xelio|neo\_quad10|ieos\_quad|sky plus)/i', $useragent)) {
+            return Mobile\OdysFactory::detect($useragent);
         } elseif (preg_match('/iPh\d\,\d/', $useragent)) {
             return Mobile\AppleFactory::detect($useragent);
         } elseif (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
