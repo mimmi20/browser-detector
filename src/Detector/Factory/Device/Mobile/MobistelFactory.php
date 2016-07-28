@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Mobistel;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Mobistel;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,49 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MobistelCynusF3 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class MobistelFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Cynus F3',
-                'marketingName'     => 'Cynus F3',
-                'version'           => null,
-                'manufacturer'      => (new Company\Mobistel())->name,
-                'brand'             => (new Company\Mobistel())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 480,
-                'resolutionHeight'  => 800,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/cynus t6/i', $useragent)) {
+            return new Mobistel\MobistelCynusT6($useragent, []);
+        }
+
+        if (preg_match('/cynus t5/i', $useragent)) {
+            return new Mobistel\MobistelCynusT5($useragent, []);
+        }
+
+        if (preg_match('/cynus t2/i', $useragent)) {
+            return new Mobistel\MobistelCynusT2($useragent, []);
+        }
+
+        if (preg_match('/cynus t1/i', $useragent)) {
+            return new Mobistel\MobistelCynusT1($useragent, []);
+        }
+
+        if (preg_match('/cynus f5/i', $useragent)) {
+            return new Mobistel\MobistelCynusF5($useragent, []);
+        }
+
+        if (preg_match('/cynus f4/i', $useragent)) {
+            return new Mobistel\MobistelCynusF4($useragent, []);
+        }
+
+        if (preg_match('/cynus f3/i', $useragent)) {
+            return new Mobistel\MobistelCynusF3($useragent, []);
+        }
+
+        if (preg_match('/cynus e1/i', $useragent)) {
+            return new Mobistel\MobistelCynusE1($useragent, []);
+        }
+
+        return new Mobistel\Mobistel($useragent, []);
     }
 }

@@ -721,11 +721,15 @@ class MobileFactory implements FactoryInterface
             return Mobile\MiuiFactory::detect($useragent);
         }
 
-        if (preg_match('/cynus/i', $useragent)) {
-            $device = new Mobistel($useragent, []);
-        } elseif (preg_match('/motorola/i', $useragent)) {
+        if (preg_match('/(mobistel|cynus)/i', $useragent)) {
+            return Mobile\MobistelFactory::detect($useragent);
+        }
+
+        if (preg_match('/motorola/i', $useragent)) {
             return Mobile\MotorolaFactory::detect($useragent);
-        } elseif (preg_match('/WeTab/', $useragent)) {
+        }
+
+        if (preg_match('/WeTab/', $useragent)) {
             $device = new Neofonie($useragent, []);
         } elseif (preg_match('/Nextbook/', $useragent)) {
             $device = new Nextbook($useragent, []);
