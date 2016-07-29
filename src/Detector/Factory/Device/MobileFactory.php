@@ -750,8 +750,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/oppo/i', $useragent)) {
-            $device = new Oppo($useragent, []);
-        } elseif (preg_match('/Panasonic/', $useragent)) {
+            return Mobile\OppoFactory::detect($useragent);
+        }
+
+        if (preg_match('/Panasonic/', $useragent)) {
             $device = new Panasonic($useragent, []);
         } elseif (preg_match('/pandigital/i', $useragent)) {
             $device = new Pandigital($useragent, []);
@@ -1308,7 +1310,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/H7100/', $useragent)) {
             return Mobile\FeitengFactory::detect($useragent);
         } elseif (preg_match('/x909/', $useragent)) {
-            $device = new Oppo($useragent, []);
+            return Mobile\OppoFactory::detect($useragent);
         } elseif (preg_match('/CFNetwork/', $useragent)) {
             return Mobile\AppleFactory::detect($useragent);
         } else {
