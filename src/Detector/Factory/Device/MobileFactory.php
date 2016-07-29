@@ -758,8 +758,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/pandigital/i', $useragent)) {
-            $device = new Pandigital($useragent, []);
-        } elseif (preg_match('/Phicomm/', $useragent)) {
+            return Mobile\PandigitalFactory::detect($useragent);
+        }
+
+        if (preg_match('/Phicomm/', $useragent)) {
             $device = new Phicomm($useragent, []);
         } elseif (preg_match('/pipo/i', $useragent)) {
             $device = new Pipo($useragent, []);
