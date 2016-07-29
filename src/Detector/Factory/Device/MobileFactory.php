@@ -753,9 +753,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\OppoFactory::detect($useragent);
         }
 
-        if (preg_match('/Panasonic/', $useragent)) {
-            $device = new Panasonic($useragent, []);
-        } elseif (preg_match('/pandigital/i', $useragent)) {
+        if (preg_match('/panasonic/i', $useragent)) {
+            return Mobile\PanasonicFactory::detect($useragent);
+        }
+
+        if (preg_match('/pandigital/i', $useragent)) {
             $device = new Pandigital($useragent, []);
         } elseif (preg_match('/Phicomm/', $useragent)) {
             $device = new Phicomm($useragent, []);
