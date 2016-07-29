@@ -761,9 +761,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\PandigitalFactory::detect($useragent);
         }
 
-        if (preg_match('/Phicomm/', $useragent)) {
-            $device = new Phicomm($useragent, []);
-        } elseif (preg_match('/pipo/i', $useragent)) {
+        if (preg_match('/phicomm/i', $useragent)) {
+            return Mobile\PhicommFactory::detect($useragent);
+        }
+
+        if (preg_match('/pipo/i', $useragent)) {
             $device = new Pipo($useragent, []);
         } elseif (preg_match('/pomp/i', $useragent)) {
             $device = new Pomp($useragent, []);
@@ -1124,7 +1126,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/MID\d{3}/', $useragent)) {
             $device = new Manta($useragent, []);
         } elseif (preg_match('/FWS610_EU/', $useragent)) {
-            $device = new Phicomm($useragent, []);
+            return Mobile\PhicommFactory::detect($useragent);
         } elseif (preg_match('/FX2/', $useragent)) {
             return Mobile\FaktorZweiFactory::detect($useragent);
         } elseif (preg_match('/AN\d{1,2}/', $useragent)) {
