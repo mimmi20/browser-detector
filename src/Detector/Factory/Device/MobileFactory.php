@@ -773,9 +773,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\PompFactory::detect($useragent);
         }
 
-        if (preg_match('/Prestigio/', $useragent)) {
-            $device = new Prestigio($useragent, []);
-        } elseif (preg_match('/QMobile/', $useragent)) {
+        if (preg_match('/prestigio/i', $useragent)) {
+            return Mobile\PrestigioFactory::detect($useragent);
+        }
+
+        if (preg_match('/QMobile/', $useragent)) {
             $device = new Qmobile($useragent, []);
         } elseif (preg_match('/keener/i', $useragent)) {
             $device = new Keener($useragent, []);
@@ -1074,7 +1076,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/AT\d{2,3}/', $useragent)) {
             $device = new Toshiba($useragent, []);
         } elseif (preg_match('/(PAP|PMP|PMT)/', $useragent)) {
-            $device = new Prestigio($useragent, []);
+            return Mobile\PrestigioFactory::detect($useragent);
         } elseif (preg_match('/(APA9292KT|PJ83100|831C|Evo 3D GSM|Eris 2\.1)/', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/adr\d{4}/i', $useragent)) {
@@ -1238,7 +1240,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ C7 /', $useragent)) {
             return Mobile\CubotFactory::detect($useragent);
         } elseif (preg_match('/GV7777/', $useragent)) {
-            $device = new Prestigio($useragent, []);
+            return Mobile\PrestigioFactory::detect($useragent);
         } elseif (preg_match('/ N1 /', $useragent)) {
             return Mobile\NokiaFactory::detect($useragent);
         } elseif (preg_match('/N\d{4}/', $useragent)) {
