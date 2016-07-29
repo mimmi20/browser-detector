@@ -766,10 +766,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/pipo/i', $useragent)) {
-            $device = new Pipo($useragent, []);
-        } elseif (preg_match('/pomp/i', $useragent)) {
-            $device = new Pomp($useragent, []);
-        } elseif (preg_match('/Prestigio/', $useragent)) {
+            return Mobile\PipoFactory::detect($useragent);
+        }
+
+        if (preg_match('/pomp/i', $useragent)) {
+            return Mobile\PompFactory::detect($useragent);
+        }
+
+        if (preg_match('/Prestigio/', $useragent)) {
             $device = new Prestigio($useragent, []);
         } elseif (preg_match('/QMobile/', $useragent)) {
             $device = new Qmobile($useragent, []);
@@ -1208,7 +1212,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/TAB917QC\-8GB/', $useragent)) {
             return Mobile\SunstechFactory::detect($useragent);
         } elseif (preg_match('/(TPC\-PA10\.1M|M7T|P93G|i75)/', $useragent)) {
-            $device = new Pipo($useragent, []);
+            return Mobile\PipoFactory::detect($useragent);
         } elseif (preg_match('/ONE TOUCH/', $useragent)) {
             $device = new Alcatel($useragent, []);
         } elseif (preg_match('/6036Y/', $useragent)) {

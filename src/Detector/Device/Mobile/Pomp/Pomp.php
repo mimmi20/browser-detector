@@ -29,13 +29,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Pomp;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
@@ -45,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Pipo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceHasSpecificPlatformInterface
+class Pomp extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -61,11 +59,11 @@ class Pipo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
 
         $this->setData(
             [
-                'deviceName'        => 'general Pipo Device',
-                'marketingName'     => 'general Pipo Device',
+                'deviceName'        => 'general Pomp Device',
+                'marketingName'     => 'general Pomp Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Pipo())->name,
-                'brand'             => (new Company\Pipo())->brandname,
+                'manufacturer'      => (new Company\Pomp())->name,
+                'brand'             => (new Company\Pomp())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -75,27 +73,9 @@ class Pipo extends AbstractDevice implements DeviceHasChildrenInterface, DeviceH
                 'smsSupport'        => true,
                 'nfcSupport'        => true,
                 'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
+                'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Pipo');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Pipo' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 
     /**
