@@ -829,9 +829,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\VericoFactory::detect($useragent);
         }
 
-        if (preg_match('/guggear/i', $useragent)) {
-            $device = new RugGear($useragent, []);
-        } elseif (preg_match('/telsda/i', $useragent)) {
+        if (preg_match('/ruggear/i', $useragent)) {
+            return Mobile\RugGearFactory::detect($useragent);
+        }
+
+        if (preg_match('/telsda/i', $useragent)) {
             $device = new Telsda($useragent, []);
         } elseif (preg_match('/mitashi/i', $useragent)) {
             $device = new Mitashi($useragent, []);
@@ -1338,7 +1340,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(UQ785\-M1BGV|KM\-UQM11A)/', $useragent)) {
             return Mobile\VericoFactory::detect($useragent);
         } elseif (preg_match('/RG500/', $useragent)) {
-            $device = new RugGear($useragent, []);
+            return Mobile\RugGearFactory::detect($useragent);
         } elseif (preg_match('/T9666\-1/', $useragent)) {
             $device = new Telsda($useragent, []);
         } elseif (preg_match('/1080P\-N003/', $useragent)) {
