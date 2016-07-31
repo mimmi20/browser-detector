@@ -822,8 +822,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/s\-tell/i', $useragent)) {
-            $device = new Stell($useragent, []);
-        } elseif (preg_match('/verico/i', $useragent)) {
+            return Mobile\StellFactory::detect($useragent);
+        }
+
+        if (preg_match('/verico/i', $useragent)) {
             $device = new Verico($useragent, []);
         } elseif (preg_match('/guggear/i', $useragent)) {
             $device = new RugGear($useragent, []);
