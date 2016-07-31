@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Verico;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Verico;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,33 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class VericoRpUdm02a extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class VericoFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'RP-UDM02A',
-                'marketingName'     => 'Uni Pad',
-                'version'           => null,
-                'manufacturer'      => (new Company\Verico())->name,
-                'brand'             => (new Company\Verico())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 720,
-                'resolutionHeight'  => 1280,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/KM\-UQM11A/', $useragent)) {
+            return new Verico\VericoUqm11a($useragent, []);
+        }
+
+        if (preg_match('/RP\-UDM02A/', $useragent)) {
+            return new Verico\VericoRpUdm02a($useragent, []);
+        }
+
+        if (preg_match('/RP\-UDM01A/', $useragent)) {
+            return new Verico\VericoRpUdm01a($useragent, []);
+        }
+
+        if (preg_match('/UQ785\-M1BGV/', $useragent)) {
+            return new Verico\VericoM1bgv($useragent, []);
+        }
+
+        return new Verico\Verico($useragent, []);
     }
 }
