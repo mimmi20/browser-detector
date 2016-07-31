@@ -842,8 +842,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/bliss/i', $useragent)) {
-            $device = new Bliss($useragent, []);
-        } elseif (preg_match('/lexand/i', $useragent)) {
+            return Mobile\BlissFactory::detect($useragent);
+        }
+
+        if (preg_match('/lexand/i', $useragent)) {
             $device = new Lexand($useragent, []);
         } elseif (preg_match('/alcatel/i', $useragent)) {
             $device = new Alcatel($useragent, []);
