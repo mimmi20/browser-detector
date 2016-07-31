@@ -801,9 +801,19 @@ class MobileFactory implements FactoryInterface
             return Mobile\SprintFactory::detect($useragent);
         }
 
-        if (preg_match('/Star/', $useragent) && !preg_match('/Aqua\_Star/', $useragent)) {
+        if (preg_match('/intex/i', $useragent)) {
+            return Mobile\IntexFactory::detect($useragent);
+        }
+
+        if (preg_match('/Aqua\_Star/', $useragent)) {
+            return Mobile\IntexFactory::detect($useragent);
+        }
+
+        if (preg_match('/Star/', $useragent)) {
             return Mobile\StarFactory::detect($useragent);
-        } elseif (preg_match('/texet/i', $useragent)) {
+        }
+
+        if (preg_match('/texet/i', $useragent)) {
             $device = new Texet($useragent, []);
         } elseif (preg_match('/condor/i', $useragent)) {
             $device = new Condor($useragent, []);
@@ -963,8 +973,6 @@ class MobileFactory implements FactoryInterface
             $device = new Fairphone($useragent, []);
         } elseif (preg_match('/(Videocon|A15)/', $useragent)) {
             $device = new Videocon($useragent, []);
-        } elseif (preg_match('/intex/i', $useragent)) {
-            $device = new Intex($useragent, []);
         } elseif (preg_match('/mastone/i', $useragent)) {
             $device = new Mastone($useragent, []);
         } elseif (preg_match('/BLU/', $useragent)) {
@@ -1093,8 +1101,6 @@ class MobileFactory implements FactoryInterface
             return Mobile\HtcFactory::detect($useragent);
         } elseif (preg_match('/adr\d{4}/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
-        } elseif (preg_match('/Aqua\_Star/', $useragent)) {
-            $device = new Intex($useragent, []);
         } elseif (preg_match('/NEXT/', $useragent)) {
             return Mobile\NextbookFactory::detect($useragent);
         } elseif (preg_match('/XT\d{3,4}/', $useragent)) {
