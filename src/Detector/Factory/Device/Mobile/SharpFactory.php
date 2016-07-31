@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Sharp;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Sharp;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,49 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SH8128U extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SharpFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'SH8128U',
-                'marketingName'     => 'SH8128U',
-                'version'           => null,
-                'manufacturer'      => (new Company\Sharp())->name,
-                'brand'             => (new Company\Sharp())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => null,
-                'colors'            => null,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/SHARP\-TQ\-GX30i/', $useragent)) {
+            return new Sharp\SharpTqGx30i($useragent, []);
+        }
+
+        if (preg_match('/SH\-01F/', $useragent)) {
+            return new Sharp\SharpSH01F($useragent, []);
+        }
+
+        if (preg_match('/SH8128U/', $useragent)) {
+            return new Sharp\SH8128U($useragent, []);
+        }
+
+        if (preg_match('/SH7228U/', $useragent)) {
+            return new Sharp\SH7228U($useragent, []);
+        }
+
+        if (preg_match('/304SH/', $useragent)) {
+            return new Sharp\SH304($useragent, []);
+        }
+
+        if (preg_match('/SH80F/', $useragent)) {
+            return new Sharp\SH80F($useragent, []);
+        }
+
+        if (preg_match('/SH05C/', $useragent)) {
+            return new Sharp\SH05C($useragent, []);
+        }
+
+        if (preg_match('/IS05/', $useragent)) {
+            return new Sharp\IS05($useragent, []);
+        }
+
+        return new Sharp\Sharp($useragent, []);
     }
 }

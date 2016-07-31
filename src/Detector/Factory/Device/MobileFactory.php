@@ -790,8 +790,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/SHARP/', $useragent)) {
-            $device = new Sharp($useragent, []);
-        } elseif (preg_match('/Siemens/', $useragent)) {
+            return Mobile\SharpFactory::detect($useragent);
+        }
+
+        if (preg_match('/Siemens/', $useragent)) {
             $device = new Siemens($useragent, []);
         } elseif (preg_match('/Sprint/', $useragent)) {
             $device = new Sprint($useragent, []);
@@ -1152,9 +1154,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/SM \- /', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/(SH05C|304SH)/', $useragent)) {
-            $device = new Sharp($useragent, []);
+            return Mobile\SharpFactory::detect($useragent);
         } elseif (preg_match('/SH\-\d{2}(D|F)/', $useragent)) {
-            $device = new Sharp($useragent, []);
+            return Mobile\SharpFactory::detect($useragent);
         } elseif (preg_match('/SAMURAI10/', $useragent)) {
             $device = new Shiru($useragent, []);
         } elseif (preg_match('/Ignis 8/', $useragent)) {
