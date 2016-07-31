@@ -818,8 +818,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/condor/i', $useragent)) {
-            $device = new Condor($useragent, []);
-        } elseif (preg_match('/s\-tell/i', $useragent)) {
+            return Mobile\CondorFactory::detect($useragent);
+        }
+
+        if (preg_match('/s\-tell/i', $useragent)) {
             $device = new Stell($useragent, []);
         } elseif (preg_match('/verico/i', $useragent)) {
             $device = new Verico($useragent, []);
@@ -1326,7 +1328,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Q10S/', $useragent)) {
             $device = new Wopad($useragent, []);
         } elseif (preg_match('/CTAB785R16\-3G/', $useragent)) {
-            $device = new Condor($useragent, []);
+            return Mobile\CondorFactory::detect($useragent);
         } elseif (preg_match('/RP\-UDM\d{2}/', $useragent)) {
             $device = new Verico($useragent, []);
         } elseif (preg_match('/(UQ785\-M1BGV|KM\-UQM11A)/', $useragent)) {
