@@ -794,8 +794,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Siemens/', $useragent)) {
-            $device = new Siemens($useragent, []);
-        } elseif (preg_match('/Sprint/', $useragent)) {
+            return Mobile\SiemensFactory::detect($useragent);
+        }
+
+        if (preg_match('/Sprint/', $useragent)) {
             $device = new Sprint($useragent, []);
         } elseif (preg_match('/Star/', $useragent) && !preg_match('/Aqua\_Star/', $useragent)) {
             return Mobile\StarFactory::detect($useragent);
