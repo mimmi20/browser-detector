@@ -838,8 +838,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/mitashi/i', $useragent)) {
-            $device = new Mitashi($useragent, []);
-        } elseif (preg_match('/bliss/i', $useragent)) {
+            return Mobile\MitashiFactory::detect($useragent);
+        }
+
+        if (preg_match('/bliss/i', $useragent)) {
             $device = new Bliss($useragent, []);
         } elseif (preg_match('/lexand/i', $useragent)) {
             $device = new Lexand($useragent, []);
@@ -1348,7 +1350,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/1080P\-N003/', $useragent)) {
             $device = new Neo($useragent, []);
         } elseif (preg_match('/AP\-105/', $useragent)) {
-            $device = new Mitashi($useragent, []);
+            return Mobile\MitashiFactory::detect($useragent);
         } elseif (preg_match('/H7100/', $useragent)) {
             return Mobile\FeitengFactory::detect($useragent);
         } elseif (preg_match('/x909/', $useragent)) {
