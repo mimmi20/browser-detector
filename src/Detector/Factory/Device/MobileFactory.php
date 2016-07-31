@@ -777,9 +777,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\PrestigioFactory::detect($useragent);
         }
 
-        if (preg_match('/QMobile/', $useragent)) {
-            $device = new Qmobile($useragent, []);
-        } elseif (preg_match('/keener/i', $useragent)) {
+        if (preg_match('/qmobile/i', $useragent)) {
+            return Mobile\QmobileFactory::detect($useragent);
+        }
+
+        if (preg_match('/keener/i', $useragent)) {
             $device = new Keener($useragent, []);
         } elseif (preg_match('/Sanyo/', $useragent)) {
             $device = new Sanyo($useragent, []);
