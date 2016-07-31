@@ -814,8 +814,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/texet/i', $useragent)) {
-            $device = new Texet($useragent, []);
-        } elseif (preg_match('/condor/i', $useragent)) {
+            return Mobile\TexetFactory::detect($useragent);
+        }
+
+        if (preg_match('/condor/i', $useragent)) {
             $device = new Condor($useragent, []);
         } elseif (preg_match('/s\-tell/i', $useragent)) {
             $device = new Stell($useragent, []);
@@ -1202,9 +1204,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/YD\d{3}/', $useragent)) {
             return Mobile\YotaFactory::detect($useragent);
         } elseif (preg_match('/X\-pad/', $useragent)) {
-            $device = new Texet($useragent, []);
+            return Mobile\TexetFactory::detect($useragent);
         } elseif (preg_match('/TM\-\d{4}/', $useragent)) {
-            $device = new Texet($useragent, []);
+            return Mobile\TexetFactory::detect($useragent);
         } elseif (preg_match('/ G3 /', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/(Zera_F|Boost IIse|Ice2|Prime S|Explosion)/', $useragent)) {

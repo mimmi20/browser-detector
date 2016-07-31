@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Texet;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Texet;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,41 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TexetNaviPad extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class TexetFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'NaviPad TM-7055HD 3G',
-                'marketingName'     => 'NaviPad TM-7055HD 3G',
-                'version'           => null,
-                'manufacturer'      => (new Company\Texet())->name,
-                'brand'             => (new Company\Texet())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 1280,
-                'resolutionHeight'  => 800,
-                'dualOrientation'   => true,
-                'colors'            => 16777216,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => false,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/x\-pad ix 7 3g/i', $useragent)) {
+            return new Texet\TexetTm7068($useragent, []);
+        }
+
+        if (preg_match('/x\-pad lite 7\.1/i', $useragent)) {
+            return new Texet\TexetTm7066($useragent, []);
+        }
+
+        if (preg_match('/x\-pad style 7\.1 3g/i', $useragent)) {
+            return new Texet\TexetTm7058($useragent, []);
+        }
+
+        if (preg_match('/x\-navi/i', $useragent)) {
+            return new Texet\TexetTm4672($useragent, []);
+        }
+
+        if (preg_match('/tm\-3204r/i', $useragent)) {
+            return new Texet\TexetTm3204r($useragent, []);
+        }
+
+        if (preg_match('/navipad tm\-7055hd 3g/i', $useragent)) {
+            return new Texet\TexetNaviPad($useragent, []);
+        }
+
+        return new Texet\Texet($useragent, []);
     }
 }
