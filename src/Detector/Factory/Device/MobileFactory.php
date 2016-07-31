@@ -785,9 +785,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\KeenerFactory::detect($useragent);
         }
 
-        if (preg_match('/Sanyo/', $useragent)) {
-            $device = new Sanyo($useragent, []);
-        } elseif (preg_match('/SHARP/', $useragent)) {
+        if (preg_match('/sanyo/i', $useragent)) {
+            return Mobile\SanyoFactory::detect($useragent);
+        }
+
+        if (preg_match('/SHARP/', $useragent)) {
             $device = new Sharp($useragent, []);
         } elseif (preg_match('/Siemens/', $useragent)) {
             $device = new Siemens($useragent, []);
