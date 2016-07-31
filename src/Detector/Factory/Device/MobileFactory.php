@@ -854,7 +854,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/thl/i', $useragent) && !preg_match('/LIAuthLibrary/', $useragent)) {
             return Mobile\ThlFactory::detect($useragent);
         } elseif (preg_match('/T\-Mobile/', $useragent)) {
-            $device = new Tmobile($useragent, []);
+            return Mobile\TmobileFactory::detect($useragent);
         } elseif (preg_match('/tolino/i', $useragent)) {
             $device = new Tolino($useragent, []);
         } elseif (preg_match('/Toshiba/i', $useragent)) {

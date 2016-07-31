@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Tmobile;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Tmobile;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,45 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TmobileG1 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class TmobileFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'G1',
-                'marketingName'     => 'G1',
-                'version'           => null,
-                'manufacturer'      => (new Company\Tmobile())->name,
-                'brand'             => (new Company\Tmobile())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 320,
-                'resolutionHeight'  => 480,
-                'dualOrientation'   => true,
-                'colors'            => 256,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/Pulse/', $useragent)) {
+            return new Tmobile\TmobilePulse($useragent, []);
+        }
+
+        if (preg_match('/myTouch4G/', $useragent)) {
+            return new Tmobile\TmobileMyTouch4G($useragent, []);
+        }
+
+        if (preg_match('/myTouch 3G Slide/', $useragent)) {
+            return new Tmobile\TmobileMyTouch3G($useragent, []);
+        }
+
+        if (preg_match('/T\-Mobile(\_G2\_Touch| G2)/', $useragent)) {
+            return new Tmobile\TmobileG2Touch($useragent, []);
+        }
+
+        if (preg_match('/T\-Mobile G1/', $useragent)) {
+            return new Tmobile\TmobileG1($useragent, []);
+        }
+
+        if (preg_match('/MDA compact\/3/', $useragent)) {
+            return new Tmobile\TmobileMdaCompact3($useragent, []);
+        }
+
+        if (preg_match('/MDA compact/', $useragent)) {
+            return new Tmobile\TmobileMdaCompact($useragent, []);
+        }
+
+        return new Tmobile\Tmobile($useragent, []);
     }
 }
