@@ -834,8 +834,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/telsda/i', $useragent)) {
-            $device = new Telsda($useragent, []);
-        } elseif (preg_match('/mitashi/i', $useragent)) {
+            return Mobile\TelsdaFactory::detect($useragent);
+        }
+
+        if (preg_match('/mitashi/i', $useragent)) {
             $device = new Mitashi($useragent, []);
         } elseif (preg_match('/bliss/i', $useragent)) {
             $device = new Bliss($useragent, []);
@@ -1342,7 +1344,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/RG500/', $useragent)) {
             return Mobile\RugGearFactory::detect($useragent);
         } elseif (preg_match('/T9666\-1/', $useragent)) {
-            $device = new Telsda($useragent, []);
+            return Mobile\TelsdaFactory::detect($useragent);
         } elseif (preg_match('/1080P\-N003/', $useragent)) {
             $device = new Neo($useragent, []);
         } elseif (preg_match('/AP\-105/', $useragent)) {
