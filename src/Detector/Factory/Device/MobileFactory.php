@@ -852,7 +852,7 @@ class MobileFactory implements FactoryInterface
         if (preg_match('/alcatel/i', $useragent)) {
             $device = new Alcatel($useragent, []);
         } elseif (preg_match('/thl/i', $useragent) && !preg_match('/LIAuthLibrary/', $useragent)) {
-            $device = new Thl($useragent, []);
+            return Mobile\ThlFactory::detect($useragent);
         } elseif (preg_match('/T\-Mobile/', $useragent)) {
             $device = new Tmobile($useragent, []);
         } elseif (preg_match('/tolino/i', $useragent)) {
@@ -1208,7 +1208,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ M3 /', $useragent)) {
             $device = new Gionee($useragent, []);
         } elseif (preg_match('/(W100|W200|W8_beyond)/', $useragent)) {
-            $device = new Thl($useragent, []);
+            return Mobile\ThlFactory::detect($useragent);
         } elseif (preg_match('/NT\-\d{4}(S|P|T)/', $useragent)) {
             return Mobile\IconBitFactory::detect($useragent);
         } elseif (preg_match('/Primo76/', $useragent)) {
