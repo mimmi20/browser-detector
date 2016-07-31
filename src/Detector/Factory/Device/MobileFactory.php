@@ -782,8 +782,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/keener/i', $useragent)) {
-            $device = new Keener($useragent, []);
-        } elseif (preg_match('/Sanyo/', $useragent)) {
+            return Mobile\KeenerFactory::detect($useragent);
+        }
+
+        if (preg_match('/Sanyo/', $useragent)) {
             $device = new Sanyo($useragent, []);
         } elseif (preg_match('/SHARP/', $useragent)) {
             $device = new Sharp($useragent, []);
@@ -1254,7 +1256,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/IM\-A830L/', $useragent)) {
             return Mobile\PantechFactory::detect($useragent);
         } elseif (preg_match('/K\-8S/', $useragent)) {
-            $device = new Keener($useragent, []);
+            return Mobile\KeenerFactory::detect($useragent);
         } elseif (preg_match('/M601/', $useragent)) {
             return Mobile\AocFactory::detect($useragent);
         } elseif (preg_match('/H1\+/', $useragent)) {
