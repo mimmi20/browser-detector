@@ -846,8 +846,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/lexand/i', $useragent)) {
-            $device = new Lexand($useragent, []);
-        } elseif (preg_match('/alcatel/i', $useragent)) {
+            return Mobile\LexandFactory::detect($useragent);
+        }
+
+        if (preg_match('/alcatel/i', $useragent)) {
             $device = new Alcatel($useragent, []);
         } elseif (preg_match('/thl/i', $useragent) && !preg_match('/LIAuthLibrary/', $useragent)) {
             $device = new Thl($useragent, []);
@@ -1320,7 +1322,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/T118/', $useragent)) {
             return Mobile\TwinovoFactory::detect($useragent);
         } elseif (preg_match('/(A1002|A811)/', $useragent)) {
-            $device = new Lexand($useragent, []);
+            return Mobile\LexandFactory::detect($useragent);
         } elseif (preg_match('/ A10/', $useragent)) {
             return Mobile\AllWinnerFactory::detect($useragent);
         } elseif (preg_match('/TOUAREG8_3G/', $useragent)) {
