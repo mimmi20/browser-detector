@@ -926,10 +926,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Zenithink/i', $useragent)) {
-            $device = new Zenithink($useragent, []);
-        } elseif (preg_match('/zte/i', $useragent)) {
+            return Mobile\ZenithinkFactory::detect($useragent);
+        }
+
+        if (preg_match('/zte/i', $useragent)) {
             return Mobile\ZteFactory::detect($useragent);
-        } elseif (preg_match('/Fly/', $useragent) && !preg_match('/FlyFlow/', $useragent)) {
+        }
+
+        if (preg_match('/Fly/', $useragent) && !preg_match('/FlyFlow/', $useragent)) {
             $device = new Fly($useragent, []);
         } elseif (preg_match('/PocketBook/', $useragent)) {
             $device = new PocketBook($useragent, []);
