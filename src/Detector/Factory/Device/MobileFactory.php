@@ -865,13 +865,19 @@ class MobileFactory implements FactoryInterface
             return Mobile\TolinoFactory::detect($useragent);
         }
 
-        if (preg_match('/Toshiba/i', $useragent)) {
-            $device = new Toshiba($useragent, []);
-        } elseif (preg_match('/TrekStor/', $useragent)) {
-            $device = new TrekStor($useragent, []);
-        } elseif (preg_match('/3Q/', $useragent)) {
-            $device = new TriQ($useragent, []);
-        } elseif (preg_match('/(ViewSonic|ViewPad)/', $useragent)) {
+        if (preg_match('/toshiba/i', $useragent)) {
+            return Mobile\ToshibaFactory::detect($useragent);
+        }
+
+        if (preg_match('/trekstor/i', $useragent)) {
+            return Mobile\TrekStorFactory::detect($useragent);
+        }
+
+        if (preg_match('/3Q/', $useragent)) {
+            return Mobile\TriQFactory::detect($useragent);
+        }
+
+        if (preg_match('/(ViewSonic|ViewPad)/', $useragent)) {
             $device = new ViewSonic($useragent, []);
         } elseif (preg_match('/Wiko/', $useragent)) {
             $device = new Wiko($useragent, []);
@@ -1102,7 +1108,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/TBD(B|C)\d{3,4}/', $useragent)) {
             $device = new Zeki($useragent, []);
         } elseif (preg_match('/AC0732C/', $useragent)) {
-            $device = new TriQ($useragent, []);
+            return Mobile\TriQFactory::detect($useragent);
         } elseif (preg_match('/ImPAD6213M\_v2/', $useragent)) {
             return Mobile\ImpressionFactory::detect($useragent);
         } elseif (preg_match('/(A10100|C07000)/', $useragent)) {
@@ -1118,9 +1124,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/VS\d{3}/', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/(SurfTab|VT10416|breeze 10\.1 quad)/', $useragent)) {
-            $device = new TrekStor($useragent, []);
+            return Mobile\TrekStorFactory::detect($useragent);
         } elseif (preg_match('/AT\d{2,3}/', $useragent)) {
-            $device = new Toshiba($useragent, []);
+            return Mobile\ToshibaFactory::detect($useragent);
         } elseif (preg_match('/(PAP|PMP|PMT)/', $useragent)) {
             return Mobile\PrestigioFactory::detect($useragent);
         } elseif (preg_match('/(APA9292KT|PJ83100|831C|Evo 3D GSM|Eris 2\.1)/', $useragent)) {
@@ -1244,7 +1250,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/X8\+/', $useragent)) {
             return Mobile\TrirayFactory::detect($useragent);
         } elseif (preg_match('/QS0716D/', $useragent)) {
-            $device = new TriQ($useragent, []);
+            return Mobile\TriQFactory::detect($useragent);
         } elseif (preg_match('/(Surfer 7\.34|M1_Plus|D7\.2 3G)/', $useragent)) {
             return Mobile\ExplayFactory::detect($useragent);
         } elseif (preg_match('/PMSmart450/', $useragent)) {

@@ -29,12 +29,12 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\TriQ;
 
-use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**
@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Toshiba extends AbstractDevice implements DeviceHasChildrenInterface
+class TriQ extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -59,11 +59,11 @@ class Toshiba extends AbstractDevice implements DeviceHasChildrenInterface
 
         $this->setData(
             [
-                'deviceName'        => 'general Toshiba Device',
-                'marketingName'     => 'general Toshiba Device',
+                'deviceName'        => 'general 3Q Device',
+                'marketingName'     => 'general 3Q Device',
                 'version'           => null,
-                'manufacturer'      => (new Company\Toshiba())->name,
-                'brand'             => (new Company\Toshiba())->brandname,
+                'manufacturer'      => (new Company\TriQ())->name,
+                'brand'             => (new Company\TriQ())->brandname,
                 'formFactor'        => null,
                 'pointingMethod'    => 'touchscreen',
                 'resolutionWidth'   => null,
@@ -79,20 +79,12 @@ class Toshiba extends AbstractDevice implements DeviceHasChildrenInterface
     }
 
     /**
-     * detects the device name from the given user agent
+     * returns the OS Handler
      *
-     * @return \UaResult\Device\DeviceInterface
+     * @return \BrowserDetector\Detector\Os\AndroidOs
      */
-    public function detectDevice()
+    public function detectOs()
     {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Toshiba');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Toshiba' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
+        return new Os\AndroidOs($this->useragent, []);
     }
 }

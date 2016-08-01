@@ -46,7 +46,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TrekStorSt10416 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class TrekStorSt10416 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor

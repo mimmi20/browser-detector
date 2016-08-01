@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Toshiba;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Toshiba;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,49 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ToshibaAt200 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class ToshibaFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'AT200',
-                'marketingName'     => 'Excite AT200',
-                'version'           => null,
-                'manufacturer'      => (new Company\Toshiba())->name,
-                'brand'             => (new Company\Toshiba())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 1280,
-                'resolutionHeight'  => 800,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/Toshiba\/TG01/', $useragent)) {
+            return new Toshiba\ToshibaTg01($useragent, []);
+        }
+
+        if (preg_match('/(FOLIO_AND_A|TOSHIBA_AC_AND_AZ)/', $useragent)) {
+            return new Toshiba\ToshibaFolio100($useragent, []);
+        }
+
+        if (preg_match('/folio100/i', $useragent)) {
+            return new Toshiba\ToshibaFolio100($useragent, []);
+        }
+
+        if (preg_match('/AT300SE/', $useragent)) {
+            return new Toshiba\ToshibaAt300SE($useragent, []);
+        }
+
+        if (preg_match('/AT300/', $useragent)) {
+            return new Toshiba\ToshibaAt300($useragent, []);
+        }
+
+        if (preg_match('/AT200/', $useragent)) {
+            return new Toshiba\ToshibaAt200($useragent, []);
+        }
+
+        if (preg_match('/AT100/', $useragent)) {
+            return new Toshiba\ToshibaAt100($useragent, []);
+        }
+
+        if (preg_match('/AT10\-A/', $useragent)) {
+            return new Toshiba\ToshibaAt10a($useragent, []);
+        }
+
+        return new Toshiba\Toshiba($useragent, []);
     }
 }
