@@ -862,8 +862,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/tolino/i', $useragent)) {
-            $device = new Tolino($useragent, []);
-        } elseif (preg_match('/Toshiba/i', $useragent)) {
+            return Mobile\TolinoFactory::detect($useragent);
+        }
+
+        if (preg_match('/Toshiba/i', $useragent)) {
             $device = new Toshiba($useragent, []);
         } elseif (preg_match('/TrekStor/', $useragent)) {
             $device = new TrekStor($useragent, []);
