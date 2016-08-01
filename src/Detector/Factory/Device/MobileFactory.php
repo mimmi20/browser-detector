@@ -877,9 +877,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\TriQFactory::detect($useragent);
         }
 
-        if (preg_match('/(ViewSonic|ViewPad)/', $useragent)) {
-            $device = new ViewSonic($useragent, []);
-        } elseif (preg_match('/Wiko/', $useragent)) {
+        if (preg_match('/(viewsonic|viewpad)/i', $useragent)) {
+            return Mobile\ViewSonicFactory::detect($useragent);
+        }
+
+        if (preg_match('/Wiko/', $useragent)) {
             $device = new Wiko($useragent, []);
         } elseif (preg_match('/vivo/', $useragent)) {
             $device = new Vivo($useragent, []);

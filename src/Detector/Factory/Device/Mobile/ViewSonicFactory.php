@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\ViewSonic;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\ViewSonic;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,37 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ViewSonicViewPad7e extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class ViewSonicFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'ViewPad 7e',
-                'marketingName'     => 'ViewPad 7e',
-                'version'           => null,
-                'manufacturer'      => (new Company\ViewSonic())->name,
-                'brand'             => (new Company\ViewSonic())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 800,
-                'resolutionHeight'  => 600,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/viewpad 10s/i', $useragent)) {
+            return new ViewSonic\ViewSonicViewPad10s($useragent, []);
+        }
+
+        if (preg_match('/viewpad 10e/i', $useragent)) {
+            return new ViewSonic\ViewSonicViewPad10e($useragent, []);
+        }
+
+        if (preg_match('/viewpad7e/i', $useragent)) {
+            return new ViewSonic\ViewSonicViewPad7e($useragent, []);
+        }
+
+        if (preg_match('/(viewpad7|viewpad\-7)/i', $useragent)) {
+            return new ViewSonic\ViewSonicViewPad7($useragent, []);
+        }
+
+        if (preg_match('/viewsonic\-v350/i', $useragent)) {
+            return new ViewSonic\ViewSonicV350($useragent, []);
+        }
+
+        return new ViewSonic\ViewSonic($useragent, []);
     }
 }
