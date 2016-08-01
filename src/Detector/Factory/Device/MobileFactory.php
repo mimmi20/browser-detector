@@ -922,8 +922,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Yusu/', $useragent)) {
-            $device = new Yusu($useragent, []);
-        } elseif (preg_match('/Zenithink/i', $useragent)) {
+            return Mobile\YusuFactory::detect($useragent);
+        }
+
+        if (preg_match('/Zenithink/i', $useragent)) {
             $device = new Zenithink($useragent, []);
         } elseif (preg_match('/zte/i', $useragent)) {
             return Mobile\ZteFactory::detect($useragent);
