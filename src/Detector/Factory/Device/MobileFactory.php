@@ -890,17 +890,19 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/xiaomi/i', $useragent)) {
-            $device = new Xiaomi($useragent, []);
-        } elseif (preg_match('/haipai/i', $useragent)) {
+            return Mobile\XiaomiFactory::detect($useragent);
+        }
+
+        if (preg_match('/haipai/i', $useragent)) {
             $device = new Haipai($useragent, []);
         } elseif (preg_match('/megafon/i', $useragent)) {
             $device = new MegaFon($useragent, []);
         } elseif (preg_match('/UMI/', $useragent)) {
             $device = new Umi($useragent, []);
         } elseif (preg_match('/MI \d/', $useragent)) {
-            $device = new Xiaomi($useragent, []);
+            return Mobile\XiaomiFactory::detect($useragent);
         } elseif (preg_match('/HM( |\_)(NOTE|1SC|1SW)/', $useragent)) {
-            $device = new Xiaomi($useragent, []);
+            return Mobile\XiaomiFactory::detect($useragent);
         } elseif (preg_match('/yuandao/i', $useragent)) {
             $device = new Yuandao($useragent, []);
         } elseif (preg_match('/yuanda/i', $useragent)) {

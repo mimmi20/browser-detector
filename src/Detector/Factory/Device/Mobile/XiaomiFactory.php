@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Xiaomi;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Xiaomi;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,45 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class XiaomiHmnote1lte extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class XiaomiFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'HM NOTE 1LTE',
-                'marketingName'     => 'HM NOTE 1LTE',
-                'version'           => null,
-                'manufacturer'      => (new Company\XiaomiTech())->name,
-                'brand'             => (new Company\XiaomiTech())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 720,
-                'resolutionHeight'  => 1280,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/MI 3W/', $useragent)) {
+            return new Xiaomi\XiaomiMi3w($useragent, []);
+        }
+
+        if (preg_match('/MI 2A/', $useragent)) {
+            return new Xiaomi\XiaomiMi2a($useragent, []);
+        }
+
+        if (preg_match('/MI 2/', $useragent)) {
+            return new Xiaomi\XiaomiMi2($useragent, []);
+        }
+
+        if (preg_match('/HM NOTE 1LTETD/', $useragent)) {
+            return new Xiaomi\XiaomiHmnote1ltetd($useragent, []);
+        }
+
+        if (preg_match('/HM NOTE 1LTE/', $useragent)) {
+            return new Xiaomi\XiaomiHmnote1lte($useragent, []);
+        }
+
+        if (preg_match('/HM\_1SW/', $useragent)) {
+            return new Xiaomi\XiaomiHm1sw($useragent, []);
+        }
+
+        if (preg_match('/HM 1SC/', $useragent)) {
+            return new Xiaomi\XiaomiHm1sc($useragent, []);
+        }
+
+        return new Xiaomi\Xiaomi($useragent, []);
     }
 }
