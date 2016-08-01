@@ -881,9 +881,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\ViewSonicFactory::detect($useragent);
         }
 
-        if (preg_match('/Wiko/', $useragent)) {
-            $device = new Wiko($useragent, []);
-        } elseif (preg_match('/vivo/', $useragent)) {
+        if (preg_match('/wiko/i', $useragent)) {
+            return Mobile\WikoFactory::detect($useragent);
+        }
+
+        if (preg_match('/vivo/', $useragent)) {
             $device = new Vivo($useragent, []);
         } elseif (preg_match('/xiaomi/i', $useragent)) {
             $device = new Xiaomi($useragent, []);
@@ -1050,7 +1052,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/MTC/', $useragent)) {
             $device = new Mtc($useragent, []);
         } elseif (preg_match('/DARKMOON/', $useragent)) {
-            $device = new Wiko($useragent, []);
+            return Mobile\WikoFactory::detect($useragent);
         } elseif (preg_match('/ARK/', $useragent)) {
             $device = new Ark($useragent, []);
         } elseif (preg_match('/Magic/', $useragent)) {
@@ -1230,7 +1232,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Primo76/', $useragent)) {
             $device = new Msi($useragent, []);
         } elseif (preg_match('/CINK PEAX 2/', $useragent)) {
-            $device = new Wiko($useragent, []);
+            return Mobile\WikoFactory::detect($useragent);
         } elseif (preg_match('/T(X|G)\d{2}/', $useragent)) {
             $device = new Irbis($useragent, []);
         } elseif (preg_match('/YD\d{3}/', $useragent)) {

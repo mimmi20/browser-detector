@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Wiko;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Wiko;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,37 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WikoCinkPeax2 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class WikoFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Cink Peax 2',
-                'marketingName'     => 'Cink Peax 2',
-                'version'           => null,
-                'manufacturer'      => (new Company\Wiko())->name,
-                'brand'             => (new Company\Wiko())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 480,
-                'resolutionHeight'  => 854,
-                'dualOrientation'   => true,
-                'colors'            => 16777216,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/RAINBOW/', $useragent)) {
+            return new Wiko\WikoRainbow($useragent, []);
+        }
+
+        if (preg_match('/LENNY/', $useragent)) {
+            return new Wiko\WikoLenny($useragent, []);
+        }
+
+        if (preg_match('/GETAWAY/', $useragent)) {
+            return new Wiko\WikoGetaway($useragent, []);
+        }
+
+        if (preg_match('/DARKMOON/', $useragent)) {
+            return new Wiko\WikoDarkmoon($useragent, []);
+        }
+
+        if (preg_match('/CINK PEAX 2/', $useragent)) {
+            return new Wiko\WikoCinkPeax2($useragent, []);
+        }
+
+        return new Wiko\Wiko($useragent, []);
     }
 }
