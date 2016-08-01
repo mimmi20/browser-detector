@@ -902,12 +902,18 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/UMI/', $useragent)) {
-            $device = new Umi($useragent, []);
-        } elseif (preg_match('/MI \d/', $useragent)) {
+            return Mobile\UmiFactory::detect($useragent);
+        }
+
+        if (preg_match('/MI \d/', $useragent)) {
             return Mobile\XiaomiFactory::detect($useragent);
-        } elseif (preg_match('/HM( |\_)(NOTE|1SC|1SW)/', $useragent)) {
+        }
+
+        if (preg_match('/HM( |\_)(NOTE|1SC|1SW)/', $useragent)) {
             return Mobile\XiaomiFactory::detect($useragent);
-        } elseif (preg_match('/yuandao/i', $useragent)) {
+        }
+
+        if (preg_match('/yuandao/i', $useragent)) {
             $device = new Yuandao($useragent, []);
         } elseif (preg_match('/yuanda/i', $useragent)) {
             $device = new Yuanda($useragent, []);
