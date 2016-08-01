@@ -850,12 +850,18 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/alcatel/i', $useragent)) {
-            $device = new Alcatel($useragent, []);
-        } elseif (preg_match('/thl/i', $useragent) && !preg_match('/LIAuthLibrary/', $useragent)) {
+            return Mobile\AlcatelFactory::detect($useragent);
+        }
+
+        if (preg_match('/thl/i', $useragent) && !preg_match('/LIAuthLibrary/', $useragent)) {
             return Mobile\ThlFactory::detect($useragent);
-        } elseif (preg_match('/T\-Mobile/', $useragent)) {
+        }
+
+        if (preg_match('/T\-Mobile/', $useragent)) {
             return Mobile\TmobileFactory::detect($useragent);
-        } elseif (preg_match('/tolino/i', $useragent)) {
+        }
+
+        if (preg_match('/tolino/i', $useragent)) {
             $device = new Tolino($useragent, []);
         } elseif (preg_match('/Toshiba/i', $useragent)) {
             $device = new Toshiba($useragent, []);
@@ -1252,9 +1258,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(TPC\-PA10\.1M|M7T|P93G|i75)/', $useragent)) {
             return Mobile\PipoFactory::detect($useragent);
         } elseif (preg_match('/ONE TOUCH/', $useragent)) {
-            $device = new Alcatel($useragent, []);
+            return Mobile\AlcatelFactory::detect($useragent);
         } elseif (preg_match('/6036Y/', $useragent)) {
-            $device = new Alcatel($useragent, []);
+            return Mobile\AlcatelFactory::detect($useragent);
         } elseif (preg_match('/MD948G/', $useragent)) {
             return Mobile\MwayFactory::detect($useragent);
         } elseif (preg_match('/P4501/', $useragent)) {

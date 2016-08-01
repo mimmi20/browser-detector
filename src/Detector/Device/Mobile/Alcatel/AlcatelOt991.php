@@ -35,10 +35,7 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use BrowserDetector\Matcher\MatcherCanHandleInterface;
-use BrowserDetector\Matcher\MatcherHasWeightInterface;
 use UaDeviceType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -46,7 +43,7 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AlcatelOt991 extends AbstractDevice implements DeviceHasSpecificPlatformInterface, MatcherHasWeightInterface, MatcherCanHandleInterface
+class AlcatelOt991 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -79,44 +76,6 @@ class AlcatelOt991 extends AbstractDevice implements DeviceHasSpecificPlatformIn
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * checks if this device is able to handle the useragent
-     *
-     * @return bool returns TRUE, if this device can handle the useragent
-     */
-    public function canHandle()
-    {
-        $phones = ['ALCATEL_one_touch_991', 'ALCATEL one touch 991', 'ALCATEL ONE TOUCH 991'];
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if (!$utils->checkIfContains($phones)) {
-            return false;
-        }
-
-        $otherPhones = ['ALCATEL ONE TOUCH 991D', 'ALCATEL_one_touch_991D', 'ALCATEL ONE TOUCH 991T'];
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains($otherPhones)) {
-            return false;
-        }
-
-        return true;
-    }
-
-    /**
-     * gets the weight of the handler, which is used for sorting
-     *
-     * @return int
-     */
-    public function getWeight()
-    {
-        return 3;
     }
 
     /**
