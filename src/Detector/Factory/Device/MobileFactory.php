@@ -886,8 +886,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/vivo/', $useragent)) {
-            $device = new Vivo($useragent, []);
-        } elseif (preg_match('/xiaomi/i', $useragent)) {
+            return Mobile\VivoFactory::detect($useragent);
+        }
+
+        if (preg_match('/xiaomi/i', $useragent)) {
             $device = new Xiaomi($useragent, []);
         } elseif (preg_match('/haipai/i', $useragent)) {
             $device = new Haipai($useragent, []);
