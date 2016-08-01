@@ -894,8 +894,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/haipai/i', $useragent)) {
-            $device = new Haipai($useragent, []);
-        } elseif (preg_match('/megafon/i', $useragent)) {
+            return Mobile\HaipaiFactory::detect($useragent);
+        }
+
+        if (preg_match('/megafon/i', $useragent)) {
             $device = new MegaFon($useragent, []);
         } elseif (preg_match('/UMI/', $useragent)) {
             $device = new Umi($useragent, []);
