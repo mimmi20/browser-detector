@@ -945,9 +945,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\GeniatechFactory::detect($useragent);
         }
 
-        if (preg_match('/Yarvik/', $useragent)) {
-            $device = new Yarvik($useragent, []);
-        } elseif (preg_match('/GOCLEVER/', $useragent)) {
+        if (preg_match('/yarvik/i', $useragent)) {
+            return Mobile\YarvikFactory::detect($useragent);
+        }
+
+        if (preg_match('/GOCLEVER/', $useragent)) {
             $device = new GoClever($useragent, []);
         } elseif (preg_match('/senseit/i', $useragent)) {
             $device = new Senseit($useragent, []);
@@ -1194,7 +1196,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Phoenix 2/', $useragent)) {
             return Mobile\FlyFactory::detect($useragent);
         } elseif (preg_match('/TAB10\-400/', $useragent)) {
-            $device = new Yarvik($useragent, []);
+            return Mobile\YarvikFactory::detect($useragent);
         } elseif (preg_match('/TQ\d{3}/', $useragent)) {
             $device = new GoClever($useragent, []);
         } elseif (preg_match('/RMD\-\d{3,4}/', $useragent)) {
