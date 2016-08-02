@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Overmax;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Overmax;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,33 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class OvermaxSolution10ii3g extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class OvermaxFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Solution 10 Ii 3G',
-                'marketingName'     => 'Solution 10 Ii 3G',
-                'version'           => null,
-                'manufacturer'      => (new Company\Overmax())->name,
-                'brand'             => (new Company\Overmax())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => null,
-                'colors'            => null,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/SteelCore\-B/', $useragent)) {
+            return new Overmax\OvermaxSteelCore($useragent, []);
+        }
+
+        if (preg_match('/Solution 10II/', $useragent)) {
+            return new Overmax\OvermaxSolution10ii3g($useragent, []);
+        }
+
+        if (preg_match('/Solution 7III/', $useragent)) {
+            return new Overmax\OvermaxSolution7iii($useragent, []);
+        }
+
+        if (preg_match('/Quattor 10\+/', $useragent)) {
+            return new Overmax\OvermaxQuattor10($useragent, []);
+        }
+
+        return new Overmax\Overmax($useragent, []);
     }
 }

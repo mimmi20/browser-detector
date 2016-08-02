@@ -990,8 +990,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/overmax/i', $useragent)) {
-            $device = new Overmax($useragent, []);
-        } elseif (preg_match('/kiano/i', $useragent)) {
+            return Mobile\OvermaxFactory::detect($useragent);
+        }
+
+        if (preg_match('/kiano/i', $useragent)) {
             $device = new Kiano($useragent, []);
         } elseif (preg_match('/manta/i', $useragent)) {
             $device = new Manta($useragent, []);
@@ -1232,7 +1234,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/FunTab/', $useragent)) {
             $device = new Orange($useragent, []);
         } elseif (preg_match('/(OV\-|Solution 7III)/', $useragent)) {
-            $device = new Overmax($useragent, []);
+            return Mobile\OvermaxFactory::detect($useragent);
         } elseif (preg_match('/Zanetti/', $useragent)) {
             $device = new Kiano($useragent, []);
         } elseif (preg_match('/MID\d{3}/', $useragent)) {
