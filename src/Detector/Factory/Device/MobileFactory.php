@@ -1074,8 +1074,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/perfeo/i', $useragent)) {
-            $device = new Perfeo($useragent, []);
-        } elseif (preg_match('/ MT791 /i', $useragent)) {
+            return Mobile\PerfeoFactory::detect($useragent);
+        }
+
+        if (preg_match('/ MT791 /i', $useragent)) {
             $device = new KeenHigh($useragent, []);
         } elseif (preg_match('/(g100w|stream\-s110)/i', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
@@ -1396,7 +1398,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(Rio R1|GSmart\_T4)/', $useragent)) {
             return Mobile\GigabyteFactory::detect($useragent);
         } elseif (preg_match('/7007HD/', $useragent)) {
-            $device = new Perfeo($useragent, []);
+            return Mobile\PerfeoFactory::detect($useragent);
         } elseif (preg_match('/IM\-A830L/', $useragent)) {
             return Mobile\PantechFactory::detect($useragent);
         } elseif (preg_match('/K\-8S/', $useragent)) {
