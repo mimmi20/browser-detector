@@ -1062,8 +1062,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/logicom/i', $useragent)) {
-            $device = new Logicom($useragent, []);
-        } elseif (preg_match('/gigabyte/i', $useragent)) {
+            return Mobile\LogicomFactory::detect($useragent);
+        }
+
+        if (preg_match('/gigabyte/i', $useragent)) {
             $device = new Gigabyte($useragent, []);
         } elseif (preg_match('/qumo/i', $useragent)) {
             $device = new Qumo($useragent, []);
