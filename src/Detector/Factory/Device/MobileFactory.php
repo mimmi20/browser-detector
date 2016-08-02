@@ -1018,8 +1018,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/pentagram/i', $useragent)) {
-            $device = new Pentagram($useragent, []);
-        } elseif (preg_match('/zeki/i', $useragent)) {
+            return Mobile\PentagramFactory::detect($useragent);
+        }
+
+        if (preg_match('/zeki/i', $useragent)) {
             $device = new Zeki($useragent, []);
         } elseif (preg_match('/DFunc/', $useragent)) {
             $device = new Dfunc($useragent, []);
