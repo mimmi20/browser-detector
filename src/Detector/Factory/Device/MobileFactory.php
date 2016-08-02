@@ -1050,8 +1050,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/malata/i', $useragent)) {
-            $device = new Malata($useragent, []);
-        } elseif (preg_match('/starway/i', $useragent)) {
+            return Mobile\MalataFactory::detect($useragent);
+        }
+
+        if (preg_match('/starway/i', $useragent)) {
             $device = new Starway($useragent, []);
         } elseif (preg_match('/pegatron/i', $useragent)) {
             $device = new Pegatron($useragent, []);
