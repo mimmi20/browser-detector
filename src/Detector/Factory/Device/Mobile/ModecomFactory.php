@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Modecom;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Modecom;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,45 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ModecomFreeTab9000IpsIc extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class ModecomFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'FreeTAB 9000 IPS IC',
-                'marketingName'     => 'FreeTAB 9000 IPS IC',
-                'version'           => null,
-                'manufacturer'      => (new Company\Modecom())->name,
-                'brand'             => (new Company\Modecom())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 720,
-                'resolutionHeight'  => 1280,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/FreeTAB 9702 HD X4/', $useragent)) {
+            return new Modecom\ModecomFreeTab9702Hdx4($useragent, []);
+        }
+
+        if (preg_match('/FreeTAB 9000 IPS IC/', $useragent)) {
+            return new Modecom\ModecomFreeTab9000IpsIc($useragent, []);
+        }
+
+        if (preg_match('/FreeTAB 8001 IPS X2 3G\+/', $useragent)) {
+            return new Modecom\ModecomFreeTab8001Ipsx23g($useragent, []);
+        }
+
+        if (preg_match('/FreeTAB 7800 IPS IC/', $useragent)) {
+            return new Modecom\ModecomFreeTab7800IpsIc($useragent, []);
+        }
+
+        if (preg_match('/FreeTAB 7001 HD IC/', $useragent)) {
+            return new Modecom\ModecomFreeTab7001HdIc($useragent, []);
+        }
+
+        if (preg_match('/FreeTAB 1014 IPS X4 3G\+/', $useragent)) {
+            return new Modecom\ModecomFreeTab1014IpsX43g($useragent, []);
+        }
+
+        if (preg_match('/FreeTAB 1001/', $useragent)) {
+            return new Modecom\ModecomFreeTab1001($useragent, []);
+        }
+
+        return new Modecom\Modecom($useragent, []);
     }
 }
