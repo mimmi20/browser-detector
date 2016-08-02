@@ -1022,8 +1022,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/zeki/i', $useragent)) {
-            $device = new Zeki($useragent, []);
-        } elseif (preg_match('/DFunc/', $useragent)) {
+            return Mobile\ZekiFactory::detect($useragent);
+        }
+
+        if (preg_match('/DFunc/', $useragent)) {
             $device = new Dfunc($useragent, []);
         } elseif (preg_match('/Digma/', $useragent)) {
             $device = new Digma($useragent, []);
@@ -1176,9 +1178,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(Tablet\-PC\-4|Kinder\-Tablet)/', $useragent)) {
             return Mobile\CatSoundFactory::detect($useragent);
         } elseif (preg_match('/TBD\d{4}/', $useragent)) {
-            $device = new Zeki($useragent, []);
+            return Mobile\ZekiFactory::detect($useragent);
         } elseif (preg_match('/TBD(B|C)\d{3,4}/', $useragent)) {
-            $device = new Zeki($useragent, []);
+            return Mobile\ZekiFactory::detect($useragent);
         } elseif (preg_match('/AC0732C/', $useragent)) {
             return Mobile\TriQFactory::detect($useragent);
         } elseif (preg_match('/ImPAD6213M\_v2/', $useragent)) {
