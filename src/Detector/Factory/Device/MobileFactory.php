@@ -1078,18 +1078,30 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ MT791 /i', $useragent)) {
-            $device = new KeenHigh($useragent, []);
-        } elseif (preg_match('/(g100w|stream\-s110)/i', $useragent)) {
+            return Mobile\KeenHighFactory::detect($useragent);
+        }
+
+        if (preg_match('/(g100w|stream\-s110)/i', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
-        } elseif (preg_match('/ (a1|a3|b1)\-/i', $useragent)) {
+        }
+
+        if (preg_match('/ (a1|a3|b1)\-/i', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
-        } elseif (preg_match('/wildfire/i', $useragent)) {
+        }
+
+        if (preg_match('/wildfire/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
-        } elseif (preg_match('/a101it/i', $useragent)) {
+        }
+
+        if (preg_match('/a101it/i', $useragent)) {
             return Mobile\ArchosFactory::detect($useragent);
-        } elseif (preg_match('/(sprd|SPHS|B51\+)/i', $useragent)) {
+        }
+
+        if (preg_match('/(sprd|SPHS|B51\+)/i', $useragent)) {
             return Mobile\SprdFactory::detect($useragent);
-        } elseif (preg_match('/TAB A742/', $useragent)) {
+        }
+
+        if (preg_match('/TAB A742/', $useragent)) {
             $device = new Wexler($useragent, []);
         } elseif (preg_match('/ a\d{3} /i', $useragent) && preg_match('/android 3\.2/i', $useragent)) {
             return Mobile\MicromaxFactory::detect($useragent);
