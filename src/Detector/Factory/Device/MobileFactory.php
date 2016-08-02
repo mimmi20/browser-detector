@@ -1058,8 +1058,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/pegatron/i', $useragent)) {
-            $device = new Pegatron($useragent, []);
-        } elseif (preg_match('/logicom/i', $useragent)) {
+            return Mobile\PegatronFactory::detect($useragent);
+        }
+
+        if (preg_match('/logicom/i', $useragent)) {
             $device = new Logicom($useragent, []);
         } elseif (preg_match('/gigabyte/i', $useragent)) {
             $device = new Gigabyte($useragent, []);
@@ -1432,7 +1434,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/TOUAREG8_3G/', $useragent)) {
             return Mobile\AccentFactory::detect($useragent);
         } elseif (preg_match('/chagall/', $useragent)) {
-            $device = new Pegatron($useragent, []);
+            return Mobile\PegatronFactory::detect($useragent);
         } elseif (preg_match('/Turbo X6/', $useragent)) {
             return Mobile\TurboPadFactory::detect($useragent);
         } elseif (preg_match('/HW\-W718/', $useragent)) {
