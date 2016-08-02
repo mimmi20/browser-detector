@@ -1009,9 +1009,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\ShiruFactory::detect($useragent);
         }
 
-        if (preg_match('/TB Touch/i', $useragent)) {
-            $device = new TbTouch($useragent, []);
-        } elseif (preg_match('/NTT/', $useragent)) {
+        if (preg_match('/tb touch/i', $useragent)) {
+            return Mobile\TbTouchFactory::detect($useragent);
+        }
+
+        if (preg_match('/NTT/', $useragent)) {
             $device = new NttSystem($useragent, []);
         } elseif (preg_match('/pentagram/i', $useragent)) {
             $device = new Pentagram($useragent, []);
@@ -1268,7 +1270,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/SAMURAI10/', $useragent)) {
             return Mobile\ShiruFactory::detect($useragent);
         } elseif (preg_match('/Ignis 8/', $useragent)) {
-            $device = new TbTouch($useragent, []);
+            return Mobile\TbTouchFactory::detect($useragent);
         } elseif (preg_match('/A5000/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/FUNC/', $useragent)) {
