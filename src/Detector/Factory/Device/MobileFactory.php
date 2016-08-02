@@ -958,8 +958,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/twz/i', $useragent)) {
-            $device = new Twz($useragent, []);
-        } elseif (preg_match('/irbis/i', $useragent)) {
+            return Mobile\TwzFactory::detect($useragent);
+        }
+
+        if (preg_match('/irbis/i', $useragent)) {
             $device = new Irbis($useragent, []);
         } elseif (preg_match('/i\-mobile/i', $useragent)) {
             $device = new Imobile($useragent, []);
