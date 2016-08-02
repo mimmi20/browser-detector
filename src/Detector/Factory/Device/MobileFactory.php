@@ -998,8 +998,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/manta/i', $useragent)) {
-            $device = new Manta($useragent, []);
-        } elseif (preg_match('/philips/i', $useragent)) {
+            return Mobile\MantaFactory::detect($useragent);
+        }
+
+        if (preg_match('/philips/i', $useragent)) {
             $device = new Philips($useragent, []);
         } elseif (preg_match('/shiru/i', $useragent)) {
             $device = new Shiru($useragent, []);
@@ -1240,7 +1242,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Zanetti/', $useragent)) {
             return Mobile\KianoFactory::detect($useragent);
         } elseif (preg_match('/MID\d{3}/', $useragent)) {
-            $device = new Manta($useragent, []);
+            return Mobile\MantaFactory::detect($useragent);
         } elseif (preg_match('/FWS610_EU/', $useragent)) {
             return Mobile\PhicommFactory::detect($useragent);
         } elseif (preg_match('/FX2/', $useragent)) {
