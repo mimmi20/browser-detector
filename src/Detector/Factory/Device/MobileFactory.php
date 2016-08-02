@@ -1066,8 +1066,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/gigabyte/i', $useragent)) {
-            $device = new Gigabyte($useragent, []);
-        } elseif (preg_match('/qumo/i', $useragent)) {
+            return Mobile\GigabyteFactory::detect($useragent);
+        }
+
+        if (preg_match('/qumo/i', $useragent)) {
             $device = new Qumo($useragent, []);
         } elseif (preg_match('/perfeo/i', $useragent)) {
             $device = new Perfeo($useragent, []);
@@ -1390,7 +1392,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/N\d{4}/', $useragent)) {
             return Mobile\StarFactory::detect($useragent);
         } elseif (preg_match('/(Rio R1|GSmart\_T4)/', $useragent)) {
-            $device = new Gigabyte($useragent, []);
+            return Mobile\GigabyteFactory::detect($useragent);
         } elseif (preg_match('/7007HD/', $useragent)) {
             $device = new Perfeo($useragent, []);
         } elseif (preg_match('/IM\-A830L/', $useragent)) {
