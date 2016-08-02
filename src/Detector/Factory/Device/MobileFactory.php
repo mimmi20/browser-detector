@@ -1002,8 +1002,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/philips/i', $useragent)) {
-            $device = new Philips($useragent, []);
-        } elseif (preg_match('/shiru/i', $useragent)) {
+            return Mobile\PhilipsFactory::detect($useragent);
+        }
+
+        if (preg_match('/shiru/i', $useragent)) {
             $device = new Shiru($useragent, []);
         } elseif (preg_match('/TB Touch/i', $useragent)) {
             $device = new TbTouch($useragent, []);
@@ -1254,7 +1256,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/POV/', $useragent)) {
             $device = new PointOfView($useragent, []);
         } elseif (preg_match('/PI\d{4}/', $useragent)) {
-            $device = new Philips($useragent, []);
+            return Mobile\PhilipsFactory::detect($useragent);
         } elseif (preg_match('/SM \- /', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
         } elseif (preg_match('/(SH05C|304SH)/', $useragent)) {
