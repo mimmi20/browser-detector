@@ -1030,10 +1030,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Digma/', $useragent)) {
-            $device = new Digma($useragent, []);
-        } elseif (preg_match('/axgio/i', $useragent)) {
-            $device = new Axgio($useragent, []);
-        } elseif (preg_match('/roverpad/i', $useragent)) {
+            return Mobile\DigmaFactory::detect($useragent);
+        }
+
+        if (preg_match('/axgio/i', $useragent)) {
+            return Mobile\AxgioFactory::detect($useragent);
+        }
+
+        if (preg_match('/roverpad/i', $useragent)) {
             $device = new RoverPad($useragent, []);
         } elseif (preg_match('/zopo/i', $useragent)) {
             $device = new Zopo($useragent, []);
@@ -1284,7 +1288,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/FUNC/', $useragent)) {
             return Mobile\DfuncFactory::detect($useragent);
         } elseif (preg_match('/iD(j|n|s|x)D\d/', $useragent)) {
-            $device = new Digma($useragent, []);
+            return Mobile\DigmaFactory::detect($useragent);
         } elseif (preg_match('/K910L/', $useragent)) {
             return Mobile\LenovoFactory::detect($useragent);
         } elseif (preg_match('/TAB7iD/', $useragent)) {
@@ -1406,9 +1410,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/AdTab 7 Lite/', $useragent)) {
             return Mobile\AdspecFactory::detect($useragent);
         } elseif (preg_match('/Plane 10\.3 3G PS1043MG/', $useragent)) {
-            $device = new Digma($useragent, []);
+            return Mobile\DigmaFactory::detect($useragent);
         } elseif (preg_match('/(Neon\-N1|WING\-W2)/', $useragent)) {
-            $device = new Axgio($useragent, []);
+            return Mobile\AxgioFactory::detect($useragent);
         } elseif (preg_match('/T118/', $useragent)) {
             return Mobile\TwinovoFactory::detect($useragent);
         } elseif (preg_match('/(A1002|A811)/', $useragent)) {
