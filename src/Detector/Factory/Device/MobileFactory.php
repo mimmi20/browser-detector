@@ -962,8 +962,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/irbis/i', $useragent)) {
-            $device = new Irbis($useragent, []);
-        } elseif (preg_match('/i\-mobile/i', $useragent)) {
+            return Mobile\IrbisFactory::detect($useragent);
+        }
+
+        if (preg_match('/i\-mobile/i', $useragent)) {
             $device = new Imobile($useragent, []);
         } elseif (preg_match('/NGM/', $useragent)) {
             $device = new Ngm($useragent, []);
@@ -1272,7 +1274,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/CINK PEAX 2/', $useragent)) {
             return Mobile\WikoFactory::detect($useragent);
         } elseif (preg_match('/T(X|G)\d{2}/', $useragent)) {
-            $device = new Irbis($useragent, []);
+            return Mobile\IrbisFactory::detect($useragent);
         } elseif (preg_match('/YD\d{3}/', $useragent)) {
             return Mobile\YotaFactory::detect($useragent);
         } elseif (preg_match('/X\-pad/', $useragent)) {
