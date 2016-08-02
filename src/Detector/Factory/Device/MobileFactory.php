@@ -1014,8 +1014,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/NTT/', $useragent)) {
-            $device = new NttSystem($useragent, []);
-        } elseif (preg_match('/pentagram/i', $useragent)) {
+            return Mobile\NttSystemFactory::detect($useragent);
+        }
+
+        if (preg_match('/pentagram/i', $useragent)) {
             $device = new Pentagram($useragent, []);
         } elseif (preg_match('/zeki/i', $useragent)) {
             $device = new Zeki($useragent, []);
