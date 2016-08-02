@@ -949,9 +949,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\YarvikFactory::detect($useragent);
         }
 
-        if (preg_match('/GOCLEVER/', $useragent)) {
-            $device = new GoClever($useragent, []);
-        } elseif (preg_match('/senseit/i', $useragent)) {
+        if (preg_match('/goclever/i', $useragent)) {
+            return Mobile\GoCleverFactory::detect($useragent);
+        }
+
+        if (preg_match('/senseit/i', $useragent)) {
             $device = new Senseit($useragent, []);
         } elseif (preg_match('/twz/i', $useragent)) {
             $device = new Twz($useragent, []);
@@ -1198,11 +1200,11 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/TAB10\-400/', $useragent)) {
             return Mobile\YarvikFactory::detect($useragent);
         } elseif (preg_match('/TQ\d{3}/', $useragent)) {
-            $device = new GoClever($useragent, []);
+            return Mobile\GoCleverFactory::detect($useragent);
         } elseif (preg_match('/RMD\-\d{3,4}/', $useragent)) {
             $device = new Ritmix($useragent, []);
         } elseif (preg_match('/(TERRA_101|ORION7o)/', $useragent)) {
-            $device = new GoClever($useragent, []);
+            return Mobile\GoCleverFactory::detect($useragent);
         } elseif (preg_match('/AX\d{3}/', $useragent)) {
             $device = new Bmobile($useragent, []);
         } elseif (preg_match('/FreeTAB \d{4}/', $useragent)) {
