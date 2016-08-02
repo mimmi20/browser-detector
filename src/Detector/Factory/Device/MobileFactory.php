@@ -970,8 +970,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/NGM/', $useragent)) {
-            $device = new Ngm($useragent, []);
-        } elseif (preg_match('/dino/i', $useragent)) {
+            return Mobile\NgmFactory::detect($useragent);
+        }
+
+        if (preg_match('/dino/i', $useragent)) {
             $device = new Dino($useragent, []);
         } elseif (preg_match('/(shaan|iball)/i', $useragent)) {
             $device = new Shaan($useragent, []);

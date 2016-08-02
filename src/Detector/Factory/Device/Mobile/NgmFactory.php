@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Ngm;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Ngm;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,25 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NgmDynamicRacingGp extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class NgmFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Dynamic Racing GP',
-                'marketingName'     => 'Dynamic Racing GP',
-                'version'           => null,
-                'manufacturer'      => (new Company\Ngm())->name,
-                'brand'             => (new Company\Ngm())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'unknown',
-                'resolutionWidth'   => 480,
-                'resolutionHeight'  => 854,
-                'dualOrientation'   => false,
-                'colors'            => 16777216,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/Miracle/', $useragent)) {
+            return new Ngm\NgmMiracle($useragent, []);
+        }
+
+        if (preg_match('/Dynamic Racing/', $useragent)) {
+            return new Ngm\NgmDynamicRacingGp($useragent, []);
+        }
+
+        return new Ngm\Ngm($useragent, []);
     }
 }
