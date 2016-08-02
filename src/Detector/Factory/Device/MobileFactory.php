@@ -937,9 +937,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\FlyFactory::detect($useragent);
         }
 
-        if (preg_match('/PocketBook/', $useragent)) {
-            $device = new PocketBook($useragent, []);
-        } elseif (preg_match('/Geniatech/', $useragent)) {
+        if (preg_match('/pocketbook/i', $useragent)) {
+            return Mobile\PocketBookFactory::detect($useragent);
+        }
+
+        if (preg_match('/Geniatech/', $useragent)) {
             $device = new Geniatech($useragent, []);
         } elseif (preg_match('/Yarvik/', $useragent)) {
             $device = new Yarvik($useragent, []);
