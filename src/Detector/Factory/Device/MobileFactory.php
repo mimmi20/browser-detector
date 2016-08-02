@@ -978,8 +978,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(shaan|iball)/i', $useragent)) {
-            $device = new Shaan($useragent, []);
-        } elseif (preg_match('/bmobile/i', $useragent) && !preg_match('/icabmobile/i', $useragent)) {
+            return Mobile\ShaanFactory::detect($useragent);
+        }
+
+        if (preg_match('/bmobile/i', $useragent) && !preg_match('/icabmobile/i', $useragent)) {
             $device = new Bmobile($useragent, []);
         } elseif (preg_match('/modecom/i', $useragent)) {
             $device = new Modecom($useragent, []);
