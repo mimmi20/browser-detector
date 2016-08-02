@@ -941,9 +941,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\PocketBookFactory::detect($useragent);
         }
 
-        if (preg_match('/Geniatech/', $useragent)) {
-            $device = new Geniatech($useragent, []);
-        } elseif (preg_match('/Yarvik/', $useragent)) {
+        if (preg_match('/geniatech/i', $useragent)) {
+            return Mobile\GeniatechFactory::detect($useragent);
+        }
+
+        if (preg_match('/Yarvik/', $useragent)) {
             $device = new Yarvik($useragent, []);
         } elseif (preg_match('/GOCLEVER/', $useragent)) {
             $device = new GoClever($useragent, []);
@@ -1312,7 +1314,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Smartphone650/', $useragent)) {
             $device = new Master($useragent, []);
         } elseif (preg_match('/MX Enjoy TV BOX/', $useragent)) {
-            $device = new Geniatech($useragent, []);
+            return Mobile\GeniatechFactory::detect($useragent);
         } elseif (preg_match('/A1000s/', $useragent)) {
             $device = new Xolo($useragent, []);
         } elseif (preg_match('/P3000/', $useragent)) {
