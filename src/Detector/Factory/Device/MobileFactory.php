@@ -1070,8 +1070,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/qumo/i', $useragent)) {
-            $device = new Qumo($useragent, []);
-        } elseif (preg_match('/perfeo/i', $useragent)) {
+            return Mobile\QumoFactory::detect($useragent);
+        }
+
+        if (preg_match('/perfeo/i', $useragent)) {
             $device = new Perfeo($useragent, []);
         } elseif (preg_match('/ MT791 /i', $useragent)) {
             $device = new KeenHigh($useragent, []);
