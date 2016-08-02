@@ -1026,8 +1026,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/DFunc/', $useragent)) {
-            $device = new Dfunc($useragent, []);
-        } elseif (preg_match('/Digma/', $useragent)) {
+            return Mobile\DfuncFactory::detect($useragent);
+        }
+
+        if (preg_match('/Digma/', $useragent)) {
             $device = new Digma($useragent, []);
         } elseif (preg_match('/axgio/i', $useragent)) {
             $device = new Axgio($useragent, []);
@@ -1280,7 +1282,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/A5000/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/FUNC/', $useragent)) {
-            $device = new Dfunc($useragent, []);
+            return Mobile\DfuncFactory::detect($useragent);
         } elseif (preg_match('/iD(j|n|s|x)D\d/', $useragent)) {
             $device = new Digma($useragent, []);
         } elseif (preg_match('/K910L/', $useragent)) {
