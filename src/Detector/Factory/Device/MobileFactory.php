@@ -954,8 +954,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/senseit/i', $useragent)) {
-            $device = new Senseit($useragent, []);
-        } elseif (preg_match('/twz/i', $useragent)) {
+            return Mobile\SenseitFactory::detect($useragent);
+        }
+
+        if (preg_match('/twz/i', $useragent)) {
             $device = new Twz($useragent, []);
         } elseif (preg_match('/irbis/i', $useragent)) {
             $device = new Irbis($useragent, []);
