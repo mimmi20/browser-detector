@@ -1046,8 +1046,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ultrafone/', $useragent)) {
-            $device = new Ultrafone($useragent, []);
-        } elseif (preg_match('/malata/i', $useragent)) {
+            return Mobile\UltrafoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/malata/i', $useragent)) {
             $device = new Malata($useragent, []);
         } elseif (preg_match('/starway/i', $useragent)) {
             $device = new Starway($useragent, []);
