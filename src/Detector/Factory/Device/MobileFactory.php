@@ -982,8 +982,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/bmobile/i', $useragent) && !preg_match('/icabmobile/i', $useragent)) {
-            $device = new Bmobile($useragent, []);
-        } elseif (preg_match('/modecom/i', $useragent)) {
+            return Mobile\BmobileFactory::detect($useragent);
+        }
+
+        if (preg_match('/modecom/i', $useragent)) {
             $device = new Modecom($useragent, []);
         } elseif (preg_match('/overmax/i', $useragent)) {
             $device = new Overmax($useragent, []);
@@ -1220,7 +1222,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(TERRA_101|ORION7o)/', $useragent)) {
             return Mobile\GoCleverFactory::detect($useragent);
         } elseif (preg_match('/AX\d{3}/', $useragent)) {
-            $device = new Bmobile($useragent, []);
+            return Mobile\BmobileFactory::detect($useragent);
         } elseif (preg_match('/FreeTAB \d{4}/', $useragent)) {
             $device = new Modecom($useragent, []);
         } elseif (preg_match('/Venue/', $useragent)) {
