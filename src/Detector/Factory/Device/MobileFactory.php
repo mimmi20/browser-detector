@@ -1038,10 +1038,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/roverpad/i', $useragent)) {
-            $device = new RoverPad($useragent, []);
-        } elseif (preg_match('/zopo/i', $useragent)) {
-            $device = new Zopo($useragent, []);
-        } elseif (preg_match('/ultrafone/', $useragent)) {
+            return Mobile\RoverPadFactory::detect($useragent);
+        }
+
+        if (preg_match('/zopo/i', $useragent)) {
+            return Mobile\ZopoFactory::detect($useragent);
+        }
+
+        if (preg_match('/ultrafone/', $useragent)) {
             $device = new Ultrafone($useragent, []);
         } elseif (preg_match('/malata/i', $useragent)) {
             $device = new Malata($useragent, []);
@@ -1294,7 +1298,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/TAB7iD/', $useragent)) {
             $device = new Wexler($useragent, []);
         } elseif (preg_match('/ZP\d{3}/', $useragent)) {
-            $device = new Zopo($useragent, []);
+            return Mobile\ZopoFactory::detect($useragent);
         } elseif (preg_match('/s450\d/i', $useragent)) {
             $device = new Dns($useragent, []);
         } elseif (preg_match('/MB40II1/i', $useragent)) {
@@ -1428,7 +1432,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/HW\-W718/', $useragent)) {
             return Mobile\HaierFactory::detect($useragent);
         } elseif (preg_match('/Air A70/', $useragent)) {
-            $device = new RoverPad($useragent, []);
+            return Mobile\RoverPadFactory::detect($useragent);
         } elseif (preg_match('/SP\-6020 QUASAR/', $useragent)) {
             $device = new Woo($useragent, []);
         } elseif (preg_match('/M717R-HD/', $useragent)) {

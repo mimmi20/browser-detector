@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Zopo;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Zopo;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,57 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ZopoZp950 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class ZopoFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'ZP950',
-                'marketingName'     => 'ZP950 LEADER MAX',
-                'version'           => null,
-                'manufacturer'      => (new Company\Zopo())->name,
-                'brand'             => (new Company\Zopo())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 720,
-                'resolutionHeight'  => 1280,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/ZP980/', $useragent)) {
+            return new Zopo\ZopoZp980($useragent, []);
+        }
+
+        if (preg_match('/ZP950\+/', $useragent)) {
+            return new Zopo\ZopoZp950Plus($useragent, []);
+        }
+
+        if (preg_match('/ZP950/', $useragent)) {
+            return new Zopo\ZopoZp950($useragent, []);
+        }
+
+        if (preg_match('/ZP9(10|00H)/', $useragent)) {
+            return new Zopo\ZopoZp910($useragent, []);
+        }
+
+        if (preg_match('/ZP900/', $useragent)) {
+            return new Zopo\ZopoZp900($useragent, []);
+        }
+
+        if (preg_match('/ZP8(10|00H)/', $useragent)) {
+            return new Zopo\ZopoZp810($useragent, []);
+        }
+
+        if (preg_match('/ZP500/', $useragent)) {
+            return new Zopo\ZopoZp500($useragent, []);
+        }
+
+        if (preg_match('/ZP300/', $useragent)) {
+            return new Zopo\ZopoZp300($useragent, []);
+        }
+
+        if (preg_match('/ZP200/', $useragent)) {
+            return new Zopo\ZopoZp200($useragent, []);
+        }
+
+        if (preg_match('/ZP100/', $useragent)) {
+            return new Zopo\ZopoZp100($useragent, []);
+        }
+
+        return new Zopo\Zopo($useragent, []);
     }
 }
