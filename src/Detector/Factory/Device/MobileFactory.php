@@ -1161,9 +1161,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\BluFactory::detect($useragent);
         }
 
-        if (preg_match('/Nuqleo/', $useragent)) {
-            $device = new Nuqleo($useragent, []);
-        } elseif (preg_match('/ritmix/i', $useragent)) {
+        if (preg_match('/nuqleo/i', $useragent)) {
+            return Mobile\NuqleoFactory::detect($useragent);
+        }
+
+        if (preg_match('/ritmix/i', $useragent)) {
             $device = new Ritmix($useragent, []);
         } elseif (preg_match('/wexler/i', $useragent)) {
             return Mobile\WexlerFactory::detect($useragent);
@@ -1304,7 +1306,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/NOOK/', $useragent)) {
             return Mobile\BarnesNobleFactory::detect($useragent);
         } elseif (preg_match('/Zaffire/', $useragent)) {
-            $device = new Nuqleo($useragent, []);
+            return Mobile\NuqleoFactory::detect($useragent);
         } elseif (preg_match('/BNRV\d{3}/', $useragent)) {
             return Mobile\BarnesNobleFactory::detect($useragent);
         } elseif (preg_match('/IQ\d{3,4}/', $useragent)) {
