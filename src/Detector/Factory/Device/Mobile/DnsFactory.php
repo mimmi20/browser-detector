@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Dns;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\Dns;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,41 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DnsMb40ii1 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class DnsFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'MB40II1',
-                'marketingName'     => 'MB40II1',
-                'version'           => null,
-                'manufacturer'      => (new Company\Dns())->name,
-                'brand'             => (new Company\Dns())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'mouse',
-                'resolutionWidth'   => 1024,
-                'resolutionHeight'  => 600,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Desktop(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/S5701/', $useragent)) {
+            return new Dns\DnsS5701($useragent, []);
+        }
+
+        if (preg_match('/S4505M/', $useragent)) {
+            return new Dns\DnsS4505m($useragent, []);
+        }
+
+        if (preg_match('/S4505/', $useragent)) {
+            return new Dns\DnsS4505($useragent, []);
+        }
+
+        if (preg_match('/s4502m/i', $useragent)) {
+            return new Dns\DnsS4502m($useragent, []);
+        }
+
+        if (preg_match('/S4008/', $useragent)) {
+            return new Dns\DnsS4008($useragent, []);
+        }
+
+        if (preg_match('/MB40II1/', $useragent)) {
+            return new Dns\DnsMb40ii1($useragent, []);
+        }
+
+        return new Dns\Dns($useragent, []);
     }
 }

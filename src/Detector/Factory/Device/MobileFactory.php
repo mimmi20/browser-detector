@@ -1186,8 +1186,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/dns/i', $useragent)) {
-            $device = new Dns($useragent, []);
-        } elseif (preg_match('/dexp/i', $useragent)) {
+            return Mobile\DnsFactory::detect($useragent);
+        }
+
+        if (preg_match('/dexp/i', $useragent)) {
             $device = new Dexp($useragent, []);
         } elseif (preg_match('/keneksi/i', $useragent)) {
             $device = new Keneksi($useragent, []);
@@ -1380,9 +1382,9 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ZP\d{3}/', $useragent)) {
             return Mobile\ZopoFactory::detect($useragent);
         } elseif (preg_match('/s450\d/i', $useragent)) {
-            $device = new Dns($useragent, []);
+            return Mobile\DnsFactory::detect($useragent);
         } elseif (preg_match('/MB40II1/i', $useragent)) {
-            $device = new Dns($useragent, []);
+            return Mobile\DnsFactory::detect($useragent);
         } elseif (preg_match('/ M3 /', $useragent)) {
             $device = new Gionee($useragent, []);
         } elseif (preg_match('/(W100|W200|W8_beyond)/', $useragent)) {
