@@ -1202,8 +1202,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/highscreen/i', $useragent)) {
-            $device = new Highscreen($useragent, []);
-        } elseif (preg_match('/reeder/i', $useragent)) {
+            return Mobile\HighscreenFactory::detect($useragent);
+        }
+
+        if (preg_match('/reeder/i', $useragent)) {
             $device = new Reeder($useragent, []);
         } elseif (preg_match('/nomi/i', $useragent)) {
             $device = new Nomi($useragent, []);
@@ -1412,7 +1414,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ G3 /', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
         } elseif (preg_match('/(Zera_F|Boost IIse|Ice2|Prime S|Explosion)/', $useragent)) {
-            $device = new Highscreen($useragent, []);
+            return Mobile\HighscreenFactory::detect($useragent);
         } elseif (preg_match('/iris708/', $useragent)) {
             $device = new Ais($useragent, []);
         } elseif (preg_match('/L930/', $useragent)) {
