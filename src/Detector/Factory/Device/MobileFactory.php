@@ -1118,8 +1118,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(United|MT6515M)/', $useragent)) {
-            $device = new United($useragent, []);
-        } elseif (preg_match('/(utstarcom|GTX75)/i', $useragent)) {
+            return Mobile\UnitedFactory::detect($useragent);
+        }
+
+        if (preg_match('/(utstarcom|GTX75)/i', $useragent)) {
             $device = new UtStarcom($useragent, []);
         } elseif (preg_match('/(Fairphone|FP1)/i', $useragent)) {
             $device = new Fairphone($useragent, []);
