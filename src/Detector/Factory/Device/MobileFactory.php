@@ -1158,8 +1158,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/BLU/', $useragent)) {
-            $device = new Blu($useragent, []);
-        } elseif (preg_match('/Nuqleo/', $useragent)) {
+            return Mobile\BluFactory::detect($useragent);
+        }
+
+        if (preg_match('/Nuqleo/', $useragent)) {
             $device = new Nuqleo($useragent, []);
         } elseif (preg_match('/ritmix/i', $useragent)) {
             $device = new Ritmix($useragent, []);
@@ -1298,7 +1300,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(SO-03E|SO-02D)/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/VIVO/', $useragent)) {
-            $device = new Blu($useragent, []);
+            return Mobile\BluFactory::detect($useragent);
         } elseif (preg_match('/NOOK/', $useragent)) {
             return Mobile\BarnesNobleFactory::detect($useragent);
         } elseif (preg_match('/Zaffire/', $useragent)) {
