@@ -1246,8 +1246,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Magic/', $useragent)) {
-            $device = new Magic($useragent, []);
-        } elseif (preg_match('/BQS/', $useragent)) {
+            return Mobile\MagicFactory::detect($useragent);
+        }
+
+        if (preg_match('/BQS/', $useragent)) {
             $device = new Bq($useragent, []);
         } elseif (preg_match('/BQ \d{4}/', $useragent)) {
             $device = new Bq($useragent, []);
