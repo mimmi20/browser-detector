@@ -1206,8 +1206,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/reeder/i', $useragent)) {
-            $device = new Reeder($useragent, []);
-        } elseif (preg_match('/nomi/i', $useragent)) {
+            return Mobile\ReederFactory::detect($useragent);
+        }
+
+        if (preg_match('/nomi/i', $useragent)) {
             $device = new Nomi($useragent, []);
         } elseif (preg_match('/globex/i', $useragent)) {
             $device = new Globex($useragent, []);
