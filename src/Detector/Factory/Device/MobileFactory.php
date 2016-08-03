@@ -1282,28 +1282,50 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/myTAB/', $useragent)) {
-            $device = new Mytab($useragent, []);
-        } elseif (preg_match('/(loox|uno\_x10|xelio|neo\_quad10|ieos\_quad|sky plus)/i', $useragent)) {
+            return Mobile\MytabFactory::detect($useragent);
+        }
+
+        if (preg_match('/(loox|uno\_x10|xelio|neo\_quad10|ieos\_quad|sky plus)/i', $useragent)) {
             return Mobile\OdysFactory::detect($useragent);
-        } elseif (preg_match('/iPh\d\,\d/', $useragent)) {
+        }
+
+        if (preg_match('/iPh\d\,\d/', $useragent)) {
             return Mobile\AppleFactory::detect($useragent);
-        } elseif (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
+        }
+
+        if (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
             return new Apple\Ipad($useragent, []);
-        } elseif (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
+        }
+
+        if (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
             return new Apple\Iphone($useragent, []);
-        } elseif (preg_match('/dataaccessd/', $useragent)) {
+        }
+
+        if (preg_match('/dataaccessd/', $useragent)) {
             return Mobile\AppleFactory::detect($useragent);
-        } elseif (preg_match('/Pre/', $useragent) && !preg_match('/Presto/', $useragent)) {
+        }
+
+        if (preg_match('/Pre/', $useragent) && !preg_match('/Presto/', $useragent)) {
             return Mobile\HpFactory::detect($useragent);
-        } elseif (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501|N918St|Beeline Pro|ATLAS_W)/', $useragent)) {
+        }
+
+        if (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501|N918St|Beeline Pro|ATLAS_W)/', $useragent)) {
             return Mobile\ZteFactory::detect($useragent);
-        } elseif (preg_match('/ME\d{3}[A-Z]/', $useragent)) {
+        }
+
+        if (preg_match('/ME\d{3}[A-Z]/', $useragent)) {
             return Mobile\AsusFactory::detect($useragent);
-        } elseif (preg_match('/(PadFone|Transformer)/', $useragent)) {
+        }
+
+        if (preg_match('/(PadFone|Transformer)/', $useragent)) {
             return Mobile\AsusFactory::detect($useragent);
-        } elseif (preg_match('/K0(0|1)[0-9a-zA-Z]/', $useragent)) {
+        }
+
+        if (preg_match('/K0(0|1)[0-9a-zA-Z]/', $useragent)) {
             return Mobile\AsusFactory::detect($useragent);
-        } elseif (preg_match('/QtCarBrowser/', $useragent)) {
+        }
+
+        if (preg_match('/QtCarBrowser/', $useragent)) {
             $device = new Tesla($useragent, []);
         } elseif (preg_match('/MOT/', $useragent)) {
             return Mobile\MotorolaFactory::detect($useragent);
