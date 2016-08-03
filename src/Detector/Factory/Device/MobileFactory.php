@@ -1102,12 +1102,18 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/TAB A742/', $useragent)) {
-            $device = new Wexler($useragent, []);
-        } elseif (preg_match('/ a\d{3} /i', $useragent) && preg_match('/android 3\.2/i', $useragent)) {
+            return Mobile\WexlerFactory::detect($useragent);
+        }
+
+        if (preg_match('/ a\d{3} /i', $useragent) && preg_match('/android 3\.2/i', $useragent)) {
             return Mobile\MicromaxFactory::detect($useragent);
-        } elseif (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
+        }
+
+        if (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
-        } elseif (preg_match('/AT\-AS40SE/', $useragent)) {
+        }
+
+        if (preg_match('/AT\-AS40SE/', $useragent)) {
             $device = new Wolgang($useragent, []);
         } elseif (preg_match('/(United|MT6515M)/', $useragent)) {
             $device = new United($useragent, []);
@@ -1126,7 +1132,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/ritmix/i', $useragent)) {
             $device = new Ritmix($useragent, []);
         } elseif (preg_match('/wexler/i', $useragent)) {
-            $device = new Wexler($useragent, []);
+            return Mobile\WexlerFactory::detect($useragent);
         } elseif (preg_match('/exeq/i', $useragent)) {
             $device = new Exeq($useragent, []);
         } elseif (preg_match('/ergo/i', $useragent)) {
@@ -1324,7 +1330,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/K910L/', $useragent)) {
             return Mobile\LenovoFactory::detect($useragent);
         } elseif (preg_match('/TAB7iD/', $useragent)) {
-            $device = new Wexler($useragent, []);
+            return Mobile\WexlerFactory::detect($useragent);
         } elseif (preg_match('/ZP\d{3}/', $useragent)) {
             return Mobile\ZopoFactory::detect($useragent);
         } elseif (preg_match('/s450\d/i', $useragent)) {
