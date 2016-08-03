@@ -1214,8 +1214,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/globex/i', $useragent)) {
-            $device = new Globex($useragent, []);
-        } elseif (preg_match('/AIS/', $useragent)) {
+            return Mobile\GlobexFactory::detect($useragent);
+        }
+
+        if (preg_match('/AIS/', $useragent)) {
             $device = new Ais($useragent, []);
         } elseif (preg_match('/CIOtCUD/i', $useragent)) {
             $device = new Ciotcud($useragent, []);
