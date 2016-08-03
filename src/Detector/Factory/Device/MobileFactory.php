@@ -1262,8 +1262,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/msi/i', $useragent) && !preg_match('/msie/i', $useragent)) {
-            $device = new Msi($useragent, []);
-        } elseif (preg_match('/Orange/', $useragent)) {
+            return Mobile\MsiFactory::detect($useragent);
+        }
+
+        if (preg_match('/Orange/', $useragent)) {
             $device = new Orange($useragent, []);
         } elseif (preg_match('/vastking/i', $useragent)) {
             $device = new VastKing($useragent, []);
@@ -1428,7 +1430,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/NT\-\d{4}(S|P|T)/', $useragent)) {
             return Mobile\IconBitFactory::detect($useragent);
         } elseif (preg_match('/Primo76/', $useragent)) {
-            $device = new Msi($useragent, []);
+            return Mobile\MsiFactory::detect($useragent);
         } elseif (preg_match('/CINK PEAX 2/', $useragent)) {
             return Mobile\WikoFactory::detect($useragent);
         } elseif (preg_match('/T(X|G)\d{2}/', $useragent)) {
