@@ -1190,8 +1190,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/dexp/i', $useragent)) {
-            $device = new Dexp($useragent, []);
-        } elseif (preg_match('/keneksi/i', $useragent)) {
+            return Mobile\DexpFactory::detect($useragent);
+        }
+
+        if (preg_match('/keneksi/i', $useragent)) {
             $device = new Keneksi($useragent, []);
         } elseif (preg_match('/gionee/i', $useragent)) {
             $device = new Gionee($useragent, []);
