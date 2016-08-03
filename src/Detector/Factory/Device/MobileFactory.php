@@ -1198,8 +1198,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/gionee/i', $useragent)) {
-            $device = new Gionee($useragent, []);
-        } elseif (preg_match('/highscreen/i', $useragent)) {
+            return Mobile\GioneeFactory::detect($useragent);
+        }
+
+        if (preg_match('/highscreen/i', $useragent)) {
             $device = new Highscreen($useragent, []);
         } elseif (preg_match('/reeder/i', $useragent)) {
             $device = new Reeder($useragent, []);
@@ -1390,7 +1392,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/MB40II1/i', $useragent)) {
             return Mobile\DnsFactory::detect($useragent);
         } elseif (preg_match('/ M3 /', $useragent)) {
-            $device = new Gionee($useragent, []);
+            return new Gionee\GioneeMarathonM3($useragent, []);
         } elseif (preg_match('/(W100|W200|W8_beyond)/', $useragent)) {
             return Mobile\ThlFactory::detect($useragent);
         } elseif (preg_match('/NT\-\d{4}(S|P|T)/', $useragent)) {
