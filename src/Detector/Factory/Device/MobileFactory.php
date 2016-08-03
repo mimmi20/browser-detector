@@ -1266,8 +1266,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Orange/', $useragent)) {
-            $device = new Orange($useragent, []);
-        } elseif (preg_match('/vastking/i', $useragent)) {
+            return Mobile\OrangeFactory::detect($useragent);
+        }
+
+        if (preg_match('/vastking/i', $useragent)) {
             $device = new VastKing($useragent, []);
         } elseif (preg_match('/wopad/i', $useragent)) {
             $device = new Wopad($useragent, []);
@@ -1378,7 +1380,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/Venue/', $useragent)) {
             return Mobile\DellFactory::detect($useragent);
         } elseif (preg_match('/FunTab/', $useragent)) {
-            $device = new Orange($useragent, []);
+            return Mobile\OrangeFactory::detect($useragent);
         } elseif (preg_match('/(OV\-|Solution 7III)/', $useragent)) {
             return Mobile\OvermaxFactory::detect($useragent);
         } elseif (preg_match('/Zanetti/', $useragent)) {
