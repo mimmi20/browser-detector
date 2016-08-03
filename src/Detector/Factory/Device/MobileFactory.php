@@ -1113,17 +1113,31 @@ class MobileFactory implements FactoryInterface
             return Mobile\AcerFactory::detect($useragent);
         }
 
-        if (preg_match('/AT\-AS40SE/', $useragent)) {
+        if (preg_match('/wolgang/i', $useragent)) {
             return Mobile\WolgangFactory::detect($useragent, []);
         }
 
-        if (preg_match('/(United|MT6515M)/', $useragent)) {
+        if (preg_match('/AT\-AS40SE/', $useragent)) {
+            return new Wolgang\WolgangAtas40se($useragent, []);
+        }
+
+        if (preg_match('/united/i', $useragent)) {
             return Mobile\UnitedFactory::detect($useragent);
         }
 
-        if (preg_match('/(utstarcom|GTX75)/i', $useragent)) {
-            $device = new UtStarcom($useragent, []);
-        } elseif (preg_match('/(Fairphone|FP1)/i', $useragent)) {
+        if (preg_match('/MT6515M/', $useragent)) {
+            return new United\UnitedMt6515m($useragent, []);
+        }
+
+        if (preg_match('/utstarcom/i', $useragent)) {
+            return Mobile\UtStarcomFactory::detect($useragent);
+        }
+
+        if (preg_match('/GTX75/', $useragent)) {
+            return new UtStarcom\UtStarcomGtx75($useragent, []);
+        }
+
+        if (preg_match('/(Fairphone|FP1)/i', $useragent)) {
             $device = new Fairphone($useragent, []);
         } elseif (preg_match('/(Videocon|A15)/', $useragent)) {
             $device = new Videocon($useragent, []);
