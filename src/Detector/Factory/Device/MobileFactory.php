@@ -1154,8 +1154,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/mastone/i', $useragent)) {
-            $device = new Mastone($useragent, []);
-        } elseif (preg_match('/BLU/', $useragent)) {
+            return Mobile\MastoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/BLU/', $useragent)) {
             $device = new Blu($useragent, []);
         } elseif (preg_match('/Nuqleo/', $useragent)) {
             $device = new Nuqleo($useragent, []);
