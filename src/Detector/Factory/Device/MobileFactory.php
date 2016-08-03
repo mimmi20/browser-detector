@@ -1274,8 +1274,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/wopad/i', $useragent)) {
-            $device = new Wopad($useragent, []);
-        } elseif (preg_match('/anka/i', $useragent)) {
+            return Mobile\WopadFactory::detect($useragent);
+        }
+
+        if (preg_match('/anka/i', $useragent)) {
             $device = new Anka($useragent, []);
         } elseif (preg_match('/myTAB/', $useragent)) {
             $device = new Mytab($useragent, []);
@@ -1562,7 +1564,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/M717R-HD/', $useragent)) {
             return Mobile\VastKingFactory::detect($useragent);
         } elseif (preg_match('/Q10S/', $useragent)) {
-            $device = new Wopad($useragent, []);
+            return Mobile\WopadFactory::detect($useragent);
         } elseif (preg_match('/CTAB785R16\-3G/', $useragent)) {
             return Mobile\CondorFactory::detect($useragent);
         } elseif (preg_match('/RP\-UDM\d{2}/', $useragent)) {
