@@ -1182,8 +1182,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/pulid/i', $useragent)) {
-            $device = new Pulid($useragent, []);
-        } elseif (preg_match('/dns/i', $useragent)) {
+            return Mobile\PulidFactory::detect($useragent);
+        }
+
+        if (preg_match('/dns/i', $useragent)) {
             $device = new Dns($useragent, []);
         } elseif (preg_match('/dexp/i', $useragent)) {
             $device = new Dexp($useragent, []);
