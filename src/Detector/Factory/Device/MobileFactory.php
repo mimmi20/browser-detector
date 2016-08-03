@@ -1137,9 +1137,15 @@ class MobileFactory implements FactoryInterface
             return new UtStarcom\UtStarcomGtx75($useragent, []);
         }
 
-        if (preg_match('/(Fairphone|FP1)/i', $useragent)) {
-            $device = new Fairphone($useragent, []);
-        } elseif (preg_match('/(Videocon|A15)/', $useragent)) {
+        if (preg_match('/fairphone/i', $useragent)) {
+            return Mobile\FairphoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/FP1/', $useragent)) {
+            return new Fairphone\FairphoneFp1($useragent, []);
+        }
+
+        if (preg_match('/(Videocon|A15)/', $useragent)) {
             $device = new Videocon($useragent, []);
         } elseif (preg_match('/mastone/i', $useragent)) {
             $device = new Mastone($useragent, []);
