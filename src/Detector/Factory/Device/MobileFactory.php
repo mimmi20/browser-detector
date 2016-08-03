@@ -1278,8 +1278,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/anka/i', $useragent)) {
-            $device = new Anka($useragent, []);
-        } elseif (preg_match('/myTAB/', $useragent)) {
+            return Mobile\AnkaFactory::detect($useragent);
+        }
+
+        if (preg_match('/myTAB/', $useragent)) {
             $device = new Mytab($useragent, []);
         } elseif (preg_match('/(loox|uno\_x10|xelio|neo\_quad10|ieos\_quad|sky plus)/i', $useragent)) {
             return Mobile\OdysFactory::detect($useragent);
