@@ -1218,8 +1218,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/AIS/', $useragent)) {
-            $device = new Ais($useragent, []);
-        } elseif (preg_match('/CIOtCUD/i', $useragent)) {
+            return Mobile\AisFactory::detect($useragent);
+        }
+
+        if (preg_match('/CIOtCUD/i', $useragent)) {
             $device = new Ciotcud($useragent, []);
         } elseif (preg_match('/iNew/', $useragent)) {
             $device = new Inew($useragent, []);
@@ -1422,7 +1424,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/(Zera_F|Boost IIse|Ice2|Prime S|Explosion)/', $useragent)) {
             return Mobile\HighscreenFactory::detect($useragent);
         } elseif (preg_match('/iris708/', $useragent)) {
-            $device = new Ais($useragent, []);
+            return new Ais\AisLavaPro45($useragent, []);
         } elseif (preg_match('/L930/', $useragent)) {
             $device = new Ciotcud($useragent, []);
         } elseif (preg_match('/SMART Run/', $useragent)) {
