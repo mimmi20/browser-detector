@@ -1222,8 +1222,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/CIOtCUD/i', $useragent)) {
-            $device = new Ciotcud($useragent, []);
-        } elseif (preg_match('/iNew/', $useragent)) {
+            return Mobile\CiotcudFactory::detect($useragent);
+        }
+
+        if (preg_match('/iNew/', $useragent)) {
             $device = new Inew($useragent, []);
         } elseif (preg_match('/Intego/', $useragent)) {
             $device = new Intego($useragent, []);
@@ -1426,7 +1428,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/iris708/', $useragent)) {
             return new Ais\AisLavaPro45($useragent, []);
         } elseif (preg_match('/L930/', $useragent)) {
-            $device = new Ciotcud($useragent, []);
+            return new Ciotcud\CiotcudL930($useragent, []);
         } elseif (preg_match('/SMART Run/', $useragent)) {
             $device = new Mtc($useragent, []);
         } elseif (preg_match('/X8\+/', $useragent)) {
