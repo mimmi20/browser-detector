@@ -1226,8 +1226,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/iNew/', $useragent)) {
-            $device = new Inew($useragent, []);
-        } elseif (preg_match('/Intego/', $useragent)) {
+            return Mobile\InewFactory::detect($useragent);
+        }
+
+        if (preg_match('/Intego/', $useragent)) {
             $device = new Intego($useragent, []);
         } elseif (preg_match('/MTC/', $useragent)) {
             $device = new Mtc($useragent, []);
@@ -1458,7 +1460,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/P4501/', $useragent)) {
             return Mobile\MedionFactory::detect($useragent);
         } elseif (preg_match('/ V3 /', $useragent)) {
-            $device = new Inew($useragent, []);
+            return new Inew\InewV3($useragent, []);
         } elseif (preg_match('/PX\-0905/', $useragent)) {
             $device = new Intego($useragent, []);
         } elseif (preg_match('/Smartphone650/', $useragent)) {
