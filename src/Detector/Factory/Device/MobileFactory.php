@@ -1114,8 +1114,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/AT\-AS40SE/', $useragent)) {
-            $device = new Wolgang($useragent, []);
-        } elseif (preg_match('/(United|MT6515M)/', $useragent)) {
+            return Mobile\WolgangFactory::detect($useragent, []);
+        }
+
+        if (preg_match('/(United|MT6515M)/', $useragent)) {
             $device = new United($useragent, []);
         } elseif (preg_match('/(utstarcom|GTX75)/i', $useragent)) {
             $device = new UtStarcom($useragent, []);
