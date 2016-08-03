@@ -1210,8 +1210,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/nomi/i', $useragent)) {
-            $device = new Nomi($useragent, []);
-        } elseif (preg_match('/globex/i', $useragent)) {
+            return Mobile\NomiFactory::detect($useragent);
+        }
+
+        if (preg_match('/globex/i', $useragent)) {
             $device = new Globex($useragent, []);
         } elseif (preg_match('/AIS/', $useragent)) {
             $device = new Ais($useragent, []);
@@ -1287,8 +1289,8 @@ class MobileFactory implements FactoryInterface
             return Mobile\TriQFactory::detect($useragent);
         } elseif (preg_match('/ImPAD6213M\_v2/', $useragent)) {
             return Mobile\ImpressionFactory::detect($useragent);
-        } elseif (preg_match('/(A10100|C07000)/', $useragent)) {
-            $device = new Nomi($useragent, []);
+        } elseif (preg_match('/(A|C)\d{5}/', $useragent)) {
+            return Mobile\NomiFactory::detect($useragent);
         } elseif (preg_match('/(C|D)\d{4}/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         } elseif (preg_match('/SGP\d{3}/', $useragent)) {
