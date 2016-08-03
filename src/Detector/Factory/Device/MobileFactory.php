@@ -1242,8 +1242,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ARK/', $useragent)) {
-            $device = new Ark($useragent, []);
-        } elseif (preg_match('/Magic/', $useragent)) {
+            return Mobile\ArkFactory::detect($useragent);
+        }
+
+        if (preg_match('/Magic/', $useragent)) {
             $device = new Magic($useragent, []);
         } elseif (preg_match('/BQS/', $useragent)) {
             $device = new Bq($useragent, []);
