@@ -1194,8 +1194,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/keneksi/i', $useragent)) {
-            $device = new Keneksi($useragent, []);
-        } elseif (preg_match('/gionee/i', $useragent)) {
+            return Mobile\KeneksiFactory::detect($useragent);
+        }
+
+        if (preg_match('/gionee/i', $useragent)) {
             $device = new Gionee($useragent, []);
         } elseif (preg_match('/highscreen/i', $useragent)) {
             $device = new Highscreen($useragent, []);
