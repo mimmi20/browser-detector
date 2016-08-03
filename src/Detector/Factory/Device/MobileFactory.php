@@ -1174,8 +1174,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/exeq/i', $useragent)) {
-            $device = new Exeq($useragent, []);
-        } elseif (preg_match('/ergo/i', $useragent)) {
+            return Mobile\ExeqFactory::detect($useragent);
+        }
+
+        if (preg_match('/ergo/i', $useragent)) {
             $device = new Ergo($useragent, []);
         } elseif (preg_match('/pulid/i', $useragent)) {
             $device = new Pulid($useragent, []);
