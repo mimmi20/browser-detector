@@ -1145,9 +1145,15 @@ class MobileFactory implements FactoryInterface
             return new Fairphone\FairphoneFp1($useragent, []);
         }
 
-        if (preg_match('/(Videocon|A15)/', $useragent)) {
-            $device = new Videocon($useragent, []);
-        } elseif (preg_match('/mastone/i', $useragent)) {
+        if (preg_match('/videocon/i', $useragent)) {
+            return Mobile\VideoconFactory::detect($useragent);
+        }
+
+        if (preg_match('/A15/', $useragent)) {
+            return new Videocon\VideoconA15($useragent, []);
+        }
+
+        if (preg_match('/mastone/i', $useragent)) {
             $device = new Mastone($useragent, []);
         } elseif (preg_match('/BLU/', $useragent)) {
             $device = new Blu($useragent, []);
