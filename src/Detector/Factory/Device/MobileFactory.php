@@ -1250,12 +1250,18 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/BQS/', $useragent)) {
-            $device = new Bq($useragent, []);
-        } elseif (preg_match('/BQ \d{4}/', $useragent)) {
-            $device = new Bq($useragent, []);
-        } elseif (preg_match('/bq Aquaris 5 HD/', $useragent)) {
-            $device = new Bq($useragent, []);
-        } elseif (preg_match('/msi/i', $useragent) && !preg_match('/msie/i', $useragent)) {
+            return Mobile\BqFactory::detect($useragent);
+        }
+
+        if (preg_match('/BQ \d{4}/', $useragent)) {
+            return Mobile\BqFactory::detect($useragent);
+        }
+
+        if (preg_match('/bq Aquaris 5 HD/', $useragent)) {
+            return Mobile\BqFactory::detect($useragent);
+        }
+
+        if (preg_match('/msi/i', $useragent) && !preg_match('/msie/i', $useragent)) {
             $device = new Msi($useragent, []);
         } elseif (preg_match('/Orange/', $useragent)) {
             $device = new Orange($useragent, []);
