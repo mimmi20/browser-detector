@@ -1166,10 +1166,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ritmix/i', $useragent)) {
-            $device = new Ritmix($useragent, []);
-        } elseif (preg_match('/wexler/i', $useragent)) {
+            return Mobile\RitmixFactory::detect($useragent);
+        }
+
+        if (preg_match('/wexler/i', $useragent)) {
             return Mobile\WexlerFactory::detect($useragent);
-        } elseif (preg_match('/exeq/i', $useragent)) {
+        }
+
+        if (preg_match('/exeq/i', $useragent)) {
             $device = new Exeq($useragent, []);
         } elseif (preg_match('/ergo/i', $useragent)) {
             $device = new Ergo($useragent, []);
@@ -1318,7 +1322,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/TQ\d{3}/', $useragent)) {
             return Mobile\GoCleverFactory::detect($useragent);
         } elseif (preg_match('/RMD\-\d{3,4}/', $useragent)) {
-            $device = new Ritmix($useragent, []);
+            return Mobile\RitmixFactory::detect($useragent);
         } elseif (preg_match('/(TERRA_101|ORION7o)/', $useragent)) {
             return Mobile\GoCleverFactory::detect($useragent);
         } elseif (preg_match('/AX\d{3}/', $useragent)) {
