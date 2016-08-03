@@ -1178,8 +1178,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ergo/i', $useragent)) {
-            $device = new Ergo($useragent, []);
-        } elseif (preg_match('/pulid/i', $useragent)) {
+            return Mobile\ErgoFactory::detect($useragent);
+        }
+
+        if (preg_match('/pulid/i', $useragent)) {
             $device = new Pulid($useragent, []);
         } elseif (preg_match('/dns/i', $useragent)) {
             $device = new Dns($useragent, []);
