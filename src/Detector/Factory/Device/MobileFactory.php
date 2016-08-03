@@ -1234,10 +1234,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/MTC/', $useragent)) {
-            $device = new Mtc($useragent, []);
-        } elseif (preg_match('/DARKMOON/', $useragent)) {
+            return Mobile\MtcFactory::detect($useragent);
+        }
+
+        if (preg_match('/DARKMOON/', $useragent)) {
             return Mobile\WikoFactory::detect($useragent);
-        } elseif (preg_match('/ARK/', $useragent)) {
+        }
+
+        if (preg_match('/ARK/', $useragent)) {
             $device = new Ark($useragent, []);
         } elseif (preg_match('/Magic/', $useragent)) {
             $device = new Magic($useragent, []);
@@ -1434,7 +1438,7 @@ class MobileFactory implements FactoryInterface
         } elseif (preg_match('/L930/', $useragent)) {
             return new Ciotcud\CiotcudL930($useragent, []);
         } elseif (preg_match('/SMART Run/', $useragent)) {
-            $device = new Mtc($useragent, []);
+            return Mobile\MtcFactory::detect($useragent);
         } elseif (preg_match('/X8\+/', $useragent)) {
             return Mobile\TrirayFactory::detect($useragent);
         } elseif (preg_match('/QS0716D/', $useragent)) {
