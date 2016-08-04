@@ -1714,8 +1714,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/P3000/', $useragent)) {
-            $device = new Elephone($useragent, []);
-        } elseif (preg_match('/M5301/', $useragent)) {
+            return Mobile\ElephoneFactory::detect($useragent);
+        }
+
+        if (preg_match('/M5301/', $useragent)) {
             $device = new Iru($useragent, []);
         } elseif (preg_match('/ C7 /', $useragent)) {
             return Mobile\CubotFactory::detect($useragent);
