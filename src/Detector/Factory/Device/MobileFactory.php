@@ -1522,8 +1522,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/(Touchlet|X7G)/', $useragent)) {
-            $device = new Pearl($useragent, []);
-        } elseif (preg_match('/POV/', $useragent)) {
+            return Mobile\PearlFactory::detect($useragent);
+        }
+
+        if (preg_match('/POV/', $useragent)) {
             $device = new PointOfView($useragent, []);
         } elseif (preg_match('/PI\d{4}/', $useragent)) {
             return Mobile\PhilipsFactory::detect($useragent);
