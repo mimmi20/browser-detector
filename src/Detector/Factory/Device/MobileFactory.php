@@ -1710,8 +1710,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/A1000s/', $useragent)) {
-            $device = new Xolo($useragent, []);
-        } elseif (preg_match('/P3000/', $useragent)) {
+            return Mobile\XoloFactory::detect($useragent);
+        }
+
+        if (preg_match('/P3000/', $useragent)) {
             $device = new Elephone($useragent, []);
         } elseif (preg_match('/M5301/', $useragent)) {
             $device = new Iru($useragent, []);
