@@ -1786,36 +1786,66 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/vega/i', $useragent)) {
-            $device = new Advent($useragent, []);
-        } elseif (preg_match('/dream/i', $useragent)) {
+            return Mobile\AdventFactory::detect($useragent);
+        }
+
+        if (preg_match('/dream/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
-        } elseif (preg_match('/F10X/', $useragent)) {
+        }
+
+        if (preg_match('/F10X/', $useragent)) {
             return Mobile\NextwayFactory::detect($useragent);
-        } elseif (preg_match('/ M8 /', $useragent)) {
+        }
+
+        if (preg_match('/ M8 /', $useragent)) {
             return Mobile\AmlogicFactory::detect($useragent);
-        } elseif (preg_match('/AdTab 7 Lite/', $useragent)) {
+        }
+
+        if (preg_match('/AdTab 7 Lite/', $useragent)) {
             return Mobile\AdspecFactory::detect($useragent);
-        } elseif (preg_match('/Plane 10\.3 3G PS1043MG/', $useragent)) {
+        }
+
+        if (preg_match('/Plane 10\.3 3G PS1043MG/', $useragent)) {
             return Mobile\DigmaFactory::detect($useragent);
-        } elseif (preg_match('/(Neon\-N1|WING\-W2)/', $useragent)) {
+        }
+
+        if (preg_match('/(Neon\-N1|WING\-W2)/', $useragent)) {
             return Mobile\AxgioFactory::detect($useragent);
-        } elseif (preg_match('/T118/', $useragent)) {
+        }
+
+        if (preg_match('/T118/', $useragent)) {
             return Mobile\TwinovoFactory::detect($useragent);
-        } elseif (preg_match('/(A1002|A811)/', $useragent)) {
+        }
+
+        if (preg_match('/(A1002|A811)/', $useragent)) {
             return Mobile\LexandFactory::detect($useragent);
-        } elseif (preg_match('/ A10/', $useragent)) {
+        }
+
+        if (preg_match('/ A10/', $useragent)) {
             return Mobile\AllWinnerFactory::detect($useragent);
-        } elseif (preg_match('/TOUAREG8_3G/', $useragent)) {
+        }
+
+        if (preg_match('/TOUAREG8_3G/', $useragent)) {
             return Mobile\AccentFactory::detect($useragent);
-        } elseif (preg_match('/chagall/', $useragent)) {
+        }
+
+        if (preg_match('/chagall/', $useragent)) {
             return Mobile\PegatronFactory::detect($useragent);
-        } elseif (preg_match('/Turbo X6/', $useragent)) {
+        }
+
+        if (preg_match('/Turbo X6/', $useragent)) {
             return Mobile\TurboPadFactory::detect($useragent);
-        } elseif (preg_match('/HW\-W718/', $useragent)) {
+        }
+
+        if (preg_match('/HW\-W718/', $useragent)) {
             return Mobile\HaierFactory::detect($useragent);
-        } elseif (preg_match('/Air A70/', $useragent)) {
+        }
+
+        if (preg_match('/Air A70/', $useragent)) {
             return Mobile\RoverPadFactory::detect($useragent);
-        } elseif (preg_match('/SP\-6020 QUASAR/', $useragent)) {
+        }
+
+        if (preg_match('/SP\-6020 QUASAR/', $useragent)) {
             $device = new Woo($useragent, []);
         } elseif (preg_match('/M717R-HD/', $useragent)) {
             return Mobile\VastKingFactory::detect($useragent);
