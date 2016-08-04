@@ -1846,22 +1846,38 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/SP\-6020 QUASAR/', $useragent)) {
-            $device = new Woo($useragent, []);
-        } elseif (preg_match('/M717R-HD/', $useragent)) {
+            return Mobile\WooFactory::detect($useragent);
+        }
+
+        if (preg_match('/M717R-HD/', $useragent)) {
             return Mobile\VastKingFactory::detect($useragent);
-        } elseif (preg_match('/Q10S/', $useragent)) {
+        }
+
+        if (preg_match('/Q10S/', $useragent)) {
             return Mobile\WopadFactory::detect($useragent);
-        } elseif (preg_match('/CTAB785R16\-3G/', $useragent)) {
+        }
+
+        if (preg_match('/CTAB785R16\-3G/', $useragent)) {
             return Mobile\CondorFactory::detect($useragent);
-        } elseif (preg_match('/RP\-UDM\d{2}/', $useragent)) {
+        }
+
+        if (preg_match('/RP\-UDM\d{2}/', $useragent)) {
             return Mobile\VericoFactory::detect($useragent);
-        } elseif (preg_match('/(UQ785\-M1BGV|KM\-UQM11A)/', $useragent)) {
+        }
+
+        if (preg_match('/(UQ785\-M1BGV|KM\-UQM11A)/', $useragent)) {
             return Mobile\VericoFactory::detect($useragent);
-        } elseif (preg_match('/RG500/', $useragent)) {
+        }
+
+        if (preg_match('/RG500/', $useragent)) {
             return Mobile\RugGearFactory::detect($useragent);
-        } elseif (preg_match('/T9666\-1/', $useragent)) {
+        }
+
+        if (preg_match('/T9666\-1/', $useragent)) {
             return Mobile\TelsdaFactory::detect($useragent);
-        } elseif (preg_match('/1080P\-N003/', $useragent)) {
+        }
+
+        if (preg_match('/1080P\-N003/', $useragent)) {
             $device = new Neo($useragent, []);
         } elseif (preg_match('/AP\-105/', $useragent)) {
             return Mobile\MitashiFactory::detect($useragent);
