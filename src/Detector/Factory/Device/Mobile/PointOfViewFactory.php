@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\PointOfView;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
+use BrowserDetector\Detector\Device\Mobile\PointOfView;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +40,41 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PointOfViewPi1045 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class PointOfViewFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     * @param array  $data
-     */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'PI1045',
-                'marketingName'     => 'Mobii 1045',
-                'version'           => null,
-                'manufacturer'      => (new Company\PointOfView())->name,
-                'brand'             => (new Company\PointOfView())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 1024,
-                'resolutionHeight'  => 600,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent, []);
+        if (preg_match('/TAB\-PROTAB25/', $useragent)) {
+            return new PointOfView\PointOfViewProtab25($useragent, []);
+        }
+
+        if (preg_match('/TAB\-PROTAB30/', $useragent)) {
+            return new PointOfView\PointOfViewProtab3xxl($useragent, []);
+        }
+
+        if (preg_match('/tab\-protab2xxl/i', $useragent)) {
+            return new PointOfView\PointOfViewProtab2xxl($useragent, []);
+        }
+
+        if (preg_match('/TAB\-PROTAB2XL/', $useragent)) {
+            return new PointOfView\PointOfViewProtab2xl($useragent, []);
+        }
+
+        if (preg_match('/TAB\-PROTAB2\-IPS/', $useragent)) {
+            return new PointOfView\PointOfViewProtab2ips($useragent, []);
+        }
+
+        if (preg_match('/PI1045/', $useragent)) {
+            return new PointOfView\PointOfViewPi1045($useragent, []);
+        }
+
+        return new PointOfView\PointOfView($useragent, []);
     }
 }

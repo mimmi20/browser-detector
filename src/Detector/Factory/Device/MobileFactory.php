@@ -1526,94 +1526,182 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/POV/', $useragent)) {
-            $device = new PointOfView($useragent, []);
-        } elseif (preg_match('/PI\d{4}/', $useragent)) {
+            return Mobile\PointOfViewFactory::detect($useragent);
+        }
+
+        if (preg_match('/PI\d{4}/', $useragent)) {
             return Mobile\PhilipsFactory::detect($useragent);
-        } elseif (preg_match('/SM \- /', $useragent)) {
+        }
+
+        if (preg_match('/SM \- /', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
-        } elseif (preg_match('/(SH05C|304SH)/', $useragent)) {
+        }
+
+        if (preg_match('/(SH05C|304SH)/', $useragent)) {
             return Mobile\SharpFactory::detect($useragent);
-        } elseif (preg_match('/SH\-\d{2}(D|F)/', $useragent)) {
+        }
+
+        if (preg_match('/SH\-\d{2}(D|F)/', $useragent)) {
             return Mobile\SharpFactory::detect($useragent);
-        } elseif (preg_match('/SAMURAI10/', $useragent)) {
+        }
+
+        if (preg_match('/SAMURAI10/', $useragent)) {
             return Mobile\ShiruFactory::detect($useragent);
-        } elseif (preg_match('/Ignis 8/', $useragent)) {
+        }
+
+        if (preg_match('/Ignis 8/', $useragent)) {
             return Mobile\TbTouchFactory::detect($useragent);
-        } elseif (preg_match('/A5000/', $useragent)) {
+        }
+
+        if (preg_match('/A5000/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
-        } elseif (preg_match('/FUNC/', $useragent)) {
+        }
+
+        if (preg_match('/FUNC/', $useragent)) {
             return Mobile\DfuncFactory::detect($useragent);
-        } elseif (preg_match('/iD(j|n|s|x)D\d/', $useragent)) {
+        }
+
+        if (preg_match('/iD(j|n|s|x)D\d/', $useragent)) {
             return Mobile\DigmaFactory::detect($useragent);
-        } elseif (preg_match('/K910L/', $useragent)) {
+        }
+
+        if (preg_match('/K910L/', $useragent)) {
             return Mobile\LenovoFactory::detect($useragent);
-        } elseif (preg_match('/TAB7iD/', $useragent)) {
+        }
+
+        if (preg_match('/TAB7iD/', $useragent)) {
             return Mobile\WexlerFactory::detect($useragent);
-        } elseif (preg_match('/ZP\d{3}/', $useragent)) {
+        }
+
+        if (preg_match('/ZP\d{3}/', $useragent)) {
             return Mobile\ZopoFactory::detect($useragent);
-        } elseif (preg_match('/s450\d/i', $useragent)) {
+        }
+
+        if (preg_match('/s450\d/i', $useragent)) {
             return Mobile\DnsFactory::detect($useragent);
-        } elseif (preg_match('/MB40II1/i', $useragent)) {
+        }
+
+        if (preg_match('/MB40II1/i', $useragent)) {
             return Mobile\DnsFactory::detect($useragent);
-        } elseif (preg_match('/ M3 /', $useragent)) {
+        }
+
+        if (preg_match('/ M3 /', $useragent)) {
             return new Gionee\GioneeMarathonM3($useragent, []);
-        } elseif (preg_match('/(W100|W200|W8_beyond)/', $useragent)) {
+        }
+
+        if (preg_match('/(W100|W200|W8_beyond)/', $useragent)) {
             return Mobile\ThlFactory::detect($useragent);
-        } elseif (preg_match('/NT\-\d{4}(S|P|T)/', $useragent)) {
+        }
+
+        if (preg_match('/NT\-\d{4}(S|P|T)/', $useragent)) {
             return Mobile\IconBitFactory::detect($useragent);
-        } elseif (preg_match('/Primo76/', $useragent)) {
+        }
+
+        if (preg_match('/Primo76/', $useragent)) {
             return Mobile\MsiFactory::detect($useragent);
-        } elseif (preg_match('/CINK PEAX 2/', $useragent)) {
+        }
+
+        if (preg_match('/CINK PEAX 2/', $useragent)) {
             return Mobile\WikoFactory::detect($useragent);
-        } elseif (preg_match('/T(X|G)\d{2}/', $useragent)) {
+        }
+
+        if (preg_match('/T(X|G)\d{2}/', $useragent)) {
             return Mobile\IrbisFactory::detect($useragent);
-        } elseif (preg_match('/YD\d{3}/', $useragent)) {
+        }
+
+        if (preg_match('/YD\d{3}/', $useragent)) {
             return Mobile\YotaFactory::detect($useragent);
-        } elseif (preg_match('/X\-pad/', $useragent)) {
+        }
+
+        if (preg_match('/X\-pad/', $useragent)) {
             return Mobile\TexetFactory::detect($useragent);
-        } elseif (preg_match('/TM\-\d{4}/', $useragent)) {
+        }
+
+        if (preg_match('/TM\-\d{4}/', $useragent)) {
             return Mobile\TexetFactory::detect($useragent);
-        } elseif (preg_match('/ G3 /', $useragent)) {
+        }
+
+        if (preg_match('/ G3 /', $useragent)) {
             return Mobile\LgFactory::detect($useragent);
-        } elseif (preg_match('/(Zera_F|Boost IIse|Ice2|Prime S|Explosion)/', $useragent)) {
+        }
+
+        if (preg_match('/(Zera_F|Boost IIse|Ice2|Prime S|Explosion)/', $useragent)) {
             return Mobile\HighscreenFactory::detect($useragent);
-        } elseif (preg_match('/iris708/', $useragent)) {
+        }
+
+        if (preg_match('/iris708/', $useragent)) {
             return new Ais\AisLavaPro45($useragent, []);
-        } elseif (preg_match('/L930/', $useragent)) {
+        }
+
+        if (preg_match('/L930/', $useragent)) {
             return new Ciotcud\CiotcudL930($useragent, []);
-        } elseif (preg_match('/SMART Run/', $useragent)) {
+        }
+
+        if (preg_match('/SMART Run/', $useragent)) {
             return Mobile\MtcFactory::detect($useragent);
-        } elseif (preg_match('/X8\+/', $useragent)) {
+        }
+
+        if (preg_match('/X8\+/', $useragent)) {
             return Mobile\TrirayFactory::detect($useragent);
-        } elseif (preg_match('/QS0716D/', $useragent)) {
+        }
+
+        if (preg_match('/QS0716D/', $useragent)) {
             return Mobile\TriQFactory::detect($useragent);
-        } elseif (preg_match('/(Surfer 7\.34|M1_Plus|D7\.2 3G)/', $useragent)) {
+        }
+
+        if (preg_match('/(Surfer 7\.34|M1_Plus|D7\.2 3G)/', $useragent)) {
             return Mobile\ExplayFactory::detect($useragent);
-        } elseif (preg_match('/PMSmart450/', $useragent)) {
+        }
+
+        if (preg_match('/PMSmart450/', $useragent)) {
             return Mobile\PmediaFactory::detect($useragent);
-        } elseif (preg_match('/(F031|SCL24|ACE)/', $useragent)) {
+        }
+
+        if (preg_match('/(F031|SCL24|ACE)/', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
-        } elseif (preg_match('/ImPAD/', $useragent)) {
+        }
+
+        if (preg_match('/ImPAD/', $useragent)) {
             return Mobile\ImpressionFactory::detect($useragent);
-        } elseif (preg_match('/K1 turbo/', $useragent)) {
+        }
+
+        if (preg_match('/K1 turbo/', $useragent)) {
             return Mobile\KingzoneFactory::detect($useragent);
-        } elseif (preg_match('/TAB917QC\-8GB/', $useragent)) {
+        }
+
+        if (preg_match('/TAB917QC\-8GB/', $useragent)) {
             return Mobile\SunstechFactory::detect($useragent);
-        } elseif (preg_match('/(TPC\-PA10\.1M|M7T|P93G|i75)/', $useragent)) {
+        }
+
+        if (preg_match('/(TPC\-PA10\.1M|M7T|P93G|i75)/', $useragent)) {
             return Mobile\PipoFactory::detect($useragent);
-        } elseif (preg_match('/ONE TOUCH/', $useragent)) {
+        }
+
+        if (preg_match('/ONE TOUCH/', $useragent)) {
             return Mobile\AlcatelFactory::detect($useragent);
-        } elseif (preg_match('/6036Y/', $useragent)) {
+        }
+
+        if (preg_match('/6036Y/', $useragent)) {
             return Mobile\AlcatelFactory::detect($useragent);
-        } elseif (preg_match('/MD948G/', $useragent)) {
+        }
+
+        if (preg_match('/MD948G/', $useragent)) {
             return Mobile\MwayFactory::detect($useragent);
-        } elseif (preg_match('/P4501/', $useragent)) {
+        }
+
+        if (preg_match('/P4501/', $useragent)) {
             return Mobile\MedionFactory::detect($useragent);
-        } elseif (preg_match('/ V3 /', $useragent)) {
+        }
+
+        if (preg_match('/ V3 /', $useragent)) {
             return new Inew\InewV3($useragent, []);
-        } elseif (preg_match('/PX\-\d{4}/', $useragent)) {
+        }
+
+        if (preg_match('/PX\-\d{4}/', $useragent)) {
             return Mobile\IntegoFactory::detect($useragent);
-        } elseif (preg_match('/Smartphone650/', $useragent)) {
+        }
+
+        if (preg_match('/Smartphone650/', $useragent)) {
             $device = new Master($useragent, []);
         } elseif (preg_match('/MX Enjoy TV BOX/', $useragent)) {
             return Mobile\GeniatechFactory::detect($useragent);
