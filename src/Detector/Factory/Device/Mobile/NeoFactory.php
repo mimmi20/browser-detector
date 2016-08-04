@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Device\Mobile\Apple;
+use BrowserDetector\Detector\Device\Mobile\Neo;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -40,7 +40,7 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AppleFactory implements FactoryInterface
+class NeoFactory implements FactoryInterface
 {
     /**
      * detects the device name from the given user agent
@@ -51,26 +51,10 @@ class AppleFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/ipod/i', $useragent)) {
-            return new Apple\Ipod($useragent, []);
+        if (preg_match('/1080P\-N003/', $useragent)) {
+            return new Neo\NeoN003($useragent, []);
         }
 
-        if (preg_match('/ipad/i', $useragent)) {
-            return new Apple\Ipad($useragent, []);
-        }
-
-        if (preg_match('/iph/i', $useragent)) {
-            return new Apple\Iphone($useragent, []);
-        }
-
-        if (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
-            return new Apple\Ipad($useragent, []);
-        }
-
-        if (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
-            return new Apple\Iphone($useragent, []);
-        }
-
-        return new Apple\Apple($useragent, []);
+        return new Neo\Neo($useragent, []);
     }
 }

@@ -31,236 +31,9 @@
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Device\Mobile\Accent;
-use BrowserDetector\Detector\Device\Mobile\Acer;
-use BrowserDetector\Detector\Device\Mobile\Adspec;
-use BrowserDetector\Detector\Device\Mobile\Advent;
-use BrowserDetector\Detector\Device\Mobile\Ainol;
-use BrowserDetector\Detector\Device\Mobile\Ais;
-use BrowserDetector\Detector\Device\Mobile\Alcatel;
-use BrowserDetector\Detector\Device\Mobile\AllWinner;
-use BrowserDetector\Detector\Device\Mobile\Amazon;
-use BrowserDetector\Detector\Device\Mobile\Amlogic;
-use BrowserDetector\Detector\Device\Mobile\Amoi;
-use BrowserDetector\Detector\Device\Mobile\Anka;
-use BrowserDetector\Detector\Device\Mobile\Aoc;
-use BrowserDetector\Detector\Device\Mobile\Apple;
-use BrowserDetector\Detector\Device\Mobile\Archos;
-use BrowserDetector\Detector\Device\Mobile\Ark;
-use BrowserDetector\Detector\Device\Mobile\Arnova;
-use BrowserDetector\Detector\Device\Mobile\Asus;
-use BrowserDetector\Detector\Device\Mobile\Axgio;
-use BrowserDetector\Detector\Device\Mobile\BarnesNoble;
-use BrowserDetector\Detector\Device\Mobile\Beidou;
-use BrowserDetector\Detector\Device\Mobile\BlackBerry;
-use BrowserDetector\Detector\Device\Mobile\Blaupunkt;
-use BrowserDetector\Detector\Device\Mobile\Bliss;
-use BrowserDetector\Detector\Device\Mobile\Blu;
-use BrowserDetector\Detector\Device\Mobile\Bmobile;
-use BrowserDetector\Detector\Device\Mobile\Bq;
-use BrowserDetector\Detector\Device\Mobile\Caterpillar;
-use BrowserDetector\Detector\Device\Mobile\CatSound;
-use BrowserDetector\Detector\Device\Mobile\Ciotcud;
-use BrowserDetector\Detector\Device\Mobile\Coby;
-use BrowserDetector\Detector\Device\Mobile\Comag;
-use BrowserDetector\Detector\Device\Mobile\Condor;
-use BrowserDetector\Detector\Device\Mobile\Coolpad;
-use BrowserDetector\Detector\Device\Mobile\Cosmote;
-use BrowserDetector\Detector\Device\Mobile\Creative;
-use BrowserDetector\Detector\Device\Mobile\Cube;
-use BrowserDetector\Detector\Device\Mobile\Cubot;
-use BrowserDetector\Detector\Device\Mobile\Dell;
-use BrowserDetector\Detector\Device\Mobile\Denver;
-use BrowserDetector\Detector\Device\Mobile\Dexp;
-use BrowserDetector\Detector\Device\Mobile\Dfunc;
-use BrowserDetector\Detector\Device\Mobile\Digma;
-use BrowserDetector\Detector\Device\Mobile\Dino;
-use BrowserDetector\Detector\Device\Mobile\Dns;
-use BrowserDetector\Detector\Device\Mobile\DoCoMo;
-use BrowserDetector\Detector\Device\Mobile\Easypix;
-use BrowserDetector\Detector\Device\Mobile\Efox;
-use BrowserDetector\Detector\Device\Mobile\EinsUndEins;
-use BrowserDetector\Detector\Device\Mobile\Elephone;
-use BrowserDetector\Detector\Device\Mobile\Epad;
-use BrowserDetector\Detector\Device\Mobile\Ergo;
-use BrowserDetector\Detector\Device\Mobile\Exeq;
-use BrowserDetector\Detector\Device\Mobile\Explay;
-use BrowserDetector\Detector\Device\Mobile\Fairphone;
-use BrowserDetector\Detector\Device\Mobile\FaktorZwei;
-use BrowserDetector\Detector\Device\Mobile\Feiteng;
-use BrowserDetector\Detector\Device\Mobile\Fly;
-use BrowserDetector\Detector\Device\Mobile\Flytouch;
-use BrowserDetector\Detector\Device\Mobile\Fujitsu;
+
 use BrowserDetector\Detector\Device\Mobile\GeneralMobile;
-use BrowserDetector\Detector\Device\Mobile\Geniatech;
-use BrowserDetector\Detector\Device\Mobile\Gfive;
-use BrowserDetector\Detector\Device\Mobile\Gigabyte;
-use BrowserDetector\Detector\Device\Mobile\Gionee;
-use BrowserDetector\Detector\Device\Mobile\Globex;
-use BrowserDetector\Detector\Device\Mobile\GoClever;
-use BrowserDetector\Detector\Device\Mobile\Gzone;
-use BrowserDetector\Detector\Device\Mobile\Haier;
-use BrowserDetector\Detector\Device\Mobile\Haipai;
-use BrowserDetector\Detector\Device\Mobile\Hannspree;
-use BrowserDetector\Detector\Device\Mobile\Hdc;
-use BrowserDetector\Detector\Device\Mobile\Highscreen;
-use BrowserDetector\Detector\Device\Mobile\HiPhone;
-use BrowserDetector\Detector\Device\Mobile\Honlin;
-use BrowserDetector\Detector\Device\Mobile\Hp;
-use BrowserDetector\Detector\Device\Mobile\Htc;
-use BrowserDetector\Detector\Device\Mobile\Htm;
-use BrowserDetector\Detector\Device\Mobile\Huawei;
-use BrowserDetector\Detector\Device\Mobile\Hummer;
-use BrowserDetector\Detector\Device\Mobile\IconBit;
-use BrowserDetector\Detector\Device\Mobile\Imobile;
-use BrowserDetector\Detector\Device\Mobile\Impression;
-use BrowserDetector\Detector\Device\Mobile\Inew;
-use BrowserDetector\Detector\Device\Mobile\Intego;
-use BrowserDetector\Detector\Device\Mobile\Intenso;
-use BrowserDetector\Detector\Device\Mobile\Intex;
-use BrowserDetector\Detector\Device\Mobile\Ionik;
-use BrowserDetector\Detector\Device\Mobile\Irbis;
-use BrowserDetector\Detector\Device\Mobile\Iru;
-use BrowserDetector\Detector\Device\Mobile\Irulu;
-use BrowserDetector\Detector\Device\Mobile\Jaytech;
-use BrowserDetector\Detector\Device\Mobile\Jolla;
-use BrowserDetector\Detector\Device\Mobile\Kazam;
-use BrowserDetector\Detector\Device\Mobile\Kddi;
-use BrowserDetector\Detector\Device\Mobile\Keener;
-use BrowserDetector\Detector\Device\Mobile\KeenHigh;
-use BrowserDetector\Detector\Device\Mobile\Keneksi;
-use BrowserDetector\Detector\Device\Mobile\Kiano;
-use BrowserDetector\Detector\Device\Mobile\Kingzone;
-use BrowserDetector\Detector\Device\Mobile\Kobo;
-use BrowserDetector\Detector\Device\Mobile\Lenco;
-use BrowserDetector\Detector\Device\Mobile\Lenovo;
-use BrowserDetector\Detector\Device\Mobile\LePan;
-use BrowserDetector\Detector\Device\Mobile\Lexand;
-use BrowserDetector\Detector\Device\Mobile\Lg;
-use BrowserDetector\Detector\Device\Mobile\Logicom;
-use BrowserDetector\Detector\Device\Mobile\Logicpd;
-use BrowserDetector\Detector\Device\Mobile\Magic;
-use BrowserDetector\Detector\Device\Mobile\Malata;
-use BrowserDetector\Detector\Device\Mobile\Manta;
-use BrowserDetector\Detector\Device\Mobile\Master;
-use BrowserDetector\Detector\Device\Mobile\Mastone;
-use BrowserDetector\Detector\Device\Mobile\Medion;
-use BrowserDetector\Detector\Device\Mobile\MegaFon;
-use BrowserDetector\Detector\Device\Mobile\Meizu;
-use BrowserDetector\Detector\Device\Mobile\Memup;
-use BrowserDetector\Detector\Device\Mobile\Micromax;
-use BrowserDetector\Detector\Device\Mobile\Mitashi;
-use BrowserDetector\Detector\Device\Mobile\Miui;
-use BrowserDetector\Detector\Device\Mobile\Mobistel;
-use BrowserDetector\Detector\Device\Mobile\Modecom;
-use BrowserDetector\Detector\Device\Mobile\Motorola;
-use BrowserDetector\Detector\Device\Mobile\Msi;
-use BrowserDetector\Detector\Device\Mobile\Mtc;
-use BrowserDetector\Detector\Device\Mobile\Mway;
-use BrowserDetector\Detector\Device\Mobile\Mytab;
-use BrowserDetector\Detector\Device\Mobile\Nec;
-use BrowserDetector\Detector\Device\Mobile\Neo;
-use BrowserDetector\Detector\Device\Mobile\Neofonie;
-use BrowserDetector\Detector\Device\Mobile\Nextbook;
-use BrowserDetector\Detector\Device\Mobile\Nextway;
-use BrowserDetector\Detector\Device\Mobile\Ngm;
-use BrowserDetector\Detector\Device\Mobile\Nintendo;
-use BrowserDetector\Detector\Device\Mobile\Nokia;
-use BrowserDetector\Detector\Device\Mobile\Nomi;
-use BrowserDetector\Detector\Device\Mobile\NttSystem;
-use BrowserDetector\Detector\Device\Mobile\Nuqleo;
-use BrowserDetector\Detector\Device\Mobile\Nvsbl;
-use BrowserDetector\Detector\Device\Mobile\Odys;
-use BrowserDetector\Detector\Device\Mobile\Onda;
-use BrowserDetector\Detector\Device\Mobile\Oppo;
-use BrowserDetector\Detector\Device\Mobile\Orange;
-use BrowserDetector\Detector\Device\Mobile\Overmax;
-use BrowserDetector\Detector\Device\Mobile\Oysters;
-use BrowserDetector\Detector\Device\Mobile\Panasonic;
-use BrowserDetector\Detector\Device\Mobile\Pandigital;
-use BrowserDetector\Detector\Device\Mobile\Pantech;
-use BrowserDetector\Detector\Device\Mobile\Pearl;
-use BrowserDetector\Detector\Device\Mobile\Pegatron;
-use BrowserDetector\Detector\Device\Mobile\Pentagram;
-use BrowserDetector\Detector\Device\Mobile\Perfeo;
-use BrowserDetector\Detector\Device\Mobile\Phicomm;
-use BrowserDetector\Detector\Device\Mobile\Philips;
-use BrowserDetector\Detector\Device\Mobile\Pipo;
-use BrowserDetector\Detector\Device\Mobile\Pmedia;
-use BrowserDetector\Detector\Device\Mobile\PocketBook;
-use BrowserDetector\Detector\Device\Mobile\PointOfView;
-use BrowserDetector\Detector\Device\Mobile\Pomp;
-use BrowserDetector\Detector\Device\Mobile\Prestigio;
-use BrowserDetector\Detector\Device\Mobile\Pulid;
-use BrowserDetector\Detector\Device\Mobile\Qmobile;
-use BrowserDetector\Detector\Device\Mobile\Qumo;
-use BrowserDetector\Detector\Device\Mobile\Reeder;
-use BrowserDetector\Detector\Device\Mobile\Reellex;
-use BrowserDetector\Detector\Device\Mobile\Ritmix;
-use BrowserDetector\Detector\Device\Mobile\RoverPad;
-use BrowserDetector\Detector\Device\Mobile\RugGear;
-use BrowserDetector\Detector\Device\Mobile\Samsung;
-use BrowserDetector\Detector\Device\Mobile\Sanyo;
-use BrowserDetector\Detector\Device\Mobile\Senseit;
-use BrowserDetector\Detector\Device\Mobile\Shaan;
-use BrowserDetector\Detector\Device\Mobile\Sharp;
-use BrowserDetector\Detector\Device\Mobile\Shiru;
-use BrowserDetector\Detector\Device\Mobile\Siemens;
-use BrowserDetector\Detector\Device\Mobile\SonyEricsson;
-use BrowserDetector\Detector\Device\Mobile\Spice;
-use BrowserDetector\Detector\Device\Mobile\Sprd;
-use BrowserDetector\Detector\Device\Mobile\Sprint;
-use BrowserDetector\Detector\Device\Mobile\Star;
-use BrowserDetector\Detector\Device\Mobile\Starway;
-use BrowserDetector\Detector\Device\Mobile\Stell;
-use BrowserDetector\Detector\Device\Mobile\Sunstech;
-use BrowserDetector\Detector\Device\Mobile\Supra;
-use BrowserDetector\Detector\Device\Mobile\Sxz;
-use BrowserDetector\Detector\Device\Mobile\Symphony;
-use BrowserDetector\Detector\Device\Mobile\TbTouch;
-use BrowserDetector\Detector\Device\Mobile\Technisat;
-use BrowserDetector\Detector\Device\Mobile\Telsda;
-use BrowserDetector\Detector\Device\Mobile\Tesla;
-use BrowserDetector\Detector\Device\Mobile\Texet;
-use BrowserDetector\Detector\Device\Mobile\Thl;
-use BrowserDetector\Detector\Device\Mobile\Tmobile;
-use BrowserDetector\Detector\Device\Mobile\Tolino;
-use BrowserDetector\Detector\Device\Mobile\Toshiba;
-use BrowserDetector\Detector\Device\Mobile\TrekStor;
-use BrowserDetector\Detector\Device\Mobile\TriQ;
-use BrowserDetector\Detector\Device\Mobile\Triray;
-use BrowserDetector\Detector\Device\Mobile\TurboPad;
-use BrowserDetector\Detector\Device\Mobile\Twinovo;
-use BrowserDetector\Detector\Device\Mobile\Twz;
-use BrowserDetector\Detector\Device\Mobile\Ultrafone;
-use BrowserDetector\Detector\Device\Mobile\Umi;
-use BrowserDetector\Detector\Device\Mobile\United;
-use BrowserDetector\Detector\Device\Mobile\UtStarcom;
-use BrowserDetector\Detector\Device\Mobile\VastKing;
-use BrowserDetector\Detector\Device\Mobile\Verico;
-use BrowserDetector\Detector\Device\Mobile\Vertex;
-use BrowserDetector\Detector\Device\Mobile\Videocon;
-use BrowserDetector\Detector\Device\Mobile\ViewSonic;
-use BrowserDetector\Detector\Device\Mobile\Vivo;
-use BrowserDetector\Detector\Device\Mobile\Wexler;
-use BrowserDetector\Detector\Device\Mobile\Wiko;
-use BrowserDetector\Detector\Device\Mobile\Wolgang;
-use BrowserDetector\Detector\Device\Mobile\Woo;
-use BrowserDetector\Detector\Device\Mobile\Wopad;
-use BrowserDetector\Detector\Device\Mobile\Xiaomi;
-use BrowserDetector\Detector\Device\Mobile\Xolo;
-use BrowserDetector\Detector\Device\Mobile\Xoro;
-use BrowserDetector\Detector\Device\Mobile\Yarvik;
-use BrowserDetector\Detector\Device\Mobile\Yota;
-use BrowserDetector\Detector\Device\Mobile\Yuanda;
-use BrowserDetector\Detector\Device\Mobile\Yuandao;
-use BrowserDetector\Detector\Device\Mobile\Yusu;
-use BrowserDetector\Detector\Device\Mobile\Zeki;
-use BrowserDetector\Detector\Device\Mobile\Zenithink;
-use BrowserDetector\Detector\Device\Mobile\Zopo;
-use BrowserDetector\Detector\Device\Mobile\Zte;
 use BrowserDetector\Detector\Factory\FactoryInterface;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 
 /**
  * @category  BrowserDetector
@@ -1118,7 +891,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/AT\-AS40SE/', $useragent)) {
-            return new Wolgang\WolgangAtas40se($useragent, []);
+            return Mobile\WolgangFactory::detect($useragent, []);
         }
 
         if (preg_match('/united/i', $useragent)) {
@@ -1126,7 +899,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/MT6515M/', $useragent)) {
-            return new United\UnitedMt6515m($useragent, []);
+            return Mobile\UnitedFactory::detect($useragent);
         }
 
         if (preg_match('/utstarcom/i', $useragent)) {
@@ -1134,7 +907,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/GTX75/', $useragent)) {
-            return new UtStarcom\UtStarcomGtx75($useragent, []);
+            return Mobile\UtStarcomFactory::detect($useragent);
         }
 
         if (preg_match('/fairphone/i', $useragent)) {
@@ -1142,7 +915,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/FP1/', $useragent)) {
-            return new Fairphone\FairphoneFp1($useragent, []);
+            return Mobile\FairphoneFactory::detect($useragent);
         }
 
         if (preg_match('/videocon/i', $useragent)) {
@@ -1150,7 +923,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/A15/', $useragent)) {
-            return new Videocon\VideoconA15($useragent, []);
+            return Mobile\VideoconFactory::detect($useragent);
         }
 
         if (preg_match('/mastone/i', $useragent)) {
@@ -1293,12 +1066,8 @@ class MobileFactory implements FactoryInterface
             return Mobile\AppleFactory::detect($useragent);
         }
 
-        if (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
-            return new Apple\Ipad($useragent, []);
-        }
-
-        if (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
-            return new Apple\Iphone($useragent, []);
+        if (preg_match('/Puffin\/[\d\.]+I(T|P)/', $useragent)) {
+            return Mobile\AppleFactory::detect($useragent);
         }
 
         if (preg_match('/dataaccessd/', $useragent)) {
@@ -1586,7 +1355,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ M3 /', $useragent)) {
-            return new Gionee\GioneeMarathonM3($useragent, []);
+            return Mobile\GioneeFactory::detect($useragent);
         }
 
         if (preg_match('/(W100|W200|W8_beyond)/', $useragent)) {
@@ -1630,11 +1399,11 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/iris708/', $useragent)) {
-            return new Ais\AisLavaPro45($useragent, []);
+            return Mobile\AisFactory::detect($useragent);
         }
 
         if (preg_match('/L930/', $useragent)) {
-            return new Ciotcud\CiotcudL930($useragent, []);
+            return Mobile\CiotcudFactory::detect($useragent);
         }
 
         if (preg_match('/SMART Run/', $useragent)) {
@@ -1694,7 +1463,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/ V3 /', $useragent)) {
-            return new Inew\InewV3($useragent, []);
+            return Mobile\InewFactory::detect($useragent);
         }
 
         if (preg_match('/PX\-\d{4}/', $useragent)) {
@@ -1878,23 +1647,25 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/1080P\-N003/', $useragent)) {
-            $device = new Neo($useragent, []);
-        } elseif (preg_match('/AP\-105/', $useragent)) {
+            return Mobile\NeoFactory::detect($useragent);
+        }
+
+        if (preg_match('/AP\-105/', $useragent)) {
             return Mobile\MitashiFactory::detect($useragent);
-        } elseif (preg_match('/H7100/', $useragent)) {
+        }
+
+        if (preg_match('/H7100/', $useragent)) {
             return Mobile\FeitengFactory::detect($useragent);
-        } elseif (preg_match('/x909/', $useragent)) {
+        }
+
+        if (preg_match('/x909/', $useragent)) {
             return Mobile\OppoFactory::detect($useragent);
-        } elseif (preg_match('/CFNetwork/', $useragent)) {
+        }
+
+        if (preg_match('/CFNetwork/', $useragent)) {
             return Mobile\AppleFactory::detect($useragent);
-        } else {
-            $device = new GeneralMobile($useragent, []);
         }
 
-        if ($device instanceof DeviceHasChildrenInterface) {
-            $device = $device->detectDevice();
-        }
-
-        return $device;
+        return new GeneralMobile($useragent, []);
     }
 }
