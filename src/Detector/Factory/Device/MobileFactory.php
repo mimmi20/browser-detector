@@ -1678,6 +1678,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\OppoFactory::detect($useragent);
         }
 
+        if (preg_match('/xda/i', $useragent)) {
+            return Mobile\O2Factory::detect($useragent);
+        }
+
         if (preg_match('/CFNetwork/', $useragent)) {
             return Mobile\AppleFactory::detect($useragent);
         }
