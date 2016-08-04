@@ -1702,10 +1702,14 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/Smartphone650/', $useragent)) {
-            $device = new Master($useragent, []);
-        } elseif (preg_match('/MX Enjoy TV BOX/', $useragent)) {
+            return Mobile\MasterFactory::detect($useragent);
+        }
+
+        if (preg_match('/MX Enjoy TV BOX/', $useragent)) {
             return Mobile\GeniatechFactory::detect($useragent);
-        } elseif (preg_match('/A1000s/', $useragent)) {
+        }
+
+        if (preg_match('/A1000s/', $useragent)) {
             $device = new Xolo($useragent, []);
         } elseif (preg_match('/P3000/', $useragent)) {
             $device = new Elephone($useragent, []);
