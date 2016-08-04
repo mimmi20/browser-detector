@@ -1578,6 +1578,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\AmlogicFactory::detect($useragent);
         }
 
+        if (preg_match('/SPX\-\d/', $useragent)) {
+            return Mobile\SimvalleyFactory::detect($useragent);
+        }
+
         if (preg_match('/AdTab 7 Lite/', $useragent)) {
             return Mobile\AdspecFactory::detect($useragent);
         }
