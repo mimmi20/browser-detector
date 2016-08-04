@@ -1682,6 +1682,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\O2Factory::detect($useragent);
         }
 
+        if (preg_match('/ARM;/', $useragent) && preg_match('/Windows NT 6\.(2|3)/', $useragent)) {
+            return Mobile\MicrosoftFactory::detect($useragent);
+        }
+
         if (preg_match('/CFNetwork/', $useragent)) {
             return Mobile\AppleFactory::detect($useragent);
         }
