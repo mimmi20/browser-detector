@@ -224,7 +224,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/WM\d{4}/', $useragent)) {
-            return Mobile\CobyFactory::detect($useragent);
+            return Mobile\WonderMediaFactory::detect($useragent);
         }
 
         if (preg_match('/(comag|wtdr1018)/i', $useragent)) {
@@ -1236,6 +1236,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/Phoenix 2/', $useragent)) {
             return Mobile\FlyFactory::detect($useragent);
+        }
+
+        if (preg_match('/VTAB1008/', $useragent)) {
+            return Mobile\VizioFactory::detect($useragent);
         }
 
         if (preg_match('/TAB10\-400/', $useragent)) {
