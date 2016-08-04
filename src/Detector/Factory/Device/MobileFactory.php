@@ -223,6 +223,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\CobyFactory::detect($useragent);
         }
 
+        if (preg_match('/WM\d{4}/', $useragent)) {
+            return Mobile\CobyFactory::detect($useragent);
+        }
+
         if (preg_match('/(comag|wtdr1018)/i', $useragent)) {
             return Mobile\ComagFactory::detect($useragent);
         }
