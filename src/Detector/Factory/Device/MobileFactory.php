@@ -1150,6 +1150,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\SonyFactory::detect($useragent);
         }
 
+        if (preg_match('/OP\d{3}/', $useragent)) {
+            return Mobile\OlivettiFactory::detect($useragent);
+        }
+
         if (preg_match('/SGP\d{3}/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         }
