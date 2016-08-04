@@ -43,9 +43,9 @@ namespace BrowserDetector\Detector\Factory;
 interface FactoryInterface
 {
     /**
-     * @param string $agent
+     * @param string $useragent
      *
      * @return mixed
      */
-    public static function detect($agent);
+    public static function detect($useragent);
 }

@@ -146,10 +146,6 @@ class BrowserDetector
     {
         $device = DeviceFactory::detect($request->getDeviceUserAgent());
 
-        //if ($device instanceof DeviceHasRuntimeModificationsInterface) {
-        //    $device->detectSpecialProperties();
-        //}
-
         if ($device instanceof DeviceHasSpecificPlatformInterface) {
             $platform = $device->detectOs();
         } else {
@@ -160,36 +156,12 @@ class BrowserDetector
         // detect the browser which is used
         $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $platform);
 
-        //if ($browser instanceof BrowserHasRuntimeModificationsInterface) {
-        //    $browser->detectSpecialProperties();
-        //}
-
-        //if ($browser instanceof BrowserCalculatesAlternativeResultInterface) {
-        //    $browser->calculateAlternativeRendering($device);
-        //}
-
         // detect the engine which is used in the browser
         if ($browser instanceof BrowserHasSpecificEngineInterface) {
             $engine = $browser->getEngine();
         } else {
             $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
         }
-
-        //if ($browser instanceof BrowserDependsOnEngineInterface) {
-        //    $browser->detectDependProperties($engine);
-        //}
-
-        //if ($engine instanceof EngineDependsOnDeviceInterface) {
-        //    $engine->detectDependProperties($device);
-        //}
-
-        //if ($platform instanceof OsChangesEngineInterface) {
-        //    $platform->changeEngineProperties($engine, $browser, $device);
-        //}
-
-        //if ($platform instanceof OsChangesBrowserInterface) {
-        //    $platform->changeBrowserProperties($browser);
-        //}
 
         return new Result(
             $request->getUserAgent(),

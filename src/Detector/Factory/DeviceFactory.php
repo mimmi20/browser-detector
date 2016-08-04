@@ -54,20 +54,20 @@ class DeviceFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $agent
+     * @param string $useragent
      *
      * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($agent)
+    public static function detect($useragent)
     {
-        if ((new MobileDevice($agent))->isMobile()) {
-            $device = MobileFactory::detect($agent);
-        } elseif ((new TvHelper($agent))->isTvDevice()) {
-            $device = TvFactory::detect($agent);
-        } elseif ((new Desktop($agent))->isDesktopDevice()) {
-            $device = DesktopFactory::detect($agent);
+        if ((new MobileDevice($useragent))->isMobile()) {
+            $device = MobileFactory::detect($useragent);
+        } elseif ((new TvHelper($useragent))->isTvDevice()) {
+            $device = TvFactory::detect($useragent);
+        } elseif ((new Desktop($useragent))->isDesktopDevice()) {
+            $device = DesktopFactory::detect($useragent);
         } else {
-            $device = new UnknownDevice($agent, []);
+            $device = new UnknownDevice($useragent, []);
         }
 
         if ($device instanceof DeviceHasChildrenInterface) {

@@ -810,1636 +810,1636 @@ class BrowserFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string                   $agent
+     * @param string                   $useragent
      * @param \UaResult\Os\OsInterface $platform
      *
      * @return \BrowserDetector\Detector\Browser\AbstractBrowser
      */
     public static function detect(
-        $agent,
+        $useragent,
         OsInterface $platform = null
     ) {
-        if (preg_match('/RevIP\.info site analyzer/', $agent)) {
-            $browser = new RevIpSnfoSiteAnalyzer($agent, []);
-        } elseif (preg_match('/reddit pic scraper/i', $agent)) {
-            $browser = new RedditPicScraper($agent, []);
-        } elseif (preg_match('/Mozilla crawl/', $agent)) {
-            $browser = new MozillaCrawler($agent, []);
-        } elseif (preg_match('/^\[FBAN/i', $agent)) {
-            $browser = new FacebookApp($agent, []);
-        } elseif (preg_match('/UCBrowserHD/', $agent)) {
-            $browser = new UcBrowserHd($agent, []);
-        } elseif (preg_match('/(ucbrowser|uc browser|ucweb)/i', $agent) && preg_match('/opera mini/i', $agent)) {
-            $browser = new UcBrowser($agent, []);
-        } elseif (preg_match('/(opera mini|opios)/i', $agent)) {
-            $browser = new OperaMini($agent, []);
-        } elseif (preg_match('/opera mobi/i', $agent)
-            || (preg_match('/(opera|opr)/i', $agent) && preg_match('/(Android|MTK|MAUI|SAMSUNG|Windows CE|SymbOS)/', $agent))
+        if (preg_match('/RevIP\.info site analyzer/', $useragent)) {
+            $browser = new RevIpSnfoSiteAnalyzer($useragent, []);
+        } elseif (preg_match('/reddit pic scraper/i', $useragent)) {
+            $browser = new RedditPicScraper($useragent, []);
+        } elseif (preg_match('/Mozilla crawl/', $useragent)) {
+            $browser = new MozillaCrawler($useragent, []);
+        } elseif (preg_match('/^\[FBAN/i', $useragent)) {
+            $browser = new FacebookApp($useragent, []);
+        } elseif (preg_match('/UCBrowserHD/', $useragent)) {
+            $browser = new UcBrowserHd($useragent, []);
+        } elseif (preg_match('/(ucbrowser|uc browser|ucweb)/i', $useragent) && preg_match('/opera mini/i', $useragent)) {
+            $browser = new UcBrowser($useragent, []);
+        } elseif (preg_match('/(opera mini|opios)/i', $useragent)) {
+            $browser = new OperaMini($useragent, []);
+        } elseif (preg_match('/opera mobi/i', $useragent)
+            || (preg_match('/(opera|opr)/i', $useragent) && preg_match('/(Android|MTK|MAUI|SAMSUNG|Windows CE|SymbOS)/', $useragent))
         ) {
-            $browser = new OperaMobile($agent, []);
-        } elseif (preg_match('/(ucbrowser|uc browser|ucweb)/i', $agent)) {
-            $browser = new UcBrowser($agent, []);
-        } elseif (preg_match('/IC OpenGraph Crawler/', $agent)) {
-            $browser = new IbmConnections($agent, []);
-        } elseif (preg_match('/coast/i', $agent)) {
-            $browser = new OperaCoast($agent, []);
-        } elseif (preg_match('/(opera|opr)/i', $agent)) {
-            $browser = new Opera($agent, []);
-        } elseif (preg_match('/iCabMobile/', $agent)) {
-            $browser = new IcabMobile($agent, []);
-        } elseif (preg_match('/iCab/', $agent)) {
-            $browser = new Icab($agent, []);
-        } elseif (preg_match('/HggH PhantomJS Screenshoter/', $agent)) {
-            $browser = new HgghPhantomjsScreenshoter($agent, []);
-        } elseif (preg_match('/bl\.uk\_lddc\_bot/', $agent)) {
-            $browser = new BlukLddcBot($agent, []);
-        } elseif (preg_match('/phantomas/', $agent)) {
-            $browser = new Phantomas($agent, []);
-        } elseif (preg_match('/Seznam screenshot\-generator/', $agent)) {
-            $browser = new SeznamScreenshotGenerator($agent, []);
-        } elseif (false !== strpos($agent, 'PhantomJS')) {
-            $browser = new PhantomJs($agent, []);
-        } elseif (false !== strpos($agent, 'YaBrowser')) {
-            $browser = new YaBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'Kamelio')) {
-            $browser = new KamelioApp($agent, []);
-        } elseif (false !== strpos($agent, 'FBAV')) {
-            $browser = new FacebookApp($agent, []);
-        } elseif (false !== strpos($agent, 'ACHEETAHI')) {
-            $browser = new CmBrowser($agent, []);
-        } elseif (preg_match('/flyflow/i', $agent)) {
-            $browser = new FlyFlow($agent, []);
-        } elseif (false !== strpos($agent, 'bdbrowser_i18n') || false !== strpos($agent, 'baidubrowser')) {
-            $browser = new BaiduBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'bdbrowserhd_i18n')) {
-            $browser = new BaiduHdBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'bdbrowser_mini')) {
-            $browser = new BaiduMiniBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'Puffin')) {
-            $browser = new Puffin($agent, []);
-        } elseif (preg_match('/stagefright/', $agent)) {
-            $browser = new Stagefright($agent, []);
-        } elseif (false !== strpos($agent, 'SamsungBrowser')) {
-            $browser = new SamsungBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'Silk')) {
-            $browser = new Silk($agent, []);
-        } elseif (false !== strpos($agent, 'coc_coc_browser')) {
-            $browser = new CocCocBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'NaverMatome')) {
-            $browser = new NaverMatome($agent, []);
-        } elseif (preg_match('/FlipboardProxy/', $agent)) {
-            $browser = new FlipboardProxy($agent, []);
-        } elseif (false !== strpos($agent, 'Flipboard')) {
-            $browser = new Flipboard($agent, []);
-        } elseif (false !== strpos($agent, 'Seznam.cz')) {
-            $browser = new SeznamBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'Aviator')) {
-            $browser = new WhiteHatAviator($agent, []);
-        } elseif (preg_match('/NetFrontLifeBrowser/', $agent)) {
-            $browser = new NetFrontLifeBrowser($agent, []);
-        } elseif (preg_match('/IceDragon/', $agent)) {
-            $browser = new ComodoIceDragon($agent, []);
-        } elseif (false !== strpos($agent, 'Dragon') && false === strpos($agent, 'DragonFly')) {
-            $browser = new ComodoDragon($agent, []);
-        } elseif (false !== strpos($agent, 'Beamrise')) {
-            $browser = new Beamrise($agent, []);
-        } elseif (false !== strpos($agent, 'Diglo')) {
-            $browser = new Diglo($agent, []);
-        } elseif (false !== strpos($agent, 'APUSBrowser')) {
-            $browser = new ApusBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'Chedot')) {
-            $browser = new Chedot($agent, []);
-        } elseif (false !== strpos($agent, 'Qword')) {
-            $browser = new QwordBrowser($agent, []);
-        } elseif (false !== strpos($agent, 'Iridium')) {
-            $browser = new Iridium($agent, []);
-        } elseif (preg_match('/avant/i', $agent)) {
-            $browser = new Avant($agent, []);
-        } elseif (false !== strpos($agent, 'MxNitro')) {
-            $browser = new MaxthonNitro($agent, []);
-        } elseif (preg_match('/(mxbrowser|maxthon|myie)/i', $agent)) {
-            $browser = new Maxthon($agent, []);
-        } elseif (preg_match('/superbird/i', $agent)) {
-            $browser = new SuperBird($agent, []);
-        } elseif (false !== strpos($agent, 'TinyBrowser')) {
-            $browser = new TinyBrowser($agent, []);
-        } elseif (preg_match('/MicroMessenger/', $agent)) {
-            $browser = new WeChatApp($agent, []);
-        } elseif (preg_match('/MQQBrowser\/Mini/', $agent)) {
-            $browser = new QqBrowserMini($agent, []);
-        } elseif (preg_match('/MQQBrowser/', $agent)) {
-            $browser = new QqBrowser($agent, []);
-        } elseif (preg_match('/pinterest/i', $agent)) {
-            $browser = new PinterestApp($agent, []);
-        } elseif (preg_match('/baiduboxapp/', $agent)) {
-            $browser = new BaiduBoxApp($agent, []);
-        } elseif (preg_match('/wkbrowser/', $agent)) {
-            $browser = new WkBrowser($agent, []);
-        } elseif (preg_match('/Mb2345Browser/', $agent)) {
-            $browser = new Browser2345($agent, []);
-        } elseif (false !== strpos($agent, 'Chrome')
-            && false !== strpos($agent, 'Version')
-            && 0 < strpos($agent, 'Chrome')
+            $browser = new OperaMobile($useragent, []);
+        } elseif (preg_match('/(ucbrowser|uc browser|ucweb)/i', $useragent)) {
+            $browser = new UcBrowser($useragent, []);
+        } elseif (preg_match('/IC OpenGraph Crawler/', $useragent)) {
+            $browser = new IbmConnections($useragent, []);
+        } elseif (preg_match('/coast/i', $useragent)) {
+            $browser = new OperaCoast($useragent, []);
+        } elseif (preg_match('/(opera|opr)/i', $useragent)) {
+            $browser = new Opera($useragent, []);
+        } elseif (preg_match('/iCabMobile/', $useragent)) {
+            $browser = new IcabMobile($useragent, []);
+        } elseif (preg_match('/iCab/', $useragent)) {
+            $browser = new Icab($useragent, []);
+        } elseif (preg_match('/HggH PhantomJS Screenshoter/', $useragent)) {
+            $browser = new HgghPhantomjsScreenshoter($useragent, []);
+        } elseif (preg_match('/bl\.uk\_lddc\_bot/', $useragent)) {
+            $browser = new BlukLddcBot($useragent, []);
+        } elseif (preg_match('/phantomas/', $useragent)) {
+            $browser = new Phantomas($useragent, []);
+        } elseif (preg_match('/Seznam screenshot\-generator/', $useragent)) {
+            $browser = new SeznamScreenshotGenerator($useragent, []);
+        } elseif (false !== strpos($useragent, 'PhantomJS')) {
+            $browser = new PhantomJs($useragent, []);
+        } elseif (false !== strpos($useragent, 'YaBrowser')) {
+            $browser = new YaBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'Kamelio')) {
+            $browser = new KamelioApp($useragent, []);
+        } elseif (false !== strpos($useragent, 'FBAV')) {
+            $browser = new FacebookApp($useragent, []);
+        } elseif (false !== strpos($useragent, 'ACHEETAHI')) {
+            $browser = new CmBrowser($useragent, []);
+        } elseif (preg_match('/flyflow/i', $useragent)) {
+            $browser = new FlyFlow($useragent, []);
+        } elseif (false !== strpos($useragent, 'bdbrowser_i18n') || false !== strpos($useragent, 'baidubrowser')) {
+            $browser = new BaiduBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'bdbrowserhd_i18n')) {
+            $browser = new BaiduHdBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'bdbrowser_mini')) {
+            $browser = new BaiduMiniBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'Puffin')) {
+            $browser = new Puffin($useragent, []);
+        } elseif (preg_match('/stagefright/', $useragent)) {
+            $browser = new Stagefright($useragent, []);
+        } elseif (false !== strpos($useragent, 'SamsungBrowser')) {
+            $browser = new SamsungBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'Silk')) {
+            $browser = new Silk($useragent, []);
+        } elseif (false !== strpos($useragent, 'coc_coc_browser')) {
+            $browser = new CocCocBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'NaverMatome')) {
+            $browser = new NaverMatome($useragent, []);
+        } elseif (preg_match('/FlipboardProxy/', $useragent)) {
+            $browser = new FlipboardProxy($useragent, []);
+        } elseif (false !== strpos($useragent, 'Flipboard')) {
+            $browser = new Flipboard($useragent, []);
+        } elseif (false !== strpos($useragent, 'Seznam.cz')) {
+            $browser = new SeznamBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'Aviator')) {
+            $browser = new WhiteHatAviator($useragent, []);
+        } elseif (preg_match('/NetFrontLifeBrowser/', $useragent)) {
+            $browser = new NetFrontLifeBrowser($useragent, []);
+        } elseif (preg_match('/IceDragon/', $useragent)) {
+            $browser = new ComodoIceDragon($useragent, []);
+        } elseif (false !== strpos($useragent, 'Dragon') && false === strpos($useragent, 'DragonFly')) {
+            $browser = new ComodoDragon($useragent, []);
+        } elseif (false !== strpos($useragent, 'Beamrise')) {
+            $browser = new Beamrise($useragent, []);
+        } elseif (false !== strpos($useragent, 'Diglo')) {
+            $browser = new Diglo($useragent, []);
+        } elseif (false !== strpos($useragent, 'APUSBrowser')) {
+            $browser = new ApusBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'Chedot')) {
+            $browser = new Chedot($useragent, []);
+        } elseif (false !== strpos($useragent, 'Qword')) {
+            $browser = new QwordBrowser($useragent, []);
+        } elseif (false !== strpos($useragent, 'Iridium')) {
+            $browser = new Iridium($useragent, []);
+        } elseif (preg_match('/avant/i', $useragent)) {
+            $browser = new Avant($useragent, []);
+        } elseif (false !== strpos($useragent, 'MxNitro')) {
+            $browser = new MaxthonNitro($useragent, []);
+        } elseif (preg_match('/(mxbrowser|maxthon|myie)/i', $useragent)) {
+            $browser = new Maxthon($useragent, []);
+        } elseif (preg_match('/superbird/i', $useragent)) {
+            $browser = new SuperBird($useragent, []);
+        } elseif (false !== strpos($useragent, 'TinyBrowser')) {
+            $browser = new TinyBrowser($useragent, []);
+        } elseif (preg_match('/MicroMessenger/', $useragent)) {
+            $browser = new WeChatApp($useragent, []);
+        } elseif (preg_match('/MQQBrowser\/Mini/', $useragent)) {
+            $browser = new QqBrowserMini($useragent, []);
+        } elseif (preg_match('/MQQBrowser/', $useragent)) {
+            $browser = new QqBrowser($useragent, []);
+        } elseif (preg_match('/pinterest/i', $useragent)) {
+            $browser = new PinterestApp($useragent, []);
+        } elseif (preg_match('/baiduboxapp/', $useragent)) {
+            $browser = new BaiduBoxApp($useragent, []);
+        } elseif (preg_match('/wkbrowser/', $useragent)) {
+            $browser = new WkBrowser($useragent, []);
+        } elseif (preg_match('/Mb2345Browser/', $useragent)) {
+            $browser = new Browser2345($useragent, []);
+        } elseif (false !== strpos($useragent, 'Chrome')
+            && false !== strpos($useragent, 'Version')
+            && 0 < strpos($useragent, 'Chrome')
         ) {
-            $browser = new AndroidWebView($agent, []);
-        } elseif (false !== strpos($agent, 'Safari')
-            && false !== strpos($agent, 'Version')
-            && false !== strpos($agent, 'Tizen')
+            $browser = new AndroidWebView($useragent, []);
+        } elseif (false !== strpos($useragent, 'Safari')
+            && false !== strpos($useragent, 'Version')
+            && false !== strpos($useragent, 'Tizen')
         ) {
-            $browser = new SamsungWebView($agent, []);
-        } elseif (preg_match('/cybeye/i', $agent)) {
-            $browser = new CybEye($agent, []);
-        } elseif (preg_match('/RebelMouse/', $agent)) {
-            $browser = new RebelMouse($agent, []);
-        } elseif (preg_match('/SeaMonkey/', $agent)) {
-            $browser = new Seamonkey($agent, []);
-        } elseif (preg_match('/Jobboerse/', $agent)) {
-            $browser = new JobBoerseBot($agent, []);
-        } elseif (preg_match('/Navigator/', $agent)) {
-            $browser = new NetscapeNavigator($agent, []);
-        } elseif (preg_match('/firefox/i', $agent) && preg_match('/anonym/i', $agent)) {
-            $browser = new Firefox($agent, []);
-        } elseif (preg_match('/trident/i', $agent) && preg_match('/anonym/i', $agent)) {
-            $browser = new MicrosoftInternetExplorer($agent, []);
-        } elseif (preg_match('/Windows\-RSS\-Platform/', $agent)) {
-            $browser = new WindowsRssPlatform($agent, []);
-        } elseif (preg_match('/MarketwireBot/', $agent)) {
-            $browser = new MarketwireBot($agent, []);
-        } elseif (preg_match('/GoogleToolbar/', $agent)) {
-            $browser = new GoogleToolbar($agent, []);
-        } elseif (preg_match('/netscape/i', $agent) && preg_match('/msie/i', $agent)) {
-            $browser = new Netscape($agent, []);
-        } elseif (preg_match('/LSSRocketCrawler/', $agent)) {
-            $browser = new LightspeedSystemsRocketCrawler($agent, []);
-        } elseif (preg_match('/lightspeedsystems/i', $agent)) {
-            $browser = new LightspeedSystemsCrawler($agent, []);
-        } elseif (preg_match('/SL Commerce Client/', $agent)) {
-            $browser = new SecondLiveCommerceClient($agent, []);
-        } elseif (preg_match('/(IEMobile|WPDesktop|ZuneWP7|XBLWP7)/', $agent)) {
-            $browser = new MicrosoftMobileExplorer($agent, []);
-        } elseif (preg_match('/BingPreview/', $agent)) {
-            $browser = new BingPreview($agent, []);
-        } elseif (preg_match('/360Spider/', $agent)) {
-            $browser = new Bot360($agent, []);
-        } elseif (preg_match('/Outlook\-Express/', $agent)) {
-            $browser = new WindowsLiveMail($agent, []);
-        } elseif (preg_match('/Outlook/', $agent)) {
-            $browser = new MicrosoftOutlook($agent, []);
-        } elseif (preg_match('/microsoft office mobile/i', $agent)) {
-            $browser = new MicrosoftOffice($agent, []);
-        } elseif (preg_match('/MSOffice/', $agent)) {
-            $browser = new MicrosoftOffice($agent, []);
-        } elseif (preg_match('/Microsoft Office Protocol Discovery/', $agent)) {
-            $browser = new MicrosoftOfficeProtocolDiscovery($agent, []);
-        } elseif (preg_match('/excel/i', $agent)) {
-            $browser = new MicrosoftExcel($agent, []);
-        } elseif (preg_match('/powerpoint/i', $agent)) {
-            $browser = new MicrosoftPowerPoint($agent, []);
-        } elseif (preg_match('/WordPress/', $agent)) {
-            $browser = new WordPress($agent, []);
-        } elseif (preg_match('/Word/', $agent)) {
-            $browser = new MicrosoftWord($agent, []);
-        } elseif (preg_match('/OneNote/', $agent)) {
-            $browser = new MicrosoftOneNote($agent, []);
-        } elseif (preg_match('/Visio/', $agent)) {
-            $browser = new MicrosoftVisio($agent, []);
-        } elseif (preg_match('/Access/', $agent)) {
-            $browser = new MicrosoftAccess($agent, []);
-        } elseif (preg_match('/Lync/', $agent)) {
-            $browser = new MicrosoftLync($agent, []);
-        } elseif (preg_match('/Office SyncProc/', $agent)) {
-            $browser = new MicrosoftOfficeSyncProc($agent, []);
-        } elseif (preg_match('/Office Upload Center/', $agent)) {
-            $browser = new MicrosoftOfficeUploadCenter($agent, []);
-        } elseif (preg_match('/frontpage/i', $agent)) {
-            $browser = new MicrosoftFrontPage($agent, []);
-        } elseif (preg_match('/microsoft office/i', $agent)) {
-            $browser = new MicrosoftOffice($agent, []);
-        } elseif (preg_match('/Crazy Browser/', $agent)) {
-            $browser = new CrazyBrowser($agent, []);
-        } elseif (preg_match('/Deepnet Explorer/', $agent)) {
-            $browser = new DeepnetExplorer($agent, []);
-        } elseif (preg_match('/kkman/i', $agent)) {
-            $browser = new Kkman($agent, []);
-        } elseif (preg_match('/Lunascape/', $agent)) {
-            $browser = new Lunascape($agent, []);
-        } elseif (preg_match('/Sleipnir/', $agent)) {
-            $browser = new Sleipnir($agent, []);
-        } elseif (preg_match('/Smartsite HTTPClient/', $agent)) {
-            $browser = new SmartsiteHttpClient($agent, []);
-        } elseif (preg_match('/GomezAgent/', $agent)) {
-            $browser = new GomezSiteMonitor($agent, []);
-        } elseif (preg_match('/Mozilla\/5\.0.*\(.*Trident\/8\.0.*rv\:\d+\).*/', $agent)
-            || preg_match('/Mozilla\/5\.0.*\(.*Trident\/7\.0.*\) like Gecko.*/', $agent)
-            || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.0.*Trident\/(4|5|6|7|8)\.0.*/', $agent)
-            || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (9|8|7|6)\.0.*/', $agent)
-            || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (5|4)\.\d+.*/', $agent)
-            || preg_match('/Mozilla\/\d\.\d+.*\(.*MSIE (3|2|1)\.\d+.*/', $agent)
+            $browser = new SamsungWebView($useragent, []);
+        } elseif (preg_match('/cybeye/i', $useragent)) {
+            $browser = new CybEye($useragent, []);
+        } elseif (preg_match('/RebelMouse/', $useragent)) {
+            $browser = new RebelMouse($useragent, []);
+        } elseif (preg_match('/SeaMonkey/', $useragent)) {
+            $browser = new Seamonkey($useragent, []);
+        } elseif (preg_match('/Jobboerse/', $useragent)) {
+            $browser = new JobBoerseBot($useragent, []);
+        } elseif (preg_match('/Navigator/', $useragent)) {
+            $browser = new NetscapeNavigator($useragent, []);
+        } elseif (preg_match('/firefox/i', $useragent) && preg_match('/anonym/i', $useragent)) {
+            $browser = new Firefox($useragent, []);
+        } elseif (preg_match('/trident/i', $useragent) && preg_match('/anonym/i', $useragent)) {
+            $browser = new MicrosoftInternetExplorer($useragent, []);
+        } elseif (preg_match('/Windows\-RSS\-Platform/', $useragent)) {
+            $browser = new WindowsRssPlatform($useragent, []);
+        } elseif (preg_match('/MarketwireBot/', $useragent)) {
+            $browser = new MarketwireBot($useragent, []);
+        } elseif (preg_match('/GoogleToolbar/', $useragent)) {
+            $browser = new GoogleToolbar($useragent, []);
+        } elseif (preg_match('/netscape/i', $useragent) && preg_match('/msie/i', $useragent)) {
+            $browser = new Netscape($useragent, []);
+        } elseif (preg_match('/LSSRocketCrawler/', $useragent)) {
+            $browser = new LightspeedSystemsRocketCrawler($useragent, []);
+        } elseif (preg_match('/lightspeedsystems/i', $useragent)) {
+            $browser = new LightspeedSystemsCrawler($useragent, []);
+        } elseif (preg_match('/SL Commerce Client/', $useragent)) {
+            $browser = new SecondLiveCommerceClient($useragent, []);
+        } elseif (preg_match('/(IEMobile|WPDesktop|ZuneWP7|XBLWP7)/', $useragent)) {
+            $browser = new MicrosoftMobileExplorer($useragent, []);
+        } elseif (preg_match('/BingPreview/', $useragent)) {
+            $browser = new BingPreview($useragent, []);
+        } elseif (preg_match('/360Spider/', $useragent)) {
+            $browser = new Bot360($useragent, []);
+        } elseif (preg_match('/Outlook\-Express/', $useragent)) {
+            $browser = new WindowsLiveMail($useragent, []);
+        } elseif (preg_match('/Outlook/', $useragent)) {
+            $browser = new MicrosoftOutlook($useragent, []);
+        } elseif (preg_match('/microsoft office mobile/i', $useragent)) {
+            $browser = new MicrosoftOffice($useragent, []);
+        } elseif (preg_match('/MSOffice/', $useragent)) {
+            $browser = new MicrosoftOffice($useragent, []);
+        } elseif (preg_match('/Microsoft Office Protocol Discovery/', $useragent)) {
+            $browser = new MicrosoftOfficeProtocolDiscovery($useragent, []);
+        } elseif (preg_match('/excel/i', $useragent)) {
+            $browser = new MicrosoftExcel($useragent, []);
+        } elseif (preg_match('/powerpoint/i', $useragent)) {
+            $browser = new MicrosoftPowerPoint($useragent, []);
+        } elseif (preg_match('/WordPress/', $useragent)) {
+            $browser = new WordPress($useragent, []);
+        } elseif (preg_match('/Word/', $useragent)) {
+            $browser = new MicrosoftWord($useragent, []);
+        } elseif (preg_match('/OneNote/', $useragent)) {
+            $browser = new MicrosoftOneNote($useragent, []);
+        } elseif (preg_match('/Visio/', $useragent)) {
+            $browser = new MicrosoftVisio($useragent, []);
+        } elseif (preg_match('/Access/', $useragent)) {
+            $browser = new MicrosoftAccess($useragent, []);
+        } elseif (preg_match('/Lync/', $useragent)) {
+            $browser = new MicrosoftLync($useragent, []);
+        } elseif (preg_match('/Office SyncProc/', $useragent)) {
+            $browser = new MicrosoftOfficeSyncProc($useragent, []);
+        } elseif (preg_match('/Office Upload Center/', $useragent)) {
+            $browser = new MicrosoftOfficeUploadCenter($useragent, []);
+        } elseif (preg_match('/frontpage/i', $useragent)) {
+            $browser = new MicrosoftFrontPage($useragent, []);
+        } elseif (preg_match('/microsoft office/i', $useragent)) {
+            $browser = new MicrosoftOffice($useragent, []);
+        } elseif (preg_match('/Crazy Browser/', $useragent)) {
+            $browser = new CrazyBrowser($useragent, []);
+        } elseif (preg_match('/Deepnet Explorer/', $useragent)) {
+            $browser = new DeepnetExplorer($useragent, []);
+        } elseif (preg_match('/kkman/i', $useragent)) {
+            $browser = new Kkman($useragent, []);
+        } elseif (preg_match('/Lunascape/', $useragent)) {
+            $browser = new Lunascape($useragent, []);
+        } elseif (preg_match('/Sleipnir/', $useragent)) {
+            $browser = new Sleipnir($useragent, []);
+        } elseif (preg_match('/Smartsite HTTPClient/', $useragent)) {
+            $browser = new SmartsiteHttpClient($useragent, []);
+        } elseif (preg_match('/GomezAgent/', $useragent)) {
+            $browser = new GomezSiteMonitor($useragent, []);
+        } elseif (preg_match('/Mozilla\/5\.0.*\(.*Trident\/8\.0.*rv\:\d+\).*/', $useragent)
+            || preg_match('/Mozilla\/5\.0.*\(.*Trident\/7\.0.*\) like Gecko.*/', $useragent)
+            || preg_match('/Mozilla\/5\.0.*\(.*MSIE 10\.0.*Trident\/(4|5|6|7|8)\.0.*/', $useragent)
+            || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (9|8|7|6)\.0.*/', $useragent)
+            || preg_match('/Mozilla\/(4|5)\.0.*\(.*MSIE (5|4)\.\d+.*/', $useragent)
+            || preg_match('/Mozilla\/\d\.\d+.*\(.*MSIE (3|2|1)\.\d+.*/', $useragent)
         ) {
-            $browser = new MicrosoftInternetExplorer($agent, []);
-        } elseif (false !== strpos($agent, 'Chromium')) {
-            $browser = new Chromium($agent, []);
-        } elseif (false !== strpos($agent, 'Iron')) {
-            $browser = new Iron($agent, []);
-        } elseif (preg_match('/midori/i', $agent)) {
-            $browser = new Midori($agent, []);
-        } elseif (preg_match('/Google Page Speed Insights/', $agent)) {
-            $browser = new GooglePageSpeedInsights($agent, []);
-        } elseif (preg_match('/(web\/snippet)/', $agent)) {
-            $browser = new GoogleWebSnippet($agent, []);
-        } elseif (preg_match('/(googlebot\-mobile)/i', $agent)) {
-            $browser = new GooglebotMobileBot($agent, []);
-        } elseif (preg_match('/Google Wireless Transcoder/', $agent)) {
-            $browser = new GoogleWirelessTranscoder($agent, []);
-        } elseif (preg_match('/Locubot/', $agent)) {
-            $browser = new Locubot($agent, []);
-        } elseif (preg_match('/(com\.google\.GooglePlus)/i', $agent)) {
-            $browser = new GooglePlus($agent, []);
-        } elseif (preg_match('/Google\-HTTP\-Java\-Client/', $agent)) {
-            $browser = new GoogleHttpClientLibraryForJava($agent, []);
-        } elseif (preg_match('/acapbot/i', $agent)) {
-            $browser = new Acapbot($agent, []);
-        } elseif (preg_match('/googlebot\-image/i', $agent)) {
-            $browser = new GoogleImageSearch($agent, []);
-        } elseif (preg_match('/googlebot/i', $agent)) {
-            $browser = new Googlebot($agent, []);
-        } elseif (preg_match('/^GOOG$/', $agent)) {
-            $browser = new Googlebot($agent, []);
-        } elseif (preg_match('/viera/i', $agent)) {
-            $browser = new SmartViera($agent, []);
-        } elseif (preg_match('/Nichrome/', $agent)) {
-            $browser = new Nichrome($agent, []);
-        } elseif (preg_match('/Kinza/', $agent)) {
-            $browser = new Kinza($agent, []);
-        } elseif (preg_match('/Google Keyword Suggestion/', $agent)) {
-            $browser = new GoogleKeywordSuggestion($agent, []);
-        } elseif (preg_match('/Google Web Preview/', $agent)) {
-            $browser = new GoogleWebPreview($agent, []);
-        } elseif (preg_match('/Google-Adwords-DisplayAds-WebRender/', $agent)) {
-            $browser = new GoogleAdwordsDisplayAdsWebRender($agent, []);
-        } elseif (preg_match('/HubSpot Webcrawler/', $agent)) {
-            $browser = new HubSpotWebcrawler($agent, []);
-        } elseif (preg_match('/RockMelt/', $agent)) {
-            $browser = new Rockmelt($agent, []);
-        } elseif (preg_match('/ SE /', $agent)) {
-            $browser = new SogouExplorer($agent, []);
-        } elseif (preg_match('/ArchiveBot/', $agent)) {
-            $browser = new ArchiveBot($agent, []);
-        } elseif (preg_match('/Edge/', $agent) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
-            $browser = new MicrosoftEdgeMobile($agent, []);
-        } elseif (preg_match('/Edge/', $agent)) {
-            $browser = new MicrosoftEdge($agent, []);
-        } elseif (preg_match('/diffbot/i', $agent)) {
-            $browser = new Diffbot($agent, []);
-        } elseif (preg_match('/vivaldi/i', $agent)) {
-            $browser = new Vivaldi($agent, []);
-        } elseif (preg_match('/LBBROWSER/', $agent)) {
-            $browser = new Liebao($agent, []);
-        } elseif (preg_match('/Amigo/', $agent)) {
-            $browser = new Amigo($agent, []);
-        } elseif (preg_match('/CoolNovoChromePlus/', $agent)) {
-            $browser = new CoolNovoChromePlus($agent, []);
-        } elseif (preg_match('/CoolNovo/', $agent)) {
-            $browser = new CoolNovo($agent, []);
-        } elseif (preg_match('/Kenshoo/', $agent)) {
-            $browser = new Kenshoo($agent, []);
-        } elseif (preg_match('/Bowser/', $agent)) {
-            $browser = new Bowser($agent, []);
-        } elseif (preg_match('/360SE/', $agent)) {
-            $browser = new SecureBrowser360($agent, []);
-        } elseif (preg_match('/360EE/', $agent)) {
-            $browser = new SpeedBrowser360($agent, []);
-        } elseif (preg_match('/ASW/', $agent)) {
-            $browser = new AvastSafeZone($agent, []);
-        } elseif (preg_match('/Wire/', $agent)) {
-            $browser = new WireApp($agent, []);
-        } elseif (preg_match('/chrome\/(\d+)\.(\d+)/i', $agent, $matches)
+            $browser = new MicrosoftInternetExplorer($useragent, []);
+        } elseif (false !== strpos($useragent, 'Chromium')) {
+            $browser = new Chromium($useragent, []);
+        } elseif (false !== strpos($useragent, 'Iron')) {
+            $browser = new Iron($useragent, []);
+        } elseif (preg_match('/midori/i', $useragent)) {
+            $browser = new Midori($useragent, []);
+        } elseif (preg_match('/Google Page Speed Insights/', $useragent)) {
+            $browser = new GooglePageSpeedInsights($useragent, []);
+        } elseif (preg_match('/(web\/snippet)/', $useragent)) {
+            $browser = new GoogleWebSnippet($useragent, []);
+        } elseif (preg_match('/(googlebot\-mobile)/i', $useragent)) {
+            $browser = new GooglebotMobileBot($useragent, []);
+        } elseif (preg_match('/Google Wireless Transcoder/', $useragent)) {
+            $browser = new GoogleWirelessTranscoder($useragent, []);
+        } elseif (preg_match('/Locubot/', $useragent)) {
+            $browser = new Locubot($useragent, []);
+        } elseif (preg_match('/(com\.google\.GooglePlus)/i', $useragent)) {
+            $browser = new GooglePlus($useragent, []);
+        } elseif (preg_match('/Google\-HTTP\-Java\-Client/', $useragent)) {
+            $browser = new GoogleHttpClientLibraryForJava($useragent, []);
+        } elseif (preg_match('/acapbot/i', $useragent)) {
+            $browser = new Acapbot($useragent, []);
+        } elseif (preg_match('/googlebot\-image/i', $useragent)) {
+            $browser = new GoogleImageSearch($useragent, []);
+        } elseif (preg_match('/googlebot/i', $useragent)) {
+            $browser = new Googlebot($useragent, []);
+        } elseif (preg_match('/^GOOG$/', $useragent)) {
+            $browser = new Googlebot($useragent, []);
+        } elseif (preg_match('/viera/i', $useragent)) {
+            $browser = new SmartViera($useragent, []);
+        } elseif (preg_match('/Nichrome/', $useragent)) {
+            $browser = new Nichrome($useragent, []);
+        } elseif (preg_match('/Kinza/', $useragent)) {
+            $browser = new Kinza($useragent, []);
+        } elseif (preg_match('/Google Keyword Suggestion/', $useragent)) {
+            $browser = new GoogleKeywordSuggestion($useragent, []);
+        } elseif (preg_match('/Google Web Preview/', $useragent)) {
+            $browser = new GoogleWebPreview($useragent, []);
+        } elseif (preg_match('/Google-Adwords-DisplayAds-WebRender/', $useragent)) {
+            $browser = new GoogleAdwordsDisplayAdsWebRender($useragent, []);
+        } elseif (preg_match('/HubSpot Webcrawler/', $useragent)) {
+            $browser = new HubSpotWebcrawler($useragent, []);
+        } elseif (preg_match('/RockMelt/', $useragent)) {
+            $browser = new Rockmelt($useragent, []);
+        } elseif (preg_match('/ SE /', $useragent)) {
+            $browser = new SogouExplorer($useragent, []);
+        } elseif (preg_match('/ArchiveBot/', $useragent)) {
+            $browser = new ArchiveBot($useragent, []);
+        } elseif (preg_match('/Edge/', $useragent) && null !== $platform && 'Windows Phone OS' === $platform->getName()) {
+            $browser = new MicrosoftEdgeMobile($useragent, []);
+        } elseif (preg_match('/Edge/', $useragent)) {
+            $browser = new MicrosoftEdge($useragent, []);
+        } elseif (preg_match('/diffbot/i', $useragent)) {
+            $browser = new Diffbot($useragent, []);
+        } elseif (preg_match('/vivaldi/i', $useragent)) {
+            $browser = new Vivaldi($useragent, []);
+        } elseif (preg_match('/LBBROWSER/', $useragent)) {
+            $browser = new Liebao($useragent, []);
+        } elseif (preg_match('/Amigo/', $useragent)) {
+            $browser = new Amigo($useragent, []);
+        } elseif (preg_match('/CoolNovoChromePlus/', $useragent)) {
+            $browser = new CoolNovoChromePlus($useragent, []);
+        } elseif (preg_match('/CoolNovo/', $useragent)) {
+            $browser = new CoolNovo($useragent, []);
+        } elseif (preg_match('/Kenshoo/', $useragent)) {
+            $browser = new Kenshoo($useragent, []);
+        } elseif (preg_match('/Bowser/', $useragent)) {
+            $browser = new Bowser($useragent, []);
+        } elseif (preg_match('/360SE/', $useragent)) {
+            $browser = new SecureBrowser360($useragent, []);
+        } elseif (preg_match('/360EE/', $useragent)) {
+            $browser = new SpeedBrowser360($useragent, []);
+        } elseif (preg_match('/ASW/', $useragent)) {
+            $browser = new AvastSafeZone($useragent, []);
+        } elseif (preg_match('/Wire/', $useragent)) {
+            $browser = new WireApp($useragent, []);
+        } elseif (preg_match('/chrome\/(\d+)\.(\d+)/i', $useragent, $matches)
             && isset($matches[1])
             && isset($matches[2])
             && $matches[1] >= 1
             && $matches[2] > 0
             && $matches[2] <= 10
         ) {
-            $browser = new ComodoDragon($agent, []);
-        } elseif (preg_match('/Flock/', $agent)) {
-            $browser = new Flock($agent, []);
-        } elseif (preg_match('/Bromium Safari/', $agent)) {
-            $browser = new Vsentry($agent, []);
-        } elseif (preg_match('/(chrome|crmo|crios)/i', $agent)) {
-            $browser = new Chrome($agent, []);
-        } elseif (preg_match('/(dolphin http client)/i', $agent)) {
-            $browser = new DolphinSmalltalkHttpClient($agent, []);
-        } elseif (preg_match('/(dolphin|dolfin)/i', $agent)) {
-            $browser = new Dolfin($agent, []);
-        } elseif (preg_match('/Arora/', $agent)) {
-            $browser = new Arora($agent, []);
-        } elseif (preg_match('/com\.douban\.group/i', $agent)) {
-            $browser = new DoubanApp($agent, []);
-        } elseif (preg_match('/ovibrowser/i', $agent)) {
-            $browser = new NokiaProxyBrowser($agent, []);
-        } elseif (preg_match('/MiuiBrowser/i', $agent)) {
-            $browser = new MiuiBrowser($agent, []);
-        } elseif (preg_match('/ibrowser/i', $agent)) {
-            $browser = new IBrowser($agent, []);
-        } elseif (preg_match('/OneBrowser/', $agent)) {
-            $browser = new OneBrowser($agent, []);
-        } elseif (preg_match('/Baiduspider\-image/', $agent)) {
-            $browser = new BaiduImageSearch($agent, []);
-        } elseif (preg_match('/http:\/\/www\.baidu\.com\/search/', $agent)) {
-            $browser = new BaiduMobileSearch($agent, []);
-        } elseif (preg_match('/(yjapp|yjtop)/i', $agent)) {
-            $browser = new YahooApp($agent, []);
-        } elseif (preg_match('/(linux; u; android|linux; android)/i', $agent) && preg_match('/version/i', $agent)) {
-            $browser = new AndroidWebkit($agent, []);
-        } elseif (preg_match('/safari/i', $agent) && null !== $platform && 'Android' === $platform->getName()) {
-            $browser = new AndroidWebkit($agent, []);
-        } elseif (preg_match('/Browser\/AppleWebKit/', $agent)) {
-            $browser = new AndroidWebkit($agent, []);
-        } elseif (preg_match('/Android\/[\d\.]+ release/', $agent)) {
-            $browser = new AndroidWebkit($agent, []);
-        } elseif (false !== strpos($agent, 'BlackBerry') && false !== strpos($agent, 'Version')) {
-            $browser = new Blackberry($agent, []);
-        } elseif (preg_match('/(webOS|wOSBrowser|wOSSystem)/', $agent)) {
-            $browser = new WebkitWebos($agent, []);
-        } elseif (preg_match('/OmniWeb/', $agent)) {
-            $browser = new Omniweb($agent, []);
-        } elseif (preg_match('/Windows Phone Search/', $agent)) {
-            $browser = new WindowsPhoneSearch($agent, []);
-        } elseif (preg_match('/Windows\-Update\-Agent/', $agent)) {
-            $browser = new WindowsUpdateAgent($agent, []);
-        } elseif (preg_match('/nokia/i', $agent)) {
-            $browser = new NokiaBrowser($agent, []);
-        } elseif (preg_match('/twitter for i/i', $agent)) {
-            $browser = new TwitterApp($agent, []);
-        } elseif (preg_match('/twitterbot/i', $agent)) {
-            $browser = new Twitterbot($agent, []);
-        } elseif (preg_match('/GSA/', $agent)) {
-            $browser = new GoogleApp($agent, []);
-        } elseif (preg_match('/QtCarBrowser/', $agent)) {
-            $browser = new ModelsBrowser($agent, []);
-        } elseif (preg_match('/Qt/', $agent)) {
-            $browser = new Qt($agent, []);
-        } elseif (preg_match('/Instagram/', $agent)) {
-            $browser = new InstagramApp($agent, []);
-        } elseif (preg_match('/WebClip/', $agent)) {
-            $browser = new WebClip($agent, []);
-        } elseif (preg_match('/Mercury/', $agent)) {
-            $browser = new Mercury($agent, []);
-        } elseif (preg_match('/MacAppStore/', $agent)) {
-            $browser = new MacAppStore($agent, []);
-        } elseif (preg_match('/AppStore/', $agent)) {
-            $browser = new AppleAppStoreApp($agent, []);
-        } elseif (preg_match('/Webglance/', $agent)) {
-            $browser = new WebGlance($agent, []);
-        } elseif (preg_match('/YHOO\_Search\_App/', $agent)) {
-            $browser = new YahooMobileApp($agent, []);
-        } elseif (preg_match('/NewsBlur Feed Fetcher/', $agent)) {
-            $browser = new NewsBlurFeedFetcher($agent, []);
-        } elseif (preg_match('/AppleCoreMedia/', $agent)) {
-            $browser = new AppleCoreMedia($agent, []);
-        } elseif (preg_match('/dataaccessd/', $agent)) {
-            $browser = new IosDataaccessd($agent, []);
-        } elseif (preg_match('/MailChimp/', $agent)) {
-            $browser = new MailChimp($agent, []);
-        } elseif (preg_match('/MailBar/', $agent)) {
-            $browser = new MailBar($agent, []);
-        } elseif (preg_match('/^Mail/', $agent)) {
-            $browser = new AppleMail($agent, []);
-        } elseif (preg_match('/^Mozilla\/5\.0.*\(.*(CPU iPhone OS|CPU OS) \d+(_|\.)\d+.* like Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $agent)) {
-            $browser = new AppleMail($agent, []);
-        } elseif (preg_match('/^Mozilla\/5\.0 \(Macintosh; Intel Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $agent)) {
-            $browser = new AppleMail($agent, []);
-        } elseif (preg_match('/^Mozilla\/5\.0 \(Windows.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $agent)) {
-            $browser = new AppleMail($agent, []);
-        } elseif (preg_match('/msnbot\-media/i', $agent)) {
-            $browser = new MsnBotMedia($agent, []);
-        } elseif (preg_match('/adidxbot/i', $agent)) {
-            $browser = new Adidxbot($agent, []);
-        } elseif (preg_match('/msnbot/i', $agent)) {
-            $browser = new Bingbot($agent, []);
-        } elseif (preg_match('/(backberry|bb10)/i', $agent)) {
-            $browser = new Blackberry($agent, []);
-        } elseif (preg_match('/WeTab\-Browser/', $agent)) {
-            $browser = new WeTabBrowser($agent, []);
-        } elseif (preg_match('/profiller/', $agent)) {
-            $browser = new Profiller($agent, []);
-        } elseif (preg_match('/(wkhtmltopdf)/i', $agent)) {
-            $browser = new WkHtmltopdf($agent, []);
-        } elseif (preg_match('/(wkhtmltoimage)/i', $agent)) {
-            $browser = new WkHtmltoImage($agent, []);
-        } elseif (preg_match('/(wp\-iphone|wp\-android)/', $agent)) {
-            $browser = new WordPressApp($agent, []);
-        } elseif (preg_match('/OktaMobile/', $agent)) {
-            $browser = new OktaMobileApp($agent, []);
-        } elseif (preg_match('/kmail2/', $agent)) {
-            $browser = new Kmail2($agent, []);
-        } elseif (preg_match('/eb\-iphone/', $agent)) {
-            $browser = new EbApp($agent, []);
-        } elseif (preg_match('/ElmediaPlayer/', $agent)) {
-            $browser = new ElmediaPlayer($agent, []);
-        } elseif (preg_match('/Schoolwires/', $agent)) {
-            $browser = new SchoolwiresApp($agent, []);
-        } elseif (preg_match('/Dreamweaver/', $agent)) {
-            $browser = new Dreamweaver($agent, []);
-        } elseif (preg_match('/akregator/', $agent)) {
-            $browser = new Akregator($agent, []);
-        } elseif (preg_match('/Installatron/', $agent)) {
-            $browser = new Installatron($agent, []);
-        } elseif (preg_match('/Quora Link Preview/', $agent)) {
-            $browser = new QuoraLinkPreviewBot($agent, []);
-        } elseif (preg_match('/Quora/', $agent)) {
-            $browser = new QuoraApp($agent, []);
-        } elseif (preg_match('/Rocky ChatWork Mobile/', $agent)) {
-            $browser = new RockyChatWorkMobile($agent, []);
-        } elseif (preg_match('/AdsBot\-Google\-Mobile/', $agent)) {
-            $browser = new GoogleAdsbotMobile($agent, []);
-        } elseif (preg_match('/epiphany/i', $agent)) {
-            $browser = new Epiphany($agent, []);
-        } elseif (preg_match('/rekonq/', $agent)) {
-            $browser = new Rekonq($agent, []);
-        } elseif (preg_match('/Skyfire/', $agent)) {
-            $browser = new Skyfire($agent, []);
-        } elseif (preg_match('/FlixsteriOS/', $agent)) {
-            $browser = new FlixsterApp($agent, []);
-        } elseif (preg_match('/(adbeat\_bot|adbeat\.com)/', $agent)) {
-            $browser = new AdbeatBot($agent, []);
-        } elseif (preg_match('/(SecondLife|Second Life)/', $agent)) {
-            $browser = new SecondLiveClient($agent, []);
-        } elseif (preg_match('/(Salesforce1|SalesforceTouchContainer)/', $agent)) {
-            $browser = new SalesForceApp($agent, []);
-        } elseif (preg_match('/(nagios\-plugins|check\_http)/', $agent)) {
-            $browser = new Nagios($agent, []);
-        } elseif (preg_match('/bingbot/i', $agent)) {
-            $browser = new Bingbot($agent, []);
-        } elseif (preg_match('/Mediapartners\-Google/', $agent)) {
-            $browser = new GoogleAdSenseBot($agent, []);
-        } elseif (preg_match('/SMTBot/', $agent)) {
-            $browser = new SmtBot($agent, []);
-        } elseif (preg_match('/domain\.com/', $agent)) {
-            $browser = new PagePeekerScreenshotMaker($agent, []);
-        } elseif (preg_match('/PagePeeker/', $agent)) {
-            $browser = new PagePeeker($agent, []);
-        } elseif (preg_match('/DiigoBrowser/', $agent)) {
-            $browser = new DiigoBrowser($agent, []);
-        } elseif (preg_match('/kontact/', $agent)) {
-            $browser = new Kontact($agent, []);
-        } elseif (preg_match('/QupZilla/', $agent)) {
-            $browser = new QupZilla($agent, []);
-        } elseif (preg_match('/FxiOS/', $agent)) {
-            $browser = new FirefoxIos($agent, []);
-        } elseif (preg_match('/qutebrowser/', $agent)) {
-            $browser = new QuteBrowser($agent, []);
-        } elseif (preg_match('/Otter/', $agent)) {
-            $browser = new Otter($agent, []);
-        } elseif (preg_match('/PaleMoon/', $agent)) {
-            $browser = new Palemoon($agent, []);
-        } elseif (preg_match('/slurp/i', $agent)) {
-            $browser = new YahooSlurp($agent, []);
-        } elseif (preg_match('/applebot/i', $agent)) {
-            $browser = new Applebot($agent, []);
-        } elseif (preg_match('/SoundCloud/', $agent)) {
-            $browser = new SoundCloudApp($agent, []);
-        } elseif (preg_match('/Rival IQ/', $agent)) {
-            $browser = new RivalIqBot($agent, []);
-        } elseif (preg_match('/Evernote Clip Resolver/', $agent)) {
-            $browser = new EvernoteClipResolver($agent, []);
-        } elseif (preg_match('/Evernote/', $agent)) {
-            $browser = new EvernoteApp($agent, []);
-        } elseif (preg_match('/Fluid/', $agent)) {
-            $browser = new Fluid($agent, []);
-        } elseif (preg_match('/safari/i', $agent)) {
-            $browser = new Safari($agent, []);
-        } elseif (preg_match('/^Mozilla\/(4|5)\.0 \(Macintosh; .* Mac OS X .*\) AppleWebKit\/.* \(KHTML, like Gecko\) Version\/[\d\.]+$/i', $agent)) {
-            $browser = new Safari($agent, []);
-        } elseif (preg_match('/TWCAN\/SportsNet/', $agent)) {
-            $browser = new TwcSportsNet($agent, []);
-        } elseif (preg_match('/AdobeAIR/', $agent)) {
-            $browser = new AdobeAIR($agent, []);
-        } elseif (preg_match('/(easouspider)/i', $agent)) {
-            $browser = new EasouSpider($agent, []);
-        } elseif (preg_match('/^Mozilla\/5\.0.*\((iPhone|iPad|iPod).*\).*AppleWebKit\/.*\(.*KHTML, like Gecko.*\).*Mobile.*/i', $agent)) {
-            $browser = new MobileSafariUiWebView($agent, []);
-        } elseif (preg_match('/waterfox/i', $agent)) {
-            $browser = new WaterFox($agent, []);
-        } elseif (preg_match('/Thunderbird/', $agent)) {
-            $browser = new Thunderbird($agent, []);
-        } elseif (preg_match('/Fennec/', $agent)) {
-            $browser = new Fennec($agent, []);
-        } elseif (preg_match('/myibrow/', $agent)) {
-            $browser = new MyInternetBrowser($agent, []);
-        } elseif (preg_match('/Daumoa/', $agent)) {
-            $browser = new Daumoa($agent, []);
-        } elseif (preg_match('/PaleMoon/', $agent)) {
-            $browser = new Palemoon($agent, []);
-        } elseif (preg_match('/iceweasel/i', $agent)) {
-            $browser = new Iceweasel($agent, []);
-        } elseif (preg_match('/icecat/i', $agent)) {
-            $browser = new IceCat($agent, []);
-        } elseif (preg_match('/iceape/i', $agent)) {
-            $browser = new Iceape($agent, []);
-        } elseif (preg_match('/galeon/i', $agent)) {
-            $browser = new Galeon($agent, []);
-        } elseif (preg_match('/SurveyBot/', $agent)) {
-            $browser = new SurveyBot($agent, []);
-        } elseif (preg_match('/aggregator\:Spinn3r/', $agent)) {
-            $browser = new Spinn3rRssAggregator($agent, []);
-        } elseif (preg_match('/TweetmemeBot/', $agent)) {
-            $browser = new TweetmemeBot($agent, []);
-        } elseif (preg_match('/Butterfly/', $agent)) {
-            $browser = new ButterflyRobot($agent, []);
-        } elseif (preg_match('/James BOT/', $agent)) {
-            $browser = new JamesBot($agent, []);
-        } elseif (preg_match('/MSIE or Firefox mutant; not on Windows server/', $agent)) {
-            $browser = new Daumoa($agent, []);
-        } elseif (preg_match('/SailfishBrowser/', $agent)) {
-            $browser = new SailfishBrowser($agent, []);
-        } elseif (preg_match('/KcB/', $agent)) {
-            $browser = new UnknownBrowser($agent, []);
-        } elseif (preg_match('/kazehakase/i', $agent)) {
-            $browser = new Kazehakase($agent, []);
-        } elseif (preg_match('/cometbird/i', $agent)) {
-            $browser = new CometBird($agent, []);
-        } elseif (preg_match('/Camino/', $agent)) {
-            $browser = new Camino($agent, []);
-        } elseif (preg_match('/SlimerJS/', $agent)) {
-            $browser = new SlimerJs($agent, []);
-        } elseif (preg_match('/MultiZilla/', $agent)) {
-            $browser = new MultiZilla($agent, []);
-        } elseif (preg_match('/Minimo/', $agent)) {
-            $browser = new Minimo($agent, []);
-        } elseif (preg_match('/MicroB/', $agent)) {
-            $browser = new MicroB($agent, []);
-        } elseif (preg_match('/firefox/i', $agent)
-            && !preg_match('/gecko/i', $agent)
-            && preg_match('/anonymized/i', $agent)
+            $browser = new ComodoDragon($useragent, []);
+        } elseif (preg_match('/Flock/', $useragent)) {
+            $browser = new Flock($useragent, []);
+        } elseif (preg_match('/Bromium Safari/', $useragent)) {
+            $browser = new Vsentry($useragent, []);
+        } elseif (preg_match('/(chrome|crmo|crios)/i', $useragent)) {
+            $browser = new Chrome($useragent, []);
+        } elseif (preg_match('/(dolphin http client)/i', $useragent)) {
+            $browser = new DolphinSmalltalkHttpClient($useragent, []);
+        } elseif (preg_match('/(dolphin|dolfin)/i', $useragent)) {
+            $browser = new Dolfin($useragent, []);
+        } elseif (preg_match('/Arora/', $useragent)) {
+            $browser = new Arora($useragent, []);
+        } elseif (preg_match('/com\.douban\.group/i', $useragent)) {
+            $browser = new DoubanApp($useragent, []);
+        } elseif (preg_match('/ovibrowser/i', $useragent)) {
+            $browser = new NokiaProxyBrowser($useragent, []);
+        } elseif (preg_match('/MiuiBrowser/i', $useragent)) {
+            $browser = new MiuiBrowser($useragent, []);
+        } elseif (preg_match('/ibrowser/i', $useragent)) {
+            $browser = new IBrowser($useragent, []);
+        } elseif (preg_match('/OneBrowser/', $useragent)) {
+            $browser = new OneBrowser($useragent, []);
+        } elseif (preg_match('/Baiduspider\-image/', $useragent)) {
+            $browser = new BaiduImageSearch($useragent, []);
+        } elseif (preg_match('/http:\/\/www\.baidu\.com\/search/', $useragent)) {
+            $browser = new BaiduMobileSearch($useragent, []);
+        } elseif (preg_match('/(yjapp|yjtop)/i', $useragent)) {
+            $browser = new YahooApp($useragent, []);
+        } elseif (preg_match('/(linux; u; android|linux; android)/i', $useragent) && preg_match('/version/i', $useragent)) {
+            $browser = new AndroidWebkit($useragent, []);
+        } elseif (preg_match('/safari/i', $useragent) && null !== $platform && 'Android' === $platform->getName()) {
+            $browser = new AndroidWebkit($useragent, []);
+        } elseif (preg_match('/Browser\/AppleWebKit/', $useragent)) {
+            $browser = new AndroidWebkit($useragent, []);
+        } elseif (preg_match('/Android\/[\d\.]+ release/', $useragent)) {
+            $browser = new AndroidWebkit($useragent, []);
+        } elseif (false !== strpos($useragent, 'BlackBerry') && false !== strpos($useragent, 'Version')) {
+            $browser = new Blackberry($useragent, []);
+        } elseif (preg_match('/(webOS|wOSBrowser|wOSSystem)/', $useragent)) {
+            $browser = new WebkitWebos($useragent, []);
+        } elseif (preg_match('/OmniWeb/', $useragent)) {
+            $browser = new Omniweb($useragent, []);
+        } elseif (preg_match('/Windows Phone Search/', $useragent)) {
+            $browser = new WindowsPhoneSearch($useragent, []);
+        } elseif (preg_match('/Windows\-Update\-Agent/', $useragent)) {
+            $browser = new WindowsUpdateAgent($useragent, []);
+        } elseif (preg_match('/nokia/i', $useragent)) {
+            $browser = new NokiaBrowser($useragent, []);
+        } elseif (preg_match('/twitter for i/i', $useragent)) {
+            $browser = new TwitterApp($useragent, []);
+        } elseif (preg_match('/twitterbot/i', $useragent)) {
+            $browser = new Twitterbot($useragent, []);
+        } elseif (preg_match('/GSA/', $useragent)) {
+            $browser = new GoogleApp($useragent, []);
+        } elseif (preg_match('/QtCarBrowser/', $useragent)) {
+            $browser = new ModelsBrowser($useragent, []);
+        } elseif (preg_match('/Qt/', $useragent)) {
+            $browser = new Qt($useragent, []);
+        } elseif (preg_match('/Instagram/', $useragent)) {
+            $browser = new InstagramApp($useragent, []);
+        } elseif (preg_match('/WebClip/', $useragent)) {
+            $browser = new WebClip($useragent, []);
+        } elseif (preg_match('/Mercury/', $useragent)) {
+            $browser = new Mercury($useragent, []);
+        } elseif (preg_match('/MacAppStore/', $useragent)) {
+            $browser = new MacAppStore($useragent, []);
+        } elseif (preg_match('/AppStore/', $useragent)) {
+            $browser = new AppleAppStoreApp($useragent, []);
+        } elseif (preg_match('/Webglance/', $useragent)) {
+            $browser = new WebGlance($useragent, []);
+        } elseif (preg_match('/YHOO\_Search\_App/', $useragent)) {
+            $browser = new YahooMobileApp($useragent, []);
+        } elseif (preg_match('/NewsBlur Feed Fetcher/', $useragent)) {
+            $browser = new NewsBlurFeedFetcher($useragent, []);
+        } elseif (preg_match('/AppleCoreMedia/', $useragent)) {
+            $browser = new AppleCoreMedia($useragent, []);
+        } elseif (preg_match('/dataaccessd/', $useragent)) {
+            $browser = new IosDataaccessd($useragent, []);
+        } elseif (preg_match('/MailChimp/', $useragent)) {
+            $browser = new MailChimp($useragent, []);
+        } elseif (preg_match('/MailBar/', $useragent)) {
+            $browser = new MailBar($useragent, []);
+        } elseif (preg_match('/^Mail/', $useragent)) {
+            $browser = new AppleMail($useragent, []);
+        } elseif (preg_match('/^Mozilla\/5\.0.*\(.*(CPU iPhone OS|CPU OS) \d+(_|\.)\d+.* like Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
+            $browser = new AppleMail($useragent, []);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(Macintosh; Intel Mac OS X.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
+            $browser = new AppleMail($useragent, []);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(Windows.*\) AppleWebKit.* \(KHTML, like Gecko\)$/', $useragent)) {
+            $browser = new AppleMail($useragent, []);
+        } elseif (preg_match('/msnbot\-media/i', $useragent)) {
+            $browser = new MsnBotMedia($useragent, []);
+        } elseif (preg_match('/adidxbot/i', $useragent)) {
+            $browser = new Adidxbot($useragent, []);
+        } elseif (preg_match('/msnbot/i', $useragent)) {
+            $browser = new Bingbot($useragent, []);
+        } elseif (preg_match('/(backberry|bb10)/i', $useragent)) {
+            $browser = new Blackberry($useragent, []);
+        } elseif (preg_match('/WeTab\-Browser/', $useragent)) {
+            $browser = new WeTabBrowser($useragent, []);
+        } elseif (preg_match('/profiller/', $useragent)) {
+            $browser = new Profiller($useragent, []);
+        } elseif (preg_match('/(wkhtmltopdf)/i', $useragent)) {
+            $browser = new WkHtmltopdf($useragent, []);
+        } elseif (preg_match('/(wkhtmltoimage)/i', $useragent)) {
+            $browser = new WkHtmltoImage($useragent, []);
+        } elseif (preg_match('/(wp\-iphone|wp\-android)/', $useragent)) {
+            $browser = new WordPressApp($useragent, []);
+        } elseif (preg_match('/OktaMobile/', $useragent)) {
+            $browser = new OktaMobileApp($useragent, []);
+        } elseif (preg_match('/kmail2/', $useragent)) {
+            $browser = new Kmail2($useragent, []);
+        } elseif (preg_match('/eb\-iphone/', $useragent)) {
+            $browser = new EbApp($useragent, []);
+        } elseif (preg_match('/ElmediaPlayer/', $useragent)) {
+            $browser = new ElmediaPlayer($useragent, []);
+        } elseif (preg_match('/Schoolwires/', $useragent)) {
+            $browser = new SchoolwiresApp($useragent, []);
+        } elseif (preg_match('/Dreamweaver/', $useragent)) {
+            $browser = new Dreamweaver($useragent, []);
+        } elseif (preg_match('/akregator/', $useragent)) {
+            $browser = new Akregator($useragent, []);
+        } elseif (preg_match('/Installatron/', $useragent)) {
+            $browser = new Installatron($useragent, []);
+        } elseif (preg_match('/Quora Link Preview/', $useragent)) {
+            $browser = new QuoraLinkPreviewBot($useragent, []);
+        } elseif (preg_match('/Quora/', $useragent)) {
+            $browser = new QuoraApp($useragent, []);
+        } elseif (preg_match('/Rocky ChatWork Mobile/', $useragent)) {
+            $browser = new RockyChatWorkMobile($useragent, []);
+        } elseif (preg_match('/AdsBot\-Google\-Mobile/', $useragent)) {
+            $browser = new GoogleAdsbotMobile($useragent, []);
+        } elseif (preg_match('/epiphany/i', $useragent)) {
+            $browser = new Epiphany($useragent, []);
+        } elseif (preg_match('/rekonq/', $useragent)) {
+            $browser = new Rekonq($useragent, []);
+        } elseif (preg_match('/Skyfire/', $useragent)) {
+            $browser = new Skyfire($useragent, []);
+        } elseif (preg_match('/FlixsteriOS/', $useragent)) {
+            $browser = new FlixsterApp($useragent, []);
+        } elseif (preg_match('/(adbeat\_bot|adbeat\.com)/', $useragent)) {
+            $browser = new AdbeatBot($useragent, []);
+        } elseif (preg_match('/(SecondLife|Second Life)/', $useragent)) {
+            $browser = new SecondLiveClient($useragent, []);
+        } elseif (preg_match('/(Salesforce1|SalesforceTouchContainer)/', $useragent)) {
+            $browser = new SalesForceApp($useragent, []);
+        } elseif (preg_match('/(nagios\-plugins|check\_http)/', $useragent)) {
+            $browser = new Nagios($useragent, []);
+        } elseif (preg_match('/bingbot/i', $useragent)) {
+            $browser = new Bingbot($useragent, []);
+        } elseif (preg_match('/Mediapartners\-Google/', $useragent)) {
+            $browser = new GoogleAdSenseBot($useragent, []);
+        } elseif (preg_match('/SMTBot/', $useragent)) {
+            $browser = new SmtBot($useragent, []);
+        } elseif (preg_match('/domain\.com/', $useragent)) {
+            $browser = new PagePeekerScreenshotMaker($useragent, []);
+        } elseif (preg_match('/PagePeeker/', $useragent)) {
+            $browser = new PagePeeker($useragent, []);
+        } elseif (preg_match('/DiigoBrowser/', $useragent)) {
+            $browser = new DiigoBrowser($useragent, []);
+        } elseif (preg_match('/kontact/', $useragent)) {
+            $browser = new Kontact($useragent, []);
+        } elseif (preg_match('/QupZilla/', $useragent)) {
+            $browser = new QupZilla($useragent, []);
+        } elseif (preg_match('/FxiOS/', $useragent)) {
+            $browser = new FirefoxIos($useragent, []);
+        } elseif (preg_match('/qutebrowser/', $useragent)) {
+            $browser = new QuteBrowser($useragent, []);
+        } elseif (preg_match('/Otter/', $useragent)) {
+            $browser = new Otter($useragent, []);
+        } elseif (preg_match('/PaleMoon/', $useragent)) {
+            $browser = new Palemoon($useragent, []);
+        } elseif (preg_match('/slurp/i', $useragent)) {
+            $browser = new YahooSlurp($useragent, []);
+        } elseif (preg_match('/applebot/i', $useragent)) {
+            $browser = new Applebot($useragent, []);
+        } elseif (preg_match('/SoundCloud/', $useragent)) {
+            $browser = new SoundCloudApp($useragent, []);
+        } elseif (preg_match('/Rival IQ/', $useragent)) {
+            $browser = new RivalIqBot($useragent, []);
+        } elseif (preg_match('/Evernote Clip Resolver/', $useragent)) {
+            $browser = new EvernoteClipResolver($useragent, []);
+        } elseif (preg_match('/Evernote/', $useragent)) {
+            $browser = new EvernoteApp($useragent, []);
+        } elseif (preg_match('/Fluid/', $useragent)) {
+            $browser = new Fluid($useragent, []);
+        } elseif (preg_match('/safari/i', $useragent)) {
+            $browser = new Safari($useragent, []);
+        } elseif (preg_match('/^Mozilla\/(4|5)\.0 \(Macintosh; .* Mac OS X .*\) AppleWebKit\/.* \(KHTML, like Gecko\) Version\/[\d\.]+$/i', $useragent)) {
+            $browser = new Safari($useragent, []);
+        } elseif (preg_match('/TWCAN\/SportsNet/', $useragent)) {
+            $browser = new TwcSportsNet($useragent, []);
+        } elseif (preg_match('/AdobeAIR/', $useragent)) {
+            $browser = new AdobeAIR($useragent, []);
+        } elseif (preg_match('/(easouspider)/i', $useragent)) {
+            $browser = new EasouSpider($useragent, []);
+        } elseif (preg_match('/^Mozilla\/5\.0.*\((iPhone|iPad|iPod).*\).*AppleWebKit\/.*\(.*KHTML, like Gecko.*\).*Mobile.*/i', $useragent)) {
+            $browser = new MobileSafariUiWebView($useragent, []);
+        } elseif (preg_match('/waterfox/i', $useragent)) {
+            $browser = new WaterFox($useragent, []);
+        } elseif (preg_match('/Thunderbird/', $useragent)) {
+            $browser = new Thunderbird($useragent, []);
+        } elseif (preg_match('/Fennec/', $useragent)) {
+            $browser = new Fennec($useragent, []);
+        } elseif (preg_match('/myibrow/', $useragent)) {
+            $browser = new MyInternetBrowser($useragent, []);
+        } elseif (preg_match('/Daumoa/', $useragent)) {
+            $browser = new Daumoa($useragent, []);
+        } elseif (preg_match('/PaleMoon/', $useragent)) {
+            $browser = new Palemoon($useragent, []);
+        } elseif (preg_match('/iceweasel/i', $useragent)) {
+            $browser = new Iceweasel($useragent, []);
+        } elseif (preg_match('/icecat/i', $useragent)) {
+            $browser = new IceCat($useragent, []);
+        } elseif (preg_match('/iceape/i', $useragent)) {
+            $browser = new Iceape($useragent, []);
+        } elseif (preg_match('/galeon/i', $useragent)) {
+            $browser = new Galeon($useragent, []);
+        } elseif (preg_match('/SurveyBot/', $useragent)) {
+            $browser = new SurveyBot($useragent, []);
+        } elseif (preg_match('/aggregator\:Spinn3r/', $useragent)) {
+            $browser = new Spinn3rRssAggregator($useragent, []);
+        } elseif (preg_match('/TweetmemeBot/', $useragent)) {
+            $browser = new TweetmemeBot($useragent, []);
+        } elseif (preg_match('/Butterfly/', $useragent)) {
+            $browser = new ButterflyRobot($useragent, []);
+        } elseif (preg_match('/James BOT/', $useragent)) {
+            $browser = new JamesBot($useragent, []);
+        } elseif (preg_match('/MSIE or Firefox mutant; not on Windows server/', $useragent)) {
+            $browser = new Daumoa($useragent, []);
+        } elseif (preg_match('/SailfishBrowser/', $useragent)) {
+            $browser = new SailfishBrowser($useragent, []);
+        } elseif (preg_match('/KcB/', $useragent)) {
+            $browser = new UnknownBrowser($useragent, []);
+        } elseif (preg_match('/kazehakase/i', $useragent)) {
+            $browser = new Kazehakase($useragent, []);
+        } elseif (preg_match('/cometbird/i', $useragent)) {
+            $browser = new CometBird($useragent, []);
+        } elseif (preg_match('/Camino/', $useragent)) {
+            $browser = new Camino($useragent, []);
+        } elseif (preg_match('/SlimerJS/', $useragent)) {
+            $browser = new SlimerJs($useragent, []);
+        } elseif (preg_match('/MultiZilla/', $useragent)) {
+            $browser = new MultiZilla($useragent, []);
+        } elseif (preg_match('/Minimo/', $useragent)) {
+            $browser = new Minimo($useragent, []);
+        } elseif (preg_match('/MicroB/', $useragent)) {
+            $browser = new MicroB($useragent, []);
+        } elseif (preg_match('/firefox/i', $useragent)
+            && !preg_match('/gecko/i', $useragent)
+            && preg_match('/anonymized/i', $useragent)
         ) {
-            $browser = new Firefox($agent, []);
-        } elseif (preg_match('/(firefox|minefield|shiretoko|bonecho|namoroka)/i', $agent)) {
-            $browser = new Firefox($agent, []);
-        } elseif (preg_match('/gvfs/', $agent)) {
-            $browser = new Gvfs($agent, []);
-        } elseif (preg_match('/luakit/', $agent)) {
-            $browser = new Luakit($agent, []);
-        } elseif (preg_match('/playstation 3/i', $agent)) {
-            $browser = new NetFront($agent, []);
-        } elseif (preg_match('/sistrix/i', $agent)) {
-            $browser = new Sistrix($agent, []);
-        } elseif (preg_match('/ezooms/i', $agent)) {
-            $browser = new Ezooms($agent, []);
-        } elseif (preg_match('/grapefx/i', $agent)) {
-            $browser = new GrapeFx($agent, []);
-        } elseif (preg_match('/grapeshotcrawler/i', $agent)) {
-            $browser = new GrapeshotCrawler($agent, []);
-        } elseif (preg_match('/(mail\.ru)/i', $agent)) {
-            $browser = new MailRu($agent, []);
-        } elseif (preg_match('/(proximic)/i', $agent)) {
-            $browser = new Proximic($agent, []);
-        } elseif (preg_match('/(polaris)/i', $agent)) {
-            $browser = new Polaris($agent, []);
-        } elseif (preg_match('/(another web mining tool|awmt)/i', $agent)) {
-            $browser = new AnotherWebMiningTool($agent, []);
-        } elseif (preg_match('/(wbsearchbot|wbsrch)/i', $agent)) {
-            $browser = new WbSearchBot($agent, []);
-        } elseif (preg_match('/(konqueror)/i', $agent)) {
-            $browser = new Konqueror($agent, []);
-        } elseif (preg_match('/(typo3\-linkvalidator)/i', $agent)) {
-            $browser = new Typo3Linkvalidator($agent, []);
-        } elseif (preg_match('/feeddlerrss/i', $agent)) {
-            $browser = new FeeddlerRssReader($agent, []);
-        } elseif (preg_match('/^mozilla\/5\.0 \((iphone|ipad|ipod).*CPU like Mac OS X.*\) AppleWebKit\/\d+/i', $agent)) {
-            $browser = new Safari($agent, []);
-        } elseif (preg_match('/(ios|iphone|ipad|ipod)/i', $agent)) {
-            $browser = new MobileSafariUiWebView($agent, []);
-        } elseif (preg_match('/paperlibot/i', $agent)) {
-            $browser = new PaperLiBot($agent, []);
-        } elseif (preg_match('/spbot/i', $agent)) {
-            $browser = new Seoprofiler($agent, []);
-        } elseif (preg_match('/dotbot/i', $agent)) {
-            $browser = new DotBot($agent, []);
-        } elseif (preg_match('/(google\-structureddatatestingtool|Google\-structured\-data\-testing\-tool)/i', $agent)) {
-            $browser = new GoogleStructuredDataTestingTool($agent, []);
-        } elseif (preg_match('/webmastercoffee/i', $agent)) {
-            $browser = new WebmasterCoffee($agent, []);
-        } elseif (preg_match('/ahrefs/i', $agent)) {
-            $browser = new AhrefsBot($agent, []);
-        } elseif (preg_match('/apercite/i', $agent)) {
-            $browser = new Apercite($agent, []);
-        } elseif (preg_match('/woobot/', $agent)) {
-            $browser = new WooRank($agent, []);
-        } elseif (preg_match('/Blekkobot/', $agent)) {
-            $browser = new BlekkoBot($agent, []);
-        } elseif (preg_match('/PagesInventory/', $agent)) {
-            $browser = new PagesInventoryBot($agent, []);
-        } elseif (preg_match('/Slackbot\-LinkExpanding/', $agent)) {
-            $browser = new SlackbotLinkExpanding($agent, []);
-        } elseif (preg_match('/Slackbot/', $agent)) {
-            $browser = new Slackbot($agent, []);
-        } elseif (preg_match('/SEOkicks\-Robot/', $agent)) {
-            $browser = new Seokicks($agent, []);
-        } elseif (preg_match('/Exabot/', $agent)) {
-            $browser = new Exabot($agent, []);
-        } elseif (preg_match('/DomainSCAN/', $agent)) {
-            $browser = new DomainScanServerMonitoring($agent, []);
-        } elseif (preg_match('/JobRoboter/', $agent)) {
-            $browser = new JobRoboter($agent, []);
-        } elseif (preg_match('/AcoonBot/', $agent)) {
-            $browser = new AcoonBot($agent, []);
-        } elseif (preg_match('/woriobot/', $agent)) {
-            $browser = new Woriobot($agent, []);
-        } elseif (preg_match('/MonoBot/', $agent)) {
-            $browser = new MonoBot($agent, []);
-        } elseif (preg_match('/DomainSigmaCrawler/', $agent)) {
-            $browser = new DomainSigmaCrawler($agent, []);
-        } elseif (preg_match('/bnf\.fr\_bot/', $agent)) {
-            $browser = new BnfFrBot($agent, []);
-        } elseif (preg_match('/CrawlRobot/', $agent)) {
-            $browser = new CrawlRobot($agent, []);
-        } elseif (preg_match('/AddThis\.com robot/', $agent)) {
-            $browser = new AddThisRobot($agent, []);
-        } elseif (preg_match('/(Yeti|naver\.com\/robots)/', $agent)) {
-            $browser = new NaverBot($agent, []);
-        } elseif (preg_match('/^robots$/', $agent)) {
-            $browser = new TestCrawler($agent, []);
-        } elseif (preg_match('/DeuSu/', $agent)) {
-            $browser = new WerbefreieDeutscheSuchmaschine($agent, []);
-        } elseif (preg_match('/obot/i', $agent)) {
-            $browser = new Obot($agent, []);
-        } elseif (preg_match('/ZumBot/', $agent)) {
-            $browser = new ZumBot($agent, []);
-        } elseif (preg_match('/(umbot)/i', $agent)) {
-            $browser = new UmBot($agent, []);
-        } elseif (preg_match('/(picmole)/i', $agent)) {
-            $browser = new PicmoleBot($agent, []);
-        } elseif (preg_match('/(zollard)/i', $agent)) {
-            $browser = new ZollardWorm($agent, []);
-        } elseif (preg_match('/(fhscan core)/i', $agent)) {
-            $browser = new FhscanCore($agent, []);
-        } elseif (preg_match('/nbot/i', $agent)) {
-            $browser = new Nbot($agent, []);
-        } elseif (preg_match('/(loadtimebot)/i', $agent)) {
-            $browser = new LoadTimeBot($agent, []);
-        } elseif (preg_match('/(scrubby)/i', $agent)) {
-            $browser = new Scrubby($agent, []);
-        } elseif (preg_match('/(squzer)/i', $agent)) {
-            $browser = new Squzer($agent, []);
-        } elseif (preg_match('/PiplBot/', $agent)) {
-            $browser = new PiplBot($agent, []);
-        } elseif (preg_match('/EveryoneSocialBot/', $agent)) {
-            $browser = new EveryoneSocialBot($agent, []);
-        } elseif (preg_match('/AOLbot/', $agent)) {
-            $browser = new AolBot($agent, []);
-        } elseif (preg_match('/GLBot/', $agent)) {
-            $browser = new GlBot($agent, []);
-        } elseif (preg_match('/(lbot)/i', $agent)) {
-            $browser = new Lbot($agent, []);
-        } elseif (preg_match('/(blexbot)/i', $agent)) {
-            $browser = new BlexBot($agent, []);
-        } elseif (preg_match('/(socialradarbot)/i', $agent)) {
-            $browser = new Socialradarbot($agent, []);
-        } elseif (preg_match('/(synapse)/i', $agent)) {
-            $browser = new ApacheSynapse($agent, []);
-        } elseif (preg_match('/(linkdexbot)/i', $agent)) {
-            $browser = new LinkdexBot($agent, []);
-        } elseif (preg_match('/(coccoc)/i', $agent)) {
-            $browser = new CocCocBot($agent, []);
-        } elseif (preg_match('/(siteexplorer)/i', $agent)) {
-            $browser = new SiteExplorer($agent, []);
-        } elseif (preg_match('/(semrushbot)/i', $agent)) {
-            $browser = new SemrushBot($agent, []);
-        } elseif (preg_match('/(istellabot)/i', $agent)) {
-            $browser = new IstellaBot($agent, []);
-        } elseif (preg_match('/(meanpathbot)/i', $agent)) {
-            $browser = new MeanpathBot($agent, []);
-        } elseif (preg_match('/(XML Sitemaps Generator)/', $agent)) {
-            $browser = new XmlSitemapsGenerator($agent, []);
-        } elseif (preg_match('/SeznamBot/', $agent)) {
-            $browser = new SeznamBot($agent, []);
-        } elseif (preg_match('/URLAppendBot/', $agent)) {
-            $browser = new UrlAppendBot($agent, []);
-        } elseif (preg_match('/NetSeer crawler/', $agent)) {
-            $browser = new NetseerCrawler($agent, []);
-        } elseif (preg_match('/SeznamBot/', $agent)) {
-            $browser = new SeznamBot($agent, []);
-        } elseif (preg_match('/Add Catalog/', $agent)) {
-            $browser = new AddCatalog($agent, []);
-        } elseif (preg_match('/Moreover/', $agent)) {
-            $browser = new Moreover($agent, []);
-        } elseif (preg_match('/LinkpadBot/', $agent)) {
-            $browser = new LinkpadBot($agent, []);
-        } elseif (preg_match('/Lipperhey SEO Service/', $agent)) {
-            $browser = new LipperheySeoService($agent, []);
-        } elseif (preg_match('/Blog Search/', $agent)) {
-            $browser = new BlogSearch($agent, []);
-        } elseif (preg_match('/Qualidator\.com Bot/', $agent)) {
-            $browser = new QualidatorBot($agent, []);
-        } elseif (preg_match('/fr\-crawler/', $agent)) {
-            $browser = new FrCrawler($agent, []);
-        } elseif (preg_match('/ca\-crawler/', $agent)) {
-            $browser = new CaCrawler($agent, []);
-        } elseif (preg_match('/Website Thumbnail Generator/', $agent)) {
-            $browser = new WebsiteThumbnailGenerator($agent, []);
-        } elseif (preg_match('/WebThumb/', $agent)) {
-            $browser = new WebThumb($agent, []);
-        } elseif (preg_match('/KomodiaBot/', $agent)) {
-            $browser = new KomodiaBot($agent, []);
-        } elseif (preg_match('/GroupHigh/', $agent)) {
-            $browser = new GroupHighBot($agent, []);
-        } elseif (preg_match('/theoldreader/', $agent)) {
-            $browser = new TheOldReader($agent, []);
-        } elseif (preg_match('/Google\-Site\-Verification/', $agent)) {
-            $browser = new GoogleSiteVerification($agent, []);
-        } elseif (preg_match('/Prlog/', $agent)) {
-            $browser = new Prlog($agent, []);
-        } elseif (preg_match('/CMS Crawler/', $agent)) {
-            $browser = new CmsCrawler($agent, []);
-        } elseif (preg_match('/pmoz\.info ODP link checker/', $agent)) {
-            $browser = new PmozinfoOdpLinkChecker($agent, []);
-        } elseif (preg_match('/Twingly Recon/', $agent)) {
-            $browser = new TwinglyRecon($agent, []);
-        } elseif (preg_match('/Embedly/', $agent)) {
-            $browser = new Embedly($agent, []);
-        } elseif (preg_match('/Alexabot/', $agent)) {
-            $browser = new Alexabot($agent, []);
-        } elseif (preg_match('/alexa site audit/', $agent)) {
-            $browser = new AlexaSiteAudit($agent, []);
-        } elseif (preg_match('/MJ12bot/', $agent)) {
-            $browser = new Mj12bot($agent, []);
-        } elseif (preg_match('/HTTrack/', $agent)) {
-            $browser = new Httrack($agent, []);
-        } elseif (preg_match('/UnisterBot/', $agent)) {
-            $browser = new Unisterbot($agent, []);
-        } elseif (preg_match('/CareerBot/', $agent)) {
-            $browser = new CareerBot($agent, []);
-        } elseif (preg_match('/80legs/i', $agent)) {
-            $browser = new Bot80Legs($agent, []);
-        } elseif (preg_match('/wada\.vn/i', $agent)) {
-            $browser = new WadavnSearchBot($agent, []);
-        } elseif (preg_match('/(NX|WiiU|Nintendo 3DS)/', $agent)) {
-            $browser = new NetFrontNx($agent, []);
-        } elseif (preg_match('/(netfront|playstation 4)/i', $agent)) {
-            $browser = new NetFront($agent, []);
-        } elseif (preg_match('/XoviBot/', $agent)) {
-            $browser = new XoviBot($agent, []);
-        } elseif (preg_match('/007ac9 Crawler/', $agent)) {
-            $browser = new Crawler007AC9($agent, []);
-        } elseif (preg_match('/200PleaseBot/', $agent)) {
-            $browser = new Please200Bot($agent, []);
-        } elseif (preg_match('/Abonti/', $agent)) {
-            $browser = new AbontiBot($agent, []);
-        } elseif (preg_match('/publiclibraryarchive/', $agent)) {
-            $browser = new PublicLibraryArchive($agent, []);
-        } elseif (preg_match('/PAD\-bot/', $agent)) {
-            $browser = new PadBot($agent, []);
-        } elseif (preg_match('/SoftListBot/', $agent)) {
-            $browser = new SoftListBot($agent, []);
-        } elseif (preg_match('/sReleaseBot/', $agent)) {
-            $browser = new SreleaseBot($agent, []);
-        } elseif (preg_match('/Vagabondo/', $agent)) {
-            $browser = new Vagabondo($agent, []);
-        } elseif (preg_match('/special\_archiver/', $agent)) {
-            $browser = new InternetArchiveSpecialArchiver($agent, []);
-        } elseif (preg_match('/Optimizer/', $agent)) {
-            $browser = new OptimizerBot($agent, []);
-        } elseif (preg_match('/Sophora Linkchecker/', $agent)) {
-            $browser = new SophoraLinkchecker($agent, []);
-        } elseif (preg_match('/SEOdiver/', $agent)) {
-            $browser = new SeoDiver($agent, []);
-        } elseif (preg_match('/itsscan/', $agent)) {
-            $browser = new ItsScan($agent, []);
-        } elseif (preg_match('/Google Desktop/', $agent)) {
-            $browser = new GoogleDesktop($agent, []);
-        } elseif (preg_match('/Lotus\-Notes/', $agent)) {
-            $browser = new LotusNotes($agent, []);
-        } elseif (preg_match('/AskPeterBot/', $agent)) {
-            $browser = new AskPeterBot($agent, []);
-        } elseif (preg_match('/discoverybot/', $agent)) {
-            $browser = new DiscoveryBot($agent, []);
-        } elseif (preg_match('/YandexBot/', $agent)) {
-            $browser = new YandexBot($agent, []);
-        } elseif (preg_match('/MOSBookmarks/', $agent) && preg_match('/Link Checker/', $agent)) {
-            $browser = new MosBookmarksLinkChecker($agent, []);
-        } elseif (preg_match('/MOSBookmarks/', $agent)) {
-            $browser = new MosBookmarks($agent, []);
-        } elseif (preg_match('/WebMasterAid/', $agent)) {
-            $browser = new WebMasterAid($agent, []);
-        } elseif (preg_match('/AboutUsBot Johnny5/', $agent)) {
-            $browser = new AboutUsBotJohnny5($agent, []);
-        } elseif (preg_match('/AboutUsBot/', $agent)) {
-            $browser = new AboutUsBot($agent, []);
-        } elseif (preg_match('/semantic\-visions\.com crawler/', $agent)) {
-            $browser = new SemanticVisionsCrawler($agent, []);
-        } elseif (preg_match('/waybackarchive\.org/', $agent)) {
-            $browser = new WaybackArchive($agent, []);
-        } elseif (preg_match('/OpenVAS/', $agent)) {
-            $browser = new OpenVulnerabilityAssessmentSystem($agent, []);
-        } elseif (preg_match('/MixrankBot/', $agent)) {
-            $browser = new MixrankBot($agent, []);
-        } elseif (preg_match('/InfegyAtlas/', $agent)) {
-            $browser = new InfegyAtlasBot($agent, []);
-        } elseif (preg_match('/MojeekBot/', $agent)) {
-            $browser = new MojeekBot($agent, []);
-        } elseif (preg_match('/memorybot/i', $agent)) {
-            $browser = new MemoryBot($agent, []);
-        } elseif (preg_match('/DomainAppender/', $agent)) {
-            $browser = new DomainAppenderBot($agent, []);
-        } elseif (preg_match('/GIDBot/', $agent)) {
-            $browser = new GidBot($agent, []);
-        } elseif (preg_match('/DBot/', $agent)) {
-            $browser = new Dbot($agent, []);
-        } elseif (preg_match('/PWBot/', $agent)) {
-            $browser = new PwBot($agent, []);
-        } elseif (preg_match('/\+5Bot/', $agent)) {
-            $browser = new Plus5Bot($agent, []);
-        } elseif (preg_match('/WASALive\-Bot/', $agent)) {
-            $browser = new WasaLiveBot($agent, []);
-        } elseif (preg_match('/OpenHoseBot/', $agent)) {
-            $browser = new OpenHoseBot($agent, []);
-        } elseif (preg_match('/URLfilterDB\-crawler/', $agent)) {
-            $browser = new UrlfilterDbCrawler($agent, []);
-        } elseif (preg_match('/metager2\-verification\-bot/', $agent)) {
-            $browser = new Metager2VerificationBot($agent, []);
-        } elseif (preg_match('/Powermarks/', $agent)) {
-            $browser = new Powermarks($agent, []);
-        } elseif (preg_match('/CloudFlare\-AlwaysOnline/', $agent)) {
-            $browser = new CloudFlareAlwaysOnline($agent, []);
-        } elseif (preg_match('/Phantom\.js bot/', $agent)) {
-            $browser = new PhantomJsBot($agent, []);
-        } elseif (preg_match('/Phantom/', $agent)) {
-            $browser = new PhantomBrowser($agent, []);
-        } elseif (preg_match('/Shrook/', $agent)) {
-            $browser = new Shrook($agent, []);
-        } elseif (preg_match('/netEstate NE Crawler/', $agent)) {
-            $browser = new NetEstateCrawler($agent, []);
-        } elseif (preg_match('/garlikcrawler/i', $agent)) {
-            $browser = new GarlikCrawler($agent, []);
-        } elseif (preg_match('/metageneratorcrawler/i', $agent)) {
-            $browser = new MetaGeneratorCrawler($agent, []);
-        } elseif (preg_match('/ScreenerBot/', $agent)) {
-            $browser = new ScreenerBot($agent, []);
-        } elseif (preg_match('/WebTarantula\.com Crawler/', $agent)) {
-            $browser = new WebTarantula($agent, []);
-        } elseif (preg_match('/BacklinkCrawler/', $agent)) {
-            $browser = new BacklinkCrawler($agent, []);
-        } elseif (preg_match('/LinksCrawler/', $agent)) {
-            $browser = new LinksCrawler($agent, []);
-        } elseif (preg_match('/(ssearch\_bot|sSearch Crawler)/', $agent)) {
-            $browser = new SsearchCrawler($agent, []);
-        } elseif (preg_match('/HRCrawler/', $agent)) {
-            $browser = new HrCrawler($agent, []);
-        } elseif (preg_match('/ICC\-Crawler/', $agent)) {
-            $browser = new IccCrawler($agent, []);
-        } elseif (preg_match('/Arachnida Web Crawler/', $agent)) {
-            $browser = new ArachnidaWebCrawler($agent, []);
-        } elseif (preg_match('/Finderlein Research Crawler/', $agent)) {
-            $browser = new FinderleinResearchCrawler($agent, []);
-        } elseif (preg_match('/TestCrawler/', $agent)) {
-            $browser = new TestCrawler($agent, []);
-        } elseif (preg_match('/Scopia Crawler/', $agent)) {
-            $browser = new ScopiaCrawler($agent, []);
-        } elseif (preg_match('/Crawler/', $agent)) {
-            $browser = new Crawler($agent, []);
-        } elseif (preg_match('/MetaJobBot/', $agent)) {
-            $browser = new MetaJobBot($agent, []);
-        } elseif (preg_match('/jig browser web/', $agent)) {
-            $browser = new JigBrowserWeb($agent, []);
-        } elseif (preg_match('/T\-H\-U\-N\-D\-E\-R\-S\-T\-O\-N\-E/', $agent)) {
-            $browser = new TexisWebscript($agent, []);
-        } elseif (preg_match('/focuseekbot/', $agent)) {
-            $browser = new Focuseekbot($agent, []);
-        } elseif (preg_match('/vBSEO/', $agent)) {
-            $browser = new VbulletinSeoBot($agent, []);
-        } elseif (preg_match('/kgbody/', $agent)) {
-            $browser = new Kgbody($agent, []);
-        } elseif (preg_match('/JobdiggerSpider/', $agent)) {
-            $browser = new JobdiggerSpider($agent, []);
-        } elseif (preg_match('/imrbot/', $agent)) {
-            $browser = new MignifyBot($agent, []);
-        } elseif (preg_match('/kulturarw3/', $agent)) {
-            $browser = new Kulturarw3($agent, []);
-        } elseif (preg_match('/LucidWorks/', $agent)) {
-            $browser = new LucidworksBot($agent, []);
-        } elseif (preg_match('/MerchantCentricBot/', $agent)) {
-            $browser = new MerchantCentricBot($agent, []);
-        } elseif (preg_match('/Nett\.io bot/', $agent)) {
-            $browser = new NettioBot($agent, []);
-        } elseif (preg_match('/SemanticBot/', $agent)) {
-            $browser = new SemanticBot($agent, []);
-        } elseif (preg_match('/tweetedtimes/i', $agent)) {
-            $browser = new TweetedTimesBot($agent, []);
-        } elseif (preg_match('/vkShare/', $agent)) {
-            $browser = new VkShare($agent, []);
-        } elseif (preg_match('/Yahoo Ad monitoring/', $agent)) {
-            $browser = new YahooAdMonitoring($agent, []);
-        } elseif (preg_match('/YioopBot/', $agent)) {
-            $browser = new YioopBot($agent, []);
-        } elseif (preg_match('/zitebot/', $agent)) {
-            $browser = new Zitebot($agent, []);
-        } elseif (preg_match('/Espial/', $agent)) {
-            $browser = new EspialTvBrowser($agent, []);
-        } elseif (preg_match('/SiteCon/', $agent)) {
-            $browser = new SiteCon($agent, []);
-        } elseif (preg_match('/iBooks Author/', $agent)) {
-            $browser = new IbooksAuthor($agent, []);
-        } elseif (preg_match('/iWeb/', $agent)) {
-            $browser = new Iweb($agent, []);
-        } elseif (preg_match('/NewsFire/', $agent)) {
-            $browser = new NewsFire($agent, []);
-        } elseif (preg_match('/RMSnapKit/', $agent)) {
-            $browser = new RmSnapKit($agent, []);
-        } elseif (preg_match('/Sandvox/', $agent)) {
-            $browser = new Sandvox($agent, []);
-        } elseif (preg_match('/TubeTV/', $agent)) {
-            $browser = new TubeTv($agent, []);
-        } elseif (preg_match('/Elluminate Live/', $agent)) {
-            $browser = new ElluminateLive($agent, []);
-        } elseif (preg_match('/Element Browser/', $agent)) {
-            $browser = new ElementBrowser($agent, []);
-        } elseif (preg_match('/K\-Meleon/', $agent)) {
-            $browser = new Kmeleon($agent, []);
-        } elseif (preg_match('/Esribot/', $agent)) {
-            $browser = new Esribot($agent, []);
-        } elseif (preg_match('/QuickLook/', $agent)) {
-            $browser = new QuickLook($agent, []);
-        } elseif (preg_match('/dillo/i', $agent)) {
-            $browser = new Dillo($agent, []);
-        } elseif (preg_match('/Digg/', $agent)) {
-            $browser = new DiggBot($agent, []);
-        } elseif (preg_match('/Zetakey/', $agent)) {
-            $browser = new ZetakeyBrowser($agent, []);
-        } elseif (preg_match('/getprismatic\.com/', $agent)) {
-            $browser = new PrismaticApp($agent, []);
-        } elseif (preg_match('/(FOMA|SH05C)/', $agent)) {
-            $browser = new Sharp($agent, []);
-        } elseif (preg_match('/OpenWebKitSharp/', $agent)) {
-            $browser = new OpenWebkitSharp($agent, []);
-        } elseif (preg_match('/AjaxSnapBot/', $agent)) {
-            $browser = new AjaxSnapBot($agent, []);
-        } elseif (preg_match('/Owler/', $agent)) {
-            $browser = new OwlerBot($agent, []);
-        } elseif (preg_match('/Yahoo Link Preview/', $agent)) {
-            $browser = new YahooLinkPreview($agent, []);
-        } elseif (preg_match('/pub\-crawler/', $agent)) {
-            $browser = new PubCrawler($agent, []);
-        } elseif (preg_match('/Kraken/', $agent)) {
-            $browser = new Kraken($agent, []);
-        } elseif (preg_match('/Qwantify/', $agent)) {
-            $browser = new Qwantify($agent, []);
-        } elseif (preg_match('/SetLinks bot/', $agent)) {
-            $browser = new SetLinksCrawler($agent, []);
-        } elseif (preg_match('/MegaIndex\.ru/', $agent)) {
-            $browser = new MegaIndexBot($agent, []);
-        } elseif (preg_match('/Cliqzbot/', $agent)) {
-            $browser = new Cliqzbot($agent, []);
-        } elseif (preg_match('/DAWINCI ANTIPLAG SPIDER/', $agent)) {
-            $browser = new DawinciAntiplagSpider($agent, []);
-        } elseif (preg_match('/AdvBot/', $agent)) {
-            $browser = new AdvBot($agent, []);
-        } elseif (preg_match('/DuckDuckGo\-Favicons\-Bot/', $agent)) {
-            $browser = new DuckDuckFaviconsBot($agent, []);
-        } elseif (preg_match('/ZyBorg/', $agent)) {
-            $browser = new WiseNutSearchEngineCrawler($agent, []);
-        } elseif (preg_match('/HyperCrawl/', $agent)) {
-            $browser = new HyperCrawl($agent, []);
-        } elseif (preg_match('/ARCHIVE\.ORG\.UA crawler/', $agent)) {
-            $browser = new ArchiveOrgBot($agent, []);
-        } elseif (preg_match('/worldwebheritage/', $agent)) {
-            $browser = new WorldwebheritageBot($agent, []);
-        } elseif (preg_match('/BegunAdvertising/', $agent)) {
-            $browser = new BegunAdvertisingBot($agent, []);
-        } elseif (preg_match('/TrendWinHttp/', $agent)) {
-            $browser = new TrendWinHttp($agent, []);
-        } elseif (preg_match('/(winhttp|winhttprequest)/i', $agent)) {
-            $browser = new WinHttpRequest($agent, []);
-        } elseif (preg_match('/SkypeUriPreview/', $agent)) {
-            $browser = new SkypeUriPreview($agent, []);
-        } elseif (preg_match('/ScoutJet/', $agent)) {
-            $browser = new Scoutjet($agent, []);
-        } elseif (preg_match('/Lipperhey\-Kaus\-Australis/', $agent)) {
-            $browser = new LipperheyKausAustralis($agent, []);
-        } elseif (preg_match('/Digincore bot/', $agent)) {
-            $browser = new DigincoreBot($agent, []);
-        } elseif (preg_match('/Steeler/', $agent)) {
-            $browser = new Steeler($agent, []);
-        } elseif (preg_match('/Orangebot/', $agent)) {
-            $browser = new Orangebot($agent, []);
-        } elseif (preg_match('/Jasmine/', $agent)) {
-            $browser = new Jasmine($agent, []);
-        } elseif (preg_match('/electricmonk/', $agent)) {
-            $browser = new DueDilCrawler($agent, []);
-        } elseif (preg_match('/yoozBot/', $agent)) {
-            $browser = new YoozBot($agent, []);
-        } elseif (preg_match('/online\-webceo\-bot/', $agent)) {
-            $browser = new WebceoBot($agent, []);
-        } elseif (preg_match('/^Mozilla\/5\.0 \(.*\) Gecko\/.*\/\d+/', $agent)
-            && !preg_match('/Netscape/', $agent)
+            $browser = new Firefox($useragent, []);
+        } elseif (preg_match('/(firefox|minefield|shiretoko|bonecho|namoroka)/i', $useragent)) {
+            $browser = new Firefox($useragent, []);
+        } elseif (preg_match('/gvfs/', $useragent)) {
+            $browser = new Gvfs($useragent, []);
+        } elseif (preg_match('/luakit/', $useragent)) {
+            $browser = new Luakit($useragent, []);
+        } elseif (preg_match('/playstation 3/i', $useragent)) {
+            $browser = new NetFront($useragent, []);
+        } elseif (preg_match('/sistrix/i', $useragent)) {
+            $browser = new Sistrix($useragent, []);
+        } elseif (preg_match('/ezooms/i', $useragent)) {
+            $browser = new Ezooms($useragent, []);
+        } elseif (preg_match('/grapefx/i', $useragent)) {
+            $browser = new GrapeFx($useragent, []);
+        } elseif (preg_match('/grapeshotcrawler/i', $useragent)) {
+            $browser = new GrapeshotCrawler($useragent, []);
+        } elseif (preg_match('/(mail\.ru)/i', $useragent)) {
+            $browser = new MailRu($useragent, []);
+        } elseif (preg_match('/(proximic)/i', $useragent)) {
+            $browser = new Proximic($useragent, []);
+        } elseif (preg_match('/(polaris)/i', $useragent)) {
+            $browser = new Polaris($useragent, []);
+        } elseif (preg_match('/(another web mining tool|awmt)/i', $useragent)) {
+            $browser = new AnotherWebMiningTool($useragent, []);
+        } elseif (preg_match('/(wbsearchbot|wbsrch)/i', $useragent)) {
+            $browser = new WbSearchBot($useragent, []);
+        } elseif (preg_match('/(konqueror)/i', $useragent)) {
+            $browser = new Konqueror($useragent, []);
+        } elseif (preg_match('/(typo3\-linkvalidator)/i', $useragent)) {
+            $browser = new Typo3Linkvalidator($useragent, []);
+        } elseif (preg_match('/feeddlerrss/i', $useragent)) {
+            $browser = new FeeddlerRssReader($useragent, []);
+        } elseif (preg_match('/^mozilla\/5\.0 \((iphone|ipad|ipod).*CPU like Mac OS X.*\) AppleWebKit\/\d+/i', $useragent)) {
+            $browser = new Safari($useragent, []);
+        } elseif (preg_match('/(ios|iphone|ipad|ipod)/i', $useragent)) {
+            $browser = new MobileSafariUiWebView($useragent, []);
+        } elseif (preg_match('/paperlibot/i', $useragent)) {
+            $browser = new PaperLiBot($useragent, []);
+        } elseif (preg_match('/spbot/i', $useragent)) {
+            $browser = new Seoprofiler($useragent, []);
+        } elseif (preg_match('/dotbot/i', $useragent)) {
+            $browser = new DotBot($useragent, []);
+        } elseif (preg_match('/(google\-structureddatatestingtool|Google\-structured\-data\-testing\-tool)/i', $useragent)) {
+            $browser = new GoogleStructuredDataTestingTool($useragent, []);
+        } elseif (preg_match('/webmastercoffee/i', $useragent)) {
+            $browser = new WebmasterCoffee($useragent, []);
+        } elseif (preg_match('/ahrefs/i', $useragent)) {
+            $browser = new AhrefsBot($useragent, []);
+        } elseif (preg_match('/apercite/i', $useragent)) {
+            $browser = new Apercite($useragent, []);
+        } elseif (preg_match('/woobot/', $useragent)) {
+            $browser = new WooRank($useragent, []);
+        } elseif (preg_match('/Blekkobot/', $useragent)) {
+            $browser = new BlekkoBot($useragent, []);
+        } elseif (preg_match('/PagesInventory/', $useragent)) {
+            $browser = new PagesInventoryBot($useragent, []);
+        } elseif (preg_match('/Slackbot\-LinkExpanding/', $useragent)) {
+            $browser = new SlackbotLinkExpanding($useragent, []);
+        } elseif (preg_match('/Slackbot/', $useragent)) {
+            $browser = new Slackbot($useragent, []);
+        } elseif (preg_match('/SEOkicks\-Robot/', $useragent)) {
+            $browser = new Seokicks($useragent, []);
+        } elseif (preg_match('/Exabot/', $useragent)) {
+            $browser = new Exabot($useragent, []);
+        } elseif (preg_match('/DomainSCAN/', $useragent)) {
+            $browser = new DomainScanServerMonitoring($useragent, []);
+        } elseif (preg_match('/JobRoboter/', $useragent)) {
+            $browser = new JobRoboter($useragent, []);
+        } elseif (preg_match('/AcoonBot/', $useragent)) {
+            $browser = new AcoonBot($useragent, []);
+        } elseif (preg_match('/woriobot/', $useragent)) {
+            $browser = new Woriobot($useragent, []);
+        } elseif (preg_match('/MonoBot/', $useragent)) {
+            $browser = new MonoBot($useragent, []);
+        } elseif (preg_match('/DomainSigmaCrawler/', $useragent)) {
+            $browser = new DomainSigmaCrawler($useragent, []);
+        } elseif (preg_match('/bnf\.fr\_bot/', $useragent)) {
+            $browser = new BnfFrBot($useragent, []);
+        } elseif (preg_match('/CrawlRobot/', $useragent)) {
+            $browser = new CrawlRobot($useragent, []);
+        } elseif (preg_match('/AddThis\.com robot/', $useragent)) {
+            $browser = new AddThisRobot($useragent, []);
+        } elseif (preg_match('/(Yeti|naver\.com\/robots)/', $useragent)) {
+            $browser = new NaverBot($useragent, []);
+        } elseif (preg_match('/^robots$/', $useragent)) {
+            $browser = new TestCrawler($useragent, []);
+        } elseif (preg_match('/DeuSu/', $useragent)) {
+            $browser = new WerbefreieDeutscheSuchmaschine($useragent, []);
+        } elseif (preg_match('/obot/i', $useragent)) {
+            $browser = new Obot($useragent, []);
+        } elseif (preg_match('/ZumBot/', $useragent)) {
+            $browser = new ZumBot($useragent, []);
+        } elseif (preg_match('/(umbot)/i', $useragent)) {
+            $browser = new UmBot($useragent, []);
+        } elseif (preg_match('/(picmole)/i', $useragent)) {
+            $browser = new PicmoleBot($useragent, []);
+        } elseif (preg_match('/(zollard)/i', $useragent)) {
+            $browser = new ZollardWorm($useragent, []);
+        } elseif (preg_match('/(fhscan core)/i', $useragent)) {
+            $browser = new FhscanCore($useragent, []);
+        } elseif (preg_match('/nbot/i', $useragent)) {
+            $browser = new Nbot($useragent, []);
+        } elseif (preg_match('/(loadtimebot)/i', $useragent)) {
+            $browser = new LoadTimeBot($useragent, []);
+        } elseif (preg_match('/(scrubby)/i', $useragent)) {
+            $browser = new Scrubby($useragent, []);
+        } elseif (preg_match('/(squzer)/i', $useragent)) {
+            $browser = new Squzer($useragent, []);
+        } elseif (preg_match('/PiplBot/', $useragent)) {
+            $browser = new PiplBot($useragent, []);
+        } elseif (preg_match('/EveryoneSocialBot/', $useragent)) {
+            $browser = new EveryoneSocialBot($useragent, []);
+        } elseif (preg_match('/AOLbot/', $useragent)) {
+            $browser = new AolBot($useragent, []);
+        } elseif (preg_match('/GLBot/', $useragent)) {
+            $browser = new GlBot($useragent, []);
+        } elseif (preg_match('/(lbot)/i', $useragent)) {
+            $browser = new Lbot($useragent, []);
+        } elseif (preg_match('/(blexbot)/i', $useragent)) {
+            $browser = new BlexBot($useragent, []);
+        } elseif (preg_match('/(socialradarbot)/i', $useragent)) {
+            $browser = new Socialradarbot($useragent, []);
+        } elseif (preg_match('/(synapse)/i', $useragent)) {
+            $browser = new ApacheSynapse($useragent, []);
+        } elseif (preg_match('/(linkdexbot)/i', $useragent)) {
+            $browser = new LinkdexBot($useragent, []);
+        } elseif (preg_match('/(coccoc)/i', $useragent)) {
+            $browser = new CocCocBot($useragent, []);
+        } elseif (preg_match('/(siteexplorer)/i', $useragent)) {
+            $browser = new SiteExplorer($useragent, []);
+        } elseif (preg_match('/(semrushbot)/i', $useragent)) {
+            $browser = new SemrushBot($useragent, []);
+        } elseif (preg_match('/(istellabot)/i', $useragent)) {
+            $browser = new IstellaBot($useragent, []);
+        } elseif (preg_match('/(meanpathbot)/i', $useragent)) {
+            $browser = new MeanpathBot($useragent, []);
+        } elseif (preg_match('/(XML Sitemaps Generator)/', $useragent)) {
+            $browser = new XmlSitemapsGenerator($useragent, []);
+        } elseif (preg_match('/SeznamBot/', $useragent)) {
+            $browser = new SeznamBot($useragent, []);
+        } elseif (preg_match('/URLAppendBot/', $useragent)) {
+            $browser = new UrlAppendBot($useragent, []);
+        } elseif (preg_match('/NetSeer crawler/', $useragent)) {
+            $browser = new NetseerCrawler($useragent, []);
+        } elseif (preg_match('/SeznamBot/', $useragent)) {
+            $browser = new SeznamBot($useragent, []);
+        } elseif (preg_match('/Add Catalog/', $useragent)) {
+            $browser = new AddCatalog($useragent, []);
+        } elseif (preg_match('/Moreover/', $useragent)) {
+            $browser = new Moreover($useragent, []);
+        } elseif (preg_match('/LinkpadBot/', $useragent)) {
+            $browser = new LinkpadBot($useragent, []);
+        } elseif (preg_match('/Lipperhey SEO Service/', $useragent)) {
+            $browser = new LipperheySeoService($useragent, []);
+        } elseif (preg_match('/Blog Search/', $useragent)) {
+            $browser = new BlogSearch($useragent, []);
+        } elseif (preg_match('/Qualidator\.com Bot/', $useragent)) {
+            $browser = new QualidatorBot($useragent, []);
+        } elseif (preg_match('/fr\-crawler/', $useragent)) {
+            $browser = new FrCrawler($useragent, []);
+        } elseif (preg_match('/ca\-crawler/', $useragent)) {
+            $browser = new CaCrawler($useragent, []);
+        } elseif (preg_match('/Website Thumbnail Generator/', $useragent)) {
+            $browser = new WebsiteThumbnailGenerator($useragent, []);
+        } elseif (preg_match('/WebThumb/', $useragent)) {
+            $browser = new WebThumb($useragent, []);
+        } elseif (preg_match('/KomodiaBot/', $useragent)) {
+            $browser = new KomodiaBot($useragent, []);
+        } elseif (preg_match('/GroupHigh/', $useragent)) {
+            $browser = new GroupHighBot($useragent, []);
+        } elseif (preg_match('/theoldreader/', $useragent)) {
+            $browser = new TheOldReader($useragent, []);
+        } elseif (preg_match('/Google\-Site\-Verification/', $useragent)) {
+            $browser = new GoogleSiteVerification($useragent, []);
+        } elseif (preg_match('/Prlog/', $useragent)) {
+            $browser = new Prlog($useragent, []);
+        } elseif (preg_match('/CMS Crawler/', $useragent)) {
+            $browser = new CmsCrawler($useragent, []);
+        } elseif (preg_match('/pmoz\.info ODP link checker/', $useragent)) {
+            $browser = new PmozinfoOdpLinkChecker($useragent, []);
+        } elseif (preg_match('/Twingly Recon/', $useragent)) {
+            $browser = new TwinglyRecon($useragent, []);
+        } elseif (preg_match('/Embedly/', $useragent)) {
+            $browser = new Embedly($useragent, []);
+        } elseif (preg_match('/Alexabot/', $useragent)) {
+            $browser = new Alexabot($useragent, []);
+        } elseif (preg_match('/alexa site audit/', $useragent)) {
+            $browser = new AlexaSiteAudit($useragent, []);
+        } elseif (preg_match('/MJ12bot/', $useragent)) {
+            $browser = new Mj12bot($useragent, []);
+        } elseif (preg_match('/HTTrack/', $useragent)) {
+            $browser = new Httrack($useragent, []);
+        } elseif (preg_match('/UnisterBot/', $useragent)) {
+            $browser = new Unisterbot($useragent, []);
+        } elseif (preg_match('/CareerBot/', $useragent)) {
+            $browser = new CareerBot($useragent, []);
+        } elseif (preg_match('/80legs/i', $useragent)) {
+            $browser = new Bot80Legs($useragent, []);
+        } elseif (preg_match('/wada\.vn/i', $useragent)) {
+            $browser = new WadavnSearchBot($useragent, []);
+        } elseif (preg_match('/(NX|WiiU|Nintendo 3DS)/', $useragent)) {
+            $browser = new NetFrontNx($useragent, []);
+        } elseif (preg_match('/(netfront|playstation 4)/i', $useragent)) {
+            $browser = new NetFront($useragent, []);
+        } elseif (preg_match('/XoviBot/', $useragent)) {
+            $browser = new XoviBot($useragent, []);
+        } elseif (preg_match('/007ac9 Crawler/', $useragent)) {
+            $browser = new Crawler007AC9($useragent, []);
+        } elseif (preg_match('/200PleaseBot/', $useragent)) {
+            $browser = new Please200Bot($useragent, []);
+        } elseif (preg_match('/Abonti/', $useragent)) {
+            $browser = new AbontiBot($useragent, []);
+        } elseif (preg_match('/publiclibraryarchive/', $useragent)) {
+            $browser = new PublicLibraryArchive($useragent, []);
+        } elseif (preg_match('/PAD\-bot/', $useragent)) {
+            $browser = new PadBot($useragent, []);
+        } elseif (preg_match('/SoftListBot/', $useragent)) {
+            $browser = new SoftListBot($useragent, []);
+        } elseif (preg_match('/sReleaseBot/', $useragent)) {
+            $browser = new SreleaseBot($useragent, []);
+        } elseif (preg_match('/Vagabondo/', $useragent)) {
+            $browser = new Vagabondo($useragent, []);
+        } elseif (preg_match('/special\_archiver/', $useragent)) {
+            $browser = new InternetArchiveSpecialArchiver($useragent, []);
+        } elseif (preg_match('/Optimizer/', $useragent)) {
+            $browser = new OptimizerBot($useragent, []);
+        } elseif (preg_match('/Sophora Linkchecker/', $useragent)) {
+            $browser = new SophoraLinkchecker($useragent, []);
+        } elseif (preg_match('/SEOdiver/', $useragent)) {
+            $browser = new SeoDiver($useragent, []);
+        } elseif (preg_match('/itsscan/', $useragent)) {
+            $browser = new ItsScan($useragent, []);
+        } elseif (preg_match('/Google Desktop/', $useragent)) {
+            $browser = new GoogleDesktop($useragent, []);
+        } elseif (preg_match('/Lotus\-Notes/', $useragent)) {
+            $browser = new LotusNotes($useragent, []);
+        } elseif (preg_match('/AskPeterBot/', $useragent)) {
+            $browser = new AskPeterBot($useragent, []);
+        } elseif (preg_match('/discoverybot/', $useragent)) {
+            $browser = new DiscoveryBot($useragent, []);
+        } elseif (preg_match('/YandexBot/', $useragent)) {
+            $browser = new YandexBot($useragent, []);
+        } elseif (preg_match('/MOSBookmarks/', $useragent) && preg_match('/Link Checker/', $useragent)) {
+            $browser = new MosBookmarksLinkChecker($useragent, []);
+        } elseif (preg_match('/MOSBookmarks/', $useragent)) {
+            $browser = new MosBookmarks($useragent, []);
+        } elseif (preg_match('/WebMasterAid/', $useragent)) {
+            $browser = new WebMasterAid($useragent, []);
+        } elseif (preg_match('/AboutUsBot Johnny5/', $useragent)) {
+            $browser = new AboutUsBotJohnny5($useragent, []);
+        } elseif (preg_match('/AboutUsBot/', $useragent)) {
+            $browser = new AboutUsBot($useragent, []);
+        } elseif (preg_match('/semantic\-visions\.com crawler/', $useragent)) {
+            $browser = new SemanticVisionsCrawler($useragent, []);
+        } elseif (preg_match('/waybackarchive\.org/', $useragent)) {
+            $browser = new WaybackArchive($useragent, []);
+        } elseif (preg_match('/OpenVAS/', $useragent)) {
+            $browser = new OpenVulnerabilityAssessmentSystem($useragent, []);
+        } elseif (preg_match('/MixrankBot/', $useragent)) {
+            $browser = new MixrankBot($useragent, []);
+        } elseif (preg_match('/InfegyAtlas/', $useragent)) {
+            $browser = new InfegyAtlasBot($useragent, []);
+        } elseif (preg_match('/MojeekBot/', $useragent)) {
+            $browser = new MojeekBot($useragent, []);
+        } elseif (preg_match('/memorybot/i', $useragent)) {
+            $browser = new MemoryBot($useragent, []);
+        } elseif (preg_match('/DomainAppender/', $useragent)) {
+            $browser = new DomainAppenderBot($useragent, []);
+        } elseif (preg_match('/GIDBot/', $useragent)) {
+            $browser = new GidBot($useragent, []);
+        } elseif (preg_match('/DBot/', $useragent)) {
+            $browser = new Dbot($useragent, []);
+        } elseif (preg_match('/PWBot/', $useragent)) {
+            $browser = new PwBot($useragent, []);
+        } elseif (preg_match('/\+5Bot/', $useragent)) {
+            $browser = new Plus5Bot($useragent, []);
+        } elseif (preg_match('/WASALive\-Bot/', $useragent)) {
+            $browser = new WasaLiveBot($useragent, []);
+        } elseif (preg_match('/OpenHoseBot/', $useragent)) {
+            $browser = new OpenHoseBot($useragent, []);
+        } elseif (preg_match('/URLfilterDB\-crawler/', $useragent)) {
+            $browser = new UrlfilterDbCrawler($useragent, []);
+        } elseif (preg_match('/metager2\-verification\-bot/', $useragent)) {
+            $browser = new Metager2VerificationBot($useragent, []);
+        } elseif (preg_match('/Powermarks/', $useragent)) {
+            $browser = new Powermarks($useragent, []);
+        } elseif (preg_match('/CloudFlare\-AlwaysOnline/', $useragent)) {
+            $browser = new CloudFlareAlwaysOnline($useragent, []);
+        } elseif (preg_match('/Phantom\.js bot/', $useragent)) {
+            $browser = new PhantomJsBot($useragent, []);
+        } elseif (preg_match('/Phantom/', $useragent)) {
+            $browser = new PhantomBrowser($useragent, []);
+        } elseif (preg_match('/Shrook/', $useragent)) {
+            $browser = new Shrook($useragent, []);
+        } elseif (preg_match('/netEstate NE Crawler/', $useragent)) {
+            $browser = new NetEstateCrawler($useragent, []);
+        } elseif (preg_match('/garlikcrawler/i', $useragent)) {
+            $browser = new GarlikCrawler($useragent, []);
+        } elseif (preg_match('/metageneratorcrawler/i', $useragent)) {
+            $browser = new MetaGeneratorCrawler($useragent, []);
+        } elseif (preg_match('/ScreenerBot/', $useragent)) {
+            $browser = new ScreenerBot($useragent, []);
+        } elseif (preg_match('/WebTarantula\.com Crawler/', $useragent)) {
+            $browser = new WebTarantula($useragent, []);
+        } elseif (preg_match('/BacklinkCrawler/', $useragent)) {
+            $browser = new BacklinkCrawler($useragent, []);
+        } elseif (preg_match('/LinksCrawler/', $useragent)) {
+            $browser = new LinksCrawler($useragent, []);
+        } elseif (preg_match('/(ssearch\_bot|sSearch Crawler)/', $useragent)) {
+            $browser = new SsearchCrawler($useragent, []);
+        } elseif (preg_match('/HRCrawler/', $useragent)) {
+            $browser = new HrCrawler($useragent, []);
+        } elseif (preg_match('/ICC\-Crawler/', $useragent)) {
+            $browser = new IccCrawler($useragent, []);
+        } elseif (preg_match('/Arachnida Web Crawler/', $useragent)) {
+            $browser = new ArachnidaWebCrawler($useragent, []);
+        } elseif (preg_match('/Finderlein Research Crawler/', $useragent)) {
+            $browser = new FinderleinResearchCrawler($useragent, []);
+        } elseif (preg_match('/TestCrawler/', $useragent)) {
+            $browser = new TestCrawler($useragent, []);
+        } elseif (preg_match('/Scopia Crawler/', $useragent)) {
+            $browser = new ScopiaCrawler($useragent, []);
+        } elseif (preg_match('/Crawler/', $useragent)) {
+            $browser = new Crawler($useragent, []);
+        } elseif (preg_match('/MetaJobBot/', $useragent)) {
+            $browser = new MetaJobBot($useragent, []);
+        } elseif (preg_match('/jig browser web/', $useragent)) {
+            $browser = new JigBrowserWeb($useragent, []);
+        } elseif (preg_match('/T\-H\-U\-N\-D\-E\-R\-S\-T\-O\-N\-E/', $useragent)) {
+            $browser = new TexisWebscript($useragent, []);
+        } elseif (preg_match('/focuseekbot/', $useragent)) {
+            $browser = new Focuseekbot($useragent, []);
+        } elseif (preg_match('/vBSEO/', $useragent)) {
+            $browser = new VbulletinSeoBot($useragent, []);
+        } elseif (preg_match('/kgbody/', $useragent)) {
+            $browser = new Kgbody($useragent, []);
+        } elseif (preg_match('/JobdiggerSpider/', $useragent)) {
+            $browser = new JobdiggerSpider($useragent, []);
+        } elseif (preg_match('/imrbot/', $useragent)) {
+            $browser = new MignifyBot($useragent, []);
+        } elseif (preg_match('/kulturarw3/', $useragent)) {
+            $browser = new Kulturarw3($useragent, []);
+        } elseif (preg_match('/LucidWorks/', $useragent)) {
+            $browser = new LucidworksBot($useragent, []);
+        } elseif (preg_match('/MerchantCentricBot/', $useragent)) {
+            $browser = new MerchantCentricBot($useragent, []);
+        } elseif (preg_match('/Nett\.io bot/', $useragent)) {
+            $browser = new NettioBot($useragent, []);
+        } elseif (preg_match('/SemanticBot/', $useragent)) {
+            $browser = new SemanticBot($useragent, []);
+        } elseif (preg_match('/tweetedtimes/i', $useragent)) {
+            $browser = new TweetedTimesBot($useragent, []);
+        } elseif (preg_match('/vkShare/', $useragent)) {
+            $browser = new VkShare($useragent, []);
+        } elseif (preg_match('/Yahoo Ad monitoring/', $useragent)) {
+            $browser = new YahooAdMonitoring($useragent, []);
+        } elseif (preg_match('/YioopBot/', $useragent)) {
+            $browser = new YioopBot($useragent, []);
+        } elseif (preg_match('/zitebot/', $useragent)) {
+            $browser = new Zitebot($useragent, []);
+        } elseif (preg_match('/Espial/', $useragent)) {
+            $browser = new EspialTvBrowser($useragent, []);
+        } elseif (preg_match('/SiteCon/', $useragent)) {
+            $browser = new SiteCon($useragent, []);
+        } elseif (preg_match('/iBooks Author/', $useragent)) {
+            $browser = new IbooksAuthor($useragent, []);
+        } elseif (preg_match('/iWeb/', $useragent)) {
+            $browser = new Iweb($useragent, []);
+        } elseif (preg_match('/NewsFire/', $useragent)) {
+            $browser = new NewsFire($useragent, []);
+        } elseif (preg_match('/RMSnapKit/', $useragent)) {
+            $browser = new RmSnapKit($useragent, []);
+        } elseif (preg_match('/Sandvox/', $useragent)) {
+            $browser = new Sandvox($useragent, []);
+        } elseif (preg_match('/TubeTV/', $useragent)) {
+            $browser = new TubeTv($useragent, []);
+        } elseif (preg_match('/Elluminate Live/', $useragent)) {
+            $browser = new ElluminateLive($useragent, []);
+        } elseif (preg_match('/Element Browser/', $useragent)) {
+            $browser = new ElementBrowser($useragent, []);
+        } elseif (preg_match('/K\-Meleon/', $useragent)) {
+            $browser = new Kmeleon($useragent, []);
+        } elseif (preg_match('/Esribot/', $useragent)) {
+            $browser = new Esribot($useragent, []);
+        } elseif (preg_match('/QuickLook/', $useragent)) {
+            $browser = new QuickLook($useragent, []);
+        } elseif (preg_match('/dillo/i', $useragent)) {
+            $browser = new Dillo($useragent, []);
+        } elseif (preg_match('/Digg/', $useragent)) {
+            $browser = new DiggBot($useragent, []);
+        } elseif (preg_match('/Zetakey/', $useragent)) {
+            $browser = new ZetakeyBrowser($useragent, []);
+        } elseif (preg_match('/getprismatic\.com/', $useragent)) {
+            $browser = new PrismaticApp($useragent, []);
+        } elseif (preg_match('/(FOMA|SH05C)/', $useragent)) {
+            $browser = new Sharp($useragent, []);
+        } elseif (preg_match('/OpenWebKitSharp/', $useragent)) {
+            $browser = new OpenWebkitSharp($useragent, []);
+        } elseif (preg_match('/AjaxSnapBot/', $useragent)) {
+            $browser = new AjaxSnapBot($useragent, []);
+        } elseif (preg_match('/Owler/', $useragent)) {
+            $browser = new OwlerBot($useragent, []);
+        } elseif (preg_match('/Yahoo Link Preview/', $useragent)) {
+            $browser = new YahooLinkPreview($useragent, []);
+        } elseif (preg_match('/pub\-crawler/', $useragent)) {
+            $browser = new PubCrawler($useragent, []);
+        } elseif (preg_match('/Kraken/', $useragent)) {
+            $browser = new Kraken($useragent, []);
+        } elseif (preg_match('/Qwantify/', $useragent)) {
+            $browser = new Qwantify($useragent, []);
+        } elseif (preg_match('/SetLinks bot/', $useragent)) {
+            $browser = new SetLinksCrawler($useragent, []);
+        } elseif (preg_match('/MegaIndex\.ru/', $useragent)) {
+            $browser = new MegaIndexBot($useragent, []);
+        } elseif (preg_match('/Cliqzbot/', $useragent)) {
+            $browser = new Cliqzbot($useragent, []);
+        } elseif (preg_match('/DAWINCI ANTIPLAG SPIDER/', $useragent)) {
+            $browser = new DawinciAntiplagSpider($useragent, []);
+        } elseif (preg_match('/AdvBot/', $useragent)) {
+            $browser = new AdvBot($useragent, []);
+        } elseif (preg_match('/DuckDuckGo\-Favicons\-Bot/', $useragent)) {
+            $browser = new DuckDuckFaviconsBot($useragent, []);
+        } elseif (preg_match('/ZyBorg/', $useragent)) {
+            $browser = new WiseNutSearchEngineCrawler($useragent, []);
+        } elseif (preg_match('/HyperCrawl/', $useragent)) {
+            $browser = new HyperCrawl($useragent, []);
+        } elseif (preg_match('/ARCHIVE\.ORG\.UA crawler/', $useragent)) {
+            $browser = new ArchiveOrgBot($useragent, []);
+        } elseif (preg_match('/worldwebheritage/', $useragent)) {
+            $browser = new WorldwebheritageBot($useragent, []);
+        } elseif (preg_match('/BegunAdvertising/', $useragent)) {
+            $browser = new BegunAdvertisingBot($useragent, []);
+        } elseif (preg_match('/TrendWinHttp/', $useragent)) {
+            $browser = new TrendWinHttp($useragent, []);
+        } elseif (preg_match('/(winhttp|winhttprequest)/i', $useragent)) {
+            $browser = new WinHttpRequest($useragent, []);
+        } elseif (preg_match('/SkypeUriPreview/', $useragent)) {
+            $browser = new SkypeUriPreview($useragent, []);
+        } elseif (preg_match('/ScoutJet/', $useragent)) {
+            $browser = new Scoutjet($useragent, []);
+        } elseif (preg_match('/Lipperhey\-Kaus\-Australis/', $useragent)) {
+            $browser = new LipperheyKausAustralis($useragent, []);
+        } elseif (preg_match('/Digincore bot/', $useragent)) {
+            $browser = new DigincoreBot($useragent, []);
+        } elseif (preg_match('/Steeler/', $useragent)) {
+            $browser = new Steeler($useragent, []);
+        } elseif (preg_match('/Orangebot/', $useragent)) {
+            $browser = new Orangebot($useragent, []);
+        } elseif (preg_match('/Jasmine/', $useragent)) {
+            $browser = new Jasmine($useragent, []);
+        } elseif (preg_match('/electricmonk/', $useragent)) {
+            $browser = new DueDilCrawler($useragent, []);
+        } elseif (preg_match('/yoozBot/', $useragent)) {
+            $browser = new YoozBot($useragent, []);
+        } elseif (preg_match('/online\-webceo\-bot/', $useragent)) {
+            $browser = new WebceoBot($useragent, []);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(.*\) Gecko\/.*\/\d+/', $useragent)
+            && !preg_match('/Netscape/', $useragent)
         ) {
-            $browser = new Firefox($agent, []);
-        } elseif (preg_match('/^Mozilla\/5\.0 \(.*rv:\d+\.\d+.*\) Gecko\/.*\//', $agent)
-            && !preg_match('/Netscape/', $agent)
+            $browser = new Firefox($useragent, []);
+        } elseif (preg_match('/^Mozilla\/5\.0 \(.*rv:\d+\.\d+.*\) Gecko\/.*\//', $useragent)
+            && !preg_match('/Netscape/', $useragent)
         ) {
-            $browser = new Firefox($agent, []);
-        } elseif (preg_match('/Netscape/', $agent)) {
-            $browser = new Netscape($agent, []);
-        } elseif (preg_match('/^Mozilla\/5\.0$/', $agent)) {
-            $browser = new UnknownBrowser($agent, []);
-        } elseif (preg_match('/Virtuoso/', $agent)) {
-            $browser = new Virtuoso($agent, []);
-        } elseif (preg_match('/^Mozilla\/(3|4)\.\d+/', $agent, $matches)
-            && !preg_match('/(msie|android)/i', $agent, $matches)
+            $browser = new Firefox($useragent, []);
+        } elseif (preg_match('/Netscape/', $useragent)) {
+            $browser = new Netscape($useragent, []);
+        } elseif (preg_match('/^Mozilla\/5\.0$/', $useragent)) {
+            $browser = new UnknownBrowser($useragent, []);
+        } elseif (preg_match('/Virtuoso/', $useragent)) {
+            $browser = new Virtuoso($useragent, []);
+        } elseif (preg_match('/^Mozilla\/(3|4)\.\d+/', $useragent, $matches)
+            && !preg_match('/(msie|android)/i', $useragent, $matches)
         ) {
-            $browser = new Netscape($agent, []);
-        } elseif (preg_match('/^Dalvik\/\d/', $agent)) {
-            $browser = new Dalvik($agent, []);
-        } elseif (preg_match('/niki\-bot/', $agent)) {
-            $browser = new NikiBot($agent, []);
-        } elseif (preg_match('/ContextAd Bot/', $agent)) {
-            $browser = new ContextadBot($agent, []);
-        } elseif (preg_match('/integrity/', $agent)) {
-            $browser = new Integrity($agent, []);
-        } elseif (preg_match('/masscan/', $agent)) {
-            $browser = new DownloadAccelerator($agent, []);
-        } elseif (preg_match('/ZmEu/', $agent)) {
-            $browser = new ZmEu($agent, []);
-        } elseif (preg_match('/sogou web spider/i', $agent)) {
-            $browser = new SogouWebSpider($agent, []);
-        } elseif (preg_match('/(OpenWave|UP\.Browser|UP\/)/', $agent)) {
-            $browser = new Openwave($agent, []);
-        } elseif (preg_match('/(ObigoInternetBrowser|obigo\-browser|Obigo|Teleca)(\/|-)Q(\d+)/', $agent)) {
-            $browser = new ObigoQ($agent, []);
-        } elseif (preg_match('/(Teleca|Obigo|MIC\/|AU\-MIC)/', $agent)) {
-            $browser = new TelecaObigo($agent, []);
-        } elseif (preg_match('/DavClnt/', $agent)) {
-            $browser = new MicrosoftWebDav($agent, []);
-        } elseif (preg_match('/XING\-contenttabreceiver/', $agent)) {
-            $browser = new XingContenttabreceiver($agent, []);
-        } elseif (preg_match('/Slingstone/', $agent)) {
-            $browser = new YahooSlingstone($agent, []);
-        } elseif (preg_match('/BOT for JCE/', $agent)) {
-            $browser = new BotForJce($agent, []);
-        } elseif (preg_match('/Validator\.nu\/LV/', $agent)) {
-            $browser = new W3cValidatorNuLv($agent, []);
-        } elseif (preg_match('/Curb/', $agent)) {
-            $browser = new Curb($agent, []);
-        } elseif (preg_match('/link_thumbnailer/', $agent)) {
-            $browser = new LinkThumbnailer($agent, []);
-        } elseif (preg_match('/Ruby/', $agent)) {
-            $browser = new Ruby($agent, []);
-        } elseif (preg_match('/securepoint cf/', $agent)) {
-            $browser = new SecurepointContentFilter($agent, []);
-        } elseif (preg_match('/sogou\-spider/i', $agent)) {
-            $browser = new SogouSpider($agent, []);
-        } elseif (preg_match('/rankflex/i', $agent)) {
-            $browser = new RankFlex($agent, []);
-        } elseif (preg_match('/domnutch/i', $agent)) {
-            $browser = new Domnutch($agent, []);
-        } elseif (preg_match('/discovered/i', $agent)) {
-            $browser = new DiscoverEd($agent, []);
-        } elseif (preg_match('/nutch/i', $agent)) {
-            $browser = new Nutch($agent, []);
-        } elseif (preg_match('/boardreader favicon fetcher/i', $agent)) {
-            $browser = new BoardReaderFaviconFetcher($agent, []);
-        } elseif (preg_match('/checksite verification agent/i', $agent)) {
-            $browser = new CheckSiteVerificationAgent($agent, []);
-        } elseif (preg_match('/experibot/i', $agent)) {
-            $browser = new Experibot($agent, []);
-        } elseif (preg_match('/feedblitz/i', $agent)) {
-            $browser = new FeedBlitz($agent, []);
-        } elseif (preg_match('/rss2html/i', $agent)) {
-            $browser = new Rss2Html($agent, []);
-        } elseif (preg_match('/feedlyapp/i', $agent)) {
-            $browser = new FeedlyApp($agent, []);
-        } elseif (preg_match('/genderanalyzer/i', $agent)) {
-            $browser = new Genderanalyzer($agent, []);
-        } elseif (preg_match('/gooblog/i', $agent)) {
-            $browser = new GooBlog($agent, []);
-        } elseif (preg_match('/tumblr/i', $agent)) {
-            $browser = new TumblrApp($agent, []);
-        } elseif (preg_match('/w3c\_i18n\-checker/i', $agent)) {
-            $browser = new W3cI18nChecker($agent, []);
-        } elseif (preg_match('/w3c\_unicorn/i', $agent)) {
-            $browser = new W3cUnicorn($agent, []);
-        } elseif (preg_match('/alltop/i', $agent)) {
-            $browser = new AlltopApp($agent, []);
-        } elseif (preg_match('/internetseer/i', $agent)) {
-            $browser = new InternetSeer($agent, []);
-        } elseif (preg_match('/ADmantX Platform Semantic Analyzer/', $agent)) {
-            $browser = new AdmantxPlatformSemanticAnalyzer($agent, []);
-        } elseif (preg_match('/UniversalFeedParser/', $agent)) {
-            $browser = new UniversalFeedParser($agent, []);
-        } elseif (preg_match('/(binlar|larbin)/i', $agent)) {
-            $browser = new Larbin($agent, []);
-        } elseif (preg_match('/unityplayer/i', $agent)) {
-            $browser = new UnityWebPlayer($agent, []);
-        } elseif (preg_match('/WeSEE\:Search/', $agent)) {
-            $browser = new WeseeSearch($agent, []);
-        } elseif (preg_match('/WeSEE\:Ads/', $agent)) {
-            $browser = new WeseeAds($agent, []);
-        } elseif (preg_match('/A6\-Indexer/', $agent)) {
-            $browser = new A6Indexer($agent, []);
-        } elseif (preg_match('/NerdyBot/', $agent)) {
-            $browser = new NerdyBot($agent, []);
-        } elseif (preg_match('/Peeplo Screenshot Bot/', $agent)) {
-            $browser = new PeeploScreenshotBot($agent, []);
-        } elseif (preg_match('/CCBot/', $agent)) {
-            $browser = new CcBot($agent, []);
-        } elseif (preg_match('/visionutils/', $agent)) {
-            $browser = new VisionUtils($agent, []);
-        } elseif (preg_match('/Feedly/', $agent)) {
-            $browser = new Feedly($agent, []);
-        } elseif (preg_match('/Photon/', $agent)) {
-            $browser = new Photon($agent, []);
-        } elseif (preg_match('/WDG\_Validator/', $agent)) {
-            $browser = new WdgHtmlValidator($agent, []);
-        } elseif (preg_match('/Aboundex/', $agent)) {
-            $browser = new Aboundexbot($agent, []);
-        } elseif (preg_match('/YisouSpider/', $agent)) {
-            $browser = new YisouSpider($agent, []);
-        } elseif (preg_match('/hivaBot/', $agent)) {
-            $browser = new HivaBot($agent, []);
-        } elseif (preg_match('/Comodo Spider/', $agent)) {
-            $browser = new ComodoSpider($agent, []);
-        } elseif (preg_match('/OpenWebSpider/i', $agent)) {
-            $browser = new OpenWebSpider($agent, []);
-        } elseif (preg_match('/R6_CommentReader/i', $agent)) {
-            $browser = new R6CommentReader($agent, []);
-        } elseif (preg_match('/R6_FeedFetcher/i', $agent)) {
-            $browser = new R6Feedfetcher($agent, []);
-        } elseif (preg_match('/(psbot\-image|psbot\-page)/i', $agent)) {
-            $browser = new Picsearchbot($agent, []);
-        } elseif (preg_match('/Bloglovin/', $agent)) {
-            $browser = new BloglovinBot($agent, []);
-        } elseif (preg_match('/viralvideochart/i', $agent)) {
-            $browser = new ViralvideochartBot($agent, []);
-        } elseif (preg_match('/MetaHeadersBot/', $agent)) {
-            $browser = new MetaHeadersBot($agent, []);
-        } elseif (preg_match('/Zend\_Http\_Client/', $agent)) {
-            $browser = new ZendHttpClient($agent, []);
-        } elseif (preg_match('/wget/i', $agent)) {
-            $browser = new Wget($agent, []);
-        } elseif (preg_match('/Scrapy/', $agent)) {
-            $browser = new ScrapyBot($agent, []);
-        } elseif (preg_match('/Moozilla/', $agent)) {
-            $browser = new Moozilla($agent, []);
-        } elseif (preg_match('/AntBot/', $agent)) {
-            $browser = new AntBot($agent, []);
-        } elseif (preg_match('/Browsershots/', $agent)) {
-            $browser = new Browsershots($agent, []);
-        } elseif (preg_match('/revolt/', $agent)) {
-            $browser = new BotRevolt($agent, []);
-        } elseif (preg_match('/pdrlabs/i', $agent)) {
-            $browser = new PdrlabsBot($agent, []);
-        } elseif (preg_match('/elinks/i', $agent)) {
-            $browser = new Elinks($agent, []);
-        } elseif (preg_match('/Links/', $agent)) {
-            $browser = new Links($agent, []);
-        } elseif (preg_match('/Airmail/', $agent)) {
-            $browser = new Airmail($agent, []);
-        } elseif (preg_match('/SonyEricsson/', $agent)) {
-            $browser = new SonyEricsson($agent, []);
-        } elseif (preg_match('/WEB\.DE MailCheck/', $agent)) {
-            $browser = new WebdeMailCheck($agent, []);
-        } elseif (preg_match('/Screaming Frog SEO Spider/', $agent)) {
-            $browser = new ScreamingFrogSeoSpider($agent, []);
-        } elseif (preg_match('/AndroidDownloadManager/', $agent)) {
-            $browser = new AndroidDownloadManager($agent, []);
-        } elseif (preg_match('/Go ([\d\.]+) package http/', $agent)) {
-            $browser = new GoHttpClient($agent, []);
-        } elseif (preg_match('/Go-http-client/', $agent)) {
-            $browser = new GoHttpClient($agent, []);
-        } elseif (preg_match('/Proxy Gear Pro/', $agent)) {
-            $browser = new ProxyGearPro($agent, []);
-        } elseif (preg_match('/WAP Browser\/MAUI/', $agent)) {
-            $browser = new MauiWapBrowser($agent, []);
-        } elseif (preg_match('/Tiny Tiny RSS/', $agent)) {
-            $browser = new TinyTinyRss($agent, []);
-        } elseif (preg_match('/Readability/', $agent)) {
-            $browser = new Readability($agent, []);
-        } elseif (preg_match('/NSPlayer/', $agent)) {
-            $browser = new WindowsMediaPlayer($agent, []);
-        } elseif (preg_match('/Pingdom/', $agent)) {
-            $browser = new Pingdom($agent, []);
-        } elseif (preg_match('/crazywebcrawler/i', $agent)) {
-            $browser = new Crazywebcrawler($agent, []);
-        } elseif (preg_match('/GG PeekBot/', $agent)) {
-            $browser = new GgPeekBot($agent, []);
-        } elseif (preg_match('/iTunes/', $agent)) {
-            $browser = new Itunes($agent, []);
-        } elseif (preg_match('/LibreOffice/', $agent)) {
-            $browser = new LibreOffice($agent, []);
-        } elseif (preg_match('/OpenOffice/', $agent)) {
-            $browser = new OpenOffice($agent, []);
-        } elseif (preg_match('/ThumbnailAgent/', $agent)) {
-            $browser = new ThumbnailAgent($agent, []);
-        } elseif (preg_match('/LinkStats Bot/', $agent)) {
-            $browser = new LinkStatsBot($agent, []);
-        } elseif (preg_match('/eZ Publish Link Validator/', $agent)) {
-            $browser = new EzPublishLinkValidator($agent, []);
-        } elseif (preg_match('/ThumbSniper/', $agent)) {
-            $browser = new ThumbSniper($agent, []);
-        } elseif (preg_match('/stq\_bot/', $agent)) {
-            $browser = new SearchteqBot($agent, []);
-        } elseif (preg_match('/SNK Screenshot Bot/', $agent)) {
-            $browser = new SnkScreenshotBot($agent, []);
-        } elseif (preg_match('/SynHttpClient/', $agent)) {
-            $browser = new SynHttpClient($agent, []);
-        } elseif (preg_match('/HTTPClient/', $agent)) {
-            $browser = new HttpClient($agent, []);
-        } elseif (preg_match('/T\-Online Browser/', $agent)) {
-            $browser = new TonlineBrowser($agent, []);
-        } elseif (preg_match('/ImplisenseBot/', $agent)) {
-            $browser = new ImplisenseBot($agent, []);
-        } elseif (preg_match('/BuiBui\-Bot/', $agent)) {
-            $browser = new BuiBuiBot($agent, []);
-        } elseif (preg_match('/thumbshots\-de\-bot/', $agent)) {
-            $browser = new ThumbShotsDeBot($agent, []);
-        } elseif (preg_match('/python\-requests/', $agent)) {
-            $browser = new PythonRequests($agent, []);
-        } elseif (preg_match('/Python\-urllib/', $agent)) {
-            $browser = new PythonUrlLib($agent, []);
-        } elseif (preg_match('/Bot\.AraTurka\.com/', $agent)) {
-            $browser = new BotAraTurka($agent, []);
-        } elseif (preg_match('/http\_requester/', $agent)) {
-            $browser = new HttpRequester($agent, []);
-        } elseif (preg_match('/WhatWeb/', $agent)) {
-            $browser = new WhatWebWebScanner($agent, []);
-        } elseif (preg_match('/isc header collector handlers/', $agent)) {
-            $browser = new IscHeaderCollectorHandlers($agent, []);
-        } elseif (preg_match('/Thumbor/', $agent)) {
-            $browser = new Thumbor($agent, []);
-        } elseif (preg_match('/Forum Poster/', $agent)) {
-            $browser = new ForumPoster($agent, []);
-        } elseif (preg_match('/crawler4j/', $agent)) {
-            $browser = new Crawler4j($agent, []);
-        } elseif (preg_match('/Facebot/', $agent)) {
-            $browser = new FaceBot($agent, []);
-        } elseif (preg_match('/NetzCheckBot/', $agent)) {
-            $browser = new NetzCheckBot($agent, []);
-        } elseif (preg_match('/MIB/', $agent)) {
-            $browser = new MotorolaInternetBrowser($agent, []);
-        } elseif (preg_match('/facebookscraper/', $agent)) {
-            $browser = new Facebookscraper($agent, []);
-        } elseif (preg_match('/Zookabot/', $agent)) {
-            $browser = new Zookabot($agent, []);
-        } elseif (preg_match('/MetaURI/', $agent)) {
-            $browser = new MetaUri($agent, []);
-        } elseif (preg_match('/FreeWebMonitoring SiteChecker/', $agent)) {
-            $browser = new FreeWebMonitoringSiteChecker($agent, []);
-        } elseif (preg_match('/IPv4Scan/', $agent)) {
-            $browser = new Ipv4Scan($agent, []);
-        } elseif (preg_match('/RED/', $agent)) {
-            $browser = new Redbot($agent, []);
-        } elseif (preg_match('/domainsbot/', $agent)) {
-            $browser = new DomainsBot($agent, []);
-        } elseif (preg_match('/BUbiNG/', $agent)) {
-            $browser = new Bubing($agent, []);
-        } elseif (preg_match('/RamblerMail/', $agent)) {
-            $browser = new RamblerMail($agent, []);
-        } elseif (preg_match('/ichiro\/mobile/', $agent)) {
-            $browser = new IchiroMobileBot($agent, []);
-        } elseif (preg_match('/ichiro/', $agent)) {
-            $browser = new IchiroBot($agent, []);
-        } elseif (preg_match('/iisbot/', $agent)) {
-            $browser = new IisBot($agent, []);
-        } elseif (preg_match('/JoobleBot/', $agent)) {
-            $browser = new JoobleBot($agent, []);
-        } elseif (preg_match('/Superfeedr bot/', $agent)) {
-            $browser = new SuperfeedrBot($agent, []);
-        } elseif (preg_match('/FeedBurner/', $agent)) {
-            $browser = new FeedBurner($agent, []);
-        } elseif (preg_match('/Fastladder/', $agent)) {
-            $browser = new FastladderFeedFetcher($agent, []);
-        } elseif (preg_match('/livedoor/', $agent)) {
-            $browser = new LivedoorFeedFetcher($agent, []);
-        } elseif (preg_match('/Icarus6j/', $agent)) {
-            $browser = new Icarus6j($agent, []);
-        } elseif (preg_match('/wsr\-agent/', $agent)) {
-            $browser = new WsrAgent($agent, []);
-        } elseif (preg_match('/Blogshares Spiders/', $agent)) {
-            $browser = new BlogsharesSpiders($agent, []);
-        } elseif (preg_match('/TinEye\-bot/', $agent)) {
-            $browser = new TinEyeBot($agent, []);
-        } elseif (preg_match('/QuickiWiki/', $agent)) {
-            $browser = new QuickiWikiBot($agent, []);
-        } elseif (preg_match('/PycURL/', $agent)) {
-            $browser = new PyCurl($agent, []);
-        } elseif (preg_match('/libcurl\-agent/', $agent)) {
-            $browser = new Libcurl($agent, []);
-        } elseif (preg_match('/Taproot/', $agent)) {
-            $browser = new TaprootBot($agent, []);
-        } elseif (preg_match('/GuzzleHttp/', $agent)) {
-            $browser = new GuzzleHttpClient($agent, []);
-        } elseif (preg_match('/curl/i', $agent)) {
-            $browser = new Curl($agent, []);
-        } elseif (preg_match('/^PHP/', $agent)) {
-            $browser = new Php($agent, []);
-        } elseif (preg_match('/Apple\-PubSub/', $agent)) {
-            $browser = new ApplePubSub($agent, []);
-        } elseif (preg_match('/SimplePie/', $agent)) {
-            $browser = new SimplePie($agent, []);
-        } elseif (preg_match('/BigBozz/', $agent)) {
-            $browser = new BigBozz($agent, []);
-        } elseif (preg_match('/ECCP/', $agent)) {
-            $browser = new Eccp($agent, []);
-        } elseif (preg_match('/facebookexternalhit/', $agent)) {
-            $browser = new FacebookExternalHit($agent, []);
-        } elseif (preg_match('/GigablastOpenSource/', $agent)) {
-            $browser = new GigablastOpenSource($agent, []);
-        } elseif (preg_match('/WebIndex/', $agent)) {
-            $browser = new WebIndex($agent, []);
-        } elseif (preg_match('/Prince/', $agent)) {
-            $browser = new Prince($agent, []);
-        } elseif (preg_match('/adsense\-snapshot\-google/i', $agent)) {
-            $browser = new GoogleAdsenseSnapshot($agent, []);
-        } elseif (preg_match('/Amazon CloudFront/', $agent)) {
-            $browser = new AmazonCloudFront($agent, []);
-        } elseif (preg_match('/bandscraper/', $agent)) {
-            $browser = new Bandscraper($agent, []);
-        } elseif (preg_match('/bitlybot/', $agent)) {
-            $browser = new BitlyBot($agent, []);
-        } elseif (preg_match('/^bot$/', $agent)) {
-            $browser = new BotBot($agent, []);
-        } elseif (preg_match('/cars\-app\-browser/', $agent)) {
-            $browser = new CarsAppBrowser($agent, []);
-        } elseif (preg_match('/Coursera\-Mobile/', $agent)) {
-            $browser = new CourseraMobileApp($agent, []);
-        } elseif (preg_match('/Crowsnest/', $agent)) {
-            $browser = new CrowsnestMobileApp($agent, []);
-        } elseif (preg_match('/Dorado WAP\-Browser/', $agent)) {
-            $browser = new DoradoWapBrowser($agent, []);
-        } elseif (preg_match('/Goldfire Server/', $agent)) {
-            $browser = new GoldfireServer($agent, []);
-        } elseif (preg_match('/EventMachine HttpClient/', $agent)) {
-            $browser = new EventMachineHttpClient($agent, []);
-        } elseif (preg_match('/iBall/', $agent)) {
-            $browser = new Iball($agent, []);
-        } elseif (preg_match('/InAGist URL Resolver/', $agent)) {
-            $browser = new InagistUrlResolver($agent, []);
-        } elseif (preg_match('/Jeode/', $agent)) {
-            $browser = new Jeode($agent, []);
-        } elseif (preg_match('/kraken/', $agent)) {
-            $browser = new Krakenjs($agent, []);
-        } elseif (preg_match('/com\.linkedin/', $agent)) {
-            $browser = new LinkedInBot($agent, []);
-        } elseif (preg_match('/LivelapBot/', $agent)) {
-            $browser = new LivelapBot($agent, []);
-        } elseif (preg_match('/MixBot/', $agent)) {
-            $browser = new MixBot($agent, []);
-        } elseif (preg_match('/BuSecurityProject/', $agent)) {
-            $browser = new BuSecurityProject($agent, []);
-        } elseif (preg_match('/PageFreezer/', $agent)) {
-            $browser = new PageFreezer($agent, []);
-        } elseif (preg_match('/restify/', $agent)) {
-            $browser = new Restify($agent, []);
-        } elseif (preg_match('/ShowyouBot/', $agent)) {
-            $browser = new ShowyouBot($agent, []);
-        } elseif (preg_match('/vlc/i', $agent)) {
-            $browser = new VlcMediaPlayer($agent, []);
-        } elseif (preg_match('/WebRingChecker/', $agent)) {
-            $browser = new WebRingChecker($agent, []);
-        } elseif (preg_match('/bot\-pge\.chlooe\.com/', $agent)) {
-            $browser = new ChlooeBot($agent, []);
-        } elseif (preg_match('/seebot/', $agent)) {
-            $browser = new SeeBot($agent, []);
-        } elseif (preg_match('/ltx71/', $agent)) {
-            $browser = new Ltx71($agent, []);
-        } elseif (preg_match('/CookieReports/', $agent)) {
-            $browser = new CookieReportsBot($agent, []);
-        } elseif (preg_match('/Elmer/', $agent)) {
-            $browser = new Elmer($agent, []);
-        } elseif (preg_match('/Iframely/', $agent)) {
-            $browser = new IframelyBot($agent, []);
-        } elseif (preg_match('/MetaInspector/', $agent)) {
-            $browser = new MetaInspector($agent, []);
-        } elseif (preg_match('/Microsoft\-CryptoAPI/', $agent)) {
-            $browser = new MicrosoftCryptoApi($agent, []);
-        } elseif (preg_match('/OWASP\_SECRET\_BROWSER/', $agent)) {
-            $browser = new OwaspSecretBrowser($agent, []);
-        } elseif (preg_match('/SMRF URL Expander/', $agent)) {
-            $browser = new SmrfUrlExpander($agent, []);
-        } elseif (preg_match('/Speedy Spider/', $agent)) {
-            $browser = new Entireweb($agent, []);
-        } elseif (preg_match('/kizasi\-spider/', $agent)) {
-            $browser = new Kizasispider($agent, []);
-        } elseif (preg_match('/Superarama\.com \- BOT/', $agent)) {
-            $browser = new SuperaramaComBot($agent, []);
-        } elseif (preg_match('/WNMbot/', $agent)) {
-            $browser = new Wnmbot($agent, []);
-        } elseif (preg_match('/Website Explorer/', $agent)) {
-            $browser = new WebsiteExplorer($agent, []);
-        } elseif (preg_match('/city\-map screenshot service/', $agent)) {
-            $browser = new CitymapScreenshotService($agent, []);
-        } elseif (preg_match('/gosquared\-thumbnailer/', $agent)) {
-            $browser = new GosquaredThumbnailer($agent, []);
-        } elseif (preg_match('/optivo\(R\) NetHelper/', $agent)) {
-            $browser = new OptivoNetHelper($agent, []);
-        } elseif (preg_match('/pr\-cy\.ru Screenshot Bot/', $agent)) {
-            $browser = new ScreenshotBot($agent, []);
-        } elseif (preg_match('/Cyberduck/', $agent)) {
-            $browser = new Cyberduck($agent, []);
-        } elseif (preg_match('/Lynx/', $agent)) {
-            $browser = new Lynx($agent, []);
-        } elseif (preg_match('/AccServer/', $agent)) {
-            $browser = new AccServer($agent, []);
-        } elseif (preg_match('/SafeSearch microdata crawler/', $agent)) {
-            $browser = new SafeSearchMicrodataCrawler($agent, []);
-        } elseif (preg_match('/iZSearch/', $agent)) {
-            $browser = new IzSearchBot($agent, []);
-        } elseif (preg_match('/NetLyzer FastProbe/', $agent)) {
-            $browser = new NetLyzerFastProbe($agent, []);
-        } elseif (preg_match('/MnoGoSearch/', $agent)) {
-            $browser = new MnogoSearch($agent, []);
-        } elseif (preg_match('/uipbot/', $agent)) {
-            $browser = new Uipbot($agent, []);
-        } elseif (preg_match('/mbot/', $agent)) {
-            $browser = new Mbot($agent, []);
-        } elseif (preg_match('/MS Web Services Client Protocol/', $agent)) {
-            $browser = new MicrosoftDotNetFrameworkClr($agent, []);
-        } elseif (preg_match('/(AtomicBrowser|AtomicLite)/', $agent)) {
-            $browser = new AtomicBrowser($agent, []);
-        } elseif (preg_match('/AppEngine\-Google/', $agent)) {
-            $browser = new GoogleAppEngine($agent, []);
-        } elseif (preg_match('/Feedfetcher\-Google/', $agent)) {
-            $browser = new GoogleFeedfetcher($agent, []);
-        } elseif (preg_match('/Google/', $agent)) {
-            $browser = new GoogleApp($agent, []);
-        } elseif (preg_match('/UnwindFetchor/', $agent)) {
-            $browser = new UnwindFetchor($agent, []);
-        } elseif (preg_match('/Perfect%20Browser/', $agent)) {
-            $browser = new PerfectBrowser($agent, []);
-        } elseif (preg_match('/Reeder/', $agent)) {
-            $browser = new Reeder($agent, []);
-        } elseif (preg_match('/FastBrowser/', $agent)) {
-            $browser = new FastBrowser($agent, []);
-        } elseif (preg_match('/CFNetwork/', $agent)) {
-            $browser = new CfNetwork($agent, []);
-        } elseif (preg_match('/Y\!J\-(ASR|BSC)/', $agent)) {
-            $browser = new YahooJapan($agent, []);
-        } elseif (preg_match('/test certificate info/', $agent)) {
-            $browser = new TestCertificateInfo($agent, []);
-        } elseif (preg_match('/fastbot crawler/', $agent)) {
-            $browser = new FastbotCrawler($agent, []);
-        } elseif (preg_match('/Riddler/', $agent)) {
-            $browser = new Riddler($agent, []);
-        } elseif (preg_match('/SophosUpdateManager/', $agent)) {
-            $browser = new SophosUpdateManager($agent, []);
-        } elseif (preg_match('/(Debian|Ubuntu) APT\-HTTP/', $agent)) {
-            $browser = new AptHttpTransport($agent, []);
-        } elseif (preg_match('/urlgrabber/', $agent)) {
-            $browser = new UrlGrabber($agent, []);
-        } elseif (preg_match('/UCS \(ESX\)/', $agent)) {
-            $browser = new UniventionCorporateServer($agent, []);
-        } elseif (preg_match('/libwww\-perl/', $agent)) {
-            $browser = new Libwww($agent, []);
-        } elseif (preg_match('/OpenBSD ftp/', $agent)) {
-            $browser = new OpenBsdFtp($agent, []);
-        } elseif (preg_match('/SophosAgent/', $agent)) {
-            $browser = new SophosAgent($agent, []);
-        } elseif (preg_match('/jupdate/', $agent)) {
-            $browser = new Jupdate($agent, []);
-        } elseif (preg_match('/Roku\/DVP/', $agent)) {
-            $browser = new RokuDvp($agent, []);
-        } elseif (preg_match('/VocusBot/', $agent)) {
-            $browser = new VocusBot($agent, []);
-        } elseif (preg_match('/PostRank/', $agent)) {
-            $browser = new PostRank($agent, []);
-        } elseif (preg_match('/rogerbot/i', $agent)) {
-            $browser = new Rogerbot($agent, []);
-        } elseif (preg_match('/Safeassign/', $agent)) {
-            $browser = new Safeassign($agent, []);
-        } elseif (preg_match('/ExaleadCloudView/', $agent)) {
-            $browser = new ExaleadCloudView($agent, []);
-        } elseif (preg_match('/Typhoeus/', $agent)) {
-            $browser = new Typhoeus($agent, []);
-        } elseif (preg_match('/Camo Asset Proxy/', $agent)) {
-            $browser = new CamoAssetProxy($agent, []);
-        } elseif (preg_match('/YahooCacheSystem/', $agent)) {
-            $browser = new YahooCacheSystem($agent, []);
-        } elseif (preg_match('/wmtips\.com/', $agent)) {
-            $browser = new WebmasterTipsBot($agent, []);
-        } elseif (preg_match('/linkCheck/', $agent)) {
-            $browser = new LinkCheck($agent, []);
-        } elseif (preg_match('/ABrowse/', $agent)) {
-            $browser = new Abrowse($agent, []);
-        } elseif (preg_match('/GWPImages/', $agent)) {
-            $browser = new GwpImages($agent, []);
-        } elseif (preg_match('/NoteTextView/', $agent)) {
-            $browser = new NoteTextView($agent, []);
-        } elseif (preg_match('/NING/', $agent)) {
-            $browser = new Ning($agent, []);
-        } elseif (preg_match('/Sprinklr/', $agent)) {
-            $browser = new SprinklrBot($agent, []);
-        } elseif (preg_match('/URLChecker/', $agent)) {
-            $browser = new UrlChecker($agent, []);
-        } elseif (preg_match('/newsme/', $agent)) {
-            $browser = new NewsMe($agent, []);
-        } elseif (preg_match('/Traackr/', $agent)) {
-            $browser = new Traackr($agent, []);
-        } elseif (preg_match('/nineconnections/', $agent)) {
-            $browser = new NineConnections($agent, []);
-        } elseif (preg_match('/Xenu Link Sleuth/', $agent)) {
-            $browser = new XenusLinkSleuth($agent, []);
-        } elseif (preg_match('/superagent/', $agent)) {
-            $browser = new Superagent($agent, []);
-        } elseif (preg_match('/Goose/', $agent)) {
-            $browser = new GooseExtractor($agent, []);
-        } elseif (preg_match('/AHC/', $agent)) {
-            $browser = new AsynchronousHttpClient($agent, []);
-        } elseif (preg_match('/newspaper/', $agent)) {
-            $browser = new Newspaper($agent, []);
-        } elseif (preg_match('/Hatena::Bookmark/', $agent)) {
-            $browser = new HatenaBookmark($agent, []);
-        } elseif (preg_match('/EasyBib AutoCite/', $agent)) {
-            $browser = new EasyBibAutoCite($agent, []);
-        } elseif (preg_match('/ShortLinkTranslate/', $agent)) {
-            $browser = new ShortLinkTranslate($agent, []);
-        } elseif (preg_match('/Marketing Grader/', $agent)) {
-            $browser = new MarketingGrader($agent, []);
-        } elseif (preg_match('/Grammarly/', $agent)) {
-            $browser = new Grammarly($agent, []);
-        } elseif (preg_match('/Dispatch/', $agent)) {
-            $browser = new Dispatch($agent, []);
-        } elseif (preg_match('/Raven Link Checker/', $agent)) {
-            $browser = new RavenLinkChecker($agent, []);
-        } elseif (preg_match('/http\-kit/', $agent)) {
-            $browser = new HttpKit($agent, []);
-        } elseif (preg_match('/sfFeedReader/', $agent)) {
-            $browser = new SymfonyRssReader($agent, []);
-        } elseif (preg_match('/Twikle/', $agent)) {
-            $browser = new TwikleBot($agent, []);
-        } elseif (preg_match('/node\-fetch/', $agent)) {
-            $browser = new NodeFetch($agent, []);
-        } elseif (preg_match('/BrokenLinkCheck\.com/', $agent)) {
-            $browser = new BrokenLinkCheck($agent, []);
-        } elseif (preg_match('/BCKLINKS/', $agent)) {
-            $browser = new BckLinks($agent, []);
-        } elseif (preg_match('/Faraday/', $agent)) {
-            $browser = new Faraday($agent, []);
-        } elseif (preg_match('/gettor/', $agent)) {
-            $browser = new Gettor($agent, []);
-        } elseif (preg_match('/SEOstats/', $agent)) {
-            $browser = new SeoStats($agent, []);
-        } elseif (preg_match('/ZnajdzFoto\/Image/', $agent)) {
-            $browser = new ZnajdzFotoImageBot($agent, []);
-        } elseif (preg_match('/infoX\-WISG/', $agent)) {
-            $browser = new InfoxWisg($agent, []);
-        } elseif (preg_match('/wscheck\.com/', $agent)) {
-            $browser = new WscheckBot($agent, []);
-        } elseif (preg_match('/Tweetminster/', $agent)) {
-            $browser = new TweetminsterBot($agent, []);
-        } elseif (preg_match('/Astute SRM/', $agent)) {
-            $browser = new AstuteSocial($agent, []);
-        } elseif (preg_match('/LongURL API/', $agent)) {
-            $browser = new LongUrlBot($agent, []);
-        } elseif (preg_match('/Trove/', $agent)) {
-            $browser = new TroveBot($agent, []);
-        } elseif (preg_match('/Melvil Favicon/', $agent)) {
-            $browser = new MelvilFaviconBot($agent, []);
-        } elseif (preg_match('/Melvil/', $agent)) {
-            $browser = new MelvilBot($agent, []);
-        } elseif (preg_match('/Pearltrees/', $agent)) {
-            $browser = new PearltreesBot($agent, []);
-        } elseif (preg_match('/Svven\-Summarizer/', $agent)) {
-            $browser = new SvvenSummarizerBot($agent, []);
-        } elseif (preg_match('/Athena Site Analyzer/', $agent)) {
-            $browser = new AthenaSiteAnalyzer($agent, []);
-        } elseif (preg_match('/Exploratodo/', $agent)) {
-            $browser = new ExploratodoBot($agent, []);
-        } elseif (preg_match('/WhatsApp/', $agent)) {
-            $browser = new WhatsApp($agent, []);
-        } elseif (preg_match('/DDG\-Android\-/', $agent)) {
-            $browser = new DuckDuckApp($agent, []);
-        } elseif (preg_match('/WebCorp/', $agent)) {
-            $browser = new WebCorp($agent, []);
-        } elseif (preg_match('/ROR Sitemap Generator/', $agent)) {
-            $browser = new RorSitemapGenerator($agent, []);
-        } elseif (preg_match('/AuditMyPC Webmaster Tool/', $agent)) {
-            $browser = new AuditmypcWebmasterTool($agent, []);
-        } elseif (preg_match('/XmlSitemapGenerator/', $agent)) {
-            $browser = new XmlSitemapGenerator($agent, []);
-        } elseif (preg_match('/Stratagems Kumo/', $agent)) {
-            $browser = new StratagemsKumo($agent, []);
-        } elseif (preg_match('/YOURLS/', $agent)) {
-            $browser = new Yourls($agent, []);
-        } elseif (preg_match('/Embed PHP Library/', $agent)) {
-            $browser = new EmbedPhpLibrary($agent, []);
-        } elseif (preg_match('/SPIP/', $agent)) {
-            $browser = new Spip($agent, []);
-        } elseif (preg_match('/Friendica/', $agent)) {
-            $browser = new Friendica($agent, []);
-        } elseif (preg_match('/MagpieRSS/', $agent)) {
-            $browser = new MagpieRss($agent, []);
-        } elseif (preg_match('/Short URL Checker/', $agent)) {
-            $browser = new ShortUrlChecker($agent, []);
-        } elseif (preg_match('/webnumbrFetcher/', $agent)) {
-            $browser = new WebnumbrFetcher($agent, []);
-        } elseif (preg_match('/(WAP Browser|Spice QT\-75|KKT20\/MIDP)/', $agent)) {
-            $browser = new WapBrowser($agent, []);
-        } elseif (preg_match('/java/i', $agent)) {
-            $browser = new JavaStandardLibrary($agent, []);
-        } elseif (preg_match('/(unister\-test|unistertesting|unister\-https\-test)/i', $agent)) {
-            $browser = new UnisterTesting($agent, []);
+            $browser = new Netscape($useragent, []);
+        } elseif (preg_match('/^Dalvik\/\d/', $useragent)) {
+            $browser = new Dalvik($useragent, []);
+        } elseif (preg_match('/niki\-bot/', $useragent)) {
+            $browser = new NikiBot($useragent, []);
+        } elseif (preg_match('/ContextAd Bot/', $useragent)) {
+            $browser = new ContextadBot($useragent, []);
+        } elseif (preg_match('/integrity/', $useragent)) {
+            $browser = new Integrity($useragent, []);
+        } elseif (preg_match('/masscan/', $useragent)) {
+            $browser = new DownloadAccelerator($useragent, []);
+        } elseif (preg_match('/ZmEu/', $useragent)) {
+            $browser = new ZmEu($useragent, []);
+        } elseif (preg_match('/sogou web spider/i', $useragent)) {
+            $browser = new SogouWebSpider($useragent, []);
+        } elseif (preg_match('/(OpenWave|UP\.Browser|UP\/)/', $useragent)) {
+            $browser = new Openwave($useragent, []);
+        } elseif (preg_match('/(ObigoInternetBrowser|obigo\-browser|Obigo|Teleca)(\/|-)Q(\d+)/', $useragent)) {
+            $browser = new ObigoQ($useragent, []);
+        } elseif (preg_match('/(Teleca|Obigo|MIC\/|AU\-MIC)/', $useragent)) {
+            $browser = new TelecaObigo($useragent, []);
+        } elseif (preg_match('/DavClnt/', $useragent)) {
+            $browser = new MicrosoftWebDav($useragent, []);
+        } elseif (preg_match('/XING\-contenttabreceiver/', $useragent)) {
+            $browser = new XingContenttabreceiver($useragent, []);
+        } elseif (preg_match('/Slingstone/', $useragent)) {
+            $browser = new YahooSlingstone($useragent, []);
+        } elseif (preg_match('/BOT for JCE/', $useragent)) {
+            $browser = new BotForJce($useragent, []);
+        } elseif (preg_match('/Validator\.nu\/LV/', $useragent)) {
+            $browser = new W3cValidatorNuLv($useragent, []);
+        } elseif (preg_match('/Curb/', $useragent)) {
+            $browser = new Curb($useragent, []);
+        } elseif (preg_match('/link_thumbnailer/', $useragent)) {
+            $browser = new LinkThumbnailer($useragent, []);
+        } elseif (preg_match('/Ruby/', $useragent)) {
+            $browser = new Ruby($useragent, []);
+        } elseif (preg_match('/securepoint cf/', $useragent)) {
+            $browser = new SecurepointContentFilter($useragent, []);
+        } elseif (preg_match('/sogou\-spider/i', $useragent)) {
+            $browser = new SogouSpider($useragent, []);
+        } elseif (preg_match('/rankflex/i', $useragent)) {
+            $browser = new RankFlex($useragent, []);
+        } elseif (preg_match('/domnutch/i', $useragent)) {
+            $browser = new Domnutch($useragent, []);
+        } elseif (preg_match('/discovered/i', $useragent)) {
+            $browser = new DiscoverEd($useragent, []);
+        } elseif (preg_match('/nutch/i', $useragent)) {
+            $browser = new Nutch($useragent, []);
+        } elseif (preg_match('/boardreader favicon fetcher/i', $useragent)) {
+            $browser = new BoardReaderFaviconFetcher($useragent, []);
+        } elseif (preg_match('/checksite verification agent/i', $useragent)) {
+            $browser = new CheckSiteVerificationAgent($useragent, []);
+        } elseif (preg_match('/experibot/i', $useragent)) {
+            $browser = new Experibot($useragent, []);
+        } elseif (preg_match('/feedblitz/i', $useragent)) {
+            $browser = new FeedBlitz($useragent, []);
+        } elseif (preg_match('/rss2html/i', $useragent)) {
+            $browser = new Rss2Html($useragent, []);
+        } elseif (preg_match('/feedlyapp/i', $useragent)) {
+            $browser = new FeedlyApp($useragent, []);
+        } elseif (preg_match('/genderanalyzer/i', $useragent)) {
+            $browser = new Genderanalyzer($useragent, []);
+        } elseif (preg_match('/gooblog/i', $useragent)) {
+            $browser = new GooBlog($useragent, []);
+        } elseif (preg_match('/tumblr/i', $useragent)) {
+            $browser = new TumblrApp($useragent, []);
+        } elseif (preg_match('/w3c\_i18n\-checker/i', $useragent)) {
+            $browser = new W3cI18nChecker($useragent, []);
+        } elseif (preg_match('/w3c\_unicorn/i', $useragent)) {
+            $browser = new W3cUnicorn($useragent, []);
+        } elseif (preg_match('/alltop/i', $useragent)) {
+            $browser = new AlltopApp($useragent, []);
+        } elseif (preg_match('/internetseer/i', $useragent)) {
+            $browser = new InternetSeer($useragent, []);
+        } elseif (preg_match('/ADmantX Platform Semantic Analyzer/', $useragent)) {
+            $browser = new AdmantxPlatformSemanticAnalyzer($useragent, []);
+        } elseif (preg_match('/UniversalFeedParser/', $useragent)) {
+            $browser = new UniversalFeedParser($useragent, []);
+        } elseif (preg_match('/(binlar|larbin)/i', $useragent)) {
+            $browser = new Larbin($useragent, []);
+        } elseif (preg_match('/unityplayer/i', $useragent)) {
+            $browser = new UnityWebPlayer($useragent, []);
+        } elseif (preg_match('/WeSEE\:Search/', $useragent)) {
+            $browser = new WeseeSearch($useragent, []);
+        } elseif (preg_match('/WeSEE\:Ads/', $useragent)) {
+            $browser = new WeseeAds($useragent, []);
+        } elseif (preg_match('/A6\-Indexer/', $useragent)) {
+            $browser = new A6Indexer($useragent, []);
+        } elseif (preg_match('/NerdyBot/', $useragent)) {
+            $browser = new NerdyBot($useragent, []);
+        } elseif (preg_match('/Peeplo Screenshot Bot/', $useragent)) {
+            $browser = new PeeploScreenshotBot($useragent, []);
+        } elseif (preg_match('/CCBot/', $useragent)) {
+            $browser = new CcBot($useragent, []);
+        } elseif (preg_match('/visionutils/', $useragent)) {
+            $browser = new VisionUtils($useragent, []);
+        } elseif (preg_match('/Feedly/', $useragent)) {
+            $browser = new Feedly($useragent, []);
+        } elseif (preg_match('/Photon/', $useragent)) {
+            $browser = new Photon($useragent, []);
+        } elseif (preg_match('/WDG\_Validator/', $useragent)) {
+            $browser = new WdgHtmlValidator($useragent, []);
+        } elseif (preg_match('/Aboundex/', $useragent)) {
+            $browser = new Aboundexbot($useragent, []);
+        } elseif (preg_match('/YisouSpider/', $useragent)) {
+            $browser = new YisouSpider($useragent, []);
+        } elseif (preg_match('/hivaBot/', $useragent)) {
+            $browser = new HivaBot($useragent, []);
+        } elseif (preg_match('/Comodo Spider/', $useragent)) {
+            $browser = new ComodoSpider($useragent, []);
+        } elseif (preg_match('/OpenWebSpider/i', $useragent)) {
+            $browser = new OpenWebSpider($useragent, []);
+        } elseif (preg_match('/R6_CommentReader/i', $useragent)) {
+            $browser = new R6CommentReader($useragent, []);
+        } elseif (preg_match('/R6_FeedFetcher/i', $useragent)) {
+            $browser = new R6Feedfetcher($useragent, []);
+        } elseif (preg_match('/(psbot\-image|psbot\-page)/i', $useragent)) {
+            $browser = new Picsearchbot($useragent, []);
+        } elseif (preg_match('/Bloglovin/', $useragent)) {
+            $browser = new BloglovinBot($useragent, []);
+        } elseif (preg_match('/viralvideochart/i', $useragent)) {
+            $browser = new ViralvideochartBot($useragent, []);
+        } elseif (preg_match('/MetaHeadersBot/', $useragent)) {
+            $browser = new MetaHeadersBot($useragent, []);
+        } elseif (preg_match('/Zend\_Http\_Client/', $useragent)) {
+            $browser = new ZendHttpClient($useragent, []);
+        } elseif (preg_match('/wget/i', $useragent)) {
+            $browser = new Wget($useragent, []);
+        } elseif (preg_match('/Scrapy/', $useragent)) {
+            $browser = new ScrapyBot($useragent, []);
+        } elseif (preg_match('/Moozilla/', $useragent)) {
+            $browser = new Moozilla($useragent, []);
+        } elseif (preg_match('/AntBot/', $useragent)) {
+            $browser = new AntBot($useragent, []);
+        } elseif (preg_match('/Browsershots/', $useragent)) {
+            $browser = new Browsershots($useragent, []);
+        } elseif (preg_match('/revolt/', $useragent)) {
+            $browser = new BotRevolt($useragent, []);
+        } elseif (preg_match('/pdrlabs/i', $useragent)) {
+            $browser = new PdrlabsBot($useragent, []);
+        } elseif (preg_match('/elinks/i', $useragent)) {
+            $browser = new Elinks($useragent, []);
+        } elseif (preg_match('/Links/', $useragent)) {
+            $browser = new Links($useragent, []);
+        } elseif (preg_match('/Airmail/', $useragent)) {
+            $browser = new Airmail($useragent, []);
+        } elseif (preg_match('/SonyEricsson/', $useragent)) {
+            $browser = new SonyEricsson($useragent, []);
+        } elseif (preg_match('/WEB\.DE MailCheck/', $useragent)) {
+            $browser = new WebdeMailCheck($useragent, []);
+        } elseif (preg_match('/Screaming Frog SEO Spider/', $useragent)) {
+            $browser = new ScreamingFrogSeoSpider($useragent, []);
+        } elseif (preg_match('/AndroidDownloadManager/', $useragent)) {
+            $browser = new AndroidDownloadManager($useragent, []);
+        } elseif (preg_match('/Go ([\d\.]+) package http/', $useragent)) {
+            $browser = new GoHttpClient($useragent, []);
+        } elseif (preg_match('/Go-http-client/', $useragent)) {
+            $browser = new GoHttpClient($useragent, []);
+        } elseif (preg_match('/Proxy Gear Pro/', $useragent)) {
+            $browser = new ProxyGearPro($useragent, []);
+        } elseif (preg_match('/WAP Browser\/MAUI/', $useragent)) {
+            $browser = new MauiWapBrowser($useragent, []);
+        } elseif (preg_match('/Tiny Tiny RSS/', $useragent)) {
+            $browser = new TinyTinyRss($useragent, []);
+        } elseif (preg_match('/Readability/', $useragent)) {
+            $browser = new Readability($useragent, []);
+        } elseif (preg_match('/NSPlayer/', $useragent)) {
+            $browser = new WindowsMediaPlayer($useragent, []);
+        } elseif (preg_match('/Pingdom/', $useragent)) {
+            $browser = new Pingdom($useragent, []);
+        } elseif (preg_match('/crazywebcrawler/i', $useragent)) {
+            $browser = new Crazywebcrawler($useragent, []);
+        } elseif (preg_match('/GG PeekBot/', $useragent)) {
+            $browser = new GgPeekBot($useragent, []);
+        } elseif (preg_match('/iTunes/', $useragent)) {
+            $browser = new Itunes($useragent, []);
+        } elseif (preg_match('/LibreOffice/', $useragent)) {
+            $browser = new LibreOffice($useragent, []);
+        } elseif (preg_match('/OpenOffice/', $useragent)) {
+            $browser = new OpenOffice($useragent, []);
+        } elseif (preg_match('/ThumbnailAgent/', $useragent)) {
+            $browser = new ThumbnailAgent($useragent, []);
+        } elseif (preg_match('/LinkStats Bot/', $useragent)) {
+            $browser = new LinkStatsBot($useragent, []);
+        } elseif (preg_match('/eZ Publish Link Validator/', $useragent)) {
+            $browser = new EzPublishLinkValidator($useragent, []);
+        } elseif (preg_match('/ThumbSniper/', $useragent)) {
+            $browser = new ThumbSniper($useragent, []);
+        } elseif (preg_match('/stq\_bot/', $useragent)) {
+            $browser = new SearchteqBot($useragent, []);
+        } elseif (preg_match('/SNK Screenshot Bot/', $useragent)) {
+            $browser = new SnkScreenshotBot($useragent, []);
+        } elseif (preg_match('/SynHttpClient/', $useragent)) {
+            $browser = new SynHttpClient($useragent, []);
+        } elseif (preg_match('/HTTPClient/', $useragent)) {
+            $browser = new HttpClient($useragent, []);
+        } elseif (preg_match('/T\-Online Browser/', $useragent)) {
+            $browser = new TonlineBrowser($useragent, []);
+        } elseif (preg_match('/ImplisenseBot/', $useragent)) {
+            $browser = new ImplisenseBot($useragent, []);
+        } elseif (preg_match('/BuiBui\-Bot/', $useragent)) {
+            $browser = new BuiBuiBot($useragent, []);
+        } elseif (preg_match('/thumbshots\-de\-bot/', $useragent)) {
+            $browser = new ThumbShotsDeBot($useragent, []);
+        } elseif (preg_match('/python\-requests/', $useragent)) {
+            $browser = new PythonRequests($useragent, []);
+        } elseif (preg_match('/Python\-urllib/', $useragent)) {
+            $browser = new PythonUrlLib($useragent, []);
+        } elseif (preg_match('/Bot\.AraTurka\.com/', $useragent)) {
+            $browser = new BotAraTurka($useragent, []);
+        } elseif (preg_match('/http\_requester/', $useragent)) {
+            $browser = new HttpRequester($useragent, []);
+        } elseif (preg_match('/WhatWeb/', $useragent)) {
+            $browser = new WhatWebWebScanner($useragent, []);
+        } elseif (preg_match('/isc header collector handlers/', $useragent)) {
+            $browser = new IscHeaderCollectorHandlers($useragent, []);
+        } elseif (preg_match('/Thumbor/', $useragent)) {
+            $browser = new Thumbor($useragent, []);
+        } elseif (preg_match('/Forum Poster/', $useragent)) {
+            $browser = new ForumPoster($useragent, []);
+        } elseif (preg_match('/crawler4j/', $useragent)) {
+            $browser = new Crawler4j($useragent, []);
+        } elseif (preg_match('/Facebot/', $useragent)) {
+            $browser = new FaceBot($useragent, []);
+        } elseif (preg_match('/NetzCheckBot/', $useragent)) {
+            $browser = new NetzCheckBot($useragent, []);
+        } elseif (preg_match('/MIB/', $useragent)) {
+            $browser = new MotorolaInternetBrowser($useragent, []);
+        } elseif (preg_match('/facebookscraper/', $useragent)) {
+            $browser = new Facebookscraper($useragent, []);
+        } elseif (preg_match('/Zookabot/', $useragent)) {
+            $browser = new Zookabot($useragent, []);
+        } elseif (preg_match('/MetaURI/', $useragent)) {
+            $browser = new MetaUri($useragent, []);
+        } elseif (preg_match('/FreeWebMonitoring SiteChecker/', $useragent)) {
+            $browser = new FreeWebMonitoringSiteChecker($useragent, []);
+        } elseif (preg_match('/IPv4Scan/', $useragent)) {
+            $browser = new Ipv4Scan($useragent, []);
+        } elseif (preg_match('/RED/', $useragent)) {
+            $browser = new Redbot($useragent, []);
+        } elseif (preg_match('/domainsbot/', $useragent)) {
+            $browser = new DomainsBot($useragent, []);
+        } elseif (preg_match('/BUbiNG/', $useragent)) {
+            $browser = new Bubing($useragent, []);
+        } elseif (preg_match('/RamblerMail/', $useragent)) {
+            $browser = new RamblerMail($useragent, []);
+        } elseif (preg_match('/ichiro\/mobile/', $useragent)) {
+            $browser = new IchiroMobileBot($useragent, []);
+        } elseif (preg_match('/ichiro/', $useragent)) {
+            $browser = new IchiroBot($useragent, []);
+        } elseif (preg_match('/iisbot/', $useragent)) {
+            $browser = new IisBot($useragent, []);
+        } elseif (preg_match('/JoobleBot/', $useragent)) {
+            $browser = new JoobleBot($useragent, []);
+        } elseif (preg_match('/Superfeedr bot/', $useragent)) {
+            $browser = new SuperfeedrBot($useragent, []);
+        } elseif (preg_match('/FeedBurner/', $useragent)) {
+            $browser = new FeedBurner($useragent, []);
+        } elseif (preg_match('/Fastladder/', $useragent)) {
+            $browser = new FastladderFeedFetcher($useragent, []);
+        } elseif (preg_match('/livedoor/', $useragent)) {
+            $browser = new LivedoorFeedFetcher($useragent, []);
+        } elseif (preg_match('/Icarus6j/', $useragent)) {
+            $browser = new Icarus6j($useragent, []);
+        } elseif (preg_match('/wsr\-agent/', $useragent)) {
+            $browser = new WsrAgent($useragent, []);
+        } elseif (preg_match('/Blogshares Spiders/', $useragent)) {
+            $browser = new BlogsharesSpiders($useragent, []);
+        } elseif (preg_match('/TinEye\-bot/', $useragent)) {
+            $browser = new TinEyeBot($useragent, []);
+        } elseif (preg_match('/QuickiWiki/', $useragent)) {
+            $browser = new QuickiWikiBot($useragent, []);
+        } elseif (preg_match('/PycURL/', $useragent)) {
+            $browser = new PyCurl($useragent, []);
+        } elseif (preg_match('/libcurl\-agent/', $useragent)) {
+            $browser = new Libcurl($useragent, []);
+        } elseif (preg_match('/Taproot/', $useragent)) {
+            $browser = new TaprootBot($useragent, []);
+        } elseif (preg_match('/GuzzleHttp/', $useragent)) {
+            $browser = new GuzzleHttpClient($useragent, []);
+        } elseif (preg_match('/curl/i', $useragent)) {
+            $browser = new Curl($useragent, []);
+        } elseif (preg_match('/^PHP/', $useragent)) {
+            $browser = new Php($useragent, []);
+        } elseif (preg_match('/Apple\-PubSub/', $useragent)) {
+            $browser = new ApplePubSub($useragent, []);
+        } elseif (preg_match('/SimplePie/', $useragent)) {
+            $browser = new SimplePie($useragent, []);
+        } elseif (preg_match('/BigBozz/', $useragent)) {
+            $browser = new BigBozz($useragent, []);
+        } elseif (preg_match('/ECCP/', $useragent)) {
+            $browser = new Eccp($useragent, []);
+        } elseif (preg_match('/facebookexternalhit/', $useragent)) {
+            $browser = new FacebookExternalHit($useragent, []);
+        } elseif (preg_match('/GigablastOpenSource/', $useragent)) {
+            $browser = new GigablastOpenSource($useragent, []);
+        } elseif (preg_match('/WebIndex/', $useragent)) {
+            $browser = new WebIndex($useragent, []);
+        } elseif (preg_match('/Prince/', $useragent)) {
+            $browser = new Prince($useragent, []);
+        } elseif (preg_match('/adsense\-snapshot\-google/i', $useragent)) {
+            $browser = new GoogleAdsenseSnapshot($useragent, []);
+        } elseif (preg_match('/Amazon CloudFront/', $useragent)) {
+            $browser = new AmazonCloudFront($useragent, []);
+        } elseif (preg_match('/bandscraper/', $useragent)) {
+            $browser = new Bandscraper($useragent, []);
+        } elseif (preg_match('/bitlybot/', $useragent)) {
+            $browser = new BitlyBot($useragent, []);
+        } elseif (preg_match('/^bot$/', $useragent)) {
+            $browser = new BotBot($useragent, []);
+        } elseif (preg_match('/cars\-app\-browser/', $useragent)) {
+            $browser = new CarsAppBrowser($useragent, []);
+        } elseif (preg_match('/Coursera\-Mobile/', $useragent)) {
+            $browser = new CourseraMobileApp($useragent, []);
+        } elseif (preg_match('/Crowsnest/', $useragent)) {
+            $browser = new CrowsnestMobileApp($useragent, []);
+        } elseif (preg_match('/Dorado WAP\-Browser/', $useragent)) {
+            $browser = new DoradoWapBrowser($useragent, []);
+        } elseif (preg_match('/Goldfire Server/', $useragent)) {
+            $browser = new GoldfireServer($useragent, []);
+        } elseif (preg_match('/EventMachine HttpClient/', $useragent)) {
+            $browser = new EventMachineHttpClient($useragent, []);
+        } elseif (preg_match('/iBall/', $useragent)) {
+            $browser = new Iball($useragent, []);
+        } elseif (preg_match('/InAGist URL Resolver/', $useragent)) {
+            $browser = new InagistUrlResolver($useragent, []);
+        } elseif (preg_match('/Jeode/', $useragent)) {
+            $browser = new Jeode($useragent, []);
+        } elseif (preg_match('/kraken/', $useragent)) {
+            $browser = new Krakenjs($useragent, []);
+        } elseif (preg_match('/com\.linkedin/', $useragent)) {
+            $browser = new LinkedInBot($useragent, []);
+        } elseif (preg_match('/LivelapBot/', $useragent)) {
+            $browser = new LivelapBot($useragent, []);
+        } elseif (preg_match('/MixBot/', $useragent)) {
+            $browser = new MixBot($useragent, []);
+        } elseif (preg_match('/BuSecurityProject/', $useragent)) {
+            $browser = new BuSecurityProject($useragent, []);
+        } elseif (preg_match('/PageFreezer/', $useragent)) {
+            $browser = new PageFreezer($useragent, []);
+        } elseif (preg_match('/restify/', $useragent)) {
+            $browser = new Restify($useragent, []);
+        } elseif (preg_match('/ShowyouBot/', $useragent)) {
+            $browser = new ShowyouBot($useragent, []);
+        } elseif (preg_match('/vlc/i', $useragent)) {
+            $browser = new VlcMediaPlayer($useragent, []);
+        } elseif (preg_match('/WebRingChecker/', $useragent)) {
+            $browser = new WebRingChecker($useragent, []);
+        } elseif (preg_match('/bot\-pge\.chlooe\.com/', $useragent)) {
+            $browser = new ChlooeBot($useragent, []);
+        } elseif (preg_match('/seebot/', $useragent)) {
+            $browser = new SeeBot($useragent, []);
+        } elseif (preg_match('/ltx71/', $useragent)) {
+            $browser = new Ltx71($useragent, []);
+        } elseif (preg_match('/CookieReports/', $useragent)) {
+            $browser = new CookieReportsBot($useragent, []);
+        } elseif (preg_match('/Elmer/', $useragent)) {
+            $browser = new Elmer($useragent, []);
+        } elseif (preg_match('/Iframely/', $useragent)) {
+            $browser = new IframelyBot($useragent, []);
+        } elseif (preg_match('/MetaInspector/', $useragent)) {
+            $browser = new MetaInspector($useragent, []);
+        } elseif (preg_match('/Microsoft\-CryptoAPI/', $useragent)) {
+            $browser = new MicrosoftCryptoApi($useragent, []);
+        } elseif (preg_match('/OWASP\_SECRET\_BROWSER/', $useragent)) {
+            $browser = new OwaspSecretBrowser($useragent, []);
+        } elseif (preg_match('/SMRF URL Expander/', $useragent)) {
+            $browser = new SmrfUrlExpander($useragent, []);
+        } elseif (preg_match('/Speedy Spider/', $useragent)) {
+            $browser = new Entireweb($useragent, []);
+        } elseif (preg_match('/kizasi\-spider/', $useragent)) {
+            $browser = new Kizasispider($useragent, []);
+        } elseif (preg_match('/Superarama\.com \- BOT/', $useragent)) {
+            $browser = new SuperaramaComBot($useragent, []);
+        } elseif (preg_match('/WNMbot/', $useragent)) {
+            $browser = new Wnmbot($useragent, []);
+        } elseif (preg_match('/Website Explorer/', $useragent)) {
+            $browser = new WebsiteExplorer($useragent, []);
+        } elseif (preg_match('/city\-map screenshot service/', $useragent)) {
+            $browser = new CitymapScreenshotService($useragent, []);
+        } elseif (preg_match('/gosquared\-thumbnailer/', $useragent)) {
+            $browser = new GosquaredThumbnailer($useragent, []);
+        } elseif (preg_match('/optivo\(R\) NetHelper/', $useragent)) {
+            $browser = new OptivoNetHelper($useragent, []);
+        } elseif (preg_match('/pr\-cy\.ru Screenshot Bot/', $useragent)) {
+            $browser = new ScreenshotBot($useragent, []);
+        } elseif (preg_match('/Cyberduck/', $useragent)) {
+            $browser = new Cyberduck($useragent, []);
+        } elseif (preg_match('/Lynx/', $useragent)) {
+            $browser = new Lynx($useragent, []);
+        } elseif (preg_match('/AccServer/', $useragent)) {
+            $browser = new AccServer($useragent, []);
+        } elseif (preg_match('/SafeSearch microdata crawler/', $useragent)) {
+            $browser = new SafeSearchMicrodataCrawler($useragent, []);
+        } elseif (preg_match('/iZSearch/', $useragent)) {
+            $browser = new IzSearchBot($useragent, []);
+        } elseif (preg_match('/NetLyzer FastProbe/', $useragent)) {
+            $browser = new NetLyzerFastProbe($useragent, []);
+        } elseif (preg_match('/MnoGoSearch/', $useragent)) {
+            $browser = new MnogoSearch($useragent, []);
+        } elseif (preg_match('/uipbot/', $useragent)) {
+            $browser = new Uipbot($useragent, []);
+        } elseif (preg_match('/mbot/', $useragent)) {
+            $browser = new Mbot($useragent, []);
+        } elseif (preg_match('/MS Web Services Client Protocol/', $useragent)) {
+            $browser = new MicrosoftDotNetFrameworkClr($useragent, []);
+        } elseif (preg_match('/(AtomicBrowser|AtomicLite)/', $useragent)) {
+            $browser = new AtomicBrowser($useragent, []);
+        } elseif (preg_match('/AppEngine\-Google/', $useragent)) {
+            $browser = new GoogleAppEngine($useragent, []);
+        } elseif (preg_match('/Feedfetcher\-Google/', $useragent)) {
+            $browser = new GoogleFeedfetcher($useragent, []);
+        } elseif (preg_match('/Google/', $useragent)) {
+            $browser = new GoogleApp($useragent, []);
+        } elseif (preg_match('/UnwindFetchor/', $useragent)) {
+            $browser = new UnwindFetchor($useragent, []);
+        } elseif (preg_match('/Perfect%20Browser/', $useragent)) {
+            $browser = new PerfectBrowser($useragent, []);
+        } elseif (preg_match('/Reeder/', $useragent)) {
+            $browser = new Reeder($useragent, []);
+        } elseif (preg_match('/FastBrowser/', $useragent)) {
+            $browser = new FastBrowser($useragent, []);
+        } elseif (preg_match('/CFNetwork/', $useragent)) {
+            $browser = new CfNetwork($useragent, []);
+        } elseif (preg_match('/Y\!J\-(ASR|BSC)/', $useragent)) {
+            $browser = new YahooJapan($useragent, []);
+        } elseif (preg_match('/test certificate info/', $useragent)) {
+            $browser = new TestCertificateInfo($useragent, []);
+        } elseif (preg_match('/fastbot crawler/', $useragent)) {
+            $browser = new FastbotCrawler($useragent, []);
+        } elseif (preg_match('/Riddler/', $useragent)) {
+            $browser = new Riddler($useragent, []);
+        } elseif (preg_match('/SophosUpdateManager/', $useragent)) {
+            $browser = new SophosUpdateManager($useragent, []);
+        } elseif (preg_match('/(Debian|Ubuntu) APT\-HTTP/', $useragent)) {
+            $browser = new AptHttpTransport($useragent, []);
+        } elseif (preg_match('/urlgrabber/', $useragent)) {
+            $browser = new UrlGrabber($useragent, []);
+        } elseif (preg_match('/UCS \(ESX\)/', $useragent)) {
+            $browser = new UniventionCorporateServer($useragent, []);
+        } elseif (preg_match('/libwww\-perl/', $useragent)) {
+            $browser = new Libwww($useragent, []);
+        } elseif (preg_match('/OpenBSD ftp/', $useragent)) {
+            $browser = new OpenBsdFtp($useragent, []);
+        } elseif (preg_match('/SophosAgent/', $useragent)) {
+            $browser = new SophosAgent($useragent, []);
+        } elseif (preg_match('/jupdate/', $useragent)) {
+            $browser = new Jupdate($useragent, []);
+        } elseif (preg_match('/Roku\/DVP/', $useragent)) {
+            $browser = new RokuDvp($useragent, []);
+        } elseif (preg_match('/VocusBot/', $useragent)) {
+            $browser = new VocusBot($useragent, []);
+        } elseif (preg_match('/PostRank/', $useragent)) {
+            $browser = new PostRank($useragent, []);
+        } elseif (preg_match('/rogerbot/i', $useragent)) {
+            $browser = new Rogerbot($useragent, []);
+        } elseif (preg_match('/Safeassign/', $useragent)) {
+            $browser = new Safeassign($useragent, []);
+        } elseif (preg_match('/ExaleadCloudView/', $useragent)) {
+            $browser = new ExaleadCloudView($useragent, []);
+        } elseif (preg_match('/Typhoeus/', $useragent)) {
+            $browser = new Typhoeus($useragent, []);
+        } elseif (preg_match('/Camo Asset Proxy/', $useragent)) {
+            $browser = new CamoAssetProxy($useragent, []);
+        } elseif (preg_match('/YahooCacheSystem/', $useragent)) {
+            $browser = new YahooCacheSystem($useragent, []);
+        } elseif (preg_match('/wmtips\.com/', $useragent)) {
+            $browser = new WebmasterTipsBot($useragent, []);
+        } elseif (preg_match('/linkCheck/', $useragent)) {
+            $browser = new LinkCheck($useragent, []);
+        } elseif (preg_match('/ABrowse/', $useragent)) {
+            $browser = new Abrowse($useragent, []);
+        } elseif (preg_match('/GWPImages/', $useragent)) {
+            $browser = new GwpImages($useragent, []);
+        } elseif (preg_match('/NoteTextView/', $useragent)) {
+            $browser = new NoteTextView($useragent, []);
+        } elseif (preg_match('/NING/', $useragent)) {
+            $browser = new Ning($useragent, []);
+        } elseif (preg_match('/Sprinklr/', $useragent)) {
+            $browser = new SprinklrBot($useragent, []);
+        } elseif (preg_match('/URLChecker/', $useragent)) {
+            $browser = new UrlChecker($useragent, []);
+        } elseif (preg_match('/newsme/', $useragent)) {
+            $browser = new NewsMe($useragent, []);
+        } elseif (preg_match('/Traackr/', $useragent)) {
+            $browser = new Traackr($useragent, []);
+        } elseif (preg_match('/nineconnections/', $useragent)) {
+            $browser = new NineConnections($useragent, []);
+        } elseif (preg_match('/Xenu Link Sleuth/', $useragent)) {
+            $browser = new XenusLinkSleuth($useragent, []);
+        } elseif (preg_match('/superagent/', $useragent)) {
+            $browser = new Superagent($useragent, []);
+        } elseif (preg_match('/Goose/', $useragent)) {
+            $browser = new GooseExtractor($useragent, []);
+        } elseif (preg_match('/AHC/', $useragent)) {
+            $browser = new AsynchronousHttpClient($useragent, []);
+        } elseif (preg_match('/newspaper/', $useragent)) {
+            $browser = new Newspaper($useragent, []);
+        } elseif (preg_match('/Hatena::Bookmark/', $useragent)) {
+            $browser = new HatenaBookmark($useragent, []);
+        } elseif (preg_match('/EasyBib AutoCite/', $useragent)) {
+            $browser = new EasyBibAutoCite($useragent, []);
+        } elseif (preg_match('/ShortLinkTranslate/', $useragent)) {
+            $browser = new ShortLinkTranslate($useragent, []);
+        } elseif (preg_match('/Marketing Grader/', $useragent)) {
+            $browser = new MarketingGrader($useragent, []);
+        } elseif (preg_match('/Grammarly/', $useragent)) {
+            $browser = new Grammarly($useragent, []);
+        } elseif (preg_match('/Dispatch/', $useragent)) {
+            $browser = new Dispatch($useragent, []);
+        } elseif (preg_match('/Raven Link Checker/', $useragent)) {
+            $browser = new RavenLinkChecker($useragent, []);
+        } elseif (preg_match('/http\-kit/', $useragent)) {
+            $browser = new HttpKit($useragent, []);
+        } elseif (preg_match('/sfFeedReader/', $useragent)) {
+            $browser = new SymfonyRssReader($useragent, []);
+        } elseif (preg_match('/Twikle/', $useragent)) {
+            $browser = new TwikleBot($useragent, []);
+        } elseif (preg_match('/node\-fetch/', $useragent)) {
+            $browser = new NodeFetch($useragent, []);
+        } elseif (preg_match('/BrokenLinkCheck\.com/', $useragent)) {
+            $browser = new BrokenLinkCheck($useragent, []);
+        } elseif (preg_match('/BCKLINKS/', $useragent)) {
+            $browser = new BckLinks($useragent, []);
+        } elseif (preg_match('/Faraday/', $useragent)) {
+            $browser = new Faraday($useragent, []);
+        } elseif (preg_match('/gettor/', $useragent)) {
+            $browser = new Gettor($useragent, []);
+        } elseif (preg_match('/SEOstats/', $useragent)) {
+            $browser = new SeoStats($useragent, []);
+        } elseif (preg_match('/ZnajdzFoto\/Image/', $useragent)) {
+            $browser = new ZnajdzFotoImageBot($useragent, []);
+        } elseif (preg_match('/infoX\-WISG/', $useragent)) {
+            $browser = new InfoxWisg($useragent, []);
+        } elseif (preg_match('/wscheck\.com/', $useragent)) {
+            $browser = new WscheckBot($useragent, []);
+        } elseif (preg_match('/Tweetminster/', $useragent)) {
+            $browser = new TweetminsterBot($useragent, []);
+        } elseif (preg_match('/Astute SRM/', $useragent)) {
+            $browser = new AstuteSocial($useragent, []);
+        } elseif (preg_match('/LongURL API/', $useragent)) {
+            $browser = new LongUrlBot($useragent, []);
+        } elseif (preg_match('/Trove/', $useragent)) {
+            $browser = new TroveBot($useragent, []);
+        } elseif (preg_match('/Melvil Favicon/', $useragent)) {
+            $browser = new MelvilFaviconBot($useragent, []);
+        } elseif (preg_match('/Melvil/', $useragent)) {
+            $browser = new MelvilBot($useragent, []);
+        } elseif (preg_match('/Pearltrees/', $useragent)) {
+            $browser = new PearltreesBot($useragent, []);
+        } elseif (preg_match('/Svven\-Summarizer/', $useragent)) {
+            $browser = new SvvenSummarizerBot($useragent, []);
+        } elseif (preg_match('/Athena Site Analyzer/', $useragent)) {
+            $browser = new AthenaSiteAnalyzer($useragent, []);
+        } elseif (preg_match('/Exploratodo/', $useragent)) {
+            $browser = new ExploratodoBot($useragent, []);
+        } elseif (preg_match('/WhatsApp/', $useragent)) {
+            $browser = new WhatsApp($useragent, []);
+        } elseif (preg_match('/DDG\-Android\-/', $useragent)) {
+            $browser = new DuckDuckApp($useragent, []);
+        } elseif (preg_match('/WebCorp/', $useragent)) {
+            $browser = new WebCorp($useragent, []);
+        } elseif (preg_match('/ROR Sitemap Generator/', $useragent)) {
+            $browser = new RorSitemapGenerator($useragent, []);
+        } elseif (preg_match('/AuditMyPC Webmaster Tool/', $useragent)) {
+            $browser = new AuditmypcWebmasterTool($useragent, []);
+        } elseif (preg_match('/XmlSitemapGenerator/', $useragent)) {
+            $browser = new XmlSitemapGenerator($useragent, []);
+        } elseif (preg_match('/Stratagems Kumo/', $useragent)) {
+            $browser = new StratagemsKumo($useragent, []);
+        } elseif (preg_match('/YOURLS/', $useragent)) {
+            $browser = new Yourls($useragent, []);
+        } elseif (preg_match('/Embed PHP Library/', $useragent)) {
+            $browser = new EmbedPhpLibrary($useragent, []);
+        } elseif (preg_match('/SPIP/', $useragent)) {
+            $browser = new Spip($useragent, []);
+        } elseif (preg_match('/Friendica/', $useragent)) {
+            $browser = new Friendica($useragent, []);
+        } elseif (preg_match('/MagpieRSS/', $useragent)) {
+            $browser = new MagpieRss($useragent, []);
+        } elseif (preg_match('/Short URL Checker/', $useragent)) {
+            $browser = new ShortUrlChecker($useragent, []);
+        } elseif (preg_match('/webnumbrFetcher/', $useragent)) {
+            $browser = new WebnumbrFetcher($useragent, []);
+        } elseif (preg_match('/(WAP Browser|Spice QT\-75|KKT20\/MIDP)/', $useragent)) {
+            $browser = new WapBrowser($useragent, []);
+        } elseif (preg_match('/java/i', $useragent)) {
+            $browser = new JavaStandardLibrary($useragent, []);
+        } elseif (preg_match('/(unister\-test|unistertesting|unister\-https\-test)/i', $useragent)) {
+            $browser = new UnisterTesting($useragent, []);
         } else {
-            $browser = new UnknownBrowser($agent, []);
+            $browser = new UnknownBrowser($useragent, []);
         }
 
         return $browser;

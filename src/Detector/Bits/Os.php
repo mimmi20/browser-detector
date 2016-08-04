@@ -54,21 +54,19 @@ class Os
     private $bits = null;
 
     /**
-     * @var Utils
-     */
-    private $utils = null;
-
-    /**
      * class constructor
      *
      * @param string $useragent
      */
     public function __construct($useragent)
     {
-        $this->utils = new Utils();
+        if ($useragent) {
+            throw new \UnexpectedValueException(
+                'The useragent parameter is required in this function'
+            );
+        }
 
         $this->useragent = $useragent;
-        $this->utils->setUserAgent($this->useragent);
     }
 
     /**
@@ -78,13 +76,11 @@ class Os
      */
     public function getBits()
     {
-        if (null === $this->useragent) {
-            throw new \UnexpectedValueException(
-                'You have to set the useragent before calling this function'
-            );
+        if (null !== $this->bits) {
+            return $this->bits;
         }
 
-        $this->detectBits();
+        $this->bits = $this->detectBits();
 
         return $this->bits;
     }
@@ -92,35 +88,30 @@ class Os
     /**
      * detects the bit count by this browser from the given user agent
      *
-     * @return Os
+     * @return int
      */
     private function detectBits()
     {
-        if ($this->utils->checkIfContains(
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains(
             ['x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64'],
             true
         )
         ) {
-            $this->bits = 64;
-
-            return $this;
+            return 64;
         }
 
-        if ($this->utils->checkIfContains(['win3.1', 'windows 3.1'], true)) {
-            $this->bits = 16;
-
-            return $this;
+        if ($utils->checkIfContains(['win3.1', 'windows 3.1'], true)) {
+            return 16;
         }
 
         // old deprecated 8 bit systems
-        if ($this->utils->checkIfContains(['cp/m', '8-bit'], true)) {
-            $this->bits = 8;
-
-            return $this;
+        if ($utils->checkIfContains(['cp/m', '8-bit'], true)) {
+            return 8;
         }
 
-        $this->bits = 32;
-
-        return $this;
+        return 32;
     }
 }

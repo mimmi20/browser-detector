@@ -29,30 +29,53 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser;
-
-use BrowserDetector\Detector\Bits\Browser as BrowserBits;
-use UaResult\Browser\Browser;
+namespace BrowserDetector\Detector;
 
 /**
- * base class for all browsers to detect
- *
  * @category  BrowserDetector
  *
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractBrowser extends Browser
+class Company
 {
     /**
-     * @return int|null
+     * the name of the company
+     *
+     * @var string
      */
-    public function getBits()
-    {
-        if (null === $this->bits) {
-            $this->bits = (new BrowserBits($this->useragent))->getBits();
-        }
+    private $name = '';
 
-        return $this->bits;
+    /**
+     * the brand name of the company
+     *
+     * @var string
+     */
+    private $brandname = '';
+
+    /**
+     * @param string $name
+     * @param string $brandname
+     */
+    public function __construct($name, $brandname)
+    {
+        $this->name      = $name;
+        $this->brandname = $brandname;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBrandname()
+    {
+        return $this->brandname;
     }
 }

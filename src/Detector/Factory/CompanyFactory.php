@@ -29,30 +29,53 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser;
+namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Bits\Browser as BrowserBits;
-use UaResult\Browser\Browser;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Os;
 
 /**
- * base class for all browsers to detect
+ * Browser detection class
  *
  * @category  BrowserDetector
  *
+ * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-abstract class AbstractBrowser extends Browser
+class CompanyFactory
 {
     /**
-     * @return int|null
+     * Gets the information about the platform by User Agent
+     *
+     * @param string $companyKey
+     *
+     * @return \BrowserDetector\Detector\Company
      */
-    public function getBits()
+    public static function get($companyKey)
     {
-        if (null === $this->bits) {
-            $this->bits = (new BrowserBits($this->useragent))->getBits();
+        static $comanies = null;
+
+        if (null === $comanies) {
+            $comanies = json_decode(file_get_contents('data/companies.json'));
         }
 
-        return $this->bits;
+        if (!isset($comanies->$companyKey)) {
+            return new Company('unknown', 'unknown');
+        }
+
+        if (isset($comanies->$companyKey->name)) {
+            $name = $comanies->$companyKey->name;
+        } else {
+            $name = 'unknown';
+        }
+
+        if (isset($comanies->$companyKey->brandname)) {
+            $brandname = $comanies->$companyKey->brandname;
+        } else {
+            $brandname = 'unknown';
+        }
+
+        return new Company($name, $brandname);
     }
 }

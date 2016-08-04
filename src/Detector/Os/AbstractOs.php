@@ -50,8 +50,7 @@ abstract class AbstractOs extends Os
     public function getBits()
     {
         if (null === $this->bits) {
-            $detector   = new OsBits($this->useragent);
-            $this->bits = $detector->getBits();
+            $this->bits = (new OsBits($this->useragent))->getBits();
         }
 
         return $this->bits;

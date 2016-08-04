@@ -51,63 +51,63 @@ class EngineFactory implements FactoryInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string                   $agent
+     * @param string                   $useragent
      * @param \UaResult\Os\OsInterface $os
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public static function detect($agent, OsInterface $os = null)
+    public static function detect($useragent, OsInterface $os = null)
     {
         $utils = new Utils();
-        $utils->setUserAgent($agent);
+        $utils->setUserAgent($useragent);
 
         if (null !== $os && in_array($os->getName(), ['iOS'])) {
-            $engineName = new \BrowserDetector\Detector\Engine\Webkit($agent, []);
+            $engineName = new \BrowserDetector\Detector\Engine\Webkit($useragent, []);
         } elseif ($utils->checkIfContains('Edge')) {
-            $engineName = new \BrowserDetector\Detector\Engine\Edge($agent, []);
+            $engineName = new \BrowserDetector\Detector\Engine\Edge($useragent, []);
         } elseif ($utils->checkIfContains(' U2/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\U2($agent, []);
+            $engineName = new \BrowserDetector\Detector\Engine\U2($useragent, []);
         } elseif ($utils->checkIfContains(' U3/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\U3($agent, []);
+            $engineName = new \BrowserDetector\Detector\Engine\U3($useragent, []);
         } elseif ($utils->checkIfContains(' T5/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\T5($agent, []);
-        } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $agent)
-            && false === stripos($agent, 'opera')
-            && false === stripos($agent, 'tasman')
+            $engineName = new \BrowserDetector\Detector\Engine\T5($useragent, []);
+        } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
+            && false === stripos($useragent, 'opera')
+            && false === stripos($useragent, 'tasman')
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\Trident($agent, []);
-        } elseif (preg_match('/(goanna)/i', $agent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Goanna($agent, []);
-        } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $agent)) {
-            $chrome = new Chrome($agent, []);
+            $engineName = new \BrowserDetector\Detector\Engine\Trident($useragent, []);
+        } elseif (preg_match('/(goanna)/i', $useragent)) {
+            $engineName = new \BrowserDetector\Detector\Engine\Goanna($useragent, []);
+        } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
+            $chrome = new Chrome($useragent, []);
 
             $chromeVersion = $chrome->getVersion()->getVersion(Version::MAJORONLY);
 
             if ($chromeVersion >= 28) {
-                $engineName = new \BrowserDetector\Detector\Engine\Blink($agent, []);
+                $engineName = new \BrowserDetector\Detector\Engine\Blink($useragent, []);
             } else {
-                $engineName = new \BrowserDetector\Detector\Engine\Webkit($agent, []);
+                $engineName = new \BrowserDetector\Detector\Engine\Webkit($useragent, []);
             }
-        } elseif (preg_match('/(KHTML|Konqueror)/', $agent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Khtml($agent, []);
-        } elseif (preg_match('/(tasman)/i', $agent)
+        } elseif (preg_match('/(KHTML|Konqueror)/', $useragent)) {
+            $engineName = new \BrowserDetector\Detector\Engine\Khtml($useragent, []);
+        } elseif (preg_match('/(tasman)/i', $useragent)
             || $utils->checkIfContainsAll(['MSIE', 'Mac_PowerPC'])
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\Tasman($agent, []);
-        } elseif (preg_match('/(Presto|Opera)/', $agent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Presto($agent, []);
-        } elseif (preg_match('/(Gecko|Firefox)/', $agent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Gecko($agent, []);
-        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $agent)
+            $engineName = new \BrowserDetector\Detector\Engine\Tasman($useragent, []);
+        } elseif (preg_match('/(Presto|Opera)/', $useragent)) {
+            $engineName = new \BrowserDetector\Detector\Engine\Presto($useragent, []);
+        } elseif (preg_match('/(Gecko|Firefox)/', $useragent)) {
+            $engineName = new \BrowserDetector\Detector\Engine\Gecko($useragent, []);
+        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $useragent)
             && !$utils->checkIfContains(['Kindle'])
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\NetFront($agent, []);
+            $engineName = new \BrowserDetector\Detector\Engine\NetFront($useragent, []);
         } elseif ($utils->checkIfContains('BlackBerry')) {
-            $engineName = new \BrowserDetector\Detector\Engine\BlackBerry($agent, []);
-        } elseif (preg_match('/(Teleca|Obigo)/', $agent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Teleca($agent, []);
+            $engineName = new \BrowserDetector\Detector\Engine\BlackBerry($useragent, []);
+        } elseif (preg_match('/(Teleca|Obigo)/', $useragent)) {
+            $engineName = new \BrowserDetector\Detector\Engine\Teleca($useragent, []);
         } else {
-            $engineName = new \BrowserDetector\Detector\Engine\UnknownEngine($agent, []);
+            $engineName = new \BrowserDetector\Detector\Engine\UnknownEngine($useragent, []);
         }
 
         return $engineName;
