@@ -84,10 +84,10 @@ class NokiaLumia510 extends AbstractDevice implements DeviceHasSpecificPlatformI
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Windows Phone OS', WindowsPhoneOs::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName(), $bits);
     }
 }

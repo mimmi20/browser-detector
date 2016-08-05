@@ -81,10 +81,10 @@ class NecN705i extends AbstractDevice implements DeviceHasSpecificPlatformInterf
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Maemo
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\Maemo($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Linux Smartphone OS', VersionFactory::detectVersion($useragent, ['Maemo']), CompanyFactory::get('LinuxFoundation')->getName(), $bits);
     }
 }

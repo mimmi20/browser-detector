@@ -81,10 +81,10 @@ class SonyKdl40ex720 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Linux
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\Linux($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits);
     }
 }

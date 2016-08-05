@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcDesire816g extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class HtcDesire816g extends AbstractDevice
 {
     /**
      * the class constructor
@@ -76,15 +76,5 @@ class HtcDesire816g extends AbstractDevice implements DeviceHasSpecificPlatformI
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

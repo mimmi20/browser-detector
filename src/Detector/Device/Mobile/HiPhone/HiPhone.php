@@ -81,7 +81,7 @@ class HiPhone extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
     /**
      * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
      *
-     * @return \BrowserDetector\Detector\Os\AndroidOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {

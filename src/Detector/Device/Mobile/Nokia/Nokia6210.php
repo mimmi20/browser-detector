@@ -81,10 +81,10 @@ class Nokia6210 extends AbstractDevice implements DeviceHasSpecificPlatformInter
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Symbianos
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Symbian OS', new Version(0), CompanyFactory::get('SymbianFoundation')->getName(), $bits);
     }
 }

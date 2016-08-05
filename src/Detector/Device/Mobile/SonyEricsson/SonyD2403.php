@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyD2403 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SonyD2403 extends AbstractDevice
 {
     /**
      * the class constructor
@@ -76,15 +76,5 @@ class SonyD2403 extends AbstractDevice implements DeviceHasSpecificPlatformInter
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

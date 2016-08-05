@@ -81,10 +81,10 @@ class Apple extends AbstractDevice implements DeviceHasSpecificPlatformInterface
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Ios
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\Ios($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'iOS', Ios::detectVersion($useragent), CompanyFactory::get('Apple')->getName(), $bits);
     }
 }

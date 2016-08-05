@@ -81,10 +81,10 @@ class RimTablet extends AbstractDevice implements DeviceHasSpecificPlatformInter
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\RimTabletOs
+     * return new \UaResult\Os\Os($useragent, 'RIM Tablet OS', VersionFactory::detectVersion($useragent, ['RIM Tablet OS']), CompanyFactory::get('Rim')->getName(), $bits);
      */
     public function detectOs()
     {
-        return new Os\RimTabletOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'RIM Tablet OS', VersionFactory::detectVersion($useragent, ['RIM Tablet OS']), CompanyFactory::get('Rim')->getName(), $bits);
     }
 }

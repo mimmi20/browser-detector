@@ -81,10 +81,10 @@ class JollaSailfish extends AbstractDevice implements DeviceHasSpecificPlatformI
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\UnknownOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Joli OS', VersionFactory::detectVersion($useragent, ['Joli OS']), CompanyFactory::get('Unknown')->getName(), $bits);
     }
 }

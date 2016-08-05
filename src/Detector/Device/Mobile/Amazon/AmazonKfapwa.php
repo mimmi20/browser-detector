@@ -85,6 +85,6 @@ class AmazonKfapwa extends AbstractDevice implements DeviceHasSpecificPlatformIn
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new \UaResult\Os\Os($this->useragent, 'Android', AndroidOs::detectVersion($this->useragent), CompanyFactory::get('Google')->getName(), (new OsBits($this->useragent))->getBits());
     }
 }

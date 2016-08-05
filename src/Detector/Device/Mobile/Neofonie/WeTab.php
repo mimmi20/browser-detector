@@ -81,10 +81,10 @@ class WeTab extends AbstractDevice implements DeviceHasSpecificPlatformInterface
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\MeeGo
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\MeeGo($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'MeeGo', VersionFactory::detectVersion($useragent, ['MeeGo']), CompanyFactory::get('LinuxFoundation')->getName(), $bits);
     }
 }

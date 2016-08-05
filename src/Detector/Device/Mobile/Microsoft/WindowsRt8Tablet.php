@@ -81,10 +81,10 @@ class WindowsRt8Tablet extends AbstractDevice implements DeviceHasSpecificPlatfo
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\WindowsRt
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\WindowsRt($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Windows RT', Windows::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName(), $bits);
     }
 }

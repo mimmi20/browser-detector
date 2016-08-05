@@ -81,10 +81,10 @@ class LgKs20 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\WindowsCe
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\WindowsCe($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Windows CE', new Version(0), CompanyFactory::get('Microsoft')->getName(), $bits);
     }
 }

@@ -85,6 +85,6 @@ class AmazonKftt extends AbstractDevice implements DeviceHasSpecificPlatformInte
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new \UaResult\Os\Os($this->useragent, 'Android', AndroidOs::detectVersion($this->useragent), CompanyFactory::get('Google')->getName(), (new OsBits($this->useragent))->getBits());
     }
 }

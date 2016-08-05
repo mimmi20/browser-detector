@@ -34,7 +34,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Alcatel;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
 
 /**
@@ -43,7 +42,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AlcatelOt4030X extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AlcatelOt4030X extends AbstractDevice
 {
     /**
      * the class constructor
@@ -76,15 +75,5 @@ class AlcatelOt4030X extends AbstractDevice implements DeviceHasSpecificPlatform
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

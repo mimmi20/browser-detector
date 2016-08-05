@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Jolla extends AbstractDevice implements DeviceHasChildrenInterface
+class Jolla extends AbstractDevice
 {
     /**
      * the class constructor
@@ -76,23 +76,5 @@ class Jolla extends AbstractDevice implements DeviceHasChildrenInterface
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * detects the device name from the given user agent
-     *
-     * @return \UaResult\Device\DeviceInterface
-     */
-    public function detectDevice()
-    {
-        $chain = new Chain();
-        $chain->setUserAgent($this->useragent, []);
-        $chain->setNamespace('\BrowserDetector\Detector\Device\Mobile\Jolla');
-        $chain->setDirectory(
-            __DIR__ . DIRECTORY_SEPARATOR . 'Jolla' . DIRECTORY_SEPARATOR
-        );
-        $chain->setDefaultHandler($this);
-
-        return $chain->detect();
     }
 }

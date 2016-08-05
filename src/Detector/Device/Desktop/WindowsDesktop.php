@@ -81,10 +81,10 @@ class WindowsDesktop extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Windows
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\Windows($this->useragent, []);
+        return new \UaResult\Os\Os($this->useragent, 'Windows', Windows::detectVersion($this->useragent), CompanyFactory::get('Microsoft')->getName(), $bits);
     }
 }

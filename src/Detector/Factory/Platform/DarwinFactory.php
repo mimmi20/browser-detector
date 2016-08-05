@@ -31,8 +31,11 @@
 
 namespace BrowserDetector\Detector\Factory\Platform;
 
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 use BrowserDetector\Detector\Os;
+use BrowserDetector\Detector\Bits\Os as OsBits;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * Browser detection class
@@ -54,206 +57,207 @@ class DarwinFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        $bits = (new OsBits($useragent))->getBits();
+        
         if (false !== strpos($useragent, 'CFNetwork/760')) {
-            return new Os\Macosx($useragent, '10.11'); // OSX 10.11
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.11'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/758')) {
-            return new Os\Ios($useragent, '9.0'); // iOS 9.0
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('9.0'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/720')) {
-            return new Os\Macosx($useragent, '10.10'); // OSX 10.10
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.10'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/718')) {
-            return new Os\Macosx($useragent, '10.10'); // OSX 10.10
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.10'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/714')) {
-            return new Os\Macosx($useragent, '10.10'); // OSX 10.10
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.10'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.5')) {
-            return new Os\Ios($useragent, '8.4'); // iOS 8.4
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('8.4'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.4')) {
-            return new Os\Ios($useragent, '8.4'); // iOS 8.4
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('8.4'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.3')) {
-            return new Os\Ios($useragent, '8.3'); // iOS 8.3
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('8.3'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.2')) {
-            return new Os\Ios($useragent, '8.2'); // iOS 8.2
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('8.2'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.1')) {
-            return new Os\Ios($useragent, '8.1'); // iOS 8.1
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('8.1'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/711.0')) {
-            return new Os\Ios($useragent, '8.0'); // iOS 8.0
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('8.0'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/709')) {
-            return new Os\Macosx($useragent, '10.10'); // OSX 10.10
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.10'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/708')) {
-            return new Os\Macosx($useragent, '10.10'); // OSX 10.10
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.10'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/705')) {
-            return new Os\Macosx($useragent, '10.10'); // OSX 10.10
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.10'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/699')) {
-            return new Os\Macosx($useragent, '10.10'); // OSX 10.10
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.10'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/696')) {
-            return new Os\Macosx($useragent, '10.10'); // OSX 10.10
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.10'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/673')) {
-            return new Os\Macosx($useragent, '10.9'); // OSX 10.9
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.9'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/672.1')) {
-            return new Os\Ios($useragent, '7.1'); // iOS 7.1
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('7.1'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/672.0')) {
-            return new Os\Ios($useragent, '7.0'); // iOS 7.0
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('7.0'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/647')) {
-            return new Os\Macosx($useragent, '10.9'); // OSX 10.9
-        }
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.9'), CompanyFactory::get('Apple')->getName(), $bits);        }
 
         if (false !== strpos($useragent, 'CFNetwork/609.1')) {
-            return new Os\Ios($useragent, '6.1'); // iOS 6.1
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('6.1'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/609')) {
-            return new Os\Ios($useragent, '6.0'); // iOS 6.0
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('6.0'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/602')) {
-            return new Os\Ios($useragent, '6.0'); // iOS 6.0
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('6.0'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/596')) {
-            return new Os\Macosx($useragent, '10.8'); // OSX 10.8
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.8'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/595')) {
-            return new Os\Macosx($useragent, '10.8'); // OSX 10.8
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.8'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/561')) {
-            return new Os\Macosx($useragent, '10.8'); // OSX 10.8
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.8'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/548.1')) {
-            return new Os\Ios($useragent, '5.1'); // iOS 5.1
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('5.1'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/548.0')) {
-            return new Os\Ios($useragent, '5.0'); // iOS 5.0
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('5.0'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/520')) {
-            return new Os\Macosx($useragent, '10.7'); // OSX 10.7
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.7'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/515')) {
-            return new Os\Macosx($useragent, '10.7'); // OSX 10.7
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.7'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.13')) {
-            return new Os\Ios($useragent, '4.3'); // iOS 4.3
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('4.3'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.12')) {
-            return new Os\Ios($useragent, '4.2'); // iOS 4.2
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('4.2'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.10')) {
-            return new Os\Ios($useragent, '4.1'); // iOS 4.1
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('4.1'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/485.2')) {
-            return new Os\Ios($useragent, '4.0'); // iOS 4.0
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('4.0'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/467.12')) {
-            return new Os\Ios($useragent, '3.2'); // iOS 3.2
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('3.2'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/459')) {
-            return new Os\Ios($useragent, '3.1'); // iOS 3.1
+            return new \UaResult\Os\Os($useragent, 'iOS', VersionFactory::set('3.1'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/454')) {
-            return new Os\Macosx($useragent, '10.6'); // OSX 10.6
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.6'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/438')) {
-            return new Os\Macosx($useragent, '10.5'); // OSX 10.5
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.5'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/433')) {
-            return new Os\Macosx($useragent, '10.5'); // OSX 10.5
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.5'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/422')) {
-            return new Os\Macosx($useragent, '10.5'); // OSX 10.5
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.5'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/339')) {
-            return new Os\Macosx($useragent, '10.5'); // OSX 10.5
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.5'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/330')) {
-            return new Os\Macosx($useragent, '10.5'); // OSX 10.5
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.5'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/221')) {
-            return new Os\Macosx($useragent, '10.5'); // OSX 10.5
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.5'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/220')) {
-            return new Os\Macosx($useragent, '10.5'); // OSX 10.5
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.5'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/217')) {
-            return new Os\Macosx($useragent, '10.5'); // OSX 10.5
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.5'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/129')) {
-            return new Os\Macosx($useragent, '10.4'); // OSX 10.4
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.4'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/128')) {
-            return new Os\Macosx($useragent, '10.4'); // OSX 10.4
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.4'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/4.0')) {
-            return new Os\Macosx($useragent, '10.3'); // OSX 10.3
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.3'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/1.2')) {
-            return new Os\Macosx($useragent, '10.3'); // OSX 10.3
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.3'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/1.1')) {
-            return new Os\Macosx($useragent, '10.3'); // OSX 10.3
+            return new \UaResult\Os\Os($useragent, 'Mac OS X', VersionFactory::set('10.3'), CompanyFactory::get('Apple')->getName(), $bits);
         }
 
-        return new Os\Darwin($useragent);
+        return new \UaResult\Os\Os($useragent, 'Darwin', VersionFactory::detectVersion($useragent, ['Darwin']), CompanyFactory::get('Apple')->getName(), $bits);
     }
 }

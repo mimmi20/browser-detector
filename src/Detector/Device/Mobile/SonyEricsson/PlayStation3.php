@@ -81,10 +81,10 @@ class PlayStation3 extends AbstractDevice implements DeviceHasSpecificPlatformIn
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\CellOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\CellOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'CellOS', new Version(0), CompanyFactory::get('Sony')->getName(), $bits);
     }
 }

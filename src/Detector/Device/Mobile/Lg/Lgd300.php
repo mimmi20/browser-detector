@@ -81,10 +81,10 @@ class Lgd300 extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\FirefoxOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\FirefoxOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'FirefoxOS', FirefoxOs::detectVersion($useragent), CompanyFactory::get('MozillaFoundation')->getName(), $bits);
     }
 }

@@ -81,10 +81,10 @@ class HtcRadar4G extends AbstractDevice implements DeviceHasSpecificPlatformInte
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\WindowsPhoneOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\WindowsPhoneOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Windows Phone OS', WindowsPhoneOs::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName(), $bits);
     }
 }

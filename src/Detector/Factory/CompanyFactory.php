@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Company;
+use UaResult\Company\Company;
 use BrowserDetector\Detector\Os;
 
 /**
@@ -50,28 +50,28 @@ class CompanyFactory
      *
      * @param string $companyKey
      *
-     * @return \BrowserDetector\Detector\Company
+     * @return \UaResult\Company\Company
      */
     public static function get($companyKey)
     {
-        static $comanies = null;
+        static $companies = null;
 
-        if (null === $comanies) {
-            $comanies = json_decode(file_get_contents('data/companies.json'));
+        if (null === $companies) {
+            $companies = json_decode(file_get_contents('data/companies.json'));
         }
 
-        if (!isset($comanies->$companyKey)) {
+        if (!isset($companies->$companyKey)) {
             return new Company('unknown', 'unknown');
         }
 
-        if (isset($comanies->$companyKey->name)) {
-            $name = $comanies->$companyKey->name;
+        if (isset($companies->$companyKey->name)) {
+            $name = $companies->$companyKey->name;
         } else {
             $name = 'unknown';
         }
 
-        if (isset($comanies->$companyKey->brandname)) {
-            $brandname = $comanies->$companyKey->brandname;
+        if (isset($companies->$companyKey->brandname)) {
+            $brandname = $companies->$companyKey->brandname;
         } else {
             $brandname = 'unknown';
         }

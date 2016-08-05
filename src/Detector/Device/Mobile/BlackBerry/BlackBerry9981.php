@@ -81,10 +81,10 @@ class BlackBerry9981 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\RimOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\RimOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'RIM OS', RimOs::detectVersion($useragent), CompanyFactory::get('Rim')->getName(), $bits);
     }
 }

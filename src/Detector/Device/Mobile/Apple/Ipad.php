@@ -85,6 +85,6 @@ class Ipad extends AbstractDevice implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Ios($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'iOS', Ios::detectVersion($useragent), CompanyFactory::get('Apple')->getName(), $bits);
     }
 }

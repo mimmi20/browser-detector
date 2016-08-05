@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PrestigioPmp7380d3g extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class PrestigioPmp7380d3g extends AbstractDevice
 {
     /**
      * the class constructor
@@ -76,15 +76,5 @@ class PrestigioPmp7380d3g extends AbstractDevice implements DeviceHasSpecificPla
                 'type'              => new UaDeviceType\Tablet(),
             ]
         );
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

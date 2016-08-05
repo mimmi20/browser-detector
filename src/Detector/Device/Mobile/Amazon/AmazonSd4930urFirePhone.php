@@ -85,6 +85,6 @@ class AmazonSd4930urFirePhone extends AbstractDevice implements DeviceHasSpecifi
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent, []);
+        return new \UaResult\Os\Os($this->useragent, 'Android', AndroidOs::detectVersion($this->useragent), CompanyFactory::get('Google')->getName(), (new OsBits($this->useragent))->getBits());
     }
 }

@@ -81,10 +81,10 @@ class Nintendo extends AbstractDevice implements DeviceHasSpecificPlatformInterf
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\NintendoOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\NintendoOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Nintendo OS', new Version(0), CompanyFactory::get('Nintendo')->getName(), $bits);
     }
 }

@@ -81,10 +81,10 @@ class HtcVpaCompactIv extends AbstractDevice implements DeviceHasSpecificPlatfor
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\WindowsMobileOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\WindowsMobileOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Windows Mobile OS', WindowsMobileOs::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName(), $bits);
     }
 }

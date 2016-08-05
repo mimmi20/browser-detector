@@ -81,10 +81,10 @@ class SamsungGts8500 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Bada
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\Bada($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Bada', VersionFactory::detectVersion($useragent, ['Bada']), CompanyFactory::get('Samsung')->getName(), $bits);
     }
 }

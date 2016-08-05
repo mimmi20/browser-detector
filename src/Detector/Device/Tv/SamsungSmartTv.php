@@ -76,14 +76,4 @@ class SamsungSmartTv extends AbstractDevice
             ]
         );
     }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
-    }
 }

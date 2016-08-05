@@ -81,10 +81,10 @@ class SamsungSchU820 extends AbstractDevice implements DeviceHasSpecificPlatform
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Brew
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\Brew($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Brew', VersionFactory::detectVersion($useragent, ['BREW']), CompanyFactory::get('Unknown')->getName(), $bits);
     }
 }

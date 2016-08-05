@@ -43,7 +43,7 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmN915fy extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SamsungSmN915fy extends AbstractDevice
 {
     /**
      * the class constructor
@@ -76,15 +76,5 @@ class SamsungSmN915fy extends AbstractDevice implements DeviceHasSpecificPlatfor
                 'type'              => new UaDeviceType\MobilePhone(),
             ]
         );
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
-     */
-    public function detectOs()
-    {
-        return new Os\UnknownOs($this->useragent, []);
     }
 }

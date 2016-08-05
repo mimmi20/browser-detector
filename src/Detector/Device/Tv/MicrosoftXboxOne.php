@@ -85,6 +85,6 @@ class MicrosoftXboxOne extends AbstractDevice implements DeviceHasSpecificPlatfo
      */
     public function detectOs()
     {
-        return new Os\Windows($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Windows', Windows::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName(), $bits);
     }
 }

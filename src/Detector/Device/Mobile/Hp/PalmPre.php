@@ -81,10 +81,10 @@ class PalmPre extends AbstractDevice implements DeviceHasSpecificPlatformInterfa
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\WebOs
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\WebOs($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'webOS', VersionFactory::detectVersion($useragent, ['WebOS', 'webOS', 'hpwOS']), CompanyFactory::get('Hp')->getName(), $bits);
     }
 }

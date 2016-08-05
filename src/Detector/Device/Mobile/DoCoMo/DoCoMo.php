@@ -81,10 +81,10 @@ class DoCoMo extends AbstractDevice implements DeviceHasSpecificPlatformInterfac
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\Java
+     * @return \UaResult\Os\Os
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent, []);
+        return new \UaResult\Os\Os($useragent, 'Java', new Version(0), CompanyFactory::get('Oracle')->getName(), $bits);
     }
 }
