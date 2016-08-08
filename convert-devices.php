@@ -155,7 +155,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
     $rewrite        = true;
 
     if ($rewrite) {
-        $newCall = 'return new \UaResult\Device\Device($useragent, \'' . $codename . '\', null, CompanyFactory::get(\'' . $manufacturer . '\')->getName(), new UaDeviceType\\' . $type . '(), CompanyFactory::get(\'' . $brand . '\')->getName(), \'' . $marketing . '\', \'' . $pointing . '\', ' . $width . ', ' . $height . ', ' . $dual . ', ' . $colors . ', ' . $sms . ', ' . $nfc . ', ' . $qwerty . ');';
+        $newCall = 'return new \UaResult\Device\Device($useragent, \'' . $codename . '\', null, CompanyFactory::get(\'' . $manufacturer . '\')->getName(), new UaDeviceType\\' . $type . '(), CompanyFactory::get(\'' . $brand . '\')->getName(), \'' . $marketing . '\', ' . $pointing . ', ' . $width . ', ' . $height . ', ' . $dual . ', ' . $colors . ', ' . $sms . ', ' . $nfc . ', ' . $qwerty . ');';
 
         $factoryContent = str_replace($classMatches[0][$index], $newCall, $factoryContent);
         file_put_contents($factoryFile, $factoryContent);
