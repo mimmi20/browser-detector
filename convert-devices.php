@@ -41,7 +41,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
     $filecontent = file_get_contents($classFile);
     $pointMatches  = [];
 
-    if (preg_match('/\\\'pointingMethod\\\'\s+ => \\\'(\w+)\\\'/', $filecontent, $pointMatches)) {
+    if (preg_match('/\\\'pointingMethod\\\'\s+=> \\\'(\w+)\\\'/', $filecontent, $pointMatches)) {
         $pointing = '\'' . $pointMatches[1] . '\'';
     } else {
         $pointing = 'null';
@@ -49,7 +49,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $widthMatches = [];
 
-    if (preg_match('/\\\'resolutionWidth\\\'\s+ => ([0-9nul]+)/', $filecontent, $widthMatches)) {
+    if (preg_match('/\\\'resolutionWidth\\\'\s+=> ([0-9nul]+)/', $filecontent, $widthMatches)) {
         $width = $widthMatches[1];
     } else {
         $width = 'null';
@@ -57,7 +57,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $heightMatches = [];
 
-    if (preg_match('/\\\'resolutionHeight\\\'\s+ => ([0-9nul]+)/', $filecontent, $heightMatches)) {
+    if (preg_match('/\\\'resolutionHeight\\\'\s+=> ([0-9nul]+)/', $filecontent, $heightMatches)) {
         $height = $heightMatches[1];
     } else {
         $height = 'null';
@@ -65,7 +65,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $dualMatches = [];
 
-    if (preg_match('/\\\'dualOrientation\\\'\s+ => (true|false|null)/', $filecontent, $dualMatches)) {
+    if (preg_match('/\\\'dualOrientation\\\'\s+=> (true|false|null)/', $filecontent, $dualMatches)) {
         $dual = $dualMatches[1];
     } else {
         $dual = 'null';
@@ -73,7 +73,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $colorMatches = [];
 
-    if (preg_match('/\\\'colors\\\'\s+ => ([0-9]+)/', $filecontent, $colorMatches)) {
+    if (preg_match('/\\\'colors\\\'\s+=> ([0-9]+)/', $filecontent, $colorMatches)) {
         $colors = $colorMatches[1];
     } else {
         $colors = 'null';
@@ -81,7 +81,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $smsMatches = [];
 
-    if (preg_match('/\\\'smsSupport\\\'\s+ => (true|false|null)/', $filecontent, $smsMatches)) {
+    if (preg_match('/\\\'smsSupport\\\'\s+=> (true|false|null)/', $filecontent, $smsMatches)) {
         $sms = $smsMatches[1];
     } else {
         $sms = 'null';
@@ -89,7 +89,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $nfcMatches = [];
 
-    if (preg_match('/\\\'nfcSupport\\\'\s+ => (true|false|null)/', $filecontent, $nfcMatches)) {
+    if (preg_match('/\\\'nfcSupport\\\'\s+=> (true|false|null)/', $filecontent, $nfcMatches)) {
         $nfc = $nfcMatches[1];
     } else {
         $nfc = 'null';
@@ -97,7 +97,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $quertyMatches = [];
 
-    if (preg_match('/\\\'hasQwertyKeyboard\\\'\s+ => (true|false|null)/', $filecontent, $quertyMatches)) {
+    if (preg_match('/\\\'hasQwertyKeyboard\\\'\s+=> (true|false|null)/', $filecontent, $quertyMatches)) {
         $qwerty = $quertyMatches[1];
     } else {
         $qwerty = 'null';
@@ -105,7 +105,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $typeMatches = [];
 
-    if (preg_match('/\\\'type\\\'\s+ => new UaDeviceType\\\\([^\\(]+)/', $filecontent, $quertyMatches)) {
+    if (preg_match('/\\\'type\\\'\s+=> new UaDeviceType\\\\([^\\(]+)/', $filecontent, $quertyMatches)) {
         $type = $quertyMatches[1];
     } else {
         $type = 'new UaDeviceType\Unknown';
@@ -113,7 +113,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $codeMatches = [];
 
-    if (preg_match('/\\\'deviceName\\\'\s+ => \\\'([^\\\\\']+)\\\'/', $filecontent, $codeMatches)) {
+    if (preg_match('/\\\'deviceName\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $codeMatches)) {
         $codename = $codeMatches[1];
     } else {
         $codename = 'unknown';
@@ -121,7 +121,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $marketingMatches = [];
 
-    if (preg_match('/\\\'marketingName\\\'\s+ => \\\'([^\\\\\']+)\\\'/', $filecontent, $marketingMatches)) {
+    if (preg_match('/\\\'marketingName\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $marketingMatches)) {
         $marketing = $marketingMatches[1];
     } else {
         $marketing = 'unknown';
@@ -129,7 +129,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $manuMatches = [];
 
-    if (preg_match('/\\\'manufacturer\\\'\s+ => \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
+    if (preg_match('/\\\'manufacturer\\\'\s+=> \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
         $manufacturer = $marketingMatches[1];
     } else {
         $manufacturer = 'Unknown';
@@ -137,7 +137,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $brandMatches = [];
 
-    if (preg_match('/\\\'brand\\\'\s+ => \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
+    if (preg_match('/\\\'brand\\\'\s+=> \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
         $brand = $marketingMatches[1];
     } else {
         $brand = 'Unknown';
@@ -229,49 +229,49 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         );
     }
 
-    if (preg_match('/\\\'pointing_method\\\'\s+ => \\\'(\w+)\\\'/', $filecontent, $matches)) {
+    if (preg_match('/\\\'pointing_method\\\'\s+=> \\\'(\w+)\\\'/', $filecontent, $matches)) {
         $pointing = '\'' . $matches[1] . '\'';
     } else {
         $pointing = 'null';
     }
 
-    if (preg_match('/\\\'resolution_width\\\'\s+ => ([0-9nul]+)/', $filecontent, $matches)) {
+    if (preg_match('/\\\'resolution_width\\\'\s+=> ([0-9nul]+)/', $filecontent, $matches)) {
         $width = $matches[1];
     } else {
         $width = 'null';
     }
 
-    if (preg_match('/\\\'resolution_height\\\'\s+ => ([0-9nul]+)/', $filecontent, $matches)) {
+    if (preg_match('/\\\'resolution_height\\\'\s+=> ([0-9nul]+)/', $filecontent, $matches)) {
         $height = $matches[1];
     } else {
         $height = 'null';
     }
 
-    if (preg_match('/\\\'dual_orientation\\\'\s+ => (true|false|null)/', $filecontent, $matches)) {
+    if (preg_match('/\\\'dual_orientation\\\'\s+=> (true|false|null)/', $filecontent, $matches)) {
         $dual = $matches[1];
     } else {
         $dual = 'null';
     }
 
-    if (preg_match('/\\\'colors\\\'\s+ => ([0-9]+)/', $filecontent, $matches)) {
+    if (preg_match('/\\\'colors\\\'\s+=> ([0-9]+)/', $filecontent, $matches)) {
         $colors = $matches[1];
     } else {
         $colors = 'null';
     }
 
-    if (preg_match('/\\\'sms_enabled\\\'\s+ => (true|false|null)/', $filecontent, $matches)) {
+    if (preg_match('/\\\'sms_enabled\\\'\s+=> (true|false|null)/', $filecontent, $matches)) {
         $sms = $matches[1];
     } else {
         $sms = 'null';
     }
 
-    if (preg_match('/\\\'nfc_support\\\'\s+ => (true|false|null)/', $filecontent, $matches)) {
+    if (preg_match('/\\\'nfc_support\\\'\s+=> (true|false|null)/', $filecontent, $matches)) {
         $nfc = $matches[1];
     } else {
         $nfc = 'null';
     }
 
-    if (preg_match('/\\\'has_qwerty_keyboard\\\'\s+ => (true|false|null)/', $filecontent, $matches)) {
+    if (preg_match('/\\\'has_qwerty_keyboard\\\'\s+=> (true|false|null)/', $filecontent, $matches)) {
         $qwerty = $matches[1];
     } else {
         $qwerty = 'null';
@@ -283,13 +283,13 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         $type = 'Unknown';
     }
 
-    if (preg_match('/\\\'code_name\\\'\s+ => \\\'([^\\\\\']+)\\\'/', $filecontent, $matches)) {
+    if (preg_match('/\\\'code_name\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $matches)) {
         $codename = $matches[1];
     } else {
         $codename = 'unknown';
     }
 
-    if (preg_match('/\\\'marketing_name\\\'\s+ => \\\'([^\\\\\']+)\\\'/', $filecontent, $matches)) {
+    if (preg_match('/\\\'marketing_name\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $matches)) {
         $marketing = $matches[1];
     } else {
         $marketing = 'unknown';
