@@ -105,7 +105,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $typeMatches = [];
 
-    if (preg_match('/\\\'type\\\'\s+ => (new [^\\(]+)/', $filecontent, $quertyMatches)) {
+    if (preg_match('/\\\'type\\\'\s+ => (new UaDeviceType\\\\[^\\(]+)/', $filecontent, $quertyMatches)) {
         $type = $quertyMatches[1];
     } else {
         $type = 'new UaDeviceType\Unknown';
