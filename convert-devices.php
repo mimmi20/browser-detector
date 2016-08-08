@@ -12,163 +12,173 @@ require 'vendor/autoload.php';
 
 ini_set('memory_limit', '-1');
 
-$factoryFile    = 'src\\Detector\\Factory\\Device\\Mobile\\AmoiFactory.php';
-$factoryContent = file_get_contents($factoryFile);
+$sourceDirectory = 'src\\Detector\\Factory\\Device\\Mobile\\';
 
-$classMatches = [];
+$iterator = new \RecursiveDirectoryIterator($sourceDirectory);
 
-preg_match_all('/return new ([^\(]+)\(\$useragent, \[\]\)\;/', $factoryContent, $classMatches);
-$sourceDirectory = 'src\\Detector\\Device\\Mobile\\';
-
-$processedClases = [];
-
-foreach ($classMatches[1] as $index => $classBasename) {
-    $classFile = $sourceDirectory . $classBasename . '.php';
-
-    echo 'processing ', $classFile, PHP_EOL;
-
-    if (!file_exists($classFile)) {
-        str_replace($classMatches[0][$index], $classMatches[0][$index] . ' // file not found', $factoryContent);
-        file_put_contents($factoryFile, $factoryContent);
-
+foreach (new \RecursiveIteratorIterator($iterator) as $file) {
+    /** @var $file \SplFileInfo */
+    if (!$file->isFile() || $file->getExtension() !== 'php') {
         continue;
     }
+    $factoryFile = $file->getPathname();
+    $factoryContent = file_get_contents($factoryFile);
 
-    if (in_array($classBasename, $processedClases)) {
-        continue;
-    }
+    $classMatches = [];
 
-    $filecontent = file_get_contents($classFile);
-    $pointMatches  = [];
+    preg_match_all('/return new ([^\(]+)\(\$useragent, \[\]\)\;/', $factoryContent, $classMatches);
+    $sourceDirectory = 'src\\Detector\\Device\\Mobile\\';
 
-    if (preg_match('/\\\'pointingMethod\\\'\s+=> \\\'(\w+)\\\'/', $filecontent, $pointMatches)) {
-        $pointing = '\'' . $pointMatches[1] . '\'';
-    } else {
-        $pointing = 'null';
-    }
+    $processedClases = [];
 
-    $widthMatches = [];
+    foreach ($classMatches[1] as $index => $classBasename) {
+        $classFile = $sourceDirectory . $classBasename . '.php';
 
-    if (preg_match('/\\\'resolutionWidth\\\'\s+=> ([0-9nul]+)/', $filecontent, $widthMatches)) {
-        $width = $widthMatches[1];
-    } else {
-        $width = 'null';
-    }
+        echo 'processing ', $classFile, PHP_EOL;
 
-    $heightMatches = [];
+        if (!file_exists($classFile)) {
+            str_replace($classMatches[0][$index], $classMatches[0][$index] . ' // file not found', $factoryContent);
+            file_put_contents($factoryFile, $factoryContent);
 
-    if (preg_match('/\\\'resolutionHeight\\\'\s+=> ([0-9nul]+)/', $filecontent, $heightMatches)) {
-        $height = $heightMatches[1];
-    } else {
-        $height = 'null';
-    }
+            continue;
+        }
 
-    $dualMatches = [];
+        if (in_array($classBasename, $processedClases)) {
+            continue;
+        }
 
-    if (preg_match('/\\\'dualOrientation\\\'\s+=> (true|false|null)/', $filecontent, $dualMatches)) {
-        $dual = $dualMatches[1];
-    } else {
-        $dual = 'null';
-    }
+        $filecontent = file_get_contents($classFile);
+        $pointMatches = [];
 
-    $colorMatches = [];
+        if (preg_match('/\\\'pointingMethod\\\'\s+=> \\\'(\w+)\\\'/', $filecontent, $pointMatches)) {
+            $pointing = '\'' . $pointMatches[1] . '\'';
+        } else {
+            $pointing = 'null';
+        }
 
-    if (preg_match('/\\\'colors\\\'\s+=> ([0-9]+)/', $filecontent, $colorMatches)) {
-        $colors = $colorMatches[1];
-    } else {
-        $colors = 'null';
-    }
+        $widthMatches = [];
 
-    $smsMatches = [];
+        if (preg_match('/\\\'resolutionWidth\\\'\s+=> ([0-9nul]+)/', $filecontent, $widthMatches)) {
+            $width = $widthMatches[1];
+        } else {
+            $width = 'null';
+        }
 
-    if (preg_match('/\\\'smsSupport\\\'\s+=> (true|false|null)/', $filecontent, $smsMatches)) {
-        $sms = $smsMatches[1];
-    } else {
-        $sms = 'null';
-    }
+        $heightMatches = [];
 
-    $nfcMatches = [];
+        if (preg_match('/\\\'resolutionHeight\\\'\s+=> ([0-9nul]+)/', $filecontent, $heightMatches)) {
+            $height = $heightMatches[1];
+        } else {
+            $height = 'null';
+        }
 
-    if (preg_match('/\\\'nfcSupport\\\'\s+=> (true|false|null)/', $filecontent, $nfcMatches)) {
-        $nfc = $nfcMatches[1];
-    } else {
-        $nfc = 'null';
-    }
+        $dualMatches = [];
 
-    $quertyMatches = [];
+        if (preg_match('/\\\'dualOrientation\\\'\s+=> (true|false|null)/', $filecontent, $dualMatches)) {
+            $dual = $dualMatches[1];
+        } else {
+            $dual = 'null';
+        }
 
-    if (preg_match('/\\\'hasQwertyKeyboard\\\'\s+=> (true|false|null)/', $filecontent, $quertyMatches)) {
-        $qwerty = $quertyMatches[1];
-    } else {
-        $qwerty = 'null';
-    }
+        $colorMatches = [];
 
-    $typeMatches = [];
+        if (preg_match('/\\\'colors\\\'\s+=> ([0-9]+)/', $filecontent, $colorMatches)) {
+            $colors = $colorMatches[1];
+        } else {
+            $colors = 'null';
+        }
 
-    if (preg_match('/\\\'type\\\'\s+=> new UaDeviceType\\\\([^\\(]+)/', $filecontent, $quertyMatches)) {
-        $type = $quertyMatches[1];
-    } else {
-        $type = 'new UaDeviceType\Unknown';
-    }
+        $smsMatches = [];
 
-    $codeMatches = [];
+        if (preg_match('/\\\'smsSupport\\\'\s+=> (true|false|null)/', $filecontent, $smsMatches)) {
+            $sms = $smsMatches[1];
+        } else {
+            $sms = 'null';
+        }
 
-    if (preg_match('/\\\'deviceName\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $codeMatches)) {
-        $codename = $codeMatches[1];
-    } else {
-        $codename = 'unknown';
-    }
+        $nfcMatches = [];
 
-    $marketingMatches = [];
+        if (preg_match('/\\\'nfcSupport\\\'\s+=> (true|false|null)/', $filecontent, $nfcMatches)) {
+            $nfc = $nfcMatches[1];
+        } else {
+            $nfc = 'null';
+        }
 
-    if (preg_match('/\\\'marketingName\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $marketingMatches)) {
-        $marketing = $marketingMatches[1];
-    } else {
-        $marketing = 'unknown';
-    }
+        $quertyMatches = [];
 
-    $manuMatches = [];
+        if (preg_match('/\\\'hasQwertyKeyboard\\\'\s+=> (true|false|null)/', $filecontent, $quertyMatches)) {
+            $qwerty = $quertyMatches[1];
+        } else {
+            $qwerty = 'null';
+        }
 
-    if (preg_match('/\\\'manufacturer\\\'\s+=> \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
-        $manufacturer = $marketingMatches[1];
-    } else {
-        $manufacturer = 'Unknown';
-    }
+        $typeMatches = [];
 
-    $brandMatches = [];
+        if (preg_match('/\\\'type\\\'\s+=> new UaDeviceType\\\\([^\\(]+)/', $filecontent, $quertyMatches)) {
+            $type = $quertyMatches[1];
+        } else {
+            $type = 'new UaDeviceType\Unknown';
+        }
 
-    if (preg_match('/\\\'brand\\\'\s+=> \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
-        $brand = $marketingMatches[1];
-    } else {
-        $brand = 'Unknown';
-    }
+        $codeMatches = [];
 
-    $osMatches = [];
+        if (preg_match('/\\\'deviceName\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $codeMatches)) {
+            $codename = $codeMatches[1];
+        } else {
+            $codename = 'unknown';
+        }
 
-    if (preg_match('/detectOs\\(\\)\\n    {\\n        return (new [^\\;]+)/', $filecontent, $osMatches)) {
-        $os = $osMatches[1];
-    } else {
-        $os = 'null';
-    }
+        $marketingMatches = [];
 
-    $delete         = true;
-    $rewrite        = true;
+        if (preg_match('/\\\'marketingName\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $marketingMatches)) {
+            $marketing = $marketingMatches[1];
+        } else {
+            $marketing = 'unknown';
+        }
 
-    if ($rewrite) {
-        $newCall = 'return new \UaResult\Device\Device($useragent, \'' . $codename . '\', null, CompanyFactory::get(\'' . $manufacturer . '\')->getName(), new UaDeviceType\\' . $type . '(), CompanyFactory::get(\'' . $brand . '\')->getName(), \'' . $marketing . '\', ' . $pointing . ', ' . $width . ', ' . $height . ', ' . $dual . ', ' . $colors . ', ' . $sms . ', ' . $nfc . ', ' . $qwerty . ', ' . $os . ');';
+        $manuMatches = [];
 
-        $factoryContent = str_replace($classMatches[0][$index], $newCall, $factoryContent);
-        file_put_contents($factoryFile, $factoryContent);
+        if (preg_match('/\\\'manufacturer\\\'\s+=> \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
+            $manufacturer = $marketingMatches[1];
+        } else {
+            $manufacturer = 'Unknown';
+        }
 
-        $processedClases[] = $classBasename;
-    } else {
-        $delete = false;
-    }
+        $brandMatches = [];
 
-    if ($delete) {
-        echo 'removing ', $classFile, PHP_EOL;
+        if (preg_match('/\\\'brand\\\'\s+=> \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
+            $brand = $marketingMatches[1];
+        } else {
+            $brand = 'Unknown';
+        }
 
-        unlink($classFile);
+        $osMatches = [];
+
+        if (preg_match('/detectOs\\(\\)\\n    {\\n        return (new [^\\;]+)/', $filecontent, $osMatches)) {
+            $os = $osMatches[1];
+        } else {
+            $os = 'null';
+        }
+
+        $delete = true;
+        $rewrite = true;
+
+        if ($rewrite) {
+            $newCall = 'return new \UaResult\Device\Device($useragent, \'' . $codename . '\', null, CompanyFactory::get(\'' . $manufacturer . '\')->getName(), new UaDeviceType\\' . $type . '(), CompanyFactory::get(\'' . $brand . '\')->getName(), \'' . $marketing . '\', ' . $pointing . ', ' . $width . ', ' . $height . ', ' . $dual . ', ' . $colors . ', ' . $sms . ', ' . $nfc . ', ' . $qwerty . ', ' . $os . ');';
+
+            $factoryContent = str_replace($classMatches[0][$index], $newCall, $factoryContent);
+            file_put_contents($factoryFile, $factoryContent);
+
+            $processedClases[] = $classBasename;
+        } else {
+            $delete = false;
+        }
+
+        if ($delete) {
+            echo 'removing ', $classFile, PHP_EOL;
+
+            unlink($classFile);
+        }
     }
 }
 
