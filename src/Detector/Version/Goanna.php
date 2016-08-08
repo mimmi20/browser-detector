@@ -29,11 +29,9 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Engine;
+namespace BrowserDetector\Detector\Version;
 
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\VersionFactory;
-use UaResult\Engine\Engine;
 
 /**
  * @category  BrowserDetector
@@ -41,18 +39,32 @@ use UaResult\Engine\Engine;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Gecko extends Engine
+class Goanna
 {
     /**
-     * Class Constructor
+     * returns the version of the operating system/platform
      *
-     * @param string $useragent the user agent to be handled
+     * @param string $useragent
+     *
+     * @return \BrowserDetector\Version\Version
      */
-    public function __construct($useragent)
+    public static function detectVersion($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Gecko';
-        $this->version      = VersionFactory::detectVersion($useragent, ['rv\:']);
-        $this->manufacturer = (new Company\MozillaFoundation())->name;
+        // lastest version: version on "Goanna" token
+        $doMatch = preg_match('/Goanna\/([\d\.]+)/', $useragent, $matches);
+
+        if ($doMatch && 2015 > substr($matches[1], 0, 4)) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        // second version: version on "rv:" token
+        $doMatch = preg_match('/rv\:([\d\.]+)/', $useragent, $matches);
+
+        if ($doMatch && 2 >= substr($matches[1], 0, 4)) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        // first version: uses gecko version
+        return VersionFactory::set('1.0');
     }
 }

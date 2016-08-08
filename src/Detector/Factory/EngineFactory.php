@@ -31,11 +31,15 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Browser\Chrome;
-use BrowserDetector\Detector\Engine;
+use BrowserDetector\Detector\Version\Goanna;
+use BrowserDetector\Detector\Version\Trident;
 use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionFactory;
 use UaHelper\Utils;
+use UaResult\Browser\Browser;
+use UaResult\Engine\Engine;
 use UaResult\Os\OsInterface;
+use UaBrowserType;
 
 /**
  * Browser detection class
@@ -62,54 +66,52 @@ class EngineFactory implements FactoryInterface
         $utils->setUserAgent($useragent);
 
         if (null !== $os && in_array($os->getName(), ['iOS'])) {
-            $engineName = new \BrowserDetector\Detector\Engine\Webkit($useragent, []);
+            return new Engine($useragent, 'WebKit', VersionFactory::detectVersion($useragent, ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\/AppleWebKit']), CompanyFactory::get('Apple')->getName());
         } elseif ($utils->checkIfContains('Edge')) {
-            $engineName = new \BrowserDetector\Detector\Engine\Edge($useragent, []);
+            return new Engine($useragent, 'Edge', VersionFactory::detectVersion($useragent, ['Edge']), CompanyFactory::get('Microsoft')->getName());
         } elseif ($utils->checkIfContains(' U2/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\U2($useragent, []);
+            return new Engine($useragent, 'U2', VersionFactory::detectVersion($useragent, ['U2']), CompanyFactory::get('UcWeb')->getName());
         } elseif ($utils->checkIfContains(' U3/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\U3($useragent, []);
+            return new Engine($useragent, 'U3', VersionFactory::detectVersion($useragent, ['U3']), CompanyFactory::get('UcWeb')->getName());
         } elseif ($utils->checkIfContains(' T5/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\T5($useragent, []);
+            return new Engine($useragent, 'T5', VersionFactory::detectVersion($useragent, ['T5']), CompanyFactory::get('Baidu')->getName());
         } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
             && false === stripos($useragent, 'opera')
             && false === stripos($useragent, 'tasman')
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\Trident($useragent, []);
+            return new Engine($useragent, 'Trident', Trident::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName());
         } elseif (preg_match('/(goanna)/i', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Goanna($useragent, []);
+            return new Engine($useragent, 'Goanna', Goanna::detectVersion($useragent), CompanyFactory::get('MoonchildProductions')->getName());
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
-            $chrome = new Chrome($useragent, []);
+            $chrome = new Browser($useragent, 'Chrome', VersionFactory::detectVersion($useragent, ['Chrome', 'CrMo', 'CriOS']), 'Google', 0, new UaBrowserType\Browser(), true, false, true, true, true, true, true);
 
             $chromeVersion = $chrome->getVersion()->getVersion(Version::MAJORONLY);
 
             if ($chromeVersion >= 28) {
-                $engineName = new \BrowserDetector\Detector\Engine\Blink($useragent, []);
+                return new Engine($useragent, 'Blink', VersionFactory::detectVersion($useragent, ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\/AppleWebKit']), CompanyFactory::get('Google')->getName());
             } else {
-                $engineName = new \BrowserDetector\Detector\Engine\Webkit($useragent, []);
+                return new Engine($useragent, 'WebKit', VersionFactory::detectVersion($useragent, ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\/AppleWebKit']), CompanyFactory::get('Apple')->getName());
             }
         } elseif (preg_match('/(KHTML|Konqueror)/', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Khtml($useragent, []);
+            return new Engine($useragent, 'KHTML', VersionFactory::detectVersion($useragent, ['KHTML']), CompanyFactory::get('Unknown')->getName());
         } elseif (preg_match('/(tasman)/i', $useragent)
             || $utils->checkIfContainsAll(['MSIE', 'Mac_PowerPC'])
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\Tasman($useragent, []);
+            return new Engine($useragent, 'Tasman', new Version(0), CompanyFactory::get('Apple')->getName());
         } elseif (preg_match('/(Presto|Opera)/', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Presto($useragent, []);
+            return new Engine($useragent, 'Presto', VersionFactory::detectVersion($useragent, ['Presto']), CompanyFactory::get('Opera')->getName());
         } elseif (preg_match('/(Gecko|Firefox)/', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Gecko($useragent, []);
+            return new Engine($useragent, 'Gecko', VersionFactory::detectVersion($useragent, ['rv\:']), CompanyFactory::get('MozillaFoundation')->getName());
         } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $useragent)
             && !$utils->checkIfContains(['Kindle'])
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\NetFront($useragent, []);
+            return new Engine($useragent, 'NetFront', new Version(0), CompanyFactory::get('Access')->getName());
         } elseif ($utils->checkIfContains('BlackBerry')) {
-            $engineName = new \BrowserDetector\Detector\Engine\BlackBerry($useragent, []);
+            return new Engine($useragent, 'BlackBerry', new Version(0), CompanyFactory::get('Rim')->getName());
         } elseif (preg_match('/(Teleca|Obigo)/', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Teleca($useragent, []);
-        } else {
-            $engineName = new \BrowserDetector\Detector\Engine\UnknownEngine($useragent, []);
+            return new Engine($useragent, 'Teleca', new Version(0), CompanyFactory::get('Obigo')->getName());
         }
 
-        return $engineName;
+        return new Engine($useragent, 'unknown', new Version(0), CompanyFactory::get('Unknown')->getName());
     }
 }
