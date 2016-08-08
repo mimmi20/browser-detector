@@ -79,6 +79,10 @@ class TmobileFactory implements FactoryInterface
             return new Tmobile\TmobileMdaCompact($useragent, []);
         }
 
+        if (preg_match('/Ameo/', $useragent)) {
+            return new Tmobile\TmobileAmeo($useragent, []);
+        }
+
         return new Tmobile\Tmobile($useragent, []);
     }
 }

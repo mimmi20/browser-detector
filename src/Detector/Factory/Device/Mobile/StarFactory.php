@@ -59,6 +59,6 @@ class StarFactory implements FactoryInterface
             return new Star\StarN8000($useragent, []);
         }
 
-        return new Star($useragent, []);
+        return new Star\Star($useragent, []);
     }
 }

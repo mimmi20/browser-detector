@@ -166,7 +166,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         if ($rewrite) {
             $newCall = 'return new \UaResult\Device\Device($useragent, \'' . $codename . '\', null, CompanyFactory::get(\'' . $manufacturer . '\')->getName(), new UaDeviceType\\' . $type . '(), CompanyFactory::get(\'' . $brand . '\')->getName(), \'' . $marketing . '\', ' . $pointing . ', ' . $width . ', ' . $height . ', ' . $dual . ', ' . $colors . ', ' . $sms . ', ' . $nfc . ', ' . $qwerty . ', ' . $os . ');';
 
-            $factoryContent = str_replace($classMatches[0][$index], $newCall, $factoryContent);
+            $factoryContent = str_replace($classMatches[0][$index], str_replace('$this->useragenr', '$useragent', $newCall), $factoryContent);
             file_put_contents($factoryFile, $factoryContent);
 
             $processedClases[] = $classBasename;
