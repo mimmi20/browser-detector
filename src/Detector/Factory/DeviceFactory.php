@@ -38,7 +38,6 @@ use BrowserDetector\Detector\Factory\Device\TvFactory;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 
 /**
  * Device detection class
@@ -61,19 +60,17 @@ class DeviceFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if ((new MobileDevice($useragent))->isMobile()) {
-            $device = MobileFactory::detect($useragent);
-        } elseif ((new TvHelper($useragent))->isTvDevice()) {
-            $device = TvFactory::detect($useragent);
-        } elseif ((new Desktop($useragent))->isDesktopDevice()) {
-            $device = DesktopFactory::detect($useragent);
-        } else {
-            $device = new UnknownDevice($useragent, []);
+            return MobileFactory::detect($useragent);
         }
 
-        if ($device instanceof DeviceHasChildrenInterface) {
-            $device = $device->detectDevice();
+        if ((new TvHelper($useragent))->isTvDevice()) {
+            return TvFactory::detect($useragent);
         }
 
-        return $device;
+        if ((new Desktop($useragent))->isDesktopDevice()) {
+            return DesktopFactory::detect($useragent);
+        }
+
+        return new UnknownDevice($useragent, []);
     }
 }

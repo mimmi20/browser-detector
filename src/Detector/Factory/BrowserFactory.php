@@ -397,7 +397,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/Arora/', $useragent)) {
             return new Browser($useragent, 'Arora', VersionFactory::detectVersion($useragent, ['Arora']), 'Unknown', $bits, new UaBrowserType\Browser(), true, false, true, false, true, true, true);
         } elseif (preg_match('/com\.douban\.group/i', $useragent)) {
-            return new Browser($useragent, 'douban App', VersionFactory::detectVersion($useragent, [            'com\.douban\.group',        ]), 'Unknown', $bits, new UaBrowserType\Application(), true, false, false, false, true, true, true);
+            return new Browser($useragent, 'douban App', VersionFactory::detectVersion($useragent, ['com\.douban\.group']), 'Unknown', $bits, new UaBrowserType\Application(), true, false, false, false, true, true, true);
         } elseif (preg_match('/ovibrowser/i', $useragent)) {
             return new Browser($useragent, 'Nokia Proxy Browser', VersionFactory::detectVersion($useragent, ['OviBrowser']), 'Nokia', $bits, new UaBrowserType\Transcoder(), true, false, true, false, true, true, true);
         } elseif (preg_match('/MiuiBrowser/i', $useragent)) {
@@ -411,7 +411,7 @@ class BrowserFactory implements FactoryInterface
         } elseif (preg_match('/http:\/\/www\.baidu\.com\/search/', $useragent)) {
             return new Browser($useragent, 'Baidu Mobile Search', new Version(0), 'Baidu', $bits, new UaBrowserType\Bot(), true, false, false, false, true, true, true);
         } elseif (preg_match('/(yjapp|yjtop)/i', $useragent)) {
-            return new Browser($useragent, 'Yahoo! App', VersionFactory::detectVersion($useragent, [            'jp\.co\.yahoo\.android\.yjtop',            'yjapp',        ]), 'Yahoo', $bits, new UaBrowserType\Application(), true, false, false, false, true, true, true);
+            return new Browser($useragent, 'Yahoo! App', VersionFactory::detectVersion($useragent, ['jp\.co\.yahoo\.android\.yjtop', 'yjapp']), 'Yahoo', $bits, new UaBrowserType\Application(), true, false, false, false, true, true, true);
         } elseif (preg_match('/(linux; u; android|linux; android)/i', $useragent) && preg_match('/version/i', $useragent)) {
             return new Browser($useragent, 'Android Webkit', AndroidWebkit::detectVersion($useragent), 'Google', $bits, new UaBrowserType\Browser(), true, false, true, true, true, true, true);
         } elseif (preg_match('/safari/i', $useragent) && null !== $platform && 'Android' === $platform->getName()) {

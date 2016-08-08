@@ -34,7 +34,6 @@ namespace BrowserDetector\Detector\Device\Mobile\Jolla;
 use BrowserDetector\Detector\Chain\Chain;
 use BrowserDetector\Detector\Company;
 use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Matcher\Device\DeviceHasChildrenInterface;
 use UaDeviceType;
 
 /**

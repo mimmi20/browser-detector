@@ -35,7 +35,6 @@ use BrowserDetector\Detector\Factory\BrowserFactory;
 use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
-use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
@@ -45,11 +44,6 @@ use UnexpectedValueException;
 use Wurfl\Request\GenericRequest;
 use Wurfl\Request\GenericRequestFactory;
 use WurflCache\Adapter\AdapterInterface;
-
-//use BrowserDetector\Matcher\Browser\BrowserCalculatesAlternativeResultInterface;
-//use BrowserDetector\Matcher\Browser\BrowserDependsOnEngineInterface;
-//use BrowserDetector\Matcher\Browser\BrowserHasRuntimeModificationsInterface;
-//use BrowserDetector\Matcher\Engine\EngineDependsOnDeviceInterface;
 
 /**
  * Browser Detection class
@@ -157,11 +151,7 @@ class BrowserDetector
         $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $platform);
 
         // detect the engine which is used in the browser
-        if ($browser instanceof BrowserHasSpecificEngineInterface) {
-            $engine = $browser->getEngine();
-        } else {
-            $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
-        }
+        $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
 
         return new Result(
             $request->getUserAgent(),

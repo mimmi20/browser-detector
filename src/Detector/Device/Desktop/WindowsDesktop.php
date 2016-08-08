@@ -64,7 +64,6 @@ class WindowsDesktop extends AbstractDevice implements DeviceHasSpecificPlatform
                 'version'           => null,
                 'manufacturer'      => (new Company\Unknown())->name,
                 'brand'             => (new Company\Unknown())->brandname,
-                'formFactor'        => null,
                 'pointingMethod'    => 'mouse',
                 'resolutionWidth'   => 800,
                 'resolutionHeight'  => 600,

@@ -39,9 +39,6 @@ use BrowserDetector\Detector\Result\Result;
 use Psr\Log\LoggerInterface;
 use UaHelper\Utils;
 use UaMatcher\Device\DeviceInterface;
-use UaMatcher\MatcherCanHandleInterface;
-use UaMatcher\MatcherHasWeightInterface;
-use UaMatcher\Device\DeviceHasChildrenInterface;
 use UaMatcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**

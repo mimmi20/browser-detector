@@ -67,35 +67,57 @@ class DesktopFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if ((new WindowsHelper($useragent))->isWindows()) {
-            $device = new WindowsDesktop($useragent, []);
-        } elseif ((new LinuxHelper($useragent))->isLinux()) {
-            $device = new LinuxDesktop($useragent, []);
-        } elseif (preg_match('/iMac/', $useragent)) {
-            $device = new Imac($useragent, []);
-        } elseif (preg_match('/macbookpro/i', $useragent)) {
-            $device = new MacBookPro($useragent, []);
-        } elseif (preg_match('/macbookair/i', $useragent)) {
-            $device = new MacBookAir($useragent, []);
-        } elseif (preg_match('/macbook/i', $useragent)) {
-            $device = new MacBook($useragent, []);
-        } elseif (preg_match('/macmini/i', $useragent)) {
-            $device = new MacMini($useragent, []);
-        } elseif (preg_match('/macpro/i', $useragent)) {
-            $device = new MacPro($useragent, []);
-        } elseif (preg_match('/(powermac|power%20macintosh)/i', $useragent)) {
-            $device = new PowerMac($useragent, []);
-        } elseif ((new MacintoshHelper($useragent))->isMacintosh()) {
-            $device = new Macintosh($useragent, []);
-        } elseif (preg_match('/eeepc/i', $useragent)) {
-            $device = new EeePc($useragent, []);
-        } elseif (preg_match('/hp\-ux 9000/i', $useragent)) {
-            $device = new Hp9000($useragent, []);
-        } elseif (preg_match('/Dillo/', $useragent)) {
-            $device = new LinuxDesktop($useragent, []);
-        } else {
-            $device = new GeneralDesktop($useragent, []);
+            return new WindowsDesktop($useragent, []);
         }
 
-        return $device;
+        if ((new LinuxHelper($useragent))->isLinux()) {
+            return new LinuxDesktop($useragent, []);
+        }
+
+        if (preg_match('/iMac/', $useragent)) {
+            return new Imac($useragent, []);
+        }
+
+        if (preg_match('/macbookpro/i', $useragent)) {
+            return new MacBookPro($useragent, []);
+        }
+
+        if (preg_match('/macbookair/i', $useragent)) {
+            return new MacBookAir($useragent, []);
+        }
+
+        if (preg_match('/macbook/i', $useragent)) {
+            return new MacBook($useragent, []);
+        }
+
+        if (preg_match('/macmini/i', $useragent)) {
+            return new MacMini($useragent, []);
+        }
+
+        if (preg_match('/macpro/i', $useragent)) {
+            return new MacPro($useragent, []);
+        }
+
+        if (preg_match('/(powermac|power%20macintosh)/i', $useragent)) {
+            return new PowerMac($useragent, []);
+        }
+
+        if ((new MacintoshHelper($useragent))->isMacintosh()) {
+            return new Macintosh($useragent, []);
+        }
+
+        if (preg_match('/eeepc/i', $useragent)) {
+            return new EeePc($useragent, []);
+        }
+
+        if (preg_match('/hp\-ux 9000/i', $useragent)) {
+            return new Hp9000($useragent, []);
+        }
+
+        if (preg_match('/Dillo/', $useragent)) {
+            return new LinuxDesktop($useragent, []);
+        }
+
+        return new GeneralDesktop($useragent, []);
     }
 }

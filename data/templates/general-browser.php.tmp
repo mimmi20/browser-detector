@@ -35,7 +35,6 @@ use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Detector\Engine;
-use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
 
 /**
@@ -44,7 +43,7 @@ use UaBrowserType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ###ClassName### extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class ###ClassName### extends AbstractBrowser
 {
     /**
      * Class Constructor
