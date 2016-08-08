@@ -31,13 +31,14 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use BrowserDetector\Detector\Device\UnknownDevice;
 use BrowserDetector\Detector\Factory\Device\DesktopFactory;
 use BrowserDetector\Detector\Factory\Device\MobileFactory;
 use BrowserDetector\Detector\Factory\Device\TvFactory;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
  * Device detection class
@@ -71,6 +72,6 @@ class DeviceFactory implements FactoryInterface
             return DesktopFactory::detect($useragent);
         }
 
-        return new UnknownDevice($useragent, []);
+        return new Device($useragent, 'unknown', null, CompanyFactory::get('Unknown')->getName(), new UaDeviceType\Unknown(), CompanyFactory::get('Unknown')->getName(), 'unknown', null, null, null, false, 65536, false, false, null, null);
     }
 }
