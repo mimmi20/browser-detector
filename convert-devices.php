@@ -12,13 +12,13 @@ require 'vendor/autoload.php';
 
 ini_set('memory_limit', '-1');
 
-$factoryFile    = 'src\\Detector\\Factory\\Device\\DesktopFactory.php';
+$factoryFile    = 'src\\Detector\\Factory\\Device\\TvFactory.php';
 $factoryContent = file_get_contents($factoryFile);
 
 $classMatches = [];
 
 preg_match_all('/return new ([^\(]+)\(\$useragent, \[\]\)\;/', $factoryContent, $classMatches);
-$sourceDirectory = 'src\\Detector\\Device\\Desktop\\';
+$sourceDirectory = 'src\\Detector\\Device\\Tv\\';
 
 $processedClases = [];
 
@@ -145,17 +145,17 @@ foreach ($classMatches[1] as $index => $classBasename) {
 
     $osMatches = [];
 
-    if (preg_match('/detectOs\\(\\)\\n    {\\n        return new ([^\\(]+)/', $filecontent, $osMatches)) {
+    if (preg_match('/detectOs\\(\\)\\n    {\\n        return (new [^\\;]+)/', $filecontent, $osMatches)) {
         $os = $osMatches[1];
     } else {
-        $os = 'UnknownOs';
+        $os = 'null';
     }
 
     $delete         = true;
     $rewrite        = true;
 
     if ($rewrite) {
-        $newCall = 'return new \UaResult\Device\Device($useragent, \'' . $codename . '\', null, CompanyFactory::get(\'' . $manufacturer . '\')->getName(), new UaDeviceType\\' . $type . '(), CompanyFactory::get(\'' . $brand . '\')->getName(), \'' . $marketing . '\', ' . $pointing . ', ' . $width . ', ' . $height . ', ' . $dual . ', ' . $colors . ', ' . $sms . ', ' . $nfc . ', ' . $qwerty . ');';
+        $newCall = 'return new \UaResult\Device\Device($useragent, \'' . $codename . '\', null, CompanyFactory::get(\'' . $manufacturer . '\')->getName(), new UaDeviceType\\' . $type . '(), CompanyFactory::get(\'' . $brand . '\')->getName(), \'' . $marketing . '\', ' . $pointing . ', ' . $width . ', ' . $height . ', ' . $dual . ', ' . $colors . ', ' . $sms . ', ' . $nfc . ', ' . $qwerty . ', ' . $os . ');';
 
         $factoryContent = str_replace($classMatches[0][$index], $newCall, $factoryContent);
         file_put_contents($factoryFile, $factoryContent);
