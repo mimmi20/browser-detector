@@ -172,6 +172,7 @@ foreach ($classMatches[1] as $index => $classBasename) {
     }
 }
 
+exit;
 $sourceDirectory = 'src\\Detector\\Device\\';
 
 $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
