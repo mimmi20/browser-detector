@@ -12,13 +12,13 @@ require 'vendor/autoload.php';
 
 ini_set('memory_limit', '-1');
 
-$factoryFile    = 'src\\Detector\\Factory\\Device\\TvFactory.php';
+$factoryFile    = 'src\\Detector\\Factory\\Device\\Mobile\\AmoiFactory.php';
 $factoryContent = file_get_contents($factoryFile);
 
 $classMatches = [];
 
 preg_match_all('/return new ([^\(]+)\(\$useragent, \[\]\)\;/', $factoryContent, $classMatches);
-$sourceDirectory = 'src\\Detector\\Device\\Tv\\';
+$sourceDirectory = 'src\\Detector\\Device\\Mobile\\';
 
 $processedClases = [];
 
