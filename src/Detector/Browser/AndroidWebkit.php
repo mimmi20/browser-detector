@@ -58,7 +58,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->useragent                   = $useragent;
         $this->name                        = 'Android Webkit';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\AndroidWebkit::detectVersion($useragent);
         $this->manufacturer                = (new Company\Google())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -68,81 +68,6 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $safariHelper = new SafariHelper($this->useragent);
-
-        $doMatch = preg_match(
-            '/Version\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains('android eclair', true)) {
-            return VersionFactory::set('2.1');
-        }
-
-        if ($utils->checkIfContains('gingerbread', true)) {
-            return VersionFactory::set('2.3');
-        }
-
-        $doMatch = preg_match(
-            '/Safari\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/AppleWebKit\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/MobileSafari\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/Android\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($matches[1]);
-        }
-
-        $searches = ['Version', 'Safari', 'JUC \(Linux\; U\;'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**
