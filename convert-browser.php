@@ -17,7 +17,7 @@ $factoryContent = file_get_contents($factoryFile);
 
 $classMatches = [];
 
-preg_match_all('/return new ([^\(]+)\(\$useragent, \[\]\)\;/', $factoryContent, $classMatches);
+preg_match_all('/return new Browser\\\\([^\(]+)\(\$useragent, \[\]\)\;/', $factoryContent, $classMatches);
 $sourceDirectory = 'src\\Detector\\Browser\\';
 
 $processedClases = [];
@@ -82,7 +82,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     if (false !== $endpos) {
         $newCall = 'return new Browser\\' . $classBasename . '($useragent, []);';
 
-        $factoryContent = substr_replace($factoryContent, ' elseif () {' . "\n" . '            ' . $newCall . "\n" . '        }', $endpos + 9, 0);
+        $factoryContent = substr_replace($factoryContent, ' elseif (preg_match(\'/' . $classBasename . '/\', $useragent)) {' . "\n" . '            ' . $newCall . "\n" . '        }', $endpos + 9, 0);
         file_put_contents($factoryFile, $factoryContent);
 
         $processedClases[] = $classBasename;
