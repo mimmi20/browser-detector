@@ -73,93 +73,93 @@ class TvFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/xbox one/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'Xbox One', null, CompanyFactory::get('Microsoft')->getName(), new UaDeviceType\TvConsole(), CompanyFactory::get('Microsoft')->getName(), 'Xbox One', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Windows', Windows::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName(), $bits));
+            return new MicrosoftXboxOne($useragent, []);
         }
 
         if (preg_match('/xbox/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'Xbox 360', null, CompanyFactory::get('Microsoft')->getName(), new UaDeviceType\TvConsole(), CompanyFactory::get('Microsoft')->getName(), 'Xbox 360', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Windows', Windows::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName(), $bits));
+            return new MicrosoftXbox($useragent, []);
         }
 
         if (preg_match('/dlink\.dsm380/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'DSM 380', null, CompanyFactory::get('Dlink')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Dlink')->getName(), 'DSM 380', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new DlinkDsm380($useragent, []);
         }
 
         if (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'NSZ-GS7/GX70', null, CompanyFactory::get('Sony')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Sony')->getName(), 'NSZ-GS7/GX70', 'mouse', null, null, false, 65536, false, false, true, null);
+            return new SonyNszGs7Gx70($useragent, []);
         }
 
         if (preg_match('/googletv/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'Google TV', null, CompanyFactory::get('Sony')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Sony')->getName(), 'Google TV', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new GoogleTv($useragent, []);
         }
 
         if (preg_match('/idl\-6651n/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'IDL-6651N', null, CompanyFactory::get('Unknown')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Unknown')->getName(), 'IDL-6651N', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new Idl6651n($useragent, []);
         }
 
         if (preg_match('/loewe; sl121/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'SL121', null, CompanyFactory::get('Loewe')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Loewe')->getName(), 'SL121', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new LoeweSl121($useragent, []);
         }
 
         if (preg_match('/loewe; sl150/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'SL150', null, CompanyFactory::get('Loewe')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Loewe')->getName(), 'SL150', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new LoeweSl150($useragent, []);
         }
 
         if (preg_match('/NETRANGEMMH/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'NETRANGEMMH', null, CompanyFactory::get('Netrange')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Netrange')->getName(), 'NETRANGEMMH', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new NetrangeMmh($useragent, []);
         }
 
         if (preg_match('/viera/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'Viera TV', null, CompanyFactory::get('Panasonic')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Panasonic')->getName(), 'Viera TV', 'mouse', null, null, false, 65536, false, false, true, null);
+            return new PanasonicViera($useragent, []);
         }
 
         if (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'general Philips TV', null, CompanyFactory::get('Philips')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Philips')->getName(), 'general Philips TV', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new PhilipsTv($useragent, []);
         }
 
         if (preg_match('/SMART\-TV/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'Smart TV', null, CompanyFactory::get('Samsung')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Samsung')->getName(), 'Smart TV', 'unknown', null, null, false, 65536, false, false, true, null);
+            return new SamsungSmartTv($useragent, []);
         }
 
         if (preg_match('/KDL32HX755/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'KDL32HX755', null, CompanyFactory::get('Sony')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Sony')->getName(), 'KDL32HX755', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new SonyKdl32hx755($useragent, []);
         }
 
         if (preg_match('/KDL37EX720/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'KDL37EX720', null, CompanyFactory::get('Sony')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Sony')->getName(), 'KDL37EX720', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new SonyKdl37ex720($useragent, []);
         }
 
         if (preg_match('/KDL40EX720/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'KDL40EX720', null, CompanyFactory::get('Sony')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Sony')->getName(), 'KDL40EX720', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new SonyKdl40ex720($useragent, []);
         }
 
         if (preg_match('/KDL50W815B/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'KDL50W815B', null, CompanyFactory::get('Sony')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Sony')->getName(), 'KDL50W815B', 'mouse', null, null, false, 65536, false, false, true, null);
+            return new SonyKdl50w815b($useragent, []);
         }
 
         if (preg_match('/SonyDTV115/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'DTV115', null, CompanyFactory::get('Sony')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Sony')->getName(), 'DTV115', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new SonyDtv115($useragent, []);
         }
 
         if (preg_match('/technisat digicorder isio s/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'DigiCorder ISIO S', null, CompanyFactory::get('TechniSat')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('TechniSat')->getName(), 'DigiCorder ISIO S', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new TechniSatDigiCorderIsioS($useragent, []);
         }
 
         if (preg_match('/technisat digit isio s/i', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'DIGIT ISIO S', null, CompanyFactory::get('TechniSat')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('TechniSat')->getName(), 'DIGIT ISIO S', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new TechniSatDigitIsioS($useragent, []);
         }
 
         if (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'MultyVision ISIO', null, CompanyFactory::get('TechniSat')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('TechniSat')->getName(), 'MultyVision ISIO', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($useragent, 'Linux', new Version(0), CompanyFactory::get('LinuxFoundation')->getName(), $bits));
+            return new TechniSatMultyVisionIsio($useragent, []);
         }
 
         if (preg_match('/AQUOSBrowser/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'Aquos TV', null, CompanyFactory::get('Sharp')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Sharp')->getName(), 'Aquos TV', 'mouse', null, null, false, 65536, false, false, true, null);
+            return new SharpAquosTv($useragent, []);
         }
 
         if (preg_match('/CX919/', $useragent)) {
-            return new \UaResult\Device\Device($useragent, 'CX919', null, CompanyFactory::get('Andoer')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Andoer')->getName(), 'CX919', 'mouse', null, null, false, 65536, false, false, true, new \UaResult\Os\Os($this->useragent, 'Android', AndroidOs::detectVersion($this->useragent), CompanyFactory::get('Google')->getName(), (new OsBits($this->useragent))->getBits()));
+            return new AndoerCx919($useragent, []);
         }
 
-        return new \UaResult\Device\Device($useragent, 'general TV Device', null, CompanyFactory::get('Unknown')->getName(), new UaDeviceType\Tv(), CompanyFactory::get('Unknown')->getName(), 'general TV Device', null, null, null, false, 65536, false, false, null, null);
+        return new GeneralTv($useragent, []);
     }
 }
