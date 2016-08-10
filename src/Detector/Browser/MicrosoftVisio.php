@@ -57,7 +57,7 @@ class MicrosoftVisio extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->useragent                   = $useragent;
         $this->name                        = 'Visio';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftVisio::detectVersion($useragent);
         $this->manufacturer                = (new Company\Microsoft())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -67,28 +67,6 @@ class MicrosoftVisio extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match(
-            '/Visio(\/| )([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        $helper = new MicrosoftOfficeHelper();
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**

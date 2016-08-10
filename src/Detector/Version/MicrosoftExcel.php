@@ -29,15 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser;
+namespace BrowserDetector\Detector\Version;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
-use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
-use UaBrowserType;
 
 /**
  * @category  BrowserDetector
@@ -45,37 +40,29 @@ use UaBrowserType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftPowerPoint extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class MicrosoftExcel
 {
     /**
-     * Class Constructor
+     * returns the version of the operating system/platform
      *
-     * @param string $useragent the user agent to be handled
+     * @param string $useragent
+     *
+     * @return \BrowserDetector\Version\Version
      */
-    public function __construct($useragent)
+    public static function detectVersion($useragent)
     {
-        $this->useragent                   = $useragent;
-        $this->name                        = 'PowerPoint';
-        $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftPowerPoint::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Microsoft())->name;
-        $this->pdfSupport                  = true;
-        $this->rssSupport                  = false;
-        $this->canSkipAlignedLinkRow       = true;
-        $this->claimsWebSupport            = true;
-        $this->supportsEmptyOptionValues   = true;
-        $this->supportsBasicAuthentication = true;
-        $this->supportsPostMethod          = true;
-        $this->type                        = new UaBrowserType\Application();
-    }
+        $doMatch = preg_match(
+            '/Excel\/([\d\.]+)/',
+            $useragent,
+            $matches
+        );
 
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function getEngine()
-    {
-        return new Engine\UnknownEngine($this->useragent, []);
+        $helper = new MicrosoftOfficeHelper();
+
+        if ($doMatch) {
+            return VersionFactory::set($helper->mapVersion($matches[1]));
+        }
+
+        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($useragent)));
     }
 }

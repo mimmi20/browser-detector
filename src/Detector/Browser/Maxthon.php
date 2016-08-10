@@ -56,7 +56,7 @@ class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->useragent                   = $useragent;
         $this->name                        = 'Maxthon';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\Maxthon::detectVersion($useragent);
         $this->manufacturer                = (new Company\Maxthon())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -66,26 +66,6 @@ class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        if (false !== strpos($this->useragent, 'MyIE2')) {
-            return '2.0';
-        }
-
-        if (false !== strpos($this->useragent, 'MyIE')) {
-            return '1.0';
-        }
-
-        $searches = ['Maxthon', 'MxBrowser', 'Version'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches, '2.0');
     }
 
     /**

@@ -57,7 +57,7 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->useragent                   = $useragent;
         $this->name                        = 'Office';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftOffice::detectVersion($useragent);
         $this->manufacturer                = (new Company\Microsoft())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -67,18 +67,6 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $helper = new MicrosoftOfficeHelper();
-
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**

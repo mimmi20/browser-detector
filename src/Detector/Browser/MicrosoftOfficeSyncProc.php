@@ -57,7 +57,7 @@ class MicrosoftOfficeSyncProc extends AbstractBrowser implements BrowserHasSpeci
         $this->useragent                   = $useragent;
         $this->name                        = 'Office SyncProc';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftOfficeSyncProc::detectVersion($useragent);
         $this->manufacturer                = (new Company\Microsoft())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -67,28 +67,6 @@ class MicrosoftOfficeSyncProc extends AbstractBrowser implements BrowserHasSpeci
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match(
-            '/Office SyncProc(\/| )([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        $helper = new MicrosoftOfficeHelper();
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**

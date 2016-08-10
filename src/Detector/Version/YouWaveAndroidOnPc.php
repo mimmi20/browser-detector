@@ -29,15 +29,11 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser;
+namespace BrowserDetector\Detector\Version;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine;
-use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
-use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
-use UaBrowserType;
+use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -45,37 +41,28 @@ use UaBrowserType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftPowerPoint extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class YouWaveAndroidOnPc
 {
     /**
-     * Class Constructor
+     * returns the version of the operating system/platform
      *
-     * @param string $useragent the user agent to be handled
+     * @param string $useragent
+     *
+     * @return \BrowserDetector\Version\Version
      */
-    public function __construct($useragent)
+    public static function detectVersion($useragent)
     {
-        $this->useragent                   = $useragent;
-        $this->name                        = 'PowerPoint';
-        $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftPowerPoint::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Microsoft())->name;
-        $this->pdfSupport                  = true;
-        $this->rssSupport                  = false;
-        $this->canSkipAlignedLinkRow       = true;
-        $this->claimsWebSupport            = true;
-        $this->supportsEmptyOptionValues   = true;
-        $this->supportsBasicAuthentication = true;
-        $this->supportsPostMethod          = true;
-        $this->type                        = new UaBrowserType\Application();
-    }
+        $utils = new Utils();
+        $utils->setUserAgent($useragent);
 
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function getEngine()
-    {
-        return new Engine\UnknownEngine($this->useragent, []);
+        if ($utils->checkIfContains(['i9988_custom'])) {
+            return VersionFactory::set('Basic');
+        }
+
+        if ($utils->checkIfContains(['i9999_custom'])) {
+            return VersionFactory::set('Home');
+        }
+
+        return new Version(0);
     }
 }

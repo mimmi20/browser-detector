@@ -29,14 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Browser;
+namespace BrowserDetector\Detector\Version;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Engine;
-use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
-use UaBrowserType;
 
 /**
  * @category  BrowserDetector
@@ -44,9 +40,9 @@ use UaBrowserType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpecificEngineInterface
+class MicrosoftInternetExplorer
 {
-    private $patterns = [
+    private static $patterns = [
         '/Mozilla\/5\.0.*\(.*\) AppleWebKit\/.*\(KHTML, like Gecko\) Chrome\/.*Edge\/12\.0.*/' => '12.0',
         '/Mozilla\/5\.0.*\(.*Trident\/7\.0.*rv\:11\.0.*\) like Gecko.*/'                       => '11.0',
         '/Mozilla\/5\.0.*\(.*MSIE 10\.0.*/'                                                    => '10.0',
@@ -69,34 +65,48 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
     ];
 
     /**
-     * Class Constructor
+     * returns the version of the operating system/platform
      *
-     * @param string $useragent the user agent to be handled
+     * @param string $useragent
+     *
+     * @return \BrowserDetector\Version\Version
      */
-    public function __construct($useragent)
+    public static function detectVersion($useragent)
     {
-        $this->useragent                   = $useragent;
-        $this->name                        = 'Internet Explorer';
-        $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftInternetExplorer::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Microsoft())->name;
-        $this->pdfSupport                  = true;
-        $this->rssSupport                  = false;
-        $this->canSkipAlignedLinkRow       = true;
-        $this->claimsWebSupport            = true;
-        $this->supportsEmptyOptionValues   = true;
-        $this->supportsBasicAuthentication = true;
-        $this->supportsPostMethod          = true;
-        $this->type                        = new UaBrowserType\Browser();
-    }
+        $engine = new \BrowserDetector\Detector\Engine\Trident($useragent, []);
 
-    /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
-     *
-     * @return \BrowserDetector\Detector\Engine\UnknownEngine
-     */
-    public function getEngine()
-    {
-        return new Engine\Trident($this->useragent, []);
+        $engineVersion = (int) $engine->getVersion()->getMajor();
+
+        switch ($engineVersion) {
+            case 4:
+                return VersionFactory::set('8.0');
+                break;
+            case 5:
+                return VersionFactory::set('9.0');
+                break;
+            case 6:
+                return VersionFactory::set('10.0');
+                break;
+            case 7:
+                return VersionFactory::set('11.0');
+                break;
+            default:
+                //nothing to do
+                break;
+        }
+
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
+
+        if ($doMatch) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        foreach (self::$patterns as $pattern => $version) {
+            if (preg_match($pattern, $useragent)) {
+                return VersionFactory::set($version);
+            }
+        }
+
+        return new Version(0);
     }
 }

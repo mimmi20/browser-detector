@@ -57,7 +57,7 @@ class MicrosoftFrontPage extends AbstractBrowser implements BrowserHasSpecificEn
         $this->useragent                   = $useragent;
         $this->name                        = 'FrontPage';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftFrontPage::detectVersion($useragent)
         $this->manufacturer                = (new Company\Microsoft())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -67,28 +67,6 @@ class MicrosoftFrontPage extends AbstractBrowser implements BrowserHasSpecificEn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match(
-            '/FrontPage[\/ ]([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        $helper = new MicrosoftOfficeHelper();
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**

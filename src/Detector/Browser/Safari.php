@@ -57,7 +57,7 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Safari';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\Safari::detectVersion($useragent);
         $this->manufacturer                = (new Company\Apple())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
@@ -67,50 +67,6 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $safariHelper = new SafariHelper($this->useragent);
-
-        $doMatch = preg_match('/Version\/([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/Safari\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match('/Safari([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/MobileSafari\/([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($safariHelper->mapSafariVersions($matches[1]));
-        }
-
-        return new Version();
     }
 
     /**

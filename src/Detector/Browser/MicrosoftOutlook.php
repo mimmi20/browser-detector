@@ -57,7 +57,7 @@ class MicrosoftOutlook extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->useragent                   = $useragent;
         $this->name                        = 'Outlook';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftOutlook::detectVersion($useragent);
         $this->manufacturer                = (new Company\Microsoft())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -67,58 +67,6 @@ class MicrosoftOutlook extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\EmailClient();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match(
-            '/microsoft Office Outlook ([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        $helper = new MicrosoftOfficeHelper();
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Office Outlook (\d+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Outlook ([\d\.]+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        $doMatch = preg_match(
-            '/microsoft Outlook (\d+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($helper->mapVersion($matches[1]));
-        }
-
-        return VersionFactory::set($helper->mapVersion($helper->detectInternalVersion($this->useragent)));
     }
 
     /**

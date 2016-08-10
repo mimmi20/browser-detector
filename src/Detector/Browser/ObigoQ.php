@@ -56,7 +56,7 @@ class ObigoQ extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Obigo Q';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\ObigoQ::detectVersion($useragent);
         $this->manufacturer                = (new Company\Obigo())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -66,43 +66,6 @@ class ObigoQ extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match(
-            '/ObigoInternetBrowser\/Q(\d+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($matches[1]);
-        }
-
-        $doMatch = preg_match(
-            '/obigo\-browser\/Q(\d+)/',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return VersionFactory::set($matches[1]);
-        }
-
-        $searches = [
-            'Teleca\-Q',
-            'Obigo\-Q',
-            'Obigo\/Q',
-            'Teleca\/Q',
-        ];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

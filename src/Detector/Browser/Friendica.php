@@ -56,7 +56,7 @@ class Friendica extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'Friendica';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\Friendica::detectVersion($useragent);
         $this->manufacturer                = (new Company\Unknown())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -66,26 +66,6 @@ class Friendica extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match(
-            '/Friendica \'[^\']*\' (\d+[\d\.\_\-\+abcdehlprstv]*).*/',
-            $this->useragent,
-            $matches
-        );
-
-        if (!$doMatch) {
-            return new Version(0);
-        }
-
-        return VersionFactory::set($matches[1]);
     }
 
     /**

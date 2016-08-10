@@ -57,7 +57,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserHasSpecificEn
         $this->useragent                   = $useragent;
         $this->name                        = 'YouWave Android on PC';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = \BrowserDetector\Detector\Version\YouWaveAndroidOnPc::detectVersion($useragent);
         $this->manufacturer                = (new Company\YouWave())->name;
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -67,27 +67,6 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserHasSpecificEn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains(['i9988_custom'])) {
-            return VersionFactory::set('Basic');
-        }
-
-        if ($utils->checkIfContains(['i9999_custom'])) {
-            return VersionFactory::set('Home');
-        }
-
-        return new Version();
     }
 
     /**
