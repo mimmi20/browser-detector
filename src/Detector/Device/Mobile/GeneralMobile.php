@@ -29,48 +29,50 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Device\UnknownDevice;
-use BrowserDetector\Detector\Factory\Device\DesktopFactory;
-use BrowserDetector\Detector\Factory\Device\MobileFactory;
-use BrowserDetector\Detector\Factory\Device\TvFactory;
-use BrowserDetector\Helper\Desktop;
-use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\Tv as TvHelper;
+use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Device\AbstractDevice;
+use UaDeviceType;
 
 /**
- * Device detection class
- *
  * @category  BrowserDetector
  *
- * @author    Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class DeviceFactory implements FactoryInterface
+class GeneralMobile extends AbstractDevice
 {
     /**
-     * Gets the information about the rendering engine by User Agent
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \UaResult\Device\DeviceInterface
+     * @param array  $data
      */
-    public static function detect($useragent)
-    {
-        if ((new MobileDevice($useragent))->isMobile()) {
-            return MobileFactory::detect($useragent);
-        }
+    public function __construct(
+        $useragent,
+        array $data
+    ) {
+        $this->useragent = $useragent;
 
-        if ((new TvHelper($useragent))->isTvDevice()) {
-            return TvFactory::detect($useragent);
-        }
-
-        if ((new Desktop($useragent))->isDesktopDevice()) {
-            return DesktopFactory::detect($useragent);
-        }
-
-        return new UnknownDevice($useragent, []);
+        $this->setData(
+            [
+                'deviceName'        => 'general Mobile Device',
+                'marketingName'     => 'general Mobile Device',
+                'version'           => null,
+                'manufacturer'      => (new Company\Unknown())->name,
+                'brand'             => (new Company\Unknown())->brandname,
+                'formFactor'        => null,
+                'pointingMethod'    => 'touchscreen',
+                'resolutionWidth'   => 240,
+                'resolutionHeight'  => 320,
+                'dualOrientation'   => true,
+                'colors'            => 65536,
+                'smsSupport'        => null,
+                'nfcSupport'        => null,
+                'hasQwertyKeyboard' => true,
+                'type'              => new UaDeviceType\Unknown(),
+            ]
+        );
     }
 }

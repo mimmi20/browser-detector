@@ -32,10 +32,8 @@
 namespace BrowserDetector\Detector\Factory\Device;
 
 
-use BrowserDetector\Detector\Factory\CompanyFactory;
+use BrowserDetector\Detector\Device\Mobile\GeneralMobile;
 use BrowserDetector\Detector\Factory\FactoryInterface;
-use UaDeviceType;
-use UaResult\Device\Device;
 
 /**
  * @category  BrowserDetector
@@ -1692,6 +1690,6 @@ class MobileFactory implements FactoryInterface
             return Mobile\AppleFactory::detect($useragent);
         }
 
-        return new Device($useragent, 'general Mobile Device', null, CompanyFactory::get('Unknown')->getName(), new UaDeviceType\Unknown(), CompanyFactory::get('Unknown')->getName(), 'general Mobile Device', 'touchscreen', 240, 320, true, 65536, null, null, true, null);
+        return new GeneralMobile($useragent, []);
     }
 }
