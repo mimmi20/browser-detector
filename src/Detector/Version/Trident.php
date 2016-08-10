@@ -29,11 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Engine;
+namespace BrowserDetector\Detector\Version;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
-use UaResult\Engine\Engine;
 
 /**
  * @category  BrowserDetector
@@ -41,18 +40,48 @@ use UaResult\Engine\Engine;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Goanna extends Engine
+class Trident
 {
     /**
-     * Class Constructor
+     * returns the version of the operating system/platform
      *
-     * @param string $useragent the user agent to be handled
+     * @param string $useragent
+     *
+     * @return \BrowserDetector\Version\Version
      */
-    public function __construct($useragent)
+    public static function detectVersion($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Goanna';
-        $this->version      = \BrowserDetector\Detector\Version\Goanna::detectVersion($useragent);
-        $this->manufacturer = (new Company\MoonchildProductions())->name;
+        $doMatch = preg_match('/Trident\/([\d\.]+)/', $useragent, $matches);
+
+        if ($doMatch) {
+            return VersionFactory::set($matches[1]);
+        }
+
+        $doMatch = preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
+
+        if ($doMatch) {
+            $version = '';
+
+            switch ((float) $matches[1]) {
+                case 11.0:
+                    $version = '7.0';
+                    break;
+                case 10.0:
+                    $version = '6.0';
+                    break;
+                case 9.0:
+                    $version = '5.0';
+                    break;
+                case 8.0:
+                    $version = '4.0';
+                    break;
+                default:
+                    // do nothing here
+            }
+
+            return VersionFactory::set($version);
+        }
+
+        return new Version(0);
     }
 }

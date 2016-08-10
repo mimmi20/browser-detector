@@ -53,48 +53,7 @@ class Trident extends Engine
     {
         $this->useragent    = $useragent;
         $this->name         = 'Trident';
-        $this->version      = $this->detectVersion();
+        $this->version      = \BrowserDetector\Detector\Version\Trident::detectVersion($useragent);
         $this->manufacturer = (new Company\Microsoft())->name;
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return VersionFactory::set($matches[1]);
-        }
-
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            $version = '';
-
-            switch ((float) $matches[1]) {
-                case 11.0:
-                    $version = '7.0';
-                    break;
-                case 10.0:
-                    $version = '6.0';
-                    break;
-                case 9.0:
-                    $version = '5.0';
-                    break;
-                case 8.0:
-                    $version = '4.0';
-                    break;
-                default:
-                    // do nothing here
-            }
-
-            return VersionFactory::set($version);
-        }
-
-        return new Version();
     }
 }
