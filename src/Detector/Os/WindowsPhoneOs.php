@@ -52,34 +52,7 @@ class WindowsPhoneOs extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'Windows Phone OS';
-        $this->version      = $this->detectVersion();
+        $this->version      = \BrowserDetector\Detector\Version\WindowsPhoneOs::detectVersion($useragent);
         $this->manufacturer = (new Company\Microsoft())->name;
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
-            return VersionFactory::set('7.5');
-        }
-
-        if ($utils->checkIfContains(['WPDesktop'])) {
-            if ($utils->checkIfContains(['Windows NT 6.2'])) {
-                return VersionFactory::set('8.1');
-            }
-
-            return VersionFactory::set('8.0');
-        }
-
-        $searches = ['Windows Phone OS', 'Windows Phone'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 }

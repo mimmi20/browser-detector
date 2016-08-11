@@ -52,32 +52,7 @@ class WindowsMobileOs extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'Windows Mobile OS';
-        $this->version      = $this->detectVersion();
+        $this->version      = \BrowserDetector\Detector\Version\WindowsMobileOs::detectVersion($useragent);
         $this->manufacturer = (new Company\Microsoft())->name;
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        if (false !== strpos($this->useragent, 'Windows NT 5.1')) {
-            return VersionFactory::set('6.0');
-        }
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains(['Windows Mobile', 'MSIEMobile'])) {
-            $searches = ['MSIEMobile'];
-
-            return VersionFactory::detectVersion($this->useragent, $searches, '6.0');
-        }
-
-        $searches = ['Windows Phone'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 }

@@ -58,37 +58,7 @@ class Macosx extends AbstractOs
         if (null !== $version && is_string($version)) {
             $this->version = VersionFactory::set($version);
         } else {
-            $this->version = $this->detectVersion();
+            $this->version = \BrowserDetector\Detector\Version\Macosx::detectVersion($useragent);
         }
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
-    {
-        $detector = VersionFactory::detectVersion($this->useragent, ['Mac OS X', 'Mac OS X v'], '10');
-
-        if ($detector->getVersion(Version::MAJORONLY) > 999) {
-            $versions = [];
-            $found    = preg_match('/(\d\d)(\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
-
-            if ($found) {
-                return VersionFactory::set($versions[1] . '.' . $versions[2] . '.' . $versions[3]);
-            }
-        }
-
-        if ($detector->getVersion(Version::MAJORONLY) > 99) {
-            $versions = [];
-            $found    = preg_match('/(\d\d)(\d)/', $detector->getVersion(Version::MAJORONLY), $versions);
-
-            if ($found) {
-                return VersionFactory::set($versions[1] . '.' . $versions[2]);
-            }
-        }
-
-        return $detector;
     }
 }

@@ -52,46 +52,7 @@ class AndroidOs extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'Android';
-        $this->version      = $this->detectVersion();
+        $this->version      = \BrowserDetector\Detector\Version\AndroidOs::detectVersion($useragent);
         $this->manufacturer = (new Company\Google())->name;
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
-    {
-        if (false !== stripos($this->useragent, 'android 2.1-update1')) {
-            return VersionFactory::set('2.1.1');
-        }
-
-        $searches = [
-            'Android android',
-            'Android AndroidHouse Team',
-            'Android WildPuzzleROM v8 froyo',
-            'JUC\(Linux;U;',
-            'Linux; GoogleTV',
-            'Android OS',
-            'Android',
-            'Adr ',
-        ];
-
-        $detector = VersionFactory::detectVersion($this->useragent, $searches);
-
-        if ($detector->getVersion()) {
-            return $detector;
-        }
-
-        if (false !== stripos($this->useragent, 'android eclair')) {
-            return VersionFactory::set('2.1');
-        }
-
-        if (false !== stripos($this->useragent, 'gingerbread')) {
-            return VersionFactory::set('2.3');
-        }
-
-        return new Version(0);
     }
 }

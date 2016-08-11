@@ -52,24 +52,7 @@ class Debian extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'Debian';
-        $this->version      = $this->detectVersion();
+        $this->version      = \BrowserDetector\Detector\Version\Debian::detectVersion($useragent);
         $this->manufacturer = (new Company\SoftwareInThePublicInterest())->name;
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContainsAll(['debian', 'squeeze'], true)) {
-            return '6.0';
-        }
-
-        return VersionFactory::detectVersion($this->useragent, ['Debian']);
     }
 }

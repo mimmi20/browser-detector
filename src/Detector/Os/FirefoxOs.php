@@ -51,18 +51,7 @@ class FirefoxOs extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'FirefoxOS';
-        $this->version      = $this->detectVersion();
+        $this->version      = \BrowserDetector\Detector\Version\FirefoxOs::detectVersion($useragent);
         $this->manufacturer = (new Company\MozillaFoundation())->name;
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        //@todo: add logic here
-        return new Version(0);
     }
 }

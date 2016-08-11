@@ -57,34 +57,7 @@ class Ios extends AbstractOs
         if (null !== $version && is_string($version)) {
             $this->version = VersionFactory::set($version);
         } else {
-            $this->version = $this->detectVersion();
+            $this->version = \BrowserDetector\Detector\Version\Ios::detectVersion($useragent);
         }
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match('/CPU like Mac OS X/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            return VersionFactory::set('1.0');
-        }
-
-        $searches = [
-            'IphoneOSX',
-            'CPU OS\_',
-            'CPU OS',
-            'CPU iOS',
-            'CPU iPad OS',
-            'iPhone OS',
-            'iPhone_OS',
-            'IUC\(U\;iOS',
-        ];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 }

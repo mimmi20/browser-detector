@@ -51,23 +51,7 @@ class RimOs extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'RIM OS';
-        $this->version      = $this->detectVersion();
+        $this->version      = \BrowserDetector\Detector\Version\RimOs::detectVersion($useragent);
         $this->manufacturer = (new Company\Rim())->name;
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return string|null
-     */
-    private function detectVersion()
-    {
-        $searches = ['BlackBerry[0-9a-z]+', 'BlackBerrySimulator'];
-
-        if (false !== stripos($this->useragent, 'bb10') || false !== stripos($this->useragent, 'opera')) {
-            $searches[] = 'Version';
-        }
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 }
