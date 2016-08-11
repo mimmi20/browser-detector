@@ -42,8 +42,6 @@ use BrowserDetector\Detector\Version\AndroidOs;
  */
 trait GetAndroidosTrait
 {
-    use GetOsbitsTrait;
-
     /**
      * detects the device name from the given user agent
      *
@@ -51,8 +49,8 @@ trait GetAndroidosTrait
      *
      * @return \UaResult\Os\OsInterface
      */
-    private static function getAndroidOs($useragent)
+    public function detectOs()
     {
-        return new \UaResult\Os\Os($useragent, 'Android', AndroidOs::detectVersion($useragent), CompanyFactory::get('Google')->getName(), self::getOsBits($useragent));
+        return new Os\###OS###($this->useragent);
     }
 }

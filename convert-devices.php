@@ -11,13 +11,13 @@ chdir(__DIR__);
 require 'vendor/autoload.php';
 
 ini_set('memory_limit', '-1');
-
+/*
 $sourceDirectory = 'src\\Detector\\Factory\\Device\\Mobile\\';
 
 $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
 
 foreach (new \RecursiveIteratorIterator($iterator) as $file) {
-    /** @var $file \SplFileInfo */
+    /// @var $file \SplFileInfo
     if (!$file->isFile() || $file->getExtension() !== 'php') {
         continue;
     }
@@ -183,6 +183,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 }
 
 exit;
+/**/
 $sourceDirectory = 'src\\Detector\\Device\\';
 
 $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
@@ -202,16 +203,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     $fullpath    = $file->getPathname();
     $pathMatches = [];
 
-    if (preg_match('/Detector\\\\Device\\\\(Desktop|Tv)\\\\([^\\.]+)/', $fullpath, $pathMatches)) {
-        $template = 'data/templates/general-tv-device.php.tmp';
-    } elseif (preg_match('/Detector\\\\Device\\\\(Desktop|Mobile|Tv)\\\\([^\\\\]+)\\\\([^\\.]+)/', $fullpath, $pathMatches) && $pathMatches[1] === 'Mobile') {
-        $template = 'data/templates/general-sub-device.php.tmp';
-    } elseif (preg_match('/Detector\\\\Device\\\\(Mobile)\\\\([^\\.]+)/', $fullpath, $pathMatches)) {
-        $template = 'data/templates/general-device.php.tmp';
-    } else {
-        $template = 'data/templates/general-device.php.tmp';
-    }
-
+    $template        = 'data/templates/general-device.php.tmp';
     $filecontent     = file_get_contents($fullpath);
     $templateContent = file_get_contents($template);
     $matches         = [];
@@ -239,93 +231,115 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         );
     }
 
-    if (preg_match('/\\\'pointing_method\\\'\s+=> \\\'(\w+)\\\'/', $filecontent, $matches)) {
-        $pointing = '\'' . $matches[1] . '\'';
+    $pointMatches = [];
+
+    if (preg_match('/\\\'pointingMethod\\\'\s+=> \\\'(\w+)\\\'/', $filecontent, $pointMatches)) {
+        $pointing = '\'' . $pointMatches[1] . '\'';
     } else {
         $pointing = 'null';
     }
 
-    if (preg_match('/\\\'resolution_width\\\'\s+=> ([0-9nul]+)/', $filecontent, $matches)) {
-        $width = $matches[1];
+    $widthMatches = [];
+
+    if (preg_match('/\\\'resolutionWidth\\\'\s+=> ([0-9nul]+)/', $filecontent, $widthMatches)) {
+        $width = $widthMatches[1];
     } else {
         $width = 'null';
     }
 
-    if (preg_match('/\\\'resolution_height\\\'\s+=> ([0-9nul]+)/', $filecontent, $matches)) {
-        $height = $matches[1];
+    $heightMatches = [];
+
+    if (preg_match('/\\\'resolutionHeight\\\'\s+=> ([0-9nul]+)/', $filecontent, $heightMatches)) {
+        $height = $heightMatches[1];
     } else {
         $height = 'null';
     }
 
-    if (preg_match('/\\\'dual_orientation\\\'\s+=> (true|false|null)/', $filecontent, $matches)) {
-        $dual = $matches[1];
+    $dualMatches = [];
+
+    if (preg_match('/\\\'dualOrientation\\\'\s+=> (true|false|null)/', $filecontent, $dualMatches)) {
+        $dual = $dualMatches[1];
     } else {
         $dual = 'null';
     }
 
-    if (preg_match('/\\\'colors\\\'\s+=> ([0-9]+)/', $filecontent, $matches)) {
-        $colors = $matches[1];
+    $colorMatches = [];
+
+    if (preg_match('/\\\'colors\\\'\s+=> ([0-9]+)/', $filecontent, $colorMatches)) {
+        $colors = $colorMatches[1];
     } else {
         $colors = 'null';
     }
 
-    if (preg_match('/\\\'sms_enabled\\\'\s+=> (true|false|null)/', $filecontent, $matches)) {
-        $sms = $matches[1];
+    $smsMatches = [];
+
+    if (preg_match('/\\\'smsSupport\\\'\s+=> (true|false|null)/', $filecontent, $smsMatches)) {
+        $sms = $smsMatches[1];
     } else {
         $sms = 'null';
     }
 
-    if (preg_match('/\\\'nfc_support\\\'\s+=> (true|false|null)/', $filecontent, $matches)) {
-        $nfc = $matches[1];
+    $nfcMatches = [];
+
+    if (preg_match('/\\\'nfcSupport\\\'\s+=> (true|false|null)/', $filecontent, $nfcMatches)) {
+        $nfc = $nfcMatches[1];
     } else {
         $nfc = 'null';
     }
 
-    if (preg_match('/\\\'has_qwerty_keyboard\\\'\s+=> (true|false|null)/', $filecontent, $matches)) {
-        $qwerty = $matches[1];
+    $quertyMatches = [];
+
+    if (preg_match('/\\\'hasQwertyKeyboard\\\'\s+=> (true|false|null)/', $filecontent, $quertyMatches)) {
+        $qwerty = $quertyMatches[1];
     } else {
         $qwerty = 'null';
     }
 
-    if (preg_match('/getDeviceType\\(\\)\\n    {\\n        return new ([^\\(]+)/', $filecontent, $matches)) {
-        $type = $matches[1];
+    $typeMatches = [];
+
+    if (preg_match('/\\\'type\\\'\s+=> new UaDeviceType\\\\([^\\(]+)/', $filecontent, $quertyMatches)) {
+        $type = $quertyMatches[1];
     } else {
-        $type = 'Unknown';
+        $type = 'new UaDeviceType\Unknown';
     }
 
-    if (preg_match('/\\\'code_name\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $matches)) {
-        $codename = $matches[1];
+    $codeMatches = [];
+
+    if (preg_match('/\\\'deviceName\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $codeMatches)) {
+        $codename = $codeMatches[1];
     } else {
         $codename = 'unknown';
     }
 
-    if (preg_match('/\\\'marketing_name\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $matches)) {
-        $marketing = $matches[1];
+    $marketingMatches = [];
+
+    if (preg_match('/\\\'marketingName\\\'\s+=> \\\'([^\\\\\']+)\\\'/', $filecontent, $marketingMatches)) {
+        $marketing = $marketingMatches[1];
     } else {
         $marketing = 'unknown';
     }
 
-    if (preg_match('/getManufacturer\\(\\)\\n    {\\n        return new Company\\(new Company\\\\([^\\(]+)/', $filecontent, $matches)) {
-        $manufacturer = $matches[1];
+    $manuMatches = [];
+
+    if (preg_match('/\\\'manufacturer\\\'\s+=> \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
+        $manufacturer = $marketingMatches[1];
     } else {
         $manufacturer = 'Unknown';
     }
 
-    if (preg_match('/getBrand\\(\\)\\n    {\\n        return new Company\\(new Company\\\\([^\\(]+)/', $filecontent, $matches)) {
-        $brand = $matches[1];
+    $brandMatches = [];
+
+    if (preg_match('/\\\'brand\\\'\s+=> \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
+        $brand = $marketingMatches[1];
     } else {
         $brand = 'Unknown';
     }
 
-    if (preg_match('/getBrand\\(\\)\\n    {\\n        return new Company\\(new Company\\\\([^\\(]+)/', $filecontent, $matches)) {
-        $brand = $matches[1];
-    } else {
-        $brand = 'Unknown';
-    }
+    $osMatches = [];
 
-    if (preg_match('/detectOs\\(\\)\\n    {\\n        return new ([^\\(]+)/', $filecontent, $matches)) {
-        $os = $matches[1];
+    if (preg_match('/detectOs\\(\\)\\n    {\\n        return new ([^\\(]+)/', $filecontent, $osMatches)) {
+        $os = 'new Os\\' . $osMatches[1] . '($this->useragent)';
     } else {
-        $os = 'UnknownOs';
+        $os = 'null';
     }
 }
