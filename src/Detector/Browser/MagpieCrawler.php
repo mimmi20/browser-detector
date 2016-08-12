@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class MagpieCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->name                        = 'Magpie Crawler';
         $this->modus                       = null;
         $this->version                     = $this->detectVersion();
-        $this->manufacturer                = (new Company\Brandwatch())->name;
+        $this->manufacturer                = CompanyFactory::get('Brandwatch')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

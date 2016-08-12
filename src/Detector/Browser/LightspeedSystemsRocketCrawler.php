@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class LightspeedSystemsRocketCrawler extends AbstractBrowser implements BrowserH
         $this->name                        = 'Lightspeed Systems RocketCrawler';
         $this->modus                       = null;
         $this->version                     = $this->detectVersion();
-        $this->manufacturer                = (new Company\LightspeedSystems())->name;
+        $this->manufacturer                = CompanyFactory::get('LightspeedSystems')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

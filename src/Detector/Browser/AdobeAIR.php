@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class AdobeAIR extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->name                        = 'Adobe AIR';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AdobeAIR']);
-        $this->manufacturer                = (new Company\Adobe())->name;
+        $this->manufacturer                = CompanyFactory::get('Adobe')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

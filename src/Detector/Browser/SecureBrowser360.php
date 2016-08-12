@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class SecureBrowser360 extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->name                        = '360 Secure Browser';
         $this->modus                       = null;
         $this->version                     = $this->detectVersion();
-        $this->manufacturer                = (new Company\Qihoo())->name;
+        $this->manufacturer                = CompanyFactory::get('Qihoo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

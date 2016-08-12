@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class ObigoQ extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->name                        = 'Obigo Q';
         $this->modus                       = null;
         $this->version                     = \BrowserDetector\Detector\Version\ObigoQ::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Obigo())->name;
+        $this->manufacturer                = CompanyFactory::get('Obigo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

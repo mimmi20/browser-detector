@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class YaBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->name                        = 'Yandex Browser';
         $this->modus                       = null;
         $this->version                     = $this->detectVersion();
-        $this->manufacturer                = (new Company\Yandex())->name;
+        $this->manufacturer                = CompanyFactory::get('Yandex')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

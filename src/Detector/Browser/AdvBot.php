@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class AdvBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->name                        = 'AdvBot';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AdvBot']);
-        $this->manufacturer                = (new Company\AdvBot())->name;
+        $this->manufacturer                = CompanyFactory::get('AdvBot')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

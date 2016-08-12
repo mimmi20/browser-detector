@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->name                        = 'AcoonBot';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AcoonBot']);
-        $this->manufacturer                = (new Company\MichaelSchoebel())->name;
+        $this->manufacturer                = CompanyFactory::get('MichaelSchoebel')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

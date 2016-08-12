@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class AjaxSnapBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->name                        = 'AjaxSnapBot';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AjaxSnapBot']);
-        $this->manufacturer                = (new Company\Tockify())->name;
+        $this->manufacturer                = CompanyFactory::get('Tockify')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->name                        = 'Maxthon';
         $this->modus                       = null;
         $this->version                     = \BrowserDetector\Detector\Version\Maxthon::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Maxthon())->name;
+        $this->manufacturer                = CompanyFactory::get('Maxthon')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

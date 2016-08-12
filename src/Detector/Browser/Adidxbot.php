@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class Adidxbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->name                        = 'adidxbot';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['adidxbot']);
-        $this->manufacturer                = (new Company\Microsoft())->name;
+        $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

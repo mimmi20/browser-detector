@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -56,7 +56,7 @@ class TwitterApp extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->name                        = 'Twitter App';
         $this->modus                       = null;
         $this->version                     = $this->detectVersion();
-        $this->manufacturer                = (new Company\Twitter())->name;
+        $this->manufacturer                = CompanyFactory::get('Twitter')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
         $this->canSkipAlignedLinkRow       = true;

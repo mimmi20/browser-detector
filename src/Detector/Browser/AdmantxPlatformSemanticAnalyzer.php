@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -56,7 +56,7 @@ class AdmantxPlatformSemanticAnalyzer extends AbstractBrowser implements Browser
         $this->name                        = 'ADmantX Platform Semantic Analyzer';
         $this->modus                       = null;
         $this->version                     = new Version(0);
-        $this->manufacturer                = (new Company\AdmantxInc())->name;
+        $this->manufacturer                = CompanyFactory::get('AdmantxInc')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

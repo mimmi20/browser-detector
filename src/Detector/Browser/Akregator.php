@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->name                        = 'akregator';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Akregator']);
-        $this->manufacturer                = (new Company\Kde())->name;
+        $this->manufacturer                = CompanyFactory::get('Kde')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

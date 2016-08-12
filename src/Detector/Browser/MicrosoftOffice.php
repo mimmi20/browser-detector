@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\MicrosoftOffice as MicrosoftOfficeHelper;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
@@ -58,7 +58,7 @@ class MicrosoftOffice extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->name                        = 'Office';
         $this->modus                       = null;
         $this->version                     = \BrowserDetector\Detector\Version\MicrosoftOffice::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Microsoft())->name;
+        $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class Aboundexbot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->name                        = 'Aboundexbot';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Aboundex']);
-        $this->manufacturer                = (new Company\Aboundex())->name;
+        $this->manufacturer                = CompanyFactory::get('Aboundex')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class PhantomBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->name                        = 'Phantom Browser';
         $this->modus                       = null;
         $this->version                     = $this->detectVersion();
-        $this->manufacturer                = (new Company\Lg())->name;
+        $this->manufacturer                = CompanyFactory::get('Lg')->getName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -56,7 +56,7 @@ class Alcatel extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->name                        = 'Alcatel';
         $this->modus                       = null;
         $this->version                     = new Version(0);
-        $this->manufacturer                = (new Company\Alcatel())->name;
+        $this->manufacturer                = CompanyFactory::get('Alcatel')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class AdbeatBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->name                        = 'Adbeat Bot';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['adbeat\.com']);
-        $this->manufacturer                = (new Company\Adbeat())->name;
+        $this->manufacturer                = CompanyFactory::get('Adbeat')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

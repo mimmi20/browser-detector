@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class Airmail extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->name                        = 'Airmail';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Airmail']);
-        $this->manufacturer                = (new Company\Bloop())->name;
+        $this->manufacturer                = CompanyFactory::get('Bloop')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

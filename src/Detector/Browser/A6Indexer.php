@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class A6Indexer extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->name                        = 'A6-Indexer';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['A6\-Indexer']);
-        $this->manufacturer                = (new Company\A6Corp())->name;
+        $this->manufacturer                = CompanyFactory::get('A6Corp')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

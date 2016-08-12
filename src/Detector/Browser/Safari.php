@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\Safari as SafariHelper;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
@@ -58,7 +58,7 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->name                        = 'Safari';
         $this->modus                       = null;
         $this->version                     = \BrowserDetector\Detector\Version\Safari::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Apple())->name;
+        $this->manufacturer                = CompanyFactory::get('Apple')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
         $this->canSkipAlignedLinkRow       = true;

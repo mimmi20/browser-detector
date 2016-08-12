@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class CybEye extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->name                        = 'CybEye';
         $this->modus                       = null;
         $this->version                     = $this->detectVersion();
-        $this->manufacturer                = (new Company\CybEye())->name;
+        $this->manufacturer                = CompanyFactory::get('CybEye')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
         $this->canSkipAlignedLinkRow       = true;

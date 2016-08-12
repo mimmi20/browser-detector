@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class AddThisRobot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->name                        = 'AddThis.com robot';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AddThis\.com robot']);
-        $this->manufacturer                = (new Company\AddThis())->name;
+        $this->manufacturer                = CompanyFactory::get('AddThis')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

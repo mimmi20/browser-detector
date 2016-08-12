@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class Bowser extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->name                        = 'Bowser';
         $this->modus                       = null;
         $this->version                     = $this->detectVersion();
-        $this->manufacturer                = (new Company\EricssonResearch())->name;
+        $this->manufacturer                = CompanyFactory::get('EricssonResearch')->getName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

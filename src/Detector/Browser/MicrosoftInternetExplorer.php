@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -79,7 +79,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
         $this->name                        = 'Internet Explorer';
         $this->modus                       = null;
         $this->version                     = \BrowserDetector\Detector\Version\MicrosoftInternetExplorer::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Microsoft())->name;
+        $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

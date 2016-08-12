@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class AdvancedEmailExtractor extends AbstractBrowser implements BrowserHasSpecif
         $this->name                        = 'Advanced Email Extractor';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Advanced Email Extractor', 'Advanced Email Extractor v']);
-        $this->manufacturer                = (new Company\Unknown())->name;
+        $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

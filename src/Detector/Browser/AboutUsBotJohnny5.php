@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class AboutUsBotJohnny5 extends AbstractBrowser implements BrowserHasSpecificEng
         $this->name                        = 'AboutUs Bot Johnny5';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AboutUsBot Johnny5']);
-        $this->manufacturer                = (new Company\AboutUs())->name;
+        $this->manufacturer                = CompanyFactory::get('AboutUs')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

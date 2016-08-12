@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\Version;
@@ -57,7 +57,7 @@ class Friendica extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->name                        = 'Friendica';
         $this->modus                       = null;
         $this->version                     = \BrowserDetector\Detector\Version\Friendica::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Unknown())->name;
+        $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

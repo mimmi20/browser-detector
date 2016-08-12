@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -56,7 +56,7 @@ class Abrowse extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->name                        = 'ABrowse';
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ABrowse']);
-        $this->manufacturer                = (new Company\Unknown())->name;
+        $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Helper\Safari as SafariHelper;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
@@ -59,7 +59,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->name                        = 'Android Webkit';
         $this->modus                       = null;
         $this->version                     = \BrowserDetector\Detector\Version\AndroidWebkit::detectVersion($useragent);
-        $this->manufacturer                = (new Company\Google())->name;
+        $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;
