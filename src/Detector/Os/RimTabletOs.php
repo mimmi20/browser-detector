@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class RimTabletOs extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'RIM Tablet OS';
         $this->version      = VersionFactory::detectVersion($useragent, ['RIM Tablet OS']);
-        $this->manufacturer = (new Company\Rim())->name;
+        $this->manufacturer = CompanyFactory::get('Rim')->getName();
     }
 }

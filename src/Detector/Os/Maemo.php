@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Maemo extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Linux Smartphone OS (Maemo)';
         $this->version      = VersionFactory::detectVersion($useragent, ['Maemo']);
-        $this->manufacturer = (new Company\LinuxFoundation())->name;
+        $this->manufacturer = CompanyFactory::get('LinuxFoundation')->getName();
     }
 }

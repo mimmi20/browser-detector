@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\Version;
 
 /**
@@ -52,6 +52,6 @@ class Symbianos extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Symbian OS';
         $this->version      = new Version(0);
-        $this->manufacturer = (new Company\SymbianFoundation())->name;
+        $this->manufacturer = CompanyFactory::get('SymbianFoundation')->getName();
     }
 }

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Unix extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Unix';
         $this->version      = VersionFactory::detectVersion($useragent, ['Unix']);
-        $this->manufacturer = (new Company\Unknown())->name;
+        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
     }
 }

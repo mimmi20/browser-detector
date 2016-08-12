@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class DragonflyBsd extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'DragonFly BSD';
         $this->version      = VersionFactory::detectVersion($useragent, ['DragonFly']);
-        $this->manufacturer = (new Company\Unknown())->name;
+        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
     }
 }

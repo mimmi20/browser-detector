@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Beos extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'BeOS';
         $this->version      = VersionFactory::detectVersion($useragent, ['BeOS']);
-        $this->manufacturer = (new Company\Access())->name;
+        $this->manufacturer = CompanyFactory::get('Access')->getName();
     }
 }

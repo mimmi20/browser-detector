@@ -31,9 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\VersionFactory;
-use UaHelper\Utils;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 
 /**
  * @category  BrowserDetector
@@ -53,6 +51,6 @@ class WindowsMobileOs extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Windows Mobile OS';
         $this->version      = \BrowserDetector\Detector\Version\WindowsMobileOs::detectVersion($useragent);
-        $this->manufacturer = (new Company\Microsoft())->name;
+        $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
     }
 }

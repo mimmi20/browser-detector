@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,7 +52,7 @@ class Ios extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'iOS';
-        $this->manufacturer = (new Company\Apple())->name;
+        $this->manufacturer = CompanyFactory::get('Apple')->getName();
 
         if (null !== $version && is_string($version)) {
             $this->version = VersionFactory::set($version);

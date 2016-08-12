@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Tru64Unix extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Tru64 UNIX';
         $this->version      = VersionFactory::detectVersion($useragent, ['Tru64 UNIX', 'Digital Unix']);
-        $this->manufacturer = (new Company\Hp())->name;
+        $this->manufacturer = CompanyFactory::get('Hp')->getName();
     }
 }

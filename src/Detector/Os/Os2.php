@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Os2 extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'OS/2';
         $this->version      = VersionFactory::detectVersion($useragent, ['OS\/2', 'Warp']);
-        $this->manufacturer = (new Company\Ibm())->name;
+        $this->manufacturer = CompanyFactory::get('Ibm')->getName();
     }
 }

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\Version;
 
 /**
@@ -52,6 +52,6 @@ class Gentoo extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Gentoo Linux';
         $this->version      = new Version(0);
-        $this->manufacturer = (new Company\Gentoo())->name;
+        $this->manufacturer = CompanyFactory::get('Gentoo')->getName();
     }
 }

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class FreeBsd extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'FreeBSD';
         $this->version      = VersionFactory::detectVersion($useragent, ['FreeBSD', 'freebsd']);
-        $this->manufacturer = (new Company\FreeBsdFoundation())->name;
+        $this->manufacturer = CompanyFactory::get('FreeBsdFoundation')->getName();
     }
 }

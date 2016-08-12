@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class CrOs extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'ChromeOS';
         $this->version      = VersionFactory::detectVersion($useragent, ['CrOS']);
-        $this->manufacturer = (new Company\Google())->name;
+        $this->manufacturer = CompanyFactory::get('Google')->getName();
     }
 }

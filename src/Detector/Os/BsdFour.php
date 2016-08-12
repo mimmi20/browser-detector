@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class BsdFour extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'BSD';
         $this->version      = VersionFactory::detectVersion($useragent, ['BSD']);
-        $this->manufacturer = (new Company\BerkleyUniversity())->name;
+        $this->manufacturer = CompanyFactory::get('BerkleyUniversity')->getName();
     }
 }

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Darwin extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Darwin';
         $this->version      = VersionFactory::detectVersion($useragent, ['Darwin']);
-        $this->manufacturer = (new Company\Apple())->name;
+        $this->manufacturer = CompanyFactory::get('Apple')->getName();
     }
 }

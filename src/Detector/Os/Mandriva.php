@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\Version;
 
 /**
@@ -52,6 +52,6 @@ class Mandriva extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Mandriva Linux';
         $this->version      = new Version(0);
-        $this->manufacturer = (new Company\Mandriva())->name;
+        $this->manufacturer = CompanyFactory::get('Mandriva')->getName();
     }
 }

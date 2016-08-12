@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class SunOs extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'SunOS';
         $this->version      = VersionFactory::detectVersion($useragent, ['SunOS']);
-        $this->manufacturer = (new Company\Oracle())->name;
+        $this->manufacturer = CompanyFactory::get('Oracle')->getName();
     }
 }

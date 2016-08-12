@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\Version;
 
 /**
@@ -52,6 +52,6 @@ class WindowsCe extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Windows CE';
         $this->version      = new Version(0);
-        $this->manufacturer = (new Company\Microsoft())->name;
+        $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
     }
 }

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Ubuntu extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Ubuntu';
         $this->version      = VersionFactory::detectVersion($useragent, ['Ubuntu', 'ubuntu']);
-        $this->manufacturer = (new Company\Canonical())->name;
+        $this->manufacturer = CompanyFactory::get('Canonical')->getName();
     }
 }

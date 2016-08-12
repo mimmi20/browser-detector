@@ -31,10 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
-use UaHelper\Utils;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 
 /**
  * @category  BrowserDetector
@@ -54,6 +51,6 @@ class Windows extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Windows';
         $this->version      = \BrowserDetector\Detector\Version\Windows::detectVersion($useragent);
-        $this->manufacturer = (new Company\Microsoft())->name;
+        $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
     }
 }

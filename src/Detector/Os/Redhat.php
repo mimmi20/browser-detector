@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\Version;
 
 /**
@@ -52,6 +52,6 @@ class Redhat extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Redhat Linux';
         $this->version      = new Version(0);
-        $this->manufacturer = (new Company\Redhat())->name;
+        $this->manufacturer = CompanyFactory::get('Redhat')->getName();
     }
 }

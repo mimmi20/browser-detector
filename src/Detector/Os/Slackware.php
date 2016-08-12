@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Slackware extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Slackware Linux';
         $this->version      = VersionFactory::detectVersion($useragent, ['Slackware']);
-        $this->manufacturer = (new Company\Slackware())->name;
+        $this->manufacturer = CompanyFactory::get('Slackware')->getName();
     }
 }

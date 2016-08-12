@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Bada extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Bada';
         $this->version      = VersionFactory::detectVersion($useragent, ['Bada']);
-        $this->manufacturer = (new Company\Samsung())->name;
+        $this->manufacturer = CompanyFactory::get('Samsung')->getName();
     }
 }

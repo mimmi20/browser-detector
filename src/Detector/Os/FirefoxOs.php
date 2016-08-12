@@ -31,8 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\Version;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 
 /**
  * @category  BrowserDetector
@@ -52,6 +51,6 @@ class FirefoxOs extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'FirefoxOS';
         $this->version      = \BrowserDetector\Detector\Version\FirefoxOs::detectVersion($useragent);
-        $this->manufacturer = (new Company\MozillaFoundation())->name;
+        $this->manufacturer = CompanyFactory::get('MozillaFoundation')->getName();
     }
 }

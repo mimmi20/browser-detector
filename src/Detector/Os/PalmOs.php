@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class PalmOs extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'PalmOS';
         $this->version      = VersionFactory::detectVersion($useragent, ['PalmOS']);
-        $this->manufacturer = (new Company\Palm())->name;
+        $this->manufacturer = CompanyFactory::get('Palm')->getName();
     }
 }

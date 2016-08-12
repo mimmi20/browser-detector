@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class OpenVms extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'OpenVMS';
         $this->version      = VersionFactory::detectVersion($useragent, ['OpenVMS']);
-        $this->manufacturer = (new Company\Hp())->name;
+        $this->manufacturer = CompanyFactory::get('Hp')->getName();
     }
 }

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class MacintoshOs extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Macintosh';
         $this->version      = VersionFactory::detectVersion($useragent, ['Macintosh']);
-        $this->manufacturer = (new Company\Apple())->name;
+        $this->manufacturer = CompanyFactory::get('Apple')->getName();
     }
 }

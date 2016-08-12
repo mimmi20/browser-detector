@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Ventana extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Ventana Linux';
         $this->version      = VersionFactory::detectVersion($useragent, ['Ventana Linux', 'Ventana']);
-        $this->manufacturer = (new Company\Ventana())->name;
+        $this->manufacturer = CompanyFactory::get('Ventana')->getName();
     }
 }

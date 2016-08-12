@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class WebOs extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'webOS';
         $this->version      = VersionFactory::detectVersion($useragent, ['WebOS', 'webOS', 'hpwOS']);
-        $this->manufacturer = (new Company\Hp())->name;
+        $this->manufacturer = CompanyFactory::get('Hp')->getName();
     }
 }

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Os;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -52,6 +52,6 @@ class Solaris extends AbstractOs
         $this->useragent    = $useragent;
         $this->name         = 'Solaris';
         $this->version      = VersionFactory::detectVersion($useragent, ['Solaris']);
-        $this->manufacturer = (new Company\Oracle())->name;
+        $this->manufacturer = CompanyFactory::get('Oracle')->getName();
     }
 }
