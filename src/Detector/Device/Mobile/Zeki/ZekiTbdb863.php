@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Zeki;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class ZekiTbdb863 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class ZekiTbdb863 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'TBDB863',
-                'marketingName'     => 'TBDB863',
-                'version'           => null,
-                'manufacturer'      => (new Company\Zeki())->name,
-                'brand'             => (new Company\Zeki())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 720,
-                'resolutionHeight'  => 1280,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tablet(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'TBDB863';
+        $this->marketingName     = 'TBDB863';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Zeki')->getName();
+        $this->brand             = CompanyFactory::get('Zeki')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 720;
+        $this->resolutionHeight  = 1280;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\Tablet();
     }
 
     /**
      * returns the OS Handler
      *
-     * @return \UaResult\Os\Os
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new \UaResult\Os\Os($this->useragent, 'Android', AndroidOs::detectVersion($this->useragent), CompanyFactory::get('Google')->getName(), (new OsBits($this->useragent))->getBits());
+        return new Os\AndroidOs($this->useragent);
     }
 }

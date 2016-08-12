@@ -31,9 +31,11 @@
 
 namespace BrowserDetector\Detector\Device\Desktop;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -41,38 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class EeePc extends AbstractDevice
+class EeePc extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'eee pc';
+        $this->marketingName     = 'eee pc';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Asus')->getName();
+        $this->brand             = CompanyFactory::get('Asus')->getBrandName();
+        $this->pointingMethod    = 'mouse';
+        $this->resolutionWidth   = 1024;
+        $this->resolutionHeight  = 600;
+        $this->dualOrientation   = false;
+        $this->colors            = null;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\Desktop();
+    }
 
-        $this->setData(
-            [
-                'deviceName'        => 'eee pc',
-                'marketingName'     => 'eee pc',
-                'version'           => null,
-                'manufacturer'      => (new Company\Asus())->name,
-                'brand'             => (new Company\Asus())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'mouse',
-                'resolutionWidth'   => 1024,
-                'resolutionHeight'  => 600,
-                'dualOrientation'   => false,
-                'colors'            => null,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Desktop(),
-            ]
-        );
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return null;
     }
 }

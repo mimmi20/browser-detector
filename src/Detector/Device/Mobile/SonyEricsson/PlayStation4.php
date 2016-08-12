@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PlayStation4 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class PlayStation4 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Playstation 4',
-                'marketingName'     => 'Playstation 4',
-                'version'           => null,
-                'manufacturer'      => (new Company\Sony())->name,
-                'brand'             => (new Company\Sony())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'mouse',
-                'resolutionWidth'   => 685,
-                'resolutionHeight'  => 600,
-                'dualOrientation'   => false,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tv(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'Playstation 4';
+        $this->marketingName     = 'Playstation 4';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Sony')->getName();
+        $this->brand             = CompanyFactory::get('Sony')->getBrandName();
+        $this->pointingMethod    = 'mouse';
+        $this->resolutionWidth   = 685;
+        $this->resolutionHeight  = 600;
+        $this->dualOrientation   = false;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\Tv();
     }
 
     /**
      * returns the OS Handler
      *
-     * @return \UaResult\Os\Os
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new \UaResult\Os\Os($useragent, 'CellOS', new Version(0), CompanyFactory::get('Sony')->getName(), $bits);
+        return new Os\CellOS($this->useragent);
     }
 }

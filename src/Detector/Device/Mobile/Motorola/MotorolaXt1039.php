@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Motorola;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,38 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MotorolaXt1039 extends AbstractDevice
+class MotorolaXt1039 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'XT1039';
+        $this->marketingName     = 'XT1039';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Motorola')->getName();
+        $this->brand             = CompanyFactory::get('Motorola')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 720;
+        $this->resolutionHeight  = 1280;
+        $this->dualOrientation   = true;
+        $this->colors            = 16777216;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
+    }
 
-        $this->setData(
-            [
-                'deviceName'        => 'XT1039',
-                'marketingName'     => 'XT1039',
-                'version'           => null,
-                'manufacturer'      => (new Company\Motorola())->name,
-                'brand'             => (new Company\Motorola())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 720,
-                'resolutionHeight'  => 1280,
-                'dualOrientation'   => true,
-                'colors'            => 16777216,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return null;
     }
 }

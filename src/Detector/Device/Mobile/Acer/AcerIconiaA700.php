@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Acer;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class AcerIconiaA700 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class AcerIconiaA700 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'A700',
-                'marketingName'     => 'Iconia Tab A700',
-                'version'           => null,
-                'manufacturer'      => (new Company\Acer())->name,
-                'brand'             => (new Company\Acer())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 1920,
-                'resolutionHeight'  => 1200,
-                'dualOrientation'   => true,
-                'colors'            => 4294967296,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\FonePad(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'A700';
+        $this->marketingName     = 'Iconia Tab A700';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Acer')->getName();
+        $this->brand             = CompanyFactory::get('Acer')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 1920;
+        $this->resolutionHeight  = 1200;
+        $this->dualOrientation   = true;
+        $this->colors            = 4294967296;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**
      * returns the OS Handler
      *
-     * @return \UaResult\Os\Os
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new \UaResult\Os\Os($this->useragent, 'Android', AndroidOs::detectVersion($this->useragent), CompanyFactory::get('Google')->getName(), (new OsBits($this->useragent))->getBits());
+        return new Os\AndroidOs($this->useragent);
     }
 }

@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyEricssonU1 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class SonyEricssonU1 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'U1',
-                'marketingName'     => 'U1',
-                'version'           => null,
-                'manufacturer'      => (new Company\SonyEricsson())->name,
-                'brand'             => (new Company\SonyEricsson())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 360,
-                'resolutionHeight'  => 640,
-                'dualOrientation'   => false,
-                'colors'            => 16777216,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => false,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'U1';
+        $this->marketingName     = 'U1';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('SonyEricsson')->getName();
+        $this->brand             = CompanyFactory::get('SonyEricsson')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 360;
+        $this->resolutionHeight  = 640;
+        $this->dualOrientation   = false;
+        $this->colors            = 16777216;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = false;
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**
      * returns the OS Handler
      *
-     * @return \UaResult\Os\Os
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new \UaResult\Os\Os($useragent, 'Symbian OS', new Version(0), CompanyFactory::get('SymbianFoundation')->getName(), $bits);
+        return new Os\Symbianos($this->useragent);
     }
 }

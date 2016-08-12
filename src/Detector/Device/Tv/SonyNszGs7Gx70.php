@@ -31,10 +31,11 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -42,38 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SonyNszGs7Gx70 extends AbstractDevice
+class SonyNszGs7Gx70 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'NSZ-GS7/GX70';
+        $this->marketingName     = 'NSZ-GS7/GX70';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Sony')->getName();
+        $this->brand             = CompanyFactory::get('Sony')->getBrandName();
+        $this->pointingMethod    = 'mouse';
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
+        $this->dualOrientation   = false;
+        $this->colors            = 65536;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\Tv();
+    }
 
-        $this->setData(
-            [
-                'deviceName'        => 'NSZ-GS7/GX70',
-                'marketingName'     => 'NSZ-GS7/GX70',
-                'version'           => null,
-                'manufacturer'      => (new Company\Sony())->name,
-                'brand'             => (new Company\Sony())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'mouse',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => false,
-                'colors'            => 65536,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\Tv(),
-            ]
-        );
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return null;
     }
 }

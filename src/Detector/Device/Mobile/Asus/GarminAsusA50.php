@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Asus;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class GarminAsusA50 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class GarminAsusA50 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'A50',
-                'marketingName'     => 'A50',
-                'version'           => null,
-                'manufacturer'      => (new Company\GarminAsus())->name,
-                'brand'             => (new Company\GarminAsus())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => 320,
-                'resolutionHeight'  => 480,
-                'dualOrientation'   => true,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => false,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'A50';
+        $this->marketingName     = 'A50';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('GarminAsus')->getName();
+        $this->brand             = CompanyFactory::get('GarminAsus')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 320;
+        $this->resolutionHeight  = 480;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = false;
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**
      * returns the OS Handler
      *
-     * @return \UaResult\Os\Os
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new \UaResult\Os\Os($this->useragent, 'Android', AndroidOs::detectVersion($this->useragent), CompanyFactory::get('Google')->getName(), (new OsBits($this->useragent))->getBits());
+        return new Os\AndroidOs($this->useragent);
     }
 }

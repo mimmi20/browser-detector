@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\HiPhone;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
-use BrowserDetector\Detector\Os\AndroidOs;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType\Tablet;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType\Tablet;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HiPhone extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class HiPhone extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'general HiPhone Device',
-                'marketingName'     => 'general HiPhone Device',
-                'version'           => null,
-                'manufacturer'      => (new Company\HiPhone())->name,
-                'brand'             => (new Company\HiPhone())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'touchscreen',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => true,
-                'colors'            => null,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new Tablet(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'general HiPhone Device';
+        $this->marketingName     = 'general HiPhone Device';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('HiPhone')->getName();
+        $this->brand             = CompanyFactory::get('HiPhone')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
+        $this->dualOrientation   = true;
+        $this->colors            = null;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\Unknown();
     }
 
     /**
-     * returns null, if the device does not have a specific Operating System, returns the OS Handler otherwise
+     * returns the OS Handler
      *
-     * @return \UaResult\Os\Os
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new AndroidOs($this->useragent, []);
+        return new Os\AndroidOs($this->useragent);
     }
 }

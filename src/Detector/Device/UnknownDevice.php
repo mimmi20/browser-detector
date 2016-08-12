@@ -31,8 +31,11 @@
 
 namespace BrowserDetector\Detector\Device;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,38 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class UnknownDevice extends AbstractDevice
+class UnknownDevice extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'unknown';
+        $this->marketingName     = 'unknown';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Unknown')->getName();
+        $this->brand             = CompanyFactory::get('Unknown')->getBrandName();
+        $this->pointingMethod    = null;
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
+        $this->dualOrientation   = false;
+        $this->colors            = 65536;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
+        $this->hasQwertyKeyboard = false;
+        $this->type              = new UaDeviceType\Unknown();
+    }
 
-        $this->setData(
-            [
-                'deviceName'        => 'unknown',
-                'marketingName'     => 'unknown',
-                'version'           => null,
-                'manufacturer'      => (new Company\Unknown())->name,
-                'brand'             => (new Company\Unknown())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => null,
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => false,
-                'colors'            => 65536,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => false,
-                'type'              => new UaDeviceType\Unknown(),
-            ]
-        );
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return null;
     }
 }

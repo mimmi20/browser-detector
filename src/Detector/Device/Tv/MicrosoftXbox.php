@@ -31,11 +31,11 @@
 
 namespace BrowserDetector\Detector\Device\Tv;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MicrosoftXbox extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class MicrosoftXbox extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'Xbox 360',
-                'marketingName'     => 'Xbox 360',
-                'version'           => null,
-                'manufacturer'      => (new Company\Microsoft())->name,
-                'brand'             => (new Company\Microsoft())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'mouse',
-                'resolutionWidth'   => null,
-                'resolutionHeight'  => null,
-                'dualOrientation'   => false,
-                'colors'            => 65536,
-                'smsSupport'        => false,
-                'nfcSupport'        => false,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\TvConsole(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'Xbox 360';
+        $this->marketingName     = 'Xbox 360';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Microsoft')->getName();
+        $this->brand             = CompanyFactory::get('Microsoft')->getBrandName();
+        $this->pointingMethod    = 'mouse';
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
+        $this->dualOrientation   = false;
+        $this->colors            = 65536;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\TvConsole();
     }
 
     /**
      * returns the OS Handler
      *
-     * @return \BrowserDetector\Detector\Os\UnknownOs
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new \UaResult\Os\Os($useragent, 'Windows', Windows::detectVersion($useragent), CompanyFactory::get('Microsoft')->getName(), $bits);
+        return new Os\Windows($this->useragent);
     }
 }

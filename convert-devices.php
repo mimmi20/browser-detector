@@ -196,14 +196,26 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 
     $filename = $file->getFilename();
 
-    if ('AbstractDevice.php' === $filename || 'HiPhone.php' === $filename) {
+    if ('AbstractDevice.php' === $filename) {
         continue;
     }
 
     $fullpath    = $file->getPathname();
     $pathMatches = [];
 
-    $template        = 'data/templates/general-device.php.tmp';
+    $fullpath    = $file->getPathname();
+    $pathMatches = [];
+
+    if (preg_match('/Detector\\\\Device\\\\(Desktop|Tv)\\\\([^\\.]+)/', $fullpath, $pathMatches)) {
+        $template        = 'data/templates/general-device.php.tmp';
+    } elseif (preg_match('/Detector\\\\Device\\\\(Desktop|Mobile|Tv)\\\\([^\\\\]+)\\\\([^\\.]+)/', $fullpath, $pathMatches) && $pathMatches[1] === 'Mobile') {
+        $template        = 'data/templates/general-device.php.tmp';
+    } elseif (preg_match('/Detector\\\\Device\\\\(Mobile)\\\\([^\\.]+)/', $fullpath, $pathMatches)) {
+        $template        = 'data/templates/general-device.php.tmp';
+    } else {
+        $template        = 'data/templates/general-device.php.tmp';
+    }
+
     $filecontent     = file_get_contents($fullpath);
     $templateContent = file_get_contents($template);
     $matches         = [];
@@ -337,9 +349,87 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 
     $osMatches = [];
 
-    if (preg_match('/detectOs\\(\\)\\n    {\\n        return new ([^\\(]+)/', $filecontent, $osMatches)) {
-        $os = 'new Os\\' . $osMatches[1] . '($this->useragent)';
+    if (preg_match('/detectOs\\(\\)\\n    {\\n        return new \\\\UaResult\\\\Os\\\\Os\\(\\$this\\-\\>useragent, \\\'([^\\\']+)/', $filecontent, $osMatches)) {
+        $osName = $osMatches[1];
+
+        if ('Android' === $osName) {
+            $osName = 'AndroidOs';
+        } elseif ('Symbian OS' === $osName) {
+            $osName = 'Symbianos';
+        } elseif ('RIM OS' === $osName) {
+            $osName = 'RimOs';
+        } elseif ('Joli OS' === $osName) {
+            $osName = 'JoliOs';
+        } elseif ('Windows Phone OS' === $osName) {
+            $osName = 'WindowsPhoneOs';
+        } elseif ('Linux Smartphone OS' === $osName) {
+            $osName = 'Maemo';
+        } elseif ('Windows Mobile OS' === $osName) {
+            $osName = 'WindowsMobileOs';
+        } elseif ('RIM Tablet OS' === $osName) {
+            $osName = 'RimTabletOs';
+        }
+
+        $os     = 'new Os\\' . $osName . '($this->useragent)';
+    } elseif (preg_match('/detectOs\\(\\)\\n    {\\n        return new \\\\UaResult\\\\Os\\\\Os\\(\\$useragent, \\\'([^\\\']+)/', $filecontent, $osMatches)) {
+        $osName = $osMatches[1];
+
+        if ('Android' === $osName) {
+            $osName = 'AndroidOs';
+        } elseif ('Symbian OS' === $osName) {
+            $osName = 'Symbianos';
+        } elseif ('RIM OS' === $osName) {
+            $osName = 'RimOs';
+        } elseif ('Joli OS' === $osName) {
+            $osName = 'JoliOs';
+        } elseif ('Windows Phone OS' === $osName) {
+            $osName = 'WindowsPhoneOs';
+        } elseif ('Linux Smartphone OS' === $osName) {
+            $osName = 'Maemo';
+        } elseif ('Windows Mobile OS' === $osName) {
+            $osName = 'WindowsMobileOs';
+        } elseif ('RIM Tablet OS' === $osName) {
+            $osName = 'RimTabletOs';
+        }
+
+        $os     = 'new Os\\' . $osName . '($this->useragent)';
+    } elseif (preg_match('/detectOs\\(\\)\\n    {\\n        return new ([^\\(]+)/', $filecontent, $osMatches)) {
+        $osName = $osMatches[1];
+
+        if ('Android' === $osName) {
+            $osName = 'AndroidOs';
+        } elseif ('Symbian OS' === $osName) {
+            $osName = 'Symbianos';
+        } elseif ('RIM OS' === $osName) {
+            $osName = 'RimOs';
+        } elseif ('Joli OS' === $osName) {
+            $osName = 'JoliOs';
+        } elseif ('Windows Phone OS' === $osName) {
+            $osName = 'WindowsPhoneOs';
+        } elseif ('Linux Smartphone OS' === $osName) {
+            $osName = 'Maemo';
+        } elseif ('Windows Mobile OS' === $osName) {
+            $osName = 'WindowsMobileOs';
+        } elseif ('RIM Tablet OS' === $osName) {
+            $osName = 'RimTabletOs';
+        }
+
+        $os     = 'new Os\\' . $osName . '($this->useragent)';
     } else {
         $os = 'null';
     }
+
+    $templateContent = str_replace(
+        ['###pointing###', '###width###', '###Height###', '###dual###', '###colors###', '###sms###', '###nfc###', '###querty###', '###type###', '###codename###', '###marketingname###', '###Manu###', '###Brand###', '###OS###'],
+        [$pointing, $width, $height, $dual, $colors, $sms, $nfc, $qwerty, $type, $codename, $marketing, $manufacturer, $brand, $os],
+        $templateContent
+    );
+
+    file_put_contents($fullpath, $templateContent);
+
+    if (false !== strpos($templateContent, '#')) {
+        echo 'placeholders found in file ', $fullpath, PHP_EOL;
+        exit;
+    }
+    //exit;
 }

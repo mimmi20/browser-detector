@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcT8282 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class HtcT8282 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => '8282',
-                'marketingName'     => 'Touch HD T8282',
-                'version'           => null,
-                'manufacturer'      => (new Company\Htc())->name,
-                'brand'             => (new Company\Htc())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'stylus',
-                'resolutionWidth'   => 480,
-                'resolutionHeight'  => 800,
-                'dualOrientation'   => false,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => false,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = '8282';
+        $this->marketingName     = 'Touch HD T8282';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
+        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
+        $this->pointingMethod    = 'stylus';
+        $this->resolutionWidth   = 480;
+        $this->resolutionHeight  = 800;
+        $this->dualOrientation   = false;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = false;
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**
      * returns the OS Handler
      *
-     * @return \UaResult\Os\Os
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new \UaResult\Os\Os($this->useragent, 'Android', AndroidOs::detectVersion($this->useragent), CompanyFactory::get('Google')->getName(), (new OsBits($this->useragent))->getBits());
+        return new Os\AndroidOs($this->useragent);
     }
 }

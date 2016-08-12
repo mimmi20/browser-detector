@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\BlackBerry;
+namespace BrowserDetector\Detector\Device\Mobile;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Detector\Device\AbstractDevice;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,48 +43,39 @@ use UaDeviceType;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class BlackBerry8900 extends AbstractDevice implements DeviceHasSpecificPlatformInterface
+class BlackBerry8900 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
      *
      * @param string $useragent
-     * @param array  $data
      */
-    public function __construct(
-        $useragent,
-        array $data
-    ) {
-        $this->useragent = $useragent;
-
-        $this->setData(
-            [
-                'deviceName'        => 'BlackBerry 8900',
-                'marketingName'     => 'Curve',
-                'version'           => null,
-                'manufacturer'      => (new Company\Rim())->name,
-                'brand'             => (new Company\Rim())->brandname,
-                'formFactor'        => null,
-                'pointingMethod'    => 'clickwheel',
-                'resolutionWidth'   => 480,
-                'resolutionHeight'  => 360,
-                'dualOrientation'   => false,
-                'colors'            => 65536,
-                'smsSupport'        => true,
-                'nfcSupport'        => true,
-                'hasQwertyKeyboard' => true,
-                'type'              => new UaDeviceType\MobilePhone(),
-            ]
-        );
+    public function __construct($useragent)
+    {
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'BlackBerry 8900';
+        $this->marketingName     = 'Curve';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Rim')->getName();
+        $this->brand             = CompanyFactory::get('Rim')->getBrandName();
+        $this->pointingMethod    = 'clickwheel';
+        $this->resolutionWidth   = 480;
+        $this->resolutionHeight  = 360;
+        $this->dualOrientation   = false;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**
      * returns the OS Handler
      *
-     * @return \UaResult\Os\Os
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs()
     {
-        return new \UaResult\Os\Os($useragent, 'RIM OS', RimOs::detectVersion($useragent), CompanyFactory::get('Rim')->getName(), $bits);
+        return new Os\RimOs($this->useragent);
     }
 }
