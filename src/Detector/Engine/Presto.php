@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 use UaResult\Engine\Engine;
 
@@ -53,6 +53,6 @@ class Presto extends Engine
         $this->useragent    = $useragent;
         $this->name         = 'Presto';
         $this->version      = VersionFactory::detectVersion($useragent, ['Presto']);
-        $this->manufacturer = (new Company\Opera())->name;
+        $this->manufacturer = CompanyFactory::get('Opera')->getName();
     }
 }

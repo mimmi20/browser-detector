@@ -31,8 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\Version;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 use UaResult\Engine\Engine;
 
@@ -54,6 +53,6 @@ class Edge extends Engine
         $this->useragent    = $useragent;
         $this->name         = 'Edge';
         $this->version      = VersionFactory::detectVersion($useragent, ['Edge']);
-        $this->manufacturer = (new Company\Microsoft())->name;
+        $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
     }
 }

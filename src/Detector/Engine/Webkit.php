@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 use UaResult\Engine\Engine;
 
@@ -53,6 +53,6 @@ class Webkit extends Engine
         $this->useragent    = $useragent;
         $this->name         = 'WebKit';
         $this->version      = VersionFactory::detectVersion($useragent, ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\/AppleWebKit']);
-        $this->manufacturer = (new Company\Apple())->name;
+        $this->manufacturer = CompanyFactory::get('Apple')->getName();
     }
 }

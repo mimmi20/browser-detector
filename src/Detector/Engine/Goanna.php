@@ -31,8 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Engine\Engine;
 
 /**
@@ -53,6 +52,6 @@ class Goanna extends Engine
         $this->useragent    = $useragent;
         $this->name         = 'Goanna';
         $this->version      = \BrowserDetector\Detector\Version\Goanna::detectVersion($useragent);
-        $this->manufacturer = (new Company\MoonchildProductions())->name;
+        $this->manufacturer = CompanyFactory::get('MoonchildProductions')->getName();
     }
 }

@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 use UaResult\Engine\Engine;
 
@@ -53,6 +53,6 @@ class U3 extends Engine
         $this->useragent    = $useragent;
         $this->name         = 'U3';
         $this->version      = VersionFactory::detectVersion($useragent, ['U3']);
-        $this->manufacturer = (new Company\UcWeb())->name;
+        $this->manufacturer = CompanyFactory::get('UcWeb')->getName();
     }
 }

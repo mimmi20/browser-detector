@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\Version;
 use UaResult\Engine\Engine;
 
@@ -53,6 +53,6 @@ class UnknownEngine extends Engine
         $this->useragent    = $useragent;
         $this->name         = 'unknown';
         $this->version      = new Version(0);
-        $this->manufacturer = (new Company\Unknown())->name;
+        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
     }
 }

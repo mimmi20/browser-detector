@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 use UaResult\Engine\Engine;
 
@@ -53,6 +53,6 @@ class Khtml extends Engine
         $this->useragent    = $useragent;
         $this->name         = 'KHTML';
         $this->version      = VersionFactory::detectVersion($useragent, ['KHTML']);
-        $this->manufacturer = (new Company\Unknown())->name;
+        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
     }
 }

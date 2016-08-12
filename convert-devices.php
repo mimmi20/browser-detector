@@ -203,9 +203,6 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     $fullpath    = $file->getPathname();
     $pathMatches = [];
 
-    $fullpath    = $file->getPathname();
-    $pathMatches = [];
-
     if (preg_match('/Detector\\\\Device\\\\(Desktop|Tv)\\\\([^\\.]+)/', $fullpath, $pathMatches)) {
         $template        = 'data/templates/general-device.php.tmp';
     } elseif (preg_match('/Detector\\\\Device\\\\(Desktop|Mobile|Tv)\\\\([^\\\\]+)\\\\([^\\.]+)/', $fullpath, $pathMatches) && $pathMatches[1] === 'Mobile') {

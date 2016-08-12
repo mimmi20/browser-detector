@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Engine;
 
-use BrowserDetector\Detector\Company;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 use UaResult\Engine\Engine;
 
@@ -53,6 +53,6 @@ class Gecko extends Engine
         $this->useragent    = $useragent;
         $this->name         = 'Gecko';
         $this->version      = VersionFactory::detectVersion($useragent, ['rv\:']);
-        $this->manufacturer = (new Company\MozillaFoundation())->name;
+        $this->manufacturer = CompanyFactory::get('MozillaFoundation')->getName();
     }
 }
