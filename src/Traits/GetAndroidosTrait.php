@@ -46,7 +46,7 @@ trait GetAndroidosTrait
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function detectOs()
+    public function detectOs($useragent)
     {
         return new Os\###OS###($useragent);
     }

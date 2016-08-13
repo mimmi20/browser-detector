@@ -31,6 +31,7 @@
 
 namespace BrowserDetector\Detector\Version;
 
+use BrowserDetector\Detector\Engine\Trident;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 
@@ -73,7 +74,7 @@ class MicrosoftInternetExplorer
      */
     public static function detectVersion($useragent)
     {
-        $engine = new \BrowserDetector\Detector\Engine\Trident($useragent);
+        $engine = new Trident($useragent);
 
         $engineVersion = (int) $engine->getVersion()->getMajor();
 

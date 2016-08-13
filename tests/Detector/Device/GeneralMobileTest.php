@@ -23,41 +23,11 @@ class GeneralMobileTest extends \PHPUnit_Framework_TestCase
         self::markTestSkipped('need to be changed');
     }
 
-    /**
-     * @dataProvider providerDetectDevice
-     *
-     * @param string $agent
-     * @param string $device
-     */
-    public function testDetectDevice($agent, $device)
-    {
-        $this->object = new GeneralMobile($agent, []);
-
-        self::assertInstanceOf($device, $this->object->detectDevice());
-    }
-
     public function providerDetectDevice()
     {
         return [
             ['Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko', '\BrowserDetector\Detector\Device\Mobile\GeneralMobile'],
         ];
-    }
-
-    /**
-     * @dataProvider providerGetDeviceType
-     *
-     * @param string $agent
-     * @param string $deviceType
-     */
-    public function testGetDeviceType($agent, $deviceType)
-    {
-        self::markTestSkipped('has to be changed');
-        $this->object = new GeneralMobile($agent, []);
-
-        $device = $this->object->detectDevice();
-        $device->detectSpecialProperties();
-
-        self::assertInstanceOf($deviceType, $this->object->getDeviceType());
     }
 
     public function providerGetDeviceType()
