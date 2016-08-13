@@ -62,54 +62,80 @@ class EngineFactory implements FactoryInterface
         $utils->setUserAgent($useragent);
 
         if (null !== $os && in_array($os->getName(), ['iOS'])) {
-            $engineName = new Engine\Webkit($useragent);
-        } elseif ($utils->checkIfContains('Edge')) {
-            $engineName = new Engine\Edge($useragent);
-        } elseif ($utils->checkIfContains(' U2/')) {
-            $engineName = new Engine\U2($useragent);
-        } elseif ($utils->checkIfContains(' U3/')) {
-            $engineName = new Engine\U3($useragent);
-        } elseif ($utils->checkIfContains(' T5/')) {
-            $engineName = new Engine\T5($useragent);
-        } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
+            return new Engine\Webkit($useragent);
+        }
+
+        if ($utils->checkIfContains('Edge')) {
+            return new Engine\Edge($useragent);
+        }
+
+        if ($utils->checkIfContains(' U2/')) {
+            return new Engine\U2($useragent);
+        }
+
+        if ($utils->checkIfContains(' U3/')) {
+            return new Engine\U3($useragent);
+        }
+
+        if ($utils->checkIfContains(' T5/')) {
+            return new Engine\T5($useragent);
+        }
+
+        if (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
             && false === stripos($useragent, 'opera')
             && false === stripos($useragent, 'tasman')
         ) {
-            $engineName = new Engine\Trident($useragent);
-        } elseif (preg_match('/(goanna)/i', $useragent)) {
-            $engineName = new Engine\Goanna($useragent);
-        } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
+            return new Engine\Trident($useragent);
+        }
+
+        if (preg_match('/(goanna)/i', $useragent)) {
+            return new Engine\Goanna($useragent);
+        }
+
+        if (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
             $chrome = new Chrome($useragent);
 
             $chromeVersion = $chrome->getVersion()->getVersion(Version::MAJORONLY);
 
             if ($chromeVersion >= 28) {
-                $engineName = new Engine\Blink($useragent);
-            } else {
-                $engineName = new Engine\Webkit($useragent);
+                return new Engine\Blink($useragent);
             }
-        } elseif (preg_match('/(KHTML|Konqueror)/', $useragent)) {
-            $engineName = new Engine\Khtml($useragent);
-        } elseif (preg_match('/(tasman)/i', $useragent)
-            || $utils->checkIfContainsAll(['MSIE', 'Mac_PowerPC'])
-        ) {
-            $engineName = new Engine\Tasman($useragent);
-        } elseif (preg_match('/(Presto|Opera)/', $useragent)) {
-            $engineName = new Engine\Presto($useragent);
-        } elseif (preg_match('/(Gecko|Firefox)/', $useragent)) {
-            $engineName = new Engine\Gecko($useragent);
-        } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $useragent)
-            && !$utils->checkIfContains(['Kindle'])
-        ) {
-            $engineName = new Engine\NetFront($useragent);
-        } elseif ($utils->checkIfContains('BlackBerry')) {
-            $engineName = new Engine\BlackBerry($useragent);
-        } elseif (preg_match('/(Teleca|Obigo)/', $useragent)) {
-            $engineName = new Engine\Teleca($useragent);
-        } else {
-            $engineName = new Engine\UnknownEngine($useragent);
+
+            return new Engine\Webkit($useragent);
         }
 
-        return $engineName;
+        if (preg_match('/(KHTML|Konqueror)/', $useragent)) {
+            return new Engine\Khtml($useragent);
+        }
+
+        if (preg_match('/(tasman)/i', $useragent)
+            || $utils->checkIfContainsAll(['MSIE', 'Mac_PowerPC'])
+        ) {
+            return new Engine\Tasman($useragent);
+        }
+
+        if (preg_match('/(Presto|Opera)/', $useragent)) {
+            return new Engine\Presto($useragent);
+        }
+
+        if (preg_match('/(Gecko|Firefox)/', $useragent)) {
+            return new Engine\Gecko($useragent);
+        }
+
+        if (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $useragent)
+            && !$utils->checkIfContains(['Kindle'])
+        ) {
+            return new Engine\NetFront($useragent);
+        }
+
+        if ($utils->checkIfContains('BlackBerry')) {
+            return new Engine\BlackBerry($useragent);
+        }
+
+        if (preg_match('/(Teleca|Obigo)/', $useragent)) {
+            return new Engine\Teleca($useragent);
+        }
+
+        return new Engine\UnknownEngine($useragent);
     }
 }
