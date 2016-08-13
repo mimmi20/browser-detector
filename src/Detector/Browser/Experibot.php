@@ -55,7 +55,7 @@ class Experibot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'Experibot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Experibot\_v']);
         $this->manufacturer                = CompanyFactory::get('AmirKrause')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Experibot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Experibot\_v'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

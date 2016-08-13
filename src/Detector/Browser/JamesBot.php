@@ -55,7 +55,7 @@ class JamesBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'JamesBOT';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['fr-crawler']);
         $this->manufacturer                = CompanyFactory::get('Geskimo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class JamesBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['fr-crawler'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

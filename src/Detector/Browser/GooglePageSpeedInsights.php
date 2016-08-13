@@ -55,7 +55,7 @@ class GooglePageSpeedInsights extends AbstractBrowser implements BrowserHasSpeci
         $this->useragent                   = $useragent;
         $this->name                        = 'Google PageSpeed Insights';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Google Page Speed Insights']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GooglePageSpeedInsights extends AbstractBrowser implements BrowserHasSpeci
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Google Page Speed Insights'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -55,7 +55,7 @@ class JakartaCommonsHttpClient extends AbstractBrowser implements BrowserHasSpec
         $this->useragent                   = $useragent;
         $this->name                        = 'Jakarta Commons HttpClient';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Jakarta Commons\-HttpClient']);
         $this->manufacturer                = CompanyFactory::get('Apache')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class JakartaCommonsHttpClient extends AbstractBrowser implements BrowserHasSpec
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Jakarta Commons\-HttpClient'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

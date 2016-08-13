@@ -55,7 +55,7 @@ class Readability extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->useragent                   = $useragent;
         $this->name                        = 'Readability';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('SfxEntertainment')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,16 +65,6 @@ class Readability extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        return new Version(0);
     }
 
     /**

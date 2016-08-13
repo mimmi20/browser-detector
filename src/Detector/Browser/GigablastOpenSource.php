@@ -55,7 +55,7 @@ class GigablastOpenSource extends AbstractBrowser implements BrowserHasSpecificE
         $this->useragent                   = $useragent;
         $this->name                        = 'Gigablast Search Engine';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['GigablastOpenSource']);
         $this->manufacturer                = CompanyFactory::get('GigablastCom')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GigablastOpenSource extends AbstractBrowser implements BrowserHasSpecificE
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['GigablastOpenSource'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

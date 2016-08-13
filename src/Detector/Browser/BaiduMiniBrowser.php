@@ -55,7 +55,7 @@ class BaiduMiniBrowser extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->useragent                   = $useragent;
         $this->name                        = 'Baidu Browser Mini';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['bdbrowser_mini']);
         $this->manufacturer                = CompanyFactory::get('Baidu')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class BaiduMiniBrowser extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['bdbrowser_mini'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

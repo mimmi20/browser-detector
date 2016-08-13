@@ -55,7 +55,7 @@ class MicrosoftWebDav extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->useragent                   = $useragent;
         $this->name                        = 'Microsoft-WebDAV';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Microsoft\-WebDAV\-MiniRedir', 'Microsoft\-WebDAV', 'DavClnt']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MicrosoftWebDav extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Microsoft\-WebDAV\-MiniRedir', 'Microsoft\-WebDAV', 'DavClnt'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

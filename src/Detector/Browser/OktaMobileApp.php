@@ -55,7 +55,7 @@ class OktaMobileApp extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->useragent                   = $useragent;
         $this->name                        = 'Okta Mobile App';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['OktaMobile']);
         $this->manufacturer                = CompanyFactory::get('Okta')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class OktaMobileApp extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['OktaMobile'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

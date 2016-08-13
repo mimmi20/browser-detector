@@ -55,7 +55,7 @@ class WordPressApp extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->useragent                   = $useragent;
         $this->name                        = 'WordPress App';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['wp\-iphone', 'wp\-android']);
         $this->manufacturer                = CompanyFactory::get('WordPress')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WordPressApp extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['wp\-iphone', 'wp\-android'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

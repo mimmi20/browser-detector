@@ -55,7 +55,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->useragent                   = $useragent;
         $this->name                        = 'Sogou Web Spider';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Sogou web spider']);
         $this->manufacturer                = CompanyFactory::get('Sogou')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Sogou web spider'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

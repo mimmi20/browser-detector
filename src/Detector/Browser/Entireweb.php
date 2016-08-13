@@ -55,7 +55,7 @@ class Entireweb extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'Entireweb';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Entireweb']);
         $this->manufacturer                = CompanyFactory::get('Entireweb')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Entireweb extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Entireweb'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

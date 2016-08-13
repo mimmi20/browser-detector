@@ -55,7 +55,7 @@ class WebMasterAid extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->useragent                   = $useragent;
         $this->name                        = 'WebMasterAid';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['WebMasterAid']);
         $this->manufacturer                = CompanyFactory::get('Wmaid')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WebMasterAid extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['WebMasterAid'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

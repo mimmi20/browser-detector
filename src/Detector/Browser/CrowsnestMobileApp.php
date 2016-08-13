@@ -55,7 +55,7 @@ class CrowsnestMobileApp extends AbstractBrowser implements BrowserHasSpecificEn
         $this->useragent                   = $useragent;
         $this->name                        = 'Crowsnest Mobile App';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Crowsnest']);
         $this->manufacturer                = CompanyFactory::get('Gocro')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class CrowsnestMobileApp extends AbstractBrowser implements BrowserHasSpecificEn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Crowsnest'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

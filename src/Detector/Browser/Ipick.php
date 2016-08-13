@@ -55,7 +55,7 @@ class Ipick extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->useragent                   = $useragent;
         $this->name                        = 'iPick';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['iPick']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Ipick extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['iPick'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

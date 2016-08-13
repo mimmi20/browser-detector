@@ -55,7 +55,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->useragent                   = $useragent;
         $this->name                        = 'Opera Mobile';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Version', 'OPR', 'Opera ', 'Opera Mobi', 'Opera']);
         $this->manufacturer                = CompanyFactory::get('Opera')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Version', 'OPR', 'Opera ', 'Opera Mobi', 'Opera'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

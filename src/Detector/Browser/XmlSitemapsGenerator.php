@@ -55,7 +55,7 @@ class XmlSitemapsGenerator extends AbstractBrowser implements BrowserHasSpecific
         $this->useragent                   = $useragent;
         $this->name                        = 'XML Sitemaps Generator';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['XML\-Sitemaps']);
         $this->manufacturer                = CompanyFactory::get('XmlSitemaps')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class XmlSitemapsGenerator extends AbstractBrowser implements BrowserHasSpecific
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['XML\-Sitemaps'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -55,7 +55,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->useragent                   = $useragent;
         $this->name                        = 'GrapeshotCrawler';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['GrapeshotCrawler']);
         $this->manufacturer                = CompanyFactory::get('GrapeshotLimited')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['GrapeshotCrawler'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

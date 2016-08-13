@@ -55,7 +55,7 @@ class BlackberryPlaybookTablet extends AbstractBrowser implements BrowserHasSpec
         $this->useragent                   = $useragent;
         $this->name                        = 'Blackberry Playbook Tablet';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Version']);
         $this->manufacturer                = CompanyFactory::get('Rim')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class BlackberryPlaybookTablet extends AbstractBrowser implements BrowserHasSpec
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Version'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

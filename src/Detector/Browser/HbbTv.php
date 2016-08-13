@@ -55,7 +55,7 @@ class HbbTv extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->useragent                   = $useragent;
         $this->name                        = 'HbbTV';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['HbbTV']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class HbbTv extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['HbbTV'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

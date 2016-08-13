@@ -55,7 +55,7 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'Tumblr App';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Tumblr']);
         $this->manufacturer                = CompanyFactory::get('Tumblr')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Tumblr'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

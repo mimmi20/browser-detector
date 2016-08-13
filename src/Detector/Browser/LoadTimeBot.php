@@ -55,7 +55,7 @@ class LoadTimeBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->useragent                   = $useragent;
         $this->name                        = 'LoadTimeBot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['LoadTimeBot']);
         $this->manufacturer                = CompanyFactory::get('LoadTime')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class LoadTimeBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['LoadTimeBot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

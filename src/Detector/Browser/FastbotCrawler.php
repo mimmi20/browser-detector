@@ -55,7 +55,7 @@ class FastbotCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->useragent                   = $useragent;
         $this->name                        = 'fastbot crawler';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['fastbot crawler beta', 'fastbot crawler']);
         $this->manufacturer                = CompanyFactory::get('Pagedesign')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class FastbotCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['fastbot crawler beta', 'fastbot crawler'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

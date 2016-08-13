@@ -55,7 +55,7 @@ class Qihoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->useragent                   = $useragent;
         $this->name                        = 'Qihoo';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Qihoo']);
         $this->manufacturer                = CompanyFactory::get('Qihoo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Qihoo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Qihoo'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

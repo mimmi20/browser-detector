@@ -55,7 +55,7 @@ class TasapImageRobot extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->useragent                   = $useragent;
         $this->name                        = 'TasapImageRobot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['TasapImageRobot']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class TasapImageRobot extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['TasapImageRobot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

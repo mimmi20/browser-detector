@@ -36,7 +36,6 @@ use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
-use UaHelper\Utils;
 
 /**
  * @category  BrowserDetector
@@ -56,7 +55,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
         $this->useragent                   = $useragent;
         $this->name                        = 'IEMobile';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['IEMobile', 'MSIE', 'rv\:']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
@@ -66,29 +65,6 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        if ($utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
-            return '9.0';
-        }
-
-        if ($utils->checkIfContains('WPDesktop') && !$utils->checkIfContains('rv:')) {
-            return '10.0';
-        }
-
-        $searches = ['IEMobile', 'MSIE', 'rv\:'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

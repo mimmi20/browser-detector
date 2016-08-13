@@ -55,7 +55,7 @@ class MozillaCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->useragent                   = $useragent;
         $this->name                        = 'Mozilla Crawler';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Mozilla crawl']);
         $this->manufacturer                = CompanyFactory::get('Fairshare')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MozillaCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Mozilla crawl'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

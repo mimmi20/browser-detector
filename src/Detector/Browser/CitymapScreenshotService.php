@@ -55,7 +55,7 @@ class CitymapScreenshotService extends AbstractBrowser implements BrowserHasSpec
         $this->useragent                   = $useragent;
         $this->name                        = 'city-map screenshot service';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['city\-map screenshot service']);
         $this->manufacturer                = CompanyFactory::get('CitymapInternetmarketing')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class CitymapScreenshotService extends AbstractBrowser implements BrowserHasSpec
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['city\-map screenshot service'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

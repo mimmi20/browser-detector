@@ -55,7 +55,7 @@ class ViralvideochartBot extends AbstractBrowser implements BrowserHasSpecificEn
         $this->useragent                   = $useragent;
         $this->name                        = 'viralvideochart Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['viralvideochart']);
         $this->manufacturer                = CompanyFactory::get('UnrulyGroup')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class ViralvideochartBot extends AbstractBrowser implements BrowserHasSpecificEn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['viralvideochart'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

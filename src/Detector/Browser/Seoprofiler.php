@@ -55,7 +55,7 @@ class Seoprofiler extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->useragent                   = $useragent;
         $this->name                        = 'SEOprofiler';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['spbot', 'sp_auditbot']);
         $this->manufacturer                = CompanyFactory::get('Axandra')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Seoprofiler extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['spbot', 'sp_auditbot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -55,7 +55,7 @@ class Mj12bot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->useragent                   = $useragent;
         $this->name                        = 'MJ12bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['MJ12bot\/v', 'MJ12bot']);
         $this->manufacturer                = CompanyFactory::get('Majestic12')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Mj12bot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['MJ12bot\/v', 'MJ12bot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

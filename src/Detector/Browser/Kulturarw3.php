@@ -55,7 +55,7 @@ class Kulturarw3 extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->useragent                   = $useragent;
         $this->name                        = 'kulturarw3';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['kulturarw3']);
         $this->manufacturer                = CompanyFactory::get('NationalLibraryOfSweden')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Kulturarw3 extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['kulturarw3'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

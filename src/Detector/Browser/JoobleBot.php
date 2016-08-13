@@ -55,7 +55,7 @@ class JoobleBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'JoobleBot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['JoobleBot']);
         $this->manufacturer                = CompanyFactory::get('Jooble')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class JoobleBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['JoobleBot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

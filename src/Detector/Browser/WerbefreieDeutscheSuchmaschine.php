@@ -55,7 +55,7 @@ class WerbefreieDeutscheSuchmaschine extends AbstractBrowser implements BrowserH
         $this->useragent                   = $useragent;
         $this->name                        = 'Werbefreie Deutsche Suchmaschine';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['DeuSu']);
         $this->manufacturer                = CompanyFactory::get('MichaelSchoebel')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WerbefreieDeutscheSuchmaschine extends AbstractBrowser implements BrowserH
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['DeuSu'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

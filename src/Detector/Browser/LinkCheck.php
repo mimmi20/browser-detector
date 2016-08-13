@@ -55,7 +55,7 @@ class LinkCheck extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'linkCheck';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['linkCheck']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class LinkCheck extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['linkCheck'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

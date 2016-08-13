@@ -55,7 +55,7 @@ class OwaspSecretBrowser extends AbstractBrowser implements BrowserHasSpecificEn
         $this->useragent                   = $useragent;
         $this->name                        = 'OWASP_SECRET_BROWSER';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['OWASP\_SECRET\_BROWSER']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class OwaspSecretBrowser extends AbstractBrowser implements BrowserHasSpecificEn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['OWASP\_SECRET\_BROWSER'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

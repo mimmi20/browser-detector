@@ -55,7 +55,7 @@ class SailfishBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->useragent                   = $useragent;
         $this->name                        = 'Sailfish Browser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['SailfishBrowser']);
         $this->manufacturer                = CompanyFactory::get('Jolla')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class SailfishBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['SailfishBrowser'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

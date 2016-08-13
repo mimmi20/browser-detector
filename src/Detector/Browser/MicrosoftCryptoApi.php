@@ -55,7 +55,7 @@ class MicrosoftCryptoApi extends AbstractBrowser implements BrowserHasSpecificEn
         $this->useragent                   = $useragent;
         $this->name                        = 'Microsoft CryptoAPI';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Microsoft CryptoAPI']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MicrosoftCryptoApi extends AbstractBrowser implements BrowserHasSpecificEn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Microsoft CryptoAPI'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

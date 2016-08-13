@@ -55,7 +55,7 @@ class Bubing extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'BUbiNG Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['BUbiNG']);
         $this->manufacturer                = CompanyFactory::get('LawDiUnimiIt')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Bubing extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['BUbiNG'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

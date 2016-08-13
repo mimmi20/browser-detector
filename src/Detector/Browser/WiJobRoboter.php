@@ -55,7 +55,7 @@ class WiJobRoboter extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->useragent                   = $useragent;
         $this->name                        = 'WI Job Roboter';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['WI Job Roboter Spider Version']);
         $this->manufacturer                = CompanyFactory::get('WebIntegrationItService')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WiJobRoboter extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['WI Job Roboter Spider Version'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

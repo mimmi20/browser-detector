@@ -55,7 +55,7 @@ class SecondLiveCommerceClient extends AbstractBrowser implements BrowserHasSpec
         $this->useragent                   = $useragent;
         $this->name                        = 'Second Live Commerce Client';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['SL Commerce Client v', 'SL Commerce Client']);
         $this->manufacturer                = CompanyFactory::get('LindenLabs')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class SecondLiveCommerceClient extends AbstractBrowser implements BrowserHasSpec
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['SL Commerce Client v', 'SL Commerce Client'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

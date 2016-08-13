@@ -55,7 +55,7 @@ class DolphinSmalltalkHttpClient extends AbstractBrowser implements BrowserHasSp
         $this->useragent                   = $useragent;
         $this->name                        = 'Dolphin smalltalk http client';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Dolphin http client']);
         $this->manufacturer                = CompanyFactory::get('SteveWaring')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class DolphinSmalltalkHttpClient extends AbstractBrowser implements BrowserHasSp
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Dolphin http client'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

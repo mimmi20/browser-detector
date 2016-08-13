@@ -55,7 +55,7 @@ class Netbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Netbox';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Netbox']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Netbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Netbox'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

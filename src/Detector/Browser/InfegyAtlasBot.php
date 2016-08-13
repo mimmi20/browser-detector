@@ -55,7 +55,7 @@ class InfegyAtlasBot extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->useragent                   = $useragent;
         $this->name                        = 'InfegyAtlas';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['InfegyAtlas']);
         $this->manufacturer                = CompanyFactory::get('Infegy')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class InfegyAtlasBot extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['InfegyAtlas'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

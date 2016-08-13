@@ -55,7 +55,7 @@ class MsSearch extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'MS Search';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['MS Search']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MsSearch extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['MS Search'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

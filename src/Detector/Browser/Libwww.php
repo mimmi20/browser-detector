@@ -55,7 +55,7 @@ class Libwww extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'libwww';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['libwww', 'libwww\-perl']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Libwww extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['libwww', 'libwww\-perl'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

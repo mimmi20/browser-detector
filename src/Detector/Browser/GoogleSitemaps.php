@@ -55,7 +55,7 @@ class GoogleSitemaps extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->useragent                   = $useragent;
         $this->name                        = 'Google Sitemaps';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Google\-Sitemaps']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GoogleSitemaps extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Google\-Sitemaps'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

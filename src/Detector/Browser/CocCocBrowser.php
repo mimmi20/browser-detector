@@ -55,7 +55,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->useragent                   = $useragent;
         $this->name                        = 'Coc Coc Browser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['coc_coc_browser']);
         $this->manufacturer                = CompanyFactory::get('CocCocCompany')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['coc_coc_browser'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

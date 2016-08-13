@@ -55,7 +55,7 @@ class Palemoon extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'PaleMoon';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['PaleMoon']);
         $this->manufacturer                = CompanyFactory::get('MoonchildProductions')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Palemoon extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['PaleMoon'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

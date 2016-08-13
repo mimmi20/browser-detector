@@ -55,7 +55,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
         $this->useragent                   = $useragent;
         $this->name                        = 'Java Standard Library';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Java']);
         $this->manufacturer                = CompanyFactory::get('Oracle')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Java'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

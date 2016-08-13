@@ -55,7 +55,7 @@ class Midori extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Midori';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Midori', 'Midori\-']);
         $this->manufacturer                = CompanyFactory::get('ChristianDywan')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Midori extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Midori', 'Midori\-'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

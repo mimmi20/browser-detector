@@ -55,7 +55,7 @@ class RevIpSnfoSiteAnalyzer extends AbstractBrowser implements BrowserHasSpecifi
         $this->useragent                   = $useragent;
         $this->name                        = 'Reverse IP Lookup';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['RevIP\.info site analyzer v']);
         $this->manufacturer                = CompanyFactory::get('Binarymonkey')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class RevIpSnfoSiteAnalyzer extends AbstractBrowser implements BrowserHasSpecifi
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['RevIP\.info site analyzer v'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

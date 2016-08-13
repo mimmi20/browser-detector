@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Detector\Version\Windows;
 
 /**
  * @category  BrowserDetector
@@ -52,66 +51,7 @@ class WindowsRt extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'Windows RT';
-        $this->version      = $this->detectVersion();
+        $this->version      = Windows::detectVersion($useragent);
         $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
-    }
-
-    /**
-     * returns the version of the operating system/platform
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match('/Windows NT ([\d\.]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            switch ($matches[1]) {
-                case '6.4':
-                    $version = '10';
-                    break;
-                case '6.3':
-                    $version = '8.1';
-                    break;
-                case '6.2':
-                    $version = '8';
-                    break;
-                case '6.1':
-                    $version = '7';
-                    break;
-                default:
-                    $version = '';
-                    break;
-            }
-
-            return VersionFactory::set($version);
-        }
-
-        $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $this->useragent, $matches);
-
-        if ($doMatch) {
-            switch ($matches[1]) {
-                case '6.4':
-                    $version = '10';
-                    break;
-                case '6.3':
-                    $version = '8.1';
-                    break;
-                case '6.2':
-                    $version = '8';
-                    break;
-                case '6.1':
-                case '7':
-                    $version = '7';
-                    break;
-                default:
-                    $version = '';
-                    break;
-            }
-
-            return VersionFactory::set($version);
-        }
-
-        return new Version(0);
     }
 }

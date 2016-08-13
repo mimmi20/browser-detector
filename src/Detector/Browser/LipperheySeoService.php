@@ -55,7 +55,7 @@ class LipperheySeoService extends AbstractBrowser implements BrowserHasSpecificE
         $this->useragent                   = $useragent;
         $this->name                        = 'Lipperhey SEO Service';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Lipperhey SEO Service']);
         $this->manufacturer                = CompanyFactory::get('Lipperhey')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class LipperheySeoService extends AbstractBrowser implements BrowserHasSpecificE
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Lipperhey SEO Service'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

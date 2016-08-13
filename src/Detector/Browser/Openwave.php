@@ -55,7 +55,7 @@ class Openwave extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'Openwave Mobile Browser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['UP\.Browser', 'UP', 'OpenWave']);
         $this->manufacturer                = CompanyFactory::get('Myriad')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Openwave extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['UP\.Browser', 'UP', 'OpenWave'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -55,7 +55,7 @@ class IisBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'IIS Site Analysis Web Crawler';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['iisbot']);
         $this->manufacturer                = CompanyFactory::get('IisNet')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class IisBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['iisbot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

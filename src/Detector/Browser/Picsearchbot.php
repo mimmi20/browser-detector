@@ -55,7 +55,7 @@ class Picsearchbot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->useragent                   = $useragent;
         $this->name                        = 'Picsearch Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Picsearchbot', 'psbot']);
         $this->manufacturer                = CompanyFactory::get('Picsearch')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Picsearchbot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Picsearchbot', 'psbot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

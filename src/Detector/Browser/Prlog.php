@@ -55,7 +55,7 @@ class Prlog extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->useragent                   = $useragent;
         $this->name                        = 'Prlog';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Prlog']);
         $this->manufacturer                = CompanyFactory::get('Prlog')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Prlog extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Prlog'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

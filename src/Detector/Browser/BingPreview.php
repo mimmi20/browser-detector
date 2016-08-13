@@ -55,7 +55,7 @@ class BingPreview extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->useragent                   = $useragent;
         $this->name                        = 'Bing Preview';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['BingPreview']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class BingPreview extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['BingPreview'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

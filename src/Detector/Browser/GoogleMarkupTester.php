@@ -55,7 +55,7 @@ class GoogleMarkupTester extends AbstractBrowser implements BrowserHasSpecificEn
         $this->useragent                   = $useragent;
         $this->name                        = 'Google Markup Tester';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Google Markup Tester']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GoogleMarkupTester extends AbstractBrowser implements BrowserHasSpecificEn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\BotTrancoder();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Google Markup Tester'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

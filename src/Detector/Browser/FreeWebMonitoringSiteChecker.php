@@ -55,7 +55,7 @@ class FreeWebMonitoringSiteChecker extends AbstractBrowser implements BrowserHas
         $this->useragent                   = $useragent;
         $this->name                        = 'FreeWebMonitoring SiteChecker';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['FreeWebMonitoring SiteChecker']);
         $this->manufacturer                = CompanyFactory::get('FreeWebMonitoring')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class FreeWebMonitoringSiteChecker extends AbstractBrowser implements BrowserHas
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['FreeWebMonitoring SiteChecker'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

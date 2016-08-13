@@ -55,7 +55,7 @@ class Domnutch extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'Domnutch Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Domnutch\-Bot', 'Nutch\-']);
         $this->manufacturer                = CompanyFactory::get('NutchDe')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Domnutch extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Domnutch\-Bot', 'Nutch\-'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

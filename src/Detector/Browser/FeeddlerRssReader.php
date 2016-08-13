@@ -55,7 +55,7 @@ class FeeddlerRssReader extends AbstractBrowser implements BrowserHasSpecificEng
         $this->useragent                   = $useragent;
         $this->name                        = 'Feeddler RSS Reader';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['FeeddlerRSS']);
         $this->manufacturer                = CompanyFactory::get('CheBinLiu')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class FeeddlerRssReader extends AbstractBrowser implements BrowserHasSpecificEng
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\FeedReader();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['FeeddlerRSS'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

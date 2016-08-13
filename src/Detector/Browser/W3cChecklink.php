@@ -55,7 +55,7 @@ class W3cChecklink extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->useragent                   = $useragent;
         $this->name                        = 'W3C-checklink';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['W3C\-checklink']);
         $this->manufacturer                = CompanyFactory::get('W3c')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class W3cChecklink extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['W3C\-checklink'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

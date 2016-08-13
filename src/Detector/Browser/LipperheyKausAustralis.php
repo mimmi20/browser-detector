@@ -55,7 +55,7 @@ class LipperheyKausAustralis extends AbstractBrowser implements BrowserHasSpecif
         $this->useragent                   = $useragent;
         $this->name                        = 'Lipperhey Kaus Australis';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Lipperhey\-Kaus\-Australis']);
         $this->manufacturer                = CompanyFactory::get('Lipperhey')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class LipperheyKausAustralis extends AbstractBrowser implements BrowserHasSpecif
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Lipperhey\-Kaus\-Australis'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

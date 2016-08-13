@@ -55,7 +55,7 @@ class Mbot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->useragent                   = $useragent;
         $this->name                        = 'mbot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['mbot v\.', 'mbot']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Mbot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['mbot v\.', 'mbot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

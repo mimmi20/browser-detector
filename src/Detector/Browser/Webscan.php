@@ -55,7 +55,7 @@ class Webscan extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->useragent                   = $useragent;
         $this->name                        = 'Webscan';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Webscan']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Webscan extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Webscan'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

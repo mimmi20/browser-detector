@@ -55,7 +55,7 @@ class Ichromy extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->useragent                   = $useragent;
         $this->name                        = 'iChromy';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,16 +65,6 @@ class Ichromy extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        return new Version(0);
     }
 
     /**

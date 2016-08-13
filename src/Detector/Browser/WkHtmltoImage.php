@@ -55,7 +55,7 @@ class WkHtmltoImage extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->useragent                   = $useragent;
         $this->name                        = 'wkhtmltoimage';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['wkhtmltoimage']);
         $this->manufacturer                = CompanyFactory::get('WkHtmltopdfOrg')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WkHtmltoImage extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['wkhtmltoimage'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

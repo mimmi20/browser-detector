@@ -55,7 +55,7 @@ class BaiduImageSearch extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->useragent                   = $useragent;
         $this->name                        = 'Baidu Image Search';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Baiduspider-image']);
         $this->manufacturer                = CompanyFactory::get('Baidu')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class BaiduImageSearch extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Baiduspider-image'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

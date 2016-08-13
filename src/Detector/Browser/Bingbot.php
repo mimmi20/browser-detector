@@ -55,7 +55,7 @@ class Bingbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->useragent                   = $useragent;
         $this->name                        = 'BingBot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['bingbot', 'Bing', 'Bing for iPad', 'msnbot']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Bingbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['bingbot', 'Bing', 'Bing for iPad', 'msnbot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

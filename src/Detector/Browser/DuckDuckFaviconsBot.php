@@ -55,7 +55,7 @@ class DuckDuckFaviconsBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->useragent                   = $useragent;
         $this->name                        = 'DuckDuck Favicons Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['DuckDuckGo\-Favicons\-Bot']);
         $this->manufacturer                = CompanyFactory::get('DuckDuckGo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class DuckDuckFaviconsBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['DuckDuckGo\-Favicons\-Bot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

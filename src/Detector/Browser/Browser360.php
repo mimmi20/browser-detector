@@ -55,7 +55,7 @@ class Browser360 extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->useragent                   = $useragent;
         $this->name                        = '360 Browser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['360%20Browser']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Browser360 extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['360%20Browser'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

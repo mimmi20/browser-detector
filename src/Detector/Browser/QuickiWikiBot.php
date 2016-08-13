@@ -55,7 +55,7 @@ class QuickiWikiBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->useragent                   = $useragent;
         $this->name                        = 'QuickiWiki Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['QuickiWiki']);
         $this->manufacturer                = CompanyFactory::get('QuickiWiki')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class QuickiWikiBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['QuickiWiki'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

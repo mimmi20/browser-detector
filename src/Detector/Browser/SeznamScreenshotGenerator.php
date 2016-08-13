@@ -55,7 +55,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
         $this->useragent                   = $useragent;
         $this->name                        = 'Seznam Screenshot Generator';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['SeznamScreenshotGenerator', 'Seznam screenshot-generator']);
         $this->manufacturer                = CompanyFactory::get('Seznam')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['SeznamScreenshotGenerator', 'Seznam screenshot-generator'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

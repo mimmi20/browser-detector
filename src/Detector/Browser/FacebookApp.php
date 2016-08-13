@@ -55,7 +55,7 @@ class FacebookApp extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->useragent                   = $useragent;
         $this->name                        = 'Facebook App';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Facebook', 'FBAV', 'facebookexternalhit']);
         $this->manufacturer                = CompanyFactory::get('Facebook')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class FacebookApp extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Facebook', 'FBAV', 'facebookexternalhit'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

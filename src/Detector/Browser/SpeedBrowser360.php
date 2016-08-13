@@ -55,7 +55,7 @@ class SpeedBrowser360 extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->useragent                   = $useragent;
         $this->name                        = '360 Speed Browser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['QIHU 360EE']);
         $this->manufacturer                = CompanyFactory::get('Qihoo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class SpeedBrowser360 extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['QIHU 360EE'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

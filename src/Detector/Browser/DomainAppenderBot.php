@@ -55,7 +55,7 @@ class DomainAppenderBot extends AbstractBrowser implements BrowserHasSpecificEng
         $this->useragent                   = $useragent;
         $this->name                        = 'DomainAppender Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['DomainAppender \/', 'DomainAppender']);
         $this->manufacturer                = CompanyFactory::get('ProfoundNetworks')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class DomainAppenderBot extends AbstractBrowser implements BrowserHasSpecificEng
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['DomainAppender \/', 'DomainAppender'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

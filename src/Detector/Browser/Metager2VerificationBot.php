@@ -55,7 +55,7 @@ class Metager2VerificationBot extends AbstractBrowser implements BrowserHasSpeci
         $this->useragent                   = $useragent;
         $this->name                        = 'metager2-verification-bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('SumaEv')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,16 +65,6 @@ class Metager2VerificationBot extends AbstractBrowser implements BrowserHasSpeci
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        return new Version(0);
     }
 
     /**

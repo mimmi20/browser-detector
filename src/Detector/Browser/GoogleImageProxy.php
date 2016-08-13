@@ -55,7 +55,7 @@ class GoogleImageProxy extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->useragent                   = $useragent;
         $this->name                        = 'Google Image Proxy';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['GoogleImageProxy']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GoogleImageProxy extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['GoogleImageProxy'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

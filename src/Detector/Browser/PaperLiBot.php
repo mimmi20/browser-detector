@@ -55,7 +55,7 @@ class PaperLiBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->useragent                   = $useragent;
         $this->name                        = 'Paper.li Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['PaperLiBot']);
         $this->manufacturer                = CompanyFactory::get('PaperLi')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class PaperLiBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['PaperLiBot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

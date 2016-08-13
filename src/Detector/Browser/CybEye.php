@@ -55,7 +55,7 @@ class CybEye extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'CybEye';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['CybEye\.com']);
         $this->manufacturer                = CompanyFactory::get('CybEye')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
@@ -65,18 +65,6 @@ class CybEye extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['CybEye\.com'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -55,7 +55,7 @@ class PeeploScreenshotBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->useragent                   = $useragent;
         $this->name                        = 'Peeplo Screenshot Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Peeplo Screenshot Bot']);
         $this->manufacturer                = CompanyFactory::get('Peeplo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class PeeploScreenshotBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Peeplo Screenshot Bot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

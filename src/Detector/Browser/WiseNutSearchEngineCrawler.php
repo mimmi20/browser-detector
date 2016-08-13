@@ -55,7 +55,7 @@ class WiseNutSearchEngineCrawler extends AbstractBrowser implements BrowserHasSp
         $this->useragent                   = $useragent;
         $this->name                        = 'WiseNut search engine crawler';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['ZyBorg']);
         $this->manufacturer                = CompanyFactory::get('LookSmart')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WiseNutSearchEngineCrawler extends AbstractBrowser implements BrowserHasSp
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['ZyBorg'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

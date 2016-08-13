@@ -55,7 +55,7 @@ class MignifyBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->useragent                   = $useragent;
         $this->name                        = 'Mignify Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['imrbot']);
         $this->manufacturer                = CompanyFactory::get('InternetMemoryResearch')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MignifyBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['imrbot'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

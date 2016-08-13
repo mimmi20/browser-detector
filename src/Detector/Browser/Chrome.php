@@ -55,7 +55,7 @@ class Chrome extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Chrome';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($this->useragent, ['Chrome', 'CrMo', 'CriOS']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,16 +65,6 @@ class Chrome extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        return VersionFactory::detectVersion($this->useragent, ['Chrome', 'CrMo', 'CriOS']);
     }
 
     /**

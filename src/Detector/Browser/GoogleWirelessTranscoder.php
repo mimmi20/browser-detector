@@ -55,7 +55,7 @@ class GoogleWirelessTranscoder extends AbstractBrowser implements BrowserHasSpec
         $this->useragent                   = $useragent;
         $this->name                        = 'Google Wireless Transcoder';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Google Wireless Transcoder']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GoogleWirelessTranscoder extends AbstractBrowser implements BrowserHasSpec
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\BotTrancoder();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Google Wireless Transcoder'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -55,7 +55,7 @@ class AppleAppStoreApp extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->useragent                   = $useragent;
         $this->name                        = 'Apple AppStore App';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['AppStore']);
         $this->manufacturer                = CompanyFactory::get('Apple')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class AppleAppStoreApp extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['AppStore'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

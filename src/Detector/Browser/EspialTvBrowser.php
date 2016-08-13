@@ -55,7 +55,7 @@ class EspialTvBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->useragent                   = $useragent;
         $this->name                        = 'Espial TV Browser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Espial']);
         $this->manufacturer                = CompanyFactory::get('EspialGroup')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class EspialTvBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Espial'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

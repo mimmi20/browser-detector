@@ -55,7 +55,7 @@ class GosquaredThumbnailer extends AbstractBrowser implements BrowserHasSpecific
         $this->useragent                   = $useragent;
         $this->name                        = 'gosquared-thumbnailer';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['gosquared\-thumbnailer']);
         $this->manufacturer                = CompanyFactory::get('GoSquared')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GosquaredThumbnailer extends AbstractBrowser implements BrowserHasSpecific
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['gosquared\-thumbnailer'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

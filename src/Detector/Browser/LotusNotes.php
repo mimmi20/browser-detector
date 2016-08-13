@@ -55,7 +55,7 @@ class LotusNotes extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->useragent                   = $useragent;
         $this->name                        = 'Lotus Notes';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['LotusNotes', 'Lotus\-Notes']);
         $this->manufacturer                = CompanyFactory::get('Ibm')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class LotusNotes extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\EmailClient();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['LotusNotes', 'Lotus\-Notes'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

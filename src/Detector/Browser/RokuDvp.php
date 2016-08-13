@@ -55,7 +55,7 @@ class RokuDvp extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->useragent                   = $useragent;
         $this->name                        = 'Roku DVP';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Roku\/DVP\-']);
         $this->manufacturer                = CompanyFactory::get('Roku')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class RokuDvp extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\MultimediaPlayer();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Roku\/DVP\-'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -55,7 +55,7 @@ class MailExchangeWebServices extends AbstractBrowser implements BrowserHasSpeci
         $this->useragent                   = $useragent;
         $this->name                        = 'Mail ExchangeWebServices';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['ExchangeWebServices', 'Mail']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MailExchangeWebServices extends AbstractBrowser implements BrowserHasSpeci
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['ExchangeWebServices', 'Mail'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

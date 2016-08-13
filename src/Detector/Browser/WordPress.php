@@ -55,7 +55,7 @@ class WordPress extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'WordPress';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['WordPress', 'WordPress\-B\-', 'WordPress\-Do\-P\-']);
         $this->manufacturer                = CompanyFactory::get('WordPress')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WordPress extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['WordPress', 'WordPress\-B\-', 'WordPress\-Do\-P\-'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

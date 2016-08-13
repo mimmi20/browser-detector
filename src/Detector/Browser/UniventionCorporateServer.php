@@ -55,7 +55,7 @@ class UniventionCorporateServer extends AbstractBrowser implements BrowserHasSpe
         $this->useragent                   = $useragent;
         $this->name                        = 'Univention Corporate Server';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['UCS \(ESX\) \- ']);
         $this->manufacturer                = CompanyFactory::get('Univention')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class UniventionCorporateServer extends AbstractBrowser implements BrowserHasSpe
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['UCS \(ESX\) \- '];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

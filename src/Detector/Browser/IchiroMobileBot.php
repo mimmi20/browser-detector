@@ -55,7 +55,7 @@ class IchiroMobileBot extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->useragent                   = $useragent;
         $this->name                        = 'Ichiro Mobile Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Ichiro')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,16 +65,6 @@ class IchiroMobileBot extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        return new Version(0);
     }
 
     /**

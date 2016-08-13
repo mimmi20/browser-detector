@@ -55,7 +55,7 @@ class Benq extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->useragent                   = $useragent;
         $this->name                        = 'Benq';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Benq')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,16 +65,6 @@ class Benq extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        return new Version(0);
     }
 
     /**

@@ -55,7 +55,7 @@ class MailRu extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Mail.Ru';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Mail\.RU_Bot\/Fast', 'Mail\.RU_Bot', 'Mail\.RU']);
         $this->manufacturer                = CompanyFactory::get('MailRu')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MailRu extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Mail\.RU_Bot\/Fast', 'Mail\.RU_Bot', 'Mail\.RU'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

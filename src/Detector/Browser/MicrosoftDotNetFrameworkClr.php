@@ -55,7 +55,7 @@ class MicrosoftDotNetFrameworkClr extends AbstractBrowser implements BrowserHasS
         $this->useragent                   = $useragent;
         $this->name                        = '.NET Framework CLR';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['MS Web Services Client Protocol']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MicrosoftDotNetFrameworkClr extends AbstractBrowser implements BrowserHasS
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['MS Web Services Client Protocol'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

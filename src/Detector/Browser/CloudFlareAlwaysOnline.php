@@ -55,7 +55,7 @@ class CloudFlareAlwaysOnline extends AbstractBrowser implements BrowserHasSpecif
         $this->useragent                   = $useragent;
         $this->name                        = 'CloudFlare AlwaysOnline';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['CloudFlare\-AlwaysOnline']);
         $this->manufacturer                = CompanyFactory::get('CloudFlare')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class CloudFlareAlwaysOnline extends AbstractBrowser implements BrowserHasSpecif
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['CloudFlare\-AlwaysOnline'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

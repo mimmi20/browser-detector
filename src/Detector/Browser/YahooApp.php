@@ -55,7 +55,7 @@ class YahooApp extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'Yahoo! App';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, [            'jp\.co\.yahoo\.android\.yjtop',            'yjapp',        ]);
         $this->manufacturer                = CompanyFactory::get('Yahoo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,21 +65,6 @@ class YahooApp extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = [
-            'jp\.co\.yahoo\.android\.yjtop',
-            'yjapp',
-        ];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

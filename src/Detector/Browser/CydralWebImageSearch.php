@@ -55,7 +55,7 @@ class CydralWebImageSearch extends AbstractBrowser implements BrowserHasSpecific
         $this->useragent                   = $useragent;
         $this->name                        = 'Cydral Web Image Search';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['CydralSpider']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class CydralWebImageSearch extends AbstractBrowser implements BrowserHasSpecific
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['CydralSpider'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

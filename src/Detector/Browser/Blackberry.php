@@ -55,7 +55,7 @@ class Blackberry extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->useragent                   = $useragent;
         $this->name                        = 'BlackBerry';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, [            'BlackBerry[0-9a-z]+',            'BlackBerrySimulator',            'Version',        ]);
         $this->manufacturer                = CompanyFactory::get('Rim')->getName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
@@ -65,22 +65,6 @@ class Blackberry extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = [
-            'BlackBerry[0-9a-z]+',
-            'BlackBerrySimulator',
-            'Version',
-        ];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

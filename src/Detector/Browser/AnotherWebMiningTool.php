@@ -55,7 +55,7 @@ class AnotherWebMiningTool extends AbstractBrowser implements BrowserHasSpecific
         $this->useragent                   = $useragent;
         $this->name                        = 'Another Web Mining Tool';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($this->useragent, ['Another Web Mining Tool']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class AnotherWebMiningTool extends AbstractBrowser implements BrowserHasSpecific
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Another Web Mining Tool'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

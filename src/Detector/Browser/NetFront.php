@@ -55,7 +55,7 @@ class NetFront extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'NetFront';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3']);
         $this->manufacturer                = CompanyFactory::get('Access')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class NetFront extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

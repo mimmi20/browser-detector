@@ -55,7 +55,7 @@ class ComodoDragon extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->useragent                   = $useragent;
         $this->name                        = 'Dragon';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Comodo Dragon', 'Dragon', 'Chrome']);
         $this->manufacturer                = CompanyFactory::get('Comodo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class ComodoDragon extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Comodo Dragon', 'Dragon', 'Chrome'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

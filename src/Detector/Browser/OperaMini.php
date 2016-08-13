@@ -55,7 +55,7 @@ class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'Opera Mini';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['OPiOS']);
         $this->manufacturer                = CompanyFactory::get('Opera')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,68 +65,6 @@ class OperaMini extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Transcoder();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $doMatch = preg_match(
-            '/Opera Mini\/([\d\.]+)\//',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/Opera Mini\/([\d\.]+)\./',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/Opera Mini\/(\d+)\./',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/Opera Mini\/att\/([\d\.]+)\./',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $doMatch = preg_match(
-            '/Opera Mini\/att\/(\d+)\./',
-            $this->useragent,
-            $matches
-        );
-
-        if ($doMatch) {
-            return $matches[1];
-        }
-
-        $searches = ['OPiOS'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

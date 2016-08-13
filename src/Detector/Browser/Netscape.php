@@ -55,7 +55,7 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'Netscape';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Netscape', 'Netscape6', 'rv\:', 'Mozilla']);
         $this->manufacturer                = CompanyFactory::get('Netscape')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Netscape', 'Netscape6', 'rv\:', 'Mozilla'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

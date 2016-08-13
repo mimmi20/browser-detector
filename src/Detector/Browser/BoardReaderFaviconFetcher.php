@@ -55,7 +55,7 @@ class BoardReaderFaviconFetcher extends AbstractBrowser implements BrowserHasSpe
         $this->useragent                   = $useragent;
         $this->name                        = 'BoardReader Favicon Fetcher';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['BoardReader Favicon Fetcher', 'BoardReader Favicon Fetcher ']);
         $this->manufacturer                = CompanyFactory::get('BoardReader')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class BoardReaderFaviconFetcher extends AbstractBrowser implements BrowserHasSpe
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['BoardReader Favicon Fetcher', 'BoardReader Favicon Fetcher '];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

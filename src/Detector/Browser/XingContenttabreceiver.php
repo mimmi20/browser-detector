@@ -55,7 +55,7 @@ class XingContenttabreceiver extends AbstractBrowser implements BrowserHasSpecif
         $this->useragent                   = $useragent;
         $this->name                        = 'XING Contenttabreceiver';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['XING\-contenttabreceiver']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class XingContenttabreceiver extends AbstractBrowser implements BrowserHasSpecif
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['XING\-contenttabreceiver'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

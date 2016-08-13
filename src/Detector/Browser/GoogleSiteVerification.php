@@ -55,7 +55,7 @@ class GoogleSiteVerification extends AbstractBrowser implements BrowserHasSpecif
         $this->useragent                   = $useragent;
         $this->name                        = 'Google-Site-Verification';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Google\-Site\-Verification']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GoogleSiteVerification extends AbstractBrowser implements BrowserHasSpecif
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Google\-Site\-Verification'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

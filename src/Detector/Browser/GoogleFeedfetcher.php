@@ -55,7 +55,7 @@ class GoogleFeedfetcher extends AbstractBrowser implements BrowserHasSpecificEng
         $this->useragent                   = $useragent;
         $this->name                        = 'Google Feedfetcher';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, [            'Feedfetcher\-Google',            'Feedfetcher\-Google\-iGoogleGadgets',        ]);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,21 +65,6 @@ class GoogleFeedfetcher extends AbstractBrowser implements BrowserHasSpecificEng
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\BotSyndicationReader();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = [
-            'Feedfetcher\-Google',
-            'Feedfetcher\-Google\-iGoogleGadgets',
-        ];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

@@ -55,7 +55,7 @@ class Bowser extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Bowser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Bowser']);
         $this->manufacturer                = CompanyFactory::get('EricssonResearch')->getName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Bowser extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Bowser'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

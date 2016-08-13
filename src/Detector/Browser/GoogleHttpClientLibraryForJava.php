@@ -55,7 +55,7 @@ class GoogleHttpClientLibraryForJava extends AbstractBrowser implements BrowserH
         $this->useragent                   = $useragent;
         $this->name                        = 'Google HTTP Client Library for Java';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Google\-HTTP\-Java\-Client']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class GoogleHttpClientLibraryForJava extends AbstractBrowser implements BrowserH
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Google\-HTTP\-Java\-Client'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

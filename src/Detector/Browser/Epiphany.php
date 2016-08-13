@@ -55,7 +55,7 @@ class Epiphany extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->useragent                   = $useragent;
         $this->name                        = 'Epiphany';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Epiphany', 'Version', 'Safari', 'AppleWebKit']);
         $this->manufacturer                = CompanyFactory::get('TheGnomeProject')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class Epiphany extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Epiphany', 'Version', 'Safari', 'AppleWebKit'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

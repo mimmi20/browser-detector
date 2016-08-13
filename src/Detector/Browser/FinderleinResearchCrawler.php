@@ -55,7 +55,7 @@ class FinderleinResearchCrawler extends AbstractBrowser implements BrowserHasSpe
         $this->useragent                   = $useragent;
         $this->name                        = 'Finderlein Research Crawler';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Finderlein Research Crawler']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class FinderleinResearchCrawler extends AbstractBrowser implements BrowserHasSpe
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Finderlein Research Crawler'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

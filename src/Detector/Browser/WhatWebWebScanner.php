@@ -55,7 +55,7 @@ class WhatWebWebScanner extends AbstractBrowser implements BrowserHasSpecificEng
         $this->useragent                   = $useragent;
         $this->name                        = 'WhatWeb Web Scanner';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['WhatWeb']);
         $this->manufacturer                = CompanyFactory::get('AndrewHorton')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WhatWebWebScanner extends AbstractBrowser implements BrowserHasSpecificEng
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['WhatWeb'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

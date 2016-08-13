@@ -55,7 +55,7 @@ class WebsiteThumbnailGenerator extends AbstractBrowser implements BrowserHasSpe
         $this->useragent                   = $useragent;
         $this->name                        = 'Website Thumbnail Generator';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['WebThumbnail']);
         $this->manufacturer                = CompanyFactory::get('Webthumbnail')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class WebsiteThumbnailGenerator extends AbstractBrowser implements BrowserHasSpe
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['WebThumbnail'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

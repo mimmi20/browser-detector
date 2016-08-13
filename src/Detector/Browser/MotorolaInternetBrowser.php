@@ -55,7 +55,7 @@ class MotorolaInternetBrowser extends AbstractBrowser implements BrowserHasSpeci
         $this->useragent                   = $useragent;
         $this->name                        = 'Motorola Internet Browser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['MIB', 'MIB\/BER']);
         $this->manufacturer                = CompanyFactory::get('Motorola')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class MotorolaInternetBrowser extends AbstractBrowser implements BrowserHasSpeci
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['MIB', 'MIB\/BER'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

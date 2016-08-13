@@ -55,7 +55,7 @@ class LinkdexComBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->useragent                   = $useragent;
         $this->name                        = 'Linkdex Bot';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['linkdex\.com', 'linkdex\.com\/v']);
         $this->manufacturer                = CompanyFactory::get('Linkdex')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class LinkdexComBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['linkdex\.com', 'linkdex\.com\/v'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

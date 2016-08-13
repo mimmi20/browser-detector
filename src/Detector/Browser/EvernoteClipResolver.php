@@ -55,7 +55,7 @@ class EvernoteClipResolver extends AbstractBrowser implements BrowserHasSpecific
         $this->useragent                   = $useragent;
         $this->name                        = 'Evernote Clip Resolver';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Evernote Clip Resolver']);
         $this->manufacturer                = CompanyFactory::get('Evernote')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class EvernoteClipResolver extends AbstractBrowser implements BrowserHasSpecific
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Evernote Clip Resolver'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

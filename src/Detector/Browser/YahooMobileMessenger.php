@@ -55,7 +55,7 @@ class YahooMobileMessenger extends AbstractBrowser implements BrowserHasSpecific
         $this->useragent                   = $useragent;
         $this->name                        = 'Yahoo! Mobile Messenger';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['YahooMobileMessenger']);
         $this->manufacturer                = CompanyFactory::get('Yahoo')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class YahooMobileMessenger extends AbstractBrowser implements BrowserHasSpecific
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Application();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['YahooMobileMessenger'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

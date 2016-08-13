@@ -55,7 +55,7 @@ class PhantomBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->useragent                   = $useragent;
         $this->name                        = 'Phantom Browser';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Phantom', 'Phantom\/V']);
         $this->manufacturer                = CompanyFactory::get('Lg')->getName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
@@ -65,18 +65,6 @@ class PhantomBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Browser();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        $searches = ['Phantom', 'Phantom\/V'];
-
-        return VersionFactory::detectVersion($this->useragent, $searches);
     }
 
     /**

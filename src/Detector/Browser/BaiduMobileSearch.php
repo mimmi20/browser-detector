@@ -55,7 +55,7 @@ class BaiduMobileSearch extends AbstractBrowser implements BrowserHasSpecificEng
         $this->useragent                   = $useragent;
         $this->name                        = 'Baidu Mobile Search';
         $this->modus                       = null;
-        $this->version                     = $this->detectVersion();
+        $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Baidu')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
@@ -65,16 +65,6 @@ class BaiduMobileSearch extends AbstractBrowser implements BrowserHasSpecificEng
         $this->supportsBasicAuthentication = true;
         $this->supportsPostMethod          = true;
         $this->type                        = new UaBrowserType\Bot();
-    }
-
-    /**
-     * detects the browser version from the given user agent
-     *
-     * @return \BrowserDetector\Version\Version
-     */
-    private function detectVersion()
-    {
-        return new Version(0);
     }
 
     /**
