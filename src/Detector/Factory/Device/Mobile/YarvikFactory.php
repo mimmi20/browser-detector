@@ -52,9 +52,9 @@ class YarvikFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TAB10\-400/', $useragent)) {
-            return new Yarvik\YarvikTab10400($useragent, []);
+            return new Yarvik\YarvikTab10400($useragent);
         }
 
-        return new Yarvik\Yarvik($useragent, []);
+        return new Yarvik\Yarvik($useragent);
     }
 }

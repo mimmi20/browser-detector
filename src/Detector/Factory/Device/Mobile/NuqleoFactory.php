@@ -52,13 +52,13 @@ class NuqleoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/zaffire 1010/i', $useragent)) {
-            return new Nuqleo\NuqleoZaffire1010($useragent, []);
+            return new Nuqleo\NuqleoZaffire1010($useragent);
         }
 
         if (preg_match('/zaffire 785/i', $useragent)) {
-            return new Nuqleo\NuqleoZaffire785($useragent, []);
+            return new Nuqleo\NuqleoZaffire785($useragent);
         }
 
-        return new Nuqleo\Nuqleo($useragent, []);
+        return new Nuqleo\Nuqleo($useragent);
     }
 }

@@ -52,17 +52,17 @@ class PandigitalFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/sprnova1/i', $useragent)) {
-            return new Pandigital\PandigitalSupernova($useragent, []);
+            return new Pandigital\PandigitalSupernova($useragent);
         }
 
         if (preg_match('/(opc1|SL20_20101210_B_PD_INX7E_ENG_6410POP)/', $useragent)) {
-            return new Pandigital\PandigitalNovel($useragent, []);
+            return new Pandigital\PandigitalNovel($useragent);
         }
 
         if (preg_match('/pandigital9hr/i', $useragent)) {
-            return new Pandigital\Pandigital9hr($useragent, []);
+            return new Pandigital\Pandigital9hr($useragent);
         }
 
-        return new Pandigital\Pandigital($useragent, []);
+        return new Pandigital\Pandigital($useragent);
     }
 }

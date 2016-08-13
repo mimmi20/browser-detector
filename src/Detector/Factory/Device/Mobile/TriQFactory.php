@@ -52,17 +52,17 @@ class TriQFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/QS0716D/', $useragent)) {
-            return new TriQ\TriQqpad($useragent, []);
+            return new TriQ\TriQqpad($useragent);
         }
 
         if (preg_match('/MT0812E/', $useragent)) {
-            return new TriQ\TriQMt0812e($useragent, []);
+            return new TriQ\TriQMt0812e($useragent);
         }
 
         if (preg_match('/AC0732C/', $useragent)) {
-            return new TriQ\TriQAc0732c($useragent, []);
+            return new TriQ\TriQAc0732c($useragent);
         }
 
-        return new TriQ\TriQ($useragent, []);
+        return new TriQ\TriQ($useragent);
     }
 }

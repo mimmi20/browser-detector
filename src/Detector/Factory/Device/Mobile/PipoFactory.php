@@ -52,25 +52,25 @@ class PipoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TPC\-PA10\.1M/', $useragent)) {
-            return new Pipo\PipoPa101m($useragent, []);
+            return new Pipo\PipoPa101m($useragent);
         }
 
         if (preg_match('/p93g/i', $useragent)) {
-            return new Pipo\PipoP93g($useragent, []);
+            return new Pipo\PipoP93g($useragent);
         }
 
         if (preg_match('/m9pro/i', $useragent)) {
-            return new Pipo\PipoM9pro($useragent, []);
+            return new Pipo\PipoM9pro($useragent);
         }
 
         if (preg_match('/m6pro/i', $useragent)) {
-            return new Pipo\PipoM6pro($useragent, []);
+            return new Pipo\PipoM6pro($useragent);
         }
 
         if (preg_match('/i75/', $useragent)) {
-            return new Pipo\PipoI75($useragent, []);
+            return new Pipo\PipoI75($useragent);
         }
 
-        return new Pipo\Pipo($useragent, []);
+        return new Pipo\Pipo($useragent);
     }
 }

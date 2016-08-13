@@ -52,13 +52,13 @@ class IntensoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/inm8002kp/i', $useragent)) {
-            return new Intenso\IntensoTab824($useragent, []);
+            return new Intenso\IntensoTab824($useragent);
         }
 
         if (preg_match('/inm803hc/i', $useragent)) {
-            return new Intenso\IntensoTab803($useragent, []);
+            return new Intenso\IntensoTab803($useragent);
         }
 
-        return new Intenso\Intenso($useragent, []);
+        return new Intenso\Intenso($useragent);
     }
 }

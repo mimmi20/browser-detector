@@ -52,25 +52,25 @@ class GoCleverFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TQ700/', $useragent)) {
-            return new GoClever\GoCleverTq700($useragent, []);
+            return new GoClever\GoCleverTq700($useragent);
         }
 
         if (preg_match('/TERRA\_101/', $useragent)) {
-            return new GoClever\GoCleverTerra101($useragent, []);
+            return new GoClever\GoCleverTerra101($useragent);
         }
 
         if (preg_match('/INSIGNIA\_785\_PRO/', $useragent)) {
-            return new GoClever\GoCleverInsignia785Pro($useragent, []);
+            return new GoClever\GoCleverInsignia785Pro($useragent);
         }
 
         if (preg_match('/ARIES\_785/', $useragent)) {
-            return new GoClever\GoCleverAries785($useragent, []);
+            return new GoClever\GoCleverAries785($useragent);
         }
 
         if (preg_match('/ARIES\_101/', $useragent)) {
-            return new GoClever\GoCleverAries101($useragent, []);
+            return new GoClever\GoCleverAries101($useragent);
         }
 
-        return new GoClever\GoClever($useragent, []);
+        return new GoClever\GoClever($useragent);
     }
 }

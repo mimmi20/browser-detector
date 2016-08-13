@@ -52,9 +52,9 @@ class CosmoteFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Xplore/i', $useragent)) {
-            return new Cosmote\CosmoteXplore($useragent, []);
+            return new Cosmote\CosmoteXplore($useragent);
         }
 
-        return new Cosmote\Cosmote($useragent, []);
+        return new Cosmote\Cosmote($useragent);
     }
 }

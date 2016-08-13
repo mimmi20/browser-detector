@@ -52,9 +52,9 @@ class KoboFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/kobo touch/i', $useragent)) {
-            return new Kobo\KoboTouch($useragent, []);
+            return new Kobo\KoboTouch($useragent);
         }
 
-        return new Kobo\Kobo($useragent, []);
+        return new Kobo\Kobo($useragent);
     }
 }

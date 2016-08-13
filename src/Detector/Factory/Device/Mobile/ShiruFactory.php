@@ -52,9 +52,9 @@ class ShiruFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SAMURAI10/', $useragent)) {
-            return new Shiru\ShiruSamurai10($useragent, []);
+            return new Shiru\ShiruSamurai10($useragent);
         }
 
-        return new Shiru\Shiru($useragent, []);
+        return new Shiru\Shiru($useragent);
     }
 }

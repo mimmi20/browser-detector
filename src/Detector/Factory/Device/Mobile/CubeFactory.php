@@ -52,21 +52,21 @@ class CubeFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/U55GT/i', $useragent)) {
-            return new Cube\CubeU55gt($useragent, []);
+            return new Cube\CubeU55gt($useragent);
         }
 
         if (preg_match('/U51GT/i', $useragent)) {
-            return new Cube\CubeU51gt($useragent, []);
+            return new Cube\CubeU51gt($useragent);
         }
 
         if (preg_match('/U30GT 2/i', $useragent)) {
-            return new Cube\CubeU30gt2($useragent, []);
+            return new Cube\CubeU30gt2($useragent);
         }
 
         if (preg_match('/U30GT/i', $useragent)) {
-            return new Cube\CubeU30gt($useragent, []);
+            return new Cube\CubeU30gt($useragent);
         }
 
-        return new Cube\Cube($useragent, []);
+        return new Cube\Cube($useragent);
     }
 }

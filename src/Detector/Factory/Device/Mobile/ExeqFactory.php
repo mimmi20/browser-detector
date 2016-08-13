@@ -52,9 +52,9 @@ class ExeqFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/p\-720/i', $useragent)) {
-            return new Exeq\ExeqP720($useragent, []);
+            return new Exeq\ExeqP720($useragent);
         }
 
-        return new Exeq\Exeq($useragent, []);
+        return new Exeq\Exeq($useragent);
     }
 }

@@ -52,13 +52,13 @@ class MeizuFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/m040/i', $useragent)) {
-            return new Meizu\MeizuM040($useragent, []);
+            return new Meizu\MeizuM040($useragent);
         }
 
         if (preg_match('/(meizu\_m9| m9 )/i', $useragent)) {
-            return new Meizu\MeizuM9($useragent, []);
+            return new Meizu\MeizuM9($useragent);
         }
 
-        return new Meizu\Meizu($useragent, []);
+        return new Meizu\Meizu($useragent);
     }
 }

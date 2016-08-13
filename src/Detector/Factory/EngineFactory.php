@@ -62,52 +62,52 @@ class EngineFactory implements FactoryInterface
         $utils->setUserAgent($useragent);
 
         if (null !== $os && in_array($os->getName(), ['iOS'])) {
-            $engineName = new \BrowserDetector\Detector\Engine\Webkit($useragent, []);
+            $engineName = new Engine\Webkit($useragent);
         } elseif ($utils->checkIfContains('Edge')) {
-            $engineName = new \BrowserDetector\Detector\Engine\Edge($useragent, []);
+            $engineName = new Engine\Edge($useragent);
         } elseif ($utils->checkIfContains(' U2/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\U2($useragent, []);
+            $engineName = new Engine\U2($useragent);
         } elseif ($utils->checkIfContains(' U3/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\U3($useragent, []);
+            $engineName = new Engine\U3($useragent);
         } elseif ($utils->checkIfContains(' T5/')) {
-            $engineName = new \BrowserDetector\Detector\Engine\T5($useragent, []);
+            $engineName = new Engine\T5($useragent);
         } elseif (preg_match('/(msie|trident|outlook|kkman)/i', $useragent)
             && false === stripos($useragent, 'opera')
             && false === stripos($useragent, 'tasman')
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\Trident($useragent, []);
+            $engineName = new Engine\Trident($useragent);
         } elseif (preg_match('/(goanna)/i', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Goanna($useragent, []);
+            $engineName = new Engine\Goanna($useragent);
         } elseif (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
-            $chrome = new Chrome($useragent, []);
+            $chrome = new Chrome($useragent);
 
             $chromeVersion = $chrome->getVersion()->getVersion(Version::MAJORONLY);
 
             if ($chromeVersion >= 28) {
-                $engineName = new \BrowserDetector\Detector\Engine\Blink($useragent, []);
+                $engineName = new Engine\Blink($useragent);
             } else {
-                $engineName = new \BrowserDetector\Detector\Engine\Webkit($useragent, []);
+                $engineName = new Engine\Webkit($useragent);
             }
         } elseif (preg_match('/(KHTML|Konqueror)/', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Khtml($useragent, []);
+            $engineName = new Engine\Khtml($useragent);
         } elseif (preg_match('/(tasman)/i', $useragent)
             || $utils->checkIfContainsAll(['MSIE', 'Mac_PowerPC'])
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\Tasman($useragent, []);
+            $engineName = new Engine\Tasman($useragent);
         } elseif (preg_match('/(Presto|Opera)/', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Presto($useragent, []);
+            $engineName = new Engine\Presto($useragent);
         } elseif (preg_match('/(Gecko|Firefox)/', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Gecko($useragent, []);
+            $engineName = new Engine\Gecko($useragent);
         } elseif (preg_match('/(NetFront\/|NF\/|NetFrontLifeBrowserInterface|NF3|Nintendo 3DS)/', $useragent)
             && !$utils->checkIfContains(['Kindle'])
         ) {
-            $engineName = new \BrowserDetector\Detector\Engine\NetFront($useragent, []);
+            $engineName = new Engine\NetFront($useragent);
         } elseif ($utils->checkIfContains('BlackBerry')) {
-            $engineName = new \BrowserDetector\Detector\Engine\BlackBerry($useragent, []);
+            $engineName = new Engine\BlackBerry($useragent);
         } elseif (preg_match('/(Teleca|Obigo)/', $useragent)) {
-            $engineName = new \BrowserDetector\Detector\Engine\Teleca($useragent, []);
+            $engineName = new Engine\Teleca($useragent);
         } else {
-            $engineName = new \BrowserDetector\Detector\Engine\UnknownEngine($useragent, []);
+            $engineName = new Engine\UnknownEngine($useragent);
         }
 
         return $engineName;

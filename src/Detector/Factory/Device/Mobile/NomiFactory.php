@@ -52,13 +52,13 @@ class NomiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/C07000/', $useragent)) {
-            return new Nomi\NomiC07000($useragent, []);
+            return new Nomi\NomiC07000($useragent);
         }
 
         if (preg_match('/A10100/', $useragent)) {
-            return new Nomi\NomiA10100($useragent, []);
+            return new Nomi\NomiA10100($useragent);
         }
 
-        return new Nomi\Nomi($useragent, []);
+        return new Nomi\Nomi($useragent);
     }
 }

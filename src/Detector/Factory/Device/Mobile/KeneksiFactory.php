@@ -52,9 +52,9 @@ class KeneksiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/crystal/i', $useragent)) {
-            return new Keneksi\KeneksiCrystal($useragent, []);
+            return new Keneksi\KeneksiCrystal($useragent);
         }
 
-        return new Keneksi\Keneksi($useragent, []);
+        return new Keneksi\Keneksi($useragent);
     }
 }

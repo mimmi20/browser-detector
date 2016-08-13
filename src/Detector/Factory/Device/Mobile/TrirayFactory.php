@@ -52,9 +52,9 @@ class TrirayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/X8\+/i', $useragent)) {
-            return new Triray\TrirayX8plus($useragent, []);
+            return new Triray\TrirayX8plus($useragent);
         }
 
-        return new Triray\Triray($useragent, []);
+        return new Triray\Triray($useragent);
     }
 }

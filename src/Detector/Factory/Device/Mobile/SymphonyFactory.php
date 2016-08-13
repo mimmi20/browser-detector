@@ -52,9 +52,9 @@ class SymphonyFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W82/i', $useragent)) {
-            return new Symphony\SymphonyW82($useragent, []);
+            return new Symphony\SymphonyW82($useragent);
         }
 
-        return new Symphony\Symphony($useragent, []);
+        return new Symphony\Symphony($useragent);
     }
 }

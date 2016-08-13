@@ -52,21 +52,21 @@ class PhilipsFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W8510/', $useragent)) {
-            return new Philips\PhilipsW8510($useragent, []);
+            return new Philips\PhilipsW8510($useragent);
         }
 
         if (preg_match('/W8500/', $useragent)) {
-            return new Philips\PhilipsW8500($useragent, []);
+            return new Philips\PhilipsW8500($useragent);
         }
 
         if (preg_match('/W3509/', $useragent)) {
-            return new Philips\PhilipsW3509($useragent, []);
+            return new Philips\PhilipsW3509($useragent);
         }
 
         if (preg_match('/PI3210G/', $useragent)) {
-            return new Philips\PhilipsPi3210g($useragent, []);
+            return new Philips\PhilipsPi3210g($useragent);
         }
 
-        return new Philips\Philips($useragent, []);
+        return new Philips\Philips($useragent);
     }
 }

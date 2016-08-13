@@ -52,17 +52,17 @@ class PearlFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/X10\.Dual\+/', $useragent)) {
-            return new Pearl\PearlX10Plus($useragent, []);
+            return new Pearl\PearlX10Plus($useragent);
         }
 
         if (preg_match('/X10\.Dual/', $useragent)) {
-            return new Pearl\PearlX10($useragent, []);
+            return new Pearl\PearlX10($useragent);
         }
 
         if (preg_match('/X7G/', $useragent)) {
-            return new Pearl\PearlTouchletX7g($useragent, []);
+            return new Pearl\PearlTouchletX7g($useragent);
         }
 
-        return new Pearl\Pearl($useragent, []);
+        return new Pearl\Pearl($useragent);
     }
 }

@@ -52,9 +52,9 @@ class O2Factory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/xda\_orbit\_2/i', $useragent)) {
-            return new O2\O2XdaOrbitIi($useragent, []);
+            return new O2\O2XdaOrbitIi($useragent);
         }
 
-        return new O2\O2($useragent, []);
+        return new O2\O2($useragent);
     }
 }

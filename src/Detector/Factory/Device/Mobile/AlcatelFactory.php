@@ -52,161 +52,161 @@ class AlcatelFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)8008D/i', $useragent)) {
-            return new Alcatel\AlcatelOt8008D($useragent, []);
+            return new Alcatel\AlcatelOt8008D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7047D/i', $useragent)) {
-            return new Alcatel\AlcatelOt7047d($useragent, []);
+            return new Alcatel\AlcatelOt7047d($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)7025D/i', $useragent)) {
-            return new Alcatel\AlcatelOt7025d($useragent, []);
+            return new Alcatel\AlcatelOt7025d($useragent);
         }
 
         if (preg_match('/6036Y/i', $useragent)) {
-            return new Alcatel\AlcatelOt6036Y($useragent, []);
+            return new Alcatel\AlcatelOt6036Y($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6033X/i', $useragent)) {
-            return new Alcatel\AlcatelOt6033X($useragent, []);
+            return new Alcatel\AlcatelOt6033X($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6030X/i', $useragent)) {
-            return new Alcatel\AlcatelOt6030X($useragent, []);
+            return new Alcatel\AlcatelOt6030X($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6030D/i', $useragent)) {
-            return new Alcatel\AlcatelOt6030D($useragent, []);
+            return new Alcatel\AlcatelOt6030D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6012D/i', $useragent)) {
-            return new Alcatel\AlcatelOt6012D($useragent, []);
+            return new Alcatel\AlcatelOt6012D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6010D/i', $useragent)) {
-            return new Alcatel\AlcatelOt6010D($useragent, []);
+            return new Alcatel\AlcatelOt6010D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)5035D/i', $useragent)) {
-            return new Alcatel\AlcatelOt5035D($useragent, []);
+            return new Alcatel\AlcatelOt5035D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)5020D/i', $useragent)) {
-            return new Alcatel\AlcatelOt5020D($useragent, []);
+            return new Alcatel\AlcatelOt5020D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4037T/i', $useragent)) {
-            return new Alcatel\AlcatelOt4037T($useragent, []);
+            return new Alcatel\AlcatelOt4037T($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4030X/i', $useragent)) {
-            return new Alcatel\AlcatelOt4030X($useragent, []);
+            return new Alcatel\AlcatelOt4030X($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4030D/i', $useragent)) {
-            return new Alcatel\AlcatelOt4030D($useragent, []);
+            return new Alcatel\AlcatelOt4030D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4012X/i', $useragent)) {
-            return new Alcatel\AlcatelOt4012X($useragent, []);
+            return new Alcatel\AlcatelOt4012X($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)4012A/i', $useragent)) {
-            return new Alcatel\AlcatelOt4012A($useragent, []);
+            return new Alcatel\AlcatelOt4012A($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)997d/i', $useragent)) {
-            return new Alcatel\AlcatelOt997d($useragent, []);
+            return new Alcatel\AlcatelOt997d($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)995/i', $useragent)) {
-            return new Alcatel\AlcatelOt995($useragent, []);
+            return new Alcatel\AlcatelOt995($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)992D/i', $useragent)) {
-            return new Alcatel\AlcatelOt992d($useragent, []);
+            return new Alcatel\AlcatelOt992d($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991T/i', $useragent)) {
-            return new Alcatel\AlcatelOt991t($useragent, []);
+            return new Alcatel\AlcatelOt991t($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991D/i', $useragent)) {
-            return new Alcatel\AlcatelOt991d($useragent, []);
+            return new Alcatel\AlcatelOt991d($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)991/i', $useragent)) {
-            return new Alcatel\AlcatelOt991($useragent, []);
+            return new Alcatel\AlcatelOt991($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)990/i', $useragent)) {
-            return new Alcatel\AlcatelOt990($useragent, []);
+            return new Alcatel\AlcatelOt990($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)980/i', $useragent)) {
-            return new Alcatel\AlcatelOt980($useragent, []);
+            return new Alcatel\AlcatelOt980($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)918D/i', $useragent)) {
-            return new Alcatel\AlcatelOt918d($useragent, []);
+            return new Alcatel\AlcatelOt918d($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)918/i', $useragent)) {
-            return new Alcatel\AlcatelOt918($useragent, []);
+            return new Alcatel\AlcatelOt918($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)908/i', $useragent)) {
-            return new Alcatel\AlcatelOt908($useragent, []);
+            return new Alcatel\AlcatelOt908($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)903D/i', $useragent)) {
-            return new Alcatel\AlcatelOt903d($useragent, []);
+            return new Alcatel\AlcatelOt903d($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)890D/i', $useragent)) {
-            return new Alcatel\AlcatelOt890d($useragent, []);
+            return new Alcatel\AlcatelOt890d($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)890/i', $useragent)) {
-            return new Alcatel\AlcatelOt890($useragent, []);
+            return new Alcatel\AlcatelOt890($useragent);
         }
 
         if (preg_match('/OT871A/', $useragent)) {
-            return new Alcatel\AlcatelOt871A($useragent, []);
+            return new Alcatel\AlcatelOt871A($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)818/i', $useragent)) {
-            return new Alcatel\AlcatelOt818($useragent, []);
+            return new Alcatel\AlcatelOt818($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)710D/i', $useragent)) {
-            return new Alcatel\AlcatelOt710D($useragent, []);
+            return new Alcatel\AlcatelOt710D($useragent);
         }
 
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)216/i', $useragent)) {
-            return new Alcatel\AlcatelOt216($useragent, []);
+            return new Alcatel\AlcatelOt216($useragent);
         }
 
         if (preg_match('/Vodafone 975N/', $useragent)) {
-            return new Alcatel\Vodafone975n($useragent, []);
+            return new Alcatel\Vodafone975n($useragent);
         }
 
         if (preg_match('/(V860|Vodafone Smart II)/', $useragent)) {
-            return new Alcatel\V860($useragent, []);
+            return new Alcatel\V860($useragent);
         }
 
         if (preg_match('/P320X/', $useragent)) {
-            return new Alcatel\AlcatelP320x($useragent, []);
+            return new Alcatel\AlcatelP320x($useragent);
         }
 
         if (preg_match('/P310X/', $useragent)) {
-            return new Alcatel\AlcatelP310x($useragent, []);
+            return new Alcatel\AlcatelP310x($useragent);
         }
 
         if (preg_match('/ONE TOUCH TAB 7HD/', $useragent)) {
-            return new Alcatel\AlcatelOtTab7hd($useragent, []);
+            return new Alcatel\AlcatelOtTab7hd($useragent);
         }
 
-        return new Alcatel\Alcatel($useragent, []);
+        return new Alcatel\Alcatel($useragent);
     }
 }

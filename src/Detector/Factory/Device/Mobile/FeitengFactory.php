@@ -52,13 +52,13 @@ class FeitengFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/GT\-H9500/i', $useragent)) {
-            return new Feiteng\FeitengGth9500($useragent, []);
+            return new Feiteng\FeitengGth9500($useragent);
         }
 
         if (preg_match('/H7100/i', $useragent)) {
-            return new Feiteng\FeitengH7100($useragent, []);
+            return new Feiteng\FeitengH7100($useragent);
         }
 
-        return new Feiteng\Feiteng($useragent, []);
+        return new Feiteng\Feiteng($useragent);
     }
 }

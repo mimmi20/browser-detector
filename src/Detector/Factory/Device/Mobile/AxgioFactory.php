@@ -52,13 +52,13 @@ class AxgioFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/WING\-W2/', $useragent)) {
-            return new Axgio\AxgioWingW2($useragent, []);
+            return new Axgio\AxgioWingW2($useragent);
         }
 
         if (preg_match('/Neon\-N1/', $useragent)) {
-            return new Axgio\AxgioNeonN1($useragent, []);
+            return new Axgio\AxgioNeonN1($useragent);
         }
 
-        return new Axgio\Axgio($useragent, []);
+        return new Axgio\Axgio($useragent);
     }
 }

@@ -52,9 +52,9 @@ class WolgangFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/AT\-AS40SE/', $useragent)) {
-            return new Wolgang\WolgangAtas40se($useragent, []);
+            return new Wolgang\WolgangAtas40se($useragent);
         }
 
-        return new Wolgang\Wolgang($useragent, []);
+        return new Wolgang\Wolgang($useragent);
     }
 }

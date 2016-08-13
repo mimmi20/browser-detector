@@ -52,9 +52,9 @@ class OystersFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/pacific800i/i', $useragent)) {
-            return new Oysters\OystersPacific800i($useragent, []);
+            return new Oysters\OystersPacific800i($useragent);
         }
 
-        return new Oysters\Oysters($useragent, []);
+        return new Oysters\Oysters($useragent);
     }
 }

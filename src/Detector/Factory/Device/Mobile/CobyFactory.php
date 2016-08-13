@@ -52,41 +52,41 @@ class CobyFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MID9742/i', $useragent)) {
-            return new Coby\MID9742($useragent, []);
+            return new Coby\MID9742($useragent);
         }
 
         if (preg_match('/MID8128/i', $useragent)) {
-            return new Coby\MID8128($useragent, []);
+            return new Coby\MID8128($useragent);
         }
 
         if (preg_match('/MID8127/i', $useragent)) {
-            return new Coby\MID8127($useragent, []);
+            return new Coby\MID8127($useragent);
         }
 
         if (preg_match('/MID8024/i', $useragent)) {
-            return new Coby\MID8024($useragent, []);
+            return new Coby\MID8024($useragent);
         }
 
         if (preg_match('/MID7022/i', $useragent)) {
-            return new Coby\MID7022($useragent, []);
+            return new Coby\MID7022($useragent);
         }
 
         if (preg_match('/MID7015/i', $useragent)) {
-            return new Coby\MID7015($useragent, []);
+            return new Coby\MID7015($useragent);
         }
 
         if (preg_match('/MID1126/i', $useragent)) {
-            return new Coby\MID1126($useragent, []);
+            return new Coby\MID1126($useragent);
         }
 
         if (preg_match('/MID1125/i', $useragent)) {
-            return new Coby\MID1125($useragent, []);
+            return new Coby\MID1125($useragent);
         }
 
         if (preg_match('/NBPC724/i', $useragent)) {
-            return new Coby\NBPC724($useragent, []);
+            return new Coby\NBPC724($useragent);
         }
 
-        return new Coby\Coby($useragent, []);
+        return new Coby\Coby($useragent);
     }
 }

@@ -52,9 +52,9 @@ class IruluFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/U1/i', $useragent)) {
-            return new Irulu\IruluU1($useragent, []);
+            return new Irulu\IruluU1($useragent);
         }
 
-        return new Irulu\Irulu($useragent, []);
+        return new Irulu\Irulu($useragent);
     }
 }

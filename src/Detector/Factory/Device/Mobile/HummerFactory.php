@@ -52,9 +52,9 @@ class HummerFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/h1\+/i', $useragent)) {
-            return new Hummer\HummerH1plus($useragent, []);
+            return new Hummer\HummerH1plus($useragent);
         }
 
-        return new Hummer\Hummer($useragent, []);
+        return new Hummer\Hummer($useragent);
     }
 }

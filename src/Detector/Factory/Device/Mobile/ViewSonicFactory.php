@@ -52,25 +52,25 @@ class ViewSonicFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/viewpad 10s/i', $useragent)) {
-            return new ViewSonic\ViewSonicViewPad10s($useragent, []);
+            return new ViewSonic\ViewSonicViewPad10s($useragent);
         }
 
         if (preg_match('/viewpad 10e/i', $useragent)) {
-            return new ViewSonic\ViewSonicViewPad10e($useragent, []);
+            return new ViewSonic\ViewSonicViewPad10e($useragent);
         }
 
         if (preg_match('/viewpad7e/i', $useragent)) {
-            return new ViewSonic\ViewSonicViewPad7e($useragent, []);
+            return new ViewSonic\ViewSonicViewPad7e($useragent);
         }
 
         if (preg_match('/(viewpad7|viewpad\-7)/i', $useragent)) {
-            return new ViewSonic\ViewSonicViewPad7($useragent, []);
+            return new ViewSonic\ViewSonicViewPad7($useragent);
         }
 
         if (preg_match('/viewsonic\-v350/i', $useragent)) {
-            return new ViewSonic\ViewSonicV350($useragent, []);
+            return new ViewSonic\ViewSonicV350($useragent);
         }
 
-        return new ViewSonic\ViewSonic($useragent, []);
+        return new ViewSonic\ViewSonic($useragent);
     }
 }

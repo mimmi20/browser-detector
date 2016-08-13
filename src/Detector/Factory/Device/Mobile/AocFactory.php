@@ -52,9 +52,9 @@ class AocFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/m601/i', $useragent)) {
-            return new Aoc\AocM601($useragent, []);
+            return new Aoc\AocM601($useragent);
         }
 
-        return new Aoc\Aoc($useragent, []);
+        return new Aoc\Aoc($useragent);
     }
 }

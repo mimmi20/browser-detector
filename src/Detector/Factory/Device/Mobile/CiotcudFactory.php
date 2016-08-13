@@ -52,9 +52,9 @@ class CiotcudFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/l930/i', $useragent)) {
-            return new Ciotcud\CiotcudL930($useragent, []);
+            return new Ciotcud\CiotcudL930($useragent);
         }
 
-        return new Ciotcud\Ciotcud($useragent, []);
+        return new Ciotcud\Ciotcud($useragent);
     }
 }

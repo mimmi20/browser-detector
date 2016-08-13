@@ -52,9 +52,9 @@ class PompFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W88/', $useragent)) {
-            return new Pomp\PompW88($useragent, []);
+            return new Pomp\PompW88($useragent);
         }
 
-        return new Pomp\Pomp($useragent, []);
+        return new Pomp\Pomp($useragent);
     }
 }

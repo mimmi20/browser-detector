@@ -52,133 +52,133 @@ class ArchosFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/A101IT/i', $useragent)) {
-            return new Archos\ArchosA101it($useragent, []);
+            return new Archos\ArchosA101it($useragent);
         }
 
         if (preg_match('/A80KSC/i', $useragent)) {
-            return new Archos\ArchosA80KSC($useragent, []);
+            return new Archos\ArchosA80KSC($useragent);
         }
 
         if (preg_match('/A70S/i', $useragent)) {
-            return new Archos\ArchosA70S($useragent, []);
+            return new Archos\ArchosA70S($useragent);
         }
 
         if (preg_match('/A70HB/i', $useragent)) {
-            return new Archos\ArchosA70HB($useragent, []);
+            return new Archos\ArchosA70HB($useragent);
         }
 
         if (preg_match('/A70H2/i', $useragent)) {
-            return new Archos\ArchosA70H2($useragent, []);
+            return new Archos\ArchosA70H2($useragent);
         }
 
         if (preg_match('/A70CHT/i', $useragent)) {
-            return new Archos\ArchosA70CHT($useragent, []);
+            return new Archos\ArchosA70CHT($useragent);
         }
 
         if (preg_match('/A70BHT/i', $useragent)) {
-            return new Archos\ArchosA70BHT($useragent, []);
+            return new Archos\ArchosA70BHT($useragent);
         }
 
         if (preg_match('/A35DM/i', $useragent)) {
-            return new Archos\ArchosA35DM($useragent, []);
+            return new Archos\ArchosA35DM($useragent);
         }
 
         if (preg_match('/A7EB/i', $useragent)) {
-            return new Archos\ArchosA7eb($useragent, []);
+            return new Archos\ArchosA7eb($useragent);
         }
 
         if (preg_match('/101 Neon/i', $useragent)) {
-            return new Archos\Archos101Neon($useragent, []);
+            return new Archos\Archos101Neon($useragent);
         }
 
         if (preg_match('/101G10/i', $useragent)) {
-            return new Archos\Archos101G10($useragent, []);
+            return new Archos\Archos101G10($useragent);
         }
 
         if (preg_match('/101G9/i', $useragent)) {
-            return new Archos\Archos101G9($useragent, []);
+            return new Archos\Archos101G9($useragent);
         }
 
         if (preg_match('/101B/i', $useragent)) {
-            return new Archos\Archos101B($useragent, []);
+            return new Archos\Archos101B($useragent);
         }
 
         if (preg_match('/97 XENON/i', $useragent)) {
-            return new Archos\Archos97Xenon($useragent, []);
+            return new Archos\Archos97Xenon($useragent);
         }
 
         if (preg_match('/97 TITANIUMHD/i', $useragent)) {
-            return new Archos\Archos97TitaniumHd($useragent, []);
+            return new Archos\Archos97TitaniumHd($useragent);
         }
 
         if (preg_match('/97 neon/i', $useragent)) {
-            return new Archos\Archos97Neon($useragent, []);
+            return new Archos\Archos97Neon($useragent);
         }
 
         if (preg_match('/97 CARBON/i', $useragent)) {
-            return new Archos\Archos97Carbon($useragent, []);
+            return new Archos\Archos97Carbon($useragent);
         }
 
         if (preg_match('/80XSK/i', $useragent)) {
-            return new Archos\Archos80XSK($useragent, []);
+            return new Archos\Archos80XSK($useragent);
         }
 
         if (preg_match('/80 Xenon/i', $useragent)) {
-            return new Archos\Archos80Xenon($useragent, []);
+            return new Archos\Archos80Xenon($useragent);
         }
 
         if (preg_match('/80G9/i', $useragent)) {
-            return new Archos\Archos80G9($useragent, []);
+            return new Archos\Archos80G9($useragent);
         }
 
         if (preg_match('/80 COBALT/i', $useragent)) {
-            return new Archos\Archos80Cobalt($useragent, []);
+            return new Archos\Archos80Cobalt($useragent);
         }
 
         if (preg_match('/79 Xenon/i', $useragent)) {
-            return new Archos\Archos79Xenon($useragent, []);
+            return new Archos\Archos79Xenon($useragent);
         }
 
         if (preg_match('/70 Xenon/i', $useragent)) {
-            return new Archos\Archos70Xenon($useragent, []);
+            return new Archos\Archos70Xenon($useragent);
         }
 
         if (preg_match('/70it2/i', $useragent)) {
-            return new Archos\Archos70it2($useragent, []);
+            return new Archos\Archos70it2($useragent);
         }
 
         if (preg_match('/53 Platinum/i', $useragent)) {
-            return new Archos\Archos53Platinum($useragent, []);
+            return new Archos\Archos53Platinum($useragent);
         }
 
         if (preg_match('/50 Titanium/i', $useragent)) {
-            return new Archos\Archos50Titanium($useragent, []);
+            return new Archos\Archos50Titanium($useragent);
         }
 
         if (preg_match('/50 Platinum/i', $useragent)) {
-            return new Archos\Archos50Platinum($useragent, []);
+            return new Archos\Archos50Platinum($useragent);
         }
 
         if (preg_match('/50c Oxygen/i', $useragent)) {
-            return new Archos\Archos50cOxygen($useragent, []);
+            return new Archos\Archos50cOxygen($useragent);
         }
 
         if (preg_match('/40 Cesium/i', $useragent)) {
-            return new Archos\Archos40Cesium($useragent, []);
+            return new Archos\Archos40Cesium($useragent);
         }
 
         if (preg_match('/40b Titanium Surround/i', $useragent)) {
-            return new Archos\Archos40bTitaniumSurround($useragent, []);
+            return new Archos\Archos40bTitaniumSurround($useragent);
         }
 
         if (preg_match('/Archos5/i', $useragent)) {
-            return new Archos\Archos5($useragent, []);
+            return new Archos\Archos5($useragent);
         }
 
         if (preg_match('/FAMILYPAD 2/i', $useragent)) {
-            return new Archos\ArchosFamilyPad2($useragent, []);
+            return new Archos\ArchosFamilyPad2($useragent);
         }
 
-        return new Archos\Archos($useragent, []);
+        return new Archos\Archos($useragent);
     }
 }

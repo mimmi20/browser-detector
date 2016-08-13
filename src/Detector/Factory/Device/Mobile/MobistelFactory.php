@@ -52,37 +52,37 @@ class MobistelFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/cynus t6/i', $useragent)) {
-            return new Mobistel\MobistelCynusT6($useragent, []);
+            return new Mobistel\MobistelCynusT6($useragent);
         }
 
         if (preg_match('/cynus t5/i', $useragent)) {
-            return new Mobistel\MobistelCynusT5($useragent, []);
+            return new Mobistel\MobistelCynusT5($useragent);
         }
 
         if (preg_match('/cynus t2/i', $useragent)) {
-            return new Mobistel\MobistelCynusT2($useragent, []);
+            return new Mobistel\MobistelCynusT2($useragent);
         }
 
         if (preg_match('/cynus t1/i', $useragent)) {
-            return new Mobistel\MobistelCynusT1($useragent, []);
+            return new Mobistel\MobistelCynusT1($useragent);
         }
 
         if (preg_match('/cynus f5/i', $useragent)) {
-            return new Mobistel\MobistelCynusF5($useragent, []);
+            return new Mobistel\MobistelCynusF5($useragent);
         }
 
         if (preg_match('/cynus f4/i', $useragent)) {
-            return new Mobistel\MobistelCynusF4($useragent, []);
+            return new Mobistel\MobistelCynusF4($useragent);
         }
 
         if (preg_match('/cynus f3/i', $useragent)) {
-            return new Mobistel\MobistelCynusF3($useragent, []);
+            return new Mobistel\MobistelCynusF3($useragent);
         }
 
         if (preg_match('/cynus e1/i', $useragent)) {
-            return new Mobistel\MobistelCynusE1($useragent, []);
+            return new Mobistel\MobistelCynusE1($useragent);
         }
 
-        return new Mobistel\Mobistel($useragent, []);
+        return new Mobistel\Mobistel($useragent);
     }
 }

@@ -52,9 +52,9 @@ class EpadFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/p7901a/i', $useragent)) {
-            return new Epad\EpadP7901a($useragent, []);
+            return new Epad\EpadP7901a($useragent);
         }
 
-        return new Epad\Epad($useragent, []);
+        return new Epad\Epad($useragent);
     }
 }

@@ -52,9 +52,9 @@ class WopadFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Q10S/', $useragent)) {
-            return new Wopad\WopadQ10s($useragent, []);
+            return new Wopad\WopadQ10s($useragent);
         }
 
-        return new Wopad\Wopad($useragent, []);
+        return new Wopad\Wopad($useragent);
     }
 }

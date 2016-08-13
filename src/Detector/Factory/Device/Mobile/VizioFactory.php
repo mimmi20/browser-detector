@@ -52,9 +52,9 @@ class VizioFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/VTAB1008/', $useragent)) {
-            return new Vizio\VizioVtab1008($useragent, []);
+            return new Vizio\VizioVtab1008($useragent);
         }
 
-        return new Vizio\Vizio($useragent, []);
+        return new Vizio\Vizio($useragent);
     }
 }

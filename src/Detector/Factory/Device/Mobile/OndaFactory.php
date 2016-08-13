@@ -52,9 +52,9 @@ class OndaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/V989/i', $useragent)) {
-            return new Onda\OndaV989($useragent, []);
+            return new Onda\OndaV989($useragent);
         }
 
-        return new Onda\Onda($useragent, []);
+        return new Onda\Onda($useragent);
     }
 }

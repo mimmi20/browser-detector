@@ -52,9 +52,9 @@ class LogicpdFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/(zoom2|nookcolor)/i', $useragent)) {
-            return new Logicpd\Zoom2($useragent, []);
+            return new Logicpd\Zoom2($useragent);
         }
 
-        return new Logicpd\Logicpd($useragent, []);
+        return new Logicpd\Logicpd($useragent);
     }
 }

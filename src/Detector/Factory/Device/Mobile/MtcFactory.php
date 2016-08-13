@@ -52,13 +52,13 @@ class MtcFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SMART Run/', $useragent)) {
-            return new Mtc\MtcSmartRun($useragent, []);
+            return new Mtc\MtcSmartRun($useragent);
         }
 
         if (preg_match('/982/', $useragent)) {
-            return new Mtc\Mtc982($useragent, []);
+            return new Mtc\Mtc982($useragent);
         }
 
-        return new Mtc\Mtc($useragent, []);
+        return new Mtc\Mtc($useragent);
     }
 }

@@ -52,17 +52,17 @@ class WexlerFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TAB A742/', $useragent)) {
-            return new Wexler\WexlerTabA742($useragent, []);
+            return new Wexler\WexlerTabA742($useragent);
         }
 
         if (preg_match('/TAB\-7T/', $useragent)) {
-            return new Wexler\WexlerTab7t($useragent, []);
+            return new Wexler\WexlerTab7t($useragent);
         }
 
         if (preg_match('/TAB7iD/', $useragent)) {
-            return new Wexler\WexlerTab7id($useragent, []);
+            return new Wexler\WexlerTab7id($useragent);
         }
 
-        return new Wexler\Wexler($useragent, []);
+        return new Wexler\Wexler($useragent);
     }
 }

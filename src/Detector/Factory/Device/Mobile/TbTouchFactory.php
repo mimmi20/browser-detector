@@ -52,9 +52,9 @@ class TbTouchFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ignis 8/i', $useragent)) {
-            return new TbTouch\TbTouchIgnis8($useragent, []);
+            return new TbTouch\TbTouchIgnis8($useragent);
         }
 
-        return new TbTouch\TbTouch($useragent, []);
+        return new TbTouch\TbTouch($useragent);
     }
 }

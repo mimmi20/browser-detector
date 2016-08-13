@@ -80,7 +80,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     $endpos = strpos($factoryContent, "        }\n\n        return new Browser\\UnknownBrowser(\$useragent");
 
     if (false !== $endpos) {
-        $newCall = 'return new Browser\\' . $classBasename . '($useragent, []);';
+        $newCall = 'return new Browser\\' . $classBasename . '($useragent);';
 
         $factoryContent = substr_replace($factoryContent, ' elseif (preg_match(\'/' . $classBasename . '/\', $useragent)) {' . "\n" . '            ' . $newCall . "\n" . '        }', $endpos + 9, 0);
         file_put_contents($factoryFile, $factoryContent);

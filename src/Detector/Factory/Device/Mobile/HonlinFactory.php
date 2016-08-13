@@ -52,9 +52,9 @@ class HonlinFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PC1088/i', $useragent)) {
-            return new Honlin\HonlinPc1088($useragent, []);
+            return new Honlin\HonlinPc1088($useragent);
         }
 
-        return new Honlin\Honlin($useragent, []);
+        return new Honlin\Honlin($useragent);
     }
 }

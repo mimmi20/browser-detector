@@ -52,9 +52,9 @@ class UmiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/UMI\_X2/', $useragent)) {
-            return new Umi\UmiX2($useragent, []);
+            return new Umi\UmiX2($useragent);
         }
 
-        return new Umi\Umi($useragent, []);
+        return new Umi\Umi($useragent);
     }
 }

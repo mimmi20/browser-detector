@@ -52,13 +52,13 @@ class LencoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/cooltab\-70/i', $useragent)) {
-            return new Lenco\LencoCoolTab70($useragent, []);
+            return new Lenco\LencoCoolTab70($useragent);
         }
 
         if (preg_match('/lencm900hz/i', $useragent)) {
-            return new Lenco\LencoCm900Hz($useragent, []);
+            return new Lenco\LencoCm900Hz($useragent);
         }
 
-        return new Lenco\Lenco($useragent, []);
+        return new Lenco\Lenco($useragent);
     }
 }

@@ -52,13 +52,13 @@ class KianoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/elegance 8 3g/i', $useragent)) {
-            return new Kiano\KianoElegance83g($useragent, []);
+            return new Kiano\KianoElegance83g($useragent);
         }
 
         if (preg_match('/elegance/i', $useragent)) {
-            return new Kiano\KianoElegance($useragent, []);
+            return new Kiano\KianoElegance($useragent);
         }
 
-        return new Kiano\Kiano($useragent, []);
+        return new Kiano\Kiano($useragent);
     }
 }

@@ -52,9 +52,9 @@ class HdcFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Galaxy S3 EX/i', $useragent)) {
-            return new Hdc\HdcI9300GalaxyS3Ex($useragent, []);
+            return new Hdc\HdcI9300GalaxyS3Ex($useragent);
         }
 
-        return new Hdc\Hdc($useragent, []);
+        return new Hdc\Hdc($useragent);
     }
 }

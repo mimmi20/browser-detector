@@ -52,9 +52,9 @@ class NvsblFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/P4D SIRIUS/', $useragent)) {
-            return new Nvsbl\P4dSirius($useragent, []);
+            return new Nvsbl\P4dSirius($useragent);
         }
 
-        return new Nvsbl\Nvsbl($useragent, []);
+        return new Nvsbl\Nvsbl($useragent);
     }
 }

@@ -52,13 +52,13 @@ class ImpressionFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/impad 9708/i', $useragent)) {
-            return new Impression\ImpressionImpad9708($useragent, []);
+            return new Impression\ImpressionImpad9708($useragent);
         }
 
         if (preg_match('/impad6213m\_v2/i', $useragent)) {
-            return new Impression\ImpressionImpad6213Mv2($useragent, []);
+            return new Impression\ImpressionImpad6213Mv2($useragent);
         }
 
-        return new Impression\Impression($useragent, []);
+        return new Impression\Impression($useragent);
     }
 }

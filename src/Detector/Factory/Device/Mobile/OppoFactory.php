@@ -52,13 +52,13 @@ class OppoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/x909/i', $useragent)) {
-            return new Oppo\OppoX909($useragent, []);
+            return new Oppo\OppoX909($useragent);
         }
 
         if (preg_match('/r813t/i', $useragent)) {
-            return new Oppo\OppoR813T($useragent, []);
+            return new Oppo\OppoR813T($useragent);
         }
 
-        return new Oppo\Oppo($useragent, []);
+        return new Oppo\Oppo($useragent);
     }
 }

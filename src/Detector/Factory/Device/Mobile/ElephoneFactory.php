@@ -52,9 +52,9 @@ class ElephoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/P3000/', $useragent)) {
-            return new Elephone\ElephoneP3000($useragent, []);
+            return new Elephone\ElephoneP3000($useragent);
         }
 
-        return new Elephone\Elephone($useragent, []);
+        return new Elephone\Elephone($useragent);
     }
 }

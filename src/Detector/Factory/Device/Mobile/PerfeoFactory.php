@@ -52,9 +52,9 @@ class PerfeoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/7007HD/', $useragent)) {
-            return new Perfeo\Perfeo7007Hd($useragent, []);
+            return new Perfeo\Perfeo7007Hd($useragent);
         }
 
-        return new Perfeo\Perfeo($useragent, []);
+        return new Perfeo\Perfeo($useragent);
     }
 }

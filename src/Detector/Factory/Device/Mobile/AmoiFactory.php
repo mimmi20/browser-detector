@@ -52,9 +52,9 @@ class AmoiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/n820/i', $useragent)) {
-            return new Amoi\AmoiN820($useragent, []);
+            return new Amoi\AmoiN820($useragent);
         }
 
-        return new Amoi\Amoi($useragent, []);
+        return new Amoi\Amoi($useragent);
     }
 }

@@ -52,13 +52,13 @@ class NgmFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Miracle/', $useragent)) {
-            return new Ngm\NgmMiracle($useragent, []);
+            return new Ngm\NgmMiracle($useragent);
         }
 
         if (preg_match('/Dynamic Racing/', $useragent)) {
-            return new Ngm\NgmDynamicRacingGp($useragent, []);
+            return new Ngm\NgmDynamicRacingGp($useragent);
         }
 
-        return new Ngm\Ngm($useragent, []);
+        return new Ngm\Ngm($useragent);
     }
 }

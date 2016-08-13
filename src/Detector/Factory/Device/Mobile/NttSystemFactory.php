@@ -52,9 +52,9 @@ class NttSystemFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/NTT 611/', $useragent)) {
-            return new NttSystem\NttSystemNtt611101($useragent, []);
+            return new NttSystem\NttSystemNtt611101($useragent);
         }
 
-        return new NttSystem\NttSystem($useragent, []);
+        return new NttSystem\NttSystem($useragent);
     }
 }

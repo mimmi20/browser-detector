@@ -52,9 +52,9 @@ class MitashiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/AP\-105/', $useragent)) {
-            return new Mitashi\MitashiAp105($useragent, []);
+            return new Mitashi\MitashiAp105($useragent);
         }
 
-        return new Mitashi\Mitashi($useragent, []);
+        return new Mitashi\Mitashi($useragent);
     }
 }

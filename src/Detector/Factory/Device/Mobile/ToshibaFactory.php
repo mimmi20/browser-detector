@@ -52,37 +52,37 @@ class ToshibaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Toshiba\/TG01/', $useragent)) {
-            return new Toshiba\ToshibaTg01($useragent, []);
+            return new Toshiba\ToshibaTg01($useragent);
         }
 
         if (preg_match('/(FOLIO_AND_A|TOSHIBA_AC_AND_AZ)/', $useragent)) {
-            return new Toshiba\ToshibaFolio100($useragent, []);
+            return new Toshiba\ToshibaFolio100($useragent);
         }
 
         if (preg_match('/folio100/i', $useragent)) {
-            return new Toshiba\ToshibaFolio100($useragent, []);
+            return new Toshiba\ToshibaFolio100($useragent);
         }
 
         if (preg_match('/AT300SE/', $useragent)) {
-            return new Toshiba\ToshibaAt300SE($useragent, []);
+            return new Toshiba\ToshibaAt300SE($useragent);
         }
 
         if (preg_match('/AT300/', $useragent)) {
-            return new Toshiba\ToshibaAt300($useragent, []);
+            return new Toshiba\ToshibaAt300($useragent);
         }
 
         if (preg_match('/AT200/', $useragent)) {
-            return new Toshiba\ToshibaAt200($useragent, []);
+            return new Toshiba\ToshibaAt200($useragent);
         }
 
         if (preg_match('/AT100/', $useragent)) {
-            return new Toshiba\ToshibaAt100($useragent, []);
+            return new Toshiba\ToshibaAt100($useragent);
         }
 
         if (preg_match('/AT10\-A/', $useragent)) {
-            return new Toshiba\ToshibaAt10a($useragent, []);
+            return new Toshiba\ToshibaAt10a($useragent);
         }
 
-        return new Toshiba\Toshiba($useragent, []);
+        return new Toshiba\Toshiba($useragent);
     }
 }

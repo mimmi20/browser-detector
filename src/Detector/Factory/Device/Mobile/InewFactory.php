@@ -52,9 +52,9 @@ class InewFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ V3 /', $useragent)) {
-            return new Inew\InewV3($useragent, []);
+            return new Inew\InewV3($useragent);
         }
 
-        return new Inew\Inew($useragent, []);
+        return new Inew\Inew($useragent);
     }
 }

@@ -52,9 +52,9 @@ class UnitedFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MT6515M/', $useragent)) {
-            return new United\UnitedMt6515m($useragent, []);
+            return new United\UnitedMt6515m($useragent);
         }
 
-        return new United\United($useragent, []);
+        return new United\United($useragent);
     }
 }

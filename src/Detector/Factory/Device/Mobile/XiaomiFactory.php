@@ -52,33 +52,33 @@ class XiaomiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MI 3W/', $useragent)) {
-            return new Xiaomi\XiaomiMi3w($useragent, []);
+            return new Xiaomi\XiaomiMi3w($useragent);
         }
 
         if (preg_match('/MI 2A/', $useragent)) {
-            return new Xiaomi\XiaomiMi2a($useragent, []);
+            return new Xiaomi\XiaomiMi2a($useragent);
         }
 
         if (preg_match('/MI 2/', $useragent)) {
-            return new Xiaomi\XiaomiMi2($useragent, []);
+            return new Xiaomi\XiaomiMi2($useragent);
         }
 
         if (preg_match('/HM NOTE 1LTETD/', $useragent)) {
-            return new Xiaomi\XiaomiHmnote1ltetd($useragent, []);
+            return new Xiaomi\XiaomiHmnote1ltetd($useragent);
         }
 
         if (preg_match('/HM NOTE 1LTE/', $useragent)) {
-            return new Xiaomi\XiaomiHmnote1lte($useragent, []);
+            return new Xiaomi\XiaomiHmnote1lte($useragent);
         }
 
         if (preg_match('/HM\_1SW/', $useragent)) {
-            return new Xiaomi\XiaomiHm1sw($useragent, []);
+            return new Xiaomi\XiaomiHm1sw($useragent);
         }
 
         if (preg_match('/HM 1SC/', $useragent)) {
-            return new Xiaomi\XiaomiHm1sc($useragent, []);
+            return new Xiaomi\XiaomiHm1sc($useragent);
         }
 
-        return new Xiaomi\Xiaomi($useragent, []);
+        return new Xiaomi\Xiaomi($useragent);
     }
 }

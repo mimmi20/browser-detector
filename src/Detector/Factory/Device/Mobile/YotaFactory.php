@@ -52,9 +52,9 @@ class YotaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/yd201/i', $useragent)) {
-            return new Yota\YotaYd201($useragent, []);
+            return new Yota\YotaYd201($useragent);
         }
 
-        return new Yota\Yota($useragent, []);
+        return new Yota\Yota($useragent);
     }
 }

@@ -52,9 +52,9 @@ class ImobileFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/i\-STYLE 7\.7 DTV/', $useragent)) {
-            return new Imobile\ImobileIstyle77Dtv($useragent, []);
+            return new Imobile\ImobileIstyle77Dtv($useragent);
         }
 
-        return new Imobile\Imobile($useragent, []);
+        return new Imobile\Imobile($useragent);
     }
 }

@@ -52,37 +52,37 @@ class CatSoundFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/CatNova8/i', $useragent)) {
-            return new CatSound\CatNova8($useragent, []);
+            return new CatSound\CatNova8($useragent);
         }
 
         if (preg_match('/nova/i', $useragent)) {
-            return new CatSound\CatNova($useragent, []);
+            return new CatSound\CatNova($useragent);
         }
 
         if (preg_match('/Cat Tablet Galactica X/i', $useragent)) {
-            return new CatSound\CatGalacticaX($useragent, []);
+            return new CatSound\CatGalacticaX($useragent);
         }
 
         if (preg_match('/StarGate/i', $useragent)) {
-            return new CatSound\CatStarGate($useragent, []);
+            return new CatSound\CatStarGate($useragent);
         }
 
         if (preg_match('/Cat Tablet PHOENIX/i', $useragent)) {
-            return new CatSound\CatTabletPhoenix($useragent, []);
+            return new CatSound\CatTabletPhoenix($useragent);
         }
 
         if (preg_match('/Cat Tablet/i', $useragent)) {
-            return new CatSound\CatTablet($useragent, []);
+            return new CatSound\CatTablet($useragent);
         }
 
         if (preg_match('/Tablet\-PC\-4/i', $useragent)) {
-            return new CatSound\TabletPc4($useragent, []);
+            return new CatSound\TabletPc4($useragent);
         }
 
         if (preg_match('/Kinder\-Tablet/i', $useragent)) {
-            return new CatSound\KinderTablet($useragent, []);
+            return new CatSound\KinderTablet($useragent);
         }
 
-        return new CatSound\CatSound($useragent, []);
+        return new CatSound\CatSound($useragent);
     }
 }

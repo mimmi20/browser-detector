@@ -52,9 +52,9 @@ class VivoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Y22/', $useragent)) {
-            return new Vivo\VivoY22($useragent, []);
+            return new Vivo\VivoY22($useragent);
         }
 
-        return new Vivo\Vivo($useragent, []);
+        return new Vivo\Vivo($useragent);
     }
 }

@@ -52,17 +52,17 @@ class OlivettiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/OP111/', $useragent)) {
-            return new Olivetti\OP111($useragent, []);
+            return new Olivetti\OP111($useragent);
         }
 
         if (preg_match('/OP110/', $useragent)) {
-            return new Olivetti\OP110($useragent, []);
+            return new Olivetti\OP110($useragent);
         }
 
         if (preg_match('/OP070/', $useragent)) {
-            return new Olivetti\OP070($useragent, []);
+            return new Olivetti\OP070($useragent);
         }
 
-        return new Olivetti\Olivetti($useragent, []);
+        return new Olivetti\Olivetti($useragent);
     }
 }

@@ -52,9 +52,9 @@ class ReellexFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/tab\-97e\-01/i', $useragent)) {
-            return new Reellex\ReellexTab97e01($useragent, []);
+            return new Reellex\ReellexTab97e01($useragent);
         }
 
-        return new Reellex\Reellex($useragent, []);
+        return new Reellex\Reellex($useragent);
     }
 }

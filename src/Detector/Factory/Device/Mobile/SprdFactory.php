@@ -52,17 +52,17 @@ class SprdFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SPHS\_on\_Hsdroid/i', $useragent)) {
-            return new Sprd\SprdSphs($useragent, []);
+            return new Sprd\SprdSphs($useragent);
         }
 
         if (preg_match('/GT\-A7100/i', $useragent)) {
-            return new Sprd\SprdGtA7100($useragent, []);
+            return new Sprd\SprdGtA7100($useragent);
         }
 
         if (preg_match('/B51\+/i', $useragent)) {
-            return new Sprd\SprdB51plus($useragent, []);
+            return new Sprd\SprdB51plus($useragent);
         }
 
-        return new Sprd\Sprd($useragent, []);
+        return new Sprd\Sprd($useragent);
     }
 }

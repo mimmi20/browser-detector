@@ -52,17 +52,17 @@ class NecFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/N905i/i', $useragent)) {
-            return new Nec\NecN905i($useragent, []);
+            return new Nec\NecN905i($useragent);
         }
 
         if (preg_match('/N705i/i', $useragent)) {
-            return new Nec\NecN705i($useragent, []);
+            return new Nec\NecN705i($useragent);
         }
 
         if (preg_match('/0912/i', $useragent)) {
-            return new Nec\Nec0912($useragent, []);
+            return new Nec\Nec0912($useragent);
         }
 
-        return new Nec\Nec($useragent, []);
+        return new Nec\Nec($useragent);
     }
 }

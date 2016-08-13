@@ -71,6 +71,6 @@ class DeviceFactory implements FactoryInterface
             return DesktopFactory::detect($useragent);
         }
 
-        return new UnknownDevice($useragent, []);
+        return new UnknownDevice($useragent);
     }
 }

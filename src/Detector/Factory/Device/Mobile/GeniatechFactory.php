@@ -52,9 +52,9 @@ class GeniatechFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MX Enjoy TV BOX/', $useragent)) {
-            return new Geniatech\GeniatechMxEnjoyTvBox($useragent, []);
+            return new Geniatech\GeniatechMxEnjoyTvBox($useragent);
         }
 
-        return new Geniatech\Geniatech($useragent, []);
+        return new Geniatech\Geniatech($useragent);
     }
 }

@@ -52,9 +52,9 @@ class PegatronFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/chagall/i', $useragent)) {
-            return new Pegatron\PegatronChagall($useragent, []);
+            return new Pegatron\PegatronChagall($useragent);
         }
 
-        return new Pegatron\Pegatron($useragent, []);
+        return new Pegatron\Pegatron($useragent);
     }
 }

@@ -52,49 +52,49 @@ class TrekStorFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/VT10416\-2/', $useragent)) {
-            return new TrekStor\TrekStorVt104162($useragent, []);
+            return new TrekStor\TrekStorVt104162($useragent);
         }
 
         if (preg_match('/VT10416\-1/', $useragent)) {
-            return new TrekStor\TrekStorVt10416($useragent, []);
+            return new TrekStor\TrekStorVt10416($useragent);
         }
 
         if (preg_match('/(ST701041|SurfTab\_7\.0)/', $useragent)) {
-            return new TrekStor\TrekStorSt701041($useragent, []);
+            return new TrekStor\TrekStorSt701041($useragent);
         }
 
         if (preg_match('/ST10216\-2/', $useragent)) {
-            return new TrekStor\TrekStorSt102162($useragent, []);
+            return new TrekStor\TrekStorSt102162($useragent);
         }
 
         if (preg_match('/ST80216/', $useragent)) {
-            return new TrekStor\TrekStorSt80216($useragent, []);
+            return new TrekStor\TrekStorSt80216($useragent);
         }
 
         if (preg_match('/ST80208/', $useragent)) {
-            return new TrekStor\TrekStorSt80208($useragent, []);
+            return new TrekStor\TrekStorSt80208($useragent);
         }
 
         if (preg_match('/ST70104/', $useragent)) {
-            return new TrekStor\TrekStorSt70104($useragent, []);
+            return new TrekStor\TrekStorSt70104($useragent);
         }
 
         if (preg_match('/ST10416\-1/', $useragent)) {
-            return new TrekStor\TrekStorSt10416($useragent, []);
+            return new TrekStor\TrekStorSt10416($useragent);
         }
 
         if (preg_match('/ST10216\-1/', $useragent)) {
-            return new TrekStor\TrekStorSt10216($useragent, []);
+            return new TrekStor\TrekStorSt10216($useragent);
         }
 
         if (preg_match('/trekstor_liro_color/', $useragent)) {
-            return new TrekStor\TrekStorLiroColor($useragent, []);
+            return new TrekStor\TrekStorLiroColor($useragent);
         }
 
         if (preg_match('/breeze 10\.1 quad/', $useragent)) {
-            return new TrekStor\TrekStorBreeze10Quad($useragent, []);
+            return new TrekStor\TrekStorBreeze10Quad($useragent);
         }
 
-        return new TrekStor\TrekStor($useragent, []);
+        return new TrekStor\TrekStor($useragent);
     }
 }

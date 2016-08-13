@@ -32,10 +32,10 @@
 namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use UaDeviceType;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
  * @category  BrowserDetector

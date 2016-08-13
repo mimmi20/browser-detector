@@ -52,25 +52,25 @@ class ThlFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W200/', $useragent)) {
-            return new Thl\ThlW200($useragent, []);
+            return new Thl\ThlW200($useragent);
         }
 
         if (preg_match('/W100/', $useragent)) {
-            return new Thl\ThlW100($useragent, []);
+            return new Thl\ThlW100($useragent);
         }
 
         if (preg_match('/W8\_beyond/', $useragent)) {
-            return new Thl\ThlW8Beyond($useragent, []);
+            return new Thl\ThlW8Beyond($useragent);
         }
 
         if (preg_match('/ThL W8/', $useragent)) {
-            return new Thl\ThlW8($useragent, []);
+            return new Thl\ThlW8($useragent);
         }
 
         if (preg_match('/T6S/', $useragent)) {
-            return new Thl\ThlT6s($useragent, []);
+            return new Thl\ThlT6s($useragent);
         }
 
-        return new Thl\Thl($useragent, []);
+        return new Thl\Thl($useragent);
     }
 }

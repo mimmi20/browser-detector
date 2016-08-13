@@ -31,6 +31,7 @@
 
 namespace BrowserDetector\Detector\Factory\Device;
 
+use BrowserDetector\Detector\Device\Tv\AndoerCx919;
 use BrowserDetector\Detector\Device\Tv\DlinkDsm380;
 use BrowserDetector\Detector\Device\Tv\GeneralTv;
 use BrowserDetector\Detector\Device\Tv\GoogleTv;
@@ -73,93 +74,93 @@ class TvFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/xbox one/i', $useragent)) {
-            return new MicrosoftXboxOne($useragent, []);
+            return new MicrosoftXboxOne($useragent);
         }
 
         if (preg_match('/xbox/i', $useragent)) {
-            return new MicrosoftXbox($useragent, []);
+            return new MicrosoftXbox($useragent);
         }
 
         if (preg_match('/dlink\.dsm380/i', $useragent)) {
-            return new DlinkDsm380($useragent, []);
+            return new DlinkDsm380($useragent);
         }
 
         if (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
-            return new SonyNszGs7Gx70($useragent, []);
+            return new SonyNszGs7Gx70($useragent);
         }
 
         if (preg_match('/googletv/i', $useragent)) {
-            return new GoogleTv($useragent, []);
+            return new GoogleTv($useragent);
         }
 
         if (preg_match('/idl\-6651n/i', $useragent)) {
-            return new Idl6651n($useragent, []);
+            return new Idl6651n($useragent);
         }
 
         if (preg_match('/loewe; sl121/i', $useragent)) {
-            return new LoeweSl121($useragent, []);
+            return new LoeweSl121($useragent);
         }
 
         if (preg_match('/loewe; sl150/i', $useragent)) {
-            return new LoeweSl150($useragent, []);
+            return new LoeweSl150($useragent);
         }
 
         if (preg_match('/NETRANGEMMH/', $useragent)) {
-            return new NetrangeMmh($useragent, []);
+            return new NetrangeMmh($useragent);
         }
 
         if (preg_match('/viera/i', $useragent)) {
-            return new PanasonicViera($useragent, []);
+            return new PanasonicViera($useragent);
         }
 
         if (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
-            return new PhilipsTv($useragent, []);
+            return new PhilipsTv($useragent);
         }
 
         if (preg_match('/SMART\-TV/', $useragent)) {
-            return new SamsungSmartTv($useragent, []);
+            return new SamsungSmartTv($useragent);
         }
 
         if (preg_match('/KDL32HX755/', $useragent)) {
-            return new SonyKdl32hx755($useragent, []);
+            return new SonyKdl32hx755($useragent);
         }
 
         if (preg_match('/KDL37EX720/', $useragent)) {
-            return new SonyKdl37ex720($useragent, []);
+            return new SonyKdl37ex720($useragent);
         }
 
         if (preg_match('/KDL40EX720/', $useragent)) {
-            return new SonyKdl40ex720($useragent, []);
+            return new SonyKdl40ex720($useragent);
         }
 
         if (preg_match('/KDL50W815B/', $useragent)) {
-            return new SonyKdl50w815b($useragent, []);
+            return new SonyKdl50w815b($useragent);
         }
 
         if (preg_match('/SonyDTV115/', $useragent)) {
-            return new SonyDtv115($useragent, []);
+            return new SonyDtv115($useragent);
         }
 
         if (preg_match('/technisat digicorder isio s/i', $useragent)) {
-            return new TechniSatDigiCorderIsioS($useragent, []);
+            return new TechniSatDigiCorderIsioS($useragent);
         }
 
         if (preg_match('/technisat digit isio s/i', $useragent)) {
-            return new TechniSatDigitIsioS($useragent, []);
+            return new TechniSatDigitIsioS($useragent);
         }
 
         if (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
-            return new TechniSatMultyVisionIsio($useragent, []);
+            return new TechniSatMultyVisionIsio($useragent);
         }
 
         if (preg_match('/AQUOSBrowser/', $useragent)) {
-            return new SharpAquosTv($useragent, []);
+            return new SharpAquosTv($useragent);
         }
 
         if (preg_match('/CX919/', $useragent)) {
-            return new AndoerCx919($useragent, []);
+            return new AndoerCx919($useragent);
         }
 
-        return new GeneralTv($useragent, []);
+        return new GeneralTv($useragent);
     }
 }

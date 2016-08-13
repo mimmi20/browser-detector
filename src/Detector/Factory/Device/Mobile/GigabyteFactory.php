@@ -52,13 +52,13 @@ class GigabyteFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Rio R1/', $useragent)) {
-            return new Gigabyte\GigabyteRioR1($useragent, []);
+            return new Gigabyte\GigabyteRioR1($useragent);
         }
 
         if (preg_match('/GSmart\_T4/', $useragent)) {
-            return new Gigabyte\GigabyteGsmartt4($useragent, []);
+            return new Gigabyte\GigabyteGsmartt4($useragent);
         }
 
-        return new Gigabyte\Gigabyte($useragent, []);
+        return new Gigabyte\Gigabyte($useragent);
     }
 }

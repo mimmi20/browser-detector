@@ -52,9 +52,9 @@ class HtmFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MT\-GT\-A9500/i', $useragent)) {
-            return new Htm\HtmMtGtA9500($useragent, []);
+            return new Htm\HtmMtGtA9500($useragent);
         }
 
-        return new Htm\Htm($useragent, []);
+        return new Htm\Htm($useragent);
     }
 }

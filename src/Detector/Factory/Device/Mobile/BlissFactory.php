@@ -52,9 +52,9 @@ class BlissFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Pad B9712KB/', $useragent)) {
-            return new Bliss\BlissPadB9712kb($useragent, []);
+            return new Bliss\BlissPadB9712kb($useragent);
         }
 
-        return new Bliss\Bliss($useragent, []);
+        return new Bliss\Bliss($useragent);
     }
 }

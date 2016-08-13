@@ -52,93 +52,93 @@ class OdysFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/xtreme/i', $useragent)) {
-            return new Odys\OdysXtreme($useragent, []);
+            return new Odys\OdysXtreme($useragent);
         }
 
         if (preg_match('/XPRESS PRO/', $useragent)) {
-            return new Odys\OdysXpressPro($useragent, []);
+            return new Odys\OdysXpressPro($useragent);
         }
 
         if (preg_match('/xpress/i', $useragent)) {
-            return new Odys\OdysXpress($useragent, []);
+            return new Odys\OdysXpress($useragent);
         }
 
         if (preg_match('/(XENO10|XENO 10)/', $useragent)) {
-            return new Odys\OdysXeno10($useragent, []);
+            return new Odys\OdysXeno10($useragent);
         }
 
         if (preg_match('/XelioPT2Pro/', $useragent)) {
-            return new Odys\OdysXelioPT2Pro($useragent, []);
+            return new Odys\OdysXelioPT2Pro($useragent);
         }
 
         if (preg_match('/(Xelio10Pro|Xelio 10 Pro)/i', $useragent)) {
-            return new Odys\OdysXelio10Pro($useragent, []);
+            return new Odys\OdysXelio10Pro($useragent);
         }
 
         if (preg_match('/(XELIO10EXTREME|Xelio 10 Extreme)/', $useragent)) {
-            return new Odys\OdysXelio10Extreme($useragent, []);
+            return new Odys\OdysXelio10Extreme($useragent);
         }
 
         if (preg_match('/(XELIO7PRO|Xelio 7 pro)/', $useragent)) {
-            return new Odys\OdysXelio7Pro($useragent, []);
+            return new Odys\OdysXelio7Pro($useragent);
         }
 
         if (preg_match('/xelio/i', $useragent)) {
-            return new Odys\OdysXelio($useragent, []);
+            return new Odys\OdysXelio($useragent);
         }
 
         if (preg_match('/UNO\_X10/', $useragent)) {
-            return new Odys\OdysUnoX10($useragent, []);
+            return new Odys\OdysUnoX10($useragent);
         }
 
         if (preg_match('/Space/', $useragent)) {
-            return new Odys\OdysSpace($useragent, []);
+            return new Odys\OdysSpace($useragent);
         }
 
         if (preg_match('/sky plus/i', $useragent)) {
-            return new Odys\OdysSkyPlus3g($useragent, []);
+            return new Odys\OdysSkyPlus3g($useragent);
         }
 
         if (preg_match('/ODYS\-Q/', $useragent)) {
-            return new Odys\OdysQ($useragent, []);
+            return new Odys\OdysQ($useragent);
         }
 
         if (preg_match('/noon/i', $useragent)) {
-            return new Odys\OdysNoon($useragent, []);
+            return new Odys\OdysNoon($useragent);
         }
 
         if (preg_match('/ADM816HC/', $useragent)) {
-            return new Odys\OdysNeoX($useragent, []);
+            return new Odys\OdysNeoX($useragent);
         }
 
         if (preg_match('/ADM816KC/', $useragent)) {
-            return new Odys\OdysNeoS8Plus($useragent, []);
+            return new Odys\OdysNeoS8Plus($useragent);
         }
 
         if (preg_match('/NEO\_QUAD10/', $useragent)) {
-            return new Odys\OdysNeoQuad10($useragent, []);
+            return new Odys\OdysNeoQuad10($useragent);
         }
 
         if (preg_match('/loox plus/i', $useragent)) {
-            return new Odys\OdysLooxPlus($useragent, []);
+            return new Odys\OdysLooxPlus($useragent);
         }
 
         if (preg_match('/loox/i', $useragent)) {
-            return new Odys\OdysLoox($useragent, []);
+            return new Odys\OdysLoox($useragent);
         }
 
         if (preg_match('/IEOS_QUAD/', $useragent)) {
-            return new Odys\OdysIeosQuad($useragent, []);
+            return new Odys\OdysIeosQuad($useragent);
         }
 
         if (preg_match('/genesis/i', $useragent)) {
-            return new Odys\OdysGenesis($useragent, []);
+            return new Odys\OdysGenesis($useragent);
         }
 
         if (preg_match('/evo/i', $useragent)) {
-            return new Odys\OdysEvo($useragent, []);
+            return new Odys\OdysEvo($useragent);
         }
 
-        return new Odys\Odys($useragent, []);
+        return new Odys\Odys($useragent);
     }
 }

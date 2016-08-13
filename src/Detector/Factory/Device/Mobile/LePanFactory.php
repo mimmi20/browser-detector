@@ -52,13 +52,13 @@ class LePanFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/LePanII/', $useragent)) {
-            return new LePan\LePanIi($useragent, []);
+            return new LePan\LePanIi($useragent);
         }
 
         if (preg_match('/LePan/', $useragent)) {
-            return new LePan\LePan($useragent, []);
+            return new LePan\LePan($useragent);
         }
 
-        return new LePan\GenericLePan($useragent, []);
+        return new LePan\GenericLePan($useragent);
     }
 }

@@ -52,9 +52,9 @@ class AdspecFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/adtab 7 lite/i', $useragent)) {
-            return new Adspec\AdspecAdTab7Lite($useragent, []);
+            return new Adspec\AdspecAdTab7Lite($useragent);
         }
 
-        return new Adspec\Adspec($useragent, []);
+        return new Adspec\Adspec($useragent);
     }
 }

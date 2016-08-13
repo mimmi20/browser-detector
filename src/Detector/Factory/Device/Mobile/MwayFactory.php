@@ -52,9 +52,9 @@ class MwayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MD948G/', $useragent)) {
-            return new Mway\MwayMd948g($useragent, []);
+            return new Mway\MwayMd948g($useragent);
         }
 
-        return new Mway\Mway($useragent, []);
+        return new Mway\Mway($useragent);
     }
 }

@@ -52,13 +52,13 @@ class WonderMediaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/WM8850/', $useragent)) {
-            return new WonderMedia\WonderMediaWm8850($useragent, []);
+            return new WonderMedia\WonderMediaWm8850($useragent);
         }
 
         if (preg_match('/WM8650/', $useragent)) {
-            return new WonderMedia\WonderMediaWm8650($useragent, []);
+            return new WonderMedia\WonderMediaWm8650($useragent);
         }
 
-        return new WonderMedia\WonderMedia($useragent, []);
+        return new WonderMedia\WonderMedia($useragent);
     }
 }

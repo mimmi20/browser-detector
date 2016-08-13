@@ -52,21 +52,21 @@ class IconBitFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/nt\-3710s/i', $useragent)) {
-            return new IconBit\IconBitNt3710s($useragent, []);
+            return new IconBit\IconBitNt3710s($useragent);
         }
 
         if (preg_match('/nt\-3601p/i', $useragent)) {
-            return new IconBit\IconBitNt3601p($useragent, []);
+            return new IconBit\IconBitNt3601p($useragent);
         }
 
         if (preg_match('/nt\-1002t/i', $useragent)) {
-            return new IconBit\IconBitNt1002t($useragent, []);
+            return new IconBit\IconBitNt1002t($useragent);
         }
 
         if (preg_match('/nt\-1001t/i', $useragent)) {
-            return new IconBit\IconBitNt1001t($useragent, []);
+            return new IconBit\IconBitNt1001t($useragent);
         }
 
-        return new IconBit\IconBit($useragent, []);
+        return new IconBit\IconBit($useragent);
     }
 }

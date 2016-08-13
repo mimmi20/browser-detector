@@ -31,8 +31,8 @@
 
 namespace BrowserDetector\Detector\Factory;
 
-use UaResult\Company\Company;
 use BrowserDetector\Detector\Os;
+use UaResult\Company\Company;
 
 /**
  * Browser detection class

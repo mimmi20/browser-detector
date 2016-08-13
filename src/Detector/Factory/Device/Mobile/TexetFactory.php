@@ -52,29 +52,29 @@ class TexetFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/x\-pad ix 7 3g/i', $useragent)) {
-            return new Texet\TexetTm7068($useragent, []);
+            return new Texet\TexetTm7068($useragent);
         }
 
         if (preg_match('/x\-pad lite 7\.1/i', $useragent)) {
-            return new Texet\TexetTm7066($useragent, []);
+            return new Texet\TexetTm7066($useragent);
         }
 
         if (preg_match('/x\-pad style 7\.1 3g/i', $useragent)) {
-            return new Texet\TexetTm7058($useragent, []);
+            return new Texet\TexetTm7058($useragent);
         }
 
         if (preg_match('/x\-navi/i', $useragent)) {
-            return new Texet\TexetTm4672($useragent, []);
+            return new Texet\TexetTm4672($useragent);
         }
 
         if (preg_match('/tm\-3204r/i', $useragent)) {
-            return new Texet\TexetTm3204r($useragent, []);
+            return new Texet\TexetTm3204r($useragent);
         }
 
         if (preg_match('/navipad tm\-7055hd 3g/i', $useragent)) {
-            return new Texet\TexetNaviPad($useragent, []);
+            return new Texet\TexetNaviPad($useragent);
         }
 
-        return new Texet\Texet($useragent, []);
+        return new Texet\Texet($useragent);
     }
 }

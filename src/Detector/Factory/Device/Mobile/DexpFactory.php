@@ -52,9 +52,9 @@ class DexpFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Ursus 9EV 3G/', $useragent)) {
-            return new Dexp\DexpUrsus9ev3g($useragent, []);
+            return new Dexp\DexpUrsus9ev3g($useragent);
         }
 
-        return new Dexp\Dexp($useragent, []);
+        return new Dexp\Dexp($useragent);
     }
 }

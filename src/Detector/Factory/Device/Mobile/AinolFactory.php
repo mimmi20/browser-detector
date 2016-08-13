@@ -52,9 +52,9 @@ class AinolFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/numy\_note\_9/i', $useragent)) {
-            return new Ainol\AinolNumyNote9($useragent, []);
+            return new Ainol\AinolNumyNote9($useragent);
         }
 
-        return new Ainol\Ainol($useragent, []);
+        return new Ainol\Ainol($useragent);
     }
 }

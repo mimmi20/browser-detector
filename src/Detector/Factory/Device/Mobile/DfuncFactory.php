@@ -52,9 +52,9 @@ class DfuncFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/FUNC TITAN\-02/', $useragent)) {
-            return new Dfunc\DfuncTitan02($useragent, []);
+            return new Dfunc\DfuncTitan02($useragent);
         }
 
-        return new Dfunc\Dfunc($useragent, []);
+        return new Dfunc\Dfunc($useragent);
     }
 }

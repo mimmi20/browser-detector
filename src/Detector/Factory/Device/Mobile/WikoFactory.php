@@ -52,25 +52,25 @@ class WikoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/RAINBOW/', $useragent)) {
-            return new Wiko\WikoRainbow($useragent, []);
+            return new Wiko\WikoRainbow($useragent);
         }
 
         if (preg_match('/LENNY/', $useragent)) {
-            return new Wiko\WikoLenny($useragent, []);
+            return new Wiko\WikoLenny($useragent);
         }
 
         if (preg_match('/GETAWAY/', $useragent)) {
-            return new Wiko\WikoGetaway($useragent, []);
+            return new Wiko\WikoGetaway($useragent);
         }
 
         if (preg_match('/DARKMOON/', $useragent)) {
-            return new Wiko\WikoDarkmoon($useragent, []);
+            return new Wiko\WikoDarkmoon($useragent);
         }
 
         if (preg_match('/CINK PEAX 2/', $useragent)) {
-            return new Wiko\WikoCinkPeax2($useragent, []);
+            return new Wiko\WikoCinkPeax2($useragent);
         }
 
-        return new Wiko\Wiko($useragent, []);
+        return new Wiko\Wiko($useragent);
     }
 }

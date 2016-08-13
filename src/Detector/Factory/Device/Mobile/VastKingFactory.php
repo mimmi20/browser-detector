@@ -52,9 +52,9 @@ class VastKingFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/M717R\-HD/', $useragent)) {
-            return new VastKing\VastKingM717rHd($useragent, []);
+            return new VastKing\VastKingM717rHd($useragent);
         }
 
-        return new VastKing\VastKing($useragent, []);
+        return new VastKing\VastKing($useragent);
     }
 }

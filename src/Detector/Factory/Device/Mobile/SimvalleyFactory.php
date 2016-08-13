@@ -52,13 +52,13 @@ class SimvalleyFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SPX\-5[ \_]3G/', $useragent)) {
-            return new Simvalley\SimvalleySpx53G($useragent, []);
+            return new Simvalley\SimvalleySpx53G($useragent);
         }
 
         if (preg_match('/SPX\-5/', $useragent)) {
-            return new Simvalley\SimvalleySpx5($useragent, []);
+            return new Simvalley\SimvalleySpx5($useragent);
         }
 
-        return new Simvalley\Simvalley($useragent, []);
+        return new Simvalley\Simvalley($useragent);
     }
 }

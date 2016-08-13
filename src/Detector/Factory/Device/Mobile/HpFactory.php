@@ -52,33 +52,33 @@ class HpFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ipaqhw6900/i', $useragent)) {
-            return new Hp\HpIpaq6900($useragent, []);
+            return new Hp\HpIpaq6900($useragent);
         }
 
         if (preg_match('/slate 10 hd/i', $useragent)) {
-            return new Hp\HpSlate10Hd($useragent, []);
+            return new Hp\HpSlate10Hd($useragent);
         }
 
         if (preg_match('/(touchpad|cm\_tenderloin)/i', $useragent)) {
-            return new Hp\HpTouchpad($useragent, []);
+            return new Hp\HpTouchpad($useragent);
         }
 
         if (preg_match('/palm\-d050/i', $useragent)) {
-            return new Hp\PalmTx($useragent, []);
+            return new Hp\PalmTx($useragent);
         }
 
         if (preg_match('/pre\//i', $useragent)) {
-            return new Hp\PalmPre($useragent, []);
+            return new Hp\PalmPre($useragent);
         }
 
         if (preg_match('/pixi\//i', $useragent)) {
-            return new Hp\PalmPixi($useragent, []);
+            return new Hp\PalmPixi($useragent);
         }
 
         if (preg_match('/p160u/i', $useragent)) {
-            return new Hp\HpP160U($useragent, []);
+            return new Hp\HpP160U($useragent);
         }
 
-        return new Hp\Hp($useragent, []);
+        return new Hp\Hp($useragent);
     }
 }

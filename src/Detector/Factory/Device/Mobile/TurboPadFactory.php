@@ -52,9 +52,9 @@ class TurboPadFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/turbo x6/i', $useragent)) {
-            return new TurboPad\TurboPadTurboX6($useragent, []);
+            return new TurboPad\TurboPadTurboX6($useragent);
         }
 
-        return new TurboPad\TurboPad($useragent, []);
+        return new TurboPad\TurboPad($useragent);
     }
 }

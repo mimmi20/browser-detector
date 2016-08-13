@@ -52,9 +52,9 @@ class ErgoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/tab crystal lite/i', $useragent)) {
-            return new Ergo\ErgoTabCrystalLite($useragent, []);
+            return new Ergo\ErgoTabCrystalLite($useragent);
         }
 
-        return new Ergo\Ergo($useragent, []);
+        return new Ergo\Ergo($useragent);
     }
 }

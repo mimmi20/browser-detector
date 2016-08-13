@@ -52,13 +52,13 @@ class SprintFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PPC\-6700/', $useragent)) {
-            return new Sprint\SprintPpc6700($useragent, []);
+            return new Sprint\SprintPpc6700($useragent);
         }
 
         if (preg_match('/APA9292KT/', $useragent)) {
-            return new Sprint\SprintApa9292kt($useragent, []);
+            return new Sprint\SprintApa9292kt($useragent);
         }
 
-        return new Sprint\Sprint($useragent, []);
+        return new Sprint\Sprint($useragent);
     }
 }

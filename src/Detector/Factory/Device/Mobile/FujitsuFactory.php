@@ -52,9 +52,9 @@ class FujitsuFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/m532/i', $useragent)) {
-            return new Fujitsu\FujitsuM532($useragent, []);
+            return new Fujitsu\FujitsuM532($useragent);
         }
 
-        return new Fujitsu\Fujitsu($useragent, []);
+        return new Fujitsu\Fujitsu($useragent);
     }
 }

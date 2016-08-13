@@ -52,9 +52,9 @@ class PentagramFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PentagramTAB7\.6/', $useragent)) {
-            return new Pentagram\PentagramTab76($useragent, []);
+            return new Pentagram\PentagramTab76($useragent);
         }
 
-        return new Pentagram\Pentagram($useragent, []);
+        return new Pentagram\Pentagram($useragent);
     }
 }

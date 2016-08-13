@@ -52,49 +52,49 @@ class FlyFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/IQ4504/', $useragent)) {
-            return new Fly\FlyIq4504($useragent, []);
+            return new Fly\FlyIq4504($useragent);
         }
 
         if (preg_match('/IQ4415/', $useragent)) {
-            return new Fly\FlyIq4415($useragent, []);
+            return new Fly\FlyIq4415($useragent);
         }
 
         if (preg_match('/IQ4411/', $useragent)) {
-            return new Fly\FlyIq4411($useragent, []);
+            return new Fly\FlyIq4411($useragent);
         }
 
         if (preg_match('/phoenix 2/i', $useragent)) {
-            return new Fly\FlyIq4410i($useragent, []);
+            return new Fly\FlyIq4410i($useragent);
         }
 
         if (preg_match('/IQ4410/', $useragent)) {
-            return new Fly\FlyIq4410($useragent, []);
+            return new Fly\FlyIq4410($useragent);
         }
 
         if (preg_match('/IQ4409/', $useragent)) {
-            return new Fly\FlyIq4409($useragent, []);
+            return new Fly\FlyIq4409($useragent);
         }
 
         if (preg_match('/IQ4404/', $useragent)) {
-            return new Fly\FlyIq4404($useragent, []);
+            return new Fly\FlyIq4404($useragent);
         }
 
         if (preg_match('/IQ4403/', $useragent)) {
-            return new Fly\FlyIq4403($useragent, []);
+            return new Fly\FlyIq4403($useragent);
         }
 
         if (preg_match('/IQ456/', $useragent)) {
-            return new Fly\FlyIq456($useragent, []);
+            return new Fly\FlyIq456($useragent);
         }
 
         if (preg_match('/IQ450/', $useragent)) {
-            return new Fly\FlyIq450($useragent, []);
+            return new Fly\FlyIq450($useragent);
         }
 
         if (preg_match('/IQ442/', $useragent)) {
-            return new Fly\FlyIq442($useragent, []);
+            return new Fly\FlyIq442($useragent);
         }
 
-        return new Fly\Fly($useragent, []);
+        return new Fly\Fly($useragent);
     }
 }

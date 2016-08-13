@@ -52,9 +52,9 @@ class PocketBookFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SURFpad 4 L/', $useragent)) {
-            return new PocketBook\PocketBookSurfpad4l($useragent, []);
+            return new PocketBook\PocketBookSurfpad4l($useragent);
         }
 
-        return new PocketBook\PocketBook($useragent, []);
+        return new PocketBook\PocketBook($useragent);
     }
 }

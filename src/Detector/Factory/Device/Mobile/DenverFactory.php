@@ -52,13 +52,13 @@ class DenverFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TAD\-70112/i', $useragent)) {
-            return new Denver\DenverTad70112($useragent, []);
+            return new Denver\DenverTad70112($useragent);
         }
 
         if (preg_match('/TAD\-10023/i', $useragent)) {
-            return new Denver\DenverTad10023($useragent, []);
+            return new Denver\DenverTad10023($useragent);
         }
 
-        return new Denver\Denver($useragent, []);
+        return new Denver\Denver($useragent);
     }
 }

@@ -52,9 +52,9 @@ class JollaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/sailfish/i', $useragent)) {
-            return new Jolla\JollaSailfish($useragent, []);
+            return new Jolla\JollaSailfish($useragent);
         }
 
-        return new Jolla\Jolla($useragent, []);
+        return new Jolla\Jolla($useragent);
     }
 }

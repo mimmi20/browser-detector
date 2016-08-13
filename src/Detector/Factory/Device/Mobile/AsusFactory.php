@@ -52,129 +52,129 @@ class AsusFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TF101G/i', $useragent)) {
-            return new Asus\AsusEepPadTransformerTf101g($useragent, []);
+            return new Asus\AsusEepPadTransformerTf101g($useragent);
         }
 
         if (preg_match('/(Transformer TF201|Transformer Prime TF201)/i', $useragent)) {
-            return new Asus\AsusEepPadTransformerTf201($useragent, []);
+            return new Asus\AsusEepPadTransformerTf201($useragent);
         }
 
         if (preg_match('/K00C/i', $useragent)) {
-            return new Asus\AsusFoneK00c($useragent, []);
+            return new Asus\AsusFoneK00c($useragent);
         }
 
         if (preg_match('/K00F/i', $useragent)) {
-            return new Asus\AsusFoneK00f($useragent, []);
+            return new Asus\AsusFoneK00f($useragent);
         }
 
         if (preg_match('/K00Z/i', $useragent)) {
-            return new Asus\AsusFoneK00z($useragent, []);
+            return new Asus\AsusFoneK00z($useragent);
         }
 
         if (preg_match('/K01A/i', $useragent)) {
-            return new Asus\AsusFoneK01A($useragent, []);
+            return new Asus\AsusFoneK01A($useragent);
         }
 
         if (preg_match('/K012/i', $useragent)) {
-            return new Asus\AsusFoneK012($useragent, []);
+            return new Asus\AsusFoneK012($useragent);
         }
 
         if (preg_match('/(K00E|ME372CG)/i', $useragent)) {
-            return new Asus\AsusFonePad7($useragent, []);
+            return new Asus\AsusFonePad7($useragent);
         }
 
         if (preg_match('/ME172V/i', $useragent)) {
-            return new Asus\AsusMe172v($useragent, []);
+            return new Asus\AsusMe172v($useragent);
         }
 
         if (preg_match('/ME173X/i', $useragent)) {
-            return new Asus\AsusMe173x($useragent, []);
+            return new Asus\AsusMe173x($useragent);
         }
 
         if (preg_match('/ME301T/i', $useragent)) {
-            return new Asus\AsusMe301t($useragent, []);
+            return new Asus\AsusMe301t($useragent);
         }
 
         if (preg_match('/ME302C/i', $useragent)) {
-            return new Asus\AsusMe302c($useragent, []);
+            return new Asus\AsusMe302c($useragent);
         }
 
         if (preg_match('/ME302KL/i', $useragent)) {
-            return new Asus\AsusMe302kl($useragent, []);
+            return new Asus\AsusMe302kl($useragent);
         }
 
         if (preg_match('/ME371MG/i', $useragent)) {
-            return new Asus\AsusMe371mg($useragent, []);
+            return new Asus\AsusMe371mg($useragent);
         }
 
         if (preg_match('/P1801\-T/i', $useragent)) {
-            return new Asus\AsusP1801t($useragent, []);
+            return new Asus\AsusP1801t($useragent);
         }
 
         if (preg_match('/T00N/i', $useragent)) {
-            return new Asus\AsusT00n($useragent, []);
+            return new Asus\AsusT00n($useragent);
         }
 
         if (preg_match('/TF101/i', $useragent)) {
-            return new Asus\AsusTf101($useragent, []);
+            return new Asus\AsusTf101($useragent);
         }
 
         if (preg_match('/TF300TL/i', $useragent)) {
-            return new Asus\AsusTf300Tl($useragent, []);
+            return new Asus\AsusTf300Tl($useragent);
         }
 
         if (preg_match('/TF300TG/i', $useragent)) {
-            return new Asus\AsusTf300Tg($useragent, []);
+            return new Asus\AsusTf300Tg($useragent);
         }
 
         if (preg_match('/TF300T/i', $useragent)) {
-            return new Asus\AsusTf300T($useragent, []);
+            return new Asus\AsusTf300T($useragent);
         }
 
         if (preg_match('/TF700T/i', $useragent)) {
-            return new Asus\AsusTransformerPadTf700T($useragent, []);
+            return new Asus\AsusTransformerPadTf700T($useragent);
         }
 
         if (preg_match('/Slider SL101/i', $useragent)) {
-            return new Asus\Sl101($useragent, []);
+            return new Asus\Sl101($useragent);
         }
 
         if (preg_match('/Garmin\-Asus A50/i', $useragent)) {
-            return new Asus\GarminAsusA50($useragent, []);
+            return new Asus\GarminAsusA50($useragent);
         }
 
         if (preg_match('/Garmin\-Asus A10/i', $useragent)) {
-            return new Asus\GarminAsusA10($useragent, []);
+            return new Asus\GarminAsusA10($useragent);
         }
 
         if (preg_match('/Transformer Prime/i', $useragent)) {
-            return new Asus\AsusTransformerPrime($useragent, []);
+            return new Asus\AsusTransformerPrime($useragent);
         }
 
         if (preg_match('/PadFone 2/i', $useragent)) {
-            return new Asus\AsusPadFone2($useragent, []);
+            return new Asus\AsusPadFone2($useragent);
         }
 
         if (preg_match('/PadFone/i', $useragent)) {
-            return new Asus\AsusPadFone($useragent, []);
+            return new Asus\AsusPadFone($useragent);
         }
 
         if (preg_match('/K017/i', $useragent)) {
-            return new Asus\AsusMemoPadK017($useragent, []);
+            return new Asus\AsusMemoPadK017($useragent);
         }
 
         if (preg_match('/Nexus 7/i', $useragent)) {
-            return new Asus\AsusGalaxyNexus7($useragent, []);
+            return new Asus\AsusGalaxyNexus7($useragent);
         }
 
         if (preg_match('/Asus;Galaxy6/i', $useragent)) {
-            return new Asus\AsusGalaxy6($useragent, []);
+            return new Asus\AsusGalaxy6($useragent);
         }
 
         if (preg_match('/eee_701/i', $useragent)) {
-            return new Asus\Eee701($useragent, []);
+            return new Asus\Eee701($useragent);
         }
 
-        return new Asus\Asus($useragent, []);
+        return new Asus\Asus($useragent);
     }
 }

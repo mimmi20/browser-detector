@@ -52,13 +52,13 @@ class BluFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/VIVO IV/', $useragent)) {
-            return new Blu\BluVivoIv($useragent, []);
+            return new Blu\BluVivoIv($useragent);
         }
 
         if (preg_match('/Studio 5\.0 S II/', $useragent)) {
-            return new Blu\BluStudio50Sii($useragent, []);
+            return new Blu\BluStudio50Sii($useragent);
         }
 
-        return new Blu\Blu($useragent, []);
+        return new Blu\Blu($useragent);
     }
 }

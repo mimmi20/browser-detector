@@ -52,9 +52,9 @@ class AmlogicFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/M8/', $useragent)) {
-            return new Amlogic\AmlogicM8($useragent, []);
+            return new Amlogic\AmlogicM8($useragent);
         }
 
-        return new Amlogic\Amlogic($useragent, []);
+        return new Amlogic\Amlogic($useragent);
     }
 }

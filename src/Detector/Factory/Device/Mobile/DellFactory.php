@@ -52,41 +52,41 @@ class DellFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/venue pro/i', $useragent)) {
-            return new Dell\DellVenuePro($useragent, []);
+            return new Dell\DellVenuePro($useragent);
         }
 
         if (preg_match('/venue 8 hspa\+/i', $useragent)) {
-            return new Dell\DellVenue8Hspa($useragent, []);
+            return new Dell\DellVenue8Hspa($useragent);
         }
 
         if (preg_match('/venue 8 3830/i', $useragent)) {
-            return new Dell\DellVenue83830($useragent, []);
+            return new Dell\DellVenue83830($useragent);
         }
 
         if (preg_match('/venue 7 hspa\+/i', $useragent)) {
-            return new Dell\DellVenue7Hspa($useragent, []);
+            return new Dell\DellVenue7Hspa($useragent);
         }
 
         if (preg_match('/venue 7 3730/i', $useragent)) {
-            return new Dell\DellVenue73730($useragent, []);
+            return new Dell\DellVenue73730($useragent);
         }
 
         if (preg_match('/venue/i', $useragent)) {
-            return new Dell\DellVenue($useragent, []);
+            return new Dell\DellVenue($useragent);
         }
 
         if (preg_match('/streak 10 pro/i', $useragent)) {
-            return new Dell\DellStreak10Pro($useragent, []);
+            return new Dell\DellStreak10Pro($useragent);
         }
 
         if (preg_match('/streak 7/i', $useragent)) {
-            return new Dell\DellStreak7($useragent, []);
+            return new Dell\DellStreak7($useragent);
         }
 
         if (preg_match('/streak/i', $useragent)) {
-            return new Dell\DellStreak($useragent, []);
+            return new Dell\DellStreak($useragent);
         }
 
-        return new Dell\Dell($useragent, []);
+        return new Dell\Dell($useragent);
     }
 }

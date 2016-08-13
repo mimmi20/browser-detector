@@ -52,25 +52,25 @@ class CubotFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/P9/i', $useragent)) {
-            return new Cubot\CubotP9($useragent, []);
+            return new Cubot\CubotP9($useragent);
         }
 
         if (preg_match('/MT6572\_TD/i', $useragent)) {
-            return new Cubot\CubotGt953g($useragent, []);
+            return new Cubot\CubotGt953g($useragent);
         }
 
         if (preg_match('/GT99/i', $useragent)) {
-            return new Cubot\CubotGt99($useragent, []);
+            return new Cubot\CubotGt99($useragent);
         }
 
         if (preg_match('/C11/i', $useragent)) {
-            return new Cubot\CubotC11($useragent, []);
+            return new Cubot\CubotC11($useragent);
         }
 
         if (preg_match('/C7/i', $useragent)) {
-            return new Cubot\CubotC7($useragent, []);
+            return new Cubot\CubotC7($useragent);
         }
 
-        return new Cubot\Cubot($useragent, []);
+        return new Cubot\Cubot($useragent);
     }
 }

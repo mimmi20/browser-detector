@@ -52,33 +52,33 @@ class ModecomFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/FreeTAB 9702 HD X4/', $useragent)) {
-            return new Modecom\ModecomFreeTab9702Hdx4($useragent, []);
+            return new Modecom\ModecomFreeTab9702Hdx4($useragent);
         }
 
         if (preg_match('/FreeTAB 9000 IPS IC/', $useragent)) {
-            return new Modecom\ModecomFreeTab9000IpsIc($useragent, []);
+            return new Modecom\ModecomFreeTab9000IpsIc($useragent);
         }
 
         if (preg_match('/FreeTAB 8001 IPS X2 3G\+/', $useragent)) {
-            return new Modecom\ModecomFreeTab8001Ipsx23g($useragent, []);
+            return new Modecom\ModecomFreeTab8001Ipsx23g($useragent);
         }
 
         if (preg_match('/FreeTAB 7800 IPS IC/', $useragent)) {
-            return new Modecom\ModecomFreeTab7800IpsIc($useragent, []);
+            return new Modecom\ModecomFreeTab7800IpsIc($useragent);
         }
 
         if (preg_match('/FreeTAB 7001 HD IC/', $useragent)) {
-            return new Modecom\ModecomFreeTab7001HdIc($useragent, []);
+            return new Modecom\ModecomFreeTab7001HdIc($useragent);
         }
 
         if (preg_match('/FreeTAB 1014 IPS X4 3G\+/', $useragent)) {
-            return new Modecom\ModecomFreeTab1014IpsX43g($useragent, []);
+            return new Modecom\ModecomFreeTab1014IpsX43g($useragent);
         }
 
         if (preg_match('/FreeTAB 1001/', $useragent)) {
-            return new Modecom\ModecomFreeTab1001($useragent, []);
+            return new Modecom\ModecomFreeTab1001($useragent);
         }
 
-        return new Modecom\Modecom($useragent, []);
+        return new Modecom\Modecom($useragent);
     }
 }

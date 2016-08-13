@@ -52,13 +52,13 @@ class NextbookFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/NEXT/', $useragent)) {
-            return new Nextbook\NextbookNext($useragent, []);
+            return new Nextbook\NextbookNext($useragent);
         }
 
         if (preg_match('/DATAM803HC/', $useragent)) {
-            return new Nextbook\NextbookM803hc($useragent, []);
+            return new Nextbook\NextbookM803hc($useragent);
         }
 
-        return new Nextbook\Nextbook($useragent, []);
+        return new Nextbook\Nextbook($useragent);
     }
 }

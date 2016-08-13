@@ -52,9 +52,9 @@ class SenseitFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/R390/', $useragent)) {
-            return new Senseit\SenseitR390($useragent, []);
+            return new Senseit\SenseitR390($useragent);
         }
 
-        return new Senseit\Senseit($useragent, []);
+        return new Senseit\Senseit($useragent);
     }
 }

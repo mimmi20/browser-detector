@@ -52,9 +52,9 @@ class MasterFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Smartphone650/', $useragent)) {
-            return new Master\MasterSmartphone650($useragent, []);
+            return new Master\MasterSmartphone650($useragent);
         }
 
-        return new Master\Master($useragent, []);
+        return new Master\Master($useragent);
     }
 }

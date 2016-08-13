@@ -52,9 +52,9 @@ class ShaanFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/iball majestic 2\.4d/i', $useragent)) {
-            return new Shaan\ShaanMajestic24d($useragent, []);
+            return new Shaan\ShaanMajestic24d($useragent);
         }
 
-        return new Shaan\Shaan($useragent, []);
+        return new Shaan\Shaan($useragent);
     }
 }

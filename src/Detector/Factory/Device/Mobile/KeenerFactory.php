@@ -52,9 +52,9 @@ class KeenerFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/k\-8s/i', $useragent)) {
-            return new Keener\KeenerK8s($useragent, []);
+            return new Keener\KeenerK8s($useragent);
         }
 
-        return new Keener\Keener($useragent, []);
+        return new Keener\Keener($useragent);
     }
 }

@@ -52,9 +52,9 @@ class SupraFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/m723g/i', $useragent)) {
-            return new Supra\SupraM723g($useragent, []);
+            return new Supra\SupraM723g($useragent);
         }
 
-        return new Supra\Supra($useragent, []);
+        return new Supra\Supra($useragent);
     }
 }

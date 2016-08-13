@@ -52,9 +52,9 @@ class QumoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/QUEST\_450/i', $useragent)) {
-            return new Qumo\QumoQuest450($useragent, []);
+            return new Qumo\QumoQuest450($useragent);
         }
 
-        return new Qumo\Qumo($useragent, []);
+        return new Qumo\Qumo($useragent);
     }
 }

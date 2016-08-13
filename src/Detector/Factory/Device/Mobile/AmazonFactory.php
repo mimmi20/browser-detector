@@ -52,53 +52,53 @@ class AmazonFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/kftt/i', $useragent)) {
-            return new Amazon\AmazonKftt($useragent, []);
+            return new Amazon\AmazonKftt($useragent);
         }
 
         if (preg_match('/kfthwi/i', $useragent)) {
-            return new Amazon\AmazonKfthwi($useragent, []);
+            return new Amazon\AmazonKfthwi($useragent);
         }
 
         if (preg_match('/kfsowi/i', $useragent)) {
-            return new Amazon\AmazonKfsowi($useragent, []);
+            return new Amazon\AmazonKfsowi($useragent);
         }
 
         if (preg_match('/kfot/i', $useragent)) {
-            return new Amazon\AmazonKfot($useragent, []);
+            return new Amazon\AmazonKfot($useragent);
         }
 
         if (preg_match('/kfjwi/i', $useragent)) {
-            return new Amazon\AmazonKfjwi($useragent, []);
+            return new Amazon\AmazonKfjwi($useragent);
         }
 
         if (preg_match('/kfjwa/i', $useragent)) {
-            return new Amazon\AmazonKfjwa($useragent, []);
+            return new Amazon\AmazonKfjwa($useragent);
         }
 
         if (preg_match('/kfaswi/i', $useragent)) {
-            return new Amazon\AmazonKfaswi($useragent, []);
+            return new Amazon\AmazonKfaswi($useragent);
         }
 
         if (preg_match('/kfapwi/i', $useragent)) {
-            return new Amazon\AmazonKfapwi($useragent, []);
+            return new Amazon\AmazonKfapwi($useragent);
         }
 
         if (preg_match('/kfapwa/i', $useragent)) {
-            return new Amazon\AmazonKfapwa($useragent, []);
+            return new Amazon\AmazonKfapwa($useragent);
         }
 
         if (preg_match('/sd4930ur/i', $useragent)) {
-            return new Amazon\AmazonSd4930urFirePhone($useragent, []);
+            return new Amazon\AmazonSd4930urFirePhone($useragent);
         }
 
         if (preg_match('/kindle fire/i', $useragent)) {
-            return new Amazon\AmazonKindleFire($useragent, []);
+            return new Amazon\AmazonKindleFire($useragent);
         }
 
         if (preg_match('/(kindle|silk)/i', $useragent)) {
-            return new Amazon\AmazonKindle($useragent, []);
+            return new Amazon\AmazonKindle($useragent);
         }
 
-        return new Amazon\Amazon($useragent, []);
+        return new Amazon\Amazon($useragent);
     }
 }

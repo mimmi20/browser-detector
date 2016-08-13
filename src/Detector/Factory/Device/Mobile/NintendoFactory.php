@@ -52,21 +52,21 @@ class NintendoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/WiiU/', $useragent)) {
-            return new Nintendo\NintendoWiiU($useragent, []);
+            return new Nintendo\NintendoWiiU($useragent);
         }
 
         if (preg_match('/Wii/', $useragent)) {
-            return new Nintendo\NintendoWii($useragent, []);
+            return new Nintendo\NintendoWii($useragent);
         }
 
         if (preg_match('/DSi/', $useragent)) {
-            return new Nintendo\NintendoDsi($useragent, []);
+            return new Nintendo\NintendoDsi($useragent);
         }
 
         if (preg_match('/3DS/', $useragent)) {
-            return new Nintendo\Nintendo3ds($useragent, []);
+            return new Nintendo\Nintendo3ds($useragent);
         }
 
-        return new Nintendo\Nintendo($useragent, []);
+        return new Nintendo\Nintendo($useragent);
     }
 }

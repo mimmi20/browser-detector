@@ -52,13 +52,13 @@ class KddiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/sn3f/i', $useragent)) {
-            return new Kddi\KddiSn3f($useragent, []);
+            return new Kddi\KddiSn3f($useragent);
         }
 
         if (preg_match('/kc31/i', $useragent)) {
-            return new Kddi\KddiKc31($useragent, []);
+            return new Kddi\KddiKc31($useragent);
         }
 
-        return new Kddi\Kddi($useragent, []);
+        return new Kddi\Kddi($useragent);
     }
 }

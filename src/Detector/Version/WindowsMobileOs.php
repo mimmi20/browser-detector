@@ -31,7 +31,6 @@
 
 namespace BrowserDetector\Detector\Version;
 
-use BrowserDetector\Detector\Company;
 use BrowserDetector\Version\VersionFactory;
 use UaHelper\Utils;
 

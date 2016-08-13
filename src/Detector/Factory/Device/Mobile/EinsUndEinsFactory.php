@@ -52,9 +52,9 @@ class EinsUndEinsFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/smartpad/i', $useragent)) {
-            return new EinsUndEins\Smartpad($useragent, []);
+            return new EinsUndEins\Smartpad($useragent);
         }
 
-        return new EinsUndEins\EinsUndEins($useragent, []);
+        return new EinsUndEins\EinsUndEins($useragent);
     }
 }

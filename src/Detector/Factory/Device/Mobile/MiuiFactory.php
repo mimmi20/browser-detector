@@ -52,9 +52,9 @@ class MiuiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MIUI\.us Sensation 4G/', $useragent)) {
-            return new Miui\MiuiUsSensation4G($useragent, []);
+            return new Miui\MiuiUsSensation4G($useragent);
         }
 
-        return new Miui\Miui($useragent, []);
+        return new Miui\Miui($useragent);
     }
 }

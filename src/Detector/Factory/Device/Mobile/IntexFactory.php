@@ -52,9 +52,9 @@ class IntexFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/aqua\_star/i', $useragent)) {
-            return new Intex\IntexAquaStar($useragent, []);
+            return new Intex\IntexAquaStar($useragent);
         }
 
-        return new Intex\Intex($useragent, []);
+        return new Intex\Intex($useragent);
     }
 }

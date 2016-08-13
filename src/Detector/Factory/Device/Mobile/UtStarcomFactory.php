@@ -52,9 +52,9 @@ class UtStarcomFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/GTX75/', $useragent)) {
-            return new UtStarcom\UtStarcomGtx75($useragent, []);
+            return new UtStarcom\UtStarcomGtx75($useragent);
         }
 
-        return new UtStarcom\UtStarcom($useragent, []);
+        return new UtStarcom\UtStarcom($useragent);
     }
 }

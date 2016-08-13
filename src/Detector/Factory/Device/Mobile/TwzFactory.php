@@ -52,9 +52,9 @@ class TwzFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/A49/', $useragent)) {
-            return new Twz\TwzA49($useragent, []);
+            return new Twz\TwzA49($useragent);
         }
 
-        return new Twz\Twz($useragent, []);
+        return new Twz\Twz($useragent);
     }
 }

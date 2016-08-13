@@ -52,9 +52,9 @@ class FaktorZweiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/FX2\-PAD10/i', $useragent)) {
-            return new FaktorZwei\Fx2Pad10($useragent, []);
+            return new FaktorZwei\Fx2Pad10($useragent);
         }
 
-        return new FaktorZwei\FaktorZwei($useragent, []);
+        return new FaktorZwei\FaktorZwei($useragent);
     }
 }

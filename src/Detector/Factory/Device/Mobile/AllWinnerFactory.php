@@ -52,9 +52,9 @@ class AllWinnerFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/A10/i', $useragent)) {
-            return new AllWinner\AllWinnerA10($useragent, []);
+            return new AllWinner\AllWinnerA10($useragent);
         }
 
-        return new AllWinner\AllWinner($useragent, []);
+        return new AllWinner\AllWinner($useragent);
     }
 }

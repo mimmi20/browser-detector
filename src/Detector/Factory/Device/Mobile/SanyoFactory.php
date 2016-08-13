@@ -52,9 +52,9 @@ class SanyoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PM\-8200/', $useragent)) {
-            return new Sanyo\SanyoPm8200($useragent, []);
+            return new Sanyo\SanyoPm8200($useragent);
         }
 
-        return new Sanyo\Sanyo($useragent, []);
+        return new Sanyo\Sanyo($useragent);
     }
 }

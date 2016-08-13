@@ -31,9 +31,6 @@
 
 namespace BrowserDetector\Traits;
 
-use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Detector\Version\AndroidOs;
-
 /**
  * @category  BrowserDetector
  *
@@ -51,6 +48,6 @@ trait GetAndroidosTrait
      */
     public function detectOs()
     {
-        return new Os\###OS###($this->useragent);
+        return new Os\###OS###($useragent);
     }
 }

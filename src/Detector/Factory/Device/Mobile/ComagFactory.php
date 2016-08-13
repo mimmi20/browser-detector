@@ -52,9 +52,9 @@ class ComagFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/WTDR1018/i', $useragent)) {
-            return new Comag\ComagWtdr1018($useragent, []);
+            return new Comag\ComagWtdr1018($useragent);
         }
 
-        return new Comag\Comag($useragent, []);
+        return new Comag\Comag($useragent);
     }
 }

@@ -52,9 +52,9 @@ class PanasonicFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/dL1/', $useragent)) {
-            return new Panasonic\PanasonicDl1($useragent, []);
+            return new Panasonic\PanasonicDl1($useragent);
         }
 
-        return new Panasonic\Panasonic($useragent, []);
+        return new Panasonic\Panasonic($useragent);
     }
 }

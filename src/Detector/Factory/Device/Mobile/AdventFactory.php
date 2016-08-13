@@ -52,9 +52,9 @@ class AdventFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Vega/', $useragent)) {
-            return new Advent\AdventP10an01($useragent, []);
+            return new Advent\AdventP10an01($useragent);
         }
 
-        return new Advent\Advent($useragent, []);
+        return new Advent\Advent($useragent);
     }
 }

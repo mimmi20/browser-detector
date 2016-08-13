@@ -52,9 +52,9 @@ class HaipaiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Noble\_I9220/', $useragent)) {
-            return new Haipai\HaipaiI9220($useragent, []);
+            return new Haipai\HaipaiI9220($useragent);
         }
 
-        return new Haipai\Haipai($useragent, []);
+        return new Haipai\Haipai($useragent);
     }
 }

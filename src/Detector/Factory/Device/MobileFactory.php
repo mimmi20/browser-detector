@@ -891,11 +891,11 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/wolgang/i', $useragent)) {
-            return Mobile\WolgangFactory::detect($useragent, []);
+            return Mobile\WolgangFactory::detect($useragent);
         }
 
         if (preg_match('/AT\-AS40SE/', $useragent)) {
-            return Mobile\WolgangFactory::detect($useragent, []);
+            return Mobile\WolgangFactory::detect($useragent);
         }
 
         if (preg_match('/united/i', $useragent)) {
@@ -1690,6 +1690,6 @@ class MobileFactory implements FactoryInterface
             return Mobile\AppleFactory::detect($useragent);
         }
 
-        return new GeneralMobile($useragent, []);
+        return new GeneralMobile($useragent);
     }
 }

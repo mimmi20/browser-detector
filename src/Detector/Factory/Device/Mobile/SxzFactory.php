@@ -52,9 +52,9 @@ class SxzFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/PDX0\-01/i', $useragent)) {
-            return new Sxz\SxzPdx001($useragent, []);
+            return new Sxz\SxzPdx001($useragent);
         }
 
-        return new Sxz\Sxz($useragent, []);
+        return new Sxz\Sxz($useragent);
     }
 }

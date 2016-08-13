@@ -52,9 +52,9 @@ class RoverPadFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/air a70/i', $useragent)) {
-            return new RoverPad\RoverPadAirA70($useragent, []);
+            return new RoverPad\RoverPadAirA70($useragent);
         }
 
-        return new RoverPad\RoverPad($useragent, []);
+        return new RoverPad\RoverPad($useragent);
     }
 }

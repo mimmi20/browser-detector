@@ -52,37 +52,37 @@ class SharpFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SHARP\-TQ\-GX30i/', $useragent)) {
-            return new Sharp\SharpTqGx30i($useragent, []);
+            return new Sharp\SharpTqGx30i($useragent);
         }
 
         if (preg_match('/SH\-01F/', $useragent)) {
-            return new Sharp\SharpSH01F($useragent, []);
+            return new Sharp\SharpSH01F($useragent);
         }
 
         if (preg_match('/SH8128U/', $useragent)) {
-            return new Sharp\SH8128U($useragent, []);
+            return new Sharp\SH8128U($useragent);
         }
 
         if (preg_match('/SH7228U/', $useragent)) {
-            return new Sharp\SH7228U($useragent, []);
+            return new Sharp\SH7228U($useragent);
         }
 
         if (preg_match('/304SH/', $useragent)) {
-            return new Sharp\SH304($useragent, []);
+            return new Sharp\SH304($useragent);
         }
 
         if (preg_match('/SH80F/', $useragent)) {
-            return new Sharp\SH80F($useragent, []);
+            return new Sharp\SH80F($useragent);
         }
 
         if (preg_match('/SH05C/', $useragent)) {
-            return new Sharp\SH05C($useragent, []);
+            return new Sharp\SH05C($useragent);
         }
 
         if (preg_match('/IS05/', $useragent)) {
-            return new Sharp\IS05($useragent, []);
+            return new Sharp\IS05($useragent);
         }
 
-        return new Sharp\Sharp($useragent, []);
+        return new Sharp\Sharp($useragent);
     }
 }

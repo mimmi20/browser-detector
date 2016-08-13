@@ -52,9 +52,9 @@ class DinoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/DINO762/', $useragent)) {
-            return new Dino\Dino762A9($useragent, []);
+            return new Dino\Dino762A9($useragent);
         }
 
-        return new Dino\Dino($useragent, []);
+        return new Dino\Dino($useragent);
     }
 }

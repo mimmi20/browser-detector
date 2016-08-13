@@ -52,13 +52,13 @@ class EasypixFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/junior 4\.0/i', $useragent)) {
-            return new Easypix\EasypixJunior($useragent, []);
+            return new Easypix\EasypixJunior($useragent);
         }
 
         if (preg_match('/easypad 970/i', $useragent)) {
-            return new Easypix\EasypixEasyPad970($useragent, []);
+            return new Easypix\EasypixEasyPad970($useragent);
         }
 
-        return new Easypix\Easypix($useragent, []);
+        return new Easypix\Easypix($useragent);
     }
 }

@@ -52,9 +52,9 @@ class AisFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/iris708/i', $useragent)) {
-            return new Ais\AisLavaPro45($useragent, []);
+            return new Ais\AisLavaPro45($useragent);
         }
 
-        return new Ais\Ais($useragent, []);
+        return new Ais\Ais($useragent);
     }
 }

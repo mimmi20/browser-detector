@@ -52,9 +52,9 @@ class FairphoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/FP1/', $useragent)) {
-            return new Fairphone\FairphoneFp1($useragent, []);
+            return new Fairphone\FairphoneFp1($useragent);
         }
 
-        return new Fairphone\Fairphone($useragent, []);
+        return new Fairphone\Fairphone($useragent);
     }
 }

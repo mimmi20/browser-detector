@@ -52,17 +52,17 @@ class PantechFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/p9020/i', $useragent)) {
-            return new Pantech\PantechP9020($useragent, []);
+            return new Pantech\PantechP9020($useragent);
         }
 
         if (preg_match('/p2020/i', $useragent)) {
-            return new Pantech\PantechP2020($useragent, []);
+            return new Pantech\PantechP2020($useragent);
         }
 
         if (preg_match('/im\-a830l/i', $useragent)) {
-            return new Pantech\PantechIma830l($useragent, []);
+            return new Pantech\PantechIma830l($useragent);
         }
 
-        return new Pantech\Pantech($useragent, []);
+        return new Pantech\Pantech($useragent);
     }
 }

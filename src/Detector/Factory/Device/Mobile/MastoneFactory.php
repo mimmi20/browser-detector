@@ -52,9 +52,9 @@ class MastoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/G9/', $useragent)) {
-            return new Mastone\MastoneG9($useragent, []);
+            return new Mastone\MastoneG9($useragent);
         }
 
-        return new Mastone\Mastone($useragent, []);
+        return new Mastone\Mastone($useragent);
     }
 }

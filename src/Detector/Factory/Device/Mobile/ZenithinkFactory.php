@@ -52,9 +52,9 @@ class ZenithinkFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/zt180/i', $useragent)) {
-            return new Zenithink\ZenithinkZt180($useragent, []);
+            return new Zenithink\ZenithinkZt180($useragent);
         }
 
-        return new Zenithink\Zenithink($useragent, []);
+        return new Zenithink\Zenithink($useragent);
     }
 }

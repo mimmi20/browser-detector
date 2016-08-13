@@ -52,9 +52,9 @@ class PhicommFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/FWS610\_EU/', $useragent)) {
-            return new Phicomm\PhicommFws610($useragent, []);
+            return new Phicomm\PhicommFws610($useragent);
         }
 
-        return new Phicomm\Phicomm($useragent, []);
+        return new Phicomm\Phicomm($useragent);
     }
 }

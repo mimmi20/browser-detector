@@ -52,9 +52,9 @@ class GlobexFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/GU7814/', $useragent)) {
-            return new Globex\GlobexGu7814($useragent, []);
+            return new Globex\GlobexGu7814($useragent);
         }
 
-        return new Globex\Globex($useragent, []);
+        return new Globex\Globex($useragent);
     }
 }

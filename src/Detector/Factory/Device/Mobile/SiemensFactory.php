@@ -52,13 +52,13 @@ class SiemensFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SL45i/', $useragent)) {
-            return new Siemens\Sl45i($useragent, []);
+            return new Siemens\Sl45i($useragent);
         }
 
         if (preg_match('/SIE\-S65/', $useragent)) {
-            return new Siemens\SiemensS65($useragent, []);
+            return new Siemens\SiemensS65($useragent);
         }
 
-        return new Siemens\Siemens($useragent, []);
+        return new Siemens\Siemens($useragent);
     }
 }

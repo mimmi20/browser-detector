@@ -52,9 +52,9 @@ class BeidouFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/LA\-M1/i', $useragent)) {
-            return new Beidou\BeidouLam1($useragent, []);
+            return new Beidou\BeidouLam1($useragent);
         }
 
-        return new Beidou\Beidou($useragent, []);
+        return new Beidou\Beidou($useragent);
     }
 }

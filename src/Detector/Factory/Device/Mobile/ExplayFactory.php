@@ -52,17 +52,17 @@ class ExplayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/surfer 7\.34/i', $useragent)) {
-            return new Explay\ExplaySurfer7343g($useragent, []);
+            return new Explay\ExplaySurfer7343g($useragent);
         }
 
         if (preg_match('/m1\_plus/i', $useragent)) {
-            return new Explay\ExplayM1Plus($useragent, []);
+            return new Explay\ExplayM1Plus($useragent);
         }
 
         if (preg_match('/d7\.2 3g/i', $useragent)) {
-            return new Explay\ExplayD723g($useragent, []);
+            return new Explay\ExplayD723g($useragent);
         }
 
-        return new Explay\Explay($useragent, []);
+        return new Explay\Explay($useragent);
     }
 }

@@ -52,9 +52,9 @@ class MemupFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/slidepad/i', $useragent)) {
-            return new Memup\Slidepad($useragent, []);
+            return new Memup\Slidepad($useragent);
         }
 
-        return new Memup\Memup($useragent, []);
+        return new Memup\Memup($useragent);
     }
 }

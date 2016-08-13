@@ -52,41 +52,41 @@ class MicromaxFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/X650/i', $useragent)) {
-            return new Micromax\MicromaxX650($useragent, []);
+            return new Micromax\MicromaxX650($useragent);
         }
 
         if (preg_match('/A120/i', $useragent)) {
-            return new Micromax\MicromaxA120($useragent, []);
+            return new Micromax\MicromaxA120($useragent);
         }
 
         if (preg_match('/A116/i', $useragent)) {
-            return new Micromax\MicromaxA116($useragent, []);
+            return new Micromax\MicromaxA116($useragent);
         }
 
         if (preg_match('/A114/i', $useragent)) {
-            return new Micromax\MicromaxA114($useragent, []);
+            return new Micromax\MicromaxA114($useragent);
         }
 
         if (preg_match('/A093/i', $useragent)) {
-            return new Micromax\MicromaxA093($useragent, []);
+            return new Micromax\MicromaxA093($useragent);
         }
 
         if (preg_match('/A065/i', $useragent)) {
-            return new Micromax\MicromaxA065($useragent, []);
+            return new Micromax\MicromaxA065($useragent);
         }
 
         if (preg_match('/A40/i', $useragent)) {
-            return new Micromax\MicromaxA40($useragent, []);
+            return new Micromax\MicromaxA40($useragent);
         }
 
         if (preg_match('/A35/i', $useragent)) {
-            return new Micromax\MicromaxA35($useragent, []);
+            return new Micromax\MicromaxA35($useragent);
         }
 
         if (preg_match('/A27/i', $useragent)) {
-            return new Micromax\MicromaxA27($useragent, []);
+            return new Micromax\MicromaxA27($useragent);
         }
 
-        return new Micromax\Micromax($useragent, []);
+        return new Micromax\Micromax($useragent);
     }
 }

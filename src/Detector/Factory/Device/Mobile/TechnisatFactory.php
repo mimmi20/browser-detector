@@ -52,9 +52,9 @@ class TechnisatFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TechniPad_10\-3G/i', $useragent)) {
-            return new Technisat\TechnisatTechnipad103g($useragent, []);
+            return new Technisat\TechnisatTechnipad103g($useragent);
         }
 
-        return new Technisat\Technisat($useragent, []);
+        return new Technisat\Technisat($useragent);
     }
 }

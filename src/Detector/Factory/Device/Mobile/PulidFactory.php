@@ -52,9 +52,9 @@ class PulidFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/F15/', $useragent)) {
-            return new Pulid\PulidF15($useragent, []);
+            return new Pulid\PulidF15($useragent);
         }
 
-        return new Pulid\Pulid($useragent, []);
+        return new Pulid\Pulid($useragent);
     }
 }

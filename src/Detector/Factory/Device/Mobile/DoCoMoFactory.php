@@ -52,13 +52,13 @@ class DoCoMoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/P905i/i', $useragent)) {
-            return new DoCoMo\DoCoMoP905i($useragent, []);
+            return new DoCoMo\DoCoMoP905i($useragent);
         }
 
         if (preg_match('/P900i/i', $useragent)) {
-            return new DoCoMo\DoCoMoP900i($useragent, []);
+            return new DoCoMo\DoCoMoP900i($useragent);
         }
 
-        return new DoCoMo\DoCoMo($useragent, []);
+        return new DoCoMo\DoCoMo($useragent);
     }
 }

@@ -52,9 +52,9 @@ class MagicFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/W700/', $useragent)) {
-            return new Magic\MagicW700($useragent, []);
+            return new Magic\MagicW700($useragent);
         }
 
-        return new Magic\Magic($useragent, []);
+        return new Magic\Magic($useragent);
     }
 }

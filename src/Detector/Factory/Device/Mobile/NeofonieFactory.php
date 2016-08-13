@@ -52,9 +52,9 @@ class NeofonieFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/WeTab/', $useragent)) {
-            return new Neofonie\WeTab($useragent, []);
+            return new Neofonie\WeTab($useragent);
         }
 
-        return new Neofonie\Neofonie($useragent, []);
+        return new Neofonie\Neofonie($useragent);
     }
 }

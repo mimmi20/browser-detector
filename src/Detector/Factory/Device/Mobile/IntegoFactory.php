@@ -52,9 +52,9 @@ class IntegoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/px\-0905/i', $useragent)) {
-            return new Intego\IntegoPx0905($useragent, []);
+            return new Intego\IntegoPx0905($useragent);
         }
 
-        return new Intego\Intego($useragent, []);
+        return new Intego\Intego($useragent);
     }
 }

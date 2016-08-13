@@ -52,9 +52,9 @@ class StarwayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/andromeda s925 3g/i', $useragent)) {
-            return new Starway\StarwayAndromedas9253g($useragent, []);
+            return new Starway\StarwayAndromedas9253g($useragent);
         }
 
-        return new Starway\Starway($useragent, []);
+        return new Starway\Starway($useragent);
     }
 }

@@ -52,9 +52,9 @@ class KingzoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/k1 turbo/i', $useragent)) {
-            return new Kingzone\KingzoneKz168($useragent, []);
+            return new Kingzone\KingzoneKz168($useragent);
         }
 
-        return new Kingzone\Kingzone($useragent, []);
+        return new Kingzone\Kingzone($useragent);
     }
 }

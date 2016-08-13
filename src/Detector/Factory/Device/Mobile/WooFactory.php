@@ -52,9 +52,9 @@ class WooFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SP\-6020 QUASAR/', $useragent)) {
-            return new Woo\WooSp6020($useragent, []);
+            return new Woo\WooSp6020($useragent);
         }
 
-        return new Woo\Woo($useragent, []);
+        return new Woo\Woo($useragent);
     }
 }

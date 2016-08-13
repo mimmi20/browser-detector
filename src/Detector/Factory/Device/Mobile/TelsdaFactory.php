@@ -52,9 +52,9 @@ class TelsdaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/T9666\-1/', $useragent)) {
-            return new Telsda\TelsdaT96661($useragent, []);
+            return new Telsda\TelsdaT96661($useragent);
         }
 
-        return new Telsda\Telsda($useragent, []);
+        return new Telsda\Telsda($useragent);
     }
 }

@@ -52,9 +52,9 @@ class VideoconFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/A15/', $useragent)) {
-            return new Videocon\VideoconA15($useragent, []);
+            return new Videocon\VideoconA15($useragent);
         }
 
-        return new Videocon\Videocon($useragent, []);
+        return new Videocon\Videocon($useragent);
     }
 }

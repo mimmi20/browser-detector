@@ -52,9 +52,9 @@ class KeenHighFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MT791/', $useragent)) {
-            return new KeenHigh\KeenHighMT791($useragent, []);
+            return new KeenHigh\KeenHighMT791($useragent);
         }
 
-        return new KeenHigh\KeenHigh($useragent, []);
+        return new KeenHigh\KeenHigh($useragent);
     }
 }

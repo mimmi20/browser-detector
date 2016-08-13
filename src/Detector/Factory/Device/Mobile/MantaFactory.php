@@ -52,9 +52,9 @@ class MantaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/MID802/', $useragent)) {
-            return new Manta\MantaMid802($useragent, []);
+            return new Manta\MantaMid802($useragent);
         }
 
-        return new Manta\Manta($useragent, []);
+        return new Manta\Manta($useragent);
     }
 }

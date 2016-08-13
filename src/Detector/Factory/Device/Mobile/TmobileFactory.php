@@ -52,37 +52,37 @@ class TmobileFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Pulse/', $useragent)) {
-            return new Tmobile\TmobilePulse($useragent, []);
+            return new Tmobile\TmobilePulse($useragent);
         }
 
         if (preg_match('/myTouch4G/', $useragent)) {
-            return new Tmobile\TmobileMyTouch4G($useragent, []);
+            return new Tmobile\TmobileMyTouch4G($useragent);
         }
 
         if (preg_match('/myTouch 3G Slide/', $useragent)) {
-            return new Tmobile\TmobileMyTouch3G($useragent, []);
+            return new Tmobile\TmobileMyTouch3G($useragent);
         }
 
         if (preg_match('/T\-Mobile(\_G2\_Touch| G2)/', $useragent)) {
-            return new Tmobile\TmobileG2Touch($useragent, []);
+            return new Tmobile\TmobileG2Touch($useragent);
         }
 
         if (preg_match('/T\-Mobile G1/', $useragent)) {
-            return new Tmobile\TmobileG1($useragent, []);
+            return new Tmobile\TmobileG1($useragent);
         }
 
         if (preg_match('/MDA compact\/3/', $useragent)) {
-            return new Tmobile\TmobileMdaCompact3($useragent, []);
+            return new Tmobile\TmobileMdaCompact3($useragent);
         }
 
         if (preg_match('/MDA compact/', $useragent)) {
-            return new Tmobile\TmobileMdaCompact($useragent, []);
+            return new Tmobile\TmobileMdaCompact($useragent);
         }
 
         if (preg_match('/Ameo/', $useragent)) {
-            return new Tmobile\TmobileAmeo($useragent, []);
+            return new Tmobile\TmobileAmeo($useragent);
         }
 
-        return new Tmobile\Tmobile($useragent, []);
+        return new Tmobile\Tmobile($useragent);
     }
 }

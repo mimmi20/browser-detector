@@ -52,89 +52,89 @@ class MedionFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/x4701/i', $useragent)) {
-            return new Medion\MdX4701($useragent, []);
+            return new Medion\MdX4701($useragent);
         }
 
         if (preg_match('/LIFETAB_S9714/i', $useragent)) {
-            return new Medion\MdLifetabS9714($useragent, []);
+            return new Medion\MdLifetabS9714($useragent);
         }
 
         if (preg_match('/LIFETAB_S9512/i', $useragent)) {
-            return new Medion\MdLifetabS9512($useragent, []);
+            return new Medion\MdLifetabS9512($useragent);
         }
 
         if (preg_match('/LIFETAB_S1034X/i', $useragent)) {
-            return new Medion\MdLifetabS1034x($useragent, []);
+            return new Medion\MdLifetabS1034x($useragent);
         }
 
         if (preg_match('/LIFETAB_S1033X/i', $useragent)) {
-            return new Medion\MdLifetabS1033x($useragent, []);
+            return new Medion\MdLifetabS1033x($useragent);
         }
 
         if (preg_match('/LIFETAB_S831X/i', $useragent)) {
-            return new Medion\MdLifetabS831x($useragent, []);
+            return new Medion\MdLifetabS831x($useragent);
         }
 
         if (preg_match('/LIFETAB_S785X/i', $useragent)) {
-            return new Medion\MdLifetabS785x($useragent, []);
+            return new Medion\MdLifetabS785x($useragent);
         }
 
         if (preg_match('/LIFETAB_P9516/i', $useragent)) {
-            return new Medion\MdLifetabP9516($useragent, []);
+            return new Medion\MdLifetabP9516($useragent);
         }
 
         if (preg_match('/LIFETAB_P9514/i', $useragent)) {
-            return new Medion\MdLifetabP9514($useragent, []);
+            return new Medion\MdLifetabP9514($useragent);
         }
 
         if (preg_match('/LIFETAB_P891X/i', $useragent)) {
-            return new Medion\MdLifetabP891x($useragent, []);
+            return new Medion\MdLifetabP891x($useragent);
         }
 
         if (preg_match('/LIFETAB_E10320/i', $useragent)) {
-            return new Medion\MdLifetabE10320($useragent, []);
+            return new Medion\MdLifetabE10320($useragent);
         }
 
         if (preg_match('/LIFETAB_E10316/i', $useragent)) {
-            return new Medion\MdLifetabE10316($useragent, []);
+            return new Medion\MdLifetabE10316($useragent);
         }
 
         if (preg_match('/LIFETAB_E10312/i', $useragent)) {
-            return new Medion\MdLifetabE10312($useragent, []);
+            return new Medion\MdLifetabE10312($useragent);
         }
 
         if (preg_match('/LIFETAB_E10310/i', $useragent)) {
-            return new Medion\MdLifetabE10310($useragent, []);
+            return new Medion\MdLifetabE10310($useragent);
         }
 
         if (preg_match('/LIFETAB_E7316/i', $useragent)) {
-            return new Medion\MdLifetabE7316($useragent, []);
+            return new Medion\MdLifetabE7316($useragent);
         }
 
         if (preg_match('/LIFETAB_E7312/i', $useragent)) {
-            return new Medion\MdLifetabE7312($useragent, []);
+            return new Medion\MdLifetabE7312($useragent);
         }
 
         if (preg_match('/p4501/i', $useragent)) {
-            return new Medion\MdLifeP4501($useragent, []);
+            return new Medion\MdLifeP4501($useragent);
         }
 
         if (preg_match('/LIFE P4310/i', $useragent)) {
-            return new Medion\MdLifeP4310($useragent, []);
+            return new Medion\MdLifeP4310($useragent);
         }
 
         if (preg_match('/LIFE P4013/i', $useragent)) {
-            return new Medion\MdLifeP4013($useragent, []);
+            return new Medion\MdLifeP4013($useragent);
         }
 
         if (preg_match('/LIFE P4012/i', $useragent)) {
-            return new Medion\MdLifeP4012($useragent, []);
+            return new Medion\MdLifeP4012($useragent);
         }
 
         if (preg_match('/LIFE E3501/i', $useragent)) {
-            return new Medion\MdLifeE3501($useragent, []);
+            return new Medion\MdLifeE3501($useragent);
         }
 
-        return new Medion\Medion($useragent, []);
+        return new Medion\Medion($useragent);
     }
 }

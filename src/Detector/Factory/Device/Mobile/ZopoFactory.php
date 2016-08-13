@@ -52,45 +52,45 @@ class ZopoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ZP980/', $useragent)) {
-            return new Zopo\ZopoZp980($useragent, []);
+            return new Zopo\ZopoZp980($useragent);
         }
 
         if (preg_match('/ZP950\+/', $useragent)) {
-            return new Zopo\ZopoZp950Plus($useragent, []);
+            return new Zopo\ZopoZp950Plus($useragent);
         }
 
         if (preg_match('/ZP950/', $useragent)) {
-            return new Zopo\ZopoZp950($useragent, []);
+            return new Zopo\ZopoZp950($useragent);
         }
 
         if (preg_match('/ZP9(10|00H)/', $useragent)) {
-            return new Zopo\ZopoZp910($useragent, []);
+            return new Zopo\ZopoZp910($useragent);
         }
 
         if (preg_match('/ZP900/', $useragent)) {
-            return new Zopo\ZopoZp900($useragent, []);
+            return new Zopo\ZopoZp900($useragent);
         }
 
         if (preg_match('/ZP8(10|00H)/', $useragent)) {
-            return new Zopo\ZopoZp810($useragent, []);
+            return new Zopo\ZopoZp810($useragent);
         }
 
         if (preg_match('/ZP500/', $useragent)) {
-            return new Zopo\ZopoZp500($useragent, []);
+            return new Zopo\ZopoZp500($useragent);
         }
 
         if (preg_match('/ZP300/', $useragent)) {
-            return new Zopo\ZopoZp300($useragent, []);
+            return new Zopo\ZopoZp300($useragent);
         }
 
         if (preg_match('/ZP200/', $useragent)) {
-            return new Zopo\ZopoZp200($useragent, []);
+            return new Zopo\ZopoZp200($useragent);
         }
 
         if (preg_match('/ZP100/', $useragent)) {
-            return new Zopo\ZopoZp100($useragent, []);
+            return new Zopo\ZopoZp100($useragent);
         }
 
-        return new Zopo\Zopo($useragent, []);
+        return new Zopo\Zopo($useragent);
     }
 }

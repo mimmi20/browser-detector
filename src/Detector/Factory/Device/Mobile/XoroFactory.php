@@ -52,9 +52,9 @@ class XoroFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/telepad 9a1/i', $useragent)) {
-            return new Xoro\XoroXor400250($useragent, []);
+            return new Xoro\XoroXor400250($useragent);
         }
 
-        return new Xoro\Xoro($useragent, []);
+        return new Xoro\Xoro($useragent);
     }
 }

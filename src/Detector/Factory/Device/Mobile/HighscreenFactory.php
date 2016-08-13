@@ -52,25 +52,25 @@ class HighscreenFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Zera[ \_]F/', $useragent)) {
-            return new Highscreen\HighscreenZeraF($useragent, []);
+            return new Highscreen\HighscreenZeraF($useragent);
         }
 
         if (preg_match('/prime s/i', $useragent)) {
-            return new Highscreen\HighscreenOmegaPrimeS($useragent, []);
+            return new Highscreen\HighscreenOmegaPrimeS($useragent);
         }
 
         if (preg_match('/ice2/i', $useragent)) {
-            return new Highscreen\HighscreenIce2($useragent, []);
+            return new Highscreen\HighscreenIce2($useragent);
         }
 
         if (preg_match('/explosion/i', $useragent)) {
-            return new Highscreen\HighscreenExplosion($useragent, []);
+            return new Highscreen\HighscreenExplosion($useragent);
         }
 
         if (preg_match('/boost iise/i', $useragent)) {
-            return new Highscreen\HighscreenBoostiiSe($useragent, []);
+            return new Highscreen\HighscreenBoostiiSe($useragent);
         }
 
-        return new Highscreen\Highscreen($useragent, []);
+        return new Highscreen\Highscreen($useragent);
     }
 }

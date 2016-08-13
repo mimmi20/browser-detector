@@ -52,9 +52,9 @@ class MicrosoftFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Windows NT 6\.(2|3)/', $useragent)) {
-            return new Microsoft\WindowsRt8Tablet($useragent, []);
+            return new Microsoft\WindowsRt8Tablet($useragent);
         }
 
-        return new Microsoft\Microsoft($useragent, []);
+        return new Microsoft\Microsoft($useragent);
     }
 }

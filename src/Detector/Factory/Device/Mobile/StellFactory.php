@@ -52,9 +52,9 @@ class StellFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/M260/', $useragent)) {
-            return new Stell\StellM260($useragent, []);
+            return new Stell\StellM260($useragent);
         }
 
-        return new Stell\Stell($useragent, []);
+        return new Stell\Stell($useragent);
     }
 }

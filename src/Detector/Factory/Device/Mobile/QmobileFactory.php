@@ -52,9 +52,9 @@ class QmobileFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ A10 /', $useragent)) {
-            return new Qmobile\QmobileA10($useragent, []);
+            return new Qmobile\QmobileA10($useragent);
         }
 
-        return new Qmobile\Qmobile($useragent, []);
+        return new Qmobile\Qmobile($useragent);
     }
 }

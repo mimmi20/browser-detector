@@ -52,9 +52,9 @@ class NextwayFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/F10X/', $useragent)) {
-            return new Nextway\NextwayF10x($useragent, []);
+            return new Nextway\NextwayF10x($useragent);
         }
 
-        return new Nextway\Nextway($useragent, []);
+        return new Nextway\Nextway($useragent);
     }
 }

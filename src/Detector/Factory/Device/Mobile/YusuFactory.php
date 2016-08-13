@@ -52,9 +52,9 @@ class YusuFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/e1107/i', $useragent)) {
-            return new Yusu\E1107($useragent, []);
+            return new Yusu\E1107($useragent);
         }
 
-        return new Yusu\Yusu($useragent, []);
+        return new Yusu\Yusu($useragent);
     }
 }

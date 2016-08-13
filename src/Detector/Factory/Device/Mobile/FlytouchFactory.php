@@ -52,9 +52,9 @@ class FlytouchFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/(Flytouch 9|Flytouch9)/i', $useragent)) {
-            return new Flytouch\Flytouch9($useragent, []);
+            return new Flytouch\Flytouch9($useragent);
         }
 
-        return new Flytouch\Flytouch($useragent, []);
+        return new Flytouch\Flytouch($useragent);
     }
 }

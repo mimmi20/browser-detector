@@ -52,9 +52,9 @@ class MytabFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Mini 3G/', $useragent)) {
-            return new Mytab\MytabMini3g($useragent, []);
+            return new Mytab\MytabMini3g($useragent);
         }
 
-        return new Mytab\Mytab($useragent, []);
+        return new Mytab\Mytab($useragent);
     }
 }

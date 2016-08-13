@@ -52,13 +52,13 @@ class YuandaoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/N90FHDRK/', $useragent)) {
-            return new Yuandao\YuandaoN90fhdrk($useragent, []);
+            return new Yuandao\YuandaoN90fhdrk($useragent);
         }
 
         if (preg_match('/n90 dual core2/i', $useragent)) {
-            return new Yuandao\YuandaoN90DualCore2($useragent, []);
+            return new Yuandao\YuandaoN90DualCore2($useragent);
         }
 
-        return new Yuandao\Yuandao($useragent, []);
+        return new Yuandao\Yuandao($useragent);
     }
 }

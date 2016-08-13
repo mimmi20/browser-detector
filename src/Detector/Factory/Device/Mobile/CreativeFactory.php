@@ -52,13 +52,13 @@ class CreativeFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ZiiO10/i', $useragent)) {
-            return new Creative\CreativeZiiLabsZiio10($useragent, []);
+            return new Creative\CreativeZiiLabsZiio10($useragent);
         }
 
         if (preg_match('/ZiiO7/i', $useragent)) {
-            return new Creative\CreativeZiiLabsZiio7($useragent, []);
+            return new Creative\CreativeZiiLabsZiio7($useragent);
         }
 
-        return new Creative\Creative($useragent, []);
+        return new Creative\Creative($useragent);
     }
 }

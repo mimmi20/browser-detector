@@ -52,29 +52,29 @@ class PointOfViewFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TAB\-PROTAB25/', $useragent)) {
-            return new PointOfView\PointOfViewProtab25($useragent, []);
+            return new PointOfView\PointOfViewProtab25($useragent);
         }
 
         if (preg_match('/TAB\-PROTAB30/', $useragent)) {
-            return new PointOfView\PointOfViewProtab3xxl($useragent, []);
+            return new PointOfView\PointOfViewProtab3xxl($useragent);
         }
 
         if (preg_match('/tab\-protab2xxl/i', $useragent)) {
-            return new PointOfView\PointOfViewProtab2xxl($useragent, []);
+            return new PointOfView\PointOfViewProtab2xxl($useragent);
         }
 
         if (preg_match('/TAB\-PROTAB2XL/', $useragent)) {
-            return new PointOfView\PointOfViewProtab2xl($useragent, []);
+            return new PointOfView\PointOfViewProtab2xl($useragent);
         }
 
         if (preg_match('/TAB\-PROTAB2\-IPS/', $useragent)) {
-            return new PointOfView\PointOfViewProtab2ips($useragent, []);
+            return new PointOfView\PointOfViewProtab2ips($useragent);
         }
 
         if (preg_match('/PI1045/', $useragent)) {
-            return new PointOfView\PointOfViewPi1045($useragent, []);
+            return new PointOfView\PointOfViewPi1045($useragent);
         }
 
-        return new PointOfView\PointOfView($useragent, []);
+        return new PointOfView\PointOfView($useragent);
     }
 }

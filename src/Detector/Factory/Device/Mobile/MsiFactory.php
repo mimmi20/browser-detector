@@ -52,9 +52,9 @@ class MsiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/primo76/i', $useragent)) {
-            return new Msi\MsiPrimo76($useragent, []);
+            return new Msi\MsiPrimo76($useragent);
         }
 
-        return new Msi\Msi($useragent, []);
+        return new Msi\Msi($useragent);
     }
 }

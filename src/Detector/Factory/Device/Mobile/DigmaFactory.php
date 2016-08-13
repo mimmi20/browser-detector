@@ -52,25 +52,25 @@ class DigmaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Plane 10\.3 3G PS1043MG/', $useragent)) {
-            return new Digma\DigmaPs1043mg($useragent, []);
+            return new Digma\DigmaPs1043mg($useragent);
         }
 
         if (preg_match('/iDxD7/', $useragent)) {
-            return new Digma\DigmaIdxd7($useragent, []);
+            return new Digma\DigmaIdxd7($useragent);
         }
 
         if (preg_match('/iDsD7/', $useragent)) {
-            return new Digma\DigmaIdsd7($useragent, []);
+            return new Digma\DigmaIdsd7($useragent);
         }
 
         if (preg_match('/iDnD7/', $useragent)) {
-            return new Digma\DigmaIdnd7($useragent, []);
+            return new Digma\DigmaIdnd7($useragent);
         }
 
         if (preg_match('/iDjD7/', $useragent)) {
-            return new Digma\DigmaIdjd7($useragent, []);
+            return new Digma\DigmaIdjd7($useragent);
         }
 
-        return new Digma\Digma($useragent, []);
+        return new Digma\Digma($useragent);
     }
 }

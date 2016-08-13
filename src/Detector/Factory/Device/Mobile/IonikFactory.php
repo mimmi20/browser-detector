@@ -52,9 +52,9 @@ class IonikFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/tp10\.1\-1500dc/i', $useragent)) {
-            return new Ionik\IonikTp10($useragent, []);
+            return new Ionik\IonikTp10($useragent);
         }
 
-        return new Ionik\Ionik($useragent, []);
+        return new Ionik\Ionik($useragent);
     }
 }

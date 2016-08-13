@@ -52,9 +52,9 @@ class ReederFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ReederA8R/', $useragent)) {
-            return new Reeder\ReederA8r($useragent, []);
+            return new Reeder\ReederA8r($useragent);
         }
 
-        return new Reeder\Reeder($useragent, []);
+        return new Reeder\Reeder($useragent);
     }
 }

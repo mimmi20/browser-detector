@@ -67,57 +67,57 @@ class DesktopFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if ((new WindowsHelper($useragent))->isWindows()) {
-            return new WindowsDesktop($useragent, []);
+            return new WindowsDesktop($useragent);
         }
 
         if ((new LinuxHelper($useragent))->isLinux()) {
-            return new LinuxDesktop($useragent, []);
+            return new LinuxDesktop($useragent);
         }
 
         if (preg_match('/iMac/', $useragent)) {
-            return new Imac($useragent, []);
+            return new Imac($useragent);
         }
 
         if (preg_match('/macbookpro/i', $useragent)) {
-            return new MacBookPro($useragent, []);
+            return new MacBookPro($useragent);
         }
 
         if (preg_match('/macbookair/i', $useragent)) {
-            return new MacBookAir($useragent, []);
+            return new MacBookAir($useragent);
         }
 
         if (preg_match('/macbook/i', $useragent)) {
-            return new MacBook($useragent, []);
+            return new MacBook($useragent);
         }
 
         if (preg_match('/macmini/i', $useragent)) {
-            return new MacMini($useragent, []);
+            return new MacMini($useragent);
         }
 
         if (preg_match('/macpro/i', $useragent)) {
-            return new MacPro($useragent, []);
+            return new MacPro($useragent);
         }
 
         if (preg_match('/(powermac|power%20macintosh)/i', $useragent)) {
-            return new PowerMac($useragent, []);
+            return new PowerMac($useragent);
         }
 
         if ((new MacintoshHelper($useragent))->isMacintosh()) {
-            return new Macintosh($useragent, []);
+            return new Macintosh($useragent);
         }
 
         if (preg_match('/eeepc/i', $useragent)) {
-            return new EeePc($useragent, []);
+            return new EeePc($useragent);
         }
 
         if (preg_match('/hp\-ux 9000/i', $useragent)) {
-            return new Hp9000($useragent, []);
+            return new Hp9000($useragent);
         }
 
         if (preg_match('/Dillo/', $useragent)) {
-            return new LinuxDesktop($useragent, []);
+            return new LinuxDesktop($useragent);
         }
 
-        return new GeneralDesktop($useragent, []);
+        return new GeneralDesktop($useragent);
     }
 }

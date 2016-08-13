@@ -52,17 +52,17 @@ class IrbisFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TX68/', $useragent)) {
-            return new Irbis\IrbisTx68($useragent, []);
+            return new Irbis\IrbisTx68($useragent);
         }
 
         if (preg_match('/TX17/', $useragent)) {
-            return new Irbis\IrbisTx17($useragent, []);
+            return new Irbis\IrbisTx17($useragent);
         }
 
         if (preg_match('/TG97/', $useragent)) {
-            return new Irbis\IrbisTg97($useragent, []);
+            return new Irbis\IrbisTg97($useragent);
         }
 
-        return new Irbis\Irbis($useragent, []);
+        return new Irbis\Irbis($useragent);
     }
 }

@@ -52,21 +52,21 @@ class VericoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/KM\-UQM11A/', $useragent)) {
-            return new Verico\VericoUqm11a($useragent, []);
+            return new Verico\VericoUqm11a($useragent);
         }
 
         if (preg_match('/RP\-UDM02A/', $useragent)) {
-            return new Verico\VericoRpUdm02a($useragent, []);
+            return new Verico\VericoRpUdm02a($useragent);
         }
 
         if (preg_match('/RP\-UDM01A/', $useragent)) {
-            return new Verico\VericoRpUdm01a($useragent, []);
+            return new Verico\VericoRpUdm01a($useragent);
         }
 
         if (preg_match('/UQ785\-M1BGV/', $useragent)) {
-            return new Verico\VericoM1bgv($useragent, []);
+            return new Verico\VericoM1bgv($useragent);
         }
 
-        return new Verico\Verico($useragent, []);
+        return new Verico\Verico($useragent);
     }
 }

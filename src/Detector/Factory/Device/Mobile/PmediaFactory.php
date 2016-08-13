@@ -52,9 +52,9 @@ class PmediaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/pmsmart450/i', $useragent)) {
-            return new Pmedia\PmediaPmSmart450($useragent, []);
+            return new Pmedia\PmediaPmSmart450($useragent);
         }
 
-        return new Pmedia\Pmedia($useragent, []);
+        return new Pmedia\Pmedia($useragent);
     }
 }

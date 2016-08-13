@@ -52,9 +52,9 @@ class KazamFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/trooper2 50/i', $useragent)) {
-            return new Kazam\KazamTrooper250($useragent, []);
+            return new Kazam\KazamTrooper250($useragent);
         }
 
-        return new Kazam\Kazam($useragent, []);
+        return new Kazam\Kazam($useragent);
     }
 }

@@ -52,9 +52,9 @@ class LogicomFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/S9782/', $useragent)) {
-            return new Logicom\LogicomS9782($useragent, []);
+            return new Logicom\LogicomS9782($useragent);
         }
 
-        return new Logicom\Logicom($useragent, []);
+        return new Logicom\Logicom($useragent);
     }
 }

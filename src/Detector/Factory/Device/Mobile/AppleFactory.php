@@ -52,25 +52,25 @@ class AppleFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ipod/i', $useragent)) {
-            return new Apple\Ipod($useragent, []);
+            return new Apple\Ipod($useragent);
         }
 
         if (preg_match('/ipad/i', $useragent)) {
-            return new Apple\Ipad($useragent, []);
+            return new Apple\Ipad($useragent);
         }
 
         if (preg_match('/iph/i', $useragent)) {
-            return new Apple\Iphone($useragent, []);
+            return new Apple\Iphone($useragent);
         }
 
         if (preg_match('/Puffin\/[\d\.]+IT/', $useragent)) {
-            return new Apple\Ipad($useragent, []);
+            return new Apple\Ipad($useragent);
         }
 
         if (preg_match('/Puffin\/[\d\.]+IP/', $useragent)) {
-            return new Apple\Iphone($useragent, []);
+            return new Apple\Iphone($useragent);
         }
 
-        return new Apple\Apple($useragent, []);
+        return new Apple\Apple($useragent);
     }
 }

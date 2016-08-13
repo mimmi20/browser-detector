@@ -52,17 +52,17 @@ class ZekiFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TBDC1093/', $useragent)) {
-            return new Zeki\ZekiTbdc1093($useragent, []);
+            return new Zeki\ZekiTbdc1093($useragent);
         }
 
         if (preg_match('/TBDB863/', $useragent)) {
-            return new Zeki\ZekiTbdb863($useragent, []);
+            return new Zeki\ZekiTbdb863($useragent);
         }
 
         if (preg_match('/TBD1083/', $useragent)) {
-            return new Zeki\ZekiTbd1083($useragent, []);
+            return new Zeki\ZekiTbd1083($useragent);
         }
 
-        return new Zeki\Zeki($useragent, []);
+        return new Zeki\Zeki($useragent);
     }
 }

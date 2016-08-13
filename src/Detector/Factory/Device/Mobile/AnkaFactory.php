@@ -52,9 +52,9 @@ class AnkaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SX5/', $useragent)) {
-            return new Anka\AnkaSx5($useragent, []);
+            return new Anka\AnkaSx5($useragent);
         }
 
-        return new Anka\Anka($useragent, []);
+        return new Anka\Anka($useragent);
     }
 }

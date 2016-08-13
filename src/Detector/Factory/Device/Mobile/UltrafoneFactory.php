@@ -52,9 +52,9 @@ class UltrafoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/303/i', $useragent)) {
-            return new Ultrafone\Ultrafone303($useragent, []);
+            return new Ultrafone\Ultrafone303($useragent);
         }
 
-        return new Ultrafone\Ultrafone($useragent, []);
+        return new Ultrafone\Ultrafone($useragent);
     }
 }

@@ -52,9 +52,9 @@ class JaytechFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/tpc\-pa10\.1m/i', $useragent)) {
-            return new Jaytech\JaytechTpcPa10($useragent, []);
+            return new Jaytech\JaytechTpcPa10($useragent);
         }
 
-        return new Jaytech\Jaytech($useragent, []);
+        return new Jaytech\Jaytech($useragent);
     }
 }

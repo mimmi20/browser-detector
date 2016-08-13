@@ -52,13 +52,13 @@ class CaterpillarFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/B15Q/i', $useragent)) {
-            return new Caterpillar\CaterpillarB15q($useragent, []);
+            return new Caterpillar\CaterpillarB15q($useragent);
         }
 
         if (preg_match('/B15/i', $useragent)) {
-            return new Caterpillar\CaterpillarB15($useragent, []);
+            return new Caterpillar\CaterpillarB15($useragent);
         }
 
-        return new Caterpillar\Caterpillar($useragent, []);
+        return new Caterpillar\Caterpillar($useragent);
     }
 }

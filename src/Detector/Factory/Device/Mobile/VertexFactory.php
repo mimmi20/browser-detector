@@ -52,9 +52,9 @@ class VertexFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/impress\_l/i', $useragent)) {
-            return new Vertex\VertexImpressL($useragent, []);
+            return new Vertex\VertexImpressL($useragent);
         }
 
-        return new Vertex\Vertex($useragent, []);
+        return new Vertex\Vertex($useragent);
     }
 }

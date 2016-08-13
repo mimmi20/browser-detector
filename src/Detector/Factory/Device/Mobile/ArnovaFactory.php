@@ -52,45 +52,45 @@ class ArnovaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/101 g4/i', $useragent)) {
-            return new Arnova\Arnova101G4($useragent, []);
+            return new Arnova\Arnova101G4($useragent);
         }
 
         if (preg_match('/AN10DG3/i', $useragent)) {
-            return new Arnova\Arnova10DG3($useragent, []);
+            return new Arnova\Arnova10DG3($useragent);
         }
 
         if (preg_match('/AN10BG3/i', $useragent)) {
-            return new Arnova\Arnova10BG3($useragent, []);
+            return new Arnova\Arnova10BG3($useragent);
         }
 
         if (preg_match('/AN9G2I/i', $useragent)) {
-            return new Arnova\Arnova9G2I($useragent, []);
+            return new Arnova\Arnova9G2I($useragent);
         }
 
         if (preg_match('/AN7FG3/i', $useragent)) {
-            return new Arnova\Arnova7FG3($useragent, []);
+            return new Arnova\Arnova7FG3($useragent);
         }
 
         if (preg_match('/AN7EG3/i', $useragent)) {
-            return new Arnova\Arnova7EG3($useragent, []);
+            return new Arnova\Arnova7EG3($useragent);
         }
 
         if (preg_match('/AN7DG3/i', $useragent)) {
-            return new Arnova\Arnova7DG3($useragent, []);
+            return new Arnova\Arnova7DG3($useragent);
         }
 
         if (preg_match('/AN7CG2/i', $useragent)) {
-            return new Arnova\Arnova7CG2($useragent, []);
+            return new Arnova\Arnova7CG2($useragent);
         }
 
         if (preg_match('/AN7BG2DT/i', $useragent)) {
-            return new Arnova\Arnova7BG2DT($useragent, []);
+            return new Arnova\Arnova7BG2DT($useragent);
         }
 
         if (preg_match('/ARCHM901/i', $useragent)) {
-            return new Arnova\ArnovaArchm901($useragent, []);
+            return new Arnova\ArnovaArchm901($useragent);
         }
 
-        return new Arnova\Arnova($useragent, []);
+        return new Arnova\Arnova($useragent);
     }
 }

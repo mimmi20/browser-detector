@@ -52,21 +52,21 @@ class OvermaxFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SteelCore\-B/', $useragent)) {
-            return new Overmax\OvermaxSteelCore($useragent, []);
+            return new Overmax\OvermaxSteelCore($useragent);
         }
 
         if (preg_match('/Solution 10II/', $useragent)) {
-            return new Overmax\OvermaxSolution10ii3g($useragent, []);
+            return new Overmax\OvermaxSolution10ii3g($useragent);
         }
 
         if (preg_match('/Solution 7III/', $useragent)) {
-            return new Overmax\OvermaxSolution7iii($useragent, []);
+            return new Overmax\OvermaxSolution7iii($useragent);
         }
 
         if (preg_match('/Quattor 10\+/', $useragent)) {
-            return new Overmax\OvermaxQuattor10($useragent, []);
+            return new Overmax\OvermaxQuattor10($useragent);
         }
 
-        return new Overmax\Overmax($useragent, []);
+        return new Overmax\Overmax($useragent);
     }
 }

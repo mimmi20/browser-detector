@@ -52,9 +52,9 @@ class IruFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/M5301/', $useragent)) {
-            return new Iru\IruM5301($useragent, []);
+            return new Iru\IruM5301($useragent);
         }
 
-        return new Iru\Iru($useragent, []);
+        return new Iru\Iru($useragent);
     }
 }

@@ -52,9 +52,9 @@ class GfiveFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/president g10 fashion/i', $useragent)) {
-            return new Gfive\GfivePresidentG10Fashion($useragent, []);
+            return new Gfive\GfivePresidentG10Fashion($useragent);
         }
 
-        return new Gfive\Gfive($useragent, []);
+        return new Gfive\Gfive($useragent);
     }
 }

@@ -52,9 +52,9 @@ class BmobileFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/AX540/', $useragent)) {
-            return new Bmobile\BmobileAx540($useragent, []);
+            return new Bmobile\BmobileAx540($useragent);
         }
 
-        return new Bmobile\Bmobile($useragent, []);
+        return new Bmobile\Bmobile($useragent);
     }
 }

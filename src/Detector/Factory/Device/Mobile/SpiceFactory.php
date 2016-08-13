@@ -52,9 +52,9 @@ class SpiceFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/mi\-424/i', $useragent)) {
-            return new Spice\SpiceMi424($useragent, []);
+            return new Spice\SpiceMi424($useragent);
         }
 
-        return new Spice\Spice($useragent, []);
+        return new Spice\Spice($useragent);
     }
 }

@@ -31,10 +31,9 @@
 
 namespace BrowserDetector\Detector\Browser;
 
-use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Engine;
+use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
-use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use UaBrowserType;
 use UaHelper\Utils;

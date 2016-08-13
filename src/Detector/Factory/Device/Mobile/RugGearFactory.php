@@ -52,9 +52,9 @@ class RugGearFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/RG500/', $useragent)) {
-            return new RugGear\RugGearRg500($useragent, []);
+            return new RugGear\RugGearRg500($useragent);
         }
 
-        return new RugGear\RugGear($useragent, []);
+        return new RugGear\RugGear($useragent);
     }
 }

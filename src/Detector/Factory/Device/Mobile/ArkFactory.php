@@ -52,9 +52,9 @@ class ArkFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/Benefit M3S/', $useragent)) {
-            return new Ark\ArkBenefitM3s($useragent, []);
+            return new Ark\ArkBenefitM3s($useragent);
         }
 
-        return new Ark\Ark($useragent, []);
+        return new Ark\Ark($useragent);
     }
 }

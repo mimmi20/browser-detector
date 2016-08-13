@@ -31,10 +31,10 @@
 
 namespace BrowserDetector\Detector\Factory\Platform;
 
+use BrowserDetector\Detector\Bits\Os as OsBits;
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Detector\Bits\Os as OsBits;
 use BrowserDetector\Version\VersionFactory;
 
 /**

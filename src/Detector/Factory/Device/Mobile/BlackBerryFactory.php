@@ -52,153 +52,153 @@ class BlackBerryFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/BB10; Kbd/i', $useragent)) {
-            return new BlackBerry\BlackBerryKbd($useragent, []);
+            return new BlackBerry\BlackBerryKbd($useragent);
         }
 
         if (preg_match('/BB10; Touch/i', $useragent)) {
-            return new BlackBerry\BlackBerryZ10($useragent, []);
+            return new BlackBerry\BlackBerryZ10($useragent);
         }
 
         if (preg_match('/PlayBook/i', $useragent)) {
-            return new BlackBerry\RimPlayBook($useragent, []);
+            return new BlackBerry\RimPlayBook($useragent);
         }
 
         if (preg_match('/RIM Tablet/i', $useragent)) {
-            return new BlackBerry\RimTablet($useragent, []);
+            return new BlackBerry\RimTablet($useragent);
         }
 
         if (preg_match('/9981/i', $useragent)) {
-            return new BlackBerry\BlackBerry9981($useragent, []);
+            return new BlackBerry\BlackBerry9981($useragent);
         }
 
         if (preg_match('/9900/i', $useragent)) {
-            return new BlackBerry\BlackBerry9900($useragent, []);
+            return new BlackBerry\BlackBerry9900($useragent);
         }
 
         if (preg_match('/9860/i', $useragent)) {
-            return new BlackBerry\BlackBerry9860($useragent, []);
+            return new BlackBerry\BlackBerry9860($useragent);
         }
 
         if (preg_match('/9810/i', $useragent)) {
-            return new BlackBerry\BlackBerry9810($useragent, []);
+            return new BlackBerry\BlackBerry9810($useragent);
         }
 
         if (preg_match('/9800/i', $useragent)) {
-            return new BlackBerry\BlackBerry9800($useragent, []);
+            return new BlackBerry\BlackBerry9800($useragent);
         }
 
         if (preg_match('/9790/i', $useragent)) {
-            return new BlackBerry\BlackBerry9790($useragent, []);
+            return new BlackBerry\BlackBerry9790($useragent);
         }
 
         if (preg_match('/9780/i', $useragent)) {
-            return new BlackBerry\BlackBerry9780($useragent, []);
+            return new BlackBerry\BlackBerry9780($useragent);
         }
 
         if (preg_match('/9700/i', $useragent)) {
-            return new BlackBerry\BlackBerry9700($useragent, []);
+            return new BlackBerry\BlackBerry9700($useragent);
         }
 
         if (preg_match('/9670/i', $useragent)) {
-            return new BlackBerry\BlackBerry9670($useragent, []);
+            return new BlackBerry\BlackBerry9670($useragent);
         }
 
         if (preg_match('/9630/i', $useragent)) {
-            return new BlackBerry\BlackBerry9630($useragent, []);
+            return new BlackBerry\BlackBerry9630($useragent);
         }
 
         if (preg_match('/9550/i', $useragent)) {
-            return new BlackBerry\BlackBerry9550($useragent, []);
+            return new BlackBerry\BlackBerry9550($useragent);
         }
 
         if (preg_match('/9520/i', $useragent)) {
-            return new BlackBerry\BlackBerry9520($useragent, []);
+            return new BlackBerry\BlackBerry9520($useragent);
         }
 
         if (preg_match('/9500/i', $useragent)) {
-            return new BlackBerry\BlackBerry9500($useragent, []);
+            return new BlackBerry\BlackBerry9500($useragent);
         }
 
         if (preg_match('/9380/i', $useragent)) {
-            return new BlackBerry\BlackBerry9380($useragent, []);
+            return new BlackBerry\BlackBerry9380($useragent);
         }
 
         if (preg_match('/9360/i', $useragent)) {
-            return new BlackBerry\BlackBerry9360($useragent, []);
+            return new BlackBerry\BlackBerry9360($useragent);
         }
 
         if (preg_match('/9320/i', $useragent)) {
-            return new BlackBerry\BlackBerry9320($useragent, []);
+            return new BlackBerry\BlackBerry9320($useragent);
         }
 
         if (preg_match('/9300/i', $useragent)) {
-            return new BlackBerry\BlackBerry9300($useragent, []);
+            return new BlackBerry\BlackBerry9300($useragent);
         }
 
         if (preg_match('/9220/i', $useragent)) {
-            return new BlackBerry\BlackBerry9220($useragent, []);
+            return new BlackBerry\BlackBerry9220($useragent);
         }
 
         if (preg_match('/9105/i', $useragent)) {
-            return new BlackBerry\BlackBerry9105($useragent, []);
+            return new BlackBerry\BlackBerry9105($useragent);
         }
 
         if (preg_match('/9000/i', $useragent)) {
-            return new BlackBerry\BlackBerry9000($useragent, []);
+            return new BlackBerry\BlackBerry9000($useragent);
         }
 
         if (preg_match('/8900/i', $useragent)) {
-            return new BlackBerry\BlackBerry8900($useragent, []);
+            return new BlackBerry\BlackBerry8900($useragent);
         }
 
         if (preg_match('/8830/i', $useragent)) {
-            return new BlackBerry\BlackBerry8830($useragent, []);
+            return new BlackBerry\BlackBerry8830($useragent);
         }
 
         if (preg_match('/8800/i', $useragent)) {
-            return new BlackBerry\BlackBerry8800($useragent, []);
+            return new BlackBerry\BlackBerry8800($useragent);
         }
 
         if (preg_match('/8700/i', $useragent)) {
-            return new BlackBerry\BlackBerry8700($useragent, []);
+            return new BlackBerry\BlackBerry8700($useragent);
         }
 
         if (preg_match('/8530/i', $useragent)) {
-            return new BlackBerry\BlackBerry8530($useragent, []);
+            return new BlackBerry\BlackBerry8530($useragent);
         }
 
         if (preg_match('/8520/i', $useragent)) {
-            return new BlackBerry\BlackBerry8520($useragent, []);
+            return new BlackBerry\BlackBerry8520($useragent);
         }
 
         if (preg_match('/8350i/i', $useragent)) {
-            return new BlackBerry\BlackBerry8350i($useragent, []);
+            return new BlackBerry\BlackBerry8350i($useragent);
         }
 
         if (preg_match('/8310/i', $useragent)) {
-            return new BlackBerry\BlackBerry8310($useragent, []);
+            return new BlackBerry\BlackBerry8310($useragent);
         }
 
         if (preg_match('/8230/i', $useragent)) {
-            return new BlackBerry\BlackBerry8230($useragent, []);
+            return new BlackBerry\BlackBerry8230($useragent);
         }
 
         if (preg_match('/8110/i', $useragent)) {
-            return new BlackBerry\BlackBerry8110($useragent, []);
+            return new BlackBerry\BlackBerry8110($useragent);
         }
 
         if (preg_match('/8100/i', $useragent)) {
-            return new BlackBerry\BlackBerry8100($useragent, []);
+            return new BlackBerry\BlackBerry8100($useragent);
         }
 
         if (preg_match('/7520/i', $useragent)) {
-            return new BlackBerry\BlackBerry7520($useragent, []);
+            return new BlackBerry\BlackBerry7520($useragent);
         }
 
         if (preg_match('/7130/i', $useragent)) {
-            return new BlackBerry\BlackBerry7130($useragent, []);
+            return new BlackBerry\BlackBerry7130($useragent);
         }
 
-        return new BlackBerry\BlackBerry($useragent, []);
+        return new BlackBerry\BlackBerry($useragent);
     }
 }

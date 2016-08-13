@@ -52,9 +52,9 @@ class CoolpadFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/N930/i', $useragent)) {
-            return new Coolpad\CoolpadN930($useragent, []);
+            return new Coolpad\CoolpadN930($useragent);
         }
 
-        return new Coolpad\Coolpad($useragent, []);
+        return new Coolpad\Coolpad($useragent);
     }
 }

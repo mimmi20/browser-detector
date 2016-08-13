@@ -52,17 +52,17 @@ class TolinoFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/tab 8\.9/i', $useragent)) {
-            return new Tolino\TolinoTab89($useragent, []);
+            return new Tolino\TolinoTab89($useragent);
         }
 
         if (preg_match('/tab 7/i', $useragent)) {
-            return new Tolino\TolinoTab7($useragent, []);
+            return new Tolino\TolinoTab7($useragent);
         }
 
         if (preg_match('/tolino/i', $useragent)) {
-            return new Tolino\TolinoShine($useragent, []);
+            return new Tolino\TolinoShine($useragent);
         }
 
-        return new Tolino\Tolino($useragent, []);
+        return new Tolino\Tolino($useragent);
     }
 }

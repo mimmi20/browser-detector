@@ -52,9 +52,9 @@ class MegaFonFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/SP\-AI/', $useragent)) {
-            return new MegaFon\MegaFonSpai($useragent, []);
+            return new MegaFon\MegaFonSpai($useragent);
         }
 
-        return new MegaFon\MegaFon($useragent, []);
+        return new MegaFon\MegaFon($useragent);
     }
 }

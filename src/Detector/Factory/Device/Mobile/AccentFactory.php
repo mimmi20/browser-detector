@@ -52,9 +52,9 @@ class AccentFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/TOUAREG8\_3G/i', $useragent)) {
-            return new Accent\AccentTouareg83g($useragent, []);
+            return new Accent\AccentTouareg83g($useragent);
         }
 
-        return new Accent\Accent($useragent, []);
+        return new Accent\Accent($useragent);
     }
 }

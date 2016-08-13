@@ -73,7 +73,7 @@ class MicrosoftInternetExplorer
      */
     public static function detectVersion($useragent)
     {
-        $engine = new \BrowserDetector\Detector\Engine\Trident($useragent, []);
+        $engine = new \BrowserDetector\Detector\Engine\Trident($useragent);
 
         $engineVersion = (int) $engine->getVersion()->getMajor();
 

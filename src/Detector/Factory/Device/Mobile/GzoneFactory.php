@@ -52,9 +52,9 @@ class GzoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/cal21/i', $useragent)) {
-            return new Gzone\GzoneCal21($useragent, []);
+            return new Gzone\GzoneCal21($useragent);
         }
 
-        return new Gzone\Gzone($useragent, []);
+        return new Gzone\Gzone($useragent);
     }
 }

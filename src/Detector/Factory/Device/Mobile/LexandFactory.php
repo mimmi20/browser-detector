@@ -52,13 +52,13 @@ class LexandFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/A1002/', $useragent)) {
-            return new Lexand\LexandA1002($useragent, []);
+            return new Lexand\LexandA1002($useragent);
         }
 
         if (preg_match('/A811/', $useragent)) {
-            return new Lexand\LexandA811($useragent, []);
+            return new Lexand\LexandA811($useragent);
         }
 
-        return new Lexand\Lexand($useragent, []);
+        return new Lexand\Lexand($useragent);
     }
 }

@@ -52,9 +52,9 @@ class SunstechFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/tab917qc\-8gb/i', $useragent)) {
-            return new Sunstech\SunstechTab917qc8gb($useragent, []);
+            return new Sunstech\SunstechTab917qc8gb($useragent);
         }
 
-        return new Sunstech\Sunstech($useragent, []);
+        return new Sunstech\Sunstech($useragent);
     }
 }

@@ -52,9 +52,9 @@ class HiPhoneFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/V919/i', $useragent)) {
-            return new HiPhone\HiPhoneV919($useragent, []);
+            return new HiPhone\HiPhoneV919($useragent);
         }
 
-        return new HiPhone\HiPhone($useragent, []);
+        return new HiPhone\HiPhone($useragent);
     }
 }

@@ -52,9 +52,9 @@ class XoloFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/a1000s/i', $useragent)) {
-            return new Xolo\XoloA1000s($useragent, []);
+            return new Xolo\XoloA1000s($useragent);
         }
 
-        return new Xolo\Xolo($useragent, []);
+        return new Xolo\Xolo($useragent);
     }
 }

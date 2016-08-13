@@ -52,13 +52,13 @@ class BarnesNobleFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/BN NookHD\+/i', $useragent)) {
-            return new BarnesNoble\BnNookhd($useragent, []);
+            return new BarnesNoble\BnNookhd($useragent);
         }
 
         if (preg_match('/BNRV200/i', $useragent)) {
-            return new BarnesNoble\BnRv200($useragent, []);
+            return new BarnesNoble\BnRv200($useragent);
         }
 
-        return new BarnesNoble\BarnesNoble($useragent, []);
+        return new BarnesNoble\BarnesNoble($useragent);
     }
 }

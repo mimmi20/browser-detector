@@ -52,9 +52,9 @@ class EfoxFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/smart\-e5/i', $useragent)) {
-            return new Efox\EfoxSmartE5($useragent, []);
+            return new Efox\EfoxSmartE5($useragent);
         }
 
-        return new Efox\Efox($useragent, []);
+        return new Efox\Efox($useragent);
     }
 }

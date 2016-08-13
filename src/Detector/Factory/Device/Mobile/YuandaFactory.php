@@ -52,13 +52,13 @@ class YuandaFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/N90FHDRK/', $useragent)) {
-            return new Yuanda\YuandaN90fhdrk($useragent, []);
+            return new Yuanda\YuandaN90fhdrk($useragent);
         }
 
         if (preg_match('/yuanda50/i', $useragent)) {
-            return new Yuanda\Yuanda50($useragent, []);
+            return new Yuanda\Yuanda50($useragent);
         }
 
-        return new Yuanda\Yuanda($useragent, []);
+        return new Yuanda\Yuanda($useragent);
     }
 }

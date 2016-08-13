@@ -52,9 +52,9 @@ class MalataFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/I50/', $useragent)) {
-            return new Malata\MalataI50($useragent, []);
+            return new Malata\MalataI50($useragent);
         }
 
-        return new Malata\Malata($useragent, []);
+        return new Malata\Malata($useragent);
     }
 }

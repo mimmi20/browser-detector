@@ -52,9 +52,9 @@ class OrangeFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/funtab 8/i', $useragent)) {
-            return new Orange\OrangeFunTab8($useragent, []);
+            return new Orange\OrangeFunTab8($useragent);
         }
 
-        return new Orange\Orange($useragent, []);
+        return new Orange\Orange($useragent);
     }
 }

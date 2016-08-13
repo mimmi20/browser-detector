@@ -52,9 +52,9 @@ class GioneeFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/ M3 /', $useragent)) {
-            return new Gionee\GioneeMarathonM3($useragent, []);
+            return new Gionee\GioneeMarathonM3($useragent);
         }
 
-        return new Gionee\Gionee($useragent, []);
+        return new Gionee\Gionee($useragent);
     }
 }

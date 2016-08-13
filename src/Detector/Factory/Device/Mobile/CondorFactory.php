@@ -52,9 +52,9 @@ class CondorFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/CTAB785R16\-3G/', $useragent)) {
-            return new Condor\CondorCtab785r163g($useragent, []);
+            return new Condor\CondorCtab785r163g($useragent);
         }
 
-        return new Condor\Condor($useragent, []);
+        return new Condor\Condor($useragent);
     }
 }

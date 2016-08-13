@@ -52,9 +52,9 @@ class HannspreeFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/sn10t1/i', $useragent)) {
-            return new Hannspree\HannspreeHannspad($useragent, []);
+            return new Hannspree\HannspreeHannspad($useragent);
         }
 
-        return new Hannspree\Hannspree($useragent, []);
+        return new Hannspree\Hannspree($useragent);
     }
 }
