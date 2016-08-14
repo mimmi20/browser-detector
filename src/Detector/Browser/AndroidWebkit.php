@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,7 +55,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->useragent                   = $useragent;
         $this->name                        = 'Android Webkit';
         $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\AndroidWebkit::detectVersion($useragent);
+        $this->version                     = Version\AndroidWebkit::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;

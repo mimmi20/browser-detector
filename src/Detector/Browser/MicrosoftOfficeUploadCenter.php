@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,7 +55,7 @@ class MicrosoftOfficeUploadCenter extends AbstractBrowser implements BrowserHasS
         $this->useragent                   = $useragent;
         $this->name                        = 'Office Upload Center';
         $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftOfficeUploadCenter::detectVersion($useragent);
+        $this->version                     = Version\MicrosoftOfficeUploadCenter::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;

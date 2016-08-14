@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -50,7 +51,7 @@ class AndroidOs extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'Android';
-        $this->version      = \BrowserDetector\Detector\Version\AndroidOs::detectVersion($useragent);
+        $this->version      = Version\AndroidOs::detectVersion($useragent);
         $this->manufacturer = CompanyFactory::get('Google')->getName();
     }
 }

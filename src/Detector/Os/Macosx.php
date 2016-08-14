@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -57,7 +58,7 @@ class Macosx extends AbstractOs
         if (null !== $version && is_string($version)) {
             $this->version = VersionFactory::set($version);
         } else {
-            $this->version = \BrowserDetector\Detector\Version\Macosx::detectVersion($useragent);
+            $this->version = Version\Macosx::detectVersion($useragent);
         }
     }
 }

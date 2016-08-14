@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,7 +55,7 @@ class MicrosoftVisio extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->useragent                   = $useragent;
         $this->name                        = 'Visio';
         $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftVisio::detectVersion($useragent);
+        $this->version                     = Version\MicrosoftVisio::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;

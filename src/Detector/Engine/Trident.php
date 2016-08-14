@@ -33,6 +33,7 @@ namespace BrowserDetector\Detector\Engine;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Engine\Engine;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -51,7 +52,7 @@ class Trident extends Engine
     {
         $this->useragent    = $useragent;
         $this->name         = 'Trident';
-        $this->version      = \BrowserDetector\Detector\Version\Trident::detectVersion($useragent);
+        $this->version      = Version\Trident::detectVersion($useragent);
         $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
     }
 }

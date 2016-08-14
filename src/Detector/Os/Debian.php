@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -50,7 +51,7 @@ class Debian extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'Debian';
-        $this->version      = \BrowserDetector\Detector\Version\Debian::detectVersion($useragent);
+        $this->version      = Version\Debian::detectVersion($useragent);
         $this->manufacturer = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
     }
 }

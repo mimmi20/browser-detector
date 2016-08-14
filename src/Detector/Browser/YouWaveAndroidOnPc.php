@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,7 +55,7 @@ class YouWaveAndroidOnPc extends AbstractBrowser implements BrowserHasSpecificEn
         $this->useragent                   = $useragent;
         $this->name                        = 'YouWave Android on PC';
         $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\YouWaveAndroidOnPc::detectVersion($useragent);
+        $this->version                     = Version\YouWaveAndroidOnPc::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('YouWave')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;

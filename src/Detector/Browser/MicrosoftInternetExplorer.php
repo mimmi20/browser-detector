@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,7 +55,7 @@ class MicrosoftInternetExplorer extends AbstractBrowser implements BrowserHasSpe
         $this->useragent                   = $useragent;
         $this->name                        = 'Internet Explorer';
         $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\MicrosoftInternetExplorer::detectVersion($useragent);
+        $this->version                     = Version\MicrosoftInternetExplorer::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;

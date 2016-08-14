@@ -32,6 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -50,7 +51,7 @@ class RimOs extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'RIM OS';
-        $this->version      = \BrowserDetector\Detector\Version\RimOs::detectVersion($useragent);
+        $this->version      = Version\RimOs::detectVersion($useragent);
         $this->manufacturer = CompanyFactory::get('Rim')->getName();
     }
 }

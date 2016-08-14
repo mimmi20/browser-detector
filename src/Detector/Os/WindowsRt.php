@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Detector\Version\Windows;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -51,7 +51,7 @@ class WindowsRt extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->name         = 'Windows RT';
-        $this->version      = Windows::detectVersion($useragent);
+        $this->version      = Version\Windows::detectVersion($useragent);
         $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
     }
 }

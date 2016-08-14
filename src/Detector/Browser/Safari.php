@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -54,7 +55,7 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Safari';
         $this->modus                       = null;
-        $this->version                     = \BrowserDetector\Detector\Version\Safari::detectVersion($useragent);
+        $this->version                     = Version\Safari::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Apple')->getName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
