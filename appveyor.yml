@@ -1,0 +1,47 @@
+build: false
+
+# branches to build
+branches:
+  # whitelist
+  #only:
+  #  - master
+  #  - production
+
+  # blacklist
+  except:
+    - gh-pages
+
+platform:
+  - x86
+  - x64
+  - Any CPU
+
+init:
+    - SET PATH=c:\tools\php;%PATH%
+    - SET COMPOSER_NO_INTERACTION=1
+    - SET PHP=1
+    - SET ANSICON=121x90 (121x90)
+
+clone_folder: c:\projects\browser-detector
+
+shallow_clone: true
+
+cache:
+    - c:\tools\php -> appveyor.yml
+
+install:
+    - IF EXIST c:\tools\php (SET PHP=0)
+    - IF %PHP%==1 cinst -y php
+    - cd c:\tools\php
+    - IF %PHP%==1 copy php.ini-production php.ini /Y
+    - IF %PHP%==1 echo date.timezone="UTC" >> php.ini
+    - IF %PHP%==1 echo extension_dir=ext >> php.ini
+    - IF %PHP%==1 echo @php %%~dp0composer.phar %%* > composer.bat
+    - appveyor DownloadFile https://getcomposer.org/composer.phar
+    - cd c:\projects\browser-detector
+    - composer install --prefer-dist --prefer-stable --no-progress
+
+test_script:
+    - cd c:\projects\browser-detector
+    - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --colors --verbose --coverage-text
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --colors --verbose
