@@ -34,7 +34,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '3.5',
-            'Platform_Name'           => 'MacOSX',
+            'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => '10.6.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

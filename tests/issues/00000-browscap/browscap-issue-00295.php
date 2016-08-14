@@ -202,7 +202,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '3.51',
-            'Platform_Name'           => 'WinNT',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '4.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

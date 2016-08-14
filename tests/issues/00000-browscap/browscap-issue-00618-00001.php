@@ -610,7 +610,7 @@ return [
             'Browser_Maker'           => 'Nokia',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '8.3',
-            'Platform_Name'           => 'SymbianOS',
+            'Platform_Name'           => 'Symbian OS',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Symbian Foundation',

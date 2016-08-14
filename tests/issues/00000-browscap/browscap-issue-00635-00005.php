@@ -2026,7 +2026,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '7.1',
-            'Platform_Name'           => 'SymbianOS',
+            'Platform_Name'           => 'Symbian OS',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Symbian Foundation',

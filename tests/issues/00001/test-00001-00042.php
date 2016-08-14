@@ -178,7 +178,7 @@ return [
             'Browser_Maker'           => 'UC Web',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '8.7',
-            'Platform_Name'           => 'JAVA',
+            'Platform_Name'           => 'Java',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Oracle',

@@ -214,6 +214,31 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Linux Smartphone OS (Maemo)',
                 '0.0.0',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.4.4; MI PAD MIUI/5.11.1)',
+                'Miui OS',
+                '5.11.1',
+            ],
+            [
+                'Mozilla/4.0 (compatible; Windows Mobile; WCE; Opera Mobi/WMD-50433; U; de) Presto/2.4.13 Version/10.00',
+                'Windows Mobile OS',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/4.77C-SGI [en] (X11; I; IRIX64 6.5 IP30)',
+                'IRIX',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/4.77 [en] (X11; U; HP-UX B.11.00 9000/800)',
+                'HP-UX',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/5.0 (X11; U; OSF1 alpha; en-US; rv:0.9.4.1) Gecko/20020517 Netscape6/6.2.3',
+                'Tru64 UNIX',
+                '0.0.0',
+            ],
         ];
     }
 }

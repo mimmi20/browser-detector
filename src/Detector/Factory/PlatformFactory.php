@@ -143,6 +143,10 @@ class PlatformFactory implements FactoryInterface
             return new Os\Java($agent);
         }
 
+        if (preg_match('/MIUI/', $agent)) {
+            return new Os\MiuiOs($agent);
+        }
+
         if (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $agent)) {
             return new Os\AndroidOs($agent);
         }

@@ -994,7 +994,7 @@ return [
             'Browser_Maker'           => 'UCWeb Inc.',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.2',
-            'Platform_Name'           => 'WinPhone8.1',
+            'Platform_Name'           => 'Windows Mobile OS',
             'Platform_Version'        => '8.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

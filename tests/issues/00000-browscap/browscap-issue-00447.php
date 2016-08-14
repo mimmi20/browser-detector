@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '6.2',
-            'Platform_Name'           => 'MacOSX',
+            'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => '10.8.5',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

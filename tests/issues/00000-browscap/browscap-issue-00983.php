@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Vivaldi Technologies',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '1.1',
-            'Platform_Name'           => 'MacOSX',
+            'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => '10.11.4',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '54.0',
-            'Platform_Name'           => 'Win10',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '10.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',
