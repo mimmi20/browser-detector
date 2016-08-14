@@ -11,4 +11,5 @@ dependencies:
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
-    - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml --colors=auto --verbose --coverage-text
+    - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --verbose --coverage-text --colors=auto --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --colors=auto --verbose
