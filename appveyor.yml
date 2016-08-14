@@ -47,5 +47,5 @@ install:
 
 test_script:
     - cd c:\projects\browser-detector
-    - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --colors=auto --verbose --coverage-text
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --colors=auto --verbose
+    - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --verbose --coverage-text
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --verbose
