@@ -3,7 +3,7 @@
 <phpunit bootstrap="tests/bootstrap.php">
   <testsuites>
     <testsuite name="BrowserDetector Test Suite">
-      <file>tests/UserAgentsTest.php</file>
+      <directory>tests/UserAgentsTest/</directory>
     </testsuite>
   </testsuites>
 

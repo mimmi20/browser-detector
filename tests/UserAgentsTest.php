@@ -31,17 +31,22 @@ use WurflCache\Adapter\NullStorage;
  * @author     Thomas Mueller <t_mueller_stolzenhain@yahoo.de>
  * @group      useragenttest
  */
-class UserAgentsTest extends \PHPUnit_Framework_TestCase
+abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var \BrowserDetector\BrowserDetector
      */
-    private $object = null;
+    protected $object = null;
 
     /**
      * @var \UaDataMapper\InputMapper
      */
-    private static $mapper = null;
+    protected static $mapper = null;
+
+    /**
+     * @var string
+     */
+    protected $sourceDirectory = 'tests/issues/00000-browscap/';
 
     /**
      * This method is called before the first test of this test class is run.
@@ -50,7 +55,7 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
      */
     public static function setUpBeforeClass()
     {
-        self::$mapper = new InputMapper();
+        static::$mapper = new InputMapper();
     }
 
     /**
@@ -75,9 +80,8 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
 
         $data            = [];
         $checks          = [];
-        $sourceDirectory = 'tests/issues/';
 
-        $iterator = new \DirectoryIterator($sourceDirectory);
+        $iterator = new \DirectoryIterator($this->sourceDirectory);
 
         foreach ($iterator as $file) {
             /** @var $file \SplFileInfo */
@@ -110,7 +114,6 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider userAgentDataProvider
-     * @coversNothing
      *
      * @param string $userAgent
      * @param array  $expectedProperties
@@ -118,13 +121,10 @@ class UserAgentsTest extends \PHPUnit_Framework_TestCase
      * @throws \Exception
      * @group  integration
      * @group  useragenttest
+     * @group  00000
      */
     public function testUserAgents($userAgent, $expectedProperties)
     {
-        if (!is_array($expectedProperties) || !count($expectedProperties)) {
-            self::markTestSkipped('Could not run test - no properties were defined to test');
-        }
-
         $result = $this->object->getBrowser($userAgent);
 
         $expectedPlatformName = $expectedProperties['Platform_Name'];

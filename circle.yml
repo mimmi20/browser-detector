@@ -12,4 +12,4 @@ test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
     - vendor/bin/phpunit -c phpunit.library.xml --exclude-group useragenttest --verbose --coverage-text --colors=auto --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
-    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group useragenttest --colors=auto --verbose
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00000 --colors=auto --verbose
