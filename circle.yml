@@ -6,7 +6,7 @@ machine:
 
 dependencies:
   override:
-    - composer update -o --prefer-dist --prefer-stable --no-progress
+    - composer update --optimize-autoloader --prefer-dist --prefer-stable --no-interaction --no-progress
 
 test:
   override:

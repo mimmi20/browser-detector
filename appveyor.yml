@@ -43,7 +43,7 @@ install:
     - IF %PHP%==1 echo @php %%~dp0composer.phar %%* > composer.bat
     - appveyor DownloadFile https://getcomposer.org/composer.phar
     - cd c:\projects\browser-detector
-    - composer update -o --prefer-dist --prefer-stable --no-progress
+    - composer update --optimize-autoloader --prefer-dist --prefer-stable --no-interaction --no-progress
 
 test_script:
     - cd c:\projects\browser-detector
