@@ -35,6 +35,7 @@ use BrowserDetector\Detector\Factory\BrowserFactory;
 use BrowserDetector\Detector\Factory\DeviceFactory;
 use BrowserDetector\Detector\Factory\EngineFactory;
 use BrowserDetector\Detector\Factory\PlatformFactory;
+use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
@@ -143,6 +144,10 @@ class BrowserDetector
         if ($device instanceof DeviceHasSpecificPlatformInterface) {
             $platform = $device->detectOs();
         } else {
+            $platform = null;
+        }
+
+        if (null === $platform) {
             // detect the os which runs on the device
             $platform = PlatformFactory::detect($request->getBrowserUserAgent());
         }
@@ -151,7 +156,15 @@ class BrowserDetector
         $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $platform);
 
         // detect the engine which is used in the browser
-        $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
+        if ($browser instanceof BrowserHasSpecificEngineInterface) {
+            $engine = $browser->getEngine();
+        } else {
+            $engine = null;
+        }
+
+        if (null === $engine) {
+            $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
+        }
 
         return new Result(
             $request->getUserAgent(),

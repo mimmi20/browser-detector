@@ -331,7 +331,7 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyEricssonMT27i($useragent);
         }
 
-        if (preg_match('/MT15ivi', $useragent)) {
+        if (preg_match('/MT15iv/i', $useragent)) {
             return new SonyEricsson\SonyEricssonMT15iv($useragent);
         }
 

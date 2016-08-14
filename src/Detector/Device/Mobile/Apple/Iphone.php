@@ -76,6 +76,6 @@ class Iphone extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\iOS($this->useragent);
+        return new Os\Ios($this->useragent);
     }
 }
