@@ -60,7 +60,7 @@ class Device
      */
     public function __construct($useragent)
     {
-        if ($useragent) {
+        if (!$useragent) {
             throw new \UnexpectedValueException(
                 'The useragent parameter is required in this function'
             );

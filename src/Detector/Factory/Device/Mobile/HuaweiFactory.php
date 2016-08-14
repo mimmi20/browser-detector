@@ -223,7 +223,7 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiMediaPad10Link($useragent);
         }
 
-        if (preg_match('mMediapad 7 lite/i', $useragent)) {
+        if (preg_match('/mediapad 7 lite/i', $useragent)) {
             return new Huawei\HuaweiMediaPad7Lite($useragent);
         }
 

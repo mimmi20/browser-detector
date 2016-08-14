@@ -76,6 +76,6 @@ class PlayStation3 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\CellOS($this->useragent);
+        return new Os\CellOs($this->useragent);
     }
 }
