@@ -60,11 +60,15 @@ class Ios
      */
     public function isIos()
     {
-        if (false === stripos($this->useragent, 'technipad')) {
+        if (false !== stripos($this->useragent, 'technipad')) {
             return false;
         }
 
         if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $this->useragent)) {
+            return true;
+        }
+
+        if (preg_match('/Puffin\/[\d\.]+I(T|P)/', $this->useragent)) {
             return true;
         }
 

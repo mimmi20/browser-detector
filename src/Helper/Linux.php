@@ -75,6 +75,7 @@ class Linux
             'kubuntu',
             'cros',
             'moblin',
+            'gvfs',
             // browsers on linux
             'dillo',
             // bots on linux

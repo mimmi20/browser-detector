@@ -221,7 +221,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/4.0 (compatible; Windows Mobile; WCE; Opera Mobi/WMD-50433; U; de) Presto/2.4.13 Version/10.00',
-                'Windows Mobile OS',
+                'Windows CE',
                 '0.0.0',
             ],
             [

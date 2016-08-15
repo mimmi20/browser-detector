@@ -26,6 +26,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
     {
         return [
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.2'],
+            ['gvfs'],
         ];
     }
 

@@ -67,6 +67,12 @@ class PlatformFactory implements FactoryInterface
             $isWindows = true;
         }
 
+        if ($windowsHelper->isMobileWindows()
+            && $utils->checkIfContains(['Windows CE', 'Windows Mobile; WCE'])
+        ) {
+            return new Os\WindowsCe($agent);
+        }
+
         if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop)/', $agent)) {
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
             if (!$doMatchPhone || $matchesPhone[1] >= 7) {
@@ -74,10 +80,6 @@ class PlatformFactory implements FactoryInterface
             }
 
             return new Os\WindowsMobileOs($agent);
-        }
-
-        if ($windowsHelper->isMobileWindows() && $utils->checkIfContains('Windows CE')) {
-            return new Os\WindowsCe($agent);
         }
 
         if ($windowsHelper->isMobileWindows()) {
@@ -146,7 +148,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\MiuiOs($agent);
         }
 
-        if (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $agent)) {
+        if ((new Helper\AndroidOs($agent))->isAndroid()) {
             return new Os\AndroidOs($agent);
         }
 
@@ -276,11 +278,11 @@ class PlatformFactory implements FactoryInterface
             return new Os\BsdFour($agent);
         }
 
-        if ($utils->checkIfContainsAll(['HP-UX', 'HPUX'])) {
+        if ($utils->checkIfContains(['HP-UX', 'HPUX'])) {
             return new Os\Hpux($agent);
         }
 
-        if ($utils->checkIfContainsAll(['BeOS'])) {
+        if ($utils->checkIfContains(['BeOS'])) {
             return new Os\Beos($agent);
         }
 
@@ -304,7 +306,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\OpenVms($agent);
         }
 
-        if ($utils->checkIfContains(['Tru64 UNIX', 'Digital Unix'])) {
+        if ($utils->checkIfContains(['Tru64 UNIX', 'Digital Unix', 'OSF1'])) {
             return new Os\Tru64Unix($agent);
         }
 
