@@ -36,7 +36,7 @@ use UaHelper\Utils;
 /**
  * a helper to detect windows
  */
-class Macintosh
+class Ios
 {
     /**
      * @var string the user agent to handle
@@ -48,31 +48,35 @@ class Macintosh
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Helper\Macintosh
+     * @return \BrowserDetector\Helper\Ios
      */
     public function __construct($useragent)
     {
         $this->useragent = $useragent;
     }
 
-    public function isMacintosh()
+    /**
+     * @return bool
+     */
+    public function isIos()
     {
+        if (false === stripos($this->useragent, 'technipad')) {
+            return false;
+        }
+
+        if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $this->useragent)) {
+            return true;
+        }
+
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
-        $mac = [
-            'Macintosh',
-            'Darwin',
-            'Mac_PowerPC',
-            'MacBook',
-            'for Mac',
-            'PPC Mac',
-            'Mac OS X',
-            '(MacOS)',
-            'integrity',
+        $os = [
+            'Antenna/',
+            'AntennaPod',
         ];
 
-        if (!$utils->checkIfContains($mac, true)) {
+        if (!$utils->checkIfContains($os, true)) {
             return false;
         }
 

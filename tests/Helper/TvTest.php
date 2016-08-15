@@ -2,7 +2,7 @@
 
 namespace BrowserDetectorTest\Helper;
 
-use BrowserDetector\Helper\Tv;
+use BrowserDetector\Helper;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -17,7 +17,7 @@ class TvTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsTv($agent)
     {
-        $object = new Tv($agent);
+        $object = new Helper\Tv($agent);
 
         self::assertTrue($object->isTvDevice());
     }
@@ -38,7 +38,7 @@ class TvTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsNotTv($agent)
     {
-        $object = new Tv($agent);
+        $object = new Helper\Tv($agent);
 
         self::assertFalse($object->isTvDevice());
     }

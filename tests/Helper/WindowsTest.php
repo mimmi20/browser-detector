@@ -2,7 +2,7 @@
 
 namespace BrowserDetectorTest\Helper;
 
-use BrowserDetector\Helper\Windows as WindowsHelper;
+use BrowserDetector\Helper;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -17,7 +17,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsWindowsPositive($agent)
     {
-        $object = new WindowsHelper($agent);
+        $object = new Helper\Windows($agent);
 
         self::assertTrue($object->isWindows());
     }
@@ -33,6 +33,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['revolt'],
             ['Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'],
             ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
+            ['WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203'],
         ];
     }
 
@@ -43,7 +44,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsWindowsNegative($agent)
     {
-        $object = new WindowsHelper($agent);
+        $object = new Helper\Windows($agent);
 
         self::assertFalse($object->isWindows());
     }

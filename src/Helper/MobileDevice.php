@@ -44,11 +44,6 @@ class MobileDevice
     private $useragent = '';
 
     /**
-     * @var \UaHelper\Utils the helper class
-     */
-    private $utils = null;
-
-    /**
      * Class Constructor
      *
      * @param string $useragent
@@ -57,10 +52,7 @@ class MobileDevice
      */
     public function __construct($useragent)
     {
-        $this->utils = new Utils();
-
         $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
     }
 
     /**
@@ -171,7 +163,10 @@ class MobileDevice
             'terra_101',
         ];
 
-        if ($this->utils->checkIfContains($mobileBrowsers, true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($mobileBrowsers, true)) {
             $noMobiles = [
                 'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
                 'google wireless transcoder', 'eeepc', 'i9988_custom',
@@ -179,31 +174,31 @@ class MobileDevice
                 'dolphin http client', 'gxt_dongle_3188',
             ];
 
-            if ($this->utils->checkIfContains($noMobiles, true)) {
+            if ($utils->checkIfContains($noMobiles, true)) {
                 return false;
             }
 
             return true;
         }
 
-        if ($this->utils->checkIfContains('tablet', true)
-            && !$this->utils->checkIfContains('tablet pc', true)
+        if ($utils->checkIfContains('tablet', true)
+            && !$utils->checkIfContains('tablet pc', true)
         ) {
             return true;
         }
 
-        if ($this->utils->checkIfContains('mobile', true)
-            && !$this->utils->checkIfContains('automobile', true)
+        if ($utils->checkIfContains('mobile', true)
+            && !$utils->checkIfContains('automobile', true)
         ) {
             return true;
         }
 
-        if ($this->utils->checkIfContains('sonydtv', true)) {
+        if ($utils->checkIfContains('sonydtv', true)) {
             return false;
         }
 
-        if ($this->utils->checkIfContains(['ARM;'])
-            && $this->utils->checkIfContains(['Windows NT 6.2', 'Windows NT 6.3'])
+        if ($utils->checkIfContains(['ARM;'])
+            && $utils->checkIfContains(['Windows NT 6.2', 'Windows NT 6.3'])
         ) {
             return true;
         }
@@ -217,7 +212,7 @@ class MobileDevice
             return true;
         }
 
-        if ((new Windows($this->useragent))->isWindows() && $this->utils->checkIfContains('touch', true)) {
+        if ((new Windows($this->useragent))->isWindows() && $utils->checkIfContains('touch', true)) {
             return true;
         }
 

@@ -45,7 +45,7 @@ use BrowserDetector\Detector\Device\Desktop\MacPro;
 use BrowserDetector\Detector\Device\Desktop\PowerMac;
 use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
 use BrowserDetector\Detector\Factory\FactoryInterface;
-use BrowserDetector\Helper\Linux as LinuxHelper;
+use BrowserDetector\Helper;
 use BrowserDetector\Helper\Macintosh as MacintoshHelper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 
@@ -70,7 +70,7 @@ class DesktopFactory implements FactoryInterface
             return new WindowsDesktop($useragent);
         }
 
-        if ((new LinuxHelper($useragent))->isLinux()) {
+        if ((new Helper\Linux($useragent))->isLinux()) {
             return new LinuxDesktop($useragent);
         }
 

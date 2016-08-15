@@ -2,7 +2,7 @@
 
 namespace BrowserDetectorTest\Helper;
 
-use BrowserDetector\Helper\MobileDevice;
+use BrowserDetector\Helper;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -17,7 +17,7 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsMobile($agent)
     {
-        $object = new MobileDevice($agent);
+        $object = new Helper\MobileDevice($agent);
 
         self::assertTrue($object->isMobile());
     }
@@ -43,7 +43,7 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsNotMobile($agent)
     {
-        $object = new MobileDevice($agent);
+        $object = new Helper\MobileDevice($agent);
 
         self::assertFalse($object->isMobile());
     }

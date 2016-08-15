@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Helper;
 
-use BrowserDetector\Helper\Linux as LinuxHelper;
+use BrowserDetector\Helper;
 use BrowserDetector\Helper\Windows as WindowsHelper;
 use UaHelper\Utils;
 
@@ -46,11 +46,6 @@ class Desktop
     private $useragent = '';
 
     /**
-     * @var \UaHelper\Utils the helper class
-     */
-    private $utils = null;
-
-    /**
      * Class Constructor
      *
      * @param string $useragent
@@ -59,10 +54,7 @@ class Desktop
      */
     public function __construct($useragent)
     {
-        $this->utils = new Utils();
-
         $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
     }
 
     public function isDesktopDevice()
@@ -93,7 +85,10 @@ class Desktop
             'jobboerse',
         ];
 
-        if ($this->utils->checkIfContains($noDesktops, true)) {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($noDesktops, true)) {
             return false;
         }
 
@@ -104,7 +99,7 @@ class Desktop
             'lynx',
         ];
 
-        if ($this->utils->checkIfContains($othersDesktops, true)) {
+        if ($utils->checkIfContains($othersDesktops, true)) {
             return true;
         }
 
@@ -114,7 +109,7 @@ class Desktop
             return true;
         }
 
-        $linuxHelper = new LinuxHelper($this->useragent);
+        $linuxHelper = new Helper\Linux($this->useragent);
 
         if ($linuxHelper->isLinux()) {
             return true;
@@ -161,7 +156,7 @@ class Desktop
             'ms frontpage',
         ];
 
-        if (!$this->utils->checkIfContains($desktopCodes, true)) {
+        if (!$utils->checkIfContains($desktopCodes, true)) {
             return false;
         }
 

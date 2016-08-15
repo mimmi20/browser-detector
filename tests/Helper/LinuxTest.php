@@ -2,7 +2,7 @@
 
 namespace BrowserDetectorTest\Helper;
 
-use BrowserDetector\Helper\Linux as LinuxHelper;
+use BrowserDetector\Helper;
 
 /**
  * Test class for KreditCore_Class_BrowserDetector.
@@ -17,7 +17,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsLinuxPositive($agent)
     {
-        $object = new LinuxHelper($agent);
+        $object = new Helper\Linux($agent);
 
         self::assertTrue($object->isLinux());
     }
@@ -36,7 +36,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsLinuxNegative($agent)
     {
-        $object = new LinuxHelper($agent);
+        $object = new Helper\Linux($agent);
 
         self::assertFalse($object->isLinux());
     }

@@ -39,9 +39,9 @@ use UaHelper\Utils;
 class Safari
 {
     /**
-     * @var \UaHelper\Utils the helper class
+     * @var string the user agent to handle
      */
-    private $utils = null;
+    private $useragent = '';
 
     /**
      * Class Constructor
@@ -52,9 +52,7 @@ class Safari
      */
     public function __construct($useragent)
     {
-        $this->utils = new Utils();
-
-        $this->utils->setUserAgent($useragent);
+        $this->useragent = $useragent;
     }
 
     /**
@@ -62,14 +60,17 @@ class Safari
      */
     public function isSafari()
     {
-        if (!$this->utils->checkIfContains('Mozilla/')
-            && !$this->utils->checkIfContains('Safari')
-            && !$this->utils->checkIfContains('Mobile')
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfContains('Mozilla/')
+            && !$utils->checkIfContains('Safari')
+            && !$utils->checkIfContains('Mobile')
         ) {
             return false;
         }
 
-        if (!$this->utils->checkIfContains(['Safari', 'AppleWebKit', 'CFNetwork'])) {
+        if (!$utils->checkIfContains(['Safari', 'AppleWebKit', 'CFNetwork'])) {
             return false;
         }
 
@@ -162,7 +163,7 @@ class Safari
             'Mac; Mac OS ',
         ];
 
-        if ($this->utils->checkIfContains($isNotReallyAnSafari, true)) {
+        if ($utils->checkIfContains($isNotReallyAnSafari, true)) {
             return false;
         }
 

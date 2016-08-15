@@ -44,11 +44,6 @@ class FirefoxOs
     private $useragent = '';
 
     /**
-     * @var \UaHelper\Utils the helper class
-     */
-    private $utils = null;
-
-    /**
      * Class Constructor
      *
      * @param string $useragent
@@ -57,10 +52,7 @@ class FirefoxOs
      */
     public function __construct($useragent)
     {
-        $this->utils = new Utils();
-
         $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
     }
 
     /**
@@ -68,9 +60,12 @@ class FirefoxOs
      */
     public function isFirefoxOs()
     {
-        if (!$this->utils->checkIfStartsWith('Mozilla/')
-            || !$this->utils->checkIfContainsAll(['rv:', 'Gecko', 'Firefox'])
-            || $this->utils->checkIfContains('android', true)
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if (!$utils->checkIfStartsWith('Mozilla/')
+            || !$utils->checkIfContainsAll(['rv:', 'Gecko', 'Firefox'])
+            || $utils->checkIfContains('android', true)
         ) {
             return false;
         }

@@ -32,8 +32,7 @@
 namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Os;
-use BrowserDetector\Helper\FirefoxOs as FirefoxOsHelper;
-use BrowserDetector\Helper\Windows as WindowsHelper;
+use BrowserDetector\Helper;
 use UaHelper\Utils;
 
 /**
@@ -60,7 +59,7 @@ class PlatformFactory implements FactoryInterface
         $utils->setUserAgent($agent);
 
         $isWindows     = false;
-        $windowsHelper = new WindowsHelper($agent);
+        $windowsHelper = new Helper\Windows($agent);
 
         if (!$windowsHelper->isMobileWindows()
             && $windowsHelper->isWindows()
@@ -127,7 +126,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Tizen($agent);
         }
 
-        if ((new FirefoxOsHelper($agent))->isFirefoxOs()) {
+        if ((new Helper\FirefoxOs($agent))->isFirefoxOs()) {
             return new Os\FirefoxOs($agent);
         }
 
@@ -151,9 +150,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\AndroidOs($agent);
         }
 
-        if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS)/', $agent)
-            && false === stripos($agent, 'technipad')
-        ) {
+        if ((new Helper\Ios($agent))->isIos()) {
             return new Os\Ios($agent);
         }
 

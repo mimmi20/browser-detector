@@ -39,9 +39,9 @@ use UaHelper\Utils;
 class Tv
 {
     /**
-     * @var \UaHelper\Utils the helper class
+     * @var string the user agent to handle
      */
-    private $utils = null;
+    private $useragent = '';
 
     /**
      * Class Constructor
@@ -52,13 +52,17 @@ class Tv
      */
     public function __construct($useragent)
     {
-        $this->utils = new Utils();
-
-        $this->utils->setUserAgent($useragent);
+        $this->useragent = $useragent;
     }
 
+    /**
+     * @return bool
+     */
     public function isTvDevice()
     {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
         $tvDevices = [
             'boxee',
             'ce-html',
@@ -84,7 +88,7 @@ class Tv
             'lf1v401',
         ];
 
-        if (!$this->utils->checkIfContains($tvDevices, true)) {
+        if (!$utils->checkIfContains($tvDevices, true)) {
             return false;
         }
 

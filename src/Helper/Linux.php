@@ -44,11 +44,6 @@ class Linux
     private $useragent = '';
 
     /**
-     * @var \UaHelper\Utils the helper class
-     */
-    private $utils = null;
-
-    /**
      * Class Constructor
      *
      * @param string $useragent
@@ -57,14 +52,14 @@ class Linux
      */
     public function __construct($useragent)
     {
-        $this->utils = new Utils();
-
         $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
     }
 
     public function isLinux()
     {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
         $linux = [
             // linux systems
             'linux',
@@ -87,7 +82,7 @@ class Linux
             'installatron',
         ];
 
-        if (!$this->utils->checkIfContains($linux, true)) {
+        if (!$utils->checkIfContains($linux, true)) {
             return false;
         }
 
@@ -101,7 +96,7 @@ class Linux
             'jobboerse',
         ];
 
-        if ($this->utils->checkIfContains($noLinux, true)) {
+        if ($utils->checkIfContains($noLinux, true)) {
             return false;
         }
 

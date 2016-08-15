@@ -44,11 +44,6 @@ class Windows
     private $useragent = '';
 
     /**
-     * @var \UaHelper\Utils the helper class
-     */
-    private $utils = null;
-
-    /**
      * Class Constructor
      *
      * @param string $useragent
@@ -57,14 +52,17 @@ class Windows
      */
     public function __construct($useragent)
     {
-        $this->utils = new Utils();
-
         $this->useragent = $useragent;
-        $this->utils->setUserAgent($useragent);
     }
 
+    /**
+     * @return bool
+     */
     public function isWindows()
     {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+        
         $isNotReallyAWindows = [
             // other OS and Mobile Windows
             'Linux',
@@ -74,7 +72,7 @@ class Windows
             'not on Windows server',
         ];
 
-        if ($this->utils->checkIfContains($isNotReallyAWindows)) {
+        if ($utils->checkIfContains($isNotReallyAWindows)) {
             return false;
         }
 
@@ -90,7 +88,7 @@ class Windows
             return true;
         }
 
-        if (preg_match('/(DavClnt|revolt|Microsoft Outlook)/', $this->useragent)) {
+        if (preg_match('/(DavClnt|revolt|Microsoft Outlook|WMPlayer|Lavf)/', $this->useragent)) {
             return true;
         }
 
@@ -101,22 +99,28 @@ class Windows
             'windows', 'win32',
         ];
 
-        if (!$this->utils->checkIfContains($windows, true)) {
+        if (!$utils->checkIfContains($windows, true)) {
             return false;
         }
 
         return true;
     }
 
+    /**
+     * @return bool
+     */
     public function isMobileWindows()
     {
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
         $mobileWindows = [
             'windows ce', 'windows phone', 'windows mobile',
             'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
             'windowsmobile', 'wpdesktop', 'mobile version', 'wpdesktop',
         ];
 
-        if (!$this->utils->checkIfContains($mobileWindows, true)) {
+        if (!$utils->checkIfContains($mobileWindows, true)) {
             return false;
         }
 
@@ -126,7 +130,7 @@ class Windows
             'Macintosh',
         ];
 
-        if ($this->utils->checkIfContains($isNotReallyAWindows)) {
+        if ($utils->checkIfContains($isNotReallyAWindows)) {
             return false;
         }
 
