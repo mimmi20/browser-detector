@@ -216,7 +216,11 @@ class MobileDevice
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+(I|A)(T|P)/', $this->useragent)) {
+        if ((new AndroidOs($this->useragent))->isAndroid()) {
+            return true;
+        }
+
+        if ((new Ios($this->useragent))->isIos()) {
             return true;
         }
 

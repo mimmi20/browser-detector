@@ -491,6 +491,18 @@ class MobileFactory implements FactoryInterface
             return Mobile\MemupFactory::detect($useragent);
         }
 
+        if (preg_match('/xiaomi/i', $useragent)) {
+            return Mobile\XiaomiFactory::detect($useragent);
+        }
+
+        if (preg_match('/MI (\d|PAD)/', $useragent)) {
+            return Mobile\XiaomiFactory::detect($useragent);
+        }
+
+        if (preg_match('/HM( |\_)(NOTE|1SC|1SW)/', $useragent)) {
+            return Mobile\XiaomiFactory::detect($useragent);
+        }
+
         if (preg_match('/miui/i', $useragent)
             && !preg_match('/miuibrowser/i', $useragent)
             && !preg_match('/build\/miui/i', $useragent)
@@ -666,10 +678,6 @@ class MobileFactory implements FactoryInterface
             return Mobile\VivoFactory::detect($useragent);
         }
 
-        if (preg_match('/xiaomi/i', $useragent)) {
-            return Mobile\XiaomiFactory::detect($useragent);
-        }
-
         if (preg_match('/haipai/i', $useragent)) {
             return Mobile\HaipaiFactory::detect($useragent);
         }
@@ -680,14 +688,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/UMI/', $useragent)) {
             return Mobile\UmiFactory::detect($useragent);
-        }
-
-        if (preg_match('/MI \d/', $useragent)) {
-            return Mobile\XiaomiFactory::detect($useragent);
-        }
-
-        if (preg_match('/HM( |\_)(NOTE|1SC|1SW)/', $useragent)) {
-            return Mobile\XiaomiFactory::detect($useragent);
         }
 
         if (preg_match('/yuandao/i', $useragent)) {

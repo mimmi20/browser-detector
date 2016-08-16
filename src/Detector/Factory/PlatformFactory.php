@@ -112,7 +112,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\MeeGo($agent);
         }
 
-        if (preg_match('/(maemo|like android|linux\/x2\/r1|linux armv)/i', $agent)) {
+        if (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
             return new Os\Maemo($agent);
         }
 
@@ -318,7 +318,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Os2($agent);
         }
 
-        if ($utils->checkIfContains(['nettv', 'hbbtv', 'smart-tv', 'linux', 'x11', 'dillo', 'installatron', 'lynx'], true)) {
+        if ((new Helper\Linux($agent))->isLinux()) {
             return new Os\Linux($agent);
         }
 
@@ -338,7 +338,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Ruby($agent);
         }
 
-        if ($utils->checkIfContains('Palm OS')) {
+        if ($utils->checkIfContains(['Palm OS', 'PalmSource'])) {
             return new Os\PalmOS($agent);
         }
 

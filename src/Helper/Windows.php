@@ -70,6 +70,8 @@ class Windows
             'Mobi',
             'MSIE or Firefox mutant',
             'not on Windows server',
+            'J2ME/MIDP',
+            'PalmSource',
         ];
 
         if ($utils->checkIfContains($isNotReallyAWindows)) {
@@ -88,7 +90,7 @@ class Windows
             return true;
         }
 
-        if (preg_match('/(DavClnt|revolt|Microsoft Outlook|WMPlayer|Lavf)/', $this->useragent)) {
+        if (preg_match('/(DavClnt|revolt|Microsoft Outlook|WMPlayer|Lavf|NSPlayer)/', $this->useragent)) {
             return true;
         }
 
@@ -117,7 +119,7 @@ class Windows
         $mobileWindows = [
             'windows ce', 'windows phone', 'windows mobile',
             'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
-            'windowsmobile', 'wpdesktop', 'mobile version', 'wpdesktop',
+            'windowsmobile', 'wpdesktop', 'mobile version',
         ];
 
         if (!$utils->checkIfContains($mobileWindows, true)) {
@@ -128,6 +130,7 @@ class Windows
             // other OS
             'Linux',
             'Macintosh',
+            'J2ME/MIDP',
         ];
 
         if ($utils->checkIfContains($isNotReallyAWindows)) {

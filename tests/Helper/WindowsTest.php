@@ -17,9 +17,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsWindowsPositive($agent)
     {
-        $object = new Helper\Windows($agent);
-
-        self::assertTrue($object->isWindows());
+        self::assertTrue((new Helper\Windows($agent))->isWindows());
     }
 
     public function providerIsWindowsPositive()
@@ -34,6 +32,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'],
             ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
             ['WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203'],
+            ['NSPlayer/12.00.10011.16384 WMFSDK/12.00.10011.16384'],
         ];
     }
 
@@ -44,9 +43,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsWindowsNegative($agent)
     {
-        $object = new Helper\Windows($agent);
-
-        self::assertFalse($object->isWindows());
+        self::assertFalse((new Helper\Windows($agent))->isWindows());
     }
 
     public function providerIsWindowsNegative()
@@ -56,6 +53,47 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Office Excel 2013'],
             ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
             ['Mozilla/5.0 (compatible; MSIE or Firefox mutant; not on Windows server; + http://tab.search.daum.net/aboutWebSearch.html) Daumoa/3.0'],
+            ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160'],
+        ];
+    }
+
+    /**
+     * @dataProvider providerIsMobileWindowsPositive
+     *
+     * @param string $agent
+     */
+    public function testIsMobileWindowsPositive($agent)
+    {
+        self::assertTrue((new Helper\Windows($agent))->isMobileWindows());
+    }
+
+    public function providerIsMobileWindowsPositive()
+    {
+        return [
+            ['Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733) OrangeBot-Mobile 2008.0 (mobilesearch.support@orange-ftgroup.com)'],
+        ];
+    }
+
+    /**
+     * @dataProvider providerIsMobileWindowsNegative
+     *
+     * @param string $agent
+     */
+    public function testIsMobileWindowsNegative($agent)
+    {
+        self::assertFalse((new Helper\Windows($agent))->isMobileWindows());
+    }
+
+    public function providerIsMobileWindowsNegative()
+    {
+        return [
+            ['Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3'],
+            ['Microsoft Office Excel 2013'],
+            ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
+            ['Mozilla/5.0 (compatible; MSIE or Firefox mutant; not on Windows server; + http://tab.search.daum.net/aboutWebSearch.html) Daumoa/3.0'],
+            ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160'],
         ];
     }
 }

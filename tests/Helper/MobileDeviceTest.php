@@ -33,6 +33,20 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
             ['TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
             ['TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
             ['TERRA_101 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
+            ['AntennaPod/1.5.2.0'],
+            ['Antenna/965 CFNetwork/758.2.8 Darwin/15.0.0'],
+            ['RSS_Radio 1.5'],
+            ['RSSRadio (Push Notification Scanner;support@dorada.co.uk)'],
+            ['iTunes/10.5.2 (PodCruncher 2.2)'],
+            ['https://audioboom.com/boos/'],
+            ['Stitcher/iOS'],
+            ['Mozilla/5.0 (X11; U; Linux x86_64; en-gb) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.1.1.1119AP'],
+            ['Mozilla/5.0 (Linux; U; en-us; BeyondPod 4)'],
+            ['CaptiveNetworkSupport-324 wispr'],
+            ['Mozilla/5.0 (iOS; U; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/13.0'],
+            ['Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733) OrangeBot-Mobile 2008.0 (mobilesearch.support@orange-ftgroup.com)'],
+            ['Opera/9.80 (J2ME/MIDP; Opera Mini/4.3.24214 (Windows; U; Windows NT 6.1) AppleWebKit/24.838; U; id) Presto/2.5.25 Version/10.54'],
+            ['Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B440 Safari/600.1.4'],
         ];
     }
 
@@ -56,6 +70,7 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)'],
             ['Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'],
             ['MSFrontPage/15.0'],
+            ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
         ];
     }
 }

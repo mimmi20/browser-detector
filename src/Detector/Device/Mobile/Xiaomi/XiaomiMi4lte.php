@@ -29,63 +29,53 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Helper;
+namespace BrowserDetector\Detector\Device\Mobile\Xiaomi;
 
-use UaHelper\Utils;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
- * a helper to detect windows
+ * @category  BrowserDetector
+ *
+ * @copyright 2012-2016 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Ios
+class XiaomiMi4lte extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
-     * @var string the user agent to handle
-     */
-    private $useragent = '';
-
-    /**
-     * Class Constructor
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Ios
      */
     public function __construct($useragent)
     {
-        $this->useragent = $useragent;
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'Mi 4 LTE';
+        $this->marketingName     = 'Mi 4 LTE';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('XiaomiTech')->getName();
+        $this->brand             = CompanyFactory::get('XiaomiTech')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 720;
+        $this->resolutionHeight  = 1280;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**
-     * @return bool
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
      */
-    public function isIos()
+    public function detectOs()
     {
-        if (false !== stripos($this->useragent, 'technipad')) {
-            return false;
-        }
-
-        if (preg_match('/(IphoneOSX|iPhone OS|like Mac OS X|iPad|IPad|iPhone|iPod|CPU OS|CPU iOS|IUC\(U;iOS|iOS;)/', $this->useragent)) {
-            return true;
-        }
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        $os = [
-            'antenna/',
-            'antennapod',
-            'rss_radio',
-            'rssradio',
-            'podcruncher',
-            'audioboom',
-            'stitcher/ios',
-            'captivenetwork',
-        ];
-
-        if (!$utils->checkIfContains($os, true)) {
-            return false;
-        }
-
-        return true;
+        return null;
     }
 }

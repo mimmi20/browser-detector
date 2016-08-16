@@ -27,6 +27,13 @@ class IosTest extends \PHPUnit_Framework_TestCase
         return [
             ['AntennaPod/1.5.2.0'],
             ['Antenna/965 CFNetwork/758.2.8 Darwin/15.0.0'],
+            ['RSS_Radio 1.5'],
+            ['RSSRadio (Push Notification Scanner;support@dorada.co.uk)'],
+            ['iTunes/10.5.2 (PodCruncher 2.2)'],
+            ['https://audioboom.com/boos/'],
+            ['Stitcher/iOS'],
+            ['CaptiveNetworkSupport-324 wispr'],
+            ['Mozilla/5.0 (iOS; U; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/13.0'],
             ['Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B440 Safari/600.1.4'],
         ];
     }
@@ -36,11 +43,11 @@ class IosTest extends \PHPUnit_Framework_TestCase
      *
      * @param string $agent
      */
-    public function testIsiOSNegative($agent)
+    public function testIsWindowsNegative($agent)
     {
-        $object = new Helper\Ios($agent);
+        $object = new Helper\Windows($agent);
 
-        self::assertFalse($object->isIos());
+        self::assertFalse($object->isWindows());
     }
 
     public function providerIsiOSNegative()

@@ -51,8 +51,16 @@ class XiaomiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/MI 4LTE/', $useragent)) {
+            return new Xiaomi\XiaomiMi4lte($useragent);
+        }
+
         if (preg_match('/MI 3W/', $useragent)) {
             return new Xiaomi\XiaomiMi3w($useragent);
+        }
+
+        if (preg_match('/MI PAD/', $useragent)) {
+            return new Xiaomi\XiaomiMiPad($useragent);
         }
 
         if (preg_match('/MI 2A/', $useragent)) {

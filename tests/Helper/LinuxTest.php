@@ -17,9 +17,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsLinuxPositive($agent)
     {
-        $object = new Helper\Linux($agent);
-
-        self::assertTrue($object->isLinux());
+        self::assertTrue((new Helper\Linux($agent))->isLinux());
     }
 
     public function providerIsLinuxPositive()
@@ -27,6 +25,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
         return [
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.2'],
             ['gvfs'],
+            ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
         ];
     }
 
@@ -37,9 +36,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
      */
     public function testIsLinuxNegative($agent)
     {
-        $object = new Helper\Linux($agent);
-
-        self::assertFalse($object->isLinux());
+        self::assertFalse((new Helper\Linux($agent))->isLinux());
     }
 
     public function providerIsLinuxNegative()
@@ -56,6 +53,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
             ['MSFrontPage/15.0'],
             ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
+            ['MSRBOT (http://research.microsoft.com/research/sv/msrbot/)'],
         ];
     }
 }

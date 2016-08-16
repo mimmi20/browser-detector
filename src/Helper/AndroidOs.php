@@ -58,11 +58,19 @@ class AndroidOs
      */
     public function isAndroid()
     {
+        if (preg_match('/(windows|palmsource)/i', $this->useragent)) {
+            return false;
+        }
+
         if (preg_match('/(android|silk|juc\(linux;u;|juc \(linux; u;|adr |gingerbread|mtk;|ucweb\/2\.0 \(linux; u; opera mini|maui|spreadtrum|vre;|linux; googletv)/i', $this->useragent)) {
             return true;
         }
 
         if (preg_match('/Puffin\/[\d\.]+A(T|P)/', $this->useragent)) {
+            return true;
+        }
+
+        if (preg_match('/(beyondpod)/i', $this->useragent)) {
             return true;
         }
 

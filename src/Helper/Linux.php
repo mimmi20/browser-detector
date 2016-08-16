@@ -75,12 +75,20 @@ class Linux
             'kubuntu',
             'cros',
             'moblin',
-            'gvfs',
             // browsers on linux
             'dillo',
+            'gvfs',
+            'libvlc',
+            'lynx',
             // bots on linux
             'akregator',
             'installatron',
+            // tv with linux
+            'nettv',
+            'hbbtv',
+            'smart-tv',
+            // general
+            'x11',
         ];
 
         if (!$utils->checkIfContains($linux, true)) {
@@ -95,6 +103,7 @@ class Linux
             'infegyatlas',
             'terra_101',
             'jobboerse',
+            'msrbot',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {

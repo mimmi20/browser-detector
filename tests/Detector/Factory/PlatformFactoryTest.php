@@ -239,6 +239,31 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Tru64 UNIX',
                 '0.0.0',
             ],
+            [
+                'Opera/9.80 (J2ME/MIDP; Opera Mini/4.3.24214 (Windows; U; Windows NT 6.1) AppleWebKit/24.838; U; id) Presto/2.5.25 Version/10.54',
+                'Java',
+                '0.0.0',
+            ],
+            [
+                'Opera/9.80 (J2ME/MIDP; Opera Mini/4.3.24214; iPhone; CPU iPhone OS 4_2_1 like Mac OS X; AppleWebKit/24.783; U; en) Presto/2.5.25 Version/10.54',
+                'iOS',
+                '4.2.1',
+            ],
+            [
+                'amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1',
+                'Linux',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/5.0 (X11; U; Linux arm7tdmi; rv:1.8.1.11) Gecko/20071130 Minimo/0.025',
+                'Linux Smartphone OS (Maemo)',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160',
+                'PalmOS',
+                '0.0.0',
+            ],
         ];
     }
 }

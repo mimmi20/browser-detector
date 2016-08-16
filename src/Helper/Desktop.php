@@ -103,15 +103,11 @@ class Desktop
             return true;
         }
 
-        $windowsHelper = new WindowsHelper($this->useragent);
-
-        if ($windowsHelper->isWindows()) {
+        if ((new WindowsHelper($this->useragent))->isWindows()) {
             return true;
         }
 
-        $linuxHelper = new Helper\Linux($this->useragent);
-
-        if ($linuxHelper->isLinux()) {
+        if ((new Helper\Linux($this->useragent))->isLinux()) {
             return true;
         }
 
