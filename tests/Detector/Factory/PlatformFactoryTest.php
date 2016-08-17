@@ -264,6 +264,31 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'PalmOS',
                 '0.0.0',
             ],
+            [
+                'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1b4pre) Gecko/20090311 Ubuntu/9.04 (jaunty) Shiretoko/3.1b4pre',
+                'Ubuntu',
+                '9.04.0',
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) Opera 8.60 [en]',
+                'Windows',
+                'XP.0.0',
+            ],
+            [
+                'Mozilla/4.41  (BEOS; U ;Nav)',
+                'BeOS',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; rv:1.7.2) Gecko/20040804 Netscape/7.2',
+                'Mac OS X',
+                '10.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Darwin; FreeBSD 5.6; en-GB; rv:1.8.1.17pre) Gecko/20080716 K-Meleon/1.5.0',
+                'FreeBSD',
+                '5.6.0',
+            ],
         ];
     }
 }

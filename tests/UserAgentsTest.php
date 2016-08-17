@@ -136,7 +136,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         self::assertSame(
             $expectedPlatformName,
             $foundPlatformName,
-            'Expected actual "Platform_Name" to be "' . $expectedPlatformName . '" (was "' . $foundPlatformName . '" [class: ' . get_class($foundPlatform) . '])'
+            'Expected actual "Platform_Name" to be "' . $expectedPlatformName . '" (was "' . $foundPlatformName . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($result->getDevice()) . '])'
         );
 
         /*

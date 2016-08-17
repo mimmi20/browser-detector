@@ -132,6 +132,10 @@ class PlatformFactory implements FactoryInterface
             return new Os\FirefoxOs($agent);
         }
 
+        if ($utils->checkIfContains('freebsd', true)) {
+            return new Os\FreeBsd($agent);
+        }
+
         if ($utils->checkIfContains(['darwin', 'cfnetwork'], true)) {
             return Platform\DarwinFactory::detect($agent);
         }
@@ -258,10 +262,6 @@ class PlatformFactory implements FactoryInterface
             return new Os\Cygwin($agent);
         }
 
-        if ($utils->checkIfContains('freebsd', true)) {
-            return new Os\FreeBsd($agent);
-        }
-
         if ($utils->checkIfContains('NetBSD')) {
             return new Os\NetBsd($agent);
         }
@@ -282,7 +282,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Hpux($agent);
         }
 
-        if ($utils->checkIfContains(['BeOS'])) {
+        if ($utils->checkIfContains(['beos'], true)) {
             return new Os\Beos($agent);
         }
 
