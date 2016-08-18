@@ -52,6 +52,27 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 'Xiaomi Tech',
                 'Xiaomi',
             ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733) OrangeBot-Mobile 2008.0 (mobilesearch.support@orange-ftgroup.com)',
+                'M700',
+                'M700',
+                'SPV',
+                'SPV',
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160',
+                'Blazer',
+                'Blazer',
+                'Palm',
+                'Palm',
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Sprint:PPC-6700) Opera 8.65 [en]',
+                '6700',
+                '6700',
+                'Sprint',
+                'Sprint',
+            ],
         ];
     }
 }

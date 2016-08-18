@@ -29,61 +29,32 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Helper;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use UaHelper\Utils;
+use BrowserDetector\Detector\Device\Mobile\Spv;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
- * a helper to detect windows
+ * @category  BrowserDetector
+ *
+ * @copyright 2012-2016 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Macintosh
+class SpvFactory implements FactoryInterface
 {
     /**
-     * @var string the user agent to handle
-     */
-    private $useragent = '';
-
-    /**
-     * Class Constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Helper\Macintosh
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function __construct($useragent)
+    public static function detect($useragent)
     {
-        $this->useragent = $useragent;
-    }
-
-    public function isMacintosh()
-    {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        $mac = [
-            'Macintosh',
-            'Darwin',
-            'Mac_PowerPC',
-            'MacBook',
-            'for Mac',
-            'PPC Mac',
-            'Mac OS X',
-            '(MacOS)',
-            'integrity',
-        ];
-
-        if (!$utils->checkIfContains($mac, true)) {
-            return false;
+        if (preg_match('/M700/', $useragent)) {
+            return new Spv\SpvM700($useragent);
         }
 
-        $noMac = [
-            'freebsd',
-        ];
-
-        if ($utils->checkIfContains($noMac, true)) {
-            return false;
-        }
-
-        return true;
+        return new Spv\Spv($useragent);
     }
 }

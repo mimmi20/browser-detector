@@ -76,6 +76,6 @@ class SprintPpc6700 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return null;
     }
 }

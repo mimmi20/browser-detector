@@ -32,7 +32,6 @@
 namespace BrowserDetector\Helper;
 
 use BrowserDetector\Helper;
-use BrowserDetector\Helper\Windows as WindowsHelper;
 use UaHelper\Utils;
 
 /**
@@ -103,7 +102,7 @@ class Desktop
             return true;
         }
 
-        if ((new WindowsHelper($this->useragent))->isWindows()) {
+        if ((new Helper\Windows($this->useragent))->isWindows()) {
             return true;
         }
 

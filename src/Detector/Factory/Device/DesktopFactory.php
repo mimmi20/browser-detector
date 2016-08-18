@@ -46,8 +46,6 @@ use BrowserDetector\Detector\Device\Desktop\PowerMac;
 use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 use BrowserDetector\Helper;
-use BrowserDetector\Helper\Macintosh as MacintoshHelper;
-use BrowserDetector\Helper\Windows as WindowsHelper;
 
 /**
  * @category  BrowserDetector
@@ -66,7 +64,7 @@ class DesktopFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if ((new WindowsHelper($useragent))->isWindows()) {
+        if ((new Helper\Windows($useragent))->isWindows()) {
             return new WindowsDesktop($useragent);
         }
 
@@ -102,7 +100,7 @@ class DesktopFactory implements FactoryInterface
             return new PowerMac($useragent);
         }
 
-        if ((new MacintoshHelper($useragent))->isMacintosh()) {
+        if ((new Helper\Macintosh($useragent))->isMacintosh()) {
             return new Macintosh($useragent);
         }
 

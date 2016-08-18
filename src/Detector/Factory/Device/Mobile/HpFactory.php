@@ -75,6 +75,10 @@ class HpFactory implements FactoryInterface
             return new Hp\PalmPixi($useragent);
         }
 
+        if (preg_match('/blazer/i', $useragent)) {
+            return new Hp\PalmBlazer($useragent);
+        }
+
         if (preg_match('/p160u/i', $useragent)) {
             return new Hp\HpP160U($useragent);
         }

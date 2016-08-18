@@ -43,11 +43,11 @@ class IosTest extends \PHPUnit_Framework_TestCase
      *
      * @param string $agent
      */
-    public function testIsWindowsNegative($agent)
+    public function testIsiOSNegative($agent)
     {
-        $object = new Helper\Windows($agent);
+        $object = new Helper\Ios($agent);
 
-        self::assertFalse($object->isWindows());
+        self::assertFalse($object->isIos());
     }
 
     public function providerIsiOSNegative()

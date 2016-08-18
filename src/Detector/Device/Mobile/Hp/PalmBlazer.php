@@ -29,61 +29,53 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Helper;
+namespace BrowserDetector\Detector\Device\Mobile\Hp;
 
-use UaHelper\Utils;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
- * a helper to detect windows
+ * @category  BrowserDetector
+ *
+ * @copyright 2012-2016 Thomas Mueller
+ * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Macintosh
+class PalmBlazer extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
-     * @var string the user agent to handle
-     */
-    private $useragent = '';
-
-    /**
-     * Class Constructor
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \BrowserDetector\Helper\Macintosh
      */
     public function __construct($useragent)
     {
-        $this->useragent = $useragent;
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'Blazer';
+        $this->marketingName     = 'Blazer';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Palm')->getName();
+        $this->brand             = CompanyFactory::get('Palm')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 320;
+        $this->resolutionHeight  = 400;
+        $this->dualOrientation   = false;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
-    public function isMacintosh()
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
     {
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
-        $mac = [
-            'Macintosh',
-            'Darwin',
-            'Mac_PowerPC',
-            'MacBook',
-            'for Mac',
-            'PPC Mac',
-            'Mac OS X',
-            '(MacOS)',
-            'integrity',
-        ];
-
-        if (!$utils->checkIfContains($mac, true)) {
-            return false;
-        }
-
-        $noMac = [
-            'freebsd',
-        ];
-
-        if ($utils->checkIfContains($noMac, true)) {
-            return false;
-        }
-
-        return true;
+        return new Os\PalmOs($this->useragent);
     }
 }

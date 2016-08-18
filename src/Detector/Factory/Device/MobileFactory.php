@@ -123,6 +123,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\HtcFactory::detect($useragent);
         }
 
+        if (preg_match('/(hp|p160u|touchpad|pixi|palm|blazer|cm\_tenderloin)/i', $useragent)) {
+            return Mobile\HpFactory::detect($useragent);
+        }
+
         if (preg_match('/(galaxy|nexus|i7110|i9100|i9300|yp\-g|blaze)/i', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
         }
@@ -389,10 +393,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/gfive/i', $useragent)) {
             return Mobile\GfiveFactory::detect($useragent);
-        }
-
-        if (preg_match('/(hp|p160u|touchpad|pixi|palm|blazer|cm\_tenderloin)/i', $useragent)) {
-            return Mobile\HpFactory::detect($useragent);
         }
 
         if (preg_match('/iconbit/i', $useragent)) {
@@ -1040,6 +1040,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/msi/i', $useragent) && !preg_match('/msie/i', $useragent)) {
             return Mobile\MsiFactory::detect($useragent);
+        }
+
+        if (preg_match('/SPV/', $useragent)) {
+            return Mobile\SpvFactory::detect($useragent);
         }
 
         if (preg_match('/Orange/', $useragent)) {
