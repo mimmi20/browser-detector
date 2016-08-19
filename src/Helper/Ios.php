@@ -68,6 +68,10 @@ class Ios
             return true;
         }
 
+        if (preg_match('/Puffin\/[\d\.]+I(P|T)/', $this->useragent)) {
+            return true;
+        }
+
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 

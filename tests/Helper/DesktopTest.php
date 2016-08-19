@@ -35,6 +35,7 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
             ['MSFrontPage/15.0'],
             ['Mozilla/2.0 (compatible; MS FrontPage 5.0)'],
+            ['Mozilla/5.0 Gecko/20030306 Camino/0.7'],
         ];
     }
 
@@ -71,6 +72,7 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6 - James BOT - WebCrawler http://cognitiveseo.com/bot.html'],
             ['Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'],
             ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
+            ['Mozilla/5.0 (X11; U; Linux x86_64; ar-SA) AppleWebKit/534.35 (KHTML, like Gecko)  Chrome/11.0.696.65 Safari/534.35 Puffin/3.11546IP'],
         ];
     }
 }

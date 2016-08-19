@@ -118,6 +118,10 @@ class Linux
             return false;
         }
 
+        if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', $this->useragent)) {
+            return false;
+        }
+
         return true;
     }
 }

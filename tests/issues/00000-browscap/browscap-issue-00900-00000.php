@@ -634,7 +634,7 @@ return [
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.01',
-            'Platform_Name'           => 'Mac68K',
+            'Platform_Name'           => 'Macintosh',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

@@ -43,6 +43,7 @@ use BrowserDetector\Detector\Device\Desktop\Macintosh;
 use BrowserDetector\Detector\Device\Desktop\MacMini;
 use BrowserDetector\Detector\Device\Desktop\MacPro;
 use BrowserDetector\Detector\Device\Desktop\PowerMac;
+use BrowserDetector\Detector\Device\Desktop\RaspberryPi;
 use BrowserDetector\Detector\Device\Desktop\WindowsDesktop;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 use BrowserDetector\Helper;
@@ -66,6 +67,10 @@ class DesktopFactory implements FactoryInterface
     {
         if ((new Helper\Windows($useragent))->isWindows()) {
             return new WindowsDesktop($useragent);
+        }
+
+        if (preg_match('/Raspbian/', $useragent)) {
+            return new RaspberryPi($useragent);
         }
 
         if ((new Helper\Linux($useragent))->isLinux()) {

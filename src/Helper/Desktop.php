@@ -96,6 +96,7 @@ class Desktop
             'akregator',
             'installatron',
             'lynx',
+            'camino',
         ];
 
         if ($utils->checkIfContains($othersDesktops, true)) {
@@ -107,6 +108,10 @@ class Desktop
         }
 
         if ((new Helper\Linux($this->useragent))->isLinux()) {
+            return true;
+        }
+
+        if ((new Helper\Macintosh($this->useragent))->isMacintosh()) {
             return true;
         }
 

@@ -113,6 +113,10 @@ class Windows
      */
     public function isMobileWindows()
     {
+        if (preg_match('/Puffin\/[\d\.]+W(T|P)/', $this->useragent)) {
+            return true;
+        }
+
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 

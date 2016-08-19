@@ -112,6 +112,10 @@ class PlatformFactory implements FactoryInterface
             return new Os\MeeGo($agent);
         }
 
+        if (preg_match('/sailfish/i', $agent)) {
+            return new Os\SailfishOs($agent);
+        }
+
         if (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
             return new Os\Maemo($agent);
         }
@@ -174,12 +178,12 @@ class PlatformFactory implements FactoryInterface
             return new Os\MacintoshOs($agent);
         }
 
-        if (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
-            return new Os\Macosx($agent);
+        if (preg_match('/(de|rasp)bian/i', $agent)) {
+            return new Os\Debian($agent);
         }
 
-        if ($utils->checkIfContains('debian', true)) {
-            return new Os\Debian($agent);
+        if (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
+            return new Os\Macosx($agent);
         }
 
         if ($utils->checkIfContains('kubuntu', true)) {
@@ -348,6 +352,18 @@ class PlatformFactory implements FactoryInterface
 
         if ($utils->checkIfContains('Liberate')) {
             return new Os\Liberate($agent);
+        }
+
+        if ($utils->checkIfContains('Inferno')) {
+            return new Os\InfernoOs($agent);
+        }
+
+        if ($utils->checkIfContains('Syllable')) {
+            return new Os\SyllableOs($agent);
+        }
+
+        if ($utils->checkIfContains('Camino')) {
+            return new Os\Macosx($agent);
         }
 
         if (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/)/', $agent)) {

@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Jolla;
+namespace BrowserDetector\Detector\Device\Mobile\Ktouch;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class JollaSailfish extends Device implements DeviceHasSpecificPlatformInterface
+class Ktouch extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,16 +53,16 @@ class JollaSailfish extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Sailfish';
-        $this->marketingName     = 'Sailfish';
+        $this->deviceName        = 'general Ktouch Device';
+        $this->marketingName     = 'general Ktouch Device';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Jolla')->getName();
-        $this->brand             = CompanyFactory::get('Jolla')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Ktouch')->getName();
+        $this->brand             = CompanyFactory::get('Ktouch')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 854;
-        $this->dualOrientation   = true;
-        $this->colors            = 16777216;
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
+        $this->dualOrientation   = null;
+        $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
@@ -76,6 +76,6 @@ class JollaSailfish extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\SailfishOs($this->useragent);
+        return new Os\Java($this->useragent);
     }
 }

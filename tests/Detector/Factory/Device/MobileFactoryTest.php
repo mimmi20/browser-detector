@@ -73,6 +73,13 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Sprint',
                 'Sprint',
             ],
+            [
+                'TIANYU-KTOUCH/A930/Screen-240X320',
+                'Tianyu A930',
+                'Tianyu A930',
+                'K-Touch',
+                'K-Touch',
+            ],
         ];
     }
 }

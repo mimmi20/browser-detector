@@ -70,6 +70,7 @@ class Macintosh
             'Mac OS X',
             '(MacOS)',
             'integrity',
+            'camino',
         ];
 
         if (!$utils->checkIfContains($mac, true)) {
@@ -78,6 +79,7 @@ class Macintosh
 
         $noMac = [
             'freebsd',
+            'raspbian',
         ];
 
         if ($utils->checkIfContains($noMac, true)) {

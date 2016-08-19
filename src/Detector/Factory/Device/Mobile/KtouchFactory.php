@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Jolla;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
-use BrowserDetector\Detector\Os;
-use UaDeviceType;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Device\Mobile\Ktouch;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,39 +40,21 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class JollaSailfish extends Device implements DeviceHasSpecificPlatformInterface
+class KtouchFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     */
-    public function __construct($useragent)
-    {
-        $this->useragent         = $useragent;
-        $this->deviceName        = 'Sailfish';
-        $this->marketingName     = 'Sailfish';
-        $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Jolla')->getName();
-        $this->brand             = CompanyFactory::get('Jolla')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 854;
-        $this->dualOrientation   = true;
-        $this->colors            = 16777216;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \UaResult\Os\OsInterface|null
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\SailfishOs($this->useragent);
+        if (preg_match('/A930/', $useragent)) {
+            return new Ktouch\KtouchA930($useragent);
+        }
+
+        return new Ktouch\Ktouch($useragent);
     }
 }

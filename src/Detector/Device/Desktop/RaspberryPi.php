@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Jolla;
+namespace BrowserDetector\Detector\Device\Desktop;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use UaDeviceType;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class JollaSailfish extends Device implements DeviceHasSpecificPlatformInterface
+class RaspberryPi extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class JollaSailfish extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Sailfish';
-        $this->marketingName     = 'Sailfish';
+        $this->deviceName        = 'Raspberry Pi';
+        $this->marketingName     = 'Raspberry Pi';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Jolla')->getName();
-        $this->brand             = CompanyFactory::get('Jolla')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 854;
-        $this->dualOrientation   = true;
-        $this->colors            = 16777216;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
+        $this->manufacturer      = CompanyFactory::get('Raspberry Pi Foundation')->getName();
+        $this->brand             = CompanyFactory::get('Raspberry Pi Foundation')->getBrandName();
+        $this->pointingMethod    = 'mouse';
+        $this->resolutionWidth   = 1024;
+        $this->resolutionHeight  = 600;
+        $this->dualOrientation   = false;
+        $this->colors            = null;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->type              = new UaDeviceType\Desktop();
     }
 
     /**
@@ -76,6 +76,6 @@ class JollaSailfish extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\SailfishOs($this->useragent);
+        return new Os\Debian($this->useragent);
     }
 }

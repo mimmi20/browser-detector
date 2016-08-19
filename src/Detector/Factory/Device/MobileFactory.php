@@ -1062,6 +1062,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\AnkaFactory::detect($useragent);
         }
 
+        if (preg_match('/ktouch/i', $useragent)) {
+            return Mobile\KtouchFactory::detect($useragent);
+        }
+
         if (preg_match('/myTAB/', $useragent)) {
             return Mobile\MytabFactory::detect($useragent);
         }
@@ -1684,6 +1688,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/xda/i', $useragent)) {
             return Mobile\O2Factory::detect($useragent);
+        }
+
+        if (preg_match('/TIANYU/', $useragent)) {
+            return Mobile\KtouchFactory::detect($useragent);
         }
 
         if (preg_match('/ARM;/', $useragent) && preg_match('/Windows NT 6\.(2|3)/', $useragent)) {

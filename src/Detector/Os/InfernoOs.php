@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Jolla;
+namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
-use BrowserDetector\Detector\Os;
-use UaDeviceType;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -43,39 +40,18 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class JollaSailfish extends Device implements DeviceHasSpecificPlatformInterface
+class InfernoOs extends AbstractOs
 {
     /**
-     * the class constructor
+     * Class Constructor
      *
-     * @param string $useragent
+     * @param string $useragent the user agent to be handled
      */
     public function __construct($useragent)
     {
-        $this->useragent         = $useragent;
-        $this->deviceName        = 'Sailfish';
-        $this->marketingName     = 'Sailfish';
-        $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Jolla')->getName();
-        $this->brand             = CompanyFactory::get('Jolla')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 854;
-        $this->dualOrientation   = true;
-        $this->colors            = 16777216;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \UaResult\Os\OsInterface|null
-     */
-    public function detectOs()
-    {
-        return new Os\SailfishOs($this->useragent);
+        $this->useragent    = $useragent;
+        $this->name         = 'Inferno OS';
+        $this->version      = new Version(0);
+        $this->manufacturer = CompanyFactory::get('Vita Nuova')->getName();
     }
 }

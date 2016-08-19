@@ -26,6 +26,7 @@ class MacintoshTest extends \PHPUnit_Framework_TestCase
     {
         return [
             ['Links (0.98; Darwin 6.0 Power Macintosh)'],
+            ['Mozilla/5.0 Gecko/20030306 Camino/0.7'],
         ];
     }
 
@@ -45,6 +46,7 @@ class MacintoshTest extends \PHPUnit_Framework_TestCase
     {
         return [
             ['Mozilla/5.0 (Darwin; FreeBSD 5.6; en-GB; rv:1.9.1b3pre)Gecko/20081211 K-Meleon/1.5.2'],
+            ['Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Raspbian/8.0 (1:3.8.2.0-0rpi27rpi1g) Epiphany/3.8.2'],
         ];
     }
 }

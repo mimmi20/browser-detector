@@ -161,6 +161,7 @@ class MobileDevice
             'dino762',
             'iball',
             'terra_101',
+            'ktouch',
         ];
 
         $utils = new Utils();
@@ -213,6 +214,10 @@ class MobileDevice
         }
 
         if ((new Windows($this->useragent))->isWindows() && $utils->checkIfContains('touch', true)) {
+            return true;
+        }
+
+        if (preg_match('/Puffin\/[\d\.]+(A|I|W|M)(T|P)?/', $this->useragent)) {
             return true;
         }
 
