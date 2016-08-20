@@ -55,6 +55,10 @@ class SpiceFactory implements FactoryInterface
             return new Spice\SpiceMi424($useragent);
         }
 
+        if (preg_match('/QT\-75/', $useragent)) {
+            return new Spice\SpiceQt75($useragent);
+        }
+
         return new Spice\Spice($useragent);
     }
 }

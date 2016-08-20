@@ -799,7 +799,7 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGts3650($useragent);
         }
 
-        if (preg_match('/gt-s3370/i', $useragent)) {
+        if (preg_match('/gt\-s3370/i', $useragent)) {
             return new Samsung\SamsungGts3370($useragent);
         }
 
@@ -1293,6 +1293,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/GT\-C3322/i', $useragent)) {
             return new Samsung\SamsungGtc3322($useragent);
+        }
+
+        if (preg_match('/gt\-C3312r/i', $useragent)) {
+            return new Samsung\SamsungGtc3312r($useragent);
         }
 
         if (preg_match('/GT\-C3310/i', $useragent)) {

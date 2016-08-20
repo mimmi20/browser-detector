@@ -922,7 +922,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '10.00',
-            'Platform_Name'           => 'Windows Mobile OS',
+            'Platform_Name'           => 'Windows CE',
             'Platform_Version'        => '6.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

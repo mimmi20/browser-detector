@@ -287,6 +287,10 @@ class MotorolaFactory implements FactoryInterface
             return new Motorola\MotorolaA953($useragent);
         }
 
+        if (preg_match('/MotoQ9c/', $useragent)) {
+            return new Motorola\MotorolaQ9c($useragent);
+        }
+
         return new Motorola\Motorola($useragent);
     }
 }

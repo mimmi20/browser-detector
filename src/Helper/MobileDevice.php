@@ -162,6 +162,10 @@ class MobileDevice
             'iball',
             'terra_101',
             'ktouch',
+            'lemon b556',
+            'spark284',
+            'spice qt-75',
+            'velocitymicro',
         ];
 
         $utils = new Utils();
@@ -169,10 +173,23 @@ class MobileDevice
 
         if ($utils->checkIfContains($mobileBrowsers, true)) {
             $noMobiles = [
-                'xbox', 'badab', 'badap', 'simbar', 'google-tr', 'googlet',
-                'google wireless transcoder', 'eeepc', 'i9988_custom',
-                'i9999_custom', 'wuid=', 'smart-tv', 'sonydtv', 'hbbtv',
-                'dolphin http client', 'gxt_dongle_3188',
+                'xbox',
+                'badab',
+                'badap',
+                'simbar',
+                'google-tr',
+                'googlet',
+                'google wireless transcoder',
+                'eeepc',
+                'i9988_custom',
+                'i9999_custom',
+                'wuid=',
+                'smart-tv',
+                'sonydtv',
+                'hbbtv',
+                'dolphin http client',
+                'gxt_dongle_3188',
+                'apple tv',
             ];
 
             if ($utils->checkIfContains($noMobiles, true)) {
@@ -233,7 +250,7 @@ class MobileDevice
             return true;
         }
 
-        if (preg_match('/TBD(B|C)\d{3,4}/', $this->useragent)) {
+        if (preg_match('/TBD(B|C|G)\d{3,4}/', $this->useragent)) {
             return true;
         }
 

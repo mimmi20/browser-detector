@@ -50,6 +50,14 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (X11; U; Linux x86_64; ar-SA) AppleWebKit/534.35 (KHTML, like Gecko)  Chrome/11.0.696.65 Safari/534.35 Puffin/3.11546IP'],
             ['Mozilla/5.0 (X11; U; Linux i686; th-TH@calendar=gregorian) AppleWebKit/534.12 (KHTML, like Gecko) Puffin/1.3.2665MS Safari/534.12'],
             ['TIANYU-KTOUCH/A930/Screen-240X320'],
+            ['Lemon B556'],
+            ['LAVA Spark284/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320'],
+            ['Spice QT-75'],
+            ['ALCATEL_TRIBE_3075A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A'],
+            ['KKT20/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320'],
+            ['Mozilla/5.0 (Linux; U; en-us; Velocitymicro/T408) AppleWebKit/530.17(KHTML, like Gecko) Version/4.0Safari/530.17'],
+            ['Mozilla/5.0 (Mobile; rv:32.0) Gecko/20100101 Firefox/32.0'],
+            ['TBDG773 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'],
         ];
     }
 
@@ -74,6 +82,9 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Office Word 2013 (15.0.4693) Windows NT 6.2'],
             ['MSFrontPage/15.0'],
             ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
+            ['Opera/9.80 (Linux armv6l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;THOMSON LF1V401; en) Presto/2.10.250 Version/11.60'],
+            ['AppleCoreMedia/1.0.0.12F69 (Apple TV; U; CPU OS 8_3 like Mac OS X; en_us)'],
+            ['Apple-PubSub/65.28'],
         ];
     }
 }

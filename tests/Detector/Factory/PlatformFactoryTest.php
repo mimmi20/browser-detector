@@ -373,6 +373,84 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 '0.0.0',
                 'Jolla Ltd.',
             ],
+            [
+                'Lemon B556',
+                'Java',
+                '0.0.0',
+                'Oracle',
+            ],
+            [
+                'LAVA Spark284/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320',
+                'Java',
+                '0.0.0',
+                'Oracle',
+            ],
+            [
+                'KKT20/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320',
+                'Java',
+                '0.0.0',
+                'Oracle',
+            ],
+            [
+                'Microsoft-CryptoAPI/6.3',
+                'unknown',
+                '0.0.0',
+                'unknown',
+            ],
+            [
+                'UCS (ESX) - 4.0-3 errata302 - 28d414cc-2dac-4c0e-a34a-734020b8af66 - 00000000-0000-0000-0000-000000000000 -',
+                'Linux',
+                '0.0.0',
+                'Linux Foundation',
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Sprint:MotoQ9c',
+                'Windows CE',
+                '0.0.0',
+                'Microsoft Corporation',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; en-us; Velocitymicro/T408) AppleWebKit/530.17(KHTML, like Gecko) Version/4.0Safari/530.17',
+                'Android',
+                '0.0.0',
+                'Google Inc',
+            ],
+            [
+                'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380/Z3x_tmXXKK4',
+                'Bada',
+                '0.0.0',
+                'Samsung',
+            ],
+            [
+                'Mozilla/5.0 (Mobile; rv:32.0) Gecko/20100101 Firefox/32.0',
+                'FirefoxOS',
+                '2.0.0',
+                'Mozilla Foundation',
+            ],
+            [
+                'SAMSUNG-GT-C3312R Opera/9.80 (X11; Linux zvav; U; en) Presto/2.12.423 Version/12.16',
+                'Java',
+                '0.0.0',
+                'Oracle',
+            ],
+            [
+                'TinyBrowser/2.0 (TinyBrowser Comment; rv:1.9.1a2pre) Gecko/20201231',
+                'Linux',
+                '0.0.0',
+                'Linux Foundation',
+            ],
+            [
+                'Mozilla/5.0 (Android; Linux armv7l; rv:5.0) Gecko/20110603 Firefox/5.0 Fennec/5.0',
+                'Android',
+                '0.0.0',
+                'Google Inc',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.4; ja-jp; SH-10D Build/S4180; DOCOMO; mediatap) 720X1184 SHARP SH-10D AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'Android',
+                '4.0.4',
+                'Google Inc',
+            ],
         ];
     }
 }

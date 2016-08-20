@@ -50,7 +50,46 @@ class FirefoxOs
      */
     public static function detectVersion($useragent)
     {
-        //@todo: add logic here
+        $doMatch = preg_match('/rv:(\d+\.\d+)/', $useragent, $matches);
+
+        if (!$doMatch) {
+            return new Version(0);
+        }
+
+        $version = (float) $matches[1];
+
+        if ($version >= 37.0) {
+            return new Version(2, 2);
+        }
+
+        if ($version >= 34.0) {
+            return new Version(2, 1);
+        }
+
+        if ($version >= 32.0) {
+            return new Version(2, 0);
+        }
+
+        if ($version >= 30.0) {
+            return new Version(1, 4);
+        }
+
+        if ($version >= 28.0) {
+            return new Version(1, 3);
+        }
+
+        if ($version >= 26.0) {
+            return new Version(1, 2);
+        }
+
+        if ($version >= 18.1) {
+            return new Version(1, 1);
+        }
+
+        if ($version >= 18.0) {
+            return new Version(1, 0);
+        }
+
         return new Version(0);
     }
 }

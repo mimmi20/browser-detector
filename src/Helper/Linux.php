@@ -75,11 +75,13 @@ class Linux
             'kubuntu',
             'cros',
             'moblin',
+            'esx',
             // browsers on linux
             'dillo',
             'gvfs',
             'libvlc',
             'lynx',
+            'tinybrowser',
             // bots on linux
             'akregator',
             'installatron',
@@ -104,6 +106,9 @@ class Linux
             'terra_101',
             'jobboerse',
             'msrbot',
+            'cryptoapi',
+            'velocitymicro',
+            'gt-c3312r',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {

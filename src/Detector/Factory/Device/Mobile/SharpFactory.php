@@ -55,6 +55,10 @@ class SharpFactory implements FactoryInterface
             return new Sharp\SharpTqGx30i($useragent);
         }
 
+        if (preg_match('/SH\-10D/', $useragent)) {
+            return new Sharp\SharpSh10d($useragent);
+        }
+
         if (preg_match('/SH\-01F/', $useragent)) {
             return new Sharp\SharpSH01F($useragent);
         }

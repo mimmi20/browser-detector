@@ -70,7 +70,7 @@ class FirefoxOs
             return false;
         }
 
-        $doMatch = preg_match('/^Mozilla\/5\.0 \(.*(Mobile|Tablet);.*rv:(\d+\.\d+).*\) Gecko\/(\d+\.\d+).* Firefox\/(\d+\.\d+).*/', $this->useragent, $matches);
+        $doMatch = preg_match('/^Mozilla\/5\.0 \(.*(Mobile|Tablet);.*rv:(\d+\.\d+).*\) Gecko\/(\d+).* Firefox\/(\d+\.\d+).*/', $this->useragent, $matches);
 
         if (!$doMatch) {
             return false;

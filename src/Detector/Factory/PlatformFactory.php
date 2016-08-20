@@ -116,6 +116,10 @@ class PlatformFactory implements FactoryInterface
             return new Os\SailfishOs($agent);
         }
 
+        if (preg_match('/(android; linux arm)/i', $agent)) {
+            return new Os\AndroidOs($agent);
+        }
+
         if (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
             return new Os\Maemo($agent);
         }
@@ -366,8 +370,16 @@ class PlatformFactory implements FactoryInterface
             return new Os\Macosx($agent);
         }
 
-        if (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/)/', $agent)) {
+        if (preg_match('/(Java|J2ME\/MIDP|Profile\/MIDP|JUC|UCWEB|NetFront|Nokia|Jasmine\/1.0|JavaPlatform|WAP\/OBIGO|Obigo\/WAP|Dolfin\/|Spark284|Lemon B556|KKT20|GT\-C3312R)/', $agent)) {
             return new Os\Java($agent);
+        }
+
+        if (preg_match('/(GT\-S5380)/', $agent)) {
+            return new Os\Bada($agent);
+        }
+
+        if (preg_match('/(Velocitymicro\/T408)/', $agent)) {
+            return new Os\AndroidOs($agent);
         }
 
         return new Os\UnknownOs($agent);

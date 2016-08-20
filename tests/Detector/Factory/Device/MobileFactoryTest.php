@@ -80,6 +80,55 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'K-Touch',
                 'K-Touch',
             ],
+            [
+                'Lemon B556',
+                'B556',
+                'B556',
+                'Lemon',
+                'Lemon',
+            ],
+            [
+                'LAVA Spark284/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320',
+                'Spark 284',
+                'Spark 284',
+                'Lava',
+                'Lava',
+            ],
+            [
+                'Spice QT-75',
+                'QT-75',
+                'QT-75',
+                'Spice',
+                'Spice',
+            ],
+            [
+                'KKT20/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320',
+                'KKT20',
+                'KKT20',
+                'Lava',
+                'Lava',
+            ],
+            [
+                'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Sprint:MotoQ9c',
+                'Q9c',
+                'Q9c',
+                'Motorola',
+                'Motorola',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; en-us; Velocitymicro/T408) AppleWebKit/530.17(KHTML, like Gecko) Version/4.0Safari/530.17',
+                'Cruz',
+                'T408',
+                'Velocity Micro',
+                'Velocity Micro',
+            ],
+            [
+                'SAMSUNG-GT-C3312R Opera/9.80 (X11; Linux zvav; U; en) Presto/2.12.423 Version/12.16',
+                'GT-C3312R',
+                'GT-C3312R',
+                'Samsung',
+                'Samsung',
+            ],
         ];
     }
 }

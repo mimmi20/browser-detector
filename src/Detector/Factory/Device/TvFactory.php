@@ -31,29 +31,7 @@
 
 namespace BrowserDetector\Detector\Factory\Device;
 
-use BrowserDetector\Detector\Device\Tv\AndoerCx919;
-use BrowserDetector\Detector\Device\Tv\DlinkDsm380;
-use BrowserDetector\Detector\Device\Tv\GeneralTv;
-use BrowserDetector\Detector\Device\Tv\GoogleTv;
-use BrowserDetector\Detector\Device\Tv\Idl6651n;
-use BrowserDetector\Detector\Device\Tv\LoeweSl121;
-use BrowserDetector\Detector\Device\Tv\LoeweSl150;
-use BrowserDetector\Detector\Device\Tv\MicrosoftXbox;
-use BrowserDetector\Detector\Device\Tv\MicrosoftXboxOne;
-use BrowserDetector\Detector\Device\Tv\NetrangeMmh;
-use BrowserDetector\Detector\Device\Tv\PanasonicViera;
-use BrowserDetector\Detector\Device\Tv\PhilipsTv;
-use BrowserDetector\Detector\Device\Tv\SamsungSmartTv;
-use BrowserDetector\Detector\Device\Tv\SharpAquosTv;
-use BrowserDetector\Detector\Device\Tv\SonyDtv115;
-use BrowserDetector\Detector\Device\Tv\SonyKdl32hx755;
-use BrowserDetector\Detector\Device\Tv\SonyKdl37ex720;
-use BrowserDetector\Detector\Device\Tv\SonyKdl40ex720;
-use BrowserDetector\Detector\Device\Tv\SonyKdl50w815b;
-use BrowserDetector\Detector\Device\Tv\SonyNszGs7Gx70;
-use BrowserDetector\Detector\Device\Tv\TechniSatDigiCorderIsioS;
-use BrowserDetector\Detector\Device\Tv\TechniSatDigitIsioS;
-use BrowserDetector\Detector\Device\Tv\TechniSatMultyVisionIsio;
+use BrowserDetector\Detector\Device\Tv;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -74,93 +52,117 @@ class TvFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if (preg_match('/xbox one/i', $useragent)) {
-            return new MicrosoftXboxOne($useragent);
+            return new Tv\MicrosoftXboxOne($useragent);
         }
 
         if (preg_match('/xbox/i', $useragent)) {
-            return new MicrosoftXbox($useragent);
+            return new Tv\MicrosoftXbox($useragent);
         }
 
         if (preg_match('/dlink\.dsm380/i', $useragent)) {
-            return new DlinkDsm380($useragent);
+            return new Tv\DlinkDsm380($useragent);
         }
 
         if (preg_match('/NSZ\-GS7\/GX70/', $useragent)) {
-            return new SonyNszGs7Gx70($useragent);
+            return new Tv\SonyNszGs7Gx70($useragent);
         }
 
         if (preg_match('/googletv/i', $useragent)) {
-            return new GoogleTv($useragent);
+            return new Tv\GoogleTv($useragent);
         }
 
         if (preg_match('/idl\-6651n/i', $useragent)) {
-            return new Idl6651n($useragent);
+            return new Tv\Idl6651n($useragent);
         }
 
         if (preg_match('/loewe; sl121/i', $useragent)) {
-            return new LoeweSl121($useragent);
+            return new Tv\LoeweSl121($useragent);
         }
 
         if (preg_match('/loewe; sl150/i', $useragent)) {
-            return new LoeweSl150($useragent);
+            return new Tv\LoeweSl150($useragent);
+        }
+
+        if (preg_match('/lf1v401/i', $useragent)) {
+            return new Tv\ThomsonLf1v401($useragent);
+        }
+
+        if (preg_match('/lf1v394/i', $useragent)) {
+            return new Tv\ThomsonLf1v394($useragent);
+        }
+
+        if (preg_match('/lf1v373/i', $useragent)) {
+            return new Tv\ThomsonLf1v373($useragent);
+        }
+
+        if (preg_match('/lf1v325/i', $useragent)) {
+            return new Tv\ThomsonLf1v325($useragent);
+        }
+
+        if (preg_match('/lf1v307/i', $useragent)) {
+            return new Tv\ThomsonLf1v307($useragent);
         }
 
         if (preg_match('/NETRANGEMMH/', $useragent)) {
-            return new NetrangeMmh($useragent);
+            return new Tv\NetrangeMmh($useragent);
         }
 
         if (preg_match('/viera/i', $useragent)) {
-            return new PanasonicViera($useragent);
+            return new Tv\PanasonicViera($useragent);
         }
 
         if (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
-            return new PhilipsTv($useragent);
+            return new Tv\PhilipsTv($useragent);
         }
 
         if (preg_match('/SMART\-TV/', $useragent)) {
-            return new SamsungSmartTv($useragent);
+            return new Tv\SamsungSmartTv($useragent);
         }
 
         if (preg_match('/KDL32HX755/', $useragent)) {
-            return new SonyKdl32hx755($useragent);
+            return new Tv\SonyKdl32hx755($useragent);
         }
 
         if (preg_match('/KDL37EX720/', $useragent)) {
-            return new SonyKdl37ex720($useragent);
+            return new Tv\SonyKdl37ex720($useragent);
         }
 
         if (preg_match('/KDL40EX720/', $useragent)) {
-            return new SonyKdl40ex720($useragent);
+            return new Tv\SonyKdl40ex720($useragent);
         }
 
         if (preg_match('/KDL50W815B/', $useragent)) {
-            return new SonyKdl50w815b($useragent);
+            return new Tv\SonyKdl50w815b($useragent);
         }
 
         if (preg_match('/SonyDTV115/', $useragent)) {
-            return new SonyDtv115($useragent);
+            return new Tv\SonyDtv115($useragent);
         }
 
         if (preg_match('/technisat digicorder isio s/i', $useragent)) {
-            return new TechniSatDigiCorderIsioS($useragent);
+            return new Tv\TechniSatDigiCorderIsioS($useragent);
         }
 
         if (preg_match('/technisat digit isio s/i', $useragent)) {
-            return new TechniSatDigitIsioS($useragent);
+            return new Tv\TechniSatDigitIsioS($useragent);
         }
 
         if (preg_match('/TechniSat MultyVision ISIO/', $useragent)) {
-            return new TechniSatMultyVisionIsio($useragent);
+            return new Tv\TechniSatMultyVisionIsio($useragent);
         }
 
         if (preg_match('/AQUOSBrowser/', $useragent)) {
-            return new SharpAquosTv($useragent);
+            return new Tv\SharpAquosTv($useragent);
         }
 
         if (preg_match('/CX919/', $useragent)) {
-            return new AndoerCx919($useragent);
+            return new Tv\AndoerCx919($useragent);
         }
 
-        return new GeneralTv($useragent);
+        if (preg_match('/Apple TV/', $useragent)) {
+            return new Tv\AppleTv($useragent);
+        }
+
+        return new Tv\GeneralTv($useragent);
     }
 }

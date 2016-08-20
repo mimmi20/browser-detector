@@ -60,6 +60,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\TechnisatFactory::detect($useragent);
         }
 
+        if (preg_match('/(NaviPad)/', $useragent)) {
+            return Mobile\TexetFactory::detect($useragent);
+        }
+
         if (preg_match('/(nokia|5130c\-2)/i', $useragent)) {
             return Mobile\NokiaFactory::detect($useragent);
         }
@@ -261,6 +265,18 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/(nec|n905i)/i', $useragent) && !preg_match('/fennec/i', $useragent)) {
             return Mobile\NecFactory::detect($useragent);
+        }
+
+        if (preg_match('/SHARP/', $useragent)) {
+            return Mobile\SharpFactory::detect($useragent);
+        }
+
+        if (preg_match('/(SH05C|304SH)/', $useragent)) {
+            return Mobile\SharpFactory::detect($useragent);
+        }
+
+        if (preg_match('/SH\-\d{2}(D|F)/', $useragent)) {
+            return Mobile\SharpFactory::detect($useragent);
         }
 
         if (preg_match('/(docomo|p900i)/i', $useragent)) {
@@ -514,7 +530,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\MobistelFactory::detect($useragent);
         }
 
-        if (preg_match('/motorola/i', $useragent)) {
+        if (preg_match('/moto/i', $useragent)) {
             return Mobile\MotorolaFactory::detect($useragent);
         }
 
@@ -576,10 +592,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/sanyo/i', $useragent)) {
             return Mobile\SanyoFactory::detect($useragent);
-        }
-
-        if (preg_match('/SHARP/', $useragent)) {
-            return Mobile\SharpFactory::detect($useragent);
         }
 
         if (preg_match('/siemens/i', $useragent)) {
@@ -800,6 +812,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/zeki/i', $useragent)) {
             return Mobile\ZekiFactory::detect($useragent);
+        }
+
+        if (preg_match('/beeline/i', $useragent)) {
+            return Mobile\BeelineFactory::detect($useragent);
         }
 
         if (preg_match('/DFunc/', $useragent)) {
@@ -1066,6 +1082,18 @@ class MobileFactory implements FactoryInterface
             return Mobile\KtouchFactory::detect($useragent);
         }
 
+        if (preg_match('/lemon/i', $useragent)) {
+            return Mobile\LemonFactory::detect($useragent);
+        }
+
+        if (preg_match('/lava/i', $useragent)) {
+            return Mobile\LavaFactory::detect($useragent);
+        }
+
+        if (preg_match('/velocity/i', $useragent)) {
+            return Mobile\VelocityMicroFactory::detect($useragent);
+        }
+
         if (preg_match('/myTAB/', $useragent)) {
             return Mobile\MytabFactory::detect($useragent);
         }
@@ -1138,7 +1166,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\ZekiFactory::detect($useragent);
         }
 
-        if (preg_match('/TBD(B|C)\d{3,4}/', $useragent)) {
+        if (preg_match('/TBD(B|C|G)\d{3,4}/', $useragent)) {
             return Mobile\ZekiFactory::detect($useragent);
         }
 
@@ -1324,14 +1352,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/SM \- /', $useragent)) {
             return Mobile\SamsungFactory::detect($useragent);
-        }
-
-        if (preg_match('/(SH05C|304SH)/', $useragent)) {
-            return Mobile\SharpFactory::detect($useragent);
-        }
-
-        if (preg_match('/SH\-\d{2}(D|F)/', $useragent)) {
-            return Mobile\SharpFactory::detect($useragent);
         }
 
         if (preg_match('/SAMURAI10/', $useragent)) {
@@ -1692,6 +1712,14 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/TIANYU/', $useragent)) {
             return Mobile\KtouchFactory::detect($useragent);
+        }
+
+        if (preg_match('/KKT20/', $useragent)) {
+            return Mobile\LavaFactory::detect($useragent);
+        }
+
+        if (preg_match('/KKT20/', $useragent)) {
+            return Mobile\LavaFactory::detect($useragent);
         }
 
         if (preg_match('/ARM;/', $useragent) && preg_match('/Windows NT 6\.(2|3)/', $useragent)) {

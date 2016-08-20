@@ -27,6 +27,7 @@ class MacintoshTest extends \PHPUnit_Framework_TestCase
         return [
             ['Links (0.98; Darwin 6.0 Power Macintosh)'],
             ['Mozilla/5.0 Gecko/20030306 Camino/0.7'],
+            ['Apple-PubSub/65.28'],
         ];
     }
 

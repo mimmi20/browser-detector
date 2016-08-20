@@ -36,6 +36,9 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['MSFrontPage/15.0'],
             ['Mozilla/2.0 (compatible; MS FrontPage 5.0)'],
             ['Mozilla/5.0 Gecko/20030306 Camino/0.7'],
+            ['UCS (ESX) - 4.0-3 errata302 - 28d414cc-2dac-4c0e-a34a-734020b8af66 - 00000000-0000-0000-0000-000000000000 -'],
+            ['TinyBrowser/2.0 (TinyBrowser Comment; rv:1.9.1a2pre) Gecko/20201231'],
+            ['Apple-PubSub/65.28'],
         ];
     }
 
@@ -73,6 +76,13 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'],
             ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
             ['Mozilla/5.0 (X11; U; Linux x86_64; ar-SA) AppleWebKit/534.35 (KHTML, like Gecko)  Chrome/11.0.696.65 Safari/534.35 Puffin/3.11546IP'],
+            ['Lemon B556'],
+            ['LAVA Spark284/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320'],
+            ['Spice QT-75'],
+            ['ALCATEL_TRIBE_3075A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A'],
+            ['KKT20/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320'],
+            ['Microsoft-CryptoAPI/6.3'],
+            ['Mozilla/5.0 (Mobile; rv:32.0) Gecko/20100101 Firefox/32.0'],
         ];
     }
 }

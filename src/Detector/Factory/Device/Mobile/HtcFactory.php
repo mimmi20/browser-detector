@@ -63,6 +63,18 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcNexusHd2($useragent);
         }
 
+        if (preg_match('/8X by HTC/i', $useragent)) {
+            return new Htc\Htc8x($useragent);
+        }
+
+        if (preg_match('/8S by HTC/i', $useragent)) {
+            return new Htc\Htc8s($useragent);
+        }
+
+        if (preg_match('/Radar( C110e|; Orange)/i', $useragent)) {
+            return new Htc\HtcC110eRadar($useragent);
+        }
+
         if (preg_match('/One\_M8/i', $useragent)) {
             return new Htc\HtcOneM8($useragent);
         }
@@ -339,10 +351,6 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcRadar4G($useragent);
         }
 
-        if (preg_match('/Radar( C110e|; Orange)/i', $useragent)) {
-            return new Htc\HtcC110eRadar($useragent);
-        }
-
         if (preg_match('/Radar/i', $useragent)) {
             return new Htc\HtcRadar($useragent);
         }
@@ -497,14 +505,6 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/HTC 802d/i', $useragent)) {
             return new Htc\Htc802d($useragent);
-        }
-
-        if (preg_match('/8X by HTC/i', $useragent)) {
-            return new Htc\Htc8x($useragent);
-        }
-
-        if (preg_match('/8S by HTC/i', $useragent)) {
-            return new Htc\Htc8s($useragent);
         }
 
         if (preg_match('/VPA\_Touch/i', $useragent)) {

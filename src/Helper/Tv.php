@@ -86,6 +86,7 @@ class Tv
             'lf1v373',
             'lf1v394',
             'lf1v401',
+            'apple tv',
         ];
 
         if (!$utils->checkIfContains($tvDevices, true)) {

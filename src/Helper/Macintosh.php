@@ -71,6 +71,7 @@ class Macintosh
             '(MacOS)',
             'integrity',
             'camino',
+            'pubsub',
         ];
 
         if (!$utils->checkIfContains($mac, true)) {
