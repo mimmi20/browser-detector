@@ -100,8 +100,12 @@ class PlatformFactory implements FactoryInterface
             return new Os\Windows($agent);
         }
 
-        if (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|Series40|S60V3|S60V5)/', $agent)) {
+        if (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $agent)) {
             return new Os\Symbianos($agent);
+        }
+
+        if (preg_match('/(Series40)/', $agent)) {
+            return new Os\NokiaOs($agent);
         }
 
         if ($utils->checkIfContains('Bada')) {
@@ -366,7 +370,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\SyllableOs($agent);
         }
 
-        if ($utils->checkIfContains('Camino')) {
+        if ($utils->checkIfContains(['Camino', 'PubSub', 'integrity'])) {
             return new Os\Macosx($agent);
         }
 

@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Nokia;
+namespace BrowserDetector\Detector\Device\Mobile\Spice;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaC203 extends Device implements DeviceHasSpecificPlatformInterface
+class SpiceI2i extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,19 +53,19 @@ class NokiaC203 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'C2-03';
-        $this->marketingName     = 'C2';
+        $this->deviceName        = 'I2I';
+        $this->marketingName     = 'I2I';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
-        $this->brand             = CompanyFactory::get('Nokia')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Spice')->getName();
+        $this->brand             = CompanyFactory::get('Spice')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 240;
-        $this->resolutionHeight  = 320;
-        $this->dualOrientation   = false;
-        $this->colors            = 65536;
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
+        $this->dualOrientation   = null;
+        $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = false;
+        $this->hasQwertyKeyboard = true;
         $this->type              = new UaDeviceType\MobilePhone();
     }
 
@@ -76,6 +76,6 @@ class NokiaC203 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\NokiaOs($this->useragent);
+        return new Os\Java($this->useragent);
     }
 }

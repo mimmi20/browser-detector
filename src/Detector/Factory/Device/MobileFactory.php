@@ -191,6 +191,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\IruluFactory::detect($useragent);
         }
 
+        if (preg_match('/spice/i', $useragent)) {
+            return Mobile\SpiceFactory::detect($useragent);
+        }
+
         if (preg_match('/Symphony/', $useragent)) {
             return Mobile\SymphonyFactory::detect($useragent);
         }
@@ -369,10 +373,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/reellex/i', $useragent)) {
             return Mobile\ReellexFactory::detect($useragent);
-        }
-
-        if (preg_match('/spice/i', $useragent)) {
-            return Mobile\SpiceFactory::detect($useragent);
         }
 
         if (preg_match('/turbopad/i', $useragent)) {
@@ -1722,7 +1722,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\LavaFactory::detect($useragent);
         }
 
-        if (preg_match('/ARM;/', $useragent) && preg_match('/Windows NT 6\.(2|3)/', $useragent)) {
+        if (preg_match('/ARM;/', $useragent)
+            && preg_match('/Windows NT 6\.(2|3)/', $useragent)
+            && !preg_match('/WPDesktop/', $useragent)
+        ) {
             return Mobile\MicrosoftFactory::detect($useragent);
         }
 

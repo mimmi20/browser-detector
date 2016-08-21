@@ -75,6 +75,10 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcC110eRadar($useragent);
         }
 
+        if (preg_match('/(HD7|Mondrian)/i', $useragent)) {
+            return new Htc\HtcT9292($useragent);
+        }
+
         if (preg_match('/One\_M8/i', $useragent)) {
             return new Htc\HtcOneM8($useragent);
         }
@@ -289,10 +293,6 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/tattoo/i', $useragent)) {
             return new Htc\HtcTattoo($useragent);
-        }
-
-        if (preg_match('/(HD7|Mondrian)/i', $useragent)) {
-            return new Htc\HtcT9292($useragent);
         }
 
         if (preg_match('/7 Mozart/i', $useragent)) {

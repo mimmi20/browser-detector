@@ -76,6 +76,6 @@ class Nokia203 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\NokiaOs($this->useragent);
     }
 }

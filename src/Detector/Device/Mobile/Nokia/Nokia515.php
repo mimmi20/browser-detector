@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class NokiaC203 extends Device implements DeviceHasSpecificPlatformInterface
+class Nokia515 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,16 +53,16 @@ class NokiaC203 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'C2-03';
-        $this->marketingName     = 'C2';
+        $this->deviceName        = '515';
+        $this->marketingName     = '515';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
         $this->brand             = CompanyFactory::get('Nokia')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 240;
-        $this->resolutionHeight  = 320;
+        $this->resolutionWidth   = 360;
+        $this->resolutionHeight  = 640;
         $this->dualOrientation   = false;
-        $this->colors            = 65536;
+        $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = false;

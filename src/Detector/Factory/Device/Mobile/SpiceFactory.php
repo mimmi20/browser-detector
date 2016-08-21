@@ -59,6 +59,10 @@ class SpiceFactory implements FactoryInterface
             return new Spice\SpiceQt75($useragent);
         }
 
+        if (preg_match('/I2I/', $useragent)) {
+            return new Spice\SpiceI2i($useragent);
+        }
+
         return new Spice\Spice($useragent);
     }
 }

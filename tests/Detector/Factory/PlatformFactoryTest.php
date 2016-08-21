@@ -451,6 +451,24 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 '4.0.4',
                 'Google Inc',
             ],
+            [
+                'Apple-PubSub/65.28',
+                'Mac OS X',
+                '10.0.0',
+                'Apple Inc',
+            ],
+            [
+                'integrity/4',
+                'Mac OS X',
+                '10.0.0',
+                'Apple Inc',
+            ],
+            [
+                'Mozilla/5.0 (Symbian/3; Series60/5.3 Nokia500/111.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba',
+                'Symbian OS',
+                '0.0.0',
+                'Symbian Foundation',
+            ],
         ];
     }
 }

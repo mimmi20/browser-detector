@@ -623,6 +623,10 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\Nokia603($useragent);
         }
 
+        if (preg_match('/Nokia515/i', $useragent)) {
+            return new Nokia\Nokia515($useragent);
+        }
+
         if (preg_match('/Nokia501/i', $useragent)) {
             return new Nokia\Nokia501($useragent);
         }
@@ -637,6 +641,10 @@ class NokiaFactory implements FactoryInterface
 
         if (preg_match('/Nokia309/i', $useragent)) {
             return new Nokia\Nokia309($useragent);
+        }
+
+        if (preg_match('/Nokia308/i', $useragent)) {
+            return new Nokia\Nokia308($useragent);
         }
 
         if (preg_match('/Nokia306/i', $useragent)) {
@@ -661,6 +669,14 @@ class NokiaFactory implements FactoryInterface
 
         if (preg_match('/Nokia220/i', $useragent)) {
             return new Nokia\Nokia220($useragent);
+        }
+
+        if (preg_match('/Nokia206/i', $useragent)) {
+            return new Nokia\Nokia206($useragent);
+        }
+
+        if (preg_match('/Nokia205/i', $useragent)) {
+            return new Nokia\Nokia205($useragent);
         }
 
         if (preg_match('/Nokia203/i', $useragent)) {

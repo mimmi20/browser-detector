@@ -76,6 +76,6 @@ class NokiaX202 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent);
+        return new Os\NokiaOs($this->useragent);
     }
 }

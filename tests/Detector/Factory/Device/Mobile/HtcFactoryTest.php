@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\SpiceFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\HtcFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class SpiceFactoryTest extends \PHPUnit_Framework_TestCase
+class HtcFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -21,7 +21,7 @@ class SpiceFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = SpiceFactory::detect($agent);
+        $result = HtcFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
         self::assertSame($deviceName, $result->getDeviceName());
@@ -39,18 +39,11 @@ class SpiceFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'Spice QT-75',
-                'QT-75',
-                'QT-75',
-                'Spice',
-                'Spice',
-            ],
-            [
-                'SYM.S200.SYM.T63.DEWAV60A_64_11B_HW (MRE/3.1.00(1280);MAUI/_DY33891_Symphony_L102;BDATE/2014/04/18 14:22;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/DEWAV60A_64_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;) Y3389_DY33891_Symphony_L102 Release/2014.04.18 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US',
-                'I2I',
-                'I2I',
-                'Spice',
-                'Spice',
+                'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD7 T9292)',
+                'T9292',
+                'HD7',
+                'HTC',
+                'HTC',
             ],
         ];
     }
