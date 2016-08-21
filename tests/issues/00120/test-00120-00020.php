@@ -612,7 +612,7 @@ return [
             'Browser_Version'         => '43',
             'Platform_Name'           => 'OpenBSD',
             'Platform_Version'        => 'unknown',
-            'Platform_Bits'           => 32,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',

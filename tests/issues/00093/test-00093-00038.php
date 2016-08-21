@@ -1117,7 +1117,7 @@ return [
             'Platform_Name'           => 'Tizen',
             'Platform_Version'        => '2.3.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => '',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

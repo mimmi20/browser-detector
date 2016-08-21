@@ -204,7 +204,7 @@ return [
             'Browser_Version'         => '2.0',
             'Platform_Name'           => 'Ubuntu',
             'Platform_Version'        => 'unknown',
-            'Platform_Bits'           => 32,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Canonical Foundation',
             'Device_Name'             => 'Linux Desktop',
             'Device_Maker'            => 'Various',

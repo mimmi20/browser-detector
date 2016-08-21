@@ -1404,7 +1404,7 @@ return [
             'Browser_Version'         => '24.3',
             'Platform_Name'           => 'FreeBSD',
             'Platform_Version'        => '0.0.0',
-            'Platform_Bits'           => 32,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'FreeBSD Foundation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',

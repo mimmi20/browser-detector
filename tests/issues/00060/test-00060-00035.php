@@ -1861,7 +1861,7 @@ return [
             'Platform_Name'           => 'Linux Mint',
             'Platform_Version'        => '10.0.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Linux Foundation',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'Linux Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

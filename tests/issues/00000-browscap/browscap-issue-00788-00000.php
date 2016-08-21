@@ -61,7 +61,7 @@ return [
             'Platform_Name'           => 'Unix',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => '',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'general Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

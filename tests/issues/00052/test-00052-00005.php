@@ -804,7 +804,7 @@ return [
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Linux',
             'Platform_Version'        => '0.0.0',
-            'Platform_Bits'           => 32,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Linux Foundation',
             'Device_Name'             => 'Linux Desktop',
             'Device_Maker'            => 'Various',

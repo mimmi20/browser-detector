@@ -180,7 +180,7 @@ return [
             'Browser_Version'         => '0.0',
             'Platform_Name'           => 'Windows',
             'Platform_Version'        => '7.0.0',
-            'Platform_Bits'           => 0,
+            'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',

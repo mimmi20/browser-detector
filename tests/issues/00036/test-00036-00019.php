@@ -853,7 +853,7 @@ return [
             'Platform_Name'           => 'Linux Mint',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 64,
-            'Platform_Maker'          => 'Linux Foundation',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'Linux Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

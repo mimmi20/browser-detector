@@ -1357,7 +1357,7 @@ return [
             'Platform_Name'           => 'DragonFly BSD',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 64,
-            'Platform_Maker'          => '',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

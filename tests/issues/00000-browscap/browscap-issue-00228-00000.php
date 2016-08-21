@@ -12,7 +12,7 @@ return [
             'Browser_Version'         => '22.0',
             'Platform_Name'           => 'Windows',
             'Platform_Version'        => '0.0.0',
-            'Platform_Bits'           => 32,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'Windows Desktop',
             'Device_Maker'            => 'Various',

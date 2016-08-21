@@ -60,7 +60,7 @@ return [
             'Browser_Version'         => '8.0',
             'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => '10.10.0',
-            'Platform_Bits'           => 32,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Apple Inc',
             'Device_Name'             => 'Macintosh',
             'Device_Maker'            => 'Apple Inc',

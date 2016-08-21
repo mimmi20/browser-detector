@@ -12,7 +12,7 @@ return [
             'Browser_Version'         => '1.17',
             'Platform_Name'           => 'Java',
             'Platform_Version'        => '0.0.0',
-            'Platform_Bits'           => 0,
+            'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Oracle',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',

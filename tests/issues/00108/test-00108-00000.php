@@ -205,7 +205,7 @@ return [
             'Platform_Name'           => 'NetBSD',
             'Platform_Version'        => '4.0.0-RC+3',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => '',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
