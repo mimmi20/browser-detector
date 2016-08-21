@@ -1262,6 +1262,7 @@ return [
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
+            'Device_Name'             => '',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',
             'Device_Pointing_Method'  => 'mouse',
