@@ -71,6 +71,10 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaLumia530($useragent);
         }
 
+        if (preg_match('/Lumia 535/i', $useragent)) {
+            return new Nokia\NokiaLumia535($useragent);
+        }
+
         if (preg_match('/Lumia 540/i', $useragent)) {
             return new Nokia\NokiaLumia540($useragent);
         }
