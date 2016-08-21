@@ -57,7 +57,7 @@ class CompanyFactory
         static $companies = null;
 
         if (null === $companies) {
-            $companies = json_decode(file_get_contents('data/companies.json'));
+            $companies = json_decode(file_get_contents(__DIR__ . '/data/companies.json'));
         }
 
         if (!isset($companies->$companyKey)) {
