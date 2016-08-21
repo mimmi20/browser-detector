@@ -476,10 +476,28 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Microsoft Corporation',
             ],
             [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Windows Phone OS',
+                '10.0.0',
+                'Microsoft Corporation',
+            ],
+            [
                 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
                 'Windows Phone OS',
                 '10.0.0',
                 'Microsoft Corporation',
+            ],
+            [
+                'Mozilla/5.0 (X11; Ubuntu; Linux armv7l; rv:17.0) Gecko/20100101 Firefox/17.0',
+                'Ubuntu',
+                '0.0.0',
+                'Canonical Foundation',
+            ],
+            [
+                'Mozilla/5.0 (SMART-TV; X11; Linux armv7l) AppleWebKit/537.42 (KHTML, like Gecko) Chromium/25.0.1349.2 Chrome/25.0.1349.2 Safari/537.42',
+                'Linux Smartphone OS (Maemo)',
+                '0.0.0',
+                'Linux Foundation',
             ],
         ];
     }

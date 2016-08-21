@@ -80,6 +80,13 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'Apple Inc',
                 'Apple',
             ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Xbox One',
+                'Xbox One',
+                'Microsoft Corporation',
+                'Microsoft',
+            ],
         ];
     }
 }

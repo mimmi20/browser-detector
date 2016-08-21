@@ -109,6 +109,8 @@ class Linux
             'cryptoapi',
             'velocitymicro',
             'gt-c3312r',
+            'microsoft data access',
+            'microsoft-webdav',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {

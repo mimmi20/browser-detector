@@ -60,6 +60,9 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (X11; U; Linux i686; th-TH@calendar=gregorian) AppleWebKit/534.12 (KHTML, like Gecko) Puffin/1.3.2665MS Safari/534.12'],
             ['Microsoft-CryptoAPI/6.3'],
             ['Mozilla/5.0 (Linux; U; en-us; Velocitymicro/T408) AppleWebKit/530.17(KHTML, like Gecko) Version/4.0Safari/530.17'],
+            ['Microsoft Data Access Internet Publishing Provider Protocol Discovery'],
+            ['Microsoft Data Access Internet Publishing Provider Cache Manager'],
+            ['Microsoft-WebDAV-MiniRedir/6.1.7601'],
         ];
     }
 }

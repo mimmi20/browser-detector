@@ -269,6 +269,20 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'Microsoft Corporation',
                 'Microsoft',
             ],
+            [
+                'UCWEB/2.0 (Java; U; MIDP-2.0; Nokia203/20.37) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile',
+                'Asha 203',
+                'Asha 203',
+                'Nokia',
+                'Nokia',
+            ],
+            [
+                'Nokia6120c/3.83; Profile/MIDP-2.0 Configuration/CLDC-1.1 Google',
+                '6120c',
+                '6120 Classic',
+                'Nokia',
+                'Nokia',
+            ],
         ];
     }
 }

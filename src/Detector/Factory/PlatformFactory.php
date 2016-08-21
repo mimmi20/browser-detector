@@ -124,6 +124,14 @@ class PlatformFactory implements FactoryInterface
             return new Os\AndroidOs($agent);
         }
 
+        if ($utils->checkIfContains('kubuntu', true)) {
+            return new Os\Kubuntu($agent);
+        }
+
+        if ($utils->checkIfContains('ubuntu', true)) {
+            return new Os\Ubuntu($agent);
+        }
+
         if (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
             return new Os\Maemo($agent);
         }
@@ -192,14 +200,6 @@ class PlatformFactory implements FactoryInterface
 
         if (preg_match('/(Macintosh|Mac OS X)/', $agent)) {
             return new Os\Macosx($agent);
-        }
-
-        if ($utils->checkIfContains('kubuntu', true)) {
-            return new Os\Kubuntu($agent);
-        }
-
-        if ($utils->checkIfContains('ubuntu', true)) {
-            return new Os\Ubuntu($agent);
         }
 
         if ($utils->checkIfContains(['RIM Tablet'])) {

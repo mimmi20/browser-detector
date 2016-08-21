@@ -83,6 +83,9 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['KKT20/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320'],
             ['Microsoft-CryptoAPI/6.3'],
             ['Mozilla/5.0 (Mobile; rv:32.0) Gecko/20100101 Firefox/32.0'],
+            ['Microsoft Data Access Internet Publishing Provider Protocol Discovery'],
+            ['Microsoft Data Access Internet Publishing Provider Cache Manager'],
+            ['Microsoft-WebDAV-MiniRedir/6.1.7601'],
         ];
     }
 }
