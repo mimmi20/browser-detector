@@ -163,7 +163,7 @@ class ArchosFactory implements FactoryInterface
             return new Archos\Archos50cOxygen($useragent);
         }
 
-        if (preg_match('/40 Cesium/i', $useragent)) {
+        if (preg_match('/40 cesium/i', $useragent)) {
             return new Archos\Archos40Cesium($useragent);
         }
 

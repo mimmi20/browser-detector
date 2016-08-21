@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Device\Mobile\Technisat;
+use BrowserDetector\Detector\Device\Mobile\Bewatec;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -40,7 +40,7 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TechnisatFactory implements FactoryInterface
+class BewatecFactory implements FactoryInterface
 {
     /**
      * detects the device name from the given user agent
@@ -51,14 +51,10 @@ class TechnisatFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/TechniPad_10\-3G/i', $useragent)) {
-            return new Technisat\TechnisatTechnipad103g($useragent);
+        if (preg_match('/MediPaD/', $useragent)) {
+            return new Bewatec\BewatecMediPad($useragent);
         }
 
-        if (preg_match('/AQIPAD_7G/i', $useragent)) {
-            return new Technisat\TechnisatAqistonAqipad7g($useragent);
-        }
-
-        return new Technisat\Technisat($useragent);
+        return new Bewatec\Bewatec($useragent);
     }
 }

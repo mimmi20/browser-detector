@@ -499,6 +499,12 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 '0.0.0',
                 'Linux Foundation',
             ],
+            [
+                'Debian APT-HTTP/1.3 (1.0.1ubuntu2)',
+                'Debian',
+                '0.0.0',
+                'Software in the Public Interest, Inc.',
+            ],
         ];
     }
 }

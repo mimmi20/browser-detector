@@ -56,12 +56,16 @@ class MobileFactory implements FactoryInterface
             return Mobile\HiPhoneFactory::detect($useragent);
         }
 
-        if (preg_match('/(Technisat|TechniPad)/', $useragent)) {
+        if (preg_match('/(Technisat|TechniPad|AQIPAD)/', $useragent)) {
             return Mobile\TechnisatFactory::detect($useragent);
         }
 
         if (preg_match('/(NaviPad)/', $useragent)) {
             return Mobile\TexetFactory::detect($useragent);
+        }
+
+        if (preg_match('/(MediPaD)/', $useragent)) {
+            return Mobile\BewatecFactory::detect($useragent);
         }
 
         if (preg_match('/(nokia|5130c\-2|lumia)/i', $useragent)) {

@@ -76,6 +76,6 @@ class Archos40Cesium extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent);
     }
 }

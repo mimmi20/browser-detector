@@ -339,6 +339,41 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
             ],
+            [
+                'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; ARCHOS; 40 Cesium) like Gecko',
+                '40 Cesium',
+                '40 Cesium',
+                'Archos',
+                'Archos',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; MediPaD Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
+                'MediPaD',
+                'MediPaD',
+                'BEWATEC Kommunikationstechnik GmbH',
+                'BEWATEC',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_S856) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
+                'S856',
+                'S856',
+                'Lenovo',
+                'Lenovo',
+            ],
+            [
+                'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; BLU; WIN HD LTE; BLU 000-33) like Gecko',
+                'Win HD LTE',
+                'Win HD LTE',
+                'BLU',
+                'BLU',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; AQIPAD_7G Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'Aqiston Aqipad 7G',
+                'Aqiston Aqipad 7G',
+                'TechniSat',
+                'TechniSat',
+            ],
         ];
     }
 }

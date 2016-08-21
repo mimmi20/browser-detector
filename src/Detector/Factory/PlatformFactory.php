@@ -124,6 +124,14 @@ class PlatformFactory implements FactoryInterface
             return new Os\AndroidOs($agent);
         }
 
+        if ($utils->checkIfContains('Debian APT-HTTP')) {
+            return new Os\Debian($agent);
+        }
+
+        if ($utils->checkIfContainsAll(['mint', 'linux'], true)) {
+            return new Os\Mint($agent);
+        }
+
         if ($utils->checkIfContains('kubuntu', true)) {
             return new Os\Kubuntu($agent);
         }
@@ -220,10 +228,6 @@ class PlatformFactory implements FactoryInterface
 
         if ($utils->checkIfContains('mandriva', true)) {
             return new Os\Mandriva($agent);
-        }
-
-        if ($utils->checkIfContainsAll(['mint', 'linux'], true)) {
-            return new Os\Mint($agent);
         }
 
         if ($utils->checkIfContains('suse', true)) {
