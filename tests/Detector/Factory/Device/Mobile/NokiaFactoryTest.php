@@ -136,6 +136,34 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
             ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Lumia 650',
+                'Lumia 650',
+                'Microsoft',
+                'Microsoft',
+            ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 535) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Lumia 535',
+                'Lumia 535',
+                'Microsoft',
+                'Microsoft',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 640 LTE) like Gecko',
+                'Lumia 640 LTE',
+                'Lumia 640 LTE',
+                'Microsoft',
+                'Microsoft',
+            ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 540 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Lumia 540',
+                'Lumia 540',
+                'Microsoft',
+                'Microsoft',
+            ],
         ];
     }
 }

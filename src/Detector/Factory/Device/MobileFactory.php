@@ -64,7 +64,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\TexetFactory::detect($useragent);
         }
 
-        if (preg_match('/(nokia|5130c\-2)/i', $useragent)) {
+        if (preg_match('/(nokia|5130c\-2|lumia)/i', $useragent)) {
             return Mobile\NokiaFactory::detect($useragent);
         }
 

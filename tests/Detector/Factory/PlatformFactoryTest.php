@@ -469,6 +469,18 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 '0.0.0',
                 'Symbian Foundation',
             ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Windows Phone OS',
+                '10.0.0',
+                'Microsoft Corporation',
+            ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Windows Phone OS',
+                '10.0.0',
+                'Microsoft Corporation',
+            ],
         ];
     }
 }

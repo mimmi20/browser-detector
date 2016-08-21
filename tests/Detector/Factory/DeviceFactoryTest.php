@@ -290,6 +290,20 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
             ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Lumia 650',
+                'Lumia 650',
+                'Microsoft',
+                'Microsoft',
+            ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 535) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
+                'Lumia 535',
+                'Lumia 535',
+                'Microsoft',
+                'Microsoft',
+            ],
         ];
     }
 }

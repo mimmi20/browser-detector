@@ -51,6 +51,10 @@ class NokiaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/Lumia 650/i', $useragent)) {
+            return new Nokia\NokiaLumia650($useragent);
+        }
+
         if (preg_match('/Lumia 510/i', $useragent)) {
             return new Nokia\NokiaLumia510($useragent);
         }
@@ -65,6 +69,10 @@ class NokiaFactory implements FactoryInterface
 
         if (preg_match('/Lumia 530/i', $useragent)) {
             return new Nokia\NokiaLumia530($useragent);
+        }
+
+        if (preg_match('/Lumia 540/i', $useragent)) {
+            return new Nokia\NokiaLumia540($useragent);
         }
 
         if (preg_match('/Lumia 550/i', $useragent)) {
@@ -89,6 +97,10 @@ class NokiaFactory implements FactoryInterface
 
         if (preg_match('/Lumia 635/i', $useragent)) {
             return new Nokia\NokiaLumia635($useragent);
+        }
+
+        if (preg_match('/Lumia 640 lte/i', $useragent)) {
+            return new Nokia\NokiaLumia640lte($useragent);
         }
 
         if (preg_match('/Lumia 640 xl/i', $useragent)) {
