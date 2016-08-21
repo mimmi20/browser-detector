@@ -996,7 +996,7 @@ return [
             'Browser_Version'         => '2.6',
             'Platform_Name'           => 'Darwin',
             'Platform_Version'        => '0.0.0',
-            'Platform_Bits'           => 0,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Apple Inc',
             'Device_Name'             => 'Macintosh',
             'Device_Maker'            => 'Apple Inc',
