@@ -60,7 +60,7 @@ class Browser
      */
     public function __construct($useragent)
     {
-        if (!$useragent) {
+        if (!is_string($useragent) || null === $useragent || '' === $useragent) {
             throw new \UnexpectedValueException(
                 'The useragent parameter is required in this function'
             );
