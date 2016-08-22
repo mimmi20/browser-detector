@@ -505,6 +505,18 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 '0.0.0',
                 'Software in the Public Interest, Inc.',
             ],
+            [
+                'Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.4.2.12 NintendoBrowser/4.3.1.11264.EU',
+                'Nintendo OS',
+                '0.0.0',
+                'Nintendo',
+            ],
+            [
+                'Mozilla/5.0 CommonCrawler Node W6YSWFNKODF3CZPDD35IT2L6RYMGKYY3KPEZCTKI6DDCMYEVJZBRYY23GDPZCQW.A.ZNMSHA2FQHEQOZF4KOG43OH2FKIMIUIWH6ZREWD7F6T44AJK.cdn0.common.crawl.zone',
+                'unknown',
+                '0.0.0',
+                'unknown',
+            ],
         ];
     }
 }

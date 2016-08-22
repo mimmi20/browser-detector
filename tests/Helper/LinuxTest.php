@@ -28,6 +28,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
             ['UCS (ESX) - 4.0-3 errata302 - 28d414cc-2dac-4c0e-a34a-734020b8af66 - 00000000-0000-0000-0000-000000000000 -'],
             ['TinyBrowser/2.0 (TinyBrowser Comment; rv:1.9.1a2pre) Gecko/20201231'],
+            ['gvfs/1.4.3'],
         ];
     }
 
@@ -63,6 +64,8 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Data Access Internet Publishing Provider Protocol Discovery'],
             ['Microsoft Data Access Internet Publishing Provider Cache Manager'],
             ['Microsoft-WebDAV-MiniRedir/6.1.7601'],
+            ['Mozilla/5.0 CommonCrawler Node BCRJD3NIBD5D7FSESX5FYPD7DASPLXXTNN3HQFQEM6BOOIQPSUOW42ZHQM2YEA7.O.756TNQIGQC6WQCZW43CC253MBXM7UTLFE2BTSQBYM4OZA6UR.cdn0.common.crawl.zone'],
+            ['Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.9) Gecko/20071025 FreeBSD/i386 Firefox/2.0.0.9'],
         ];
     }
 }

@@ -375,6 +375,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\GzoneFactory::detect($useragent);
         }
 
+        if (preg_match('/g\-tide/i', $useragent)) {
+            return Mobile\GtideFactory::detect($useragent);
+        }
+
         if (preg_match('/reellex/i', $useragent)) {
             return Mobile\ReellexFactory::detect($useragent);
         }
@@ -1722,8 +1726,16 @@ class MobileFactory implements FactoryInterface
             return Mobile\LavaFactory::detect($useragent);
         }
 
-        if (preg_match('/KKT20/', $useragent)) {
-            return Mobile\LavaFactory::detect($useragent);
+        if (preg_match('/MDA/', $useragent)) {
+            return Mobile\TmobileFactory::detect($useragent);
+        }
+
+        if (preg_match('/redmi_note/i', $useragent)) {
+            return Mobile\XiaomiFactory::detect($useragent);
+        }
+
+        if (preg_match('/One/', $useragent)) {
+            return Mobile\HtcFactory::detect($useragent);
         }
 
         if (preg_match('/ARM;/', $useragent)

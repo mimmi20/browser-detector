@@ -76,6 +76,6 @@ class SonyEricssonCK15i extends Device implements DeviceHasSpecificPlatformInter
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Java($this->useragent);
     }
 }

@@ -87,6 +87,20 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'Microsoft Corporation',
                 'Microsoft',
             ],
+            [
+                'Opera/9.80 (Linux armv7l; LOEWE-SL32x/2.2.13.0 HbbTV/1.1.1 (; LOEWE; SL32x; LOH/2.2.13.0;;) CE-HTML/1.0 Config(L:deu,CC:DEU) NETRANGEMMH) Presto/2.12.407 Version/12.51',
+                'SL32x',
+                'SL32x',
+                'Loewe',
+                'Loewe',
+            ],
+            [
+                'Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.0.39.10 (ALDINORD, Mxl661L32, wireless) VSTVB_MB97',
+                'Smart TV',
+                'Smart TV',
+                'Samsung',
+                'Samsung',
+            ],
         ];
     }
 }

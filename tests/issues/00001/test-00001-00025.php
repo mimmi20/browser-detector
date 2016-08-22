@@ -322,7 +322,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '5.0',
-            'Platform_Name'           => 'AIX',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => '2.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'IBM',

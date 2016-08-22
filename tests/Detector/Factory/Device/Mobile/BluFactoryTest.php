@@ -45,6 +45,13 @@ class BluFactoryTest extends \PHPUnit_Framework_TestCase
                 'BLU',
                 'BLU',
             ],
+            [
+                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; BLU; WIN JR LTE; BLU 000-33) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
+                'Win JR LTE',
+                'Win JR LTE',
+                'BLU',
+                'BLU',
+            ],
         ];
     }
 }

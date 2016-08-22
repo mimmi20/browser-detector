@@ -178,6 +178,20 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
             ],
+            [
+                'UCWEB/2.0 (Windows; U; wds 8.10; de-DE; NOKIA; RM-974_1080) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile',
+                'RM-974',
+                'Lumia 635 International',
+                'Nokia',
+                'Nokia',
+            ],
+            [
+                'UCWEB/2.0 (Windows; U; wds 8.10; de-DE; NOKIA; RM-1045_1012) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile',
+                'RM-1045',
+                'Lumia 930 International',
+                'Nokia',
+                'Nokia',
+            ],
         ];
     }
 }

@@ -75,6 +75,10 @@ class TvFactory implements FactoryInterface
             return new Tv\Idl6651n($useragent);
         }
 
+        if (preg_match('/loewe; sl32x/i', $useragent)) {
+            return new Tv\LoeweSl32x($useragent);
+        }
+
         if (preg_match('/loewe; sl121/i', $useragent)) {
             return new Tv\LoeweSl121($useragent);
         }
@@ -113,6 +117,10 @@ class TvFactory implements FactoryInterface
 
         if (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
             return new Tv\PhilipsTv($useragent);
+        }
+
+        if (preg_match('/Mxl661L32/', $useragent)) {
+            return new Tv\SamsungSmartTv($useragent);
         }
 
         if (preg_match('/SMART\-TV/', $useragent)) {

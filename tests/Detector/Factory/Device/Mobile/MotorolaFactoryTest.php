@@ -45,6 +45,13 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Motorola',
                 'Motorola',
             ],
+            [
+                'MOT-E1000/80.28.08I MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1',
+                'E1000',
+                'E1000',
+                'Motorola',
+                'Motorola',
+            ],
         ];
     }
 }

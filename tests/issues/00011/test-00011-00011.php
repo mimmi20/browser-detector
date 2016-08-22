@@ -1138,7 +1138,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.0',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'FreeBSD',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Linux Foundation',

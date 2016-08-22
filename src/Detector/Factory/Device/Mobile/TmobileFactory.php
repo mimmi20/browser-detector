@@ -71,11 +71,11 @@ class TmobileFactory implements FactoryInterface
             return new Tmobile\TmobileG1($useragent);
         }
 
-        if (preg_match('/MDA compact\/3/', $useragent)) {
+        if (preg_match('/mda compact\/3/i', $useragent)) {
             return new Tmobile\TmobileMdaCompact3($useragent);
         }
 
-        if (preg_match('/MDA compact/', $useragent)) {
+        if (preg_match('/mda compact/i', $useragent)) {
             return new Tmobile\TmobileMdaCompact($useragent);
         }
 

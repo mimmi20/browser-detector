@@ -52,6 +52,20 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'Xiaomi Tech',
                 'Xiaomi',
             ],
+            [
+                'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HM NOTE 1S Build/KTU84P) U2/1.0.0 UCBrowser/10.5.2.582 Mobile',
+                'HM NOTE 1S',
+                'HM NOTE 1S',
+                'Xiaomi Tech',
+                'Xiaomi',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Redmi_Note_3) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
+                'Redmi Note 3',
+                'Redmi Note 3',
+                'Xiaomi Tech',
+                'Xiaomi',
+            ],
         ];
     }
 }

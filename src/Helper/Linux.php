@@ -111,6 +111,8 @@ class Linux
             'gt-c3312r',
             'microsoft data access',
             'microsoft-webdav',
+            'commoncrawler',
+            'freebsd',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {
