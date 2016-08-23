@@ -24,10 +24,27 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
         $result = HtcFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
-        self::assertSame($deviceName, $result->getDeviceName());
-        self::assertSame($marketingName, $result->getMarketingName());
-        self::assertSame($manufacturer, $result->getManufacturer());
-        self::assertSame($brand, $result->getBrand());
+
+        self::assertSame(
+            $deviceName,
+            $result->getDeviceName(),
+            'Expected device name to be "' . $deviceName . '" (was "' . $result->getDeviceName() . '")'
+        );
+        self::assertSame(
+            $marketingName,
+            $result->getMarketingName(),
+            'Expected marketing name to be "' . $marketingName . '" (was "' . $result->getMarketingName() . '")'
+        );
+        self::assertSame(
+            $manufacturer,
+            $result->getManufacturer(),
+            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer() . '")'
+        );
+        self::assertSame(
+            $brand,
+            $result->getBrand(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
+        );
 
         self::assertInternalType('string', $result->getManufacturer());
     }
@@ -63,6 +80,13 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mozilla/5.0 (Linux; U; Android 4.2.1; en-US; One Build/MIUI 4.8.29) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.8.8.730 U3/0.8.0 Mobile Safari/534.30',
                 'M7',
                 'One',
+                'HTC',
+                'HTC',
+            ],
+            [
+                'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)',
+                'Touch HD T8282',
+                'BlackStone',
                 'HTC',
                 'HTC',
             ],

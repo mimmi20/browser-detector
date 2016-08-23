@@ -56,7 +56,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\HiPhoneFactory::detect($useragent);
         }
 
-        if (preg_match('/(Technisat|TechniPad|AQIPAD)/', $useragent)) {
+        if (preg_match('/(Technisat|TechniPad|AQIPAD|TechniPhone)/', $useragent)) {
             return Mobile\TechnisatFactory::detect($useragent);
         }
 
@@ -1162,6 +1162,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\LenovoFactory::detect($useragent);
         }
 
+        if (preg_match('/onetouch/i', $useragent)) {
+            return Mobile\AlcatelFactory::detect($useragent);
+        }
+
         if (preg_match('/one (s|x)/i', $useragent) && !preg_match('/vodafone smart/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
         }
@@ -1258,7 +1262,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\SonyFactory::detect($useragent);
         }
 
-        if (preg_match('/(SO-03E|SO-02D)/', $useragent)) {
+        if (preg_match('/(SO\-03E|SO\-02D)/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         }
 

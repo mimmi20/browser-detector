@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\LenovoFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\TrekStorFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
+class TrekStorFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -21,7 +21,7 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = LenovoFactory::detect($agent);
+        $result = TrekStorFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -56,11 +56,11 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_S856) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
-                'S856',
-                'S856',
-                'Lenovo',
-                'Lenovo',
+                'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; WP 4.7; TrekStor) like Gecko',
+                'WinPhone 4.7 HD',
+                'WinPhone 4.7 HD',
+                'TrekStor',
+                'TrekStor',
             ],
         ];
     }

@@ -24,10 +24,27 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
         $result = DeviceFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
-        self::assertSame($deviceName, $result->getDeviceName());
-        self::assertSame($marketingName, $result->getMarketingName());
-        self::assertSame($manufacturer, $result->getManufacturer());
-        self::assertSame($brand, $result->getBrand());
+
+        self::assertSame(
+            $deviceName,
+            $result->getDeviceName(),
+            'Expected device name to be "' . $deviceName . '" (was "' . $result->getDeviceName() . '")'
+        );
+        self::assertSame(
+            $marketingName,
+            $result->getMarketingName(),
+            'Expected marketing name to be "' . $marketingName . '" (was "' . $result->getMarketingName() . '")'
+        );
+        self::assertSame(
+            $manufacturer,
+            $result->getManufacturer(),
+            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer() . '")'
+        );
+        self::assertSame(
+            $brand,
+            $result->getBrand(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
+        );
 
         self::assertInternalType('string', $result->getManufacturer());
     }
@@ -513,6 +530,111 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 'One',
                 'HTC',
                 'HTC',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-N7100) U2/1.0.0 UCBrowser/10.1.2.571 Mobile',
+                'GT-N7100',
+                'Galaxy Note II',
+                'Samsung',
+                'Samsung',
+            ],
+            [
+                'Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7610.EU',
+                '3DS',
+                '3DS',
+                'Nintendo',
+                'Nintendo',
+            ],
+            [
+                'BlackBerry9000/4.6.0.126 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/285',
+                'BlackBerry 9000',
+                'Bold',
+                'RIM',
+                'RIM',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; Xperia T Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2.0/mint',
+                'LT30p',
+                'Xperia T',
+                'Sony',
+                'Sony',
+            ],
+            [
+                'BlackBerry9700/5.0.0.321 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/604',
+                'BlackBerry 9700',
+                'BlackBerry 9700',
+                'RIM',
+                'RIM',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I9001) U2/1.0.0 UCBrowser/9.8.0.534 Mobile',
+                'GT-I9001',
+                'GT-I9001',
+                'Samsung',
+                'Samsung',
+            ],
+            [
+                'Mozilla/5.0 (Mobile; OneTouch6015X SVN:01010B MMS:1.1; rv:32.0) Gecko/32.0 Firefox/32.0',
+                'OT-6015X',
+                'OT-6015X',
+                'Alcatel',
+                'Alcatel',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI G510-0100 Build/HuaweiG510-0100) U2/1.0.0 UCBrowser/10.1.5.583 Mobile',
+                'G510-0100',
+                'G510-0100',
+                'Huawei',
+                'Huawei',
+            ],
+            [
+                'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8530-VODAFONE/S8530BUJL1; U; Bada/1.2; de-de) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.2 Mobile WVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B',
+                'GT-S8530',
+                'GT-S8530',
+                'Samsung',
+                'Samsung',
+            ],
+            [
+                'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; PadFone 2 Build/JRO03L) U2/1.0.0 UCBrowser/10.7.0.636 Mobile',
+                'PadFone 2',
+                'PadFone 2',
+                'Asus',
+                'Asus',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S6312 Build/JZO54K) U2/1.0.0 UCBrowser/10.2.0.584 Mobile',
+                'GT-S6312',
+                'GT-S6312',
+                'Samsung',
+                'Samsung',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; WP 4.7; TrekStor) like Gecko',
+                'WinPhone 4.7 HD',
+                'WinPhone 4.7 HD',
+                'TrekStor',
+                'TrekStor',
+            ],
+            [
+                'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Nexus 7 Build/LMY47V) U2/1.0.0 UCBrowser/10.6.2.599 Mobile',
+                'Nexus 7',
+                'Nexus 7',
+                'Asus',
+                'Asus',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.3; de-de; TechniPhone 5 Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'TechniPhone 5',
+                'TechniPhone 5',
+                'TechniSat',
+                'TechniSat',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Nexus 4 Build/LMY48T) U2/1.0.0 UCBrowser/10.5.0.668 Mobile',
+                'Nexus 4',
+                'Nexus 4',
+                'LG',
+                'LG',
             ],
         ];
     }

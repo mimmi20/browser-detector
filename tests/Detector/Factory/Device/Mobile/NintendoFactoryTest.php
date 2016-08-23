@@ -24,10 +24,27 @@ class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
         $result = NintendoFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
-        self::assertSame($deviceName, $result->getDeviceName());
-        self::assertSame($marketingName, $result->getMarketingName());
-        self::assertSame($manufacturer, $result->getManufacturer());
-        self::assertSame($brand, $result->getBrand());
+
+        self::assertSame(
+            $deviceName,
+            $result->getDeviceName(),
+            'Expected device name to be "' . $deviceName . '" (was "' . $result->getDeviceName() . '")'
+        );
+        self::assertSame(
+            $marketingName,
+            $result->getMarketingName(),
+            'Expected marketing name to be "' . $marketingName . '" (was "' . $result->getMarketingName() . '")'
+        );
+        self::assertSame(
+            $manufacturer,
+            $result->getManufacturer(),
+            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer() . '")'
+        );
+        self::assertSame(
+            $brand,
+            $result->getBrand(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
+        );
 
         self::assertInternalType('string', $result->getManufacturer());
     }
@@ -42,6 +59,13 @@ class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.4.2.12 NintendoBrowser/4.3.1.11264.EU',
                 'WiiU',
                 'WiiU',
+                'Nintendo',
+                'Nintendo',
+            ],
+            [
+                'Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7610.EU',
+                '3DS',
+                '3DS',
                 'Nintendo',
                 'Nintendo',
             ],

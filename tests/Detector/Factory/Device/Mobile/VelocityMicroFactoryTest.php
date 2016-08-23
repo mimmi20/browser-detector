@@ -24,10 +24,27 @@ class VelocityMicroFactoryTest extends \PHPUnit_Framework_TestCase
         $result = VelocityMicroFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
-        self::assertSame($deviceName, $result->getDeviceName());
-        self::assertSame($marketingName, $result->getMarketingName());
-        self::assertSame($manufacturer, $result->getManufacturer());
-        self::assertSame($brand, $result->getBrand());
+
+        self::assertSame(
+            $deviceName,
+            $result->getDeviceName(),
+            'Expected device name to be "' . $deviceName . '" (was "' . $result->getDeviceName() . '")'
+        );
+        self::assertSame(
+            $marketingName,
+            $result->getMarketingName(),
+            'Expected marketing name to be "' . $marketingName . '" (was "' . $result->getMarketingName() . '")'
+        );
+        self::assertSame(
+            $manufacturer,
+            $result->getManufacturer(),
+            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer() . '")'
+        );
+        self::assertSame(
+            $brand,
+            $result->getBrand(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
+        );
 
         self::assertInternalType('string', $result->getManufacturer());
     }

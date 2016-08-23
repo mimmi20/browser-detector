@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\LenovoFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\BlackBerryFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
+class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -21,7 +21,7 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = LenovoFactory::detect($agent);
+        $result = BlackBerryFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -56,11 +56,18 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_S856) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
-                'S856',
-                'S856',
-                'Lenovo',
-                'Lenovo',
+                'BlackBerry9000/4.6.0.126 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/285',
+                'BlackBerry 9000',
+                'Bold',
+                'RIM',
+                'RIM',
+            ],
+            [
+                'BlackBerry9700/5.0.0.321 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/604',
+                'BlackBerry 9700',
+                'BlackBerry 9700',
+                'RIM',
+                'RIM',
             ],
         ];
     }

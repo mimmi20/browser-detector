@@ -23,12 +23,24 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
         $result = PlatformFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Os\OsInterface', $result);
-        self::assertSame($platform, $result->getName());
+        self::assertSame(
+            $platform,
+            $result->getName(),
+            'Expected platform name to be "' . $platform . '" (was "' . $result->getName() . '")'
+        );
 
         self::assertInstanceOf('\BrowserDetector\Version\Version', $result->getVersion());
-        self::assertSame($version, $result->getVersion()->getVersion());
+        self::assertSame(
+            $version,
+            $result->getVersion()->getVersion(),
+            'Expected version to be "' . $version . '" (was "' . $result->getVersion()->getVersion() . '")'
+        );
 
-        self::assertSame($manufacturer, $result->getManufacturer());
+        self::assertSame(
+            $manufacturer,
+            $result->getManufacturer(),
+            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer() . '")'
+        );
     }
 
     /**
@@ -516,6 +528,30 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'unknown',
                 '0.0.0',
                 'unknown',
+            ],
+            [
+                'microSearch-Crawler/V1.0.0.730',
+                'unknown',
+                '0.0.0',
+                'unknown',
+            ],
+            [
+                'DWDS-Crawler +http://odo.dwds.de/dwds-crawler.html',
+                'unknown',
+                '0.0.0',
+                'unknown',
+            ],
+            [
+                'Mozilla/5.0 (X11; U; OSF1 alpha; en-US; rv:1.7.5) Gecko/20050112 Firefox/1.0',
+                'Tru64 UNIX',
+                '0.0.0',
+                'HP',
+            ],
+            [
+                'Mozilla/5.0 (X11; Fedora; Linux armv7l; rv:38.0) Gecko/20100101 Firefox/38.0',
+                'Fedora Linux',
+                '0.0.0',
+                'Red Hat Inc',
             ],
         ];
     }

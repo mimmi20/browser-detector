@@ -1522,7 +1522,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '2.3.3',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Linux Foundation',

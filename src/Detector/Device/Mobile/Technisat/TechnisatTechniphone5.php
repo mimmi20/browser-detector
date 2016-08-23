@@ -29,10 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Technisat;
 
-use BrowserDetector\Detector\Device\Mobile\Technisat;
-use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -40,29 +43,39 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TechnisatFactory implements FactoryInterface
+class TechnisatTechniphone5 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
-     * detects the device name from the given user agent
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($useragent)
+    public function __construct($useragent)
     {
-        if (preg_match('/TechniPad_10\-3G/', $useragent)) {
-            return new Technisat\TechnisatTechnipad103g($useragent);
-        }
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'TechniPhone 5';
+        $this->marketingName     = 'TechniPhone 5';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('TechniSat')->getName();
+        $this->brand             = CompanyFactory::get('TechniSat')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 1920;
+        $this->resolutionHeight  = 1200;
+        $this->dualOrientation   = false;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
+    }
 
-        if (preg_match('/AQIPAD_7G/', $useragent)) {
-            return new Technisat\TechnisatAqistonAqipad7g($useragent);
-        }
-
-        if (preg_match('/TechniPhone 5/', $useragent)) {
-            return new Technisat\TechnisatTechniphone5($useragent);
-        }
-
-        return new Technisat\Technisat($useragent);
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent);
     }
 }

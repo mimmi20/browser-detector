@@ -24,10 +24,27 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
         $result = SamsungFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
-        self::assertSame($deviceName, $result->getDeviceName());
-        self::assertSame($marketingName, $result->getMarketingName());
-        self::assertSame($manufacturer, $result->getManufacturer());
-        self::assertSame($brand, $result->getBrand());
+
+        self::assertSame(
+            $deviceName,
+            $result->getDeviceName(),
+            'Expected device name to be "' . $deviceName . '" (was "' . $result->getDeviceName() . '")'
+        );
+        self::assertSame(
+            $marketingName,
+            $result->getMarketingName(),
+            'Expected marketing name to be "' . $marketingName . '" (was "' . $result->getMarketingName() . '")'
+        );
+        self::assertSame(
+            $manufacturer,
+            $result->getManufacturer(),
+            'Expected manufacturer name to be "' . $manufacturer . '" (was "' . $result->getManufacturer() . '")'
+        );
+        self::assertSame(
+            $brand,
+            $result->getBrand(),
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
+        );
 
         self::assertInternalType('string', $result->getManufacturer());
     }
@@ -63,6 +80,34 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mozilla/5.0 (Linux; Android 5.0.2; SM-A500FU Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36',
                 'SM-A500FU',
                 'Galaxy A5 (Europe)',
+                'Samsung',
+                'Samsung',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-N7100) U2/1.0.0 UCBrowser/10.1.2.571 Mobile',
+                'GT-N7100',
+                'Galaxy Note II',
+                'Samsung',
+                'Samsung',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I9001) U2/1.0.0 UCBrowser/9.8.0.534 Mobile',
+                'GT-I9001',
+                'GT-I9001',
+                'Samsung',
+                'Samsung',
+            ],
+            [
+                'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8530-VODAFONE/S8530BUJL1; U; Bada/1.2; de-de) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.2 Mobile WVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B',
+                'GT-S8530',
+                'GT-S8530',
+                'Samsung',
+                'Samsung',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S6312 Build/JZO54K) U2/1.0.0 UCBrowser/10.2.0.584 Mobile',
+                'GT-S6312',
+                'GT-S6312',
                 'Samsung',
                 'Samsung',
             ],

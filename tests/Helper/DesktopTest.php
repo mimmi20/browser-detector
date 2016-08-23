@@ -41,6 +41,7 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Apple-PubSub/65.28'],
             ['gvfs/1.4.3'],
             ['Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.9) Gecko/20071025 FreeBSD/i386 Firefox/2.0.0.9'],
+            ['Mozilla/5.0 (X11; U; OSF1 alpha; en-US; rv:1.7.5) Gecko/20050112 Firefox/1.0'],
         ];
     }
 

@@ -66,6 +66,9 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['Microsoft-WebDAV-MiniRedir/6.1.7601'],
             ['Mozilla/5.0 CommonCrawler Node BCRJD3NIBD5D7FSESX5FYPD7DASPLXXTNN3HQFQEM6BOOIQPSUOW42ZHQM2YEA7.O.756TNQIGQC6WQCZW43CC253MBXM7UTLFE2BTSQBYM4OZA6UR.cdn0.common.crawl.zone'],
             ['Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.9) Gecko/20071025 FreeBSD/i386 Firefox/2.0.0.9'],
+            ['microSearch-Crawler/V1.0.0.730'],
+            ['JUC(Linux;U;2.3.3;Zh_cn;HTC Incredible S;480*800;)UCWEB7.8.1.96/139/800'],
+            ['Mozilla/5.0 (X11; U; OSF1 alpha; en-US; rv:1.7.5) Gecko/20050112 Firefox/1.0'],
         ];
     }
 }

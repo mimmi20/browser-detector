@@ -113,6 +113,9 @@ class Linux
             'microsoft-webdav',
             'commoncrawler',
             'freebsd',
+            'microsearch',
+            'juc(',
+            'osf1',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {

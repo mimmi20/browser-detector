@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\LenovoFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\HuaweiFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
+class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -21,7 +21,7 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = LenovoFactory::detect($agent);
+        $result = HuaweiFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -56,11 +56,11 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_S856) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
-                'S856',
-                'S856',
-                'Lenovo',
-                'Lenovo',
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI G510-0100 Build/HuaweiG510-0100) U2/1.0.0 UCBrowser/10.1.5.583 Mobile',
+                'G510-0100',
+                'G510-0100',
+                'Huawei',
+                'Huawei',
             ],
         ];
     }

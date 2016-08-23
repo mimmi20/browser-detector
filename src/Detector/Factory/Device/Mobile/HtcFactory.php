@@ -83,8 +83,8 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcT8698($useragent);
         }
 
-        if (preg_match('/T8282/i', $useragent)) {
-            return new Htc\HtcT8282($useragent);
+        if (preg_match('/t8282/i', $useragent)) {
+            return new Htc\HtcTouchHdT8282($useragent);
         }
 
         if (preg_match('/7 Pro T7576/i', $useragent)) {
@@ -289,10 +289,6 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/Velocity/i', $useragent)) {
             return new Htc\HtcVelocity($useragent);
-        }
-
-        if (preg_match('/Touch\_HD\_T8282/i', $useragent)) {
-            return new Htc\HtcTouchHdT8282($useragent);
         }
 
         if (preg_match('/Touch\_Diamond2/i', $useragent)) {

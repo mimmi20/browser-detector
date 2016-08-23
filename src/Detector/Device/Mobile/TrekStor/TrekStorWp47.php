@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
 use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +43,7 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcT8282 extends Device implements DeviceHasSpecificPlatformInterface
+class TrekStorWp47 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,19 +53,19 @@ class HtcT8282 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = '8282';
-        $this->marketingName     = 'Touch HD T8282';
+        $this->deviceName        = 'WinPhone 4.7 HD';
+        $this->marketingName     = 'WinPhone 4.7 HD';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
-        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
-        $this->pointingMethod    = 'stylus';
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 800;
-        $this->dualOrientation   = false;
+        $this->manufacturer      = CompanyFactory::get('TrekStor')->getName();
+        $this->brand             = CompanyFactory::get('TrekStor')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 1366;
+        $this->resolutionHeight  = 768;
+        $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = false;
+        $this->hasQwertyKeyboard = true;
         $this->type              = new UaDeviceType\MobilePhone();
     }
 
@@ -76,6 +76,6 @@ class HtcT8282 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent);
     }
 }

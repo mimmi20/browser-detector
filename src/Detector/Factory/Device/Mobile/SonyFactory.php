@@ -219,7 +219,7 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyST21i($useragent);
         }
 
-        if (preg_match('/LT30p/i', $useragent)) {
+        if (preg_match('/(lt30p|xperia t)/i', $useragent)) {
             return new SonyEricsson\SonyLT30p($useragent);
         }
 

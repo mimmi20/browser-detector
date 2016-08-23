@@ -140,6 +140,14 @@ class PlatformFactory implements FactoryInterface
             return new Os\Ubuntu($agent);
         }
 
+        if ($utils->checkIfContains('fedora', true)) {
+            return new Os\Fedora($agent);
+        }
+
+        if ($utils->checkIfContains(['redhat', 'red hat'], true)) {
+            return new Os\Redhat($agent);
+        }
+
         if (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
             return new Os\Maemo($agent);
         }
@@ -238,16 +246,8 @@ class PlatformFactory implements FactoryInterface
             return new Os\Suse($agent);
         }
 
-        if ($utils->checkIfContains('fedora', true)) {
-            return new Os\Fedora($agent);
-        }
-
         if ($utils->checkIfContains('gentoo', true)) {
             return new Os\Gentoo($agent);
-        }
-
-        if ($utils->checkIfContains(['redhat', 'red hat'], true)) {
-            return new Os\Redhat($agent);
         }
 
         if ($utils->checkIfContains('slackware', true)) {
