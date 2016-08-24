@@ -61,6 +61,9 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 'S856',
                 'Lenovo',
                 'Lenovo',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

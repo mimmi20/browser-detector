@@ -61,6 +61,9 @@ class BewatecFactoryTest extends \PHPUnit_Framework_TestCase
                 'MediPaD',
                 'BEWATEC Kommunikationstechnik GmbH',
                 'BEWATEC',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

@@ -61,6 +61,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'C2',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Nokia205/2.0 (03.19) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia205) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -68,6 +71,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Asha 205',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Nokia311/5.0 (03.81) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia311) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -75,6 +81,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Asha 311',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'NokiaX2-01/5.0 (08.71) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaX2-01) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile',
@@ -82,6 +91,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'X2',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Nokia110/2.0 (03.47) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia110) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -89,6 +101,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 '110',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'NokiaC2-03/2.0 (07.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaC2-03) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -96,6 +111,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'C2',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Nokia206/2.0 (04.52) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia206) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -103,6 +121,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Asha 206',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Nokia200/2.0 (12.04) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia200) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -110,6 +131,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Asha 200',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'NokiaX2-02/2.0 (11.57) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaX2-02) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -117,6 +141,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'X2',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Nokia308/2.0 (05.80) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia308) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -124,6 +151,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 '308',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Nokia305/2.0 (07.42) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia305) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
@@ -131,6 +161,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 '305',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'NokiaC1-01/2.0 (03.35) Profile/MIDP-2.1 Configuration/CLDC-1.1 nokiac1-01/UC Browser7.6.1.82/69/351 UNTRUSTED/1.0',
@@ -138,6 +171,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'C1',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Symbian/3; Series60/5.3 Nokia500/111.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba',
@@ -145,6 +181,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 '500',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Series30Plus; Nokia220/10.03.11; Profile/Series30Plus Configuration/Series30Plus) Gecko/20100401 S40OviBrowser/3.8.1.0.5',
@@ -152,6 +191,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Asha 220',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
@@ -159,6 +201,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lumia 650',
                 'Microsoft Corporation',
                 'Microsoft',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 535) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
@@ -166,6 +211,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lumia 535',
                 'Microsoft Corporation',
                 'Microsoft',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 640 LTE) like Gecko',
@@ -173,6 +221,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lumia 640 LTE',
                 'Microsoft Corporation',
                 'Microsoft',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 540 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
@@ -180,6 +231,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lumia 540',
                 'Microsoft Corporation',
                 'Microsoft',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'UCWEB/2.0 (Java; U; MIDP-2.0; Nokia203/20.37) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile',
@@ -187,6 +241,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Asha 203',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Nokia6120c/3.83; Profile/MIDP-2.0 Configuration/CLDC-1.1 Google',
@@ -194,6 +251,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 '6120 Classic',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'UCWEB/2.0 (Windows; U; wds 8.10; de-DE; NOKIA; RM-974_1080) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile',
@@ -201,6 +261,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lumia 635 International',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'UCWEB/2.0 (Windows; U; wds 8.10; de-DE; NOKIA; RM-1045_1012) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile',
@@ -208,6 +271,9 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lumia 930 International',
                 'Nokia',
                 'Nokia',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

@@ -33,6 +33,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
             ['WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203'],
             ['NSPlayer/12.00.10011.16384 WMFSDK/12.00.10011.16384'],
+            ['Mozilla/5.0 (Windows NT 5.2) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.873.0 Mobile Safari/5342'],
         ];
     }
 

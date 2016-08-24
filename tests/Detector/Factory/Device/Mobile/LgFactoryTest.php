@@ -60,7 +60,10 @@ class LgFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nexus 4',
                 'Nexus 4',
                 'LG',
-                'LG',
+                'Google',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

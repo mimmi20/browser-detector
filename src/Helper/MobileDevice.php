@@ -89,6 +89,12 @@ class MobileDevice
         if ($utils->checkIfContains($noMobiles, true)) {
             return false;
         }
+
+        // ignore mobile safari token if windows nt token is available
+        if ($utils->checkIfContainsAll(['mobile safari', 'windows nt'], true)) {
+            return false;
+        }
+
         /*
          * @var array Collection of mobile browser keywords
          */

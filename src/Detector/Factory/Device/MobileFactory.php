@@ -1166,6 +1166,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\AlcatelFactory::detect($useragent);
         }
 
+        if (preg_match('/mtech/i', $useragent)) {
+            return Mobile\MtechFactory::detect($useragent);
+        }
+
         if (preg_match('/one (s|x)/i', $useragent) && !preg_match('/vodafone smart/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
         }

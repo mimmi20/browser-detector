@@ -61,6 +61,9 @@ class GtideFactoryTest extends \PHPUnit_Framework_TestCase
                 'E77',
                 'G-Tide',
                 'G-Tide',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

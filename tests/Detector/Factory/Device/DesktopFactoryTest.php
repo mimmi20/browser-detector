@@ -61,6 +61,9 @@ class DesktopFactoryTest extends \PHPUnit_Framework_TestCase
                 'Raspberry Pi',
                 'Raspberry Pi Foundation',
                 'Raspberry Pi Foundation',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

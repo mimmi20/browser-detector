@@ -69,6 +69,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['microSearch-Crawler/V1.0.0.730'],
             ['JUC(Linux;U;2.3.3;Zh_cn;HTC Incredible S;480*800;)UCWEB7.8.1.96/139/800'],
             ['Mozilla/5.0 (X11; U; OSF1 alpha; en-US; rv:1.7.5) Gecko/20050112 Firefox/1.0'],
+            ['Mozilla/5.0 (Windows NT 5.2) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.873.0 Mobile Safari/5342'],
         ];
     }
 }

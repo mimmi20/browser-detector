@@ -61,6 +61,9 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mi Pad',
                 'Xiaomi Tech',
                 'Xiaomi',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; MI 4LTE MIUI/V7.3.2.0.MXDCNDD) NewsArticle/5.1.3',
@@ -68,6 +71,9 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mi 4 LTE',
                 'Xiaomi Tech',
                 'Xiaomi',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HM NOTE 1S Build/KTU84P) U2/1.0.0 UCBrowser/10.5.2.582 Mobile',
@@ -75,6 +81,9 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'HM NOTE 1S',
                 'Xiaomi Tech',
                 'Xiaomi',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Redmi_Note_3) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
@@ -82,6 +91,9 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'Redmi Note 3',
                 'Xiaomi Tech',
                 'Xiaomi',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

@@ -61,6 +61,9 @@ class MobistelFactoryTest extends \PHPUnit_Framework_TestCase
                 'Cynus T1',
                 'Mobistel',
                 'Elson',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

@@ -61,6 +61,9 @@ class SpvFactoryTest extends \PHPUnit_Framework_TestCase
                 'M700',
                 'SPV',
                 'SPV',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

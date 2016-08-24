@@ -61,6 +61,9 @@ class VelocityMicroFactoryTest extends \PHPUnit_Framework_TestCase
                 'T408',
                 'Velocity Micro',
                 'Velocity Micro',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

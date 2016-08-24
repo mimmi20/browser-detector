@@ -61,6 +61,9 @@ class TmobileFactoryTest extends \PHPUnit_Framework_TestCase
                 'MDA Compact',
                 'T-Mobile',
                 'T-Mobile',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

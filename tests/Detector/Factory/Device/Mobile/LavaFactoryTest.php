@@ -61,6 +61,9 @@ class LavaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Spark 284',
                 'Lava',
                 'Lava',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'KKT20/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320',
@@ -68,6 +71,9 @@ class LavaFactoryTest extends \PHPUnit_Framework_TestCase
                 'KKT20',
                 'Lava',
                 'Lava',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

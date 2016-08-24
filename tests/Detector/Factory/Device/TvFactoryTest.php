@@ -61,6 +61,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'LF1V401',
                 'Thomson',
                 'Thomson',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Opera/9.80 (Linux armv6l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;THOMSON LF1V394; en) Presto/2.10.250 Version/11.60',
@@ -68,6 +71,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'LF1V394',
                 'Thomson',
                 'Thomson',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Opera/9.80 (Linux armv6l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;THOM LF1V373; en) Presto/2.10.250 Version/11.60',
@@ -75,6 +81,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'LF1V373',
                 'Thomson',
                 'Thomson',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Opera/9.80 (Linux armv7l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/THOMSON;SW-Version/V8-MT51F01-LF1V325;Cnt/HRV;Lan/swe; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0) Presto/2.12.362 Version/12.11',
@@ -82,6 +91,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'LF1V325',
                 'Thomson',
                 'Thomson',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Opera/9.80 (Linux armv7l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/THOM;SW-Version/V8-MT51F01-LF1V307;Cnt/DEU;Lan/bul) Presto/2.12.362 Version/12.11',
@@ -89,6 +101,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'LF1V307',
                 'Thomson',
                 'Thomson',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'AppleCoreMedia/1.0.0.12F69 (Apple TV; U; CPU OS 8_3 like Mac OS X; en_us)',
@@ -96,6 +111,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'AppleTV',
                 'Apple Inc',
                 'Apple',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586',
@@ -103,6 +121,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'Xbox One',
                 'Microsoft Corporation',
                 'Microsoft',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Opera/9.80 (Linux armv7l; LOEWE-SL32x/2.2.13.0 HbbTV/1.1.1 (; LOEWE; SL32x; LOH/2.2.13.0;;) CE-HTML/1.0 Config(L:deu,CC:DEU) NETRANGEMMH) Presto/2.12.407 Version/12.51',
@@ -110,6 +131,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'SL32x',
                 'Loewe',
                 'Loewe',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.0.39.10 (ALDINORD, Mxl661L32, wireless) VSTVB_MB97',
@@ -117,6 +141,9 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 'Smart TV',
                 'Samsung',
                 'Samsung',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

@@ -61,6 +61,9 @@ class HpFactoryTest extends \PHPUnit_Framework_TestCase
                 'Blazer',
                 'Palm',
                 'Palm',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

@@ -61,6 +61,9 @@ class SpiceFactoryTest extends \PHPUnit_Framework_TestCase
                 'QT-75',
                 'Spice',
                 'Spice',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'SYM.S200.SYM.T63.DEWAV60A_64_11B_HW (MRE/3.1.00(1280);MAUI/_DY33891_Symphony_L102;BDATE/2014/04/18 14:22;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/DEWAV60A_64_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;) Y3389_DY33891_Symphony_L102 Release/2014.04.18 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US',
@@ -68,6 +71,9 @@ class SpiceFactoryTest extends \PHPUnit_Framework_TestCase
                 'I2I',
                 'Spice',
                 'Spice',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

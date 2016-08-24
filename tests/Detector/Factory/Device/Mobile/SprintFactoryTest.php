@@ -61,6 +61,9 @@ class SprintFactoryTest extends \PHPUnit_Framework_TestCase
                 '6700',
                 'Sprint',
                 'Sprint',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

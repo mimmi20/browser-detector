@@ -61,6 +61,9 @@ class SharpFactoryTest extends \PHPUnit_Framework_TestCase
                 'SH-10D',
                 'Sharp Corporation',
                 'NTT DoCoMo',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

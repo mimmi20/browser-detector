@@ -61,6 +61,9 @@ class ArchosFactoryTest extends \PHPUnit_Framework_TestCase
                 '40 Cesium',
                 'Archos',
                 'Archos',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

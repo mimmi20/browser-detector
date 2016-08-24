@@ -61,6 +61,9 @@ class TrekStorFactoryTest extends \PHPUnit_Framework_TestCase
                 'WinPhone 4.7 HD',
                 'TrekStor',
                 'TrekStor',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

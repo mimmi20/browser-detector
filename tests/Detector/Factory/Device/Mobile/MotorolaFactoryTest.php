@@ -61,6 +61,9 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Q9c',
                 'Motorola',
                 'Motorola',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'MOT-E1000/80.28.08I MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1',
@@ -68,6 +71,9 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 'E1000',
                 'Motorola',
                 'Motorola',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

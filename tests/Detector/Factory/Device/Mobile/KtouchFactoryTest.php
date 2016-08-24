@@ -61,6 +61,9 @@ class KtouchFactoryTest extends \PHPUnit_Framework_TestCase
                 'Tianyu A930',
                 'K-Touch',
                 'K-Touch',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

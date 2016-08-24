@@ -61,6 +61,9 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 'CK15i',
                 'SonyEricsson',
                 'SonyEricsson',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; MT27i Build/6.1.1.B.1.54) U2/1.0.0 UCBrowser/10.6.0.706 Mobile',
@@ -68,6 +71,9 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 'Xperia Sola',
                 'SonyEricsson',
                 'SonyEricsson',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; Xperia T Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2.0/mint',
@@ -75,6 +81,9 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 'Xperia T',
                 'Sony',
                 'Sony',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

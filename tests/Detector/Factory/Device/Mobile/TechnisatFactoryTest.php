@@ -61,6 +61,9 @@ class TechnisatFactoryTest extends \PHPUnit_Framework_TestCase
                 'Aqiston Aqipad 7G',
                 'TechniSat',
                 'TechniSat',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; TechniPhone 5 Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
@@ -68,6 +71,9 @@ class TechnisatFactoryTest extends \PHPUnit_Framework_TestCase
                 'TechniPhone 5',
                 'TechniSat',
                 'TechniSat',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

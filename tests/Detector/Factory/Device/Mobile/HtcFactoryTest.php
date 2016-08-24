@@ -61,6 +61,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'HD7',
                 'HTC',
                 'HTC',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Pro T7576)',
@@ -68,6 +71,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 '7 Pro',
                 'HTC',
                 'HTC',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'HTC_HD2_T8585/480x800 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)',
@@ -75,6 +81,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'HD2',
                 'HTC',
                 'HTC',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Linux; U; Android 4.2.1; en-US; One Build/MIUI 4.8.29) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.8.8.730 U3/0.8.0 Mobile Safari/534.30',
@@ -82,6 +91,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'One',
                 'HTC',
                 'HTC',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)',
@@ -89,6 +101,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'BlackStone',
                 'HTC',
                 'HTC',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

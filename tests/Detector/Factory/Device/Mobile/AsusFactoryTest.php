@@ -57,17 +57,23 @@ class AsusFactoryTest extends \PHPUnit_Framework_TestCase
         return [
             [
                 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; PadFone 2 Build/JRO03L) U2/1.0.0 UCBrowser/10.7.0.636 Mobile',
-                'PadFone 2',
+                'A68',
                 'PadFone 2',
                 'Asus',
                 'Asus',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Nexus 7 Build/LMY47V) U2/1.0.0 UCBrowser/10.6.2.599 Mobile',
                 'Nexus 7',
                 'Nexus 7',
                 'Asus',
-                'Asus',
+                'Google',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

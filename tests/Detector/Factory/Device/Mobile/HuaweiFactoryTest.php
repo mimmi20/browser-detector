@@ -58,9 +58,12 @@ class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI G510-0100 Build/HuaweiG510-0100) U2/1.0.0 UCBrowser/10.1.5.583 Mobile',
                 'G510-0100',
-                'G510-0100',
+                'Ascend G510',
                 'Huawei',
                 'Huawei',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

@@ -61,6 +61,9 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 'One Touch Tribe',
                 'Alcatel',
                 'Alcatel',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
             [
                 'Mozilla/5.0 (Mobile; OneTouch6015X SVN:01010B MMS:1.1; rv:32.0) Gecko/32.0 Firefox/32.0',
@@ -68,6 +71,9 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 'OT-6015X',
                 'Alcatel',
                 'Alcatel',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }

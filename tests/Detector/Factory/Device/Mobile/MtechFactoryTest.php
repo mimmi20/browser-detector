@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\NintendoFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\MtechFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
+class MtechFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -21,7 +21,7 @@ class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = NintendoFactory::detect($agent);
+        $result = MtechFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -56,21 +56,11 @@ class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.4.2.12 NintendoBrowser/4.3.1.11264.EU',
-                'WiiU',
-                'WiiU',
-                'Nintendo',
-                'Nintendo',
-                'unknown',
-                'unknown',
-                'unknown',
-            ],
-            [
-                'Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7610.EU',
-                '3DS',
-                '3DS',
-                'Nintendo',
-                'Nintendo',
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Mtech_ACE4) U2/1.0.0 UCBrowser/9.5.0.480 Mobile',
+                'Ace 4',
+                'Ace 4',
+                'MTech',
+                'MTech',
                 'unknown',
                 'unknown',
                 'unknown',

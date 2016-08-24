@@ -61,6 +61,9 @@ class LemonFactoryTest extends \PHPUnit_Framework_TestCase
                 'B556',
                 'Lemon',
                 'Lemon',
+                'unknown',
+                'unknown',
+                'unknown',
             ],
         ];
     }
