@@ -89,7 +89,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Windows',
                 '8.1.0',
                 'Microsoft Corporation',
-                32,
+                64,
             ],
             [
                 'Mozilla/5.0 (BB10; Touch) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.2.2.1609 Mobile Safari/537.35+',
@@ -327,7 +327,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'IRIX',
                 '0.0.0',
                 'unknown',
-                32,
+                64,
             ],
             [
                 'Mozilla/4.77 [en] (X11; U; HP-UX B.11.00 9000/800)',
@@ -341,7 +341,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Tru64 UNIX',
                 '0.0.0',
                 'HP',
-                32,
+                64,
             ],
             [
                 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.3.24214 (Windows; U; Windows NT 6.1) AppleWebKit/24.838; U; id) Presto/2.5.25 Version/10.54',
@@ -635,7 +635,7 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Tru64 UNIX',
                 '0.0.0',
                 'HP',
-                32,
+                64,
             ],
             [
                 'Mozilla/5.0 (X11; Fedora; Linux armv7l; rv:38.0) Gecko/20100101 Firefox/38.0',
