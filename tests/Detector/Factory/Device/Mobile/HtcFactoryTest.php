@@ -17,8 +17,11 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
      * @param string $marketingName
      * @param string $manufacturer
      * @param string $brand
+     * @param string $deviceType
+     * @param bool   $dualOrientation
+     * @param string $pointingMethod
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
+    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
         $result = HtcFactory::detect($agent);
@@ -45,8 +48,21 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
             $result->getBrand(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
         );
-
-        self::assertInternalType('string', $result->getManufacturer());
+        self::assertSame(
+            $deviceType,
+            $result->getType()->getName(),
+            'Expected device type to be "' . $deviceType . '" (was "' . $result->getType()->getName() . '")'
+        );
+        self::assertSame(
+            $dualOrientation,
+            $result->getDualOrientation(),
+            'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+        );
+        self::assertSame(
+            $pointingMethod,
+            $result->getPointingMethod(),
+            'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+        );
     }
 
     /**
@@ -61,9 +77,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'HD7',
                 'HTC',
                 'HTC',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Pro T7576)',
@@ -71,9 +87,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 '7 Pro',
                 'HTC',
                 'HTC',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'HTC_HD2_T8585/480x800 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)',
@@ -81,9 +97,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'HD2',
                 'HTC',
                 'HTC',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                false,
+                'touchscreen',
             ],
             [
                 'Mozilla/5.0 (Linux; U; Android 4.2.1; en-US; One Build/MIUI 4.8.29) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.8.8.730 U3/0.8.0 Mobile Safari/534.30',
@@ -91,9 +107,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'One',
                 'HTC',
                 'HTC',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)',
@@ -101,9 +117,9 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 'BlackStone',
                 'HTC',
                 'HTC',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                false,
+                'touchscreen',
             ],
         ];
     }

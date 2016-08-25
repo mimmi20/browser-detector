@@ -17,8 +17,11 @@ class BluFactoryTest extends \PHPUnit_Framework_TestCase
      * @param string $marketingName
      * @param string $manufacturer
      * @param string $brand
+     * @param string $deviceType
+     * @param bool   $dualOrientation
+     * @param string $pointingMethod
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
+    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
         $result = BluFactory::detect($agent);
@@ -45,8 +48,21 @@ class BluFactoryTest extends \PHPUnit_Framework_TestCase
             $result->getBrand(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
         );
-
-        self::assertInternalType('string', $result->getManufacturer());
+        self::assertSame(
+            $deviceType,
+            $result->getType()->getName(),
+            'Expected device type to be "' . $deviceType . '" (was "' . $result->getType()->getName() . '")'
+        );
+        self::assertSame(
+            $dualOrientation,
+            $result->getDualOrientation(),
+            'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+        );
+        self::assertSame(
+            $pointingMethod,
+            $result->getPointingMethod(),
+            'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+        );
     }
 
     /**
@@ -61,9 +77,9 @@ class BluFactoryTest extends \PHPUnit_Framework_TestCase
                 'Win HD LTE',
                 'BLU',
                 'BLU',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; BLU; WIN JR LTE; BLU 000-33) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
@@ -71,9 +87,9 @@ class BluFactoryTest extends \PHPUnit_Framework_TestCase
                 'Win JR LTE',
                 'BLU',
                 'BLU',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }

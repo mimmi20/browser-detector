@@ -17,8 +17,11 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
      * @param string $marketingName
      * @param string $manufacturer
      * @param string $brand
+     * @param string $deviceType
+     * @param bool   $dualOrientation
+     * @param string $pointingMethod
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
+    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
         $result = AlcatelFactory::detect($agent);
@@ -45,8 +48,21 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
             $result->getBrand(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
         );
-
-        self::assertInternalType('string', $result->getManufacturer());
+        self::assertSame(
+            $deviceType,
+            $result->getType()->getName(),
+            'Expected device type to be "' . $deviceType . '" (was "' . $result->getType()->getName() . '")'
+        );
+        self::assertSame(
+            $dualOrientation,
+            $result->getDualOrientation(),
+            'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+        );
+        self::assertSame(
+            $pointingMethod,
+            $result->getPointingMethod(),
+            'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+        );
     }
 
     /**
@@ -61,9 +77,9 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 'One Touch Tribe',
                 'Alcatel',
                 'Alcatel',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'Mozilla/5.0 (Mobile; OneTouch6015X SVN:01010B MMS:1.1; rv:32.0) Gecko/32.0 Firefox/32.0',
@@ -71,9 +87,9 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 'OT-6015X',
                 'Alcatel',
                 'Alcatel',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }

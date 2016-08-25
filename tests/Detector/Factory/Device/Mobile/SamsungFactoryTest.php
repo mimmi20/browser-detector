@@ -17,8 +17,11 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
      * @param string $marketingName
      * @param string $manufacturer
      * @param string $brand
+     * @param string $deviceType
+     * @param bool   $dualOrientation
+     * @param string $pointingMethod
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
+    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
         $result = SamsungFactory::detect($agent);
@@ -45,8 +48,21 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
             $result->getBrand(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
         );
-
-        self::assertInternalType('string', $result->getManufacturer());
+        self::assertSame(
+            $deviceType,
+            $result->getType()->getName(),
+            'Expected device type to be "' . $deviceType . '" (was "' . $result->getType()->getName() . '")'
+        );
+        self::assertSame(
+            $dualOrientation,
+            $result->getDualOrientation(),
+            'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+        );
+        self::assertSame(
+            $pointingMethod,
+            $result->getPointingMethod(),
+            'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+        );
     }
 
     /**
@@ -61,9 +77,9 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'GT-C3312R',
                 'Samsung',
                 'Samsung',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                null,
+                'touchscreen',
             ],
             [
                 'SAMSUNG-GT-C3350/C3350MBULF1 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1',
@@ -71,9 +87,9 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'GT-C3350',
                 'Samsung',
                 'Samsung',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                null,
+                'touchscreen',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-A500F Build/LRX22G) U2/1.0.0 UCBrowser/10.6.8.732 Mobile',
@@ -81,9 +97,9 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'Galaxy A5',
                 'Samsung',
                 'Samsung',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'Mozilla/5.0 (Linux; Android 5.0.2; SM-A500FU Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36',
@@ -91,9 +107,9 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'Galaxy A5 (Europe)',
                 'Samsung',
                 'Samsung',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-N7100) U2/1.0.0 UCBrowser/10.1.2.571 Mobile',
@@ -101,9 +117,9 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'Galaxy Note II',
                 'Samsung',
                 'Samsung',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I9001) U2/1.0.0 UCBrowser/9.8.0.534 Mobile',
@@ -111,9 +127,9 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'GT-I9001',
                 'Samsung',
                 'Samsung',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8530-VODAFONE/S8530BUJL1; U; Bada/1.2; de-de) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.2 Mobile WVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B',
@@ -121,9 +137,9 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'Wave 2',
                 'Samsung',
                 'Samsung',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                false,
+                'touchscreen',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S6312 Build/JZO54K) U2/1.0.0 UCBrowser/10.2.0.584 Mobile',
@@ -131,9 +147,9 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 'Galaxy Young DUOS',
                 'Samsung',
                 'Samsung',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }

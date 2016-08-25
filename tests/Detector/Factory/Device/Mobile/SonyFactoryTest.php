@@ -17,8 +17,11 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
      * @param string $marketingName
      * @param string $manufacturer
      * @param string $brand
+     * @param string $deviceType
+     * @param bool   $dualOrientation
+     * @param string $pointingMethod
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
+    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
         $result = SonyFactory::detect($agent);
@@ -45,8 +48,21 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
             $result->getBrand(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
         );
-
-        self::assertInternalType('string', $result->getManufacturer());
+        self::assertSame(
+            $deviceType,
+            $result->getType()->getName(),
+            'Expected device type to be "' . $deviceType . '" (was "' . $result->getType()->getName() . '")'
+        );
+        self::assertSame(
+            $dualOrientation,
+            $result->getDualOrientation(),
+            'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+        );
+        self::assertSame(
+            $pointingMethod,
+            $result->getPointingMethod(),
+            'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+        );
     }
 
     /**
@@ -61,9 +77,9 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 'CK15i',
                 'SonyEricsson',
                 'SonyEricsson',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                null,
+                'touchscreen',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; MT27i Build/6.1.1.B.1.54) U2/1.0.0 UCBrowser/10.6.0.706 Mobile',
@@ -71,9 +87,9 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 'Xperia Sola',
                 'SonyEricsson',
                 'SonyEricsson',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; Xperia T Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2.0/mint',
@@ -81,9 +97,9 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 'Xperia T',
                 'Sony',
                 'Sony',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }

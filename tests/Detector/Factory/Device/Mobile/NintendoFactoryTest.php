@@ -17,8 +17,11 @@ class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
      * @param string $marketingName
      * @param string $manufacturer
      * @param string $brand
+     * @param string $deviceType
+     * @param bool   $dualOrientation
+     * @param string $pointingMethod
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
+    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
         $result = NintendoFactory::detect($agent);
@@ -45,8 +48,21 @@ class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
             $result->getBrand(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
         );
-
-        self::assertInternalType('string', $result->getManufacturer());
+        self::assertSame(
+            $deviceType,
+            $result->getType()->getName(),
+            'Expected device type to be "' . $deviceType . '" (was "' . $result->getType()->getName() . '")'
+        );
+        self::assertSame(
+            $dualOrientation,
+            $result->getDualOrientation(),
+            'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+        );
+        self::assertSame(
+            $pointingMethod,
+            $result->getPointingMethod(),
+            'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+        );
     }
 
     /**
@@ -61,9 +77,9 @@ class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
                 'WiiU',
                 'Nintendo',
                 'Nintendo',
-                'unknown',
-                'unknown',
-                'unknown',
+                'TV Device',
+                false,
+                'mouse',
             ],
             [
                 'Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7610.EU',
@@ -71,9 +87,9 @@ class NintendoFactoryTest extends \PHPUnit_Framework_TestCase
                 '3DS',
                 'Nintendo',
                 'Nintendo',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Device',
+                false,
+                'mouse',
             ],
         ];
     }

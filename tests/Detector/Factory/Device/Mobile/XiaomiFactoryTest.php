@@ -17,8 +17,11 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
      * @param string $marketingName
      * @param string $manufacturer
      * @param string $brand
+     * @param string $deviceType
+     * @param bool   $dualOrientation
+     * @param string $pointingMethod
      */
-    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand)
+    public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
         $result = XiaomiFactory::detect($agent);
@@ -45,8 +48,21 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
             $result->getBrand(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrand() . '")'
         );
-
-        self::assertInternalType('string', $result->getManufacturer());
+        self::assertSame(
+            $deviceType,
+            $result->getType()->getName(),
+            'Expected device type to be "' . $deviceType . '" (was "' . $result->getType()->getName() . '")'
+        );
+        self::assertSame(
+            $dualOrientation,
+            $result->getDualOrientation(),
+            'Expected dual orientation to be "' . $dualOrientation . '" (was "' . $result->getDualOrientation() . '")'
+        );
+        self::assertSame(
+            $pointingMethod,
+            $result->getPointingMethod(),
+            'Expected pointing method to be "' . $pointingMethod . '" (was "' . $result->getPointingMethod() . '")'
+        );
     }
 
     /**
@@ -61,9 +77,9 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mi Pad',
                 'Xiaomi Tech',
                 'Xiaomi',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Tablet',
+                true,
+                'touchscreen',
             ],
             [
                 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; MI 4LTE MIUI/V7.3.2.0.MXDCNDD) NewsArticle/5.1.3',
@@ -71,9 +87,9 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'Mi 4 LTE',
                 'Xiaomi Tech',
                 'Xiaomi',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HM NOTE 1S Build/KTU84P) U2/1.0.0 UCBrowser/10.5.2.582 Mobile',
@@ -81,9 +97,9 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'HM NOTE 1S',
                 'Xiaomi Tech',
                 'Xiaomi',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Redmi_Note_3) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
@@ -91,9 +107,9 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 'Redmi Note 3',
                 'Xiaomi Tech',
                 'Xiaomi',
-                'unknown',
-                'unknown',
-                'unknown',
+                'Mobile Phone',
+                true,
+                'touchscreen',
             ],
         ];
     }
