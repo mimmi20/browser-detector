@@ -878,6 +878,14 @@ class MobileFactory implements FactoryInterface
             return Mobile\PerfeoFactory::detect($useragent);
         }
 
+        if (preg_match('/yxtel/i', $useragent)) {
+            return Mobile\YxtelFactory::detect($useragent);
+        }
+
+        if (preg_match('/doogee/i', $useragent)) {
+            return Mobile\DoogeeFactory::detect($useragent);
+        }
+
         if (preg_match('/ MT791 /i', $useragent)) {
             return Mobile\KeenHighFactory::detect($useragent);
         }
@@ -1740,6 +1748,14 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/redmi_note/i', $useragent)) {
             return Mobile\XiaomiFactory::detect($useragent);
+        }
+
+        if (preg_match('/G009/', $useragent)) {
+            return Mobile\YxtelFactory::detect($useragent);
+        }
+
+        if (preg_match('/DG330/', $useragent)) {
+            return Mobile\DoogeeFactory::detect($useragent);
         }
 
         if (preg_match('/One/', $useragent)) {

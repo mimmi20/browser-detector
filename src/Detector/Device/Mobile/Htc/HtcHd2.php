@@ -76,6 +76,6 @@ class HtcHd2 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return null;
+        return new Os\WindowsMobileOs($this->useragent);
     }
 }

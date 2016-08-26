@@ -91,6 +91,18 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcT7576($useragent);
         }
 
+        if (preg_match('/HD2\_T8585/i', $useragent)) {
+            return new Htc\HtcHd2T8585($useragent);
+        }
+
+        if (preg_match('/HD2/i', $useragent)) {
+            return new Htc\HtcHd2($useragent);
+        }
+
+        if (preg_match('/(HD[ |\_]mini)/i', $useragent)) {
+            return new Htc\HtcHdMini($useragent);
+        }
+
         if (preg_match('/One\_M8/i', $useragent)) {
             return new Htc\HtcOneM8($useragent);
         }
@@ -381,18 +393,6 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/(Hero|a6288)/i', $useragent)) {
             return new Htc\HtcHero($useragent);
-        }
-
-        if (preg_match('/(HD[ |\_]mini)/i', $useragent)) {
-            return new Htc\HtcHdMini($useragent);
-        }
-
-        if (preg_match('/HD2\_T8585/i', $useragent)) {
-            return new Htc\HtcHd2T8585($useragent);
-        }
-
-        if (preg_match('/HD2/i', $useragent)) {
-            return new Htc\HtcHd2($useragent);
         }
 
         if (preg_match('/Glacier/i', $useragent)) {

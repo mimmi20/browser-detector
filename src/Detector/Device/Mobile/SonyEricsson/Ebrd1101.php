@@ -54,7 +54,7 @@ class Ebrd1101 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'PRST1';
-        $this->marketingName     = 'Sony Reader Wi-Fi';
+        $this->marketingName     = 'Reader Wi-Fi';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Sony')->getName();
         $this->brand             = CompanyFactory::get('Sony')->getBrandName();

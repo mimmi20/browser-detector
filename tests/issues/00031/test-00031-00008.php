@@ -1642,7 +1642,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
-            'Platform_Name'           => 'Windows',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => '7',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

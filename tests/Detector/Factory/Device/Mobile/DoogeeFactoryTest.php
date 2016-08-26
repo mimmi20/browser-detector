@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\BlackBerryFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\DoogeeFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
+class DoogeeFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -24,7 +24,7 @@ class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = BlackBerryFactory::detect($agent);
+        $result = DoogeeFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -72,34 +72,14 @@ class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'BlackBerry9000/4.6.0.126 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/285',
-                'BlackBerry 9000',
-                'Bold',
-                'Research In Motion Limited',
-                'RIM',
+                'Mozilla/5.0 (Linux; Android 4.4.2; MINT-DG330 Build/MINT-DG330) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Mobile Safari/537.36',
+                'DG330',
+                'Mint',
+                'Doogee',
+                'Doogee',
                 'Mobile Phone',
-                false,
-                'clickwheel',
-            ],
-            [
-                'BlackBerry9700/5.0.0.321 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/604',
-                'BlackBerry 9700',
-                'Bold',
-                'Research In Motion Limited',
-                'RIM',
-                'Mobile Phone',
-                false,
-                'clickwheel',
-            ],
-            [
-                'BlackBerry8100/4.5.0.55 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107',
-                'BlackBerry 8100',
-                'BlackBerry 8100',
-                'Research In Motion Limited',
-                'RIM',
-                'Mobile Phone',
-                null,
-                'clickwheel',
+                true,
+                'touchscreen',
             ],
         ];
     }

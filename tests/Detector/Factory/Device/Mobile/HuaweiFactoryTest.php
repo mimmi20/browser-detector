@@ -81,6 +81,16 @@ class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; U8860 Build/HuaweiU8860) U2/1.0.0 UCBrowser/10.1.5.583 Mobile',
+                'U8860',
+                'Honor',
+                'Huawei',
+                'Huawei',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

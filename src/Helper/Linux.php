@@ -111,6 +111,7 @@ class Linux
             'gt-c3312r',
             'microsoft data access',
             'microsoft-webdav',
+            'microsoft.outlook',
             'commoncrawler',
             'freebsd',
             'microsearch',

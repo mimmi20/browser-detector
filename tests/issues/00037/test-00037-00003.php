@@ -1090,7 +1090,7 @@ return [
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '7.0',
-            'Platform_Name'           => 'Windows',
+            'Platform_Name'           => 'Windows Phone OS',
             'Platform_Version'        => '7.5.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

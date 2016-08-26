@@ -81,6 +81,16 @@ class SharpFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'SHARP-TQ-GX30i/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.c.1.104 (GUI)',
+                'TQ-GX30i',
+                'TQ-GX30i',
+                'Sharp Corporation',
+                'Sharp',
+                'Mobile Phone',
+                null,
+                'touchscreen',
+            ],
         ];
     }
 }

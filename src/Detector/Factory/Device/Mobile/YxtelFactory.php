@@ -31,7 +31,7 @@
 
 namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Device\Mobile\Tesla;
+use BrowserDetector\Detector\Device\Mobile\Yxtel;
 use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
@@ -40,7 +40,7 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TeslaFactory implements FactoryInterface
+class YxtelFactory implements FactoryInterface
 {
     /**
      * detects the device name from the given user agent
@@ -51,14 +51,10 @@ class TeslaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/QtCarBrowser/', $useragent)) {
-            return new Tesla\TeslaModelS($useragent);
+        if (preg_match('/G009/', $useragent)) {
+            return new Yxtel\YxtelG009($useragent);
         }
 
-        if (preg_match('/TTL7/', $useragent)) {
-            return new Tesla\TeslaTtl7($useragent);
-        }
-
-        return new Tesla\Tesla($useragent);
+        return new Yxtel\Yxtel($useragent);
     }
 }

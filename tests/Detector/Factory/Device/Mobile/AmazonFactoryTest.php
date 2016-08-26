@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\BlackBerryFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\AmazonFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
+class AmazonFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -24,7 +24,7 @@ class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = BlackBerryFactory::detect($agent);
+        $result = AmazonFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -72,34 +72,14 @@ class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'BlackBerry9000/4.6.0.126 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/285',
-                'BlackBerry 9000',
-                'Bold',
-                'Research In Motion Limited',
-                'RIM',
-                'Mobile Phone',
-                false,
-                'clickwheel',
-            ],
-            [
-                'BlackBerry9700/5.0.0.321 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/604',
-                'BlackBerry 9700',
-                'Bold',
-                'Research In Motion Limited',
-                'RIM',
-                'Mobile Phone',
-                false,
-                'clickwheel',
-            ],
-            [
-                'BlackBerry8100/4.5.0.55 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107',
-                'BlackBerry 8100',
-                'BlackBerry 8100',
-                'Research In Motion Limited',
-                'RIM',
-                'Mobile Phone',
-                null,
-                'clickwheel',
+                'Mozilla/5.0 (Linux; U; de-DE) AppleWebKit/528.5+ (KHTML, like Gecko, Safari/528.5+) Version/4.0 Kindle/3.0 (screen 600x800; rotate)',
+                'Kindle',
+                'Kindle',
+                'Amazon.com, Inc.',
+                'Amazon',
+                'Tablet',
+                true,
+                'touchscreen',
             ],
         ];
     }

@@ -101,6 +101,16 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; en-us; EBRD1101; EXT) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'PRST1',
+                'Reader Wi-Fi',
+                'Sony',
+                'Sony',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
