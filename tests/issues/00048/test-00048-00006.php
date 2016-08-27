@@ -730,7 +730,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '3.8',
-            'Platform_Name'           => 'Mac OS X',
+            'Platform_Name'           => 'Debian',
             'Platform_Version'        => '10.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

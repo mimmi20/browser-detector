@@ -67,12 +67,24 @@ class HtcFactory implements FactoryInterface
             return new Htc\Htc8x($useragent);
         }
 
+        if (preg_match('/PM23300/', $useragent)) {
+            return new Htc\Htc8x($useragent);
+        }
+
         if (preg_match('/8S by HTC/i', $useragent)) {
             return new Htc\Htc8s($useragent);
         }
 
-        if (preg_match('/Radar( C110e|; Orange)/i', $useragent)) {
+        if (preg_match('/radar( c110e|; orange)/i', $useragent)) {
             return new Htc\HtcC110eRadar($useragent);
+        }
+
+        if (preg_match('/radar 4g/i', $useragent)) {
+            return new Htc\HtcRadar4G($useragent);
+        }
+
+        if (preg_match('/radar/i', $useragent)) {
+            return new Htc\HtcRadar($useragent);
         }
 
         if (preg_match('/(HD7|Mondrian)/i', $useragent)) {
@@ -95,12 +107,28 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcHd2T8585($useragent);
         }
 
-        if (preg_match('/HD2/i', $useragent)) {
+        if (preg_match('/HD2/', $useragent) && preg_match('/android/i', $useragent)) {
+            return new Htc\HtcHd2Android($useragent);
+        }
+
+        if (preg_match('/HD2/', $useragent)) {
             return new Htc\HtcHd2($useragent);
         }
 
         if (preg_match('/(HD[ |\_]mini)/i', $useragent)) {
             return new Htc\HtcHdMini($useragent);
+        }
+
+        if (preg_match('/titan/i', $useragent)) {
+            return new Htc\HtcTitan($useragent);
+        }
+
+        if (preg_match('/(7 Trophy|mwp6985)/i', $useragent)) {
+            return new Htc\HtcSpark($useragent);
+        }
+
+        if (preg_match('/0P6B180/i', $useragent)) {
+            return new Htc\HtcOneM8Windows($useragent);
         }
 
         if (preg_match('/One\_M8/i', $useragent)) {
@@ -307,10 +335,6 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcTouchDiamond2($useragent);
         }
 
-        if (preg_match('/titan/i', $useragent)) {
-            return new Htc\HtcTitan($useragent);
-        }
-
         if (preg_match('/tattoo/i', $useragent)) {
             return new Htc\HtcTattoo($useragent);
         }
@@ -325,10 +349,6 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/T328w/i', $useragent)) {
             return new Htc\HtcT328w($useragent);
-        }
-
-        if (preg_match('/(7 Trophy|mwp6985)/i', $useragent)) {
-            return new Htc\HtcSpark($useragent);
         }
 
         if (preg_match('/Smart\_F3188/i', $useragent)) {
@@ -353,14 +373,6 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/Ruby/i', $useragent)) {
             return new Htc\HtcRuby($useragent);
-        }
-
-        if (preg_match('/Radar 4G/i', $useragent)) {
-            return new Htc\HtcRadar4G($useragent);
-        }
-
-        if (preg_match('/Radar/i', $useragent)) {
-            return new Htc\HtcRadar($useragent);
         }
 
         if (preg_match('/P3700/i', $useragent)) {

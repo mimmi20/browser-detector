@@ -92,6 +92,7 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Microsoft-WebDAV-MiniRedir/6.1.7601'],
             ['Mozilla/5.0 CommonCrawler Node BCRJD3NIBD5D7FSESX5FYPD7DASPLXXTNN3HQFQEM6BOOIQPSUOW42ZHQM2YEA7.O.756TNQIGQC6WQCZW43CC253MBXM7UTLFE2BTSQBYM4OZA6UR.cdn0.common.crawl.zone'],
             ['Microsoft.Outlook.15'],
+            ['Microsoft Internet Explorer'],
         ];
     }
 }

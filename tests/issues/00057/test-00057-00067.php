@@ -2290,7 +2290,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '11.0',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Linux Foundation',

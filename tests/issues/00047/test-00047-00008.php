@@ -34,7 +34,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '5.0',
-            'Platform_Name'           => 'Android',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '7.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

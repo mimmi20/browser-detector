@@ -778,7 +778,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '28.0',
-            'Platform_Name'           => 'Android',
+            'Platform_Name'           => 'FirefoxOS',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

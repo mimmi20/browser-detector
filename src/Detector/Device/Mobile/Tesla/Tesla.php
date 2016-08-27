@@ -56,8 +56,8 @@ class Tesla extends Device implements DeviceHasSpecificPlatformInterface
         $this->deviceName        = 'general Tesla Device';
         $this->marketingName     = 'general Tesla Device';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('TeslaMotors')->getName();
-        $this->brand             = CompanyFactory::get('TeslaMotors')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Tesla')->getName();
+        $this->brand             = CompanyFactory::get('Tesla')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;

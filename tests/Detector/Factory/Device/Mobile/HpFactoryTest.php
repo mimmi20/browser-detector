@@ -81,6 +81,16 @@ class HpFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0',
+                'Touchpad',
+                'Touchpad',
+                'HP',
+                'HP',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

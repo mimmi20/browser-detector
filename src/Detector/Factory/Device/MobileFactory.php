@@ -68,8 +68,16 @@ class MobileFactory implements FactoryInterface
             return Mobile\BewatecFactory::detect($useragent);
         }
 
+        if (preg_match('/(MiPad)/', $useragent)) {
+            return Mobile\XiaomiFactory::detect($useragent);
+        }
+
         if (preg_match('/(nokia|5130c\-2|lumia)/i', $useragent)) {
             return Mobile\NokiaFactory::detect($useragent);
+        }
+
+        if (preg_match('/iphone/i', $useragent) && preg_match('/android/i', $useragent)) {
+            return Mobile\XiangheFactory::detect($useragent);
         }
 
         if (preg_match('/(ipad|iphone|ipod|like mac os x)/i', $useragent)
@@ -886,6 +894,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\DoogeeFactory::detect($useragent);
         }
 
+        if (preg_match('/xianghe/i', $useragent)) {
+            return Mobile\XiangheFactory::detect($useragent);
+        }
+
         if (preg_match('/ MT791 /i', $useragent)) {
             return Mobile\KeenHighFactory::detect($useragent);
         }
@@ -1155,7 +1167,7 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/QtCarBrowser/', $useragent)) {
-            return Mobile\TeslaFactory::detect($useragent);
+            return Mobile\TeslaMotorsFactory::detect($useragent);
         }
 
         if (preg_match('/MOT/', $useragent)) {

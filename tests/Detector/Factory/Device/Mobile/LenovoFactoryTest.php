@@ -81,6 +81,26 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_A319) U2/1.0.0 UCBrowser/9.8.0.534 Mobile',
+                'A319',
+                'RocStar',
+                'Lenovo',
+                'Lenovo',
+                'Mobile Phone',
+                null,
+                'touchscreen',
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo S856 Build/KVT49L) U2/1.0.0 UCBrowser/10.5.0.668 Mobile',
+                'S856',
+                'S856',
+                'Lenovo',
+                'Lenovo',
+                'Mobile Phone',
+                null,
+                null,
+            ],
         ];
     }
 }

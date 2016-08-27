@@ -927,6 +927,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGtp1000($useragent);
         }
 
+        if (preg_match('/GT\-N9000/i', $useragent)) {
+            return new Samsung\SamsungGtn9000($useragent);
+        }
+
         if (preg_match('/GT\-N8020/i', $useragent)) {
             return new Samsung\SamsungGtn8020($useragent);
         }

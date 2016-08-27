@@ -63,6 +63,10 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaLumia930Rm1045($useragent);
         }
 
+        if (preg_match('/rm\-976/i', $useragent)) {
+            return new Nokia\NokiaLumia630Rm976($useragent);
+        }
+
         if (preg_match('/rm\-974/i', $useragent)) {
             return new Nokia\NokiaLumia635Rm974($useragent);
         }

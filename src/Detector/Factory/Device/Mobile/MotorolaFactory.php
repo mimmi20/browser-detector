@@ -163,6 +163,10 @@ class MotorolaFactory implements FactoryInterface
             return new Motorola\MotorolaRazrV3x($useragent);
         }
 
+        if (preg_match('/MOT\-V3i/', $useragent)) {
+            return new Motorola\MotorolaRazrV3i($useragent);
+        }
+
         if (preg_match('/Nexus 6/i', $useragent)) {
             return new Motorola\MotorolaNexus6($useragent);
         }
@@ -289,6 +293,10 @@ class MotorolaFactory implements FactoryInterface
 
         if (preg_match('/MotoQ9c/', $useragent)) {
             return new Motorola\MotorolaQ9c($useragent);
+        }
+
+        if (preg_match('/L7/', $useragent)) {
+            return new Motorola\MotorolaL7($useragent);
         }
 
         return new Motorola\Motorola($useragent);

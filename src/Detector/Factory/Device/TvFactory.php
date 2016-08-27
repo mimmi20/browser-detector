@@ -131,6 +131,10 @@ class TvFactory implements FactoryInterface
             return new Tv\SonyKdl32hx755($useragent);
         }
 
+        if (preg_match('/KDL32W655A/', $useragent)) {
+            return new Tv\SonyKdl32w655a($useragent);
+        }
+
         if (preg_match('/KDL37EX720/', $useragent)) {
             return new Tv\SonyKdl37ex720($useragent);
         }

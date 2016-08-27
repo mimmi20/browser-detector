@@ -91,6 +91,36 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 'touchscreen',
             ],
+            [
+                'MOT-L7/08.D5.09R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1',
+                'SLVR L7',
+                'SLVR L7',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                false,
+                null,
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; XT389 Build/0C.03.05R_S) U2/1.0.0 UCBrowser/10.7.2.757 Mobile',
+                'XT389',
+                'Motoluxe XT389',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'MOT-V3i/08.B4.34R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0',
+                'RAZR V3i',
+                'RAZR V3i',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                false,
+                null,
+            ],
         ];
     }
 }

@@ -946,7 +946,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '45.0',
-            'Platform_Name'           => 'Windows',
+            'Platform_Name'           => 'Ubuntu',
             'Platform_Version'        => '7',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

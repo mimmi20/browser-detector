@@ -112,6 +112,8 @@ class Linux
             'microsoft data access',
             'microsoft-webdav',
             'microsoft.outlook',
+            'microsoft url control',
+            'microsoft internet explorer',
             'commoncrawler',
             'freebsd',
             'microsearch',

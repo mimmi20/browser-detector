@@ -111,6 +111,16 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; MiPad Decuro Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36',
+                'Mi Pad',
+                'Mi Pad',
+                'Xiaomi Tech',
+                'Xiaomi',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

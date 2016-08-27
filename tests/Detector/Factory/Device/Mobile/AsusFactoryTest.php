@@ -91,6 +91,16 @@ class AsusFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Linux Ventana; de-de; Transformer TF101G Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/8.0 Safari/534.13',
+                'Eee Pad Transformer TF101G',
+                'Eee Pad Transformer TF101',
+                'Asus',
+                'Asus',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

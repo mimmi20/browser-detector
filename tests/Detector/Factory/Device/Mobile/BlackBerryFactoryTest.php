@@ -101,6 +101,16 @@ class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 'clickwheel',
             ],
+            [
+                'BlackBerry8520/5.0.0.1075 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/168',
+                'BlackBerry 8520',
+                'Curve',
+                'Research In Motion Limited',
+                'RIM',
+                'Mobile Phone',
+                false,
+                'clickwheel',
+            ],
         ];
     }
 }

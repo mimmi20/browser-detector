@@ -1858,7 +1858,7 @@ return [
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '3.0',
-            'Platform_Name'           => 'Mac OS X',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => '1.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

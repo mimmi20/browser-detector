@@ -81,6 +81,16 @@ class LgFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (LG/GD880 Browser/AppleWebKit/531 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)',
+                'GD880',
+                'GD880',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                null,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -59,7 +59,7 @@ class XiaomiFactory implements FactoryInterface
             return new Xiaomi\XiaomiMi3w($useragent);
         }
 
-        if (preg_match('/MI PAD/', $useragent)) {
+        if (preg_match('/(MI PAD|MiPad)/', $useragent)) {
             return new Xiaomi\XiaomiMiPad($useragent);
         }
 

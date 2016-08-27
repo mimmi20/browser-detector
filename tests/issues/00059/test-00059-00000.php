@@ -1690,7 +1690,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '9.1',
-            'Platform_Name'           => 'iOS',
+            'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => '10.9.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

@@ -91,6 +91,16 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; ALCATEL_ONE_TOUCH_5035D) U2/1.0.0 UCBrowser/10.0.0.556 Mobile',
+                'OT-5035D',
+                'One Touch XPop',
+                'Alcatel',
+                'Alcatel',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

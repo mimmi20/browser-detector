@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Tesla;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
-use BrowserDetector\Detector\Os;
-use UaDeviceType;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use BrowserDetector\Detector\Device\Mobile\TeslaMotors;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,39 +40,21 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TeslaModelS extends Device implements DeviceHasSpecificPlatformInterface
+class TeslaMotorsFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     */
-    public function __construct($useragent)
-    {
-        $this->useragent         = $useragent;
-        $this->deviceName        = 'Model S';
-        $this->marketingName     = 'Model S';
-        $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('TeslaMotors')->getName();
-        $this->brand             = CompanyFactory::get('TeslaMotors')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 720;
-        $this->resolutionHeight  = 1280;
-        $this->dualOrientation   = true;
-        $this->colors            = 65536;
-        $this->smsSupport        = false;
-        $this->nfcSupport        = false;
-        $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \UaResult\Os\OsInterface|null
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\Linux($this->useragent);
+        if (preg_match('/QtCarBrowser/', $useragent)) {
+            return new TeslaMotors\TeslaMotorsModelS($useragent);
+        }
+
+        return new TeslaMotors\TeslaMotors($useragent);
     }
 }

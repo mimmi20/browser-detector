@@ -644,6 +644,34 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Red Hat Inc',
                 32,
             ],
+            [
+                'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) profiler Safari/534.34',
+                'Linux',
+                '0.0.0',
+                'Linux Foundation',
+                64,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; GT-S8530 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
+                'Android',
+                '4.4.4',
+                'Google Inc',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/7.8 (3.8.2.0-0rpi18rpi1) Epiphany/3.8.2',
+                'Debian',
+                '7.8.0',
+                'Software in the Public Interest, Inc.',
+                32,
+            ],
+            [
+                'ELinks/0.11.4-2 (textmode; Debian; GNU/kFreeBSD 6.3-1-486 i686; 141x21-2)',
+                'Debian',
+                '0.0.0',
+                'Software in the Public Interest, Inc.',
+                32,
+            ],
         ];
     }
 }
