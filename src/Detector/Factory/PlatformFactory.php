@@ -168,6 +168,10 @@ class PlatformFactory implements FactoryInterface
             return new Os\FirefoxOs($agent);
         }
 
+        if ($utils->checkIfContainsAll(['freebsd', 'kfreebsd'], true)) {
+            return new Os\DebianFreeBsd($agent);
+        }
+
         if ($utils->checkIfContains('freebsd', true)) {
             return new Os\FreeBsd($agent);
         }
@@ -200,7 +204,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Ios($agent);
         }
 
-        if (preg_match('/(profile)/i', $agent)) {
+        if (preg_match('/\b(profile)\b/i', $agent)) {
             return new Os\Java($agent);
         }
 

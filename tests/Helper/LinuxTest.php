@@ -29,6 +29,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['UCS (ESX) - 4.0-3 errata302 - 28d414cc-2dac-4c0e-a34a-734020b8af66 - 00000000-0000-0000-0000-000000000000 -'],
             ['TinyBrowser/2.0 (TinyBrowser Comment; rv:1.9.1a2pre) Gecko/20201231'],
             ['gvfs/1.4.3'],
+            ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) profiler Safari/534.34'],
         ];
     }
 
@@ -73,6 +74,7 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['Microsoft.Outlook.15'],
             ['Microsoft URL Control - 6.00.8862'],
             ['Microsoft Internet Explorer'],
+            ['Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.8) Gecko/20100215 Solaris/10.1 (GNU) Superswan/3.5.8 (Byte/me)'],
         ];
     }
 }

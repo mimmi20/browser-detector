@@ -76,8 +76,17 @@ class MobileFactory implements FactoryInterface
             return Mobile\NokiaFactory::detect($useragent);
         }
 
-        if (preg_match('/iphone/i', $useragent) && preg_match('/android/i', $useragent)) {
+        if (preg_match('/iphone/i', $useragent)
+            && preg_match('/android/i', $useragent)
+            && !preg_match('/windows phone/i', $useragent)
+        ) {
             return Mobile\XiangheFactory::detect($useragent);
+        }
+
+        if (preg_match('/iphone/i', $useragent)
+            && preg_match('/blackberry/i', $useragent)
+        ) {
+            return Mobile\BlackBerryFactory::detect($useragent);
         }
 
         if (preg_match('/(ipad|iphone|ipod|like mac os x)/i', $useragent)

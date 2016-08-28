@@ -81,6 +81,16 @@ class DesktopFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'mouse',
             ],
+            [
+                'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/7.6 (3.8.2.0-0rpi14rpi2) Epiphany/3.8.2',
+                'Raspberry Pi',
+                'Raspberry Pi',
+                'Raspberry Pi Foundation',
+                'Raspberry Pi Foundation',
+                'Desktop',
+                false,
+                'mouse',
+            ],
         ];
     }
 }

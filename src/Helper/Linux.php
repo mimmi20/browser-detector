@@ -119,6 +119,7 @@ class Linux
             'microsearch',
             'juc(',
             'osf1',
+            'solaris',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {

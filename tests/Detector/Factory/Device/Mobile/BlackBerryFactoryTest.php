@@ -111,6 +111,16 @@ class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'clickwheel',
             ],
+            [
+                'Opera/9.80 (J2ME/MIDP; Opera Mini/9 (Compatible; MSIE:9.0; iPhone; BlackBerry9700; AppleWebKit/24.746; U; en) Presto/2.5.25 Version/10.54',
+                'BlackBerry 9700',
+                'Bold',
+                'Research In Motion Limited',
+                'RIM',
+                'Mobile Phone',
+                false,
+                'clickwheel',
+            ],
         ];
     }
 }

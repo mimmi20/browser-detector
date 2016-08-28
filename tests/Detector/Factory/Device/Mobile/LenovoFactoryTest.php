@@ -79,7 +79,7 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lenovo',
                 'Mobile Phone',
                 null,
-                'touchscreen',
+                null,
             ],
             [
                 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_A319) U2/1.0.0 UCBrowser/9.8.0.534 Mobile',
@@ -88,7 +88,7 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 'Lenovo',
                 'Lenovo',
                 'Mobile Phone',
-                null,
+                true,
                 'touchscreen',
             ],
             [

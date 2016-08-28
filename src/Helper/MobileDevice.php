@@ -81,6 +81,7 @@ class MobileDevice
             'gxt_dongle_3188',
             'apple tv',
             'mxl661l32',
+            'nettv',
         ];
 
         $utils = new Utils();

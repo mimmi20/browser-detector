@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
-use UaResult\Device\Device;
+use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
@@ -43,39 +40,18 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcHd2 extends Device implements DeviceHasSpecificPlatformInterface
+class DebianFreeBsd extends AbstractOs
 {
     /**
-     * the class constructor
+     * Class Constructor
      *
-     * @param string $useragent
+     * @param string $useragent the user agent to be handled
      */
     public function __construct($useragent)
     {
-        $this->useragent         = $useragent;
-        $this->deviceName        = 'HD2';
-        $this->marketingName     = 'HD2';
-        $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
-        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
-        $this->pointingMethod    = null;
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 800;
-        $this->dualOrientation   = false;
-        $this->colors            = 65536;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = false;
-        $this->type              = new UaDeviceType\MobilePhone();
-    }
-
-    /**
-     * returns the OS Handler
-     *
-     * @return \UaResult\Os\OsInterface|null
-     */
-    public function detectOs()
-    {
-        return new Os\WindowsMobileOs($this->useragent);
+        $this->useragent    = $useragent;
+        $this->name         = 'Debian with FreeBSD Kernel';
+        $this->version      = Version\Debian::detectVersion(str_replace('-', '.', $useragent));
+        $this->manufacturer = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
     }
 }

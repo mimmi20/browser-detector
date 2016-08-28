@@ -61,7 +61,7 @@ class HtcHd2Android extends Device implements DeviceHasSpecificPlatformInterface
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 480;
         $this->resolutionHeight  = 800;
-        $this->dualOrientation   = false;
+        $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

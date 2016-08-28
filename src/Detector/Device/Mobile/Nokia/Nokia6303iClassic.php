@@ -54,7 +54,7 @@ class Nokia6303iClassic extends Device implements DeviceHasSpecificPlatformInter
     {
         $this->useragent         = $useragent;
         $this->deviceName        = '6303i classic';
-        $this->marketingName     = 'Classic';
+        $this->marketingName     = '6303i classic';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
         $this->brand             = CompanyFactory::get('Nokia')->getBrandName();
@@ -76,6 +76,6 @@ class Nokia6303iClassic extends Device implements DeviceHasSpecificPlatformInter
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\NokiaOs($this->useragent);
     }
 }

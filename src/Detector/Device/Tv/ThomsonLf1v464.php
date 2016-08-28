@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Device\Tv;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Detector\Os;
@@ -43,7 +43,7 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcHd2 extends Device implements DeviceHasSpecificPlatformInterface
+class ThomsonLf1v464 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class HtcHd2 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'HD2';
-        $this->marketingName     = 'HD2';
+        $this->deviceName        = 'LF1V464';
+        $this->marketingName     = 'LF1V464';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
-        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
-        $this->pointingMethod    = null;
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 800;
+        $this->manufacturer      = CompanyFactory::get('Thomson')->getName();
+        $this->brand             = CompanyFactory::get('Thomson')->getBrandName();
+        $this->pointingMethod    = 'mouse';
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
         $this->dualOrientation   = false;
         $this->colors            = 65536;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = false;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\Tv();
     }
 
     /**
@@ -76,6 +76,6 @@ class HtcHd2 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\WindowsMobileOs($this->useragent);
+        return new Os\Maemo($this->useragent);
     }
 }

@@ -121,16 +121,6 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
-            [
-                'Mozilla/5.0 (Linux; U; en-us; EBRD1201; EXT) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
-                'PRST1',
-                'Sony Reader Wi-Fi',
-                'SonyEricsson',
-                'SonyEricsson',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
         ];
     }
 }

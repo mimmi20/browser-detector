@@ -181,6 +181,26 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'mouse',
             ],
+            [
+                'Opera/9.80 (Linux armv7l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/TCL;SW-Version/V8-MT51F03-LF1V464;Cnt/POL;Lan/pol) Presto/2.12.362 Version/12.11',
+                'LF1V464',
+                'LF1V464',
+                'Thomson',
+                'Thomson',
+                'TV Device',
+                false,
+                'mouse',
+            ],
+            [
+                'Opera/9.80 (Linux armv7l; U; CE-HTML/1.0 NETTV/3.3.0; PHILIPS-AVM-2012; en) Presto/2.9.167 Version/11.50',
+                'Blueray Player',
+                'Blueray Player',
+                'Philips',
+                'Philips',
+                'Media Player',
+                false,
+                null,
+            ],
         ];
     }
 }

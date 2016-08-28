@@ -58,7 +58,7 @@ class Nokia6300 extends Device implements DeviceHasSpecificPlatformInterface
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
         $this->brand             = CompanyFactory::get('Nokia')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
         $this->dualOrientation   = null;

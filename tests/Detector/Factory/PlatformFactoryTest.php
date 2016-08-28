@@ -667,8 +667,8 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'ELinks/0.11.4-2 (textmode; Debian; GNU/kFreeBSD 6.3-1-486 i686; 141x21-2)',
-                'Debian',
-                '0.0.0',
+                'Debian with FreeBSD Kernel',
+                '6.3.1.486',
                 'Software in the Public Interest, Inc.',
                 32,
             ],

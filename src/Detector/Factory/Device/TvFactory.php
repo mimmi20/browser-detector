@@ -87,6 +87,10 @@ class TvFactory implements FactoryInterface
             return new Tv\LoeweSl150($useragent);
         }
 
+        if (preg_match('/lf1v464/i', $useragent)) {
+            return new Tv\ThomsonLf1v464($useragent);
+        }
+
         if (preg_match('/lf1v401/i', $useragent)) {
             return new Tv\ThomsonLf1v401($useragent);
         }
@@ -113,6 +117,10 @@ class TvFactory implements FactoryInterface
 
         if (preg_match('/viera/i', $useragent)) {
             return new Tv\PanasonicViera($useragent);
+        }
+
+        if (preg_match('/AVM\-2012/', $useragent)) {
+            return new Tv\PhilipsAvm2012($useragent);
         }
 
         if (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
