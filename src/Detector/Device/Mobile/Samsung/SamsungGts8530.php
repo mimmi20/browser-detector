@@ -76,6 +76,6 @@ class SamsungGts8530 extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\Bada($this->useragent);
+        return null;
     }
 }

@@ -147,13 +147,24 @@ class BrowserDetector
             $platform = null;
         }
 
+        $browserUa    = $request->getBrowserUserAgent();
+        $mozillaToken = 'Mozilla';
+
+        // if the "Mozilla" token is available more than once, only use the first part of the UA
+        if (1 < substr_count($browserUa, $mozillaToken)) {
+            $firstPos  = strpos($browserUa, $mozillaToken);
+            $secondPos = strpos($browserUa, $mozillaToken, $firstPos + strlen($mozillaToken));
+
+            $browserUa = substr($browserUa, 0, $secondPos);
+        }
+
         if (null === $platform) {
             // detect the os which runs on the device
-            $platform = PlatformFactory::detect($request->getBrowserUserAgent());
+            $platform = PlatformFactory::detect($browserUa);
         }
 
         // detect the browser which is used
-        $browser = BrowserFactory::detect($request->getBrowserUserAgent(), $platform);
+        $browser = BrowserFactory::detect($browserUa, $platform);
 
         // detect the engine which is used in the browser
         if ($browser instanceof BrowserHasSpecificEngineInterface) {
@@ -163,7 +174,7 @@ class BrowserDetector
         }
 
         if (null === $engine) {
-            $engine = EngineFactory::detect($request->getBrowserUserAgent(), $platform);
+            $engine = EngineFactory::detect($browserUa, $platform);
         }
 
         return new Result(

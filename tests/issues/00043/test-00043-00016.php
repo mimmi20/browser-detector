@@ -874,7 +874,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '23.0',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'Joli OS',
             'Platform_Version'        => '1.2.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Linux Foundation',

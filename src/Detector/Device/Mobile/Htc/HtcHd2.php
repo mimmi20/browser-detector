@@ -58,7 +58,7 @@ class HtcHd2 extends Device implements DeviceHasSpecificPlatformInterface
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();
         $this->brand             = CompanyFactory::get('Htc')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = 480;
         $this->resolutionHeight  = 800;
         $this->dualOrientation   = false;
@@ -76,6 +76,6 @@ class HtcHd2 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return null;
+        return new Os\WindowsMobileOs($this->useragent);
     }
 }

@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Tesla;
+namespace BrowserDetector\Detector\Device\Mobile\TrekStor;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class TeslaModelS extends Device implements DeviceHasSpecificPlatformInterface
+class TrekStorWp47 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class TeslaModelS extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Model S';
-        $this->marketingName     = 'Model S';
+        $this->deviceName        = 'WinPhone 4.7 HD';
+        $this->marketingName     = 'WinPhone 4.7 HD';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('TeslaMotors')->getName();
-        $this->brand             = CompanyFactory::get('TeslaMotors')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('TrekStor')->getName();
+        $this->brand             = CompanyFactory::get('TrekStor')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 720;
-        $this->resolutionHeight  = 1280;
+        $this->resolutionWidth   = 1366;
+        $this->resolutionHeight  = 768;
         $this->dualOrientation   = true;
         $this->colors            = 65536;
-        $this->smsSupport        = false;
-        $this->nfcSupport        = false;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**
@@ -76,6 +76,6 @@ class TeslaModelS extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Linux($this->useragent);
+        return new Os\WindowsPhoneOs($this->useragent);
     }
 }

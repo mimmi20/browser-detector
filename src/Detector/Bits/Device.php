@@ -97,7 +97,7 @@ class Device
 
         // 64 bits
         if ($utils->checkIfContains(
-            ['x64', 'win64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64'],
+            ['x64', 'win64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64', 'osf1'],
             true
         )
         ) {

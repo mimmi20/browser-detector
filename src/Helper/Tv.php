@@ -87,6 +87,8 @@ class Tv
             'lf1v394',
             'lf1v401',
             'apple tv',
+            'mxl661l32',
+            'nettv',
         ];
 
         if (!$utils->checkIfContains($tvDevices, true)) {

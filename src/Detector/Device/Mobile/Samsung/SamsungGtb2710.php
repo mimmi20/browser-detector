@@ -58,7 +58,7 @@ class SamsungGtb2710 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
         $this->dualOrientation   = null;
@@ -76,6 +76,6 @@ class SamsungGtb2710 extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Java($this->useragent);
     }
 }

@@ -2002,7 +2002,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '9.7',
-            'Platform_Name'           => 'Windows',
+            'Platform_Name'           => 'Windows Mobile OS',
             'Platform_Version'        => 'XP',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

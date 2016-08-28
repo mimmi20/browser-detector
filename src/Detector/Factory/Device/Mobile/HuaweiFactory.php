@@ -287,6 +287,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiG510($useragent);
         }
 
+        if (preg_match('/4afrika/i', $useragent)) {
+            return new Huawei\Huawei4Afrika($useragent);
+        }
+
         return new Huawei\Huawei($useragent);
     }
 }

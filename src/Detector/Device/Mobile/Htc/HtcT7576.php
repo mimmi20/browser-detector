@@ -54,7 +54,7 @@ class HtcT7576 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'T7576';
-        $this->marketingName     = '7 pro';
+        $this->marketingName     = '7 Pro';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();
         $this->brand             = CompanyFactory::get('Htc')->getBrandName();

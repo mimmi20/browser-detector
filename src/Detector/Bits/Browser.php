@@ -101,7 +101,7 @@ class Browser
         }
 
         // 64 bits
-        if ($utils->checkIfContains(['x64', 'win64', 'x86_64', 'amd64', 'ppc64', 'sparc64'], true)) {
+        if ($utils->checkIfContains(['x64', 'win64', 'x86_64', 'amd64', 'ppc64', 'sparc64', 'osf1'], true)) {
             return 64;
         }
 

@@ -298,7 +298,7 @@ return [
             'Browser_Maker'           => 'Amazon.com, Inc.',
             'Browser_Modus'           => 'Desktop Mode',
             'Browser_Version'         => '3.2',
-            'Platform_Name'           => 'Android',
+            'Platform_Name'           => 'Java',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

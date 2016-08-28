@@ -51,8 +51,16 @@ class TeslaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/QtCarBrowser/', $useragent)) {
-            return new Tesla\TeslaModelS($useragent);
+        if (preg_match('/TTL7/', $useragent)) {
+            return new Tesla\TeslaTtl7($useragent);
+        }
+
+        if (preg_match('/TTH7/', $useragent)) {
+            return new Tesla\TeslaTth7($useragent);
+        }
+
+        if (preg_match('/Tablet_785/', $useragent)) {
+            return new Tesla\TeslaTablet785($useragent);
         }
 
         return new Tesla\Tesla($useragent);

@@ -58,7 +58,7 @@ class HtcHd2T8585 extends Device implements DeviceHasSpecificPlatformInterface
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();
         $this->brand             = CompanyFactory::get('Htc')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = 480;
         $this->resolutionHeight  = 800;
         $this->dualOrientation   = false;

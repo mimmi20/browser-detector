@@ -1570,7 +1570,7 @@ return [
             'Browser_Maker'           => 'UCWeb Inc.',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '9.5',
-            'Platform_Name'           => 'Java',
+            'Platform_Name'           => 'Symbian OS',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Oracle',

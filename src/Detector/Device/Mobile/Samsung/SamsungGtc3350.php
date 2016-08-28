@@ -76,6 +76,6 @@ class SamsungGtc3350 extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Java($this->useragent);
     }
 }

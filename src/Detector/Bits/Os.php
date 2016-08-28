@@ -96,7 +96,7 @@ class Os
         $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains(
-            ['x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64'],
+            ['x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64', 'osf1'],
             true
         )
         ) {

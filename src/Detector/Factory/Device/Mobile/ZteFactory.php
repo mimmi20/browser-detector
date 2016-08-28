@@ -171,6 +171,14 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteAtlasW($useragent);
         }
 
+        if (preg_match('/tania/i', $useragent)) {
+            return new Zte\ZteTania($useragent);
+        }
+
+        if (preg_match('/g\-x991\-rio\-orange/i', $useragent)) {
+            return new Zte\ZteGX991RioOrange($useragent);
+        }
+
         return new Zte\Zte($useragent);
     }
 }

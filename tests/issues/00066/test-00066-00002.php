@@ -394,7 +394,7 @@ return [
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '5.0',
-            'Platform_Name'           => 'Mac OS X',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '10.6',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

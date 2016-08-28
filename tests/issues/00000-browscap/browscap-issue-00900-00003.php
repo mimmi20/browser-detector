@@ -82,7 +82,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '3.8',
-            'Platform_Name'           => 'Ubuntu',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => '9.25.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Canonical Foundation',

@@ -79,6 +79,10 @@ class AlcatelFactory implements FactoryInterface
             return new Alcatel\AlcatelOt6030D($useragent);
         }
 
+        if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6015x/i', $useragent)) {
+            return new Alcatel\AlcatelOt6015X($useragent);
+        }
+
         if (preg_match('/(ot\-|one[ _]touch[ _]|onetouch)6012d/i', $useragent)) {
             return new Alcatel\AlcatelOt6012D($useragent);
         }

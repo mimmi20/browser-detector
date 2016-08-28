@@ -28,6 +28,8 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
             ['UCS (ESX) - 4.0-3 errata302 - 28d414cc-2dac-4c0e-a34a-734020b8af66 - 00000000-0000-0000-0000-000000000000 -'],
             ['TinyBrowser/2.0 (TinyBrowser Comment; rv:1.9.1a2pre) Gecko/20201231'],
+            ['gvfs/1.4.3'],
+            ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) profiler Safari/534.34'],
         ];
     }
 
@@ -63,6 +65,16 @@ class LinuxTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Data Access Internet Publishing Provider Protocol Discovery'],
             ['Microsoft Data Access Internet Publishing Provider Cache Manager'],
             ['Microsoft-WebDAV-MiniRedir/6.1.7601'],
+            ['Mozilla/5.0 CommonCrawler Node BCRJD3NIBD5D7FSESX5FYPD7DASPLXXTNN3HQFQEM6BOOIQPSUOW42ZHQM2YEA7.O.756TNQIGQC6WQCZW43CC253MBXM7UTLFE2BTSQBYM4OZA6UR.cdn0.common.crawl.zone'],
+            ['Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.9) Gecko/20071025 FreeBSD/i386 Firefox/2.0.0.9'],
+            ['microSearch-Crawler/V1.0.0.730'],
+            ['JUC(Linux;U;2.3.3;Zh_cn;HTC Incredible S;480*800;)UCWEB7.8.1.96/139/800'],
+            ['Mozilla/5.0 (X11; U; OSF1 alpha; en-US; rv:1.7.5) Gecko/20050112 Firefox/1.0'],
+            ['Mozilla/5.0 (Windows NT 5.2) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.873.0 Mobile Safari/5342'],
+            ['Microsoft.Outlook.15'],
+            ['Microsoft URL Control - 6.00.8862'],
+            ['Microsoft Internet Explorer'],
+            ['Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.8) Gecko/20100215 Solaris/10.1 (GNU) Superswan/3.5.8 (Byte/me)'],
         ];
     }
 }

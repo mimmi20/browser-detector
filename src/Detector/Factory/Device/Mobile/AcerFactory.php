@@ -199,6 +199,10 @@ class AcerFactory implements FactoryInterface
             return new Acer\AcerAllegro($useragent);
         }
 
+        if (preg_match('/TM01/', $useragent)) {
+            return new Acer\AcerTm01($useragent);
+        }
+
         return new Acer\Acer($useragent);
     }
 }

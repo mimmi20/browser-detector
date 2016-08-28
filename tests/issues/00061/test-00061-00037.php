@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'Solaris',
             'Platform_Version'        => '10.1.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Linux Foundation',

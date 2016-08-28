@@ -97,6 +97,7 @@ class Desktop
             'installatron',
             'lynx',
             'camino',
+            'osf1',
         ];
 
         if ($utils->checkIfContains($othersDesktops, true)) {

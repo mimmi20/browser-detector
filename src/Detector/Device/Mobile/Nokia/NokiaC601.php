@@ -76,6 +76,6 @@ class NokiaC601 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Java($this->useragent);
+        return new Os\Symbianos($this->useragent);
     }
 }

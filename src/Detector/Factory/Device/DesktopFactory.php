@@ -60,6 +60,10 @@ class DesktopFactory implements FactoryInterface
             return new Desktop\RaspberryPi($useragent);
         }
 
+        if (preg_match('/debian/i', $useragent) && preg_match('/rpi/', $useragent)) {
+            return new Desktop\RaspberryPi($useragent);
+        }
+
         if ((new Helper\Linux($useragent))->isLinux()) {
             return new Desktop\LinuxDesktop($useragent);
         }

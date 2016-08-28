@@ -62,6 +62,40 @@ class MobileDevice
      */
     public function isMobile()
     {
+        $noMobiles = [
+            'xbox',
+            'badab',
+            'badap',
+            'simbar',
+            'google-tr',
+            'googlet',
+            'google wireless transcoder',
+            'eeepc',
+            'i9988_custom',
+            'i9999_custom',
+            'wuid=',
+            'smart-tv',
+            'sonydtv',
+            'hbbtv',
+            'dolphin http client',
+            'gxt_dongle_3188',
+            'apple tv',
+            'mxl661l32',
+            'nettv',
+        ];
+
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        if ($utils->checkIfContains($noMobiles, true)) {
+            return false;
+        }
+
+        // ignore mobile safari token if windows nt token is available
+        if ($utils->checkIfContainsAll(['mobile safari', 'windows nt'], true)) {
+            return false;
+        }
+
         /*
          * @var array Collection of mobile browser keywords
          */
@@ -168,34 +202,7 @@ class MobileDevice
             'velocitymicro',
         ];
 
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
-
         if ($utils->checkIfContains($mobileBrowsers, true)) {
-            $noMobiles = [
-                'xbox',
-                'badab',
-                'badap',
-                'simbar',
-                'google-tr',
-                'googlet',
-                'google wireless transcoder',
-                'eeepc',
-                'i9988_custom',
-                'i9999_custom',
-                'wuid=',
-                'smart-tv',
-                'sonydtv',
-                'hbbtv',
-                'dolphin http client',
-                'gxt_dongle_3188',
-                'apple tv',
-            ];
-
-            if ($utils->checkIfContains($noMobiles, true)) {
-                return false;
-            }
-
             return true;
         }
 

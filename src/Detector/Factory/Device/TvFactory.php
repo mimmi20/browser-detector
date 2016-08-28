@@ -75,12 +75,20 @@ class TvFactory implements FactoryInterface
             return new Tv\Idl6651n($useragent);
         }
 
+        if (preg_match('/loewe; sl32x/i', $useragent)) {
+            return new Tv\LoeweSl32x($useragent);
+        }
+
         if (preg_match('/loewe; sl121/i', $useragent)) {
             return new Tv\LoeweSl121($useragent);
         }
 
         if (preg_match('/loewe; sl150/i', $useragent)) {
             return new Tv\LoeweSl150($useragent);
+        }
+
+        if (preg_match('/lf1v464/i', $useragent)) {
+            return new Tv\ThomsonLf1v464($useragent);
         }
 
         if (preg_match('/lf1v401/i', $useragent)) {
@@ -111,8 +119,16 @@ class TvFactory implements FactoryInterface
             return new Tv\PanasonicViera($useragent);
         }
 
+        if (preg_match('/AVM\-2012/', $useragent)) {
+            return new Tv\PhilipsAvm2012($useragent);
+        }
+
         if (preg_match('/\(; Philips; ; ; ; \)/', $useragent)) {
             return new Tv\PhilipsTv($useragent);
+        }
+
+        if (preg_match('/Mxl661L32/', $useragent)) {
+            return new Tv\SamsungSmartTv($useragent);
         }
 
         if (preg_match('/SMART\-TV/', $useragent)) {
@@ -123,8 +139,16 @@ class TvFactory implements FactoryInterface
             return new Tv\SonyKdl32hx755($useragent);
         }
 
+        if (preg_match('/KDL32W655A/', $useragent)) {
+            return new Tv\SonyKdl32w655a($useragent);
+        }
+
         if (preg_match('/KDL37EX720/', $useragent)) {
             return new Tv\SonyKdl37ex720($useragent);
+        }
+
+        if (preg_match('/KDL42W655A/', $useragent)) {
+            return new Tv\SonyKdl42w655a($useragent);
         }
 
         if (preg_match('/KDL40EX720/', $useragent)) {

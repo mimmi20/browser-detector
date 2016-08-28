@@ -51,6 +51,10 @@ class TrekStorFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/WP 4\.7/', $useragent)) {
+            return new TrekStor\TrekStorWp47($useragent);
+        }
+
         if (preg_match('/VT10416\-2/', $useragent)) {
             return new TrekStor\TrekStorVt104162($useragent);
         }

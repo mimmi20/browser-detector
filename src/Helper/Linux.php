@@ -111,6 +111,15 @@ class Linux
             'gt-c3312r',
             'microsoft data access',
             'microsoft-webdav',
+            'microsoft.outlook',
+            'microsoft url control',
+            'microsoft internet explorer',
+            'commoncrawler',
+            'freebsd',
+            'microsearch',
+            'juc(',
+            'osf1',
+            'solaris',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {

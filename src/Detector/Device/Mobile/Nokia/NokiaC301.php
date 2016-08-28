@@ -58,7 +58,7 @@ class NokiaC301 extends Device implements DeviceHasSpecificPlatformInterface
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
         $this->brand             = CompanyFactory::get('Nokia')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = 240;
         $this->resolutionHeight  = 320;
         $this->dualOrientation   = false;
@@ -76,6 +76,6 @@ class NokiaC301 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\NokiaOs($this->useragent);
     }
 }

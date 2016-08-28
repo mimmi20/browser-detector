@@ -59,7 +59,7 @@ class XiaomiFactory implements FactoryInterface
             return new Xiaomi\XiaomiMi3w($useragent);
         }
 
-        if (preg_match('/MI PAD/', $useragent)) {
+        if (preg_match('/(MI PAD|MiPad)/', $useragent)) {
             return new Xiaomi\XiaomiMiPad($useragent);
         }
 
@@ -69,6 +69,14 @@ class XiaomiFactory implements FactoryInterface
 
         if (preg_match('/MI 2/', $useragent)) {
             return new Xiaomi\XiaomiMi2($useragent);
+        }
+
+        if (preg_match('/Redmi_Note_3/', $useragent)) {
+            return new Xiaomi\XiaomiRedmiNote3($useragent);
+        }
+
+        if (preg_match('/HM NOTE 1S/', $useragent)) {
+            return new Xiaomi\XiaomiHmnote1s($useragent);
         }
 
         if (preg_match('/HM NOTE 1LTETD/', $useragent)) {

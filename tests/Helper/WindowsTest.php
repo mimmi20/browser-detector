@@ -33,6 +33,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Outlook Social Connector (15.0.4569) MsoStatic (15.0.4569)'],
             ['WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203'],
             ['NSPlayer/12.00.10011.16384 WMFSDK/12.00.10011.16384'],
+            ['Mozilla/5.0 (Windows NT 5.2) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.873.0 Mobile Safari/5342'],
         ];
     }
 
@@ -55,6 +56,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (compatible; MSIE or Firefox mutant; not on Windows server; + http://tab.search.daum.net/aboutWebSearch.html) Daumoa/3.0'],
             ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160'],
+            ['DWDS-Crawler +http://odo.dwds.de/dwds-crawler.html'],
         ];
     }
 
@@ -95,6 +97,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160'],
             ['Mozilla/5.0 (X11; U; Linux i686; th-TH@calendar=gregorian) AppleWebKit/534.12 (KHTML, like Gecko) Puffin/1.3.2665MS Safari/534.12'],
+            ['DWDS-Crawler +http://odo.dwds.de/dwds-crawler.html'],
         ];
     }
 }

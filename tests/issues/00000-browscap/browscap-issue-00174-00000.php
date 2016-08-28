@@ -10,7 +10,7 @@ return [
             'Browser_Maker'           => 'Axandra GmbH',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
-            'Platform_Name'           => 'Java',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Oracle',

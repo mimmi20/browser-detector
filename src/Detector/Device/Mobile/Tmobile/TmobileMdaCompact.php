@@ -76,6 +76,6 @@ class TmobileMdaCompact extends Device implements DeviceHasSpecificPlatformInter
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\WindowsCe($this->useragent);
     }
 }

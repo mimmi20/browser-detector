@@ -730,7 +730,7 @@ return [
             'Browser_Maker'           => 'Yandex LLC',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '14.12',
-            'Platform_Name'           => 'iOS',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

@@ -51,8 +51,12 @@ class CosmoteFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/Xplore/i', $useragent)) {
+        if (preg_match('/xplore/i', $useragent)) {
             return new Cosmote\CosmoteXplore($useragent);
+        }
+
+        if (preg_match('/my_mini_tablet/i', $useragent)) {
+            return new Cosmote\CosmoteMyMiniTablet($useragent);
         }
 
         return new Cosmote\Cosmote($useragent);

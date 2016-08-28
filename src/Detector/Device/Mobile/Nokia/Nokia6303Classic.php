@@ -54,7 +54,7 @@ class Nokia6303Classic extends Device implements DeviceHasSpecificPlatformInterf
     {
         $this->useragent         = $useragent;
         $this->deviceName        = '6303 classic';
-        $this->marketingName     = 'classic';
+        $this->marketingName     = '6303 classic';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Nokia')->getName();
         $this->brand             = CompanyFactory::get('Nokia')->getBrandName();

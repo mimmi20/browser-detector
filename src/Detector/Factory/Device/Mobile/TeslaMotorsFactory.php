@@ -29,13 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
-use UaResult\Device\Device;
+use BrowserDetector\Detector\Device\Mobile\TeslaMotors;
+use BrowserDetector\Detector\Factory\FactoryInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,39 +40,21 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcT8282 extends Device implements DeviceHasSpecificPlatformInterface
+class TeslaMotorsFactory implements FactoryInterface
 {
     /**
-     * the class constructor
+     * detects the device name from the given user agent
      *
      * @param string $useragent
-     */
-    public function __construct($useragent)
-    {
-        $this->useragent         = $useragent;
-        $this->deviceName        = '8282';
-        $this->marketingName     = 'Touch HD T8282';
-        $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
-        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
-        $this->pointingMethod    = 'stylus';
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 800;
-        $this->dualOrientation   = false;
-        $this->colors            = 65536;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
-        $this->hasQwertyKeyboard = false;
-        $this->type              = new UaDeviceType\MobilePhone();
-    }
-
-    /**
-     * returns the OS Handler
      *
-     * @return \UaResult\Os\OsInterface|null
+     * @return \UaResult\Device\DeviceInterface
      */
-    public function detectOs()
+    public static function detect($useragent)
     {
-        return new Os\AndroidOs($this->useragent);
+        if (preg_match('/QtCarBrowser/', $useragent)) {
+            return new TeslaMotors\TeslaMotorsModelS($useragent);
+        }
+
+        return new TeslaMotors\TeslaMotors($useragent);
     }
 }

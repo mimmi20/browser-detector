@@ -63,6 +63,10 @@ class BluFactory implements FactoryInterface
             return new Blu\BluWinHdlte($useragent);
         }
 
+        if (preg_match('/WIN JR LTE/', $useragent)) {
+            return new Blu\BluWinJrlte($useragent);
+        }
+
         return new Blu\Blu($useragent);
     }
 }

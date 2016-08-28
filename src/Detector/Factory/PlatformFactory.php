@@ -140,6 +140,14 @@ class PlatformFactory implements FactoryInterface
             return new Os\Ubuntu($agent);
         }
 
+        if ($utils->checkIfContains('fedora', true)) {
+            return new Os\Fedora($agent);
+        }
+
+        if ($utils->checkIfContains(['redhat', 'red hat'], true)) {
+            return new Os\Redhat($agent);
+        }
+
         if (preg_match('/(maemo|like android|linux\/x2\/r1|linux arm)/i', $agent)) {
             return new Os\Maemo($agent);
         }
@@ -160,6 +168,10 @@ class PlatformFactory implements FactoryInterface
             return new Os\FirefoxOs($agent);
         }
 
+        if ($utils->checkIfContainsAll(['freebsd', 'kfreebsd'], true)) {
+            return new Os\DebianFreeBsd($agent);
+        }
+
         if ($utils->checkIfContains('freebsd', true)) {
             return new Os\FreeBsd($agent);
         }
@@ -176,6 +188,10 @@ class PlatformFactory implements FactoryInterface
             return new Os\Java($agent);
         }
 
+        if (preg_match('/CommonCrawler/', $agent)) {
+            return new Os\UnknownOs($agent);
+        }
+
         if (preg_match('/MIUI/', $agent)) {
             return new Os\MiuiOs($agent);
         }
@@ -188,7 +204,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Ios($agent);
         }
 
-        if (preg_match('/(profile)/i', $agent)) {
+        if (preg_match('/\b(profile)\b/i', $agent)) {
             return new Os\Java($agent);
         }
 
@@ -234,16 +250,8 @@ class PlatformFactory implements FactoryInterface
             return new Os\Suse($agent);
         }
 
-        if ($utils->checkIfContains('fedora', true)) {
-            return new Os\Fedora($agent);
-        }
-
         if ($utils->checkIfContains('gentoo', true)) {
             return new Os\Gentoo($agent);
-        }
-
-        if ($utils->checkIfContains(['redhat', 'red hat'], true)) {
-            return new Os\Redhat($agent);
         }
 
         if ($utils->checkIfContains('slackware', true)) {
