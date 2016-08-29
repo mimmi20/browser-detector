@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-00059-01806' => [
+    'test-0059-1806' => [
         'ua'         => 'Opera/9.80 (Series 60; Opera Mini/7.1.32444/35.6680; U; de) Presto/2.8.119 Version/11.10',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -25,7 +25,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-00059-01807' => [
+    'test-0059-1807' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MDDS; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -49,7 +49,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01808' => [
+    'test-0059-1808' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:6.0.2) Gecko/20100101 Firefox/6.0.2',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -73,7 +73,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01809' => [
+    'test-0059-1809' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.2.2; Vodafone 785 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -97,7 +97,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01810' => [
+    'test-0059-1810' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Mobile/11D167 [FBAN/FBIOS;FBAV/20.1.0.15.10;FBBV/5758778;FBDV/iPad4,1;FBMD/iPad;FBSN/iPhone OS;FBSV/7.1;FBSS/2; FBCR/;FBID/tablet;FBLC/de_DE;FBOP/1]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -121,7 +121,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01811' => [
+    'test-0059-1811' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; BRI/2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -145,7 +145,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01812' => [
+    'test-0059-1812' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.3; SM-N9005 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -169,7 +169,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01813' => [
+    'test-0059-1813' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; A1-810 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -193,7 +193,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01814' => [
+    'test-0059-1814' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/38.0.2125.59 Mobile/12B435 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -217,7 +217,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01815' => [
+    'test-0059-1815' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; NP08; NP08; MAAU; rv:11.0;WUID=8318B6406EEC4164A3C6051499FD2960;WTB=6787) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -241,7 +241,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01816' => [
+    'test-0059-1816' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0 anonymized by Abelssoft 16809977',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -265,7 +265,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01817' => [
+    'test-0059-1817' => [
         'ua'         => 'Mozilla/5.0 (compatible; Konqueror/4.3; Linux) KHTML/4.3.4 (like Gecko) Red Hat Enterprise Linux/4.3.4-21.el6_5',
         'properties' => [
             'Browser_Name'            => 'Konqueror',
@@ -289,7 +289,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01818' => [
+    'test-0059-1818' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; tb-gmx/2.5.1; (gmx/1.4.0.0); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -313,7 +313,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01819' => [
+    'test-0059-1819' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.2; LT30p Build/9.1.A.0.489) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -337,7 +337,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01820' => [
+    'test-0059-1820' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; SAMSUNG GT-I8190/I8190XXANI4 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -361,7 +361,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01821' => [
+    'test-0059-1821' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9) Gecko/2008052906 Firefox/3.0 (.NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -385,7 +385,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01822' => [
+    'test-0059-1822' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.23) Gecko/20110920 Firefox/3.6.23',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -409,7 +409,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01823' => [
+    'test-0059-1823' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 5.1; rv:32.0) Gecko/20100101 Firefox/32.0 BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR BLNGBAR',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -433,7 +433,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01824' => [
+    'test-0059-1824' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; TAD-97052mk2 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -457,7 +457,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01825' => [
+    'test-0059-1825' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.2; GT-P3110 Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -481,7 +481,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01826' => [
+    'test-0059-1826' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_2; de-de) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -505,7 +505,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01827' => [
+    'test-0059-1827' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Commerz Direktservice; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.3; .NET4.0C; .NET4.0E; Commerz Direktservice)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -529,7 +529,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01828' => [
+    'test-0059-1828' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -553,7 +553,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01829' => [
+    'test-0059-1829' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.22 anonymized by Abelssoft 633957936',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -577,7 +577,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01830' => [
+    'test-0059-1830' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS99920; Mozilla/4.0 (compatible; MSIE 7.0; Win32; 1&1); GTB7.5; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; (1und1/1.0.0.8); (1und1/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -601,7 +601,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01831' => [
+    'test-0059-1831' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -625,7 +625,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01832' => [
+    'test-0059-1832' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; tb-gmx/1.9.0; MAARJS; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -649,7 +649,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01833' => [
+    'test-0059-1833' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; rv:9.0.1) Gecko/20100101 Firefox/9.0.1',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -673,7 +673,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01834' => [
+    'test-0059-1834' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0E; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -697,7 +697,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-00059-01835' => [
+    'test-0059-1835' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; AskTbORJ/5.15.4.23821; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -721,7 +721,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01836' => [
+    'test-0059-1836' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D620 Build/KOT49I.A1401238405) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -745,7 +745,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01837' => [
+    'test-0059-1837' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Iron/9.0.600.2 Chrome/9.0.600.2 Safari/534.13',
         'properties' => [
             'Browser_Name'            => 'Iron',
@@ -769,7 +769,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01838' => [
+    'test-0059-1838' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.3; hr-hr; G630-U20 Build/HuaweiG630-U20) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -793,7 +793,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01839' => [
+    'test-0059-1839' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; InfoPath.2; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -817,7 +817,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01840' => [
+    'test-0059-1840' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; teleos; GTB7.5; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -841,7 +841,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01841' => [
+    'test-0059-1841' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; pl-pl; Ignis 8 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -865,7 +865,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01842' => [
+    'test-0059-1842' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:35.0 () Gecko/20100101 Firefox/35.0 ( anonymized by Abelssoft 1370593448',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -889,7 +889,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01843' => [
+    'test-0059-1843' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; KISSME-DG580 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -913,7 +913,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01844' => [
+    'test-0059-1844' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.2; it-ch; HTC_One Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -937,7 +937,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01845' => [
+    'test-0059-1845' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; Zune 4.7; BRI/2; tb-webde/2.6.0; (webde/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -961,7 +961,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01846' => [
+    'test-0059-1846' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -985,7 +985,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01847' => [
+    'test-0059-1847' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; freenet.de GmbH; fE6)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1009,7 +1009,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01848' => [
+    'test-0059-1848' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MANM; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1033,7 +1033,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01849' => [
+    'test-0059-1849' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; HPNTDF)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1057,7 +1057,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01850' => [
+    'test-0059-1850' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; AskTbTKR/5.15.12.33066)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1081,7 +1081,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01851' => [
+    'test-0059-1851' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D686 Build/KOT49I.D68620d) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1105,7 +1105,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01852' => [
+    'test-0059-1852' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; chromeframe/32.0.1700.107)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1129,7 +1129,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01853' => [
+    'test-0059-1853' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; InfoPath.3; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; McAfee)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1153,7 +1153,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01854' => [
+    'test-0059-1854' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.1; LIFETAB_S9714 Build/JRO03R) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1177,7 +1177,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01855' => [
+    'test-0059-1855' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.5.30729; InfoPath.1; .NET CLR 3.0.30729; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1201,7 +1201,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01856' => [
+    'test-0059-1856' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.22 anonymized by Abelssoft 2084057354',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1225,7 +1225,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01857' => [
+    'test-0059-1857' => [
         'ua'         => 'Mozilla/5.0 (webOS/2.1.1; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -1249,7 +1249,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01858' => [
+    'test-0059-1858' => [
         'ua'         => 'Mozilla/5.0 (iPad; U; CPU OS 3_2_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B500 Safari/531.21.10',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -1273,7 +1273,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01859' => [
+    'test-0059-1859' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; GT-S7560 Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -1297,7 +1297,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01860' => [
+    'test-0059-1860' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.11) Gecko/20101012 Firefox/3.6.11 BLNGBAR',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -1321,7 +1321,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01861' => [
+    'test-0059-1861' => [
         'ua'         => 'Opera/9.80 (Android 4.2.2; Linux; Opera Tablet/ADR-1212030829) Presto/2.11.355 Version/12.10',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1345,7 +1345,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-00059-01862' => [
+    'test-0059-1862' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; SGP621 Build/23.0.1.A.0.167) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Safari/537.36 OPR/26.0.1656.87080',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -1369,7 +1369,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01863' => [
+    'test-0059-1863' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; SGP521 Build/23.0.1.A.0.167) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1393,7 +1393,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01864' => [
+    'test-0059-1864' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; MSNIE8A)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1417,7 +1417,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01865' => [
+    'test-0059-1865' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; SP-120 DC Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -1441,7 +1441,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01866' => [
+    'test-0059-1866' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; ASU2JS; Crazy Browser 2.0.1)',
         'properties' => [
             'Browser_Name'            => 'Crazy Browser',
@@ -1465,7 +1465,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01867' => [
+    'test-0059-1867' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.2; GT-N8020 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.114 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1489,7 +1489,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01868' => [
+    'test-0059-1868' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:29.0; WUID=9ba6c43c3d9bfe9b93037c29d99c4a79; WTB=21234) Gecko/20100101 Firefox/29.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -1513,7 +1513,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01869' => [
+    'test-0059-1869' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Mobile/11D257 [FBAN/FBIOS;FBAV/22.0.0.11.27;FBBV/6183821;FBDV/iPad2,7;FBMD/iPad;FBSN/iPhone OS;FBSV/7.1.2;FBSS/1; FBCR/Vodafone.de;FBID/tablet;FBLC/de_DE;FBOP/1]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -1537,7 +1537,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01870' => [
+    'test-0059-1870' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Mozilla/4.0 (compatible; MSIE 7.0; Win32; 1&1); .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1561,7 +1561,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01871' => [
+    'test-0059-1871' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.22 anonymized by Abelssoft 1659541287',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1585,7 +1585,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01872' => [
+    'test-0059-1872' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 8_1_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) GSA/4.0.1.31280 Mobile/12B440 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Google App',
@@ -1609,7 +1609,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01873' => [
+    'test-0059-1873' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0; MAARJS),gzip(gfe)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1633,7 +1633,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01874' => [
+    'test-0059-1874' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; B15Q Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/24.0.0.30.15;]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -1657,7 +1657,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01875' => [
+    'test-0059-1875' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; MyVideo; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1681,7 +1681,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01876' => [
+    'test-0059-1876' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Willkommen VGV-BME; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; Willkommen VGV-BME)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1705,7 +1705,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01877' => [
+    'test-0059-1877' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.5; SIMBAR={EB0B2665-6300-11E2-9E14-0010DCE8D3FA}; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1729,7 +1729,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01878' => [
+    'test-0059-1878' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS123298; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; AskTbAVR-W1/5.15.2.23268; .NET CLR 1.1.4322; T-Brand-RC)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1753,7 +1753,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01879' => [
+    'test-0059-1879' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS100149; GTB7.5; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1777,7 +1777,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01880' => [
+    'test-0059-1880' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 3.0.04506.30; .NET4.0E; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1801,7 +1801,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01881' => [
+    'test-0059-1881' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1825,7 +1825,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01882' => [
+    'test-0059-1882' => [
         'ua'         => 'Mozilla/3.01Gold (Macintosh; I; 68K)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1849,7 +1849,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-00059-01883' => [
+    'test-0059-1883' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.0.4; PAD 1001 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.114 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1873,7 +1873,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01884' => [
+    'test-0059-1884' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1897,7 +1897,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01885' => [
+    'test-0059-1885' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60 (Edition FCD)',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1921,7 +1921,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01886' => [
+    'test-0059-1886' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; X2_Soul Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1945,7 +1945,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01887' => [
+    'test-0059-1887' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; Nexus 7 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36 [FB_IAB/FB4A;FBAV/24.0.0.30.15;]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -1969,7 +1969,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01888' => [
+    'test-0059-1888' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36 OPR/15.0.1147.153',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1993,7 +1993,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01889' => [
+    'test-0059-1889' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.2.12) Gecko/20101026 AskTbATU2/3.9.1.14019 Firefox/3.6.12 ( .NET CLR 3.5.30729; .NET4.0C) BLNGBAR',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2017,7 +2017,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01890' => [
+    'test-0059-1890' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.22 anonymized by Abelssoft 1301078630',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2041,7 +2041,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01891' => [
+    'test-0059-1891' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.32 like Chrome/34.0.1847.137 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Silk',
@@ -2065,7 +2065,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01892' => [
+    'test-0059-1892' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; GT-N8010 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 [FB_IAB/FB4A;FBAV/24.0.0.30.15;]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -2089,7 +2089,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01893' => [
+    'test-0059-1893' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; eSafeUser=CN=Lemke\\, Andreas,OU=Mitarbeiter,OU=Benutzer,OU=KDU,DC=SanaServices,DC=net; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; InfoPath.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2113,7 +2113,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01894' => [
+    'test-0059-1894' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/534.34 (KHTML, like Gecko) wkhtmltoimage Safari/534.34',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -2137,7 +2137,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01895' => [
+    'test-0059-1895' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:35.0) Gecko/20100101 Firefox/35.0 anonymized by Abelssoft 1213584317',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2161,7 +2161,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01896' => [
+    'test-0059-1896' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; hu-hu; GSmart T4 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -2185,7 +2185,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01898' => [
+    'test-0059-1898' => [
         'ua'         => 'HotmailBuzzr/4730 CFNetwork/711.1.16 Darwin/14.0.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -2209,7 +2209,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-00059-01899' => [
+    'test-0059-1899' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36,gzip(gfe)',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2233,7 +2233,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01900' => [
+    'test-0059-1900' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/27.0.1 (de) Anonymisiert durch AlMiSoft Browser-Maulkorb 56843015',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2257,7 +2257,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00059-01901' => [
+    'test-0059-1901' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Mobile/11D257 [FBAN/FBIOS;FBAV/22.0.0.11.27;FBBV/6183821;FBDV/iPad2,2;FBMD/iPad;FBSN/iPhone OS;FBSV/7.1.2;FBSS/1; FBCR/;FBID/tablet;FBLC/de_DE;FBOP/1]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',
@@ -2281,7 +2281,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01902' => [
+    'test-0059-1902' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/600.1.17 (KHTML, like Gecko) Version/6.2 Safari/537.85.10,gzip(gfe)',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -2305,7 +2305,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-00059-01903' => [
+    'test-0059-1903' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2329,7 +2329,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01904' => [
+    'test-0059-1904' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1709.117 Amigo/32.0.1709.117 MRCHROME SOC Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2353,7 +2353,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-00059-01905' => [
+    'test-0059-1905' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; BRI/2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2377,7 +2377,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00059-01906' => [
+    'test-0059-1906' => [
         'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B435 [FBAN/FBIOS;FBAV/21.0.0.25.14;FBBV/6017145;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/8.1.1;FBSS/2; FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5]',
         'properties' => [
             'Browser_Name'            => 'Facebook App',

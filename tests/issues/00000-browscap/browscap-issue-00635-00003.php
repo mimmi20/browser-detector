@@ -733,7 +733,7 @@ return [
             'Platform_Name'           => 'Android',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Google Inc',
+            'Platform_Maker'          => 'Apple Inc',
             'Device_Name'             => 'general Mobile Phone',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'Mobile Phone',

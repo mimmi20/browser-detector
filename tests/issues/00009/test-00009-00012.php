@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-00009-01200' => [
+    'test-0009-1200' => [
         'ua'         => 'Mozilla/4.0 (compatible  MSIE 8.0  Windows NT 6.1  Trident/4.0  GTB6.6  SLCC2  .NET CLR 2.0.50727  .NET CLR 3.5.30729  .NET CLR 3.0.30729  AskTbPTV2/5.9.1.14019)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25,7 +25,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00009-01201' => [
+    'test-0009-1201' => [
         'ua'         => 'Mozilla/4.0 (compatible  MSIE 8.0  Windows NT 6.1  Trident/4.0  SLCC2  .NET CLR 2.0.50727  .NET CLR 3.5.30729  .NET CLR 3.0.30729  Media Center PC 6.0  CMDTDF  Tablet PC 2.0  .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -49,7 +49,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00009-01202' => [
+    'test-0009-1202' => [
         'ua'         => 'Opera/9.80 (J2ME/MIDP  Opera Mini/5.1.21051/24.743  U  ru) Presto/2.5.25 Version/10.54',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -73,7 +73,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-00009-01203' => [
+    'test-0009-1203' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; LCJB; ms-office)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -97,7 +97,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00009-01204' => [
+    'test-0009-1204' => [
         'ua'         => 'PHP-Curl-Class/3.6.5 (+https://github.com/php-curl-class/php-curl-class) PHP/5.6.17-0+deb8u1 curl/7.38.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -121,7 +121,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-00009-01205' => [
+    'test-0009-1205' => [
         'ua'         => 'Mozilla/5.0 (compatible; RankActiveLinkBot; +https://rankactive.com/resources/rankactive-linkbot)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -145,7 +145,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-00009-01206' => [
+    'test-0009-1206' => [
         'ua'         => 'Opera/9.80 (Windows NT 5.1  U  MRA 5.7 (build 03796)  ru) Presto/2.8.131 Version/11.10',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -169,7 +169,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-00009-01207' => [
+    'test-0009-1207' => [
         'ua'         => 'Mozilla/4.0 (compatible  MSIE 7.0  Windows NT 5.1  Trident/4.0  MyIE2  InfoPath.1)',
         'properties' => [
             'Browser_Name'            => 'Maxthon',
@@ -193,7 +193,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00009-01208' => [
+    'test-0009-1208' => [
         'ua'         => 'Mozilla/4.0 (compatible  MSIE 8.0  Windows NT 6.1  WOW64  Trident/4.0  MRA 5.7 (build 3789)  MRSPUTNIK 2, 3, 0, 301  GTB6.6  SLCC2  .NET CLR 2.0.50727  .NET CLR 3.5.30729  .NET CLR 3.0.30729  Media Center PC 6.0)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -217,7 +217,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-00009-01209' => [
+    'test-0009-1209' => [
         'ua'         => 'Mercury/907 CFNetwork/758.3.15 Darwin/15.4.0',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -241,7 +241,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-00009-01210' => [
+    'test-0009-1210' => [
         'ua'         => 'Opera/9.80 (Windows NT 5.1  U  MRA 5.7 (build 03672)  ru) Presto/2.8.131 Version/11.10',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -265,7 +265,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-00009-01211' => [
+    'test-0009-1211' => [
         'ua'         => 'Mozilla/5.0 (Windows  U  Windows NT 5.1  ru  rv:1.9.1.17) Gecko/20110121 Firefox/3.5.17',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -289,7 +289,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-00009-01212' => [
+    'test-0009-1212' => [
         'ua'         => 'Mozilla/5.0 (compatible; Konqueror/4.1; Linux) KHTML/4.1.4 (like Gecko)',
         'properties' => [
             'Browser_Name'            => 'Konqueror',

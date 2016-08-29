@@ -85,7 +85,7 @@ return [
             'Platform_Name'           => 'Windows',
             'Platform_Version'        => '9.25.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Microsoft Corporation',
+            'Platform_Maker'          => 'Canonical Foundation',
             'Device_Name'             => 'Windows Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

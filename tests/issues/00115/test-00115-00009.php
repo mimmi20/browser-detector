@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-00115-00959' => [
+    'test-00115-959' => [
         'ua'         => 'docker/1.11.1 go/go1.5.4 git-commit/5604cbe kernel/4.4.0-21-generic os/linux arch/amd64 UpstreamClient(Docker-Client/1.11.1 \\\\(linux\\\\))',
         'properties' => [
             'Browser_Name'            => 'Default Browser',

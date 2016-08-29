@@ -1117,7 +1117,7 @@ return [
             'Platform_Name'           => 'Symbian OS',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Symbian Foundation',
+            'Platform_Maker'          => 'Oracle',
             'Device_Name'             => 'C6-01',
             'Device_Maker'            => 'Nokia',
             'Device_Type'             => 'Mobile Phone',
