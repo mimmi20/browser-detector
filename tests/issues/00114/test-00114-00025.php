@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-00114-2528' => [
+    'test-00114-02528' => [
         'ua'         => 'QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
