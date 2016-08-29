@@ -363,7 +363,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if ($utils->checkIfContains(['Palm OS', 'PalmSource'])) {
-            return new Os\PalmOS($agent);
+            return new Os\PalmOs($agent);
         }
 
         if ($utils->checkIfContains('WyderOS')) {

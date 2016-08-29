@@ -76,6 +76,6 @@ class Lgd300 extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\FirefoxOS($this->useragent);
+        return new Os\FirefoxOs($this->useragent);
     }
 }

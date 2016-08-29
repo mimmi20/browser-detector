@@ -76,6 +76,6 @@ class PalmPixi extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\webOS($this->useragent);
+        return new Os\WebOs($this->useragent);
     }
 }
