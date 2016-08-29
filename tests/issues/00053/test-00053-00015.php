@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-0053-1505' => [
+    'test-00053-01505' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SIMBAR={E6A7E6FF-220D-11E2-A537-000E0CB952D9}; BTRS100200; .NET CLR 1.0.3705; Media Center PC 4.0; Media Center PC 3.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -25,7 +25,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1506' => [
+    'test-00053-01506' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CPDTDF; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; GWX:RESERVED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -49,7 +49,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1507' => [
+    'test-00053-01507' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; Tablet PC 2.0; .NET4.0E; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -73,7 +73,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1508' => [
+    'test-00053-01508' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; tb-1und1/2.6.4; ; 1und1/1.4.0.0; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -97,7 +97,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1509' => [
+    'test-00053-01509' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; eSobiSubscriber 2.0.4.16; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; InfoPath.3; .NET4.0E; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -121,7 +121,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1510' => [
+    'test-00053-01510' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; BRI/2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -145,7 +145,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1511' => [
+    'test-00053-01511' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; anonymized by Abelssoft 1647090132; .NET4.0C; .NET4.0E; BRI/2; Media Center PC 6.0; GWX:RESERVED; anonymized by Abelssoft 1386674125; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -169,7 +169,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1512' => [
+    'test-00053-01512' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CMDTDF; Tablet PC 2.0; .NET4.0C; .NET4.0E; GWX:DOWNLOADED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -193,7 +193,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1513' => [
+    'test-00053-01513' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Win64; x64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; Media Center PC 6.0; InfoPath.3; Microsoft Outlook 15.0.4727; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -217,7 +217,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1514' => [
+    'test-00053-01514' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAMD; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; Tablet PC 2.0; GWX:DOWNLOADED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -241,7 +241,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1515' => [
+    'test-00053-01515' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0; InfoPath.3; .NET4.0C; .NET4.0E; GWX:QUALIFIED; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -265,7 +265,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1516' => [
+    'test-00053-01516' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -289,7 +289,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1517' => [
+    'test-00053-01517' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; NP06; AlexaToolbar/amzni-3.0; AskTbAVR-4/5.15.31.57710; BRI/2; GWX:DOWNLOADED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -313,7 +313,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1518' => [
+    'test-00053-01518' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; MASBJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -337,7 +337,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1519' => [
+    'test-00053-01519' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0; BRI/2; MASE; GWX:DOWNLOADED; Microsoft Outlook 14.0.6117; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -361,7 +361,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1520' => [
+    'test-00053-01520' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; MASB; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -385,7 +385,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1521' => [
+    'test-00053-01521' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -409,7 +409,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1522' => [
+    'test-00053-01522' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; MASBJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -433,7 +433,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1523' => [
+    'test-00053-01523' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; tb-webde/2.6.4; GWX:QUALIFIED; Microsoft Outlook 15.0.4569; Microsoft Outlook 15.0.4569; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -457,7 +457,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1524' => [
+    'test-00053-01524' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; CMDTDFJS; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -481,7 +481,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1525' => [
+    'test-00053-01525' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -505,7 +505,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1526' => [
+    'test-00053-01526' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET CLR 1.1.4322; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:QUALIFIED; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -529,7 +529,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1527' => [
+    'test-00053-01527' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.4; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -553,7 +553,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1528' => [
+    'test-00053-01528' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/6.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MALNJS; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -577,7 +577,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1529' => [
+    'test-00053-01529' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MS-RTC LM 8; .NET CLR 1.1.4322; Microsoft Outlook 14.0.7140; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -601,7 +601,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1530' => [
+    'test-00053-01530' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; BRI/2)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -625,7 +625,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1531' => [
+    'test-00053-01531' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; InfoPath.2; GWX:DOWNLOADED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -649,7 +649,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1532' => [
+    'test-00053-01532' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.1; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:DOWNLOADED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -673,7 +673,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1533' => [
+    'test-00053-01533' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; AskTbAVR-3/5.15.4.23930; .NET4.0C; .NET4.0E; GWX:RESERVED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -697,7 +697,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1534' => [
+    'test-00053-01534' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.1; .NET4.0E; BRI/2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -721,7 +721,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1535' => [
+    'test-00053-01535' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; BRI/2; GWX:RESERVED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -745,7 +745,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1536' => [
+    'test-00053-01536' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 2.0.50727; .NET CLR 1.1.4322)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -769,7 +769,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0053-1537' => [
+    'test-00053-01537' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; GWX:DOWNLOADED; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -793,7 +793,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1538' => [
+    'test-00053-01538' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; BRI/2; Tablet PC 2.0; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -817,7 +817,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1539' => [
+    'test-00053-01539' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbNRO2/5.12.2.16749; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -841,7 +841,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1540' => [
+    'test-00053-01540' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; MSNIE9A)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -865,7 +865,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1541' => [
+    'test-00053-01541' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -889,7 +889,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1542' => [
+    'test-00053-01542' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; Tablet PC 2.0; .NET4.0E; GWX:RESERVED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -913,7 +913,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1543' => [
+    'test-00053-01543' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.4025; Windows NT 5.1; Trident/4.0; BTRS108432; GTB7.5; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; T-Brand-RC)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -937,7 +937,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1544' => [
+    'test-00053-01544' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0.1; SM-N915F Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.90 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -961,7 +961,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0053-1545' => [
+    'test-00053-01545' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; MAMD; Tablet PC 2.0; .NET4.0E; InfoPath.3; GWX:QUALIFIED; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -985,7 +985,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1546' => [
+    'test-00053-01546' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.2; McAfee; MALNJS; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1009,7 +1009,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1547' => [
+    'test-00053-01547' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; McAfee; MAARJS; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1033,7 +1033,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1548' => [
+    'test-00053-01548' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.3; GWX:DOWNLOADED; MALNJS; Microsoft Outlook 15.0.4745; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1057,7 +1057,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1549' => [
+    'test-00053-01549' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; GWX:DOWNLOADED; ASU2JS; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1081,7 +1081,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1550' => [
+    'test-00053-01550' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; tb-gmx/2.6.4; (1und1/1.4.0.0); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1105,7 +1105,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1551' => [
+    'test-00053-01551' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; BRI/2; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1129,7 +1129,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1552' => [
+    'test-00053-01552' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; GWX:RESERVED; MAARJS; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1153,7 +1153,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1553' => [
+    'test-00053-01553' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Media Center PC 6.0; GWX:RESERVED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1177,7 +1177,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1554' => [
+    'test-00053-01554' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; MAAU; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1201,7 +1201,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1555' => [
+    'test-00053-01555' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; BRI/2; GWX:RESERVED; MALNJS; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1225,7 +1225,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1556' => [
+    'test-00053-01556' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1249,7 +1249,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1557' => [
+    'test-00053-01557' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; NP06; .NET4.0C; AskTbORJ/5.15.2.23037; .NET4.0E; GWX:DOWNLOADED; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1273,7 +1273,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1558' => [
+    'test-00053-01558' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; Microsoft Outlook 15.0.4745; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1297,7 +1297,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1559' => [
+    'test-00053-01559' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/2; .NET4.0C; .NET4.0E; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1321,7 +1321,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1560' => [
+    'test-00053-01560' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; MS-RTC LM 8; .NET4.0E; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1345,7 +1345,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1561' => [
+    'test-00053-01561' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:QUALIFIED; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1369,7 +1369,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1562' => [
+    'test-00053-01562' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; Media Center PC 5.0; SLCC1; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; Tablet PC 2.0; .NET4.0E; GWX:RESERVED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1393,7 +1393,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1563' => [
+    'test-00053-01563' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; Tablet PC 2.0; GWX:DOWNLOADED; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1417,7 +1417,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1564' => [
+    'test-00053-01564' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; Tablet PC 2.0; .NET4.0C; BRI/2; .NET4.0E; GWX:DOWNLOADED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1441,7 +1441,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1565' => [
+    'test-00053-01565' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; BTRS99499; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1465,7 +1465,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1566' => [
+    'test-00053-01566' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbAVR-4/5.15.11.30498; .NET4.0E; GWX:DOWNLOADED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1489,7 +1489,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1567' => [
+    'test-00053-01567' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0; BRI/2; MASE; McAfee; GWX:QUALIFIED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1513,7 +1513,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1568' => [
+    'test-00053-01568' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; yie8)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1537,7 +1537,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1569' => [
+    'test-00053-01569' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; Zune 4.7; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1561,7 +1561,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1570' => [
+    'test-00053-01570' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; tb-webde/2.6.4; GWX:DOWNLOADED)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1585,7 +1585,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1571' => [
+    'test-00053-01571' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; McAfee; GWX:RESERVED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1609,7 +1609,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1572' => [
+    'test-00053-01572' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0.2; C6903 Build/14.5.A.0.270; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.117 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -1633,7 +1633,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0053-1573' => [
+    'test-00053-01573' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; tb-gmx/2.6.4; LCJB; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1657,7 +1657,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1574' => [
+    'test-00053-01574' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1681,7 +1681,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1575' => [
+    'test-00053-01575' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; GWX:RESERVED; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1705,7 +1705,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1576' => [
+    'test-00053-01576' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; Touch; tb-webde/2.6.4; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1729,7 +1729,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1577' => [
+    'test-00053-01577' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1753,7 +1753,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1578' => [
+    'test-00053-01578' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; InfoPath.3; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.7113; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1777,7 +1777,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1579' => [
+    'test-00053-01579' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; SLCC2; Media Center PC 6.0; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; MAMD; BRI/2; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1801,7 +1801,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1580' => [
+    'test-00053-01580' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; Touch; MAMIJS; MSAppHost/2.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1825,7 +1825,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1581' => [
+    'test-00053-01581' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 1.1.4322; .NET CLR 3.0.04506.30)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1849,7 +1849,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0053-1582' => [
+    'test-00053-01582' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; MAMD; TOnlineIE11B; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1873,7 +1873,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1583' => [
+    'test-00053-01583' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; Tablet PC 2.0; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.3; GWX:QUALIFIED; LCJB; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1897,7 +1897,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1584' => [
+    'test-00053-01584' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0; InfoPath.3; .NET4.0C; .NET4.0E; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1921,7 +1921,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1585' => [
+    'test-00053-01585' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0; InfoPath.3; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1945,7 +1945,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1586' => [
+    'test-00053-01586' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; GWX:QUALIFIED; Microsoft Outlook 14.0.7155; ms-office; MSOffice 14)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1969,7 +1969,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1587' => [
+    'test-00053-01587' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET CLR 1.1.4322; .NET4.0C; .NET4.0E; Microsoft Outlook 15.0.4667; Microsoft Outlook 15.0.4667; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1993,7 +1993,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1588' => [
+    'test-00053-01588' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; MASBJS; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2017,7 +2017,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1589' => [
+    'test-00053-01589' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbORJ/5.15.9.29495; Tablet PC 2.0; .NET4.0E; GWX:QUALIFIED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2041,7 +2041,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1590' => [
+    'test-00053-01590' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; Tablet PC 2.0; BRI/2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E; GWX:QUALIFIED; MSOffice 12)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2065,7 +2065,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1591' => [
+    'test-00053-01591' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; InfoPath.3; GWX:QUALIFIED; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2089,7 +2089,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1592' => [
+    'test-00053-01592' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; BRI/2; .NET4.0E; GWX:DOWNLOADED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2113,7 +2113,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1593' => [
+    'test-00053-01593' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; Microsoft Outlook 15.0.4433; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2137,7 +2137,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1594' => [
+    'test-00053-01594' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; tb-gmx/2.6.4; (gmx/1.4.0.0); MSAppHost/2.0; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -2161,7 +2161,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1595' => [
+    'test-00053-01595' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; tb-webde/2.6.4; (webde/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2185,7 +2185,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1596' => [
+    'test-00053-01596' => [
         'ua'         => 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbORJ/5.15.23.36191; .NET4.0E; GWX:RESERVED; TmstmpExt)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2209,7 +2209,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1597' => [
+    'test-00053-01597' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; tb-webde/2.6.4; (web.de/1.0.0.8))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2233,7 +2233,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1598' => [
+    'test-00053-01598' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0; CMNTDFJS; F9J; GWX:DOWNLOADED; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2257,7 +2257,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1599' => [
+    'test-00053-01599' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; GWX:QUALIFIED; MAARJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2281,7 +2281,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1600' => [
+    'test-00053-01600' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0; tb-gmx/2.6.4; (gmx/1.4.0.0))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2305,7 +2305,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1601' => [
+    'test-00053-01601' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Win64; x64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.3; GWX:RESERVED; MATMJS; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2329,7 +2329,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1602' => [
+    'test-00053-01602' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E; tb-webde/2.6.4; (webde/1.0.0.8))',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2353,7 +2353,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1603' => [
+    'test-00053-01603' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; GWX:RESERVED; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -2377,7 +2377,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0053-1604' => [
+    'test-00053-01604' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0E; Tablet PC 2.0; .NET CLR 1.1.4322; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; GWX:RESERVED; InfoPath.3; Microsoft Outlook 15.0.4745; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',

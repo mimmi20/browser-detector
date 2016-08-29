@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-0100-0' => [
+    'test-00100-00000' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.3; pl-pl; SonyC1905 Build/15.4.A.1.9) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -25,7 +25,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0100-1' => [
+    'test-00100-00001' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20120422 Firefox/12.0 SeaMonkey/2.9',
         'properties' => [
             'Browser_Name'            => 'SeaMonkey',
@@ -49,7 +49,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0100-2' => [
+    'test-00100-00002' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HUAWEI; W2-U00)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -73,7 +73,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0100-3' => [
+    'test-00100-00003' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -97,7 +97,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0100-5' => [
+    'test-00100-00005' => [
         'ua'         => 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia501) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
         'properties' => [
             'Browser_Name'            => 'UC Browser',
@@ -121,7 +121,7 @@ return [
             'RenderingEngine_Maker'   => 'UC Web',
         ],
     ],
-    'test-0100-7' => [
+    'test-00100-00007' => [
         'ua'         => 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; GT-S7582 Build/JDQ39)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -145,7 +145,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0100-8' => [
+    'test-00100-00008' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.2; LT26ii Build/6.2.B.1.96) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -169,7 +169,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0100-9' => [
+    'test-00100-00009' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -193,7 +193,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0100-10' => [
+    'test-00100-00010' => [
         'ua'         => 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; C6903 Build/14.1.G.1.518)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -217,7 +217,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0100-12' => [
+    'test-00100-00012' => [
         'ua'         => 'Mechanize/2.7.2 Ruby/2.1.2p95 (http://github.com/sparklemotion/mechanize/)',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -241,7 +241,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0100-13' => [
+    'test-00100-00013' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1729.3 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -265,7 +265,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0100-14' => [
+    'test-00100-00014' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 3.2.1; en-us; AT100 Build/HTK55D) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -289,7 +289,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0100-15' => [
+    'test-00100-00015' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9b4) Gecko/2008030317 Firefox/3.0b4',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -313,7 +313,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0100-16' => [
+    'test-00100-00016' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; en-nz; SM-T110 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -337,7 +337,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0100-17' => [
+    'test-00100-00017' => [
         'ua'         => 'Nokia501/2.0 (14.0.4) Profile/MIDP-2.1 Configuration/CLDC-1.1',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -361,7 +361,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0100-18' => [
+    'test-00100-00018' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; Tablet PC 2.0; Microsoft Outlook 15.0.4701; Microsoft Outlook 15.0.4701; ms-office; MSOffice 15)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -385,7 +385,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0100-19' => [
+    'test-00100-00019' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; es-us; SAMSUNG GT-I9190 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',

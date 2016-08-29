@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-0018-1900' => [
+    'test-00018-01900' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; GT-I9505 Build/LMY48W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -25,7 +25,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1901' => [
+    'test-00018-01901' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; dxadm; aa001649; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -49,7 +49,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0018-1902' => [
+    'test-00018-01902' => [
         'ua'         => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2596.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -73,7 +73,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1903' => [
+    'test-00018-01903' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/47.0.2526.107 Mobile/11D167 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -97,7 +97,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1904' => [
+    'test-00018-01904' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; LG-D802TR Build/KOT49I.D802TR20c) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -121,7 +121,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1905' => [
+    'test-00018-01905' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; de_de) AppleWebKit/601.1.46.45.1 (KHTML, like Gecko) Version/5.0.5 Safari/601.1.46.45.1',
         'properties' => [
             'Browser_Name'            => 'Safari',
@@ -145,7 +145,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1906' => [
+    'test-00018-01906' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0; Mozilla Firefox 38.4.0 - 11662--78',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -169,7 +169,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1907' => [
+    'test-00018-01907' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; C6603 Build/10.7.A.0.228) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -193,7 +193,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1908' => [
+    'test-00018-01908' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 5.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0 AlexaToolbar/psuawNmf-2.2',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -217,7 +217,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1909' => [
+    'test-00018-01909' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1; HTC One M9 Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Mobile Safari/537.36 OPR/34.0.2044.98679',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -241,7 +241,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1910' => [
+    'test-00018-01910' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.2.2; GT-P5100 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -265,7 +265,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1911' => [
+    'test-00018-01911' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2589.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -289,7 +289,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1912' => [
+    'test-00018-01912' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; i7 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -313,7 +313,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1913' => [
+    'test-00018-01913' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; rv:42.0 () Gecko/20100101 Firefox/42.0 ( anonymized by Abelssoft 475218101',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -337,7 +337,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1914' => [
+    'test-00018-01914' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; rv:42.0) Gecko/20100101 Firefox/42.0 anonymized by Abelssoft 1477629845',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -361,7 +361,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1915' => [
+    'test-00018-01915' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; K012 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -385,7 +385,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1916' => [
+    'test-00018-01916' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 5.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -409,7 +409,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1917' => [
+    'test-00018-01917' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; rv:43.0 () Gecko/20100101 Firefox/43.0 ( anonymized by Abelssoft 1019221721',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -433,7 +433,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1918' => [
+    'test-00018-01918' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; rv:42.0 () Gecko/20100101 Firefox/42.0 ( anonymized by Abelssoft 707102276',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -457,7 +457,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1919' => [
+    'test-00018-01919' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; B15Q Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -481,7 +481,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1920' => [
+    'test-00018-01920' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; rv:43.0 ) Gecko/20100101 Firefox/43.0  anonymized by Abelssoft 1816550418',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -505,7 +505,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1921' => [
+    'test-00018-01921' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.3; HUAWEI P7 mini Build/HuaweiP7MiniC150B118) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -529,7 +529,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1922' => [
+    'test-00018-01922' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; IdeaTabA2207A-H Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -553,7 +553,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1923' => [
+    'test-00018-01923' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G928C Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.4 Chrome/38.0.2125.102 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -577,7 +577,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1924' => [
+    'test-00018-01924' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0.2; HTC Desire 816 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36 ACHEETAHI/2100501090',
         'properties' => [
             'Browser_Name'            => 'CM Browser',
@@ -601,7 +601,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1925' => [
+    'test-00018-01925' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1; LG-H815 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Mobile Safari/537.36 OPR/34.0.2044.98679',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -625,7 +625,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1926' => [
+    'test-00018-01926' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.2; GT-I8190N Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.64 Mobile Safari/537.36 OPR/33.0.2002.98088',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -649,7 +649,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1927' => [
+    'test-00018-01927' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; Che2-L11 Build/HonorChe2-L11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -673,7 +673,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1928' => [
+    'test-00018-01928' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0; Mozilla Firefox 38.4.0 - 10792-10116',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -697,7 +697,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1929' => [
+    'test-00018-01929' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.2.2; LG-D955 Build/JDQ39B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -721,7 +721,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1930' => [
+    'test-00018-01930' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; D2406 Build/18.3.1.C.0.21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -745,7 +745,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1931' => [
+    'test-00018-01931' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1; Archos 50c Platinum Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -769,7 +769,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1932' => [
+    'test-00018-01932' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; SM-T210 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2592.3 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -793,7 +793,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1933' => [
+    'test-00018-01933' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.1; ALCATEL ONE TOUCH 6033X Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -817,7 +817,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1934' => [
+    'test-00018-01934' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:42.0 () Gecko/20100101 Firefox/42.0 ( anonymized by Abelssoft 430605593',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -841,7 +841,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1935' => [
+    'test-00018-01935' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:28.0; WUID=e5d1e3d0ed948aa69b6b4e90c82852c7; WTB=20930) Gecko/20100101 Firefox/28.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -865,7 +865,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1936' => [
+    'test-00018-01936' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; Elephone P3000S Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -889,7 +889,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1937' => [
+    'test-00018-01937' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/47.0.2526.70 Mobile/11D167 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -913,7 +913,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1938' => [
+    'test-00018-01938' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2592.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -937,7 +937,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1939' => [
+    'test-00018-01939' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:43.0) Gecko/20100101 Firefox/43.0 Cyberfox/43.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -961,7 +961,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1940' => [
+    'test-00018-01940' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; M7 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -985,7 +985,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1941' => [
+    'test-00018-01941' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; LG-D802 Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1009,7 +1009,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1942' => [
+    'test-00018-01942' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.3; ru-ru; SAMSUNG GT-I9300/I9300XXUGNH4 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -1033,7 +1033,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1943' => [
+    'test-00018-01943' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; rv:42.0 ) Gecko/20100101 Firefox/42.0  anonymized by Abelssoft 1989472112',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -1057,7 +1057,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1944' => [
+    'test-00018-01944' => [
         'ua'         => 'Opera/9.80 (Android; Opera Mini/13.0.2036/37.7442; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1081,7 +1081,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-0018-1945' => [
+    'test-00018-01945' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; tb-gmx/1.9.2; (gmx/1.0.0.8); rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1105,7 +1105,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0018-1946' => [
+    'test-00018-01946' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI P7-L10 Build/HuaweiP7-L10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2592.3 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1129,7 +1129,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1947' => [
+    'test-00018-01947' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1; B3-A10 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1153,7 +1153,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1948' => [
+    'test-00018-01948' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900K/KTU1BOK3 Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -1177,7 +1177,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1949' => [
+    'test-00018-01949' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; SM-G900M Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1201,7 +1201,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1950' => [
+    'test-00018-01950' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36 OPR/34.0.2036.31',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1225,7 +1225,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1951' => [
+    'test-00018-01951' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/20100101 Firefox/14.0.1 BoeweSystemId/294545',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -1249,7 +1249,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1952' => [
+    'test-00018-01952' => [
         'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/11.0.65374 Mobile/13A452 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1273,7 +1273,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1953' => [
+    'test-00018-01953' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/11.0.65374 Mobile/12A405 Safari/600.1.4',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1297,7 +1297,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1954' => [
+    'test-00018-01954' => [
         'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) OPiOS/12.1.0.98764 Mobile/13C75 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -1321,7 +1321,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1955' => [
+    'test-00018-01955' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 6.0.1; A0001 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1345,7 +1345,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1956' => [
+    'test-00018-01956' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; Fire Phone Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1369,7 +1369,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1957' => [
+    'test-00018-01957' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; E6653 Build/32.0.A.6.200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1393,7 +1393,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1958' => [
+    'test-00018-01958' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; tb-webde/2.6.5)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1417,7 +1417,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0018-1959' => [
+    'test-00018-01959' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS114393; GTB7.5; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1441,7 +1441,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0018-1960' => [
+    'test-00018-01960' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; SM-N900L Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1465,7 +1465,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1961' => [
+    'test-00018-01961' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.4.4; de-de; GT-I9195I Build/KTU84P) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16 Chrome/33.0.0.0',
         'properties' => [
             'Browser_Name'            => 'Android WebView',
@@ -1489,7 +1489,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1962' => [
+    'test-00018-01962' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1513,7 +1513,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0018-1963' => [
+    'test-00018-01963' => [
         'ua'         => 'Opera/9.80 (BlackBerry; Opera Mini/8.0.35667/37.7442; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1537,7 +1537,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-0018-1964' => [
+    'test-00018-01964' => [
         'ua'         => 'Opera/9.80 (iPhone; Opera Mini/12.0.0/37.7442; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1561,7 +1561,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-0018-1965' => [
+    'test-00018-01965' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/MMB29M.Z1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1585,7 +1585,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1966' => [
+    'test-00018-01966' => [
         'ua'         => 'Mozilla/5.0 (Android 6.0.1; Tablet; rv:42.0) Gecko/42.0 Firefox/42.0',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -1609,7 +1609,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1967' => [
+    'test-00018-01967' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; LG-P700/V10f Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -1633,7 +1633,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1968' => [
+    'test-00018-01968' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F/G900FXXU1BOJ1 Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -1657,7 +1657,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1969' => [
+    'test-00018-01969' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; Tornado 348 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1681,7 +1681,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1970' => [
+    'test-00018-01970' => [
         'ua'         => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1705,7 +1705,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1971' => [
+    'test-00018-01971' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-N910H Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Samsung Browser',
@@ -1729,7 +1729,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1972' => [
+    'test-00018-01972' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 10 Build/LMY48M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1753,7 +1753,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1973' => [
+    'test-00018-01973' => [
         'ua'         => 'Opera/9.80 (Android; Opera Mini/11.0.1912/37.7442; U; de) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -1777,7 +1777,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-0018-1974' => [
+    'test-00018-01974' => [
         'ua'         => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/42.0 (x86 de) Anonymisiert durch AlMiSoft Browser-Anonymisierer 38920659',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -1801,7 +1801,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1975' => [
+    'test-00018-01975' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; rv:42.0 () Gecko/20100101 Firefox/42.0 ( anonymized by Abelssoft 1923586815',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -1825,7 +1825,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1976' => [
+    'test-00018-01976' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.0.2; E6553 Build/28.0.A.7.24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1849,7 +1849,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1977' => [
+    'test-00018-01977' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; GT-N5100 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.64 Safari/537.36 OPR/33.0.2002.98088',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -1873,7 +1873,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1978' => [
+    'test-00018-01978' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; K013 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1897,7 +1897,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1979' => [
+    'test-00018-01979' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; SM-T533 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1921,7 +1921,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1980' => [
+    'test-00018-01980' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0E; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -1945,7 +1945,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0018-1981' => [
+    'test-00018-01981' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.2; XT925 Build/9.8.2Q-8-XT925_VQUL-1601) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1969,7 +1969,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1982' => [
+    'test-00018-01982' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; Nexus 7 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -1993,7 +1993,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1983' => [
+    'test-00018-01983' => [
         'ua'         => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Coast/5.00.98125 Mobile/13B143 Safari/7534.48.3',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -2017,7 +2017,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1984' => [
+    'test-00018-01984' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.2.2; arc 10HD Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2041,7 +2041,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1985' => [
+    'test-00018-01985' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2; rv:42.0 () Gecko/20100101 Firefox/42.0 ( anonymized by Abelssoft 1031672876',
         'properties' => [
             'Browser_Name'            => 'Firefox',
@@ -2065,7 +2065,7 @@ return [
             'RenderingEngine_Maker'   => 'Mozilla Foundation',
         ],
     ],
-    'test-0018-1986' => [
+    'test-00018-01986' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.0.3; MD_LIFETAB_P9516 Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 OPR/29.0.1809.93516',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -2089,7 +2089,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1987' => [
+    'test-00018-01987' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; xs-D59t4ZIRCWA;iwNFYc; rv:11.0) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -2113,7 +2113,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0018-1988' => [
+    'test-00018-01988' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.2.2; 6037Y Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2137,7 +2137,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1989' => [
+    'test-00018-01989' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; MI NOTE Pro Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2161,7 +2161,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1990' => [
+    'test-00018-01990' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.4; SM-A500FU Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2185,7 +2185,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1991' => [
+    'test-00018-01991' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; X9+ Build/X9+X9+) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -2209,7 +2209,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1992' => [
+    'test-00018-01992' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1; Nexus 4 Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2233,7 +2233,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1993' => [
+    'test-00018-01993' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.1.2; XT890 Build/9.8.2I-50_SMI-26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.64 Mobile Safari/537.36 OPR/33.0.2002.98088',
         'properties' => [
             'Browser_Name'            => 'Opera Mobile',
@@ -2257,7 +2257,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1994' => [
+    'test-00018-01994' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.265 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2281,7 +2281,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1995' => [
+    'test-00018-01995' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.4.2; PadFone 2 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.76 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -2305,7 +2305,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0018-1996' => [
+    'test-00018-01996' => [
         'ua'         => 'Opera/9.80 (Android; Opera Mini/7.6.40234/37.7327; U; ru) Presto/2.12.423 Version/12.16',
         'properties' => [
             'Browser_Name'            => 'Opera',
@@ -2329,7 +2329,7 @@ return [
             'RenderingEngine_Maker'   => 'Opera Software ASA',
         ],
     ],
-    'test-0018-1997' => [
+    'test-00018-01997' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0;WUID=6880118E5A5A485FA243DB4D739F8037;WTB=21234) like Gecko',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -2353,7 +2353,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0018-1998' => [
+    'test-00018-01998' => [
         'ua'         => 'Mozilla/5.0 (iPad; CPU OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) OPiOS/12.0.0.98100 Mobile/13C75 Safari/9537.53',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -2377,7 +2377,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-1999' => [
+    'test-00018-01999' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 5.1.1; GT-I9505 Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.43 Mobile Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',

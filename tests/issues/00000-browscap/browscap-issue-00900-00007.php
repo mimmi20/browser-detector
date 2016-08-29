@@ -2244,7 +2244,7 @@ return [
             'Browser_Version'         => '6.2',
             'Platform_Name'           => 'Tru64 UNIX',
             'Platform_Version'        => '0.0.0',
-            'Platform_Bits'           => 32,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'HP',
             'Device_Name'             => 'general Desktop',
             'Device_Maker'            => 'Various',

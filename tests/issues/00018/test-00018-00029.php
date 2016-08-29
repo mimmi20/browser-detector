@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-0018-2900' => [
+    'test-00018-02900' => [
         'ua'         => 'Mozilla/5.0 (X11; U; Linux; C) AppleWebKit/532.4 (KHTML, like Gecko) Qt/4.6.3 Safari/532.4',
         'properties' => [
             'Browser_Name'            => 'Default Browser',
@@ -25,7 +25,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0018-2901' => [
+    'test-00018-02901' => [
         'ua'         => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; HPDTDFJS)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',

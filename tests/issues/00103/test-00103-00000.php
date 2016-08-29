@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-0103-0' => [
+    'test-00103-00000' => [
         'ua'         => 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-C101 Build/KOT49H)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -25,7 +25,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0103-1' => [
+    'test-00103-00001' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 2.3.6; nl-nl; GT-S7500 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -49,7 +49,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0103-2' => [
+    'test-00103-00002' => [
         'ua'         => 'Mozilla/5.0 (Linux; Android 4.2.2; Nexus 7 Build/JDQ39B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -73,7 +73,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0103-3' => [
+    'test-00103-00003' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; InfoPath.3; .NET4.0C; .NET4.0E)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -97,7 +97,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0103-4' => [
+    'test-00103-00004' => [
         'ua'         => 'Dalvik/1.6.0 (Linux; U; Android 4.1.2; XT910 Build/9.8.2O-124_SPUEM-14)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -121,7 +121,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0103-5' => [
+    'test-00103-00005' => [
         'ua'         => 'Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Lenovo A3000-H Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
         'properties' => [
             'Browser_Name'            => 'Android',
@@ -145,7 +145,7 @@ return [
             'RenderingEngine_Maker'   => 'Apple Inc',
         ],
     ],
-    'test-0103-6' => [
+    'test-00103-00006' => [
         'ua'         => 'Dalvik/1.6.0 (Linux; U; Android 4.1.2; GT-N8013 Build/JZO54K)',
         'properties' => [
             'Browser_Name'            => 'Dalvik',
@@ -169,7 +169,7 @@ return [
             'RenderingEngine_Maker'   => 'unknown',
         ],
     ],
-    'test-0103-7' => [
+    'test-00103-00007' => [
         'ua'         => 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',

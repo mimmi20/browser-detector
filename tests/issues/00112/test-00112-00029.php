@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-00112-2953' => [
+    'test-00112-02953' => [
         'ua'         => 'Mozilla/5\\\\.0 (Windows; U; Windows NT 6.1; de; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6 ( .NET CLR 3.5.30729)',
         'properties' => [
             'Browser_Name'            => 'Firefox',

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'test-0067-100' => [
+    'test-00067-00100' => [
         'ua'         => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36',
         'properties' => [
             'Browser_Name'            => 'Chrome',
@@ -25,7 +25,7 @@ return [
             'RenderingEngine_Maker'   => 'Google Inc',
         ],
     ],
-    'test-0067-101' => [
+    'test-00067-00101' => [
         'ua'         => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0;)',
         'properties' => [
             'Browser_Name'            => 'Internet Explorer',
@@ -49,7 +49,7 @@ return [
             'RenderingEngine_Maker'   => 'Microsoft Corporation',
         ],
     ],
-    'test-0067-102' => [
+    'test-00067-00102' => [
         'ua'         => 'Opera/9.80 (Windows NT 6.1; U; ru) Presto/2.10.229 Version/11.64',
         'properties' => [
             'Browser_Name'            => 'Opera',
