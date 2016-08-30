@@ -108,8 +108,8 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 'Nokia',
                 'Nokia',
                 'Mobile Phone',
-                false,
                 null,
+                'touchscreen',
             ],
             [
                 'Nokia110/2.0 (03.47) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia110) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile',
