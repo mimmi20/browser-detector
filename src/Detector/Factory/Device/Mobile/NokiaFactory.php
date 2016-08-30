@@ -287,6 +287,10 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaX302($useragent);
         }
 
+        if (preg_match('/NokiaX3\-00/i', $useragent)) {
+            return new Nokia\NokiaX300($useragent);
+        }
+
         if (preg_match('/NokiaX3/i', $useragent)) {
             return new Nokia\NokiaX3($useragent);
         }

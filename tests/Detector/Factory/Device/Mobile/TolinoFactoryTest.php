@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\HpFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\TolinoFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class HpFactoryTest extends \PHPUnit_Framework_TestCase
+class TolinoFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -24,7 +24,7 @@ class HpFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = HpFactory::detect($agent);
+        $result = TolinoFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -72,31 +72,11 @@ class HpFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160',
-                'Blazer',
-                'Blazer',
-                'Palm',
-                'Palm',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0',
-                'Touchpad',
-                'Touchpad',
-                'HP',
-                'HP',
-                'Mobile Phone',
-                false,
-                'touchscreen',
-            ],
-            [
-                'Mozilla/5.0 (Linux; webOS/2.2.4; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/1.2',
-                'Pre',
-                'Pre',
-                'Palm',
-                'Palm',
+                'UCWEB/2.0 (MIDP-2.0; U; zh-CN; tolino tab 8.9) U2/1.0.0 UCBrowser/3.4.3.532  U2/1.0.0 Mobile',
+                'Tab 8.9',
+                'Tab 8.9',
+                'Tolino',
+                'Tolino',
                 'Tablet',
                 true,
                 'touchscreen',

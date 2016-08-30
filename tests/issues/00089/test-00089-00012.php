@@ -1330,7 +1330,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '4.0',
-            'Platform_Name'           => 'Android',
+            'Platform_Name'           => 'SailfishOS',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',

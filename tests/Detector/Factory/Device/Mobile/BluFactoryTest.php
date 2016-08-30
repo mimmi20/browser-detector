@@ -91,6 +91,16 @@ class BluFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; BLU; WIN HD W510u) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
+                'Win HD W510u',
+                'Win HD W510u',
+                'BLU',
+                'BLU',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

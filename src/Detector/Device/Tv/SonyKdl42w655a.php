@@ -76,6 +76,6 @@ class SonyKdl42w655a extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\Linux($this->useragent);
+        return new Os\Maemo($this->useragent);
     }
 }

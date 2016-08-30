@@ -323,7 +323,11 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcVision($useragent);
         }
 
-        if (preg_match('/Velocity 4G/i', $useragent)) {
+        if (preg_match('/velocity[ _]4g[ _]x710s/i', $useragent)) {
+            return new Htc\HtcVelocity4GX710s($useragent);
+        }
+
+        if (preg_match('/velocity[ _]4g/i', $useragent)) {
             return new Htc\HtcVelocity4G($useragent);
         }
 

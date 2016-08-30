@@ -121,6 +121,16 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'SonyEricssonWT13i/R3AF010 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1',
+                'WT13i',
+                'WT13i',
+                'SonyEricsson',
+                'SonyEricsson',
+                'Mobile Phone',
+                null,
+                null,
+            ],
         ];
     }
 }

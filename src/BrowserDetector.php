@@ -139,7 +139,18 @@ class BrowserDetector
      */
     private function buildResult(GenericRequest $request)
     {
-        $device = DeviceFactory::detect($request->getDeviceUserAgent());
+        $mozillaToken = 'Mozilla';
+        $deviceUa     = $request->getDeviceUserAgent();
+
+        // if the "Mozilla" token is available more than once, only use the first part of the UA
+        if (1 < substr_count($deviceUa, $mozillaToken)) {
+            $firstPos  = strpos($deviceUa, $mozillaToken);
+            $secondPos = strpos($deviceUa, $mozillaToken, $firstPos + strlen($mozillaToken));
+
+            $deviceUa = substr($deviceUa, 0, $secondPos);
+        }
+
+        $device = DeviceFactory::detect($deviceUa);
 
         if ($device instanceof DeviceHasSpecificPlatformInterface) {
             $platform = $device->detectOs();
@@ -147,8 +158,7 @@ class BrowserDetector
             $platform = null;
         }
 
-        $browserUa    = $request->getBrowserUserAgent();
-        $mozillaToken = 'Mozilla';
+        $browserUa = $request->getBrowserUserAgent();
 
         // if the "Mozilla" token is available more than once, only use the first part of the UA
         if (1 < substr_count($browserUa, $mozillaToken)) {

@@ -159,6 +159,10 @@ class ArchosFactory implements FactoryInterface
             return new Archos\Archos50Platinum($useragent);
         }
 
+        if (preg_match('/50 cesium/i', $useragent)) {
+            return new Archos\Archos50Cesium($useragent);
+        }
+
         if (preg_match('/50c Oxygen/i', $useragent)) {
             return new Archos\Archos50cOxygen($useragent);
         }
@@ -177,6 +181,10 @@ class ArchosFactory implements FactoryInterface
 
         if (preg_match('/FAMILYPAD 2/i', $useragent)) {
             return new Archos\ArchosFamilyPad2($useragent);
+        }
+
+        if (preg_match('/bush windows phone/i', $useragent)) {
+            return new Archos\BushEluma($useragent);
         }
 
         return new Archos\Archos($useragent);
