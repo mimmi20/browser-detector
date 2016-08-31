@@ -111,6 +111,16 @@ class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI Y625-U51 Build/HUAWEIY625-U51) U2/1.0.0 UCBrowser/10.7.0.636 Mobile',
+                'Y625-U51',
+                'Ascend Y625',
+                'Huawei',
+                'Huawei',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

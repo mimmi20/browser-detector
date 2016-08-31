@@ -121,6 +121,16 @@ class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'clickwheel',
             ],
+            [
+                'Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; it) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.668 Mobile Safari/534.8+',
+                'BlackBerry 9800',
+                'Torch',
+                'Research In Motion Limited',
+                'RIM',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

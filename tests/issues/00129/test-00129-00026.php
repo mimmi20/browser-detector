@@ -58,7 +58,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.28',
-            'Platform_Name'           => 'unknown',
+            'Platform_Name'           => 'OS/2',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',

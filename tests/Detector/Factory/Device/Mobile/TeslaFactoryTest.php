@@ -101,6 +101,16 @@ class TeslaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; Tesla_Tablet_L7_3G Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36',
+                'Tablet L7 3G',
+                'Tablet L7 3G',
+                'Tesla',
+                'Tesla',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

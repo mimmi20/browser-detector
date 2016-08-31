@@ -32,12 +32,10 @@
 namespace BrowserDetector\Detector\Factory;
 
 use BrowserDetector\Detector\Device\UnknownDevice;
-use BrowserDetector\Detector\Factory\Device\DesktopFactory;
-use BrowserDetector\Detector\Factory\Device\MobileFactory;
-use BrowserDetector\Detector\Factory\Device\TvFactory;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv as TvHelper;
+use UaHelper\Utils;
 
 /**
  * Device detection class
@@ -60,15 +58,22 @@ class DeviceFactory implements FactoryInterface
     public static function detect($useragent)
     {
         if ((new MobileDevice($useragent))->isMobile()) {
-            return MobileFactory::detect($useragent);
+            return Device\MobileFactory::detect($useragent);
         }
 
         if ((new TvHelper($useragent))->isTvDevice()) {
-            return TvFactory::detect($useragent);
+            return Device\TvFactory::detect($useragent);
+        }
+
+        $utils = new Utils();
+        $utils->setUserAgent($useragent);
+
+        if ($utils->checkIfContains(['darwin', 'cfnetwork'], true)) {
+            return Device\DarwinFactory::detect($useragent);
         }
 
         if ((new Desktop($useragent))->isDesktopDevice()) {
-            return DesktopFactory::detect($useragent);
+            return Device\DesktopFactory::detect($useragent);
         }
 
         return new UnknownDevice($useragent);

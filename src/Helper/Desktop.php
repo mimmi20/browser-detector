@@ -66,6 +66,16 @@ class Desktop
             return true;
         }
 
+        $utils = new Utils();
+        $utils->setUserAgent($this->useragent);
+
+        // ignore mobile safari token if windows nt token is available
+        if ($utils->checkIfContains('windows nt', true)
+            && $utils->checkIfContains(['mobile safari', 'opera mobi'], true)
+        ) {
+            return true;
+        }
+
         $noDesktops = [
             'new-sogou-spider',
             'zollard',
@@ -83,9 +93,6 @@ class Desktop
             'winhttp',
             'jobboerse',
         ];
-
-        $utils = new Utils();
-        $utils->setUserAgent($this->useragent);
 
         if ($utils->checkIfContains($noDesktops, true)) {
             return false;

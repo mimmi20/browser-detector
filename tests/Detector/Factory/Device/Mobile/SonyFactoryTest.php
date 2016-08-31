@@ -131,6 +131,36 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 null,
             ],
+            [
+                'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; D5803 Build/23.4.A.1.232) U2/1.0.0 UCBrowser/10.7.0.636 Mobile',
+                'D5803',
+                'Xperia Z3 Compact',
+                'Sony',
+                'Sony',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'SonyEricssonU10i/R7BA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2',
+                'U10i',
+                'Aino',
+                'SonyEricsson',
+                'SonyEricsson',
+                'Mobile Phone',
+                null,
+                null,
+            ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; ST18i) U2/1.0.0 UCBrowser/9.9.0.543 Mobile',
+                'ST18i',
+                'Urushi',
+                'SonyEricsson',
+                'SonyEricsson',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

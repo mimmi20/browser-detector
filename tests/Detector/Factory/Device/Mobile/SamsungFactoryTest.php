@@ -301,6 +301,26 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-N9005 Build/LRX21V) U2/1.0.0 UCBrowser/10.7.6.805 Mobile',
+                'SM-N9005',
+                'Galaxy Note 3 LTE',
+                'Samsung',
+                'Samsung',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; SGH-T899M) like Gecko',
+                'SGH-T899M',
+                'Ativ S',
+                'Samsung',
+                'Samsung',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

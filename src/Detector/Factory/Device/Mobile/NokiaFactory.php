@@ -63,6 +63,10 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaLumia930Rm1045($useragent);
         }
 
+        if (preg_match('/rm\-1038/i', $useragent)) {
+            return new Nokia\NokiaLumia735Rm1038($useragent);
+        }
+
         if (preg_match('/rm\-976/i', $useragent)) {
             return new Nokia\NokiaLumia630Rm976($useragent);
         }
@@ -73,6 +77,10 @@ class NokiaFactory implements FactoryInterface
 
         if (preg_match('/rm\-914/i', $useragent)) {
             return new Nokia\NokiaLumia520Rm914($useragent);
+        }
+
+        if (preg_match('/rm\-846/i', $useragent)) {
+            return new Nokia\NokiaLumia620Rm846($useragent);
         }
 
         if (preg_match('/Lumia 520/i', $useragent)) {
@@ -137,6 +145,10 @@ class NokiaFactory implements FactoryInterface
 
         if (preg_match('/Lumia 730/i', $useragent)) {
             return new Nokia\NokiaLumia730($useragent);
+        }
+
+        if (preg_match('/Lumia 735/i', $useragent)) {
+            return new Nokia\NokiaLumia735($useragent);
         }
 
         if (preg_match('/Lumia 800/i', $useragent)) {

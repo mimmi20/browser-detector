@@ -63,6 +63,10 @@ class TeslaFactory implements FactoryInterface
             return new Tesla\TeslaTablet785($useragent);
         }
 
+        if (preg_match('/Tablet_L7_3G/', $useragent)) {
+            return new Tesla\TeslaTabletL73g($useragent);
+        }
+
         return new Tesla\Tesla($useragent);
     }
 }

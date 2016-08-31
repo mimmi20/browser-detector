@@ -53,7 +53,7 @@ class AcerLiquidS100 extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Acer S100';
+        $this->deviceName        = 'S100';
         $this->marketingName     = 'Liquid';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Acer')->getName();

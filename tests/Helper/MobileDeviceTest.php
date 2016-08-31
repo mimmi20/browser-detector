@@ -94,6 +94,7 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
             ['Microsoft.Outlook.15'],
             ['Opera/9.80 (Linux armv7l; U; CE-HTML/1.0 NETTV/3.3.0; PHILIPS-AVM-2012; en) Presto/2.9.167 Version/11.50'],
             ['Opera/9.80 (Windows NT 6.0; Opera Mobi/49; U; en) Presto/2.4.18 Version/10.00'],
+            ['Mozilla/5.0 CommonCrawler Node JMTKYOJFXELWII5Y3PCYPFSHC5YSEH2GVKVPJZWELRWLBB5TLCBLJCD6Z5PKEHC.7.P65G6LL4FF3RGPKYDDY5JSH4IN3HKDF26WWPE6GTORAGQDGY.cdn0.common.crawl.zone'],
         ];
     }
 }

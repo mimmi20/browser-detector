@@ -370,7 +370,7 @@ return [
             'Browser_Maker'           => 'Research In Motion Limited',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '6.0',
-            'Platform_Name'           => 'unknown',
+            'Platform_Name'           => 'RIM OS',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',

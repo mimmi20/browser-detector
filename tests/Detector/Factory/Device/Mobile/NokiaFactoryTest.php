@@ -391,6 +391,26 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 null,
             ],
+            [
+                'UCWEB/2.0 (Windows; U; wds 8.10; de-DE; NOKIA; RM-846_eu_euro2_357) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile',
+                'RM-846',
+                'Lumia 620',
+                'Nokia',
+                'Nokia',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'UCWEB/2.0 (Windows; U; wds 8.10; de-DE; NOKIA; RM-1038_1009) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile',
+                'RM-1038',
+                'Lumia 735',
+                'Nokia',
+                'Nokia',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

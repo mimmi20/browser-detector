@@ -76,6 +76,6 @@ class PhilipsTv extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Linux($this->useragent);
+        return null;
     }
 }

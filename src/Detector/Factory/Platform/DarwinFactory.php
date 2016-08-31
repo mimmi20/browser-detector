@@ -54,6 +54,22 @@ class DarwinFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (false !== strpos($useragent, 'CFNetwork/807')) {
+            return new Os\Macosx($useragent, '10.12');
+        }
+
+        if (false !== strpos($useragent, 'CFNetwork/802')) {
+            return new Os\Macosx($useragent, '10.12');
+        }
+
+        if (false !== strpos($useragent, 'CFNetwork/798')) {
+            return new Os\Macosx($useragent, '10.12');
+        }
+
+        if (false !== strpos($useragent, 'CFNetwork/796')) {
+            return new Os\Macosx($useragent, '10.12');
+        }
+
         if (false !== strpos($useragent, 'CFNetwork/760')) {
             return new Os\Macosx($useragent, '10.11');
         }

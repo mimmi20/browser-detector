@@ -76,6 +76,6 @@ class SonyEricssonU10i extends Device implements DeviceHasSpecificPlatformInterf
      */
     public function detectOs()
     {
-        return new Os\Symbianos($this->useragent);
+        return new Os\NokiaOs($this->useragent);
     }
 }

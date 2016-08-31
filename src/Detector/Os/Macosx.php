@@ -34,6 +34,7 @@ namespace BrowserDetector\Detector\Os;
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\VersionInterface;
 
 /**
  * @category  BrowserDetector
@@ -52,13 +53,18 @@ class Macosx extends AbstractOs
     public function __construct($useragent, $version = null)
     {
         $this->useragent    = $useragent;
-        $this->name         = 'Mac OS X';
         $this->manufacturer = CompanyFactory::get('Apple')->getName();
 
         if (null !== $version && is_string($version)) {
             $this->version = VersionFactory::set($version);
         } else {
             $this->version = Version\Macosx::detectVersion($useragent);
+        }
+
+        if ((float) $this->version->getVersion(VersionInterface::MAJORMINOR) >= 1.12) {
+            $this->name = 'macOS';
+        } else {
+            $this->name = 'Mac OS X';
         }
     }
 }

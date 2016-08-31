@@ -154,7 +154,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
-            'Platform_Name'           => 'unknown',
+            'Platform_Name'           => 'Windows',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',

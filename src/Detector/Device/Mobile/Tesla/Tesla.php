@@ -76,6 +76,6 @@ class Tesla extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Linux($this->useragent);
+        return new Os\AndroidOs($this->useragent);
     }
 }

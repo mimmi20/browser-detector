@@ -682,7 +682,7 @@ return [
             'Browser_Maker'           => 'Microsoft Corporation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '11.0',
-            'Platform_Name'           => 'Windows RT',
+            'Platform_Name'           => 'Windows Phone OS',
             'Platform_Version'        => '8',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',

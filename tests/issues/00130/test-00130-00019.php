@@ -778,7 +778,7 @@ return [
             'Browser_Maker'           => 'Seznam.cz, a.s.',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.7',
-            'Platform_Name'           => 'unknown',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',

@@ -195,12 +195,16 @@ class AcerFactory implements FactoryInterface
             return new Acer\AcerDa241hl($useragent);
         }
 
-        if (preg_match('/Allegro/i', $useragent)) {
+        if (preg_match('/allegro/i', $useragent)) {
             return new Acer\AcerAllegro($useragent);
         }
 
         if (preg_match('/TM01/', $useragent)) {
             return new Acer\AcerTm01($useragent);
+        }
+
+        if (preg_match('/M220/', $useragent)) {
+            return new Acer\AcerLiquidM220($useragent);
         }
 
         return new Acer\Acer($useragent);

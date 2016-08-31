@@ -82,6 +82,7 @@ class MobileDevice
             'apple tv',
             'mxl661l32',
             'nettv',
+            'commoncrawler',
         ];
 
         $utils = new Utils();
