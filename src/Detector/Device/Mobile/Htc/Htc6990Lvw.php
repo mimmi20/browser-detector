@@ -29,10 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Htc;
 
-use BrowserDetector\Detector\Device\Mobile\Pantech;
-use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
  * @category  BrowserDetector
@@ -40,33 +43,39 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PantechFactory implements FactoryInterface
+class Htc6990Lvw extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
-     * detects the device name from the given user agent
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($useragent)
+    public function __construct($useragent)
     {
-        if (preg_match('/p9020/i', $useragent)) {
-            return new Pantech\PantechP9020($useragent);
-        }
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'HTC6990LVW';
+        $this->marketingName     = 'Windows Phone 8X 4G (Verizon)';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
+        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 1080;
+        $this->resolutionHeight  = 1920;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
+    }
 
-        if (preg_match('/p2020/i', $useragent)) {
-            return new Pantech\PantechP2020($useragent);
-        }
-
-        if (preg_match('/im\-a830l/i', $useragent)) {
-            return new Pantech\PantechIma830l($useragent);
-        }
-
-        if (preg_match('/pt\-gf200/i', $useragent)) {
-            return new Pantech\PantechPtgf200($useragent);
-        }
-
-        return new Pantech\Pantech($useragent);
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return new Os\WindowsPhoneOs($this->useragent);
     }
 }

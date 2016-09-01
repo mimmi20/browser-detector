@@ -91,6 +91,16 @@ class LgFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 'touchscreen',
             ],
+            [
+                'LG-GS290/V100 Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1',
+                'GS290',
+                'GS290',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                null,
+                null,
+            ],
         ];
     }
 }

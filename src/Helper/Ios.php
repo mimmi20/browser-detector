@@ -84,6 +84,7 @@ class Ios
             'audioboom',
             'stitcher/ios',
             'captivenetwork',
+            'dataaccessd',
         ];
 
         if (!$utils->checkIfContains($os, true)) {

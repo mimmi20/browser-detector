@@ -539,6 +539,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSchI200($useragent);
         }
 
+        if (preg_match('/SCH\-S720C/i', $useragent)) {
+            return new Samsung\SamsungSchs720c($useragent);
+        }
+
         if (preg_match('/SCH\-R720/i', $useragent)) {
             return new Samsung\SamsungSchr720($useragent);
         }

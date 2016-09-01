@@ -499,6 +499,10 @@ class HtcFactory implements FactoryInterface
             return new Htc\Htc7088($useragent);
         }
 
+        if (preg_match('/HTC6990LVW/', $useragent)) {
+            return new Htc\Htc6990Lvw($useragent);
+        }
+
         if (preg_match('/HTC6500LVW/i', $useragent)) {
             return new Htc\Htc6500Lvw($useragent);
         }

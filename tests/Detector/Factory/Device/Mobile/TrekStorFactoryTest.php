@@ -81,6 +81,16 @@ class TrekStorFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; Touch; SurfTab duo W1 10.1; rv:11.0) like Gecko',
+                'SurfTab duo W1 10.1',
+                'SurfTab duo W1 10.1',
+                'TrekStor',
+                'TrekStor',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

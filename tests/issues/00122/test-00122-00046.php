@@ -58,7 +58,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '1.5',
-            'Platform_Name'           => 'unknown',
+            'Platform_Name'           => 'FreeBSD',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',

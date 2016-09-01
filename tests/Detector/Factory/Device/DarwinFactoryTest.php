@@ -111,6 +111,16 @@ class DarwinFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'mouse',
             ],
+            [
+                'MobileSafari/601.1 CFNetwork/757 Darwin/15.0.0',
+                'general Apple Device',
+                'general Apple Device',
+                'Apple Inc',
+                'Apple',
+                'Mobile Device',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

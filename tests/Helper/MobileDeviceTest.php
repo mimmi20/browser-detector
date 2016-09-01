@@ -95,6 +95,9 @@ class MobileDeviceTest extends \PHPUnit_Framework_TestCase
             ['Opera/9.80 (Linux armv7l; U; CE-HTML/1.0 NETTV/3.3.0; PHILIPS-AVM-2012; en) Presto/2.9.167 Version/11.50'],
             ['Opera/9.80 (Windows NT 6.0; Opera Mobi/49; U; en) Presto/2.4.18 Version/10.00'],
             ['Mozilla/5.0 CommonCrawler Node JMTKYOJFXELWII5Y3PCYPFSHC5YSEH2GVKVPJZWELRWLBB5TLCBLJCD6Z5PKEHC.7.P65G6LL4FF3RGPKYDDY5JSH4IN3HKDF26WWPE6GTORAGQDGY.cdn0.common.crawl.zone'],
+            ['Mozilla/5.0 (X11; NetBSD amd64; rv:43.0) Gecko/20100101 Firefox/43.0'],
+            ['Mozilla/5.0 (X11; U; SunOS sun4u; pl-PL; rv:1.8.1.6) Gecko/20071217 Firefox/2.0.0.6'],
+            ['Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.2.13) Gecko/20101203 iPhone'],
         ];
     }
 }

@@ -65,6 +65,7 @@ class Ios
             'iPhone OS',
             'iPhone_OS',
             'IUC\(U\;iOS',
+            'iOS',
         ];
 
         return VersionFactory::detectVersion($useragent, $searches);

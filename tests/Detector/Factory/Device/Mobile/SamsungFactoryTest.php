@@ -321,6 +321,16 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'unused/0 (SCH-S720C GINGERBREAD); gzip',
+                'SCH-S720C',
+                'Galaxy Proclaim',
+                'Samsung',
+                'Samsung',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

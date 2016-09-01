@@ -370,7 +370,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
-            'Platform_Name'           => 'unknown',
+            'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'unknown',

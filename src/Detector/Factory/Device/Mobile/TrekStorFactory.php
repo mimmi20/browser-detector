@@ -51,6 +51,10 @@ class TrekStorFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/SurfTab duo W1 10\.1/', $useragent)) {
+            return new TrekStor\TrekStorSurftabDuoW1101($useragent);
+        }
+
         if (preg_match('/WP 4\.7/', $useragent)) {
             return new TrekStor\TrekStorWp47($useragent);
         }

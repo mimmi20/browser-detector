@@ -34,7 +34,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '39.0',
-            'Platform_Name'           => 'Mac OS X',
+            'Platform_Name'           => 'macOS',
             'Platform_Version'        => '10.12',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

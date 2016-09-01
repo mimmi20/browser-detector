@@ -2,12 +2,12 @@
 
 namespace BrowserDetectorTest\Detector\Factory\Device\Mobile;
 
-use BrowserDetector\Detector\Factory\Device\Mobile\LenovoFactory;
+use BrowserDetector\Detector\Factory\Device\Mobile\PantechFactory;
 
 /**
  * Test class for \BrowserDetector\Detector\Device\Mobile\GeneralMobile
  */
-class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
+class PantechFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerDetect
@@ -24,7 +24,7 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
     public function testDetect($agent, $deviceName, $marketingName, $manufacturer, $brand, $deviceType, $dualOrientation, $pointingMethod)
     {
         /** @var \UaResult\Device\DeviceInterface $result */
-        $result = LenovoFactory::detect($agent);
+        $result = PantechFactory::detect($agent);
 
         self::assertInstanceOf('\UaResult\Device\DeviceInterface', $result);
 
@@ -72,44 +72,14 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_S856) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
-                'S856',
-                'S856',
-                'Lenovo',
-                'Lenovo',
+                'PT-GF200 CLDC/CLDC-1.0 MIDP/MIDP-1.0',
+                'PT-GF200',
+                'PT-GF200',
+                'Pantech',
+                'Pantech',
                 'Mobile Phone',
                 null,
                 null,
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_A319) U2/1.0.0 UCBrowser/9.8.0.534 Mobile',
-                'A319',
-                'RocStar',
-                'Lenovo',
-                'Lenovo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo S856 Build/KVT49L) U2/1.0.0 UCBrowser/10.5.0.668 Mobile',
-                'S856',
-                'S856',
-                'Lenovo',
-                'Lenovo',
-                'Mobile Phone',
-                null,
-                null,
-            ],
-            [
-                'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; Lenovo_A816) U2/1.0.0 UCBrowser/9.7.0.520 Mobile',
-                'A816',
-                'A816',
-                'Lenovo',
-                'Lenovo',
-                'Mobile Phone',
-                true,
-                'touchscreen',
             ],
         ];
     }

@@ -61,7 +61,7 @@ class Macosx extends AbstractOs
             $this->version = Version\Macosx::detectVersion($useragent);
         }
 
-        if ((float) $this->version->getVersion(VersionInterface::MAJORMINOR) >= 1.12) {
+        if (version_compare((float) $this->version->getVersion(VersionInterface::MAJORMINOR), 10.12, '>=')) {
             $this->name = 'macOS';
         } else {
             $this->name = 'Mac OS X';

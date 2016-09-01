@@ -76,6 +76,6 @@ class SamsungSghF480i extends Device implements DeviceHasSpecificPlatformInterfa
      */
     public function detectOs()
     {
-        return new Os\AndroidOs($this->useragent);
+        return new Os\Java($this->useragent);
     }
 }

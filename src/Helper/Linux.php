@@ -116,10 +116,12 @@ class Linux
             'microsoft internet explorer',
             'commoncrawler',
             'freebsd',
+            'netbsd',
             'microsearch',
             'juc(',
             'osf1',
             'solaris',
+            'sunos',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {

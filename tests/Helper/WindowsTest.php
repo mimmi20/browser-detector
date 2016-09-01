@@ -34,6 +34,8 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203'],
             ['NSPlayer/12.00.10011.16384 WMFSDK/12.00.10011.16384'],
             ['Mozilla/5.0 (Windows NT 5.2) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.873.0 Mobile Safari/5342'],
+            ['Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.2.13) Gecko/20101203 iPhone'],
+            ['Opera/9.80 (Windows NT 6.0; Opera Mobi/49; U; en) Presto/2.4.18 Version/10.00'],
         ];
     }
 

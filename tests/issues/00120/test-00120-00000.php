@@ -370,7 +370,7 @@ return [
             'Browser_Maker'           => 'Opera Software ASA',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '12.16',
-            'Platform_Name'           => 'unknown',
+            'Platform_Name'           => 'Android',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',

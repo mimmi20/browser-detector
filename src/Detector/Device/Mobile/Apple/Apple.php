@@ -61,12 +61,12 @@ class Apple extends Device implements DeviceHasSpecificPlatformInterface
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->type              = new UaDeviceType\MobileDevice();
     }
 
     /**

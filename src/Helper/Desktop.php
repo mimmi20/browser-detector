@@ -71,7 +71,7 @@ class Desktop
 
         // ignore mobile safari token if windows nt token is available
         if ($utils->checkIfContains('windows nt', true)
-            && $utils->checkIfContains(['mobile safari', 'opera mobi'], true)
+            && $utils->checkIfContains(['mobile safari', 'opera mobi', 'iphone'], true)
         ) {
             return true;
         }

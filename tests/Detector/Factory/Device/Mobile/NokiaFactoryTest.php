@@ -411,6 +411,16 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'UCWEB/2.0 (Windows; U; wds 8.10; de-DE; Microsoft; RM-1089_1011) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile',
+                'RM-1089',
+                'Lumia 535',
+                'Microsoft Corporation',
+                'Microsoft',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

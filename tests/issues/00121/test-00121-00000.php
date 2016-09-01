@@ -370,7 +370,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '2.30',
-            'Platform_Name'           => 'unknown',
+            'Platform_Name'           => 'FreeBSD',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',

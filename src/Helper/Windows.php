@@ -63,8 +63,10 @@ class Windows
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
-        // catch mobile safari token if windows nt token is available too
-        if ($utils->checkIfContainsAll(['mobile safari', 'windows nt'], true)) {
+        // ignore mobile safari token if windows nt token is available
+        if ($utils->checkIfContains('windows nt', true)
+            && $utils->checkIfContains(['mobile safari', 'opera mobi', 'iphone'], true)
+        ) {
             return true;
         }
 

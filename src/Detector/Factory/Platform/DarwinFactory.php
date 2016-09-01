@@ -70,11 +70,19 @@ class DarwinFactory implements FactoryInterface
             return new Os\Macosx($useragent, '10.12');
         }
 
+        if (false !== strpos($useragent, 'CFNetwork/790')) {
+            return new Os\Ios($useragent, '10.0');
+        }
+
         if (false !== strpos($useragent, 'CFNetwork/760')) {
             return new Os\Macosx($useragent, '10.11');
         }
 
         if (false !== strpos($useragent, 'CFNetwork/758')) {
+            return new Os\Ios($useragent, '9.0');
+        }
+
+        if (false !== strpos($useragent, 'CFNetwork/757')) {
             return new Os\Ios($useragent, '9.0');
         }
 

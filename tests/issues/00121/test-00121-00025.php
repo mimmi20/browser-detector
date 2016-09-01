@@ -106,7 +106,7 @@ return [
             'Browser_Maker'           => 'Google Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '54',
-            'Platform_Name'           => 'Mac OS X',
+            'Platform_Name'           => 'macOS',
             'Platform_Version'        => '10.12',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

@@ -58,7 +58,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '41.0',
-            'Platform_Name'           => 'Linux',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Linux Foundation',

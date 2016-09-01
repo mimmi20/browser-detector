@@ -1587,6 +1587,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\NokiaFactory::detect($useragent);
         }
 
+        if (preg_match('/RM\-\d{3,4}/', $useragent)) {
+            return Mobile\NokiaFactory::detect($useragent);
+        }
+
         if (preg_match('/N\d{4}/', $useragent)) {
             return Mobile\StarFactory::detect($useragent);
         }
@@ -1599,7 +1603,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\PerfeoFactory::detect($useragent);
         }
 
-        if (preg_match('/IM\-A830L/', $useragent)) {
+        if (preg_match('/(IM\-A830L|PT\-GF200)/', $useragent)) {
             return Mobile\PantechFactory::detect($useragent);
         }
 

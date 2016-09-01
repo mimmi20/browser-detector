@@ -271,6 +271,16 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; HTC6990LVW) like Gecko',
+                'HTC6990LVW',
+                'Windows Phone 8X 4G (Verizon)',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

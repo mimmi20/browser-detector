@@ -70,11 +70,19 @@ class DarwinFactory implements FactoryInterface
             return new Desktop\Macintosh($useragent);
         }
 
+        if (false !== strpos($useragent, 'CFNetwork/790')) {
+            return Mobile\AppleFactory::detect($useragent);
+        }
+
         if (false !== strpos($useragent, 'CFNetwork/760')) {
             return new Desktop\Macintosh($useragent);
         }
 
         if (false !== strpos($useragent, 'CFNetwork/758')) {
+            return Mobile\AppleFactory::detect($useragent);
+        }
+
+        if (false !== strpos($useragent, 'CFNetwork/757')) {
             return Mobile\AppleFactory::detect($useragent);
         }
 

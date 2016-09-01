@@ -946,7 +946,7 @@ return [
             'Browser_Maker'           => 'Apple Inc',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '8.0',
-            'Platform_Name'           => 'iOS',
+            'Platform_Name'           => 'Mac OS X',
             'Platform_Version'        => '10.10.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',
