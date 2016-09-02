@@ -60,6 +60,37 @@ class Linux
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
+        $noLinux = [
+            'loewe; sl121',
+            'eeepc',
+            'microsoft office',
+            'microsoft outlook',
+            'infegyatlas',
+            'terra_101',
+            'jobboerse',
+            'msrbot',
+            'cryptoapi',
+            'velocitymicro',
+            'gt-c3312r',
+            'microsoft data access',
+            'microsoft-webdav',
+            'microsoft.outlook',
+            'microsoft url control',
+            'microsoft internet explorer',
+            'commoncrawler',
+            'freebsd',
+            'netbsd',
+            'microsearch',
+            'juc(',
+            'osf1',
+            'solaris',
+            'sunos',
+        ];
+
+        if ($utils->checkIfContains($noLinux, true)) {
+            return false;
+        }
+
         $linux = [
             // linux systems
             'linux',
@@ -94,37 +125,6 @@ class Linux
         ];
 
         if (!$utils->checkIfContains($linux, true)) {
-            return false;
-        }
-
-        $noLinux = [
-            'loewe; sl121',
-            'eeepc',
-            'microsoft office',
-            'microsoft outlook',
-            'infegyatlas',
-            'terra_101',
-            'jobboerse',
-            'msrbot',
-            'cryptoapi',
-            'velocitymicro',
-            'gt-c3312r',
-            'microsoft data access',
-            'microsoft-webdav',
-            'microsoft.outlook',
-            'microsoft url control',
-            'microsoft internet explorer',
-            'commoncrawler',
-            'freebsd',
-            'netbsd',
-            'microsearch',
-            'juc(',
-            'osf1',
-            'solaris',
-            'sunos',
-        ];
-
-        if ($utils->checkIfContains($noLinux, true)) {
             return false;
         }
 

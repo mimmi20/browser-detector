@@ -75,6 +75,10 @@ class Ios
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
+        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+            return true;
+        }
+
         $os = [
             'antenna/',
             'antennapod',

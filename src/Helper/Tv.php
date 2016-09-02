@@ -63,6 +63,34 @@ class Tv
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
+        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+            return false;
+        }
+
+        $noDesktops = [
+            'new-sogou-spider',
+            'zollard',
+            'socialradarbot',
+            'microsoft office protocol discovery',
+            'powermarks',
+            'archivebot',
+            'dino762',
+            'marketwirebot',
+            'microsoft-cryptoapi',
+            'pad-bot',
+            'terra_101',
+            'butterfly',
+            'james bot',
+            'winhttp',
+            'jobboerse',
+            '<',
+            '>',
+        ];
+
+        if ($utils->checkIfContains($noDesktops, true)) {
+            return false;
+        }
+
         $tvDevices = [
             'boxee',
             'ce-html',

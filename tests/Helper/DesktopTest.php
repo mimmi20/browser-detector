@@ -97,6 +97,8 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 CommonCrawler Node BCRJD3NIBD5D7FSESX5FYPD7DASPLXXTNN3HQFQEM6BOOIQPSUOW42ZHQM2YEA7.O.756TNQIGQC6WQCZW43CC253MBXM7UTLFE2BTSQBYM4OZA6UR.cdn0.common.crawl.zone'],
             ['Microsoft.Outlook.15'],
             ['Microsoft Internet Explorer'],
+            ['Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) (Windows NT 6.1; WOW64) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12A405 MicroMessenger/5.4.2 NetType/WIFI'],
+            ['>Forum.WindowsFAQ.ru</a>'],
         ];
     }
 }

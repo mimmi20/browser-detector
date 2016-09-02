@@ -59,6 +59,8 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['amarok/2.8.0 (Phonon/4.8.0; Phonon-VLC/0.8.0) LibVLC/2.2.1'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160'],
             ['DWDS-Crawler +http://odo.dwds.de/dwds-crawler.html'],
+            ['Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) (Windows NT 6.1; WOW64) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12A405 MicroMessenger/5.4.2 NetType/WIFI'],
+            ['>Forum.WindowsFAQ.ru</a>'],
         ];
     }
 

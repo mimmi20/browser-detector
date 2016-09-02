@@ -69,6 +69,10 @@ class Desktop
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
+        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+            return false;
+        }
+
         // ignore mobile safari token if windows nt token is available
         if ($utils->checkIfContains('windows nt', true)
             && $utils->checkIfContains(['mobile safari', 'opera mobi', 'iphone'], true)
@@ -92,6 +96,8 @@ class Desktop
             'james bot',
             'winhttp',
             'jobboerse',
+            '<',
+            '>',
         ];
 
         if ($utils->checkIfContains($noDesktops, true)) {

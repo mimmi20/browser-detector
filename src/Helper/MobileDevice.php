@@ -83,6 +83,8 @@ class MobileDevice
             'mxl661l32',
             'nettv',
             'commoncrawler',
+            '<',
+            '>',
         ];
 
         $utils = new Utils();
@@ -90,6 +92,10 @@ class MobileDevice
 
         if ($utils->checkIfContains($noMobiles, true)) {
             return false;
+        }
+
+        if ($utils->checkIfContainsAll(['windows nt', 'iphone', 'micromessenger'], true)) {
+            return true;
         }
 
         // ignore mobile safari token if windows nt token is available

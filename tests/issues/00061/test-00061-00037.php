@@ -2122,7 +2122,7 @@ return [
             'Browser_Maker'           => 'Mozilla Foundation',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '31.0',
-            'Platform_Name'           => 'Windows',
+            'Platform_Name'           => 'unknown',
             'Platform_Version'        => '7.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Microsoft Corporation',

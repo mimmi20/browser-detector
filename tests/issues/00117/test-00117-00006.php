@@ -706,7 +706,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
-            'Platform_Name'           => 'Darwin',
+            'Platform_Name'           => 'iOS',
             'Platform_Version'        => '16.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Apple Inc',
