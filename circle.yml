@@ -141,3 +141,5 @@ test:
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00126 --colors=auto --verbose
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00127 --colors=auto --verbose
     - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00128 --colors=auto --verbose
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00129 --colors=auto --verbose
+    - vendor/bin/phpunit -c phpunit.compare.xml --no-coverage --group 00130 --colors=auto --verbose
