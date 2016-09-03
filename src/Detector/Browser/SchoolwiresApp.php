@@ -57,6 +57,7 @@ class SchoolwiresApp extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Schoolwires']);
         $this->manufacturer                = CompanyFactory::get('Schoolwires')->getName();
+        $this->brand                       = CompanyFactory::get('Schoolwires')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

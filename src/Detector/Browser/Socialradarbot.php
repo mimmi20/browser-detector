@@ -57,6 +57,7 @@ class Socialradarbot extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Socialradarbot']);
         $this->manufacturer                = CompanyFactory::get('Infegy')->getName();
+        $this->brand                       = CompanyFactory::get('Infegy')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

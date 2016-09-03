@@ -57,6 +57,7 @@ class CrowsnestMobileApp extends AbstractBrowser implements BrowserHasSpecificEn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Crowsnest']);
         $this->manufacturer                = CompanyFactory::get('Gocro')->getName();
+        $this->brand                       = CompanyFactory::get('Gocro')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class DolphinSmalltalkHttpClient extends AbstractBrowser implements BrowserHasSp
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Dolphin http client']);
         $this->manufacturer                = CompanyFactory::get('SteveWaring')->getName();
+        $this->brand                       = CompanyFactory::get('SteveWaring')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

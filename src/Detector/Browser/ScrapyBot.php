@@ -57,6 +57,7 @@ class ScrapyBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Scrapy']);
         $this->manufacturer                = CompanyFactory::get('ScrapyOrg')->getName();
+        $this->brand                       = CompanyFactory::get('ScrapyOrg')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

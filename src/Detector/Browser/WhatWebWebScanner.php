@@ -57,6 +57,7 @@ class WhatWebWebScanner extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WhatWeb']);
         $this->manufacturer                = CompanyFactory::get('AndrewHorton')->getName();
+        $this->brand                       = CompanyFactory::get('AndrewHorton')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

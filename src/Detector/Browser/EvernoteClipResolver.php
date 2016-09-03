@@ -57,6 +57,7 @@ class EvernoteClipResolver extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Evernote Clip Resolver']);
         $this->manufacturer                = CompanyFactory::get('Evernote')->getName();
+        $this->brand                       = CompanyFactory::get('Evernote')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

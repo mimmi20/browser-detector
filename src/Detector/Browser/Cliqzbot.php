@@ -57,6 +57,7 @@ class Cliqzbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Cliqzbot']);
         $this->manufacturer                = CompanyFactory::get('Tenbetterpages')->getName();
+        $this->brand                       = CompanyFactory::get('Tenbetterpages')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

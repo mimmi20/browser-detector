@@ -57,6 +57,7 @@ class GidBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['GIDBot']);
         $this->manufacturer                = CompanyFactory::get('JdeSilva')->getName();
+        $this->brand                       = CompanyFactory::get('JdeSilva')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

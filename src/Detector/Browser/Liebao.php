@@ -57,6 +57,7 @@ class Liebao extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['LBBROWSER']);
         $this->manufacturer                = CompanyFactory::get('Kingsoft')->getName();
+        $this->brand                       = CompanyFactory::get('Kingsoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

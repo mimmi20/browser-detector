@@ -57,6 +57,7 @@ class IstellaBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['IstellaBot']);
         $this->manufacturer                = CompanyFactory::get('Tiscali')->getName();
+        $this->brand                       = CompanyFactory::get('Tiscali')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

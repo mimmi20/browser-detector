@@ -57,6 +57,7 @@ class ModelsBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['QtCarBrowser']);
         $this->manufacturer                = CompanyFactory::get('TeslaMotors')->getName();
+        $this->brand                       = CompanyFactory::get('TeslaMotors')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class JobBoerseBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['findlinks']);
         $this->manufacturer                = CompanyFactory::get('Jobboerse')->getName();
+        $this->brand                       = CompanyFactory::get('Jobboerse')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

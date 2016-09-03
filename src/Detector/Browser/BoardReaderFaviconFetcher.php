@@ -57,6 +57,7 @@ class BoardReaderFaviconFetcher extends AbstractBrowser implements BrowserHasSpe
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['BoardReader Favicon Fetcher', 'BoardReader Favicon Fetcher ']);
         $this->manufacturer                = CompanyFactory::get('BoardReader')->getName();
+        $this->brand                       = CompanyFactory::get('BoardReader')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

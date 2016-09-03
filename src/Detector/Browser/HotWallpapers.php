@@ -57,6 +57,7 @@ class HotWallpapers extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Hot Wallpapers']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
+        $this->brand                       = CompanyFactory::get('Unknown')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

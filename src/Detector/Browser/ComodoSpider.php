@@ -57,6 +57,7 @@ class ComodoSpider extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Comodo Spider']);
         $this->manufacturer                = CompanyFactory::get('Comodo')->getName();
+        $this->brand                       = CompanyFactory::get('Comodo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

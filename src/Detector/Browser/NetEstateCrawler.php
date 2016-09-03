@@ -57,6 +57,7 @@ class NetEstateCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['netEstate NE Crawler']);
         $this->manufacturer                = CompanyFactory::get('NetEstate')->getName();
+        $this->brand                       = CompanyFactory::get('NetEstate')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class SecondLiveCommerceClient extends AbstractBrowser implements BrowserHasSpec
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SL Commerce Client v', 'SL Commerce Client']);
         $this->manufacturer                = CompanyFactory::get('LindenLabs')->getName();
+        $this->brand                       = CompanyFactory::get('LindenLabs')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

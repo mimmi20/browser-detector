@@ -57,6 +57,7 @@ class AbontiBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Abonti']);
         $this->manufacturer                = CompanyFactory::get('Abonti')->getName();
+        $this->brand                       = CompanyFactory::get('Abonti')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

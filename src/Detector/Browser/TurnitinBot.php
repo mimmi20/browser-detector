@@ -57,6 +57,7 @@ class TurnitinBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['TurnitinBot']);
         $this->manufacturer                = CompanyFactory::get('Iparadigms')->getName();
+        $this->brand                       = CompanyFactory::get('Iparadigms')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

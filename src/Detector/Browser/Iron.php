@@ -57,6 +57,7 @@ class Iron extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Iron', 'Chrome']);
         $this->manufacturer                = CompanyFactory::get('Srware')->getName();
+        $this->brand                       = CompanyFactory::get('Srware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

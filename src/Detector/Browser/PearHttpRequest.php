@@ -57,6 +57,7 @@ class PearHttpRequest extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['HTTP_Request']);
         $this->manufacturer                = CompanyFactory::get('PhpGroup')->getName();
+        $this->brand                       = CompanyFactory::get('PhpGroup')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

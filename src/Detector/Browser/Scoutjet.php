@@ -57,6 +57,7 @@ class Scoutjet extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Scoutjet']);
         $this->manufacturer                = CompanyFactory::get('BlekkoCom')->getName();
+        $this->brand                       = CompanyFactory::get('BlekkoCom')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class SeoEngineWorldBot extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SEOENGWorldBot']);
         $this->manufacturer                = CompanyFactory::get('SeoEngine')->getName();
+        $this->brand                       = CompanyFactory::get('SeoEngine')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

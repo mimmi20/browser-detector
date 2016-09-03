@@ -57,6 +57,7 @@ class MetaGeneratorCrawler extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MetaGeneratorCrawler']);
         $this->manufacturer                = CompanyFactory::get('JanBogutzki')->getName();
+        $this->brand                       = CompanyFactory::get('JanBogutzki')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

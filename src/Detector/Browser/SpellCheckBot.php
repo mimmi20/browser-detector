@@ -57,6 +57,7 @@ class SpellCheckBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SpellCheck Bot']);
         $this->manufacturer                = CompanyFactory::get('Showword')->getName();
+        $this->brand                       = CompanyFactory::get('Showword')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

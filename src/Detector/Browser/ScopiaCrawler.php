@@ -57,6 +57,7 @@ class ScopiaCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Scopia Crawler']);
         $this->manufacturer                = CompanyFactory::get('Pagedesign')->getName();
+        $this->brand                       = CompanyFactory::get('Pagedesign')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

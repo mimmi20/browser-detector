@@ -57,6 +57,7 @@ class OpenWebSpider extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['OpenWebSpider']);
         $this->manufacturer                = CompanyFactory::get('StefanoAlimonti')->getName();
+        $this->brand                       = CompanyFactory::get('StefanoAlimonti')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

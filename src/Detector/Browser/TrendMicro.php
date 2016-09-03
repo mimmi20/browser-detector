@@ -57,6 +57,7 @@ class TrendMicro extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['TrendMicro']);
         $this->manufacturer                = CompanyFactory::get('TrendMicro')->getName();
+        $this->brand                       = CompanyFactory::get('TrendMicro')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

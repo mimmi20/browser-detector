@@ -57,6 +57,7 @@ class Safari extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = Version\Safari::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Apple')->getName();
+        $this->brand                       = CompanyFactory::get('Apple')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
         $this->canSkipAlignedLinkRow       = true;

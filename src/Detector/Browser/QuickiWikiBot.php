@@ -57,6 +57,7 @@ class QuickiWikiBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['QuickiWiki']);
         $this->manufacturer                = CompanyFactory::get('QuickiWiki')->getName();
+        $this->brand                       = CompanyFactory::get('QuickiWiki')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

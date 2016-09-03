@@ -57,6 +57,7 @@ class Dreamweaver extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Dreamweaver']);
         $this->manufacturer                = CompanyFactory::get('Adobe')->getName();
+        $this->brand                       = CompanyFactory::get('Adobe')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

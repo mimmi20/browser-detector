@@ -57,6 +57,7 @@ class AntBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($this->useragent, ['AntBot']);
         $this->manufacturer                = CompanyFactory::get('AntCom')->getName();
+        $this->brand                       = CompanyFactory::get('AntCom')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

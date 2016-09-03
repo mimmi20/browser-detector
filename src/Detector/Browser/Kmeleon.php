@@ -57,6 +57,7 @@ class Kmeleon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['K\-Meleon']);
         $this->manufacturer                = CompanyFactory::get('KmeleonBrowserOrg')->getName();
+        $this->brand                       = CompanyFactory::get('KmeleonBrowserOrg')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

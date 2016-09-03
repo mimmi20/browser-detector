@@ -57,6 +57,7 @@ class AcoonBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AcoonBot']);
         $this->manufacturer                = CompanyFactory::get('MichaelSchoebel')->getName();
+        $this->brand                       = CompanyFactory::get('MichaelSchoebel')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

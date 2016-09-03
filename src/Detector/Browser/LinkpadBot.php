@@ -57,6 +57,7 @@ class LinkpadBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['LinkpadBot']);
         $this->manufacturer                = CompanyFactory::get('LinkPad')->getName();
+        $this->brand                       = CompanyFactory::get('LinkPad')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

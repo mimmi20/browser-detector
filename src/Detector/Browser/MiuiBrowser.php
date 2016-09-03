@@ -57,6 +57,7 @@ class MiuiBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MiuiBrowser']);
         $this->manufacturer                = CompanyFactory::get('XiaomiTech')->getName();
+        $this->brand                       = CompanyFactory::get('XiaomiTech')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

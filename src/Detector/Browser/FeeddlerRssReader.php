@@ -57,6 +57,7 @@ class FeeddlerRssReader extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['FeeddlerRSS']);
         $this->manufacturer                = CompanyFactory::get('CheBinLiu')->getName();
+        $this->brand                       = CompanyFactory::get('CheBinLiu')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

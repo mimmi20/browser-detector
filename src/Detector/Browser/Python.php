@@ -57,6 +57,7 @@ class Python extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Python', 'python\-requests']);
         $this->manufacturer                = CompanyFactory::get('PythonSoftwareFoundation')->getName();
+        $this->brand                       = CompanyFactory::get('PythonSoftwareFoundation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

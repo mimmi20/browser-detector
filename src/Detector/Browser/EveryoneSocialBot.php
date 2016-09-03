@@ -57,6 +57,7 @@ class EveryoneSocialBot extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['EveryoneSocialBot']);
         $this->manufacturer                = CompanyFactory::get('EveryoneSocial')->getName();
+        $this->brand                       = CompanyFactory::get('EveryoneSocial')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

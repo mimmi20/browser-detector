@@ -57,6 +57,7 @@ class Cyberduck extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Cyberduck']);
         $this->manufacturer                = CompanyFactory::get('Iterate')->getName();
+        $this->brand                       = CompanyFactory::get('Iterate')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

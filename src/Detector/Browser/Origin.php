@@ -57,6 +57,7 @@ class Origin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Origin']);
         $this->manufacturer                = CompanyFactory::get('ElectronicArts')->getName();
+        $this->brand                       = CompanyFactory::get('ElectronicArts')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

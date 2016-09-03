@@ -57,6 +57,7 @@ class Sistrix extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Sistrix')->getName();
+        $this->brand                       = CompanyFactory::get('Sistrix')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class RmSnapKit extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['RMSnapKit']);
         $this->manufacturer                = CompanyFactory::get('Realmacsoftware')->getName();
+        $this->brand                       = CompanyFactory::get('Realmacsoftware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

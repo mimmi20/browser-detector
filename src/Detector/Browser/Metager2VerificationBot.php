@@ -57,6 +57,7 @@ class Metager2VerificationBot extends AbstractBrowser implements BrowserHasSpeci
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('SumaEv')->getName();
+        $this->brand                       = CompanyFactory::get('SumaEv')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

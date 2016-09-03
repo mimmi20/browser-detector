@@ -57,6 +57,7 @@ class Luakit extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WebKitGTK\+']);
         $this->manufacturer                = CompanyFactory::get('MasonLarobina')->getName();
+        $this->brand                       = CompanyFactory::get('MasonLarobina')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

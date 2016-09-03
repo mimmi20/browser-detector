@@ -57,6 +57,7 @@ class AskPeterBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AskPeterBot']);
         $this->manufacturer                = CompanyFactory::get('AskPeter')->getName();
+        $this->brand                       = CompanyFactory::get('AskPeter')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

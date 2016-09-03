@@ -57,6 +57,7 @@ class SsearchCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['sSearch Crawler']);
         $this->manufacturer                = CompanyFactory::get('Semantissimo')->getName();
+        $this->brand                       = CompanyFactory::get('Semantissimo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

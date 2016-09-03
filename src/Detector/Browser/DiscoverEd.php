@@ -57,6 +57,7 @@ class DiscoverEd extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['DiscoverEd\/Nutch\-', 'DiscoverEd']);
         $this->manufacturer                = CompanyFactory::get('CreativeCommons')->getName();
+        $this->brand                       = CompanyFactory::get('CreativeCommons')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

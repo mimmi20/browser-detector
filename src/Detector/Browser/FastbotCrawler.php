@@ -57,6 +57,7 @@ class FastbotCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['fastbot crawler beta', 'fastbot crawler']);
         $this->manufacturer                = CompanyFactory::get('Pagedesign')->getName();
+        $this->brand                       = CompanyFactory::get('Pagedesign')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class MemoryBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['memorybot']);
         $this->manufacturer                = CompanyFactory::get('InternetMemoryFoundation')->getName();
+        $this->brand                       = CompanyFactory::get('InternetMemoryFoundation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

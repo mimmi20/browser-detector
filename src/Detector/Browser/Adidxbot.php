@@ -57,6 +57,7 @@ class Adidxbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['adidxbot']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
+        $this->brand                       = CompanyFactory::get('Microsoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

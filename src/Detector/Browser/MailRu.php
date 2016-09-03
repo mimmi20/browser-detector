@@ -57,6 +57,7 @@ class MailRu extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Mail\.RU_Bot\/Fast', 'Mail\.RU_Bot', 'Mail\.RU']);
         $this->manufacturer                = CompanyFactory::get('MailRu')->getName();
+        $this->brand                       = CompanyFactory::get('MailRu')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -57,6 +57,7 @@ class DawinciAntiplagSpider extends AbstractBrowser implements BrowserHasSpecifi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['DAWINCI ANTIPLAG SPIDER']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
+        $this->brand                       = CompanyFactory::get('Unknown')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Polaris extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Polaris']);
         $this->manufacturer                = CompanyFactory::get('Infraware')->getName();
+        $this->brand                       = CompanyFactory::get('Infraware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

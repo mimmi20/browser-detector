@@ -57,6 +57,7 @@ class LinkedInBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['com\.linkedin']);
         $this->manufacturer                = CompanyFactory::get('LinkedIn')->getName();
+        $this->brand                       = CompanyFactory::get('LinkedIn')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Photon extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Photon']);
         $this->manufacturer                = CompanyFactory::get('PhotonProject')->getName();
+        $this->brand                       = CompanyFactory::get('PhotonProject')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

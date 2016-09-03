@@ -57,6 +57,7 @@ class SpeedBrowser360 extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['QIHU 360EE']);
         $this->manufacturer                = CompanyFactory::get('Qihoo')->getName();
+        $this->brand                       = CompanyFactory::get('Qihoo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

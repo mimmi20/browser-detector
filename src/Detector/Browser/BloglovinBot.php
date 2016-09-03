@@ -57,6 +57,7 @@ class BloglovinBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Bloglovin']);
         $this->manufacturer                = CompanyFactory::get('Bloglovin')->getName();
+        $this->brand                       = CompanyFactory::get('Bloglovin')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

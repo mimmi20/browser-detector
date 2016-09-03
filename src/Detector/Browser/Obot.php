@@ -57,6 +57,7 @@ class Obot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['oBot']);
         $this->manufacturer                = CompanyFactory::get('Ibm')->getName();
+        $this->brand                       = CompanyFactory::get('Ibm')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

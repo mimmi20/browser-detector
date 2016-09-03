@@ -57,6 +57,7 @@ class PinterestApp extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Pinterest']);
         $this->manufacturer                = CompanyFactory::get('EricssonResearch')->getName();
+        $this->brand                       = CompanyFactory::get('EricssonResearch')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

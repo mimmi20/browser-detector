@@ -57,6 +57,7 @@ class Prince extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Prince']);
         $this->manufacturer                = CompanyFactory::get('YesLogic')->getName();
+        $this->brand                       = CompanyFactory::get('YesLogic')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

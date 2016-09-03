@@ -57,6 +57,7 @@ class ForumPoster extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Forum Poster V', 'Forum Poster']);
         $this->manufacturer                = CompanyFactory::get('ForumPoster')->getName();
+        $this->brand                       = CompanyFactory::get('ForumPoster')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

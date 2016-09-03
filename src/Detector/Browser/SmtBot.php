@@ -57,6 +57,7 @@ class SmtBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SMTBot']);
         $this->manufacturer                = CompanyFactory::get('SimilarTech')->getName();
+        $this->brand                       = CompanyFactory::get('SimilarTech')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class CocCocBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['coccoc']);
         $this->manufacturer                = CompanyFactory::get('CocCocCompany')->getName();
+        $this->brand                       = CompanyFactory::get('CocCocCompany')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -57,6 +57,7 @@ class Spinn3rRssAggregator extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Spinn3r']);
         $this->manufacturer                = CompanyFactory::get('Tailrank')->getName();
+        $this->brand                       = CompanyFactory::get('Tailrank')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

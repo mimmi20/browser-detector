@@ -57,6 +57,7 @@ class CrazyBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Crazy Browser']);
         $this->manufacturer                = CompanyFactory::get('CrazyBrowser')->getName();
+        $this->brand                       = CompanyFactory::get('CrazyBrowser')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

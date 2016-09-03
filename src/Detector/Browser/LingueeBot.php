@@ -57,6 +57,7 @@ class LingueeBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Linguee Bot']);
         $this->manufacturer                = CompanyFactory::get('Linguee')->getName();
+        $this->brand                       = CompanyFactory::get('Linguee')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

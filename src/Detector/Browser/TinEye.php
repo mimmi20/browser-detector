@@ -57,6 +57,7 @@ class TinEye extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['TinEye']);
         $this->manufacturer                = CompanyFactory::get('TinEye')->getName();
+        $this->brand                       = CompanyFactory::get('TinEye')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

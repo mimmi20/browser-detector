@@ -57,6 +57,7 @@ class PhantomBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Phantom', 'Phantom\/V']);
         $this->manufacturer                = CompanyFactory::get('Lg')->getName();
+        $this->brand                       = CompanyFactory::get('Lg')->getBrandName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

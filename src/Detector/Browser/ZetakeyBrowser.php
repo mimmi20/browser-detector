@@ -57,6 +57,7 @@ class ZetakeyBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Zetakey']);
         $this->manufacturer                = CompanyFactory::get('ZetakeySolutions')->getName();
+        $this->brand                       = CompanyFactory::get('ZetakeySolutions')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

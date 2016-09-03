@@ -57,6 +57,7 @@ class Redbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['RED']);
         $this->manufacturer                = CompanyFactory::get('Redbot')->getName();
+        $this->brand                       = CompanyFactory::get('Redbot')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

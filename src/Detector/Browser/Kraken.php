@@ -57,6 +57,7 @@ class Kraken extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Kraken']);
         $this->manufacturer                = CompanyFactory::get('Linkfluence')->getName();
+        $this->brand                       = CompanyFactory::get('Linkfluence')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

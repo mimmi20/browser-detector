@@ -57,6 +57,7 @@ class Picsearchbot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Picsearchbot', 'psbot']);
         $this->manufacturer                = CompanyFactory::get('Picsearch')->getName();
+        $this->brand                       = CompanyFactory::get('Picsearch')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

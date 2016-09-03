@@ -57,6 +57,7 @@ class CmBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('CheetahMobile')->getName();
+        $this->brand                       = CompanyFactory::get('CheetahMobile')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

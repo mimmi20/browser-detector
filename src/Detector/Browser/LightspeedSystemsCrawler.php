@@ -57,6 +57,7 @@ class LightspeedSystemsCrawler extends AbstractBrowser implements BrowserHasSpec
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('LightspeedSystems')->getName();
+        $this->brand                       = CompanyFactory::get('LightspeedSystems')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

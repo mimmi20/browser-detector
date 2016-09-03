@@ -57,6 +57,7 @@ class Nec extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Nec')->getName();
+        $this->brand                       = CompanyFactory::get('Nec')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

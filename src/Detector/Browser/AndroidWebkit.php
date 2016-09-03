@@ -57,6 +57,7 @@ class AndroidWebkit extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = Version\AndroidWebkit::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
+        $this->brand                       = CompanyFactory::get('Google')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

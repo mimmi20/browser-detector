@@ -57,6 +57,7 @@ class InagistUrlResolver extends AbstractBrowser implements BrowserHasSpecificEn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['InAGist URL Resolver']);
         $this->manufacturer                = CompanyFactory::get('IyottaSoftware')->getName();
+        $this->brand                       = CompanyFactory::get('IyottaSoftware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

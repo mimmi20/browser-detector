@@ -57,6 +57,7 @@ class UnwindFetchor extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['UnwindFetchor']);
         $this->manufacturer                = CompanyFactory::get('Gnip')->getName();
+        $this->brand                       = CompanyFactory::get('Gnip')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

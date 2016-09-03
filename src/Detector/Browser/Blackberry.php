@@ -57,6 +57,7 @@ class Blackberry extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, [            'BlackBerry[0-9a-z]+',            'BlackBerrySimulator',            'Version',        ]);
         $this->manufacturer                = CompanyFactory::get('Rim')->getName();
+        $this->brand                       = CompanyFactory::get('Rim')->getBrandName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

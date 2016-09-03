@@ -57,6 +57,7 @@ class NokiaBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['BrowserNG', 'NokiaBrowser']);
         $this->manufacturer                = CompanyFactory::get('Nokia')->getName();
+        $this->brand                       = CompanyFactory::get('Nokia')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

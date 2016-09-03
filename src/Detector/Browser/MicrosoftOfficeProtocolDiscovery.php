@@ -57,6 +57,7 @@ class MicrosoftOfficeProtocolDiscovery extends AbstractBrowser implements Browse
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Microsoft Office Protocol Discovery']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
+        $this->brand                       = CompanyFactory::get('Microsoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

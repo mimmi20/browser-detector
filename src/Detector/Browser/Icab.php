@@ -57,6 +57,7 @@ class Icab extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['iCabMobile', 'iCab']);
         $this->manufacturer                = CompanyFactory::get('AlexanderClauss')->getName();
+        $this->brand                       = CompanyFactory::get('AlexanderClauss')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

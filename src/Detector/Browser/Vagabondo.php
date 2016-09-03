@@ -57,6 +57,7 @@ class Vagabondo extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Vagabondo']);
         $this->manufacturer                = CompanyFactory::get('WiseGuysNl')->getName();
+        $this->brand                       = CompanyFactory::get('WiseGuysNl')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

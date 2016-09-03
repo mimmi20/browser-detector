@@ -57,6 +57,7 @@ class MicrosoftMobileExplorer extends AbstractBrowser implements BrowserHasSpeci
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['IEMobile', 'MSIE', 'rv\:']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
+        $this->brand                       = CompanyFactory::get('Microsoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
         $this->canSkipAlignedLinkRow       = true;

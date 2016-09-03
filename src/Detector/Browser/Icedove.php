@@ -57,6 +57,7 @@ class Icedove extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Icedove']);
         $this->manufacturer                = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
+        $this->brand                       = CompanyFactory::get('SoftwareInThePublicInterest')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -57,6 +57,7 @@ class Browser2345 extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Mb2345Browser']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
+        $this->brand                       = CompanyFactory::get('Unknown')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

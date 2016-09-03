@@ -57,6 +57,7 @@ class ChlooeBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['bot\-pge\.chlooe\.com']);
         $this->manufacturer                = CompanyFactory::get('AsiaWsNetwork')->getName();
+        $this->brand                       = CompanyFactory::get('AsiaWsNetwork')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

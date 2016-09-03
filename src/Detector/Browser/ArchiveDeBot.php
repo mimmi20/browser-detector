@@ -57,6 +57,7 @@ class ArchiveDeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['archive\-de\.com']);
         $this->manufacturer                = CompanyFactory::get('InternetArchiveDe')->getName();
+        $this->brand                       = CompanyFactory::get('InternetArchiveDe')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

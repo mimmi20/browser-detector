@@ -57,6 +57,7 @@ class GoogleHttpClientLibraryForJava extends AbstractBrowser implements BrowserH
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Google\-HTTP\-Java\-Client']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
+        $this->brand                       = CompanyFactory::get('Google')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

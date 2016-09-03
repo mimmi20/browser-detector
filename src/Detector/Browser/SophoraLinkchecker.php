@@ -57,6 +57,7 @@ class SophoraLinkchecker extends AbstractBrowser implements BrowserHasSpecificEn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Sophora Linkchecker']);
         $this->manufacturer                = CompanyFactory::get('Subshell')->getName();
+        $this->brand                       = CompanyFactory::get('Subshell')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

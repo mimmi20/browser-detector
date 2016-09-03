@@ -57,6 +57,7 @@ class Wepbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Wepbot']);
         $this->manufacturer                = CompanyFactory::get('Apache')->getName();
+        $this->brand                       = CompanyFactory::get('Apache')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

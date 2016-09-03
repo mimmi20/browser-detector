@@ -57,6 +57,7 @@ class W3m extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['w3m']);
         $this->manufacturer                = CompanyFactory::get('SakamotoHironori')->getName();
+        $this->brand                       = CompanyFactory::get('SakamotoHironori')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

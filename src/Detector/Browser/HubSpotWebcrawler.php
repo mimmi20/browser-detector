@@ -57,6 +57,7 @@ class HubSpotWebcrawler extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['HubSpot Webcrawler']);
         $this->manufacturer                = CompanyFactory::get('HubSpotInc')->getName();
+        $this->brand                       = CompanyFactory::get('HubSpotInc')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

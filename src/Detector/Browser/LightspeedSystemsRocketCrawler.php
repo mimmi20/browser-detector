@@ -57,6 +57,7 @@ class LightspeedSystemsRocketCrawler extends AbstractBrowser implements BrowserH
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['LSSRocketCrawler']);
         $this->manufacturer                = CompanyFactory::get('LightspeedSystems')->getName();
+        $this->brand                       = CompanyFactory::get('LightspeedSystems')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

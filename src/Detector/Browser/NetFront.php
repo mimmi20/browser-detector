@@ -57,6 +57,7 @@ class NetFront extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['NetFront', 'NF', 'NetFrontLifeBrowser', 'NF3']);
         $this->manufacturer                = CompanyFactory::get('Access')->getName();
+        $this->brand                       = CompanyFactory::get('Access')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

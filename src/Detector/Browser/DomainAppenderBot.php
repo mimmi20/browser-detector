@@ -57,6 +57,7 @@ class DomainAppenderBot extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['DomainAppender \/', 'DomainAppender']);
         $this->manufacturer                = CompanyFactory::get('ProfoundNetworks')->getName();
+        $this->brand                       = CompanyFactory::get('ProfoundNetworks')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

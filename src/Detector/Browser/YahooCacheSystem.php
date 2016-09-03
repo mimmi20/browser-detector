@@ -57,6 +57,7 @@ class YahooCacheSystem extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['YahooCacheSystem']);
         $this->manufacturer                = CompanyFactory::get('Yahoo')->getName();
+        $this->brand                       = CompanyFactory::get('Yahoo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

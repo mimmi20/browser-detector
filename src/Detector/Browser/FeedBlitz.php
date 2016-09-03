@@ -57,6 +57,7 @@ class FeedBlitz extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['FeedBlitz']);
         $this->manufacturer                = CompanyFactory::get('FeedBlitz')->getName();
+        $this->brand                       = CompanyFactory::get('FeedBlitz')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

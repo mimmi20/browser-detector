@@ -57,6 +57,7 @@ class QupZilla extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['QupZilla']);
         $this->manufacturer                = CompanyFactory::get('DavidRosca')->getName();
+        $this->brand                       = CompanyFactory::get('DavidRosca')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

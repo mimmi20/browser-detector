@@ -57,6 +57,7 @@ class MetaInspector extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MetaInspector']);
         $this->manufacturer                = CompanyFactory::get('JaimeIniesta')->getName();
+        $this->brand                       = CompanyFactory::get('JaimeIniesta')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

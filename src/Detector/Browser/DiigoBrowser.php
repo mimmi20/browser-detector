@@ -57,6 +57,7 @@ class DiigoBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Version', 'DiigoBrowser']);
         $this->manufacturer                = CompanyFactory::get('Diigo')->getName();
+        $this->brand                       = CompanyFactory::get('Diigo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

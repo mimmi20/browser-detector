@@ -57,6 +57,7 @@ class W3cValidatorNuLv extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('W3c')->getName();
+        $this->brand                       = CompanyFactory::get('W3c')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

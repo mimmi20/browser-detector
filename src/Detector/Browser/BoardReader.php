@@ -57,6 +57,7 @@ class BoardReader extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['BoardReader']);
         $this->manufacturer                = CompanyFactory::get('BoardReader')->getName();
+        $this->brand                       = CompanyFactory::get('BoardReader')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

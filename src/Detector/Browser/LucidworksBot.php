@@ -57,6 +57,7 @@ class LucidworksBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['LucidWorks']);
         $this->manufacturer                = CompanyFactory::get('Lucidworks')->getName();
+        $this->brand                       = CompanyFactory::get('Lucidworks')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

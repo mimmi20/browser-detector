@@ -57,6 +57,7 @@ class Php extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PHP', 'PHP\-SOAP']);
         $this->manufacturer                = CompanyFactory::get('PhpGroup')->getName();
+        $this->brand                       = CompanyFactory::get('PhpGroup')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

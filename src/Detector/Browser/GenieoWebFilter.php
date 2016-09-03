@@ -57,6 +57,7 @@ class GenieoWebFilter extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Genieo']);
         $this->manufacturer                = CompanyFactory::get('Genieo')->getName();
+        $this->brand                       = CompanyFactory::get('Genieo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class TumblrApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Tumblr']);
         $this->manufacturer                = CompanyFactory::get('Tumblr')->getName();
+        $this->brand                       = CompanyFactory::get('Tumblr')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

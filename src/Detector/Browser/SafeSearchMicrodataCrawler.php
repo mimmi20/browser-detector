@@ -57,6 +57,7 @@ class SafeSearchMicrodataCrawler extends AbstractBrowser implements BrowserHasSp
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('AviraOperations')->getName();
+        $this->brand                       = CompanyFactory::get('AviraOperations')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Rss2Html extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['FeedForAll rss2html\.php v']);
         $this->manufacturer                = CompanyFactory::get('NotePage')->getName();
+        $this->brand                       = CompanyFactory::get('NotePage')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

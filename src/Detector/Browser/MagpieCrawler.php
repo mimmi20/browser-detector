@@ -57,6 +57,7 @@ class MagpieCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['magpie\-crawler']);
         $this->manufacturer                = CompanyFactory::get('Brandwatch')->getName();
+        $this->brand                       = CompanyFactory::get('Brandwatch')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

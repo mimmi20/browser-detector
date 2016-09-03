@@ -57,6 +57,7 @@ class GosquaredThumbnailer extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['gosquared\-thumbnailer']);
         $this->manufacturer                = CompanyFactory::get('GoSquared')->getName();
+        $this->brand                       = CompanyFactory::get('GoSquared')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

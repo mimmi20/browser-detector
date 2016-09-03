@@ -57,6 +57,7 @@ class OwaspSecretBrowser extends AbstractBrowser implements BrowserHasSpecificEn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['OWASP\_SECRET\_BROWSER']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
+        $this->brand                       = CompanyFactory::get('Unknown')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

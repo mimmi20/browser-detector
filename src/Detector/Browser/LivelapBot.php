@@ -57,6 +57,7 @@ class LivelapBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['LivelapBot']);
         $this->manufacturer                = CompanyFactory::get('Paypal')->getName();
+        $this->brand                       = CompanyFactory::get('Paypal')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class ShowyouBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ShowyouBot']);
         $this->manufacturer                = CompanyFactory::get('Remixation')->getName();
+        $this->brand                       = CompanyFactory::get('Remixation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

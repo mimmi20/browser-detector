@@ -57,6 +57,7 @@ class LipperheySeoService extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Lipperhey SEO Service']);
         $this->manufacturer                = CompanyFactory::get('Lipperhey')->getName();
+        $this->brand                       = CompanyFactory::get('Lipperhey')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class LinkCheckerBot extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Link\-Checker']);
         $this->manufacturer                = CompanyFactory::get('PwInternetSolutions')->getName();
+        $this->brand                       = CompanyFactory::get('PwInternetSolutions')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

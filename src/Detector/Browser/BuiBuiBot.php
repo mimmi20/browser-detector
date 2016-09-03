@@ -57,6 +57,7 @@ class BuiBuiBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['BuiBui\-Bot']);
         $this->manufacturer                = CompanyFactory::get('Dadapro')->getName();
+        $this->brand                       = CompanyFactory::get('Dadapro')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

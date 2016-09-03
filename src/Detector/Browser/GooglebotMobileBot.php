@@ -57,6 +57,7 @@ class GooglebotMobileBot extends AbstractBrowser implements BrowserHasSpecificEn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Googlebot\-Mobile']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
+        $this->brand                       = CompanyFactory::get('Google')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

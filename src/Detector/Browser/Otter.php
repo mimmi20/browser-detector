@@ -57,6 +57,7 @@ class Otter extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Otter']);
         $this->manufacturer                = CompanyFactory::get('OtterBrowserOrg')->getName();
+        $this->brand                       = CompanyFactory::get('OtterBrowserOrg')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

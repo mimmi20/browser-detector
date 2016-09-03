@@ -57,6 +57,7 @@ class MicrosoftFrontPage extends AbstractBrowser implements BrowserHasSpecificEn
         $this->modus                       = null;
         $this->version                     = Version\MicrosoftFrontPage::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
+        $this->brand                       = CompanyFactory::get('Microsoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

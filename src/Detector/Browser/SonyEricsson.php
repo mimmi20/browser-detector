@@ -57,6 +57,7 @@ class SonyEricsson extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SEMC\-Browser']);
         $this->manufacturer                = CompanyFactory::get('SonyEricsson')->getName();
+        $this->brand                       = CompanyFactory::get('SonyEricsson')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

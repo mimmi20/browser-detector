@@ -57,6 +57,7 @@ class AolBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AOLbot']);
         $this->manufacturer                = CompanyFactory::get('AolSoft')->getName();
+        $this->brand                       = CompanyFactory::get('AolSoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

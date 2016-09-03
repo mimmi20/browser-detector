@@ -57,6 +57,7 @@ class Lynx extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Lynx']);
         $this->manufacturer                = CompanyFactory::get('ThomasDickey')->getName();
+        $this->brand                       = CompanyFactory::get('ThomasDickey')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

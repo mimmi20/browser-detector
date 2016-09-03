@@ -57,6 +57,7 @@ class Silk extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Silk']);
         $this->manufacturer                = CompanyFactory::get('Amazon')->getName();
+        $this->brand                       = CompanyFactory::get('Amazon')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

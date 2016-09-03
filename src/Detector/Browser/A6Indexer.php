@@ -57,6 +57,7 @@ class A6Indexer extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['A6\-Indexer']);
         $this->manufacturer                = CompanyFactory::get('A6Corp')->getName();
+        $this->brand                       = CompanyFactory::get('A6Corp')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

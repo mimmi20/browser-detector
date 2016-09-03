@@ -57,6 +57,7 @@ class WebmasterworldServerHeaderChecker extends AbstractBrowser implements Brows
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WebmasterworldServerHeaderChecker']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
+        $this->brand                       = CompanyFactory::get('Unknown')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

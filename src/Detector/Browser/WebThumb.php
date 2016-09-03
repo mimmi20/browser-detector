@@ -57,6 +57,7 @@ class WebThumb extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WebThumb']);
         $this->manufacturer                = CompanyFactory::get('Boutell')->getName();
+        $this->brand                       = CompanyFactory::get('Boutell')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

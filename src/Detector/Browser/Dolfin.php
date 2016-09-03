@@ -57,6 +57,7 @@ class Dolfin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Dolphin HD', 'Dolphin\/INT\-', 'Dolphin\/INT', 'Dolfin', 'Dolphin']);
         $this->manufacturer                = CompanyFactory::get('MopoTab')->getName();
+        $this->brand                       = CompanyFactory::get('MopoTab')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

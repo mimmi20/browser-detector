@@ -57,6 +57,7 @@ class YahooMobileApp extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['YHOO\_Search\_App']);
         $this->manufacturer                = CompanyFactory::get('Yahoo')->getName();
+        $this->brand                       = CompanyFactory::get('Yahoo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

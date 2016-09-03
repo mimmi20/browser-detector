@@ -57,6 +57,7 @@ class VkShare extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['vkShare']);
         $this->manufacturer                = CompanyFactory::get('Vk')->getName();
+        $this->brand                       = CompanyFactory::get('Vk')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class AnotherWebMiningTool extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($this->useragent, ['Another Web Mining Tool']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
+        $this->brand                       = CompanyFactory::get('Unknown')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

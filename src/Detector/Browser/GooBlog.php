@@ -57,6 +57,7 @@ class GooBlog extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['gooblog']);
         $this->manufacturer                = CompanyFactory::get('NttResonant')->getName();
+        $this->brand                       = CompanyFactory::get('NttResonant')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

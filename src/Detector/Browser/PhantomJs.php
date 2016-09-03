@@ -57,6 +57,7 @@ class PhantomJs extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PhantomJS']);
         $this->manufacturer                = CompanyFactory::get('PhantomJs')->getName();
+        $this->brand                       = CompanyFactory::get('PhantomJs')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

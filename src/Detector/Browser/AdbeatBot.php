@@ -57,6 +57,7 @@ class AdbeatBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['adbeat\.com']);
         $this->manufacturer                = CompanyFactory::get('Adbeat')->getName();
+        $this->brand                       = CompanyFactory::get('Adbeat')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class UmBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['uMBot\-LN']);
         $this->manufacturer                = CompanyFactory::get('UbermetricsTechnologies')->getName();
+        $this->brand                       = CompanyFactory::get('UbermetricsTechnologies')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

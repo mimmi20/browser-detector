@@ -57,6 +57,7 @@ class ProxyGearPro extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Proxy Gear Pro']);
         $this->manufacturer                = CompanyFactory::get('ProxyBase')->getName();
+        $this->brand                       = CompanyFactory::get('ProxyBase')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class ApplePubSub extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Apple\-PubSub']);
         $this->manufacturer                = CompanyFactory::get('Apple')->getName();
+        $this->brand                       = CompanyFactory::get('Apple')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

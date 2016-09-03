@@ -57,6 +57,7 @@ class FhscanCore extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['FHScan Core']);
         $this->manufacturer                = CompanyFactory::get('Tarasco')->getName();
+        $this->brand                       = CompanyFactory::get('Tarasco')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

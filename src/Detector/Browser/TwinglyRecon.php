@@ -57,6 +57,7 @@ class TwinglyRecon extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Twingly Recon']);
         $this->manufacturer                = CompanyFactory::get('Twingly')->getName();
+        $this->brand                       = CompanyFactory::get('Twingly')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

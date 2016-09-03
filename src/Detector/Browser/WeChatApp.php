@@ -57,6 +57,7 @@ class WeChatApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MicroMessenger']);
         $this->manufacturer                = CompanyFactory::get('Tencent')->getName();
+        $this->brand                       = CompanyFactory::get('Tencent')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

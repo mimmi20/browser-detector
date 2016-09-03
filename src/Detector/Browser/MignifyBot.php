@@ -57,6 +57,7 @@ class MignifyBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['imrbot']);
         $this->manufacturer                = CompanyFactory::get('InternetMemoryResearch')->getName();
+        $this->brand                       = CompanyFactory::get('InternetMemoryResearch')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

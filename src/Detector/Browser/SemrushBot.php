@@ -57,6 +57,7 @@ class SemrushBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SemrushBot']);
         $this->manufacturer                = CompanyFactory::get('Semrush')->getName();
+        $this->brand                       = CompanyFactory::get('Semrush')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class JakartaCommonsHttpClient extends AbstractBrowser implements BrowserHasSpec
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Jakarta Commons\-HttpClient']);
         $this->manufacturer                = CompanyFactory::get('Apache')->getName();
+        $this->brand                       = CompanyFactory::get('Apache')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Bwc extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['BWC']);
         $this->manufacturer                = CompanyFactory::get('Bynergy')->getName();
+        $this->brand                       = CompanyFactory::get('Bynergy')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

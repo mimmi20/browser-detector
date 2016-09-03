@@ -57,6 +57,7 @@ class Slackbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Slackbot']);
         $this->manufacturer                = CompanyFactory::get('Slack')->getName();
+        $this->brand                       = CompanyFactory::get('Slack')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

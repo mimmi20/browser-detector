@@ -57,6 +57,7 @@ class MobileSafariUiWebView extends AbstractBrowser implements BrowserHasSpecifi
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Apple')->getName();
+        $this->brand                       = CompanyFactory::get('Apple')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
         $this->canSkipAlignedLinkRow       = true;

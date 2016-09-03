@@ -57,6 +57,7 @@ class CookieReportsBot extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['CookieReports\.com']);
         $this->manufacturer                = CompanyFactory::get('CookieReportsLimited')->getName();
+        $this->brand                       = CompanyFactory::get('CookieReportsLimited')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Sleipnir extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Version', 'Sleipnir']);
         $this->manufacturer                = CompanyFactory::get('Fenrir')->getName();
+        $this->brand                       = CompanyFactory::get('Fenrir')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

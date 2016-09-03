@@ -57,6 +57,7 @@ class IcjobsCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['iCjobs']);
         $this->manufacturer                = CompanyFactory::get('Icjobs')->getName();
+        $this->brand                       = CompanyFactory::get('Icjobs')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

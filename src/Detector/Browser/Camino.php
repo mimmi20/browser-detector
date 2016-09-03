@@ -57,6 +57,7 @@ class Camino extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Camino']);
         $this->manufacturer                = CompanyFactory::get('MozillaFoundation')->getName();
+        $this->brand                       = CompanyFactory::get('MozillaFoundation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

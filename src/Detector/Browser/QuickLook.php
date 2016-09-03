@@ -57,6 +57,7 @@ class QuickLook extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['QuickLook']);
         $this->manufacturer                = CompanyFactory::get('Apple')->getName();
+        $this->brand                       = CompanyFactory::get('Apple')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -57,6 +57,7 @@ class XmlSitemapsGenerator extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['XML\-Sitemaps']);
         $this->manufacturer                = CompanyFactory::get('XmlSitemaps')->getName();
+        $this->brand                       = CompanyFactory::get('XmlSitemaps')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class IisBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['iisbot']);
         $this->manufacturer                = CompanyFactory::get('IisNet')->getName();
+        $this->brand                       = CompanyFactory::get('IisNet')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

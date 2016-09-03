@@ -57,6 +57,7 @@ class SreleaseBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['sReleaseBot']);
         $this->manufacturer                = CompanyFactory::get('Srelease')->getName();
+        $this->brand                       = CompanyFactory::get('Srelease')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class OperaCoast extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['OperaCoast', 'Opera%20Coast', 'Coast']);
         $this->manufacturer                = CompanyFactory::get('Opera')->getName();
+        $this->brand                       = CompanyFactory::get('Opera')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

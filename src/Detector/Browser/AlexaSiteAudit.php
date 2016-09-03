@@ -57,6 +57,7 @@ class AlexaSiteAudit extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['alexa site audit']);
         $this->manufacturer                = CompanyFactory::get('AlexaInternet')->getName();
+        $this->brand                       = CompanyFactory::get('AlexaInternet')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

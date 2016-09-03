@@ -57,6 +57,7 @@ class CoreClassHttpClientCached extends AbstractBrowser implements BrowserHasSpe
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Core_Class_HttpClient_Cached']);
         $this->manufacturer                = CompanyFactory::get('Unister')->getName();
+        $this->brand                       = CompanyFactory::get('Unister')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

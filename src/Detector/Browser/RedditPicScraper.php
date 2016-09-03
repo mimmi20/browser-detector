@@ -57,6 +57,7 @@ class RedditPicScraper extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['reddit pic scraper']);
         $this->manufacturer                = CompanyFactory::get('Reddit')->getName();
+        $this->brand                       = CompanyFactory::get('Reddit')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

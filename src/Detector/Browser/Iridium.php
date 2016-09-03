@@ -57,6 +57,7 @@ class Iridium extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Iridium']);
         $this->manufacturer                = CompanyFactory::get('IridiumBrowserTeam')->getName();
+        $this->brand                       = CompanyFactory::get('IridiumBrowserTeam')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

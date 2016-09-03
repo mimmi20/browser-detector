@@ -57,6 +57,7 @@ class VisionUtils extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['visionutils']);
         $this->manufacturer                = CompanyFactory::get('BobMottram')->getName();
+        $this->brand                       = CompanyFactory::get('BobMottram')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

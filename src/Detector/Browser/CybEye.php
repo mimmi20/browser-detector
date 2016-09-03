@@ -57,6 +57,7 @@ class CybEye extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['CybEye\.com']);
         $this->manufacturer                = CompanyFactory::get('CybEye')->getName();
+        $this->brand                       = CompanyFactory::get('CybEye')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
         $this->canSkipAlignedLinkRow       = true;

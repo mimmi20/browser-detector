@@ -57,6 +57,7 @@ class CocCocBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['coc_coc_browser']);
         $this->manufacturer                = CompanyFactory::get('CocCocCompany')->getName();
+        $this->brand                       = CompanyFactory::get('CocCocCompany')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

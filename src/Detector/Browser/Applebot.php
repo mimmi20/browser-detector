@@ -57,6 +57,7 @@ class Applebot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Applebot']);
         $this->manufacturer                = CompanyFactory::get('Apple')->getName();
+        $this->brand                       = CompanyFactory::get('Apple')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

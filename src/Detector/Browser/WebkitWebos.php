@@ -57,6 +57,7 @@ class WebkitWebos extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Version', 'webOS', 'webOSBrowser']);
         $this->manufacturer                = CompanyFactory::get('Hp')->getName();
+        $this->brand                       = CompanyFactory::get('Hp')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

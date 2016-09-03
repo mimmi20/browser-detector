@@ -57,6 +57,7 @@ class WebGlance extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Webglance']);
         $this->manufacturer                = CompanyFactory::get('Webglance')->getName();
+        $this->brand                       = CompanyFactory::get('Webglance')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

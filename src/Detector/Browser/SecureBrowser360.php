@@ -57,6 +57,7 @@ class SecureBrowser360 extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['QIHU 360SE']);
         $this->manufacturer                = CompanyFactory::get('Qihoo')->getName();
+        $this->brand                       = CompanyFactory::get('Qihoo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

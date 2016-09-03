@@ -57,6 +57,7 @@ class WordPressApp extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['wp\-iphone', 'wp\-android']);
         $this->manufacturer                = CompanyFactory::get('WordPress')->getName();
+        $this->brand                       = CompanyFactory::get('WordPress')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

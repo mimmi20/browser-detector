@@ -57,6 +57,7 @@ class Unisterbot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Unisterbot']);
         $this->manufacturer                = CompanyFactory::get('Unister')->getName();
+        $this->brand                       = CompanyFactory::get('Unister')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

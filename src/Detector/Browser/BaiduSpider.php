@@ -57,6 +57,7 @@ class BaiduSpider extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['baiduspider', 'Baiduspider']);
         $this->manufacturer                = CompanyFactory::get('Baidu')->getName();
+        $this->brand                       = CompanyFactory::get('Baidu')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

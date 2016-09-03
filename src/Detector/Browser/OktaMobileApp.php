@@ -57,6 +57,7 @@ class OktaMobileApp extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['OktaMobile']);
         $this->manufacturer                = CompanyFactory::get('Okta')->getName();
+        $this->brand                       = CompanyFactory::get('Okta')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

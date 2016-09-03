@@ -57,6 +57,7 @@ class Kontact extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['kontact']);
         $this->manufacturer                = CompanyFactory::get('Kde')->getName();
+        $this->brand                       = CompanyFactory::get('Kde')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

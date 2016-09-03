@@ -57,6 +57,7 @@ class WhiteHatAviator extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Aviator']);
         $this->manufacturer                = CompanyFactory::get('WhiteHat')->getName();
+        $this->brand                       = CompanyFactory::get('WhiteHat')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

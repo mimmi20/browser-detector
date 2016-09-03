@@ -57,6 +57,7 @@ class SoundCloudApp extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SoundCloud']);
         $this->manufacturer                = CompanyFactory::get('SoundCloud')->getName();
+        $this->brand                       = CompanyFactory::get('SoundCloud')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

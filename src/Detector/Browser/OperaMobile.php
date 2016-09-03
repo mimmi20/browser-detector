@@ -57,6 +57,7 @@ class OperaMobile extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Version', 'OPR', 'Opera ', 'Opera Mobi', 'Opera']);
         $this->manufacturer                = CompanyFactory::get('Opera')->getName();
+        $this->brand                       = CompanyFactory::get('Opera')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

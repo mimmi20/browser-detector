@@ -57,6 +57,7 @@ class Installatron extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Version', 'Installatron']);
         $this->manufacturer                = CompanyFactory::get('Installatron')->getName();
+        $this->brand                       = CompanyFactory::get('Installatron')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

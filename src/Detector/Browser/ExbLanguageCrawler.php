@@ -57,6 +57,7 @@ class ExbLanguageCrawler extends AbstractBrowser implements BrowserHasSpecificEn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ExB Language Crawler']);
         $this->manufacturer                = CompanyFactory::get('Exb')->getName();
+        $this->brand                       = CompanyFactory::get('Exb')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

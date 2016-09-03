@@ -57,6 +57,7 @@ class SiteExplorer extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SiteExplorer']);
         $this->manufacturer                = CompanyFactory::get('SiteExplorer')->getName();
+        $this->brand                       = CompanyFactory::get('SiteExplorer')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

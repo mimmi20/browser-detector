@@ -57,6 +57,7 @@ class SmartViera extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Viera', 'SMART\-TV']);
         $this->manufacturer                = CompanyFactory::get('Panasonic')->getName();
+        $this->brand                       = CompanyFactory::get('Panasonic')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

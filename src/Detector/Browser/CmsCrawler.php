@@ -57,6 +57,7 @@ class CmsCrawler extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['CMS Crawler']);
         $this->manufacturer                = CompanyFactory::get('Viderem')->getName();
+        $this->brand                       = CompanyFactory::get('Viderem')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

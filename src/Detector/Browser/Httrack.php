@@ -57,6 +57,7 @@ class Httrack extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['HTTrack']);
         $this->manufacturer                = CompanyFactory::get('XavierRoche')->getName();
+        $this->brand                       = CompanyFactory::get('XavierRoche')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Daumoa extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Daumoa']);
         $this->manufacturer                = CompanyFactory::get('DaumCorporation')->getName();
+        $this->brand                       = CompanyFactory::get('DaumCorporation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

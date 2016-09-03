@@ -57,6 +57,7 @@ class GlBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['GLBot']);
         $this->manufacturer                = CompanyFactory::get('GalaxyDownloads')->getName();
+        $this->brand                       = CompanyFactory::get('GalaxyDownloads')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

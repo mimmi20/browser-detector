@@ -57,6 +57,7 @@ class GarlikCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['GarlikCrawler']);
         $this->manufacturer                = CompanyFactory::get('Experian')->getName();
+        $this->brand                       = CompanyFactory::get('Experian')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

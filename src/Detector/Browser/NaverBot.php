@@ -57,6 +57,7 @@ class NaverBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Naver', 'Yeti']);
         $this->manufacturer                = CompanyFactory::get('NhnCorporation')->getName();
+        $this->brand                       = CompanyFactory::get('NhnCorporation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

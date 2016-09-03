@@ -57,6 +57,7 @@ class ApusBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['APUSBrowser']);
         $this->manufacturer                = CompanyFactory::get('ApusGroup')->getName();
+        $this->brand                       = CompanyFactory::get('ApusGroup')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

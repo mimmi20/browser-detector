@@ -57,6 +57,7 @@ class SpiderPig extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Tinfoilsecurity')->getName();
+        $this->brand                       = CompanyFactory::get('Tinfoilsecurity')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

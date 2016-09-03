@@ -57,6 +57,7 @@ class EspialTvBrowser extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Espial']);
         $this->manufacturer                = CompanyFactory::get('EspialGroup')->getName();
+        $this->brand                       = CompanyFactory::get('EspialGroup')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

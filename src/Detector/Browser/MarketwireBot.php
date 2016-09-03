@@ -57,6 +57,7 @@ class MarketwireBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MarketwireBot']);
         $this->manufacturer                = CompanyFactory::get('Marketwire')->getName();
+        $this->brand                       = CompanyFactory::get('Marketwire')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

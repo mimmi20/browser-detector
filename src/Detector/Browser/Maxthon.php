@@ -57,6 +57,7 @@ class Maxthon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = Version\Maxthon::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Maxthon')->getName();
+        $this->brand                       = CompanyFactory::get('Maxthon')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

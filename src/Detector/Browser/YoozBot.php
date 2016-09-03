@@ -57,6 +57,7 @@ class YoozBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['yoozBot\-']);
         $this->manufacturer                = CompanyFactory::get('Yooz')->getName();
+        $this->brand                       = CompanyFactory::get('Yooz')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

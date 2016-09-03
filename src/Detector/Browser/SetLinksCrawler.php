@@ -57,6 +57,7 @@ class SetLinksCrawler extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SetLinks bot']);
         $this->manufacturer                = CompanyFactory::get('SetLinks')->getName();
+        $this->brand                       = CompanyFactory::get('SetLinks')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

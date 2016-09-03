@@ -57,6 +57,7 @@ class AdobeAIR extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AdobeAIR']);
         $this->manufacturer                = CompanyFactory::get('Adobe')->getName();
+        $this->brand                       = CompanyFactory::get('Adobe')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

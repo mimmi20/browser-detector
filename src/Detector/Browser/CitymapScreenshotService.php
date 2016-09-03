@@ -57,6 +57,7 @@ class CitymapScreenshotService extends AbstractBrowser implements BrowserHasSpec
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['city\-map screenshot service']);
         $this->manufacturer                = CompanyFactory::get('CitymapInternetmarketing')->getName();
+        $this->brand                       = CompanyFactory::get('CitymapInternetmarketing')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

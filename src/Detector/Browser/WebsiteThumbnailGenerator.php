@@ -57,6 +57,7 @@ class WebsiteThumbnailGenerator extends AbstractBrowser implements BrowserHasSpe
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WebThumbnail']);
         $this->manufacturer                = CompanyFactory::get('Webthumbnail')->getName();
+        $this->brand                       = CompanyFactory::get('Webthumbnail')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

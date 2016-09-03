@@ -57,6 +57,7 @@ class ElmediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ElmediaPlayer']);
         $this->manufacturer                = CompanyFactory::get('EltimaSoftware')->getName();
+        $this->brand                       = CompanyFactory::get('EltimaSoftware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

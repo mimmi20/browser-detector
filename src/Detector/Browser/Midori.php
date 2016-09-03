@@ -57,6 +57,7 @@ class Midori extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Midori', 'Midori\-']);
         $this->manufacturer                = CompanyFactory::get('ChristianDywan')->getName();
+        $this->brand                       = CompanyFactory::get('ChristianDywan')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

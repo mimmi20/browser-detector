@@ -57,6 +57,7 @@ class Zookabot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Zookabot']);
         $this->manufacturer                = CompanyFactory::get('Zookabot')->getName();
+        $this->brand                       = CompanyFactory::get('Zookabot')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

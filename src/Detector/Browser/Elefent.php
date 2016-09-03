@@ -57,6 +57,7 @@ class Elefent extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Elefent']);
         $this->manufacturer                = CompanyFactory::get('Elefent')->getName();
+        $this->brand                       = CompanyFactory::get('Elefent')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

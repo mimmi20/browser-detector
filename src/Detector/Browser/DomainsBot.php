@@ -57,6 +57,7 @@ class DomainsBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['domainsbot']);
         $this->manufacturer                = CompanyFactory::get('DomainsBot')->getName();
+        $this->brand                       = CompanyFactory::get('DomainsBot')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

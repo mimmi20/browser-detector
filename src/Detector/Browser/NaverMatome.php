@@ -57,6 +57,7 @@ class NaverMatome extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['NaverMatome\-Android']);
         $this->manufacturer                = CompanyFactory::get('NhnCorporation')->getName();
+        $this->brand                       = CompanyFactory::get('NhnCorporation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Genderanalyzer extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Genderanalyzer']);
         $this->manufacturer                = CompanyFactory::get('GenderAnalyzer')->getName();
+        $this->brand                       = CompanyFactory::get('GenderAnalyzer')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

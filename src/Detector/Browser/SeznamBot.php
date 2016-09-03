@@ -57,6 +57,7 @@ class SeznamBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SeznamBot']);
         $this->manufacturer                = CompanyFactory::get('Seznam')->getName();
+        $this->brand                       = CompanyFactory::get('Seznam')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

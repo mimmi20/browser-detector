@@ -57,6 +57,7 @@ class Squzer extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Squzer']);
         $this->manufacturer                = CompanyFactory::get('Declum')->getName();
+        $this->brand                       = CompanyFactory::get('Declum')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

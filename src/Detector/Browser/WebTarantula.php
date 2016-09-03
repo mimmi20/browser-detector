@@ -57,6 +57,7 @@ class WebTarantula extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WebTarantula\.com Crawler']);
         $this->manufacturer                = CompanyFactory::get('Webtarantula')->getName();
+        $this->brand                       = CompanyFactory::get('Webtarantula')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

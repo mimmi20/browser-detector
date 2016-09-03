@@ -57,6 +57,7 @@ class Charlotte extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Charlotte']);
         $this->manufacturer                = CompanyFactory::get('Searchme')->getName();
+        $this->brand                       = CompanyFactory::get('Searchme')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Netscape extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Netscape', 'Netscape6', 'rv\:', 'Mozilla']);
         $this->manufacturer                = CompanyFactory::get('Netscape')->getName();
+        $this->brand                       = CompanyFactory::get('Netscape')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

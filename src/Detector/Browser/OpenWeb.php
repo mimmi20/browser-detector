@@ -57,6 +57,7 @@ class OpenWeb extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['OpenWeb']);
         $this->manufacturer                = CompanyFactory::get('OpenWave')->getName();
+        $this->brand                       = CompanyFactory::get('OpenWave')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

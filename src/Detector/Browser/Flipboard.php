@@ -57,6 +57,7 @@ class Flipboard extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Flipboard']);
         $this->manufacturer                = CompanyFactory::get('Flipboard')->getName();
+        $this->brand                       = CompanyFactory::get('Flipboard')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

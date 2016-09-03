@@ -57,6 +57,7 @@ class Mercury extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Mercury3', 'Mercury', 'Mercury3Free']);
         $this->manufacturer                = CompanyFactory::get('IlegendSoft')->getName();
+        $this->brand                       = CompanyFactory::get('IlegendSoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

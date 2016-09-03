@@ -57,6 +57,7 @@ class DiscoveryBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['discoverybot']);
         $this->manufacturer                = CompanyFactory::get('DiscoveryEngine')->getName();
+        $this->brand                       = CompanyFactory::get('DiscoveryEngine')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

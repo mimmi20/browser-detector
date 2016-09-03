@@ -57,6 +57,7 @@ class Crawler extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Crawler']);
         $this->manufacturer                = CompanyFactory::get('Linkfluence')->getName();
+        $this->brand                       = CompanyFactory::get('Linkfluence')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

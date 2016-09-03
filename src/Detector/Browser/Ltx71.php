@@ -57,6 +57,7 @@ class Ltx71 extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ltx71']);
         $this->manufacturer                = CompanyFactory::get('Ltx71')->getName();
+        $this->brand                       = CompanyFactory::get('Ltx71')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

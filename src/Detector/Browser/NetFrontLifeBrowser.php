@@ -57,6 +57,7 @@ class NetFrontLifeBrowser extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['NetFrontLifeBrowser']);
         $this->manufacturer                = CompanyFactory::get('Access')->getName();
+        $this->brand                       = CompanyFactory::get('Access')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

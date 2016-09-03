@@ -57,6 +57,7 @@ class PageFreezer extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PageFreezer']);
         $this->manufacturer                = CompanyFactory::get('PageFreezerSoftware')->getName();
+        $this->brand                       = CompanyFactory::get('PageFreezerSoftware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

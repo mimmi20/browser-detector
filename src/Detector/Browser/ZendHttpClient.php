@@ -57,6 +57,7 @@ class ZendHttpClient extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Zend_Http_Client']);
         $this->manufacturer                = CompanyFactory::get('Zend')->getName();
+        $this->brand                       = CompanyFactory::get('Zend')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

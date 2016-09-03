@@ -57,6 +57,7 @@ class TinEyeBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['TinEye\-bot']);
         $this->manufacturer                = CompanyFactory::get('Idee')->getName();
+        $this->brand                       = CompanyFactory::get('Idee')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

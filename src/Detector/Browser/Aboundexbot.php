@@ -57,6 +57,7 @@ class Aboundexbot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Aboundex']);
         $this->manufacturer                = CompanyFactory::get('Aboundex')->getName();
+        $this->brand                       = CompanyFactory::get('Aboundex')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

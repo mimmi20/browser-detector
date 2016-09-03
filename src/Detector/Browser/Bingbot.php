@@ -57,6 +57,7 @@ class Bingbot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['bingbot', 'Bing', 'Bing for iPad', 'msnbot']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
+        $this->brand                       = CompanyFactory::get('Microsoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

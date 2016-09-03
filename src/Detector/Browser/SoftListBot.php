@@ -57,6 +57,7 @@ class SoftListBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SoftListBot']);
         $this->manufacturer                = CompanyFactory::get('SoftList')->getName();
+        $this->brand                       = CompanyFactory::get('SoftList')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

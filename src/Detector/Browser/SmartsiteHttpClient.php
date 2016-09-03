@@ -57,6 +57,7 @@ class SmartsiteHttpClient extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Smartsite HTTPClient']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
+        $this->brand                       = CompanyFactory::get('Unknown')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

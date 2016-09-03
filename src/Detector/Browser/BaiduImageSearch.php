@@ -57,6 +57,7 @@ class BaiduImageSearch extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Baiduspider-image']);
         $this->manufacturer                = CompanyFactory::get('Baidu')->getName();
+        $this->brand                       = CompanyFactory::get('Baidu')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

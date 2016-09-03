@@ -57,6 +57,7 @@ class SamsungMobileBrowser extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Samsung')->getName();
+        $this->brand                       = CompanyFactory::get('Samsung')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

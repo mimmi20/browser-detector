@@ -57,6 +57,7 @@ class Sindice extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['sindice\-fetcher']);
         $this->manufacturer                = CompanyFactory::get('Sindice')->getName();
+        $this->brand                       = CompanyFactory::get('Sindice')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

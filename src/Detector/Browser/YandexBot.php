@@ -57,6 +57,7 @@ class YandexBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['YandexBot']);
         $this->manufacturer                = CompanyFactory::get('Yandex')->getName();
+        $this->brand                       = CompanyFactory::get('Yandex')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

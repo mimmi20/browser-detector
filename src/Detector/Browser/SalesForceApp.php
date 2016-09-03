@@ -57,6 +57,7 @@ class SalesForceApp extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Salesforce1']);
         $this->manufacturer                = CompanyFactory::get('Salesforce')->getName();
+        $this->brand                       = CompanyFactory::get('Salesforce')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

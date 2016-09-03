@@ -57,6 +57,7 @@ class EventMachineHttpClient extends AbstractBrowser implements BrowserHasSpecif
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['EventMachine HttpClient']);
         $this->manufacturer                = CompanyFactory::get('IlyaGrigorik')->getName();
+        $this->brand                       = CompanyFactory::get('IlyaGrigorik')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

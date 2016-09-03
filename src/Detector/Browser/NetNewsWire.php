@@ -57,6 +57,7 @@ class NetNewsWire extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['NetNewsWire']);
         $this->manufacturer                = CompanyFactory::get('BlackPixel')->getName();
+        $this->brand                       = CompanyFactory::get('BlackPixel')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

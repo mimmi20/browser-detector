@@ -57,6 +57,7 @@ class IframelyBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Iframely']);
         $this->manufacturer                = CompanyFactory::get('Itteco')->getName();
+        $this->brand                       = CompanyFactory::get('Itteco')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

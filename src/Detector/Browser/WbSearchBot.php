@@ -57,6 +57,7 @@ class WbSearchBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WBSearchBot', 'WbSrch']);
         $this->manufacturer                = CompanyFactory::get('Warebay')->getName();
+        $this->brand                       = CompanyFactory::get('Warebay')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

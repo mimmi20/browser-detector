@@ -57,6 +57,7 @@ class SnkScreenshotBot extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SNK Screenshot Bot']);
         $this->manufacturer                = CompanyFactory::get('Savenkeep')->getName();
+        $this->brand                       = CompanyFactory::get('Savenkeep')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

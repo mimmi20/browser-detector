@@ -57,6 +57,7 @@ class EasouSpider extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['EasouSpider']);
         $this->manufacturer                = CompanyFactory::get('Easou')->getName();
+        $this->brand                       = CompanyFactory::get('Easou')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

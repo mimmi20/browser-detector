@@ -57,6 +57,7 @@ class HgghPhantomjsScreenshoter extends AbstractBrowser implements BrowserHasSpe
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['HggH PhantomJS Screenshoter']);
         $this->manufacturer                = CompanyFactory::get('JonasGenannt')->getName();
+        $this->brand                       = CompanyFactory::get('JonasGenannt')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

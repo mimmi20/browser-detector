@@ -57,6 +57,7 @@ class RebelMouse extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['RebelMouse']);
         $this->manufacturer                = CompanyFactory::get('RebelMouse')->getName();
+        $this->brand                       = CompanyFactory::get('RebelMouse')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

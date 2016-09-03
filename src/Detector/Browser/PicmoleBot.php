@@ -57,6 +57,7 @@ class PicmoleBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['picmole']);
         $this->manufacturer                = CompanyFactory::get('Picmole')->getName();
+        $this->brand                       = CompanyFactory::get('Picmole')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

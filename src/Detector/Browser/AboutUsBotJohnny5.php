@@ -57,6 +57,7 @@ class AboutUsBotJohnny5 extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AboutUsBot Johnny5']);
         $this->manufacturer                = CompanyFactory::get('AboutUs')->getName();
+        $this->brand                       = CompanyFactory::get('AboutUs')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

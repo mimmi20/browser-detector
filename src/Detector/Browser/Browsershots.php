@@ -57,6 +57,7 @@ class Browsershots extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Browsershots']);
         $this->manufacturer                = CompanyFactory::get('Browsershots')->getName();
+        $this->brand                       = CompanyFactory::get('Browsershots')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

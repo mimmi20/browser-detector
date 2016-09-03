@@ -57,6 +57,7 @@ class GrapeshotCrawler extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['GrapeshotCrawler']);
         $this->manufacturer                = CompanyFactory::get('GrapeshotLimited')->getName();
+        $this->brand                       = CompanyFactory::get('GrapeshotLimited')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

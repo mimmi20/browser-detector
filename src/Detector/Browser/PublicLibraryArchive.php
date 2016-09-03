@@ -57,6 +57,7 @@ class PublicLibraryArchive extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['publiclibraryarchive', 'publiclibraryarchive\.org']);
         $this->manufacturer                = CompanyFactory::get('PublicLibraryArchive')->getName();
+        $this->brand                       = CompanyFactory::get('PublicLibraryArchive')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

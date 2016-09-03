@@ -57,6 +57,7 @@ class Sosospider extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Sosospider']);
         $this->manufacturer                = CompanyFactory::get('Soso')->getName();
+        $this->brand                       = CompanyFactory::get('Soso')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

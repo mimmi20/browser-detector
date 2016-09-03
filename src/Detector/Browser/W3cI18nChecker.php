@@ -57,6 +57,7 @@ class W3cI18nChecker extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['W3C\_I18n\-Checker']);
         $this->manufacturer                = CompanyFactory::get('W3c')->getName();
+        $this->brand                       = CompanyFactory::get('W3c')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

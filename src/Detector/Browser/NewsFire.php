@@ -57,6 +57,7 @@ class NewsFire extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['NewsFire']);
         $this->manufacturer                = CompanyFactory::get('DavidWatanabe')->getName();
+        $this->brand                       = CompanyFactory::get('DavidWatanabe')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

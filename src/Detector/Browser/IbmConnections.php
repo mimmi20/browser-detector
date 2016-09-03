@@ -57,6 +57,7 @@ class IbmConnections extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['IC OpenGraph Crawler']);
         $this->manufacturer                = CompanyFactory::get('Ibm')->getName();
+        $this->brand                       = CompanyFactory::get('Ibm')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

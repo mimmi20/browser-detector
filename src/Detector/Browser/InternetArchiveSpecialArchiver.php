@@ -57,6 +57,7 @@ class InternetArchiveSpecialArchiver extends AbstractBrowser implements BrowserH
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['special_archiver']);
         $this->manufacturer                = CompanyFactory::get('ArchiveOrg')->getName();
+        $this->brand                       = CompanyFactory::get('ArchiveOrg')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

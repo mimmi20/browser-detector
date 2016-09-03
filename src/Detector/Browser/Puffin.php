@@ -57,6 +57,7 @@ class Puffin extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Puffin', 'Puffin%20Free']);
         $this->manufacturer                = CompanyFactory::get('CloudMosa')->getName();
+        $this->brand                       = CompanyFactory::get('CloudMosa')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

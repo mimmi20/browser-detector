@@ -57,6 +57,7 @@ class Dillo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Dillo']);
         $this->manufacturer                = CompanyFactory::get('DilloProject')->getName();
+        $this->brand                       = CompanyFactory::get('DilloProject')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

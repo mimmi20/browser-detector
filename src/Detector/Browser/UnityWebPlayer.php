@@ -57,6 +57,7 @@ class UnityWebPlayer extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['UnityPlayer']);
         $this->manufacturer                = CompanyFactory::get('UnityTechnologies')->getName();
+        $this->brand                       = CompanyFactory::get('UnityTechnologies')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

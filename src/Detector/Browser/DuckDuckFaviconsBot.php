@@ -57,6 +57,7 @@ class DuckDuckFaviconsBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['DuckDuckGo\-Favicons\-Bot']);
         $this->manufacturer                = CompanyFactory::get('DuckDuckGo')->getName();
+        $this->brand                       = CompanyFactory::get('DuckDuckGo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

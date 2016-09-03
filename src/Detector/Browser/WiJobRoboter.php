@@ -57,6 +57,7 @@ class WiJobRoboter extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WI Job Roboter Spider Version']);
         $this->manufacturer                = CompanyFactory::get('WebIntegrationItService')->getName();
+        $this->brand                       = CompanyFactory::get('WebIntegrationItService')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

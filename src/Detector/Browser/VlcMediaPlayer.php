@@ -57,6 +57,7 @@ class VlcMediaPlayer extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['VLC']);
         $this->manufacturer                = CompanyFactory::get('VideoLan')->getName();
+        $this->brand                       = CompanyFactory::get('VideoLan')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

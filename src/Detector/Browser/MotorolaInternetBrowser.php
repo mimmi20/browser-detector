@@ -57,6 +57,7 @@ class MotorolaInternetBrowser extends AbstractBrowser implements BrowserHasSpeci
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MIB', 'MIB\/BER']);
         $this->manufacturer                = CompanyFactory::get('Motorola')->getName();
+        $this->brand                       = CompanyFactory::get('Motorola')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

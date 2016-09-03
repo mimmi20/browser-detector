@@ -57,6 +57,7 @@ class YioopBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['YioopBot']);
         $this->manufacturer                = CompanyFactory::get('Yioop')->getName();
+        $this->brand                       = CompanyFactory::get('Yioop')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

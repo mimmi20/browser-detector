@@ -57,6 +57,7 @@ class Kkman extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['KKman']);
         $this->manufacturer                = CompanyFactory::get('Kkbox')->getName();
+        $this->brand                       = CompanyFactory::get('Kkbox')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

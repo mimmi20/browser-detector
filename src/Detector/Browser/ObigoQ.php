@@ -57,6 +57,7 @@ class ObigoQ extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = Version\ObigoQ::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Obigo')->getName();
+        $this->brand                       = CompanyFactory::get('Obigo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

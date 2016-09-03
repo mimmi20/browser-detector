@@ -57,6 +57,7 @@ class WorldwebheritageBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['worldwebheritage\.org']);
         $this->manufacturer                = CompanyFactory::get('GoDaddy')->getName();
+        $this->brand                       = CompanyFactory::get('GoDaddy')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class FlipboardProxy extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['FlipboardProxy']);
         $this->manufacturer                = CompanyFactory::get('Flipboard')->getName();
+        $this->brand                       = CompanyFactory::get('Flipboard')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

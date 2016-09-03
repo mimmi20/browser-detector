@@ -57,6 +57,7 @@ class Phantomas extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['phantomas']);
         $this->manufacturer                = CompanyFactory::get('MaciejBrencz')->getName();
+        $this->brand                       = CompanyFactory::get('MaciejBrencz')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

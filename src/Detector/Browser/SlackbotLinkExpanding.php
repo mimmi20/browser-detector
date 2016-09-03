@@ -57,6 +57,7 @@ class SlackbotLinkExpanding extends AbstractBrowser implements BrowserHasSpecifi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Slackbot\-LinkExpanding']);
         $this->manufacturer                = CompanyFactory::get('Slack')->getName();
+        $this->brand                       = CompanyFactory::get('Slack')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

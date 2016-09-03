@@ -57,6 +57,7 @@ class Realplayer extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Realplayer']);
         $this->manufacturer                = CompanyFactory::get('RealNetworks')->getName();
+        $this->brand                       = CompanyFactory::get('RealNetworks')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

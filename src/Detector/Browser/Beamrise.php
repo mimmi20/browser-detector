@@ -57,6 +57,7 @@ class Beamrise extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Beamrise']);
         $this->manufacturer                = CompanyFactory::get('BeamriseTeam')->getName();
+        $this->brand                       = CompanyFactory::get('BeamriseTeam')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

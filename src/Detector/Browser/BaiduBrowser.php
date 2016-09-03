@@ -57,6 +57,7 @@ class BaiduBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['bdbrowser_i18n']);
         $this->manufacturer                = CompanyFactory::get('Baidu')->getName();
+        $this->brand                       = CompanyFactory::get('Baidu')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

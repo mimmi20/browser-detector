@@ -57,6 +57,7 @@ class PagePeeker extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PagePeeker']);
         $this->manufacturer                = CompanyFactory::get('PagePeeker')->getName();
+        $this->brand                       = CompanyFactory::get('PagePeeker')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

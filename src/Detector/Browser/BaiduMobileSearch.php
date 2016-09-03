@@ -57,6 +57,7 @@ class BaiduMobileSearch extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Baidu')->getName();
+        $this->brand                       = CompanyFactory::get('Baidu')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

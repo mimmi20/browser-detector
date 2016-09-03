@@ -57,6 +57,7 @@ class DueDilCrawler extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['electricmonk']);
         $this->manufacturer                = CompanyFactory::get('DueDil')->getName();
+        $this->brand                       = CompanyFactory::get('DueDil')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class RukyBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Ruky\-Roboter \(Version\: ']);
         $this->manufacturer                = CompanyFactory::get('Searchme')->getName();
+        $this->brand                       = CompanyFactory::get('Searchme')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

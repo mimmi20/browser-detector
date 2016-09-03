@@ -57,6 +57,7 @@ class SogouWebSpider extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Sogou web spider']);
         $this->manufacturer                = CompanyFactory::get('Sogou')->getName();
+        $this->brand                       = CompanyFactory::get('Sogou')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

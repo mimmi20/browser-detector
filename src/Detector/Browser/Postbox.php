@@ -57,6 +57,7 @@ class Postbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Postbox']);
         $this->manufacturer                = CompanyFactory::get('Postbox')->getName();
+        $this->brand                       = CompanyFactory::get('Postbox')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

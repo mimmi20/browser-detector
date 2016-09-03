@@ -57,6 +57,7 @@ class LinkdexComBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['linkdex\.com', 'linkdex\.com\/v']);
         $this->manufacturer                = CompanyFactory::get('Linkdex')->getName();
+        $this->brand                       = CompanyFactory::get('Linkdex')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

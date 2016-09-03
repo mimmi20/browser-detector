@@ -57,6 +57,7 @@ class Readability extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('SfxEntertainment')->getName();
+        $this->brand                       = CompanyFactory::get('SfxEntertainment')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

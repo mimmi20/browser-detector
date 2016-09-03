@@ -57,6 +57,7 @@ class ZumBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ZumBot']);
         $this->manufacturer                = CompanyFactory::get('ZuminternetCorp')->getName();
+        $this->brand                       = CompanyFactory::get('ZuminternetCorp')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

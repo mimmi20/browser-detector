@@ -57,6 +57,7 @@ class SiteCon extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SiteCon']);
         $this->manufacturer                = CompanyFactory::get('NccGroup')->getName();
+        $this->brand                       = CompanyFactory::get('NccGroup')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

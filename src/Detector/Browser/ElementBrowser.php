@@ -57,6 +57,7 @@ class ElementBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Element Browser']);
         $this->manufacturer                = CompanyFactory::get('ElementSoftware')->getName();
+        $this->brand                       = CompanyFactory::get('ElementSoftware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

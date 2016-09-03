@@ -57,6 +57,7 @@ class CareerBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['CareerBot']);
         $this->manufacturer                = CompanyFactory::get('Careerx')->getName();
+        $this->brand                       = CompanyFactory::get('Careerx')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

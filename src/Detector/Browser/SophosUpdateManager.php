@@ -57,6 +57,7 @@ class SophosUpdateManager extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SophosUpdateManager']);
         $this->manufacturer                = CompanyFactory::get('Sophos')->getName();
+        $this->brand                       = CompanyFactory::get('Sophos')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

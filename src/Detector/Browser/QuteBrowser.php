@@ -57,6 +57,7 @@ class QuteBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['qutebrowser']);
         $this->manufacturer                = CompanyFactory::get('FlorianBruhin')->getName();
+        $this->brand                       = CompanyFactory::get('FlorianBruhin')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

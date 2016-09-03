@@ -57,6 +57,7 @@ class Boxee extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Boxee', 'boxee']);
         $this->manufacturer                = CompanyFactory::get('Boxee')->getName();
+        $this->brand                       = CompanyFactory::get('Boxee')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

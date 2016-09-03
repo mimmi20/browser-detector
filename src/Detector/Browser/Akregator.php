@@ -57,6 +57,7 @@ class Akregator extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Akregator']);
         $this->manufacturer                = CompanyFactory::get('Kde')->getName();
+        $this->brand                       = CompanyFactory::get('Kde')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

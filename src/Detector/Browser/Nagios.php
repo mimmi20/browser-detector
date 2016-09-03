@@ -57,6 +57,7 @@ class Nagios extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['nagios\-plugins', 'check_http']);
         $this->manufacturer                = CompanyFactory::get('NagiosEnterprises')->getName();
+        $this->brand                       = CompanyFactory::get('NagiosEnterprises')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

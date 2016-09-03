@@ -57,6 +57,7 @@ class Kinza extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Kinza']);
         $this->manufacturer                = CompanyFactory::get('Kinza')->getName();
+        $this->brand                       = CompanyFactory::get('Kinza')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

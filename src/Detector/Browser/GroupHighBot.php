@@ -57,6 +57,7 @@ class GroupHighBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['GroupHigh']);
         $this->manufacturer                = CompanyFactory::get('GroupHigh')->getName();
+        $this->brand                       = CompanyFactory::get('GroupHigh')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class SeeBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['seebot']);
         $this->manufacturer                = CompanyFactory::get('Seegnify')->getName();
+        $this->brand                       = CompanyFactory::get('Seegnify')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

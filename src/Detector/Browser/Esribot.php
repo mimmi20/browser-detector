@@ -57,6 +57,7 @@ class Esribot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Esribot']);
         $this->manufacturer                = CompanyFactory::get('Esrihu')->getName();
+        $this->brand                       = CompanyFactory::get('Esrihu')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Kindle extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Kindle']);
         $this->manufacturer                = CompanyFactory::get('Amazon')->getName();
+        $this->brand                       = CompanyFactory::get('Amazon')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

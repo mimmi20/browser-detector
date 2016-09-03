@@ -57,6 +57,7 @@ class Sandvox extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Sandvox']);
         $this->manufacturer                = CompanyFactory::get('KareliaSoftware')->getName();
+        $this->brand                       = CompanyFactory::get('KareliaSoftware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

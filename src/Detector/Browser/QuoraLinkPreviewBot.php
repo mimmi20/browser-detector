@@ -57,6 +57,7 @@ class QuoraLinkPreviewBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Quora Link Preview']);
         $this->manufacturer                = CompanyFactory::get('Quora')->getName();
+        $this->brand                       = CompanyFactory::get('Quora')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class RokuDvp extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Roku\/DVP\-']);
         $this->manufacturer                = CompanyFactory::get('Roku')->getName();
+        $this->brand                       = CompanyFactory::get('Roku')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class MicrosoftOfficeUploadCenter extends AbstractBrowser implements BrowserHasS
         $this->modus                       = null;
         $this->version                     = Version\MicrosoftOfficeUploadCenter::detectVersion($useragent);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
+        $this->brand                       = CompanyFactory::get('Microsoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

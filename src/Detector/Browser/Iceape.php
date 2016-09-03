@@ -57,6 +57,7 @@ class Iceape extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Iceape']);
         $this->manufacturer                = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
+        $this->brand                       = CompanyFactory::get('SoftwareInThePublicInterest')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

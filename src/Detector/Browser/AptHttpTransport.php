@@ -57,6 +57,7 @@ class AptHttpTransport extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Debian APT\-HTTP', 'Ubuntu APT\-HTTP']);
         $this->manufacturer                = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
+        $this->brand                       = CompanyFactory::get('SoftwareInThePublicInterest')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

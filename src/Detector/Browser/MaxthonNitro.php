@@ -57,6 +57,7 @@ class MaxthonNitro extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MxNitro']);
         $this->manufacturer                = CompanyFactory::get('Maxthon')->getName();
+        $this->brand                       = CompanyFactory::get('Maxthon')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -57,6 +57,7 @@ class Opera extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Version', 'Opera', 'OPR']);
         $this->manufacturer                = CompanyFactory::get('Opera')->getName();
+        $this->brand                       = CompanyFactory::get('Opera')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

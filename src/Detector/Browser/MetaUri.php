@@ -57,6 +57,7 @@ class MetaUri extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MetaURI API']);
         $this->manufacturer                = CompanyFactory::get('Metauri')->getName();
+        $this->brand                       = CompanyFactory::get('Metauri')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

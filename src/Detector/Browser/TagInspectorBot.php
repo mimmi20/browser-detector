@@ -57,6 +57,7 @@ class TagInspectorBot extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Infotrust')->getName();
+        $this->brand                       = CompanyFactory::get('Infotrust')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

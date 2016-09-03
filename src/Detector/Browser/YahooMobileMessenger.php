@@ -57,6 +57,7 @@ class YahooMobileMessenger extends AbstractBrowser implements BrowserHasSpecific
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['YahooMobileMessenger']);
         $this->manufacturer                = CompanyFactory::get('Yahoo')->getName();
+        $this->brand                       = CompanyFactory::get('Yahoo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

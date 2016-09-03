@@ -57,6 +57,7 @@ class GigablastOpenSource extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['GigablastOpenSource']);
         $this->manufacturer                = CompanyFactory::get('GigablastCom')->getName();
+        $this->brand                       = CompanyFactory::get('GigablastCom')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class TlsProber extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['TLSProber']);
         $this->manufacturer                = CompanyFactory::get('Abonti')->getName();
+        $this->brand                       = CompanyFactory::get('Abonti')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

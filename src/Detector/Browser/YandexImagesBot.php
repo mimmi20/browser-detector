@@ -57,6 +57,7 @@ class YandexImagesBot extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['YandexImages']);
         $this->manufacturer                = CompanyFactory::get('Yandex')->getName();
+        $this->brand                       = CompanyFactory::get('Yandex')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

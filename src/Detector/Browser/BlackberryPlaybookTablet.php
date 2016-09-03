@@ -57,6 +57,7 @@ class BlackberryPlaybookTablet extends AbstractBrowser implements BrowserHasSpec
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Version']);
         $this->manufacturer                = CompanyFactory::get('Rim')->getName();
+        $this->brand                       = CompanyFactory::get('Rim')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

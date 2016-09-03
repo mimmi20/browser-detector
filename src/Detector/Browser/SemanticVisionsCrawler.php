@@ -57,6 +57,7 @@ class SemanticVisionsCrawler extends AbstractBrowser implements BrowserHasSpecif
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['semantic\-visions.com crawler']);
         $this->manufacturer                = CompanyFactory::get('SemanticVisions')->getName();
+        $this->brand                       = CompanyFactory::get('SemanticVisions')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

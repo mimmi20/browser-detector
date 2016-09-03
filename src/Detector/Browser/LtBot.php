@@ -57,6 +57,7 @@ class LtBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ltbot']);
         $this->manufacturer                = CompanyFactory::get('LanguageTools')->getName();
+        $this->brand                       = CompanyFactory::get('LanguageTools')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

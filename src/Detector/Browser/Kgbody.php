@@ -57,6 +57,7 @@ class Kgbody extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['kgbody']);
         $this->manufacturer                = CompanyFactory::get('NttResonant')->getName();
+        $this->brand                       = CompanyFactory::get('NttResonant')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

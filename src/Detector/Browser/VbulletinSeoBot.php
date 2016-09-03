@@ -57,6 +57,7 @@ class VbulletinSeoBot extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['vBSEO']);
         $this->manufacturer                = CompanyFactory::get('Vbseo')->getName();
+        $this->brand                       = CompanyFactory::get('Vbseo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

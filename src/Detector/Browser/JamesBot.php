@@ -57,6 +57,7 @@ class JamesBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['fr-crawler']);
         $this->manufacturer                = CompanyFactory::get('Geskimo')->getName();
+        $this->brand                       = CompanyFactory::get('Geskimo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

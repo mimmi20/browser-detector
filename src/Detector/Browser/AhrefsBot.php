@@ -57,6 +57,7 @@ class AhrefsBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AhrefsBot']);
         $this->manufacturer                = CompanyFactory::get('Ahrefs')->getName();
+        $this->brand                       = CompanyFactory::get('Ahrefs')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

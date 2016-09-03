@@ -57,6 +57,7 @@ class JavaStandardLibrary extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Java']);
         $this->manufacturer                = CompanyFactory::get('Oracle')->getName();
+        $this->brand                       = CompanyFactory::get('Oracle')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

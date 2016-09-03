@@ -57,6 +57,7 @@ class Seoprofiler extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['spbot', 'sp_auditbot']);
         $this->manufacturer                = CompanyFactory::get('Axandra')->getName();
+        $this->brand                       = CompanyFactory::get('Axandra')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

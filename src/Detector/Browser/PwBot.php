@@ -57,6 +57,7 @@ class PwBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PWBot']);
         $this->manufacturer                = CompanyFactory::get('Eurofiles')->getName();
+        $this->brand                       = CompanyFactory::get('Eurofiles')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

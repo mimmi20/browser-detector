@@ -57,6 +57,7 @@ class MetaHeadersBot extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MetaHeadersBot']);
         $this->manufacturer                = CompanyFactory::get('Metaheaders')->getName();
+        $this->brand                       = CompanyFactory::get('Metaheaders')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

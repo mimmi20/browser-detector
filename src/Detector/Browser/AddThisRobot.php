@@ -57,6 +57,7 @@ class AddThisRobot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AddThis\.com robot']);
         $this->manufacturer                = CompanyFactory::get('AddThis')->getName();
+        $this->brand                       = CompanyFactory::get('AddThis')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

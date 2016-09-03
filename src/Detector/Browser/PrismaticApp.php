@@ -57,6 +57,7 @@ class PrismaticApp extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Prismatic')->getName();
+        $this->brand                       = CompanyFactory::get('Prismatic')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

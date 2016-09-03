@@ -57,6 +57,7 @@ class WebsiteExplorer extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Website Explorer']);
         $this->manufacturer                = CompanyFactory::get('Umechando')->getName();
+        $this->brand                       = CompanyFactory::get('Umechando')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

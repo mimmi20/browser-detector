@@ -57,6 +57,7 @@ class TweetmemeBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['TweetmemeBot']);
         $this->manufacturer                = CompanyFactory::get('Datasift')->getName();
+        $this->brand                       = CompanyFactory::get('Datasift')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

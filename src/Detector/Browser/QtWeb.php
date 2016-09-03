@@ -57,6 +57,7 @@ class QtWeb extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['QtWeb Internet Browser']);
         $this->manufacturer                = CompanyFactory::get('LogicWare')->getName();
+        $this->brand                       = CompanyFactory::get('LogicWare')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

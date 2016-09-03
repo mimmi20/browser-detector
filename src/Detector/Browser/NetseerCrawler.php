@@ -57,6 +57,7 @@ class NetseerCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['NetSeer crawler']);
         $this->manufacturer                = CompanyFactory::get('NetSeer')->getName();
+        $this->brand                       = CompanyFactory::get('NetSeer')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

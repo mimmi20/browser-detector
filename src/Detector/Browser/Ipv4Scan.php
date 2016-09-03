@@ -57,6 +57,7 @@ class Ipv4Scan extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['IPv4Scan']);
         $this->manufacturer                = CompanyFactory::get('Ipv4Scan')->getName();
+        $this->brand                       = CompanyFactory::get('Ipv4Scan')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

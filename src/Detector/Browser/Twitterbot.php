@@ -57,6 +57,7 @@ class Twitterbot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Twitterbot']);
         $this->manufacturer                = CompanyFactory::get('Twitter')->getName();
+        $this->brand                       = CompanyFactory::get('Twitter')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

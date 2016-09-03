@@ -57,6 +57,7 @@ class QwordBrowser extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Qword']);
         $this->manufacturer                = CompanyFactory::get('QwordCorporation')->getName();
+        $this->brand                       = CompanyFactory::get('QwordCorporation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

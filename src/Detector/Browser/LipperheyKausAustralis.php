@@ -57,6 +57,7 @@ class LipperheyKausAustralis extends AbstractBrowser implements BrowserHasSpecif
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Lipperhey\-Kaus\-Australis']);
         $this->manufacturer                = CompanyFactory::get('Lipperhey')->getName();
+        $this->brand                       = CompanyFactory::get('Lipperhey')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

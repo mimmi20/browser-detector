@@ -57,6 +57,7 @@ class MicrosoftDotNetFrameworkClr extends AbstractBrowser implements BrowserHasS
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MS Web Services Client Protocol']);
         $this->manufacturer                = CompanyFactory::get('Microsoft')->getName();
+        $this->brand                       = CompanyFactory::get('Microsoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

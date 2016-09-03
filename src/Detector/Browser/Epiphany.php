@@ -57,6 +57,7 @@ class Epiphany extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Epiphany', 'Version', 'Safari', 'AppleWebKit']);
         $this->manufacturer                = CompanyFactory::get('TheGnomeProject')->getName();
+        $this->brand                       = CompanyFactory::get('TheGnomeProject')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

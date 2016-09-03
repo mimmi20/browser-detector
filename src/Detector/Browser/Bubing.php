@@ -57,6 +57,7 @@ class Bubing extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['BUbiNG']);
         $this->manufacturer                = CompanyFactory::get('LawDiUnimiIt')->getName();
+        $this->brand                       = CompanyFactory::get('LawDiUnimiIt')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

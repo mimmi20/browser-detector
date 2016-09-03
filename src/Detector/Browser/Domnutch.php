@@ -57,6 +57,7 @@ class Domnutch extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Domnutch\-Bot', 'Nutch\-']);
         $this->manufacturer                = CompanyFactory::get('NutchDe')->getName();
+        $this->brand                       = CompanyFactory::get('NutchDe')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

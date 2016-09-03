@@ -57,6 +57,7 @@ class Playstation extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Playstation']);
         $this->manufacturer                = CompanyFactory::get('Sony')->getName();
+        $this->brand                       = CompanyFactory::get('Sony')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

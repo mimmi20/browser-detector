@@ -57,6 +57,7 @@ class WooRank extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['woobot']);
         $this->manufacturer                = CompanyFactory::get('WooRank')->getName();
+        $this->brand                       = CompanyFactory::get('WooRank')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

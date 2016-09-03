@@ -57,6 +57,7 @@ class FlixsterApp extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['FlixsteriOS']);
         $this->manufacturer                = CompanyFactory::get('Flixster')->getName();
+        $this->brand                       = CompanyFactory::get('Flixster')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

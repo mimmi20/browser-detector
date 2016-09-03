@@ -57,6 +57,7 @@ class Krakenjs extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['kraken']);
         $this->manufacturer                = CompanyFactory::get('Paypal')->getName();
+        $this->brand                       = CompanyFactory::get('Paypal')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

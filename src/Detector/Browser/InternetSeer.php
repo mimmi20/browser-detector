@@ -57,6 +57,7 @@ class InternetSeer extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['InternetSeer\.com']);
         $this->manufacturer                = CompanyFactory::get('InternetSeer')->getName();
+        $this->brand                       = CompanyFactory::get('InternetSeer')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class WebdeMailCheck extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WEB\.DE MailCheck']);
         $this->manufacturer                = CompanyFactory::get('EinsUndEins')->getName();
+        $this->brand                       = CompanyFactory::get('EinsUndEins')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

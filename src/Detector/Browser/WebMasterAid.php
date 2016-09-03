@@ -57,6 +57,7 @@ class WebMasterAid extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WebMasterAid']);
         $this->manufacturer                = CompanyFactory::get('Wmaid')->getName();
+        $this->brand                       = CompanyFactory::get('Wmaid')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

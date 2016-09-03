@@ -57,6 +57,7 @@ class KamelioApp extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, [            'Kamelio',        ]);
         $this->manufacturer                = CompanyFactory::get('Kamelio')->getName();
+        $this->brand                       = CompanyFactory::get('Kamelio')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

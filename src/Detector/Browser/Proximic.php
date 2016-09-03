@@ -57,6 +57,7 @@ class Proximic extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['proximic']);
         $this->manufacturer                = CompanyFactory::get('Proximic')->getName();
+        $this->brand                       = CompanyFactory::get('Proximic')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

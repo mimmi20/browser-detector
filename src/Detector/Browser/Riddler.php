@@ -57,6 +57,7 @@ class Riddler extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Riddler']);
         $this->manufacturer                = CompanyFactory::get('Riddler')->getName();
+        $this->brand                       = CompanyFactory::get('Riddler')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

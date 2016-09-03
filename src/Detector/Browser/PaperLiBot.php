@@ -57,6 +57,7 @@ class PaperLiBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PaperLiBot']);
         $this->manufacturer                = CompanyFactory::get('PaperLi')->getName();
+        $this->brand                       = CompanyFactory::get('PaperLi')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

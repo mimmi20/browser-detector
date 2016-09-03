@@ -57,6 +57,7 @@ class Nichrome extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Nichrome\/self', 'Nichrome']);
         $this->manufacturer                = CompanyFactory::get('Rambler')->getName();
+        $this->brand                       = CompanyFactory::get('Rambler')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

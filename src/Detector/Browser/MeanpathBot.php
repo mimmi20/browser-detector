@@ -57,6 +57,7 @@ class MeanpathBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['meanpathbot']);
         $this->manufacturer                = CompanyFactory::get('Meanpath')->getName();
+        $this->brand                       = CompanyFactory::get('Meanpath')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

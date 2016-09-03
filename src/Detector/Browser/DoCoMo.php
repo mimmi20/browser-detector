@@ -57,6 +57,7 @@ class DoCoMo extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('DoCoMo')->getName();
+        $this->brand                       = CompanyFactory::get('DoCoMo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

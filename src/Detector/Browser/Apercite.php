@@ -57,6 +57,7 @@ class Apercite extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Apercite']);
         $this->manufacturer                = CompanyFactory::get('Apercite')->getName();
+        $this->brand                       = CompanyFactory::get('Apercite')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

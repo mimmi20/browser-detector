@@ -57,6 +57,7 @@ class MosBookmarksLinkChecker extends AbstractBrowser implements BrowserHasSpeci
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MOSBookmarks', 'MOSBookmarks\/v']);
         $this->manufacturer                = CompanyFactory::get('Tegdesign')->getName();
+        $this->brand                       = CompanyFactory::get('Tegdesign')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

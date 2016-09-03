@@ -57,6 +57,7 @@ class CcBot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['CCBot']);
         $this->manufacturer                = CompanyFactory::get('CommonCrawlFoundation')->getName();
+        $this->brand                       = CompanyFactory::get('CommonCrawlFoundation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

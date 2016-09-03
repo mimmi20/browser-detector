@@ -57,6 +57,7 @@ class DotBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['DotBot']);
         $this->manufacturer                = CompanyFactory::get('SeoMoz')->getName();
+        $this->brand                       = CompanyFactory::get('SeoMoz')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

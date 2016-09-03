@@ -57,6 +57,7 @@ class DeepnetExplorer extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Deepnet Explorer']);
         $this->manufacturer                = CompanyFactory::get('DeepnetSecurity')->getName();
+        $this->brand                       = CompanyFactory::get('DeepnetSecurity')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class AmazonCloudFront extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($this->useragent, ['Amazon CloudFront']);
         $this->manufacturer                = CompanyFactory::get('Amazon')->getName();
+        $this->brand                       = CompanyFactory::get('Amazon')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

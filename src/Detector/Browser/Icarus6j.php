@@ -57,6 +57,7 @@ class Icarus6j extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Icarus6j']);
         $this->manufacturer                = CompanyFactory::get('Icarus6')->getName();
+        $this->brand                       = CompanyFactory::get('Icarus6')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

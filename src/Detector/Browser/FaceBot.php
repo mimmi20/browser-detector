@@ -57,6 +57,7 @@ class FaceBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Facebot']);
         $this->manufacturer                = CompanyFactory::get('Facebook')->getName();
+        $this->brand                       = CompanyFactory::get('Facebook')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

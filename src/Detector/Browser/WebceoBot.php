@@ -57,6 +57,7 @@ class WebceoBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['online\-webceo\-bot']);
         $this->manufacturer                = CompanyFactory::get('Webceo')->getName();
+        $this->brand                       = CompanyFactory::get('Webceo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class ComodoIceDragon extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['IceDragon']);
         $this->manufacturer                = CompanyFactory::get('Comodo')->getName();
+        $this->brand                       = CompanyFactory::get('Comodo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

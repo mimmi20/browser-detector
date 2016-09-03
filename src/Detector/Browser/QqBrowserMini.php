@@ -57,6 +57,7 @@ class QqBrowserMini extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MQQBrowser\/Mini']);
         $this->manufacturer                = CompanyFactory::get('Tencent')->getName();
+        $this->brand                       = CompanyFactory::get('Tencent')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

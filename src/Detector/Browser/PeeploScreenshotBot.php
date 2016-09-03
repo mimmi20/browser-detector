@@ -57,6 +57,7 @@ class PeeploScreenshotBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Peeplo Screenshot Bot']);
         $this->manufacturer                = CompanyFactory::get('Peeplo')->getName();
+        $this->brand                       = CompanyFactory::get('Peeplo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

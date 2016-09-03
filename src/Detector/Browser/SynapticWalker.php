@@ -57,6 +57,7 @@ class SynapticWalker extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SynapticWalker']);
         $this->manufacturer                = CompanyFactory::get('Websynaptics')->getName();
+        $this->brand                       = CompanyFactory::get('Websynaptics')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class PiplBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PiplBot']);
         $this->manufacturer                = CompanyFactory::get('Pipl')->getName();
+        $this->brand                       = CompanyFactory::get('Pipl')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

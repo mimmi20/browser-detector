@@ -57,6 +57,7 @@ class Seokicks extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('TorstenRueckertInternetdienstleistungen')->getName();
+        $this->brand                       = CompanyFactory::get('TorstenRueckertInternetdienstleistungen')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

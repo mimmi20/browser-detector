@@ -57,6 +57,7 @@ class AdmantxPlatformSemanticAnalyzer extends AbstractBrowser implements Browser
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('AdmantxInc')->getName();
+        $this->brand                       = CompanyFactory::get('AdmantxInc')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

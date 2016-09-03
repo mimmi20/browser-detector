@@ -57,6 +57,7 @@ class GoldfireServer extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Goldfire Server']);
         $this->manufacturer                = CompanyFactory::get('InventionMachine')->getName();
+        $this->brand                       = CompanyFactory::get('InventionMachine')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

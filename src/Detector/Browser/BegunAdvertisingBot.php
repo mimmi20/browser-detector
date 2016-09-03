@@ -57,6 +57,7 @@ class BegunAdvertisingBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['BegunAdvertising']);
         $this->manufacturer                = CompanyFactory::get('Begun')->getName();
+        $this->brand                       = CompanyFactory::get('Begun')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

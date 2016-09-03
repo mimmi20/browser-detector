@@ -57,6 +57,7 @@ class ButterflyRobot extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Butterfly']);
         $this->manufacturer                = CompanyFactory::get('TopsyLabs')->getName();
+        $this->brand                       = CompanyFactory::get('TopsyLabs')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

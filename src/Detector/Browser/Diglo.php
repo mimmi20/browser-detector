@@ -57,6 +57,7 @@ class Diglo extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Diglo']);
         $this->manufacturer                = CompanyFactory::get('Diglo')->getName();
+        $this->brand                       = CompanyFactory::get('Diglo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

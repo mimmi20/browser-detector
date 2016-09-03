@@ -57,6 +57,7 @@ class YahooPipes extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Yahoo Pipes']);
         $this->manufacturer                = CompanyFactory::get('Yahoo')->getName();
+        $this->brand                       = CompanyFactory::get('Yahoo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

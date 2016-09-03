@@ -57,6 +57,7 @@ class NetscapeNavigator extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Navigator']);
         $this->manufacturer                = CompanyFactory::get('Netscape')->getName();
+        $this->brand                       = CompanyFactory::get('Netscape')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

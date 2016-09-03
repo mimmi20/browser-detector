@@ -57,6 +57,7 @@ class NetzCheckBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['NetzCheckBot']);
         $this->manufacturer                = CompanyFactory::get('NetzCheck')->getName();
+        $this->brand                       = CompanyFactory::get('NetzCheck')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

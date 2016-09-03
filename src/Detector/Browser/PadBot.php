@@ -57,6 +57,7 @@ class PadBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PAD\-bot']);
         $this->manufacturer                = CompanyFactory::get('InbotTechnology')->getName();
+        $this->brand                       = CompanyFactory::get('InbotTechnology')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

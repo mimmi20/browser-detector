@@ -57,6 +57,7 @@ class UcBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['UC Browser', 'UCBrowser', 'UCWEB', 'Browser']);
         $this->manufacturer                = CompanyFactory::get('UcWeb')->getName();
+        $this->brand                       = CompanyFactory::get('UcWeb')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

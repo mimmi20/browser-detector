@@ -57,6 +57,7 @@ class Moreover extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Moreover']);
         $this->manufacturer                = CompanyFactory::get('MoreoverTechnologies')->getName();
+        $this->brand                       = CompanyFactory::get('MoreoverTechnologies')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

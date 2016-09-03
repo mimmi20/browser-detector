@@ -57,6 +57,7 @@ class OpenHoseBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['OpenHoseBot']);
         $this->manufacturer                = CompanyFactory::get('OpenHose')->getName();
+        $this->brand                       = CompanyFactory::get('OpenHose')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

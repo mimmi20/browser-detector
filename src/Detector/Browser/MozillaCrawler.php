@@ -57,6 +57,7 @@ class MozillaCrawler extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Mozilla crawl']);
         $this->manufacturer                = CompanyFactory::get('Fairshare')->getName();
+        $this->brand                       = CompanyFactory::get('Fairshare')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

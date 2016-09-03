@@ -57,6 +57,7 @@ class IntegromedbCrawler extends AbstractBrowser implements BrowserHasSpecificEn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['integromedb.org']);
         $this->manufacturer                = CompanyFactory::get('BiologicalNetworks')->getName();
+        $this->brand                       = CompanyFactory::get('BiologicalNetworks')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Kenshoo extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Kenshoo']);
         $this->manufacturer                = CompanyFactory::get('Kenshoo')->getName();
+        $this->brand                       = CompanyFactory::get('Kenshoo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

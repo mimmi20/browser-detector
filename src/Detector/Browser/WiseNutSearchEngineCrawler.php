@@ -57,6 +57,7 @@ class WiseNutSearchEngineCrawler extends AbstractBrowser implements BrowserHasSp
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ZyBorg']);
         $this->manufacturer                = CompanyFactory::get('LookSmart')->getName();
+        $this->brand                       = CompanyFactory::get('LookSmart')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Gvfs extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['gvfs']);
         $this->manufacturer                = CompanyFactory::get('TheGnomeProject')->getName();
+        $this->brand                       = CompanyFactory::get('TheGnomeProject')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

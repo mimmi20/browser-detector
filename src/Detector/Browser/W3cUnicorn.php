@@ -57,6 +57,7 @@ class W3cUnicorn extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['W3C_Unicorn']);
         $this->manufacturer                = CompanyFactory::get('W3c')->getName();
+        $this->brand                       = CompanyFactory::get('W3c')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

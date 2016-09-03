@@ -57,6 +57,7 @@ class Iceweasel extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Iceweasel', 'Firefox']);
         $this->manufacturer                = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
+        $this->brand                       = CompanyFactory::get('SoftwareInThePublicInterest')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

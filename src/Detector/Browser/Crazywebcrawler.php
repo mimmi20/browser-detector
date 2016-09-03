@@ -57,6 +57,7 @@ class Crazywebcrawler extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['CRAZYWEBCRAWLER']);
         $this->manufacturer                = CompanyFactory::get('Crazywebcrawler')->getName();
+        $this->brand                       = CompanyFactory::get('Crazywebcrawler')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

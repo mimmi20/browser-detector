@@ -57,6 +57,7 @@ class DuckDuckApp extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['DDG\-Android\-']);
         $this->manufacturer                = CompanyFactory::get('DuckDuckGo')->getName();
+        $this->brand                       = CompanyFactory::get('DuckDuckGo')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

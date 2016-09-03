@@ -57,6 +57,7 @@ class MicroB extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MicroB']);
         $this->manufacturer                = CompanyFactory::get('Nokia')->getName();
+        $this->brand                       = CompanyFactory::get('Nokia')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

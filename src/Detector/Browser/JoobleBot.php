@@ -57,6 +57,7 @@ class JoobleBot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['JoobleBot']);
         $this->manufacturer                = CompanyFactory::get('Jooble')->getName();
+        $this->brand                       = CompanyFactory::get('Jooble')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

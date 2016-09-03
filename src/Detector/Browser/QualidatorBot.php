@@ -57,6 +57,7 @@ class QualidatorBot extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Qualidator\.com Bot']);
         $this->manufacturer                = CompanyFactory::get('Qualidator')->getName();
+        $this->brand                       = CompanyFactory::get('Qualidator')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class FreeWebMonitoringSiteChecker extends AbstractBrowser implements BrowserHas
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['FreeWebMonitoring SiteChecker']);
         $this->manufacturer                = CompanyFactory::get('FreeWebMonitoring')->getName();
+        $this->brand                       = CompanyFactory::get('FreeWebMonitoring')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

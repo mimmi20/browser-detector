@@ -57,6 +57,7 @@ class Bowser extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Bowser']);
         $this->manufacturer                = CompanyFactory::get('EricssonResearch')->getName();
+        $this->brand                       = CompanyFactory::get('EricssonResearch')->getBrandName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

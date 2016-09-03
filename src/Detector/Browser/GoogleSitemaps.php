@@ -57,6 +57,7 @@ class GoogleSitemaps extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Google\-Sitemaps']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
+        $this->brand                       = CompanyFactory::get('Google')->getBrandName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

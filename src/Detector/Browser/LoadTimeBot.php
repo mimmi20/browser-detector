@@ -57,6 +57,7 @@ class LoadTimeBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['LoadTimeBot']);
         $this->manufacturer                = CompanyFactory::get('LoadTime')->getName();
+        $this->brand                       = CompanyFactory::get('LoadTime')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

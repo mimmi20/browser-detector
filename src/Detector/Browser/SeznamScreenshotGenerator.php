@@ -57,6 +57,7 @@ class SeznamScreenshotGenerator extends AbstractBrowser implements BrowserHasSpe
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SeznamScreenshotGenerator', 'Seznam screenshot-generator']);
         $this->manufacturer                = CompanyFactory::get('Seznam')->getName();
+        $this->brand                       = CompanyFactory::get('Seznam')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

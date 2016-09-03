@@ -57,6 +57,7 @@ class Dbot extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['DBot']);
         $this->manufacturer                = CompanyFactory::get('Getdownload')->getName();
+        $this->brand                       = CompanyFactory::get('Getdownload')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

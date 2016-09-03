@@ -57,6 +57,7 @@ class Tailrank extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Tailrank']);
         $this->manufacturer                = CompanyFactory::get('Tailrank')->getName();
+        $this->brand                       = CompanyFactory::get('Tailrank')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

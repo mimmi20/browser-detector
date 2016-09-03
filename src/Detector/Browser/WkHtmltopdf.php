@@ -57,6 +57,7 @@ class WkHtmltopdf extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['wkhtmltopdf']);
         $this->manufacturer                = CompanyFactory::get('WkHtmltopdfOrg')->getName();
+        $this->brand                       = CompanyFactory::get('WkHtmltopdfOrg')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

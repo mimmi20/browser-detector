@@ -57,6 +57,7 @@ class Please200Bot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['200PleaseBot']);
         $this->manufacturer                = CompanyFactory::get('Please200')->getName();
+        $this->brand                       = CompanyFactory::get('Please200')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

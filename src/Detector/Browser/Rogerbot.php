@@ -57,6 +57,7 @@ class Rogerbot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['rogerbot', 'rogerBot']);
         $this->manufacturer                = CompanyFactory::get('SeoMoz')->getName();
+        $this->brand                       = CompanyFactory::get('SeoMoz')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

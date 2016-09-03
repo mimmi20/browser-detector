@@ -57,6 +57,7 @@ class PagePeekerScreenshotMaker extends AbstractBrowser implements BrowserHasSpe
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('PagePeeker')->getName();
+        $this->brand                       = CompanyFactory::get('PagePeeker')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

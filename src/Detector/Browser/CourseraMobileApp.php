@@ -57,6 +57,7 @@ class CourseraMobileApp extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Coursera\-Mobile']);
         $this->manufacturer                = CompanyFactory::get('Coursera')->getName();
+        $this->brand                       = CompanyFactory::get('Coursera')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

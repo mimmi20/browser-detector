@@ -57,6 +57,7 @@ class Airmail extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Airmail']);
         $this->manufacturer                = CompanyFactory::get('Bloop')->getName();
+        $this->brand                       = CompanyFactory::get('Bloop')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -57,6 +57,7 @@ class Crawler007AC9 extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['007ac9 Crawler']);
         $this->manufacturer                = CompanyFactory::get('Sistrix')->getName();
+        $this->brand                       = CompanyFactory::get('Sistrix')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

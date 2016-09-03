@@ -57,6 +57,7 @@ class CheckSiteVerificationAgent extends AbstractBrowser implements BrowserHasSp
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Checksite')->getName();
+        $this->brand                       = CompanyFactory::get('Checksite')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

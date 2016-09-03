@@ -57,6 +57,7 @@ class AvastSafeZone extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ASW']);
         $this->manufacturer                = CompanyFactory::get('AvastSoftware')->getName();
+        $this->brand                       = CompanyFactory::get('AvastSoftware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

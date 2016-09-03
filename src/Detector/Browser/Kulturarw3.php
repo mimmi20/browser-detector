@@ -57,6 +57,7 @@ class Kulturarw3 extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['kulturarw3']);
         $this->manufacturer                = CompanyFactory::get('NationalLibraryOfSweden')->getName();
+        $this->brand                       = CompanyFactory::get('NationalLibraryOfSweden')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

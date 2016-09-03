@@ -57,6 +57,7 @@ class WeseeSearch extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WeSEE:Search']);
         $this->manufacturer                = CompanyFactory::get('Wesee')->getName();
+        $this->brand                       = CompanyFactory::get('Wesee')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

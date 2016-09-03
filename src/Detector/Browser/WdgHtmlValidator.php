@@ -57,6 +57,7 @@ class WdgHtmlValidator extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WDG_Validator']);
         $this->manufacturer                = CompanyFactory::get('WebDesignGroup')->getName();
+        $this->brand                       = CompanyFactory::get('WebDesignGroup')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

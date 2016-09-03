@@ -57,6 +57,7 @@ class Linguatools extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['linguatools']);
         $this->manufacturer                = CompanyFactory::get('Linguatools')->getName();
+        $this->brand                       = CompanyFactory::get('Linguatools')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

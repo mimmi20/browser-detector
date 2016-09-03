@@ -57,6 +57,7 @@ class CrystalSemanticsBot extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('CrystalSemantics')->getName();
+        $this->brand                       = CompanyFactory::get('CrystalSemantics')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

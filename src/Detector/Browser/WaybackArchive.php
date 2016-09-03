@@ -57,6 +57,7 @@ class WaybackArchive extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['waybackarchive.org']);
         $this->manufacturer                = CompanyFactory::get('WaybackArchiveOrg')->getName();
+        $this->brand                       = CompanyFactory::get('WaybackArchiveOrg')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

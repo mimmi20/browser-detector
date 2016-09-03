@@ -57,6 +57,7 @@ class Lunascape extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Lunascape', 'iLunascape']);
         $this->manufacturer                = CompanyFactory::get('Lunascape')->getName();
+        $this->brand                       = CompanyFactory::get('Lunascape')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

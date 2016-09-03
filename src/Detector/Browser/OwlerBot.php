@@ -57,6 +57,7 @@ class OwlerBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Owler']);
         $this->manufacturer                = CompanyFactory::get('Owler')->getName();
+        $this->brand                       = CompanyFactory::get('Owler')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

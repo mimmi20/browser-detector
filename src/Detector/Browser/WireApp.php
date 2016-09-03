@@ -57,6 +57,7 @@ class WireApp extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Wire']);
         $this->manufacturer                = CompanyFactory::get('WireSwiss')->getName();
+        $this->brand                       = CompanyFactory::get('WireSwiss')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

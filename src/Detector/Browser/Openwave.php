@@ -57,6 +57,7 @@ class Openwave extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['UP\.Browser', 'UP', 'OpenWave']);
         $this->manufacturer                = CompanyFactory::get('Myriad')->getName();
+        $this->brand                       = CompanyFactory::get('Myriad')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

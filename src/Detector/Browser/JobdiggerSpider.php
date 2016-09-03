@@ -57,6 +57,7 @@ class JobdiggerSpider extends AbstractBrowser implements BrowserHasSpecificEngin
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['JobdiggerSpider']);
         $this->manufacturer                = CompanyFactory::get('Jobdigger')->getName();
+        $this->brand                       = CompanyFactory::get('Jobdigger')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

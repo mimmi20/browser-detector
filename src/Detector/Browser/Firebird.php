@@ -57,6 +57,7 @@ class Firebird extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Firebird']);
         $this->manufacturer                = CompanyFactory::get('MozillaFoundation')->getName();
+        $this->brand                       = CompanyFactory::get('MozillaFoundation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -57,6 +57,7 @@ class CloudFlareAlwaysOnline extends AbstractBrowser implements BrowserHasSpecif
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['CloudFlare\-AlwaysOnline']);
         $this->manufacturer                = CompanyFactory::get('CloudFlare')->getName();
+        $this->brand                       = CompanyFactory::get('CloudFlare')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class IceCat extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['IceCat']);
         $this->manufacturer                = CompanyFactory::get('Gnu')->getName();
+        $this->brand                       = CompanyFactory::get('Gnu')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

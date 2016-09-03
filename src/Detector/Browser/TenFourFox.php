@@ -57,6 +57,7 @@ class TenFourFox extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['TenFourFox']);
         $this->manufacturer                = CompanyFactory::get('CameronKaiser')->getName();
+        $this->brand                       = CompanyFactory::get('CameronKaiser')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

@@ -57,6 +57,7 @@ class Kmail2 extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['kmail2']);
         $this->manufacturer                = CompanyFactory::get('Kde')->getName();
+        $this->brand                       = CompanyFactory::get('Kde')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

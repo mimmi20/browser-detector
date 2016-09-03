@@ -57,6 +57,7 @@ class TubeTv extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['TubeTV']);
         $this->manufacturer                = CompanyFactory::get('Chimoosoft')->getName();
+        $this->brand                       = CompanyFactory::get('Chimoosoft')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

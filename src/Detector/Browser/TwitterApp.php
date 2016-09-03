@@ -57,6 +57,7 @@ class TwitterApp extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Twitter')->getName();
+        $this->brand                       = CompanyFactory::get('Twitter')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = true;
         $this->canSkipAlignedLinkRow       = true;

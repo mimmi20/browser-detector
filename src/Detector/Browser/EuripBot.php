@@ -57,6 +57,7 @@ class EuripBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['EuripBot']);
         $this->manufacturer                = CompanyFactory::get('Eurip')->getName();
+        $this->brand                       = CompanyFactory::get('Eurip')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

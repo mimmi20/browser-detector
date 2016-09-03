@@ -57,6 +57,7 @@ class Mj12bot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MJ12bot\/v', 'MJ12bot']);
         $this->manufacturer                = CompanyFactory::get('Majestic12')->getName();
+        $this->brand                       = CompanyFactory::get('Majestic12')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

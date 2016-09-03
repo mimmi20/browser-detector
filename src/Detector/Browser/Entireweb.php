@@ -57,6 +57,7 @@ class Entireweb extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Entireweb']);
         $this->manufacturer                = CompanyFactory::get('Entireweb')->getName();
+        $this->brand                       = CompanyFactory::get('Entireweb')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class BotRevolt extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['revolt']);
         $this->manufacturer                = CompanyFactory::get('BotRevolt')->getName();
+        $this->brand                       = CompanyFactory::get('BotRevolt')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

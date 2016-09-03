@@ -57,6 +57,7 @@ class AlltopApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Alltop']);
         $this->manufacturer                = CompanyFactory::get('Alltop')->getName();
+        $this->brand                       = CompanyFactory::get('Alltop')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

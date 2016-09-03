@@ -57,6 +57,7 @@ class AjaxSnapBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AjaxSnapBot']);
         $this->manufacturer                = CompanyFactory::get('Tockify')->getName();
+        $this->brand                       = CompanyFactory::get('Tockify')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

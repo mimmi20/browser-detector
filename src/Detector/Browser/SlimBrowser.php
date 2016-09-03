@@ -57,6 +57,7 @@ class SlimBrowser extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SlimBrowser']);
         $this->manufacturer                = CompanyFactory::get('FlashPeak')->getName();
+        $this->brand                       = CompanyFactory::get('FlashPeak')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

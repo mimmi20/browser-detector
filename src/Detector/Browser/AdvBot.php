@@ -57,6 +57,7 @@ class AdvBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AdvBot']);
         $this->manufacturer                = CompanyFactory::get('AdvBot')->getName();
+        $this->brand                       = CompanyFactory::get('AdvBot')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

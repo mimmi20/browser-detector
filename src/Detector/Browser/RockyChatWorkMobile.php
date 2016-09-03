@@ -57,6 +57,7 @@ class RockyChatWorkMobile extends AbstractBrowser implements BrowserHasSpecificE
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Rocky ChatWork Mobile']);
         $this->manufacturer                = CompanyFactory::get('ChatWork')->getName();
+        $this->brand                       = CompanyFactory::get('ChatWork')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

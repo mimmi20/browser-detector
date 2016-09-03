@@ -57,6 +57,7 @@ class Qwantify extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Qwantify']);
         $this->manufacturer                = CompanyFactory::get('Qwant')->getName();
+        $this->brand                       = CompanyFactory::get('Qwant')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

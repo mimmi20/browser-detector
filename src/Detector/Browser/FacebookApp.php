@@ -57,6 +57,7 @@ class FacebookApp extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Facebook', 'FBAV', 'facebookexternalhit']);
         $this->manufacturer                = CompanyFactory::get('Facebook')->getName();
+        $this->brand                       = CompanyFactory::get('Facebook')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

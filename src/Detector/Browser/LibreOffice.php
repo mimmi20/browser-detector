@@ -57,6 +57,7 @@ class LibreOffice extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['LibreOffice']);
         $this->manufacturer                = CompanyFactory::get('TheDocumentFoundation')->getName();
+        $this->brand                       = CompanyFactory::get('TheDocumentFoundation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

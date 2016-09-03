@@ -57,6 +57,7 @@ class FirefoxIos extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['FxiOS']);
         $this->manufacturer                = CompanyFactory::get('MozillaFoundation')->getName();
+        $this->brand                       = CompanyFactory::get('MozillaFoundation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

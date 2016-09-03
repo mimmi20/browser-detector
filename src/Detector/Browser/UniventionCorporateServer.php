@@ -57,6 +57,7 @@ class UniventionCorporateServer extends AbstractBrowser implements BrowserHasSpe
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['UCS \(ESX\) \- ']);
         $this->manufacturer                = CompanyFactory::get('Univention')->getName();
+        $this->brand                       = CompanyFactory::get('Univention')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

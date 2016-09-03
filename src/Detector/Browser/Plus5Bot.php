@@ -57,6 +57,7 @@ class Plus5Bot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['\+5Bot']);
         $this->manufacturer                = CompanyFactory::get('Plus5Files')->getName();
+        $this->brand                       = CompanyFactory::get('Plus5Files')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class Wotbox extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Wotbox']);
         $this->manufacturer                = CompanyFactory::get('Wotbox')->getName();
+        $this->brand                       = CompanyFactory::get('Wotbox')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

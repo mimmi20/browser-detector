@@ -57,6 +57,7 @@ class Vivaldi extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Vivaldi']);
         $this->manufacturer                = CompanyFactory::get('Vivaldi')->getName();
+        $this->brand                       = CompanyFactory::get('Vivaldi')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -46,7 +46,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 
     $templateContent = str_replace(
         'CompanyFactory::get(\'' . $manufacturer . '\')->getName()',
-        'CompanyFactory::get(\'' . $manufacturer . '\')->getName();' . "\n" . '$this->brand                       = CompanyFactory::get(\'' . $manufacturer . '\')->getName()',
+        'CompanyFactory::get(\'' . $manufacturer . '\')->getName();' . "\n" . '        $this->brand                       = CompanyFactory::get(\'' . $manufacturer . '\')->getBrandName()',
         $filecontent
     );
 

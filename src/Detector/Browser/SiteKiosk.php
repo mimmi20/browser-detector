@@ -57,6 +57,7 @@ class SiteKiosk extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SiteKiosk']);
         $this->manufacturer                = CompanyFactory::get('Provisio')->getName();
+        $this->brand                       = CompanyFactory::get('Provisio')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

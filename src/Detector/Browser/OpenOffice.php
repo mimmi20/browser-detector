@@ -57,6 +57,7 @@ class OpenOffice extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['OpenOffice']);
         $this->manufacturer                = CompanyFactory::get('Apache')->getName();
+        $this->brand                       = CompanyFactory::get('Apache')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

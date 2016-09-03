@@ -57,6 +57,7 @@ class PagesInventoryBot extends AbstractBrowser implements BrowserHasSpecificEng
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PagesInventory']);
         $this->manufacturer                = CompanyFactory::get('PagesInventory')->getName();
+        $this->brand                       = CompanyFactory::get('PagesInventory')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

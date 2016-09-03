@@ -57,6 +57,7 @@ class Palemoon extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['PaleMoon']);
         $this->manufacturer                = CompanyFactory::get('MoonchildProductions')->getName();
+        $this->brand                       = CompanyFactory::get('MoonchildProductions')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

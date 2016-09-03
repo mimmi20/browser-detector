@@ -57,6 +57,7 @@ class RivalIqBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Rival IQ']);
         $this->manufacturer                = CompanyFactory::get('RivalIq')->getName();
+        $this->brand                       = CompanyFactory::get('RivalIq')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class TheOldReader extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['theoldreader']);
         $this->manufacturer                = CompanyFactory::get('TheOldReader')->getName();
+        $this->brand                       = CompanyFactory::get('TheOldReader')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

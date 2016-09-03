@@ -57,6 +57,7 @@ class AskBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Ask']);
         $this->manufacturer                = CompanyFactory::get('Ask')->getName();
+        $this->brand                       = CompanyFactory::get('Ask')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

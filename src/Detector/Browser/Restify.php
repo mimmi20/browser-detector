@@ -57,6 +57,7 @@ class Restify extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['restify']);
         $this->manufacturer                = CompanyFactory::get('MarkCavage')->getName();
+        $this->brand                       = CompanyFactory::get('MarkCavage')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

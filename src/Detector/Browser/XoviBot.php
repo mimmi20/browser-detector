@@ -57,6 +57,7 @@ class XoviBot extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['XoviBot']);
         $this->manufacturer                = CompanyFactory::get('Xovi')->getName();
+        $this->brand                       = CompanyFactory::get('Xovi')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

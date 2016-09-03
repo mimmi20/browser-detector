@@ -57,6 +57,7 @@ class Findlinks extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['findlinks']);
         $this->manufacturer                = CompanyFactory::get('WortschatzUniLeipzig')->getName();
+        $this->brand                       = CompanyFactory::get('WortschatzUniLeipzig')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

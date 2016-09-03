@@ -57,6 +57,7 @@ class Links extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Links', 'Links \(']);
         $this->manufacturer                = CompanyFactory::get('MikulasPatocka')->getName();
+        $this->brand                       = CompanyFactory::get('MikulasPatocka')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

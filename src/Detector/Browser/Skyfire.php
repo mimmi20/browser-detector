@@ -57,6 +57,7 @@ class Skyfire extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Skyfire']);
         $this->manufacturer                = CompanyFactory::get('Opera')->getName();
+        $this->brand                       = CompanyFactory::get('Opera')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

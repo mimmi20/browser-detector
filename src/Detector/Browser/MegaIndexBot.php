@@ -57,6 +57,7 @@ class MegaIndexBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['MegaIndex\.ru']);
         $this->manufacturer                = CompanyFactory::get('MegaIndex')->getName();
+        $this->brand                       = CompanyFactory::get('MegaIndex')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

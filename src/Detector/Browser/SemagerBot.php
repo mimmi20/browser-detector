@@ -57,6 +57,7 @@ class SemagerBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Semager']);
         $this->manufacturer                = CompanyFactory::get('Semager')->getName();
+        $this->brand                       = CompanyFactory::get('Semager')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

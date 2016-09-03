@@ -57,6 +57,7 @@ class ScreenerBot extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['ScreenerBot Crawler Beta']);
         $this->manufacturer                = CompanyFactory::get('ScreenerBot')->getName();
+        $this->brand                       = CompanyFactory::get('ScreenerBot')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

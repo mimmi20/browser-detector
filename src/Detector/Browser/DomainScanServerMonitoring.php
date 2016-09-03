@@ -57,6 +57,7 @@ class DomainScanServerMonitoring extends AbstractBrowser implements BrowserHasSp
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['DomainSCAN']);
         $this->manufacturer                = CompanyFactory::get('GhSoftware')->getName();
+        $this->brand                       = CompanyFactory::get('GhSoftware')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

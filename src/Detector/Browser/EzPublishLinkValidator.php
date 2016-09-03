@@ -57,6 +57,7 @@ class EzPublishLinkValidator extends AbstractBrowser implements BrowserHasSpecif
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('EzSystems')->getName();
+        $this->brand                       = CompanyFactory::get('EzSystems')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class ApacheHttpClient extends AbstractBrowser implements BrowserHasSpecificEngi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Apache\-HttpClient']);
         $this->manufacturer                = CompanyFactory::get('Apache')->getName();
+        $this->brand                       = CompanyFactory::get('Apache')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

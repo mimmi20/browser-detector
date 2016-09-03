@@ -57,6 +57,7 @@ class RevIpSnfoSiteAnalyzer extends AbstractBrowser implements BrowserHasSpecifi
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['RevIP\.info site analyzer v']);
         $this->manufacturer                = CompanyFactory::get('Binarymonkey')->getName();
+        $this->brand                       = CompanyFactory::get('Binarymonkey')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

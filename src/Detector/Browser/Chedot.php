@@ -57,6 +57,7 @@ class Chedot extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Chedot']);
         $this->manufacturer                = CompanyFactory::get('Chedot')->getName();
+        $this->brand                       = CompanyFactory::get('Chedot')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

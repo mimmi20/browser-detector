@@ -57,6 +57,7 @@ class WordPress extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['WordPress', 'WordPress\-B\-', 'WordPress\-Do\-P\-']);
         $this->manufacturer                = CompanyFactory::get('WordPress')->getName();
+        $this->brand                       = CompanyFactory::get('WordPress')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

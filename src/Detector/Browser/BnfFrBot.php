@@ -57,6 +57,7 @@ class BnfFrBot extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['bnf.fr_bot']);
         $this->manufacturer                = CompanyFactory::get('BibliothequeNationaledeFrance')->getName();
+        $this->brand                       = CompanyFactory::get('BibliothequeNationaledeFrance')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

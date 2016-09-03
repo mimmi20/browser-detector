@@ -57,6 +57,7 @@ class Jupdate extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['jupdate']);
         $this->manufacturer                = CompanyFactory::get('DmSolutions')->getName();
+        $this->brand                       = CompanyFactory::get('DmSolutions')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

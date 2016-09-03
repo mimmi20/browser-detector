@@ -57,6 +57,7 @@ class Nutch extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Nutch', 'Nutch\-']);
         $this->manufacturer                = CompanyFactory::get('Apache')->getName();
+        $this->brand                       = CompanyFactory::get('Apache')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

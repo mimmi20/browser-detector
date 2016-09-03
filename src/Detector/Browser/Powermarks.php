@@ -57,6 +57,7 @@ class Powermarks extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Powermarks']);
         $this->manufacturer                = CompanyFactory::get('KaylonTechnologies')->getName();
+        $this->brand                       = CompanyFactory::get('KaylonTechnologies')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

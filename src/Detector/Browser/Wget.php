@@ -57,6 +57,7 @@ class Wget extends AbstractBrowser implements BrowserHasSpecificEngineInterface
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Wget', 'wget']);
         $this->manufacturer                = CompanyFactory::get('FreeSoftwareFoundation')->getName();
+        $this->brand                       = CompanyFactory::get('FreeSoftwareFoundation')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

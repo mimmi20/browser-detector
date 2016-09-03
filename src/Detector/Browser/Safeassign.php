@@ -57,6 +57,7 @@ class Safeassign extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Blackboard')->getName();
+        $this->brand                       = CompanyFactory::get('Blackboard')->getBrandName();
         $this->pdfSupport                  = false;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class SearchteqBot extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['stq\_bot']);
         $this->manufacturer                = CompanyFactory::get('Searchteq')->getName();
+        $this->brand                       = CompanyFactory::get('Searchteq')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

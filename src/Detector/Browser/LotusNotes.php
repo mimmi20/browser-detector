@@ -57,6 +57,7 @@ class LotusNotes extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['LotusNotes', 'Lotus\-Notes']);
         $this->manufacturer                = CompanyFactory::get('Ibm')->getName();
+        $this->brand                       = CompanyFactory::get('Ibm')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

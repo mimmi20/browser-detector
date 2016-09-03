@@ -57,6 +57,7 @@ class SamsungBrowser extends AbstractBrowser implements BrowserHasSpecificEngine
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SamsungBrowser']);
         $this->manufacturer                = CompanyFactory::get('Samsung')->getName();
+        $this->brand                       = CompanyFactory::get('Samsung')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;

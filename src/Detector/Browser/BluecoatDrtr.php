@@ -57,6 +57,7 @@ class BluecoatDrtr extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Bluecoat DRTR']);
         $this->manufacturer                = CompanyFactory::get('Bluecoat')->getName();
+        $this->brand                       = CompanyFactory::get('Bluecoat')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

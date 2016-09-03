@@ -57,6 +57,7 @@ class Spiderlytics extends AbstractBrowser implements BrowserHasSpecificEngineIn
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Spiderlytics']);
         $this->manufacturer                = CompanyFactory::get('Spiderlytics')->getName();
+        $this->brand                       = CompanyFactory::get('Spiderlytics')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

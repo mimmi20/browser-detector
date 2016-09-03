@@ -57,6 +57,7 @@ class KomodiaBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['KomodiaBot']);
         $this->manufacturer                = CompanyFactory::get('KomodiaInc')->getName();
+        $this->brand                       = CompanyFactory::get('KomodiaInc')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class GooglePageSpeedInsights extends AbstractBrowser implements BrowserHasSpeci
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['Google Page Speed Insights']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
+        $this->brand                       = CompanyFactory::get('Google')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

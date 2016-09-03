@@ -57,6 +57,7 @@ class SecurepointContentFilter extends AbstractBrowser implements BrowserHasSpec
         $this->modus                       = null;
         $this->version                     = new Version(0);
         $this->manufacturer                = CompanyFactory::get('Securepoint')->getName();
+        $this->brand                       = CompanyFactory::get('Securepoint')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

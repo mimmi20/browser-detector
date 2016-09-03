@@ -57,6 +57,7 @@ class SeoDiver extends AbstractBrowser implements BrowserHasSpecificEngineInterf
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['SEOdiver']);
         $this->manufacturer                = CompanyFactory::get('Seodiver')->getName();
+        $this->brand                       = CompanyFactory::get('Seodiver')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

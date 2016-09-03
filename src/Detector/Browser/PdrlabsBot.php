@@ -57,6 +57,7 @@ class PdrlabsBot extends AbstractBrowser implements BrowserHasSpecificEngineInte
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['pdrlabs']);
         $this->manufacturer                = CompanyFactory::get('Pdrlabs')->getName();
+        $this->brand                       = CompanyFactory::get('Pdrlabs')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = false;

@@ -57,6 +57,7 @@ class AtomicBrowser extends AbstractBrowser implements BrowserHasSpecificEngineI
         $this->modus                       = null;
         $this->version                     = VersionFactory::detectVersion($useragent, ['AtomicBrowser', 'AtomicLite']);
         $this->manufacturer                = CompanyFactory::get('RichardTrautvetter')->getName();
+        $this->brand                       = CompanyFactory::get('RichardTrautvetter')->getBrandName();
         $this->pdfSupport                  = true;
         $this->rssSupport                  = false;
         $this->canSkipAlignedLinkRow       = true;
