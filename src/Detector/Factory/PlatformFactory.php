@@ -97,7 +97,7 @@ class PlatformFactory implements FactoryInterface
         }
 
         if ($isWindows) {
-            return new Os\Windows($agent);
+            return Platform\WindowsFactory::detect($agent);
         }
 
         if (preg_match('/(SymbianOS|SymbOS|Symbian|Series 60|S60V3|S60V5)/', $agent)) {

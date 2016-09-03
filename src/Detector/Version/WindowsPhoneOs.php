@@ -59,7 +59,7 @@ class WindowsPhoneOs
         }
 
         if ($utils->checkIfContains(['WPDesktop'])) {
-            if ($utils->checkIfContains(['Windows NT 6.2'])) {
+            if ($utils->checkIfContains(['Windows NT 6.2', 'Windows NT 6.3'])) {
                 return VersionFactory::set('8.1');
             }
 

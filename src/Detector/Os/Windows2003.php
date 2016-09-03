@@ -32,7 +32,7 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\Version;
 
 /**
  * @category  BrowserDetector
@@ -40,7 +40,7 @@ use BrowserDetector\Detector\Version;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WindowsRt extends AbstractOs
+class Windows2003 extends AbstractOs
 {
     /**
      * Class Constructor
@@ -50,9 +50,9 @@ class WindowsRt extends AbstractOs
     public function __construct($useragent)
     {
         $this->useragent     = $useragent;
-        $this->name          = 'Windows RT';
-        $this->marketingName = 'Windows RT';
-        $this->version       = Version\WindowsRt::detectVersion($useragent);
+        $this->name          = 'Windows 2003';
+        $this->marketingName = 'Windows 2003';
+        $this->version       = new Version(0);
         $this->manufacturer  = CompanyFactory::get('Microsoft')->getName();
         $this->brand         = CompanyFactory::get('Microsoft')->getBrandName();
     }

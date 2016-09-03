@@ -29,8 +29,10 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Version;
+namespace BrowserDetector\Detector\Factory\Platform;
 
+use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Os;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use UaHelper\Utils;
@@ -41,34 +43,34 @@ use UaHelper\Utils;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class Windows
+class WindowsFactory implements FactoryInterface
 {
     /**
-     * returns the version of the operating system/platform
+     * Gets the information about the platform by User Agent
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\Version
+     * @return \UaResult\Os\OsInterface
      */
-    public static function detectVersion($useragent)
+    public static function detect($useragent)
     {
         $utils = new Utils();
         $utils->setUserAgent($useragent);
 
         if ($utils->checkIfContains(['win9x/NT 4.90', 'Win 9x 4.90', 'Win 9x4.90'])) {
-            return VersionFactory::set('ME');
+            return new Os\WindowsMe($useragent);
         }
 
         if ($utils->checkIfContains(['Win98'])) {
-            return VersionFactory::set('98');
+            return new Os\Windows98($useragent);
         }
 
         if ($utils->checkIfContains(['Win95'])) {
-            return VersionFactory::set('95');
+            return new Os\Windows95($useragent);
         }
 
         if ($utils->checkIfContains(['Windows-NT'])) {
-            return VersionFactory::set('NT');
+            return new Os\WindowsNt($useragent);
         }
 
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $useragent, $matches);
@@ -77,39 +79,39 @@ class Windows
             switch ($matches[1]) {
                 case '6.4':
                 case '10.0':
-                    $version = '10';
+                    return new Os\Windows10($useragent, $matches[1]);
                     break;
                 case '6.3':
-                    $version = '8.1';
+                    return new Os\Windows81($useragent);
                     break;
                 case '6.2':
-                    $version = '8';
+                    return new Os\Windows8($useragent);
                     break;
                 case '6.1':
-                    $version = '7';
+                    return new Os\Windows7($useragent);
                     break;
                 case '6.0':
-                    $version = 'Vista';
+                    return new Os\WindowsVista($useragent);
                     break;
                 case '5.3':
                 case '5.2':
                 case '5.1':
-                    $version = 'XP';
+                    return new Os\WindowsXp($useragent, $matches[1]);
                     break;
                 case '5.0':
                 case '5.01':
-                    $version = '2000';
+                    return new Os\Windows2000($useragent, $matches[1]);
                     break;
                 case '4.1':
                 case '4.0':
-                    $version = 'NT';
+                    return new Os\WindowsNt($useragent, $matches[1]);
                     break;
                 default:
-                    $version = '0.0';
+                    // nothing to do here
                     break;
             }
 
-            return VersionFactory::set($version);
+            return new Os\Windows($useragent);
         }
 
         $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $useragent, $matches);
@@ -118,60 +120,67 @@ class Windows
             switch ($matches[1]) {
                 case '6.4':
                 case '10.0':
-                    $version = '10';
+                    return new Os\Windows10($useragent, $matches[1]);
                     break;
                 case '6.3':
-                    $version = '8.1';
+                    return new Os\Windows81($useragent);
                     break;
                 case '6.2':
-                    $version = '8';
+                    return new Os\Windows8($useragent);
                     break;
                 case '6.1':
                 case '7':
-                    $version = '7';
+                    return new Os\Windows7($useragent);
                     break;
                 case '6.0':
-                    $version = 'Vista';
+                case 'Vista':
+                    return new Os\WindowsVista($useragent);
                     break;
                 case '2003':
-                    $version = 'Server 2003';
+                    return new Os\Windows2003($useragent);
                     break;
                 case '5.3':
                 case '5.2':
                 case '5.1':
+                    return new Os\WindowsXp($useragent, $matches[1]);
+                    break;
                 case 'XP':
-                    $version = 'XP';
+                    return new Os\WindowsXp($useragent);
                     break;
                 case 'ME':
-                    $version = 'ME';
+                    return new Os\WindowsMe($useragent);
                     break;
                 case '2000':
+                    return new Os\Windows2000($useragent);
+                    break;
                 case '5.0':
                 case '5.01':
-                    $version = '2000';
+                    return new Os\Windows2000($useragent, $matches[1]);
                     break;
                 case '3.1':
-                    $version = '3.1';
+                    return new Os\Windows31($useragent);
                     break;
                 case '95':
-                    $version = '95';
+                    return new Os\Windows95($useragent);
                     break;
                 case '98':
-                    $version = '98';
+                    return new Os\Windows98($useragent);
                     break;
                 case '4.1':
                 case '4.0':
+                    return new Os\WindowsNt($useragent, $matches[1]);
+                    break;
                 case 'NT':
-                    $version = 'NT';
+                    return new Os\WindowsNt($useragent);
                     break;
                 default:
-                    $version = '0.0';
+                    // nothing to do here
                     break;
             }
 
-            return VersionFactory::set($version);
+            return new Os\Windows($useragent);
         }
 
-        return new Version(0);
+        return new Os\Windows($useragent);
     }
 }

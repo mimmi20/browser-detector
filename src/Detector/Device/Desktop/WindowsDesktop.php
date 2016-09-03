@@ -76,6 +76,6 @@ class WindowsDesktop extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return new Os\Windows($this->useragent);
+        return null;
     }
 }
