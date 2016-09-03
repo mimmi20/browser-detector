@@ -49,9 +49,11 @@ class Mandriva extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Mandriva Linux';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Mandriva')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Mandriva Linux';
+        $this->marketingName = 'Mandriva Linux';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Mandriva')->getName();
+        $this->brand         = CompanyFactory::get('Mandriva')->getBrandName();
     }
 }

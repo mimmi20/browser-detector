@@ -49,9 +49,11 @@ class InfernoOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Inferno OS';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Vita Nuova')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Inferno OS';
+        $this->marketingName = 'Inferno OS';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Vita Nuova')->getName();
+        $this->brand         = CompanyFactory::get('Vita Nuova')->getBrandName();
     }
 }

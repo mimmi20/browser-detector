@@ -49,9 +49,11 @@ class Debian extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Debian';
-        $this->version      = Version\Debian::detectVersion($useragent);
-        $this->manufacturer = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Debian';
+        $this->marketingName = 'Debian';
+        $this->version       = Version\Debian::detectVersion($useragent);
+        $this->manufacturer  = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
+        $this->brand         = CompanyFactory::get('SoftwareInThePublicInterest')->getBrandName();
     }
 }

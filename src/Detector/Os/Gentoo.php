@@ -49,9 +49,11 @@ class Gentoo extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Gentoo Linux';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Gentoo')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Gentoo Linux';
+        $this->marketingName = 'Gentoo Linux';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Gentoo')->getName();
+        $this->brand         = CompanyFactory::get('Gentoo')->getBrandName();
     }
 }

@@ -55,7 +55,7 @@ class TelecaObigo extends AbstractBrowser implements BrowserHasSpecificEngineInt
         $this->useragent                   = $useragent;
         $this->name                        = 'Teleca-Obigo';
         $this->modus                       = null;
-        $this->version                     = VersionFactory::detectVersion($useragent, [            'MIC',            'ObigoInternetBrowser',            'Obigo Browser',            'Obigo\-Browser',            'Teleca\-Obigo',            'TelecaBrowser',        ]);
+        $this->version                     = VersionFactory::detectVersion($useragent, ['MIC',            'ObigoInternetBrowser',            'Obigo Browser',            'Obigo\-Browser',            'Teleca\-Obigo',            'TelecaBrowser']);
         $this->manufacturer                = CompanyFactory::get('Obigo')->getName();
         $this->brand                       = CompanyFactory::get('Obigo')->getBrandName();
         $this->pdfSupport                  = true;

@@ -49,9 +49,11 @@ class CrOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'ChromeOS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['CrOS']);
-        $this->manufacturer = CompanyFactory::get('Google')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'ChromeOS';
+        $this->marketingName = 'ChromeOS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['CrOS']);
+        $this->manufacturer  = CompanyFactory::get('Google')->getName();
+        $this->brand         = CompanyFactory::get('Google')->getBrandName();
     }
 }

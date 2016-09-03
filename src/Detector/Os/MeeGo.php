@@ -49,9 +49,11 @@ class MeeGo extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'MeeGo';
-        $this->version      = VersionFactory::detectVersion($useragent, ['MeeGo']);
-        $this->manufacturer = CompanyFactory::get('LinuxFoundation')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'MeeGo';
+        $this->marketingName = 'MeeGo';
+        $this->version       = VersionFactory::detectVersion($useragent, ['MeeGo']);
+        $this->manufacturer  = CompanyFactory::get('LinuxFoundation')->getName();
+        $this->brand         = CompanyFactory::get('LinuxFoundation')->getBrandName();
     }
 }

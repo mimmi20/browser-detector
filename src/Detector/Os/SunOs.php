@@ -49,9 +49,11 @@ class SunOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'SunOS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['SunOS']);
-        $this->manufacturer = CompanyFactory::get('Oracle')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'SunOS';
+        $this->marketingName = 'SunOS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['SunOS']);
+        $this->manufacturer  = CompanyFactory::get('Oracle')->getName();
+        $this->brand         = CompanyFactory::get('Oracle')->getBrandName();
     }
 }

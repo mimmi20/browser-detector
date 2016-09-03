@@ -55,7 +55,7 @@ class GoogleApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'Google App';
         $this->modus                       = null;
-        $this->version                     = VersionFactory::detectVersion($useragent, [            'GSA',        ]);
+        $this->version                     = VersionFactory::detectVersion($useragent, ['GSA']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->brand                       = CompanyFactory::get('Google')->getBrandName();
         $this->pdfSupport                  = true;

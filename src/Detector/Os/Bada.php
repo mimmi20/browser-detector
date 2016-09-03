@@ -49,9 +49,11 @@ class Bada extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Bada';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Bada']);
-        $this->manufacturer = CompanyFactory::get('Samsung')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Bada';
+        $this->marketingName = 'Bada';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Bada']);
+        $this->manufacturer  = CompanyFactory::get('Samsung')->getName();
+        $this->brand         = CompanyFactory::get('Samsung')->getBrandName();
     }
 }

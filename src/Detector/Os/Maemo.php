@@ -49,9 +49,11 @@ class Maemo extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Linux Smartphone OS (Maemo)';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Maemo']);
-        $this->manufacturer = CompanyFactory::get('LinuxFoundation')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Linux Smartphone OS (Maemo)';
+        $this->marketingName = 'Linux Smartphone OS (Maemo)';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Maemo']);
+        $this->manufacturer  = CompanyFactory::get('LinuxFoundation')->getName();
+        $this->brand         = CompanyFactory::get('LinuxFoundation')->getBrandName();
     }
 }

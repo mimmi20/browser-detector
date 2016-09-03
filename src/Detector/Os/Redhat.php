@@ -49,9 +49,11 @@ class Redhat extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Redhat Linux';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Redhat')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Redhat Linux';
+        $this->marketingName = 'Redhat Linux';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Redhat')->getName();
+        $this->brand         = CompanyFactory::get('Redhat')->getBrandName();
     }
 }

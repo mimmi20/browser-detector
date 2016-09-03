@@ -54,5 +54,6 @@ class NetFront extends Engine
         $this->name         = 'NetFront';
         $this->version      = new Version(0);
         $this->manufacturer = CompanyFactory::get('Access')->getName();
+        $this->brand        = CompanyFactory::get('Access')->getBrandName();
     }
 }

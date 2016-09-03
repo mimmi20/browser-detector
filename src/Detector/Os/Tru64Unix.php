@@ -49,9 +49,11 @@ class Tru64Unix extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Tru64 UNIX';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Tru64 UNIX', 'Digital Unix']);
-        $this->manufacturer = CompanyFactory::get('Hp')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Tru64 UNIX';
+        $this->marketingName = 'Tru64 UNIX';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Tru64 UNIX', 'Digital Unix']);
+        $this->manufacturer  = CompanyFactory::get('Hp')->getName();
+        $this->brand         = CompanyFactory::get('Hp')->getBrandName();
     }
 }

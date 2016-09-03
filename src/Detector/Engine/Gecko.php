@@ -54,5 +54,6 @@ class Gecko extends Engine
         $this->name         = 'Gecko';
         $this->version      = VersionFactory::detectVersion($useragent, ['rv\:']);
         $this->manufacturer = CompanyFactory::get('MozillaFoundation')->getName();
+        $this->brand        = CompanyFactory::get('MozillaFoundation')->getBrandName();
     }
 }

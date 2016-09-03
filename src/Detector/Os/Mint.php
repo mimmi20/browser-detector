@@ -49,9 +49,11 @@ class Mint extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Linux Mint';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Mint', 'mint']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Linux Mint';
+        $this->marketingName = 'Linux Mint';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Mint', 'mint']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

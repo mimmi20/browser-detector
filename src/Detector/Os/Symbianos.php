@@ -49,9 +49,11 @@ class Symbianos extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Symbian OS';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('SymbianFoundation')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Symbian OS';
+        $this->marketingName = 'Symbian OS';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('SymbianFoundation')->getName();
+        $this->brand         = CompanyFactory::get('SymbianFoundation')->getBrandName();
     }
 }

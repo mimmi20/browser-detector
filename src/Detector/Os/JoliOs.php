@@ -49,9 +49,11 @@ class JoliOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Joli OS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Joli OS']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Joli OS';
+        $this->marketingName = 'Joli OS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Joli OS']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

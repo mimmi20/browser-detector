@@ -49,9 +49,11 @@ class CentOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Cent OS Linux';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Cent OS Linux';
+        $this->marketingName = 'Cent OS Linux';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

@@ -49,9 +49,11 @@ class Slackware extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Slackware Linux';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Slackware']);
-        $this->manufacturer = CompanyFactory::get('Slackware')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Slackware Linux';
+        $this->marketingName = 'Slackware Linux';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Slackware']);
+        $this->manufacturer  = CompanyFactory::get('Slackware')->getName();
+        $this->brand         = CompanyFactory::get('Slackware')->getBrandName();
     }
 }

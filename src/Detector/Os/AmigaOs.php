@@ -49,9 +49,11 @@ class AmigaOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Amiga OS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['AmigaOS']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Amiga OS';
+        $this->marketingName = 'Amiga OS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['AmigaOS']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

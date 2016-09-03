@@ -49,9 +49,11 @@ class Liberate extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Liberate';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Liberate']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Liberate';
+        $this->marketingName = 'Liberate';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Liberate']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

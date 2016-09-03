@@ -54,5 +54,6 @@ class Blink extends Engine
         $this->name         = 'Blink';
         $this->version      = VersionFactory::detectVersion($useragent, ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\/AppleWebKit']);
         $this->manufacturer = CompanyFactory::get('Google')->getName();
+        $this->brand        = CompanyFactory::get('Google')->getBrandName();
     }
 }

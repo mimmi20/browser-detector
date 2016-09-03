@@ -49,9 +49,11 @@ class Tizen extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Tizen';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Tizen']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Tizen';
+        $this->marketingName = 'Tizen';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Tizen']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

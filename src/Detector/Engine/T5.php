@@ -54,5 +54,6 @@ class T5 extends Engine
         $this->name         = 'T5';
         $this->version      = VersionFactory::detectVersion($useragent, ['T5']);
         $this->manufacturer = CompanyFactory::get('Baidu')->getName();
+        $this->brand        = CompanyFactory::get('Baidu')->getBrandName();
     }
 }

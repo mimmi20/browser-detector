@@ -49,9 +49,11 @@ class Windows extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Windows';
-        $this->version      = Version\Windows::detectVersion($useragent);
-        $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Windows';
+        $this->marketingName = 'Windows';
+        $this->version       = Version\Windows::detectVersion($useragent);
+        $this->manufacturer  = CompanyFactory::get('Microsoft')->getName();
+        $this->brand         = CompanyFactory::get('Microsoft')->getBrandName();
     }
 }

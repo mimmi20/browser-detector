@@ -49,9 +49,11 @@ class AndroidOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Android';
-        $this->version      = Version\AndroidOs::detectVersion($useragent);
-        $this->manufacturer = CompanyFactory::get('Google')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Android';
+        $this->marketingName = 'Android';
+        $this->version       = Version\AndroidOs::detectVersion($useragent);
+        $this->manufacturer  = CompanyFactory::get('Google')->getName();
+        $this->brand         = CompanyFactory::get('Google')->getBrandName();
     }
 }

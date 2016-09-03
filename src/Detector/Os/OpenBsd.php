@@ -49,9 +49,11 @@ class OpenBsd extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'OpenBSD';
-        $this->version      = VersionFactory::detectVersion($useragent, ['OpenBSD']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'OpenBSD';
+        $this->marketingName = 'OpenBSD';
+        $this->version       = VersionFactory::detectVersion($useragent, ['OpenBSD']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

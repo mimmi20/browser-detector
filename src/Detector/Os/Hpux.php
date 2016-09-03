@@ -49,9 +49,11 @@ class Hpux extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'HP-UX';
-        $this->version      = VersionFactory::detectVersion($useragent, ['HP-UX']);
-        $this->manufacturer = CompanyFactory::get('Hp')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'HP-UX';
+        $this->marketingName = 'HP-UX';
+        $this->version       = VersionFactory::detectVersion($useragent, ['HP-UX']);
+        $this->manufacturer  = CompanyFactory::get('Hp')->getName();
+        $this->brand         = CompanyFactory::get('Hp')->getBrandName();
     }
 }

@@ -28,9 +28,13 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     $filecontent      = file_get_contents($fullpath);
     $marketingMatches = [];
 
-    if (preg_match('/\\$this\\-\\>manufacturer = (\\(new Company\\\\[^\\;]+)/', $filecontent, $marketingMatches)) {
-        $manufacturerFull = $marketingMatches[1];
-    } else {
+    $fullpath    = $file->getPathname();
+    $pathMatches = [];
+
+    $filecontent      = file_get_contents($fullpath);
+    $marketingMatches = [];
+
+    if (!preg_match('/\\$this\\-\\>name         = \\\'([^\\\']+)/', $filecontent, $marketingMatches)) {
         continue;
     }
 
@@ -38,15 +42,15 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 
     $marketingMatches = [];
 
-    if (preg_match('/\\$this\\-\\>manufacturer = \\(new Company\\\\([^\\(]+)/', $filecontent, $marketingMatches)) {
+    if (preg_match('/\\$this\\-\\>name         = \\\'([^\\\']+)/', $filecontent, $marketingMatches)) {
         $manufacturer = $marketingMatches[1];
     } else {
         $manufacturer = 'Unknown';
     }
 
     $templateContent = str_replace(
-        $manufacturerFull,
-        'CompanyFactory::get(\'' . $manufacturer . '\')->getName()',
+        '$this->name         = \'' . $manufacturer . '\'',
+        '$this->name         = \'' . $manufacturer . '\';' . "\n" . '        $this->marketingName = \'' . $manufacturer . '\'',
         $filecontent
     );
 

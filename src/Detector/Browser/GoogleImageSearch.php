@@ -55,7 +55,7 @@ class GoogleImageSearch extends AbstractBrowser implements BrowserHasSpecificEng
         $this->useragent                   = $useragent;
         $this->name                        = 'Google Image Search';
         $this->modus                       = null;
-        $this->version                     = VersionFactory::detectVersion($useragent, [            'Googlebot\-Image',        ]);
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Googlebot\-Image']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->brand                       = CompanyFactory::get('Google')->getBrandName();
         $this->pdfSupport                  = true;

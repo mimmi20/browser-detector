@@ -54,5 +54,6 @@ class U3 extends Engine
         $this->name         = 'U3';
         $this->version      = VersionFactory::detectVersion($useragent, ['U3']);
         $this->manufacturer = CompanyFactory::get('UcWeb')->getName();
+        $this->brand        = CompanyFactory::get('UcWeb')->getBrandName();
     }
 }

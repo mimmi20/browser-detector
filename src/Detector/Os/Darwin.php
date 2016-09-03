@@ -49,9 +49,11 @@ class Darwin extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Darwin';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Darwin']);
-        $this->manufacturer = CompanyFactory::get('Apple')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Darwin';
+        $this->marketingName = 'Darwin';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Darwin']);
+        $this->manufacturer  = CompanyFactory::get('Apple')->getName();
+        $this->brand         = CompanyFactory::get('Apple')->getBrandName();
     }
 }

@@ -49,9 +49,11 @@ class NokiaOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Nokia OS';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Nokia')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Nokia OS';
+        $this->marketingName = 'Nokia OS';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Nokia')->getName();
+        $this->brand         = CompanyFactory::get('Nokia')->getBrandName();
     }
 }

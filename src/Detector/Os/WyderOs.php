@@ -49,9 +49,11 @@ class WyderOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'WyderOS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['WyderOS']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'WyderOS';
+        $this->marketingName = 'WyderOS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['WyderOS']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

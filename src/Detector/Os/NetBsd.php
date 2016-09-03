@@ -49,9 +49,11 @@ class NetBsd extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'NetBSD';
-        $this->version      = VersionFactory::detectVersion($useragent, ['NetBSD']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'NetBSD';
+        $this->marketingName = 'NetBSD';
+        $this->version       = VersionFactory::detectVersion($useragent, ['NetBSD']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

@@ -49,9 +49,11 @@ class RimOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'RIM OS';
-        $this->version      = Version\RimOs::detectVersion($useragent);
-        $this->manufacturer = CompanyFactory::get('Rim')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'RIM OS';
+        $this->marketingName = 'RIM OS';
+        $this->version       = Version\RimOs::detectVersion($useragent);
+        $this->manufacturer  = CompanyFactory::get('Rim')->getName();
+        $this->brand         = CompanyFactory::get('Rim')->getBrandName();
     }
 }

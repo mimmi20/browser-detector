@@ -54,5 +54,6 @@ class BlackBerry extends Engine
         $this->name         = 'BlackBerry';
         $this->version      = new Version(0);
         $this->manufacturer = CompanyFactory::get('Rim')->getName();
+        $this->brand        = CompanyFactory::get('Rim')->getBrandName();
     }
 }

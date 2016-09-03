@@ -49,9 +49,11 @@ class DebianFreeBsd extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Debian with FreeBSD Kernel';
-        $this->version      = Version\Debian::detectVersion(str_replace('-', '.', $useragent));
-        $this->manufacturer = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Debian with FreeBSD Kernel';
+        $this->marketingName = 'Debian with FreeBSD Kernel';
+        $this->version       = Version\Debian::detectVersion(str_replace('-', '.', $useragent));
+        $this->manufacturer  = CompanyFactory::get('SoftwareInThePublicInterest')->getName();
+        $this->brand         = CompanyFactory::get('SoftwareInThePublicInterest')->getBrandName();
     }
 }

@@ -54,5 +54,6 @@ class Webkit extends Engine
         $this->name         = 'WebKit';
         $this->version      = VersionFactory::detectVersion($useragent, ['AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\/AppleWebKit']);
         $this->manufacturer = CompanyFactory::get('Apple')->getName();
+        $this->brand        = CompanyFactory::get('Apple')->getBrandName();
     }
 }

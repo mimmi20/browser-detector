@@ -49,9 +49,11 @@ class WebOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'webOS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['WebOS', 'webOS', 'hpwOS']);
-        $this->manufacturer = CompanyFactory::get('Hp')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'webOS';
+        $this->marketingName = 'webOS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['WebOS', 'webOS', 'hpwOS']);
+        $this->manufacturer  = CompanyFactory::get('Hp')->getName();
+        $this->brand         = CompanyFactory::get('Hp')->getBrandName();
     }
 }

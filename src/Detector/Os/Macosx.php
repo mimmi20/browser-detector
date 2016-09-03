@@ -32,8 +32,8 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 
 /**
@@ -54,6 +54,7 @@ class Macosx extends AbstractOs
     {
         $this->useragent    = $useragent;
         $this->manufacturer = CompanyFactory::get('Apple')->getName();
+        $this->brand        = CompanyFactory::get('Apple')->getBrandName();
 
         if (null !== $version && is_string($version)) {
             $this->version = VersionFactory::set($version);

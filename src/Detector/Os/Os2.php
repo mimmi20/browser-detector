@@ -49,9 +49,11 @@ class Os2 extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'OS/2';
-        $this->version      = VersionFactory::detectVersion($useragent, ['OS\/2', 'Warp']);
-        $this->manufacturer = CompanyFactory::get('Ibm')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'OS/2';
+        $this->marketingName = 'OS/2';
+        $this->version       = VersionFactory::detectVersion($useragent, ['OS\/2', 'Warp']);
+        $this->manufacturer  = CompanyFactory::get('Ibm')->getName();
+        $this->brand         = CompanyFactory::get('Ibm')->getBrandName();
     }
 }

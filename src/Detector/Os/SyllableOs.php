@@ -49,9 +49,11 @@ class SyllableOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Syllable';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Syllable')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Syllable';
+        $this->marketingName = 'Syllable';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Syllable')->getName();
+        $this->brand         = CompanyFactory::get('Syllable')->getBrandName();
     }
 }

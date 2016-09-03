@@ -49,9 +49,11 @@ class RimTabletOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'RIM Tablet OS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['RIM Tablet OS']);
-        $this->manufacturer = CompanyFactory::get('Rim')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'RIM Tablet OS';
+        $this->marketingName = 'RIM Tablet OS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['RIM Tablet OS']);
+        $this->manufacturer  = CompanyFactory::get('Rim')->getName();
+        $this->brand         = CompanyFactory::get('Rim')->getBrandName();
     }
 }

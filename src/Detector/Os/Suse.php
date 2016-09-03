@@ -49,9 +49,11 @@ class Suse extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Suse Linux';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Suse')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Suse Linux';
+        $this->marketingName = 'Suse Linux';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Suse')->getName();
+        $this->brand         = CompanyFactory::get('Suse')->getBrandName();
     }
 }

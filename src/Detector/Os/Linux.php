@@ -49,9 +49,11 @@ class Linux extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Linux';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('LinuxFoundation')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Linux';
+        $this->marketingName = 'Linux';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('LinuxFoundation')->getName();
+        $this->brand         = CompanyFactory::get('LinuxFoundation')->getBrandName();
     }
 }

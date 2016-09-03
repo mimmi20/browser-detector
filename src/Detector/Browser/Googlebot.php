@@ -55,7 +55,7 @@ class Googlebot extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'Google Bot';
         $this->modus                       = null;
-        $this->version                     = VersionFactory::detectVersion($useragent, [            'Googlebot',            'Googlebot v',            'Googlebot\-News',            'Google',        ]);
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Googlebot',            'Googlebot v',            'Googlebot\-News',            'Google']);
         $this->manufacturer                = CompanyFactory::get('Google')->getName();
         $this->brand                       = CompanyFactory::get('Google')->getBrandName();
         $this->pdfSupport                  = true;

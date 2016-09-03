@@ -45,13 +45,15 @@ class Atvosx extends AbstractOs
     /**
      * Class Constructor
      *
-     * @param string      $useragent the user agent to be handled
+     * @param string $useragent the user agent to be handled
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'ATV OS X';
-        $this->manufacturer = CompanyFactory::get('Apple')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'ATV OS X';
+        $this->marketingName = 'ATV OS X';
+        $this->manufacturer  = CompanyFactory::get('Apple')->getName();
+        $this->brand         = CompanyFactory::get('Apple')->getBrandName();
 
         $this->version = Version\Ios::detectVersion($useragent);
     }

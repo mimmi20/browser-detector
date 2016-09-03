@@ -49,9 +49,11 @@ class Aix extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'AIX';
-        $this->version      = VersionFactory::detectVersion($useragent, ['AIX']);
-        $this->manufacturer = CompanyFactory::get('Ibm')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'AIX';
+        $this->marketingName = 'AIX';
+        $this->version       = VersionFactory::detectVersion($useragent, ['AIX']);
+        $this->manufacturer  = CompanyFactory::get('Ibm')->getName();
+        $this->brand         = CompanyFactory::get('Ibm')->getBrandName();
     }
 }

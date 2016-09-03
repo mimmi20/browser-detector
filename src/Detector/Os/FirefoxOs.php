@@ -49,9 +49,11 @@ class FirefoxOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'FirefoxOS';
-        $this->version      = Version\FirefoxOs::detectVersion($useragent);
-        $this->manufacturer = CompanyFactory::get('MozillaFoundation')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'FirefoxOS';
+        $this->marketingName = 'FirefoxOS';
+        $this->version       = Version\FirefoxOs::detectVersion($useragent);
+        $this->manufacturer  = CompanyFactory::get('MozillaFoundation')->getName();
+        $this->brand         = CompanyFactory::get('MozillaFoundation')->getBrandName();
     }
 }

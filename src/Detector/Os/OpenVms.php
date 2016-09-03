@@ -49,9 +49,11 @@ class OpenVms extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'OpenVMS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['OpenVMS']);
-        $this->manufacturer = CompanyFactory::get('Hp')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'OpenVMS';
+        $this->marketingName = 'OpenVMS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['OpenVMS']);
+        $this->manufacturer  = CompanyFactory::get('Hp')->getName();
+        $this->brand         = CompanyFactory::get('Hp')->getBrandName();
     }
 }

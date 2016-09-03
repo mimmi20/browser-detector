@@ -49,9 +49,11 @@ class BsdFour extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'BSD';
-        $this->version      = VersionFactory::detectVersion($useragent, ['BSD']);
-        $this->manufacturer = CompanyFactory::get('BerkleyUniversity')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'BSD';
+        $this->marketingName = 'BSD';
+        $this->version       = VersionFactory::detectVersion($useragent, ['BSD']);
+        $this->manufacturer  = CompanyFactory::get('BerkleyUniversity')->getName();
+        $this->brand         = CompanyFactory::get('BerkleyUniversity')->getBrandName();
     }
 }

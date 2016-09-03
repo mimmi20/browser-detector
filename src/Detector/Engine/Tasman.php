@@ -54,5 +54,6 @@ class Tasman extends Engine
         $this->name         = 'Tasman';
         $this->version      = new Version(0);
         $this->manufacturer = CompanyFactory::get('Apple')->getName();
+        $this->brand        = CompanyFactory::get('Apple')->getBrandName();
     }
 }

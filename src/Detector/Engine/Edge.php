@@ -54,5 +54,6 @@ class Edge extends Engine
         $this->name         = 'Edge';
         $this->version      = VersionFactory::detectVersion($useragent, ['Edge']);
         $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
+        $this->brand        = CompanyFactory::get('Microsoft')->getBrandName();
     }
 }

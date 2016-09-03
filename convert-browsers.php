@@ -28,9 +28,7 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     $filecontent      = file_get_contents($fullpath);
     $marketingMatches = [];
 
-    if (preg_match('/\\$this\\-\\>manufacturer                = CompanyFactory::get\\(\\\'([^\\\']+)/', $filecontent, $marketingMatches)) {
-        $manufacturerFull = $marketingMatches[1];
-    } else {
+    if (!preg_match('/\\$this\\-\\>manufacturer                = CompanyFactory::get\\(\\\'([^\\\']+)/', $filecontent, $marketingMatches)) {
         continue;
     }
 

@@ -55,7 +55,7 @@ class DoubanApp extends AbstractBrowser implements BrowserHasSpecificEngineInter
         $this->useragent                   = $useragent;
         $this->name                        = 'douban App';
         $this->modus                       = null;
-        $this->version                     = VersionFactory::detectVersion($useragent, [            'com\.douban\.group',        ]);
+        $this->version                     = VersionFactory::detectVersion($useragent, ['com\.douban\.group']);
         $this->manufacturer                = CompanyFactory::get('Unknown')->getName();
         $this->brand                       = CompanyFactory::get('Unknown')->getBrandName();
         $this->pdfSupport                  = true;

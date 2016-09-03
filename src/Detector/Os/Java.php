@@ -49,9 +49,11 @@ class Java extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Java';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Oracle')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Java';
+        $this->marketingName = 'Java';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Oracle')->getName();
+        $this->brand         = CompanyFactory::get('Oracle')->getBrandName();
     }
 }

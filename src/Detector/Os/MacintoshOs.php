@@ -49,9 +49,11 @@ class MacintoshOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Macintosh';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Macintosh']);
-        $this->manufacturer = CompanyFactory::get('Apple')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Macintosh';
+        $this->marketingName = 'Macintosh';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Macintosh']);
+        $this->manufacturer  = CompanyFactory::get('Apple')->getName();
+        $this->brand         = CompanyFactory::get('Apple')->getBrandName();
     }
 }

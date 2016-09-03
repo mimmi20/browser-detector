@@ -54,5 +54,6 @@ class Presto extends Engine
         $this->name         = 'Presto';
         $this->version      = VersionFactory::detectVersion($useragent, ['Presto']);
         $this->manufacturer = CompanyFactory::get('Opera')->getName();
+        $this->brand        = CompanyFactory::get('Opera')->getBrandName();
     }
 }

@@ -49,9 +49,11 @@ class NintendoOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Nintendo OS';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Nintendo')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Nintendo OS';
+        $this->marketingName = 'Nintendo OS';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Nintendo')->getName();
+        $this->brand         = CompanyFactory::get('Nintendo')->getBrandName();
     }
 }

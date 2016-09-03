@@ -49,9 +49,11 @@ class MiuiOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Miui OS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['MIUI']);
-        $this->manufacturer = CompanyFactory::get('XiaomiTech')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Miui OS';
+        $this->marketingName = 'Miui OS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['MIUI']);
+        $this->manufacturer  = CompanyFactory::get('XiaomiTech')->getName();
+        $this->brand         = CompanyFactory::get('XiaomiTech')->getBrandName();
     }
 }

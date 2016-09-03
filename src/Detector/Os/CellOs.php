@@ -49,9 +49,11 @@ class CellOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'CellOS';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Sony')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'CellOS';
+        $this->marketingName = 'CellOS';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Sony')->getName();
+        $this->brand         = CompanyFactory::get('Sony')->getBrandName();
     }
 }

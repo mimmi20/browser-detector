@@ -49,9 +49,11 @@ class SailfishOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'SailfishOS';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Jolla')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'SailfishOS';
+        $this->marketingName = 'SailfishOS';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Jolla')->getName();
+        $this->brand         = CompanyFactory::get('Jolla')->getBrandName();
     }
 }

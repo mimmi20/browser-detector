@@ -54,5 +54,6 @@ class Khtml extends Engine
         $this->name         = 'KHTML';
         $this->version      = VersionFactory::detectVersion($useragent, ['KHTML']);
         $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->brand        = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

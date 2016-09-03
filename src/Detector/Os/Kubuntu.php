@@ -49,9 +49,11 @@ class Kubuntu extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Kubuntu';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Kubuntu', 'kubuntu']);
-        $this->manufacturer = CompanyFactory::get('Canonical')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Kubuntu';
+        $this->marketingName = 'Kubuntu';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Kubuntu', 'kubuntu']);
+        $this->manufacturer  = CompanyFactory::get('Canonical')->getName();
+        $this->brand         = CompanyFactory::get('Canonical')->getBrandName();
     }
 }

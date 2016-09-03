@@ -49,9 +49,11 @@ class Brew extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Brew';
-        $this->version      = VersionFactory::detectVersion($useragent, ['BREW']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Brew';
+        $this->marketingName = 'Brew';
+        $this->version       = VersionFactory::detectVersion($useragent, ['BREW']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

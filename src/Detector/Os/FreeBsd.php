@@ -49,9 +49,11 @@ class FreeBsd extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'FreeBSD';
-        $this->version      = VersionFactory::detectVersion($useragent, ['FreeBSD', 'freebsd']);
-        $this->manufacturer = CompanyFactory::get('FreeBsdFoundation')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'FreeBSD';
+        $this->marketingName = 'FreeBSD';
+        $this->version       = VersionFactory::detectVersion($useragent, ['FreeBSD', 'freebsd']);
+        $this->manufacturer  = CompanyFactory::get('FreeBsdFoundation')->getName();
+        $this->brand         = CompanyFactory::get('FreeBsdFoundation')->getBrandName();
     }
 }

@@ -54,5 +54,6 @@ class U2 extends Engine
         $this->name         = 'U2';
         $this->version      = VersionFactory::detectVersion($useragent, ['U2']);
         $this->manufacturer = CompanyFactory::get('UcWeb')->getName();
+        $this->brand        = CompanyFactory::get('UcWeb')->getBrandName();
     }
 }

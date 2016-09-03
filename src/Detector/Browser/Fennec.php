@@ -55,7 +55,7 @@ class Fennec extends AbstractBrowser implements BrowserHasSpecificEngineInterfac
         $this->useragent                   = $useragent;
         $this->name                        = 'Fennec';
         $this->modus                       = null;
-        $this->version                     = VersionFactory::detectVersion($useragent, [            'Fennec',        ]);
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Fennec']);
         $this->manufacturer                = CompanyFactory::get('MozillaFoundation')->getName();
         $this->brand                       = CompanyFactory::get('MozillaFoundation')->getBrandName();
         $this->pdfSupport                  = true;

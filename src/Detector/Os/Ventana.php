@@ -49,9 +49,11 @@ class Ventana extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Ventana Linux';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Ventana Linux', 'Ventana']);
-        $this->manufacturer = CompanyFactory::get('Ventana')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Ventana Linux';
+        $this->marketingName = 'Ventana Linux';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Ventana Linux', 'Ventana']);
+        $this->manufacturer  = CompanyFactory::get('Ventana')->getName();
+        $this->brand         = CompanyFactory::get('Ventana')->getBrandName();
     }
 }

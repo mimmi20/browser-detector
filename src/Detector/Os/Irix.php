@@ -49,9 +49,11 @@ class Irix extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'IRIX';
-        $this->version      = VersionFactory::set('0');
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'IRIX';
+        $this->marketingName = 'IRIX';
+        $this->version       = VersionFactory::set('0');
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

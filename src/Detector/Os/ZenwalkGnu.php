@@ -49,9 +49,11 @@ class ZenwalkGnu extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Zenwalk GNU Linux';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Zenwalk GNU Linux';
+        $this->marketingName = 'Zenwalk GNU Linux';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

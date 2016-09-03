@@ -54,5 +54,6 @@ class Teleca extends Engine
         $this->name         = 'Teleca';
         $this->version      = new Version(0);
         $this->manufacturer = CompanyFactory::get('Obigo')->getName();
+        $this->brand        = CompanyFactory::get('Obigo')->getBrandName();
     }
 }

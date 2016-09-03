@@ -55,7 +55,7 @@ class Firefox extends AbstractBrowser implements BrowserHasSpecificEngineInterfa
         $this->useragent                   = $useragent;
         $this->name                        = 'Firefox';
         $this->modus                       = null;
-        $this->version                     = VersionFactory::detectVersion($useragent, [            'Firefox',            'Minefield',            'Shiretoko',            'BonEcho',            'Namoroka',            'Fennec',        ]);
+        $this->version                     = VersionFactory::detectVersion($useragent, ['Firefox',            'Minefield',            'Shiretoko',            'BonEcho',            'Namoroka',            'Fennec']);
         $this->manufacturer                = CompanyFactory::get('MozillaFoundation')->getName();
         $this->brand                       = CompanyFactory::get('MozillaFoundation')->getBrandName();
         $this->pdfSupport                  = true;

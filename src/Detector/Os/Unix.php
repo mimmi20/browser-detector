@@ -49,9 +49,11 @@ class Unix extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Unix';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Unix']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Unix';
+        $this->marketingName = 'Unix';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Unix']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

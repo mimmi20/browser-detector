@@ -49,9 +49,11 @@ class Fedora extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Fedora Linux';
-        $this->version      = new Version(0);
-        $this->manufacturer = CompanyFactory::get('Redhat')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Fedora Linux';
+        $this->marketingName = 'Fedora Linux';
+        $this->version       = new Version(0);
+        $this->manufacturer  = CompanyFactory::get('Redhat')->getName();
+        $this->brand         = CompanyFactory::get('Redhat')->getBrandName();
     }
 }

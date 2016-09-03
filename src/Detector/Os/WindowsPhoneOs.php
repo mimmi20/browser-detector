@@ -49,9 +49,11 @@ class WindowsPhoneOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Windows Phone OS';
-        $this->version      = Version\WindowsPhoneOs::detectVersion($useragent);
-        $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Windows Phone OS';
+        $this->marketingName = 'Windows Phone OS';
+        $this->version       = Version\WindowsPhoneOs::detectVersion($useragent);
+        $this->manufacturer  = CompanyFactory::get('Microsoft')->getName();
+        $this->brand         = CompanyFactory::get('Microsoft')->getBrandName();
     }
 }

@@ -49,9 +49,11 @@ class Solaris extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Solaris';
-        $this->version      = VersionFactory::detectVersion($useragent, ['Solaris']);
-        $this->manufacturer = CompanyFactory::get('Oracle')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Solaris';
+        $this->marketingName = 'Solaris';
+        $this->version       = VersionFactory::detectVersion($useragent, ['Solaris']);
+        $this->manufacturer  = CompanyFactory::get('Oracle')->getName();
+        $this->brand         = CompanyFactory::get('Oracle')->getBrandName();
     }
 }

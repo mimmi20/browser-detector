@@ -54,5 +54,6 @@ class UnknownEngine extends Engine
         $this->name         = 'unknown';
         $this->version      = new Version(0);
         $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->brand        = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

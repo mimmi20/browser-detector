@@ -49,9 +49,11 @@ class DragonflyBsd extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'DragonFly BSD';
-        $this->version      = VersionFactory::detectVersion($useragent, ['DragonFly']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'DragonFly BSD';
+        $this->marketingName = 'DragonFly BSD';
+        $this->version       = VersionFactory::detectVersion($useragent, ['DragonFly']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

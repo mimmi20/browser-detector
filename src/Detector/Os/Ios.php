@@ -32,8 +32,8 @@
 namespace BrowserDetector\Detector\Os;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Detector\Version;
+use BrowserDetector\Version\VersionFactory;
 
 /**
  * @category  BrowserDetector
@@ -51,9 +51,11 @@ class Ios extends AbstractOs
      */
     public function __construct($useragent, $version = null)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'iOS';
-        $this->manufacturer = CompanyFactory::get('Apple')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'iOS';
+        $this->marketingName = 'iOS';
+        $this->manufacturer  = CompanyFactory::get('Apple')->getName();
+        $this->brand         = CompanyFactory::get('Apple')->getBrandName();
 
         if (null !== $version && is_string($version)) {
             $this->version = VersionFactory::set($version);

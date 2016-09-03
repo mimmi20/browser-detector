@@ -49,9 +49,11 @@ class PalmOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'PalmOS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['PalmOS']);
-        $this->manufacturer = CompanyFactory::get('Palm')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'PalmOS';
+        $this->marketingName = 'PalmOS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['PalmOS']);
+        $this->manufacturer  = CompanyFactory::get('Palm')->getName();
+        $this->brand         = CompanyFactory::get('Palm')->getBrandName();
     }
 }

@@ -49,9 +49,11 @@ class WindowsMobileOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'Windows Mobile OS';
-        $this->version      = Version\WindowsMobileOs::detectVersion($useragent);
-        $this->manufacturer = CompanyFactory::get('Microsoft')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'Windows Mobile OS';
+        $this->marketingName = 'Windows Mobile OS';
+        $this->version       = Version\WindowsMobileOs::detectVersion($useragent);
+        $this->manufacturer  = CompanyFactory::get('Microsoft')->getName();
+        $this->brand         = CompanyFactory::get('Microsoft')->getBrandName();
     }
 }

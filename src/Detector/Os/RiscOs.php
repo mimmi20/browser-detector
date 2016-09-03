@@ -49,9 +49,11 @@ class RiscOs extends AbstractOs
      */
     public function __construct($useragent)
     {
-        $this->useragent    = $useragent;
-        $this->name         = 'RISC OS';
-        $this->version      = VersionFactory::detectVersion($useragent, ['RISC']);
-        $this->manufacturer = CompanyFactory::get('Unknown')->getName();
+        $this->useragent     = $useragent;
+        $this->name          = 'RISC OS';
+        $this->marketingName = 'RISC OS';
+        $this->version       = VersionFactory::detectVersion($useragent, ['RISC']);
+        $this->manufacturer  = CompanyFactory::get('Unknown')->getName();
+        $this->brand         = CompanyFactory::get('Unknown')->getBrandName();
     }
 }

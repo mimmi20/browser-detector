@@ -33,9 +33,9 @@ namespace BrowserDetector\Detector\Browser;
 
 use BrowserDetector\Detector\Engine;
 use BrowserDetector\Detector\Factory\CompanyFactory;
+use BrowserDetector\Detector\Version;
 use BrowserDetector\Matcher\Browser\BrowserHasSpecificEngineInterface;
 use UaBrowserType;
-use BrowserDetector\Detector\Version;
 
 /**
  * @category  BrowserDetector
