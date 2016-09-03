@@ -181,7 +181,7 @@ return [
             'Platform_Name'           => 'Nokia OS',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Symbian Foundation',
+            'Platform_Maker'          => 'Nokia',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

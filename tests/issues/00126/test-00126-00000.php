@@ -253,7 +253,7 @@ return [
             'Platform_Name'           => 'Redhat Linux',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 64,
-            'Platform_Maker'          => 'unknown',
+            'Platform_Maker'          => 'Red Hat Inc',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

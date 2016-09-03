@@ -1645,7 +1645,7 @@ return [
             'Platform_Name'           => 'unknown',
             'Platform_Version'        => '7.0.0',
             'Platform_Bits'           => 64,
-            'Platform_Maker'          => 'Microsoft Corporation',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'Windows Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

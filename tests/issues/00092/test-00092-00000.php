@@ -349,7 +349,7 @@ return [
             'Platform_Name'           => 'Debian',
             'Platform_Version'        => '1.6.7',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Linux Foundation',
+            'Platform_Maker'          => 'Software in the Public Interest, Inc.',
             'Device_Name'             => 'Linux Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

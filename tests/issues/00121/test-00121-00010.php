@@ -85,7 +85,7 @@ return [
             'Platform_Name'           => 'Windows',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'unknown',
+            'Platform_Maker'          => 'Microsoft Corporation',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

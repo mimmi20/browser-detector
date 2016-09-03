@@ -2197,7 +2197,7 @@ return [
             'Platform_Name'           => 'Linux',
             'Platform_Version'        => '8',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Microsoft Corporation',
+            'Platform_Maker'          => 'Linux Foundation',
             'Device_Name'             => 'Windows Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

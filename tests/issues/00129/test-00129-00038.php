@@ -373,7 +373,7 @@ return [
             'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Google Inc',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

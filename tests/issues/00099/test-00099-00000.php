@@ -37,7 +37,7 @@ return [
             'Platform_Name'           => 'RIM OS',
             'Platform_Version'        => '5.0.0.681',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Oracle',
+            'Platform_Maker'          => 'Research In Motion Limited',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

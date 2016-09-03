@@ -12,7 +12,7 @@ return [
             'Browser_Version'         => '50',
             'Platform_Name'           => 'Android',
             'Platform_Version'        => '4.1',
-            'Platform_Bits'           => 64,
+            'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',

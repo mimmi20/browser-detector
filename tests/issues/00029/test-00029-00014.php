@@ -2269,7 +2269,7 @@ return [
             'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'XP.0.0',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Microsoft Corporation',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'Windows Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

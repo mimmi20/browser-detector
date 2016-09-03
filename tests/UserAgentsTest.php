@@ -129,21 +129,78 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
     {
         $result = $this->object->getBrowser($userAgent);
 
-        $expectedPlatformName = $expectedProperties['Platform_Name'];
-        $foundPlatform        = $result->getOs();
-        $foundPlatformName    = $foundPlatform->getName();
-
-        self::assertSame(
-            $expectedPlatformName,
-            $foundPlatformName,
-            'Expected actual "Platform_Name" to be "' . $expectedPlatformName . '" (was "' . $foundPlatformName . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($result->getDevice()) . '])'
+        static::assertInstanceOf(
+            '\UaResult\Result\Result',
+            $result,
+            'Expected result is not an instance of "\UaResult\Result\Result" for useragent "' . $userAgent . '"'
         );
 
+        static::assertArrayHasKey(
+            'Platform_Name',
+            $expectedProperties,
+            'Expected key "Platform_Name" is missing for useragent "' . $userAgent . '"'
+        );
+
+        $foundPlatform = $result->getOs();
+
+        static::assertInstanceOf(
+            '\UaResult\Os\OsInterface',
+            $foundPlatform,
+            'Expected platform is not an instance of "\UaResult\Os\OsInterface" for useragent "' . $userAgent . '"'
+        );
+
+        $foundDevice = $result->getDevice();
+
+        static::assertInstanceOf(
+            '\UaResult\Device\DeviceInterface',
+            $foundDevice,
+            'Expected result is not an instance of "\UaResult\Device\DeviceInterface" for useragent "' . $userAgent . '"'
+        );
+
+        $expectedPlatformName = $expectedProperties['Platform_Name'];
+        $foundPlatformName    = $foundPlatform->getName();
+
+        static::assertInternalType('string', $foundPlatformName);
+
+        static::assertSame(
+            $expectedPlatformName,
+            $foundPlatformName,
+            'Expected actual "Platform_Name" to be "' . $expectedPlatformName . '" (was "' . $foundPlatformName . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+        );
+
+        static::assertArrayHasKey(
+            'Platform_Maker',
+            $expectedProperties,
+            'Expected key "Platform_Maker" is missing for useragent "' . $userAgent . '"'
+        );
+
+        $expectedPlatformMaker = $expectedProperties['Platform_Maker'];
+        $foundPlatformMaker    = $foundPlatform->getManufacturer();
+
+        static::assertInternalType('string', $foundPlatformMaker);
+
+        static::assertSame(
+            $expectedPlatformMaker,
+            $foundPlatformMaker,
+            'Expected actual "Platform_Name" to be "' . $expectedPlatformMaker . '" (was "' . $foundPlatformMaker . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+        );
+
+        static::assertArrayHasKey(
+            'Platform_Bits',
+            $expectedProperties,
+            'Expected key "Platform_Bits" is missing for useragent "' . $userAgent . '"'
+        );
+
+        static::assertArrayHasKey(
+            'Platform_Version',
+            $expectedProperties,
+            'Expected key "Platform_Version" is missing for useragent "' . $userAgent . '"'
+        );
         /*
         $expectedBrowserName = $expectedProperties['Browser_Name'];
         $foundBrowserName    = $result->getBrowser()->getName();
 
-        self::assertSame(
+        static::assertSame(
             $expectedBrowserName,
             $foundBrowserName,
             'Expected actual "Browser" to be "' . $expectedBrowserName . '" (was "' . $foundBrowserName . '")'
@@ -152,10 +209,10 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         /**
         // @todo: add check for browser version
         // @todo: add check for browser modus
-        $expectedBrowserType = self::$mapper->mapBrowserType($expectedProperties['Browser_Type'])->getName();
+        $expectedBrowserType = static::$mapper->mapBrowserType($expectedProperties['Browser_Type'])->getName();
         $foundBrowserType    = $result->getBrowser()->getType()->getName();
 
-        self::assertSame(
+        static::assertSame(
             $expectedBrowserType,
             $foundBrowserType,
             'Expected actual "Browser_Type" to be "' . $expectedBrowserType . '" (was "' . $foundBrowserType . '")'
@@ -164,7 +221,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $expectedBrowserMaker = $expectedProperties['Browser_Maker'];
         $foundBrowserMaker    = $result->getBrowser()->getManufacturer();
 
-        self::assertSame(
+        static::assertSame(
             $expectedBrowserMaker,
             $foundBrowserMaker,
             'Expected actual "Browser_Maker" to be "' . $expectedBrowserMaker . '" (was "' . $foundBrowserMaker . '")'
@@ -175,7 +232,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $expectedDeviceMaker = $expectedProperties['Device_Maker'];
         $foundDeviceMaker    = $result->getDevice()->getManufacturer();
 
-        self::assertSame(
+        static::assertSame(
             $expectedDeviceMaker,
             $foundDeviceMaker,
             'Expected actual "Device_Maker" to be "' . $expectedDeviceMaker . '" (was "' . $foundDeviceMaker . '")'
@@ -184,7 +241,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $expectedDeviceBrand = $expectedProperties['Device_Brand_Name'];
         $foundDeviceBrand    = $result->getDevice()->getBrand();
 
-        self::assertSame(
+        static::assertSame(
             $expectedDeviceBrand,
             $foundDeviceBrand,
             'Expected actual "Device_Brand_Name" to be "' . $expectedDeviceBrand . '" (was "' . $foundDeviceBrand . '")'
@@ -193,7 +250,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $expectedDeviceCodeName = $expectedProperties['Device_Code_Name'];
         $foundDeviceCodeName    = $result->getDevice()->getDeviceName();
 
-        self::assertSame(
+        static::assertSame(
             $expectedDeviceCodeName,
             $foundDeviceCodeName,
             'Expected actual "Device_Code_Name" to be "' . $expectedDeviceCodeName . '" (was "' . $foundDeviceCodeName . '")'
@@ -202,7 +259,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $expectedDeviceName = $expectedProperties['Device_Name'];
         $foundDeviceName    = $result->getDevice()->getMarketingName();
 
-        self::assertSame(
+        static::assertSame(
             $expectedDeviceName,
             $foundDeviceName,
             'Expected actual "Device_Name" to be "' . $expectedDeviceName . '" (was "' . $foundDeviceName . '"'

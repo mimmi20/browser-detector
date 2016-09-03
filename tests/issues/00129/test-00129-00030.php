@@ -253,7 +253,7 @@ return [
             'Platform_Name'           => 'Android',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Linux Foundation',
+            'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'Linux Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

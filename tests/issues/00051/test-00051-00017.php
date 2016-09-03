@@ -205,7 +205,7 @@ return [
             'Platform_Name'           => 'unknown',
             'Platform_Version'        => '4.5.1',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Google Inc',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

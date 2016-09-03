@@ -373,7 +373,7 @@ return [
             'Platform_Name'           => 'RIM OS',
             'Platform_Version'        => 'unknown',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'unknown',
+            'Platform_Maker'          => 'Research In Motion Limited',
             'Device_Name'             => 'unknown',
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',

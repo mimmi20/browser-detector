@@ -469,7 +469,7 @@ return [
             'Platform_Name'           => 'webOS',
             'Platform_Version'        => '2.2.4',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Linux Foundation',
+            'Platform_Maker'          => 'HP',
             'Device_Name'             => 'Linux Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',

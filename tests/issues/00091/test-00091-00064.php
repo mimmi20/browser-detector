@@ -757,7 +757,7 @@ return [
             'Platform_Name'           => 'Android',
             'Platform_Version'        => '10.6',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Apple Inc',
+            'Platform_Maker'          => 'Google Inc',
             'Device_Name'             => 'Macintosh',
             'Device_Maker'            => 'Apple Inc',
             'Device_Type'             => 'Desktop',

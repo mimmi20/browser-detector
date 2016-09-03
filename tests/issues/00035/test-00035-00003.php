@@ -181,7 +181,7 @@ return [
             'Platform_Name'           => 'unknown',
             'Platform_Version'        => 'NT',
             'Platform_Bits'           => 32,
-            'Platform_Maker'          => 'Microsoft Corporation',
+            'Platform_Maker'          => 'unknown',
             'Device_Name'             => 'Windows Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',
