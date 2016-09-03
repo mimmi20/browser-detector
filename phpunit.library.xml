@@ -4,7 +4,6 @@
     bootstrap="tests/bootstrap.php"
     beStrictAboutTestsThatDoNotTestAnything="true"
     beStrictAboutOutputDuringTests="true"
-    checkForUnintentionallyCoveredCode="true"
     beStrictAboutChangesToGlobalState="true">
   <testsuites>
     <testsuite name="BrowserDetector Test Suite">
