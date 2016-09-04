@@ -65,8 +65,8 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)',
-                'Windows',
-                'XP.0.0',
+                'Windows NT 5.2',
+                '0.0.0',
                 'Microsoft Corporation',
                 32,
             ],
@@ -86,8 +86,8 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
-                'Windows',
-                '8.1.0',
+                'Windows NT 6.3',
+                '0.0.0',
                 'Microsoft Corporation',
                 64,
             ],
@@ -114,8 +114,8 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 Edge/12.0',
-                'Windows',
-                '10.0.0',
+                'Windows NT 10.0',
+                '0.0.0',
                 'Microsoft Corporation',
                 32,
             ],
@@ -387,8 +387,8 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
             ],
             [
                 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) Opera 8.60 [en]',
-                'Windows',
-                'XP.0.0',
+                'Windows NT 5.1',
+                '0.0.0',
                 'Microsoft Corporation',
                 32,
             ],
