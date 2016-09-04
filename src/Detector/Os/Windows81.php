@@ -50,7 +50,7 @@ class Windows81 extends AbstractOs
     public function __construct($useragent)
     {
         $this->useragent     = $useragent;
-        $this->name          = 'Windows NT 8.3';
+        $this->name          = 'Windows NT 6.3';
         $this->marketingName = 'Windows 8.1';
         $this->version       = new Version(0);
         $this->manufacturer  = CompanyFactory::get('Microsoft')->getName();

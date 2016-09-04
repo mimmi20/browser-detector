@@ -135,12 +135,6 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
             'Expected result is not an instance of "\UaResult\Result\Result" for useragent "' . $userAgent . '"'
         );
 
-        static::assertArrayHasKey(
-            'Platform_Name',
-            $expectedProperties,
-            'Expected key "Platform_Name" is missing for useragent "' . $userAgent . '"'
-        );
-
         $foundPlatform = $result->getOs();
 
         static::assertInstanceOf(
@@ -157,15 +151,38 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
             'Expected result is not an instance of "\UaResult\Device\DeviceInterface" for useragent "' . $userAgent . '"'
         );
 
-        $expectedPlatformName = $expectedProperties['Platform_Name'];
-        $foundPlatformName    = $foundPlatform->getName();
+        static::assertArrayHasKey(
+            'Platform_Codename',
+            $expectedProperties,
+            'Expected key "Platform_Codename" is missing for useragent "' . $userAgent . '"'
+        );
 
-        static::assertInternalType('string', $foundPlatformName);
+        $expectedPlatformCodename = $expectedProperties['Platform_Codename'];
+        $foundPlatformCodename    = $foundPlatform->getName();
+
+        static::assertInternalType('string', $foundPlatformCodename);
 
         static::assertSame(
-            $expectedPlatformName,
-            $foundPlatformName,
-            'Expected actual "Platform_Name" to be "' . $expectedPlatformName . '" (was "' . $foundPlatformName . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+            $expectedPlatformCodename,
+            $foundPlatformCodename,
+            'Expected actual "Platform_Codename" to be "' . $expectedPlatformCodename . '" (was "' . $foundPlatformCodename . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+        );
+
+        static::assertArrayHasKey(
+            'Platform_Marketingname',
+            $expectedProperties,
+            'Expected key "Platform_Marketingname" is missing for useragent "' . $userAgent . '"'
+        );
+
+        $expectedPlatformMarketingname = $expectedProperties['Platform_Marketingname'];
+        $foundPlatformMarketingname    = $foundPlatform->getName();
+
+        static::assertInternalType('string', $foundPlatformMarketingname);
+
+        static::assertSame(
+            $expectedPlatformMarketingname,
+            $foundPlatformMarketingname,
+            'Expected actual "Platform_Marketingname" to be "' . $expectedPlatformMarketingname . '" (was "' . $foundPlatformMarketingname . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
         );
 
         static::assertArrayHasKey(
@@ -182,7 +199,7 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         static::assertSame(
             $expectedPlatformMaker,
             $foundPlatformMaker,
-            'Expected actual "Platform_Name" to be "' . $expectedPlatformMaker . '" (was "' . $foundPlatformMaker . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
+            'Expected actual "Platform_Codename" to be "' . $expectedPlatformMaker . '" (was "' . $foundPlatformMaker . '" [class: ' . get_class($foundPlatform) . '])' . ' [device class: ' . get_class($foundDevice) . '])'
         );
 
         static::assertArrayHasKey(
