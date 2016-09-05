@@ -1441,7 +1441,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '15.6',
             'Platform_Codename'       => 'Mac OS X',
-            'Platform_Marketingname'  => '',
+            'Platform_Marketingname'  => 'Mac OS X',
             'Platform_Version'        => '10.10.5',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

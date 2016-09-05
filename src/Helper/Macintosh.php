@@ -60,6 +60,15 @@ class Macintosh
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
+        $noMac = [
+            'freebsd',
+            'raspbian',
+        ];
+
+        if ($utils->checkIfContains($noMac, true)) {
+            return false;
+        }
+
         $mac = [
             'Macintosh',
             'Darwin',
@@ -75,15 +84,6 @@ class Macintosh
         ];
 
         if (!$utils->checkIfContains($mac, true)) {
-            return false;
-        }
-
-        $noMac = [
-            'freebsd',
-            'raspbian',
-        ];
-
-        if ($utils->checkIfContains($noMac, true)) {
             return false;
         }
 

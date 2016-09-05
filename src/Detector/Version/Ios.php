@@ -31,6 +31,7 @@
 
 namespace BrowserDetector\Detector\Version;
 
+use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 
 /**
@@ -65,9 +66,35 @@ class Ios
             'iPhone OS',
             'iPhone_OS',
             'IUC\(U\;iOS',
+            'iPh OS',
+            'iosv',
             'iOS',
         ];
 
-        return VersionFactory::detectVersion($useragent, $searches);
+        $detectedVersion = VersionFactory::detectVersion($useragent, $searches);
+
+        if ($detectedVersion->getVersion(Version::MAJORONLY) > 999) {
+            $versions = [];
+            $found    = preg_match('/(\d\d)(\d)(\d)/', $detectedVersion->getVersion(Version::MAJORONLY), $versions);
+
+            if ($found) {
+                return VersionFactory::set($versions[1] . '.' . $versions[2] . '.' . $versions[3]);
+            }
+        }
+
+        if ($detectedVersion->getVersion(Version::MAJORONLY) > 99) {
+            $versions = [];
+            $found    = preg_match('/(\d)(\d)(\d)/', $detectedVersion->getVersion(Version::MAJORONLY), $versions);
+
+            if ($found) {
+                return VersionFactory::set($versions[1] . '.' . $versions[2] . '.' . $versions[3]);
+            }
+        }
+
+        if ('10.10' === $detectedVersion->getVersion(Version::MAJORMINOR)) {
+            return VersionFactory::set('8.0.0');
+        }
+
+        return $detectedVersion;
     }
 }

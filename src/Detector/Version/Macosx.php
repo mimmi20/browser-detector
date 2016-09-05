@@ -51,7 +51,10 @@ class Macosx
      */
     public static function detectVersion($useragent)
     {
-        $detectedVersion = VersionFactory::detectVersion($useragent, ['Mac OS X', 'Mac OS X v'], '10');
+        $detectedVersion = VersionFactory::detectVersion(
+            $useragent,
+            ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X']
+        );
 
         if ($detectedVersion->getVersion(Version::MAJORONLY) > 999) {
             $versions = [];

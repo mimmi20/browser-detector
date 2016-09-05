@@ -63,7 +63,7 @@ return [
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '52',
             'Platform_Codename'       => 'macOS',
-            'Platform_Marketingname'  => '',
+            'Platform_Marketingname'  => 'macOS',
             'Platform_Version'        => '10.12',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',

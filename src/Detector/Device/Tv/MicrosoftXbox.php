@@ -76,6 +76,6 @@ class MicrosoftXbox extends Device implements DeviceHasSpecificPlatformInterface
      */
     public function detectOs()
     {
-        return new Os\Windows($this->useragent);
+        return null;
     }
 }

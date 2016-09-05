@@ -73,8 +73,9 @@ class PlatformFactory implements FactoryInterface
             return new Os\WindowsCe($agent);
         }
 
-        if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop)/', $agent)) {
+        if (preg_match('/(Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone|WPDesktop| wds )/', $agent)) {
             $doMatchPhone = preg_match('/Windows Phone ([\d\.]+)/', $agent, $matchesPhone);
+
             if (!$doMatchPhone || $matchesPhone[1] >= 7) {
                 return new Os\WindowsPhoneOs($agent);
             }
@@ -86,6 +87,12 @@ class PlatformFactory implements FactoryInterface
             $doMatchMobile = preg_match('/mobile version([\d]+)/', $agent, $matchesMobile);
 
             if ($doMatchMobile && $matchesMobile[1] >= 70) {
+                return new Os\WindowsPhoneOs($agent);
+            }
+
+            $doMatchMobile = preg_match('/Windows Mobile ([\d]+)/', $agent, $matchesMobile);
+
+            if ($doMatchMobile && (float) $matchesMobile[1] >= 7.0) {
                 return new Os\WindowsPhoneOs($agent);
             }
 

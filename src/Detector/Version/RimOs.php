@@ -50,9 +50,13 @@ class RimOs
      */
     public static function detectVersion($useragent)
     {
+        if (false !== stripos($useragent, 'bb10') && false === stripos($useragent, 'version')) {
+            return VersionFactory::set('10.0.0');
+        }
+
         $searches = ['BlackBerry[0-9a-z]+', 'BlackBerrySimulator'];
 
-        if (false !== stripos($useragent, 'bb10') || false !== stripos($useragent, 'opera')) {
+        if (false !== stripos($useragent, 'bb10') || false === stripos($useragent, 'opera')) {
             $searches[] = 'Version';
         }
 

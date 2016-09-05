@@ -55,18 +55,22 @@ class WindowsPhoneOs
         $utils->setUserAgent($useragent);
 
         if ($utils->checkIfContains(['XBLWP7', 'ZuneWP7'])) {
-            return VersionFactory::set('7.5');
+            return VersionFactory::set('7.5.0');
         }
 
-        if ($utils->checkIfContains(['WPDesktop'])) {
-            if ($utils->checkIfContains(['Windows NT 6.2', 'Windows NT 6.3'])) {
-                return VersionFactory::set('8.1');
+        if ($utils->checkIfContains('WPDesktop')) {
+            if ($utils->checkIfContains('Windows NT 6.3')) {
+                return VersionFactory::set('8.1.0');
             }
 
-            return VersionFactory::set('8.0');
+            if ($utils->checkIfContains('Windows NT 6.2')) {
+                return VersionFactory::set('8.0.0');
+            }
+
+            return VersionFactory::set('0.0.0');
         }
 
-        $searches = ['Windows Phone OS', 'Windows Phone'];
+        $searches = ['Windows Phone OS', 'Windows Phone', 'wds', 'Windows Mobile'];
 
         return VersionFactory::detectVersion($useragent, $searches);
     }

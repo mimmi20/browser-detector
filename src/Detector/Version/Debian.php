@@ -58,6 +58,6 @@ class Debian
             return VersionFactory::set('6.0');
         }
 
-        return VersionFactory::detectVersion($useragent, ['kFreeBSD', 'Debian']);
+        return VersionFactory::detectVersion($useragent, ['kFreeBSD', 'Debian', 'Raspbian']);
     }
 }

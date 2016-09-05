@@ -948,7 +948,7 @@ return [
             'Browser_Version'         => '1.5',
             'Platform_Codename'       => 'FreeBSD',
             'Platform_Marketingname'  => 'FreeBSD',
-            'Platform_Version'        => '0.0.0',
+            'Platform_Version'        => '5.6.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'FreeBSD Foundation',
             'Platform_Brand_Name'     => 'FreeBSD',

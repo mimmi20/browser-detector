@@ -60,7 +60,9 @@ class DeviceFactory implements FactoryInterface
         $utils = new Utils();
         $utils->setUserAgent($useragent);
 
-        if ($utils->checkIfContains(['darwin', 'cfnetwork'], true)) {
+        if (!$utils->checkIfContains(['freebsd', 'raspbian'], true)
+            && $utils->checkIfContains(['darwin', 'cfnetwork'], true)
+        ) {
             return Device\DarwinFactory::detect($useragent);
         }
 

@@ -12,7 +12,7 @@ return [
             'Browser_Version'         => '3.8',
             'Platform_Codename'       => 'Debian',
             'Platform_Marketingname'  => 'Debian',
-            'Platform_Version'        => '10.0.0',
+            'Platform_Version'        => '7.8.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Software in the Public Interest, Inc.',
             'Platform_Brand_Name'     => 'Software in the Public Interest',

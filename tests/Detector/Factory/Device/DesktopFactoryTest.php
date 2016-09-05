@@ -91,6 +91,16 @@ class DesktopFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'mouse',
             ],
+            [
+                'Mozilla/5.0 (Darwin; FreeBSD 5.6; en-GB; rv:1.8.1.17pre) Gecko/20080716 K-Meleon/1.5.0',
+                'general Desktop',
+                'general Desktop',
+                'unknown',
+                'unknown',
+                'Desktop',
+                false,
+                'mouse',
+            ],
         ];
     }
 }

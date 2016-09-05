@@ -56,28 +56,33 @@ class AndroidOs
         }
 
         $searches = [
-            'Android android',
-            'Android AndroidHouse Team',
-            'Android WildPuzzleROM v8 froyo',
-            'JUC\(Linux;U;',
-            'Linux; GoogleTV',
-            'Android OS',
-            'Android',
-            'Adr ',
+            'android android',
+            'android androidhouse team',
+            'android wildpuzzlerom v8 froyo',
+            'juc\(linux;u;',
+            'juc \(linux; u;',
+            'linux; googletv',
+            'android os',
+            'android;',
+            'android_',
+            'android ',
+            'android\/',
+            'android',
+            'adr ',
         ];
 
         $detector = VersionFactory::detectVersion($useragent, $searches);
 
-        if ($detector->getVersion()) {
+        if ('0.0.0' !== $detector->getVersion()) {
             return $detector;
         }
 
         if (false !== stripos($useragent, 'android eclair')) {
-            return VersionFactory::set('2.1');
+            return VersionFactory::set('2.1.0');
         }
 
         if (false !== stripos($useragent, 'gingerbread')) {
-            return VersionFactory::set('2.3');
+            return VersionFactory::set('2.3.0');
         }
 
         return new Version(0);

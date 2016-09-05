@@ -12,7 +12,7 @@ return [
             'Browser_Version'         => '10.0',
             'Platform_Codename'       => 'RIM OS',
             'Platform_Marketingname'  => 'RIM OS',
-            'Platform_Version'        => '10.0',
+            'Platform_Version'        => '10.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Research In Motion Limited',
             'Platform_Brand_Name'     => 'RIM',
