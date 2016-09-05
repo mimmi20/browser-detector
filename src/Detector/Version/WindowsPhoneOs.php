@@ -58,6 +58,10 @@ class WindowsPhoneOs
             return VersionFactory::set('7.5.0');
         }
 
+        if ($utils->checkIfContains('wds 8.10')) {
+            return VersionFactory::set('8.1.0');
+        }
+
         if ($utils->checkIfContains('WPDesktop')) {
             if ($utils->checkIfContains('Windows NT 6.3')) {
                 return VersionFactory::set('8.1.0');

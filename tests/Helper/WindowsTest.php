@@ -36,6 +36,9 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (Windows NT 5.2) AppleWebKit/5342 (KHTML, like Gecko) Chrome/36.0.873.0 Mobile Safari/5342'],
             ['Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.2.13) Gecko/20101203 iPhone'],
             ['Opera/9.80 (Windows NT 6.0; Opera Mobi/49; U; en) Presto/2.4.18 Version/10.00'],
+            ['BarcaPro/1.4.12'],
+            ['Barca/2.8.2'],
+            ['The Bat! 4.0.0.22'],
         ];
     }
 

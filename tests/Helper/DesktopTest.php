@@ -47,6 +47,9 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/5.0 (X11; NetBSD amd64; rv:43.0) Gecko/20100101 Firefox/43.0'],
             ['Mozilla/5.0 (X11; U; SunOS sun4u; pl-PL; rv:1.8.1.6) Gecko/20071217 Firefox/2.0.0.6'],
             ['Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.9.2.13) Gecko/20101203 iPhone'],
+            ['BarcaPro/1.4.12'],
+            ['Barca/2.8.2'],
+            ['The Bat! 4.0.0.22'],
         ];
     }
 

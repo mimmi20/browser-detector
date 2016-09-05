@@ -111,6 +111,8 @@ class Desktop
             'lynx',
             'camino',
             'osf1',
+            'barca',
+            'the bat!',
         ];
 
         if ($utils->checkIfContains($othersDesktops, true)) {

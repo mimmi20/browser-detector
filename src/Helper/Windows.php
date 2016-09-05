@@ -108,10 +108,29 @@ class Windows
         }
 
         $windows = [
-            'win10', 'win9', 'win8', 'win7', 'winvista', 'winxp', 'win2000', 'win98', 'win95',
-            'winnt', 'win31', 'winme', 'windows nt', 'windows 98', 'windows 95',
-            'windows 3.1', 'win9x/nt 4.90', 'windows xp', 'windows me',
-            'windows', 'win32',
+            'win10',
+            'win9',
+            'win8',
+            'win7',
+            'winvista',
+            'winxp',
+            'win2000',
+            'win98',
+            'win95',
+            'winnt',
+            'win31',
+            'winme',
+            'windows nt',
+            'windows 98',
+            'windows 95',
+            'windows 3.1',
+            'win9x/nt 4.90',
+            'windows xp',
+            'windows me',
+            'windows',
+            'win32',
+            'barca',
+            'the bat!',
         ];
 
         if (!$utils->checkIfContains($windows, true)) {
