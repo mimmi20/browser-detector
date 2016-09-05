@@ -1390,7 +1390,7 @@ return [
             'Browser_Version'         => '9.7',
             'Platform_Codename'       => 'Windows Mobile OS',
             'Platform_Marketingname'  => 'Windows Mobile OS',
-            'Platform_Version'        => 'XP',
+            'Platform_Version'        => '6.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Platform_Brand_Name'     => 'Microsoft',

@@ -64,7 +64,7 @@ return [
             'Browser_Version'         => '0.0',
             'Platform_Codename'       => 'Windows Phone OS',
             'Platform_Marketingname'  => 'Windows Phone OS',
-            'Platform_Version'        => '8.1.0',
+            'Platform_Version'        => '8.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
             'Platform_Brand_Name'     => 'Microsoft',

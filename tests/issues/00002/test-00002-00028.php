@@ -662,7 +662,7 @@ return [
             'Browser_Version'         => '7.2',
             'Platform_Codename'       => 'RIM Tablet OS',
             'Platform_Marketingname'  => 'RIM Tablet OS',
-            'Platform_Version'        => '0.0.0',
+            'Platform_Version'        => '2.1.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Research In Motion Limited',
             'Platform_Brand_Name'     => 'RIM',

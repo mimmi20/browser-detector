@@ -90,7 +90,7 @@ return [
             'Browser_Version'         => '65.28',
             'Platform_Codename'       => 'Mac OS X',
             'Platform_Marketingname'  => 'Mac OS X',
-            'Platform_Version'        => '10',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',
             'Platform_Brand_Name'     => 'Apple',

@@ -1806,7 +1806,7 @@ return [
             'Browser_Version'         => '0.0',
             'Platform_Codename'       => 'Java',
             'Platform_Marketingname'  => 'Java',
-            'Platform_Version'        => '1.7.0.65',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Oracle',
             'Platform_Brand_Name'     => 'Oracle',

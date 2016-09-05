@@ -1026,7 +1026,7 @@ return [
             'Browser_Version'         => '45.0',
             'Platform_Codename'       => 'Ubuntu',
             'Platform_Marketingname'  => 'Ubuntu',
-            'Platform_Version'        => '7',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Canonical Foundation',
             'Platform_Brand_Name'     => 'Canonical',

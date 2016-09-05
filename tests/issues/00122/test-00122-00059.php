@@ -64,7 +64,7 @@ return [
             'Browser_Version'         => '3.0',
             'Platform_Codename'       => 'Linux',
             'Platform_Marketingname'  => 'Linux',
-            'Platform_Version'        => 'unknown',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Linux Foundation',
             'Platform_Brand_Name'     => 'Linux Foundation',

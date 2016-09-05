@@ -38,7 +38,7 @@ return [
             'Browser_Version'         => '10.54',
             'Platform_Codename'       => 'Java',
             'Platform_Marketingname'  => 'Java',
-            'Platform_Version'        => 'unknown',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Oracle',
             'Platform_Brand_Name'     => 'Oracle',

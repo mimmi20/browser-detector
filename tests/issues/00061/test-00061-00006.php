@@ -1390,7 +1390,7 @@ return [
             'Browser_Version'         => '28.0',
             'Platform_Codename'       => 'FirefoxOS',
             'Platform_Marketingname'  => 'FirefoxOS',
-            'Platform_Version'        => '0.0.0',
+            'Platform_Version'        => '1.3.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Mozilla Foundation',
             'Platform_Brand_Name'     => 'Mozilla',

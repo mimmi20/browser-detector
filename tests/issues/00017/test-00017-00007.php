@@ -1624,7 +1624,7 @@ return [
             'Browser_Version'         => '0.0',
             'Platform_Codename'       => 'Ruby',
             'Platform_Marketingname'  => 'Ruby',
-            'Platform_Version'        => '2.2.3',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',
             'Platform_Brand_Name'     => 'unknown',

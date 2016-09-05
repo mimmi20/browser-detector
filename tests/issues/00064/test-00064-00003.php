@@ -2430,7 +2430,7 @@ return [
             'Browser_Version'         => '4.0',
             'Platform_Codename'       => 'Android',
             'Platform_Marketingname'  => 'Android',
-            'Platform_Version'        => '0.0.0',
+            'Platform_Version'        => '2.3.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',

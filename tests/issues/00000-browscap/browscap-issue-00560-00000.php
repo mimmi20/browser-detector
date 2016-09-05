@@ -12,7 +12,7 @@ return [
             'Browser_Version'         => '32.0',
             'Platform_Codename'       => 'FirefoxOS',
             'Platform_Marketingname'  => 'FirefoxOS',
-            'Platform_Version'        => '2.0',
+            'Platform_Version'        => '2.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Mozilla Foundation',
             'Platform_Brand_Name'     => 'Mozilla',

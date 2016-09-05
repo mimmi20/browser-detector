@@ -1598,7 +1598,7 @@ return [
             'Browser_Version'         => '3.6',
             'Platform_Codename'       => 'Linux Mint',
             'Platform_Marketingname'  => 'Linux Mint',
-            'Platform_Version'        => '0.0.0',
+            'Platform_Version'        => '1.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'unknown',
             'Platform_Brand_Name'     => 'unknown',

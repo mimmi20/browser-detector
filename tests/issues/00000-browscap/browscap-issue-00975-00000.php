@@ -12,7 +12,7 @@ return [
             'Browser_Version'         => '0.0',
             'Platform_Codename'       => 'Miui OS',
             'Platform_Marketingname'  => 'Miui OS',
-            'Platform_Version'        => '7.3',
+            'Platform_Version'        => '7.3.2.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Xiaomi Tech',
             'Platform_Brand_Name'     => 'Xiaomi',

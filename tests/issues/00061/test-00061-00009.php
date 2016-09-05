@@ -688,7 +688,7 @@ return [
             'Browser_Version'         => '0.0',
             'Platform_Codename'       => 'iOS',
             'Platform_Marketingname'  => 'iOS',
-            'Platform_Version'        => '0.0.0',
+            'Platform_Version'        => '4.3.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Apple Inc',
             'Platform_Brand_Name'     => 'Apple',

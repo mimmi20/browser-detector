@@ -2456,7 +2456,7 @@ return [
             'Browser_Version'         => '0.0',
             'Platform_Codename'       => 'Bada',
             'Platform_Marketingname'  => 'Bada',
-            'Platform_Version'        => '0.0.0',
+            'Platform_Version'        => '1.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Samsung',
             'Platform_Brand_Name'     => 'Samsung',

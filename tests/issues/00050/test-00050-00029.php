@@ -2326,7 +2326,7 @@ return [
             'Browser_Version'         => '44.0',
             'Platform_Codename'       => 'unknown',
             'Platform_Marketingname'  => 'unknown',
-            'Platform_Version'        => '8.1.0',
+            'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 64,
             'Platform_Maker'          => 'unknown',
             'Platform_Brand_Name'     => 'unknown',

@@ -974,7 +974,7 @@ return [
             'Browser_Version'         => '42.0',
             'Platform_Codename'       => 'Android',
             'Platform_Marketingname'  => 'Android',
-            'Platform_Version'        => '4.1',
+            'Platform_Version'        => '4.1.1',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
