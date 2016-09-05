@@ -15,7 +15,7 @@ return [
             'Platform_Version'        => '5.0.2',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
-            'Platform_Brand_Name'     => 'Google Inc',
+            'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'Galaxy S6 Edge (Global)',
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Mobile Phone',

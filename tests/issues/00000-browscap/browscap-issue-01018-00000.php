@@ -15,7 +15,7 @@ return [
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Microsoft Corporation',
-            'Platform_Brand_Name'     => 'Microsoft Corporation',
+            'Platform_Brand_Name'     => 'Microsoft',
             'Device_Name'             => 'Windows Desktop',
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',
