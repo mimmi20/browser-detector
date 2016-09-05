@@ -840,6 +840,13 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Apple Inc',
                 32,
             ],
+            [
+                'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586',
+                'Windows Phone OS',
+                '10.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
         ];
     }
 }

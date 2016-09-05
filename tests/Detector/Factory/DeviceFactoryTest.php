@@ -2031,6 +2031,16 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'mouse',
             ],
+            [
+                'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 650) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586',
+                'Lumia 650',
+                'Lumia 650',
+                'Microsoft Corporation',
+                'Microsoft',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

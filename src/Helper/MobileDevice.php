@@ -209,6 +209,7 @@ class MobileDevice
             'spark284',
             'spice qt-75',
             'velocitymicro',
+            'limua',
         ];
 
         if ($utils->checkIfContains($mobileBrowsers, true)) {
