@@ -111,27 +111,31 @@ class SonyFactory implements FactoryInterface
             return new SonyEricsson\SonyC1505XperiaE($useragent);
         }
 
-        if (preg_match('/D5803/i', $useragent)) {
+        if (preg_match('/d5803/i', $useragent)) {
             return new SonyEricsson\SonyD5803XperiaZ3Compact($useragent);
         }
 
-        if (preg_match('/D6603/i', $useragent)) {
+        if (preg_match('/d6603/i', $useragent)) {
             return new SonyEricsson\SonyD6603ExperiaZ3($useragent);
         }
 
-        if (preg_match('/D6503/i', $useragent)) {
+        if (preg_match('/l50u/i', $useragent)) {
+            return new SonyEricsson\SonyL50uExperiaZ2lte($useragent);
+        }
+
+        if (preg_match('/d6503/i', $useragent)) {
             return new SonyEricsson\SonyD6503ExperiaZ2($useragent);
         }
 
-        if (preg_match('/D5833/i', $useragent)) {
+        if (preg_match('/d5833/i', $useragent)) {
             return new SonyEricsson\SonyD5833($useragent);
         }
 
-        if (preg_match('/D5503/i', $useragent)) {
+        if (preg_match('/d5503/i', $useragent)) {
             return new SonyEricsson\SonyD5503XperiaZ1Compact($useragent);
         }
 
-        if (preg_match('/D5303/i', $useragent)) {
+        if (preg_match('/d5303/i', $useragent)) {
             return new SonyEricsson\SonyD5303($useragent);
         }
 

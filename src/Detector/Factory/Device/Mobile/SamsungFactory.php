@@ -239,6 +239,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG3502l($useragent);
         }
 
+        if (preg_match('/SM\-G925F/i', $useragent)) {
+            return new Samsung\SamsungSmG925F($useragent);
+        }
+
         if (preg_match('/SM\-G901F/i', $useragent)) {
             return new Samsung\SamsungSmG901F($useragent);
         }
@@ -1047,6 +1051,10 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGti9200($useragent);
         }
 
+        if (preg_match('/gt\-i9195i/i', $useragent)) {
+            return new Samsung\SamsungGti9195i($useragent);
+        }
+
         if (preg_match('/(GT\-I9195|I9195)/i', $useragent)) {
             return new Samsung\SamsungGti9195($useragent);
         }
@@ -1251,19 +1259,23 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGti5500($useragent);
         }
 
-        if (preg_match('/Nexus S 4G/i', $useragent)) {
+        if (preg_match('/nexus s 4g/i', $useragent)) {
             return new Samsung\SamsungGalaxyNexusS4G($useragent);
         }
 
-        if (preg_match('/Nexus S/i', $useragent)) {
+        if (preg_match('/nexus s/i', $useragent)) {
             return new Samsung\SamsungGalaxyNexusS($useragent);
         }
 
-        if (preg_match('/Nexus 10/i', $useragent)) {
+        if (preg_match('/nexus 10/i', $useragent)) {
             return new Samsung\SamsungGalaxyNexus10($useragent);
         }
 
-        if (preg_match('/Nexus/i', $useragent)) {
+        if (preg_match('/nexus player/i', $useragent)) {
+            return new Samsung\SamsungGalaxyNexusPlayer($useragent);
+        }
+
+        if (preg_match('/nexus/i', $useragent)) {
             return new Samsung\SamsungGalaxyNexus($useragent);
         }
 

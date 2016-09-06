@@ -131,6 +131,16 @@ class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0; HUAWEI VNS-L31 Build/HUAWEIVNS-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'VNS-L31',
+                'P9 Lite',
+                'Huawei',
+                'Huawei',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

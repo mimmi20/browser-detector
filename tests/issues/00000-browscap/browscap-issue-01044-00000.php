@@ -42,7 +42,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'EVO 4G',
+            'Device_Name'             => 'Evo 4G',
             'Device_Maker'            => 'HTC',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',

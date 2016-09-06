@@ -51,6 +51,10 @@ class HuaweiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/vns\-l31/i', $useragent)) {
+            return new Huawei\HuaweiVnsL31($useragent);
+        }
+
         if (preg_match('/y625\-u51/i', $useragent)) {
             return new Huawei\HuaweiY625u51($useragent);
         }

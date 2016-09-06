@@ -51,6 +51,10 @@ class MeizuFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/mz\-mx5/i', $useragent)) {
+            return new Meizu\MeizuMx5($useragent);
+        }
+
         if (preg_match('/m040/i', $useragent)) {
             return new Meizu\MeizuM040($useragent);
         }

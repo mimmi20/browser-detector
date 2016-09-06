@@ -51,6 +51,10 @@ class LgFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/H345/i', $useragent)) {
+            return new Lg\LgH345($useragent);
+        }
+
         if (preg_match('/VS980/i', $useragent)) {
             return new Lg\LgVs980($useragent);
         }

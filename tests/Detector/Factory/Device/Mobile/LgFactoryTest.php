@@ -101,6 +101,16 @@ class LgFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 null,
             ],
+            [
+                'LG-H345/V10f Player/LG Player 1.0 for Android 5.1.1 (stagefright alternative)',
+                'H345',
+                'Leon 4G LTE',
+                'LG',
+                'LG',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

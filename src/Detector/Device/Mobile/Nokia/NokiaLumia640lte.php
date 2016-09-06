@@ -53,7 +53,7 @@ class NokiaLumia640lte extends Device implements DeviceHasSpecificPlatformInterf
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Lumia 640 LTE';
+        $this->deviceName        = 'RM-1113';
         $this->marketingName     = 'Lumia 640 LTE';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Microsoft')->getName();

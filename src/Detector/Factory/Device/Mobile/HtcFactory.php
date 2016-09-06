@@ -131,31 +131,39 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcOneM8Windows($useragent);
         }
 
-        if (preg_match('/One\_M8/i', $useragent)) {
+        if (preg_match('/one[_ ]m9plus/i', $useragent)) {
+            return new Htc\HtcOneM9plus($useragent);
+        }
+
+        if (preg_match('/one[_ ]m9/i', $useragent)) {
+            return new Htc\HtcOneM9($useragent);
+        }
+
+        if (preg_match('/one\_m8/i', $useragent)) {
             return new Htc\HtcOneM8($useragent);
         }
 
-        if (preg_match('/(One[ _]X\+|OneXplus)/i', $useragent)) {
+        if (preg_match('/(one[ _]x\+|onexplus)/i', $useragent)) {
             return new Htc\HtcOneXplus($useragent);
         }
 
-        if (preg_match('/One[ _]XL/i', $useragent)) {
+        if (preg_match('/one[ _]xl/i', $useragent)) {
             return new Htc\HtcOneXl($useragent);
         }
 
-        if (preg_match('/(One[ _]X|OneX|PJ83100)/i', $useragent)) {
+        if (preg_match('/(one[ _]x|onex|PJ83100)/i', $useragent)) {
             return new Htc\HtcOneX($useragent);
         }
 
-        if (preg_match('/One[ _]V/i', $useragent)) {
+        if (preg_match('/one[ _]v/i', $useragent)) {
             return new Htc\HtcOneV($useragent);
         }
 
-        if (preg_match('/(One[ _]SV|OneSV)/i', $useragent)) {
+        if (preg_match('/(one[ _]sv|onesv)/i', $useragent)) {
             return new Htc\HtcOneSv($useragent);
         }
 
-        if (preg_match('/(One[ _]S|OneS)/i', $useragent)) {
+        if (preg_match('/(one[ _]s|ones)/i', $useragent)) {
             return new Htc\HtcOneS($useragent);
         }
 
@@ -431,8 +439,12 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcFlyer($useragent);
         }
 
+        if (preg_match('/(PC36100|EVO 4G)/', $useragent)) {
+            return new Htc\HtcEvo4g($useragent);
+        }
+
         if (preg_match('/Evo 3D GSM/i', $useragent)) {
-            return new Htc\HtcEvo3gGsm($useragent);
+            return new Htc\HtcEvo3dGsm($useragent);
         }
 
         if (preg_match('/Dream/i', $useragent)) {

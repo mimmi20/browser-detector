@@ -55,6 +55,10 @@ class HpFactory implements FactoryInterface
             return new Hp\HpIpaq6900($useragent);
         }
 
+        if (preg_match('/slate 17/i', $useragent)) {
+            return new Hp\HpSlate17($useragent);
+        }
+
         if (preg_match('/slate 10 hd/i', $useragent)) {
             return new Hp\HpSlate10Hd($useragent);
         }

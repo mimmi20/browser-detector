@@ -101,6 +101,16 @@ class HpFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; HP Slate 17 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36ESPN APP',
+                'Slate 17',
+                'Slate 17',
+                'HP',
+                'HP',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

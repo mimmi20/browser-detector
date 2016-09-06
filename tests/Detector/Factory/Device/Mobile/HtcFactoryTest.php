@@ -281,6 +281,36 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 6.0; zh-CN; HTC One M9 Build/MRA58K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.10.8.822 U3/0.8.0 Mobile Safari/534.30',
+                'M9',
+                'One M9',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.2; HTC One M9PLUS Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36',
+                'M9 Plus',
+                'One M9 Plus',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'YahooMobileMail/1.0 (Android Mail; 1.3.10) (supersonic;HTC;PC36100;2.3.5/GRJ90)',
+                'PC36100',
+                'Evo 4G',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

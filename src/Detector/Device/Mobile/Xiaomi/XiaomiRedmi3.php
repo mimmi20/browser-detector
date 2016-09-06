@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Htc;
+namespace BrowserDetector\Detector\Device\Mobile\Xiaomi;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use BrowserDetector\Detector\Os;
-use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
-use UaDeviceType;
 use UaResult\Device\Device;
+use BrowserDetector\Detector\Os;
+use UaDeviceType;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +43,7 @@ use UaResult\Device\Device;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HtcEvo3gGsm extends Device implements DeviceHasSpecificPlatformInterface
+class XiaomiRedmi3 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,18 +53,18 @@ class HtcEvo3gGsm extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Evo 3D GSM';
-        $this->marketingName     = 'Evo 3D GSM';
+        $this->deviceName        = 'Redmi 3';
+        $this->marketingName     = 'Redmi 3';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Htc')->getName();
-        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('XiaomiTech')->getName();
+        $this->brand             = CompanyFactory::get('XiaomiTech')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 540;
-        $this->resolutionHeight  = 960;
+        $this->resolutionWidth   = 720;
+        $this->resolutionHeight  = 1280;
         $this->dualOrientation   = true;
         $this->colors            = 65536;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
         $this->type              = new UaDeviceType\MobilePhone();
     }

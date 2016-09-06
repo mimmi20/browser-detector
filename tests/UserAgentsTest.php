@@ -157,16 +157,16 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
             'Expected key "Device_Name" is missing for useragent "' . $userAgent . '"'
         );
 
-        /*
         $expectedDeviceName = $expectedProperties['Device_Name'];
         $foundDeviceName    = $foundDevice->getMarketingName();
+
+        static::assertInternalType('string', $foundDeviceName);
 
         static::assertSame(
             $expectedDeviceName,
             $foundDeviceName,
             'Expected actual "Device_Name" to be "' . $expectedDeviceName . '" (was "' . $foundDeviceName . '" [class: ' . get_class($foundDevice) . '])'
         );
-        /**/
 
         static::assertArrayHasKey(
             'Device_Maker',
@@ -203,16 +203,16 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
             'Expected key "Device_Code_Name" is missing for useragent "' . $userAgent . '"'
         );
 
-        /*
         $expectedDeviceCodeName = $expectedProperties['Device_Code_Name'];
         $foundDeviceCodeName    = $foundDevice->getDeviceName();
+
+        static::assertInternalType('string', $foundDeviceCodeName);
 
         static::assertSame(
             $expectedDeviceCodeName,
             $foundDeviceCodeName,
             'Expected actual "Device_Code_Name" to be "' . $expectedDeviceCodeName . '" (was "' . $foundDeviceCodeName . '" [class: ' . get_class($foundDevice) . '])'
         );
-        /**/
 
         static::assertArrayHasKey(
             'Device_Brand_Name',

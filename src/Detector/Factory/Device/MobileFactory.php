@@ -72,7 +72,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\XiaomiFactory::detect($useragent);
         }
 
-        if (preg_match('/(nokia|5130c\-2|lumia|arm; 909)/i', $useragent)) {
+        if (preg_match('/(nokia)/i', $useragent)) {
             return Mobile\NokiaFactory::detect($useragent);
         }
 
@@ -384,6 +384,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\ImpressionFactory::detect($useragent);
         }
 
+        if (preg_match('/oneplus/i', $useragent)) {
+            return Mobile\OneplusFactory::detect($useragent);
+        }
+
         if (preg_match('/kingzone/i', $useragent)) {
             return Mobile\KingzoneFactory::detect($useragent);
         }
@@ -492,6 +496,14 @@ class MobileFactory implements FactoryInterface
             return Mobile\MeizuFactory::detect($useragent);
         }
 
+        if (preg_match('/hisense/i', $useragent)) {
+            return Mobile\HisenseFactory::detect($useragent);
+        }
+
+        if (preg_match('/minix/i', $useragent)) {
+            return Mobile\MinixFactory::detect($useragent);
+        }
+
         if (preg_match('/allwinner/i', $useragent)) {
             return Mobile\AllWinnerFactory::detect($useragent);
         }
@@ -536,7 +548,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\XiaomiFactory::detect($useragent);
         }
 
-        if (preg_match('/MI (\d|PAD)/', $useragent)) {
+        if (preg_match('/MI (\d|PAD|MAX)/', $useragent)) {
             return Mobile\XiaomiFactory::detect($useragent);
         }
 
@@ -1087,7 +1099,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\BqFactory::detect($useragent);
         }
 
-        if (preg_match('/bq Aquaris 5 HD/', $useragent)) {
+        if (preg_match('/aquaris/i', $useragent)) {
             return Mobile\BqFactory::detect($useragent);
         }
 
@@ -1295,7 +1307,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\SonyFactory::detect($useragent);
         }
 
-        if (preg_match('/(SO\-03E|SO\-02D)/', $useragent)) {
+        if (preg_match('/(SO\-03E|SO\-02D|L50u)/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         }
 
@@ -1591,6 +1603,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\NokiaFactory::detect($useragent);
         }
 
+        if (preg_match('/(5130c\-2|lumia|arm; 909|id336|genm14)/i', $useragent)) {
+            return Mobile\NokiaFactory::detect($useragent);
+        }
+
         if (preg_match('/N\d{4}/', $useragent)) {
             return Mobile\StarFactory::detect($useragent);
         }
@@ -1627,8 +1643,16 @@ class MobileFactory implements FactoryInterface
             return Mobile\VertexFactory::detect($useragent);
         }
 
-        if (preg_match('/M040/', $useragent)) {
+        if (preg_match('/(M040|MZ\-MX5)/', $useragent)) {
             return Mobile\MeizuFactory::detect($useragent);
+        }
+
+        if (preg_match('/F5281/', $useragent)) {
+            return Mobile\HisenseFactory::detect($useragent);
+        }
+
+        if (preg_match('/(NEO\-X5)/', $useragent)) {
+            return Mobile\MinixFactory::detect($useragent);
         }
 
         if (preg_match('/CAL21/', $useragent)) {
@@ -1771,7 +1795,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\TmobileFactory::detect($useragent);
         }
 
-        if (preg_match('/redmi_note/i', $useragent)) {
+        if (preg_match('/redmi/i', $useragent)) {
             return Mobile\XiaomiFactory::detect($useragent);
         }
 

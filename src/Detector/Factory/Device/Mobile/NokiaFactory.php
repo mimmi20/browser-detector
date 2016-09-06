@@ -51,16 +51,36 @@ class NokiaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/Lumia 650/i', $useragent)) {
+        if (preg_match('/genm14/i', $useragent)) {
+            return new Nokia\NokiaXl2($useragent);
+        }
+
+        if (preg_match('/(lumia 650|id336)/i', $useragent)) {
             return new Nokia\NokiaLumia650($useragent);
         }
 
-        if (preg_match('/Lumia 510/i', $useragent)) {
+        if (preg_match('/lumia 510/i', $useragent)) {
             return new Nokia\NokiaLumia510($useragent);
+        }
+
+        if (preg_match('/(rm\-1113|lumia 640 lte)/i', $useragent)) {
+            return new Nokia\NokiaLumia640lte($useragent);
+        }
+
+        if (preg_match('/rm\-1090/i', $useragent)) {
+            return new Nokia\NokiaLumia535Rm1090($useragent);
         }
 
         if (preg_match('/rm\-1089/i', $useragent)) {
             return new Nokia\NokiaLumia535Rm1089($useragent);
+        }
+
+        if (preg_match('/rm\-1075/i', $useragent)) {
+            return new Nokia\NokiaLumia640lteRm1075($useragent);
+        }
+
+        if (preg_match('/rm\-1067/i', $useragent)) {
+            return new Nokia\NokiaLumia640xlRm1067($useragent);
         }
 
         if (preg_match('/rm\-1045/i', $useragent)) {
@@ -69,6 +89,18 @@ class NokiaFactory implements FactoryInterface
 
         if (preg_match('/rm\-1038/i', $useragent)) {
             return new Nokia\NokiaLumia735Rm1038($useragent);
+        }
+
+        if (preg_match('/rm\-1031/i', $useragent)) {
+            return new Nokia\NokiaLumia532($useragent);
+        }
+
+        if (preg_match('/rm\-1010/i', $useragent)) {
+            return new Nokia\NokiaLumia638($useragent);
+        }
+
+        if (preg_match('/rm\-994/i', $useragent)) {
+            return new Nokia\NokiaLumia1320Rm994($useragent);
         }
 
         if (preg_match('/rm\-976/i', $useragent)) {
@@ -87,131 +119,127 @@ class NokiaFactory implements FactoryInterface
             return new Nokia\NokiaLumia620Rm846($useragent);
         }
 
-        if (preg_match('/Lumia 520/i', $useragent)) {
+        if (preg_match('/lumia 520/i', $useragent)) {
             return new Nokia\NokiaLumia520($useragent);
         }
 
-        if (preg_match('/Lumia 530/i', $useragent)) {
+        if (preg_match('/lumia 530/i', $useragent)) {
             return new Nokia\NokiaLumia530($useragent);
         }
 
-        if (preg_match('/Lumia 535/i', $useragent)) {
+        if (preg_match('/lumia 535/i', $useragent)) {
             return new Nokia\NokiaLumia535($useragent);
         }
 
-        if (preg_match('/Lumia 540/i', $useragent)) {
+        if (preg_match('/lumia 540/i', $useragent)) {
             return new Nokia\NokiaLumia540($useragent);
         }
 
-        if (preg_match('/Lumia 550/i', $useragent)) {
+        if (preg_match('/lumia 550/i', $useragent)) {
             return new Nokia\NokiaLumia550($useragent);
         }
 
-        if (preg_match('/Lumia 610/i', $useragent)) {
+        if (preg_match('/lumia 610/i', $useragent)) {
             return new Nokia\NokiaLumia610($useragent);
         }
 
-        if (preg_match('/Lumia 620/i', $useragent)) {
+        if (preg_match('/lumia 620/i', $useragent)) {
             return new Nokia\NokiaLumia620($useragent);
         }
 
-        if (preg_match('/Lumia 625/i', $useragent)) {
+        if (preg_match('/lumia 625/i', $useragent)) {
             return new Nokia\NokiaLumia625($useragent);
         }
 
-        if (preg_match('/Lumia 630/i', $useragent)) {
+        if (preg_match('/lumia 630/i', $useragent)) {
             return new Nokia\NokiaLumia630($useragent);
         }
 
-        if (preg_match('/Lumia 635/i', $useragent)) {
+        if (preg_match('/lumia 635/i', $useragent)) {
             return new Nokia\NokiaLumia635($useragent);
         }
 
-        if (preg_match('/Lumia 640 lte/i', $useragent)) {
-            return new Nokia\NokiaLumia640lte($useragent);
-        }
-
-        if (preg_match('/Lumia 640 xl/i', $useragent)) {
+        if (preg_match('/lumia 640 xl/i', $useragent)) {
             return new Nokia\NokiaLumia640xl($useragent);
         }
 
-        if (preg_match('/Lumia 640/i', $useragent)) {
+        if (preg_match('/lumia 640/i', $useragent)) {
             return new Nokia\NokiaLumia640($useragent);
         }
 
-        if (preg_match('/Lumia 710/i', $useragent)) {
+        if (preg_match('/lumia 710/i', $useragent)) {
             return new Nokia\NokiaLumia710($useragent);
         }
 
-        if (preg_match('/Lumia 720/i', $useragent)) {
+        if (preg_match('/lumia 720/i', $useragent)) {
             return new Nokia\NokiaLumia720($useragent);
         }
 
-        if (preg_match('/Lumia 730/i', $useragent)) {
+        if (preg_match('/lumia 730/i', $useragent)) {
             return new Nokia\NokiaLumia730($useragent);
         }
 
-        if (preg_match('/Lumia 735/i', $useragent)) {
+        if (preg_match('/lumia 735/i', $useragent)) {
             return new Nokia\NokiaLumia735($useragent);
         }
 
-        if (preg_match('/Lumia 800/i', $useragent)) {
+        if (preg_match('/lumia 800/i', $useragent)) {
             return new Nokia\NokiaLumia800($useragent);
         }
 
-        if (preg_match('/Lumia 820/i', $useragent)) {
+        if (preg_match('/lumia 820/i', $useragent)) {
             return new Nokia\NokiaLumia820($useragent);
         }
 
-        if (preg_match('/Lumia 830/i', $useragent)) {
+        if (preg_match('/lumia 830/i', $useragent)) {
             return new Nokia\NokiaLumia830($useragent);
         }
 
-        if (preg_match('/Lumia 900/i', $useragent)) {
+        if (preg_match('/lumia 900/i', $useragent)) {
             return new Nokia\NokiaLumia900($useragent);
         }
 
-        if (preg_match('/Lumia 920/i', $useragent)) {
+        if (preg_match('/lumia 920/i', $useragent)) {
             return new Nokia\NokiaLumia920($useragent);
         }
 
-        if (preg_match('/Lumia 925/i', $useragent)) {
+        if (preg_match('/lumia 925/i', $useragent)) {
             return new Nokia\NokiaLumia925($useragent);
         }
 
-        if (preg_match('/Lumia 928/i', $useragent)) {
+        if (preg_match('/lumia 928/i', $useragent)) {
             return new Nokia\NokiaLumia928($useragent);
         }
 
-        if (preg_match('/Lumia 930/i', $useragent)) {
+        if (preg_match('/lumia 930/i', $useragent)) {
             return new Nokia\NokiaLumia930($useragent);
         }
 
-        if (preg_match('/Lumia 950 xl/i', $useragent)) {
+        if (preg_match('/lumia 950 xl/i', $useragent)) {
             return new Nokia\NokiaLumia950xl($useragent);
         }
 
-        if (preg_match('/Lumia 950/i', $useragent)) {
+        if (preg_match('/lumia 950/i', $useragent)) {
             return new Nokia\NokiaLumia950($useragent);
         }
 
-        if (preg_match('/(Lumia 1020|nokia; 909|arm; 909)/i', $useragent)) {
+        if (preg_match('/(lumia 1020|nokia; 909|arm; 909)/i', $useragent)) {
             return new Nokia\NokiaLumia1020($useragent);
         }
 
-        if (preg_match('/Lumia 1320/i', $useragent)) {
+        if (preg_match('/lumia 1320/i', $useragent)) {
             return new Nokia\NokiaLumia1320($useragent);
         }
 
-        if (preg_match('/Lumia 1520/i', $useragent)) {
+        if (preg_match('/lumia 1520/i', $useragent)) {
             return new Nokia\NokiaLumia1520($useragent);
         }
 
-        if (preg_match('/Lumia/i', $useragent)) {
+        if (preg_match('/lumia/i', $useragent)) {
             return new Nokia\NokiaLumia($useragent);
         }
 
-        if (preg_match('/NokiaN81/i', $useragent)) {
+        if (preg_match('/nokian81/i', $useragent)) {
             return new Nokia\NokiaN81($useragent);
         }
 

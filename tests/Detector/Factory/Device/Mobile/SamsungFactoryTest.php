@@ -331,6 +331,36 @@ class SamsungFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G925F Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36',
+                'SM-G925F',
+                'Galaxy S6 Edge (Global)',
+                'Samsung',
+                'Samsung',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus Player Build/MMB29T)',
+                'Nexus Player',
+                'Nexus Player',
+                'Samsung',
+                'Samsung',
+                'Media Player',
+                false,
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; GT-I9195I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Crosswalk/14.43.343.17 Mobile Safari/537.36',
+                'GT-I9195I',
+                'Galaxy S4 Mini LTE',
+                'Samsung',
+                'Samsung',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
