@@ -98,6 +98,10 @@ class MobileDevice
             return true;
         }
 
+        if ($utils->checkIfContainsAll(['windows nt', 'arm;'], true)) {
+            return true;
+        }
+
         // ignore mobile safari token if windows nt token is available
         if ($utils->checkIfContains('windows nt', true)
             && $utils->checkIfContains(['mobile safari', 'opera mobi', 'iphone'], true)
@@ -209,7 +213,7 @@ class MobileDevice
             'spark284',
             'spice qt-75',
             'velocitymicro',
-            'limua',
+            'lumia',
         ];
 
         if ($utils->checkIfContains($mobileBrowsers, true)) {

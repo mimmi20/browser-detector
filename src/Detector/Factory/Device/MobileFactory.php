@@ -72,7 +72,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\XiaomiFactory::detect($useragent);
         }
 
-        if (preg_match('/(nokia|5130c\-2|lumia)/i', $useragent)) {
+        if (preg_match('/(nokia|5130c\-2|lumia|arm; 909)/i', $useragent)) {
             return Mobile\NokiaFactory::detect($useragent);
         }
 
@@ -1785,6 +1785,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/One/', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
+        }
+
+        if (preg_match('/ARM; WIN (JR|HD)/', $useragent)) {
+            return Mobile\BluFactory::detect($useragent);
         }
 
         if (preg_match('/ARM;/', $useragent)

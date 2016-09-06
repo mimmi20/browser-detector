@@ -96,6 +96,12 @@ class PlatformFactory implements FactoryInterface
                 return new Os\WindowsPhoneOs($agent);
             }
 
+            $doMatchMobile = preg_match('/Windows NT ([\d\.]+); ARM; Lumia/', $agent, $matchesMobile);
+
+            if ($doMatchMobile && (float) $matchesMobile[1] >= 7.0) {
+                return new Os\WindowsPhoneOs($agent);
+            }
+
             return new Os\WindowsMobileOs($agent);
         }
 

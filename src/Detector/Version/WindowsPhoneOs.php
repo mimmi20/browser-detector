@@ -74,7 +74,7 @@ class WindowsPhoneOs
             return VersionFactory::set('0.0.0');
         }
 
-        $searches = ['Windows Phone OS', 'Windows Phone', 'wds', 'Windows Mobile'];
+        $searches = ['Windows Phone OS', 'Windows Phone', 'wds', 'Windows Mobile', 'Windows NT'];
 
         return VersionFactory::detectVersion($useragent, $searches);
     }

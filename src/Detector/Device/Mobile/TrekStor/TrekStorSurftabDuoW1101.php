@@ -76,6 +76,6 @@ class TrekStorSurftabDuoW1101 extends Device implements DeviceHasSpecificPlatfor
      */
     public function detectOs()
     {
-        return new Os\Windows($this->useragent);
+        return null;
     }
 }

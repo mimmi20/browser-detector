@@ -67,6 +67,10 @@ class Windows
             return false;
         }
 
+        if ($utils->checkIfContainsAll(['windows nt', 'arm;'], true)) {
+            return false;
+        }
+
         // ignore mobile safari token if windows nt token is available
         if ($utils->checkIfContains('windows nt', true)
             && $utils->checkIfContains(['mobile safari', 'opera mobi', 'iphone'], true)
@@ -152,10 +156,22 @@ class Windows
         $utils = new Utils();
         $utils->setUserAgent($this->useragent);
 
+        if ($utils->checkIfContainsAll(['windows nt', 'arm;'], true)) {
+            return true;
+        }
+
         $mobileWindows = [
-            'windows ce', 'windows phone', 'windows mobile',
-            'microsoft windows; ppc', 'iemobile', 'xblwp7', 'zunewp7',
-            'windowsmobile', 'wpdesktop', 'mobile version',
+            'windows ce',
+            'windows phone',
+            'windows mobile',
+            'microsoft windows; ppc',
+            'iemobile',
+            'xblwp7',
+            'zunewp7',
+            'windowsmobile',
+            'wpdesktop',
+            'mobile version',
+            'lumia',
         ];
 
         if (!$utils->checkIfContains($mobileWindows, true)) {
