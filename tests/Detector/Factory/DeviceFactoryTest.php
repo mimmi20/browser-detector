@@ -2191,6 +2191,16 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (compatible; SISTRIX Crawler; http://crawler.sistrix.net/)',
+                'unknown',
+                'unknown',
+                'unknown',
+                'unknown',
+                null,
+                false,
+                null,
+            ],
         ];
     }
 }
