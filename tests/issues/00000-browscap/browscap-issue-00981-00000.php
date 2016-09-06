@@ -17,7 +17,7 @@ return [
             'Platform_Maker'          => 'Linux Foundation',
             'Platform_Brand_Name'     => 'Linux Foundation',
             'Device_Name'             => 'Linux Desktop',
-            'Device_Maker'            => 'Various',
+            'Device_Maker'            => 'unknown',
             'Device_Type'             => 'Desktop',
             'Device_Pointing_Method'  => 'mouse',
             'Device_Code_Name'        => 'Linux Desktop',

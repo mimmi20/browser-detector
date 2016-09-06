@@ -149,7 +149,7 @@ return [
             'Device_Name'             => 'Nexus 6',
             'Device_Maker'            => 'Motorola',
             'Device_Type'             => 'Mobile Phone',
-            'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Pointing_Method'  => '',
             'Device_Code_Name'        => 'Nexus 6',
             'Device_Brand_Name'       => 'Google',
             'RenderingEngine_Name'    => 'Blink',

@@ -19,7 +19,7 @@ return [
             'Device_Name'             => 'Q9c',
             'Device_Maker'            => 'Motorola',
             'Device_Type'             => 'Mobile Phone',
-            'Device_Pointing_Method'  => 'unknown',
+            'Device_Pointing_Method'  => 'touchscreen',
             'Device_Code_Name'        => 'Q9c',
             'Device_Brand_Name'       => 'Motorola',
             'RenderingEngine_Name'    => 'Trident',

@@ -111,6 +111,16 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.2; IdeaTabA1000L-F Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.10549 YaBrowser/13.12.1599.10549 Safari/537.36',
+                'A1000L-F',
+                'IdeaTab A1000L-F',
+                'Lenovo',
+                'Lenovo',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

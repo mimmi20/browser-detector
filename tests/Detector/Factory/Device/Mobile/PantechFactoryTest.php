@@ -81,6 +81,16 @@ class PantechFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 null,
             ],
+            [
+                'PantechP9020/JEUS04262010; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.18216; U; en-US) Opera 9.50',
+                'P9020',
+                'Pursuit P9020',
+                'Pantech',
+                'Pantech',
+                'Mobile Phone',
+                null,
+                null,
+            ],
         ];
     }
 }

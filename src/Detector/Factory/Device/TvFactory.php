@@ -179,7 +179,7 @@ class TvFactory implements FactoryInterface
             return new Tv\SharpAquosTv($useragent);
         }
 
-        if (preg_match('/CX919/', $useragent)) {
+        if (preg_match('/(CX919|gxt_dongle_3188)/', $useragent)) {
             return new Tv\AndoerCx919($useragent);
         }
 

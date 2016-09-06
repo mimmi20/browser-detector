@@ -69,7 +69,7 @@ return [
             'Platform_Maker'          => 'Canonical Foundation',
             'Platform_Brand_Name'     => 'Canonical',
             'Device_Name'             => 'Linux Desktop',
-            'Device_Maker'            => 'Various',
+            'Device_Maker'            => 'unknown',
             'Device_Type'             => 'Desktop',
             'Device_Pointing_Method'  => 'mouse',
             'Device_Code_Name'        => 'Linux Desktop',

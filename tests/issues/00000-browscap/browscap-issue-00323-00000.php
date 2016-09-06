@@ -226,7 +226,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'Kindle',
             'Device_Maker'            => 'Amazon.com, Inc.',
-            'Device_Type'             => 'Ebook Reader',
+            'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Code_Name'        => 'Kindle',
             'Device_Brand_Name'       => 'Amazon',

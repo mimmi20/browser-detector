@@ -16,7 +16,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Fire HD 7 (4th Gen)',
+            'Device_Name'             => 'Kindle Fire HD 7',
             'Device_Maker'            => 'Amazon.com, Inc.',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',

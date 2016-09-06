@@ -17,7 +17,7 @@ return [
             'Platform_Maker'          => 'unknown',
             'Platform_Brand_Name'     => 'unknown',
             'Device_Name'             => 'general Desktop',
-            'Device_Maker'            => 'Various',
+            'Device_Maker'            => 'unknown',
             'Device_Type'             => 'Desktop',
             'Device_Pointing_Method'  => 'mouse',
             'Device_Code_Name'        => 'general Desktop',

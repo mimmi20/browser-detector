@@ -148,6 +148,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\HtcFactory::detect($useragent);
         }
 
+        if (preg_match('/pantech/i', $useragent)) {
+            return Mobile\PantechFactory::detect($useragent);
+        }
+
         if (preg_match('/(hp|p160u|touchpad|pixi|palm|blazer|cm\_tenderloin)/i', $useragent)) {
             return Mobile\HpFactory::detect($useragent);
         }
@@ -432,10 +436,6 @@ class MobileFactory implements FactoryInterface
             return Mobile\VertexFactory::detect($useragent);
         }
 
-        if (preg_match('/pantech/i', $useragent)) {
-            return Mobile\PantechFactory::detect($useragent);
-        }
-
         if (preg_match('/gfive/i', $useragent)) {
             return Mobile\GfiveFactory::detect($useragent);
         }
@@ -544,6 +544,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\MemupFactory::detect($useragent);
         }
 
+        if (preg_match('/prestigio/i', $useragent)) {
+            return Mobile\PrestigioFactory::detect($useragent);
+        }
+
         if (preg_match('/xiaomi/i', $useragent)) {
             return Mobile\XiaomiFactory::detect($useragent);
         }
@@ -613,10 +617,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/pomp/i', $useragent)) {
             return Mobile\PompFactory::detect($useragent);
-        }
-
-        if (preg_match('/prestigio/i', $useragent)) {
-            return Mobile\PrestigioFactory::detect($useragent);
         }
 
         if (preg_match('/qmobile/i', $useragent)) {
@@ -1235,6 +1235,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\ImpressionFactory::detect($useragent);
         }
 
+        if (preg_match('/CAL21/', $useragent)) {
+            return Mobile\GzoneFactory::detect($useragent);
+        }
+
         if (preg_match('/(A|C)\d{5}/', $useragent)) {
             return Mobile\NomiFactory::detect($useragent);
         }
@@ -1653,10 +1657,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/(NEO\-X5)/', $useragent)) {
             return Mobile\MinixFactory::detect($useragent);
-        }
-
-        if (preg_match('/CAL21/', $useragent)) {
-            return Mobile\GzoneFactory::detect($useragent);
         }
 
         if (preg_match('/Numy_Note_9/', $useragent)) {

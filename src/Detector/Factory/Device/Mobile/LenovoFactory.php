@@ -187,12 +187,12 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\LenovoA1000f($useragent);
         }
 
-        if (preg_match('/(A2109A|IdeaTab)/i', $useragent)) {
-            return new Lenovo\LenovoA2109aIdeaTab($useragent);
-        }
-
         if (preg_match('/A1000L\-F/i', $useragent)) {
             return new Lenovo\LenovoA1000lf($useragent);
+        }
+
+        if (preg_match('/(A2109A|IdeaTab)/i', $useragent)) {
+            return new Lenovo\LenovoA2109aIdeaTab($useragent);
         }
 
         if (preg_match('/A889/i', $useragent)) {

@@ -58,7 +58,7 @@ class AndoerCx919 extends Device implements DeviceHasSpecificPlatformInterface
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Andoer')->getName();
         $this->brand             = CompanyFactory::get('Andoer')->getBrandName();
-        $this->pointingMethod    = 'mouse';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
         $this->dualOrientation   = false;

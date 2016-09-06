@@ -151,6 +151,16 @@ class XiaomiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; HM NOTE 1W Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/29.0.0.10.13;]',
+                'HM NOTE 1W',
+                'Redmi Note',
+                'Xiaomi Tech',
+                'Xiaomi',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

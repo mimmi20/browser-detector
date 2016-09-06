@@ -311,6 +311,36 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'HTC_DesireS_S510e_Mozilla/5.0(Linux; U; Android 2.3.3;it-it; Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'S510e',
+                'Desire S',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.2; Evo 3D GSM Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36 OPR/27.0.1698.89115',
+                'Evo 3D GSM',
+                'Evo 3D GSM',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.1; ru-ru; Rooted Eris 2.1 v0.3 Build/ERD79) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
+                'Eris',
+                'Eris',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                null,
+                null,
+            ],
         ];
     }
 }

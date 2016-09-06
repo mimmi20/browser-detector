@@ -201,6 +201,16 @@ class TvFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 null,
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; gxt_dongle_3188 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 bdbrowserhd_i18n/1.8.0.1',
+                'CX919',
+                'CX919',
+                'Andoer',
+                'Andoer',
+                'TV Device',
+                false,
+                null,
+            ],
         ];
     }
 }

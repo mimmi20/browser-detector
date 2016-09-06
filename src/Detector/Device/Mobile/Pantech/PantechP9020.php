@@ -58,7 +58,7 @@ class PantechP9020 extends Device implements DeviceHasSpecificPlatformInterface
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Pantech')->getName();
         $this->brand             = CompanyFactory::get('Pantech')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
         $this->dualOrientation   = null;

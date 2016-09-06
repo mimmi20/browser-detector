@@ -16,7 +16,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Moto E',
+            'Device_Name'             => 'XT1021',
             'Device_Maker'            => 'Motorola',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',

@@ -215,6 +215,10 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcXdaDiamond2($useragent);
         }
 
+        if (preg_match('/Evo 3D GSM/i', $useragent)) {
+            return new Htc\HtcEvo3dGsm($useragent);
+        }
+
         if (preg_match('/(EVO[ _]3D|EVO3D|x515m)/i', $useragent)) {
             return new Htc\HtcX515m($useragent);
         }
@@ -243,6 +247,10 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesireV($useragent);
         }
 
+        if (preg_match('/s510e/i', $useragent)) {
+            return new Htc\HtcS510eDesireS($useragent);
+        }
+
         if (preg_match('/(desire[ _]sv|desiresv)/i', $useragent)) {
             return new Htc\HtcDesireSv($useragent);
         }
@@ -261,10 +269,6 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/(Desire HD|DesireHD)/i', $useragent)) {
             return new Htc\HtcDesireHd($useragent);
-        }
-
-        if (preg_match('/S510e/i', $useragent)) {
-            return new Htc\HtcS510eDesireS($useragent);
         }
 
         if (preg_match('/(desire[ _]c|desirec)/i', $useragent)) {
@@ -359,8 +363,12 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcT3335($useragent);
         }
 
-        if (preg_match('/T328w/i', $useragent)) {
+        if (preg_match('/t328w/i', $useragent)) {
             return new Htc\HtcT328w($useragent);
+        }
+
+        if (preg_match('/t328d/i', $useragent)) {
+            return new Htc\HtcT328d($useragent);
         }
 
         if (preg_match('/Smart\_F3188/i', $useragent)) {
@@ -443,10 +451,6 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcEvo4g($useragent);
         }
 
-        if (preg_match('/Evo 3D GSM/i', $useragent)) {
-            return new Htc\HtcEvo3dGsm($useragent);
-        }
-
         if (preg_match('/Dream/i', $useragent)) {
             return new Htc\HtcDream($useragent);
         }
@@ -457,6 +461,10 @@ class HtcFactory implements FactoryInterface
 
         if (preg_match('/click/i', $useragent)) {
             return new Htc\HtcClick($useragent);
+        }
+
+        if (preg_match('/eris/i', $useragent)) {
+            return new Htc\HtcEris($useragent);
         }
 
         if (preg_match('/ C2/i', $useragent)) {

@@ -50,7 +50,7 @@ class DarwinFactory implements FactoryInterface
      *
      * @param string $useragent
      *
-     * @return \UaResult\Os\OsInterface
+     * @return \UaResult\Device\DeviceInterface
      */
     public static function detect($useragent)
     {

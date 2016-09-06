@@ -55,6 +55,10 @@ class IrbisFactory implements FactoryInterface
             return new Irbis\IrbisTx68($useragent);
         }
 
+        if (preg_match('/TX18/', $useragent)) {
+            return new Irbis\IrbisTx18($useragent);
+        }
+
         if (preg_match('/TX17/', $useragent)) {
             return new Irbis\IrbisTx17($useragent);
         }

@@ -19,7 +19,7 @@ return [
             'Device_Name'             => '7230',
             'Device_Maker'            => 'Nokia',
             'Device_Type'             => 'Mobile Phone',
-            'Device_Pointing_Method'  => 'unknown',
+            'Device_Pointing_Method'  => '',
             'Device_Code_Name'        => '7230',
             'Device_Brand_Name'       => 'Nokia',
             'RenderingEngine_Name'    => 'WebKit',

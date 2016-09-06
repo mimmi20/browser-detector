@@ -1368,7 +1368,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'G Pad 10.1',
+            'Device_Name'             => 'G Pad 8.3',
             'Device_Maker'            => 'LG',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',

@@ -91,6 +91,16 @@ class PrestigioFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Prestigio PAP5000TDUO Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0',
+                'PAP5000TDUO',
+                'Multipad 2 Ultra Duo 8.0 3G',
+                'Prestigio',
+                'Prestigio',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

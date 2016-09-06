@@ -53,7 +53,7 @@ class MdLifetabS785x extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'Lifetab S785X';
+        $this->deviceName        = 'LifeTab S785X';
         $this->marketingName     = 'LifeTab S785X';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Lenovo')->getName();

@@ -42,7 +42,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Yoga 8 3G',
+            'Device_Name'             => 'Yoga B6000-H',
             'Device_Maker'            => 'Lenovo',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',

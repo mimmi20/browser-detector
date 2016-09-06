@@ -16,7 +16,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Moto G 2nd Gen',
+            'Device_Name'             => 'XT1068',
             'Device_Maker'            => 'Motorola',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
