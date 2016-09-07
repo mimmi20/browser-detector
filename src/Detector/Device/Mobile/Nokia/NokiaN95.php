@@ -61,7 +61,7 @@ class NokiaN95 extends Device implements DeviceHasSpecificPlatformInterface
         $this->pointingMethod    = 'joystick';
         $this->resolutionWidth   = 240;
         $this->resolutionHeight  = 320;
-        $this->dualOrientation   = true;
+        $this->dualOrientation   = false;
         $this->colors            = 16777216;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

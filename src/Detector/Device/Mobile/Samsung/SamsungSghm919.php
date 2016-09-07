@@ -54,7 +54,7 @@ class SamsungSghm919 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SGH-M919';
-        $this->marketingName     = 'Galaxy S4 LTE (T-Mobile), Black Mist';
+        $this->marketingName     = 'Galaxy S4 LTE (T-Mobile)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

@@ -287,7 +287,7 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesire516($useragent);
         }
 
-        if (preg_match('/Desire[ _]500/i', $useragent)) {
+        if (preg_match('/desire[ _]500/i', $useragent)) {
             return new Htc\HtcDesire500($useragent);
         }
 

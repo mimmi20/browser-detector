@@ -14,7 +14,7 @@ require 'vendor/autoload.php';
 
 ini_set('memory_limit', '-1');
 
-$sourceDirectory = 'src\\Detector\\Version\\';
+$sourceDirectory = 'src\\Detector\\Browser\\';
 
 $iterator = new \RecursiveDirectoryIterator($sourceDirectory);
 
@@ -28,12 +28,21 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     $filecontent = file_get_contents($fullpath);
     $matches     = [];
 
-    if (!preg_match('/class (.*)/', $filecontent, $matches)) {
+    if (!preg_match('/class (.*) extends AbstractBrowser/', $filecontent, $matches)
+        && !preg_match('/class (.*)\\n    extends AbstractBrowser/', $filecontent, $matches)
+    ) {
         echo 'class name not found in file ', $fullpath, PHP_EOL;
         continue;
     }
 
     $className = $matches[1];
+
+    $targetFile = 'tests\\Detector\\Browser\\' . $className . 'Test.php';
+
+    if (file_exists($targetFile)) {
+        continue;
+    }
+
     $matches   = [];
 
     if (!preg_match('/namespace ([^;]+);/', $filecontent, $matches)
@@ -46,14 +55,14 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 
     echo 'processing ', $fullpath, PHP_EOL;
 
-    $testGenerator = new \SebastianBergmann\PHPUnit\SkeletonGenerator\TestGenerator($namespace . '\\' . $className, $fullpath, $className . 'Test', 'tests\\Detector\\Version\\' . $className . 'Test.php');
+    $testGenerator = new \SebastianBergmann\PHPUnit\SkeletonGenerator\TestGenerator($namespace . '\\' . $className, $fullpath, $className . 'Test', 'tests\\Detector\\Browser\\' . $className . 'Test.php');
     $testContent = $testGenerator->generate();
 
-    $testContent = str_replace('<?php', '<?php' . "\n\nnamespace BrowserDetectorTest\\Detector\\Version;\n\nuse BrowserDetector\\Detector\\Version\\$className;\n\n", $testContent);
+    $testContent = str_replace('<?php', '<?php' . "\n\nnamespace BrowserDetectorTest\\Detector\\Browser;\n\nuse BrowserDetector\\Detector\\Browser\\$className;\n\n", $testContent);
     $testContent = str_replace('extends PHPUnit_Framework_TestCase', 'extends \\PHPUnit_Framework_TestCase', $testContent);
     $testContent = str_replace('protected $object', 'private $object', $testContent);
     $testContent = str_replace('$this->object = new ' . $className . ';', '$this->object = new ' . $className . '(\'Test-User-Agent\');', $testContent);
     $testContent = str_replace('$this->markTestIncomplete', 'static::markTestIncomplete', $testContent);
 
-    file_put_contents('tests\\Detector\\Version\\' . $className . 'Test.php', $testContent);
+    file_put_contents($targetFile, $testContent);
 }

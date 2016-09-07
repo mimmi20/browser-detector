@@ -54,7 +54,7 @@ class SamsungSmG870F extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-G870F';
-        $this->marketingName     = 'SM-G870F';
+        $this->marketingName     = 'Galaxy S5 Active';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

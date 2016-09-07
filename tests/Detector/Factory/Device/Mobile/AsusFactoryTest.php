@@ -101,6 +101,16 @@ class AsusFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; ME302KL Build/JDQ39)',
+                'ME302KL',
+                'MeMO Pad FHD 10',
+                'Asus',
+                'Asus',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

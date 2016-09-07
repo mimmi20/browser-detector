@@ -131,6 +131,36 @@ class BlackBerryFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (BlackBerry; U; BlackBerry 9790; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.714 Mobile Safari/534.11+',
+                'BlackBerry 9790',
+                'BlackBerry Bold',
+                'Research In Motion Limited',
+                'RIM',
+                'Mobile Phone',
+                false,
+                'clickwheel',
+            ],
+            [
+                'Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.1.0.2354 Mobile Safari/537.10+',
+                'Z10',
+                'Z10',
+                'BlackBerry Limited',
+                'BlackBerry',
+                'Mobile Phone',
+                false,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (BlackBerry; U; BlackBerry 9720; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1121 Mobile Safari/534.11+',
+                'BlackBerry 9720',
+                'Bold',
+                'Research In Motion Limited',
+                'RIM',
+                'Mobile Phone',
+                false,
+                'clickwheel',
+            ],
         ];
     }
 }

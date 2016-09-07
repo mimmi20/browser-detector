@@ -54,7 +54,7 @@ class SamsungGtn7105 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-N7105';
-        $this->marketingName     = 'Galaxy Note II';
+        $this->marketingName     = 'Galaxy Note 2 (3G, LTE)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

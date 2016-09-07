@@ -36,6 +36,13 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     }
 
     $className = $matches[1];
+
+    $targetFile = 'tests\\Detector\\Engine\\' . $className . 'Test.php';
+
+    if (file_exists($targetFile)) {
+        continue;
+    }
+
     $matches   = [];
 
     if (!preg_match('/namespace ([^;]+);/', $filecontent, $matches)
@@ -57,5 +64,5 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
     $testContent = str_replace('$this->object = new ' . $className . ';', '$this->object = new ' . $className . '(\'Test-User-Agent\');', $testContent);
     $testContent = str_replace('$this->markTestIncomplete', 'static::markTestIncomplete', $testContent);
 
-    file_put_contents('tests\\Detector\\Engine\\' . $className . 'Test.php', $testContent);
+    file_put_contents($targetFile, $testContent);
 }

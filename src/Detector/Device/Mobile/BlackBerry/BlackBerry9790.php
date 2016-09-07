@@ -54,7 +54,7 @@ class BlackBerry9790 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'BlackBerry 9790';
-        $this->marketingName     = 'BlackBerry Bold 9790';
+        $this->marketingName     = 'BlackBerry Bold';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Rim')->getName();
         $this->brand             = CompanyFactory::get('Rim')->getBrandName();

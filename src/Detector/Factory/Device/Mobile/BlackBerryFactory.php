@@ -95,6 +95,10 @@ class BlackBerryFactory implements FactoryInterface
             return new BlackBerry\BlackBerry9780($useragent);
         }
 
+        if (preg_match('/9720/i', $useragent)) {
+            return new BlackBerry\BlackBerry9720($useragent);
+        }
+
         if (preg_match('/9700/i', $useragent)) {
             return new BlackBerry\BlackBerry9700($useragent);
         }

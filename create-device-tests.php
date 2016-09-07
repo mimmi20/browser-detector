@@ -46,6 +46,12 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
 
     $namespace = $matches[1];
 
+    $targetFile = str_replace('BrowserDetector', 'tests', $namespace) . '\\' . $className . 'Test.php';
+
+    if (file_exists($targetFile)) {
+        continue;
+    }
+
     echo 'processing ', $fullpath, PHP_EOL;
 
     $testGenerator = new \SebastianBergmann\PHPUnit\SkeletonGenerator\TestGenerator($namespace . '\\' . $className, $fullpath, $className . 'Test');
@@ -61,5 +67,5 @@ foreach (new \RecursiveIteratorIterator($iterator) as $file) {
         mkdir(str_replace('BrowserDetector', 'tests', $namespace));
     }
 
-    file_put_contents(str_replace('BrowserDetector', 'tests', $namespace) . '\\' . $className . 'Test.php', $testContent);
+    file_put_contents($targetFile, $testContent);
 }

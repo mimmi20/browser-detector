@@ -54,7 +54,7 @@ class SamsungGti8200 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'GT-I8200';
-        $this->marketingName     = 'GT-I8200';
+        $this->marketingName     = 'Galaxy S3 Mini Value Edition';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

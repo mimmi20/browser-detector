@@ -121,6 +121,16 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 null,
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.2; XT1068 Build/LXB22.46-28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36',
+                'XT1068',
+                'Moto G Dual SIM (2nd gen)',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

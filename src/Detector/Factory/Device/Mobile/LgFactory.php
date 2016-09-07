@@ -303,27 +303,31 @@ class LgFactory implements FactoryInterface
             return new Lg\LgG3($useragent);
         }
 
-        if (preg_match('/F240S/i', $useragent)) {
+        if (preg_match('/f240s/i', $useragent)) {
             return new Lg\LgF240s($useragent);
         }
 
-        if (preg_match('/F200K/i', $useragent)) {
+        if (preg_match('/f240k/i', $useragent)) {
+            return new Lg\LgF240k($useragent);
+        }
+
+        if (preg_match('/f200k/i', $useragent)) {
             return new Lg\LgF200K($useragent);
         }
 
-        if (preg_match('/F160K/i', $useragent)) {
+        if (preg_match('/f160k/i', $useragent)) {
             return new Lg\LgF160K($useragent);
         }
 
-        if (preg_match('/F100S/i', $useragent)) {
+        if (preg_match('/f100s/i', $useragent)) {
             return new Lg\Lgf100s($useragent);
         }
 
-        if (preg_match('/F100L/i', $useragent)) {
+        if (preg_match('/f100l/i', $useragent)) {
             return new Lg\LgF100L($useragent);
         }
 
-        if (preg_match('/Eve/i', $useragent)) {
+        if (preg_match('/eve/i', $useragent)) {
             return new Lg\LgEve($useragent);
         }
 
@@ -395,23 +399,27 @@ class LgFactory implements FactoryInterface
             return new Lg\Lgd855($useragent);
         }
 
-        if (preg_match('/D805/i', $useragent)) {
+        if (preg_match('/d805/i', $useragent)) {
             return new Lg\Lgd805($useragent);
         }
 
-        if (preg_match('/D802/i', $useragent)) {
+        if (preg_match('/d802tr/i', $useragent)) {
+            return new Lg\Lgd802tr($useragent);
+        }
+
+        if (preg_match('/d802/i', $useragent)) {
             return new Lg\Lgd802($useragent);
         }
 
-        if (preg_match('/D724/i', $useragent)) {
+        if (preg_match('/d724/i', $useragent)) {
             return new Lg\Lgd724($useragent);
         }
 
-        if (preg_match('/D722/i', $useragent)) {
+        if (preg_match('/d722/i', $useragent)) {
             return new Lg\Lgd722($useragent);
         }
 
-        if (preg_match('/D618/i', $useragent)) {
+        if (preg_match('/d618/i', $useragent)) {
             return new Lg\LgD618($useragent);
         }
 

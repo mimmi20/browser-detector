@@ -54,7 +54,7 @@ class MotorolaXt1068 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'XT1068';
-        $this->marketingName     = 'XT1068';
+        $this->marketingName     = 'Moto G Dual SIM (2nd gen)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Motorola')->getName();
         $this->brand             = CompanyFactory::get('Motorola')->getBrandName();

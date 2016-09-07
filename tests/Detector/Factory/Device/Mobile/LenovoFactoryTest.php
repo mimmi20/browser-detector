@@ -121,6 +121,26 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Lenovo S660 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'S660',
+                'S660',
+                'Lenovo',
+                'Lenovo',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.2.2; IdeaTab S6000-H Build/JDQ39)',
+                'S6000-H',
+                'IdeaTab S6000-H',
+                'Lenovo',
+                'Vodafone',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

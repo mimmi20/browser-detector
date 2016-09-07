@@ -51,6 +51,14 @@ class HuaweiFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/g750\-u10/i', $useragent)) {
+            return new Huawei\HuaweiG750u10($useragent);
+        }
+
+        if (preg_match('/g730\-u10/i', $useragent)) {
+            return new Huawei\HuaweiG730u10($useragent);
+        }
+
         if (preg_match('/vns\-l31/i', $useragent)) {
             return new Huawei\HuaweiVnsL31($useragent);
         }
@@ -241,6 +249,10 @@ class HuaweiFactory implements FactoryInterface
 
         if (preg_match('/mediapad 7 classic/i', $useragent)) {
             return new Huawei\HuaweiMediaPad7Classic($useragent);
+        }
+
+        if (preg_match('/mediapad 7 youth/i', $useragent)) {
+            return new Huawei\HuaweiMediaPad7Youth($useragent);
         }
 
         if (preg_match('/mediapad/i', $useragent)) {
