@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Lenovo',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'B8000-H',
             'Device_Brand_Name'       => 'Lenovo',
             'RenderingEngine_Name'    => 'Blink',

@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'BQ',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'Aquaris M10',
             'Device_Brand_Name'       => 'BQ',
             'RenderingEngine_Name'    => 'Blink',

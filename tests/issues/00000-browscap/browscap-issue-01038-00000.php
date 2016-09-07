@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Huawei',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'VNS-L31',
             'Device_Brand_Name'       => 'Huawei',
             'RenderingEngine_Name'    => 'Blink',

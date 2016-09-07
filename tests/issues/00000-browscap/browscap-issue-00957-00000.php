@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'LG',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'Nexus 5X',
             'Device_Brand_Name'       => 'Google',
             'RenderingEngine_Name'    => 'Blink',

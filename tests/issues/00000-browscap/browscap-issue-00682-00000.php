@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Amazon.com, Inc.',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'KFASWI',
             'Device_Brand_Name'       => 'Amazon',
             'RenderingEngine_Name'    => 'Blink',

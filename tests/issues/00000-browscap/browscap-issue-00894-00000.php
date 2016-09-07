@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Raspberry Pi Foundation',
             'Device_Type'             => 'Desktop',
             'Device_Pointing_Method'  => 'mouse',
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'Raspberry Pi',
             'Device_Brand_Name'       => 'Raspberry Pi Foundation',
             'RenderingEngine_Name'    => 'WebKit',

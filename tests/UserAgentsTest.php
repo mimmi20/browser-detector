@@ -232,6 +232,23 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         /**/
 
         static::assertArrayHasKey(
+            'Device_Dual_Orientation',
+            $expectedProperties,
+            'Expected key "Device_Dual_Orientation" is missing for useragent "' . $userAgent . '"'
+        );
+
+        $expectedDeviceOrientation = $expectedProperties['Device_Dual_Orientation'];
+        $foundDeviceOrientation    = $foundDevice->getDualOrientation();
+
+        static::assertInternalType('boolean', $foundDeviceOrientation);
+
+        static::assertSame(
+            $expectedDeviceOrientation,
+            $foundDeviceOrientation,
+            'Expected actual "Device_Code_Name" to be "' . $expectedDeviceOrientation . '" (was "' . $foundDeviceOrientation . '" [class: ' . get_class($foundDevice) . '])'
+        );
+
+        static::assertArrayHasKey(
             'Platform_Codename',
             $expectedProperties,
             'Expected key "Platform_Codename" is missing for useragent "' . $userAgent . '"'

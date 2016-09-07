@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Motorola',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'XT1068',
             'Device_Brand_Name'       => 'Motorola',
             'RenderingEngine_Name'    => 'U3',

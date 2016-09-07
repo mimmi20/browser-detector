@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Asus',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'Nexus 7',
             'Device_Brand_Name'       => 'Google',
             'RenderingEngine_Name'    => 'Blink',

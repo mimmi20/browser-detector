@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Lenovo',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'A3300-HV',
             'Device_Brand_Name'       => 'Lenovo',
             'RenderingEngine_Name'    => 'Blink',

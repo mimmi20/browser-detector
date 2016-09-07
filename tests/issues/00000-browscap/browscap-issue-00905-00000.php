@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Various',
             'Device_Type'             => 'Desktop',
             'Device_Pointing_Method'  => 'mouse',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'general Desktop',
             'Device_Brand_Name'       => 'unknown',
             'RenderingEngine_Name'    => 'unknown',

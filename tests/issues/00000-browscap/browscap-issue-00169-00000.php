@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Apple Inc',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'iPad',
             'Device_Brand_Name'       => 'Apple',
             'RenderingEngine_Name'    => 'WebKit',

@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Sony',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'C6603',
             'Device_Brand_Name'       => 'Sony',
             'RenderingEngine_Name'    => 'Blink',

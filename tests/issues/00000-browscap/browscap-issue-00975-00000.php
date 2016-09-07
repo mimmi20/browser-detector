@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Xiaomi Tech',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'Mi 4 LTE',
             'Device_Brand_Name'       => 'Xiaomi',
             'RenderingEngine_Name'    => 'WebKit',

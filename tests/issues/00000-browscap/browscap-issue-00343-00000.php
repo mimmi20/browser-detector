@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Sony',
             'Device_Type'             => 'TV Device',
             'Device_Pointing_Method'  => 'mouse',
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'Playstation 4',
             'Device_Brand_Name'       => 'Sony',
             'RenderingEngine_Name'    => 'WebKit',

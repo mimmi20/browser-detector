@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Jolla Ltd.',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'Jolla',
             'Device_Brand_Name'       => 'Jolla',
             'RenderingEngine_Name'    => 'Gecko',

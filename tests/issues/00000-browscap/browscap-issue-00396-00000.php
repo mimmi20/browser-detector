@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'GT-S5830i',
             'Device_Brand_Name'       => 'Samsung',
             'RenderingEngine_Name'    => 'WebKit',

@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'unknown',
             'Device_Pointing_Method'  => 'unknown',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'unknown',
             'Device_Brand_Name'       => 'unknown',
             'RenderingEngine_Name'    => 'Blink',

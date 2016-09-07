@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'TV Device',
             'Device_Pointing_Method'  => 'unknown',
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'Smart TV',
             'Device_Brand_Name'       => 'Samsung',
             'RenderingEngine_Name'    => 'WebKit',

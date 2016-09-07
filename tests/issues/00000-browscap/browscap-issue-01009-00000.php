@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Hisense',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'F5281',
             'Device_Brand_Name'       => 'Hisense',
             'RenderingEngine_Name'    => 'WebKit',

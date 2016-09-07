@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'BlackBerry Limited',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'Z10',
             'Device_Brand_Name'       => 'BlackBerry',
             'RenderingEngine_Name'    => 'WebKit',

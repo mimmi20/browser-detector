@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'Vivax',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'TCP-7001',
             'Device_Brand_Name'       => 'Vivax',
             'RenderingEngine_Name'    => 'Blink',

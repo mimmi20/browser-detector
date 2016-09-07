@@ -20,6 +20,7 @@ return [
             'Device_Maker'            => 'unknown',
             'Device_Type'             => 'Desktop',
             'Device_Pointing_Method'  => 'mouse',
+            'Device_Dual_Orientation' => false,
             'Device_Code_Name'        => 'Linux Desktop',
             'Device_Brand_Name'       => 'unknown',
             'RenderingEngine_Name'    => 'Gecko',
