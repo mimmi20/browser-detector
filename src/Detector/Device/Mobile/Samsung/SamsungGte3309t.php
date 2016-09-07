@@ -58,7 +58,7 @@ class SamsungGte3309t extends Device implements DeviceHasSpecificPlatformInterfa
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = 220;
         $this->resolutionHeight  = 176;
         $this->dualOrientation   = null;

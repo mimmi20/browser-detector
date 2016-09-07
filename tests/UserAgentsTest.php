@@ -178,6 +178,8 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $expectedDeviceMaker = $expectedProperties['Device_Maker'];
         $foundDeviceMaker    = $foundDevice->getManufacturer();
 
+        static::assertInternalType('string', $foundDeviceMaker);
+
         static::assertSame(
             $expectedDeviceMaker,
             $foundDeviceMaker,
@@ -224,6 +226,8 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
         $expectedDeviceBrand = $expectedProperties['Device_Brand_Name'];
         $foundDeviceBrand    = $foundDevice->getBrand();
 
+        static::assertInternalType('string', $foundDeviceBrand);
+
         static::assertSame(
             $expectedDeviceBrand,
             $foundDeviceBrand,
@@ -239,8 +243,6 @@ abstract class UserAgentsTest extends \PHPUnit_Framework_TestCase
 
         $expectedDeviceOrientation = $expectedProperties['Device_Dual_Orientation'];
         $foundDeviceOrientation    = $foundDevice->getDualOrientation();
-
-        static::assertInternalType('boolean', $foundDeviceOrientation);
 
         static::assertSame(
             $expectedDeviceOrientation,

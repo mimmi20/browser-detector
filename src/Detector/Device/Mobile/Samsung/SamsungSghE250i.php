@@ -58,7 +58,7 @@ class SamsungSghE250i extends Device implements DeviceHasSpecificPlatformInterfa
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
-        $this->pointingMethod    = 'unknown';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
         $this->dualOrientation   = null;

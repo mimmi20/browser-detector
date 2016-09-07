@@ -58,7 +58,7 @@ class SprdB51plus extends Device implements DeviceHasSpecificPlatformInterface
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Sprd')->getName();
         $this->brand             = CompanyFactory::get('Sprd')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
         $this->dualOrientation   = null;

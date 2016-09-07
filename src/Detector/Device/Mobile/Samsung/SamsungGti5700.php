@@ -58,7 +58,7 @@ class SamsungGti5700 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
-        $this->pointingMethod    = 'touchscreen';
+        $this->pointingMethod    = null;
         $this->resolutionWidth   = 320;
         $this->resolutionHeight  = 480;
         $this->dualOrientation   = null;
