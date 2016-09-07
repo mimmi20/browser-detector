@@ -641,7 +641,7 @@ return [
             'Device_Maker'            => 'Spice',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => null,
             'Device_Code_Name'        => 'QT-75',
             'Device_Brand_Name'       => 'Spice',
             'RenderingEngine_Name'    => 'unknown',

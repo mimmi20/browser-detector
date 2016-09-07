@@ -20,7 +20,7 @@ return [
             'Device_Maker'            => 'Motorola',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => null,
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => null,
             'Device_Code_Name'        => 'Nexus 6',
             'Device_Brand_Name'       => 'Google',
             'RenderingEngine_Name'    => 'Blink',

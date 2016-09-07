@@ -2558,7 +2558,7 @@ return [
             'Device_Maker'            => 'LG',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => null,
             'Device_Code_Name'        => 'L160L',
             'Device_Brand_Name'       => 'LG',
             'RenderingEngine_Name'    => 'WebKit',

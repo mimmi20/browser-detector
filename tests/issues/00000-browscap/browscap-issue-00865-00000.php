@@ -857,7 +857,7 @@ return [
             'Device_Maker'            => 'Lava',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => null,
             'Device_Code_Name'        => 'KKT20',
             'Device_Brand_Name'       => 'Lava',
             'RenderingEngine_Name'    => 'unknown',

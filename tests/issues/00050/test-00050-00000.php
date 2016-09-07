@@ -1694,7 +1694,7 @@ return [
             'Device_Maker'            => 'Flytouch',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => null,
             'Device_Code_Name'        => '9',
             'Device_Brand_Name'       => 'Flytouch',
             'RenderingEngine_Name'    => 'WebKit',

@@ -101,7 +101,7 @@ return [
             'Device_Maker'            => 'Nokia',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => null,
             'Device_Code_Name'        => '5130c-2',
             'Device_Brand_Name'       => 'Nokia',
             'RenderingEngine_Name'    => 'U2',

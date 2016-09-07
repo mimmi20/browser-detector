@@ -290,7 +290,7 @@ return [
             'Device_Maker'            => 'Amazon.com, Inc.',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => null,
             'Device_Code_Name'        => 'SD4930UR',
             'Device_Brand_Name'       => 'Amazon',
             'RenderingEngine_Name'    => 'Blink',

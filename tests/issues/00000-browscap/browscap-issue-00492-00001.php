@@ -588,7 +588,7 @@ return [
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
-            'Device_Code_Name'        => 'E10310',
+            'Device_Code_Name'        => 'LifeTab E10310',
             'Device_Brand_Name'       => 'Medion',
             'RenderingEngine_Name'    => 'WebKit',
             'RenderingEngine_Version' => 'unknown',

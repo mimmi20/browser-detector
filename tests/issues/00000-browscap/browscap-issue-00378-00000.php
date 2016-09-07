@@ -236,7 +236,7 @@ return [
             'Device_Maker'            => 'sprd',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => false,
+            'Device_Dual_Orientation' => null,
             'Device_Code_Name'        => 'SPHS On HSDroid',
             'Device_Brand_Name'       => 'sprd',
             'RenderingEngine_Name'    => 'U2',
