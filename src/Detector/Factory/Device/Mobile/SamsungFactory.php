@@ -1115,8 +1115,16 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGti9305($useragent);
         }
 
-        if (preg_match('/(GT\-l9301I|GT\-i9301I|I9301I)/i', $useragent)) {
+        if (preg_match('/(gt\-i9301i|i9301i)/i', $useragent)) {
             return new Samsung\SamsungGti9301i($useragent);
+        }
+
+        if (preg_match('/(gt\-i9301q|i9301q)/i', $useragent)) {
+            return new Samsung\SamsungGti9301q($useragent);
+        }
+
+        if (preg_match('/(gt\-i9301|i9301)/i', $useragent)) {
+            return new Samsung\SamsungGti9301($useragent);
         }
 
         if (preg_match('/GT\-I9300I/i', $useragent)) {
