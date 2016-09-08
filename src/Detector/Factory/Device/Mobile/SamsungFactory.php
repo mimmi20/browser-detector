@@ -1199,27 +1199,31 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGti9082($useragent);
         }
 
-        if (preg_match('/GT\-I9070P/i', $useragent)) {
+        if (preg_match('/gt\-i9070p/i', $useragent)) {
             return new Samsung\SamsungGti9070P($useragent);
         }
 
-        if (preg_match('/GT\-I9070/i', $useragent)) {
+        if (preg_match('/gt\-i9070/i', $useragent)) {
             return new Samsung\SamsungGti9070($useragent);
         }
 
-        if (preg_match('/GT\-I9060I/i', $useragent)) {
+        if (preg_match('/gt\-i9060l/i', $useragent)) {
+            return new Samsung\SamsungGti9060l($useragent);
+        }
+
+        if (preg_match('/gt\-i9060i/i', $useragent)) {
             return new Samsung\SamsungGti9060i($useragent);
         }
 
-        if (preg_match('/GT\-I9060/i', $useragent)) {
+        if (preg_match('/gt\-i9060/i', $useragent)) {
             return new Samsung\SamsungGti9060($useragent);
         }
 
-        if (preg_match('/GT\-I9023/i', $useragent)) {
+        if (preg_match('/gt\-i9023/i', $useragent)) {
             return new Samsung\SamsungGti9023($useragent);
         }
 
-        if (preg_match('/GT\-I9010P/i', $useragent)) {
+        if (preg_match('/gt\-i9010p/i', $useragent)) {
             return new Samsung\SamsungGti9010P($useragent);
         }
 

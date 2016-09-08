@@ -74,26 +74,29 @@ class MicrosoftInternetExplorer
      */
     public static function detectVersion($useragent)
     {
-        $engine = new Engine\Trident($useragent);
+        $engine  = new Engine\Trident($useragent);
+        $version = $engine->getVersion();
 
-        $engineVersion = (int) $engine->getVersion()->getMajor();
+        if (null !== $version) {
+            $engineVersion = (int) $version->getMajor();
 
-        switch ($engineVersion) {
-            case 4:
-                return VersionFactory::set('8.0');
-                break;
-            case 5:
-                return VersionFactory::set('9.0');
-                break;
-            case 6:
-                return VersionFactory::set('10.0');
-                break;
-            case 7:
-                return VersionFactory::set('11.0');
-                break;
-            default:
-                //nothing to do
-                break;
+            switch ($engineVersion) {
+                case 4:
+                    return VersionFactory::set('8.0');
+                    break;
+                case 5:
+                    return VersionFactory::set('9.0');
+                    break;
+                case 6:
+                    return VersionFactory::set('10.0');
+                    break;
+                case 7:
+                    return VersionFactory::set('11.0');
+                    break;
+                default:
+                    //nothing to do
+                    break;
+            }
         }
 
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
