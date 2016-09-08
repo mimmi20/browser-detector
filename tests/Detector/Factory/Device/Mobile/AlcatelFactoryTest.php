@@ -101,6 +101,16 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0; 4034D Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36',
+                'OT-4034D',
+                'One Touch Pixi 4',
+                'Alcatel',
+                'Alcatel',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

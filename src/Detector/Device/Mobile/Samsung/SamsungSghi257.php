@@ -54,7 +54,7 @@ class SamsungSghi257 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SGH-I257';
-        $this->marketingName     = 'Galaxy S4 mini (AT&T)';
+        $this->marketingName     = 'Galaxy S4 Mini (AT&T)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

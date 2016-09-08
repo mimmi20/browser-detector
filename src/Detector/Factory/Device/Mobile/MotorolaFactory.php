@@ -51,6 +51,10 @@ class MotorolaFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/MotoG3/i', $useragent)) {
+            return new Motorola\MotorolaMotoG3($useragent);
+        }
+
         if (preg_match('/XT1080/i', $useragent)) {
             return new Motorola\MotorolaXt1080($useragent);
         }

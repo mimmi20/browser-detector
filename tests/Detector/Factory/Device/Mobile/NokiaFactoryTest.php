@@ -731,6 +731,16 @@ class NokiaFactoryTest extends \PHPUnit_Framework_TestCase
                 false,
                 'joystick',
             ],
+            [
+                'Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; Lumia 540 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Mobile Safari/537.36 Edge/14.14393',
+                'Lumia 540',
+                'Lumia 540',
+                'Microsoft Corporation',
+                'Microsoft',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

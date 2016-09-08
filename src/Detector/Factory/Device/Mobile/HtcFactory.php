@@ -259,15 +259,15 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesireS($useragent);
         }
 
-        if (preg_match('/DesireHD\-orange\-LS/i', $useragent)) {
+        if (preg_match('/desirehd\-orange\-ls/i', $useragent)) {
             return new Htc\HtcDesireHhLs($useragent);
         }
 
-        if (preg_match('/A9191/i', $useragent)) {
+        if (preg_match('/a9191/i', $useragent)) {
             return new Htc\HtcA9191DesireHd($useragent);
         }
 
-        if (preg_match('/(Desire HD|DesireHD)/i', $useragent)) {
+        if (preg_match('/(desire hd|desirehd)/i', $useragent)) {
             return new Htc\HtcDesireHd($useragent);
         }
 
@@ -275,15 +275,15 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesireC($useragent);
         }
 
-        if (preg_match('/Desire[ _]816G/i', $useragent)) {
+        if (preg_match('/desire[ _]816g/i', $useragent)) {
             return new Htc\HtcDesire816g($useragent);
         }
 
-        if (preg_match('/Desire[ _]816/i', $useragent)) {
+        if (preg_match('/desire[ _]816/i', $useragent)) {
             return new Htc\HtcDesire816($useragent);
         }
 
-        if (preg_match('/Desire[ _]516/i', $useragent)) {
+        if (preg_match('/desire[ _]516/i', $useragent)) {
             return new Htc\HtcDesire516($useragent);
         }
 
@@ -291,15 +291,19 @@ class HtcFactory implements FactoryInterface
             return new Htc\HtcDesire500($useragent);
         }
 
-        if (preg_match('/Desire[ _]310/i', $useragent)) {
+        if (preg_match('/desire[ _]310/i', $useragent)) {
             return new Htc\HtcDesire310($useragent);
         }
 
-        if (preg_match('/Desire\_A8181/i', $useragent)) {
+        if (preg_match('/desire[_ ]eye/i', $useragent)) {
+            return new Htc\HtcDesireEye($useragent);
+        }
+
+        if (preg_match('/desire\_a8181/i', $useragent)) {
             return new Htc\HtcA8181Desire($useragent);
         }
 
-        if (preg_match('/Desire/i', $useragent)) {
+        if (preg_match('/desire/i', $useragent)) {
             return new Htc\HtcDesire($useragent);
         }
 

@@ -51,255 +51,267 @@ class LgFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/H345/i', $useragent)) {
+        if (preg_match('/h850/i', $useragent)) {
+            return new Lg\LgH850($useragent);
+        }
+
+        if (preg_match('/h345/i', $useragent)) {
             return new Lg\LgH345($useragent);
         }
 
-        if (preg_match('/VS980/i', $useragent)) {
+        if (preg_match('/h320/i', $useragent)) {
+            return new Lg\LgH320($useragent);
+        }
+
+        if (preg_match('/vs980/i', $useragent)) {
             return new Lg\LgVs980($useragent);
         }
 
-        if (preg_match('/VS880/i', $useragent)) {
+        if (preg_match('/vs880/i', $useragent)) {
             return new Lg\LgVs880($useragent);
         }
 
-        if (preg_match('/VS840/i', $useragent)) {
+        if (preg_match('/vs840/i', $useragent)) {
             return new Lg\LgVs840($useragent);
         }
 
-        if (preg_match('/VS700/i', $useragent)) {
+        if (preg_match('/vs700/i', $useragent)) {
             return new Lg\LgVs700($useragent);
         }
 
-        if (preg_match('/VM701/i', $useragent)) {
+        if (preg_match('/vm701/i', $useragent)) {
             return new Lg\LgVm701($useragent);
         }
 
-        if (preg_match('/VM670/i', $useragent)) {
+        if (preg_match('/vm670/i', $useragent)) {
             return new Lg\LgVm670($useragent);
         }
 
-        if (preg_match('/V900/i', $useragent)) {
+        if (preg_match('/v900/i', $useragent)) {
             return new Lg\Lgv900($useragent);
         }
 
-        if (preg_match('/V700/i', $useragent)) {
+        if (preg_match('/v700/i', $useragent)) {
             return new Lg\Lgv700($useragent);
         }
 
-        if (preg_match('/V500/i', $useragent)) {
+        if (preg_match('/v500/i', $useragent)) {
             return new Lg\Lgv500($useragent);
         }
 
-        if (preg_match('/V490/i', $useragent)) {
+        if (preg_match('/v490/i', $useragent)) {
             return new Lg\Lgv490($useragent);
         }
 
-        if (preg_match('/T500/i', $useragent)) {
+        if (preg_match('/t500/i', $useragent)) {
             return new Lg\Lgt500($useragent);
         }
 
-        if (preg_match('/T385/i', $useragent)) {
+        if (preg_match('/t385/i', $useragent)) {
             return new Lg\Lgt385($useragent);
         }
 
-        if (preg_match('/T300/i', $useragent)) {
+        if (preg_match('/t300/i', $useragent)) {
             return new Lg\Lgt300($useragent);
         }
 
-        if (preg_match('/SU760/i', $useragent)) {
+        if (preg_match('/su760/i', $useragent)) {
             return new Lg\LgSu760($useragent);
         }
 
-        if (preg_match('/SU660/i', $useragent)) {
+        if (preg_match('/su660/i', $useragent)) {
             return new Lg\LgSu660($useragent);
         }
 
-        if (preg_match('/P999/i', $useragent)) {
+        if (preg_match('/p999/i', $useragent)) {
             return new Lg\Lgp999($useragent);
         }
 
-        if (preg_match('/(P990|Optimus 2X)/i', $useragent)) {
+        if (preg_match('/(p990|optimus 2x)/i', $useragent)) {
             return new Lg\Lgp990($useragent);
         }
 
-        if (preg_match('/(P970|Optimus\-Black)/i', $useragent)) {
+        if (preg_match('/(p970|optimus\-black)/i', $useragent)) {
             return new Lg\Lgp970($useragent);
         }
 
-        if (preg_match('/P940/i', $useragent)) {
+        if (preg_match('/p940/i', $useragent)) {
             return new Lg\Lgp940($useragent);
         }
 
-        if (preg_match('/P936/i', $useragent)) {
+        if (preg_match('/p936/i', $useragent)) {
             return new Lg\Lgp936($useragent);
         }
 
-        if (preg_match('/P925/i', $useragent)) {
+        if (preg_match('/p925/i', $useragent)) {
             return new Lg\Lgp925($useragent);
         }
 
-        if (preg_match('/P920/i', $useragent)) {
+        if (preg_match('/p920/i', $useragent)) {
             return new Lg\Lgp920($useragent);
         }
 
-        if (preg_match('/P895/i', $useragent)) {
+        if (preg_match('/p895/i', $useragent)) {
             return new Lg\LgP895($useragent);
         }
 
-        if (preg_match('/P880/i', $useragent)) {
+        if (preg_match('/p880/i', $useragent)) {
             return new Lg\LgP880($useragent);
         }
 
-        if (preg_match('/P875/i', $useragent)) {
+        if (preg_match('/p875/i', $useragent)) {
             return new Lg\Lgp875($useragent);
         }
 
-        if (preg_match('/P760/i', $useragent)) {
+        if (preg_match('/p760/i', $useragent)) {
             return new Lg\Lgp760($useragent);
         }
 
-        if (preg_match('/P720/i', $useragent)) {
+        if (preg_match('/p720/i', $useragent)) {
             return new Lg\Lgp720($useragent);
         }
 
-        if (preg_match('/P713/i', $useragent)) {
+        if (preg_match('/p713/i', $useragent)) {
             return new Lg\Lgp713($useragent);
         }
 
-        if (preg_match('/P710/i', $useragent)) {
+        if (preg_match('/p710/i', $useragent)) {
             return new Lg\Lgp710($useragent);
         }
 
-        if (preg_match('/P705/i', $useragent)) {
+        if (preg_match('/p705/i', $useragent)) {
             return new Lg\Lgp705($useragent);
         }
 
-        if (preg_match('/P700/i', $useragent)) {
+        if (preg_match('/p700/i', $useragent)) {
             return new Lg\Lgp700($useragent);
         }
 
-        if (preg_match('/P698/i', $useragent)) {
+        if (preg_match('/p698/i', $useragent)) {
             return new Lg\Lgp698($useragent);
         }
 
-        if (preg_match('/P690/i', $useragent)) {
+        if (preg_match('/p690/i', $useragent)) {
             return new Lg\Lgp690($useragent);
         }
 
-        if (preg_match('/(P509|Optimus\-T)/i', $useragent)) {
+        if (preg_match('/(p509|optimus\-t)/i', $useragent)) {
             return new Lg\Lgp509($useragent);
         }
 
-        if (preg_match('/P505R/i', $useragent)) {
+        if (preg_match('/p505r/i', $useragent)) {
             return new Lg\Lgp505r($useragent);
         }
 
-        if (preg_match('/P505/i', $useragent)) {
+        if (preg_match('/p505/i', $useragent)) {
             return new Lg\Lgp505($useragent);
         }
 
-        if (preg_match('/P500h/i', $useragent)) {
+        if (preg_match('/p500h/i', $useragent)) {
             return new Lg\Lgp500h($useragent);
         }
 
-        if (preg_match('/P500/i', $useragent)) {
+        if (preg_match('/p500/i', $useragent)) {
             return new Lg\Lgp500($useragent);
         }
 
-        if (preg_match('/P350/i', $useragent)) {
+        if (preg_match('/p350/i', $useragent)) {
             return new Lg\Lgp350($useragent);
         }
 
-        if (preg_match('/Nexus 5/i', $useragent)) {
+        if (preg_match('/nexus 5x/i', $useragent)) {
+            return new Lg\LgNexus5x($useragent);
+        }
+
+        if (preg_match('/nexus 5/i', $useragent)) {
             return new Lg\LgNexus5($useragent);
         }
 
-        if (preg_match('/Nexus 4/i', $useragent)) {
+        if (preg_match('/nexus 4/i', $useragent)) {
             return new Lg\LgNexus4($useragent);
         }
 
-        if (preg_match('/MS690/i', $useragent)) {
+        if (preg_match('/ms690/i', $useragent)) {
             return new Lg\Lgms690($useragent);
         }
 
-        if (preg_match('/LS860/i', $useragent)) {
+        if (preg_match('/ls860/i', $useragent)) {
             return new Lg\LgLs860($useragent);
         }
 
-        if (preg_match('/LS740/i', $useragent)) {
+        if (preg_match('/ls740/i', $useragent)) {
             return new Lg\LgLs740($useragent);
         }
 
-        if (preg_match('/LS670/i', $useragent)) {
+        if (preg_match('/ls670/i', $useragent)) {
             return new Lg\LgLs670($useragent);
         }
 
-        if (preg_match('/LN510/i', $useragent)) {
+        if (preg_match('/ln510/i', $useragent)) {
             return new Lg\LgLn510($useragent);
         }
 
-        if (preg_match('/L160L/i', $useragent)) {
+        if (preg_match('/l160l/i', $useragent)) {
             return new Lg\LgL160l($useragent);
         }
 
-        if (preg_match('/KU800/i', $useragent)) {
+        if (preg_match('/ku800/i', $useragent)) {
             return new Lg\LgKu800($useragent);
         }
 
-        if (preg_match('/KS365/i', $useragent)) {
+        if (preg_match('/ks365/i', $useragent)) {
             return new Lg\LgKs365($useragent);
         }
 
-        if (preg_match('/KS20/i', $useragent)) {
+        if (preg_match('/ks20/i', $useragent)) {
             return new Lg\LgKs20($useragent);
         }
 
-        if (preg_match('/KP500/i', $useragent)) {
+        if (preg_match('/kp500/i', $useragent)) {
             return new Lg\LgKp500($useragent);
         }
 
-        if (preg_match('/KM900/i', $useragent)) {
+        if (preg_match('/km900/i', $useragent)) {
             return new Lg\LgKm900($useragent);
         }
 
-        if (preg_match('/KC910/i', $useragent)) {
+        if (preg_match('/kc910/i', $useragent)) {
             return new Lg\LgKc910($useragent);
         }
 
-        if (preg_match('/HB620T/i', $useragent)) {
+        if (preg_match('/hb620t/i', $useragent)) {
             return new Lg\LgHb620t($useragent);
         }
 
-        if (preg_match('/GW300/i', $useragent)) {
+        if (preg_match('/gw300/i', $useragent)) {
             return new Lg\LgGw300($useragent);
         }
 
-        if (preg_match('/GT550/i', $useragent)) {
+        if (preg_match('/gt550/i', $useragent)) {
             return new Lg\LgGt550($useragent);
         }
 
-        if (preg_match('/GT540/i', $useragent)) {
+        if (preg_match('/gt540/i', $useragent)) {
             return new Lg\LgGt540($useragent);
         }
 
-        if (preg_match('/GS290/i', $useragent)) {
+        if (preg_match('/gs290/i', $useragent)) {
             return new Lg\LgGs290($useragent);
         }
 
-        if (preg_match('/GM360/i', $useragent)) {
+        if (preg_match('/gm360/i', $useragent)) {
             return new Lg\LgGm360($useragent);
         }
 
-        if (preg_match('/GD880/i', $useragent)) {
+        if (preg_match('/gd880/i', $useragent)) {
             return new Lg\LgGd880($useragent);
         }
 
-        if (preg_match('/GD350/i', $useragent)) {
+        if (preg_match('/gd350/i', $useragent)) {
             return new Lg\LgGd350($useragent);
         }
 
-        if (preg_match('/ G3 /i', $useragent)) {
+        if (preg_match('/ g3 /i', $useragent)) {
             return new Lg\LgG3($useragent);
         }
 
@@ -331,71 +343,71 @@ class LgFactory implements FactoryInterface
             return new Lg\LgEve($useragent);
         }
 
-        if (preg_match('/E988/i', $useragent)) {
+        if (preg_match('/e988/i', $useragent)) {
             return new Lg\Lge988($useragent);
         }
 
-        if (preg_match('/E980h/i', $useragent)) {
+        if (preg_match('/e980h/i', $useragent)) {
             return new Lg\Lge980h($useragent);
         }
 
-        if (preg_match('/E975/i', $useragent)) {
+        if (preg_match('/e975/i', $useragent)) {
             return new Lg\Lge975($useragent);
         }
 
-        if (preg_match('/E970/i', $useragent)) {
+        if (preg_match('/e970/i', $useragent)) {
             return new Lg\Lge970($useragent);
         }
 
-        if (preg_match('/E906/i', $useragent)) {
+        if (preg_match('/e906/i', $useragent)) {
             return new Lg\LgE906($useragent);
         }
 
-        if (preg_match('/E900/i', $useragent)) {
+        if (preg_match('/e900/i', $useragent)) {
             return new Lg\Lge900($useragent);
         }
 
-        if (preg_match('/E739/i', $useragent)) {
+        if (preg_match('/e739/i', $useragent)) {
             return new Lg\Lge739($useragent);
         }
 
-        if (preg_match('/E730/i', $useragent)) {
+        if (preg_match('/e730/i', $useragent)) {
             return new Lg\Lge730($useragent);
         }
 
-        if (preg_match('/E720/i', $useragent)) {
+        if (preg_match('/e720/i', $useragent)) {
             return new Lg\Lge720($useragent);
         }
 
-        if (preg_match('/E610/i', $useragent)) {
+        if (preg_match('/e610/i', $useragent)) {
             return new Lg\Lge610($useragent);
         }
 
-        if (preg_match('/E510/i', $useragent)) {
+        if (preg_match('/e510/i', $useragent)) {
             return new Lg\Lge510($useragent);
         }
 
-        if (preg_match('/E460/i', $useragent)) {
+        if (preg_match('/e460/i', $useragent)) {
             return new Lg\Lge460($useragent);
         }
 
-        if (preg_match('/E440/i', $useragent)) {
+        if (preg_match('/e440/i', $useragent)) {
             return new Lg\Lge440($useragent);
         }
 
-        if (preg_match('/E430/i', $useragent)) {
+        if (preg_match('/e430/i', $useragent)) {
             return new Lg\Lge430($useragent);
         }
 
-        if (preg_match('/E400/i', $useragent)) {
+        if (preg_match('/e400/i', $useragent)) {
             return new Lg\Lge400($useragent);
         }
 
-        if (preg_match('/D955/i', $useragent)) {
+        if (preg_match('/d955/i', $useragent)) {
             return new Lg\Lgd955($useragent);
         }
 
-        if (preg_match('/D855/i', $useragent)) {
+        if (preg_match('/d855/i', $useragent)) {
             return new Lg\Lgd855($useragent);
         }
 
@@ -423,452 +435,68 @@ class LgFactory implements FactoryInterface
             return new Lg\LgD618($useragent);
         }
 
-        if (preg_match('/D605/i', $useragent)) {
+        if (preg_match('/d605/i', $useragent)) {
             return new Lg\Lgd605($useragent);
         }
 
-        if (preg_match('/D320/i', $useragent)) {
+        if (preg_match('/d320/i', $useragent)) {
             return new Lg\Lgd320($useragent);
         }
 
-        if (preg_match('/D300/i', $useragent)) {
+        if (preg_match('/d300/i', $useragent)) {
             return new Lg\Lgd300($useragent);
         }
 
-        if (preg_match('/D295/i', $useragent)) {
+        if (preg_match('/d295/i', $useragent)) {
             return new Lg\Lgd295($useragent);
         }
 
-        if (preg_match('/D285/i', $useragent)) {
+        if (preg_match('/d290/i', $useragent)) {
+            return new Lg\Lgd290($useragent);
+        }
+
+        if (preg_match('/d285/i', $useragent)) {
             return new Lg\Lgd285($useragent);
         }
 
-        if (preg_match('/D280/i', $useragent)) {
+        if (preg_match('/d280/i', $useragent)) {
             return new Lg\Lgd280($useragent);
         }
 
-        if (preg_match('/D213/i', $useragent)) {
+        if (preg_match('/d213/i', $useragent)) {
             return new Lg\Lgd213($useragent);
         }
 
-        if (preg_match('/D160/i', $useragent)) {
+        if (preg_match('/d160/i', $useragent)) {
             return new Lg\Lgd160($useragent);
         }
 
-        if (preg_match('/C660/i', $useragent)) {
+        if (preg_match('/c660/i', $useragent)) {
             return new Lg\Lgc660($useragent);
         }
 
-        if (preg_match('/C550/i', $useragent)) {
+        if (preg_match('/c550/i', $useragent)) {
             return new Lg\Lgc550($useragent);
         }
 
-        if (preg_match('/C330/i', $useragent)) {
+        if (preg_match('/c330/i', $useragent)) {
             return new Lg\Lgc330($useragent);
         }
 
-        if (preg_match('/C199/i', $useragent)) {
+        if (preg_match('/c199/i', $useragent)) {
             return new Lg\Lgc199($useragent);
         }
 
-        if (preg_match('/BL40/i', $useragent)) {
+        if (preg_match('/bl40/i', $useragent)) {
             return new Lg\LgBl40($useragent);
         }
 
-        if (preg_match('/LG900G/i', $useragent)) {
+        if (preg_match('/lg900g/i', $useragent)) {
             return new Lg\Lg900g($useragent);
         }
 
-        if (preg_match('/LG220C/i', $useragent)) {
+        if (preg_match('/lg220c/i', $useragent)) {
             return new Lg\Lg220c($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
-        }
-
-        if (preg_match('/VS980/i', $useragent)) {
-            return new Lg\LgVs980($useragent);
         }
 
         return new Lg\Lg($useragent);

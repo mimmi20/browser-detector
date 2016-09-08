@@ -55,6 +55,10 @@ class BqFactory implements FactoryInterface
             return new Bq\BqAquarisM10($useragent);
         }
 
+        if (preg_match('/Aquaris M5/', $useragent)) {
+            return new Bq\BqAquarisM5($useragent);
+        }
+
         if (preg_match('/Aquaris 5 HD/', $useragent)) {
             return new Bq\BqAquarisE5($useragent);
         }

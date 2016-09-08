@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Samsung;
+namespace BrowserDetector\Detector\Device\Mobile\Archos;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmG870a extends Device implements DeviceHasSpecificPlatformInterface
+class Archos101dNeon extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class SamsungSmG870a extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SM-G870A';
-        $this->marketingName     = 'Galaxy S5 Active (AT&T)';
+        $this->deviceName        = '101d Neon';
+        $this->marketingName     = '101d Neon';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
-        $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Archos')->getName();
+        $this->brand             = CompanyFactory::get('Archos')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 720;
-        $this->resolutionHeight  = 1280;
+        $this->resolutionWidth   = 1024;
+        $this->resolutionHeight  = 600;
         $this->dualOrientation   = true;
-        $this->colors            = 16777216;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->type              = new UaDeviceType\Tablet();
     }
 
     /**
@@ -76,6 +76,6 @@ class SamsungSmG870a extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return null;
+        return new Os\AndroidOs($this->useragent);
     }
 }

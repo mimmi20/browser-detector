@@ -300,7 +300,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\SharpFactory::detect($useragent);
         }
 
-        if (preg_match('/(SH05C|304SH)/', $useragent)) {
+        if (preg_match('/SH05C/', $useragent)) {
+            return Mobile\SharpFactory::detect($useragent);
+        }
+
+        if (preg_match('/\d{3}SH/', $useragent)) {
             return Mobile\SharpFactory::detect($useragent);
         }
 
@@ -951,6 +955,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\MicromaxFactory::detect($useragent);
         }
 
+        if (preg_match('/S208/', $useragent)) {
+            return Mobile\CubotFactory::detect($useragent);
+        }
+
         if (preg_match('/ (a|e|v|z|s)\d{3} /i', $useragent)) {
             return Mobile\AcerFactory::detect($useragent);
         }
@@ -1079,7 +1087,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\MtcFactory::detect($useragent);
         }
 
-        if (preg_match('/DARKMOON/', $useragent)) {
+        if (preg_match('/(DARKMOON|CINK PEAX 2|JERRY|BLOOM)/', $useragent)) {
             return Mobile\WikoFactory::detect($useragent);
         }
 
@@ -1471,10 +1479,6 @@ class MobileFactory implements FactoryInterface
             return Mobile\MsiFactory::detect($useragent);
         }
 
-        if (preg_match('/CINK PEAX 2/', $useragent)) {
-            return Mobile\WikoFactory::detect($useragent);
-        }
-
         if (preg_match('/T(X|G)\d{2}/', $useragent)) {
             return Mobile\IrbisFactory::detect($useragent);
         }
@@ -1551,7 +1555,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\AlcatelFactory::detect($useragent);
         }
 
-        if (preg_match('/6036Y/', $useragent)) {
+        if (preg_match('/(6036Y|4034D)/', $useragent)) {
             return Mobile\AlcatelFactory::detect($useragent);
         }
 
@@ -1805,6 +1809,10 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/DG330/', $useragent)) {
             return Mobile\DoogeeFactory::detect($useragent);
+        }
+
+        if (preg_match('/one e1003/', $useragent)) {
+            return Mobile\OneplusFactory::detect($useragent);
         }
 
         if (preg_match('/One/', $useragent)) {

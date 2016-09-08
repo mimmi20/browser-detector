@@ -81,6 +81,16 @@ class OneplusFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0.1; ONE E1003 Build/MHC19Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'E1003',
+                'X',
+                'OnePlus',
+                'OnePlus',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -87,6 +87,10 @@ class ArchosFactory implements FactoryInterface
             return new Archos\ArchosA7eb($useragent);
         }
 
+        if (preg_match('/101d Neon/i', $useragent)) {
+            return new Archos\Archos101dNeon($useragent);
+        }
+
         if (preg_match('/101 Neon/i', $useragent)) {
             return new Archos\Archos101Neon($useragent);
         }
@@ -153,6 +157,10 @@ class ArchosFactory implements FactoryInterface
 
         if (preg_match('/50 Titanium/i', $useragent)) {
             return new Archos\Archos50Titanium($useragent);
+        }
+
+        if (preg_match('/50b Platinum/i', $useragent)) {
+            return new Archos\Archos50bPlatinum($useragent);
         }
 
         if (preg_match('/50 Platinum/i', $useragent)) {

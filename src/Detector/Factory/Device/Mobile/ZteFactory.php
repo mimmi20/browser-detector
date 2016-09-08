@@ -51,55 +51,63 @@ class ZteFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/X920/i', $useragent)) {
+        if (preg_match('/blade v6/i', $useragent)) {
+            return new Zte\ZteBladev6($useragent);
+        }
+
+        if (preg_match('/n919/i', $useragent)) {
+            return new Zte\Zten919($useragent);
+        }
+
+        if (preg_match('/x920/i', $useragent)) {
             return new Zte\ZteX920($useragent);
         }
 
-        if (preg_match('/W713/i', $useragent)) {
+        if (preg_match('/w713/i', $useragent)) {
             return new Zte\ZteW713($useragent);
         }
 
-        if (preg_match('/Z221/i', $useragent)) {
+        if (preg_match('/z221/i', $useragent)) {
             return new Zte\ZteZ221($useragent);
         }
 
-        if (preg_match('/V970/i', $useragent)) {
+        if (preg_match('/v970/i', $useragent)) {
             return new Zte\ZteV970($useragent);
         }
 
-        if (preg_match('/V967S/i', $useragent)) {
+        if (preg_match('/v967s/i', $useragent)) {
             return new Zte\ZteV967s($useragent);
         }
 
-        if (preg_match('/V880/i', $useragent)) {
+        if (preg_match('/v880/i', $useragent)) {
             return new Zte\ZteV880($useragent);
         }
 
-        if (preg_match('/V808/i', $useragent)) {
+        if (preg_match('/v808/i', $useragent)) {
             return new Zte\ZteV808($useragent);
         }
 
-        if (preg_match('/V788D/i', $useragent)) {
+        if (preg_match('/v788d/i', $useragent)) {
             return new Zte\ZteV788D($useragent);
         }
 
-        if (preg_match('/V9/i', $useragent)) {
+        if (preg_match('/v9/i', $useragent)) {
             return new Zte\ZteV9($useragent);
         }
 
-        if (preg_match('/U930HD/i', $useragent)) {
+        if (preg_match('/u930hd/i', $useragent)) {
             return new Zte\ZteU930Hd($useragent);
         }
 
-        if (preg_match('/SmartTab10/i', $useragent)) {
+        if (preg_match('/smarttab10/i', $useragent)) {
             return new Zte\ZteSmartTab10($useragent);
         }
 
-        if (preg_match('/SmartTab7/i', $useragent)) {
+        if (preg_match('/smarttab7/i', $useragent)) {
             return new Zte\ZteSmartTab7($useragent);
         }
 
-        if (preg_match('/Vodafone Smart 4G/i', $useragent)) {
+        if (preg_match('/vodafone smart 4g/i', $useragent)) {
             return new Zte\ZteSmart4G($useragent);
         }
 
@@ -115,27 +123,27 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteRacer($useragent);
         }
 
-        if (preg_match('/ZTEOPEN/i', $useragent)) {
+        if (preg_match('/zteopen/i', $useragent)) {
             return new Zte\ZteOpen($useragent);
         }
 
-        if (preg_match('/NX501/i', $useragent)) {
+        if (preg_match('/nx501/i', $useragent)) {
             return new Zte\ZteNx501($useragent);
         }
 
-        if (preg_match('/NX402/i', $useragent)) {
+        if (preg_match('/nx402/i', $useragent)) {
             return new Zte\ZteNx402($useragent);
         }
 
-        if (preg_match('/N918St/i', $useragent)) {
+        if (preg_match('/n918st/i', $useragent)) {
             return new Zte\ZteN918St($useragent);
         }
 
-        if (preg_match('/ N600 /i', $useragent)) {
+        if (preg_match('/ n600 /i', $useragent)) {
             return new Zte\ZteN600($useragent);
         }
 
-        if (preg_match('/KIS PLUS/i', $useragent)) {
+        if (preg_match('/kis plus/i', $useragent)) {
             return new Zte\ZteKisPlus($useragent);
         }
 
@@ -151,7 +159,7 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteBlade($useragent);
         }
 
-        if (preg_match('/BASE Tab/i', $useragent)) {
+        if (preg_match('/base tab/i', $useragent)) {
             return new Zte\ZteBaseTab($useragent);
         }
 
@@ -167,7 +175,7 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteBaseLutea($useragent);
         }
 
-        if (preg_match('/ATLAS\_W/i', $useragent)) {
+        if (preg_match('/atlas\_w/i', $useragent)) {
             return new Zte\ZteAtlasW($useragent);
         }
 

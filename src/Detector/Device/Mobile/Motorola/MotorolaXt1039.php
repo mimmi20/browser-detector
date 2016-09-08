@@ -54,7 +54,7 @@ class MotorolaXt1039 extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'XT1039';
-        $this->marketingName     = 'XT1039';
+        $this->marketingName     = 'Moto G 4G';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Motorola')->getName();
         $this->brand             = CompanyFactory::get('Motorola')->getBrandName();

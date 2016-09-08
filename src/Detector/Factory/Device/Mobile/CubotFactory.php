@@ -51,6 +51,10 @@ class CubotFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/S208/', $useragent)) {
+            return new Cubot\CubotS208($useragent);
+        }
+
         if (preg_match('/P9/i', $useragent)) {
             return new Cubot\CubotP9($useragent);
         }

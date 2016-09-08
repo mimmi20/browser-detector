@@ -131,6 +131,26 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; MotoG3 Build/LPI23.72-47.4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'MotoG3',
+                'Moto G (3rd gen)',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1; XT1039 Build/LPBS23.13-17.3-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'XT1039',
+                'Moto G 4G',
+                'Motorola',
+                'Motorola',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

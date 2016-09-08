@@ -91,6 +91,16 @@ class SharpFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; 306SH Build/S8216) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36',
+                '306SH',
+                'Aquos Crystal',
+                'Sharp Corporation',
+                'Sprint',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

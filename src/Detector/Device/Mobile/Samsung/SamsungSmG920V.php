@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class SamsungSmG870a extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmG920V extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,14 +53,14 @@ class SamsungSmG870a extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SM-G870A';
-        $this->marketingName     = 'Galaxy S5 Active (AT&T)';
+        $this->deviceName        = 'SM-G920V';
+        $this->marketingName     = 'Galaxy S6 LTE (Verizon)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 720;
-        $this->resolutionHeight  = 1280;
+        $this->resolutionWidth   = 1080;
+        $this->resolutionHeight  = 1920;
         $this->dualOrientation   = true;
         $this->colors            = 16777216;
         $this->smsSupport        = true;
@@ -76,6 +76,6 @@ class SamsungSmG870a extends Device implements DeviceHasSpecificPlatformInterfac
      */
     public function detectOs()
     {
-        return null;
+        return new Os\AndroidOs($this->useragent);
     }
 }
