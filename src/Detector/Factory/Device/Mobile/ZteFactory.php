@@ -56,7 +56,7 @@ class ZteFactory implements FactoryInterface
         }
 
         if (preg_match('/n919/i', $useragent)) {
-            return new Zte\Zten919($useragent);
+            return new Zte\ZteN919($useragent);
         }
 
         if (preg_match('/x920/i', $useragent)) {
