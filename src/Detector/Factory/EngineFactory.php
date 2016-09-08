@@ -93,9 +93,14 @@ class EngineFactory implements FactoryInterface
         }
 
         if (preg_match('/(applewebkit|webkit|cfnetwork|safari|dalvik)/i', $useragent)) {
-            $chrome = new Chrome($useragent);
+            $chrome  = new Chrome($useragent);
+            $version = $chrome->getVersion();
 
-            $chromeVersion = $chrome->getVersion()->getVersion(Version::MAJORONLY);
+            if (null !== $version) {
+                $chromeVersion = $version->getVersion(Version::MAJORONLY);
+            } else {
+                $chromeVersion = 0;
+            }
 
             if ($chromeVersion >= 28) {
                 return new Engine\Blink($useragent);
