@@ -20,6 +20,7 @@ matrix:
     - php: nightly
   # the tests require > 4.8GB ram on hhvm, this exeeds the memory limit on the travis-ci boxes so we allow to fail these builds
     - php: hhvm
+    - env: PREFER_LOWEST="--prefer-lowest"
 
 before_script:
   - if [ "`phpenv version-name`" != "hhvm" ]; then echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi

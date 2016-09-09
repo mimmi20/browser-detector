@@ -54,7 +54,7 @@ class AsusMe301t extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'ME301T';
-        $this->marketingName     = 'MeMO Pad Smart 10';
+        $this->marketingName     = 'Memo Pad Smart 10';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Asus')->getName();
         $this->brand             = CompanyFactory::get('Asus')->getBrandName();

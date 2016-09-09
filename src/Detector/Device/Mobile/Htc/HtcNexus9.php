@@ -57,7 +57,7 @@ class HtcNexus9 extends Device implements DeviceHasSpecificPlatformInterface
         $this->marketingName     = 'Nexus 9';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Htc')->getName();
-        $this->brand             = CompanyFactory::get('Htc')->getBrandName();
+        $this->brand             = CompanyFactory::get('Google')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = 480;
         $this->resolutionHeight  = 800;

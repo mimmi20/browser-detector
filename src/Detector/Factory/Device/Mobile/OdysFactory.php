@@ -51,6 +51,10 @@ class OdysFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/MAVEN_10_PLUS/', $useragent)) {
+            return new Odys\OdysMaven10plus($useragent);
+        }
+
         if (preg_match('/xtreme/i', $useragent)) {
             return new Odys\OdysXtreme($useragent);
         }
@@ -125,6 +129,10 @@ class OdysFactory implements FactoryInterface
 
         if (preg_match('/loox/i', $useragent)) {
             return new Odys\OdysLoox($useragent);
+        }
+
+        if (preg_match('/IEOS_QUAD_W/', $useragent)) {
+            return new Odys\OdysIeosQuadw($useragent);
         }
 
         if (preg_match('/IEOS_QUAD/', $useragent)) {

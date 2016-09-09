@@ -141,6 +141,26 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0; P1032X Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36',
+                'LifeTab P1032X',
+                'LifeTab P1032X',
+                'Lenovo',
+                'Lenovo',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; SmartTabII10 Build/IML74K) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16 Chrome/33.0.0.0',
+                'SmartTab II 10',
+                'SmartTab II 10',
+                'Lenovo',
+                'Vodafone',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

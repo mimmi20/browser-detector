@@ -75,6 +75,14 @@ class AsusFactory implements FactoryInterface
             return new Asus\AsusFoneK01A($useragent);
         }
 
+        if (preg_match('/K017/i', $useragent)) {
+            return new Asus\AsusMemoPadK017($useragent);
+        }
+
+        if (preg_match('/K013/i', $useragent)) {
+            return new Asus\AsusMemoPadK013($useragent);
+        }
+
         if (preg_match('/K012/i', $useragent)) {
             return new Asus\AsusFoneK012($useragent);
         }
@@ -157,10 +165,6 @@ class AsusFactory implements FactoryInterface
 
         if (preg_match('/PadFone/i', $useragent)) {
             return new Asus\AsusPadFone($useragent);
-        }
-
-        if (preg_match('/K017/i', $useragent)) {
-            return new Asus\AsusMemoPadK017($useragent);
         }
 
         if (preg_match('/Nexus 7/i', $useragent)) {

@@ -291,6 +291,16 @@ class SonyFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 6.0.1; E5823 Build/32.2.A.0.253; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'E5823',
+                'Xperia Z5 Compact',
+                'Sony',
+                'Sony',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

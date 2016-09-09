@@ -54,7 +54,7 @@ class AsusMe302kl extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'ME302KL';
-        $this->marketingName     = 'MeMO Pad FHD 10';
+        $this->marketingName     = 'Memo Pad FHD 10';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Asus')->getName();
         $this->brand             = CompanyFactory::get('Asus')->getBrandName();

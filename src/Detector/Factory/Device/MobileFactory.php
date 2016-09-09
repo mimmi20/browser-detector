@@ -1155,7 +1155,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\MytabFactory::detect($useragent);
         }
 
-        if (preg_match('/(loox|uno\_x10|xelio|neo\_quad10|ieos\_quad|sky plus)/i', $useragent)) {
+        if (preg_match('/(loox|uno\_x10|xelio|neo\_quad10|ieos\_quad|sky plus|maven\_10\_plus)/i', $useragent)) {
             return Mobile\OdysFactory::detect($useragent);
         }
 
@@ -1251,7 +1251,11 @@ class MobileFactory implements FactoryInterface
             return Mobile\NomiFactory::detect($useragent);
         }
 
-        if (preg_match('/(C|D)\d{4}/', $useragent)) {
+        if (preg_match('/one e1003/i', $useragent)) {
+            return Mobile\OneplusFactory::detect($useragent);
+        }
+
+        if (preg_match('/(C|D|E)\d{4}/', $useragent)) {
             return Mobile\SonyFactory::detect($useragent);
         }
 
@@ -1444,6 +1448,10 @@ class MobileFactory implements FactoryInterface
         }
 
         if (preg_match('/K910L/', $useragent)) {
+            return Mobile\LenovoFactory::detect($useragent);
+        }
+
+        if (preg_match('/P1032X/', $useragent)) {
             return Mobile\LenovoFactory::detect($useragent);
         }
 
@@ -1809,10 +1817,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/DG330/', $useragent)) {
             return Mobile\DoogeeFactory::detect($useragent);
-        }
-
-        if (preg_match('/one e1003/', $useragent)) {
-            return Mobile\OneplusFactory::detect($useragent);
         }
 
         if (preg_match('/One/', $useragent)) {

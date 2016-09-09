@@ -50,6 +50,7 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['BarcaPro/1.4.12'],
             ['Barca/2.8.2'],
             ['The Bat! 4.0.0.22'],
+            ['Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; tb-webde/2.6.9; MASEJS; rv:11.0) like Gecko'],
         ];
     }
 

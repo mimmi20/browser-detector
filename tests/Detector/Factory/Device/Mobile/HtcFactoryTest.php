@@ -391,6 +391,16 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 9 Build/LMY48M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36',
+                'Nexus 9',
+                'Nexus 9',
+                'HTC',
+                'Google',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

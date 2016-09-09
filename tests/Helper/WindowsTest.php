@@ -39,6 +39,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['BarcaPro/1.4.12'],
             ['Barca/2.8.2'],
             ['The Bat! 4.0.0.22'],
+            ['Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; tb-webde/2.6.9; MASEJS; rv:11.0) like Gecko'],
         ];
     }
 
@@ -109,6 +110,7 @@ class WindowsTest extends \PHPUnit_Framework_TestCase
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16; 160x160'],
             ['Mozilla/5.0 (X11; U; Linux i686; th-TH@calendar=gregorian) AppleWebKit/534.12 (KHTML, like Gecko) Puffin/1.3.2665MS Safari/534.12'],
             ['DWDS-Crawler +http://odo.dwds.de/dwds-crawler.html'],
+            ['Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; tb-webde/2.6.9; MASEJS; rv:11.0) like Gecko'],
         ];
     }
 }

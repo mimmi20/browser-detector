@@ -81,6 +81,16 @@ class MedionFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; LIFETAB_P1034X Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                'LifeTab P1034X',
+                'LifeTab P1034X',
+                'Medion',
+                'Medion',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

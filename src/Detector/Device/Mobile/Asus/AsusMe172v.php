@@ -54,7 +54,7 @@ class AsusMe172v extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'ME172V';
-        $this->marketingName     = 'MeMO Pad ME172V';
+        $this->marketingName     = 'Memo Pad ME172V';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Asus')->getName();
         $this->brand             = CompanyFactory::get('Asus')->getBrandName();

@@ -111,6 +111,16 @@ class ArchosFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; Archos 101 Copper Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36',
+                '101 Copper',
+                '101 Copper',
+                'Archos',
+                'Archos',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

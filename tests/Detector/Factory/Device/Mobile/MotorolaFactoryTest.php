@@ -151,6 +151,16 @@ class MotorolaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0.2; Nexus 6 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.63 Mobile Safari/537.36',
+                'Nexus 6',
+                'Nexus 6',
+                'Motorola',
+                'Google',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

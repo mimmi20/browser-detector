@@ -87,6 +87,10 @@ class LgFactory implements FactoryInterface
             return new Lg\LgVm670($useragent);
         }
 
+        if (preg_match('/v935/i', $useragent)) {
+            return new Lg\Lgv935($useragent);
+        }
+
         if (preg_match('/v900/i', $useragent)) {
             return new Lg\Lgv900($useragent);
         }

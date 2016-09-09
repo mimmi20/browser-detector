@@ -111,6 +111,16 @@ class ZteFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1; ZTE Blade L5 Plus Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'Blade L5 Plus',
+                'Blade L5 Plus',
+                'ZTE',
+                'ZTE',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

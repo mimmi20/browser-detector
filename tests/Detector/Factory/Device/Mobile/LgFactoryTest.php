@@ -211,6 +211,26 @@ class LgFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 5 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36',
+                'Nexus 5',
+                'Nexus 5',
+                'LG',
+                'Google',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.1.1; LG-V935 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                'V935',
+                'G Pad II 10.1 LTE',
+                'LG',
+                'LG',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

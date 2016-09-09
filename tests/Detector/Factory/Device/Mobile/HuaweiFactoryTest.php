@@ -191,6 +191,16 @@ class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 4.3; de-de; HUAWEI P7 mini Build/HuaweiG6-L11C02B119) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+                'P7 Mini',
+                'Ascend P7 Mini',
+                'Huawei',
+                'Huawei',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

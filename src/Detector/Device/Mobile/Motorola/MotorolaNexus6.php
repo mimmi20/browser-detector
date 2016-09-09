@@ -58,10 +58,10 @@ class MotorolaNexus6 extends Device implements DeviceHasSpecificPlatformInterfac
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Motorola')->getName();
         $this->brand             = CompanyFactory::get('Google')->getBrandName();
-        $this->pointingMethod    = null;
+        $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

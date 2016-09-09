@@ -54,7 +54,7 @@ class AsusFoneK01A extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'K01A';
-        $this->marketingName     = 'MeMO Pad 7';
+        $this->marketingName     = 'Memo Pad 7';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Asus')->getName();
         $this->brand             = CompanyFactory::get('Asus')->getBrandName();

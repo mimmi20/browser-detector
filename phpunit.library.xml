@@ -7,7 +7,7 @@
     beStrictAboutChangesToGlobalState="true">
   <testsuites>
     <testsuite name="BrowserDetector Test Suite">
-      <directory>tests/Detector/</directory>
+      <directory>tests/Detector/Factory/</directory>
       <directory>tests/Helper/</directory>
     </testsuite>
   </testsuites>

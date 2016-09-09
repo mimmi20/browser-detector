@@ -55,6 +55,10 @@ class MedionFactory implements FactoryInterface
             return new Medion\MdX4701($useragent);
         }
 
+        if (preg_match('/LIFETAB_P1034X/i', $useragent)) {
+            return new Medion\MdLifetabP1034x($useragent);
+        }
+
         if (preg_match('/LIFETAB_P733X/i', $useragent)) {
             return new Medion\MdLifetabP733x($useragent);
         }

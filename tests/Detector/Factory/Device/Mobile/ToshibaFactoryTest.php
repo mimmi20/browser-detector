@@ -81,6 +81,16 @@ class ToshibaFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.1.1; AT300SE Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                'AT300SE',
+                'Regza AT300SE',
+                'Toshiba',
+                'Toshiba',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

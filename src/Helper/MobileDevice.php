@@ -214,6 +214,7 @@ class MobileDevice
             'spice qt-75',
             'velocitymicro',
             'lumia',
+            'surftab',
         ];
 
         if ($utils->checkIfContains($mobileBrowsers, true)) {
@@ -248,10 +249,6 @@ class MobileDevice
         }
 
         if ((new FirefoxOs($this->useragent))->isFirefoxOs()) {
-            return true;
-        }
-
-        if ((new Windows($this->useragent))->isWindows() && $utils->checkIfContains('touch', true)) {
             return true;
         }
 
