@@ -16,7 +16,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'XT1068',
+            'Device_Name'             => 'Moto G Dual SIM (2nd gen)',
             'Device_Maker'            => 'Motorola',
             'Device_Type'             => 'Mobile Phone',
             'Device_Pointing_Method'  => 'touchscreen',
