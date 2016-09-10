@@ -3931,6 +3931,16 @@ class DeviceFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 7.0; Nexus 6P Build/NPD90G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36',
+                'Nexus 6P',
+                'Nexus 6P',
+                'Huawei',
+                'Google',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

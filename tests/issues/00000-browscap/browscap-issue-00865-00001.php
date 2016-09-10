@@ -2203,7 +2203,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'Galaxy Tab S2 9.7 WiFi',
+            'Device_Name'             => 'Galaxy Tab S2 (9.7, Wi-Fi)',
             'Device_Maker'            => 'Samsung',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',

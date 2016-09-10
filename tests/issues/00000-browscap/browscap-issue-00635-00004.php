@@ -313,7 +313,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'MeMO Pad 7',
+            'Device_Name'             => 'Memo Pad 7',
             'Device_Maker'            => 'Asus',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',

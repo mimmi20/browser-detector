@@ -49,7 +49,7 @@ return [
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'Nexus 9',
-            'Device_Brand_Name'       => 'HTC',
+            'Device_Brand_Name'       => 'Google',
             'RenderingEngine_Name'    => 'Blink',
             'RenderingEngine_Version' => 'unknown',
             'RenderingEngine_Maker'   => 'Google Inc',

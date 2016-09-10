@@ -367,7 +367,7 @@ return [
             'Platform_Bits'           => 32,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
-            'Device_Name'             => 'MeMO Pad ME172V',
+            'Device_Name'             => 'Memo Pad ME172V',
             'Device_Maker'            => 'Asus',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',

@@ -171,7 +171,7 @@ class MotorolaFactory implements FactoryInterface
             return new Motorola\MotorolaRazrV3i($useragent);
         }
 
-        if (preg_match('/Nexus 6/i', $useragent)) {
+        if (preg_match('/nexus 6/i', $useragent)) {
             return new Motorola\MotorolaNexus6($useragent);
         }
 
