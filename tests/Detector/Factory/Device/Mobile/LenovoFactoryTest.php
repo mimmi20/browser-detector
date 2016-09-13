@@ -161,6 +161,16 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; Lenovo S920 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36',
+                'S920',
+                'S920',
+                'Lenovo',
+                'Lenovo',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

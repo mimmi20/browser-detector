@@ -91,6 +91,16 @@ class AcerFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; A3-A11 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36',
+                'A3-A11',
+                'Iconia Tab A3',
+                'Acer',
+                'Acer',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

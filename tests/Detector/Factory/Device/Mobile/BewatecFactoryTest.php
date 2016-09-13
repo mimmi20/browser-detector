@@ -81,6 +81,16 @@ class BewatecFactoryTest extends \PHPUnit_Framework_TestCase
                 null,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.2; MediPaD13 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36',
+                'MediPaD 13',
+                'MediPaD 13',
+                'BEWATEC Kommunikationstechnik GmbH',
+                'BEWATEC',
+                'Tablet',
+                null,
+                'touchscreen',
+            ],
         ];
     }
 }

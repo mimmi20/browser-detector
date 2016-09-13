@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Huawei;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoS920 extends Device implements DeviceHasSpecificPlatformInterface
+class HuaweiEvaL09 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class LenovoS920 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'S920';
-        $this->marketingName     = 'S920';
+        $this->deviceName        = 'EVA-L09';
+        $this->marketingName     = 'EVA-L09';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Lenovo')->getName();
-        $this->brand             = CompanyFactory::get('Lenovo')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Huawei')->getName();
+        $this->brand             = CompanyFactory::get('Huawei')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
-        $this->colors            = null;
+        $this->resolutionWidth   = 800;
+        $this->resolutionHeight  = 1280;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**

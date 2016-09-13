@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Acer;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use UaDeviceType;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoS920 extends Device implements DeviceHasSpecificPlatformInterface
+class AcerIconiaA3A11 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,18 +53,18 @@ class LenovoS920 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'S920';
-        $this->marketingName     = 'S920';
+        $this->deviceName        = 'A3-A11';
+        $this->marketingName     = 'Iconia Tab A3';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Lenovo')->getName();
-        $this->brand             = CompanyFactory::get('Lenovo')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Acer')->getName();
+        $this->brand             = CompanyFactory::get('Acer')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
-        $this->colors            = null;
-        $this->smsSupport        = true;
-        $this->nfcSupport        = true;
+        $this->resolutionWidth   = 1280;
+        $this->resolutionHeight  = 800;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
+        $this->smsSupport        = false;
+        $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
         $this->type              = new UaDeviceType\Tablet();
     }

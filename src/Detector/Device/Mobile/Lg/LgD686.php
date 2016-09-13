@@ -29,13 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
-use UaResult\Device\Device;
 use BrowserDetector\Detector\Os;
-use UaDeviceType;
 use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
  * @category  BrowserDetector
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class LenovoS920 extends Device implements DeviceHasSpecificPlatformInterface
+class LgD686 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class LenovoS920 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'S920';
-        $this->marketingName     = 'S920';
+        $this->deviceName        = 'D686';
+        $this->marketingName     = 'D686';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Lenovo')->getName();
-        $this->brand             = CompanyFactory::get('Lenovo')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Lg')->getName();
+        $this->brand             = CompanyFactory::get('Lg')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = null;
-        $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
-        $this->colors            = null;
+        $this->resolutionWidth   = 320;
+        $this->resolutionHeight  = 480;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**
