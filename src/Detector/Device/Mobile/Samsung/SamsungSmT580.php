@@ -54,7 +54,7 @@ class SamsungSmT580 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-T580';
-        $this->marketingName     = 'SM-T580';
+        $this->marketingName     = 'Galaxy Tab A (2016, 10.1, Wi-Fi)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

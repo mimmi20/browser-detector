@@ -51,8 +51,16 @@ class SonyFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/e6653/i', $useragent)) {
+            return new SonyEricsson\SonyE6653($useragent);
+        }
+
         if (preg_match('/e5823/i', $useragent)) {
             return new SonyEricsson\SonyE5823($useragent);
+        }
+
+        if (preg_match('/e2303/i', $useragent)) {
+            return new SonyEricsson\SonyE2303($useragent);
         }
 
         if (preg_match('/c5303/i', $useragent)) {
@@ -177,6 +185,10 @@ class SonyFactory implements FactoryInterface
 
         if (preg_match('/sgpt12/i', $useragent)) {
             return new SonyEricsson\SonyTabletSgpt12($useragent);
+        }
+
+        if (preg_match('/SGP771/i', $useragent)) {
+            return new SonyEricsson\SonyTabletSgp771($useragent);
         }
 
         if (preg_match('/SGP521/i', $useragent)) {

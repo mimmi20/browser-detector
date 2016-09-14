@@ -54,7 +54,7 @@ class SamsungSmT810 extends Device implements DeviceHasSpecificPlatformInterface
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-T810';
-        $this->marketingName     = 'Galaxy Tab S2 (9.7, Wi-Fi)';
+        $this->marketingName     = 'Galaxy Tab S2 (9.7, Wi-Fi, 2015)';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();

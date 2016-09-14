@@ -66,7 +66,7 @@ class SonyTabletSgp321 extends Device implements DeviceHasSpecificPlatformInterf
         $this->smsSupport        = false;
         $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

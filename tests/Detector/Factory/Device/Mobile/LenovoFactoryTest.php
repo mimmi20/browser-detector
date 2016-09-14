@@ -137,7 +137,7 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 'IdeaTab S6000-H',
                 'Lenovo',
                 'Vodafone',
-                'Tablet',
+                'FonePad',
                 true,
                 'touchscreen',
             ],

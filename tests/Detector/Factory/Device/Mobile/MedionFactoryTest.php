@@ -91,6 +91,16 @@ class MedionFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/2.1.0 (Linux; U; Android 5.1.1; LIFETAB_S1034X Build/LMY47V)',
+                'LifeTab S1034X',
+                'LifeTab S1034X',
+                'Medion',
+                'Medion',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

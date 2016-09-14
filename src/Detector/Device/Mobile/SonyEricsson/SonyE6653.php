@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Medion;
+namespace BrowserDetector\Detector\Device\Mobile\SonyEricsson;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class MdLifetabS1034x extends Device implements DeviceHasSpecificPlatformInterface
+class SonyE6653 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class MdLifetabS1034x extends Device implements DeviceHasSpecificPlatformInterfa
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'LifeTab S1034X';
-        $this->marketingName     = 'LifeTab S1034X';
+        $this->deviceName        = 'E6653';
+        $this->marketingName     = 'Xperia Z5 4G LTE';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Medion')->getName();
-        $this->brand             = CompanyFactory::get('Medion')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Sony')->getName();
+        $this->brand             = CompanyFactory::get('Sony')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 1200;
-        $this->resolutionHeight  = 1920;
+        $this->resolutionWidth   = 720;
+        $this->resolutionHeight  = 1280;
         $this->dualOrientation   = true;
         $this->colors            = 65536;
-        $this->smsSupport        = false;
-        $this->nfcSupport        = false;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\Tablet();
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**

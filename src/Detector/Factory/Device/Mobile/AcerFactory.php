@@ -79,6 +79,10 @@ class AcerFactory implements FactoryInterface
             return new Acer\AcerLiquidS100($useragent);
         }
 
+        if (preg_match('/b1\-770/i', $useragent)) {
+            return new Acer\AcerIconiaB1770($useragent);
+        }
+
         if (preg_match('/b1\-730hd/i', $useragent)) {
             return new Acer\AcerIconiaB1730hd($useragent);
         }

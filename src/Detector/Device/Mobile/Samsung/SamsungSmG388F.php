@@ -53,7 +53,7 @@ class SamsungSmG388F extends Device implements DeviceHasSpecificPlatformInterfac
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'SM-G388H';
+        $this->deviceName        = 'SM-G388F';
         $this->marketingName     = 'Galaxy Xcover 3 LTE';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();

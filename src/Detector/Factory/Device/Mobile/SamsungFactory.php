@@ -119,12 +119,36 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmJ5007($useragent);
         }
 
+        if (preg_match('/sm\-j320g/i', $useragent)) {
+            return new Samsung\SamsungSmJ320g($useragent);
+        }
+
         if (preg_match('/sm\-t2105/i', $useragent)) {
             return new Samsung\SamsungSmT2105($useragent);
         }
 
         if (preg_match('/sm\-t900/i', $useragent)) {
             return new Samsung\SamsungSmT900($useragent);
+        }
+
+        if (preg_match('/sm\-t819/i', $useragent)) {
+            return new Samsung\SamsungSmT819($useragent);
+        }
+
+        if (preg_match('/sm\-t815y/i', $useragent)) {
+            return new Samsung\SamsungSmT815y($useragent);
+        }
+
+        if (preg_match('/sm\-t815/i', $useragent)) {
+            return new Samsung\SamsungSmT815($useragent);
+        }
+
+        if (preg_match('/sm\-t813/i', $useragent)) {
+            return new Samsung\SamsungSmT813($useragent);
+        }
+
+        if (preg_match('/sm\-t810x/i', $useragent)) {
+            return new Samsung\SamsungSmT810x($useragent);
         }
 
         if (preg_match('/sm\-t810/i', $useragent)) {
@@ -149,6 +173,10 @@ class SamsungFactory implements FactoryInterface
 
         if (preg_match('/sm\-t700/i', $useragent)) {
             return new Samsung\SamsungSmT700($useragent);
+        }
+
+        if (preg_match('/sm\-t585/i', $useragent)) {
+            return new Samsung\SamsungSmT585($useragent);
         }
 
         if (preg_match('/sm\-t580/i', $useragent)) {
@@ -415,7 +443,7 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungSmG800F($useragent);
         }
 
-        if (preg_match('/SM\-g530h/', $useragent)) {
+        if (preg_match('/sm\-g530h/i', $useragent)) {
             return new Samsung\SamsungSmG530h($useragent);
         }
 

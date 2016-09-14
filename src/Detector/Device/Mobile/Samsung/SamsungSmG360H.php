@@ -54,7 +54,7 @@ class SamsungSmG360H extends Device implements DeviceHasSpecificPlatformInterfac
     {
         $this->useragent         = $useragent;
         $this->deviceName        = 'SM-G360H';
-        $this->marketingName     = 'SM-G360H';
+        $this->marketingName     = 'Galaxy Core Prime Duos';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
         $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
