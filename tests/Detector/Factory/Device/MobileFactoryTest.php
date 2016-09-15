@@ -3971,6 +3971,16 @@ class MobileFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0; Lenovo A7000-a Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36',
+                'A7000-A',
+                'A7000',
+                'Lenovo',
+                'Lenovo',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
