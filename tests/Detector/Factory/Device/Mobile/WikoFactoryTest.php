@@ -91,6 +91,16 @@ class WikoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Dalvik/1.6.0 (Linux; U; Android 4.2.1; DARKSIDE Build/JOP40D)',
+                'DARKSIDE',
+                'DARKSIDE',
+                'Wiko',
+                'Wiko',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

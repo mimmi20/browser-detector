@@ -131,6 +131,10 @@ class OdysFactory implements FactoryInterface
             return new Odys\OdysLoox($useragent);
         }
 
+        if (preg_match('/IEOS_QUAD_10_PRO/', $useragent)) {
+            return new Odys\OdysIeosQuad10pro($useragent);
+        }
+
         if (preg_match('/IEOS_QUAD_W/', $useragent)) {
             return new Odys\OdysIeosQuadw($useragent);
         }

@@ -55,12 +55,20 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiNexus6p($useragent);
         }
 
+        if (preg_match('/p7\-l10/i', $useragent)) {
+            return new Huawei\HuaweiP7L10($useragent);
+        }
+
         if (preg_match('/p7 mini/i', $useragent)) {
             return new Huawei\HuaweiP7mini($useragent);
         }
 
         if (preg_match('/eva\-l09/i', $useragent)) {
             return new Huawei\HuaweiEvaL09($useragent);
+        }
+
+        if (preg_match('/scl\-l01/i', $useragent)) {
+            return new Huawei\HuaweiSclL01($useragent);
         }
 
         if (preg_match('/g6\-l11/i', $useragent)) {

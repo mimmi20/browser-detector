@@ -1091,7 +1091,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\MtcFactory::detect($useragent);
         }
 
-        if (preg_match('/(DARKMOON|CINK PEAX 2|JERRY|BLOOM)/', $useragent)) {
+        if (preg_match('/(DARKMOON|DARKSIDE|CINK PEAX 2|JERRY|BLOOM)/', $useragent)) {
             return Mobile\WikoFactory::detect($useragent);
         }
 

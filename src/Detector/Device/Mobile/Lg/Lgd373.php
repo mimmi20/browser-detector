@@ -29,10 +29,13 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Factory\Device\Mobile;
+namespace BrowserDetector\Detector\Device\Mobile\Lg;
 
-use BrowserDetector\Detector\Device\Mobile\Wiko;
-use BrowserDetector\Detector\Factory\FactoryInterface;
+use BrowserDetector\Detector\Factory\CompanyFactory;
+use BrowserDetector\Detector\Os;
+use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
+use UaDeviceType;
+use UaResult\Device\Device;
 
 /**
  * @category  BrowserDetector
@@ -40,49 +43,39 @@ use BrowserDetector\Detector\Factory\FactoryInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class WikoFactory implements FactoryInterface
+class Lgd373 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
-     * detects the device name from the given user agent
+     * the class constructor
      *
      * @param string $useragent
-     *
-     * @return \UaResult\Device\DeviceInterface
      */
-    public static function detect($useragent)
+    public function __construct($useragent)
     {
-        if (preg_match('/JERRY/', $useragent)) {
-            return new Wiko\WikoJerry($useragent);
-        }
+        $this->useragent         = $useragent;
+        $this->deviceName        = 'D373';
+        $this->marketingName     = 'L80';
+        $this->version           = null;
+        $this->manufacturer      = CompanyFactory::get('Lg')->getName();
+        $this->brand             = CompanyFactory::get('Lg')->getBrandName();
+        $this->pointingMethod    = 'touchscreen';
+        $this->resolutionWidth   = 480;
+        $this->resolutionHeight  = 800;
+        $this->dualOrientation   = true;
+        $this->colors            = 65536;
+        $this->smsSupport        = true;
+        $this->nfcSupport        = true;
+        $this->hasQwertyKeyboard = true;
+        $this->type              = new UaDeviceType\MobilePhone();
+    }
 
-        if (preg_match('/BLOOM/', $useragent)) {
-            return new Wiko\WikoBloom($useragent);
-        }
-
-        if (preg_match('/RAINBOW/', $useragent)) {
-            return new Wiko\WikoRainbow($useragent);
-        }
-
-        if (preg_match('/LENNY/', $useragent)) {
-            return new Wiko\WikoLenny($useragent);
-        }
-
-        if (preg_match('/GETAWAY/', $useragent)) {
-            return new Wiko\WikoGetaway($useragent);
-        }
-
-        if (preg_match('/DARKMOON/', $useragent)) {
-            return new Wiko\WikoDarkmoon($useragent);
-        }
-
-        if (preg_match('/DARKSIDE/', $useragent)) {
-            return new Wiko\WikoDarkside($useragent);
-        }
-
-        if (preg_match('/CINK PEAX 2/', $useragent)) {
-            return new Wiko\WikoCinkPeax2($useragent);
-        }
-
-        return new Wiko\Wiko($useragent);
+    /**
+     * returns the OS Handler
+     *
+     * @return \UaResult\Os\OsInterface|null
+     */
+    public function detectOs()
+    {
+        return new Os\AndroidOs($this->useragent);
     }
 }

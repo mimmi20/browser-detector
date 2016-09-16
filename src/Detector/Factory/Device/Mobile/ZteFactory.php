@@ -55,6 +55,10 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteBladev6($useragent);
         }
 
+        if (preg_match('/blade l6/i', $useragent)) {
+            return new Zte\ZteBladeL6($useragent);
+        }
+
         if (preg_match('/blade l5 plus/i', $useragent)) {
             return new Zte\ZteBladeL5plus($useragent);
         }

@@ -91,6 +91,16 @@ class OdysFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 5.0; IEOS_QUAD_10_PRO Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36',
+                'Ieos Quad 10 Pro',
+                'Ieos Quad 10 Pro',
+                'Odys',
+                'Odys',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
