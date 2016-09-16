@@ -45,7 +45,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'Galaxy Tab 4 10.1 WiFi',
             'Device_Maker'            => 'Samsung',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'SM-T530',

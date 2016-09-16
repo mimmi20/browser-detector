@@ -1287,7 +1287,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'Galaxy Tab S 8.4 LTE',
             'Device_Maker'            => 'Samsung',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'SM-T705',

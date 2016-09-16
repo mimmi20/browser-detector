@@ -2313,7 +2313,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'G Pad II 10.1 LTE',
             'Device_Maker'            => 'LG',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'V935',

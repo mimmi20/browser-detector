@@ -884,7 +884,7 @@ return [
             'Device_Maker'            => 'Lenovo',
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
-            'Device_Dual_Orientation' => null,
+            'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'S920_ROW',
             'Device_Brand_Name'       => 'Lenovo',
             'RenderingEngine_Name'    => 'WebKit',

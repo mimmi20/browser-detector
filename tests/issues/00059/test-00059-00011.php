@@ -2178,7 +2178,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'IdeaTab S6000-H',
             'Device_Maker'            => 'Lenovo',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'S6000-H',
