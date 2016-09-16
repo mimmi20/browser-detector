@@ -53,15 +53,15 @@ class LenovoS920 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'S920_ROW';
-        $this->marketingName     = 'S920_ROW';
+        $this->deviceName        = 'S920';
+        $this->marketingName     = 'S920';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Lenovo')->getName();
         $this->brand             = CompanyFactory::get('Lenovo')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

@@ -227,7 +227,7 @@ class LgFactoryTest extends \PHPUnit_Framework_TestCase
                 'G Pad II 10.1 LTE',
                 'LG',
                 'LG',
-                'Tablet',
+                'FonePad',
                 true,
                 'touchscreen',
             ],

@@ -79,39 +79,43 @@ class ArchosFactory implements FactoryInterface
             return new Archos\ArchosA70BHT($useragent);
         }
 
-        if (preg_match('/A35DM/i', $useragent)) {
+        if (preg_match('/a35dm/i', $useragent)) {
             return new Archos\ArchosA35DM($useragent);
         }
 
-        if (preg_match('/A7EB/i', $useragent)) {
+        if (preg_match('/a7eb/i', $useragent)) {
             return new Archos\ArchosA7eb($useragent);
         }
 
-        if (preg_match('/101d Neon/i', $useragent)) {
+        if (preg_match('/101 xs 2/i', $useragent)) {
+            return new Archos\Archos101xs2($useragent);
+        }
+
+        if (preg_match('/101d neon/i', $useragent)) {
             return new Archos\Archos101dNeon($useragent);
         }
 
-        if (preg_match('/101 Neon/i', $useragent)) {
+        if (preg_match('/101 neon/i', $useragent)) {
             return new Archos\Archos101Neon($useragent);
         }
 
-        if (preg_match('/101 Copper/i', $useragent)) {
+        if (preg_match('/101 copper/i', $useragent)) {
             return new Archos\Archos101Copper($useragent);
         }
 
-        if (preg_match('/101G10/i', $useragent)) {
+        if (preg_match('/101g10/i', $useragent)) {
             return new Archos\Archos101G10($useragent);
         }
 
-        if (preg_match('/101G9/i', $useragent)) {
+        if (preg_match('/101g9/i', $useragent)) {
             return new Archos\Archos101G9($useragent);
         }
 
-        if (preg_match('/101B/i', $useragent)) {
+        if (preg_match('/101b/i', $useragent)) {
             return new Archos\Archos101B($useragent);
         }
 
-        if (preg_match('/97 XENON/i', $useragent)) {
+        if (preg_match('/97 xenon/i', $useragent)) {
             return new Archos\Archos97Xenon($useragent);
         }
 
@@ -123,31 +127,31 @@ class ArchosFactory implements FactoryInterface
             return new Archos\Archos97Neon($useragent);
         }
 
-        if (preg_match('/97 CARBON/i', $useragent)) {
+        if (preg_match('/97 carbon/i', $useragent)) {
             return new Archos\Archos97Carbon($useragent);
         }
 
-        if (preg_match('/80XSK/i', $useragent)) {
+        if (preg_match('/80xsk/i', $useragent)) {
             return new Archos\Archos80XSK($useragent);
         }
 
-        if (preg_match('/80 Xenon/i', $useragent)) {
+        if (preg_match('/80 xenon/i', $useragent)) {
             return new Archos\Archos80Xenon($useragent);
         }
 
-        if (preg_match('/80G9/i', $useragent)) {
+        if (preg_match('/80g9/i', $useragent)) {
             return new Archos\Archos80G9($useragent);
         }
 
-        if (preg_match('/80 COBALT/i', $useragent)) {
+        if (preg_match('/80 cobalt/i', $useragent)) {
             return new Archos\Archos80Cobalt($useragent);
         }
 
-        if (preg_match('/79 Xenon/i', $useragent)) {
+        if (preg_match('/79 xenon/i', $useragent)) {
             return new Archos\Archos79Xenon($useragent);
         }
 
-        if (preg_match('/70 Xenon/i', $useragent)) {
+        if (preg_match('/70 xenon/i', $useragent)) {
             return new Archos\Archos70Xenon($useragent);
         }
 
@@ -155,19 +159,19 @@ class ArchosFactory implements FactoryInterface
             return new Archos\Archos70it2($useragent);
         }
 
-        if (preg_match('/53 Platinum/i', $useragent)) {
+        if (preg_match('/53 platinum/i', $useragent)) {
             return new Archos\Archos53Platinum($useragent);
         }
 
-        if (preg_match('/50 Titanium/i', $useragent)) {
+        if (preg_match('/50 titanium/i', $useragent)) {
             return new Archos\Archos50Titanium($useragent);
         }
 
-        if (preg_match('/50b Platinum/i', $useragent)) {
+        if (preg_match('/50b platinum/i', $useragent)) {
             return new Archos\Archos50bPlatinum($useragent);
         }
 
-        if (preg_match('/50 Platinum/i', $useragent)) {
+        if (preg_match('/50 platinum/i', $useragent)) {
             return new Archos\Archos50Platinum($useragent);
         }
 
@@ -175,7 +179,11 @@ class ArchosFactory implements FactoryInterface
             return new Archos\Archos50Cesium($useragent);
         }
 
-        if (preg_match('/50c Oxygen/i', $useragent)) {
+        if (preg_match('/50 oxygen plus/i', $useragent)) {
+            return new Archos\Archos50OxygenPlus($useragent);
+        }
+
+        if (preg_match('/50c oxygen/i', $useragent)) {
             return new Archos\Archos50cOxygen($useragent);
         }
 
@@ -183,11 +191,11 @@ class ArchosFactory implements FactoryInterface
             return new Archos\Archos40Cesium($useragent);
         }
 
-        if (preg_match('/40b Titanium Surround/i', $useragent)) {
+        if (preg_match('/40b titanium surround/i', $useragent)) {
             return new Archos\Archos40bTitaniumSurround($useragent);
         }
 
-        if (preg_match('/Archos5/i', $useragent)) {
+        if (preg_match('/archos5/i', $useragent)) {
             return new Archos\Archos5($useragent);
         }
 

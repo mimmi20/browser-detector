@@ -51,6 +51,10 @@ class BewatecFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
+        if (preg_match('/MediPaD13/', $useragent)) {
+            return new Bewatec\BewatecMediPad13($useragent);
+        }
+
         if (preg_match('/MediPaD/', $useragent)) {
             return new Bewatec\BewatecMediPad($useragent);
         }

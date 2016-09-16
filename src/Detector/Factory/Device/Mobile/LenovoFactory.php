@@ -51,31 +51,31 @@ class LenovoFactory implements FactoryInterface
      */
     public static function detect($useragent)
     {
-        if (preg_match('/S6000L\-F/i', $useragent)) {
+        if (preg_match('/s6000l\-f/i', $useragent)) {
             return new Lenovo\LenovoS6000lfIdeaTab($useragent);
         }
 
-        if (preg_match('/S6000\-H/i', $useragent)) {
+        if (preg_match('/s6000\-h/i', $useragent)) {
             return new Lenovo\LenovoS6000hIdeaTab($useragent);
         }
 
-        if (preg_match('/S6000\-F/i', $useragent)) {
+        if (preg_match('/s6000\-f/i', $useragent)) {
             return new Lenovo\LenovoS6000fIdeaTab($useragent);
         }
 
-        if (preg_match('/S5000\-H/i', $useragent)) {
+        if (preg_match('/s5000\-h/i', $useragent)) {
             return new Lenovo\LenovoS5000h($useragent);
         }
 
-        if (preg_match('/S5000\-F/i', $useragent)) {
+        if (preg_match('/s5000\-f/i', $useragent)) {
             return new Lenovo\LenovoS5000f($useragent);
         }
 
-        if (preg_match('/(IdeaTabS2110AF|IdeaTabS2110AH)/i', $useragent)) {
+        if (preg_match('/(ideatabs2110af|ideatabs2110ah)/i', $useragent)) {
             return new Lenovo\LenovoS2110afIdeaTab($useragent);
         }
 
-        if (preg_match('/S920\_ROW/i', $useragent)) {
+        if (preg_match('/s920/i', $useragent)) {
             return new Lenovo\LenovoS920($useragent);
         }
 
@@ -87,68 +87,72 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\LenovoS856($useragent);
         }
 
-        if (preg_match('/S820\_ROW/i', $useragent)) {
+        if (preg_match('/s820\_row/i', $useragent)) {
             return new Lenovo\LenovoS820row($useragent);
         }
 
-        if (preg_match('/S660/i', $useragent)) {
+        if (preg_match('/s660/i', $useragent)) {
             return new Lenovo\LenovoS660($useragent);
         }
 
-        if (preg_match('/P1032X/i', $useragent)) {
+        if (preg_match('/p1032x/i', $useragent)) {
             return new Lenovo\LenovoP1032x($useragent);
         }
 
-        if (preg_match('/P780/i', $useragent)) {
+        if (preg_match('/p780/i', $useragent)) {
             return new Lenovo\LenovoP780($useragent);
         }
 
-        if (preg_match('/K910L/i', $useragent)) {
+        if (preg_match('/k910l/i', $useragent)) {
             return new Lenovo\LenovoK910l($useragent);
         }
 
-        if (preg_match('/ K1/i', $useragent)) {
+        if (preg_match('/ k1/i', $useragent)) {
             return new Lenovo\LenovoIdeaPadK1($useragent);
         }
 
-        if (preg_match('/IdeaPadA10/i', $useragent)) {
+        if (preg_match('/ideapada10/i', $useragent)) {
             return new Lenovo\LenovoIdeaPadA10($useragent);
         }
 
-        if (preg_match('/A1\_07/i', $useragent)) {
+        if (preg_match('/a1\_07/i', $useragent)) {
             return new Lenovo\LenovoIdeaPadA1($useragent);
         }
 
-        if (preg_match('/B8080\-H/i', $useragent)) {
+        if (preg_match('/b8080\-h/i', $useragent)) {
             return new Lenovo\LenovoB8080h($useragent);
         }
 
-        if (preg_match('/B8080\-F/i', $useragent)) {
+        if (preg_match('/b8080\-f/i', $useragent)) {
             return new Lenovo\LenovoB8080f($useragent);
         }
 
-        if (preg_match('/B8000\-H/i', $useragent)) {
+        if (preg_match('/b8000\-h/i', $useragent)) {
             return new Lenovo\LenovoB8000h($useragent);
         }
 
-        if (preg_match('/B8000\-F/i', $useragent)) {
+        if (preg_match('/b8000\-f/i', $useragent)) {
             return new Lenovo\LenovoB8000f($useragent);
         }
 
-        if (preg_match('/B6000\-H/i', $useragent)) {
+        if (preg_match('/b6000\-h/i', $useragent)) {
             return new Lenovo\LenovoB6000h($useragent);
         }
 
-        if (preg_match('/B6000\-F/i', $useragent)) {
+        if (preg_match('/b6000\-f/i', $useragent)) {
             return new Lenovo\LenovoB6000f($useragent);
         }
 
-        if (preg_match('/A7600\-H/i', $useragent)) {
+        if (preg_match('/a7600\-h/i', $useragent)) {
             return new Lenovo\LenovoA7600h($useragent);
         }
 
-        if (preg_match('/A7600\-F/i', $useragent)) {
+        if (preg_match('/a7600\-f/i', $useragent)) {
             return new Lenovo\LenovoA7600f($useragent);
+        }
+
+        if (preg_match('/a7000\-a/i', $useragent)) {
+            return new Lenovo\LenovoA7000a($useragent);
         }
 
         if (preg_match('/A5500\-H/i', $useragent)) {

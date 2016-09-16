@@ -79,6 +79,10 @@ class AcerFactory implements FactoryInterface
             return new Acer\AcerLiquidS100($useragent);
         }
 
+        if (preg_match('/b1\-770/i', $useragent)) {
+            return new Acer\AcerIconiaB1770($useragent);
+        }
+
         if (preg_match('/b1\-730hd/i', $useragent)) {
             return new Acer\AcerIconiaB1730hd($useragent);
         }
@@ -165,6 +169,10 @@ class AcerFactory implements FactoryInterface
 
         if (preg_match('/a3\-a20/i', $useragent)) {
             return new Acer\AcerIconiaA3A20($useragent);
+        }
+
+        if (preg_match('/a3\-a11/i', $useragent)) {
+            return new Acer\AcerIconiaA3A11($useragent);
         }
 
         if (preg_match('/a3\-a10/i', $useragent)) {

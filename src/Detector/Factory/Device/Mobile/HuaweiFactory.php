@@ -59,6 +59,10 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiP7mini($useragent);
         }
 
+        if (preg_match('/eva\-l09/i', $useragent)) {
+            return new Huawei\HuaweiEvaL09($useragent);
+        }
+
         if (preg_match('/g6\-l11/i', $useragent)) {
             return new Huawei\HuaweiG6L11($useragent);
         }
