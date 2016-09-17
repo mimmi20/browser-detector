@@ -85,6 +85,8 @@ class Linux
             'osf1',
             'solaris',
             'sunos',
+            'infegyatlas',
+            'jobboerse',
         ];
 
         if ($utils->checkIfContains($noLinux, true)) {

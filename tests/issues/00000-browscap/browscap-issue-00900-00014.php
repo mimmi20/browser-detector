@@ -442,7 +442,7 @@ return [
             'Browser_Maker'           => 'unknown',
             'Browser_Modus'           => 'unknown',
             'Browser_Version'         => '0.0',
-            'Platform_Codename'       => 'Windows NT 4.0',
+            'Platform_Codename'       => 'Windows NT',
             'Platform_Marketingname'  => 'Windows NT',
             'Platform_Version'        => '0.0.0',
             'Platform_Bits'           => 32,
