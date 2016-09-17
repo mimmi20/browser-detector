@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Huawei;
+namespace BrowserDetector\Detector\Device\Mobile\Lenovo;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HuaweiVnsL31 extends Device implements DeviceHasSpecificPlatformInterface
+class LenovoB6000hv extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class HuaweiVnsL31 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'VNS-L31';
-        $this->marketingName     = 'P9 Lite';
+        $this->deviceName        = 'B6000-HV';
+        $this->marketingName     = 'Yoga 8 3G + WiFi';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Huawei')->getName();
-        $this->brand             = CompanyFactory::get('Huawei')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Lenovo')->getName();
+        $this->brand             = CompanyFactory::get('Lenovo')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 480;
+        $this->resolutionWidth   = 1200;
         $this->resolutionHeight  = 800;
         $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\MobilePhone();
+        $this->type              = new UaDeviceType\FonePad();
     }
 
     /**

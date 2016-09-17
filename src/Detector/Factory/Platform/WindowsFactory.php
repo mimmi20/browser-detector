@@ -77,8 +77,8 @@ class WindowsFactory implements FactoryInterface
 
         if ($doMatch) {
             switch ($matches[1]) {
-                case '6.4':
                 case '10.0':
+                case '6.4':
                     return new Os\Windows10($useragent, $matches[1]);
                     break;
                 case '6.3':
@@ -90,6 +90,7 @@ class WindowsFactory implements FactoryInterface
                 case '6.1':
                     return new Os\Windows7($useragent);
                     break;
+                case '6':
                 case '6.0':
                     return new Os\WindowsVista($useragent);
                     break;
@@ -98,12 +99,15 @@ class WindowsFactory implements FactoryInterface
                 case '5.1':
                     return new Os\WindowsXp($useragent, $matches[1]);
                     break;
-                case '5.0':
                 case '5.01':
+                case '5.0':
                     return new Os\Windows2000($useragent, $matches[1]);
                     break;
+                case '4.10':
                 case '4.1':
                 case '4.0':
+                case '3.5':
+                case '3.1':
                     return new Os\WindowsNt($useragent, $matches[1]);
                     break;
                 default:
@@ -118,8 +122,9 @@ class WindowsFactory implements FactoryInterface
 
         if ($doMatch) {
             switch ($matches[1]) {
-                case '6.4':
                 case '10.0':
+                case '10':
+                case '6.4':
                     return new Os\Windows10($useragent, $matches[1]);
                     break;
                 case '6.3':
@@ -153,9 +158,17 @@ class WindowsFactory implements FactoryInterface
                 case '2000':
                     return new Os\Windows2000($useragent);
                     break;
-                case '5.0':
                 case '5.01':
+                case '5.0':
                     return new Os\Windows2000($useragent, $matches[1]);
+                    break;
+                case '4.1':
+                case '4.0':
+                case '3.5':
+                    return new Os\WindowsNt($useragent, $matches[1]);
+                    break;
+                case 'NT':
+                    return new Os\WindowsNt($useragent);
                     break;
                 case '3.1':
                     return new Os\Windows31($useragent);
@@ -165,13 +178,6 @@ class WindowsFactory implements FactoryInterface
                     break;
                 case '98':
                     return new Os\Windows98($useragent);
-                    break;
-                case '4.1':
-                case '4.0':
-                    return new Os\WindowsNt($useragent, $matches[1]);
-                    break;
-                case 'NT':
-                    return new Os\WindowsNt($useragent);
                     break;
                 default:
                     // nothing to do here

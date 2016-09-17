@@ -847,6 +847,48 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Microsoft Corporation',
                 32,
             ],
+            [
+                'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.1) Gecko/20090725 Moblin/3.5.1-2.5.14.moblin2 Shiretoko/3.5.1',
+                'Moblin',
+                '0.0.0',
+                'unknown',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 4.10; rv:44.0) Gecko/20100101 Firefox/44.0',
+                'Windows NT 4.10',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 4.1; rv:44.0) Gecko/20100101 Firefox/44.0',
+                'Windows NT 4.1',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 4.0; rv:44.0) Gecko/20100101 Firefox/44.0',
+                'Windows NT 4.0',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 3.5; rv:44.0) Gecko/20100101 Firefox/44.0',
+                'Windows NT 3.5',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 3.1; rv:44.0) Gecko/20100101 Firefox/44.0',
+                'Windows NT 3.1',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
         ];
     }
 }

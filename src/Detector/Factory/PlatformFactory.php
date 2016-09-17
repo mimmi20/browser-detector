@@ -275,7 +275,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Ventana($agent);
         }
 
-        if ($utils->checkIfContains('Moblin')) {
+        if ($utils->checkIfContains('moblin', true)) {
             return new Os\Moblin($agent);
         }
 

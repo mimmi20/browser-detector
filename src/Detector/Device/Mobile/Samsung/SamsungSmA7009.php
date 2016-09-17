@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Huawei;
+namespace BrowserDetector\Detector\Device\Mobile\Samsung;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class HuaweiVnsL31 extends Device implements DeviceHasSpecificPlatformInterface
+class SamsungSmA7009 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,18 +53,18 @@ class HuaweiVnsL31 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'VNS-L31';
-        $this->marketingName     = 'P9 Lite';
+        $this->deviceName        = 'SM-A7009';
+        $this->marketingName     = 'Galaxy A7 Duos LTE';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Huawei')->getName();
-        $this->brand             = CompanyFactory::get('Huawei')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Samsung')->getName();
+        $this->brand             = CompanyFactory::get('Samsung')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 480;
-        $this->resolutionHeight  = 800;
+        $this->resolutionWidth   = 1080;
+        $this->resolutionHeight  = 1920;
         $this->dualOrientation   = true;
-        $this->colors            = 65536;
+        $this->colors            = 16777216;
         $this->smsSupport        = true;
-        $this->nfcSupport        = true;
+        $this->nfcSupport        = false;
         $this->hasQwertyKeyboard = true;
         $this->type              = new UaDeviceType\MobilePhone();
     }

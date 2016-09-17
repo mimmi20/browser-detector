@@ -191,6 +191,16 @@ class LenovoFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; Lenovo B6000-HV Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Safari/537.36',
+                'B6000-HV',
+                'Yoga 8 3G + WiFi',
+                'Lenovo',
+                'Lenovo',
+                'FonePad',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }
