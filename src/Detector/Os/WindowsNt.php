@@ -48,10 +48,14 @@ class WindowsNt extends AbstractOs
      * @param string $useragent the user agent to be handled
      * @param string $ntVersion
      */
-    public function __construct($useragent, $ntVersion = '4.0')
+    public function __construct($useragent, $ntVersion = '0.0')
     {
         $this->useragent     = $useragent;
-        $this->name          = 'Windows NT ' . $ntVersion;
+        if ('0.0' !== $ntVersion) {
+            $this->name = 'Windows NT ' . $ntVersion;
+        } else {
+            $this->name = 'Windows NT';
+        }
         $this->marketingName = 'Windows NT';
         $this->version       = new Version(0);
         $this->manufacturer  = CompanyFactory::get('Microsoft')->getName();
