@@ -44,7 +44,7 @@ interface DeviceHasSpecificPlatformInterface
     /**
      * returns a specific Operating System
      *
-     * @return \UaResult\Os\OsInterface
+     * @return \UaResult\Os\OsInterface|null
      */
     public function detectOs();
 }

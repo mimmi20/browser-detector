@@ -45,7 +45,7 @@ interface BrowserHasSpecificEngineInterface
      * returns null, if the browser does not have a specific rendering engine
      * returns the Engine Handler otherwise
      *
-     * @return \UaResult\Engine\EngineInterface
+     * @return \UaResult\Engine\EngineInterface|null
      */
     public function getEngine();
 }
