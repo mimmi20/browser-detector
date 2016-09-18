@@ -13,7 +13,7 @@ return [
             'Platform_Codename'       => 'Android',
             'Platform_Marketingname'  => 'Android',
             'Platform_Version'        => '4.1.1',
-            'Platform_Bits'           => 32,
+            'Platform_Bits'           => 64,
             'Platform_Maker'          => 'Google Inc',
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'unknown',
