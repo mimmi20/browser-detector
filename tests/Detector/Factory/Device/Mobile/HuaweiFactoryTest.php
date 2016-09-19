@@ -261,6 +261,36 @@ class HuaweiFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (;;; en-us; Huawei-U8651S Build/U8651SV100R001USAC85B843) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'U8651S',
+                'Summit',
+                'Huawei',
+                'T-Mobile',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (;;; en-us; Huawei-U8651T Build/U8651SV100R001USAC85B843) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'U8651T',
+                'Prism',
+                'Huawei',
+                'T-Mobile',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
+            [
+                'Mozilla/5.0 (;;; en-us; Huawei-U8651 Build/U8651SV100R001USAC85B843) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'U8651',
+                'Prism',
+                'Huawei',
+                'T-Mobile',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

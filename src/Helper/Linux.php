@@ -80,6 +80,8 @@ class Linux
             'commoncrawler',
             'freebsd',
             'netbsd',
+            'openbsd',
+            'bsd four',
             'microsearch',
             'juc(',
             'osf1',

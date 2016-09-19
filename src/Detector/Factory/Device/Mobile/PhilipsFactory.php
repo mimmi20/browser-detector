@@ -63,6 +63,10 @@ class PhilipsFactory implements FactoryInterface
             return new Philips\PhilipsW3509($useragent);
         }
 
+        if (preg_match('/W336/', $useragent)) {
+            return new Philips\PhilipsW336($useragent);
+        }
+
         if (preg_match('/PI3210G/', $useragent)) {
             return new Philips\PhilipsPi3210g($useragent);
         }

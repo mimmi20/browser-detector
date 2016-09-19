@@ -141,7 +141,7 @@ class PlatformFactory implements FactoryInterface
             return new Os\Debian($agent);
         }
 
-        if ($utils->checkIfContainsAll(['mint', 'linux'], true)) {
+        if ($utils->checkIfContains('linux mint', true)) {
             return new Os\Mint($agent);
         }
 

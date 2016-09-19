@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Prestigio;
+namespace BrowserDetector\Detector\Device\Mobile\Huawei;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PrestigioPmt32873g extends Device implements DeviceHasSpecificPlatformInterface
+class HuaweiU8651s extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class PrestigioPmt32873g extends Device implements DeviceHasSpecificPlatformInte
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'PMT3287_3G';
-        $this->marketingName     = 'MultiPad Ranger 8.0 3G Wifi';
+        $this->deviceName        = 'U8651S';
+        $this->marketingName     = 'Summit';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Prestigio')->getName();
-        $this->brand             = CompanyFactory::get('Prestigio')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Huawei')->getName();
+        $this->brand             = CompanyFactory::get('Tmobile')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 1024;
-        $this->resolutionHeight  = 768;
+        $this->resolutionWidth   = null;
+        $this->resolutionHeight  = null;
         $this->dualOrientation   = true;
-        $this->colors            = 65536;
+        $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\FonePad();
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**

@@ -53,7 +53,7 @@ class HuaweiU8651 extends Device implements DeviceHasSpecificPlatformInterface
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'U8651T';
+        $this->deviceName        = 'U8651';
         $this->marketingName     = 'Prism';
         $this->version           = null;
         $this->manufacturer      = CompanyFactory::get('Huawei')->getName();
@@ -61,7 +61,7 @@ class HuaweiU8651 extends Device implements DeviceHasSpecificPlatformInterface
         $this->pointingMethod    = 'touchscreen';
         $this->resolutionWidth   = null;
         $this->resolutionHeight  = null;
-        $this->dualOrientation   = null;
+        $this->dualOrientation   = true;
         $this->colors            = null;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;

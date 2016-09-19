@@ -84,6 +84,13 @@ class WindowsFactoryTest extends \PHPUnit_Framework_TestCase
                 'Microsoft Corporation',
                 32,
             ],
+            [
+                'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)',
+                'Windows NT',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
         ];
     }
 }

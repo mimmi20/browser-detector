@@ -195,6 +195,10 @@ class ZteFactory implements FactoryInterface
             return new Zte\ZteGX991RioOrange($useragent);
         }
 
+        if (preg_match('/beeline pro/i', $useragent)) {
+            return new Zte\ZteBeelinePro($useragent);
+        }
+
         return new Zte\Zte($useragent);
     }
 }

@@ -59,6 +59,10 @@ class IconBitFactory implements FactoryInterface
             return new IconBit\IconBitNt3601p($useragent);
         }
 
+        if (preg_match('/nt\-1009t/i', $useragent)) {
+            return new IconBit\IconBitNt1009t($useragent);
+        }
+
         if (preg_match('/nt\-1002t/i', $useragent)) {
             return new IconBit\IconBitNt1002t($useragent);
         }

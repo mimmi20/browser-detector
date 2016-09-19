@@ -859,6 +859,10 @@ class MobileFactory implements FactoryInterface
             return Mobile\ZekiFactory::detect($useragent);
         }
 
+        if (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501|N918St|Beeline Pro|ATLAS_W)/', $useragent)) {
+            return Mobile\ZteFactory::detect($useragent);
+        }
+
         if (preg_match('/beeline/i', $useragent)) {
             return Mobile\BeelineFactory::detect($useragent);
         }
@@ -939,7 +943,7 @@ class MobileFactory implements FactoryInterface
             return Mobile\AcerFactory::detect($useragent);
         }
 
-        if (preg_match('/wildfire/i', $useragent)) {
+        if (preg_match('/(wildfire|desire)/i', $useragent)) {
             return Mobile\HtcFactory::detect($useragent);
         }
 
@@ -1177,10 +1181,6 @@ class MobileFactory implements FactoryInterface
 
         if (preg_match('/Pre/', $useragent) && !preg_match('/Presto/', $useragent)) {
             return Mobile\HpFactory::detect($useragent);
-        }
-
-        if (preg_match('/(Z221|V788D|KIS PLUS|NX402|NX501|N918St|Beeline Pro|ATLAS_W)/', $useragent)) {
-            return Mobile\ZteFactory::detect($useragent);
         }
 
         if (preg_match('/ME\d{3}[A-Z]/', $useragent)) {

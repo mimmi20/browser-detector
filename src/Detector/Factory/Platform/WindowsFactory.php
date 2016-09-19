@@ -69,10 +69,6 @@ class WindowsFactory implements FactoryInterface
             return new Os\Windows95($useragent);
         }
 
-        if ($utils->checkIfContains(['Windows-NT'])) {
-            return new Os\WindowsNt($useragent);
-        }
-
         $doMatch = preg_match('/Windows NT ([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
@@ -115,10 +111,10 @@ class WindowsFactory implements FactoryInterface
                     break;
             }
 
-            return new Os\Windows($useragent);
+            return new Os\WindowsNt($useragent, '0.0');
         }
 
-        $doMatch = preg_match('/Windows ([\d\.a-zA-Z]+)/', $useragent, $matches);
+        $doMatch = preg_match('/Windows[ \-]([\d\.a-zA-Z]+)/', $useragent, $matches);
 
         if ($doMatch) {
             switch ($matches[1]) {

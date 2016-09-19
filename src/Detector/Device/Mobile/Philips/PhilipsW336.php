@@ -29,7 +29,7 @@
  * @link      https://github.com/mimmi20/BrowserDetector
  */
 
-namespace BrowserDetector\Detector\Device\Mobile\Prestigio;
+namespace BrowserDetector\Detector\Device\Mobile\Philips;
 
 use BrowserDetector\Detector\Factory\CompanyFactory;
 use UaResult\Device\Device;
@@ -43,7 +43,7 @@ use BrowserDetector\Matcher\Device\DeviceHasSpecificPlatformInterface;
  * @copyright 2012-2016 Thomas Mueller
  * @license   http://www.opensource.org/licenses/MIT MIT License
  */
-class PrestigioPmt32873g extends Device implements DeviceHasSpecificPlatformInterface
+class PhilipsW336 extends Device implements DeviceHasSpecificPlatformInterface
 {
     /**
      * the class constructor
@@ -53,20 +53,20 @@ class PrestigioPmt32873g extends Device implements DeviceHasSpecificPlatformInte
     public function __construct($useragent)
     {
         $this->useragent         = $useragent;
-        $this->deviceName        = 'PMT3287_3G';
-        $this->marketingName     = 'MultiPad Ranger 8.0 3G Wifi';
+        $this->deviceName        = 'W336';
+        $this->marketingName     = 'Xenium';
         $this->version           = null;
-        $this->manufacturer      = CompanyFactory::get('Prestigio')->getName();
-        $this->brand             = CompanyFactory::get('Prestigio')->getBrandName();
+        $this->manufacturer      = CompanyFactory::get('Philips')->getName();
+        $this->brand             = CompanyFactory::get('Philips')->getBrandName();
         $this->pointingMethod    = 'touchscreen';
-        $this->resolutionWidth   = 1024;
-        $this->resolutionHeight  = 768;
+        $this->resolutionWidth   = 320;
+        $this->resolutionHeight  = 480;
         $this->dualOrientation   = true;
         $this->colors            = 65536;
         $this->smsSupport        = true;
         $this->nfcSupport        = true;
         $this->hasQwertyKeyboard = true;
-        $this->type              = new UaDeviceType\FonePad();
+        $this->type              = new UaDeviceType\MobilePhone();
     }
 
     /**

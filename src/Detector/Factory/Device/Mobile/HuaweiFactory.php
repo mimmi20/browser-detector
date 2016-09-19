@@ -183,7 +183,15 @@ class HuaweiFactory implements FactoryInterface
             return new Huawei\HuaweiU8655($useragent);
         }
 
-        if (preg_match('/u8651/i', $useragent)) {
+        if (preg_match('/huawei\-u8651t/i', $useragent)) {
+            return new Huawei\HuaweiU8651t($useragent);
+        }
+
+        if (preg_match('/huawei\-u8651s/i', $useragent)) {
+            return new Huawei\HuaweiU8651s($useragent);
+        }
+
+        if (preg_match('/huawei\-u8651/i', $useragent)) {
             return new Huawei\HuaweiU8651($useragent);
         }
 

@@ -111,6 +111,16 @@ class AlcatelFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 7041D Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 YaBrowser/15.2.2214.3581.00 Mobile Safari/537.36',
+                'OT-7041D',
+                'One Touch Pop C7',
+                'Alcatel',
+                'Alcatel',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

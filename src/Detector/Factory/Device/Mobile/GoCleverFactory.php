@@ -71,6 +71,14 @@ class GoCleverFactory implements FactoryInterface
             return new GoClever\GoCleverAries101($useragent);
         }
 
+        if (preg_match('/ORION7o/', $useragent)) {
+            return new GoClever\GoCleverOrion7o($useragent);
+        }
+
+        if (preg_match('/TAB A93\.2/', $useragent)) {
+            return new GoClever\GoCleverTabA932($useragent);
+        }
+
         return new GoClever\GoClever($useragent);
     }
 }

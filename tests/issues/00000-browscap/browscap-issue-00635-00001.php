@@ -507,7 +507,7 @@ return [
             'Device_Type'             => 'Tablet',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
-            'Device_Code_Name'        => 'Smart Tab 7',
+            'Device_Code_Name'        => 'SmartTab7',
             'Device_Brand_Name'       => 'Vodafone',
             'RenderingEngine_Name'    => 'U3',
             'RenderingEngine_Version' => 'unknown',

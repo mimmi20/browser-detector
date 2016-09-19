@@ -63,6 +63,7 @@ class Ios
             'CPU OS',
             'CPU iOS',
             'CPU iPad OS',
+            'iPhone OS\;FBSV',
             'iPhone OS',
             'iPhone_OS',
             'IUC\(U\;iOS',

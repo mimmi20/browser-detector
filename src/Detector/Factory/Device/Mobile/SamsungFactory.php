@@ -931,51 +931,51 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGts6310($useragent);
         }
 
-        if (preg_match('/GT\-S6102B/i', $useragent)) {
+        if (preg_match('/gt\-s6102b/i', $useragent)) {
             return new Samsung\SamsungGts6102B($useragent);
         }
 
-        if (preg_match('/GT\-S6102/i', $useragent)) {
+        if (preg_match('/gt\-s6102/i', $useragent)) {
             return new Samsung\SamsungGts6102($useragent);
         }
 
-        if (preg_match('/GT\-S5839i/i', $useragent)) {
+        if (preg_match('/gt\-s5839i/i', $useragent)) {
             return new Samsung\SamsungGts5839i($useragent);
         }
 
-        if (preg_match('/GT\-S5830L/i', $useragent)) {
+        if (preg_match('/gt\-s5830l/i', $useragent)) {
             return new Samsung\SamsungGts5830l($useragent);
         }
 
-        if (preg_match('/GT\-S5830i/i', $useragent)) {
+        if (preg_match('/gt\-s5830i/i', $useragent)) {
             return new Samsung\SamsungGts5830i($useragent);
         }
 
-        if (preg_match('/GT\-S5830C/i', $useragent)) {
+        if (preg_match('/gt\-s5830c/i', $useragent)) {
             return new Samsung\SamsungGts5830c($useragent);
         }
 
-        if (preg_match('/GT\-S5830/i', $useragent)) {
+        if (preg_match('/(gt\-s5830|ace)/i', $useragent)) {
             return new Samsung\SamsungGts5830($useragent);
         }
 
-        if (preg_match('/GT\-S5780/i', $useragent)) {
+        if (preg_match('/gt\-s5780/i', $useragent)) {
             return new Samsung\SamsungGts5780($useragent);
         }
 
-        if (preg_match('/GT\-S5750E/i', $useragent)) {
+        if (preg_match('/gt\-s5750e/i', $useragent)) {
             return new Samsung\SamsungGts5750e($useragent);
         }
 
-        if (preg_match('/GT\-S5690/i', $useragent)) {
+        if (preg_match('/gt\-s5690/i', $useragent)) {
             return new Samsung\SamsungGts5690($useragent);
         }
 
-        if (preg_match('/GT\-S5670/i', $useragent)) {
+        if (preg_match('/gt\-s5670/i', $useragent)) {
             return new Samsung\SamsungGts5670($useragent);
         }
 
-        if (preg_match('/GT\-S5660/i', $useragent)) {
+        if (preg_match('/gt\-s5660/i', $useragent)) {
             return new Samsung\SamsungGts5660($useragent);
         }
 
@@ -983,11 +983,11 @@ class SamsungFactory implements FactoryInterface
             return new Samsung\SamsungGts5620($useragent);
         }
 
-        if (preg_match('/GT\-S5570I/i', $useragent)) {
+        if (preg_match('/gt\-s5570i/i', $useragent)) {
             return new Samsung\SamsungGts5570i($useragent);
         }
 
-        if (preg_match('/GT\-S5570/i', $useragent)) {
+        if (preg_match('/gt\-s5570/i', $useragent)) {
             return new Samsung\SamsungGts5570($useragent);
         }
 

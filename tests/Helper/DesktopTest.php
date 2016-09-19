@@ -51,6 +51,7 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Barca/2.8.2'],
             ['The Bat! 4.0.0.22'],
             ['Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; tb-webde/2.6.9; MASEJS; rv:11.0) like Gecko'],
+            ['Mozilla/5.0 (X11; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) wkhtmltoimage Safari/534.34'],
         ];
     }
 
@@ -103,6 +104,7 @@ class DesktopTest extends \PHPUnit_Framework_TestCase
             ['Microsoft Internet Explorer'],
             ['Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) (Windows NT 6.1; WOW64) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12A405 MicroMessenger/5.4.2 NetType/WIFI'],
             ['>Forum.WindowsFAQ.ru</a>'],
+            ['Wget/1.10.2'],
         ];
     }
 }

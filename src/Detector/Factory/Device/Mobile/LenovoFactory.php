@@ -203,55 +203,59 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\LenovoA1000lf($useragent);
         }
 
-        if (preg_match('/(A2109A|IdeaTab)/i', $useragent)) {
+        if (preg_match('/(a2109a|ideatab)/i', $useragent)) {
             return new Lenovo\LenovoA2109aIdeaTab($useragent);
         }
 
-        if (preg_match('/A889/i', $useragent)) {
+        if (preg_match('/a889/i', $useragent)) {
             return new Lenovo\LenovoA889($useragent);
         }
 
-        if (preg_match('/A880/i', $useragent)) {
+        if (preg_match('/a880/i', $useragent)) {
             return new Lenovo\LenovoA880($useragent);
         }
 
-        if (preg_match('/A850\+/i', $useragent)) {
+        if (preg_match('/a850\+/i', $useragent)) {
             return new Lenovo\LenovoA850Plus($useragent);
         }
 
-        if (preg_match('/A850/i', $useragent)) {
+        if (preg_match('/a850/i', $useragent)) {
             return new Lenovo\LenovoA850($useragent);
         }
 
-        if (preg_match('/A820/i', $useragent)) {
+        if (preg_match('/a820/i', $useragent)) {
             return new Lenovo\LenovoA820($useragent);
         }
 
-        if (preg_match('/A816/i', $useragent)) {
+        if (preg_match('/a816/i', $useragent)) {
             return new Lenovo\LenovoA816($useragent);
         }
 
-        if (preg_match('/A789/i', $useragent)) {
+        if (preg_match('/a789/i', $useragent)) {
             return new Lenovo\LenovoA789($useragent);
         }
 
-        if (preg_match('/A660/i', $useragent)) {
+        if (preg_match('/a660/i', $useragent)) {
             return new Lenovo\LenovoA660($useragent);
         }
 
-        if (preg_match('/A656/i', $useragent)) {
+        if (preg_match('/a656/i', $useragent)) {
             return new Lenovo\LenovoA656($useragent);
         }
 
-        if (preg_match('/A590/i', $useragent)) {
+        if (preg_match('/a606/i', $useragent)) {
+            return new Lenovo\LenovoA606($useragent);
+        }
+
+        if (preg_match('/a590/i', $useragent)) {
             return new Lenovo\LenovoA590($useragent);
         }
 
-        if (preg_match('/A536/i', $useragent)) {
+        if (preg_match('/a536/i', $useragent)) {
             return new Lenovo\LenovoA536($useragent);
         }
 
-        if (preg_match('/A390/i', $useragent)) {
+        if (preg_match('/a390/i', $useragent)) {
             return new Lenovo\LenovoA390($useragent);
         }
 
@@ -259,23 +263,23 @@ class LenovoFactory implements FactoryInterface
             return new Lenovo\LenovoA388T($useragent);
         }
 
-        if (preg_match('/A328/i', $useragent)) {
+        if (preg_match('/a328/i', $useragent)) {
             return new Lenovo\LenovoA328($useragent);
         }
 
-        if (preg_match('/A319/i', $useragent)) {
+        if (preg_match('/a319/i', $useragent)) {
             return new Lenovo\LenovoA319($useragent);
         }
 
-        if (preg_match('/A288t/i', $useragent)) {
+        if (preg_match('/a288t/i', $useragent)) {
             return new Lenovo\LenovoA288t($useragent);
         }
 
-        if (preg_match('/A65/i', $useragent)) {
+        if (preg_match('/a65/i', $useragent)) {
             return new Lenovo\LenovoA65($useragent);
         }
 
-        if (preg_match('/A60/i', $useragent)) {
+        if (preg_match('/a60/i', $useragent)) {
             return new Lenovo\LenovoA60($useragent);
         }
 

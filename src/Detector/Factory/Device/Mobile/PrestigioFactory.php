@@ -63,6 +63,10 @@ class PrestigioFactory implements FactoryInterface
             return new Prestigio\PrestigioPmt32773g($useragent);
         }
 
+        if (preg_match('/PMT3037_3G/', $useragent)) {
+            return new Prestigio\PrestigioPmt30373g($useragent);
+        }
+
         if (preg_match('/PMT5587_Wi/', $useragent)) {
             return new Prestigio\PrestigioPmt5587wi($useragent);
         }

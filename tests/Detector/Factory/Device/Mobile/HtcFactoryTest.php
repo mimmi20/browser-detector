@@ -401,6 +401,16 @@ class HtcFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 2.2; fr-fr; Desire_A8181 Build/FRF91) App3leWebKit/53.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                'A8181',
+                'Desire',
+                'HTC',
+                'HTC',
+                'Mobile Phone',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

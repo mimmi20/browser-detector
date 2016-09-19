@@ -131,6 +131,16 @@ class ZteFactoryTest extends \PHPUnit_Framework_TestCase
                 true,
                 'touchscreen',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; Beeline Pro Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9740.00 Mobile Safari/537.36',
+                'Beeline Pro',
+                'Beeline Pro',
+                'ZTE',
+                'ZTE',
+                'Tablet',
+                true,
+                'touchscreen',
+            ],
         ];
     }
 }

@@ -889,6 +889,20 @@ class PlatformFactoryTest extends \PHPUnit_Framework_TestCase
                 'Microsoft Corporation',
                 32,
             ],
+            [
+                'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)',
+                'Windows NT',
+                '0.0.0',
+                'Microsoft Corporation',
+                32,
+            ],
+            [
+                '(null) [FBAN/FBIOS;FBAV/15.0.0.16.28;FBBV/4463064;FBDV/iPhone6,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/8.0.2;FBSS/2; FBCR/U.S.Cellular;FBID/phone;FBLC/en_US;FBOP/5]',
+                'iOS',
+                '8.0.2',
+                'Apple Inc',
+                32,
+            ],
         ];
     }
 }

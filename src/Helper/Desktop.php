@@ -98,6 +98,7 @@ class Desktop
             'jobboerse',
             '<',
             '>',
+            'wget',
         ];
 
         if ($utils->checkIfContains($noDesktops, true)) {
