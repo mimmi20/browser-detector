@@ -18,7 +18,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'Yoga Tablet 10 3G',
             'Device_Maker'            => 'Lenovo',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'B8000-H',

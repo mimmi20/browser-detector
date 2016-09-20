@@ -531,7 +531,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'Galaxy Tab 3 10.1 3G',
             'Device_Maker'            => 'Samsung',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'GT-P5200',

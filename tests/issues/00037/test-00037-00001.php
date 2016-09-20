@@ -126,7 +126,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'A10-70 A7600 Wi-Fi + 3G',
             'Device_Maker'            => 'Lenovo',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'A7600-H',

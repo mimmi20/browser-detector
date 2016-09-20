@@ -72,7 +72,7 @@ return [
             'Platform_Brand_Name'     => 'Google',
             'Device_Name'             => 'Talk 79 3G',
             'Device_Maker'            => 'Cube',
-            'Device_Type'             => 'Tablet',
+            'Device_Type'             => 'FonePad',
             'Device_Pointing_Method'  => 'touchscreen',
             'Device_Dual_Orientation' => true,
             'Device_Code_Name'        => 'U55GT',
